@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen in Visual Studio'
+title: 'Vorgehensweise: Erstellen von benutzerdefinierten Graphen in Auslastungstestergebnissen'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895820"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055399"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Vorgehensweise: Erstellen von benutzerdefinierten Graphen in Auslastungstestergebnissen
 
 Sie können Diagramme entwerfen, in denen bestimmte Informationen zu Auslastungstestergebnissen angezeigt werden. Sie entwerfen ein benutzerdefiniertes Diagramm, indem Sie die Auslastungstestindikatoren angeben, die im Diagramm angezeigt werden.
 
@@ -40,9 +40,9 @@ Das folgende Verfahren kann ausgeführt werden, während ein Auslastungstest akt
 
      Das neue Diagramm wird im **Auslastungstest-Analyzer** angezeigt. Das Diagramm wird im aktuell ausgewählten Diagrammbereich angezeigt und ersetzt das in diesem Bereich angezeigte Diagramm.
 
-3.  Passen Sie das neue Diagramm an, indem Sie Indikatoren hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Passen Sie das neue Diagramm an, indem Sie Indikatoren hinzufügen. Weitere Informationen finden Sie unter [How to: Add and delete counters on graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Graphen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Vorgehensweise: Add and delete counters on graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Graphen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

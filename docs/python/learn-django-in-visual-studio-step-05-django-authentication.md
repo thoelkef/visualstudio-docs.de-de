@@ -1,5 +1,6 @@
 ﻿---
-title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 5'
+title: 'Tutorial zu Django in Visual Studio, Schritt 5: Authentifizierung'
+titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Authentifizierungsfeatures, die durch die Vorlage „Django-Webprojekt“ bereitgestellt werden.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001229"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064072"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 
-**Vorheriger Schritt:[ Verwenden der vollständigen Vorlage „Django-Webprojekt“](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Vorheriger Schritt: [Verwenden der vollständigen Vorlage „Django-Webprojekt“](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Da die Authentifizierung eine allgemeine Voraussetzung für Web-Apps ist, enthält die Vorlage „Django-Webprojekt“ einen grundlegenden Authentifizierungsablauf. (Die Vorlage „Fragt ein Django-Webprojekt ab“ aus Schritt 6 dieses Tutorials umfasst auch den gleichen Ablauf.) Bei Verwendung einer der Django-Projektvorlagen enthält Visual Studio die erforderlichen Module für die Authentifizierung der *settings.py* des Django-Projekts.
 
@@ -29,7 +31,7 @@ In diesem Schritt erhalten Sie die folgenden Informationen:
 > [!div class="checklist"]
 > - Verwenden des Authentifizierungsablaufs in den Visual Studio-Vorlagen (Schritt 5-1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Schritt 5-1: Verwenden Sie den Authentifizierungsablauf
+## <a name="step-5-1-use-the-authentication-flow"></a>Schritt 5.1: Verwenden Sie den Authentifizierungsablauf
 
 Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben die beteiligten Teile des Projekts:
 
@@ -216,4 +218,4 @@ Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der we
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [User authentication in Django (Benutzerauthentifizierung in Django)](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

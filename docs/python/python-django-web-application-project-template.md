@@ -1,6 +1,6 @@
 ---
 title: Django-Webprojektvorlage für Python
-description: Übersicht der Visual Studio-Vorlagen für mithilfe des Django-Frameworks in Python geschriebene Webanwendungen.
+description: Visual Studio stellt Ihnen eine umfassende Vorlage zur Verfügung, mit der Sie mithilfe von Python einfach und schnell Django-Webanwendungen erstellen können.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607431"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066521"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
@@ -50,19 +51,19 @@ Sie können über verschiedene Befehle im Menü **Projekt** oder durch Rechtskli
 
 - **Django-Shell öffnen**: Öffnet eine Shell im Kontext Ihrer Anwendung, damit Sie Ihre Modelle bearbeiten können:
 
-    ![Konsole](media/template-django-console-shell.png)
+    ![Ergebnisse des Befehls „Django-Shell öffnen“](media/template-django-console-shell.png)
 
 - **Django-DB synchronisieren**: Führt `manage.py syncdb` in einem **interaktiven** Fenster aus:
 
-    ![Konsole](media/template-django-console-sync-db.png)
+    ![Ergebnisse des Befehls „Django-DB synchronisieren“](media/template-django-console-sync-db.png)
 
 - **Statische Dateien erfassen**: führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer *settings.py*-Datei zu kopieren.
 
-    ![Konsole](media/template-django-console-collect-static.png)
+    ![Ergebnisse des Befehls „Statische Dateien erfassen“](media/template-django-console-collect-static.png)
 
 - **Überprüfen**: führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer *settings.py*-Datei angegeben wurden:
 
-    ![Konsole](media/template-django-console-validate.png)
+    ![Ergebnisse des Befehls „Überprüfen“](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Siehe auch
 

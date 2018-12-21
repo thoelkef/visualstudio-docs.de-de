@@ -1,6 +1,6 @@
 ---
-title: 'Debuggen von Webanwendungen: Fehler und Problembehandlung | Microsoft Docs'
-ms.custom: ''
+title: Debuggen von Web-apps – Fehler und Problembehandlung
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d9ba4a2e37124f8d8b3641a129d09da1728118
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471517"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053650"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.  
@@ -57,5 +57,5 @@ Beim Debuggen von Webanwendungen können folgende Fehler auftreten.
 -   [Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)

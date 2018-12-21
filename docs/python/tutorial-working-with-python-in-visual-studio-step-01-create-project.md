@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Arbeiten mit Python, Schritt 1: Erstellen eines Projekts'
+title: 'Tutorialschritt 1: Python in Visual Studio, Erstellen eines Projekts'
+titleSuffix: ''
 description: Dies ist die Übersicht und Schritt 1 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, einschließlich Voraussetzungen und das Erstellen eines neuen Python-Projekts.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220081"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049851"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Arbeiten mit Python in Visual Studio
 
@@ -24,13 +26,13 @@ Python ist eine beliebte Programmiersprache, die zuverlässig, flexibel, leicht 
 
 Visual Studio bietet erstklassige Unterstützung für Python. In diesem Tutorial finden Sie Informationen zu den folgenden Vorgängen:
 
-- [Step 0: Installation (Schritt 0: Installation)](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Schritt 0: Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Schritt 1: Erstellen eines Python-Projekts (dieser Artikel)](#step-1-create-a-new-python-project)
-- [Step 2: Writing and running code to see Visual Studio IntelliSense at work (Schritt 2: Schreiben und Ausführen von Code, um mit Visual Studio IntelliSense in der Praxis zu arbeiten)](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Step 3: Create more code in the interactive REPL window (Schritt 3: Erstellen von weiterem Code im interaktivem REPL-Fenster)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Step 4: Run the completed program in the Visual Studio debugger (Schritt 4: Ausführen eines abgeschlossenen Programms im Visual Studio-Debugger)](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Schritt 5: Install packages and manage Python environments (Installieren von Paketen und Verwalten von Python-Umgebungen)](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Schritt 6: Work with Git (Arbeiten mit Git)](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Schritt 2: Writing and running code to see Visual Studio IntelliSense at work (Schreiben und Ausführen von Code, um mit Visual Studio IntelliSense in der Praxis zu arbeiten)](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Schritt 3: Create more code in the interactive REPL window (Erstellen von weiterem Code im interaktivem REPL-Fenster)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Schritt 4: Run the completed program in the Visual Studio debugger (Ausführen eines abgeschlossenen Programms im Visual Studio-Debugger)](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Schritt 5: Installieren von Paketen und Verwalten von Python-Umgebungen](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Schritt 6: Arbeiten mit Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 

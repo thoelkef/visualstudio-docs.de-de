@@ -1,6 +1,6 @@
 ---
 title: Bearbeiten von Python-Code
-description: Beim Bearbeiten von Python in Visual Studio stehen IntelliSense, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
+description: In Visual Studio stehen für Python umfassende IntelliSense-Funktionen, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001268"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062815"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -44,7 +45,7 @@ Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version
 
 Vervollständigungen werden für Anweisungen, Bezeichner oder andere Wörter angezeigt, die an der aktuellen Position im Editor eingegeben werden können. Die in der Liste angezeigten Elemente richten sich nach dem Kontext und werden gefiltert, um falsche oder störende Optionen auszulassen. Vervollständigungen werden häufig durch Eingabe verschiedener Anweisungen (z.B. `import`) und Operatoren (einschließlich eines Punkts) ausgelöst. Sie können sie jedoch auch jederzeit durch Drücken von **STRG**+**J** > **LEERTASTE** anzeigen.
 
-![Membervervollständigung](media/code-editing-completions-simple.png)
+![Membervervollständigung im Visual Studio-Editor](media/code-editing-completions-simple.png)
 
 Wenn eine Vervollständigungsliste geöffnet ist, können Sie mithilfe der Pfeiltasten, der Maus oder durch weitere Eingabe nach der gewünschten Vervollständigung suchen. Je mehr Buchstaben Sie eingeben, desto genauer wird die Liste gefiltert, um wahrscheinliche Vervollständigungen anzuzeigen. Ebenso können Sie diese Tastaturkombinationen verwenden:
 
@@ -54,27 +55,27 @@ Wenn eine Vervollständigungsliste geöffnet ist, können Sie mithilfe der Pfeil
 
 Einige Beispiele:
 
-![Membervervollständigung mit Filterung](media/code-editing-completion-filtering.png)
+![Membervervollständigung mit Filterung im Visual Studio-Editor](media/code-editing-completion-filtering.png)
 
 Membervervollständigungen werden automatisch angezeigt, wenn Sie nach einer Variable oder einem Wert einen Punkt zusammen mit dem Methoden und Attributen der möglichen Typen eingeben. Wenn eine Variable mehr als einen Typ aufweisen kann, enthält die Liste alle Möglichkeiten aller Typen und zeigt zusätzliche Informationen dazu an, welche Typen von der jeweiligen Vervollständigung unterstützt werden. Wenn eine Vervollständigung von allen möglichen Typen unterstützt wird, wird sie ohne Anmerkung angezeigt.
 
-![Membervervollständigung in mehreren Typen](media/code-editing-completion-types.png)
+![Membervervollständigung für mehrere Typen im Visual Studio-Editor](media/code-editing-completion-types.png)
 
 Standardmäßig werden „dunder“-Member, die mit einem doppelten Unterstrich beginnen und enden, nicht angezeigt. Auf diese Member sollte grundsätzlich nicht direkt zugegriffen werden. Wenn Sie aber einen benötigen, können sie die doppelten Unterstriche vom Anfang eingeben, sodass diese Vervollständigungen der Liste hinzugefügt werden:
 
-![Private Membervervollständigung](media/code-editing-completion-dunder.png)
+![Private Membervervollständigung im Visual Studio-Editor](media/code-editing-completion-dunder.png)
 
 Die Anweisungen `import` und `from ... import` zeigen eine Liste von Modulen an,die importiert werden können. Mit `from ... import` enthält die Liste Member, die aus dem angegebenen Modul importiert werden können.
 
-![Importieren der Vervollständigung](media/code-editing-completion-import.png)
+![Abschluss des Imports im Visual Studio-Editor](media/code-editing-completion-import.png)
 
 Die Anweisungen `raise` und `except` zeigen Listen mit Klassen an, bei denen es sich wahrscheinlich um Fehlertypen handelt. Diese umfasst möglicherweise nicht alle benutzerdefinierten Ausnahmen, hilft Ihnen aber dabei, schnell passende integrierte Ausnahmen zu finden:
 
-![Ausnahmevervollständigung](media/code-editing-completion-exception.png)
+![Ausnahmevervollständigung im Visual Studio-Editor](media/code-editing-completion-exception.png)
 
 Die Eingabe von @ startet einen Decorator und zeigt potenzielle Decorators an. Viele dieser Elemente können nicht als Decorator verwendet werden. Schauen Sie in der Dokumentation der Bibliothek nach, um zu ermitteln, welche Elemente Sie verwenden können:
 
-![Decoratorvervollständigung](media/code-editing-completion-decorator.png)
+![Decoratorvervollständigung im Visual Studio-Editor](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Über **Extras** > **Optionen** > **Text-Editor** > **Python** > **Erweitert** können Sie das Verhalten von Vervollständigungen konfigurieren. Einige Beispiele: **Liste basierend auf Suchzeichenfolge filtern** filtert die Vorschläge zur Vervollständigung während der Eingabe (diese Option ist standardmäßig aktiviert). **Membervervollständigung zeigt Schnittmenge der Member an** zeigt nur Vervollständigungen an, die von allen möglichen Typen unterstützt werden (diese Option ist standardmäßig deaktiviert). Informationen finden Sie unter [Optionen: Vervollständigungsergebnisse](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehl
 
 Wenn Sie Code schreiben, der eine Funktion aufruft, wird die Signaturhilfe angezeigt, sobald Sie die öffnende Klammer (`(`) eingeben. Die Signaturhilfe zeigt alle verfügbaren Informationen zu Dokumentation und Parametern an. Sie können die Signaturhilfe auch innerhalb eines Funktionsaufrufs mit **STRG**+**UMSCHALTTASTE**+**LEERTASTE** öffnen. Die angezeigten Informationen hängen von den Dokumentationszeichenfolgen im Quellcode der Funktion ab, enthalten aber alle Standardwerte.
 
-![Signaturhilfe](media/code-editing-signature-help.png)
+![Signaturhilfe im Visual Studio-Editor.](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Um die Signaturhilfe zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Allgemein**, und deaktivieren Sie die Option **Anweisungsvervollständigung** > **Parameterinformationen**.
@@ -132,17 +133,17 @@ Wenn Sie Code schreiben, der eine Funktion aufruft, wird die Signaturhilfe angez
 
 Wenn Sie den Mauszeiger über einen Bezeichner bewegen, wird eine QuickInfo angezeigt. Je nach Bezeichner zeigt QuickInfo die möglichen Werte oder Typen, die verfügbare Dokumentation, Rückgabetypen und Definitionsspeicherorte an:
 
-![QuickInfo](media/code-editing-quick-info.png)
+![QuickInfo im Visual Studio-Editor](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Codefarben
 
 Codefarben verwenden Informationen aus der Codeanalyse, um Variablen, Anweisungen und andere Teile Ihres Codes farbig hervorzuheben. Einige Beispiele: Variablen, die auf Module oder Klassen verweisen, werden in einer anderen Farbe angezeigt als Funktionen oder andere Werte. Parameternamen weisen eine andere Farbe auf als lokale oder globale Variablen: (Funktionen werden standardmäßig nicht fett hervorgehoben):
 
-![Codefarben](media/code-editing-code-coloring.png)
+![Code- und Syntaxfarben im Visual Studio-Editor](media/code-editing-code-coloring.png)
 
 Um die Farben anzupassen, wechseln Sie zu **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben**, und bearbeiten Sie die Einträge für **Python** in der Liste **Elemente anzeigen**:
 
-![Optionen für Schriftarten und Farben](media/code-editing-customize-colors.png)
+![Optionen für Schriftarten und Farben in Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Um Codefarben zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Erweitert**, und deaktivieren Sie die Option **Sonstige Optionen** > **Farbnamen basierend auf Typen**. Siehe [Options - Miscellaneous options (Optionen: Sonstige Optionen)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,7 +182,7 @@ Bei Auswahl dieses Codes und des Befehls **Umschließen mit** wird eine Liste de
 
 Sie können die verfügbaren Codeausschnitte im durch den Menübefehl **Extras** > **Codeausschnitt-Manager** geöffneten **Codeausschnitt-Manager** anzeigen, indem Sie **Python** als Sprache auswählen:
 
-![Codeausschnitt-Manager](media/code-editing-code-snippets-manager.png)
+![Codeausschnitt-Manager in Visual Studio](media/code-editing-code-snippets-manager.png)
 
 Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
 
@@ -195,7 +196,7 @@ Die Python-Unterstützung in Visual Studio bietet verschiedene Möglichkeiten, s
 
 Die Navigationsleiste wird am oberen Rand jedes Editor-Fensters angezeigt und enthält eine Liste mit Definitionen auf zwei Ebenen. Die linke Dropdownliste enthält Klassen- und Funktionsdefinitionen auf oberster Ebene in der aktuellen Datei. Die rechte Dropdownliste zeigt eine Liste der Definitionen innerhalb des links gezeigten Geltungsbereichs. Wenn Sie sich im Editor bewegen, werden die Listen aktualisiert und zeigen den aktuellen Kontext an. Sie können auch einen Eintrag aus diesen Listen auswählen, um direkt an die entsprechende Stelle zu springen.
 
-![Navigationsleiste](media/code-editing-navigation-bar.png)
+![Navigationsleiste] im Visual Studio-Editor(media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Um die Navigationsleiste auszublenden, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Allgemein**, und deaktivieren Sie die Option **Einstellungen** > **Navigationsleiste**.
@@ -204,7 +205,7 @@ Die Navigationsleiste wird am oberen Rand jedes Editor-Fensters angezeigt und en
 
 Mit **Gehe zu Definition** wechseln Sie schnell von einem Bezeichner (z.B. einem Funktionsnamen, einer Klasse oder einer Variablen) zu dem Quellcode, in dem dieser definiert ist. Um den Quellcode aufzurufen, klicken Sie mit der rechten Maustaste auf einen Bezeichner und wählen **Gehe zu Definition** aus, oder platzieren Sie den Textcursor in den Bezeichner und drücken Sie **F12**. Dies funktioniert für Ihren gesamten Code und alle externen Bibliotheken, vorausgesetzt, der Quellcode ist verfügbar. Wenn der Quellcode der Bibliothek nicht verfügbar ist, springt **Gehe zu Definition** zur entsprechenden `import`-Anweisung für einen Modulverweis oder zeigt einen Fehler an.
 
-![Gehe zu Definition](media/code-editing-go-to-definition.png)
+![Befehl „Gehe zu Definition“ in Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Navigieren zu
 
@@ -212,7 +213,7 @@ Der Befehl **Bearbeiten** > **Navigieren zu** (**STRG**+**,**) zeigt ein Suchfel
 
 Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfeiltasten auswählen und die **EINGABETASTE** drücken, gelangen Sie zur Definition dieses Bezeichners.
 
-![Navigieren zu](media/code-editing-navigate-to.png)
+![Befehl „Navigieren zu“ in Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Alle Verweise suchen
 

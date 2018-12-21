@@ -1,6 +1,6 @@
 ---
-title: Visual Studio-IDE | Microsoft-Dokumentation
-ms.custom: ''
+title: Visual Studio 2015 | Microsoft-Dokumentation
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852712"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062482"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Microsoft Visual Studio 2015 ist eine Suite von Tools zum Erstellen von Software
 
 Sie können Visual Studio verwenden, um verschiedene Anwendungen zu erstellen, von einfachen Store-Apps und Spielen für mobile Clients bis hin zu großen, komplexen Systemen für den Betrieb von Unternehmen und Datencentern. Sie können Folgendes erstellen:
 
-- Apps und Spiele, die nicht nur unter Windows, ausgeführt, sondern auch Android und iOS.
+- Apps und Spiele, die nicht nur unter Windows ausgeführt werden können, sondern auch unter Android und iOS.
 
 - Websites und Webdienste basierend auf ASP.NET, JQuery, AngularJS und anderen beliebten Frameworks.
 
-- Anwendungen für Plattformen und Geräte wie Azure, Office, Sharepoint, Hololens, Kinect und Internet der Dinge, um nur einige zu nennen.
+- Anwendungen für so unterschiedliche Plattformen und Geräte wie Azure, Office, Sharepoint, Hololens, Kinect und das Internet der Dinge, um nur einige zu nennen.
 
-- Spiele und grafikintensive Anwendungen für eine Vielzahl von Windows-Geräte, einschließlich Xbox, DirectX verwenden.
+- Spiele und grafikintensive Anwendungen für eine Vielzahl von Windows-Geräten, die DirectX verwenden, darunter auch die Xbox.
 
 Visual Studio unterstützt standardmäßig C#, C und C++, JavaScript, F# und Visual Basic. Visual Studio lässt sich problemlos mit Drittanbieteranwendungen einsetzen und in diese integrieren. Nutzen Sie für Unity die Erweiterung [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) und für Apache Cordova [Visual Studio Tools für Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Sie können Visual Studio selbst erweitern, indem Sie benutzerdefinierte Tools erstellen, die spezielle Aufgaben ausführen.
 
@@ -42,7 +42,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 ## <a name="visual-studio-setup"></a>Setup von Visual Studio
  Informationen darüber, welche Edition von Visual Studio die für Sie passende ist, finden Sie unter [Visual Studio – Editionen](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
 
- Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Wenn Sie weitere Informationen zum Installationsvorgang Informationen benötigen, finden Sie unter [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>IDE-Grundlagen
  Das folgende Bild zeigt die Visual Studio-IDE mit einem geöffneten Projekt, das Fenster "Projektmappen-Explorer" für die Navigation in den Projektdateien und das Fenster "Team Explorer" für die Navigation in der Quellcodeverwaltung und die Arbeitsaufgabennachverfolgung. Die in der Titelleiste hervorgehobenen Funktionen werden im Folgenden ausführlicher erläutert.
@@ -62,7 +62,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 
  ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
- MSDN ist die Microsoft-Website für die technische Dokumentation – die Seite, die Sie gerade lesen, befindet sich auf MSDN. Drücken Sie in Visual Studio die Taste **F1** , um die MSDN-Hilfeseite für das aktive Fenster aufzurufen. Sie können auch im Code-Editor **F1** drücken, um die MSDN-Hilfeseite für die API oder das Schlüsselwort an der aktuellen Position der Einfügemarke aufzurufen. Z. B. in einer C#-Datei, platzieren Sie den Textcursor an einer beliebigen Stelle in oder am Ende einer `System.String` Deklaration, und drücken Sie **F1** fahren Sie mit der MSDN-Hilfeseite für <xref:System.String>.
+ MSDN ist die Microsoft-Website für die technische Dokumentation – die Seite, die Sie gerade lesen, befindet sich auf MSDN. Drücken Sie in Visual Studio die Taste **F1** , um die MSDN-Hilfeseite für das aktive Fenster aufzurufen. Sie können auch im Code-Editor **F1** drücken, um die MSDN-Hilfeseite für die API oder das Schlüsselwort an der aktuellen Position der Einfügemarke aufzurufen. Platzieren Sie zum Beispiel in einer C#-Datei die Einfügemarke an einer beliebigen Stelle in oder am Ende einer `System.String`-Deklaration, und drücken Sie **F1**, um die MSDN-Hilfeseite für <xref:System.String> zu öffnen.
 
 ### <a name="giving-feedback"></a>Bereitstellen von Feedback
  Sie können uns problemlos jederzeit Feedback zu Visual Studio geben. Klicken Sie auf der Titelleiste neben **QuickLaunch** auf das Feedback-Symbol, und klicken Sie dann auf die Option zum **Melden eines Problems** oder zum **Unterbreiten eines Vorschlags**. Vorabversionen von Visual Studio weisen auch eine Option zum **Bewerten des Produkts** auf. Wir sehen uns alle Kommentare an und verwenden sie, um das Produkt zu verbessern. Weitere Informationen finden Sie unter [Talk to Us](../ide/talk-to-us.md).
@@ -114,7 +114,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 
  ![GreetingsConsoleApp.cpp im Code-Editor](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- Der Text-Editor ist hochgradig interaktiv (falls Sie dies wünschen) und bietet viele Produktivitätsfeatures, mit denen Sie schneller besseren Code schreiben können. Die Features sind je nach Sprache unterschiedlich, und Sie müssen keine davon verwenden (geben Sie in der Schnellstartleiste "Editor" ein), um Funktionen zu aktivieren oder zu deaktivieren. Im Folgenden finden Sie einige der allgemeinen Produktivitätsfeatures:
+ Der Text-Editor ist hochgradig interaktiv (falls Sie dies wünschen) und bietet viele Produktivitätsfeatures, mit denen Sie schneller besseren Code schreiben können. Die Funktionen variieren je nach Sprache, und Sie müssen diese (vom Typ "Editor" in der Schnellstartleiste) verwenden, um Funktionen zu aktivieren oder deaktivieren: Einige der allgemeinen Produktivitätsfeatures sind:
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) enthält die Vorgänge, wie z. B. intelligentes Umbenennen von Variablen, Verschieben von ausgewählten Codezeilen in eine separate Funktion, Verschieben von Code an eine andere Position und Neuanordnen von Funktionsparametern.
 
@@ -146,7 +146,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 
 Zum Erstellen eines Projekts müssen Sie den Quellcode kompilieren und alle Schritte durchführen, die erforderlich sind, um die ausführbare Datei zu erstellen. Für verschiedene Sprachen sind verschiedene Buildvorgänge erforderlich, und reguläre Websites lassen sich gar nicht erstellen. Unabhängig vom Projekttyp finden sich diese Befehle standardmäßig im Menü „Build“. Zum Kompilieren und Ausführen des Codes mit einer einzigen Tastatureingabe drücken Sie F5. Alle Compiler sind über die IDE vollständig konfigurierbar. Über die Build-Symbolleiste können Sie angeben, ob eine Debugversion des Programms mit Symbolen und zusätzlicher Fehlerprüfung zur Unterstützung von Haltepunkten und Einzelschritten im Debugger oder ob ein Releasebuild erstellt werden soll, der letztendlich den Kunden bereitgestellt wird. Auf der Eigenschaftenseite eines Projekts können Sie weitere Einstellungen für das Erstellen sowie viele andere Einstellungen konfigurieren. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie „Eigenschaften“. Sie können Builds auch von der Befehlszeile aus ausführen.
 
-Die Ausgabe des Builds, einschließlich einer Fehler- oder erfolgsbenachrichtigungen, wird der **Ausgabe** Fenster. Die **Fehlerliste** zeigt detaillierte Informationen zu Buildfehlern.
+Die Ausgabe des Builds, einschließlich der Fehler- oder Erfolgsbenachrichtigungen, wird im **Ausgabefenster** angezeigt. Die **Fehlerliste** zeigt detaillierte Informationen zu Buildfehlern.
 
 ## <a name="debugging-your-code"></a>Debuggen von Code
  Der neuartige Debugger von Visual Studio ermöglicht es Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder in einem Emulator wie dem für Android oder Windows Phone zu debuggen. Sie können die Anweisungen schrittweise durchlaufen und jeweils die Variablen überprüfen, Sie können Anwendungen mit mehreren Threads durchlaufen und Sie können Haltepunkte festlegen, die nur erreicht werden, wenn eine angegebene Bedingung "true" ist. All dies kann im Code-Editor selbst konfiguriert werden, damit Sie den Codekontext nicht verlassen müssen.
@@ -196,7 +196,7 @@ Die Ausgabe des Builds, einschließlich einer Fehler- oder erfolgsbenachrichtigu
 |||
 |-|-|
 |[Benutzerkonten und Updates](../ide/user-accounts-and-updates.md)|[Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Vorgehensweise: Navigieren in der IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[Vorgehensweise: Move Around in the IDE (Vorgehensweise: Navigieren in der IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)|[Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)|[Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Profilerstellungstools](../profiling/profiling-tools.md)|[Verbessern der Codequalität](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
@@ -204,12 +204,12 @@ Die Ausgabe des Builds, einschließlich einer Fehler- oder erfolgsbenachrichtigu
 |[Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)|[Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md)|
 |[Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)|[Sicherheit](../ide/security-in-visual-studio.md)|
 |[Visual Studio-Beispiele](../ide/visual-studio-samples.md)|[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)|
-|[Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)|[Referenz zur Benutzeroberfläche](../ide/reference/general-user-interface-elements-visual-studio.md)|
+|[Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)|[Benutzeroberflächenreferenz](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md)
-- [Bearbeiten des Codes](https://www.visualstudio.com/features/ide-vs)
+- [Codebearbeitung](https://www.visualstudio.com/features/ide-vs)
 - [Neues in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)
 - [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [Sprechen Sie mit uns](../ide/talk-to-us.md)

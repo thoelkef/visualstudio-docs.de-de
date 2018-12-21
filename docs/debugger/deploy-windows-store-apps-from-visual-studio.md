@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen von UWP-apps aus Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Bereitstellen von UWP-apps | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056810"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
 
@@ -29,7 +29,7 @@ Die Funktionen zur Bereitstellung von Visual Studio erstellt und registriert UWP
 
 - Handelt es sich bei dem Ziel um ein Remotegerät, kopiert Visual Studio die erforderlichen Dateien auf den Remotecomputer und registriert anschließend die App auf dem Gerät.
 
-Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: STRG + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
+Die Bereitstellung erfolgt automatisch, wenn Sie Ihre App von Visual Studio aus mit der Option Debuggen starten** debuggen (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: STRG + F5 Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
 
 - Ad-Hoc-Tests auf einem lokalen oder Remotecomputer.
 
@@ -117,6 +117,6 @@ So konfigurieren Sie den automatischen Start einer Debugsitzung beim Starten der
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erweiterte Optionen für die remote-Bereitstellung](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Advanced remote deployment options (Erweiterte Optionen für die Remotebereitstellung)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Debuggen eines installierten App-Pakets](../debugger/debug-installed-app-package.md)
 - [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

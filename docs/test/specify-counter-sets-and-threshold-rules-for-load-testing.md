@@ -1,5 +1,5 @@
 ---
-title: Indikatorensätze und Schwellenwertregeln für Auslastungstests in Visual Studio
+title: Indikatorensätze und Schwellenwertregeln für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894507"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057417"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
@@ -41,14 +41,14 @@ Es ist wichtig, dass Sie die zu testenden Server der Liste von Computern hinzuf�
 
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
-|**Verwalten der Indikatorensätze für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie den Indikatorensatz im Auslastungstest-Editor bearbeiten. Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die Leistungsdaten gesammelt werden, und das Zuweisen von Indikatorensätzen, die auf jedem der Computer erfasst werden. Sie können die Indikatoren im Auslastungstest-Editor verwalten.|-   [Vorgehensweise: Verwalten von Indikatorensätzen](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**Hinzufügen von Indikatorensätzen zum Auslastungstest**: Wenn Sie einen Auslastungstest mit dem **Assistenten für neuen Auslastungstest** erstellen, fügen Sie einen ersten Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen mithilfe des Auslastungstest-Editors neue Indikatoren hinzufügen.|-   [Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Vorgehensweise: Hinzufügen von benutzerdefinierten Indikatorensätzen](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Angeben einer Schwellenwertregel mithilfe von Indikatoren für den Auslastungstest**: Eine Schwellenwertregel ist eine Regel, die für einen einzelnen Leistungsindikator festgelegt wird, um die Systemressourcenauslastung während eines Auslastungstests zu überwachen. Die Indikatorsatzdefinitionen enthalten vordefinierte Schwellenwertregeln für viele wichtige Leistungsindikatoren. In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwerte entweder mit einem konstanten Wert oder mit einem anderen Leistungsindikatorwert verglichen.|-   [Vorgehensweise: Hinzufügen einer Schwellenwertregel](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Zuweisen von Anzeigenamen für die Computer, denen Indikatorensätze zugeordnet werden**: Sie können Computertags hinzufügen, mit deren Hilfe Sie einem Computer einen leicht erkennbaren Namen zuweisen können. Die Tags werden im Knoten **Indikatorensatzzuordnungen** der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können, z. B. „Webserver1 in Lab2“ oder „SQL Server2 im Phoenix-Büro“.<br /><br /> Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).||
+|**Verwalten der Indikatorensätze für den Auslastungstest:** Nachdem Sie den Auslastungstest erstellt haben, können Sie den Indikatorensatz im Auslastungstest-Editor bearbeiten. Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die Leistungsdaten gesammelt werden, und das Zuweisen von Indikatorensätzen, die auf jedem der Computer erfasst werden. Sie können die Indikatoren im Auslastungstest-Editor verwalten.|-   [Vorgehensweise: Verwalten von Indikatorensätzen](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Hinzufügen von Indikatorensätzen zum Auslastungstest:** Wenn Sie mithilfe des **Assistenten für neuen Auslastungstest** einen Auslastungstest erstellen, fügen Sie einen anfänglichen Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest. Nachdem Sie einen Auslastungstest erstellt haben, können Sie vorhandenen Indikatorensätzen mithilfe des Auslastungstest-Editors neue Indikatoren hinzufügen.|-   [Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Vorgehensweise: Hinzufügen von benutzerdefinierten Indikatorensätzen](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**Angeben einer Schwellenwertregel mithilfe von Indikatoren für den Auslastungstest:** Eine Schwellenwertregel wird für einen bestimmten Leistungsindikator festgelegt, um die Verwendung von Systemressourcen während eines Auslastungstests zu überwachen. Die Indikatorsatzdefinitionen enthalten vordefinierte Schwellenwertregeln für viele wichtige Leistungsindikatoren. In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwerte entweder mit einem konstanten Wert oder mit einem anderen Leistungsindikatorwert verglichen.|-   [Vorgehensweise: Hinzufügen einer Schwellenwertregel](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Zuweisen von Anzeigenamen für die Computer, denen Indikatorensätze zugeordnet werden:** Sie können Computertags hinzufügen, mit denen Sie einem Computer einen leicht erkennbaren Namen zuweisen können. Die Tags werden im Knoten **Indikatorensatzzuordnungen** der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können, z. B. „Webserver1 in Lab2“ oder „SQL Server2 im Phoenix-Büro“.<br /><br /> Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Verwenden von Indikatorensätzen
 
-Die Auslastungstesttools erfassen mithilfe von Indikatoren die Leistungsdaten über einen bestimmten Zeitraum und stellen diese grafisch dar. Indikatordaten werden während eines Auslastungstestlaufs in den vom Benutzer angegebenen Intervallen erfasst. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Die Indikatoren können zur Laufzeit oder nach Abschluss eines Auslastungstestlaufs mit dem *Auslastungstest-Analyzer* angezeigt werden.
+Die Auslastungstesttools erfassen mithilfe von Indikatoren die Leistungsdaten über einen bestimmten Zeitraum und stellen diese grafisch dar. Indikatordaten werden während eines Auslastungstestlaufs in den vom Benutzer angegebenen Intervallen erfasst. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Die Indikatoren können zur Laufzeit oder nach Abschluss eines Auslastungstestlaufs mit dem *Auslastungstest-Analyzer* angezeigt werden.
 
 Indikatordaten werden für den Server und alle Computer erfasst, auf denen ein Test ausgeführt wird. Wenn Sie eine Gruppe von Agent-Computern eingerichtet haben, auf denen die Tests ausgeführt werden sollen, werden außerdem auch Indikatoren für alle diese Computer erfasst.
 
@@ -64,7 +64,7 @@ Die Ergebnisanalyse von Auslastungstestläufen erfordert häufig domänenspezifi
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Überlegungen zum Leistungsindikator-Samplingintervall
 
-Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die Menge gesammelter Daten reduziert. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die Menge gesammelter Daten reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Die folgende Tabelle enthält Richtlinien für Samplingraten.
 

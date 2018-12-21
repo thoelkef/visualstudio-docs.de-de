@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen einer Schwellenwertregel für Auslastungstests in Visual Studio
+title: Hinzufügen einer Schwellenwertregel für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896327"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063369"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen einer Schwellenwertregel mithilfe des Auslastungstest-Editors
 
@@ -38,7 +38,7 @@ In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwe
 
      Das Dialogfeld **Schwellenwertregel hinzufügen** wird angezeigt.
 
-5.  Sie können zwischen zwei Regeltypen wählen: **Mit Konstante vergleichen** oder **Indikatoren vergleichen**. Wählen Sie den gewünschten Typ, und legen Sie die Werte fest.
+5.  Sie können sich zwischen den folgenden zwei Arten von Regeln entscheiden: **Mit Konstante vergleichen** oder **Compare Counter** (Mit Indikator vergleichen). Wählen Sie den gewünschten Typ, und legen Sie die Werte fest.
 
     > [!NOTE]
     > Legen Sie die **Warnung bei Überschreiten**-Eigenschaft auf **TRUE** fest, um anzugeben, dass das Überschreiten eines Schwellenwerts ein Problem darstellt, oder auf **FALSE** fest, um anzugeben, dass das Unterschreiten eines Schwellenwerts ein Problem darstellt.

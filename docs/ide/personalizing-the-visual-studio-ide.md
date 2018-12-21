@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Visual Studio-IDE
+title: Anpassen der IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388724"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159502"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
@@ -50,7 +50,7 @@ Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster 
 
 ### <a name="customize-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 
-Weitere Informationen zum Hinzufügen oder Entfernen von Menü-oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Informationen zum Hinzufügen oder Entfernen von Menü- oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Startseite
 
@@ -67,6 +67,6 @@ Sie können das Starten externer Tools im Menü **Extras** anpassen. Weitere Inf
 ## <a name="see-also"></a>Siehe auch
 
 - [Umgebungseinstellungen](environment-settings.md)
-- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
-- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+- [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
+- [Schnellstart: Einführung in die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
 - [Anpassen der Visual Studio für Mac-IDE](/visualstudio/mac/customizing-the-ide)

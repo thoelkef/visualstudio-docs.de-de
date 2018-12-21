@@ -1,8 +1,9 @@
 ---
-title: Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate | Microsoft-Dokumentation
+title: Installieren der für eine Offlineinstallation erforderlichen Zertifikate
 description: Informationen zur Installation von Zertifikaten für eine Offlineinstallation von Visual Studio
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886291"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158891"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -35,7 +36,7 @@ Es gibt drei Optionen, Zertifikate in einer Offlineumgebung zu installieren oder
 
 Wenn Sie ein Netzwerklayout erstellen, werden die erforderlichen Zertifikate in den Ordner „Zertifikate“ heruntergeladen. Sie können die Zertifikate manuell installieren, indem Sie auf die Zertifikatdateien doppelklicken und anschließend den Zertifikat-Manager-Assistenten durchlaufen. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.
 
-**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
+**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2: Verteilen von vertrauenswürdigen Stammzertifikaten in einer Unternehmensumgebung
 
@@ -62,7 +63,7 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
-   **Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
+   **Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -79,22 +80,22 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein Stammzertifikat. Auf den meisten Systemen, die über die aktuellsten Windows-Updates verfügen, sind diese Zertifikate bereits installiert.
 
 * **ManifestSignCertificates.p12** enthält:
-    * Ein Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
+    * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
         * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2011**
+    * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
         * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **ManifestCounterSignCertificates.p12** enthält:
-    * Ein Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
+    * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
         * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Ein Stammzertifikat: **Microsoft Root Certificate Authority 2010**
+    * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
         * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **Vs_installer_opc.SignCertificates.p12** enthält:
-    * Ein Zwischenzertifikat: **Microsoft Code Signing PCA**
+    * Zwischenzertifikat: **Microsoft Code Signing PCA**
         * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
-    * Ein Stammzertifikat: **Microsoft Root Certificate Authority**
+    * Stammzertifikat: **Microsoft Root Certificate Authority**
         * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
-**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden.
+**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Warum werden die Zertifikate aus dem Ordner „Zertifikate“ nicht automatisch installiert?
 

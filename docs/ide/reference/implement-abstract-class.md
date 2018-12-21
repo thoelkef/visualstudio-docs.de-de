@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer abstrakten Klasse in Visual Studio
+title: Implementieren einer abstrakten Klasse
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294695"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047602"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementieren einer abstrakten Klasse in Visual Studio
 
@@ -24,9 +24,9 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie sofort den für die Implementierung einer abstrakten Klasse erforderlichen Code generieren.
+**Beschreibung:** Hiermit können Sie sofort den für die Implementierung einer abstrakten Klasse erforderlichen Code generieren.
 
-**Hintergrund**: Sie möchten von einer abstrakten Klasse erben.
+**Hintergrund:** Sie möchten von einer abstrakten Klasse erben.
 
 **Vorteile**: Sie könnten nacheinander alle abstrakten Member manuell implementieren, doch bei diesem Feature werden alle Methodensignaturen automatisch generiert.
 

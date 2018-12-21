@@ -1,7 +1,7 @@
 ---
-title: Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver | Microsoft-Dokumentation
+title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Whitelist setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349568"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160165"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -55,7 +55,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 | visualstudio.microsoft.com | Speicherort der Dokumentation |
 | docs.microsoft.com | Speicherort der Dokumentation |
 | msdn.microsoft.com | Speicherort der Dokumentation |
-| www.microsoft.com | Speicherort der Dokumentation |
+| www\.microsoft.com | Speicherort der Dokumentation |
 | \*.windows.net | Anmeldeort |
 | \*.microsoftonline.com | Anmeldeort |
 | \*.live.com | Anmeldeort |
@@ -72,9 +72,9 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 | download.unity3d.com | Spieleentwicklung mit Unity (Unity) |
 | netstorage.unity3d.com | Spieleentwicklung mit Unity (Unity) |
 | dl.google.com | Mobile Entwicklung mit JavaScript (Android SDK und NDK, Emulator) <br /><br />Mobile Entwicklung mit .NET (Android SDK und NDK, Emulator) |
-| www.incredibuild.com | Spieleentwicklung mit C++ (IncrediBuild) |
+| www\.incredibuild.com | Spieleentwicklung mit C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Spieleentwicklung mit C++ (IncrediBuild) |
-| www.python.org | Python-Entwicklung (Python) <br /><br />Data Science und analytische Anwendungen (Python) |
+| www\.python.org | Python-Entwicklung (Python) <br /><br />Data Science und analytische Anwendungen (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Verwenden von Visual Studio und Azure-Diensten
@@ -83,7 +83,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 
 Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Whitelist aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
-| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung  |
+| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
 | Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite in Visual Studio. |
@@ -115,13 +115,13 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Active Directory <br>Graph | graph.windows.net | https | 443 | Wird verwendet, um neue Azure Active Directory-Anwendungen bereitzustellen. Wird auch vom verbundenen Office 365 MSGraph-Dienstanbieter verwendet. |
 | Überprüfung auf <br>CLI-Update für <br>Azure Functions | functionscdn.azureedge.net | https | 443 | Wird verwendet, um nach aktualisierten Versionen der Azure Functions-CLI zu suchen. Sofern deaktiviert, wird stattdessen eine zwischengespeicherte Kopie (oder die Kopie der Azure Functions-Komponente) der CLI verwendet. |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | HTTP wird für Gradle-Downloads während der Builderstellung verwendet; HTTP wird zum Einschließen von Cordova-Plug-Ins in Projekten genutzt. |
-| Cloud-Explorer | 1. &#60;Clusterendpunkt&#62; <br>Service Fabric <br>2. &#60;Verwaltungsendpunkt&#62;<br>Allgemeine Cloudoberfläche <br>3. &#60;Graph-Endpunkt&#62;<br>Allgemeine Cloudoberfläche<br>4. &#60;Speicherkontoendpunkt&#62;<br>Speicherknoten <br>5. &#60;Azure-Portal-URLs&#62;<br>Allgemeine Cloudoberfläche <br>6. &#60;Key Vault-Endpunkte&#62; <br>Azure Resource Manager-VM-Knoten<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric-Remotedebuggen und ETW-Ablaufverfolgungen | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: TCP | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. Dynamisch | 1. Beispiel: test12.eastus.cloudapp.com<br>2. Ruft Abonnements ab und ruft Azure-Ressourcen ab bzw. verwaltet sie.<br>3. Ruft Azure Stack-Abonnements ab.<br>4. Verwaltet Speicherressourcen (Beispiel: mystorageaccount.blob.core.windows.net).<br>5. Kontextmenüoption „In Portal öffnen“ (öffnet eine Ressource im Azure-Portal).<br>6. Erstellt und verwaltet Schlüsselspeicher für das VM-Debugging (Beispiel: myvault.vault.azure.net). <br><br>7. Hiermit wird ein Portblock basierend auf der Anzahl von Knoten im Cluster sowie den verfügbaren Ports dynamisch zugewiesen. <br><br>Ein Portblock versucht, die dreifache Anzahl von Knoten mit mindestens zehn Ports abzurufen.<br><br>Für Streamingablaufverfolgungen wird versucht, den Portblock ab 810 zu erhalten. Wenn einer dieser Ports bereits verwendet wird, wird versucht, den nächsten Block abzurufen usw. (Wenn der Load Balancer leer ist, werden die Ports ab 810 sehr wahrscheinlich verwendet.) <br><br>Ähnlich werden für das Debugging vier Sätze an Portblocks reserviert: <br>– connectorPort: 30398 <br>– forwarderPort: 31398 <br>– forwarderPortx86: 31399<br>– fileUploadPort: 32398<br> |
+| Cloud-Explorer | 1. &#60;Clusterendpunkt&#62; <br>Service Fabric <br>2. &#60;Verwaltungsendpunkt&#62;<br>Allgemeine Cloudoberfläche <br>3. &#60;Graph-Endpunkt&#62;<br>Allgemeine Cloudoberfläche<br>4. &#60;Speicherkontoendpunkt&#62;<br>Speicherknoten <br>5. &#60;Azure-Portal-URLs&#62;<br>Allgemeine Cloudoberfläche <br>6. &#60;Key Vault-Endpunkte&#62; <br>Azure Resource Manager-VM-Knoten<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric-Remotedebuggen und ETW-Ablaufverfolgungen | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: TCP | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. Dynamisch | 1. Beispiel: test12.eastus.cloudapp.com<br>2. Ruft Abonnements ab und ruft Azure-Ressourcen ab bzw. verwaltet sie.<br>3. Ruft Azure Stack-Abonnements ab.<br>4. Verwaltet Speicherressourcen (Beispiel: mystorageaccount.blob.core.windows.net).<br>5. Kontextmenüoption „In Portal öffnen“ (öffnet eine Ressource im Azure-Portal).<br>6. Erstellt und verwaltet Schlüsselspeicher für das VM-Debugging (Beispiel: myvault.vault.azure.net). <br><br>7. Hiermit wird ein Portblock basierend auf der Anzahl von Knoten im Cluster sowie den verfügbaren Ports dynamisch zugewiesen. <br><br>Ein Portblock versucht, die dreifache Anzahl von Knoten mit mindestens zehn Ports abzurufen.<br><br>Für Streamingablaufverfolgungen wird versucht, den Portblock ab 810 zu erhalten. Wenn einer dieser Ports bereits verwendet wird, wird versucht, den nächsten Block abzurufen usw. (Wenn der Load Balancer leer ist, werden die Ports ab 810 sehr wahrscheinlich verwendet.) <br><br>Ähnlich werden für das Debugging vier Sätze an Portblocks reserviert: <br>– connectorPort: 30398, <br>– forwarderPort: 31398, <br>– forwarderPortx86: 31399,<br>– fileUploadPort: 32398<br> |
 | Cloud Services | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;Benutzerclouddienst&#62;.cloudapp.net <br> &#60;Benutzer-VM&#62;.&#60;Region&#62;.azure.com | 1. RDP <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. TCP | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Remotedesktop zu Cloud Services-VM <br><br> 2.  Speicherkontokomponente der privaten Diagnosekonfiguration <br><br> 3.  Azure-Portal <br><br> 4. Server-Explorer – Azure Storage &#42; entspricht dem vom Kunden benannten Speicherkonto  <br><br> 5.  Links zum Öffnen des Portals &#47; Download des Abonnementzertifikats &#47; Veröffentlichen der Einstellungsdatei <br><br>6. a) Lokaler Connectorport für das Remotedebuggen von Clouddienst und VM<br> 6. b) Öffentlicher Connectorport für das Remotedebuggen von Clouddienst und VM <br> 6. c) Lokaler Weiterleitungsport für das Remotedebuggen von Clouddienst und VM <br> 6. d) Öffentlicher Weiterleitungsport für das Remotedebuggen von Clouddienst und VM  <br> 6. e) Lokaler Port des Programms zum Hochladen von Dateien für das Remotedebuggen von Clouddienst und VM <br> 6. f) Öffentlicher Port des Programms zum Hochladen von Dateien für das Remotedebuggen von Clouddienst und VM |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Dokumentation <br><br> 2. Feature zur Clustererstellung <br><br>3. &#42; ist der Azure Key Vault-Name (Beispiel: test11220180112110108.vault.azure.net)  <br><br>  4. &#42; ist dynamisch (Beispiel: vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Momentaufnahme <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
-| Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „\*.npmjs.org“, „\*.nuget.org“ und „\*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarien (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
+| Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen \*.npmjs.org, \*.nuget.org und \*.nodejs.org sind nur für bestimmte Buildtaskszenarios erforderlich (z. B.: NuGet-Toolinstaller, Node Tool-Installationsprogramm) oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
 | | | | | |
 

@@ -1,5 +1,6 @@
 ---
 title: Erstellen Sie eine Datenbankdatei und Tabellen-Designer
+description: In diesem Tutorial, die beschreibt, wie Sie Tabellen und Fremdschlüssel in einer Datenbank hinzufügen, mit der Tabellen-Designer in Visual Studio. Es wird gezeigt, wie Daten über die grafische Oberfläche hinzufügen.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305324"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159866"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 
@@ -29,9 +30,9 @@ Sie können Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenban
 
 Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie die **Workloads** Registerkarte. Klicken Sie unter **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**. Wählen Sie die **ändern** , um die arbeitsauslastung in Visual Studio hinzuzufügen.
 
-## <a name="create-a-project-and-a-local-database-file"></a>Erstellen Sie ein Projekt und eine lokale Datenbankdatei.
+## <a name="create-a-project-and-a-local-database-file"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
 
-1. Erstellen Sie ein Windows Forms-Projekt mit dem Namen SampleDatabaseWalkthrough **.
+1. Erstellen Sie ein Windows Forms-Projekt mit dem Namen **SampleDatabaseWalkthrough**.
 
 2. Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen**.
 
@@ -41,13 +42,13 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 
 4. Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
-### <a name="to-add-a-data-source"></a>So fügen Sie eine Datenquelle hinzu
+### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 
 1. Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie sie durch Drücken von **UMSCHALT**+**Alt**+**D** oder auswählen **Ansicht** > **Other Windows** > **Datenquellen** in der Menüleiste.
 
 1. In der **Datenquellen** wählen Sie im Fenster der **neue Datenquelle hinzufügen** Link.
 
-   Der Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
+   Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
 1. Auf der **wählen Sie einen Datenquellentyp** Seite **Datenbank** und wählen Sie dann **Weiter**.
 
@@ -59,25 +60,25 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 
 1. Eine der **Datenbankobjekte auswählen** Seite sehen, da Sie eine Nachricht die Datenbank keine Objekte enthalten. Klicken Sie auf **Fertig stellen**.
 
-### <a name="to-view-properties-of-the-data-connection"></a>Um die Eigenschaften der Datenverbindung anzuzeigen
+### <a name="view-properties-of-the-data-connection"></a>Anzeigen der Eigenschaften von der Datenverbindung
 
 Sehen Sie die Verbindungszeichenfolge für die *SampleDatabase.mdf* Datei durch Öffnen des Eigenschaftenfensters der Datenverbindung:
 
--   Wählen Sie in Visual Studio **Ansicht** > **Objekt-Explorer von SQL Server** , wenn diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
+- Wählen Sie in Visual Studio **Ansicht** > **Objekt-Explorer von SQL Server** , wenn diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
 
--   Alternativ können Sie auswählen **Ansicht** > **Server-Explorer**, sofern diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten. Öffnen Sie das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
+- Alternativ können Sie auswählen **Ansicht** > **Server-Explorer**, sofern diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten. Öffnen Sie das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Erstellen von Tabellen und Schlüsseln mit Tabellen-Designer
 
 In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jeder Tabelle und einige Zeilen der Beispieldaten. Sie erstellen auch einen foreign Key, um anzugeben, wie Datensätze in einer Tabelle mit Datensätzen in einer anderen Tabelle entsprechen.
 
-### <a name="to-create-the-customers-table"></a>So erstellen Sie die Tabelle Customers
+### <a name="create-the-customers-table"></a>Erstellen der Customers-Tabelle
 
 1. In **Server-Explorer** oder **Objekt-Explorer von SQL Server**, erweitern Sie die **Datenverbindungen** Knoten, und erweitern Sie dann die **SampleDatabase.mdf**Knoten.
 
 2. Öffnen Sie das Kontextmenü für **Tabellen**, und wählen Sie dann **neue Tabelle hinzufügen**.
 
-     Der Tabellen-Designer** wird geöffnet und zeigt ein Raster mit einer standardmäßigen Zeile an, die eine einzelne Spalte in der Tabelle darstellt, die Sie erstellen. Durch Hinzufügen von Zeilen zum Raster fügen Sie zusätzliche Spalten in der Tabelle hinzu.
+     Der **Tabellen-Designer** wird geöffnet und zeigt ein Raster mit einer Standardzeile an, die eine einzelne Spalte in der Tabelle darstellt, die Sie erstellen. Durch Hinzufügen von Zeilen zum Raster fügen Sie zusätzliche Spalten in der Tabelle hinzu.
 
 3. Im Raster fügen Sie eine Zeile für jeden der folgenden Einträge hinzu:
 
@@ -108,7 +109,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
-### <a name="to-create-the-orders-table"></a>So erstellen Sie die Tabelle Orders
+### <a name="create-the-orders-table"></a>Erstellen Sie die Orders-Tabelle
 
 1. Fügen Sie eine weitere Tabelle hinzu, und fügen Sie dann in der folgenden Tabelle eine Zeile für jeden Eintrag hinzu:
 
@@ -133,13 +134,13 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
-### <a name="to-create-a-foreign-key"></a>So erstellen Sie einen Fremdschlüssel
+### <a name="create-a-foreign-key"></a>Erstellen eines Fremdschlüssels
 
 1. Klicken Sie im Kontextbereich auf der rechten Seite des Rasters öffnen Sie das Kontextmenü für **Fremdschlüssel**, und wählen Sie dann **neuen Fremdschlüssel hinzufügen**, wie in die folgende Abbildung dargestellt.
 
      ![Hinzufügen eines Fremdschlüssels im Tabellen-Designer](../data-tools/media/foreignkey.png)
 
-2. Im angezeigten Textfeld ersetzen Sie ToTable **durch Customers**.
+2. Ersetzen Sie im angezeigten Textfeld **ToTable** durch **Customers**.
 
 3. Aktualisieren Sie die letzte Zeile entsprechend der im folgende Beispiel in T-SQL-Bereich:
 
@@ -170,7 +171,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 6. Hinzufügen von Daten für einige Aufträge.
 
     > [!IMPORTANT]
-    > Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte "CustomerID" in der Tabelle "Customers" angegeben haben.
+    > Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte **CustomerID** in der Tabelle „Customers“ angegeben haben.
 
 7. Wählen Sie auf der Menüleiste **Datei** > **Alles speichern**.
 

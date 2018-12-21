@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Dumpdateien in Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: H1HackMay2017
+title: Verwenden von Dumpdateien im Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296137"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066953"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dumpdateien in Visual Studio-debugger
 
@@ -50,9 +50,9 @@ Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder nativen Code s
 
 -   Visual Studio kann nicht die debugdumpdateien gespeichert, die im älteren, [vollständiger benutzermodusdump](/windows/desktop/wer/collecting-user-mode-dumps) Format. Ein vollständiger benutzermodusdump ist nicht mit einer Dumpdatei mit Heapinformationen identisch.
 
--   Das Debuggen von Dumpdateien mit optimiertem Code kann unübersichtlich sein. Z. B. Compiler-inlining von Funktionen unerwartete Aufruflisten ergeben kann, und andere Optimierungen können die Lebensdauer der Variablen ändern.
+-   Das Debuggen von Dumpdateien mit optimiertem Code kann unübersichtlich sein. Beispielsweise kann das Compiler-Inlining von Funktionen unerwartete Aufruflisten ergeben, und andere Optimierungen könnten die Lebensdauer der Variablen beeinflussen.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Dumpdateien Sie mit oder ohne heaps
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Dumpdateien mit oder ohne Heaps
 
 Dumpdateien können haben oder nicht Heapinformationen.
 
@@ -66,7 +66,7 @@ Während des Debuggens eines Prozesses in Visual Studio, können Sie ein Speiche
 
 Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aktiviert, Sie können Visual Studio-Debugger an einen abgestürzten Prozess außerhalb von Visual Studio Anfügen und speichern Sie eine Dumpdatei vom Debugger. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-**Um eine Dumpdatei speichern zu können:**
+**So speichern Sie eine Dumpdatei:**
 
 1. Während bei einem Fehler oder einem Haltepunkt während des Debuggens angehalten wird, wählen Sie **Debuggen** > **Dump speichern unter**. 
 
@@ -75,13 +75,13 @@ Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.
 1. Navigieren Sie zu einem Pfad, und wählen Sie einen Namen für die Dumpdatei, und wählen Sie dann **speichern**. 
 
 >[!NOTE]
->Sie können Dumpdateien mit jedem Programm erstellen, die die Windows-minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) können Dumpdateien zu Prozessabstürzen basierend auf Triggern oder bedarfsabhängig erstellen. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
+>Sie können Dumpdateien mit jedem Programm erstellen, die die Windows-minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei
 
 1. Wählen Sie in Visual Studio **Datei** > **öffnen** > **Datei**.
 
-1. In der **geöffnete Datei** Dialogfeld Feld, und wählen Sie die Dumpdatei. Sie weist normalerweise einen *dmp* Erweiterung. Klicken Sie auf **OK**.
+1. Wählen Sie im Dialogfeld **Datei öffnen** die Dumpdatei aus. Die Dateierweiterung lautet in der Regel *DMP*. Klicken Sie auf **OK**.
 
    Die **Minidump-Datei Zusammenfassung** Fenster zeigt die Zusammenfassung und das Modul Informationen für die Speicherabbilddatei und Aktionen können.
 
@@ -96,7 +96,7 @@ Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.
 Benötigt vollständige Debugfeatures auf eine Dumpdatei und Verwendung von Visual Studio:
 
 - Die *.exe* Datei, die für die Sicherung erstellt wurde und andere Binärdateien (DLLs, usw.), die der dumpprozess verwendet.
-- Symbol (*PDB*)-Dateien für die *.exe* und andere Binärdateien.
+- Symboldateien (*PDB*-Dateien) für die *EXE*-Datei und andere Binärdateien.
 - Die *.exe* und *PDB* Erstellung zum Sichern von Dateien, die genau die Version und der Dateien an.
 - Die Quelldateien für die relevanten Module. Sie können der disassemblys der Module verwenden, wenn Sie die Quelldateien nicht finden.
 
@@ -112,10 +112,10 @@ Visual Studio sucht automatisch diese Speicherorte für *.exe* Dateien, die nich
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Verwenden Sie die Seiten keine binären, keine Symbole geladen oder Quelle nicht gefunden
 
-Wenn Visual Studio die Dateien nicht finden können, muss zum Debuggen eines Moduls im Dump, es zeigt eine **keine Binärdatei gefunden**, **keine Symbole gefunden**, oder **Quelle nicht gefunden** Seite. Diese Seiten enthalten ausführliche Informationen zur Ursache des Problems, und geben Sie, dass die Aktionslinks, mit die Sie können die Dateien zu suchen. Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Wenn Visual Studio die Dateien nicht finden können, muss zum Debuggen eines Moduls im Dump, es zeigt eine **keine Binärdatei gefunden**, **keine Symbole gefunden**, oder **Quelle nicht gefunden** Seite. Diese Seiten enthalten ausführliche Informationen zur Ursache des Problems, und geben Sie, dass die Aktionslinks, mit die Sie können die Dateien zu suchen. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Just-In-Time debugging (Just-In-Time-Debuggen)](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Specify symbol (.pdb) and source files (Angeben von Symboldateien (PDB) und Quelldateien)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

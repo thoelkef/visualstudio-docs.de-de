@@ -1,6 +1,7 @@
 ---
-title: Anzeigen von DLLs und ausführbare Dateien in das Fenster "Module" | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+title: Anzeigen von DLLs und ausführbare Dateien
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257289"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066781"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Anzeigen von DLLs und ausführbare Dateien in das Fenster "Module" (C#, C++, Visual Basic F#)
  
@@ -43,7 +44,7 @@ Während des Debuggens Visual Studio die **Module** Fenster listet auf und zeigt
 
 Wählen Sie zum Öffnen des Modulfensters während des Debuggens **Debuggen** > **Windows** > **Module**. 
   
-In der Standardeinstellung die **Module** Fenster nach Modulen Ladereihenfolge sortiert. Wählen Sie den Header am oberen Rand der Spalte, um nach einer beliebigen Spalte im Fenster zu sortieren.  
+Module werden im Fenster **Module** standardmäßig nach der Ladereihenfolge sortiert. Wählen Sie den Header am oberen Rand der Spalte, um nach einer beliebigen Spalte im Fenster zu sortieren.  
   
 ## <a name="load-symbols"></a>Laden von Symbolen  
 
@@ -63,7 +64,7 @@ Die **Symbolstatus** -Spalte in der **Module** Fenster zeigt, welche Module Debu
 
 **So ändern Sie das Laden der Einstellungen für das Verhalten der Symbole auf:**  
 
-1. In der **Module** Fenster mit der rechten Maustaste ein Modul.  
+1. Klicken Sie im Fenster **Module** mit der rechten Maustaste auf ein beliebiges Modul.  
    
 1. Wählen Sie **Symboleinstellungen**.  
   
@@ -73,11 +74,11 @@ Die **Symbolstatus** -Spalte in der **Module** Fenster zeigt, welche Module Debu
   
 **So ändern Sie das Verhalten für ein bestimmtes Modul Laden der Symbole auf:**  
 
-1.  In der **Module** Fenster mit der rechten Maustaste in des Moduls.  
+1.  Klicken Sie im Fenster **Module** mit der rechten Maustaste auf das Modul.  
 
 1.  Klicken Sie im Kontextmenü, aktivieren oder deaktivieren Sie **immer laden automatisch**. Änderungen werden in der nächsten Debugsitzung wirksam.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Unterbrechen der Ausführung](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
- [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)   
+ [Specify symbol (.pdb) and source files (Angeben von Symboldateien (PDB) und Quelldateien)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

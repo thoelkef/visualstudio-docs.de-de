@@ -1,5 +1,5 @@
 ---
-title: Codierte Webleistungstests in Visual Studio
+title: Codierte Webleistungstests
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895508"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067841"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
@@ -86,17 +86,17 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
 ## <a name="qa"></a>Fragen und Antworten
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>F: Kann ich mehrere Tests gleichzeitig durchführen?
- **A**: Ja. Verwenden Sie das Kontextmenü im **Projektmappen-Explorer**.
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Frage: Kann ich mehrere Tests gleichzeitig durchführen?
+ **Antwort:** Ja. Verwenden Sie das Kontextmenü im **Projektmappen-Explorer**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>F: Sollte ich eine Datenquelle vor oder nach der Generierung eines codierten Tests hinzufügen?
- **A**: Es ist einfacher, eine [Datenquelle](../test/add-a-data-source-to-a-web-performance-test.md) hinzuzufügen, bevor Sie den codierten Test generieren, da der Code automatisch für Sie generiert wird.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Frage: Sollte ich eine Datenquelle vor oder nach der Generierung eines codierten Tests hinzufügen?
+ **Antwort:** Es ist einfacher, eine [Datenquelle](../test/add-a-data-source-to-a-web-performance-test.md) hinzuzufügen, bevor Sie den codierten Test generieren, da der Code automatisch für Sie generiert wird.
 
  Wenn Sie einen codierten Test mit einer Datenquelle ausführen, wird möglicherweise folgende Fehlermeldung angezeigt:
 
- **Could not run test \<Test Name> on agent \<Computer Name>: Object reference not set to an instance of an object** (<Testname> konnte auf Agent <Computername> nicht ausgeführt werden: Objektverweis wurde nicht als Instanz eines Objekts festgelegt).
+ **Could not run test\<Test Name> on agent \<Computer Name>: Object reference not set to an instance of an object. (Der Test „<Testname>“ konnte auf dem Agent „<Computername>“ nicht ausgeführt werden: Der Objektverweis ist nicht auf eine Objektinstanz festgelegt.)**
 
  Dieser Fehler kann auftreten, wenn Sie für die Testklasse ein DataSourceAttribute ohne ein zugehöriges DataBindingAttribute definiert haben. Um diesen Fehler zu beheben, fügen Sie ein entsprechendes DataBindingAttribute hinzu, löschen es oder kommentieren es aus dem Code aus.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>F: Sollte ich Validierung und Extraktionsregeln vor oder nach der Generierung eines codierten Tests hinzufügen?
- **A**: Es einfacher, Validierungsregeln und Extraktionsregeln hinzuzufügen, bevor Sie den codierten Test generieren; zu Validierungszwecken sollten Sie jedoch [Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) verwenden.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Frage: Sollte ich Validierungs- und Extraktionsregeln vor oder nach der Generierung eines codierten Tests hinzufügen?
+ **Antwort:** Es ist einfacher, Validierungs- und Extraktionsregeln hinzuzufügen, bevor Sie den codierten Test generieren. Zu Validierungszwecken sollten Sie jedoch [Tests für codierte UI](../test/use-ui-automation-to-test-your-code.md) verwenden.

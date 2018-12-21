@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Laufzeiteinstellungen zu einem Auslastungstest in Visual Studio
+title: Hinzufügen von Laufzeiteinstellungen zu einem Auslastungstest
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896613"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048053"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest
 
@@ -40,14 +40,14 @@ Sie können dem Auslastungstest weitere Laufzeiteinstellungen mit anderen Eigens
 
      Das Fenster **Eigenschaften** wird mit den Eigenschaften für die ausgewählte Testlaufeinstellung angezeigt.
 
-5.  Verwenden Sie im Fenster **Eigenschaften** das Textfeld für die Eigenschaft **Name**, um der neuen Testlaufeinstellung einen Namen zu geben, der die Absicht der Testlaufeinstellung beschreibt, z.B. **Testlaufeinstellung: Fünfminütiger Testlauf**.
+5.  Verwenden Sie im Fenster **Eigenschaften** das Textfeld für die Eigenschaft **Name**, um der neuen Laufzeiteinstellung einen Namen zu geben, der die Absicht der Laufzeiteinstellung beschreibt, z. B. **Laufzeiteinstellung: fünfminütiger Testlauf**.
 
 6.  Verwenden Sie Fenster **Eigenschaften**, um die Laufzeiteinstellungen zu ändern. Ändern Sie beispielsweise die Testlaufdauer in **00:05:00**, um den Test fünf Minuten lang auszuführen.
 
     > [!NOTE]
     > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-     Sie können jetzt angeben, dass Sie die hinzugefügte Testlaufeinstellung verwenden möchten, indem Sie sie als aktiv markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellung für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Sie können jetzt angeben, dass Sie die hinzugefügte Testlaufeinstellung verwenden möchten, indem Sie sie als aktiv markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Siehe auch
 

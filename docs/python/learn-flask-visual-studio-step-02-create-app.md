@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 2'
+title: 'Tutorial „Lernen von Flask“, Visual Studio-Schritt 2: Ansichten und Vorlagen'
+titleSuffix: ''
 description: In diesem Tutorial erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Schritten zur Erstellung einer App sowie zur Verwendung von Ansichten und Vorlagen.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812620"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052944"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -30,7 +32,7 @@ In diesem Schritt wird Folgendes erläutert:
 > - Umgestalten des App-Codes zur Trennung von Ansichten und Startcode (Schritt 2.1)
 > - Rendern einer Ansicht mit einer Seitenvorlage (Schritt 2.2)
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Schritt 2.1: Umgestalten des Projekts zur Erleichterung der Weiterentwicklung
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Schritt 2.1: Umgestalten des Projekts zur Erleichterung der weiteren Entwicklung
 
 Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstellt, die den Startcode und eine Ansicht enthält. Diese Elemente sollten getrennt werden, damit die App so weiterentwickelt werden kann, dass mehrere Ansichten und Vorlagen unterstützt werden.
 
@@ -198,9 +200,9 @@ Da der Rückgabewert für die Ansicht nur eine Zeichenfolge ist, können Sie bel
 
 Antwort: Obwohl Vorlagen in der Regel in separaten HTML-Dateien gespeichert sind, können Sie auch eine Inlinevorlage verwenden. Die Verwendung einer separaten Datei wird jedoch empfohlen, um eine saubere Trennung zwischen Markup und Code aufrechtzuerhalten.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Dateierweiterung .html verwenden?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Dateierweiterung „.html“ verwenden?
 
-Antwort: Die *.html*-Erweiterung für Seitenvorlagendateien ist komplett optional, da Sie immer den genauen relativen Pfad zur Datei im ersten Argument der Funktion `render_template` angeben. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für *.html*-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
+Antwort: Antwort: Die *.html*-Erweiterung für Seitenvorlagendateien ist optional, da Sie immer den genauen relativen Pfad zur Datei im ersten Argument der Funktion `render_template` angeben. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für *.html*-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
 
 Wenn Sie mit einem Flask-Projekt arbeiten, erkennt Visual Studio automatisch, ob die HTML-Datei, die Sie gerade bearbeiten, tatsächlich eine Flask-Vorlage ist, und stellt bestimmte Features zur automatischen Vervollständigung bereit. Wenn Sie beispielsweise einen Kommentar zu der Flask-Seitenvorlage, `{#`, eingeben, bietet Visual Studio Ihnen automatisch die schließenden `#}`-Zeichen. Die Befehle **Auswahl kommentieren** und **Kommentar der Auswahl entfernen** (im Menü **Bearbeiten** > **Erweitert** und in der Symbolleiste) verwenden ebenfalls anstelle von HTML-Kommentaren Vorlagenkommentare.
 
@@ -220,4 +222,4 @@ Antwort: Ja, Sie können Unterordner verwenden und dann auf den relativen Pfad u
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Flask Quickstart - Rendering Templates (Flask-Schnellstart: Rendern von Vorlagen)](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

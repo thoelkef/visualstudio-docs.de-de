@@ -1,22 +1,23 @@
 ---
 title: Referenz zum Fenster „Python-Umgebungen“
 description: Dieser Artikel beschreibt jede der Registerkarten, die im Fenster „Python-Umgebungen“ in Visual Studio angezeigt werden.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996076"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051428"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -35,7 +36,7 @@ Bietet grundlegende Informationen und Befehle für die Umgebung:
 
 ![Registerkarte „Übersicht“ von Python-Umgebungen](media/environments-overview-tab.png)
 
-| Befehl | Beschreibung  |
+| Befehl | Beschreibung |
 | --- | --- |
 | **Diese Umgebung zum Standard für neue Projekte machen** | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio (2017 Version 15.5 und früher) kurzzeitig nicht mehr reagiert, während es die IntelliSense-Datenbank lädt. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
 | **Website des Verteilers besuchen** | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
@@ -61,7 +62,7 @@ Wenn diese Registerkarte verfügbar ist, enthält sie die in der folgenden Tabel
 
 ![Registerkarte „Konfigurieren“ von Python-Umgebungen](media/environments-configure-tab.png)
 
-| Feld | Beschreibung  |
+| Feld | Beschreibung |
 | --- | --- |
 | **Beschreibung** | Der Name für die Umgebung. |
 | **Präfixpfad** | Der Speicherort des Basisordners des Interpreters. Durch Festlegen dieses Werts und Klicken auf **Automatisch erkennen** versucht Visual Studio, die anderen Felder für Sie auszufüllen. |
@@ -102,7 +103,7 @@ Wenn Sie Pakete in einer Umgebung installieren, die sich in einem geschützten B
 
 ![Eingabeaufforderung für erhöhte Rechte](media/environments-pip-elevate.png)
 
-**Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z.B. so aussehen: **error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': Permission denied** (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden: Berechtigung verweigert).
+**Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z. B. so aussehen: **error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden. Berechtigung verweigert)**.
 
 Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras** > **Optionen** > **Python Tools** > **Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**.
 

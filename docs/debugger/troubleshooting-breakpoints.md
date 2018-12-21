@@ -1,6 +1,6 @@
 ---
-title: Problembehandlung von Haltepunkten in Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: ''
+title: Problembehandlung von Haltepunkten im Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155398"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052850"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Problembehandlung von Haltepunkten in Visual Studio-Debugger
 
@@ -24,7 +24,7 @@ Ein Haltepunkt verfügt über zwei mögliche visuelle Zustände beim Debuggen: e
 
 Die folgenden beiden Abschnitte beschreiben die deutliche Warnungen und zur Behebung dieser Probleme. 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Keine Symbole haben für dieses Dokument geladen wurde." 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>„No Symbols have been loaded for this document“ (Für dieses Dokument wurden keine Symbole geladen) 
 
 Wechseln Sie zu der **Module** Fenster (**Debuggen** > **Windows** > **Module**) und überprüft, ob Ihr Modul geladen.  
 * Wenn Ihr Modul geladen wird, überprüfen Sie die **Symbolstatus** Spalte, um festzustellen, ob Symbole geladen wurden. 
@@ -36,7 +36,7 @@ Wechseln Sie zu der **Module** Fenster (**Debuggen** > **Windows** > **Module**)
 
 * Wenn Ihr Modul nicht geladen ist, überprüfen Sie Folgendes ein, um die Ursache zu ermitteln: 
   * Vergewissern Sie sich, dass Sie den richtigen Prozess debuggen. 
-  * Überprüfen, ob Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code, die der Debugger so konfiguriert ist, dass das Debuggen in der **Prozesse** Fenster (**Debuggen** > **Windows**  >  **Prozesse**). Z. B. Wenn Sie versuchen, C#-Code zu debuggen, vergewissern Sie sich, dass der Debugger für den entsprechenden .NET Framework konfiguriert ist (z. B. verwaltet (v4\*) im Vergleich zu verwalteter (v2\*/v3\*) im Vergleich zu verwalteter (CoreCLR)). 
+  * Überprüfen, ob Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code, die der Debugger so konfiguriert ist, dass das Debuggen in der **Prozesse** Fenster (**Debuggen** > **Windows**  >  **Prozesse**). Angenommen, Sie debuggen möchten C# code, vergewissern Sie sich, dass der Debugger für den entsprechenden .NET Framework konfiguriert ist (z. B. verwaltet (v4\*) im Vergleich zu verwalteter (v2\*/v3\*) im Vergleich zu verwalteter (CoreCLR)) . 
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… der aktuelle Quellcode unterscheidet sich von der Version, erstellt in..." 
 

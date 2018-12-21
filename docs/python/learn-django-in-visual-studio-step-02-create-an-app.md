@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 2'
+title: 'Tutorial zu Django in Visual Studio, Schritt 2: Ansichten und Seitenvorlagen'
+titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Schritten zur Erstellung einer App oder Verwendung von Ansichten und Vorlagen.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001281"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058544"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -32,7 +34,7 @@ In diesem Schritt wird Folgendes erläutert:
 > - Rendern einer Ansicht mithilfe von HTML (Schritt 2-3)
 > - Rendern einer Ansicht mithilfe einer Django-Seitenvorlage (Schritt 2-4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Schritt 2-1: Erstellen einer App mit einer Standardstruktur
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Schritt 2.1: Erstellen einer App mit einer Standardstruktur
 
 Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen Dateien für einen bestimmten Zweck enthält. Ein Django-Projekt kann eine beliebige Anzahl von Apps enthalten, da ein Webhost eine beliebige Anzahl getrennter Einstiegspunkte über einen Domänennamen bedienen kann. Beispielsweise enthält ein Django-Projekt für eine Domäne wie contoso.com möglicherweise eine App für www.contoso.com, eine zweite App für support.contoso.com und eine dritte App für docs.contoso.com. In diesem Fall verarbeitet das Django-Projekt das URL-Routing auf Websiteebene (in seinen Dateien *urls.py* und *settings.py*), während jede App durch ihr internes Routing, ihre Ansichten und Modelle, ihre statischen Dateien und ihre Verwaltungsschnittstelle ihren eigenen Stil und ihr eigenes Verhalten hat.
 
@@ -48,7 +50,7 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 
 ![Django-App-Dateien im Projektmappen-Explorer](media/django/step02-django-app-in-solution-explorer.png)
 
-| Element | Beschreibung  |
+| Element | Beschreibung |
 | --- | --- |
 | **\_\_init\_\_.py** | Die Datei, die die App als Paket identifiziert. |
 | **Migrations** | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei *\_\_init\_\_.py* (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
@@ -72,7 +74,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 Antwort: Wenn Sie den Befehl **Hinzufügen** > **Django-App** ausführen oder **Hinzufügen** > **Neues Element** mit einer Django-App-Vorlage verwenden, werden die gleichen Dateien erstellt wie mit dem Django-Befehl `manage.py startapp <app_name>`. Die Erstellung der App in Visual Studio hat den Vorteil, dass der App-Ordner und alle enthaltenen Dateien automatisch in das Projekt integriert werden. Sie können den gleichen Visual Studio-Befehl verwenden, um eine beliebige Anzahl von Apps in Ihrem Projekt zu erstellen.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Schritt 2-2: Ausführen der App aus dem Django-Projekt
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Schritt 2.2: Ausführen der App aus dem Django-Projekt
 
 Wenn Sie an diesem Punkt das Projekt in Visual Studio erneut ausführen (über die Schaltfläche der Symbolleiste oder mit **Debuggen** > **Debuggen starten**), wird die Standardseite weiterhin angezeigt. Es werden keine App-Inhalte angezeigt, da Sie eine App-spezifische Seite definieren und die App dem Django-Projekt hinzufügen müssen:
 
@@ -127,7 +129,7 @@ Wenn Sie in einem regulären Ausdruck kein nachgestelltes „$“ verwenden, wie
 
 Zum Experimentieren mit anderen regulären Ausdrücken verwenden Sie Onlinetools, wie z.B. [regex101.com](https://regex101.com) auf [pythex.org](https://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Schritt 2-3: Rendern einer Ansicht mithilfe von HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Schritt 2.3: Rendern einer Ansicht mithilfe von HTML
 
 Die Funktion `index`, die bisher in *views.py* enthalten ist, generiert lediglich eine Nur-Text-HTTP-Antwort für die Seite. Die meisten realen Webseiten antworten natürlich mit Rich-HTML-Seiten, die häufig Live-Daten enthalten. Dies ist der Hauptgrund für die Definition einer Ansicht mit einer Funktion, sodass der Inhalt dynamisch generiert werden kann.
 
@@ -153,7 +155,7 @@ Führen Sie das Projekt erneut aus, um die Meldung "**Hello Django!** am Montag,
 >
 > ![Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste in Visual Studio](media/debugging-restart-toolbar-button.png)
 
-## <a name="step-2-4-render-a-view-using-a-page-template"></a>Schritt 2-4: Rendern einer Ansicht mithilfe einer Seitenvorlage
+## <a name="step-2-4-render-a-view-using-a-page-template"></a>Schritt 2.4: Rendern einer Ansicht mit einer Seitenvorlage
 
 Das Generieren von HTML im Code funktioniert gut bei sehr kleinen Seiten. Bei komplexeren Seiten sollten jedoch die statischen HTML-Teile Ihrer Seite (zusammen mit Verweisen auf CSS- und JavaScript-Dateien) als „Seitenvorlagen“ beibehalten werden, in die Sie dann dynamischen, codegenerierten Inhalt einfügen. Im vorherigen Abschnitt sind nur das Datum und die Uhrzeit aus dem `now.strftime`-Aufruf dynamisch. Dies bedeutet, dass der übrige Inhalt in eine Seitenvorlage gestellt werden kann.
 
@@ -255,7 +257,7 @@ Die folgenden Schritte veranschaulichen die Verwendung von Seitenvorlagen:
 
 Antwort: Obwohl Vorlagen in der Regel in separaten HTML-Dateien gespeichert sind, können Sie auch eine Inlinevorlage verwenden. Die Verwendung einer separaten Datei wird jedoch empfohlen, um eine saubere Trennung zwischen Markup und Code aufrechtzuerhalten.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Dateierweiterung .html verwenden?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Frage: Müssen Vorlagen die Dateierweiterung „.html“ verwenden?
 
 Antwort: Die Erweiterung *.html* für Seitenvorlagendateien ist komplett optional, da Sie immer den genauen relativen Pfad zur Datei im zweiten Argument der Funktion `render` verwenden. Visual Studio (und andere Editoren) verfügt jedoch in der Regel über Features wie Codevervollständigung und Syntaxfarbcodierung für *.html*-Dateien, die schwerer wiegen als die Tatsache, dass es sich bei den Seitenvorlagen nicht um HTML im eigentlichen Sinne handelt.
 
@@ -263,7 +265,7 @@ Wenn Sie mit einem Django-Projekt arbeiten, erkennt Visual Studio automatisch, o
 
 ### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Frage: Beim Ausführen des Projekts wird eine Fehlermeldung angezeigt, die besagt, dass die Vorlage nicht gefunden werden kann. Wo liegt der Fehler?
 
-Antwort: Wenn Sie von einer Fehlermeldung informiert werden, dass die Vorlage nicht gefunden werden kann, stellen Sie sicher, dass Sie der Datei *settings.py* des Django-Projekts in der Liste `INSTALLED_APPS` die App hinzugefügt haben. Ohne diesen Eintrag weiß Django nicht, dass der Ordner *Templates* der App überprüft werden soll.
+Antwort: Wenn Sie von einer Fehlermeldung informiert werden, dass die Vorlage nicht gefunden werden kann, stellen Sie sicher, dass Sie die App der Datei *settings.py* des Django-Projekts in der Liste `INSTALLED_APPS` hinzugefügt haben. Ohne diesen Eintrag weiß Django nicht, dass der Ordner *Templates* der App überprüft werden soll.
 
 ### <a name="question-why-is-template-namespacing-important"></a>Frage: Weshalb ist Vorlagen-Namespacing wichtig?
 
@@ -279,4 +281,4 @@ Antwort: Wenn Django eine Vorlage sucht, auf die in der Funktion `render` verwie
 - [Writing your first Django app, part 1 - views (Erstellen Ihrer ersten Django-App – Teil 1: Ansichten)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Weitere Funktionen von Django-Vorlagen, z.B. „includes“ und Vererbung, finden Sie unter [The Django template language (Django-Vorlagensprache)](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - [Regular expression training on inLearning (Schulung zu regulären Ausdrücken auf inLearning)](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

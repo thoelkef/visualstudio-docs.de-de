@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379637"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954083"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Installieren von Frameworks für Komponententests von Drittanbietern
+# <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
 Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponententests ausgeführt werden, für den eine Adapterschnittstelle für den Explorer entwickelt wurde. Das Installationsprogramm des Frameworks installiert die Binarys und fügt Visual Studio-Projektvorlagen für die von ihm unterstützten Sprachen hinzu. Wenn Sie ein Projekt mit der Vorlage erstellen, wird das Framework beim Test-Explorer registriert. Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen. Der Test-Explorer kann sie alle ausführen.
 
-## <a name="acquire-third-party-frameworks"></a>Abrufen von Drittanbieter-Frameworks
+[MSTest](getting-started-with-unit-testing.md) ist das Testframework von Visual Studio und wird standardmäßig mit Visual Studio installiert.
 
-Sie können viele Komponententest-Frameworks von Drittanbietern oder Visual Studio Marketplace herunterladen und mithilfe des Visual Studio-Erweiterungs-Managers installieren. Frameworks können außerdem von anderen Websites, wie etwa der Website des Frameworks, heruntergeladen werden.
+## <a name="acquire-frameworks"></a>Herunterladen von Frameworks
+
+Sie können Komponententest-Frameworks von Drittanbietern oder [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) herunterladen und mithilfe des Visual Studio-Erweiterungs-Managers installieren. Frameworks können außerdem von anderen Websites, wie etwa der Website des Frameworks, heruntergeladen werden.
 
 ### <a name="install-from-visual-studio"></a>Installieren aus Visual Studio
 
@@ -64,7 +66,7 @@ Aktualisieren Sie auf den neuesten stabilen Testadapter, um eine bessere Testerm
 
 1. Öffnen Sie den NuGet-Paket-Manager für Ihre Projektmappe, indem Sie zu **Extras** > **NuGet-Paket-Manager** > **NuGet-Pakete für Projektmappe verwalten** navigieren.
 
-2. Klicken Sie auf die Registerkarte **Updates**, und suchen Sie nach installierten NUnit- oder xUnit-Testadaptern.
+2. Klicken Sie auf die Registerkarte **Updates**, und suchen Sie nach installierten MSTest-, NUnit- oder xUnit-Testadaptern.
 
 3. Wählen Sie erst alle Testadapter und dann im Dropdownmenü die neueste stabile Version aus.
 
