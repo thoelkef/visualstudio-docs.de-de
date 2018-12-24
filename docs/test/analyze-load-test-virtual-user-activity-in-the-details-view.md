@@ -1,5 +1,5 @@
 ---
-title: Analysieren der Aktivität virtueller Benutzer bei Auslastungstests in Visual Studio
+title: Analysieren des Auslastungstests über die Aktivität des virtuellen Benutzers
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059907"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analysieren der Aktivität virtueller Benutzer bei Auslastungstests in der Detailansicht des Auslastungstest-Analyzers
 
@@ -58,8 +58,8 @@ In der **Detailansicht** wird das **Diagramm für Aktivitäten virtueller Benutz
 |Aufgaben|Verwandte Themen|
 |-|-|
 |**Ausführen des Auslastungstests:** Nachdem Sie einen Auslastungstest erstellt und ihn so konfiguriert haben, dass Daten zu den Aktivitäten virtueller Benutzer gesammelt werden, müssen Sie den Test vollständig ausführen, um das **Diagramm für Aktivitäten virtueller Benutzer** anzuzeigen.||
-|**Anzeigen der Auslastungstestergebnisse, die Daten zu den Aktivitäten virtueller Benutzer enthalten:** Nach dem Erstellen, Konfigurieren und vollständigen Ausführen des Auslastungstests können Sie die Aktivitätsdaten virtueller Benutzer anzeigen, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.|-   [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [How to: Analyze What Virtual Users Are Doing During a Load Test (Vorgehensweise: Analysieren der Aktivitäten virtueller Benutzer während eines Auslastungstests)](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Isolieren von Leistungsproblemen in Auslastungstests:** Mithilfe des **Diagramms für Aktivitäten virtueller Benutzer** können Leistungsprobleme im Auslastungstest isoliert werden.|-   [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Anzeigen der Auslastungstestergebnisse, die Daten zu den Aktivitäten virtueller Benutzer enthalten:** Nach dem Erstellen, Konfigurieren und vollständigen Ausführen des Auslastungstests können Sie die Aktivitätsdaten virtueller Benutzer anzeigen, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.|-   [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Isolieren von Leistungsproblemen bei Auslastungstests:** Sie können mithilfe des **Diagramms für Aktivitäten virtueller Benutzer** Leistungsprobleme im Auslastungstest isolieren.|-   [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Siehe auch
 

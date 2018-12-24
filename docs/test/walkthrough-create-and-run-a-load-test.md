@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Ausführen von Auslastungstests in Visual Studio
+title: Erstellen und Ausführen eines Auslastungstests
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895378"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055769"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält.
 
 In dieser exemplarischen Vorgehensweise erstellen Sie einen Auslastungstest, der Komponententests enthält.
 
@@ -43,7 +43,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ### <a name="to-start-the-new-load-test-wizard"></a>So starten Sie den Assistenten für den neuen Auslastungstest
 
-1.  Öffnen Sie die Bankprojektmappe, die Sie anhand der Informationen unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) erstellt haben.
+1.  Öffnen Sie die Bank-Projektmappe, die Sie in [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) erstellt haben.
 
 2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Bank-Projektmappenknoten, klicken Sie auf **Hinzufügen** und dann auf **Neues Projekt**.
 
