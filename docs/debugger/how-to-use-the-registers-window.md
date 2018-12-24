@@ -1,6 +1,6 @@
 ---
-title: Ansicht Registerwerte in Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: ''
+title: Ansicht im Debugger Registerwerte | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389324"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058440"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ansicht Registerwerte in das Fenster "Register" (C#, C++, Visual Basic F#)
 
@@ -41,9 +41,9 @@ Die **registriert** Fenster zeigt Registerinhalt während des Debuggens von Visu
 
 Registrieren Sie während des Debuggens geändert werden, während Code in Ihrer app ausgeführt wird. Kürzlich geänderte Werte angezeigt, in Rot der **registriert** Fenster.
 
-Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** nach Gruppen eingeteilt, die sich je nach Plattform und Prozessortyp unterscheiden. Sie können anzeigen oder Ausblenden von Registergruppen. Weitere Informationen finden Sie unter [How to: Display and hide register groups (Vorgehensweise: Anzeigen und Ausblenden von Registergruppen)](../debugger/how-to-display-and-hide-register-groups.md).
+Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** nach Gruppen eingeteilt, die sich je nach Plattform und Prozessortyp unterscheiden. Sie können anzeigen oder Ausblenden von Registergruppen. Weitere Informationen finden Sie unter [How to: Display and hide register groups (Anzeigen und Ausblenden von Registergruppen)](../debugger/how-to-display-and-hide-register-groups.md)
 
-Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten eines Registerwerts](../debugger/how-to-edit-a-register-value.md).
+Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [How to: Edit a register value (Bearbeiten eines Registerwerts)](../debugger/how-to-edit-a-register-value.md).
 
 **Um das Fenster "Register" zu öffnen.**
 

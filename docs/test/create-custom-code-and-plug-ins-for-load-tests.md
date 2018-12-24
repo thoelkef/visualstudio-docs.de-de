@@ -1,5 +1,5 @@
 ---
-title: Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests in Visual Studio
+title: Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062744"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests
 
@@ -30,10 +30,10 @@ In einem benutzerdefinierten Plug-In wird Code verwendet, den Sie schreiben und 
 
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
-|**Erstellen eines benutzerdefinierten Plug-Ins für den Auslastungstest:** Sie können mit der Auslastungstest-API ein benutzerdefiniertes Plug-In erstellen, um dem Auslastungstest weitere Testfunktionen hinzuzufügen.|-   [Vorgehensweise: Verwenden der Auslastungstest-API](../test/how-to-use-the-load-test-api.md)<br />-   [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)|
-|**Erstellen eines benutzerdefinierten Plug-Ins für den Webleistungstest:** Sie können ein benutzerdefiniertes Plug-In mithilfe der Webleistungstest-API erstellen, um dem Webleistungstest weitere Testfunktionen hinzuzufügen (auch auf der Anforderungsebene). Sie können auch einen Webdiensttest erstellen.<br /><br /> Darüber hinaus können Sie ein Webaufzeichnungs-Plug-In erstellen, mit dem ein Webleistungstest nach der Aufzeichnung, aber vor dem Anzeigen im Webleistungstest-Ergebnisviewer geändert werden kann.|-   [Vorgehensweise: Verwenden der Webleistungstest-API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Vorgehensweise: Erstellen eines Webdiensttests](../test/how-to-create-a-web-service-test.md)<br />-   [How to: Create a Recorder Plug-In (Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins)](../test/how-to-create-a-recorder-plug-in.md)|
-|**Hinzufügen von Benutzeroberflächenfeatures zur Webleistungstest-Ergebnisansicht:** Sie können der Webleistungstest-Ergebnisansicht mithilfe eines Visual Studio-Add-Ins weitere Benutzeroberflächenfeatures hinzufügen.|-   [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für die Webleistungstest-Ergebnisansicht](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Erstellen eines benutzerdefinierten HTTP-Text-Editors:** Sie können einen benutzerdefinierten Editor zum Bearbeiten von binären oder zeichenfolgenbasierten HTTP-XML-Antworten eines Webdiensts erstellen.|-   [How to: Create a Custom HTTP Body Editor for the Web Performance Test Editor (Vorgehensweise: Erstellen eines benutzerdefinierten HTTP-Körper-Editors für den Webleistungstest-Editor)](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Erstellen eines benutzerdefinierten Plug-Ins für den Auslastungstest:** Mit der Auslastungstest-API können Sie ein benutzerdefiniertes Plug-In erstellen, um dem Auslastungstest weitere Testfunktionen hinzuzufügen.|-   [Vorgehensweise: Verwenden der Auslastungstest-API](../test/how-to-use-the-load-test-api.md)<br />-   [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)|
+|**Erstellen eines benutzerdefinierten Plug-Ins für den Webleistungstest:** Sie können ein benutzerdefiniertes Plug-In mithilfe der Webleistungstest-API erstellen, um dem Webleistungstest weitere Testfunktionen hinzuzufügen (auch auf der Anforderungsebene). Sie können auch einen Webdiensttest erstellen.<br /><br /> Darüber hinaus können Sie ein Webaufzeichnungs-Plug-In erstellen, mit dem ein Webleistungstest nach der Aufzeichnung, aber vor dem Anzeigen im Webleistungstest-Ergebnisviewer geändert werden kann.|-   [Vorgehensweise: Verwenden der Webleistungstest-API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Vorgehensweise: Erstellen eines Webdiensttests](../test/how-to-create-a-web-service-test.md)<br />-   [Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins](../test/how-to-create-a-recorder-plug-in.md)|
+|**Hinzufügen von Benutzeroberflächenfeatures zum Webleistungstest-Ergebnisviewer:** Sie können dem Webleistungstest-Ergebnisviewer mithilfe eines Visual Studio-Add-Ins weitere Benutzeroberflächenfeatures hinzufügen.|-   [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Erstellen eines benutzerdefinierten HTTP-Text-Editors:** Sie können einen benutzerdefinierten Editor zum Bearbeiten von binären oder zeichenfolgenbasierten HTTP-XML-Antworten eines Webdiensts erstellen.|-   [Vorgehensweise: Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Referenz
 

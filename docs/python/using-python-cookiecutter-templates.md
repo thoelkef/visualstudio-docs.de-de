@@ -1,5 +1,5 @@
 ---
-title: CookieCutter-Erweiterung für Python
+title: Verwenden der CookieCutter-Vorlagen für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219691"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057190"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -36,7 +37,7 @@ Beim Arbeiten mit Cookiecutter durchsuchen Sie Vorlagen, wählen eine Vorlage au
 
 Die Startseite von Cookiecutter zeigt eine Liste der auswählbaren Vorlagen an, unterteilt in die folgenden Gruppen:
 
-| Gruppieren | Beschreibung  |
+| Gruppieren | Beschreibung |
 | --- | --- |
 | **Installiert** | Vorlagen, die auf Ihrem lokalen Computer installiert wurden. Bei Verwendung einer Onlinevorlage wird das zugehörige Repository automatisch in einen Unterordner von *~/.cookiecutters* geklont. Sie können eine ausgewählte installierte Vorlage löschen, indem Sie die Taste **ENTF** drücken. |
 | **Empfohlen** | Aus dem empfohlenen Feed geladene Vorlagen. Der Standardfeed wird von Microsoft kuratiert. Informationen zum Anpassen des Feeds finden Sie weiter unten im Abschnitt [Cookiecutter-Optionen](#cookiecutter-options). |
@@ -80,7 +81,7 @@ Cookiecutter-Optionen stehen über **Extras** > **Optionen** > **Cookiecutter** 
 
 ![Cookiecutter-Optionen](media/cookiecutter-tools-options.png)
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 | --- | --- |
 | **URL des empfohlenen Feeds** | Der Speicherort des empfohlenen Vorlagenfeeds. Hierbei kann es sich um eine URL oder den Pfad zu einer lokalen Datei handeln. Lassen Sie die URL leer, um den standardmäßigen, von Microsoft kuratierten Feed zu verwenden. Der Feed bietet eine einfache, durch Zeilenumbrüche getrennte Liste mit Vorlagenspeicherorten. Um Änderungen am kuratierten Feed anzufordern, führen Sie eine Pullanforderung in der [Quelle in GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) aus. |
 | **Anzeigen von Hilfe** | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
@@ -96,10 +97,10 @@ Die standardmäßige Umsetzung von Vorlagenvariablen hängt vom Datentyp ab (Zei
 
 Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihrer *cookiecutter.json*-Datei angeben, die speziell für Visual Studio eingerichtet wurde (und von der Cookiecutter-Befehlszeilenschnittstelle ignoriert wird). Alle Eigenschaften sind optional:
 
-| Eigenschaft | Beschreibung  |
+| Eigenschaft | Beschreibung |
 | --- | --- |
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
-| Beschreibung  | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
+| Beschreibung | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
 | URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
 | Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer **...**-Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 
@@ -171,7 +172,7 @@ Wenn Sie kein Argument übergeben müssen, geben Sie in der JSON eine leere Zeic
 ]
 ```
 
-Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf und verwenden Sie die korrekten Anführungszeichen. Zum Beispiel:
+Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf und verwenden Sie die korrekten Anführungszeichen. Beispiel:
 
 ```json
 "_visual_studio_post_cmds": [
