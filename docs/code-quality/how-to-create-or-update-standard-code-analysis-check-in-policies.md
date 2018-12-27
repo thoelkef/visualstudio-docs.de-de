@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283235"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740074"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien Codeanalyse-Eincheckrichtlinien
 
 Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Azure DevOps-Projekt ausgeführt werden, mit der Eincheckrichtlinie für die Analyse. Codeanalyse erfordert, kann die Qualität des Codes verbessern, die in die CodeBase überprüft wird.
 
@@ -71,4 +71,4 @@ Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen und Verwenden von Eincheckrichtlinien für die Analyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Erstellen und Verwenden von Eincheckrichtlinien für die Analyse](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

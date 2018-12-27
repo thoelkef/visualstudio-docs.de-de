@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879297"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684690"
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
-  Ersetzbare Parameter oder *Token*, kann in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte werden nicht zur Entwurfszeit bekannt. Sie sind ähnlich wie in der Funktion die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](/visualstudio/ide/template-parameters).  
+  Ersetzbare Parameter oder *Token*, kann in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte werden nicht zur Entwurfszeit bekannt. Sie sind ähnlich wie in der Funktion die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Tokenformat
  Token beginnen und enden mit einem Dollarzeichen ($). Bei Bereitstellung werden alle verwendeten Token durch tatsächliche Werte ersetzt, wenn ein Projekt in einer SharePoint-Lösungspaket verpackt wird (*.wsp* Datei). Zum Beispiel das Token **$SharePoint.Package.Name$** möglicherweise auf die Zeichenfolge "Test-SharePoint-Paket" behoben.  
@@ -111,4 +111,3 @@ ms.locfileid: "49879297"
   
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)  
-  

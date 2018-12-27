@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906025"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739160"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Features in Visual Studio integrieren. Sie können Ihre Erweiterungen für andere Benutzer sowie für Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:  
@@ -78,8 +78,8 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Häufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [HÄUFIG GESTELLTE FRAGEN: Konvertieren von Add-Ins in VSPackage-Erweiterungen](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Verwalten von mehreren Threads in verwaltetem code](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)   
  [Hinzufügen von Befehlen zu Symbolleisten](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
  [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
  [Verwalten von VSPackages](../extensibility/managing-vspackages.md)   
- [Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Senden von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)   
  [In Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Unterstützung für Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   

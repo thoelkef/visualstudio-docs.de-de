@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39;} &#39; | Microsoft Docs
+title: Erwartet '}' | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2273d0c98ba3d65bd7b9e855532ca5355d25af66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632820"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348309"
 ---
-# <a name="expected-3939"></a>Erwartete &#39;} &#39;
-Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objekt-Initialisierer. Ein Beispiel für diesen Fehler wäre eine **für** Schleife mit nur die linke geschweifte Klammer der Text der Schleife markiert.  
+# <a name="expected-"></a>"}" erwartet
+Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objektinitialisierer. Ein Beispiel für diesen Fehler wäre eine **für** -Schleife mit der nur die linke geschweifte Klammer der Hauptteil der Schleife markiert.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

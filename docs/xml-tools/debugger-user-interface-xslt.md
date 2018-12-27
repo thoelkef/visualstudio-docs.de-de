@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561917"
 ---
 # <a name="debugger-user-interface-xslt"></a>Debugger-Benutzeroberfläche (XSLT)
 
@@ -92,7 +92,7 @@ Weitere Informationen finden Sie unter den [Debuggen Benutzeroberflächenreferen
 
 -   Benutzerdefinierte Funktionen sind nicht zulässig.
 
-Weitere Informationen finden Sie unter [wie: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>"Disassemblierung" (Fenster)
  Im Disassemblyfenster wird der vom XSLT-Compiler generierte Assemblycode angezeigt. Dieser Fenster kann in gleicher Weise wie alle anderen Disassemblyfenster in Visual Studio verwendet werden.
@@ -102,5 +102,5 @@ Weitere Informationen finden Sie unter [wie: Auswerten eines XPath-Ausdrucks](..
 ## <a name="see-also"></a>Siehe auch
 
 - [Debuggen von XSLT](../xml-tools/debugging-xslt.md)
-- [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)   
 - [Überprüfen von Variablen in den Fenstern "Auto" und "lokal" in Visual Studio](../debugger/autos-and-locals-windows.md)

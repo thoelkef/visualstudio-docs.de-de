@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567456"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647776"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Projektmappen
   Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Weitere Informationen finden Sie unter [Globalize und Lokalisieren von Anwendungen](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567456"
   
  Auch wenn Sie das Format „Englisch (USA)“ für Daten verwenden, die von verwaltetem Code übergeben oder geändert werden, interpretiert Excel die Daten gemäß der Gebietsschemaeinstellung des Endbenutzers und zeigt die Daten ordnungsgemäß an. Excel kann die Daten ordnungsgemäß formatieren, da der verwaltete Code die Gebietsschema-ID 1033 zusammen mit den Daten übergibt, wodurch angegeben wird, dass die Daten im Format „Englisch (USA)“ vorliegen und daher neu formatiert werden müssen, um mit der Gebietsschemaeinstellung des Benutzers übereinzustimmen.  
   
- Wenn Endbenutzer z. B. ihre regionalen Optionen auf das Gebietsschema Deutsch (Deutschland) festgelegt haben, erwarten sie, dass das Datum „29. Juni 2005“ folgendermaßen formatiert wird: 29.06.2005. Wenn Ihre Projektmappe das Datum jedoch als Zeichenfolge an Excel übergibt, müssen Sie das Datum gemäß dem Format „Englisch (USA)“ formatieren: 6/29/2005. Wenn die Zelle als Datumszelle formatiert ist, zeigt Excel das Datum im Format „Deutsch (Deutschland)“ an.  
+ Wenn Endbenutzer ihre regionalen Optionen, die auf dem Gebietsschema Deutsch (Deutschland) festgelegt haben, erwarten sie beispielsweise das Datum "29. Juni 2005" folgendermaßen formatiert werden: 29.06.2005. Wenn Ihre Lösung das Datum als Zeichenfolge an Excel übergibt, müssen Sie jedoch das Datum gemäß Englisch (Vereinigte Staaten)-Format formatieren: 6/29/2005. Wenn die Zelle als Datumszelle formatiert ist, zeigt Excel das Datum im Format „Deutsch (Deutschland)“ an.  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Übergeben Sie anderer Gebietsschema-IDs an das Excel-Objektmodell  
  Die Common Language Runtime (CLR) übergibt die Gebietsschema-ID 1033 automatisch an alle Methoden und Eigenschaften im Excel-Objektmodell, die gebietsschemaabhängige Daten akzeptieren. Es gibt keine Möglichkeit, dieses Verhalten automatisch für alle Aufrufe des Objektmodells zu ändern. Sie können jedoch eine andere Gebietsschema-ID an eine bestimmte Methode übergeben, indem Sie <xref:System.Type.InvokeMember%2A> zum Aufrufen der Methode und Übergeben der Gebietsschema-ID an den *culture* -Parameter der Methode verwenden.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Möglicherweise ist auch jeglicher Code, der externe Daten öffnet oder anderweitig verwendet, betroffen, z. B. Dateien mit durch Trennzeichen getrennten Werten (CSV-Dateien), die aus einem Legacysystem exportiert wurden, wenn diese Dateien in einem anderen Format als „en-US“ exportiert werden. Der Zugriff auf die Datenbank ist möglicherweise nicht beeinträchtigt, da alle Werte im binären Format vorliegen sollten, sofern die Datenbank die Daten nicht als Zeichenfolgen speichert oder Vorgänge ausführt, die kein binäres Format verwenden. Wenn Sie SQL-Abfragen mithilfe von Daten aus Excel erstellen, müssen Sie zudem möglicherweise sicherstellen, dass diese in Abhängigkeit von der verwendeten Funktion im Format „en-US“ vorliegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Anpassen der mehrsprachige Benutzeroberfläche von Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Vorgehensweise: Die mehrsprachige Benutzeroberfläche von Office als Ziel](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   

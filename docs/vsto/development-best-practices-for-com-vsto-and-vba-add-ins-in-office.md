@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671092"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648906"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Entwicklungsmethoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die besten Entwicklungsmethoden in diesem Artikel beschrieben.   Dadurch wird sichergestellt:
@@ -28,7 +28,7 @@ ms.locfileid: "50671092"
 -  Geringere Komplexität der Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
 -  Unbeabsichtigte Installation oder zur Laufzeit Fehler des add-Ins werden nicht ausgeführt.
 
->: Hinweis Die [Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für den Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins können nicht in den Windows Store oder den Office Store verteilt werden. 
+>Hinweis: Mithilfe der [Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für den Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins können nicht in den Windows Store oder den Office Store verteilt werden. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Aktivieren Sie nicht für Office während der installation  
  Müssen das Add-in erkennt, ob es sich bei Office installiert ist, während der Add-in-Installation empfohlen nicht. Wenn Office nicht installiert ist, können Sie das Add-in installieren, und der Benutzer wird in der Lage, darauf zuzugreifen, nachdem Office installiert ist. 

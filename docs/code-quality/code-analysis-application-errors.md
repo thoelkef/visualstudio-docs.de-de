@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634553"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740178"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 
-Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool für verwalteten Code generiert werden. Um Hilfe für eine bestimmte Fehlermeldung erhalten, geben Sie die Fehlernummer in der **suchen Sie nach** Feld im Index.
+Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool für verwalteten Code generiert werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -39,7 +39,7 @@ Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool
 |[CA0056](ca0056.md)|Eine Projektdatei hat eine falsche Version des Analysetools.|
 |[CA0057](ca0057.md)|Verstöße gegen können nicht den aktuellen Satz von Zielen und Regeln zugeordnet werden.|
 |[CA0058](ca0058.md)|Fehler beim Laden von Assemblys, die auf die verwiesen wird.|
-|[CA0059](ca0059.md)|Fehler bei Befehlszeilenschaltern.|
+|[CA0059](ca0059.md)|Fehler des Befehlszeilenschalters.|
 |[CA0060](ca0060.md)|Fehler beim Laden von Assemblys, die auf die indirekt verwiesen wird.|
 |[CA0061](ca0061.md)|Die Regel "*RuleId*' wurde nicht gefunden.|
 |[CA0062](ca0062.md)|Die Regel "*RuleId*"auf die im Regelsatz verwiesen wird"*RuleSetName*' wurde nicht gefunden.|
@@ -53,12 +53,12 @@ Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool
 |[CA0070](ca0070.md)|Assembly bzw. aufgrund von Berechtigungen für die Codezugriffssicherheit kann nicht geladen werden.|
 |[CA0501](ca0501.md)|Lesen der Ausgabebericht kann nicht ausgeführt werden.|
 |[CA0502](ca0502.md)|Nicht unterstützte Sprache.|
-|[CA0503](ca0503.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
+|[CA0503](ca0503.md)|Die Eigenschaft ist veraltet. Verwenden Sie die Ersatzeigenschaft.|
 |[CA0504](ca0504.md)|Regelverzeichnis wurde ignoriert, da sie nicht vorhanden ist|
-|[CA0505](ca0505.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
+|[CA0505](ca0505.md)|Die Eigenschaft ist veraltet. Verwenden Sie die Ersatzeigenschaft.|
 |[FxCopCmd-Fehler](fxcopcmd-errors.md)|Analysefehler bei verwaltetem Code.|
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
 - [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
-- [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md)

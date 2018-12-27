@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], data
 - datasets [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87aca3cea98f97ff2a27efb41f912f1295939718
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 92a2b7caad4ec4fe12879da683560da59b7f2d6a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263453"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646824"
 ---
 # <a name="data-in-office-solutions"></a>Daten in Office-Projektmappen
   Viele Office-Projektmappen ermöglichen Benutzern das Abrufen und Ändern von Daten. Wenn Sie Office-Projektmappen mithilfe von Visual Studio erstellen, gibt es mehrere verschiedene Verfahren, wie Sie mit Daten arbeiten können.  
@@ -40,7 +40,7 @@ ms.locfileid: "34263453"
  [XML-Schemas und Daten in Anpassungen auf Dokumentebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
  Beschreibt, wie Sie XML-Schemas in Anpassungen auf Dokumentebene verwenden, um Steuerelemente zu erstellen, die an XML-Daten gebunden sind.  
   
- [Verwenden von lokaler Datenbankdateien in Office-Projektmappen (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)  
+ [Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)  
  Beschreibt, wie Sie Datenbankdateien in Ihre Projekte importieren, und wann Sie Daten für die Offlineverwendung zwischenspeichern können.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  

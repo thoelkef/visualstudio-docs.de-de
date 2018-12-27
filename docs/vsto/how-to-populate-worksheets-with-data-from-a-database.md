@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank'
+title: 'Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e73eaa3cdd0655a51711ddd30996915f984213
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758468"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648190"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
 
 Sie können Daten in Office-Projekten auf Dokumentebene auf die gleiche Weise zugreifen, dass Sie Daten in Windows Forms-Projekte zugreifen. Sie verwenden dieselben Tools und denselben Code, um die Daten in die Projektmappe einzufügen, und können außerdem Windows Forms-Steuerelemente zum Anzeigen der Daten verwenden. Darüber hinaus können Sie die so genannten Hoststeuerelemente sind systemeigene Objekte in Microsoft Office Excel, die mit Ereignissen und Datenbindung Funktion erweitert wurden nutzen. Weitere Informationen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten auf Dokumentebene mithilfe eines Designers hinzufügen. Ein Beispiel für datengebundene Steuerelemente in Projekten auf Anwendungsebene zur Laufzeit hinzufügen, finden Sie unter [Exemplarische Vorgehensweise: komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
+Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten auf Dokumentebene mithilfe eines Designers hinzufügen. Ein Beispiel für datengebundene Steuerelemente in Projekten auf Anwendungsebene zur Laufzeit hinzufügen, finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
-![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst I: Übertragen von Daten in ein Excel-Arbeitsblatt?](http://go.microsoft.com/fwlink/?LinkID=130277), und [Gewusst I: nutzen Daten in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).
+![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Übertragen von Daten in ein Excel-Arbeitsblatt? ](http://go.microsoft.com/fwlink/?LinkID=130277), und [Gewusst wie: Verwenden von Datenbankdaten in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Hinzufügen eines datengebundenen Steuerelements zu einem Arbeitsblatt zur Entwurfszeit
 
@@ -77,9 +77,9 @@ Informationen dazu, wie Sie Updates für das typisierte Dataset und die Datenban
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Wie werden I: Übertragen von Daten in einem Excel-Arbeitsblatt ein](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [Wie nutzen I: Datenbankdaten in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Gewusst wie: Übertragen von Daten in ein Excel-Arbeitsblatt](http://go.microsoft.com/fwlink/?LinkID=130277)
+- [Gewusst wie: Verwenden von Datenbankdaten in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)

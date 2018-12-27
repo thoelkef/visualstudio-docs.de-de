@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892310"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739425"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
 
@@ -42,7 +42,7 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
  Sie können angeben, Erstellen von SharePoint Workflows in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und auf einer SharePoint-Website bereitzustellen. Nachdem ein Workflow in SharePoint bereitgestellt wird, ordnen Sie es mit einer Bibliothek oder Liste. Es kann dann automatisch von einem Prozess oder manuell von einem Benutzer gestartet werden. Weitere Informationen zu Workflowvorgang, finden Sie unter [Entwickeln von SharePoint-Workflows, die mithilfe von Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
 
 ## <a name="create-custom-sharepoint-workflows"></a>Erstellen Sie benutzerdefinierte SharePoint-workflows
- Zwei SharePoint-Workflow-Projekte stehen Ihnen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **sequenziellen Workflow** und **Zustandsautomatworkflow**.
+ Zwei SharePoint-Workflow-Projekte stehen Ihnen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **Sequenzieller Workflow** und **Zustand der Zustandsautomatworkflows**.
 
  Ein *sequenziellen Workflow* stellt eine Reihe von Schritten dar. Die Schritte werden nacheinander ausgeführt, bis die letzte Aktivität abgeschlossen ist. Sequenzielle Workflows sind immer streng sequenziell ausgeführt. Da sie externe Ereignisse empfangen und parallele logische Abläufe enthalten können, variieren die genaue Reihenfolge der Ausführung. Die folgende Abbildung zeigt ein Beispiel für einen sequenziellen Workflow.
 
@@ -78,7 +78,7 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 
   Aktivitäten können Eigenschaften, Methoden und Ereignisse haben. Verwenden der **Eigenschaften** Fenster zum Festlegen der Eigenschaften einer Aktivität.
 
-  Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen eine benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
   Aktivitäten sind in den folgenden Registerkarten organisiert die **Toolbox**:
 
@@ -127,7 +127,7 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 ## <a name="debug-a-sharepoint-workflow-template"></a>Debuggen einer SharePoint-Workflowvorlage
  Sie können Debuggen einer SharePoint-Workflowprojekt identisch wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierten Projekte. Beim Starten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet die Einstellungen, die Sie, in angeben der **SharePoint Customization Wizard** öffnen Sie die entsprechenden SharePoint-Website und automatisch zuordnen der Workflowvorlage der entsprechende Bibliothek oder Liste. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem fügt die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an den [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Prozess mit dem Namen *w3wp.exe*.
 
- Um den Workflow zu testen, müssen Sie sie manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web zu Anwendungsdebuggen, finden Sie unter [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md).
+ Um den Workflow zu testen, müssen Sie sie manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web zu Anwendungsdebuggen, finden Sie unter [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Bereitstellen einer SharePoint-Workflowvorlage
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bereitstellen von SharePoint-Workflow-Projekte wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Weitere Informationen finden Sie unter [Pakets und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).

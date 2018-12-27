@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248243"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739483"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Änderungen am Entwurf von Office-Projekten mit der Zielversion .NET Framework 4 oder .NET Framework 4.5
   Mit [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]wurden in Visual Studio einige Änderungen am Entwurf von Office-Projekten eingeführt, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielen. Wenn Sie mit Office-Projekten in früheren Versionen von Visual Studio vertraut sind, sollten Sie diese Änderungen beachten, bevor Sie Office-Projekte entwickeln, die für diese Versionen von .NET Framework 4.0 oder höher bestimmt sind. Standardmäßig zielen alle Projekte, die Sie mit Visual Studio 2013 oder höher erstellen, auf .NET Framework 4.0 oder höher ab.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248243"
   
 -   [Aktualisieren von Excel- und Word-Projekte, die zu .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Aktualisieren von Anpassungen von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Aktualisieren von Anpassungen von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248243"
 |---------------------|-----------------|  
 |Das <xref:System.Security.SecurityTransparentAttribute> wird in Office-Projekten nicht mehr verwendet oder unterstützt.|Sie müssen dieses Attribut aus der AssemblyInfo-Codedatei in Office-Projekten entfernen, die Sie von Visual Studio 2008 aktualisieren. Weitere Informationen finden Sie unter [auf erforderliche Änderungen für das Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Die **ExcelLocale1033Attribute** wird nicht mehr verwendet oder in Excel-Projekten unterstützt.|Sie müssen dieses Attributs auf Entfernen, die *"AssemblyInfo"* Codedatei in Excel-Projekten. Weitere Informationen finden Sie unter [Update Excel und Word-Projekte, die auf .NET Framework 4 oder .NET Framework 4.5 migriert](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Das Programmiermodell von **Menüband (Visueller Designer)** -Projektelementen hat sich geändert.|Sie müssen die CodeBehind-Datei für alle Menübandelemente im Projekt ändern. Sie müssen außerdem Code ändern, die Menübandsteuerelementen zur Laufzeit instanziiert, Menübandereignisse behandelt werden, oder die Position einer Menübandkomponente programmgesteuert festgelegt. Weitere Informationen finden Sie unter [Update Multifunktionsleisten-Anpassungen in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|Das Programmiermodell von **Menüband (Visueller Designer)** -Projektelementen hat sich geändert.|Sie müssen die CodeBehind-Datei für alle Menübandelemente im Projekt ändern. Sie müssen außerdem Code ändern, die Menübandsteuerelementen zur Laufzeit instanziiert, Menübandereignisse behandelt werden, oder die Position einer Menübandkomponente programmgesteuert festgelegt. Weitere Informationen finden Sie unter [Update Multifunktionsleisten-Anpassungen in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Das Programmiermodell von Outlook-Formularbereichen hat sich geändert.|Sie müssen den Code-Behind-Datei für alle Formularbereiche ändern, in Ihrem Projekt auch jeder Code, durch den bestimmte Formularbereichsklassen zur Laufzeit instanziiert. Weitere Informationen finden Sie unter [Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Das Programmiermodell für Smarttags in Excel- und Word-Projekte hat sich geändert. Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.|Wenn die Projektmappe Smarttags verwendet, treten beim Erstellen des Projekts Fehler auf. Da Smarttags in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] veraltet sind, müssen Sie die Tags entfernen, bevor Sie die Projektmappe in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] oder höher testen und debuggen können.|  
 |Die Syntax der `GetVstoObject`- und `HasVstoObject`-Methoden wurde geändert.|Sie müssen das `Globals.Factory`-Objekt an diese Methoden übergeben, wenn Sie in systemeigenen Objekten aus den primären Interopassemblys (PIAs) auf sie zugreifen, oder Sie können auf diese Methoden in dem Objekt zugreifen, das von der `Globals.Factory`-Eigenschaft im Projekt zurückgegeben wird. Weitere Informationen finden Sie unter [Update Excel und Word-Projekte, die auf .NET Framework 4 oder .NET Framework 4.5 migriert](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  

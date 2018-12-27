@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118212"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684560"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox
+# <a name="how-to-add-activities-to-the-toolbox"></a>Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox
 
 Aktivitäten können hinzugefügt werden, um die **Toolbox** in der Projektmappe auf verschiedene Weise. Sie können sie innerhalb des aktuellen Projekts hinzufügen oder durch einen Verweis auf ein anderes Projekt oder eine andere Assembly.
 
@@ -62,4 +62,4 @@ Aktivitäten können hinzugefügt werden, um die **Toolbox** in der Projektmappe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden des Workflow-Designers](../workflow-designer/using-the-workflow-designer.md)
+- [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672963"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425863"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,8 +242,8 @@ Klicken Sie auf "Neu", um ein neues Medienobjekt zu erstellen:
 
 ![Definieren von MEF-asset](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
-* **Quelle**: ein Projekt in der aktuellen Projektmappe
+* **Typ**: Microsoft.VisualStudio.MefComponent
+* **Quelle**: Ein Projekt in der aktuellen Projektmappe
 * **Projekt**: [Ihr Projekt]
 
 ### <a name="content-type-definition"></a>Inhaltstypdefinition
@@ -326,7 +326,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 
    ![Bearbeiten von Vspackage-asset](media/lsp-add-vspackage-asset.png)
 
-   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **Typ**: "Microsoft.VisualStudio.VSPackage"
    * **Quelle**: Datei im Dateisystem
    * **Pfad**: [Pfad zu Ihrem *PKGDEF* Datei]
 

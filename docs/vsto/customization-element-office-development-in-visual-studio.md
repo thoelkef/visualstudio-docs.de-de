@@ -1,6 +1,7 @@
 ---
 title: '&lt;Anpassung&gt; -Element (Office-Entwicklung in Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f1344b69aaf098f766aeafddfd23cea84d1a981
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1fc3b24a85c1fca61e024cb59e33c5d4c735271a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672387"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647222"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Anpassung&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `customization` -Element des `vstov4` -Namespace beschreibt eine bestimmte Office-Projektmappe. Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.  
@@ -63,7 +64,7 @@ ms.locfileid: "35672387"
 |`id`|Ist für eine Bereitstellung mit mehreren Projekten erforderlich. Das `id` -Element kennzeichnet eine Office-Projektmappe eindeutig.|  
   
 ### <a name="document-level-customizations"></a>Anpassungen auf Dokumentebene  
- Das `customization` -Element hat das folgende untergeordnete Element:  
+ Das `customization` -Element weist die folgenden untergeordneten Elemente auf.  
   
 #### <a name="document"></a>Dokument  
  Die `document` Element in der `vstov4` Namespace wird im definiert [ &#60;Dokument&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  

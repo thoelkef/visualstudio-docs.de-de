@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML'
+title: 'Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - XML [Office development in Visual Studio], Ribbon
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1b9e988ce6d1ad722766f3994c39827cc4272a3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255076"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646931"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML
   Die **Menüband (visueller Designer)** Element unterstützt nicht alle mögliche Arten von Multifunktionsleisten-Anpassung. Zum Anpassen des Menübands auf eine innovative Weise können Sie exportieren im Menüband vom Designer in Menüband-XML und den XML-Code direkt bearbeiten.  
   
 > [!NOTE]  
