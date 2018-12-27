@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966530"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425772"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
+# <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 
 Sie können die Codemetrikergebnisse für eine oder mehrere Projekte oder eine gesamte Projektmappe generieren. Codemetrik ist verfügbar, in das interaktive Entwicklungsumgebung (IDE) von Visual Studio und für C# und Visual Basic-Projekten in der Befehlszeile.
 
@@ -68,7 +68,7 @@ Um die ausführbare Datei zu generieren *Metrics.exe*, gehen Sie folgendermaßen
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Eine ausführbare Datei namens *Metrics.exe* wird generiert, der *Binärdateien* Verzeichnis unter dem Stammverzeichnis des Repositorys.
+   Eine ausführbare Datei namens *Metrics.exe* wird generiert, der *Artifacts\bin* Verzeichnis unter dem Stammverzeichnis des Repositorys.
 
    > [!TIP]
    > Erstellung *Metrics.exe* in [Legacymodus](#legacy-mode), führen Sie den folgenden Befehl:

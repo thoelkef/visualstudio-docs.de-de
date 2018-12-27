@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349662"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739918"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
 
@@ -64,7 +64,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die meisten Benutzer 
 
 -   [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> Welche Projektvorlagen werden von der VSSDK bereitgestellt?
  Die zwei wichtigsten Typen von Erweiterungen sind VSPackages und MEF-Erweiterungen. Im Allgemeinen werden die VSPackage-Erweiterungen für Erweiterungen verwendet, die verwenden oder Erweitern von Befehlen, Toolfenster und Projekte. MEF-Erweiterungen werden zum Erweitern oder Anpassen von Visual Studio-Editor.
@@ -77,13 +77,13 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die meisten Benutzer 
 
 -   Befehle im Menü: [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Toolfenster: [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   Toolfenster: [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Editor-Erweiterungen: [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   Editorerweiterungen: [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 -   Grundlegende VSPackages: [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX-Projektvorlage: [erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   VSIX-Projektvorlage aus: [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Wie erhalte ich die my-Erweiterung zu Visual Studio aussehen?
  Erhalten Sie nützliche Tipps zum Entwerfen der Benutzeroberflächenautomatisierungs für die Erweiterung im [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -94,7 +94,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die meisten Benutzer 
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich die my-Erweiterung verteilen?
  Sie können die Erweiterung auf einem anderen Computer installieren oder als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken an Freunde senden. Finden Sie weitere Informationen zu VSIX-Pakete auf [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).
 
- Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Sie können auch Ihre Erweiterung in Visual Studio Marketplace veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für das Verpacken einer Erweiterung auf Marketplace, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichung von Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, Sie tun was, um im Marketplace veröffentlichen können, finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

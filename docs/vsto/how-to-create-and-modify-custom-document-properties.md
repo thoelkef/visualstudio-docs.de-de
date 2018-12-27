@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften'
+title: 'Vorgehensweise: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - custom document properties
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb66d2fbd1af41cfa89fc38f7694ee3783d10f76
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254435"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646508"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Gewusst wie: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Vorgehensweise: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften
   Die oben aufgeführten Microsoft Office-Anwendung bieten integrierte Eigenschaften, die mit Dokumenten gespeichert werden. Darüber hinaus können Sie benutzerdefinierte Dokumenteigenschaften erstellen und ändern, falls Sie zusätzliche Informationen mit dem Dokument speichern möchten.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35254435"
   
  Das folgende Beispiel veranschaulicht, wie eine benutzerdefinierte Eigenschaft in einer Anpassung auf Dokumentebene für Excel hinzugefügt und ihr ein Wert zugewiesen wird.  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Zugreifen auf und Bearbeiten von benutzerdefinierten Dokumenteigenschaften in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Zugriff auf und Bearbeiten von benutzerdefinierten Dokumenteigenschaften in Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## <a name="example"></a>Beispiel  
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
@@ -45,6 +45,6 @@ ms.locfileid: "35254435"
 ## <a name="see-also"></a>Siehe auch  
  [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
- [Gewusst wie: Lesen bzw. Schreiben in Dokumenteigenschaften](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+ [Vorgehensweise: Lesen aus und Schreiben in Dokumenteigenschaften](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

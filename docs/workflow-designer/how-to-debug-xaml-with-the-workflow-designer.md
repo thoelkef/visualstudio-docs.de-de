@@ -1,5 +1,5 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: Debuggen von XAML mit dem Workflowdesigner'
+title: 'Workflow-Designer – Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f965a7ba94242b44fc83317bf0d152de540e0a90
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a486183b9f8c2f8a41b888d32cbc4113d25e51c8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758181"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684625"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer
 
@@ -32,11 +32,11 @@ Workflows werden in XAML definiert. In der Benutzeroberfläche werden Workflows 
 
 3.  Mit der rechten Maustaste in der XAML-Datei mit der Workflowdefinition und wählen Sie **Ansichtscode**. Der Haltepunkt wird in der gleichen Zeile wie die XAML-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.
 
-4.  Aufrufen des Debuggers, siehe [Vorgehensweise: Aufrufen des Workflow-Debuggers](../workflow-designer/how-to-invoke-the-workflow-debugger.md).
+4.  Aufrufen des Debuggers, siehe [Debuggen von Workflows](debugging-workflows-with-the-workflow-designer.md).
 
 5.  Wenn die Codeausführung einen der Haltepunkte erreicht, wird das diesem Haltepunkt zugeordnete XAML-Element hervorgehoben dargestellt. Um zum nächsten Haltepunkt zu verschieben, verwenden die **F10** oder **F11** Schlüssel.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
-- [Vorgehensweise: Aufrufen des Workflow-Debuggers](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+- [Vorgehensweise: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Debuggen von workflows](debugging-workflows-with-the-workflow-designer.md)

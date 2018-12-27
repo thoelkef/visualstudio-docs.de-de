@@ -1,6 +1,7 @@
 ---
 title: '&lt;CustomHostSpecified&gt; -Element (Office-Entwicklung in Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customHostSpecified> element
 - <customHostSpecified> element
 - customHostSpecified element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4eaf874a259251c35a6b01c08f544993092ff4d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f59433c2c7dfcdcea4ab6f5d7fd620542ea20dc1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264034"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648793"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;CustomHostSpecified&gt; -Element (Office-Entwicklung in Visual Studio)
   Die `customHostSpecified` Element gibt an, dass diese Lösung nicht um eine eigenständige Anwendung ist. Office-Projektmappen enthalten die Komponenten, die in Microsoft Office-Anwendungen gehostet werden.  
@@ -34,11 +35,11 @@ ms.locfileid: "34264034"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `customHostSpecified` Element ist erforderlich für Office-Projektmappen. Dieses Element ist der `co.v1` Namespace und gibt an, dass diese Bereitstellung eine Komponente enthält, die innerhalb eines benutzerdefinierten Hosts bereitgestellt werden, und keine eigenständige Anwendung.  
+ Die `customHostSpecified` Element ist erforderlich für Office-Projektmappen. Dieses Element ist der `co.v1` Namespace und gibt an, dass diese Bereitstellung eine Komponente enthält, die innerhalb eines benutzerdefinierten Hosts bereitgestellt werden und ist keine eigenständige Anwendung.  
   
- Dieses Element ist ein untergeordnetes Element des ersten `<entrypoint>` Element im Anwendungsmanifest. Es kann keine weiteren untergeordneten Elemente in diesem `<entrypoint>` Element oder [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] löst einen Validierungsfehler während der Installation.  
+ Dieses Element ist ein untergeordnetes Element des ersten `<entrypoint>` Elements im Manifest Anwendung. Es können keine anderen untergeordneten Elemente in dieser werden `<entrypoint>` Element oder [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] löst einen Validierungsfehler während der Installation.  
   
- Dieses Element hat keine Attribute und keine untergeordneten Elemente.  
+ Dieses Element weist keine Attribute und keine untergeordneten Elemente.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht die `customHostSpecified` Element in einem Anwendungsmanifest für eine Office-Projektmappe. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  

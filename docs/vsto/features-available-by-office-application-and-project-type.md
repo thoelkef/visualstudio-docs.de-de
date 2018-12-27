@@ -17,17 +17,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672459"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648151"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekt geben.
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:  
@@ -64,7 +64,7 @@ ms.locfileid: "50672459"
 |Folgende Hoststeuerelemente:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Projekte auf Dokumentebene|[Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
 |Bereitstellung von mehreren Projekten|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Bereitstellen von mehreren Office-Projektmappen in einem einzelnen ClickOnce-installer](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook-Formularbereiche|VSTO-Add-In-Projekte für Outlook|[Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)|  
-|Aktionen nach der Bereitstellung|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Kopieren eines Dokuments auf dem Computer des Endbenutzers nach einer ClickOnce-installation](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Aktionen nach der Bereitstellung|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Kopieren Sie ein Dokument auf dem Computer des Endbenutzers nach einer ClickOnce-installation](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-Outlook<br />-PowerPoint<br />-Projekt<br />-Visio<br />-Word|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
 |Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

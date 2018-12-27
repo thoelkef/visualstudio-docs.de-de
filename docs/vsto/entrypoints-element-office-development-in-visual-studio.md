@@ -1,6 +1,7 @@
 ---
 title: '&lt;EntryPoints&gt; -Element (Office-Entwicklung in Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 01b28dab575f867f017b04f2e0180c07193b983b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448388"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647009"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoints&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `entryPoints` -Element des `vstav3` -Namespace enthält alle `entryPoint` -Elemente, die einer Office-Projektmappe zugeordnet sind.  
@@ -45,12 +46,12 @@ ms.locfileid: "34448388"
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|ID|Ist für eine Bereitstellung mit mehreren Projekten erforderlich. Der Name der Office-Projektmappe. Die ID darf kein Gleichheitszeichen (=) enthalten.|  
+|id|Ist für eine Bereitstellung mit mehreren Projekten erforderlich. Der Name der Office-Projektmappe. Die ID darf kein Gleichheitszeichen (=) enthalten.|  
   
  `entryPoints` hat die folgenden Elemente:  
   
 ### <a name="entrypoint"></a>entryPoint  
- Erforderlich. Die Rolle der `entryPoint` Element in der `vstav3` Namespace definiert, [ &#60;EntryPoint&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Erforderlich. Die Rolle der `entryPoint` Element in der `vstav3` Namespace definiert ist, [ &#60;EntryPoint&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene  
   
@@ -116,7 +117,7 @@ ms.locfileid: "34448388"
 </vstav3:entryPoints>  
 ```  
   
-## <a name="multi-project-deployment-example"></a>Beispiel für eine Bereitstellung mit mehreren Projekten  
+## <a name="multi-project-deployment-example"></a>Beispiel für die Bereitstellung mit mehreren Projekten  
   
 ### <a name="description"></a>Beschreibung  
  Das folgende Codebeispiel veranschaulicht das `entryPoints` -Element in einem Anwendungsmanifest für eine Bereitstellung mit mehreren Projekten. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).  

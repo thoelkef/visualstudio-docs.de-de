@@ -1,5 +1,5 @@
 ---
-title: Kann &#39; haben t &#39; weiterhin &#39; außerhalb der Schleife | Microsoft Docs
+title: Keine "continue" außerhalb der Schleife | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633300"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531244"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Kann &#39; haben t &#39; weiterhin &#39; außerhalb der Schleife unzulässig
-Sie haben versucht, die **weiterhin** Anweisung außerhalb einer Schleife. Die **weiterhin** -Anweisung kann nur innerhalb eines Texts der a: verwendet werden  
+# <a name="cant-have-continue-outside-of-loop"></a>"continue" ist außerhalb der Schleife unzulässig
+Sie haben versucht, Sie verwenden die **weiterhin** Anweisung außerhalb einer Schleife. Die **weiterhin** -Anweisung kann nur innerhalb des Texts a: verwendet werden  
   
--   `do-while`Schleife  
+-   `do-while` Schleife  
   
--   `while`Schleife  
+-   `while` Schleife  
   
 -   **für** -Schleife  
   
@@ -40,11 +40,11 @@ Sie haben versucht, die **weiterhin** Anweisung außerhalb einer Schleife. Die *
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass die **weiterhin** -Anweisung angezeigt wird, innerhalb eines Texts der a:  
+-   Stellen Sie sicher, dass die **weiterhin** -Anweisung innerhalb des Texts der a:  
   
-    -   `do-while`Schleife  
+    -   `do-while` Schleife  
   
-    -   `while`Schleife  
+    -   `while` Schleife  
   
     -   **für** -Schleife  
   
@@ -52,5 +52,5 @@ Sie haben versucht, die **weiterhin** Anweisung außerhalb einer Schleife. Die *
   
 ## <a name="see-also"></a>Siehe auch  
  [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)   
- [Steuerung des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
+ [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

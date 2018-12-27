@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636973"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740246"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -106,6 +106,6 @@ Das folgende Beispiel zeigt die relevanten Teile einer *"Extension.vsixmanifest"
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Schemareferenz für VSIX-Sprachpaket 2.0](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Ein VSIX-Sprachpaket wird beschrieben, die Informationen zur Lokalisierung von einem VSIX-Bereitstellungsdatei.|
+|[Schemareferenz für VSIX-Sprachpaket 2.0](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Ein VSIX-Sprachpaket wird beschrieben, die Informationen zur Lokalisierung von einem VSIX-Bereitstellungsdatei.|
 |[Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)|Beschreibt die Struktur und Inhalt einer Vsix-Pakets.|
 |[Lokalisieren von Menübefehlen](../extensibility/localizing-menu-commands.md)|Zeigt, wie andere Textressourcen in einer Erweiterung zu lokalisieren.|

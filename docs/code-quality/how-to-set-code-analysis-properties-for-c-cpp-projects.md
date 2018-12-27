@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
+title: 'Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,36 +20,36 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2800ce4784f5a8215dfe49b00194925c3cdb588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920676"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739897"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
-Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet wird, um den Code in den einzelnen Konfigurationen Ihres Projekts analysieren. Darüber hinaus können Sie die Codeanalyse unterdrücken von Warnungen zu Code, die generiert wurde, und dem Projekt hinzugefügt, von einem Drittanbieter-Tool weiterleiten.
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
+Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet, um den Code in jede Konfiguration des Projekts zu analysieren. Darüber hinaus können Sie weiterleiten, Codeanalyse, um Warnungen zu Code zu unterdrücken, die generiert und von einem Drittanbieter-Tool zu Ihrem Projekt hinzugefügt wurde.
 
 ## <a name="code-analysis-property-page"></a>Code Analysis-Eigenschaftenseite
- Die **Codeanalyse** Eigenschaftenseite enthält alle Code Analysis-Konfigurationseinstellungen für ein Projekt. Öffnen Sie die Eigenschaftenseite für die Analyse für ein Projekt im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**. Erweitern Sie als Nächstes **Konfigurationseigenschaften** , und wählen Sie die **Codeanalyse** Registerkarte.
+ Die **Codeanalyse** Eigenschaftenseite enthält alle Konfigurationseinstellungen der Code-Analyse für ein Projekt. Öffnen Sie die Eigenschaftenseite für die Analyse für ein Projekt in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**. Erweitern Sie als Nächstes, **Konfigurationseigenschaften** , und wählen Sie die **Codeanalyse** Registerkarte.
 
 ## <a name="project-configuration-and-platform"></a>Projektkonfiguration und Plattform
- Die **Konfiguration** Liste und **Plattform** Liste können Sie die verschiedenen codeanalyseeinstellungen für Kombinationen aus anderen Projekt Konfiguration und Plattform gelten. Sie können z. B. weiterleiten Codeanalyse, um eine Reihe von Regeln für Ihr Projekt für das Debuggen gelten erstellt und ein anderen Satz für Version erstellt.
+ Die **Konfiguration** Liste und **Plattform** Liste können Sie verschiedene codeanalyseeinstellungen auf Konfiguration und Plattform-Kombinationen von anderen Projekt anwenden. Beispielsweise können Sie weiterleiten, Codeanalyse, um eine Reihe von Regeln für Ihr Projekt für das Debuggen gelten erstellt und ein anderen Satz für die Veröffentlichung erstellt.
 
-## <a name="enabling-code-analysis"></a>Codeanalyse aktivieren
- Sie können entscheiden, ob die Codeanalyse für das Projekt zu aktivieren, indem **Analyse für C/C++ auf Build aktivieren**. In Kombination mit der **Konfiguration** Liste, könnten Sie z. B. möchten, deaktivieren die Codeanalyse für Debug-Builds und aktivieren sie für Releasebuilds.
+## <a name="enabling-code-analysis"></a>Aktivieren der Codeanalyse
+ Sie können entscheiden, ob die Codeanalyse für Ihr Projekt zu aktivieren, indem **Codeanalyse für C/C++ auf Build aktivieren**. In Kombination mit der **Konfiguration** Liste, Sie können beispielsweise festlegen, zum Deaktivieren der Codeanalyse für Debugbuilds und aktivieren sie für Releasebuilds.
 
- Wenn Ihr Projekt verwalteten Code enthält, können Sie entscheiden, ob aktivieren oder deaktivieren dazu Codeanalyse **Codeanalyse für Build aktivieren**.
+ Wenn das Projekt über verwalteten Code enthält, können Sie entscheiden, ob aktivieren oder deaktivieren dazu Code Analysis **Codeanalyse für Build aktivieren**.
 
- Codeanalyse dient zum Verbessern der Qualität des Codes und häufige Fehlerquellen vermeiden. Aus diesem Grund sollten Sie sorgfältig, ob die Codeanalyse deaktiviert. Es ist in der Regel besser, Regelsätze deaktivieren, oder einzelne Regeln, die Sie nicht möchten, die auf das Projekt angewendet.
+ Codeanalyse soll Ihnen helfen, die Qualität Ihres Codes zu verbessern und häufige Fehler vermeiden. Aus diesem Grund sollten Sie sorgfältig, ob die Codeanalyse deaktiviert. Normalerweise ist es besser, Regelsätze zu deaktivieren, oder einzelne Regeln, die Sie nicht möchten, die auf Ihr Projekt angewendet.
 
 ## <a name="generated-code"></a>Generierter Code
- Entwickler verwenden oft Tools helfen beim Entwickeln von Anwendungen schnell. Diese Tools können Code generieren, die dem Projekt hinzugefügt wird. Möglicherweise möchten die Verletzungen von Schwellenwertregeln angezeigt, die Codeanalyse in generiertem Code ermittelt. Möglicherweise möchten Sie jedoch nicht angezeigt, wenn Sie nicht, um den Code beizubehalten möchten.
+ Entwickler verwenden häufig Tools können Sie schnell Anwendungen zu entwickeln. Diese Tools können Code generieren, die dem Projekt hinzugefügt wird. Sie möchten die Verletzungen von Namensregeln anzuzeigen, die Codeanalyse in generiertem Code ermittelt. Möglicherweise möchten Sie jedoch nicht angezeigt, wenn Sie nicht, als die Codewartung möchten.
 
- Die **Ergebnisse vom generierten Code unterdrücken** Kontrollkästchen auf der **allgemeine** Eigenschaftenseite können Sie auswählen, ob Warnungen der Codeanalyse von verwaltetem Code, der von einem Drittanbieter-Tool generiert wird, angezeigt werden soll .
+ Die **Ergebnisse vom generierten Code unterdrücken** auf das Kontrollkästchen der **allgemeine** Eigenschaftenseite können Sie auswählen, ob codeanalysewarnungen aus verwaltetem Code, der von einem Drittanbieter-Tool generiert wird, finden Sie unter werden sollen .
 
 ## <a name="rule-sets"></a>Regelsätze
- Wenn Ihr Projekt verwalteten Code enthält, können Sie auswählen, dass die Regeln in einer Codeanalyse angewendet werden, durch Auswahl eines Regelsatzes aus der **diesen Regelsatz ausführen** Liste.
+ Wenn Ihr Projekt über verwalteten Code enthält, können Sie auswählen, dass die Regeln in einer Codeanalyse angewendet wird, durch Auswahl eines Regelsatzes aus der **diesen Regelsatz ausführen** Liste.
 
 ## <a name="see-also"></a>Siehe auch
- [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [Codeanalyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md) [Codeanalyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)
