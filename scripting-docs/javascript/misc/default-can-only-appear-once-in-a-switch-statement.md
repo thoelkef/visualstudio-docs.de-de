@@ -1,5 +1,5 @@
 ---
-title: '&#39; Standardeinstellung &#39; kann nur einmal in einer &#39; Switch &#39; Anweisung | Microsoft Docs'
+title: "\"Default\" kann nur einmal in einer Switch-Anweisung | Microsoft-Dokumentation"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633100"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803882"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; Standardeinstellung &#39; kann nur einmal in einer &#39; Switch &#39; Anweisung
-Sie haben versucht, die **Standard** Anweisung mehr als einmal innerhalb einer Switch-Anweisung. Der Standardfall ist immer die letzte Case-Anweisungen in einer Switch-Anweisung (es ist die fallen durch Groß-/Kleinschreibung).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>"default" darf in einer switch-Anweisung nur einmal angegeben werden
+Sie haben versucht, Sie verwenden die **Standard** Anweisung mehr als einmal in einer Switch-Anweisung. Der Standardfall ist immer der letzte Case-Anweisung in einer Switch-Anweisung (es ist der Fall-through-Fall).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Entfernen Sie alle zusätzlichen **Standard** case-Anweisungen aus Ihrer `switch` Anweisung (bei den meisten ein Standard-Case-Anweisung in der Switch-Anweisung verwenden).  
+-   Entfernen Sie alle zusätzlichen **Standard** case-Anweisungen aus Ihrem `switch` Anweisung (verwenden Sie bei den meisten Groß-/Kleinschreibung von Default-Anweisung in der Switch-Anweisung).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)   
- [Steuerung des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
+ [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Reservierte Wörter in JavaScript](../../javascript/reference/javascript-reserved-words.md)

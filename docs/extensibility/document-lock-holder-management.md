@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9994111f5be4e71a63cfa24d719d736a20a11a3b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739522"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804457"
 ---
 # <a name="document-lock-holder-management"></a>Verwaltung von Dokumentsperren
 Der ausgeführten Dokumententabelle (RDT) verwaltet die Anzahl der geöffneten Dokumente und bearbeitungssperren, die Sie. Sie können eine Bearbeitungssperre in einem Dokument im RDT platzieren, wenn sie programmgesteuert im Hintergrund ohne dass der Benutzer sehen ein geöffnetes Dokument in einem Dokumentfenster bearbeitet wird. Diese Funktion wird häufig von Designern verwendet werden, die mehrere Dateien über eine grafische Benutzeroberfläche zu ändern.
@@ -36,11 +36,13 @@ Der ausgeführten Dokumententabelle (RDT) verwaltet die Anzahl der geöffneten D
 - Wenn die Datei "b" in eine nicht kompatible Weise geöffnet ist, können Sie entweder das versuchte Öffnen der Datei "b" von Editor lassen "A" ein, oder Sie die zugeordnete-Editor lassen "A" teilweise öffnen und Anzeigen einer entsprechenden Fehlermeldung an. Die Fehlermeldung sollte den Benutzer anweisen, schließen Sie die Datei "b" in der nicht kompatiblen Editor, und öffnen die Datei mithilfe von "a" klicken Sie dann erneut Editor "A". Sie können auch implementieren die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> mit benutzeraufforderung, Datei "b" zu schließen, die in der nicht kompatiblen Editor geöffnet ist. Wenn der Benutzer die Datei "b", das Öffnen der Datei schließt Weiter "a" im Editor "A" Normal.
 
 ## <a name="additional-document-edit-lock-considerations"></a>Zusätzliche Dokument bearbeiten Sperre Überlegungen
- Erhalten Sie anderes Verhalten, wenn der Editor "A" ist die einzige Editor, in dem ein Dokument, die Sperre für die Datei "b" zu bearbeiten, als bei der Editor "B" auch ein Dokument enthält Bearbeitungssperre Datei "b". In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Klassen-Designer** ist ein Beispiel mit einem visuellen Designer, die keine Bearbeitungssperre auf der zugeordneten Codedatei enthalten ist. D. h. verloren, wenn der Benutzer hat ein Klassendiagramm in der Entwurfsansicht öffnen, und die zugeordneten Codedatei gleichzeitig öffnen, und wenn der Benutzer ändert die Codedatei, aber die Änderungen nicht gespeichert, die Änderungen auch auf die Klassendiagrammdatei (CD). Wenn die **Klassen-Designer** verfügt das Dokument nur Bearbeitungssperre der Codedatei zu verlassen, wird nicht der Benutzer zum Speichern der Änderungen beim Schließen der Codedatei aufgefordert. Die IDE fordert den Benutzer auf die Änderungen zu speichern, nur, nachdem der Benutzer schließt die **Klassen-Designer**. Die gespeicherte Änderungen werden in beiden Dateien angezeigt. Wenn beide die **Klassen-Designer** und der Code-Editor bearbeitungssperren Dokument auf der Codedatei gespeichert, und klicken Sie dann die Benutzer aufgefordert wird, speichern, wenn der Codedatei oder das Formular zu schließen. An diesem Punkt sind die gespeicherten Änderungen in das Formular und die Codedatei angezeigt. Weitere Informationen in Klassendiagrammen finden Sie unter [arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/working-with-class-diagrams.md).
+ Erhalten Sie anderes Verhalten, wenn der Editor "A" ist die einzige Editor, in dem ein Dokument, die Sperre für die Datei "b" zu bearbeiten, als bei der Editor "B" auch ein Dokument enthält Bearbeitungssperre Datei "b". In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Klassen-Designer** ist ein Beispiel mit einem visuellen Designer, die keine Bearbeitungssperre auf der zugeordneten Codedatei enthalten ist. D. h. verloren, wenn der Benutzer hat ein Klassendiagramm in der Entwurfsansicht öffnen, und die zugeordneten Codedatei gleichzeitig öffnen, und wenn der Benutzer ändert die Codedatei, aber die Änderungen nicht gespeichert, die Änderungen auch auf die Klassendiagrammdatei (CD). Wenn die **Klassen-Designer** verfügt das Dokument nur Bearbeitungssperre der Codedatei zu verlassen, wird nicht der Benutzer zum Speichern der Änderungen beim Schließen der Codedatei aufgefordert. Die IDE fordert den Benutzer auf die Änderungen zu speichern, nur, nachdem der Benutzer schließt die **Klassen-Designer**. Die gespeicherte Änderungen werden in beiden Dateien angezeigt. Wenn beide die **Klassen-Designer** und der Code-Editor bearbeitungssperren Dokument auf der Codedatei gespeichert, und klicken Sie dann die Benutzer aufgefordert wird, speichern, wenn der Codedatei oder das Formular zu schließen. An diesem Punkt sind die gespeicherten Änderungen in das Formular und die Codedatei angezeigt. Weitere Informationen in Klassendiagrammen finden Sie unter [arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
  Beachten Sie, dass wenn Sie eine Bearbeitungssperre in einem Dokument für einen nicht-Editor platzieren möchten, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> Schnittstelle.
 
  Oft ein Benutzeroberflächen-Designer, der Codedateien programmgesteuert ändert nimmt Änderungen an mehr als eine Datei. In solchen Fällen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> Methode verarbeitet das Speichern von ein oder mehrere Dokumente mithilfe von der **möchten Sie die folgenden Elemente speichern?** Dialogfeld.
 
 ## <a name="see-also"></a>Siehe auch
- [Aktive Dokumenttabelle](../extensibility/internals/running-document-table.md) [Persistenz und der ausgeführten Dokumententabelle](../extensibility/internals/persistence-and-the-running-document-table.md)
+
+- [aktive Dokumenttabelle](../extensibility/internals/running-document-table.md)
+- [Persistenz und der ausgeführten Dokumententabelle](../extensibility/internals/persistence-and-the-running-document-table.md)

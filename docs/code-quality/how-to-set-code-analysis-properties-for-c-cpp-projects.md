@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739897"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803151"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
 Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet, um den Code in jede Konfiguration des Projekts zu analysieren. Darüber hinaus können Sie weiterleiten, Codeanalyse, um Warnungen zu Code zu unterdrücken, die generiert und von einem Drittanbieter-Tool zu Ihrem Projekt hinzugefügt wurde.
@@ -52,4 +52,6 @@ Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet, um den C
  Wenn Ihr Projekt über verwalteten Code enthält, können Sie auswählen, dass die Regeln in einer Codeanalyse angewendet wird, durch Auswahl eines Regelsatzes aus der **diesen Regelsatz ausführen** Liste.
 
 ## <a name="see-also"></a>Siehe auch
- [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md) [Codeanalyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Codeanalyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)

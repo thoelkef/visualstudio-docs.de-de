@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080607"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804064"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Text-Puffer-Ereignisse in der legacy-API
 Das Textpufferobjekt gibt verschiedene Ereignisse, mit die Sie auf den verschiedenen Situationen reagieren können.  
@@ -53,4 +53,6 @@ Das Textpufferobjekt gibt verschiedene Ereignisse, mit die Sie auf den verschied
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Benachrichtigt Clients über die letzte commitgeste zum Auslösen des Ereignisses und stellt den Bereich des geänderten Texts bereit. Die `IVsFinalTextChangeCommitEvents` Schnittstelle wird als Reaktion auf Rückgängig machen bzw. wiederholen die Befehle nicht ausgelöst. Ereignisse werden nur für die Puffer, die einen Rückgängig-Manager ausgelöst. `IVsFinalTextChangeCommitEvents` Dient zur Verwendung nur durch Sprachdienste oder andere Objekte, die vollständige Kontrolle über bearbeitet haben. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
   
 ## <a name="see-also"></a>Siehe auch
- [Zugriff auf den Textpuffer mithilfe der legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Zugriff auf den Textpuffer mithilfe der legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b481a200cfd085cddcd0e8826eef94f7d4e5fbee
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738792"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804389"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Problembehandlung für Codeanalysefehler
 Dieses Thema enthält Problembehandlungsinformationen für die folgenden Visual Studio-Codeanalyseprobleme.
@@ -32,4 +32,7 @@ Dieses Thema enthält Problembehandlungsinformationen für die folgenden Visual 
 3. Öffnen Sie den Regelsatz erneut, machen die Änderung rückgängig, und speichern Sie den Regelsatz.
 
 ## <a name="see-also"></a>Siehe auch
- [Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md) [mithilfe der Regel wird auf die Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+
+- [Analysieren der Anwendungsqualität](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Analysieren der Qualität von verwaltetem Code](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

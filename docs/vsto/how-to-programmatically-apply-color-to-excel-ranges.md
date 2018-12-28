@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche'
+title: 'Vorgehensweise: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - color, Excel ranges
 - ranges, applying color
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256239"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802315"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Gewusst wie: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Vorgehensweise: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche
   Verwenden Sie zum Anwenden einer Farbe Sie Text in einem Zellbereich eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,8 +56,8 @@ ms.locfileid: "35256239"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   

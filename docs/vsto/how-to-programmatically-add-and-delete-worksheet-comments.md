@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren'
+title: 'Vorgehensweise: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671822"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804194"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Gewusst wie: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Vorgehensweise: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren
   Sie können Kommentare in Microsoft Office Excel-Arbeitsblättern programmgesteuert hinzufügen und löschen. Kommentare können nur einzelnen Zellen, nicht Bereichen mit mehreren Zellen hinzugefügt werden.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -65,7 +65,7 @@ ms.locfileid: "35671822"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [Vorgehensweise: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)  
   
   
