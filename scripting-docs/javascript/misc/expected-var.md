@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39; Var &#39; | Microsoft Docs
+title: "'Var' erwartet | Microsoft-Dokumentation"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633240"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803467"
 ---
-# <a name="expected-39var39"></a>Erwartete &#39; Var &#39;
+# <a name="expected-var"></a>'var' erwartet
 'Var' erwartet (ERRnoVar 1034))  
   
- Fehler beim Var-Schlüsselwort hinzugefügt werden, wenn es erforderlich war.  
+ Sie konnte Var-Schlüsselwort hinzufügen, wenn es erforderlich ist.  
   
- Weitere Informationen über das Var-Schlüsselwort finden Sie unter [Var-Anweisung](../../javascript/reference/var-statement-javascript.md).
+ Weitere Informationen zum Schlüsselwort "Var" finden Sie unter [Var-Anweisung](../../javascript/reference/var-statement-javascript.md).

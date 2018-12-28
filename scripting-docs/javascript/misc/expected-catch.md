@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39; Catch &#39; | Microsoft Docs
+title: "\"Catch\" erwartet | Microsoft-Dokumentation"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633790"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801975"
 ---
-# <a name="expected-39catch39"></a>Erwartete &#39; Catch &#39;
-Sie verwendet die Ausnahmebehandlung **versuchen** blockieren, aber hat nicht die zugeordnete geschrieben **catch** Anweisung. Der Ausnahmebehandlungsmechanismus erfordert, dass der Code die Indizierung fehlschlagen darf zusammen mit dem Code, der nicht ausgeführt werden soll, wenn eine Ausnahme auftritt, in eingebunden werden eine **versuchen** Block. Ausnahmen werden ausgelöst, innerhalb der **versuchen** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen** Block mit einem oder mehreren **catch**Anweisungen.  
+# <a name="expected-catch"></a>"catch" erwartet
+Sie verwendet die Ausnahmebehandlung **versuchen** blockieren, aber hat nicht die zugeordnete geschrieben **catch** Anweisung. Der Mechanismus zur Ausnahmebehandlung erfordert, dass der Code, der zusammen mit dem Code fehlschlägt, kann, die nicht ausgeführt werden soll, wenn eine Ausnahme auftritt, umschlossen werden, in eine **versuchen** Block. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** Block mit einer oder mehreren **catch**Anweisungen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie die zugeordnete **catch** Block.  
+-   Hinzufügen der zugeordneten **catch** Block.  
   
--   Versuchen Sie es mit einem **schließlich** anstelle von Sperren einer **catch** Block.  
+-   Versuchen Sie es mit einem **schließlich** anstelle von Sperren ein **catch** Block.  
   
 ## <a name="see-also"></a>Siehe auch  
- [try … try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+ [try-try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

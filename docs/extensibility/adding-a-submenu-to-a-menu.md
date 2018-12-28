@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863919"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803006"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü
 Diese exemplarische Vorgehensweise baut auf der Demo in [fügen Sie ein Menü auf der Menüleiste von Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) durch Hinzufügen ein Untermenüs zum Veranschaulichen der **TestMenu** Menü.
@@ -156,4 +156,6 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [fügen Sie ein Menü au
 5.  Auf der **TestMenu** Menü klicken Sie auf **Untermenü** , und klicken Sie dann auf **Sub-Testbefehl**. Ein Meldungsfeld angezeigt werden soll, und der Text, "Test-Befehl in TestCommand.SubItemCallback()" angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
- [Hinzufügen eines Menüs zur Menüleiste Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Hinzufügen eines Menüs zur Menüleiste Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

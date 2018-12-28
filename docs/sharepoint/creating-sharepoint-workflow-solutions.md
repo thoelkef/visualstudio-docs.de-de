@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739425"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802497"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
 
@@ -127,7 +127,7 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 ## <a name="debug-a-sharepoint-workflow-template"></a>Debuggen einer SharePoint-Workflowvorlage
  Sie können Debuggen einer SharePoint-Workflowprojekt identisch wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierten Projekte. Beim Starten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet die Einstellungen, die Sie, in angeben der **SharePoint Customization Wizard** öffnen Sie die entsprechenden SharePoint-Website und automatisch zuordnen der Workflowvorlage der entsprechende Bibliothek oder Liste. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem fügt die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an den [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Prozess mit dem Namen *w3wp.exe*.
 
- Um den Workflow zu testen, müssen Sie sie manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web zu Anwendungsdebuggen, finden Sie unter [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
+ Um den Workflow zu testen, müssen Sie sie manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web zu Anwendungsdebuggen, finden Sie unter [Debuggen von Webanwendungen und Skripts](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Bereitstellen einer SharePoint-Workflowvorlage
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bereitstellen von SharePoint-Workflow-Projekte wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Weitere Informationen finden Sie unter [Pakets und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).

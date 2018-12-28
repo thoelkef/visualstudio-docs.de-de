@@ -1,5 +1,5 @@
 ---
-title: Erwartet &#39;-&#39; | Microsoft-Dokumentation
+title: Erwartet '-' | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283274"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804759"
 ---
-# <a name="expected-39-39"></a>Erwartet &#39;-&#39;
+# <a name="expected--"></a>Erwartet '-'
 Sie haben versucht, einen regulären Ausdruck Literale erstellen, aber hat keine eines die Schrägstriche (/). Genau wie Zeichenfolgenliterale als-Zeichen in ein Paar von Anführungszeichen geschrieben werden, werden reguläre Ausdrucksliterale als Zeichen innerhalb von zwei Schrägstrichen (/) ausgedrückt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  

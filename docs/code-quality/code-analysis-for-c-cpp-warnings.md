@@ -20,15 +20,17 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86837d410b44c2508d50b1f630b43852b0fc8fea
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ca66c526c34faf615ef4f61f1bf42d3de9080cd7
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738449"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803947"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Codeanalyse für C/C++-Warnungen
 Dieser Abschnitt enthält die C-/C++-codeanalysewarnungen mit Ausnahme derjenigen, die ausgelöst werden, indem die [C++ Core Guidelines-Überprüfungen](code-analysis-for-cpp-corecheck.md). Weitere Informationen zur Codeanalyse finden Sie unter [/ analyze (Codeanalyse)](/cpp/build/reference/analyze-code-analysis) und [Quick Start: Codeanalyse für C/C++-](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Siehe auch
- [Analysieren der Qualität von C/C++-Code mit der Codeanalyse](../code-quality/code-analysis-for-c-cpp-overview.md) [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+
+- [Analysieren der Qualität von C/C++-Code mit der Codeanalyse](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
