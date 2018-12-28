@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248136"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739266"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl
 Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiterung mit einem Menübefehl, der Editor wird gestartet.  
@@ -126,4 +126,4 @@ Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiteru
   
 5. Fügen Sie die Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung hinzu: [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md) und [benutzereinstellungen und Ooptions erweitern](../extensibility/extending-user-settings-and-options.md)  
   
-   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen benutzerdefinierter Editoren und Designer](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer die Erweiterung in einer isolierten Shell: [Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)
+   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen benutzerdefinierter Editoren und Designer](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer die Erweiterung in einer isolierten Shell: [Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
