@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b38d68d9883325d0654d476a869887bf8dc48a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 84ed32f0d8ca966449c5795094fde1feeb4d49af
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057080"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804259"
 ---
 # <a name="unit-test-your-code"></a>Ausführen von Komponententests für Code
 
@@ -44,9 +44,9 @@ Lesen Sie folgende Themen, um Komponententests besser zu verstehen und sie zu er
 
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
-|**Schnellstarts und exemplarische Vorgehensweisen:** Erfahren Sie in den folgenden Themen basierend auf Codebeispielen, wie Unittests in Visual Studio durchgeführt werden.|-   [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Schnellstarts und exemplarische Vorgehensweisen:** Erfahren Sie in den folgenden Themen basierend auf Codebeispielen, wie Unittests in Visual Studio durchgeführt werden.|-   [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**Unittests mit dem Test-Explorer:** Erfahren Sie, wie Sie der Test-Explorer dabei unterstützen kann, produktivere und effizientere Komponententests zu erstellen.|-   [Grundlagen zu Komponententest](../test/unit-test-basics.md)<br />-   [Ein Komponententestprojekt erstellen](../test/create-a-unit-test-project.md)<br />-   [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)<br />-   [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md)|
-|**Komponententests von C++-Code**|-   [Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententestframework für C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Komponententests von C++-Code**|-   [Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententestframework für C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolation von Komponententests**|-   [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Verwenden von Code Coverage, um zu bestimmen, welcher Teil des Codes Ihres Projekts bereits getestet wurde:** Erfahren Sie mehr zum Code Coverage-Feature der Visual Studio-Testtools.|-   [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Durchführen von Belastungs- und Leistungsanalysen mithilfe von Auslastungstests:** Sie können einen Auslastungstest erstellen und diesem Komponententests hinzufügen, um Leistungs- und Auslastungsprobleme in der Anwendung zu isolieren.|-   [Load testing (Azure Test Plans and TFS) (Auslastungstest (Azure Test Plans und TFS))](/azure/devops/test/load-test/index?view=vsts)|

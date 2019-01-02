@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064871"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740100"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
@@ -37,7 +37,7 @@ Zum Erstellen der Anwendung benötigen Sie:
 
 -   SQL Server Express LocalDB. Wenn Sie SQL Server Express LocalDB nicht haben, können Sie installieren, von der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
+In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
 
 ## <a name="set-up-the-sample-database"></a>Die Beispieldatenbank einrichten
 

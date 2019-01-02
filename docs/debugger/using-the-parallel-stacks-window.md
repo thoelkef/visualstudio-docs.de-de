@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562333"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Anzeigen von Threads und Tasks in das Fenster "Parallele Stapel"
 
@@ -48,7 +48,7 @@ Die **parallele Stapel** Fenster hat die folgenden Symbolleisten-Steuerelemente:
 
 ![Symbolleiste im Fenster "Parallele Stapel"](../debugger/media/parallel_stackstoolbar.png "Symbolleiste parallele Stapel")  
   
-|Symbol|Steuerelement|Beschreibung |  
+|Symbol|Steuerelement|Beschreibung|  
 |-|-|-|  
 |![Kombinationsfeld Threads/Aufgaben](media/parallel_toolbar1.png "Kombinationsfeld Threads/Aufgaben")|**Threads**/**Aufgaben** Kombinationsfeld|Schaltet die Ansicht zwischen Aufruflisten von Threads und Aufruflisten von Aufgaben um. Weitere Informationen finden Sie unter [Aufgabenansicht](#tasks-view) und [Threadansicht](#threads-view).|  
 |![Symbol nur gekennzeichnete Elemente anzeigen](media/parallel_toolbar2.png "Symbol \"nur gekennzeichnete Elemente anzeigen\"")|Nur gekennzeichnete Elemente anzeigen|Zeigt nur Aufruflisten für die Threads, die in anderen Debuggerfenster, z. B. gekennzeichnet sind die **GPU-Threads** Fenster und die **parallele Überwachung** Fenster.|  
@@ -59,7 +59,7 @@ Die **parallele Stapel** Fenster hat die folgenden Symbolleisten-Steuerelemente:
 ### <a name="stack-frame-icons"></a>Stack-Frame-Symbole
 Die folgenden Symbole geben Informationen über die aktiven und den aktuellen Stapelrahmen in allen Ansichten:
 
-|Symbol|Beschreibung |  
+|Symbol|Beschreibung|  
 |-|-|  
 |![Gelber Pfeil](media/icon_parallelyellowarrow.gif)|Gibt den aktuellen Speicherort (aktiven Stapelrahmen) des aktuellen Threads.|
 |![Symbol "Threads"](media/icon_parallelthreads.gif)|Gibt den aktuellen Speicherort (aktiven Stapelrahmen) eines nicht-aktuellen Threads.|
@@ -70,7 +70,7 @@ Die folgenden Elemente des Kontextmenüs sind verfügbar, wenn Sie eine Methode 
 
 ![Kontextmenü im Fenster "Parallele Stapel"](../debugger/media/parallel_contmenu.png "Kontextmenü im Fenster \"Parallele Stapel\"")  
 
-|Menüelement|Beschreibung |  
+|Menüelement|Beschreibung|  
 |-|-|  
 |**Kennzeichnen**|Kennzeichnet das ausgewählte Element.|  
 |**Kennzeichnung aufheben**|Hebt die Kennzeichnung des ausgewählten Elements auf.|  
@@ -100,7 +100,7 @@ Die folgende Abbildung zeigt einen Thread, die von Main gesendet, um einen verwa
 
 Die folgende Tabelle beschreibt die wichtigsten Funktionen des die **Threads** anzeigen:  
   
-|Legende|Elementname|Beschreibung |  
+|Legende|Elementname|Beschreibung|  
 |-|-|-|  
 |1|Aufruflistensegment oder -knoten|Enthält eine Reihe von Methoden für einen oder mehrere Threads. Wenn der Frame keine Pfeillinien verbunden hat, zeigt der Frame den Aufrufpfad für den gesamten Aufrufpfad.|  
 |2|Blaue Hervorhebung|Gibt den Aufrufpfad des aktuellen Threads an.|  
@@ -139,9 +139,8 @@ Wenn Sie einen neuen Stapelrahmen wechseln, Sie stellen diese Methode die aktuel
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte zum Debuggen einer Multithreadanwendung](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Walkthrough: Debug a parallel application (Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung)](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Grundlagen des Debuggens](../debugger/getting-started-with-the-debugger.md)   
- [Debugging managed code (Debuggen von verwaltetem Code)](../debugger/debugging-managed-code.md)   
+ [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [Parallele Programmierung](/dotnet/standard/parallel-programming/index)   
  [Use the Tasks window (Verwenden des Aufgabenfensters)](../debugger/using-the-tasks-window.md)   
  [Task class (Task-Klasse)](../extensibility/debugger/task-class-internal-members.md)

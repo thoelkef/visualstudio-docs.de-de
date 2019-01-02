@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Debuggen einer .NET Framework-Quelle | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen von .NET Framework-Quelle | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389279"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443911"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Gewusst wie: Debuggen einer .NET Framework-Quelle
+# <a name="how-to-debug-net-framework-source"></a>Vorgehensweise: Debuggen einer .NET Framework-Quelle
 
 Zum Debuggen von .NET Framework-Quellcodes ist Folgendes erforderlich:
 
@@ -55,7 +55,7 @@ Zum Debuggen von .NET Framework-Quellcodes ist Folgendes erforderlich:
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>So laden Sie Symbole aus den Modulen oder die Aufrufliste Windows  
   
-1. Öffnen Sie das Fenster während des Debuggens dazu **Debuggen** > **Windows** > **Module** oder **Aufrufliste** . 
+1. Öffnen Sie das Fenster während des Debuggens dazu **Debuggen** > **Windows** > **Module** (oder drücken Sie **Strg + Alt + U**) oder **Debuggen** > **Windows** > **Aufrufliste** (**Strg + Alt + C**). 
    
 1. Mit der rechten Maustaste in ein Modul für die Symbole geladen wurden nicht. In der **Module** Fenster, Symbol Status geladen ist der **Symbolstatus** Spalte. In der **Aufrufliste** Fenster, Status ist der **Framestatus** Spalte und der Rahmen wird abgeblendet. 
    
@@ -66,5 +66,5 @@ Zum Debuggen von .NET Framework-Quellcodes ist Folgendes erforderlich:
    - Wählen Sie **Symboleinstellungen** zum Öffnen der **Symbole** Seite. Auf der **Symbole** Seite **Symboldateien (.pdb) Orte für Symboldateien**Option **Microsoft-Symbolserver** auf Access Symbole von den öffentlichen Microsoft-Symbolservern. Wählen Sie die Symbolleisten-Schaltflächen an andere Orte für Symboldateien hinzufügen und Ändern der Reihenfolge geladen. Wählen Sie **OK** um das Dialogfeld zu schließen. 
   
 ### <a name="see-also"></a>Siehe auch  
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Debugging managed code (Debuggen von verwaltetem Code)](../debugger/debugging-managed-code.md)   
+ [Specify symbol (.pdb) and source files (Angeben von Symboldateien (PDB) und Quelldateien)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

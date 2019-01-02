@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561628"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
@@ -41,6 +41,5 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)   
- [Debuggen in Visual Studio](../debugger/index.md)  
+ [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Debuggen in Visual Studio](../debugger/index.md)  
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

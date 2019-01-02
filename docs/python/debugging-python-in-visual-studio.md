@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068434"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561748"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -84,7 +84,7 @@ Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene M�
 
 ### <a name="inspect-and-modify-values"></a>Überprüfen und Ändern von Werten
 
-Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das **Überwachungsfenster** verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Inspect variables (Variablen überprüfen)](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows).)
+Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das **Überwachungsfenster** verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Inspect variables (Variablen überprüfen)](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows).)
 
 Um einen Wert mithilfe von **DataTips** anzuzeigen, zeigen Sie einfach mit dem Mauszeiger auf eine beliebige Variable im Editor. Klicken Sie auf den Wert, um ihn zu ändern:
 

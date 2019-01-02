@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060186"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562099"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio
 In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwendung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** erläutert. Diese Fenster unterstützen Sie besser verstehen und prüfen das Laufzeitverhalten von Code, verwendet der [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Es wird erläutert, wie der Code nach Unterbrechung der Ausführung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** untersucht wird.  
@@ -298,7 +298,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)   
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)  
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [Parallele Programmierung](/dotnet/standard/parallel-programming/index)   
  [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)   

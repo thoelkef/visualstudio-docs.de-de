@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561511"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -332,4 +332,4 @@ Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, 
 In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes erfahren Sie mehr über den Debugger.
 
 > [!div class="nextstepaction"]
-> [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

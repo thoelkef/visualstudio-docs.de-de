@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1f0f37be96603ed5d1e53c5ef36ea011d636dcaa
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235311"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804850"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debuggen von R in Visual Studio
 
-Der Integration des vollständigen Debug-Vorgangs von Visual Studio ist in R-Tools für Visual Studio (RTVS) vorhanden (siehe [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md). Diese Unterstützung umfasst Haltepunkte, Anfügen an laufende Prozesse, das Überprüfen und Beobachten von Variablen, sowie das Überprüfen der Aufrufliste. Dieser Artikel erforscht die Aspekte des Debuggens, die in R und RTVS exklusiv sind.
+Der Integration des vollständigen Debug-Vorgangs von Visual Studio ist in R-Tools für Visual Studio (RTVS) vorhanden (siehe [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour). Diese Unterstützung umfasst Haltepunkte, Anfügen an laufende Prozesse, das Überprüfen und Beobachten von Variablen, sowie das Überprüfen der Aufrufliste. Dieser Artikel erforscht die Aspekte des Debuggens, die in R und RTVS exklusiv sind.
 
 Das Starten des Debuggers für die R-Startdatei in einem R-Projekt funktioniert genauso wie in anderen Projekttypen: Verwenden Sie **Debuggen** > **Debugging starten**, die **F5**-Taste oder die **Startdatei der Quelle** auf der Debugsymbolleiste: 
 
@@ -55,7 +55,7 @@ Wenn Sie im Debugger angehalten werden, werden Sie auch bei der Aufforderung des
 
 Der Umgebungsbrowser unterstützt eine Reihe bestimmter Befehle:
 
-| Befehl | Beschreibung  |
+| Befehl | Beschreibung |
 | --- | --- |
 | n | next: führt die nächste Anweisung in der Codedatei aus (das gleiche wie „step over“) |
 | s | step into: führt die nächste Anweisung in der Codedatei aus, wobei schrittweise ein Funktionsbereich ausgeführt wird, wenn die nächste Anweisung ein Funktionsaufruf ist. |
