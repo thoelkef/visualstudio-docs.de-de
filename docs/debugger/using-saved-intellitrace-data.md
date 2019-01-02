@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912967"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685005"
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie das Debuggen von einer IntelliTrace-Protokoll-(.iTrace)-Datei aus beginnen. Diese Datei kann Leistungsereignisse, Ausnahmen, Threads, Testschritte, Module und weitere Systeminfo enthalten, die IntelliTrace erfasst, während Ihre App ausgeführt wird.
@@ -110,7 +110,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 3.  Erweitern Sie diesen Aufruf, um alle geschachtelten Aufrufe und Parameterwerte zu überprüfen, die zu diesem Zeitpunkt aufgezeichnet wurden.
 
-     (Tastatur: Um einen geschachtelten Aufruf anzuzeigen oder auszublenden, drücken Sie die **NACH-RECHTS-TASTE** , bzw. die **NACH-LINKS-TASTE** . Um Parameterwerte für einen geschachtelten Aufruf anzuzeigen und auszublenden, drücken Sie die **LEERTASTE** .)
+     (Tastatur: Um anzuzeigen, oder einen geschachtelten Aufruf auszublenden, drücken Sie die **Pfeil nach rechts** oder **nach-links** bzw. Schlüssel. Um Parameterwerte für einen geschachtelten Aufruf anzuzeigen und auszublenden, drücken Sie die **LEERTASTE** .)
 
      Starten Sie das Debuggen über diesen Aufruf.
 
@@ -161,7 +161,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 1. Kopieren der SharePoint-Korrelations-ID aus der Quelle
 
-    Zum Beispiel:
+    Beispiel:
 
     ![IntelliTrace &#45; SharePoint-Fehler &#45; Korrelations-ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -207,7 +207,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
     ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
+   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Threadliste
  Untersuchen Sie die aufgezeichneten Threads, die im Zielprozess ausgeführt wurden. Sie können das Debuggen vom ersten gültigen IntelliTrace-Ereignis in einem ausgewählten Thread starten.
@@ -225,7 +225,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |**Spalte**|**Enthält Folgendes**|
 |----------------|-------------------|
 |**ID**|Thread-ID-Nummer|
-|**Name**|Threadname. Unbenannte Threads werden als "\<kein Name >".|
+|**Name**|Threadname. Unbenannte Threads werden als „\<Kein Name>“ angezeigt.|
 |**Startzeit**|Zeitpunkt der Threaderstellung.|
 |**Endzeit**|Zeitpunkt des Threadabschlusses|
 
@@ -258,7 +258,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |----------------|-------------------|
 |**Modulname**|Moduldateiname|
 |**Modulpfad**|Speicherort auf einem Datenträger, in dem das Modul geladen wurde|
-|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Siehe [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Siehe [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?
  [Verwenden des eigenständigen IntelliTrace-Collectors](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Empfehlungen
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 6: ein Testwerkzeugkasten](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 6: Ein Testwerkzeugkasten](http://go.microsoft.com/fwlink/?LinkID=255203)

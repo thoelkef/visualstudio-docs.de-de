@@ -17,23 +17,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778060"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739467"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Hinzufügen von Validierungen zu einem N-Tier-Dataset
 Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt ist, grundsätzlich auf die gleiche Art hinzugefügt wie einem DataSet in einer einzelnen Datei (in einem einzelnen Projekt). Es wird empfohlen, die Datenvalidierung während des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses und/oder des <xref:System.Data.DataTable.RowChanging>-Ereignisses einer Datentabelle auszuführen.
 
- Das Dataset stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie Benutzercode, Spalte und Zeile-Ereignisse mit wechselndem der Datentabellen im Dataset hinzufügen können. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Das Dataset stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie Benutzercode, Spalte und Zeile-Ereignisse mit wechselndem der Datentabellen im Dataset hinzufügen können. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Bei einer Abtrennung der Datasets von TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
 
 > [!NOTE]
->  Das Dataset-Designer erstellt nicht automatisch Ereignishandler in c# für die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> Ereignisse. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler mit dem zugrunde liegenden Ereignis verknüpfen. Die folgenden Verfahren wird beschrieben, wie die erforderlichen Ereignishandler in Visual Basic und c# zu erstellen.
+>  Vom DataSet-Designer werden in C# nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler mit dem zugrunde liegenden Ereignis verknüpfen. Die folgenden Verfahren beschreiben, wie Sie die erforderlichen Ereignishandler in Visual Basic zu erstellen und C#.
 
 ## <a name="validate-changes-to-individual-columns"></a>Überprüfen Sie die Änderungen in einzelnen Spalten
  Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.ColumnChanging> Ereignis durch Doppelklicken auf die gewünschte Spalte auf die **Dataset-Designer**.
@@ -49,7 +49,7 @@ End Sub
 ```
 
 > [!NOTE]
->  In C#-Projekten werden vom DataSet-Designer nur partielle Klassen für das DataSet sowie einzelne Tabellen im DataSet erstellt. Vom DataSet-Designer werden in C#, im Gegensatz zu Visual Basic, nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. In c#-Projekten müssen Sie manuell eine Methode zum Behandeln des Ereignisses und die Methode, die dem zugrunde liegenden Ereignis verknüpfen zu erstellen. Das folgende Verfahren erläutert die Schritte, um die erforderlichen Ereignishandler sowohl in Visual Basic als auch in C# zu erstellen.
+>  In C#-Projekten werden vom DataSet-Designer nur partielle Klassen für das DataSet sowie einzelne Tabellen im DataSet erstellt. Vom DataSet-Designer werden in C#, im Gegensatz zu Visual Basic, nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. In C# -Projekten müssen Sie manuell eine Methode zum Behandeln des Ereignisses und die Methode, die dem zugrunde liegenden Ereignis verknüpfen zu erstellen. Das folgende Verfahren erläutert die Schritte, um die erforderlichen Ereignishandler sowohl in Visual Basic als auch in C# zu erstellen.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -60,7 +60,7 @@ End Sub
 2.  Doppelklicken Sie auf die zu validierende Spalte. Durch diese Aktion wird der <xref:System.Data.DataTable.ColumnChanging>-Ereignishandler erstellt.
 
     > [!NOTE]
-    >  Der Dataset-Designer erstellt den Ereignishandler für das C#-Ereignis nicht automatisch. Der Code, der zum Behandeln des Ereignisses in c# erforderlich ist, wird im nächsten Abschnitt enthalten. `SampleColumnChangingEvent` wird erstellt, und klicken Sie dann bis zu verknüpft die <xref:System.Data.DataTable.ColumnChanging> Ereignis in der <xref:System.Data.DataTable.EndInit%2A> Methode.
+    >  Der Dataset-Designer erstellt den Ereignishandler für das C#-Ereignis nicht automatisch. Der Code, der erforderlich ist, der Ereignisbehandlung in C# befindet sich im nächsten Abschnitt. `SampleColumnChangingEvent` wird erstellt, und klicken Sie dann bis zu verknüpft die <xref:System.Data.DataTable.ColumnChanging> Ereignis in der <xref:System.Data.DataTable.EndInit%2A> Methode.
 
 3.  Fügen Sie Code hinzu, mit dem überprüft wird, ob die Daten in `e.ProposedValue` den Anforderungen der Anwendung entsprechen. Wenn der vorgeschlagene Wert unzulässig ist, legen Sie für die Spalte fest, dass ein Fehler angezeigt wird.
 
@@ -122,7 +122,7 @@ End Sub
 
 3.  Fügen Sie Benutzercode innerhalb der Deklaration der partiellen Klasse hinzu.
 
-4.  Der folgende Code zeigt, wo Sie Benutzercode zur Validierung beim Hinzufügen der <xref:System.Data.DataTable.RowChanging> Ereignis. C#-Beispiel enthält auch Code aus, um die Ereignishandlermethode Einbinden der `OrdersRowChanging` Ereignis.
+4.  Der folgende Code zeigt, wo Sie Benutzercode zur Validierung beim Hinzufügen der <xref:System.Data.DataTable.RowChanging> Ereignis. Die C# Beispiel enthält auch Code aus, um die Ereignishandlermethode Einbinden der `OrdersRowChanging` Ereignis.
 
     ```vb
     Partial Class OrdersDataTable
@@ -168,6 +168,6 @@ End Sub
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Exemplarische Vorgehensweise: Erstellen einer N-Tier-datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)

@@ -18,19 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bf265b2e3761ba1fd929e72e29f4c2c47cd449
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a7cf4f2b30079a76012acfe972ea0de0b9e0ea78
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592832"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Gewusst wie: Angeben eines Namens für eine ClickOnce-Anwendung im Menü
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Vorgehensweise: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
 Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung installiert ist, für die online und offline-Verwendung, ein Eintrag hinzugefügt wird die **starten** Menü und die **Programme hinzufügen oder entfernen** Liste. Der Anzeigename wird standardmäßig der Name des der Assembly identisch, aber Sie können den Anzeigenamen ändern, indem Sie die Einstellung **Produktname** in die **Veröffentlichungsoptionen** Dialogfeld.  
   
  **Produktname** erscheint auf der *publish.htm* Seite; für eine installierte Anwendung offline, sie den Namen des Eintrags im werden die **starten** Menü, und es werden auch der Name, der zeigt, in **Hinzufügen oder Entfernen von Programmen**.  
   
  **Name des Herausgebers** erscheint auf der *publish.htm* zuvor auf der Seite **Produktname**, und für eine installierte Anwendung offline, wird auch der Name des Ordners, der der Anwendung enthält. Symbol in der **starten** Menü.  
+
+ Ruft der Verweis für das Menü Start der Verknüpfung oder -app in erstellt *%appdata%\Microsoft\Windows\Start \Programme\\< Name des Herausgebers\>*. Der Verweis Kontextmenü oder die app hat den gleichen Namen wie der Name des Produkts.
   
  Sie können festlegen, die **Produktname** und **Herausgebername** Eigenschaften in der **Veröffentlichungsoptionen** im Dialogfeld auf die **veröffentlichen** Seite von der **Projekt-Designer**.  
   
@@ -38,7 +40,7 @@ Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwe
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
   
@@ -50,4 +52,4 @@ Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwe
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Gewusst wie: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
