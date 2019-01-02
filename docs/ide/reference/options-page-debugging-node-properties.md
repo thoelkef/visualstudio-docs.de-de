@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670832"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684833"
 ---
 # <a name="options-page-debugging-node-properties"></a>Optionsseite, Eigenschaften des Knotens 'Debuggen'
 In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging** `DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.
@@ -23,7 +23,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 ## <a name="general"></a>Allgemein
  `DTE.Properties("Debugging", "General")`
 
-|Eigenschaftenelementname|Wert|Beschreibung |
+|Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (boolesch)|Bestimmt, ob der Debugger vor dem Löschen aller Haltepunkte in einem Projekt zur Bestätigung auffordert.|
 |BreakAllProcesses|Get/Set (boolesch)|Bestimmt, ob der Debugger alle Prozesse unterbricht, sobald ein einzelner Prozess unterbrochen wird.|
@@ -53,7 +53,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 ## <a name="edit-and-continue"></a>Bearbeiten und Fortfahren
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Eigenschaftenelementname|Wert|Beschreibung |
+|Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (boolesch)|Bestimmt, ob Bearbeiten und Fortfahren aktiviert ist. Diese Option gilt für alle Sprachen, die Bearbeiten und Fortfahren unterstützen.|
 |InvokedByCommands|Get/Set (boolesch)|Bestimmt, ob beim Bearbeiten und Fortfahren Codeänderungen automatisch angewendet werden, wenn der Benutzer einen Debugbefehl wie **Schritt** oder **Fortfahren** auswählt. Diese Option gilt nur für nativen Code.|
@@ -65,7 +65,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Eigenschaftenelementname|Wert|Beschreibung |
+|Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (boolesch)|Bestimmt, ob Just-In-Time-Debuggen für verwalteten Code aktiviert ist.|
 |JitNative|Get/Set (boolesch)|Bestimmt, ob Just-In-Time-Debuggen für systemeigenen Code aktiviert ist.|
@@ -74,7 +74,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 ## <a name="native"></a>Systemeigen
  `DTE.Properties("Debugging", "Native")`
 
-|Eigenschaftenelementname|Wert|Beschreibung |
+|Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (boolesch)|Bestimmt, ob der Debugger DLL-Exporttabellen lädt.|
 |EnableRPC|Get/Set (boolesch)|Bestimmt, ob der Debugger COM-Remoteprozeduraufrufe schrittweise ausführen kann.|
@@ -86,5 +86,5 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 - [Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Optionsseite, Eigenschaften des Knotens „Text-Editor“](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Allgemein, Debuggen, Dialogfeld "Optionen"](../../debugger/general-debugging-options-dialog-box.md)
-- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](../../debugger/edit-and-continue.md?view=vs-2015)
 - [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../../debugger/just-in-time-debugging-options-dialog-box.md)
