@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068460"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561641"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **an den Prozess anhängen** , oder drücken Sie **STRG**+**Alt** + **P** in Visual Studio, und die Verwendung der **an den Prozess anhängen** Dialogfeld, um den Debugger an den Prozess anzuhängen.
 
 Sie können **an den Prozess anhängen** zum Debuggen von ausgeführten apps auf lokalen Computern oder Remotecomputern gleichzeitig Debuggen mehrerer Prozesse, Debuggen von apps, die in Visual Studio erstellt wurden nicht oder Debuggen eine app, die Sie nicht starten von Visual Studio mit der der Debugger angefügt. Z. B., wenn Sie eine app ohne den Debugger ausführen und einen Ausnahmefehler, können Sie dann fügen Sie den Debugger an den Prozess, der die app ausgeführt wird und mit dem Debuggen beginnen.
 
-Weitere Informationen zu den Grundlagen des Debuggens in Visual Studio, finden Sie unter [erste Schritte mit dem Debugger](../debugger/getting-started-with-the-debugger.md).
+Weitere Informationen zu den Grundlagen des Debuggens in Visual Studio, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Nicht sicher, ob verwendet **an den Prozess anhängen** für Ihr Szenario Debuggen? Finden Sie unter [allgemeine Debugszenarien](#BKMK_Scenarios). 
@@ -162,7 +162,7 @@ Geben Sie einen laufenden Prozess anfügen, in Visual Studio schnell auf **STRG*
 |Remotedebuggen von ASP.NET 4 oder 4.5 auf einem IIS-server|Remotetools verwenden und **an den Prozess anhängen**|*w3wp.exe*|Finden Sie unter [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Remotedebuggen von ASP.NET Core auf einem IIS-server|Remotetools verwenden und **an den Prozess anhängen**|*dotnet.exe*|App-Bereitstellung, finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html). Debuggen, finden Sie unter [Remote debugging ASP.NET Core auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Debuggen des clientseitigen Skripts auf einem lokalen IIS-Server, für unterstützte app-Typen |Verwendung **an den Prozess anhängen**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, oder *iexplore.exe*|Debuggen von Skripts muss aktiviert sein. Chrome, müssen Sie auch Chrome im Debugmodus befindet, und wählen ausführen **Webkit-Code** in die **Anfügen an** Feld.|
-|Debuggen einer C#, Visual Basic oder C++-app auf dem lokalen Computer|Verwenden Sie entweder [standard Debuggen](../debugger/getting-started-with-the-debugger.md) oder **an den Prozess anhängen**|*\<Appname > .exe*|In den meisten Szenarien verwenden standard Debuggen und nicht **an den Prozess anhängen**.|
+|Debuggen einer C#, Visual Basic oder C++-app auf dem lokalen Computer|Verwenden Sie entweder [standard Debuggen](../debugger/debugger-feature-tour.md) oder **an den Prozess anhängen**|*\<Appname > .exe*|In den meisten Szenarien verwenden standard Debuggen und nicht **an den Prozess anhängen**.|
 |Remotedebuggen einer Windows-desktop-app|Remotetools|Nicht zutreffend| Finden Sie unter [Remotedebuggen einer C# oder Visual Basic-Anwendungen](../debugger/remote-debugging-csharp.md) oder [Remote Debuggen einer C++-app](../debugger/remote-debugging-cpp.md)|
 |Debuggen einer ASP.NET-Apps auf dem lokalen Computer aus, nachdem Sie die app ohne den Debugger starten|Verwendung **an den Prozess anhängen**|*iiexpress.exe*|Dies kann hilfreich sein, Ihre App laden schneller, z. B. (z. B.) bei der profilerstellung. |
 |Debuggen Sie andere unterstützte app-Typen für einen Serverprozess|Wenn der Server remote verfügbar ist, verwenden Sie die Remoteserver-Verwaltungstools, und **an den Prozess anhängen**|*Chrome.exe*, *iexplore.exe*, oder andere Prozesse|Verwenden Sie bei Bedarf Resource Monitor können Sie den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|

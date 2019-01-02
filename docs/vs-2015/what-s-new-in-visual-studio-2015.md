@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062437"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740272"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
 -   **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debuggen und Diagnose
- Informationen zu den Neuerungen beim Debugging finden Sie unter [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Informationen zu den Neuerungen beim Debugging finden Sie unter [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Weitere Informationen zu den neuerungen bei der Diagnose finden Sie unter [Neuigkeiten in Profilerstellungstools](./profiling/what-s-new-in-profiling-tools.md).
 
  Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zum Einstieg finden Sie unter [PerfTips: Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Fehlerliste
  Die Fehlerliste kann nun nach einer beliebigen Spalte gefiltert werden. Sie zeigt zudem eine Liveansicht von Fehlern, Warnungen und Codeanalysen für die gesamte C#- oder Visual Basic-Projektmappe an, selbst wenn eine Codeänderung Tausende von Warnungen nach sich zieht. Die neue Fehlerliste ist abwärtskompatibel zur derzeitigen Verwendung. Weitere Informationen finden Sie unter [Error List Window](./ide/reference/error-list-window.md).
@@ -184,7 +184,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
  Die Benutzeroberfläche für den Notification Hub wurde optimiert und kann jetzt schneller durchsucht werden. Es wurden weitere Arten von Benachrichtigungen hinzugefügt, z. B. für Leistungsprobleme, Renderingprobleme und Abstürze, und Sie können Visual Studio jetzt anweisen, eine Benachrichtigung nicht mehr anzuzeigen. Weitere Informationen finden Sie unter [Visual Studio-Benachrichtigungen](./ide/visual-studio-notifications.md).
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln Sie, was mit Ihrem Code (nur Enterprise und Professional-Editionen) geschehen ist.
- Bleiben Sie auf Ihre Arbeit konzentriert, während Sie Informationen zum Code suchen, ohne den Editor zu verlassen. Sie können Änderungen und andere Verläufe für Arbeitsaufgaben, Fehler, Codeüberprüfungen usw. für den Code prüfen, der in Visual Studio Team Services (VSTS) oder in Team Foundation Server (TFS) gespeichert ist.
+ Bleiben Sie auf Ihre Arbeit konzentriert, während Sie Informationen zum Code suchen, ohne den Editor zu verlassen. Sie können Änderungen und andere Verläufe für Arbeitselemente, Fehler, Codeüberprüfungen usw. für den Code prüfen, der in Visual Studio Team Services (VSTS) oder in Team Foundation Server (TFS) gespeichert ist.
 
  Visual Studio Professional und Visual Studio Enterprise ermöglichen jetzt Folgendes:
 
