@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068447"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425850"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
@@ -61,7 +60,7 @@ In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatis
   
  ![Haltepunktausführung beendet](../debugger/media/breakpointexecution.png "haltepunktausführung")  
   
- Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).  
+ Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md)  
 
 - Der Haltepunkt ist eine Umschaltoption. Sie klicken Sie darauf, drücken Sie die **F9**, oder verwenden Sie **Debuggen** > **Haltepunkt ein/aus** zu löschen oder erneut eingefügt werden.
   
@@ -89,7 +88,7 @@ Wird der aufruflistenhaltepunkt angezeigt, der **Haltepunkte** -Fenster als eine
 
 Der Debugger bei der Anweisung.  
 
-Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster Aufrufliste. 
+Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md) 
 
 Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -306,8 +305,9 @@ Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können
 
 Ablaufverfolgungspunkte werden als rote Diamanten in den linken Rand des Quellcodes angezeigt und **Haltepunkte** Windows. 
   
-## <a name="see-also"></a>Siehe auch  
- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
- [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)  
- [Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Siehe auch
+
+- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
+- [Problembehandlung von Haltepunkten in Visual Studio-debugger](../debugger/troubleshooting-breakpoints.md)

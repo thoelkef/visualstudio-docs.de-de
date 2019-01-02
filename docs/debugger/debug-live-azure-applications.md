@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056917"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648819"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug live ASP.NET-Azure-apps, die mit dem Momentaufnahmedebugger
 
@@ -36,7 +36,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **ASP.NET und Web-entwicklungsworkload**. Für ASP.NET Core, müssen Sie auch die **.NET Core-Entwicklung** arbeitsauslastung installiert.
+* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **Azure-entwicklungsworkload**. (Unter der **Einzelkomponenten** Registerkarte finden Sie unter **Debuggen und testen** > **momentaufnahmedebugger**.)
 
     Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise-Version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aktualisieren, führen Sie den Visual Studio-Installer, und überprüfen Sie die Snapshot-Debugger-Komponente in der **ASP.NET und Web-entwicklungsworkload**.
 

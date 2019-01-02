@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079473"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803661"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
 
@@ -44,14 +44,14 @@ In diesem Dokument werden die Visual Studio-Tools beschrieben, die Sie verwenden
  Sie können mit dem Visual Studio-Shader-Designer (ein graphenbasiertes Shader-Design-Tool) benutzerdefinierte visuelle Effekte ohne Kenntnisse der HLSL-Programmierung erstellen.
 
 > [!NOTE]
-> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Graphics diagnostics (debugging DirectX graphics) (Grafikdiagnose (Debuggen von DirectX-Grafiken))](../debugger/visual-studio-graphics-diagnostics.md).
+> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Graphics diagnostics (debugging DirectX graphics) (Grafikdiagnose (Debuggen von DirectX-Grafiken))](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>DirectX-Versionskompatibilität
  Visual Studio verwendet DirectX, um 2D- und 3D-Objekte zu rendern. Sie können entweder den DirectX 11-Renderer oder den Windows Advanced Rasterization Platform (WARP)-Softwarerenderer auswählen. Der DirectX 11-Renderer stellt leistungsfähiges, hardwarebeschleunigtes Rendering für DirectX 11- und DirectX 10-GPUs bereit. Mit dem WARP-Renderer wird sichergestellt, dass die Objekte von einer großen Bandbreite an Computern unterstützt werden; dies umfasst auch Computer, die keine moderne Grafikhardware aufweisen, und Computer mit integrierter Grafikhardware. Weitere Informationen zu WARP finden Sie unter [Windows Advanced Rasterization Platform (WARP) Guide (Windows Advanced Rasterization Platform-Handbuch)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit Texturen und Bildern](../designers/working-with-textures-and-images.md)|Beschreibt, wie Visual Studio verwendet wird, um mit Bildern und Texturen zu arbeiten.|
 |[Arbeiten mit 3D-Modellen](../designers/working-with-3-d-models.md)|Beschreibt, wie Visual Studio verwendet wird, um mit 3D-Modellen zu arbeiten.|

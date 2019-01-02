@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068301"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802578"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines Adapters für diagnostische Daten
 
@@ -48,7 +48,7 @@ Nachfolgend sehen Sie eine partielle Liste mit Schlüsselereignissen, die Sie be
 
 Führen Sie die folgenden Schritte aus, um einen Adapter für diagnostische Daten zu erstellen, der eine Datendatei auf der Basis von Informationen erfasst, die Sie beim Erstellen der Testeinstellungen konfigurieren.
 
-Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
 
@@ -224,7 +224,7 @@ Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einsch
 
      Diese Dateien werden an die Testergebnisse angefügt. Wenn Sie aus diesen Testergebnissen einen Fehler erstellen oder [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] verwenden, werden die Dateien ebenfalls an den Fehler angefügt.
 
-     Informationen zur Verwendung Ihres eigenen Editors, um in den Testeinstellungen zu verwendende Daten zu erfassen, finden Sie unter [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Informationen zur Verwendung Ihres eigenen Editors, um in den Testeinstellungen zu verwendende Daten zu erfassen, finden Sie unter [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
 11. Wenn Sie beim Abschluss eines Tests eine Protokolldatei auf Grundlage von Testeinstellungen des Benutzers sammeln möchten, müssen Sie eine *App.config*-Datei erstellen und diese zur Projektmappe hinzufügen. Diese Datei hat das folgende Format und muss den URI für den Adapter für diagnostische Daten enthalten, um diesen zu identifizieren. Ersetzen Sie "Unternehmen", "Produktname" und "Version" durch echte Werte.
 
@@ -261,11 +261,11 @@ Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einsch
 
      Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Weitere Informationen zum Installieren der Konfigurationsdatei finden Sie unter [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+     Weitere Informationen zum Installieren der Konfigurationsdatei finden Sie unter [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
 12. Erstellen Sie die Projektmappe, um das Assembly des Adapters für diagnostische Daten zu erstellen.
 
-13. Informationen zum Installieren eines benutzerdefinierten Editors finden Sie unter [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Informationen zum Installieren eines benutzerdefinierten Editors finden Sie unter [Vorgehensweise: Installieren eines benutzerdefinierten Adapters für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
 14. Weitere Informationen zum Konfigurieren der Testeinstellungen zum Verwenden einer Umgebung beim Ausführen von Tests finden Sie unter [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
@@ -289,4 +289,4 @@ Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einsch
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Vorgehensweise: Erstellen eines benutzerdefinierten Editors für Daten für Ihren Adapter für diagnostische Daten](../test/quickstart-create-a-load-test-project.md)

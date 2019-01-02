@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59e6c1879d5463682ee41d60e3928fce85c74a8d
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305142"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561852"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Erstellen Sie benutzerdefinierte Ansichten von Daten in Visual Studio-debugger
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger bietet viele Tools zum Überprüfen und ändern den Zustand des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
@@ -38,6 +38,5 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger bietet v
  Schnellansichten können Sie den Inhalt eines Objekts oder der Variable auf sinnvolle Weise anzeigen. In der Visual Studio-Debugger von eine Schnellansicht, bezieht sich auf die anderen Fenster, die Sie öffnen können, verwenden das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Schnellansicht Symbol") Symbol. Beispielsweise zeigt der HTML-Schnellansicht, wie eine HTML-Zeichenfolge interpretiert und in einem Browser angezeigt werden sollen. Sie können Schnellansichten sind über DataTips, die **Watch** Fenster der **"Auto"** Fenster und die **"lokal"** Fenster. Die **Schnellüberwachung** Dialogfeld enthält außerdem eine Schnellansicht. Weitere Informationen finden Sie unter [Create Custom Visualizers (Erstellen benutzerdefinierter Schnellansichten)](../debugger/create-custom-visualizers-of-data.md).
   
 ## <a name="see-also"></a>Siehe auch  
- [Grundlagen des Debuggens](../debugger/getting-started-with-the-debugger.md)   
- [Befehlsfenster](../ide/reference/command-window.md)   
+ [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Befehlsfenster](../ide/reference/command-window.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)

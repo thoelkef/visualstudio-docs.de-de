@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053168"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740350"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -257,7 +257,7 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 2.  W채hlen Sie im **Test-Explorer** die Testmethoden aus, und w채hlen Sie dann im Kontextmen체 **Ausgew채hlte Tests debuggen** aus.
 
-Erfahren Sie mehr 체ber das [Debuggen von Komponententests](../debugger/debugging-in-visual-studio.md).
+Erfahren Sie mehr 체ber das [Debuggen von Komponententests](../debugger/debugger-feature-tour.md).
 
 **Frage: Wenn ich TDD verwende, wie generiere ich dann Code aus meinen Tests?**
 

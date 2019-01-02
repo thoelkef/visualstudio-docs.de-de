@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562346"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Erfahren Sie mehr über Windows der Debugger in Visual Studio
 
@@ -40,7 +40,7 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |GPU-Threads|-|[Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Aufgaben|STRG+UMSCHALT+D, K|[Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)|
 |Python Debug Interactive|UMSCHALT+ALT+I|[Interaktive Python-REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM-Explorer|STRG+ALT+V, D|[Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|
 |Visuelle Echtzeitstruktur|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Echtzeit-Eigenschaften-Explorer|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 
 ## <a name="see-also"></a>Siehe auch
 
-[Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)
+[Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
