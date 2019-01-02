@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885758"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684677"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -33,12 +33,12 @@ Sie können fast jeden Vorgang in der Visual Studio-IDE als normaler Benutzer du
 |Bereich|Aufgabe|Weitere Informationen|
 |----------|----------| - |
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio](../install/install-visual-studio.md)|
-||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../ide/install-and-manage-local-content.md)|
+||Installieren, Aktualisieren oder Entfernen von lokalen Hilfeinhalten.|[Installieren und Verwalten von lokalen Hilfeinhalten](../help-viewer/install-manage-local-content.md)|
 |Werkzeugkasten|Hinzufügen von klassischen COM-Steuerelementen zur **Toolbox**.|[Werkzeugkasten](../ide/reference/toolbox.md)|
 |Erstellung|Verwenden von Postbuildereignissen, die eine Komponente registrieren.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Einschließen eines Registrierungsschritts beim Erstellen von C++-Projekten.||
 |Debuggen|Debuggen von Anwendungen, die mit höheren Berechtigungen ausgeführt werden.|[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)|
-||Debuggen von Anwendungen, die unter einem anderen Benutzerkonto ausgeführt werden, z.B. ASP.NET-Websites.|[Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Debuggen von Anwendungen, die unter einem anderen Benutzerkonto ausgeführt werden, z.B. ASP.NET-Websites.|[Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Debuggen in der Zone für XAML-Browseranwendungen (XBAP).|[WPF-Host (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Verwenden des Emulators zum Debuggen von Clouddienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Remotedebuggen](../debugger/remote-debugging.md)|

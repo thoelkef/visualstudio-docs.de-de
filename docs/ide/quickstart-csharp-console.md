@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158605"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441534"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Schnellstart: Erstellen Ihrer ersten C#-Konsolenanwendung mit Visual Studio
 
@@ -99,4 +99,4 @@ Fügen Sie Code hinzu, um die Anwendung anzuhalten, damit das Konsolenfenster ni
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie mehr über C# und die Visual Studio-IDE erfahren konnten. Wenn Sie noch mehr lernen möchten, fahren Sie mit den folgenden Tutorials fort.
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit einer C#-Konsolen-App in Visual Studio](tutorial-csharp-console.md)
+> [Erste Schritte mit einer C#-Konsolen-App in Visual Studio](../get-started/csharp/tutorial-console.md)

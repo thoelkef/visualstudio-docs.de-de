@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067977"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684881"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -124,5 +124,5 @@ Bei der Entwicklung einer Anwendung möchten Sie jederzeit in mehreren Codedatei
 
 - [Standardtastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Tutorial: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Tutorial: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](../get-started/csharp/tutorial-wpf.md)
 - [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
