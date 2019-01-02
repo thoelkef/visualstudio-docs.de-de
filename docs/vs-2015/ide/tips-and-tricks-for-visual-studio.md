@@ -1,5 +1,5 @@
 ---
-title: Tipps und Tricks für Visual Studio | Microsoft-Dokumentation
+title: Tipps und Tricks | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e640aa6676cec22bd9b124727be0cbe88c5c6cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051155"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Tipps und Tricks für Visual Studio
 
@@ -144,7 +144,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 ##  <a name="BKMK_ALM"></a> Anwendungslebenszyklus-Verwaltung
 
-Siehe dazu [Tastenkombinationen: Visual Studio Online, TFS-Webportal und Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Finden Sie unter [Tastenkombinationen: Visual Studio Online, TFS-Webportal und Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

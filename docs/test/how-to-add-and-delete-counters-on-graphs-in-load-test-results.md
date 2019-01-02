@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen und Löschen von Zählern zu bzw. aus Diagrammen in Auslastungstestergebnissen in Visual Studio
+title: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908800"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049939"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>How to: Add and Delete Counters on Graphs in Load Test Results
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 
 Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsindikatoren hinzuzufügen.
 
- ![Hinzufügen eines Zählers zu einem Diagramm](../test/media/ltest_selectcounter.png)
+![Hinzufügen eines Zählers zu einem Diagramm](../test/media/ltest_selectcounter.png)
 
- **Überlegungen zum Samplingintervall von Leistungsindikatoren**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Überlegungen zum Samplingintervall von Leistungsindikatoren**
 
- Die folgende Tabelle enthält Richtlinien für die Samplingraten:
+Wählen Sie basierend auf der Länge des Auslastungstests einen Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die gesammelte Datenmenge reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
 |Dauer des Auslastungstests|Empfohlene Samplingrate|
 |-|-----------------------------|
@@ -39,15 +41,15 @@ Sie können das **Indikatorenfenster** verwenden, um einem Diagramm Leistungsind
 |8 – 24 Stunden|30 Sekunden|
 |> 24 Stunden|60 Sekunden|
 
- **Überlegungen zum Einschließen von Details der zeitlichen Steuerung zur Erfassung von prozentualen Daten**
+**Überlegungen zum Einschließen von Details der zeitlichen Steuerung zur Erfassung von prozentualen Daten**
 
- In den Laufzeiteinstellungen im Auslastungstest-Editor ist eine Eigenschaft namens **Speicher für Details der zeitlichen Steuerung** verfügbar. Wenn die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aktiviert ist, werden die Zeiten für die Ausführung der einzelnen Tests, Transaktionen und Seiten beim Auslastungstest im entsprechenden Ergebnisrepository gespeichert. Dadurch können Daten für den 90. und 95. Prozentwert im **Auslastungstest-Analyzer** in den Tabellen „Tests“, „Transaktionen“ und „Seiten“ angezeigt werden.
+In den Laufzeiteinstellungen im Auslastungstest-Editor ist eine Eigenschaft namens **Speicher für Details der zeitlichen Steuerung** verfügbar. Wenn die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aktiviert ist, werden die Zeiten für die Ausführung der einzelnen Tests, Transaktionen und Seiten beim Auslastungstest im entsprechenden Ergebnisrepository gespeichert. Dadurch können Daten für den 90. und 95. Prozentwert im **Auslastungstest-Analyzer** in den Tabellen „Tests“, „Transaktionen“ und „Seiten“ angezeigt werden.
 
- Zum Aktivieren der Eigenschaft **Speicher für Details der zeitlichen Steuerung** sind zwei Optionen in den Laufzeiteinstellungseigenschaften verfügbar: **StatisticsOnly** und **AllIndividualDetails**. Mit beiden Optionen werden alle Einzeltests, Seiten und Transaktionen zeitlich gesteuert, und prozentuale Daten werden über die einzelnen Zeitsteuerungsdaten erfasst. Der Unterschied besteht darin, dass bei der Option **StatisticsOnly** die einzelnen Daten zur zeitlichen Steuerung aus dem Repository gelöscht werden, sobald die prozentualen Daten berechnet wurden. Dies reduziert den erforderlichen Speicherplatz im Repository, wenn Sie Details der zeitlichen Steuerung verwenden. Fortgeschrittene Benutzer möchten die Detaildaten der zeitlichen Steuerung jedoch möglicherweise mithilfe von SQL-Tools auf andere Weise verarbeiten. Wenn dies der Fall ist, sollte die Option **AllIndividualDetails** verwendet werden, damit die Detaildaten der zeitlichen Steuerung für diese Verarbeitung verfügbar sind. Wenn Sie die Eigenschaft auf **AllIndividualDetails** festlegen, können Sie zudem die Aktivitäten virtueller Benutzer nach Abschluss des Auslastungstests mithilfe des Diagramms für **Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** analysieren. Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Zum Aktivieren der Eigenschaft **Speicher für Details der zeitlichen Steuerung** sind zwei Optionen in den Laufzeiteinstellungseigenschaften verfügbar: **StatisticsOnly** und **AllIndividualDetails**. Mit beiden Optionen werden alle Einzeltests, Seiten und Transaktionen zeitlich gesteuert, und prozentuale Daten werden über die einzelnen Zeitsteuerungsdaten erfasst. Der Unterschied besteht darin, dass bei der Option **StatisticsOnly** die einzelnen Daten zur zeitlichen Steuerung aus dem Repository gelöscht werden, sobald die prozentualen Daten berechnet wurden. Dies reduziert den erforderlichen Speicherplatz im Repository, wenn Sie Details der zeitlichen Steuerung verwenden. Fortgeschrittene Benutzer möchten die Detaildaten der zeitlichen Steuerung jedoch möglicherweise mithilfe von SQL-Tools auf andere Weise verarbeiten. Wenn dies der Fall ist, sollte die Option **AllIndividualDetails** verwendet werden, damit die Detaildaten der zeitlichen Steuerung für diese Verarbeitung verfügbar sind. Wenn Sie die Eigenschaft auf **AllIndividualDetails** festlegen, können Sie zudem die Aktivitäten virtueller Benutzer nach Abschluss des Auslastungstests mithilfe des Diagramms für **Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** analysieren. Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Insbesondere bei langen Auslastungstests kann sehr viel Speicherplatz erforderlich sein, um Detaildaten der zeitlichen Steuerung im Ergebnisrepository für Auslastungstests zu speichern. Zudem nimmt das Speichern der Daten im Ergebnisrepository für Auslastungstests am Ende des Tests mehr Zeit in Anspruch, da die Daten bis zum Abschluss der Ausführung auf den Auslastungstests-Agents gespeichert werden. Bei der Beendigung des Auslastungstests werden die Daten im Repository gespeichert. Die Eigenschaft **Speicher für Details der zeitlichen Steuerung** ist standardmäßig aktiviert. Falls dies in Ihrer Testumgebung ein Problem ist, sollten Sie **Speicher für Details der zeitlichen Steuerung** auf **Keine** festlegen.
 
-Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>So zeigen Sie einen bestimmten Leistungsindikator in einem Auslastungstestdiagramm an
 
@@ -85,4 +87,4 @@ Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „
 ## <a name="see-also"></a>Siehe auch
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen](../test/how-to-create-custom-graphs-in-load-test-results.md)

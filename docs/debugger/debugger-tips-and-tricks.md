@@ -1,7 +1,7 @@
 ---
-title: Tipps und Tricks in Visual Studio-Debugger
+title: Tipps und Tricks, die im debugger
 description: Erfahren Sie mehr über einige der weniger bekannten Features von Visual Studio-Debugger unterstützt
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612726"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055224"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -32,7 +32,7 @@ Wenn Sie häufig auf Datentipps während des Debuggens zeigen, können Sie den D
 
 ![Anheften eines Datentipps](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Bearbeiten Sie Ihren Code und fortfahren Sie, Debuggen (c#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Ihren Code bearbeiten und Debuggen fortsetzen (C#, VB, C++)
 
 In den meisten Sprachen, die von Visual Studio unterstützt werden können Sie bearbeiten den Code in der Mitte einer Debugsitzung und mit dem Debuggen fortfahren. Um dieses Feature verwenden zu können, klicken Sie in Ihrem Code mit dem Cursor während der Debugger, nehmen Änderungen, und drücken Sie angehalten **F5**, **F10**, oder **F11** um das Debuggen fortzusetzen.
 
@@ -54,18 +54,18 @@ Ist es schwierig oder zeitaufwändig ist, um einen bestimmten Status in Ihrer ap
 
 3. Wenn Sie einen anderen Typ der Bedingung interessiert sind, wählen Sie **Filter** anstelle von **Bedingungsausdruck** in die **Haltepunkteinstellungen** (Dialogfeld), und führen Sie dann die Filter-Tipps.
 
-## <a name="change-the-execution-flow"></a>Ändern Sie den Ausführungsablauf
+## <a name="change-the-execution-flow"></a>Ändern des Ausführungsablaufs
 
 Mit dem Debugger auf eine einzige Zeile Code angehalten, verwenden Sie die Maus auf um den gelben Pfeilzeiger auf der linken Seite zu erfassen. Bewegen Sie den gelben Pfeil-Zeiger zu einem anderen Zeitpunkt im Code Ausführungspfad. Anschließend verwenden Sie F5, oder ein Befehl, der die app weiter auszuführen.
 
 ![Verschieben der Ausführungszeiger](../debugger/media/dbg-tour-move-the-execution-pointer.gif "der Ausführungszeiger verschieben")
 
-Ändern Sie den Ausführungsablauf, können Sie z. B. Ausführungspfade für anderen Code zu testen, oder führen Sie ohne Neustart des Debuggers den Code erneut ausführen.
+Durch Ändern des Ausführungsablaufs können Sie Aktionen ausführen wie das Testen verschiedener Pfade für die Codeausführung oder das erneute Ausführen von Code ohne Neustarten des Debuggers.
 
 > [!WARNING]
-> Häufig müssen Sie diese Funktion vorsichtig sein, und Sie wird eine Warnung in der QuickInfo angezeigt. Sie können andere Warnungen, zu sehen. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
+> Bei dieser Funktion müssen Sie häufig vorsichtig vorgehen. Sie werden durch eine Warnung in der QuickInfo auf Probleme aufmerksam gemacht. Möglicherweise werden Ihnen auch andere Warnungen angezeigt. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs, (c#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs (C#, Visual Basic)
 
 Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **Watch** Fenster. Aber wenn eine Variable den Gültigkeitsbereich verlässt in der **Watch** Fenster werden Sie feststellen, dass er ausgegraut ist. Der Wert einer Variablen kann in einigen app-Szenarien ändern, selbst wenn die Variable ist außerhalb des gültigen Bereichs, und möglicherweise möchten es so beobachten (z. B. eine Variable kann Garbage collection erhalten). Sie können die Variable verfolgen, indem Sie dafür im Objekt-ID erstellen die **Watch** Fenster.
 
@@ -145,7 +145,7 @@ Wählen Sie einen Vorgang in der Ansicht „Zusammenfassung“ aus, um mehr Deta
 
 Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt
+## <a name="modules_window"></a> Erhalten Sie immer vertrauter mit, wie der Debugger an Ihre app angefügt (C#, C++, Visual Basic F#)
 
 Zum Anfügen an der ausgeführten app lädt der Debugger Symboldateien (.pdb) generierte Dateien für die exakt demselben Build von der app, die Sie debuggen möchten. In einigen Fällen kann ein wenig wissen von Symboldateien hilfreich sein. Sie können überprüfen, wie Symboldateien, die mithilfe von Visual Studio lädt die **Module** Fenster.
 

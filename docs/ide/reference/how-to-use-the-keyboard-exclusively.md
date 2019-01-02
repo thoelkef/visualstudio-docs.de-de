@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818262"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388399"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
 
@@ -33,16 +33,15 @@ ms.locfileid: "49818262"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Toolbox-Steuerelemente
 
- Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Designer in der Toolbox einfügen.
+Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Designer in der Toolbox einfügen.
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>So können Sie über die Tastatur Steuerelemente aus der Toolbox einem Designer hinzufügen
+### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>So können Sie über die Tastatur Steuerelemente aus der Toolbox einem Designer hinzufügen
 
-1. Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.
+1. Wählen Sie in der Menüleiste **Ansicht** > **Toolbox** aus.
 
 2. Wechseln Sie mit STRG+NACH-OBEN-TASTE oder STRG+NACH-UNTEN-TASTE zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.
 
@@ -56,9 +55,9 @@ ms.locfileid: "49818262"
 
  Sie können zwischen den Optionen in einem Dialogfeld wechseln und die Optionseinstellungen mit der Tastatur ändern.
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>So legen Sie das Dialogfeld „Optionen“ mit der Tastatur fest
+### <a name="to-set-dialog-box-options-from-the-keyboard"></a>So legen Sie das Dialogfeld „Optionen“ mit der Tastatur fest
 
-1.  Verwenden Sie **TAB** oder **UMSCHALT + TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
+1.  Verwenden Sie **TAB** oder **SHIFT** + **TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
 
 2.  So ändern Sie die Einstellungen der Optionen
 
@@ -70,19 +69,19 @@ ms.locfileid: "49818262"
 
     -   Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.
 
-    -   Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownliste in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
+    -   Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownlisten in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
 
 ## <a name="window-and-file-navigation"></a>Navigation in Fenstern und Dateien
 
  Die IDE bietet mehrere Möglichkeiten, mit denen Sie mit der Tastatur zwischen Fenstern von Tools und Dokumenten wechseln können. Darüber hinaus können Sie Fenster mit der Tastatur zu verschiedenen Stellen verschieben und dort andocken.
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>So navigieren Sie mit der Tastatur zwischen Fenstern und Dateien in der IDE
+### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>So navigieren Sie mit der Tastatur zwischen Fenstern und Dateien in der IDE
 
 -   Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.
 
 -   Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie die EINGABETASTE, um zur markierten Datei zu navigieren.
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>So verschieben und docken Sie Toolfenster mit der Tastatur an
+### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>So verschieben und docken Sie Toolfenster mit der Tastatur an
 
 1.  Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.
 

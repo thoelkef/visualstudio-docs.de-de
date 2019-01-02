@@ -1,5 +1,5 @@
 ---
-title: Verbessern der Startzeit von Visual Studio
+title: Verbessern der Uptime
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884055"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067673"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -59,7 +59,7 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
 
 3. Wählen Sie eine der folgenden drei Optionen aus:
 
-   - **Standardverhalten verwenden:** Das Standardverhalten des Toolfensters. Wenn diese Option ausgewählt ist, wird die Startleistung nicht verbessert.
+   - **Standardverfahren verwenden:** Das Standardverhalten für das Toolfenster. Wenn diese Option ausgewählt ist, wird die Startleistung nicht verbessert.
 
    - **Fenster beim Start nicht anzeigen:** Das angegebene Toolfenster ist beim Öffnen von Visual Studio immer geschlossen, auch dann, wenn Sie es in einer früheren Sitzung offen gelassen hatten. Sie können das Toolfenster bei Bedarf über das entsprechende Menü öffnen.
 

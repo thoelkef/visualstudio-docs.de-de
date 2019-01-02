@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Problembehandlung bei nicht erfolgreichen Projektupgrades | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,45 +23,43 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6b50bbaaf7e5b018709f3cf0dece3c0ae38410f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911602"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064795"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. Wenn die Tipps in den folgenden Abschnitten Ihr spezifische Problem nicht beheben, ist Sie möglicherweise finden Sie weitere Informationen zu den TechNet [Wiki: Entwicklungsportal](http://go.microsoft.com/fwlink/?LinkId=254808).  
-  
-## <a name="the-project-does-not-run-because-files-are-not-found"></a>Das Projekt wird nicht ausgeführt, da Dateien nicht gefunden werden können  
- Eine Projektdatei enthält fest codierte Dateipfade, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Ausführung des Projekts verwendet werden, wenn Sie F5 drücken. Diese Pfade enthalten möglicherweise den Speicherort von devenv.exe und anderer erforderlicher Dateien. In einer aktualisierten Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden die Pfade dieser Dateien möglicherweise geändert.  
-  
-#### <a name="to-resolve-incorrect-file-paths"></a>So lösen Sie falsche Dateipfade auf  
-  
-1.  Öffnen Sie die Projektdatei in einem Texteditor.  
-  
-2.  Suchen Sie nach Dateipfaden, die falsch sein könnten, insbesondere solchen, die eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Versionsnummer enthalten.  
-  
-3.  Ändern Sie falsche Dateipfade so, dass diese auf die neuen Ziele zeigen.  
-  
-## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Das Projekt wird nicht erstellt, da Verweise nicht gültig sind  
- Wenn Sie ein Upgrade von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durchführen, wird möglicherweise auch die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version aktualisiert. Wenn das Projekt Verweise enthält, die in der neueren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version nicht mehr unterstützt werden, können diese nicht ordnungsgemäß aufgelöst werden. Dies ist bei Verweisen mit Versionsnummern besonders wahrscheinlich, z. B. `Microsoft.VisualStudio.Shell.Interop.8.0`.  
-  
- Wenn der Code zahlreiche ungültige Verweise aufweist, besteht die einfachste Lösung möglicherweise darin, die Funktion zur Festlegung von Zielversionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu verwenden, um das Ziel auf eine frühere Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] festzulegen.  
-  
-#### <a name="to-resolve-incorrect-references"></a>So lösen Sie falsche Verweise auf  
-  
-1. Öffnen Sie die Projektdatei in einem Texteditor.  
-  
-2. Öffnen Sie die Projekteigenschaften.  
-  
-3. Wählen Sie den richtigen **Zielframework** Wert. Sie können auch den Wert des `<TargetFrameworkVersion>`-Elements direkt in der Projektdatei ändern.  
-  
-   Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn Ihr Projekt in der IDE geladen wird, können Sie die Verweise aktualisieren, indem Sie mithilfe von **Projektmappen-Explorer** oder **Verweis-Manager** Dialogfeld.  
-  
-## <a name="see-also"></a>Siehe auch  
- [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   
- [Konvertieren in ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früheren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Version konvertiert werden. Wenn die Tipps in den folgenden Abschnitten Ihr spezifische Problem nicht beheben, ist Sie möglicherweise finden Sie weitere Informationen zu den TechNet [Wiki: Entwicklungs-Portal](http://go.microsoft.com/fwlink/?LinkId=254808).
 
+## <a name="the-project-does-not-run-because-files-are-not-found"></a>Das Projekt wird nicht ausgeführt, da Dateien nicht gefunden werden können
+ Eine Projektdatei enthält fest codierte Dateipfade, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Ausführung des Projekts verwendet werden, wenn Sie F5 drücken. Diese Pfade enthalten möglicherweise den Speicherort von devenv.exe und anderer erforderlicher Dateien. In einer aktualisierten Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden die Pfade dieser Dateien möglicherweise geändert.
+
+#### <a name="to-resolve-incorrect-file-paths"></a>So lösen Sie falsche Dateipfade auf
+
+1.  Öffnen Sie die Projektdatei in einem Texteditor.
+
+2.  Suchen Sie nach Dateipfaden, die falsch sein könnten, insbesondere solchen, die eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Versionsnummer enthalten.
+
+3.  Ändern Sie falsche Dateipfade so, dass diese auf die neuen Ziele zeigen.
+
+## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Das Projekt wird nicht erstellt, da Verweise nicht gültig sind
+ Wenn Sie ein Upgrade von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durchführen, wird möglicherweise auch die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version aktualisiert. Wenn das Projekt Verweise enthält, die in der neueren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version nicht mehr unterstützt werden, können diese nicht ordnungsgemäß aufgelöst werden. Dies ist bei Verweisen mit Versionsnummern besonders wahrscheinlich, z. B. `Microsoft.VisualStudio.Shell.Interop.8.0`.
+
+ Wenn der Code zahlreiche ungültige Verweise aufweist, besteht die einfachste Lösung möglicherweise darin, die Funktion zur Festlegung von Zielversionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu verwenden, um das Ziel auf eine frühere Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] festzulegen.
+
+#### <a name="to-resolve-incorrect-references"></a>So lösen Sie falsche Verweise auf
+
+1. Öffnen Sie die Projektdatei in einem Texteditor.
+
+2. Öffnen Sie die Projekteigenschaften.
+
+3. Wählen Sie den richtigen **Zielframework**-Wert aus. Sie können auch den Wert des `<TargetFrameworkVersion>`-Elements direkt in der Projektdatei ändern.
+
+   Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn das Projekt in der IDE geladen wird, können Sie die Verweise mithilfe des **Projektmappen-Explorers** oder des Dialogfelds **Verweis-Manager** aktualisieren.
+
+## <a name="see-also"></a>Siehe auch
+ [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konvertieren in ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

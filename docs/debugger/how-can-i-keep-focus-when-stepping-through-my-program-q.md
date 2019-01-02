@@ -1,6 +1,6 @@
 ---
-title: Wie kann der Fokus beim Durchlaufen des Programms beibehalten werden? | Microsoft-Dokumentation
-ms.custom: ''
+title: Behalten Sie den Fokus beim Durchlaufen des my-app | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280908"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064510"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Wie kann der Fokus beim Durchlaufen des Programms beibehalten werden?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Wie kann der Fokus beibehalten beim Durchlaufen des meine App?
 ## <a name="description"></a>Beschreibung  
  Das Programm hat Probleme mit der Aktivierung von Fenstern. Beim Durchlaufen des Programms mit dem Debugger kann das Problem nicht reproduziert werden, da das Programm den Fokus verliert. Wie kann dies vermieden werden?  
   
@@ -37,6 +37,6 @@ ms.locfileid: "44280908"
  Wenn Sie über einen zweiten Computer verfügen, verwenden Sie das Remotedebuggen. Sie können das Programm auf dem Remotecomputer verwenden, während der Debugger auf dem Host ausgeführt wird. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von nativem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
- [Fügen an laufende Prozesse an](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
+ [Attach to running processes (Anfügen an laufende Prozesse)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten'
+title: 'Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - XMLNodes control, adding to documents
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff7a1966c9107fcd2a60b14c21b6a2dfbda09033
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b27753590ea84fac6029bea0919a1aeda90543fa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258069"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647135"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  Wenn Sie Microsoft Office Word-Dokument ein sich wiederholendes XML-Schemaelement zuordnen, fügt Visual Studio automatisch eine <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement zum Dokument.  
   
- Informationen zum Zuordnen von XML-Schemaelemente nicht wiederholendes finden Sie unter [Vorgehensweise: Hinzufügen von XMLNode-Steuerelementen an Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+ Informationen zum Zuordnen von XML-Schemaelemente nicht wiederholendes finden Sie unter [Vorgehensweise: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement ist nicht verfügbar ist, aus der **Toolbox** oder **Datenquellen** Fenster, und Sie kann auch programmgesteuert erstellt werden.  

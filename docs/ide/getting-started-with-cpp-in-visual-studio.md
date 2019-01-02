@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit C++ in Visual Studio
+title: Erste Schritte mit C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 182f020ee5ca8132eb19647fc9f24c834544ac2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459672"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684352"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -156,5 +156,5 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen.
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Visual Studio-IDE für C++-Desktopentwicklung](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit C# oder Visual Basic](../get-started/csharp/tutorial-wpf.md)
 - [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md)

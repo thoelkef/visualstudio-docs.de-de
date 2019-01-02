@@ -14,17 +14,17 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], creating
 - Outlook [Office development in Visual Studio], form regions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673080"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441729"
 ---
 # <a name="create-outlook-form-regions"></a>Erstellen von Outlook-Formularbereichen
   Formularbereiche können zum Anpassen von Microsoft Office Outlook-Formularen verwendet werden. Visual Studio bietet erweiterte Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.  
@@ -136,7 +136,7 @@ ms.locfileid: "50673080"
   
  Wählen Sie ein Ereignis aus der Methodennamenliste oben im Code-Editor aus, um Ereignisse in einem Visual Basic-Projekt zu behandeln.  
   
- Um Ereignisse in einem C#-Projekt zu behandeln, abonnieren Sie Steuerelementereignisse in der Methode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Weitere Informationen finden Sie unter [Vorgehensweise: abonnieren und abbestellen von Ereignisabonnements &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
+ Um Ereignisse in einem C#-Projekt zu behandeln, abonnieren Sie Steuerelementereignisse in der Methode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Weitere Informationen finden Sie unter [Vorgehensweise: Abonnieren und abbestellen von Ereignisabonnements &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
   
  Sie können die Eigenschaften von Formularbereichen in der Methode `InitializeManifest` der Formularbereichsfactory-Klasse ändern.  
   
@@ -156,7 +156,7 @@ ms.locfileid: "50673080"
   
 |event|Beschreibung|  
 |-----------|-----------------|  
-|FormRegionInitializing|Tritt auf, bevor der Formularbereich initialisiert wird. Sie können die Bedingungen in diesem Ereignishandler überprüfen, um zu ermitteln, ob Outlook den Formularbereich anzeigen soll. Weitere Informationen finden Sie unter [Vorgehensweise: Outlook aus der Anzeige eines Formularbereichs zu verhindern, dass](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
+|FormRegionInitializing|Tritt auf, bevor der Formularbereich initialisiert wird. Sie können die Bedingungen in diesem Ereignishandler überprüfen, um zu ermitteln, ob Outlook den Formularbereich anzeigen soll. Weitere Informationen finden Sie unter [Vorgehensweise: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
 |FormRegionShowing|Tritt nach dem Erstellen einer Instanz des Formularbereichs, jedoch vor dem Anzeigen des Formularbereichs auf.|  
 |FormRegionClosed|Tritt auf, bevor der Formularbereich geschlossen wird.|  
   
@@ -182,12 +182,12 @@ ms.locfileid: "50673080"
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Erstellen Sie Richtlinien für Outlook-Formularbereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)|Enthält Informationen, mit denen Sie Formularbereiche optimieren und potenzielle Probleme vermeiden können.|  
-|[Gewusst wie: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Erfahren Sie, wie erstellen Sie einen Formularbereich, um eine Standard- oder benutzerdefiniertes Microsoft Office Outlook-Formular mit Erweitern der **neuer Outlook-Formularbereich** Assistenten.|  
+|[Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Erfahren Sie, wie erstellen Sie einen Formularbereich, um eine Standard- oder benutzerdefiniertes Microsoft Office Outlook-Formular mit Erweitern der **neuer Outlook-Formularbereich** Assistenten.|  
 |[Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Erläutert, wie angegeben wird, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem der Formularbereich der Nachrichtenklasse jedes Elements zugeordnet wird.|  
 |[Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)|Zeigt, wie ein benutzerdefinierter Formularbereich entworfen wird, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird.|  
-|[Exemplarische Vorgehensweise: Importieren eines Formularbereichs, das in Outlook entworfen wurde](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Zeigt, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Formularbereichs in ein Outlook VSTO-Add-in-Projekt importiert die **neuer Outlook-Formularbereich** Assistenten.|  
+|[Exemplarische Vorgehensweise: Importieren Sie einen, der in Outlook entworfenen Formularbereich](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Zeigt, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Formularbereichs in ein Outlook VSTO-Add-in-Projekt importiert die **neuer Outlook-Formularbereich** Assistenten.|  
 |[Zugriff auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)|Beschreibt, wie Sie Code zum Einblenden, Ausblenden oder Ändern von Steuerelementen in einem Formularbereich schreiben und Benutzern ermöglichen, den Code aus anderen Bereichen im Projekt mithilfe der Klasse `Globals` auszuführen.|  
-|[Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Zeigt, wie verhindert wird, dass Microsoft Office Outlook einen Formularbereich für ein bestimmtes Element anzeigt.|  
+|[Vorgehensweise: Verhindern der Anzeige eines Formularbereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Zeigt, wie verhindert wird, dass Microsoft Office Outlook einen Formularbereich für ein bestimmtes Element anzeigt.|  
 |Zeigt, wie auf das Outlook-Element zugegriffen wird, in dem ein Formularbereich angezeigt wird.|  
 |[Benutzerdefinierte Aktionen in Outlook-Formularbereichen](../vsto/custom-actions-in-outlook-form-regions.md)|Beschreibt, wie es Benutzern ermöglicht wird, auf ein Outlook-Element zu reagieren.|  
   

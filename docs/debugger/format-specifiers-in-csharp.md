@@ -1,7 +1,7 @@
 ---
-title: Die Formatbezeichner im Debugger (c#) | Microsoft-Dokumentation
+title: Die Formatbezeichner im Debugger (C#) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -27,20 +27,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e8605671d1c245826ce6d699e91795fcd7ee32e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756859"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305389"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in c# in Visual Studio-debugger
-Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird. Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und sogar in den Quellcodefenstern. Wenn Sie in einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem DataTip angezeigt. DataTips geben den Formatbezeichner in der DataTip-Anzeige wieder.  
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# in Visual Studio-Debugger
+Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch** mithilfe von Formatbezeichnern. Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, erscheint das Ergebnis einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) in der Anzeige des angegebenen Formats.  
   
- Zum Verwenden eines Formatbezeichners geben Sie den von einem Komma gefolgten Ausdruck ein. Fügen Sie nach dem Komma den entsprechenden Bezeichner hinzu.  
+ Um einen Formatbezeichner verwenden, geben Sie in des Variablen Ausdrucks gefolgt von einem Komma und den entsprechenden Bezeichner.  
   
-## <a name="using-format-specifiers"></a>Verwenden von Formatbezeichnern  
- Wenn Ihr Code folgendermaßen lautet:  
+## <a name="set-format-specifiers"></a>Satz von Formatbezeichnern  
+Wir verwenden den folgenden aus:   
   
 ```csharp  
 {  
@@ -50,16 +50,16 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
 }  
 ```  
   
- Hinzufügen der `my_var1` Variable dem Fenster "überwachen" (während des Debuggens **Debuggen > Windows > Überwachen > Überwachen 1**) und legen Sie die Anzeige auf hexadezimal (in der **sehen Sie sich** Fenster mit der rechten Maustaste in der Variablenwerts und Wählen Sie **Hexadezimale Anzeige**). Im Fenster **Überwachen** wird nun angezeigt, dass der Wert 0x0065 enthalten ist. Um diesen Wert als ganze Dezimalzahl und nicht als ganze Hexadezimalzahl auszudrücken, geben Sie in der Spalte "Name" nach dem Variablennamen den Dezimalformatbezeichner **, d**ein. In der Spalte "Wert" wird nun der Dezimalwert 101 angezeigt.  
+ Hinzufügen der `my_var1` Variable die **Überwachen** Fenster während des Debuggens **Debuggen** > **Windows** > **ansehen**  >  **Überwachen 1**. Als Nächstes mit der rechten Maustaste in der Variablenwerts, und wählen Sie **Hexadezimale Anzeige**. Jetzt die **Watch** Fenster zeigt den Wert 0 x 0065. Um diesen Wert als ganze Dezimalzahl und nicht in eine hexadezimale ganze Zahl anzuzeigen, fügen Sie dem Dezimalformatbezeichner **, d** in die **Namen** Spalte nach dem Variablennamen ein. Die **Wert** Spalte zeigt jetzt **101**.   
   
  ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
   
 ## <a name="format-specifiers"></a>Formatbezeichner  
- In der folgenden Tabelle wird der C#-Formatbezeichner angezeigt, die vom Debugger erkannt werden.  
+ Die folgende Tabelle beschreibt die C# Formatbezeichner für Visual Studio-Debugger.  
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Anzeige|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind.|Meldung "implizite funktionsevaluierung durch den Benutzer deaktiviert"|\<value>|  
+|ac|Erzwingen der Auswertung eines Ausdrucks, dies kann hilfreich sein, wenn implizite Auswertung von Eigenschaften und implizite Funktionsaufrufe deaktiviert ist.|Meldung „Implizite Funktionsevaluierung durch den Benutzer deaktiviert“|\<Wert>|  
 |T|Ganze Dezimalzahl|0x0065|101|  
 |dynamic|Zeigt das angegebene Objekt mit einer dynamischen Ansicht an.|Zeigt alle Member des Objekts einschließlich der dynamischen Ansicht an.|Zeigt nur die dynamische Ansicht an.|  
 |h|Ganze Hexadezimalzahl|61541|0x0000F065|  
@@ -67,8 +67,8 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
 |nse|Gibt das Verhalten, nicht-Format. Wertet den Ausdruck mit "Keine Nebeneffekte". Wenn der Ausdruck kann nicht interpretiert werden und nur durch eine Auswertung (z. B. auf ein Funktionsaufruf) aufgelöst werden kann, werden Sie stattdessen ein Fehler angezeigt.|Nicht zutreffend|Nicht zutreffend|
 |hidden|Zeigt alle öffentlichen und nicht öffentlichen Member an.|Zeigt öffentliche Member an.|Zeigt alle Member an.|  
 |raw|Zeigt ein Element so an, wie es im Knoten für Rohdatenelemente dargestellt wird. Nur für Proxyobjekte gültig.|Wörterbuch\<T >|Rohdatenansicht von Dictionary\<T >|  
-|results|Wird mit einer Variablen eines Typs, die "IEnumerable" oder "IEnumerable" implementiert\<T >, in der Regel das Ergebnis eines Abfrageausdrucks. Zeigt nur die das Abfrageergebnis enthaltenden Member an.|Zeigt alle Member an.|Zeigt die Elemente an, die die Bedingungen der Abfrage erfüllen.|  
+|results|Wird mit einer Variablen eines Typs, die "IEnumerable" oder "IEnumerable" implementiert\<T >, in der Regel das Ergebnis eines Abfrageausdrucks. Zeigt nur die das Abfrageergebnis enthaltenden Member an.|Zeigt alle Member an.|Zeigt die Member an, die die Bedingungen der Abfrage erfüllen.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Überwachen und Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)
+ [Watch and QuickWatch windows (Fenster „Überwachen“ und „Schnellüberwachung“)](../debugger/watch-and-quickwatch-windows.md)   
+ [Autos and Locals windows (Fenster „Auto“ und „Lokal“)](../debugger/autos-and-locals-windows.md)

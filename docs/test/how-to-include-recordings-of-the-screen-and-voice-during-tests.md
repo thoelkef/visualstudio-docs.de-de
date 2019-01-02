@@ -1,5 +1,5 @@
 ---
-title: Einschließen von Bildschirm- und Stimmaufzeichnungen Im Rahmen von Tests mit Testeinstellungen in Visual Studio
+title: Bildschirm- und Stimmaufzeichnung während der Testausführung
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321072"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894412"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen
 
@@ -25,6 +25,8 @@ Im Konfigurations-Editor in Visual Studio können Sie den Adapter für diagnosti
 > Bei der Bildschirm- und Stimmenaufzeichnung werden Konfigurationen mit mehreren Monitoren nicht unterstützt.
 
 Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für automatisierte Tests verwendet werden. Wenn Sie beispielsweise einen Test der programmierten UI remote ausführen, können Sie den Desktop aufzeichnen, um die Ausführung des Tests der programmierten UI anzuzeigen. Weitere Informationen dazu, wie Sie über eine Remoteverbindung eine Bildschirm- und eine Stimmaufzeichnung vornehmen können, finden Sie unter [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>So konfigurieren Sie Bildschirm- und Stimmenaufzeichnung für Ihre Testeinstellungen
 

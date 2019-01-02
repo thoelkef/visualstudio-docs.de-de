@@ -1,6 +1,6 @@
 ---
 title: Debuggen von Python-Code
-description: Eine exemplarische Vorgehensweise zu den spezifischen Debugfunktionen in Visual Studio für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
+description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561748"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -54,7 +55,7 @@ Eine Debugsitzung wird mit dem Befehl **Debuggen** > **Debuggen starten** der Sc
 
 Haltepunkte halten die Ausführung des Codes an einem markierten Punkt an, sodass Sie den Programmzustand überprüfen können. Legen Sie Haltepunkte fest, indem Sie auf den linken Rand des Code-Editors klicken oder indem Sie mit der rechten Maustaste auf eine Codezeile klicken und **Haltepunkt** > **Haltepunkt einfügen** auswählen. In jeder Zeile mit einem Haltepunkt wird ein roter Punkt angezeigt.
 
-![Haltepunkte in Visual Studio](media/debugging-breakpoints.png)
+![Breakpointanzeige in Visual Studio](media/debugging-breakpoints.png)
 
 Durch Klicken auf den roten Punkt oder durch Klicken mit der rechten Maustaste auf die Codezeile und Auswählen von **Haltepunkt** > **Haltepunkt löschen** wird der Haltepunkt entfernt. Mit dem Befehl **Haltepunkt** > **Haltepunkt deaktivieren** können Sie den Haltepunkt auch deaktivieren, ohne ihn zu löschen.
 
@@ -71,7 +72,7 @@ Beim Festlegen von Bedingungen können Sie auch **Aktion** auswählen und eine M
 
 Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene Möglichkeiten, den Code schrittweise auszuführen oder Codeblöcke auszuführen, bevor wieder unterbrochen wird. Diese Befehle sind an verschiedenen Stellen verfügbar, z.B. in der oberen Debugsymbolleiste, im Menü **Debuggen**, im Kontextmenü im Code-Editor sowie über Tastenkombinationen (nicht alle Befehle sind an all diesen Stellen verfügbar):
 
-| Feature | Tastatureingabe | Beschreibung  |
+| Feature | Tastatureingabe | Beschreibung |
 | --- | --- | --- |
 | **Continue** | **F5** | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
 | **Einzelschritt** | **F11** | Führt die nächste Anweisung aus und hält an. Wenn die nächste Anweisung ein Funktionsaufruf ist, hält der Debugger in der ersten Zeile der aufgerufenen Funktion an. |
@@ -83,31 +84,31 @@ Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene M�
 
 ### <a name="inspect-and-modify-values"></a>Überprüfen und Ändern von Werten
 
-Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das **Überwachungsfenster** verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Inspect variables (Variablen überprüfen)](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows).)
+Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das **Überwachungsfenster** verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Inspect variables (Variablen überprüfen)](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows).)
 
 Um einen Wert mithilfe von **DataTips** anzuzeigen, zeigen Sie einfach mit dem Mauszeiger auf eine beliebige Variable im Editor. Klicken Sie auf den Wert, um ihn zu ändern:
 
-![DataTips im Debugger](media/debugging-quick-tips.png)
+![DataTips, die im Visual Studio-Debugger angezeigt werden](media/debugging-quick-tips.png)
 
 Das **Auto**-Fenster (**Debuggen** > **Fenster** > **Auto**) enthält Variablen und Ausdrücke für die aktuelle Anweisung. Sie können auf die Wertspalte doppelklicken oder einen Wert auswählen und **F2** drücken, um den Wert zu bearbeiten:
 
-![Auto-Fenster im Debugger](media/debugging-autos-window.png)
+![Fenster „Auto“ im Visual Studio-Debugger](media/debugging-autos-window.png)
 
 Das **Lokalfenster** (**Debuggen** > **Fenster** > **Lokale Variablen**) zeigt alle Variablen, die sich im aktuellen Geltungsbereich befinden und bearbeitet werden können:
 
-![Fenster für lokale Variablen im Debugger](media/debugging-locals-window.png)
+![Fenster „Lokal“ im Visual Studio-Debugger](media/debugging-locals-window.png)
 
 Weitere Informationen zum **Auto-Fenster** und zum **Lokalfenster** finden Sie unter [Inspect variables in the Autos and Locals windows (Überprüfen von Variablen im Auto-Fenster und Lokalfenster)](../debugger/autos-and-locals-windows.md).
 
 Das **Überwachungsfenster** (**Debuggen** > **Fenster** > **Überwachen** > **Überwachen 1-4**) ermöglicht es Ihnen, beliebige Python-Ausdrücke einzugeben und die Ergebnisse anzuzeigen. Ausdrücke werden für jeden Schritt erneut ausgewertet:
 
-![Überwachungsfenster im Debugger](media/debugging-watch-window.png)
+![Überwachungsfenster im Visual Studio-Debugger](media/debugging-watch-window.png)
 
 Weitere Informationen zum Verwenden der **Überwachung** finden Sie unter [Set a watch on variables using the Watch and QuickWatch windows (Festlegen einer Überwachung von Variablen in den Fenstern „Überwachung“ und „Schnellüberwachung“)](../debugger/watch-and-quickwatch-windows.md).
 
 Beim Überprüfen eines Zeichenfolgenwerts (`str`, `unicode`, `bytes` und `bytearray` gelten für diesen Zweck als Zeichenfolgen) wird rechts neben dem Wert ein Lupensymbol angezeigt. Wenn Sie auf das Symbol klicken, wird der nicht in Anführungszeichen eingeschlossene Zeichenfolgenwert in einem Popup-Dialogfeld angezeigt. Es werden Zeilenumbrüche angezeigt und Sie können im Fenster scrollen: eine hilfreiche Funktion für lange Zeichenfolgen. Wenn Sie auf den nach unten weisenden Pfeil auf dem Symbol klicken, können Sie zudem Nur-Text-, HTML-, XML- und JSON-Schnellansichten auswählen:
 
-![Schnellansichten für Zeichenfolgen](media/debugging-string-visualizers.png)
+![Schnellansichten für Zeichenfolgen im Visual Studio-Debugger](media/debugging-string-visualizers.png)
 
 HTML-, XML- und JSON-Schnellansichten werden in separaten Popupfenstern mit Syntaxhervorhebung und Strukturansichten angezeigt.
 
@@ -115,13 +116,13 @@ HTML-, XML- und JSON-Schnellansichten werden in separaten Popupfenstern mit Synt
 
 Wenn während des Debuggens ein Fehler in Ihrem Programm auftritt, aber kein Ausnahmehandler dafür vorhanden ist, hält der Debugger am Punkt der Ausnahme an:
 
-![Popupfenster für Ausnahmen](media/debugging-exception-popup.png)
+![Popupfenster „Ausnahmen“ im Visual Studio-Debugger](media/debugging-exception-popup.png)
 
 An diesem Punkt können Sie den Programmzustand überprüfen, einschließlich der Aufrufliste. Wenn Sie jedoch den Code in Einzelschritten ausführen, wird die Ausnahme weiterhin ausgelöst, bis sie behandelt oder das Programm beendet wird.
 
 Der Menübefehl **Debuggen** > **Fenster** > **Ausnahmeeinstellungen** öffnet ein Fenster, in dem Sie **Python-Ausnahmen** erweitern können:
 
-![Fenster für Ausnahmen](media/debugging-exception-settings.png)
+![Fenster „Ausnahmen“ im Visual Studio-Debugger](media/debugging-exception-settings.png)
 
 Das Kontrollkästchen für jede Ausnahme steuert, ob der Debugger *immer* unterbricht, wenn die Ausnahme ausgelöst wird. Aktivieren Sie dieses Kontrollkästchen, wenn Sie bei einer bestimmten Ausnahme häufiger unterbrechen möchten.
 
@@ -133,11 +134,11 @@ Wenn Sie eine Ausnahme konfigurieren möchten, die in dieser Liste nicht angezei
 
 Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartprogramm, ohne Befehlszeilenargumente und ohne andere spezielle Pfade oder Bedingungen. Die Startoptionen können in den Debugeigenschaften des Projekts geändert werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus.
 
-![Debugeigenschaften des Projekts](media/debugging-project-properties.png)
+![Debugeigenschaften des Projekts im Visual Studio-Debugger](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Optionen für den Startmodus
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 | --- | --- |
 | **Python-Standardstartprogramm** | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten *python.exe*-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
 | **Webstartprogramm** | Startet Ihren Standardbrowser und ermöglicht das Debuggen von Vorlagen. Im Abschnitt [Debuggen von Webvorlagen](python-web-application-project-templates.md#debugging) finden Sie weitere Informationen. |
@@ -146,7 +147,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Ausführungsoptionen (Suchpfade, Startargumente und Umgebungsvariablen)
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 | --- | --- |
 | **Suchpfade** | Diese Werte entsprechen den im Knoten **Suchpfade** des **Projektmappen-Explorers** angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den **Projektmappen-Explorer** zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
 | **Skriptargumente** | Diese Argumente werden dem Befehl hinzugefügt, der zum Starten Ihres Skripts verwendet wird, und werden nach dem Dateinamen des Skripts angezeigt. Das erste Element hier ist für das Skript als `sys.argv[1]` verfügbar, das zweite als `sys.argv[2]` usw. |
@@ -166,7 +167,7 @@ Das **interaktive Python-Debugfenster** (**Debuggen** > **Fenster** > **Interakt
 
 Das **Fenster zum interaktiven Debuggen** unterstützt zusätzlich zu den [REPL-Standardbefehlen](python-interactive-repl-in-visual-studio.md#meta-commands) spezielle Metabefehle:
 
-| Befehl | Argumente | Beschreibung  |
+| Befehl | Argumente | Beschreibung |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
 | `$down`, `$d` | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach unten. |

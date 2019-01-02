@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220260"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389262"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
+
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
 
-> [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
+Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
 
+**Einstellungen anzeigen für**
 
- Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
-
- **Einstellungen anzeigen für**: zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.
+Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.
 
 -   **Text-Editor**
 
@@ -54,7 +53,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.
 
     > [!NOTE]
-    >  Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.
+    > Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.
 
 -   **Anweisungsvervollständigung**
 
@@ -73,21 +72,28 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.
 
     > [!NOTE]
-    >  Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.
+    > Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.
 
-**Standardwerte verwenden**: setzt die Schriftart- und Farbwerte des unter **Einstellungen anzeigen für** ausgewählten Listenelements zurück. Die Schaltfläche **Verwenden** wird angezeigt, wenn auch andere Anzeigeschemas ausgewählt werden können. Sie können z. B. zwischen zwei Schemas für den Drucker wählen.
+**Standardwerte verwenden**
 
-**Schriftart (fett markiert: Schriftarten mit fester Breite)**: Listet alle auf Ihrem System installierten Schriftarten auf. Wenn das Dropdownmenü zum ersten Mal angezeigt wird, ist die aktuelle Schriftart für das im Feld **Einstellungen anzeigen für** ausgewählte Element hervorgehoben. Schriftarten mit fester Breite – die im Editor einfacher ausgerichtet werden können – werden fett formatiert.
+Setzt die Schriftart- und Farbwerte des unter **Einstellungen anzeigen für** ausgewählten Listenelements zurück. Die Schaltfläche **Verwenden** wird angezeigt, wenn auch andere Anzeigeschemas ausgewählt werden können. Sie können z. B. zwischen zwei Schemas für den Drucker wählen.
 
-**Größe**: listet die verfügbaren Punktgrößen für die hervorgehobene Schriftart auf. Eine Änderung des Schriftgrads wirkt sich auf alle Einträge unter **Elemente anzeigen** für die Auswahl im Feld **Einstellungen anzeigen für** aus.
+**Schriftart (Fett bedeutet mit fester Breite formatiert)**
 
-**Elemente anzeigen**: listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern können.
+Listet alle auf Ihrem System installierten Schriftarten auf. Wenn das Dropdownmenü zum ersten Mal angezeigt wird, ist die aktuelle Schriftart für das im Feld **Einstellungen anzeigen für** ausgewählte Element hervorgehoben. Schriftarten mit fester Breite – die im Editor einfacher ausgerichtet werden können – werden fett formatiert.
+
+**Size**
+
+Listet die verfügbaren Punktgrößen für die hervorgehobene Schriftart auf. Eine Änderung des Schriftgrads wirkt sich auf alle Einträge unter **Elemente anzeigen** für die Auswahl im Feld **Einstellungen anzeigen für** aus.
+
+**Elemente anzeigen**
+
+Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern können.
 
 > [!NOTE]
 > Standardmäßig wird das Element **Nur-Text** angezeigt. Daher werden Eigenschaften, die **Nur-Text** zugewiesen sind, von anderen Anzeigeelementen zugewiesenen Eigenschaften überschrieben. Wenn Sie beispielsweise **Nur-Text** die Farbe Blau zuweisen und **Bezeichner** die Farbe Grün, werden alle Bezeichner in Grün angezeigt. In diesem Beispiel überschreiben die Eigenschaften für **Bezeichner** die Eigenschaften für **Nur-Text**.
 
-
- Hier einige Anzeigeelemente:
+Hier einige Anzeigeelemente:
 
 |Anzeigeelement|Beschreibung |
 |------------------|-----------------|
@@ -198,29 +204,48 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**XML-Text**|Nur-Text-Elementinhalt.|
 |**XSLT-Schlüsselwort**|XSLT-Elementnamen.|
 
- **Elementvordergrund**: listet die verfügbaren Farben auf, die für den Vordergrund des im Feld **Elemente anzeigen** ausgewählten Elements festgelegt werden können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+**Elementvordergrund**
 
- **Automatisch** Elemente können die Vordergrundfarbe von anderen Anzeigeelementen wie z.B. **Nur-Text** erben. Wenn Sie diese Option beim Ändern der Farbe eines geerbten Anzeigeelements verwenden, wird die Farbe der zugehörigen Anzeigeelemente ebenfalls automatisch geändert. Wenn Sie beispielsweise den Wert **Automatisch** für **Compilerfehler** ausgewählt und später die Farbe von **Nur Text** in Rot geändert haben, erbt **Compilerfehler** ebenfalls automatisch die Farbe Rot.
+Listet die verfügbaren Farben auf, die für den Vordergrund des im Feld **Elemente anzeigen** ausgewählten Elements gewählt werden können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
- **Standard** Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+**Automatisch**
 
- **Benutzerdefiniert**: zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe für das in der Liste „Elemente anzeigen“ ausgewählte Element festlegen können.
+Elemente können die Vordergrundfarbe von anderen Anzeigeelementen wie z.B. **Nur-Text** erben. Wenn Sie diese Option beim Ändern der Farbe eines geerbten Anzeigeelements verwenden, wird die Farbe der zugehörigen Anzeigeelemente ebenfalls automatisch geändert. Wenn Sie beispielsweise den Wert **Automatisch** für **Compilerfehler** ausgewählt und später die Farbe von **Nur Text** in Rot geändert haben, erbt **Compilerfehler** ebenfalls automatisch die Farbe Rot.
+
+**Default**
+
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+
+**Benutzerdefiniert**
+
+Zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe für das in der Liste „Elemente anzeigen“ ausgewählte Element festlegen können.
 
 > [!NOTE]
 > Die Möglichkeit zum Definieren benutzerdefinierter Farben kann durch die Farbeinstellungen des Bildschirms eingeschränkt sein. Wenn Ihr Computer beispielsweise auf 256 Farben festgelegt ist und Sie eine benutzerdefinierte Farbe im Dialogfeld **Farbe** auswählen, verwendet die IDE standardmäßig die ähnlichste verfügbare **Grundfarbe** und zeigt die Farbe Schwarz im Vorschaufeld **Farbe** an.
 
+**Elementhintergrund**
 
- **Elementhintergrund**: bietet eine Farbpalette, aus der Sie eine Hintergrundfarbe für das im Feld **Elemente anzeigen** ausgewählte Element festlegen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+Bietet eine Farbpalette, aus der Sie eine Hintergrundfarbe für das im Feld **Elemente anzeigen** ausgewählte Element wählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
- **Automatisch** Elemente können die Hintergrundfarbe von anderen Anzeigeelementen wie z.B. **Nur-Text** erben. Wenn Sie diese Option beim Ändern der Farbe eines geerbten Anzeigeelements verwenden, wird die Farbe der zugehörigen Anzeigeelemente ebenfalls automatisch geändert. Wenn Sie beispielsweise den Wert **Automatisch** für **Compilerfehler** ausgewählt und später die Farbe von **Nur Text** in Rot geändert haben, erbt **Compilerfehler** ebenfalls automatisch die Farbe Rot.
+**Automatisch**
 
- **Standard** Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+Elemente können die Hintergrundfarbe von anderen Anzeigeelementen wie z.B. **Nur-Text** erben. Wenn Sie diese Option beim Ändern der Farbe eines geerbten Anzeigeelements verwenden, wird die Farbe der zugehörigen Anzeigeelemente ebenfalls automatisch geändert. Wenn Sie beispielsweise den Wert **Automatisch** für **Compilerfehler** ausgewählt und später die Farbe von **Nur Text** in Rot geändert haben, erbt **Compilerfehler** ebenfalls automatisch die Farbe Rot.
 
- **Benutzerdefiniert**: zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe für das in der Liste „Elemente anzeigen“ ausgewählte Element festlegen können.
+**Default**
 
- **Fett**: Wählen Sie diese Option aus, um den Text von im Feld **Elemente anzeigen** ausgewählten Elementen fett formatiert anzuzeigen. Fett formatierter Text ist im Editor leichter zu identifizieren.
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
 
- **Beispiel**: zeigt ein Beispiel für den Schriftschnitt und die -größe sowie das Farbschema für die in den Feldern **Einstellungen anzeigen für** und **Elemente anzeigen** ausgewählten Elemente an. Sie können dieses Feld verwenden, um eine Vorschau der Ergebnisse anzuzeigen, während Sie mit verschiedenen Formatierungsoptionen experimentieren.
+**Benutzerdefiniert**
+
+Zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe für das in der Liste „Elemente anzeigen“ ausgewählte Element festlegen können.
+
+**Fett**
+
+Wählen Sie diese Option aus, um den Text von im Feld **Elemente anzeigen** ausgewählten Elementen fett formatiert anzuzeigen. Fett formatierter Text ist im Editor leichter zu identifizieren.
+
+**Beispiel**
+
+Zeigt ein Beispiel für den Schriftschnitt und -grad sowie das Farbschema für die in den Feldern **Einstellungen anzeigen für** und **Elemente anzeigen** ausgewählten Elemente an. Sie können dieses Feld verwenden, um eine Vorschau der Ergebnisse anzuzeigen, während Sie mit verschiedenen Formatierungsoptionen experimentieren.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,8 +1,10 @@
 ---
-title: Lassen Sie Visual Studio-Hilfe, die Sie schreiben C# Code mit weniger Fehlern
+title: Korrigieren von Fehlern durch das Schreiben von besserem C#-Code
 description: Erfahren Sie, wie, besseren Code mit weniger Fehlern schreiben
-ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.custom:
+- debug-experiments
+- seodec18
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948958"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051674"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Schreiben Sie besser C# code mithilfe von Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Beheben von Fehlern durch das Schreiben von besser C# code mithilfe von Visual Studio
 
-Debuggen von Code kann ein zeitraubender – und manchmal frustrierend--Task. Dauert einige Zeit, zu erfahren, wie auf effiziente Weise zu debuggen. Eine leistungsfähige IDE wie Visual Studio kann die Ihres Auftrags entscheidend vereinfachen. Eine IDE können Sie Ihren Code schneller zu debuggen und nicht nur, aber es kann auch helfen, die Sie besseren Code mit weniger Fehlern schreiben. Unser Ziel in diesem Artikel ist um einen ganzheitlichen Überblick über den Debugprozess, zu gewähren, damit Sie wissen werden, wenn Sie den Code-Analyzer einsetzen, verwenden Sie den Debugger, und andere Tools verwenden.
+Debuggen von Code kann ein zeitraubender – und manchmal frustrierend--Task. Dauert einige Zeit, zu erfahren, wie auf effiziente Weise zu debuggen kann, aber eine leistungsfähige IDE wie Visual Studio Ihr Auftrag viel einfacher. Eine IDE können Sie Ihren Code schneller zu debuggen und nicht nur, aber es kann auch helfen, die Sie besseren Code mit weniger Fehlern schreiben. Unser Ziel in diesem Artikel ist um einen ganzheitlichen Überblick über den Debugprozess, zu gewähren, damit Sie wissen werden, wenn Sie den Code-Analyzer einsetzen, verwenden Sie den Debugger, und andere Tools verwenden.  
 
 In diesem Artikel sprechen wir über die IDE, um den Debugsitzungen produktiver nutzen. Wir angeschnitten mehrere Tasks ein, z. B. ein:
 
@@ -42,7 +44,7 @@ Falls gewünscht, können Sie eine .NET Framework oder .NET Core-Konsolenanwendu
 Um die app zu erstellen, öffnen Sie Visual Studio, und wählen Sie **Datei > Neues Projekt**. Klicken Sie unter **Visual C#** , wählen Sie **Windows Desktop** oder **.NET Core**, und wählen Sie dann im mittleren Bereich eine **Konsolen-App**. Geben Sie einen Namen wie **Console_Parse_JSON** , und klicken Sie auf **OK**. Visual Studio erstellt daraufhin das Projekt. Fügen Sie der [Beispielcode](#sample-code) des Projekts *"Program.cs"* Datei.
 
 > [!NOTE]
-> Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die **.NET Desktopentwicklung** oder **plattformübergreifende Entwicklung mit .NET Core** Workload, wählen Sie dann **ändern**.
+> Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Suchen Sie die roten und grünen Wellenlinien!
 
@@ -113,7 +115,7 @@ Die grüne Wellenlinie verschwindet.
 
 Wenn Sie alle roten Wellenlinien behoben und behoben – oder mindestens untersucht: sind die grünen Wellenlinien Sie möchten Sie den Debugger zu starten, und führen Sie die app.
 
-Drücken Sie **F5** (**Debuggen > Debuggen starten**) oder die **Debuggen starten** Schaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten ") in der Debug-Symbolleiste.
+Drücken Sie die Taste **F5** (**Debuggen > Debuggen starten**), oder klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Debuggen starten** ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging").
 
 An diesem Punkt die Beispiel-app löst eine `SerializationException` Ausnahme (Common Language Runtime-Fehler). Unterfüllt, also die app, auf die Daten, die sie versuchen zu serialisieren. Da Sie die app im Debugmodus (angefügten Debugger) gestartet, führt des datenschnellansichten des Debuggers Ausnahmen-Hilfe Sie direkt auf den Code, der die Ausnahme ausgelöst hat, und bietet Ihnen eine nützliche Fehlermeldung an.
 
@@ -123,7 +125,7 @@ Die Fehlermeldung werden Sie angewiesen, den Wert `4o` kann nicht als ganze Zahl
 
 Wenn eine Ausnahme erreicht wird, müssen Sie ein paar Fragen gestellt (und beantwortet):
 
-* Ist diese Ausnahme wird nur auf einen Fehler, den Sie beheben können? Oder,
+* Ist diese Ausnahme wird nur auf einen Fehler, den Sie beheben können? Oder:
 
 * Ist diese Ausnahme, die auftreten können, dass Sie Ihre Benutzer?
 
@@ -407,4 +409,4 @@ namespace Console_Parse_JSON_DotNetCore
 In diesem Artikel haben Sie gelernt, wie zu vermeiden, und beheben viele häufige Fehler in Ihrem Code und wann Sie den Debugger verwenden. Als Nächstes erfahren Sie mehr über die Verwendung von Visual Studio-Debugger, um Fehler zu beheben.
 
 > [!div class="nextstepaction"]
-> [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md)
+> [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md)

@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit Leistungstools | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0a1d3a305ca19b36358ab28fbb794d56df2aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576442"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948906"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
-Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die beim Erfassen, Anzeigen und Analysieren der Codeleistung mithilfe der Visual Studio-Leistungstools angewendet werden.  
+
+Visual Studio bietet verschiedene Möglichkeiten zum Erfassen, Anzeigen und Analysieren von Codeleistungsdaten. In vielen Fällen empfiehlt sich jedoch, zunächst die Standardeinstellungen des **Leistungs-Assistenten** zu verwenden. Der Assistent sammelt Anwendungsstatistiken, die auf Leistungsprobleme in Ihrem Code hinweisen können.  
   
- In diesen Tools können Leistungsdaten auf unterschiedliche Weise erfasst und analysiert werden. In vielen Fällen ist die beste Methode, um zu beginnen, jedoch die Standardeinstellungen des Leistungs-Assistenten zu verwenden, der es Ihnen ermöglicht, Anwendungsstatistiken zu sammeln, die auf Leistungsprobleme in Ihrem Code zeigen können.  
+- Leistungswarnungen, die Sie bei allgemeinen Codierungsproblemen benachrichtigen, werden im Fenster **Fehlerliste** von Visual Studio angezeigt. Sie können von den Warnungen zum Quellcode und zu ausführlichen Hilfethemen navigieren, die Ihnen helfen, effizienteren Code zu schreiben.
+
+- Leistungsberichte bieten Einblicke in verschiedene Ebenen der Anwendungsstruktur, von Quellcodezeilen und Prozessen. Mit Leistungsberichten können App-Ausführungsdaten angezeigt werden, von aufrufenden und abrufenden Funktionen einer bestimmten Funktion bis hin zur Aufrufstruktur der gesamten App.  
   
--   *Leistungswarnungen* benachrichtigen Sie bei allgemeinen Codierungsproblemen. Warnungen werden im Fehlerfenster von Visual Studio angezeigt. Sie können von der Warnung zum Quellcode und zu ausführlichen Hilfethemen navigieren, die Ihnen helfen, effizienteren Code zu schreiben.  
+Wählen Sie **Debuggen** > **Leistungsprofiler**, und wählen Sie **Leistungs-Assistent**, um schnell ein Profil für ein Projekt, eine App oder eine ASP.NET-Website zu erstellen. Ausführliche Anweisungen finden Sie in der [Anleitung zur Leistungsprofilerstellung](../profiling/beginners-guide-to-cpu-sampling.md) und unter [Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+
+Wählen Sie **Debuggen** > **Profiler** > **Leistungs-Explorer**, um eine Leistungsprofilerstellungssitzung manuell anzugeben und zu konfigurieren. Verwenden Sie den Ordner **Ziele** und die **Eigenschaftenseiten** im **Leistungs-Explorer**, um Sitzungen zu konfigurieren. Anweisungen zur Vorgehensweise finden Sie unter [Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md).  
   
--   In den Leistungsberichten stehen Ansichten für verschiedene Ebenen der Anwendungsstruktur (von Quellcodezeilen bis hin zu Prozessen) sowie Programmausführungsdaten (von aufzurufenden und aufgerufenen Funktionen einer bestimmten Funktion bis hin zur Aufrufstruktur der gesamten Anwendung) zur Verfügung.  
+**Weitere Informationen finden Sie in den folgenden Artikeln:**
   
-## <a name="common-tasks"></a>Allgemeine Aufgaben  
-  
-|Aufgabe|Verwandter Inhalt|  
-|----------|---------------------|  
-|**Schnelles Erstellen eines Profils für eine Anwendung oder Website:** Mit dem Leistungs-Assistenten können Sie eine Profilerstellungssitzung für eine Visual Studio-Projektmappe oder eine Website konfigurieren und ausführen.|-   [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Erstellen eines Profils für eine Anwendung ohne Assistent:** Informationen zur Verwendung von Eigenschaftenseiten der Leistungssitzung, um eine Leistungssitzung zu erstellen.|-   [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md)|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Übersichten](../profiling/overviews-performance-tools.md)   
+ [Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)   
  [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
  [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)   
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

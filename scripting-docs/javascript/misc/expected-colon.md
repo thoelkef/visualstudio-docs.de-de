@@ -1,5 +1,5 @@
 ---
-title: 'Erwartete &#39;: &#39; | Microsoft Docs'
+title: Erwartet ':' | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c882c2da52de7a41c558f34f6912a0da1ad272a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633270"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802393"
 ---
-# <a name="expected-3939"></a>Erwartete &#39;: &#39;
-Sie haben versucht, einen Ausdruck mit der bedingten ternäre Operator erstellen, aber enthielt keinen Doppelpunkt zwischen dem zweiten und dritten Operanden. Ternäre Bedingungsoperators (drei Operanden) erfordert einen Doppelpunkt zwischen dem zweiten (True) und das dritte (False) Operanden.  
+# <a name="expected-"></a>":" erwartet
+Sie haben versucht, einen Ausdruck, der Verwendung von ternären bedingten Operators erstellen, aber keinen Doppelpunkt zwischen dem zweiten und dritten Operanden. Der ternäre (drei Operanden) bedingte Operator ist ein Doppelpunkt zwischen dem zweiten (True) und das dritte (False) Operanden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

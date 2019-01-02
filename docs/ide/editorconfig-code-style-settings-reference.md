@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967544"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769750"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -35,7 +35,7 @@ Am Ende dieses Artikels finden Sie ein [Beispiel für eine EDITORCONFIG-Datei](#
 
 Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
-- [Sprachkonventionen](#language-conventions)
+- [Sprachcodeformate](#language-code-styles)
 
    Regeln für die Sprache C# oder die Sprache Visual Basic. Beispielsweise können Sie Regeln hinsichtlich der Verwendung von `var` oder explizite Typen angeben, wenn Sie Variablen definieren oder Ausdruckskörpermember bevorzugen.
 
@@ -47,13 +47,13 @@ Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
    Regeln für die Benennung von Codeelementen. Sie können beispielsweise angeben, dass die `async`-Methoden mit „Async“ enden müssen.
 
-## <a name="language-conventions"></a>Sprachkonventionen
+## <a name="language-code-styles"></a>Sprachcodeformate
 
-Regeln für die Sprachkonventionen weisen folgendes Format auf:
+Regeln für die Sprachcodeformate weisen folgendes Format auf:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Für jede Sprachkonventionsregel müssen Sie entweder **TRUE** (dieses Format wird bevorzugt) oder **FALSE** (dieses Format wird nicht bevorzugt) und einen **Schweregrad** angeben. Der Schweregrad gibt die Ebene der Erzwingung für dieses Format an.
+Für jedes Sprachcodeformat müssen Sie entweder **TRUE** (dieses Format wird bevorzugt) oder **FALSE** (dieses Format wird nicht bevorzugt) und einen **Schweregrad** angeben. Der Schweregrad gibt die Ebene der Erzwingung für dieses Format an.
 
 In der folgenden Tabelle werden die möglichen Schweregrade und die zugehörigen Auswirkungen aufgeführt:
 
@@ -65,7 +65,7 @@ Schweregrad | Effekt
 `warning` | Zeigen Sie eine Compilerwarnung an, wenn gegen diese Formatregel verstoßen wird.
 `error` | Zeigen Sie einen Compilerfehler an, wenn gegen diese Formatregel verstoßen wird.
 
-Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
+Die folgende Liste enthält die zulässigen Einstellungen für Sprachcodeformate:
 
 - Einstellungen für das .NET-Codeformat
     - [Qualifizierer „This.“ und „Me.“](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

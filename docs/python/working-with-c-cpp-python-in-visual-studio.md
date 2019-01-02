@@ -1,22 +1,23 @@
 ---
-title: Arbeiten mit C++ und Python
+title: Erstellen von C++-Erweiterungen für Python
 description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, CPython und PyBind11 einschließlich Informationen zum Debuggen im gemischten Modus.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443648"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053476"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -135,7 +136,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
     > Wenn die Registerkarte „C/C++“ nicht in den Projekteigenschaften angezeigt wird, enthält das Projekt keine Dateien, die als C/C++-Quelldateien identifiziert werden. Dieser Zustand kann eintreten, wenn Sie eine Quelldatei ohne eine *.c*- oder *.cpp*-Erweiterung erstellen. Wenn Sie zuvor versehentlich `module.coo` statt `module.cpp` im Dialogfeld „Neues Element“ eingegeben haben, erstellt Visual Studio die Datei, legt den Dateityp jedoch nicht auf „C/C++-Code“ fest, was die Registerkarte „C/C++-Eigenschaften“ aktiviert. Solche falschen Identifizierungen können auch auftreten, wenn Sie die Datei mit `.cpp` umbenennen. Zum Festlegen des korrekten Dateityps klicken Sie mit der rechten Maustaste auf die Datei im **Projektmappen-Explorer**, wählen **Eigenschaften** aus und legen **Dateityp** auf **C/C++-Code** fest.
 
     > [!Warning]
-    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie die Option **Multithreaded-DLL (/MD)** festlegen, wird durch das Erstellen einer **Debugkonfiguration** der Fehler **C1189: Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht kompatibel mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG.)** ausgelöst. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen, um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, so wie später beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
+    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie die **Multithreaded-Debug-DLL (/MDd)**-Option festlegen, wird beim Erstellen einer **Debugkonfiguration** die folgende Fehlermeldung ausgegeben: **C1189: Py_LiMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel)**. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen, um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, wie im Folgenden beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
     >
     > Die /MDd-Option wird zum Erstellen der Python-Debugbinärdateien (z.B. *python_d.exe*) verwendet. Wenn Sie sie jedoch für eine Erweiterungs-DLL verwenden, wird weiterhin der Buildfehler mit `Py_LIMITED_API` verursacht.
 
@@ -265,7 +266,7 @@ Wenn Sie die Schritte im vorherigen Abschnitt abgeschlossen haben, haben Sie sic
 
 Beim C++-Modul treten möglicherweise aus den folgenden Gründen Fehler beim Kompilieren auf:
 
-- *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden.)** und/oder **C1083: Cannot open include file: „Python.h“: No such file or directory (C1083: Die Includedatei „Python.h“ kann nicht geöffnet werden: Datei oder Verzeichnis nicht vorhanden.)**): Stellen Sie sicher, dass der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *include*-Ordner Ihrer Python-Installation festgelegt ist. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
+- *Python.h* kann nicht gefunden werden (**E1696: cannot open source file „Python.h“ (E1696: Die Quelldatei „Python.h“ kann nicht geöffnet werden)** und oder **C1083: cannot open include file: „Python.h“: No such file or directory (Includedatei kann nicht geöffnet werden: „Python.h“. Datei oder Verzeichnis existiert nicht.)**): Überprüfen Sie, ob der Pfad in **C/C++** > **Allgemein** > **Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den *Include*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
 
 - Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker** > **Allgemein** > **Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den *libs*-Ordner Ihrer Python-Installation zeigt. Siehe Schritt 6 unter [Erstellen des wesentlichen C++-Projekts](#create-the-core-c-projects).
 
@@ -404,7 +405,7 @@ Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erste
 | --- | --- | --- | --- | --- |
 | C/C++-Erweiterungsmodule für CPython | 1991 | Standardbibliothek | [Ausführliche Dokumentation und Tutorials](https://docs.python.org/3/c-api/) Vollständige Kontrolle. | Kompilierung, Portabilität, Verweisverwaltung Hohe C-Kenntnisse. |
 | [PyBind11](https://github.com/pybind/pybind11) (empfohlen für C++) | 2015 |  | Einfache, reine Headerbibliothek zur Erstellung von Python-Bindungen von bestehendem C++-Code Wenige Abhängigkeiten PyPy-Kompatibilität | Neuer, weniger ausgefeilt Vermehrter Einsatz von C++11-Features Kurze Liste unterstützter Compiler (Visual Studio ist enthalten) |
-| Cython (empfohlen für C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python-ähnlich. Sehr fortgeschrittenen. Hohe Leistung. | Kompilierung, neue Syntax, neue Toolkette. |
+| Cython (empfohlen für C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Python-ähnlich. Sehr fortgeschrittenen. Hohe Leistung. | Kompilierung, neue Syntax, neue Toolkette. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funktioniert mit nur nahezu jedem C++-Compiler. | Große und komplexe Sammlung von Bibliotheken; enthält viele Problemumgehungen für alte Compiler. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |

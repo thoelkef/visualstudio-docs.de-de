@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Ausnahmen mit Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: ''
+title: Verwalten von Ausnahmen mit dem Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881689"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561524"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
@@ -47,7 +47,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
 
 Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Außerdem erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
 
-Wenn eine Ausnahme auftritt, schreibt der Debugger eine Ausnahmemeldung an das **Ausgabe** Fenster. Es kann die Ausführung unterbrechen, in den folgenden Fällen:
+Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster **Ausgabe**. Es kann die Ausführung unterbrechen, in den folgenden Fällen:
 
 - Eine Ausnahme wird ausgelöst, die verarbeitet wird.
 - Der Debugger ist konfiguriert, um die Ausführung zu unterbrechen, bevor ein Handler aufgerufen wird.
@@ -59,7 +59,7 @@ Wenn eine Ausnahme auftritt, schreibt der Debugger eine Ausnahmemeldung an das *
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> In Visual Basic-Anwendungen verwaltet der Debugger alle Fehler als Ausnahmen und, auch wenn Sie auf den Fehlerhandler der Error-Format verwenden.
+> In Visual Basic-Anwendungen werden alle Fehler vom Debugger als Ausnahmen behandelt. Dies ist auch dann der Fall, wenn Sie Fehlerhandler des Typs On Error verwenden.
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Teilen Sie den Debugger zu unterbrechen, wenn eine Ausnahme ausgelöst wird
 
@@ -74,7 +74,7 @@ In der **Ausnahmeeinstellungen** Fenster (**Debuggen > Windows > Ausnahmeeinstel
 
 Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster Debugger die Ausführung wird unterbrochen, wo die Ausnahme ausgelöst wird, unabhängig davon, ob es behandelt wird,. Die Ausnahme wird jetzt eine erste zufällige Ausnahme aufgerufen. Im Folgenden einige Szenarios:
 
-- In der folgenden C#-Konsolenanwendung, löst die Main-Methode eine **AccessViolationException** innerhalb einer `try/catch` Block.
+- In der folgenden C#-Konsolenanwendung löst die Main-Methode eine **AccessViolationException** in einem `try/catch`-Block aus.
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
 
   Es zeigt jedoch nicht die `here` Zeile.
 
-- Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
+- Ein C# -Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
 
   ```csharp
   public class Class1
@@ -125,7 +125,7 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
   }
   ```
 
-  Hier ist die Hauptmethode der Konsolenanwendung:
+  Dies ist die Hauptmethode der Konsolenanwendung:
 
   ```csharp
   static void Main(string[] args)
@@ -181,9 +181,9 @@ Zum Hinzufügen einer Ausnahme:
 Um eine Ausnahme, die GPU Arbeitsspeicher Ausnahmen JavaScript-Laufzeitausnahmen oder Win32-Ausnahmekategorien hinzufügen möchten, enthalten Sie den Fehlercode und die Beschreibung.
 
 > [!TIP]
-> Überprüfen Sie die Rechtschreibung! Die **Ausnahmeeinstellungen** Fenster prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Wenn die Eingabe **Sytem.UriTemplateMatchException**, erhalten Sie einen Eintrag für diese Ausnahme (und nicht für **System.UriTemplateMatchException**).
+> Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahmeeinstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Bei Eingabe von **Sytem.UriTemplateMatchException** erhalten Sie daher einen Eintrag für diese Ausnahme und nicht für **System.UriTemplateMatchException**.
 
-Ausnahmeeinstellungen werden in der Projektmappe SUO-Datei, beibehalten, damit sie auf eine bestimmte Lösung anwenden. Sie können spezifische ausnahmeeinstellungen nicht Lösungen wiederverwenden. Jetzt werden nur hinzugefügte Ausnahmen beibehalten; Gelöschte Ausnahmen nicht. Sie fügen eine Ausnahme aus, schließen und öffnen Sie die Projektmappe können, und die Ausnahme wird immer noch vorhanden sein. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.
+Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Jetzt werden nur hinzugefügte Ausnahmen beibehalten; Gelöschte Ausnahmen nicht. Sie fügen eine Ausnahme aus, schließen und öffnen Sie die Projektmappe können, und die Ausnahme wird immer noch vorhanden sein. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.
 
 Das Fenster **Ausnahmeeinstellungen** unterstützt generische Ausnahmetypen in C#, aber nicht in Visual Basic. Um bei Ausnahmen wie `MyNamespace.GenericException<T>`eine Unterbrechung vorzunehmen, müssen Sie die Ausnahme als **MyNamespace.GenericException`1**hinzufügen. D.h., wenn Sie eine Ausnahme wie im folgenden Code erstellt haben:
 
@@ -224,7 +224,7 @@ So fügen Sie bedingte Ausnahmen hinzu:
 ## <a name="see-also"></a>Siehe auch
 
 [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Gewusst wie: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Gewusst wie: Verwenden von nativen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Verwenden von laufzeitüberprüfungen ohne die C-Laufzeitbibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Tutorial: Informationen Sie zum Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+[Vorgehensweise: Use native run-time checks (Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen)](../debugger/how-to-use-native-run-time-checks.md)<br/>
+[Use run-time checks without the C run-time library (Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek)](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

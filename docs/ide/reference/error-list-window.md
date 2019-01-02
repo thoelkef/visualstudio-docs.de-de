@@ -17,19 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64707221fddaa2d6648d06e54a31bd98fc509b2e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949409"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389052"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 
 > [!NOTE]
-> In der Fehlerliste werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im Ausgabefenster kopieren. Drücken Sie zum Anzeigen des Ausgabefensters STRG+ALT+O. Siehe [Ausgabefenster](../../ide/reference/output-window.md).
+> In der **Fehlerliste** werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im **Ausgabe**-Fenster kopieren. Drücken Sie zum Anzeigen des **Ausgabe**-Fensters **STRG**+**ALT**+**O**. Siehe [Ausgabefenster](../../ide/reference/output-window.md).
 
- Sie können Apps mithilfe des Fensters **Fehlerliste** schneller entwickeln. Sie können z. B. folgende Aufgaben ausführen:
+Mit dem Fenster **Fehlerliste** können Sie die folgenden Aufgaben ausführen:
 
 -   Anzeigen von Fehlern, Warnungen und Meldungen, die beim Bearbeiten und Schreiben von Code ausgegeben werden.
 
@@ -43,61 +43,61 @@ ms.locfileid: "31949409"
 
 -   Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.
 
-Klicken Sie zum Anzeigen der **Fehlerliste** auf **Anzeigen/Fehlerliste** oder drücken Sie **STRG+\\+E**.
+Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus, oder drücken Sie **STRG**+**\\**+**E**.
 
 Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.
 
-Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.
-
-> [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Klicken Sie zum Ändern der Einstellungen auf **Extras / Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
+Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Halten Sie die **UMSCHALT**-Taste gedrückt, und klicken Sie auf eine andere Spaltenüberschrift, um erneut nach einer zusätzlichen Spalte zu sortieren. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.
 
 ## <a name="error-list-filters"></a>Fehlerlistenfilter
- Es gibt zwei Filtertypen in beiden Dropdownfeldern, einen auf der rechten Seite der Symbolleiste und einen auf der linken Seite der Symbolleiste. Die Dropdownliste auf der linken Seite der Symbolleiste gibt den zu verwendenden Satz von Codedateien an (**Gesamte Projektmappe**, **Geöffnete Dokumente**, **Aktuelles Projekt**, **Aktuelles Dokument**).
 
- Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:
+Es gibt zwei Filtertypen in beiden Dropdownfeldern, einen auf der rechten Seite der Symbolleiste und einen auf der linken Seite der Symbolleiste. Die Dropdownliste auf der linken Seite der Symbolleiste gibt den zu verwendenden Satz von Codedateien an (**Gesamte Projektmappe**, **Geöffnete Dokumente**, **Aktuelles Projekt**, **Aktuelles Dokument**).
+
+Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:
 
 1.  **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.
 
 2.  **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.
 
     > [!NOTE]
-    >  Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.
+    > Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.
 
 3.  **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.
 
-Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des Filters in der Titelleiste **Fehlerliste** angezeigt. Die Schaltflächen **Fehler**, **Warnungen** und **Meldungen** zeigen dann die Anzahl von gefilterten Elementen an, die zusammen mit der Gesamtanzahl von Elementen angezeigt werden. Beispielsweise geben die Schaltflächen x von y Fehler an. Wenn kein Filter angewendet wird, wird auf der Titelleiste nur „Fehlerliste“ angezeigt.
+Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des Filters in der Titelleiste **Fehlerliste** angezeigt. Die Schaltflächen **Fehler**, **Warnungen** und **Meldungen** zeigen dann die Anzahl von gefilterten Elementen an, die zusammen mit der Gesamtanzahl von Elementen angezeigt werden. Beispielsweise zeigen die Schaltflächen „x von y Fehler“ an. Wenn kein Filter angewendet wird, wird auf der Titelleiste nur „Fehlerliste“ angezeigt.
 
 Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.
 
 ## <a name="search"></a>Suchen
- Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.
+
+Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.
 
 ## <a name="save"></a>Speichern
- Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie die Fehler aus, die Sie kopieren möchten, klicken Sie mit der rechten Maustaste auf die Auswahl, und wählen Sie anschließend im Kontextmenü **Kopieren** aus. Sie können die Fehler dann in eine Datei einfügen. Wenn Sie die Fehler in ein Excel-Arbeitsblatt einfügen, werden die Felder als unterschiedliche Spalten angezeigt.
+
+Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie die Fehler aus, die Sie kopieren möchten, klicken Sie mit der rechten Maustaste auf die Auswahl, und wählen Sie anschließend im Kontextmenü **Kopieren** aus. Sie können die Fehler dann in eine Datei einfügen. Wenn Sie die Fehler in ein Excel-Arbeitsblatt einfügen, werden die Felder als unterschiedliche Spalten angezeigt.
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
- Schweregrad
 
- Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)**, **Warnung (inaktiv)**.
+Schweregrad
 
- Code
+Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)**, **Warnung (inaktiv)**.
 
- Zeigt den Fehlercode an.
+Code
 
- description
+Zeigt den Fehlercode an.
 
- Zeigt den Text des Eintrags an.
+Beschreibung 
 
- Projekt
+Zeigt den Text des Eintrags an.
 
- Zeigt den Namen des aktuellen Projekts an.
+Projekt
 
- Datei
+Zeigt den Namen des aktuellen Projekts an.
 
- Zeigt den Dateinamen an.
+Datei
 
- Linie
+Zeigt den Dateinamen an.
 
- Zeigt die Zeile an, in der das Problem aufgetreten ist.
+Linie
+
+Zeigt die Zeile an, in der das Problem aufgetreten ist.

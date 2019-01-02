@@ -1,5 +1,5 @@
 ---
-title: Indikatorensätze für Auslastungstests in Visual Studio
+title: Auslastungstest-Indikatorensätze
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 995cf0653886745d44ede4553e03f81ed45d37d7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379383"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049080"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Verwalten von Indikatorensätzen mithilfe des Auslastungstest-Editors
 
@@ -32,6 +32,8 @@ Wenn Sie mithilfe des **Assistenten für neuen Auslastungstest** einen Auslastun
 Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die Leistungsdaten erfasst werden sollen, und das Zuweisen von Indikatorensätzen, die auf jedem der Computer erfasst werden sollen. Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten.
 
 ![Verwalten von Indikatorensätzen](../test/media/loadtestmanagecountersets.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-manage-counter-sets"></a>So verwalten Sie Indikatorensätze
 

@@ -22,16 +22,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119200"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684742"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
 
-  Die Vorbereitung von Anwendungen für eine weltweite Verwendung wird als Lokalisierung bezeichnet. Bei der Lokalisierung werden die Ressourcen für einen bestimmten Kulturkreis übersetzt. Weitere Informationen finden Sie unter [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications). Dieses Thema bietet eine Übersicht über die Lokalisierung einer SharePoint-Lösung.  
+  Die Vorbereitung von Anwendungen für eine weltweite Verwendung wird als Lokalisierung bezeichnet. Bei der Lokalisierung werden die Ressourcen für einen bestimmten Kulturkreis übersetzt. Weitere Informationen finden Sie unter [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md). Dieses Thema bietet eine Übersicht über die Lokalisierung einer SharePoint-Lösung.  
   
  Für die Lokalisierung einer Lösung werden die hartcodierten Zeichenfolgen aus dem Code entfernt und in Ressourcendateien zusammengefasst. Eine Ressourcendatei ist ein [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]--basierte Datei mit einer *resx* Erweiterung. Die Ressourcendatei enthält die übersetzten Versionen der in der Lösung verwendeten Zeichenfolgen. Weitere Informationen finden Sie unter [Ressourcen in Anwendungen](http://go.microsoft.com/fwlink/?LinkID=155844).  
   
@@ -135,8 +135,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
   
 ## <a name="see-also"></a>Siehe auch
  [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)   
- [Vorgehensweise: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)   
- [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)   
- [Gewusst wie: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)   
- [Gewusst wie: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [Vorgehensweise: Lokalisieren von ASPX-markup](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Vorgehensweise: Lokalisieren von code](../sharepoint/how-to-localize-code.md)   
+ [Vorgehensweise: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)   
+ [Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

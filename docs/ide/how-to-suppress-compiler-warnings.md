@@ -1,5 +1,5 @@
 ---
-title: Unterdrücken von Compilerwarnungen in Visual Studio für Projekte und NuGet-Pakete
+title: Unterdrücken von Compilerwarnungen für Projekte und NuGet-Pakete
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948560"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060364"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compilerwarnungen
+# <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
 
-Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Protokollausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
+Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Ausführlichkeit erhalten Sie im Artikel [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F# #
 
@@ -88,7 +88,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
     ```
 
    > [!NOTE]
-   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Zum Beispiel:
+   > .NET Core-Projekte enthalten standardmäßig keine Eigenschaftengruppen für die Buildkonfiguration. Um Warnungen in einem .NET Core-Projekt zu unterdrücken, fügen sie der Datei den Abschnitt für die Buildkonfiguration manuell hinzu. Beispiel:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

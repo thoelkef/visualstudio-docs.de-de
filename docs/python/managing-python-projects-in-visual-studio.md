@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
-description: Der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python.
+description: Projekte in Visual Studio verwalten Abhängigkeiten zwischen Dateien sowie die Komplexität von Beziehungen in einer Anwendung.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220468"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068285"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -38,7 +39,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 |   |   |
 |---|---|
 | ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) mit einer Einführung in Python-Projekte an (2 Minuten, 17 Sekunden). |
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Sehen Sie sich auch [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten) (youtube.com, 8 Minuten und 55 Sekunden) an. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Weitere Informationen finden Sie zudem unter [Deep Dive: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
@@ -65,7 +66,7 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | Beschreibung  |
+| Vorlage | Beschreibung |
 | --- | --- |
 | [**Aus vorhandenem Python-Code**](#create-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | **Python-Anwendung** | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |

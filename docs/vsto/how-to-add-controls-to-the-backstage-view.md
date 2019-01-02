@@ -18,22 +18,22 @@ helpviewer_keywords:
 - Office button
 - Ribbon, menus
 - Microsoft Office Menu
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b775c7613b8cc0953e419b2546ec017c96e8454
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549076"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647115"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht
-  Können Sie dem Menüband-Designer zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei** Registerkarte. Beim Ausführen der Anwendung, Steuerelemente, die Sie zum Hinzufügen der **Datei** Registerkarte angezeigt werden, eine Gruppe namens **-Add-ins**.  
+  Können Sie zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf dem Menüband-Designer die **Datei** Registerkarte. Beim Ausführen der Anwendung Steuerelemente, die Sie zum Hinzufügen der **Datei** Registerkarte angezeigt werden, eine Gruppe namens **-Add-ins**.  
   
- Sie können keine Steuerelemente vor oder nach integrierten Steuerelementen positionieren, mithilfe des Menüband-Designers in Visual Studio. Ein integriertes Steuerelement ist ein Steuerelement, das bereits in der Backstage-Ansicht angezeigt wird. Wenn Sie Steuerelemente vor oder nach integrierten Steuerelementen positionieren möchten, müssen Sie eine Menüband-XML verwenden. Weitere Informationen zu **Menüband (XML)**, finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md). Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182189) und [anpassen die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ Sie können keine Steuerelemente vor oder nach integrierten Steuerelementen positionieren, indem Sie mithilfe des Menüband-Designers in Visual Studio. Ein integriertes Steuerelement ist ein Steuerelement, das bereits in der Backstage-Ansicht angezeigt wird. Wenn Sie Steuerelemente vor oder nach integrierten Steuerelementen positionieren möchten, müssen Sie eine Menüband-XML verwenden. Weitere Informationen zu **Menüband (XML)**, finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md). Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182189) und [anpassen die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -41,13 +41,13 @@ ms.locfileid: "34549076"
   
 1.  Öffnen Sie das Element "Menüband" in der Entwurfsansicht.  
   
-     Informationen zur Vorgehensweise beim Hinzufügen einer **Menüband (visueller Designer)** finden Sie dem Projekt [wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+     Informationen zur Vorgehensweise beim Hinzufügen einer **Menüband (visueller Designer)** dem Projekt, finden Sie unter [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Klicken Sie im Menüband-Designer auf die **Datei** Registerkarte.  
   
-     Menü-Designer wird angezeigt. Diese Entwurfsoberfläche enthält keine Steuerelemente.  
+     Ein Menü-Designer wird angezeigt. Diese Entwurfsoberfläche ist keine Steuerelemente enthalten.  
   
-3.  Aus der **Steuerelemente für Office-Menübänder** auf der Registerkarte die **Toolbox**, ziehen Sie eines der folgenden Steuerelemente auf der Designer im Menü:  
+3.  Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eines der folgenden Steuerelemente auf dem Menü-Designer:  
   
     -   Schaltfläche  
   
@@ -63,7 +63,7 @@ ms.locfileid: "34549076"
   
     -   ToggleButton  
   
-4.  Ziehen Sie Steuerelemente auf das Menü an neue Positionen verschieben.  
+4.  Ziehen Sie Steuerelemente, um sie im Menü an neue Positionen zu verschieben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   

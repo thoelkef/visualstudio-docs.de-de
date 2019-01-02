@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Aufzeichnungs-Plug-Ins für Webleistungstests in Visual Studio
+title: Erstellen eines Aufzeichnungs-Plug-Ins für Webleistungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909771"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064626"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
 Das <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> ermöglicht das Ändern eines aufgezeichneten Webleistungstests. Die Änderung wird vorgenommen, nachdem Sie in der Symbolleiste der **Webleistungstest-Aufzeichnung** auf **Beenden** klicken, jedoch vor dem Speichern und Anzeigen des Tests im Webleistungstest-Editor.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Ein Aufzeichnungs-Plug-In ermöglicht Ihnen, Ihre eigene benutzerdefinierte Korrelation auf dynamische Parameter auszuführen. Durch die integrierte Korrelationsfunktion erkennen Webleistungstests die dynamischen Parameter in der Webaufzeichnung nach ihrer Ausführung oder bei Auswahl der Option **Dynamische Parameter auf Webtestparameter hochstufen** in der Symbolleiste des **Webleistungstest-Editors**. Die integrierte Erkennungsfunktion findet jedoch nicht immer alle dynamischen Parameter. Eine Sitzungs-ID, deren Wert normalerweise innerhalb von 5 bis 30 Minuten geändert wird, wird z. B. nicht gefunden. Daher müssen Sie den Korrelationsprozess manuell ausführen.
 
@@ -109,7 +111,7 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, speichern Sie die sich e
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >

@@ -1,6 +1,6 @@
 ---
-title: Navigieren im Code mit Visual Studio-Debugger | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+title: Navigieren im Code mit dem Debugger | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826737"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068272"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
-Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [besser schreiben C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
+Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
   
 ## <a name="basic-debugging"></a>Debuggen – Grundlagen  
 
 Um Ihre app mit dem angefügten Debugger zu starten, drücken Sie die **F5**Option **Debuggen** > **Debuggen starten**, oder wählen Sie den grünen Pfeil in der Visual Studio-Symbolleiste.  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Grundlagen&#95;starten&#95;Debuggen](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 Während des Debuggens, zeigt eine gelbe Hervorhebung die Codezeile, die weiter ausgeführt wird.  
   
@@ -41,7 +41,7 @@ Die meisten Debuggerfenster, z. B. die **Module** und **Watch** Windows stehen n
 
 Klicken Sie im Unterbrechungsmodus befindet app-Ausführung wird angehalten, während die Funktionen, Variablen, und Objekte im Speicher verbleiben. Sie können der Elemente-Positionen und Zustände, Suchen nach Verstößen oder Fehlern überprüfen. Bei einigen Projekttypen können Sie auch die app im Unterbrechungsmodus Anpassungen vornehmen. Video mit diese Funktionen, finden Sie unter [erste Schritte mit dem Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Wenn die im Code unterbrochen wird, das keine Quell- oder Symboldateien (*PDB*) Dateien, die geladen werden, zeigt der Debugger eine **Quelle wurde nicht gefunden** oder **keine Symbole gefunden** Seite, die Ihnen helfen kann Suchen Sie und Laden Sie die Dateien. Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Dateien Symbol- oder Quelldateien nicht laden können, können Sie immer noch Debuggen die Assemblyanweisungen in die **Disassembly** Fenster. 
+Wenn die im Code unterbrochen wird, das keine Quell- oder Symboldateien (*PDB*) Dateien, die geladen werden, zeigt der Debugger eine **Quelle wurde nicht gefunden** oder **keine Symbole gefunden** Seite, die Ihnen helfen kann Suchen Sie und Laden Sie die Dateien. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Dateien Symbol- oder Quelldateien nicht laden können, können Sie immer noch Debuggen die Assemblyanweisungen in die **Disassembly** Fenster. 
 
 Sie haben keine immer zum Starten des Debuggings, indem Sie eine app am Anfang starten. Drücken Sie **F11** zu [Einzelschritte in Code](#BKMK_Step_into__over__or_out_of_the_code), drücken Sie die **F10** zu [überspringen](#BKMK_Step_over_Step_out), oder [führen Sie an einem bestimmten Speicherort oder Funktion](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
 
@@ -55,7 +55,7 @@ Wenn Sie den Einstiegspunkt in Ihrer app finden möchten, beginnen Sie mit **F10
 
 Verwenden Sie zum Beenden in jeder Zeile des Codes oder der Anweisung, die während des Debuggens **Debuggen** > **Einzelschritt**, oder drücken Sie **F11**.  
 
-Der Debugger nacheinander codeanweisungen, nicht physische Zeilen. Z. B. eine `if` Klausel kann in einer Zeile geschrieben werden:  
+Der Debugger nacheinander codeanweisungen, nicht physische Zeilen. Beispielsweise kann eine `if`-Klausel in eine Zeile geschrieben werden:  
   
   ```csharp  
   int x = 42;  
@@ -93,13 +93,13 @@ Sie können aber auch direkt in einer bestimmten Position oder Funktion ausgefü
   
 Um einen einfachen Haltepunkt im Code festzulegen, klicken Sie auf den äußeren linken Rand neben der Codezeile, in dem Ausführung angehalten werden soll. Sie können auch auswählen, die Zeile, und drücken Sie **F9**Option **Debuggen** > **Haltepunkt ein/aus**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt**  >  **Haltepunkt einfügen**. Der Haltepunkt wird als ein roter Punkt am linken Rand neben der Codezeile angezeigt. Der Debugger hält die Ausführung, kurz bevor die Zeile ausgeführt wird.
   
-![Festlegen eines Haltepunkts](../debugger/media/dbg_basics_setbreakpoint.png "Festlegen eines Haltepunkts")  
+![Breakpoint festlegen](../debugger/media/dbg_basics_setbreakpoint.png "Set a breakpoint")  
   
 Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Weitere Informationen finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
 ### <a name="run-to-a-function-breakpoint"></a>Führen Sie auf einen Funktionshaltepunkt  
 
-Sie können feststellen, dass den Debugger ausgeführt, bis er eine bestimmte Funktion erreicht. Sie können die Funktion anhand des Namens angeben oder können Sie es in der Aufrufliste auswählen.  
+Sie können feststellen, dass den Debugger ausgeführt, bis er eine bestimmte Funktion erreicht. Sie können die Funktion anhand ihres Namens angeben oder in der Aufrufliste auswählen.  
   
 **Nach dem Namen eines Funktions-Haltepunkts an**
 
@@ -131,7 +131,7 @@ Ausführen bis zur Cursorposition, im Quellcode oder die **Aufrufliste** Fenster
 
 Während im Debugger angehalten wird, können Sie eine Anweisung im Quellcode zeigen oder **Disassembly** , und wählen die **Ausführung bis hier ausführen** grünen Pfeil. Mithilfe von **Ausführung bis Klick** entfällt die Notwendigkeit, einen temporären Haltepunkt festlegen.
 
-![Ausführung bis Klick](../debugger/media/dbg-run-to-click.png "Ausführung bis Klick") 
+![Ausführung bis Klick](../debugger/media/dbg-run-to-click.png "Run to Click") 
 
 > [!NOTE]
 > **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -183,9 +183,9 @@ Um Microsoft-Symbole laden zu können, finden Sie unter [Orte für Symboldateien
 1. In der **Module** Fenster, Sie können feststellen, die Module sind Symbole geladen, der **Symbolstatus** Spalte. Mit der rechten Maustaste in des Moduls, das Sie verwenden möchten, Laden von Symbolen für, und wählen Sie **Symbole laden**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code  
- Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** > **Optionen**. Auf der **Debuggen** > **allgemeine** Deaktivieren der **Schritt Eigenschaften und Operatoren überspringen (nur verwaltet)** Kontrollkästchen.
+ Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** > **Optionen**. Deaktivieren Sie auf der Seite **Debuggen** > **Allgemein** das Kontrollkästchen **Eigenschaften und Operatoren überspringen (nur verwaltet)**.
 
 ## <a name="see-also"></a>Siehe auch
- [Was ist das Debuggen?](../debugger/what-is-debugging.md)  
- [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
+ [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md) 

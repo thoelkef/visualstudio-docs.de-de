@@ -1,6 +1,7 @@
 ---
-title: 'Tutorial: Informationen zu Flask in Visual Studio – Schritt 1'
-description: Eine exemplarische Vorgehensweise zu Grundlagen von Flask im Kontext von Visual Studio-Projekten.
+title: 'Tutorial zu Flask in Visual Studio, Schritt 1: Grundlagen für Flask'
+titleSuffix: ''
+description: In diesem Artikel finden Sie eine exemplarische Vorgehensweise zu den Grundlagen von Flask im Kontext von Visual Studio-Projekten sowie Voraussetzungen, Git und virtuellen Umgebungen.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029065"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066638"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -59,8 +61,8 @@ Die Python-Entwicklung wird in Visual Studio für Mac derzeit nicht unterstützt
     - **Name**: Legen Sie den Namen des Visual Studio-Projekts auf **BasicProject** fest. Dieser Name wird auch für das Flask-Projekt verwendet.
     - **Speicherort**: Geben Sie einen Speicherort an, an dem die Visual Studio-Projektmappe und das -Projekt erstellt werden sollen.
     - **Projektmappenname**: Legen Sie den Namen auf **LearningFlask** fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
-    - **Projektmappenverzeichnis erstellen**: Behalten Sie die Standardaktivierung bei.
-    - **Neues Git-Repository erstellen**: Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
+    - **Projektmappenverzeichnis erstellen:** Übernehmen Sie die Einstellungen (den Standardwert).
+    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
 
 1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld **Dieses Projekt erfordert externe Pakete** angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine *requirements.txt*-Datei enthält, die auf das neueste Flask-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 
@@ -68,7 +70,7 @@ Die Python-Entwicklung wird in Visual Studio für Mac derzeit nicht unterstützt
 
 1. Wählen Sie die Option **I will install them myself (Ich führe die Installation selbst durch)** aus. In einem nächsten Schritt werden Sie die virtuelle Umgebung erstellen, damit sie auch sicher aus der Quellcodeverwaltung ausgeschlossen ist. (Die Umgebung kann immer aus *requirements.txt* erstellt werden.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Schritt 1-2: Überprüfen der Git-Steuerelemente und Veröffentlichen in einem Remoterepository
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Schritt 1.2: Überprüfen der Git-Steuerelemente und Veröffentlichen in einem Remoterepository
 
 Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstellen** ausgewählt haben, wird für das Projekt bereits ein Commit für die lokale Quellcodeverwaltung ausgeführt, sobald der Erstellungsvorgang abgeschlossen ist. In diesem Schritt können Sie sich mit den Git-Steuerelementen in Visual Studio und dem **Team Explorer**-Fenster vertraut machen, in dem Sie an der Quellcodeverwaltung arbeiten werden.
 
@@ -106,13 +108,13 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
 Antwort: Zunächst erhalten Sie durch die Verwendung der Quellcodeverwaltung von Beginn an eine regelmäßige externe Sicherung Ihres Projekts, insbesondere bei gleichzeitiger Verwendung eines Remoterepositorys. Im Gegensatz zur Verwaltung eines Projekts nur in einem lokalen Dateisystem bietet die Quellcodeverwaltung auch einen vollständigen Änderungsverlauf und die einfache Möglichkeit, eine einzelne Datei oder das gesamte Projekt in einem früheren Zustand wiederherzustellen. Über den Änderungsverlauf kann die Ursache von Regressionen (fehlgeschlagenen Tests) ermittelt werden. Bei der Mitarbeit von mehreren Personen an einem Projekt ist die Quellcodeverwaltung zudem wichtig für die Verwaltung von Überschreibungen und bei der Konfliktauflösung. Und schließlich ermöglicht die Quellcodeverwaltung, die im Grunde eine Form der Automatisierung darstellt, die Automatisierung von Builds, Tests sowie der Releaseverwaltung. Sie stellt den ersten Schritt bei der Verwendung von DevOps für ein Projekt dar. Und da die Einstiegsbarrieren so niedrig sind, gibt es keinen Grund, die Quellcodeverwaltung nicht von Beginn an zu verwenden.
 
-Weitere Erläuterungen zur Automatisierung durch die Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem MSDN Magazine-Artikel für mobile Apps, der auch für Web-Apps gilt.
+Weitere Informationen zu automatisierter Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem Artikel im MSDN-Magazin, in dem es um mobile Apps, aber auch um Web-Apps geht.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Frage: Kann ich verhindern, dass Visual Studio für ein neues Projekt automatisch einen Commit ausführt?
 
 Antwort: Ja. Wenn Sie die automatische Ausführung eines Commits deaktivieren möchten, wechseln Sie im **Team Explorer** zur Seite **Einstellungen**, und klicken Sie auf **Git** > **Globale Einstellungen**. Deaktivieren Sie die Option **Änderungen nach Mergevorgängen standardmäßig committen**, und klicken Sie anschließend auf **Aktualisieren**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Schritt 1-3: Erstellen der virtuellen Umgebung und Ausschließen aus der Quellcodeverwaltung
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Schritt 1.3: Erstellen der virtuellen Umgebung und Ausschließen aus der Quellcodeverwaltung
 
 Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können Sie die virtuelle Umgebung mit den für das Projekt erforderlichen Flask-Paketen erstellen. Anschließend können Sie im **Team Explorer** den Umgebungsordner aus der Quellcodeverwaltung ausschließen.
 
@@ -146,11 +148,11 @@ Antwort: Eine virtuelle Umgebung ist eine hervorragende Möglichkeit, die genaue
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Frage: Wie entferne ich eine virtuelle Umgebung, für die bereits ein Commit für die Quellcodeverwaltung ausgeführt wurde?
 
-Antwort: Bearbeiten Sie zuerst die *.gitignore*-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z.B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben **.gitignore**.)
+Antwort: Bearbeiten Sie zuerst die *GITIGNORE*-Datei, um den Ordner auszuschließen. Suchen Sie dazu den Abschnitt am Ende mit dem Kommentar `# Python Tools for Visual Studio (PTVS)`, und fügen Sie eine neue Zeile für den Ordner der virtuellen Umgebung hinzu, z. B. `/BasicProject/env`. (Da die Datei im **Projektmappen-Explorer** in Visual Studio nicht angezeigt wird, öffnen Sie sie direkt über den Menübefehl **Datei** > **Öffnen** > **Datei**. Sie können die Datei auch über den **Team Explorer** öffnen: Klicken Sie dazu auf der Seite **Einstellungen** auf die Option **Repositoryeinstellungen**, und wechseln Sie zum Abschnitt **Ignore- und Attributdateien**. Klicken Sie anschließend auf den Link **Bearbeiten** neben **.gitignore**.)
 
 Öffnen Sie nun ein Befehlsfenster. Navigieren Sie zum Ordner (z.B. *BasicProject*), der den Ordner für die virtuelle Umgebung enthält (z.B. *env*), und führen Sie `git rm -r env` aus. Führen Sie dann für diese Änderungen einen Commit von der Befehlszeile (`git commit -m 'Remove venv'`) oder von der Seite **Änderungen** im **Team Explorer** aus.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Schritt 1-4: Überprüfen der Codebausteine
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Schritt 1.4: Überprüfen der Codebausteine
 
 1. Sobald die Projekterstellung abgeschlossen ist, werden die Projektmappe und das Projekt im **Projektmappen-Explorer** angezeigt, in dem das Projekt nur zwei Dateien enthält, nämlich *app.py* und *requirements.txt*:
 
@@ -190,7 +192,7 @@ Antwort: Bearbeiten Sie zuerst die *.gitignore*-Datei, um den Ordner auszuschlie
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Frage: Was ist der Zweck des __name__-Arguments für die Flask-Klasse?
+### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Frage: Welchem Zweck dient das Argument __name__ für die Flask-Klasse?
 
 Antwort: Das Argument ist der Name des Moduls oder Pakets der App und gibt an, wo Flask nach Vorlagen, statischen Dateien und anderen Ressourcen suchen soll, die zur App gehören. Für Apps, die in einem einzelnen Modul enthalten sind, ist `__name__` immer der richtige Wert. Dieser ist auch für Erweiterungen wichtig, die Debuginformationen benötigen. Weitere Informationen und zusätzliche Argumente finden Sie in der [Flask-Klassendokumentation](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
@@ -254,4 +256,4 @@ Zu diesem Zeitpunkt enthält das einfache Flask-Projekt den Startcode sowie den 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Flask Quickstart (Flask-Schnellstart)](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
-- Quellcode des Tutorials auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

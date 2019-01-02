@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und delete-Verhalten von Entitätsklassen'
+title: 'Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174973"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305532"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Passen Sie das Einfüge-, Update- und löschverhaltens in Entitätsklassen an
 
-Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) bietet eine visuelle Entwurfsoberfläche zum Erstellen und Bearbeiten von LINQ to SQL-Klassen (Entitätsklassen), die auf Objekte in einer Datenbank basieren. Mithilfe von [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), können Sie LINQ-Technologie für den Zugriff auf SQL-Datenbanken. Weitere Informationen finden Sie unter [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).
+Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) bietet eine visuelle Entwurfsoberfläche zum Erstellen und Bearbeiten von LINQ to SQL-Klassen (Entitätsklassen), die auf Objekte in einer Datenbank basieren. Mithilfe von [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), können Sie LINQ-Technologie für den Zugriff auf SQL-Datenbanken. Weitere Informationen finden Sie unter [LINQ (Language Integrated Query)](/dotnet/csharp/linq/).
 
-Standardmäßig wird die Logik zum Durchführen von Aktualisierungen von LINQ to SQL-Laufzeit bereitgestellt. Der Laufzeit erstellt `Insert`, `Update`, und `Delete` Anweisungen basierend auf dem Schema der Tabelle (den Spaltendefinitionen und Primärschlüsselinformationen). Wenn Sie nicht das Standardverhalten verwenden möchten, können Sie das Updateverhalten konfigurieren und spezielle gespeicherte Prozeduren zum Durchführen der erforderlichen Einfüge-, Updates und löschungen erforderlich, um die Arbeit mit den Daten in der Datenbank festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [Anpassen von Operationen durch Verwendung von gespeicherten Prozeduren](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Standardmäßig wird die Logik zum Durchführen von Aktualisierungen von LINQ to SQL-Laufzeit bereitgestellt. Der Laufzeit erstellt `Insert`, `Update`, und `Delete` Anweisungen basierend auf dem Schema der Tabelle (den Spaltendefinitionen und Primärschlüsselinformationen). Wenn Sie das Standardverhalten nicht verwenden möchten, können Sie das Updateverhalten konfigurieren und für erforderliche Einfüge-, Update- und Löschvorgänge, die für das Arbeiten mit Daten in der Datenbank notwendig sind, spezielle gespeicherte Prozeduren festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [Anpassen von Operationen durch Verwendung von gespeicherten Prozeduren](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
-> Diese exemplarische Vorgehensweise setzt voraus, dass die **"InsertCustomer"**, **"UpdateCustomer"**, und **DeleteCustomer** gespeicherte Prozeduren für die Datenbank Northwind.
+> Für diese exemplarische Vorgehensweise ist die Verfügbarkeit der gespeicherten Prozeduren InsertCustomer **, UpdateCustomer** und DeleteCustomer** für die Datenbank Northwind erforderlich.
 
 In dieser exemplarischen Vorgehensweise werden die zu befolgenden Schritte dargestellt, um mithilfe von gespeicherten Prozeduren das LINQ to SQL-Standardlaufzeitverhalten für das Speichern von Daten in einer Datenbank zu überschreiben.
 
@@ -75,17 +75,17 @@ Da Sie arbeiten mit LINQ to SQL-Klassen und Anzeigen der Daten in einem Windows 
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
 4. Nennen Sie das Projekt **UpdatingWithSProcsWalkthrough**, und wählen Sie dann **OK**.
 
-     Die **UpdatingWithSProcsWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
+     Das Projekt UpdatingwithSProcsWalkthrough wird erstellt und zum Projektmappen-Explorer** hinzugefügt.
 
 4.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-5.  Klicken Sie auf die **LINQ to SQL-Klassen** Vorlage, und geben **Northwind.dbml** in die **Namen** Feld.
+5.  Klicken Sie auf die Vorlage LINQ to SQL-Klassen **, und geben Sie im Feld Name** den Namen "Northwind.dbml" ein.
 
 6.  Klicken Sie auf **Hinzufügen**.
 
@@ -101,24 +101,24 @@ Erstellen von LINQ to SQL-Klassen, Datenbanktabellen zugeordnet sind, ziehen Sie
 
 2.  Ziehen Sie die **Kunden** aus **Server-Explorer** oder **Datenbank-Explorer** auf der **O/R Designer* Oberfläche.
 
-     Die Entitätsklasse **Kunden** erstellt wird. Sie verfügt über Eigenschaften, die den Spalten in der Tabelle Customers entsprechen. Die Entitätsklasse wird mit dem Namen **Kunden** (nicht **Kunden**) da es einen einzelnen Kunden aus der Customers-Tabelle darstellt.
+     Eine Entitätsklasse mit dem Namen Customer** wird erstellt. Sie verfügt über Eigenschaften, die den Spalten in der Tabelle Customers entsprechen. Die Entitätsklasse wird Customer **(nicht Customers**) genannt, da sie einem einzelnen Kunden aus der Tabelle Customers entspricht.
 
     > [!NOTE]
-    > Dieses Umbenennungsverhalten wird aufgerufen, *Pluralisierung*. Sie können aktiviert oder deaktiviert die [Abonnementoptionen](../ide/reference/options-dialog-box-visual-studio.md). Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Dieses Umbenennungsverhalten wird als Pluralisierung* bezeichnet. Sie können aktiviert oder deaktiviert die [Abonnementoptionen](../ide/reference/options-dialog-box-visual-studio.md). Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
-3.  Auf der **erstellen** Menü klicken Sie auf **UpdatingwithSProcsWalkthrough erstellen** zum Erstellen des Projekts.
+3.  Klicken Sie im Menü Erstellen **auf UpdatingwithSProcsWalkthrough erstellen**, um das Projekt zu erstellen.
 
-4.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
+4.  Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
 
 5.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-6.  Klicken Sie auf **Objekt** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.
+6.  Klicken Sie auf der Seite Datenquellentyp auswählen **auf Objekt** und anschließend auf Weiter **.
 
-7.  Erweitern Sie die **UpdatingwithSProcsWalkthrough** Knoten, und wählen Sie die **Kunden** Klasse.
+7.  Erweitern Sie den Knoten UpdatingwithSProcsWalkthrough **, suchen Sie die Klasse Customer**, und wählen Sie diese aus.
 
     > [!NOTE]
-    > Wenn die **Kunden** Klasse ist nicht verfügbar, den Assistenten abbrechen, erstellen Sie das Projekt und führen Sie den Assistenten erneut aus.
-8.  Klicken Sie auf **Fertig stellen** zum Erstellen der Datenquelle und Hinzufügen der **Kunden** Entitätsklasse, um die **Datenquellen** Fenster.
+    > Wenn die Klasse Customer** nicht verfügbar ist, beenden Sie den Assistenten, erstellen Sie das Projekt, und führen Sie den Assistenten erneut aus.
+8.  Klicken Sie auf Fertig stellen **, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse Customer** zum Fenster Datenquellen** hinzu.
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Erstellen einer DataGridView, um die Kundendaten in einem Windows Form anzuzeigen
 
@@ -126,14 +126,14 @@ Erstellen Sie Steuerelemente, die an Entitätsklassen gebunden sind, durch Ziehe
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>So fügen Sie Steuerelemente hinzu, die an Entitätsklassen gebunden sind
 
-1.  Open **Form1** in der Entwurfsansicht.
+1.  Öffnen Sie Form1** in der Entwurfsansicht.
 
-2.  Von der **Datenquellen** ziehen Sie die **Kunden** Knoten **Form1**.
+2.  Ziehen Sie den Knoten Customer **aus dem Fenster Datenquellen** auf Form1 **.
 
     > [!NOTE]
-    > Zum Anzeigen der **Datenquellen** Fenster, klicken Sie auf **Datenquellen anzeigen** auf die **Daten** Menü.
+    > Klicken Sie im Menü Daten **auf Datenquellen anzeigen**, um das Fenster Datenquellen** anzuzeigen.
 
-3.  Open **Form1** im Code-Editor.
+3.  Öffnen Sie im Code-Editor Form1.
 
 4.  Fügen Sie den folgenden Code in das Formular, die global für das Formular, außerhalb einer bestimmten Methode, jedoch innerhalb der `Form1` Klasse:
 
@@ -163,11 +163,11 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
 ### <a name="to-implement-save-functionality"></a>So implementieren Sie die Speicherfunktionalität
 
-1.  Open **Form1** in der Entwurfsansicht.
+1.  Öffnen Sie Form1** in der Entwurfsansicht.
 
-2.  Aktivieren Sie das Speichern in auf die Schaltfläche der **CustomersBindingNavigator** (die Schaltfläche mit dem Diskettensymbol).
+2.  Wählen Sie im CustomersBindingNavigator** die Schaltfläche zum Speichern (die Schaltfläche mit dem Diskettensymbol) aus.
 
-3.  In der **Eigenschaften** legen die **aktiviert** Eigenschaft **"true"**.
+3.  Legen Sie im Fenster Eigenschaften **die Eigenschaft Aktiviert** auf True** fest.
 
 4.  Doppelklicken Sie auf die Schaltfläche zum Speichern, um einen Ereignishandler zu erstellen und zum Code-Editor zu wechseln.
 
@@ -185,9 +185,9 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
 ### <a name="to-override-the-default-update-behavior"></a>So überschreiben Sie das standardmäßige Updateverhalten
 
-1.  Öffnen Sie die LINQ to SQL-Datei in die **O/R Designer**. (Doppelklicken Sie auf die **Northwind.dbml** Datei **Projektmappen-Explorer**.)
+1.  Öffnen Sie die LINQ to SQL-Datei in die **O/R Designer**. (Doppelklicken Sie im Projektmappen-Explorer **auf die Datei Northwind.dbml**).
 
-2.  In **Server-Explorer** oder **Datenbank-Explorer**, erweitern Sie die Datenbank Northwind **gespeicherte Prozeduren** Knoten, und suchen Sie die **InsertCustomers**, **UpdateCustomers**, und **DeleteCustomers** gespeicherte Prozeduren.
+2.  Erweitern Sie im Server-Explorer **/Datenbank-Explorer** den Knoten Gespeicherte Prozeduren **der Datenbank Northwind, und suchen Sie die gespeicherten Prozeduren InsertCustomers**, UpdateCustomers **und DeleteCustomers**.
 
 3.  Ziehen Sie alle drei gespeicherte Prozeduren auf die **O/R Designer**.
 
@@ -195,41 +195,41 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
 4.  Wählen Sie die **Kunden** Entitätsklasse in der **O/R Designer**.
 
-5.  In der **Eigenschaften** wählen Sie im Fenster der **einfügen** Eigenschaft.
+5.  Wählen Sie im Fenster Eigenschaften **die Einfügen**-Eigenschaft aus.
 
-6.  Klicken Sie auf die Auslassungspunkte (**...** ) neben **Laufzeit** zum Öffnen der **Verhalten konfigurieren** Dialogfeld.
+6.  Klicken Sie auf die Auslassungszeichen neben Laufzeit verwenden **, um das Dialogfeld Verhalten konfigurieren** zu öffnen.
 
-7.  Wählen Sie **anpassen**.
+7.  Wählen Sie Anpassen** aus.
 
-8.  Wählen Sie die **InsertCustomers** -Methode in der die **anpassen** Liste.
+8.  Wählen Sie aus der Liste Anpassen **die InsertCustomers**-Methode aus.
 
-9. Klicken Sie auf **übernehmen** zum Speichern der Konfiguration für die ausgewählte Klasse und Verhalten.
-
-    > [!NOTE]
-    > Sie können das Verhalten für jede Klasse/Verhalten-Kombination zu konfigurieren, solange Sie klicken Sie auf Weiter **übernehmen** nach jeder Änderung. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf **übernehmen**, ein Warnungsdialogfeld angezeigt, wird eine Möglichkeit zum Anwenden von Änderungen.
-
-10. Wählen Sie **Update** in die **Verhalten** Liste.
-
-11. Wählen Sie **anpassen**.
-
-12. Wählen Sie die **UpdateCustomers** -Methode in der die **anpassen** Liste.
-
-     Überprüfen Sie die Liste der **Methodenargumente** und **Klasseneigenschaften** , und beachten Sie, dass zwei **Methodenargumente** und zwei **Klasseneigenschaften**für einige Spalten in der Tabelle. Dies macht es einfacher, Änderungen zu verfolgen und Anweisungen zur Überprüfung von Parallelitätsverletzungen zu erstellen.
-
-13. Zuordnung der **Original_CustomerID** Methodenargument für die **CustomerID (Original)** Klasseneigenschaft.
+9. Klicken Sie auf Übernehmen **, um die Konfiguration für die ausgewählte Klasse und das ausgewählte Verhalten zu speichern.
 
     > [!NOTE]
-    > Standardmäßig werden Methodenargumente Klasseneigenschaften zugeordnet, wenn die Namen übereinstimmen. Wenn Eigenschaftennamen geändert werden und von der Tabelle und Entitätsklasse nicht mehr übereinstimmen, müssen Sie möglicherweise auf die entsprechende Klasseneigenschaft abzubildenden auf, wenn die **O/R Designer** kann nicht die richtige Zuordnung bestimmt. Darüber hinaus Wenn Methodenargumente nicht über gültige Klasseneigenschaften für das Zuordnen zu verfügen, legen Sie die **Klasseneigenschaften** Wert **(keine)**.
+    > Sie können mit der Konfiguration des Verhaltens jeder Klasse/Verhalten-Kombination fortfahren, solange Sie nach jeder Änderung auf Übernehmen** klicken. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf **übernehmen**, ein Warnungsdialogfeld angezeigt, wird eine Möglichkeit zum Anwenden von Änderungen.
 
-14. Klicken Sie auf **übernehmen** zum Speichern der Konfiguration für die ausgewählte Klasse und Verhalten.
+10. Wählen Sie aus der Liste Verhalten **die Option Aktualisieren** aus.
 
-15. Wählen Sie **löschen** in die **Verhalten** Liste.
+11. Wählen Sie Anpassen** aus.
 
-16. Wählen Sie **anpassen**.
+12. Wählen Sie in der Liste Anpassen **die UpdateCustomers**-Methode aus.
 
-17. Wählen Sie die **DeleteCustomers** -Methode in der die **anpassen** Liste.
+     Überprüfen Sie die Liste der Methodenargumente **und Klasseneigenschaften**, und beachten Sie, dass für einige Spalten in der Tabelle zwei Methodenargumente **sowie zwei Klasseneigenschaften** vorhanden sind. Dies macht es einfacher, Änderungen zu verfolgen und Anweisungen zur Überprüfung von Parallelitätsverletzungen zu erstellen.
 
-18. Zuordnung der **Original_CustomerID** Methodenargument für die **CustomerID (Original)** Klasseneigenschaft.
+13. Ordnen Sie das Original_CustomerID **-Methodenargument der Klasseneigenschaft CustomerID (Original)** zu.
+
+    > [!NOTE]
+    > Standardmäßig werden Methodenargumente Klasseneigenschaften zugeordnet, wenn die Namen übereinstimmen. Wenn Eigenschaftennamen geändert werden und die Namen von Tabelle und Entitätsklasse nicht mehr übereinstimmen, kann es erforderlich sein, die entsprechende zuzuordnende Klasseneigenschaft auszuwählen, wenn die korrekte Zuordnung vom O/R-Designer nicht festgestellt werden kann. Wenn die Methodenargumente nicht über gültige Klasseneigenschaften für die Zuordnung verfügen, können Sie zusätzlich den Wert Klasseneigenschaften **auf (Keine)** festlegen.
+
+14. Klicken Sie auf Übernehmen **, um die Konfiguration für die ausgewählte Klasse und das ausgewählte Verhalten zu speichern.
+
+15. Wählen Sie aus der Liste Verhalten **die Option Löschen** aus.
+
+16. Wählen Sie Anpassen** aus.
+
+17. Wählen Sie in der Liste Anpassen **die DeleteCustomers**-Methode aus.
+
+18. Ordnen Sie das Original_CustomerID **-Methodenargument der Klasseneigenschaft CustomerID (Original)** zu.
 
 19. Klicken Sie auf **OK**.
 
@@ -238,30 +238,30 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
 ## <a name="test-the-application"></a>Testen der Anwendung
 
-Führen Sie die Anwendung erneut aus, um zu überprüfen, ob die **UpdateCustomers** gespeicherten Prozedur wird ordnungsgemäß aktualisiert den Kundendatensatz in der Datenbank.
+Führen Sie die Anwendung erneut aus, um zu überprüfen, ob der Kundendatensatz in der Datenbank von der gespeicherten Prozedur UpdateCustomers** ordnungsgemäß aktualisiert wird.
 
 1.  Drücken Sie **F5**.
 
 2.  Ändern Sie einen Datensatz im Raster, um das Updateverhalten zu testen.
 
-3.  Fügen Sie einen neuen Eintrag aus, um das Einfügeverhalten zu testen.
+3.  Fügen Sie einen neuen Datensatz hinzu, um das Einfügeverhalten zu testen.
 
 4.  Klicken Sie auf die Speichern-Schaltfläche, um die Änderungen in der Datenbank zu speichern.
 
 5.  Schließen Sie das Formular.
 
-6.  Drücken Sie **F5** und stellen Sie sicher, dass der aktualisierte Datensatz und den neu eingefügten Datensatz beibehalten.
+6.  Drücken Sie F5, und überprüfen Sie, ob der aktualisierte Datensatz und der neu eingefügte Datensatz erhalten bleiben.
 
-7.  Löschen Sie das neue zeichnen Sie erstellt haben, Schritt 3 aus, um das Löschverhalten zu testen.
+7.  Löschen Sie den in Schritt 3 erstellten neuen Datensatz, um das Löschverhalten zu testen.
 
-8.  Klicken Sie in der Schaltfläche, um die Änderungen zu übermitteln, und entfernen den gelöschten Datensatz aus der Datenbank.
+8.  Klicken Sie auf die Speichern-Schaltfläche, um die Änderungen zu übermitteln und den gelöschten Datensatz aus der Datenbank zu entfernen.
 
 9. Schließen Sie das Formular.
 
-10. Drücken Sie **F5** und stellen Sie sicher, dass der gelöschte Datensatz aus der Datenbank entfernt wurde.
+10. Drücken Sie F5 und überprüfen Sie, ob der gelöschte Datensatz aus der Datenbank entfernt wurde.
 
     > [!NOTE]
-    > Wenn Ihre Anwendung SQL Server Express Edition, abhängig vom Wert verwendet die **in Ausgabeverzeichnis kopieren** Eigenschaft der Datenbankdatei, die Änderungen möglicherweise nicht angezeigt werden, wenn Sie drücken **F5** in Schritt 10.
+    > Wenn Ihre Anwendung SQL Server Express Edition verwendet, werden beim Drücken von F5 in Schritt 10 die Änderungen möglicherweise nicht angezeigt. Dies ist abhängig vom Wert der Eigenschaft Ins Ausgabeverzeichnis kopieren** der Datenbankdatei.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -269,7 +269,7 @@ Je nach den Anforderungen Ihrer Anwendung sind mehrere Schritte, die Sie nach de
 
 - Implementieren der Parallelitätsprüfung während der Durchführung von Updates. Weitere Informationen finden Sie unter [optimistische Parallelität: Übersicht über die](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden Sie unter [Einführung in LINQ-Abfragen (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden Sie unter [Einführung in LINQ-Abfragen (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Siehe auch
 

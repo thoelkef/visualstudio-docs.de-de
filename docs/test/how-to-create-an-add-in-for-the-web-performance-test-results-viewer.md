@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer
+title: Erstellen eines Add-Ins für den Webleistungstest-Ergebnisviewer
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949310"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068340"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer
 
 Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer** mit den folgenden Namespaces erweitern:
 
@@ -28,7 +28,9 @@ Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer**
 
 Darüber hinaus müssen Sie einen Verweis auf die LoadTestPackage-DLL hinzufügen, die sich im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* befindet.
 
--   Erstellen Sie zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** erforderlichen Klassen implementiert werden.
+Erstellen Sie zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** ein Visual Studio-Add-In und ein Benutzersteuerelement. In den folgenden Prozeduren wird erläutert, wie das Add-In und das Benutzersteuerelement erstellt und die zum Erweitern der Benutzeroberfläche des **Webleistungstest-Ergebnisviewers** erforderlichen Klassen implementiert werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Erstellen oder Öffnen einer Projektmappe, die eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt enthält
 
@@ -37,7 +39,7 @@ Darüber hinaus müssen Sie einen Verweis auf die LoadTestPackage-DLL hinzufüge
 Erstellen oder öffnen Sie eine Projektmappe, bei der es sich nicht um eine Produktionsprojektmappe handelt, und mit der Sie experimentieren können. Diese Projektmappe sollte eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt mit mindestens einem Webleistungstest für die ASP.NET-Webanwendung enthalten.
 
 > [!NOTE]
-> Sie können ein ASP.NET-Webanwendungs-, Webleistungs- und Auslastungstestprojekt erstellen, das Webleistungstests enthält, indem Sie die Anweisungen unter [Vorgehensweise: Erstellen eines Webdiensttests](../test/how-to-create-a-web-service-test.md) und [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md) befolgen.
+> Sie können eine ASP.NET-Webanwendung und ein Webleistungs- und Auslastungstestprojekt erstellen, das Webleistungstests enthält, indem Sie die Prozeduren unter [Vorgehensweise: Erstellen eines Webdiensttests](../test/how-to-create-a-web-service-test.md) und [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md) ausführen.
 
 ## <a name="create-a-visual-studio-add-in"></a>Erstellen eines Add-Ins für Visual Studio
 

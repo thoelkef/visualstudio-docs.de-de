@@ -1,5 +1,5 @@
 ---
-title: Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in eine Get-Methode in Visual Studio
+title: Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in eine Get-Methode
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,15 +11,15 @@ manager: douge
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 862f3d82decbd934fa64b5d88e41d7e906dcea57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920858"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056346"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in ein Refactoring einer Get-Methode
 
@@ -29,9 +29,9 @@ Diese Refactorings gelten für:
 
 ## <a name="convert-get-method-to-property"></a>Konvertieren einer Get-Methode in eine Eigenschaft
 
-**Beschreibung**: Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
+**Beschreibung:** Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
 
-**Hintergrund**: Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
+**Hintergrund:** Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
 
 ### <a name="how-to"></a>Vorgehensweise
 
@@ -70,9 +70,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Konvertieren einer Eigenschaft in eine Get-Methode
 
-**Beschreibung**: Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
+**Beschreibung:** Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
 
-**Hintergrund**: Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
+**Hintergrund:** Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
 
 ### <a name="how-to"></a>Vorgehensweise
 

@@ -1,5 +1,5 @@
 ---
-title: Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest in Visual Studio
+title: Korrigieren von nicht erkennbaren dynamischen Parametern in Webleistungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177824"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063780"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
 
@@ -30,6 +30,8 @@ Manche Websites verwenden dynamische Parameter, um einige ihrer Webanforderungen
 -   Dynamische Parameterwerte, die als Abfragezeichenfolge und Formularbereitstellungsparameter festgelegt werden. Diese werden durch Erkennung dynamischer Parameter verarbeitet, nachdem Sie einen Webleistungstest aufgezeichnet haben.
 
 Einige Typen dynamischer Parameter werden nicht erkannt. Ein unerkannter dynamischer Parameter führt dazu, dass der Webleistungstest bei der Ausführung fehlschlagt, da der dynamische Wert bei jeder Ausführung des Tests unterschiedlich ist. Damit diese Parameter korrekt verarbeitet werden, können Sie den dynamischen Parametern in Webleistungstests Extraktionsregeln manuell hinzufügen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Erstellen und Ausführen einer Web-App mit dynamischen Parametern
 
@@ -237,7 +239,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
      ![Text mit dem Parameter ersetzen](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Der QueryString-Parameter unter der *JScriptQuery.aspx*-Anforderung wird mit dem neuen Kontextparameter aktualisiert: CustomQueryString=jScriptQueryString___{{Param0}}.
+     Der QueryString-Parameter unter der *JScriptQuery.aspx*-Anforderung wird mit dem neuen Kontextparameter aktualisiert:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Auf QueryString angewendeter Parameter](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +251,9 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 ## <a name="qa"></a>Fragen und Antworten
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>F: Kann ich die Erkennung dynamischer Parameter erneut überprüfen, wenn meine Web-App geändert wurde?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Frage: Kann ich die Erkennung dynamischer Parameter erneut überprüfen, wenn meine Web-App geändert wurde?
 
- **A:** Ja, nach folgendem Verfahren:
+ **Antwort:** Ja, gehen Sie dazu wie folgt vor:
 
 1.  Wählen Sie auf der Symbolleiste die Schaltfläche **Dynamische Parameter auf Webtestparameter hochstufen** aus.
 
@@ -263,6 +265,6 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 2.  Aktivieren oder deaktivieren Sie das Kontrollkästchen neben den dynamischen Parametern, die Sie gern automatisch in Zusammenhang setzen möchten. Standardmäßig werden alle dynamischen Parameter überprüft.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>F: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Frage: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
 
- **A:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.
+ **Antwort:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.

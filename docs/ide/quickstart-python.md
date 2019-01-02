@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a4ef6ebbbce03dce7105b49100c9c8f50c44e5e4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219275"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159801"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -62,15 +62,15 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
     ![Projektmappen-Explorer mit der Standardumgebung](media/quickstart-python-02-default-environment.png)
 
-1. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Paket installieren**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte Pakete.
+1. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Paket installieren**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete**.
 
 1. Geben Sie „Flask“ in das Suchfeld ein, und wählen Sie **pip install flask from PyPI** aus. Akzeptieren Sie die Aufforderungen zu Administratorberechtigungen, und beobachten Sie den Fortschritt im Fenster **Ausgabe** in Visual Studio. (Eine Aufforderung zur Erhöhung der Rechte wird angezeigt, wenn der Ordner „Pakete“ für die globale Umgebung sich in einem geschützten Bereich wie *C:\Programme* befindet.)
 
-    ![Installieren der Flask-Bibliothek](media/quickstart-python-03-install-package.png)
+    ![Installieren der Flask-Bibliothek mithilfe von pip](media/quickstart-python-03-install-package.png)
 
 1. Nach der Installation wird die Bibliothek in der Umgebung im **Projektmappen-Explorer** angezeigt, d.h., dass Sie sie in Python-Code verwenden können.
 
-    ![Installierte Flask-Bibliothek](media/quickstart-python-04-package-installed.png)
+    ![Installierte Flask-Bibliothek, angezeigt im Projektmappen-Explorer](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > Statt Bibliotheken in der globalen Umgebung zu installieren, erstellen Entwickler in der Regel eine „virtuelle Umgebung“, in der Bibliotheken für ein bestimmtes Projekt installiert werden. Visual Studio-Vorlagen stellen diese Option in der Regel bereit. Dies wird unter [Schnellstart: Erstellen eines Python-Projekts mithilfe einer Vorlage](../python/quickstart-02-python-in-visual-studio-project-from-template.md) erläutert.
@@ -151,10 +151,10 @@ Glückwunsch zum Ausführen Ihrer ersten Python-App über Visual Studio! Dabei h
 
 Da die Schritte, die Sie in diesem Schnellstart befolgt haben, relativ allgemein sind, können und sollten diese automatisiert werden. Visual Studio-Projektvorlagen sind für diese Automatisierungen zuständig. Führen Sie den [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](../python/quickstart-02-python-in-visual-studio-project-from-template.md) durch. Dort wird veranschaulicht, wie eine Web-App in weniger Schritten erstellt wird, die der ähnelt, die Sie in diesem Artikel erstellt haben.
 
-Für ein umfangreicheres Tutorial zu Python in Visual Studio, einschließlich der Verwendung des interaktiven Fensters, dem Debuggen, der Datenvisualisierung und dem Arbeiten mit Git, führen Sie das [Tutorial: Erste Schritte mit Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md) durch.
+Ein umfangreicheres Tutorial zu Python in Visual Studio, in dem auch die Verwendung des interaktiven Fensters, das Debuggen, die Datenvisualisierung und das Arbeiten mit Git behandelt wird, finden Sie unter [Tutorial: Arbeiten mit Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Klicken Sie für weitere Informationen zu den Features von Visual Studio auf folgende Links.
 
 - Weitere Informationen zu [Python-Web-App-Vorlagen in Visual Studio](../python/python-web-application-project-templates.md)
 - Weitere Informationen zum [Debuggen in Python](../python/debugging-python-in-visual-studio.md)
-- Weitere allgemeine Informationen zur [Visual Studio-IDE](../ide/visual-studio-ide.md)
+- Weitere allgemeine Informationen zur [Visual Studio-IDE](../get-started/visual-studio-ide.md)

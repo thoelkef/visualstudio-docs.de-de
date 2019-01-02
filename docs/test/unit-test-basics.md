@@ -1,5 +1,5 @@
 ---
-title: Grundlagen zu Komponententests in Visual Studio
+title: Grundlagen zum Komponententest
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935314"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740350"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -219,7 +219,7 @@ Mithilfe der **Test-Explorer**-Symbolleiste können Sie die Tests ermitteln, org
 
 ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute_toolbar.png)
 
-Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Nachdem Sie einige Tests ausgeführt haben, wird eine Zusammenfassung des Testlaufs im unteren Bereich des **Test-Explorer**-Fensters angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen. Wählen Sie im Kontextmenü **Test Öffnen** (Tastatur: **F12**) aus, um den Quellcode für den ausgewählten Test anzuzeigen.
+Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Nachdem Sie einige Tests ausgeführt haben, wird eine Zusammenfassung des Testlaufs im unteren Bereich des **Test-Explorer**-Fensters angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen. Klicken Sie im Kontextmenü auf **Test öffnen** (auf der Tastatur: **F12**), um den Quellcode für den ausgewählten Test anzuzeigen.
 
 Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
@@ -228,7 +228,7 @@ Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in bel
 > [!WARNING]
 > Das Ausführen von Komponententests nach jedem Buildvorgang wird nur in Visual Studio Enterprise unterstützt.
 
-|Schaltfläche|Beschreibung |
+|Schaltfläche|Beschreibung|
 |-|-|
 |![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test**, und wählen Sie auf der **Test-Explorer**-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
 
@@ -238,7 +238,7 @@ Wenn Sie über viele Tests verfügen, können Sie im **Test-Explorer**-Suchfeld 
 
 ![Suchfilterkategorien](../test/media/ute_searchfilter.png)
 
-|Schaltfläche|Beschreibung |
+|Schaltfläche|Beschreibung|
 |-|-|
 |![Gruppenschaltfläche "Test-Explorer"](../test/media/ute_groupby_btn.png)|Wählen Sie die Schaltfläche **Gruppieren nach** aus, um die Tests nach Kategorie zu gruppieren.|
 
@@ -246,9 +246,9 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 ## <a name="qa"></a>Fragen und Antworten
 
-**F: Wie kann ich Komponententests debuggen?**
+**Frage: Wie kann ich Komponententests debuggen?**
 
-**A:** Mit dem **Test-Explorer** können Sie Debugsitzungen für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
+**Antwort:** Mit dem **Test-Explorer** können Sie Debugsitzungen für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
 1.  Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
 
@@ -257,17 +257,17 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 2.  Wählen Sie im **Test-Explorer** die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
 
-Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugging-in-visual-studio.md).
+Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugger-feature-tour.md).
 
-**F: Wenn ich TDD verwende, wie generiere ich dann Code aus meinen Tests?**
+**Frage: Wenn ich TDD verwende, wie generiere ich dann Code aus meinen Tests?**
 
-**A:** Verwenden Sie IntelliSense zum Generieren von Klassen und Methoden in Ihrem Projektcode. Schreiben Sie eine Anweisung in einer Testmethode, mit der die Klasse oder die Methode aufgerufen wird, die Sie generieren möchten. Öffnen Sie anschließend das IntelliSense-Menü unter dem Aufruf. Wenn es sich um den Aufruf eines Konstruktors der neuen Klasse handelt, wählen Sie im Menü **Neuen Typ generieren** aus, und befolgen Sie die Schritte im Assistenten, um die Klasse in das Codeprojekt einzufügen. Wenn es sich um den Aufruf einer Methode handelt, wählen Sie im IntelliSense-Menü **Neue Methode generieren** aus.
+**Antwort:** Verwenden Sie IntelliSense zum Generieren von Klassen und Methoden in Ihrem Projektcode. Schreiben Sie eine Anweisung in einer Testmethode, mit der die Klasse oder die Methode aufgerufen wird, die Sie generieren möchten. Öffnen Sie anschließend das IntelliSense-Menü unter dem Aufruf. Wenn es sich um den Aufruf eines Konstruktors der neuen Klasse handelt, wählen Sie im Menü **Neuen Typ generieren** aus, und befolgen Sie die Schritte im Assistenten, um die Klasse in das Codeprojekt einzufügen. Wenn es sich um den Aufruf einer Methode handelt, wählen Sie im IntelliSense-Menü **Neue Methode generieren** aus.
 
 ![IntelliSense-Menü „Methodenstub generieren“](../test/media/ute_generatemethodstubintellisense.png)
 
-**F: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
+**Frage: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
 
-**A:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.
+**Antwort:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.
 
 > [!NOTE]
 > Diese Verfahren gelten nur für Testmethoden, die Sie mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code schreiben. Wenn Sie ein anderes Framework verwenden, finden Sie Informationen zu entsprechenden Funktionen in der Frameworkdokumentation.
@@ -297,9 +297,9 @@ Die mit dem Attribut versehene Methode wird für jede Zeile in der Tabelle einma
 
 Erfahren Sie mehr über [datengesteuerte Komponententests](../test/how-to-create-a-data-driven-unit-test.md).
 
-**F: Kann ich anzeigen, wie viel meines Codes durch die Komponententests getestet wird?**
+**Frage: Kann ich anzeigen, wie viel meines Codes durch die Komponententests getestet wird?**
 
-**A:** Ja. Mit dem Codeabdeckungstool von Visual Studio können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
+**Antwort:** Ja. Mit dem Codeabdeckungstool von Visual Studio können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
 
 Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden. Im Fenster **Code Coverage-Ergebnisse** wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
 
@@ -311,9 +311,9 @@ Die Abdeckungsergebnisse werden im Fenster **Code Coverage-Ergebnisse** angezeig
 
 Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**F: Wie kann ich in meinem Code Methoden testen, die über externe Abhängigkeiten verfügen?**
+**Frage: Wie kann ich in meinem Code Methoden testen, die über externe Abhängigkeiten verfügen?**
 
-**A:** Ja. Wenn Sie über Visual Studio Enterprise verfügen, können Sie Microsoft Fakes für Testmethoden verwenden, die Sie mithilfe von Komponententestframeworks für verwalteten Code schreiben können.
+**Antwort:** Ja. Wenn Sie über Visual Studio Enterprise verfügen, können Sie Microsoft Fakes für Testmethoden verwenden, die Sie mithilfe von Komponententestframeworks für verwalteten Code schreiben können.
 
 Microsoft Fakes verwendet zwei Ansätze zum Erstellen von Ersatzklassen für externe Abhängigkeiten:
 
@@ -325,9 +325,9 @@ Bei beiden Ansätzen verwenden Sie die generierten Delegaten von Aufrufen der Ab
 
 Erfahren Sie mehr über das [Isolieren von Komponententestmethoden Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**F: Kann ich andere Komponententestframeworks verwenden, um Komponententests zu erstellen?**
+**Frage: Kann ich andere Komponententestframeworks verwenden, um Komponententests zu erstellen?**
 
-**A:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Öffnen Sie die Projektmappe nach dem Neustart von Visual Studio erneut, um die Komponententests zu erstellen, und wählen Sie dann hier Ihre installierten Frameworks aus:
+**Antwort:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Öffnen Sie die Projektmappe nach dem Neustart von Visual Studio erneut, um die Komponententests zu erstellen, und wählen Sie dann hier Ihre installierten Frameworks aus:
 
 ![Andere installierte Komponententestframeworks auswählen](../test/media/createunittestsdialogextensions.png)
 

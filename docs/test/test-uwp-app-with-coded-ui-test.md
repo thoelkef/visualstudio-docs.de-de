@@ -12,16 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668802"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895963"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
 In diesem Artikel wird erläutert, wie Sie einen Test der programmierten UI für eine UWP-App (Universelle Windows-Plattform) erstellen.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-uwp-app-to-test"></a>Erstellen einer zu testenden UWP-App
 

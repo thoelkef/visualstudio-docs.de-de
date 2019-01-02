@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612674"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561511"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -66,7 +66,7 @@ Wenn Sie eine App ausführen, sehen Sie Fehler und falsche Ergebnisse normalerwe
 
 Das Ausführen einer App in einem Debugger (auch als *Debugmodus* bezeichnet) bedeutet, dass der Debugger alle Vorgänge während der Ausführung des Programms überwacht. Sie können die App zudem jederzeit pausieren, um ihren Zustand zu überprüfen, und den Code anschließend schrittweise durchlaufen, um jedes Detail in Echtzeit zu beobachten.
 
-In Visual Studio starten Sie den Debugmodus, indem Sie auf **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
+In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
 
 Wenn keine Ausnahme ausgelöst wurde, haben Sie möglicherweise dennoch eine Idee, an welcher Stelle im Code Sie nach dem Problem suchen müssen. Hierfür verwenden Sie *Breakpoints* mit dem Debugger, damit Sie den Code gründlicher untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Breakpoint gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie die Werte von Variablen, das Verhalten des Arbeitsspeichers oder die Sequenz, in der der Code ausgeführt wird, überprüfen.
 
@@ -78,9 +78,9 @@ Zur Veranschaulichung dieser Konzepte werden Sie durch Beispielcode geführt, de
 
 Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
-1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, was für eine App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
+1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
@@ -244,7 +244,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     ![Syntaxfehler](../debugger/media/beginners-no-definition.png)
 
-    Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
+    Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MyGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
 
 1. Wenn Sie den Code betrachten, der für das Festlegen des Galaxietyps verwendet wird, werden Sie feststellen, dass die `GalaxyType`-Eigenschaft der `Galaxy`-Klasse auf `object` statt `GType` festgelegt ist.
 
@@ -325,11 +325,11 @@ Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, 
 * Überprüfen Sie, ob die Anwendung den Code ausführt, den Sie erwarten. (In der Beispielanwendung haben Sie beispielsweise erwartet, dass der Code für die switch-Anweisung den Galaxietyp auf „Irregular“ festlegt, aber die App hat den Code wegen eines Tippfehlers übersprungen.)
 
 > [!TIP]
-> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md).
+> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Nun können Sie lernen, wie das Debuggen mithilfe von Visual Studio funktioniert.
+In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes erfahren Sie mehr über den Debugger.
 
 > [!div class="nextstepaction"]
-> [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

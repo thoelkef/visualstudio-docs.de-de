@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Ausführen von Komponententests für UWP-Apps in Visual Studio
+title: Erstellen und Ausführen von Komponententests für UWP-Apps
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: d4640616b12a07c475503d45f9297c1bbf663f91
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284119"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802484"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps
 
@@ -108,5 +108,5 @@ Bearbeiten Sie im **Code-Editor** den Komponententest, und fügen Sie die Bestä
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Testen von UWP-Apps mit Visual Studio](../test/unit-test-your-code.md)
 - [Erstellen und Testen einer UWP-App](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

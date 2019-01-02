@@ -1,5 +1,5 @@
 ---
-title: Refactoring des Entfernens von nicht erreichbarem Code in Visual Studio
+title: Refactoring des Entfernens von nicht erreichbarem Code
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd06fb7cd7b0e31df777a488c34a59e5a036e3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836384"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059310"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactoring des Entfernens von nicht erreichbarem Code
 
@@ -24,9 +24,9 @@ Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung**: Es wird Code entfernt, der nie ausgeführt wird.
+**Beschreibung:** Es wird Code entfernt, der nie ausgeführt werden wird.
 
-**Hintergrund**: Ihr Programm enthält keinen Pfad zu einem bestimmten Codeausschnitt, weshalb dieser Codeausschnitt nicht benötigt wird.
+**Hintergrund:** Ihr Programm enthält keinen Pfad zu einem bestimmten Codeausschnitt, weshalb dieser Codeausschnitt nicht benötigt wird.
 
 **Vorteile**: Die Lesbarkeit und Verwaltbarkeit werden durch das Entfernen eines überflüssigen, nie ausgeführten Code verbessert.
 

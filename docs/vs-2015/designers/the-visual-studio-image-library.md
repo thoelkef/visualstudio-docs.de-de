@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Bildbibliothek | Microsoft-Dokumentation
+title: Imagebibliothek | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -22,25 +22,21 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f5ac1ac63543d05a9320a4a299f2cd0ed723291
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: e715dbeff8fe490a95da240ad63f5b8b0404876a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216722"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063978"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Visual Studio, in Microsoft Windows, im Office-System und in anderer Microsoft-Software angezeigt werden. Mit dieser Sammlung von mehr als 1.000 Bildern können Sie Anwendungen erstellen, die der Microsoft-Software visuell nachempfunden sind.  
-  
- [Laden Sie die Visual Studio-Bildbibliothek herunter](http://go.microsoft.com/fwlink/p/?LinkId=275090)  
-  
- Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.  
-  
-## <a name="see-also"></a>Siehe auch  
+Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Visual Studio, in Microsoft Windows, im Office-System und in anderer Microsoft-Software angezeigt werden. Mit dieser Sammlung von mehr als 1.000 Bildern können Sie Anwendungen erstellen, die der Microsoft-Software visuell nachempfunden sind.
+
+ [Laden Sie die Visual Studio-Bildbibliothek herunter](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+
+ Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
+
+## <a name="see-also"></a>Siehe auch
  [Bilder, Bitmaps und Metadateien](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)
-
-
-
-

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966543"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740139"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
 
@@ -42,7 +42,7 @@ Um die Architektur eines Systems oder von vorhandenem Code visuell darzustellen,
 |-|-|
 |[Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)|Die allgemeine Architektur des Systems|
 |Codezuordnungen<br /><br /> [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)|Abhängigkeiten und andere Beziehungen in vorhandenem Code|
-|Von Code generierte Klassendiagramme<br /><br /> [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)|Typen und ihre Beziehungen in .NET-Code|
+|Von Code generierte Klassendiagramme<br /><br /> [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Typen und ihre Beziehungen in .NET-Code|
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 

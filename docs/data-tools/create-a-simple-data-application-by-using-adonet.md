@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer einfachen datenanwendung mit ADO.NET in Visual Studio
+title: Erstellen einer einfachen Datenanwendung mit ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,23 +13,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891010"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740100"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
-Wenn Sie eine Anwendung, die Daten in einer Datenbank bearbeitet erstellen, führen Sie grundlegende Aufgaben wie z. B. das Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen von gespeicherten Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
+Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, Sie können ermitteln, wie Sie mit einer Datenbank in einer einfachen Windows Forms "Forms over Data"-Anwendung zu interagieren, mithilfe von Visual C# oder Visual Basic und ADO.NET.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
 
 Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.
 
 > [!IMPORTANT]
-> Zur Vereinfachung des Codes Ausnahmebehandlung nicht sie produktionsbereite.
+> Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Erstellen der Anwendung benötigen Sie:
 
@@ -37,7 +37,7 @@ Zum Erstellen der Anwendung benötigen Sie:
 
 -   SQL Server Express LocalDB. Wenn Sie SQL Server Express LocalDB nicht haben, können Sie installieren, von der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
+In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
 
 ## <a name="set-up-the-sample-database"></a>Die Beispieldatenbank einrichten
 
@@ -65,15 +65,15 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 
 ## <a name="create-the-forms-and-add-controls"></a>Die Formulare erstellen und Steuerelemente hinzufügen
 
-1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie **SimpleDataApp**.
+1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie es **SimpleDataApp**.
 
-    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars mit dem Namen **Form1**.
+    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars namens **Form1**.
 
-2. Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
+2. Fügen Sie dem Projekt zwei Windows-Formulare hinzu, sodass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
 
    -   **Navigation**
 
-   -   **"NewCustomer"**
+   -   **NewCustomer**
 
    -   **FillOrCancel**
 
@@ -126,7 +126,7 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 
  Sie finden die Verbindungszeichenfolge, indem Sie mit der rechten Maustaste auf die **Sales** Datenverbindung in **Server-Explorer** und **Eigenschaften**. Suchen Sie die **"ConnectionString"** -Eigenschaft verwenden, klicken Sie dann **STRG**+**ein**, **STRG**+**C**  auswählen und kopieren Sie die Zeichenfolge in die Zwischenablage.
 
-1.  Wenn Sie c# in nutzen **Projektmappen-Explorer**, erweitern Sie die **Eigenschaften** Knoten unter dem Projekt, und öffnen Sie dann die **Settings.settings** Datei.
+1.  Bei Verwendung von C#im **Projektmappen-Explorer**, erweitern Sie die **Eigenschaften** Knoten unter dem Projekt, und öffnen Sie dann die **Settings.settings** Datei.
     Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**, klicken Sie auf **alle Dateien anzeigen**, erweitern Sie die **Mein Projekt** Knoten, und öffnen Sie die **Settings.settings** Datei.
 
 2.  In der **Namen** Spalte Geben Sie `connString`.
@@ -146,11 +146,11 @@ Dieser Abschnitt enthält kurze Übersichten über die Funktionsweise der einzel
 
 ### <a name="navigation-form"></a>Navigationsformular
 
-Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die **Hinzufügen eines Kontos** Schaltfläche öffnet das NewCustomer-Formular. Die **ausfüllen oder Abbrechen** Schaltfläche öffnet das FillOrCancel-Formular. Die **beenden** Schaltfläche wird die Anwendung geschlossen.
+Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die Schaltfläche **Konto hinzufügen** öffnet das NewCustomer-Formular. Die Schaltfläche **Auftrag ausfüllen oder abbrechen** öffnet das FillOrCancel-Formular. Die Schaltfläche **Beenden** schließt die Anwendung.
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Das Navigationsformular als Startformular festlegen
 
-Wenn Sie c# in nutzen **Projektmappen-Explorer**öffnen **"Program.cs"**, und ändern Sie dann die `Application.Run` Zeile: `Application.Run(new Navigation());`
+Wenn Sie C# verwenden, öffnen Sie **Program.cs** im **Projektmappen-Explorer** und ändern die Zeile `Application.Run` in `Application.Run(new Navigation());`.
 
 Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**öffnen die **Eigenschaften** wählen Sie im Fenster der **Anwendung** Registerkarte, und wählen Sie dann  **"Simpledataapp.Navigation"** in die **Startformular** Liste.
 
@@ -231,7 +231,7 @@ Um die Logik der FillOrCancel-Formular abgeschlossen haben, gehen Sie wie folgt 
 
 ## <a name="test-your-application"></a>Die Anwendung testen
 
-Wählen Sie die **F5** Schlüssel zum Erstellen und Testen Ihre Anwendung aus, nachdem Sie die einzelnen Click-Ereignishandler code und dann nach dem Abschluss der Codierung.
+Drücken Sie die **F5**-Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
 
 ## <a name="see-also"></a>Siehe auch
 

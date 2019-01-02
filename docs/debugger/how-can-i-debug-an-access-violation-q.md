@@ -1,6 +1,6 @@
 ---
-title: Wie kann eine C++-Zugriffsverletzung werden gedebuggt? | Microsoft-Dokumentation
-ms.custom: ''
+title: Debuggen einer C++-zugriffsverletzungen | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 05/23/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b131ba4acf761a11aa9f39807d1db3202b021c9d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6f463f4e14e5be90422f73b299cb927a54fcfcef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475349"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067260"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>Wie kann eine C++-Zugriffsverletzung werden gedebuggt?
+# <a name="how-can-i-debug-a-c-access-violation"></a>Wie kann ein C++-Zugriffsverletzung werden gedebuggt?
 ## <a name="problem-description"></a>Problembeschreibung  
  Das Programm generiert eine Zugriffsverletzung. Wie kann dieses Problem behoben werden?  
   
@@ -69,7 +69,7 @@ int main() {
   
  ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
- Wenn Sie nicht bestimmen können, warum der Zeiger eine Zugriffsverletzung verursacht hat, überwachen Sie den Code mithilfe der Ablaufverfolgung, um sicherzustellen, dass der Zeiger, der das Problem verursacht, ordnungsgemäß zugewiesen wurde.  Wenn er als Parameter übergeben wird, stellen Sie sicher, dass die Übergabe ordnungsgemäß, und Sie werden nicht versehentlich erstellen eine [flache Kopie](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Dann stellen Sie sicher, dass die Werte nicht unbeabsichtigt an einer beliebigen Stelle geändert werden in der Anwendung durch das Erstellen eines Haltepunkts für den Zeiger fraglichen um sicherzustellen, dass es an anderer Stelle im Programm geändert wird. Weitere Informationen zu Datenhaltepunkten finden Sie im Abschnitt über Datenhaltepunkte in [Using Breakpoints](../debugger/using-breakpoints.md).  
+ Wenn Sie nicht bestimmen können, warum der Zeiger eine Zugriffsverletzung verursacht hat, überwachen Sie den Code mithilfe der Ablaufverfolgung, um sicherzustellen, dass der Zeiger, der das Problem verursacht, ordnungsgemäß zugewiesen wurde.  Wenn er als Parameter übergeben wird, achten Sie darauf, dass die Übergabe ordnungsgemäß erfolgt und Sie nicht versehentlich eine [flache Kopie](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) erstellen. Vergewissern Sie sich anschließend, dass die Werte nicht unbeabsichtigt im Programm geändert werden. Erstellen Sie zu diesem Zweck einen Datenhaltepunkt für den fraglichen Zeiger. So sorgen Sie dafür, dass er nicht an anderer Stelle im Programm geändert wird. Weitere Informationen zu Datenhaltepunkten finden Sie im Abschnitt über Datenhaltepunkte in [Using Breakpoints](../debugger/using-breakpoints.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

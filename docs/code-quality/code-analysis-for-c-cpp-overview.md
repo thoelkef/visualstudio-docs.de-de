@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320708"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739857"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Codeanalyse für C/C++-Übersicht
 
@@ -56,11 +56,11 @@ Sie können die `#pragma` Richtlinie Warnungen als Fehler behandeln, aktivieren 
 
 ## <a name="annotation-support"></a>Unterstützung von Kommentaren
 
-Anmerkungen verbessern, die Genauigkeit der Codeanalyse. Anmerkungen enthalten zusätzliche Informationen zu vorab und nachträglich Bedingungen zu Funktionsparametern und Rückgabetypen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben zusätzlicher Codeinformationen mit __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Anmerkungen verbessern, die Genauigkeit der Codeanalyse. Anmerkungen enthalten zusätzliche Informationen zu vorab und nachträglich Bedingungen zu Funktionsparametern und Rückgabetypen. Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie zusätzlicher Codeinformationen mit __analysis_assume an](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Analysetool wird als Teil der Eincheckrichtlinie ausgeführt.
 
-Sie möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien beachtet werden. Insbesondere möchten Sie sicherstellen, dass die Analyse als Schritt von den neuesten lokalen Build ausgeführt wurde. Weitere Informationen zum Aktivieren der Eincheckrichtlinie für die Analyse finden Sie unter [erstellen und Verwenden von Code Codeanalyse-Eincheckrichtlinien](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Sie möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien beachtet werden. Insbesondere möchten Sie sicherstellen, dass die Analyse als Schritt von den neuesten lokalen Build ausgeführt wurde. Weitere Informationen zum Aktivieren der Eincheckrichtlinie für die Analyse finden Sie unter [erstellen und Verwenden von Code Codeanalyse-Eincheckrichtlinien](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Team Build-integration
 

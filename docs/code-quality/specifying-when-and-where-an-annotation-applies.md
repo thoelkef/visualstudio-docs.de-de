@@ -15,25 +15,33 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d99ebce3adc27039763e11ed4882a20199e8469
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bc4d00d8c6b1f6b876700066d93b552b7fe5996
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920614"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803804"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
-Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen angeben, dass der Analyzer belegen.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein kann, die Funktion verhält sich wie folgt: In den synchronen Fall immer schließlich erfolgreich abgeschlossen wird, aber in der asynchronen Fall es einen Fehler meldet, wenn er sofort erfolgreich abgeschlossen werden kann. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert für die Code-Analyzer, da würde nicht zurückgegeben haben.  Wenn die Funktion asynchron aufgerufen wird und das Ergebnis der Funktion nicht aktiviert ist, konnte jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschrieben – zu aktivieren.
+Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen an, die an die Analyse erforderlich.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein kann, verhält sich die Funktion wie folgt: In den synchronen Fall immer schließlich erfolgreich ist, aber bei asynchronen Vorgängen einen Fehler gemeldet, wenn er sofort nicht ordnungsgemäß ausgeführt werden. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert, der Code-Analyzer, da er würde nicht zurückgegeben haben.  Wenn die Funktion wird asynchron aufgerufen, und das Ergebnis der Funktion nicht aktiviert ist, kann jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschriebenen – zu aktivieren.
 
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen
- Um zu steuern, wann und wo Anmerkungen anzuwenden, verwenden Sie die folgenden strukturelle Anmerkungen.
+ Um zu steuern, wann und wo Anmerkungen gelten, verwenden Sie die folgenden strukturellen Anmerkungen.
 
 |Anmerkung|Beschreibung|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung wird im Vorbedingung interpretiert, sodass in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung, und in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.<br /><br /> `iter` Der Name einer Variablen, die für die Anmerkung festgelegt ist (schließt `anno-list`). `iter` verfügt über einen impliziten `long`. In jedem Gültigkeitsbereich der einschließenden gleichnamigen Variablen werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
-|`_Group_(anno-list)`|Die Anmerkungen in `anno-list` gelten alle, alle Qualifizierer verwenden, die für die Gruppe-Anmerkung gilt, die auf jede Anmerkung angewendet wird.|
-|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der konvertiert werden kann `bool`. Wenn es nicht 0 (null) ist (`true`), die Anmerkungen, die im angegebenen `anno-list` als anwendbar betrachtet werden.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list`, `expr` als mit den Eingabewerten vornimmt, wenn die Anmerkung eine Vorbedingung ist und wie die Verwendung der Ausgabewerte, wenn die Anmerkung eine nachbedingung ist interpretiert wird. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` systeminterne bei der Auswertung einer nachbedingung, um anzugeben, dass die Eingabewerte verwendet werden soll. **Hinweis:** andere Anmerkungen können aktiviert werden, als Folge mit `_When_` Wenn änderbaren Werts – z. B. `*pLength`– ist erforderlich, da ausgewerteten Ergebnisses des `expr` in Vorbedingung weicht möglicherweise von der ausgewerteten Führen Sie nach der Bedingung ein.|
+|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen im `anno-list` gelten für das Objekt, das von dem Namen `expr`. Für jede Anmerkung in `anno-list`, `expr` wird im Voraussetzung interpretiert, wenn die Anmerkung wird im Voraussetzung interpretiert, und in nachbedingung, wenn die Anmerkung wird in der nachbedingung interpretiert.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen im `anno-list` gelten für das Objekt, das von dem Namen `expr`. Für jede Anmerkung in `anno-list`, `expr` wird im Voraussetzung interpretiert, wenn die Anmerkung in Vorbedingung, und in nachbedingung Wenn die Anmerkung in der nachbedingung interpretiert wird.<br /><br /> `iter` Der Name einer Variablen, die für die Anmerkung bezieht (schließt `anno-list`). `iter` verfügt über einen impliziten Typ `long`. Auswertung werden gleichnamige Variablen in einem beliebigen einschließenden Bereich ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
+|`_Group_(anno-list)`|Die Anmerkungen im `anno-list` gelten alle über alle Qualifizierer verfügen, die für die Gruppe-Anmerkung gilt, die für jede Anmerkung gilt.|
+|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der zu konvertierenden `bool`. Wenn es sich um einen Wert ungleich (`true`), die Anmerkungen, die im angegebenen `anno-list` als anwendbar betrachtet werden.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list`, `expr` wie die Verwendung der Eingabewerten aus, wenn die Anmerkung eine Vorbedingung ist, und wie die Ausgabewerte zu verwenden, wenn die Anmerkung eine nachbedingung ist interpretiert wird. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` systeminterne beim Auswerten einer nachbedingung, um anzugeben, dass der Eingabewerten verwendet werden soll. **Hinweis**:  Andere Anmerkungen können aktiviert werden, daher mit `_When_` bei dem Wert des änderbar, z. B. `*pLength`– ist erforderlich, da ausgewerteten Ergebnisses des `expr` in Vorbedingung weicht möglicherweise von ausgewerteten Ergebnis nach der Bedingung.|
 
 ## <a name="see-also"></a>Siehe auch
- [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [Grundlegendes zu SAL](../code-quality/understanding-sal.md) [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md) [Funktionsverhalten](../code-quality/annotating-function-behavior.md) [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md) [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md) [systeminterne Funktionen](../code-quality/intrinsic-functions.md) [empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
+
+- [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Einführung in SAL](../code-quality/understanding-sal.md)
+- [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)
+- [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)
+- [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)
+- [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)
+- [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)

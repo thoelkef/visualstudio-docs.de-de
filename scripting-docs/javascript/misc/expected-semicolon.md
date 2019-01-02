@@ -1,5 +1,5 @@
 ---
-title: Erwartete &#39; &#39; | Microsoft Docs
+title: Erwartet ';' | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632790"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804337"
 ---
-# <a name="expected-3939"></a>Erwartete &#39; &#39;
-Sie haben versucht, mehr als eine Anweisung auf eine Zeile zu platzieren, jedoch nicht durch Semikolons getrennt werden. Semikolons werden verwendet, um Anweisungen zu beenden. Obwohl Sie mehrere Anweisungen in einer einzelnen Zeile platzieren können, muss jeweils durch ein Semikolon voneinander getrennt werden.  
+# <a name="expected-"></a>';' erwartet
+Sie haben versucht, mehr als eine Anweisung in einer Zeile platziert, aber nicht durch Semikolons getrennt werden. Semikolons werden verwendet, um Anweisungen zu beenden. Obwohl Sie mehrere Anweisungen in einer einzelnen Zeile platzieren können, muss jedes von der nächsten durch ein Semikolon getrennt werden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Markieren Sie am Ende jeder Anweisung mit einem Semikolon.  
+-   Markiert das Ende jeder Anweisung mit einem Semikolon.  
   
 -   Stellen Sie sicher, dass Ihre Funktionsaufrufe ordnungsgemäß mithilfe von Klammern.  
   

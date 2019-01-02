@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672326"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804863"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Einfügen von Daten in einer Arbeitsmappe auf einem server
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Einfügen von Daten in ein Dataset, die in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert werden, ohne Excel zu starten mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse.
@@ -89,7 +89,7 @@ ms.locfileid: "50672326"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definieren Sie ein Dataset in das Klassenbibliotheksprojekt hinzu
  Definieren Sie ein typisiertes Dataset, das Daten aus der AdventureWorksLT-Datenbank für SQL Server 2005 enthält. Weiter unten in dieser exemplarischen Vorgehensweise werden Sie dieses Dataset aus einer Excel-Workbook-Projekt und ein Konsolenanwendungsprojekt verweisen.
 
- Das Dataset ist eine *typisiertes Dataset* , die die Daten in der Product-Tabelle der AdventureWorksLT-Datenbank darstellt. Weitere Informationen zu typisierten "Datasets", finden Sie unter [datasettools in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Das Dataset ist eine *typisiertes Dataset* , die die Daten in der Product-Tabelle der AdventureWorksLT-Datenbank darstellt. Weitere Informationen zu typisierten "Datasets", finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Um ein typisiertes Dataset in das Klassenbibliotheksprojekt zu definieren.
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672326"
 
 2.  Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
-     Die **Assistenten zur Datenquellenkonfiguration** wird geöffnet.
+     Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
 3.  Klicken Sie auf **Objekt**, und klicken Sie dann auf **Weiter**.
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672326"
 
 Erfahren Sie mehr über das Arbeiten mit zwischengespeicherten Daten in den folgenden Themen:
 
--   Ändern die Daten in ein zwischengespeichertes Dataset, ohne Excel zu starten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ändern zwischengespeicherter Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+-   Ändern die Daten in ein zwischengespeichertes Dataset, ohne Excel zu starten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ändern Sie die zwischengespeicherte Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Ändern zwischengespeicherter Daten in einer Arbeitsmappe auf einem server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [Exemplarische Vorgehensweise: Ändern Sie die zwischengespeicherte Daten in einer Arbeitsmappe auf einem server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

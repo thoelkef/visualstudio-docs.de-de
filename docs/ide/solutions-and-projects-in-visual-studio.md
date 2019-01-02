@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349308"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159671"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -60,7 +60,7 @@ Projekte befinden sich in *Projektmappen*. Eine Projektmappe enthält mindestens
 
 Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (*SLN* und *SUO*):
 
-|Erweiterung|name|Beschreibung |
+|Erweiterung|name|Beschreibung|
 |---------------|----------|-----------------|
 |.sln|Visual Studio-Projektmappe|Organisiert Projekte, Projektelemente und Projektmappenelemente in einer Projektmappe.|
 |.suo|Benutzeroptionen bei Projektmappen|Speichert Einstellungen und Anpassungen (z.B. Breakpoints) auf Benutzerebene.|
@@ -79,6 +79,6 @@ Nachdem Sie ein neues Projekt erstellt haben, können Sie mit dem **Projektmappe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Projekte und Projektmappen (Visual Studio für Mac)](/visualstudio/mac/projects-and-solutions)
 - [Hinzufügen und Entfernen von Projektelementen (Visual Studio für Mac)](/visualstudio/mac/add-and-remove-project-items)

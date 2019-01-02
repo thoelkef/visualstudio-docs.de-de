@@ -19,34 +19,37 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00608bae35a9f3272e46e53d7e0205b48c0ea7d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: d93ca95a67bc3816d8d65a799282dc6c7969e093
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920469"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304916"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Binden von Steuerelementen an Bilder aus einer Datenbank
 
-Können Sie die **Datenquellen** Fenster aus, um ein Bild in einer Datenbank an ein Steuerelement in der Anwendung zu binden. Sie können z. B. ein Bild zum Binden einer <xref:System.Windows.Controls.Image> steuern in einer WPF-Anwendung oder auf eine <xref:System.Windows.Forms.PictureBox> -Steuerelement in Windows Forms-Anwendung.
+Sie können im Datenquellenfenster** ein Bild in einer Datenbank an ein Steuerelement in der Anwendung binden. Zum Beispiel kann ein Bild an ein <xref:System.Windows.Controls.Image>-Steuerelement in einer WPF-Anwendung oder an ein <xref:System.Windows.Forms.PictureBox>-Steuerelement in einer Windows Forms-Anwendung gebunden werden.
 
-Bilder in einer Datenbank werden in der Regel als Bytearrays gespeichert. Elemente in der **Datenquellen** Fenster, das als Bytearrays Steuerelementtyp haben gespeichert sind, legen Sie auf **keine** standardmäßig, da Bytearrays sämtliche Objekte von einem einfachen Bytearray bis zur ausführbaren Datei enthalten können einer großen Anwendung. Erstellen eines datengebundenen Steuerelements für ein Bytearrayelement im die **Datenquellen** Fenster, das ein Bild darstellt, müssen Sie das zu erstellende Steuerelement auswählen.
+Bilder in einer Datenbank werden in der Regel als Bytearrays gespeichert. Für Elemente im Datenquellenfenster **, die als Bytearrays gespeichert werden, wird der Steuerelementtyp standardmäßig auf Keine** festgelegt, da Bytearrays sämtliche Objekte von einem einfachen Bytearray bis zur ausführbaren Datei einer großen Anwendung enthalten können. Um für ein Bytearrayelement im Datenquellenfenster** ein datengebundenes Steuerelement zu erstellen, das ein Bild darstellt, muss das zu erstellende Steuerelement ausgewählt werden.
 
-Das folgende Verfahren geht davon aus, die die **Datenquellen** Fenster wird mit einem Element, das an das Bild gebundenen ist bereits aufgefüllt.
+In der folgenden Prozedur wird davon ausgegangen, dass das Datenquellenfenster** bereits mit einem an das Bild gebundenen Element gefüllt ist.
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>So binden Sie ein Bild in einer Datenbank an ein Steuerelement
 
 1.  Stellen Sie sicher, dass die Entwurfsoberfläche, der Sie das Steuerelement hinzufügen möchten, im WPF-Designer oder im Windows Forms-Designer geöffnet ist.
 
-2.  In der **Datenquellen** Fenster, erweitern Sie die gewünschte Tabelle oder Objekt, sodass die Spalten bzw. Eigenschaften angezeigt.
+2.  Erweitern Sie im Datenquellenfenster** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.
+
+   > [!TIP]
+   > Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es durch Auswählen von **Ansicht** > **Other Windows** > **Datenquellen**.
 
 3.  Wählen Sie die Spalte oder die Eigenschaft aus, die die Bilddaten enthält, und wählen Sie eines der folgenden Steuerelemente aus der Dropdown-Steuerelementliste aus:
 
-    -   Wenn der WPF-Designer geöffnet ist, wählen Sie **Image**.
+    - Wenn der WPF-Designer geöffnet ist, wählen Sie Bild** aus.
 
-    -   Wenn die Windows Forms-Designer geöffnet ist, wählen Sie **PictureBox-Steuerelement**.
+    - Wenn der Windows Forms-Designer geöffnet ist, wählen Sie PictureBox** aus.
 
-    -   Sie können auch ein anderes Steuerelement auswählen, das die Datenbindung unterstützt und Bilder anzeigen kann. Wenn das Steuerelement, das Sie verwenden möchten, nicht in der Liste der verfügbaren Steuerelemente ist, können Sie ihn der Liste hinzufügen und wählen Sie diese. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    - Sie können auch ein anderes Steuerelement auswählen, das die Datenbindung unterstützt und Bilder anzeigen kann. Wenn das Steuerelement, das Sie verwenden möchten, nicht in der Liste der verfügbaren Steuerelemente enthalten ist, können Sie es der Liste hinzufügen und es anschließend auswählen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="see-also"></a>Siehe auch
 

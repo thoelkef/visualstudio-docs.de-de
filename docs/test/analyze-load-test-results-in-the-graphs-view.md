@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870054"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895079"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen in der Diagrammansicht des Auslastungstest-Analyzers
 
 Die Ergebnisse eines Auslastungstests werden als Daten in mehreren unterschiedlichen Bereichen angezeigt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Klicken Sie auf der **Auslastungstest**-Symbolleiste auf die Option **Diagramme**, um die Testergebnisse als Diagramme anzuzeigen. Jedes einzelne Diagramm wird in einem Bereich angezeigt, wobei der Diagrammname zuoberst in einer Dropdownliste steht. Um ein anderes Diagramm im Bereich anzuzeigen, wählen Sie einen anderen Diagrammnamen aus der Liste aus.
 
@@ -82,7 +84,6 @@ In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für d
 |**Anzeigen von Indikatoren in Diagrammen:** Sie können einem Diagramm für Auslastungstestergebnisse unterschiedliche Arten von Daten hinzufügen, indem Sie Indikatoren im Diagramm platzieren.|-   [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Vergrößern von Diagrammen:** Nach Abschluss eines Auslastungstests können Sie die Zoomleisten zum Vergrößern und Anzeigen eines Bereichs im Diagramm verwenden. Durch das Vergrößern können Sie genauere Details der Daten anzeigen, die bei einem Auslastungstestlauf generiert wurden.|-   [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Anordnen von Diagrammen (neben- bzw. untereinander):** Ihnen stehen mehrere Muster zur Verfügung, um Diagramme mit Auslastungstestergebnissen anzuordnen. Sie können bis zu vier Diagramme nebeneinander anordnen.||
-|**Ändern der Darstellung von Leistungsindikatorplots in Diagrammen:** Sie können die Optionen der Plotlinien für Leistungsindikatoren in Diagrammen ändern. Dies schließt Farbe und Linienart ein. Darüber hinaus können Sie angeben, ob der Bereich, den Sie zum Zeichnen des Leistungsindikators verwenden möchten, automatisch oder manuell angegeben werden soll.|-   [How to: Specify Plot Options for Graphing Counters (Vorgehensweise: Angeben von Plotoptionen zur Darstellung von Indikatoren in Diagrammen)](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Erstellen von benutzerdefinierten Diagrammen:** Sie können Diagramme entwerfen, in denen bestimmte Informationen zu Auslastungstestergebnissen angezeigt werden. Sie entwerfen ein benutzerdefiniertes Diagramm, indem Sie die Auslastungstestindikatoren angeben, die im Diagramm angezeigt werden.|-   [How to: Create Custom Graphs (Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen)](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportieren der Leistungsindikatordaten des Diagramms:** Sie können die Diagrammdaten mithilfe der Schaltfläche **Diagrammdaten nach Excel exportieren** auf der Symbolleiste des **Auslastungstest-Analyzers** in Microsoft Excel exportieren, während die **Diagrammansicht** angezeigt wird.||
 

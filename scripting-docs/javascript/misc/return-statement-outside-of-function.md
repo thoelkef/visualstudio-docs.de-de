@@ -1,5 +1,5 @@
 ---
-title: '&#39;zurückgeben&#39; Anweisung ist außerhalb der Funktion | Microsoft-Dokumentation'
+title: "\"return\"-Anweisung ist außerhalb der Funktion | Microsoft-Dokumentation"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846517"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802523"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;zurückgeben&#39; Anweisung ist außerhalb der Funktion
+# <a name="return-statement-outside-of-function"></a>return-Anweisung ist außerhalb der Funktion
 Sie verwendet eine `return` -Anweisung in den globalen Bereich Ihres Codes. Die `return` Anweisung sollte nur im Text einer Funktion verwendet werden.  
   
  Aufrufen einer Funktion mit dem `()` Operator ist ein Ausdruck. Alle Ausdrücke über Werte verfügen; die `return` Anweisung dient zum Angeben des Werts von einer Funktion zurückgegeben. Das allgemeine Format lautet:  

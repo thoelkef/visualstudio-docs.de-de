@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672345"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684807"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Von SharePoint unterstützte MsBuild-Eigenschaften
   Alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaft, die in der Microsoft.VisualStudio.SharePoint.targets-Datei, die Projektdatei oder das Projektbenutzerdatei definierten kann verwendet werden, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Zusätzlich zu den allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften bereitgestellt, die vom SharePoint-Projekt definiert zusätzliche Eigenschaften, die spezifisch für SharePoint-Projekte sind.  
@@ -57,5 +57,5 @@ ms.locfileid: "35672345"
 >  Verwenden Sie entweder die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Variable Syntax `$(` *PropertyName* `)` oder die Umgebungsvariablensyntax `%` *PropertyName* `%` Um eine Eigenschaft anzugeben.  
   
 ## <a name="see-also"></a>Siehe auch
- [MSBuild-Referenz](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)  

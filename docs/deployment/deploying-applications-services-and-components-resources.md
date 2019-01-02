@@ -1,6 +1,6 @@
 ---
-title: Übersicht über die Bereitstellung in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Übersicht über die Bereitstellung | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232172"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684235"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -122,4 +122,4 @@ Tutorials:
 - [Bereitstellung in Visual C++](/cpp/ide/deployment-in-visual-cpp)
 - [Deploy UWP apps (Bereitstellen von UWP-Apps)](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publish a Node.js app to Azure using Web Deploy (Bereitstellen einer Node.js-App in Azure mithilfe von Web Deploy)](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Veröffentlichen einer Python-App in Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Veröffentlichen einer Python-App in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

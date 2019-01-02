@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826660"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821447"
 ---
 # <a name="what-is-debugging"></a>Was bedeutet „Debuggen“?
 
@@ -25,13 +25,13 @@ Visual Studio-Debugger ist ein leistungsfähiges Tool. Bevor wir, wie sie verwen
 
 ## <a name="debugger-vs-debugging"></a>Debugger-im Vergleich zu debuggen
 
-Der Begriff *Debuggen* ist sehr allgemein und kann eine Menge verschiedener Dinge bedeuten. In der die Literale Verwendung des Worts bedeutet dies einen Fehler aus dem Code entfernen. Nun, es gibt viele Möglichkeiten zur Verfügung. Sie können z. B. durch das Scannen des Codes, der nach Tippfehlern oder mithilfe eines codeanalyzers Debuggen. Sie können den Code Debuggen, mithilfe einer Leistungsanalyse. Oder Sie können mit Debuggen einer *Debugger*.
+Der Begriff *Debuggen* kann eine Menge verschiedener Dinge bedeuten, aber die meisten buchstäblich bedeutet Fehler aus dem Code entfernen. Nun, es gibt viele Möglichkeiten zur Verfügung. Sie können z. B. durch das Scannen des Codes, der nach Tippfehlern oder mithilfe eines codeanalyzers Debuggen. Sie können den Code Debuggen, mithilfe einer Leistungsanalyse. Oder Sie können mit Debuggen einer *Debugger*.
 
-Ein Debugger ist eine sehr spezielle Entwicklungstool. Ein Debugger an der ausgeführten app angefügt und ermöglicht es Ihnen, Ihren Code zu überprüfen. In der debugging-Dokumentation für Visual Studio ist dies i. d. r. was wir meinen, wenn wir sagen "Debuggen".
+Ein Debugger ist ein sehr speziellen Entwicklertool, die an der ausgeführten app angefügt und ermöglicht es Ihnen, Ihren Code zu überprüfen. In der debugging-Dokumentation für Visual Studio ist dies i. d. r. was wir meinen, wenn wir sagen "Debuggen".
 
 ## <a name="debug-mode-vs-running-your-app"></a>Debug-Modus im Vergleich zu die app ausgeführt wird
 
-Wenn Sie Ihre app in Visual Studio zum ersten Mal ausführen, können Sie ihn starten, durch Drücken der Schaltfläche mit dem grünen Pfeil ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten") auf der Symbolleiste. In der Standardeinstellung die **Debuggen** Wert wird in der Dropdownliste auf der linken Seite angezeigt. Wenn Sie Visual Studio vertraut sind, lassen dies den Eindruck, dass das Debuggen Ihrer app mit Ausführung geschehen kann Ihre app – die It ist –, aber Hierbei handelt es sich im Grunde zwei sehr unterschiedlichen Aufgaben.
+Wenn Sie Ihre app in Visual Studio zum ersten Mal ausführen, können Sie ihn starten, durch Drücken der Schaltfläche mit dem grünen Pfeil ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten") auf der Symbolleiste (oder **F5**). In der Standardeinstellung die **Debuggen** Wert wird in der Dropdownliste auf der linken Seite angezeigt. Wenn Sie Visual Studio vertraut sind, lassen dies den Eindruck, dass das Debuggen Ihrer app mit Ausführung geschehen kann Ihre app – die It ist –, aber Hierbei handelt es sich im Grunde zwei sehr unterschiedlichen Aufgaben.
 
 ![Wählen Sie einen Debugbuild](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -49,7 +49,7 @@ Der Debugger ist ein wichtiges Tool zum Suchen und Beheben von Fehlern in Ihren 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie gelernt, dass einige allgemeine Konzepte zum Debuggen. Als Nächstes können Sie beginnen, lernen, wie Sie mit Visual Studio zu debuggen und wie Sie Code mit weniger Fehlern schreiben. Der folgende Artikel zeigt C# Codebeispiele, die Konzepte gelten jedoch für alle Sprachen, die von Visual Studio unterstützt.
+In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes können Sie beginnen, lernen, wie Sie mit Visual Studio zu debuggen und wie Sie Code mit weniger Fehlern schreiben. Der folgende Artikel zeigt C# Codebeispiele, die Konzepte gelten jedoch für alle Sprachen, die von Visual Studio unterstützt.
 
 > [!div class="nextstepaction"]
-> [Schreiben Sie besser C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+> [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)

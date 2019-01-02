@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513399"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160139"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -60,19 +60,19 @@ Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden ver
 
 Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollständigungsliste entfernt. In C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
 
-- **Schnittstellen und Basisklassen**: IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
+- **Schnittstellen und Basisklassen:** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
 
-- **Attribute:** Beim Anwenden eines Attributs auf einen Typ wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z.B. <xref:System.Attribute>.
+- **Attribute:** Wenn Sie ein Attribut auf einen Typ anwenden, wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z. B. <xref:System.Attribute>.
 
 - **Catch-Klauseln**
 
-- **Objektinitialisierer:** Nur Members, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.
+- **Objektinitialisierer:** Nur Member, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.
 
-- **Neues Schlüsselwort:** Wenn Sie `new` eingeben und dann die **Leertaste** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.
+- **New-Schlüsselwort:** Wenn Sie `new` eingeben und dann die **LEERTASTE** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.
 
-- **enum-Schlüsselwort**: Wenn Sie nach einem Gleichheitszeichen für eine enum-Zuweisung die **Leertaste** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden automatisch Elemente in der Vervollständigungsliste ausgewählt, nachdem Sie das return-Schlüsselwort eingegeben oder eine Deklaration erstellt haben.
+- **enum-Schlüsselwort:** Wenn Sie nach einem Gleichheitszeichen für eine enum-Zuweisung die **LEERTASTE** drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden automatisch Elemente in der Vervollständigungsliste ausgewählt, nachdem Sie das return-Schlüsselwort eingegeben oder eine Deklaration erstellt haben.
 
-- **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die **Leertaste** drücken.
+- **Operatoren „as“ und „is“:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die **LEERTASTE** drücken.
 
 - **Ereignisse:** Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.
 
@@ -165,4 +165,4 @@ Wenn Sie die **TAB-TASTE** drücken, versieht IntelliSense eine Methode per Stub
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwendung von IntelliSense](../ide/using-intellisense.md)
-- [Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Visual Studio-IDE](../get-started/visual-studio-ide.md)

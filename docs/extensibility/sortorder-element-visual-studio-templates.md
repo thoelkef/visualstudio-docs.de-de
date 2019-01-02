@@ -1,10 +1,9 @@
 ---
-title: SortOrder-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: SortOrder-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2710c85caf2ff675a05236aac48d08412e794ca6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561342"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder-Element (Visual Studio-Vorlagen)
-Gibt einen Wert an, die zum Anordnen der Vorlage gegenüber anderen Vorlagen in der gleichen Kategorie verwendet wird, wie er im entweder enthalten die **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
+Gibt einen Wert an, die zum Anordnen von gegenüber anderen Vorlagen in der gleichen Kategorie, der Vorlage verwendet wird, entsprechend der Anzeige in einem der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,17 +53,17 @@ Gibt einen Wert an, die zum Anordnen der Vorlage gegenüber anderen Vorlagen in 
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Eine `integer` , die den Sortierreihenfolgenwert darstellt.  
+ Ein `integer` , das den Sortierreihenfolgenwert darstellt.  
   
 ## <a name="remarks"></a>Hinweise  
  `SortOrder` ist ein optionales Element. Der Standardwert ist 100, und alle Werte müssen ein Vielfaches von 10 sein.  
   
- Die `SortOrder` Element wird für benutzerdefinierte Vorlagen ignoriert. Alle benutzerdefinierten Vorlagen sind alphabetisch sortiert.  
+ Die `SortOrder` Element wird für benutzerdefinierte Vorlagen ignoriert. Alle Benutzer erstellte Vorlagen sind alphabetisch sortiert.  
   
- Vorlagen, die mit niedriger Reihenfolge Sortierwerten haben angezeigt werden, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld vor Vorlagen, die hohe sortieren reihenfolgenwerte aufweisen.  
+ Vorlagen mit niedrigen Sortierwerte angezeigt werden, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld vor dem Vorlagen, die hohe Sortierwerte enthalten.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die Metadaten für einen Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klassenvorlage.  
+ Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] -Klassenvorlage.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,7 +82,7 @@ Gibt einen Wert an, die zum Anordnen der Vorlage gegenüber anderen Vorlagen in 
 </VSTemplate>  
 ```  
   
- In diesem Beispiel wird die `SortOrder` Element ist relativ hoch. Ist es wahrscheinlich, dass andere [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Elementvorlagen müssen eine `SortOrder` Wert niedriger ist als `290` und wird angezeigt, bevor dieser Vorlage in der **neues Element** (Dialogfeld).  
+ In diesem Beispiel die `SortOrder` Element ist relativ hoch. Ist es wahrscheinlich, dass andere [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Elementvorlagen müssen eine `SortOrder` Werts kleiner als `290` und wird angezeigt, bevor Sie diese Vorlage in der **neues Element** Dialogfeld.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282065"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257029"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.  
@@ -44,9 +44,6 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
   
  [Gewusst wie: Debuggen einer ausführbaren Datei, die keiner Visual Studio-Projektmappe angehört](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Erläutert das Debuggen einer ausführbaren Datei, die nicht als Bestandteil eines Visual Studio-Projekts erstellt wurde.  
-  
- [Gewusst wie: Debuggen mit Code Center Premium-Quellcode](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Beschreibt, wie Microsoft Code Center Premium-Quellcode in Visual Studio-Projekt debuggen.  
   
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)  
  Beschreibt, wie 64-Bit-Anwendungen gedebuggt werden.  

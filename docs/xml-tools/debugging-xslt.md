@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b89fce53567e0d88827cf4ba68349a68c31bc560
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348538"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684638"
 ---
 # <a name="debugging-xslt"></a>Debugging von XSLT
 
@@ -32,5 +32,5 @@ Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwick
 
 - [Bearbeiten von XSLT-Stylesheets](../xml-tools/editing-xslt-style-sheets.md) erläutert die Verwendung von XML-Editor zum Bearbeiten von Stylesheets.
 - [Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten](../xml-tools/security-considerations-when-working-with-xml-data.md) erläutert Sicherheitsprobleme, die Sie bei der Arbeit der XML-Editor oder dem XSLT-Debugger kennen müssen.
-- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) führt Visual Studio-Debugger.
+- [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md) führt Visual Studio-Debugger.
 - [Referenz zu XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) enthält Referenzmaterial für XSLT-Elemente und Funktionen.

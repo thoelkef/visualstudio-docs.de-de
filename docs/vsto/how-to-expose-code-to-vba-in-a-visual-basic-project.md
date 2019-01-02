@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt'
+title: 'Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,24 +14,24 @@ helpviewer_keywords:
 - Visual Basic [Office development in Visual Studio], exposing code to VBA
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839647"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648638"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
+# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
   Sie können Verfügbarmachen von Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt in Visual Basic für Applikationen (VBA) Code, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic-Prozess unterscheidet sich von der Visual C#-Prozess. Weitere Informationen finden Sie unter [wie: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Visual Basic-Prozess unterscheidet sich von der Visual C#-Prozess. Weitere Informationen finden Sie unter [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Der Prozess ist für Code in einer Hostelementklasse anders, als Code in anderen Klassen werden:  
   
@@ -39,7 +39,7 @@ ms.locfileid: "49839647"
   
 - [Verfügbarmachen von Code, der nicht in einer Hostelementklasse](#NonHostItem)  
   
-  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie rufen I:-VSTO code von VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Aufrufen VSTO-Code aus VBA? ](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Verfügbarmachen von Code in einer Hostelementklasse  
  Legen Sie zum Aktivieren von VBA-Code zum Aufrufen von Visual Basic-Code in einer Hostelementklasse der **EnableVbaCallers** -Eigenschaft des Hostelements wird auf **"true"**.  
@@ -121,10 +121,10 @@ ms.locfileid: "49839647"
 9. Erstellen Sie das Projekt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

@@ -1,8 +1,9 @@
 ---
-title: Beispiele für Befehlszeilenparameter für die Installation von Visual Studio
+title: Beispiele für Befehlszeilenparameter für die Installation
 description: Passen Sie diese Beispiele an, um Ihre eigene Installation von Visual Studio über die Befehlszeile zu erstellen.
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a1a0d0af09768e4927403d0791ae4c1e7785dcb
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562171"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Beispiele für die Befehlszeilenparameter für die Installation von Visual Studio 2017
 
@@ -128,6 +129,39 @@ Diese Befehlszeilenparameter sind **neu in Version 15.7**. Weitere Informationen
 * Ausschließliches Verwenden des „install“-Pfads:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>Verwenden von „export“
+
+Dieser Befehlszeilenbefehl ist **neu in 15.9**. Weitere Informationen finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Verwenden von „export“ zum Speichern der Auswahl einer Installation:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Verwenden von „export“ zum Speichern einer neu erstellten benutzerdefinierten Auswahl:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>Verwenden von „--config“
+
+Dieser Befehlszeilenparameter ist **neu in 15.9**. Weitere Informationen finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Verwenden von „--config“ zum Installieren der Workloads und der Komponenten aus einer kürzlich gespeicherten Installationskonfigurationsdatei:
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Verwenden von „--config“ zum Hinzufügen von Workloads und Komponenten zu einer bereits vorhandenen Installation:
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

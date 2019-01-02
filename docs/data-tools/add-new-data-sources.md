@@ -1,6 +1,6 @@
 ---
-title: Neue Datenquelle hinzufügen
-ms.date: 11/04/2016
+title: Hinzufügen neuer Datenquellen
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666630"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304609"
 ---
-# <a name="add-new-data-sources"></a>Neue Datenquelle hinzufügen
+# <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 
-Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer können die Ausgabe von der Datenquelle, um die Codebausteine zu generieren, die die Daten zu Forms gebunden wird, wenn Drag & drop-Datenbankobjekte aus nutzen die **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:
+Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung zur Verfügung zu stellen. Die Visual Studio-Designer können die Ausgabe von der Datenquelle, um die Codebausteine zu generieren, die die Daten zu Forms gebunden wird, wenn Drag & drop-Datenbankobjekte aus nutzen die **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:
 
 - Eine Klasse in einem Entity Framework-Datenmodell, das eine Art der Datenbank zugeordnet ist.
 
@@ -37,13 +37,22 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 - Eine Klasse oder eine Auflistung in der Projektmappe.
 
 > [!NOTE]
-> Wenn Sie keine Funktionen für die Datenbindung verwenden, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.
+> Wenn Sie nicht über die Datenbindung Features nutzen, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.
 
 Sie erstellen und Bearbeiten von Datenquellen mithilfe der **Assistenten zur Datenquellenkonfiguration** in einer Windows Forms oder Windows Presentation Foundation-Anwendung. Erstellen Sie zunächst die Entitätsklassen für Entity Framework, und starten Sie den Assistenten dazu **Projekt** > **neue Datenquelle hinzufügen** (weiter unten in diesem Artikel ausführlicher beschrieben).
 
 ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png)
 
-Nachdem Sie eine Datenquelle erstellen, wird Sie der **Datenquellen** Toolfenster (**UMSCHALT**+**Alt**+**D**oder **Ansicht** > **andere Windows** > **Datenquelle**). Ziehen Sie eine Datenquelle aus der **Datenquellen** Fenster auf eine Formularentwurfsoberfläche oder Steuerelement. Dies bewirkt, dass Codebausteine generiert werden, die die Daten aus dem Datenspeicher wird angezeigt. Die folgende Abbildung zeigt ein Dataset, das auf ein Windows-Formular gelöscht wurde. Bei Auswahl von **F5** auf die Anwendung die Daten aus der zugrunde liegenden Datenbank wird in den Steuerelementen des Formulars angezeigt.
+## <a name="data-sources-window"></a>Datenquellenfenster
+
+Nachdem Sie eine Datenquelle erstellen, wird Sie der **Datenquellen** Toolfenster.
+
+> [!TIP]
+> Zum Öffnen der **Datenquellen** , stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann die **UMSCHALT**+**Alt**+**D**oder **Ansicht** > **Other Windows** > **Datenquellen**.
+
+Ziehen Sie eine Datenquelle aus der **Datenquellen** Fenster auf eine Formularentwurfsoberfläche oder Steuerelement. Dies bewirkt, dass Codebausteine generiert werden, die die Daten aus dem Datenspeicher wird angezeigt.
+
+Die folgende Abbildung zeigt ein Dataset, das auf ein Windows-Formular gelöscht wurde. Bei Auswahl von **F5** auf die Anwendung die Daten aus der zugrunde liegenden Datenbank wird in den Steuerelementen des Formulars angezeigt.
 
 ![Ziehen Sie von Datenquellenvorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -86,11 +95,11 @@ Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 - Webdienste
 
     > [!NOTE]
-    > Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste möglicherweise nicht genug Informationen bieten die **Assistenten zur Datenquellenkonfiguration** bindbare Objekte erstellen. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
+    > Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
 
 ## <a name="data-source-for-an-object"></a>Datenquelle für ein Objekt
 
-Sie können eine Datenquelle erstellen, über jedes Objekt, das eine oder mehrere öffentliche Eigenschaften mit macht die **Assistenten zur Datenquellenkonfiguration** auswählen und dann auf die **Objekt** Datenquellentyp. Alle öffentliche Eigenschaften eines Objekts werden angezeigt, der **Datenquellen** Fenster. Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies die, in dem Sie die Entitätsklassen finden, die die Datenquellen für Ihre Anwendung sind.
+Sie können eine Datenquelle mit jedem Objekt erstellen, das mindestens eine öffentliche Eigenschaft durch Ausführen des **Assistenten zum Konfigurieren von Datenquellen** und anschließendes Auswählen des Datenquellentyps **Objekt** verfügbar macht. Alle öffentlichen Eigenschaften eines Objekts werden im Fenster **Datenquellen** angezeigt. Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies die, in dem Sie die Entitätsklassen finden, die die Datenquellen für Ihre Anwendung sind.
 
 Auf der **Datenobjekte auswählen** Seite, erweitern Sie die Knoten in der Strukturansicht, um die Objekte zu suchen, die Sie binden möchten. Die Strukturansicht enthält Knoten für Ihr Projekt für Assemblys und andere Projekte, die vom Projekt verwiesen werden.
 
@@ -104,7 +113,7 @@ Wenn Sie möchten die Bindung an ein Objekt in eine Assembly oder ein Projekt, d
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste
 
-Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie Ausführung der **Assistenten zur Datenquellenkonfiguration** und Auswählen der **SharePoint** Datenquellentyp. SharePoint macht Daten über WCF Data Services, damit erstellen eine SharePoint-Datenquelle erstellen eine Datenquelle mit einem Dienst identisch ist. Auswählen der **SharePoint** Element der **Assistenten zur Datenquellenkonfiguration** öffnet die **Hinzufügen eines Dienstverweises** Dialogfeld, in dem Sie Herstellen einer Verbindung mit dem SharePoint-Datendienst indem Sie auf der SharePoint-Server zeigen. Dies erfordert das SharePoint SDK.
+Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services, damit erstellen eine SharePoint-Datenquelle erstellen eine Datenquelle mit einem Dienst identisch ist. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Dies erfordert das SharePoint SDK.
 
 ## <a name="see-also"></a>Siehe auch
 

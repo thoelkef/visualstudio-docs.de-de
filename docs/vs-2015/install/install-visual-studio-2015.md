@@ -1,6 +1,6 @@
 ---
-title: Installieren Sie Visual Studio 2015 | Microsoft-Dokumentation
-ms.custom: ''
+title: Installieren von Visual Studio 2015 | Microsoft-Dokumentation
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -23,18 +23,18 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2552af00acdcb490c5f54f642fdfcdc3588d22e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789992"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055166"
 ---
-# <a name="install-visual-studio-2015"></a>Installieren Sie Visual Studio 2015
+# <a name="install-visual-studio-2015"></a>Installieren von Visual Studio 2015
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Seite enthält ausführliche Informationen, damit Sie bei der Installation von **Visual Studio 2015**, unserer integrierten Suite von Produktivitätstools für Entwickler. Wir haben auch Links eingefügt, sodass Sie schnell auf Informationen zu [Funktionen](https://www.visualstudio.com/news/vs2015-vs.aspx), [Editionen](http://go.microsoft.com/fwlink/?LinkID=242142), [Systemanforderungen](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [Downloads](http://go.microsoft.com/fwlink/?LinkId=517106)usw. zugreifen können.
+Diese Seite enthält detaillierte Informationen zum Installieren von **Visual Studio 2015**, der integrierten Sammlung von Produktivitätstools für Entwickler. Wir haben auch Links eingefügt, sodass Sie schnell auf Informationen zu [Funktionen](https://www.visualstudio.com/news/vs2015-vs.aspx), [Editionen](http://go.microsoft.com/fwlink/?LinkID=242142), [Systemanforderungen](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [Downloads](http://go.microsoft.com/fwlink/?LinkId=517106)usw. zugreifen können.
 
 ## <a name="quick-links"></a>Quicklinks
 
@@ -42,14 +42,14 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 
 |||
 |------------------|----------------|
-|![Herunterladen von Visual Studio](../install/media/downloads.png "-Downloads") |**Downloads**: um die Installation von Visual Studio 2015 können Sie eine ausführbare Datei für das Produkt an die [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) Seite (Abonnement erforderlich), oder verwenden Sie den Installationsdatenträger des erworbenen Produkts. [Weitere Informationen zum Herunterladen der aktuellen und vorherigen Versionen von Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Weitere Informationen zu Features](../install/media/features.png "Features") |**Features**: Weitere Informationen zu den Features in Visual Studio 2015 finden Sie unter den Versionshinweisen für [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), und [ Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Sehen Sie sich in jeder SKU](../install/media/sku.png "SKUs") |**SKUs**: um herauszufinden, was in jeder Edition von Visual Studio 2015 verfügbar ist, finden Sie in unserem [Visual Studio-Editionen im Vergleich](http://go.microsoft.com/fwlink/?LinkID=242142) Seite.|
-|![Systemanforderungen anzeigen](../install/media/system-requirements.png "Systemanforderungen") |**Systemanforderungen**: die Systemanforderungen für die einzelnen Editionen von Visual Studio 2015 finden Sie unter den [Visual Studio 2015 – Kompatibilität](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) Seite.|
-|![Suchen Sie den Product Key](../install/media/product-keys.png "Product Keys") |**Produktschlüssel**: um den Product Key suchen zu können, finden Sie unter den [wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) Thema.|
-|![Erfahren Sie mehr über die Lizenzierung](../install/media/licensing.png "Lizenzierung") |**Lizenzierung**: Informationen zu Lizenzierungsoptionen für Einzel- und Enterprise-Kunden, finden Sie unter den [Visual Studio und MSDN-Lizenzierung](https://www.microsoft.com/download/details.aspx?id=13350) finden Sie im Whitepaper.|
+|![Herunterladen von Visual Studio](../install/media/downloads.png "-Downloads") |**Downloads** Um Visual Studio 2015 zu installieren, können Sie eine ausführbare Datei für das Produkt an die [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) Seite (Abonnement erforderlich), oder verwenden Sie den Installationsdatenträger des erworbenen Produkts. [Weitere Informationen zum Herunterladen der aktuellen und vorherigen Versionen von Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
+|![Weitere Informationen zu Features](../install/media/features.png "Features") |**Features** Weitere Informationen zu den Features in Visual Studio 2015 finden Sie unter den Versionshinweisen für [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), und [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Sehen Sie sich in jeder SKU](../install/media/sku.png "SKUs") |**SKUs:** Informationen zu den in den einzelnen Editionen von Visual Studio 2015 verfügbaren Funktionen finden Sie unter [Compare Visual Studio Offerings (Visual Studio-Editionen im Vergleich)](http://go.microsoft.com/fwlink/?LinkID=242142).|
+|![Systemanforderungen anzeigen](../install/media/system-requirements.png "Systemanforderungen") |**Systemanforderungen:** Die Systemanforderungen der einzelnen Editionen von Visual Studio 2015 finden Sie unter [Visual Studio 2015 Platform Targeting and Compatibility (Visual Studio 2015 – Zielplattformen und Kompatibilität)](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs).|
+|![Suchen Sie den Product Key](../install/media/product-keys.png "Product Keys") |**Product Keys** Um den Product Key suchen zu können, finden Sie unter den [Vorgehensweise: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) Thema.|
+|![Erfahren Sie mehr über die Lizenzierung](../install/media/licensing.png "Lizenzierung") |**Lizenzierung:** Informationen zu Lizenzierungsoptionen für Einzel- und Unternehmenskunden finden Sie im [Visual Studio 2015 Licensing White Paper (Whitepaper zur Lizenzierung von Visual Studio 2015)](https://www.microsoft.com/download/details.aspx?id=13350).|
 
-##  <a name="custom"></a> Standardsetup oder Benutzerdefiniertes Setup
+##  <a name="custom"></a> Standardsetup vs. Benutzerdefiniertes Setup
  Bei der Installation von Visual Studio 2015 können Sie Komponenten, die Sie täglich verwenden, ein- und ausschließen. Dies bedeutet, dass eine Standardinstallation oft kleiner und schneller erfolgt als eine benutzerdefinierte Installation. Dies bedeutet zudem, dass in früheren Versionen viele standardmäßig installierte Komponenten nun als benutzerdefinierte Komponenten erachtet werden, die Sie explizit in dieser Version auswählen müssen.
 
  ![Visual Studio 2015-Setupdialogfeld](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
@@ -65,8 +65,8 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 |------------------|----------------|
 |**Updates**|Visual Studio 2015 Update 3|
 |**Programmiersprachen**|Visual C++<br />Visual F#<br />Python-Tools für Visual Studio|
-|**Windows und Webentwicklung**|ClickOnce-Tools für die Veröffentlichung<br />LightSwitch<br />Microsoft Office-Entwicklertools<br />Microsoft SQL Server-Datentools<br /> Microsoft Web Developer Tools<br />PowerShell-Tools für Visual Studio (3rd Party)<br />Silverlight Development Kit<br />Universal Windows App-Entwicklungstools<br />Windows 10-Tools und -SDKs<br />Windows 8.1- und Windows Phone 8.0/8.1-Tools<br />Windows 8.1-Tools und -SDKs|
-|**Plattformübergreifende Mobile Entwicklung**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Mobile Visual C++-Entwicklung für iOS / Android<br />Clang mit Microsoft CodeGen|
+|**Windows- und Webentwicklung**|ClickOnce-Tools für die Veröffentlichung<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server-Datentools<br /> Microsoft Web Developer Tools<br />PowerShell-Tools für Visual Studio (3rd Party)<br />Silverlight Development Kit<br />Universal Windows App-Entwicklungstools<br />Windows 10-Tools und -SDKs<br />Windows 8.1- und Windows Phone 8.0/8.1-Tools<br />Windows 8.1-Tools und -SDKs|
+|**Plattformübergreifende mobile Entwicklung**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Mobile Visual C++-Entwicklung für iOS / Android<br />Clang mit Microsoft CodeGen|
 |**Häufig verwendete Tools und Software Development Kits**|Android Native Development Kit (3rd Party)<br /> Android SDK [3rd Party]<br />Android SDK-Setup-APIs (3rd Party)<br />Apache Ant (3rd Party)<br /> Java SE Development Kit (3rd Party)<br /> Joyent Node.js (3rd Party)|
 |**Häufig verwendete Tools**|Git für Windows (3rd Party)<br />GitHub-Erweiterung für Visual Studio (3rd Party)<br /> Visual Studio-Erweiterbarkeitstools|
 
@@ -112,7 +112,7 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 
  Das Ausführen von Windows Server 2008 R2 mit aktiviertem Hyper-V und beschleunigter Grafikkarte führt möglicherweise zu Systemverlangsamungen.
 
- Weitere Informationen finden Sie auf der folgenden Seite der Microsoft-Website: [Die Videoleistung eines Computers mit Windows Server 2008 oder Windows Server 2008 R2 ist bei aktivierter Hyper-V-Rolle und installierter beschleunigter Grafikkarte möglicherweise verringert](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Weitere Informationen finden Sie auf der folgenden Seite der Microsoft-Website: [Video-Leistung möglicherweise verringert Windows Server 2008 oder Windows Server 2008 R2-basierten Computer verfügt über die Hyper-V-Rolle und installierter beschleunigter Grafikkarte](http://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Emulieren von Geräten mit Hyper-V**
 
@@ -129,7 +129,7 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 
 3.  Wählen Sie **Weiter**aus, und befolgen Sie anschließend die übrigen Anweisungen.
 
-##  <a name="helpContent"></a> Installieren von offlinehilfeinhalt
+##  <a name="helpContent"></a> Installieren von Offline-Hilfeinhalt
  Nach der Installation von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]können Sie zusätzliche Hilfeinhalte herunterladen, damit diese offline zur Verfügung stehen.
 
 #### <a name="to-install-or-uninstall-help-content"></a>So installieren oder deinstallieren Sie Hilfeinhalt
@@ -138,7 +138,7 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 
 2. Wählen Sie in der Registerkarte **Inhalt verwalten** in **Microsoft Help Viewer**die Installationsquelle für den Hilfeinhalt aus.
 
-3. Wenn Sie nach einem bestimmten Hilfethema suchen, geben Sie den Namen oder ein Schlüsselwort in der **Suche** Textfeld, und drücken Sie dann die **EINGABETASTE**.
+3. Wenn Sie nach einem bestimmten Hilfethema suchen, geben Sie den Namen oder ein Schlüsselwort in das Textfeld **Suchen** ein und drücken dann die **EINGABETASTE**.
 
 4. Klicken Sie neben dem Namen des Hilfethemas, das Sie installieren möchten, auf **Hinzufügen** oder **Entfernen** .
 
@@ -146,8 +146,8 @@ Bevor wir auf die Details eingehen, finden Sie hier die am häufigsten aufgerufe
 
    Weitere Informationen zu installieren oder Offlinehilfe bereitzustellen, finden Sie unter den [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).
 
-##  <a name="serviceReleases"></a> Überprüfen nach Service Releases und Produktupdates
- Da nicht alle Erweiterungen kompatibel sind, aktualisiert Visual Studio keine Erweiterungen automatisch aktualisieren von früheren Versionen. Installieren Sie erneut die Erweiterungen aus der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Herausgeber Software.
+##  <a name="serviceReleases"></a> Suchen nach Service Releases und Produktupdates
+ Da nicht alle Erweiterungen kompatibel sind, führt Visual Studio kein automatisches Upgrade für Erweiterungen durch, wenn Sie ein Upgrade von früheren Versionen durchführen. Installieren Sie erneut die Erweiterungen aus der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Herausgeber Software.
 
 #### <a name="to-automatically-check-for-service-releases"></a>So suchen Sie automatisch nach Service Releases
 

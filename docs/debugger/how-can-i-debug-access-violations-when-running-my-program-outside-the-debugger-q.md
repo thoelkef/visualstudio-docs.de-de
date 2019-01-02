@@ -1,6 +1,6 @@
 ---
-title: Wie können Zugriffsverletzungen, die beim Ausführen des Programms außerhalb des Debuggers auftreten, gedebuggt werden? | Microsoft-Dokumentation
-ms.custom: ''
+title: Debuggen von zugriffsverletzungen bei der Ausführung einer app außerhalb des Debuggers | Microsoft-Dokumentation
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,20 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47941b2d98029c6466451fb947e31e71d14e6c57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42284de1195afb3b0926b15335c8e37bdcd5ec30
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473009"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048475"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Wie können Zugriffsverletzungen, die beim Ausführen des Programms außerhalb des Debuggers auftreten, gedebuggt werden?
+
 ## <a name="problem-description"></a>Problembeschreibung  
  Das Programm läuft in der Visual Studio-Umgebung einwandfrei. Wird es jedoch eigenständig unter dem Windows-Betriebssystem ausgeführt, generiert es eine Zugriffsverletzung. Wie kann dieses Problem behoben werden?  
   
 ## <a name="solution"></a>Lösung  
- Legen Sie die [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aus, und Ihr Programm im eigenständigen Modus ausgeführt, bis die zugriffsverletzung auftritt. Klicken Sie auf die **Zugriffsverletzung** (Dialogfeld), klicken Sie auf **"Abbrechen"** um den Debugger starten.  
+ Legen Sie die Option für das [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) fest, und führen Sie das Programm im eigenständigen Modus aus, bis eine Zugriffsverletzung auftritt. Dann können Sie im Dialogfeld **Zugriffsverletzung** auf **Abbrechen** klicken, um den Debugger zu starten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

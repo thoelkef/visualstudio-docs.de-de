@@ -1,22 +1,23 @@
 ---
 title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe einer Vorlage'
 description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe der integrierten Vorlage für eine einfache Flask-App.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996001"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066024"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
@@ -78,7 +79,7 @@ Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](ins
 
 **Frage: Welche anderen Python-Vorlagen werden von Visual Studio bereitgestellt?**
 
-**Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und sogar eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei** > **Neu** > **Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
+**Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei** > **Neu** > **Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
 
 Visual Studio bietet auch unterschiedliche Datei- und *Elementvorlagen* zum schnellen Erstellen einer Python-Klasse, eines Python-Pakets, eines Python-Komponententest, von *web.config*-Dateien usw. Wenn Sie ein Python-Projekt geöffnet haben, können Sie über den Menübefehl **Projekt** > **Neues Element hinzufügen** auf Elementvorlagen zugreifen. Weitere Informationen finden Sie in der [Referenz für Python-Elementvorlagen](python-item-templates.md).
 
@@ -86,7 +87,7 @@ Durch das Verwenden von Vorlagen sparen Sie deutlich Zeit, wenn Sie mit einem Pr
 
 **Frage: Kann ich auch Cookiecutter-Vorlagen verwenden?**
 
-**Antwort:** Ja. Cookiecutter-Vorlagen sind sogar direkt in Visual Studio integriert. Informationen dazu finden Sie unter [Quickstart: Create a project from a Cookiecutter template (Schnellstart: Erstellen eines Projekts mit einer Cookiecutter-Vorlage)](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Antwort:** Ja. Cookiecutter-Vorlagen sind sogar direkt in Visual Studio integriert. Informationen dazu finden Sie unter [Quickstart: Create a project from a Cookiecutter template (Schnellstart: Erstellen eines Python-Projekts aus einer Cookiecutter-Vorlage)](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,6 +1,5 @@
 ---
 title: Windows-Firewall für Remotedebuggen konfigurieren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750935"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058596"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Windows-Firewall für Remotedebuggen konfigurieren
 
 In einem Netzwerk, das von der Windows-Firewall geschützt muss die Firewall zum Zulassen von remote-Debuggen konfiguriert werden. Visual Studio und der remote-debugging-Tools testen, um die entsprechenden Firewallports zu öffnen, während der Installation oder beim Start, aber Sie müssen auch Ports öffnen oder manuell apps zulassen. 
 
-In diesem Thema wird beschrieben, wie zum Konfigurieren der Windows-Firewall zum Aktivieren des Remotedebuggens auf Windows 10, 8/8.1 und 7 werden; und WindowsServer 2012 R2, 2012 und 2008 R2-Computer. Der Visual Studio und dem Remotecomputer nicht das gleiche Betriebssystem ausgeführt werden müssen. Z. B. Visual Studio-Computer kann Windows 10 ausführen, und der Remotecomputer kann Windows Server 2012 R2 ausführen.      
+In diesem Thema wird beschrieben, wie zum Konfigurieren der Windows-Firewall zum Aktivieren des Remotedebuggens auf Windows 10, 8/8.1 und 7 werden; und WindowsServer 2012 R2, 2012 und 2008 R2-Computer. Der Visual Studio und dem Remotecomputer nicht das gleiche Betriebssystem ausgeführt werden müssen. Zum Beispiel kann auf dem Visual Studio-Computer Windows 10 und auf dem Remotecomputer Windows Server 2012 R2 ausgeführt werden.      
   
 >[!NOTE]
 >Die Anweisungen zum Konfigurieren der Windows-Firewall unterscheiden sich geringfügig unter verschiedenen Betriebssystemen und für ältere Versionen von Windows. Einstellungen für Windows 8/8.1, Windows 10 und Windows Server 2012 verwenden, das Wort *app*, während Windows 7 und Windows Server 2008, das Wort verwenden *Programm*.  
@@ -56,8 +55,8 @@ Für das Remotedebuggen, müssen die folgenden Ports auf dem Remotecomputer geö
 
 |**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|   
 |-|-|-|-|
-|4022|Eingehende|TCP|Für Visual Studio 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Weitere Informationen finden Sie unter [Visual Studio-Remotedebugger-portzuweisungen](../debugger/remote-debugger-port-assignments.md).|  
-|4023|Eingehende|TCP|Für Visual Studio 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Dieser Port wird nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess. Weitere Informationen finden Sie unter [Visual Studio-Remotedebugger-portzuweisungen](../debugger/remote-debugger-port-assignments.md).| 
+|4022|Eingehend|TCP|Für VS 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Eingehend|TCP|Für VS 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Dieser Port wird nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Ausgehend|UDP|(Optional) Erforderlich für die remotedebuggerermittlung.|    
   
 Bei Auswahl von **verwalteten Kompatibilitätsmodus verwenden** unter **Tools** > **Optionen** > **Debuggen**öffnen Diese zusätzliche Remotedebugger-Ports. Debugger verwalteter Kompatibilitätsmodus ermöglicht eine Vorgängerversion, die Visual Studio 2010-Version des Debuggers. 

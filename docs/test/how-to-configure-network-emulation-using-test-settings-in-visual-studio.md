@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
+title: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829286"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065894"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren von Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 
 Sie können den Adapter für diagnostische Daten für das Testen einer Anwendung in verschiedenen Netzwerkumgebungen von Visual Studio konfigurieren. Er kann auch so konfiguriert werden, dass eine künstliche Netzwerklast oder ein Engpass beim Ausführen der Tests getestet wird.
 
 > [!WARNING]
 > Wenn Sie die Tests auf einem realen Netzwerk ausführen, das langsamer ist als das Netzwerk, das Sie emulieren, wird der Test weiterhin mit der langsameren Netzwerkgeschwindigkeit ausgeführt. Die Emulation kann die Netzwerkumgebung nur verlangsamen, sie jedoch nicht schneller machen.
 
- Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Im folgenden Verfahren wird beschrieben, wie die Netzwerkemulation über den Konfigurations-Editor konfiguriert wird. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und Visual Studio.
 
 > [!NOTE]
 > Der Adapter für diagnostische Daten für die Netzwerkemulation gilt nur für Visual Studio-Testeinstellungen. Er wird nicht für Testeinstellungen in Microsoft Test Manager verwendet.
@@ -34,9 +36,9 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 > [!NOTE]
 > Das Netzwerkdienstkonto, das das Standardkonto für den Test-Agent ist, ist kein Mitglied der Administratorgruppe.
 
- **Wahre Netzwerkemulation**
+**Wahre Netzwerkemulation**
 
- Visual Studio verwendet softwarebasierte wahre Netzwerkemulation für alle Testtypen. Das gilt auch für Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
+Visual Studio verwendet softwarebasierte wahre Netzwerkemulation für alle Testtypen. Das gilt auch für Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
 
 - Roundtripzeit für das Netzwerk (Wartezeit)
 
@@ -50,12 +52,13 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 
 - Fehlerweitergabe
 
-  Wahre Netzwerkemulation bietet auch Flexibilität beim Filtern von Netzwerkpaketen auf Grundlage von IP-Adressen oder Protokollen, z. B. TCP, UDP und ICMP.
+Wahre Netzwerkemulation bietet auch Flexibilität beim Filtern von Netzwerkpaketen auf Grundlage von IP-Adressen oder Protokollen, z. B. TCP, UDP und ICMP.
 
-  Wahre Netzwerkemulation kann von netzwerkbasierten Entwicklern und Testern dazu verwendet werden, eine gewünschte Testumgebung zu emulieren, die Leistung zu bewerten, die Auswirkungen auf Änderung zu prognostizieren oder Entscheidungen zur Technologieoptimierung zu treffen. Im Vergleich zu Hardwareprüfständen ist wahre Netzwerkemulation eine weitaus günstigere und flexiblere Lösung.
+Wahre Netzwerkemulation kann von netzwerkbasierten Entwicklern und Testern dazu verwendet werden, eine gewünschte Testumgebung zu emulieren, die Leistung zu bewerten, die Auswirkungen auf Änderung zu prognostizieren oder Entscheidungen zur Technologieoptimierung zu treffen. Im Vergleich zu Hardwareprüfständen ist wahre Netzwerkemulation eine weitaus günstigere und flexiblere Lösung.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Konfigurieren der Netzwerkemulation für die Testeinstellungen
- Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio öffnen und dann die Seite **Daten und Diagnose** auswählen.
+
+Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio öffnen und dann die Seite **Daten und Diagnose** auswählen.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>So konfigurieren Sie die Netzwerkemulation für die Testeinstellungen
 
@@ -75,12 +78,12 @@ Für die Netzwerkemulation muss ein Konto mit Administratorrechten verwendet wer
 
 4.  Wenn Sie den Adapter für diagnostische Daten für die Netzwerkemulation in die Testeinstellungen einschließen und beabsichtigen, den Adapter auf dem lokalen Computer zu verwenden, müssen Sie auch den Netzwerkemulationstreiber an einen Netzwerkadapter des Computers binden. Der Netzwerkemulationstreiber ist erforderlich, damit der Adapter für diagnostische Daten für die Netzwerkemulation funktioniert. Sie haben zwei Möglichkeiten, den Netzwerkemulationstreiber zu installieren und an den Adapter zu binden:
 
-    -   **Installation des Netzwerkemulationstreibers mit Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent kann sowohl auf Remotecomputern als auch auf dem lokalen Computer verwendet werden. Wenn Sie Visual Studio Test Agent installieren, schließt der Installationsvorgang einen Konfigurationsschritt ein, bei dem der Netzwerkemulationstreiber an die Netzwerkkarte gebunden wird. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
+    -   **Netzwerkemulationstreiber, die mit dem Test-Agent von Microsoft Visual Studio installiert wurden:** Der Test-Agent von Microsoft Visual Studio kann auf Remotecomputern und lokalen Computern verwendet werden. Wenn Sie Visual Studio Test Agent installieren, schließt der Installationsvorgang einen Konfigurationsschritt ein, bei dem der Netzwerkemulationstreiber an die Netzwerkkarte gebunden wird. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Installation des Netzwerkemulationstreibers mit Microsoft Visual Studio Test Professional:** Wenn Sie die Netzwerkemulation zum ersten Mal verwenden, werden Sie aufgefordert, den Netzwerkemulationstreiber an eine Netzwerkkarte zu binden.
+    -   **Netzwerkemulationstreiber, die mit Microsoft Visual Studio Test Professional installiert wurden:** Wenn Sie die Netzwerkemulation zum ersten Mal verwenden, werden Sie aufgefordert, den Netzwerkemulationstreiber mit einer Netzwerkkarte zu verbinden.
 
     > [!TIP]
-    > Sie können den Netzwerkemulationstreiber auch über die Befehlszeile auf dem lokalen Computer installieren, ohne Visual Studio Test Agent zu installieren. Verwenden Sie hierzu folgenden Befehl: **VSTestConfig NETWORKEMULATION /install**.
+    > Sie können den Netzwerkemulationstreiber auch über die Befehlszeile auf dem lokalen Computer installieren, ohne den Visual Studio-Test-Agent zu installieren. Verwenden Sie hierzu folgenden Befehl: **VSTestConfig NETWORKEMULATION /install**
 
 ## <a name="see-also"></a>Siehe auch
 

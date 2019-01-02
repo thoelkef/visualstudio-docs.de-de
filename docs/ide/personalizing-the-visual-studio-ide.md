@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Visual Studio-IDE
+title: Anpassen der IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348694"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159502"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
-Es gibt verschiedene Möglichkeiten, Visual Studio so zu personalisieren, dass Ihr eigener Entwicklungsstil und Ihre Anforderungen am besten unterstützt werden. Viele Ihrer Einstellungen sind auf verschiedenen Visual Studio-Instanzen gültig. Weitere Informationen dazu finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). In diesem Thema werden kurz verschiedene Personalisierungen beschrieben, und es wird erläutert, wo Sie weitere Informationen finden können.
+Es gibt verschiedene Möglichkeiten, Visual Studio so zu personalisieren, dass Ihr eigener Entwicklungsstil und Ihre Anforderungen am besten unterstützt werden. Viele Ihrer Einstellungen sind auf verschiedenen Visual Studio-Instanzen gültig. Weitere Informationen dazu finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). In diesem Artikel werden kurz verschiedene Personalisierungen beschrieben, und es wird erläutert, wo Sie weitere Informationen finden können.
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Anpassen der Visual Studio für Mac-IDE](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Standardeinstellungen
+
+Sie können eine Standardsammlung von Einstellungen auswählen, die Visual Studio für Ihren Entwicklungstyp optimiert. Weitere Informationen finden Sie unter [Umgebungseinstellungen](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Allgemeine Umgebungsoptionen
 
@@ -46,7 +50,7 @@ Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster 
 
 ### <a name="customize-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 
-Weitere Informationen zum Hinzufügen oder Entfernen von Menü-oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Informationen zum Hinzufügen oder Entfernen von Menü- oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Startseite
 
@@ -62,6 +66,7 @@ Sie können das Starten externer Tools im Menü **Extras** anpassen. Weitere Inf
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
-- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+- [Umgebungseinstellungen](environment-settings.md)
+- [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
+- [Schnellstart: Einführung in die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
 - [Anpassen der Visual Studio für Mac-IDE](/visualstudio/mac/customizing-the-ide)

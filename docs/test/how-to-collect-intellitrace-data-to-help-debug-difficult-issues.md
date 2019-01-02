@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace in Visual Studio
+title: IntelliTrace-Daten
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321150"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064756"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Sammeln von IntelliTrace-Daten zum Beheben schwieriger Probleme
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
 Sie können den Adapter für diagnostische Daten für IntelliTrace konfigurieren, um bestimmte Informationen der Diagnoseablaufverfolgung in Visual Studio zu erfassen. Dieser Adapter kann für Tests verwendet werden. Während des Tests können signifikante Diagnoseereignisse für die Anwendung gesammelt werden, die ein Entwickler später verwenden kann, um die Ursache eines Fehlers im Code zu finden. Der Adapter für diagnostische Daten für IntelliTrace kann mit manuellen oder automatisierten Tests verwendet werden.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > IntelliTrace kann nur in einer mit verwaltetem Code geschriebenen Anwendung verwendet werden. Beim Testen einer Webanwendung, die einen Browser als Client verwendet, sollten Sie in den Testeinstellungen für den Client nicht IntelliTrace aktivieren, da kein verwalteter Code für die Ablaufverfolgung verfügbar ist. In diesem Fall können Sie eine Umgebung einrichten und IntelliTrace-Daten remote auf dem Webserver sammeln.
@@ -32,7 +34,7 @@ Die IntelliTrace-Daten werden in einer Datei mit der Erweiterung *.iTrace* gespe
 > [!NOTE]
 > Der Adapter für diagnostische Daten für IntelliTrace erstellt bei einer erfolgreichen Testübergabe keine IntelliTrace-Datei. Eine Datei wird nur bei einem Testfall mit Fehler oder beim Senden eines Fehlers gespeichert.
 
- Die in der IntelliTrace-Datei gesammelten Daten können zur Erhöhung der Debugproduktivität beitragen, da die Zeit zum Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzt wird. Da Sie die IntelliTrace-Datei für eine andere Person freigeben können, die die lokale Sitzung auf ihrem Computer replizieren kann, wird darüber hinaus die Wahrscheinlichkeit gemindert, dass ein Fehler nicht reproduziert werden kann.
+Die in der IntelliTrace-Datei gesammelten Daten können zur Erhöhung der Debugproduktivität beitragen, da die Zeit zum Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzt wird. Da Sie die IntelliTrace-Datei für eine andere Person freigeben können, die die lokale Sitzung auf ihrem Computer replizieren kann, wird darüber hinaus die Wahrscheinlichkeit gemindert, dass ein Fehler nicht reproduziert werden kann.
 
 > [!NOTE]
 > Wenn Sie IntelliTrace in den Testeinstellungen aktivieren, ist das Sammeln von Code Coverage-Daten nicht möglich.
@@ -40,7 +42,7 @@ Die IntelliTrace-Daten werden in einer Datei mit der Erweiterung *.iTrace* gespe
 > [!WARNING]
 > Die Funktionsweise des Adapters für diagnostische Daten besteht in der Instrumentierung eines verwalteten Prozesses, der nach dem Laden des ersten Tests für den Testlauf ausgeführt werden muss. Wenn der zu überwachende Prozess bereits gestartet wurde, werden keine IntelliTrace-Dateien gesammelt, da der Prozess bereits ausgeführt wird. Stellen Sie zur Vermeidung dieses Problems sicher, dass der Prozess beendet wird, bevor die Tests geladen werden. Starten Sie dann den Prozess nach dem Laden der Tests oder dem Starten des ersten Tests.
 
- In der folgenden Prozedur ist beschrieben, wie Sie die zu sammelnden IntelliTrace-Daten konfigurieren. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und das Dialogfeld „Testeinstellungen“ in Visual Studio.
+In der folgenden Prozedur ist beschrieben, wie Sie die zu sammelnden IntelliTrace-Daten konfigurieren. Diese Schritte gelten für den Konfigurations-Editor in Microsoft Test Manager und das Dialogfeld „Testeinstellungen“ in Visual Studio.
 
 > [!NOTE]
 > Das Benutzerkonto für den Test-Agent, mit dem IntelliTrace-Daten gesammelt werden, muss Mitglied der Administratorgruppe sein. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
@@ -101,7 +103,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 11. Wählen Sie die Registerkarte **Erweitert** aus (optional). Klicken Sie dann auf den Pfeil neben **Maximum amount of disk space for recording** (Maximaler Speicherplatz pro Aufzeichnung), und wählen Sie die maximale Größe für die IntelliTrace-Datei aus.
 
     > [!NOTE]
-    > Wenn Sie die Größe der Aufzeichnung erhöhen, könnte ein Timeoutproblem auftreten, wenn Sie diese Aufzeichnung zusammen mit den Testergebnissen speichern. Weitere Informationen zum Erhöhen der Timeoutwerte für Adapter für diagnostische Daten finden Sie unter [Vorgehensweise: Verhindern von Timeouts für Adapter für diagnostische Daten](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Wenn Sie die Größe der Aufzeichnung erhöhen, könnte ein Timeoutproblem auftreten, wenn Sie diese Aufzeichnung zusammen mit den Testergebnissen speichern.
 
 12. Wenn Sie Microsoft Test Manager verwenden, klicken Sie auf **Speichern**. Wenn Sie Visual Studio verwenden, klicken Sie auf **OK**. Die IntelliTrace-Einstellungen werden jetzt konfiguriert und für die Testeinstellungen gespeichert.
 

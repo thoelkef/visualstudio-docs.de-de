@@ -1,5 +1,6 @@
 ---
 title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Community 2017
+titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf5e1487910156dfd547ae563451bd2f2d428d9
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c5573f5501c4723ed6eede9bba82ebc7fdf31730
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607964"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063275"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017-Komponentenverzeichnis
 
@@ -35,7 +36,7 @@ Beachten Sie zudem Folgendes im Hinblick auf die Seite:
 * Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
 * Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
 
-Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie auf der Seite [Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie unter [How to: Migrate Extensibility Projects to Visual Studio 2017 (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **ID:** Microsoft.VisualStudio.Workload.Data
 
-**Beschreibung:** Verbinden, Entwickeln und Testen von Datenlösungen mit SQL Server, Azure Data Lake oder Hadoop.
+**Beschreibung:** Hiermit werden Datenlösungen mit SQL Server, Azure Data Lake oder Hadoop verbunden, entwickelt und getestet.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -211,7 +212,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#-Desktopsprachunterstützung
 
 **ID:** Microsoft.VisualStudio.Workload.DataScience
 
-**Beschreibung:** Sprachen und Tools zum Erstellen von Data Science-Anwendungen, einschließlich Python, R und F#.
+**Beschreibung:** Sprachen und Tools zum Erstellen von Data Science-Anwendungen (einschließlich Python, R und F#).
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -426,7 +427,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.NativeGame
 
-**Beschreibung:** Verwenden Sie die ganze Leistungsfähigkeit von C++ zum Erstellen professioneller Spiele mit DirectX, Unreal oder Cocos2d.
+**Beschreibung:** Verwenden Sie die volle Leistung von C++, um professionelle Spiele zu erstellen, die von DirectX, Unreal oder Cocos2D unterstützt werden.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -484,7 +485,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**Beschreibung:** Erstellen Sie plattformübergreifende Anwendungen für iOS, Android oder Windows mithilfe von C++.
+**Beschreibung:** Erstellen Sie mit C++ plattformübergreifende Anwendungen für iOS, Android oder Windows.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -515,7 +516,7 @@ Component.MDD.IOS | C++ iOS-Entwicklungstools | 15.0.26621.2 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Beschreibung:** Plattformübergreifende Anwendungsentwicklungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern einschließlich Docker-Unterstützung.
+**Beschreibung:** Hiermit erstellen Sie plattformübergreifende Anwendungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern mit Docker-Unterstützung.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -583,7 +584,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Entwicklungszeit-IIS-Unte
 
 **ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**Beschreibung:** Erstellen Sie plattformübergreifende Anwendungen für iOS, Android oder Windows mithilfe von Xamarin.
+**Beschreibung:** Erstellen Sie mit Xamarin plattformübergreifende Anwendungen für iOS, Android oder Windows.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -625,7 +626,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | UWP-Tools für Xamarin | 15.
 
 **ID:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Beschreibung:** Erstellen von Webanwendungen mit ASP.NET, ASP.NET Core, HTML/JavaScript und Containern einschließlich Docker-Unterstützung.
+**Beschreibung:** Hiermit erstellen Sie Webanwendungen mit ASP.NET, ASP.NET Core, HTML/JavaScript und Container mit Docker-Unterstützung.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -713,7 +714,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Laufzeit. 
+**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mithilfe von Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime. 
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -889,7 +890,7 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Voraussetzungen: ASP.NET-
 
 **ID:** Microsoft.VisualStudio.Workload.Universal
 
-**Beschreibung:** Erstellen Sie Anwendungen für die universelle Windows-Plattform mit C#, VB, JavaScript oder optional mit C++.
+**Beschreibung:** Erstellen Sie Anwendungen für die Universelle Windows-Plattform mit C#, VB, JavaScript oder optional mit C++.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -951,7 +952,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Beschreibung:** Erstellen Sie Add-Ons und Extensions für Visual Studio, z.B. neue Befehle, Codeanalysen und Toolfenster.
+**Beschreibung:** Erstellen Sie Add-Ons und Erweiterungen für Visual Studio, z. B. neue Befehle, Codeanalysetools und Toolfenster.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 

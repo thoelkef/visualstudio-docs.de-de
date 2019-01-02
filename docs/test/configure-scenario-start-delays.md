@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297815"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896548"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurieren des Szenarios „Startverzögerungen in Auslastungstests“
 
@@ -24,6 +24,8 @@ Mit dem Auslastungstest-Editor und dem Fenster **Eigenschaften** können Sie ein
 Die Eigenschaft **Startzeit verzögern** kann beispielsweise verwendet werden, wenn Sie in einem Szenario mit der Erstellung von Elementen beginnen müssen, die in einem anderen Szenario benötigt werden. Sie können das Szenario, in dem die Elemente verwendet werden sollen, verzögern, damit in dem Szenario, in dem die Elemente erstellt werden, einige Daten ausgefüllt werden.
 
 Ein anderes Beispiel ist, dass ein Szenario nur zu einer bestimmten Tageszeit ausgeführt wird. Sie möchten daher den Start des Szenarios verzögern, um dies zu simulieren.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-delay-start-time-of-a-scenario"></a>Angeben einer verzögerten Startzeit für ein Szenario
 
@@ -85,6 +87,6 @@ Die Eigenschaft **Während Aufwärmdauer deaktivieren** wird über das **Eigensc
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Editing Load Test Scenarios (Bearbeiten von Auslastungstestszenarios)](../test/edit-load-test-scenarios.md)
+- [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
 - [Configure test agents and test controllers for load tests (Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests)](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

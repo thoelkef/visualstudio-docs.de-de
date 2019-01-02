@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Zuordnung ListObject-Spalten mit Daten'
+title: 'Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673232"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646837"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Vorgehensweise: Zuordnung ListObject-Spalten mit Daten
+# <a name="how-to-map-listobject-columns-to-data"></a>Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten
   Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an <xref:System.Data.DataTable>sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject> -Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> angezeigt werden sollen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: erstellen eine Liste in Excel, die mit einer SharePoint-Liste verbunden ist?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen Sie eine Liste in Excel, die mit einer SharePoint-Liste verbunden ist? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Zuordnen von Spalten  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35673232"
  [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Gewusst wie: Füllen ListObject-Steuerelemente mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Vorgehensweise: Füllen Sie ListObject-Steuerelementen mit Daten.](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject-Steuerelement](../vsto/listobject-control.md)  
   

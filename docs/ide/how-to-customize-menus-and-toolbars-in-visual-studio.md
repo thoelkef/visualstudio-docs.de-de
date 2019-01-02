@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio'
+title: Anpassen von Menüs und Symbolleisten
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745948"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049690"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
 
@@ -81,7 +81,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
         Sie können die Symbolleiste auch am linken Rand ziehen, um sie im Hauptandockbereich zu verschieben.
 
         > [!NOTE]
-        > Weitere Informationen über Möglichkeiten zur Verbesserung der Benutzerfreundlichkeit sowie der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Weitere Informationen zur Verbesserung der Benutzerfreundlichkeit und der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Anpassen eines Menüs oder einer Symbolleiste</a>
 

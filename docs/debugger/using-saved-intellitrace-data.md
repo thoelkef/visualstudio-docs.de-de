@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49912967"
@@ -38,7 +38,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
     |**Quelle**|**Weitere Informationen finden Sie unter**|
     |----------------|-------------|
     |Eine IntelliTrace-Sitzung in Visual Studio Enterprise (nicht in Professional oder Community Editions)|[IntelliTrace-Funktionen](../debugger/intellitrace-features.md)|
-    |Eine Testsitzung in Microsoft Test Manager. Dadurch wird einer Team Foundation Server-Arbeitsaufgabe eine ITRACE-Datei angefügt.|[Sammeln weiterer Diagnosedaten in manuellen Tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+    |Eine Testsitzung in Microsoft Test Manager. Dadurch wird einem Team Foundation Server-Arbeitselement eine ITRACE-Datei angefügt.|[Sammeln weiterer Diagnosedaten in manuellen Tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, entweder allein oder mit System Center 2012 R2 Operations Manager für ASP.NET-Webanwendungen und SharePoint-Anwendungen, bei der Bereitstellung ausgeführt|-   [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
 
 ##  <a name="GetStarted"></a> Wie möchten Sie vorgehen?
@@ -56,7 +56,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
      \- oder –
 
--   Wenn die ITRACE-Datei einer Team Foundation Server-Arbeitsaufgabe angefügt ist, führen Sie folgende Schritte in der Arbeitsaufgabe durch:
+-   Wenn die ITRACE-Datei einem Team Foundation Server-Arbeitselement angefügt ist, führen Sie folgende Schritte im Arbeitselement durch:
 
     -   Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.
 

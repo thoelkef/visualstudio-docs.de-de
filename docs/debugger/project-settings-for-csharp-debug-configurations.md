@@ -1,7 +1,7 @@
 ---
-title: Projekteinstellungen für C#-Debugkonfigurationen | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 11/04/2016
+title: Projekteinstellungen für eine C# Config Debuggen | Microsoft-Dokumentation
+ms.custom: seodec18
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
@@ -22,41 +22,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896340"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059271"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
-Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Fenster wie in beschrieben [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo Sie debuggerspezifischen Einstellungen im finden die **Eigenschaftenseiten** Fenster.  
+
+Sie können ändern, C# Debug-projekteinstellungen in die [Registerkarte "Debuggen"](#debug-tab) und [Registerkarte "Build"](#build-tab) der Eigenschaftenseiten des Projekts. 
+
+Um die Eigenschaftenseiten zu öffnen, wählen Sie das Projekt im **Projektmappen-Explorer** und wählen Sie dann die **Eigenschaften** Symbol, oder mit der rechten Maustaste in des Projekts, und wählen Sie **Eigenschaften**.
+
+Weitere Informationen finden Sie unter [Debug and release configurations (Debug- und Releasekonfigurationen)](how-to-set-debug-and-release-configurations.md). 
+
+>[!IMPORTANT]
+>Diese Einstellungen gelten nicht für .NET Core, ASP.NET oder UWP-apps. Um die Einstellungen zum Debuggen für UWP-apps konfigurieren zu können, finden Sie unter [Starten einer Debugsitzung für UWP-Apps](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
   
-> [!WARNING]
->  Dieses Thema gilt nicht für UWP-Apps. Finden Sie unter [Starten einer Debugsitzung (VB, c#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+## <a name="debug-tab"></a>Registerkarte "Debuggen"  
   
-##  <a name="BKMK_Debug_tab"></a> Registerkarte "Debuggen"  
-  
-| **Einstellung** | **Beschreibung** |
+|Einstellung|Beschreibung|
 |-------------------------------------| - |
-| **Konfiguration** | Legt den Modus für das Kompilieren der Anwendung fest. Wählen Sie zwischen **aktiv (Debuggen)**, **Debuggen**, **Version**, **alle Konfigurationen**. |
-| **Startaktion** | Anhand dieser Gruppe von Steuerungen wird festgelegt, welche Aktion bei Auswahl von Starten im Menü Debuggen erfolgt.<br /><br /> -   **Projekt starten** ist die Standardeinstellung und startet das Startprojekt zum Debuggen. Weitere Informationen finden Sie unter [auswählen des Startprojekts](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Externes Programm starten** ermöglicht Ihnen das Starten und Anfügen an ein Programm, das nicht Teil einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Browser starten, in der URL** ermöglicht es Ihnen, eine Webanwendung Debuggen. |
-| **Befehlszeilenargumente** | Legt Befehlszeilenargumente für das Programm fest, das gedebuggt werden soll. Der Befehlsname entspricht dem unter Externes Programm starten angegebenen Programmnamen. Wenn für Startaktion die Option Start-URL ausgewählt ist, können keine Befehlszeilenargumente festgelegt werden. |
-| **Arbeitsverzeichnis** | Gibt das Arbeitsverzeichnis des Programms an, das gerade gedebuggt wird. Das Arbeitsverzeichnis in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ist das Verzeichnis, aus dem die Anwendung gestartet wird. Standardmäßig ist dies das Verzeichnis \bin\debug. |
-| **Remotecomputer verwenden** | Der Name eines Remotecomputers, in dem die Anwendung wird ausgeführt, für Debugzwecke oder [Msvsmon-Servernamen](../debugger/remote-debugging.md). Der Speicherort der EXE-Datei auf dem Remotecomputer wird durch die Eigenschaft Ausgabepfad festgelegt, die sich im Ordner Konfigurationseigenschaften in der Kategorie Erstellen befindet. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln. |
-| **Nicht verwaltetes Codedebuggen aktivieren** | Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen. |
-| **SQL Server-Debuggen aktivieren** | Ermöglicht das Debuggen von SQL Server-Datenbankobjekten. |
+| **Konfiguration** | Legt den Modus zum Erstellen der app. Wählen Sie **aktiv (Debuggen)**, **Debuggen**, **Version**, oder **alle Konfigurationen** aus der Dropdownliste aus. |
+| **Startaktion** | Gibt die Aktion an, bei der Auswahl **starten** in einem Debug-Konfiguration.<br />- Durch den Standardwert **Projekt starten**, wird das Startprojekt zum Debuggen gestartet. Weitere Informationen finden Sie unter [auswählen des Startprojekts](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Externes Programm starten** startet und wird an eine app, die nicht Teil einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse mit dem Debugger](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Browser mit URL starten** können Sie eine Web-app zu debuggen. |
+| **Startoptionen** > **Befehlszeilenargumente** | Gibt Befehlszeilenargumente für die app, die gedebuggt wird. Der Namen des Befehls wird der Name der app im angegebenen **externes Programm starten**. |
+| **Startoptionen** > **Arbeitsverzeichnis** | Gibt das Arbeitsverzeichnis für die app, die gedebuggt wird. In C#, das Arbeitsverzeichnis ist *\bin\debug* standardmäßig.
+| **Startoptionen** > **Remotecomputer verwenden**|Für das Remotedebuggen, wählen Sie diese Option aus, und geben Sie den Namen der Remotedebugging-Ziel, oder ein [Msvsmon-Servernamen](../debugger/remote-debugging.md). <br />Der Speicherort einer App auf dem Remotecomputer wird angegeben, durch die **Ausgabepfad** Eigenschaft für die **erstellen** Registerkarte. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln. 
+| **Debugger-Engine** > **nicht verwaltetes Codedebuggen aktivieren** | Debuggt Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code aus der verwalteten Anwendung. |
+| **Debugger-Engine** > **SQL Server-debugging aktivieren** | Debuggt SQL Server-Datenbankobjekten. |
   
-##  <a name="BKMK_Build_tab"></a> Registerkarte "erstellen"  
+## <a name="build-tab"></a>Registerkarte "Erstellen"  
   
 |Einstellung|Beschreibung|  
 |-------------|-----------------|  
-|**Symbole für bedingte Kompilierung:**|Hier werden die Konstanten DEBUG und TRACE definiert.<br /><br /> Diese Konstanten unterstützen die bedingte Kompilierung von der [Debug-Klasse](/dotnet/api/system.diagnostics.debug) und [Trace-Klasse](/dotnet/api/system.diagnostics.trace). Diese Konstanten definiert, Debuggen und Trace-Klasse, Methoden Generieren von Ausgaben für die [Fenster "Ausgabe"](../ide/reference/output-window.md). Ohne diese Konstanten werden die Klassenmethoden Debug und Trace nicht kompiliert und keine Ausgabe erzeugt.<br /><br /> -Debug ist normalerweise in der Debugversion eines Programms definiert und in der Releaseversion nicht definiert.<br />-Ablaufverfolgung wird normalerweise in sowohl Debug-und Releaseversionen definiert.|  
-|**Code optimieren**|Sofern Sie keinen Fehler finden, der ausschließlich in optimiertem Code auftritt, sollte diese Einstellung in der Debugversion deaktiviert bleiben. Optimierter Code ist aufwendiger zu debuggen, da die Anweisungen nicht direkt mit den Anweisungen in den Quellcodefenstern übereinstimmen.|  
-|**Ausgabepfad:**|Wird zum Debuggen normalerweise auf "bin\Debug" festgelegt.|
-
-> [!NOTE]
-> Weitere Informationen zu Debugoptionen Sie in finden der **erweitert** Schaltfläche, finden Sie unter [Dialogfeld "Erweiterte Buildeinstellungen" (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Die portable für Symboldateien (.pdb) ist das neueste Cross-Platform-Format für .NET Core. 
+|**Allgemeine** > **Symbole für bedingte Kompilierung**|Wenn ausgewählt, definieren Sie die Konstanten DEBUG und TRACE.<br /><br /> Diese Konstanten ermöglichen das Kompilieren der [Debug-](/dotnet/api/system.diagnostics.debug) und [Trace-Klassen](/dotnet/api/system.diagnostics.trace). Wenn diese Konstanten definiert sind, generieren die Klassenmethoden „Debug“ und „Trace“ eine Ausgabe im [Ausgabefenster](../ide/reference/output-window.md). Ohne diese Konstanten werden die Klassenmethoden Debug und Trace nicht kompiliert und keine Ausgabe erzeugt.<br /><br />DEBUGGEN ist in der Regel in der Debugversion eines Builds definiert und in der Releaseversion nicht definiert. ABLAUFVERFOLGUNG wird in sowohl der Debug-und Releaseversionen definiert.|  
+|**Allgemeine** > **Code optimieren**|Wenn ein Fehler nur im optimierten Code angezeigt wird, behalten Sie für diese Einstellung für Debugbuilds Auswahl aufgehoben wurde. Optimierter Code ist schwieriger zu debuggen, da Anweisungen nicht direkt mit den Anweisungen im Quellcode übereinstimmen.|  
+|**Ausgabe** > **Ausgabepfad**|Wird zum Debuggen normalerweise auf *bin\Debug* festgelegt.|
+|**Erweiterte** Schaltfläche|Weitere Informationen zu erweiterten Optionen für das Debuggen, finden Sie unter [Erweiterte Buildeinstellungen Einstellungen (Dialogfeld) (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Portable Format für das Symbol (*PDB*) Dateien ist eine aktuelle Cross-Platform-Format für .NET Core-apps. 
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

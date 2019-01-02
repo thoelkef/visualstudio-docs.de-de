@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089029"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281744"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über N-Tier-Data-Anwendungen
 *N-schichtige* -datenanwendungen sind datenanwendungen, die in mehrere voneinander *Ebenen*. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.
@@ -64,7 +64,7 @@ In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden 
 Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.
 
 ## <a name="data-tier"></a>Datenschicht
-Die *Datenebene* ist im Grunde der Server, die Daten einer Anwendung gespeichert (z. B. einem Server mit [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+Die *Datenebene* ist im Grunde der Server, die Daten einer Anwendung (z. B. ein Server mit SQL Server) gespeichert.
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der Datenebene einer N-Tier-Anwendung dargestellt.
 

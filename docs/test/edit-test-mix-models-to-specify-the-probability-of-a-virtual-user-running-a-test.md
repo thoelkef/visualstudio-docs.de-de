@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Textmischungsmodellen in Visual Studio
+title: Bearbeiten von Textmischungsmodellen
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816014"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057112"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
 Das *Testmischungsmodell* gibt die Wahrscheinlichkeit dafür an, dass ein virtueller Benutzer einen bestimmten Test in einem Auslastungstestszenario ausführt. Auf diese Weise können Sie Auslastungen realitätsnaher simulieren. Anstatt nur einen Workflow für die Anwendungen zu verwenden können Sie mehrere Workflows simulieren. Dies stellt eine bessere Annäherung an die tatsächliche Interaktion zwischen Endbenutzern und Anwendungen dar.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-options"></a>Testmischungsmodelloptionen
 
@@ -38,7 +40,7 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
-|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im **Assistent für neuen Auslastungstest** Einstellungen für den Auslastungstest an. Im **Assistent für neuen Auslastungstest** wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Angeben der Testmischung für den Auslastungstest:** Wenn Sie einen Auslastungstest erstellen, geben Sie im **Assistenten für neuen Auslastungstest** Einstellungen für den Auslastungstest an. Im **Assistent für neuen Auslastungstest** wählen Sie vorhandene Web- und Komponententests aus, die dem Anfangsszenario hinzugefügt werden sollen. Nachdem Sie dem Szenario Tests hinzugefügt haben, geben Sie die Testmischung für das Szenario an.<br /><br /> Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.|-   [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Bearbeiten des Testmischungsmodells:** Sie können ein Auslastungstestszenario mit dem **Auslastungstest-Editor** ändern, um eines der Testmischungsmodelle zu verwenden.||
 |**Konfigurieren der Geschwindigkeitsverzögerung für ein Testmischungsmodell nach Benutzergeschwindigkeit:** Wenn das Auslastungstestszenario für die Verwendung eines Testmischungsmodells konfiguriert ist und die Option **Auf Grundlage der Benutzergeschwindigkeit** aktiviert ist, können Sie die Verteilung der Geschwindigkeitsverzögerung konfigurieren.|-   [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 

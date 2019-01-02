@@ -1,7 +1,7 @@
 ---
 title: Zeichenfolgen in einen Zeichenfolgen-Schnellansicht anzeigen | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349087"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388555"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Anzeigen von Zeichenfolgen in einen Zeichenfolgen-Schnellansicht in Visual Studio
 
@@ -69,5 +69,5 @@ Eine gut formatierte HTML-Zeichenfolge angezeigt wird, als ob in einem Browser g
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen Sie benutzerdefinierter Schnellansichten (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Erstellen benutzerdefinierter Schnellansichten (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Datenvisualisierungen in Visual Studio für Mac](/visualstudio/mac/data-visualizations)

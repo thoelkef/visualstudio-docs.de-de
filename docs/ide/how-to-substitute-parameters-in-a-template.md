@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Namensparametern zu Projekt- und Elementvorlagen in Visual Studio
+title: Hinzufügen von Namensparametern zu Projekt- und Elementvorlagen
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7dbc27762319538053ecee5d7566d86c998db852
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945934"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062469"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
 

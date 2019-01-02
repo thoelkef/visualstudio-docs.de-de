@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Öffnen Office-Projektmappen ohne Ausführen von Code'
+title: 'Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254987"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646905"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Gewusst wie: Öffnen Office-Projektmappen ohne Ausführen von Code
+# <a name="how-to-open-office-solutions-without-running-code"></a>Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code
   Mit Erweiterungen durch verwalteten Code erstellte eine Microsoft Office-Projektmappe ausgeführt wird, auch wenn die sicherheitseinstellung in der Endbenutzer Office-Anwendung auf hoch festgelegt ist. Dies ist da die Sicherheit von Microsoft .NET Framework, nicht von Microsoft Office verwaltet wird.  
   
  Es gibt jedoch auch vorkommen, dass Sie möglicherweise ein Dokument zu öffnen, ohne den Code ausführen möchten. Z. B. Code, der ausgeführt wird, wenn das Dokument geöffnet wird, kann den Inhalt ändern, aber die Möglichkeit, die das Dokument vor den Änderungen am Code hierfür, aktualisiert werden soll. Oder möglicherweise möchten das Dokument mit der bestimmte Informationen darin an jemanden senden, und nicht möchten, dass des Codes zum Ausführen und den Inhalt möglicherweise ändern.  

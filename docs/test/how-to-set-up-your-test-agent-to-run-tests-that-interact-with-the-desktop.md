@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862098"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894572"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
 
 Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren, müssen Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren. Wenn Sie z. B. einen Test der programmierten UI mithilfe eines Testcontrollers und eines Test-Agents remote ausführen möchten oder einen Test ausführen und während der Ausführung eine Videoaufzeichnung erfassen möchten, müssen Sie den Agent für die Ausführung als Prozess einrichten. Wenn Sie mit Microsoft Test Manager in den Testeinstellungen oder mit Visual Studio in der Umgebung Rollen Agents zuweisen, müssen Sie das Setup für alle Agents ändern, die Rollen zugewiesen sind, die mit dem Desktop interagieren.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Wenn Sie Microsoft Test Manager zum Einrichten einer Laborumgebung verwenden, wird der Test-Agent installiert. Sie können im **Assistenten für die Umgebungserstellung** angeben, dass Sie eine der Rollen zur Ausführung von Tests der programmierten UI konfigurieren möchten.

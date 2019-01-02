@@ -1,10 +1,9 @@
 ---
-title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140741"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561379"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
-Gibt an, und zwar unabhängig davon, ob die **fügen Sie Code in separate Datei** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** (Dialogfeld).  
+Gibt an, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** im Dialogfeld.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -49,22 +48,22 @@ Gibt an, und zwar unabhängig davon, ob die **fügen Sie Code in separate Datei*
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in beiden angezeigt der **neues Projekt** oder **neues Element** (Dialogfeld).|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in einem angezeigt. die **neues Projekt** oder **neues Element** Dialogfeld.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`gibt an, fest, ob die **Code in separaten Datei platzieren** das Kontrollkästchen aktiviert ist, der **neues Element hinzufügen** (Dialogfeld).  
+ Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** im Dialogfeld.  
   
 ## <a name="remarks"></a>Hinweise  
  `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`.  
   
- Die `SupportsCodeSeparation` Element ist nur für Elementvorlagen Web verfügbar.  
+ Die `SupportsCodeSeparation` -Element ist nur verfügbar für Web-Elementvorlagen.  
   
- Getrenntem Code oder der Code-Behind-Seitenmodell können Sie das Markup in eine Datei und den Programmcode in einer anderen Datei beibehalten. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anderen dieses Modell verwendet.  
+ Codetrennung und das Code-Behind-Seitenmodell, können Sie das Markup in eine Datei und den Programmcode in einer anderen Datei zu speichern. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anderen verwenden Sie dieses Modell.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird zum Anzeigen der **fügen Sie Code in separate Datei** Option.  
+ Im folgenden Beispiel wird zum Anzeigen der **Code in eigener Datei platzieren** Option.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

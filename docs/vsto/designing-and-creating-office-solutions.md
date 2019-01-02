@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671243"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648806"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedliche Typen von Office-Projektmappen erstellen können. In diesem Abschnitt der Dokumentation werden die Projektvorlagen beschrieben und Anweisungen zum Erstellen von Office-Projekten bereitgestellt. Weitere Informationen zum Implementieren von Code- und Benutzeroberflächenanpassungen, nachdem Sie das Projekt erstellt haben, finden Sie unter [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md).  
@@ -96,13 +96,13 @@ ms.locfileid: "50671243"
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)   
- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md)   
  [Führen Sie Lösungen in verschiedenen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [Gewusst wie: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [Gewusst wie: Einrichten von Konfigurationsinformationen für eine Office-Projektmappe](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
+ [Vorgehensweise: Einrichten von Konfigurationsinformationen für eine Office-Projektmappe](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [Verwenden von Office-Funktionen in Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)   

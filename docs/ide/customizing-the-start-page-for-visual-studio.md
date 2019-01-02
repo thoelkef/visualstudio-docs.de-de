@@ -1,5 +1,5 @@
 ---
-title: Installieren einer benutzerdefinierten Startseite oder Ändern des Startelements in Visual Studio
+title: Installieren einer benutzerdefinierten Startseite oder Ändern des Startelements
 ms.date: 02/01/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e32a311bcd60542df80518c791b1fbe413a7b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8f09302a459e31406d69596d43b5c39a67c8268
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916606"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064046"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
 

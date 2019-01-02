@@ -1,6 +1,7 @@
 ---
-title: 'Gewusst wie: Installieren der Visual Studio-Tools für Office-Laufzeit'
-ms.custom: ''
+title: 'Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -11,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Office runtime [Office development in Visual Studio]
 - installing Office development tools in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15e3c1b25d4834808fb17e596fcc7babe7dd969f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 83bc53dec2c4085b59a07ddc4694ff184b9e75a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255849"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648495"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Gewusst wie: Installieren der Visual Studio-Tools für Office-Laufzeit
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit
   Visual Studio 2010-Tools für Office-Laufzeit muss installiert sein, auf jedem Computer, die Lösungen ausgeführt, die erstellt werden wird, indem Sie mit der Microsoft Office Developer Tools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Die Laufzeit wird automatisch installiert, wenn Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Microsoft Office installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
  Sie müssen möglicherweise die Anweisungen zur manuellen Installation weiter unten in den folgenden Situationen befolgen:  
@@ -54,8 +55,8 @@ ms.locfileid: "35255849"
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [Gewusst wie: konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [Gewusst wie: Installieren von Office primary interop-Assemblys](../vsto/how-to-install-office-primary-interop-assemblies.md)   
+ [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   

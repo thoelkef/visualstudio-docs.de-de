@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Ports für Testcontroller und Test-Agents in Visual Studio
+title: Konfigurieren von Ports für Testcontroller und Test-Agents
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 12aacb0ff6530e1ee21bd57639a7e84bdb65ea9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297595"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068580"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurieren von Ports für Testcontroller und Test-Agents
 
 Sie können die vom Testcontroller, Test-Agent und Client verwendeten Standardports ändern. Dies ist möglicherweise erforderlich, wenn Sie den Testcontroller, Test-Agent oder Client zusammen mit anderer Software verwenden möchte, bei der ein Konflikt mit den Porteinstellungen auftritt. Ein weiterer Grund zum Ändern der Ports besteht in der Firewalleinschränkung zwischen dem Testcontroller und dem Client. In diesem Fall können Sie den Port manuell konfigurieren, um eine Firewall zuzulassen, damit der Testcontroller Ergebnisse an den Client senden kann.
 
- Die folgende Abbildung zeigt die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client an. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Ports und Sicherheit von Testcontrollern und Test-Agents](../test/media/test-controller-agent-firewall.png)
+Die folgende Abbildung zeigt die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client an. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
+
+![Ports und Sicherheit von Testcontrollern und Test-Agents](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Eingehende Verbindungen
 

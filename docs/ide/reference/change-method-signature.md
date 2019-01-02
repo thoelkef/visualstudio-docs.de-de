@@ -1,5 +1,5 @@
 ---
-title: Refactoring einer Methodensignatur in Visual Studio
+title: Umgestalten der Methodensignatur
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842286"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062334"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Ändern einer Methodensignatur durch Refactoring
 
@@ -30,9 +30,9 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie Parameter einer Methode entfernen oder deren Reihenfolge ändern.
+**Beschreibung:** Hiermit können Sie Parameter einer Methode entfernen oder deren Reihenfolge ändern.
 
-**Hintergrund**: Sie möchten einen Methodenparameter verschieben oder entfernen, der gegenwärtig an vielen Stellen verwendet wird.
+**Hintergrund:** Sie möchten einen Methodenparameter verschieben oder entfernen, der gegenwärtig an vielen Stellen verwendet wird.
 
 **Vorteile**: Sie könnten die Parameter manuell entfernen und neu anordnen und anschließend alle Aufrufe dieser Methode suchen und nacheinander ändern, was jedoch Fehler verursachen könnte.  Bei diesem Refactoringtool wird der Task automatisch ausgeführt.
 
@@ -62,7 +62,7 @@ Dieses Refactoring gilt für:
 
    ![Dialogfeld „Signatur ändern“](media/changesignature-dialog-cs.png)
 
-   | Schaltfläche | Beschreibung 
+   | Schaltfläche | Beschreibung
    | ------ | ---
    | **Nach oben/unten** | Den ausgewählten Parameter in der Liste nach oben oder nach unten verschieben
    | **Entfernen** | Den ausgewählten Parameter aus der Liste entfernen

@@ -1,5 +1,6 @@
 ---
 title: Erweiterte Features von Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863647"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159398"
 ---
 # <a name="features-of-visual-studio-2017"></a>Features von Visual Studio 2017
 
-Der Artikel [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md) bietet eine grundlegende Einführung in Visual Studio. In diesem Artikel werden Features beschrieben, die möglicherweise besser für erfahrene Entwickler oder Benutzer geeignet sind, die bereits mit Visual Studio vertraut sind.
+Der Artikel [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md) bietet eine grundlegende Einführung in Visual Studio. In diesem Artikel werden Features beschrieben, die möglicherweise besser für erfahrene Entwickler oder Benutzer geeignet sind, die bereits mit Visual Studio vertraut sind.
 
 ## <a name="modular-installation"></a>Modulare Installation
 
@@ -100,13 +101,13 @@ Wenn Ihre Anwendung für die Bereitstellung für Benutzer oder Kunden bereit ist
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Verarbeiten Ihres Quellcodes und Zusammenarbeiten mit anderen
 
-Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Azure DevOps Services](/azure/devops/index), um Code zusammen mit Fehlern und Arbeitsaufgaben für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Azure Repos and Visual Studio (Erste Schritte mit Git und Visual Studio)](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Features in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
+Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Azure DevOps Services](/azure/devops/index), um Code zusammen mit Fehlern und Arbeitselemente für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Azure Repos and Visual Studio (Erste Schritte mit Git und Visual Studio)](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Features in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Azure DevOps Services besteht aus cloudbasierten Diensten für die Planung, das Hosting, die Automatisierung und die Bereitstellung von Software und die Zusammenarbeit in Teams. Azure DevOps Services unterstützt sowohl Git-Repositorys (verteilte Versionskontrolle) und Team Foundation-Versionskontrolle (zentrale Versionskontrolle) sowie Pipelines für die kontinuierliche Erstellung und Veröffentlichung (CI/CD) von Code, der in Versionskontrollsystemen gespeichert ist. Azure DevOps Services unterstützt auch Scrum, CMMI und agile Entwicklungsmethoden.
 
 Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für Visual Studio. Auf diese Weise können alle am Entwicklungsprozess beteiligten Personen mithilfe einer einzigen Projektmappe am Prozess teilnehmen. TFS ist auch nützlich für die Verwaltung heterogener Teams und Projekte.
 
-Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie **Team Explorer** über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
+Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitselemente verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie **Team Explorer** über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
 
 Die folgende Abbildung zeigt das Fenster **Team Explorer** für eine Projektmappe, die in Azure DevOps Services gehostet wird.
 
@@ -126,5 +127,5 @@ Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweiter
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
 - [Neuerungen in Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

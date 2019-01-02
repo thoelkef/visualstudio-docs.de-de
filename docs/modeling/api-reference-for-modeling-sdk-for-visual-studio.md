@@ -1,5 +1,5 @@
 ---
-title: API-Referenz für Modellierungs-SDK für Visual Studio
+title: API-Referenz für Modellierungs-SDK
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21da4ff34c26d28944af5edcb14e40b2db0d94d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2176e18678685cc1dbc69f8c33b5aee7e426d57
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896965"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061720"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
 
@@ -22,7 +22,7 @@ Die Visual Studio-Visualisierungs und Modellierungs-SDK bietet die Plattform, au
 
 Dieser Abschnitt enthält Referenzmaterial für Namespaces, deren Namen mit "Microsoft.VisualStudio.Modeling" beginnen.
 
-|Namespace|Inhalt|
+|Namespace|Content|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Klassen wie z. B. ModelElement, die die Basisklasse aller Domänenklassen ist, die Sie in einer DSL zu definieren.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Klassen, die Teil einer DSL-Definition an.|

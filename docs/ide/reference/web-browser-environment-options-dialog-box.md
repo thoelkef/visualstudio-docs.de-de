@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671884"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389444"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
+
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.
 
-
 ## <a name="home-page"></a>Startseite
- Legt die Seite fest, die beim Öffnen des IDE-Webbrowsers angezeigt wird.
+
+Legt die Seite fest, die beim Öffnen des IDE-Webbrowsers angezeigt wird.
 
 ## <a name="search-page"></a>Suchseite
- Hier können Sie eine Suchseite für den internen Webbrowser festlegen. Diese Adresse kann sich von der Suchseite unterscheiden, die von Internet Explorer-Instanzen verwendet wird, die außerhalb der integrierten Entwicklungsumgebung (IDE) gestartet wurden.
+
+Hier können Sie eine Suchseite für den internen Webbrowser festlegen. Diese Adresse kann sich von der Suchseite unterscheiden, die von Internet Explorer-Instanzen verwendet wird, die außerhalb der integrierten Entwicklungsumgebung (IDE) gestartet wurden.
 
 ## <a name="view-source-in"></a>Quelltext anzeigen in
- Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den Befehl **Quelltext anzeigen** auf der im internen Webbrowser angezeigten Seite wählen.
+
+Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den Befehl **Quelltext anzeigen** auf der im internen Webbrowser angezeigten Seite wählen.
 
 -   **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
 
@@ -58,11 +60,11 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
 -   **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer-Optionen
+
 Klicken Sie hier, um im Dialogfeld **Interneteigenschaften** Optionen für Internet Explorer zu ändern. Änderungen, die in diesem Dialogfeld vorgenommen werden, wirken sich sowohl auf den internen Webbrowser als auch auf die Internet Explorer-Instanzen aus, die außerhalb der Visual Studio-IDE (z.B. über das Startmenü) gestartet wurden.
 
 > [!NOTE]
 > Im Dialogfeld **Browse with** (Durchsuchen mit) können Sie den internen Webbrowser von Visual Studio durch einen Browser Ihrer Wahl ersetzen. Für das Öffnen des Dialogfelds „“ haben Sie zwei Optionen: Klicken Sie entweder mit der rechten Maustaste auf z.B. eine HTML-Datei in Ihrem Projekt, oder öffnen Sie deren Kontextmenü.
-
 
 ## <a name="see-also"></a>Siehe auch
 

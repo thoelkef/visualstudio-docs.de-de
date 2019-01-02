@@ -1,5 +1,5 @@
 ---
-title: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter in Visual Studio
+title: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203962"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065946"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 
@@ -30,6 +30,8 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 > **Error 8110. Can not connect to the specified controller computer or access the controller object** (Fehler 8110. Verbindung zum angegebenen Controllercomputer konnte nicht hergestellt werden, oder auf das Controllerobjekt konnte nicht zugegriffen werden).
 >
 > Dieser Fehler kann bei der Installation des Testcontrollers auf einem Computer mit mehr als einem Netzwerkadapter auftreten. Es ist auch möglich, dass Agents erfolgreich installiert werden können und das Problem erst bei einem Testlauf auftritt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Binden eines Testcontrollers an einen bestimmten Netzwerkadapter
 
@@ -134,4 +136,4 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

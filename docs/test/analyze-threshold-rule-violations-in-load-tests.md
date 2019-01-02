@@ -1,5 +1,5 @@
 ---
-title: Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests in Visual Studio
+title: Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812997"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061810"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -30,14 +30,16 @@ Schwellenwertregeln sind bestimmten Leistungsindikatoren zugeordnet. Verletzunge
 
 Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** in der Statusleiste des **Auslastungstest-Analyzers** mit der Anzahl der aufgetretenen Verletzungen angegeben. Klicken Sie auf den Link, um die Schwellenwertverletzungs-Tabelle anzuzeigen. Die Schwellenwertverletzungen können auch im Fenster **Indikatoren** und im Diagramm angezeigt werden.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="view-threshold-violations-in-the-table"></a>Anzeigen von Schwellenwertverletzungen in der Tabelle
 
  In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|Beschreibung |In der Standardeinstellung angezeigt|
+|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
 |-|-|-|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
-|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**: Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
+|Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**:  Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
 |Kategorie|Die Kategorie des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Zähler|Der Name des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Instanz|Die Instanz des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
@@ -67,8 +69,6 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
  Optional können Schwellenwertverletzungen auch im Diagramm angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist.
 
  In der Indikatorstruktur werden Symbole für Schwellenwertverletzungen von den einzelnen Indikatorknoten auf den Stammknoten übertragen. So werden Sie auf Verletzungen von Indikatoren hingewiesen, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde.
-
- Weitere Informationen finden Sie unter [Verwenden des Indikatorbereichs in der Diagrammansicht und Tabellenansicht](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Anzeigen von Schwellenwertverletzungen im Diagramm
 

@@ -1,24 +1,26 @@
 ---
-title: 'Tutorial: Informationen zu Django in Visual Studio – Schritt 6'
+title: 'Tutorial zu Django in Visual Studio, Schritt 6: Projektvorlage für Umfragen'
+titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Features der Vorlage „Fragt ein Django-Webprojekt ab“, wie z.B. die administrative Anpassung.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143475"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062495"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Django-Webprojektvorlage für Umfragen
 
 **Vorheriger Schritt: [Authentifizieren von Benutzern bei Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
@@ -35,7 +37,7 @@ In diesem Schritt wird Folgendes erläutert:
 
 Ein mit dieser Vorlage erstelltes Projekt ähnelt dem Ergebnis, das Sie erzielen, indem Sie dem Tutorial [Writing your first Django app (Erstellen Ihrer ersten Django-App)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) in den Django-Dokumenten folgen. Die Web-App besteht aus einer öffentlichen Website, die ermöglicht, Umfragen anzuzeigen und in ihnen abzustimmen, und einer benutzerdefinierte Verwaltungsschnittstelle, über die Sie Umfragen verwalten können. Sie verwendet das gleiche Authentifizierungssystem wie die Vorlage „Django-Webprojekt“ und nutzt zudem die Datenbank durch Implementierung von Django-Modellen, womit sich die folgenden Abschnitte befassen.
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Schritt 6-1: Erstellen des Projekts und Initialisieren der Datenbank
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Schritt 6.1: Erstellen des Projekts und Initialisieren der Datenbank
 
 1. Wechseln Sie in Visual Studio zum **Projektmappen-Explorer**. Klicken Sie mit der rechten Maustaste auf die Projektmappe **LearningDjango**, die Sie in diesem Tutorial bereits erstellt haben. Klicken Sie anschließend auf **Hinzufügen** > **Neues Projekt**. (Wenn Sie stattdessen eine neue Projektmappe verwenden möchten, klicken Sie auf **Datei** > **Neu** > **Projekt**.)
 
@@ -75,7 +77,7 @@ Das Migrationsskript selbst wird vom Befehl `manage.py makemigrations` erstellt,
 
 Sie arbeiten mit einer Migration in Schritt 6-3 weiter unten in diesem Artikel.
 
-## <a name="step-6-2-understand-data-models"></a>Schritt 6-2: Informationen zu Datenmodellen
+## <a name="step-6-2-understand-data-models"></a>Schritt 6.2: Informationen zu Datenmodellen
 
 Die Modelle für die App mit den Namen „Poll“ (Umfrage) und „Choice“ (Auswahl) werden in *app/models.py* definiert. Jedes Modell ist eine Python-Klasse, die von `django.db.models.Model` abgeleitet wird und Methoden der `models`-Klasse verwendet, z.B. `CharField` und `IntegerField`, um Felder im Modell zu definieren, die Datenbankspalten zugeordnet sind.
 
@@ -162,7 +164,7 @@ Um die Auswirkungen anzuzeigen, führen Sie zuerst die App aus, um sich davon zu
 
 Antwort: Ja, Sie können den Befehl [django-admin-loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) verwenden, um die gleiche Aufgabe durchzuführen wie die Seeding-Seite in der App. Wenn Sie mit einer vollständigen Web-App arbeiten, verwenden Sie möglicherweise eine Kombination der beiden Methoden: Sie initialisieren eine Datenbank über die Befehlszeile und wandeln dann die Seed-Seite hier in eine API um, der Sie jedes andere beliebige JSON-Objekt senden können, anstatt sich auf eine hartcodierte Datei zu stützen.
 
-## <a name="step-6-3-use-migrations"></a>Schritt 6-3: Verwenden von Migrationen
+## <a name="step-6-3-use-migrations"></a>Schritt 6.3: Verwenden von Migrationen
 
 Wenn Sie den Befehl `manage.py makemigrations` (über das Kontextmenü in Visual Studio) ausgeführt haben, nachdem Sie das Projekt erstellt haben, hat Django die Datei *app/migrations/0001_initial.py* erstellt. Diese Datei enthält ein Skript, das die ursprünglichen Datenbanktabellen erstellt.
 
@@ -192,7 +194,7 @@ Das Migrationsfeature von Django bedeutet auch, dass Sie Ihr Datenbankschema nie
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Frage: Was geschieht, wenn ich vergesse, den Migrationsbefehl auszuführen, nachdem ich Änderungen an Modellen vorgenommen habe?
 
-Antwort: Wenn die Modelle nicht mit dem Inhalt der Datenbank übereinstimmen, schlägt Django zur Laufzeit mit den entsprechenden Ausnahmefehlern fehl. Wenn Sie vergessen, die im vorherigen Abschnitt gezeigte Modelländerung zu migrieren, wird der Fehler **no such column: app_poll.author** (keine solche Spalte: app_poll.author) angezeigt:
+Antwort: Wenn die Modelle nicht mit dem Inhalt der Datenbank übereinstimmen, schlägt Django zur Laufzeit mit den entsprechenden Ausnahmen fehl. Wenn Sie vergessen, die im vorherigen Abschnitt gezeigte Modelländerung zu migrieren, wird der Fehler **no such column: app_poll.author** (keine solche Spalte: app_poll.author) angezeigt:
 
 ![Fehler, der angezeigt wird, wenn eine Modelländerung nicht migriert wurde](media/django/step06-exception-when-forgetting-to-migrate.png)sein.
 
@@ -206,7 +208,7 @@ Antwort: Obwohl neu generierte Skripts im Ordner *app/migrations* vorhanden sind
 
 Antwort: Ja, verwenden Sie den Befehl [django admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 6-4: Informationen zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Schritt 6.4: Grundlegendes zu den Ansichten und Seitenvorlagen, die von der Projektvorlage erstellt wurden
 
 Die meisten der von der Vorlage „Fragt ein Django-Webprojekt ab“ generierten Ansichten, z.B. die Ansichten für die Seiten „Info“ und „Kontakt“, sind den von der Vorlage „Django-Webprojekt“ erstellten Ansichten sehr ähnlich, mit denen Sie am Anfang des Tutorials gearbeitet haben. Die Umfrage-App unterscheidet sich dadurch, dass ihre Startseite, wie auch mehrere hinzugefügte Seiten zum Abstimmen und Anzeigen von Umfrageergebnissen, Modelle verwendet.
 
@@ -321,7 +323,7 @@ def vote(request, poll_id):
 
 Die Ansicht hat hier – anders als die anderen Seiten – keine eigene entsprechende Vorlage. Stattdessen wird die ausgewählte Umfrage validiert, und ein 404-Fehler wird angezeigt, wenn die Umfrage nicht vorhanden ist (für den Fall, dass jemand eine URL wie „vote/1a2b3c“ eingibt). Anschließend wird sichergestellt, dass die Auswahlmöglichkeit, für die gestimmt wurde, für die Umfrage gültig ist. Wenn dies nicht der Fall, rendert der `except`-Block lediglich erneut die Detailseite mit einer Fehlermeldung. Wenn die Auswahl gültig ist, zählt die Ansicht die Stimmen und leitet an die Seite „Ergebnisse“ weiter.
 
-## <a name="step-6-5-create-a-custom-administration-interface"></a>Schritt 6-5: Erstellen einer benutzerdefinierten Verwaltungsschnittstelle
+## <a name="step-6-5-create-a-custom-administration-interface"></a>Schritt 6.5: Erstellen einer benutzerdefinierten Verwaltungsschnittstelle
 
 Die letzten Bestandteile der Vorlage „Fragt ein Django-Webprojekt ab“ sind benutzerdefinierte Erweiterungen der standardmäßigen Django-Verwaltungsschnittstelle, wie bereits am Anfang dieses Artikels in Schritt 6-1 gezeigt. Die Standardschnittstelle sieht lediglich eine Benutzer- und Gruppenverwaltung vor. Die Umfrageprojektvorlage fügt Features hinzu, die Ihnen ermöglichen, auch die Umfragen zu verwalten.
 
@@ -362,7 +364,7 @@ Der Aufruf von `admin.site.register` verbindet dann diese Klasse mit dem Modell 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!Note]
-> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Lösung sollte mit dem Tutorial-Quellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Wenn Sie im Laufe des Tutorials einen Commit der Visual Studio-Projektmappe an die Quellcodeverwaltung ausgeführt haben, ist nun ein guter Zeitpunkt für einen weiteren Commit gekommen. Ihre Lösung sollte mit dem Tutorialquellcode auf GitHub übereinstimmen: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Sie haben jetzt sämtliche Vorlagen, „Leeres Django-Webprojekt“, „Django Webprojekt“ und „Fragt Django-Webprojekt ab“, eingehend in Visual Studio untersucht. Sie haben alle Grundlagen von Django kennen gelernt, z.B. die Verwendung von Ansichten und Vorlagen, und haben sich mit der Weiterleitung, Authentifizierung und Verwendung von Datenbankmodellen näher beschäftigt. Sie sollten nun in der Lage sein, selbst eine Web-App mit allen Ansichten und Modellen zu erstellen, die Sie benötigen.
 

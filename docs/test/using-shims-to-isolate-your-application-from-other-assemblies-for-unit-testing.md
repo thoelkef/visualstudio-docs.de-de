@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Shims zum Isolieren der Anwendung für Unittests in Visual Studio
+title: Verwenden von Shims zum Isolieren der Anwendung für Unittests
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915242"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065609"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Shims zum Isolieren der Anwendung für Komponententests in Visual Studio verwenden
 
@@ -55,7 +55,7 @@ Der folgende Test zeigt, wie der Shimtyp `ShimDateTime` verwendet wird, um eine 
 ```csharp
 //unit test code
 // create a ShimsContext cleans up shims
-using (ShimsContext.Create()
+using (ShimsContext.Create()) {
     // hook delegate to the shim method to redirect DateTime.Now
     // to return January 1st of 2000
     ShimDateTime.NowGet = () => new DateTime(2000, 1, 1);
@@ -93,7 +93,7 @@ Es ist wichtig, jeden Shimkontext ordnungsgemäß zu löschen. Als Faustregel gi
 
 ###  <a name="WriteShims"></a> Einen Test mit Shims schreiben
 
-Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Zum Beispiel:
+Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Beispiel:
 
 ```csharp
 [TestClass]
@@ -511,5 +511,5 @@ Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorli
 ## <a name="see-also"></a>Siehe auch
 
 - [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost’s blog: Visual Studio 2012 Shims (Peter Provosts Blog: Visual Studio 2012-Shims)](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Peter Provost's blog: Visual Studio 2012 shims (Blog von Peter Provost: Shims in Visual Studio 2012)](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
 - [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mithilfe von Fakes in Visual Studio 2012)](http://go.microsoft.com/fwlink/?LinkId=261837)

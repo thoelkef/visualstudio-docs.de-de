@@ -12,21 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671236"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389359"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte
 
 Legt den Webserver fest, den Webprojekte zur Entwicklung innerhalb von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden. Um Zugriff auf diese Optionen zu erhalten, klicken Sie auf **Extras > Optionen**. Erweitern Sie **Projekte und Projektmappen**, und klicken Sie dann auf **Webprojekte**.
 
 Beim Ausführen eines Webprojekts in Visual Studio wird standardmäßig der Visual Studio Development Server verwendet. Weitere Informationen finden Sie unter [Webserver in Visual Studio für ASP.NET-Webprojekte](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
-
-> [!NOTE]
-> Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der **Webeinstellungen** geschrieben. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Einstellungen
 

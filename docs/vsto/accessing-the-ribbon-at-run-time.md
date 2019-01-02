@@ -1,5 +1,5 @@
 ---
-title: Zugriff auf die Multifunktionsleiste zur Laufzeit
+title: Zugriff auf das Menüband zur Laufzeit
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Globals class, Ribbon
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: abeffdbc61861aae3c0c9c53cb07d597abaa31c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263212"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304622"
 ---
-# <a name="access-the-ribbon-at-runtime"></a>Zugriff auf die Multifunktionsleiste zur Laufzeit
+# <a name="access-the-ribbon-at-runtime"></a>Zugriff auf das Menüband zur Laufzeit
   Sie können Code zum Einblenden, Ausblenden und Ändern des Menübands schreiben und Benutzern das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook-Formularbereich ermöglichen.  
 
  Sie können mit der `Globals`-Klasse auf das Menüband zugreifen. Bei Outlook-Projekten können Sie auf die Menübänder zugreifen, die in einem bestimmten Outlook-Inspektor- oder Outlook-Explorer-Fenster angezeigt werden.  
@@ -41,16 +41,16 @@ ms.locfileid: "34263212"
  [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
 
-## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Der Zugriff auf eine Auflistung von Menübändern zugreifen, die in einem bestimmten Outlook-Inspektor-Fenster angezeigt werden  
- Sie erreichen eine Auflistung von Menübändern, die in Outlook angezeigt *Inspektoren*. Ein Inspektor ist ein Fenster, das in Outlook geöffnet wird, wenn Benutzer bestimmte Aufgaben ausführen, z. B. E-Mails verfassen. Um auf das Menüband eines Inspektor-Fensters zuzugreifen, rufen Sie die `Ribbons`-Eigenschaft der `Globals`-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Inspector>-Objekt, das den Inspektor darstellt.  
+## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Zugriff auf eine Auflistung von Menübändern, die in einem bestimmten Outlook-Inspektor-Fenster angezeigt werden.  
+ Sie können eine Auflistung von Menübändern, die in Outlook angezeigt werden zugreifen *Inspektoren*. Ein Inspektor ist ein Fenster, das in Outlook geöffnet wird, wenn Benutzer bestimmte Aufgaben ausführen, z. B. E-Mails verfassen. Um auf das Menüband eines Inspektor-Fensters zuzugreifen, rufen Sie die `Ribbons`-Eigenschaft der `Globals`-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Inspector>-Objekt, das den Inspektor darstellt.  
 
  Im folgenden Beispiel wird die Menübandauflistung des Inspektors abgerufen, der gerade den Fokus besitzt. In diesem Beispiel wird dann auf ein Menüband mit der Bezeichnung `Ribbon1` zugegriffen und der Text festgelegt, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.  
 
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
 
-## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Der Zugriff auf eine Auflistung von Menübändern zugreifen, die für einen bestimmten Outlook-Explorer angezeigt werden  
- Sie erreichen eine Auflistung von Menübändern, die in einem Outlook- *Explorer*. Ein Explorer ist die Haupt-Benutzeroberfläche (UI) der Anwendung für eine Instanz von Outlook. Um auf das Menüband eines Explorer-Fensters zuzugreifen, rufen Sie die `Ribbons`-Eigenschaft der `Globals`-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Explorer>-Objekt, das den Explorer darstellt.  
+## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Zugriff auf eine Auflistung von Menübändern, die für einen bestimmten Outlook-Explorer angezeigt werden.  
+ Sie erreichen eine Auflistung von Menübändern, die in Outlook angezeigt werden *Explorer*. Ein Explorer ist die Haupt-Benutzeroberfläche (UI) der Anwendung für eine Instanz von Outlook. Um auf das Menüband eines Explorer-Fensters zuzugreifen, rufen Sie die `Ribbons`-Eigenschaft der `Globals`-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Explorer>-Objekt, das den Explorer darstellt.  
 
  Im folgenden Beispiel wird die Menübandauflistung des Explorers abgerufen, der gerade den Fokus besitzt. In diesem Beispiel wird dann auf ein Menüband mit der Bezeichnung `Ribbon1` zugegriffen und der Text festgelegt, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.  
 

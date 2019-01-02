@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348877"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740444"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analysieren und Modellieren der Architektur
 
@@ -55,9 +55,9 @@ Finden Sie unter [Szenario: Ändern des Entwurfs mithilfe von Visualisierung und
 
 |||
 |-|-|
-|**Visualisieren von Code**:<br /><br /> -Finden Sie unter Organisation und Beziehungen des Codes, indem Sie codezuordnungen erstellen. Sie können Abhängigkeiten zwischen Assemblys, Namespaces, Klassen, Methoden usw. visualisieren.<br />-Finden Sie der Struktur der Klasse und Member für ein bestimmtes Projekt Klassendiagramme aus Code erstellen.<br />-Finden Sie Konflikte zwischen Ihrem Code und dem Entwurf, erstellen Sie Abhängigkeitsdiagramme, um Code zu überprüfen.|-   [Visualisieren von Code](../modeling/visualize-code.md)<br />-   [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Verstehen Sie, Entwerfen von Code mit Visual Studio 2015 Code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**Definieren der Architektur**:<br /><br /> – Definieren und Erzwingen von Einschränkungen für Abhängigkeiten zwischen den Komponenten des Codes, indem Sie Abhängigkeitsdiagramme erstellen.|-   [Video: Überprüfen von architekturabhängigkeiten in Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Überprüfen des Systems anhand der Anforderungen und des beabsichtigten Entwurfs:**<br /><br /> -Überprüfen Sie codeabhängigkeiten mit Abhängigkeitsdiagrammen, die die beabsichtigte Architektur beschreiben und zu verhindern, dass Änderungen, die mit dem Entwurf in Konflikt stehen.|-   [Video: Überprüfen von architekturabhängigkeiten in Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Visualisieren von Code**:<br /><br /> -Finden Sie unter Organisation und Beziehungen des Codes, indem Sie codezuordnungen erstellen. Sie können Abhängigkeiten zwischen Assemblys, Namespaces, Klassen, Methoden usw. visualisieren.<br />-Finden Sie der Struktur der Klasse und Member für ein bestimmtes Projekt Klassendiagramme aus Code erstellen.<br />-Finden Sie Konflikte zwischen Ihrem Code und dem Entwurf, erstellen Sie Abhängigkeitsdiagramme, um Code zu überprüfen.|-   [Visualisieren von Code](../modeling/visualize-code.md)<br />-   [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Video: Verstehen des Entwurfs aus Code mit Visual Studio 2015 Code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Definieren der Architektur**:<br /><br /> – Definieren und Erzwingen von Einschränkungen für Abhängigkeiten zwischen den Komponenten des Codes, indem Sie Abhängigkeitsdiagramme erstellen.|-   [Video: Überprüfen der von architekturabhängigkeiten mit Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Überprüfen des Systems anhand der Anforderungen und des beabsichtigten Entwurfs:**<br /><br /> -Überprüfen Sie codeabhängigkeiten mit Abhängigkeitsdiagrammen, die die beabsichtigte Architektur beschreiben und zu verhindern, dass Änderungen, die mit dem Entwurf in Konflikt stehen.|-   [Video: Überprüfen der von architekturabhängigkeiten mit Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Anpassen von Modellen und Diagrammen**:<br /><br /> – Erstellen Sie eigene domänenspezifische Sprachen.|-   [Modeling SDK für Visual Studio - domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Generieren Sie Text mithilfe von T4-Vorlagen**:<br /><br /> – Verwenden Sie Textblöcke und Steuerelementlogik in Vorlagen, um textbasierte Dateien zu generieren.<br /> -T4 Vorlage Build mit MSBuild in Visual Studio enthalten|-   [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)|
 |**Freigeben von Modellen und Code Maps mithilfe der Team Foundation-Versionskontrolle**:<br /><br /> -Fügen Sie die Code Maps, Projekte und Abhängigkeitsdiagramme unter Team Foundation-Versionskontrolle, damit diese freigeben zu können.| |

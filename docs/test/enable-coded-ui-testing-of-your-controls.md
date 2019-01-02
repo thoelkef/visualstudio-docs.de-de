@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von Tests der programmierten Benutzeroberfläche Ihrer Steuerelemente in Visual Studio
+title: Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153562"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895950"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
 Steuerelemente können besser getestet werden, wenn Sie Unterstützung für das Testframework der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Beginnen Sie mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung. Konfigurieren Sie anschließend den Test-Generator der programmierten UI so, dass die benutzerdefinierten Eigenschaften des Steuerelements erkannt werden. Stellen Sie benutzerdefinierte Klassen bereit, um den Zugriff auf diese Eigenschaften aus generiertem Code zu ermöglichen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Unterstützen von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung durch Implementieren von Barrierefreiheit
 

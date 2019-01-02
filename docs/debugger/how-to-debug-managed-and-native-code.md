@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: Debuggen verwalteten und nativen Codes (gemischter Modus)'
+title: 'Tutorial: Debuggen von C#- und C++-Code (gemischter Modus)'
 description: Erfahren Sie, wie Sie eine native DLL aus einer .NET Core- oder .NET Framework-App mithilfe des Debuggens im gemischten Modus debuggen können.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295760"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051449"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutorial: Debuggen verwalteten und nativen Codes in derselben Debugsitzung
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
 In Visual Studio können Sie mehr als einen Debugtyp in einer Debugsitzung aktivieren. Dies wird als Debuggen im gemischten Modus bezeichnet. In diesem Tutorial lernen Sie das Debuggen verwalteten und nativen Codes in einer einzigen Debugsitzung. 
 

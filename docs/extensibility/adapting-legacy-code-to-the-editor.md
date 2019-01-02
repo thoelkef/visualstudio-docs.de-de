@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078599"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307790"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Anpassen von legacy-Code in den editor
 Visual Studio-Editor verfügt über viele Funktionen, die Sie über vorhandenen Codekomponenten zugreifen können. Die folgenden Anweisungen zeigen, wie Sie das Anpassen von nicht-MEF-Komponente, z. B. einem VSPackage, Editor-Funktionen nutzen. Die Anweisungen veranschaulicht auch, Adapter zu verwenden, um die Dienste des Editors in verwaltetem und nicht verwaltetem Code abzurufen.  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>Um einen IVxTextBuffer zu erhalten.  
   
-1.  Die Definitionen für die IVx * Schnittstellen sind in der *VSEditor.h* Datei die *\..\VisualStudioIntegration\Common\Inc\\* Ordner der Visual Studio SDK-Installation.  
+1.  Die Definitionen für die IVx\* Schnittstellen sind der *VSEditor.h* Datei die *\..\VisualStudioIntegration\Common\Inc\\* Ordner von Visual Studio SDK-Installation.  
   
 2.  Instanziiert der folgende Code einen Textpuffer mithilfe der `IVsUserData->GetData()` Methode. In den folgenden Code `pData` ist ein Zeiger auf ein `IVsUserData` Objekt.  
   

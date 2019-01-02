@@ -1,5 +1,5 @@
 ---
-title: Seitenantwortzeit in einem Auslastungstest in Visual Studio
+title: Seitenantwortzeit in einem Auslastungstest
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821837"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068094"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
 Die Zeit, die Websites benötigen, bis sie vollständig geladen sind, wird *Antwortzeit* genannt. Beim Erstellen eines Webleistungstests können Sie für jede Webseitenanforderung im Webleistungstest ein Antwortzeitziel festlegen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt wird, können für jede Seite folgende Informationen analysiert werden:
 
@@ -37,15 +39,13 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 ## <a name="view-response-time-data-in-a-table"></a>Anzeigen der Antwortzeitdaten in einer Tabelle
 
-### <a name="to-view-response-time-data-in-a-table"></a>So zeigen Sie Antwortzeitdaten in einer Tabelle an
-
 1. Klicken Sie im Fenster **Auslastungstest-Analyzer** auf der Symbolleiste auf **Tabellen**, um sicherzustellen, dass das Tabellenraster angezeigt wird.
 
 2. Wählen Sie im Dropdown-Listenfeld **Tabelle** die Option **Seiten** aus.
 
 3. Die Daten für jede Seite werden im Raster angezeigt. Normalerweise werden die nachfolgend aufgeführten Spalten angezeigt.
 
-   |Spaltenüberschrift|Beschreibung |
+   |Spaltenüberschrift|Beschreibung|
    |-|-|
    |**Seite**|Der Name der Website.|
    |**Szenario**|Der Name des Szenarios. Wichtig, wenn mehr als ein Szenario im Webleistungstest enthalten ist.|
@@ -61,7 +61,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
    |**Max**|Die maximale Seitenantwortzeit.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**Standardabweichung**|Standardmäßig werden die Standardabweichungsdaten nicht erfasst. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**Seitenzeit**|Die durchschnittliche Antwortzeit für alle Anforderungen, die für die Webseite ausgeführt wurden.|
-   |**Ziel**|Das Seitenzeitziel. Dies ist ein konstanter Wert für die Seite. **Hinweis**: Das Seitenzeitziel wird nur angezeigt, wenn für die Anforderung ein Ziel im Webleistungstest definiert wurde.|
+   |**Ziel**|Das Seitenzeitziel. Dies ist ein konstanter Wert für die Seite. **Hinweis**:  Das Seitenzeitziel wird nur angezeigt, wenn für die Anforderung ein Ziel im Webleistungstest definiert wurde.|
    |**%: Ziel erreicht**|Prozentualer Anteil der für die Webseite ausgeführten Anforderungen, die dem Antwortzeitziel entsprachen.|
 
    Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -70,7 +70,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können Sie die Änderungen während des Auslastungstests verfolgen. Diese Funktion ist besonders hilfreich, wenn sich das Auslastungsmuster im Verlauf des Tests erhöht (was z. B. bei einem schrittweisen Auslastungsmuster der Fall ist). Weitere Informationen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>So zeigen Sie Antwortzeitdaten in einem Diagramm an
+So zeigen Sie Antwortzeitdaten in einem Diagramm an:
 
 1. Klicken Sie im Fenster **Auslastungstest-Analyzer** in der Symbolleiste auf **Diagramme**, um sicherzustellen, dass das Diagramm angezeigt wird.
 
@@ -96,5 +96,5 @@ Die Antwortzeitdaten können auch in einem Diagramm angezeigt werden. So können
 ## <a name="see-also"></a>Siehe auch
 
 - [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)
+- [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,5 +1,5 @@
 ---
-title: Devenv-Befehlszeilenparameter in Visual Studio
+title: Devenv-Befehlszeilenschalter
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907039"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063395"
 ---
-# <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
+# <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenparameter
 
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z.B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.
 
@@ -31,9 +31,9 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
 
 ## <a name="devenv-switch-syntax"></a>Syntax des Devenv-Schalters
 
-Devenv-Befehle übergeben Schalter standardmäßig an das Hilfsprogramm devenv.com. Das Hilfsprogramm „devenv.com“ stellt Ausgaben über standardmäßige Systemdatenströme bereit, z.B. `stdout` und `stderr`. Das Hilfsprogramm bestimmt die entsprechende E/A-Umleitung, wenn es die Ausgabe beispielsweise in einer TXT-Datei erfasst.
+Befehle, die mit `devenv` beginnen, werden vom Hilfsprogramm `devenv.com` verarbeitet. Die Ausgabe wird über die Standardstreams des Systems (z.B. `stdout` und `stderr`) bereitgestellt. Das Hilfsprogramm bestimmt die entsprechende E/A-Umleitung, wenn es die Ausgabe beispielsweise in einer TXT-Datei erfasst.
 
-Befehle, die andererseits mit `devenv.exe` beginnen, können dieselben Schalter verwenden, das Hilfsprogramm „devenv.com“ wird jedoch umgangen.
+Befehle, die andererseits mit `devenv.exe` beginnen, können dieselben Parameter verwenden, das Hilfsprogramm `devenv.com` wird jedoch umgangen. Wenn Sie `devenv.exe` direkt verwenden, wird verhindert, dass die Ausgabe in der Konsole angezeigt wird.
 
 Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszeilenhilfsprogramme. Die folgenden Syntaxregeln gelten für alle `devenv`-Schalter und ihre Argumente:
 
@@ -45,7 +45,7 @@ Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszei
 
 - Wenn das erste Argument eine Datei ist, die keine Projektmappe bzw. kein Projekt ist, wird die Datei im entsprechenden Editor in einer neuen Instanz der IDE geöffnet.
 
-- Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv /build myproject1.vbproj` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen „myproject1.sln“.
+- Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv myproject1.vbproj /build` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen „myproject1.sln“.
 
     > [!NOTE]
     > In diesem übergeordneten Ordner darf genau eine Projektmappendatei enthalten sein, die auf dieses Projekt verweist. Wenn der übergeordnete Ordner keine oder zwei bzw. mehr Projektmappendateien enthält, die auf das Projekt verweisen, wird in diesem Ordner eine temporäre Projektmappendatei erstellt.
@@ -60,7 +60,7 @@ Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszei
 
 Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebene Aufgabe aus.
 
-|Befehlszeilenschalter|Beschreibung |
+|Befehlszeilenschalter|Beschreibung|
 | - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Startet die IDE und führt den angegebenen Befehl aus.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Lädt eine ausführbare C++-Datei unter der Kontrolle des Debuggers. Dieser Schalter ist für ausführbare Visual Basic- oder C#-Dateien nicht verfügbar. Weitere Informationen finden Sie unter [Prozess im Debugger automatisch starten](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -76,14 +76,14 @@ Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebe
 
 Durch die folgenden Befehlszeilenschalter wird die IDE nicht angezeigt.
 
-|Befehlszeilenschalter|Beschreibung |
+|Befehlszeilenschalter|Beschreibung|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Zeigt Hilfe für devenv-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Löscht vom Buildbefehl erstellte Dateien, ohne die Quelldateien zu beeinflussen.<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Erstellt die Lösung mit für die Bereitstellung notwendigen Dateien gemäß der Lösungskonfiguration.<br /><br /> **Devenv myproj.csproj /deploy**|
-|[/Diff](../../ide/reference/diff.md)|Vergleicht zwei Dateien. Benötigt vier Parameter: SourceFile, TargetFile, SourceDisplayName (optional), TargetDisplayName (optional).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Ermöglicht die Angabe einer Datei für Fehlermeldungen, wenn ein Build erstellt wird.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Zeigt Hilfe für devenv-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Löscht vom Buildbefehl erstellte Dateien, ohne die Quelldateien zu beeinflussen.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Erstellt die Lösung mit für die Bereitstellung notwendigen Dateien gemäß der Lösungskonfiguration.<br /><br /> `devenv myproj.csproj /deploy`|
+|[/Diff](../../ide/reference/diff.md)|Vergleicht zwei Dateien. Erfordert vier Parameter: SourceFile, TargetFile, SourceDisplayName (optional), TargetDisplayName (optional).|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Ermöglicht die Angabe einer Datei für Fehlermeldungen, wenn ein Build erstellt wird.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Das zu erstellende, bereinigende oder bereitzustellende Projekt. Dieser Schalter kann nur verwendet werden, wenn auch einer der Schalter /build, /rebuild, /clean oder /deploy angegeben wurde.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Gibt die zu erstellende oder bereitzustellende Projektkonfiguration an. Dieser Schalter kann nur verwendet werden, wenn auch der Schalter /project angegeben wurde.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Bereinigt die angegebene Projektmappe oder das angegebene Projekt und erstellt diese bzw. dieses entsprechend der Konfiguration der angegebenen Projektmappe durch.|

@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen einer Schwellenwertregel für Auslastungstests in Visual Studio
+title: Hinzufügen einer Schwellenwertregel für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179878"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063369"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen einer Schwellenwertregel mithilfe des Auslastungstest-Editors
 
 In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwerte entweder mit einem konstanten Wert oder mit einem anderen Leistungsindikatorwert verglichen.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-threshold-rule"></a>So fügen Sie eine Schwellenwertregel hinzu
 
@@ -36,7 +38,7 @@ In Auslastungstests werden mithilfe von Schwellenwertregeln Leistungsindikatorwe
 
      Das Dialogfeld **Schwellenwertregel hinzufügen** wird angezeigt.
 
-5.  Sie können zwischen zwei Regeltypen wählen: **Mit Konstante vergleichen** oder **Indikatoren vergleichen**. Wählen Sie den gewünschten Typ, und legen Sie die Werte fest.
+5.  Sie können sich zwischen den folgenden zwei Arten von Regeln entscheiden: **Mit Konstante vergleichen** oder **Compare Counter** (Mit Indikator vergleichen). Wählen Sie den gewünschten Typ, und legen Sie die Werte fest.
 
     > [!NOTE]
     > Legen Sie die **Warnung bei Überschreiten**-Eigenschaft auf **TRUE** fest, um anzugeben, dass das Überschreiten eines Schwellenwerts ein Problem darstellt, oder auf **FALSE** fest, um anzugeben, dass das Unterschreiten eines Schwellenwerts ein Problem darstellt.

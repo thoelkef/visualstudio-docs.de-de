@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: anzeigen und Ausblenden von Registergruppen | Microsoft Docs'
+title: 'Vorgehensweise: anzeigen und Ausblenden von Registergruppen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,28 +21,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474088"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388607"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Gewusst wie: Anzeigen und Ausblenden von Registergruppen
-Die **registriert** Fenster ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **allgemeine**Kategorie.  
-  
- Übersichtlichkeit der **registriert** Fenster Register in Gruppen organisiert. Wenn Sie mit der rechten Maustaste die **registriert** Fenster sehen Sie ein Kontextmenü mit diesen Gruppen, die Sie anzeigen oder Ausblenden der Bedarf nach dem folgenden Verfahren können.  
-  
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Vorgehensweise: anzeigen und Ausblenden von Registergruppen (C#, C++, Visual Basic F#)
+
+Das Fenster Register **ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld Optionen** im Knoten Debuggen **in der Kategorie Allgemein** aktiviert ist.
+
+Aus Gründen der Übersichtlichkeit werden Register im Fenster Register** in Gruppen organisiert. Wenn Sie mit der rechten Maustaste in das Fenster Register** klicken, wird ein Kontextmenü mit diesen Gruppen geöffnet, die Sie nach Bedarf ein- und ausblenden können, indem Sie wie unten beschrieben vorgehen.
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-or-hide-register-groups"></a>So zeigen Sie Registergruppen an oder blenden sie aus  
-  
-1.  Mit der rechten Maustaste die **registriert** Fenster.  
-  
-2.  Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.  
-  
-     Registergruppen, die von der zum Debuggen verwendeten Hardware nicht unterstützt werden, sind im Kontextmenü deaktiviert und können folglich nicht ausgewählt werden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+
+## <a name="display-or-hide-register-groups"></a>Anzeigen oder Ausblenden von Registergruppen
+
+1.  Klicken Sie mit der rechten Maustaste in das Fenster Register **.
+
+2.  Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.
+
+     Registergruppen, die von der zum Debuggen verwendeten Hardware nicht unterstützt werden, sind im Kontextmenü deaktiviert und können folglich nicht ausgewählt werden.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)

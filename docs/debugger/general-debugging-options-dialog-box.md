@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730674"
@@ -125,7 +125,7 @@ Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen 
 **JIT-Optimierung beim Laden von Modulen (nur verwaltet) unterdrücken**:  
 Deaktiviert die JIT-Optimierung von verwaltetem Code, wenn ein Modul geladen und JIT kompiliert wird, während der Debugger angefügt ist. Durch das Deaktivieren der Optimierung kann das Debuggen einiger Probleme vereinfacht werden, allerdings auf Kosten der Leistung. Die Verwendung von "Nur mein Code" bei unterdrückter JIT-Optimierung kann dazu führen, dass Nichtbenutzercode als Benutzercode (Nur eigenen Code) angezeigt wird. Weitere Informationen finden Sie unter [JIT-Optimierung und-Debuggen](../debugger/jit-optimization-and-debugging.md).
 
-**Aktivieren Sie JavaScript-debugging für ASP.NET (Chrome, Edge und IE)**:  
+**Aktivieren Sie JavaScript-debugging für ASP.NET (Chrome, Microsoft Edge und IE)**:  
 Ermöglicht es den Skriptdebugger für ASP.NET-Apps. Bei der ersten Verwendung in Chrome müssen Sie sich in den Browser Chrome-Erweiterungen zu aktivieren, die Sie installiert haben. Deaktivieren Sie diese Option, um zum alten Verhalten zurückzukehren.
 
 **Aktivieren Sie Microsoft Edge-Entwicklertools für UWP-JavaScript-Apps (experimentell)**:  

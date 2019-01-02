@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen'
+title: 'Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], control layout
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f523d56b189fb1517df7e22d18cd689e9300eff3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255914"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647048"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen
   Ein Bereich "Aktionen" wird rechts neben einem Dokument oder Arbeitsblatt standardmäßig angedockt werden; Sie können jedoch auf die Links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzersteuerelemente verwenden, können Sie Code aus, um ordnungsgemäß die Benutzersteuerelemente im Aktionsbereich gestapelt schreiben. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -32,7 +32,7 @@ ms.locfileid: "35255914"
  Stapelreihenfolge der Steuerelemente hängt davon ab, ob der Bereich "Aktionen" vertikal oder horizontal angedockt ist.  
   
 > [!NOTE]  
->  Wenn der Benutzer den Bereich "Aktionen", zur Laufzeit angepasst wird, können Sie die Steuerelemente mit dem Aktionsbereich Ändern der Größe festlegen. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Weitere Informationen finden Sie unter [wie: Verankern von Steuerelementen in Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+>  Wenn der Benutzer den Bereich "Aktionen", zur Laufzeit angepasst wird, können Sie die Steuerelemente mit dem Aktionsbereich Ändern der Größe festlegen. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Weitere Informationen finden Sie unter [Vorgehensweise: Verankern von Steuerelementen in Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
   
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
@@ -70,8 +70,8 @@ ms.locfileid: "35255914"
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)   
- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Gewusst wie: Hinzufügen von Aktionen im Bereich zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Vorgehensweise: Hinzufügen von Aktionen im Bereich zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   

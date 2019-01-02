@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880792"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647524"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880792"
   
   Dieses Thema enthält eine kurze Übersicht über das Excel-Objektmodell. Ressourcen, in denen Sie mehr über das gesamte Excel-Objektmodell erfahren können, finden Sie unter [verwenden die Dokumentation zum Excel-Objektmodell](#ExcelOMDocumentation).  
   
-  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [I: Verwenden von Ereignishandlern in einer Excel 2007-Add-Ins Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130291), und [Gewusst I: Verwenden von Formen zum Erstellen eines Blasendiagramms in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden Sie Ereignishandler in einer Excel 2007-Add-in? ](http://go.microsoft.com/fwlink/?LinkID=130291), und [Gewusst wie: Verwenden Sie Formen zum Erstellen eines Blasendiagramms in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Zugreifen auf Objekte in einem Excel-Projekt  
  Wenn Sie ein neues VSTO-Add-in-Projekt für Excel erstellen, erstellt Visual Studio automatisch eine *"ThisAddIn.vb"* oder *"ThisAddIn.cs"* Codedatei. Sie können mithilfe von `Me.Application` oder `this.Application` auf das Anwendungsobjekt zugreifen.  

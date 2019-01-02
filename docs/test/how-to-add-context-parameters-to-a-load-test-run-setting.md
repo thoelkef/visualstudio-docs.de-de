@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Kontextparametern zu einer Laufzeiteinstellung für einen Auslastungstest in Visual Studio
+title: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstestlauf
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905897"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048488"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstest
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstestlauf
 
 Nachdem Sie den Auslastungstest mithilfe des **Assistenten für neuen Auslastungstest** erstellt haben, können Sie die Szenarioeigenschaften mit dem **Auslastungstest-Editor** entsprechend Ihren Testanforderungen und -zielen ändern.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
@@ -36,9 +38,9 @@ Wenn Sie `http://CorporateStagingWebServer` den Wert des Kontextparameters „We
 
 Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführen, indem Sie einem Kontextparameter andere Werte zuweisen, indem Sie den gleichen Namen in verschiedenen Auslastungs-Laufzeiteinstellungen verwenden:
 
-- Testlaufeinstellung für Unternehmens-Stagingwebserver: Kontextparameter namens `WebServer1=http://CorporateStagingWebServer`
+- Ausführungseinstellung für Unternehmens-Stagingwebserver: Der Kontextparameter namens `WebServer1=http://CorporateStagingWebServer`
 
-- Testlaufeinstellung für Unternehmens-Produktionswebserver: Kontextparameter namens `WebServer1=http://CorporateProductionWebServer`
+- Ausführungseinstellung „Corporate Production Web Server“: Der Kontextparameter namens `WebServer1=http://CorporateProductionWebServer`
 
   **Changing the Run Setting from the Command Line (Ändern der Laufzeiteinstellung über die Befehlszeile)**
 

@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924979"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894780"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests
 
 Wenn Sie Tests der programmierten UI für Ihre XAML-basierte UWP-App ausführen möchten, muss jedes Steuerelement durch eine eindeutige Automatisierungseigenschaft gekennzeichnet werden. Sie können eine eindeutige Automatisierungseigenschaft auf Grundlage des Typs des XAML-Steuerelements in der Anwendung zuweisen.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>Statische XAML-Definition
 
@@ -43,7 +45,7 @@ Legen Sie **AutomationProperties.Name** auf **ButtonY** fest. Verwenden Sie dazu
 Legen Sie **AutomationProperties.AutomationId** explizit in der XAML für das Steuerelement auf **ButtonX** fest.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Legen Sie **AutomationProperties.Name** explizit in der XAML für das Steuerelement auf **ButtonY** fest.

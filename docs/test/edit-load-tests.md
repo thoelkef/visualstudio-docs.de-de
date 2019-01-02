@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Auslastungstests in Visual Studio
+title: Bearbeiten von Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178412"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048632"
 ---
 # <a name="edit-load-tests"></a>Bearbeitung von Auslastungstests
 
 Auslastungstests führen Webleistungstests oder Komponententests aus, um den gleichzeitigen Zugriff von vielen Benutzern auf einen Server zu simulieren. Ein Auslastungstest gewährt Ihnen Zugriff auf die Anwendungsbelastung und die Leistungsdaten. Ein Auslastungstest kann konfiguriert werden, um verschiedene Auslastungsbedingungen z. B. Benutzerlasten und Netzwerktypen zu emulieren.
 
-> [!NOTE]
-> Auslastungstests sind nur in der Enterprise Edition von Visual Studio 2017 verfügbar.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Ein Auslastungstest wird mithilfe von *Szenarios*, *Indikatorensätzen* und *Laufzeiteinstellungen* definiert. In der folgenden Abbildung werden die Unterschiede zwischen [Szenarios](../test/edit-load-test-scenarios.md), [Indikatorensätzen](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) und [Laufzeiteinstellungen](../test/load-test-run-settings-properties.md) veranschaulicht:
 
 ![Laden der Testarchitektur](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Softwareanforderungen
+
+Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition von Visual Studio verfügbar.
 
 ## <a name="edit-load-test-scenario-settings"></a>Bearbeiten von Auslastungstestszenario-Einstellungen
 

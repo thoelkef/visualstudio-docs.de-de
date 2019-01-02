@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Anforderungsebenen-Plug-Ins für Webleistungstests in Visual Studio
+title: Erstellen eines Anforderungsebenen-Plug-Ins für Webleistungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382034"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054073"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins
 
 *Anforderungen* sind die deklarativen Anweisungen, aus denen Webleistungstests bestehen. Webleistungstest-Plug-Ins ermöglichen Ihnen, Code außerhalb der Hauptdeklarationen des Webleistungstests zu isolieren und wiederzuverwenden. Sie können Plug-Ins erstellen und sie einer individuellen Anforderung sowie dem Webleistungstest hinzufügen, in dem sie enthalten ist. Mit einem benutzerdefinierten *Anforderungs-Plug-In* haben Sie die Möglichkeit, Code aufzurufen, während eine bestimmte Anforderung in einem Webleistungstest ausgeführt wird.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Jedes Webleistungstestanforderungs-Plug-In verfügt über eine PreRequest-Methode und eine PostRequest-Methode. Nachdem Sie ein Anforderungs-Plug-In an eine bestimmte HTTP-Anforderung angefügt haben, wird das PreRequest-Ereignis noch vor Senden der Anforderung ausgelöst und das PostRequest-Ereignis nach dem Empfangen der Antwort.
 
@@ -82,7 +84,7 @@ Sie können benutzerdefinierte Webleistungstestanforderungs-Plug-Ins mit den auf
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >

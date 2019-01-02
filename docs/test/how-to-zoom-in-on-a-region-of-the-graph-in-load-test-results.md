@@ -1,5 +1,5 @@
 ---
-title: Vergrößern von Diagrammen für Auslastungstestergebnisse in Visual Studio
+title: Vergrößern von Diagrammen für Auslastungstestergebnisse
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,43 +13,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064892"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
 
 Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergrößern und Anzeigen eines Bereichs im Diagramm verwenden. Durch das Vergrößern können Sie genauere Details der Daten anzeigen, die bei einem Auslastungstestlauf generiert wurden.
 
-> [!NOTE]
-> Die Vergrößerungsfunktion ist nur verfügbar, wenn Sie das Ergebnis eines abgeschlossenen Auslastungstests analysieren. Beim Überprüfen der Ergebnisse eines laufenden Tests ist sie nicht verfügbar.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Das Zoomsteuerelement wird nur dann im **Auslastungstest-Analyzer** angezeigt, wenn Sie ein Auslastungstestergebnis im Zoommodus anzeigen. Der Zoommodus wird in der Diagrammansicht aktiviert, wenn ein Auslastungstest abgeschlossen wurde oder ein zuvor ausgeführter Auslastungstest geladen wird. Die Zoomsteuerelemente können in den Diagrammen über die Option **Zoomsteuerelemente anzeigen** in der Symbolleiste ein- oder ausgeblendet werden.
+Die Vergrößerungsfunktion ist nur verfügbar, wenn Sie das Ergebnis eines abgeschlossenen Auslastungstests analysieren. Beim Überprüfen der Ergebnisse eines laufenden Tests ist sie nicht verfügbar.
 
- Der **Zoom für die horizontale X-Achse** kann angepasst werden, um bestimmte Zeiträume während des Auslastungstests zu analysieren. Der **Zoom für die vertikale Y-Achse** kann angepasst werden, um bestimmte Wertebereiche für die im Diagramm enthaltenen Indikatoren zu analysieren.
+Das Zoomsteuerelement wird nur dann im **Auslastungstest-Analyzer** angezeigt, wenn Sie ein Auslastungstestergebnis im Zoommodus anzeigen. Der Zoommodus wird in der Diagrammansicht aktiviert, wenn ein Auslastungstest abgeschlossen wurde oder ein zuvor ausgeführter Auslastungstest geladen wird. Die Zoomsteuerelemente können in den Diagrammen über die Option **Zoomsteuerelemente anzeigen** in der Symbolleiste ein- oder ausgeblendet werden.
 
- Die Zoomsteuerelemente für die **horizontale Zeitskala** und den **vertikalen Wertebereich** können mit der Maus eingestellt werden. Das **Steuerelement für die horizontale Zeitskala** kann auch mit den NACH-RECHTS- und NACH-LINKS-TASTEN eingestellt werden. Beim Einstellen des Zoomsteuerelements mit den Pfeiltasten kann der Fensterbereich um jeweils 1 Samplingintervall verstellt werden. Wenn Sie die Pfeiltasten zusammen mit der **UMSCHALTTASTE** verwenden, werden Anpassungen in Schritten von zehn Samplingintervallen vorgenommen.
+Der **Zoom für die horizontale X-Achse** kann angepasst werden, um bestimmte Zeiträume während des Auslastungstests zu analysieren. Der **Zoom für die vertikale Y-Achse** kann angepasst werden, um bestimmte Wertebereiche für die im Diagramm enthaltenen Indikatoren zu analysieren.
 
- Zum Einstellen des Zoomsteuerelements mit den Pfeiltasten müssen Sie zunächst den Fokus mit der **TAB-TASTE** auf das Zoomsteuerelement festlegen. Wenn der linke Schieberegler den Fokus hat, verschieben die Pfeiltasten die Startgrenze des Zoomfensters um ein Intervall nach links oder rechts. Wenn der mittlere Schieberegler den Fokus hat, können Sie mit den Pfeiltasten im Zoomfenster einen Bildlauf um ein Samplingintervall nach links bzw. rechts durchführen, ohne die Größe des Zoomfensters zu ändern. Mit dem rechten Schieberegler wird das Ende des Bereichs im Zoomfenster um ein Samplingintervall verschoben, sodass der Bereich erweitert oder reduziert wird.
+Die Zoomsteuerelemente für die **horizontale Zeitskala** und den **vertikalen Wertebereich** können mit der Maus eingestellt werden. Das **Steuerelement für die horizontale Zeitskala** kann auch mit den NACH-RECHTS- und NACH-LINKS-TASTEN eingestellt werden. Beim Einstellen des Zoomsteuerelements mit den Pfeiltasten kann der Fensterbereich um jeweils 1 Samplingintervall verstellt werden. Wenn Sie die Pfeiltasten zusammen mit der **UMSCHALTTASTE** verwenden, werden Anpassungen in Schritten von zehn Samplingintervallen vorgenommen.
 
- Um die horizontalen und vertikalen Zoomsteuerelemente auf die Anzeige der vollständigen Zeitskala und Wertebereiche zurückzusetzen, können Sie die Optionen **Horizontal verkleinern**, **Vertikal verkleinern** oder **Beide verkleinern** im Popupmenü des Diagramms verwenden.
+Zum Einstellen des Zoomsteuerelements mit den Pfeiltasten müssen Sie zunächst den Fokus mit der **TAB-TASTE** auf das Zoomsteuerelement festlegen. Wenn der linke Schieberegler den Fokus hat, verschieben die Pfeiltasten die Startgrenze des Zoomfensters um ein Intervall nach links oder rechts. Wenn der mittlere Schieberegler den Fokus hat, können Sie mit den Pfeiltasten im Zoomfenster einen Bildlauf um ein Samplingintervall nach links bzw. rechts durchführen, ohne die Größe des Zoomfensters zu ändern. Mit dem rechten Schieberegler wird das Ende des Bereichs im Zoomfenster um ein Samplingintervall verschoben, sodass der Bereich erweitert oder reduziert wird.
+
+Um die horizontalen und vertikalen Zoomsteuerelemente auf die Anzeige der vollständigen Zeitskala und Wertebereiche zurückzusetzen, können Sie die Optionen **Horizontal verkleinern**, **Vertikal verkleinern** oder **Beide verkleinern** im Popupmenü des Diagramms verwenden.
 
 > [!TIP]
 > Mit dem Symbolleistenbefehl **Horizontale Zoomsteuerelemente synchronisieren** kann die automatische horizontale Zoomsynchronisierung aktiviert bzw. deaktiviert werden. Wenn die Synchronisierung aktiviert ist, gelten alle Zoomeinstellungen, die Sie für ein Diagramm vornehmen, auch für alle anderen Diagramme in der Diagrammansicht.
 
- ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png) Graph View Zoom Control
+![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png)
 
- In der obigen Abbildung wurde das Diagramm **Getestetes System** vergrößert, um Schwellenwertverletzungen zu untersuchen. Die Schwellenwertverletzungen wurden mit dem Befehl **Schwellenwertverletzungen im Diagramm anzeigen** in der Dropdownliste **Diagrammoptionen** auf der Symbolleiste aktiviert.
+In der obigen Abbildung wurde das Diagramm **Getestetes System** vergrößert, um Schwellenwertverletzungen zu untersuchen. Die Schwellenwertverletzungen wurden mit dem Befehl **Schwellenwertverletzungen im Diagramm anzeigen** in der Dropdownliste **Diagrammoptionen** auf der Symbolleiste aktiviert.
 
- Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
+Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Anzeigen von Diagrammen
- Bevor Sie die Anzeige eines Diagramms durch Vergrößern bzw. Verkleinern oder einen Bildlauf ändern, führen Sie die folgende Prozedur zum Anzeigen von Diagrammen aus.
 
-### <a name="to-display-graphs"></a>So zeigen Sie Diagramme an
+Bevor Sie die Anzeige eines Diagramms durch Vergrößern bzw. Verkleinern oder einen Bildlauf ändern, führen Sie die folgende Prozedur zum Anzeigen von Diagrammen aus.
+
+So zeigen Sie Diagramme an:
 
 1.  Führen Sie einen Auslastungstest bis zum Ende aus.
 
@@ -57,7 +59,7 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 
      \- oder –
 
-     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md).
+     Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Klicken Sie auf **Diagramme**, wenn die Diagramme nicht angezeigt werden.
 
@@ -68,7 +70,8 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
      Jede Zoomleiste verfügt über zwei Handles. Ein Handle ist eine rechteckige Fläche an beiden Enden der Zoomleiste.
 
 ## <a name="zoom-and-scroll"></a>Zoomen und Scrollen
- Wenn mehrere Diagramme angezeigt werden, können Sie sie synchronisieren, sodass derselbe Bereich des Auslastungstestlaufs angezeigt wird.
+
+Wenn mehrere Diagramme angezeigt werden, können Sie sie synchronisieren, sodass derselbe Bereich des Auslastungstestlaufs angezeigt wird.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>So synchronisieren Sie das Zoomen und Durchführen eines Bildlaufs
 
@@ -116,4 +119,4 @@ Nach einem abgeschlossenen Auslastungstest können Sie die Zoomleisten zum Vergr
 
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Vorgehensweise: Add and delete counters on graphs (Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Graphen)](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6b605cfce7d7f804715276f0bb395b007900921c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282340"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684651"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profil der Leistung von SharePoint-Anwendungen
 
@@ -36,13 +36,13 @@ Wenn die SharePoint-Anwendungen langsam oder ineffizient ausgeführt werden, kö
 
 Profilerstellung bezieht sich auf die Beobachtung und Erfassung des Leistungsverhaltens der Anwendung während sie ausgeführt wird. Durch die Profilerstellung für die Anwendung können Sie Probleme wie Engpässe, ineffizienten Code und Speicherbelegungsprobleme erkennen, die dazu führen, dass Anwendungen langsamer ausgeführt werden oder zu viel Arbeitsspeicher verwenden. Beispielsweise können Sie anhand der Profilerstellung Hotspots in Ihrem Code ermitteln, die Segmente des Codes sind, die häufig aufgerufen werden und die Gesamtleistung der Anwendung verlangsamen können. Nachdem Sie Hotspots identifiziert haben, können Sie sie häufig optimieren oder entfernen.
 
-Sie können mehrere Profilerstellungstools in der integrierten Entwicklungsumgebung (IDE) verwenden, um diese Arten von Leistungsproblemen zu identifizieren und zu suchen. Diese Tools funktionieren für SharePoint-Projekte ebenso wie für andere Arten von Visual Studio-Projekten. Der Leistungs-Assistent der Profilerstellungstools führt Sie durch die Erstellung einer Leistungssitzung, die die angegebenen Tests verwendet. Eine leistungssitzung ist ein Satz von Konfigurationsdaten, die zum Sammeln von Leistungsinformationen aus einer Anwendung, zusammen mit den Ergebnissen einer oder mehrerer profilerstellungsausführungen verwendet wird. Leistungssitzungen werden im Projektordner gespeichert, und sehen Sie diese in **Leistungs-Explorer**. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](/visualstudio/profiling/understanding-performance-collection-methods).
+Sie können mehrere Profilerstellungstools in der integrierten Entwicklungsumgebung (IDE) verwenden, um diese Arten von Leistungsproblemen zu identifizieren und zu suchen. Diese Tools funktionieren für SharePoint-Projekte ebenso wie für andere Arten von Visual Studio-Projekten. Der Leistungs-Assistent der Profilerstellungstools führt Sie durch die Erstellung einer Leistungssitzung, die die angegebenen Tests verwendet. Eine leistungssitzung ist ein Satz von Konfigurationsdaten, die zum Sammeln von Leistungsinformationen aus einer Anwendung, zusammen mit den Ergebnissen einer oder mehrerer profilerstellungsausführungen verwendet wird. Leistungssitzungen werden im Projektordner gespeichert, und sehen Sie diese in **Leistungs-Explorer**. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md).
 
 Nachdem Sie eine Profilanalyse für die Anwendung erstellt und ausgeführt haben, werden die entsprechenden Leistungsdetails in einem Bericht bereitgestellt. Dieser Bericht kann Elemente wie ein Diagramm der CPU-Auslastung im Zeitverlauf, eine hierarchische Funktionsaufrufliste oder eine Aufrufstruktur enthalten. Der genaue Inhalt des Berichts kann, je nach ausgeführtem Testtyp, z. B. Sampling oder Instrumentierung, variieren. Weitere Informationen finden Sie unter [Profiling Tools Report Overview](http://go.microsoft.com/fwlink/?LinkId=224689).
 
 ## <a name="performance-session-process"></a>Leistungssitzungsprozess
 
-Um die Profilerstellung einer Anwendung auszuführen, erstellen Sie zunächst eine Leistungssitzung mit dem Leistungs-Assistent der Profilerstellungstools. Wählen Sie auf der Menüleiste **analysieren**, **Leistungs-Assistenten starten**. Nachdem Sie den Assistenten abgeschlossen haben, geben Sie die erforderlichen Informationen für die Leistungssitzung ein, z. B. die gewünschte Profilmethode und die Anwendung, für die Sie ein Profil erstellen möchten. Weitere Informationen finden Sie unter [Vorgehensweise: Profilerstellung für eine Website oder eine Webanwendung mit dem Leistungs-Assistenten](http://go.microsoft.com/fwlink/?LinkId=224692). Alternativ können Sie Befehlszeilenoptionen verwenden, um eine Leistungssitzung zu installieren und auszuführen. Weitere Informationen finden Sie unter [mithilfe der Profilerstellungstools über die Befehlszeile](http://go.microsoft.com/fwlink/?LinkId=224703). Wenn Sie jeden Aspekt einer leistungssitzung manuell konfigurieren möchten, finden Sie unter [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen mit den Profilerstellungstools](http://go.microsoft.com/fwlink/?LinkId=224691). Sie können auch eine leistungssitzung aus Erstellen eines Komponententests durch, in der **Testergebnisse** Fenster öffnen das Kontextmenü für den Komponententest aus, und wählen Sie dann **Leistungssitzung erstellen**.
+Um die Profilerstellung einer Anwendung auszuführen, erstellen Sie zunächst eine Leistungssitzung mit dem Leistungs-Assistent der Profilerstellungstools. Wählen Sie auf der Menüleiste **analysieren**, **Leistungs-Assistenten starten**. Nachdem Sie den Assistenten abgeschlossen haben, geben Sie die erforderlichen Informationen für die Leistungssitzung ein, z. B. die gewünschte Profilmethode und die Anwendung, für die Sie ein Profil erstellen möchten. Weitere Informationen finden Sie unter [Vorgehensweise: Profil für eine Website oder Webanwendung mit dem Leistungs-Assistenten](http://go.microsoft.com/fwlink/?LinkId=224692). Alternativ können Sie Befehlszeilenoptionen verwenden, um eine Leistungssitzung zu installieren und auszuführen. Weitere Informationen finden Sie unter [mithilfe der Profilerstellungstools über die Befehlszeile](http://go.microsoft.com/fwlink/?LinkId=224703). Wenn Sie jeden Aspekt einer leistungssitzung manuell konfigurieren möchten, finden Sie unter [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen mit den Profilerstellungstools](http://go.microsoft.com/fwlink/?LinkId=224691). Sie können auch eine leistungssitzung aus Erstellen eines Komponententests durch, in der **Testergebnisse** Fenster öffnen das Kontextmenü für den Komponententest aus, und wählen Sie dann **Leistungssitzung erstellen**.
 
 Nachdem Sie eine Leistungssitzung eingerichtet haben, wird die Sitzungskonfiguration gespeichert, wird der Server so konfiguriert, dass Profilerstellungsdaten bereitgestellt werden, und wird die Anwendung ausgeführt. Während Sie die Anwendung verwenden, werden Leistungsdaten in eine Protokolldatei geschrieben. Leistungs-Sitzungen finden Sie in **Leistungs-Explorer** unter der **Ziele** Ordner. Nachdem eine leistungssitzung beendet wurde, der Bericht wird angezeigt, der **Berichte** Ordner **Leistungs-Explorer**. Um den Bericht anzuzeigen, öffnen Sie es in **Leistungs-Explorer**. Um anzuzeigen, oder konfigurieren Sie die Eigenschaften einer leistungssitzung, öffnen Sie das Kontextmenü im **Leistungs-Explorer**, und wählen Sie dann **Eigenschaften**. Weitere Informationen zu bestimmten Eigenschaften einer leistungssitzung, finden Sie unter [Konfigurieren von Leistungssitzungen für Profilerstellungstools](http://go.microsoft.com/fwlink/?LinkId=224694). Weitere Informationen zum Interpretieren der Ergebnisse einer leistungssitzung, finden Sie unter [Analysieren von Daten von Profilerstellungstools](http://go.microsoft.com/fwlink/?LinkId=224704).
 
@@ -58,18 +58,18 @@ Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit ei
 
 ## <a name="test-user-interfaces"></a>Testen von Benutzeroberflächen
 
-Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests).
+Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Veranschaulicht, wie eine Samplingsprofilanalyse für eine SharePoint-Anwendung ausgeführt wird.|
+|[Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Veranschaulicht, wie eine Samplingsprofilanalyse für eine SharePoint-Anwendung ausgeführt wird.|
 |[Testen der Leistung Ihrer App vor der Freigabe](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Beschreibt, wie Auslastungstests erstellt werden, mit deren Hilfe Sie Belastungstests für SharePoint-Anwendungen durchführen.|
-|[Komponententest für Code](/visualstudio/test/unit-test-your-code)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
-|[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
+|[Komponententest für Code](../test/unit-test-your-code.md)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
+|[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)
+- [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Verbessern der Codequalität](../test/improve-code-quality.md)

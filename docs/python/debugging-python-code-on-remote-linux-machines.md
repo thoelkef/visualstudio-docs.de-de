@@ -1,22 +1,23 @@
 ---
 title: Debuggen von Python-Code auf Linux-Remotecomputern
-description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remote-Computern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
-ms.date: 10/15/2018
+description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remotecomputern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356768"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067945"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -26,7 +27,7 @@ Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgefüh
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Thema „Remotedebuggen“ erhalten Sie im Video [Deep Dive: Cross-platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Einrichten eines Linux-Computers
 
@@ -106,7 +107,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Visual Studio wechselt dann in den Debugmodus, während das Skript weiterhin auf dem Remotecomputer ausgeführt wird, und bietet alle üblichen Funktionen zum [Debuggen](debugging-python-in-visual-studio.md). Setzen Sie zum Beispiel einen Haltepunkt in die `if guess < number:`-Zeile, wechseln Sie dann zum Remotecomputer, und geben Sie einen anderen Schätzwert ein. Danach stoppt Visual Studio auf dem lokalen Computer an diesem Haltepunkt, zeigt lokale Variablen an usw.:
 
-    ![Haltepunkt wird erreicht](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio unterbricht den Debugprozess, sobald der Breakpoint erreicht ist.](media/remote-debugging-breakpoint-hit.png)
 
 1. Wenn Sie das Debuggen beenden, wird Visual Studio vom Programm getrennt, das weiterhin auf dem Remotecomputer ausgeführt wird. ptvsd ist ebenfalls weiterhin für das Anfügen von Debuggern bereit, sodass Sie den Prozess jederzeit wiederaufnehmen können.
 

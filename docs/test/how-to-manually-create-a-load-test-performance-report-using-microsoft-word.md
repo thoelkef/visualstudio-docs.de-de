@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word in Visual Studio
+title: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064455"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
 
 Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie Daten aus der Ansicht der Zusammenfassung der Auslastungstestergebnisse und der Diagrammansicht kopieren und einfügen. Die in der Zusammenfassungsansicht und Diagrammansicht dargestellten Daten werden beim Kopieren im HTML-Format eingefügt.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Sie können Nur-Text aus der Tabellenansicht und aus Screenshots aus der Detailansicht in Microsoft Word kopieren. Dann wird jedoch kein HTML-Format angewendet, und zusätzliches Formatieren und Bearbeiten ist erforderlich.
@@ -44,7 +46,7 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 1.  Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Diagramme**.
 
-2.  (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png)
 

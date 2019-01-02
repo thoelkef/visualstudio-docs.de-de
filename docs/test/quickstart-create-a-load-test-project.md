@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Testprojekts für Webleistung und Auslastung in Visual Studio
+title: Erstellen eines Projekts für einen Webleistungs- und Auslastungstest
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320955"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057567"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
 In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nimmt, wird veranschaulicht, wie Sie ein Testprojekt für Webleistung und Auslastung in Visual Studio erstellen und ausführen. Auslastungstests führen Webleistungstests oder Komponententests aus, um den gleichzeitigen Zugriff vieler Benutzer auf einen Server zu simulieren.
 
-> [!IMPORTANT]
-> Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition von Visual Studio 2017 verfügbar.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Softwareanforderungen
+
+Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition von Visual Studio verfügbar.
 
 ## <a name="install-the-load-testing-component"></a>Installieren der Auslastungstestkomponente
 

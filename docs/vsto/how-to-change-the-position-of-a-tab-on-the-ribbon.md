@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Ändern der Position einer Registerkarte des Menübands'
+title: 'Vorgehensweise: Ändern der Position einer Registerkarte des Menübands'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255388"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647111"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Gewusst wie: Ändern der Position einer Registerkarte des Menübands
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Vorgehensweise: Ändern der Position einer Registerkarte des Menübands
   Sie können die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern, mit der **Registerkartenauflistungs-Editor**. Benutzerdefinierte Registerkarten können vor oder nach einer integrierten Registerkarte auf dem Menüband angeordnet werden. Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office-Anwendung befindet. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -57,7 +57,7 @@ ms.locfileid: "35255388"
   
 5.  Legen Sie die **OfficeId** Eigenschaft, um die Steuerelement-ID einer integrierten Registerkarte.  
   
-     Eine Liste der Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Office fluent User Interface Steuerelementbezeichnern](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Eine Liste der Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   

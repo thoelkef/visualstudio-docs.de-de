@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests in Visual Studio
+title: Konfigurieren von Test-Agents und Testcontrollern für Auslastungstests
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942984"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068016"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
@@ -22,6 +22,8 @@ Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physisc
 
 > [!NOTE]
 > Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>Architektur der Auslastungssimulation
 
@@ -37,7 +39,7 @@ Diese Architektur bietet die folgenden Vorteile:
 
 - Die Möglichkeit, die Auslastungsgenerierung durch Hinzufügen zusätzlicher Test-Agents zu einem Testcontroller horizontal zu skalieren
 
-- Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Zum Beispiel:
+- Flexibilität für die Installation der Client-, Testcontroller- und Test-Agent-Software auf den gleichen oder anderen Computern. Beispiel:
 
    **Lokale Konfiguration:**
 

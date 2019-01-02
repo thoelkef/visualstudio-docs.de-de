@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821427"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739266"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl
 Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiterung mit einem Menübefehl, der Editor wird gestartet.  
@@ -55,23 +55,15 @@ Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiteru
 2.  Suchen Sie den privaten FirstCommand-Konstruktor. Dies ist, in dem der Befehl ist mit dem Befehlsdienst eingebunden und die Befehlshandler angegeben ist. Ändern Sie den Namen der Befehlshandler, "startnotepad", wie folgt:  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -122,16 +114,16 @@ Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiteru
   
    1.  Fügen Sie Ihr eigenes Symbol hinzu: [Hinzufügen von Symbolen zu Menübefehlen](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Ändern Sie den Text des Menübefehls: [Ändern des Texts eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Ändern Sie den Text des Menübefehls: [Ändern Sie den Text eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md)  
   
    3.  Fügen Sie eine Verknüpfung im Startmenü auf einen Befehl hinzu: [Binden von Tastenkombinationen an Menüelemente](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Verschiedene Arten von Befehle, Menüs und Symbolleisten: [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)  
+2. Fügen Sie verschiedene Arten von Befehle, Menüs und Symbolleisten hinzu: [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)  
   
-3. Hinzufügen von Toolfenstern und erweitern Sie die integrierte Visual Studio-Toolfenster: [erweitern und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Fügen Sie Toolfenster, und erweitern Sie die integrierte Visual Studio-Toolfenster: [Erweitern und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Hinzufügen von IntelliSense Vorschläge für Code, und andere Funktionen auf vorhandenen code-Editoren: [Erweiterung der Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md)  
+4. Hinzufügen von IntelliSense Vorschläge für Code und andere Funktionen auf vorhandenen Code-Editoren: [Erweitern Sie die Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Hinzufügen von Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung: [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md) und [benutzereinstellungen und Ooptions erweitern](../extensibility/extending-user-settings-and-options.md)  
+5. Fügen Sie die Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung hinzu: [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md) und [benutzereinstellungen und Ooptions erweitern](../extensibility/extending-user-settings-and-options.md)  
   
-   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen benutzerdefinierter Editoren und Designer](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer Erweiterung in einer isolierten Shell: [Visual Studio isolierte Shell](../extensibility/visual-studio-isolated-shell.md)
+   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen benutzerdefinierter Editoren und Designer](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer die Erweiterung in einer isolierten Shell: [Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

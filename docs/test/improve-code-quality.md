@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Testtools
+title: Testtools
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7a6f0dac77801d2d02a260fbf392588b1a2f4a32
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321059"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739282"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
 
@@ -45,4 +45,4 @@ Die Visual Studio-Testtools können Sie und Ihr Team dabei unterstützen, hochwe
 * [Exploratory & Manual Testing (Azure Test Plans) (Explorative und manuelle Tests (Azure Test Plans))](/azure/devops/test/index?view=vsts)
 * [Load testing (Azure Test Plans) (Auslastungstest (Azure Test Plans))](/azure/devops/test/load-test/index?view=vsts)
 * [Continuous testing (Azure Test Plans) (Fortlaufende Tests (Azure Test Plans))](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [Codeanalysetools](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Codeanalysetools](../code-quality/code-analysis-for-managed-code-overview.md)

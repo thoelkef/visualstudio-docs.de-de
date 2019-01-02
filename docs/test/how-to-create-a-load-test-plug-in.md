@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Plug-Ins für Auslastungstests in Visual Studio
+title: Erstellen eines Auslastungstest-Plug-Ins
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380537"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064717"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 
 Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungstests Code zu verschiedenen Zeitpunkten auszuführen. Mithilfe von erstellten Plug-Ins können die integrierten Funktionen des Auslastungstests erweitert oder bearbeitet werden. Sie können z. B. Code für ein Auslastungstest-Plug-In schreiben, um während der Ausführung des Auslastungstests das Testmuster festzulegen oder zu bearbeiten. Hierzu müssen Sie eine Klasse erstellen, die von der <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle erbt. Diese Klasse muss die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*>-Methode dieser Schnittstelle implementieren. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!NOTE]
-> Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [How to: Create a Web Performance Test Plug-In (Vorgehensweise: Erstellen eines codierten Webleistungstest-Plug-Ins)](../test/how-to-create-a-web-performance-test-plug-in.md)
+> Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>So erstellen Sie ein Auslastungstest-Plug-In mit Visual C#
 
@@ -34,7 +36,7 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
 
 2.  Fügen Sie dem Testprojekt einen Auslastungstest hinzu, und konfigurieren Sie ihn für die Ausführung eines Webleistungstests.
 
-     Weitere Informationen finden Sie unter [Quickstart: Create a load test project (Schnellstart: Erstellen eines Auslastungstestprojekts)](../test/quickstart-create-a-load-test-project.md).
+     Weitere Informationen finden Sie unter [Schnellstart: Erstellen eines Auslastungstestprojekts](../test/quickstart-create-a-load-test-project.md).
 
 3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
@@ -92,7 +94,7 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Request failed: Exception in \<plug-in> event: Could not load file or assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' or one of its dependencies (Anforderung fehlgeschlagen: Ausnahme in <Plug-In>- Ereignis: Datei oder Assembly „<"Plug-In-Name".dll-Datei>, Version=<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden.) Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >

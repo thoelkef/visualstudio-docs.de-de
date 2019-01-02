@@ -1,5 +1,5 @@
 ---
-title: Programmieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest in Visual Studio
+title: Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283209"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066677"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
 
@@ -28,6 +28,8 @@ Sie können eigene Extraktionsregeln erstellen. Leiten Sie hierzu Ihre Regeln vo
 
 > [!NOTE]
 > Sie können auch benutzerdefinierte Validierungsregeln erstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>So erstellen Sie eine benutzerdefinierte Extraktionsregel
 

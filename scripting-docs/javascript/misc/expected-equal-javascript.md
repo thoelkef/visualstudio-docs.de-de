@@ -1,5 +1,5 @@
 ---
-title: Erwartet &#39;=&#39; (JavaScript) | Microsoft-Dokumentation
+title: "\"=\" Erwartet (JavaScript) | Microsoft-Dokumentation"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909996"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802263"
 ---
-# <a name="expected-3939-javascript"></a>Erwartet &#39;=&#39; (JavaScript)
+# <a name="expected--javascript"></a>"=" erwartet (JavaScript)
 Sie hat versucht, erstellen eine Variable, die mit bedingten kompilierungsanweisungen verwendet werden, aber platzieren Sie nicht an ein Gleichheitszeichen zwischen Variablen und den Wert an, die, den Sie zuweisen möchten.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  

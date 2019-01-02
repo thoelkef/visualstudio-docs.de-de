@@ -1,6 +1,8 @@
 ---
-title: Remotedebuggen in Visual Studio | Microsoft-Dokumentation
-ms.custom: remotedebugging
+title: Remotedebuggen | Microsoft-Dokumentation
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872433"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065505"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -38,7 +40,7 @@ Detaillierte Anweisungen zum Remotedebuggen finden Sie unter folgenden Themen.
 |Azure-VM|[Remotedebuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Debuggen einer Azure Service Fabric-Anwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Remotedebuggen für ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) oder [Remotedebuggen von ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C#- oder Visual Basic|[Remotedebuggen eines C#- oder Visual Basic-Projekts](../debugger/remote-debugging-csharp.md)|
+|C# oder Visual Basic|[Remotedebuggen eines C#- oder Visual Basic-Projekts](../debugger/remote-debugging-csharp.md)|
 |C++|[Remotedebuggen eines C++-Projekts](../debugger/remote-debugging-cpp.md)|
 |Universelle Windows-Apps (UWP)|[Ausführen von UWP-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) oder [Debuggen eines installierten app-Pakets](../debugger/debug-installed-app-package.md)|
 
@@ -69,11 +71,11 @@ Sie finden den Remotedebugger (*msvsmon.exe*) auf einem Computer mit Visual Stud
 > [!TIP]
 > Installation über die Befehlszeile und Befehlszeilenreferenz-finden Sie auf die Hilfeseite für *msvsmon.exe* durch Eingabe ``msvsmon.exe /?`` in der Befehlszeile auf dem Computer mit Visual Studio installiert (oder wechseln Sie zu **Hilfe > Verwendung**in den Remotedebugger).
 
-## <a name="bkmk_setup"></a> Einrichten des Remotedebuggers
+## <a name="bkmk_setup"></a>Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a> Konfigurieren des Remotedebuggers
+### <a name="configure_msvsmon"></a>Konfigurieren des Remotedebuggers
 Sie können einige Aspekte der Konfiguration des Remotedebuggers ändern, nachdem Sie ihn zum ersten Mal gestartet haben.
 
 -   Wenn Sie zum Hinzufügen von Berechtigungen für andere Benutzer eine Verbindung mit dem Remotedebugger herstellen, wählen müssen **Extras > Berechtigungen**. Sie müssen Administratorrechte besitzen, um Berechtigungen zu gewähren oder zu verweigern.
@@ -103,7 +105,7 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
 4. Fügen Sie den Namen des Benutzerkontos und das Kennwort hinzu.
 
-    Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **Local Security Policy** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Hinzufügen des Benutzerkontos, das die **Eigenschaften** Fenster, und klicken Sie auf **OK**). Klicken Sie auf **Weiter**.
+    Müssen Sie möglicherweise hinzufügen der **Anmelden als Dienst** Benutzer direkt auf dieses Konto (Suchen **Local Security Policy** (secpol.msc) in der **starten** Seite bzw. im Fenster (oder Typ  **"secpol"** an einer Eingabeaufforderung). Wenn das Fenster angezeigt wird, doppelklicken Sie auf **Zuweisen von Benutzerrechten**, und suchen Sie dann **Anmelden als Dienst** im rechten Bereich. Doppelklicken Sie darauf. Fügen Sie das Benutzerkonto zum Fenster **Eigenschaften** hinzu, und klicken Sie auf **OK**. Klicken Sie auf **Weiter**.
 
 5. Wählen Sie den Typ des Netzwerks aus, über das die Remotetools kommunizieren sollen. Es muss mindestens ein Netzwerktyp ausgewählt werden. Wenn die Computer über eine Domäne verbunden sind, sollten Sie das erste Element auswählen. Wenn die Computer über eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden sind, sollten Sie das zweite bzw. dritte Element auswählen. Klicken Sie auf **Weiter**.
 
@@ -111,9 +113,9 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
 7. Klicken Sie auf **Fertig stellen**.
 
-   An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie zu **Systemsteuerung > Dienste** nach **Visual Studio 2015 Remote Debugger**.
+   An diesem Punkt wird der Remotedebugger als Dienst ausgeführt. Sie können dies überprüfen, indem Sie zu **Systemsteuerung > Dienste** navigieren und nach **Visual Studio 2015 Remote Debugger** suchen.
 
-   Sie können auch beenden und starten Sie den Remotedebugger-Dienst von **Systemsteuerung > Dienste**.
+   Sie können den Remotedebugger-Dienst über **Systemsteuerung > Dienste** beenden und starten.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
 

@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Arbeiten mit Python, Schritt 0: Installation'
+title: 'Tutorial „Python in Visual Studio“, Schritt 0: Installation'
+titleSuffix: ''
 description: Dies ist Schritt 0 einer grundlegenden Einführung in die Arbeit mit Python in Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5593de7de87244b9ee38a26a0688f4ffe5931c10
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5096d0789f8f3c84c041591918af73cc230fe16d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219665"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064442"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installieren der Python-Unterstützung für Visual Studio
 
@@ -42,7 +44,7 @@ ms.locfileid: "50219665"
 ## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
-> [Schritt 1: Erstellen eines neuen Python-Projekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Schritt 1: Erstellen eines Python-Projekts](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Siehe auch
 
