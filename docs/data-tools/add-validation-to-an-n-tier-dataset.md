@@ -19,7 +19,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
 ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/21/2018
 ms.locfileid: "53739467"
