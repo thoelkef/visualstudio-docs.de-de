@@ -1,9 +1,6 @@
 ---
 title: Problembehandlung bei Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926553"
 ---
 # <a name="troubleshoot-office-solutions"></a>Problembehandlung bei Office-Projektmappen
   Dieser Abschnitt enthält Tipps zur Lösung allgemeiner Probleme, die beim Erstellen von Projektmappen mithilfe von Office-Entwicklungstools in Visual Studio auftreten können.  
@@ -31,7 +28,7 @@ ms.locfileid: "35671883"
  [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Beschreibt allgemeine Probleme, die beim Entwerfen, Ausführen und Testen von Office-Projektmappen in Visual Studio auftreten können.  
   
- [Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.  
   
  [Zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35671883"
   
  [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)  
  Eine Liste häufig gestellter Fragen zum Programmieren von Office-Projektmappen sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.  
-  
-  

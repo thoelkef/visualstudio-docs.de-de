@@ -1,9 +1,6 @@
 ---
-title: IEEVisualizerService | Microsoft Docs
-ms.custom: ''
+title: IEEVisualizerService | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerService
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e2b08872a952ecf9d618825c48ae1d5907fa5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d629e5bc557779345ff514d1d90bf03b84e320be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928184"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Diese Schnittstelle implementiert, wichtige Methoden, die Funktionen zum Angeben der [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) und [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstellen.  
+ Diese Schnittstelle implementiert, wichtige Methoden, die Funktionalität zum Angeben der [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) und [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstellen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,26 +32,26 @@ IEEVisualizerService : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Visual Studio implementiert diese Schnittstelle, um eine ausdrucksauswertung (EE) Typ-Schnellansichten unterstützen können.  
+ Visual Studio implementiert diese Schnittstelle, um eine ausdrucksauswertung (EE), um Typ-Schnellansichten unterstützen können.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ruft die EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) diese Schnittstelle nicht als Teil der Unterstützung für die Typ-Schnellansichten abgerufen.  
+ Die Aufrufe EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) Sie diese Schnittstelle als Teil der Unterstützung für Typ-Schnellansichten zu erhalten.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Ruft die Anzahl der benutzerdefinierten Viewer diesen Dienst kennt ab.|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Ruft die Anzahl der benutzerdefinierten Viewer, die diesen Dienst bekannt sind.|  
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Ruft die Liste der benutzerdefinierten Viewer ab.|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Ein Proxyobjekt für eine Eigenschaft zurückgegeben.|  
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Ruft die Anzahl von Zeichenfolgen, die für die angegebene Eigenschaft oder das Feld angezeigt.|  
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Gibt ein Proxyobjekt für eine Eigenschaft zurück.|  
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Ruft die Anzahl der Zeichenfolgen, die für die angegebene Eigenschaft oder das Feld angezeigt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die IDE verwendet die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle, um festzustellen, ob alle benutzerdefinierten Viewer sind, oder geben Sie die Schnellansichten für die Eigenschaft. Durch Erstellen einer Schnellansicht-Diensts (mit [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), die EE kann die Funktionen zum Angeben der `IDebugProperty3` und [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (unterstützt anzeigen und Ändern einer der Eigenschaftswert) Schnittstellen und dadurch Typ-Schnellansichten unterstützen.  
+ Die IDE verwendet das [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle, um zu bestimmen, ob alle benutzerdefinierten Viewer oder geben Sie die Schnellansichten für die Eigenschaft. Durch das Erstellen einer Schnellansicht-Diensts (mit [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), die EE kann die Funktionalität zum Angeben der `IDebugProperty3` und [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (die unterstützt werden, anzeigen und Ändern einer Eigenschaftswert)-Schnittstellen und Typ-Schnellansichten und zu unterstützen.  
   
- Verfügt ein EE benutzerdefinierten Viewer, die selbst implementiert wird, kann die EE Anfügen der `CLSID`s von diesen benutzerdefinierten Viewer bis zum Ende der Liste zurückgegebenes [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Dies ermöglicht eine EE Typ-Schnellansichten und einen eigenen benutzerdefinierten Viewer zu unterstützen. Nur stellen sicher, dass [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) das Hinzufügen von jeder benutzerdefinierte Viewer widerspiegelt.  
+ Verfügt ein EE benutzerdefinierten Viewer, die selbst implementiert, fügen Sie die EE kann die `CLSID`s, der diesen benutzerdefinierten Viewer an das Ende der Liste, die vom [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Dies ermöglicht eine EE Unterstützung von typschnellansichten und einen eigenen benutzerdefinierten Viewern. Müssen nur darauf achten, [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) gibt alle benutzerdefinierten Viewer hinzufügen.  
   
- Finden Sie unter [Typ Schnellansicht und den benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) eine Erläuterung des Unterschieds zwischen Schnellansichten und Viewern.  
+ Finden Sie unter [Typschnellansicht und benutzerdefinierte Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) eine Erläuterung des Unterschieds zwischen Schnellansichten und -Viewer.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: ee.h  
@@ -64,7 +61,7 @@ IEEVisualizerService : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Ausdruck Auswertung Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

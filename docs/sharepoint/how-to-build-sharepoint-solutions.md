@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen von SharePoint-Lösungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22fda2415cfb9847c006a0bb4a0d0de576beb073
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928906"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Gewusst wie: Erstellen von SharePoint-Lösungen
+# <a name="how-to-build-sharepoint-solutions"></a>Vorgehensweise: Erstellen von SharePoint-Lösungen
 
 Erstellen Sie Ihre SharePoint Lösung funktioniert genauso wie andere Anwendungen in Visual Studio erstellen. Weitere Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Eine Erläuterung der einige Aspekte jedoch spezifisch für SharePoint-Lösungen sind, finden Sie unter [Vorgehensweise: Bereitstellen und veröffentlichen eine SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 

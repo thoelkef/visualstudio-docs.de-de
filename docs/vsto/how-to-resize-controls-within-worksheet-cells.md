@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen'
-ms.custom: ''
+title: 'Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927349"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Gewusst wie: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen
   Wenn Sie die Spalten oder Zeilen in einem Arbeitsblatt Größe, die Größe ändern alle Hoststeuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle, die Größe geändert wurde. Windows Forms-Steuerelemente sind standardmäßig nicht automatisch angepasst.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35672896"
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

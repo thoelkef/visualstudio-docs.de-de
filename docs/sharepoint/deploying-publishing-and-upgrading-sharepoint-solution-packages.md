@@ -1,16 +1,11 @@
 ---
 title: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17578fbfb58d354f06e91c78f067d228b92860fe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8bef002d1d32abf4f97a63f284545cbaa6eee403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853452"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete
   Nachdem Sie eine SharePoint-Lösung in Visual Studio entwickelt haben, können Sie die Paketdatei (.wsp) auf einem lokalen SharePoint-Server bereitstellen oder veröffentlichen es auf einem Remote- oder lokalen SharePoint-Server. Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien (.wsp) bereitgestellt werden.  
@@ -63,11 +58,10 @@ ms.locfileid: "36327202"
   
  Zum Veröffentlichen einer SharePoint-Lösung mit einem lokalen Server, in der **veröffentlichen** Dialogfeld auf die **im Dateisystem veröffentlichen** Optionsfeld aus, die einen Pfad des lokalen Systems bereitstellen.  
   
- Nachdem eine Projektmappe erfolgreich in SharePoint veröffentlicht hat, die Projektmappe wird in der **Lösungskatalog** , wo Sie sie aktivieren können. Weitere Informationen finden Sie unter [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Nachdem eine Projektmappe erfolgreich in SharePoint veröffentlicht hat, die Projektmappe wird in der **Lösungskatalog** , wo Sie sie aktivieren können. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ### <a name="upgrade-published-packages"></a>Veröffentlichte Pakete aktualisieren
- Wenn Sie nach der Veröffentlichung auf einer SharePoint-Projekt in Visual Studio Änderungen vornehmen, muss das veröffentlichte Paket aktualisiert werden, damit die Änderungen übernommen werden. Um erfolgreich zu aktualisieren, müssen ein Paket einen eindeutigen Namen verfügen. Wenn ein Paket mit dem gleichen Namen auf der SharePoint-Website gefunden wird – was auftreten kann, wenn Sie eine vorhandene Anwendung aktualisieren – eine fehlerwarnungen Sie an den Dateinamen in Konflikt stehen und ermöglicht Ihnen das Benennen Sie des Pakets. Nach erneut veröffentlicht wird, wird das neue Paket wird auf der SharePoint-Website angezeigt, und Sie können aktualisiert werden. Ein aktualisiertes Paket aktualisiert die Lösung mithilfe von Daten aus dem älteren Paket und aktiviert dann die Projektmappe in SharePoint. Weitere Informationen finden Sie unter [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Wenn Sie nach der Veröffentlichung auf einer SharePoint-Projekt in Visual Studio Änderungen vornehmen, muss das veröffentlichte Paket aktualisiert werden, damit die Änderungen übernommen werden. Um erfolgreich zu aktualisieren, müssen ein Paket einen eindeutigen Namen verfügen. Wenn ein Paket mit dem gleichen Namen auf der SharePoint-Website gefunden wird – was auftreten kann, wenn Sie eine vorhandene Anwendung aktualisieren – eine fehlerwarnungen Sie an den Dateinamen in Konflikt stehen und ermöglicht Ihnen das Benennen Sie des Pakets. Nach erneut veröffentlicht wird, wird das neue Paket wird auf der SharePoint-Website angezeigt, und Sie können aktualisiert werden. Ein aktualisiertes Paket aktualisiert die Lösung mithilfe von Daten aus dem älteren Paket und aktiviert dann die Projektmappe in SharePoint. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Siehe auch
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

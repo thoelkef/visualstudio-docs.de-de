@@ -2,7 +2,6 @@
 title: Einführung in SAL
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -10,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889919"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 
@@ -43,7 +42,7 @@ void * memcpy(
 Können Sie feststellen, was diese Funktion macht? Wenn eine Funktion implementiert oder aufgerufen wird, müssen bestimmte Eigenschaften verwaltet werden, um sicherzustellen, dass Richtigkeit des Programms. Durch das alleinige untersuchen eine Deklaration, wie im Beispiel, wissen Sie nicht genau. Ohne SAL-Anmerkungen müssten Sie die Dokumentation oder in den Kommentaren im Code verwenden. Hier ist die MSDN-Dokumentation für `memcpy` besagt:
 
 > "Kopien Anzahl der Bytes von Src an Dest. Wenn sich Quelle und Ziel überlappen, ist das Verhalten der Memcpy nicht definiert. Verwenden Sie Memmove, um überlappende Bereiche zu behandeln.
-> **Sicherheitshinweis:** stellen Sie sicher, dass der Zielpuffer identisch ist, mindestens so groß wie der Quellpuffer. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."
+> **Sicherheitshinweis:** Stellen Sie sicher, dass der Zielpuffer dieselbe Größe wie der Quellpuffer aufweist bzw. größer ist. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."
 
 Die Dokumentation enthält eine Reihe von Bits von Informationen, die wird empfohlen, dass der Code hat bestimmte Eigenschaften aus, um die Richtigkeit des Programms beibehalten:
 

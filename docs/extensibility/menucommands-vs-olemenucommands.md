@@ -1,8 +1,6 @@
 ---
 title: MenuCommand- und OleMenuCommands | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926238"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
 Sie können Menübefehle erstellen, durch Ableiten aus <xref:System.ComponentModel.Design.MenuCommand> oder <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt aus, und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  

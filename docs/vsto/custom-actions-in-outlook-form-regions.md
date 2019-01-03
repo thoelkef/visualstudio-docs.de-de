@@ -1,9 +1,6 @@
 ---
 title: Benutzerdefinierte Aktionen in Outlook-Formularbereichen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869517"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formularbereichen
   Aktionen angezeigt, Schaltflächen, mit die Benutzer mit einem Microsoft Office Outlook-Element reagieren können. Klicken Sie beispielsweise, um auf ein e-Mail-Element reagieren, Benutzer auf die **Antwort**, **allen Antworten**, oder **Vorwärts** Aktionsschaltflächen. Jede dieser Aktionen erstellt ein neues e-Mail-Element und füllt die Felder des Elements mit den Informationen aus dem ursprünglichen Element.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441659"
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

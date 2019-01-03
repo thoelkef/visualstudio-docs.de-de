@@ -1,9 +1,6 @@
 ---
 title: Anpassung der Office-Benutzeroberfläche
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924825"
 ---
 # <a name="office-ui-customization"></a>Anpassung der Office-Benutzeroberfläche
   Sie können die Benutzeroberfläche (UI) von Microsoft Office-Anwendungen anpassen, indem Sie die Office Developer Tools in Visual Studio verwenden. In diesem Thema werden die Funktionen der Benutzeroberfläche, die Sie anpassen können, in den folgenden Abschnitten beschrieben:  
@@ -105,8 +102,6 @@ ms.locfileid: "49836763"
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)   
  [Verwenden von WPF-Steuerelemente in Office-Projektmappen](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Exemplarische Vorgehensweise: Sammeln von Daten mit einem Windows form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  

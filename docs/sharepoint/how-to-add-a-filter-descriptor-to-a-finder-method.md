@@ -1,13 +1,8 @@
 ---
 title: 'Vorgehensweise: Hinzufügen ein Filterdeskriptors zu einer Finder-Methode | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,21 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877769"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Gewusst wie: Hinzufügen ein Filterdeskriptors zu einer Finder-Methode
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Vorgehensweise: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode
   Filterdeskriptoren ermöglichen Consumern des Modells, um Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Ein häufiges Szenario ist, dass Benutzer in SharePoint soll, um Instanzen von einem externen Inhaltstyp abzurufen, die bestimmte Kriterien erfüllen. Sie können dieses Szenario unterstützen, durch das Hinzufügen eines Filterdeskriptors zu einer Finder-Methode.  
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Hinzufügen ein Filterdeskriptors zu einer Finder-Methode  
   
-1.  In der **BDC-Methodendetails** Fenster, erweitern Sie den Knoten einer Finder-Methode, erweitern Sie die **Parameter** Knoten, und fügen Sie dann einen Eingabeparameter hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Parameters an eine Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
+1.  In der **BDC-Methodendetails** Fenster, erweitern Sie den Knoten einer Finder-Methode, erweitern Sie die **Parameter** Knoten, und fügen Sie dann einen Eingabeparameter hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie einen Parameter an eine Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
   
 2.  In der **Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.  
   
@@ -73,11 +68,9 @@ ms.locfileid: "36755598"
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: hinzufügen eine bestimmte Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Gewusst wie: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Vorgehensweise: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
+ [Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Vorgehensweise: Definieren des Typdeskriptors für einen parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

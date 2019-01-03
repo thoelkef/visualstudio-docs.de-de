@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 322c314a768545996f343526367de44c667ce89b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873430"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken
   Wenn Sie ein Microsoft Office Excel-Dokument, die Windows Forms-Steuerelemente enthält drucken, sind die Steuerelemente auf dem Arbeitsblatt gedruckter sichtbar. Sie können die Steuerelemente ausblenden beim Drucken eines Arbeitsblatts.  
@@ -49,5 +46,3 @@ ms.locfileid: "53646798"
  [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  

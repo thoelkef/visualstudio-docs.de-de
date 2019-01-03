@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: hinzufügen eine Abhängigkeit zu einem VSIX-Paket | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package reference
@@ -16,14 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84865bf354bd1822ca872ed5f0df89a4330fb690
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902479"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Gewusst wie: hinzufügen eine Abhängigkeit zu einem VSIX-Paket
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket
 
 Sie können eine VSIX-Paket-Bereitstellung einrichten, die alle Abhängigkeiten installiert, die noch nicht auf dem Zielcomputer vorhanden sind. Dazu gehören die VSIX-Abhängigkeiten an die *"Source.Extension.vsixmanifest"* Datei.
 

@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907825"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -228,11 +227,11 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 
 | **Fehlersyntax** | **Fehlerbeschreibung** |
 |-|-|
-| DV0001: **ungültige Abhängigkeit** | Dieses Problem wird gemeldet, wenn ein Codeelement (Namespace-, Typ-, Memberbereich) eine Ebenenverweise ein Codeelement in eine andere Ebene zugeordnet zugeordnet, aber es keine Abhängigkeitspfeil zwischen diesen Schichten in der abhängigkeitsvalidierungsdiagramm gibt, die diese Ebenen enthält. Dies ist eine einschränkungsverletzung Abhängigkeit. |
+| DV0001: **Ungültige Abhängigkeit** | Dieses Problem wird gemeldet, wenn ein Codeelement (Namespace-, Typ-, Memberbereich) eine Ebenenverweise ein Codeelement in eine andere Ebene zugeordnet zugeordnet, aber es keine Abhängigkeitspfeil zwischen diesen Schichten in der abhängigkeitsvalidierungsdiagramm gibt, die diese Ebenen enthält. Dies ist eine einschränkungsverletzung Abhängigkeit. |
 | DV1001: **Ungültiger Namespacename** | Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene der "Darf der Namespace-Namen"-Eigenschaft nicht den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Syntax des "Darf der Namespace-Namen" eine durch Semikolons Liste von Namespaces, in denen Elemente, die zu Ebene sind, sein dürfen definiert werden. |
-| DV1002: **Abhängigkeit unreferenceable Namespace** | Dieses Problem wird gemeldet, auf ein Codeelement einer Ebene zugeordnete und verweisen auf ein anderes Codeelement definiert, die in einem Namespace das in der Eigenschaft "Unreferenceable Namespace" die Ebene definiert wird. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Unreferenceable Namespaces" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, die in dieser Ebene zugeordnete Codeelemente nicht verwiesen werden soll. |
-| DV1003: **Namespacename nicht erlaubt** | Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene die "Namespace-Namen nicht zulässig"-Eigenschaft den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Nicht erlaubt-Namespace-Name" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, in denen dieser Ebene zugeordneten Elemente nicht definiert werden soll. |
-| DV3001: **fehlender Link** | Ebene '*LayerName*"enthält links zu"*Artefakt*", der nicht gefunden werden. Möglicherweise fehlt ein Assemblyverweis. |
+| DV1002: **Abhängigkeit von unreferenceable namespace** | Dieses Problem wird gemeldet, auf ein Codeelement einer Ebene zugeordnete und verweisen auf ein anderes Codeelement definiert, die in einem Namespace das in der Eigenschaft "Unreferenceable Namespace" die Ebene definiert wird. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Unreferenceable Namespaces" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, die in dieser Ebene zugeordnete Codeelemente nicht verwiesen werden soll. |
+| DV1003: **Unzulässige Namespacename** | Dieses Problem wird gemeldet, auf ein Codeelement zugeordnete eine Ebene die "Namespace-Namen nicht zulässig"-Eigenschaft den Namespace enthält, in dem dieses Codeelement definiert ist. Dies ist eine Einschränkung namensverletzung. Beachten Sie, dass die Eigenschaft "Nicht erlaubt-Namespace-Name" als eine durch Semikolons getrennte Liste der Namespaces definiert ist, in denen dieser Ebene zugeordneten Elemente nicht definiert werden soll. |
+| DV3001: **Fehlender Link** | Ebene '*LayerName*"enthält links zu"*Artefakt*", der nicht gefunden werden. Möglicherweise fehlt ein Assemblyverweis. |
 | DV9001: **Architektur Analyse interner Fehler gefunden** | Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster. |
 
 ## <a name="see-also"></a>Siehe auch

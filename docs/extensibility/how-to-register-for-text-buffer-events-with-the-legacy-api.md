@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886006"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Gewusst wie: Registrieren Sie sich für Text-Puffer-Ereignisse mit der legacy-API
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der legacy-API
 Wenn Sie den Textpuffer mithilfe der legacy-API zugreifen, sollten Sie für Text-pufferereignisse, wie im folgenden Verfahren dargestellt registrieren.  
   
 ## <a name="to-advise-text-buffer-events"></a>Anweisen, Text-Puffer-Ereignisse  

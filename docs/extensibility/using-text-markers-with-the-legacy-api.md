@@ -1,9 +1,6 @@
 ---
 title: Verwenden von Textmarkierungen mit der Legacy-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867000"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
 Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige unterstreichungen und schreibgeschützter Bereiche. Textmarkierungen unterscheiden sich grundsätzlich von Syntaxfarben. Farben für Syntax ist eine schnelle Möglichkeit, um die Sprachsyntax zu kommunizieren, die dem Textbereich zugeordnet ist. Farben für Syntax wird in der Regel angefordert, wenn Windows den Bildschirm zeichnet neu, wenn Geschwindigkeit von Bedeutung ist. Farben für Syntax ändert nur die Farbe des Texts. Textmarkierungen können viele andere Eigenschaften des Texts ändern. Textmarkierungen "float" und besonderes Verhalten angewendet werden können und färben.  
@@ -32,9 +29,9 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
   
 | Titel | Beschreibung |
 | - | - |
-| [Vorgehensweise: Hinzufügen von Standardtextmarkierungen](../extensibility/how-to-add-standard-text-markers.md) | Beschreibt das Hinzufügen von bereitgestellten Typ des Markers eine standard-Text der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf eine Textansicht-Kern-Editor. |
-| [Vorgehensweise: Implementieren von Fehlermarkierungen](../extensibility/how-to-implement-error-markers.md) | Beschreibt, wie Sie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Marker, der verwendet wird, um Fehler anzugeben, mit einer roten Wellenlinie unterstrichen. |
-| [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md) | Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen. |
+| [Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md) | Beschreibt das Hinzufügen von bereitgestellten Typ des Markers eine standard-Text der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf eine Textansicht-Kern-Editor. |
+| [Vorgehensweise: Implementieren von Fehlermarker](../extensibility/how-to-implement-error-markers.md) | Beschreibt, wie Sie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Marker, der verwendet wird, um Fehler anzugeben, mit einer roten Wellenlinie unterstrichen. |
+| [Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md) | Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen. |
 | [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md) | Erläutert das Hinzufügen von Textmarkierungen. |
 | [Im Core-Editor](../extensibility/inside-the-core-editor.md) | Beschreibt die Funktionen von der Kern-Editor, und enthält ausführliche Informationen zum Anpassen der Kern-Editor. |
 | [Editor-Funktionen](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor. |

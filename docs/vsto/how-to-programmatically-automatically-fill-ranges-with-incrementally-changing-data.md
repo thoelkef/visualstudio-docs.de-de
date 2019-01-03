@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4fff7eb59ff2fe5e17ddf500bf546502492634d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895576"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Gewusst wie: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten
   Die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht Ihnen, einen Bereich in einem Arbeitsblatt automatisch mit Werten zu füllen. In den meisten Fällen die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode wird verwendet, um schrittweise erhöhen oder verringern die Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,10 +53,8 @@ ms.locfileid: "35256402"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

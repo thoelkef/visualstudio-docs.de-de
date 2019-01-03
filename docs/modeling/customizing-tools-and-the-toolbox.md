@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919598"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
@@ -73,13 +72,13 @@ Die **Verbindungsgenerator** Eigenschaft eines Verbindungstools verweist auf ein
 
      Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei im Projektmappen-Explorer die **dsl\ressourcen** Ordner. Die Datei sollte die folgenden Eigenschaftswerte enthalten: **Buildvorgang** = **Content**; **In Ausgabeverzeichnis kopieren** = **nicht kopieren**.
 
-4.  **Für ein Elementtool:** legen Sie die **Klasse** Eigenschaft des Tools für die auf eine konkrete Domänenklasse verweisen, die mit einer Form zugeordnet ist.
+4.  **Für ein Elementtool:** Legen Sie die **Klasse** Eigenschaft des Tools für die auf eine konkrete Domänenklasse verweisen, die mit einer Form zugeordnet ist.
 
-     **Für ein konnektortool:** legen Sie die **Verbindungsgenerator** Eigenschaft des Tools auf eines der Elemente, die in der Dropdown Liste zur Verfügung stehen. Verbindungs-Generatoren werden automatisch erstellt, wenn Sie einen Konnektor einer Domänenbeziehung zuordnen. Wenn Sie gerade einen Konnektor erstellt haben, würden Sie normalerweise den zugehörigen Verbindungs-Generator auswählen.
+     **Für ein konnektortool:** Legen Sie die **Verbindungsgenerator** Eigenschaft des Tools auf eines der Elemente, die in der Dropdown Liste zur Verfügung stehen. Verbindungs-Generatoren werden automatisch erstellt, wenn Sie einen Konnektor einer Domänenbeziehung zuordnen. Wenn Sie gerade einen Konnektor erstellt haben, würden Sie normalerweise den zugehörigen Verbindungs-Generator auswählen.
 
 5.  Um die DSL zu testen, drücken Sie F5 oder STRG + F5, und öffnen Sie in der experimentellen Instanz von Visual Studio eine beispielmodelldatei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
 
-     Wenn das Tool nicht angezeigt wird, beenden Sie die experimentelle Visual Studio. In der Windows **starten** führen **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
+     Wenn das Tool nicht angezeigt wird, beenden Sie die experimentelle Visual Studio. In der Windows **starten** führen **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
 ## <a name="customizing"></a> Anpassen von Elementtools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
@@ -238,6 +237,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)
-- [Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Circuit Diagrams Sample DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

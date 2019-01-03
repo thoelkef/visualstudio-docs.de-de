@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900991"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
   Sie können Verfügbarmachen von Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt in Visual Basic für Applikationen (VBA) Code, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
@@ -126,5 +123,3 @@ ms.locfileid: "53648638"
  [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
-  
-  

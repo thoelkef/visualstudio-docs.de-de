@@ -1,9 +1,6 @@
 ---
 title: Konvertieren zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920617"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konvertieren Sie zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen
   In einigen Fällen können Sie ein Objekt sein, in SharePoint-Projektsystem und gewünschten Features eines entsprechenden Objekts in der Visual Studio-Automatisierungsobjektmodell oder-Integrationsobjektmodell und umgekehrt. In diesen Fällen können Sie die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> -Methode der SharePoint-Projektdiensts auf das Objekt in ein anderes Objektmodell konvertieren.
@@ -52,6 +49,5 @@ ms.locfileid: "36326178"
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwenden Sie die SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md)
-- [Gewusst wie: Abrufen des SharePoint-Projektdiensts](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Vorgehensweise: Abrufen des SharePoint-Projektdiensts](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [Übersicht über das Programmiermodell von SharePoint-tools extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-

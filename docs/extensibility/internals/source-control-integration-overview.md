@@ -1,9 +1,6 @@
 ---
 title: Übersicht über die Integration Source | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902985"
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration der Quellcodeverwaltung
 Dieser Abschnitt vergleicht zwei Möglichkeiten, die in Visual Studio-quellcodeverwaltung integrieren. ein Quellcodeverwaltungs-Plug-in und ein VSPackage, das eine Source-Control-Lösung bietet und die neuen Quellcodeverwaltungsfeatures hervorgehoben. Visual Studio können für manuelle Wechseln zwischen quellcodeverwaltung VSPackages und Quellcodeverwaltungs-Plug-ins als auch automatische informationsreiche lösungsbasierte wechseln.  
@@ -35,7 +32,7 @@ Dieser Abschnitt vergleicht zwei Möglichkeiten, die in Visual Studio-quellcodev
   
 1. Erstellen Sie eine DLL, die die angegebenen Funktionen implementiert [Quellcodeverwaltung-Plug-ins](../../extensibility/source-control-plug-ins.md).  
   
-2. Die DLL registrieren, indem Sie die entsprechenden Registrierungseinträge vornehmen (beschrieben [Vorgehensweise: eine Source-Control-Plug-in installieren](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Die DLL registrieren, indem Sie die entsprechenden Registrierungseinträge vornehmen (beschrieben [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Erstellen Sie eine Hilfsprogramm, Benutzeroberfläche und anzeigen, wenn Sie aufgefordert werden, durch den Adapter Quellcodeverwaltungspaket (der Visual Studio-Komponente, verarbeitet der Quellcodeverwaltungsfunktionen über den Quellcodeverwaltungs-Plug-ins)  
   

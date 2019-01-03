@@ -1,9 +1,6 @@
 ---
 title: ExtensionData-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cb80965385d7d258523dc0caf5291791c5ea09a
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: c50eac5a470a2800acff89316bd53fda683d6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922149"
 ---
 # <a name="extensiondata-element"></a>ExtensionData-Element
   Stellt eine Auflistung von benutzerdefinierten Daten-Elementen, die die SharePoint-Projektelement zugeordnet sind.  
@@ -65,5 +62,3 @@ ms.locfileid: "36326230"
   
 ## <a name="see-also"></a>Siehe auch
  [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

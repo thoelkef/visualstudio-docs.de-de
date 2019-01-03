@@ -1,9 +1,6 @@
 ---
 title: Anpassen von Legacycode in den Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926043"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Anpassen von legacy-Code in den editor
 Visual Studio-Editor verfügt über viele Funktionen, die Sie über vorhandenen Codekomponenten zugreifen können. Die folgenden Anweisungen zeigen, wie Sie das Anpassen von nicht-MEF-Komponente, z. B. einem VSPackage, Editor-Funktionen nutzen. Die Anweisungen veranschaulicht auch, Adapter zu verwenden, um die Dienste des Editors in verwaltetem und nicht verwaltetem Code abzurufen.  

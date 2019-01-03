@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineProgram2::WatchForThreadStep | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17be4d47db15a80b2560d71f747e5b93b7e17474
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865cc4ad42bc030592e8b06c7ebcf3147cc8c93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925770"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Wird überwacht, ob für die Ausführung (oder beendet wird, für die Ausführung überwachen) an den angegebenen Thread ausgeführt.  
@@ -28,7 +25,7 @@ Wird überwacht, ob für die Ausführung (oder beendet wird, für die Ausführun
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT WatchForThreadStep(   
+HRESULT WatchForThreadStep(   
    IDebugProgram2* pOriginatingProgram,  
    DWORD           dwTid,  
    BOOL            fWatch,  
@@ -37,7 +34,7 @@ HRESULT WatchForThreadStep(
 ```  
   
 ```csharp  
-int WatchForThreadStep(   
+int WatchForThreadStep(   
    IDebugProgram2 pOriginatingProgram,  
    uint           dwTid,  
    int            fWatch,  

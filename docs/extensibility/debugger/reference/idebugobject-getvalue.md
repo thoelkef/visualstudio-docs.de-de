@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::GetValue | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::GetValue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7b0f063e64649a07954367105df6a20d997033
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98dd9208fe28fd433a201e4d59f8dcc0af694b08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914156"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 Ruft den Wert des Objekts als eine aufeinanderfolgende Reihe von Bytes ab.  
@@ -28,7 +25,7 @@ Ruft den Wert des Objekts als eine aufeinanderfolgende Reihe von Bytes ab.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetValue(   
+HRESULT GetValue(   
    BYTE* pValue,  
    UINT  nSize  
 );  

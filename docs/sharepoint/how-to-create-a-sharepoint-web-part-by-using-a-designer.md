@@ -1,13 +1,8 @@
 ---
-title: 'Vorgehensweise: erstellen ein SharePoint-Webparts mithilfe eines Designers | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen ein SharePoint-Webparts mithilfe eines Designers | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cfe789c5dd16cd55d48c8c1470877a7df60e3caf
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858447"
 ---
-# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Gewusst wie: Erstellen Sie ein SharePoint-Webpart mithilfe eines Designers
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Vorgehensweise: Erstellen Sie ein SharePoint-Webpart mithilfe eines Designers
   Sie können ein Webpart erstellen, durch das Hinzufügen einer **visuelles Webpart** Element, das einem SharePoint-Projekt. Dadurch wird der Visual Web Developer-Designer in Visual Studio geöffnet, in dem Sie Steuerelemente und Code zum Webpart hinzufügen können. Visuelle Webparts funktionieren genauso wie Webparts. Der einzige Unterschied ist, dass Sie visuelle Webparts im Visual Web Developer-Designer entwerfen.  
   
 ### <a name="to-create-a-project-for-visual-web-parts"></a>So erstellen Sie ein Projekt für visuelle Webparts  
@@ -35,7 +30,7 @@ ms.locfileid: "37118884"
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  In der **neues Projekt** im Dialogfeld unter entweder **Visual C#-** oder **Visual Basic**, erweitern Sie die **Office/SharePoint** Knoten, und wählen Sie dann die **SharePoint-Lösungen** Kategorie.  
+2.  In der **neues Projekt** im Dialogfeld unter entweder **Visual C#**  oder **Visual Basic**, erweitern Sie die **Office/SharePoint** Knoten, und klicken Sie dann Wählen Sie die **SharePoint-Lösungen** Kategorie.  
   
 3.  Wählen Sie in der Liste der Projektvorlagen das Projekt **SharePoint 2013 - Visual Web Part**, und wählen Sie dann die **OK** Schaltfläche.  
   
@@ -57,8 +52,6 @@ ms.locfileid: "37118884"
   
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Gewusst wie: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  
+ [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
+ [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  

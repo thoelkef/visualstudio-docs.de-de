@@ -1,9 +1,6 @@
 ---
 title: GetAutoInsertExtensions-Methode
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a12adf6e83e58b877e36dd65d98b617cda3a39b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 9716f6adcee1d443e342074f3c46a57a1ace26db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915889"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions-Methode
   Ruft Informationen zu den apps für Office, die während des Debuggens automatisch eingefügt werden sollen.  
@@ -44,5 +41,3 @@ HRESULT GetAutoInsertExtensions(
   
 ## <a name="remarks"></a>Hinweise  
  Jede app für Office, eingefügt werden soll, wird als Office-Erweiterung Anwendungsname, der einen Wert unter entspricht zurückgegeben **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Der Host muss diese Werte in der Registrierung nachschlagen, und fügen Sie dann die Erweiterungen automatisch.  
-  
-  

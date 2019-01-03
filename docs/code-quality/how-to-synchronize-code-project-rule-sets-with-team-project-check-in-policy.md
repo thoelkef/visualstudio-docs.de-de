@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie'
+title: 'Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883242"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit einer Eincheckrichtlinie für Azure DevOps-Projekt
 
@@ -55,7 +54,7 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
 
 1.  Führen Sie eines der Verfahren in diesem Thema die Check-in-Richtlinie des Azure DevOps-Projekts auf der Seite "Codeanalyse" im Dialogfeld Projekt Einstellungen auswählen.
 
-2.  Klicken Sie auf **öffnen**.
+2.  Klicken Sie auf **Öffnen**.
 
 3.  Hinzufügen oder Entfernen von Regeln mithilfe der [Regelsatz-Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

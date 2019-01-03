@@ -1,9 +1,6 @@
 ---
 title: MODULE_INFO | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MODULE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989b5c24fc3d99c99f8a979ded2994f767a1e1bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910843"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly).  
@@ -28,7 +25,7 @@ Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly).
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-typedef struct tagMODULE_INFO {   
+typedef struct tagMODULE_INFO {   
    MODULE_INFO_FIELDS dwValidFields;  
    BSTR               m_bstrName;  
    BSTR               m_bstrUrl;  
@@ -45,7 +42,7 @@ typedef struct tagMODULE_INFO {
 ```  
   
 ```csharp  
-public struct MODULE_INFO {   
+public struct MODULE_INFO {   
    public uint     dwValidFields;  
    public string   m_bstrName;  
    public string   m_bstrUrl;  

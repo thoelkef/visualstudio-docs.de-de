@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer benutzerdefinierten Eigenschaft | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913295"
 ---
-# <a name="how-to-add-a-custom-property"></a>Gewusst wie: Hinzufügen einer benutzerdefinierten Eigenschaft
+# <a name="how-to-add-a-custom-property"></a>Vorgehensweise: Hinzufügen einer benutzerdefinierten Eigenschaft
   Sie können benutzerdefinierte Eigenschaften für das Modell hinzufügen, mit der **Eigenschaften-Editor**. Sie können diese Eigenschaften in Code zum Abrufen von Informationen wie Verbindungszeichenfolgen und andere Daten zur Laufzeit zugreifen.  
   
 ### <a name="to-add-a-custom-property"></a>Zum Hinzufügen einer benutzerdefinierten Eigenschaft  
@@ -53,5 +48,3 @@ ms.locfileid: "36756229"
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

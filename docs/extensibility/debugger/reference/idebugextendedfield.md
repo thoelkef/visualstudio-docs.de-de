@@ -1,9 +1,6 @@
 ---
-title: IDebugExtendedField | Microsoft Docs
-ms.custom: ''
+title: IDebugExtendedField | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExtendedField interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eedb327e19d012c653a9a5411c0ba7f1924cb369
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a503ff99542215ba5922feb860fc04cd047ce287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869673"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Erweitert die Typen von Feldern, die zur Unterstützung von verwaltetem Code Generika verfügbar sind.  
+Erweitert die Typen von Feldern, die zur Unterstützung von Generika mit verwaltetem Code verfügbar sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,12 +27,12 @@ IDebugExtendedField : IDebugField
 ```  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) diese Schnittstelle implementiert, die folgenden Methoden:  
+ Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Ruft die angegebene erweiterte Feld Art ab.|  
-|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Bestimmt, ob das Feld einen geschlossenen darstellt.|  
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Ruft die Art des angegebenen erweiterten Feldeigenschaften ab.|  
+|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Bestimmt, ob das Feld einen geschlossenen Typ darstellt.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  

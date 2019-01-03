@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff3f9ad93ddfb3b463d059fb2aba654ce48a501
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918991"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek
 Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbolen. Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.  
@@ -30,9 +27,9 @@ Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbole
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- Der Speicherort des Symbols in der Hierarchie unterscheidet es sich um ein Symbol. Sie können die Tools zum Durchsuchen von Symbol, um auf ein bestimmtes Symbol zu navigieren. Die eindeutige, vollqualifizierte Pfad zur symbolspeicherfreigabe bestimmt den Speicherort an. Jedes Element im Pfad ist ein Knoten. Der Pfad mit den obersten Knoten beginnt und endet mit dem spezifischen Symbol. Wenn die Methode M1 ein Element der C1-Klasse ist, und C1 befindet sich im N1-Namespace, lautet der vollständige Pfad der Methode M1 N1. C1. M1. Dieser Pfad enthält drei Knoten: N1, C1 und M1.  
+ Der Speicherort des Symbols in der Hierarchie unterscheidet es sich um ein Symbol. Sie können die Tools zum Durchsuchen von Symbol, um auf ein bestimmtes Symbol zu navigieren. Die eindeutige, vollqualifizierte Pfad zur symbolspeicherfreigabe bestimmt den Speicherort an. Jedes Element im Pfad ist ein Knoten. Der Pfad mit den obersten Knoten beginnt und endet mit dem spezifischen Symbol. Wenn die Methode M1 ein Element der C1-Klasse ist, und C1 befindet sich im N1-Namespace, lautet der vollständige Pfad der Methode M1 N1. C1. M1. Dieser Pfad enthält drei Knoten: N1 "," C1 "und" M1 ".  
   
  Mit diesen Navigationsinformationen können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager suchen, wählen Sie aus, und behalten ausgewählten Symbole in der Hierarchie. Es ermöglicht das Navigieren von einem Browsingtool in einen anderen. Bei der Verwendung von **Objektkatalog** zum Durchsuchen von Symbolen in einer [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] -Projekt können Sie mit der rechten Maustaste einer Methode und Starten der **Aufrufbrowser** Tool, um die Methode in einem Aufrufdiagramm anzeigen.  
   
@@ -49,7 +46,7 @@ N1
   
 ```  
   
- Die kanonische Pfad des C2-Klasse, in diesem Beispiel ist N1 + C2. Präsentationspfad des C2 enthält der Knoten "C1" und "Basen und Schnittstellen": N1 + C1 + C2 "Basen und Schnittstellen".  
+ Die kanonische Pfad des C2-Klasse, in diesem Beispiel ist N1 + C2. Präsentationspfad des C2 enthält Knoten "C1" und "Basen und Schnittstellen": N1 + C1 + "Basen und Schnittstellen" + C2.  
   
  Zum Abrufen von Informationen der Präsentation Form, der die Objekt-Manager ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> Methode.  
   
@@ -85,5 +82,5 @@ N1
   
 ## <a name="see-also"></a>Siehe auch  
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Gewusst wie: Registrieren einer Bibliothek mit der Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Gewusst wie: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

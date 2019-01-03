@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Konfigurieren der aufnahmelistensicherheit'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895572"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Vorgehensweise: Konfigurieren der aufnahmelistensicherheit
   Wenn Sie über Administratorberechtigungen verfügen, können Sie konfigurieren die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung um zu steuern, ob der Endbenutzer die Möglichkeit, Office-Projektmappen installieren, indem Sie eine Entscheidung über die Vertrauenswürdigkeit in der Aufnahmeliste speichern angegeben werden. Weitere Informationen zu Aufnahmelisten, finden Sie unter [vertrauen Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -213,5 +210,3 @@ ms.locfileid: "53647734"
 ## <a name="see-also"></a>Siehe auch  
  [Vertrauen Sie Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
-  
-  

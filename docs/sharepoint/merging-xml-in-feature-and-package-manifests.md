@@ -1,9 +1,6 @@
 ---
 title: Zusammenführen von XML in Funktions- und Paketmanifesten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914435"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Zusammenführen von XML in Funktions- und Manifesten
   Funktionen und Pakete werden durch definiert [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifestdateien. Diese App-Pakete Manifeste sind eine Kombination von Daten aus Designer und benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in der Manifestvorlage vom Benutzer eingegeben. Zum Zeitpunkt der paketerstellung [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt die benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Anweisungen mit der vom Designer bereitgestellten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Paket bilden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest-Datei. Ähnliche Elemente, mit der Ausnahmen, die weiter unten in der Merge-Ausnahmen werden zusammengeführt, um zu vermeiden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Validierungsfehler, nachdem Sie die Dateien in SharePoint bereitstellen, und das Manifest zu kleiner und effizienter Dateien.  
   
 ## <a name="modify-the-manifests"></a>Ändern Sie die Manifeste
- Sie können die Paket-Manifesten-Dateien nicht direkt ändern, bis Sie die Funktion oder ein Paket-Designer deaktivieren. Können jedoch benutzerdefinierte manuell hinzufügen [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Elementen, die die Manifestvorlage entweder über die Funktion und Paket-Designer oder dem [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Editor. Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md) und [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Sie können die Paket-Manifesten-Dateien nicht direkt ändern, bis Sie die Funktion oder ein Paket-Designer deaktivieren. Können jedoch benutzerdefinierte manuell hinzufügen [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Elementen, die die Manifestvorlage entweder über die Funktion und Paket-Designer oder dem [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Editor. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md) und [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Funktions- und manifest Mergeprozess
  Wenn Sie benutzerdefinierte Elemente mit Elementen bereitgestellten Designer, kombinieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet folgendes Verfahren. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] überprüft, ob jedes Element einen eindeutigen Schlüsselwert verfügt. Wenn ein Element keine eindeutigen Schlüsselwert verfügt, wird es in die Manifestdatei für gepackte angefügt. Elemente, die mehrere Schlüssel können auf ähnliche Weise können nicht zusammengeführt werden. Aus diesem Grund werden sie an der manifest-Datei angefügt.  
@@ -84,4 +81,3 @@ ms.locfileid: "37119175"
 ## <a name="see-also"></a>Siehe auch
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

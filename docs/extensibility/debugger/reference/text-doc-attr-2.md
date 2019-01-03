@@ -1,9 +1,6 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
-ms.custom: ''
+title: TEXT_DOC_ATTR_2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_DOC_ATTR_2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c877b1e42110defe717395cc78cc76acae00b934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d74bbfa4fb89baf01c5fb3d49a0767c67b800ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872725"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Beschreibt die Attribute eines Dokuments.  
@@ -43,7 +40,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Hinweise  
   
 > [!NOTE]
->  Dieser Wert ist nicht tatsächlich in der Assembly für c# definiert. Stattdessen müssen Sie die Definition in der Quelldatei kopieren.  
+>  Dieser Wert ist nicht tatsächlich in der Assembly für C#-Code definiert. Stattdessen müssen Sie die Definition Ihrer Quelldatei kopieren.  
   
  Übergeben als Argument an die [OnUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) Methode.  
   

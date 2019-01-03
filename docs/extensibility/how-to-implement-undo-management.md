@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Implementieren von Rückgängig-Verwaltung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915648"
 ---
-# <a name="how-to-implement-undo-management"></a>Gewusst wie: Implementieren von Rückgängig-Verwaltung
+# <a name="how-to-implement-undo-management"></a>Vorgehensweise: Implementieren von Rückgängig-Verwaltung
 Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, die von der Umgebung implementiert wird. Rückgängig-Verwaltung unterstützen, implementieren separate Rückgängig-Komponenten (d. h. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, mehrere einzelne Schritte enthalten kann.  
   
  Implementierung der Rückgängig-Verwaltung, hängt davon ab, ob Ihr Editor mehrere Ansichten unterstützt. Die Verfahren für die einzelnen Implementierungen werden in den folgenden Abschnitten ausführlich beschrieben.  
@@ -83,4 +80,4 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Gewusst wie: deaktivieren den Rückgängig-Stapel](../extensibility/how-to-clear-the-undo-stack.md)
+ [Vorgehensweise: Deaktivieren des Rückgängig-Stapels](../extensibility/how-to-clear-the-undo-stack.md)

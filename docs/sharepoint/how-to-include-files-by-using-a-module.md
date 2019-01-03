@@ -1,13 +1,8 @@
 ---
-title: 'Vorgehensweise: Einschließen von Dateien mithilfe eines Moduls | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Schließen Sie Dateien mithilfe eines Moduls | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923492"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Gewusst wie: Einschließen von Dateien mithilfe eines Moduls
+# <a name="how-to-include-files-by-using-a-module"></a>Vorgehensweise: Schließen Sie Dateien mithilfe eines Moduls
   *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, die Ihnen ermöglichen, z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen.  
   
  Sie können auch eine Datei in einer Dokumentbibliothek oder als normale Datei (z. B. "default.aspx") bereitstellen außerhalb einer Dokumentbibliothek. Geben Sie zum Hinzufügen einer Datei in eine Dokumentbibliothek `Type="GhostableInLibrary"` als Attribut in der **Datei** Element. Diese Einstellung weist SharePoint erstellen Sie ein Listenelement, um mit der Datei zu wechseln, wenn es in der Bibliothek hinzugefügt wird. Geben Sie zum Bereitstellen einer Datei außerhalb einer Dokumentbibliothek `Type="Ghostable"` oder lassen Sie nur die **Typ** Attribut.  
@@ -71,4 +66,3 @@ ms.locfileid: "37118863"
 ## <a name="see-also"></a>Siehe auch
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
-  
