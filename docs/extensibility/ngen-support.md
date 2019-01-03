@@ -1,9 +1,6 @@
 ---
 title: NGen-Unterstützung in VSIX v3 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dcf5f6366514fb18074d253b788c9cf67f1d297a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835051"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>NGen-Unterstützung in VSIX v3
 
@@ -60,7 +57,7 @@ Dadurch wird die Metadaten hinzugefügt, um den Projektverweis innerhalb des VSI
 </ProjectReference>
  ```
 
- >**Hinweis:** Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
+ >**Hinweis**: Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
 
 ## <a name="extra-information"></a>Zusätzliche Informationen
 

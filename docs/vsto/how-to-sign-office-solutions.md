@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Signieren von Office-Projektmappen'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 076cfcb6b63d650665e79a1e2d522595d4a82922
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829046"
 ---
 # <a name="how-to-sign-office-solutions"></a>Vorgehensweise: Signieren von Office-Projektmappen
   Wenn Sie eine Lösung angemeldet haben, können Sie vertrauen für die Projektmappe, die mithilfe des Zertifikats als Beweis gewähren. Sie können das gleiche Zertifikat für mehrere Lösungen verwenden, und alle Lösungen werden mit keine Erhöhung der Sicherheit richtlinienupdates vertrauenswürdig sein.

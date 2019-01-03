@@ -2,7 +2,6 @@
 title: Ausgangsansicht im XML-Schema-Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857905"
 ---
 # <a name="start-view"></a>Ausgangsansicht
 
@@ -27,7 +26,7 @@ Die Ausgangsansicht enthält zwei Hauptabschnitte der *Wasserzeichen* und **Deta
 
 ## <a name="watermark"></a>Wasserzeichen
 
-Der wasserzeichenbereich enthält eine Liste mit Links zu allen dem XSD-Designer-Ansichten, XML-Editor, und **XML-Schema-Explorer**. Wenn das Schemaset Fehler enthält, wird der folgende Text am Ende der Liste angezeigt: "Verwenden Sie die Fehlerliste, um die Fehler im Schemaset anzuzeigen und zu beheben."
+Der wasserzeichenbereich enthält eine Liste mit Links zu allen dem XSD-Designer-Ansichten, XML-Editor, und **XML-Schema-Explorer**. Wenn das Schemaset Fehler enthält, wird der folgende Text am Ende der Liste angezeigt: "Verwenden Sie die Fehlerliste, um anzuzeigen, und beheben Sie die Fehler in der Gruppe."
 
 ## <a name="schema-set-details"></a>Details-Schemaset
 

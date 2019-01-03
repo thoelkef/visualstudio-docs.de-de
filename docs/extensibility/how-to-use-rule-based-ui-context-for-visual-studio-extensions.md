@@ -1,6 +1,5 @@
 ---
 title: 'Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824287"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberfläche-Kontexte sind nicht in Ordnung umfassendere, d. h. erweiterungsautoren auf keine andere Möglichkeit jedoch um eine verfügbare UI-Kontext zu übernehmen, die vor dem Zeitpunkt aktiviert sie wollten das VSPackage zu laden. Eine Liste der gut bekannte benutzerschnittstellenkontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Laden von Paketen haben Auswirkungen auf die Leistung aus, und Laden sie früher als erforderlich ist nicht die bewährte Methode. Visual Studio 2015 eingeführt, das Konzept der Benutzeroberflächenkontexte regelbasierten, ein Mechanismus, können Ersteller von Erweiterungen zum Definieren der präzisen Bedingungen, unter dem einen UI-Kontext aktiviert ist und die zugehörigen VSPackages werden geladen.  
@@ -44,7 +43,7 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    Fügen Sie für die Attribute, die folgenden Werte: (Details zu diesen Attributen werden weiter unten erläutert)  
+    Fügen Sie für die Attribute die folgenden Werte ein: (Details zu diesen Attributen werden weiter unten erläutert)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

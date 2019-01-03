@@ -7,15 +7,14 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926277"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden den C++ Core Guidelines-Überprüfungen
 
@@ -62,9 +61,9 @@ int main()
 
 Dieses Beispiel zeigt ein Paar der Warnungen, die die C++ Core Check-Regeln finden können:
 
-- C26494 ist Regel Type.5: immer ein Objekt zu initialisieren.
+- C26494 ist Regel Type.5: Ein Objekt immer initialisiert werden.
 
-- C26485 ist Regel Bounds.3: kein Verfall von Array in einen Zeiger.
+- C26485 ist Regel Bounds.3: Kein Array-zu-zeigerverfall.
 
 - C26481 ist Regel Bounds.1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.
 

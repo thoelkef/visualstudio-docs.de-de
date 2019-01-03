@@ -1,9 +1,6 @@
 ---
 title: Instanziieren die Kern-Editor mit der Legacy-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838163"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Instanziieren Sie die Kern-Editor, indem Sie die legacy-API
 Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. einfügen, löschen, kopieren und einfügen. Sie kombiniert diese Funktionen mit den Funktionen von Language-Diensten, z. B. Text, Farben, die Einzüge und IntelliSense-Anweisungsvervollständigung bereitgestellt werden.  
@@ -70,4 +67,4 @@ Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. ei
 ## <a name="see-also"></a>Siehe auch  
  [In der Kern-editor](../extensibility/inside-the-core-editor.md)   
  [Öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
- [Exemplarische Vorgehensweise: Erstellen einer Kern-Editor und registrieren einen Dateityp-Editor-](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Exemplarische Vorgehensweise: Erstellen Sie einen Kern-Editor und registrieren einen Dateityp-Editor-](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

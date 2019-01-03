@@ -1,9 +1,6 @@
 ---
 title: Signieren von VSIX-Paketen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - signature
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6520171619833fe3c74f87634e9e83c24da33d70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba9d5ac7d9700d8ff5b047134a53d0147af3a78f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827192"
 ---
 # <a name="signing-vsix-packages"></a>Signieren von VSIX-Paketen
 Assemblys müssen nicht signiert werden, bevor sie in Visual Studio ausführen können, aber es empfiehlt sich, dafür ist.  

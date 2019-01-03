@@ -1,9 +1,6 @@
 ---
 title: Erweitern des SharePoint-Projektsystems | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 028e7aab10ae1ee1de452e69c8148dac099039d0
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 51449003457ecd09e7dca7bc579d652c94a592e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891111"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Erweitern von SharePoint-Projektsystem
   Sie können SharePoint-Lösungen erstellen, indem Sie mit der eine Reihe von Projektvorlagen und Elementvorlagen in Visual Studio. Diese Vorlagen erfüllen die Anforderungen der viele Entwicklungsszenarien, jedoch können Sie ermitteln, einige Fälle, in dem diese Funktionalität nicht bereitstellen, die erforderlich sind. In diesen Fällen können Sie die SharePoint-Projektsystem erweitern.  
@@ -60,5 +57,3 @@ ms.locfileid: "36326786"
  [Konvertieren Sie zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Erweitern von SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Programmierkonzepte und Funktionen für Erweiterungen für SharePoint-Tools](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
-  
-  

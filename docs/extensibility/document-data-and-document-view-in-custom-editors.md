@@ -1,9 +1,6 @@
 ---
 title: Dokumentdaten und Dokument anzeigen, in benutzerdefinierten Editoren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818874"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren
 Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt und eine dokumentenansichtsobjekt. Wie die Namen schon sagen, stellt das dokumentendatenobjekt die Textdaten, die angezeigt werden. Auf ähnliche Weise stellt das dokumentenansichtsobjekt (oder "View") ein oder mehrere Fenster, in dem das dokumentendatenobjekt angezeigt.  
@@ -42,7 +39,7 @@ Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt 
 ## <a name="see-also"></a>Siehe auch  
  [Unterstützen Sie mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
  [Zum Vereinfachen des Einbettens](../extensibility/simplified-embedding.md)   
- [Gewusst wie: Anfügen von Ansichten zu Dokumentdaten](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten](../extensibility/how-to-attach-views-to-document-data.md)   
  [Verwaltung von Dokumentsperren](../extensibility/document-lock-holder-management.md)   
  [Einer und mehreren Registerkarten-Ansichten](../extensibility/single-and-multi-tab-views.md)   
  [Speichern eines Standarddokuments](../extensibility/internals/saving-a-standard-document.md)   

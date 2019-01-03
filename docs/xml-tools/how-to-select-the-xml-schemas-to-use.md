@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Auswählen der zu verwendenden XML-Schemas'
+title: 'Vorgehensweise: Auswählen der zu verwendenden XML-Schemas'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824391"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Gewusst wie: Auswählen der XML-Schemas verwenden
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Wählen Sie die XML-Schemas verwenden
 
 Der XML-Editor stellt einen Schemacache im Verzeichnis der *%InstallDir%\Xml\Schemas* Verzeichnis. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.
 
@@ -58,7 +57,7 @@ Die Schemas, die Sie angeben, werden in der ausgeblendeten projektmappenbenutzer
 
 3.  Navigieren Sie zu den Schemas, die dem Schemacache hinzugefügt werden sollen, und markieren Sie diese.
 
-4.  Klicken Sie auf **öffnen**.
+4.  Klicken Sie auf **Öffnen**.
 
      Die Schemas, die dem Schema hinzugefügt und die **verwenden** Spaltenwert wird festgelegt, um **dieses Schema verwenden**.
 

@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823920"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner
   Einige verwendete häufig Ordner in SharePoint, wie z. B. Bilder und Layouts, tief in der Dateihierarchie eingebettet sind. Sie können diese Ordner in einem SharePoint-Projekt leichter Zugriffsberechtigung zuordnen. Zugeordnete Ordner sind Ordner in der SharePoint-Projekt, die den physischen Speicherort der Dateien bei der Installation von SharePoint-Server entsprechen.  
@@ -40,7 +35,7 @@ ms.locfileid: "36757647"
   
 1.  Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#-** Knoten, erweitern Sie die **Office/SharePoint** Knoten, und klicken Sie dann Wählen Sie die **SharePoint-Lösungen** Knoten.  
+2.  In der **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#**  Knoten, erweitern Sie die **Office/SharePoint** Knoten, und wählen Sie dann die **SharePoint-Lösungen** Knoten.  
   
 3.  Wählen Sie in der Liste der Projektvorlagen, die **visuelles für SharePoint 2013-Webpart** Vorlage.  
   
@@ -85,4 +80,3 @@ ms.locfileid: "36757647"
   
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: UsedCommand-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 697685ea3cf39cf1aede3d2a475d3d3bb39c587f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886045"
 ---
 # <a name="usedcommand-element"></a>UsedCommand-Element
 Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definiert ist. Wenn das VSPackage der Standard verwendet z. B. **kopieren** -Befehl, der vom definiert wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, Sie können den Befehl zu einem Menü oder Symbolleiste ohne hinzufügen erneut zu implementieren.  
@@ -38,14 +35,14 @@ Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definier
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich. Die GUID der GUID-ID-Paar, die den Befehl identifiziert.|  
-|ID|Erforderlich. Die ID des das GUID-ID-Paar, die den Befehl identifiziert.|  
+|id|Erforderlich. Die ID des das GUID-ID-Paar, die den Befehl identifiziert.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Keiner||  
+|Keine||  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

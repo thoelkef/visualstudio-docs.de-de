@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: e76766eb3b90dd2a515c7622217febfaffe313c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865257"
 ---
 # <a name="properties-of-connectors"></a>Eigenschaften von Konnektoren
 Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
@@ -29,8 +28,8 @@ Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
 |-|-|-|
 |Farbe|Die Farbe dieses Verbinders.|Schwarz|
 |Dash-Format|Der Strichstil für die Zeile für diesen Connector (einfarbig, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|
-|Quellendlinienstärke|Die quellendlinienstärke für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|
-|Zielendlinienart|Die zielendlinienart für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|
+|Quellendlinienstärke|Die quellendlinienstärke für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|
+|Zielendlinienart|Die zielendlinienart für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|
 |Textfarbe|Die Farbe, die für Text-Decorators verwendet wird, die mit diesem Connector verknüpft sind.|Schwarz|
 |Stärke|Die Stärke der Linie für dieses Verbinders, gemessen in Zoll.|0.03125|
 |Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|

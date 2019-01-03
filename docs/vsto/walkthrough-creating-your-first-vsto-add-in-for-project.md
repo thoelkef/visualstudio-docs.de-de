@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931254"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines VSTO-Add-Ins für Microsoft Office-Projekt. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,11 +120,11 @@ ms.locfileid: "50671416"
 ## <a name="next-steps"></a>Nächste Schritte  
  Nachdem Sie nun ein einfaches VSTO-Add-In für Project erstellt haben, können Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins erfahren:  
   
--   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins für Project ausführen können: [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins für Project ausführen können: [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Mithilfe des Objektmodells des Projekts: [Projekt Lösungen](../vsto/project-solutions.md).  
+-   Verwenden das Objektmodell von Project: [Projekt Lösungen](../vsto/project-solutions.md).  
   
--   Erstellen und Debuggen von VSTO-Add-ins für Project: [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
+-   Erstellen und Debuggen von VSTO-Add-ins für Project: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
   
 -   Bereitstellen von VSTO-Add-ins für Project: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
@@ -137,5 +134,3 @@ ms.locfileid: "50671416"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
-  
-  

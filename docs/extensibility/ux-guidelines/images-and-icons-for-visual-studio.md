@@ -1,9 +1,6 @@
 ---
 title: Bilder und Symbole für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880701"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Image-Verwendung in Visual Studio  
@@ -26,7 +23,7 @@ ms.locfileid: "49949396"
   
 -   **Symbole**. Kleine Bilder, die in Befehlen, Hierarchien, Vorlagen und So weiter angezeigt werden. Die Standardgröße-Symbol in Visual Studio verwendet, ist eine 16 x 16-PNG-Datei. Symbole, die der Image-Dienst automatisch erzeugten generieren, das XAML-Format für die HDPI-Unterstützung.  
   
-     **Hinweis:** während Images im Menüsystem verwendet werden, sollten Sie ein Symbol für jeden Befehl nicht erstellen. Wenden Sie sich an [Menüs und Befehle für Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) um festzustellen, ob der Befehl auf ein Symbol erhalten soll.  
+     **HINWEIS:** Während der Images im Menüsystem verwendet werden, sollten Sie nicht, ein Symbol für jeden Befehl erstellen. Wenden Sie sich an [Menüs und Befehle für Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) um festzustellen, ob der Befehl auf ein Symbol erhalten soll.  
   
 -   **Miniaturansichten.** Bilder, die in den Vorschaubereich des ein Dialogfeld an, wie das Dialogfeld "Neues Projekt" verwendet werden.  
   
@@ -421,7 +418,7 @@ ms.locfileid: "49949396"
   
 |Napa||||  
 |----------|-|-|-|  
-|![Symbol für Napa-Inhalt](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405-53_NapaContent")<br />Inhalt|![Symbol für Napa Office Mail](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405-54_NapaOfficeMail")<br />Office-e-Mails|![Symbol für Napa SharePoint](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Symbol für Napa-Aufgabe Bereich](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405-56_NapaTaskPane")<br />Aufgabenbereich|  
+|![Symbol für Napa-Inhalt](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405-53_NapaContent")<br />Content|![Symbol für Napa Office Mail](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405-54_NapaOfficeMail")<br />Office-e-Mails|![Symbol für Napa SharePoint](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Symbol für Napa-Aufgabe Bereich](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405-56_NapaTaskPane")<br />Aufgabenbereich|  
   
 |Monaco||||  
 |------------|-|-|-|  

@@ -1,9 +1,6 @@
 ---
-title: Projekt verschiedene Dateien | Microsoft Docs
-ms.custom: ''
+title: Projekt "Sonstige Dateien" | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - files, adding existing files to solutions
@@ -16,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a637b37590a0aaf321a4e04896b2cbe12c29691f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 281213751cb25a05e8298ee35ba43453d48ed250
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853108"
 ---
-# <a name="miscellaneous-files-project"></a>Projekt verschiedene Dateien
-Wenn ein Benutzer Projektelemente geöffnet wird, weist die IDE dem Projekt verschiedene Dateien alle Elemente, die keine Mitglieder für alle Projekte in einer Projektmappe sind.  
+# <a name="miscellaneous-files-project"></a>Verschiedene Projektdateien
+Wenn ein Benutzer die Projektelemente geöffnet wird, weist die IDE alle Elemente, die keine Projekte in einer Projektmappe gehören, auf das Projekt verschiedene Dateien.  
   
- Projekte spielen eine wichtige Rolle bei der Bestimmung, welche-Editor verwendet wird, wenn ein Benutzer ein Projektelement öffnet. Ein Projekt kann entworfen werden, um bestimmte Dateien mithilfe einer projektspezifische oder standard-Editor zu öffnen.  
+ Projekte spielen eine bedeutende Rolle beim bestimmen, welcher Editor verwendet wird, wenn ein Benutzer ein Projektelement geöffnet wird. Ein Projekt kann entworfen werden, um bestimmte Dateien über einen projektspezifischen Editor oder einem standard-Editor zu öffnen.  
   
- Ein Editor projektspezifische erfordert in der Regel an, dass der Benutzer über spezielle Kenntnisse verfügen, oder verwenden Sie spezielle Schnittstellen aus dem Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen projektspezifische Editoren](../../extensibility/how-to-open-project-specific-editors.md).  
+ Ein projektspezifischer Editor erfordert in der Regel an, dass der Benutzer verfügen über spezielle Kenntnisse oder spezielle Schnittstellen aus dem Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md).  
   
- Eine standard-Editors kann in jedem Projekt eine Datei mit einer bestimmten Erweiterung öffnen. Die Benutzer kann einige standard-Editoren, anpassen, wie z. B. die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Text-Editor für Projekte, behalten aber weiterhin ihre öffentliche Zeichen. Standard-Editoren werden erstellt, mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode.  
+ Ein standard-Editor, kann in jedem Projekt eine Datei eine bestimmte Erweiterung öffnen. Benutzer kann einige standard-Editoren, anpassen, wie z. B. die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Text-Editor für Projekte, behalten aber immer noch ihre öffentlichen Zeichen. Standard-Editoren werden erstellt, mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode.  
   
- Wenn kein Projekt in der Projektmappe antwortet, ein Projektelement geöffnet werden kann, enthält die IDE bei ein spezielles Projekt mit das Projekt verschiedene Dateien, das eine Datei geöffnet wird.  
+ Wenn kein Projekt in der Projektmappe antwortet, dass ein Projektelement geöffnet werden kann, bietet die IDE ein bestimmtes Projekt aufgerufen, das Projekt verschiedene Dateien, das eine beliebige Datei geöffnet wird.  
   
- Dieses spezielle Projekt stellt zum Öffnen einer Datei außerhalb des Kontexts eines Projekts. Bei der Verarbeitung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> -Methode, mit einer sehr niedrigen Priorität immer das Projekt verschiedene Dateien antwortet. Aus diesem Grund Projekt verschiedene Dateien immer ergibt eine höhere Priorität-Projekt, die Dateien öffnen können.  
+ Dieses spezielle Projekt bietet zum Öffnen einer Datei außerhalb des Kontexts eines Projekts. Bei der Verarbeitung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> -Methode, mit sehr niedriger Priorität immer das Projekt verschiedene Dateien antwortet. Aus diesem Grund Projekt verschiedene Dateien immer führt zu höherer Priorität Projekte, die Dateien öffnen können.  
   
- Das Projekt verschiedene Dateien erfordert keine den Benutzer explizit erstellen sie mit der **neues Projekt** (Dialogfeld). Darüber hinaus verwaltet das Projekt verschiedene Dateien nicht dauerhaft eine Liste von Mitgliedern. Es verwendet ein optionales Feature, um eine Liste der zuletzt verwendeten Dateien für jeden Benutzer zu erfassen.  
+ Das Projekt verschiedene Dateien nicht, dass der Benutzer explizit erstellen sie mit der **neues Projekt** Dialogfeld. Darüber hinaus verwaltet das Projekt verschiedene Dateien nicht dauerhaft eine Liste von Projektmitgliedern. Ein optionales Feature verwendet, um eine Liste der zuletzt verwendeten Dateien für jeden Benutzer aufgezeichnet.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [Vorgehensweise: Öffnen von Editoren projektspezifische](../../extensibility/how-to-open-project-specific-editors.md)   
- [Vorgehensweise: Öffnen Sie die Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)   
+ [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)   
  [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)

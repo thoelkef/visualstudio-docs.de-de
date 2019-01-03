@@ -1,20 +1,18 @@
 ---
-title: Problembehandlung bei der Ermittlung der Vorlage in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Problembehandlung bei der vorlagenermittlung in Visual Studio | Microsoft-Dokumentation
 ms.date: 01/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d183fd664258fbb7dbcf27c913c56c6f6160e6c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39ebb7c49e5a8482ab0b2ef5c3a5257d0237b39c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836152"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung bei der Vorlageninstallation
 
@@ -27,24 +25,24 @@ Wenn Sie Ihre Projekt- oder Elementvorlagen Bereitstellung Probleme auftreten, k
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Öffnen Sie "Developer-Eingabeaufforderung" für die Installation von in Windows Search gesucht, und führen `devenv /updateConfiguration`.
+1. Öffnen Sie eine Developer-Eingabeaufforderung "für die Installation nach einer Suche in der Windows-Suche, und führen `devenv /updateConfiguration`.
 
-1. Starten Sie Visual Studio, und starten Sie die Dialogfenster des neues Projekt und neues Element zum Initialisieren der beiden Strukturen Vorlage. Das Protokoll für die Vorlage wird nun in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (Instanceid entspricht die Installations-ID Ihrer Instanz von Visual Studio). Jede Vorlage Struktur Initialisierung fügt Einträge in dieses Protokoll.
+1. Starten Sie Visual Studio, und starten Sie die Dialogfeldern "Neues Projekt und neues Element" zum Initialisieren der beiden Bäumen Vorlage. Das Protokoll für die Vorlage wird nun in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (Instanz-ID entspricht der Installations-ID der Instanz von Visual Studio). Jede Vorlage Struktur Initialisierung fügt Einträge in dieses Protokoll.
 
 Die Protokolldatei enthält die folgenden Spalten:
 
-- **FullPathToTemplate**, dem hat die folgenden Werte:
+- **FullPathToTemplate**, der hat die folgenden Werte:
 
     - 1 für die Manifest-basierte Bereitstellung
 
-    - 0 für Datenträger-basierte Bereitstellung
+    - 0 für die Datenträger-basierte Bereitstellung
 
 - **TemplateFileName**
 
-- Andere Vorlageneigenschaften
+- Andere Eigenschaften
 
 > [!NOTE]
-> Um die Protokollierung deaktivieren möchten, entfernen Sie die Pkgdef-Datei, oder ändern Sie den Wert der `EnableTemplateDiscoveryLog` auf `dword:00000000`, und führen Sie `devenv /updateConfiguration` erneut aus.
+> Um die Protokollierung deaktivieren möchten, entfernen Sie die Pkgdef-Datei, oder ändern Sie den Wert der `EnableTemplateDiscoveryLog` zu `dword:00000000`, und führen Sie dann `devenv /updateConfiguration` erneut aus.
 
 ## <a name="see-also"></a>Siehe auch
 

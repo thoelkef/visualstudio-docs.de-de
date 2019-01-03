@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839004"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Diese Methode lässt den Lieferanten Port eine Warnung angezeigt, bevor der Benutzer zu einem unsicheren Prozess anfügt.  
+Diese Methode ermöglicht Anschlusslieferanten um eine Warnung anzuzeigen, bevor der Benutzer fügt eine unsichere Prozess an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Rückgabewert  
  Die Rückgabewerte sind wie folgt aus:  
   
--   `S_OK`: Das Anfügen an Prozess sicher ist, und keine Warndialogfeld angezeigt wird.  
+-   `S_OK`: Das Anfügen an Prozess sicher ist und kein Warnungsdialogfeld wird angezeigt.  
   
--   `S_FALSE`: Anfügen konnte kein Sicherheitsproblem werden, und ein Dialogfeld mit einer Warnung angezeigt wird.  
+-   `S_FALSE`: Anfügen kann ein Sicherheitsproblem sein, und ein Dialogfeld mit einer Warnung angezeigt wird.  
   
--   `FAILURE`: Anfügen an Prozess ein Fehler auftritt.  
+-   `FAILURE`: Anhängen an Prozess ein Fehler auftritt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -1,9 +1,6 @@
 ---
-title: IDebugDefaultPort2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDefaultPort2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d131ab24cc57af1846f89b61afa2d89ae2cacb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f371eb040ae2c160582093f07eacb2108bcb7b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930582"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Diese Schnittstelle bietet mehrere Methoden für den Zugriff auf einen Port Server- und Notification-Funktionen.  
+Diese Schnittstelle bietet mehrere Methoden für den Zugriff auf einen Port für den Server und Notification-Funktionen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,22 +29,22 @@ IDebugDefaultPort2 : IDebugPort2
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Visual Studio implementiert diese Schnittstelle, um die Debugport für den Zugriff auf Programme darstellen. Ein benutzerdefinierten Port Lieferanten kann auch diese Schnittstelle implementieren, wenn sie Remotedebuggen behandelt.  
+ Visual Studio implementiert diese Schnittstelle, um das Debuggen Port für den Zugriff auf Programme darstellen. Ein benutzerdefinierter Port Lieferant kann auch diese Schnittstelle implementieren, wenn die Methode behandelt das Remotedebuggen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein Argument an die Methoden für die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle stellt diese Schnittstelle bereit. Aufrufen von [QueryInterface](/cpp/atl/queryinterface) auf eine [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle auch möglich, diese Schnittstelle.  
+ Ein Argument auf Methoden in der [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle stellt diese Schnittstelle. Aufrufen von [QueryInterface](/cpp/atl/queryinterface) auf eine [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle kann auch abrufen, diese Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den Methoden, die in definierten [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), diese Schnittstelle implementiert, die folgenden Methoden:  
+ Zusätzlich zu den Methoden, die in definierten [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Ruft die Port-Benachrichtigung-Schnittstelle von diesem Port ab.|  
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Ruft die Schnittstelle auf dem Hostserver diesen Port.|  
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Ruft die Port-Notification-Schnittstelle von diesem Port ab.|  
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Ruft die Schnittstelle auf dem Hostserver diesen Port ab.|  
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Bestimmt, ob dieser Port auf dem lokalen Computer ausgeführt wird.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Name "`IDebugDefaultPort2`" ist ein wenig irreführend, da es keinen Standardport darstellt. Es könnte "IDebugPort3." aufgerufen werden  
+ Der Name "`IDebugDefaultPort2`" wird von ein wenig irreführend, da es keinen Standardport darstellt. Sie können "IDebugPort3." aufgerufen werden  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

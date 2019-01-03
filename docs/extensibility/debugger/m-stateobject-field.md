@@ -1,9 +1,6 @@
 ---
 title: M_stateObject-Feld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7fbd5404f7138fd2f98d56d63089acdb2afdad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850202"
 ---
 # <a name="mstateobject-field"></a>M_stateObject-Feld
 Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.  
@@ -39,4 +36,4 @@ Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
  Dies ist die `state` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+ [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

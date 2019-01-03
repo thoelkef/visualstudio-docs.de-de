@@ -1,9 +1,6 @@
 ---
 title: Unterstützung in Workflows bilden | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857970"
 ---
 # <a name="form-support-in-workflows"></a>Unterstützung von Formularen in workflows
   Vier Arten von Formularen in einem Workflow verwendet werden können: Zuordnung, Initiierung, Aufgabe und Änderung. Dieser Formulartypen können auf eine ASPX-Webformular oder ein InfoPath-Formular basieren. Die Ebene der Unterstützung, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet für verschiedene Faktoren berücksichtigt, ein bestimmtes Formulars hängt die in der folgenden Tabelle beschrieben werden. Weitere Informationen zu den Workflow-Formulartypen, finden Sie unter [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228).  
@@ -45,13 +42,11 @@ ms.locfileid: "51296189"
 |Formulartyp|Wiederverwendbaren Workflows, der eine ASPX-Webformular aus SharePoint Designer importiert wurde.|Wiederverwendbaren Workflows, der ein InfoPath-Formular, das von SharePoint Designer importiert wurde.|  
 |---------------|-------------------------------------------------------------------------------| - |  
 |Zuordnung|-Das Formular verwiesen wird, der *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird umgestaltet werden, wenn das Formular umbenannt oder gelöscht wird oder wenn sich der Bereitstellungspfad ändert.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet.|  
-|Initiierung|-Das Formular wird verwiesen, indem der Workflow in den *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird umgestaltet werden, wenn das Formular umbenannt oder gelöscht wird oder wenn sich der Bereitstellungspfad ändert.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis:** Regeln und Eigenschaften hinzugefügt und für dieses Szenario geändert werden müssen.|  
-|Aufgabe|-Das Formular verwiesen wird, der *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis:** Regeln und Eigenschaften hinzugefügt und für dieses Szenario geändert werden müssen.|  
+|Initiierung|-Das Formular wird verwiesen, indem der Workflow in den *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird umgestaltet werden, wenn das Formular umbenannt oder gelöscht wird oder wenn sich der Bereitstellungspfad ändert.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis**:  Regeln und Eigenschaften müssen hinzugefügt und für dieses Szenario geändert werden.|  
+|Aufgabe|-Das Formular verwiesen wird, der *"Elements.xml"* Datei des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet.|-Das Formular wird importiert, jedoch keinen Verweis auf die *"Elements.xml"* des Workflows.<br />– Die *"Elements.xml"* Datei des Workflows wird nicht umgestaltet. **Hinweis**:  Regeln und Eigenschaften müssen hinzugefügt und für dieses Szenario geändert werden.|  
 |Änderung|Nicht zutreffend. ASPX-Änderungsformulare können nicht in SharePoint Designer erstellt werden.|Nicht zutreffend. Änderungsformulare InfoPath können außer den integrierten SharePoint-Server-Workflow, die nicht in der .wsp-Datei enthalten ist, wenn der Workflow exportiert wird, in SharePoint Designer erstellt werden.|  
   
 ## <a name="see-also"></a>Siehe auch
  [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
-  
-  

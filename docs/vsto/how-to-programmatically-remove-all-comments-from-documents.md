@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Entfernen aller Kommentare aus Dokumenten'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Entfernen Sie aller Kommentare aus Dokumenten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 005414fce7b7bc04c22b266f5f5f6d54a399a182
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 368779aa5c0edbfcaba3aff2abdf3eba09375f9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833409"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Gewusst wie: Programmgesteuertes Entfernen aller Kommentare aus Dokumenten
-  Verwenden der `DeleteAllComments` Methode, um alle Kommentare aus einem Microsoft Office Word-Dokument zu entfernen.  
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Vorgehensweise: Programmgesteuertes Entfernen Sie aller Kommentare aus Dokumenten
+  Verwenden Sie die `DeleteAllComments`-Methode, um alle Kommentare aus einem Microsoft Office Word-Dokument zu entfernen.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
@@ -45,7 +42,5 @@ ms.locfileid: "35672856"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
  [Dokumenthostelement](../vsto/document-host-item.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: GUIDs und IDs der Visual Studio-Menüs | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906942"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs und IDs von Visual Studio-Menüs
 Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der Menüleiste von Visual Studio. Diese Werte werden in definiert *VSCT* Dateien, die als Teil von Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -35,7 +32,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Gruppen in der Visual Studio-Menüleiste  
  Um ein Menü auf der Menüleiste hinzuzufügen, legen Sie eine dieser Gruppen als übergeordnetes aus.  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Datei/Bearbeiten/Ansicht|IDG_VS_MM_FILEEDITVIEW|  
 |Umgestaltung|IDG_VS_MM_REFACTORING:|  
@@ -49,7 +46,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menüs in der Visual Studio-Menüleiste  
  Um eine Gruppe zu einem vorhandenen Visual Studio-Menü hinzuzufügen, legen Sie eine der die folgenden Menüs als übergeordnete Klasse aus. Untermenüs werden in dieser Liste nicht enthalten.  
   
-|Menü|Id|  
+|Menü|ID|  
 |----------|--------|  
 |Datei|IDM_VS_MENU_FILE|  
 |Bearbeiten|IDM_VS_MENU_EDIT|  
@@ -62,14 +59,14 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
 |Fenster|IDM_VS_MENU_WINDOW|  
 |Add-Ins|IDM_VS_MENU_ADDINS|  
 |Community|IDM_VS_MENU_COMMUNITY|  
-|Hilfe|IDM_VS_MENU_HELP|  
+|Help|IDM_VS_MENU_HELP|  
   
 ## <a name="groups-on-visual-studio-menus"></a>Gruppen in Visual Studio-Menüs  
  Im folgenden wird aufgeführt, der Gruppen, die direkt von Menüs in der Visual Studio-Menüleiste abgeleitet. Die schnellste Möglichkeit zum Hinzufügen eines Befehls zu einem Visual Studio-Menü ist einer dieser Gruppen als übergeordnetes Element festlegen. Gruppen, die von Untermenüs abgeleitet werden in diesem Abschnitt nicht angezeigt.  
   
 ### <a name="file-menu-groups"></a>Dateigruppen-Menü  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Neue/öffnen|IDG_VS_FILE_FILE|  
 |Hinzufügen|IDG_VS_FILE_ADD|  
@@ -85,7 +82,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="edit-menu-groups"></a>Menügruppen bearbeiten  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Rückgängig/Wiederholen|IDG_VS_EDIT_UNDOREDO|  
 |Ausschneiden/Kopieren/Einfügen|IDG_VS_EDIT_CUTCOPY|  
@@ -98,14 +95,14 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="refactor-menu-groups"></a>Menügruppen Umgestalten  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Allgemein|IDG_REFACTORING_COMMON|  
 |Erweitert|IDG_REFACTORING_ADVANCED|  
   
 ### <a name="view-menu-groups"></a>Menügruppen anzeigen  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Form-Code|IDG_VS_VIEW_FORMCODE|  
 |Browser|IDG_VS_VIEW_BROWSER|  
@@ -126,7 +123,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="project-menu-groups"></a>Projektgruppen-Menü  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Sonstige hinzufügen|IDG_VS_PROJ_MISCADD|  
 |Hinzufügen|IDG_VS_PROJ_ADD|  
@@ -138,7 +135,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="build-menu-groups"></a>Menügruppen erstellen  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Lösung|IDG_VS_BUILD_SOLUTION|  
 |Auswahl|IDG_VS_BUILD_SELECTION|  
@@ -148,7 +145,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="tools-menu-groups"></a>Menügruppen Tools  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Befehlszeile|IDG_VS_TOOLS_CMDLINE|  
 |Codeausschnitte|IDG_VS_TOOLS_SNIPPETS|  
@@ -160,7 +157,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="window-menu-groups"></a>Menügruppen Fenster  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Neu|IDG_VS_WINDOW_NEW|  
 |Andocken/geschlossen|IDG_VS_DOCKCLOSE|  
@@ -171,7 +168,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
   
 ### <a name="help-menu-groups"></a>Menügruppen-Hilfe  
   
-|Gruppieren|Id|  
+|Gruppieren|ID|  
 |-----------|--------|  
 |Proben|IDG_VS_HELP_SAMPLES|  
 |Unterstützung|IDG_VS_HELP_SUPPORT|  
@@ -181,7 +178,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
  Die folgende Hierarchie veranschaulicht die Untermenüs, die die Menüs auf der Menüleiste von Visual Studio zugeordnet sind. Da nur eine Gruppe ein Menüs als das übergeordnete Element verfügen kann, muss jedem Untermenü aus einer Gruppe in einem Menü, anstatt direkt über das Menü abgeleitet werden. Weitere Informationen über die Beziehung zwischen Menüs, Untermenüs und Gruppen finden Sie unter [Hinzufügen eines Untermenüs zu einem Menü](../../extensibility/adding-a-submenu-to-a-menu.md).  
   
 > [!NOTE]
->  Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat angezeigt in dieser Hierarchie, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: *IDG_VS_\<Menünamen\>_\< Gruppenname\>*.  
+>  Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat in dieser Hierarchie angezeigt, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: *IDG_VS_\<Menünamen\>_\<Gruppenname\>*.  
   
 |Übergeordnete Gruppe|Untermenü|Untergeordnete Gruppen|  
 |------------------|-------------|------------------|  

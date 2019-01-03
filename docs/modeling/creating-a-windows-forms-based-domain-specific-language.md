@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869926"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
@@ -118,9 +117,9 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 1.  Auf der **Daten** Menü wählen **Datenquellen anzeigen**.
 
-     Die **Datenquellen** Fenster wird geöffnet.
+     Das Fenster **Datenquellen** wird geöffnet.
 
-     Wählen Sie **neue Datenquelle hinzufügen**. Die **Assistenten zur Datenquellenkonfiguration** wird geöffnet.
+     Wählen Sie **neue Datenquelle hinzufügen**. Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
 2.  Wählen Sie **Objekt**, **Weiter**.
 

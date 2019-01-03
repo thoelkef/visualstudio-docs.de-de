@@ -1,9 +1,6 @@
 ---
 title: Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826584"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche
   Die folgenden exemplarischen Vorgehensweisen veranschaulichen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Anpassen der Benutzeroberfläche von Microsoft Office-Anwendungen verwenden können.  
@@ -62,7 +59,7 @@ ms.locfileid: "35672857"
  [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-In](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  Veranschaulicht das Hinzufügen von Steuerelementen zu einem Dokument mithilfe eines VSTO-Add-Ins.  
   
- [Exemplarische Vorgehensweise: Ändern Sie dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
+ [Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Veranschaulicht, wie Formatierungen in einem Word-Dokument mithilfe von Kontrollkästchen in einer Anpassung auf Dokumentebene geändert werden.  
   
  [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
@@ -75,7 +72,7 @@ ms.locfileid: "35672857"
  [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  Veranschaulicht das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins.  
   
- [Exemplarische Vorgehensweise: Ändern Sie arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
+ [Exemplarische Vorgehensweise: Ändern der arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Veranschaulicht die Grundlagen der Verwendung von Kontrollkästchen in einem Excel-Arbeitsblatt, um die Formatierung zu ändern.  
   
  [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
@@ -92,5 +89,3 @@ ms.locfileid: "35672857"
  [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929697"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen
-Einige Eigenschaften der Form, wie z. B. Farbe "verfügbar gemacht werden kann" - verknüpft, d. h., eine Eigenschaft "Domain" der Form. Andere Benutzer haben direkt gesteuert werden.
+Einige Eigenschaften der Form, wie z. B. Farbe "verfügbar gemacht werden kann' - verknüpft, d. h. einer Domäneneigenschaft der Form. Andere haben direkt gesteuert werden.
 
 ## <a name="exposing-a-property"></a>Verfügbarmachen einer Eigenschaft
- Einige Eigenschaften wie Farbe der Form können verknüpft werden, auf den Wert der Eigenschaft "Domain" ein.
+ Einige Eigenschaften wie Farbe der Form können auf den Wert einer Domäneneigenschaft verknüpft werden.
 
- Wählen Sie in der DSL-Definition Form, den Connector oder Diagramm-Klasse. Wählen Sie in dessen Kontextmenü **hinzufügen verfügbar gemacht**, und wählen Sie dann die gewünschte Eigenschaft, z. B. Füllfarbe.
+ Wählen Sie in der DSL-Definition einer Form, den Connector oder die Diagrammklasse aus. Wählen Sie auf das Kontextmenü zu öffnen, **verfügbare hinzufügen**, und wählen Sie dann die gewünschte Eigenschaft, z. B. Farbe füllen.
 
- Das Shape verfügt jetzt über eine Eigenschaft "Domain", die Sie im Programmcode oder als ein Benutzer festlegen können.
+ Die Form verfügt jetzt über eine Eigenschaft "Domain", die Sie im Programmcode oder als Benutzer festlegen können.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Dynamisch aktualisieren einer bereitgestellten Eigenschaft
- In der Regel möchten Sie die verfügbar gemachten Eigenschaft zu einer anderen Eigenschaft abhängig machen. Beispielsweise sollten Sie eine Form, um Rot, wenn eine bestimmte Domäne-Eigenschaft ist kleiner als 0 (null). Damit diese Abhängigkeit kann, erstellen eine [Regel](../modeling/rules-propagate-changes-within-the-model.md). Zum Beispiel:
+## <a name="dynamically-updating-an-exposed-property"></a>Dynamisches Aktualisieren einer verfügbar gemachten Eigenschaft
+ In der Regel möchten Sie die freigelegte Eigenschaft einer anderen Eigenschaft abhängig machen. Beispielsweise sollten Sie eine Form, um die Rot, wenn eine bestimmte Domäne-Eigenschaft ist kleiner als 0 (null). Mit dieser Abhängigkeit können, erstellen eine [Regel](../modeling/rules-propagate-changes-within-the-model.md). Zum Beispiel:
 
 ```csharp
 using System;

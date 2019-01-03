@@ -1,9 +1,6 @@
 ---
-title: Lösungen | Microsoft Docs
-ms.custom: ''
+title: Lösungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869478"
 ---
 # <a name="solutions"></a>Projektmappen
-Eine Lösung ist eine Gruppierung von einem oder mehreren Projekten, die zum Erstellen einer Anwendung zusammenarbeiten. Die Projekt- und Status Informationen, die die Projektmappe betreffen, werden in zwei Projektmappendateien, einer textbasierten Projektmappendatei (sln) und eine binäre Projektmappendatei Benutzer Option (.suo) gespeichert.  
+Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Die Projekt- und Status-Informationen, die die Lösung betreffen, werden in zwei Projektmappendateien, die eine textbasierte Projektmappendatei (.sln) und eine binäre Lösung Benutzeroptionsdatei (SUO) gespeichert.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../../extensibility/internals/solutions-overview.md)  
- Erläutert die Typen von Projektmappendateien in einer Projektmappe, und der Prozess, der auftritt, wenn eine Projektmappe geöffnet ist.  
+ Beschreibt die Arten von Lösungsdateien enthalten, die in einer Projektmappe, und der Prozess, der auftritt, wenn eine Projektmappe geöffnet ist.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projektmappendatei (SLN)](../../extensibility/internals/solution-dot-sln-file.md)  

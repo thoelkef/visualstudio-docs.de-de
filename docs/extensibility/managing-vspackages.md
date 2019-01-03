@@ -1,9 +1,6 @@
 ---
 title: Verwalten von VSPackages | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c07e3924db75f870910e22aee8c913f5a26a7411
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822290"
 ---
 # <a name="manage-vspackages"></a>Verwalten von VSPackages
 In den meisten Fällen müssen Sie nicht kümmern, VSPackages, Verwaltung, da die Projekt- und Elementvorlagen zu registrieren, und Laden Sie das Paket automatisch. In einigen Fällen müssen Sie jedoch etwas mehr erfahren, um das Paket zu verwalten.  
@@ -42,10 +39,10 @@ In den meisten Fällen müssen Sie nicht kümmern, VSPackages, Verwaltung, da di
  Benutzeroberflächen-Kontexten regelbasierten können Ersteller von Erweiterungen zum Definieren der präzisen Bedingungen, unter dem einen UI-Kontext aktiviert ist, und zugeordnete VSPackages geladen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
 ## <a name="diagnose-extension-performance"></a>Leistung der Diagnoseerweiterung  
-Erweiterungen können die Leistung beim Start und -Lösung laden auswirken. Erfahren Sie, wie Visual Studio-Erweiterung Auswirkungen berechnet wird und wie sie lokal analysiert werden zum Testen, ob eine Erweiterung als eine Leistung, die Auswirkungen auf die Erweiterung angezeigt werden kann. Weitere Informationen finden Sie unter [wie: Leistung der diagnoseerweiterung](how-to-diagnose-extension-performance.md). 
+Erweiterungen können die Leistung beim Start und -Lösung laden auswirken. Erfahren Sie, wie Visual Studio-Erweiterung Auswirkungen berechnet wird und wie sie lokal analysiert werden zum Testen, ob eine Erweiterung als eine Leistung, die Auswirkungen auf die Erweiterung angezeigt werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Leistung der diagnoseerweiterung](how-to-diagnose-extension-performance.md). 
   
 ## <a name="troubleshoot-vspackages"></a>Problembehandlung bei VSPackages  
- Erfahren Sie, die Techniken für die Problembehandlung bei VSPackages, die nicht geladen oder Fehler auftreten: [Problembehandlung bei VSPackages](../extensibility/troubleshooting-vspackages.md)  
+ Ermitteln Sie die Techniken für die Problembehandlung bei VSPackages, die nicht geladen oder Fehler auftreten: [Problembehandlung bei VSPackages](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)

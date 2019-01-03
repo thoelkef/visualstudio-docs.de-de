@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17cd429da81e4a7aeaad6f06684888cfc48270bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846294"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Diese Methode konvertiert einen Methode Speicherort und einen Offset, in eine Speicheradresse.  
@@ -28,7 +25,7 @@ Diese Methode konvertiert einen Methode Speicherort und einen Offset, in eine Sp
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetMethodLocationProperty(   
+HRESULT GetMethodLocationProperty(   
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,  
    IDebugSymbolProvider* pSymbolProvider,  
    IDebugAddress*        pAddress,  

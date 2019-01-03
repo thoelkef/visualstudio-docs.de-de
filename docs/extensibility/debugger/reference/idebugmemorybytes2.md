@@ -1,9 +1,6 @@
 ---
-title: IDebugMemoryBytes2 | Microsoft Docs
-ms.custom: ''
+title: IDebugMemoryBytes2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7c7dbc966c6c2747de4c969975ef8455cf6b0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a738ecb042fa423cf165a42a9d472e06f23648d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887184"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
-Diese Schnittstelle stellt Bytes an Arbeitsspeicher.  
+Diese Schnittstelle stellt die Bytes im Arbeitsspeicher dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,24 +29,24 @@ IDebugMemoryBytes2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Debugging-Modul (DE) implementiert diese Schnittstelle, um die Bytes im Speicher darzustellen.  
+ Die Debug-Engine (DE) implementiert diese Schnittstelle, um die Bytes im Speicher darstellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) gibt diese Schnittstelle für den Zugriff auf den Systemarbeitsspeicher. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) und [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) diese Schnittstelle für den Zugriff auf ein Objekt Bytes zurück.  
+ [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) gibt diese Schnittstelle für den Zugriff auf den Systemspeicher. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) und [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) diese Schnittstelle für den Zugriff auf ein Objekt des Bytes zurück.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugMemoryBytes2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Liest eine Folge von Bytes, beginnend an einer angegebenen Position.|  
+|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Liest eine Folge von Bytes, beginnend ab einem bestimmten Standort.|  
 |[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Schreibt `dwCount` Bytes, beginnend bei `pStartContext`.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Ruft die Größe in Bytes des Speichers, der von dieser Schnittstelle dargestellt.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Ruft die Größe in Bytes des Arbeitsspeichers, die von dieser Schnittstelle dargestellt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Für Eigenschaften ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle, die ein Array darstellt bietet ein `IDebugMemoryBytes2` Schnittstelle, um den Zugriff auf die Werte in diesem Array zurück.  
+ Informationen zu Eigenschaften eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle, ein Array darstellt, bietet ein `IDebugMemoryBytes2` Schnittstelle, um den Zugriff auf die Werte im Array.  
   
- Visual Studio **Arbeitsspeicher Ansicht** Aufrufe [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) zum Abrufen einer `IDebugMemoryBytes2` Schnittstelle für den Zugriff auf den Systemarbeitsspeicher. Die Adresse zugegriffen werden abgerufen wird durch Analysieren des Ausdrucks als eine Adresse eingegeben werden, in die Speicher-Sicht und der anschließenden auswertungen der analysierten Ausdrucks mit [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) zum Abrufen einer `IDebugProperty2` Schnittstelle. Ein Aufruf von [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , beschreibt die Speicheradresse. Dieser Speicherkontext übergeben, [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) und [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).  
+ Visual Studio **Speicheransicht** Aufrufe [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) zum Abrufen einer `IDebugMemoryBytes2` Schnittstelle für den Zugriff auf den Systemspeicher. Die Adresse zugegriffen werden kann, wird abgerufen durch Analysieren des Ausdrucks als eine Adresse eingegeben werden, in der Ansicht für Arbeitsspeicher und anschließende Evaluierung der analysierten Ausdruck mit [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) zum Abrufen einer `IDebugProperty2` Schnittstelle. Ein Aufruf von [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , beschreibt die Speicheradresse. Dieser Speicherkontext übergeben, [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) und [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -59,7 +56,7 @@ IDebugMemoryBytes2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)   
  [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)   
  [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)   

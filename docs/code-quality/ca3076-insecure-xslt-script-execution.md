@@ -2,19 +2,18 @@
 title: 'CA3076: Unsichere XSLT-Skriptausführung'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d711aad69dbdf3295ca7b2962a2e2022bd259059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891046"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
 
@@ -31,7 +30,7 @@ Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-**XSLT** ist ein Standard World Wide Web Consortium (W3C) zum Transformieren von XML-Daten. XSLT wird normalerweise verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate wie HTML, Text mit fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
+**XSLT** ist ein W3C-Standard (World Wide Web Consortium) zum Transformieren von XML-Daten. XSLT wird normalerweise verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate wie HTML, Text mit fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
 Um sicherzustellen, können Sie keine Angriffsfläche, mit dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
 

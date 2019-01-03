@@ -1,9 +1,6 @@
 ---
-title: Syntaxfarben in benutzerdefinierten Editoren | Microsoft Docs
-ms.custom: ''
+title: Syntaxfarben in benutzerdefinierten Editoren | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
@@ -13,53 +10,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e087e82754244b7abda530f733a6047447f4a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f82902ebcb82ea311617d3a7a767c5dabaedd311
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886649"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
-Visual Studio-Umgebung SDK-Editoren, darunter auch die Core-Editor mithilfe Sprachdienste bestimmte syntaktische Elemente zu identifizieren und mit angegebenen Farben für ein bestimmtes Dokument-Ansicht anzeigen.
+Visual Studio-Umgebung SDK-Editoren, einschließlich der Kern-Editor, verwenden Sie Sprachdienste bestimmte syntaktische Elemente zu identifizieren und mit angegebenen Farben für eine angegebene Dokumentenansicht anzeigen.
 
 ## <a name="colorization-requirements"></a>Farbliche Kennzeichnung von Anforderungen
- Alle Editoren implementieren einen Sprachdienst Colorizer müssen:
+ Alle Editoren, die einer editortooloptionsseite des Sprachdiensts Farbauswahl implementieren müssen:
 
-1.  Verwenden Sie ein Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> zum Verwalten der Text, der farbig hervorgehoben werden und ein Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> eine Dokumentenansicht des Texts angeben.
+1.  Verwenden Sie ein Objekt, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> zum Verwalten der Text, der einzufärbenden und ein Objekt, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> zum Dokument anzeigen des Texts.
 
-2.  Eine Schnittstelle für einen bestimmten Sprachdienst durch Abfragen der VSPackage-Dienstanbieter mit den Sprachen Dienst identifizierende GUID zu erhalten.
+2.  Erhalten Sie eine Schnittstelle zu einem bestimmten Sprachdienst, durch die VSPackage Dienstanbieter, die mit den Sprachen des Diensts identifizierende GUID Abfragen.
 
-3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> Methode das Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>. Diese Methode ordnet der Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Implementierung, die das VSPackage verwendet, um den Text zu verwalten, die farbig hervorgehoben werden.
+3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> Methode die objektimplementierung <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>. Diese Methode ordnet den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> -Implementierung, die das VSPackage verwendet, um den Text zu verwalten, die farbig markiert werden.
 
-## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Core-Editor einen Sprachdienst Colorizer Verwendung
- Wenn ein Sprachdienst mit einem Colorizer von einer Instanz von den Core-Editor, für die Analyse und das rendering von Text durch einen Sprachdienst Colorizer abgerufen wird, erfolgt automatisch ohne weiteren Eingriff Ihrerseits.
+## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Verwendung einer Editortooloptionsseite des Sprachdiensts Farbauswahl-Kern-Editor
+ Wenn ein Sprachdienst mit einem Farbauswahl von einer Instanz von der Kern-Editor, für die Analyse und Rendern von Text von einer editortooloptionsseite des Sprachdiensts Farbauswahl abgerufen wird, wird automatisch ohne weiteren Eingriff Ihrerseits.
 
  Die IDE transparent:
 
--   Ruft die Colorizer nach Bedarf, zu analysieren und Analysieren von Text, da sie hinzugefügt oder werden, in der Implementierung der geändert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.
+-   Ruft die Farbauswahl je nach Bedarf zu analysieren, Text zu analysieren, da sie hinzugefügt oder werden, in der Implementierung von geändert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.
 
--   Stellt sicher, dass die Anzeige von die Dokumentansicht gebotenen bereitgestellten der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Implementierung aktualisiert und neu gezeichnet, anhand der Informationen, die von der Colorizer zurückgegeben wird.
+-   Stellt sicher, dass die Anzeige der Dokumentenansicht gebotenen vom die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> -Implementierung wird aktualisiert und neu gezeichnet, anhand der Informationen, die von der Farbauswahl zurückgegeben.
 
-## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>Nicht-Core-Editor Verwendung einen Sprachdienst Colorizer
- Nicht-Core Editorinstanzen können auch einen Sprachdienst Syntax farbliche Kennzeichnung Dienst, jedoch müssen explizit abgerufen werden und der Dienst Colorizer anwenden und ihre Dokumentansichten selbst neu gezeichnet werden.
+## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>Nicht zum Kern-Editor-Nutzung einer Editortooloptionsseite des Sprachdiensts Farbauswahl
+ Nicht-Kern-Editor-Instanzen können sich auch auf einer editortooloptionsseite des Sprachdiensts Syntax farbliche Kennzeichnung von Dienst, aber sie müssen explizit abrufen und Anwenden des Diensts Farbauswahl, und neu zu zeichnen ihren Ansichten des Dokuments selbst.
 
- Zu diesem Zweck müssen ein nicht-Core-Editor ein:
+ Zu diesem Zweck müssen ein nicht zum Kern-Editor ein:
 
-1.  Rufen Sie einen Sprachdienst Colorizer Objekt (implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>). Das VSPackage wird dies durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode auf der Sprachdienst-Schnittstelle.
+1.  Abrufen einer editortooloptionsseite des Sprachdiensts Farbauswahl-Objekt (implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>). Das VSPackage wird durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> -Methode für den Sprachdienst-Schnittstelle.
 
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um anzufordern, dass eine bestimmte Textabschnitts farbig hervorgehoben werden.
+2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um anzufordern, dass es sich bei ein bestimmter Textabschnitt farbig markiert werden.
 
-     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode gibt ein Array von Werten, eine für jedes Buchstabens im Text erstreckt farbig hervorgehoben wird. Außerdem ermittelt es des Textabschnitts als eine bestimmte Art von färbbare Element, z. B. einen Kommentar, Schlüsselwort oder Datentyp.
+     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode gibt ein Array von Werten zurück, eine für jeden Buchstaben im Text umfassen farbig hervorgehoben wird. Er gibt außerdem den Textabschnitt als einen bestimmten Typ kolorierbaren Elements, z. B. einen Kommentar, Schlüsselwort oder Datentyp.
 
-3.  Verwenden Sie die farbliche Kennzeichnung Informationen zurückgegebenes <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> , zu zeichnen und der Anzeigetext.
+3.  Verwenden Sie die farbliche Kennzeichnung von Informationen vom <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> neu zu zeichnen und den Text anzuzeigen.
 
 > [!NOTE]
-> Zusätzlich zur Verwendung des Sprachdiensts Colorizer, können eine VSPackage den Mechanismus zur allgemeinen Visual Studio-Umgebung SDK Text TAB-TASTE verwenden. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).
+> Zusätzlich zur Verwendung einer editortooloptionsseite des Sprachdiensts Farbauswahl, können eine VSPackage die allgemeinen Text syntaxkennzeichnung Mechanismus für Visual Studio-Umgebung SDK verwenden. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Syntaxfarben in einem Legacysprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementieren von Syntaxfarben](../extensibility/internals/implementing-syntax-coloring.md)
-- [Gewusst wie: Verwenden von integrierten einfärbbaren Elementen](../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Benutzerdefinierte einfärbbare Elemente](../extensibility/internals/custom-colorable-items.md)

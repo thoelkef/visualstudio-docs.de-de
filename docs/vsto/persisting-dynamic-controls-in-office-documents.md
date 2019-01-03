@@ -1,9 +1,6 @@
 ---
 title: Beibehalten von dynamischen Steuerelementen in Office-Dokumente
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894794"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Beibehalten von dynamischen Steuerelementen in Office-Dokumente
 
@@ -38,7 +35,7 @@ Steuerelemente, die Sie Dokumenten zur Laufzeit hinzufügen, heißen *dynamische
 
 ## <a name="persist-host-controls-in-the-document"></a>Beibehalten von Hoststeuerelementen im Dokument
 
-Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dynamischen Hoststeuerelemente aus dem Dokument entfernt. Nur die zugrunde liegenden systemeigenen Office-Objekte bleiben zurück. Z. B. eine <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> -Hoststeuerelement wird eine <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Die systemeigenen Office-Objekte sind nicht mit den Hoststeuerelementereignissen verbunden und besitzen nicht die Datenbindungsfunktionen des Hoststeuerelements.
+Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dynamischen Hoststeuerelemente aus dem Dokument entfernt. Nur die zugrunde liegenden systemeigenen Office-Objekte bleiben zurück. Angenommen, ein <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> -Hoststeuerelement wird zu einem <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Die systemeigenen Office-Objekte sind nicht mit den Hoststeuerelementereignissen verbunden und besitzen nicht die Datenbindungsfunktionen des Hoststeuerelements.
 
 Die folgende Tabelle enthält die systemeigenen Office-Objekte, die in einem Dokument für jeden Typ von Hoststeuerelement zurückbleiben.
 
@@ -56,7 +53,7 @@ Wenn ein Benutzer ein Dokument öffnet, können anstelle von vorhandenen systeme
 
 Zum Neuerstellen eines Hoststeuerelements für Word oder <xref:Microsoft.Office.Tools.Excel.NamedRange> oder <xref:Microsoft.Office.Tools.Excel.ListObject> -Hoststeuerelements für Excel eine `Add` \< *Steuerelementklasse*>-Methode der ein <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> oder <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> Objekt. Verwenden Sie eine Methode, die einen Parameter für das systemeigene Office-Objekt hat.
 
-Angenommen, Sie erstellen möchten eine <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> -Hoststeuerelement aus einem vorhandenen systemeigenen <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> verwenden, wenn das Dokument geöffnet wird, die <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> -Methode und übergeben Sie die vorhandene <xref:Microsoft.Office.Interop.Excel.ListObject>. Im folgenden Codebeispiel wird dies für ein Projekt auf Dokumentebene für Excel veranschaulicht. Der Code erstellt ein dynamisches <xref:Microsoft.Office.Tools.Excel.ListObject> neu, das auf einem vorhandenen <xref:Microsoft.Office.Interop.Excel.ListObject> namens `MyListObject` in der `Sheet1` -Klasse basiert.
+Wenn Sie z. B. ein <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> -Hoststeuerelement aus einem vorhandenen systemeigenen <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> erstellen möchten, wenn das Dokument geöffnet wird, verwenden Sie die <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> -Methode, und übergeben Sie das vorhandene <xref:Microsoft.Office.Interop.Excel.ListObject>. Im folgenden Codebeispiel wird dies für ein Projekt auf Dokumentebene für Excel veranschaulicht. Der Code erstellt ein dynamisches <xref:Microsoft.Office.Tools.Excel.ListObject> neu, das auf einem vorhandenen <xref:Microsoft.Office.Interop.Excel.ListObject> namens `MyListObject` in der `Sheet1` -Klasse basiert.
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ Wenn Sie Dokumenten dynamische Windows Forms-Steuerelemente mithilfe eines VSTO-
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>ActiveX-Wrapper zu entfernen, wenn das Dokument geöffnet ist
 
-Rufen Sie zum Entfernen aller ActiveX-Wrapper die `GetVstoObject` Methode, um ein Hostelement für generieren die <xref:Microsoft.Office.Interop.Word.Document> oder <xref:Microsoft.Office.Interop.Excel.Workbook> , das das neu geöffnete Dokument darstellt. Können zum Beispiel, um alle ActiveX-Wrapper aus einem Word-Dokument zu entfernen, Sie Aufrufen der `GetVstoObject` Methode, um ein Hostelement für generieren die <xref:Microsoft.Office.Interop.Word.Document> -Objekt, das an den Ereignishandler für die <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> Ereignis.
+Rufen Sie zum Entfernen aller ActiveX-Wrapper die `GetVstoObject`-Methode auf, um ein Hostelement für <xref:Microsoft.Office.Interop.Word.Document> oder <xref:Microsoft.Office.Interop.Excel.Workbook> zu generieren, das das neu geöffnete Dokument darstellt. Beispiel: Zum Entfernen aller ActiveX-Wrapper aus einem Word-Dokument können Sie die `GetVstoObject`-Methode aufrufen, um ein Hostelement für das <xref:Microsoft.Office.Interop.Word.Document>-Objekt zu generieren, das an den Ereignishandler für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>-Ereignis übergeben wird.
 
 Diese Vorgehensweise ist hilfreich, wenn Sie wissen, dass das Dokument nur auf Computern geöffnet wird, auf denen das VSTO-Add-In installiert ist. Wenn das Dokument an andere Benutzer weitergegeben werden könnte, die das VSTO-Add-In nicht installiert haben, können Sie in Erwägung ziehen, die Steuerelemente vor dem Schließen des Dokuments zu entfernen.
 
-Im folgenden Codebeispiel wird veranschaulicht, wie zum Aufrufen der `GetVstoObject` Methode, wenn das Dokument geöffnet wird.
+Das folgende Codebeispiel veranschaulicht, wie die `GetVstoObject`-Methode beim Öffnen des Dokuments aufgerufen wird.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 Obwohl die `GetVstoObject` Methode dient in erster Linie zum Generieren eines neuen Hostelements zur Laufzeit, die diese Methode löscht auch alle ActiveX-Wrapper aus dem Dokument beim ersten Aufruf ist für ein bestimmtes Dokument. Weitere Informationen zur Verwendung der `GetVstoObject` -Methode finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Wenn Ihr VSTO-Add-in beim Öffnen des Dokuments dynamische Steuerelemente erstellt, das VSTO-Add-in bereits Ruft die `GetVstoObject` Methode als Teil des Prozesses, der die Steuerelemente erstellt werden. Sie müssen nicht auf einen separaten Aufruf von Hinzufügen der `GetVstoObject` Methode, um die ActiveX-Wrapper in diesem Szenario zu entfernen.
+Wenn Ihr VSTO-Add-in beim Öffnen des Dokuments dynamische Steuerelemente erstellt, das VSTO-Add-in bereits Ruft die `GetVstoObject` Methode als Teil des Prozesses, der die Steuerelemente erstellt werden. Es ist nicht erforderlich, einen separaten Aufruf der `GetVstoObject`-Methode hinzuzufügen, um in diesem Szenario ActiveX-Wrapper zu entfernen.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Entfernen Sie die dynamischen Steuerelemente aus, bevor das Dokument geschlossen wird
 

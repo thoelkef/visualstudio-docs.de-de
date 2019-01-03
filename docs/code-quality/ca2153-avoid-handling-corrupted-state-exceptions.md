@@ -1,22 +1,21 @@
 ---
-title: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden'
+title: 'CA2153: Behandlung von Ausnahmen zu vermeiden'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821859"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Behandlung von Ausnahmen zu vermeiden
 
 |||
 |-|-|
@@ -27,11 +26,11 @@ ms.locfileid: "45547518"
 
 ## <a name="cause"></a>Ursache
 
-[(State Exceptions, CSE) beschädigt](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Speicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
+[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. In der Standardeinstellung die [Common Language Runtime (CLR)](/dotnet/standard/clr) wird kein Catch-Handler für CSEs aufgerufen.
+CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. Von der [Common Language Runtime (CLR)](/dotnet/standard/clr) werden standardmäßig keine Catch-Handler für CSEs aufgerufen.
 
 Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Ausnahmetypen abzufangen, da selbst das Protokollieren von Code Angreifer in die Lage versetzen kann, Schwachstellen durch Speicherbeschädigungen auszunutzen.
 
@@ -41,7 +40,7 @@ Diese Warnung wird ausgelöst, wenn CSEs mit einem allgemeinen Handler abgefange
 
 Führen Sie eine der folgenden Schritte aus, um diese Warnung zu beheben:
 
-- Entfernen Sie die `HandleProcessCorruptedStateExceptions` Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
+- Entfernen Sie das `HandleProcessCorruptedStateExceptions`-Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
 
 - Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen. Dies kann auch CSEs gehören, vorausgesetzt, dass vom Handlercode sicher behandelt werden kann (selten vorkommenden).
 

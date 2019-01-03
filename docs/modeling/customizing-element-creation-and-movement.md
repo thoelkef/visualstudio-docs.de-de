@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821036"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -75,7 +74,7 @@ Sie können benutzerdefinierten Code zum Zusammenführen von Anweisungen hinzuf�
 >
 > Wenn Sie sicherstellen, dass ein neues Element oder eine neue Beziehung immer von Ihrem benutzerdefinierten Code verarbeitet wird, können Sie definieren eine `AddRule` in der einbettenden Beziehung und eine `DeleteRule` für das Element die Domänenklasse. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 
-## <a name="example-defining-an-emd-without-custom-code"></a>Beispiel: Definieren einer EMD ohne benutzerdefinierten code
+## <a name="example-defining-an-emd-without-custom-code"></a>Beispiel: Definieren eine EMD ohne benutzerdefinierten code
 
 Im folgende Beispiel ermöglicht Benutzern, die ein Element und einen Connector zur gleichen Zeit zu erstellen, indem Sie Sie aus der Toolbox auf eine vorhandene Form ziehen. Im Beispiel wird eine EMD der DSL-Definition hinzugefügt. Vor dieser Änderung ist können die Benutzer Tools auf das Diagramm, jedoch nicht auf vorhandene Formen ziehen.
 
@@ -91,7 +90,7 @@ Benutzer können auch Elemente in andere Elemente einfügen.
 
    1.  In **DSL-Explorer**, erweitern Sie **Domänenklassen**. Mit der rechten Maustaste `ExampleElement` , und klicken Sie dann auf **Hinzufügen neuer Elementmerge-Anweisung**.
 
-   2.  Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Ansicht**, **andere Windows**, **DSL-Details**.)
+   2.  Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Anzeigen von**, **andere Windows**, **DSL-Details**.)
 
 3. Legen Sie die **indizierende Klasse** im DSL-Details-Fenster, zu definieren, welche Klasse von Elementen auf zusammengeführt werden kann `ExampleElement` Objekte.
 
@@ -161,7 +160,7 @@ Eine EMD benutzerdefinierten Code hinzufügen, können Sie komplexere Zusammenf�
 
 4.  Generieren Sie die Projektmappe neu. Dies dauert länger als üblich, da es sich bei der generierte Code aus dem Modell aktualisiert wird.
 
-     Ein Buildfehler wird gemeldet, ähnlich wie: "Company.ElementMergeSample.ExampleElement enthält keine Definition für CanMergeExampleElement..."
+     Ein Buildfehler werden gemeldet, ähnlich: "Company.ElementMergeSample.ExampleElement enthält eine Definition für CanMergeExampleElement keine..."
 
      Sie müssen die Methode implementieren `CanMergeExampleElement`.
 

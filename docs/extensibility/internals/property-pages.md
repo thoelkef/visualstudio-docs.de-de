@@ -1,9 +1,6 @@
 ---
 title: Eigenschaftenseiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837887"
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
 Benutzer können anzeigen und Ändern von konfigurationsabhängig und -unabhängig Projekteigenschaften mit Eigenschaftenseiten. Ein **Eigenschaftenseiten** Schaltfläche ist aktiviert, der **Eigenschaften** Fenster oder auf der Symbolleiste des Projektmappen-Explorer für Objekte, die eine Eigenschaft Seitenansicht des ausgewählten Objekts bereitstellen. Eigenschaftenseiten werden von der Umgebung erstellt und stehen für Projektmappen und Projekten. Sie können jedoch auch sein, zur Verfügung gestellt, für Projektelemente, die Stellen konfigurationsabhängigen Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt auf andere Compiler Switch-Einstellungen ordnungsgemäß erstellt erforderlich ist.  

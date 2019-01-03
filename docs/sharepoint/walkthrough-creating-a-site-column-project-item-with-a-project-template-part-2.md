@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2 | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829906"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
@@ -70,7 +67,7 @@ ms.locfileid: "49942074"
 |SharePoint-Befehle|Mit diesen Methoden werden vom Datenmodell des Assistenten während der Ausführung des Assistenten Aufrufe in die lokale SharePoint-Website durchgeführt. Da SharePoint-Befehle .NET Framework 3.5 zum Ziel haben müssen, werden diese Befehle in einer anderen Assembly als der übrige Code des Assistenten implementiert.|  
   
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
- Zum Abschließen dieser exemplarischen Vorgehensweise müssen Sie mehrere Projekte der Projektmappe SiteColumnProjectItem hinzufügen, die Sie in erstellt [Exemplarische Vorgehensweise: erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Zum Abschließen dieser exemplarischen Vorgehensweise müssen Sie mehrere Projekte der Projektmappe SiteColumnProjectItem hinzufügen, die Sie in erstellt [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Ein WPF-Projekt. In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942074"
   
 3.  Stellen Sie sicher, dass für das Zielframework .NET Framework 4.5 und nicht .NET Framework 4.5 Client Profile festgelegt ist.  
   
-     Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Öffnen Sie das Kontextmenü für die **ProjectTemplateWizard** Projekts **hinzufügen**, und wählen Sie dann **neues Element**.  
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942074"
 1.  Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Entfernen die key.snk-Datei aus der Projektvorlage
- In [Exemplarische Vorgehensweise: erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), die Projektvorlage, die Sie erstellt haben, enthält eine key.snk-Datei, die mit dem einzelnen Projektinstanzen für Websitespalten signiert. Diese key.snk-Datei wird nicht mehr benötigt, da vom Assistenten nun eine neue key.snk-Datei für jedes Projekt generiert wird. Entfernen Sie die key.snk-Datei aus der Projektvorlage, und entfernen Sie die Verweise auf die Datei.  
+ In [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), die Projektvorlage, die Sie erstellt haben, enthält eine key.snk-Datei, die mit dem einzelnen Projektinstanzen für Websitespalten signiert. Diese key.snk-Datei wird nicht mehr benötigt, da vom Assistenten nun eine neue key.snk-Datei für jedes Projekt generiert wird. Entfernen Sie die key.snk-Datei aus der Projektvorlage, und entfernen Sie die Verweise auf die Datei.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>So entfernen Sie die key.snk-Datei aus der Projektvorlage  
   
@@ -546,5 +543,4 @@ ms.locfileid: "49942074"
  [Definieren von benutzerdefinierten SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)  

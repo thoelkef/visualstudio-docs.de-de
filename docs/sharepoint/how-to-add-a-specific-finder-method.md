@@ -1,13 +1,8 @@
 ---
-title: 'Vorgehensweise: hinzufügen eine bestimmten Finder-Methode | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie eine spezifische Finder-Methode | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913464"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Gewusst wie: hinzufügen eine bestimmte Finder-Methode
+# <a name="how-to-add-a-specific-finder-method"></a>Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode
   Sie können eine einzelne Entitätsinstanz zurück, durch das Erstellen einer *spezifische Finder* Methode. Der Business Data Connectivity (BDC)-Dienst führt die spezifische Finder-Methode auf, wenn ein Benutzer eine Entität in einem Business Data-Webpart oder eine externe Liste auswählt. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-specific-finder-method"></a>Zum Erstellen einer bestimmten Finder-Methode
   
 1. Auf der **BDC-Designer**, wählen Sie eine Entität.  
   
-    Informationen zur Vorgehensweise beim Hinzufügen einer Entität für die **BDC-Designer** in Visual Studio finden Sie unter [Vorgehensweise: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Informationen zur Vorgehensweise beim Hinzufügen einer Entität für die **BDC-Designer** in Visual Studio finden Sie unter [Vorgehensweise: Hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. Wählen Sie auf der Menüleiste **Ansicht** > **Other Windows**, **BDC-Methodendetails**.  
   
@@ -60,7 +55,7 @@ ms.locfileid: "49886486"
   
 4. Öffnen Sie die Visual Studio **Eigenschaften** Fenster.  
   
-5. Konfigurieren Sie den Typdeskriptor des Parameters zurück, als Typ einen Deskriptor einer Entität. Informationen zum Typ einen Deskriptor einer Entität zu erstellen, finden Sie unter [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+5. Konfigurieren Sie den Typdeskriptor des Parameters zurück, als Typ einen Deskriptor einer Entität. Informationen zum Typ einen Deskriptor einer Entität zu erstellen, finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Sie müssen diesen Schritt ausführen, wenn Sie die Entität eine Finder-Methode hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der Finder-Methode definiert.  
@@ -92,11 +87,10 @@ ms.locfileid: "49886486"
   
 ## <a name="see-also"></a>Siehe auch
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
- [Gewusst wie: hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
+ [Vorgehensweise: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
+ [Vorgehensweise: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
+ [Vorgehensweise: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Vorgehensweise: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
  [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  
-  
+ [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  

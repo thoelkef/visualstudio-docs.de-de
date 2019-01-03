@@ -1,9 +1,6 @@
 ---
 title: Unterstützen mehrerer Dokumentansichten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a2fafdaaa2d54cd445017ebd9120d8648bf7067
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e55eed8ffd2651ced96f192972127e710a565eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830728"
 ---
 # <a name="supporting-multiple-document-views"></a>Unterstützen mehrerer Dokumentansichten
 Sie können mehr als eine Ansicht eines Dokuments angeben, durch die Trennung der Dokumentdaten und dokumentenansichtsobjekten für den Editor erstellen. Einige Fälle, in denen ein zusätzlicher Dokumentenansicht sinnvoll wäre, sind:  
   
-- Unterstützung für das neue Fenster: sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
+- Unterstützung für das neue Fenster: Sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
   
-- Form "und" Code anzeigen Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
+- Formular "und" Code anzeigen-Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
   
   Weitere Informationen hierzu finden Sie im Verfahren "CreateEditorInstance" in der Datei EditorFactory.cs im benutzerdefinierten Editor-Projekt, das von der Visual Studio-Paketvorlage erstellt. Weitere Informationen zu diesem Projekt finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md).  
   

@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843592"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Gewusst wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration
   Sie können eine Bereitstellungskonfiguration erstellen oder eine vorhandene Bereitstellungskonfiguration zu ändern. Sie können z. B. einen einzigen Schritt ausführen oder Ändern der Reihenfolge der Schritte im Bereitstellungsprozess. Möglicherweise möchten erstellen oder Ändern von Bereitstellungskonfigurationen, da die integrierte und die programmgesteuert hinzugefügten Konfiguration nicht geändert werden können.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Erstellen Sie eine SharePoint-Bereitstellungskonfiguration  
@@ -58,4 +53,3 @@ ms.locfileid: "43774793"
   
 ## <a name="see-also"></a>Siehe auch
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

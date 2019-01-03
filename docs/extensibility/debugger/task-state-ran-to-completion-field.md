@@ -1,9 +1,6 @@
 ---
 title: TASK_STATE_RAN_TO_COMPLETION-Feld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ec080c5fd1fcb206daaab909b5e742245f9fe41
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: d4af0b4a2b3ef106aeb57e88440638d2b4a4c904
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830741"
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION-Feld
 Die Ausführung der Aufgabe wurde erfolgreich abgeschlossen.  
@@ -39,4 +36,4 @@ Die Ausführung der Aufgabe wurde erfolgreich abgeschlossen.
  Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält diesen Wert, der <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+ [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874283"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Gewusst wie: Unterdrücken von dateiänderungsbenachrichtigungen
+# <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Unterdrücken von dateiänderungsbenachrichtigungen
 Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld anzeigt, mit der Meldung **möchten Sie die folgenden Elemente speichern?** Dies wird als dateiänderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld können Sie immer wieder anzeigen schnell lästig werden.  
   
  Sie können dieses Dialogfeld können Sie mit dem folgenden Verfahren programmgesteuert unterdrücken. Durch das Unterdrücken des Dialogfelds, können Sie eine Datei sofort erneut laden ohne den Benutzer auffordern, die Änderungen jedes Mal zu speichern.  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

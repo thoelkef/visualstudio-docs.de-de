@@ -1,9 +1,6 @@
 ---
 title: Visual Studio-Tools für Office Runtime Installation scenarios
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 366863dc9babfd918e3f689420c5e26ec05db6a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850030"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio-Tools für Office Runtime Installation scenarios
   Sie können Visual Studio 2010-Tools für Office-Laufzeit auf drei Arten installieren:  
@@ -51,7 +48,7 @@ ms.locfileid: "50670896"
 > [!WARNING]  
 >  Sie können kein Office-Projekt mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] oder höher erstellen, das .NET Framework 3.5 als Ziel verwendet.  
   
- Weitere Informationen dazu, wie Sie die Office Developer Tools zu installieren, finden Sie unter [Vorgehensweise: konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
+ Weitere Informationen dazu, wie Sie die Office Developer Tools zu installieren, finden Sie unter [Vorgehensweise: Konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
   
 ### <a name="install-the-runtime-with-office"></a>Installieren Sie die Laufzeit mit Office  
  Wenn Sie Office installieren, werden die Office-Erweiterungen für .NET Framework 3.5 installiert, sofern .NET Framework 3.5 bereits auf dem Computer vorhanden ist. Falls Sie .NET Framework 3.5 nach der Installation von Office installieren, installiert die Laufzeit automatisch die Office-Erweiterungen für .NET Framework 3.5, wenn zum ersten Mal von einer Office-Anwendung versucht wird, eine Projektmappe mit der Zielversion .NET Framework 3.5 zu laden.  
@@ -72,5 +69,3 @@ ms.locfileid: "50670896"
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Assemblys in Visual Studio Tools for Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
-  
-  

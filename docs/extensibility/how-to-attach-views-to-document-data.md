@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b41c9432970eb9373a80a4e42a92ce82fe9186
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38818faa83f1fe901c5c3b19786aff8b3935f3b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870098"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>Gewusst wie: Anfügen von Ansichten zu Dokumentdaten
+# <a name="how-to-attach-views-to-document-data"></a>Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten
 Wenn Sie eine neue Dokumentenansicht verfügen, können Sie ihn an ein vorhandenes dokumentendatenobjekt anfügen können.  
   
 ## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Um festzustellen, ob eine Ansicht an ein vorhandenes dokumentendatenobjekt angefügt werden können  

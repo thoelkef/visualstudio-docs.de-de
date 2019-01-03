@@ -3,8 +3,6 @@ title: '&lt;Dokument&gt; -Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac66f4f7dd458ecba5f26cc99ad795540dba648d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c1798815ee3216d6f3bb41eae70ae3e2cdc0121
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854752"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Dokument&gt; -Element (Office-Entwicklung in Visual Studio)
   Die `document` Element der `vstov4` Namespace werden anpassungsspezifische Informationen für Anpassungen auf Dokumentebene gespeichert.

@@ -1,9 +1,6 @@
 ---
 title: 'Prüfliste: Erstellen neuer Projekttypen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861584"
 ---
-# <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen Sie neuer Projekttypen
+# <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen Sie neue Projekttypen
 Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:  
   
 1.  Entwerfen Sie die Funktionalität für den neuen Projekttyp. Weitere Informationen finden Sie unter [entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md).  

@@ -1,9 +1,6 @@
 ---
 title: Excel-Lösungen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856852"
 ---
 # <a name="excel-solutions"></a>Excel-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Excel zu erstellen. Mit diesen Projektmappen können Sie Excel automatisieren, Excel-Features erweitern und die Excel-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokumentebene und VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647944"
 | [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-Add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Veranschaulicht das Hinzufügen einer Windows Forms-Schaltfläche, eine <xref:Microsoft.Office.Tools.Excel.NamedRange>, und ein <xref:Microsoft.Office.Tools.Excel.ListObject> zu einem Arbeitsblatt zur Laufzeit mithilfe eines VSTO-Add-Ins. |
 | [Verstehen der gemeinsamen dokumenterstellung und Add-ins](./understanding-coauthoring-and-addins.md) | Beschreibt die Korrekturen, die Sie möglicherweise auf Ihre Lösungen stellen, um Mitverfasser von aufzunehmen. |
 | [Excel 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199011) | Enthält Links zu Artikeln und Referenzdokumentation zur Entwicklung von Excel-Projektmappen. Diese sind nicht spezifisch für die Office-Entwicklung mit Visual Studio. |
-
