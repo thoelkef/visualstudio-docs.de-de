@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828419"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt
 
@@ -157,18 +154,18 @@ Wenn Sie Word öffnen, werden im Inhaltssteuerelement Daten aus dem `AdventureWo
 
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Gewusst wie: Ausführen eines Bildlaufs durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Vorgehensweise: Führen Sie einen Bildlauf durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [BindingSource component overview (Übersicht über die BindingSource-Komponente)](/dotnet/framework/winforms/controls/bindingsource-component-overview)

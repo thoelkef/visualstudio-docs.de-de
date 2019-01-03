@@ -1,8 +1,6 @@
 ---
 title: Beibehalten der Eigenschaft eines Projektelements | Microsoft-Dokumentation
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties, adding to a project item
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e04561a5b61aed471840e5e835b942c1b2a81717
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823431"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Speichern Sie die Eigenschaft eines Projektelements
 Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzu. Dies ist möglich, indem die Eigenschaft in der Projektdatei gespeichert.
@@ -69,7 +67,7 @@ Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 

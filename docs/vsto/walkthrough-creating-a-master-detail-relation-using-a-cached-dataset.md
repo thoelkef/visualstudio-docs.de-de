@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823648"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen einer master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
   In dieser exemplarischen Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung in einem Arbeitsblatt und Zwischenspeichern von Daten, damit die Projektmappe offline verwendet werden kann.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933156"
   
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My Master-Detail**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My Master-Detail**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **My Master-Detail** Projekt **Projektmappen-Explorer**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933156"
  [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
  [Zwischenspeichern von Daten](../vsto/caching-data.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

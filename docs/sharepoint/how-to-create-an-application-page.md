@@ -1,13 +1,8 @@
 ---
 title: 'Vorgehensweise: Erstellen einer Anwendungsseite | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820224"
 ---
-# <a name="how-to-create-an-application-page"></a>Gewusst wie: Erstellen einer Anwendungsseite
+# <a name="how-to-create-an-application-page"></a>Vorgehensweise: Erstellen einer Anwendungsseite
   Sie können einer ASP.NET-Webseite für eine oder mehrere SharePoint-Websites erstellen. In SharePoint werden diese Seiten Anwendungsseiten bezeichnet. Im Gegensatz zu einer Webseite enthält eine Anwendungsseite Code, der hinter der Seite ausgeführt wird. Weitere Informationen finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>So erstellen Sie eine Anwendungsseite  
@@ -50,9 +45,8 @@ ms.locfileid: "51296202"
   
 7.  Wenn Sie die Steuerelementereignisse behandeln möchten, fügen Sie Code hinzu, um die Codedatei für die Seite "Anwendung".  
   
-     Die Codedatei wird angezeigt, wenn Sie den Knoten für die Auslagerungsdatei ASP.NET erweitern, und verfügt über eine *cs* oder *vb* Erweiterung, abhängig von der Sprache des Projekts. Ein End-to-End-Beispiel zum Erstellen einer Anwendungsseite, finden Sie unter [Exemplarische Vorgehensweise: erstellen eine SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     Die Codedatei wird angezeigt, wenn Sie den Knoten für die Auslagerungsdatei ASP.NET erweitern, und verfügt über eine *cs* oder *vb* Erweiterung, abhängig von der Sprache des Projekts. Ein End-to-End-Beispiel zum Erstellen einer Anwendungsseite, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

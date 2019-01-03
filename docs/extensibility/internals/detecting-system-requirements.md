@@ -1,9 +1,6 @@
 ---
 title: Ermitteln von Systemanforderungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892402"
 ---
 # <a name="detect-system-requirements"></a>Ermitteln von Systemanforderungen
 Eine VSPackage funktioniert nicht, es sei denn, die Visual Studio installiert ist. Wenn Sie Microsoft Windows Installer, zum Verwalten der Installation von einem VSPackage verwenden, können Sie das Installationsprogramm aus, um festzustellen, ob die Installation von Visual Studio konfigurieren. Sie können auch damit das System für andere Anforderungen, z. B. überprüfen, eine bestimmte Version von Windows oder einer bestimmten Menge an RAM konfigurieren.  
@@ -46,7 +43,7 @@ Wenn eine neuere Version installiert ist, werden die Registrierungsschlüssel f�
 |Visual Studio 2015 Shell (integriert und isoliert)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detect-when-visual-studio-is-running"></a>Erkennen Sie, wenn Visual Studio ausgeführt wird  
- Das VSPackage kann nicht ordnungsgemäß registriert werden, wenn Visual Studio ausgeführt wird, wenn VSPackages installiert ist. Das Installationsprogramm muss erkennen, wenn Visual Studio ausgeführt wird, und klicken Sie dann zum Installieren des Programms verweigert. Windows Installer können nicht Sie Einträge zu verwenden, um diese Erkennung zu aktivieren. Stattdessen, Sie müssen eine benutzerdefinierte Aktion erstellen, wie folgt: Verwenden der `EnumProcesses` Funktion zum Erkennen der *devenv.exe* verarbeiten, und legen Sie dann eine Installer-Eigenschaft, die verwendet wird, entweder in eine Startbedingung oder bedingt ein Dialogfeld anzeigen die der Benutzer aufgefordert, Visual Studio zu schließen.  
+ Das VSPackage kann nicht ordnungsgemäß registriert werden, wenn Visual Studio ausgeführt wird, wenn VSPackages installiert ist. Das Installationsprogramm muss erkennen, wenn Visual Studio ausgeführt wird, und klicken Sie dann zum Installieren des Programms verweigert. Windows Installer können nicht Sie Einträge zu verwenden, um diese Erkennung zu aktivieren. Stattdessen müssen Sie eine benutzerdefinierte Aktion, wie folgt erstellen: Verwenden der `EnumProcesses` Funktion zum Erkennen der *devenv.exe* verarbeiten, und legen Sie dann entweder eine Installer-Eigenschaft, die in eine Startbedingung verwendet oder bedingt zeigt ein Dialogfeld, das den Benutzer auffordert, schließen Sie Visual Studio.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

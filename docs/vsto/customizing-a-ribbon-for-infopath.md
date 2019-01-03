@@ -1,9 +1,6 @@
 ---
 title: Anpassen eines Menübands für InfoPath
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c69ef50662bd1b98e896d1b8d3933d23be26123c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837263"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Anpassen eines Menübands für InfoPath
   Beim Anpassen des Menübands in Microsoft Office InfoPath müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] kann das Menüband in den folgenden drei Typen von InfoPath-Anwendungsfenstern anzeigen:  
@@ -69,5 +66,3 @@ ms.locfileid: "53648738"
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Menüband-designer](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

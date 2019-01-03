@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929279"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Außer Kraft setzen, und Erweitern der generierten Klassen
 
@@ -92,6 +91,6 @@ Der Modellierung Store bietet es sich um einen Ereignismechanismus, den Sie verw
 
 Sie können einige Ereignisse auf Formen abonnieren. Beispielsweise können Sie auf Mausklicks auf einer Form lauschen. Sie müssen Code schreiben, der das Ereignis für jedes Objekt abonniert. Dieser Code kann in einer Außerkraftsetzung der InitializeInstanceResources() geschrieben werden.
 
-Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Diese Ereignisse werden in der Regel nicht innerhalb einer Transaktion ausgeführt. Wenn Sie Änderungen an den Store vornehmen möchten, sollten Sie eine Transaktion erstellen.

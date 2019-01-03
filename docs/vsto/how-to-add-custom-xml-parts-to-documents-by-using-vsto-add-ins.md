@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d364f148fb52412038c57e6f4e732ffe4e2a6e31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829656"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins
   Sie können XML-Daten in folgenden Dokumenttypen speichern, indem Sie ein benutzerdefiniertes XML-Element in einem VSTO-Add-In erstellen:  
@@ -87,5 +84,3 @@ ms.locfileid: "53648521"
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)   
  [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
-  
-  

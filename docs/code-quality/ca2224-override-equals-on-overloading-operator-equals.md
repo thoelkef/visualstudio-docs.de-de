@@ -1,8 +1,7 @@
 ---
-title: 'CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben'
+title: 'CA2224: Außerkraftsetzung equals, Equals beim Überladen'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2224
@@ -17,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbb4c6ea167dd06328c3cce513f42cdfcf3c7a1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: af2b1af90620fa595d85f7c26d7e5e2c96041dfc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826087"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Außerkraftsetzung equals, Equals beim Überladen
 
 |||
 |-|-|
@@ -115,10 +114,10 @@ Im folgenden Beispiel wird der Verstoß durch Überschreiben korrigiert <xref:Sy
 
 [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
-[CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225: Operatorüberladungen weisen benannte alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
-[CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
-[CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+[CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

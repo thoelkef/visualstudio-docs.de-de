@@ -1,9 +1,6 @@
 ---
 title: Erweitern von Projekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837198"
 ---
 # <a name="extend-projects"></a>Erweitern von Projekten
 Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressourcendateien in Einheiten für die Kompilierung und Bereitstellung bereit. Weitere Informationen zu in-Projekten finden Sie [Projekte (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Zu benutzerdefinierte Projekten implementiert werden, finden Sie unter [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Um zu verstehen, wie benutzerdefinierte Projekte implementiert werden, finden Sie unter [Generieren neuer Projekte: In die Hintergründe, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: In die Hintergründe, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  In die Themen in diesem Abschnitt wird beschrieben, wie zum Erstellen von benutzerdefinierter Projekten und verschiedene Arten von Visual Studio-Projektmappe zu verwalten.  
   

@@ -1,16 +1,11 @@
 ---
 title: Überlegungen zu Sandkastenlösungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862093"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu sandkastenlösungen
   *Sandbox-Lösungen* sind ein Feature in Microsoft SharePoint 2010, mit dem Standort Sammlung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Allgemeine Sandbox-Lösung ist die Benutzer ihre eigenen Webparts hochladen.  
@@ -145,4 +140,3 @@ ms.locfileid: "49890035"
 ## <a name="see-also"></a>Siehe auch
  [Unterschiede zwischen Sandkasten- und farmlösungen](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6f9abc191bdecce244581e7427116b05427de215
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900625"
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche teilen ein Diagramms in vertikale oder horizontale Bereiche. Sie können andere Formen, die innerhalb von Verantwortlichkeitsbereichen angezeigt werden, definieren. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).

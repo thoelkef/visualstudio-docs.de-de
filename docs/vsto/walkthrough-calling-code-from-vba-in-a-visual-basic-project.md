@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917656"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Word aus VBA-Code (Visual Basic for Applications) im Dokument aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `ThisDocument` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code im Dokument.  
@@ -51,7 +48,7 @@ ms.locfileid: "38808936"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -221,8 +218,6 @@ ms.locfileid: "38808936"
 ## <a name="see-also"></a>Siehe auch  
  [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
- [Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C#&#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

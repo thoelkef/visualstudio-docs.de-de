@@ -1,9 +1,6 @@
 ---
 title: Anpassen eines Menübands für Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932365"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Anpassen eines Menübands für Outlook
   Beim Anpassen des Menübands in Microsoft Office Outlook müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird. Outlook zeigt das Menüband in der Benutzeroberfläche der Hauptanwendung und in Fenstern an, die geöffnet werden, wenn Benutzer bestimmte Aufgaben ausführen, z. B. eine E-Mail erstellen. Diese Anwendungsfenster werden als Inspektoren bezeichnet.  
@@ -58,5 +55,3 @@ ms.locfileid: "53647235"
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Menüband-designer](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

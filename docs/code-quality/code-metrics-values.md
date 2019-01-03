@@ -2,7 +2,6 @@
 title: Codemetrik berechnen
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855571"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -24,7 +23,7 @@ Die höhere Komplexität der modernen Anwendungen erhöht sich auch die Schwieri
 
 Entwickler können Visual Studio verwenden, zum Generieren von Codemetrikdaten werden, die die Komplexität und verwaltbarkeit ihrer verwalteten Codes messen. Codemetrikdaten können für eine gesamte Projektmappe oder ein einzelnes Projekt generiert werden.
 
-Weitere Informationen zum Generieren von Codemetrikdaten werden in Visual Studio, finden Sie unter [wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md).
+Weitere Informationen zum Generieren von Codemetrikdaten werden in Visual Studio, finden Sie unter [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Software-Messungen
 
@@ -57,5 +56,5 @@ Für Windows Forms generierten Code wird nicht ignoriert, da es sich um Code han
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
+- [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
 - [Verwenden Sie das Fenster Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md)

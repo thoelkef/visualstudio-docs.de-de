@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915087"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, der PowerPoint automatisiert. Der benutzerdefinierte Aufgabenbereich fügt Daten in eine Folie ein, wenn der Benutzer auf ein <xref:System.Windows.Forms.MonthCalendar> -Steuerelement im benutzerdefinierten Aufgabenbereich klickt.  
@@ -45,7 +42,7 @@ ms.locfileid: "35671997"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -90,12 +87,12 @@ ms.locfileid: "35671997"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Fügen Sie der `MyUserControl` -Klasse folgenden Code hinzu. Durch diesen Code wird ein <xref:Microsoft.Office.Interop.PowerPoint.Shape> -Objekt als Member von `MyUserControl`deklariert. Im nächsten Schritt verwenden Sie diese <xref:Microsoft.Office.Interop.PowerPoint.Shape> , um einer Folie in der aktiven Präsentation ein Textfeld hinzuzufügen.  
+3.  Fügen Sie der `MyUserControl`-Klasse folgenden Code hinzu. Durch diesen Code wird ein <xref:Microsoft.Office.Interop.PowerPoint.Shape> -Objekt als Member von `MyUserControl`deklariert. Im nächsten Schritt verwenden Sie diese <xref:Microsoft.Office.Interop.PowerPoint.Shape> , um einer Folie in der aktiven Präsentation ein Textfeld hinzuzufügen.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
   
-4.  Ersetzen Sie den `monthCalendar1_DateChanged` -Ereignishandler durch den folgenden Code. Mit diesem Code wird in die erste Folie in der aktiven Präsentation ein Textfeld eingefügt, in das anschließend das aktuell ausgewählte Datum eingefügt wird. Im Code wird mithilfe des `Globals.ThisAddIn` -Objekts auf das PowerPoint-Objektmodell zugegriffen.  
+4.  Ersetzen Sie den `monthCalendar1_DateChanged`-Ereignishandler durch den folgenden Code. Mit diesem Code wird in die erste Folie in der aktiven Präsentation ein Textfeld eingefügt, in das anschließend das aktuell ausgewählte Datum eingefügt wird. Im Code wird mithilfe des `Globals.ThisAddIn` -Objekts auf das PowerPoint-Objektmodell zugegriffen.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]  
@@ -116,7 +113,7 @@ ms.locfileid: "35671997"
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]  
   
-4.  Ersetzen Sie den `ThisAddIn_Startup` -Ereignishandler durch den folgenden Code. Durch diesen Code wird ein neuer <xref:Microsoft.Office.Tools.CustomTaskPane> erstellt, indem der `MyUserControl` -Auflistung das `CustomTaskPanes` -Objekt hinzugefügt wird. Durch den Code wird auch der Aufgabenbereich angezeigt.  
+4.  Ersetzen Sie den `ThisAddIn_Startup`-Ereignishandler durch den folgenden Code. Durch diesen Code wird ein neuer <xref:Microsoft.Office.Tools.CustomTaskPane> erstellt, indem der `MyUserControl` -Auflistung das `CustomTaskPanes` -Objekt hinzugefügt wird. Durch den Code wird auch der Aufgabenbereich angezeigt.  
   
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
@@ -145,8 +142,6 @@ ms.locfileid: "35671997"
   
 ## <a name="see-also"></a>Siehe auch  
  [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)   
- [Gewusst wie: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: IDebugEngine3::LoadSymbols | Microsoft Docs
-ms.custom: ''
+title: IDebugEngine3::LoadSymbols | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::LoadSymbols
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fde88d8ecc31c9e1326b36da33c7fd96530ff86d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b4303d85364e5d6afa2eb0618c32770ac3a23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865153"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-Lädt (nach Bedarf)-Symbole für alle Module, die von diesem Debugmodul gedebuggt wird.  
+Lädt (nach Bedarf)-Symbole für alle Module, die durch diese Debug-Engine gedebuggt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,7 +39,7 @@ int LoadSymbols();
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Dadurch wird die Debugsymbole für alle Module auf diesem Debugmodul verweist geladen. Die Symbole geladen sind, nur dann, wenn sie noch nicht geladen wurden. Symbole werden durchsucht, auf die Pfade durch einen Aufruf von [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
+ Dadurch wird die Debugsymbole für alle Module, die auf die verwiesen wird durch diese Debug-Engine geladen. Nur dann, wenn sie noch nicht geladen wurden, werden die Symbole geladen. Symbole werden durchsucht, auf den Pfaden, die festlegen, die durch einen Aufruf von [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   

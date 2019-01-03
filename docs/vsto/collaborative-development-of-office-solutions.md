@@ -1,9 +1,6 @@
 ---
 title: Gemeinsame Entwicklung von Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876496"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Gemeinsame Entwicklung von Office-Projektmappen
   Mehrere Entwickler können auf einem Office-Projekt auf die gleiche Weise arbeiten, die sie an andere Visual Studio-Projekten arbeiten. Visual Studio findet die Microsoft Office-Installation auf jedem Computer, selbst wenn Office an verschiedenen Speicherorten installiert ist. Es gibt jedoch einige wichtige Punkte zu berücksichtigen.  
@@ -49,5 +46,3 @@ ms.locfileid: "53441547"
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)  
-  
-  

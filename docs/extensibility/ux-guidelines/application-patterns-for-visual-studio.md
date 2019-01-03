@@ -1,9 +1,6 @@
 ---
 title: Anwendungsmuster für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898571"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen  
@@ -184,7 +181,7 @@ Es gibt mehrere unterschiedliche Basistypen von Dokument-Editor, und jede hat ei
 
 -   **Textbasierten Editor:** Code-Editor, Protokolldateien  
 
--   **Entwurfsoberfläche:** WPF Forms Designer, Windows Forms  
+-   **Die Entwurfsoberfläche:** WPF-Forms Designer, Windows forms  
 
 -   **Dialogfeld-Stil-Editor:** Manifest-Designer-Projekteigenschaften  
 
@@ -192,9 +189,9 @@ Es gibt mehrere unterschiedliche Basistypen von Dokument-Editor, und jede hat ei
 
 Es gibt auch mehrere nicht-Editor-Typen, die das Dokument verwenden. Während sie Dokumente selbst bearbeiten nicht, müssen sie Standardinteraktionen für Dokumentfenster folgen.  
 
--   **Berichte:** IntelliTrace Bericht des Berichts, Hyper-V, Profiler-Berichtsansicht  
+-   **Berichte:** IntelliTrace-Bericht "," Hyper-V-Bericht "," Profiler-Berichtsansicht  
 
--   **Dashboard:** Diagnose-Hub  
+-   **Dashboard:** Diagnosehub  
 
 #### <a name="text-based-editors"></a>Textbasierte Editoren  
 
@@ -401,7 +398,7 @@ Das Dialogfeld muss es sich um eine Standardschaltfläche für das Steuerelement
 
 Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardbefehl. Wenn so ein Befehl vorhanden ist, wählen Sie stattdessen einen sichereren Befehl als Standard.  
 
-#### <a name="access-keys"></a>Zugriffsschlüssel  
+#### <a name="access-keys"></a>Zugriffstasten  
 Verwenden Sie nicht die Zugriffsschlüssel für **OK**, **Abbrechen**, oder **Hilfe** Schaltflächen. Diese Schaltflächen sind standardmäßig auf Tastenkombinationen zugeordnet:  
 
 | Schaltflächenname | Tastenkombination |  
@@ -428,7 +425,7 @@ Es gibt vor- und Nachteile zu den verschiedenen Methoden der Benutzeroberfläche
 | Durch den Wechsel des Mechanismus | Vor- und angemessene Verwendung | Nachteile und nicht ordnungsgemäße Verwendung |  
 | --- | --- | --- |  
 | Registersteuerelement | Dialogfeldseiten logisch zu gruppieren, in dem Verwandte<br /><br />Für weniger als fünf (oder die Anzahl der Registerkarten, die in einer Zeile entsprechen, über das Dialogfeld ") hilfreich Seiten von verwandten Steuerelementen im Dialogfeld"<br /><br />Registerkartenbezeichnungen müssen kurz sein: ein oder zwei Wörter, die einfach den Inhalt identifizieren können<br /><br />Eine allgemeine Systemstil-Dialogfeld<br /><br />Beispiel: **Datei-Explorer &gt; -Elementeigenschaften** | Vornehmen von beschreibenden kurzen Bezeichnungen kann schwierig sein<br /><br />Im Allgemeinen skalieren nicht nach fünf Registerkarten in einem Dialogfeld<br /><br />Nicht geeignet, wenn Sie viele Registerkarten für eine Zeile (verwenden Sie eine alternative Schichten Technik) haben<br /><br />Nicht erweiterbar. |  
-| Seitenleistennavigation | Einfache durch den Wechsel des Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste von Kategorien (ohne Hierarchie)<br /><br />Erweiterbar<br /><br />Beispiel: **anpassen... &gt; Befehl "hinzufügen"** | Nicht für eine gute Verwendung der horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Aufgabe möglicherweise besser geeignet, um eine Dropdownliste sein. |  
+| Seitenleistennavigation | Einfache durch den Wechsel des Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste von Kategorien (ohne Hierarchie)<br /><br />Erweiterbar<br /><br />Beispiel: **Anpassen... &gt; Befehl "hinzufügen"** | Nicht für eine gute Verwendung der horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Aufgabe möglicherweise besser geeignet, um eine Dropdownliste sein. |  
 | Struktursteuerelement | Ermöglicht unbegrenzte Anzahl an Kategorien<br /><br />Ermöglicht die Gruppierung und/oder die Hierarchie der Kategorien<br /><br />Erweiterbar<br /><br />Beispiel: **Tools &gt; Optionen** | Stark geschachtelte Hierarchien kann eine übermäßige horizontalen Bildlauf<br /><br />Visual Studio verfügt über eine Overabundance von Strukturansichten |  
 | Assistent | Unterstützt Sie bei Abschluss der Aufgabe, durch den Benutzer aufgabenbasierte, sequenziellen Schritte zur Verfügung stellt: der Assistent stellt eine übergeordnete Aufgabe und die einzelnen Bereiche darstellen, erforderlich, um die gesamte Aufgabe Unteraufgaben<br /><br />Ist nützlich, wenn die Aufgabe über Benutzeroberflächen, mehrere als wenn der Benutzer andernfalls müssten verwenden mehrere Editoren und Tools zu Windows so, dass die Aufgabe abgeschlossen<br /><br />Ist nützlich, wenn der Task Verzweigungen erfordert.<br /><br />Ist nützlich, wenn Sie den Task Abhängigkeiten zwischen den Schritten enthält.<br /><br />Ist nützlich, wenn mehrere ähnliche Aufgaben mit einer Entscheidung Verzweigung in ein Dialogfeld zum Reduzieren der Anzahl der andere ähnliche Dialogfelder angezeigt werden kann | Für jede Aufgabe, die einen sequenziellen Workflow keine erfordert nicht geeignet.<br /><br />Benutzer können schwer und von einem Assistenten mit zu vielen Schritten verwechselt werden.<br /><br />Assistenten haben grundsätzlich Platz auf dem Bildschirm begrenzt. |  
 
@@ -470,11 +467,11 @@ Projekte in der Regel Klassifizieren von sich selbst als anhand von verweisen (n
 
 Hinsichtlich der Drag & Drop die folgenden Merkmale treffen sollten, um jede Art von Projekt in der **Projektmappen-Explorer**:  
 
--   **Referenz-basiertes Projekt:** der wichtigste Punkt ist, dass das Projekt um einen Verweis auf ein Element im Speicher zieht. Wenn Sie ein Referenz-basiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollten sie nur den Verweis auf das Element aus dem Projekt entfernen. Das Element sollte von der Festplatte nicht tatsächlich gelöscht werden. Wenn Sie ein Referenz-basiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollten sie einen Verweis auf dem ursprünglichen Quellelement hinzufügen, ohne dass eine private Kopie des Elements.  
+-   **Referenz-basiertes Projekt:** Der wichtigste Punkt ist, dass es sich bei das Projekt um einen Verweis auf ein Element im Speicher zieht. Wenn Sie ein Referenz-basiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollten sie nur den Verweis auf das Element aus dem Projekt entfernen. Das Element sollte von der Festplatte nicht tatsächlich gelöscht werden. Wenn Sie ein Referenz-basiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollten sie einen Verweis auf dem ursprünglichen Quellelement hinzufügen, ohne dass eine private Kopie des Elements.  
 
--   **Verzeichnisbasiertes Projekt:** aus einem Drag & Drop-Sicht, das Projekt für das physische Element statt einen Verweis zieht. Wenn ein Verzeichnisbasiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollte es am Ende das Löschen der physischen Elements von der Festplatte als auch aus dem Projekt entfernen. Wenn ein Verzeichnisbasiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollte es eine Kopie des Quellelements in den Zielspeicherort erstellen.  
+-   **Verzeichnisbasiertes Projekt:** Aus einem Drag & Drop-Sicht wird das Projekt für das physische Element statt einen Verweis gezogen wird. Wenn ein Verzeichnisbasiertes Projekt als Quelle für einen Verschiebevorgang fungiert, sollte es am Ende das Löschen der physischen Elements von der Festplatte als auch aus dem Projekt entfernen. Wenn ein Verzeichnisbasiertes Projekt als Ziel für einen Vorgang verschieben (oder kopieren) fungiert, sollte es eine Kopie des Quellelements in den Zielspeicherort erstellen.  
 
--   **Gemischte Zielprojekt:** aus Sicht einer Drag & Drop das Verhalten dieser Art von Projekt ist aufgrund der Natur des Elements gezogen wird, entweder (einen Verweis auf ein Element im Speicher) oder das Element selbst. Das richtige Verhalten für Verweise und physischen Elementen oben beschrieben werden.  
+-   **Mixed-Ziel-Projekt:** Aus Sicht einer Drag & Drop ist das Verhalten dieser Art von Projekt die Art des Elements, das gezogen entweder (einen Verweis auf ein Element im Speicher) oder das Element selbst abhängig. Das richtige Verhalten für Verweise und physischen Elementen oben beschrieben werden.  
 
 Wenn es nur eine Art von Projekt in gab der **Projektmappen-Explorer**, Drag & Drop-Vorgänge einfach wäre. Da jede Projektsystem die Möglichkeit, eigene Drag & Drop-Verhalten definiert hat, sollten bestimmte Richtlinien (basierend auf dem Windows Explorer-Drag & Drop-Verhalten) befolgt werden, um eine vorhersagbare benutzererfahrung zu gewährleisten:  
 
@@ -508,7 +505,7 @@ Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgang
 #### <a name="reference-based-projects"></a>Referenz-basierte Projekte  
  Die folgende Tabelle enthält die Drag & Drop (sowie Ausschneiden/Kopieren/Einfügen) Vorgänge, die ausgeführt werden sollte aufgrund der Natur von Quelle Element und Modifizierer gedrückt für verwiesen basierende Zielprojekte:  
 
-| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: physische Element oder das Dateisystem (`CF_HDROP`) |  
+| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: Physische Element oder das Dateisystem (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Kein Modifizierer | Aktion | Verschieben | Link |  
 | Kein Modifizierer | Target | Verweis auf das ursprüngliche Element hinzugefügt | Verweis auf das ursprüngliche Element hinzugefügt |  
@@ -540,7 +537,7 @@ Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgang
 Die folgende Tabelle enthält die Drag & Drop (sowie Ausschneiden/Kopieren/Einfügen) Vorgänge, die ausgeführt werden sollte aufgrund der Natur von Element "und"-Modifizierer Quellschlüssel gedrückt für verzeichnisbasierte Zielprojekte:  
 
 
-| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: physische Element oder das Dateisystem (`CF_HDROP`) |
+| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: Physische Element oder das Dateisystem (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Kein Modifizierer | Aktion | Verschieben | Verschieben |
 | Kein Modifizierer | Target | Kopien Element Zielspeicherort | Kopien Element Zielspeicherort |
@@ -566,7 +563,7 @@ Die folgende Tabelle enthält die Drag & Drop (sowie Ausschneiden/Kopieren/Einf�
 #### <a name="mixed-target-projects"></a>Mixed-Zielprojekte  
 Die folgende Tabelle enthält die Drag & Drop (sowie Ausschneiden/Kopieren/Einfügen) Vorgänge, die ausgeführt werden sollte aufgrund der Natur von Quelle Element und Modifizierer gedrückt für gemischte-Zielprojekte:  
 
-| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: physische Element oder das Dateisystem (`CF_HDROP`) |  
+| Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: Physische Element oder das Dateisystem (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Kein Modifizierer | Aktion | Verschieben | Verschieben |
 | Kein Modifizierer | Target | Verweis auf das ursprüngliche Element hinzugefügt | Kopien Element Zielspeicherort |

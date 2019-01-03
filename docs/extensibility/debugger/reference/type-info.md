@@ -1,9 +1,6 @@
 ---
 title: TYPE_INFO | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TYPE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823119"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Diese Struktur gibt die verschiedenen Arten von Informationen zum Typ des Felds an.  
@@ -66,7 +63,7 @@ public struct TYPE_INFO {
  Die Namen der Union.  
   
  Unionmember  
- [Nur in c#] Marshallen, die diese Option, um den entsprechenden Strukturtyp basierend auf `dwKind`.  
+ [C# nur] Marshallen, die diese Option, um den entsprechenden Strukturtyp basierend auf `dwKind`.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur wird zum Übergeben der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode, in denen es ausgefüllt wird. Wie der Inhalt der Struktur interpretiert werden basiert auf der `dwKind` Feld.  
@@ -74,7 +71,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [Nur für C++] Wenn `dwKind` gleich `TYPE_KIND_BUILT`, ist es erforderlich, um den zugrunde liegenden freizugeben [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt beim Zerstören der `TYPE_INFO` Struktur. Hierzu wird `typeInfo.type.typeBuilt.pUnderlyingField->Release()` aufgerufen.  
   
- [Nur in c#] Die folgende Tabelle zeigt die Interpretation der `unionmember` Element für jede Art von Typ. Im Beispiel wird gezeigt, wie dies für eine Art von Typ erfolgt.  
+ [C# nur] Die folgende Tabelle zeigt die Interpretation der `unionmember` Element für jede Art von Typ. Im Beispiel wird gezeigt, wie dies für eine Art von Typ erfolgt.  
   
 |`dwKind`|`unionmember` interpretiert als|  
 |--------------|----------------------------------|  

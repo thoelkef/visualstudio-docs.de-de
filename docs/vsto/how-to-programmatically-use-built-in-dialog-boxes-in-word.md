@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes verwenden Sie integrierter Dialogfelder in Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829062"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Vorgehensweise: Programmgesteuertes verwenden Sie integrierter Dialogfelder in Word
   Bei der Arbeit mit Microsoft Office Word stehen gelegentlich Sie die Dialogfelder für Benutzereingaben angezeigt müssen. Obwohl Sie Ihre eigenen erstellen können, sollten Sie auch den Ansatz der Verwendung der integrierten Dialogfelder in Word, die in verfügbar gemacht werden die <xref:Microsoft.Office.Interop.Word.Dialogs> Auflistung von der <xref:Microsoft.Office.Interop.Word.Application> Objekt. Dadurch können Sie auf mehr als 200 integrierten Dialogfelder, die als Enumerationen dargestellt werden.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35672429"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Vorgehensweise: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict-Anweisung](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflektion (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflektion (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

@@ -2,7 +2,6 @@
 title: 'Schnellstart: Codeanalyse für C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825200"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 
@@ -111,9 +110,9 @@ Funktionen für die Arbeitsaufgabenverfolgung können Sie in Visual Studio proto
 
 Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
-- **Filter-Warnungen nach Titel oder Warnungs-Id**: Geben Sie das Schlüsselwort in das Suchfeld.
+- **Filter-Warnungen nach Titel oder Warnungs-Id**: Geben Sie das Schlüsselwort in das Suchfeld ein.
 
-- **Filter-Warnungen nach Schweregrad**: in der Standardeinstellung werden Codeanalysen einen Schweregrad der zugewiesen **Warnung**. Sie können den Schweregrad der eine oder mehrere Nachrichten als zuweisen **Fehler** in einer benutzerdefinierten Regel festgelegt. Auf der **Schweregrad** Spalte die **Fehlerliste**, wählen Sie das Dropdown-Pfeil und dann auf das Symbol "Filter". Wählen Sie **Warnung** oder **Fehler** nur die Meldungen angezeigt, die den jeweiligen Schweregrad zugewiesen sind. Wählen Sie **Alles markieren** um alle Meldungen anzuzeigen.
+- **Filter-Warnungen nach Schweregrad**: Standardmäßig werden Codeanalysen einen Schweregrad der zugewiesen **Warnung**. Sie können den Schweregrad der eine oder mehrere Nachrichten als zuweisen **Fehler** in einer benutzerdefinierten Regel festgelegt. Auf der **Schweregrad** Spalte die **Fehlerliste**, wählen Sie das Dropdown-Pfeil und dann auf das Symbol "Filter". Wählen Sie **Warnung** oder **Fehler** nur die Meldungen angezeigt, die den jeweiligen Schweregrad zugewiesen sind. Wählen Sie **Alles markieren** um alle Meldungen anzuzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 

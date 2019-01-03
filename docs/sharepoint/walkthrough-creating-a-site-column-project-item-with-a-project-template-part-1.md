@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1 | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e05bdeacc80517c3dc7091444cc82a653f6eb257
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832150"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.

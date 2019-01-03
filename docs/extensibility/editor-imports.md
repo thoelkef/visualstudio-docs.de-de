@@ -1,9 +1,6 @@
 ---
 title: Editor-Importe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893930"
 ---
 # <a name="editor-imports"></a>Editor-Importe
 Sie können eine Anzahl von Editor-Dienste, Factorys und Broker, mit die die Erweiterung verschiedene Arten des Zugriffs auf die Kern-Editor zu ermöglichen, importieren. Sie können z. B. Importieren der <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> bereit mit einem <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> für einen bestimmten Inhaltstyp. (Dieses Navigators ermöglicht, dass Sie verschiedene Arten von Suchvorgängen für einen Textpuffer ausführen.)  
@@ -49,11 +46,11 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Exemplarische Vorgehensweise: Anpassen der Textansicht](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Exemplarische Vorgehensweise: Markieren Sie text](../extensibility/walkthrough-highlighting-text.md)  
+ [Exemplarische Vorgehensweise: Hervorheben von text](../extensibility/walkthrough-highlighting-text.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen-QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Exemplarische Vorgehensweise: Signaturhilfe anzeigen](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Finden Sie unter [Exemplarische Vorgehensweise: Zugriff auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
+ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Zugriff auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
   
 ## <a name="services"></a>Dienste  
  Editor-Dienste sind, in der Regel einzelnen Entitäten, die einen Service bieten, und werden über mehrere Komponenten gemeinsam genutzt wird.  

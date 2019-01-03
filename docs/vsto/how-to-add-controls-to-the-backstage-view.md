@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924656"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht
   Können Sie zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf dem Menüband-Designer die **Datei** Registerkarte. Beim Ausführen der Anwendung Steuerelemente, die Sie zum Hinzufügen der **Datei** Registerkarte angezeigt werden, eine Gruppe namens **-Add-ins**.  
@@ -71,5 +68,3 @@ ms.locfileid: "53647115"
  [Menüband-XML](../vsto/ribbon-xml.md)   
  [Vorgehensweise: Erste Schritte Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

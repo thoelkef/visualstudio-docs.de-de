@@ -1,9 +1,6 @@
 ---
 title: Grundlagen der Integration der Datenquelle | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4533cac0ba6cbbcf5cf4354afdb29eefc5b2b726
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828367"
 ---
 # <a name="source-control-integration-essentials"></a>Grundlagen der Integration der Quellcodeverwaltung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration der quellcodeverwaltung: ein Quellcodeverwaltungs-Plug-Ins, die stellt grundlegende Funktionalität bereit und wird mithilfe der Quell-Plug-in-API (ehemals die MSSCCI-API) und eine VSPackage-basierten Datenquellen-Steuerelement-integrationslösung erstellt, Stellt robuster Funktionen bereit.  
@@ -32,7 +29,7 @@ ms.locfileid: "49879167"
   
 1. Erstellen Sie eine DLL, die die angegebenen Funktionen implementiert [Quellcodeverwaltung-Plug-ins](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrieren Sie die DLL, indem Sie die entsprechenden Registrierungseinträge, machen, wie in beschrieben [Vorgehensweise: eine Source-Control-Plug-in installieren](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrieren Sie die DLL, indem Sie die entsprechenden Registrierungseinträge, machen, wie in beschrieben [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Erstellen Sie eine Hilfsprogramm-UI und Aufforderung durch den Adapter Quellcodeverwaltungspaket anzeigen (die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Komponente, die Quellcodeverwaltungsfunktionen über den Quellcodeverwaltungs-Plug-ins behandelt).  
   

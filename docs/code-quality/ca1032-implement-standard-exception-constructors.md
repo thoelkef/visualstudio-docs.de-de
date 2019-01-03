@@ -2,7 +2,6 @@
 title: 'CA1032: Standardausnahmekonstruktoren implementieren'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cd6922cae5e2d182a279e2d1637a19f8572468
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881230"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren
 
@@ -34,11 +33,11 @@ ms.locfileid: "34454751"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ erweitert <xref:System.Exception?displayProperty=fullName> aber nicht alle erforderlichen Konstruktoren deklariert.
+Ein Typ erweitert <xref:System.Exception?displayProperty=fullName> , aber nicht alle erforderlichen Konstruktoren deklariert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ausnahmetypen müssen die folgenden drei Konstruktoren implementieren:
+Typen müssen die folgenden drei Konstruktoren implementieren:
 
 - Öffentliche NewException()
 
@@ -46,25 +45,25 @@ Ausnahmetypen müssen die folgenden drei Konstruktoren implementieren:
 
 - Öffentliche NewException (String, Ausnahme)
 
-Wenn Sie ältere für FxCop statische Codeanalyse als ausführen darüber hinaus dagegen spricht, [Roslyn-basierten FxCop-Analyzern](../code-quality/roslyn-analyzers-overview.md), Abwesenheit eine vierte Konstruktor generiert außerdem eine Verletzung:
+Wenn Sie ältere für FxCop statische Codeanalyse als ausführen, außerdem im Gegensatz zu [FxCop auf Roslyn basierende Analysetools](../code-quality/roslyn-analyzers-overview.md), das Fehlen einer vierten Konstruktor generiert außerdem eine Verletzung:
 
-- geschützt oder privat NewException (SerializationInfo, StreamingContext)
+- geschützt oder privat NewException (SerializationInfo-Objekt, StreamingContext)
 
-Falls nicht der vollständige Satz von Konstruktoren angegeben wird, wird eine ordnungsgemäße Behandlung von Ausnahmen unter Umständen erschwert. Z. B. des Konstruktors, der die Signatur hat `NewException(string, Exception)` wird verwendet, um Ausnahmen zu erstellen, die von anderen Ausnahmen verursacht werden. Ohne diesen Konstruktor nicht erstellen, und lösen eine Instanz der benutzerdefinierten Ausnahme, die eine interne (geschachtelte) Ausnahme enthält, welche verwalteter Code in einer solchen Situation ausführen soll.
+Falls nicht der vollständige Satz von Konstruktoren angegeben wird, wird eine ordnungsgemäße Behandlung von Ausnahmen unter Umständen erschwert. Z. B. der Konstruktor mit der Signatur `NewException(string, Exception)` wird verwendet, um Ausnahmen zu erstellen, die von anderen Ausnahmen verursacht werden. Ohne diesen Konstruktor kann nicht erstellt und lösen eine Instanz der benutzerdefinierten Ausnahme, die von einer inneren (geschachtelten)-Ausnahme enthält, welche verwalteter Code in einem solchen Fall tun.
 
-Die ersten drei Standardausnahmekonstruktoren sind gemäß der Konvention öffentlich. Der vierte Konstruktor ist in nicht versiegelten Klassen geschützt und privat in versiegelten Klassen. Weitere Informationen finden Sie unter [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)
+Die ersten drei Standardausnahmekonstruktoren sind standardmäßig öffentlich. Der vierte Konstruktor ist in nicht versiegelte Klassen geschützt und im versiegelte Klassen privat. Weitere Informationen finden Sie unter [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)
 
-## <a name="how-to-fix-violations"></a>Behandlung von Verstößen
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie die fehlenden Konstruktoren auf die Ausnahme, und stellen Sie sicher, dass sie die richtige Zugriffsebene aufweisen.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie die fehlenden Konstruktoren, auf die Ausnahme, und stellen Sie sicher, dass sie die richtige Zugriffsebene verfügen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn die Verletzung verursacht wird, eine andere Zugriffsebene für die öffentlichen Konstruktoren mit. Darüber hinaus ist es angemessen, Unterdrückung der Warnung für die `NewException(SerializationInfo, StreamingContext)` Konstruktor, wenn Sie eine Portable Klassenbibliothek (PCL) erstellen.
+Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, wenn die Verletzung verursacht wird, eine andere Zugriffsebene für die öffentlichen Konstruktoren mit. Darüber hinaus ist es in Ordnung ist, unterdrückt die Warnung für die `NewException(SerializationInfo, StreamingContext)` Konstruktor, wenn Sie eine Portable Klassenbibliothek (PCL) erstellen.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel enthält einen Ausnahmetyp, der mit dieser Regel verletzt und einen Ausnahmetyp, der ordnungsgemäß implementiert ist.
+Das folgende Beispiel enthält einen Ausnahmetyp, der gegen diese Regel verstößt und einem Ausnahmetyp, der ordnungsgemäß implementiert ist.
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 

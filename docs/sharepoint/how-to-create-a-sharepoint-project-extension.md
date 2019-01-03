@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 04/28/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4e1c790e70ba44df967b33d57ac57951e714e130
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836451"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>Gewusst wie: Erstellen einer SharePoint-projekterweiterung
+# <a name="how-to-create-a-sharepoint-project-extension"></a>Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   Erstellen Sie eine projekterweiterung, wenn Sie möchten alle SharePoint-Projekt Funktionen hinzu, die in Visual Studio geöffnet ist. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md).  
 
 ### <a name="to-create-a-project-extension"></a>Erstellen Sie eine projekterweiterung  
@@ -204,6 +201,6 @@ Dieses Beispiel verwendet die SharePoint-Projektdiensts zum Schreiben der Nachri
 
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Gewusst wie: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Vorgehensweise: Hinzufügen eines Kontextmenüelements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

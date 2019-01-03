@@ -1,8 +1,7 @@
 ---
-title: 'CA1007: Nach Möglichkeit Generika verwenden'
+title: 'CA1007: NACH MÖGLICHKEIT Verwenden Sie Generika'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1007
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3e03c1028dc310748aff7c8263ce75ace9985be
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 038f498b2f4ef01ac42535b32d4fefd39102e4fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883012"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generika verwenden
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: NACH MÖGLICHKEIT Verwenden Sie Generika
 
 |||
 |-|-|
@@ -58,13 +57,13 @@ ms.locfileid: "45551732"
 
  [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: Statische Member in generischen Typen nicht deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
  [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
  [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: Generische Methoden müssen den Typparameter angeben.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
  [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
 

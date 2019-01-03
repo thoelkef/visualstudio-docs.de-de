@@ -1,9 +1,6 @@
 ---
 title: Arbeitsblatthostelement
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4052e7d9b096d9bae6671834369ece6d31bee4a0
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866737"
 ---
 # <a name="worksheet-host-item"></a>Arbeitsblatthostelement
   Das <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement ist ein Typ, der den <xref:Microsoft.Office.Interop.Excel.Worksheet> -Typ aus der primären Interopassembly für Excel erweitert. Das <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement stellt die gleichen Eigenschaften, Methoden und Ereignisse wie ein <xref:Microsoft.Office.Interop.Excel.Worksheet> -Objekt bereit, es macht jedoch auch zusätzliche Ereignisse verfügbar und fungiert als Container für Hoststeuerelemente und Windows Forms-Steuerelemente.  
@@ -38,7 +35,7 @@ ms.locfileid: "35258917"
  In Projekten auf Dokumentebene können Sie <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelemente einem Projekt zur Entwurfszeit hinzufügen. Sie können in VSTO-Add-in-Projekte generieren <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostelemente zur Laufzeit.  
   
 ## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Verstehen Sie Worksheet-Hostelementen in Projekten auf Dokumentebene  
- Wenn Sie ein Projekt auf Dokumentebene für Excel erstellen, werden von Visual Studio automatisch drei <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelemente im Projekt erstellt. Die Standardnamen der Arbeitsblätter sind `Sheet1`, `Sheet2`und `Sheet3`. Wenn Sie ein Projekt auf Basis einer vorhandenen Arbeitsmappe erstellen, wird die Anzahl von Hostelementen von der Anzahl von Arbeitsblättern in der Arbeitsmappe bestimmt.  
+ Wenn Sie ein Projekt auf Dokumentebene für Excel erstellen, werden von Visual Studio automatisch drei <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelemente im Projekt erstellt. Die Standardnamen der Arbeitsblätter sind `Sheet1`, `Sheet2` und `Sheet3`. Wenn Sie ein Projekt auf Basis einer vorhandenen Arbeitsmappe erstellen, wird die Anzahl von Hostelementen von der Anzahl von Arbeitsblättern in der Arbeitsmappe bestimmt.  
   
  Über diese Arbeitsblattklassen erhalten Sie Zugriff auf Member des <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelements, um grundlegende Aufgaben in Ihrer Anpassung auszuführen, beispielsweise das Ändern des Inhalts eines Arbeitsblatts. Sie können diese Klassen auch verwenden, um den Arbeitsblättern Steuerelemente hinzuzufügen. Sie können Steuerelemente an Daten binden, Benutzerinformationen abfragen und auf Benutzeraktionen reagieren, indem Sie verschiedene Gruppen von Steuerelementen kombinieren und Code schreiben. Weitere Informationen finden Sie unter [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md).  
   
@@ -53,9 +50,9 @@ ms.locfileid: "35258917"
  Sie können keine neuen erstellen <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostelemente zur Laufzeit in einem Projekt auf Dokumentebene. Wenn Sie ein neues Excel-Arbeitsblatt zur Laufzeit erstellen, werden sie vom Typ <xref:Microsoft.Office.Interop.Excel.Worksheet>. Da das Arbeitsblatt kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Dokumenten zur Laufzeit finden Sie unter [Vorgehensweise: Programmgesteuertes Hinzufügen neuer Arbeitsblätter zu Arbeitsmappen](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Verstehen Sie Worksheet-Hostelementen in VSTO-Add-in-Projekte  
- In Projekten auf Anwendungsebene können Sie für jedes Arbeitsblatt, das in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement erstellen. Sie können das <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement verwenden, um dem zugeordneten Arbeitsblatt Steuerelemente hinzuzufügen, oder um Ereignisse zu behandeln, die für <xref:Microsoft.Office.Interop.Excel.Worksheet> -Objekte nicht verfügbar sind.  
+ In Projekten auf Anwendungsebene können Sie für jedes Arbeitsblatt, das in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement erstellen. Sie können das <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelement verwenden, um dem zugeordneten Arbeitsblatt Steuerelemente hinzuzufügen, oder um Ereignisse zu behandeln, die für <xref:Microsoft.Office.Interop.Excel.Worksheet>-Objekte nicht verfügbar sind.  
   
- Zum Generieren einer <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelements mithilfe der `GetVstoObject` Methode. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Verwenden Sie zum Generieren eines <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelements die `GetVstoObject`-Methode. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
@@ -66,5 +63,3 @@ ms.locfileid: "35258917"
  [Arbeitsmappenhostelement](../vsto/workbook-host-item.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

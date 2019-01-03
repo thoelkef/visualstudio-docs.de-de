@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Behandeln von Bereitstellungskonflikten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
@@ -12,25 +9,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7c30a7c634c30c9fe3e92ef988d7d8fc043cf6b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898881"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>Gewusst wie: Behandeln von Bereitstellungskonflikten
+# <a name="how-to-handle-deployment-conflicts"></a>Vorgehensweise: Behandeln von Bereitstellungskonflikten
   Sie können Ihren eigenen Code zum Behandeln von Bereitstellungskonflikten für ein SharePoint-Projektelement bereitstellen. Beispielsweise können Sie bestimmen, ob alle Dateien in das aktuelle Projektelement bereits in den Speicherort der Bereitstellung vorhanden sein, und klicken Sie dann die bereitgestellten Dateien löschen, bevor das aktuelle Projektelement bereitgestellt wird. Weitere Informationen zu Bereitstellungskonflikte, finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-handle-a-deployment-conflict"></a>Um einen Bereitstellungskonflikt zu behandeln.  
   
 1.  Erstellen Sie eine projektelementerweiterung, ein projekterweiterung oder einen neuen Projektelementtyp eine Definition. Weitere Informationen finden Sie unter den folgenden Themen:  
   
-    -   [Gewusst wie: erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Vorgehensweise: Erstellen einer SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Gewusst wie: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Gewusst wie: definieren ein SharePoint-Projektelementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  In der Erweiterung verarbeiten die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Ereignis eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> Objekt (in einem projektelementerweiterung oder projekterweiterung) oder ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> Objekt (in einer Definition von einer neuen Projektelementtyp).  
   
@@ -61,6 +58,5 @@ ms.locfileid: "37119208"
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Packen und-bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md)   
- [Gewusst wie: Ausführen von Code bei der Bereitstellung ausgeführt werden](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
- [Gewusst wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)  
-  
+ [Vorgehensweise: Ausführen von Code bei der Bereitstellung ausgeführt werden](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
+ [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)  

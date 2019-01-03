@@ -1,9 +1,6 @@
 ---
 title: Verwenden die Store-Einstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72bfc23f585506d86a485d325611c9281f49a51d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4bce0eda36e637140d10408a37b0ecbb3d8b91ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873975"
 ---
 # <a name="using-the-settings-store"></a>Verwenden des Einstellungsspeichers
 Es gibt zwei Arten von Einstellungen speichern:  
@@ -87,4 +84,4 @@ Es gibt zwei Arten von Einstellungen speichern:
     > [!NOTE]
     >  Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp_Config\ und nicht \14.0_Config enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, sind Konfigurationseinstellungen in der Registrierungsstruktur "14.0Exp_Config" ein.  
   
-3.  Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "true"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "false"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.
+3.  Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.

@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Ändern Sie dokumentformatierung mit CheckBox-Steuerelementen'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913868"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern Sie dokumentformatierung mit CheckBox-Steuerelementen
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms-Steuerelemente in einer Anpassung auf Dokumentebene für Microsoft Office Word verwendet, um textformatierung zu ändern.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -165,5 +162,3 @@ ms.locfileid: "49863931"
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

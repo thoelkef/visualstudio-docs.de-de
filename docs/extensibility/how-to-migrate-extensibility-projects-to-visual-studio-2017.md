@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017 | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820409"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 
 Dieses Dokument erläutert das upgrade von Erweiterungsprojekten zu Visual Studio 2017. Zusätzlich zu beschreiben, wie Sie die Projektdateien zu aktualisieren, beschreibt es auch von der Erweiterung manifest der Version 2 (v2 VSIX) auf die neue Version 3 VSIX-Manifestformat (VSIX v3) aktualisieren.
 
@@ -40,7 +37,7 @@ Die Projektdatei (z. B. **csproj*) aktualisiert werden:
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Aktualisieren von NuGet-Paket Microsoft.VSSDK.BuildTools
 
->**Hinweis:** , wenn Ihre Lösung nicht über die NuGet-Paket Microsoft.VSSDK.BuildTools verweist, können Sie diesen Schritt überspringen.
+>**Hinweis**: Wenn Ihre Lösung nicht über die NuGet-Paket Microsoft.VSSDK.BuildTools verweist, können Sie diesen Schritt überspringen.
 
 Um die Erweiterung in die neue VSIX v3 zu erstellen (Version 3)-Format, Ihre Lösung mit den neuen VSSDK-Build-Tools erstellt werden müssen. Dies wird mit Visual Studio 2017 installiert, aber Ihre VSIX-v2-Erweiterung kann einen Verweis auf eine ältere Version über NuGet belegen. Wenn dies der Fall ist, müssen Sie ein Update des NuGet-Paket Microsoft.VSSDK.BuildTools für Ihre Lösung manuell zu installieren.
 
@@ -57,7 +54,7 @@ So aktualisieren Sie die NuGet-Verweise auf Microsoft.VSSDK.BuildTools:
 
 Um sicherzustellen, dass der Benutzer die Installation von Visual Studio alle Assemblys, die zum Ausführen der Erweiterung erforderlich ist, geben Sie alle erforderlichen Komponenten oder Pakete in der Manifestdatei für die Erweiterung ein. Wenn ein Benutzer versucht, die die Erweiterung zu installieren, überprüft der VSIX-Installationsprogramm, um festzustellen, ob alle erforderlichen Komponenten installiert sind. Wenn einige fehlen, wird der Benutzer aufgefordert werden, um die fehlenden Komponenten im Rahmen des Installationsvorgangs Erweiterung zu installieren.
 
->**Hinweis:** zumindest sollten alle Erweiterungen der Visual Studio-Kern-Editor-Komponente als erforderliche Komponente angeben.
+>**Hinweis**: Zumindest sollten alle Erweiterungen der Visual Studio-Kern-Editor-Komponente als erforderliche Komponente angeben.
 
 * Bearbeiten Sie die Erweiterung manifest-Datei (in der Regel aufgerufen *"Source.Extension.vsixmanifest"*).
 * Stellen Sie sicher `InstallationTarget` 15.0 umfasst.
@@ -83,7 +80,7 @@ Beispiel:
 
 Anstatt das manifest-XML direkt zu bearbeiten, können Sie die neue **Voraussetzungen** Registerkarte im Manifest-Designer, wählen Sie die Voraussetzungen und den XML-Code für Sie aktualisiert werden.
 
->**Hinweis:** vom Manifest-Designer lässt nur Ihnen die Auswahl von Komponenten (nicht "Workloads" oder "Pakete"), die in der aktuellen Visual Studio-Instanz installiert sind. Wenn Sie eine Voraussetzung für eine Workload hinzufügen müssen, bearbeiten Paket oder einer Komponente, die derzeit nicht installiert ist, das Manifest-XML direkt.
+>**Hinweis**: Der Manifest-Designer lässt nur das Auswählen von Komponenten (nicht "Workloads" oder "Pakete"), die in der aktuellen Visual Studio-Instanz installiert sind. Wenn Sie eine Voraussetzung für eine Workload hinzufügen müssen, bearbeiten Paket oder einer Komponente, die derzeit nicht installiert ist, das Manifest-XML direkt.
 
 * Open *"Source.Extension.vsixmanifest" [Entwurf]* Datei.
 * Wählen Sie **Voraussetzungen** Registerkarte, und drücken Sie **neu** Schaltfläche.
@@ -107,11 +104,11 @@ Anstatt das manifest-XML direkt zu bearbeiten, können Sie die neue **Voraussetz
 
 Wenn Sie Ihre Erweiterung in einer experimentellen Instanz von Visual Studio debuggen möchten, stellen sicher, dass die projekteinstellungen für **Debuggen** > **Startaktion** hat die **externe starten Programm:** Wert festgelegt wird, um die *devenv.exe* Datei der Visual Studio 2017-Installation.
 
-Es könnte folgendermaßen aussehen: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+Dies kann so aus: *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Externes Programm starten](media/start-external-program.png)
 
->**Hinweis:** Debuggen Startaktion befindet sich in der Regel in der *. csproj.user* Datei. Diese Datei befindet sich in der Regel in der *".gitignore"* Datei, und daher nicht Normal gespeichert mit anderen Projektdateien, wenn ein Commit in die quellcodeverwaltung ausgeführt. Wenn Sie die Projektmappe aus der quellcodeverwaltung neue abgerufen haben ist es wahrscheinlich das Projekt keine Werte für Startaktion festgelegt hat. Neue VSIX-Projekte mit Visual Studio 2017 erstellt haben eine *. csproj.user* Datei erstellt, die mit den Standardeinstellungen für das aktuelle Visual Studio-Installationsverzeichnis verweist. Wenn Sie eine VSIX-Erweiterung v2 migrieren, es jedoch wahrscheinlich ist, die die *. csproj.user* -Datei enthält Verweise auf der früheren Version des Visual Studio-Installationsverzeichnis. Festlegen des Werts für **Debuggen** > **Startaktion** ermöglicht die richtige experimentelle Visual Studio-Instanz zum Starten, wenn Sie versuchen, Ihre Erweiterung zu debuggen.
+>**Hinweis**: Debuggen von Startaktion befindet sich in der Regel in der *. csproj.user* Datei. Diese Datei befindet sich in der Regel in der *".gitignore"* Datei, und daher nicht Normal gespeichert mit anderen Projektdateien, wenn ein Commit in die quellcodeverwaltung ausgeführt. Wenn Sie die Projektmappe aus der quellcodeverwaltung neue abgerufen haben ist es wahrscheinlich das Projekt keine Werte für Startaktion festgelegt hat. Neue VSIX-Projekte mit Visual Studio 2017 erstellt haben eine *. csproj.user* Datei erstellt, die mit den Standardeinstellungen für das aktuelle Visual Studio-Installationsverzeichnis verweist. Wenn Sie eine VSIX-Erweiterung v2 migrieren, es jedoch wahrscheinlich ist, die die *. csproj.user* -Datei enthält Verweise auf der früheren Version des Visual Studio-Installationsverzeichnis. Festlegen des Werts für **Debuggen** > **Startaktion** ermöglicht die richtige experimentelle Visual Studio-Instanz zum Starten, wenn Sie versuchen, Ihre Erweiterung zu debuggen.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Überprüfen Sie, dass die Erweiterung (wie eine VSIX v3) erstellt.
 
@@ -128,7 +125,7 @@ Es könnte folgendermaßen aussehen: *C:\Program Files (x86) \Microsoft Visual S
 
 Test, der die VSIX-Datei auf einem Computer mit allen erforderlichen Komponenten installiert wurde erfolgreich installiert.
 
->**Hinweis:** vor der Installation alle Erweiterungen, beenden Sie alle Instanzen von Visual Studio.
+>**Hinweis**: Vor der Installation alle Erweiterungen, beenden Sie alle Instanzen von Visual Studio.
 
 Versucht, die die Erweiterung zu installieren:
 
@@ -149,13 +146,13 @@ Wenn Visual Studio zuletzt geöffnet wurde, wird möglicherweise ein Dialogfeld 
 
 Warten Sie, bis die Prozesse beendet, oder beenden Sie die Tasks manuell. Sie finden die Prozesse durch den aufgeführten Namen oder mit der PID, die in Klammern aufgeführt.
 
->**Hinweis:** diese Prozesse werden nicht automatisch geschlossen, während eine Instanz von Visual Studio ausgeführt wird. Stellen Sie sicher, dass Sie alle Instanzen von Visual Studio auf dem Computer – einschließlich der von anderen Benutzern oder beendet haben, dann zu wiederholen.
+>**Hinweis**: Diese Prozesse werden nicht automatisch heruntergefahren, während eine Instanz von Visual Studio ausgeführt wird. Stellen Sie sicher, dass Sie alle Instanzen von Visual Studio auf dem Computer – einschließlich der von anderen Benutzern oder beendet haben, dann zu wiederholen.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Überprüfen Sie, wenn die erforderlichen Komponenten fehlt.
 
 * Versuchen Sie zum Installieren der Erweiterung auf einem Computer mit Visual Studio 2017, enthalten nicht alle Komponenten, die im Rahmen der Vorbereitung (oben) definiert.
 * Überprüfen Sie, dass die Installation die fehlende Komponente/s identifiziert und sie als erforderliche Komponente für das VSIX-Installationsprogramm listet an.
-* Hinweis: Erhöhte Rechte ist erforderlich, wenn alle erforderlichen Komponenten mit der Erweiterung installiert werden müssen.
+* Hinweis: Erhöhung der Rechte ist erforderlich, wenn alle erforderlichen Komponenten mit der Erweiterung installiert werden müssen.
 
 ![VSIX-Installationsprogramm fehlende erforderliche Komponente](media/vsixinstaller-missing-prerequisite.png)
 
@@ -180,7 +177,7 @@ Wenn Sie nicht sicher sind, welche Komponente eine bestimmte Binärdatei enthäl
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>Visual Studio 2017-ComponentBinaryMapping.xlsx
 
-Es gibt vier Spalten im Excel-Arbeitsblatt: **Komponentenname**, **ComponentId**, **Version**, und **Binary / Dateinamen**.  Sie können die Filter verwenden, die Suche nach bestimmten Komponenten und -Binärdateien.
+Es gibt vier Spalten im Excel-Arbeitsblatt ein: **Name der Komponente**, **ComponentId**, **Version**, und **Binary / Dateinamen**.  Sie können die Filter verwenden, die Suche nach bestimmten Komponenten und -Binärdateien.
 
 Für alle Ihre Verweise zunächst bestimmen Sie, welche in der Kern-Editor (Microsoft.VisualStudio.Component.CoreEditor) Komponente sind.  Zumindest müssen die Kern-Editor-Komponente als Voraussetzung für alle Erweiterungen angegeben werden. Verweise, die beibehalten werden, deren nicht-Kern-Editor, fügen Sie Filter in der **Binärdateien / Dateinamen** Abschnitt aus, um Komponenten zu suchen, die die Teilmenge der diese Verweise aufweisen.
 

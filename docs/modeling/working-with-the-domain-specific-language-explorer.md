@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886565"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
 Die **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen über die meisten Elemente im DSL-Explorer finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).

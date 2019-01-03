@@ -1,9 +1,6 @@
 ---
 title: Ausdrucksauswertung (Visual Studio Debugging SDK) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52c897e40b825f85e07b4b4f14796655618280a8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888724"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Ausdrucksauswertung (Visual Studio Debugging SDK)
 Die IDE muss während des Unterbrechungsmodus einfache Ausdrücke mit mehreren Programmvariablen ausgewertet werden. Um die Auswertung zu erreichen, muss die Debug-Engine (DE) analysieren und Auswerten eines Ausdrucks, das in eines der Fenster der IDE eingegeben wird. 
@@ -36,7 +33,7 @@ Die IDE muss während des Unterbrechungsmodus einfache Ausdrücke mit mehreren P
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Wertet einen Ausdruck asynchron an.|  
-|[Abbrechen](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone ausdrucksauswertung.|  
+|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone ausdrucksauswertung.|  
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Wertet einen Ausdruck synchron an.|  
   
  Synchrone und asynchrone Auswertung erfordern, implementieren die [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) Methode. Asynchrone ausdrucksauswertung erfordert die Implementierung von [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).  

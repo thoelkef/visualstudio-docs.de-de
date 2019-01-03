@@ -1,9 +1,6 @@
 ---
 title: Service Essentials | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867276"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Auflistung von VSPackages, die Dienste für andere VSPackages bereitstellt.  
@@ -39,7 +36,7 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   
 - Dienste oder dienstüberschreibungen, bei Bedarf geladen werden, die der Dienstanbieter ist, also geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.  
   
-- Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen ein Diensts](../../extensibility/how-to-provide-a-service.md).  
+- Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie einen Dienst](../../extensibility/how-to-provide-a-service.md).  
   
 - Verwenden Sie nach dem Erwerb eines Diensts [QueryInterface](/cpp/atl/queryinterface) (nicht verwaltetem Code) oder umwandeln (verwalteter Code), um die gewünschte Schnittstelle, z. B. zu erhalten:  
   
@@ -63,7 +60,7 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   
 ## <a name="use-getglobalservice"></a>Verwenden von GetGlobalService  
   
-Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus. Weitere Informationen zu diesen und andere Szenarien finden Sie unter [wie: Problembehandlung bei Diensten](../../extensibility/how-to-troubleshoot-services.md).  
+Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus. Weitere Informationen zu diesen und andere Szenarien finden Sie unter [Vorgehensweise: Problembehandlung bei Services](../../extensibility/how-to-troubleshoot-services.md).  
   
 Sie können die meisten Visual Studio-Dienste abrufen, durch Aufrufen der statischen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode.  
   

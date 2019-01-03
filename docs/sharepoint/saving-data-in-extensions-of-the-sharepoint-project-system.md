@@ -1,9 +1,6 @@
 ---
 title: Speichern von Daten in Erweiterungen des SharePoint-Projektsystems | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74228b5259b733c91397eb1b40a2485daea8b79e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829249"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Speichern von Daten in Erweiterungen des SharePoint-Projektsystem
   Wenn Sie SharePoint-Projektsystem erweitern, können Sie Zeichenfolgedaten speichern, die erhalten bleibt, nachdem ein SharePoint-Projekt geschlossen wird. Die Daten sind in der Regel mit einem bestimmten Projekt-Element oder das Projekt selbst zugeordnet.  
@@ -60,4 +57,3 @@ ms.locfileid: "37118977"
  [Erweitern von SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [Konvertieren Sie zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
-  

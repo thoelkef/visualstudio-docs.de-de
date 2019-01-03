@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen eines Kontextmenüs in einem Toolfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909800"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü wird ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, im Textfeld oder Fensterhintergrund klickt. Befehle im Kontextmenü der Verhalten sich wie die Befehle auf anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der *VSCT* Datei, und es als Reaktion auf der rechten Maustaste angezeigt werden.  
@@ -32,7 +29,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
   
  Wenn Ihr Kontextmenü nicht Visual Studio-Funktionen zugreifen, Sie können auch die <xref:System.Windows.FrameworkElement.ContextMenu%2A> Eigenschaft eines XAML-Elements im Steuerelement. Weitere Informationen finden Sie unter [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>Erstellen Sie die Verknüpfung im Menü-fensterpakets  
@@ -119,10 +116,10 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Hierbei handelt es sich um die gleichen Befehls-IDs, die in den Abschnitt "Symbols" von definiert sind die *ShortcutMenuPackage.vsct* Datei. Der Gruppe "Kontext" ist hier nicht enthalten, da es nur im erforderlich ist der *VSCT* Datei.  
@@ -211,7 +208,7 @@ In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenst
 7.  In *ShortcutMenuControl.xaml.cs*, fügen Sie einen Stub für den Ereignishandler hinzu.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

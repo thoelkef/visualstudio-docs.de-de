@@ -1,9 +1,6 @@
 ---
 title: Entwickeln von SharePoint-Lösungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871056"
 ---
 # <a name="develop-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sind mehrere SharePoint-Projekttypvorlagen zum Erstellen von SharePoint-Websites und -Websiteelementen verfügbar. Eine Liste der verfügbaren Projekttypen, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md). Im Folgenden finden Sie eine Beschreibung der Elemente und Eigenschaften eines SharePoint-Projekts.  
@@ -48,7 +45,7 @@ ms.locfileid: "51295903"
   
  Wenn Sie ein Element zu einem SharePoint-Projekt hinzufügen, z. B. einen Inhaltstyp oder eine Listeninstanz, wird dieses einer Funktion im Knoten **Funktionen** hinzugefügt. Der Gültigkeitsbereich des Elements bestimmt, ob es einer neuen oder einer vorhandene Funktion hinzugefügt wird. Wenn das neue Element denselben Gültigkeitsbereich wie eine vorhandene Funktion aufweist, wird es der betreffenden Funktion hinzugefügt. Andernfalls wird das Element einer neuen Funktion hinzugefügt.  
   
- Um eine Funktion manuell hinzuzufügen, führen Sie im Kontextmenü des Funktionsknotens den Befehl **Funktion hinzufügen** aus. Sie können den Inhalt einer Funktion mit dem Funktions-Designer anzeigen oder ändern. Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Um eine Funktion manuell hinzuzufügen, führen Sie im Kontextmenü des Funktionsknotens den Befehl **Funktion hinzufügen** aus. Sie können den Inhalt einer Funktion mit dem Funktions-Designer anzeigen oder ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
  Wenn einem SharePoint-Projekt eine Funktion hinzugefügt wird, wird diese im **Projektmappen-Explorer** als Knoten mit dem Standardnamen Funktion*x*.feature angezeigt, wobei *x* eine eindeutige Zahl ist. Nachdem eine Funktion auf dem SharePoint-Server bereitgestellt wurde, kann sie von einem SharePoint-Administrator aktiviert und somit für SharePoint-Websitebenutzer verfügbar gemacht werden.  
   
@@ -72,8 +69,8 @@ ms.locfileid: "51295903"
 |Konfigurationen bearbeiten|Gibt die Bereitstellungskonfiguration an, die für das Projekt verwendet werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) und [bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
 |Silverlight-Debugging aktivieren (anstelle von Skript-Debugging)|Wenn diese Option ausgewählt ist, wird der Silverlight-Debugger an den Debugprozess angefügt. Ist die Option nicht ausgewählt, wird der Skriptdebugger an den Debugprozess angefügt. Weitere Informationen finden Sie unter [Übersicht zum Debuggen mit Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
 |Assembly in Paket einschließen|Gibt an, ob die Projektassembly zur Buildzeit verpackt wird.|  
-|Befehlszeile nach der Bereitstellung|Gibt die Befehle an, die nach dem Bereitstellen der SharePoint-Lösung ausgeführt werden sollen. Diese Zeile unterstützt alle Batchbefehle sowie die Auflösung von MSBuild-Variablen. Weitere Informationen finden Sie unter [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
-|Befehlszeile vor der Bereitstellung|Gibt die Befehle an, die vor dem Bereitstellen der SharePoint-Lösung ausgeführt werden sollen. Diese Zeile unterstützt alle Batchbefehle sowie die Auflösung von MSBuild-Variablen. Weitere Informationen finden Sie unter [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Befehlszeile nach der Bereitstellung|Gibt die Befehle an, die nach dem Bereitstellen der SharePoint-Lösung ausgeführt werden sollen. Diese Zeile unterstützt alle Batchbefehle sowie die Auflösung von MSBuild-Variablen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Befehlszeile vor der Bereitstellung|Gibt die Befehle an, die vor dem Bereitstellen der SharePoint-Lösung ausgeführt werden sollen. Diese Zeile unterstützt alle Batchbefehle sowie die Auflösung von MSBuild-Variablen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
 |Projektdatei|Der Name der Datei, die Build- und Konfigurationsinformationen sowie andere Informationen zum Projekt enthält.|  
 |Projektordner|Der Speicherort der Projektdatei im System. (Schreibgeschützt.)|  
 |Sandboxed Solution|Gibt an, ob das Projekt als *Sandkastenlösung*bereitgestellt werden soll (wird auch als *von Benutzern erstellte Lösung*bezeichnet). Sandkastenlösungen sind nicht notwendigerweise vertrauenswürdig. Der Wert **true** bedeutet, dass das Projekt als Sandkastenlösung bereitgestellt wird. Der Wert **false** heißt, dass das Projekt als Farmlösung bereitgestellt wird. Weitere Informationen finden Sie unter [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) und [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295903"
 |Bereitstellungsspeicherort|Der vollqualifizierte Pfad der Datei auf dem SharePoint-Server. Dieser Pfad setzt sich aus den untergeordneten Bereitstellungsstamm- und Bereitstellungspfadeigenschaften zusammen.|  
 |Bereitstellungspfad|Der relative Pfad der Datei auf dem SharePoint-Serverdatei, z. B. Workflow1\\. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Auswählen eines Werts von *RootFile* für die *Bereitstellungstyp* eigenschaftenänderungen die *Deployment Root* Eigenschaft \<SharePointRoot >\\, in einem vollqualifizierten Pfad des sich ergebenden \<SharePointRoot > \Workflow1\\. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Z. B. \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|  
-|Deployment Type|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Kann einer der folgenden Werte sein:<br /><br /> NoDeployment:  *\<kein Wert >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Kann einer der folgenden Werte sein:<br /><br /> NoDeployment:  *\<kein Wert >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Dateiname|Der Name der Datei oder des Ordners für die Elementdatei.|  
 |Vollständiger Pfad|Der Speicherort der Datei für das Element. (Schreibgeschützt.)|  
   
@@ -113,9 +110,9 @@ ms.locfileid: "51295903"
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Vorlagen für SharePoint-Projekte und Projektelemente](../sharepoint/sharepoint-project-and-project-item-templates.md)|Beschreibt die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verfügbaren Vorlagen für SharePoint-Projekte und Projektelemente.|  
-|[Vorgehensweise: Hinzufügen von Elementen zu einem SharePoint-Projekt](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Beschreibt, wie einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projekt neue oder vorhandene Elemente hinzugefügt werden.|  
+|[Vorgehensweise: Hinzufügen von Elementen zu einer SharePoint-Projekt](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Beschreibt, wie einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projekt neue oder vorhandene Elemente hinzugefügt werden.|  
 |[Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Enthält eine schrittweise Einführung in das Erstellen von Kundenfeldern, Inhaltstypen, Listendefinitionen und Listeninstanzen.|  
-|[Gewusst wie: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)|Beschreibt das Hinzufügen ein Ereignisempfängers für das Projekt erstellt wurde, im [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)|Beschreibt das Hinzufügen ein Ereignisempfängers für das Projekt erstellt wurde, im [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)|Beschreibt, wie Workflowprojekte erstellt werden, die Workflowzuordnungsformulare und Workflowinitiierungsformulare einschließen.|  
 |[Erstellen von Seiten für SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Beschreibt, wie Sie Seiten (beispielsweise Anwendungsseiten, Websiteseiten, Gestaltungsvorlagen und Seitenlayouts) für SharePoint erstellen können.|  
 |[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt, wie Sie Steuerelemente hinzufügen, mit denen Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website direkt im Browser ändern können.|  
@@ -126,7 +123,7 @@ ms.locfileid: "51295903"
 |[Verwenden von Modulen zum Einfügen von Dateien in die Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Beschreibt, wie Module verwendet werden, um Dateien aus dem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekt auf der SharePoint-Website bereitzustellen.|  
 |[Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Beschreibt, wie lokale SharePoint-Websites mit Server-Explorer durchsucht werden.|  
 |[Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Beschreibt, wie Projektelementeigenschaften verwendet werden, um Verpackungs- und Bereitstellungsinformationen für Projekte bereitzustellen, z. B. Einträge für sichere Steuerelemente, Projektausgabeverweise und Funktionseigenschaften.|  
-|[Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Beschreibt, wie dem Projekt zugeordnete Ordner hinzugefügt werden können, um den Zugriff auf SharePoint-Ressourcen zu erleichtern.|  
+|[Vorgehensweise: Fügen Sie hinzu und entfernen Sie zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Beschreibt, wie dem Projekt zugeordnete Ordner hinzugefügt werden können, um den Zugriff auf SharePoint-Ressourcen zu erleichtern.|  
 |[Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md)|Beschreibt die mit Sandkastenlösungen zusammenhängenden Probleme.|  
 |[Sicherheit für SharePoint-Projektmappen](../sharepoint/security-for-sharepoint-solutions.md)|Erläutert Sicherheitsaspekte bei der Entwicklung von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[URL-Auswahldialogfeld &#40;SharePoint-Entwicklung in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Beschreibt ein Dialogfeld, mit dem Sie Pfadverweise auf Ressourcen im Projekt oder auf dem lokalen SharePoint-Server hinzufügen können.|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295903"
  [Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

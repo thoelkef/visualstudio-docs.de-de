@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869254"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 
@@ -97,7 +96,7 @@ In der Regel ist der Namespace des Elements, auf das verwiesen wird (in diesem B
 
 Das Monikersystem verlangt unterschiedliche Namen für nebengeordnete Elemente in der XML-Struktur. Aus diesem Grund treten Validierungsfehler auf, wenn Sie versuchen, eine domänenspezifische Sprachdefinition zu speichern, die z. B. zwei Klassen mit demselben Namen enthält. Solche durch Doppelnamenfehler sollten Sie stets korrigieren, bevor Sie die Datei "DslDefinition.dsl" speichern, damit Sie sie später einwandfrei neu laden können.
 
-Jeder Typ hat seinen eigenen Monikertyp: DomainClassMoniker, DomainRelationshipMoniker usw.
+Jeder Typ hat seinen eigenen Typ des Monikers an: DomainClassMoniker, DomainRelationshipMoniker und So weiter.
 
 ## <a name="types"></a>Typen
 
@@ -228,7 +227,7 @@ Die Connection-Beziehung z. B. verknüpft Member der OutPort-Klasse mit Membern
 
 Jede Beziehung enthält Quell- und Zielrollen, die die folgenden Attribute haben:
 
--   Das `RolePlayer`-Attribut verweist auf die Domänenklasse der verknüpften Instanzen: OutPort für die Quelle, InPort für das Ziel.
+-   Die `RolePlayer` Attribut verweist auf die Domänenklasse der verknüpften Instanzen: OutPort für die Quelle, InPort für das Ziel.
 
 -   Das `Multiplicity`-Attribut hat vier mögliche Werte (ZeroMany, ZeroOne, One und OneMany). Dieses Attribut verweist auf die Anzahl von Links dieser Beziehung, die mit einem Rolleninhaber verknüpft werden können.
 

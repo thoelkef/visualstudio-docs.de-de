@@ -1,13 +1,8 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen eine externe Liste in SharePoint mithilfe von Geschäftsdaten | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918783"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen Sie eine externe Liste in SharePoint mithilfe von Geschäftsdaten
 
@@ -125,7 +120,7 @@ Die **Business Data Connectivity-Modells** Projekt wird eine Standardentität mi
 
 Eine Entität zum Modell hinzuzufügen. Sie können Entitäten hinzufügen, von Visual Studio **Toolbox** im BDC-Designer.
 
-1. Wählen Sie auf der Menüleiste **Ansicht** > **Toolbox**.
+1. Wählen Sie in der Menüleiste **Ansicht** > **Toolbox** aus.
 
 2. Auf der **BusinessDataConnectivity** Registerkarte die **Toolbox**, Hinzufügen einer **Entität** im BDC-Designer.
 
@@ -275,9 +270,9 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website wird geöffnet, und
 
 Erfahren Sie mehr über das Entwerfen von Modellen für den BDC-Dienst in SharePoint in den folgenden Themen:
 
-- [Gewusst wie: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md).
-- [Gewusst wie: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md).
-- [Gewusst wie: hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md).
+- [Vorgehensweise: Hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md).
+- [Vorgehensweise: Hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md).
+- [Vorgehensweise: Hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886370"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
 
-## <a name="the-example-solution-component-diagrams"></a>Beispielprojektmappe: Komponentendiagramme
+## <a name="the-example-solution-component-diagrams"></a>In der beispiellösung: Komponentendiagramme
  Zum Erstellen der Projektmappe, die die Quelle für die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der **Komponentenmodelle** Projektmappe (Vorlage). Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Si
 
  `ConnectionBuilders.cs`
 
- Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Ihre Namen stammen aus den Namen des Domäne domänenbeziehung und Tools: *Beziehung*-Generator und *Konnektortool*ConnectAction.
+ Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Die Namen der Domäne domänenbeziehung und Tools werden deren Namen abgeleitet: *Beziehung*-Generator und *Konnektortool*ConnectAction.
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 

@@ -1,9 +1,6 @@
 ---
 title: Grundlagen zu Legacysprachdiensten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847203"
 ---
 # <a name="legacy-language-service-essentials"></a>Grundlagen zu Legacysprachdiensten
 Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in Visual Studio bereitstellen. Dieser Artikel beschreibt die Funktionen von legacy-Sprachdienste an.  
@@ -50,4 +47,3 @@ Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in 
 |-----------------------| - |
 | Ausdrucksauswertungen | Unterstützt die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger durch Überprüfen von Haltepunkten und durch Angabe einer Liste von Ausdrücken in angezeigt werden die **"Auto"** Debug-Fenster.<br /><br /> Weitere Informationen finden Sie unter [Sprachdienstunterstützung für Debuggen](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Tools zum Durchsuchen von Symbolen | Unterstützt **Objektkatalog**, **Klassenansicht**, **Aufrufbrowser**, und **Ergebnisse der Symbolsuche**. |
-

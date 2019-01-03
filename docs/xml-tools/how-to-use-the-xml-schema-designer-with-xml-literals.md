@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Verwenden des XML-Schema-Designers mit XML-Literalen'
+title: 'Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -12,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863393"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Gewusst wie: Verwenden des XML-Schema-Designers mit XML-Literalen
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen
 
 In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Schema in einem Visual Basic-Projekt angezeigt wird.
 
@@ -39,7 +38,7 @@ In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Sch
 
 3.  In **Projektmappen-Explorer**mit der rechten Maustaste auf den Namen des Projekts, wählen Sie **hinzufügen**, und wählen Sie dann **vorhandenes Element**. Die **vorhandenes Element** Dialogfeld wird angezeigt. Navigieren Sie zu der *"purchaseorderschema.xsd"* , wählen Sie ihn, und klicken Sie dann auf **hinzufügen**.
 
-     Das Projekt XMLLiterals enthält jetzt zwei Dateien: *"Module1.vb"* und *"purchaseorderschema.xsd"*.
+     Das Projekt XMLLiterals enthält nun zwei Dateien: *"Module1.vb"* und *"purchaseorderschema.xsd"*.
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>So fügen Sie basierend auf der XSD-Datei im Projekt Visual Basic-Code mit einem XML-Literal hinzu
 

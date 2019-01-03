@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887009"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Gewusst wie: Hinzufügen und Entfernen zusätzlicher Assemblys
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Vorgehensweise: Fügen Sie hinzu und entfernen Sie zusätzlicher Assemblys
   Wenn ein SharePoint-Paket im Hinblick auf Funktionen oder Daten von anderen Assemblys abhängig ist, können Sie die Assemblys dem Lösungspaket (.wsp) hinzufügen. Auf diese Weise stellt der SharePoint-Server sicher, dass benutzerdefinierte Assemblys mit einem Paket installiert werden.  
   
  Sie können auch die zugeordneten sicheren Steuerelemente und Klassenressourcendateien der Assemblys hinzufügen und ändern.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219145"
   
 #### <a name="to-add-an-existing-assembly"></a>So fügen Sie eine vorhandene Assembly hinzu  
   
-1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wählen Sie die **erweitert** Registerkarte.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219145"
   
 1.  Öffnen der **Paket-Designer**.  
   
-     Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wählen Sie die **erweitert** Registerkarte.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219145"
   
 #### <a name="to-delete-an-existing-assembly"></a>So löschen Sie eine vorhandene Assembly  
   
-1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Wählen Sie die **erweitert** Registerkarte.  
   
@@ -116,5 +111,4 @@ ms.locfileid: "50219145"
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)   
  [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Gewusst wie: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

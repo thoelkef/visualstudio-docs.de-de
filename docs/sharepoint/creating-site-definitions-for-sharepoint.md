@@ -1,13 +1,8 @@
 ---
 title: Erstellen von Websitedefinitionen für SharePoint | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868325"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Das Projekt für SharePoint-Sitedefinition im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht das Erstellen einer *Websitedefinition*, die dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten der SharePoint-Website, aber auch den Standardinhalt und Funktionalität. In der Definition können Sie die vorkonfigurierten Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint bietet einige Websitedefinitionen, z. B. BLOG, z. B. aus. Wenn Sie einen Standort, basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.  
@@ -51,7 +46,7 @@ ms.locfileid: "36325341"
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Führt Sie Schritt für Schritt durch die Erstellung von grundlegenden sitedefinitionsprojekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts Definition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Führt Sie Schritt für Schritt durch die Erstellung von grundlegenden sitedefinitionsprojekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Vorgehensweise: Erstellen Sie eine benutzerdefinierte Sitedefinition und Konfiguration](http://go.microsoft.com/fwlink/?LinkId=183309)|Beschreibt, wie eine benutzerdefinierte Sitedefinition in SharePoint erstellen, durch Kopieren einer vorhandenen Definition für den Standort aus, und klicken Sie dann die Kopie ändern.|  
 |[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Beschreibt die ursprüngliche Datei, der angibt, die Websitedefinitionen zur Verfügung, in der **Vorlagenauswahl** im Abschnitt der **neue SharePoint-Website** Seite.|  
 |[Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)|Beschreibt, wie die SharePoint-Lösungen für die globale Verwendung vorzubereiten.|  
@@ -65,5 +60,3 @@ ms.locfileid: "36325341"
   
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

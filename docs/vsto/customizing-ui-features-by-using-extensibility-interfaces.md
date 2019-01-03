@@ -1,9 +1,6 @@
 ---
 title: Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866659"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen
   Die Office-Entwicklungstools in Visual Studio umfassen Klassen und Designer, mit denen viele Implementierungsdetails behandelt werden können, wenn Sie sie zum Erstellen von benutzerdefinierten Aufgabenbereichen, Menübandanpassungen und Outlook-Formularbereichen in einem VSTO-Add-In verwenden. Sie können jedoch zudem die *Erweiterbarkeitsschnittstelle* manuell für jede Funktion implementieren, wenn Sie über besondere Anforderungen verfügen.  
@@ -86,5 +83,3 @@ ms.locfileid: "53648890"
  [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

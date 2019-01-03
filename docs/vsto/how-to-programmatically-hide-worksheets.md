@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Ausblenden von Arbeitsblättern'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a60a0189af5608496e1f0f415a2d668e896af8e3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821447"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>Gewusst wie: Programmgesteuertes Ausblenden von Arbeitsblättern
+# <a name="how-to-programmatically-hide-worksheets"></a>Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern
   Sie können jedes Arbeitsblatt in einer Arbeitsmappe anzeigen oder ausblenden. Wenn Sie ein Arbeitsblatt ausblenden möchten, verwenden Sie das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -54,9 +51,8 @@ ms.locfileid: "35673632"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)  
-  

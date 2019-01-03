@@ -1,9 +1,6 @@
 ---
 title: Entwicklungsübersicht für Office-Projektmappen (VSTO)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880363"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Entwicklungsübersicht für Office-Projektmappen (VSTO)
   Wenn Sie Microsoft Office als Front-End für Projektmappen verwenden, können Sie die vertrauten Microsoft Office-Benutzeroberflächen und -Tools verwenden, z. B. die Textverarbeitungsfunktionen in Word, die Datenanalysefunktionen von Excel und die E-Mail-Verwaltungsfunktionen von Outlook. Sie können Projektmappen in Visual Studio entwickeln, um Office-Anwendungen anzupassen und die speziellen Funktionen hinzuzufügen, die Sie für Ihre Geschäftsprozesse benötigen. Beispielsweise können Sie Word in einen Vertragsgenerator verwandeln, mit dem Verträge aus bereits vorhandenen Teilen zusammengestellt werden können. Die Teile können dabei bearbeitbar oder nicht bearbeitbar sein. Mit Excel können Sie ein automatisiertes Budgetarbeitsblatt erstellen, das für unterschiedliche Projekte angepasst werden kann. Ihre Benutzer können Bürolösungen auch offline verwenden. Dies ist bei komplexen Lösungen praktikabler als die Verwendung einer webbasierten Architektur.  
@@ -95,5 +92,3 @@ ms.locfileid: "50672625"
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

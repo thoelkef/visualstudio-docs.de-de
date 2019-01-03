@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1fd001f5371e346a07f82c9c48a3acb699cefd52
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9ee2f0e2353023f1864c892ecc377050ea87923d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865413"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaften wie z. B. versionsnummerierung Definition. DslDefinition Eigenschaften werden in der **Eigenschaften** anzeigen, wenn Sie einen offenen Bereich des Diagramms im klicken Sie auf die *domänenspezifischen Sprachdesigner*.

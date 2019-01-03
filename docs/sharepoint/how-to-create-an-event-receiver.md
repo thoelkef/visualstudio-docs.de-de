@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Ereignisempfängers | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861571"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Gewusst wie: Erstellen eines Ereignisempfängers
+# <a name="how-to-create-an-event-receiver"></a>Vorgehensweise: Erstellen eines Ereignisempfängers
   Durch das Erstellen *Ereignisempfänger*, können Sie reagieren, wenn ein Benutzer mit SharePoint-Elemente wie Listen oder Listenelemente interagiert. Beispielsweise kann der Code in einem Ereignisempfänger ausgelöst werden, wenn ein Benutzer der Kalender geändert, oder einen Namen aus einer Liste "Kontakte löscht". Anhand der in diesem Thema erhalten Sie, wie Sie eine Listeninstanz eine Ereignisempfänger hinzufügen.
 
  Um diese Schritte abgeschlossen haben, müssen installiert sein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und die unterstützten Editionen von Windows und SharePoint. Da in diesem Beispiel wird ein SharePoint-Projekt erforderlich ist, Sie auch müssen abgeschlossen haben das Verfahren im Thema [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).

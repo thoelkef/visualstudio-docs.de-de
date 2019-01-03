@@ -1,9 +1,6 @@
 ---
 title: Anpassen von Windows von Code mithilfe der Legacy-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883038"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Anpassen von Fenstern des Code mit der legacy-API
 Ein Codefenster ist ein Dokument Window-Objekt, das eine oder mehrere Textansichten unterstützt. Die exakten Features eines Codefensters hängen von dem Dienst zugeordnete Sprache ab. Im Modus "Multiple Document Interface (MDI)" ist im Code-Fenster den MDI-Child-Rahmen.  
@@ -36,10 +33,10 @@ Codefenster
  `Customizing Code Windows by Using the Legacy API`  
  Erläutert das Anpassen des Code-Fenster mit der legacy-API.  
   
- [Vorgehensweise: Hosten ein Editors in einem anderen Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Vorgehensweise: Hosten Sie einen Editor in einem anderen editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Erläutert, wie einen zweiten Redakteur in einem Editor-Fenster zu hosten.  
   
- [Gewusst wie: Auslösen der Ereignisse aus, wenn der Editor den Fokus verliert.](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Vorgehensweise: Lösen Sie Ereignisse aus, wenn der Editor den Fokus verliert.](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Erläutert, wie eine Dokumentenansicht an ein dokumentdatenobjekt angefügt.  
   
 ## <a name="see-also"></a>Siehe auch  

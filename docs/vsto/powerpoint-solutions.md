@@ -1,9 +1,6 @@
 ---
 title: PowerPoint-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906045"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office PowerPoint verwenden können. Mit VSTO-Add-Ins können Sie PowerPoint automatisieren, PowerPoint-Features erweitern oder die PowerPoint-Benutzeroberfläche anpassen.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906558"
 > [!NOTE]  
 >  Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen eines Add-Ins für Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen Sie ein Add-in für Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Automatisieren von PowerPoint mithilfe von PowerPoint-Objektmodell  
  Das PowerPoint-Objektmodell macht viele Typen verfügbar, die Sie zum Automatisieren von PowerPoint verwenden können. Diese Typen ermöglichen Ihnen das Schreiben von Code zum Ausführen häufiger Aufgaben:  
@@ -72,7 +69,7 @@ ms.locfileid: "49906558"
 |----------|--------------------------|  
 |Erstellen eines benutzerdefinierten Aufgabenbereichs|[Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)|  
 |Hinzufügen von benutzerdefinierten Registerkarten zum Menüband|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
-|Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte auf dem Menüband|[Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte auf dem Menüband|[Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  Weitere Informationen zum Anpassen der Benutzeroberfläche von PowerPoint und anderen Microsoft Office-Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
   
@@ -81,11 +78,9 @@ ms.locfileid: "49906558"
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)   
  [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

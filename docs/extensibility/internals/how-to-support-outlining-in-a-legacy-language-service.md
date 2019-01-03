@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: unterstützen der Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f9ba947aee0276e2cca6270438cdaf20e7626e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887998"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Gewusst wie: unterstützen der Gliederung in einem legacysprachdiensten
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen der Gliederung in einem legacysprachdiensten
 Gliederung wird zum Erweitern oder reduzieren die verschiedene Regionen des Texts. Die Möglichkeit Gliederung wird verwendet, kann durch verschiedene Sprachen unterschiedlich definiert werden. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md).  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Gliederung zu suchen, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
@@ -49,5 +46,5 @@ Gliederung wird zum Erweitern oder reduzieren die verschiedene Regionen des Text
 >  Achten Sie darauf, dass zum Ausblenden von neue-Zeile-Zeichen. Ausgeblendeten Text sollten ab dem Anfang der ersten Zeile bis zum letzten Zeichen der letzten Zeile in einem Abschnitt, sodass das abschließende neue-Zeile-Zeichen sichtbar erweitern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Bereitstellen von ausgeblendetem Text in einem älteren Sprachdienst zu unterstützen](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Vorgehensweise: Unterstützen der ausgeblendeten Text in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Vorgehensweise: Geben Sie die Unterstützung für erweiterten Gliederungen in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

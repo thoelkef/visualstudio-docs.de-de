@@ -1,9 +1,6 @@
 ---
-title: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1 | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Generieren neuer Projekte: In die Hintergründe, Teil 1 | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827649"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generieren neuer Projekte: In die Hintergründe Teil 1
 Jemals daran gedacht, dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen? Lassen Sie uns einen Blick hinter die Kulissen, und sehen, was wirklich passiert.  
   
  Es gibt mehrere Aufgaben, die Koordinaten von Visual Studio für Sie:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Die Sortierreihenfolge kann geändert werden.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Suchen den Stammknoten für einen Projekttyp  
- Wenn Visual Studio die ProjectTemplates Ordner durchlaufen werden, alle ZIP-Dateien geöffnet und VSTEMPLATE-Dateien extrahiert. Eine VSTEMPLATE-Datei verwendet die XML-Vorlage einer Anwendung beschrieben. Weitere Informationen finden Sie unter [Generieren neuer Projekte: Under the Hood, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Wenn Visual Studio die ProjectTemplates Ordner durchlaufen werden, alle ZIP-Dateien geöffnet und VSTEMPLATE-Dateien extrahiert. Eine VSTEMPLATE-Datei verwendet die XML-Vorlage einer Anwendung beschrieben. Weitere Informationen finden Sie unter [Generieren neuer Projekte: In die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Die \<ProjectType >-Tag der Projekttyp für die Anwendung bestimmt. Beispielsweise enthält die Datei \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip eine EmptyProject.vstemplate-Datei, die dieses Tag weist:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Generieren neuer Projekte: In die Hintergründe Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

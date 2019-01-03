@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Schließen von Dokumenten'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Schließen von Dokumenten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930222"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Gewusst wie: Programmgesteuertes Schließen von Dokumenten
+# <a name="how-to-programmatically-close-documents"></a>Vorgehensweise: Programmgesteuertes Schließen von Dokumenten
   Sie können das aktive Dokument schließen, oder Sie können ein Dokument angeben, das geschlossen werden soll.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257773"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Programmgesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  

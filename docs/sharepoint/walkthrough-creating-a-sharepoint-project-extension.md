@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekterweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885899"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine Erweiterung für SharePoint-Projekte erstellt werden. Sie können eine projekterweiterung verwenden, zum Reagieren auf Ereignisse auf Projektebene, z. B. wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn ein Eigenschaftswert ändert. Im Gegensatz zu projektelementerweiterungen darf nicht projekterweiterungen einen bestimmten Typ von SharePoint-Projekt zugeordnet sein. Bei der Erstellung einer projekterweiterung lädt die Erweiterung wird in der jede Art von SharePoint-Projekt geöffnet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -205,8 +202,7 @@ ms.locfileid: "51295981"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Projekte](../sharepoint/extending-sharepoint-projects.md)   
- [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Konvertieren Sie zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

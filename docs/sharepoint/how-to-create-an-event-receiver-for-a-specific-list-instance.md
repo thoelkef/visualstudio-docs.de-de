@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818861"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Gewusst wie: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Vorgehensweise: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz
   Ein Ereignisempfänger für Liste Instanz reagiert auf Ereignisse, die in einer beliebigen Instanz von einer Listendefinition auftreten. Auch wenn die ereignisvorlage für den Empfänger nicht die Zielgruppenadressierung von eine bestimmte Listeninstanz aktiviert wird, können Sie einen Ereignisempfänger ändern, der auf einer Listendefinition Reaktion auf Ereignisse in eine bestimmte Listeninstanz begrenzt ist.  
   
  Eine bestimmte Listeninstanz im Ziel die *"Elements.xml"* ersetzen Sie für einen Ereignisempfänger `ListTemplateId` mit `ListUrl` und die URL der Listeninstanz hinzufügen.  
@@ -89,6 +86,5 @@ ms.locfileid: "37118959"
      Beachten Sie, die der Ereignisempfänger nicht auf die neue Ankündigung ausgelöst wird, da der Empfänger konfiguriert ist, um nur auf Ereignisse in der Liste benutzerdefinierten ankündigungslistenerdienst zu reagieren **TestAnnouncements**.  
   
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)   
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)  
-  

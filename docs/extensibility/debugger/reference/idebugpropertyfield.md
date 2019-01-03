@@ -1,9 +1,6 @@
 ---
-title: IDebugPropertyField | Microsoft Docs
-ms.custom: ''
+title: IDebugPropertyField | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyField
@@ -15,38 +12,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b876b19d5242bb90a3d13f255f9245fe14f93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1489e8ef7bf41274806d1d6b1b134b54268457cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874205"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
-Diese Schnittstelle stellt die Funktionen, die es ermöglichen, abrufen und Festlegen einer Eigenschaft.  
+Diese Schnittstelle bietet die Funktionen, die es ermöglichen, abrufen und Festlegen einer Eigenschaft an.  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein Symbol-Anbieter implementiert diese Schnittstelle für das gleiche Objekt, das implementiert die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Diese Schnittstelle ist eine Spezialisierung, die das Konzept der Eigenschaften einer Klasse unterstützt.  
+ Ein symbolanbieter implementiert diese Schnittstelle für das gleiche Objekt, das implementiert die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Diese Schnittstelle ist eine Spezialisierung, die das Konzept der Eigenschaften einer Klasse unterstützt.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus der [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle, wenn die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) -Methode zurückkehrt `FIELD_KIND_PROP`.  
+ Verwenden [QueryInterface](/cpp/atl/queryinterface) dieser Schnittstelle vom Abrufen der [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle, wenn die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) Methodenrückgabe `FIELD_KIND_PROP`.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) und [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstellen, die diese Schnittstelle implementiert, die folgenden Methoden:  
+ Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) und [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstellen, die diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Ruft die Methode ab, die die Eigenschaft abruft.|  
-|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Ruft die Methode ab, die der Eigenschaft festlegt.|  
+|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Ruft die Methode ab, die die Eigenschaft festlegt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Eigenschaft ist ein Konzept von verwaltetem Code und stellt eine Methode, die als eine Variable behandelt wird. Eigenschaften sind in nicht verwalteten C++ nicht vorhanden.  
+ Eine Eigenschaft ist ein Konzept von verwaltetem Code und stellt eine Methode, die als Variable behandelt wird. Eigenschaften sind in nicht verwaltetem C++ nicht vorhanden.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
@@ -56,5 +53,5 @@ IDebugPropertyField : IDebugContainerField
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

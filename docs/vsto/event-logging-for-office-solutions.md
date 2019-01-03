@@ -1,9 +1,6 @@
 ---
 title: Ereignisprotokollierung für Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8064c36b6b0e567f868fee7212560d726bbd3c66
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857052"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Projektmappen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.  
@@ -102,5 +99,3 @@ ms.locfileid: "53647957"
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

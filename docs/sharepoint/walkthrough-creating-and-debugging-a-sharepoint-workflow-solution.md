@@ -1,16 +1,11 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Projektmappe | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen und Debuggen von SharePoint-Workflowlösung | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912989"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine grundlegenden sequenziellen Workflowvorlage erstellen. Der Workflow überprüft eine Eigenschaft eine Bibliothek freigegebener Dokumente, um festzustellen, ob ein Dokument überprüft wurde. Wenn das Dokument überprüft wurde, wird der Workflow abgeschlossen.  
@@ -44,7 +39,7 @@ ms.locfileid: "42626487"
 >   
 >  Darüber hinaus kann Ihrem Computer unterschiedliche Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio Elemente der Benutzeroberfläche in den folgenden Anweisungen angezeigt. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint.  
@@ -127,7 +122,7 @@ ms.locfileid: "42626487"
      Auf dieser Seite können Sie angeben, wenn der Workflow gestartet wird. Standardmäßig startet den Workflow entweder, wenn ein Benutzer er manuell in SharePoint oder die Erstellung eines Elements startet, das der Workflow zugeordnet ist.  
   
 ## <a name="create-workflow-activities"></a>Erstellen von Workflowaktivitäten
- Workflows enthalten eine oder mehrere *Aktivitäten* , die die auszuführende Aktionen darstellen. Verwenden Sie die Workflow-Designer, um Aktivitäten für einen Workflow anzuordnen. In diesem Verfahren fügen wir zwei Aktivitäten an den Workflow: HandleExternalEventActivity "und" OnWorkFlowItemChanged. Diese Aktivitäten überwachen, den Überprüfungsstatus von Dokumenten in der **freigegebene Dokumente** Liste  
+ Workflows enthalten eine oder mehrere *Aktivitäten* , die die auszuführende Aktionen darstellen. Verwenden Sie die Workflow-Designer, um Aktivitäten für einen Workflow anzuordnen. In diesem Verfahren fügen wir zwei Aktivitäten an den Workflow hinzu: HandleExternalEventActivity "und" OnWorkFlowItemChanged ". Diese Aktivitäten überwachen, den Überprüfungsstatus von Dokumenten in der **freigegebene Dokumente** Liste  
   
 #### <a name="to-create-workflow-activities"></a>Zum Erstellen von Workflowaktivitäten  
   
@@ -187,7 +182,7 @@ ms.locfileid: "42626487"
     Boolean workflowPending = true;  
     ```  
   
-2.  Fügen Sie der `Workflow1`-Klasse die folgende Methode hinzu. Diese Methode überprüft den Wert des der `Document Status` Eigenschaft der Liste der Dokumente, um festzustellen, ob das Dokument überprüft wurde. Wenn die `Document Status` -Eigenschaftensatz auf `Review Complete`, und klicken Sie dann die `checkStatus` Methode wird die `workflowPending` Feld **"false"** um anzugeben, dass der Workflow kann jetzt abgeschlossen ist.  
+2.  Fügen Sie der `Workflow1` -Klasse die folgende Methode hinzu. Diese Methode überprüft den Wert des der `Document Status` Eigenschaft der Liste der Dokumente, um festzustellen, ob das Dokument überprüft wurde. Wenn die `Document Status` -Eigenschaftensatz auf `Review Complete`, und klicken Sie dann die `checkStatus` Methode wird die `workflowPending` Feld **"false"** um anzugeben, dass der Workflow kann jetzt abgeschlossen ist.  
   
     ```vb  
     Private Sub checkStatus()  
@@ -296,4 +291,3 @@ ms.locfileid: "42626487"
  [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

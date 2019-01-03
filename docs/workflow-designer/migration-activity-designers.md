@@ -1,25 +1,24 @@
 ---
-title: Workflow-Designer - Migrationsaktivitätsdesigner
+title: Workflow-Designer - Migrations-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7f118f340ab91359f26ee03c3900d734720c128
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879678"
 ---
 # <a name="migration-activity-designers"></a>Migrationsaktivitätsdesigner
 
-Die migrationsaktivitätsdesigner werden verwendet, um Workflow 3.0/3.5-Aktivitäten aus einem Workflow, die .NET Framework 4 abzielt aufzurufen. Die Themen in diesem Abschnitt enthalten Anleitungen zum Workflow-Designer-Aktivitäts-Designer zu verwenden.
+Die migrationsaktivitätsdesigner werden verwendet, aufzurufende Workflow 3.0-bzw. 3.5-Aktivitäten aus einem Workflow, die für .NET Framework 4. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivitäts-Designer.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
  Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.

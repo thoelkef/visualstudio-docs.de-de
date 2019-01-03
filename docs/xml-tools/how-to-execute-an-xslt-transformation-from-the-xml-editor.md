@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Ausführen einer XSLT-Transformation im XML-Editor'
+title: 'Vorgehensweise: Ausführen einer XSLT-Transformation im XML-Editor'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: gewarren
@@ -10,20 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 3fccad81c2990a93e78f329e2ee4af070d6e5c97
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866516"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Vorgehensweise: Ausführen eine XSLT-Transformation im XML-Editor
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Vorgehensweise: Ausführen einer XSLT-Transformations im XML-Editor
 
 Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, die Transformation ausführen und die Ausgabe anzeigen. Die aus der XSLT-Transformation resultierende Ausgabe wird in einem neuen Dokumentfenster angezeigt.
 
-Die **Ausgabe** Eigenschaft gibt den Dateinamen für die Ausgabe. Wenn die **Ausgabe** Eigenschaft leer ist, wird ein Dateiname in einem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf der `xsl:output` -Element im Stylesheet and kann sein. *XML*,. *TXT* oder. *Htm*.
+Die **Ausgabe** Eigenschaft gibt den Dateinamen für die Ausgabe an. Wenn die **Ausgabe** -Eigenschaft leer ist, ein Dateinamen in einem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf der `xsl:output` -Element im Stylesheet and kann. *XML*,. *TXT* oder. *Htm*.
 
-Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *HTML* -Erweiterung der XSLT-Ausgabe wird in der Vorschau angezeigten mit [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Wenn z. B. die Erweiterung der Ausgabedatei lautet. *Xml*, verwendet Visual Studio der XML-Editor.
+Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *HTML* Erweiterung der XSLT-Ausgabe wird in der Vorschau angezeigten mit [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Wenn beispielsweise die Dateierweiterung ist. *Xml*, verwendet der XML-Editor von Visual Studio.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>So führen Sie eine XSLT-Transformation in einem XML-Dokument aus
 
@@ -35,9 +34,9 @@ Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *H
 
          - oder - 
 
-    -   Fügen Sie dem XSLT-Stylesheet mithilfe der **Eigenschaften** Fenster. Im Dokument **Fenster "Eigenschaften"**, klicken Sie auf die **Durchsuchen** Schaltfläche für die **Stylesheet** Feld Wählen Sie die XSLT-Stylesheet, und klicken Sie auf **öffnen**.
+    -   Fügen Sie dem XSLT-Stylesheet mithilfe der **Eigenschaften** Fenster. Im Dokument **Fenster "Eigenschaften"**, klicken Sie auf die **Durchsuchen** Schaltfläche der **Stylesheet** Feld, wählen Sie das XSLT-Stylesheet, und klicken Sie auf **öffnen**.
 
-3.  Klicken Sie auf die **ShowXSL Ausgabe** Schaltfläche auf der **XML-Editor** Symbolleiste.
+3.  Klicken Sie auf die **ShowXSL Ausgabe** Schaltfläche der **XML-Editor** Symbolleiste.
 
     > [!NOTE]
     > Wenn dem XML-Dokument kein Stylesheet zugeordnet ist, werden Sie in einem Dialogfeld aufgefordert, das zu verwendende Stylesheet bereitzustellen.
@@ -48,12 +47,12 @@ Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *H
 
 1.  Öffnen Sie ein XSLT-Stylesheet im XML-Editor.
 
-2.  Geben Sie ein XML-Dokument in der **Eingabe** Feld des Dokuments **Eigenschaften** Fenster.
+2.  Geben Sie eine XML-Dokument in der **Eingabe** Feld des Dokuments **Eigenschaften** Fenster.
 
     > [!NOTE]
-    > Das XML-Dokument ist das für die Transformation verwendete Eingabedokument. Wenn ein Dokument nicht angegeben wird, wenn die XSLT-Transformation gestartet wird, die **Datei öffnen** Dialogfeld wird angezeigt, und Sie können nun ein Dokument angeben.
+    > Das XML-Dokument ist das für die Transformation verwendete Eingabedokument. Wenn ein Dokument nicht angegeben wird, wenn die XSLT-Transformation gestartet wird, die **Datei öffnen** Dialogfeld wird angezeigt, und Sie können ein Dokument zu diesem Zeitpunkt angeben.
 
-3.  Klicken Sie auf die **ShowXSLT Ausgabe** Schaltfläche auf der **XML-Editor** Symbolleiste.
+3.  Klicken Sie auf die **ShowXSLT Ausgabe** Schaltfläche der **XML-Editor** Symbolleiste.
 
      Die aus der XSLT-Transformation resultierende Ausgabe wird in einem neuen Dokumentfenster angezeigt.
 
@@ -61,9 +60,9 @@ Wenn die **Ausgabe** Eigenschaft gibt einen Dateinamen mit einer. *Htm* oder. *H
 
 1.  Geben Sie einen Namen in der **Ausgabe** Feld des Dokuments **Eigenschaften** Fenster.
 
-2.  Klicken Sie auf die **ShowXSLT Ausgabe** Schaltfläche auf der **XML-Editor** Symbolleiste.
+2.  Klicken Sie auf die **ShowXSLT Ausgabe** Schaltfläche der **XML-Editor** Symbolleiste.
 
-     Aus der XSLT-Transformation resultierende Ausgabe wird in einem neuen Dokumentfenster angezeigt, und im Ausgabefenster verwendete Editor hängt von der Erweiterung Ihrer **Ausgabe** -Dokumenteigenschaft.
+     Die resultierende Ausgabe aus der XSLT-Transformation in einem neuen Dokumentfenster angezeigt wird, und im Ausgabefenster verwendete Editor hängt von der Erweiterungs der Ihre **Ausgabe** -Dokumenteigenschaft.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859840"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten
   Es gibt verschiedene Möglichkeiten zum Erstellen von Ereignishandlern in Visual Basic und c#. In der Entwurfsansicht können Sie den Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder Ereignisse im Bereich von der **Eigenschaften** Fenster aus, um Handler für alle Ereignisse für das Steuerelement zu erstellen. Wenn Sie in der Codeansicht sind, kann nicht beliebig So wechseln Sie zur Entwurfsansicht, um einen Ereignishandler zu erstellen.  
@@ -57,5 +54,3 @@ ms.locfileid: "53648599"
  [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)  
-  
-  
