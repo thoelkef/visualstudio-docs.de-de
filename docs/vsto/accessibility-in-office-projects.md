@@ -1,8 +1,6 @@
 ---
 title: Barrierefreiheit in Office-Projekten
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833325"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
-  Microsoft Visual Studio und Microsoft Office enthalten zahlreiche Funktionen zur Barrierefreiheit, mit denen Sie benutzerdefinierte Lösungen zu erstellen, die Zugriff auf standard-Anforderungen erfüllen. Microsoft veröffentlicht Richtlinien für den Zugriff auf im Web. Weitere Informationen finden Sie unter den [-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- In den meisten Fällen erfüllen die Office-Projekten in Visual Studio Accessibility Standards oder macht Eigenschaften, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Es gibt jedoch einige Features, die Zugriff auf eingeschränkte haben.
+Microsoft Visual Studio und Microsoft Office enthalten zahlreiche Funktionen zur Barrierefreiheit, mit denen Sie benutzerdefinierte Lösungen zu erstellen, die Zugriff auf standard-Anforderungen erfüllen. Microsoft veröffentlicht Richtlinien für den Zugriff auf im Web. Weitere Informationen finden Sie unter den [-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+In den meisten Fällen erfüllen die Office-Projekten in Visual Studio Accessibility Standards oder macht Eigenschaften, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Es gibt jedoch einige Features, die Zugriff auf eingeschränkte haben.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Barrierefreiheit zur Entwurfszeit
 

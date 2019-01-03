@@ -1,9 +1,6 @@
 ---
 title: Wichtige Änderungen in Visual Studio 2017-Erweiterbarkeit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841949"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -45,13 +42,13 @@ Wir einführen, die VSIX-v3-Format (Version 3) zur Unterstützung der Lightweigh
 
 Designer-Tools für die Erstellung des neuen ist v3 VSIX-Manifestformat jetzt verfügbar in Visual Studio 2017. Finden Sie im Begleitdokument [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) Einzelheiten der Verwendung der Designer-Tools oder manuelle Updates in das Projekt und das Manifest in VSIX v3-Erweiterungen zu entwickeln.
 
-## <a name="change-visual-studio-user-data-path"></a>Ändern: Visual Studio-benutzerdatenpfad
+## <a name="change-visual-studio-user-data-path"></a>Ändern Sie: Visual Studio-benutzerdatenpfad
 
 Bisher konnte nur eine Installation der einzelnen Hauptversionen von Visual Studio auf jedem Computer vorhanden sind. Zur Unterstützung von Seite-an-Seite-Installationen von Visual Studio 2017 möglicherweise mehrere benutzerdatenpfade für Visual Studio auf dem Computer des Benutzers vorhanden.
 
 Im Visual Studio-Prozess ausgeführten Code sollte aktualisiert werden, um dem Visual Studio-Einstellungen-Manager zu verwenden. Code außerhalb von Visual Studio-Prozesses ausgeführt werden kann den Benutzerpfad Suchen einer bestimmten Visual Studio-Installation [anhand der Anleitungen hier](locating-visual-studio.md).
 
-## <a name="change-global-assembly-cache-gac"></a>Ändern: Globaler Assemblycache (GAC)
+## <a name="change-global-assembly-cache-gac"></a>Ändern Sie: Globaler Assemblycache (GAC)
 
 Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblycache installiert. Die folgenden Änderungen wurden vorgenommen, sodass in Visual Studio-Prozess ausgeführte Code weiterhin erforderlichen Assemblys zur Laufzeit finden kann.
 
@@ -84,7 +81,7 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 * Wenn Ihre Erweiterung außerhalb der Visual Studio-Prozess ausgeführt wird:
   * Sehen Sie die für Visual Studio Core-Assemblys unter <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*mithilfe von Konfiguration-Datei oder Assembly-Auflösung.
 
-## <a name="change-reduce-registry-impact"></a>Änderung: Reduzieren der Auswirkungen der Registrierung
+## <a name="change-reduce-registry-impact"></a>Ändern Sie: Reduzieren der Auswirkungen der Registrierung
 
 ### <a name="global-com-registration"></a>Globale COM-Registrierung
 
@@ -95,9 +92,9 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 ### <a name="visual-studio-registry"></a>Visual Studio-Registrierung
 
 * Visual Studio installiert zuvor viele Registrierungsschlüssel des Systems **HKEY_LOCAL_MACHINE** und **HKEY_CURRENT_USER** Strukturen unter einem Visual Studio-spezifischer Schlüssel:
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Registrierungsschlüssel, die von MSI-Installationsprogramme und pro Computer Erweiterungen erstellt werden.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Registrierungsschlüssel, die von Visual Studio zum Speichern der benutzerspezifischen Einstellungen erstellt.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: eine Kopie von Visual Studio-HKLM-Taste oben, und die Registrierungsschlüssel vom zusammengeführt *PKGDEF* Dateien von Erweiterungen.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel von MSI-Installationsprogramme und pro Computer Erweiterungen erstellt werden.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel erstellt, die von Visual Studio benutzerspezifische Einstellungen speichern.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: Eine Kopie von Visual Studio-HKLM-Taste oben, und die Registrierungsschlüssel vom zusammengeführt *PKGDEF* Dateien von Erweiterungen.
 * Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) Funktion zum Speichern von Registrierungsschlüssel in einer privaten Binärdatei unter *[VSAPPDATA]\privateregistry.bin*. Nur eine sehr kleine Anzahl von Visual Studio-spezifischer Schlüssel bleiben in der systemregistrierung.
 
 * Vorhandenem Code innerhalb des Visual Studio ausgeführt wird nicht beeinträchtigt. Visual Studio werden alle Registrierungsvorgängen unter dem HKCU Visual Studio-spezifischer Schlüssel in die private Registrierung umgeleitet werden. Lesen und Schreiben in andere Registrierungsspeicherorte werden weiterhin die Registrierung des Systems verwenden.

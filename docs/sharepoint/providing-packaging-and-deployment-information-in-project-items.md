@@ -1,17 +1,12 @@
 ---
 title: Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
 - VS.SharePointTools.Project.FeatureProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -29,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec29871cc6e5062f2d44fb8938872b5f0531f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843020"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Angaben Sie zu packen und-Bereitstellen in Projektelementen
   Alle SharePoint-Projektelemente in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, die Sie verwenden können, um zusätzliche Daten bereitstellen, wenn das Projekt in SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:  
@@ -84,14 +79,14 @@ ms.locfileid: "49893298"
   
  Projektausgabeverweise sind in der Regel Assemblys, aber in einigen Fällen (z. B. Silverlight-Projekte) andere Dateitypen werden können.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Projektausgabereferenz](../sharepoint/how-to-add-a-project-output-reference.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Projektausgabereferenz](../sharepoint/how-to-add-a-project-output-reference.md).  
   
 ## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement
- SharePoint bietet einen Sicherheitsmechanismus, namens Einträge für sicheres Steuerelement, um den Zugriff von nicht vertrauenswürdigen Benutzern bestimmte Steuerelemente zu beschränken. Standardmäßig ermöglicht SharePoint nicht vertrauenswürdige Benutzer zum Hochladen und Erstellen von ASPX-Seiten auf dem SharePoint-Server. Um zu verhindern, dass diese Benutzer unsicheren Code ASPX-Seiten hinzufügen, schränkt SharePoint den Zugriff auf *sichere Steuerelemente*. Sichere Steuerelemente werden ASPX-Steuerelementen und Webparts, die als sicher gekennzeichnet, und, die von einem Benutzer auf Ihrer Website verwendet werden kann. Weitere Informationen finden Sie unter [Schritt 4: Hinzufügen des Webparts, die Liste mit sicheren Steuerelementen](http://go.microsoft.com/fwlink/?LinkID=171014).  
+ SharePoint bietet einen Sicherheitsmechanismus, namens Einträge für sicheres Steuerelement, um den Zugriff von nicht vertrauenswürdigen Benutzern bestimmte Steuerelemente zu beschränken. Standardmäßig ermöglicht SharePoint nicht vertrauenswürdige Benutzer zum Hochladen und Erstellen von ASPX-Seiten auf dem SharePoint-Server. Um zu verhindern, dass diese Benutzer unsicheren Code ASPX-Seiten hinzufügen, schränkt SharePoint den Zugriff auf *sichere Steuerelemente*. Sichere Steuerelemente werden ASPX-Steuerelementen und Webparts, die als sicher gekennzeichnet, und, die von einem Benutzer auf Ihrer Website verwendet werden kann. Weitere Informationen finden Sie unter [Schritt 4: Hinzufügen des Webparts, die Liste der sicheren Steuerelemente](http://go.microsoft.com/fwlink/?LinkID=171014).  
   
- Jede SharePoint-Projektelement in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine Eigenschaft namens **Einträge für sicheres Steuerelement** , zwei boolesche untergeordnete Eigenschaften besitzt: **sicher** und **sicher für Skript**. Die sichere Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer ein Steuerelement zugreifen können. Die sicher für Script-Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer anzeigen und Ändern der Eigenschaften eines Steuerelements können.  
+ Jede SharePoint-Projektelement in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine Eigenschaft namens **Einträge für sicheres Steuerelement** , zwei boolesche untergeordnete Eigenschaften besitzt: **Sichere** und **sicher vor Skripteinschleusung**. Die sichere Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer ein Steuerelement zugreifen können. Die sicher für Script-Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer anzeigen und Ändern der Eigenschaften eines Steuerelements können.  
   
- Einträge für sicheres Steuerelement werden auf Assemblybasis verwiesen. Sie Einträge für sicheres Steuerelement eines Projekts Assembly eingegeben werden, in des Projektelements hinzufügen **Einträge für sicheres Steuerelement** Eigenschaft. Sie können auch Einträge für sicheres Steuerelement hinzufügen, um der Assembly eines Projekts über die **erweitert** Registerkarte die **-Paket-Designer** Wenn Sie das Paket eine zusätzliche Assembly hinzufügen. Weitere Informationen finden Sie unter [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md) oder [Registrieren einer Web Part-Assembly als sicheres Steuerelement](http://go.microsoft.com/fwlink/?LinkID=171013).  
+ Einträge für sicheres Steuerelement werden auf Assemblybasis verwiesen. Sie Einträge für sicheres Steuerelement eines Projekts Assembly eingegeben werden, in des Projektelements hinzufügen **Einträge für sicheres Steuerelement** Eigenschaft. Sie können auch Einträge für sicheres Steuerelement hinzufügen, um der Assembly eines Projekts über die **erweitert** Registerkarte die **-Paket-Designer** Wenn Sie das Paket eine zusätzliche Assembly hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md) oder [Registrieren einer Web Part-Assembly als sicheres Steuerelement](http://go.microsoft.com/fwlink/?LinkID=171013).  
   
 ### <a name="xml-entries-for-safe-controls"></a>XML-Einträge für sichere Steuerelemente
  Wenn Sie einen Eintrag für sicheres Steuerelement auf ein Projektelement oder der Assembly des Projekts hinzufügen, wird ein Verweis in das Paketmanifest im folgenden Format geschrieben:  

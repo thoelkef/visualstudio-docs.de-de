@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Abrufen eines Diensts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990028"
 ---
-# <a name="how-to-get-a-service"></a>Gewusst wie: Abrufen eines Diensts
+# <a name="how-to-get-a-service"></a>Vorgehensweise: Abrufen eines Diensts
 Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu erhalten. Im Allgemeinen bietet Visual Studio-Dienst eine oder mehrere Schnittstellen, die Sie verwenden können. Sie können die meisten Dienste aus einem VSPackage abrufen.  
   
  Alle VSPackage, das von abgeleitet ist <xref:Microsoft.VisualStudio.Shell.Package> , richtig positioniert, und lassen sich für einen globalen Dienst. Da die `Package` -Klasse implementiert <xref:System.IServiceProvider>, alle VSPackage, das von abgeleitet ist `Package` ist auch ein Dienstanbieter.  
@@ -53,7 +50,7 @@ Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu 
   
  Die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode beruht auf einer zwischengespeicherten Dienstanbieter, der zum ersten Mal initialisiert wird jedem VSPackage abgeleitet <xref:Microsoft.VisualStudio.Shell.Package> positioniert ist.  
   
- Da der VSPackage-Konstruktor aufgerufen wird, bevor das VSPackage platziert wird, sind globale Dienste in der Regel nicht von innerhalb des VSPackage-Konstruktors verfügbar. Finden Sie unter [wie: Problembehandlung bei Services](../extensibility/how-to-troubleshoot-services.md) für dieses Problem zu umgehen.  
+ Da der VSPackage-Konstruktor aufgerufen wird, bevor das VSPackage platziert wird, sind globale Dienste in der Regel nicht von innerhalb des VSPackage-Konstruktors verfügbar. Weitere Informationen finden Sie unter [How to: Problembehandlung bei Services](../extensibility/how-to-troubleshoot-services.md) für dieses Problem zu umgehen.  
   
  Hier ist ein Beispiel für die Möglichkeit, einen Dienst in einem Toolfenster oder andere nicht-VSPackage-Element abzurufen.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Hier ist zum Abrufen eines Diensts vom DTE-Objekt.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Bereitstellen ein Diensts](../extensibility/how-to-provide-a-service.md)   
+ [Vorgehensweise: Geben Sie einen Dienst](../extensibility/how-to-provide-a-service.md)   
  [Verwenden und Dienste bereitstellen](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)

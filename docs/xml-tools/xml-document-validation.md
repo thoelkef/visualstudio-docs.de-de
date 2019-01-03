@@ -2,7 +2,6 @@
 title: Validierung von XML-Dokumenten in XML-Editor
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899729"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
 
@@ -23,7 +22,7 @@ Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeb
 
  Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
 
--   Von dem Dateinamen angegeben, der **Schemas** Feld des Dokuments **Eigenschaften** Fenster.
+-   Vom Dateinamen angegeben, der **Schemas** Feld des Dokuments **Eigenschaften** Fenster.
 
 -   Aus einem Inlineschema oder einer DTD.
 
@@ -40,10 +39,10 @@ Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werd
 -   In einem Schema im Verzeichnis des Schemacache.
 
 ## <a name="xslt-files"></a>XSLT-Dateien
- Beim Bearbeiten einer XSLT-Datei, die *xslt.xsd* -Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.
+ Beim Bearbeiten einer XSLT-Datei, die *xslt.xsd* Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.
 
 ## <a name="xml-schema-xsd-files"></a>XML-Schemadateien (XSD)
- Beim Bearbeiten einer XML-Schemadatei, die *xsdschema.xsd* -Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Alle Kompilierungsfehler werden als rote wellenförmige Unterstreichungen angezeigt.
+ Beim Bearbeiten von XML-Schemadatei, die *xsdschema.xsd* Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Alle Kompilierungsfehler werden als rote wellenförmige Unterstreichungen angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

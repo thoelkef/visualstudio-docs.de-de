@@ -1,9 +1,6 @@
 ---
 title: Erstellen einer Assoziation zwischen Entitäten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842978"
 ---
 # <a name="create-an-association-between-entities"></a>Erstellen einer Assoziation zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Modell Business Data Connectivity (BDC) durch das Erstellen von Zuordnungen definieren. Visual Studio generiert die Methoden, die Consumern des Modells mit Informationen über jede Zuordnung bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen zum Anzeigen von datenbeziehungen in einer Benutzeroberfläche (UI) verwendet werden.  
@@ -81,6 +78,4 @@ ms.locfileid: "36325462"
   
 ## <a name="see-also"></a>Siehe auch
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)  

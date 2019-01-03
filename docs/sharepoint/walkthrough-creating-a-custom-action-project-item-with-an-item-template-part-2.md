@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2 | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Aktion das Projektelement, mit einer Elementvorlage, Teil 2 | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913935"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projektelements definiert und sie eine Elementvorlage in Visual Studio ordnen, möchten Sie auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, zum Sammeln von Informationen von Benutzern, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
   
- In dieser exemplarischen Vorgehensweise fügen Sie einen Assistenten, die benutzerdefinierte Aktion-Projektelement, das gezeigt wird [Exemplarische Vorgehensweise: erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Wenn ein Benutzer einem SharePoint-Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, wird der Assistent sammelt Informationen zu der benutzerdefinierten Aktion (z. B. den Speicherort und die URL, zu der navigiert werden soll, wenn ein Endbenutzer wählt) und fügt diese Informationen, um die *"Elements.xml"* -Datei in das neue Projektelement.  
+ In dieser exemplarischen Vorgehensweise fügen Sie einen Assistenten, die benutzerdefinierte Aktion-Projektelement, das gezeigt wird [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Wenn ein Benutzer einem SharePoint-Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, wird der Assistent sammelt Informationen zu der benutzerdefinierten Aktion (z. B. den Speicherort und die URL, zu der navigiert werden soll, wenn ein Endbenutzer wählt) und fügt diese Informationen, um die *"Elements.xml"* -Datei in das neue Projektelement.  
   
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296241"
 >  Sie können ein Beispiel von [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , die zeigt, wie benutzerdefinierte Aktivitäten für einen Workflow zu erstellen.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
- Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zunächst die Projektmappe "CustomActionProjectItem" erstellen, gehen Sie [Exemplarische Vorgehensweise: erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zunächst die Projektmappe "CustomActionProjectItem" erstellen, gehen Sie [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer außerdem die folgenden Komponenten benötigt:  
   
@@ -55,7 +52,7 @@ ms.locfileid: "51296241"
 - Benutzerdefinierte Aktionen in SharePoint. Weitere Informationen finden Sie unter [benutzerdefinierte Aktion](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Erstellen Sie die Assistenten-Projekt
- Um diese exemplarische Vorgehensweise abzuschließen, müssen Sie die Projektmappe "CustomActionProjectItem", die Sie in erstellt ein Projekt hinzufügen [Exemplarische Vorgehensweise: erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
+ Um diese exemplarische Vorgehensweise abzuschließen, müssen Sie die Projektmappe "CustomActionProjectItem", die Sie in erstellt ein Projekt hinzufügen [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
   
 #### <a name="to-create-the-wizard-project"></a>Die Assistenten-Projekt erstellen  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296241"
   
 2.  In der **Projekt-Designer**, stellen Sie sicher, dass das Zielframework auf .NET Framework 4.5 festgelegt ist.  
   
-     Für Visual c#-Projekten können Sie diesen Wert festlegen, auf die **Anwendung** Registerkarte. Für Visual Basic-Projekten können Sie diesen Wert festlegen, auf die **Kompilieren** Registerkarte. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Für Visual c#-Projekten können Sie diesen Wert festlegen, auf die **Anwendung** Registerkarte. Für Visual Basic-Projekten können Sie diesen Wert festlegen, auf die **Kompilieren** Registerkarte. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  In der **ItemTemplateWizard** fügen eine **Fenster (WPF)** Element dem Projekt aus, und nennen Sie das Element **WizardWindow**.  
   
@@ -351,4 +348,3 @@ ms.locfileid: "51296241"
  [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Standardspeicherorte für die benutzerdefinierte Aktion und IDs](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

@@ -1,9 +1,6 @@
 ---
-title: Language Service unterstützt das Debuggen | Microsoft Docs
-ms.custom: ''
+title: Sprachdienstunterstützung für das Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger, language support
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c044f6ffc3f2cdf0749f0192f4b8fa458b00cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1963dad4861ad9026a683c695cf25a6becff7571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841357"
 ---
-# <a name="language-service-support-for-debugging"></a>Language Service unterstützt das Debuggen
-Geben Sie ein Sprachdienst kann Funktionen, die einen Debugger über unterstützen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> Schnittstelle. Zu diesen Funktionen gehören Haltepunkte überprüfen und die Angabe einer Liste mit Ausdrücken, die die **"Auto"** Fenster.  
+# <a name="language-service-support-for-debugging"></a>Sprachdienstunterstützung für das Debuggen
+Ein Sprachdienst bieten Funktionen, die einen Debugger über unterstützen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> Schnittstelle. Zu diesen Funktionen gehören, Überprüfen von Haltepunkten und die Angabe einer Liste mit Ausdrücken, die die **"Auto"** Fenster.  
   
- Allerdings müssen Sie eine ausdrucksauswertung So debuggen Sie Ihre Sprache haben. Die ausdrucksauswertung ist verantwortlich für das Auswerten von Ausdrücken, um Werte während des Debuggens zu erzeugen. Informationen zu CLR-ausdrucksauswertungen implementieren finden Sie unter:  
+ Allerdings benötigen Sie eine ausdrucksauswertung, um Ihre Sprache zu debuggen. Die ausdrucksauswertung ist verantwortlich für das Auswerten von Ausdrücken, um Werte während des Debuggens zu erzeugen. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter:  
   
 -   [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
--   [Verwaltete Ausdrucksauswertung (Beispiel)](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
+-   [Beispiele für verwaltete Ausdrucksauswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
 ## <a name="compiler-output"></a>Kompilierungsausgabe  
- Der Typ des Compilers bestimmt, was Sie tun, um das Debuggen für Ihre Sprache implementieren müssen. Wenn der Compiler das Betriebssystem Windows betrifft und eine PDB-Datei schreibt, können Sie Programme debuggen, mit dem systemeigenen Code Debugmodul, die in Visual Studio integriert ist. Wenn der Compiler Microsoft intermediate Language (MSIL) erzeugt, können Sie Programme debuggen, durch den verwalteten Code Debugmodul, das auch in Visual Studio integriert ist. Wenn der Compiler eine proprietäre Betriebssystem oder einer anderen Laufzeitumgebung ausgerichtet ist, müssen Sie eigene Debugmodul zu schreiben.  
+ Der Typ der Compiler bestimmt, was Sie tun, um das Debuggen für Ihre Sprache zu implementieren. Wenn Ihre Compiler das Windows-Betriebssystem betrifft und eine PDB-Datei schreibt, können Sie Programme debuggen, mit dem systemeigenen Code Debuggen-Engine, die in Visual Studio integriert ist. Wenn Ihr Compiler Microsoft intermediate Language (MSIL) erzeugt, können Sie Programme debuggen, mit den verwalteten Code Debuggen-Engine, die auch in Visual Studio integriert ist. Wenn der Compiler ein proprietäres Operating System oder eine andere Runtime-Umgebung ausgerichtet ist, müssen Sie Ihre eigenen Debug-Engine zu schreiben.  
   
- Weitere Informationen zum Debuggen für Ihre Sprache implementieren, finden Sie unter [Einstieg](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) in Visual Studio Debugging-SDK.
+ Weitere Informationen zum Implementieren von Debuggen, die für Ihre Sprache finden Sie unter [Einstieg](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) in Visual Studio Debugging SDK.

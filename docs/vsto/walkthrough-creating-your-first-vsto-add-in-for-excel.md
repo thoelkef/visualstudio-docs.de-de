@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831887"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel
   Diese exemplarische Vorgehensweise zur Einführung veranschaulicht, wie Sie ein Add-In auf Anwendungsebene für Microsoft Office Excel erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Arbeitsmappen geöffnet sind.  
@@ -121,15 +118,15 @@ ms.locfileid: "49949902"
 ## <a name="next-steps"></a>Nächste Schritte  
  Nachdem Sie nun ein einfaches VSTO-Add-In für Excel erstellt haben, können Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins erfahren:  
   
--   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins ausführen können: [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins ausführen können: [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 -   Programmieraufgaben, die für Excel-VSTO-Add-ins spezifisch sind: [Excel-Projektmappen](../vsto/excel-solutions.md).  
   
--   Mit dem Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
+-   Verwenden das Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
   
--   Anpassen der Benutzeroberfläche (UI) von Excel, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
+-   Anpassen von der Benutzeroberfläche (UI) von Excel, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
   
--   Erstellen und Debuggen von VSTO-Add-ins für Excel: [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
+-   Erstellen und Debuggen von VSTO-Add-ins für Excel: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
   
 -   Bereitstellen von VSTO-Add-ins für Excel: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
@@ -142,5 +139,3 @@ ms.locfileid: "49949902"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
-  
-  

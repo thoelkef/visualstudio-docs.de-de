@@ -1,9 +1,6 @@
 ---
 title: Anzeigen von Dateien öffnen mit-Befehl mit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open With command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6983e9ee7b7cc88efb4870ab0836b856621aeeee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 5ba2aa9ad9a80a820a1ab8311280c3bf2dedc476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820250"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Anzeigen von Dateien mithilfe des Befehls Öffnen mit
 Ein Projekt lassen die IDE zum Anzeigen der **Öffnen mit** Dialogfeld. Diese Anforderung fordert den Benutzer zum Öffnen einer Datei, die eine Auswahl von standard-Editoren. Die folgenden Schritte beschreiben, diesen Prozess:  
@@ -37,4 +34,4 @@ Ein Projekt lassen die IDE zum Anzeigen der **Öffnen mit** Dialogfeld. Diese An
 ## <a name="see-also"></a>Siehe auch  
  [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Anzeigen von Dateien mithilfe des Befehls Öffnen von Dateien](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Gewusst wie: Öffnen Sie die standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+ [Vorgehensweise: Open-standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

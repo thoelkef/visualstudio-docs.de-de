@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831562"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Gewusst wie: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Vorgehensweise: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren
   Sie können Kommentare in Microsoft Office Excel-Arbeitsblättern programmgesteuert anzeigen und ausblenden.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,7 +41,5 @@ ms.locfileid: "35257685"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [Vorgehensweise: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

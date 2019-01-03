@@ -1,9 +1,6 @@
 ---
 title: 'Prüfliste: Erstellen eines Legacysprachdiensts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821113"
 ---
-# <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen einer legacysprachdiensten
+# <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen Sie einen Dienst der legacysprache
 Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müssen zum Erstellen eines Sprachdiensts für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Integrieren Sie Ihren Sprachdienst in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in die [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-to-create-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  
@@ -112,7 +109,7 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
 -   Gliedern  
   
-     Es gibt mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **reduzieren auf Definitionen** Befehl, editorgesteuert Gliederungsbereiche bereitzustellen oder Client gesteuerter Regionen unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem älteren Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+     Es gibt mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **reduzieren auf Definitionen** Befehl, editorgesteuert Gliederungsbereiche bereitzustellen oder Client gesteuerter Regionen unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie die Unterstützung für erweiterten Gliederungen in einem älteren Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 -   Language-Service-Registrierung  
   

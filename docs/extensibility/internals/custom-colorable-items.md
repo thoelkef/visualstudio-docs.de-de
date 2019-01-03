@@ -1,9 +1,6 @@
 ---
 title: Benutzerdefinierte kolorierbare Elemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989749"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte kolorierbare Elemente
 Sie können die Liste der Typen überschreiben, durch die Implementierung der benutzerdefinierten kolorierbaren Elemente als Teil Ihrer Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.  
@@ -72,4 +69,4 @@ Sie können die Liste der Typen überschreiben, durch die Implementierung der be
  [Syntaxfarben in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Syntaxfarben in einem legacysprachdiensten](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Gewusst wie: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

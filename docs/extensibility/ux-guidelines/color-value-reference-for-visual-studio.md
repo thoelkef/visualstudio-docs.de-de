@@ -1,6 +1,6 @@
 ---
 title: Farbwertreferenz
-description: 'Referenz: Hex-Codes zum Erstellen von neuer farbtoken für Visual Studio'
+description: 'Referenz: Hexadezimalcode für das neue Visual Studio-farbtoken erstellen'
 keywords: Farbe, hex.-Code, Hue, Design-Benutzeroberfläche, Designs
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870059"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertreferenz für Visual Studio
 
@@ -98,7 +96,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 | Vordergrund: Wenn darauf gezeigt wird | ![#FF1E1E1E Farbmuster](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E-Muster")<br />`#FF1E1E1E` | ![#FFF1F1F1 Farbmuster](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1-Muster")<br />`#FFF1F1F1` | ![#FF1E1E1E Farbmuster](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E-Muster")<br />`#FF1E1E1E` | ![HighlightText Farbmuster](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 | Hintergrund | ![#FFEEEEF2 Farbmuster](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2-Muster")<br />`#FFEEEEF2` | ![#FF292929 Farbmuster](../../extensibility/ux-guidelines/media/292929.png "#FF292929-Muster")<br />`#FF292929` | ![#FFEEEEF2 Farbmuster](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2-Muster")<br />`#FFEEEEF2` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
 | Hintergrund: Wenn darauf gezeigt wird | ![#FFC9DEF5 Farbmuster](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5-Muster")<br />`#FFC9DEF5` | ![#FF3E3E40 Farbmuster](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40-Muster")<br />`#FF3E3E40` | ![#FFFFFCF4 Farbmuster](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4-Muster")<br />`#FFFFFCF4` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
-| Rahmen | Keiner | Keiner | Keiner | Keiner |
+| Rahmen | Keine | Keiner | Keiner | Keine |
 | Rahmen: Wenn darauf gezeigt wird | ![#FFC9DEF5 Farbmuster](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5-Muster")<br />`#FFC9DEF5` | ![#FF3E3E40 Farbmuster](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40-Muster")<br />`#FF3E3E40` | ![#FFE5C365 Farbmuster](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365-Muster")<br />`#FFE5C365` | ![WindowFrame Farbmuster](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame-Muster")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Kategoriegruppe
@@ -172,7 +170,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 > [!NOTE]
 > **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
-### <a name="content"></a>Inhalt
+### <a name="content"></a>Content
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |

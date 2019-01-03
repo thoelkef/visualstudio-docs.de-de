@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Gliedern | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827522"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von definiert die Arten der Textbereiche, die Sie erweitern oder reduzieren möchten. Sie können Regionen im Kontext von einem Sprachdienst zu definieren oder definieren eigene Erweiterung und Inhalt Dateinamentyp und gelten von der Region-Definition für nur diesen Typ, oder wenden die Definitionen für die Region auf einem vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarische Vorgehensweise veranschaulicht das Definieren und Anzeigen von Gliederungsbereiche.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen Sie ein Projekt Managed Extensibility Framework (MEF)  
@@ -135,4 +132,4 @@ Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von defini
 4.  Es sollte ein Gliederungsbereich, der sowohl eckige Klammern enthält. Sie sollten das Minuszeichen links neben der öffnenden Klammer zum Reduzieren des Gliederungsbereichs klicken können. Wenn der Bereich reduziert werden, wird das Symbol mit den Auslassungszeichen (*...* ) sollte angezeigt werden, auf der linken Seite des reduzierten Bereich, und ein Popup mit dem Text **auf Text zeigen** sollte angezeigt werden, wenn Sie den Mauszeiger über die Schaltfläche bewegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

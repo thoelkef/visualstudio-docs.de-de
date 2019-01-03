@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Randglyphe | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851351"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Exemplarische Vorgehensweise: Erstellen einer randglyphe
 Sie können die Darstellung der Editor Ränder anpassen, mithilfe von benutzerdefinierten Editor-Erweiterungen. In dieser exemplarischen Vorgehensweise legt ein benutzerdefiniertes Symbol auf der Indikatorrand, wenn das Wort "Todo" in einem Codekommentar angezeigt wird.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts  

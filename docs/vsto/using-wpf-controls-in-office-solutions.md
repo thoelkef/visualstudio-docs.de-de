@@ -1,9 +1,6 @@
 ---
 title: Verwenden von WPF-Steuerelemente in Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822274"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Verwenden von WPF-Steuerelemente in Office-Projektmappen
 
@@ -113,7 +110,7 @@ Weitere Informationen zu Fragen über Architektur und Entwurf beim Hosten von WP
 
 Weitere Informationen über das Hinzufügen von WPF-Steuerelementen zu Windows Forms-Steuerelementen und -Formularen in Visual Studio zur Entwurfszeit finden Sie in den folgenden Themen:
 
--   [Exemplarische Vorgehensweise: Erstellen Sie neuen WPF-Inhalts in Windows Forms zur Entwurfszeit](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [Exemplarische Vorgehensweise: Erstellen von neuen WPF-Inhalts in Windows Forms zur Entwurfszeit](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
 -   [Exemplarische Vorgehensweise: Anordnen von WPF-Inhalt in Windows Forms zur Entwurfszeit](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
@@ -126,6 +123,6 @@ Weitere Informationen über das Hinzufügen von WPF-Steuerelementen zu Windows F
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)
 - [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)
-- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Gewusst wie: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Gewusst wie: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

@@ -1,9 +1,6 @@
 ---
-title: IDE-definierte Befehle zum Erweitern von Projektsystemen | Microsoft Docs
-ms.custom: ''
+title: IDE-definierte Befehle zum Erweitern von Projektsystemen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
@@ -14,65 +11,65 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4941f5d842f311f078594ee9a9deef02219ea05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3dc6a30dedebd8a5bc25c53e86aff4d3315ff8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990869"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE-definierte Befehle zum Erweitern von Projektsystemen
-Wenn Sie Projektsystemen erweitern möchten, können Sie Befehle verwenden und Gruppen bereitgestellt, die vom Befehl die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+Beim Erweitern von Projektsystemen werden sollen, können Sie Befehle verwenden und Gruppen, die von bereitgestellte Befehl die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- In den folgenden Abschnitten Listenelemente Befehl, die zum Erweitern von Projektsystemen besonders nützlich sind.  
+ Befehls-Elemente, die besonders nützlich zum Erweitern von Projektsystemen sind Sie in den folgenden Abschnitten.  
   
 ## <a name="command-menus"></a>Befehlsmenüs  
- Die folgende Tabelle zeigt die Befehlsmenüs, die sind hilfreich für Sie allgemeine Befehle hinzufügen, mit die einen Projekt Extender aufgerufen.  
+ Die folgende Tabelle zeigt die Befehlsmenüs, die sind hilfreich für Sie Befehlen auf höherer Ebene zu platzieren, die einen Extender Projekt aufrufen.  
   
-|Befehlsmenü|Beschreibung|  
+|Menü "Command"|Beschreibung|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|Die **Projekt** Menü der obersten Ebene.|  
 |IDM_VS_TOOL_PROJWIN|Die **Projektmappen-Explorer** Symbolleiste.|  
   
 ## <a name="shortcut-menus"></a>Kontextmenüs  
- Die folgende Tabelle zeigt die Kontextmenüs, die gelten, wenn in ein einzelnen Knoten ausgewählt ist die **Projektmappen-Explorer**, oder wenn es homogenen Mehrfachauswahl in der **Projektmappen-Explorer**, also wenn alle ausgewählten Knoten sind vom gleichen Typ.  
+ Die folgende Tabelle zeigt die Kontextmenüs, die gelten, wenn in ein einzelnen Knoten ausgewählt wird die **Projektmappen-Explorer**, oder es gibt mehrere homogene Auswahl in der **Projektmappen-Explorer**, der ist, wenn alle ausgewählte Knoten werden vom gleichen Typ sind.  
   
 |Kontextmenü|Beschreibung|  
 |-------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Gilt, wenn Sie der Projektknoten ausgewählt ist.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Gilt, wenn Sie der Knoten des Projekts ausgewählt ist.|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Gilt, wenn eine Datei ausgewählt ist.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Gilt, wenn Sie ein Ordner ausgewählt ist.|  
-|IDM_VS_CTXT_WEBREFFOLDER|Gilt, wenn der Ordner "Webverweis" ausgewählt ist.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Gilt, wenn der Knoten "Verweise Root" namens "Verweise" ausgewählt ist.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Gilt, wenn Verweisknoten ausgewählt werden; Dazu gehören Assembly COM-Assemblys und nur die Projektverweise. Webverweise enthält keine werden.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Gilt, wenn ein Ordner ausgewählt ist.|  
+|IDM_VS_CTXT_WEBREFFOLDER|Gilt, wenn der Webverweis-Ordner ausgewählt ist.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Gilt, wenn die Verweise Stammknoten namens "Referenzen" ausgewählt ist.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Gilt, wenn Knoten ausgewählt sind. Dazu gehören die Assembly, COM und nur die Projektverweise. Umfasst keine Webverweise.|  
   
- Die folgende Tabelle zeigt die Kontextmenüs, die beim Anwenden der Auswahl in der **Projektmappen-Explorer** erstreckt sich über mehrere Hierarchien  
+ Die folgende Tabelle zeigt die Kontextmenüs, die beim Anwenden der Auswahl in der **Projektmappen-Explorer** erstreckt sich über mehrere Hierarchien.  
   
 |Kontextmenü|Beschreibung|  
 |-------------------|-----------------|  
-|IDM_VS_CTXT_XPROJ_SLNPROJ|Gilt, wenn die aktuelle Auswahl der Knoten "Projektmappe" und der Stammknoten-Projekt enthält.|  
+|IDM_VS_CTXT_XPROJ_SLNPROJ|Gilt, wenn die aktuelle Auswahl der Knoten "Projektmappe" und die Stammknoten-Projekt enthält.|  
 |IDM_VS_CTXT_XPROJ_SLNITEM|Gilt, wenn die aktuelle Auswahl Projektmappenelemente Knoten und das Projekt enthält.|  
 |IDM_VS_CTXT_XPROJ_MULTIPROJ|Gilt, wenn mehrere Projekt Stammknoten nur die aktuelle Auswahl besteht.|  
-|IDM_VS_CTXT_XPROJ_PROJITEM|Gilt, wenn die aktuelle Auswahl eine Mischung aus Projekt Stammknoten und Projektelemente enthält. Darüber hinaus kann die Auswahl der Knoten "Projektmappe" enthalten.|  
-|IDM_VS_CTXT_XPROJ_MULTIITEM|Gilt, wenn die aktuelle Auswahl Projektelemente aus in der Projektmappe mehrere Projekte enthält, oder wenn Elemente unterschiedlichen Typs im selben Projekt ausgewählt sind.|  
+|IDM_VS_CTXT_XPROJ_PROJITEM|Gilt, wenn die aktuelle Auswahl um eine Mischung aus Projekt Stammknoten und Projektelemente enthält. Darüber hinaus kann die Auswahl der Knoten "Projektmappe" enthalten.|  
+|IDM_VS_CTXT_XPROJ_MULTIITEM|Gilt, wenn die aktuelle Auswahl Projektelemente aus mehreren Projekten in der Projektmappe enthält oder wenn Elemente verschiedener Typen im selben Projekt ausgewählt sind.|  
   
 ## <a name="command-groups"></a>Befehlsgruppen  
- Die folgende Tabelle zeigt die Befehlsgruppen, die Sie verwenden können, wenn Sie Projekte erweitern und die Sie zugreifen können, durch die <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> Kontextmenü.  
+ Die folgende Tabelle zeigt die Befehlsgruppen, die Sie verwenden können, wenn Sie die Projekte erweitern, und die Sie zugreifen können, über die <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> im Kontextmenü.  
   
 |Befehlsgruppe|Beschreibung|  
 |-------------------|-----------------|  
-|IDG_VS_CTXT_PROJECT_BUILD|Befehle zum Erstellen, neu erstellen und Bereitstellen des Projekts.|  
+|IDG_VS_CTXT_PROJECT_BUILD|Befehle zum Erstellen, Neuerstellen und beim Bereitstellen des Projekts.|  
 |IDG_VS_CTXT_COMPILELINK|Befehle zum Kompilieren und verknüpfen das Projekt.|  
-|IDG_VS_CTXT_PROJECT_CONFIG|Befehle, die Projektkonfiguration festgelegt und Buildreihenfolge.|  
+|IDG_VS_CTXT_PROJECT_CONFIG|Befehle, die Konfiguration des Projekts festgelegt und Buildreihenfolge.|  
 |IDG_VS_CTXT_PROJECT_ADD|Befehle, die dem Projekt Elemente hinzu.|  
 |IDG_VS_CTXT_PROJECT_START|Befehle, die das zugeordnete der F5-Taste Startprojekt festzulegen.|  
-|IDG_VS_CTXT_PROJECT_SAVE|Befehle für die Speicherung von Projektelementen.|  
-|IDG_VS_CTXT_PROJECT_DEBUG|Befehle für das Debuggen.|  
-|IDG_VS_CTXT_PROJECT_SCC|Befehle für die Datenquellen-Steuerelements.|  
+|IDG_VS_CTXT_PROJECT_SAVE|Befehle für das Speichern von Projektelementen.|  
+|IDG_VS_CTXT_PROJECT_DEBUG|Befehle zum Debuggen.|  
+|IDG_VS_CTXT_PROJECT_SCC|Befehle für die quellcodeverwaltung.|  
 |IDG_VS_CTXT_PROJECT_TRANSFER|Befehle zum Ausschneiden, kopieren und einfügen.|  
-|IDG_VS_CTXT_PROJECT_PROPERTIES|Befehle, die Zugriff auf die **Projekteigenschaften** (Dialogfeld).|  
+|IDG_VS_CTXT_PROJECT_PROPERTIES|Befehle, die Zugriff auf ermöglichen die **Projekteigenschaften** Dialogfeld.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommands im Vergleich zu OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md)

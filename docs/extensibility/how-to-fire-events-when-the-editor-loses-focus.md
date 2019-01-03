@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Auslösen der Ereignisse aus, wenn der Editor den Fokus verliert. | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Ereignisse auszulösen, wenn der Editor den Fokus verliert. | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d579b30c5eac25c815739149d3b3baacc22dc439
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990765"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Gewusst wie: Auslösen der Ereignisse aus, wenn der Editor den Fokus verliert.
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Vorgehensweise: Lösen Sie Ereignisse aus, wenn der Editor den Fokus verliert.
 Manchmal ist es notwendig zu wissen, wenn Sie ein Editor den Fokus auf den Fensterrahmen verliert. Beispielsweise müssen Sie Code aus einem Codefenster zu extrahieren, nachdem der Editor nicht mehr darauf ausgerichtet ist. Das folgende Verfahren enthält die Schritte zum Empfangen von Benachrichtigungen über den Editor den Fokus.  
   
 ## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Zum Auslösen eines Ereignisses als Reaktion auf einen Editor den Fokus  

@@ -1,13 +1,8 @@
 ---
 title: Verpacken und Bereitstellen von SharePoint-Lösungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849018"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
   In der Regel wird eine SharePoint-Lösung auf einem SharePoint Server mithilfe einer Lösung-Paketdatei (.wsp) bereitgestellt. Sie können Visual Studio verwenden, um Ihre SharePoint-Projektelemente in Features zu organisieren und zum Erstellen eines Pakets zum Bereitstellen Ihrer SharePoint-Funktionen.  
@@ -81,7 +76,7 @@ ms.locfileid: "49863268"
   
   Die SharePoint-Entwicklungstools in Visual Studio haben die Validierungsregeln, um sicherzustellen, dass das Lösungspaket richtig formatiert ist. Darüber hinaus die Regeln zu überprüfen, die die *.wsp* Projektmappendatei erfolgreich bereitgestellt und auf einem SharePoint-Server aktiviert. Weitere Informationen zum XML-Schema für Funktionen, finden Sie unter [Feature Schemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Sie können SharePoint-Projektsystem benutzerdefinierten Funktions- und Paketvalidierungsregeln hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Sie können SharePoint-Projektsystem benutzerdefinierten Funktions- und Paketvalidierungsregeln hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
   Weitere Informationen zu den Paket-Explorer, finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
@@ -109,4 +104,3 @@ ms.locfileid: "49863268"
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

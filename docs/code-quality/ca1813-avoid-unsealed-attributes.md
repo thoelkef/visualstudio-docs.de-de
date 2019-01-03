@@ -2,7 +2,6 @@
 title: 'CA1813: Nicht versiegelte Attribute vermeiden'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1813
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63b69b95dc676213c39c4cf10c212472218a0c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838923"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Nicht versiegelte Attribute vermeiden
 
@@ -60,7 +59,7 @@ Das folgende Beispiel zeigt ein benutzerdefiniertes Attribut, das diese Regel er
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1019: Zugriffsmethoden für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1019: Accessors für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 - [CA1018: Attribute mit AttributeUsageAttribute markieren](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Siehe auch

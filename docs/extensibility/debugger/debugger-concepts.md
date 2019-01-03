@@ -1,9 +1,6 @@
 ---
 title: Debuggerkonzepte | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38c743ce7170e0842a3430c7b2aa190df94782b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 99ecd5d685592a252a185feaedc75a5566f1c5ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857490"
 ---
 # <a name="debugger-concepts"></a>Debuggerkonzepte
 Um auf das Visual Studio-Debug-Paket zu erstellen, müssen Sie mit der Architekturen, in das Entwerfen des Pakets verwendet Konzepten vertraut sein.  
@@ -54,7 +51,7 @@ Um auf das Visual Studio-Debug-Paket zu erstellen, müssen Sie mit der Architekt
  [Module](../../extensibility/debugger/modules.md)  
  Definiert ein Modul, in Bezug auf die Architektur als physische Container für Code, z. B. eine ausführbare Datei oder eine DLL debuggen.  
   
- [Haltepunkte](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
+ [Breakpoints](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
  Definiert die drei Typen von Haltepunkten, Ausstehend "," gebunden und Fehler – in Bezug auf die Architektur zu debuggen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  

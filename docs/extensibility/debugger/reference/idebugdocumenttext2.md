@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentText2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentText2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dc8344e19f422e65439aae6bafe12e3f62bee4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838423"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Diese Schnittstelle stellt ein Textdokument.  
@@ -28,17 +25,17 @@ Diese Schnittstelle stellt ein Textdokument.
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein Debugging-Modul (DE) implementiert diese Schnittstelle auf, wenn der Quellcode angeben benötigten in Textform ist. Da dies der häufigste Fall ist, wenn ein DE implementiert die [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Schnittstelle, es sollte auch implementieren die `IDebugDocumentText2` Schnittstelle.  
+ Ein Debugmodul (DE) implementiert diese Schnittstelle auf, wenn der Quellcode, die, den Sie zur Verfügung stellen muss, im Text-Format ist. Da dies der häufigste Fall ist, wenn eine bereitgestellten Kompatibilitätsrichtlinie implementiert die [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Schnittstelle, sie sollten auch implementieren die `IDebugDocumentText2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Verwenden der `QueryInterface` Methode zum Abrufen von dieser Schnittstelle aus einem `IDebugDocument2` Schnittstelle.  
+ Verwenden der `QueryInterface` -Methode dieser Schnittstelle vom Abrufen einer `IDebugDocument2` Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den Methoden für die `IDebugDocument2` diese Schnittstelle implementiert, die folgenden Methoden:  
+ Zusätzlich zu den Methoden für die `IDebugDocument2` Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
@@ -46,7 +43,7 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Ruft den Text aus der angegebenen Position im Dokument ab.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Objekt, das diese Schnittstelle implementiert, muss auch implementieren die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> -Schnittstelle ein, welche stellt die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> eine Schnittstelle für ein [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) Objekt.  
+ Ein Objekt, das diese Schnittstelle implementiert, muss auch implementieren die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle, die stellt die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> eine Schnittstelle für ein [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) Objekt.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

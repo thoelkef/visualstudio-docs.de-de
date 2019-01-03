@@ -2,19 +2,18 @@
 title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834723"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden Sie XSLT-Hierarchie
+# <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie
 
 Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSLT-Stylesheet werden oft `includes`- und `imports`-Anweisungen verwendet. Die Kompilierung beginnt mit dem Hauptstylesheet. Wenn in Folge der Kompilierung eines XSLT-Stylesheets ein Fehler angezeigt wird, kann dieser jedoch aus einer anderen Quelle als dem Hauptstylesheet stammen. Zum Beheben des Fehlers oder Bearbeiten des Stylesheets müssen Sie möglicherweise auf eingeschlossene oder importierte Stylesheets zugreifen. Beim schrittweisen Ausführen des Stylesheets im Debugger werden ggf. eingeschlossene und importierte Stylesheets geöffnet, und Sie können einen Haltepunkt in den eingeschlossenen Stylesheets hinzufügen.
 
@@ -22,7 +21,7 @@ Ein anderes Szenario, in dem das XSLT-Hierarchietool nützlich sein kann, ist da
 
 Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Stylesheet veranschaulicht.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>In einem referenzierten Stylesheet Debuggen
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Debuggen in einem referenzierten Stylesheet
 
 1. Öffnen Sie in Visual Studio ein XML-Dokument. Dieses Beispiel verwendet das folgende Dokument:
 

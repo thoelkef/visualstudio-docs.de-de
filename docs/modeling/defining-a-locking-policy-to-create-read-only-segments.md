@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866490"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API der Visual Studio-Visualisierungs und Modellierungs-SDK können ein Programm, um ein Modell einer domänenspezifischen Sprache (DSL) ganz oder teilweise zu sperren, sodass sie zwar gelesen, aber nicht geändert. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer lassen Kollegen mit Anmerkungen versehen, und überprüfen eine DSL-Modell, jedoch kann verhindern, dass sie die ursprüngliche ändern.
@@ -79,7 +78,7 @@ partition.SetLocks(Locks.Delete);
 
 |Wert|D. h., wenn `IsLocked(Value)` ist "true"|
 |-|-|
-|Keiner|Keine Einschränkung.|
+|Keine|Keine Einschränkung.|
 |Eigenschaft|Domäneneigenschaften der Elemente werden nicht geändert. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänenklasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Links kann nicht in einer Partition erstellt werden oder zu speichern.<br /><br /> Gilt nicht für `ModelElement`.|
 |Verschieben|Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` ist "true", oder wenn `targetPartition.IsLocked(Move)` ist "true".|

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872397"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
@@ -23,7 +22,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 > [!NOTE]
 > In Visual Studio 2017 werden im Text Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Was können Sie mit einer domänenspezifischen Sprache?
 
@@ -386,7 +385,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 ## <a name="validation-and-commands"></a>Überprüfung und Befehle
  Sie können diese DSL weiter entwickeln, durch das Hinzufügen von validierungseinschränkungen. Diese Einschränkungen sind Methoden, die Sie definieren können, und sicherstellen, dass das Modell in einem korrekten Zustand befindet. Beispielsweise können Sie eine Einschränkung, um sicherzustellen, definieren, die das Geburtsdatum des ein untergeordnetes Element höher als die des übergeordneten ist. Die Überprüfungsfunktion zeigt eine Warnung aus, wenn die DSL-Benutzer versucht, ein Modell zu speichern, die Einschränkungen beeinträchtigen. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
- Sie können auch die Befehle im Menü definieren, die der Benutzer aufrufen können. Befehle können das Modell ändern. Sie können auch mit anderen Modellen in Visual Studio und mit externen Ressourcen interagieren. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Sie können auch die Befehle im Menü definieren, die der Benutzer aufrufen können. Befehle können das Modell ändern. Sie können auch mit anderen Modellen in Visual Studio und mit externen Ressourcen interagieren. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Bereitstellen von der DSL
  Um andere Benutzer zum Verwenden der domänenspezifischen Sprache zu ermöglichen, verteilen Sie eine Datei für Visual Studio-Erweiterung (VSIX). Dies wird erstellt, wenn Sie die DSL-Projektmappe zu erstellen.
