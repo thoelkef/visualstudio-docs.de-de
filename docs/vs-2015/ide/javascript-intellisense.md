@@ -33,7 +33,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 201a56d412d1ca5e82c80ba62f3e967407475a59
 ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/27/2018
 ms.locfileid: "53804311"
