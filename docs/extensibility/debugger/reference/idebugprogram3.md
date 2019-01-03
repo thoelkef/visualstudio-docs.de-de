@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram3 | Microsoft Docs
-ms.custom: ''
+title: IDebugProgram3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5849617b1fb0d1446b847f9eb5137de06b685953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896609"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Diese Schnittstelle stellt ein Programm, das in einem Prozess ausgeführt wird und erweitert [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) durch Threadinformationen bereitstellen.  
+Diese Schnittstelle stellt dar, ein Programm, das in einem Prozess ausgeführt wird, und erweitert [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) durch die Bereitstellung von Threadinformationen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,17 +27,17 @@ IDebugProgram3 : IDebugProgram3
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debugging-Modul (Deutschland) und einen benutzerdefinierten Port Lieferanten implementieren diese Schnittstelle, um ein Programm in einem Prozess darstellen. Die Sitzungs-Debug-Manager (SDM) auch implementiert diese Schnittstelle, um Informationen zum Bereitstellen [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+ Die Debug-Engine (DE) und einen benutzerdefinierten Port Lieferanten implementieren diese Schnittstelle, um ein Programm in einem Prozess darstellen. Sitzungsbasierter Debug-Manager (SDM) auch implementiert diese Schnittstelle, um Informationen zum Bereitstellen [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) -Ereignis wird diese Schnittstelle für ein neues Programm zurückgegeben. Diese Schnittstelle wird auch als Parameter für zahlreiche Methoden für auf mehrere Schnittstellen verwendet.  
+ Die [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Ereignis gibt diese Schnittstelle für ein neues Programm zurück. Diese Schnittstelle wird auch als Parameter für viele Methoden auf mehreren Schnittstellen verwendet.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugProgram3`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Führt das Programm aus. Der Thread wird zurückgegeben, um den Debuggerinformationen zu gewähren, in welchem, die Thread die Benutzer, beim Ausführen angezeigt wird.|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Führt das Programm. Der Debuggerinformationen geben, in welchem, die Thread dem Benutzer, beim Ausführen angezeigt wird, wird der Thread zurückgegeben.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -50,10 +47,10 @@ IDebugProgram3 : IDebugProgram3
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Programm ist eine Thread-Container in einer bestimmten Architektur zur Laufzeit ausgeführt wird, während ein Prozesses aus einem oder mehreren Programmen besteht.  
+ Ein Programm ist ein in einer bestimmten Laufzeit-Architektur ausgeführt werden, während ein Prozess aus einem oder mehreren Programmen besteht Thread-Container.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
  [Weiter](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   

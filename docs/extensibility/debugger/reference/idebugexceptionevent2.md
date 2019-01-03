@@ -1,9 +1,6 @@
 ---
-title: IDebugExceptionEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugExceptionEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2cb866c12cacc2c0fcc81c3021e7cc5af448d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1348e83a3b07240fcb1c5e6ae4819ea85e4c054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929873"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
-Die Debugging-Modul (DE) sendet diese Schnittstelle an der Sitzung Debug-Manager (SDM), beim Auftreten einer Ausnahme in der Anwendung, die derzeit ausgeführt wird.  
+Die Debug-Engine (DE) sendet diese Schnittstelle für die Sitzung Debug-Manager (SDM), wenn eine Ausnahme ausgelöst wird, in der Anwendung, die gerade ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,20 +29,20 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle zum angeben, in der Anwendung, der debuggt wird eine Ausnahme aufgetreten ist. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
+ Die DE implementiert diese Schnittstelle für den Bericht, in der zu debuggende Programm wird eine Ausnahme aufgetreten ist. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die DE erstellt und sendet diese Ereignisobjekt eine Ausnahme gemeldet. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn diese an die derzeit debuggte Programm angefügt.  
+ Die DE erstellt und sendet dieses Ereignisobjekt, um eine Ausnahme zu melden. Das Ereignis gesendet wird, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugExceptionEvent2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[getException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Ruft ausführliche Informationen über die Ausnahme, die dieses Ereignis ausgelöst hat.|  
+|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Ruft detaillierte Informationen über die Ausnahme, die dieses Ereignis ausgelöst hat.|  
 |[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Ruft eine lesbare Beschreibung für die ausgelöste Ausnahme, die dieses Ereignis ausgelöst hat.|  
-|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Legt fest, ob die Debugging-Modul (DE) die Möglichkeit, diese Ausnahme an die Anwendung gedebuggt wird unterstützt, wenn die Ausführung fortsetzt übergeben.|  
-|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Gibt an, ob die Ausnahme übergeben werden soll, das Programm, das gerade gedebuggt wird, wenn die Ausführung fortsetzt, oder wenn die Ausnahme verworfen werden sollen.|  
+|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Bestimmt, ob die Debug-Engine (DE) die Möglichkeit unterstützt, übergeben diese Ausnahme an die Anwendung gedebuggt wird, wenn die Ausführung fortsetzt.|  
+|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Gibt an, ob die Ausnahme übergeben werden soll, die zu debuggende Programm wird bei der Ausführung fortgesetzt wird, oder die Ausnahme verworfen werden sollen.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -55,10 +52,10 @@ IDebugExceptionEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Hinweise  
- Vor dem Senden des Ereignisses, die DE überprüft, ob diese Ausnahmeereignis eine erste Chance oder Sekunde Chance Ausnahme durch einen vorherigen Aufruf durchgehend [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Wenn er festgelegt wurde, um eine nicht abgefangene Ausnahme werden die `IDebugExceptionEvent2` Ereignis gesendet, um die SDM. Wenn dies nicht der Fall ist, die DE ermöglicht es einer Anwendung eine Möglichkeit zur Behandlung von Ausnahmen. Wenn keine Ausnahmehandler bereitgestellt wird und die Ausnahme als eine Ausnahme Sekunde Chance festgelegt wurde die `IDebugExceptionEvent2` Ereignis gesendet, um die SDM. Andernfalls die DE setzt die Ausführung des Programms, und das Betriebssystem oder die Runtime Ausnahmen behandelt.  
+ Vor dem Senden des Ereignisses, das DE überprüft, um festzustellen, ob dieses Ausnahmeereignis eine erste Chance "oder" zweite Chance Ausnahme durch einen vorherigen Aufruf festgelegt wurde [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Wenn es festgelegt wurde, eine Ausnahme der ersten Chance, werden die `IDebugExceptionEvent2` Ereignis, das SDM gesendet wird. Wenn dies nicht der Fall ist, wird die DE der Anwendung bietet die Möglichkeit zur Behandlung von Ausnahmen. Wenn kein Ausnahmehandler bereitgestellt wird und die Ausnahme als eine zweite Chance-Ausnahme festgelegt wurde die `IDebugExceptionEvent2` Ereignis, das SDM gesendet wird. Andernfalls die DE setzt die Ausführung des Programms und des Betriebssystems oder der Common Language Runtime Ausnahmen behandelt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

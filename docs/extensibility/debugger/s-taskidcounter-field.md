@@ -1,9 +1,6 @@
 ---
 title: S_taskIdCounter-Feld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: d62e91274d7576360152512a9b42d8203199a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870085"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter-Feld
 Der nächste verfügbare Bezeichner für eine <xref:System.Threading.Tasks.Task> Objekt.  
@@ -38,4 +35,4 @@ Der nächste verfügbare Bezeichner für eine <xref:System.Threading.Tasks.Task>
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+ [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

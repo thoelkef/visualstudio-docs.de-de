@@ -1,13 +1,8 @@
 ---
 title: Beispiele für die SharePoint-Entwicklung und exemplarische Vorgehensweisen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892519"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Beispiele für die SharePoint-Entwicklung und exemplarische Vorgehensweisen
   Dieser Abschnitt enthält Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen, die die Syntax, Struktur und Techniken, die zum Erstellen von SharePoint-Projektmappen zu veranschaulichen.  
@@ -39,4 +34,3 @@ ms.locfileid: "37118872"
   
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
-title: Wichtige Befehle für Language Service Filter | Microsoft Docs
-ms.custom: ''
+title: Wichtige Befehle für Language Service-Filter | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e7affdbcad2b935a05420a2817c5d8bda5cd9cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9f4c568722700ab4521f8a34a0639e78b9f550b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891695"
 ---
-# <a name="important-commands-for-language-service-filters"></a>Wichtig-Befehle für Language Service-Filter
-Wenn Sie einen voll funktionsfähiges Sprachfilter für den Dienst erstellen möchten, erwägen Sie, behandeln die folgenden Befehle. Die vollständige Liste der Befehls-IDs wird definiert, der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> bei nicht verwalteten Enumeration für verwalteten Code und den Stdidcmd.h-Header-Datei [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Code. Sie finden die Datei Stdidcmd.h in *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc.  
+# <a name="important-commands-for-language-service-filters"></a>Wichtige Befehle für Sprachdienstfilter
+Wenn Sie einen voll funktionsfähiges Service Sprachfilter erstellen möchten, sollten Sie behandeln die folgenden Befehle aus. Die vollständige Liste der Befehls-IDs wird definiert, der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Enumeration für verwalteten Code und den Stdidcmd.h-Header-Datei für nicht verwaltete [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Code. Sie finden die Datei Stdidcmd.h in *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc.  
   
 ## <a name="commands-to-handle"></a>Befehle zum Handle  
   
@@ -31,15 +28,15 @@ Wenn Sie einen voll funktionsfähiges Sprachfilter für den Dienst erstellen mö
   
 |Befehl|Beschreibung|  
 |-------------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer klickt. Dieser Befehl gibt an, dass ein Kontextmenü bereitgestellt werden. Wenn Sie diesen Befehl nicht behandelt, stellt der Text-Editor ein Standard-Kontextmenü ohne sprachspezifische Befehle bereit. Um eine eigene Befehle in diesem Menü sind verfügbar, den Befehl behandelt, und selbst ein Kontextmenü anzeigen.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In der Regel gesendet, wenn der Benutzer STRG + J eingibt. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> anzuzeigende Feld Abschluss-Anweisung.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer ein Zeichen eingibt. Überwachen Sie diesen Befehl, um zu ermitteln, wann ein triggerzeichen eingegeben typisiert ist, und um-Anweisung für Abschluss, Methode Tipps und Text-Marker, z. B. Syntaxfarben Klammer und Fehler Marker. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> für die Anweisungsvervollständigung und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> Methode auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Methode Tipps. Überwachen Sie, um Text Marker unterstützen, diesen Befehl aus, um zu bestimmen, ob das Zeichen eingegeben wird, müssen Sie die Marker aktualisieren.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer die EINGABETASTE eingibt. Überwachen Sie diesen Befehl, um zu bestimmen, wann Sie durch Aufrufen einer Methode QuickInfo-Fenster zu schließen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Standardmäßig behandelt der Textansicht mit diesem Befehl.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer die RÜCKTASTE eingibt. Monitor zum Ermitteln, wann eine Methode QuickInfo-Fenster zu schließen, durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Standardmäßig behandelt der Textansicht mit diesem Befehl.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Aus einem Menü oder einer Tastenkombination gesendet. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> auf das QuickInfo-Fenster mit den Parameter zu aktualisieren.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer über eine Variable bewegt wird, oder den Cursor auf eine Variable positioniert und wählt **Quick Info** aus **IntelliSense** in der **bearbeiten** Menü. Den Typ der Variablen in einer QuickInfo zurückkehren, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Wenn Debuggen aktiviert ist, sollte der Tipp auch den Wert der Variablen anzeigen.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In der Regel gesendet, wenn der Benutzer STRG + LEERTASTE eingibt. Dieser Befehl weist der Sprachdienst zum Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In der Regel aus einem Menü gesendet **Kommentarauswahl** oder **Auswahl kommentieren** aus **erweitert** in der **bearbeiten** Menü. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Gibt an, dass der Benutzer möchte den markierten Text auskommentieren. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> gibt an, dass der Benutzer möchte, um den markierten Text auszukommentieren. Diese Befehle können nur von der Sprachdienst implementiert werden.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer klickt. Dieser Befehl gibt an, dass es Zeit, um ein Kontextmenü bereitzustellen ist. Wenn Sie diesen Befehl nicht behandeln, stellt der Text-Editor ein standardmäßigen Kontextmenü ohne sprachspezifische Befehle bereit. Um Ihre eigenen Befehle in diesem Menü einzuschließen, behandeln Sie den Befehl aus, und zeigen Sie selbst ein Kontextmenü an.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In der Regel gesendet, wenn der Benutzer STRG + J eingibt. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> abschlussfeld Anweisung angezeigt.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer ein Zeichen eingibt. Überwachen Sie diesen Befehl, um zu ermitteln, wann ein triggerzeichen eingegeben typisiert ist und zum Bereitstellen der Anweisung Abschluss methodentipps und Textmarkierungen, z. B. farbliche syntaxkennzeichnung, Klammer und fehlermarker. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> für die Anweisungsvervollständigung und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Methode Tipps. Zur Unterstützung von Textmarkierungen überwachen Sie diesen Befehl, um zu bestimmen, ob das Zeichen eingegeben wird, müssen Sie Ihre Markierungen aktualisieren.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer die EINGABETASTE eingibt. Überwachen Sie diesen Befehl, um zu bestimmen, wann ein methodentippfenster zu schließen, durch den Aufruf der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Standardmäßig behandelt die Textansicht mit diesem Befehl.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer mit die RÜCKTASTE eingibt. Monitor, um zu bestimmen, wann ein methodentippfenster zu schließen, durch den Aufruf der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Standardmäßig behandelt die Textansicht mit diesem Befehl.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet von einem Menü oder eine Tastenkombination. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> der QuickInfo-Fenster mit den Parameterinformationen zu aktualisieren.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet, wenn der Benutzer auf eine Variable zeigen oder den Cursor in eine Variable positioniert und wählt **Quick Info** aus **IntelliSense** in die **bearbeiten** Menü. Den Typ der Variablen in einem Tipp zurückkehren, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Wenn Debuggen aktiv ist, sollte den Wert der Variablen auch die QuickInfo angezeigt werden.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In der Regel gesendet, wenn der Benutzer STRG + LEERTASTE eingibt. Dieser Befehl weist den Sprachdienst, zum Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Gesendet von einem Menü, in der Regel **Auswahl kommentieren** oder **Kommentar der Auswahl** aus **erweitert** in die **bearbeiten** Menü. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Gibt an, dass der Benutzer den ausgewählten Text kommentieren möchte; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> gibt an, dass der Benutzer den markierten Text kommentieren möchte. Diese Befehle können nur vom Sprachdienst implementiert werden.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)

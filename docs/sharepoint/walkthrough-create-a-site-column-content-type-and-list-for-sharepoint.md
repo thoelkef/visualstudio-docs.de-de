@@ -1,17 +1,12 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Websitespalte, Inhaltstyp und die Liste für SharePoint | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852530"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900123"
     </Field>  
     ```  
   
-4.  Mit den gleichen Schritten, zwei zusätzliche Websitespalten zum Projekt hinzufügen: **Patienten-ID** (Typ = "Integer") und **Doktor Namen** (Type = "Text"). Legen Sie den Wert ihrer Gruppe **Clinic Websitespalten**.  
+4.  Verwenden das gleiche Verfahren an, fügen Sie zwei zusätzliche Websitespalten zum Projekt hinzu: **Patienten-ID** (Type = "Integer") und **Doktor Namen** (Type = "Text"). Legen Sie den Wert ihrer Gruppe **Clinic Websitespalten**.  
   
 ## <a name="create-a-custom-content-type"></a>Erstellen Sie einen benutzerdefinierten Inhaltstyp
  Als Nächstes erstellen Sie einen Inhaltstyp, basierend auf den Inhaltstyp der Kontakte –, enthält die Websitespalten, die Sie im vorherigen Verfahren erstellt haben. Von einem Inhaltstyp auf einem vorhandenen Inhaltstyp basieren, können Sie Zeit sparen, da vom grundlegende Inhaltstyp für die Verwendung in den neuen Inhaltstyp stellt mehrere Websitespalten bereit.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900123"
   
      Dadurch erhalten Sie Zugriff auf andere möglicherweise nützlicher Websitespalten in den Inhaltstyp "Kontakt", zusätzlich zu den Websitespalten, die Sie zuvor definiert.  
   
-6.  Nach dem Inhaltstyp-Designer angezeigt wird, in der **Spalten** hinzu die drei Spalten, die Sie zuvor definiert site: **Patient Name**, **Patienten-ID**, und **Doktor Namen**. Um diese Spalten hinzuzufügen, wählen Sie das erste Listenfeld in der Liste der Spalten Site unter **Anzeigenamen**, und wählen Sie dann jede Spalte in der Liste eine zu einem Zeitpunkt.  
+6.  Nach dem Inhaltstyp-Designer angezeigt wird, in der **Spalten** Registerkarte, fügen Sie die drei Spalten, die Sie zuvor definiert site hinzu: **Name des Patienten**, **Patienten-ID**, und **Doktor Namen**. Um diese Spalten hinzuzufügen, wählen Sie das erste Listenfeld in der Liste der Spalten Site unter **Anzeigenamen**, und wählen Sie dann jede Spalte in der Liste eine zu einem Zeitpunkt.  
   
     > [!TIP]  
     >  Um die Websitespalten schneller auswählen, wird die Liste durch die ersten paar Buchstaben des Namens der Spalte Eingabe gefiltert.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900123"
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
- [Vorgehensweise: erstellen ein benutzerdefinierten Feldtyps](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Vorgehensweise: Erstellen eines benutzerdefinierten Feldtyps](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Inhaltstypen](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Spalten](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

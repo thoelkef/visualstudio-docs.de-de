@@ -1,9 +1,6 @@
 ---
 title: Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903242"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse
   Können Sie die `ServerDocument` -Klasse in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mehrere Aspekte von Anpassungen auf Dokumentebene, zu verwalten, auch wenn Microsoft Office Word und Microsoft Office Excel nicht installiert werden. Sie können die folgenden Aufgaben ausführen:  
@@ -61,13 +58,12 @@ ms.locfileid: "49939136"
 |Aufgabe|Zu verwendender Member|  
 |----------|-------------------|  
 |Ermitteln, ob ein Dokument Teil einer Anpassung auf Dokumentebene ist|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> -Methode.|  
-|Eine Anpassung zu einem Dokument zur Laufzeit programmgesteuert zu anzufügen.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen Erweiterungen durch verwalteten Code zu Dokumenten](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Eine der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>-Methoden|  
+|Eine Anpassung zu einem Dokument zur Laufzeit programmgesteuert zu anzufügen.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Eine der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>-Methoden|  
 |Programmgesteuertes Entfernen einer Anpassung aus einem Dokument zur Laufzeit<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Entfernen von verwaltetem Code-Erweiterungen aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> -Methode.|  
 |Abrufen der URL des Bereitstellungsmanifests, das dem Dokument zugeordnet ist|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A>-Eigenschaft|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Anfügen Erweiterungen durch verwalteten Code zu Dokumenten](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Gewusst wie: Entfernen Sie Erweiterungen durch verwalteten Code aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [Vorgehensweise: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Zwischenspeichern von Daten](../vsto/caching-data.md)  
-  

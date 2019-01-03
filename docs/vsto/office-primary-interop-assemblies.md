@@ -1,9 +1,6 @@
 ---
 title: Primäre Interop-Assemblys in Office
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926729"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
@@ -82,7 +79,7 @@ Zur Ausführung von Office-Lösungen sind die Office-PIAs auf Endbenutzercompute
 
 Jede Office-Projektvorlage in Visual Studio wird im Hinblick auf die Arbeit mit einer einzelnen Microsoft Office-Anwendung entworfen. Um Funktionen in mehreren Microsoft Office-Anwendungen oder in einer Anwendung bzw. Komponente zu verwenden, die kein Projekt in Visual Studio besitzt, müssen Sie einen Verweis auf die erforderlichen PIAs hinzufügen.  
   
-In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio unter installiert sind Hinzufügen der `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` Verzeichnis. Diese Versionen der Assemblys werden auf die **Framework** Registerkarte die **Verweis-Manager** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio unter installiert sind Hinzufügen der `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` Verzeichnis. Diese Versionen der Assemblys werden auf die **Framework** Registerkarte die **Verweis-Manager** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Wenn Sie die PIAs im globalen Assemblycache installiert und registriert haben, werden diese Versionen im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** angezeigt. Vermeiden Sie es, Verweise auf diese Versionen hinzuzufügen, da sonst bei ihrer Verwendung Entwicklungsprobleme auftreten können. Wenn verschiedene Versionen der PIAs im globalen Assemblycache registriert sind, bindet das Projekt automatisch an die Version der Assembly, die zuletzt registriert wurde - auch dann, wenn Sie im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** eine andere Version angeben.  
   
@@ -113,7 +110,7 @@ In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die
 |Microsoft Publisher 14.0-Objektbibliothek<br /><br /> Microsoft Publisher 15,0-Objektbibliothek|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0-Webobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0-Seitenobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft Smart Tags 2.0-Typbibliothek **Hinweis:** Smarttags sind veraltet [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0-Typbibliothek **beachten:**  Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.|Microsoft.Office.Interop.SmartTag.dll|  
 |Microsoft Visio 14.0-Typbibliothek<br /><br /> Microsoft Visio 15,0-Typbibliothek|Microsoft.Office.Interop.Visio.dll|  
 |Microsoft Visio 14.0-Typbibliothek für "Speichern als Web"<br /><br /> Microsoft Visio 15,0-Typbibliothek für "Speichern als Web"|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0-Typbibliothek für Zeichnungssteuerelemente<br /><br /> Microsoft Visio 15,0-Typbibliothek für Zeichnungssteuerelemente|Microsoft.Office.Interop.VisOcx.dll|  
@@ -130,7 +127,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivie
   
 ## <a name="see-also"></a>Siehe auch  
 
-- [Gewusst wie: Target Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md)   
 - [InfoPath-Lösungen](../vsto/infopath-solutions.md)   
 - [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivie
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
 - [Allgemeine Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

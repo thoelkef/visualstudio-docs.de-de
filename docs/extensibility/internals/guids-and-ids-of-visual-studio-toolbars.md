@@ -1,9 +1,6 @@
 ---
 title: GUIDs und IDs der Visual Studio-Symbolleisten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 054f4f19d24f2751a560a3d86eae7294aa2bd7dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850900"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs von Visual Studio-Symbolleiste
 Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in definiert *VSCT* Dateien, die als Teil von Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -41,7 +38,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
   
  Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Um eine Gruppe hinzuzufügen, legen Sie das übergeordnete Element auf die GUID und ID der Symbolleiste aus. Um eine Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element zu einer Gruppe auf der Symbolleiste.  
   
-|Symbolleiste|Id|  
+|Symbolleiste|ID|  
 |-------------|--------|  
 |Standard|IDM_VS_TOOL_STANDARD|  
 |Build|IDM_VS_TOOL_BUILD|  
@@ -52,7 +49,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 ### <a name="special-toolbars"></a>Spezielle Symbolleisten  
  Diese Symbolleisten werden definiert, von der Visual Studio-IDE, aber sie spezielle Funktionen bereitstellen und hosten Sie Befehlsgruppen nicht.  
   
-|Symbolleiste|Id|  
+|Symbolleiste|ID|  
 |-------------|--------|  
 |Befehl zum Hinzufügen|IDM_VS_TOOL_ADDCOMMAND|  
 |Nicht definiert|IDM_VS_TOOL_UNDEFINED|  
@@ -64,7 +61,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
   
 ### <a name="standard-toolbar-groups"></a>Standardsymbolleiste Gruppen  
   
-|name|Id|  
+|name|ID|  
 |----------|--------|  
 |Speichern/Öffnen|IDG_VS_TOOLSB_SAVEOPEN|  
 |Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +75,14 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
   
 ### <a name="build-toolbar-groups"></a>Symbolleistengruppen erstellen  
   
-|name|Id|  
+|name|ID|  
 |----------|--------|  
 |Build-Leiste|IDG_VS_BUILDBAR|  
 |Abbrechen|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Text-Editor-Symbolleistengruppen  
   
-|name|Id|  
+|name|ID|  
 |----------|--------|  
 |Abschluss|IDM_VS_TOOL_TEXTEDITOR|  
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +91,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
   
 ### <a name="debug-toolbar-groups"></a>Debug-Symbolleistengruppen  
   
-|name|Id|  
+|name|ID|  
 |----------|--------|  
 |Ausführung|IDM_DEBUG_TOOLBAR|  
 |Schrittweises Ausführen|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,7 +100,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
   
 ### <a name="debug-location-toolbar-groups"></a>Debuggen von Gruppen für Standort-Symbolleiste  
   
-|name|Id|  
+|name|ID|  
 |----------|--------|  
 |Debugspeicherort|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
@@ -122,7 +119,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 |Klassenansicht|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
 |Objektkatalog|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
 |Objektkatalog|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
-|Ausgabe|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
 |Suchen und Ersetzen|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
 |Suchergebnisse: 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
 |Suchergebnisse: 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  

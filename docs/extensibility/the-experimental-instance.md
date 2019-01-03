@@ -1,9 +1,6 @@
 ---
-title: Die experimentelle Instanz | Microsoft Docs
-ms.custom: ''
+title: Die experimentelle Instanz | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -15,25 +12,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80c071866e46528fe7edd287e082df3af166973
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cacee26fb84774eb7f1043d940419561bc55ec36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917371"
 ---
 # <a name="the-experimental-instance"></a>Die experimentelle Instanz
-Um der Visual Studio-Entwicklungsumgebung vor ungeprüfte Anwendungen schützen, die sie ändern können, bietet VSSDK eine experimentelle Fläche, die Sie verwenden können, um zu experimentieren. Sie neue Anwendungen mit Visual Studio wie gewohnt entwickeln, aber Sie ausführen, indem Sie mithilfe einer experimentellen Instanz.  
+Um Visual Studio-Entwicklungsumgebung nicht getestete Anwendungen zu schützen, die Sie sie ändern können, dient das VS SDK eines experimentellen, mit denen Sie experimentieren können. Sie können neue Anwendungen entwickeln, indem Sie mithilfe von Visual Studio wie gewohnt, aber Sie ausführen, indem Sie mithilfe dieser experimentellen Instanz.  
   
  Jede Anwendung, die ein VSIX-Paket wird die experimentelle Visual Studio-Instanz im Debugmodus gestartet.  
   
- Wenn Sie die experimentelle Instanz von Visual Studio außerhalb einer bestimmten Lösung beginnen möchten, führen Sie den folgenden Befehl an das Befehlsfenster:  
+ Wenn Sie die experimentelle Instanz von Visual Studio außerhalb einer bestimmten Projektmappe starten möchten, führen Sie den folgenden Befehl im Befehlsfenster ein:  
   
  "*\<Visual Studio-Installationspfad >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
->  Die experimentelle Instanz wird geschrieben, in der Registrierung unter dem `<version number>Exp` und `<version number>Exp_Config` Knoten. Befindet sich z. B. experimentelle Registrierungsstruktur Visual Studio 2015  
+>  Die experimentelle Instanz richtet sich an der Registrierung unter dem `<version number>Exp` und `<version number>Exp_Config` Knoten. Beispielsweise ist der Visual Studio 2015 experimentelle Registrierung-Bereich  
 >   
 >  `HKCU\Software\Microsoft\VisualStudio\14.0Exp` und `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
   
- Es wird empfohlen, dass Sie Ihre Erweiterung in der experimentellen Instanz ausführen, während Sie es entwickeln. Beim Bereitstellen der Erweiterung, der in der Entwicklungsinstanz ausgeführt wird. Weitere Informationen zum Registrieren von Anwendungen finden Sie unter [registrieren VSPackages](../extensibility/internals/registering-vspackages.md).
+ Es wird empfohlen, dass Sie Ihre Erweiterung in der experimentellen Instanz ausführen, während Sie es entwickeln. Wenn Sie die Erweiterung bereitstellen, wird in der Entwicklungsinstanz ausgeführt. Weitere Informationen zum Registrieren von Anwendungen finden Sie unter [Registrieren von VSPackages](../extensibility/internals/registering-vspackages.md).

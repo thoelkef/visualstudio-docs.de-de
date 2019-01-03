@@ -2,7 +2,6 @@
 title: XML-Ausschnitte
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5572e020dba08c7a417c8a7af40f8d20083198a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928314"
 ---
 # <a name="xml-snippets"></a>XML-Ausschnitte
 
-Der XML-Editor bietet eine Funktion *XML-Ausschnitte*, mit dem Sie schneller XML-Dateien erstellen. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. XML-Dateien können auch auf der Grundlage eines XSD-Schemas (XML Schema Definition Language) erstellt werden.
+Der XML-Editor bietet ein Feature namens *XML-Ausschnitte*, können Sie schneller XML-Dateien zu erstellen. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. XML-Dateien können auch auf der Grundlage eines XSD-Schemas (XML Schema Definition Language) erstellt werden.
 
 ## <a name="reusable-xml-snippets"></a>Wiederverwendbare XML-Ausschnitte
 
@@ -39,19 +38,19 @@ Der XML-Editor enthält viele Ausschnitte, die einige häufig auszuführende Auf
 </xs:element>
 ```
 
- Es gibt zwei Möglichkeiten zum Einfügen von Ausschnitten. Die **Ausschnitt einfügen** Befehl fügt den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für die XML-Ausschnitt des markierten Texts. Beide Befehle sind entweder verfügbar aus den **IntelliSense** Untermenü unter der **bearbeiten** im Menü oder aus dem Editor-Kontextmenü.
+ Es gibt zwei Möglichkeiten zum Einfügen von Ausschnitten. Die **Ausschnitt einfügen** Befehl wird den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für den XML-Ausschnitt für den ausgewählten Text. Beide Befehle sind entweder verfügbar, aus der **IntelliSense** Untermenü unter der **bearbeiten** im Menü oder im Kontextmenü des Editors.
 
- Weitere Informationen finden Sie unter [wie: Verwenden von XML-Ausschnitte](../xml-tools/how-to-use-xml-snippets.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von XML-Ausschnitte](../xml-tools/how-to-use-xml-snippets.md).
 
-## <a name="schema-generated-xml-snippets"></a>Schemagenerierte XML-Ausschnitte
+## <a name="schema-generated-xml-snippets"></a>Schema generierte XML-Ausschnitte
  Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XML-Schema zu generieren. Mithilfe dieser Funktion können Sie ein Element mit XML-Elementen auffüllen, die aus den Schemainformationen für dieses Element generiert werden.
 
- Weitere Informationen finden Sie unter [wie: generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Erstellen neuer XML-Ausschnitte
- Zusätzlich zu die Ausschnitte, die in enthaltenen [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio standardmäßig auch erstellen und eigene XML-Ausschnitte verwenden können.
+ Zusätzlich zu den Codeausschnitten, die in enthaltenen [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio wird standardmäßig auch erstellen und verwenden Sie eigene XML-Ausschnitte können.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von XML-Ausschnitte](../xml-tools/how-to-create-xml-snippets.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md).
 
 ## <a name="see-also"></a>Siehe auch
 

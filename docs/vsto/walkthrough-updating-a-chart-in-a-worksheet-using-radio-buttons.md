@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891936"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Optionsfeldern in einem Microsoft Office Excel-Arbeitsblatt, Benutzern eine Möglichkeit, schnell zwischen den Optionen wechseln. Ändern Sie die Optionen in diesem Fall den Stil eines Diagramms.  
@@ -260,4 +257,3 @@ ms.locfileid: "49866440"
 
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)  
-

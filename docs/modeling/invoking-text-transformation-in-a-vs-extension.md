@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915425"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
 Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl schreiben oder [Domain-Specific Languge](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), können Sie des Textvorlagendiensts transformieren. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.
@@ -135,8 +134,8 @@ Sample text.
  Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, die von <xref:System.MarshalByRefObject> abgeleitet wird.
 
 ## <a name="related-topics"></a>Verwandte Themen
- So generieren Sie Text aus einer vorverarbeiteten Textvorlage: Rufen Sie die `TransformText()` -Methode der generierten Klasse. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ So generieren Sie Text von einer vorverarbeiteten Textvorlage Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  So generieren Sie Text außerhalb von Visual Studio-Erweiterung: Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Um Quellcode zu generieren, der später kompiliert und ausgeführt werden können: Rufen Sie die `t4.PreprocessTemplate()` -Methode der <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann Rufen Sie die `t4.PreprocessTemplate()`-Methode von <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> auf.

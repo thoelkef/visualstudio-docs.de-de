@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentChecksum2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentChecksum2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 068447399a8cfd43cb5fe07ea82e7cf4400f460c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921678"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-Stellt eine Prüfsumme für eine Debug-Dokument dar und ermöglicht es die Prüfsumme zwischen Komponenten übergeben.  
+Stellt eine Prüfsumme für eine Debug-Dokument und ermöglicht die Prüfsumme zwischen Komponenten übergeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,14 +27,14 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle kann von keiner Komponente, die verfügbar macht implementiert werden die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. Allerdings ist es hauptsächlich durch Debugmodule implementiert, damit die Prüfsumme, eingebettet in eine Symboldatei (*.pdb) wieder an der IDE übergeben und beim Suchen einer Quelle verwendet werden kann.  
+ Diese Schnittstelle implementiert werden kann, von keiner Komponente, die verfügbar macht die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. Allerdings ist es hauptsächlich durch Debugmodule implementiert, damit die Prüfsumme, eingebettet in eine Symboldatei (*.pdb) wieder an der IDE übergeben und beim Suchen einer Quelle verwendet werden kann.  
   
 ## <a name="methods"></a>Methoden  
  Die folgende Tabelle zeigt die Methoden der `IDebugDocumentChecksum2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Ruft die Prüfsumme und Algorithmus Dokumentbezeichner erhält die maximale Anzahl von Bytes zu verwenden.|  
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Ruft die Prüfsumme und Algorithmus Dokumentbezeichner erhalten die maximale Anzahl von Bytes, die ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen Sie ein. VSCT-Datei | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885329"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Gewusst wie: erstellen eine VSCT-Datei  
+# <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei  
   
 Es gibt mehrere Möglichkeiten, um eine Tabelle-Konfiguration in XML-basierte Visual Studio-Befehl erstellen (*VSCT*) Datei.  
   
@@ -56,7 +53,7 @@ Es gibt mehrere Möglichkeiten, um eine Tabelle-Konfiguration in XML-basierte Vi
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Gewusst wie: Erstellen einer VSCT-Datei aus einer vorhandenen CTC-Datei  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei aus einer vorhandenen CTC-Datei  
   
 Sie erstellen ein XML-basiertes *VSCT* Datei aus einer vorhandenen Befehlstabelle *CTC* Quelldatei. Dabei können Sie das neue XML-basierte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Command Table-Compilerformat (VSCT) nutzen.  
   
@@ -87,7 +84,7 @@ Sie erstellen ein XML-basiertes *VSCT* Datei aus einer vorhandenen Befehlstabell
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Gewusst wie: erstellen eine VSCT-Datei aus einer vorhandenen CTO-Datei  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei aus einer vorhandenen CTO-Datei  
   
 Sie erstellen ein XML-basiertes *VSCT* -Datei aus einer vorhandenen binären *CTO* Datei. Diese Vorgehensweise ermöglicht es Ihnen, das neue Befehlstabellen-Compilerformat zu nutzen. Dieser Prozess funktioniert auch, wenn die *CTO* -Datei kompiliert wurde, aus einem *CTC* Datei. Sie bearbeiten und kompilieren Sie die *VSCT* -Datei in eine andere CTO-Datei.  
   

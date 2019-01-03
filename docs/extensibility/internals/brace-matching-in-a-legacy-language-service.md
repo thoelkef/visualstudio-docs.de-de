@@ -1,9 +1,6 @@
 ---
 title: Zuordnung von geschweiften Klammern in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910034"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Zuordnung von geschweiften Klammern in einem legacy-Sprachdienst
 Klammer hilft den Entwickler, die Language-Elemente zu verfolgen, die zusammen, wie z. B. Klammern und geschweifte Klammern enthalten sein müssen. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird der öffnenden geschweiften Klammer hervorgehoben.  
   
  Sie können zwei oder drei gemeinsam auftretende Elemente, die sogenannten-Paare und Tripeln zuordnen. Tripeln werden drei gemeinsam auftretende Elemente. Zum Beispiel in c# die `foreach` Anweisung bildet ein Tripel: `foreach()`, `{`, und `}`. Alle drei Elemente werden hervorgehoben, wenn die schließende geschweifte Klammer eingegeben wird.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Zuordnung von geschweiften Klammern zu suchen, finden Sie unter [Exemplarische Vorgehensweise: anzeigen, die passende Klammern](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Zuordnung von geschweiften Klammern zu suchen, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen, die passende Klammern](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  

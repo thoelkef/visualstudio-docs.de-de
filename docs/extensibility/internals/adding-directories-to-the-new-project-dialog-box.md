@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen von Verzeichnissen, um das Dialogfeld Neues Projekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6cba2fc8ee5c0b946a482ddbac12d0726db11032
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930221"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Fügen Sie Verzeichnisse hinzu, um das Dialogfeld "Neues Projekt"
 Wenn Sie neue Projekttypen erstellen, Sie auch können registrieren, ein neues Verzeichnis, in der **neues Projekt** im Dialogfeld für die Verwendung als Vorlage anzeigen. Im folgenden Codebeispiel wird erläutert, wie ein neues Verzeichnis, auch bekannt als ein Knoten registriert wird. Im Beispiel Vorlagen, die verfügbar gemacht, von dem VSPackage *CLSID_Package*, registriert sind. Als Ergebnis der linken Seite des der **neues Projekt** Dialogfeld bietet die hinzugefügten Knoten mit einem Namen, der bestimmt, indem die *Folder_Label_ResID* Ressource. Diese Ressource wird aus der Satelliten-DLL für das VSPackage geladen.  

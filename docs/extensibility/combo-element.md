@@ -1,9 +1,6 @@
 ---
 title: Combo-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926251"
 ---
 # <a name="combo-element"></a>Combo-element
-Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Es gibt vier Arten von Kombinationsfelder, die folgenden: Kombinationsfeld, DynamicCombo, IndexCombo und MRUCombo.  
+Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Es gibt vier Arten von Kombinationsfelder, wie folgt: Kombinationsfeld, DynamicCombo, IndexCombo und MRUCombo.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,7 +39,7 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Es gibt v
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich. GUID der Befehls-ID der GUID-ID.|  
-|ID|Erforderlich. ID des Befehls-ID der GUID-ID.|  
+|id|Erforderlich. ID des Befehls-ID der GUID-ID.|  
 |defaultWidth|Erforderlich. Eine ganze Zahl, die eine Breite für das Kombinationsfeld in Pixel angibt.|  
 |idCommandList|Erforderlich. Eine ID, die an das Ziel der aktiven Befehl gesendet wird, zum Abrufen der Liste der Elemente, die im Kombinationsfeld angezeigt werden. Die ID wird im gleichen Bereich wie das Steuerelement GUID sein.|  
 |priority|Dies ist optional. Ein numerischer Wert, der die Priorität angibt.|  

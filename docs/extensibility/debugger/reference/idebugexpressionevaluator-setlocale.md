@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator::SetLocale | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator::SetLocale
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 128e00db6f648185c0404de3eddd4387c4067e8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922350"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 Diese Methode legt die Sprache, die zum Erstellen von druckbaren Ergebnisse.  
@@ -28,7 +25,7 @@ Diese Methode legt die Sprache, die zum Erstellen von druckbaren Ergebnisse.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetLocale(   
+HRESULT SetLocale(   
    WORD wLangID  
 );  
 ```  

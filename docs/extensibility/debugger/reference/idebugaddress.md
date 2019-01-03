@@ -1,9 +1,6 @@
 ---
-title: IDebugAddress | Microsoft Docs
-ms.custom: ''
+title: IDebugAddress | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace2892d4518de8c5a4abaa2c113df914f9fa6b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf8c262aef3b562f43409f6d62fc533e4d6314ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933501"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Diese Schnittstelle stellt die Adresse eines Elements dar. Es wird von der Symbol-Handler zurückgegeben.  
@@ -32,20 +29,20 @@ IDebugAddress : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein Symbol-Anbieter implementiert diese Schnittstelle, um eine Adresse eines Objekts darstellen.  
+ Ein symbolanbieter implementiert diese Schnittstelle, um eine Adresse eines Objekts darstellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Viele Methoden auf viele Schnittstellen geben diese Schnittstelle zurück.  
+ Viele Methoden für viele Schnittstellen zurückgeben dieser Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Diese Schnittstelle implementiert, die folgende Methode:  
+ Diese Schnittstelle implementiert die folgende Methode:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur, die beschreibt ein Objekt und dessen Speicherort.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur, die beschreibt ein Objekt und seine Position.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Symbol-Anbieter gibt diese Schnittstelle, um ein Objekt und dessen Speicherort innerhalb eines bestimmten Bereichs (z. B. Funktion, Methode oder Klasse) darstellen. Diese Schnittstelle wird von zurückgegeben und auf verschiedenen-Methoden der Symbol-Anbieter und der Ausdruck übergeben bei der ausdrucksauswertung. Die Symbol-Anbieter ist in der Regel wird die einzige Entität, die zum Interpretieren des Inhalts dieser Schnittstelle muss.  
+ Der symbolanbieter gibt diese Schnittstelle, um ein Objekt und seine Position innerhalb eines bestimmten Bereichs (z. B. Funktion, Methode oder Klasse) darstellen. Diese Schnittstelle wird von zurückgegeben und, die an verschiedene Methoden für die symbolanbieter und Expression Evaluator. Der symbolanbieter ist in der Regel die einzige Entität, die zum Interpretieren des Inhalts dieser Schnittstelle benötigt.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
@@ -55,5 +52,5 @@ IDebugAddress : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

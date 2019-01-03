@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896785"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Vorgehensweise: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt
   Sie können eine oder mehrere ganze Zeilen gruppieren. Verwenden Sie zum Erstellen einer Gruppenstatus in einem Arbeitsblatt ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -64,7 +61,5 @@ ms.locfileid: "35258735"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

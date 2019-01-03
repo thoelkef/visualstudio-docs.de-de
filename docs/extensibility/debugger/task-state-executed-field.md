@@ -1,9 +1,6 @@
 ---
 title: TASK_STATE_EXECUTED-Feld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_EXECUTED field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fc8e98bec78973fe1309f3521c5f95bd9b3f50e
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: bd5bf1b68c197c04fa39f97ec89b54a54022db85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872803"
 ---
 # <a name="taskstateexecuted-field"></a>TASK_STATE_EXECUTED-Feld
 Die Aufgabe wird ausgeführt, wurde aber noch nicht abgeschlossen.  
@@ -39,4 +36,4 @@ Die Aufgabe wird ausgeführt, wurde aber noch nicht abgeschlossen.
  Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält diesen Wert, der <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+ [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

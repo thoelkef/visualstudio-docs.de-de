@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Sammeln von Daten mit einem Windows Form'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926614"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Exemplarische Vorgehensweise: Sammeln von Daten mithilfe eines Windows-Formulars
   In dieser exemplarischen Vorgehensweise wird das Öffnen eines Windows Form aus einer Anpassung auf Dokumentebene für Microsoft Office Excel, das Abfragen von Benutzerinformationen und das Schreiben dieser Informationen in eine Zelle des Arbeitsblatts beschrieben.  
@@ -146,5 +143,3 @@ ms.locfileid: "49900474"
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
  [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)   
  [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)  
-  
-  

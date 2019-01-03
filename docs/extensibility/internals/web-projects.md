@@ -1,9 +1,6 @@
 ---
-title: Webprojekte | Microsoft Docs
-ms.custom: ''
+title: Webprojekte | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,23 +10,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929749"
 ---
 # <a name="web-projects"></a>Webprojekte
-Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mithilfe von herkömmlichen Programmiersprachen, z. B. Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu erfassen und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw. Webseiten mit zugeordneten Codes werden als intelligente Webseiten bezeichnet.  
+Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum die Webanwendungen. Sie können eine Webseite, die mit herkömmlichen Programmiersprachen wie Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu sammeln und Verarbeitung von einem Benutzer, in einer Datenbank zu speichern und so weiter. Webseiten mit den zugehörigen Code werden als intelligente Webseiten bezeichnet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ [Grundlagen](../../extensibility/internals/web-project-essentials.md)  
  Zeigt die wichtigen Elemente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Webprojekte.  
   
  [Websiteunterstützung](../../extensibility/internals/web-site-support.md)  
- Bietet eine Übersicht über [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Websiteprojekte. Ein Website-Projekt generiert eine ausführbare Datei für jede intelligenten Webseite. Zusätzliche ausführbare Dateien werden aus der Quellcodedateien im Ordner "App_Code" generiert.  
+ Bietet eine Übersicht über [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Websiteprojekte. Ein Websiteprojekt generiert eine ausführbare Datei für jedes smart-Webseite. Weitere ausführbare Dateien werden aus der Quellcodedateien im Ordner "kann" generiert.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekte](../../extensibility/internals/projects.md)  
- Beschreibt das Erweitern der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein Projektsystem.
+ Beschreibt das Erweitern der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektsystem.

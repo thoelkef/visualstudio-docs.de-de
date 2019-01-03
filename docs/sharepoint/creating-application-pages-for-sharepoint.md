@@ -1,13 +1,8 @@
 ---
 title: Erstellen von Anwendungsseiten für SharePoint | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ed9c17d68e2386b7a5b5077ee4a7d1764ea5aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876405"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Ein *Anwendungsseite* ist eine ASP.NET Web-Seite, die für die Verwendung in einer SharePoint-Website entwickelt wurde. Anwendungsseiten sind ein spezieller Typ von der ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite ist, dass eine Anwendungsseite Inhalt enthält, das mit einer SharePoint-Masterseite zusammengeführt wird. Eine Masterseite ermöglicht Anwendungsseiten zur Darstellung und Verhalten wie andere Seiten auf einer Website freigeben.  
@@ -80,4 +75,3 @@ ms.locfileid: "49853141"
  [SharePoint Foundation-Entwicklung im Detail](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [Übersicht über ASP.NET](/aspnet/overview)   
  [ASP.NET-Webseiten 2](/aspnet/web-pages/index)   
-  

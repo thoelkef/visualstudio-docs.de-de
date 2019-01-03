@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925549"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Sie können eine Store-Regel, um eine Änderung von einem Element zu einem anderen im Visualisierungs- und Modellierungs-SDK (VMSDK) weitergegeben werden erstellen. Wenn eine Änderung auf ein Element in der Store erfolgt, werden Regeln ausgeführt werden, in der Regel, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzugefügt oder gelöscht wird. Sie können Regeln auf bestimmte Typen von Elementen, Formen und Diagrammen anfügen. Viele integrierte Features durch Regeln definiert werden: z. B. Regeln stellen sicher, dass ein Diagramm aktualisiert wird, wenn das Modell geändert wird. Sie können Ihrer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | Basisklasse | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Ein Element, eine Verknüpfung oder eine Form wird hinzugefügt.<br /><br /> Verwenden Sie diese Option, um neue Beziehungen, zusätzlich zu neuen Elementen zu erkennen. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Ein Domäne-Eigenschaftswert geändert wird. Das Methodenargument enthält die alten und neuen Werte.<br /><br /> Für Formen die, mit dieser Regel wird ausgelöst, wenn die integrierte `AbsoluteBounds` eigenschaftsänderungen, wenn die Form bewegt wird.<br /><br /> In vielen Fällen ist es einfacher, außer Kraft setzen `OnValueChanged` oder `OnValueChanging` in der Handler. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel in der Regel am Ende der Transaktion ausgeführt werden. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md). **Hinweis:** mit dieser Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und `DeleteRule` für die domänenbeziehung. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Ein Domäne-Eigenschaftswert geändert wird. Das Methodenargument enthält die alten und neuen Werte.<br /><br /> Für Formen die, mit dieser Regel wird ausgelöst, wenn die integrierte `AbsoluteBounds` eigenschaftsänderungen, wenn die Form bewegt wird.<br /><br /> In vielen Fällen ist es einfacher, außer Kraft setzen `OnValueChanged` oder `OnValueChanging` in der Handler. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel in der Regel am Ende der Transaktion ausgeführt werden. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md). **Hinweis**:  Mit dieser Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und `DeleteRule` für die domänenbeziehung. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Wird ausgelöst, wenn ein Element oder ein Link gelöscht werden soll. Die Eigenschaft ModelElement.IsDeleting gilt bis zum Ende der Transaktion. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Ausgeführt, wenn ein Element oder ein Link gelöscht wurde. Die Regel ausgeführt wird, nachdem alle anderen Regeln einschließlich DeletingRules ausgeführt wurden. ModelElement.IsDeleting ist "false", und ModelElement.IsDeleted ist "true". Um für eine nachfolgende Rollback zu ermöglichen, wird das Element nicht tatsächlich aus dem Arbeitsspeicher entfernt wird er aus Store.ElementDirectory entfernt. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Ein Element wird aus einem Speicher-Partition in eine andere verschoben.<br /><br /> (Beachten Sie, dass dies nicht mit der grafischen Position einer Form verknüpft ist.) |

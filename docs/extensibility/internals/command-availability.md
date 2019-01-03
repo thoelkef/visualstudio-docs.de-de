@@ -1,8 +1,6 @@
 ---
 title: Befehl Verfügbarkeit | Microsoft-Dokumentation
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915865"
 ---
 # <a name="command-availability"></a>Befehlsverfügbarkeit
 
@@ -28,17 +26,17 @@ Der Visual Studio-Kontext wird bestimmt, welche Befehle verfügbar sind. Je nach
 
 Die folgenden Befehl Kontexten, die die häufigsten Ursachen sind:
 
-- IDE-Geräte: Befehle, die von der IDE bereitgestellt sind immer verfügbar.
+- IDE-GERÄTE: Befehle, die von der IDE bereitgestellt sind immer verfügbar.
 
 - VSPackage: VSPackages können definieren, wenn Befehle sind, angezeigt oder ausgeblendet werden.
 
-- Projekt: Projekt-Befehle werden nur für das aktuell ausgewählte Projekt angezeigt.
+- Projekt: Projektbefehle werden nur für das aktuell ausgewählte Projekt.
 
-- Editor: Nur ein Editor kann zu einem Zeitpunkt aktiv. Befehle vom aktiven Editor zur Verfügung. Ein Editor arbeitet eng mit einem Sprachdienst. Der Sprachdienst muss die Befehle im Kontext des zugeordneten Editor verarbeiten.
+- Editor: Nur ein Editor kann jeweils aktiv sein. Befehle vom aktiven Editor zur Verfügung. Ein Editor arbeitet eng mit einem Sprachdienst. Der Sprachdienst muss die Befehle im Kontext des zugeordneten Editor verarbeiten.
 
-- Dateityp: ein Editor kann mehr als eine Art von Datei laden. Die verfügbaren Befehle können je nach Dateityp ändern.
+- Dateityp: Ein Editor kann mehr als eine Art von Datei geladen werden. Die verfügbaren Befehle können je nach Dateityp ändern.
 
-- Des aktiven Fensters: das letzte aktive Dokumentfenster den Benutzerkontext für die Benutzeroberfläche (UI) für tastenbindungen festgelegt. Ein Toolfenster, das eine Tabelle von Schlüssel-Bindung verfügt, die den internen Webbrowser ähnelt jedoch festlegen auch den UI-Kontext. Jede Registerkarte hat mit mehreren Registerkarten Dokumentfenster wie z. B. der HTML-Editor einen anderen Befehlskontext-GUID. Nach dem Registrieren eines Toolfensters ist es immer verfügbar, auf die **Ansicht** Menü.
+- Aktive Fenster: Die letzte aktive Fenster wird den Benutzerkontext für die Benutzeroberfläche (UI) für tastenzuordnungen. Ein Toolfenster, das eine Tabelle von Schlüssel-Bindung verfügt, die den internen Webbrowser ähnelt jedoch festlegen auch den UI-Kontext. Jede Registerkarte hat mit mehreren Registerkarten Dokumentfenster wie z. B. der HTML-Editor einen anderen Befehlskontext-GUID. Nach dem Registrieren eines Toolfensters ist es immer verfügbar, auf die **Ansicht** Menü.
 
 - UI-Kontext: Benutzeroberfläche-Kontexte werden durch die Werte der identifiziert die <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> Klasse, z. B. <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> , wenn die Projektmappe erstellt wird, oder <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> Wenn der Debugger aktiv ist. Mehrere UI-Kontext können gleichzeitig aktiv sein.
 

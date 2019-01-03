@@ -2,7 +2,6 @@
 title: Kontextmenüs im XML-Schema-Explorer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898894"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 
@@ -105,7 +104,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |**Alle Member anzeigen**|Sucht nach allen Mitgliedern der Attributgruppe und hebt sie hervor.|
 |**Alle Verweise anzeigen**|Sucht nach allen Verweisen auf die ausgewählte Attributgruppe (Attributgruppen mit `ref="selectedAttributeGroup"`) und hebt sie hervor.|
 
-## <a name="node-type-named-group"></a>Knotentyp: benannte Gruppe
+## <a name="node-type-named-group"></a>Knotentyp: Benannte Gruppe
  Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für benannte Gruppenknoten die folgenden Optionen:
 
 |Option|Beschreibung|

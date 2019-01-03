@@ -2,19 +2,18 @@
 title: Regelsatz für systemeigene empfohlene Regeln
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882801"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Regelsatz für systemeigene empfohlene Regeln
 
@@ -127,7 +126,7 @@ Die systemeigene empfohlene Regeln den Fokus auf die kritischsten und häufigste
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -228,16 +227,16 @@ Die systemeigene empfohlene Regeln den Fokus auf die kritischsten und häufigste
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
 |[C28285](../code-quality/c28285.md)|Syntaxfehler im Parameter für Funktion|
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
-|[C28287](../code-quality/c28287.md)|Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Unbekannter Parametername)|
-|[C28288](../code-quality/c28288.md)|Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
+|[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
+|[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
 |[C28301](../code-quality/c28301.md)|Keine Anmerkungen für die erste Deklaration der Funktion.|
-|[C28302](../code-quality/c28302.md)|Ein zusätzliches \_Deref\_ -Operator wurde in der Anmerkung gefunden.|
-|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger \_Deref\_ -Operator wurde in der Anmerkung gefunden.|
-|[C28304](../code-quality/c28304.md)|Ein falsch platzierter \_Notref\_ -Operator wurde gefunden, auf das Token angewendet.|
+|[C28302](../code-quality/c28302.md)|Ein zusätzlicher \_Deref\_-Operator wurde in der Anmerkung gefunden.|
+|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger \_Deref\_-Operator wurde in der Anmerkung gefunden.|
+|[C28304](../code-quality/c28304.md)|Ein falsch platzierter \_Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.|
 |[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|
 |[C28306](../code-quality/c28306.md)|Die Anmerkung zum Parameter ist veraltet|
 |[C28307](../code-quality/c28307.md)|Die Anmerkung zum Parameter ist veraltet|

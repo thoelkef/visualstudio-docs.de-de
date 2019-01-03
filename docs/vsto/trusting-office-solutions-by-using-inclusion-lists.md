@@ -1,9 +1,6 @@
 ---
 title: Vertrauen Sie Office-Projektmappen mithilfe von Aufnahmelisten
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857665"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vertrauen Sie Office-Projektmappen mithilfe von Aufnahmelisten
   Mithilfe von Aufnahmelisten können Benutzer Office-Projektmappen, die mit einem Zertifikat signiert sind, das den Herausgeber identifiziert, Vertrauenswürdigkeit gewähren. Aufnahmelisten sind benutzerspezifisch und können für Anpassungen auf Dokumentebene und VSTO-Add-Ins verwendet werden.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783700"
 ## <a name="see-also"></a>Siehe auch  
  [Gewähren von Vertrauen für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
-  
-  

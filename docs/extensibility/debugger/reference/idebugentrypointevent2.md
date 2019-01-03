@@ -1,9 +1,6 @@
 ---
-title: IDebugEntryPointEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugEntryPointEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEntryPointEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa36778960818fa6e4bfbd94f1718a01b2b6294
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5bf75f84d8adf6aa8786c02a6b5fb1a927be7595
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931115"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
-Die Debugging-Modul (DE) sendet diese Schnittstelle zu der Sitzung Debug-Manager (SDM), wenn das Programm wird gleich die erste Anweisung des Benutzercodes ausgeführt.  
+Die Debug-Engine (DE) sendet diese Schnittstelle für die Sitzung Debug-Manager (SDM), wenn die Anwendung der ersten Anweisung des Benutzercodes ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,15 +29,15 @@ IDebugEntryPointEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle als Teil seiner normalen Betrieb. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
+ Die DE implementiert diese Schnittstelle als Teil der normalen Vorgänge. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Der Code erstellt und sendet diese Ereignisobjekt zu debuggenden Programms geladen wurde und bereit zur Ausführung der ersten Anweisung des Benutzercodes ist. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn diese an die derzeit debuggte Programm angefügt.  
+ Die DE erstellt und dieses Ereignisobjekt sendet, wenn das derzeit debuggte Programm geladen wurde und bereit für die erste Anweisung des Benutzercodes ausgeführt wird. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
   
 ## <a name="remarks"></a>Hinweise  
- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) wird gesendet, wenn das Programm wird gleich die erste Anweisung auszuführen. Beispielsweise `IDebugEntryPoint2` wird gesendet, wenn das Programm zum Ausführen des Benutzers ist `main` Funktion.  
+ [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) wird gesendet, wenn die Anwendung die erste Anweisung ausgeführt wird. Z. B. `IDebugEntryPoint2` wird gesendet, wenn das Programm des Benutzers ausgeführt wird `main` Funktion.  
   
- Wenn die DE sendet `IDebugEntryPointEvent2`, die aktuelle Position der Code sollte bei der ersten Anweisung des Benutzercodes, z. B. `main`.  
+ Wenn die DE sendet `IDebugEntryPointEvent2`, die aktuelle Position der Code muss bei der ersten Anweisung des Benutzercodes, wie z. B. `main`.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

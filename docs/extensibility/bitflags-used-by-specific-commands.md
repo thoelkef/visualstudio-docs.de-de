@@ -1,9 +1,6 @@
 ---
 title: Von bestimmten Befehlen verwendete Bitflags | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875419"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Von bestimmten Befehlen verwendete Bitflags
 Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Festlegen von einem oder mehreren Bits in einem einzelnen Wert geändert werden. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle-Plug-in-API verwendet, werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.  
@@ -37,7 +34,7 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Das Quellcodeverwaltungs-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärdaten.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Dateityp ist Text.|  
-|`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig.   Legen Sie genau eines oder keines von beiden.|  
+|`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig. Legen Sie genau eines oder keines von beiden.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Store nur die neueste Version (keine Deltas).|  
   
 ## <a name="diff-flags"></a>Diff-flags  
@@ -46,7 +43,7 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorieren von Groß-/Kleinschreibung unterschieden.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von Leerzeichen Unterschiede. **Hinweis:** der `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von Leerzeichen Unterschiede. **Hinweis**:  Die `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen der gesamte Dateiinhalt.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Warteschlangentiefe von Checksum.|  
 |`SCC_DIFF_QD_TIME`|0 x 0040|Warteschlangentiefe von Datums-/Zeitstempel der Datei.|  
@@ -81,8 +78,8 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|Die IDE ist die Übergabe Verzeichnisse, Dateien nicht: Abrufen aller Dateien in diesen Verzeichnissen.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE ist die Übergabe Verzeichnisse: Diese Verzeichnisse und alle ihre Unterverzeichnisse zu erhalten.|  
+|`SCC_GET_ALL`|0x00000001L|Die IDE wird Verzeichnisse, Dateien nicht übergeben: Rufen Sie aller Dateien in diesen Verzeichnissen verwenden ab.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE wird Verzeichnisse übergeben: Rufen Sie diese Verzeichnisse und alle ihre Unterverzeichnisse.|  
   
 ## <a name="noption-values"></a>nOption Werte  
  Diese Flags werden verwendet, durch die [SccSetOption](../extensibility/sccsetoption-function.md) in die `nOption` Parameter.  

@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierLocale2 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortSupplierLocale2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1cd0160b1ec5b1c9d86c277f2b47011d1b7610c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915980"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Bietet Gebietsschema-Unterstützung für einen Port Lieferanten.  
+Stellt die Gebietsschema-Unterstützung für eines portanbieters bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +34,7 @@ IDebugPortSupplierLocale2 : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[setLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebietsschema für den Port Lieferanten fest.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebietsschema für den Anschlusslieferanten fest.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Portpriv.h  
@@ -47,6 +44,6 @@ IDebugPortSupplierLocale2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

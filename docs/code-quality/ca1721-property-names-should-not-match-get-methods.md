@@ -1,8 +1,7 @@
 ---
-title: 'CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen'
+title: 'CA1721: Eigenschaftennamen sollten nicht mit dem Get-Methoden übereinstimmen.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e0b9c348fc9131ede355c58408b517d20ed2500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920977"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Eigenschaftennamen sollten nicht mit dem Get-Methoden übereinstimmen.
 
 |||
 |-|-|
@@ -59,4 +58,4 @@ ms.locfileid: "45549676"
  [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: NACH MÖGLICHKEIT Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

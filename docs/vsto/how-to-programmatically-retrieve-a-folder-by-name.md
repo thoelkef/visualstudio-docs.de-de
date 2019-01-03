@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622ad7057b50f73dbd74108e3d9619017c354b86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872673"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens
   In diesem Beispiel wird ein Verweis auf einen benannten benutzerdefinierten Ordner und zeigt dann den Inhalt des Ordners.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35672339"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
- [Gewusst wie: programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Gewusst wie: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)  

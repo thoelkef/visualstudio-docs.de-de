@@ -2,21 +2,20 @@
 title: Aktivieren oder Deaktivieren der Codeanalyse
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905597"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren Sie und deaktivieren Sie der automatischen Codeanalyse für verwalteten code
 
 Sie können nach jedem Build von einem Projekt mit verwaltetem Code ausführen (statisch) Codeanalyse konfigurieren. Sie können festlegen anderer Code Analysis-Eigenschaften für jede Buildkonfiguration, z. B. debug und release.
 

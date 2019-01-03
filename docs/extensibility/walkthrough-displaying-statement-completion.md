@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986634"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen Anweisungsvervollständigung
+# <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren die Bezeichner für die Sie die Vervollständigung bereitstellen möchten, und klicken Sie dann auszulösen eine vervollständigungssitzung implementieren. Sie können Anweisungsvervollständigung im Kontext von einem Sprachdienst zu definieren, Definieren eigener Dateinamenerweiterung und Content-Type und -Vervollständigung für nur diesen Typ dann anzeigen. Oder Sie können die Vervollständigung für einem vorhandenen Inhaltstyp auslösen, z. B. "nur-Text". In dieser exemplarischen Vorgehensweise zeigt, wie Anweisungsvervollständigung für den Inhaltstyp "nur-Text", den Inhaltstyp der Textdateien handelt, ausgelöst wird. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code und XML-Dateien.  
   
  Anweisungsvervollständigung in der Regel durch die Eingabe bestimmter Zeichen ausgelöst wird – z. B. durch den Anfang eines Bezeichners, z. B. "using" eingeben. Es ist in der Regel durch Drücken von geschlossen der **LEERTASTE**, **Registerkarte**, oder **EINGABETASTE** Schlüssel, um eine Auswahl zu übernehmen. Können Sie die IntelliSense-Funktionen, die ausgelöst wird, wenn ein Zeichen eingeben, mit einem Befehlshandler für die Tastatureingaben implementieren (die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle) und ein Handler für Anbieter, implementiert die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> Schnittstelle. Zum Erstellen der abschlussquelle, die die Liste der Bezeichner, die in der Anweisungsvervollständigung beteiligt sind ist, implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Schnittstelle und einen Vervollständigungsanbieter für die Quelle (die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> Schnittstelle). Die Anbieter sind Komponenten des Managed Extensibility Framework (MEF). Sie sind verantwortlich für die Quell- und Controller-Klassen und-importieren Dienste und Brokern – z. B. die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, dem ermöglicht die Navigation im Textpuffer, und die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, die löst der vervollständigungssitzung.  
@@ -205,4 +202,4 @@ Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren di
 4.  Wenn Sie zuerst "a", und klicken Sie dann "d" eingeben, wird eine Liste mit "hinzufügen" und "Anpassung" sollte angezeigt werden. Beachten Sie, dass Addition ausgewählt ist. Wenn Sie eine andere "d" eingeben, sollte die Liste enthalten, nur "hinzufügen", die jetzt ausgewählt wird. Sie können "hinzufügen" einen Commit ausführen, durch Drücken der **LEERTASTE**, **Registerkarte**, oder **EINGABETASTE** Schlüssel, oder schließen Sie die Liste, indem Sie die ESC-Taste, oder jeder andere Schlüssel eingeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

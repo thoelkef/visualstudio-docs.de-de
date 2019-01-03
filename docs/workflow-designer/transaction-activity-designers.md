@@ -1,22 +1,21 @@
 ---
-title: Workflow-Designer - Transaktionsaktivitätsdesigner
+title: Workflow-Designer - Transaktions-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6019675929870309c48398a12dbb43f6c34fce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8bf5d3042d6d8556ed63d1fe97f17e924049e96a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922941"
 ---
 # <a name="transaction-activity-designers"></a>Transaktionsaktivitätsdesigner
 
-Transaktionsaktivitätsdesigner werden verwendet, um Transaktionsaktivitäten, z. B. das Kompensieren oder Bestätigen, zu erstellen und zu konfigurieren. Die Themen in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführten enthalten Anleitungen zum Workflow-Designer-Aktivität und den Vorlagen-Designer verwenden.
+Transaktionsaktivitätsdesigner werden verwendet, um Transaktionsaktivitäten, z. B. das Kompensieren oder Bestätigen, zu erstellen und zu konfigurieren. Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle aufgeführten enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivität und den Vorlagen-Designer.
