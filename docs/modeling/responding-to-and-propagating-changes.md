@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905201"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagieren auf und Propagieren von Änderungen
 Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, die die Änderung auf andere Teile des Modells oder auf externe Ressourcen wie Dateien, Datenbanken oder andere Komponenten weitergibt.
@@ -31,9 +30,9 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 |Überschreiben Sie Handler für wertänderungen von z. B. "onvaluechanging" und "OnDeleting"|Halten Sie verschiedene Elemente synchron zu, und bewahren Sie externe Werte synchron mit dem Modell.<br /><br /> Schränken Sie die Werte für den definierten Bereichen.<br /><br /> Wird aufgerufen, unmittelbar vor und nach dem Eigenschaftswert und andere Änderungen. Sie können die Änderung durch Auslösen einer Ausnahme beendet.|[Handler für Wertänderungen von Domäneneigenschaften](../modeling/domain-property-value-change-handlers.md)|
 |Regeln|Sie können Regeln definieren, die für die Ausführung unmittelbar vor dem Ende einer Transaktion in der Warteschlange befinden in denen eine Änderung geschehen ist. Sie werden nicht auf Rückgängig- oder Wiederholen ausgeführt. Verwenden Sie sie an, um einen Teil des Speichers mit einem anderen synchron bleiben.|[Regeln propagieren Änderungen im Modell](../modeling/rules-propagate-changes-within-the-model.md)|
 |Store-Ereignisse|Die Modellierung Store bietet die Benachrichtigungen von Ereignissen, z. B. hinzufügen oder Löschen eines Elements oder der Link den Wert einer Eigenschaft ändern. Das Ereignis wird auch für rückgängig und wiederholen ausgeführt. Verwenden Sie Speicherereignisse, um Werte zu aktualisieren, die nicht im Speicher vorhanden sind.|[Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|Ereignisse für .NET|Formen besitzen, Ereignishandler, die auf Mausklicks und anderen Bewegungen zu reagieren. Sie müssen für diese Ereignisse für jedes Objekt zu registrieren. Registrierung erfolgt in der Regel in einer Außerkraftsetzung der InitializeInstanceResources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion.|[Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|Ereignisse für .NET|Formen besitzen, Ereignishandler, die auf Mausklicks und anderen Bewegungen zu reagieren. Sie müssen für diese Ereignisse für jedes Objekt zu registrieren. Registrierung erfolgt in der Regel in einer Außerkraftsetzung der InitializeInstanceResources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion.|[Vorgehensweise: Abfangen eines Klicks auf einer Form oder eines Decorator-Element](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |Regeln für Grenzen|Eine begrenzungsregel wird verwendet, insbesondere, um die Grenzen einer Form zu beschränken.|[BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|Regeln für die Adressenauswahl|Auswahlregeln beschränken insbesondere an, was der Benutzer auswählen kann.|[Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|Regeln für die Adressenauswahl|Auswahlregeln beschränken insbesondere an, was der Benutzer auswählen kann.|[Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Geben Sie die Modellelemente-Zustände, die mithilfe der Features von Formen und Konnektoren, z. B. Schatten, Pfeilspitzen, Farbe, und die Linienstärke und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
 ## <a name="comparing-rules-and-store-events"></a>**Vergleichen von Regeln und Store-Ereignisse**
@@ -53,5 +52,5 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
+- [Vorgehensweise: Abfangen eines Klicks auf einer Form oder eines Decorator-Element](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

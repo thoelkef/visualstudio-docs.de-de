@@ -2,7 +2,6 @@
 title: XML-Dokumenteigenschaften, Eigenschaftenfenster
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913309"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML-Dokumenteigenschaften, Eigenschaftenfenster
 
-Die **Eigenschaften** Fenster enthält grundlegende Informationen über das Dokument, das in der XML-Editor aktiv ist. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
+Die **Eigenschaften** Eigenschaftenfenster liefert grundlegende Informationen über das Dokument, das in der XML-Editor aktiv ist. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
 
 > [!NOTE]
 > Alle XML-Dokumenteigenschaften werden in der Projektmappe gespeichert. Dadurch müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.
@@ -30,7 +29,7 @@ Die **Eigenschaften** Fenster enthält grundlegende Informationen über das Doku
 
  **Eingabe**
 
- Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Es dient der **ShowXSLT Ausgabe** Befehl. Ein Dokument kann ausgewählt werden, verwenden die Schaltfläche zum Durchsuchen (**...** ) Schaltfläche.
+ Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Hiermit wird durch die **ShowXSLT Ausgabe** Befehl. Ein Dokument mit der Schaltfläche ausgewählt werden kann (**...** ) Schaltfläche.
 
  Diese Eigenschaft ist nur sichtbar, wenn derzeit eine XSLT-Datei im Editor-Fenster aktiv ist.
 
@@ -42,15 +41,15 @@ Die **Eigenschaften** Fenster enthält grundlegende Informationen über das Doku
 
  **Schemas**
 
- Die für die Validierung verwendeten Schemata. Die Schaltfläche öffnet die **XSD-Schemas** im Dialogfeld zum Auswählen der zu verwendenden Schemas verwendet werden kann.
+ Die für die Validierung verwendeten Schemata. Die Schaltfläche öffnet die **XSD-Schemas** das Dialogfeld zum Auswählen der zu verwendenden Schemas verwendet werden kann.
 
  Sie können den Pfad zu den Schemata auch eingeben. Wenn mehrere Schemata angegeben sind, muss jeder Schemapfad in doppelte Anführungszeichen eingeschlossen werden.
 
  **Stylesheet**
 
- Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren bei der **XSLT-Ausgabe anzeigen** -Befehl verwendet wird. Sollte dieses Feld leer bei der **XSLT-Ausgabe anzeigen** Befehl verwendet wird, den der Editor verwendet die angegebene Wert der `xml-stylesheet` -verarbeitungsanweisung des Dokuments oder es fordert Sie zum Eingeben des Dateinamens.
+ Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren. wenn die **XSLT-Ausgabe anzeigen** -Befehl wird verwendet. Wenn dieses Feld leer, wenn ist die **XSLT-Ausgabe anzeigen** -Befehl wird verwendet, verwendet der Editor des Werts der `xml-stylesheet` -verarbeitungsanweisung des Dokuments, oder es fordert Sie zur Eingabe des Dateinamens.
 
- Wenn Sie eine XSLT-Datei bearbeiten, kann diese Eigenschaft verwendet werden, um anzugeben, dass ein anderes Stylesheet werden sollte verwendet werden, wenn die **XSLT-Ausgabe anzeigen** oder **XSLT Debuggen** Befehl ausgewählt ist. Dies kann z. B. beim Bearbeiten eines Stylesheets der Fall sein, das in einem übergeordneten Stylesheet enthalten ist.
+ Beim Bearbeiten einer XSLT-Datei kann diese Eigenschaft verwendet werden, um anzugeben, dass ein anderes Stylesheet sollte verwendet werden, wenn die **XSLT-Ausgabe anzeigen** oder **XSLT Debuggen** Befehl aktiviert ist. Dies kann z. B. beim Bearbeiten eines Stylesheets der Fall sein, das in einem übergeordneten Stylesheet enthalten ist.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,6 +1,5 @@
 ---
 title: Image-Dienst und -Katalog | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899703"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und-Katalog
 Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg auf den Dienst für Visual Studio-Images und Image-Katalog, die in Visual Studio 2015 eingeführt.  
@@ -108,7 +107,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |**Unterelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle manifest|  
 |GUID|Das Symbol eine GUID darstellt, und Formatieren der GUID übereinstimmen|  
-|Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
+|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
 |Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert|  
   
  Symbole sind Groß-/Kleinschreibung beachtet und die referenzierten $(symbol-name)-Syntax verwenden:  
@@ -149,7 +148,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|  
   
  **Quelle**  
@@ -166,7 +165,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mithilfe der Anwendung: / / / der Autorität<br />– Ein Ressourcenverweis absolute-Komponente<br />– Ein Pfad zu einer Datei enthält eine systemeigene Ressource|  
-|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> *Licht:* die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> *Hohem Kontrast:* die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* kann die Quelle eines dunklen Hintergrunds im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn Hintergrund ausgelassen oder legen Sie auf *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
+|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> *Licht:* Die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* Die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> *Hohem Kontrast:* Die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* Die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* Die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn Hintergrund ausgelassen oder legen Sie auf *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
 
 |||  
   
@@ -190,7 +189,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|[Erforderlich] Der Typ der systemeigene Ressource entweder XAML oder PNG-Datei|  
-|Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
+|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
   
  **ImageList**  
   
@@ -207,7 +206,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |Extern|[Optional, standardmäßig "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
   
  Der Moniker für das enthaltene Image keine auf ein Bild in das aktuelle Manifest definiert. Wenn das eigenständige Image aus der Abbildbibliothek gefunden werden kann, wird ein leeres Platzhalterbild an seiner Stelle verwendet werden.  

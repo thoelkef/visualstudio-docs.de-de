@@ -1,9 +1,6 @@
 ---
 title: Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930712"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfügbar machen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Wenn mehr als eine quellcodeverwaltung VSPackage registriert ist, kann der Benutzer, die VSPackages, laden Sie zur richtigen Zeit jeweils auswählen. Finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) für Weitere Informationen zu VSPackages und wie Sie sie zu registrieren.  
@@ -36,9 +33,9 @@ Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfüg
   
 - Paket-GUID: Dies ist die Haupt-GUID für das Paket, das Implementierung des Datenquellen-Steuerelements (in diesem Abschnitt als ID_Package bezeichnet) enthält.  
   
-- Datenquellen-Steuerelement-GUID: Dies ist eine GUID für das Quellcodeverwaltungs-VSPackage verwendet, um mit der Visual Studio Quellcode-Verwaltungsstub registrieren und wird auch als eine befehlsbenutzeroberflächenkontext GUID verwendet. Die Datenquellen-Steuerelement-GUID ist die quellcodeverwaltung GUID registriert. Im Beispiel wird die quellcodeverwaltung GUID ID_SccProvider aufgerufen.  
+- Datenquellen Sie-Steuerelement-GUID: Dies ist eine GUID für das Quellcodeverwaltungs-VSPackage verwendet, um mit der Visual Studio Quellcode-Verwaltungsstub registrieren und wird auch als eine befehlsbenutzeroberflächenkontext GUID verwendet. Die Datenquellen-Steuerelement-GUID ist die quellcodeverwaltung GUID registriert. Im Beispiel wird die quellcodeverwaltung GUID ID_SccProvider aufgerufen.  
   
-- Source-Control-Dienst-GUID: Dies ist der private-GUID, die von Visual Studio (in diesem Abschnitt als SID_SccPkgService bezeichnet) verwendet. Darüber hinaus muss das Quellcodeverwaltungspaket anderen GUIDs für VSPackages, Toolfenster, definieren und so weiter.  
+- Quellcodeverwaltungsdienst GUID: Dies ist der private-GUID, die von Visual Studio (in diesem Abschnitt als SID_SccPkgService bezeichnet) verwendet. Darüber hinaus muss das Quellcodeverwaltungspaket anderen GUIDs für VSPackages, Toolfenster, definieren und so weiter.  
   
   Die folgenden Registrierungseinträge müssen durch ein Quellcodeverwaltungs-VSPackage vorgenommen werden:  
   

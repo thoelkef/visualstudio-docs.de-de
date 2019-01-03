@@ -1,8 +1,7 @@
 ---
-title: 'CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen'
+title: 'CA2215: Dispose-Methoden müssen die Dispose der Basisklasse aufrufen.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2215
@@ -17,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11359e021d5c297c0782bf95fe35997b0a1b5be5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8531bfd8407415aa1868fb5e1f633be442ce9bc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844222"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose-Methoden müssen die Dispose der Basisklasse aufrufen.
 
 |||
 |-|-|

@@ -1,21 +1,20 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: definieren und Verarbeiten von aktivitätsdelegaten'
+title: 'Workflow-Designer – Vorgehensweise: Definieren und Verarbeiten von aktivitätsdelegaten'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908461"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -23,7 +22,7 @@ ms.locfileid: "49916357"
 
 ## <a name="define-an-activity-delegate"></a>Definieren eines Aktivitätsdelegaten
 
-1. Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
 2. In der **neues Projekt** wählen Sie im Dialogfeld die **Workflow** Kategorie auf der linken Seite, und wählen Sie dann die **Konsolenanwendung für Workflows** Projektvorlage. Nennen Sie das Projekt (falls gewünscht), und klicken Sie auf **Ok**.
 

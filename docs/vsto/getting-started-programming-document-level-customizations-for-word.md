@@ -1,9 +1,6 @@
 ---
 title: Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904798"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
   Wenn Sie gerade die Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word mit Visual Studio Schritte ersten, ist hier was Sie wissen müssen.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648412"
  [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)   
  [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
  [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)  
-  
-  

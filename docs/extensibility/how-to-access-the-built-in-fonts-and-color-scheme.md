@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Zugreifen auf die integrierten Schriftarten und Farbschemas | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874601"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Gewusst wie: Zugriff auf die integrierten Schriftarten und Farbe Ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbe ccheme
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, die im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
 
  Um integrierte Schriftarten und Farbschema zu verwenden, müssen eine VSPackage ein:
@@ -62,7 +59,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
     |----------|----------|----------|-----------------|
     |Kategorie|REG_SZ|GUID|Eine beliebige GUID, die eine Kategorie identifiziert, die die vordefinierten Schriftart- und Farbschema enthält.|
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Diese GUID wird von allen VSPackages verwendet, die die Standardkonfigurationen für Schriftart und Farbe zu verwenden.|
-    |"NameID"|REG_DWORD|Id|Die Ressourcen-ID einer lokalisierbaren Kategorienamen im VSPackage.|
+    |"NameID"|REG_DWORD|ID|Die Ressourcen-ID einer lokalisierbaren Kategorienamen im VSPackage.|
     |ToolWindowPackage|REG_SZ|GUID|Die GUID der VSPackage-Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.|
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Um die Verwendung von vom System bereitgestellten Schriftarten und Farben zu initiieren.

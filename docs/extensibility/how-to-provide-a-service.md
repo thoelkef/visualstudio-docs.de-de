@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Bereitstellen ein Diensts | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Geben Sie einen Dienst | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857814"
 ---
-# <a name="how-to-provide-a-service"></a>Gewusst wie: Bereitstellen ein Diensts
+# <a name="how-to-provide-a-service"></a>Vorgehensweise: Geben Sie einen Dienst
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst bereitstellen zu können, muss eine VSPackage registrieren den Dienst mit Visual Studio, und fügen Sie den Dienst.  
   
  Die <xref:Microsoft.VisualStudio.Shell.Package> -Klasse implementiert beide <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> und <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> enthält die Rückrufmethoden, die Dienste nach Bedarf bereitstellen.  
@@ -142,6 +139,6 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
      Der Wert des `helloString` sollte "Hello" sein.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
+ [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
  [Verwenden und Dienste bereitstellen](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)
