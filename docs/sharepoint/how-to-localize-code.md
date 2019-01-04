@@ -1,13 +1,8 @@
 ---
 title: 'Vorgehensweise: Lokalisieren von Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990791"
 ---
-# <a name="how-to-localize-code"></a>Vorgehensweise: Lokalisieren von Code
+# <a name="how-to-localize-code"></a>Vorgehensweise: Lokalisieren von code
   In nicht lokalisiertem Code werden hartcodierte Zeichenfolgenwerte verwendet. Zum Lokalisieren der Codezeichenfolgen werden diese durch Aufrufe von <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ersetzt – einer Methode zum Verweisen auf lokalisierte Ressourcen.  
   
 ## <a name="localize-code"></a>Lokalisieren von code  
@@ -59,7 +54,7 @@ ms.locfileid: "37119172"
   
 9. In der **Speicherort** Feld, das einen Kultur-ID-Ordner den Pfad zum Speicherort, z. B. voranstellen *de-DE\\\<Projektelementname >. "Resources.dll"-Datei*.  
   
-10. Sofern von der Lösung nicht bereits auf die Assembly "System.Web" verwiesen wird, fügen Sie einen entsprechenden Verweis hinzu, und fügen Sie im Code eine Direktive zu <xref:System.Web> ein.  
+10. Sofern von der Lösung nicht bereits auf die Assembly "System.Web" verwiesen wird, fügen Sie einen entsprechenden Verweis hinzu, und fügen Sie im Code eine Anweisung zu <xref:System.Web> ein.  
   
 11. Suchen Sie im Code nach allen hartcodierten Zeichenfolgen, die Benutzern angezeigt werden, z. B. Benutzeroberflächentexte, Fehler und Meldungstexte. Ersetzen Sie diese durch einen Aufruf der <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>-Methode mit der folgenden Syntax:  
   
@@ -76,6 +71,5 @@ ms.locfileid: "37119172"
 ## <a name="see-also"></a>Siehe auch
  [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)   
  [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)   
- [Vorgehensweise: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)   
- [Gewusst wie: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Vorgehensweise: Lokalisieren von ASPX-markup](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Vorgehensweise: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)  
