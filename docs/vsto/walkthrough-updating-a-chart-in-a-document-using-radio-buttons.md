@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943235"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern
   Diese Vorgehensweise zeigt Ihnen, wie Sie Optionsfelder in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um Benutzern die Möglichkeit zu geben, Diagrammformatvorlagen im Dokument auszuwählen.  
@@ -76,7 +73,7 @@ ms.locfileid: "49904673"
   
 6.  Auf der **Layout** Registerkarte die **Formatobjekt** wählen Sie im Dialogfeld **Quadrat** , und klicken Sie auf **OK**.  
   
-## <a name="add-a-user-control-to-the-project"></a>Fügen Sie dem Projekt ein Benutzersteuerelement  
+## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt  
  Optionsfelder in einem Dokument schließen sich standardmäßig nicht gegenseitig aus. Sie können dafür sorgen, dass sie ordnungsgemäß funktionieren, indem Sie sie einem Benutzersteuerelement hinzufügen und dann Code schreiben, um die Auswahl zu steuern.  
   
 ### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu  
@@ -219,5 +216,3 @@ ms.locfileid: "49904673"
  [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)   
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
  [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

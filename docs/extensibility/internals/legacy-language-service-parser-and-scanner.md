@@ -1,9 +1,6 @@
 ---
 title: Ältere Sprachdienstparser und Scanner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941848"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des Sprachdiensts. Die Managed Package Framework (MPF)-Language-Klassen erfordern einen Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalischer Token, und klicken Sie dann identifiziert diese Token nach Typ und Funktion.  
@@ -46,7 +43,7 @@ namespace MyNamespace
 |----------------|----------------|  
 |Namespace "," öffentlich "void"-Klasse, Int|keyword|  
 |=|operator|  
-|{ } ( ) ;|Trennzeichen|  
+|{ } ( ) ;|Trennzeichen (delimiter)|  
 |MyNamespace "," MyClass "," MyFunction "," arg1 "," var1|identifier|  
 |MyNamespace|namespace|  
 |MyClass|Klasse|  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Fertig.  
   
 ### <a name="summary"></a>Zusammenfassung  
- Der übereinstimmenden geschweiften Klammern-Vorgang ist in der Regel auf einfache Paare von Sprachelementen beschränkt. Komplexere Elemente wie die übereinstimmende Tripel ("`if(...)`","`{`"und"`}`", oder "`else`","`{`"und"`}`"), kann als Teil eines Vorgangs wortvervollständigung hervorgehoben werden. Wenn z. B. das Wort "else" abgeschlossen ist, den entsprechenden "`if`"-Anweisung kann hervorgehoben werden. Gäbe es eine Reihe von `if` / `else if` Anweisungen, die alle von ihnen mithilfe des gleichen Mechanismus verwenden, als zueinander passende Klammern hervorgehoben werden können. Die <xref:Microsoft.VisualStudio.Package.Source> Basisklasse unterstützt bereits, wie folgt: die Überprüfung der token Triggerwert zurückgeben muss <xref:Microsoft.VisualStudio.Package.TokenTriggers> in Kombination mit den Triggerwert <xref:Microsoft.VisualStudio.Package.TokenTriggers> für das Token, das vor die Position liegt.  
+ Der übereinstimmenden geschweiften Klammern-Vorgang ist in der Regel auf einfache Paare von Sprachelementen beschränkt. Komplexere Elemente wie die übereinstimmende Tripel ("`if(...)`","`{`"und"`}`", oder "`else`","`{`"und"`}`"), kann als Teil eines Vorgangs wortvervollständigung hervorgehoben werden. Wenn z. B. das Wort "else" abgeschlossen ist, den entsprechenden "`if`"-Anweisung kann hervorgehoben werden. Gäbe es eine Reihe von `if` / `else if` Anweisungen, die alle von ihnen mithilfe des gleichen Mechanismus verwenden, als zueinander passende Klammern hervorgehoben werden können. Die <xref:Microsoft.VisualStudio.Package.Source> Basisklasse unterstützt bereits, wie folgt: Die Überprüfung der token Triggerwert zurückgeben muss <xref:Microsoft.VisualStudio.Package.TokenTriggers> in Kombination mit den Triggerwert <xref:Microsoft.VisualStudio.Package.TokenTriggers> für das Token, das vor die Position liegt.  
   
  Weitere Informationen finden Sie unter [Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   

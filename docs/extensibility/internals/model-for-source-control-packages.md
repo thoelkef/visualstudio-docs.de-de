@@ -1,9 +1,6 @@
 ---
-title: Modell für Steuerelement Quellpakete | Microsoft Docs
-ms.custom: ''
+title: Modell für Quellcodeverwaltungspakete | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954499"
 ---
-# <a name="model-for-source-control-packages"></a>Modell für die Quellpakete-Steuerelement
-Die folgenden Modell stellt ein Beispiel für ein Steuerelement Source-Implementierung. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die Umgebung-Dienste, die Sie aufrufen müssen. Wie alle Dienste rufen Sie tatsächlich auf die Methoden der einer bestimmten Schnittstelle, die Sie über den Dienst zu erhalten. Die Namen der Klassen werden identifiziert, damit sie einfacher sehen, wie Datenquellen-Steuerelements durchgeführt wird.  
+# <a name="model-for-source-control-packages"></a>Modell für Quellcodeverwaltungspakete
+Das folgende Modell stellt ein Beispiel für eine Source-Control-Implementierung dar. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die umgebungsdienste, die aufgerufen werden muss. Wie alle Dienste rufen Sie tatsächlich die Methoden der einer bestimmten Schnittstelle, die Sie über den Dienst zu erhalten. Die Namen der Klassen werden identifiziert, damit leichter das finden Sie unter wie Datenquellen-Steuerelement ausgeführt wird.  
   
- ![SCC&#95;TUP Beispiele](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
-Beispiel-Quellcodeverwaltungsprojekt  
+ ![SCC&#95;KRIPT Beispiele](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+Beispiel für Quellcodeverwaltungs-Projekt  
   
 ## <a name="interfaces"></a>Schnittstellen  
- Sie können für Ihre neue Projekttypen in Visual Studio mit der Liste der Schnittstellen, die in der folgenden Tabelle aufgeführten Datenquellen-Steuerelements implementieren.  
+ Sie können Datenquellen-Steuerelement implementieren, für Ihre neue Projekttypen in Visual Studio mit der Liste der Schnittstellen, die in der folgenden Tabelle gezeigt.  
   
 |Interface|Mit|  
 |---------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Wird von Projekten und Editoren, bevor Sie sie speichern oder ändern ("dirty")-Dateien. Diese Schnittstelle erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Aufgerufen von Projekten, zum Anfordern von Berechtigungen zum Hinzufügen, entfernen Sie oder Umbenennen Sie einer Datei oder eines Verzeichnisses. Diese Schnittstelle wird auch aufgerufen, Projekte zu informieren, dass die Umgebung, wenn ein genehmigten hinzufügen, entfernen oder Umbenennen von Aktion abgeschlossen ist. Wird darauf mit der <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> Dienst.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Wird von Projekten und Editoren ein, bevor Sie sie speichern oder Änderung (geändert)-Dateien. Diese Schnittstelle erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Service.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Wird von Projekten für eine Berechtigung zum Hinzufügen, entfernen oder Umbenennen einer Datei oder eines Verzeichnisses aufgerufen. Diese Schnittstelle wird auch von Projekten aufgerufen, zu informieren, dass die Umgebung aus, wenn eine genehmigte hinzufügen, entfernen oder Umbenennen der Aktion abgeschlossen ist. Erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> Service.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Durch jede Entität, die registriert wird, um benachrichtigt zu werden, wenn Projekte hinzufügen, umbenennen oder einer Datei oder eines Verzeichnisses entfernen implementiert. Rufen Sie zum Registrieren für die ereignisbenachrichtigung <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Wird von Projekten, zum Registrieren bei das Quellcodeverwaltungspaket und zum Abrufen von Informationen zum Status des Datenquellen-Steuerelement aufgerufen. Diese Schnittstelle erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> Dienst.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementiert das Projekt so reagieren Sie auf der Quelle steueranforderungen Informationen zu Dateien und beim Abrufen der Quelle Steuerung von Einstellungen für die Projektdatei erforderlich.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Wird von Projekten, zum Registrieren bei das Quellcodeverwaltungspaket und zum Abrufen von Informationen über Quellcodeverwaltungsstatus aufgerufen. Diese Schnittstelle erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> Service.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementiert das Projekt zum Reagieren auf Anforderungen von Datenquellen-Steuerelement für Informationen zu Dateien und beim Abrufen der Quelle verwaltungseinstellungen, die für die Projektdatei erforderlich.|  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

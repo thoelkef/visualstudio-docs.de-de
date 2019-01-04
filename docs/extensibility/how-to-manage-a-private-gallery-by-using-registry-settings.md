@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986972"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Gewusst wie: Verwalten ein privates Katalogs mithilfe von registrierungseinstellungen
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von registrierungseinstellungen
 Wenn Sie ein Administrator oder Entwickler einer Isolated Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, die Samples Gallery oder private Kataloge steuern. Um einen Katalog verfügbar oder nicht verfügbar machen, erstellen eine *PKGDEF* -Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.  
   
 ## <a name="manage-private-galleries"></a>Verwalten Sie private Kataloge  
@@ -29,7 +26,7 @@ Wenn Sie ein Administrator oder Entwickler einer Isolated Shell-Erweiterung sind
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  

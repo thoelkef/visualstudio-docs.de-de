@@ -1,6 +1,5 @@
 ---
 title: Visual Studio-Vorlage Manifest Schemareferenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586305"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961954"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio-Vorlage manifest Schemareferenz
 Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman*) Dateien, die generiert werden, die für Visual Studio Projekt- oder Elementvorlagen. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.  
   
- : Da es sich um eine separate Element und den Projektverzeichnissen-Vorlage vorhanden sind, müssen ein Manifest noch nie eine Kombination von Element- und Projektvorlagen.  
+ : Da separate Element und den Projektverzeichnissen-Vorlage vorhanden sind, müssen ein Manifest noch nie eine Kombination von Element- und Projektvorlagen.  
   
 > [!IMPORTANT]
 >  Dieses Manifest ist ab Visual Studio 2017 verfügbar.  
@@ -29,9 +28,9 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
   
 ### <a name="attributes"></a>Attribute  
   
--   **Version**: eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.  
+-   **Version**: Eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.  
   
--   **Gebietsschema**: eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.  
+-   **Gebietsschema**: Eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
@@ -46,11 +45,11 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
  Der Container der Vorlage manifest Elemente. Ein Manifest verfügt über eine Vorlagencontainers für jede Vorlage, die sie definiert.  
   
 ### <a name="attributes"></a>Attribute  
- **VSTemplateType**: ein Zeichenfolgenwert, der angibt, den Typ der Vorlage (`"Project"`, `"Item"`, oder `"ProjectGroup"`). Erforderlich  
+ **VSTemplateType**: Ein Zeichenfolgenwert, der angibt, den Typ der Vorlage (`"Project"`, `"Item"`, oder `"ProjectGroup"`). Erforderlich  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
--   **RelativePathOnDisk**: der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zu dem Verzeichnis, das die Vorlagendateien enthält. Vorlagen als "bereitgestellt" eine *ZIP* -Datei in diesen Pfad muss der Pfad zu der *ZIP* Datei.  
+-   **RelativePathOnDisk**:  Der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zu dem Verzeichnis, das die Vorlagendateien enthält. Vorlagen als "bereitgestellt" eine *ZIP* -Datei in diesen Pfad muss der Pfad zu der *ZIP* Datei.  
   
 -   ** VSTemplateHeader: Ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.  
   
@@ -67,13 +66,13 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
--   **RelativePath**: der Pfad der Vorlage. Es können nur einen Eintrag pro Pfad vorhanden sein, damit die erste Bedingung für alle Manifeste gewinnen wird.  
+-   **RelativePath**: Der Pfad der Vorlage. Es können nur einen Eintrag pro Pfad vorhanden sein, damit die erste Bedingung für alle Manifeste gewinnen wird.  
   
--   **LocalizedName**: ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Dies ist optional.  
+-   **LocalizedName**: Ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Dies ist optional.  
   
--   **SortOrder**: eine Zeichenfolge, die Sortierreihenfolge angibt. Dies ist optional.  
+-   **SortOrder**: Eine Zeichenfolge, die Sortierreihenfolge angibt. Dies ist optional.  
   
--   **ParentFolderOverrideName**: den außer Kraft gesetzten Namen des übergeordneten Ordners. Dies ist optional. Dieses Element verfügt über eine **Namen** Attribut, das einen Zeichenfolgenwert, der den Namen angibt.  
+-   **ParentFolderOverrideName**: Die außer Kraft gesetzten Namen des übergeordneten Ordners. Dies ist optional. Dieses Element verfügt über eine **Namen** Attribut, das einen Zeichenfolgenwert, der den Namen angibt.  
   
 ### <a name="parent-element"></a>Übergeordnetes Element  
  **VSTemplateManifest**  
@@ -83,9 +82,9 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
   
 ### <a name="attributes"></a>Attribute  
   
--   **Paket**: ein Zeichenfolgenwert, der angibt, das Paket. Dies ist optional.  
+-   **Paket**: Ein Zeichenfolgenwert, der angibt, das Paket. Dies ist optional.  
   
--   **ID**: ein Zeichenfolgenwert, der angibt, die-ID. Dies ist optional.  
+-   **ID**: Ein Zeichenfolgenwert, der angibt, die-ID. Dies ist optional.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  

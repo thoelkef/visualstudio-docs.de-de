@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerField | Microsoft Docs
-ms.custom: ''
+title: IDebugPointerField | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947893"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
-Diese Schnittstelle stellt einen Zeigertyp.  
+Diese Schnittstelle stellt einen Zeiger dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,10 +29,10 @@ IDebugPointerField : IDebugContainerField
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Symbol-Anbieter implementiert diese Schnittstelle, um einen Zeiger darstellen.  
+ Die symbolanbieter implementiert diese Schnittstelle, um einen Zeiger darstellt.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) gibt `FIELD_TYPE_POINTER`.  
+ Verwendung [QueryInterface](/cpp/atl/queryinterface) dieser Schnittstelle vom Abrufen der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) gibt `FIELD_TYPE_POINTER`.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Zusätzlich zu den Methoden für die `IDebugField` und `IDebugContainerField` Schnittstellen, die diese Schnittstelle implementiert, die folgende Methode:  
@@ -45,7 +42,7 @@ IDebugPointerField : IDebugContainerField
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt das Ziel des Zeigers.|  
   
 ## <a name="remarks"></a>Hinweise  
- In C/C++ kann ein Zeiger auf einen Container sein, wenn er mit der Arraynotation verwendet wird. Angenommen, `char *pString`, `pString` verfügt über einen Typ eines Zeigers auf `char`. `pString[3]` weist den Typ von einem Container ist ein Zeiger auf `char` , verweist das vierte Element des Containers.  
+ In C/C++ kann ein Zeiger auf einen Container sein, wenn sie mit der Arraynotation verwendet wird. Angenommen, `char *pString`, `pString` verfügt über einen Typ eines Zeigers auf den `char`. `pString[3]` weist den Typ des einem Container ist ein Zeiger auf `char` , die auf das vierte Element der diesem Container verweist.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
@@ -55,6 +52,6 @@ IDebugPointerField : IDebugContainerField
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Symbolanbieterschnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

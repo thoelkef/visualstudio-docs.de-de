@@ -1,9 +1,6 @@
 ---
 title: Hostelemente und Host-Steuerelementen (Übersicht)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -39,12 +36,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e759b493c183c9a42da0130abc87d40c40f9b471
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987452"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Hostelemente und Host-Steuerelementen (Übersicht)
   Hostelemente und Hoststeuerelemente sind Programmierelemente, die die Bereitstellung des Programmiermodells für Office-Projektmappen ermöglichen, die mithilfe der Office-Entwicklungstools in Visual Studio erstellt werden. Hostelemente und Hoststeuerelemente vereinfachen die Interaktion zwischen Objektmodellen von Microsoft Office Word und Microsoft Office Excel (COM-basiert) und verwalteten Objekten wie Windows Forms-Steuerelementen.  
@@ -179,4 +176,3 @@ ms.locfileid: "53647973"
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  

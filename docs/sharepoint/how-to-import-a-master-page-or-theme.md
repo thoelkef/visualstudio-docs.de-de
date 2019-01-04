@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Importieren einer Masterseite oder eines Designs | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952884"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Gewusst wie: Importieren einer Masterseite oder eines Designs
+# <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Masterseite oder eines Designs
   Sie können Seiten auf Ihrer SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Zum Importieren einer Masterseite oder eines Designs  
@@ -97,4 +94,3 @@ ms.locfileid: "37119221"
  [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Erstellen von Seiten für SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
  [Verwenden von Modulen zum Einfügen von Dateien in der Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

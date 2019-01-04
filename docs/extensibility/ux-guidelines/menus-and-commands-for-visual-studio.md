@@ -1,9 +1,6 @@
 ---
 title: Menüs und Befehle für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933796"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 ## <a name="command-usage"></a>Zur Verwendung des Befehls  
@@ -284,7 +281,7 @@ ms.locfileid: "49937953"
   
 - **Führen Sie die Windows-Richtlinien, um zu bestimmen, welche Modifizierer Schlüssel verwenden.** Verwenden Sie STRG-Tastenkombinationen für Befehle, die umfangreiche Auswirkungen, z. B. Befehle haben, die für ein ganzes Dokument gelten. Verwenden Sie UMSCHALT-Taste-Kombinationen für Befehle, die erweitern oder ergänzen die Aktionen der standardmäßige Tastenkombination. Verwenden Sie nicht STRG + Alt + Kombinationen aus.  
   
-- **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie eine ältere Funktion verfügen, sollten Sie die Verknüpfungen, die mit extrem Seltenheit (weniger als 10 Mal von der CEIP-Daten) oder moderate Seltenheit (weniger als 100 Mal von der CEIP-Daten) verwendet werden, wenn eine Tastenkombination schnellen Zugriff auf den gleichen Befehl ermöglicht werden entfernt. Zum Beispiel: Alt, H, B wird Inhalt-Hilfe geöffnet.  
+- **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie eine ältere Funktion verfügen, sollten Sie die Verknüpfungen, die mit extrem Seltenheit (weniger als 10 Mal von der CEIP-Daten) oder moderate Seltenheit (weniger als 100 Mal von der CEIP-Daten) verwendet werden, wenn eine Tastenkombination schnellen Zugriff auf den gleichen Befehl ermöglicht werden entfernt. Zum Beispiel: ALT, H, B, wird Inhalt-Hilfe geöffnet.  
   
   Es ist keine einfache Möglichkeit zum Prüfen der Verfügbarkeit der Verknüpfung. Wenn Sie eine Verknüpfung hinzufügen möchten, gehen Sie wie folgt vor:  
   

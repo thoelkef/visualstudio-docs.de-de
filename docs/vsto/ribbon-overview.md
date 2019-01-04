@@ -1,9 +1,6 @@
 ---
 title: Übersicht über das Menüband
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989201"
 ---
 # <a name="ribbon-overview"></a>Übersicht über das Menüband
   Die Multifunktionsleiste ist eine Möglichkeit zum Organisieren verwandter Befehle, damit sie leichter zu finden sind. Befehle werden als Steuerelemente auf dem Menüband angezeigt. Steuerelemente sind in organisiert *Gruppen* entlang einer horizontalen Leiste am oberen Rand eines Anwendungsfensters. Verwandte Gruppen sind auf Registerkarten organisiert.  
@@ -120,7 +117,7 @@ ms.locfileid: "49846358"
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Gewusst wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)|Erfahren Sie, wie zum Anpassen des Menübands einer Microsoft Office-Anwendung, Hinzufügen einer **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.|  
+|[Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)|Erfahren Sie, wie zum Anpassen des Menübands einer Microsoft Office-Anwendung, Hinzufügen einer **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.|  
 |[Menüband-designer](../vsto/ribbon-designer.md)|Beschreibt, wie Sie die Menüband-Designer verwenden können, um benutzerdefinierte Registerkarten, Gruppen und Steuerelemente des Menübands einer Microsoft Office-Anwendung hinzuzufügen.|  
 |[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Veranschaulicht die Erstellung einer benutzerdefinierten Menüband-Registerkarte mithilfe des Menüband-Designers. Sie können den Menüband-Designer verwenden, um der benutzerdefinierten Registerkarte Steuerelemente hinzuzufügen und diese zu positionieren.|  
 |[Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md)|Bietet eine Übersicht über den stark typisierten Objektmodell, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können.|  
@@ -128,12 +125,10 @@ ms.locfileid: "49846358"
 |[Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Enthält Anweisungen zum Anpassen des Menübands in Microsoft Office Outlook.|  
 |[Anpassen eines Menübands für InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Enthält Anweisungen zum Anpassen des Menübands in Microsoft Office InfoPath.|  
 |[Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)|Veranschaulicht die anzeigen, ausblenden und Ändern des Menübands und Benutzern das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook-Formularbereich ermöglichen.|  
-|[Gewusst wie: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Veranschaulicht, wie die Reihenfolge der Registerkarten auf einem Menüband ändern.|  
-|[Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|Veranschaulicht das Hinzufügen von Gruppen und Steuerelementen zu einer integrierten Registerkarte.|  
-|[Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei**.|  
-|[Gewusst wie: Hinzufügen ein Dialogfeld-Startprogramms zu einer Menübandgruppe](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Hinzufügen ein Dialogfeld-Startprogramms zu einer Gruppe auf einem Menüband zeigt.|  
-|[Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Zeigt, wie zum Anpassen des Menübands auf eine innovative Weise durch Exportieren im Menüband vom Designer in Menüband-XML.|  
+|[Vorgehensweise: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Veranschaulicht, wie die Reihenfolge der Registerkarten auf einem Menüband ändern.|  
+|[Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|Veranschaulicht das Hinzufügen von Gruppen und Steuerelementen zu einer integrierten Registerkarte.|  
+|[Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei**.|  
+|[Vorgehensweise: Hinzufügen eines Dialogfeld-Startprogramms zu einer Menübandgruppe](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Hinzufügen ein Dialogfeld-Startprogramms zu einer Gruppe auf einem Menüband zeigt.|  
+|[Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Zeigt, wie zum Anpassen des Menübands auf eine innovative Weise durch Exportieren im Menüband vom Designer in Menüband-XML.|  
 |[Ribbon XML](../vsto/ribbon-xml.md)|Erläutert, wie Sie ein Menüband mithilfe des Menüband-XML-anpassen können.|  
 |[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe der **Menüband (XML)** Element.|  
-  
-  

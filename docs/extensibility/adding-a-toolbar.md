@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen einer Symbolleiste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2888ab6fade4893389af23ff456a63ffc5fbc40
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6fa301a146dec9e7ee9b2f7edcaa6480e6bf5fef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934741"
 ---
 # <a name="add-a-toolbar"></a>Hinzufügen einer Symbolleiste
 Diese exemplarische Vorgehensweise zeigt, wie Visual Studio-IDE eine Symbolleiste hinzugefügt wird.  
@@ -30,7 +27,7 @@ Diese exemplarische Vorgehensweise zeigt, wie Visual Studio-IDE eine Symbolleist
   
  Weitere Informationen zu Menüs, finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-an-extension-with-a-toolbar"></a>Erstellen Sie eine Erweiterung mit einer Symbolleiste  

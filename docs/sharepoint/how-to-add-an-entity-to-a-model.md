@@ -1,15 +1,10 @@
 ---
-title: 'Vorgehensweise: hinzufügen eine Entität zu einem Modell | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Hinzufügen eine Entität zu einem Modell | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - EntityTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964032"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Gewusst wie: hinzufügen eine Entität zu einem Modell
+# <a name="how-to-add-an-entity-to-a-model"></a>Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell
   Um eine Entität zu erstellen, fügen Sie ein Steuerelement für die Entität aus der Visual Studio **Toolbox** in den Designer für Business Data Connectivity (BDC).  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Um eine Entität dem Modell hinzufügen  
@@ -53,10 +48,8 @@ ms.locfileid: "36757708"
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
- [Gewusst wie: hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
- [Gewusst wie: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: hinzufügen eine bestimmte Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)  
-  
- 
+ [Vorgehensweise: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
+ [Vorgehensweise: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Vorgehensweise: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
+ [Vorgehensweise: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
+ [Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)  

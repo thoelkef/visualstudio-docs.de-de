@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Entfernen Sie Erweiterungen durch verwalteten Code aus Dokumenten'
-ms.custom: ''
+title: 'Vorgehensweise: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964772"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Gewusst wie: Entfernen Sie Erweiterungen durch verwalteten Code aus Dokumenten
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Vorgehensweise: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten
   Sie können die Anpassungsassembly programmgesteuert entfernen, aus einem Dokument oder die Arbeitsmappe, die Teil einer Anpassung auf Dokumentebene für Microsoft Office Word oder Microsoft Office Excel darstellt. Benutzer können die Dokumente öffnen und die Inhalte anzeigen, aber benutzerdefinierte Benutzeroberfläche (UI) Sie Dokumente hinzufügen, werden nicht angezeigt, und der Code nicht ausgeführt wird.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Sie können die Anpassungsassembly entfernen, indem Sie eines der `RemoveCustomization` von bereitgestellten Methoden der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Welche Methode Sie verwenden, hängt davon ab, ob Sie die Anpassung zur Laufzeit entfernen möchten (d. h. durch Ausführen von Code in der Anpassung bei der das Wort Dokument oder eine Excel-Arbeitsmappe ist öffnen), oder wenn Sie die Anpassung aus ein geschlossenes Dokument oder ein Dokument entfernen möchten, dass i s auf einem Server, der keine für Microsoft Office installiert.  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie keine I: Anfügen oder Trennen einer VSTO-Assembly aus einem Word-Dokument?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Anfügen oder trennen eine VSTO-Assembly aus einem Word-Dokument? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>So entfernen Sie die Anpassungsassembly zur Laufzeit  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35673217"
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Gewusst wie: Anfügen der verwaltete code-Erweiterungen für Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

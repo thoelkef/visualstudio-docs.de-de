@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells'
+title: 'Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97eb050bb99c522f5c5e97ea3355f3146086c29e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938341"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
+# <a name="how-to-use-transactions-to-update-the-model"></a>Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells
 Transaktionen stellen Sie sicher, dass in den Speicher vorgenommenen Änderungen als Gruppe behandelt werden. Änderungen, die gruppiert werden, können ein Commit oder Rollback als einzelne Einheit sein.
 
  Wenn Sie der Code ändert, hinzufügt oder löscht ein Element in der Store in Visual Studio-Visualisierungs- und Modellierungs-SDK, müssen sie dies innerhalb einer Transaktion tun. Es muss eine aktive Instanz der <xref:Microsoft.VisualStudio.Modeling.Transaction> der Store zugeordnet wird, wenn die Änderung erfolgt. Dies gilt für alle Modellelementen, Beziehungen, Formen, Diagramme und ihre Eigenschaften.

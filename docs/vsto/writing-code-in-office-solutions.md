@@ -1,9 +1,6 @@
 ---
 title: Schreiben Sie Code in Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942972"
 ---
 # <a name="write-code-in-office-solutions"></a>Schreiben Sie Code in Office-Projektmappen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946041"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -719,7 +718,7 @@ Fügen Sie Code, um das benutzerdefinierte Verhalten der nach dem Laden für XML
 
 Der nächste Schritt besteht darin erstellen und führen die DSL-Designer in eine neue Instanz der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , damit Sie überprüfen können, dass die Eigenschaft für die Überwachung ordnungsgemäß funktioniert.
 
-1. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
+1. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.
 
 2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
@@ -762,4 +761,4 @@ Wenn Sie mehr als eine Nachverfolgungseigenschaft verwenden oder Eigenschaften d
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-- [Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Vorgehensweise: Erstellen Sie eine DSL-Projektmappe](../modeling/how-to-create-a-domain-specific-language-solution.md)

@@ -1,9 +1,6 @@
 ---
 title: Benachrichtigungen und Fortschritt für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942670"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Benachrichtigungssysteme  
@@ -250,7 +247,7 @@ ms.locfileid: "48863949"
   
  ![Inline-fortschrittsmeldungen](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903-09_InlineText")  
   
- **Server-Explorer-inlinetext: wird aktualisiert...**  
+ **Server-Explorer-inlinetext: Wird aktualisiert...**  
   
 ##### <a name="tool-windows"></a>Toolfenster  
  Globale Fortschrittsanzeige wird durch eine unbestimmte Fortschrittsleiste direkt unterhalb der Symbolleiste positioniert dargestellt.  
@@ -329,13 +326,13 @@ ms.locfileid: "48863949"
 ### <a name="creating-an-infobar"></a>Erstellen eine Infoleiste  
  Die Infoleiste verfügt über vier Abschnitte, von links nach rechts:  
   
--   **Symbol:** , in dem Sie alle Symbol hinzufügen würden Sie möchten für die Infoleiste, z. B. ein Warnsymbol angezeigt werden soll.  
+-   **Symbol:** Dies ist, in dem Sie alle Symbol hinzufügen würden Sie möchten für die Infoleiste, z. B. ein Warnsymbol angezeigt werden soll.  
   
--   **Text:** Sie können Text, der den Benutzer-Szenario/Situation beschrieben wird, zusammen mit Links in den Text ein, bei Bedarf hinzufügen. Denken Sie daran, um den Text kompakt zu halten.  
+-   **Text:** Sie können, dass Text, der den Benutzer-Szenario/Situation zu beschreiben, zusammen mit Links innerhalb des Texts, wird bei Bedarf hinzufügen. Denken Sie daran, um den Text kompakt zu halten.  
   
--   **Aktionen:** Links und Schaltflächen für Aktionen, die der Benutzer in Ihrer Infoleiste aufnehmen kann, sollte in diesem Abschnitt enthalten.  
+-   **Aktionen:** Dieser Abschnitt sollte enthalten, Links und Schaltflächen für Aktionen, die der Benutzer in Ihrer Infoleiste aufnehmen kann.  
   
--   **Schaltfläche "Schließen":** der letzte Abschnitt für das Recht haben eine Schaltfläche "Schließen".  
+-   **Schaltfläche "Schließen":** Im letzten Abschnitt rechts kann es sich um eine Schaltfläche "Schließen" verfügen.  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Erstellen eine standardmäßige Infoleiste in verwaltetem code  
  Die InfoBarModel-Klasse kann verwendet werden, um eine Datenquelle für eine Infoleiste zu erstellen. Verwenden Sie eine dieser vier Konstruktoren:  

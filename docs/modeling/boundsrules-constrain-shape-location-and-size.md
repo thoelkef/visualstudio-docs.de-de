@@ -10,21 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950198"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules schränken Position und Größe von Formen ein
 
-Ein *Grenzen Regel* ist eine Klasse, die Grenzwerte für die Größe und Position einer Form definiert. Es bietet eine Methode, die wiederholt aufgerufen wird, während ein Benutzer eine Form oder den Ecken oder den Seiten einer Form ziehen.
+Ein *Begrenzungsregel* ist eine Klasse, die Grenzwerte für die Größe und Position einer Form definiert. Es bietet eine Methode, die wiederholt aufgerufen wird, während ein Benutzer eine Form oder den Ecken oder den Seiten einer Form gezogen wird.
 
-Das folgende Beispiel schränkt eine rechteckige Form aus, um eine Leiste mit fester Größe, horizontal oder vertikal sein. Wenn der Benutzer den Ecken oder den Seiten zieht, spiegelt die Gliederung zwischen zwei zulässigen Konfigurationen der Höhe und Breite.
+Im folgende Beispiel wird eine rechteckige Form auf eine Leiste mit fester Größe, horizontal oder vertikal sein beschränkt. Wenn der Benutzer den Ecken oder den Seiten zieht, spiegelt die Gliederung, zwischen die beiden zulässigen Konfigurationen der Höhe und Breite.
 
-Die Grenzen Regel ist eine abgeleitete Klasse <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Eine Instanz der Regel wird in der Form "erstellt:
+Die Grenzen Regel ist eine abgeleitete Klasse <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Eine Instanz der Regel wird in der Form erstellt:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Diagrams; ...

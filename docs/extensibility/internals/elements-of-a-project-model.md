@@ -1,9 +1,6 @@
 ---
 title: Elemente eines Projektmodells | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eab0627184ac887aacfdfb2f275f0e8d9d30df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962609"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projektmodells
 Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Teilen eine Grundstruktur: das Modell für den Projekttyp. In Ihrem Projektmodell, das das VSPackage ist, Sie entwickeln, erstellen Sie die Objekte, die Ihre entwurfsentscheidungen entsprechen und zusammen mit globalen Funktionen, die von der IDE bereitgestellt. Auch wenn Sie steuern, wie ein Projektelement beibehalten wird, können z. B. Sie keine Benachrichtigung steuern, dass eine Datei beibehalten werden muss. Wenn ein Benutzer setzt den Fokus auf ein Projektelement öffnen, und wählt **speichern** auf die **Datei** Menü auf der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menü, Typ Projektcode abfangen, den Befehl in der IDE, speichern Sie die Datei muss und Senden Sie Benachrichtigungen zurück zur IDE, dass die Datei nicht mehr geändert wird.  
@@ -45,9 +42,9 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
   Projekte können Befehle unterstützen und daher implementieren, muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, um das Befehlsrouting über den Befehlskontext GUIDs teilnehmen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Prüfliste: Erstellen Sie neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Prüfliste: Erstellen Sie neue Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Verwenden Sie HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md)   
  [Erstellen von Projektinstanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Gewusst wie: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   
+ [Vorgehensweise: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   
  [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)

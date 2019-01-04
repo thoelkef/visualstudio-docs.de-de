@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 671b4c18963be4f9c81e15fe33e5d68a410655c9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939423"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server
   Sie können ein Datenelement im Dokument zwischengespeichert werden markieren, damit sie verfügbar ist offline. Dies erleichtert auch möglich, dass die Daten in das Dokument durch anderen Code bearbeitet werden, wenn das Dokument auf einem Server gespeichert ist.

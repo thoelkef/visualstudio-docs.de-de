@@ -1,9 +1,6 @@
 ---
-title: IDebugLoadCompleteEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugLoadCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugLoadCompleteEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead977e27070f16998e7c67f9b481e83604f613e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56f53af23e99988d46c38b77f930da99b7af991f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953898"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
-Diese Schnittstelle wird von Debugging-Modul (DE) an der Sitzung Debug-Manager (SDM) gesendet, wenn ein Programm geladen wird, jedoch bevor Code ausgeführt wird.  
+Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn ein Programm geladen wird, aber bevor irgendwelcher Code ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,13 +29,13 @@ IDebugLoadCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle, um zu melden, dass ein Programm erfolgreich geladen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
+ Die DE implementiert diese Schnittstelle, um zu melden, dass ein Programm erfolgreich geladen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die DE erstellt und sendet diese Ereignisobjekt Berichten, dass ein Programm erfolgreich geladen wurde. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn diese an die derzeit debuggte Programm angefügt.  
+ Die DE erstellt und sendet dieses Ereignisobjekt, um zu melden, dass ein Programm erfolgreich geladen wurde. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
   
 ## <a name="remarks"></a>Hinweise  
- Dieses Ereignis ist eine Stopping-Ereignis und muss die `EVENT_STOPPING` flag festgelegt, auf die Attribute des Ereignisses.  
+ Dieses Ereignis ist ein Ereignis wird beendet und muss den `EVENT_STOPPING` flag so festgelegt, für die Ereignisattribute.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -48,6 +45,6 @@ IDebugLoadCompleteEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -2,7 +2,6 @@
 title: Regelsatz für Globalisierungsregeln für verwalteten Code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: gewarren
@@ -10,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f260a46d26bfec8af61a39ba8c54910a45772c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0c0eb4edfb58d740692f2afff187659a665b234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936983"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Regelsatz für Globalisierungsregeln für verwalteten Code
-Sie können den Microsoft-Globalisierungsregeln Regelsatz Probleme konzentrieren, die Daten in der Anwendung angezeigt wird, in anderen Sprachen, Gebietsschemas und Kulturen ordnungsgemäß verhindern könnten. Sie sollten diesen Regelsatz, wenn Ihre Anwendung globalisierte, lokalisiert wird, oder beides enthalten.
+Sie können den Microsoft-Globalisierungsregeln Regelsatz, der sich auf Probleme, die Daten in Ihrer Anwendung angezeigt werden, in verschiedenen Sprachen, Gebietsschemas und Kulturen ordnungsgemäß verhindern könnten. Sie sollten berücksichtigen, diese Regel festgelegt, wenn Ihre Anwendung globalisiert, lokalisiert wird, oder beides.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -32,4 +31,4 @@ Sie können den Microsoft-Globalisierungsregeln Regelsatz Probleme konzentrieren
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|StringComparison angeben|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Zeichenfolgen in Großbuchstaben normalisieren|
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Ordinal-StringComparison verwenden|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Festlegen Sie Marshalling für P/Invoke-Zeichenfolgenargumente|
+|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Geben Sie die Marshalling für P/Invoke-Zeichenfolgenargumente|

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio-SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 26ac42cbcc70c34b221f1146bb0ba5314ca104dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947735"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Features in Visual Studio integrieren. Sie können Ihre Erweiterungen für andere Benutzer sowie für Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:  

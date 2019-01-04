@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericFieldInstance | Microsoft Docs
-ms.custom: ''
+title: IDebugGenericFieldInstance | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990976"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-Stellt eine Instanz eines Felds für einen generischen Typ mit verwaltetem Code.  
+Stellt eine Instanz eines Felds für einen generischen Typ von verwaltetem Code.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,7 +27,7 @@ IDebugGenericFieldInstance : IUnknown
 ```  
   
 ## <a name="methods"></a>Methoden  
- Diese Schnittstelle implementiert, die folgenden Methoden:  
+ Diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
