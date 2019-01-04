@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Zulassen Sie Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden zu.'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949335"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Vorgehensweise: Zulassen Sie Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden zu.
   Sie können das Feature (Information Rights Management, IRM) von Microsoft Office verwenden, um Berechtigungen auf ein Dokument oder eine Arbeitsmappe zu beschränken. Standardmäßig ist der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder einer Microsoft Office Excel-Arbeitsmappe nicht zulässig, ausgeführt wird. Sie können die Standardeinstellung ändern, so, dass Ihre Erweiterungen durch verwalteten Code auf das Objektmodell zugreifen können und Ihre Lösung funktioniert.  
@@ -56,5 +53,3 @@ ms.locfileid: "53648625"
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954512"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Gibt die Struktur der Haltepunktposition Auflösung.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Nur für C++] Ein Platzhalter.  
   
  `unionmember1`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember2`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember3`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember4`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur ist ein Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) und [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Strukturen.  
   
- [Nur in c#] Die `unionmemberX` Elemente werden gemäß der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpType` Wert über dann um zu bestimmen, was von den einzelnen `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Methode zur Interpretation dieser Struktur in C# geschrieben.  
+ [C# nur] Die `unionmemberX` Elemente werden gemäß der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpType` Wert über dann um zu bestimmen, was von den einzelnen `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Methode zur Interpretation dieser Struktur in C# geschrieben.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

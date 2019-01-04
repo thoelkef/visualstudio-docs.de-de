@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959494"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
-Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Auswählen einer Vorlagenprojektmappe
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
@@ -169,9 +168,9 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
 |Darstellung des Elements|Übergeordnete (einbettende) Klasse|Beispiel in DSL-Projektmappenvorlage|
 |-|-|-|
-|Form im Diagramm<br /><br /> Verantwortlichkeitsbereich|Stammklasse der DSL|Minimale Sprache<br /><br /> Aufgabenfluss: Actor-Klasse|
-|Form in Verantwortlichkeitsbereich|Domänenklasse von Elementen, die als Verantwortlichkeitsbereiche dargestellt werden.|Aufgabenfluss: Task-Klasse|
-|Element in Liste in Form, das zusammen mit Container gelöscht wird.<br /><br /> Anschluss am Rand einer Form|Der Containerform zugeordnete Domänenklasse|Klassendiagramm: Attribute-Klasse<br /><br /> Komponentendiagramm: Port-Klasse|
+|Form im Diagramm<br /><br /> Verantwortlichkeitsbereich|Stammklasse der DSL|Minimale Sprache<br /><br /> Aufgabenfluss: Actor-Klasse.|
+|Form in Verantwortlichkeitsbereich|Domänenklasse von Elementen, die als Verantwortlichkeitsbereiche dargestellt werden.|Aufgabenfluss: Task-Klasse.|
+|Element in Liste in Form, das zusammen mit Container gelöscht wird.<br /><br /> Anschluss am Rand einer Form|Der Containerform zugeordnete Domänenklasse|Klassendiagramm: Die Attributklasse.<br /><br /> UML-Komponentendiagramme: Port-Klasse.|
 |Element in Liste, nicht zusammen mit Container gelöscht|Stammklasse der DSL<br /><br /> Die Liste enthält Verweislinks.||
 |Nicht direkt angezeigt|Die Klasse, von der es Bestandteil ist||
 
@@ -187,7 +186,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 >  Einbettung ist nicht identisch mit Vererbung. Die untergeordneten Elemente in einer einbettenden Beziehung erben keine Features von ihren übergeordneten Elementen.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Hinzufügen von Domäneneigenschaften zu den einzelnen Domänenklassen
- In Domäneneigenschaften werden Werte gespeichert. Beispiele: Name, Titel, Veröffentlichungsdatum.
+ In Domäneneigenschaften werden Werte gespeichert. Beispiele sind: Name, Titel, Veröffentlichungsdatum.
 
  Klicken Sie auf **Domäneneigenschaften** in der Klasse, die EINGABETASTE drücken, und geben Sie den Namen einer Eigenschaft. Der Standardtyp einer Domäneneigenschaft lautet String. Wenn Sie den Typ ändern möchten, wählen Sie die Eigenschaft "Domain", und legen die **Typ** in die **Eigenschaften** Fenster. Wenn der Typ des nicht in der Dropdown-Liste enthalten ist, finden Sie unter [Hinzufügen von Eigenschaftentypen](#addTypes).
 
@@ -605,7 +604,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 
  Daher sollten Sie damit rechnen, dass nach einer Änderung von Beziehungen in der DSL-Definition häufig Fehler gemeldet werden, wenn Sie die Definition speichern oder "Alle Vorlagen transformieren" verwenden. Die meisten dieser Fehler sind leicht zu beheben. Doppelklicken Sie auf den Fehlerbericht, um den Ort des Fehlers zu ermitteln.
 
- Siehe auch [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Weitere Information finden Sie unter [How to: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Problembehandlung bei
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Forum zur Erweiterbarkeit von Visualisierung Tools](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -620,7 +619,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
 | Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt. | Wählen Sie in der DSL-Definition eine Domäneneigenschaft der Klasse, und legen Sie in den Eigenschaften im Fenster **ist Elementname** auf "true". |
 | Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie * Ihresprache ***Designer (Standard)**. |
 | Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**. |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. |
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -2,7 +2,6 @@
 title: Konfigurieren der Codeanalyse
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939758"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
 
 In Visual Studio können Sie aus einer Liste der Codeanalyse [-Regelsätze](../code-quality/rule-set-reference.md)) um auf ein Projekt mit verwaltetem Code anzuwenden. In der Standardeinstellung die **Microsoft-Mindestregeln** Regelsatz ausgewählt ist, aber Sie können bei Bedarf einen anderen Regelsatz anwenden. Regelsätze können auf eine oder mehrere Projekte in einer Projektmappe angewendet werden.
 
 > [!TIP]
-> Informationen dazu, wie Sie einen Regelsatz für ASP.NET-Webanwendungen zu konfigurieren, finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET web-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Informationen dazu, wie Sie einen Regelsatz für ASP.NET-Webanwendungen zu konfigurieren, finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>So konfigurieren Sie einen Regelsatz für ein .NET Framework-Projekt
 
@@ -77,4 +76,4 @@ Standardmäßig werden alle verwalteten Projekten einer Projektmappe zugewiesen 
 ## <a name="see-also"></a>Siehe auch
 
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)
-- [Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Web-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Web-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

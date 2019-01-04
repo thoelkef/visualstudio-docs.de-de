@@ -1,9 +1,6 @@
 ---
 title: Verbesserung der Leistung eines VSTO-Add-Ins
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65e61f03893f171bd824132665a47f5e6361391f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fc4a65a0b09a706eebad04c90e1779d00c7f3801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937282"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbesserung der Leistung eines VSTO-add-Ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:

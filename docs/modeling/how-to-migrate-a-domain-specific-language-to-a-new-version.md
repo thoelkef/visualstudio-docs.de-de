@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version'
+title: 'Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955067"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen Sprache migrieren [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] von der Version der [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die mit verteilt wurde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Tool für die Migration erfolgt als Teil des [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Das Tool konvertiert die Visual Studio-Projekte und Projektmappen, die verwenden, oder definieren die DSL-Tools.

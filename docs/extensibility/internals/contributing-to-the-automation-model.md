@@ -1,9 +1,6 @@
 ---
 title: Mitwirken am Automatisierungsmodell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d56b446914ae7345ccb0d393db8f17fc7f82c47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6db9cd21b56fb4d31a97fea9f16541377a8de1f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952601"
 ---
 # <a name="contribute-to-the-automation-model"></a>Mitwirken Sie am Automatisierungsmodell
 Visual Studio bietet eine Reihe von Automatisierungsschnittstellen für die Umgebung anzupassen. Das Automatisierungsmodell ist das Objektmodell, das Benutzer zum Erstellen von Visual Studio-add-ins und-Erweiterungen ermöglicht.  
@@ -49,7 +46,7 @@ Visual Studio bietet eine Reihe von Automatisierungsschnittstellen für die Umge
  [Bereitstellen von Automatisierung für code](../../extensibility/internals/providing-automation-for-code.md)  
  Erklärt, dass die Erstellung eines Automatisierungsmodells für Ihren Code nicht erforderlich ist. Allerdings wird ein Link in diesem Thema bereitgestellt, die aussagekräftige Informationen in Codemodelle enthält.  
   
- [Gewusst wie: Bereitstellen von Automatisierung für Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Vorgehensweise: Bereitstellen von Automatisierung für Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Erklärt, dass das Bereitstellen von Automatisierung ist eine gute Idee, wann immer Sie-Automatisierungsobjekte in einem Fenster zur Verfügung stellen möchten, und die Umgebung eine vorgefertigte Automatisierungsobjekt keine bereits bietet. Erläutert die Automatisierung für Toolfenster und Dokumentfenster.  
   
  [Verwenden Sie das Automatisierungsmodell](../../extensibility/internals/using-the-automation-model.md)  
@@ -61,4 +58,3 @@ Visual Studio bietet eine Reihe von Automatisierungsschnittstellen für die Umge
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  Enthält ein Codebeispiel, das zeigt, wie eine VSPackage das DTE-Automatisierungsobjektmodell teilnimmt. Listen-Parameter, Rückgabewerte und ausgewählte "Hinweise".  
-  

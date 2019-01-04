@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Ändern der Größe Lesezeichen-Steuerelementen'
-ms.custom: ''
+title: 'Vorgehensweise: Größe von Bookmark-Steuerelementen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942438"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Gewusst wie: Ändern der Größe Lesezeichen-Steuerelementen
+# <a name="how-to-resize-bookmark-controls"></a>Vorgehensweise: Größe von Bookmark-Steuerelementen
   Die Größe eines <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements legen Sie fest, wenn Sie es einem Microsoft Office Word-Dokument hinzufügen. Sie können dessen Größe aber auch zu einem späteren Zeitpunkt ändern.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924836"
   
    Dies bietet sich an, wenn sich die Größe oder die Position des Lesezeichens wesentlich geändert hat.  
   
-  In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen an Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924836"
 3.  Geben Sie im Dialogfeld **Lesezeichen** den Namen des Lesezeichens ein, dessen Größe Sie ändern möchten, und klicken Sie auf **Hinzufügen**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
- [Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)   
- [Gewusst wie: Ändern der Größe ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)   
+ [Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)   
+ [Vorgehensweise: Größe von ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

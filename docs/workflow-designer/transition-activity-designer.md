@@ -3,7 +3,6 @@ title: Workflow-Designer - Übergangsaktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6855cf3361b573d20e9b51590168ab94c9cd500b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60962fbe53184767095735cd460d6eb1eb969fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963983"
 ---
 # <a name="transition-activity-designer"></a>Übergangsaktivitäts-Designer
 
@@ -34,7 +33,7 @@ In der folgenden Tabelle sind die <xref:System.Activities.Statements.Transition>
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen des <xref:System.Activities.Statements.Transition>-Aktivitätsdesigners an. Der Standardwert ist **T1**. Der Wert kann im Eigenschaftenraster im Header des erweiterten Übergangs-Designers und im Header des Aktionsabschnitts innerhalb des erweiterten Übergangs-Designers bearbeitet werden. <xref:System.Activities.Activity.DisplayName%2A> wird in der Breadcrumbnavigation verwendet, die am oberen Rand des Workflow-Designers angezeigt wird.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Gibt an, falls vorhanden, ein Ausdruck, der ausgewertet werden muss **"true"** vor der Kontrolle an den Zielzustand übergeben wird. Diese Bedingung kann im Eigenschaftenraster und im erweiterten Übergangs-Designer bearbeitet werden. Mehrere Bedingungen in einem gemeinsamen Übergang werden in der Reihenfolge ausgewertet, in der sie im Übergangs-Designer angezeigt werden. **Hinweis:** Beachten Sie, dass bei der <xref:System.Activities.Statements.Transition.Condition%2A> eines Übergangs ergibt **"false"** (oder alle Bedingungen eines Übergangs freigegebenen auswerten **"false"**), die Umstellung erfolgt keine und werden alle Trigger aller Übergänge aus dem Zustand neu geplant. In diesem Lernprogramm kann diese Situation aufgrund der Konfigurationsmethode für die Bedingungen (es gibt spezielle Aktionen für richtige oder falsche Schätzungen) nicht auftreten.|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Gibt an, falls vorhanden, ein Ausdruck, der ausgewertet werden muss **"true"** vor der Kontrolle an den Zielzustand übergeben wird. Diese Bedingung kann im Eigenschaftenraster und im erweiterten Übergangs-Designer bearbeitet werden. Mehrere Bedingungen in einem gemeinsamen Übergang werden in der Reihenfolge ausgewertet, in der sie im Übergangs-Designer angezeigt werden. **Hinweis**:  Beachten Sie, dass bei der <xref:System.Activities.Statements.Transition.Condition%2A> eines Übergangs ergibt **"false"** (oder alle Bedingungen eines Übergangs freigegebenen auswerten **"false"**), die Umstellung erfolgt nicht, und alle Trigger für alle der Übergänge aus dem Zustand werden neu geplant werden. In diesem Lernprogramm kann diese Situation aufgrund der Konfigurationsmethode für die Bedingungen (es gibt spezielle Aktionen für richtige oder falsche Schätzungen) nicht auftreten.|
 |**Quelle**|True|Gibt den Zustand an, von dem dieser Übergang ausgeht. Indem Sie auf den Namen des Quellzustands klicken, wechselt die Designeransicht in eine erweiterte Ansicht dieses Zustands. Dieser Wert wird festgelegt, wenn der Übergang erstellt wird, und kann nicht geändert werden.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Gibt die Aktivität an, deren Abschluss den Übergang initiiert. Ziehen Sie eine Aktivität aus, um diese Aktivität festzulegen, die **Toolbox** und legen ihn auf die **Trigger** Abschnitt des Übergangs.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|Gibt die Aktivität, die ausgeführt wird, wenn die Trigger-Aktivität abgeschlossen und die <xref:System.Activities.Statements.Transition.Condition%2A>, falls vorhanden, ergibt **"true"**. Diese Aktivität wird ausgeführt, wenn der Übergang in den Zielzustand erfolgt, nachdem die <xref:System.Activities.Statements.State.Exit%2A>-Aktivität für den Quellzustand, falls vorhanden, ausgeführt wurde. Wenn der Übergangs-Designer erweitert wird, kann dieser Wert kann durch Ziehen einer Aktivität festgelegt werden die **Toolbox** per Drag & Drop auf die **Aktion** Abschnitt des Übergangs. Ein Übergang kann mehrere Aktionen aufweisen. Die einzelnen Aktionen können erweitert, verkürzt und geordnet werden, indem Sie auf den Pfeil nach oben oder nach unten klicken, der für die Aktion angezeigt wird, wenn mehrere Aktionen in einem Übergang vorhanden sind.|
