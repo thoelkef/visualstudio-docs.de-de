@@ -1,9 +1,6 @@
 ---
 title: Microsoft Help Viewer SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987050"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -142,7 +139,7 @@ Seite enthält Links, einen Abschnitt "Hinweis", einem reduzierbaren Bereich, Co
 
 4.  Fügen Sie einen Codeausschnitt hinzu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Fügen Sie Code sprachspezifischen Text hinzu: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Beachten Sie, dass `devLangnu=` können Sie andere Sprachen eingeben. Z. B. `devLangnu="Fortran"` Fortran zeigt bei der der Codeausschnitt DisplayLanguage Fortran =
+5.  Fügen Sie Code sprachenspezifischer Text hinzu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Beachten Sie, dass `devLangnu=` können Sie andere Sprachen eingeben. Z. B. `devLangnu="Fortran"` Fortran zeigt bei der der Codeausschnitt DisplayLanguage Fortran =
 
 6.  Fügen Sie die Seite enthält Links hinzu: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,13 +280,13 @@ F1-Flussdiagramm:
 
 Wenn der Help Viewer standardmäßig die Quelle der Hilfeinhalte auf online (Einführung in den Browser) festgelegt ist:
 
--   Visual Studio-Partner (VSP)-Funktionen auszugeben, einen Wert, der die Eigenschaftensammlung F1 (Eigenschaftenbehälter prefix.keyword und online-URL für das Präfix in der Registrierung gefunden): F1 sendet eine VSP-URL + Parameter an den Browser.
+-   Visual Studio-Partner (VSP)-Funktionen geben einen Wert aus der Eigenschaftensammlung F1 (Eigenschaftenbehälter prefix.keyword und online-URL für das Präfix in der Registrierung gefunden): F1 einer VSP-URL + Parameter an den Browser gesendet.
 
--   Visual Studio-Features (Language-Editor, Visual Studio bestimmte Menüelemente usw.): F1 sendet eine Visual Studio-URL an den Browser.
+-   Visual Studio-Features (Language-Editor, Visual Studio bestimmte Menüelemente usw.):  F1 sendet eine Visual Studio-URL, an den Browser.
 
 Wenn der Help Viewer standardmäßig die Quelle der Hilfeinhalte in der lokalen Hilfe (Einführung in Help Viewer) festgelegt ist:
 
--   VSP-Funktionen, bei denen Schlüsselwort übereinstimmen, zwischen Eigenschaftenbehälter F1 und lokalen columnstore-Index (d. h. die Eigenschaftenbehälter prefix.keyword = der Wert, der im lokalen Speicher Index gefunden): F1 rendert das Thema in Help Viewer.
+-   VSP-Funktionen, bei denen Schlüsselwort übereinstimmen, zwischen Eigenschaftenbehälter F1 und lokalen columnstore-Index (d. h. die Eigenschaftenbehälter prefix.keyword = der Wert, der im lokalen Speicher Index gefunden):  F1 wird das Thema in Help Viewer gerendert.
 
 -   Visual Studio-Funktionen (keine Option zum Überschreiben die Eigenschaftensammlung, die von Visual Studio-Funktionen ausgegeben, der VSP-Datei): F1 wird ein Visual Studio-Thema in Help Viewer gerendert.
 
@@ -325,7 +322,7 @@ Legen Sie die folgenden Registrierungswerte F1-Fallback für Hersteller Hilfeinh
 
 **Basis einheitlichen Namespace analysieren**
 
-Beim Analysieren der systemeigenen Basisnamespace in der Registrierung hinzufügen, um aktivieren einen neuen DWORD-Wert durch den Namen des: BaseNativeNamespaces und setzen ihren Wert auf 1 (unter den Katalog-Schlüssel, die sie unterstützen möchten).  Wenn Sie den Visual Studio-Katalog verwenden möchten, können Sie beispielsweise den Schlüssel auf den Pfad hinzufügen:
+Um native Basisnamespace Analyse zu aktivieren, fügen Sie in der Registrierung durch den Namen des einen neuen DWORD-Eintrag hinzu: BaseNativeNamespaces und setzen ihren Wert auf 1 (unter den Katalog-Schlüssel, die sie unterstützen möchten).  Wenn Sie den Visual Studio-Katalog verwenden möchten, können Sie beispielsweise den Schlüssel auf den Pfad hinzufügen:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Ein Benutzer kann Klicken Sie dann CustomLibrary registrieren, wie der Namespace
 
 Fügen Sie den folgenden Registrierungsschlüssel und den Wert ein:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic hilfeschlüssel: Debug-Ausgabe in der Anzeige in Verkaufswert: Ja
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic hilfeschlüssel: Debugausgabe in Verkaufswert anzeigen: "JA"
 
 Wählen Sie in der IDE unter das Menüelement "Hilfe" "Hilfekontext Debuggen"
 
@@ -374,7 +371,7 @@ Die Visual Studio-Version umfasst eine Anzahl von anderen Visual Studio-Produkte
 
 Branding-Pakete werden mit dem Produkt der Help Viewer mit installiert.  Für Visual Studio-Produkte:
 
--   Ein fallback-branding-Paket (Branding_\<Gebietsschema > .mshc) im Stammverzeichnis Help Viewer 2.3-app installiert ist (Beispiel: C:\Program Files (x86) \Microsoft Help Viewer\v2.3) durch das Help Viewer-Sprachpaket.  Hiermit wird für Fälle, in denen entweder das Produkt aus, die branding-Paket nicht installiert ist (kein Inhalt installiert wurde), oder, in denen das installierte branding-Paket ist beschädigt.  Die Visual Studio-Elemente (Logo und Feedback) werden ignoriert, wenn die Stamm-fallback app Brandingpakets verwendet wird.
+-   Ein fallback-branding-Paket (Branding_\<Gebietsschema > .mshc) im Stammverzeichnis Help Viewer 2.3-app installiert ist (Beispiel: C:\Programme\Microsoft Dateien (x86) \Microsoft Help Viewer\v2.3) durch das Help Viewer-Sprachpaket.  Hiermit wird für Fälle, in denen entweder das Produkt aus, die branding-Paket nicht installiert ist (kein Inhalt installiert wurde), oder, in denen das installierte branding-Paket ist beschädigt.  Die Visual Studio-Elemente (Logo und Feedback) werden ignoriert, wenn die Stamm-fallback app Brandingpakets verwendet wird.
 
 -   Wenn Visual Studio-Inhalten aus dem Content-Paket-Dienst installiert ist, wird ein branding-Paket auch (für das erste Szenario der Time-Installation von Inhalt) installiert.  Wenn ein Update für das branding-Paket verfügbar ist, ist das Update installiert, bei der nächsten Aktualisierung von Inhalt oder ein zusätzliches Paket installieren-Aktion geschieht.
 
@@ -445,7 +442,7 @@ Hinweis: Variablen, die von "{n}" angegeben haben codeabhängigkeiten – entfer
 | ExpandText | Expand |
 | CollapseText | Reduzieren |
 | Feature: | **CodeSnippet** |
-| Verwenden: | Steuerelement codeausschnitttext.  Hinweis: Der Inhalt eines Beispielcodeausschnitts mit "Nicht unterbrechend" Speicherplatz wird Space geändert werden. |
+| Verwenden: | Steuerelement codeausschnitttext.  Hinweis: Inhalt eines Beispielcodeausschnitts mit "Nicht unterbrechend" Leerzeichen werden in Leerzeichen geändert werden. |
 | **Element** | **Wert** |
 | CopyToClipboard | In Zwischenablage kopieren |
 | ViewColorizedText | Koloriert anzeigen |
@@ -615,7 +612,7 @@ Der Name des der MSHA, im Rahmen dieser Einführung ist "HelpContentSetup.msha" 
 
 Hinweis: in der folgenden Implementierungsbeispiel haben wir das branding-Paket integriert. Dies ist wichtig, aufnehmen, damit um die erforderlichen Visual Studio Inhalt Rendern von Elementen und das Verhalten zu erhalten.
 
-Die Datei "HelpContentSetup.msha" Beispiel: (ersetzen Sie "Inhalt set Name 1" und "Set name 2" usw. mit Ihren Dateinamen Inhalt.)
+Beispiel für Datei "HelpContentSetup.msha": (Ersetzen Sie "Inhalt set Name 1" und "Set name 2" usw. mit Ihren Dateinamen Inhalt.)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Definieren Sie den Content Store in der Registrierung. Ändern Sie für die inte
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Schlüssel: LocationPath Zeichenfolgenwert: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Key: LocationPath Zeichenfolgenwert: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   Schlüssel: CatalogName Zeichenfolgenwert: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Dokumentation
+   Key: CatalogName Zeichenfolgenwert: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Dokumentation
 
 **Erstellen des Projekts**
 
@@ -796,7 +793,7 @@ Um dies zu testen, als ob bereitgestellt:
 
 7. Fügen Sie die folgenden Registrierungsschlüssel hinzu:
 
-    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath-Zeichenfolgenwert:
+    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath Zeichenfolgenwert:
 
     Für ISO-Shell:
 
@@ -806,7 +803,7 @@ Um dies zu testen, als ob bereitgestellt:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-USA
 
-    Schlüssel: CatalogName Zeichenfolgenwert: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Dokumentation. Für ISO-Shell ist dies der Name des Katalogs.
+    Key: CatalogName Zeichenfolgenwert: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Dokumentation. Für ISO-Shell ist dies der Name des Katalogs.
 
 8. Kopieren Sie Ihre Inhalte (CAB-Dateien oder MSHC und diese MSHA) in einen lokalen Ordner.
 

@@ -2,7 +2,6 @@
 title: Verwenden von Modellen im Entwicklungsprozess
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832817"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -68,7 +67,7 @@ Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte 
 
 - Entwurfsmuster: Beschreiben die gemeinsamen Entwurfsregeln für die verschiedenen Teile des Systems.
 
-- Testspezifikationen: In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.
+- Testspezifikationen:  In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.
 
 - Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.
 
@@ -133,7 +132,7 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 |**Kategorie**|**Links**|
 |-|-|
-|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [MSDN Anleitungsvideos: Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [wie Reihe von MSDN: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [MSDN Anleitungsvideos: Das Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [MSDN-Reihe: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|

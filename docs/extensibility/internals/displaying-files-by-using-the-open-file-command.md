@@ -1,9 +1,6 @@
 ---
 title: Anzeigen von Dateien mit dem Befehl Open File | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964662"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mithilfe des Befehls Öffnen von Dateien
 Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Datei** Befehl, der verfügbar ist. die **Datei** im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Schritte beschreiben außerdem, wie Projekte auf Aufrufe, die von diesem Befehl stammen, reagieren soll.  
@@ -57,5 +54,5 @@ Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Dat
 ## <a name="see-also"></a>Siehe auch  
  [Anzeigen von Dateien mithilfe des Befehls Öffnen mit](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Gewusst wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)   
- [Gewusst wie: Öffnen Sie die standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+ [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Vorgehensweise: Open-standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
