@@ -1,9 +1,6 @@
 ---
 title: Zwischenspeichern von Daten
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967254"
 ---
 # <a name="cache-data"></a>Zwischenspeichern von Daten
   Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, damit die Daten offline oder ohne Öffnen Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts, muss das Objekt über einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich der <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  
@@ -91,5 +88,3 @@ ms.locfileid: "53248118"
  [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  

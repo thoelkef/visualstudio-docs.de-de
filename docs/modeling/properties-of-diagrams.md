@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 39e3cc044913a592d5f49e685d8075cd43803e55
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937792"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten Designer angezeigt werden. Beispielsweise können Sie eine Standardfarbe für Text in das Diagramm angeben.
@@ -35,7 +34,7 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 |Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<Keine >|
 |Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract`, oder `sealed`).|Keiner|
+|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract`, oder `sealed`).|Keine|
 |Basisdiagramm|Die Basisklasse des Diagramms.|(keine)|
 |name|Der Name des Diagramms.|Aktuelle name|
 |Namespace|Der Namespace, der in diesem Diagramm zugeordnet ist.|Aktuellen namespace|

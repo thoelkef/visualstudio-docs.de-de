@@ -1,9 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider | Microsoft Docs
-ms.custom: ''
+title: IDebugComPlusSymbolProvider | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1eab7e30715032500719ee371011a600d2e9552
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 707cf44f6c4bff961df4225d23d8918ed4548e04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948985"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
-Stellt einen COM+-Symbol-Anbieter mit Methoden, die an verwalteten Code spezifisch sind.  
+Stellt einen COM+-Symbol-Anbieter mit Methoden, die spezifisch für verwalteten Code dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,35 +27,35 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Es gibt zwar keine Trennung zwischen Schnittstellen, die eine ausdrucksauswertung (EE) sind und solchen, die von einem Debugging-Modul (DE) verwendet werden sollen, die folgenden Methoden wahrscheinlich DE Entwickler nur interessieren: AreSymbolsLoaded, GetAddressesInModuleFromPosition, GetEntryPoint GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols und UpdateSymbols.  
+ Obwohl es keine Trennung zwischen Schnittstellen, die für eine ausdrucksauswertung (EE) nützlich sind, und diejenigen, die von einer Debug-Engine (DE) verwendet werden sollen ist, werden die folgenden Methoden wahrscheinlich DE Entwickler nur Bedeutung sein: AreSymbolsLoaded, GetAddressesInModuleFromPosition, GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols und UpdateSymbols.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den Methoden für die [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) diese Schnittstelle implementiert, die folgenden Methoden:  
+ Zusätzlich zu den Methoden für die [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|Bestimmt, ob es sich bei die Debugsymbolen für das angegebene Modul mit dem angegebenen Bezeichner der Anwendungsdomäne geladen werden.|  
-|[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|Erstellt einen Typ aus der angegebenen primitiven Typs.|  
-|[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|Ordnet eine Dokumentposition im angegebenen Modul in ein Array der Debug-Adressen an.|  
-|[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|Ruft die Typinformationen über das angegebene Array, wenn seine Adresse Debuggen.|  
-|[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Ruft den Namen der Assembly bei Angabe seiner Domäne Modul- und Anwendungsdomänennamen ab.|  
-|[GetAttributedClassesForLanguage](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage.md)|Ruft die Klassen mit dem angegebenen Attribut an, die in der angegebenen Programmiersprache implementiert werden.|  
+|[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|Bestimmt, ob die Debugsymbole für das angegebene Modul mit dem angegebenen Bezeichner der Anwendungsdomäne geladen wurden.|  
+|[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|Erstellt einen vom angegebenen primitiven Typs.|  
+|[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|Ordnet eine Dokumentposition im angegebenen Modul in ein Array von Debug-Adressen an.|  
+|[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|Ruft die Typinformationen über das angegebene Array, wenn die debugadresse.|  
+|[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Ruft den Namen der Assembly bei Angabe der Modul- und Domäne ab.|  
+|[GetAttributedClassesForLanguage](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage.md)|Ruft ab, die Klassen mit dem angegebenen Attribut an, die in der angegebenen Programmiersprache implementiert werden.|  
 |[GetAttributedClassesinModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesinmodule.md)|Ruft die Klassen mit dem angegebenen Attribut in einem bestimmten Modul ab.|  
 |[GetEntryPoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getentrypoint.md)|Ruft den Einstiegspunkt der Anwendung ab.|  
-|[GetFunctionLineOffset](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getfunctionlineoffset.md)|Ruft die Adresse innerhalb einer Funktion, die den Offset für die jeweilige Zeile darstellt.|  
-|[GetLocalVariablelayout](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getlocalvariablelayout.md)|Ruft das Layout der lokalen Variablen für einen Satz von Methoden ab.|  
-|[GetNameFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Gibt den Namen, die dem angegebenen Token erhält ihr Metadatenobjekt zugeordnet.|  
-|[GetSymAttribute](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Ruft den Debugsymbolen mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.|  
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymunmanagedreader.md)|Ruft ab die Symbolreaders von nicht verwaltetem Code verwendet werden.|  
-|[GetTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-gettypefromaddress.md)|Ruft ab, wenn seine Adresse Debug-Symboltyp.|  
-|[IsFunctionDeleted](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctiondeleted.md)|Bestimmt, ob die Funktion bei der die angegebene Debug-Adresse gelöscht wird.|  
-|[IsFunctionStale](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctionstale.md)|Bestimmt, ob die Funktion bei der die angegebene Debug-Adresse als veraltet angesehen wird.|  
-|[IsHiddenCode](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-ishiddencode.md)|Bestimmt, ob der Code bei der Adresse angegebenen Debugger ausgeblendet ist.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbols.md)|Lädt die angegebene Debug-Symbole im Arbeitsspeicher.|  
-|[LoadSymbolsFromStream](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream.md)|Lädt Symbole erhält den Datenstrom für das Debuggen.|  
-|[ReplaceSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols.md)|Ersetzt die aktuellen Debugsymbolen zu denjenigen in dem angegebenen Datenstream.|  
-|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|Wird die Debugsymbolen für das angegebene Modul aus dem Arbeitsspeicher entladen.|  
-|[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Aktualisiert den Debugsymbolen im Arbeitsspeicher mit den angegebenen Datenstream.|  
+|[GetFunctionLineOffset](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getfunctionlineoffset.md)|Ruft die Adresse in einer Funktion, die den Offset der angegebenen Zeile darstellt.|  
+|[GetLocalVariablelayout](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getlocalvariablelayout.md)|Ruft das Layout von lokalen Variablen für einen Satz von Methoden ab.|  
+|[GetNameFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Gibt den Namen der angegebenen Token, die die Metadaten-Objekt zugeordnet.|  
+|[GetSymAttribute](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Ruft die Debugsymbole, mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.|  
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymunmanagedreader.md)|Ruft ab den Symbolreader von nicht verwaltetem Code verwendet werden.|  
+|[GetTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-gettypefromaddress.md)|Ruft ab, um ein Symboltyp, wenn die debugadresse.|  
+|[IsFunctionDeleted](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctiondeleted.md)|Bestimmt, ob die Funktion an der angegebenen Debug-Adresse gelöscht wird.|  
+|[IsFunctionStale](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctionstale.md)|Bestimmt, ob die Funktion an der angegebenen Debug-Adresse als veraltet angesehen wird.|  
+|[IsHiddenCode](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-ishiddencode.md)|Bestimmt, ob der Code unter der Adresse angegebenen Debugger ausgeblendet ist.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbols.md)|Lädt die angegebenen Debug-Symbole im Arbeitsspeicher.|  
+|[LoadSymbolsFromStream](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream.md)|Lädt Debugsymbole ab, der den Datenstrom angegeben ist.|  
+|[ReplaceSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols.md)|Ersetzt die aktuelle Debugsymbole mit den Angaben in den angegebenen Datenstrom.|  
+|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|Entlädt die Debugsymbolen für das angegebene Modul aus dem Arbeitsspeicher.|  
+|[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Aktualisiert die Debugsymbole im Arbeitsspeicher mit den angegebenen Datenstream.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  

@@ -1,8 +1,7 @@
 ---
-title: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden'
+title: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2243
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b6c7aa4638a1a0a863bf53c85a5e182f57a366d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939991"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert
 
 |||
 |-|-|
@@ -63,4 +62,4 @@ ms.locfileid: "45551937"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

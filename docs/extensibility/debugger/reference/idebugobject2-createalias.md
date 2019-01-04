@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::CreateAlias | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::CreateAlias
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a581b18dc331e1dd361554e1066cdbcb7b802a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a17d8ae1f91b646ad641803ae0bc2e0213ecfc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939188"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Erstellt eine eindeutige ID oder den Alias für dieses Objekt aus, oder gibt einen vorhandenen Alias.  
@@ -28,14 +25,14 @@ Erstellt eine eindeutige ID oder den Alias für dieses Objekt aus, oder gibt ein
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CreateAlias(  
-   IDebugAlias** ppAlias  
+HRESULT CreateAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int CreateAlias(  
-   out IDebugAlias ppAlias  
+int CreateAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   

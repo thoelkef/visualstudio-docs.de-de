@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940550"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Kontextmenüs für <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente in einer Anpassung auf Dokumentebene für Word erstellt werden. Wenn ein Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt, wird ein Kontextmenü mit Optionen zum Formatieren des Texts angezeigt.  
@@ -91,7 +88,7 @@ ms.locfileid: "49884081"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>So fügen Sie einem Kontextmenü Befehle hinzu  
   
-1.  Hinzufügen einer **Menüband-XML-** Elements zum Projekt. Weitere Informationen finden Sie unter [wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Hinzufügen einer **Menüband-XML-** Elements zum Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  In **Projektmappen-Explorer**Option **ThisDocument.cs** oder **ThisDocument.vb**.  
   
@@ -201,5 +198,3 @@ ms.locfileid: "49884081"
  [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
  [Bookmark-Steuerelement](../vsto/bookmark-control.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

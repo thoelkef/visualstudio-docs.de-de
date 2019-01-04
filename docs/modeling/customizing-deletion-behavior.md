@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940952"
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfalls gelöscht. Alle mit dem Element verbundenen Beziehungen und alle ihm untergeordneten Elemente werden gelöscht. Dieses Verhalten ist mit dem Namen *Löschweitergabe*. Sie können die Löschweitergabe anpassen, um beispielsweise zu veranlassen, dass zusätzliche verwandte Elemente gelöscht werden. Durch Schreiben von Programmcode können Sie die Löschweitergabe vom Zustand des Modells abhängig machen. Sie können auch andere Änderungen als Reaktion auf eine Löschung veranlassen.

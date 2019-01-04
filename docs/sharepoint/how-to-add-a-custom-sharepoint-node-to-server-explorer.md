@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937662"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Gewusst wie: Hinzufügen ein benutzerdefiniertes SharePoint-Knotens zum Server-Explorer
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Vorgehensweise: Fügen Sie einen benutzerdefinierten SharePoint-Knoten zum Server-Explorer
   Sie können benutzerdefinierte Knoten hinzufügen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. Dies ist nützlich, wenn Sie zusätzliche SharePoint-Komponenten angezeigt, die nicht im angezeigt werden soll **Server-Explorer** standardmäßig. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Um einen benutzerdefinierten Knoten hinzuzufügen, erstellen Sie zuerst eine Klasse, die den neuen Knoten definiert. Anschließend erstellen Sie eine Erweiterung, die den Knoten als untergeordnetes Element eines vorhandenen Knotens hinzufügt.  
@@ -46,9 +43,9 @@ ms.locfileid: "36755640"
   
 4.  Fügen Sie die folgenden Attribute zur Klasse hinzu:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute> Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Typ an den Attributkonstruktor.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Typ an den Attributkonstruktor.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> In der Knotendefinition eines gibt dieses Attribut den Zeichenfolgenbezeichner für den neuen Knoten an. Es wird empfohlen, dass Sie das Format verwenden *Firmenname*. *Knotenname* um sicherzustellen, dass alle Knoten einen eindeutigen Bezeichner verfügen.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. In der Knotendefinition eines gibt dieses Attribut den Zeichenfolgenbezeichner für den neuen Knoten an. Es wird empfohlen, dass Sie das Format verwenden *Firmenname*. *Knotenname* um sicherzustellen, dass alle Knoten einen eindeutigen Bezeichner verfügen.  
   
 5.  In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> Methode verwenden, Mitglied der *TypeDefinition* Parameter, um das Verhalten des neuen Knotens zu konfigurieren. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> Schnittstelle.  
   
@@ -61,13 +58,13 @@ ms.locfileid: "36755640"
   
 1.  Im selben Projekt Knotendefinition, erstellen Sie eine Klasse, implementiert die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Schnittstelle.  
   
-2.  Hinzufügen der <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut der Klasse. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.  
+2.  Fügen Sie der Klasse das <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut hinzu. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.  
   
-3.  Hinzufügen der <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut der Klasse. In einer knotenerweiterung gibt dieses Attribut den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.  
+3.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut hinzu. In einer knotenerweiterung gibt dieses Attribut den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.  
   
      Um integrierte Knotentypen, die von Visual Studio bereitgestellten anzugeben, übergeben Sie eine der folgenden Enumerationswerte an den Attributkonstruktor:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Wird verwendet, diese Werte an der Website-Verbindungsknoten (die Knoten, die Website-URLs anzeigen), Standort, Knoten und alle anderen übergeordneten Knoten in **Server-Explorer**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte an der Website-Verbindungsknoten (die Knoten, die Website-URLs anzeigen), Standort, Knoten und alle anderen übergeordneten Knoten in **Server-Explorer**.  
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um eine der integrierten Knoten anzugeben, die auf einer SharePoint-Website, z. B. ein Knoten eine einzelne Komponente darstellen, die eine Liste, ein Feld oder Inhaltstyp darstellt.  
   
@@ -100,7 +97,5 @@ ms.locfileid: "36755640"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Gewusst wie: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  

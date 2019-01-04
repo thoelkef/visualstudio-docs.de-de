@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen'
-ms.custom: ''
+title: 'Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989256"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.  
   
 - Sie können ein Inhaltssteuerelement schützen.  
@@ -108,8 +105,7 @@ ms.locfileid: "49850359"
 ## <a name="see-also"></a>Siehe auch  
  [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
  [ContentControl-Elemente](../vsto/content-controls.md)   
- [Gewusst wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen von benutzerdefinierten Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939221"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Gewusst wie: erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Vorgehensweise: Erstellen Sie, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen
   Sie können benutzerdefinierte Validierungsregeln, um zu überprüfen, ob das Projektmappenpaket generiert, die von Visual Studio erstellen. Sie können vollständige Überprüfung auf ein ganzes Feature oder Paket ausführen, dazu **überprüfen** aus dem Kontextmenü eines Pakets oder einer Funktion in der **PackagingExplorer**. Teilweise Validierung wird ausgeführt, wenn Sie die neue Projektelemente SharePonit oder Funktionen, um das Projekt hinzufügen, um zu bestimmen, ob das Paket oder eine Funktion in einem gültigen Zustand wäre.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Um eine benutzerdefinierte Paketvalidierungsregel zu erstellen.  
@@ -62,4 +59,3 @@ ms.locfileid: "37119193"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Packen und-bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

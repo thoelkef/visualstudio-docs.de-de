@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955226"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Erstellen einer benutzerdefinierten Menübandregisterkarte mit den **Menüband (XML)** Element.  
@@ -41,7 +38,7 @@ ms.locfileid: "38808923"
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -115,12 +112,12 @@ ms.locfileid: "38808923"
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Fügen Sie der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückrufmethode für die **Text einfügen** Schaltfläche, eine Zeichenfolge mit dem aktiven Dokument an der aktuellen Position des Cursors hinzugefügt.  
+3.  Fügen Sie der `MyRibbon` -Klasse die folgende Methode hinzu. Dies ist eine Rückrufmethode für die **Text einfügen** Schaltfläche, eine Zeichenfolge mit dem aktiven Dokument an der aktuellen Position des Cursors hinzugefügt.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Fügen Sie der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückrufmethode für die **Tabelle einfügen** Schaltfläche, eine Tabelle mit dem aktiven Dokument an der aktuellen Position des Cursors hinzugefügt.  
+4.  Fügen Sie der `MyRibbon` -Klasse die folgende Methode hinzu. Dies ist eine Rückrufmethode für die **Tabelle einfügen** Schaltfläche, eine Tabelle mit dem aktiven Dokument an der aktuellen Position des Cursors hinzugefügt.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
@@ -161,5 +158,3 @@ ms.locfileid: "38808923"
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Menüband-XML](../vsto/ribbon-xml.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

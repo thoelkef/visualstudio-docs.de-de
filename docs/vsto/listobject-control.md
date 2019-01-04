@@ -1,9 +1,6 @@
 ---
 title: ListObject-Steuerelement
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945183"
 ---
 # <a name="listobject-control"></a>ListObject-Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist eine Liste, die Ereignisse verfügbar macht und an Daten gebunden werden kann. Beim Hinzufügen einer Liste zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.  
@@ -34,7 +31,7 @@ ms.locfileid: "35672760"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Erstellen Sie das Steuerelement  
- In Projekten auf Dokumentebene können Sie einem Arbeitsblatt zur Entwurfszeit oder Laufzeit <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen zu Arbeitsblättern nur zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zur Arbeitsblätter](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ In Projekten auf Dokumentebene können Sie einem Arbeitsblatt zur Entwurfszeit oder Laufzeit <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen zu Arbeitsblättern nur zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Standardmäßig werden dynamisch erstellte Listenobjekte im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -49,7 +46,7 @@ ms.locfileid: "35672760"
   
  Da die Daten von <xref:Microsoft.Office.Tools.Excel.ListObject>getrennt sind, sollten Sie Daten über das gebundene DataSet und nicht direkt über <xref:Microsoft.Office.Tools.Excel.ListObject>hinzufügen und entfernen. Wenn die Daten im gebundenen DataSet auf beliebige Weise aktualisiert werden, spiegelt das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement automatisch die Änderungen wider. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement schnell füllen, indem Sie <xref:Microsoft.Office.Tools.Excel.ListObject> an eine Datenquelle binden. Wenn Sie die Daten in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject>bearbeiten, werden die Änderungen auch automatisch in der Datenquelle vorgenommen. Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> füllen und dann dem Benutzer das Ändern der Daten in <xref:Microsoft.Office.Tools.Excel.ListObject> ermöglichen möchten, ohne die Datenquelle zu ändern, können Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> -Methode verwenden, um <xref:Microsoft.Office.Tools.Excel.ListObject> von der Datenquelle zu trennen. Weitere Informationen finden Sie unter [Vorgehensweise: Füllen von ListObject-Steuerelemente mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement schnell füllen, indem Sie <xref:Microsoft.Office.Tools.Excel.ListObject> an eine Datenquelle binden. Wenn Sie die Daten in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject>bearbeiten, werden die Änderungen auch automatisch in der Datenquelle vorgenommen. Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> füllen und dann dem Benutzer das Ändern der Daten in <xref:Microsoft.Office.Tools.Excel.ListObject> ermöglichen möchten, ohne die Datenquelle zu ändern, können Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> -Methode verwenden, um <xref:Microsoft.Office.Tools.Excel.ListObject> von der Datenquelle zu trennen. Weitere Informationen finden Sie unter [Vorgehensweise: ListObject-Steuerelementen mit Daten füllen](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 > [!NOTE]  
 >  Die Datenbindung wird bei überlappenden <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelementen nicht unterstützt.  
@@ -58,7 +55,7 @@ ms.locfileid: "35672760"
  Das Einlesen einer XML-Datei in ein datengebundenes <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist normalerweise langsamer, wenn Sie das Steuerelement zuerst binden und dann <xref:System.Data.DataSet.ReadXml%2A> zum Füllen des DataSets aufrufen. Rufen Sie für eine bessere Leistung <xref:System.Data.DataSet.ReadXml%2A> auf, bevor Sie das Steuerelement binden.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>Trennen von ListObject-Steuerelementen aus der Datenquelle  
- Nachdem Sie ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement mit Daten gefüllt haben, indem es an eine Datenquelle gebunden wurde, können sie es trennen, damit Änderungen an den Daten im Listenobjekt keine Auswirkungen auf die Datenquelle haben. Weitere Informationen finden Sie unter [Vorgehensweise: Füllen von ListObject-Steuerelemente mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Nachdem Sie ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement mit Daten gefüllt haben, indem es an eine Datenquelle gebunden wurde, können sie es trennen, damit Änderungen an den Daten im Listenobjekt keine Auswirkungen auf die Datenquelle haben. Weitere Informationen finden Sie unter [Vorgehensweise: ListObject-Steuerelementen mit Daten füllen](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 ### <a name="restore-column-and-row-order"></a>Wiederherstellen der Spalten-und Zeilenreihenfolge  
  Beim Binden von Daten an ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, das einem Dokument zur Entwurfszeit hinzugefügt wurde, protokolliert Visual Studio die Spalten- und Zeilenreihenfolge bei jedem Speichern der Arbeitsmappe. Wenn ein Benutzer wechselt die <xref:Microsoft.Office.Tools.Excel.ListObject> Spalten oder Zeilen während der Laufzeit, die neue Reihenfolge wird beim nächsten der Arbeitsmappe öffnen beibehalten und die <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement erneut an die Datenquelle gebunden.  
@@ -72,7 +69,7 @@ ms.locfileid: "35672760"
  Sie können nicht manuell hinzufügen oder Entfernen von Spalten in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zur Laufzeit. Wenn ein Endbenutzer versucht, eine Spalte zu löschen, wird Sie sofort wiederhergestellt und alle hinzugefügten Spalten entfernt werden. Daher ist es wichtig, Code zu schreiben, der Benutzern erläutert, warum sie diese Aktionen nicht für ein <xref:Microsoft.Office.Tools.Excel.ListObject> ausführen können, das an Daten gebunden ist. Visual Studio bietet verschiedene Ereignisse für <xref:Microsoft.Office.Tools.Excel.ListObject> , die sich auf die Datenbindung beziehen. Beispielsweise können Sie das <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> -Ereignis verwenden, um Benutzer zu warnen, dass Daten, die sie löschen wollten, nicht gelöscht werden können und wiederhergestellt wurden.  
   
 ## <a name="add-and-remove-rows-at-runtime"></a>Hinzufügen und Entfernen von Zeilen zur Laufzeit  
- Sie können Zeilen in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement manuell hinzufügen und entfernen, vorausgesetzt, die Datenquelle lässt das Hinzufügen neuer Zeilen zu und ist nicht schreibgeschützt. Sie können Code für Ereignisse wie <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> schreiben, um die Daten zu überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ Sie können Zeilen in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement manuell hinzufügen und entfernen, vorausgesetzt, die Datenquelle lässt das Hinzufügen neuer Zeilen zu und ist nicht schreibgeschützt. Sie können Code für Ereignisse wie <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> schreiben, um die Daten zu überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Überprüfen Sie Daten aus, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  Manchmal verursacht die Beziehung des Listenobjekts zur Datenquelle routinemäßige Fehler. Sie können z. B. die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject>enthalten sein sollen. Wenn Sie Spalten auslassen, die eingeschränkt sind, z. B. ein Feld, das keine NULL-Werte akzeptiert, wird bei jedem Erstellen einer Zeile ein Fehler ausgelöst. Sie können Code schreiben, um die fehlenden Werte in einem Ereignishandler für das <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> -Ereignis hinzuzufügen.  
   
@@ -112,17 +109,15 @@ ms.locfileid: "35672760"
   
 ## <a name="see-also"></a>Siehe auch  
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Gewusst wie: Ändern der Größe ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)   
- [Gewusst wie: Überprüfen von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Vorgehensweise: Zuordnung ListObject-Spalten mit Daten](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Gewusst wie: Füllen ListObject-Steuerelemente mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Vorgehensweise: Größe von ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)   
+ [Vorgehensweise: Überprüfen Sie Daten aus, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Vorgehensweise: Füllen Sie ListObject-Steuerelementen mit Daten.](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

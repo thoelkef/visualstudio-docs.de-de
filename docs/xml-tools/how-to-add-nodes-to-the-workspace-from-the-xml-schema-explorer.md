@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich'
+title: 'Vorgehensweise: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: gewarren
@@ -10,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1f5821d3a4207d89eb62b9344cff967c73b536
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a65decc0ba965f27579c746dc5763c2e9aa8d3be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960510"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Vorgehensweise: Hinzufügen von Knoten im Arbeitsbereich "" aus der XML-Schema-Explorer
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Vorgehensweise: Hinzufügen von Knoten mit dem Arbeitsbereich aus der XML-Schema-Explorer
 
-In diesem Thema wird erläutert, wie zum Hinzufügen von Knoten, um die [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md) aus der **XML-Schema-Explorer**. Dies kann erreicht werden, per Drag & Drop von Knoten aus dem **XML-Schema-Explorer** ein XSD-Designer-Ansicht oder mithilfe der **XML-Schema-Explorer** Kontextmenü. Sie können auch hinzufügen, Knoten, die als Ergebnis einer Suche von hervorgehoben sind der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [wie: Hinzufügen von Set Search Ergebnis Schemaknoten zum Arbeitsbereich](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+In diesem Thema wird erläutert, wie Sie zum Hinzufügen von Knoten der [XML-Schema-Designer-Arbeitsbereich](../xml-tools/xml-schema-designer-workspace.md) aus der **XML-Schema-Explorer**. Dies kann erreicht werden, per Drag & Drop von Knoten aus der **XML-Schema-Explorer** auf einer XSD-Designer-Ansicht oder über die **XML-Schema-Explorer** Kontextmenü. Sie können auch Knoten, die hervorgehoben werden, als Ergebnis einer Suche durch Hinzufügen der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Knoten aus Schema-Suchergebnissen zum Arbeitsbereich](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Nur globale Knoten hinzugefügt werden können, um die [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md).
+> Nur globale Knoten hinzugefügt werden können, um die [XML-Schema-Designer-Arbeitsbereich](../xml-tools/xml-schema-designer-workspace.md).
 
 ## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Zum Hinzufügen von Knoten über das Kontextmenü des XML-Explorer
 
-1.  Führen Sie die Schritte in [Vorgehensweise: Erstellen und bearbeiten eine XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Führen Sie die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Klicken Sie mit der rechten Maustaste auf die `PurchaseOrderType` Knoten in der XSD-Explorer. Wählen Sie **in Diagrammansicht anzeigen**.
+2.  Klicken Sie mit der rechten Maustaste auf die `PurchaseOrderType` Knoten im XSD-Explorer. Wählen Sie **in Diagrammansicht anzeigen**.
 
      Der `purchaseOrderType`-Knoten wird auf der Entwurfsoberfläche der Diagrammansicht angezeigt.
 
@@ -52,13 +51,13 @@ In diesem Thema wird erläutert, wie zum Hinzufügen von Knoten, um die [Arbeits
 
      ![Schlüsselwortsuche im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
-     Die Suchergebnisse werden hervorgehoben, der **XML-Schema-Explorer** und auf der vertikalen Bildlaufleiste durch Teilstriche markiert.
+     In die Suchergebnissen hervorgehoben sind der **XML-Schema-Explorer** und auf der vertikalen Bildlaufleiste durch Teilstriche markiert.
 
-2.  Die Suchergebnisse dem Arbeitsbereich hinzufügen, indem Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** Schaltfläche im Bereich Zusammenfassung der Ergebnisse.
+2.  Die Ergebnisse der Suche zu Arbeitsbereich hinzufügen, indem Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche.
 
      ![Suchergebnis im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     Die `purchaseOrder` Knoten und die `PurchaseOrderType` -Knoten werden nebeneinander auf der Entwurfsoberfläche der der [Diagrammansicht](../xml-tools/graph-view.md). Da die zwei Knoten miteinander verknüpft sind (das `purchaseOrder`-Element ist vom `PurchaseOrderType`-Typ), wird ein Pfeil zwischen den Elementen gezeichnet.
+     Die `purchaseOrder` Knoten und die `PurchaseOrderType` -Knoten werden nebeneinander auf der Entwurfsoberfläche des der [Diagrammansicht](../xml-tools/graph-view.md). Da die zwei Knoten miteinander verknüpft sind (das `purchaseOrder`-Element ist vom `PurchaseOrderType`-Typ), wird ein Pfeil zwischen den Elementen gezeichnet.
 
 ## <a name="see-also"></a>Siehe auch
 

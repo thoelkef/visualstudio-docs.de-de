@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02ff8a2be0d13af193a204ee6711bf7dfa11dee7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4fb6ce04e32f30411e8e1a60757774a4f2b36807
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941543"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
 Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor hinzufügen. In dieser exemplarischen Vorgehensweise zeigt, wie eine Textansicht im Editor ein Zusatzelement hinzugefügt, durch den Aufruf eines Menübefehls.  
   
  Diese exemplarische Vorgehensweise veranschaulicht die Verwendung eines VSPackage zusammen mit einer Komponente des Managed Extensibility Framework (MEF). Sie müssen eine VSPackage verwenden, um den Menübefehl mit der Visual Studio-Shell zu registrieren. Und Sie können den Befehl auf den MEF-Komponente verwenden.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl  
@@ -111,7 +108,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 4.  Die Datei sollte eine Klasse, die mit dem Namen enthalten `CommentAdornment`.  
   
     ```csharp  
-    internal class CommentAdornment  
+    internal class CommentAdornment  
     ```  
   
 5.  Hinzufügen von drei Feldern für die `CommentAdornment` -Klasse für die <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, dem Autor und die Beschreibung.  
@@ -164,9 +161,9 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
     ```csharp  
     private Geometry textGeometry;  
     private Grid commentGrid;  
-    private static Brush brush;  
-    private static Pen solidPen;  
-    private static Pen dashPen;  
+    private static Brush brush;  
+    private static Pen solidPen;  
+    private static Pen dashPen;  
     ```  
   
 5.  Fügen Sie einen Konstruktor, der das Zusatzelement Kommentar definiert und fügt die relevanten Text hinzu.  
@@ -241,7 +238,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 6.  Implementieren Sie auch eine <xref:System.Windows.Controls.Panel.OnRender%2A> -Ereignishandler, der das Zusatzelement zeichnet.  
   
     ```csharp  
-    protected override void OnRender(DrawingContext dc)  
+    protected override void OnRender(DrawingContext dc)  
     {  
         base.OnRender(dc);  
         if (this.textGeometry != null)  
@@ -278,7 +275,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 4.  Implementieren der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode aufruft und die It die statische `Create()` Ereignis die `CommentAdornmentManager`.  
   
     ```csharp  
-    public void TextViewCreated(IWpfTextView textView)  
+    public void TextViewCreated(IWpfTextView textView)  
     {  
         CommentAdornmentManager.Create(textView);  
     }  
@@ -287,16 +284,16 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 5.  Fügen Sie eine Methode, die Sie verwenden können, um den Befehl auszuführen.  
   
     ```csharp  
-    static public void Execute(IWpfTextViewHost host)  
+    static public void Execute(IWpfTextViewHost host)  
     {  
         IWpfTextView view = host.TextView;  
-        //Add a comment on the selected text.   
+        //Add a comment on the selected text.   
         if (!view.Selection.IsEmpty)  
         {  
             //Get the provider for the comment adornments in the property bag of the view.  
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));  
   
-            //Add some arbitrary author and comment text.   
+            //Add some arbitrary author and comment text.   
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;  
             string comment = "Four score....";  
   
@@ -358,7 +355,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
     private CommentAdornmentProvider(ITextBuffer buffer)  
     {  
         this.buffer = buffer;  
-        //listen to the Changed event so we can react to deletions.   
+        //listen to the Changed event so we can react to deletions.   
         this.buffer.Changed += OnBufferChanged;  
     }  
   
@@ -367,9 +364,9 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 6.  Fügen Sie die `Create()`-Methode hinzu.  
   
     ```csharp  
-    public static CommentAdornmentProvider Create(IWpfTextView view)  
+    public static CommentAdornmentProvider Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
     }  
   
     ```  
@@ -377,11 +374,11 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 7.  Fügen Sie die `Detach()`-Methode hinzu.  
   
     ```csharp  
-    public void Detach()  
+    public void Detach()  
     {  
         if (this.buffer != null)  
         {  
-            //remove the Changed listener   
+            //remove the Changed listener   
             this.buffer.Changed -= OnBufferChanged;  
             this.buffer = null;  
         }  
@@ -391,15 +388,15 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 8.  Hinzufügen der `OnBufferChanged` -Ereignishandler.  
   
     ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
+    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
     {  
         //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
+            //if a comment does not span at least one character, its text was deleted.   
             if (span.Length != 0)  
             {  
                 keptComments.Add(comment);  
@@ -417,25 +414,25 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 9. Fügen Sie eine Deklaration für eine `CommentsChanged` Ereignis.  
   
     ```csharp  
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
 10. Erstellen Sie eine `Add()` Methode, um das Zusatzelement hinzuzufügen.  
   
     ```csharp  
-    public void Add(SnapshotSpan span, string author, string text)  
+    public void Add(SnapshotSpan span, string author, string text)  
     {  
         if (span.Length == 0)  
-            throw new ArgumentOutOfRangeException("span");  
+            throw new ArgumentOutOfRangeException("span");  
         if (author == null)  
-            throw new ArgumentNullException("author");  
+            throw new ArgumentNullException("author");  
         if (text == null)  
-            throw new ArgumentNullException("text");  
+            throw new ArgumentNullException("text");  
   
         //Create a comment adornment given the span, author and text.  
         CommentAdornment comment = new CommentAdornment(span, author, text);  
   
-        //Add it to the list of comments.   
+        //Add it to the list of comments.   
         this.comments.Add(comment);  
   
         //Raise the changed event.  
@@ -449,19 +446,19 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 11. Hinzufügen einer `RemoveComments()` Methode.  
   
     ```csharp  
-    public void RemoveComments(SnapshotSpan span)  
+    public void RemoveComments(SnapshotSpan span)  
     {  
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;  
   
         //Get a list of all the comments that are being kept   
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
             {  
-                //Raise the change event to delete this comment.   
+                //Raise the change event to delete this comment.   
                 if (commentsChanged != null)  
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));  
             }  
@@ -479,24 +476,24 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
     {  
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();  
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
                 overlappingComments.Add(comment);  
         }  
   
-        return new Collection<CommentAdornment>(overlappingComments);  
+        return new Collection<CommentAdornment>(overlappingComments);  
     }  
     ```  
   
 13. Fügen Sie eine Klasse, die mit dem Namen `CommentsChangedEventArgs`wie folgt.  
   
     ```csharp  
-    internal class CommentsChangedEventArgs : EventArgs  
+    internal class CommentsChangedEventArgs : EventArgs  
     {  
-        public readonly CommentAdornment CommentAdded;  
+        public readonly CommentAdornment CommentAdded;  
   
-        public readonly CommentAdornment CommentRemoved;  
+        public readonly CommentAdornment CommentRemoved;  
   
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)  
         {  
@@ -533,9 +530,9 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 4.  Fügen Sie private Felder hinzu.  
   
     ```csharp  
-    private readonly IWpfTextView view;  
-    private readonly IAdornmentLayer layer;  
-    private readonly CommentAdornmentProvider provider;  
+    private readonly IWpfTextView view;  
+    private readonly IAdornmentLayer layer;  
+    private readonly CommentAdornmentProvider provider;  
     ```  
   
 5.  Fügen Sie einen Konstruktor, der den Manager abonniert die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> Ereignisse, und auch mit der `CommentsChanged` Ereignis. Der Konstruktor ist privat, da der Manager, von der statischen instanziiert wird `Create()` Methode.  
@@ -557,22 +554,22 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 6.  Hinzufügen der `Create()` Methode, ruft einen Anbieter oder bei Bedarf erstellt.  
   
     ```csharp  
-    public static CommentAdornmentManager Create(IWpfTextView view)  
+    public static CommentAdornmentManager Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
     }  
     ```  
   
 7.  Hinzufügen der `CommentsChanged` Handler.  
   
     ```csharp  
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
     {  
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
         if (e.CommentRemoved != null)  
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);  
   
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
         if (e.CommentAdded != null)  
             this.DrawComment(e.CommentAdded);  
     }  
@@ -581,7 +578,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 8.  Hinzufügen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> Handler.  
   
     ```csharp  
-    private void OnClosed(object sender, EventArgs e)  
+    private void OnClosed(object sender, EventArgs e)  
     {  
         this.provider.Detach();  
         this.view.LayoutChanged -= OnLayoutChanged;  
@@ -592,19 +589,19 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 9. Hinzufügen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Handler.  
   
     ```csharp  
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
         //Get all of the comments that intersect any of the new or reformatted lines of text.  
         List<CommentAdornment> newComments = new List<CommentAdornment>();  
   
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
-        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
+        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
         foreach (Span span in e.NewOrReformattedSpans)  
         {  
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));  
         }  
   
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
         //Sort the list and skip duplicates.  
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });  
   
@@ -725,4 +722,4 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
      Fourscore...  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-Manager | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0ed3913b8031283b20589a670c5d2da6e51a8dec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941978"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Gewusst wie: Registrieren einer Bibliothek mit der Objekt-Manager
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-manager
 Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, können Sie anzeigen Symbole in Ihrem Projekt oder in externen Komponenten. Die Symbole enthalten Namespaces, Klassen, Schnittstellen, Methoden und anderen Sprachelemente. Die Bibliotheken diese Symbole verfolgen und verfügbar zu machen, damit die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager, die die Tools mit den Daten auffüllt.  
   
  Der Objekt-Manager verfolgt des aller verfügbare Bibliotheken. Jede Bibliothek muss mit der Objekt-Manager registrieren, bevor Sie die Symbole für die Tools zum Durchsuchen von Symbolen bereitstellen.  
@@ -170,4 +167,4 @@ Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**,
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterbarkeit von legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Gewusst wie: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

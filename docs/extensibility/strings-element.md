@@ -1,9 +1,6 @@
 ---
-title: Zeichenfolgen-Element | Microsoft Docs
-ms.custom: ''
+title: Zeichenfolgen-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5994144f07b8af84f61d7833737f45593c551b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a57fa611f157fa588158225cece8d38da2babd0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967880"
 ---
-# <a name="strings-element"></a>Zeichenfolgen-Element
-Das Zeichenfolgen-Element muss mindestens eine enthalten **ButtonText** untergeordnetes Element. Alle untergeordneten Elemente sind optional. Ungültiges XML-Zeichen wie '&' und ' <' als Entitäten codiert werden ("&amp;'und'&lt;" usw.).  
+# <a name="strings-element"></a>Strings-Element
+Das Zeichenfolgen-Element muss mindestens einen enthalten **ButtonText** untergeordnetes Element. Alle anderen untergeordneten Elemente sind optional. Ungültiges XML-Zeichen wie '&' und ' <' codiert werden als Entitäten ("&amp;'und'&lt;" und so weiter).  
   
- Ein kaufmännisches und-Zeichen in der Zeichenfolge gibt die Tastenkombination für den Befehl an.  
+ Ein kaufmännisches und-Zeichen in der Textzeichenfolge gibt an, die Tastenkombination für den Befehl.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,19 +45,19 @@ Das Zeichenfolgen-Element muss mindestens eine enthalten **ButtonText** untergeo
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|ButtonText|Dieses Feld und die fünf folgenden Textfelder in der Befehlsdefinition eines können Sie die Geben Sie den Text, der angezeigt wird, in verschiedenen Menüs. Wird standardmäßig die `ButtonText` Feld wird in Menüsteuerelemente angezeigt. Die `ButtonText` des Felds wird auch die Standardeinstellung, wenn alle anderen Textfelder leer sind. Die `ButtonText` Feld darf nicht leer sein, auch wenn die anderen Textfelder angegeben sind.|  
+|ButtonText|Dieses Feld und die fünf folgenden Textfelder in einer Befehlsdefinition können Sie die Text erscheint in verschiedenen Menüs angeben. In der Standardeinstellung die `ButtonText` Feld wird in Menücontroller angezeigt. Die `ButtonText` Feld wird auch die Standardeinstellung, wenn die anderen Textfelder leer sind. Die `ButtonText` Feld darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.|  
 |ToolTipText|Die `ToolTipText` Feld gibt den Text, der angezeigt wird, in der QuickInfo für ein Menüelement.<br /><br /> Wenn die `ToolTipText` Feld leer ist, ist die `ButtonText` Feld verwendet wird.|  
-|MenuText|Die `MenuText` Feld gibt den Text, der für einen Befehl angezeigt wird, sofern es sich im Hauptmenü eine Symbolleiste, die in einem Kontextmenü oder in einem Untermenü handelt. Wenn die `MenuText` Feld leer ist, verwendet die integrierte Entwicklungsumgebung (IDE) die `ButtonText` Feld. Die `MenuText` Feld kann auch für die Lokalisierung verwendet werden.<br /><br /> Für die Kontextmenüs die `MenuText` Feld ist der Name, der auf der Symbolleiste Kontextmenüs angezeigt wird, die Anpassung von Kontextmenüs in der IDE ermöglicht. Aus diesem Grund werden Sie in der Sie Ihre Kontextmenü Namen bestimmte; Verwenden Sie z. B. "Widget Paket Kontextmenü" anstelle von "Verknüpfung".<br /><br /> Wenn die `MenuText` Feld nicht angegeben wird, die `ButtonText` Feld verwendet wird.|  
-|CommandName|Die `CommandName` Feld gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Befehle** Registerkarte der **anpassen** (Dialogfeld) (verfügbar, indem Sie auf **anpassen**auf die **Tools** Menü).|  
-|CanonicalName-Element|Die englische `CanonicalName` Feld gibt den Namen des Befehls in englischem Text, die in eingegeben werden, kann die **Befehl** ausführen, das Menüelement. Die IDE entfernt alle Zeichen, die keine Buchstaben, Ziffern, Unterstriche oder eingebettete Punkte sind. Dieser Text wird dann verkettet, um die `ButtonText` Feld, um den Befehl zu definieren. Beispielsweise **neues Projekt** auf die **Datei** Menü wird der Befehl File.NewProject.<br /><br /> Wenn der englischen `CanonicalName` Feld nicht angegeben wird, verwendet die IDE die `ButtonText` Feld und alle mit Ausnahme von Buchstaben, Ziffern, Unterstriche und eingebettete Punkte leisten. Z. B. den Text der Schaltfläche "& definieren... Befehle" wird DefineCommands, in dem das kaufmännische und-Zeichen, Leerzeichen und mit den Auslassungspunkten entfernt werden.<br /><br /> Wenn die `TextChanges` Flag angegeben wird und der Text des Befehls geändert wird, wird des entsprechenden Befehls vom erkannt die **Befehl** Fenster wird nicht geändert, bleibt die kanonische Form des ursprünglichen `ButtonText` oder Englisch `CanonicalName` Felder.|  
-|LocCanonicalName|Die `LocCanonicalName` Feld verhält sich ebenso wie Englisch `CanonicalName` Feld ermöglicht jedoch lokalisierte Befehlstext angegeben werden. Beide kanonische Felder können angegeben werden. Daran, dass die IDE im eingegebenen Text nur analysiert die **Befehl** Fenster und ordnet sie mit einem Befehl, der sowohl für Englisch als auch für nicht-englischen Text kann mit den gleichen Befehl verknüpft werden.|  
+|MenuText|Die `MenuText` Feld gibt den Text an, die für einen Befehl angezeigt wird, wenn sie im Hauptmenü, eine Symbolleiste, die in einem Kontextmenü oder in einem Untermenü wird. Wenn die `MenuText` Feld leer ist, werden die integrierte Entwicklungsumgebung (IDE) verwendet die `ButtonText` Feld. Die `MenuText` Feld kann auch für die Lokalisierung verwendet werden.<br /><br /> Für Kontextmenüs das `MenuText` Feld enthält den Namen, die in der Symbolleiste Kontextmenüs angezeigt wird, die Anpassung von Kontextmenüs in der IDE ermöglicht. Aus diesem Grund werden Sie in der Sie Ihre Kontextmenü Namen bestimmte; Verwenden Sie z. B. "-Widget-Paket im Kontextmenü" anstelle von "Verknüpfung".<br /><br /> Wenn die `MenuText` Feld nicht angegeben ist, die `ButtonText` Feld verwendet wird.|  
+|commandName|Die `CommandName` Feld gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Befehle** Registerkarte der **anpassen** Dialogfeld (verfügbar, indem Sie auf **anpassen**auf die **Tools** Menü).|  
+|CanonicalName-Element|Die englische `CanonicalName` Feld gibt den Namen des Befehls in englischem Text, die in eingegeben werden, können die **Befehl** Fenster, um das Menüelement auszuführen. Die IDE entfernt alle Zeichen, die keine Buchstaben, Ziffern, Unterstriche oder eingebettete Punkte sind. Dieser Text wird dann verkettet, um zu den `ButtonText` Feld, um den Befehl definieren. Z. B. **neues Projekt** auf die **Datei** Startmenü den Befehl aus, File.NewProject.<br /><br /> Wenn die englische `CanonicalName` Feld nicht angegeben ist, verwendet die IDE die `ButtonText` Feld, und Leisten Sie alle mit Ausnahme von Buchstaben, Ziffern, Unterstriche und eingebettete Punkte. Zum Beispiel den Text der Schaltfläche "& definieren... Befehle" wird DefineCommands, in dem das kaufmännische und-Zeichen, den Speicherplatz und mit den Auslassungspunkten entfernt werden.<br /><br /> Wenn die `TextChanges` Flag angegeben wird und der Text des Befehls geändert wird, wird des entsprechenden Befehls erkannt werden, indem die **Befehl** Fenster wird nicht geändert, bleibt die kanonische Form des ursprünglichen `ButtonText` oder einem englischen `CanonicalName` Felder.|  
+|LocCanonicalName|Die `LocCanonicalName` Feld verhält sich genau wie die englische `CanonicalName` Feld ermöglicht jedoch das lokalisierte Befehlstext angegeben werden. Beide kanonische Felder können angegeben werden. Da die IDE in eingegebenen Text analysiert die **Befehl** Fenster und ordnet es mit einem Befehl sowohl für Englisch als auch für nicht-englischen Text kann den gleichen Befehl zugeordnet werden.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |[Button-Element](../extensibility/button-element.md)|Definiert ein Element, das der Benutzer interagieren kann.|  
-|[Menu-Element](../extensibility/menu-element.md)|Definiert ein einzelnes Menüelement an.|  
+|[Menu-Element](../extensibility/menu-element.md)|Definiert ein einzelnes Menüelement.|  
 |[Combo-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
   
 ## <a name="see-also"></a>Siehe auch  

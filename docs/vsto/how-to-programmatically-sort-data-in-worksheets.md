@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Sortieren von Daten in Arbeitsblättern'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Sortieren von Daten in Arbeitsblättern'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960588"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Gewusst wie: Programmgesteuertes Sortieren von Daten in Arbeitsblättern
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Vorgehensweise: Programmgesteuertes Sortieren von Daten in Arbeitsblättern
   Sie können Daten sortieren, die zur Laufzeit in Arbeitsblattbereichen und -listen enthalten sind. Der folgende Code sortiert einen mehrspaltigen Bereich namens `Fruits` nach den Daten in der ersten Spalte und anschließend nach den Daten in der zweiten Spalte.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -66,11 +63,9 @@ ms.locfileid: "49914215"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [ListObject-Steuerelement](../vsto/listobject-control.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

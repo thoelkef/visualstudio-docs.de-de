@@ -1,9 +1,6 @@
 ---
-title: IDebugEngineProgram2 | Microsoft Docs
-ms.custom: ''
+title: IDebugEngineProgram2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff075605371d39f9d3ff04df01c7022c52e809ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33f1d88eaa7fe6cce34f4b386998ecc68cfe4953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934478"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
-Diese Schnittstelle bietet Multithread-debugging-Unterstützung.  
+Diese Schnittstelle stellt Multithread-debugging-Unterstützung bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,22 +29,22 @@ IDebugEngineProgram2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein Debugmodul implementiert diese Schnittstelle, um das gleichzeitige Debuggen von mehreren Threads unterstützen. Diese Schnittstelle wird implementiert, auf das gleiche Objekt, implementiert die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle.  
+ Ein Debugmodul implementiert diese Schnittstelle, um das gleichzeitige Debuggen von mehreren Threads unterstützen. Diese Schnittstelle wird implementiert, für das gleiche Objekt, das implementiert die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus einem `IDebugProgram2` Schnittstelle.  
+ Verwendung [QueryInterface](/cpp/atl/queryinterface) dieser Schnittstelle vom Abrufen einer `IDebugProgram2` Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugEngineProgram2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Beendet alle Threads, die an diesem Programm ausgeführt wird.|  
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Überwacht die Ausführung (oder beenden, die für die Ausführung beobachten) an den angegebenen Thread ausgeführt.|  
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Auswertung von Ausdrücken für den angegebenen Thread ausgeführt wird, auch wenn das Programm beendet wird ermöglicht (oder lässt nicht zu).|  
+|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Beendet alle Threads, die in diesem Programm ausgeführt wird.|  
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Wird überwacht, ob die Ausführung (oder beenden, die für die Ausführung überwachen) an den angegebenen Thread ausgeführt.|  
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Auswertung von Ausdrücken für den angegebenen Thread ausgeführt wird, auch wenn das Programm beendet wird hiermit (oder verweigert).|  
   
 ## <a name="remarks"></a>Hinweise  
- Visual Studio aufgerufen werden, diese Schnittstelle als Antwort auf eine [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Ereignis und die "Watch für Thread Schritt" und "Überwachen für Ausdruck Auswertung auf Thread" Status des Programms festlegen. [Beenden Sie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird aufgerufen, wenn das Programm beendet werden soll; diese Methode hat das Programm die Möglichkeit, die alle Threads zu beenden.  
+ Visual Studio ruft diese Schnittstelle als Reaktion auf eine [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Ereignis und die "Sehen Sie sich für die Thread-Step" und "Sehen Sie sich für Ausdruck Auswertung auf Thread" Status des Programms festlegen. [Beenden Sie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird aufgerufen, wenn das Programm beendet werden, diese Methode gibt dem Programm die Möglichkeit, die alle Threads zu beenden.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

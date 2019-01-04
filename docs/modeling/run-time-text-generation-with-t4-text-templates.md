@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939926"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 
@@ -300,7 +299,7 @@ Der Include-Anweisung kann eine beliebige Stelle im Text einer Vorlagendatei ode
 
 Sie können Freigeben von Inhalten zwischen Laufzeitvorlagen durch Schreiben einer Textvorlage Basisklasse, die kann abstrakt sein. Verwenden der `inherits` Parameter, der die `<@#template#>` Richtlinie auf eine andere Runtime-Vorlagenklasse.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Base-Methoden
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Basismethoden
 
 Beachten Sie, dass im Muster, die in das folgende Beispiel verwendet die folgenden Punkte:
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Entwurfszeitvorlagen: Wenn Sie eine Vorlage, die zum Generieren von Code verwenden möchten, die Teil Ihrer Anwendung, finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Während der Entwurfszeit-Vorlagen: Wenn Sie eine Vorlage, die zum Generieren von Code verwenden möchten, die Teil Ihrer Anwendung, finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Laufzeit-Vorlagen können in jeder Anwendung verwendet werden, in denen die Vorlagen und deren Inhalt zur Kompilierzeit bestimmt. Aber wenn Sie Visual Studio-Erweiterung schreiben, die Text aus Vorlagen generiert wird, die zur Laufzeit ändern möchten, finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

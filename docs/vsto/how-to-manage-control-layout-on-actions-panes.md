@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991174"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen
   Ein Bereich "Aktionen" wird rechts neben einem Dokument oder Arbeitsblatt standardmäßig angedockt werden; Sie können jedoch auf die Links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzersteuerelemente verwenden, können Sie Code aus, um ordnungsgemäß die Benutzersteuerelemente im Aktionsbereich gestapelt schreiben. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
@@ -74,5 +71,3 @@ ms.locfileid: "53647048"
  [Vorgehensweise: Hinzufügen von Aktionen im Bereich zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

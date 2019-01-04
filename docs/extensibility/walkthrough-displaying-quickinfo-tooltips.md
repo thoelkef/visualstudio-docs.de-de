@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von QuickInfos | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965803"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen-QuickInfos
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen von QuickInfos
 QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Beschreibungen, wenn ein Benutzer den Mauszeiger über einen Methodennamen. Sie können die Sprache basierenden Features wie QuickInfo implementieren, definieren die Bezeichner für die Sie die QuickInfo-Beschreibungen bereitstellen möchten, und erstellen dann eine QuickInfo, in dem den Inhalt angezeigt. Sie können die QuickInfo im Kontext von einem Sprachdienst definieren oder können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateinamentyp und Anzeigen der QuickInfo für nur diesen Typ, oder Sie können die QuickInfo anzeigen, für die einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von QuickInfos für den Inhaltstyp "Text".  
   
  Das QuickInfo-Beispiel in dieser exemplarischen Vorgehensweise zeigt die QuickInfo an, wenn ein Benutzer den Zeiger über einen Methodennamen. Dieser Entwurf erfordert, dass Sie diese vier Schnittstellen implementieren:  
@@ -178,4 +175,4 @@ QuickInfo wird eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Be
 4.  Zeigen Sie auf ein Vorkommen von "hinzufügen". Die Signatur und die Beschreibung der `add` Methode angezeigt werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

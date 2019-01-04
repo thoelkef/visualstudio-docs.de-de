@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anzeigen einer Glühbirne gekennzeichneten Vorschlägen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935007"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen einer Glühbirne gekennzeichneten Vorschlägen
 Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen Satz von Aktionen, z. B. Fehlerbehebungen für Probleme identifiziert, die von der integrierten Code-Analyzer oder Umgestaltung von Code anzuzeigen.  
   
  In der Visual c# und Visual Basic-Editoren können Sie auch das .NET Compiler Platform ("Roslyn") verwenden, schreiben und Packen Ihren eigenen Code-Analyzer mit Aktionen, die automatisch angezeigt werden Glühbirnen. Weitere Informationen finden Sie unter:  
   
-- [Gewusst wie: Schreiben Sie eine C#-Diagnose und Codefix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [How To: Schreiben einer C# Diagnose, und Korrigieren von Code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Gewusst wie: Schreiben Sie eine Visual Basic-Diagnose und die Codefehlerbehebung](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [How To: Schreiben Sie eine Visual Basic-Diagnose und Codefix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Andere Sprachen wie C++ bieten auch Glühbirnen für einige schnellen Aktion verwenden, z. B. einen Vorschlag zum Erstellen einer Stubimplementierung dieser Funktion.  
   
@@ -37,7 +34,7 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
   
   ![Light Bulb-Vorschau](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Glühbirnen können Sie Ihre eigenen Vorschlägen für Aktionen bieten. Beispielsweise können Sie Aktionen zum Öffnen von geschweiften Klammern in eine neue Zeile zu verschieben, oder verschieben Sie sie am Ende der vorherigen Zeile bereitstellen. Die folgende exemplarische Vorgehensweise veranschaulicht, wie erstellen Sie eine Glühbirne, die angezeigt wird, für das aktuelle Wort und verfügt über zwei empfohlene Aktionen beinhaltet: **in Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
+  Glühbirnen können Sie Ihre eigenen Vorschlägen für Aktionen bieten. Beispielsweise können Sie Aktionen zum Öffnen von geschweiften Klammern in eine neue Zeile zu verschieben, oder verschieben Sie sie am Ende der vorherigen Zeile bereitstellen. Die folgende exemplarische Vorgehensweise veranschaulicht, wie erstellen Sie eine Glühbirne, die angezeigt wird, für das aktuelle Wort und verfügt über zwei empfohlene Aktionen beinhaltet: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -225,8 +222,8 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
 2.  Erstellen Sie zwei Klassen, die erste mit dem Namen `UpperCaseSuggestedAction` und die zweite mit dem Namen `LowerCaseSuggestedAction`. Beide Klassen implementieren <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      Beide Klassen sind bis auf eine Ausnahme identisch: Die eine ruft <xref:System.String.ToUpper%2A> und die andere <xref:System.String.ToLower%2A> auf. In den folgenden Schritten wird nur die Klasse für die Umwandlung in Großbuchstaben behandelt; Sie müssen aber beide Klassen implementieren. Verwenden Sie diese Schritte als Muster für die Implementierung der Aktion zur Umwandlung in Kleinbuchstaben.  
@@ -246,8 +243,8 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
 9. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>-Methode, indem Sie den Text im Bereich durch entsprechende Großbuchstaben ersetzen.  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ Glühbirnen sind Symbole in Visual Studio-Editor, die erweitert werden, um einen
      ![Erweiterte Glühbirne testen](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Wenn Sie die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben konvertiert werden. Wenn Sie die zweite Aktion klicken, sollte der gesamte Text in Kleinbuchstaben konvertiert werden.  
-  

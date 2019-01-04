@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointRequest2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointRequest2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03403a09ea5cd66839bf31fe5c690262fd55f3a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a29ddfa8e525e145143ae06e69cfed050b42a992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991083"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
-Diese Schnittstelle stellt die erforderlichen Informationen für das Erstellen und binden jeden Typ von Breakpoint.  
+Diese Schnittstelle stellt die erforderlichen Informationen zum Erstellen und binden jeden Typ von Breakpoint.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,21 +29,21 @@ IDebugBreakpointRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird von der Sitzung Debug-Manager (SDM) in der Regel implementiert.  
+ Diese Schnittstelle wird von der Sitzungs-Manager (SDM) in der Regel implementiert.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die Debugging-Modul (DE) empfängt, diese Schnittstelle über einen Aufruf von [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) um ein ausstehender Haltepunkt zu erstellen. Ein Aufruf von [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) können diese Schnittstelle aus dem DE abrufen.  
+ Die Debug-Engine (DE) empfängt, diese Schnittstelle durch einen Aufruf von [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) um ein ausstehender Haltepunkt zu erstellen. Ein Aufruf von [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) können dieser Schnittstelle aus dem DE abrufen.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugBreakpointRequest2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Ruft den Haltepunkt adressenart dieser Haltepunkt-Anforderung ab.|  
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Ruft die breakpointinformationen für die Anforderung, die diese Anforderung Breakpoint beschreibt.|  
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Ruft die Haltepunktpositionstyp dieser Haltepunkt-Anforderung ab.|  
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Ruft ab, der diese Anforderung Breakpoint beschreibt Informationen zu den Haltepunkt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Nachdem die Anwendung gedebuggt wird geladen wurde, einen Aufruf von [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) bindet einen ausstehenden Haltepunkt zu der angeforderten Ort im Programm.  
+ Nachdem das Programm im Debugmodus befindlichen geladen wurde, einen Aufruf von [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) einen ausstehenden Haltepunkt an der angeforderte Speicherort im Programm gebunden.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -58,4 +55,4 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="see-also"></a>Siehe auch  
  [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
  [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)   
- [Binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

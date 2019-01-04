@@ -1,9 +1,6 @@
 ---
-title: IDebugCanStopEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugCanStopEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f049648fcbd93d7ad7411a4dfeba8bbdb4431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5313595bd96b2176255822425d11776eedaedbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942241"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Diese Schnittstelle wird verwendet, zu dem Sitzung Debug-Manager (SDM) Fragen an, ob an der aktuellen Codeposition beendet.  
+Diese Schnittstelle wird verwendet, die sitzungsbasierter Debug-Manager (SDM) an, ob an der aktuellen Codeposition beendet bitten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,12 +29,12 @@ IDebugCanStopEvent2 : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debugging-Modul (DE) implementiert diese Schnittstelle zur Unterstützung der Source Code schrittweise durchlaufen. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie diese Schnittstelle (verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).  
+ Die Debug-Engine (DE) implementiert diese Schnittstelle, um die Unterstützung der Source-Code schrittweise durchlaufen. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden (wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).  
   
- Die Implementierung dieser Schnittstelle muss das SDM-Aufruf der kommunizieren [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) zum Debugging-Modul. Z. B. Dies erreichen Sie mit einer Nachricht an das Debugmodul Meldungsbehandlung-Thread gesendet oder das Objekt implementiert diese Schnittstelle enthalten einen Verweis auf die Debugging-Modul und Rückruf in die Debugging-Modul mit dem Flag übergebenen konnte `IDebugCanStopEvent2::CanStop`.  
+ Die Implementierung dieser Schnittstelle muss das SDM Aufruf kommunizieren [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) an die Debug-Engine. Z. B. dazu mit der Meldung an die Debug-Engine-Meldungsbehandlung Thread gesendet oder das Objekt, das diese Schnittstelle implementiert, enthalten einen Verweis auf die Debug-Engine und einen Rückruf in die Debug-Engine mit dem übergebenen Kennzeichen konnte `IDebugCanStopEvent2::CanStop`.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Methode Code jedes Mal, wenn die DE aufgefordert, Ausführung und die DE zu fortfahren durchlaufen wird kann die DE gesendet. Dieses Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM angegeben werden, wenn es an das derzeit debuggte Programm angefügt.  
+ Diese Methode jedes Mal, wenn die DE aufgefordert, Ausführung und die DE weiterhin den Code durchlaufen werden kann die DE senden. Dieses Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM angegeben wird, wenn diese an die zu debuggende Programm wird angefügt.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugCanStopEvent2`.  
@@ -45,12 +42,12 @@ IDebugCanStopEvent2 : IUknown
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Ruft den Grund für dieses Ereignis ab.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob zu debuggenden Programms an der Position dieses Ereignisses (und senden ein Ereignis, das den Grund für Beendigung beschreibt) beenden oder Fortsetzen der Ausführung werden soll.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Ruft den Dokumentenkontext, der den Speicherort der dieses Ereignis beschreibt.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Ruft den Codekontext, der den Speicherort der dieses Ereignis beschreibt.|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob die zu debuggende Programm wird an der Position der dieses Ereignis (und das Senden eines Ereignisses, das den Grund für Beenden beschreibt) beendet werden soll, oder nur die Ausführung wird fortgesetzt.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Ruft ab, der Dokumentenkontext, der den Speicherort der dieses Ereignis beschreibt.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Ruft ab, der Codekontext, der den Speicherort der dieses Ereignis beschreibt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die DE sendet diese Schnittstelle, die Benutzer Schritte in einer Funktion und die DE findet keine Debuginformationen vorhanden oder Debuginformationen vorhanden ist, aber die DE weiß nicht, wenn der Quellcode für den betreffenden Speicherort angezeigt werden kann.  
+ Die DE sendet diese Schnittstelle auf, wenn die Benutzer schrittweise eine Funktion und die DE findet keine Debuginformationen vorhanden oder Debuginformationen vorhanden ist, aber die DE weiß nicht, wenn der Quellcode für diesen Standort angezeigt werden kann.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

@@ -1,9 +1,6 @@
 ---
 title: Grundlagen zu Projekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 630557cbc4bd9720337bf8e5f2988ffcf3d7c6eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952776"
 ---
 # <a name="project-type-essentials"></a>Grundlagen zu Projekttypen
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält einige Projekttypen für Sprachen wie z. B. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Außerdem können Sie eigene Projekttypen zu erstellen.  
@@ -55,7 +52,7 @@ ms.locfileid: "49891569"
   
 - Projekttypen sind Objekte in einem VSPackage, die den Satz von Schnittstellen implementieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erwartet. Wenn Sie c# verwenden, um einen Projekttyp zu entwickeln, wird die Managed Package Framework-Projekt-Klassen für Sie erforderlichen Schnittstellen zu implementieren und können Sie, dass diese Implementierung erben. Weitere Informationen finden Sie unter [mit dem Managed Package Framework zum Implementieren eines Projekttyps (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Arbeiten für C++-Entwickler die Klassen in der Bibliothek HierUtil auf ähnliche Weise. Weitere Informationen finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Arbeiten für C++-Entwickler die Klassen in der Bibliothek HierUtil auf ähnliche Weise. Weitere Informationen finden Sie unter [nicht im Build: HierUtil7-Projektklassen zum Implementieren eines Projekttyps (C++) mit](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Projekttypen können Daten als typische Quellcodedateien unterstützen, die in eine .exe oder .dll-Assembly zu erstellen. Z. B. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenbankprojekte enthalten Verweise auf Dateien, die sich auf Skripts und Abfragen auf dem Datenträger gespeichert und Hinzufügen von Befehlen zum **Projektmappen-Explorer** zum Ausführen der Skripts und Abfragen einer Datenbank, aber die Projekte nicht unterstützen Erstellen Sie Verhalten. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   

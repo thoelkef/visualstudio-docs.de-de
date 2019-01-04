@@ -1,9 +1,6 @@
 ---
 title: Entwerfen und Erstellen von Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935976"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedliche Typen von Office-Projektmappen erstellen können. In diesem Abschnitt der Dokumentation werden die Projektvorlagen beschrieben und Anweisungen zum Erstellen von Office-Projekten bereitgestellt. Weitere Informationen zum Implementieren von Code- und Benutzeroberflächenanpassungen, nachdem Sie das Projekt erstellt haben, finden Sie unter [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md).  
@@ -108,5 +105,3 @@ ms.locfileid: "53648806"
  [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

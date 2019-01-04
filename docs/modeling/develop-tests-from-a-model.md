@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958812"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Hierdurch wird sichergestellt, dass Sie die für die Benutzer und anderen Projektbeteiligten wichtigen Anforderungen testen, und es hilft Ihnen, die Tests schnell zu aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.
@@ -52,7 +51,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 
     -   Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.
 
--   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion folgendermaßen aussehen: Eingabe ist 4. Prüfen Sie, ob die Ausgabe 2 ist. Entwerfen Sie das Skript stattdessen folgendermaßen: Wählen Sie eine Eingabe. Multiplizieren Sie die Ausgabe mit sich selbst, und prüfen Sie, ob das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.
+-   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion sein: Eingaben von 4 Stellen Sie sicher, dass die Ausgabe 2 ist. Entwerfen Sie stattdessen das Skript ein: Wählen Sie eine Eingabe; Multiplizieren Sie die Ausgabe von selbst, und stellen Sie sicher, dass das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.
 
 #### <a name="linking-tests-to-use-cases"></a>Verknüpfen von Tests mit Anwendungsfällen
  Bei Verwendung von [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] zum Entwerfen und Ausführen der Tests, können Sie die Tests unter der Voraussetzung, Anwendungsfall- oder User Story-Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.

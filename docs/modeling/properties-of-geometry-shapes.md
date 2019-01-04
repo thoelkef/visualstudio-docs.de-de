@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2159a7954059eedb0d5100cb41a33b47f7577e93
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8b230d9611b52e4f68c399b5b36b2a8c0bfe88ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937766"
 ---
 # <a name="properties-of-geometry-shapes"></a>Eigenschaften geometrischer Formen
 Sie können Geometrie-Formen verwenden, um anzugeben, wie Instanzen von Domänenklassen in einer domänenspezifischen Sprache angezeigt werden. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -43,7 +42,7 @@ Sie können Geometrie-Formen verwenden, um anzugeben, wie Instanzen von Domänen
 |Basisgeometrieform|Die Basisklasse dieser Form.|(keine)|
 |name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
-|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|Keiner|
+|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|Keine|
 |Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<Keine >|
 |Die ursprüngliche Höhe|Die ursprüngliche Höhe dieser Form in Zoll.|1|
 |Die ursprüngliche Breite|Ursprüngliche Breite dieser Form in Zoll.|1.5|

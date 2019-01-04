@@ -1,9 +1,6 @@
 ---
 title: Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965920"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
   Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einen bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien sowie ein Setupprogramm erstellen.  
@@ -72,5 +69,3 @@ ms.locfileid: "50672748"
  [Bereitstellen einer Office-Projektmappe mit ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Veröffentlichungsseite, Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
-  
-  

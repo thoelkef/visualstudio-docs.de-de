@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987339"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
@@ -41,7 +40,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
  Formen können Sie verfügbar machen die **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** und **FillGradientMode** Eigenschaften. Sie können Connectors Bereitstellen der **Farbe**`,`**TextColor**, **DashStyle**, und **Stärke** Eigenschaften. In Diagrammen können Sie verfügbar machen die **FillColor** und **TextColor** Eigenschaften.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Weiterleitung: Anzeigen von Eigenschaften verwandter Elemente
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Weiterleiten von: Anzeigen von Eigenschaften verwandter Elemente
  Wenn der Benutzer Ihrer DSL ein Element in einem Modell auswählt, werden Eigenschaften des Elements im Eigenschaftenfenster angezeigt. Allerdings können Sie auch die Eigenschaften des angegebenen verwandte Elemente anzeigen. Dies ist nützlich, wenn Sie eine Gruppe von Elementen definiert haben, die zusammen funktioniert. Sie können z. B. ein Hauptelement und ein optionales-Plug-in-Element definieren. Wenn das Hauptelement mit einer Form zugeordnet ist, und die andere nicht der Fall ist, ist es hilfreich, um alle Eigenschaften anzuzeigen, als wären sie auf ein Element.
 
  Dieser Effekt heißt *Eigenschaft Weiterleitung*, und dies erfolgt automatisch im verschiedenen Fällen. In anderen Fällen können Sie die Eigenschaft, die Weiterleitung durch Definieren einer domänentypdeskriptor erreichen.

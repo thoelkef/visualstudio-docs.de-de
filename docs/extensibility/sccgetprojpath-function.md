@@ -1,9 +1,6 @@
 ---
 title: SccGetProjPath-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfeb65cd23b14949857faf4253dfec3ec85f5b20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5f714260af3ef247ad4fe0a059e6166d59f1df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942423"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath-Funktion
 Diese Funktion fordert den Benutzer einen Projektpfad, d. h. eine Zeichenfolge, die nur für das Quellcodeverwaltungs-Plug-in von Bedeutung ist. Wird aufgerufen, wenn der Benutzer ist:  
@@ -71,7 +68,7 @@ SCCRTN SccGetProjPath (
  pbNew  
  [in, out] Eingehenden Wert gibt an, ob ein neues Projekt erstellen. Zurückgegebene Wert gibt Erfolg zum Erstellen eines Projekts:  
   
-|Eingehende|Interpretation|  
+|Eingehend|Interpretation|  
 |--------------|--------------------|  
 |true|Der Benutzer darf es sich um ein neues Projekt erstellen.|  
 |false|Der Benutzer kann ein neues Projekt nicht erstellt werden.|  

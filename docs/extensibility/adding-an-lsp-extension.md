@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen einer Erweiterung Sprachserverprotokoll | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966559"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -313,12 +310,19 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
       }
    }
    ```
+
 4. Fügen Sie dem Projekt eine PKGDEF-Datei (neuen Text-Datei hinzufügen und ändern Sie die Dateierweiterung in PKGDEF). Die Pkgdef-Datei sollte diese Informationen enthalten:
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    Beispiel:
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. Klicken Sie mit der rechten Maustaste auf die PKGDEF-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion **Content** und **Include in VSIX-Datei** Eigenschaft auf "true".
 
