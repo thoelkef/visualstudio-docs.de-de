@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Abrufen ungelesener Nachrichten aus dem Posteingang'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes rufen Sie ungelesener Nachrichten aus dem Posteingang ab'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 89354170aeb312442c9db1ae993954fb2e4f0bde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935475"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Gewusst wie: Programmgesteuertes Abrufen ungelesener Nachrichten aus dem Posteingang
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Vorgehensweise: Programmgesteuertes rufen Sie ungelesener Nachrichten aus dem Posteingang ab
   In diesem Beispiel ruft ungelesene e-Mail-Nachrichten ab, aus dem Outlook- **Posteingang** und zeigt die Anzahl der Elemente.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35673240"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von e-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Gewusst wie: Programmgesteuertes Senden von e-Mail-Adresse](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Gewusst wie: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Erstellen von e-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Vorgehensweise: Programmgesteuertes Senden von e-Mail-Adresse](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  

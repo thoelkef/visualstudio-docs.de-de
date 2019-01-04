@@ -1,9 +1,6 @@
 ---
 title: Erweitern und Anpassen von Tool Windows | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949835"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Erweitern und Anpassen von Toolfenstern
 Visual Studio bietet verschiedene Arten von Windows, z. B. Toolfenster Dokumentfenster und Dialogfeldern. Andere Fenster z. B. die **Eigenschaften** Fenster die **Ausgabe** Fenster, und die **Aufgabenliste** Fenster gibt Typen von Toolfenstern.  
@@ -37,11 +34,11 @@ Visual Studio bietet verschiedene Arten von Windows, z. B. Toolfenster Dokumentf
   
  Toolfenster können im Dokumentrahmen angedockt oder unverankert sein bzw. das Registerkartenformat aufweisen. Der Toolfensterrahmen wird von der IDE bereitgestellt und dazu verwendet, um das Format, die Position, den Andockzustand und andere permanente Eigenschaften zu steuern. Der Toolfensterbereich zeigt die Inhalte an. Das Standardformat und die Standardposition gelten nur beim ersten Öffnen des Toolfensters. Anschließend wird der Toolfensterzustand beibehalten.  
   
- Toolfensterbereiche können WPF-Benutzersteuerelemente hosten und Symbolleisten unterstützen. Sie können außer Kraft setzen der <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> Eigenschaft, um das Handle des gehosteten Steuerelements zurückzugeben.  
+ Toolfensterbereiche können WPF-Benutzersteuerelemente hosten und Symbolleisten unterstützen. Sie können die <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>-Eigenschaft außer Kraft setzen, um das Handle des gehosteten Steuerelements zurückzugeben.  
   
- Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Sie können z. B. eine Symbolleiste hinzufügen: [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [hinzufügen ein Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche, die Ihnen ermöglicht, Elemente in das Toolfenster zu suchen, hinzufügen: [Hinzufügen der Suche zu einem Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
+ Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Beispielsweise können Sie eine Symbolleiste hinzufügen: [Hinzufügen einer Symbolleiste zu einem Toolfenster](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [Hinzufügen ein Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche hinzufügen, die Sie Elemente in das Toolfenster suchen können: [Hinzufügen der Suche zu einem Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
   
- Sie können Ereignisse abonnieren, Tool-Fenster: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
+ Sie können Tool Window-Ereignissen abonnieren: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extend-existing-tool-windows"></a>Erweitern Sie vorhandene Toolfenster  
  Sie können Informationen über das Toolfenster hinzufügen, um ein neues **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite, das Schreiben auf die **Aufgabenliste** und **Ausgabe**  Windows. Weitere Informationen finden Sie unter [erweitern Sie die Eigenschaften "," Aufgabenliste "," Ausgabe "und" Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) und [erweitern Sie die Eigenschaften "," Aufgabenliste "," Ausgabe "und" Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
