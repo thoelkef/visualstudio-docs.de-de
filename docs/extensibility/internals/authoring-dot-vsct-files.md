@@ -1,9 +1,6 @@
 ---
 title: Erstellen. VSCT-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945261"
 ---
 # <a name="author-vsct-files"></a>Erstellen von VSCT-Dateien
 In diesem Dokument wird gezeigt, wie zum Erstellen einer *VSCT* Datei, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio Menübefehlen, Symbolleisten und andere Elemente der Benutzeroberfläche (UI) hinzugefügt. Verwenden Sie diese Schritte aus, wenn Sie ein Visual Studio-Paket (-VSPackage) UI-Elemente hinzufügen, die nicht bereits eine *VSCT* Datei.  
@@ -26,14 +23,14 @@ In diesem Dokument wird gezeigt, wie zum Erstellen einer *VSCT* Datei, die die i
  Für neue Projekte, empfehlen wir, dass Sie die Visual Studio-Paket-Vorlage verwenden, da es generiert eine *VSCT* Datei an, die abhängig von Ihrer Auswahl, die erforderlichen Elemente für einen Menübefehl, ein Toolfenster oder einen benutzerdefinierten Editor schon . Sie können dies ändern *VSCT* Datei auf die Anforderungen Ihres VSPackage. Weitere Informationen zur Vorgehensweise beim Ändern einer *VSCT* finden Sie unter den Beispielen in [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="author-the-file"></a>Erstellen Sie die Datei  
- Erstellen einer *VSCT* -Datei in dieser Phasen: die Struktur für Dateien und Ressourcen zu erstellen, deklarieren Sie die Elemente der Benutzeroberfläche, fügen Sie die Elemente der Benutzeroberfläche in der IDE und speziellen Verhaltensweisen hinzufügen.  
+ Erstellen einer *VSCT* -Datei in den folgenden Phasen: Erstellen Sie die Struktur für Dateien und Ressourcen zu, deklarieren Sie die Elemente der Benutzeroberfläche, fügen Sie die Elemente der Benutzeroberfläche in der IDE und hinzuzufügen Sie speziellen Verhaltensweisen.  
   
 ### <a name="file-structure"></a>Dateistruktur  
  Die grundlegende Struktur einer *VSCT* Datei ist eine [CommandTable](../../extensibility/commandtable-element.md) Stammelement, enthält eine [Befehle](../../extensibility/commands-element.md) Element und ein [Symbole](../../extensibility/symbols-element.md) Element.  
   
 #### <a name="to-create-the-file-structure"></a>Beim Erstellen der Dateistruktur  
   
-1.  Hinzufügen einer *VSCT* Datei in Ihrem Projekt, indem Sie die Schritte in [Vorgehensweise: erstellen eine VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Hinzufügen einer *VSCT* Datei in Ihrem Projekt, indem Sie die Schritte in [Vorgehensweise: Erstellen eine VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2. Fügen Sie die erforderlichen Namespaces, die `CommandTable` Element, wie im folgenden Beispiel dargestellt:  
   
@@ -54,9 +51,9 @@ In diesem Dokument wird gezeigt, wie zum Erstellen einer *VSCT* Datei, die die i
   
 1. Am oberen Rand der `CommandTable` -Element, fügen Sie eine `Extern` -Element für jede externe Datei, die auf die verwiesen wird und festgelegt werden, die `href` -Attribut auf den Namen der Datei. Sie können die folgenden Headerdateien für den Zugriff auf Visual Studio-Ressourcen verweisen:  
   
-   -   *Stdidcmd.h*: definiert von IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.  
+   -   *Stdidcmd.h*: Definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.  
   
-   -   *Vsshlids.h*: enthält Befehls-IDs für Visual Studio-Menüs.  
+   -   *Vsshlids.h*: Enthält Befehls-IDs für Visual Studio-Menüs an.  
   
 2. Wenn Ihr Paket auf alle Befehle, die von Visual Studio oder von anderen Paketen definiert sind aufruft, fügen Sie eine `UsedCommands` Element an, nach der `Commands` Element. Füllen Sie dieses Element mit einem [UsedCommand](../../extensibility/usedcommand-element.md) -Element für jeden Befehl, die Sie aufrufen, d. h. nicht Teil des Pakets. Legen Sie die `guid` und `id` Attribute der `UsedCommand` Elementen, die die GUID und ID-Werte, der die Befehle zum Aufrufen. 
 

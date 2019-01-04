@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962544"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook
   Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -145,5 +142,3 @@ ms.locfileid: "49950962"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Verwenden eine Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953010"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden Sie eine Tastenkombination mit einer Editor-Erweiterung
 Sie können in die editorerweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Zusatzelement auf eine Textansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Zusatzelement-Editor-Vorlage, und es Ihnen, fügen das Zusatzelement mit den Zeichen +.  
@@ -80,7 +77,7 @@ Vor Visual Studio 2017 Version 15.6, die die einzige Möglichkeit zum Verarbeite
 3.  Die Klasse, die mit dem Namen KeyBindingCommandFilter erben soll <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Fügen Sie private Felder für die Textansicht, in den nächsten Befehl in der Befehlskette, und ein Flag zum angeben, ob der Befehlsfilter wurde bereits hinzugefügt.  
@@ -88,8 +85,8 @@ Vor Visual Studio 2017 Version 15.6, die die einzige Möglichkeit zum Verarbeite
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  Fügen Sie einen Konstruktor, der die Textansicht festlegt.  

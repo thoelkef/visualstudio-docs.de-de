@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer Eigenschaft zu einer SharePoint-Projektelementerweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950185"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-projektelementerweiterung
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Vorgehensweise: Hinzufügen einer Eigenschaft zu einer SharePoint-projektelementerweiterung
   Sie können eine projektelementerweiterung verwenden, zum Hinzufügen einer Eigenschaft zu SharePoint-Projektelements, das in Visual Studio bereits installiert ist. Die Eigenschaft wird in der **Eigenschaften** anzeigen, wenn das Projektelement in ausgewählt ist **Projektmappen-Explorer**.  
   
- Die folgenden Schritte wird davon ausgegangen, dass Sie eine projektelementerweiterung bereits erstellt haben. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-Projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Die folgenden Schritte wird davon ausgegangen, dass Sie eine projektelementerweiterung bereits erstellt haben. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eine SharePoint-Projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Zum Hinzufügen einer Eigenschaft zu einer projektelementerweiterung  
   
@@ -51,15 +48,15 @@ ms.locfileid: "36758098"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Geben Sie das Verhalten von benutzerdefinierten Eigenschaften  
  Sie können definieren, wie eine benutzerdefinierte Eigenschaft angezeigt werden und verhält sich die **Eigenschaften** Fenster durch Anwenden von Attributen aus dem <xref:System.ComponentModel> Namespace auf die Eigenschaftsdefinition. Die folgenden Attribute sind in vielen Szenarien nützlich:  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Gibt an, den Namen der Eigenschaft, die in angezeigt wird der **Eigenschaften** Fenster.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Gibt den Namen der Eigenschaft, die in angezeigt wird der **Eigenschaften** Fenster.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Gibt an, die Description-Zeichenfolge, die angezeigt wird am unteren Rand der **Eigenschaften** anzeigen, wenn die Eigenschaft aktiviert ist.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Gibt die Beschreibungszeichenfolge an, die angezeigt wird am unteren Rand der **Eigenschaften** anzeigen, wenn die Eigenschaft aktiviert ist.  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Gibt an, der Standardwert der Eigenschaft.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Gibt den Standardwert der Eigenschaft an.  
   
 -   <xref:System.ComponentModel.TypeConverterAttribute>: Gibt an, eine benutzerdefinierte Konvertierung zwischen der Zeichenfolge, die in angezeigt wird der **Eigenschaften** Fenster und einen nicht-zeichenfolgeneigenschafts-Wert.  
   
--   <xref:System.ComponentModel.EditorAttribute>: Gibt einen benutzerdefinierten Editor zum Ändern der Eigenschaft.  
+-   <xref:System.ComponentModel.EditorAttribute>: Gibt einen benutzerdefinierten Editor zum Ändern der Eigenschaft an.  
   
 ## <a name="compile-the-code"></a>Kompilieren des Codes  
  Diese Beispiele erfordern ein Klassenbibliotheksprojekt mit Verweisen auf die folgenden Assemblys:  
@@ -72,9 +69,7 @@ ms.locfileid: "36758098"
  Erstellen Sie zum Bereitstellen der Erweiterungs eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Gewusst wie: Hinzufügen ein Kontextmenüelements zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Vorgehensweise: Erstellen einer SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Vorgehensweise: Hinzufügen eines Kontextmenüelements zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md)   
  [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

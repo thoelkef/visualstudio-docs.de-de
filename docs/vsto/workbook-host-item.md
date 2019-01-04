@@ -1,9 +1,6 @@
 ---
 title: Arbeitsmappenhostelement
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b477b40425f7ded5fbaacf09aabc446ff207d86c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f15d93818c2db553d22d9639e6460f6637d33c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952866"
 ---
 # <a name="workbook-host-item"></a>Arbeitsmappenhostelement
   Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement ist ein Typ, der den <xref:Microsoft.Office.Interop.Excel.Workbook> -Typ aus der primären Interopassembly für Excel erweitert. Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement stellt die gleichen Eigenschaften, Methoden und Ereignisse wie ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt bereit, bietet jedoch auch zusätzliche Funktionen.  
@@ -55,7 +52,7 @@ ms.locfileid: "35258167"
 >  Die Office-Entwicklungstools in Visual Studio unterstützen keine freigegebenen Arbeitsmappen.  
   
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Verstehen Sie Arbeitsmappen-Hostelementen in VSTO-Add-in-Projekten  
- Sie können in VSTO-Add-in-Projekte generieren eine <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelements zur Laufzeit für jede Arbeitsmappe, die in Excel geöffnet ist. Zum Generieren einer <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelements mithilfe der `GetVstoObject` Methode. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Sie können in VSTO-Add-in-Projekte generieren eine <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelements zur Laufzeit für jede Arbeitsmappe, die in Excel geöffnet ist. Verwenden Sie zum Generieren eines <xref:Microsoft.Office.Tools.Excel.Workbook>-Hostelements die `GetVstoObject`-Methode. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
@@ -64,5 +61,3 @@ ms.locfileid: "35258167"
  [Arbeitsblatthostelement](../vsto/worksheet-host-item.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

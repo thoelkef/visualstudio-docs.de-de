@@ -1,8 +1,7 @@
 ---
-title: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf'
+title: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954804"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 
 |||
 |-|-|
@@ -63,7 +62,7 @@ ms.locfileid: "49914579"
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
 |&&|Nicht zutreffend|&&|LogicalAnd|
-||||Nicht zutreffend||||LogicalOr|
+|&#124;&#124;|Nicht zutreffend|&#124;&#124;|LogicalOr|
 |!|Nicht zutreffend|!|LogicalNot|
 |%|Mod|%|MOD oder Rest|
 |%=|Nicht zutreffend|%=|Mod|
@@ -99,10 +98,10 @@ ms.locfileid: "49914579"
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Außerkraftsetzung equals, Equals beim Überladen](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity | Microsoft Docs
-ms.custom: ''
+title: IDebugProcessSecurity | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967955"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` wird implementiert, ein Lieferant Port, dem Benutzer gewarnt, dass das Anhängen an den Prozess nicht sicher ist.  
+`IDebugProcessSecurity` wird implementiert von eines portanbieters dem Benutzer gewarnt, dass das Anhängen an den Prozess nicht sicher ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,11 +31,11 @@ IDebugProcessSecurity : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ruft den Benutzernamen des Lieferanten Port ab.|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Eine Warnung ausgegeben, dass das Anfügen an den Debugprozess unsicher ist.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ruft den Benutzernamen aus den Anschlusslieferanten ab.|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Eine Warnung ausgegeben, dass an den Debugprozess angefügt unsafe ist.|  
   
 ## <a name="remarks"></a>Hinweise  
- Implementieren Sie diese Schnittstelle, um eine Warnmeldung angezeigt und ermöglicht dem Benutzer das Abbrechen, wenn der Prozess, den Sie angefügt werden, als unsicher angesehen werden kann.  
+ Implementieren Sie diese Schnittstelle, um eine Warnmeldung angezeigt und ermöglicht dem Benutzer, die abgebrochen werden, wenn der Prozess, der auf dem Sie anfügen als unsicher angesehen werden kann.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -49,6 +46,6 @@ IDebugProcessSecurity : IUnknown
   
 ## <a name="see-also"></a>Siehe auch  
  [Ports](../../../extensibility/debugger/ports.md)   
- [Port-Lieferanten](../../../extensibility/debugger/port-suppliers.md)   
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Portanbieter](../../../extensibility/debugger/port-suppliers.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
