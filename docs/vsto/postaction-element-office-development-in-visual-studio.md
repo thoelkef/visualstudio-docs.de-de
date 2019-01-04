@@ -1,9 +1,6 @@
 ---
 title: '&lt;PostAction&gt; -Element (Office-Entwicklung in Visual Studio)'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34ebc9595b8b66ac4d81f5a7adef86a14b4d2a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958799"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;PostAction&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `postAction` -Element des `vstav3` -Namespace enthält alle `entrypoint` -Elemente und alle `postActionData` -Elemente, die Aktionen nach der Bereitstellung zugeordnet sind, die ausgeführt werden, sobald Office-Projektmappen installiert sind.

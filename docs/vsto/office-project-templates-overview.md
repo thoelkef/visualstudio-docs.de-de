@@ -1,9 +1,6 @@
 ---
 title: Übersicht über Office-Projektvorlagen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940600"
 ---
 # <a name="office-project-templates-overview"></a>Übersicht über Office-Projektvorlagen
   Die Entwicklertools für Microsoft Office in Visual Studio enthalten Projektvorlagen für das Erstellen folgender Typen von Office-Lösungen:  
@@ -92,7 +89,7 @@ ms.locfileid: "49934326"
   
 -   [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> VSTO-Add-Ins  
  Der **Office/SharePoint** -Knoten im Dialogfeld **Neues Projekt** stellt die folgenden Projektvorlagen bereit, um Ihnen den Einstieg in das Erstellen von VSTO-Add-Ins zu erleichtern:  
@@ -172,9 +169,7 @@ ms.locfileid: "49934326"
 ## <a name="see-also"></a>Siehe auch  
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

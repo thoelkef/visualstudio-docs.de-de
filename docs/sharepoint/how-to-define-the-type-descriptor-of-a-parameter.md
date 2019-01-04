@@ -1,13 +1,8 @@
 ---
 title: 'Vorgehensweise: Definieren des Typdeskriptors für einen Parameter | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953156"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Gewusst wie: Definieren des Typdeskriptors für einen Parameter
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Vorgehensweise: Definieren des Typdeskriptors für einen parameter
   Ein Typdeskriptor enthält Eigenschaften, mit denen der Datentyp eines Parameters beschrieben wird. Von einem Typdeskriptor kann ein Feld, eine Entität oder eine Auflistung von Entitäten definiert werden. Weitere Informationen finden Sie unter [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>So definieren Sie den Typdeskriptor für einen Parameter  
@@ -50,7 +45,7 @@ ms.locfileid: "51294980"
   
 ### <a name="to-define-an-entity"></a>So definieren Sie eine Entität  
   
-1.  In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **wenden Sie sich an**).  
+1.  In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **Wenden Sie sich an**).  
   
 2.  Legen Sie die **TypeName** Eigenschaft, um den vollqualifizierten Namen des Typs, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294980"
   
 2. Wählen Sie auf der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
   
-3. In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **Kontakte**).  
+3. In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **Kontaktiert**).  
   
 4. Legen Sie die **"IsCollection"** Eigenschaft **"true"**. Dadurch wird angegeben, dass es sich bei diesem Typdeskriptor um eine Auflistung von Entitäten handelt.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294980"
   
 ## <a name="see-also"></a>Siehe auch
  [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Gewusst wie: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)   
+ [Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)   
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

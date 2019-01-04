@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948653"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 
-Dieser Artikel beschreibt die Elemente und Beziehungen in Ebenenmodellen, die Sie navigieren und mithilfe von Programmcode aktualisieren können. Weitere Informationen zu Abhängigkeitsdiagrammen aus Sicht des Benutzers, finden Sie unter [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md) und [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).
+Dieser Artikel beschreibt die Elemente und Beziehungen in Ebenenmodellen, die Sie navigieren und mithilfe von Programmcode aktualisieren können. Weitere Informationen zu Abhängigkeitsdiagrammen aus Sicht des Benutzers, finden Sie unter [Abhängigkeitsdiagramme: Verweis](../modeling/layer-diagrams-reference.md) und [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).
 
 Die <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> in diesem Thema beschriebene Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel> Modell. Wenn Sie schreiben eine [menüerweiterung Befehls- oder Gestenhandlerprojekts](../modeling/add-commands-and-gestures-to-layer-diagrams.md), verwenden Sie die `Layer` Modell. Wenn Sie schreiben eine [layer validierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es ist einfacher zu verwenden die `GraphModel`.
 
@@ -92,7 +91,7 @@ Jedes `ILayerElement` verfügt über ein Zeichenfolgenwörterbuch namens `Proper
 
 ## <a name="artifact-references"></a>Artefaktverweise
 
-Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. eine Datei, eine Klasse oder ein Ordner. Der Benutzer erstellt Artefakte, beim Erstellen einer Ebene oder durch Ziehen von Elementen aus dem Projektmappen-Explorer, Klassenansicht oder Objektkatalog in ein Abhängigkeitsdiagramm hinzugefügt. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.
+Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. einer Datei, einer Klasse oder einem Ordner. Der Benutzer erstellt Artefakte, beim Erstellen einer Ebene oder durch Ziehen von Elementen aus dem Projektmappen-Explorer, Klassenansicht oder Objektkatalog in ein Abhängigkeitsdiagramm hinzugefügt. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.
 
 Jede Zeile im Ebenen-Explorer zeigt einen Artefaktverweis an. Weitere Informationen finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
 

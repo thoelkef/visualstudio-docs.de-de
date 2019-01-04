@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetExtendedInfo | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ed932909845dc992c62ba884d6d48e2b788a61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0366d547dea7f181c42fd5cccbacb568418c203
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935410"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Ruft Informationen für die Eigenschaft erweitert werden.  
@@ -28,14 +25,14 @@ Ruft Informationen für die Eigenschaft erweitert werden.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -46,7 +43,7 @@ int GetExtendedInfo (
  [in] GUID, der bestimmt, den Typ des erweiterten Informationen abgerufen werden sollen. Einzelheiten finden Sie unter "Hinweise".  
   
  `pExtendedInfo`  
- [out] Gibt eine `VARIANT` (C++) oder ein Objekt (c#), die zum Abrufen der Informationen der erweiterten Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. eine `IUnknown` -Schnittstelle, die abgefragt werden kann ein [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".  
+ [out] Gibt eine `VARIANT` (C++) oder ein Objekt (C#), die zum Abrufen der Informationen der erweiterten Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. eine `IUnknown` -Schnittstelle, die abgefragt werden kann ein [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".  
   
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` , wenn es keine erweiterten Informationen gibt abrufen.  

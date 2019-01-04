@@ -1,9 +1,6 @@
 ---
-title: Source Control VSPackage-Funktionen | Microsoft Docs
-ms.custom: ''
+title: Source Control VSPackage-Funktionen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, features
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d85213c7aa6e177b83337edf62b53cb5870d8fce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77635f360b2602bc2d75d672b26d770877422c02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959844"
 ---
-# <a name="source-control-vspackage-features"></a>Funktionen der Quellcodeverwaltung VSPackage
-Dieser Abschnitt beschreibt die verschiedenen Funktionen des VSPackage ein Datenquellen-Steuerelements. Sie enthält die Registrierung und die Auswahl für solche ein VSPackage und drei der Hauptquelle Steuerelement-bezogenen Funktionen erläutert: Behandlung von Abfrage bearbeiten Abfrage speichern (QEQS)-Ereignisse, Symbol ersetzt und benutzerdefinierte Benutzeroberfläche (UI) für die Datenquellen-Steuerelements Funktionen.  
+# <a name="source-control-vspackage-features"></a>Funktionen von Quellcodeverwaltungs-VSPackages
+Dieser Abschnitt beschreibt die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackage. Es wird beschrieben, die Registrierung und Auswahl für diese ein VSPackage und drei der Hauptquelle Steuerelement-bezogenen Funktionen erläutert: Behandeln von Ereignissen, Symbol ersetzt und benutzerdefinierte Benutzeroberfläche (UI) für das Datenquellen-Steuerelement Abfragebearbeitung Abfrage speichern (QEQS.) -Funktionen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Auswahl und Registrierung](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
- Beschreibt die Mechanismen Paket, Registrierung und Auswahl.  
+ [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
+ Beschreibt die Paket-Registrierung und Auswahl-Mechanismen.  
   
- [Edit-Abfrage speichern](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)  
- Erläutert die Rolle der Abfrage bearbeiten Abfrage speichern Ereignisse und wie sie von der quellcodeverwaltung VSPackage behandelt werden.  
+ [QueryEditQuerySave](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)  
+ Erläutert die Rolle Abfragebearbeitung Abfrage speichern und wie sie durch das Quellcodeverwaltungs-VSPackage behandelt werden.  
   
- [Symbol-Steuerelement](../../extensibility/internals/glyph-control-source-control-vspackage.md)  
- Beschreibt die Ebenen der Glyphe Kontrolle und deren Implementierung.  
+ [Glyphensteuerung](../../extensibility/internals/glyph-control-source-control-vspackage.md)  
+ Werden die Ebenen der glyphensteuerung und deren Implementierung beschrieben.  
   
  [Benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)  
- Beschreibt die Elemente der Benutzeroberfläche, die ein Datenquellen-Steuerelement VSPackage angeben können.  
+ Beschreibt die Elemente der Benutzeroberfläche, die ein Quellcodeverwaltungs-VSPackage angeben können.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Erläutert, wie ein Datenquellen-Steuerelement VSPackage zu erstellen, die nicht nur Quellcodeverwaltungsfunktion bereitstellt, sondern dienen zum Anpassen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] quellcodeverwaltung UI.
+ Erläutert, wie ein Quellcodeverwaltungs-VSPackage zu erstellen, die nicht nur Quellcodeverwaltungsfunktionen bereitstellt, sondern dienen zum Anpassen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Datenquellen-Steuerelement-Benutzeroberfläche.

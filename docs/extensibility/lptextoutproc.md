@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956841"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Wenn der Benutzer einen Quellcodeverwaltungsvorgang von innerhalb der integrierten Entwicklungsumgebung (IDE) ausgeführt wird, sollten das Quellcodeverwaltungs-Plug-Ins Fehler oder Status-Meldungen, die im Zusammenhang mit der Operation zu vermitteln. Das plug-in kann eine eigene Meldungsfeldern zu diesem Zweck werden angezeigt. Allerdings können für die weitere nahtlose Integration der Plug-in-Zeichenfolgen der IDE übergeben, die klicken Sie dann auf native Weise zum Anzeigen von Statusinformationen werden angezeigt. Der Mechanismus hierfür ist die `LPTEXTOUTPROC` Funktionszeiger. Die IDE implementiert diese Funktion, die (im folgenden ausführlicher beschrieben), für die Anzeige von Fehler- und statusmeldungen.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Mit der keine Zeichenfolge gesendet.|  
 |`SCC_MSG_STARTCANCEL`|Beginnt die Anzeige einer **Abbrechen** Schaltfläche.|  
 |`SCC_MSG_STOPCANCEL`|Beendet die Anzeige einer **Abbrechen** Schaltfläche.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|IDE gefragt werden, wenn der Vorgang im Hintergrund ist, abgebrochen werden soll: IDE gibt `SCC_MSG_RTN_CANCEL` Wenn der Vorgang abgebrochen wurde; andernfalls `SCC_MSG_RTN_OK`. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Fordert IDE, wenn der Vorgang im Hintergrund ist, abgebrochen werden soll: IDE gibt `SCC_MSG_RTN_CANCEL` Wenn der Vorgang abgebrochen wurde; andernfalls `SCC_MSG_RTN_OK`. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Teilt die IDE zu einer Datei an, bevor sie von der Versionskontrolle abgerufen werden. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Weist Sie die IDE zu einer Datei, nachdem sie aus der Versionskontrolle abgerufen wurde. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Teilt die IDE mit dem aktuellen Status eines Hintergrundvorgangs. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
