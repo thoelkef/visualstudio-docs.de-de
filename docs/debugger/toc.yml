@@ -20,11 +20,11 @@ items:
 - name: Tutorials
   items:
   - name: Informationen zum Debuggen von C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Informationen zum Debuggen von C++
     href: getting-started-with-the-debugger-cpp.md
   - name: Informationen zum Debuggen von Visual Basic
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Ausführen von Python-Code im Debugger
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Debuggen einer aktiven Azure-App
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Stop-Anweisungen in Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: 'Exemplarische Vorgehensweise: Debuggen eines Windows Forms'
+      - name: 'Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts'
         href: walkthrough-debugging-a-windows-form.md
       - name: Debuggen der OnStart-Methode
         href: how-to-debug-the-onstart-method.md
@@ -546,14 +546,14 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Debuggen bereitgestellter Webanwendungen
         href: debugging-deployed-web-applications.md
-      - name: 'Exemplarische Vorgehensweise: Debuggen eines Web Forms'
+      - name: 'Exemplarische Vorgehensweise: Debuggen eines Webformulars'
         href: walkthrough-debugging-a-web-form.md
       - name: Debuggen von ASP.NET-Ausnahmen
         href: how-to-debug-aspnet-exceptions.md
       - name: 'Debuggen von Webanwendungen: Fehler und Problembehandlung'
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: Problembehandlung beim Debuggen von Webanwendungen
+        - name: 'Debuggen von Webanwendungen: Problembehandlung'
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: Überprüfen von IIS-Eigenschafteneinstellungen
@@ -588,7 +588,7 @@ items:
         - name: Anfügen an ein Skript
           href: how-to-attach-to-script.md
           items:
-          - name: 'Warnung: Skriptdebuggen deaktiviert'
+          - name: 'Warnung: Skriptdebugging deaktiviert'
             href: warning-script-debugging-disabled.md
     - name: Debuggen von WCF-Diensten
       href: debugging-wcf-services.md
@@ -681,7 +681,7 @@ items:
         href: error-windows-file-sharing-has-been-configured-dot-dot-dot.md
       - name: 'Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an'
         href: security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md
-      - name: 'Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen'
+      - name: 'Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen.'
         href: security-warning-debugger-must-execute-untrusted-command.md
       - name: Quellserver-Sicherheitswarnung
         href: source-server-security-alert.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Neues im Debugger in Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821395"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561735"
