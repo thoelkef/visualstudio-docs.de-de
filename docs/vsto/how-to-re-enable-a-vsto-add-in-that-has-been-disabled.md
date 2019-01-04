@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde'
-ms.custom: ''
+title: 'Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939397"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Vorgehensweise: Reaktivieren eines VSTO-Add-Ins, das deaktiviert wurde
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde
   VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Wenn Ihr VSTO-Add-In beim Debuggen von der Anwendung nicht geladen wird, wurde das VSTO-Add-In von der Anwendung möglicherweise hart oder weich deaktiviert.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35673225"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md)   
  [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)  
-  
-  

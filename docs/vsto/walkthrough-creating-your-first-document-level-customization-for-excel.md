@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955317"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Excel
+# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen vorzunehmen, z. B., um eine neue Registerkarte des Menübands anzuzeigen, wenn eine Arbeitsmappe geöffnet ist.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -159,13 +156,13 @@ ms.locfileid: "49849033"
   
 -   Programmieraufgaben, die für Anpassungen auf Dokumentebene für Excel spezifisch sind: [Excel-Projektmappen](../vsto/excel-solutions.md).  
   
--   Mit dem Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
+-   Verwenden das Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
   
 -   Anpassen der Benutzeroberfläche von Excel, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen Aktionsbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
   
 -   Mithilfe von erweiterten Excel-Objekten, die von Office-Entwicklungstools in Visual Studio bereitgestellten Aufgaben, die mit dem Excel-Objektmodell (z. B. Hosten verwalteter Steuerelemente für Dokumente und binden Excel-Steuerelementen an Daten mithilfe der Windows-Formulare nicht möglich sind -Datenbindungsmodell verwendet): [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Erstellen und Debuggen von Anpassungen auf Dokumentebene für Excel: [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
+-   Erstellen und Debuggen von Anpassungen auf Dokumentebene für Excel: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
   
 -   Bereitstellen von Anpassungen auf Dokumentebene für Excel: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
@@ -179,5 +176,3 @@ ms.locfileid: "49849033"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
-  
-  

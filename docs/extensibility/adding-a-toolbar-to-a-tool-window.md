@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen einer Symbolleiste zu einem Toolfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e540ec840bc7aadb2465c7f7c71433bf2ddb27
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3eefb192c5e0ec660a614af8c32ecc34cc683888
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934426"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Toolfenster
 Diese exemplarische Vorgehensweise zeigt, wie ein Toolfenster eine Symbolleiste hinzugefügt wird.  
@@ -30,7 +27,7 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Toolfenster eine Symbolleiste 
   
  Weitere Informationen zum Hinzufügen einer Symbolleiste finden Sie unter [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-toolbar-for-a-tool-window"></a>Erstellen Sie eine Symbolleiste für ein Toolfenster  

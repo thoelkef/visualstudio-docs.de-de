@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3340c9e820103cc286915fe50f105d202eb8c8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988792"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 
@@ -62,13 +61,13 @@ In dieser exemplarischen Vorgehensweise verwenden Sie den Domain-Specific Langua
 
    -   Name: DSLMinimalTest
 
-   -   Lösungsvorlage: minimale Sprache
+   -   Lösungsvorlage: Minimale Sprache
 
    -   Dateierweiterung: Min.
 
-   -   Firmenname: Fabrikam
+   -   Name des Unternehmens: Fabrikam
 
-   Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen Sie eine DSL-Projektmappe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
@@ -231,7 +230,7 @@ Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisung
             }
     ```
 
-7.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.
+7.  Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
 8.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 

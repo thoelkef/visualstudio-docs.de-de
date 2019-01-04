@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965219"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Gewusst wie: Erstellen von benutzerdefinierten Textmarkierungen
+# <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen
 Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisieren Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
   
 - Registrieren Sie die neue textmarkierung, sodass andere Tools, die darauf zugreifen können.  
@@ -92,6 +89,6 @@ Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisier
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Textmarkierungen mit der legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Gewusst wie: Hinzufügen von standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md)   
- [Gewusst wie: Implementieren von fehlermarker](../extensibility/how-to-implement-error-markers.md)   
- [Gewusst wie: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)
+ [Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md)   
+ [Vorgehensweise: Implementieren von fehlermarker](../extensibility/how-to-implement-error-markers.md)   
+ [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a2fbc9d71684bc44e01a1d53f5d53f35c8d7311
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964136"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Vorgehensweise: Hinzufügen eines Kontextmenüelements zu SharePoint-Projekten
   Sie können ein Kontextmenüelements zu einem SharePoint-Projekt hinzufügen. Das Menüelement, das angezeigt wird, wenn ein Benutzer einen Projektknoten klickt **Projektmappen-Explorer**.  
   
  Die folgenden Schritte wird davon ausgegangen, dass Sie bereits eine projekterweiterung erstellt haben. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -55,6 +52,5 @@ ms.locfileid: "36757571"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Projekte](../sharepoint/extending-sharepoint-projects.md)   
- [Gewusst wie: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
+ [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

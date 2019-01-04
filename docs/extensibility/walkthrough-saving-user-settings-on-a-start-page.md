@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Startseite | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
@@ -11,23 +8,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948770"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von benutzereinstellungen auf einer Startseite
 Sie können die benutzereinstellungen für die Startseite beibehalten. Anhand dieser exemplarischen Vorgehensweise können Sie ein Steuerelement erstellen, die eine Einstellung in der Registrierung gespeichert, wenn der Benutzer auf eine Schaltfläche klickt, und ruft dann diese Einstellung jedes Mal, wenn der Startseite geladen. Da die Startseite-Projektvorlage ein anpassbares Steuerelement enthält und der Standardwert beginnen Seite XAML, die steuern aufruft, müssen Sie nicht die Startseite selbst ändern.  
   
- Der Speicher für benutzereinstellungen, die in dieser exemplarischen Vorgehensweise instanziiert wird, ist eine Instanz von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> -Schnittstelle, die Lese- und Schreibvorgänge in folgendem Registrierungspfad, wenn sie aufgerufen wird: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<Auflistungsname >**  
+ Der Speicher für benutzereinstellungen, die in dieser exemplarischen Vorgehensweise instanziiert wird, ist eine Instanz von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> -Schnittstelle, die Lese- und Schreibvorgänge in folgendem Registrierungspfad, wenn sie aufgerufen wird: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<Auflistungsname >**  
   
  Wenn sie in der experimentellen Instanz von Visual Studio ausgeführt wird, liest und schreibt in der einstellungsspeicher **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<Auflistungsname >.**  
   
  Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden Sie unter [Erweitern von Benutzereinstellungen und Optionen](../extensibility/extending-user-settings-and-options.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
 > [!NOTE]
 >  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  

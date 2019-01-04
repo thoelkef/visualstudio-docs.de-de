@@ -1,9 +1,6 @@
 ---
 title: Symbole Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965894"
 ---
 # <a name="symbols-element"></a>Symbols-Element
 Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für nicht verwalteten Code, diese Informationen in der Regel stammen aus den Headerdateien, die vom angegebenen [Extern-Element](../extensibility/extern-element.md). Verwalteten Code verwendet die untergeordneten Elemente des Symbols-Element, um diese Informationen zu definieren.  
@@ -44,7 +41,7 @@ Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für n
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|Keiner||  
+|Keine||  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   

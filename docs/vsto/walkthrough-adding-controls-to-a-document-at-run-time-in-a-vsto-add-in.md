@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954895"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in
   Sie können Steuerelemente jedem geöffneten Microsoft Office Word-Dokument mithilfe eines VSTO-Add-Ins hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie das Menüband verwenden, um Benutzer hinzufügen können eine <xref:Microsoft.Office.Tools.Word.Controls.Button> oder <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu einem Dokument.  
 
- **Betrifft:** Die Informationen in diesem Thema betreffen VSTO-Add-In-Projekte für Word 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Gilt für:** Die Informationen in diesem Thema betreffen VSTO-Add-in-Projekte für Word 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
 
@@ -193,7 +190,6 @@ ms.locfileid: "49951586"
  [Word-Projektmappen](../vsto/word-solutions.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Beibehalten von dynamischen Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Gewusst wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

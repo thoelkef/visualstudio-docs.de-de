@@ -1,13 +1,8 @@
 ---
 title: Erstellen eines Business Data Connectivity-Modells | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957484"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Erstellen eines Business Data Connectivity-Modells
   Sie können ein Business Data Connectivity (BDC)-Modell erstellen oder Anpassen ein vorhandenes BDC-Modell mithilfe von Visual Studio. Jede SharePoint-Projekt kann nur ein Modell enthalten. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -45,7 +40,7 @@ ms.locfileid: "49930205"
 |Modelldefinitionsdatei|Enthält XML, die definiert, die Entitäten, Methoden, Systemobjekte Line of Business (LOB) und anderen Metadaten, die das Modell beschreibt.<br /><br /> Ändern Sie die Metadaten in dieser Datei mit dem BDC-Designer, **BDC-Explorer**, **BDC-Methodendetails** Fenster und **Eigenschaften** Fenster.|  
 |Entität Authentifizierungsdienst-Codedatei|Enthält Methoden, die abrufen, aktualisieren und Löschen von Instanzen der Standardentität.|  
   
- Um die Eigenschaften einer Entität zu definieren, bearbeiten Sie die Codedatei "Entity" ein. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ Um die Eigenschaften einer Entität zu definieren, bearbeiten Sie die Codedatei "Entity" ein. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Zum Abrufen, aktualisieren und Löschen von Instanzen einer Entität, fügen Sie Code hinzu, auf die Entität Authentifizierungsdienst-Codedatei. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49930205"
   
 - Packen und Bereitstellen eines vorhandenen Modells auf mehrere SharePoint-Serverfarmen.  
   
-  In beiden Fällen die LOB-Systeme, die definiert, die im Modell, das Sie importieren, sind nicht betroffen und werden weiterhin wie erwartet funktionieren. Um ein vorhandenes Modell zu einer SharePoint-Projekt hinzuzufügen, verwenden Sie den Visual Studio **vorhandenes Element hinzufügen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  In beiden Fällen die LOB-Systeme, die definiert, die im Modell, das Sie importieren, sind nicht betroffen und werden weiterhin wie erwartet funktionieren. Um ein vorhandenes Modell zu einer SharePoint-Projekt hinzuzufügen, verwenden Sie den Visual Studio **vorhandenes Element hinzufügen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
   Sie können ein LOB-System von .NET Framework-Assembly des Typs dem importierten Modell hinzufügen, indem Sie eine Option in der **Hinzufügen von .NET Framework-Assembly LobSystem**. Dadurch können Sie benutzerdefinierten Code schreiben und verwenden einen Designer, um die Metadaten für die importierte Modelle zu definieren.  
   
@@ -69,9 +64,7 @@ ms.locfileid: "49930205"
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Gewusst wie: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)|Erfahren Sie, wie Sie ein neues BDC-Modell zu erstellen.|  
-|[Gewusst wie: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Erfahren Sie, wie Sie ein vorhandenes Modell in einem SharePoint-Projekt zu importieren.|  
-|[Gewusst wie: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Beschreibt, wie Zeichenfolgen, die zusammengeführt werden mit darin enthaltenen Modellmetadaten bereitgestellt werden, wenn das Modell von einem Webpart oder einer Webseite genutzt wird.|  
-|[Gewusst wie: Einfügen einer benutzerdefinierte Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Erfahren Sie, wie die Funktion eine benutzerdefinierte Assembly einschließt.|  
-  
- 
+|[Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)|Erfahren Sie, wie Sie ein neues BDC-Modell zu erstellen.|  
+|[Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Erfahren Sie, wie Sie ein vorhandenes Modell in einem SharePoint-Projekt zu importieren.|  
+|[Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Beschreibt, wie Zeichenfolgen, die zusammengeführt werden mit darin enthaltenen Modellmetadaten bereitgestellt werden, wenn das Modell von einem Webpart oder einer Webseite genutzt wird.|  
+|[Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Erfahren Sie, wie die Funktion eine benutzerdefinierte Assembly einschließt.|  

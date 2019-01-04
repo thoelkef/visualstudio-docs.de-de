@@ -1,9 +1,6 @@
 ---
 title: Erstellen eines grundlegenden Projektsystems, Teil 2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967773"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projektsystems, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird das Erstellen eines grundlegenden Projektsystems veranschaulicht. In dieser exemplarischen Vorgehensweise baut auf dem Projektsystem für die basic-eine Visual Studio-Vorlage auf einer Eigenschaftenseite und andere Funktionen. Sie müssen die erste exemplarischen Vorgehensweise abschließen, bevor Sie mit dieser beginnen.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Zurücksetzen der experimentellen Instanz von Visual Studio SDK.  
   
-    Auf [!INCLUDE[win7](../debugger/includes/win7_md.md)]: auf die **starten** Menü finden Sie die **Microsoft Visual Studio und Microsoft Visual Studio SDK/Tools** Ordner, und wählen Sie dann **Zurücksetzen der experimentellen Microsoft Visual Studio Instanz**.  
+    Auf [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Auf der **starten** Menü finden Sie die **Microsoft Visual Studio und Microsoft Visual Studio SDK/Tools** Ordner, und wählen Sie dann **Microsoft Visual Studio-experimentelle Instanz vonZurücksetzen**.  
   
-    In höheren Versionen von Windows: für die **starten** geben **Microsoft Visual Studio zurücksetzen \<Version > experimentelle Instanz**.  
+    In höheren Versionen von Windows: Auf der **starten** geben **Microsoft Visual Studio zurücksetzen \<Version > experimentelle Instanz**.  
   
 2. Ein Eingabeaufforderungsfenster wird angezeigt. Wenn Sie sehen, die Wörter **drücken Sie eine beliebige Taste, um den Vorgang fortzusetzen**, klicken Sie auf **EINGABETASTE**. Wenn das Fenster geschlossen wurde, öffnen Sie Visual Studio.  
   

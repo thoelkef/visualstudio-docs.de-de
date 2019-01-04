@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwenden des Aktivitätsprotokolls | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9305cf1de6cadc2230b90723ac0f995b425ba3a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990333"
 ---
-# <a name="how-to-use-the-activity-log"></a>Gewusst wie: Verwenden des Aktivitätsprotokolls
+# <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden des Aktivitätsprotokolls
 VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses Feature ist besonders nützlich zum Debuggen von VSPackages im Einzelhandel-Umgebungen.  
   
 > [!TIP]
@@ -49,7 +46,7 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses 
   
 1. Führen Sie Visual Studio mit der [/Log](../ide/reference/log-devenv-exe.md) Befehlszeilenschalter ActivityLog.xml während einer Sitzung auf dem Datenträger zu schreiben.
 
-2. Wenn Sie Visual Studio schließen, suchen Aktivitätsprotokoll im Unterordner Visual Studio Daten:  <em>*% appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Suchen Sie nach dem Schließen von Visual Studio, das Aktivitätsprotokoll im Unterordner für Visual Studio-Daten:  <em>*% appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
 3. Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor ein. Hier ist ein typischer Eintrag ein:  
   

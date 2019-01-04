@@ -8,31 +8,30 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc764df3037baeba36666ce896549018d86c2a21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e4c80dee056d559822006627c86f4b4884942c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991135"
 ---
-# <a name="add-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen DSL-Definitionen
+# <a name="add-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 
-DSL-Definition Erweiterung können Sie ein Paket von Erweiterungen für eine domänenspezifische Sprache (DSL) erstellen. Die DSL-Erweiterung, das sich in einer Visual Studio Integration Extension (VSIX) befindet, kann auf dem Computer eines Benutzers auf die gleiche Weise wie eine DSL installiert werden. Die zusätzlichen Funktionen können dynamisch aktiviert und zur Laufzeit deaktiviert werden. Konzentriert müssen nicht explizit für die Erweiterung entworfen werden, und Erweiterungen können entworfen werden später oder von Drittanbietern, ohne die erweiterten DSL zu ändern.
+DSL-Definition-Erweiterung können Sie ein Paket von Erweiterungen für eine domänenspezifische Sprache (DSL) zu erstellen. Die DSL-Erweiterung, die in einem Visual Studio Integration Extension (VSIX) enthalten ist, kann auf dem Computer eines Benutzers auf die gleiche Weise wie eine DSL installiert werden. Die zusätzlichen Funktionen können dynamisch aktiviert und zur Laufzeit deaktiviert werden. DSLs müssen nicht explizit für die Erweiterung vorgesehen werden, und die Erweiterungen können entworfen werden weiter unten oder von Drittanbietern, ohne eine Änderung der erweiterten DSL.
 
-DSL-Erweiterungen zählen die folgenden Funktionen:
+DSL-Erweiterungen können die folgenden Features umfassen:
 
 -   Eigenschaften für das Modell und die Darstellung von Elementen
 
--   Decorator-Elementen für Formen und Konnektoren
+-   Decorators für Formen und Konnektoren
 
 -   Klassen, Beziehungen, Formen und Konnektoren
 
 -   Validierungseinschränkungen
 
--   Toolboxelementen und Registerkarten
+-   Registerkarten und Toolboxelemente
 
-Ein Benutzer eine erweiterte DSL kann erstellen und speichern ein Modell, das die zusätzlichen Funktionen enthält. Das Modell kann von anderen Benutzern gelesen werden, die die entsprechende Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden, aber sie aktualisieren können, und ein Modell speichern, ohne dass auch die zusätzlichen Funktionen.
+Ein Benutzer eine DSL mit der erweiterten kann erstellt, und Speichern eines Modells, das Instanzen der zusätzlichen Funktionen enthält. Das Modell kann von anderen Benutzern gelesen werden, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
