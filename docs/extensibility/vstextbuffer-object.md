@@ -1,9 +1,6 @@
 ---
 title: VSTextBuffer-Objekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 00405642ea1a14ae703a2d5fc992c98c4c59ea03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955369"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer-Objekt
 Der TextBuffer-Objekt stellt einen Stream von Unicode-Text, der in der Regel von einer Datei zugeordnet ist. Ein <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt außerhalb des Kontexts der Kern-Editor, z. B. einen Assistenten verwendet werden kann.  

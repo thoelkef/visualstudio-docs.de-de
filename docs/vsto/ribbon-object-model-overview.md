@@ -1,9 +1,6 @@
 ---
 title: Übersicht über das Menüband-Objektmodell
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961308"
 ---
 # <a name="ribbon-object-model-overview"></a>Übersicht über das Menüband-Objektmodell
   Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ein stark typisierten Objektmodell, mit denen Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit zur Verfügung. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Weitere Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).  
@@ -190,13 +187,12 @@ ms.locfileid: "49910588"
 ## <a name="see-also"></a>Siehe auch  
  [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
- [Gewusst wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Menüband-Designer](../vsto/ribbon-designer.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)   
- [Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Gewusst wie: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen](../vsto/how-to-show-add-in-user-interface-errors.md)  

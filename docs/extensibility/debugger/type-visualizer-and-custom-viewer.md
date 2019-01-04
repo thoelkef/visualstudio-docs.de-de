@@ -1,9 +1,6 @@
 ---
 title: Typ der Schnellansicht und den benutzerdefinierten Viewer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 0879d18922e730d9cd737bdefde52576b6b03638
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948562"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typschnellansicht und benutzerdefinierter viewer
 Eine typschnellansicht ist eine Komponente, die einen Teil der Daten in einem bestimmten Format angezeigt. Das Format ist vollständig bis zu, die die Schnellansicht implementiert, sei es dem Endbenutzer oder einem Drittanbieter von Schnellansichten.  

@@ -1,9 +1,6 @@
 ---
 title: Übersicht über Outlook-Objektmodell
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945352"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application>-Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem>-Objekt eine E-Mail dar.  
@@ -35,7 +32,7 @@ ms.locfileid: "49941190"
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [zum Erstellen eines benutzerdefinierten Vorgangsberichts mithilfe von Outlook Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen ein benutzerdefinierten Vorgangsberichts mithilfe von Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## <a name="access-objects-in-an-outlook-project"></a>Zugreifen auf Objekte in einem Outlook-Projekt  
  Outlook stellt zahlreiche Objekte bereit, mit denen Sie interagieren können. Damit Sie das Objektmodell effizient verwenden können, sollten Ihnen die folgenden Objekte der obersten Ebene vertraut sein:  
@@ -142,5 +139,4 @@ ms.locfileid: "49941190"
 |[Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)|Enthält Themen, die das Ausführen von Aufgaben mit Mailelementen veranschaulichen.|  
 |[Arbeiten mit Ordnern](../vsto/working-with-folders.md)|Enthält Themen, die das Ausführen von Aufgaben mit Ordnern veranschaulichen.|  
 |[Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)|Enthält Themen, die das Ausführen von Aufgaben mit Kalenderelementen veranschaulichen.|  
-|[Gewusst wie: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Zeigt, wie der Name des aktuellen Ordners und Informationen zum ausgewählten Element angezeigt werden.|  
-  
+|[Vorgehensweise: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Zeigt, wie der Name des aktuellen Ordners und Informationen zum ausgewählten Element angezeigt werden.|  

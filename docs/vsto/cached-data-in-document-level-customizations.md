@@ -1,9 +1,6 @@
 ---
 title: Zwischengespeicherte Daten in Anpassungen auf Dokumentebene
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964649"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokumentebene
   Ein primäres Ziel von Anpassungen auf Dokumentebene ist, Daten aus der Ansicht in Office-Dokumenten zu trennen. Daten bezieht sich auf die Informationen, die in das Dokument, einschließlich der Zahlen und Text gespeichert ist. Ansicht bezieht sich auf die Benutzeroberfläche und das Objektmodell der Microsoft Office Word und Microsoft Office Excel.  
@@ -66,5 +63,3 @@ ms.locfileid: "53248295"
 ## <a name="see-also"></a>Siehe auch  
  [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

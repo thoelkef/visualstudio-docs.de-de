@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugPortSuppliers2 | Microsoft Docs
-ms.custom: ''
+title: IEnumDebugPortSuppliers2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPortSuppliers2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b330be8efb77119d6d78c1478555c9ee5bd6aabc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12c92a71af59b7af5025d6cebeb689424bef7e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959598"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
-Diese Schnittstelle listet Port Lieferanten.  
+Diese Schnittstelle listet Portanbieter.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,24 +29,24 @@ IEnumDebugPortSuppliers2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Visual Studio implementiert diese Schnittstelle, um eine Liste der Port Lieferanten darstellen.  
+ Visual Studio implementiert diese Schnittstelle, um eine Liste der Portanbieter darstellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) abrufen eine Liste von Port Lieferanten.  
+ Rufen Sie [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) zum Abrufen einer Liste von Portanbieter.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IEnumDebugPortSuppliers2`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Ruft eine angegebene Anzahl von Port Lieferanten in eine Enumerationsfolge ab.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Überspringt eine angegebene Anzahl von Port Lieferanten in eine Enumerationsfolge an.|  
-|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[Klon](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Ruft die Anzahl der Port Lieferanten in einen Enumerator ab.|  
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Ruft eine angegebene Anzahl von Portanbieter in einer Enumerationsfolge ab.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Überspringt eine angegebene Anzahl von Portanbieter in einer Enumerationsfolge.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Ruft die Anzahl der Portanbieter in einen Enumerator ab.|  
   
 ## <a name="remarks"></a>Hinweise  
- Debugging-Modul muss zum Abrufen dieser Schnittstelle in der Regel nicht.  
+ Eine Debug-Engine muss zum Abrufen dieser Schnittstelle in der Regel nicht.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -59,5 +56,5 @@ IEnumDebugPortSuppliers2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)
