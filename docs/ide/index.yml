@@ -1,0 +1,110 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 64bf68f880b74161d8d1b95a73c5a3763a1c8192
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684391"
+documentType: LandingData
+title: Dokumentation zur Visual Studio-IDE
+metadata:
+  title: Visual Studio-Dokumentation | Microsoft-Dokumentation
+  description: Tutorials und konzeptionelle Artikel zur Verwendung von Visual Studio
+  author: ghogen
+  manager: douge
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-ide
+  ms.topic: landing-page
+  ms.date: 11/12/2018
+  ms.author: ghogen
+  ms.custom: seodec18
+sections:
+- title: Erste Schritte mit Visual Studio
+  items:
+  - type: paragraph
+    text: Installieren der integrierten Entwicklungsumgebung (IDE) für Visual Studio und weitere Informationen
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ../install/install-visual-studio.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      title: Installieren von Visual Studio
+    - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
+      title: Einführung in die Visual Studio-IDE
+    - href: /dotnet/csharp/tutorials/intro-to-csharp/
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: Neues in Visual Studio 2017
+- title: Tutorials
+  items:
+  - type: paragraph
+    text: Starten Sie mit Visual Studio in der Programmiersprache Ihrer Wahl.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_csharp.svg
+      text: C#
+      href: /visualstudio/get-started/csharp/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_fsharp.svg
+      text: F#
+      href: /dotnet/fsharp
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_vb.svg
+      text: Visual Basic
+      href: /visualstudio/get-started/visual-basic/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_cplusplus.svg
+      text: C++
+      href: /cpp/get-started/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_python.svg
+      text: Python
+      href: /visualstudio/python/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_nodejs.svg
+      text: Node.js
+      href: /visualstudio/javascript/
+- title: Entwickeln von Anwendungen
+  items:
+  - type: paragraph
+    text: Vertiefen Sie Ihre Kenntnisse durch ausführlichere Tutorials für die Verwendung von Visual Studio zum Entwickeln und Testen von Anwendungen.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ../ide/index-writing-code.md
+      html: <p>Nutzen Sie den Visual Studio-Code-Editor optimal.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-edit.svg
+      title: Schreiben und Bearbeiten von Code
+    - href: ../ide/compiling-and-building-in-visual-studio.md
+      html: <p>Konfigurieren Sie Ihren Compiler, und erstellen Sie Ihre App.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+      title: Kompilieren und Erstellen
+    - href: ../debugger/debugger-feature-tour.md
+      html: <p>Führen Sie Ihre App im Debugger aus, um Probleme zu untersuchen.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_debug.svg
+      title: Debug
+    - href: ../test/getting-started-with-unit-testing.md
+      html: <p>Verwenden Sie Visual Studio zum Verwalten von Unittests und Tests der programmierten UI.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_test.svg
+      title: Test
+    - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
+      html: <p>Erstellen Sie eine SQL-Datenbank mithilfe der Entwurfstools der Visual Studio-Datenbank.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_generic-database.svg
+      title: Zugriff auf Daten
