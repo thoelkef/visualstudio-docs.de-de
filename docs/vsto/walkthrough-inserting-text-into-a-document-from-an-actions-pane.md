@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943089"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Bereich "Aktionen" in Microsoft Office Word-Dokument erstellt wird. Der Bereich "Aktionen" enthält zwei Steuerelemente, die Benutzereingaben erfassen, und klicken Sie dann den Text an das Dokument senden.  
@@ -66,7 +63,7 @@ ms.locfileid: "51948724"
   
     **Name**  
   
-    **Adresse**  
+    **Address**  
   
     **Dies ist ein Beispiel für eine grundlegende Aktionsbereich in Word.**  
   
@@ -184,9 +181,7 @@ ms.locfileid: "51948724"
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)   
- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Excel-Arbeitsmappen](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Excel-Arbeitsmappen](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark-Steuerelement](../vsto/bookmark-control.md)  
-  
-  

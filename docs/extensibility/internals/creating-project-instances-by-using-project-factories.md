@@ -1,9 +1,6 @@
 ---
 title: Erstellen von Projektinstanzen mithilfe von Projektfactorys | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project factories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938120"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Erstellen von Projektinstanzen mithilfe von projektfactorys
 Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *Projektzuordnungsinstanz* zum Erstellen von Instanzen von Project-Objekte. Eine Projektzuordnungsinstanz ähnelt einer standard-Klassenfactory für cocreatable COM-Objekte. Project-Objekte sind jedoch nicht cocreatable; Sie können nur erstellt werden, mithilfe einer Projektfactory.  
@@ -51,4 +48,4 @@ Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ver
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Prüfliste: Erstellen Sie neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Prüfliste: Erstellen Sie neue Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)

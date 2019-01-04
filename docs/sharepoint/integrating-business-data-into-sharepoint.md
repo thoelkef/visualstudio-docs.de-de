@@ -1,13 +1,8 @@
 ---
 title: Integrieren von Geschäftsdaten in SharePoint | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934439"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrieren von Geschäftsdaten in SharePoint
   Sie können die Geschäftsdaten in SharePoint integrieren. Geschäftsdaten können von Back-End-Server-Anwendungen stammen, z. B. [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel und SAP, oder einen Webdienst. Benutzer können anzeigen, hinzufügen, aktualisieren oder Löschen von Unternehmensdaten mithilfe von externen Listen oder Geschäftsdaten-Webparts in SharePoint.  Benutzer können auch diese Daten in einer Microsoft Office-Anwendung wie Microsoft Outlook offline zugreifen. Weitere Informationen finden Sie unter [, können Sie externe Daten anzeigen](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -61,4 +56,3 @@ ms.locfileid: "37119228"
 |[Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)|Zeigt, wie ein neues Modell erstellen oder importieren ein Modells, das Sie aus SharePoint exportieren.|  
 |[Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)|Es wird erläutert, wie die Elemente eines Modells mithilfe von Visual Studio-Entwurfstools zu entwerfen.|  
 |[Wann verwenden Sie SharePoint Designer Visual Studio. Visual Studio beim Entwickeln von Lösungen, die mithilfe von BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Hilft Ihnen bei der Entscheidung, ob Visual Studio verwenden, oder verwenden SharePoint Designer zum Erstellen eines Modells für den BDC.|  
-  

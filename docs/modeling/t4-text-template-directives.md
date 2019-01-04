@@ -15,16 +15,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c01bea709d551e970ed8c44ec861ff348c7081ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939251"
 ---
 # <a name="t4-text-template-directives"></a>T4-Textvorlagenanweisungen
-Durch Anweisungen werden Anweisungen für das Textvorlagen-Transformationsmodul bereitgestellt.
+Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Enginebereitgestellt.
 
  Die Syntax von Direktiven lautet wie folgt:
 
@@ -71,4 +70,4 @@ Durch Anweisungen werden Anweisungen für das Textvorlagen-Transformationsmodul 
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
- Darüber hinaus können Sie eigene Anweisungen erstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Direktivenprozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md). Wenn Sie mithilfe des Visualisierungs- und Modellierungs-SDKs eine domänenspezifische Sprache (DSL) erstellen, wird ein Direktivenprozessor als Teil der DSL generiert.
+ Darüber hinaus können Sie eigene Anweisungen erstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md). Wenn Sie mithilfe des Visualisierungs- und Modellierungs-SDKs eine domänenspezifische Sprache (DSL) erstellen, wird ein Direktivenprozessor als Teil der DSL generiert.

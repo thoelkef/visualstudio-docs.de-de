@@ -1,9 +1,6 @@
 ---
 title: Registrieren von Verben für Dateierweiterungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55b6e8d450a298b6d35079998863a9394ec7d70d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949731"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzugte Maßnahme, die auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies wird bevorzugt, dass die Aktion mit einem Verb, z. B. geöffnet ist, verknüpft ist, die die Aktion entspricht.  

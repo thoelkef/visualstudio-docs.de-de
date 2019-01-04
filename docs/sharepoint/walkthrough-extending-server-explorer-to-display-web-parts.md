@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erweitern Server-Explorer, um die Anzeige von Webparts | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erweitern des Server-Explorers zur Anzeige von Webparts | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957896"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts
   In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten **Server-Explorer** um Komponenten auf SharePoint-Websites anzuzeigen. Allerdings **Server-Explorer** nicht einige Komponenten werden standardmäßig angezeigt. Erweitern Sie in dieser exemplarischen Vorgehensweise **Server-Explorer** , damit es den Webpartkatalog auf zeigt jeweils die SharePoint-Website verbunden.  
@@ -374,7 +371,6 @@ ms.locfileid: "51296384"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Exemplarische Vorgehensweise: Aufrufen der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)   
  [Erstellen eines Symbols oder anderen Bilds &#40;Bildbearbeitung für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

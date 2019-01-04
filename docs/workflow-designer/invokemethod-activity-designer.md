@@ -3,7 +3,6 @@ title: Workflow-Designer - InvokeMethod-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946937"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 
@@ -57,7 +56,7 @@ Der Algorithmus zum Registrieren der Parameter in <xref:System.Activities.Activi
 
 3.  Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.
 
-Die resultierende Ausnahme hat den Typ <xref:System.Activities.InvalidWorkflowException> mit der folgenden Meldung: 'InvokeMethod': Eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits mit dem Namen 'TargetObject' vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.
+Die resultierende Ausnahme ist vom Typ <xref:System.Activities.InvalidWorkflowException> mit folgender Meldung: 'InvokeMethod': Mit dem Namen 'TargetObject' ist eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.
 
 Diese Einschränkung gilt nicht für <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> und <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Sie sind sich nicht um workflowargumente und aus diesem Grund sind nicht registriert die <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> Auflistung von der <xref:System.Activities.Statements.InvokeMethod> -Aktivität in der <xref:System.Activities.Activity.CacheMetadata%2A> Methode.
 

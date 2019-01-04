@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938316"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können für den Benutzer auf das Diagramm und in Ihrer Sprache-Explorer angezeigt werden, und können über Programmcode zugegriffen werden. Unterscheiden sich jedoch die Eigenschaften auf die Weise, dass ihre Werte gespeichert werden.
@@ -45,7 +44,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
 
 4.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-     Sie erhalten die folgende Fehlermeldung angezeigt: "*Ihreklasse* enthält keine Definition für Get*YourProperty*."
+     Die folgende Fehlermeldung wird angezeigt: "*Ihreklasse* enthält keine Definition für Get*YourProperty*."
 
 5.  Doppelklicken Sie auf die Fehlermeldung angezeigt.
 
