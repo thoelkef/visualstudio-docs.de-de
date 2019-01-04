@@ -1,6 +1,5 @@
 ---
 title: Bildbibliotheks-Viewer Bild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968669"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bildmanifesten, damit der Benutzer sie auf die gleiche Weise bearbeiten wie Visual Studio. Der Benutzer kann es sich um Hintergrund, Größen, DPI-Wert, hoher Kontrast und andere Einstellungen ändern. Das Tool zeigt beim Laden der Informationen für jedes Image Manifest auch und zeigt Quellinformationen für jedes Bild im Image-Manifest. Dieses Tool eignet sich für:  
@@ -74,7 +73,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |**Unterelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle Manifest an.|  
 |GUID|Das Symbol eine GUID darstellt, und Formatieren von GUID entsprechen.|  
-|Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein.|  
+|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein.|  
 |Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert.|  
   
  Symbole sind Groß-/Kleinschreibung beachtet und die referenzierten $(symbol-name)-Syntax verwenden:  
@@ -115,7 +114,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|  
   
  **Quelle**  
@@ -132,7 +131,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |-|-|  
 |**Attribut**|**Definition**|  
 |URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mithilfe der Anwendung: / / / der Autorität<br /><br /> – Ein Ressourcenverweis absolute-Komponente<br /><br /> – Ein Pfad zu einer Datei enthält eine systemeigene Ressource|  
-|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> - *Light*: die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> - *Hohem Kontrast*: die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> - *HighContrastLight*: die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> -*HighContrastDark*: die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn die **Hintergrund** Attribut weggelassen wird, die Quelle kann auf alle Hintergrund verwendet werden.<br /><br /> Wenn **Hintergrund** ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn **Hintergrund** ausgelassen oder auf ist *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
+|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> - *Light*: Die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: Die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> - *Hohem Kontrast*: Die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> - *HighContrastLight*: Die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> -*HighContrastDark*: Die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn die **Hintergrund** Attribut weggelassen wird, die Quelle kann auf alle Hintergrund verwendet werden.<br /><br /> Wenn **Hintergrund** ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn **Hintergrund** ausgelassen oder auf ist *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
   
  Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeordneten Elemente aufweisen:  
   
@@ -154,7 +153,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|[Erforderlich] Der Typ der systemeigene Ressource entweder XAML oder PNG-Datei|  
-|Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
+|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
   
  **ImageList**  
   
@@ -171,7 +170,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |Extern|[Optional, standardmäßig "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
   
  Der Moniker für das enthaltene Image keine auf ein Bild in das aktuelle Manifest definiert. Wenn das eigenständige Image aus der Abbildbibliothek gefunden werden kann, wird ein leeres Platzhalterbild an seiner Stelle verwendet werden.  

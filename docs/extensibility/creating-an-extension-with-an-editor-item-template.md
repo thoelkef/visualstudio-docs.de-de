@@ -1,9 +1,6 @@
 ---
 title: Erstellen einer Erweiterung mit einer Editor-Elementvorlage | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a13c62d9fadfe105bd8e645ba6e7758c2b3195a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957858"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage
 Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfachen Editor-Erweiterungen zu erstellen, die Klassifizierungen, Zusatzelemente und Ränder im Editor hinzu. Die Editor-Elementvorlagen sind für Visual c# oder Visual Basic-VSIX-Projekte verfügbar.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-classifier-extension"></a>Erstellen Sie eine Klassifizierungsfunktion-Erweiterung  

@@ -1,9 +1,6 @@
 ---
 title: FeatureProperties-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36324996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955671"
 ---
 # <a name="featureproperties-element"></a>Element „FeatureProperties“
   Eine Auflistung von Eigenschaftswerten, die mit einer Funktion enthalten sind, wenn sie in SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaftswerte in Ihrem Code zugreifen.  
@@ -66,5 +63,3 @@ ms.locfileid: "36324996"
 ## <a name="see-also"></a>Siehe auch
  [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  

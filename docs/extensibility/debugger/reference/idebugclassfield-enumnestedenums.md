@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField::EnumNestedEnums | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField::EnumNestedEnums
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfdfc8245634f0d674b1ced435a90504c8893d50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45d9d835a2b8a2f903af9f8d09884b054f43c087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937239"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 Erstellt einen Enumerator für die geschachtelte Enumeratoren dieser Klasse.  
@@ -28,7 +25,7 @@ Erstellt einen Enumerator für die geschachtelte Enumeratoren dieser Klasse.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT EnumNestedEnums(   
+HRESULT EnumNestedEnums(   
    IEnumDebugFields** ppEnum  
 );  
 ```  

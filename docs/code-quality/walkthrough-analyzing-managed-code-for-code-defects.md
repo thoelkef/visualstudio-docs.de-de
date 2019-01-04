@@ -2,7 +2,6 @@
 title: Exemplarische Vorgehensweise Analysieren von verwaltetem Code auf Codefehler | Microsoft-Dokumentation
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955252"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwalteter Code für Code Mängel
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
 
 In dieser exemplarischen Vorgehensweise müssen Sie ein verwaltetes Projekt Codefehler analysieren, mit dem Code Analysetool.
 
@@ -87,13 +86,13 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
     Abhängig von der Developer-Profil, das Sie ausgewählt haben, müssen Sie möglicherweise ein zeigen Sie auf **andere Windows** auf die **Ansicht** Menü, und wählen Sie dann **Fehlerliste**.
 
-1. In **Projektmappen-Explorer**, wählen Sie **alle Dateien anzeigen**.
+1. Klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
 
 1. Erweitern Sie den Knoten "Eigenschaften", und öffnen Sie die *"AssemblyInfo.cs"* Datei.
 
 1. Verwenden Sie die folgenden Tipps, um die Warnungen zu beheben:
 
-   [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" sollte mit CLSCompliantAttribute markiert werden, und der Wert sollte "true" sein.
+   [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" markiert werden mit CLSCompliantAttribute, und der Wert sollte "true" sein.
 
    1. Fügen Sie den Code `using System;` in die Datei "AssemblyInfo.cs".
 
@@ -129,11 +128,11 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
    1. Ändern Sie den Namen des abzurufenden Members `Item`.
 
-   [CA1710: Bezeichner sollten richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rename 'Testcode.Demo dass lautet"in"Ausnahme"endet.
+   [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Benennen Sie "Testcode.Demo dass lautet" Ende "Ausnahme".
 
    1. Ändern Sie den Namen der Klasse und die zugehörigen Konstruktoren in `DemoException`.
 
-   [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen signieren.
+   [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Melden Sie "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen an.
 
    1. Auf der **Projekt** Menü wählen **CodeAnalysisManagedDemo Eigenschaften**.
 
@@ -153,7 +152,7 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
    1. Auf der **Datei** Menü wählen **ausgewählte Elemente speichern**, und schließen Sie dann auf die Eigenschaftenseiten.
 
-   [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie ein [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.
+   [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie einem [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.
 
    1. Hinzufügen der `[Serializable ()]` -Attribut der Klasse `demo`.
 

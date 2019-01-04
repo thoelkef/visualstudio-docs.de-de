@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4ba9e15a7f7578454aa7b87372ea776399eca57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967306"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Gewusst wie: Öffnen von Editoren für geöffnete Dokumente
+# <a name="how-to-open-editors-for-open-documents"></a>Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente
 Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuerst bestimmen, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist. Die Datei kann entweder in einem projektspezifischen-Editor zu öffnen oder einem standard-Editor registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="open-a-project-specific-editor"></a>Öffnen Sie einen projektspezifischen editor  
@@ -57,5 +54,5 @@ Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuer
   
 ## <a name="see-also"></a>Siehe auch  
  [Öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
- [Gewusst wie: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)   
- [Gewusst wie: Öffnen Sie die standard-Editoren](../extensibility/how-to-open-standard-editors.md)
+ [Vorgehensweise: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)   
+ [Vorgehensweise: Open-standard-Editoren](../extensibility/how-to-open-standard-editors.md)

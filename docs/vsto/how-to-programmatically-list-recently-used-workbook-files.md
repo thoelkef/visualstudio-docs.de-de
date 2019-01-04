@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Liste zuletzt verwendeter Arbeitsmappendateien'
-ms.custom: ''
+title: 'Vorgehensweise: Zuletzt verwendeter Arbeitsmappendateien programmgesteuert Liste'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989618"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programmgesteuertes Liste zuletzt verwendeter Arbeitsmappendateien
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Vorgehensweise: Zuletzt verwendeter Arbeitsmappendateien programmgesteuert Liste
   Die <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> -Eigenschaft gibt eine Auflistung, die die Namen aller Dateien enthält, die in der Microsoft Office Excel-Liste der zuletzt geöffneten Dateien angezeigt werden. Die Länge der Liste variiert abhängig von der Anzahl der Dateien, die der Benutzer ausgewählt hat, beibehalten werden sollen. Sie können die Ergebnisse in einem Bereich anzeigen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,5 +38,3 @@ ms.locfileid: "35257588"
  [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

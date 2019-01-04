@@ -1,9 +1,6 @@
 ---
 title: Binden von Tastenkombinationen an Menüelemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940374"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
 Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, nur einen Eintrag hinzufügen die *VSCT* Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Befehle der Hilfesymbolleiste eine Tastenkombination zugeordnet, und das Anwenden der Zuordnung von Tastenkombinationen in der Standard-Editor oder nur für einen benutzerdefinierten Editor.  
