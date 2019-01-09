@@ -3,18 +3,18 @@ title: Technischer Support-Vorteil
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950068"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740432"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -95,8 +95,8 @@ Sobald Sie diese Schritte abgeschlossen haben, können Sie den Supportplan ausw�
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 4 Vorfälle       |  Ja|
-| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail, NFR ausgewählt<sup>2</sup>                                        | 2 Vorfälle                                                          |Ja         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 4 Vorfälle       |  Ja|
+| Visual Studio Professional (Standard) | VL, Azure, Retail, NFR ausgewählt<sup>2</sup>                                        | 2 Vorfälle                                                          |Ja         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 Vorfälle                                             |  Ja         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 Vorfälle                                               | Ja         |
 | Visual Studio Dev Essentials | NA | Nicht verfügbar |NA|
@@ -105,3 +105,8 @@ Sobald Sie diese Schritte abgeschlossen haben, können Sie den Supportplan ausw�
 <sup>1</sup> *Umfasst: Imagine Premium Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Standard, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Umfasst: Imagine Standard*
+
+> [!NOTE]
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
+
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.

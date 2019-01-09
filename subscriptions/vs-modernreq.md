@@ -3,18 +3,18 @@ title: MODERNRequirements-Vorteil in Visual Studio-Abonnements | Microsoft-Dokum
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informationen zur ModernRequirements-Suite von Produkten, die in ausgewählten Visual Studio Enterprise-Abonnements enthalten sind
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942867"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740259"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Der MODERNRequirements4TFS-Vorteil in Visual Studio-Abonnements
 
@@ -88,14 +88,18 @@ Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement f
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
-| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Nicht verfügbar                                                          |NA     |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                          |NA     |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                                          |NA     |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                                          |NA     |
 | Visual Studio Dev Essentials | NA  |Nicht verfügbar                                                          |NA     |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht: Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP) und Region Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP) und Region Director (RD).  MCT Software & Services.*
+
+> [!NOTE]
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
+
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 

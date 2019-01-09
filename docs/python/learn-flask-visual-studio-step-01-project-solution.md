@@ -2,9 +2,8 @@
 title: 'Tutorial zu Flask in Visual Studio, Schritt 1: Grundlagen für Flask'
 titleSuffix: ''
 description: In diesem Artikel finden Sie eine exemplarische Vorgehensweise zu den Grundlagen von Flask im Kontext von Visual Studio-Projekten sowie Voraussetzungen, Git und virtuellen Umgebungen.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 490356eae7467eded983b117a88c35c9785f3f93
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066638"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060763"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -108,7 +107,7 @@ Da Sie im Dialogfeld **Neues Projekt** die Option **Neues Git-Repository erstell
 
 Antwort: Zunächst erhalten Sie durch die Verwendung der Quellcodeverwaltung von Beginn an eine regelmäßige externe Sicherung Ihres Projekts, insbesondere bei gleichzeitiger Verwendung eines Remoterepositorys. Im Gegensatz zur Verwaltung eines Projekts nur in einem lokalen Dateisystem bietet die Quellcodeverwaltung auch einen vollständigen Änderungsverlauf und die einfache Möglichkeit, eine einzelne Datei oder das gesamte Projekt in einem früheren Zustand wiederherzustellen. Über den Änderungsverlauf kann die Ursache von Regressionen (fehlgeschlagenen Tests) ermittelt werden. Bei der Mitarbeit von mehreren Personen an einem Projekt ist die Quellcodeverwaltung zudem wichtig für die Verwaltung von Überschreibungen und bei der Konfliktauflösung. Und schließlich ermöglicht die Quellcodeverwaltung, die im Grunde eine Form der Automatisierung darstellt, die Automatisierung von Builds, Tests sowie der Releaseverwaltung. Sie stellt den ersten Schritt bei der Verwendung von DevOps für ein Projekt dar. Und da die Einstiegsbarrieren so niedrig sind, gibt es keinen Grund, die Quellcodeverwaltung nicht von Beginn an zu verwenden.
 
-Weitere Informationen zu automatisierter Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem Artikel im MSDN-Magazin, in dem es um mobile Apps, aber auch um Web-Apps geht.
+Weitere Informationen zu automatisierter Quellcodeverwaltung finden Sie unter [The Source of Truth: The Role of Repositories in DevOps (Die Quelle der Wahrheit: Die Rolle von Repositorys in DevOps)](https://msdn.microsoft.com/magazine/mt763232), einem Artikel im MSDN-Magazin, in dem mobile Apps behandelt werden. Der Inhalt des Artikels gilt jedoch auch für Web-Apps.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Frage: Kann ich verhindern, dass Visual Studio für ein neues Projekt automatisch einen Commit ausführt?
 

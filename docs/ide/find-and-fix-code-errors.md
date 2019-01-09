@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065116"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684820"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -144,7 +144,7 @@ Während der Debugger angehalten ist, können Sie die Variablen und Aufruflisten
 
 ![Visual Studio, Werteprüfung zur Laufzeit](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Zeigen Sie auf eine Variable, um den aktuellen Wert und die Verweise anzuzeigen. Wenn Sie einen nicht erwarteten Wert antreffen, enthält der vorhergehende oder der aufrufende Code möglicherweise einen Fehler. Weitere Informationen finden Sie unter [Tutorial: Weitere Informationen zum Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md).
+Zeigen Sie auf eine Variable, um den aktuellen Wert und die Verweise anzuzeigen. Wenn Sie einen nicht erwarteten Wert antreffen, enthält der vorhergehende oder der aufrufende Code möglicherweise einen Fehler. Weitere Informationen finden Sie unter [Tutorial: Weitere Informationen zum Debuggen mit Visual Studio](../debugger/debugger-feature-tour.md).
 
 Darüber hinaus zeigt Visual Studio das Fenster **Diagnosetools** an, in dem Sie den CPU- und Speicherverbrauch Ihrer App im Zeitverlauf beobachten können. In einer späteren Entwicklungsphase können Sie mit diesen Tools nach unvorhergesehen hoher CPU-Auslastung oder Speicherzuweisung suchen. Zusammen mit dem Fenster **Überwachung** und Haltepunkten können Sie so sehr schnell ermitteln, wodurch eine unerwartete Auslastung oder nicht freigegebene Ressourcen verursacht werden. Weitere Informationen finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +159,5 @@ Weitere Informationen zu Komponententests in Visual Studio und wie diese Ihnen h
 ## <a name="see-also"></a>Siehe auch
 
 - [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
-- [Weitere Informationen zur Verwendung des Debuggers](../debugger/getting-started-with-the-debugger.md)
+- [Weitere Informationen zur Verwendung des Debuggers](../debugger/debugger-feature-tour.md)
 - [Generieren und Korrigieren von Code](../ide/code-generation-in-visual-studio.md)

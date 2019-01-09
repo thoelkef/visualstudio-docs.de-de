@@ -1,8 +1,6 @@
 ---
 title: RemoveDir-Aufgabe| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e835d50e0c6a0168795409b91301faa289bf1dc5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 075eb8b688fa7cab1da7e6ef6c81363795ab6481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831822"
 ---
 # <a name="removedir-task"></a>RemoveDir-Aufgabe
 Entfernt die angegebenen Verzeichnisse und alle enthaltenen Dateien und Unterverzeichnisse  
@@ -33,7 +31,7 @@ Entfernt die angegebenen Verzeichnisse und alle enthaltenen Dateien und Unterver
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `RemoveDir` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu löschenden Verzeichnisse an|  
 |`RemovedDirectories`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Verzeichnisse, die erfolgreich gelöscht wurden|  

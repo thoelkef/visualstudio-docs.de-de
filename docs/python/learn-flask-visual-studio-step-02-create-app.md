@@ -2,9 +2,8 @@
 title: 'Tutorial „Lernen von Flask“, Visual Studio-Schritt 2: Ansichten und Vorlagen'
 titleSuffix: ''
 description: In diesem Tutorial erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Schritten zur Erstellung einer App sowie zur Verwendung von Ansichten und Vorlagen.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 85c592145708adf713589d5844861dc8ee3133c8
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052944"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060743"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 

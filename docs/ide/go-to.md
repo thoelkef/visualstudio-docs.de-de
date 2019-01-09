@@ -2,7 +2,6 @@
 title: Gehe zu Datei, Gehe zu Symbol, Gehe zu Zeile
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986361"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
@@ -54,7 +53,7 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:
 
-Präfix | Symbol | Verknüpfung | Beschreibung 
+Präfix | Symbol | Verknüpfung | Beschreibung
 :-: | - | - | -
 :| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G** | Zur angegebenen Zeilennummer wechseln
 f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
@@ -67,7 +66,7 @@ m| ![Symbol „Member“](media/gotoall-members-icon.png) | **STRG**+**1**, **ST
 
 Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:
 
-Symbol | Beschreibung 
+Symbol | Beschreibung
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
 ![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
@@ -82,7 +81,7 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 
 Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:
 
-Einstellung | Beschreibung 
+Einstellung | Beschreibung
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an

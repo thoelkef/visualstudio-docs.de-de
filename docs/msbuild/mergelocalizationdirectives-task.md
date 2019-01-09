@@ -1,8 +1,6 @@
 ---
 title: MergeLocalizationDirectives-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d0245765c1b6aa01d6762848463997ad2f13ba3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64f36cadc6ee33563f516703f3bc48e81558b8ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959918"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives-Aufgabe
 Der <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives>-Task führt die Lokalisierungsattribute und -kommentare aus einer oder mehreren [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformatdateien für die gesamte Assembly in einer einzelnen Datei zusammen.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Liste der Dateien mit Lokalisierungsrichtlinien für einzelne Dateien im [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformat an. |
 | `OutputFile` | Erforderlicher **String**-Ausgabeparameter.<br /><br /> Gibt den Ausgabepfad der kompilierten Lokalisierungsrichtlinien-Assembly an. |
