@@ -1,10 +1,8 @@
 ---
 title: Unzip-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 386e0e76161982a4bedf6bb188381314d47e42e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882746"
 ---
 # <a name="unzip-task"></a>Unzip-Aufgabe
 Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
@@ -40,7 +38,7 @@ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `Unzip` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`DestinationFolder`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Gibt den Zielordner an, in dem die Datei entzippt werden soll.|
 |`OverwriteReadOnlyFiles`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn dieser auf `true` festgelegt ist, werden schreibgeschützte Dateien überschrieben. Wird standardmäßig auf `false` festgelegt.|
