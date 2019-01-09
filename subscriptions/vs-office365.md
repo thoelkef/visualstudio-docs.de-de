@@ -3,18 +3,18 @@ title: Office 365-Vorteil | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244462"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802107"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 in Visual Studio-Abonnements
 
@@ -31,7 +31,7 @@ Führen Sie die folgenden Schritte aus, um Office 365 herunterzuladen und zu akt
 0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
    > [!div class="mx-imgBorder"]
    > ![Office 365-Product Key abrufen](_img/vs-office365/vs-office365-get-key.png)
-0. In einem Flyoutfenster werden alle bereits von Ihnen abgerufenen Schlüssel sowie die Schlüssel angezeigt, die für Sie verfügbar sind.  Um einen neuen Schlüssel abzurufen, klicken Sie unter der Auflistung **Office Professional Plus 2019** auf **Schlüssel anfordern**.
+0. In einem Flyoutfenster werden alle bereits von Ihnen abgerufenen Schlüssel sowie die Schlüssel angezeigt, die für Sie verfügbar sind.  Klicken Sie unter der Auflistung **Office Professional Plus 2019** auf **Schlüssel anfordern**, um einen neuen Schlüssel abzurufen.
    > [!div class="mx-imgBorder"]
    > ![Office 365-Product Key anfordern](_img/vs-office365/vs-office365-claim-key.png)
 0. Notieren Sie sich den Schlüssel, den Sie soeben angefordert haben. (Sie können jederzeit zu dieser Liste zurückkehren, um ihn erneut anzuzeigen.)
@@ -55,15 +55,20 @@ Wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)   | VL, Azure, Retail| Verfügbar       |  Ja          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Verfügbar       |  Ja          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Nicht verfügbar       |  Nicht zutreffend          |
-| Visual Studio Professional (Standard, Cloudabonnement mit jährlicher Laufzeit) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |  Nicht zutreffend          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |  Nicht zutreffend          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 | Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar |Nicht zutreffend |
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+
+
+> [!NOTE]
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
+
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 

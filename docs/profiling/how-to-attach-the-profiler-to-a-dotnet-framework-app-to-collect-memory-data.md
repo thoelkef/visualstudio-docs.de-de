@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c11a6cd6d34a73956b2efa64a45aae6c4ba2da62
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592416"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten über die Befehlszeile
 
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der Visual Studio-Profilerstellungstools an eine aktive eigenständige .NET Framework-Clientanwendung angefügt wird und Arbeitsspeicherdaten erfasst werden können.
 
 > [!NOTE]
-> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  
 
 Zum Anfügen an eine .NET Framework-Anwendung und Sammeln von Arbeitsspeicherdaten müssen Sie mit dem Tool [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) die entsprechenden Umgebungsvariablen initialisieren, bevor die Zielanwendung gestartet wird. Wenn der Profiler an die Anwendung angefügt ist, können Sie die Datensammlung mit dem *VSPerfCmd.exe*-Tool anhalten und fortsetzen.
 

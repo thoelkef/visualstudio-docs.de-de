@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f79584d5ebb3e83431bcb8f819f5a5e67d23111
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876684"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592169"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Starten einer eigenständigen .NET Framework-Anwendung mit dem Profiler zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eigenständige .NET Framework-(Client-)Anwendungen gestartet und Speicherdaten erfasst werden.  
@@ -29,7 +29,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 -   Beenden der Profilerstellungssitzung  
 
 > [!NOTE]
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
 ## <a name="start-the-application-with-the-profiler"></a>Starten der Anwendung mit dem Profiler  
  Wenn Sie die Zielanwendung mit dem Profiler starten möchten, verwenden Sie die Optionen **VSPerfCmd.exe/start** und **/launch**, um den Profiler zu initialisieren und die Anwendung zu starten. Sie können **/start** und **/launch** sowie die zugehörigen Optionen in einer einzigen Befehlszeile angeben.  
@@ -50,7 +50,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
 
-   | Option | Beschreibung  |
+   | Option | Beschreibung |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
@@ -62,14 +62,14 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
    - Die Option [/gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` ist zum Sammeln von .NET Framework-Speicherdaten erforderlich. Die Schlüsselwortparameter geben an, ob Daten zur Speicherbelegung oder Daten zur Speicherbelegung und der Objektlebensdauer gesammelt werden sollen.  
 
-     |Stichwort|Beschreibung |  
+     |Stichwort|Beschreibung|  
      |-------------|-----------------|  
      |**Speicherbelegung**|Sammelt nur Daten zur Speicherbelegung.|  
      |**Lebensdauer**|Es werden Daten zur Speicherbelegung und zur Objektlebensdauer gesammelt.|  
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/launch** verwenden.  
 
-   |Option|Beschreibung |  
+   |Option|Beschreibung|  
    |------------|-----------------|  
    |[/args](../profiling/args.md) **:** `Arguments`|Gibt eine Zeichenfolge mit den Befehlszeilenargumenten an, die an die Zielanwendung übergeben werden sollen.|  
    |[/console](../profiling/console.md)|Startet die Ziel-Befehlszeilenanwendung in einem separaten Fenster.|  
@@ -83,7 +83,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
 -   Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
-    |Option|Beschreibung |  
+    |Option|Beschreibung|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profiler-Befehlszeile | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profilerbefehlszeile | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c1d908a29d4255401aaad4567b56be16ce467cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e485f7e7bbcd2b6168d163be83b3c158b52df5fd
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592702"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profiler-Befehlszeile
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profilerbefehlszeile
 In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools gehörenden Befehlszeilentools verwenden können, um mithilfe der Instrumentierungsprofilerstellungs-Methode ausführliche Daten zur .NET-Speicherbelegung und Objektlebensdauer für eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung zu erfassen.  
 
 > [!NOTE]
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-
+>  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+ 
  Wenn Sie Leistungsdaten aus einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung erfassen möchten, müssen Sie die *web.config*-Datei der Zielanwendung bearbeiten, um das [VSInstr.exe](../profiling/vsinstr.md)-Tool zu aktivieren, damit die Dateien der dynamisch kompilierten Anwendung instrumentiert werden können. Verwenden Sie dann das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um den Server zu konfigurieren, der die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung hostet, und aktivieren Sie die Profilerstellung für den .NET-Speicher, indem Sie passende Umgebungsvariablen festlegen. Starten Sie anschließend den Computer neu.  
 
  Starten Sie den Profiler, und führen Sie dann die Zielanwendung aus, um Daten zu erfassen. Wenn der Profiler mit der Anwendung verknüpft ist, können Sie die Datensammlung anhalten bzw. fortsetzen. Wenn Sie die entsprechenden Daten erfasst haben, schließen Sie die Anwendung und den IIS-Workerprozess, und fahren Sie den Profiler anschließend herunter.  
@@ -33,7 +33,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Konfigurieren der ASP.NET-Webanwendung und des Webservers  
 
-1.  Bearbeiten Sie die *web.config*-Datei der Zielanwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten von web.config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).  
+1.  Bearbeiten Sie die *web.config*-Datei der Zielanwendung. Weitere Informationen finden Sie unter [How to: Modify web.config files to instrument and profile dynamically compiled ASP.NET web applications (Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen)](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).  
 
 2.  Öffnen Sie ein Eingabeaufforderungsfenster auf dem Computer, der die Webanwendung hostet.  
 
@@ -68,7 +68,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
    > [!NOTE]
    >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
 
-   | Option | Beschreibung  |
+   | Option | Beschreibung |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Gibt den optionalen Domänen- und Benutzernamen des Kontos an, das Besitzer des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozesses ist. Diese Option ist erforderlich, wenn der Prozess als ein Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Name ist auf der Registerkarte **Prozesse** in der Spalte **Benutzername** des Windows Task-Managers aufgeführt. |
    | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte **Prozesse** in der Spalte **Sitzungs-ID** des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
@@ -88,7 +88,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
 -   Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
-    |Option|Beschreibung |  
+    |Option|Beschreibung|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 408c66d87dbc932e09e1d5744ab5595672a00534
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159814"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307631"
 ---
 # <a name="advanced-example-for-containers"></a>Erweitertes Beispiel für Container
 
@@ -91,6 +91,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Visual Studio 2017 Version 15.8 und früher (alle Produkte) werden unter mcr<span></span>.microsoft\.com\/windows\/servercore:1809 oder höher nicht ordnungsgemäß installiert. Es wird keine Fehlermeldung angezeigt.
+   >
+   > Weitere Informationen finden Sie unten unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
 
 Führen Sie den folgenden Befehl aus, um das Image im aktuellen Arbeitsverzeichnis zu erstellen:
 

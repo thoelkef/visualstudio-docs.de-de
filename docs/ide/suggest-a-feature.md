@@ -1,43 +1,49 @@
 ---
 title: Vorschlagen eines Features
-description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag unterbreiten können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
-ms.date: 11/15/2018
+description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag einreichen können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592455"
 ---
 # <a name="overview-suggest-a-feature"></a>Übersicht: Vorschlagen einer Features
 
-Wir haben eine völlig neue Benutzererfahrung mit dem Vorschlagen von Features neben der aktuellen Möglichkeit eingeführt, Probleme in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com) zu melden. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
+Durch die neu eingeführte Benutzeroberfläche ist nun das Vorschlagen von Features in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com) möglich. Die bereits vorhandene Funktion zum Melden von Problemen ist weiterhin verfügbar. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
 
-Bis jetzt haben Benutzer von Visual Studio das Benutzerfeedback-Forum verwendet, um neue Ideen für Features vorzuschlagen. Die Benutzeroberfläche *Feature vorschlagen* in der Entwicklercommunity ermöglicht es Ihnen, vom Benutzerfeedback-Forum auf eine einzige Plattform für all Ihr Feedback zu wechseln, die direkt mit den Visual Studio Produktteams zusammenarbeitet.
+![Schaltfläche „Feature vorschlagen“ in der Entwicklercommunity](media/suggest-a-feature/suggest-feature-button.png)
+
+Sie können einen Vorschlag für ein Feature auch direkt in Visual Studio einreichen, indem Sie auf die Schaltfläche **Vorschlag bereitstellen** unter der Schaltfläche **Feedback senden** im oberen rechten Bereich des Hauptfensters von Visual Studio klicken.
+
+![Menü „Vorschlag bereitstellen“ in Visual Studio](media/suggest-a-feature/provide-suggestion.png)
+
+Wenn Sie auf **Vorschlag bereitstellen** klicken, gelangen Sie zur [Entwicklercommunity](https://developercommunity.visualstudio.com) und können dort Ihren Vorschlag einreichen.
+
+## <a name="user-voice"></a>Benutzerfeedback
+
+Bisher konnten die Benutzer von Visual Studio neue Features unter „Benutzerfeedback“ vorschlagen. Dank der neuen Funktion *Feature vorschlagen* in der Entwicklercommunity befindet sich nun all Ihr Feedback für das Visual Studio-Produktteam an einem Ort.
+
+Die Seite „Benutzerfeedback“ ist nun schreibgeschützt. Sie können sich dort bei Bedarf über Kontext informieren, alle Vorschläge für neue Features sollten jedoch in der Entwicklercommunity eingereicht werden.
 
 Wir haben eine anfängliche Sammlung von Ideen aus dem Benutzerfeedback-Forum in die Entwicklercommunity migriert. Die Migration erfolgte auf der Grundlage der Auswirkungen des Feedbacks auf die Community und der Prioritäten unserer Produktroadmap. Wenn Sie erwartet haben, hier einen Vorschlag zu sehen, den wir vielleicht verpasst haben, sollten Sie ihn unbedingt der Entwicklercommunity hinzufügen.
 
 ## <a name="votes"></a>Abstimmungen
 
-Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung in der Entwicklercommunity. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.
-
-## <a name="user-voice"></a>Benutzerfeedback
-
-Die Benutzerfeedback-Website ist nun schreibgeschützt, sodass Sie nach Bedarf auf den Kontext zurückblicken können. Alle Vorschläge für neue Features sollten über die Entwicklercommunity eingereicht werden.
+Das Abstimmungsverfahren in der Entwicklercommunity unterscheidet sich von dem des Benutzerfeedbacks. Um die Integrität der Abstimmungsergebnisse der Entwicklercommunity aufrechtzuerhalten und eine Verzerrung der Abstimmungsergebnisse zu vermeiden, zeigen wir die Benutzerfeedback-Stimmenanzahl deutlich als Tag neben jedem Featurevorschlag an. Während Sie weiterhin über Vorschläge in der erweiterten Entwicklercommunity abstimmen, werden Ihre neuen Stimmenzählungen getrennt von den Benutzerfeedback-Stimmenzählungen angezeigt.
 
 ## <a name="suggestion-status"></a>Vorschlagsstatus
 
-Nachdem Sie einen Featurevorschlag eingereicht haben, zeigen Statusangaben an, wo sich Ihr Featurevorschlag in seinem Lebenszyklus befindet. Während wir Ihr Feedback berücksichtigen und entlang des Workflows weiterführen, kennzeichnen wir es mit dem entsprechenden Status.
-
-Die verschiedenen Statusangaben, die mit Featurevorschlägen verbunden sind, werden unten zusammen mit einer Beschreibung ihrer Bedeutung und der Farbindikatoren aufgeführt.
+Nachdem Sie einen Featurevorschlag eingereicht haben, zeigen Statusangaben an, wo sich Ihr Featurevorschlag in seinem Lebenszyklus befindet. Während wir Ihr Feedback berücksichtigen und entlang des Workflows weiterführen, kennzeichnen wir es mit dem entsprechenden Status. Die verschiedenen Statusangaben, die mit Featurevorschlägen verbunden sind, werden hier zusammen mit einer Beschreibung ihrer Bedeutung und der Farbindikatoren aufgeführt.
 
 ![Neue Statusangaben für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ Das Abstimmungssystem im Benutzerfeedback funktioniert anders als die Abstimmung
 Wir sind sehr daran interessiert, Ihre Featurevorschläge zu hören und Maßnahmen zu ergreifen, um für unsere Kunden die Benutzerfreundlichkeit so hoch wie möglich zu gestalten. Maßnahmen zu Vorschlägen werden auf der Grundlage der Auswirkungen auf die breitere Community priorisiert. Auch wenn wir nicht persönlich auf jeden Vorschlag eingehen können, können Sie sicher sein, dass Ihr Feedback an das richtige Team gelangt und sorgfältig bewertet wird.
 
 Die Reaktionszeit hängt von dem Status ab, in dem sich Ihr Feedback befindet. Lesen Sie die Erklärungen zum Status in diesem Dokument, um die Antwortzeiten zu verstehen.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Einführung von „Feature vorschlagen“ in der Entwicklercommunity (Visual Studio-Blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

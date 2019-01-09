@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052151"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348546"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
-In Visual Studio gelten *Projekte* als logische Container, die die Elemente enthalten, die zum Erstellen einer App benötigt werden. Dabei handelt es sich z.B. um Quellcodedateien, Bitmaps, Symbole sowie um Verweise auf Komponenten und Dienste. Wenn Sie ein neues Projekt erstellen, erstellt Visual Studio dafür eine *Projektmappe*. Danach können Sie der Projektmappe nach Bedarf weitere neue oder vorhandene Projekte hinzufügen. Projektmappen können außerdem Dateien enthalten, die zu keinem bestimmten Projekt gehören.
+*Projekte* enthalten die Elemente, die zum Erstellen Ihrer App in Visual Studio erforderlich sind. Dabei handelt es sich z. B. um Quellcodedateien, Bitmaps, Symbole sowie Verweise auf Komponenten und Dienste. Wenn Sie ein neues Projekt erstellen, erstellt Visual Studio dafür eine *Projektmappe*. Danach können Sie der Projektmappe nach Bedarf weitere neue oder vorhandene Projekte hinzufügen. Projektmappen können außerdem Dateien enthalten, die zu keinem bestimmten Projekt gehören.
 
 ![Hierarchie der Projektmappe bzw. des Projekts](./media/vside-proj-soln.png)
 

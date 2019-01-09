@@ -1,8 +1,6 @@
 ---
 title: Ansicht „Ebeneninteraktionen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967095"
 ---
 # <a name="tier-interactions-view"></a>Ansicht "Ebeneninteraktionen"
 
@@ -38,7 +36,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 ## <a name="master-pane"></a>Masterbereich
 
-|Spalte|Beschreibung |
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Name**|– Bei einer Zeile der obersten Ebene ist es der Name des profilierten Prozesses oder der Webseite.<br />– Bei einer Datenbankverbindungszeile ist dies der Name des Servers, der die Datenbank hostet.|
 |**Datenbank**|Der Name der Datenbank (nur Datenbankverbindungszeilen).|
@@ -50,7 +48,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 
 ## <a name="database-connection-details-pane"></a>Detailbereich für die Datenbankverbindung
 
-|Spalte|Beschreibung |
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Befehlstext**|Die SQL-Abfrage der Anforderung.|
 |**Abfrageanzahl**|Die Anzahl, wie oft die Abfrage ausgeführt wurde.|

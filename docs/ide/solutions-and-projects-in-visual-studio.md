@@ -11,7 +11,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159671"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425759"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -56,7 +55,7 @@ In Visual Studio wird die Projektdatei im **Projektmappen-Explorer** verwendet, 
 
 ## <a name="solutions"></a>Projektmappen
 
-Projekte befinden sich in *Projektmappen*. Eine Projektmappe enthält mindestens ein oder mehrere zusammengehörige Projekte sowie Buildinformationen, Visual Studio-Fenstereinstellungen sowie beliebige weitere Dateien, die zu keinem bestimmten Projekt gehören. Eine Projektmappe wird von einer Textdatei (mit der Erweiterung *SLN*) in einem individuellen Format beschrieben. Dieses sollte nicht manuell bearbeitet werden.
+Projekte befinden sich in *Projektmappen*. Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „Lösung“. Eine Projektmappe ist lediglich ein Container für ein oder mehrere zusammengehörige Projekte sowie Buildinformationen, Visual Studio-Fenstereinstellungen und jegliche weitere Dateien, die zu keinem bestimmten Projekt gehören. Eine Projektmappe wird von einer Textdatei (mit der Erweiterung *SLN*) in einem individuellen Format beschrieben. Dieses sollte nicht manuell bearbeitet werden.
 
 Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (*SLN* und *SUO*):
 

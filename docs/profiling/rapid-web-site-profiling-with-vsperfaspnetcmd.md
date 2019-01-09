@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ccff5ef0575eea9d35239cab7bf3ffa47a11b315
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592663"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Websiteprofilerstellung mit VSPerfASPNETCmd
 
@@ -29,7 +29,7 @@ Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos [!INCLUDE[v
  In einigen Szenarios, z.B. beim Sammeln von Parallelitätsdaten oder Anhalten und Fortsetzen von Profilerstellungen, ist **VSPerfCmd** die bevorzugte Profilerstellungsmethode.
 
 > [!NOTE]
-> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis *\Team Tools\Performance Tools* des Visual Studio-Installationsverzeichnisses. Verwenden Sie auf 64-Bit-Computern das Tool VSPerfASPNETCmd, das sich im 32-Bit-Verzeichnis *\Team Tools\Performance Tools* befindet. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  
 
 ## <a name="profile-an-aspnet-application"></a>Profilen einer ASP.NET-Anwendung
 
@@ -100,7 +100,7 @@ So beenden Sie die Profilerstellung:
 
 Sie können eine der folgenden Optionen zu den weiter oben in diesem Abschnitt aufgelisteten Befehlen hinzufügen, mit Ausnahme des Befehls **vsperfaspnetcmd/shutdown**.
 
-|Option|Beschreibung |
+|Option|Beschreibung|
 |------------|-----------------|
 |**/Output:** `VspFile`|Standardmäßig wird die Profilerstellungsdatendatei (*VSP*) im aktuellen Verzeichnis mit dem Dateinamen **PerformanceReport.vsp** erstellt. Verwenden Sie die Option /Output, um einen anderen Speicherort, Dateinamen oder beides anzugeben.|
 |**/PackSymbols:Off**|Standardmäßig bettet VsPerfASPNETCmd Symbole (Funktionsnamen, Parameternamen usw.) in die *VSP*-Datei ein. Das Einbetten der Symbole kann die Profilerstellungsdatendatei sehr groß werden lassen. Wenn Sie auf die *PDB*-Dateien zugreifen können, die die Symbole enthalten, wenn Sie die Daten analysieren, verwenden Sie die Option „/packsymbols:off“, um die Einbettung der Symbole zu deaktivieren.|

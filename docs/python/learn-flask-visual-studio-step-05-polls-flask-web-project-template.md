@@ -2,9 +2,8 @@
 title: 'Tutorial zu Flask in Visual Studio, Schritt 5: Projektvorlage für Umfragen'
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu den Features der Vorlagen „Fragt ein Flask-Webprojekt ab“ und „Fragt ein Flask/Jade-Webprojekt ab“.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9ecbfb1c9b399327bede2fe479f0518a26e107e7
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065998"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060815"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Flask-Webprojektvorlage für Umfragen
 

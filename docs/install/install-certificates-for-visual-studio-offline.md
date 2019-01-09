@@ -2,7 +2,6 @@
 title: Installieren der für eine Offlineinstallation erforderlichen Zertifikate
 description: Informationen zur Installation von Zertifikaten für eine Offlineinstallation von Visual Studio
 ms.date: 08/30/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8fd5e55d4f92c38c58aa7207f7770e7123b2127d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948588"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 

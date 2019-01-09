@@ -3,7 +3,6 @@ title: Erstellen von C++-Erweiterungen für Python
 description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, CPython und PyBind11 einschließlich Informationen zum Debuggen im gemischten Modus.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947840"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 

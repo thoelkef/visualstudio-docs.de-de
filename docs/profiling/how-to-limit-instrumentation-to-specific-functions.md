@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ef6ef7a562f03f84184a86944a93f99c1d13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e145a50c3fdb643affb67989ae11346bf7e30f9
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592858"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen
 Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen einschränken, indem Sie die Optionen unter der Seite **Erweitert** der **Leistungssitzung** oder die Zielbinärdateieigenschaften einstellen.  
@@ -46,7 +46,7 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
     `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
-   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
+   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (siehe [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann **vsinstr /DumpFuncs** ein.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>So beschränken Sie die Instrumentierung auf eine bestimmte Funktion in einer Binärdatei  
   
@@ -65,9 +65,9 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
     `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
-   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
+   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (siehe [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann **vsinstr /DumpFuncs** ein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
  [Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)

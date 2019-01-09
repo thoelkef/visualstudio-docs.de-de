@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062815"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803506"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -196,7 +196,7 @@ Die Python-Unterstützung in Visual Studio bietet verschiedene Möglichkeiten, s
 
 Die Navigationsleiste wird am oberen Rand jedes Editor-Fensters angezeigt und enthält eine Liste mit Definitionen auf zwei Ebenen. Die linke Dropdownliste enthält Klassen- und Funktionsdefinitionen auf oberster Ebene in der aktuellen Datei. Die rechte Dropdownliste zeigt eine Liste der Definitionen innerhalb des links gezeigten Geltungsbereichs. Wenn Sie sich im Editor bewegen, werden die Listen aktualisiert und zeigen den aktuellen Kontext an. Sie können auch einen Eintrag aus diesen Listen auswählen, um direkt an die entsprechende Stelle zu springen.
 
-![Navigationsleiste] im Visual Studio-Editor(media/code-editing-navigation-bar.png)
+![Navigationsleiste im Visual Studio-Editor](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Um die Navigationsleiste auszublenden, wechseln Sie zu **Extras** > **Optionen** > **Text-Editor** > **Python** > **Allgemein**, und deaktivieren Sie die Option **Einstellungen** > **Navigationsleiste**.

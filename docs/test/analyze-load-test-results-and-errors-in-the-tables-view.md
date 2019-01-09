@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962635"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht des Auslastungstest-Analyzers
 
@@ -150,7 +149,7 @@ In der folgenden Tabelle sind die Tabellen aufgeführt, die für die Analyse von
 |-|-|-|
 |Typ|Der Typ des Fehlers. Beispielsweise HttpError.|Ja|
 |SubType|Der Untertyp des Fehlers. Beispielsweise LoadTestException.|Ja|
-|Count|Die Anzahl der Fehler dieses Typs, die während des Auslastungstests auftraten. Die Einträge in dieser Spalte werden als Links angezeigt. Sie können jeden Link wählen, um eine Liste der einzelnen Fehler anzuzeigen.|Ja|
+|Anzahl|Die Anzahl der Fehler dieses Typs, die während des Auslastungstests auftraten. Die Einträge in dieser Spalte werden als Links angezeigt. Sie können jeden Link wählen, um eine Liste der einzelnen Fehler anzuzeigen.|Ja|
 |Last Message|Eine Meldung mit einer Beschreibung des Fehlers. Zum Beispiel 404 - NotFound|Ja|
 
  Weitere Informationen finden Sie unter [Arbeiten mit Auslastungstesttabellen](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).

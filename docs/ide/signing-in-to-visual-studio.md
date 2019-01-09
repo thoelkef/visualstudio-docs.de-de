@@ -1,9 +1,10 @@
 ---
 title: Anmelden bei Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159853"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348388"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -27,7 +28,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Warum sollte ich mich in Visual Studio anmelden?
 
-Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von Visual Studio. Beispielsweise können Sie u.a. nach der Anmeldung Ihre Einstellungen auf mehreren Geräten synchronisieren, die Lizenz für eine Testversion verlängern und automatisch eine Verbindung mit einem Azure-Dienst herstellen.
+Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von Visual Studio. Beispielsweise können Sie u. a. nach der Anmeldung Ihre [Einstellungen auf mehreren Geräten synchronisieren](synchronized-settings-in-visual-studio.md), die Lizenz für eine Testversion verlängern und automatisch eine Verbindung mit einem Azure-Dienst herstellen.
 
 Im Folgenden werden alle Anmeldevorteile aufgeführt:
 

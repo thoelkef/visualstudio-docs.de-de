@@ -3,7 +3,6 @@ title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe einer Vorlage'
 description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe der integrierten Vorlage für eine einfache Flask-App.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964551"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
