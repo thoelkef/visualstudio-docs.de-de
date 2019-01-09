@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Öffnen der Meldungsansicht aus "Fenster Suchen" | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847092"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Gewusst wie: Öffnen der Meldungsansicht aus "Fenster suchen"
+# <a name="how-to-open-messages-view-from-find-window"></a>Vorgehensweise: Öffnen der Meldungsansicht aus dem Fenster „Suchen“
 Es können bequem mit der **Fenster Suchen** Dialogfeld Wählen Sie ein Zielfenster, und öffnen Sie eine Ansicht "Nachrichten" dieses Fensters.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Um Nachrichten Ansichtsfenster über das Dialogfeld "Fenster Suchen" zu öffnen.  
@@ -39,7 +37,7 @@ Es können bequem mit der **Fenster Suchen** Dialogfeld Wählen Sie ein Zielfens
 
 4. Klicken Sie unter **anzeigen**Option **Nachrichten**.  
 
-5. Drücken Sie **OK**.  
+5. Klicken Sie auf „OK“:  
 
     Ein leerer [Meldungsansicht](../debugger/messages-view.md) Fenster geöffnet wird, und ein **Nachrichten** Menü zur Spy++-Symbolleiste hinzugefügt wird.  
 

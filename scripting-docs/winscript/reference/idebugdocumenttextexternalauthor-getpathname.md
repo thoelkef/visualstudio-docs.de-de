@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs
+title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727740"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088841"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
-Gibt den vollständigen Pfad und Namen des Dokuments zurück.  
+Gibt den vollständigen Pfad und Dateiname den Namen des Dokuments zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,7 +42,7 @@ HRESULT GetPathName(
  [out] Eine Zeichenfolge mit den vollständigen Pfad und Namen.  
   
  `pfIsOriginalFile`  
- [out] Boolescher Wert, der angibt, ob der Pfad und Name bezieht sich auf das ursprüngliche Dokument.  
+ [out] Boolescher Wert, der angibt, ob der Pfad und Dateiname der Name bezieht sich auf das ursprüngliche Dokument.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -53,9 +53,9 @@ HRESULT GetPathName(
 |`E_FAIL`|Die Quelldatei kann nicht erstellt oder festgelegt werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den vollständigen Pfad und Namen des Dokuments.  
+ Diese Methode gibt den vollständigen Pfad und Dateiname den Namen des Dokuments.  
   
- Wenn `pfIsOriginalFile` ist "false", der Pfad und Dateiname in `pbstrLongName` finden Sie in einer neu erstellten temporären Datei.  
+ Wenn `pfIsOriginalFile` ist "false", den Pfad und Dateinamen in `pbstrLongName` finden Sie in eine neu erstellte temporäre Datei.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextExternalAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

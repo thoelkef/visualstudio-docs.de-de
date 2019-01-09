@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_packed | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d60509345e1a51df615c0d2aca90e32d055f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 215f02e57fb48ac58f29cf588f94843f2544bafc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910778"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp (UDT) verpackt wird.  
@@ -27,7 +25,7 @@ Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp (UDT) verpackt wir
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_packed (   
+HRESULT get_packed (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
-title: Dialogfeld "Assertionsfehler" | Microsoft Docs
-ms.custom: ''
+title: Assertionsfehler (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.assertions
@@ -22,17 +20,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14be93cb60be53d98f13852ac6fcc1fd725e2d0e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4d13d216a47d77d4948fe7ec28bffd0d750433a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824846"
 ---
-# <a name="assertion-failed-dialog-box"></a>Dialogfeld "Assertionsfehler"
+# <a name="assertion-failed-dialog-box"></a>Assertionsfehler (Dialogfeld)
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm true lauten muss. Hat diese Bedingung nicht den Wert "true", schlägt die Assertion fehl, die Programmausführung wird unterbrochen, und das Dialogfeld "Assertionsfehler" wird geöffnet.  
   
-|Klicken|Zum|  
+|Klicken|Beschreibung|  
 |-----------|--------|  
 |Wiederholen|Assertion debuggen oder Hilfe zu Assertionen aufrufen.|  
 |Ignorieren|Assertion ignorieren und die Programmausführung fortsetzen.|  

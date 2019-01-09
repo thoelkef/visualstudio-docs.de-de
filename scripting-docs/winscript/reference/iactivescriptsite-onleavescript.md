@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnLeaveScript | Microsoft Docs
+title: IActiveScriptSite::OnLeaveScript | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aba20c13dc5568165641c5c7b8e871e0b5e8f322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7d08d58fc788d2d10ed044808ca40a5f4ea929c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725170"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093157"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
-Benachrichtigt den Host, dass das Skriptmodul von Skriptcode ausführen zurückgegeben hat.  
+Informiert, dass die Skript-Engine, vom Ausführen von Skriptcode zurückgegeben hat des Hosts.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT OnLeaveScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnLeaveScript(void);
  Gibt bei Erfolg `S_OK` zurück.  
   
 ## <a name="remarks"></a>Hinweise  
- Das Skriptmodul muss diese Methode aufrufen, vor dem Zurückgeben der Steuerung an eine aufrufende Anwendung, die das Skriptmodul eingegeben haben. Beispielsweise, wenn das Skript ein Objekt, das ruft Sie ein Ereignis, das vom Skriptmodul verarbeitet löst, das Skriptmodul muss rufen die [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) -Methode vor dem Ausführen des Ereignisses und aufrufenmuss`IActiveScriptSite::OnLeaveScript`nach der Ausführung des Ereignisses vor der Rückgabe auf das Objekt, das das Ereignis ausgelöst hat. Aufrufe dieser Methode können geschachtelt werden. Jeder Aufruf `IActiveScriptSite::OnEnterScript` erfordert einen entsprechenden Aufruf dieser Methode.  
+ Die Skript-Engine muss diese Methode aufrufen, vor dem Zurückgeben der Steuerung an eine aufrufende Anwendung, die die Skript-Engine eingegeben. Z. B. wenn das Skript ein Objekt aufruft, dann ein Ereignis, das von der Skript-Engine verarbeitet löst, die Skript-Engine muss Aufrufen der [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md) Methode vor dem Ausführen des Ereignisses und aufrufenmuss`IActiveScriptSite::OnLeaveScript`nach dem Ausführen des Ereignisses vor der Rückgabe an das Objekt, das das Ereignis ausgelöst hat. Aufrufe dieser Methode können geschachtelt werden. Für jeden Aufruf `IActiveScriptSite::OnEnterScript` einen zugehörigen Aufruf an diese Methode erfordert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

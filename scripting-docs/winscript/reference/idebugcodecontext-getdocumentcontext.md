@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::GetDocumentContext | Microsoft Docs
+title: IDebugCodeContext::GetDocumentContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096537"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-Gibt den Dokumentenkontext dieses Codekontext zugeordnet.  
+Gibt den Dokumentenkontext mit diesem Codekontext verknüpft ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Textdokumente sollte die Zeichenposition Bereich den Text für die gesamte Anweisung enthalten sein. Dadurch kann der Debugger IDE zum Markieren der aktuellen quellanweisung.  
+ Für Textdokumente sollte der Zeichenposition Bereich den Text für die gesamte Anweisung enthalten. Dadurch wird den Debugger-IDE, um die aktuelle quellanweisung hervorzuheben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugCodeContext-Schnittstelle](../../winscript/reference/idebugcodecontext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetVariantForString | Microsoft Docs
+title: IDebugFormatter::GetVariantForString | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1ee40057043751b465c6575575f00dee848a0160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726820"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086618"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 Gibt eine Variante, die die angegebene Zeichenfolge enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetVariantForString(  
    LPCOLESTR  pwstrValue,  
    VARIANT*   pvar  
@@ -39,7 +39,7 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>Parameter  
  `pwstrValue`  
- [in] Zeichenfolge, die in einem VARIANT zu speichern.  
+ [in] Zeichenfolge, die in einer Variante gespeichert.  
   
  `pvar`  
  [out] VARIANT mit `pwstrValue`.  
@@ -52,7 +52,7 @@ HRESULT GetVariantForString(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt eine Variante, die mit der angegebenen Zeichenfolge zurück.  
+ Diese Methode gibt eine Variante, die die angegebene Zeichenfolge enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugFormatter-Schnittstelle](../../winscript/reference/idebugformatter-interface.md)

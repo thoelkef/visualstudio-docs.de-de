@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onRemoveText | Microsoft Docs
+title: IDebugDocumentTextEvents::onRemoveText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727590"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097200"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
-Gibt an, dass der Text aus dem Dokument entfernt wurde.  
+Gibt an, dass Text aus dem Dokument entfernt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,7 +39,7 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Zeichenposition des ersten Zeichens entfernt.  
+ [in] Die Position des ersten Zeichens entfernt.  
   
  `cNumToRemove`  
  [in] Die Anzahl der Zeichen, die entfernt werden soll.  
@@ -52,7 +52,7 @@ HRESULT onRemoveText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, dass der Text aus dem Dokument entfernt wurde.  
+ Diese Methode gibt an, dass Text aus dem Dokument entfernt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)   

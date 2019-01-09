@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Microsoft Docs
+title: IMachineDebugManagerEvents::onAddApplication | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729080"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086644"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Behandelt das Ereignis, wenn die Ausführung eine Anwendung hinzugefügt wird-Anwendungsliste.  
+Behandelt das Ereignis, wenn die Ausführung eine Anwendung hinzugefügt wird Liste der Anwendungen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,7 +39,7 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Parameter  
  `pda`  
- [in] Anwendung, die mit der Ausführung hinzugefügte Anwendungsliste.  
+ [in] Anwendung, die für die Ausführung hinzugefügten Liste der Anwendungen.  
   
  `dwAppCookie`  
  [in] Das Cookie bereitgestellt, wenn die Liste die Anwendung hinzugefügt wurde.  
@@ -52,7 +52,7 @@ HRESULT onAddApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, dass eine Anwendung, mit der Ausführung hinzugefügt wurde Anwendungsliste.  
+ Diese Methode gibt an, dass die Ausführung eine Anwendung hinzugefügt wurde Liste der Anwendungen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerEvents-Schnittstelle](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

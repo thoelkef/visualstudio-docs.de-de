@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsCurrentThread | Microsoft Docs
+title: IDebugApplicationThread::QueryIsCurrentThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,35 +18,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a291005a7c5b85230c55c736c68de82c0290d0e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6bbcccc6f3f87ced3b9a5af8fc5febeab020aea0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725620"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086462"
 ---
 # <a name="idebugapplicationthreadqueryiscurrentthread"></a>IDebugApplicationThread::QueryIsCurrentThread
 Bestimmt, ob der Thread den derzeit ausgeführten Thread ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT QueryIsCurrentThread();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`S_OK`|Die Methode war erfolgreich, und den derzeit ausgeführten Thread ist.|  
-|`S_FALSE`|Dies ist nicht der derzeit ausgeführten Thread.|  
+|`S_OK`|Die Methode erfolgreich war, und dies ist der aktuell ausgeführten Thread.|  
+|`S_FALSE`|Dies ist nicht der aktuell ausgeführten Thread.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bestimmt, ob der Thread den derzeit ausgeführten Thread ist.  
+ Diese Methode wird bestimmt, ob der Thread den derzeit ausgeführten Thread ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)

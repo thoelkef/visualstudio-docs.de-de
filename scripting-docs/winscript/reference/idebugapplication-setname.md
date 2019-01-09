@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SetName | Microsoft Docs
+title: 'Idebugapplication:: SetName | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad54c1c9ba950c7f1b98d393bec2bf65c385ec60
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 35f2014b25f752145766aaeb166b2ba1a766ca44
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094405"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Legt den Namen der Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR  pstrName  
 );  
@@ -48,7 +48,7 @@ HRESULT SetName(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- An diese Methode angegebene Name wird zurückgegeben, bei nachfolgenden Aufrufen der `IRemoteDebugApplication::GetName` Methode.  
+ Die Namen für diese Methode wird zurückgegeben, bei nachfolgenden Aufrufen der `IRemoteDebugApplication::GetName` Methode.  
   
  Diese Methode sollte aufgerufen werden, bevor die `IProcessDebugManager::AddApplication` Methode.  
   

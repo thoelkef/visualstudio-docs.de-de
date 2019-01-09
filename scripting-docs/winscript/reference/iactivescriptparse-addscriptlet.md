@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::AddScriptlet | Microsoft Docs
+title: 'IActiveScriptParse:: Addscriptlet | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e854ac71dc36263d805160f9336e049856076ce5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b928efe2e8ac7bc0fbdb7c2ae9978a4418cbee7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090960"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
-Das Skript wird ein Code-Scriptlet hinzugefügt. Diese Methode wird verwendet, in Umgebungen, in dem die persistente Status des Skripts wird mit dem Hostdokument ineinander greifen und der Host ist verantwortlich für das Skript wiederherstellen, Umweg über ein `IPersist*` Schnittstelle. Die primäre Beispiele sind HTML-Skriptsprachen, mit denen Skriptlets Code eingebettet im HTML-Dokument an systeminterne Ereignisse angefügt werden können (z. B. ONCLICK="button1.text='Exit" ").  
+Das Skript wird ein Code-Scriptlet hinzugefügt. Diese Methode wird verwendet, in Umgebungen, in dem die persistente Status jenes Skripts ist eng mit dem Hostdokument verknüpft, und der Host ist verantwortlich für das Wiederherstellen von Skript, Umweg über ein `IPersist*` Schnittstelle. Die primäre Beispiele sind HTML-Skriptsprachen, mit denen Skriptlets eingebettet, die im HTML-Dokument an systeminterne Ereignisse angefügt werden können (z. B. ONCLICK="button1.text='Exit" ").  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
     LPCOLESTR pstrDefaultName,       // address of default name of scriptlet  
     LPCOLESTR pstrCode,              // address of scriptlet text  
@@ -48,42 +48,42 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parameter  
  `pstrDefaultName`  
- [in] Adresse des einen Standardnamen, dem Scriptlet zugeordnet werden soll. Wenn das Scriptlet keine Namensinformationen (wie im obigen ONCLICK-Beispiel) enthält, wird dieser Name zum Identifizieren des Scriptlets. Wenn dieser Parameter ist `NULL`, das Skriptmodul stellt einen eindeutigen Namen an, bei Bedarf.  
+ [in] Adresse des einen Standardnamen, dem Scriptlet zugeordnet werden soll. Enthält das Scriptlet keine Namensinformationen (wie im obigen ONCLICK-Beispiel), wird dieser Name zum Identifizieren des Scriptlets verwendet werden. Wenn dieser Parameter ist `NULL`, die Skript-Engine stellt einen eindeutigen Namen, falls erforderlich.  
   
  `pstrCode`  
  [in] Die Adresse des Scriptlet-Texts hinzufügen. Die Darstellung dieser Zeichenfolge hängt von der Skriptsprache ab.  
   
  `pstrItemName`  
- [in] Die Adresse eines Puffers, der der Elementname diese Scriptlet zugeordnet enthält. Dieser Parameter, zusätzlich zu den `pstrSubItemName`, identifiziert das Objekt, das für die dem Scriptlet ein Ereignishandler ist.  
+ [in] Die Adresse eines Puffers, der den Namen des diesem Scriptlet zugeordnet enthält. Dieser Parameter enthält, zusätzlich zu den `pstrSubItemName`, identifiziert das Objekt, das für die das Scriptlet ein Ereignishandler ist.  
   
  `pstrSubItemName`  
- [in] Adresse eines Puffers, der den Namen der enthält einem `subobject` der den Namen des Elements mit dem dieser Scriptlet zugeordnet ist; dieser Name muss in der Typinformationen für das benannte Element gefunden werden. Dieser Parameter ist NULL, wenn das Scriptlet den Namen des Elements statt zugeordnet werden eine `subitem`. Dieser Parameter, zusätzlich zu den `pstrItemName`, identifiziert das Objekt für die dem Scriptlet ein Ereignishandler ist.  
+ [in] Adresse eines Puffers, der den Namen des enthält eine `subobject` des benannten Elements mit dem diese Scriptlet zugeordnet ist; dieser Name muss in den Typinformationen für das benannte Element vorhanden sein. Dieser Parameter NULL ist, ist das Scriptlet, den Namen des Elements nicht zugeordnet werden soll eine `subitem`. Dieser Parameter enthält, zusätzlich zu den `pstrItemName`, identifiziert das bestimmte Objekt, das für die das Scriptlet ein Ereignishandler ist.  
   
  `pstrEventName`  
- [in] Die Adresse eines Puffers, der den Namen des Ereignisses enthält, für die dem Scriptlet ein Ereignishandler ist.  
+ [in] Die Adresse eines Puffers, der den Namen des Ereignisses enthält, für die das Scriptlet ein Ereignishandler ist.  
   
  `pstrDelimiter`  
- [in] Adresse des end-of-scriptlet-Trennzeichens. Wenn die `pstrCode` Parameter aus einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, z. B. zwei einfache von Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass dem Skriptmodul in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) das Skriptmodul diese Informationen verwendet, hängt vom Skriptmodul ab. Legen Sie diesen Parameter auf NULL, wenn der Host ein Trennzeichen nicht verwendet haben, um das Ende des Scriptlets zu markieren.  
+ [in] Adresse des end-of-scriptlet-Trennzeichens. Wenn die `pstrCode` Parameter aus einem Stream des Texts analysiert wird, verwendet der Host in der Regel einem Trennzeichen, wie z. B. zwei einfache von Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass der Skript-Engine in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) die Skript-Engine diese Informationen verwendet, hängt von der Skript-Engine ab. Legen Sie diesen Parameter auf NULL, wenn der Host ein einzeln verwendetes Trennzeichen nicht verwendet haben, um das Ende des Scriptlets zu markieren.  
   
  `dwSourceContextCookie`  
- [in] Anwendungsdefinierten Wert, der für Debugzwecke verwendet wird.  
+ [in] Anwendung definierter Wert, der zum Debuggen verwendet wird.  
   
  `ulStartingLineNumber`  
  [in] Nullbasierter Wert, der angibt, auf welcher Zeile die Analyse beginnt.  
   
  `dwFlags`  
- [in] Flags, die dem Scriptlet zugeordnet sind. Eine Kombination der folgenden Werte ist möglich:  
+ [in] Flags, die dem Scriptlet zugeordnet sind. Eine Kombination der folgenden Werte sind möglich:  
   
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |SCRIPTTEXT_ISVISIBLE|Gibt an, dass der Skripttext sichtbar (und daher durch Namen aufgerufen werden kann) als globale Methode im Namespace des Skripts sein soll.|  
-|SCRIPTTEXT_ISPERSISTENT|Gibt an, dass der Code, der während dieses Aufrufs hinzugefügt wird, gespeichert werden soll, wenn das Skriptmodul (beispielsweise durch einen Aufruf von `IPersist*::Save`) gespeichert wird oder wenn das Skriptmodul durch einen Übergang zurück zum initialisierten Zustand zurückgesetzt wird. Weitere Informationen zu diesem Zustand finden Sie in der Zustände der Skript-Modul.|  
+|SCRIPTTEXT_ISPERSISTENT|Gibt an, dass der Code, der während dieses Aufrufs hinzugefügt wird, gespeichert werden soll, wenn die Skript-Engine (beispielsweise durch einen Aufruf von `IPersist*::Save`) gespeichert wird oder wenn die Skript-Engine durch einen Übergang zurück zum initialisierten Zustand zurückgesetzt wird. Weitere Informationen zu diesem Zustand finden Sie in der Skript-Engine-Zuständen.|  
   
  `pbstrName` ,  
- [out] Tatsächliche Name zum Identifizieren des Scriptlets verwendet. Wird verwendet, um in Prioritätsreihenfolge sein: ein Name explizit angegeben im Scriptlet-Texts, der Standardnamen in bereitgestellten `pstrDefaultName`, oder einen eindeutigen Namen, die vom Skriptmodul synthetisiert.  
+ [out] Tatsächliche Name zum Identifizieren des Scriptlets verwendet. In der Reihenfolge ihrer Priorität werden: ein Name explizit angegeben im Scriptlet-Texts, der Standardnamen in bereitgestellten `pstrDefaultName`, oder einen eindeutigen Namen, die von der Skript-Engine synthetisiert.  
   
  `pexcepinfo` ,  
- [out] Die Adresse einer Struktur mit Ausnahmeinformationen. Diese Struktur sollte gefüllt werden, wenn DISP_E_EXCEPTION zurückgegeben wird.  
+ [out] Die Adresse einer Struktur mit Ausnahmeinformationen. Diese Struktur muss ausgefüllt werden, wenn DISP_E_EXCEPTION zurückgegeben wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -91,12 +91,12 @@ HRESULT AddScriptlet(
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
-|`DISP_E_EXCEPTION`|Der Analyse des Scriptlets ist eine Ausnahme aufgetreten. Der `pexcepinfo`-Parameter enthält Informationen zur Ausnahme.|  
+|`DISP_E_EXCEPTION`|Bei der Analyse des Scriptlets ist eine Ausnahme aufgetreten. Der `pexcepinfo`-Parameter enthält Informationen zur Ausnahme.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_NOTIMPL`|Diese Methode wird nicht unterstützt. das Skriptmodul unterstützt keine Skriptlets Auffangen von Ereignissen hinzufügen.|  
+|`E_NOTIMPL`|Diese Methode wird nicht unterstützt. die Skript-Engine unterstützt nicht das Auffangen von Ereignissen Skriptlets hinzufügen.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert) und konnte daher nicht.|  
-|`OLESCRIPT_E_INVALIDNAME`|Der Standardname angegeben ist in dieser Skriptsprache ungültig.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert) und aus diesem Grund fehlgeschlagen ist.|  
+|`OLESCRIPT_E_INVALIDNAME`|Der Standardname angegeben ist ungültig in diese Skriptsprache.|  
 |`OLESCRIPT_E_SYNTAX`|Ein nicht spezifizierter Syntaxfehler trat im Scriptlet auf.|  
   
 ## <a name="see-also"></a>Siehe auch  

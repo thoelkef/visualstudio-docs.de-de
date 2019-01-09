@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack::onComplete | Microsoft Docs
+title: IDebugExpressionCallBack::onComplete | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa3d7d6173161407619174607eae221e4513cbcd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1470d71dcc5e54f1bd38c740993642d2798bff87
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727550"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096979"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
-Gibt an, dass die Auswertung von Ausdrücken abgeschlossen ist.  
+Gibt an, dass die Auswertung des Ausdrucks abgeschlossen ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,7 +45,7 @@ HRESULT onComplete();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, wenn die Auswertung von Ausdrücken abgeschlossen ist. Die `IDebugExpression::GetResultAsString` Methode kann von innerhalb dieser Ereignishandler aufgerufen werden.  
+ Diese Methode wird aufgerufen, wenn die Auswertung des Ausdrucks abgeschlossen ist. Die `IDebugExpression::GetResultAsString` Methode innerhalb dieser Ereignishandler aufgerufen werden kann.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionCallBack-Schnittstelle](../../winscript/reference/idebugexpressioncallback-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
+title: Definescriptblock | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727000"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087996"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Gibt an für die Hilfe, ein bestimmter Bereich von Zeichen ein Skriptblock, der vom angegebenen Skript-Modul übernommen wird.  
+Gibt an, das Hilfsprogramm, ein bestimmter Bereich von Zeichen einen Skriptblock, der von der angegebenen Skript-Engine verarbeitet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -48,7 +48,7 @@ HRESULT DefineScriptBlock(
  [in] Anzahl der Zeichen im Skriptblock.  
   
  `pas`  
- [in] Das Skriptmodul für dieses Skriptblocks.  
+ [in] Die Skript-Engine für die dieser Skriptblock.  
   
  `fScriptlet`  
  [in] Flag, die angibt, ob der Skriptblock Scriptlet ist.  
@@ -64,13 +64,13 @@ HRESULT DefineScriptBlock(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Smarthost kann diese Methode verwenden, wenn die Dokumente eingebettete Skriptblöcke enthalten. Ein Sprachmodul kann diese Methode verwenden, wenn der Code eingebettete Skripts für andere Sprachen enthält.  
+ Ein Smarthost kann diese Methode verwenden, wenn seine Dokumente eingebetteter Skriptblöcke enthalten. Eine Sprach-Engine kann diese Methode verwenden, wenn der Code eingebettete Skripts für andere Sprachen enthält.  
   
- Das Skriptmodul ist verantwortlich für alle Syntax Färbung und Code Kontext Suchvorgänge im Skriptblock.  
+ Die Skript-Engine ist verantwortlich für alle Syntax Syntaxfarben und Kontext Suchvorgänge im Skriptblock.  
   
- Die `DefineScriptBlock` Methode sollte aufgerufen werden, nachdem der Text hinzugefügt wurde (z. B. die `IDebugDocumentHelper::AddDBCSText` Methode), aber bevor Sie das Skript Anweisungsblock analysiert wurde (z. B. die `IActiveScriptParse ::ParseScriptText` Methode).  
+ Die `DefineScriptBlock` -Methode aufgerufen werden soll, nachdem der Text hinzugefügt wurde (z. B. die `IDebugDocumentHelper::AddDBCSText` Methode), aber bevor Sie das Skript Block analysiert wurde (z. B. die `IActiveScriptParse ::ParseScriptText` Methode).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

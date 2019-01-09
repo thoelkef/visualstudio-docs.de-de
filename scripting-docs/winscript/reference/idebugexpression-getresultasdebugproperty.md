@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Microsoft Docs
+title: IDebugExpression::GetResultAsDebugProperty | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727110"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093105"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Gibt das Ergebnis der Auswertung von Ausdrücken als eine Debugeigenschaft und der Rückgabewert des Vorgangs zurück.  
+Gibt das Ergebnis der Auswertung des Ausdrucks als eine Debugeigenschaft und der Rückgabewert des Vorgangs zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -53,7 +53,7 @@ HRESULT GetResultAsDebugProperty(
 |`E_PENDING`|Der Vorgang ist noch ausstehend.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt das Ergebnis der Auswertung von Ausdrücken als ein `IDebugProperty` und der Vorgang `HRESULT`.  
+ Diese Methode gibt das Ergebnis der Auswertung des Ausdrucks als eine `IDebugProperty` und des Vorgangs `HRESULT`.  
   
  Diese Methode gibt `S_OK` und `phrResult` gibt `E_ABORT` Wenn `Abort` bricht den Vorgang ab.  
   

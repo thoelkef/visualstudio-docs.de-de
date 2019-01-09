@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft Docs
+title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a805d810c928e8e9a1b6f4e569f8eaa89f63d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7e4f3e7cffe7c127b7ad4fdde47e58e6bc2a31c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728690"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091272"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Listet die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausgeführt wird.  
+Listet die globale ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT EnumGlobalExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parameter  
  `ppedec`  
- [out] Enumerator, der die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen aufgelistet.  
+ [out] Ein Enumerator, der enthält die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT EnumGlobalExpressionContexts(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode listet die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausgeführt wird.  
+ Diese Methode listet die globalen anwendungsausdrücken Kontexten für alle Sprachen, die in dieser Anwendung ausführen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

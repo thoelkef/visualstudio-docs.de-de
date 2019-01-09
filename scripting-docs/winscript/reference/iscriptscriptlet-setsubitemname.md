@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Microsoft Docs
+title: IScriptScriptlet::SetSubItemName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733870"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097720"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Legt den letzten Bezeichner in den vollqualifizierten Namen des Hosts für eine Scriptlet-Objekt fest.  
+Legt den letzten Bezeichner in den vollqualifizierten Namen des Hosts des Scriptlet-Objekt fest.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,9 +38,9 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- Wenn der Host des vollqualifizierten hat Scriptlet Name mehr als eine Ebene `psz` Pufferadresse des Bezeichners auf der zweiten Ebene ist.  
+ Scriptlet-Name verfügt über mehr als einer Ebene, wenn der Host vollständig qualifizierte des `psz` ist die Adresse des Datenpuffers des Bezeichners auf der zweiten Ebene.  
   
- Der Host des vollqualifizierten Scriptlet-Name hat eine Ebene `psz` Pufferadresse des Bezeichners auf der ersten Ebene ist.  
+ Scriptlet-Name verfügt über eine Ebene auf, wenn der Host vollständig qualifizierte des `psz` ist die Adresse des Datenpuffers des Bezeichners auf der ersten Ebene.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

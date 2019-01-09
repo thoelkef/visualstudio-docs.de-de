@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_objectFileName | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_objectFileName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683e789e1edbe9f256847ad1e7d5fb7d13616608
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 928bd2b10c95a840323ba87fd9c5347520cf03c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927258"
 ---
 # <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
 Ruft ab, der Name der Objektdatei.  
@@ -34,7 +32,7 @@ HRESULT get_objectFilename(
  [out] Ein Zeiger auf eine `BSTR` , enthält der Name der Objektdatei.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
