@@ -1,8 +1,6 @@
 ---
 title: RemoveDuplicates-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/01/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831874"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates-Aufgabe
 Entfernt doppelte Elemente aus der angegebenen Elementauflistung  
@@ -33,7 +31,7 @@ Entfernt doppelte Elemente aus der angegebenen Elementauflistung
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `RemoveDuplicates` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Filtered`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält eine Elementauflistung, aus der alle doppelten Elemente entfernt wurden Die Eingabereihenfolge der Elemente wird beibehalten, wobei die erste Instanz jedes doppelten Elements beibehalten wird.|  
 |`Inputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Elementauflistung, aus der doppelte Elemente entfernt werden sollen|  

@@ -1,8 +1,6 @@
 ---
 title: Elementfunktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dd03080a9dda58532d656161c3c44ae4943251
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5d731cf14fca91920d5da6b6232f1a9bd4feb0b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821286"
 ---
 # <a name="item-functions"></a>Elementfunktionen
 Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Informationen zu den Elementen des Projekts zu erhalten. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.  
@@ -53,7 +51,7 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
 ## <a name="intrinsic-item-functions"></a>Intrinsische Elementfunktionen  
  In der unten stehenden Tabelle werden die systeminternen Funktionen aufgelistet, die für Elemente zur Verfügung stehen.  
   
-|Funktion|Beispiel|Beschreibung |  
+|Funktion|Beispiel|Beschreibung|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Gibt die Anzahl der Elemente zurück|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Gibt das entsprechende `Path.DirectoryName`-Objekt für jedes Element zurück|  

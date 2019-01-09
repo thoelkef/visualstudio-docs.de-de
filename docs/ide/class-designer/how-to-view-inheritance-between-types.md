@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)'
+title: 'Vorgehensweise: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000493"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684482"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen im Klassen-Designer
 
-Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen finden Sie unter [How to: Create Inheritance Between Types (Class Designer) (Vorgehensweise: Erstellen einer Vererbungsbeziehung zwischen Typen (Klassen-Designer))](how-to-create-inheritance-between-types.md).
+Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen (sofern nicht vorhanden) finden Sie unter [How to: Create Inheritance Between Types (Vorgehensweise: Erstellen einer Vererbung zwischen Typen)](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>So finden Sie den Basistyp
 
@@ -49,5 +49,5 @@ Sie können auch mit der rechten Maustaste auf den Typ klicken, für den Sie die
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)
-- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)
+- [Vorgehensweise: How to: Create associations between types (Vorgehensweise: Erstellen von Zuordnungen zwischen Typen)](how-to-create-associations-between-types.md)
+- [Anzeigen von Typen und Beziehungen](designing-and-viewing-classes-and-types.md)
