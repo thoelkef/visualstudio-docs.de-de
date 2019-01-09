@@ -3,7 +3,6 @@ title: Einführung in Live Unit Testing
 description: Erfahren Sie mehr über die Vorteile von Live Unit Testing und dessen Anwendung bei Komponententests für Ihre Projekte.
 ms.date: 2017-09-11
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ad8526f8e44165dc92a914ddf15765065f42569
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: eafc069c48c536bb58d38888485acf4f44d710d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935020"
 ---
 # <a name="introducing-live-unit-testing"></a>Einführung in Live Unit Testing
 
@@ -44,4 +43,3 @@ Hier erfahren Sie mehr über Live Unit Testing:
 ## <a name="related-resources"></a>Weitere Informationen
 - [Testtools für Code](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Ausführen von Komponententests für Code](unit-test-your-code.md)
-
