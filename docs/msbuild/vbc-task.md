@@ -1,8 +1,6 @@
 ---
 title: Vbc-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/12/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2ab82b16d3cdaf493afc15f506dc237e6a91d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956152"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -34,7 +32,7 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
  In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.  
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |------------------------------| - |
 | `AdditionalLibPaths` | Optionaler `String[]` -Parameter.<br /><br /> Gibt weitere Ordner an, in denen nach im Verweisattribut angegebenen Assemblys gesucht werden soll |
 | `AddModules` | Optionaler `String[]` -Parameter.<br /><br /> Bewirkt, dass der Compiler dem Projekt, das Sie aktuell kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Dieser Parameter entspricht der Option [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) des Compilers *vbc.exe*. |
@@ -71,7 +69,7 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `OutputAssembly` | Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Namen der Ausgabedatei an. Dieser Parameter entspricht der Option [-out](/dotnet/visual-basic/reference/command-line-compiler/out) des Compilers *vbc.exe*. |
 | `Platform` | Optionaler `String` -Parameter.<br /><br /> Gibt die Prozessorplattform an, die das Ziel der Ausgabedatei darstellen soll. Dieser Parameter kann den Wert `x86`, `x64`, `Itanium` oder `anycpu` aufweisen. Der Standardwert ist `anycpu`. Dieser Parameter entspricht der Option [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) des Compilers *vbc.exe*. |
 | `References` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Dieser Parameter entspricht der Option [-reference](/dotnet/visual-basic/reference/command-line-compiler/reference) des Compilers *vbc.exe*. |
-| `RemoveIntegerChecks` | Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Fehlerüberprüfungen auf Ganzzahlüberlauf deaktiviert. Der Standardwert ist `false`. Dieser Parameter entspricht der Option [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) des Compilers *vbc.exe*. |
+| `RemoveIntegerChecks` | Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Fehlerüberprüfungen auf Ganzzahlüberlauf deaktiviert. Der Standardwert ist `false`sein. Dieser Parameter entspricht der Option [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) des Compilers *vbc.exe*. |
 | `Resources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bettet eine .NET Framework-Ressource in die Ausgabedatei ein. Dieser Parameter entspricht der Option [-resource](/dotnet/visual-basic/reference/command-line-compiler/resource) des Compilers *vbc.exe*. |
 | `ResponseFiles` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Dieser Parameter entspricht der Option [@ (Antwortdatei festlegen)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) des Compilers *vbc.exe*. |
 | `RootNamespace` | Optionaler `String` -Parameter.<br /><br /> Gibt den Stammnamespace für alle Typdeklarationen an. Dieser Parameter entspricht der Option [-rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) des Compilers *vbc.exe*. |

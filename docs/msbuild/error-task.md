@@ -1,8 +1,6 @@
 ---
 title: Error-Aufgabe| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9568b27b65045c1b3a4495adff83f0b972e342f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e55fe148ccb973a6fdcbf0722d354d91cc1816
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833017"
 ---
 # <a name="error-task"></a>Fehleraufgabe
 Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.  
@@ -34,7 +32,7 @@ Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewer
  In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.  
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |---------------| - |
 | `Code` | Optionaler `String` -Parameter.<br /><br /> Der dem Fehler zuzuordnende Fehlercode. |
 | `File` | Optionaler `String` -Parameter.<br /><br /> Der Name der Datei, die den Fehler enthält. Wenn kein Dateiname angegeben wird, wird die Datei verwendet, die die Error-Aufgabe enthält. |

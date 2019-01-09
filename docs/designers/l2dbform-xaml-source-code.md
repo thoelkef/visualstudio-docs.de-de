@@ -2,7 +2,6 @@
 title: L2DBForm.xaml-Quellcode
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ddeb3bb9a813cf2faa7a1f77364dc792792f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 795dd28c6f5e7388c243ebec4d2a4efdb9f39665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960549"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml-Quellcode
 
@@ -31,7 +30,7 @@ Jeder Abschnitt enthält eine Bezeichnung, mit dem er identifiziert wird. In den
 
 ## <a name="window-resource-section"></a>Abschnitt „Window.Resources“
 
-Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.
+Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.
 
 Das `<ObjectDataProvider>` -Tag, das sich über die Zeilen 11 bis 25 erstreckt, deklariert einen <xref:System.Windows.Data.ObjectDataProvider>mit dem Namen `LoadedBooks`, der als Quelle ein <xref:System.Xml.Linq.XElement> verwendet. Dieses <xref:System.Xml.Linq.XElement>-Element wird initialisiert, indem ein eingebettetes XML-Dokument (ein `CDATA`-Element) analysiert wird. Beachten Sie, dass Leerzeichen beim Deklarieren des eingebetteten XML-Dokuments und auch beim Analysieren des Dokuments beibehalten werden. Dies ist der Fall, weil das <xref:System.Windows.Controls.TextBlock>-Steuerelement, das zum Anzeigen des unformatierten XML-Codes verwendet wird, keine speziellen XML-Formatierungsfunktionen besitzt.
 
@@ -87,7 +86,7 @@ Im XAML-Code des letzten Benutzeroberflächenabschnitts (**Add New Book** (Neues
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung 
+### <a name="description"></a>Beschreibung
 
 > [!NOTE]
 > Wir empfehlen, den folgenden Code in einen Code-Editor, z. B. den C#-Quellcode-Editor in Visual Studio, zu kopieren, weil dort die Zeilennummern einfacher zu verfolgen sind.

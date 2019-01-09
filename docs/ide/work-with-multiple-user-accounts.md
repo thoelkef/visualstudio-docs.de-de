@@ -1,81 +1,119 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33f88444d7bbdc0b0fe85bfa5efbdbbd794fa3e4
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e623734cbe2aedee962e9f1b139ac1d50d473072
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349389"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348246"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
-Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, können Sie all diese Konten zu Visual Studio hinzufügen, sodass Sie über jedes Konto auf die Ressourcen zugreifen können, ohne sich separat anmelden zu müssen. Aktuell unterstützen Azure, Application Insights, Team Foundation Server und Office 365-Dienste die optimierte Anmeldung. Zusätzliche Dienste werden im Laufe der Zeit verfügbar sein.
+Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, können Sie all diese Konten zu Visual Studio hinzufügen, sodass Sie über jedes Konto auf die Ressourcen zugreifen können, ohne sich separat anmelden zu müssen. Für Azure, Application Insights, Azure DevOps und Office 365 wird die optimierte Anmeldung unterstützt.
 
-Wenn Sie auf einem Computer mehrere Benutzerkonten hinzufügen, „wandert“ diese Gruppe von Konten mit Ihnen mit, wenn Sie sich auf einem anderen Computer bei Visual Studio anmelden. Zu beachten ist aber, dass zwar die Namen der Konten übernommen werden, die Anmeldeinformationen jedoch nicht. Aus diesem Grund werden Sie aufgefordert, die Anmeldeinformationen für die anderen Konten einzugeben, wenn Sie zum ersten Mal versuchen, die dazugehörigen Ressourcen auf dem neuen Computer zu verwenden.
+Wenn Sie auf einem Computer mehrere Benutzerkonten hinzufügen, sind diese Konten auch dann verfügbar, wenn Sie sich auf einem anderen Computer bei Visual Studio anmelden.
 
-Diese exemplarische Vorgehensweise zeigt, wie Sie mehrere Konten zu Visual Studio hinzufügen und wie Sie feststellen, ob die über diese Konten zugänglichen Ressourcen an Stellen wie dem Dialogfeld **Verbundenen Dienst hinzufügen** , im **Server-Explorer**und im **Team Explorer**dargestellt werden.
+> [!NOTE]
+> Es werden zwar die Namen der Konten übernommen, jedoch nicht die Anmeldeinformationen. Sie werden aufgefordert, die Anmeldeinformationen für die anderen Konten einzugeben, wenn Sie zum ersten Mal versuchen, die dazugehörigen Ressourcen auf einem neuen Computer zu verwenden.
+
+In diesem Artikel erfahren Sie, wie Sie mehrere Konten zu Visual Studio hinzufügen können. Außerdem wird erläutert, wie Sie die über diese Konten zugänglichen Ressourcen an Stellen wie dem Dialogfeld **Verbundenen Dienst hinzufügen**, im **Server-Explorer** und im **Team Explorer** abrufen können.
 
 ## <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
-- Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visual Studio an. Ihr Benutzername sollte oben im Fenster angezeigt werden, etwa folgendermaßen:
+Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visual Studio an. Ihr Benutzername sollte oben im Fenster angezeigt werden, etwa folgendermaßen:
 
-     ![Aktuell angemeldeter Benutzer](../ide/media/vs2015_username.png)
+![Aktuell angemeldeter Benutzer](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Zugreifen auf Ihr Azure-Konto in Server-Explorer
 
-Drücken Sie **Strg**+**Alt**+**S**, um **Server-Explorer** zu öffnen. Wählen Sie das **Azure**-Symbol aus. Wenn es aufgeklappt wird, sehen Sie die verfügbaren Ressourcen in dem Azure-Konto, das mit der ID verknüpft ist, die Sie zum Anmelden bei Visual Studio verwendet haben. Es sollte etwa Folgendes angezeigt werden (davon abgesehen, dass Sie Ihre eigenen Ressourcen sehen).
+Drücken Sie **Strg**+**Alt**+**S**, um **Server-Explorer** zu öffnen. Erweitern Sie den Knoten **Azure**. Dann sollten Ihnen die in dem Azure-Konto verfügbaren Ressourcen angezeigt werden, die dem Konto zugeordnet sind, das Sie zur Anmeldung in Visual Studio verwendet haben. Dies sollte in etwa wie folgt aussehen:
 
-![Server-Explorer zeigt den erweiterten "Azure Tools"-Knoten](../ide/media/vs2015_serverexplorer.png)
+![Server-Explorer mit erweitertem Azure-Knoten](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
-Wenn Sie Visual Studio auf einem bestimmten Gerät zum ersten Mal verwenden, zeigt das Dialogfeld nur die Abonnements an, die unter der ID registriert sind, mit der Sie sich bei der IDE angemeldet haben. Auf die Ressourcen Ihrer anderen Konten können Sie direkt über den **Server-Explorer** zugreifen, indem Sie mit der rechten Maustaste auf den **Azure**-Knoten klicken, **Abonnements verwalten und filtern** auswählen und Ihre Konten über das Kontoauswahl-Steuerelement hinzufügen. Um ein anderes Konto auszuwählen, klicken Sie auf den Pfeil nach unten, und wählen Sie das gewünschte Konto aus der Liste aus. Nach dem Auswählen des Kontos können Sie auswählen, welche Abonnements dieses Kontos im **Server-Explorer** angezeigt werden sollen.
+Wenn Sie Visual Studio auf einem bestimmten Gerät zum ersten Mal verwenden, zeigt das Dialogfeld nur die Abonnements an, die unter dem Konto registriert sind, mit dem Sie sich angemeldet haben. Auf die Ressourcen Ihrer anderen Konten können Sie direkt über den **Server-Explorer** zugreifen, indem Sie mit der rechten Maustaste auf den **Azure**-Knoten klicken, **Manage and Filter Subscriptions** (Abonnements verwalten und filtern) auswählen und Ihre Konten über das Steuerelement zur Kontoauswahl hinzufügen. Um ein anderes Konto auszuwählen, klicken Sie auf den Pfeil nach unten, und wählen Sie das gewünschte Konto aus der Liste aus. Wenn Sie das Konto ausgewählt haben, können Sie bearbeiten, welche Abonnements dieses Kontos im **Server-Explorer** angezeigt werden sollen.
 
 ![Dialogfeld "Azure-Abonnements verwalten"](../ide/media/vs2015_manage_subs.png)
 
-Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Ressourcen für diese(s) Abonnement(s) angezeigt.
+Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Ressourcen für dieses Abonnement angezeigt.
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Zugreifen auf Ihr Azure-Konto über das Dialogfeld "Verbundenen Dienst hinzufügen"
 
-1. Erstellen Sie ein UWP-App-Projekt in C#.
+1. Wählen Sie ein bereits vorhandenes Projekt aus, oder erstellen Sie ein neues.
 
-1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten und dann **Hinzufügen** > **Verbundener Dienst** aus. Der Assistent **Verbundenen Dienst hinzufügen** zeigt die Liste der Dienste in dem Azure-Konto an, das mit Ihrer Visual Studio-Anmelde-ID verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem bestimmten Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus, und klicken Sie anschließend mit der rechten Maustaste auf **Hinzufügen** > **Verbundener Dienst**.
 
-    > [!WARNING]
-    > Wenn Sie auf einem bestimmten Computer zum ersten Mal eine UWP-App in Visual Studio erstellen, werden Sie aufgefordert, den Entwicklungsmodus für Ihr Gerät zu aktivieren. Gehen Sie dazu auf Ihrem Computer zu **Einstellungen** > **Updates und Sicherheit** > **Für Entwickler**. Weitere Informationen finden Sie unter [Aktivieren Ihres Geräts für die Entwicklung](/windows/uwp/get-started/enable-your-device-for-development).
+   Dann wird im Assistenten **Verbundenen Dienst hinzufügen** die Liste der Dienste in dem Azure-Konto angezeigt, das mit Ihrem Visual Studio-Personalisierungskonto verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem anderen Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.
 
-### <a name="access_azure"></a> Zugreifen auf Azure Active Directory in einem Webprojekt
+### <a name="access-azure-active-directory-in-a-web-project"></a>Zugreifen auf Azure Active Directory in einem Webprojekt
 
-Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Um diesen Vorgang zu sehen, erstellen Sie eine Webanwendung (**Datei** > **Neues Projekt** > **C#** > **Cloud** > **ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
+Azure Active Directory (Azure AD) unterstützt das einmalige Anmelden für Endbenutzer in MVC-Webanwendungen in ASP.NET oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten. Benutzer, die Zugriff auf Ihre Azure AD-Domäne haben, können ihre bereits vorhandenen Azure AD-Konten verwenden, um eine Verbindung mit Ihren Webanwendung herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden.
+
+Um diesen Vorgang zu sehen, erstellen Sie eine Webanwendung (**Datei** > **Neues Projekt** > **C#** > **Cloud** > **ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
 
 ![Dialogfeld "Authentifizierung ändern" für ASP.NET](../ide/media/vs2015_change_authentication.png)
 
-Weitere Informationen zu den verschiedenen Arten der Authentifizierung in ASP.NET finden Sie unter [Erstellen von ASP.NET-Webprojekten in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (die Informationen zur Authentifizierung gelten auch noch für die aktuellen Versionen von Visual Studio).
+Weitere Informationen über die verschiedenen Authentifizierungsarten in ASP.NET finden Sie unter [Create ASP.NET web projects in Visual Studio (Erstellen von ASP.NET-Webprojekten in Visual Studio)](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
 
-### <a name="access-your-team-foundation-server-tfs-organization"></a>Zugreifen auf Ihre Team Foundation Server-Organisation (TFS)
+### <a name="access-your-azure-devops-organization"></a>Zugreifen auf Ihre Azure DevOps-Organisation
 
-Wählen Sie im Hauptmenü **Team** > **Verbindung mit Team Foundation Server herstellen** aus, um das Fenster **Team Explorer** aufzurufen. Klicken Sie auf **Projekte auswählen**. Im Listenfeld unter **Team Foundation Server-Computer auswählen** sehen Sie die URL für Ihre TFS-Organisation. Nach Auswahl der URL werden Sie angemeldet, ohne Ihre Anmeldeinformationen erneut eingeben zu müssen.
+Klicken Sie im Hauptmenü auf **Team** > **Verbindungen verwalten**, um das Fenster **Team Explorer - Connect** (Team Explorer – Verbinden) zu öffnen. Klicken Sie auf **Verbindungen verwalten** > **Verbindung mit einem Projekt herstellen**. Wählen Sie im Dialogfeld **Verbindung mit einem Projekt herstellen** ein Projekt aus der Liste aus, oder klicken Sie auf **TFS-Server hinzufügen**, und geben Sie die URL zu Ihrem Server ein. Wenn Sie eine URL auswählen, werden Sie angemeldet, ohne Ihre Anmeldeinformationen erneut eingeben zu müssen.
 
-## <a name="add-a-second-user-account-to-visual-studio"></a>Hinzufügen eines zweiten Benutzerkontos zu Visual Studio
+Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Projekten im Team Explorer](connect-team-project.md).
 
-Klicken Sie auf den Abwärtspfeil neben Ihrem Benutzernamen oben in Visual Studio. Wählen Sie dann das Menüelement **Kontoeinstellungen** aus. Im Dialogfeld **Konto-Manager** wird das Konto angezeigt, mit dem Sie sich angemeldet haben. Wählen Sie den Link **Konto hinzufügen** unten im Dialogfeld aus, um ein neues Microsoft-Konto oder ein neues Geschäfts- bzw. Schulkonto hinzuzufügen.
+## <a name="add-an-additional-account-to-visual-studio"></a>Hinzufügen eines weiteren Kontos zu Visual Studio
 
-![Visual Studio-Kontoauswahl](../ide/media/vs2015_acct_picker.png)
+Gehen Sie wie folgt vor, um ein weiteres Konto zu Visual Studio hinzuzufügen:
 
-Folgen Sie den Anweisungen, um die neuen Anmeldeinformationen für das Konto einzugeben. Die folgende Abbildung zeigt den **Konto-Manager**, nachdem ein Benutzer sein *Contoso.com*-Geschäftskonto hinzugefügt hat.
+1. Klicken Sie auf **Datei** > **Kontoeinstellungen**.
 
-![Konto-Manager](../ide/media/vs2015_accountmanager.gif)
+1. Klicken Sie unter **Alle Konten** auf **Konto hinzufügen**.
 
-## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Erneutes Aufrufen des Assistenten zum Hinzufügen verbundener Dienste und des Server-Explorers
+1. Wählen Sie auf der Seite **Bei Ihrem Konto anmelden** das entsprechende Konto aus, oder klicken Sie auf **Anderes Konto verwenden**. Folgen Sie den Anweisungen, um die neuen Anmeldeinformationen für das Konto einzugeben.
 
-Wechseln Sie nun erneut zum **Server-Explorer**, klicken Sie mit der rechten Maustaste auf den **Azure**-Knoten, und wählen Sie **Abonnements verwalten und filtern** aus. Wählen Sie das neue Konto durch Klicken auf den Dropdownpfeil neben dem aktuellen Konto aus, und wählen Sie dann aus, welche Abonnements Sie im **Server-Explorer** anzeigen möchten. Es sollten alle Dienste angezeigt werden, die dem angegebenen Abonnement zugeordnet sind. Auch wenn Sie mit dem zweiten Konto gerade nicht bei der Visual Studio-IDE angemeldet sind, sind Sie bei den Diensten und Ressourcen dieses Kontos angemeldet. Dies gilt auch für **Projekt** > **Verbundenen Dienst hinzufügen** und **Team** > **Verbindung mit Team Foundation Server herstellen**.
+(Optional) Wenn Sie jetzt zum **Server-Explorer** wechseln, werden die Azure-Dienste angezeigt, die dem Konto zugeordnet sind, das Sie gerade hinzugefügt haben. Klicken Sie im **Server-Explorer** erst mit der rechten Maustaste auf den **Azure**-Knoten und anschließend mit der linken auf **Manage and Filter Subscriptions** (Abonnements verwalten und filtern). Wählen Sie das neue Konto durch Klicken auf den Dropdownpfeil neben dem aktuellen Konto aus, und wählen Sie dann aus, welche Abonnements Sie im **Server-Explorer** anzeigen möchten. Es sollten alle Dienste angezeigt werden, die dem angegebenen Abonnement zugeordnet sind. Auch wenn Sie mit dem zweiten Konto gerade nicht bei Visual Studio angemeldet sind, sind Sie bei den Diensten und Ressourcen dieses Kontos angemeldet. Dies gilt auch für **Projekt** > **Verbundenen Dienst hinzufügen** und **Team** > **Verbindung mit Team Foundation Server herstellen**.
+
+### <a name="add-an-account-using-device-code-flow"></a>Hinzufügen eines Kontos mithilfe eines Gerätecodeflows
+
+Manchmal kann es vorkommen, dass Sie sich nicht wie gewöhnlich anmelden oder ein Konto hinzufügen können. Dieser Fall kann eintreten, wenn der Internet Explorer aus einem beliebigen Grund blockiert wird oder sich das Netzwerk hinter einer Firewall befindet. Sie können dies umgehen, indem Sie die Option *device code flow* (Gerätecodeflow) aktivieren, um ein Konto hinzuzufügen oder ein Konto neu zu authentifizieren. Über den Gerätecodeflow können Sie sich in einem anderen Browser oder auf einem anderen Computer anmelden. Sie können dafür entweder einen physischen oder einen virtuellen Computer verwenden.
+
+Gehen Sie wie folgt vor, um sich über den Gerätecodeflow anzumelden:
+
+1. Öffnen Sie die Seite [**Konten**](reference/accounts-environment-options-dialog-box.md) unter **Extras** > **Optionen** > **Umgebung**, und wählen Sie die Option **Enable device code flow when adding or re-authenticating an account** (Gerätecodeflow beim Hinzufügen oder erneutem Authentifizieren eines Kontos aktivieren) aus. Klicken Sie auf **OK**, um die Seite „Optionen“ zu schließen.
+
+1. Klicken Sie auf **Datei** > **Kontoeinstellungen**, um die Seite „Kontoverwaltung“ zu öffnen.
+
+1. Klicken Sie unter **Alle Konten** auf **Konto hinzufügen**.
+
+   In einem Dialogfeld werden eine URL und ein Code angezeigt, den Sie in einen Webbrowser einfügen können.
+
+   ![URL zum Gerätecodeflow und Code](media/work-with-multiple-user-accounts/device-login-code.png)
+
+1. Drücken Sie **STRG**+**C**, um den Text aus dem Dialogfeld zu kopieren, und klicken Sie anschließend auf **OK**, um dieses zu schließen. Fügen Sie den kopierten Text z. B. in Editor ein. Dadurch wird es im nächsten Schritt einfacher, den Code zu kopieren.
+
+1. Navigieren Sie zu der URL für die Geräteanmeldung auf dem Computer oder dem Webbrowser, den Sie zur Anmeldung bei Visual Studio verwenden möchten. Fügen oder geben Sie den kopierten Code anschließend in das Feld **Code** ein.
+
+   Dann sollte der App-Name für **Visual Studio** weiter unten auf der Seite angezeigt werden.
+
+1. Klicken Sie unter **Visual Studio** auf **Weiter**.
+
+   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+
+1. Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen für das Konto einzugeben.
+
+   Dann wird eine Seite angezeigt, auf der die Anmeldung bei Visual Studio auf Ihrem Gerät bestätigt wird. Daraufhin können Sie das Browserfenster schließen.
+
+   ![Visual Studio-Anmeldung über den Browser abgeschlossen](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
+
+1. Kehren Sie zurück zur Seite „Kontoverwaltung“ in Visual Studio. Dann sollten die neu hinzugefügten Konten unter **Alle Konten** aufgeführt werden. Klicken Sie auf **Schließen**.
 
 ## <a name="see-also"></a>Siehe auch
 

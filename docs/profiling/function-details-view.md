@@ -1,8 +1,6 @@
 ---
 title: Funktionsdetailansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945339"
 ---
 # <a name="function-details-view"></a>Funktionsdetailansicht
 Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:  
@@ -72,7 +70,7 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 ## <a name="function-performance-details"></a>Funktionsleistungsdetails  
  Die Tabelle „Funktionsleistungsdetails“ enthält Zusammenfassungsdaten zu den Leistungsmetriken der ausgewählten Funktion. Sowohl der Wert als auch der Prozentsatz werden angezeigt. In der Liste **Leistungsmetriken** können Sie die Profilerstellungsdaten eingeben, die im Diagramm und in der Detailtabelle angezeigt werden.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusiv**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|  
 |**In Aufrufen**|– Der Betrag der Leistungsmetrik, die in Funktionen aufgetreten ist, die von der ausgewählten Funktion aufgerufen wurden.|  

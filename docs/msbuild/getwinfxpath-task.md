@@ -1,8 +1,6 @@
 ---
 title: GetWinFXPath-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace14a3238142be4d703b4d2e0fa457288b00458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63c8b6c0834f427103240ae0b9d11f5958d1b41c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822585"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath-Aufgabe
 Der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task gibt das Verzeichnis der aktuellen [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)]-Runtime zurück.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |-------------------| - |
 | `WinFXPath` | Optionaler **String**-Ausgabeparameter.<br /><br /> Gibt den tatsächlichen Pfad zur [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)]-Runtime an. |
 | `WinFXNativePath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad zur nativen [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)]-Runtime an. |

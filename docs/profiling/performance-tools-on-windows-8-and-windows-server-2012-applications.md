@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592936"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 
@@ -65,7 +65,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 Sie verwenden zwei Befehlszeilentools, um Profilerstellungsdaten auf Windows 8- und Windows Server 2012-Geräten zu erfassen, einschließlich Geräte, auf denen kein Visual Studio installiert ist:
 
-|Toolname|Beschreibung |
+|Toolname|Beschreibung|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Erfasst Profilerstellungsdaten von UWP-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Sammelt Instrumentations-, Parallelitäts- und Ebeneninteraktionsprofilerstellungsdaten von Apps, die unter Windows 8-Desktop oder Windows Server 2012 ausgeführt werden. Sammelt alle Arten von Profilerstellungsdaten von früheren Versionen von Windows.|
@@ -76,7 +76,7 @@ Um Profile für Anwendungen auf Geräten zu erstellen, auf denen Visual Studio n
 
 - Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](http://go.microsoft.com/fwlink/?LinkID=219549)herunter.
 
-- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.
+- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.
 
 > [!NOTE]
 > Um Profilerstellungsdaten für die Ebeneninteraktion (TIP-Daten) zu erfassen, müssen Sie den eigenständigen Profiler vom Visual Studio-Computer auf dem Remotecomputer installieren.

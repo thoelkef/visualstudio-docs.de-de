@@ -2,7 +2,6 @@
 title: Analysieren der Speicherauslastung ohne Debuggen | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 11/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcc5c66998501044b04e4a8265d669927e3368a
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c05ec2c2c72e18c193da435a55e5bccc47d8e093
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946382"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
@@ -140,7 +139,7 @@ Eine **Verwalteter Heap**-Struktur in einem Bericht mit Momentaufnahmedetails we
 |**Modul**|Das Modul, das dieses Objekt enthält.|  
   
 ###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> „Pfade zum Stamm“-Struktur (Berichte mit Momentaufnahmedetails)  
-Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.  
+Die **Pfade zum Stamm**-Struktur zeigt die Kette der Objekte an, die auf einen Typ oder eine Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.  
   
 Bei einer **Pfade zum Stamm**-Struktur wird die Anzahl der Objekte mit Verweisen auf diesen Typ in der Spalte **Verweisanzahl** angezeigt. 
 

@@ -2,7 +2,6 @@
 title: -Runexit („devenv.exe“)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff2f028c94013df4f69e9aca244f98c307d2782
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955119"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe, führt diese aus und schließt die Integrierte Entwicklungsumgebung (Integrated Development Environment; IDE)

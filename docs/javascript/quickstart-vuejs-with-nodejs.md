@@ -15,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058950"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441482"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -35,13 +35,13 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 1. Wenn die Node.js-Runtime nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website.
 
-    Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+    Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Runtime nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Runtime auf der Eigenschaftenseite verweist. Klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus.
 
 1. Öffnen Sie Visual Studio 2017.
 
 1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** unter **JavaScript** > **Node.js** oder unter **TypeScript** > **Node.js** die Option **Grundlegende Vue.js-Webanwendung** aus. Geben Sie anschließend einen Projektnamen ein, und klicken Sie auf **OK**.
+1. Wählen Sie im Dialogfeld **Neues Projekt** unter **JavaScript** > **Node.js** oder unter **TypeScript** > **Node.js** die Option **Grundlegende Vue.js-Webanwendung** aus. Geben Sie einen Projektnamen ein, und klicken Sie dann auf **OK**.
 
      ![Vue.js-Vorlage](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Hinzufügen einer Vue-Datei zum Projekt
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf einen beliebigen Ordner, z.B. den *SRC*-Ordner, und wählen Sie anschließend **Hinzufügen** > **Neues Element** aus.
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf einen beliebigen Ordner, z. B. den Ordner *src/components*, und wählen Sie anschließend **Hinzufügen** > **Neues Element** aus.
 
 1. Wählen sie entweder **JavaScript Vue-Einzeldateikomponente** oder **TypeScript Vue-Einzeldateikomponente** aus, und klicken Sie anschließend auf **Hinzufügen**.
 
@@ -85,7 +85,7 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 1. (Gilt nur für das TypeScript-Projekt) Wählen sie in Visual Studio die Option **Erstellen** > **Projektmappe bereinigen** aus.
 
-1. Wählen Sie als Nächstes **Erstellen** > **Projektmappe erstellen** aus, um das Projekt zu erstellen. Überprüfen Sie das Fenster **Ausgabe**, um die Buildergebnisse anzuzeigen.
+1. Wählen Sie als Nächstes **Erstellen** > **Projektmappe erstellen** aus, um das Projekt zu erstellen. Überprüfen Sie die Buildergebnisse im **Ausgabenfenster**, und wählen Sie **Build** in der Liste **Ausgabe anzeigen von** aus.
 
     Die Vue.js-Projektvorlage verwendet das npm-Skript `build`, indem sie ein Postbuildereignis konfiguriert. Wenn Sie diese Einstellung ändern möchten, öffnen Sie die Projektdatei (*\<Projektname\>.njsproj*) über den Windows-Explorer, und suchen Sie nach der folgenden Codezeile:
 
@@ -105,7 +105,7 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 1. Schließen Sie den Webbrowser.
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über die Visual Studio-IDE mit Vue.js gelernt haben. Wenn Sie mehr über deren Funktionen erfahren möchten, können Sie gerne mit einem Tutorial im Inhaltsverzeichnis mit dem Abschnitt **Tutorials** fortfahren.
+Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über die Visual Studio-IDE mit Vue.js gelernt haben. Wenn Sie mehr über deren Funktionen erfahren möchten, können Sie mit einem Tutorial im Inhaltsverzeichnis mit dem Abschnitt **Tutorials** fortfahren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

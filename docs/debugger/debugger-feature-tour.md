@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561537"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -205,7 +205,7 @@ Weitere Informationen finden Sie unter [Debug live ASP.NET apps using the Snapsh
 
 ## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Anzeigen von Momentaufnahmen mit dem IntelliTrace-Feature „Schritt zurück“ (Visual Studio Enterprise)
 
-Das **IntelliTrace-Feature „Schritt zurück“** nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+Das **IntelliTrace-Feature „Schritt zurück“** erstellt bei jedem Breakpoint und Debuggerschritt automatisch eine Momentaufnahme Ihrer Anwendung. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
 Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
 
@@ -215,7 +215,7 @@ Weitere Informationen finden Sie auf der Seite [Inspect previous app states usin
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie einen ersten Einblick in die zahlreichen Features des Debuggers erhalten. Klicken Sie auf den folgenden Link, wenn Sie diese Features anhand einer Beispielanwendung näher kennenlernen möchten.
+In diesem Tutorial haben Sie einen ersten Einblick in die zahlreichen Features des Debuggers erhalten. Vielleicht sollten Sie sich eines dieser Features genauer ansehen, z. B. Breakpoints.
 
 > [!div class="nextstepaction"]
-> [Lernen Sie das Debuggen mit Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Learn to use breakpoints (Verwenden von Breakpoints)](../debugger/using-breakpoints.md)

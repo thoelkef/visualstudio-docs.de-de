@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220748"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647377"
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
 
@@ -40,7 +40,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 > [!WARNING]
 > Ab Visual Studio 2013 Update 3 hat diese Aufgabe eine neue Signatur, mit der Sie die Zielframeworkversion für die Datei angeben können. Sie sollen die neue Signatur verwenden, wo immer möglich, weil der MSBuild-Prozess SHA-256-Hashes nur dann verwendet, wenn das Zielframework .NET 4.5 oder höher ist. Wenn das Zielframework .NET 4.0 oder älter ist, wird der SHA-256-Hash nicht verwendet.
   
-|Parameter|Beschreibung |
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |`CertificateThumbprint`|Erforderlicher `String` -Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|
 |`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|
@@ -73,7 +73,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 ```
 
 > [!NOTE]
-> Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)).
+> Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Stellen Sie sicher, dass Sie das zusätzliche (3F) unsichtbare Zeichen beim Kopieren und Einfügen des Fingerabdrucks aus den Zertifikatdetails nicht kopieren, da dies verhindern kann, dass `SignFile` das Zertifikat findet.
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   

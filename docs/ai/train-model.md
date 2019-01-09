@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882391"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307644"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trainieren von KI-Modellen in Azure Batch AI
 
@@ -50,11 +50,11 @@ Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Tra
 
     ![Beispielkatalog](media/train-model/tensorflowexamples.png)
 
-7. Legen Sie das MNIST-Projekt als Startprojekt fest.
+7. Legen Sie das MNIST-Projekt als **Startprojekt** fest.
 
     ![Beispielkatalog](media/train-model/mnist-startup.png)
 
-8. <strong>Klicken Sie mit der rechten Maustaste auf das „MNIST“-Projekt und dann auf „Auftrag übermitteln“</strong>.
+8. <strong>Klicken Sie mit der rechten Maustaste auf das **MNIST-Projekt** und dann auf **Auftrag übermitteln**</strong>.
 
     ![Beispielkatalog](media/train-model/submit-job.png)
 9. Wählen Sie Ihr **Azure Batch AI**-Cluster aus, und klicken Sie auf **Importieren**. Wählen Sie die Datei `AzureBatchAI_TF_MNIST.json` aus, um schnell einige Standardwerte wie das zu verwendende Docker-Image aufzufüllen. Klicken Sie dann auf **Senden**.

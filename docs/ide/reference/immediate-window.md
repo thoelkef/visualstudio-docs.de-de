@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561667"
 ---
 # <a name="immediate-window"></a>Direktfenster
 Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.
@@ -76,7 +76,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
 
     Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.
 
-Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).
+Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z.B. [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
 
@@ -128,8 +128,7 @@ Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar,
 
 - [Navigieren im Code mit dem Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
-- [Debuggen in Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Debugger – Grundlagen](../../debugger/getting-started-with-the-debugger.md)
+- [Erster Einblick in den Debugger](../../debugger/debugger-feature-tour.md)   
 - [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Verwenden von regulären Ausdrücken in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

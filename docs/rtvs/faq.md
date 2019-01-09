@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 29634d63cf8e898203ff4d72a23296bdb14019e0
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235306"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348480"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -81,7 +81,7 @@ A. Ja, Sie können jedes Quellcodeverwaltungssystem verwenden, das in Visual Stu
 
 **F. Wie lauten die empfohlenen *GITIGNORE*-Einstellungen für ein RTVS-Projekt?**
 
-A. GitHub verwaltet ein Masterrepository mit empfohlenen *GITIGNORE*-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore).
+A. GitHub verwaltet ein Masterrepository mit empfohlenen *GITIGNORE*-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Remotedienste
 
