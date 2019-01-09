@@ -1,8 +1,6 @@
 ---
 title: TaskBody-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5dcddcc0a050698f6e73f12df87316c344da42ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931238"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody-Element (MSBuild)
 Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -43,19 +41,19 @@ Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere 
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|Beschreibung |  
+|Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Evaluate`|Optionales boolesches Attribut.<br /><br /> Bei `true` wertet MSBuild alle inneren Elemente aus und erweitert Elemente und Eigenschaften, bevor die Informationen an `TaskFactory` übergeben werden, wenn die Aufgabe instanziiert wird.|  
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|Beschreibung |  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |Daten|Der Text zwischen den `TaskBody`-Tags wird wörtlich an `TaskFactory` gesendet.|  
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-| Element | Beschreibung  |
+| Element | Beschreibung |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 

@@ -3,7 +3,6 @@ title: Produkte und Dienste von Microsoft für Barrierefreiheit
 description: Erfahren Sie mehr über die Produkte und Dienste von Microsoft, die dabei helfen können, den Zugriff auf unsere Betriebssysteme, Programme und Anwendungen für jeden zu verbessern, einschließlich für Personen mit Behinderungen.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886318"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
