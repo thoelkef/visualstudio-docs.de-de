@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
+title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9af9dc5ce1f4cb0eb5c328c90c20184111afd9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 887810d12a20045c95b0f837db1592b9b7bf301e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724600"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095380"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-Benachrichtigt den Profilerobjekt, das Skriptmodul einen Funktionsaufruf auszuführen, der kein Aufruf in das Document Objekt Model (DOM) ist.  
+Benachrichtigt den Profilerobjekt, das die Skript-Engine einen Funktionsaufruf, der keinem Aufruf in das Document Objekt Model (DOM) ist, ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT OnFunctionEnter(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -36,16 +36,16 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>Parameter  
  `scriptId`  
- [in] Die eindeutige ID des Skripts, die die Funktion gehört. Diese ID wird vom Skriptmodul zugewiesen.  
+ [in] Die eindeutige ID des Skripts, das die Funktion gehört. Diese ID wird von der Skript-Engine zugewiesen.  
   
  `functionId`  
- [in] Die eindeutige ID der Funktion. Diese ID wird vom Skriptmodul zugewiesen.  
+ [in] Die eindeutige ID der Funktion. Diese ID wird von der Skript-Engine zugewiesen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Der Rückgabewert dieser Methode wird vom Skriptmodul ignoriert.  
+ Der Rückgabewert dieser Methode wird von der Skript-Engine ignoriert.  
   
 ## <a name="remarks"></a>Hinweise  
- DOM-Aufrufe, erfordert das Skriptmodul [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) anstelle von `IActiveScriptProfilerCallback::OnFunctionEnter`. Dies ist aufgrund der großen Anzahl von eindeutigen Methoden und Eigenschaften im DOM.  
+ Für DOM-Aufrufe, die Skript-Engine ruft [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) anstelle von `IActiveScriptProfilerCallback::OnFunctionEnter`. Dies ist aufgrund der großen Anzahl von eindeutigen Methoden und Eigenschaften im DOM.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   

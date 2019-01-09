@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetDescription | Microsoft Docs
+title: IRemoteDebugApplicationThread::GetDescription | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74d3f59648a5a6aa0f510e98b33c3c26b1f9db56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff7e331ebd61d499ddd865409e23a5ad4ffae11a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728480"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095432"
 ---
 # <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
-Ruft die Beschreibung und den Status dieses Threads.  
+Ruft die Beschreibung und den Zustand dieses Threads ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription,  
    BSTR*  pbstrState  
@@ -42,7 +42,7 @@ HRESULT GetDescription(
  [out] Die Beschreibung dieses Threads.  
   
  `pbstrState`  
- [out] Die Beschreibung des Threadstatus.  
+ [out] Die Beschreibung der der Zustand des Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,7 +52,7 @@ HRESULT GetDescription(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft die Beschreibung und den Status dieses Threads ab.  
+ Diese Methode ruft die Beschreibung und der Zustand dieses Threads.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

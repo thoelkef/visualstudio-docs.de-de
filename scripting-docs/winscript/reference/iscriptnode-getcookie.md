@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetCookie | Microsoft Docs
+title: IScriptNode::GetCookie | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733680"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094236"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
 Gibt einen anwendungsdefinierten Wert, der verwendet wird, das Hostobjekt, das Scriptlet zugeordnet werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,9 +38,9 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parameter  
  `pdwCookie`  
- [out] Für ein `IScriptEntry` Objekt, das anwendungsspezifische Cookiewert zurückgegeben.  
+ [out] Für eine `IScriptEntry` Objekt ist, wird von der Anwendung definierte Cookiewert.  
   
- Für ein `IScriptNode` Objekt, das eine Webseite darstellt. gibt 0 zurück.  
+ Für eine `IScriptNode` -Objekt, eine Webseite darstellt, wird 0 zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

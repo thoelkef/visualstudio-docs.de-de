@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,49 +16,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63708c133a4ce8c7deafc9c6861a9960d8327061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893405"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Gewusst wie: Anzeigen von WPF-Ablaufverfolgungsinformationen
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] kann debugablaufverfolgungs-Informationen von WPF-Anwendungen empfangen und diese Informationen im Anzeigen der **Ausgabe** Fenster. Zum Anzeigen von debugablaufverfolgungs-Informationen muss die WPF-Ablaufverfolgung aktiviert werden.  
+# <a name="how-to-display-wpf-trace-information"></a>Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] kann Debugablaufverfolgungs-Informationen in WPF-Anwendungen empfangen und diese Informationen im **Ausgabefenster anzeigen. Zum Anzeigen von Debugablaufverfolgungs-Informationen muss die WPF-Ablaufverfolgung aktiviert werden.  
   
- Sie können WPF-Ablaufverfolgung in der Datei "App.Config" oder programmgesteuert mit der <xref:System.Diagnostics.PresentationTraceSources>-Klasse aktivieren. Eine einfachere Möglichkeit zum Aktivieren der WPF-Ablaufverfolgung wird mithilfe der **Optionen** Fenster. Die WPF-Ablaufverfolgung für Webanwendungen wird nicht unterstützt.  
+ Sie können WPF-Ablaufverfolgung in der Datei "App.Config" oder programmgesteuert mit der <xref:System.Diagnostics.PresentationTraceSources>-Klasse aktivieren. Eine einfachere Möglichkeit, WPF-Ablaufverfolgung zu aktivieren, besteht in der Verwendung des Fensters Optionen **. Die WPF-Ablaufverfolgung für Webanwendungen wird nicht unterstützt.  
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>So aktivieren Sie WPF-Ablaufverfolgungsinformationen oder passen diese an  
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  In der **Optionen** öffnen (Dialogfeld), in das Feld auf der linken Seite der **Debuggen** Knoten.  
+2.  Öffnen Sie im Dialogfeld Optionen **im Feld links den Knoten Debugging**.  
   
-3.  Klicken Sie unter **Debuggen**, klicken Sie auf **Fenster "Ausgabe"**.  
+3.  Klicken Sie unter Debugging **auf Ausgabefenster**.  
   
-4.  Klicken Sie unter **allgemeine Ausgabeeinstellungen**Option **gesamte Debugausgabe**.  
+4.  Wählen Sie unter Allgemeine Ausgabeeinstellungen **die Option Gesamte Debugausgabe** aus.  
   
-5.  Suchen Sie im Feld auf der rechten Seite **WPF-Ablaufverfolgungseinstellungen**.  
+5.  Suchen Sie im Feld rechts die Option WPF-Ablaufverfolgungseinstellungen **.  
   
-6.  Öffnen der **WPF-Ablaufverfolgungseinstellungen** Knoten.  
+6.  Öffnen Sie den Knoten WPF-Ablaufverfolgungseinstellungen **.  
   
-7.  Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen**, klicken Sie auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z. B. **Datenbindung**).  
+7.  Klicken Sie unter WPF-Ablaufverfolgungseinstellungen **auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z. B. Datenbindung**).  
   
-     Ein Dropdownlisten-Steuerelement wird in der Spalte neben **Datenbindung** oder der Kategorie, die Sie geklickt haben.  
+     Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.  
   
-8.  Klicken Sie auf die Dropdownliste, und wählen Sie den Typ der Ablaufverfolgungsinformationen aus, die Sie anzeigen möchten: **alle**, **kritisch**, **Fehler**, **Warnung**,  **Informationen**, **ausführliche**, oder **ActivityTracing**.  
+8.  Klicken Sie auf die Dropdown-Liste, und wählen Sie den Typ der Ablaufverfolgungsinformationen, die Sie anzeigen möchten: **Alle**, **kritische**, **Fehler**, **Warnung**, **Informationen**, **ausführliche**, oder **ActivityTracing**.  
   
-     **Kritische** ermöglicht die Verfolgung von kritischen Ereignissen nur.  
+     Kritisch** ermöglich nur die Verfolgung von kritischen Ereignissen.  
   
-     **Fehler** ermöglicht die Verfolgung von kritischen und fehlerbezogenen Ereignissen.  
+     Fehler** ermöglicht die Verfolgung von kritischen und fehlerbezogenen Ereignissen.  
   
-     **Warnung** ermöglicht die Verfolgung von kritischen, Fehler- und warnungsbezogenen Ereignissen.  
+     Warnung** ermöglicht die Verfolgung von kritischen, fehler- und warnungsbezogenen Ereignissen.  
   
-     **Informationen** ermöglicht die Verfolgung von kritischen, Fehler-, Warn- und Informationen Ereignisse.  
+     Informationen** ermöglicht die Verfolgung von kritischen, fehler-, warnungs- und informationsbezogenen Ereignissen.  
   
-     **Ausführliche** ermöglicht die Verfolgung von kritischen, Fehler-, Warn-, Informationen und Verbose-Ereignisse.  
+     Ausführlich** ermöglicht die Verfolgung von kritischen, warnungs- und informationsbezogenen sowie von ausführlichen Ereignissen.  
   
-     **ActivityTracing** ermöglicht die Verfolgung von beenden, starten, anhalten, übertragen und Resume-Ereignisse.  
+     ActivityTracing** ermöglicht die Verfolgung von Ereignissen vom Typ "Beenden", "Starten", "Anhalten", "Übertragen" und "Fortsetzen".  
   
      Weitere Informationen zur Bedeutung der Ablaufverfolgungs-Informationsebenen finden Sie unter <xref:System.Diagnostics.SourceLevels>.  
   
@@ -70,19 +68,19 @@ ms.locfileid: "31476223"
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  In der **Optionen** öffnen (Dialogfeld), in das Feld auf der linken Seite der **Debuggen** Knoten.  
+2.  Öffnen Sie im Dialogfeld Optionen **im Feld links den Knoten Debugging**.  
   
-3.  Klicken Sie unter **Debuggen**, klicken Sie auf **Fenster "Ausgabe"**.  
+3.  Klicken Sie unter Debugging **auf Ausgabefenster**.  
   
-4.  Suchen Sie im Feld auf der rechten Seite **WPF-Ablaufverfolgungseinstellungen**.  
+4.  Suchen Sie im Feld rechts die Option WPF-Ablaufverfolgungseinstellungen **.  
   
-5.  Öffnen der **WPF-Ablaufverfolgungseinstellungen** Knoten.  
+5.  Öffnen Sie den Knoten WPF-Ablaufverfolgungseinstellungen **.  
   
-6.  Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen**, klicken Sie auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z. B. **Datenbindung**).  
+6.  Klicken Sie unter WPF-Ablaufverfolgungseinstellungen **auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z. B. Datenbindung**).  
   
-     Ein Dropdownlisten-Steuerelement wird in der Spalte neben **Datenbindung** oder der Kategorie, die Sie geklickt haben.  
+     Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.  
   
-7.  Klicken Sie auf die Dropdownliste, und wählen Sie **deaktiviert**.  
+7.  Klicken Sie auf die Dropdownliste, und wählen Sie Aus** aus.  
   
 8.  Klicken Sie auf **OK**.  
   

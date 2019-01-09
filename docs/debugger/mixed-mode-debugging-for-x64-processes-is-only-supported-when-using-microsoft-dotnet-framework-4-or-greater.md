@@ -1,8 +1,6 @@
 ---
 title: Im gemischten Modus Debuggen für X64 Prozesse wird nur unterstützt, wenn Microsoft.NET Framework 4 oder höher | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d58713da9a4c809d5f9c3db6f7157a699a467f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: f472f8756a0599102a0da99b6db1cc3496b41f42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830637"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 .NET Framework-Versionen vor Version 4 bieten keine Unterstützung für das Debuggen im gemischten Modus von x64-Prozessen. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu systemeigenem Code oder von systemeigenem Code zu verwaltetem Code wechseln können.  
@@ -41,19 +39,19 @@ ms.locfileid: "44284093"
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>So ändern Sie die Plattform in 32-Bit (Visual Basic oder C#)  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
+1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf Eigenschaften**.  
   
-2.  Klicken Sie in den Eigenschaftenseiten auf die **Kompilieren** oder **Debuggen** Registerkarte.  
+2.  Klicken Sie auf den Eigenschaftenseiten auf die Registerkarte Kompilieren **oder auf die Registerkarte Debuggen**.  
   
-3.  Klicken Sie auf **Plattform** , und wählen Sie aus der Liste der Plattformen X86.  
+3.  Klicken Sie auf Plattform **, und wählen Sie x86 aus der Liste der Plattformen aus.  
   
-     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Sie müssen zum Ausführen auf einem 32-Bit-Prozess auswählen **Win32**, nicht **"anycpu"**.  
+     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Wählen Sie Win32 **anstelle von AnyCPU** aus, wenn Sie die Ausführung in einem 32-Bit-Prozess wünschen.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>So ändern Sie die Plattform in 32-Bit (C/C++)  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Eigenschaften**.  
+1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf Eigenschaften**.  
   
-2.  Klicken Sie in den Eigenschaftenseiten auf **Plattform** , und wählen Sie Win32 aus der Liste der Plattformen.  
+2.  Klicken Sie auf den Eigenschaftenseiten auf Plattform **, und wählen Sie Win32 aus der Liste der Plattformen aus.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

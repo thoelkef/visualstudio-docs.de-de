@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Microsoft Docs
+title: IDebugApplicationNode::Attach | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725930"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094951"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Der angegebene Projektstruktur hinzugefügt dieser Anwendungsknoten.  
+Der angegebene Projektstruktur wird dieser Anwendungsknoten hinzugefügt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parameter  
  `pdanParent`  
- [in] Der Projektstruktur, in dem dieser Knoten ist, hinzugefügt werden.  
+ [in] Die Projektstruktur, in dem dieser Anwendungsknoten ist, hinzugefügt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT Attach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode fügt diese Anwendungsknoten zum Projekt-Struktur mit der `pdanParent` als übergeordnetes Element. Wenn `pdanParent` ist `NULL`, diese Anwendungsknoten werden die Knoten der obersten Ebene.  
+ Diese Methode fügt dieser Anwendungsknoten auf das Projekt-Struktur, mit der `pdanParent` als übergeordnetes Element. Wenn `pdanParent` ist `NULL`, diesen Anwendungsknoten werden die Knoten der obersten Ebene.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

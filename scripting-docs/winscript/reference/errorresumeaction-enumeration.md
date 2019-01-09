@@ -1,5 +1,5 @@
 ---
-title: ERRORRESUMEACTIONS-Enumeration | Microsoft Docs
+title: ERRORRESUMEACTION-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c1d7aa4d2935ea94322ebd257f4135d79e9c0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640610"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090934"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTIONS-Enumeration
 Beschreibt, wie der Vorgang von einem Laufzeitfehler aus fortgesetzt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 typedef enum tagERRORRESUMEACTION {  
    ERRORRESUMEACTION_ReexecuteErrorStatement,  
    ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller,  
@@ -43,7 +43,7 @@ typedef enum tagERRORRESUMEACTION {
 |Member|Beschreibung|  
 |------------|-----------------|  
 |ERRORRESUMEACTION_ReexecuteErrorStatement|Führt erneut die Anweisung, die den Fehler verursacht hat.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Ermöglicht das Sprachmodul, die den Fehler zu behandeln.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Können die Sprach-Engine, die den Fehler zu behandeln.|  
 |ERRORRESUMEACTION_SkipErrorStatement|Setzt die Ausführung im Code nach der Anweisung, die den Fehler verursacht hat.|  
   
 ## <a name="see-also"></a>Siehe auch  

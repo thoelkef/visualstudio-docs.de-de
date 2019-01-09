@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs
+title: IMachineDebugManagerCookie::RemoveApplication | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9ecd3c8f5b5ebed8419e6e916334552a44646fe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728720"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087255"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
-Entfernt eine Anwendung aus der Ausführung Anwendungsliste.  
+Entfernt eine Anwendung aus der ausgeführten Anwendungsliste.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwDebugAppCookie,  
    DWORD  dwAppCookie  
@@ -39,7 +39,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parameter  
  `dwDebugAppCookie`  
- [in] Ein Cookie, das die Debuganwendung bezeichnet.  
+ [in] Ein Cookie, das die Debuganwendung identifiziert.  
   
  `dwAppCookie`  
  [in] Das Cookie bereitgestellt, wenn die Liste die Anwendung hinzugefügt wurde.  
@@ -52,7 +52,7 @@ HRESULT RemoveApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, von der Debug-Prozess-Manager immer `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
+ Diese Methode wird aufgerufen, indem Sie den prozessbasierten debugmanager immer `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   

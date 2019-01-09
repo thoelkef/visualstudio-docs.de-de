@@ -1,8 +1,6 @@
 ---
 title: Debug Interface Access SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: bdc5a980c9019fdaf330db9602f0b8445456c7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889565"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 
@@ -38,7 +36,7 @@ Enthält Anweisungen zur Verwendung der DIA-API zum Abfragen der PDB-Datei an.
 [Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
 Erläutert, wie Symbole und symboltags in die DIA-API verwendet werden.
 
-[Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
 Enthält die Schnittstellen, Methoden, Enumerationen und Strukturen der DIA-API.
 
 [Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md)  

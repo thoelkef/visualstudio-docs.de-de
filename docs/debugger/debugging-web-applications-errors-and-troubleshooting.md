@@ -2,7 +2,6 @@
 title: Debuggen von Web-apps – Fehler und Problembehandlung
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827416"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.  
@@ -58,4 +57,4 @@ Beim Debuggen von Webanwendungen können folgende Fehler auftreten.
   
 ## <a name="see-also"></a>Siehe auch  
  [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)
+ [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

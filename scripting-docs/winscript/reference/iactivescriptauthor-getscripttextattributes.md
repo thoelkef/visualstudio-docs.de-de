@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes | Microsoft Docs
+title: IActiveScriptAuthor::GetScriptTextAttributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa96623b4356f0a3d17c8b2631840953dac2d51
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57513e51248e26e39f95871e0dad329e8cc2f82c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645520"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094704"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
-Gibt die Textattribute für einen Skriptblock.  
+Gibt zurück, die Textattribute für einen Skriptblock.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
     LPCOLESTR        pszCode,  
     ULONG            cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parameter  
  `pszCode`  
- [in Size_is (`cch`)] der Text des Skriptblocks. Diese Zeichenfolge keine null-terminiert.  
+ [in, Size_is (`cch`)] der Text des Skriptblocks. Diese Zeichenfolge muss keine null-terminiert.  
   
  `cch`  
  [in] Die Größe des für die `pszCode` und `pattr` Parameter.  
   
  `pszDelimiter`  
- [in] Die Adresse der das Ende des Skript-Trennzeichen. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Scriptlets zu erkennen. Legen Sie diesen Parameter auf NULL, wenn es keine Trennzeichen ist, das das Ende der Skriptblock zu identifizieren.  
+ [in] Die Adresse des End-von-Script-Trennzeichens. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Scriptlets zu erkennen. Legen Sie diesen Parameter auf NULL, wenn es keine Trennzeichen ist, das das Ende der Skriptblock zu identifizieren.  
   
  `dwFlags`  
- [in] Die Flags, die Textattributen des Skriptblocks zugeordnet sind. Eine Kombination der folgenden Werte ist möglich:  
+ [in] Die Flags, die Textattributen des Skriptblocks zugeordnet sind. Eine Kombination der folgenden Werte sind möglich:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Identifizieren Sie Bezeichner, die mit dem SOURCETEXT_ATTR_IDENTIFIER-Attribut enthalten, und identifizieren Sie Punktoperatoren, die das SOURCETEXT_ATTR_MEMBERLOOKUP-Attribut aufweisen.|  
-|GETATTRFLAG_THIS|0 x 0100|Identifizieren Sie das aktuelle Objekt, das das SOURCETEXT_ATTR_THIS-Attribut aufweist.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Identifizieren Sie die Zeichenfolge Inhalt und einen Kommentar Text, der das SOURCETEXT_ATTR_HUMANTEXT-Attribut aufweist.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identifizieren von Bezeichnern, die das SOURCETEXT_ATTR_IDENTIFIER-Attribut aufweisen, und geben Sie Punktoperatoren, die das SOURCETEXT_ATTR_MEMBERLOOKUP-Attribut aufweisen.|  
+|GETATTRFLAG_THIS|0x0100|Identifizieren Sie das aktuelle Objekt, das das SOURCETEXT_ATTR_THIS-Attribut aufweist.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Identifizieren Sie die Zeichenfolge Inhalt, und kommentieren Text, der das SOURCETEXT_ATTR_HUMANTEXT-Attribut aufweist.|  
   
  `pattr`  
- [in, out Size_is (`cch`)] die Farbinformationen für Skriptblockcode.  
+ [in, out, Size_is (`cch`)] die Farbinformationen für den Skript-Block-Code.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

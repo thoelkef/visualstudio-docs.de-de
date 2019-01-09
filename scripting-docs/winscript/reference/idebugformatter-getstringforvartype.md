@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Microsoft Docs
+title: IDebugFormatter::GetStringForVarType | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06c4833e2d9a88b63a80b2ee9437dc5547579380
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727230"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087541"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
 Gibt eine Zeichenfolge, die den angegebenen VARTYPE-Wert darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetStringForVarType(  
    VARTYPE    vt,  
    TYPEDESC*  ptdescArrayType,  
@@ -46,7 +46,7 @@ HRESULT GetStringForVarType(
  [in] Ein Array von Strukturen, die Typen beschreibt.  
   
  `pbstr`  
- [out] Zeichenfolge, die darstellt `vt`.  
+ [out] Zeichenfolgendarstellung `vt`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

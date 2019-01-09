@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptError | Microsoft Docs
+title: IActiveScriptSite::OnScriptError | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae066fe7fa04a5c97dec618c65ccee3f90984a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724630"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088412"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Informieren dem Host, dass ein Ausführungsfehler aufgetreten, während das Modul, das Skript ausgeführt wurde.  
+Informiert den Host, dass ein Ausführungsfehler aufgetreten, während die Engine das Skript ausgeführt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT OnScriptError(  
     IActiveScriptError *pase  // address of error interface  
 );  
@@ -41,7 +41,7 @@ HRESULT OnScriptError(
  [in] Adresse des des Fehlerobjekt [IActiveScriptError](../../winscript/reference/iactivescripterror.md) Schnittstelle. Ein Host kann diese Schnittstelle zum Abrufen von Informationen über den Ausführungsfehler verwenden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` , wenn der Fehler ordnungsgemäß behandelt wurde oder eine OLE-Fehlercode andernfalls definiert.  
+ Gibt `S_OK` Wenn der Fehler ordnungsgemäß behandelt wurde, oder eine OLE Fehlercode, andernfalls definierte.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

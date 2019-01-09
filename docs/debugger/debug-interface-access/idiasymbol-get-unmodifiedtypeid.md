@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_unmodifiedTypeId | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_unmodifiedTypeId | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03013ad84ff6a74d967c7b4dc5784565df909730
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2cb4064bab19a90137f296277bee6f81f8a7f982
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848401"
 ---
 # <a name="idiasymbolgetunmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
 Ruft die ID des ursprünglichen Typs (unverändert) ab.  
@@ -34,7 +32,7 @@ HRESULT get_unmodifiedTypeId(
  [out] Ein Zeiger auf eine `DWORD` , enthält die-ID.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfColumns | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_numberOfColumns | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d01c4e3c13168ebf36e24388986b1c86cfe6f92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 24c6078cd1246e5bcb13938e31f65e67f5615e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953195"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 Ruft die Anzahl der Spalten in der Matrix ab.  
@@ -34,7 +32,7 @@ HRESULT get_numberOfColumns(
  [out] Ein Zeiger auf eine `DWORD` , die die Anzahl der Spalten in der Matrix enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

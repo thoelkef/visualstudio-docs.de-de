@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity::IsEqualObject | Microsoft Docs
+title: IObjectIdentity::IsEqualObject | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728600"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095055"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
-Bestimmt, ob ein Objekt mit dem aktuellen Objekt identisch ist.  
+Bestimmt, ob ein Objekt mit dem aktuellen Objekt entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -46,10 +46,10 @@ HRESULT IsEqualObject(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Objekte sind gleich.|  
-|`S_FALSE`|Die Objekte sind ungleich.|  
+|`S_FALSE`|Die Objekte sind nicht gleich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Implementierung der `IsEqualObject` -Methode zurückgeben sollte `S_OK` nur, wenn die Objekte identisch sind.  
+ Eine Implementierung der `IsEqualObject` Methode zurückgeben soll `S_OK` nur dann, wenn die Objekte identisch sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IObjectIdentity-Schnittstelle](../../winscript/reference/iobjectidentity-interface.md)

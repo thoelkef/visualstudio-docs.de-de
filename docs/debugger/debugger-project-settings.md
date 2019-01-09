@@ -1,8 +1,6 @@
 ---
 title: Debuggerprojekteinstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865873"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.  
@@ -31,10 +29,10 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  In diesem Abschnitt wird beschrieben, welche Optionen verfügbar sind und wie sie festgelegt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)  
+ [Vorgehensweise: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)  
  Beschreibt Debuggereinstellungen im Dialogfeld **Optionen** .  
   
- [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)  
  Beschreibt die Einstellungen **Debuggen** und **Release** und wie zwischen diesen umgeschaltet wird.  
   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -53,7 +51,7 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Hier wird beschrieben, wie der Debugger mithilfe von Symbol- und Quelldateien Informationen zum Debuggen anzeigt.  
   
- [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
+ [Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
  Beschreibt das Debuggen von UWP-apps. (Windows Developer Center)  
   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)  

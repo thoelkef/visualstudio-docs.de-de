@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSuspendCount | Microsoft Docs
+title: IRemoteDebugApplicationThread::GetSuspendCount | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1ddfde0b9348db25c9949be24007c55afdd3b54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e997d67197c6cd2b970db7ee17df0b88f4bdbd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729390"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086553"
 ---
 # <a name="iremotedebugapplicationthreadgetsuspendcount"></a>IRemoteDebugApplicationThread::GetSuspendCount
-Gibt den Unterbrechungszähler für den Thread an.  
+Gibt den Unterbrechungszähler des Threads zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetSuspendCount(  
    DWORD*  pdwCount  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSuspendCount(
   
 #### <a name="parameters"></a>Parameter  
  `pdwCount`  
- [out] Der Unterbrechungszähler für den Thread.  
+ [out] Der Unterbrechungszähler des Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT GetSuspendCount(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Unterbrechungszähler für den Thread an.  
+ Diese Methode gibt den Unterbrechungszähler des Threads.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Microsoft Docs
+title: IActiveScript::Close | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640970"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097044"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Bewirkt, dass das Skriptmodul in verwerfen Sie alle derzeit geladenes Skript, verlieren den Zustand, und lassen Sie alle Schnittstellenzeiger er für andere Objekte, daher eingeben Zustand "geschlossen" aufweist. Ereignissenken, sofort ausgeführte Skripttext und -Makroaufrufe, die bereits in Bearbeitung sind werden abgeschlossen, bevor die statusänderungen (verwenden Sie [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) zu einen ausgeführten Skriptthread "Abbrechen"). Diese Methode muss durch den Host erstellen aufgerufen werden, bevor die Schnittstelle freigegeben wird, um Zirkelverweis Problemen vorzubeugen.  
+Bewirkt, dass die Skript-Engine alle aktuell geladenen Skripts abbrechen, verlieren den Zustand und release-Schnittstellenzeiger auf die sie für andere Objekte, also einen geschlossenen Zustand verfügt. Ereignissenken, sofort ausgeführten Skripttext und -Makroaufrufe, die bereits in Bearbeitung sind werden abgeschlossen, bevor die Änderungen des Ansichtszustands (verwenden Sie [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) , einen ausgeführten Skriptthread abzubrechen). Diese Methode muss durch den Host erstellen aufgerufen werden, bevor die Schnittstelle freigegeben wird, um zu verhindern, dass der Zirkelverweis Probleme.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
@@ -40,9 +40,9 @@ HRESULT Close(void);
 |Wert|Bedeutung|  
 |-----------|-------------|  
 |`S_OK`|Erfolgreich.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde bereits im Zustand "abgeschlossen").|  
-|`OLESCRIPT_S_PENDING`|Die Methode wurde in die Warteschlange wurde erfolgreich, jedoch der Zustand noch nicht geändert wurde. Wenn die statusänderungen der Standort ist, wieder aufgerufen werden der [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) Methode.|  
-|`S_FALSE`|Die Methode war erfolgreich, aber das Skript bereits geschlossen wurde.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine war bereits im Zustand "geschlossen").|  
+|`OLESCRIPT_S_PENDING`|Die Methode wurde in die Warteschlange erfolgreich, jedoch der Zustand noch nicht geändert wurde. Zustandsänderungen, wenn der Standort ist auf zurückgerufen werden die [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) Methode.|  
+|`S_FALSE`|Die Methode erfolgreich ausgeführt, aber das Skript wurde bereits geschlossen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

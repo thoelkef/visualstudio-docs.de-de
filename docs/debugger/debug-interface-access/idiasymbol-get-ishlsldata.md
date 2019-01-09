@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isHLSLData | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isHLSLData | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be6e1f49acfc7d08815f0143f55c48fbaf7b017
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b1bd237833e27c3c83a24345e6b7c436b40aa8b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875124"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Gibt an, ob dieses Symbol hohen Shader Sprache HLSL (Level) Daten darstellt.  
+Gibt an, ob dieses Symbol High Level Shader Language (HLSL) Daten darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +32,7 @@ HRESULT get_isHLSLData(
  [out] Ein Zeiger auf eine `BOOL` , der angibt, ob dieses Symbol HLSL-Daten darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
