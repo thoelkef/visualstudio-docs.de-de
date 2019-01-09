@@ -1,8 +1,6 @@
 ---
 title: CallTarget-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546fc47ddb38fabcd0ff84926d942f6ae10d59e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bff9d8967d02f8950cc5518f00baa9551c93ec76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962362"
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 Ruft die angegebenen Ziele in der Projektdatei ab.  
@@ -32,9 +30,9 @@ Ruft die angegebenen Ziele in der Projektdatei ab.
  In der folgenden Tabelle werden die Parameter der `CallTarget` -Aufgabe beschrieben.  
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |---------------------------| - |
-| `RunEachTargetSeparately` | Optionaler `Boolean`-Eingabeparameter.<br /><br /> Wenn `true`, wird die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine einmal pro Ziel aufgerufen. Wenn `false`, wird die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`. |
+| `RunEachTargetSeparately` | Optionaler `Boolean`-Eingabeparameter.<br /><br /> Wenn `true`, wird die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine einmal pro Ziel aufgerufen. Wenn `false`, wird die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`sein. |
 | `TargetOutputs` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgaben aller erstellten Ziele. |
 | `Targets` | Optionaler `String[]` -Parameter.<br /><br /> Gibt das Ziel oder die Ziele an, die erstellt werden sollen. |
 | `UseResultsCache` | Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben, sofern es vorhanden ist.<br /><br /> **Hinweis** Wenn eine MSBuild-Aufgabe ausgeführt wird, wird deren Ausgabe in einem Gültigkeitsbereich als eine Liste von Buildelementen zwischengespeichert (ProjectFileName, GlobalProperties)[TargetNames]. |

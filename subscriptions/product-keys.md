@@ -9,12 +9,12 @@ description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Pro
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900851"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803823"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -32,14 +32,14 @@ Wenn Sie alle verfügbaren Product Keys für Ihr Abonnement bereits in Anspruch 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Produktversionen für Einzelhandels- und Volumenlizenzierung
 Visual Studio-Abonnements bieten eine Auswahl von Einzelhandels- und Volumenlizenzversionen von Microsoft-Produkten. Bestimmte Produkte sind nur in der Einzelhandelsversion oder nur in der Volumenlizenzversion über „Downloads“ verfügbar. Einige Produkte sind in beiden Versionen verfügbar. Im Allgemeinen werden Produkte, die eine Aktivierung erfordern, wie z.B. Windows, Windows Server und Office-Clientprodukte, nur in der Einzelhandelsversion über „Downloads“ bereitgestellt.
 
-Volumenlizenzierungskunden können die Software auch über das Volume Licensing Service Center (VSLC) herunterladen, um die Volumenlizenzversionen der Produkte (und die entsprechenden Product Keys) zu erhalten.  Der Zugriff auf das VLSC wird von speziell zugewiesenen Administratoren in der Organisation des Kunden verwaltet.
+Volumenlizenzierungskunden können die Software auch über das Volume Licensing Service Center (VLSC) herunterladen, um die Volumenlizenzversionen der Produkte (und die entsprechenden Product Keys) zu erhalten.  Der Zugriff auf das VLSC wird von speziell zugewiesenen Administratoren in der Organisation des Kunden verwaltet.
 
 ## <a name="daily-product-key-claim-limits"></a>Anspruchseinschränkungen für Product Keys pro Tag
 Microsoft ist bestrebt, die Integrität des Visual Studio-Abonnementprogramms sowie den Wert der Softwareanwendungen und Vorteile, die legitime Abonnenten des Programms für ihre Investitionen erhalten, zu schützen. Daher hat Microsoft tägliche Grenzwerte für die Inanspruchnahme von Product Keys implementiert, die über Visual Studio-Abonnements bereitgestellt werden. Durch die täglichen Grenzwerte für die Inanspruchnahme von Product Keys wird die Zahl der Product Keys beschränkt, die pro Tag und Abonnement in Anspruch genommen werden können.
 
 Der Grenzwert für die Inanspruchnahme von Product Keys liegt für alle Visual Studio-Abonnements (einschließlich derjenigen, die über MPN, BizSpark, MCT Software & Services und MCT angeboten werden) bei 10. Ausgenommen ist Visual Studio Professional (MPN), für das täglich maximal 7 Product Keys in Anspruch genommen werden können.
 
-Hinweis: Die Grenzwerte für die Inanspruchnahme von Product Keys können sich ändern. Hier finden Sie die jeweils aktuellen Grenzwerte.
+Hinweis: Die Grenzen für die Inanspruchnahme von Product Keys unterliegen Änderungen. Hier finden Sie die jeweils aktuellen Grenzwerte.
 
 Wenn Sie die maximale Anzahl von Product Keys in Anspruch genommen haben, die Ihnen für Ihr Abonnement in einem Zeitraum von 24 Stunden zur Verfügung stehen, wird Ihnen eine Fehlermeldung angezeigt, in der Ihnen mitgeteilt wird, dass Sie den Grenzwert erreicht haben. Der Grenzwert wird alle 24 Stunden zurückgesetzt, beginnend um 00:01 Pacific Time.
 
@@ -58,7 +58,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                            |
+|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
