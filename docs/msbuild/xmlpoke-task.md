@@ -1,8 +1,6 @@
 ---
 title: XmlPoke-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6a12991a8ea3de4348ce87686feadd7bc7681968
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934234"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke-Aufgabe
 
@@ -33,7 +31,7 @@ Legt die Werte einer XML-Datei wie von der XPath-Abfrage angegeben fest
 
  In der folgenden Tabelle werden die Parameter der `XmlPoke` -Aufgabe beschrieben.
   
-|Parameter|Beschreibung |
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |`Namespaces`|Optionaler `String` -Parameter.<br /><br /> Gibt die Namespaces für die Präfixe von XPath-Abfragen an `Namespaces` ist ein XML-Ausschnitt, der aus `Namespace`-Elementen mit den Attributen `Prefix` und `Uri` besteht. Das Attribut `Prefix` gibt das Präfix an, das dem im `Uri`-Attribut angegebenen Namespace zugeordnet werden soll. Verwenden Sie kein leeres `Prefix`-Attribut.|
 |`Query`|Optionaler `String` -Parameter.<br /><br /> Gibt die XPath-Abfrage an|
