@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:StartDebugSession | Microsoft Docs
+title: IDebugSessionProviderEx:StartDebugSession | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6f68d5bef91a71d475ea8b0c5131b5945b4c930
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 94d26e99b951779b29bb0456f823d19bfa6193bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727470"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093430"
 ---
 # <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
-Startet eine Debugsitzung mit der angegebenen Anwendung an.  
+Startet eine Debugsitzung mit der angegebenen Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT StartDebugSession(  
    IRemoteDebugApplication*  pda  
    BOOL  fQuery  
@@ -50,7 +50,7 @@ HRESULT StartDebugSession(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode startet eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte Aufrufen `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesen Aufruf.  
+ Diese Methode initiiert eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte Aufrufen `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesem Aufruf.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSessionProviderEx-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54d91c4df9d1e478d028e95e5cfc930d69355c54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d91a24a9255ff9ae558e9ff821b358331ef788b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726410"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097265"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
-Erstellt einen neuen Kontext der Debug-Dokument.  
+Erstellt einen neuen Dokumentkontext für den Debugmodus.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentContext(  
    ULONG                    iCharPos,  
    ULONG                    cChars,  
@@ -40,7 +40,7 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parameter  
  `iCharPos`  
- [in] Der Speicherort des Beginns der Inhalt des Debug-Dokuments.  
+ [in] Speicherort für den Anfang der Debug-Inhalt des Dokuments.  
   
  `cChars`  
  [in] Anzahl der Zeichen im Kontext.  
@@ -56,7 +56,7 @@ HRESULT CreateDebugDocumentContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht den Host, ein neuer Kontext der Debug-Dokument erstellt.  
+ Diese Methode ermöglicht den Host um einen neuen Dokumentkontext für den Debugmodus zu erstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

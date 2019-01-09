@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+title: IDebugDocumentText::GetPositionOfContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: adc921ab461cd0cafb144c9d54061947e160c392
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726770"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092754"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
-Gibt die Zeichenposition Bereich für eine Dokumentenkontext zurück.  
+Gibt die Zeichenposition Bereich, die einem Dokumentenkontext entsprechen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetPositionOfContext(  
    IDebugDocumentContext*  psc,  
    ULONG*                  pcCharacterPosition,  
@@ -40,10 +40,10 @@ HRESULT GetPositionOfContext(
   
 #### <a name="parameters"></a>Parameter  
  `psc`  
- [in] Das Dokumentobjekt Kontext.  
+ [in] Das Kontextobjekt, das Dokument.  
   
  `pcCharacterPosition`  
- [out] Die Startposition des Zeichenbereichs folgt Position.  
+ [out] Die Startposition des Zeichenbereichs Position folgt.  
   
  `cNumChars`  
  [out] Anzahl der Zeichen im Bereich.  
@@ -56,7 +56,7 @@ HRESULT GetPositionOfContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Dokumentenkontext für diese Methode muss mit diesem Dokument zugeordnet werden.  
+ Der Dokumentenkontext für diese Methode muss in diesem Dokument zugeordnet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentText-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)

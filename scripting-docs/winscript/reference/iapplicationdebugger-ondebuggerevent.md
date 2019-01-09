@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent | Microsoft Docs
+title: IApplicationDebugger::onDebuggerEvent | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725290"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092676"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
 Behandelt ein Ereignis für die benutzerdefinierte Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -42,7 +42,7 @@ HRESULT onDebuggerEvent(
  [in] Der Schnittstellenbezeichner für das Objekt.  
   
  `punk`  
- [in] Das Ereignisobjekt, das implementiert die Schnittstelle definiert, indem `riid`.  
+ [in] Das Ereignisobjekt, die die Schnittstelle, die durch definiert implementiert `riid`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -53,7 +53,7 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|Die Methode wird derzeit nicht implementiert.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Semantik der `IUnknown` basiert vollständig auf Application/Debugger definiert.  
+ Die Semantik der `IUnknown` ist eine vollständig Anwendung/Debugger definiert.  
   
  Diese Methode ermöglicht für benutzerdefinierte Erweiterungen des Modells Debugger; Es ist derzeit nicht implementiert.  
   

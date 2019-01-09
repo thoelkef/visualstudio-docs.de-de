@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo | Microsoft Docs
+title: IActiveScriptError::GetExceptionInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645720"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096225"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-Ruft Informationen zu einem Fehler, der aufgetreten sind, während das Skriptmodul ein Skript ausgeführt wurde.  
+Ruft Informationen zu einem Fehler, der aufgetreten sind, während die Skript-Engine ein Skript ausgeführt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -38,10 +38,10 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>Parameter  
  `pexcepinfo`  
- [out] Adresse der eine `EXCEPINFO` -Struktur, die Fehlerinformationen empfängt.  
+ [out] Adresse von einem `EXCEPINFO` Struktur, die Informationen empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` im Erfolgsfall oder `E_FAIL` bei einem Fehler.  
+ Gibt `S_OK` im Erfolgsfall oder `E_FAIL` , wenn ein Fehler aufgetreten ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

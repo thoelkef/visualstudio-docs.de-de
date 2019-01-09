@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
+title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725990"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092200"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Behandelt das Ereignis, wenn ein untergeordneter Knoten vom Knotenobjekt für eine Debug-Anwendung entfernt wird.  
+Behandelt das Ereignis, wenn ein untergeordneter Knoten aus einer Debug-Anwendungsobjekt Knoten entfernt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,9 +48,9 @@ HRESULT onRemoveChild(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt das Ereignis, wenn ein untergeordneter Knoten vom Knotenobjekt für eine Debug-Anwendung entfernt wird.  
+ Diese Methode behandelt das Ereignis, wenn ein untergeordneter Knoten aus einer Debug-Anwendungsobjekt Knoten entfernt wird.  
   
- Implementierer der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

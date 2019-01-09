@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Installieren des eigenständigen Profilers | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f8f4204a48a9846a6193c6b8b60c3ef321816e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2f5068ff6b167e9cfda14799f799a397a322ff3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987115"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Vorgehensweise: Installieren des eigenständigen Profilers
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet einen befehlszeilenbasierten, eigenständigen Profiler, der ohne eine Installation der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE ausgeführt werden kann. Diese Situation tritt auf, wenn auf einem Computer keine Entwicklungsumgebung installiert ist oder nicht installiert werden kann. Sie sollten beispielsweise keine Entwicklungsumgebung auf einem Produktionswebserver installieren.  
@@ -56,6 +54,6 @@ ms.locfileid: "53648667"
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
  [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveNamedItem | Microsoft Docs
+title: IActiveScriptAuthor::RemoveNamedItem | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645600"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088828"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Entfernt eine `NamedItem` Objekt aus dem Namespace des Skripts Modul erstellen.  
+Entfernt eine `NamedItem` Objekt aus dem Namespace, der das Skript-Engine-Erstellung.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -46,10 +46,10 @@ HRESULT RemoveNamedItem(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`S_FALSE`|Die `NamedItem` Objekt ist nicht im Namespace des Skripts authoring Modul vorhanden.|  
+|`S_FALSE`|Die `NamedItem` Objekt ist nicht vorhanden ist, im Namespace des Skript-Engine-Erstellung.|  
   
 ## <a name="remarks"></a>Hinweise  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) wird verwendet, um das Einfügen der `NamedItem` Objekt in das Skript des Moduls Namespace erstellen.  
+ [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) wird verwendet, um das Einfügen der `NamedItem` Objekt in das Skript-Engine-Namespace erstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   

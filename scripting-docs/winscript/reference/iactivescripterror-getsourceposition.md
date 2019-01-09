@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition | Microsoft Docs
+title: IActiveScriptError::GetSourcePosition | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645840"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097369"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Ruft die Position im Quellcode, in ein Fehler aufgetreten ist, während das Skriptmodul ein Skript ausgeführt wurde.  
+Ruft die Position im Quellcode, in denen ist ein Fehler aufgetreten, während die Skript-Engine ein Skript ausgeführt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -40,10 +40,10 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Parameter  
  `pdwSourceContext`  
- [out] Die Adresse einer Variablen, die einen Cookie empfängt, der den Kontext angibt. Die Auslegung dieses Parameters hängt von der hostanwendung.  
+ [out] Die Adresse einer Variablen, die einen Cookie empfängt, der den Kontext angibt. Die Interpretation dieses Parameters hängt von der hostanwendung ab.  
   
  `pulLineNumber`  
- [out] Die Adresse einer Variablen, die die Zeilennummer in der Quelldatei empfängt, in dem der Fehler aufgetreten ist.  
+ [out] Die Adresse einer Variablen, die die Nummer der Zeile in der Quelldatei erhält, in dem der Fehler aufgetreten ist.  
   
  `pichCharPosition`  
  [out] Die Adresse einer Variablen, die die Zeichenposition in der Zeile empfängt, in dem der Fehler aufgetreten ist.  

@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescripttraceinfo:: Stopscripttracing-Methode | Microsoft Docs'
+title: 'Iactivescripttraceinfo:: Stopscripttracing-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3fb0f77ff84453eaf202d09d05cd926cf0e7c2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74e776d066d99a351d8dfe49a21df929ab10a996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724950"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089010"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>IActiveScriptTraceInfo::StopScriptTracing-Methode
-Ablaufverfolgung von Skripts wird beendet.  
+Ablaufverfolgung von Skripts beendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT StopScriptTracing(void); }  
 ```  
   
@@ -32,8 +32,8 @@ HRESULT StopScriptTracing(void); }
  Diese Methode hat keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die möglichen Rückgabewerte für diese Methode werden wie folgt aus:  
+ Die möglichen Rückgabewerte für diese Methode sind wie folgt aus:  
   
-1.  S_OK: Erfolg.  
+1.  S_OK: Erfolgreich.  
   
 2.  E_NOTIMPL: Nicht implementiert.

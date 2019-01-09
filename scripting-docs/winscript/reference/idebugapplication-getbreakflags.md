@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Microsoft Docs
+title: IDebugApplication::GetBreakFlags | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a44f56e4070c159e67b1303514592c5dda25f56d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725550"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087242"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Gibt die aktuelle Break-Flags für die Anwendung zurück.  
+Gibt den aktuellen Break-Flags für die Anwendung zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -42,7 +42,7 @@ HRESULT GetBreakFlags(
  [out] Die aktuelle Break-Flags für die Anwendung.  
   
  `pprdatSteppingThread`  
- [out] Der derzeit ausgeführten Thread.  
+ [out] Der aktuell ausgeführten Thread.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,7 +52,7 @@ HRESULT GetBreakFlags(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die aktuelle Break-Flags für die Anwendung zurück.  
+ Diese Methode gibt die aktuellen Break-Flags für die Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   

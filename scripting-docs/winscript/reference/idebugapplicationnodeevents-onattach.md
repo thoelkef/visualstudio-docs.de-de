@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
+title: IDebugApplicationNodeEvents::onAttach | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725960"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091259"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten zu einem übergeordneten Knoten angefügt wurde.  
+Behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten an einem übergeordneten Knoten angefügt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -48,9 +48,9 @@ HRESULT onAttach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten zu einem übergeordneten Knoten angefügt wurde.  
+ Diese Methode behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten an einem übergeordneten Knoten angefügt wurde.  
   
- Implementierer der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

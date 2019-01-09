@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Microsoft Docs
+title: IDebugApplication::FCanJitDebug | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725220"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095354"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-Bestimmt, ob ein Just-in-Time (JIT)-Debugger registriert ist.  
+Bestimmt, ob ein just-in-Time (JIT)-Debugger registriert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, und ein JIT-Debugger registriert ist, gibt die Methode `TRUE`. Andernfalls wird zurückgegeben `FALSE`.  
+ Wenn die Methode erfolgreich ist, und ein JIT-Debugger registriert ist, gibt die Methode `TRUE`. Andernfalls wird `FALSE` zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bestimmt, ob ein JIT-Debugger registriert ist.  
+ Diese Methode wird bestimmt, ob ein JIT-Debugger registriert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

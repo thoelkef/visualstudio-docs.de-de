@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft Docs
+title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2185987f6b635dae4d537231fca3327d0aed003
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 29cbcebc5bdc51be4223b2592bbe6ac3ae76525d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729070"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086358"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Ermöglicht die Erstellung von Objekten in der Anwendungsprozess in Code vorgesehen, Out-of-Process an die Anwendung.  
+Ermöglicht die Erstellung von Objekten in der der Anwendungsprozess von Code, Out-of-Process an die Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CreateInstanceAtApplication(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -42,10 +42,10 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Parameter  
  `rclsid`  
- [in] Klassenbezeichner (CLSID) des zu erstellenden Objekts.  
+ [in] Klassen Sie-ID (CLSID) des zu erstellenden Objekts.  
   
  `pUnkOuter`  
- [in] Wenn `NULL`, das Objekt wird nicht als Teil eines Aggregats erstellt. Andernfalls `pUnkOuter` ist ein Zeiger auf des aggregatobjekts `IUnknown` Schnittstelle (steuernde `IUnknown`).  
+ [in] Wenn `NULL`, das Objekt ist nicht als Teil eines Aggregats erstellt wird. Andernfalls `pUnkOuter` ist ein Zeiger auf des aggregatobjekts `IUnknown` Schnittstelle (das steuernde `IUnknown`).  
   
  `dwClsContext`  
  [in] Kontext für die Ausführung von ausführbarem Code. Die Werte stammen aus der Enumeration `CLSCTX`.  
@@ -54,7 +54,7 @@ HRESULT CreateInstanceAtApplication(
  [in] Der Schnittstellenbezeichner verwendet, um die Kommunikation mit dem Objekt.  
   
  `ppvObject`  
- [out] Adresse des Zeigervariable, die den Schnittstellenzeiger in angeforderte empfängt `riid`. Nach erfolgreicher Rückkehr *`ppvObject` enthält den angeforderten Schnittstellenzeiger auf. Bei einem Ausfall \* `ppvObject` enthält `NULL`.  
+ [out] Adresse der Zeigervariable, die im angeforderten Schnittstellenzeiger empfängt `riid`. Nach der erfolgreichen Rückgabe *`ppvObject` enthält den angeforderten Schnittstellenzeiger. Bei einem Fehler \* `ppvObject` enthält `NULL`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -64,7 +64,7 @@ HRESULT CreateInstanceAtApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode delegiert an `CoCreateInstance`.  
+ Diese Methode delegiert zur `CoCreateInstance`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

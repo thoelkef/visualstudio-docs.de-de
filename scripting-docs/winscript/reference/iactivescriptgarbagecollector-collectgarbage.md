@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptGarbageCollector::CollectGarbage | Microsoft Docs
+title: IActiveScriptGarbageCollector::CollectGarbage | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07d5a00e04939331f85c4c74727aaf03b62814fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 478a7a39c69e0c2106e3c6cc308f44f8f7aa3201
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645730"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097122"
 ---
 # <a name="iactivescriptgarbagecollectorcollectgarbage"></a>IActiveScriptGarbageCollector::CollectGarbage
-Die Active Script Host ruft diese Methode zum Starten der Garbagecollection.  
+Die Active Script-Host ruft diese Methode, um die Garbagecollection gestartet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CollectGarbage(        SCRIPTGCTYPE scriptgctype    );  
 ```  
   
 #### <a name="parameters"></a>Parameter  
  `scriptgctype`  
- [in] Die [SCRIPTGCTYPE-Enumeration](../../winscript/reference/scriptgctype-enumeration.md) die angibt, ob normal oder vollständige Garbagecollection auszuführen.  
+ [in] Die [SCRIPTGCTYPE-Enumeration](../../winscript/reference/scriptgctype-enumeration.md) , der angibt, ob mit normaler oder vollständige Garbagecollection auszuführen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt ein HRESULT zurück.  

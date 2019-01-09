@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
+title: IRemoteDebugApplication::ConnectDebugger | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538b7a3f76e6026297839e4a7a37e6c21a72d7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e6db85ab30d04ebaf24ec0e955aab529ff8799d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729330"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088854"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-Verbindet einen Debugger an dieser Anwendung an.  
+Verbindet einen Debugger an diese Anwendung an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -38,7 +38,7 @@ HRESULT ConnectDebugger(
   
 #### <a name="parameters"></a>Parameter  
  `pad`  
- [in] Der Debugger auf diese Anwendung angefügt werden soll.  
+ [in] Der Debugger auf diese Anwendung angefügt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -46,10 +46,10 @@ HRESULT ConnectDebugger(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_FAIL`|Ein Debugger ist mit dieser Anwendung bereits verbunden.|  
+|`E_FAIL`|Ein Debugger ist bereits auf diese Anwendung verbunden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Anwendung kann nur ein Debugger verbunden gleichzeitig verwenden. Diese Methode schlägt fehl, wenn bereits ein Debugger verbunden ist.  
+ Eine Anwendung kann nur einen Debugger, die Verbindung zu einem Zeitpunkt verfügen. Diese Methode schlägt fehl, wenn bereits ein Debugger verbunden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   

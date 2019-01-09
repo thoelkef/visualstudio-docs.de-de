@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames | Microsoft Docs
+title: IDebugStackFrameSniffer::EnumStackFrames | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726790"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089302"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Gibt einen Enumerator für Stapelrahmen des aktuellen Threads zurück.  
+Gibt einen Enumerator der Stapelrahmen des aktuellen Threads.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parameter  
  `ppedsf`  
- [out] Enumerator für Stapelrahmen des aktuellen Threads.  
+ [out] Der Enumerator von Stapelrahmen des aktuellen Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Stack-Frame-Enumerator gibt die Frames, die beginnend am oberen Ende des Stapels zurück, beginnend mit der zuletzt abgelegte Frame.  
+ Die Stack-Frame-Enumerator gibt die Frames, die beginnend ab des Anfang des Stapels, beginnend mit dem zuletzt abgelegte Frame zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrameSniffer-Schnittstelle](../../winscript/reference/idebugstackframesniffer-interface.md)

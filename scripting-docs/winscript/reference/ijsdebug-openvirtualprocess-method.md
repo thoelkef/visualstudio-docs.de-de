@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebug:: OpenVirtualProcess-Methode | Microsoft Docs'
+title: 'Ijsdebug:: OpenVirtualProcess-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727360"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093989"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess-Methode
 Factorymethode, die zum Erstellen eines neuen virtuellen Prozessobjekts verwendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  

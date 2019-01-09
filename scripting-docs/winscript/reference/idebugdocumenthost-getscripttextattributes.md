@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetScriptTextAttributes | Microsoft Docs
+title: Getscripttextattributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 517b228bb46594d19ba6d2fdf41a68e22ac03c75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728530"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092715"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
-Gibt den Textattribute für einen Textblock Dokument zurück.  
+Gibt die Textattribute für einen Textblock Dokument zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
    LPCOLESTR          pstrCode,  
    ULONG              uNumCodeChars,  
@@ -42,25 +42,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parameter  
  `pstrCode`  
- [in] Der Skripttext Block. Diese Zeichenfolge muss nicht null-terminiert.  
+ [in] Der Text des Skript-Block. Diese Zeichenfolge muss es sich nicht auf null-terminiert.  
   
  `uNumCodeChars`  
- [in] Die Anzahl der Zeichen im Text Skript-Block.  
+ [in] Die Anzahl der Zeichen im Text-Block Skript.  
   
  `pstrDelimiter`  
- [in] Die Adresse des Trennzeichens zum Ende der Skriptblock. Wenn `pstrCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen, z. B. zwei Anführungszeichen ("), um das Ende des Skriptblocks erkennen einfache. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass dem Skriptmodul in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) das scripting Modul verwendet diese Informationen hängen von dem Skriptmodul. Legen Sie diesen Parameter auf NULL, wenn der Host ein Trennzeichen nicht verwendet haben, um das Ende des Skriptblocks markieren.  
+ [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Wenn `pstrCode` wird analysiert, die aus einem Stream von Text und einem Trennzeichen, der Host in der Regel verwendet, wie z. B. zwei Anführungszeichen ("), um das Ende der Skriptblock erkennen einfache. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass der Skript-Engine in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) die Skript-Engine-verwendet diese Informationen hängen von der Skript-Engine. Legen Sie diesen Parameter auf NULL, wenn der Host ein einzeln verwendetes Trennzeichen nicht verwendet haben, um das Ende des Skriptblocks markieren.  
   
  `dwFlags`  
- [in] Flags, die mit dem Skriptblock verknüpft sind. Es kann eine Kombination dieser Werte sein:  
+ [in] Flags, die mit dem Skriptblock verknüpft ist. Es kann eine Kombination dieser Werte sein:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Gibt an, dass es sich bei Bezeichnern und Punktoperatoren mit den Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP bzw. identifiziert werden sollen.|  
-|GETATTRFLAG_THIS|0 x 0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem Flag SOURCETEXT_ATTR_THIS identifiziert werden sollen.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Gibt an, dass Inhalte und einen Kommentar Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass es sich bei Bezeichnern und Punktoperatoren mit den Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP bzw. identifiziert werden sollen.|  
+|GETATTRFLAG_THIS|0x0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem Flag SOURCETEXT_ATTR_THIS identifiziert werden sollen.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Gibt an, dass der Inhalt, und kommentieren Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
   
  `pattr`  
- [in, out] Puffer, in die zurückgegebenen Attribute enthalten.  
+ [in, out] Puffer, der die zurückgegebenen Attribute enthalten.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -71,7 +71,7 @@ HRESULT GetScriptTextAttributes(
 |`E_NOTIMPL`|Der Host wird nur für die Standardattribute verwendet.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die Textattribute für einen beliebigen TextBlock Dokument zurück. Für Hosts zurückzugebenden akzeptabel ist `E_NOTIMPL`, in diesem Fall die Standardattribute verwendet werden.  
+ Diese Methode gibt die Textattribute für ein beliebiger Speicherblock, der Dokumenttext. Für Hosts zurückzugebenden akzeptabel ist `E_NOTIMPL`, in diesem Fall die Standardattribute verwendet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)   

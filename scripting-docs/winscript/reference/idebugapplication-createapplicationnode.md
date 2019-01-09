@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Microsoft Docs
+title: IDebugApplication::CreateApplicationNode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26ed66921175659d7125a0e32a043e7ebcf98cc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 71aea5c3a7efb6534daab5fc916187c0f56122b3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725250"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095549"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Erstellt einen neue Anwendungsknoten, der einem bestimmten Dokument Anbieter zugeordnet ist.  
+Erstellt einen neuen Anwendungsknoten, der mit einem bestimmten Dokument Anbieter zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CreateApplicationNode(  
    IDebugApplicationNode**  ppdanNew  
 );  
@@ -48,7 +48,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der neue Anwendungsknoten ist nicht sichtbar, bis er an einen übergeordneten Knoten angefügt ist.  
+ Der neue Anwendungsknoten ist nicht sichtbar, bis sie an einem übergeordneten Knoten angefügt ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetText | Microsoft Docs
+title: IScriptEntry::SetText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62f1d113dc23dca85db02bf23b2c79551108f3b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a100b406365590bbba392afd7558e2fb7219ccb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728990"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096355"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
 Legt den Text, der entspricht einer `IScriptEntry` Skriptblock oder der Quellcode, der in enthalten ist ein `IScriptScriptlet` -Ereignishandler.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetText(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- [in] Der Text, der die `IScriptEntry` Skriptblock oder der Quellcode des der `IScriptScriptlet` -Ereignishandler.  
+ [in] Der Text des der `IScriptEntry` Skriptblock oder den Quellcode der `IScriptScriptlet` -Ereignishandler.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

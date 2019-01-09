@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
+title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fab017ab286957cf2c4be35832b1db877b339bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 890cc1b6c38f44c4140274dcaa19deff1fd276e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725280"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095510"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Schaltet das Fenster mit den angegebenen Dokumentenkontext in der Debugger-Benutzeroberfläche nach oben, und verschiebt das Fenster, um den Kontext.  
+Bringt das Fenster, die den angegebenen Dokument-Kontext oben in der Debugger-Benutzeroberfläche und führt einen Bildlauf durch das Fenster, um den Kontext.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,7 +38,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parameter  
  `pddc`  
- [in] Dokumentkontext, in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
+ [in] Dokumentkontext, der in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -46,10 +46,10 @@ HRESULT BringDocumentContextToTop(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_INVALIDARG`|Durch angegebene Kontext `pddc` ist nicht bekannt.|  
+|`E_INVALIDARG`|Der Kontext anhand des `pddc` ist nicht bekannt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bringt das Fenster mit den angegebenen Dokumentenkontext oben in der Debugger-Benutzeroberfläche und verschiebt das Fenster, um den Kontext.  
+ Diese Methode bringt das Fenster, die den angegebenen Dokument-Kontext oben in der Debugger-Benutzeroberfläche und führt einen Bildlauf durch das Fenster, um den Kontext.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IApplicationDebuggerUI-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled | Microsoft Docs
+title: IActiveScriptProfilerCallback::ScriptCompiled | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ea1823087b323f2acc9b87edfce48bbe9f924bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf653e5623506a68e6353e3d9f97077592e87941
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091506"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-Benachrichtigt dem Profiler-Objekt, das das Skript-engine-ein Skript kompiliert. Diese Methode wird für jedes Skript aufgerufen, das kompiliert wird.  
+Benachrichtigt den Profiler, dass das Objekt, das die Skript-Engine-ein-Skript kompiliert. Diese Methode wird für jedes Skript aufgerufen, die kompiliert wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ScriptCompiled(  
     [in] PROFILER_TOKEN scriptId,  
     [in] PROFILER_SCRIPT_TYPE type,  
@@ -37,19 +37,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>Parameter  
  `scriptId`  
- [in] Die eindeutige ID des Skripts, das kompiliert wurde. Diese ID wird vom Skriptmodul zugewiesen.  
+ [in] Die eindeutige ID des Skripts, das kompiliert wurde. Diese ID wird von der Skript-Engine zugewiesen.  
   
  `type`  
- [in] Der Typ des Skripts, das kompiliert wurde. Die Werte werden definiert, [PROFILER_SCRIPT_TYPE-Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] Der Typ des Skripts, das kompiliert wurde. Die Werte werden definiert [PROFILER_SCRIPT_TYPE-Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- [in] Falls verfügbar, ein Zeiger auf ein `IUnknown` -Schnittstelle, die der Profiler für die Abfrage ausführen muss ein [IDebugDocumentContext-Schnittstelle](../../winscript/reference/idebugdocumentcontext-interface.md) Zeiger. Dies wird, andernfalls null sein.  
+ [in] Wenn möglich, ein Zeiger auf ein `IUnknown` -Schnittstelle, die der Profiler für die Abfrage muss eine [IDebugDocumentContext-Schnittstelle](../../winscript/reference/idebugdocumentcontext-interface.md) Zeiger. Dies wird, andernfalls null sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Der Rückgabewert dieser Methode wird vom Skriptmodul ignoriert.  
+ Der Rückgabewert dieser Methode wird von der Skript-Engine ignoriert.  
   
 ## <a name="remarks"></a>Hinweise  
- Das Skriptmodul bieten den Dokumentenkontext, nur, wenn dies vom Host unterstützt wird.  
+ Die Skript-Engine kann den Dokumentenkontext bereitstellen, nur dann, wenn dies vom Host unterstützt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptProfilerCallback-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)

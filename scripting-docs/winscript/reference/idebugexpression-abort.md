@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Abort | Microsoft Docs
+title: IDebugExpression::Abort | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244713cad3cbc67776bd55d657842d0ca70139dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4afa5ded53455edacb23cf5efbb46575ce8ca5b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726520"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093976"
 ---
 # <a name="idebugexpressionabort"></a>IDebugExpression::Abort
 Den Ausdruck wird beendet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Abort();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,7 +45,7 @@ HRESULT Abort();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode beendet eine Auswertung von Ausdrücken bei nächstmöglicher Gelegenheit.  
+ Diese Methode wird die Auswertung eines Ausdrucks bei nächstmöglicher Gelegenheit beendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)   

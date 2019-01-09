@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
+title: IDebugHelper::CreatePropertyBrowser | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727480"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087749"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Gibt einen Eigenschaftenbrowser, der dient als Wrapper für eine Variante zurück.  
+Gibt einen Eigenschaftenbrowser, der umschließt eine Variante zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -47,10 +47,10 @@ HRESULT CreatePropertyBrowser(
  [in] Name für den Stamm.  
   
  `pdat`  
- [in] Thread für die Eigenschaften anfordern. Wenn dieser Parameter NULL ist, wird kein marshalling ausgeführt.  
+ [in] Thread auf dem Eigenschaften angefordert. Wenn dieser Parameter NULL ist, kein marshalling erfolgt.  
   
  `ppdob`  
- [out] Eigenschaftenbrowser.  
+ [out] Der Eigenschaftenbrowser.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

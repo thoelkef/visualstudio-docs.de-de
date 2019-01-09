@@ -1,5 +1,5 @@
 ---
-title: BREAKPOINT_STATE-Enumeration | Microsoft Docs
+title: BREAKPOINT_STATE-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640770"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097278"
 ---
 # <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE-Enumeration
 Gibt den Zustand eines Haltepunkts an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -42,7 +42,7 @@ typedef enum tagBREAKPOINT_STATE {
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Der Breakpoint nicht mehr vorhanden, aber es sind noch darauf verwiesen wird.|  
+|BREAKPOINT_DELETED|Der Haltepunkt nicht mehr vorhanden ist, aber es gibt immer noch darauf verwiesen wird.|  
 |BREAKPOINT_DISABLED|Der Haltepunkt vorhanden, aber deaktiviert.|  
 |BREAKPOINT_ENABLED|Der Haltepunkt vorhanden und aktiviert ist.|  
   

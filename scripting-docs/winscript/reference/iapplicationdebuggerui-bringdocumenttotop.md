@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
+title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725310"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096251"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Schaltet das Fenster mit dem die angegebene Debug-Dokument in der Debugger nach oben Benutzeroberfläche.  
+Bringt das Fenster mit dem angegebenen Debug-Dokument oben im Debugger-Benutzeroberfläche.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -38,7 +38,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parameter  
  `pddt`  
- [in] Das Debuggen des Dokument in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
+ [in] Debuggen von Dokument, in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Das Dokument ist nicht bekannt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bringt das Fenster, die mit dem die angegebene Debug-Dokument nach oben im Debugger-Benutzeroberfläche.  
+ Diese Methode bringt das Fenster, die mit dem angegebenen Debug-Dokument oben im Debugger-Benutzeroberfläche.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IApplicationDebuggerUI-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Microsoft Docs
+title: IVariantChangeType::ChangeType | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d742d1bd57c85aa75c9ccd60479d08c1a559fb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a02b8a3991ff6d20370cd4a2ea4cd87aa9a1226
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734200"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086579"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
 Akzeptiert einen Varianten-Wert, und erstellt eine neue Variante mit einem angegebenen Typ.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ChangeType(  
    VARIANT*  pvarDst,  
    VARIANT*  pvarSrc,  
@@ -41,7 +41,7 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parameter  
  `pvarDst`  
- [in, out] Eine Variante der dargestellte Wert enthalten `pvarSrc`, jedoch mit den vom angegebenen Typ `vtNew`.  
+ [in, out] Eine Variante durch dargestellten Wert enthält `pvarSrc`, jedoch mit den vom angegebenen Typ `vtNew`.  
   
  `pvarSrc`  
  [in] Ein variant-Wert in einen neuen Typ zu ändern.  
@@ -60,7 +60,7 @@ HRESULT ChangeType(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `pvarDst` und `pvarSrc` Argumente möglicherweise gleich sind, und in diesem Fall wird der ursprüngliche Wert überschrieben. Diese Methode transferiert `pvarDst` auf die `VariantClear` -Funktion, und infolgedessen wird auch `pvarDst` sollte auf einen gültigen Wert initialisiert werden.  
+ Die `pvarDst` und `pvarSrc` Argumente möglicherweise gleich ist, in diesem Fall wird der ursprüngliche Wert überschrieben. Diese Methode übergibt `pvarDst` auf die `VariantClear` -Funktion, und folglich `pvarDst` auf einen gültigen Wert initialisiert werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IVariantChangeType-Schnittstelle](../../winscript/reference/ivariantchangetype-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Evaluate-Methode | Microsoft Docs'
+title: 'Ijsdebugframe:: Evaluate-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727450"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091922"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate-Methode
 Werten Sie einen Ausdruck im Kontext dieses Stapelrahmens aus.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -49,7 +49,7 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Rückgabewert  
   
 ## <a name="remarks"></a>Hinweise  
- Gibt Folgendes zurück: "S_OK": Auswertung folgt, "*ppDebugProperty" enthält Auswertungsergebnis. "S_FALSE": Auswertung löst einen Fehler (oder der Auswertungsvorgang wird nicht unterstützt), \*pError enthält die Fehlermeldung angezeigt.  
+ Gibt Folgendes zurück: S_OK: Auswertung folgt, * PpDebugProperty enthält Auswertungsergebnis. "S_FALSE": Auswertung löst einen Fehler (oder der Auswertungsvorgang wird nicht unterstützt), \*pError enthält die Fehlermeldung angezeigt.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** "jscript9diag.h"  

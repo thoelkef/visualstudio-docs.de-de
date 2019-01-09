@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetIndexInParent | Microsoft Docs
+title: IScriptNode::GetIndexInParent | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3862a48ff4649f018eec79bf0411f23bc9f6d7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c484d212e2dccf20717aec5dca44d5c3319e15c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089569"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Gibt den Index eines Objekts in die untergeordnete Liste des übergeordneten Elements zurück.  
+Gibt den Index eines Objekts in der Liste der untergeordneten Elemente des übergeordneten Elements zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetIndexInParent(  
    ULONG              pisn,  
 );  
@@ -38,9 +38,9 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parameter  
  `pisn`  
- [out] Gibt den Index eines Objekts in die untergeordnete Liste des übergeordneten Elements zurück.  
+ [out] Gibt den Index eines Objekts in der Liste der untergeordneten Elemente des übergeordneten Elements zurück.  
   
- Wenn diese Methode, indem aufgerufen wird ein `IScriptNode` -Objekt, dass eine Webseite darstellt, dieser Parameter "0" zurück.  
+ Wenn diese Methode, indem aufgerufen wird ein `IScriptNode` Objekt, dass eine Webseite darstellt stellt, dieser Parameter 0 zurückgibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

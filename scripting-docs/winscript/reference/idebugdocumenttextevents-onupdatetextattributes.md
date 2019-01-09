@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft Docs
+title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea7caa1c1632e1a85e12010ec39593b8e0a6d63
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c2e5624e7cbefdca929a11b75f0273337fab30c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727350"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097161"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-Gibt an, dass die zugrunde liegenden Zeichenbereich Position zugeordneten Textattribute geändert wurden.  
+Gibt an, dass der Bereich der zugrunde liegenden Position zugeordnete Textattribute geändert haben.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onUpdateTextAttributes(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToUpdate  
@@ -52,7 +52,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, dass die zugrunde liegenden Zeichenbereich Position zugeordneten Textattribute geändert wurden.  
+ Diese Methode gibt an, dass der Bereich der zugrunde liegenden Position zugeordnete Textattribute geändert haben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

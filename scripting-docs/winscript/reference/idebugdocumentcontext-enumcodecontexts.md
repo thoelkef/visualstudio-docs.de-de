@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts | Microsoft Docs
+title: IDebugDocumentContext::EnumCodeContexts | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 300102d75fcfa797e8e073b9a1ce77cc5ee2827a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47bf36a8d013ffbb3c09214d590960c833e53218
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725870"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086267"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-Listet die Code-Kontexte, die diesem Dokumentenkontext zugeordnet.  
+Listet die Codekontexte mit diesem Dokumentenkontext verknüpft ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT EnumCodeContexts(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Parameter  
  `ppescc`  
- [out] Dieses Dokumentenkontext zugeordneten Code-Kontexte.  
+ [out] Die Codekontexte mit diesem Dokumentenkontext verknüpft ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Dokument ist normalerweise nur ein Codekontext zugeordnet, es sei denn, das Dokument eine Include-Datei oder eine Vorlage ist.  
+ Ein Dokument ist nur ein Codekontext, in der Regel zugeordnet, es sei denn, das Dokument einer Include-Datei oder einer Vorlage ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext-Schnittstelle](../../winscript/reference/idebugdocumentcontext-interface.md)
