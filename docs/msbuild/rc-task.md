@@ -1,8 +1,6 @@
 ---
 title: RC-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915587"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
 Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
@@ -37,7 +35,7 @@ Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der RC-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Optionaler **String[]**-Parameter.<br /><br /> Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.<br /><br /> Weitere Informationen finden Sie unter der **/I**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|  
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Liste der Befehlszeilenoptionen, z.B. /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **RC**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie unter den Optionen im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|  

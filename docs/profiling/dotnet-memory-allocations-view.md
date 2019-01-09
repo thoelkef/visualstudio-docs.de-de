@@ -1,8 +1,6 @@
 ---
 title: .NET-Speicherbelegungsansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895544"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der Profilerstellung erstellt wurden. Jeder Typ ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, anhand derer die Speicherbelegung des Typs bestimmt wurde.  
@@ -40,7 +38,7 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
   
 -   Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name des zugeordneten Typs oder der zugeordneten Funktion.|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  

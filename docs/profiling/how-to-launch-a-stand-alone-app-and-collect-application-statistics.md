@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Starten einer eigenständigen Anwendung mit dem Profiler und Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 3fb8f3ca57ce189dc0bcecff5c755860f219a7ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926624"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Starten einer eigenständigen Anwendung mit dem Profiler und Sammeln von Anwendungsstatistiken über die Befehlszeile
 In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eine eigenständige (Client-)Anwendung gestartet wird und wie mit der Samplingmethode Leistungsstatistiken gesammelt werden können.  
@@ -98,7 +96,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     -   Schließen Sie die Zielanwendung.  
 
-         - oder -   
+         - oder -  
 
     -   Geben Sie **VSPerfCmd /detach** ein.  
 

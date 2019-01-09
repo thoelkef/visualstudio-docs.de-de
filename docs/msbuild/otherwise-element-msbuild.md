@@ -1,8 +1,6 @@
 ---
 title: Otherwise-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bb9f6056b83c7701e4d0e5e6eed72bbba1da778d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895791"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise-Element (MSBuild)
 Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden.  
@@ -57,7 +55,7 @@ Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, 
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|Beschreibung |  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[Auswählen](../msbuild/choose-element-msbuild.md)|Optionales Element.<br /><br /> Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen. Es kann keine oder mehrere `Choose`-Elemente in einem `Otherwise`-Element geben.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Optionales Element.<br /><br /> Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Es kann keine oder mehrere `ItemGroup`-Elemente in einem `Otherwise`-Element geben.|  
@@ -65,7 +63,7 @@ Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung |  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[Auswählen](../msbuild/choose-element-msbuild.md)|Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen.|  
 

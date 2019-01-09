@@ -1,8 +1,6 @@
 ---
 title: ParameterGroup-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a47c77ecb441d2c1277fee1a7e94e1e9a7991b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a531073ba6f2f55272b719a116caad724d29e53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916162"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup-Element
 Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sein werden, die von `UsingTask` `TaskFactory` generiert wird. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -46,13 +44,13 @@ Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sei
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|Beschreibung |  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die von einer `UsingTask` `TaskFactory` generiert wird. Der Name des Elements ist der Name des Parameters.|  
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-| Element | Beschreibung  |
+| Element | Beschreibung |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 

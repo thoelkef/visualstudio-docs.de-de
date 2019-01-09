@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten mit dem Profiler über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50b280208e686801539adb338a001bdb69324457
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: b8f98e0c9e0277849b967bbba784b4b81395c713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857290"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler
 In diesem Artikel wird beschrieben, wie eine native Komponente (beispielsweise eine *EXE*- oder *DLL*-Datei in C++) mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools instrumentiert wird und wie ausführliche Zeitsteuerungsdaten gesammelt werden.  

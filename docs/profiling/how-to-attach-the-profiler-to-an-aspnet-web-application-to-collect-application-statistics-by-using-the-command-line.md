@@ -2,7 +2,6 @@
 title: Anfügen des Profilers an eine ASP.NET-Web-App zum Sammeln von App-Statistiken
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 19eb50c967a208a6c5267688ee919f0faaca548e
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: a9cbb5368fde6f253591a10240df46f748fc72d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917630"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ASP.NET-Webanwendung angefügt wird und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.  
@@ -113,7 +112,7 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
 
    - Geben Sie **VSPerfCmd /detach** ein.  
 
-      - oder -   
+      - oder -  
 
    - Schließen Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess.  
 

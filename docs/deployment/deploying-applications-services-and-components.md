@@ -3,7 +3,6 @@ title: 'Bereitstellung: Featuretour'
 description: Erfahren Sie, wie Sie Apps aus Visual Studio bereitstellen können.
 ms.custom: mvc
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d0db2a9dcd19b2100239a99ec8fc08850432aa80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860035"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Ein erster Einblick in die Bereitstellung in Visual Studio
 

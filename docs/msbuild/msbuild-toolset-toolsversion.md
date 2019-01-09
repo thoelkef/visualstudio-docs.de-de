@@ -1,8 +1,6 @@
 ---
 title: MSBuild-Toolset (ToolsVersion) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/31/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multitargeting
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1822ed7c90a2cab746690769ea9202ab2e9c9947
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2c681ab49ba7fe6de60aa68cdec923cdf9f677fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841225"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*), eine Datei mit allgemeinen Zielen (*microsoft.common.targets*) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.

@@ -2,19 +2,18 @@
 title: Anfügen des Profilers an eine .NET-App zum Sammeln von Arbeitsspeicherdaten
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c11a6cd6d34a73956b2efa64a45aae6c4ba2da62
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9c5130f6ea19112e5bb629f09ac7cd4171770653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821288"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten über die Befehlszeile
 
@@ -99,7 +98,7 @@ Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profili
 
     - Geben Sie **VSPerfCmd /detach** ein.
 
-         - oder - 
+         - oder -
 
     - Schließen Sie die Zielanwendung.
 

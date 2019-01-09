@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870452"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents
 

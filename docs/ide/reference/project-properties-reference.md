@@ -2,7 +2,6 @@
 title: Projekteigenschaftenverweise
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
@@ -13,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f0adad956786f3096174460aabd007e0cb8592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cfbe0c602264da31b89add3e2e6ca1124f62a52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891643"
 ---
 # <a name="project-properties-reference"></a>Projekteigenschaftenverweise
 Weitere Informationen zum Konfigurieren und Anpassen von Projekteigenschaften.
 
 ## <a name="project-properties-pages"></a>Projekteigenschaftenseiten
 
-| Titel | Beschreibung  |
+| Titel | Beschreibung |
 | - | - |
 | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Auf dieser Seite können Sie Anwendungseinstellungen und Eigenschaften für ein [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt festlegen. |
 | [Seite „Anwendung“, Projekt-Designer (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Auf dieser Seite können Sie Anwendungseinstellungen und Eigenschaften für ein [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekt festlegen. |

@@ -1,8 +1,6 @@
 ---
 title: MSBuild-Grundlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, concepts
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961f7df72476293c101ceeacbafbb31c1084fb20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1aaaf8dfae7ed0fd3626779fa1ba33e795d9f1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913503"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.  
 
 ## <a name="related-topics"></a>Verwandte Themen  
 
-| Titel | Beschreibung  |
+| Titel | Beschreibung |
 | - | - |
 | [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md) | Hierin werden Eigenschaften und Eigenschaftenauflistungen eingeführt. Eigenschaften sind Schlüssel/Wert-Paare, die zur Konfiguration von Builds verwendet werden können. |
 | [MSBuild-Elemente](../msbuild/msbuild-items.md) | Führt Elemente und Elementauflistungen ein. Elemente sind Eingaben in das Buildsystem und stellen in der Regel Dateien dar. |
@@ -36,4 +34,3 @@ ms.locfileid: "49892881"
 | [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md) | Bietet eine Einführung zu den Bausteinen von MSBuild und beschreibt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen. |
 | [MSBuild-Referenz](../msbuild/msbuild-reference.md) | Enthält Links zu Referenzmaterial. |
 | [MSBuild](../msbuild/msbuild.md) | Bietet eine Übersicht über das XML-Schema für Projektdateien, und enthält Informationen dazu, wie sich damit Prozesse für das Erstellen von Software steuern lassen. |
-
