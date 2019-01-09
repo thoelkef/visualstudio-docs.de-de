@@ -3,19 +3,18 @@ title: IntelliSense für R-Code
 description: Visual Studio IntelliSense zeigt während der Eingabe von R-Code Informationen zu Funktionen, Objektelementen, Codeausschnitten und Vervollständigungen an.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9efdae5623c00abe4626d1bbb21af4a790fa487
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eaa56759476a2cecc557c4610a6b9e321b9b91ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959559"
 ---
 # <a name="intellisense"></a>IntelliSense
 

@@ -1,8 +1,6 @@
 ---
 title: FormatUrl-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c5e29260affb31d94d702fc19dad7704e3c110
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6086c03d3dae5a919b9b30abaecf2957076631b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845472"
 ---
 # <a name="formaturl-task"></a>FormatUrl-Aufgabe
 Konvertiert eine URL in ein gültiges URL-Format  
@@ -31,7 +29,7 @@ Konvertiert eine URL in ein gültiges URL-Format
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `FormatUrl` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`InputUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die zu formatierende URL an|  
 |`OutputUrl`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die formatierte URL an|  

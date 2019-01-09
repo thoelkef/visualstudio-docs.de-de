@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876723"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739944"
 ---
 # <a name="msbuild"></a>MSBuild
 Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie *msbuild.exe* im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.
@@ -29,7 +29,7 @@ Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]
 
  Die folgenden Beispiele veranschaulichen, wann Sie Builds über die MSBuild-Befehlszeile anstelle der Visual Studio-IDE ausführen sollten.
 
--   Visual Studio ist nicht installiert.
+-   Visual Studio ist nicht installiert. ([MSBuild ohne Visual Studio herunterladen](https://visualstudio.microsoft.com/downloads/?q=build+tools))
 
 -   Sie möchten die 64-Bit-Version von MSBuild verwenden. Diese Version von MSBuild ist normalerweise nicht erforderlich, ermöglicht MSBuild jedoch den Zugriff auf mehr Arbeitsspeicher.
 
@@ -50,7 +50,7 @@ Sie können Code in der Visual Studio-IDE schreiben, aber Builds mit MSBuild aus
 > [!NOTE]
 >  Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
- Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Walkthrough: Using MSBuild (Anleitung für das Verwenden von MSBuild)](../msbuild/walkthrough-using-msbuild.md).
+ Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="use-msbuild-at-a-command-prompt"></a>Verwenden von MSBuild an einer Eingabeaufforderung
  Übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an *MSBuild.exe*, um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] an einer Eingabeaufforderung auszuführen. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei *MyProj.proj*, deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.
@@ -149,7 +149,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ## <a name="use-msbuild-in-visual-studio"></a>Verwenden von MSBuild in Visual Studio
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateiformat, um Buildinformationen zu verwalteten Projekten zu speichern. Die Projekteinstellungen, die mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle hinzugefügt oder geändert werden, werden in der *\*PROJ*-Datei gespeichert, die für das jeweilige Projekt generiert wird. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt verwaltete Projekte mithilfe einer gehosteten Instanz von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Das bedeutet, dass ein verwaltetes Projekt mit demselben Ergebnis entweder in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder an einer Befehlszeile erstellt werden kann (auch wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist).
 
- Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Walkthrough: Using MSBuild](../msbuild/walkthrough-using-msbuild.md) (Anleitung für das Verwenden von MSBuild).
+ Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen
  Mit Visual Studio können Sie eine Anwendung zur Ausführung in verschiedenen Versionen von .NET Framework kompilieren. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren. Die Möglichkeit, für mehr als ein Framework zu kompilieren, wird Festlegung von Zielversionen genannt.
@@ -170,7 +170,7 @@ Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multi
 
 ## <a name="see-also"></a>Siehe auch
 
-| Titel | Beschreibung  |
+| Titel | Beschreibung |
 | - | - |
 | [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird. |
 | [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md) | Die Bausteine von MSBuild werden eingeführt, und es wird gezeigt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen. |
@@ -182,7 +182,7 @@ Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multi
 | [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen) | Hier wird erläutert, wie das `Condition`-Attribut in einem MSBuild-Element verwendet wird. |
 | [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md) | Hier werden die Batchverarbeitung, das Ausführen von Transformationen, die Festlegung von Zielversionen sowie andere erweiterte Verfahren veranschaulicht. |
 | [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md) | Hier wird erläutert, wie Buildereignisse, Meldungen, Fehler protokolliert werden. |
-| [Zusätzliche Ressourcen](../msbuild/additional-msbuild-resources.md) | Hierin werden Community- und Unterstützungsressourcen für weitere Informationen zu MSBuild aufgeführt. |
+| [Zusätzliche Ressourcen](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Hierin werden Community- und Unterstützungsressourcen für weitere Informationen zu MSBuild aufgeführt. |
 
 ## <a name="reference"></a>Referenz
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)-Links zu Themen mit Referenzinformationen.
