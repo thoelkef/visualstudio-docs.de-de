@@ -1,8 +1,6 @@
 ---
 title: Veröffentlichen in App Service unter Linux
-ms.custom: ''
 ms.date: 07/23/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6bec894c6968498c185364e917904295f76422a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873770"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux
 
@@ -38,20 +36,20 @@ Für die Bereitstellung in App Service unter Linux mithilfe des Tools zum **Ver�
 
     ![Auswahl von Azure App Service](../deployment/media/quickstart-publish-linux.png "Choose Azure App Service")
 
-1. Wählen Sie **Veröffentlichen**. Dann wird das Dialogfeld **App Service erstellen** angezeigt. Melden Sie sich ggf. mit Ihrem Azure-Konto an. Dann werden die Felder mit den Standardeinstellungen für App Service aufgefüllt.
+1. Wählen Sie **Veröffentlichen**. Das Dialogfeld **App Service erstellen** wird angezeigt. Melden Sie sich ggf. mit Ihrem Azure-Konto an. Anschließend werden die Felder mit den Standardeinstellungen für App Service aufgefüllt.
 
     ![App Service erstellen](../deployment/media/quickstart-publish-settings-app-service-linux.png "Azure App Service erstellen")
 
-1. Wählen Sie **Erstellen** aus. Dann stellt Visual Studio die App in Azure App Service bereit und die Web-App wird in Ihrem Browser geladen. Im Bereich **Veröffentlichen** werden in den Projekteigenschaften die Website-URL und andere Details angezeigt.
+1. Wählen Sie **Erstellen** aus. Visual Studio stellt die App in Azure App Service bereit, und die Web-App wird in Ihrem Browser geladen. Im Bereich **Veröffentlichen** werden in den Projekteigenschaften die Website-URL und andere Details angezeigt.
 
-    ![Eigenschaftenbereich „Veröffentlichen“, in dem eine Profilzusammenfassung angezeigt wird](../deployment/media/quickstart-publish-app-service-summary.png)
+    ![Bereich „Veröffentlichen“ in den Projekteigenschaften mit einer Profilzusammenfassung](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
 
-Sie haben bereits eine Azure-Ressource in einer Ressourcengruppe erstellt. Wenn Sie sich sicher sind, dass Sie diese Ressourcen in Zukunft nicht mehr benötigen, können Sie sie löschen, indem Sie die Ressourcengruppe entfernen.
-Klicken Sie links im Azure-Portal erst auf **Ressourcengruppen** und dann auf **myResourceGroup**.
-Vergewissern Sie sich auf der Seite „Ressourcengruppe“, dass die dort aufgeführten Ressourcen auch wirklich die sind, die Sie löschen möchten.
-Klicken Sie auf **Löschen**, geben Sie **myResourceGroup** in das Textfeld ein, und klicken Sie erneut auf **Löschen**.
+In den vorherigen Schritten haben Sie bereits in einer Ressourcengruppe Azure-Ressourcen erstellt. Wenn Sie sich sicher sind, dass Sie diese Ressourcen in Zukunft nicht mehr benötigen, können Sie sie löschen, indem Sie die Ressourcengruppe entfernen.
+Wählen Sie links im Azure-Portal **Ressourcengruppen** und anschließend **myResourceGroup** aus.
+Vergewissern Sie sich, dass es sich bei den auf der Seite „Ressourcengruppe“ aufgeführten Ressourcen wirklich um die Ressourcen handelt, die gelöscht werden sollen.
+Klicken Sie auf **Löschen**, geben Sie **myResourceGroup** in das Textfeld ein, und klicken Sie anschließend erneut auf **Löschen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

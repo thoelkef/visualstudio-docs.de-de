@@ -2,7 +2,6 @@
 title: Befehl "Aktuellen Thread festlegen"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentthread
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b02dbc1d22716483acdfd5378316d6297f6b031f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03d253d9be0d8bf5456f1a436d45762d6f030f86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855337"
 ---
 # <a name="set-current-thread-command"></a>Befehl "Aktuellen Thread festlegen"
 Legt den angegebenen Thread als aktuellen Thread fest.
@@ -47,4 +46,4 @@ Debug.SetCurrentThread index
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

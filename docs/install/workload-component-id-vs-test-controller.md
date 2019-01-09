@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1d30541cc060a96f075b85f5f6a011e4ff9da19a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918699"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017-Komponentenverzeichnis
 
@@ -36,7 +35,7 @@ Beachten Sie zudem Folgendes im Hinblick auf die Seite:
 * Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
 * Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
 
-Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie auf der Seite [Vorgehensweise: Migrate Extensibility Projects to Visual Studio 2017 (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie unter [How to: Migrate Extensibility Projects to Visual Studio 2017 (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
 

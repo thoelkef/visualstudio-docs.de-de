@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898387"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstestlauf
 
@@ -62,7 +61,7 @@ Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführe
 
      Dem Ordner **Kontextparameter** im Ordner **Laufzeiteinstellungen** in der Auslastungsteststruktur wird ein neuer Kontextparameter hinzugefügt.
 
-     - oder - 
+     - oder -
 
      Wenn die Laufzeiteinstellung bereits einen **Kontextparameter**-Ordner enthält, können Sie mit der rechten Maustaste darauf klicken und dann auf **Kontextparameter hinzufügen** klicken.
 
