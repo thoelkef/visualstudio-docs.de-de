@@ -2,7 +2,6 @@
 title: Erstellen von Elementvorlagen mit mehreren Dateien
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877652"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
 
@@ -38,7 +37,7 @@ Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie e
 
 1. Erstellen Sie die Elementvorlage auf dieselbe Weise, wie Sie manuell eine Elementvorlage erstellen würden, die nur aus einer Datei besteht. Fügen Sie dabei allerdings jede Datei hinzu, die Bestandteil des Elements mit mehreren Dateien ist.
 
-1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Zum Beispiel:
+1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Beispiel:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
