@@ -1,9 +1,7 @@
 ---
 title: Analysieren der CPU-Auslastungsdaten (C++)
 description: Messen der App-Leistung in C++ mithilfe des Diagnosetools für die CPU-Auslastung
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883171"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 

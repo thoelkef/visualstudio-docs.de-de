@@ -1,8 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19671e0f9280f02a012ad02b5421f2d62d30926
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ad75506989b326cadf2f1a2b1cd6f133b91649ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886097"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID gibt das Pseudotoken für die Thread-ID oder die Prozess-ID in einem Aufruf der Funktionen NameProfile, StartProfile, StopProfile, SuspendProfile und ResumeProfile zurück. Verwenden Sie das Token, damit die Funktion den aktuellen Thread oder Prozess verarbeitet anstatt eines ausdrücklich angegebenen.  

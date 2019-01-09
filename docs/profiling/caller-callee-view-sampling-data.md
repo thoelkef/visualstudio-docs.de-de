@@ -1,8 +1,6 @@
 ---
 title: Aufrufer-/Aufgerufener-Ansicht – Samplingdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Caller/Callee view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 61820a99d3037a205b0c206740c40fc54f439607
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891491"
 ---
 # <a name="callercallee-view---sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht: Samplingdaten
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -32,7 +30,7 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
 > [!NOTE]
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Weitere Informationen finden Sie unter [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  
