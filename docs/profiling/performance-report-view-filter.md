@@ -1,8 +1,6 @@
 ---
 title: Filter für die Leistungsberichtansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
@@ -13,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939880"
 ---
 # <a name="performance-report-view-filter"></a>Filter für die Leistungsberichtansicht
 Das Fenster für den **Filter für die Profilerstellungsberichtsansicht** befindet sich am oberen Rand des **Leistungsberichtsfensters**. Wenn es nicht angezeigt wird, klicken Sie auf die Schaltfläche **Filter anzeigen**.  
   
  Sie können jede Filterklausel ändern, um Ihre Suchergebnisse zu verfeinern. Die folgenden Spalten sind im Filtergenerator verfügbar.  
   
-|Element filtern|Beschreibung |  
+|Element filtern|Beschreibung|  
 |-----------------|-----------------|  
 |Und/Oder|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
 |Feld|Wählen Sie das zu verwendende Feld in der Filterklausel aus der Liste der Datenfelder aus, die in der aktuellen Berichtsdatei verfügbar sind.|  
