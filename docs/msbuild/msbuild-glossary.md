@@ -1,8 +1,6 @@
 ---
 title: MSBuild-Glossar | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 27f918b3ca3408303091dc5200ab8919ffc1eecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986868"
 ---
 # <a name="msbuild-glossary"></a>MSBuild-Glossar
 Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Komponenten beschrieben.  
@@ -140,7 +138,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
  Siehe Ziel, Ausführen.  
   
  Ziel, Auswerten  
- Aufgrund der inkrementellen Kompilierung müssen Ziele auf potenzielle Änderungen an Eigenschaften und Elementen analysiert werden. Diese Änderungen müssen auch vorgenommen werden, wenn das Ziel übersprungen wurde. Ein Ziel auszuwerten bedeutet, diese Analyse auszuführen und die genannten Änderungen vorzunehmen. Weitere Informationen finden Sie unter [Inkrementelle Builds](../msbuild/incremental-builds.md).  
+ Aufgrund der inkrementellen Kompilierung müssen Ziele auf potenzielle Änderungen an Eigenschaften und Elementen analysiert werden. Diese Änderungen müssen auch vorgenommen werden, wenn das Ziel übersprungen wurde. Ein Ziel auszuwerten bedeutet, diese Analyse auszuführen und die genannten Änderungen vorzunehmen. Weitere Informationen finden Sie unter [Incremental Builds (Inkrementelle Builds)](../msbuild/incremental-builds.md).  
   
  Ziel, Ausführen (Execute)  
  Ein Ziel auszuführen bedeutet, dieses auszuwerten und alle Aufgaben auszuführen, die keine Bedingungen aufweisen oder deren Bedingungen zu true ausgewertet werden. Während der inkrementellen Kompilierung können Ziele übersprungen oder ausgeführt werden, jedoch werden sie werden in jedem Fall ausgewertet. Weitere Informationen finden Sie unter Ziel, Auswerten.  

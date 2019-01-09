@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220029"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684992"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.
@@ -39,11 +39,11 @@ Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezei
 
  **Konfiguration**
 
- Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)**, **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)**, **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plattform**
 
- Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Seite "Allgemein"
  Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.
@@ -73,7 +73,7 @@ Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezei
 
  Gibt den Standardhost für den Debugger an.
 
--   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

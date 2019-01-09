@@ -1,8 +1,6 @@
 ---
 title: Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986842"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CVCollectionCmd.exe*) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in der Parallelitätsschnellansicht für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
@@ -40,7 +38,7 @@ Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CV
 
  **CVCollectionCmd**  
 
-|Option|Beschreibung |Parameter|Rückgabewert|  
+|Option|Beschreibung|Parameter|Rückgabewert|  
 |------------|-----------------|----------------|-------------------|  
 |Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](/dotnet/framework/wcf/samples/etw-tracing)-Sitzungen bereit aktiviert ist.|  
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
@@ -64,7 +62,7 @@ Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CV
  Die Konfigurationsdatei ist XML-basiert. Hier sind die gültigen Tags und Werte:  
 
 
-| Tag | Beschreibung  | Werte |
+| Tag | Beschreibung | Werte |
 |-------------------------| - | - |
 | Konfigurationen | Grenzt die gesamte Config-Datei ab. | Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion |
 | MajorVersion | Gibt die Hauptversion der Konfigurationsdatei an. | Muss 1 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] -Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht. |
