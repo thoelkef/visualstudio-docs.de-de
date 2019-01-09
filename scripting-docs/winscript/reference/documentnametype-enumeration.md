@@ -1,5 +1,5 @@
 ---
-title: DOCUMENTNAMETYPE-Enumeration | Microsoft Docs
+title: DOCUMENTNAMETYPE-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640580"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094769"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE-Enumeration
 Beschreibt, welche Typen für ein Dokument abzurufen sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -43,11 +43,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Ruft den Namen ab, wie er in der Anwendungsstruktur angezeigt wird.|  
-|DOCUMENTNAMETYPE_TITLE|Ruft den Namen ab, wie er auf der Titelleiste angezeigt wird.|  
+|DOCUMENTNAMETYPE_APPNODE|Ruft den Namen an, wie er in der Anwendungsstruktur angezeigt wird.|  
+|DOCUMENTNAMETYPE_TITLE|Ruft den Namen an, wie er in der Titelleiste Viewer angezeigt wird.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Ruft den Dateinamen ohne Pfad ab.|  
 |DOCUMENTNAMETYPE_URL|Ruft die URL des Dokuments ab.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Ruft den Titel angehängt Enumeration für die Identifikation ab.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Ruft den Titel, die Enumeration für die Identifikation angefügtem ab.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

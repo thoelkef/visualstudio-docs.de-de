@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Microsoft Docs
+title: IActiveScript::AddTypeLib | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640870"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092546"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Der Namespace für das Skript wird eine Typbibliothek hinzugefügt. Dies ist vergleichbar mit der `#include` in C/C++-Richtlinie. Sie ermöglicht eine Reihe von vordefinierten Elemente wie Klassendefinitionen, `typedefs`, und benannte Konstanten für das Skript verfügbar Laufzeitumgebung hinzugefügt werden.  
+Der Namespace für das Skript wird eine Typbibliothek hinzugefügt. Dies ist vergleichbar mit der `#include` in C/C++-Direktive. Sie können einen Satz von vordefinierten Elemente aus, wie z. B. Klassendefinitionen, `typedefs`, und benannte Konstanten, die Laufzeitumgebung verfügbar, um das Skript hinzugefügt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -44,17 +44,17 @@ HRESULT AddTypeLib(
  [in] Die CLSID der Typbibliothek hinzufügen.  
   
  `dwMaj`  
- [in] Die Hauptversionsnummer.  
+ [in] Hauptversionsnummer.  
   
  `dwMin`  
  [in] Nummer der Nebenversion.  
   
  `dwFlags`  
- [in] Flags-Option. Folgendes kann sein:  
+ [in] Optionsflags. Folgendes kann sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Die Typbibliothek wird beschrieben, ein ActiveX-Steuerelement, die vom Host verwendet wird.|  
+|SCRIPTTYPELIB_ISCONTROL|Die Typbibliothek beschreibt ein ActiveX-Steuerelement, die vom Host verwendet wird.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -63,7 +63,7 @@ HRESULT AddTypeLib(
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
 |`TYPE_E_CANTLOADLIBRARY`|Die angegebene Typbibliothek konnte nicht geladen werden.|  
   
 ## <a name="see-also"></a>Siehe auch  

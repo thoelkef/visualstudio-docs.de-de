@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Microsoft Docs
+title: IScriptEntry::SetBody | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729140"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088581"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
 Legt den Text, der im Text einer `IScriptEntry` Skriptblock oder eine `IScriptScriptlet` Scriptlet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -38,9 +38,9 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- [in] Für eine `IScriptEntry` Skriptblock `psz` ist der Text in die Skripttags eingeschlossen.  
+ [in] Für eine `IScriptEntry` Skriptblocks `psz` ist der Text in die Skripttags eingeschlossen.  
   
- Für eine `IScriptEntry` Funktionsblocks, `psz` ist der Funktionsrumpf.  
+ Für eine `IScriptEntry` Funktionsblock, `psz` ist der Funktionsrumpf.  
   
  Für eine `IScriptScriptlet` Objekt (die sich daraus ableitet `IScriptEntry`), `psz` der Skripttext des Scriptlets ist.  
   

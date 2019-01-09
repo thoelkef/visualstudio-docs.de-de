@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
+title: Adddeferredtext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728540"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096082"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
-Benachrichtigt, dass der angegebene Text verfügbar ist, aber es keine Zeichen bietet dem Hilfsprogramm.  
+Benachrichtigt, dass der angegebene Text verfügbar ist, aber es nicht die Zeichen bietet der-Hilfe.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AddDeferredText(  
    ULONG  cChars,  
    DWORD  dwTextStartCookie  
@@ -39,10 +39,10 @@ HRESULT AddDeferredText(
   
 #### <a name="parameters"></a>Parameter  
  `cChars`  
- [in] Die Anzahl von (Unicode-) Zeichen hinzufügen.  
+ [in] Anzahl der Zeichen (Unicode) hinzufügen.  
   
  `dwTextStartCookie`  
- [in] Host definiert Cookie, das die Startposition des Texts darstellt.  
+ [in] Host definierten Cookie, das die Anfangsposition des Texts darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -53,15 +53,15 @@ HRESULT AddDeferredText(
 |`E_FAIL`|Fehler bei der Methode.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode kann der Host zum Bereitstellen der Zeichen hinzufügen, bis sie benötigt werden, während gleichzeitig das Hilfsprogramm zum Generieren von genau Benachrichtigungen und Informationen zur Datenbankgröße zurückstellen. Die `dwTextStartCookie` Parameter ist ein Cookie, definiert durch den Host, der die Anfangsposition des Texts darstellt. Nachfolgende Aufrufe `IDebugDocumentText::GetText` müssen dieses Cookie angeben. Beispielsweise konnte in einem Host, der Text in DBCS darstellt, das Cookie ein Byteoffset sein.  
+ Diese Methode ermöglicht den Host für das Zurückstellen der Zeichen hinzufügen, bis sie benötigt werden, während gleichzeitig das Hilfsprogramm zum Generieren genau Benachrichtigungen und Informationen zur Größe von. Die `dwTextStartCookie` -Parameter ist ein Cookie, definiert durch den Host, der die Anfangsposition des Texts darstellt. Nachfolgende Aufrufe von `IDebugDocumentText::GetText` müssen dieses Cookie angeben. Beispielsweise konnte in einem Host, der Text in DBCS darstellt, das Cookie ein Byte-Offset werden.  
   
- Es wird angenommen, dass ein einzelner Aufruf `IDebugDocumentText::GetText` erhalten Zeichen aus mehreren Aufrufen an `AddDeferredText`. Hilfsklassen können auch mehr als einmal für den gleichen Bereich des verzögerten Zeichen bitten.  
+ Es wird davon ausgegangen, dass ein einzelner Aufruf `IDebugDocumentText::GetText` erhalten Zeichen aus mehreren Aufrufen an `AddDeferredText`. Hilfsklassen unter Umständen auch mehrmals für denselben Umfang an verzögerte Zeichen erforderlich.  
   
 > [!NOTE]
->  Aufrufe von `AddDeferredText` sollten nicht durch Aufrufe von kombiniert `AddUnicodeText` oder `AddDBCSText`. In diesem Fall `E_FAIL` zurückgegeben wird.  
+>  Aufrufe von `AddDeferredText` dürfen nicht gemischt werden durch Aufrufe `AddUnicodeText` oder `AddDBCSText`. In diesem Fall `E_FAIL` zurückgegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

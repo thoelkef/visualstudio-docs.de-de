@@ -1,8 +1,6 @@
 ---
 title: Buildprotokollierungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914000"
 ---
 # <a name="build-loggers"></a>Buildprotokollierungen
 Protokollierungen bieten eine Möglichkeit, die Ausgabe des Builds anzupassen und Meldungen, Fehler oder Warnungen als Reaktion auf bestimmte Buildereignisse anzuzeigen. Jede Protokollierung wird als .NET- Klasse implementiert, die die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle implementiert, die in der Assembly *Microsoft.Build.Framework.dll* definiert ist.  
@@ -64,7 +62,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung   
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel enthält den vollständigen Code für die Protokollierung.  
   
 ### <a name="code"></a>Code  
@@ -72,7 +70,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung   
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel zeigt das Implementieren einer Protokollierung, die das Protokoll in eine Datei schreibt, anstatt es im Konsolenfenster anzuzeigen.  
   
 ### <a name="code"></a>Code  

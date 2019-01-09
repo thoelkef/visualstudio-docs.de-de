@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleBreakPoint | Microsoft Docs
+title: IDebugApplication::HandleBreakPoint | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726140"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095367"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung des Haltepunkts an den IDE-Debugger.  
+Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung des Haltepunkts an der Debugger-IDE.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -42,7 +42,7 @@ HRESULT HandleBreakPoint(
  [in] Der Grund für die Unterbrechung.  
   
  `pbra`  
- [out] Auszuführende Aktion, wenn der Debugger die Anwendung wird fortgesetzt.  
+ [out] Auszuführende Aktion, wenn der Debugger die Anwendung fortgesetzt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,10 +52,10 @@ HRESULT HandleBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Sprachmodul ruft diese Methode im Kontext eines Threads, die einen Haltepunkt trifft. Diese Methode blockiert den aktuellen Thread und eine Breakpoint-Benachrichtigung an den Debugger IDE gesendet. Wenn der Debugger die Anwendung setzt die `pbra` Parameter gibt an, welche Aktion.  
+ Eine Sprach-Engine ruft diese Methode im Kontext eines Threads, die einen Haltepunkt trifft. Diese Methode blockiert den aktuellen Thread und sendet eine Haltepunkt-Benachrichtigung an den Debugger-IDE. Wenn der Debugger die Anwendung wird die `pbra` Parameter gibt an, welche Aktionen durchzuführen sind.  
   
 > [!NOTE]
->  Das Sprachmodul kann vom Thread zum Ausführen von Aufgaben wie Stapel Auflisten von frames oder Ausdrücke auswerten, während der der Breakpoint aufgerufen werden.  
+>  Die Sprach-Engine kann durch den Thread zum Ausführen von Aufgaben wie z.B. das Auflisten von Stack frames oder Auswerten von Ausdrücken bei der der Breakpoint aufgerufen werden.  
   
  Diese Methode bewirkt, dass `IApplicationDebugger::onHandleBreakPoint` aufgerufen werden.  
   

@@ -1,5 +1,5 @@
 ---
-title: JS_PROPERTY_ATTRIBUTES-Enumeration | Microsoft Docs
+title: JS_PROPERTY_ATTRIBUTES-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed034ef6fc134838058b75534f1b5c17c1ec2e3d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a3fac8b1be15d1b1d26c13fe1e17e311798a3a3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733770"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088269"
 ---
 # <a name="jspropertyattributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES-Enumeration
 Zeigt die Attribute einer Eigenschaft an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS_CHILDREN = 0x1,   JS_PROPERTY_FAKE = 0x2,   JS_PROPERTY_METHOD = 0x4,   JS_PROPERTY_READONLY = 0x8,   JS_PROPERTY_NATIVE_WINRT_POINTER = 0x10} JS_PROPERTY_ATTRIBUTES;  
 ```  
   

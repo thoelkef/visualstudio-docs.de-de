@@ -1,5 +1,5 @@
 ---
-title: BREAKREASON-Enumeration | Microsoft Docs
+title: BREAKREASON-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641020"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096797"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON-Enumeration
 Gibt an, was die Unterbrechung verursacht hat.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -47,14 +47,14 @@ typedef enum tagBREAKREASON {
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|BREAKREASON_STEP|Das Sprachmodul befindet sich im schrittweisen Modus.|  
-|BREAKREASON_BREAKPOINT|Das Sprachmodul hat einen expliziten Haltepunkt festgestellt.|  
-|BREAKREASON_DEBUGGER_BLOCK|Das Sprachmodul hat einen Debugger-Block in einem anderen Thread festgestellt.|  
+|BREAKREASON_STEP|Die Sprach-Engine befindet sich im schrittweisen Modus.|  
+|BREAKREASON_BREAKPOINT|Die Sprach-Engine hat keinen expliziten Haltepunkt festgestellt.|  
+|BREAKREASON_DEBUGGER_BLOCK|Die Sprach-Engine hat einen Debugger-Block in einem anderen Thread festgestellt.|  
 |BREAKREASON_HOST_INITIATED|Der Host hat eine Unterbrechung angefordert.|  
-|BREAKREASON_LANGUAGE_INITIATED|Das Sprachmodul angefordert eine Unterbrechung an.|  
-|BREAKREASON_DEBUGGER_HALT|Der Debugger IDE angefordert eine Unterbrechung an.|  
-|BREAKREASON_ERROR|Ein Ausführungsfehler verursacht die Unterbrechung an.|  
-|BREAKREASON_JIT|Durch den JIT-Debuggen starten verursacht.|  
+|BREAKREASON_LANGUAGE_INITIATED|Die Sprach-Engine hat eine Unterbrechung angefordert.|  
+|BREAKREASON_DEBUGGER_HALT|Der Debugger-IDE hat eine Unterbrechung angefordert.|  
+|BREAKREASON_ERROR|Ein Ausnahmefehler verursacht die Unterbrechung an.|  
+|BREAKREASON_JIT|Es wird darauf zurückzuführen, dass JIT-Debuggen starten.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText | Microsoft Docs
+title: IScriptEntry::GetText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 548b26be48766fa4eb6c6eba16ae3bca2847a322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7a01d6df1281a32fee435c80465f148fcc7436a3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729060"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096420"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-Gibt den Text, entspricht die `IScriptEntry` Skriptblock oder der Quellcode, der in enthalten ist das `IScriptScriptlet` -Ereignishandler.  
+Gibt den Text zurück, das entspricht, dem `IScriptEntry` Skriptblock oder der Quellcode, der in enthalten ist die `IScriptScriptlet` -Ereignishandler.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetText(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parameter  
  `pbstr`  
- [out] Der Text in der `IScriptEntry` Skriptblock oder der Quellcode, der in enthalten ist das `IScriptScriptlet` -Ereignishandler.  
+ [out] Der Text in die `IScriptEntry` Skriptblock oder der Quellcode, der in enthalten ist das `IScriptScriptlet` -Ereignishandler.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

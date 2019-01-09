@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs
+title: IActiveScriptAuthor::GetLanguageFlags | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645540"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093196"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
-Gibt Informationen zurück.  
+Gibt die Language-Informationen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -38,13 +38,13 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>Parameter  
  `pgrfasa`  
- [out] Die Flags, die Language-Informationen enthalten. Eine Kombination der folgenden Werte ist möglich:  
+ [out] Die Flags, die Language-Informationen enthalten. Eine Kombination der folgenden Werte sind möglich:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0 x 0001|Die Sprache bevorzugt Erstellung von Ereignishandler Skript unter Verwendung des Skripts Modul anstelle der Anwendung zu erstellen.|  
-|fasaSupportInternalHandler|0 x 0002|Die Sprache unterstützt Skript-Ereignishandler, die vom Datenbankmodul authoring Skript erstellt.|  
-|fasaCaseSensitive|0 x 0004|Die Skriptsprache ist Groß-/Kleinschreibung beachtet.|  
+|fasaPreferInternalHandler|0x0001|Die Sprache bevorzugt Skript Event Handler erstellen, von dem Skript-Engine-, anstatt die Anwendung erstellen.|  
+|fasaSupportInternalHandler|0x0002|Die Sprache unterstützt die Skript-Ereignishandler, die vom Skript-Engine-Erstellung erstellt.|  
+|fasaCaseSensitive|0x0004|Die Skriptsprache ist Groß-/Kleinschreibung beachtet.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -54,9 +54,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn das Skript authoring Modul Ereignishandler verwaltet, sollte Ihre Anwendung aufrufen `CreateChildHandler` aus einem `IScriptEntry` Objekt. Dies erstellt ein `IScriptScriptlet` -Objekt, das an den Ereignishandler entspricht. Das Modul fügt auch einen Ereignishandler hinzu, um den Skripteintrag. Der Ereignishandler ist eine leere Funktion, die Informationen für die angegebene Signatur enthält.  
+ Wenn das Skript-Engine-erstellen-Ereignishandler verwaltet werden, sollte Ihre Anwendung aufrufen `CreateChildHandler` aus einem `IScriptEntry` Objekt. Dies erstellt eine `IScriptScriptlet` Objekt, das den Ereignishandler entspricht. Die Engine fügt auch einen Ereignishandler auf den Skripteintrag hinzu. Der Ereignishandler ist eine leere Funktion, die Informationen für die angegebene Signatur enthält.  
   
- Wenn Ihre Anwendung Ereignishandler verwaltet werden, rufen sie `CreateChildHandler` aus einem `IScriptNode` Objekt, das eine Ereignis-Handler-Scriptlet darstellt. Dies erstellt ein `IScriptScriptlet` -Objekt, das die Ereignis-Handler-Scriptlet zugeordnet ist. Die Anwendung muss außerdem eine leere Funktion als ein Ereignis hinzufügen Handler, ein neues oder vorhandenes `IScriptEntry` Objekt.  
+ Wenn Ihre Anwendung Ereignishandler verwaltet werden, sollte es aufrufen `CreateChildHandler` aus einem `IScriptNode` Objekt, das ein Ereignis-Handler-Scriptlet darstellt. Dies erstellt eine `IScriptScriptlet` -Objekt, das die Ereignis-Handler-Scriptlet zugeordnet ist. Die Anwendung bietet außerdem eine leere Funktion als ein Ereignis hinzufügen Handler, der eine neue oder vorhandene `IScriptEntry` Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

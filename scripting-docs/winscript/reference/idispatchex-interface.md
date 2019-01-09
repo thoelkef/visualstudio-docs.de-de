@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a59f30c5b42301d29b73a4a079837423614da49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837918"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087580"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx-Schnittstelle
 `IDispatchEx`, eine Erweiterung von der `IDispatch` angemessene-Schnittstelle, unterstützt die Funktionen, für dynamische Sprachen wie z. B. Skriptsprachen. In diesem Abschnitt wird beschrieben, die `IDispatchEx` Schnittstelle, die Unterschiede zwischen `IDispatch` und `IDispatchEx`, und die Gründe für die Erweiterungen. Es wird erwartet, dass Leser mit vertraut `IDispatch` und haben Zugriff auf die `IDispatch` Dokumentation.  
@@ -71,7 +71,7 @@ ms.locfileid: "49837918"
   
   Der vollständige HTML-Code ist:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +102,7 @@ test();
   
  Ein Steuerelement, das auf diesem gleichen Webseite platziert konnte einen Dispatch-Zeiger auf den Skript-Engines aus dem Browser abgerufen werden. Das Steuerelement könnte dann die Funktion test() implementieren:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +138,7 @@ function cat()
   
   Der Code für das Teststeuerelement:  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

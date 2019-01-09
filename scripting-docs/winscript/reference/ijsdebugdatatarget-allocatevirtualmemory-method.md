@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Allocatevirtualmemory-Methode | Microsoft Docs'
+title: 'Ijsdebugdatatarget:: Allocatevirtualmemory-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4eaf448e0be224f853674084a18f7aa2a6bd5ed7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728400"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086917"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory-Methode
 Reserviert und/oder führt Commit eines Arbeitsspeicherbereich innerhalb des virtuellen Adressraums des Zielprozesses aus.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AllocateVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -46,7 +46,7 @@ HRESULT AllocateVirtualMemory(
  [in] Die Größe des zuzuordnenden Arbeitsspeicherbereichs in Bytes. Das System rundet automatisch bis zur Grenze der folgenden Seite auf.  
   
  `allocationType`  
- [in] Gibt den Typ der auszuführenden Speicherbelegung an. Dies ist normalerweise MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) das reserviert und führt einen Commit für eine Zuordnung in einem Schritt.  
+ [in] Gibt den Typ der auszuführenden Speicherbelegung an. Dies ist normalerweise MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) das behält sich vor, und führt einen Commit für eine Zuordnung in einem Schritt.  
   
  `pageProtection`  
  [in] Der Arbeitsspeicherschutz für den Bereich der Seiten, die zugeordnet werden sollen. Wenn ein Commit der Seiten ausgeführt wird, können Sie eine der Speicherschutzkonstanten (beispielsweise, PAGE_READWRITE, PAGE_EXECUTE) angeben.  

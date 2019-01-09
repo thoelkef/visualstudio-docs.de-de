@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent | Microsoft Docs
+title: IDebugApplication::FireDebuggerEvent | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f78522d885a65ddc8bfb056654aaf559c90d36e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725450"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092182"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Löst ein Ereignis aus, die im Debuggers generische `IApplicationDebugger` Schnittstelle.  
+Wird ausgelöst, ein generisches Ereignisses des Debuggers `IApplicationDebugger` Schnittstelle.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -42,7 +42,7 @@ HRESULT FireDebuggerEvent(
  [in] Eine GUID für das Objekt.  
   
  `punk`  
- [in] Ein Ereignisobjekt für die Übergabe an den Debugger.  
+ [in] Ein Event-Objekt, an den Debugger übergeben werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -53,7 +53,7 @@ HRESULT FireDebuggerEvent(
 |`E_NOTIMPL`|Die Methode wird derzeit nicht implementiert.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Semantik der GUID und die `IUnknown` vollständig Anwendung/Debugger definiert sind.  
+ Die Semantik der GUID und die `IUnknown` sind vollständig Anwendung/Debugger definiert.  
   
  Diese Methode ermöglicht für benutzerdefinierte Erweiterungen des Modells Debugger; Es ist derzeit nicht implementiert.  
   

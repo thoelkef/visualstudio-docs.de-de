@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
+title: 'Idebugdocumenthelper:: Adddbcstext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726480"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090388"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
-Fügt eine DBCS-Zeichenfolge am Ende dieses Dokuments an.  
+Fügt eine DBCS-Zeichenfolge am Ende dieses Dokuments.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -38,7 +38,7 @@ HRESULT AddDBCSText(
   
 #### <a name="parameters"></a>Parameter  
  `pszText`  
- [in] Ein Zeiger auf eine Null-terminierte Zeichenfolge, die mit dem Text.  
+ [in] Zeiger auf eine Null-terminierte Zeichenfolge, die mit dem Text.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,9 +52,9 @@ HRESULT AddDBCSText(
  Diese Methode generiert `IDebugDocumentTextEvents` Benachrichtigungen.  
   
 > [!NOTE]
->  Wenn diese Methode, nach dem aufgerufen wird `IDebugDocumentHelper::AddDeferredText` aufgerufen wurde, `E_FAIL` wird zurückgegeben.  
+>  Wenn diese Methode, nach dem aufgerufen wird `IDebugDocumentHelper::AddDeferredText` aufgerufen wurde, `E_FAIL` zurückgegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

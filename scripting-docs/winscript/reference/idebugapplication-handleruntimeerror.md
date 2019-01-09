@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Microsoft Docs
+title: IDebugApplication::HandleRuntimeError | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725790"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097317"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den IDE-Debugger.  
+Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den Debugger-IDE.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -45,16 +45,16 @@ HRESULT HandleRuntimeError(
  [in] Der Fehler, der aufgetreten sind.  
   
  `pScriptSite`  
- [in] Die Skript-Site des Threads.  
+ [in] Die skriptwebsite des Threads.  
   
  `pbra`  
- [out] Auszuführende Aktion, wenn der Debugger die Anwendung wird fortgesetzt.  
+ [out] Auszuführende Aktion, wenn der Debugger die Anwendung fortgesetzt wird.  
   
  `perra`  
- [out] Auszuführende Aktion, wenn der Debugger die Anwendung wird fortgesetzt, wenn ein Fehler vorliegt.  
+ [out] Auszuführende Aktion, wenn der Debugger die Anwendung fortgesetzt wird, wenn ein Fehler auftritt.  
   
  `pfCallOnScriptError`  
- [out] Flag, das ist `TRUE` , wenn das Modul aufrufen sollte die `IActiveScriptSite::OnScriptError` Methode.  
+ [out] Flag, das ist `TRUE` , wenn die Engine aufrufen soll die `IActiveScriptSite::OnScriptError` Methode.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -64,14 +64,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Sprachmodul ruft diese Methode im Kontext eines Threads, die bewirkt, ein Laufzeitfehler dass auf. Diese Methode bewirkt, dass den aktuelle Thread blockiert und sendet eine Benachrichtigung über einen Fehler an den IDE-Debugger gesendet werden. Wenn der Debugger IDE auf die Anwendung zurückkehrt, gibt diese Methode mit der Aktion an, die ausgeführt werden.  
+ Eine Sprach-Engine ruft diese Methode im Kontext eines Threads, der einen Laufzeitfehler auslöst. Diese Methode bewirkt, dass den aktuelle Thread blockiert und sendet eine Fehlermeldung angezeigt, die an der Debugger-IDE gesendet werden. Wenn der Debugger-IDE mit der Anwendung fortgesetzt wird, gibt diese Methode, mit der Aktion an, die ausgeführt werden.  
   
 > [!NOTE]
->  Klicken Sie in den Fehler zur Laufzeit kann das Sprachmodul durch solche Aufgaben ausführen wie Stapelrahmen aufzählen oder Ausdrücke auswerten des Threads aufgerufen werden.  
+>  In den Fehler zur Laufzeit kann die Sprach-Engine aufgerufen werden, durch den Thread aus, um solche Aufgaben wie Stapelrahmen aufzählen oder Ausdrücke auswerten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [BREAKRESUMEACTIONS-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [BREAKRESUMEACTION-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION-Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

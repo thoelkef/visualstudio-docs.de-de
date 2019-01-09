@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Microsoft Docs
+title: IScriptNode::CreateChildHandler | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ef4c9318cb13459ab787878218bf7ca68052f29
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729560"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094184"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
 Fügt eine Scriptlet als untergeordnete Instanz von einem `IScriptNode`.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CreateChildHandler(  
    LPCOLESTR          pszDefaultName,  
    LPCOLESTR          *prgpszNames,  
@@ -50,18 +50,18 @@ HRESULT CreateChildHandler(
  [in] Die Adresse der Standardname des Scriptlets zugeordnet werden soll.  
   
  `prgpszNames`  
- [in Size_is (`cpszNames`)] eine Liste der Bezeichner nicht mit dem vollqualifizierten Namen auf dem Host.  
+ [in, Size_is (`cpszNames`)] eine Liste mit IDs aus dem vollqualifizierten Namen auf dem Host.  
   
  `cpszNames`  
- [in] Die Anzahl der IDs in der `prgpszNames` Parameter.  
+ [in] Die Anzahl von Bezeichnern in die `prgpszNames` Parameter.  
   
  `pszEvent`  
- [in] Der Pufferadresse, die den Ereignisnamen, die dem Scriptlet zugeordnet angibt.  
+ [in] Der Pufferadresse, die den Ereignisnamen, die dem Scriptlet zugeordnet identifiziert.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens zum Ende der Skriptblock. Für die Analyse verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen.  
+ [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Für die Analyse verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen.  
   
- Das Trennzeichen kann unter Verwendung des Skripts authoring Modul vorverarbeitung. Beispielsweise kann das Modul ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen ersetzen. Das Modul bestimmt, wie das Trennzeichen verwendet wird.  
+ Das Trennzeichen ermöglicht vorverarbeitung von dem Skript-Engine-Erstellung. Beispielsweise kann die Engine ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen für die Verwendung als Trennzeichen ersetzen. Die Engine bestimmt, wie das Trennzeichen verwendet wird.  
   
  Auf NULL festgelegt, wenn kein Trennzeichen verwendet wird, um das Ende der Skriptblock zu identifizieren.  
   
@@ -72,13 +72,13 @@ HRESULT CreateChildHandler(
  [in] Der Index der Funktion in der `ITypeInfo``ptiSignature` Parameter.  
   
  `isn`  
- [in] Der Index des untergeordneten Elements in der übergeordneten Tabelle.  
+ [in] Der Index des untergeordneten Elements im übergeordneten Element.  
   
  `dwCookie`  
- [in] Ein anwendungsdefinierten Wert, der verwendet wird, das Hostobjekt, das den Eintrag zugeordnet werden soll.  
+ [in] Eine Anwendung definierte Wert, der verwendet wird, das Hostobjekt, das den Eintrag zugeordnet werden soll.  
   
  `ppse`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle der untergeordneten Instanz.  
+ [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle die untergeordnete Instanz.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -88,7 +88,7 @@ HRESULT CreateChildHandler(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Scriptlet gibt einen Ereignishandler. Diese Methode erstellt eine Scriptlet aus, wenn sie aufgerufen wird, indem Sie ein `IScriptNode` Objekt, das eine Webseite darstellt. Diese Methode kann nicht ausgeführt werden, wenn er von anderen Schnittstellen aufgerufen wird.  
+ Scriptlet gibt einen Ereignishandler an. Diese Methode erstellt eine Scriptlet aus, wenn sie, indem aufgerufen wird ein `IScriptNode` -Objekt, eine Webseite darstellt. Diese Methode ist nicht erfolgreich, wenn sie über andere Schnittstellen aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Microsoft Docs
+title: IDebugAsyncOperation::Start | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725940"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094782"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Bewirkt, dass den asynchronen Vorgang beginnen.  
+Bewirkt, dass den asynchronen Vorgang, um zu beginnen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -38,7 +38,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parameter  
  `padocb`  
- Die Rückrufschnittstelle, die von diesem Vorgang Statusereignisse empfängt.  
+ Die Rückrufschnittstelle, die Statusereignisse aus diesem Vorgang empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Ein Vorgang steht bereits aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` im Thread abgerufenes asynchron aufgerufen werden `IDebugSyncOperation::GetTargetThread`. Diese Methode sollte nur von innerhalb der Debuggerthread aufgerufen werden; Andernfalls wird nicht zurückgegeben, bis der Vorgang abgeschlossen ist.  
+ Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` im abgerufenes Thread asynchron aufgerufen werden `IDebugSyncOperation::GetTargetThread`. Diese Methode sollte nur von innerhalb der Debuggerthread aufgerufen werden. Andernfalls wird es nicht zurückgegeben, bis der Vorgang abgeschlossen ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

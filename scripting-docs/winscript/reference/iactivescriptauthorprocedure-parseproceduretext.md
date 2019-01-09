@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9c4a1ba03a8498dbaa857dc5dbabba8914e54a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 893dc36c066426ad1de7346c7ce1fea24b191ba3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645640"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090687"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analysiert eine Code-Prozedur, die Code-Prozedur Text an das Modul authoring Skript hinzugefügt und erstellt ein `IScriptEntry` Objekt, das die Prozedur Code entspricht.  
+Eine Prozedur Code analysiert und fügt den Code der Prozedur Text an das Skript-Engine-Erstellung erstellt eine `IScriptEntry` Objekt, das die Code-Prozedur entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ParseProcedureText(  
    LPCOLESTR   pszCode,  
    LPCOLESTR   pszFormalParams,  
@@ -45,22 +45,22 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parameter  
  `pszCode`  
- [in] Der Skripttext analysiert.  
+ [in] Der Skripttext analysiert werden soll.  
   
  `pszFormalParams`  
- [in] Die Adresse der formale Parameternamen für die Prozedur. Die Parameternamen müssen durch die entsprechenden Trennzeichen für das Datenbankmodul authoring Skript getrennt werden. Die Namen sollten nicht in Klammern eingeschlossen werden.  
+ [in] Die Adresse der formale Parameternamen für die Prozedur. Die Parameternamen müssen durch die entsprechenden Trennzeichen für das Skript-Engine-authoring getrennt werden. Die Namen sollten nicht in Klammern eingeschlossen werden.  
   
  `pszProcedureName`  
  [in] Die Adresse der den Namen der Prozedur, die analysiert werden.  
   
  `pszItemName`  
- [in] Zugeordneten Puffer-Adressen, die den Namen des Elements enthält die `IScriptEntry` Objekt.  
+ [in] Die Pufferadresse, die den Namen des Elements enthält zugeordneten der `IScriptEntry` Objekt.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens zum Ende der Skriptblock. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn es keine Trennzeichen ist, das das Ende des Skriptblocks zu markieren.  
+ [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn kein Trennzeichen zum Kennzeichnen des Skriptblocks vorhanden ist.  
   
  `dwCookie`  
- [in] Eine anwendungsdefinierte-Wert, der mit dem neuen anfallen `IScriptEntry` Objekt.  
+ [in] Einer der Anwendung definierter Wert, der mit dem neuen verknüpft ist `IScriptEntry` Objekt.  
   
  `dwFlags`  
  [in] Nicht verwendet.  
@@ -76,7 +76,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die aktuelle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul implementiert diese Methode nicht.  
+ Die aktuelle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Engine diese Methode nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptAuthorProcedure-Schnittstelle](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

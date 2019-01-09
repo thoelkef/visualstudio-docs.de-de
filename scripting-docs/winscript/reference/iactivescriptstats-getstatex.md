@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx | Microsoft Docs
+title: IActiveScriptStats::GetStatEx | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725090"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097330"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
-Gibt eine benutzerdefiniertes Skript Statistik zurück.  
+Gibt eine benutzerdefiniertes Skript für Statistik zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -40,7 +40,7 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parameter  
  `guid`  
- [in] Gibt an, welche Statistik zurückgegeben. Die Semantik davon welche Statistik zu einem bestimmten bekommen-GUID ist vollständig Modul definiert.  
+ [in] Gibt an, welche Statistik zurückgeben. Die Semantik der entspricht die Statistik für einen bestimmten-GUID ist vollständig-Engine definiert.  
   
  `pluHi`  
  [out] Die oberen 32 Bits einer 64-Bit-Ganzzahl ohne Vorzeichen, die die Statistik darstellt.  
@@ -57,7 +57,7 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|Die Methode ist nicht implementiert.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht ein benutzerdefiniertes Skript-Modul statistische Daten zu einem benutzerdefinierten Host sinnvolle zurückzugeben.  
+ Diese Methode ermöglicht es sich um ein benutzerdefiniertes Skript-Engine zum Zurückgeben von Statistiken auf einen benutzerdefinierten Host sinnvoll.  
   
 > [!NOTE]
 >  Diese Methode wird derzeit nicht implementiert.  

@@ -1,8 +1,6 @@
 ---
 title: Problembehandlung bei .NET Framework-Zielversionsfehlern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e97a5d77fe5305e4cfe879ea82b9397e5e8babef
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 44be4be33f0aa951b00f9237903ddcbf2c415309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893609"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Problembehandlung bei .NET Framework-Zielversionsfehlern
 Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftreten könnten, und wie Sie diese Fehler auflösen können.

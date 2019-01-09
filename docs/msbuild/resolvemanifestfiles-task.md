@@ -1,8 +1,6 @@
 ---
 title: ResolveManifestFiles-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b265bc46e4d8edac666b4f73d5256e524f5b08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 319d1e5003cf6a46bc7590b3dfcb5d68a1cda767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910713"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles-Aufgabe
 Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung auf: erstellte Elemente, Abhängigkeiten, Satelliten, Inhalte, Debugsymbole und Dokumentationen  
@@ -31,7 +29,7 @@ Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung 
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `ResolveManifestFiles` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`DeploymentManifestEntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Namen des Bereitstellungsmanifests an|  
 |`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die verwaltete Assembly oder den ClickOnce-Manifestverweis an, der den Einstiegspunkt für das Manifest darstellt|  

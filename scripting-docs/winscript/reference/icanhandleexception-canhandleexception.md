@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException::CanHandleException | Microsoft Docs
+title: ICanHandleException::CanHandleException | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725270"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089998"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Bestimmt, ob der Aufrufer des Skriptmoduls eine angegebene Ausnahme verarbeiten kann.  
+Bestimmt, ob der Aufrufer von der Skript-Engine eine angegebene Ausnahme verarbeiten kann.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT CanHandleException(  
    EXCEPINFO*  pExcepInfo,  
    VARIANT*    pvar  
@@ -39,10 +39,10 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parameter  
  `pExcepInfo`  
- [in] Zeiger auf eine `EXCEPINFO` Struktur mit den Informationen, die gemeldet werden, wenn keine Ausnahmehandler gefunden wurde.  
+ [in] Zeiger auf ein `EXCEPINFO` Struktur, die mit den Informationen, die gemeldet werden, wenn kein Ausnahmehandler gefunden wird.  
   
  `pvar`  
- [in] Ein Wert mit der Ausnahme, z. B. der Wert, der vom ausgelöst wird, eine `throw` Anweisung. Dieser Parameter kann `NULL` sein.  
+ [in] Ein Wert mit der Ausnahme, z. B. den Wert, der ausgelöst wird, indem eine `throw` Anweisung. Dieser Parameter kann `NULL` sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -50,10 +50,10 @@ HRESULT CanHandleException(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Der Aufrufer kann die Ausnahme behandelt.|  
-|`E_FAIL`|Der Aufrufer kann nicht die Ausnahme zu behandeln.|  
+|`E_FAIL`|Der Aufrufer kann die Ausnahme nicht verarbeiten.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn ein Aufruf von `IDispatchEx::InvokeEx`, oder eine ähnliche Methode führt zu einer Ausnahme, die Überprüfungen der Skript-Modul ein Aufrufer in das Skript Aufrufer Kette, die unterstützt die `ICanHandleException` -Schnittstelle und gibt an, dass die Ausnahme zu behandeln. Wenn keine Aufrufer die Ausnahme behandeln kann, hält das Skriptmodul.  
+ Wenn ein Aufruf von `IDispatchEx::InvokeEx`, oder eine ähnliche Methode löst eine Ausnahme, die Skript-Engine-Überprüfungen von einem Aufrufer in Kette der Aufrufer des Skripts, die unterstützt die `ICanHandleException` -Schnittstelle und gibt an, dass sie die Ausnahme verarbeiten kann. Wenn keine Aufrufer die Ausnahme behandeln kann, hält die Skript-Engine.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ICanHandleException-Schnittstelle](../../winscript/reference/icanhandleexception-interface.md)   

@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886808"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 
@@ -35,7 +33,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schrit
 
 - Grundlegende Kenntnisse über [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Grundlegende Kenntnisse über die Arbeit mit Befehlszeilentools
-- Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)
+- Eine Kopie von [PeopleTrax-Beispiel](/visualstudio/profiling/performance-explorer)
 - Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilerstellung über die Befehlszeile mit der Samplingmethode

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft Docs
+title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,26 +16,26 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b20b5410af7e48f1b9dadb937e794c1941e74df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 45ded6caec95f5421328be09e299af535765a9c2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086787"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Legt eine 4-Byte-Bitmaske, die die Ereignistypen angibt, die das Skriptmodul auslösen soll.  
+Legt eine 4-Byte-Bitmaske, die die Typen von Ereignissen gibt an, die die Skript-Engine auslösen soll.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
-RESULT SetProfilerEventMask(  
+```cpp
+HRESULT SetProfilerEventMask(  
     [in] DWORD dwEventMask);  
 ```  
   
 #### <a name="parameters"></a>Parameter  
  `dwEventMask`  
- [in] Eine 4-Byte-Bitmaske, die die Ereignistypen angibt. Die Bits sind in definierten [PROFILER_EVENT_MASK-Enumeration](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Eine 4-Byte-Bitmaske, die die Ereignistypen angibt. Die Bits sind definiert, [PROFILER_EVENT_MASK-Enumeration](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt ein HRESULT zurück. Folgende Werte sind möglich:  

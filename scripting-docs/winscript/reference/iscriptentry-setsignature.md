@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft Docs
+title: IScriptEntry::SetSignature | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ff480f8e5c3192a7e2b355d39825cc3a084370
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 660f667d3542ff2cb9a7e96444d98b3082218a2a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729340"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089504"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
 Legt die Typinformationen für ein `IScriptEntry` Function-Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetSignature(  
    ITypeInfo          *pti  
    ULONG              iMethod  
@@ -52,7 +52,7 @@ HRESULT SetSignature(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Legen Sie Typinformationen mit `IScriptEntry::SetSignature` oder [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Typinformationen kann auch durch den Eintrag basierend auf der internen Funktion Darstellung generiert werden.  
+ Legen Sie Typinformationen mit `IScriptEntry::SetSignature` oder [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Typinformationen kann auch durch den Eintrag, der basierend auf Ihrer Darstellung in der internen Funktion generiert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

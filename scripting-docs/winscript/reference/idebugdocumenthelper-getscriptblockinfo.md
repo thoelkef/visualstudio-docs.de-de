@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
+title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fd12aff51c661c2ba5af9ef909bfa481d22101d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726210"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095289"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-Ruft den Bereich von Zeichen und dem Skriptmodul entspricht ein Skriptblock ab.  
+Ruft den Bereich von Zeichen und der Skript-Engine, die für einen Skriptblock ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  
@@ -44,7 +44,7 @@ HRESULT GetScriptBlockInfo(
  [in] Der Quellkontext für den Skriptblock.  
   
  `ppasd`  
- [out] Das Skriptmodul für dieses Skriptblocks.  
+ [out] Die Skript-Engine für die dieser Skriptblock.  
   
  `piCharPos`  
  [out] Speicherort der Beginn des Skriptblocks.  
@@ -60,7 +60,7 @@ HRESULT GetScriptBlockInfo(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft den Bereich von Zeichen und dem Skriptmodul entspricht ein Skriptblock ab.  
+ Diese Methode ruft den Bereich von Zeichen und der Skript-Engine, die für einen Skriptblock ab.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

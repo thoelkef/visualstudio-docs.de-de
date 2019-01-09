@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage | Microsoft Docs
+title: IScriptNode::GetLanguage | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1639d1f956413545d82f79af3e6b310b20af564e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733720"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089582"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-Gibt die Skriptsprache, die vom aktuellen Knoten Skript verwendet wird.  
+Gibt die Skriptsprache, die anhand des aktuellen Knotens mit Skripts verwendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetLanguage(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Parameter  
  `pbstr`  
- [out] Gibt "JScript" zurück, wenn das Skriptknoten JScript oder "VBScript" verwendet, wenn das Skriptknoten Visual Basic Scripting Edition (VBScript) verwendet.  
+ [out] Gibt "JScript" zurück, wenn der Skriptknoten JScript oder "VBScript" verwendet, wenn Sie der Skriptknoten Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

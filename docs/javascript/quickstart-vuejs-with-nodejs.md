@@ -4,7 +4,6 @@ description: In dieser Schnellstartanleitung erstellen Sie mit den Node.js-Tools
 ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -15,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853891"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -110,5 +109,5 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Sehen Sie sich das [Tutorial zu Node.js und Express](../nodejs/tutorial-nodejs.md) an.
-- Sehen Sie sich das [Tutorial zu Node.js und React](../nodejs/tutorial-nodejs-with-react-and-jsx.md) an.
+- Sehen Sie sich das [Tutorial zu Node.js und React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx) an.
 - [Deploy the app to Linux App Service (Bereitstellen der App für Linux App Service)](../javascript/publish-nodejs-app-azure.md)

@@ -1,5 +1,5 @@
 ---
-title: SCRIPTPROP_HOSTKEEPALIVE-Eigenschaft | Microsoft Docs
+title: SCRIPTPROP_HOSTKEEPALIVE-Eigenschaft | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a39ae7100c5567d2b03b7998077b20b1078810aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734140"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087372"
 ---
 # <a name="scriptprophostkeepalive-property"></a>SCRIPTPROP_HOSTKEEPALIVE-Eigenschaft
-Dient zum angeben, und zwar unabhängig davon, ob das Skriptmodul bleiben sollten voll funktionsfähig, wenn ausstehende Verweise vorhanden sind.  
+Dient zum angeben, und zwar unabhängig davon, ob die Skript-Engine aufbewahrt werden sollen voll funktionsfähig, wenn ausstehende Verweise vorhanden sind.  
   
- Verwendung [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) zum Festlegen dieser Eigenschaft `true`. Wenn diese Eigenschaft, um festgelegt wird `true`, das Skriptmodul bleiben voll funktionsfähig, solange es mindestens einen ausstehenden Verweis auf das Skriptmodul sich selbst oder gibt ein `IDispatch` Zeiger auf ein JavaScript-Objekt, das erstellt wird, über die Skripterstellung Modul. Wenn diese Eigenschaft festgelegt wird, um `true`, sollten nicht explizit geschlossen oder das Skriptmodul zurücksetzen, indem die [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) oder [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) Methoden. Die Version von den letzten Verweis auf ein Skriptobjekt fährt das Skriptmodul.  
+ Verwendung [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) zum Festlegen dieser Eigenschaft auf `true`. Wenn diese Eigenschaft, um festgelegt wird `true`, die Skript-Engine bleibt voll funktionsfähig, solange es ist mindestens eine ausstehende Verweise auf die Skript-Engine selbst oder auf eine `IDispatch` Zeiger auf ein JavaScript-Objekt, das erstellt wird, über die Skripterstellung -Engine. Wenn diese Eigenschaft auf festgelegt ist `true`, sollten Sie nicht explizit geschlossen oder Zurücksetzen die Skript-Engine mithilfe der [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) oder [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) Methoden. Die Version von der letzte Verweis auf ein Skriptobjekt fährt die Skript-Engine.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 #define SCRIPTPROP_HOSTKEEPALIVE 0x70000004  
 ```  
   

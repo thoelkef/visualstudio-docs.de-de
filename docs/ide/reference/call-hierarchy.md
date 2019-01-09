@@ -2,7 +2,6 @@
 title: Suchen der Aufrufe einer Methode
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ca479a335cc46e199a107ec38d937dc5774d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915694"
 ---
 # <a name="view-call-hierarchy"></a>Anzeigen der Aufrufhierarchie
 
@@ -65,7 +64,7 @@ Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten M
 
 In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.
 
-|Kontextmenüelement|Beschreibung |
+|Kontextmenüelement|Beschreibung|
 | - |-----------------|
 |**Als neuen Stamm hinzufügen**|Fügt dem Strukturansichtsbereich den ausgewählten Knoten als neuen Stammknoten hinzu. Dadurch können Sie sich auf eine bestimmte Unterstruktur konzentrieren.|
 |**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich. Diese Option ist nur in einem Stammknoten verfügbar.<br /><br /> Sie können außerdem die Symbolleistenschaltfläche **Stamm entfernen** verwenden, um den ausgewählten Stammknoten zu entfernen.|

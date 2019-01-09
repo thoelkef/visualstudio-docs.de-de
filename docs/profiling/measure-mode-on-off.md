@@ -1,8 +1,6 @@
 ---
 title: Messmodus aktivieren/deaktivieren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.measure
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: be23f8bd454790065f7d30bc283c52089e964692
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912609"
 ---
 # <a name="measure-mode-onoff"></a>Aktivieren/Deaktivieren des Messmodus
 Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.  

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Microsoft Docs
+title: IScriptScriptlet::GetSubItemName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096641"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Gibt den letzten Bezeichner in den vollqualifizierten Namen des Hosts für eine Scriptlet-Objekt zurück.  
+Gibt den letzten Bezeichner in den vollqualifizierten Namen des Hosts des Scriptlet-Objekt zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -38,9 +38,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstr`  
- [out] Wenn der Host des vollqualifizierten hat Scriptlet Name mehr als eine Ebene `pbstr` die Pufferadresse des Bezeichners auf der zweiten Ebene zurückgegeben.  
+ [out] Scriptlet-Name verfügt über mehr als einer Ebene, wenn der Host vollständig qualifizierte des `pbstr` gibt die Pufferadresse, der den Bezeichner auf der zweiten Ebene zurück.  
   
- Der Host des vollqualifizierten Scriptlet-Name hat eine Ebene `pbstr` die Pufferadresse des Bezeichners auf der ersten Ebene zurückgegeben.  
+ Scriptlet-Name verfügt über eine Ebene auf, wenn der Host vollständig qualifizierte des `pbstr` die Pufferadresse des Bezeichners auf der ersten Ebene zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

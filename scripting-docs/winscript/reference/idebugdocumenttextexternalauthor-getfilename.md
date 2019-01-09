@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft Docs
+title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fc2532530044b7b3da286bce95152c704bf2392
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: aeabe561ab4ab734a44d0d45c7329a0b493a6edb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726610"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097577"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
-Gibt den Namen des Dokuments ohne Pfadinformationen zurück.  
+Gibt den Namen des Dokuments ohne Pfadinformationen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  

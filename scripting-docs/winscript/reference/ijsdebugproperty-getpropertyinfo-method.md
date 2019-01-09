@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugproperty:: GetPropertyInfo-Methode | Microsoft Docs'
+title: 'Ijsdebugproperty:: GetPropertyInfo-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a98f0ec3c4b0cdde1432402fce16c7383947e309
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85dd11fbd5b7f012dc47e170ee785e671d6a7f14
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728560"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086709"
 ---
 # <a name="ijsdebugpropertygetpropertyinfo-method"></a>IJsDebugProperty::GetPropertyInfo-Methode
 Ruft Informationen für dieses Objekt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetPropertyInfo(  
    UINT nRadix,  
    JsDebugPropertyInfo *pPropertyInfo  

@@ -1,8 +1,6 @@
 ---
 title: Property-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 739e39bd09e8387904570d3690e7c9ff1447fae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864442"
 ---
 # <a name="property-element-msbuild"></a>Property-Element (MSBuild)
 Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `PropertyGroup`-Elements angegeben werden.  
@@ -44,7 +42,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|Beschreibung |  
+|Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
 
@@ -53,7 +51,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung |  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Grouping-Element für Eigenschaften.|  
 

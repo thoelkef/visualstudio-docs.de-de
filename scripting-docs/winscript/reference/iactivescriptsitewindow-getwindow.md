@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
+title: IActiveScriptSiteWindow::GetWindow | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724900"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097394"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Ruft das Handle für ein Fenster, das als Besitzer eines Popupfensters fungieren kann, die das Skriptmodul angezeigt werden muss.  
+Ruft das Handle für ein Fenster, das als Besitzer eines Popupfensters fungieren kann, die die Skript-Engine angezeigt werden muss.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -41,7 +41,7 @@ HRESULT GetWindow(
  [out] Die Adresse einer Variablen, die das Fensterhandle empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` im Erfolgsfall oder `E_FAIL` bei einem Fehler.  
+ Gibt `S_OK` im Erfolgsfall oder `E_FAIL` , wenn ein Fehler aufgetreten ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Methode ähnelt der `IOleWindow::GetWindow` Methode.  
