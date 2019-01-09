@@ -1,8 +1,6 @@
 ---
 title: Zoomsteuerelement (Threadansicht) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938133"
 ---
 # <a name="zoom-control-threads-view"></a>Zoomsteuerelement (Threadansicht)
 Das Zoomsteuerelement ist ein Schieberegler, mit dem Sie die Zeitachse vergrößern und verkleinern können, damit Sie den Fokus auf Bereiche von besonderem Interesse legen können. Da dieses Steuerelement den Mittelpunkt der Zeitachsenansicht vergrößert, zentrieren Sie den relevanten Bereich zunächst, bevor Sie vergrößern.  
