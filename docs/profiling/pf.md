@@ -1,8 +1,6 @@
 ---
 title: PF | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c86ce1c828ff3f090ce675aeed03a4911a55544
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2fad892cd0f5d63b83de6d01189410c572f4ec82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821528"
 ---
 # <a name="pf"></a>PF
 Die *VSPerfCmd.exe*-Option **PF** legt das Profilerstellungsereignis fest, das auf Seitenfehler gesampelt wird, und ändert optional die Anzahl der Zyklen in einem Samplingintervall vom Standard 10 auf einen anderen Wert.  

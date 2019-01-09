@@ -2,7 +2,7 @@
 title: Neues in der Vorschauversion von Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in der Vorschauversion von Visual Studio 2019
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159749"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647763"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
@@ -50,6 +50,8 @@ Wenn Sie Visual Studio 2019 öffnen, wird Ihnen zuerst das neue Startfenster au
    ![Das neue Startfenster in Visual Studio 2019](../ide/media/start-window.png)
 
 Diese neue Startfenster bietet Ihnen Optionen zum Klonen oder Auschecken von Code, zum Öffnen eines Projekts oder einer Projektmappe, zum Öffnen eines lokalen Ordners oder zum Erstellen eines neuen Projekts. Durch die Darstellung dieser Optionen in einem einfache Dialogfeld können Beginner und fortgeschrittene Benutzer von Visual Studio ohne großen Aufwand Code abrufen.
+
+Weitere Informationen finden Sie im Blogbeitrag [Get to code: How we designed the new Visual Studio start window (Entwurf des neuen Visual Studio-Startfensters)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/).
 
 ### <a name="better-search"></a>Bessere Suchergebnisse
 
@@ -82,6 +84,8 @@ Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, �
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) ist ein Entwicklerdienst, mit dem Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.
 
 In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
+
+Weitere Informationen finden Sie im Blogbeitrag [Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share für Echtzeit-Code Reviews und interaktiven Unterricht)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/).
 
 ## <a name="modern-development-support"></a>Unterstützung für moderne Entwicklung
 
@@ -122,7 +126,7 @@ Bei der ersten Vorschauversion der IntelliCode-Erweiterung für Visual Studio wu
 
 Und bei Verwendung von C# können Sie jetzt auch ein benutzerdefiniertes Modell für Ihren eigenen Code trainieren.
 
-Weitere Informationen zur Erweiterung und zum Herunterladen der Erweiterung finden Sie auf der Seite [Visual Studio IntelliCode – Vorschauversion](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
+Weitere Informationen zu den neuesten Updates finden Sie im Blogbeitrag [Visual Studio IntelliCode supports more languages and learns from your code (Visual Studio IntelliCode unterstützt weitere Sprachen und lernt von Ihrem Code)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/). Weitere Informationen zur Erweiterung und zum Herunterladen der Erweiterung finden Sie auf der Seite [Visual Studio IntelliCode – Preview (Visual Studio IntelliCode (Vorschauversion))](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Geben Sie uns Feedback
 
@@ -135,4 +139,5 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 ## <a name="see-also"></a>Siehe auch
 
 * [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 conference (Microsoft Connect(); 2018-Konferenz)](https://www.microsoft.com/connectevent)
 * [Neuerungen in Visual Studio 2017](whats-new-in-visual-studio.md)

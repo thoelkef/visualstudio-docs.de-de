@@ -3,18 +3,18 @@ title: Azure DevOps-Vorteile für Visual Studio-Abonnenten | Microsoft-Dokumenta
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/15/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073648"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740204"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 
@@ -28,12 +28,18 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, jährliche Cloud, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Artifacts, Azure Pipelines (selbstgehosted)       |  Ja          |
-| Visual Studio Professional (Standard, jährliche Cloud, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic)                                                            |  Ja          |
+| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Artifacts, Azure Pipelines (selbstgehosted)       |  Ja          |
+| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic)                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 
-<sup>1</sup> *Umfasst: Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services (Developer). Umfasst nicht: MCT Software & Services, Imagine.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services (Developer). Umfasst nicht: MCT Software & Services, Imagine.*
+
+> [!NOTE]
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
+
+Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihnen zugewiesen sind.
+Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 Weitere Informationen zu Azure DevOps-Features:
 
@@ -41,8 +47,7 @@ Weitere Informationen zu Azure DevOps-Features:
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihnen zugewiesen sind.
-Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
+
 
 ## <a name="support-resources"></a>Supportressourcen
 

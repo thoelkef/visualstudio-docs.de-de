@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)'
+title: 'Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: afa0bc954e2812cb4c0149bfeef623195540e2a3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957105"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684573"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Hinzufügen von Kommentaren zu Klassendiagrammen
+# <a name="how-to-add-comments-to-class-diagrams"></a>Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen
 
 Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramme verwenden. Eine Kommentarform verfügt über eine Eigenschaft, **Text**, in die Sie Text eingeben können. Kommentarformen existieren nur auf der Diagrammoberfläche und nicht im Code.
 
@@ -39,5 +39,5 @@ Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit Klassendiagrammen](working-with-class-diagrams.md)
+- [Arbeiten mit Klassendiagrammen](designing-and-viewing-classes-and-types.md)
 - [Vorgehensweise: Anpassen von Klassendiagrammen](how-to-customize-class-diagrams.md)

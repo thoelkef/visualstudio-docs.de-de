@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
+title: 'Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901297"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684317"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
 
@@ -79,5 +79,3 @@ Daraufhin wird ein automatisch aufgefülltes Klassendiagramm erstellt.
 - [Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer](how-to-create-types.md)
 - [Vorgehensweise: Anzeigen von vorhandenen Typen](how-to-view-existing-types.md)
 - [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
-- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)
-- [Arbeiten mit Klassendiagrammen](working-with-class-diagrams.md)

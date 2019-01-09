@@ -1,8 +1,6 @@
 ---
 title: UpdateManifest-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985562"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest-Aufgabe
 Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Signieren erneut aus.  
@@ -31,7 +29,7 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `UpdateManifest` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt das Anwendungsmanifest an|  
 |`ApplicationPath`|Erforderlicher `String` -Parameter.<br /><br /> Gibt den Pfad für das Anwendungsmanifest an|  

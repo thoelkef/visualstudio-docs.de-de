@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)'
+title: 'Vorgehensweise: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 564260b60e56974df698ba0efd6e319a8ea3e440
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956844"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684521"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Vorgehensweise: Exportieren von Klassendiagrammen als Bilder
 
@@ -42,4 +42,4 @@ Um mit anderen Dokumenten verknüpfte, exportierte Bilder zu aktualisieren, expo
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Drucken von Klassendiagrammen](how-to-print-class-diagrams.md)
-- [Arbeiten mit Klassendiagrammen](working-with-class-diagrams.md)
+- [Arbeiten mit Klassendiagrammen](designing-and-viewing-classes-and-types.md)
