@@ -1,8 +1,6 @@
 ---
 title: Bearbeiten und Fortfahren (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 290216d9baa2692b1cb05741f3b1afc22c74988c
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
-ms.translationtype: HT
+ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838020"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Bearbeiten und Fortfahren (Visual Basic)
 Bearbeiten und Fortfahren ist eine Funktion von [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)]-Debuggen, mit dem Sie den Code ändern können, während der Unterbrechungsmodus ausgeführt wird. Nachdem Codebearbeitungen übernommen wurden, können Sie die Ausführung mit den neuen Änderungen fortsetzen und deren Auswirkung beobachten.  

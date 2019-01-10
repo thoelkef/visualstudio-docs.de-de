@@ -2,7 +2,6 @@
 title: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und fortfahren | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: a8b63a93984fc65790bd8fcdadf8294cadf8e04e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821700"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und Fortfahren (Visual Basic)
 Sie können mit Bearbeiten und Fortfahren den Code im Unterbrechungsmodus bearbeiten und anschließend fortfahren, ohne die Codeausführung anzuhalten und erneut starten zu müssen.  

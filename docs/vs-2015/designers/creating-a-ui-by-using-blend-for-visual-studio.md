@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883145"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-5.png "B1_5")|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5-label-e.png "b5_label_E")|**Textsteuerelemente**|
 |||![Legende F](../designers/media/b5-label-f.png "b5_label_E")|**Allgemeine Steuerelemente**|
 
- Sehen Sie sich ein kurzes Video an (womöglich nur in englischer Sprache): ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [der Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [der Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ##  <a name="Assets"></a>Überblick über den Objektbereich
  Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visual Studio ähnelt. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektbereich**, einschließlich Stile, Medien, Verhalten und Effekte.
@@ -126,7 +125,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |                     ![Legende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.                                                                      |
 
- Sehen Sie sich ein kurzes Video an (womöglich nur in englischer Sprache): ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Siehe auch
  [Einfügen von Steuerelementen und Ändern des Verhaltens](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [Animieren von Objekten](../designers/animate-objects-in-xaml-designer.md) [Zeichnen von Formen und Pfaden](../designers/draw-shapes-and-paths.md) [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](../designers/designing-xaml-in-visual-studio.md)

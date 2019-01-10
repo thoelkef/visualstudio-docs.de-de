@@ -1,8 +1,6 @@
 ---
 title: Threadansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9fee7a73d54434b08bfb1e24c95ae8c9a0d0b6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913516"
 ---
 # <a name="threads-view"></a>Threadansicht
 In der Threadansicht wird eine flache Liste aller Threads, die Windows auf Ihrem System zugeordnet. Die Thread-ID und den Modulnamen für jeden Thread werden angezeigt. Prozesse sind nicht enthalten, aber Sie finden den Prozess, der einen ausgewählten Thread besitzt.  

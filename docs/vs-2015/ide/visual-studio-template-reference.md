@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1c7a9d0e4df6252e05695ed1dcbced84ae7c0e81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882642"
 ---
 # <a name="visual-studio-template-reference"></a>Referenz zu Visual Studio-Vorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +36,10 @@ Die folgenden Links enthalten Informationen über die verschiedenen Aspekte der 
  <xref:Microsoft.VisualStudio.TemplateWizard> Beschreibt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle und verwandte Typen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [How to: Create Project Templates (Vorgehensweise: Erstellen von Projektvorlagen)](../ide/how-to-create-project-templates.md)
+ [Vorgehensweise: Create Project Templates (Vorgehensweise: Erstellen von Projektvorlagen)](../ide/how-to-create-project-templates.md)
 
- [How to: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)
+ [Vorgehensweise: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)
 
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
 
- [How to: Create Starter Kits (Vorgehensweise: Erstellen von Starter Kits)](../ide/how-to-create-starter-kits.md)
+ [Vorgehensweise: Create Starter Kits (Vorgehensweise: Erstellen von Starter Kits)](../ide/how-to-create-starter-kits.md)

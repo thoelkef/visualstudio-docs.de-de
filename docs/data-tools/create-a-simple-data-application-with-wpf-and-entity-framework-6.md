@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885743"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
@@ -355,7 +354,7 @@ Ersetzen Sie als Nächstes die gesamte äußere Raster mit diesem Markup:
 
 In Windows Forms-Anwendungen erhalten Sie ein BindingNavigator-Objekt mit den Schaltflächen zur Navigation Zeilen in einer Datenbank und für grundlegende CRUD-Vorgänge ausführen. WPF bietet keine BindingNavigator, aber es ist einfach genug, um eines zu erstellen. Sie führen, die mit den Schaltflächen in einem horizontalen StackPanel, und ordnen die Schaltflächen mit Befehlen, die an Methoden in der CodeBehind-gebunden sind.
 
-Stehen die Befehlslogik vieren Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.
+Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML
 

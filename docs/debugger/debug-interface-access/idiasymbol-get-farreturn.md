@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_farreturn | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebd5ed966d507d1f3021ba6ac8f3bef01d00a293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3934ad4076a5f38a2d79920286aa25e25fe25c7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819710"
 ---
 # <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
 Ruft ein Flag, das angibt, ob die Funktion einen Rücksprung enthält.  
@@ -46,7 +44,7 @@ HRESULT get_farReturn(
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

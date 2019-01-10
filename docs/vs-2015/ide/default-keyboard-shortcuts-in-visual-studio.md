@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1ea4c51f617d6128018ba23cbf564996cccf1a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95d7f9c542bccfd5f78b0aafef276147e8534257
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847635"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +54,9 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |[Editor für Tests der programmierten UI](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Mergeeditorfenster](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Ansicht-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|
 |[DataSet-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, Schemavergleich](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build-Detail-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|
 |[Unterschiedanzeige](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, Tabellen-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Test-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Forms-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|
-|[DOM-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, T-SQL-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Text-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Arbeitsaufgaben-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|
+|[DOM-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, T-SQL-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Text-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Arbeitselement-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, T-SQL PDW-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML-Aktivitätsdiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Abfrageansicht für Arbeitselemente](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|
-|[Diagrammdokument-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Seitenprüfung](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML-Klassendiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Arbeitsaufgaben-Ergebnisansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|
+|[Diagrammdokument-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Seitenprüfung](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML-Klassendiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Arbeitselement-Ergebnisansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|
 |[Grafikdiagnose](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Abfrage-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[UML-Komponentendiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Workflow-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|
 |[HTML-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Abfrageergebnisse](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML-Anwendungsfalldiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML-Benutzeroberflächen-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[HTML-Editor, Entwurfsansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Berichts-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC-Zugriffstasten-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML-(Text)-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|
@@ -1050,7 +1049,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.CharRightExtend|UMSCHALT+NACH-RECHTS|
 |Edit.DocumentEnd|Ende|
 |Edit.DocumentEndExtend|UMSCHALT+ENDE|
-|Edit.DocumentStart|POS1|
+|Edit.DocumentStart|Startseite|
 |Edit.DocumentStartExtend|UMSCHALT+POS1|
 |Edit.InsertTab|Registerkarte|
 |Edit.LineDown|NACH-UNTEN|
@@ -1068,7 +1067,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.SizeControlUp|STRG+UMSCHALT+NACH-OBEN|
 |Edit.TabLeft|UMSCHALT+TAB|
 
-##  <a name="bkmk_workItemEditor"></a>Arbeitsaufgaben-Editor
+##  <a name="bkmk_workItemEditor"></a>Arbeitselement-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|

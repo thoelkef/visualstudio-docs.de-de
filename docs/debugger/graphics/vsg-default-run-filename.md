@@ -1,8 +1,6 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
-ms.custom: ''
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 303bce554ff6345a37719a8d2f529f3c1ffe02e2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a05acfd07e8b67bf500864f00ead4d78f2da22ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922552"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 Definiert den Standarddateinamen der Grafikprotokolldatei.  
@@ -40,7 +38,7 @@ Definiert den Standarddateinamen der Grafikprotokolldatei.
 ## <a name="remarks"></a>Hinweise  
  Wenn das Präprozessorsymbol `DONT_SAVE_VSGLOG_TO_TEMP` definiert ist, ist der Dateiname relativ zum aktuellen Verzeichnis der aufgezeichneten App oder ein absoluter Pfad. Andernfalls ist er relativ zum Verzeichnis der temporären Dateien des Benutzers und kann kein absoluter Pfad sein.  
   
- Um den definierten Dateinamen zu ändern, Sie müssen ihn erneut definieren, bevor Sie einschließen `vsgcapture.h` im Programm.  
+ Um den definierten Dateinamen zu ändern, müssen Sie neu definieren sie bevor Sie einfügen `vsgcapture.h` in Ihrem Programm.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie der Standarddateiname der Erfassungsdatei geändert wird:  

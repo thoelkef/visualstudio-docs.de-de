@@ -1,8 +1,6 @@
 ---
 title: Debuggen mithilfe des Just-in-Time-Debuggers | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831549"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 
@@ -107,7 +105,7 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
 
 In diesem Beispiel erstellen Sie eine C# Konsolen-app in Visual Studio, das löst eine ["NullReferenceException"](/dotnet/api/system.nullreferenceexception).
 
-1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. Wenn Sie das Projekt in Visual Studio geöffnet wird, öffnen Sie die *"Program.cs"* Datei. Ersetzen der Main()-Methode durch den folgenden Code, der gibt eine Zeile an die Konsole, und klicken Sie dann eine NullReferenceException:
    
@@ -198,4 +196,4 @@ Sie können die folgenden Fehlermeldungen angezeigt, während der Just-in-Time-D
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Optionen, Debugging, Just-In-Time-Dialogfeld](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Sicherheitswarnung: Anfügen an einen Prozess, der im Besitz von einem nicht vertrauenswürdigen Benutzer kann gefährlich sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

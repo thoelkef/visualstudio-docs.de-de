@@ -2,7 +2,6 @@
 title: Geben Sie eine .NET Framework-Version für das Debuggen | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893826"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Vorgehensweise: Geben Sie eine .NET Framework-Version für das Debuggen (C#, Visual Basic F#)
 
@@ -47,7 +46,7 @@ In den seltenen Fällen, in denen dieser Fehler tritt auf, können Sie einen Reg
   
 3. Öffnen Sie im **Registrierungs-Editor** den Ordner HKEY_LOCAL_MACHINE.  
   
-4. Navigate to (Navigieren zu). HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Navigieren Sie zu . HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     Wenn der Schlüssel nicht vorhanden ist, klicken Sie mit der rechten Maustaste auf HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, und klicken Sie auf **Neuer Schlüssel**. Nennen Sie den neuen Schlüssel `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   

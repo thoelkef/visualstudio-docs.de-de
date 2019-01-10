@@ -2,7 +2,6 @@
 title: Diagnose von Grafiken | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890929"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
 Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicken Sie dann Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
@@ -82,6 +81,5 @@ Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicke
 
 | Titel | Beschreibung |
 | - | - |
-| [Debugger – Featuretour](../debugging-in-visual-studio.md) | Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vor. |
+| [Debugger – Featuretour](/visualstudio/debugger/debugger-feature-tour) | Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vor. |
 | [DirectX-Grafiken und -Spiele](http://go.microsoft.com/fwlink/?LinkId=256498) | Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden. |
-

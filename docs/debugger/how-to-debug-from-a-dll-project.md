@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen über ein DLL-Projekt | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854066"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Gewusst wie: Debuggen über ein DLL-Projekt in Visual Studio (C#, C++, Visual Basic F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Vorgehensweise: Debuggen über ein DLL-Projekt in Visual Studio (C#, C++, Visual Basic F#)
 
 Eine Möglichkeit zum Debuggen eines DLL-Projekts ist an die aufrufende Anwendung in den Projekteigenschaften der DLL. Anschließend können Sie das Debuggen über das DLL-Projekt selbst starten. Für diese Methode funktioniert muss die app derselben DLL-Datei am gleichen Speicherort wie das aufrufen, die Sie konfigurieren. Wenn die app findet und eine andere Version der DLL lädt, wird nicht in dieser Version Haltepunkte enthalten. Andere Methoden zum Debuggen von DLLs, finden Sie unter [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md).
   
-Wenn Ihre verwaltete app, eine systemeigene DLL aufruft oder Ihre native app, eine verwaltete DLL aufruft, können Sie sowohl die DLL und die aufrufende Anwendung debuggen. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode (Vorgehensweise: Debuggen im gemischten Modus)](../debugger/how-to-debug-in-mixed-mode.md).   
+Wenn Ihre verwaltete app, eine systemeigene DLL aufruft oder Ihre native app, eine verwaltete DLL aufruft, können Sie sowohl die DLL und die aufrufende Anwendung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Nativer und verwaltete DLL-Projekten haben unterschiedliche Einstellungen an die aufrufende apps. 
 

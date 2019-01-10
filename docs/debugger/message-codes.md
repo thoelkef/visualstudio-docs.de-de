@@ -1,8 +1,6 @@
 ---
-title: Nachricht Codes | Microsoft Docs
-ms.custom: ''
+title: Message-Codes | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message codes
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b2061d9f20da8e9c4d5b4f9794f400d638260c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7c1f568ead3e5862460d4ae4e18e51687737d4a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866295"
 ---
 # <a name="message-codes"></a>Meldungscodes
-Jede Nachricht Befehlszeile im [Ansicht "Nachrichten"](../debugger/messages-view.md) enthält 'P' des, "," oder "R"-Code. Diese Codes haben folgende Bedeutung:  
+Jede Nachricht Befehlszeile im [Ansicht "Nachrichten"](../debugger/messages-view.md) enthält ein 'P', des, ",' oder 'R'-Code. Diese Codes haben folgende Bedeutung:  
   
 |Code|Bedeutung|  
 |----------|-------------|  
-|P|Die Meldung wurde bereitgestellt, in die Warteschlange mit der **PostMessage** Funktion. Es sind keine Informationen verfügbar, die über die endgültige Anordnung der Nachricht.|  
-|S|Die Nachricht wurde gesendet, mit der **SendMessage** Funktion. Dies bedeutet, dass der Absender die Kontrolle nicht, bis der Empfänger verarbeitet und die Nachricht zurückgegeben. Der Empfänger kann daher einen Rückgabewert zurück zum Absender übergeben.|  
-|s|Die Nachricht wurde gesendet, aber Sicherheit verhindert den Zugriff auf den Rückgabewert.|  
-|R|Jede der "Zeile verfügt über eine entsprechende"R"(Rückgabe)-Zeile, die den Rückgabewert der Nachricht enthält. In einigen Fällen werden Aufrufe von Message geschachtelt, was bedeutet, dass dieser Handler eine Nachricht einer anderen Nachricht sendet.|
+|P|Die Nachricht gesendet wurde, an die Warteschlange mit der **PostMessage** Funktion. Keine Informationen sind verfügbar, über die endgültige Anordnung der Nachricht.|  
+|S|Die Nachricht gesendet wurde, mit der **SendMessage** Funktion. Dies bedeutet, dass der Absender die Kontrolle nicht, bis der Empfänger verarbeitet und gibt die Meldung zurück. Der Empfänger kann daher einen Rückgabewert zurück an dem Absender übergeben.|  
+|s|Die Nachricht gesendet wurde, aber die Sicherheit wird verhindert, dass es sich bei den Zugriff auf den Rückgabewert.|  
+|R|Jede der "Zeile verfügt über eine entsprechende"R"(Rückgabe)-Zeile, in der Rückgabewert der Meldung aufgeführt. Manchmal werden Aufrufe von Message geschachtelt, was bedeutet, dass dieser Handler eine Nachricht über einen anderen Nachrichtentyp versendet.|

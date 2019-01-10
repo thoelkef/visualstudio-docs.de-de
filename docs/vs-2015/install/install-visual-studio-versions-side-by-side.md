@@ -4,8 +4,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: be7559fb9bc6a2e028638ae18209a91cde955e7f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f2bbf63e45996d41889109c7423611bfe3218f0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838384"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +54,7 @@ Sie können diese Visual Studio-Version auf einem Computer installieren, auf dem
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Konfigurieren von Projekten](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Vorgehensweise: Ändern des Zielframeworks und Plattformtoolset](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ausführen einer JScript-Anwendung auf einer früheren Version der Common Language Runtime](http://msdn.microsoft.com/en-us/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Siehe auch

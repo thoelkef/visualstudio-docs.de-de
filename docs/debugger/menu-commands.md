@@ -1,8 +1,6 @@
 ---
-title: Befehle im Menü | Microsoft Docs
-ms.custom: ''
+title: Befehle im Menü | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
@@ -13,44 +11,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830676"
 ---
 # <a name="menu-commands"></a>Menübefehle
-Die Hilfethemen in diesem Abschnitt werden die Befehle, die in den Spy++-Menüs verfügbar aufgeführt.  
+Die Hilfethemen in diesem Abschnitt werden die Befehle, die auf die Spy++-Menüs aufgeführt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Befehle im Menü "Spy"](../debugger/spy-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Spy++** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Spy** Menü.  
   
  [Befehle im Menü „Struktur“](../debugger/tree-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Struktur** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Struktur** Menü.  
   
  [Befehle im Menü "Suchen"](../debugger/search-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Suche** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Suche** Menü.  
   
  [Befehle im Menü "Ansicht"](../debugger/view-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Ansicht** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Ansicht** Menü.  
   
  [Befehle im Menü "Meldungen"](../debugger/messages-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Nachrichten** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Nachrichten** Menü.  
   
  [Befehle im Menü "Fenster"](../debugger/window-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Fenster** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Fenster** Menü.  
   
  [Befehle im Menü "Hilfe"](../debugger/help-menu-commands.md)  
- Beschreibt die einzelnen Befehle, die von der **Hilfe** Menü.  
+ Beschreibt die einzelnen Befehle zur Verfügung, aus der **Hilfe** Menü.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
  Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Dieser Abschnitt enthält, und Abschnitte beschreiben die einzelnen Spy++-Dialogfeld.
+ Dieser Abschnitt beinhaltet, und Abschnitte beschreiben die einzelnen Spy++-Dialogfeld.

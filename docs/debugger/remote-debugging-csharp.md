@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging"=
 - seodec18
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82873b29a173209739497087a4dfe5b293123e2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 699f0c2b3074b1b7bbaea1f1730a2c0d315e0f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853410"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Remotedebuggen einer C# oder Visual Basic-Projekt in Visual Studio
 Um eine Visual Studio-Anwendung zu debuggen, die auf einem anderen Computer bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, in dem Sie Ihre app bereitgestellt haben, konfigurieren Sie das Projekt in Visual Studio eine Verbindung mit dem Remotecomputer und führen Sie die app.

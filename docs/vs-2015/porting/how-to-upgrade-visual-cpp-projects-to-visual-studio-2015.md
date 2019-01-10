@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945196"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Vorgehensweise: Aktualisieren von Visual C++-Projekten auf Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +29,15 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [Visual C++ H
 
 Beim ersten Öffnen eines Visual C++-Projekts, das in einer früheren Version von Visual Studio erstellt wurde, werden Sie evtl. aufgefordert, das Projekt zu aktualisieren. Sie werden mit einer Meldung gefragt, ob Sie auf die neueste Version des Visual C++-Compilers und der Bibliotheken aktualisieren möchten. Welche Optionen zum Aktualisieren verfügbar sind, hängt davon ab, welche Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum Erstellen des Projekts verwendet wurde.
 
- Sie können [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] verwenden, um [!INCLUDE[win8](../includes/win8-md.md)]-Projekte, die in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] erstellt wurden, zu öffnen, zu bearbeiten und zu erstellen. Um ein neues [!INCLUDE[win8](../includes/win8-md.md)]-Projekt zu erstellen, müssen Sie jedoch [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] verwenden. (Um ein [!INCLUDE[win81](../includes/win81-md.md)] -Projekt zu erstellen, müssen Sie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]verwenden.)
+ Sie können [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] verwenden, um [!INCLUDE[win8](../includes/win8-md.md)] -Projekte, die in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]erstellt wurden, zu öffnen, zu bearbeiten und zu erstellen. Um ein neues [!INCLUDE[win8](../includes/win8-md.md)] -Projekt zu erstellen, müssen Sie jedoch [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]verwenden. (Um ein [!INCLUDE[win81](../includes/win81-md.md)] -Projekt zu erstellen, müssen Sie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]verwenden.)
 
- Um ein Windows 10-Projekt zu erstellen, müssen Sie [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] verwenden.
+ Um ein Windows 10-Projekt zu erstellen, müssen Sie [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]verwenden.
 
  Wenn Sie nicht zum Aktualisieren des Projekts aufgefordert werden, müssen Sie möglicherweise gar nichts unternehmen, um das Projekt zu aktualisieren.
 
 -   Wurde das Projekt (.vcproj) in einer Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt, die älter als [!INCLUDE[vs2010](../includes/vs2010-md.md)]ist, müssen Sie das Projekt aktualisieren.
 
--   Wurde das Projekt (.vcxproj) in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oder [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] erstellt, haben Sie zwei Möglichkeiten:
+-   Wurde das Projekt (.vcxproj) in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]oder [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] erstellt, haben Sie zwei Möglichkeiten:
 
     -   Sie können das Update überspringen. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lädt das Projekt, ohne Änderungen vorzunehmen, wenn mit SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oder [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] auf die Visual C++-Tools in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] zugegriffen werden kann. Sie können diesen Zugriff aktivieren, indem Sie die Version von Visual Studio, mit der das Projekt erstellt wurde, auf demselben Computer installieren, auf dem [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]bereitsteht. Weitere Informationen finden Sie unter [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 
