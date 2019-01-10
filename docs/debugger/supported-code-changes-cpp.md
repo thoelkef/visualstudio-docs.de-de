@@ -1,8 +1,6 @@
 ---
 title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 03b5c279e3d6aeee6cf0b5f0d9ad2e05e9d22fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917669"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Codeänderungen behandelt werden. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.  
@@ -71,7 +69,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
 -   Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](/cpp/build/reference/zo-enhance-optimized-debugging)kompiliert sind  
   
--   In Versionen von Visual Studio vor Visual Studio 2015 Update 1 Debuggen UWP-apps oder Komponenten. Ab Visual Studio 2015 Update 1 können Sie bearbeiten und Fortfahren in UWP C++ und DirectX-apps, da jetzt unterstützt das `/ZI` Compilerschalter mit der `/bigobj` wechseln. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
+-   In Versionen von Visual Studio vor Visual Studio 2015 Update 1, Debuggen von UWP-apps oder Komponenten. Ab Visual Studio 2015 Update 1 können können bearbeiten und Fortfahren in C++ für UWP-apps und DirectX-apps, da er jetzt unterstützt die `/ZI` -Compilerschalter mit dem `/bigobj` wechseln. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
   
 -   Debuggen unter Windows 98.  
   

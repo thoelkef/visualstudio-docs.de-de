@@ -2,19 +2,18 @@
 title: Übersicht über die Grafikdiagnose | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831377"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-Apps. Die Grafikdiagnose kann für apps verwendet werden, die lokal auf Ihrem Windows PC oder auf einem remote-PC oder Gerät ausgeführt werden.  
@@ -53,7 +52,7 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
 ### <a name="gpu-usage"></a>GPU-Nutzung  
  Die Grafikdiagnose kann auch ein Profil der Leistung Ihrer Direct3D-App erstellen. Da Profilerstellungsdaten durch das Aufzeichnen von Details zu Grafikereignissen verfälscht würden, unterscheidet sich dies vom Erfassen von Frames, die mit der Grafikanalyse untersucht werden sollen.  
   
- Weitere Informationen finden Sie unter [GPU-Nutzung](gpu-usage.md).  
+ Weitere Informationen finden Sie unter [GPU-Nutzung](/visualstudio/profiling/gpu-usage).  
   
 ### <a name="directx-control-panel"></a>DirectX-Einstellungen  
  Die DirectX-Systemsteuerung ist eine Komponente von DirectX, die Sie verwenden können, um das Verhalten von DirectX zu ändern. Sie können z. B. die Debugversion der DirectX-Laufzeitkomponenten aktivieren, die Art der Debugmeldungen festlegen, oder bestimmte Funktionen der Grafikhardware deaktivieren, um weniger leistungsfähige Hardware zu emulieren. Diese Einflussmöglichkeiten auf DirectX können Ihnen helfen, DirectX-Apps zu debuggen und zu testen. Sie können über Visual Studio auf die DirectX-Einstellungen zugreifen.  

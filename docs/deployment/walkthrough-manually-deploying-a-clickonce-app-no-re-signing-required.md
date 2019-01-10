@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898150"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält
 Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird der Kunde musste früher das Bereitstellungsmanifest aktualisieren und erneut signieren. Weiterhin ist die bevorzugte Methode in den meisten Fällen .NET Framework 3.5 ermöglicht Ihnen die Erstellung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen, die von Kunden bereitgestellt werden können, ohne dass ein neues Bereitstellungsmanifest erneut zu generieren. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -39,7 +37,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
 > [!NOTE]
 >  In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell entweder das Befehlszeilentool *Mage.exe* oder dem grafischen Tool *MageUI.exe*. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Ausführen der Schritte in dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
 -   Eine Windows Forms-Anwendung, die Sie bereitstellen möchten. Diese Anwendung wird als bezeichnet werden *WindowsFormsApp1*.  
@@ -131,7 +129,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
   
 14. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **als Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten (**...** ) Schaltfläche.  
   
-     - oder -   
+     - oder -  
   
      Wenn das Zertifikat im Zertifikatspeicher gespeichert wird, der von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option mit gespeicherten Zertifikat signieren**, und wählen Sie das Zertifikat aus der Liste aus.  
   

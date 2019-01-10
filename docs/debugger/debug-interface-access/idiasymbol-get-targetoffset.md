@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_targetoffset | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c044ba749c5fae425fab11cdedecc9eb361fffe3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 17e7ae89bb24fbd2315ba902fa6fd3967f26bb0d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848073"
 ---
 # <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
 Ruft die Offset-Abschnitt eines Thunk-Ziels ab.  
@@ -27,7 +25,7 @@ Ruft die Offset-Abschnitt eines Thunk-Ziels ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_targetOffset (   
+HRESULT get_targetOffset (   
    DWORD* pRetVal  
 );  
 ```  

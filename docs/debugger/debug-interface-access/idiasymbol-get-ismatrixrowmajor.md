@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isMatrixRowMajor | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isMatrixRowMajor | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af4d1817de2886ededb019942b55271480176ba8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3c6a149b342c55ea59036edb21a2ea51ba8ebb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847242"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Gibt an, ob die Matrix wichtigen Zeile ist.  
+Gibt an, ob die Matrix mit Zeilen, die wichtigsten ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT get_isMatrixRowMajor(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Ein Zeiger auf eine `BOOL` , der angibt, ob die Matrix wichtigen Zeile ist.  
+ [out] Ein Zeiger auf eine `BOOL` , der angibt, ob die Matrix mit Zeilen, die wichtigsten ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

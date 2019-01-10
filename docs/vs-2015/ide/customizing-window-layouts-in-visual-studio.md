@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934374"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  Wenn Sie zwei Positionen gleichzeitig in einem Dokument anzeigen oder bearbeiten müssen, können Sie die Fenster teilen. Um das Dokument in zwei Abschnitte zu teilen, durch die unabhängig voneinander gescrollt werden kann, klicken Sie auf **Teilen** im Menü **Fenster** . Klicken Sie auf **Teilung aufheben** im Menü **Fenster** , um die ursprüngliche Ansicht wiederherzustellen.
 
 ### <a name="toolbars"></a>Symbolleisten
- Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zum Positionieren und Anpassen von Symbolleisten finden Sie unter [wie: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zum Positionieren und Anpassen von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 
 ## <a name="arranging-and-docking-windows"></a>Anordnen und Andocken von Fenstern
  Dokumentfenster und Toolfenster können *angedockt*werden, sodass sie eine Position und Größe innerhalb des IDE-Fensterrahmens haben, oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per Rafting zu außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.
@@ -185,6 +184,6 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 |Titel|Beschreibung|
 |-----------|-----------------|
 |[Fensterarten](../misc/kinds-of-windows.md)|Beschreibt die Unterschiede zwischen Toolfenstern und Dokumentfenstern in der IDE.|
-|[How to: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)|Beschreibt das Andocken, automatische Ausblenden und Anordnen von Fenstern sowie das Zurücksetzen des Fensterlayouts.|
-|[How to: Move Around in the IDE (Vorgehensweise: Navigieren in der IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Beschreibt, wie Sie in der IDE zwischen geöffneten Fenstern in der Reihenfolge ihrer Verwendung wechseln können. Es wird auch beschrieben, wie Sie zu bestimmten Dokumenten springen können.|
+|[Vorgehensweise: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)|Beschreibt das Andocken, automatische Ausblenden und Anordnen von Fenstern sowie das Zurücksetzen des Fensterlayouts.|
+|[Vorgehensweise: Move Around in the IDE (Vorgehensweise: Navigieren in der IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Beschreibt, wie Sie in der IDE zwischen geöffneten Fenstern in der Reihenfolge ihrer Verwendung wechseln können. Es wird auch beschrieben, wie Sie zu bestimmten Dokumenten springen können.|
 |[Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Enthält Informationen zu Einstellungskombinationen und deren Auswirkungen auf Fensterlayouts, Tastenkombinationen und andere Elemente in der IDE.|

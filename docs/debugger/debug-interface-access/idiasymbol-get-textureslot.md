@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_textureSlot | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_textureSlot | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2245a23dd4779611aac7ae06901671793d011198
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2ed21168c053e90d83f5377367e565d54b71467f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910979"
 ---
 # <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
-Ruft die Textur Slot ab.  
+Ruft ab, der Textur-Slot.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT get_textureSlot(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , enthält der Textur-Slot.  
+ [out] Ein Zeiger auf eine `DWORD` , enthält den Textur-Slot.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

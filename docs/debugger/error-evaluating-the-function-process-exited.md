@@ -1,26 +1,24 @@
 ---
 title: 'Fehler: Der Zielprozess wurde beendet mit Code &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39; | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98923757912d1f4619cc79c8f946aabaa531ac05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 78580cad30447419734afd9ef8c8fbc490e516e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882389"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde beendet mit Code &#39;Code&#39; beim Auswerten der Funktion &#39;Funktion&#39;
 
-Vollständige Meldungstext: der Zielprozess wurde beim Auswerten der Funktion 'Funktion' Code 'Code' beendet.
+Vollständige Nachrichtentext: Der Zielprozess, der mit dem Code 'code' beendet wurde, während er die Funktion 'funktion' ausgeführt hat
 
 Zum Überprüfen des Status von Objekten für .NET zu vereinfachen, der Debugger wird automatisch erzwingen, dass den gedebuggten Prozess zum Ausführen von zusätzlichen Codes (in der Regel die Eigenschaft Getter-Methoden und `ToString` Funktionen). In den meisten Szenarien werden diese Funktionen erfolgreich abgeschlossen oder Auslösen von Ausnahmen, die vom Debugger abgefangen werden kann. Es gibt jedoch einige Situationen, in denen Ausnahmen abgefangen werden können, da diese Kernel-Grenzen überschreiten, müssen die Benutzer-meldungsweiterleitung oder nicht behebbar sind. Als ein Ergebnis, einen Eigenschaftengetter oder die ToString-Methode, die Code ausführt, beendet, dass entweder explizit den Prozess (z. B. Aufrufe `ExitProcess()`) oder eine nicht behandelte Ausnahme auslöst, die nicht abgefangen werden kann (z. B. `StackOverflowException`) wird beendet die debuggten Prozess und Ende der Debugsitzung. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.
  
@@ -30,7 +28,7 @@ Ein häufiger Grund für dieses Problem ist, dass wenn der Debugger eine Eigensc
  
 Es gibt zwei mögliche Lösungen für dieses Problem.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung #1: Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung 1 Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode 
 
 Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Mit dem Namen der Funktion können Sie versuchen, erneut auswerten dieser Funktion aus der **direkt** Fenster aus, um die Auswertung zu debuggen. Debuggen ist möglich, bei der Auswertung von der **direkt** Fenster daran, im Gegensatz zu impliziten auswertungen aus der **Auto/lokal/Überwachung** Windows, unterbricht der Debugger bei Ausnahmefehlern.
 
@@ -44,10 +42,6 @@ Wenn Sie diese Funktion ändern können, können Sie verhindern den Debugger den
 
 Wenn Sie diese Methode nicht ändern, können Sie möglicherweise den Zielprozess an eine alternative Anweisung unterbrochen, und wiederholen die Auswertung.
  
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Lösung #2: Deaktivieren Sie alle implizite Auswertung
+### <a name="solution-2-disable-all-implicit-evaluation"></a>Lösung 2 Deaktivieren Sie alle implizite Auswertung
  
 Wenn die vorherigen Lösungen das Problem nicht beheben, wechseln Sie zu **Tools** > **Optionen**, und deaktivieren Sie die Einstellung **Debuggen**  >   **Allgemeine** > **eigenschaftenauswertung und andere implizite Funktionsaufrufe**. Dadurch werden die meisten Evaluierungsversionen von impliziten Funktionen deaktiviert und sollte das Problem zu beheben.
-
-
-
-  

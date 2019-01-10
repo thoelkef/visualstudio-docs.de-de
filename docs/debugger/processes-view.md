@@ -1,8 +1,6 @@
 ---
 title: Prozessansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b898713b456afd72f6453bad01028af9090b8dd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922954"
 ---
 # <a name="processes-view"></a>Prozessansicht
 Die Prozessansicht zeigt eine Struktur aller aktiven Prozesse auf Ihrem System. Die Prozess-ID und-Modul werden angezeigt. Verwenden Sie die Systemprozesse angezeigt, wenn Sie möchten, um ein bestimmtes System-Prozess zu überprüfen, die zum Ausführen eines Programms in der Regel entspricht. Prozesse werden identifiziert, von dem Modulnamen oder sie sind vorgesehen, "Systemprozesse".  

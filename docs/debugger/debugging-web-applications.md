@@ -1,8 +1,6 @@
 ---
 title: Debuggen von Webanwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923035"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
@@ -39,7 +37,7 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
  Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen zu ermöglichen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
+ [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Debuggen in Visual Studio](../debugger/index.md)  
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

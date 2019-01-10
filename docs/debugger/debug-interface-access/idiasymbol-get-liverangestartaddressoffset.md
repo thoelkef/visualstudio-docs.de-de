@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517e3c516f18d32634d0c8243d65674175e7da17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95c24788894c784cbe1d4b60dac3dbccf0350a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851312"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Gibt den Zeitzonenoffset-Teil der Startadresse des Bereichs, in dem die lokalen Symbolcache gültig ist.  
@@ -27,7 +25,7 @@ Gibt den Zeitzonenoffset-Teil der Startadresse des Bereichs, in dem die lokalen 
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_liveRangeStartAddressOffset (   
+HRESULT get_liveRangeStartAddressOffset (   
    DWORD* offset  
 );  
 ```  

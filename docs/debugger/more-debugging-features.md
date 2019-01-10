@@ -1,8 +1,6 @@
 ---
 title: Weitere Debugfunktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 793cbfdc1e56a8dfdc986c08d4aaad1c5f208218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822677"
 ---
 # <a name="more-debugging-features"></a>Weitere Debuggingfunktionen
 Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debugger verwenden können.  
   
- Eine Liste mit Tipps und Tricks zum Debuggen schneller und einfacher, finden Sie unter [Debuggen Tipps und Tricks](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/).  
+ Eine Liste mit Tipps und Tricks zum Beschleunigen und Vereinfachen des Debuggings finden Sie im Blogbeitrag über [Tipps und Tricks für das Debugging](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/).  
   
 ## <a name="additional-features"></a>Zusätzliche Funktionen  
  [Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)  
