@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959585"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwendung regulärer Ausdrücke in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für r
 > In Windows-Betriebssystemen enden die meisten Zeilen auf "\r\n" (ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile). Diese Zeichen sind nicht sichtbar, aber im Editor vorhanden und werden an den .NET-Dienst regulärer Ausdrücke übergeben.
 
 > [!TIP]
-> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2 b 3c 4D**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
+> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: 1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 

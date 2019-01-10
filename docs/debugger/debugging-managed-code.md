@@ -1,8 +1,6 @@
 ---
 title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867039"
 ---
 # <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
 
@@ -77,7 +75,7 @@ Hier finden Sie Hinweise zum Debuggen von Windows-Dienstanwendungen, z. B. zum 
 [Debuggen und Profilerstellung](/dotnet/framework/debug-trace-profile/index)  
 Hier werden das Debuggen von .NET Framework-Anwendungen sowie die Konfigurationsanforderungen beschrieben.
 
-[Debuggen von Skript- und Webanwendungen](../debugger/debugging-web-applications-and-script.md)  
+[Debuggen von Skript- und Webanwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
 
 [Neues im Debugger in Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  

@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback2:: Restrictoriginalpathaccess | Microsoft Docs'
-ms.custom: ''
+title: 'Idialoadcallback2:: Restrictoriginalpathaccess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3cd1f4989e88c41039328cdc4d54071ff49bac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7b88ea861c34eef8761b22cdc4c23f4e79a6b978
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872295"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Bestimmt, ob es angemessen, eine PDB-Datei im ursprünglichen Debugverzeichnis suchen ist.  
+Bestimmt, ob eine PDB-Datei in das ursprüngliche Debugverzeichnis gesucht werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Alle Rückgabecode außer `S_OK` wird verhindert, dass eine PDB-Datei im ursprünglichen Debugverzeichnis suchen. Das ursprüngliche Debugverzeichnis ist der Pfad der Symboldatei in die ausführbare Datei kompiliert werden, wenn Debuggen aktiviert ist. Dieser Pfad ist nicht unbedingt mit dem der Pfad, in dem die ausführbare Datei vorhanden ist.  
+ Code als Rückgabewert `S_OK` wird verhindert, dass eine PDB-Datei in das ursprüngliche Debugverzeichnis gesucht. Das ursprüngliche Debugverzeichnis ist der Pfad der Symboldatei, die in die ausführbare Datei kompiliert wird, wenn debugging aktiviert ist. Dieser Pfad ist nicht unbedingt mit dem der Pfad, in dem die ausführbare Datei vorhanden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

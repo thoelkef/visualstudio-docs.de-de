@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_intro | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 05d520947c5e5e998ecf67a1b9dbb6d77bdff2c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989541"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktion ist ab.  
@@ -27,7 +25,7 @@ Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktio
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_intro (   
+HRESULT get_intro (   
    BOOL* pRetVal  
 );  
 ```  
@@ -59,7 +57,7 @@ class B : public A {
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  
