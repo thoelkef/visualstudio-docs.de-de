@@ -3,19 +3,18 @@ title: R-Beispielprojekte
 description: Ein Index einer Sammlung von Beispielen für den Einstieg in R und Visual Studio.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837458"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Beispielprojekte für R Tools für Visual Studio
 
@@ -24,7 +23,7 @@ Mit dieser Sammlung von Beispielen können Sie mit R, R Tools für Visual Studio
 1. Laden Sie die [ZIP-Beispieldatei](https://github.com/Microsoft/RTVS-docs/archive/master.zip) herunter, und extrahieren Sie sie in einem Ordner Ihrer Wahl.
 1. Öffnen Sie `examples/Examples.sln`, um zwei Ordner im Projekt anzuzeigen:
 
-    - *A first look at R* enthält einfache Anleitungen für Einsteiger in R.
+    - *Erster Einblick in R* enthält einfache Anleitungen für Einsteiger in R.
     - *MRS and Machine Learning* enthält Beispiele zur Verwendung von R und Microsoft Machine Learning Server für das maschinelle Lernen.
 
 ## <a name="a-first-look-at-r"></a>Erster Einblick in R
@@ -83,7 +82,7 @@ Der folgende Vergleich zeigt, dass MLS und MRO mit MKL eine weitaus bessere Bere
 
 ![Vergleich von MLS und MRO mit MKL zu R und MRO ohne MKL](media/samples-speed-comparison.png)
 
-Einen technischen Vergleich von R mit MRO und MLS finden Sie in der [detaillierten Diskussion von Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) zu diesem Thema.
+Einen technischen Vergleich von R mit MRO und MLS finden Sie in der [detaillierten Diskussion von Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) zu diesem Thema.
 
 In der folgenden Abbildung wird dann die verstrichene Zeit in Sekunden verglichen, die zum Erstellen von logistischen Regressionsmodellen verwendet wird, um Flugverspätungen von mehr als 15 Minuten vorherzusagen.  Die verstrichene Zeit, die in CRAN R verwendet wird, erhöht sich signifikant, wenn eine niedrige Anzahl von Zeilen erhöht wird, während MLS nur etwa zweimal erhöht wird. Weitere Informationen zu diesem Benchmark finden Sie im Beispiel *Benchmarks/rxGlm_benchmark.R*.
 
