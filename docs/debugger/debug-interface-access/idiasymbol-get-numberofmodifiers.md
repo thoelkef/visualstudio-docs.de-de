@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfModifiers | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_numberOfModifiers | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1946620d17df6eb239f8f042d05c58478b54516
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 911e5f405dd7889378b62d9ec5bef3c943d3c85f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875792"
 ---
 # <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 Ruft die Anzahl der Modifizierer, die in den ursprünglichen Typ angewendet werden.  
@@ -31,10 +29,10 @@ HRESULT get_numberOfModifiers(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die angibt, dass der Anzahl der Modifizierer, die in den ursprünglichen Typ angewendet werden.  
+ [out] Ein Zeiger auf eine `DWORD` , der angibt, dass der Anzahl der Modifizierer, die in den ursprünglichen Typ angewendet werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

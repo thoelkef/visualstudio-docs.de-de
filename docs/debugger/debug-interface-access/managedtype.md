@@ -1,8 +1,6 @@
 ---
-title: ManagedType | Microsoft Docs
-ms.custom: ''
+title: ManagedType | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888243"
 ---
 # <a name="managedtype"></a>ManagedType
-Ein verwalteter Typ (beliebiges Symbol von Metadaten oder von systemeigen in die Speicher- und Verwaltungsfunktionen von Sprachen wie c# definiert) wird anhand einer `SymTagManagedType` Symbol.  
+Ein verwalteter Typ (einem Symbol, definiert durch die Metadaten oder Native für die Speicher- und Verwaltungsfunktionen von Sprachen wie z. B. C#) wird durch identifiziert eine `SymTagManagedType` Symbol.  
   
 ## <a name="properties"></a>Eigenschaften  
- Die folgende Tabelle zeigt zusätzliche gültige Eigenschaften für diese Symboltyp.  
+ Die folgende Tabelle zeigt zusätzliche gültige Eigenschaften für diesen Symboltyp.  
   
 |Eigenschaft|Datentyp|Beschreibung|  
 |--------------|---------------|-----------------|  

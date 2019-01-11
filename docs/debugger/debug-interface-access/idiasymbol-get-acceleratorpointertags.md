@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_acceleratorPointerTags | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875458"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Gibt alle Accelerator Zeiger Tagwert aufweisen, die entsprechen einer C++ AMP-Beschleuniger Stub-Funktion zurück.  
+Gibt alle Accelerator Zeiger Tag-Werte, die entsprechen einer C++ AMP-Beschleuniger Stub-Funktion zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,16 +34,16 @@ HRESULT get_acceleratorPointerTags(
  [in] Die Größe des Ausgabearrays `pPointerTags`.  
   
  `pcnt`  
- [out] Die Anzahl der Zugriffstaste Zeiger Tags in der C++ AMP-Beschleuniger Stub-Funktion.  
+ [out] Die Anzahl von Accelerator-Zeiger-Tags in der C++ AMP-Beschleuniger Stub-Funktion.  
   
  `pPointerTags`  
- [out] Ein `DWORD` Array-Zeiger, der mit der Zugriffstaste Zeiger Tag-Werte in der C++ AMP-Beschleuniger Stub-Funktion gefüllt ist.  
+ [out] Ein `DWORD` Array-Zeiger, der mit der Zugriffstaste Zeiger-Tag-Werte in der Stub-Funktion von C++ AMP-Beschleuniger gefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, auf eine `IDiaSymbol` -Schnittstelle, die an eine C++-AMP-Beschleuniger Stub-Funktion entspricht.  
+ Diese Methode wird aufgerufen, auf eine `IDiaSymbol` Schnittstelle, die eine C++-AMP-Beschleuniger Stub-Funktion entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

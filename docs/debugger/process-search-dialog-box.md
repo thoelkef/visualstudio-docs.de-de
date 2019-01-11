@@ -1,8 +1,6 @@
 ---
-title: Dialogfeld "Fenstersuche" verarbeiten | Microsoft Docs
-ms.custom: ''
+title: Verarbeiten von Meldungssuche (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -12,42 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958056"
 ---
 # <a name="process-search-dialog-box"></a>Dialogfeld "Prozesssuche"
-Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für einen bestimmten Prozess in [Prozessansicht](../debugger/processes-view.md). Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein **Prozesse** Fenster "anzeigen". Wählen Sie dann **Prozess suchen** aus der **Suche** Menü.  
+Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für einen bestimmten Prozess im [Prozessansicht](../debugger/processes-view.md). Um das Dialogfeld anzuzeigen, den Fokus auf ein **Prozesse** Fenster "Berichtsansicht". Wählen Sie dann **Prozess suchen** aus der **Suche** Menü.  
   
  Die folgenden Einstellungen sind verfügbar:  
   
  **Process**  
- Die Prozess-ID gesucht werden soll.  
+ Die Prozess-ID für die Suche.  
   
  **Modul**  
  Das zu suchende Modulzeichenfolge.  
   
  **Suchrichtung nach oben oder unten**  
- Die anfängliche Richtung der Suche.  
+ Die erste Richtung für die Suche.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Suchen eines Prozesses in der Prozessansicht](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Erläutert, wie einen bestimmten Prozess in der Prozessansicht gefunden.  
+ Erläutert, wie Sie einen bestimmten Prozess in der Prozessansicht.  
   
  [Prozessansicht](../debugger/processes-view.md)  
  Zeigt eine Strukturansicht der aktiven Prozesse an.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
  Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
   
  [Dialogfeld "Prozesseigenschaften"](../debugger/process-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften eines Prozesses in Prozessansicht ausgewählt.  
+ Verwendet zum Anzeigen der Eigenschaften eines Prozesses, der in der Prozessansicht ausgewählt.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.
+ Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.

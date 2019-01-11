@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_builtInKind | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_builtInKind | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a53bea46c2abcffa820da132162d7efb55c3da9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: bbfa28749e01ad6874e10fd1a17243f79536e694
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966186"
 ---
 # <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
-Ruft eine integrierte Art des HLSL-Typs ab.  
+Ruft eine integrierte Art der HLSL-Typ ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT get_buildInKind(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die eine integrierte Art von den HLSL-Typ enthält.  
+ [out] Ein Zeiger auf eine `DWORD` , die eine integrierte Art der HLSL-Typ enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

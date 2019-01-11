@@ -3,7 +3,6 @@ title: Debuggen einer app, die nicht Teil von Visual Studio-Projektmappe
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c408ca42f82c0419c6570068e2a83e97f2371e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6930360254111533ac635a404d203a87bbdd767e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874309"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debuggen einer app, die nicht Teil von Visual Studio-Projektmappe (C++, C#, Visual Basic F#)
 

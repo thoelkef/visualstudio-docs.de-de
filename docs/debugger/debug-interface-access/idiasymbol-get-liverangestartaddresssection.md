@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f41415954439d299c0c69585141ffc678d332dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 596f7a3c8371007787fc3531abd1bea7892c1ca6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918757"
 ---
 # <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Gibt zurück, den Teil "Abschnitt" die Startadresse des Bereichs, in dem die lokalen Symbolcache gültig ist.  
@@ -27,7 +25,7 @@ Gibt zurück, den Teil "Abschnitt" die Startadresse des Bereichs, in dem die lok
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_liveRangeStartAddressSection (   
+HRESULT get_liveRangeStartAddressSection (   
    DWORD* section  
 );  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: 'CA2235: Alle nicht serialisierbaren Felder markieren'
+title: 'CA2235: Alle nicht serialisierbaren Felder markieren.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986569"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154149"
 ---
-# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Alle nicht serialisierbaren Felder markieren
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Alle nicht serialisierbaren Felder markieren.
 
 |||
 |-|-|
@@ -38,7 +38,9 @@ ms.locfileid: "53986569"
  Ein Instanzenfeld eines Typs, der nicht serialisierbar ist, ist in einem serialisierbaren Typ deklariert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein serialisierbarer Typ mit gekennzeichnet ist, wird die <xref:System.SerializableAttribute?displayProperty=fullName> Attribut. Wenn der Typ serialisiert wird, eine <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> Ausnahme ausgelöst, wenn ein Typ ein Instanzenfeld eines Typs enthält, die nicht serialisierbar ist.
+ Ein serialisierbarer Typ mit gekennzeichnet ist, wird die <xref:System.SerializableAttribute?displayProperty=fullName> Attribut. Wenn der Typ serialisiert wird, eine <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> Ausnahme wird ausgelöst, wenn der Typ ein Instanzenfeld eines Typs enthält, die nicht serialisierbar ist.
+ 
+ Eine Ausnahme ist, wenn der Typ, benutzerdefinierte Serialisierung, die über verwendet die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle. Typen implementieren diese Schnittstelle bieten, ihre eigene Serialisierungslogik und daher CA2235 für solche Typen nicht serialisierbaren Instanzfelder nicht ausgelöst wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, wenden die <xref:System.NonSerializedAttribute?displayProperty=fullName> -Attribut auf das Feld, das nicht serialisierbar ist.

@@ -2,7 +2,6 @@
 title: Trigger anhalten, fortsetzen und im Hintergrund von Ereignissen beim Debuggen von UWP | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919676"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Wie Sie auslösen, anhalten, fortsetzen und im Hintergrund von Ereignissen beim Debuggen von UWP-apps in Visual Studio
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
@@ -111,6 +110,6 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
   
 ## <a name="see-also"></a>Siehe auch  
  [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Anwendungslebenszyklus](/windows/uwp/launch-resume/app-lifecycle)   
  [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

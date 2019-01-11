@@ -1,8 +1,6 @@
 ---
-title: Kann nicht geändert werden (Dialogfeld) | Microsoft Docs
-ms.custom: ''
+title: Kann nicht geändert werden (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.variables.failededit
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a6eb8059d9780e3b7343c6a7864896a0c529c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5fd6b184b72acc2ecd08123160a512e5473e6611
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966546"
 ---
-# <a name="cannot-change-value-dialog-box"></a>Dialogfeld "Der Wert kann nicht geändert werden"
+# <a name="cannot-change-value-dialog-box"></a>Der Wert kann nicht geändert werden (Dialogfeld)
 ## <a name="error"></a>Fehler  
  `The value of this variable cannot be changed` &#124;`The name` *Namen* `does not exist in the current context` &#124; *verschiedene andere Meldungen*  
   

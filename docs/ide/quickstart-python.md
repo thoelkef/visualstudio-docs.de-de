@@ -128,7 +128,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 3. Klicken Sie auf **Debuggen > Starten ohne Debugging** (**STRG**+**F5**). Dadurch werden Änderungen an Dateien gespeichert, und die App wird ausgeführt.
 
-4. Ein Befehlsfenster mit der Meldung „* Running in <https://localhost:4449/>“ (* wird unter https://localhost:4449/ ausgeführt) wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
+4. Ein Befehlsfenster mit der Meldung „* Running in <https://localhost:4449/>“ wird angezeigt, und ein Browserfenster zu `localhost:4449` sollte geöffnet werden, in dem die Meldung „Hello, Python!“ (Hallo, Python!) angezeigt wird. Die GET-Anforderung wird ebenfalls mit dem Status „200“ im Befehlsfenster angezeigt.
 
     Wenn kein Browser automatisch geöffnet wird, starten Sie Ihren bevorzugten Browser, und navigieren Sie zu `localhost:4449`.
 

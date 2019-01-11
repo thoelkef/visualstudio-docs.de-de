@@ -1,8 +1,6 @@
 ---
 title: Deaktivieren Sie den Just-In-Time-Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959786"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>Deaktivieren Sie den Just-In-Time-Debugger 
+# <a name="disable-the-just-in-time-debugger"></a>Deaktivieren des Just-In-Time-Debuggers 
 
 Das Dialogfeld "Just-in-Time-Debugger" möglicherweise tritt ein Fehler in einer ausgeführten app zu öffnen und zu verhindern, dass die app nicht fortgesetzt werden kann. 
 
@@ -46,4 +44,3 @@ Wenn Sie Visual Studio installiert haben, können Sie die Just-In-Time-Debuggen 
 Nachdem Sie die Just-In-Time-Debuggen deaktivieren, die app möglicherweise der Fehler behandelt, und führen Sie wie gewohnt. 
 
 Wenn die app immer noch einen nicht behandelten Fehler hat, möglicherweise eine Fehlermeldung angezeigt oder die app Absturz oder aufhängen führt, kann. Die app nicht normal ausgeführt, bis der Fehler behoben wurde. Sie können versuchen, wenden Sie sich an den Besitzer der app, und bitten Sie diesen Fehler beheben.
-
