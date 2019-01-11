@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964051"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.  
@@ -58,7 +55,7 @@ ms.locfileid: "49841883"
   
 1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine komplexe Datenbindung**. Wählen Sie im Assistenten **ein neues Dokument erstellen**.  
   
-     Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine komplexe Datenbindung** Projekt **Projektmappen-Explorer**.  
   
@@ -224,11 +221,9 @@ ms.locfileid: "49841883"
   
 -   Die Lösung bereit. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
--   Erstellen Sie eine Master/Detail-Beziehung zwischen einem Feld und eine Tabelle an. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Erstellen Sie eine Master/Detail-Beziehung zwischen einem Feld und eine Tabelle an. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
  [Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

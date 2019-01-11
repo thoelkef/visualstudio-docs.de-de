@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Microsoft Docs
+title: IDispError::GetHelpInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728010"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087489"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Gibt den Pfad der Hilfedatei und des Themas, die den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
+Gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -39,7 +39,7 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrFileName`  
- [out] Zeichenfolge, die den vollqualifizierten Pfad der Hilfedatei enthält. Wenn keine Hilfe-Datei vorhanden ist, oder ein Fehler auftritt, ist der Rückgabewert NULL.  
+ [out] Eine Zeichenfolge, die den vollqualifizierten Pfad der Hilfedatei enthält. Wenn keine Hilfe-Datei vorhanden ist, oder ein Fehler auftritt, ist der Rückgabewert NULL.  
   
  `pdwContext`  
  [out] Die Hilfekontext-ID für den Fehler. Wenn keine Hilfe-Datei vorhanden ist (Wenn `pbstrFileName` NULL ist), dieser Parameter hat keine Bedeutung.  
@@ -51,11 +51,11 @@ HRESULT GetHelpInfo(
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
 |`E_FAIL`|Ein anbieterspezifischer Fehler ist aufgetreten.|  
-|`E_INVALIDARG`|`pbstrFileName`oder `pdwContext` war NULL.|  
+|`E_INVALIDARG`|`pbstrFileName` oder `pdwContext` war NULL.|  
 |`E_OUTOFMEMORY`|Der Anbieter konnte nicht genügend Speicher in den Pfad der Hilfe zurückgegeben.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Pfad der Hilfedatei und des Themas, die den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
+ Diese Methode gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
   
 > [!NOTE]
 >  Diese Methode ist nicht implementiert.  

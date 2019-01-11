@@ -5,7 +5,7 @@ items:
   href: installing-the-visual-studio-sdk.md
 - name: Beginnen mit dem Entwickeln von Visual Studio-Erweiterungen
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Erstellen der ersten Erweiterung: Hello World'
+- name: 'Erstellen Ihrer ersten Erweiterung: Hello World'
   href: extensibility-hello-world.md
 - name: Neuigkeiten im Visual Studio 2017 SDK
   href: what-s-new-in-the-visual-studio-2017-sdk.md
@@ -125,15 +125,15 @@ items:
       href: editor-imports.md
     - name: Unterstützung von EditorConfig
       href: supporting-editorconfig.md
-    - name: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung'
+    - name: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
     - name: 'Exemplarische Vorgehensweise: Erstellen einer Randglyphe'
       href: walkthrough-creating-a-margin-glyph.md
     - name: 'Exemplarische Vorgehensweise: Anpassen der Textansicht'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Satzspiegel)'
+    - name: 'Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Spaltenführungslinien)'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Exemplarische Vorgehensweise: Markieren von Text'
+    - name: 'Exemplarische Vorgehensweise: Hervorheben von Text'
       href: walkthrough-highlighting-text.md
     - name: 'Exemplarische Vorgehensweise: Gliedern'
       href: walkthrough-outlining.md
@@ -143,7 +143,7 @@ items:
       href: walkthrough-displaying-quickinfo-tooltips.md
     - name: 'Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung'
+    - name: 'Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen'
       href: walkthrough-displaying-statement-completion.md
     - name: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten'
       href: walkthrough-implementing-code-snippets.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Assembly-Element (Assistentenerweiterung für Visual Studio-Vorlagen)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (Visual Studio-Vorlagen)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad-Attribut und -Element (Visual Studio-Vorlagen)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload-Element (Visual Studio-Vorlagen)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (Visual Studio-Vorlagen)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder-Element (Visual Studio-Vorlagen)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion-Element (Visual Studio-Vorlagen)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion-Element (Visual Studio-Vorlagen)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference-Element (Visual Studio-Vorlagen)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (Visual Studio-Vorlagen)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder-Element (Visual Studio-Vorlagen)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage-Element (Visual Studio-Vorlagen)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName-Element (Visual Studio-Vorlagen)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent-Element (Visual Studio-Vorlagen)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData-Element (Visual Studio-Vorlagen)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension-Element (Visual Studio-Vorlagen)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload-Element (Visual Studio-Vorlagen)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion-Element (Visual Studio-Vorlagen)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference-Element (Visual Studio-Vorlagen)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName-Element (Visual Studio-Vorlagen)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Schemareferenz zum Visual Studio-Vorlagenmanifest
     href: visual-studio-template-manifest-schema-reference.md
 - name: Erweitern von Benutzereinstellungen und Optionen
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referenz zur Roslyn-Paketversion
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562359"

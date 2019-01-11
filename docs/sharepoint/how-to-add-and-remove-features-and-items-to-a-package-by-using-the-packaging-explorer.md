@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe den Paket-Explorer | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880860"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer
   Um ein Paket zum Bereitstellen von SharePoint-Elemente und Funktionen zu konfigurieren, können Sie die Paket-Explorer. Sie können die SharePoint-Projektelemente und-Funktionen in der WSP-Datei anpassen.  
   
  Alternativ können Sie den Paket-Designer verwenden, um anzuzeigen, und die Funktionen, die die Aktivierungsreihenfolge ändern, neu anordnen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
@@ -69,4 +64,3 @@ ms.locfileid: "36755611"
   
 ## <a name="see-also"></a>Siehe auch
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

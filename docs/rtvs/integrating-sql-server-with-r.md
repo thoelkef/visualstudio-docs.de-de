@@ -3,19 +3,18 @@ title: Integration von SQL Server in R
 description: Visual Studio unterstützt das Erstellen und Ausführen von SQL-Abfragen aus R und die Möglichkeiten von R zum Arbeiten mit gespeicherten Prozeduren.
 ms.date: 06/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3b9fa1f675754257a2278c7282c45d9816c034cd
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 2d8f9cd98d7f3fa794dedff87bfe4072906b075b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891734"
 ---
 # <a name="work-with-sql-server-and-r"></a>Arbeiten mit SQL Server und R
 
@@ -28,7 +27,7 @@ Dank der hervorragenden Unterstützung von Visual Studio für SQL Server können
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ), um eine Übersicht über SQL Server und R zu erhalten (3 m 03s). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ), um eine Übersicht über SQL Server und R zu erhalten (3 m 03s). |
 
 ## <a name="create-and-run-sql-queries"></a>Erstellen und Ausführen von SQL-Abfragen
 
@@ -61,7 +60,7 @@ RTVS vereinfacht den ansonsten komplizierten und fehleranfälligen Prozess zum K
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ), um eine Übersicht über R und gespeicherte SQL-Prozeduren zu erhalten (6m 09s). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ), um eine Übersicht über R und gespeicherte SQL-Prozeduren zu erhalten (6m 09s). |
 
 ### <a name="add-a-database-connection"></a>Hinzufügen einer Datenbankverbindung
 

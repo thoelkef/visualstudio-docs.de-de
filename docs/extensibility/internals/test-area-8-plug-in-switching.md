@@ -1,9 +1,6 @@
 ---
 title: 'Testbereich 8: Plug-in-Wechsel | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
@@ -14,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec4bc16cea19a1d2eeea68d7d38797d8ea5b312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986231"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-In-Wechsel
+# <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-in-Wechsel
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie das aktuelle Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess auswählen, die für die Verwendung für die quellcodeverwaltung des Projektmappen-Plug-in.  
 
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.  
 
--   Aktuelles Quellcodeverwaltungs-Plug-Ins: **Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **Plug-in-Auswahl** .  
+-   Quellcodeverwaltungs-Plug-in: **Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **Plug-in-Auswahl**.  
 
--   Quelle ändern Bindung steuern: **Datei** -> **Quellcodeverwaltung** -> **Quellcodeverwaltung ändern**...  
+-   Quelle ändern Bindung steuern: **Datei** -> **Quellcodeverwaltung** -> **ändern, Datenquellen-Steuerelement**...  
 
 ## <a name="common-expected-behavior"></a>Allgemeine erwartet  
  Ändern das Quellcodeverwaltungs-Plug-In für eine Lösung ist möglich, ohne Visual Studio beenden oder das erneute Laden der Projektmappe. Darüber hinaus wird das aktuelle Quellcodeverwaltungs-Plug-in automatisch von einer Lösung verwendet werden, wenn diese Projektmappe geladen ist.  
@@ -37,7 +34,7 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden finden bestimmte Testfälle für den-Plug-in durch den Wechsel des Testbereich.  
 
-### <a name="case-8a-automatic-change"></a>Case-8a: automatische Änderung  
+### <a name="case-8a-automatic-change"></a>Groß-/Kleinschreibung 8a: Automatische Änderung  
 
 #### <a name="expected-behavior"></a>Es wird erwartet  
  Wenn ein Benutzer eine Projektmappe geladen wird, die unter quellcodeverwaltung befindet, die Projektmappe wird automatisch geladen, und das entsprechende Quellcodeverwaltungs-Plug-in als aktuell ausgewählt ist.  
@@ -47,7 +44,7 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 | - | - | - |
 | Automatische Source Control-Plug-in ändern | 1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**.)<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Akzeptieren Sie entladen Lösung-Eingabeaufforderung.<br />6.  Öffnen Sie die Projektmappe vom Datenträger aus. | Projektmappe wird geöffnet.<br /><br /> -Plug-in im Test wird das aktuelle Quellcodeverwaltungs-Plug-in. |
 
-### <a name="case-8b-solution-based-change"></a>Case-8 b: informationsreiche lösungsbasierte ändern  
+### <a name="case-8b-solution-based-change"></a>Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern  
 
 #### <a name="expected-behavior"></a>Es wird erwartet  
  Die Lösung kann die zugehörige Quellcodeverwaltungs-Plug-in geändert haben.  

@@ -1,8 +1,6 @@
 ---
 title: GenerateDeploymentManifest-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ac7c6f1a840a38508e49ca15efdd08c2043da6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932378"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest-Aufgabe
 
@@ -35,7 +33,7 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
 In der folgenden Tabelle werden die Parameter für die `GenerateDeploymentManifest`-Aufgabe beschrieben.
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |--------------------------| - |
 | `AssemblyName` | Optionaler `String` -Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn der Name nicht abgeleitet werden kann, löst die Aufgabe einen Fehler aus. |
 | `AssemblyVersion` | Optionaler `String` -Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, verwendet die Aufgabe den Wert „1.0.0.0“. |
@@ -51,7 +49,7 @@ In der folgenden Tabelle werden die Parameter für die `GenerateDeploymentManife
 | `MaxTargetPath` | Optionaler `String` -Parameter.<br /><br /> Gibt die maximal zulässige Länge eines Dateipfads in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung an. Wenn dieser Parameter angegeben wird, wird die Länge jedes Dateipfads in der Anwendung mit dem Grenzwert verglichen. Alle Elemente, die den Grenzwert übersteigen, lösen eine Buildwarnung aus. Wenn dieser Parameter nicht angegeben wird oder den Wert 0 (Null) hat, wird keine Prüfung ausgeführt. |
 | `MinimumRequiredVersion` | Optionaler `String` -Parameter.<br /><br /> Gibt an, ob der Benutzer das Update überspringen kann. Wenn der Benutzer nicht mindestens über die erforderliche Version verfügt, steht die Option zum Überspringen des Updates nicht zur Verfügung. Diese Eingabe ist nur gültig, wenn der Wert des `Install`-Parameters `true` ist. |
 | `OutputManifest` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Namen der generierten Ausgabemanifestdatei an. Wenn dieser Parameter nicht angegeben wird, wird der Name der Ausgabedatei von der Identität des generierten Manifests abgeleitet. |
-| `Platform` | Optionaler `String` -Parameter.<br /><br /> Gibt die Zielplattform für die Anwendung an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Der Standardwert ist `AnyCPU`. |
+| `Platform` | Optionaler `String` -Parameter.<br /><br /> Gibt die Zielplattform für die Anwendung an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Der Standardwert ist `AnyCPU`sein. |
 | `Product` | Optionaler `String` -Parameter.<br /><br /> Gibt den Namen der Anwendung an. Wenn dieser Parameter nicht angegeben wird, wird der Name von der Identität des generierten Manifests abgeleitet. Dieser Name wird für die Verknüpfung im **Startmenü** verwendet und ist Teil des Namens, der im Dialogfeld **Software** angezeigt wird. |
 | `Publisher` | Optionaler `String` -Parameter.<br /><br /> Gibt den Herausgeber der Anwendung an. Wenn dieser Parameter nicht angegeben ist, wird der Name vom registrierten Benutzer oder von der Identität des generierten Manifests abgeleitet. Dieser Name wird für den Ordnernamen im **Startmenü** verwendet und ist Teil des Namens, der im Dialogfeld **Software** angezeigt wird. |
 | `SuiteNamel` | Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des Ordners im **Startmenü** an, in dem sich die Anwendung nach der ClickOnce-Bereitstellung befindet. |

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getreturnaddress-Methode | Microsoft Docs'
+title: 'Ijsdebugframe:: Getreturnaddress-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d2b78f049a080f70b30edb82af1066817f6adb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78384fc4e65dcd5e1f41f3f83b98c3fab5b12cfd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093898"
 ---
 # <a name="ijsdebugframegetreturnaddress-method"></a>IJsDebugFrame::GetReturnAddress-Methode
 Ruft die Rückgabeadresse ab, die beim "Start" des Frames mit "Push" übertragen wird (siehe GetStackRange).  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetReturnAddress(  
    UINT64 *pReturnAddress  
 );  

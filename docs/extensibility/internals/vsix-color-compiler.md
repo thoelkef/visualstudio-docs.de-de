@@ -1,6 +1,5 @@
 ---
-title: VSIX-Farbe Compiler | Microsoft Docs
-ms.custom: ''
+title: VSIX-Farbcompiler | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -9,19 +8,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 115f3a6c9d01d1e92a5eb7c840dfb17abcfd3c72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990856"
 ---
-# <a name="vsix-color-compiler"></a>Die Farbe Compiler VSIX
-Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, die eine XML-Datei, die Farben für vorhandene Visual Studio-Designs darstellt akzeptiert und wandelt es eine PKGDEF-Datei, damit diese Farben in Visual Studio verwendet werden können. Da es Unterschiede zwischen XML-Dateien einfach ist, eignet sich dieses Tool zum Verwalten von benutzerdefinierten Farben in der quellcodeverwaltung. Es kann auch in Buildumgebungen eingebunden werden soll, sodass die Ausgabe des Builds eine gültige PKGDEF-Datei ist.  
+# <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
+Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, die eine XML-Datei, die Farben für vorhandene Visual Studio-Designs darstellt akzeptiert und konvertiert sie eine PKGDEF-Datei, damit diese Farben in Visual Studio verwendet werden können. Da es einfach, die Unterschiede zwischen XML-Dateien handelt, eignet sich dieses Tool zum Verwalten von Farben in der quellcodeverwaltung. Sie können auch Buildumgebungen Hook hinzugefügt werden soll, damit die Ausgabe des Builds eine gültige PKGDEF-Datei ist.  
   
- **Design XML-schema**  
+ **Design von XML-schema**  
   
- Eine vollständige Design-XML-Datei sieht wie folgt:  
+ Eine vollständige Design-XML-Datei sieht folgendermaßen aus:  
   
 ```xml  
 <Themes>  
@@ -43,7 +42,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
  **Design**  
   
- Die \<Design ">-Element definiert ein gesamte Design. Ein Design muss mindestens ein enthalten \<Kategorie > Element. Designelemente werden wie folgt definiert:  
+ Die \<Design >-Element definiert ein vollständiges Design. Ein Design muss mindestens einen enthalten \<Kategorie > Element. Designelemente werden wie folgt definiert:  
   
 ```xml  
 <Theme Name="name" GUID="guid">  
@@ -55,9 +54,9 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|  
 |**Attribut**|**Definition**|  
 |name|[Erforderlich] Der Name des Designs|  
-|GUID|[Erforderlich] Das Design-GUID (müssen mit GUID Formatierung)|  
+|GUID|[Erforderlich] Das Design der GUID (Formatierung der GUID übereinstimmen muss)|  
   
- Wenn Sie benutzerdefinierte Farben für Visual Studio zu erstellen, müssen diese Farben für die folgenden Designs definiert werden. Wenn keine Farben für ein bestimmtes Design vorhanden sind, versucht Visual Studio die fehlenden Farben aus das Design "hell" geladen.  
+ Wenn Sie benutzerdefinierte Farben für Visual Studio zu erstellen, müssen diese Farben für die folgenden Themen definiert werden. Wenn keine Farben für ein bestimmtes Design vorhanden ist, versucht Visual Studio, um die fehlenden Farben aus das Design "hell" zu laden.  
   
 |||  
 |-|-|  
@@ -69,7 +68,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
  **Kategorie**  
   
- Die \<Kategorie >-Element definiert eine Auflistung von Farben in einem Design. Kategorienamen logische Gruppierungen bereitstellen, und sollte als eng wie möglich definiert werden. Eine Kategorie muss mindestens ein enthalten \<Farbe > Element. Kategorie-Elemente werden wie folgt definiert:  
+ Die \<Kategorie >-Element definiert eine Auflistung von Farben in einem Design. Kategorienamen logische Gruppierungen bereitzustellen und sollten als eng wie möglich definiert werden. Eine Kategorie muss mindestens einen enthalten \<Farbe > Element. Kategorieelemente werden wie folgt definiert:  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -81,11 +80,11 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|  
 |**Attribut**|**Definition**|  
 |name|[Erforderlich] Der Name der Kategorie|  
-|GUID|[Erforderlich] Die Kategorie-GUID (müssen mit GUID Formatierung)|  
+|GUID|[Erforderlich] Die Kategorie-GUID (Formatierung der GUID übereinstimmen muss)|  
   
  **Farbe**  
   
- Die \<Farbe >-Element definiert eine Farbe für eine Komponente oder der Zustand der Benutzeroberfläche. Die bevorzugte Benennungsschema für eine Farbe ist [Benutzeroberflächentyp] [State]. Verwenden Sie das Wort "Color", wie sie redundant ist. Eine Farbe sollte klar anzugeben, den Elementtyp und die Situationen oder "Bundesland" an, für die die Farbe angewendet werden soll. Eine Farbe darf nicht leer sein und muss entweder eine oder beide der enthalten eine \<Hintergrund > und \<Vordergrund > Element. Farbelemente sind wie folgt definiert:  
+ Die \<Farbe >-Element definiert eine Farbe für eine Komponente oder der Zustand der Benutzeroberfläche. Das bevorzugte Benennungsschema für eine Farbe ist [UI-Typ] [Status]. Verwenden Sie nicht das Wort "Color", da sie redundant ist. Eine Farbe sollte eindeutig anzugeben, den Elementtyp und die Situationen, oder "Bundesland", für die die Farbe angewendet werden. Eine Farbe darf nicht leer sein und muss entweder eine oder beide der enthalten eine \<Hintergrund > und \<Vordergrund > Element. Farbelemente sind wie folgt definiert:  
   
 ```xml  
 <Color Name="name">  
@@ -101,7 +100,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
  **Hintergrund und/oder Vordergrund**  
   
- Die \<Hintergrund > und \<Vordergrund >-Elemente definieren einer Farbe Wert und Typ für den Hintergrund oder Vordergrund eines UI-Elements. Diese Elemente verfügen über keine untergeordneten Elemente.  
+ Die \<Hintergrund > und \<Vordergrund > Elemente zu definieren, einer Farbe den Wert und Typ für den Hintergrund oder Vordergrund eines Benutzeroberflächenelements. Diese Elemente verfügen über keine untergeordneten Elemente.  
   
 ```xml  
 <Background Type="type" Source="int" />  
@@ -111,14 +110,14 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Typ|[Erforderlich] Der Typ der ausgewählten Farbe. Es kann einer der folgenden sein:<br /><br /> *CT_INVALID:* die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* ARGB-Rohwert.<br /><br /> *CT_COLORINDEX:* NICHT VERWENDEN.<br /><br /> *CT_SYSCOLOR:* eine Windows-System-Farbe von SysColor.<br /><br /> *CT_VSCOLOR:* aus __VSSYSCOLOREX eine Visual Studio-Farbe.<br /><br /> *CT_AUTOMATIC:* die automatische Färbung.<br /><br /> *CT_TRACK_FOREGROUND:* NICHT VERWENDEN.<br /><br /> *CT_TRACK_BACKGROUND:* NICHT VERWENDEN.|  
-|Quelle|[Erforderlich] Der Wert der Farbe im hexadezimalen Format dargestellt wird.|  
+|Typ|[Erforderlich] Der Typ der Farbe. Sie können eine der folgenden sein:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatiertes über den ARGB-Wert.<br /><br /> *CT_COLORINDEX:* VERWENDEN SIE NICHT.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System-Farbe von SysColor.<br /><br /> *CT_VSCOLOR:* Eine aus __VSSYSCOLOREX Visual Studio-Farbe.<br /><br /> *CT_AUTOMATIC:* Die Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* VERWENDEN SIE NICHT.<br /><br /> *CT_TRACK_BACKGROUND:* VERWENDEN SIE NICHT.|  
+|Source|[Erforderlich] Der Wert der Farbe dargestellt wird in hexadezimal|  
   
- Alle Werte, die von der Aufzählung __VSCOLORTYPE unterstützt werden nach dem Schema in das Type-Attribut unterstützt. Allerdings wird empfohlen, dass Sie nur CT_RAW und CT_SYSCOLOR verwenden.  
+ Alle Werte, die von der Enumeration __VSCOLORTYPE unterstützt werden, werden nach dem Schema in das Type-Attribut unterstützt. Allerdings empfiehlt es sich, dass Sie nur CT_RAW und CT_SYSCOLOR verwenden.  
   
  **Alle zusammen**  
   
- Dies ist ein einfaches Beispiel einer gültigen Design-XML-Datei:  
+ Dies ist ein einfaches Beispiel für eine gültige Design-XML-Datei:  
   
 ```xml  
 <Themes>  
@@ -135,7 +134,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 ## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool  
  **Syntax**  
   
- VsixColorCompiler \<XML-Datei > \<PkgDef-Datei > \<Optional Args >  
+ VsixColorCompiler \<XML-Datei > \<PkgDef-Datei > \<optionale Argumente >  
   
  **Argumente**  
   
@@ -143,10 +142,10 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
 |Unbenannte (XML-Datei)|Dies ist der erste unbenannte Parameter und den Pfad der XML-Datei konvertiert wird.|Erforderlich|  
-|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und den Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standard: \<XML-Dateiname > PKGDEF|Optional|  
-|/noLogo|Dieses Flag hält Produkt- und Copyright-Informationen drucken.|Optional|  
-|/?|Drucken Sie Hilfeinformationen.|Optional|  
-|/help|Drucken Sie Hilfeinformationen.|Optional|  
+|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standardeinstellung: \<XML-Dateiname > PKGDEF|Optional|  
+|/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
+|/?|Ausgeben von Hilfeinformationen.|Optional|  
+|/help|Ausgeben von Hilfeinformationen.|Optional|  
   
  **Beispiele**  
   
@@ -158,10 +157,10 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
 -   Dieses Tool erfordert, dass die neueste Version der VC++-Laufzeit installiert werden.  
   
--   Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfaden wird nicht unterstützt.  
+-   Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfade wird nicht unterstützt.  
   
 ## <a name="sample-output"></a>Beispielausgabe:  
- Die PKGDEF-Datei, die vom Tool generierte werden ähnlich den folgenden Schlüssel:  
+ Die PKGDEF-Datei, die vom Tool generierten sollte dieser ähneln dem folgenden Schlüssel:  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]  

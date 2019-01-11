@@ -1,9 +1,6 @@
 ---
 title: Element-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922306"
 ---
 # <a name="files-element"></a>Files-Element
   Gibt die Dateien, die mit der SharePoint-Projektelement, z. B. von featureelementen und die Ausgabe der abhängigen nicht-SharePoint-Projekten bereitgestellt.  
@@ -67,5 +64,3 @@ ms.locfileid: "36327293"
   
 ## <a name="see-also"></a>Siehe auch
  [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

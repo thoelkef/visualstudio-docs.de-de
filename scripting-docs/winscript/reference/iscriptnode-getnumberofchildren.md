@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetNumberOfChildren | Microsoft Docs
+title: IScriptNode::GetNumberOfChildren | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdb46527ca78d56b3c03a454c6194e80be19e945
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a6c1cd7ee65f4bd01373d112bc7afdcf0dd06d2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733630"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094678"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
-Gibt die Anzahl der untergeordneten Knoten des der `IScriptNode` Objekt.  
+Gibt die Anzahl der untergeordneten Knoten der `IScriptNode` Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetNumberOfChildren(  
    ULONG              *pcsn  
 );  
@@ -38,7 +38,7 @@ HRESULT GetNumberOfChildren(
   
 #### <a name="parameters"></a>Parameter  
  `pcsn`  
- [out] Die Anzahl der untergeordneten Knoten, die die `IScriptNode` Objekt hat.  
+ [out] Die Anzahl der untergeordneten Knoten, die die `IScriptNode` Objekt verfügt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

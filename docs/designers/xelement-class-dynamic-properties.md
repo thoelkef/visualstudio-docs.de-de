@@ -2,7 +2,6 @@
 title: Dynamische Eigenschaften der XElement-Klasse
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cdb6d9a662288d1a83449c65d00155b251870c73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830062"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Dynamische Eigenschaften der XElement-Klasse
 
@@ -23,7 +22,7 @@ In diesem Abschnitt werden die dynamischen Eigenschaften der <xref:System.Xml.Li
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Thema|Beschreibung |
+|Thema|Beschreibung|
 |-----------|-----------------|
 |[Attribut](../designers/attribute-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des Attributs verwendet wird, das einem angegebenen erweiterten Namen entspricht.|
 |[Element](../designers/element-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des untergeordneten Elements verwendet wird, das einem angegebenen erweiterten Namen entspricht.|

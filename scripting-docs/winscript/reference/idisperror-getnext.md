@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetNext | Microsoft Docs
+title: IDispError::GetNext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cbe4b044f2d3fb1d8ffb08565fc4093fbbe3ec7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 98a9d728429c302f6ac7d865d8ace9b92dbf4c2e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728140"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097499"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
-Ruft den nächsten `IDispError` Objekt.  
+Ruft die nächste `IDispError` Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetNext(  
    IDispError**  ppde  
 );  
@@ -38,7 +38,7 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Parameter  
  `ppde`  
- [out] Gibt an, neben `IDispError` Objekt.  
+ [out] Als Nächstes gibt `IDispError` Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT GetNext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft die nächste `IDispError` Objekt. Ist dies der letzte `IDispError` Objekt, diese Methode gibt NULL zurück.  
+ Diese Methode ruft die nächste `IDispError` Objekt. Ist dies die letzte `IDispError` Objekt ist, wird diese Methode gibt NULL zurück.  
   
 > [!NOTE]
 >  Diese Methode ist nicht implementiert.  

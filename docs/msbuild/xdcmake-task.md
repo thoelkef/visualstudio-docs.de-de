@@ -1,8 +1,6 @@
 ---
 title: XSD-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460d5f68242f232048fec294156f90f49331a21d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a830639d8e69a331c2d81c6012d0ea7e6fcfb848
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990190"
 ---
 # <a name="xdcmake-task"></a>XDCMake-Aufgabe
 Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kommentardateien (*.xdc*) in einer *XML*-Datei zusammengeführt.  
@@ -39,7 +37,7 @@ Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kom
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **XDCMake**-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|Optionaler **String[]**-Parameter.<br /><br /> Gibt eine oder mehrere weitere *XDC*-Dateien zum Zusammenführen an.<br /><br /> Weitere Informationen finden Sie unter der Beschreibung **Zusätzliche Dokumentdateien** unter [Eigenschaftenseiten für das XML-Dokument-Generator-Tool](/cpp/ide/xml-document-generator-tool-property-pages). Sehen Sie sich auch die **/old**- und **/FS**-Befehlszeilenoptionen für *xdcmake.exe* an.|  
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XDCMake**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter [XDCMake-Verweis](/cpp/ide/xdcmake-reference), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](/cpp/ide/xml-document-generator-tool-property-pages) und unter der Befehlszeilenhilfe (**/?**) für *xdcmake.exe*.|  

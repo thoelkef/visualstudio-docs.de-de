@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Microsoft Docs
+title: IProcessDebugManager::GetDefaultApplication | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27fc46e8a5e07c4eb25c5e246db138a27e5511ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ae3b1bec5fc3aba6ad8e53343f929d133f05493
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729030"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091389"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
 Gibt ein Standardobjekt für die Anwendung für den aktuellen Prozess zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDefaultApplication(  
    IDebugApplication**  ppda  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>Parameter  
  `ppda`  
- [out] Das Debug-Application-Objekt für diese Anwendung.  
+ [out] Die Debug-Application-Objekt für diese Anwendung.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,9 +48,9 @@ HRESULT GetDefaultApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode erstellt ein neues Objekt der Debug-Anwendung und fügt es mit der Ausführung Anwendungsliste, falls erforderlich.  
+ Diese Methode erstellt ein neues Objekt der Debug-Anwendung und fügt Sie es mit der Ausführung Liste der Anwendungen, bei Bedarf.  
   
- Sprache-Module sollte die angegebene Anwendung verwenden die `GetDefaultApplication` Methode, wenn sie auf einem Host ausgeführt werden, die eine Anwendung nicht bereitstellt.  
+ Sprach-Engines sollten die angegebene Anwendung verwenden die `GetDefaultApplication` Methode, wenn sie auf einem Host ausgeführt werden, die eine Anwendung nicht bereitstellt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IProcessDebugManager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)

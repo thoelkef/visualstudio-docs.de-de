@@ -1,9 +1,6 @@
 ---
 title: Kennwortschutz für Office-Dokumente
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857000"
 ---
 # <a name="password-protection-on-office-documents"></a>Kennwortschutz für Office-Dokumente
   Es ist möglich, zum Festlegen eines Kennworts auf Microsoft Office Word-Dokumente und Microsoft Office Excel-Arbeitsmappen, sodass sie von einer Person nicht geöffnet werden kann, die das Kennwort nicht bekannt ist. Diese Option heißt **Kennwort beim Öffnen**.  
@@ -43,7 +40,5 @@ ms.locfileid: "35671834"
 ## <a name="see-also"></a>Siehe auch  
  [Dokumentschutz in Projektmappen auf Anwendungsebene](../vsto/document-protection-in-document-level-solutions.md)   
  [Verwaltung von Informationsrechten und Erweiterungen für verwalteten code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Gewusst wie: zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Vorgehensweise: Zulassen Sie Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden zu.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

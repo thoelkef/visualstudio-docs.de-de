@@ -1,9 +1,6 @@
 ---
 title: Entwickeln eines Legacysprachdiensts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845786"
 ---
 # <a name="develop-a-legacy-language-service"></a>Entwickeln eines Datendiensts legacysprache
 Dieser Abschnitt enthält Links zu Themen, mit denen Sie erstellen einen legacy-Sprachdienst.  
@@ -50,7 +47,7 @@ Dieser Abschnitt enthält Links zu Themen, mit denen Sie erstellen einen legacy-
  [Sprachdienstunterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md)  
  Beschreibt, wie ein Sprachdienst Funktionen zur Unterstützung von eines Debuggers bereitstellen kann.  
   
- [Prüfliste: Erstellen einer legacysprachdiensten](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Prüfliste: Erstellen Sie einen Dienst der legacysprache](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Enthält schrittweise Anleitungen zum Erstellen und die Integration von einem Sprachdienst für die Kern-Editor.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
@@ -63,8 +60,8 @@ Dieser Abschnitt enthält Links zu Themen, mit denen Sie erstellen einen legacy-
  [ParameterInfo in einer legacysprachdiensten](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Beschreibt, wie um methodentipps für überladene Funktionen und Methoden bereitzustellen.  
   
- [Vorgehensweise: Bereitstellen von ausgeblendetem Text in einem älteren Sprachdienst zu unterstützen](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Unterstützen der ausgeblendeten Text in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Erläutert den Zweck eines Bereichs von ausgeblendetem Text, und enthält Anweisungen dazu, wie Sie einen Bereich des ausgeblendeten Textes zu implementieren.  
   
- [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Geben Sie die Unterstützung für erweiterten Gliederungen in einem legacy-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Erläutert die zwei Optionen, die Gliederung für Ihre Sprache zu unterstützen, erweitert die *reduzieren auf Definitionen* Befehl.

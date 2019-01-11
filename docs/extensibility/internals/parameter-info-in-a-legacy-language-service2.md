@@ -1,9 +1,6 @@
 ---
 title: Parameterinformationen in einem Legacysprachdienst 2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b562f5dd2c7e4f3851f6ed16e0f0007ef65e14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988147"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
 IntelliSense-ParameterInfo wird eine QuickInfo, die die Signatur einer Methode anzeigt, wenn der Benutzer die Parameterliste eingibt starten-Zeichen (in der Regel eine öffnende Klammer) der Parameterliste der Methode. Jeder Parameter eingegeben und Trennzeichen (in der Regel ein Komma) für den Parameter typisiert ist, wird die QuickInfo aktualisiert den nächsten Parameter in Fettschrift angezeigt.  

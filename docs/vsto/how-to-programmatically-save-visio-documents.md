@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd49be6f7ab4e87f0592470e1c5af6039a5f56aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865621"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten
+# <a name="how-to-programmatically-save-visio-documents"></a>Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten
   Es gibt mehrere Methoden zum Speichern von Microsoft Office Visio-Dokumenten:  
   
 - Speichern von Änderungen in einem vorhandenen Dokument  
@@ -80,9 +77,7 @@ ms.locfileid: "50670727"
 ## <a name="see-also"></a>Siehe auch  
  [Visio-Projektmappen](../vsto/visio-solutions.md)   
  [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
- [Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Erstellen Sie Neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  

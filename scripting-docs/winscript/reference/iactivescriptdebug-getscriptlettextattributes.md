@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptletTextAttributes | Microsoft Docs
+title: IActiveScriptDebug::GetScriptletTextAttributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909879030e5c6d26353d2003279d5c1ca7bacb74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 757c56750ee54e7de50f245b8b643cc5983f3149
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724430"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097551"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
 Gibt den Textattribute für eine beliebige Scriptlet zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR          pstrCode,  
    ULONG              uNumCodeChars,  
@@ -42,25 +42,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parameter  
  `pstrCode`  
- [in] Das Scriptlet-Texts. Diese Zeichenfolge muss nicht mit Null-terminiert sein.  
+ [in] Das Scriptlet-Texts. Diese Zeichenfolge muss keine Null-terminiert sein.  
   
  `uNumCodeChars`  
  [in] Die Anzahl der Zeichen im Scriptlet-Texts.  
   
  `pstrDelimiter`  
- [in] Adresse des end-of-scriptlet-Trennzeichens. Wenn `pstrCode` von einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, wie beispielsweise zwei einfache Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass dem Skriptmodul in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) das scripting Modul verwendet diese Informationen hängen von dem Skriptmodul. Legen Sie diesen Parameter auf NULL, wenn der Host ein Trennzeichen nicht verwendet haben, um das Ende des Scriptlets zu markieren.  
+ [in] Adresse des end-of-scriptlet-Trennzeichens. Wenn `pstrCode` von einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, wie beispielsweise zwei einfache Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass der Skript-Engine in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) die Skript-Engine-verwendet diese Informationen hängen von der Skript-Engine. Legen Sie diesen Parameter auf NULL, wenn der Host ein einzeln verwendetes Trennzeichen nicht verwendet haben, um das Ende des Scriptlets zu markieren.  
   
  `dwFlags`  
  [in] Flags, die dem Scriptlet zugeordnet sind. Es kann eine Kombination dieser Werte sein:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Gibt an, dass es sich bei Bezeichnern und Punktoperatoren mit den Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP bzw. identifiziert werden sollen.|  
-|GETATTRFLAG_THIS|0 x 0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem Flag SOURCETEXT_ATTR_THIS identifiziert werden sollen.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Gibt an, dass Inhalte und einen Kommentar Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass es sich bei Bezeichnern und Punktoperatoren mit den Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP bzw. identifiziert werden sollen.|  
+|GETATTRFLAG_THIS|0x0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem Flag SOURCETEXT_ATTR_THIS identifiziert werden sollen.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Gibt an, dass der Inhalt, und kommentieren Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
   
  `pattr`  
- [in, out] Puffer, in die zurückgegebenen Attribute enthalten.  
+ [in, out] Puffer, der die zurückgegebenen Attribute enthalten.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -70,9 +70,9 @@ HRESULT GetScriptletTextAttributes(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Smarthost, die implementiert `IDebugDocumentText` Schnittstelle kann verwenden Sie diese Methode zum Delegieren von Aufrufen an die `IDebugDocumentText::GetText` Methode.  
+ Ein Smarthost, die implementiert `IDebugDocumentText` Schnittstelle kann diese Methode verwenden, delegieren Sie Aufrufe an die `IDebugDocumentText::GetText` Methode.  
   
- Dieser Aufruf wird bereitgestellt, da Skriptlets tendenziell Ausdrücke sein, und möglicherweise eine andere Syntax als einen Skriptblock. Wenn sie die gleiche Syntax aufweisen, wird die Implementierung dieser Methode für eine Implementierung der identisch sein die `GetScriptTextAttributes` Methode.  
+ Dieser Aufruf wird bereitgestellt, da Skriptlets tendenziell Ausdrücke sein, und möglicherweise eine andere Syntax als einen Skriptblock. Wenn sie die gleiche Syntax aufweisen, wird die Implementierung dieser Methode identisch mit der Implementierung des werden die `GetScriptTextAttributes` Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptDebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)   

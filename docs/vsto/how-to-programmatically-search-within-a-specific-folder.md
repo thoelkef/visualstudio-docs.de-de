@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: programmgesteuerte Suche in einem bestimmten Ordner'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64df4180e533f254927ae134ed005b0626dfdde8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1427f0ab69cab2c23a0eeb7638bbc6e21778c55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915493"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Gewusst wie: programmgesteuerte Suche in einem bestimmten Ordner
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner
   Dieses Codebeispiel verwendet die `Find` und `FindNext` Methoden, um nach Text in der Betreffzeile von e-Mail-Nachrichten zu suchen, die in der **Posteingang**. Diese Methode verwendet eine Zeichenfolge um zu prüfen, der Buchstabe T Zeichenfolgenfilter ab, der die `Subject` Text.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -33,6 +30,4 @@ ms.locfileid: "35672912"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
  [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)   
- [Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  

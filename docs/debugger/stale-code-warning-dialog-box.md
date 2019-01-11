@@ -1,8 +1,6 @@
 ---
 title: Veralteter Code Warndialogfeld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
@@ -22,19 +20,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e212602b317127cfd14adcd246a23cdd92ed86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82731ba2c22c18b880e8a035712280eb5e5afe68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877457"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Warnung: Veralteter Code (Dialogfeld)
-Dieses Dialogfeld wird angezeigt, wenn Ihnen vorgenommenen Änderungen an nativem code, der **bearbeiten und Fortfahren** konnte nicht sofort angewendet werden. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [wie: Arbeiten mit veraltetem Code](/visualstudio/debugger/edit-and-continue-visual-cpp#bkmk_how_to_work_with_stale_code).  
-  
- **Dieses Dialogfeld nicht mehr anzeigen**  
- Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren auf der **Optionen** Dialogfeld Öffnen den **Debuggen** Ordner auf der **bearbeiten und Fortfahren** Seite, und wählen Sie **Warnung bei veraltetem Code**.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)   
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](/visualstudio/debugger/edit-and-continue)
+
+Dieses Dialogfeld wird angezeigt, wenn Sie Änderungen an nativem Code vorgenommen haben, die von der **Bearbeiten und Fortfahren**-Funktion nicht sofort übernommen werden konnten. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren (C++)](edit-and-continue-visual-cpp.md).
+
+**Dieses Dialogfeld nicht mehr anzeigen**
+
+Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren, indem Sie im Dialogfeld **Optionen** den Ordner **Debuggen** öffnen, auf die Seite **Bearbeiten und Fortfahren** klicken und die Option **Warnung bei veraltetem Code** auswählen.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Unterstützte Codeänderungen (C++)](supported-code-changes-cpp.md)
+- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](edit-and-continue.md)

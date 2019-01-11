@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Microsoft Docs
+title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1377edaa5b10a7ebb06713e512010be010a9d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726370"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088217"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
 Legt die `IDebugDocumentHost` für dieses Dokument.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT SetDebugDocumentHost(  
    IDebugDocumentHost*  pddh  
 );  
@@ -38,7 +38,7 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parameter  
  `pddh`  
- [in] Der Host für den Debug-Dokument.  
+ [in] Das Hostelement des Dokuments Debuggen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IDebugDocumentHost` Schnittstelle für Smartcard-Host Syntaxfarben verwendet wird, verzögerte Text abrufen und steuernde Objekte zurückgeben, für eine neu erstellte Dokument Kontexte.  
+ Die `IDebugDocumentHost` Schnittstelle wird verwendet, für die Smarthost-Syntaxfarben, verzögerte Text abrufen und Zurückgeben von Steuern Objekte für eine neu erstellte Kontexte zu dokumentieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   

@@ -1,9 +1,6 @@
 ---
 title: Erstellen von SharePoint-Lösungspaketen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966663"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungspakete
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.  
@@ -49,12 +46,12 @@ ms.locfileid: "36326851"
   
  Die folgende Tabelle zeigt die zwei MSBuild-Ziele, die Sie verwenden können, um anzupassen wie die *.wsp* Datei erstellt wird.  
   
-|Ziel|Beschreibung|  
+|Target|Beschreibung|  
 |------------|-----------------|  
 |BeforeLayout|Das Ziel, das sofort Aufgaben ausführt, bevor die Dateien in ein Zwischenverzeichnis kopiert werden. Sie können die Dateien vor dem Erstellen einer Paketdatei (*.wsp*).|  
 |AfterLayout|Das Ziel, das sofort Aufgaben ausführt, nachdem die Dateien in ein Zwischenverzeichnis kopiert wurden.|  
   
- Weitere Informationen [wie: Anpassen ein SharePoint-Lösungspakets mithilfe von MSBuild-Ziele](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
+ Weitere Informationen [Vorgehensweise: Anpassen ein SharePoint-Lösungspakets mithilfe von MSBuild-Ziele](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
 ## <a name="packaging-architecture"></a>Verpackungsarchitektur
  Die folgenden Schritte durchgeführt, bei der Erstellung eines SharePoint-Pakets (*.wsp*) in Visual Studio.  
@@ -75,10 +72,8 @@ ms.locfileid: "36326851"
  Beim Packen Ihrer SharePoint-Projekts eine *.wsp* Datei wird erstellt, in der *SolutionFolder\bin\\\<BuildConfiguration >* Ordner. Wenn Ihre Lösung im ist z. B. *C:\Visual Studio 2013\projects\listdefinition1 befindet* und die Buildkonfiguration auf Release festgelegt ist die *.wsp* Datei befindet sich im *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Gewusst wie: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Gewusst wie: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Gewusst wie: Anpassen ein SharePoint-Lösungspakets mithilfe von MSBuild-Ziele](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 
+ [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  

@@ -2,7 +2,6 @@
 title: Dialogfeld "Umgebungsoptionen"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937347"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 
@@ -34,14 +33,14 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
 |Festlegen von Schriftart und Farbe in bestimmten Editoren, Dialogfeldern, Toolfenstern und anderen Elementen der Benutzeroberfläche|[Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Legen Sie den Speicherort für die VSSETTINGS-Dateien fest, in denen Informationen zu den Benutzereinstellungen gespeichert werden.|[Einstellungen importieren und exportieren, Umgebung, Dialogfeld „Optionen“](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Auswählen einer Standardsprache für Visual Studio|[Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/international-settings-environment-options-dialog-box.md)|
-|Festlegen von Optionen für die Tastaturzuordnung|[Tastatur, Umgebung, Dialogfeld „Optionen“](../../ide/reference/keyboard-environment-options-dialog-box.md)|
+|Festlegen von Optionen für die Tastenzuordnung|[Tastatur, Umgebung, Dialogfeld „Optionen“](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Aktivieren von Benachrichtigungen|[Benachrichtigungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Angeben von Optionen für das Fenster „Schnellstart“|[Schnellstart, Umgebung, Dialogfeld „Optionen“](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Festlegen der Optionen für die Startseite|[Start, Umgebung, Dialogfeld „Optionen“](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Festlegen, ob Einstellungen für alle Computer angewendet werden|[Synchronisierte Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Festlegen, ob Einstellungen für alle Computer angewendet werden|[Synchronisierte Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Vorgehensweise zum Festlegen von Optionen für Aufgaben und Aufgabenlisten|[Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Ändern der Standardstart- und -suchseiten, Ändern des vom System verwendeten Quellcode-Editors und Konfigurieren von Optionen für Internet Explorer|[Webbrowser, Umgebung, Dialogfeld „Optionen“](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Dialogfeld „Optionen“](../../ide/reference/options-dialog-box-visual-studio.md)

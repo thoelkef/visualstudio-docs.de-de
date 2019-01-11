@@ -1,9 +1,6 @@
 ---
-title: Ältere Language Service Erweiterbarkeit | Microsoft Docs
-ms.custom: ''
+title: Erweiterbarkeit von Legacysprachdiensten | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb7d8165060fa3b9a6445ad71a977c79414056f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853501"
 ---
-# <a name="legacy-language-service-extensibility"></a>Ältere Language Service-Erweiterbarkeit
-Ein Sprachdienst bietet sprachspezifische-Unterstützung für die Bearbeitung von Quellcode in der IDE an.  
+# <a name="legacy-language-service-extensibility"></a>Erweiterbarkeit von Legacysprachdiensten
+Ein Sprachdienst bietet die sprachspezifische-Unterstützung zum Bearbeiten von Quellcode in der IDE.  
   
- Dienste für Legacy-Sprachen werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Dienstfunktionen Sprache ist die Verwendung von MEF-Erweiterungen. Weitere Informationen über die neue Möglichkeit, einen Sprachdienst zu implementieren, finden Sie unter [-Editor und Dienst Spracherweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
+ Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
- Dieser Abschnitt beschreibt die Struktur und die Implementierung eines Dienstes ältere Sprache.  
+ Dieser Abschnitt beschreibt die Struktur und die Implementierung eines Dienstes legacysprache.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Migrieren eines Legacysprachdiensts](../../extensibility/internals/migrating-a-legacy-language-service.md)  
- Erläutert, wie Sie einen Sprachdienst von Visual Studio 2008 auf die neueste Version zu aktualisieren.  
+ Erläutert, wie einen Sprachdienst in Visual Studio 2008, auf die neueste Version zu aktualisieren.  
   
  [Grundlagen zu Legacysprachdiensten](../../extensibility/internals/legacy-language-service-essentials.md)  
- Enthält wichtige Informationen über das Dienste für Sprachen zum Integrieren von eines Programmiersprache Ihrer Wahl in Visual Studio entwickeln.  
+ Enthält wichtige Informationen dazu, wie Sie Sprachdienste zum Integrieren von einer Programmiersprache in Visual Studio entwickeln.  
   
  [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)  
- Enthält Links zu Themen, mit denen Sie einen Sprachdienst erstellen können.  
+ Enthält Links zu Themen, mit die Sie einen Sprachdienst erstellen können.  
   
  [Syntaxfarben in einem Legacysprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Enthält Informationen zur Unterstützung von syntaxhervorhebung in einen Sprachdienst.  
+ Stellt Informationen zur Unterstützung von syntaxhervorhebung in einem Sprachdienst bereit.  
   
- [Implementieren einen Sprachdienst Legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Enthält Informationen dazu, wie mithilfe des managed Package Framework (MPF) einen voll ausgestattete Sprachdienst in verwaltetem Code implementiert.  
+ [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Enthält Informationen dazu, wie Sie das managed Package Framework (MPF) verwenden, um einen Sprachdienst mit vollem Funktionsumfang in verwaltetem Code zu implementieren.  
   
  [Unterstützen von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Beschreibt, Bibliotheken und Tools, mit die Sie Strukturansichten der Symbole in der IDE durchsuchen können.  
+ Beschreibt, Bibliotheken und Tools, mit denen Sie Strukturansichten von Symbolen in der IDE zu durchsuchen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md)  
  Bietet eine Übersicht über Visual Studio-Editoren.  
   
  [Sprachdienstunterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md)  
- Bietet Informationen und einen Link auf der Visual Studio debuggen SDK, die die Informationen, die erforderlich sind enthält, erstellen und Anpassen von Debuggerkomponenten, die zum Debuggen von Programmen verwendet.
+ Enthält Informationen und einen Link auf die Visual Studio Debugging SDK, mit den Informationen, die erforderlich sind, erstellen und Anpassen von Debugger-Komponenten verwendet, um das Debuggen von Programmen an.

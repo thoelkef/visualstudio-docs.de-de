@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody | Microsoft Docs
+title: IScriptEntry::GetBody | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b5eb878bccaa8ed415fd813095e31064bc7e245
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729020"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094814"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-Den Text, entspricht dem Nachrichtentext gibt eine `IScriptEntry` Skriptblock Funktionsblocks oder Scriptlet.  
+Gibt den Text zurück, der entspricht dem Textkörper der ein `IScriptEntry` Skriptblock, Funktionsblock oder Scriptlet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetBody(  
    BSTR               *pbstr  
 );  
@@ -38,11 +38,11 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>Parameter  
  `pbstr`  
- [out] Der Text im Hauptteil eines der folgenden:  
+ [out] Der Text, der im Text der eines der folgenden ist:  
   
 -   Ein `IScriptEntry` Skriptblock  
   
--   Ein `IScriptEntry` Funktion in einem Funktionsblock  
+-   Ein `IScriptEntry` Funktion im Block einer Funktion  
   
 -   Ein `IScriptEntry` Scriptlet-Ereignishandler  
   

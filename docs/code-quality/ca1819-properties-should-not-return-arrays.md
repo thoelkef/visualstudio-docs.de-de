@@ -1,8 +1,7 @@
 ---
-title: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben'
+title: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
 ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fd9627c06b11dae9348a85f417cf152ac1c8c9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949455"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 
 |||
 |-|-|
@@ -92,4 +91,4 @@ Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaf
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: NACH MÖGLICHKEIT Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

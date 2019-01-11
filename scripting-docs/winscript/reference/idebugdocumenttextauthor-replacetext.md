@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs
+title: IDebugDocumentTextAuthor::ReplaceText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090596"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
-Ersetzt Text in das Dokument.  
+Ersetzt Text in das Dokument an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -40,10 +40,10 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Startposition des Zeichenbereichs zu ersetzen.  
+ [in] Die Startposition des Zeichenbereichs folgt ersetzen.  
   
  `cNumToReplace`  
- [in] Anzahl der zu ersetzenden Zeichen.  
+ [in] Die Anzahl der zu ersetzenden Zeichen.  
   
  `pcharText[]`  
  [in] Ein Puffer mit den neuen Zeichen, um die alte Zeichen zu ersetzen.  

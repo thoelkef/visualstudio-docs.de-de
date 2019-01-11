@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_memorySpaceKind | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_memorySpaceKind | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b1d3bf8419cb2cbaba9a12aef2f7adb52110b8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e9bfb63c05a864d1ee477ec9411cfaded431cc01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920127"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
-Ruft die Art der Arbeitsspeicher Speicherplatz ab.  
+Ruft die Art der Speicher-Speicherplatz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT get_memorySpaceKind(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die die Art der Arbeitsspeicher Speicherplatz enthält.  
+ [out] Ein Zeiger auf eine `DWORD` , die die Art der Speicher-Speicherplatz enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

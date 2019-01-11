@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::QueryIsComplete | Microsoft Docs
+title: IDebugExpression::QueryIsComplete | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,35 +18,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1d72b2a2d41b748954f2e4b2b4aa9f0011ca670
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0b4fa4b027f0ee8d848f52c063cbfd1f7679d4a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726730"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087151"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
 Bestimmt, ob der Vorgang abgeschlossen ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`S_OK`|Die Methode war erfolgreich, und der Vorgang ist abgeschlossen.|  
+|`S_OK`|Die Methode erfolgreich war, und der Vorgang abgeschlossen ist.|  
 |`S_FALSE`|Der Vorgang ist noch ausstehend.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bestimmt, ob der Vorgang abgeschlossen ist.  
+ Diese Methode wird bestimmt, ob der Vorgang abgeschlossen ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)

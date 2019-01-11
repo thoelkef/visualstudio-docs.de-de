@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Leistung der diagnoseerweiterung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Leistung der diagnoseerweiterung | Microsoft-Dokumentation'
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943420"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Auswirkungen der Erweiterung in der Startdatei
 
@@ -31,7 +28,7 @@ Damit können Benutzer diese Auswirkungen zu verstehen, haben wir ein neues Feat
 Dieses Dokument soll ermöglicht es erweiterungsentwicklern, von beschreiben, wie die Erweiterung Auswirkungen berechnet wird. Dieses Dokument beschreibt auch, wie die Erweiterung Auswirkungen lokal analysiert werden kann. Lokal Analysieren der Auswirkungen auf die Erweiterung wird bestimmt, ob eine Erweiterung als eine Leistung, die Auswirkungen auf die Erweiterung angezeigt werden kann.
 
 > [!NOTE]
-> Dieses Dokument konzentriert sich auf die Auswirkungen von Erweiterungen beim Starten und die Projektmappe laden. Erweiterungen haben ebenfalls Auswirkungen auf Visual Studio-Leistung, wenn sie dazu führen, die Benutzeroberfläche dass reagiert. Weitere Informationen zu diesem Thema finden Sie unter [Vorgehensweise: Diagnose von UI-Verzögerungen durch Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Dieses Dokument konzentriert sich auf die Auswirkungen von Erweiterungen beim Starten und die Projektmappe laden. Erweiterungen haben ebenfalls Auswirkungen auf Visual Studio-Leistung, wenn sie dazu führen, die Benutzeroberfläche dass reagiert. Weitere Informationen zu diesem Thema finden Sie unter [Vorgehensweise: Analysieren von Benutzeroberflächen Verzögerungen durch Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Erweiterungen können wie Start auswirken.
 
@@ -51,11 +48,11 @@ Wir haben viele Features, die beginnend mit Visual Studio 2015 hinzugefügt. Die
 
 Weitere Informationen zu diesen Funktionen finden Sie in den folgenden Dokumenten:
 
-[Regel-basierte Benutzeroberfläche-Kontexte](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): eine umfangreichere regelbasierte Engine benutzeroberflächenkontexte so konzipiert, können Sie benutzerdefinierte Kontexte, die basierend auf Projekttypen Sorten, erstellen und Attribute. Benutzerdefinierte Kontexte können verwendet werden, ein Paket während der spezifischere Szenarios zu laden. Diesen speziellen Szenarien umfassen das Vorhandensein eines Projekts mit einer bestimmten Funktion starten. Können Sie auch benutzerdefinierte Kontexten [Befehl Sichtbarkeit für einen benutzerdefinierten Kontext gebunden werden](visibilityconstraints-element.md) basierend auf Projektkomponenten oder andere Bedingungen verfügbaren. Diese entfällt die Notwendigkeit zum Laden eines Pakets, um die Abfrage einen Befehlshandler-Status zu registrieren.
+[Regel-basierte Benutzeroberfläche-Kontexte](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Eine umfangreichere regelbasierte Engine benutzeroberflächenkontexte so konzipiert, können Sie benutzerdefinierte Kontexte, die basierend auf Projekttypen, Typen und Attribute erstellen. Benutzerdefinierte Kontexte können verwendet werden, ein Paket während der spezifischere Szenarios zu laden. Diesen speziellen Szenarien umfassen das Vorhandensein eines Projekts mit einer bestimmten Funktion starten. Können Sie auch benutzerdefinierte Kontexten [Befehl Sichtbarkeit für einen benutzerdefinierten Kontext gebunden werden](visibilityconstraints-element.md) basierend auf Projektkomponenten oder andere Bedingungen verfügbaren. Diese entfällt die Notwendigkeit zum Laden eines Pakets, um die Abfrage einen Befehlshandler-Status zu registrieren.
 
-[Unterstützung für asynchrone Bereitstellungspaket](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): die neue Asyncpackage-Basisklasse in Visual Studio 2015 ermöglicht Visual Studio-Pakete geladen werden, im Hintergrund asynchron, wenn das Laden des Pakets von einer Auto-Load-Attribut oder ein Dienst für die asynchrone Abfrage angefordert wurde . Diese laden im Hintergrund kann die IDE reaktionsfähig bleiben. Die IDE reagiert auch, wenn die Erweiterung im Hintergrund initialisiert wird und kritische Szenarien wie starten und -Lösung laden wäre nicht beeinträchtigt werden.
+[Unterstützung für asynchrone Bereitstellungspaket](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Die neue Asyncpackage-Basisklasse in Visual Studio 2015 ermöglicht Visual Studio-Pakete, wenn das Laden des Pakets von einer Auto-Load-Attribut oder ein Dienst für die asynchrone Abfrage angefordert wurde asynchron im Hintergrund geladen. Diese laden im Hintergrund kann die IDE reaktionsfähig bleiben. Die IDE reagiert auch, wenn die Erweiterung im Hintergrund initialisiert wird und kritische Szenarien wie starten und -Lösung laden wäre nicht beeinträchtigt werden.
 
-[Asynchrone Dienste](how-to-provide-an-asynchronous-visual-studio-service.md): durch die Unterstützung asynchroner Pakets wir auch Unterstützung für Abfragen von Diensten asynchron und asynchrone Dienste registrieren wird hinzugefügt. Darüber hinaus arbeiten wir zum Konvertieren von Visual Studio-Basisdienste, um asynchrone Abfrage unterstützt, sodass der Großteil der Arbeit in einer Async-Abfrage in Hintergrundthreads auftritt. SComponentModel (Visual Studio MEF-Host) ist eine der wichtigsten Dienste, die unterstützt jetzt die asynchrone Abfrage von Erweiterungen zur Unterstützung asynchronen Laden vollständig zu ermöglichen.
+[Asynchrone Dienste](how-to-provide-an-asynchronous-visual-studio-service.md): Durch die Unterstützung asynchroner Pakets haben wir auch Unterstützung für Abfragen von Diensten asynchron und asynchrone Dienste registrieren wird hinzugefügt. Darüber hinaus arbeiten wir zum Konvertieren von Visual Studio-Basisdienste, um asynchrone Abfrage unterstützt, sodass der Großteil der Arbeit in einer Async-Abfrage in Hintergrundthreads auftritt. SComponentModel (Visual Studio MEF-Host) ist eine der wichtigsten Dienste, die unterstützt jetzt die asynchrone Abfrage von Erweiterungen zur Unterstützung asynchronen Laden vollständig zu ermöglichen.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Reduzieren der Auswirkungen von "Auto" Erweiterungen geladen
 
@@ -167,11 +164,11 @@ Die Ansicht zeigt jetzt nur Kosten, die mit den Assemblys, die im Zusammenhang m
 
 Im Beispiel oben einige interessante Aufruf wäre Stapel:
 
-1. Mithilfe von e/a- `System.IO` Klasse: während inklusive Kosten für diese Frames zu teuer in der Ablaufverfolgung unter nicht Umständen können sie eine mögliche Ursache für ein Problem sind, da die Datei-e/a-Geschwindigkeit von Computer zu Computer unterschiedlich sind.
+1. Mithilfe von e/a- `System.IO` Klasse: Zwar inklusive Kosten für diese Frames zu teuer in der Ablaufverfolgung unter nicht Umständen sind jedoch eine mögliche Ursache eines Problems, da die Datei-e/a-Geschwindigkeit von Computer zu Computer unterschiedlich sind.
 
    ![System-e/a-frames](media/perfview-system-io-frames.png)
 
-2. Warten auf andere asynchrone Arbeit Aufrufe zum Blockieren: In diesem Fall würde der inklusiven Zeit die Zeit der Hauptthread, auf den Abschluss asynchroner Arbeit blockiert wird darstellen.
+2. Warten auf andere asynchrone Arbeit Aufrufe zum Blockieren: In diesem Fall würde der inklusiven Zeit, die Uhrzeit darzustellen, die auf den Abschluss asynchroner Arbeit der Hauptthread blockiert wird.
 
    ![blockierende Aufrufframes](media/perfview-blocking-call-frames.png)
 

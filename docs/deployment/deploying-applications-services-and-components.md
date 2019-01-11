@@ -3,7 +3,6 @@ title: 'Bereitstellung: Featuretour'
 description: Erfahren Sie, wie Sie Apps aus Visual Studio bereitstellen können.
 ms.custom: mvc
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0db2a9dcd19b2100239a99ec8fc08850432aa80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860035"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -41,21 +40,21 @@ Sehen Sie sich die Schnellstarts und Tutorials an, um ausführliche Anweisungen 
 
 Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwendet oder um eine Stagingbereitstellung zu beginnen, in der zur endgültigen Bereitstellung ein anders Tool verwendet wird.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **NET Core**: Verwenden Sie das Tool zum Veröffentlichen für die Bereitstellung in einem lokalen Ordner. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **.NET Core**: Verwenden Sie die Option „Veröffentlichen“, um eine Bereitstellung in einem lokalen Ordner durchzuführen. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
     ![„Veröffentlichen“ auswählen](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ runtime**: Sie können die Visual C++ Runtime bereitstellen, indem Sie lokale Bereitstellung oder statische Verknüpfung verwenden. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Visual C++ Runtime:** Sie können die Visual C++ Runtime durch eine lokalen Bereitstellung oder eine statische Verknüpfung bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** und **Node.js**: Sie können das Tool zum Veröffentlichen verwenden, um Apps schnell in Azure App Service oder auf einem virtuellen Azure-Computer bereitzustellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Dialogfeld „Veröffentlichen“ entweder **App Service** oder **Azure Virtual Machines** aus, und führen Sie dann die Konfigurationsschritte aus.
+- **ASP.NET**, **ASP.NET Core**, **Python** und **Node.js:** Sie können die Option „Veröffentlichen“ verwenden, um Apps schnell in Azure App Service oder auf einem virtuellen Azure-Computer bereitzustellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Dialogfeld „Veröffentlichen“ entweder **App Service** oder **Azure Virtual Machines** aus, und führen Sie dann die Konfigurationsschritte aus.
 
     ![Auswahl von Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
 
     In Visual Studio 2017, Version 15.7 und höher können Sie ASP.NET Core-Apps in **App Service für Linux** bereitstellen.
 
-    Weitere Informationen zu Python-Apps finden Sie unter [Python: Veröffentlichen in Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Weitere Informationen zu Python-Apps finden Sie unter [Python: Veröffentlichen in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Eine kurze Einführung finden Sie unter [Veröffentlichen in Azure](quickstart-deploy-to-azure.md) und [Veröffentlichen unter Linux](quickstart-deploy-to-linux.md). Lesen Sie auch [Veröffentlichen einer ASP.NET Core-App in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Weitere Informationen zur Bereitstellung mit Git finden Sie unter [Continuous Deployment von ASP.NET Core in Azure mit Git](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +65,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Veröffentlichen im Web oder Bereitstellen zur Netzwerkfreigabe
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** und **Python**: Zur Bereitstellung auf einer Website mithilfe von FTP oder Web Deploy können Sie das Tool „Veröffentlichen“ verwenden. Weitere Informationen finden Sie unter [Bereitstellen auf einer Website](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** und **Python:** Zur Bereitstellung auf einer Website mithilfe von FTP oder Web Deploy können Sie die Option „Veröffentlichen“ verwenden. Weitere Informationen finden Sie unter [Bereitstellen auf einer Website](quickstart-deploy-to-a-web-site.md).
 
     Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Tool „Veröffentlichen“ die gewünschte Option aus, und führen Sie die Konfigurationsschritte aus.
 
@@ -76,7 +75,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
     Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++ Runtime**: Sie können die Visual C++ Runtime bereitstellen, indem Sie zentrale Bereitstellung verwenden. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Visual C++ Runtime:** Sie können die Visual C++ Runtime durch eine zentrale Bereitstellung bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) und [Bereitstellen einer nativen App mit ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -84,11 +83,11 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
 Sie können aus Visual Studio App-Pakete zur Bereitstellung im Microsoft Store erstellen.
 
-- **UWP**: Sie können Ihre App packen und mithilfe von Menüelementen bereitstellen. Weitere Informationen finden Sie unter [Packen einer UWP-App mit Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP:** Sie können Ihre App packen und mithilfe von Menüelementen bereitstellen. Weitere Informationen finden Sie unter [Packen einer UWP-App mit Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Erstellen eines App-Pakets](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows Desktop**: Eine Bereitstellung im Microsoft Store ist möglich mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows-Desktop:** Eine Bereitstellung im Microsoft Store ist mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke möglich. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Desktop-Brücke](../deployment/media/feature-tour-desktop-bridge.png)
 

@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Löschen von Terminen'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Löschen von Terminen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], deleting appointments
 - deleting appointments
 - appointments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2809cef7f430e5ace717e124066a95447aa43910
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca4d02ee430a7d930ab40b47f55a5c5f9ed4f19
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256730"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154178"
 ---
-# <a name="how-to-programmatically-delete-appointments"></a>Gewusst wie: Programmgesteuertes Löschen von Terminen
+# <a name="how-to-programmatically-delete-appointments"></a>Vorgehensweise: Programmgesteuertes Löschen von Terminen
   In diesem Beispiel wird eine Instanz eines sich wiederholenden Termins gelöscht. Für das Beispiel wird davon ausgegangen, dass am 28. Juni 2006 um 08:00 Uhr eine Instanz eines sich wiederholenden Termins stattfindet.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -36,8 +33,6 @@ ms.locfileid: "35256730"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)   
- [Gewusst wie: Programmgesteuertes Erstellen eines benutzerdefiniertes Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Gewusst wie: Programmgesteuertes Erstellen eine Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)   
+ [Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
+ [Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)  

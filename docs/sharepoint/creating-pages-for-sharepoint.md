@@ -1,9 +1,6 @@
 ---
 title: Erstellen von Seiten für SharePoint | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859814"
 ---
 # <a name="create-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
   Sie können die Anwendungsseiten, Websiteseiten, Gestaltungsvorlagen und Seitenlayouts für eine SharePoint-Website erstellen.  
@@ -44,7 +41,7 @@ ms.locfileid: "36326049"
 |Masterseiten|Erstellen Sie eine Masterseite, wenn Sie eine gemeinsame Struktur für die Seiten der Website zu definieren möchten und Anwendungsseiten.|  
 |Seitenlayouts|Seitenlayouts sind spezifisch für [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] und ermöglichen es Ihnen, eine gemeinsame Struktur für die Seiten der Website und Anwendungsseiten genauer zu definieren.|  
   
- Eine Übersicht über jede Seite, finden Sie unter [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095), und [Seitenlayouts und Masterseiten](http://go.microsoft.com/fwlink/?LinkID=182096).  
+ Eine Übersicht über jede Seite, finden Sie unter [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095), und [Seite Layouts und Masterseiten](http://go.microsoft.com/fwlink/?LinkID=182096).  
   
 ## <a name="create-application-pages"></a>Erstellen von Anwendungsseiten
  Sie können die Anwendungsseiten in Visual Studio erstellen, durch das Hinzufügen einer **Anwendungsseite** einem SharePoint-Projekt. Hinzufügen von Steuerelementen auf der Seite, und klicken Sie dann Behandeln von Ereignissen durch Hinzufügen von Code.  
@@ -68,6 +65,5 @@ ms.locfileid: "36326049"
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt das Hinzufügen von Anwendungsseiten: *aspx* Inhalte, die mit einer SharePoint-Masterseite zusammengeführt wird.|  
-|[Gewusst wie: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Erfahren Sie, wie ASP.NET-Seiten zu erstellen, die auf einer SharePoint-Website ausgeführt.|  
+|[Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Erfahren Sie, wie ASP.NET-Seiten zu erstellen, die auf einer SharePoint-Website ausgeführt.|  
 |[Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Erfahren Sie, wie das Entwerfen und Debuggen einer ASP.NET-Webseite für eine SharePoint-Website.|  
-  

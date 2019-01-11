@@ -1,9 +1,6 @@
 ---
 title: Allgemeine Steuerelementmuster für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832634"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente  
@@ -49,7 +46,7 @@ Die erste, was beim Formatieren von Steuerelementen zu berücksichtigen ist, gib
   
 -   **Standard (Hilfsprogramm) Dialogfelder:** nicht mit Design. Nicht Re-Vorlage. Die verwenden Sie grundlegende Steuerelement Style-Standardeinstellungen.  
   
--   **Tools, Windows, Dokument-Editoren, Entwurfsoberflächen und mit Design Dialogfelder:** spezielle Design Darstellung, die mit dem Dienst Farbe verwenden.  
+-   **Toolfenster, Dokument-Editoren, Entwurfsoberflächen und mit Design Dialogfelder:** Verwenden Sie spezielle Design Darstellung, die mit dem Dienst für die Farbe an.  
   
 ###  <a name="BKMK_Scrollbars"></a> Bildlaufleisten  
  Bildlaufleisten folgen, sollten Sie [allgemeine Interaktionsmuster für Windows-Bildlaufleisten](/windows/desktop/Controls/about-scroll-bars) es sei denn, sie durch Informationen erweitert sind, wie im Code-Editor.  
@@ -69,7 +66,7 @@ Die erste, was beim Formatieren von Steuerelementen zu berücksichtigen ist, gib
   
 -   Erforderliche Felder müssen  **\<erforderlichen >** als Wasserzeichen darin. Sie sollten die Farbe des Hintergrunds außer in seltenen Fällen nicht ändern.  
   
--   Fehler-Überprüfung: finden Sie unter [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Fehler-Überprüfung: Finden Sie unter [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Größe Eingabefelder müssen entsprechend den Inhalt, der nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend angepasst werden. Länge kann darauf hinweisen, dass für den Benutzer Einschränkungen hinsichtlich der Anzahl der Zeichen in das Feld zulässig sind.  
   
@@ -299,7 +296,7 @@ Richtlinien für die mithilfe der Schaltfläche:
 #### <a name="graphical-buttons"></a>Grafische Schaltflächen  
 Einige Schaltflächen sollten immer ein Bild und nie enthalten Text zum Einsparen von Speicherplatz und Lokalisierung-Probleme zu vermeiden. Diese werden häufig in Feld dateiöffnungs- und andere sortierbaren Listen verwendet.  
   
-> **Hinweis:** Benutzer sich nicht auf diese Schaltflächen (es gibt keine Zugriffsschlüssel) Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Zuordnung der `name` Eigenschaft der Schaltfläche auf die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.  
+> **Hinweis**: Benutzer müssen diese Schaltflächen (es gibt keine Zugriffsschlüssel) die Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Zuordnung der `name` Eigenschaft der Schaltfläche auf die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.  
   
 | Funktion | Schaltfläche |  
 | --- | --- |  
@@ -371,23 +368,23 @@ Die Strukturansicht sollte die Möglichkeit bieten, wählen Sie Elemente, und Er
 ##### <a name="tree-view-control"></a>Strukturansicht-Steuerelement  
 Visual Studio-Struktur-Steuerelemente sollten allgemeine Tastaturnavigation ausführen:  
   
--   **Oben-Taste:** Elemente auswählen, indem Sie der Struktur nach oben verschieben  
+-   **Pfeil nach oben:** Wählen Sie Elemente aus, indem Sie der Struktur nach oben verschieben  
   
--   **Pfeil nach unten:** Elemente auswählen, indem Sie in der Struktur nach unten verschieben  
+-   **Pfeil nach unten:** Wählen Sie Elemente aus, indem Sie in der Struktur nach unten verschieben  
   
--   **Pfeil nach rechts:** erweitern Sie den Knoten in der Struktur  
+-   **Pfeil nach rechts:** Erweitern Sie den Knoten in der Struktur  
   
 -   **Pfeil nach links:** Reduzieren eines Knotens in der Struktur  
   
--   **Geben Sie Schlüssel:** zu initiieren, geladen werden, führen Sie die ausgewählten Elements  
+-   **Geben Sie Schlüssel aus:** Initiieren, laden, das ausgewählte Element ausführen  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (Strukturansicht und Rasteransicht)  
 Ein Rastersteuerelement ist ein komplexes Steuerelement, das eine Strukturansicht, in einem Raster enthält. Erweitern reduzieren, und Navigieren durch die Struktur sollte die gleichen Tastenkombinationen Befehle als eine Strukturansicht mit den folgenden Ergänzungen beachten:  
   
--   **Pfeil nach rechts:** erweitern Sie den Knoten. Nachdem der Knoten erweitert ist, soll er weiterhin auf die nächste Spalte auf der rechten Seite navigieren. Navigation sollte am Ende der Zeile zu beenden.  
+-   **Pfeil nach rechts:** Erweitern Sie den Knoten aus. Nachdem der Knoten erweitert ist, soll er weiterhin auf die nächste Spalte auf der rechten Seite navigieren. Navigation sollte am Ende der Zeile zu beenden.  
   
--   **Registerkarte ":** Werkzeug dient zum Navigieren zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.  
+-   **Registerkarte ":** Wechselt zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.  
   
--   **Umschalt + Tab:** Werkzeug dient zum Navigieren zur nächsten Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.  
+-   **Umschalt + Tab:** Wechselt zur nächsten Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.  
   
 ![Ein Rastersteuerelement in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Ein Rastersteuerelement in Visual Studio

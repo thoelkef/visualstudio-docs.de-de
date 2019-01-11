@@ -1,9 +1,6 @@
 ---
 title: Tool-Fenster-Anzeigekonfiguration | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877730"
 ---
 # <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
 Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert wird optional Werte angegeben werden. Weitere Informationen zum Tool-Fenster-Registrierung, finden Sie unter [Tool Windows in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
@@ -90,7 +87,7 @@ HKEY_LOCAL_MACHINE\
 
 |name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|(Standard)|REG_SZ|Keiner|Lassen Sie leer.|  
+|(Standard)|REG_SZ|Keine|Lassen Sie leer.|  
 |*\<GUID &GT;*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
 
 ### <a name="example"></a>Beispiel  

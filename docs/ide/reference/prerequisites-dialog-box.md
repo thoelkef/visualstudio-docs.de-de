@@ -2,7 +2,6 @@
 title: Dialogfeld "Erforderliche Komponenten"
 ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e3425573d1ee60ce5a4f96d5762b353afa18dc9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827100"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"
 
@@ -30,7 +29,7 @@ Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Pro
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-|Element|Beschreibung |
+|Element|Beschreibung|
 |-------------|-----------------|
 |**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm (*Setup.exe*) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird *Setup.exe* nicht erstellt.|
 |**Auswählen der für die Installation erforderlichen Komponenten**|Gibt an, ob Komponenten wie .NET Framework- und C++-Laufzeitbibliotheken installiert werden sollen.<br /><br />Indem Sie das Kontrollkästchen neben **SQL Server 2012 Express**  aktivieren, legen Sie z.B. fest, dass vom Setupprogramm überprüft werden muss, ob diese Komponente auf dem Zielcomputer installiert ist. Außerdem installiert es die Komponente, wenn diese noch nicht vorhanden ist.<br /><br />Ausführliche Informationen über die einzelnen erforderlichen Pakete finden Sie unter [Informationen über erforderliche Komponenten](#prerequisites-information).|
@@ -42,7 +41,7 @@ Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Pro
 
 Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Komponenten können von den in der folgenden Liste genannten abweichen. Die im Dialogfeld **Erforderliche Komponenten** aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.
 
-|Element|Beschreibung |
+|Element|Beschreibung|
 |-------------|-----------------|
 |**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in Visual Studio enthalten. .NET Framework 3.5 ist für alle Visual Basic- und C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist, sowie für alle Visual Basic- und C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Visual Studio Multi-Targeting Overview (Übersicht über das Anzielen mehrerer Frameworkversionen in Visual Studio)](../../ide/visual-studio-multi-targeting-overview.md) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Mit dem Paket wird .NET Framework 4 sowohl für die x86- als auch die x64-Plattform installiert.|

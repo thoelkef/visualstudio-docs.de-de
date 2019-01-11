@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider::GetDocument | Microsoft Docs
+title: IDebugDocumentProvider::GetDocument | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dd952a63253dbbf6034e0345547e2bec73b60c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afdf039ebac10a407f8ee3b27b5918d97d7e96a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726220"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088776"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-Bewirkt, dass das Dokument instanziiert werden, wenn sie nicht bereits vorhanden ist.  
+Bewirkt, dass das Dokument instanziiert werden, wenn es nicht bereits vorhanden ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppssd  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocument(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bewirkt, dass das Dokument instanziiert werden, wenn sie nicht bereits vorhanden ist.  
+ Diese Methode bewirkt, dass das Dokument instanziiert werden, wenn es nicht bereits vorhanden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentProvider-Schnittstelle](../../winscript/reference/idebugdocumentprovider-interface.md)

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831536"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
 
@@ -36,7 +35,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 2. Visual Studio-Projektmappe, die wir den Namen die Architektur-Projektmappe zu erstellen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
 
-   Fügen Sie ein Abhängigkeitsdiagramm mit dieser Lösung hinzu. Zeichnen Sie auf das Abhängigkeitsdiagramm die Architektur, die Sie für Ihre Anwendung ausgewählt haben. Das Diagramm kann beispielsweise die folgenden Ebenen und die Abhängigkeiten zwischen ihnen zeigen: Präsentation, Geschäftslogik und Daten.
+   Fügen Sie ein Abhängigkeitsdiagramm mit dieser Lösung hinzu. Zeichnen Sie auf das Abhängigkeitsdiagramm die Architektur, die Sie für Ihre Anwendung ausgewählt haben. Das Diagramm kann beispielsweise diese Ebenen und die Abhängigkeiten zwischen ihnen anzeigen: Präsentation; Geschäftslogik; und die Daten.
 
 4. Erstellen Sie ein separates Visual Studio-Projektmappe für jede Ebene im Architekturdiagramm Abhängigkeit an.
 

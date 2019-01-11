@@ -1,9 +1,6 @@
 ---
 title: SharePoint-Projekt und Projekt Elementvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.FirstWizardPage
@@ -15,8 +12,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, project and project item templates
 - SharePoint development in Visual Studio, templates
@@ -25,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71590e2cd5ece2a025b2aef3dfa0baf612fb2808
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936294"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekte und Projektelementvorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben. 
@@ -59,7 +54,7 @@ ms.locfileid: "49896444"
 -   Eine "key.snk"-Datei (Schlüssel mit starkem Namen), um die Assembly zwecks verbesserter Sicherheit mit einem starken Namen zu signieren.  
   
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight-Webparts
- *SharePoint 2010 Silverlight-Webpart* -Projekten können Sie zum Erstellen von Webparts für SharePoint, die Silverlight-Anwendungen angezeigt. Beim Erstellen dieses Projekts können Sie angeben, ob eine neue Silverlight-Anwendung hinzugefügt oder auf eine vorhandene verwiesen werden soll. Weitere Informationen finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md) und [Exemplarische Vorgehensweise: erstellen ein Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).  
+ *SharePoint 2010 Silverlight-Webpart* -Projekten können Sie zum Erstellen von Webparts für SharePoint, die Silverlight-Anwendungen angezeigt. Beim Erstellen dieses Projekts können Sie angeben, ob eine neue Silverlight-Anwendung hinzugefügt oder auf eine vorhandene verwiesen werden soll. Weitere Informationen finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md) und [Exemplarische Vorgehensweise: Erstellen ein Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).  
   
 ### <a name="sharepoint-2010-visual-web-part"></a>Visuelles Webpart für SharePoint 2010
  Ein *visuelles für SharePoint 2010-Webpart* -Projekt enthält eine *"Elements.xml"* -Definitionsdatei, ein **Webpart** Element und ein **Benutzersteuerelement** Element . Sie können die Darstellung des visuellen Webparts durch Ziehen oder Kopieren der Steuerelemente in der Visual Studio-Toolbox auf die Oberfläche des Benutzersteuerelements entwerfen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) und [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkId=179438).  
@@ -79,7 +74,7 @@ ms.locfileid: "49896444"
  Ein **Anwendungsseite (nur Farmlösung)** Element ermöglicht Ihnen das Entwerfen einer [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Webseite für eine SharePoint-Website. Anwendungsseiten können nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md) und [Anwendungsseitentyp "_layouts"](http://go.microsoft.com/fwlink/?LinkId=179434).  
   
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>Business Data Connectivity-Modell (nur farmlösung)
- Ein **Business Data Connectivity-Modell (nur Farmlösung)** Element können Sie zum Integrieren von Geschäftsdaten in SharePoint. Geschäftsdaten können von Back-End-Serveranwendungen stammen, z. B. [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)], Siebel und Service Advertising Protocol (SAP). Business Data Connectivity-Modelle können nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [wie: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md), [wie: mithilfe einer Ressourcendatei lokalisierte Namen geben, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md), und [Neuigkeiten: Business Connectivity Dienste](http://go.microsoft.com/fwlink/?LinkId=179411).  
+ Ein **Business Data Connectivity-Modell (nur Farmlösung)** Element können Sie zum Integrieren von Geschäftsdaten in SharePoint. Geschäftsdaten können von Back-End-Serveranwendungen stammen, z. B. [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)], Siebel und Service Advertising Protocol (SAP). Business Data Connectivity-Modelle können nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md), [Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md), und [neuerungen: Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411).  
   
 ### <a name="content-type"></a>Inhaltstyp
  *Inhaltstyp* Elemente können Sie benutzerdefinierte Inhaltstypen auf Grundlage eines vorhandenen (grundlegenden) Inhaltstyps wie z. B. ein Dokument, eine Ankündigung oder eine Aufgabe zu erstellen. Von einem benutzerdefinierten Inhaltstyp werden neben denselben Attributen und Feldern wie vom grundlegenden Inhaltstyp auch alle definierten Websitespalten (Felder) bereitgestellt. Beispielsweise können Sie einen benutzerdefinierten Inhaltstyp "Kontakt" erstellen, der auf dem grundlegenden Inhaltstyp "Kontakt" aus SharePoint basiert. Sie können den Inhaltstyp anpassen, indem vorhandene Websitespalten ändern oder zusätzliche Websitespalten zu den bereits im grundlegenden Inhaltstyp enthaltenen hinzufügen.  
@@ -105,7 +100,7 @@ ms.locfileid: "49896444"
   
 - Listenworkflowereignisse  
   
-  Erstellt das Projekt ereignisempfängerelement ein **Ereignisempfänger** eine einzelne Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im angegebenen Ordner die **Anpassung von SharePoint Assistenten**. Die Ereignisempfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie z. B. Dateien, Felder, Elemente, Listen, Anlagen, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Ereignisbehandlung](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  Erstellt das Projekt ereignisempfängerelement ein **Ereignisempfänger** eine einzelne Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im angegebenen Ordner die **Anpassung von SharePoint Assistenten**. Die Ereignisempfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie z. B. Dateien, Felder, Elemente, Listen, Anlagen, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Behandlung von Ereignissen](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>Liste  
  Bei einer Liste handelt es sich um eine Instanz einer wiederverwendbaren, grundlegenden SharePoint-Listendefinition, z. B. ein Kalender oder eine Aufgabenliste. Nach dem Hinzufügen einer Liste zu Ihrer Lösung können Sie mit dem Listen-Designer Websitespalten zur Liste hinzufügen und benutzerdefinierte Listenspalten erstellen. Dazu gehören Websitespalten aus Inhaltstypen. Sie können angeben, die *Ansicht* Liste, welche der Spalten, die in der Liste angezeigt wird. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) und [Baustein: Listen und Dokumentbibliotheken](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -117,7 +112,7 @@ ms.locfileid: "49896444"
  Ein *sequenziellen Workflow* ist eine Reihe von Geschäftslogikschritten dar, die Reihenfolge, bis der letzte Schritt abgeschlossen ist. Sequenzielle Workflows werden verwendet, um Prozesse zu verwalten, die SharePoint-Elemente wie Listen und Dokumente einschließen. Sie können Workflows auf Websiteebene (global) oder auf Listenebene (lokal) erstellen, und Sie können auswählen, ob ein Workflow automatisch oder manuell startet. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md), [Workflows in SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), und [Neuigkeiten: Verbesserungen des Workflows](http://go.microsoft.com/fwlink/?LinkId=179418).  
   
 ### <a name="silverlight-web-part"></a>Silverlight-Webparts
- *Silverlight-Webpart* Projektelemente können Sie zum Erstellen von Webparts für SharePoint, die Silverlight-Anwendungen angezeigt. Wenn Sie dieses Projektelement in Ihre Lösung einfügen, können Sie entweder eine neue Silverlight-Anwendung hinzufügen oder zu einem späteren Zeitpunkt auf eine vorhandene verweisen. Weitere Informationen finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md) und [Exemplarische Vorgehensweise: erstellen ein Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).  
+ *Silverlight-Webpart* Projektelemente können Sie zum Erstellen von Webparts für SharePoint, die Silverlight-Anwendungen angezeigt. Wenn Sie dieses Projektelement in Ihre Lösung einfügen, können Sie entweder eine neue Silverlight-Anwendung hinzufügen oder zu einem späteren Zeitpunkt auf eine vorhandene verweisen. Weitere Informationen finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md) und [Exemplarische Vorgehensweise: Erstellen ein Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).  
   
 ### <a name="site-column"></a>Websitespalte
  Ein *Websitespalte*, auch bekannt als eine *Feld*, ist eine der grundlegendsten Elemente können ein SharePoint-Projekt hinzugefügt. Eine Websitespalte stellt einen Datentyp dar, z. B. eine Telefonnummer, ein Textkommentar oder der Name der Stadt eines Kontakts in einer Kontaktliste. Weitere Informationen finden Sie unter [Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md) und [Spalten](http://go.microsoft.com/fwlink/?LinkId=226840).  
@@ -148,5 +143,3 @@ ms.locfileid: "49896444"
 ## <a name="see-also"></a>Siehe auch
  [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
  [SharePoint-Produkte und-Technologien](http://go.microsoft.com/fwlink/?LinkId=178818)  
-  
-  

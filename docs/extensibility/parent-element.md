@@ -1,9 +1,6 @@
 ---
 title: Übergeordnetes Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902436"
 ---
 # <a name="parent-element"></a>Übergeordnetes Element
 Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld kann nur eine Gruppe sein. Das übergeordnete Element eines Menü oder einer Gruppe kann einem anderen Menü oder einer Gruppe sein. In einem [CommandPlacement-Element](../extensibility/commandplacement-element.md), dieses Element ist erforderlich; in allen anderen Fällen ist er optional. Wenn dieses Element nicht angegeben ist, das übergeordnete Element des `Group_Undefined:0` wird abgeleitet werden.  
@@ -38,10 +35,10 @@ Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld k
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich. GUID der GUID/ID Befehlsbezeichner.|  
-|ID|Erforderlich. ID des GUID/ID Befehlsbezeichner.|  
+|id|Erforderlich. ID des GUID/ID Befehlsbezeichner.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
- Keiner  
+ Keine  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

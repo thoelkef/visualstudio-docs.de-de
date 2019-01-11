@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895492"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Datenbindung in einem Projekt auf Dokumentebene. Ein einzelnes Datenfeld in einer SQL Server-Datenbank ist an einen benannten Bereich in Microsoft Office Excel gebunden. In der exemplarischen Vorgehensweise wird gezeigt, wie Steuerelemente hinzufügen, die Ihnen ermöglichen, führen Sie einen Bildlauf durch alle Datensätze in der Tabelle.  
@@ -190,7 +187,7 @@ ms.locfileid: "49824374"
   
 -   Daten zwischengespeichert, so dass sie offline verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Binden von Zellen an mehrere Spalten in einer Tabelle statt auf ein Feld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Binden von Zellen an mehrere Spalten in einer Tabelle statt auf ein Feld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
 -   Verwenden einer <xref:System.Windows.Forms.BindingNavigator> Steuerelement durch die Datensätze scrollen. Weitere Informationen finden Sie unter [Vorgehensweise: Datennavigation mithilfe des Windows Forms BindingNavigator-Steuerelements](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
@@ -198,5 +195,3 @@ ms.locfileid: "49824374"
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
  [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

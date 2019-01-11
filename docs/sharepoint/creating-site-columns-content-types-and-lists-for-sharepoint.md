@@ -1,9 +1,6 @@
 ---
 title: Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931946"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
   Visual Studio bietet die Projektelementvorlagen für viele verschiedene grundlegende SharePoint-Elemente, einschließlich *listet* und *Inhaltstypen*, beide können Websitespalten integrieren (oder  *Felder*). Die neuen Designer für die Inhaltstypen und Listen stellen diese Elemente einfacher als je zuvor zu erstellen.  
@@ -53,5 +50,3 @@ ms.locfileid: "36325745"
   
 ## <a name="see-also"></a>Siehe auch
  [Erste Schritte bei der Entwicklung für SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
-  
- 

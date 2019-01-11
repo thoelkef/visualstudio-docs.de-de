@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91fc97cafdb3037bb3cca4c93ee874ee329d794c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0e3e8d6aee360c4a9a6cbd7d2406be0797e641bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931209"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Ruft ein Flag, das angibt, ob das Symbol entspricht der *Definition Bereich Symbol* für die Tag-Komponente einer Zeigervariablen im Code für einen C++-AMP-Beschleuniger kompiliert. Die Definition Bereich Symbol ist der Speicherort einer Variablen für einen Textabschnitt Adressen.  
+Ruft ein Flag, das angibt, ob das Symbol entspricht der *Definition Bereich Symbol* für die Komponente "Tag" einer Zeigervariablen im Code für eine C++-AMP-Beschleuniger kompiliert. Die Definition Bereich Symbol handelt es sich um den Speicherort der eine Variable für eine Spanne von Adressen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Ein Zeiger auf eine `BOOL` , der angibt, ob das Symbol in der Definition Bereich Symbol entspricht.  
+ [out] Ein Zeiger auf eine `BOOL` , der angibt, ob das Symbol zum Symbol Bereich Definition entspricht.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,9 +1,6 @@
 ---
 title: Was&#39;Neues in Visual Studio 2017 SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952208"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Was&#39;Neues in Visual Studio 2017 SDK
 
@@ -49,4 +46,4 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
 
 ## <a name="updated-extension-performance-guidelines"></a>Aktualisierte Erweiterung Leistungsrichtlinien
 
-Es gibt eine neue [wie: Leistung der diagnoseerweiterung](how-to-diagnose-extension-performance.md) Artikel unter [verwalten VSPackages](managing-vspackages.md) um zu zeigen, wie Sie erkennen, und Analysieren der Auswirkungen der Erweiterung für Visual Studio starten und die Lösung Ladezeiten.
+Es gibt eine neue [Vorgehensweise: Leistung der diagnoseerweiterung](how-to-diagnose-extension-performance.md) Artikel unter [verwalten VSPackages](managing-vspackages.md) um zu zeigen, wie Sie erkennen, und Analysieren der Auswirkungen der Erweiterung für Visual Studio starten und die Lösung Ladezeiten.

@@ -1,13 +1,8 @@
 ---
 title: Entwerfen eines Business Data Connectivity-Modells | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858382"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Sie können ein Modell für den Business Data Connectivity (BDC)-Dienst entwickeln, durch das Hinzufügen von Entitäten und Methoden auf eine Modelldatei. Eine Entität beschreibt eine Auflistung von Datenfeldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe wie das Hinzufügen, löschen oder Aktualisieren von Daten, die von den Entitäten dargestellt. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="add-entities"></a>Hinzufügen von Entitäten
- Hinzufügen einer Entität können durch Ziehen oder Kopieren einer **Entität** von Visual Studio **Toolbox** im BDC-Designer. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ Hinzufügen einer Entität können durch Ziehen oder Kopieren einer **Entität** von Visual Studio **Toolbox** im BDC-Designer. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Definieren Sie die Felder der Entität in einer Klasse ein. Beispielsweise können Sie ein Feld mit dem Namen hinzufügen `Address` zu einem `Customer` Klasse. Sie können eine neue Klasse zum Projekt hinzufügen oder verwenden Sie eine vorhandene Klasse, die mit anderen Tools wie z. B. den Object Relational Designer (O/R Designer) erstellt. Der Name der Entität und den Namen der Klasse, die die Entität darstellt, müssen nicht übereinstimmen. Sie beziehen sich die Klasse auf die Entität zu, wenn Sie die Methoden in Ihrem Modell definieren.  
   
@@ -38,26 +33,26 @@ ms.locfileid: "36327241"
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|Finder|Gibt eine Auflistung von Instanzen der Entität zurück. Wird aufgerufen, wenn der Benutzer die Liste oder -Webpart geöffnet wird. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md).|  
-|Spezifischer Finder|Gibt eine bestimmte Entitätsinstanz zurück. Wird aufgerufen, wenn ein Benutzer die Details eines bestimmten Elements in einer Liste anzeigt. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine bestimmte Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md).|  
-|Creator|Fügt neue Daten an die Datenquelle einer Entität. Wird aufgerufen, wenn der Benutzer die **neues Element** Schaltfläche auf dem Menüband einer Liste, die für das Modell basiert. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md).|  
-|Updater|Ändert die Daten in einer Liste an. Wird aufgerufen, wenn der Benutzer Informationen in einer Liste zu aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md).|  
-|Deleter|Entfernt Daten. Wird aufgerufen, wenn Benutzer ein Element aus der Liste löschen. Weitere Informationen finden Sie unter [Vorgehensweise: hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md).|  
+|Finder|Gibt eine Auflistung von Instanzen der Entität zurück. Wird aufgerufen, wenn der Benutzer die Liste oder -Webpart geöffnet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md).|  
+|Spezifischer Finder|Gibt eine bestimmte Entitätsinstanz zurück. Wird aufgerufen, wenn ein Benutzer die Details eines bestimmten Elements in einer Liste anzeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine bestimmte Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md).|  
+|Creator|Fügt neue Daten an die Datenquelle einer Entität. Wird aufgerufen, wenn der Benutzer die **neues Element** Schaltfläche auf dem Menüband einer Liste, die für das Modell basiert. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md).|  
+|Updater|Ändert die Daten in einer Liste an. Wird aufgerufen, wenn der Benutzer Informationen in einer Liste zu aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md).|  
+|Deleter|Entfernt Daten. Wird aufgerufen, wenn Benutzer ein Element aus der Liste löschen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md).|  
   
 ## <a name="define-method-parameters"></a>Definieren Sie die Parameter der Methode
- Wenn Sie eine Methode erstellen, fügt Visual Studio die Eingabe- und Parameter, die für den Methodentyp geeignet sind. Diese Parameter sind nur Platzhalter. In den meisten Fällen müssen Sie die Parameter ändern, damit sie übergeben, oder geben Sie den richtigen Datentyp zurück. Standardmäßig gibt z. B. eine Finder-Methode eine Zeichenfolge an. In den meisten Fällen möchten Sie den Rückgabeparameter der Finder-Methode ändern, sodass sie eine Auflistung von Entitäten zurückgibt. Sie können das erreichen, durch den Typdeskriptor des Parameters ändern. Ein Typdeskriptor ist eine Auflistung von Attributen, die den Datentyp eines Parameters beschreibt. Weitere Informationen finden Sie unter [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Wenn Sie eine Methode erstellen, fügt Visual Studio die Eingabe- und Parameter, die für den Methodentyp geeignet sind. Diese Parameter sind nur Platzhalter. In den meisten Fällen müssen Sie die Parameter ändern, damit sie übergeben, oder geben Sie den richtigen Datentyp zurück. Standardmäßig gibt z. B. eine Finder-Methode eine Zeichenfolge an. In den meisten Fällen möchten Sie den Rückgabeparameter der Finder-Methode ändern, sodass sie eine Auflistung von Entitäten zurückgibt. Sie können das erreichen, durch den Typdeskriptor des Parameters ändern. Ein Typdeskriptor ist eine Auflistung von Attributen, die den Datentyp eines Parameters beschreibt. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Visual Studio ermöglicht Ihnen das Kopieren von Typdeskriptoren zwischen Parametern im Modell. Sie können z. B. einen Typdeskriptor, mit dem Namen definieren `CustomerTD` für den Rückgabeparameter der `GetCustomer` Methode. Können Sie kopieren die `CustomerTD` Typdeskriptor in die **BDC-Explorer**, und fügen Sie diesem Typdeskriptor an den Eingabeparameter, der die `CreateCustomer` Methode. Dies verhindert, dass Sie den gleichen Typdeskriptor mehr als einmal definieren müssen.  
   
 ## <a name="method-instances"></a>Methodeninstanzen
- Wenn Sie eine Methode erstellen, fügt Visual Studio eine Standardinstanz-Methode. Methodeninstanz ist ein Verweis auf eine Methode sowie die Standardwerte für die Parameter an. Eine einzelne Methode kann es sich um mehrere Methodeninstanzen verwenden. Jede Instanz ist eine Kombination aus der Signatur der Methode und eine Gruppe von Standardwerten. Weitere Informationen finden Sie unter [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Wenn Sie eine Methode erstellen, fügt Visual Studio eine Standardinstanz-Methode. Methodeninstanz ist ein Verweis auf eine Methode sowie die Standardwerte für die Parameter an. Eine einzelne Methode kann es sich um mehrere Methodeninstanzen verwenden. Jede Instanz ist eine Kombination aus der Signatur der Methode und eine Gruppe von Standardwerten. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Wenn Sie das Projekt ausführen, werden Methodeninstanzen in einer Dropdown-Liste über die SharePoint-Liste angezeigt. Benutzer können Methodeninstanzen zum Anzeigen der Daten wählen.  
   
  Um die Standardwerte für die Methodeninstanz hinzufügen möchten, müssen Sie den XML-Code des Modells direkt zu ändern. Weitere Informationen finden Sie unter [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279).  
   
 ## <a name="add-filter-descriptors"></a>Filterdeskriptoren hinzufügen
- Consumer des Modells sollten Instanzen einer Entität abrufen, die bestimmte Kriterien erfüllen. Um diese Funktionalität zu aktivieren, können Sie ein Filterdeskriptors zu einer Methode hinzufügen. Filterdeskriptoren ermöglichen Modell Consumer zum Filtern des Resultsets für die Methode durch die Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Filterparametern für Vorgänge mit Limit-Instanzen aus dem externen System](http://go.microsoft.com/fwlink/?LinkID=169267).  
+ Consumer des Modells sollten Instanzen einer Entität abrufen, die bestimmte Kriterien erfüllen. Um diese Funktionalität zu aktivieren, können Sie ein Filterdeskriptors zu einer Methode hinzufügen. Filterdeskriptoren ermöglichen Modell Consumer zum Filtern des Resultsets für die Methode durch die Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Vorgänge zum Begrenzen von Instanzen aus dem externen System Filterparameter hinzugefügt](http://go.microsoft.com/fwlink/?LinkID=169267).  
   
  SharePoint bietet verschiedene Funktionen, die Benutzern ermöglichen, Werte bereitzustellen. Geschäftsdaten-Webparts bieten beispielsweise einen Text-Feld "Filter". Benutzer können die Daten in einer Liste durch Eingabe eines Werts in das Textfeld einschränken. Weitere Informationen über das Hinzufügen eines Filterdeskriptors zu einer Methode finden Sie unter [Vorgehensweise: Hinzufügen ein Filterdeskriptors zu einer Finder-Methode](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
   
@@ -119,18 +114,17 @@ ms.locfileid: "36327241"
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)|Beschreibt die Tools, die Sie verwenden können, um ein Modell für den BDC visuell zu entwerfen.|  
-|[Gewusst wie: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)|Erfahren Sie, wie Sie externe Inhaltstypen oder Entitäten, die dem Modell hinzufügen.|  
-|[Gewusst wie: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, eine Liste der Entitäten in einer Liste oder -Webpart anzeigen.|  
-|[Gewusst wie: hinzufügen eine bestimmte Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, die Details einer bestimmten Entität anzuzeigen.|  
-|[Gewusst wie: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, die Datensätze einer Datenquelle direkt aus einer Liste oder einem Webpart hinzufügen.|  
-|[Gewusst wie: hinzufügen eine Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, Daten aus einer Datenquelle mithilfe der Optionen in der Benutzeroberfläche (UI) einer Liste oder ein Webpart zu entfernen.|  
-|[Gewusst wie: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, direkt aus einer Liste oder einem Webpart Datensätze in einer Datenquelle zu ändern.|  
-|[Gewusst wie: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Erfahren Sie, wie Sie das Fenster "Klassendetails-Methode" in Visual Studio zu verwenden, um die Eingabe-und Rückgabe einer Methode hinzufügen.|  
-|[Gewusst wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Erfahren Sie, wie Datentypen im Modell zu definieren.|  
-|[Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)|Erfahren Sie, wie eine Instanz einer Methode zu erstellen, die der BDC ausgeführt wird.|  
-|[Gewusst wie: Hinzufügen ein Filterdeskriptors zu einer Finder-Methode](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Erfahren Sie, wie von Benutzern begrenzen die Anzahl der Instanzen, die von einer Finder-Methode zurückgegebene aktiviert.|  
+|[Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)|Erfahren Sie, wie Sie externe Inhaltstypen oder Entitäten, die dem Modell hinzufügen.|  
+|[Vorgehensweise: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, eine Liste der Entitäten in einer Liste oder -Webpart anzeigen.|  
+|[Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, die Details einer bestimmten Entität anzuzeigen.|  
+|[Vorgehensweise: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, die Datensätze einer Datenquelle direkt aus einer Liste oder einem Webpart hinzufügen.|  
+|[Vorgehensweise: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, Daten aus einer Datenquelle mithilfe der Optionen in der Benutzeroberfläche (UI) einer Liste oder ein Webpart zu entfernen.|  
+|[Vorgehensweise: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)|Erfahren Sie, wie zum Hinzufügen einer Methode, die Benutzern ermöglicht, direkt aus einer Liste oder einem Webpart Datensätze in einer Datenquelle zu ändern.|  
+|[Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Erfahren Sie, wie Sie das Fenster "Klassendetails-Methode" in Visual Studio zu verwenden, um die Eingabe-und Rückgabe einer Methode hinzufügen.|  
+|[Vorgehensweise: Definieren des Typdeskriptors für einen parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Erfahren Sie, wie Datentypen im Modell zu definieren.|  
+|[Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)|Erfahren Sie, wie eine Instanz einer Methode zu erstellen, die der BDC ausgeführt wird.|  
+|[Vorgehensweise: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Erfahren Sie, wie von Benutzern begrenzen die Anzahl der Instanzen, die von einer Finder-Methode zurückgegebene aktiviert.|  
 |[Erstellen einer Assoziation zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md)|Beschreibt, wie Sie Beziehungen zwischen Entitäten im Modell definieren können. Geschäftsdaten-Webparts, External Lists und benutzerdefinierte Anwendungen können diese datenbeziehungen in einer Benutzeroberfläche (UI) anzeigen.|  
-|[Gewusst wie: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)|Erfahren Sie, wie Sie Beziehungen zwischen Entitäten im Modell zu definieren.|  
+|[Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)|Erfahren Sie, wie Sie Beziehungen zwischen Entitäten im Modell zu definieren.|  
 |[Exemplarische Vorgehensweise: Erstellen eines externen Liste in SharePoint mithilfe von Geschäftsdaten](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Enthält schrittweise Anleitungen, die zeigen, wie Sie erstellen und Testen eines Modells, das Kontakte in einer externen SharePoint-Liste angezeigt.|  
 |[Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Bietet einen Überblick über das Erstellen und Entwerfen von Modellen für den BDC-Dienst.|  
-  

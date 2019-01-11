@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: c5573f5501c4723ed6eede9bba82ebc7fdf31730
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c08a78d49a637b37570a0b77063bf307e97cba2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990895"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017-Komponentenverzeichnis
 
@@ -57,7 +56,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio-Startse
 
 **ID:** Microsoft.VisualStudio.Workload.Azure
 
-**Beschreibung:** Azure SDKs, Tools und Projekte zum Entwickeln von Cloud-Apps und für das Erstellen von Ressourcen und Containern, Docker-Unterstützung eingeschlossen.
+**Beschreibung:** Azure SDKs, Tools und Projekte zum Entwickeln von Cloud-Apps und für das Erstellen von Ressourcen und Containern (einschließlich Docker-Unterstützung).
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -516,7 +515,7 @@ Component.MDD.IOS | C++ iOS-Entwicklungstools | 15.0.26621.2 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Beschreibung:** Hiermit erstellen Sie plattformübergreifende Anwendungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern mit Docker-Unterstützung.
+**Beschreibung:** Hiermit erstellen Sie plattformübergreifende Anwendungen mit .NET Core, ASP.NET Core, HTML, JavaScript und Containern mit Docker-Unterstützung.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -626,7 +625,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | UWP-Tools für Xamarin | 15.
 
 **ID:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Beschreibung:** Hiermit erstellen Sie Webanwendungen mit ASP.NET, ASP.NET Core, HTML/JavaScript und Container mit Docker-Unterstützung.
+**Beschreibung:** Hiermit erstellen Sie Webanwendungen mit ASP.NET, ASP.NET Core, HTML, JavaScript und Container mit Docker-Unterstützung.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 

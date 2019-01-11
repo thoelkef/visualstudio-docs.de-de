@@ -1,9 +1,6 @@
 ---
 title: Erstellen einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852702"
 ---
 # <a name="create-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debug-engine
 Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten Laufzeit-Architekturen. Es gibt in der Regel nur eine Implementierung von DE pro-Umgebung ausgeführt.  
@@ -61,7 +58,7 @@ Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestim
  [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)  
  Dokumentiert die Aufrufreihenfolge der Ereignisse, die in einer Debugsitzung an.  
   
- [Gewusst wie: Debuggen eine benutzerdefinierten Debug-engine](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [How To: Debuggen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Erläutert, wie eine benutzerdefinierte DE zu debuggen.  
   
 ## <a name="see-also"></a>Siehe auch  

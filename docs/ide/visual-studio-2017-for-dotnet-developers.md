@@ -5,19 +5,18 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 300754cd975f16419d3e6faebc2074ed3eacb727
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926030"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
@@ -37,7 +36,7 @@ Einige Erweiterungen bieten auch Tastaturschemas an:
 
 Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 
-| Tastenkombination (Alle Profile) | Befehl | Beschreibung  |
+| Tastenkombination (Alle Profile) | Befehl | Beschreibung |
 |-|-|-|
 | **STRG**+**T** | Gehe zu allen | Navigieren zu einer beliebigen Datei-/Typ-/Member-/Symboldeklaration |
 | **F12** (oder **Strg**+**Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |
@@ -115,7 +114,7 @@ Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codeb
 | Gehe zu Definition | **F12** oder **Strg**+**Klicken**| Sie können bei gedrückter **STRG**-TASTE klicken, um zur Definition zu navigieren. |
 | Peek-Definition | **ALT**+**F12** | Inlineansicht einer Definition |
 | Strukturschnellansicht | Graue, gepunktete Linien zwischen geschweiften Klammern | Zeigen Sie darauf, um Ihre Codestruktur anzuzeigen. |
-| Navigation zu dekompilierten Assemblys | **F12** oder **Strg**+**Klicken** | Navigieren Sie zur externen Quelle (mit ILSpy dekompiliert), indem Sie folgendes Feature aktivieren: **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren**. |
+| Navigation zu dekompilierten Assemblys | **F12** oder **Strg**+**Klicken** | Navigieren Sie zur externen Quelle (mit ILSpy dekompiliert), indem Sie das Feature aktivieren: **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren**. |
 
 ![„Gehe zu allen“ und „Alle Verweise suchen“](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +134,7 @@ Wir haben Visual Studio 2017 um unzählige neue Funktionen zum Debuggen erweiter
 
 - Durch *Ausführung bis Klick* können Sie auf eine Stelle neben einer Codezeile zeigen, auf das angezeigte grüne Wiedergabesymbol klicken und das Programm ausführen, bis es diese Zeile erreicht.
 - Die neue **Ausnahmen-Hilfe** setzt die wichtigsten Informationen (z.B. die als NULL festzulegende Variable in NullReferenceException) auf die oberste Ebene im Dialogfeld.
-- Durch Debuggen mit der Funktion [Schritt zurück](../debugger/how-to-use-intellitrace-step-back.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
+- Durch Debuggen mit der Funktion [Schritt zurück](../debugger/view-historical-application-state.md) können Sie zu den vorherigen Breakpoints oder Schritten zurückkehren und den zuvor vorhandenen Status der Anwendung anzeigen.
 - Durch [Debuggen von Momentaufnahmen](/azure/application-insights/app-insights-snapshot-debugger) können Sie den Status einer aktiven Webanwendung bei Auslösung einer Ausnahme (muss in Azure erfolgen) untersuchen.
 
 ![Neue Ausnahmen-Hilfe in Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

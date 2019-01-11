@@ -2,7 +2,6 @@
 title: Optionen, Text-Editor, JavaScript, Codevalidierung
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06c0a82a70cf3764df4937ed7d42b2c87f8aa46
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c70906430ecc7175e4ceae1bfd55b308b2487be9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905610"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>Optionen, Text-Editor, JavaScript, Codevalidierung
 Verwenden Sie die Seite **Codevalidierung** des Dialogfelds **Optionen**, um Einstellungen zu ändern, die beeinflussen, wie JavaScript Fehler behandelt. Sie gelangen auf die Seite **Codevalidierung**, indem Sie in der Menüleiste **Tools** > **Optionen** auswählen und anschließend **Text-Editor** > **JavaScript** > **Codevalidierung** erweitern.

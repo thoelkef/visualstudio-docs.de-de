@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication | Microsoft Docs
+title: IMachineDebugManagerCookie::AddApplication | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728630"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090661"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Fügt eine Anwendung mit der Ausführung Anwendungsliste.  
+Fügt eine Anwendung in der ausgeführten Anwendungsliste.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,13 +40,13 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parameter  
  `pda`  
- [in] Anwendung mit der Ausführung Anwendungsliste.  
+ [in] Anwendung in der ausgeführten Anwendungsliste.  
   
  `dwDebugAppCookie`  
- [in] Ein Cookie, das die Debuganwendung bezeichnet.  
+ [in] Ein Cookie, das die Debuganwendung identifiziert.  
   
  `pdwAppCookie`  
- [out] Ein Cookie, mit dem die Anwendung von Machine Debug-Manager zu entfernen.  
+ [out] Ein Cookie, das verwendet wird, um die Anwendung von computerbasierten Debug-Manager zu entfernen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -56,7 +56,7 @@ HRESULT AddApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, von der Debug-Prozess-Manager immer `IProcessDebugManager::AddApplication` aufgerufen wird.  
+ Diese Methode wird aufgerufen, indem Sie den prozessbasierten debugmanager immer `IProcessDebugManager::AddApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)   

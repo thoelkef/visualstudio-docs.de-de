@@ -1,9 +1,6 @@
 ---
-title: IDebugPortRequest2 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortRequest2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortRequest2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5af5ef2f4371350529d1e5fa60fb5ad1539aa87
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a05f84d685ac33203461dfc1b0f515cb45f67c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876928"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Diese Schnittstelle wird beschrieben, einen Port. Diese Beschreibung wird verwendet, um den Port an einen Lieferanten Port hinzuzufügen.  
@@ -32,10 +29,10 @@ IDebugPortRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Visual Studio implementiert in der Regel diese Schnittstelle gerade einen Debugport von einem anderen Port Lieferanten abrufen.  
+ Diese Schnittstelle beim Abrufen eines Debug-Ports von eines portanbieters wird von Visual Studio in der Regel implementiert.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle übergebenen [hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) zum Erstellen eines Ports Debuggen. Ein Aufruf von [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) gibt diese Schnittstelle, die die Anforderung verwendet, um die im ersten Schritt erstellen Sie den Port darstellt.  
+ Diese Schnittstelle übergebenen [Port hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) So erstellen Sie einen Debugport. Ein Aufruf von [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) gibt diese Schnittstelle, die die Anforderung verwendet, um die im ersten Schritt erstellen Sie den Port darstellt.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugPortRequest2`.  
@@ -45,7 +42,7 @@ IDebugPortRequest2 : IUnknown
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Ruft den Namen des Ports erstellen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Debugging-Modul ist in der Regel interagiert nicht mit einem Port Lieferanten und verfügt über keine Verwendung für diese Schnittstelle.  
+ Eine Debug-Engine ist in der Regel interagiert nicht mit eines portanbieters und hat keine Verwendung für diese Schnittstelle.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -55,6 +52,6 @@ IDebugPortRequest2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Port hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

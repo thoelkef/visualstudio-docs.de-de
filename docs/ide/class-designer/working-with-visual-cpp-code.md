@@ -2,7 +2,6 @@
 title: Arbeiten mit Visual C++-Code (Klassen-Designer)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e81a267b1a80036a0e000d7336f6b50b0e5f29d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947516"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Arbeiten mit Visual C++-Code im Klassen-Designer
 
@@ -48,7 +47,7 @@ Der **Klassen-Designer** unterstützt folgende C++-Codeelemente:
 - TypeDef
 
 > [!NOTE]
-> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../../modeling/uml-class-diagrams-reference.md).
+> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML Class Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Behandlung von Anzeigeproblemen und Problemen bei der Typauflösung
 
@@ -112,8 +111,6 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
-- [Arbeiten mit Klassendiagrammen](working-with-class-diagrams.md)
 - [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
 - [Zusätzliche Informationen zu Klassen-Designer-Fehlern](additional-information-about-errors.md)
 - [Visual C++-Klassen im Klassen-Designer](visual-cpp-classes.md)

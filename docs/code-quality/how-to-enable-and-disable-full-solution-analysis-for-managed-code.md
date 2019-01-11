@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktivieren und deaktivieren Sie vollständige Projektmappenanalyse für verwalteten Code'
+title: 'Vorgehensweise: Aktivieren Sie und deaktivieren Sie der vollständigen Projektmappenanalyse für verwalteten Code'
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,44 +8,43 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d227360be39455662d3d2ebe822810debd655dac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937883"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren und deaktivieren Sie die vollständige projektmappenanalyse für verwalteten Code
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren Sie und deaktivieren Sie der vollständigen projektmappenanalyse für verwalteten code
 
-*Vollständige projektmappenanalyse* ist eine Visual Studio-Funktion, ermöglicht es Ihnen, Codeanalysefehler nur in einem geöffneten Visual c# oder Visual Basic-Dateien in der Projektmappe finden Sie unter, oder im Code auch Dateien, die, geschlossen werden. Wird standardmäßig vollständige projektmappenanalyse *aktiviert* für Visual Basic und *deaktiviert* für Visual c#.
+*Vollständige projektmappenanalyse* ist eine Visual Studio-Feature, das Ihnen ermöglicht, die Codeanalysefehler nur in einem geöffneten Visual finden Sie unter C# oder Visual Basic-Dateien in der Projektmappe oder auch in Codedateien, die geschlossen werden. Wird standardmäßig vollständige projektmappenanalyse *aktiviert* für Visual Basic und *deaktiviert* für visuelle C#.
 
-Es kann hilfreich sein, alle Probleme in allen Dateien finden Sie unter, aber sie können auch störend sein. Er verlangsamt Visual Studio Wenn Ihre Lösung sehr groß ist oder viele Dateien hat. Um die Anzahl der Probleme angezeigt und Visual Studio zur Leistungssteigerung, können Sie die vollständige projektmappenanalyse deaktivieren. Sie können diese Funktion problemlos aktivieren Sie bei Bedarf erneut.
+Es kann hilfreich sein, alle Probleme in allen Dateien, aber es kann auch verwirrend sein. Sie verlangsamt Visual Studio Ihrer Lösung bei sehr großen oder viele Dateien. Um die Anzahl der angezeigten Probleme, und Verbessern der Leistung von Visual Studio, können Sie die vollständige projektmappenanalyse deaktivieren. Sie können diese Funktion problemlos wieder, bei Bedarf aktivieren.
 
-## <a name="to-toggle-full-solution-analysis"></a>Vollständige projektmappenanalyse aktivieren bzw. deaktivieren
+## <a name="to-toggle-full-solution-analysis"></a>Zum Umschalten der vollständigen projektmappenanalyse
 
-1. So öffnen die **Optionen** wählen Sie im Dialogfeld auf der Menüleiste in Visual Studio **Tools** > **Optionen**.
+1. Zum Öffnen der **Optionen** wählen Sie im Dialogfeld auf der Menüleiste in Visual Studio **Tools** > **Optionen**.
 
-1. In der **Optionen** Dialogfeld Wählen Sie **Texteditor** > **c#** oder **grundlegende**  >   **Erweiterte**.
+1. In der **Optionen** Dialogfeld wählen **Text-Editor**  >  **C#** oder **grundlegende**  >  **Erweiterte**.
 
-1. Wählen Sie die **vollständige projektmappenanalyse aktivieren** Kontrollkästchen, um vollständige projektmappenanalyse aktivieren oder deaktivieren Sie das Kontrollkästchen, um ihn zu deaktivieren. Wählen Sie **OK** Wenn Sie fertig sind.
+1. Wählen Sie die **vollständige projektmappenanalyse aktivieren** Kontrollkästchen, um die vollständige projektmappenanalyse aktivieren oder deaktivieren Sie das Kontrollkästchen, um es zu deaktivieren. Wählen Sie **OK** Wenn Sie fertig sind.
 
-    ![Vollständige Lösung Analysis Kontrollkästchen zu aktivieren.](../code-quality/media/options-enable-full-solution-analysis.png)
+    ![Aktivieren Sie die vollständige Lösung Analysis-Kontrollkästchen.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Ergebnisse der aktivieren und deaktivieren die vollständige projektmappenanalyse
+## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Ergebnisse der aktivieren und Deaktivieren der vollständigen projektmappenanalyse
 
-Im folgenden Screenshot sehen Sie die Ergebnisse, wenn vollständige projektmappenanalyse aktiviert ist. Alle Fehler und bei der Codeanalyse in *alle* der Dateien in der Projektmappe angezeigt, unabhängig davon, ob die Dateien geöffnet sind.
+Im folgenden Screenshot sehen Sie die Ergebnisse, wenn vollständige projektmappenanalyse aktiviert ist. Alle Fehler und bei der Codeanalyse in *alle* der Dateien in der Projektmappe angezeigt, unabhängig davon, ob die Dateien geöffnet oder nicht sind.
 
 ![Vollständige projektmappenanalyse aktiviert.](../code-quality/media/fsa_enabled.png)
 
-Der folgende Screenshot zeigt die Ergebnisse aus derselben Projektmappe nach dem Deaktivieren von vollständige projektmappenanalyse. Nur Fehler und bei der Codeanalyse in der geöffneten Projektmappendateien werden in der **Fehlerliste**.
+Der folgende Screenshot zeigt die Ergebnisse aus der gleichen Projektmappe nach dem Deaktivieren der vollständigen projektmappenanalyse. Nur Fehler und bei der Codeanalyse in Projektmappe öffnen von Dateien angezeigt, der **Fehlerliste**.
 
 ![Vollständige projektmappenanalyse deaktiviert.](../code-quality/media/fsa_disabled.png)
 
-## <a name="automatically-disable-full-solution-analysis"></a>Vollständige projektmappenanalyse automatisch deaktivieren
+## <a name="automatically-disable-full-solution-analysis"></a>Deaktivieren Sie automatisch vollständige projektmappenanalyse
 
-Wenn Visual Studio ermittelt, dass 200 MB oder weniger Systemspeicher verfügbar ist, automatisch deaktiviert wird, vollständige projektmappenanalyse (und einige andere Funktionen), wenn diese Option aktiviert ist. In diesem Fall wird eine Warnung angezeigt, die darüber informiert, dass Visual Studio einige Funktionen deaktiviert hat. Eine Schaltfläche können Sie die vollständige projektmappenanalyse erneut zu aktivieren, wenn Sie möchten.
+Wenn Visual Studio ermittelt, dass 200 MB oder weniger Arbeitsspeicher verfügbar ist, automatisch deaktiviert wird, vollständige projektmappenanalyse (und einige andere Features) wird aktiviert. In diesem Fall wird eine Warnung angezeigt, in der Sie darüber informiert werden, dass Visual Studio einige Funktionen deaktiviert hat. Eine Schaltfläche können Sie die vollständige projektmappenanalyse wieder zu aktivieren, wenn Sie möchten.
 
-![Text der Warnung das vollständige projektmappenanalyse anhalten](../code-quality/media/fsa_alert.png)
+![Text der Warnung das Anhalten der vollständigen projektmappenanalyse](../code-quality/media/fsa_alert.png)

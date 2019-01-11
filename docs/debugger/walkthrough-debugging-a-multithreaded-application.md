@@ -1,8 +1,6 @@
 ---
 title: Anzeigen von Threads im Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946161"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Threads in Visual Studio-Debugger mithilfe des Fensters Threads anzeigen
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können. Schrittweise Anleitung zur Verwendung der **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).
@@ -38,7 +36,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
 ## <a name="use-the-threads-window"></a>Verwenden des Fensters „Threads“ 
  Die **Threads** Fenster enthält eine Tabelle, in dem jede Zeile einen separaten Thread in der Anwendung beschreibt. Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgelistet. Sie können die Liste jedoch filtern, sodass nur die für Sie relevanten Threads angezeigt werden. Jede Spalte wird eine andere Art von Informationen beschrieben. Sie können auch einige Spalten ausblenden. Wenn Sie alle Spalten anzeigen, werden die folgenden Spalten von links nach rechts angezeigt:  
   
-- **Kennzeichnen** In diesem Artikel noch nicht gekennzeichneten können Sie einen Thread markieren, den besondere Aufmerksamkeit werden soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Flag und Aufheben der Kennzeichnung Threads](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Kennzeichnen** In diesem Artikel noch nicht gekennzeichneten können Sie einen Thread markieren, den besondere Aufmerksamkeit werden soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - Aktueller Thread In diesem Artikel noch nicht gekennzeichneten gibt mit ein gelber Pfeil für den aktuellen Thread. Eine Gliederung Pfeil gibt den aktuellen Debuggerkontext für eine nicht-aktuellen Threads an.
   
@@ -50,7 +48,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - **name**). Identifiziert jeden Thread den Namen, sofern vorhanden, oder als \<ohne Namen >.  
   
-- **Position** Zeigt an, wobei der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
+- **location**: Zeigt an, wobei der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
   
 - Priorität Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt an, die die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.  
   

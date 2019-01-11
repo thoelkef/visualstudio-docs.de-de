@@ -1,9 +1,7 @@
 ---
 title: Debuggen einer Multithread-app
 description: Debuggen Sie mithilfe des Fensters Threads und die Symbolleiste Debuggen in Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893706"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithread-app mithilfe des Fensters Threads
 
@@ -188,4 +186,4 @@ Sie haben nun die Grundlagen des Debuggens von Multithreadanwendungen kennengele
   
 ## <a name="see-also"></a>Siehe auch  
  [Debug multithreaded applications (Debuggen von Multithreadanwendungen)](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Vorgehensweise: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)

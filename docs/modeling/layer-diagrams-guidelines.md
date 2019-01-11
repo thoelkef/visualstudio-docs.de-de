@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924422"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeitsdiagramme: Richtlinien
 
@@ -32,7 +31,7 @@ Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unte
 
 ## <a name="what-is-a-dependency-diagram"></a>Was ist ein Abhängigkeitsdiagramm?
 
-Wie einem herkömmlichen Architekturdiagramm identifiziert ein Abhängigkeitsdiagramm, die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md).
+Wie einem herkömmlichen Architekturdiagramm identifiziert ein Abhängigkeitsdiagramm, die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Abhängigkeitsdiagramme: Verweis](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>So entwerfen oder aktualisieren Sie Ihre app mit Abhängigkeitsdiagrammen
 
@@ -125,7 +124,7 @@ Wenn dies nicht der Fall ist, wird der Code so ändern Sie während seiner Leben
 
 Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in einem neuen Projekt beginnen, können Sie Ebenen und Abhängigkeiten zeichnen, um die Hauptkomponenten zu identifizieren, bevor Sie mit dem Entwickeln des Codes beginnen.
 
--   **Zeigen Sie identifizierbare architektonische Muster** in Ihre Abhängigkeitsdiagramme, falls möglich. Beispielsweise kann ein Abhängigkeitsdiagramm, das eine Desktopanwendung beschreibt Ebenen wie Präsentation, Domänenlogik und Data Store enthalten. Ein Abhängigkeitsdiagramm, das eine einzelne Funktion in einer Anwendung umfasst möglicherweise Ebenen, wie z. B. Modell, Ansicht und Controller. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Application Architecture](http://go.microsoft.com/fwlink/?LinkId=145794).
+-   **Zeigen Sie identifizierbare architektonische Muster** in Ihre Abhängigkeitsdiagramme, falls möglich. Beispielsweise kann ein Abhängigkeitsdiagramm, das eine Desktopanwendung beschreibt Ebenen wie Präsentation, Domänenlogik und Data Store enthalten. Ein Abhängigkeitsdiagramm, das eine einzelne Funktion in einer Anwendung umfasst möglicherweise Ebenen, wie z. B. Modell, Ansicht und Controller. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 -   **Erstellen Sie ein Codeartefakt für jede Ebene** wie z. B. einen Namespace, Klasse oder Komponente. Dies vereinfacht das Verfolgen des Codes und das Verknüpfen der Codeartefakte mit den Ebenen. Verknüpfen Sie jedes Artefakt mit der entsprechenden Ebene, sobald Sie das Artefakt erstellen.
 

@@ -2,7 +2,6 @@
 title: Analysieren der CPU-Auslastung | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a82c47c6815d4bf792a09a0b44dc21edbad68479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988445"
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung 
 
@@ -84,7 +83,7 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 
  System- und Frameworkfunktionen, die von Ihrem Code ausgeführt werden, werden als *externer Code* bezeichnet. Funktionen mit externem Code starten und beenden die App, zeichnen die Benutzeroberfläche, steuern das Threading und stellen der App weitere Dienste auf unterer Ebene bereit. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur „CPU-Auslastung“ die externen Funktionen einer Benutzermethode in einem **[Externer Code]**-Knoten sammelt.  
   
- Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts in der Dropdownliste **Filter** die Option **Externen Code anzeigen** und dann **Anwenden** aus. In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert.  
+ Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts (rechter Bereich) in der Dropdownliste **Filter** die Option **Externen Code anzeigen** aus, und klicken Sie dann auf **Anwenden**. In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert. (Die Dropdownliste **Filter** finden Sie auf der Hauptdiagnoseseite, nicht in den Detailansichten.)
   
  ![Externen Code anzeigen](../profiling/media/cpu_use_wt_filterview.png "Show External Code")  
   

@@ -1,9 +1,6 @@
 ---
 title: Extern-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Extern
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895258"
 ---
 # <a name="extern-element"></a>Extern-element
 Das Element "extern" verweist auf alle externen Header (*h*)-Dateien zum Zusammenführen mit der *VSCT* Datei zum Zeitpunkt der Kompilierung. Die Dateien, die zusammengeführt werden muss auf dem Include-Pfad, dem VSCT-Compiler zugewiesen oder mithilfe einer ["Include"-Element](../extensibility/include-element.md). Die Dateien sind möglicherweise andere *VSCT* Dateien oder C++-Headerdateien.  

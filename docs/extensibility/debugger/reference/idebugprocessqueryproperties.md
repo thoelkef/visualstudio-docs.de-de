@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessQueryProperties | Microsoft Docs
-ms.custom: ''
+title: IDebugProcessQueryProperties | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessQueryProperties
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac071afd9f9ce7d45a05408aeec32117776832f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b410e64cd6f57b828947d829461bc9d490776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905490"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Diese Schnittstelle ist eine Erweiterungsschnittstelle implementiert [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Implementierer. Dadurch kann die Implementierung zum Abrufen von Informationen über die Prozess-Debugumgebung.  
+Diese Schnittstelle ist eine Erweiterungsschnittstelle implementiert [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Implementierungen. Dadurch kann die Implementierung zum Abrufen von Informationen in der Debugumgebung-Prozess.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,7 +27,7 @@ IDebugProcessQueryProperties: IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Implementieren Sie diese Schnittstelle zum Abrufen von Informationen auf die ausführungsumgebung der einen Debugprozess.  
+ Implementieren Sie diese Schnittstelle zum Abrufen von Informationen zu die ausführungsumgebung der einen Debugprozess.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugProcessQueryProperties`.  
@@ -38,10 +35,10 @@ IDebugProcessQueryProperties: IUnknown
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Abfragen für einen Eigenschaftswert.|  
-|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Abfragen von Eigenschaftswerten.|  
+|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Abfragen für Eigenschaftswerte.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird selten vollständig implementiert.  
+ Diese Schnittstelle wird nur selten implementiert.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Portpriv.h  
@@ -51,5 +48,5 @@ IDebugProcessQueryProperties: IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -2,19 +2,18 @@
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2cbc7c46f70b46e63723abd6ee0daec1030164da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882759"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -119,7 +118,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
-   1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** >  **Framework und Verweise**.
+   1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise**.
 
         ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
 
@@ -329,8 +328,8 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Walkthrough: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importieren und Exportieren](/cpp/build/importing-and-exporting)

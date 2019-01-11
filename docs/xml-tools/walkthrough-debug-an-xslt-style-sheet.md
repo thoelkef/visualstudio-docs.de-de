@@ -2,7 +2,6 @@
 title: 'Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e1b568f89172701bf31806f693d1d1fd95d64310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902518"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen von XSLT-Stylesheets
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 
 Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung des XSLT-Debuggers veranschaulicht. Zu den Schritten gehören das Anzeigen von Variablen, das Festlegen von Haltepunkten und das schrittweise Ausführen des Codes. Das Stylesheet sucht alle Bücher, deren Preis unter dem durchschnittlichen Buchpreis liegt.
 
@@ -31,13 +30,13 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
 
 ### <a name="to-start-debugging"></a>So starten Sie das Debuggen
 
-1.  Aus der **Datei** Sie im Menü **öffnen**, und klicken Sie auf **Datei**.
+1.  Von der **Datei** Startmenü **öffnen**, und klicken Sie auf **Datei**.
 
 2.  Suchen Sie die *belowAvg.xsl* Datei, und klicken Sie auf **öffnen**.
 
      Im XML-Editor wird das Stylesheet geöffnet.
 
-3.  Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Feld Eigenschaftenfenster des Dokuments.
+3.  Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Eigenschaftenfenster des Dokuments im Feld.
 
 4.  Suchen Sie die *books.xml* Datei, und klicken Sie auf **öffnen**.
 
@@ -45,13 +44,13 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
 
 5.  Mit der rechten Maustaste die `xsl:if` Starttag, zeigen Sie auf **Haltepunkt**, und klicken Sie auf **Haltepunkt einfügen**.
 
-6.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.
+6.  Klicken Sie auf die **XSLT Debuggen** auf der Symbolleiste des XML-Editor.
 
 Hiermit wird der Debug-Vorgang gestartet, und es werden mehrere neue Fenster geöffnet, die vom Debugger verwendet werden.
 
-In zwei Fenstern werden Eingabedokument und Stylesheet angezeigt. Der Debugger zeigt in diesen Fenstern den aktuellen Ausführungszustand an. Der Debugger befindet sich auf die `xsl:if` -Element des Stylesheets und auf dem ersten Buchs Knoten in der *books.xml* Datei.
+In zwei Fenstern werden Eingabedokument und Stylesheet angezeigt. Der Debugger zeigt in diesen Fenstern den aktuellen Ausführungszustand an. Der Debugger befindet sich auf die `xsl:if` -Element des Stylesheets und auf dem ersten Book-Knoten in der *books.xml* Datei.
 
-Die **"lokal"** Fenster werden alle lokalen Variablen und ihre aktuellen Werte angezeigt. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.
+Die **"lokal"** Fenster zeigt alle lokalen Variablen und ihre aktuellen Werte. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.
 
 Die **XSL-Ausgabe** Fenster zeigt die Ausgabe der XSL-Transformation. Dieses Fenster ist unabhängig von der **Ausgabefenster von Visual Studio** Fenster.
 
@@ -59,15 +58,15 @@ Die **XSL-Ausgabe** Fenster zeigt die Ausgabe der XSL-Transformation. Dieses Fen
 
 ### <a name="to-use-the-watch-window"></a>So verwenden Sie das Überwachungsfenster
 
-1.  Aus der **Debuggen** Sie im Menü **Windows**, zeigen Sie auf **Überwachen**, und klicken Sie auf **Überwachen 1**.
+1.  Von der **Debuggen** Startmenü **Windows**, zeigen Sie auf **sehen Sie sich**, und klicken Sie auf **Überwachen 1**.
 
      Dadurch wird die **Überwachen 1** Fenster sichtbar.
 
-2.  Typ `$bookAverage` in der **Namen** Feld, und drücken Sie **EINGABETASTE**.
+2.  Typ `$bookAverage` in die **Namen** Feld, und drücken Sie **EINGABETASTE**.
 
      Der Wert der `$bookAverage`-Variablen wird im Fenster angezeigt.
 
-3.  Typ `self::node()` in der **Namen** Feld, und drücken Sie **EINGABETASTE**.
+3.  Typ `self::node()` in die **Namen** Feld, und drücken Sie **EINGABETASTE**.
 
      `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontextknoten auswertet. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste book-Knoten. Dieser ändert sich im Laufe der Transformation.
 
@@ -75,20 +74,20 @@ Die **XSL-Ausgabe** Fenster zeigt die Ausgabe der XSL-Transformation. Dieses Fen
 
      Dadurch können Sie den Wert des Buchpreises sehen und ihn leicht mit dem `$bookAverage`-Wert vergleichen. Da der Buchpreis weniger als der Durchschnitt beträgt, muss die `xsl:if`-Bedingung erfolgreich sein.
 
-## <a name="step-through-the-code"></a>Schrittweise Ausführung des Codes
+## <a name="step-through-the-code"></a>Den Code schrittweise durchgehen
  Mithilfe des Debuggers können Sie den Code zeilenweise ausführen.
 
 ### <a name="to-step-through-the-code"></a>So führen Sie den Code schrittweise aus
 
 1.  Drücken Sie **F5**, um fortzufahren.
 
-     Da der erste Buchknoten erfüllt die `xsl:if` Bedingung, die Buchknoten hinzugefügt wird die **XSL-Ausgabe** Fenster. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich nun auf dem zweiten Book-Knoten in der *books.xml* Datei.
+     Da der erste Buchknoten erfüllt die `xsl:if` Bedingung, dem-Knoten hinzugefügt wird die **XSL-Ausgabe** Fenster. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich nun auf dem zweiten Book-Knoten in der *books.xml* Datei.
 
      In der **Überwachen 1** Fenster die `self::node()` Wert ändert sich in der zweiten Buchknoten. Durch Auswertung des Werts für das Preiselement können Sie feststellen, dass der Preis über dem Durchschnitt liegt und folglich die `xsl:if`-Bedingung fehlschlägt.
 
 2.  Drücken Sie **F5**, um fortzufahren.
 
-     Da der zweite Buchknoten nicht erfüllt die `xsl:if` Bedingung, die Buchknoten wird nicht hinzugefügt der **XSL-Ausgabe** Fenster. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich jetzt auf die dritte `book` Knoten in der *books.xml* Datei.
+     Da der zweite Buchknoten nicht erfüllt die `xsl:if` Bedingung der Buchknoten wird nicht hinzugefügt der **XSL-Ausgabe** Fenster. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich jetzt am dritten `book` Knoten in der *books.xml* Datei.
 
      In der **Überwachen 1** Fenster die `self::node()` Wert ändert sich in der dritten Buchknoten. Durch Auswertung des Werts für das `price`-Element können Sie ermitteln, dass der Preis unter dem Durchschnitt liegt und damit die `xsl:if`-Bedingung erfüllt ist.
 

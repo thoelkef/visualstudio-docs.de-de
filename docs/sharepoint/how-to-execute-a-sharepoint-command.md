@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Ausführen einer SharePoint-Befehls | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Führen Sie ein SharePoint-Befehl | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953117"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>Gewusst wie: Ausführen einer SharePoint-Befehls
+# <a name="how-to-execute-a-sharepoint-command"></a>Vorgehensweise: Führen Sie einen SharePoint-Befehl
   Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie erstellen eine benutzerdefinierte *SharePoint-Befehls* zum Aufrufen der API. Nachdem Sie den Befehl zu definieren und mit der SharePoint-Tools-Erweiterung bereitgestellt haben, kann die Erweiterung den Befehl in der SharePoint-Serverobjektmodell aufrufen ausführen. Um den Befehl auszuführen, verwenden Sie eine der Methoden der ExecuteCommand ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt.  
   
  Weitere Informationen zum Zweck der SharePoint-Befehle finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -55,12 +52,12 @@ ms.locfileid: "37119225"
     |Der Befehl hat zwei Parameter und ein Wert zurückgegeben.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> Überladung aufrufen, der `Contoso.Commands.UpgradeSolution` -Befehl, der im beschriebene [wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> Überladung aufrufen, die `Contoso.Commands.UpgradeSolution` -Befehl, der im beschriebene [wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
   
- Die `Execute` -Methode in diesem Beispiel ist eine Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> -Methode der der <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> -Schnittstelle in einem benutzerdefinierten Bereitstellungsschritt. Dieser Code im Rahmen eines größeren Beispiels, finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Die `Execute` -Methode in diesem Beispiel ist eine Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> -Methode der der <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> -Schnittstelle in einem benutzerdefinierten Bereitstellungsschritt. Dieser Code im Rahmen eines größeren Beispiels, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
  Beachten Sie die folgenden Details über den Aufruf der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> Methode:  
   
@@ -75,6 +72,5 @@ ms.locfileid: "37119225"
   
 ## <a name="see-also"></a>Siehe auch
  [Rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Gewusst wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  

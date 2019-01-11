@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837968"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur der Verweise auf Assemblys von UnityEngine und UnityEditor für Windows Store-Apps.
 
--   Fehler bei der schrittweise Ausführung im Debugger behoben: schrittweise Ausführung nicht möglich, allgemeine Ausnahme.
+-   Ein Fehler bei der schrittweisen Ausführung des Debuggers wurde behoben: schrittweise Ausführung nicht möglich, allgemeine Ausnahme.
 
 -   Korrektur der Trefferanzahl-Haltepunkte in Visual Studio 2015.
 
@@ -212,7 +211,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   **Unity:** Nachschlagen unsicherer Kennzeichen und benutzerdefinierter Definitionen in RSP-Dateien während der Erstellung der Projektdatei.
 
--   **Benutzeroberfläche:** Visual Studio Tools für Unity-Dialogfeld **Optionen** in Visual Studio hinzugefügt.
+-   **Benutzeroberfläche:** Visual Studio-Tools für Unity-Dialogfeld **Optionen** in Visual Studio hinzugefügt.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -248,11 +247,11 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   **Dokumentation:** Ordnungsgemäße Dokumentationserstellung für die neue Unity-Dokumentation.
 
--   **Projekt:** Verschieben und Umbenennen von Unity-Dateien vom Typ ".meta" bei Bedarf, sogar in Ordnern.
+-   **Projekt:** Verschieben und Umbenennen von Unity-Dateien vom Typ „.meta“ bei Bedarf, sogar in Ordnern.
 
 -   **Assistenten:** Korrektur der Reihenfolge der Parameter der MonoBehavior-Methode beim Generieren von Code.
 
--   **Benutzeroberfläche:** Unterstützung von Visual Studio-Designs für Kontextmenü und Symbole.
+-   **Benutzeroberfläche:** Unterstützung von Visual Studio-Designs für das Kontextmenü und Symbole.
 
 ## <a name="20-preview"></a>2.0 Preview
  Veröffentlichung: 12.11.2014
@@ -597,21 +596,21 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur von Bug UVS-48: Bei der Eingabe doppelter Anführungszeichen wird manchmal ein Fehler erzeugt, durch den alle Funktionen unterbrochen werden (Codevervollständigung, Syntaxhervorhebung usw.).
 
--   Korrektur von Bug UVS-46: Doppelt geöffnete Skriptdatei (UnityScript) beim Klicken auf die Fehlerliste von Visual Studio.
+-   Fehler UVS-46 behoben: Doppelt geöffnete Skriptdatei (UnityScript) beim Klicken auf die Fehlerliste von Visual Studio.
 
--   Korrektur von Bug UVS-42: Unity-Konnektivitätslogo in der Statusleiste verarbeitet keine Mausereignisse in VS 2012.
+-   Fehler UVS-42 behoben: Unity-Konnektivitätslogo in der Statusleiste verarbeitet keine Mausereignisse in VS 2012.
 
--   Korrektur von Bug UVS-44: STRG+UMSCHALT+Q in VS 2012 für Quick MonoBehaviours nicht verfügbar.
+-   Fehler UVS-44 behoben: STRG+UMSCHALT+Q in VS 2012 für Quick MonoBehaviours nicht verfügbar.
 
--   Korrektur von Bug UVS-40: Im Unity-Projekt-Explorer ausgewählte Elemente sind unlesbar, wenn das Fenster im „dunklen“ VS2012-Design inaktiv ist.
+-   Fehler UVS-40 behoben: Im Unity-Projekt-Explorer ausgewählte Elemente sind unlesbar, wenn das Fenster im „dunklen“ VS2012-Design inaktiv ist.
 
--   Korrektur von Bug UVS-39: Fehler beim Ausstellen von Token für Escapezeichenfolgen.
+-   Fehler UVS-39 behoben: Fehler beim Ausstellen von Token für Escapezeichenfolgen.
 
--   Korrektur von Bug UVS-35: Aufrufen von „ToString“ für Objekte beim Untersuchen von Variablen.
+-   Fehler UVS-35 behoben: Aufrufen von „ToString“ für Objekte beim Untersuchen von Variablen.
 
--   Korrektur von Bug UVS-27: Inkonsistenz beim Fenster „Gehe zu Symbol“ mit „dunklem“ Design in VS2012.
+-   Fehler UVS-27 behoben: Inkonsistenz beim Fenster „Gehe zu Symbol“ mit „dunklem“ Design in VS2012.
 
--   Korrektur von Bug UVS-11: Lokale Variablen in Co-Routinen.
+-   Fehler UVS-11 behoben: Lokale Elemente in Coroutinen.
 
 ## <a name="11--beta-release"></a>1.1 – Betaversion
  Veröffentlichung: 09.10.2014
@@ -717,9 +716,9 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   Korrektur, wie Typen in geladenen Assemblys für die Ausdrucksauswertung durchsucht werden.
 
--   Korrektur von Bug UVS-21: Auswertung der Zuweisung zu Unity-Objekten hat keine Auswirkung.
+-   Fehler UVS-21 behoben: Auswertung der Zuweisung zu Unity-Objekten hat keine Auswirkung.
 
--   Korrektur von Bug UVS-21: Ungültiger Zeiger beim Auswerten eines Methodenaufrufs in der Unity-Math-API.
+-   Fehler UVS-21 behoben: Ungültiger Zeiger beim Auswerten eines Methodenaufrufs in der Unity-Math-API.
 
 ## <a name="108"></a>1.0.8
  Veröffentlichung: 26.09.2012
@@ -818,4 +817,3 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="10--initial-release"></a>1.0 – Erstveröffentlichung
  Veröffentlichung: 22.08.2012
-

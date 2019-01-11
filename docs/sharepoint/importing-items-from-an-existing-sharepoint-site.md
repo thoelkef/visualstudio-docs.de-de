@@ -1,17 +1,12 @@
 ---
 title: Importieren von Elementen aus einer vorhandenen SharePoint-Website | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918153"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.  
@@ -109,7 +104,7 @@ ms.locfileid: "49832105"
  Die meisten Elemente in SharePoint-Projektmappen haben mindestens ein abhängiges Element. Listeninstanzen sind z. B. von Inhaltstypen abhängig, und Inhaltstypen sind von Feldern abhängig. Nachdem Sie eine SharePoint-Projektmappe importiert haben, gibt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wenn Sie ein Element, nicht aber dessen abhängige Elemente in der Projektmappe gelöscht haben, erst dann eine Benachrichtigungen zu Verweisproblemen aus, wenn Sie versuchen, die Projektmappe bereitzustellen. Wenn eine importierte Projektmappe beispielsweise eine Listeninstanz beinhaltet, die von einem Inhaltstyp abhängt, und Sie diesen Inhaltstyp löschen, kann bei der Bereitstellung ein Fehler auftreten. Der Fehler tritt auf, wenn das abhängige Element auf dem SharePoint-Server nicht vorhanden ist. Auf ähnliche Weise, wenn ein gelöschtes Element einen zugehörigen Eigenschaftenbehälter hat, löschen Sie diese eigenschaftenbehältereinträge aus der **PropertyBags** *"Elements.xml"* Datei. Daher empfiehlt es sich, wenn Sie Elemente aus einer importierten Projektmappe löschen und dann Bereitstellungsfehler auftreten, dass Sie überprüfen, ob es abhängige Elementen gibt, die ebenfalls gelöscht werden müssen.  
   
 ## <a name="restore-missing-feature-attributes"></a>Wiederherstellen von fehlenden Funktionsattributen
- Wenn Projektmappen importiert werden, werden einige optionale Funktionsattribute (Featureattribute) aus dem importierten Funktionsmanifest nicht übernommen. Wenn Sie diese Attribute in der neuen Funktionsdatei wiederherstellen möchten, ermitteln Sie die fehlenden Attribute, durch die ursprüngliche Funktionsdatei mit dem neuen Funktionsmanifest vergleichen, und befolgen Sie die Anweisungen im Thema [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Wenn Projektmappen importiert werden, werden einige optionale Funktionsattribute (Featureattribute) aus dem importierten Funktionsmanifest nicht übernommen. Wenn Sie diese Attribute in der neuen Funktionsdatei wiederherstellen möchten, ermitteln Sie die fehlenden Attribute, durch die ursprüngliche Funktionsdatei mit dem neuen Funktionsmanifest vergleichen, und befolgen Sie die Anweisungen im Thema [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Erkennung von Bereitstellungskonflikten wird für integrierte Listeninstanzen nicht ausgeführt.
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt keine Erkennung von Bereitstellungskonflikten für integrierte Listeninstanzen (dies sind die Standardlisteninstanzen, die mit SharePoint geliefert werden) aus. Die Konflikterkennung wird nicht ausgeführt, damit verhindert wird, dass die integrierten Listeninstanzen in SharePoint überschrieben werden. Die integrierten Listeninstanzen werden weiterhin bereitgestellt bzw. aktualisiert, werden aber niemals gelöscht oder überschrieben. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Problembehandlung bei SharePoint-Packen und-Bereitstellen](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -142,4 +137,4 @@ ms.locfileid: "49832105"
  [Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Richtlinien für das Importieren von wiederverwendbaren workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Gewusst wie: hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

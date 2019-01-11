@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Microsoft Docs
+title: IEnumDebugApplicationNodes::Next | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61bc2b677f12106c9bd8e6c8bec57ae1f7a09605
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07bdd008887676ef2f4cba7e1a67d96e1344f56a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727830"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091129"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
-Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                    celt,  
    IDebugApplicationNode**  pprddp,  
@@ -40,10 +40,10 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der Segmente abgerufen werden soll.  
+ [in] Die Anzahl von Segmenten abgerufen werden soll.  
   
  `pprddp`  
- [out] Gibt ein Array von `IDebugApplicationNode` Schnittstellen, die die abgerufenen Segmente darstellt.  
+ [out] Gibt ein Array von `IDebugApplicationNode` Schnittstellen, die die Segmente, die abgerufen werden darstellt.  
   
  `pceltFetched`  
  [out] Die tatsächliche Anzahl von Segmenten, die vom Enumerator abgerufen werden soll.  
@@ -56,7 +56,7 @@ HRESULT Next(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.  
+ Diese Methode ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugApplicationNodes-Schnittstelle](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

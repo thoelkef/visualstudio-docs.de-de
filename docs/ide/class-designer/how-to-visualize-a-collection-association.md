@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)'
+title: 'Vorgehensweise: Visualisieren einer Collectionzuordnung (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -17,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925393"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Vorgehensweise: Darstellen einer Auflistungszuordnung im Klassen-Designer
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Vorgehensweise: Visualisieren einer Collectionzuordnung im Klassen-Designer
 
 Eigenschaften und Felder, die Auflistungen eines anderen Typs darstellen, können als Auflistungszuordnung im Klassendiagramm angezeigt werden. Anders als bei einer regulären Zuordnung, bei der ein Feld oder eine Eigenschaft als eine Zeile dargestellt wird, welche die Eigentümerklasse mit dem Feldtyp verknüpft, wird eine Auflistungszuordnung als eine Zeile dargestellt, welche die Eigentümerklasse mit dem gesammelten Typ verknüpft.
 
@@ -40,6 +39,5 @@ Die Eigenschaft oder das Feld wird als Zuordnungslinie dargestellt, die mit dem 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen](how-to-create-associations-between-types.md)
+- [Vorgehensweise: How to: Create associations between types (Vorgehensweise: Erstellen von Zuordnungen zwischen Typen)](how-to-create-associations-between-types.md)
 - [Entwerfen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
-- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)

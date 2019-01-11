@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: GetStackRange-Methode | Microsoft Docs'
+title: 'Ijsdebugframe:: GetStackRange-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727870"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090284"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange-Methode
 Gibt den Bereich der absoluten Adresse des logischen JavaScript-Stapelrahmens zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -45,7 +45,7 @@ HRESULT GetStackRange(
 ## <a name="return-value"></a>Rückgabewert  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ist für die Zusammenführung überlappender Stapelüberwachungen nützlich, die aus mehreren Laufzeiten erfasst wird. Start und Ende Stapelzeiger können mehrere Stapelrahmen für physische Computer (für interpretierte Rahmen für die JavaScript-Laufzeit) umfassen. Start > beenden, wie der Stapel von hoch zu niedrig Adresse vergrößert.  
+ Diese Methode ist für die Zusammenführung überlappender Stapelüberwachungen nützlich, die aus mehreren Laufzeiten erfasst wird. Anfang können End Stapelzeiger mehrere Stapelrahmen für physische Computer (für interpretierte JavaScript-Laufzeitrahmen) umfassen. Start > end wie der Stapel von hohen zu niedrigen Adressen zunimmt.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** "jscript9diag.h"  

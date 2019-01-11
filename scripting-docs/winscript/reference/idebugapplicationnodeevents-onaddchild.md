@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAddChild | Microsoft Docs
+title: IDebugApplicationNodeEvents::onAddChild | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df872cd14b6d7fcd455371d1601b2a4082fb39a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a211989202c0d5b5c0d6c99fe2d6fbb00978787
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726150"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088685"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
 Behandelt das Ereignis, wenn ein Debug-Anwendungsobjekt Knoten ein untergeordneter Knoten hinzugefügt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT onAddChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,7 +38,7 @@ HRESULT onAddChild(
   
 #### <a name="parameters"></a>Parameter  
  `prddpChild`  
- [in] Das untergeordnete Element für das Debuggen Anwendungsknoten, die hinzugefügt wurde.  
+ [in] Das untergeordnete Element Debuggen Knoten für die Anwendung, die hinzugefügt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -50,7 +50,7 @@ HRESULT onAddChild(
 ## <a name="remarks"></a>Hinweise  
  Diese Methode behandelt das Ereignis, wenn ein Debug-Anwendungsobjekt Knoten ein untergeordneter Knoten hinzugefügt wird.  
   
- Implementierer der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

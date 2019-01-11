@@ -1,8 +1,6 @@
 ---
-title: Enumerationen und Strukturen | Microsoft Docs
-ms.custom: ''
+title: Enumerationen und Strukturen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,24 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988082"
 ---
 # <a name="enumerations-and-structures"></a>Enumerationen und Strukturen
-Dies sind die Enumerationen und Strukturen, die durch das DIA SDK verwendet.  
+Dies sind die Enumerationen und Strukturen, die von der DIA-SDK verwendet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
 ## <a name="enumerations"></a>Enumerationen  
  [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)  
- Gibt die grundlegende Symboltyp.  
+ Gibt an, die grundlegende Symboltyp.  
   
  [CV_access_e-Enumeration](../../debugger/debug-interface-access/cv-access-e.md)  
- Gibt den Bereich der Sichtbarkeit (Zugriffsebene) von Memberfunktionen und-Variablen.  
+ Gibt den Bereich, Sichtbarkeit (Zugriffsebene) von Memberfunktionen und Variablen.  
   
  [CV_call_e-Enumeration](../../debugger/debug-interface-access/cv-call-e.md)  
  Gibt die Aufrufkonvention für eine Funktion an.  
@@ -46,7 +44,7 @@ Dies sind die Enumerationen und Strukturen, die durch das DIA SDK verwendet.
  Gibt den Zielprozessor.  
   
  [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)  
- Gibt eine Ziel-Register.  
+ Gibt an, ein Ziel-Register.  
   
  [DataKind-Enumeration](../../debugger/debug-interface-access/datakind.md)  
  Gibt an, die bestimmten Bereich eines Datenwerts.  
@@ -66,22 +64,22 @@ Dies sind die Enumerationen und Strukturen, die durch das DIA SDK verwendet.
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)  
  Gibt den Typ des Symbols.  
   
- [THUNK_ORDINAL-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md)  
- Kennzeichnet Thunk-Typen.  
+ [Thunk_Ordinal-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md)  
+ Legt fest, Thunk-Typen.  
   
  [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md)  
- Beschreibt die unterschiedlichen den benutzerdefinierten Typ (UDT).  
+ Beschreibt die verschiedenen benutzerdefinierten Typ (UDT) an.  
   
 ## <a name="structures"></a>Strukturen  
- [DiaAddressMapEntry-Struktur](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- Beschreibt einen Eintrag in einer-Adresszuordnung.  
+ [DiaAddressMapEntry Structure](../../debugger/debug-interface-access/diaaddressmapentry.md)  
+ Beschreibt einen Eintrag in einer-Adresszuordnung an.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Gibt an, durch das DIA SDK bereitgestellten Schnittstellen.  
+ Gibt an, die Schnittstellen, die vom DIA-SDK bereitgestellt werden.  
   
  [Konstanten (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Gibt die Konstanten, die in DIA-SDK verfügbar sind.  
+ Gibt Konstanten an, die in die DIA-SDK verfügbar sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+ [Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

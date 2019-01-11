@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831431"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803213"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -30,7 +30,7 @@ Es gibt einige Gründe dafür, warum bestimmte Produkte möglicherweise für die
 - **Das Produkt ist frei verfügbar.** Einige Tools, SDKs, DDKs und Service Packs sind über das [Microsoft Download Center](https://www.microsoft.com/download) öffentlich verfügbar. Einige dieser Produkte werden möglicherweise nicht in den Downloads veröffentlicht.
 - **Das Produkt wurde noch nicht veröffentlicht.**  Viele Vorabversionen (Betaversionen) und Release Candidates stehen über die Downloadseite für Abonnenten zur Verfügung. Möglicherweise sind jedoch nicht alle Betaversionen enthalten. Beispielsweise kann für einige Betaversionen eine besondere Registrierung oder Berechtigung erforderlich sein. Weitere Informationen zu offenen technischen Betaprogrammen finden Sie unter [Microsoft Connect](http://connect.microsoft.com/).
 - **Das Produkt ist in Ihrem Land nicht verfügbar.** Einige Microsoft-Produkte sind aufgrund von regionalen Einschränkungen nicht verfügbar.
-- **Redundante Software.** In Abonnements, die Office enthalten, sind bestimmte Office-Suites, eigenständige Office-Downloads und Product Keys nicht mehr verfügbar. Downloads und Product Keys sind für die höchste zugehörige Office-Suite derselben Version verfügbar.  Wenn Sie z.B. nach PowerPoint 2010 suchen, gibt die Suche keine Ergebnisse zurück.  Allerdings können Sie nach Office 2010 suchen (die Office-Suite, die PowerPoint 2010 enthält) und die Suite herunterladen.
+- **Redundante Software.** In Abonnements, die Office enthalten, sind bestimmte Office-Suites, eigenständige Office-Downloads und Product Keys nicht mehr verfügbar. Downloads und Product Keys sind für die höchste zugehörige Office-Suite derselben Version verfügbar.  Wenn Sie beispielsweise nach PowerPoint 2010 suchen, gibt die Suche keine Ergebnisse zurück.  Allerdings können Sie nach Office 2010 suchen (die Office-Suite, die PowerPoint 2010 enthält) und die Suite herunterladen.
 
 ## <a name="what-do-i-get"></a>Meine Vorteile
 Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie viele Downloads Ihnen zur Verfügung gestellt werden und um welche Programme es sich dabei handelt.  Für Abonnenten mit Standardabonnements für Visual Studio Enterprise sind möglicherweise andere Downloads verfügbar als für Abonnenten, die Ihre Abonnements über ein Microsoft Partner Network- oder ein BizSpark-Programm-Abonnement erhalten.  Laden Sie die Liste [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) (Produkte nach Vorteilsstufen) herunter, um mehr über die Downloads zu erfahren, die für die jeweilige Abonnementstufe verfügbar sind.

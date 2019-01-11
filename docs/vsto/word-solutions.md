@@ -1,9 +1,6 @@
 ---
 title: Word-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b443cd985910cbb6e81ce79016193623bdeb2dd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986751"
 ---
 # <a name="word-solutions"></a>Word-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Word zu erstellen. Mit diesen Projektmappen können Sie Word automatisieren, Word-Features erweitern und die Word-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokumentebene und VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -92,15 +89,15 @@ ms.locfileid: "35672374"
 |Aufgabe|Weitere Informationen|  
 |----------|--------------------------|  
 |Anpassen des Menübands|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
-|Hinzufügen von Windows Forms-Steuerelementen oder erweiterten Word-Steuerelemente zum angepassten Dokument (für eine Anpassung auf Dokumentebene) oder zu einem beliebigen geöffneten Dokument (für ein VSTO-Add-In).|[Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Gewusst wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Gewusst wie: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|Hinzufügen von Windows Forms-Steuerelementen oder erweiterten Word-Steuerelemente zum angepassten Dokument (für eine Anpassung auf Dokumentebene) oder zu einem beliebigen geöffneten Dokument (für ein VSTO-Add-In).|[Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Optionen für Anpassungen auf Dokumentebene  
  In der folgenden Tabelle sind Anpassungsoptionen aufgeführt, die nur für Anpassungen auf Dokumentebene zur Verfügung stehen.  
   
 |Aufgabe|Weitere Informationen|  
 |----------|--------------------------|  
-|Hinzufügen eines Aktionsbereichs zum Dokument|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)<br /><br /> [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Fügen Sie der Dokumentoberfläche erweiterte XMLNode- und XMLNodes-Steuerelemente hinzu.|[Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
+|Hinzufügen eines Aktionsbereichs zum Dokument|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)<br /><br /> [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Fügen Sie der Dokumentoberfläche erweiterte XMLNode- und XMLNodes-Steuerelemente hinzu.|[Vorgehensweise: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>Optionen für VSTO-Add-Ins  
  In der folgenden Tabelle werden Anpassungsoptionen aufgeführt, die nur für VSTO-Add-Ins zur Verfügung stehen.  
@@ -120,5 +117,3 @@ ms.locfileid: "35672374"
 |[Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Veranschaulicht die Erstellung eines grundlegenden VSTO-Add-Ins für Word.|  
 |[Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Veranschaulicht, wie Sie einem Dokument zur Laufzeit mithilfe eines VSTO-Add-Ins eine Windows Forms-Schaltfläche und ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzufügen können.|  
 |[Word 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199020)|Hier finden Sie Links zu Artikeln und Referenzdokumentation zur Entwicklung von Word-Projektmappen (nicht spezifisch für die Office-Entwicklung mit Visual Studio).|  
-  
-  

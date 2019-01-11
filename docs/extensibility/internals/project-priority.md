@@ -1,9 +1,6 @@
 ---
-title: Priorität Projekt | Microsoft Docs
-ms.custom: ''
+title: Projekt Priorität | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873894"
 ---
 # <a name="project-priority"></a>Projektpriorität
-Ein Projektelement ist in der Regel Mitglied nur ein Projekt in der Projektmappe. Aus diesem Grund kann die IDE einfach bestimmen, welches Projekt verwendet wird, um das Element zu öffnen. Wenn ein Element Mitglied von mehr als ein Projekt ist, verwendet die IDE ein Prioritätsschema jedoch um das beste Projekt für das Öffnen des Elements zu ermitteln.  
+Ein Projektelement ist in der Regel ein Element nur ein Projekt in der Projektmappe. Aus diesem Grund kann die IDE einfach bestimmen, welches Projekt verwendet wird, um das Element zu öffnen. Wenn ein Element ein Mitglied von mehr als ein Projekt ist, verwendet die IDE ein Prioritätsschema jedoch um das beste-Projekt für das Öffnen des Elements zu bestimmen.  
   
  Die folgende Liste enthält das Schema der Projekt-Priorität:  
   
--   Ruft die IDE die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> Methode für jedes Projekt in der Projektmappe, um zu bestimmen, ob das Dokument ein Mitglied dieses Projekt ist.  
+-   Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> Methode für jedes Projekt in der Lösung zu bestimmen, ob das Dokument ein Mitglied dieses Projekts ist.  
   
--   Das Dokument ein Element des Projekts ist, antwortet das Projekt mit einer Priorität, dass das Projekt nach seiner Verarbeitung dieses Dokuments weist. Z. B. eine Sprachprojekt mit hoher Priorität für die Sprache Quelldateien reagiert jedoch antwortet mit einer niedrigeren Priorität für ein nicht erkannter Dateityp, der nicht als Teil seiner Buildprozesses verwendet wird.  
+-   Wenn das Dokument ein Member des Projekts ist, antwortet das Projekt mit einer Priorität, dass das Projekt entsprechend die Behandlung dieses Dokument weist. Beispielsweise ein Sprachprojekt mit hoher Priorität für seine Sprache Quelldateien reagiert jedoch antwortet mit einer niedrigeren Priorität für einen unbekannten Dateityp, der als Teil der Buildprozess nicht verwendet wird.  
   
--   Projekte, die benutzerdefinierte, projektspezifische Editoren oder Designer für ein Dokument Bereitstellen erhalten außerdem einen hohen Stellenwert.  
+-   Projekte, die benutzerdefinierten, projektspezifische Editoren oder Designer für ein Dokument bieten erhalten eine hohe Priorität.  
   
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration enthält das Dokument Priority-Werte.  
+-   Die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration stellt Werte für die Failoverpriorität des Dokuments bereit.  
   
--   Das Projekt, das angibt, die höchste Priorität erhält den Kontext, um das Dokument zu öffnen. Wenn zwei Projekte gleich Priority-Werte zurückgegeben, wird das aktive Projekt bevorzugt. Wenn kein Projekt in der Projektmappe antwortet, das Dokument geöffnet werden kann, setzt die IDE das Dokument im Projekt verschiedene Dateien. Weitere Informationen finden Sie unter [sonstige Dateiprojekt](../../extensibility/internals/miscellaneous-files-project.md).  
+-   Das Projekt, das angibt, die höchste Priorität erhält den Kontext, der das Dokument zu öffnen. Wenn zwei Projekte gleich Priority-Werte zurückgeben, wird das aktive Projekt bevorzugt. Wenn kein Projekt in der Projektmappe antwortet, dass das Dokument geöffnet werden kann, fügt die IDE das Dokument im Projekt verschiedene Dateien. Weitere Informationen finden Sie unter [Projekt "Sonstige Dateien"](../../extensibility/internals/miscellaneous-files-project.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Projekt verschiedene Dateien](../../extensibility/internals/miscellaneous-files-project.md)   
+ [Projekt "Sonstige Dateien"](../../extensibility/internals/miscellaneous-files-project.md)   
  [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)

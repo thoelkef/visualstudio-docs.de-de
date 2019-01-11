@@ -1,9 +1,6 @@
 ---
-title: IDebugSourceServerModule | Microsoft Docs
-ms.custom: ''
+title: IDebugSourceServerModule | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSourceServerModule interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5210b819d78bcec1cac5179ac679cf201279e9fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcdeac3d68b2b26f0613dc92b473a17ce2ffd122
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945794"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Stellt die Quellinformationen für Server, die in einer PDB-Datei enthalten ist.  
+Stellt die Source Server-Informationen, die in einer PDB-Datei enthalten ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,14 +27,14 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird von Debugmodule implementiert und durch den Debugger-Benutzeroberfläche verwendet.  
+ Diese Schnittstelle wird vom Debugger-Engines implementiert und genutzt werden, indem Sie die Debugger-Benutzeroberfläche.  
   
 ## <a name="methods"></a>Methoden  
  Die folgende Tabelle zeigt die Methoden der `IDebugSourceServerModule`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Ruft ein Array von Serverinformationen Quelle ab.|  
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Ruft ein Array von Quellserverinformationen ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  

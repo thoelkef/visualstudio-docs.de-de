@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c94328600c2da262aed3c111b660fc4cd25be5d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 86914f9f27aff5bc965ce2fde70d4f6cc9396623
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845399"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Vorgehensweise: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten
   In diesem Beispiel erstellt einen neuen Kontakt und gibt Daten in den neuen Kontakt.  
@@ -36,5 +33,3 @@ ms.locfileid: "53648399"
  [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)   
  [Vorgehensweise: Programmgesteuertes Zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)   
  [Vorgehensweise: Suchen Sie programmgesteuert eine e-Mail-Adresse in den Kontakten](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
-  
-  

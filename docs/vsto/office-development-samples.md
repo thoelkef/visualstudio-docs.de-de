@@ -1,9 +1,6 @@
 ---
 title: Office-Entwicklungsbeispiele
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964532"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungsbeispiele
   Visual Studio enthält Beispielanwendungen, die veranschaulichen, wie die Microsoft Office Developer Tools verwendet werden, um Office-Projektmappen zu erstellen. Im Code dieser Beispiele werden die Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen veranschaulicht.  
   
- Die aktuellen Beispiele finden Sie unter [Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
+ Die aktuellen Beispiele finden Sie unter [Codebeispiele für Entwickler: Aus Code lernen](http://go.microsoft.com/fwlink/?LinkID=248199) auf der Microsoft-Website.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35672744"
 |Beispiel für VBA- und VSTO-Interoperabilität|Veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Excel in VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird.<br /><br /> Das Beispiel steht nur online zur Verfügung.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Codebeispiele für Entwickler: Lernen durch Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Codebeispiele für Entwickler: Lernen durch code](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)  
-  
-  

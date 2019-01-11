@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput | Microsoft Docs
+title: IDebugApplication::DebugOutput | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725460"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095406"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-Bewirkt, dass die angegebene Zeichenfolge, die von der Debugger-integrierten Entwicklungsumgebung (IDE) angezeigt werden.  
+Bewirkt, dass die angegebene Zeichenfolge von der Debugger-integrierten Entwicklungsumgebung (IDE) angezeigt werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT DebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -48,7 +48,7 @@ HRESULT DebugOutput(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht eine Sprachmodul sprachspezifische Debugunterstützung Ausgabe implementieren. Die Zeichenfolge wird in der Regel im Ausgabefenster des Debuggers angezeigt.  
+ Diese Methode ermöglicht eine Sprach-Engine, um sprachspezifische Debugunterstützung Ausgabe implementieren. Die Zeichenfolge wird in der Regel im Ausgabefenster des Debuggers angezeigt.  
   
  Diese Methode bewirkt, dass `IApplicationDebugger::onDebugOutput` aufgerufen werden.  
   

@@ -1,9 +1,6 @@
 ---
 title: Layout für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898751"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), die der Unthemed sind, führen Sie Standard-Dialogfelder [Windows Desktop Dialogfeld Layout Prinzipien](/windows/desktop/uxguide/win-dialog-box). Wie Visual Studio verschoben wird, um die Benutzeroberfläche zu aktualisieren, müssen einige der bekannteren Dialoge ein neues Design, das sie als Produkt – beim Definieren von Umgebungen herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Design Darstellung aufweisen.  
@@ -38,11 +35,11 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
   
  ![Dialogfeldabstände für Beschriftungen über Steuerelementen](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-A_UtilitySpacingAbove")  
   
- **Abbildung 08.01 a: Abstand Richtlinien für das Hilfsprogramm-Dialogfelder mit Beschriftungen über Steuerelementen**  
+ **Abbildung 08.01-a: Abstand von Richtlinien für das Hilfsprogramm-Dialogfelder mit Beschriftungen über Steuerelementen**  
   
  ![Dialogfeldabstände für Beschriftungen links neben Steuerelementen](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-B_UtilitySpacingLeft")  
   
- **Abbildung 08.01-b: Der Abstand Richtlinien für das Hilfsprogramm Dialogfelder mit Bezeichnungen auf der linken Seite von Steuerelementen**  
+ **Abbildung 08.01-b: Abstand von Richtlinien für das Hilfsprogramm Dialogfelder mit Bezeichnungen auf der linken Seite von Steuerelementen**  
   
 ### <a name="layout-details"></a>Layoutdetails  
   
@@ -85,14 +82,14 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
   
  ![Abstand zwischen Steuerelementen empfohlen](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-D_ControlDistance")  
   
- **Abbildung 08.01-d: Empfehlungen für Abstand zwischen Steuerelementen**  
+ **Abbildung 08.01-d: Empfehlungen für den Abstand zwischen Steuerelementen**  
   
 #### <a name="control-indentation"></a>Einzug des Steuerelements  
  Bei Steuerelementen geschachtelten richten Sie innere Steuerelemente horizontal mit dem linken Rand des Steuerelements oben in der Regel die Bezeichnung aus.  
   
  ![Ausrichtung des Steuerelements verschachtelt](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801-E_ControlAlign")  
   
- **Abbildung 08.01-"e:" Der Ausrichtung der geschachtelte Steuerelemente**  
+ **Abbildung 08.01-e: Ausrichtung von verschachtelten Steuerelementen**  
   
 #### <a name="control-width"></a>Breite des Steuerelements  
  Die Breite eines Textfelds oder andere Steuerelemente mit ähnlichen sollte nicht länger als die durchschnittliche Eingabe für das Feld sein. Die durchschnittliche englischen wörtertrennung ist fünf Zeichen. Beispielsweise muss ein Textfeld, das einen lange Pfadnamen erfordert, solange die horizontalen Layout ermöglicht, während Sie eine Dropdownliste aus, for Plattformnamen nur eine Länge sein sollte, die für den längsten Eintrag ermöglicht.  
@@ -114,7 +111,7 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
   
   ![Horizontale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-F_HorizOKCan")  
   
-  **Abbildung 08.01-f: Vertikale innere Schaltflächen mit horizontalen OK/Abbrechen**  
+  **Abbildung 08.01-f: Vertikale inneren Schaltflächen mit horizontalen OK/Abbrechen**  
   
   ![Vertikale OK und Abbrechen Schaltflächen](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-G_VertOKCan")  
   
@@ -147,15 +144,15 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
   
  ![Dialogfeldabmessungen](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-I_ThemedDialogDimensions")  
   
- **Abbildung 08.01-i: Design Dialogfeld - Dimensionen**  
+ **Abbildung 08.01-i: Dialogfeld "Design" - Dimensionen**  
   
  ![Dialogfeldschriftarten](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-J_ThemedDialogFonts")  
   
- **Abbildung 08.01-j: Design Dialogfeld - Schriftarten**  
+ **Abbildung 08.01-j: Dialogfeld "Design" - Schriftarten**  
   
  ![Dialogfeldfarben](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-K_ThemedDialogColors")  
   
- **Abbildung 08.01-k: Design Dialogfeld - Farben**  
+ **Abbildung 08.01-k: Dialogfeld "Design" - Farben**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anwendungsmuster für Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

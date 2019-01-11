@@ -1,9 +1,6 @@
 ---
 title: Hinzufügen von Befehlszeilenschaltern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3a3dbe187407380c338488b0006b186d6875bfbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827506"
 ---
 # <a name="add-command-line-switches"></a>Hinzufügen von Befehlszeilenschaltern
 Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei *devenv.exe* ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die zugehörigen Eigenschaften deklariert. In diesem Beispiel wird der Schalter MySwitch für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und das VSPackage, die automatisch geladen.  

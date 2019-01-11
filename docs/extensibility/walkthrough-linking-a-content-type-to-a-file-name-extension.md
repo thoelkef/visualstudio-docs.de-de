@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926186"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung
 Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamenerweiterung, mit dem Managed Extensibility Framework (MEF) Erweiterungen des Editors. In einigen Fällen ist die Erweiterung bereits von einem Sprachdienst definiert. Aber für die Verwendung mit MEF muss weiterhin die Verknüpfung an einen Inhaltstyp.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts  
@@ -93,7 +90,7 @@ Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamen
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Hinzufügen des Inhaltstyps mit einem Editor-export  
   
-1.  Erstellen einer Editor-Erweiterungs. Sie können z. B. die Rand Symbol-Erweiterung, die in beschriebenen [Exemplarische Vorgehensweise: erstellen eine randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Erstellen einer Editor-Erweiterungs. Sie können z. B. die Rand Symbol-Erweiterung, die in beschriebenen [Exemplarische Vorgehensweise: Erstellen eine randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Fügen Sie der Klasse, die Sie in diesem Verfahren definiert.  
   

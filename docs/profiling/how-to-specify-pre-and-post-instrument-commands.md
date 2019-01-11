@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
@@ -16,36 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c80e16b3566fd0687b74c5a43363864038f88cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861461"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Vorgehensweise: Festlegen von Präinstrumentierungs- und Postinstrumentrierungsbefehlen
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
 
 Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.
 
 Sie können Befehle für alle instrumentierten Binärdateien in der Profilerstellung oder für einzelne Binärdateien angeben. Sie können jedoch nur jeweils ein Präinstrumentationsbefehl vor dem Ausführen und nur ein Postinstrumentationsbefehl zum Ausführen nach dem Instrumentationsprozess angeben. Sie können keine Befehle für jeweils alle und für einzelne Binärdateien angeben. Wenn Sie Befehle für alle Binärdateien angeben, werden die Befehle vor oder nach der Instrumentation jeder Binärdatei in der Sitzung ausgeführt.
 
-Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ausführen und von der Zielplattform der profilierten Anwendung.
+Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ausführen und von der Zielplattform der Anwendung, für die ein Profil erstellt wird.
 
- **32-Bit-Computer**
-
-Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools *Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
-
-**64-Bit-Computer**
-
-Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest:
-
-- Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
-
-     *Laufwerk\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
-
-     *Laufwerk\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an
 

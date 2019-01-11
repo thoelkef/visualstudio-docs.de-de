@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729860"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089075"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Wird eine Anwendung, die derzeit eines Haltepunkts wird fortgesetzt.  
+Wird eine Anwendung, die derzeit an einem Haltepunkt wird fortgesetzt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,13 +40,13 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parameter  
  `prptFocus`  
- [in] Für die schrittweise Ausführung Modi, den Thread also im Modus für die schrittweise Ausführung beeinflusst werden.  
+ [in] Für die schrittweise Ausführung Modi, dem Thread handelt es sich im schrittweisen Modus betroffen sind.  
   
  `bra`  
- [in] Die auszuführende Aktion, durch das Fortsetzen der Anwendung.  
+ [in] Die auszuführende Aktion, durch das Fortsetzen der Anwendungs.  
   
  `era`  
- [in] Die Aktion, die in die Groß-/Kleinschreibung zu nutzen, die die Anwendung aufgrund eines Fehlers angehalten.  
+ [in] Die Aktion, die in die Groß-/Kleinschreibung zu nutzen, die die Anwendung aufgrund eines Fehlers beendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -56,9 +56,9 @@ HRESULT ResumeFromBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird eine Anwendung, die derzeit eines Haltepunkts wird fortgesetzt.  
+ Diese Methode wird eine Anwendung, die derzeit an einem Haltepunkt wird fortgesetzt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTIONS-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [BREAKRESUMEACTION-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION-Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

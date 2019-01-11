@@ -1,8 +1,6 @@
 ---
 title: Das Fenster „Leistungs-Explorer“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
@@ -14,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869465"
 ---
 # <a name="performance-explorer-window"></a>Das Fenster "Leistungs-Explorer"
 
-Im Fenster **Leistungs-Explorer** in der integrierten Visual Studio-Entwicklungsumgebung (IDE) können Sie mit den Visual Studio-Profilerstellungstools Leistungssitzungen konfigurieren und starten.
+Im Fenster **Leistungs-Explorer** in der integrierten Visual Studio-Entwicklungsumgebung (IDE) können Sie mit den Visual Studio-Profilerstellungstools Leistungssitzungen konfigurieren und starten. Führen Sie die Anweisungen in der [Einführung in CPU-Sampling](../profiling/beginners-guide-to-cpu-sampling.md) aus, wenn Sie das Fenster öffnen müssen.
 
 ## <a name="performance-explorer-toolbar"></a>Die Symbolleiste „Leistungs-Explorer“
 

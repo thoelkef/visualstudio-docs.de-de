@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes suchen Sie nach Text in Arbeitsblattbereichen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826126"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Vorgehensweise: Programmgesteuertes suchen Sie nach Text in Arbeitsblattbereichen
   Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht es Ihnen, um nach Text innerhalb des Bereichs zu suchen. Dieser Text kann auch sein, eine der Fehlerzeichenfolgen, die in einer Arbeitsblattzelle, wie z. B. auftreten können `#NULL!` oder `#VALUE!`. Weitere Informationen zu den Fehlerzeichenfolgen finden Sie unter [Zelle Fehlerwerte](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671962"
 > [!NOTE]  
 >  Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode Suche zurück zum Anfang des Suchbereichs umschließt, das Ende des Bereichs erreicht wurde. Ihr Code muss stellen Sie sicher, dass die Suche in einer Endlosschleife nicht um umbrochen wird. Die Beispielprozedur zeigt eine Möglichkeit, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Eigenschaft.  
   
- ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [wie verwenden Sie I: die Find-Methode in einem Excel-Add-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden die Find-Methode in einem Excel-Add-in? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Zum Suchen nach Text in einem Arbeitsblattbereich  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671962"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

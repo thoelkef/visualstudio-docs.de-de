@@ -1,9 +1,6 @@
 ---
 title: In Visual Studio SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821144"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Hilfsprogramme und ähnliches.
@@ -37,7 +34,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
  Die Visual Studio-Shell stellt grundlegende Funktionalität bereit und unterstützt als auch die Kommunikation zwischen der Erweiterungen der VSPackages und MEF-Komponente. Weitere Informationen finden Sie unter [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit
- Wenn Sie beabsichtigen, neuen Features für Visual Studio entwickeln, Sie sollten sehen Sie sich diese Richtlinien für Design und benutzerfreundlichkeit Tipps: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Wenn Sie beabsichtigen, neuen Features für Visual Studio entwickeln, sollten Sie diese Richtlinien für Design und benutzerfreundlichkeit Tipps ansehen: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Befehle
  Befehle sind Funktionen, mit denen Aufgaben wie das Drucken eines Dokuments, das Aktualisieren einer Ansicht oder das Erstellen einer neuen Datei ausgeführt werden können.
@@ -103,7 +100,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
  Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Eigenschaften und Optionen
- Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehreren gewählten Elementen: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die einer bestimmten Komponente, z. B. betreffen eine Programmieren von Sprache oder ein VSPackage: [Optionen und Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im allgemeinen UI-bezogene Features, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).
+ Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehrere ausgewählte Elemente: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die eine bestimmte Komponente, z. B. einer Programmiersprache oder ein VSPackage betreffen: [Optionen und Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im allgemeinen UI-bezogene Features, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Visual Studio-Diensten
  Ein Dienst stellt einen bestimmten Satz von Schnittstellen für die Komponenten nutzen. Visual Studio bietet eine Reihe von Diensten, die von der alle Komponenten, einschließlich der Erweiterungen verwendet werden kann. Visual Studio-Diensten ermöglichen z. B. Toolfenster angezeigt oder ausgeblendet dynamisch Aktivieren des Zugriffs auf Hilfe, Statusleiste oder UI-Ereignisse. Visual Studio-Editor bietet auch Dienste, die durch Erweiterungen des Editors importiert werden können. Weitere Informationen finden Sie unter [verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md).

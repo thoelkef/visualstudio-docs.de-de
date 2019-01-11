@@ -1,9 +1,6 @@
 ---
 title: Verweisen auf (SharePoint-Tools-Erweiterungen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ffc082f992542f54c9545e9567a924b5480fc8b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847047"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Referenz (Erweiterbarkeit für SharePoint-Tools)
   Dieser Abschnitt enthält die Referenzdokumentation für das Erweitern der SharePoint-Tools in Visual Studio.  
@@ -34,4 +31,3 @@ ms.locfileid: "37118848"
   
 ## <a name="see-also"></a>Siehe auch
  [Erweitern von SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  

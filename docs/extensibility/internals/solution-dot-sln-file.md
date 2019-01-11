@@ -1,9 +1,6 @@
 ---
 title: Projektmappen (. Sln)-Datei | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01657d1053f2172f421bf6e265aa836f930c438
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c7879f019be8eb151d3274eb7d69aa5b947427b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935865"
 ---
 # <a name="solution-sln-file"></a>Projektmappendatei (SLN)
 Eine Lösung ist eine Struktur zum Organisieren von Projekten in Visual Studio. Die Lösung verwaltet die Statusinformationen für Projekte in sln (textbasierten, shared) und SUO (binär, benutzerspezifischen Projektmappenoptionen)-Dateien. Weitere Informationen zu SUO-Dateien finden Sie unter [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

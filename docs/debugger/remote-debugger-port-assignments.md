@@ -2,7 +2,6 @@
 title: Remotedebugger – Portzuweisungen | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -10,44 +9,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959747"
 ---
 # <a name="remote-debugger-port-assignments"></a>Remotedebugger - Portzuweisungen
 Der Visual Studio-Remotedebugger kann als Anwendung oder als Hintergrunddienst ausgeführt werden. Bei der Ausführung als Anwendung wird standardmäßig der folgende Port zugewiesen:  
 
-- Visual Studio 2017:4022
+- Visual Studio 2019: 4024
+
+- Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020  
   
-- Visual Studio 2013: 4018  
+- Visual Studio 2013:   
   
 - Visual Studio 2012: 4016  
   
   Die Nummer des Ports, der dem Remotedebugger zugewiesen ist, wird also für jede Version um 2 erhöht. Sie können bei Bedarf eine andere Portnummer festlegen. Das Festlegen von Portnummern wird in einem späteren Abschnitt erläutert.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Remotedebugger-Port bei 32-Bit-Betriebssystemen  
- TCP 4022 (in Visual Studio 2017) ist der Hauptport und für alle Szenarien erforderlich ist. Sie können ihn über die Befehlszeile oder das Fenster "Remotedebugger" konfigurieren.  
+ TCP 4022 (Visual Studio 2017) ist der Hauptport und für alle Szenarien erforderlich. Sie können ihn über die Befehlszeile oder das Fenster "Remotedebugger" konfigurieren.  
   
- Klicken Sie im Remotedebugger-Fenster auf **Tools > Optionen**, und legen Sie die Nummer des TCP/IP-Ports.  
+ Klicken Sie im Fenster „Remotedebugger“ auf **Extras > Optionen**, und legen Sie die Nummer für den TCP/IP-Port fest.  
   
- In der Befehlszeile, starten Sie den Remotedebugger über die **/a-Station** wechseln: **Msvsmon/Port \<Portnummer >**.  
+ Starten Sie von der Befehlszeile aus den Remotedebugger über die Option **/port**: **msvsmon /port \<Portnummer>**.  
   
- Sie können alle Remotedebugger Befehlszeilen-Switches finden Sie in der Hilfe zum Remotedebugging (drücken Sie **F1** oder klicken Sie auf **Hilfe > Verwendung** im Remotedebugger-Fenster).  
+ Alle Remotedebugger-Befehlszeilenoptionen finden Sie in der Hilfe zum Remotedebugging (drücken Sie F1, oder klicken Sie im Fenster „Remotedebugger“ auf **Hilfe** > **Verwendung**).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Remotedebugger-Port bei 64-Bit-Betriebssystemen  
- Wenn die 64-Bit-Version des Remotedebuggers gestartet wird, wird standardmäßig den Port 4022 verwendet.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Version des Remotedebuggers auf Port 4023 an. Wenn Sie die 32-Bit-Remotedebugger ausführen, wird 4022 und 4023 wird nicht verwendet.  
+ Wenn die 64-Bit-Version des Remotedebuggers gestartet wird, verwendet er die Main Standardport (4022) standardmäßig.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Version des Remotedebuggers über Port 4023 (wichtigsten Port Anzahl um 1 erhöht). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4022 und nicht Port 4023 verwendet.  
   
- Dieser Port ist über die Befehlszeile konfigurierbar: **"msvsmon" /wow64port \<Portnummer >**.  
+ Dieser Port kann über die Befehlszeile konfiguriert werden: **"Msvsmon" /wow64port \<Portnummer >**.  
   
 ## <a name="the-discovery-port"></a>Port für die Ermittlung  
  UDP 3702 wird für die Suche nach ausgeführten Instanzen des Remotedebuggers im Netzwerk verwendet (z. B. bei **Suchen** im Dialogfeld **An den Prozess anhängen** ). Er wird nur für die Ermittlung von Computern verwendet, auf denen der Remotedebugger ausgeführt wird, und ist daher optional, wenn Sie den Computernamen oder die IP-Adresse des Zielcomputers auf andere Weise ermitteln können. Da dies der Standardport für die Ermittlung ist, kann die Portnummer nicht konfiguriert werden.  
   
- Wenn Sie die Ermittlung nicht aktivieren möchten, können Sie msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **msvsmon /nodiscovery**.  
+ Wenn Sie nicht, um die Ermittlung zu aktivieren möchten, können Sie Msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **Msvsmon/nodiscovery**.  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Remotedebugger-Ports in Azure  
  Die folgenden Ports werden vom Remotedebugger in Azure verwendet. Die Ports im Clouddienst werden den Ports auf den einzelnen virtuellen Computern zugeordnet. Bei allen Ports handelt es sich um TCP-Ports.  

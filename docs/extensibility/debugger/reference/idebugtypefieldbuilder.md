@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder | Microsoft Docs
-ms.custom: ''
+title: IDebugTypeFieldBuilder | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962074"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Stellt die Möglichkeit zum Erstellen eines Felds, das einen Typ darstellt.  
+Stellt die Möglichkeit, ein Feld erstellen, die einen Typ darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,10 +27,10 @@ IDebugTypeFieldBuilder : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird von der Symbol-Anbieter abgerufen.  
+ Diese Schnittstelle wird von der symbolanbieter abgerufen.  
   
 ## <a name="methods"></a>Methoden  
- Diese Schnittstelle implementiert, die folgenden Methoden:  
+ Diese Schnittstelle implementiert die folgenden Methoden:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  

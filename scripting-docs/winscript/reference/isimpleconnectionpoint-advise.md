@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Microsoft Docs
+title: ISimpleConnectionPoint::Advise | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b3c0ea37e6fabb051458a11c4838061126bd98bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733790"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091740"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
-Herstellen einer Verbindung zwischen der einfachen Verbindungspunktobjekt und der Client-Senke.  
+Herstellen einer Verbindung zwischen der einfachen Verbindungspunktobjekt und die Senke des Clients.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Advise(  
    IDispatch*  pdisp,  
    DWORD*      pdwCookie  
@@ -39,10 +39,10 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Parameter  
  `pdisp`  
- [in] Zeiger auf die `IDispatch` Schnittstelle auf dem Client die advise-Senke. Die Senke des Clients empfängt die ausgehende Aufrufe vom einfachen Verbindungspunkt.  
+ [in] Zeiger auf die `IDispatch` Schnittstelle auf dem Client der advise-Senke. Die Senke des Clients empfängt ausgehende Aufrufe von der einfachen Verbindungspunkt an.  
   
  `pdwCookie`  
- [out] Ein Zeiger auf ein zurückgegebene Token, das diese Verbindung eindeutig identifiziert. Der Aufrufer verwendet dieses Token später löschen die Verbindung durch Übergabe an die `ISimpleConnectionPoint::Unadvise` Methode. Wenn die Verbindung nicht erfolgreich hergestellt wurde, ist dieser Wert 0 (null).  
+ [out] Zeiger auf einen zurückgegebenen Token, der diese Verbindung eindeutig identifiziert. Der Aufrufer verwendet dieses Token später beim Löschen der Verbindung durch Übergeben an die `ISimpleConnectionPoint::Unadvise` Methode. Wenn die Verbindung nicht erfolgreich hergestellt wurde, ist dieser Wert 0 (null).  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,7 +52,7 @@ HRESULT Advise(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird eine Verbindung zwischen der einfachen Verbindungspunktobjekt und der Client-Senke.  
+ Diese Methode stellt eine Verbindung zwischen der einfachen Verbindungspunktobjekt und die Senke des Clients her.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)   

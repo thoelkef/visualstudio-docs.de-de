@@ -1,9 +1,6 @@
 ---
-title: IDebugThreadNameChangedEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugThreadNameChangedEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThreadNameChangedEvent2
@@ -15,27 +12,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8bfc2a430d7886e899bf7e56386ed84f14bf0a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b3e9067fd8677d741a3838042b72fdddf02e5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882814"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
-Diese Schnittstelle wird durch die Debugging-Modul (DE) gesendet, auf der Sitzungs-Manager (SDM), wenn ein Threadnamens im zu debuggenden Programms ändert.  
+Diese Schnittstelle wird von der Debug-Engine (DE) gesendet, für die Sitzung Debug-Manager (SDM), wenn ein Threadnamens im Programm im Debugmodus befindlichen ändert.  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugThreadNameChangedEvent2 : IUnknown  
+IDebugThreadNameChangedEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle zum Bericht, der ein Thread Name geändert wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
+ Die DE implementiert diese Schnittstelle zum Melden der eines Threads Name geändert wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- DE erstellt und sendet diese Ereignisobjekt zum Bericht, der ein Thread Name geändert wurde. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn es an das derzeit debuggte Programm angefügt ist.  
+ Die DE erstellt und sendet dieses Ereignisobjekt zum Melden der eines Threads Name geändert wurde. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn es um das derzeit debuggte Programm angefügt wird.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -45,6 +42,6 @@ IDebugThreadNameChangedEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Siehe auch  
- [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

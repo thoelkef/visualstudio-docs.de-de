@@ -1,9 +1,6 @@
 ---
 title: Binden von Haltepunkten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988779"
 ---
 # <a name="bind-breakpoints"></a>Binden von Haltepunkten
 Wenn der Benutzer einen Haltepunkt, z. B. durch Drücken von **F9**, die IDE die Anforderung formuliert und werden aufgefordert, die Debugsitzung, um den Haltepunkt zu erstellen.  

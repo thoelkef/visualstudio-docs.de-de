@@ -1,9 +1,6 @@
 ---
 title: Arbeiten mit Kalenderelementen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,22 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 199665d7cce60034c2b998b6c67fbc1623c43307
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a087f0c11dfe1723a53fe04fc3b44c9212b60f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887918"
 ---
 # <a name="work-with-calendar-items"></a>Arbeiten mit Kalenderelementen
   Die <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> -Klasse enthält die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Kalenderelementen verwenden.  
   
 |Aufgabe|Prozedur|  
 |----------|---------------|  
-|Erstellen Sie einen Termin, und fügen Sie Empfänger hinzu.|[Gewusst wie: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)|  
-|Löschen Sie eine Instanz einer Terminserie.|[Gewusst wie: Programmgesteuertes Löschen von Terminen](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Erstellen Sie einen Kalenderordner, und fügen Sie ein Terminelement hinzu.|[Gewusst wie: Programmgesteuertes Erstellen eines benutzerdefiniertes Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Erstellen und senden Sie eine Besprechungsanfrage.|[Gewusst wie: Programmgesteuertes Erstellen eine Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|Erstellen Sie einen Termin, und fügen Sie Empfänger hinzu.|[Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)|  
+|Löschen Sie eine Instanz einer Terminserie.|[Vorgehensweise: Programmgesteuertes Löschen von Terminen](../vsto/how-to-programmatically-delete-appointments.md)|  
+|Erstellen Sie einen Kalenderordner, und fügen Sie ein Terminelement hinzu.|[Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|Erstellen und senden Sie eine Besprechungsanfrage.|[Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
  Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).  
   
@@ -45,5 +42,3 @@ ms.locfileid: "35258592"
  [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
  [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
  [Outlook-Projektmappen](../vsto/outlook-solutions.md)  
-  
-  

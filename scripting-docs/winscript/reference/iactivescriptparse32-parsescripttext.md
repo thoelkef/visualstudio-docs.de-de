@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::ParseScriptText | Microsoft Docs
+title: IActiveScriptParse32::ParseScriptText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: af1e3b6723b402263359719695aa1f57432c76e2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 782c1d7bd2dd4c0708418ffd3e69c339dd993fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724820"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094600"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analysiert das angegebene Code-Scriptlet, fügt Deklarationen im Namespace hinzu und wertet, wo angebracht, Code aus.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
     LPCOLESTR pstrCode,              // address of scriptlet text  
     LPCOLESTR pstrItemName,          // address of item name  
@@ -41,9 +41,9 @@ HRESULT ParseScriptText(
 |||  
 |-|-|  
 |`pstrCode`|[in] Adresse des auszuwertenden Scriptlet-Texts. Die Darstellung dieser Zeichenfolge hängt von der Skriptsprache ab.|  
-|`pstrItemName`|[in] Adresse des Elementnamens, der den Kontext angibt, in dem das Scriptlet ausgewertet werden soll. Wenn dieser Parameter NULL ist, wird der Code im globalen Kontext des Skriptmoduls ausgewertet.|  
-|`punkContext`|[in] Adresse des Kontextobjekts. Dieses Objekt ist für die Verwendung in einer Debugumgebung reserviert, in der ein solcher Kontext möglicherweise vom Debugger bereitgestellt wird, um einen aktiven Laufzeitkontext darzustellen. Wenn dieser Parameter NULL ist, verwendet das Modul `pstrItemName`, um den Kontext zu identifizieren.|  
-|`pstrDelimiter`|[in] Adresse des end-of-scriptlet-Trennzeichens. Wenn `pstrCode` von einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, wie beispielsweise zwei einfache Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass dem Skriptmodul in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) das Skriptmodul diese Informationen verwendet, hängt vom Skriptmodul ab. Legen Sie diesen Parameter auf `NULL` fest, wenn der Host kein Trennzeichen verwendete, um das Ende des Scriptlets zu markieren.|  
+|`pstrItemName`|[in] Adresse des Elementnamens, der den Kontext angibt, in dem das Scriptlet ausgewertet werden soll. Wenn dieser Parameter NULL ist, wird der Code im globalen Kontext der Skript-Engine ausgewertet.|  
+|`punkContext`|[in] Adresse des Kontextobjekts. Dieses Objekt ist für die Verwendung in einer Debugumgebung reserviert, in der ein solcher Kontext möglicherweise vom Debugger bereitgestellt wird, um einen aktiven Laufzeitkontext darzustellen. Wenn dieser Parameter NULL ist, verwendet die Engine `pstrItemName`, um den Kontext zu identifizieren.|  
+|`pstrDelimiter`|[in] Adresse des end-of-scriptlet-Trennzeichens. Wenn `pstrCode` von einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, wie beispielsweise zwei einfache Anführungszeichen ("), um das Ende des Scriptlets zu erkennen. Dieser Parameter gibt das vom Host verwendete Trennzeichen an, sodass der Skript-Engine in gewissem Umfang eine bedingte, primitive Vorverarbeitung ermöglicht wird (beispielsweise die Ersetzung eines einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) die Skript-Engine diese Informationen verwendet, hängt von der Skript-Engine ab. Legen Sie diesen Parameter auf `NULL` fest, wenn der Host kein Trennzeichen verwendete, um das Ende des Scriptlets zu markieren.|  
 |`dwSourceContextCookie`|[in] Cookie, das zu Debugzwecken verwendet wird.|  
 |`ulStartingLineNumber`|[in] Nullbasierter Wert, der angibt, auf welcher Zeile die Analyse beginnt.|  
 |`dwFlags`|[in] Flags, die dem Scriptlet zugeordnet sind. Es kann eine Kombination dieser Werte sein:|  
@@ -51,7 +51,7 @@ HRESULT ParseScriptText(
 |Wert|Bedeutung|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|Wenn der Unterschied zwischen einem rechnerischen Ausdruck und einer Anweisung wichtig, aber von der Syntax in der Skriptsprache her doppeldeutig ist, gibt dieses Flag an, dass das Scriptlet als ein Ausdruck zu interpretieren ist, statt einer Anweisung oder einer Liste von Anweisungen. Standardmäßig werden Anweisungen angenommen, es sei denn, dass die richtige Auswahl vom Syntax des Scriptlet-Texts her bestimmt werden kann.|  
-|SCRIPTTEXT_ISPERSISTENT|Gibt an, dass der Code, der während dieses Aufrufs hinzugefügt wird, gespeichert werden soll, wenn das Skriptmodul (beispielsweise durch einen Aufruf von `IPersist*::Save`) gespeichert wird oder wenn das Skriptmodul durch einen Übergang zurück zum initialisierten Zustand zurückgesetzt wird.|  
+|SCRIPTTEXT_ISPERSISTENT|Gibt an, dass der Code, der während dieses Aufrufs hinzugefügt wird, gespeichert werden soll, wenn die Skript-Engine (beispielsweise durch einen Aufruf von `IPersist*::Save`) gespeichert wird oder wenn die Skript-Engine durch einen Übergang zurück zum initialisierten Zustand zurückgesetzt wird.|  
 |SCRIPTTEXT_ISVISIBLE|Gibt an, dass der Skripttext sichtbar (und daher durch Namen aufgerufen werden kann) als globale Methode im Namespace des Skripts sein soll.|  
   
 |||  
@@ -68,18 +68,18 @@ HRESULT ParseScriptText(
 |`DISP_E_EXCEPTION`|Eine Ausnahme tritt bei der Verarbeitung des Scriptlets auf. Der `pexcepinfo`-Parameter enthält Informationen zur Ausnahme.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_NOTIMPL`|Diese Methode wird nicht unterstützt. Das Skriptmodul unterstützt keine Laufzeitauswertung von Ausdrücken oder Anweisungen.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (beispielsweise, wenn das Skriptmodul im nicht initialisierten oder geschlossenen Zustand ist oder der SCRIPTTEXT_ISEXPRESSIONS-Flag festgelegt war und sich das Skriptmodul im initialisierten Zustand befindet).|  
+|`E_NOTIMPL`|Diese Methode wird nicht unterstützt. Die Skript-Engine unterstützt keine Laufzeitauswertung von Ausdrücken oder Anweisungen.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (beispielsweise, wenn die Skript-Engine im nicht initialisierten oder geschlossenen Zustand ist oder der SCRIPTTEXT_ISEXPRESSIONS-Flag festgelegt war und sich die Skript-Engine im initialisierten Zustand befindet).|  
 |`OLESCRIPT_E_SYNTAX`|Ein nicht spezifizierter Syntaxfehler trat im Scriptlet auf.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn das Skriptmodul im initialisierten Zustand ist, wird kein Code tatsächlich während dieses Aufrufs ausgewertet; dieser Code wird vielmehr in die Warteschlange gestellt und ausgeführt, wenn das Skriptmodul in den gestarteten Zustand übergehen soll. Da die Ausführung im initialisierten Zustand nicht zulässig ist, ist es ein Fehler, diese Methode mit dem SCRIPTTEXT_ISEXPRESSIONS-Flag aufzurufen, wenn im initialisierten Zustand.  
+ Wenn die Skript-Engine im initialisierten Zustand ist, wird kein Code tatsächlich während dieses Aufrufs ausgewertet; dieser Code wird vielmehr in die Warteschlange gestellt und ausgeführt, wenn die Skript-Engine in den gestarteten Zustand übergehen soll. Da die Ausführung im initialisierten Zustand nicht zulässig ist, ist es ein Fehler, diese Methode mit dem SCRIPTTEXT_ISEXPRESSIONS-Flag aufzurufen, wenn im initialisierten Zustand.  
   
- Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird beispielsweise verwendet, bei der Auswertung des HTML- \<SCRIPT >-Tag, wodurch Anweisungen ausgeführt werden, weil die HTML-Seite erstellt wird, anstatt nur in den skriptzustand zu kompilieren,.  
+ Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird beispielsweise bei der Auswertung der HTML-Code verwendet \<Skript >-Tag, wodurch Anweisungen ausgeführt werden, weil die HTML-Seite erstellt wird, anstatt nur in den skriptzustand zu kompilieren,.  
   
  Der Code, der an diese Methode übergeben wird, muss ein gültiger, vollständiger Teil des Codes sein. Beispielsweise ist es in VBScript nicht zulässig, diese Methode einmal mit "Sub Function(x)" aufzurufen und dann ein zweites Mal mit `End Sub`. Der Parser darf nicht auf den zweiten Aufruf warten, um die Unterroutine abzuschließen. Er muss stattdessen einen Analysefehler generieren, da eine Unterroutinendeklaration gestartet, aber nicht abgeschlossen wurde.  
   
- Weitere Informationen zum Status von Skripts finden Sie im Abschnitt "Skript Datenbankmodul-Status" von [Windows Script-Module](../../winscript/windows-script-engines.md).  
+ Weitere Informationen über skriptzustände finden Sie im Abschnitt "Skriptmodulzustände" der [Windows Script-Engines](../../winscript/windows-script-engines.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

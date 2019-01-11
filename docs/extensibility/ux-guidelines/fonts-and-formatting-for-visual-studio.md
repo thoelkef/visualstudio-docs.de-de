@@ -1,9 +1,6 @@
 ---
 title: Schriftarten und Formatierungen für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989042"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>Umgebungsschriftart mit 375 % + dünne Darstellung  
- **Wird als:** 34 pt Segoe UI Light  
+ **Wird folgendermaßen angezeigt:** 34 pt Segoe UI Light  
  **Verwendung:** (selten vorkommenden) eindeutig mit dem Branding-Benutzeroberfläche wie auf der Startseite
 
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** den Stil der TextBlock oder Label wie dargestellt festgelegt.  
+ **XAML:** Festlegen des Formats der TextBlock oder Label wie gezeigt.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Umgebungsschriftart mit 310 % + dünne Darstellung  
- **Wird als:** 28 pt Segoe UI Light   
+ **Wird folgendermaßen angezeigt:** 28 pt Segoe UI Light   
  **Verwendung:** große Signatur Dialogfeld Titel, main Überschrift in Berichten  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** den Stil der TextBlock oder Label wie dargestellt festgelegt.  
+ **XAML:** Festlegen des Formats der TextBlock oder Label wie gezeigt.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Umgebungsschriftart mit 200 % + halb dünne Darstellung  
- **Wird als:** 18 pt Segoe UI semilight als    
+ **Wird folgendermaßen angezeigt:** 18 pt Segoe UI semilight als    
  **Verwendung:** Unterüberschriften, Titel in Dialogfeldern für kleine und mittlere  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung: 
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** Stil der TextBlock oder Label festlegen, wie gezeigt:  
+ **XAML:** Legen Sie den Stil der TextBlock oder Label wie gezeigt:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
- **Wird als:** 14 pt Segoe UI    
+ **Wird folgendermaßen angezeigt:** 14 pt Segoe UI    
  **Verwendung:** Abschnittsüberschriften in Dokument gut, Benutzeroberflächen oder Berichten  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** Stil der TextBlock oder Label festlegen, wie gezeigt:  
+ **XAML:** Legen Sie den Stil der TextBlock oder Label wie gezeigt:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>Umgebungsschriftart mit 133 %  
- **Wird als:** 12 pt Segoe UI    
+ **Wird folgendermaßen angezeigt:** 12 pt Segoe UI    
  **Verwendung:** kleinere Unterüberschriften in der Signatur-Dialogfelder und Dokument und Benutzeroberfläche  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** Stil der TextBlock oder Label festlegen, wie gezeigt:  
+ **XAML:** Legen Sie den Stil der TextBlock oder Label wie gezeigt:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Umgebungsschriftart mit 122 %  
- **Wird als:** 11 pt Segoe UI    
+ **Wird folgendermaßen angezeigt:** 11 pt Segoe UI    
  **Verwendung:** Abschnitt Spaltenüberschriften in der Signatur Dialogfelder, top-Knoten in der Strukturansicht vertikaler Tabulator-Navigation  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** Stil der TextBlock oder Label festlegen, wie gezeigt:  
+ **XAML:** Legen Sie den Stil der TextBlock oder Label wie gezeigt:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Wird als:** Fett 9 pt Segoe UI    
  **Verwendung:** Bezeichnungen und Teilüberschriften Signatur Dialogfelder, Berichte und Dokument und Benutzeroberfläche  
   
- **Prozeduraler Code:** , in denen `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
+ **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** Stil der TextBlock oder Label festlegen, wie gezeigt:  
+ **XAML:** Legen Sie den Stil der TextBlock oder Label wie gezeigt:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -327,9 +324,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 - **QuickInfos.** Beispiel: "Vorschau der ausgewählten Elemente"  
   
-- **Spaltenüberschriften.** Beispiel: "System Antworten"  
+- **Spaltenüberschriften.** Beispiel: "Systemantwort"  
   
-- **Menüelemente.** Beispiel: "Alle speichern"  
+- **Menüelemente.** Beispiel: "Speichern Sie alle"  
   
   Wenn Sie große Anfangsbuchstaben verwenden zu können, sind dies die Richtlinien, wenn Wörter in Großbuchstaben umwandelt und wann Sie Kleinbuchstaben ausgelassen werden:  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Großgeschrieben  
  Großgeschrieben ist die Großschreibung-Methode zum Schreiben in die nur das erste Wort des Satzes groß geschrieben wird, sowie alle Eigennamen und das Pronomen "I". Im Allgemeinen ist die großgeschrieben einfacher für eine weltweite Zielgruppe zu lesen, insbesondere wenn der Inhalt von einem Computer übersetzt wird. Verwenden Sie bei der Satz:  
   
-1.  **Statusleistenmeldungen.** Diese sind einfach, kurz gesagt, und geben Sie nur die Statusinformationen. Beispiel: "Laden-Projektdatei"  
+1.  **Statusleistenmeldungen.** Diese sind einfach, kurz gesagt, und geben Sie nur die Statusinformationen. Beispiel: "Project-Datei laden"  
   
-2.  **Alle anderen Elemente der Benutzeroberfläche**, z. B. Bezeichnungen, Kontrollkästchen, Optionsfelder und Einträge aufzulisten. Beispiel: "wählen alle Elemente in der Liste"  
+2.  **Alle anderen Elemente der Benutzeroberfläche**, z. B. Bezeichnungen, Kontrollkästchen, Optionsfelder und Einträge aufzulisten. Beispiel: "Alle Elemente in der Liste auswählen"  
   
 ### <a name="text-formatting"></a>Formatieren von Text  
  Standardtextformatierung an, die in Visual Studio 2013 wird gesteuert, indem [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Dieser Dienst trägt dazu bei eine einheitlichen Schriftart Darstellung in der IDE (integrated Development Environment), und Sie müssen ihn verwenden, um eine konsistente Umgebung für Ihre Benutzer zu gewährleisten.  
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Syntax:** selten. Eindeutige mit Branding nur über die Benutzeroberfläche.<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird als:** 34 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> *Derzeit verwendet nicht. Auf der Startseite die Option kann verwendet werden.*|  
+|**Syntax:** Nur selten. Eindeutige mit Branding nur über die Benutzeroberfläche.<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 34 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> *Derzeit verwendet nicht. Auf der Startseite die Option kann verwendet werden.*|  
   
 #### <a name="310-environment-font--light"></a>Umgebungsschriftart mit 310 % + dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 310 % &#43; hell Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
+|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 28 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 310 % &#43; hell Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Umgebungsschriftart mit 200 % + halb dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> : Unterüberschriften<br />: Titel in Dialogfeldern für kleine und mittlere<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie immer semilight als Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 200 % &#43; semilight als](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
+|**Syntax:**<br /><br /> : Unterüberschriften<br />: Titel in Dialogfeldern für kleine und mittlere<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie immer semilight als Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 18 pt Segoe UI Semillight<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 200 % &#43; semilight als](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
   
 #### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Section-Überschriften in Dokument und Benutzeroberfläche<br />-Berichte<br /><br /> **:** Großgeschrieben verwenden<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird als:** 14 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Syntax:**<br /><br /> -Section-Überschriften in Dokument und Benutzeroberfläche<br />-Berichte<br /><br /> **Führen Sie aus:** Verwenden Sie großgeschrieben<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 14 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
 #### <a name="133-environment-font"></a>Umgebungsschriftart mit 133 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Kleinere Unterüberschriften in der Signatur-Dialogfelder<br />-Kleinere Unterüberschriften im Dokument und Benutzeroberfläche<br /><br /> **:** Großgeschrieben verwenden<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird als:** 12 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
+|**Syntax:**<br /><br /> -Kleinere Unterüberschriften in der Signatur-Dialogfelder<br />-Kleinere Unterüberschriften im Dokument und Benutzeroberfläche<br /><br /> **Führen Sie aus:** Verwenden Sie großgeschrieben<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 12 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
   
 #### <a name="122-environment-font"></a>Umgebungsschriftart mit 122 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Section-Spaltenüberschriften in der Signatur-Dialogfelder<br />-Obersten Knoten in der Strukturansicht<br />-Vertikaler Tabulator-navigation<br /><br /> **:** Großgeschrieben verwenden<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird als:** 11 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
+|**Syntax:**<br /><br /> -Section-Spaltenüberschriften in der Signatur-Dialogfelder<br />-Obersten Knoten in der Strukturansicht<br />-Vertikaler Tabulator-navigation<br /><br /> **Führen Sie aus:** Verwenden Sie großgeschrieben<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 11 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Umgebungsschriftart + fettformatierung  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Syntax:** gesamten anderen Text<br /><br /> **:** Großgeschrieben verwenden<br /><br /> **Keine:** kursiv oder fett kursiv|**Wird als:** 9 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-G_EF")|  
+|**Syntax:** Alle anderen Textteile<br /><br /> **Führen Sie aus:** Verwenden Sie großgeschrieben<br /><br /> **Tue nicht:** Kursiv und fett kursiv|**Wird folgendermaßen angezeigt:** 9 pt Segoe UI<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-G_EF")|  
   
 ### <a name="padding-and-spacing"></a>Abstand und Abstände  
  Überschriften erfordern eingerahmt um ihnen die entsprechenden Betonung zu gewähren. Dieser Speicherplatz variiert je nach Größe und weiteren neuerungen in der Nähe der Überschrift, z. B. eine horizontale Linie oder einer Zeile des Texts in die Umgebungsschriftart verwendet wird.  

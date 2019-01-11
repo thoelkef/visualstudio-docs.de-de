@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bed9629c40d4d7b7e93ccd250474ea90b44ab7c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 5224866db3fb0499a386bd1d3bea1ac0e6b06f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935397"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Der Designer kann während des Debuggens nicht geändert werden
 
-Diese Meldung wird angezeigt, wenn versucht wird, ändern Sie die Elemente auf der **O/R Designer** Wenn die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus befindet, läuft die **O/R Designer** ist schreibgeschützt.
+Diese Meldung wird angezeigt, wenn Elemente im O/R-Designer geändert werden, während die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus ausgeführt wird, ist der O/R-Designer schreibgeschützt.
 
 Wählen Sie zum Beheben dieses Fehlers **Debuggen beenden** auf die **Debuggen** Menü. Die Anwendung beendet das Debuggen, und Sie können Elemente in der **O/R Designer**.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - shapes [Office development in Visual Studio], copying and pasting Visio shapes
 - Visio [Office development in Visual Studio], copying and pasting Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b9b4f756c1b553f41f79dbbaaaf8a4c27bdfbc64
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671494"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093950"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Gewusst wie: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten
   Sie können programmgesteuert Shapes auf einer Seite eines Dokuments kopieren und in eine neue Seite im selben Dokument einfügen. Sie können die Shapes wahlweise an der Standardposition (in der Mitte des aktiven Fensters) oder an der gleichen Koordinatenpositionen wie auf der ursprünglichen Seite einfügen.  
   
 ## <a name="copy-and-paste-shapes"></a>Kopieren und Einfügen von shapes  
@@ -52,6 +49,4 @@ ms.locfileid: "50671494"
  [Visio-Projektmappen](../vsto/visio-solutions.md)   
  [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
  [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)   
- [Gewusst wie: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

@@ -1,8 +1,6 @@
 ---
-title: Dialogfeld ' Optionen ' Nachricht | Microsoft Docs
-ms.custom: ''
+title: Nachricht Dialogfeld "Optionen" | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
@@ -13,47 +11,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ced120b9545adb21a4fcfe73df6f69961568b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861746"
 ---
 # <a name="message-options-dialog-box"></a>Dialogfeld "Meldungsoptionen"
-Mithilfe dieses Dialogfelds auswählen, welche Nachrichten in aufgelisteten [Ansicht "Nachrichten"](../debugger/messages-view.md). Um dieses Dialogfeld anzuzeigen, wählen Sie **Protokollmeldungen** aus der **Spy++** Menü.  
+Verwenden Sie dieses Dialogfeld können Sie auswählen, welche Nachrichten in aufgelisteten [Meldungsansicht](../debugger/messages-view.md). Um das Dialogfeld anzuzeigen, wählen Sie **Protokollmeldungen** aus der **Spy** Menü.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Registerkarte "Fenster", Dialogfeld "Meldungsoptionen"](../debugger/windows-tab-message-options-dialog-box.md)  
- Verwendet, um die Nachrichten in der Liste auswählen. Enthält das Suchtool.  
+ Wird verwendet, um die Typen von Nachrichten in der Liste auszuwählen. Enthält das Suchtool.  
   
  [Registerkarte "Meldungen", Dialogfeld "Meldungsoptionen"](../debugger/messages-tab-message-options-dialog-box.md)  
- Die Nachrichtentypen für die Anzeige ausgewählt.  
+ Verwendet, um die Nachrichtentypen für die Anzeige auswählen.  
   
  [Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"](../debugger/output-tab-message-options-dialog-box.md)  
- Verwendet, um welche Nachrichtendaten angezeigt werden sollen.  
+ Dient zum Angeben von welche Nachrichtendaten angezeigt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Meldungssuche (Dialogfeld)](../debugger/message-search-dialog-box.md)  
- Verwendet, um den Knoten für eine bestimmte Nachricht in der Ansicht Nachricht suchen.  
+ Verwendet, um den Knoten für eine bestimmte Nachricht in der Ansicht der Nachricht suchen.  
   
  [Dialogfeld "Meldungseigenschaften"](../debugger/message-properties-dialog-box.md)  
- Zum Anzeigen der Eigenschaften einer ausgewählten Meldung Nachricht verwendet.  
+ Zum Anzeigen der Eigenschaften einer Nachricht, die ausgewählten Meldung verwendet.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.  
+ Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.  
   
- [Suchen nach einer Nachricht in der Ansicht "Nachrichten"](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Erläutert, wie eine bestimmte Nachricht in der Ansicht "Nachrichten" gefunden.  
+ [Suchen nach einer Nachricht in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Erläutert, wie Sie eine bestimmte Nachricht in der Ansicht "Nachrichten".  
   
  [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md)  
- Erläutert die Ansicht "Nachrichten" im Dialogfeld "Fenster Suchen" zu öffnen.  
+ Erläutert das Öffnen der Ansicht "Nachrichten" im Dialogfeld "Fenster Suchen".  
   
  [Meldungsansicht](../debugger/messages-view.md)  
  Zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
  Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.

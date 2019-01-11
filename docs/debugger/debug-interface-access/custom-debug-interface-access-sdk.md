@@ -1,8 +1,6 @@
 ---
-title: Benutzerdefiniert (Debug Interface Access SDK) | Microsoft Docs
-ms.custom: ''
+title: Benutzerdefiniert (Debug Interface Access SDK) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11d6cff8865fa0e19611399b4c2f4bf7e60f6bf1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834359"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Benutzerdefiniert (Debug Interface Access SDK)
-Bei einigen Compilern einführen, Symbole, die nicht von einer standardmäßigen lexikalischen Symboltypen identifiziert werden. Diese Symbole werden identifiziert, indem eine `SymTagCustom` Tag.  
+Einige Compiler führen Sie Symbole, die nicht von einem standard lexikalische Symboltypen identifiziert werden. Diese Symbole werden identifiziert, indem eine `SymTagCustom` Tag.  
   
 ## <a name="properties"></a>Eigenschaften  
  Die folgende Tabelle zeigt die Eigenschaften, die für diesen Symboltyp gültig sind.  

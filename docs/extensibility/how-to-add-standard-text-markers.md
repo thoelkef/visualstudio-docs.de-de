@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Standard-Text-Marker | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874627"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Gewusst wie: Hinzufügen von standard-Text-Marker
+# <a name="how-to-add-standard-text-markers"></a>Vorgehensweise: Standard-Text-Marker hinzufügen
 Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Markertypen im Lieferumfang der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor.  
   
 ## <a name="to-create-a-text-marker"></a>Erstellen ein textmarkers  
@@ -51,6 +48,6 @@ Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Ma
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Textmarkierungen mit der legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Gewusst wie: Implementieren von fehlermarker](../extensibility/how-to-implement-error-markers.md)   
- [Gewusst wie: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md)   
- [Gewusst wie: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)
+ [Vorgehensweise: Implementieren von fehlermarker](../extensibility/how-to-implement-error-markers.md)   
+ [Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md)   
+ [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)

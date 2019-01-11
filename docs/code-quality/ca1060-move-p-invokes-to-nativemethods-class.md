@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: P-Invokes in NativeMethods-Klasse verschieben'
+title: 'CA1060: Verschieben von P-Invokes in NativeMethods-Klasse'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874231"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes in NativeMethods-Klasse verschieben
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Verschieben von P/Invokes in NativeMethods-Klasse
 
 |||
 |-|-|
@@ -94,7 +93,7 @@ Diese Klassen werden als deklariert `internal` (`Friend`, in Visual Basic), und 
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods-Beispiel
 
 ### <a name="description"></a>Beschreibung
- P/Invoke-Methoden, die nicht sicher aufgerufen und kann dazu führen, dass Nebenwirkungen, sollten in einer Klasse mit dem Namen gesetzt werden **UnsafeNativeMethods**. Diese Methoden sollten gründlich überprüft werden, um sicherzustellen, dass sie nicht an den Benutzer unbeabsichtigt verfügbar gemacht werden. Die Regel [CA2118: Verwendung von Überprüfung SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) können Sie dabei unterstützen. Alternativ müssen die Methoden eine andere Berechtigung, die anstelle von gefordert wird **UnmanagedCode** wann diese verwendet werden.
+ P/Invoke-Methoden, die nicht sicher aufgerufen und kann dazu führen, dass Nebenwirkungen, sollten in einer Klasse mit dem Namen gesetzt werden **UnsafeNativeMethods**. Diese Methoden sollten gründlich überprüft werden, um sicherzustellen, dass sie nicht an den Benutzer unbeabsichtigt verfügbar gemacht werden. Die Regel [CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) dabei helfen können. Alternativ müssen die Methoden eine andere Berechtigung, die anstelle von gefordert wird **UnmanagedCode** wann diese verwendet werden.
 
  Das folgende Beispiel zeigt eine **Cursor.Hide** -Methode, die dient als Wrapper für die **ShowCursor** -Funktion aus "User32.dll".
 

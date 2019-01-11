@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Microsoft Docs
+title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8306b1d4ff68fe9eec00d47d8c702278e89fc37b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724390"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097187"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Gibt einen Wert zurück, der die Art der ausgelösten Ausnahme angibt.  
@@ -29,7 +29,7 @@ Gibt einen Wert zurück, der die Art der ausgelösten Ausnahme angibt.
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetExceptionThrownKind(  
    SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND*  pExceptionKind  
 );  
@@ -37,7 +37,7 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parameter  
  `pExceptionKind`  
- [out] Die Art der Ausnahme, die ausgelöst wird, (z. B. erste Chance "oder" nicht behandelte), dargestellt durch eine [SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND-Enumeration](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) -Enumerationswert.  
+ [out] Die Art der Ausnahme, die ausgelöst wird, (z. B. erste Chance "oder" nicht behandelte), dargestellt durch eine [SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND-Enumeration](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) Enumerationswert.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

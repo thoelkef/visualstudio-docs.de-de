@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineCreateEvent2::GetEngine | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineCreateEvent2::GetEngine
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d4fc7147b53826d988a0e9100c4e5224d377234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65ec7a4b1237d98f2693dbb136f712e39041f935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967812"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 Ruft das Objekt, das das neu erstellte Debugmodul (DE) darstellt.  
@@ -28,13 +25,13 @@ Ruft das Objekt, das das neu erstellte Debugmodul (DE) darstellt.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetEngine(   
+HRESULT GetEngine(   
    IDebugEngine2** pEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngine(   
+int GetEngine(   
    out IDebugEngine2 pEngine  
 );  
 ```  

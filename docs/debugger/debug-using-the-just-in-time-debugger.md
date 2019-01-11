@@ -1,8 +1,6 @@
 ---
 title: Debuggen mithilfe des Just-in-Time-Debuggers | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831549"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 
@@ -36,13 +34,13 @@ Just-In-Time-Debuggen funktioniert für Windows desktop-apps. Es funktioniert ni
 
 Sie können konfigurieren, Just-In-Time-Debuggen von Visual Studio **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) Das Dialogfeld. 
 
-**So aktivieren oder deaktivieren Sie Just-in-Time-Debuggen:**
+**So aktivieren oder deaktivieren Sie Just-In-Time-Debuggen:**
 
 1. Auf der **Tools** oder **Debuggen** , wählen Sie im Menü **Optionen** > **Debuggen**  >   **Just-In-Time**.
 
    ![Aktivieren oder Deaktivieren der JIT-Debuggen](../debugger/media/dbg-jit-enable-or-disable.png "aktivieren oder Deaktivieren der JIT-Debuggen")
 
-1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **verwaltete**, **Native**, und/oder  **Skript**.
+1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **Verwaltete**, **Native**, und/oder **Skript**.
    
 1. Klicken Sie auf **OK**.
 
@@ -52,7 +50,7 @@ Aktivieren der Just-In-Time-Debugger, aber es nicht geöffnet werden, wenn eine 
 
 Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual Studio nicht mehr auf dem Computer installiert ist. Wenn Visual Studio nicht mehr installiert ist, können Sie die Just-In-Time-Debuggen durch Bearbeiten der Windows-Registrierung deaktivieren.
 
-**So deaktivieren Sie Just-in-Time-Debuggen durch Bearbeiten der Registrierung:**
+**So deaktivieren Sie Just-In-Time-Debuggen durch Bearbeiten der Registrierung:**
 
 1.  Von der Windows **starten** führen die **Registrierungs-Editor** (*regedit.exe*).
 
@@ -90,7 +88,7 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
     </configuration>
     ```
     
--  Legen Sie auch in einer C++ Windows Form-Anwendung `DebuggableAttribute` zu `true` in eine *config* Datei oder in Ihrem Code. Bei der Kompilierung mit ["/ Zi"](/cpp/build/reference/z7-zi-zi-debug-information-format) und ohne ["/ Og"](/cpp/build/reference/og-global-optimizations), legt der Compiler dieses Attribut für Sie. Wenn Sie einen nicht optimierten Releasebuild debuggen möchten, jedoch müssen Sie festlegen `DebuggableAttribute` durch Hinzufügen der folgenden Zeile in Ihrer app *AssemblyInfo.cpp* Datei:
+-  Legen Sie auch in einer C++ Windows Form-Anwendung `DebuggableAttribute` zu `true` in eine *config* Datei oder in Ihrem Code. Bei der Kompilierung mit [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) und ohne [/Og](/cpp/build/reference/og-global-optimizations) wird dieses Attribut vom Compiler für Sie festgelegt. Wenn Sie einen nicht optimierten Releasebuild debuggen möchten, jedoch müssen Sie festlegen `DebuggableAttribute` durch Hinzufügen der folgenden Zeile in Ihrer app *AssemblyInfo.cpp* Datei:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -107,7 +105,7 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
 
 In diesem Beispiel erstellen Sie eine C# Konsolen-app in Visual Studio, das löst eine ["NullReferenceException"](/dotnet/api/system.nullreferenceexception).
 
-1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. Wenn Sie das Projekt in Visual Studio geöffnet wird, öffnen Sie die *"Program.cs"* Datei. Ersetzen der Main()-Methode durch den folgenden Code, der gibt eine Zeile an die Konsole, und klicken Sie dann eine NullReferenceException:
    
@@ -124,7 +122,7 @@ In diesem Beispiel erstellen Sie eine C# Konsolen-app in Visual Studio, das lös
    >[!NOTE]
    >- Wählen Sie **Debuggen** Konfiguration für den vollständigen Debugvorgang. 
    >- Bei Auswahl von [Version](../debugger/how-to-set-debug-and-release-configurations.md) Konfiguration müssen Sie deaktivieren [nur mein Code](../debugger/just-my-code.md) für dieses Verfahren funktioniert. Klicken Sie unter **Tools** > **Optionen** > **Debuggen**, deaktivieren Sie **nur meinen Code aktivieren**.
-   Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md).
+   Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
    
 1. Öffnen Sie die erstellte app *ThrowsNullException.exe* in Ihre C# Projektordner (*...\ThrowsNullException\ThrowsNullException\bin\Debug* oder *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
    
@@ -176,19 +174,19 @@ Wenn Just-in-Time-Debuggen nicht gestartet, wenn eine app abstürzt, auch wenn e
 
 Sie können die folgenden Fehlermeldungen angezeigt, während der Just-in-Time-Debuggen:
 
-- **Anfügen an den abstürzenden Prozess nicht möglich. Das angegebene Programm ist nicht Windows oder MS-DOS-Programm.**
+- **An den abstürzenden Prozess kann nicht angehängt werden. Das angegebene Programm ist keine MS-DOS- oder Windows-Anwendung.**
 
     Der Debugger hat versucht, Anhängen an einen Prozess unter einem anderen Benutzer ausgeführt wird.
 
     Öffnen Sie zum Umgehen dieses Problems in Visual Studio **Debuggen** > **an den Prozess anhängen**, und suchen Sie den Prozess, die Sie debuggen möchten die **verfügbare Prozesse** Liste. Wenn Sie den Namen des Prozesses nicht kennen, finden Sie die Prozess-ID in der **Just-in-Time-Debugger von Visual Studio** Dialogfeld. Wählen Sie den Prozess in der **verfügbare Prozesse** aus, und wählen Sie **Anfügen**. Wählen Sie **keine** zu schließen, die Just-In-Time-Debugger-Dialogfeld.
 
-- **Debugger konnte nicht gestartet werden, da kein Benutzer angemeldet ist.**
+- **Der Debugger konnte nicht gestartet werden, da kein Benutzer angemeldet ist.**
 
     Es ist kein Benutzer in der Konsole protokolliert werden, es gibt also keine benutzersitzung, zum Anzeigen der Just-In-Time-Debuggen-Dialogfeld.
 
     Um dieses Problem zu beheben, melden Sie sich beim Computer an.
 
-- **Die Klasse nicht registriert.**
+- **Die Klasse ist nicht registriert.**
 
     Der Debugger versucht hat, eine COM-Klasse zu erstellen, die nicht, wahrscheinlich aufgrund eines Problems Installation registriert ist.
 
@@ -196,6 +194,6 @@ Sie können die folgenden Fehlermeldungen angezeigt, während der Just-in-Time-D
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)
-- [Debugger – Grundlagen](../debugger/getting-started-with-the-debugger.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Optionen, Debugging, Just-In-Time-Dialogfeld](../debugger/just-in-time-debugging-options-dialog-box.md)
 - [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

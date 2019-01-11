@@ -2,7 +2,6 @@
 title: Formatierung, XML, Texteditor, Dialogfeld "Optionen"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,22 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938591"
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, Optionen XML, Text-Editor, (Dialogfeld)
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, XML, Text-Editor, Dialogfeld "Optionen"
 
-In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Editor angeben. Sie erreichen die **Optionen** (Dialogfeld), aus der **Tools** Menü.
+In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Editor angeben. Sie können den Zugriff auf die **Optionen** das Dialogfeld die **Tools** Menü.
 
 > [!NOTE]
-> Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner, der **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** (Dialogfeld).
+> Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner die **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** Dialogfeld.
 
 ## <a name="attributes"></a>Attribute
- **Manuelle attributformatierung beibehalten**
+ **Manuelle Attributformatierung beibehalten**
 
  Attribute werden nicht neu formatiert. Dies ist die Standardeinstellung.
 

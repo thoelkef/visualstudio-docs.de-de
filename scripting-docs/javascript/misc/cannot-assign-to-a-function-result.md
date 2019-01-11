@@ -1,5 +1,5 @@
 ---
-title: Kann nicht zu einem Funktionsergebnis zuweisen | Microsoft Docs
+title: Kann nicht zu einem Funktionsergebnis zuweisen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,29 +20,29 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632980"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093860"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Zuweisen zu einem Funktionsergebnis nicht möglich
-Sie haben versucht, einen Wert zu einem Funktionsergebnis zuzuweisen. Das Ergebnis einer Funktion einer Variablen zugewiesen werden kann, aber er kann als eine Variable verwendet werden. Wenn Sie einen neuen Wert für die Funktion selbst zuweisen möchten, lassen Sie die Klammern (den Funktionsaufrufoperator). Das folgende Beispiel zeigt eine Situation, in der dieser Fehler generiert wird.  
+Sie haben versucht, einen Wert zu einem Funktionsergebnis zuzuweisen. Das Ergebnis einer Funktion einer Variablen zugewiesen werden kann, aber es kann nicht als Variable verwendet werden. Wenn Sie einen neuen Wert für die Funktion selbst zuweisen möchten, lassen Sie die Klammern (den Funktionsaufruf-Operator). Das folgende Beispiel zeigt eine Situation, in der dieser Fehler generiert wird.  
   
-```  
+```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht als ein Element Sie können *zuweisen*. Sie können das Ergebnis des Funktionsaufrufs zuweisen *einer Variablen* Obwohl.  
+-   Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht etwa Sie können *zuweisen*. Sie können das Ergebnis des Funktionsaufrufs zuweisen *auf eine Variable* jedoch.  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
--   Alternativ können Sie der Funktion selbst (und nicht dessen Rückgabewert) einer Variablen zuweisen.  
+-   Alternativ können Sie der Funktion selbst (und nicht den Rückgabewert) einer Variablen zuweisen.  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

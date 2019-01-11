@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Abrufen des SharePoint-Projektdiensts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891601"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Gewusst wie: Abrufen des SharePoint-Projektdiensts
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Vorgehensweise: Abrufen des SharePoint-Projektdiensts
   Sie können SharePoint-Projektdiensts in der folgenden Typen von Projektmappen zugreifen:  
   
 -   Eine Erweiterung von SharePoint-Projektsystem, z. B. eine projekterweiterung, projektelementerweiterung oder Projektelement-Typdefinition. Weitere Informationen zu diesen Erweiterungen finden Sie unter [Erweitern der SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -60,7 +57,7 @@ ms.locfileid: "49880597"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     Weitere Informationen zum Erstellen von Project-Element-Erweiterungen finden Sie unter [Vorgehensweise: erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+     Weitere Informationen zum Erstellen von Project-Element-Erweiterungen finden Sie unter [Vorgehensweise: Erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Zum Abrufen des Diensts in einem Projektelement-Typdefinition  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880597"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     Weitere Informationen zum Definieren von Projektelementtypen finden Sie unter [wie: definieren ein SharePoint-Projektelementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+     Weitere Informationen zum Definieren von Projektelementtypen finden Sie unter [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Rufen Sie den Dienst in Server Explorer-Erweiterungen  
  In einer Erweiterung des der **SharePoint-Verbindungen** Knoten **Server-Explorer**, können Sie den Projektdienst zugreifen, mithilfe der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> Eigenschaft eine <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> Objekt.  
@@ -104,6 +101,5 @@ ms.locfileid: "49880597"
   
 ## <a name="see-also"></a>Siehe auch
  [Verwenden Sie die SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md)   
- [Gewusst wie: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
+ [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)  

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Microsoft Docs
+title: IDebugStackFrame::GetThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 888e15bdd154fbac444eb91fc31ad7f17c2981ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f6f21c553197a3967619b9aedc25779444185e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726780"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095744"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
-Gibt den Thread zugeordnete dieses Stapelrahmens zurück.  
+Gibt die Threads mit Stapelrahmen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetThread(  
    IDebugApplicationThread**  ppat  
 );  
@@ -38,7 +38,7 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parameter  
  `ppat`  
- [out] Der Thread, der dieses Stapelrahmens zugeordnet wird.  
+ [out] Der Thread, die diesen Stapelrahmen zugeordnet wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT GetThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Thread dieser Stapelrahmen zugeordnet.  
+ Diese Methode gibt den Thread, die diesen Stapelrahmen zugeordnet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)

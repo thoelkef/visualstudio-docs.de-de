@@ -1,8 +1,6 @@
 ---
 title: 0 x-2 x-4 X MSAA Varianten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d3877988376c21425777beed628edd7fbdeed21e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985971"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 Überschreibt die Multi-Sample Anti-Aliasing (MSAA)-Einstellungen auf allen Renderzielen und Swapketten.  
@@ -45,7 +43,7 @@ ms.locfileid: "49872654"
   
 - Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.  
   
-  Wenn für das Member D3D11_TEXTURE2D_DESC::BindFlags das Flag D3D_BIND_SHADER_RESOURCE oder das Flag D3D11_BIND_UNORDERED_ACCESS gesetzt ist, werden zwei Versionen der Textur erstellt: In der ersten sind diese Flags für eine Verwendung als Renderziel gelöscht, und die zweite ist eine Nicht-MSAA-Textur, in der diese Flags intakt sind und die als Auflösungspuffer für die erste Version erstellt wird. Dies ist notwendig, da die Verwendung einer MSAA-Textur als Shaderressource oder für ungeordneten Zugriff wahrscheinlich nicht gültig ist - ein Shader, der auf sie einwirkt, würde unkorrekte Ergebnisse erzeugen, da er eine Nicht-MSAA-Textur erwarten würde. Wenn die Variante die sekundäre Nicht-MSAA-Textur erstellt hat, wird immer dann, wenn das MSAA-Renderziel aus dem Gerätekontext gelöst wird, sein Inhalt in die Nicht-MSAA-Textur aufgelöst. Auf ähnliche Weise wird, wenn das MSAA-Renderziel als Shaderressource gebunden werden sollte oder in einer Ansicht mit ungeordnetem Ziel verwendet wird, stattdessen die Nicht-MSAA-Textur gebunden.  
+  Wenn für das Member D3D11_TEXTURE2D_DESC::BindFlags das Flag D3D_BIND_SHADER_RESOURCE oder das Flag D3D11_BIND_UNORDERED_ACCESS gesetzt ist, werden zwei Versionen der Textur erstellt: In der ersten sind diese Flags für eine Verwendung als Renderziel gelöscht, und die zweite ist eine Nicht-MSAA-Textur, in der diese Flags intakt sind und die als Auflösungspuffer für die erste Version erstellt wird. Dies ist notwendig, da die Verwendung einer MSAA-Textur als Shaderressource oder für ungeordneten Zugriff wahrscheinlich nicht gültig ist - ein Shader, der auf sie einwirkt, würde unkorrekte Ergebnisse erzeugen, da er eine Nicht-MSAA-Textur erwarten würde. Wenn die Variante die sekundäre Nicht-MSAA-Textur erstellt hat, wird immer dann, wenn das MSAA-Renderziel aus dem Gerätekontext gelöst wird, sein Inhalt in die Nicht-MSAA-Textur aufgelöst. Auf ähnliche Weise wird, wenn das MSAA-Renderziel als Shaderressource gebunden werden sollte oder in einer unsortierten Zugriffsansicht verwendet wird, stattdessen die Nicht-MSAA-Textur gebunden.  
   
   Diese Varianten überschreiben auch MSAA-Einstellungen auf allen durch Verwendung von `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` und `ID3D11CreateDeviceAndSwapChain` erstellten Swapketten.  
   

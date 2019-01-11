@@ -1,22 +1,19 @@
 ---
 title: Diagnostizieren von UI-Erweiterung in Visual Studio verzögert | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887710"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Gewusst wie: Analysieren von Benutzeroberflächen Verzögerungen durch Erweiterungen
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
 Bei der Benutzeroberfläche nicht mehr reagiert, überprüft Visual Studio die Aufrufliste des UI-Threads, beginnt dabei auf der Blattebene und arbeitet sich zur Basis herunter. Wenn Visual Studio feststellt, dass ein Aufruf Stapelrahmen auf ein Modul gehört, die Teil einer installierten und aktivierten Erweiterung ist, wird eine Benachrichtigung angezeigt.
 

@@ -2,7 +2,6 @@
 title: Symbole in der Klassenansicht und im Objektbrowser
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844391"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektkatalog
 
 Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.
 
-|Symbol|description|Symbol|description|
+|Symbol|Beschreibung|Symbol|Beschreibung|
 |----------|-----------------|----------|-----------------|
 |![Symbol "Namespace"](../ide/media/vxnamespace_icon.gif)|Namespace|![Symbol "Deklaration"](../ide/media/vxmethod_icon.gif)|Methode oder Funktion|
 |![Symbol "Klasse"](../ide/media/vxclass_icon.gif)|Klasse|![Symbol "Operator"](../ide/media/vxoperator_icon.gif)|Operator|
@@ -49,7 +48,7 @@ Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeenti
 
 Die folgenden Signalsymbole gelten für alle zuvor erwähnten Symbole und geben deren Barrierefreiheit an.
 
-|Symbol|description|
+|Symbol|Beschreibung|
 |----------|-----------------|
 |\<Kein Signalsymbol>|Öffentlich. Der komponenteninterne Zugriff ist möglich. Außerdem können andere Komponenten, die auf die Komponente verweisen, auf diese zugreifen.|
 |![Symbol "Signal geschützt"](../ide/media/vxsignal_icon_key.gif)|Geschützt. Der Zugriff ist innerhalb der enthaltenen Klasse oder dem enthaltenen Typ möglich. Außerdem haben Klassen oder Typen Zugriff, die von der enthaltenen Klasse oder dem enthaltenen Typ abgeleitet sind.|

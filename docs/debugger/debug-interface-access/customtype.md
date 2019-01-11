@@ -1,8 +1,6 @@
 ---
-title: CustomType | Microsoft Docs
-ms.custom: ''
+title: CustomType | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,23 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dbe2725808a08144891efbbc0273d8b25a71711
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: aff43ecd996820047cc9412cb476c198d7512f0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838662"
 ---
 # <a name="customtype"></a>CustomType
-Vom Hersteller festgelegten Typen (Compiler-spezifische Typen) werden identifiziert, indem ein `SymTagCustomType` Symbol.  
+Hersteller-Typen (Compiler-spezifische Typen) werden identifiziert, indem eine `SymTagCustomType` Symbol.  
   
 ## <a name="properties"></a>Eigenschaften  
- Die folgende Tabelle zeigt zusätzliche gültige Eigenschaften für diese Symboltyp.  
+ Die folgende Tabelle zeigt zusätzliche gültige Eigenschaften für diesen Symboltyp.  
   
 |Eigenschaft|Datentyp|Beschreibung|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Der Bezeichner des OEM.|  
-|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|OEM interne-ID.|  
+|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Bezeichner des OEM.|  
+|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Interne ID des OEM|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCustomType` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|  
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Der erste Typ, der auf das Symbol für benutzerdefinierten Typ verweist.|  

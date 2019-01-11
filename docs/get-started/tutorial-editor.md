@@ -1,8 +1,9 @@
 ---
-title: Einführung in die Bearbeitung
+title: Einführung in das Bearbeiten im Code-Editor
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027803"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803332"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser Einführung in den Code-Editor von Visual Studio, die etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird Code zu einer Datei hinzugefügt, um zu veranschaulichen, inwiefern Visual Studio das Schreiben, Navigieren und Verstehen von Code vereinfacht.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+> [!TIP]
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
 
-In diesem Artikel wird davon ausgegangen, dass Sie bereits mit einer Programmiersprache vertraut sind. Sollte dies nicht der Fall sein, empfehlen wir Ihnen, sich zuerst einen der Schnellstarts zum Thema Programmierung anzusehen, beispielsweise zum Erstellen einer Web-App mit [Python](../ide/quickstart-python.md) oder [C#](../ide/tutorial-csharp-aspnet-core.md) oder zum Erstellen einer Konsolen-App mit [Visual Basic](../ide/quickstart-visual-basic-console.md) oder [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+In diesem Artikel wird davon ausgegangen, dass Sie bereits mit einer Programmiersprache vertraut sind. Sollte dies nicht der Fall sein, empfehlen wir Ihnen, sich zuerst einen der Schnellstarts zum Thema Programmierung anzusehen, beispielsweise zum Erstellen einer Web-App mit [Python](../ide/quickstart-python.md) oder [C#](../get-started/csharp/tutorial-aspnet-core.md) oder zum Erstellen einer Konsolen-App mit [Visual Basic](../ide/quickstart-visual-basic-console.md) oder [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Erstellen einer neuen Codedatei
 
@@ -42,7 +44,7 @@ Beginnen Sie mit dem Erstellen einer neuen Datei, und fügen Sie dieser Code hin
 
 Visual Studio stellt nützliche *Codeausschnitte* bereit, die Sie verwenden können, um häufig verwendete Codeblöcke schnell und einfach zu generieren. Die [Codeausschnitte](../ide/code-snippets.md) sind für verschiedene Programmiersprachen verfügbar, einschließlich C#, Visual Basic und C++. Fügen Sie den C#-Ausschnitt `void Main` zu Ihrer Datei hinzu.
 
-1. Platzieren Sie Ihren Cursor direkt oberhalb der letzten schließenden geschweiften Klammer **}** in der Datei, und geben Sie die Zeichen `svm` ein (dies steht für `static void Main`&mdash;machen Sie sich nicht allzu viele Sorgen, wenn Sie nicht wissen, was dies bedeutet).
+1. Platzieren Sie den Cursor unmittelbar vor der letzten schließenden Klammer **}** in der Datei, und geben Sie `svm` ein. (`svm` steht für `static void Main`. Die [Main()](/dotnet/csharp/programming-guide/main-and-command-args/)-Methode ist der Einstiegspunkt für C#-Anwendungen.)
 
    Ein Popup-Dialogfeld mit Informationen zum Codeausschnitt `svm` wird angezeigt.
 
@@ -50,7 +52,7 @@ Visual Studio stellt nützliche *Codeausschnitte* bereit, die Sie verwenden kön
 
 1. Drücken Sie zweimal auf die **TAB-TASTE**, um den Codeausschnitt einzufügen.
 
-   Daraufhin wir die Methodensignatur `static void Main()` zu der Datei hinzugefügt. Die [Main()](/dotnet/csharp/programming-guide/main-and-command-args/)-Methode ist der Einstiegspunkt für C#-Anwendungen.
+   Daraufhin wir die Methodensignatur `static void Main()` zu der Datei hinzugefügt.
 
 Die verfügbaren Codeausschnitte variieren je nach Programmiersprache. Sie können sich die für Ihre Sprache verfügbaren Codeausschnitte anzeigen lassen, indem Sie **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen** und anschließend den Ordner für Ihre Sprache auswählen. Für C# sieht die Liste wie folgt aus:
 

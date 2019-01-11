@@ -2,7 +2,6 @@
 title: 'CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8103353fc5d2e0d74b5355259f0e2bc77ddd974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890588"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden
 
@@ -38,28 +37,28 @@ Eine Ressourcenzeichenfolge enthält mindestens ein Wort, das von der Rechtschre
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel analysiert die Ressourcenzeichenfolge in Wörtern (zusammengesetzte Wörter versehen) und die Rechtschreibung in jeder Word-Token. Informationen zum Analysieren Algorithmus finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Diese Regel analysiert die Ressourcenzeichenfolge in Wörter, die (mit Token versehen zusammengesetzte Wörter) und überprüft die Rechtschreibung eines einzelnen Worts/Tokens. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
-## <a name="how-to-fix-violations"></a>Behandlung von Verstößen
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie vollständige Wörtern, die richtig geschrieben sind, oder ein benutzerdefiniertes Wörterbuch Wörter hinzu. Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie vollständige Wörtern, die richtig geschrieben sind, oder fügen die Wörter zu einem Benutzerwörterbuch. Weitere Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
-## <a name="change-the-dictionary-language"></a>Ändern Sie die Sprache des Wörterbuchs
+## <a name="change-the-dictionary-language"></a>Ändern Sie die Wörterbuchsprache
 
-Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, können Sie dies, damit durch Hinzufügen eines der folgenden Attribute auf Ihre *AssemblyInfo.cs* oder *AssemblyInfo.vb* Datei:
+Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, erreichen Sie daher durch das Hinzufügen eines der folgenden Attribute auf Ihre *"AssemblyInfo.cs"* oder *AssemblyInfo.vb* Datei:
 
-- Verwendung <xref:System.Reflection.AssemblyCultureAttribute> die Kultur angegeben werden, wenn Ihre Ressourcen in eine Satellitenassembly sind.
-- Verwendung <xref:System.Resources.NeutralResourcesLanguageAttribute> an die *neutrale Kultur* Ihrer Assembly, wenn Ihre Ressourcen in derselben Assembly wie der Code befinden.
+- Verwendung <xref:System.Reflection.AssemblyCultureAttribute> die Kultur angeben, wenn Ihre Ressourcen in einer Satellitenassembly befinden.
+- Verwendung <xref:System.Resources.NeutralResourcesLanguageAttribute> an die *neutrale Kultur* Ihrer Assembly, wenn Ihre Ressourcen in der gleichen Assembly wie Ihren Code sind.
 
 > [!IMPORTANT]
-> Wenn Sie die Kultur auf etwas anderes als eine Kultur Englisch-basierte festlegen, wird diese Regel zur Codeanalyse im Hintergrund deaktiviert.
+> Wenn Sie die Kultur auf etwas anderes als eine Kultur auf Englisch basierenden festlegen, ist diese Codeanalyse-Regelsätze im Hintergrund deaktiviert.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Unterdrücken Sie keine Warnung dieser Regel. Ordnungsgemäß verringern geschriebene Wörter die Zeitspanne, die für neue Softwarebibliotheken erforderlich ist.
+Unterdrücken Sie keine Warnung dieser Regel. Ordnungsgemäß verringern geschriebene Wörter Zeitspanne, die für neue Softwarebibliotheken erforderlich ist.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 - [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

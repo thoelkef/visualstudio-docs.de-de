@@ -1,9 +1,6 @@
 ---
-title: Source Control Entwurfsentscheidungen | Microsoft Docs
-ms.custom: ''
+title: Entwurfsentscheidungen bei der Datenquelle | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0385d5feb7baf7fe60e253616c8db0f326932e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd1ffa27a8dfa7c1d98e7242d71f7cfe83c319d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883184"
 ---
-# <a name="source-control-design-decisions"></a>Entwurfsentscheidungen für Datenquellen-Steuerelement
-Die folgenden entwurfsentscheidungen für Projekte berücksichtigen Sie beim Implementieren des Datenquellen-Steuerelements.  
+# <a name="source-control-design-decisions"></a>Entwurfsentscheidungen bei der Quellcodeverwaltung
+Die folgenden entwurfsentscheidungen für Projekte berücksichtigen Sie beim Implementieren von Datenquellen-Steuerelement.  
   
-## <a name="will-information-be-shared-or-private"></a>Werden Informationen freigegeben oder privat sein?  
- Die wichtigsten entwurfsentscheidung, die Sie vornehmen können ist, welche Informationen freigegeben werden kann und was privat ist. Beispielsweise ist die Liste der Dateien für das Projekt freigegeben, aber in dieser Liste der Dateien, einige möchten Benutzer ggf. private Dateien haben. Compilereinstellungen gelten, aber das Startprojekt ist im Allgemeinen privat. Einstellungen werden ausschließlich freigegebene, mit einer Außerkraftsetzung freigegebenen oder rein private. Programmbedingt private Elemente wie z. B. Lösung Benutzeroptionen (.suo)-Dateien nicht in die eingecheckt werden [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Achten Sie darauf, dass Sie zum Speichern der private Informationen im privaten Dateien wie z. B. die SUO-Datei oder einer bestimmten privaten-Datei, die Sie, z. B. Erstellen einer. csproj.user-Datei für Visual c# oder einer. vbproj.user-Datei für Visual Basic.  
+## <a name="will-information-be-shared-or-private"></a>Wird Informationen freigegeben oder privat sein?  
+ Die wichtigste entwurfsentscheidung, die Sie vornehmen können, ist, welche Informationen freigegeben werden kann und was privat ist. Beispielsweise wird die Liste der Dateien für das Projekt freigegeben, aber in der Liste der Dateien, einige Benutzer möchten private Dateien haben. Compilereinstellungen werden freigegeben, aber das Startprojekt in der Regel privat ist. Einstellungen sind entweder ausschließlich freigegebene, zusammen mit einer Außerkraftsetzung oder rein privat. Programmbedingt private Elemente, wie z. B. Lösung Benutzeroptionen (SUO)-Dateien werden nicht überprüft in [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Achten Sie darauf, dass Sie keine privaten Informationen in privaten Dateien, z. B. die SUO-Datei oder eine bestimmte private-Datei, die Sie, z. B. erstellen Speichern einer. csproj.user-Datei für Visual c# oder eine. vbproj.user-Datei für Visual Basic.  
   
  Diese Entscheidung ist nicht vollständig und kann auf einer Basis Element-vorgenommen werden.  
   
-## <a name="will-the-project-include-special-files"></a>Wird das Projekt spezielle Dateien enthalten?  
- Eine andere wichtige entwurfsentscheidung ist, ob die Projektstruktur spezielle Dateien verwendet. Spezielle Dateien sind ausgeblendete Dateien, die die Dateien zugrunde liegen, die sichtbar im Projektmappen-Explorer und in das Einchecken und Auschecken Dialogfelder sind. Wenn Sie spezielle Dateien verwenden, beachten Sie Folgendes:  
+## <a name="will-the-project-include-special-files"></a>Wird das Projekt, die spezielle Dateien enthalten?  
+ Eine weitere wichtige Entscheidung ist, ob Ihre Projektstruktur für spezielle Dateien verwendet. Spezielle Dateien sind ausgeblendet, die die Dateien zugrunde liegen, die sichtbar im Projektmappen-Explorer und in das Einchecken und Auschecken Dialogfelder sind. Wenn Sie spezielle Dateien verwenden, beachten Sie Folgendes:  
   
-1.  Ordnen Sie keine spezielle Dateien den Stammknoten des Projekts – d. h. mit dem Projekt die Datei selbst. Die Projektdatei, muss es sich um eine einzelne Datei sein.  
+1.  Ordnen Sie keine Gerätedateien, die die Stammknoten des Projekts, d. h. mit dem Projekt die Datei selbst. Die Projektdatei, muss es sich um eine einzelne Datei sein.  
   
-2.  Wenn spezielle Dateien hinzugefügt, entfernt oder umbenannt in einem Projekt auf die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> Ereignisse ausgelöst werden müssen, wobei das Flag festgelegt, der angibt, die Dateien sind spezielle Dateien. Diese Ereignisse werden von der Umgebung als Antwort auf das Projekt, das Aufrufen der entsprechenden aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden.  
+2.  Wenn spezielle Dateien hinzugefügt, entfernt oder umbenannt werden, in einem Projekt auf die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> müssen Ereignisse ausgelöst werden, wobei das Flag festgelegt, der angibt, die Dateien sind spezielle Dateien. Diese Ereignisse werden von der Umgebung als Reaktion auf das Projekt, das Aufrufen der entsprechenden aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden.  
   
-3.  Wenn das Projekt oder die-Editor aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> für eine Datei mit dieser Datei verknüpften speziellen Dateien werden nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien im zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen alle Dateien, die übergeben werden und entsprechend der speziellen Dateien in der Benutzeroberfläche Auschecken ausblenden.  
+3.  Wenn das Projekt oder die-Editor aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> für eine Datei, die speziellen Dateien, die der Datei zugeordneten nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien im zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen allen Dateien, die übergeben werden und entsprechend der speziellen Dateien in der Benutzeroberfläche Auschecken ausblenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

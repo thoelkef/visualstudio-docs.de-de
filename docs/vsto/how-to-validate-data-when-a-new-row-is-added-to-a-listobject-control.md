@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Überprüfen von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird'
-ms.custom: ''
+title: 'Vorgehensweise: Überprüfen Sie Daten aus, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,20 +14,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55dc8852952482914bc57a41579163c90672d1db
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f6fd03238f9b477f7530353b8b10afb71a41edd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989840"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Vorgehensweise: Überprüfen von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Vorgehensweise: Überprüfen Sie Daten aus, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
   Benutzer können einem <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, das an Daten gebunden ist, neue Zeilen hinzufügen. Sie können die Daten des Benutzers überprüfen, bevor Sie Änderungen in einem Commit an die Datenquelle übertragen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="data-validation"></a>Überprüfen von Daten  
- Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject> , das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> -Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Beispielsweise, wenn Ihre Anwendung erfordert, dass die Datenquelle nur Mitarbeiter zwischen 18 und 65 Jahren hinzugefügt werden können, stellen Sie sicher, dass das eingegebene Alter innerhalb dieses Bereichs liegt, bevor die Zeile hinzugefügt wird.  
+## <a name="data-validation"></a>Datenüberprüfung  
+ Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject> , das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> -Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Beispielsweise wenn Ihre Anwendung erfordert, dass die Datenquelle nur Mitarbeiter zwischen 18 und 65 Jahren hinzugefügt werden können, stellen Sie sicher, dass das eingegebene Alter innerhalb dieses Bereichs liegt, bevor die Zeile hinzugefügt wird.  
   
 > [!NOTE]  
 >  Zusätzlich zum Client sollte die Benutzereingabe auch immer auf dem Server überprüft werden. Weitere Informationen finden Sie unter [sichere Clientanwendungen](/dotnet/framework/data/adonet/secure-client-applications).  
@@ -42,7 +39,7 @@ ms.locfileid: "34268359"
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]  
   
-2.  Erstellen Sie ein neues <xref:System.Data.DataTable> und fügen Sie Beispielspalten und Daten in der `Startup` -Ereignishandler, der die `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` -Klasse (in einem VSTO-Add-in-Projekt).  
+2.  Erstellen Sie ein neues <xref:System.Data.DataTable> und fügen Sie Beispielspalten und Daten in die `Startup` -Ereignishandler des der `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` Klasse (in einem VSTO-Add-in-Projekt).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]  
@@ -61,6 +58,4 @@ ms.locfileid: "34268359"
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [ListObject-Steuerelement](../vsto/listobject-control.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [Vorgehensweise: Zuordnung von ListObject-Spalten an Daten](../vsto/how-to-map-listobject-columns-to-data.md)  
-  
-  
+ [Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten](../vsto/how-to-map-listobject-columns-to-data.md)  

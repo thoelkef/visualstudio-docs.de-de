@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941663"
 ---
 # <a name="domain-property-value-change-handlers"></a>Handler für wertänderungen von Domäne
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Alternative Technik: Berechnete Eigenschaften
+### <a name="alternative-technique-calculated-properties"></a>Alternative Technik: Eigenschaften von berechneten
 
 Das vorherige Beispiel veranschaulicht, wie mit "OnValueChanged()" Werte von einer Domäneneigenschaft an eine andere übertragen werden können. Jede Eigenschaft verfügt über einen eigenen gespeicherten Wert.
 
@@ -105,7 +104,7 @@ Statt des vorherigen Beispiels, legen Sie fest, die **Art** Feld `TextLengthCoun
 
 Ein möglicher Nachteil berechneter Eigenschaften ist jedoch, dass der Ausdruck bei jeder Verwendung des Werts ausgewertet wird. Dies kann ein Leistungsproblem darstellen. Auch gibt es "OnValueChanging()" und "OnValueChanged()" nicht für eine berechnete Eigenschaft.
 
-### <a name="alternative-technique-change-rules"></a>Alternative Technik: Änderungsregeln
+### <a name="alternative-technique-change-rules"></a>Alternative Technik: Ändern der Regeln
 
 Wenn Sie eine ChangeRule definieren, wird es am Ende einer Transaktion ausgeführt, in dem der Wert einer Eigenschaft ändert.  Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 

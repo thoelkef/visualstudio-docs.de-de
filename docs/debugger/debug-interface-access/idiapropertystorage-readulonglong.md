@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadULONGLONG | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 457ca1d493498e0592c572ae0c93d7d2d6a01d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3c15f6b7dc4a4c110507a3b65a34f4a8c3adc505
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989882"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 Liest `ULONGLONG` Werte in einem Eigenschaftensatz.  
@@ -27,7 +25,7 @@ Liest `ULONGLONG` Werte in einem Eigenschaftensatz.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT ReadULONGLONG (   
+HRESULT ReadULONGLONG (   
    PROPID     id,  
    ULONGLONG* pValue  
 );  

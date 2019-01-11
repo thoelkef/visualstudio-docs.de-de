@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55e89d1195a37ac6a15852e9e54fd5ce96de0359
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989602"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Entfernt einen angegebenes Programm Knoten aus Verfügbarkeit für die debug-Engines (DEs) und sitzungsbasierter Debug-Manager (SDM).  
@@ -28,13 +25,13 @@ Entfernt einen angegebenes Programm Knoten aus Verfügbarkeit für die debug-Eng
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT UnpublishProgramNode(  
-   IDebugProgramNode2* pProgramNode  
+HRESULT UnpublishProgramNode(  
+   IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
 ```csharp  
-int UnpublishProgramNode(  
+int UnpublishProgramNode(  
    IDebugProgramNode2 pProgramNode  
 );  
 ```  

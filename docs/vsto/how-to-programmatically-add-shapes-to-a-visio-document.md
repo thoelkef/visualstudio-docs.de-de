@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 79b71b89ef8923d311fd38684158dd1694aa893f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865556"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten
   Sie können einem Microsoft Office Visio-Dokument Shapes hinzufügen, indem Sie die Master-Shapes aus einer Schablone abrufen und auf der aktiven Seite ablegen.  
@@ -44,5 +41,3 @@ ms.locfileid: "53802659"
  [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
  [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)   
  [Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
-  
-  

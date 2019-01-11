@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von Profiler-APIs | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 09368aceed6828e63c0e5c9d20a77d1787bc2c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891267"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 
@@ -32,14 +30,16 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
   
  Mithilfe des Visual Studio-Profilers können Sie die Erfassung von Daten einschränken. In dieser exemplarischen Vorgehensweise wird in einem Beispiel dargestellt, wie Sie die Erfassung von Daten mithilfe von Profiler-APIs einschränken. Der Visual Studio-Profiler stellt eine API zum Überwachen der Datenerfassung innerhalb einer Anwendung bereit.  
   
- Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+ Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
   
- Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Die DLL befindet sich im Verzeichnis *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>.  
+ Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  In dieser exemplarischen Vorgehensweise wird angenommen, dass Ihre Entwicklungsumgebung so konfiguriert ist, dass sie Debuggen und Sampling unterstützt. In den folgenden Artikeln wird eine Übersicht über diese Vorgehensweise gegeben:  
   
- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
+ [Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)  
   
  [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)  
   
@@ -60,7 +60,7 @@ DataCollection.CurrentId);
 1.  Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.  
   
     > [!NOTE]
-    >  Der Build muss auf die *Microsoft.VisualStudio.Profiler.dll*-Bibliothek verweisen, die im Verzeichnis *Microsoft Visual Studio 9\Team Tools\Performance Tools* gespeichert ist.  
+    >  Der Build muss auf die Bibliothek *Microsoft.VisualStudio.Profiler.dll* verweisen, die im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* gespeichert ist.  
   
 2.  Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:  
   
@@ -151,17 +151,17 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  Geben Sie den folgenden Befehl ein: **VSInstr \<dateiname>.exe**  
+3.  Geben Sie folgenden Befehl ein: **VSInstr \<Dateiname>.exe**  
   
-4.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<dateiname>.vsp**  
+4.  Geben Sie folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<Dateiname>.vsp**  
   
-5.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /globaloff**  
+5.  Geben Sie folgenden Befehl ein: **VSPerfCmd /globaloff**  
   
 6.  Führen Sie das Programm aus.  
   
-7.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /shutdown**  
+7.  Geben Sie folgenden Befehl ein: **VSPerfCmd /shutdown**  
   
-8.  Geben Sie den folgenden Befehl ein: **VSPerfReport /calltrace:\<dateiname>.vsp**  
+8.  Geben Sie folgenden Befehl ein: **VSPerfReport /calltrace:\<Dateiname>.vsp**  
   
      Eine *CSV-Datei* wird im aktuellen Verzeichnis zusammen mit den erfassten Leistungsdaten erstellt.  
   

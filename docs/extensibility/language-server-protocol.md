@@ -1,9 +1,6 @@
 ---
 title: Übersicht über die Language-Server-Protokoll | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828224"
 ---
 # <a name="language-server-protocol"></a>Sprachserverprotokoll
 
@@ -52,13 +49,13 @@ Im folgenden ist ein Beispiel für die ein Tool und eine Sprache-Server bei eine
 
 ![LSP-Flussdiagramm](media/lsp-flow-diagram.png)
 
-* **Der Benutzer öffnet eine Datei (als Dokument bezeichnet) im Tool**: das Tool wird der Sprache-Server benachrichtigt, dass ein Dokument geöffnet ist ("TextDocument/DidOpen"). Von nun an die Wahrheit über den Inhalt des Dokuments ist nicht mehr im Dateisystem jedoch vom Tool im Arbeitsspeicher beibehalten.
+* **Der Benutzer öffnet eine Datei (als Dokument bezeichnet) im Tool**: Das Tool wird der Sprache-Server benachrichtigt, dass ein Dokument geöffnet ist ("TextDocument/DidOpen"). Von nun an die Wahrheit über den Inhalt des Dokuments ist nicht mehr im Dateisystem jedoch vom Tool im Arbeitsspeicher beibehalten.
 
-* **Der Benutzer trifft Bearbeitungen**: das Tool benachrichtigt den Server über die Dokument-Änderung (' TextDocument/DidChange") und die semantische Informationen des Programms durch die Language-Server aktualisiert wird. Wie in diesem Fall wird der Language-Server diese Informationen werden analysiert, und benachrichtigt das Tool mit dem erkannten Fehler und Warnungen ("TextDocument/PublishDiagnostics").
+* **Der Benutzer trifft Bearbeitungen**: Das Tool benachrichtigt den Server über die Dokument-Änderung (' TextDocument/DidChange"), und die semantische Informationen des Programms durch die Language-Server aktualisiert wird. Wie in diesem Fall wird der Language-Server diese Informationen werden analysiert, und benachrichtigt das Tool mit dem erkannten Fehler und Warnungen ("TextDocument/PublishDiagnostics").
 
-* **Der Benutzer führt die "Gehe zu Definition" auf ein Symbol im Editor**: das Tool sendet eine Anforderung "TextDocument/Definition" mit zwei Parametern: (1) der Dokument-URI und (2) die Position im Text aus, in dem der zum Aufrufen der Anforderung der Anwendungsdefinition an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und die Position der Definition des Symbols, innerhalb des Dokuments.
+* **Der Benutzer führt die "Gehe zu Definition" auf ein Symbol im Editor**: Das Tool sendet eine Anforderung "TextDocument/Definition" mit zwei Parametern: (1) der Dokument-URI und (2) die Position im Text aus, in dem der zum Aufrufen der Anforderung der Anwendungsdefinition an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und die Position der Definition des Symbols, innerhalb des Dokuments.
 
-* **Der Benutzer schließt das Dokument (Datei)**: eine "TextDocument/DidClose" Benachrichtigung wird gesendet, aus dem Tool, den Language-Server, der das Dokument ist nun nicht mehr im Arbeitsspeicher und, die den aktuellen Inhalt ist nun auf dem Dateisystem auf dem neuesten Stand zu informieren.
+* **Der Benutzer schließt das Dokument (Datei)**: Eine "TextDocument/DidClose" Benachrichtigung wird gesendet, aus dem Tool, den Language-Server, den das Dokument ist nun nicht mehr im Arbeitsspeicher und, die den aktuellen Inhalt ist nun auf dem Dateisystem auf dem neuesten Stand zu informieren.
 
 In diesem Beispiel wird veranschaulicht, wie das Protokoll mit dem Language-Server, auf der Ebene der Editor-Funktionen wie "Gehe zu Definition", "Alle Verweise suchen" kommuniziert. Die Datentypen, die vom Protokoll verwendete sind-Editor oder IDE "Datentypen", wie das aktuell geöffneten Textdokument und die Position des Cursors. Die Datentypen sind nicht auf der Ebene der einer Sprache Domäne Programmiermodell, das in der Regel die abstrakte Syntaxstrukturen und Compiler-Symbole (z. B. aufgelösten Typen, Namespaces,...) bieten würde. Dadurch wird das Protokoll erheblich vereinfacht.
 

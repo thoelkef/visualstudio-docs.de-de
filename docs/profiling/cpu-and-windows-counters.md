@@ -1,8 +1,6 @@
 ---
 title: CPU- und Windows-Indikatoren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912635"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 
@@ -113,7 +111,7 @@ Zum Auflisten der verfügbaren Indikatoren auf einem Computer in der Visual Stud
 
 4. Wählen Sie aus der Liste **Indikatorkategorie** eine Gruppe von Leistungsindikatoren aus. Der Windows-Leistungsindikator für die Gruppe wird im Listenfeld angezeigt.
 
-     **Hinweis:** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.
+     **Hinweis**: Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorsammlung zurückzukehren.
 
 ### <a name="command-line"></a>Befehlszeile
 
@@ -127,9 +125,7 @@ Mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) können Sie die
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     Dabei ist  *\<Visual Studio Performance Tools Directory >* der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise
-
-     *C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools*
+     Dabei ist *\<Visual Studio Performance Tools Directory>* der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Informationen zum Abrufen des Pfads zu den Leistungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Siehe auch
 

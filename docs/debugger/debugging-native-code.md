@@ -1,8 +1,6 @@
 ---
 title: Debuggen von nativem Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -22,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870767"
 ---
 # <a name="debugging-native-code"></a>Debuggen von nativem Code
-In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/getting-started-with-the-debugger.md).  
+In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md)  
+ [Vorgehensweise: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md)  
  Enthält Tipps zum Debuggen optimierten Codes, im Einzelnen werden das Debuggen einer nicht optimierten Version eines Programms beschrieben, Standardoptimierungseinstellungen für Debug- und Releasekonfigurationen und das Auffinden von Fehlern, die nur in optimiertem Code vorkommen (Aktivieren der Optimierung in einer Debugbuildkonfiguration).  
   
  [DebugBreak und __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -42,7 +40,7 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [C/C++-Assertionen](../debugger/c-cpp-assertions.md)  
  Hier werden Assertionsanweisungen, deren Funktionsweise, die Vorteile ihrer Verwendung (Erfassen von Logikfehlern, Überprüfen der Ergebnisse einer OPeration, Testen von Fehlerzuständen), die Interaktion von Assertionsanweisungen mit `_DEBUG` sowie die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützten Assertionstypen beschrieben.  
   
- [Gewusst wie: Debuggen von Inline-Assemblycode](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Vorgehensweise: Debuggen von Inline-Assemblycode](../debugger/how-to-debug-inline-assembly-code.md)  
  Hier finden Sie kurze Anweisungen zur Verwendung des Disassemblierungsfensters, in dem Assemblyanweisungen angezeigt werden, und des Fensters Register, in dem Registerinhalte angezeigt werden, sowie Links zu Themen über diese Fenster.  
   
  [MFC-Debugverfahren](../debugger/mfc-debugging-techniques.md)  
@@ -57,11 +55,11 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)  
  Bietet Informationen zum Debuggen von COM- und ActiveX-Anwendungen, einschließlich der Tools, die für das Debuggen von COM und ActiveX verwendet werden können.  
   
- [Gewusst wie: Debuggen von eingefügtem Code](../debugger/how-to-debug-injected-code.md)  
+ [Vorgehensweise: Debuggen von eingefügtem Code](../debugger/how-to-debug-injected-code.md)  
  Bietet Hinweise zum Debuggen von Code, in dem Attribute verwendet werden. Zu den behandelten Themen gehören das Aktivieren von Quellcodeanmerkungen, das Anzeigen von eingefügtem Code sowie das Anzeigen des Disassemblycodes am aktuellen Ausführungspunkt.  
   
- [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Beschreibt, wie die **Parallele Aufgaben** und **parallele Stapel** Toolfenster zum Debuggen einer parallelen Anwendung.  
+ [Exemplarische Vorgehensweise: Debuggen einer Parallelanwendung](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Beschreibt, wie die Toolfenster **Parallele Aufgaben** und **Parallele Stapel** zum Debuggen einer parallelen Anwendung verwendet werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Visual C++-Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md)  

@@ -1,9 +1,6 @@
 ---
 title: Enumeratoren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e555ca317dea79d1fe3b856a7c449d01f0b792af
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 26631c4b6ae6d6fb8d5bd00c772cc7f11943d459
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848099"
 ---
 # <a name="enumerators"></a>Enumeratoren
 Dieser Abschnitt enthält die Datentypen der Enumerator in der Quelle Steuerelement-Plug-in-API, die das Quellcodeverwaltungs-Plug-in zu kennen müssen.  
@@ -27,7 +24,7 @@ Dieser Abschnitt enthält die Datentypen der Enumerator in der Quelle Steuerelem
  [Befehlscode](../extensibility/command-code-enumerator.md)  
  Listet die Optionen für die [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) und [SccPopulateList](../extensibility/sccpopulatelist-function.md) Funktionen.  
   
- [Nachricht](../extensibility/message-enumerator.md)  
+ [Meldung](../extensibility/message-enumerator.md)  
  Listet Flags, die zum Drucken Rückrufs [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
  [Datei-Statuscode](../extensibility/file-status-code-enumerator.md)  

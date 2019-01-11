@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Clone | Microsoft Docs
+title: IEnumRemoteDebugApplicationThreads::Clone | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9c0d745d2404df72961a28c9bc29059b7c2ac57
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e64a83b9cf5184e8a7dfe45cc33b698e5bbdd4f6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727160"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091693"
 ---
 # <a name="ienumremotedebugapplicationthreadsclone"></a>IEnumRemoteDebugApplicationThreads::Clone
 Erstellt einen Enumerator, der den gleichen Zustand wie der aktuelle Enumerator enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  

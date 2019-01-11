@@ -14,16 +14,15 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833856"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -329,7 +328,7 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 
 Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wert aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | always | Es wird bevorzugt, dass Zugriffsmodifizierer angegeben werden |
 | for\_non\_interface_members | Es wird bevorzugt, dass Zugriffsmodifizierer deklariert werden (außer für Members von öffentlichen Schnittstellen). Dies entspricht **always** und fungiert als zukünftige Korrekturhilfe, falls Standard-Schnittstellenmethoden in C# hinzugefügt werden. |
@@ -994,7 +993,7 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Sprachve
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Methoden bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Methoden bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1014,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Konstruktoren bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Konstruktoren bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1034,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Operatoren bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Operatoren bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1056,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Eigenschaften bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Eigenschaften bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1076,7 +1075,7 @@ public int Age { get { return _age; }}
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Indexer bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Indexer bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1096,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 Diese Regel akzeptiert Werte aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | true | Ausdruckskörpermember werden für Accessoren bevorzugt |
 | when_on_single_line | Ausdruckskörpermember werden für Accessoren bevorzugt, wenn diese aus einer einzelnen Zeile bestehen |
@@ -1485,7 +1484,7 @@ In der folgenden Tabelle werden die Regelnamen für „neue Zeile“, anzuwenden
 
 Diese Regel bezieht sich auf die Frage, ob eine öffnende geschweifte Klammer `{` in derselben Zeile wie der vorangehende Code oder in einer neuen Zeile platziert werden soll. Bei dieser Regel geben Sie nicht **TRUE** oder **FALSE** an. Stattdessen geben Sie **Alle**, **Keine** oder mindestens ein Codeelement an, wie z.B. **Methoden** oder **Eigenschaften**, um festzulegen, wann diese Regel angewendet werden sollte. Die vollständige Liste der zulässigen Werte wird in der folgenden Tabelle dargestellt:
 
-| Wert | Beschreibung 
+| Wert | Beschreibung
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>(Trennen Sie mehrere Arten mit einem Komma). | Klammern müssen für die angegebenen Codeelemente in einer neuen Zeile stehen (Stil „Allman“) |
 | alle | Klammern müssen für alle Ausdrücke in einer neuen Zeile stehen (Stil „Allman“) |
@@ -1750,7 +1749,7 @@ default:
 
 Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wert aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:----------- |
 | flush_left | Bezeichnungen werden in der Spalte ganz links angeordnet |
 | one_less_than_current | Bezeichnungen werden mit geringerem Einzug platziert als der aktuelle Kontext. |
@@ -1893,7 +1892,7 @@ MyMethod(argument);
 
 Diese Regel akzeptiert mindestens einen Wert aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:------------|
 | control_flow_statements | Leerzeichen zwischen Klammern von Ablaufsteuerungsanweisungen einfügen. |
 | Ausdrücke | Leerzeichen zwischen Klammern von Ausdrücken einfügen. |
@@ -1980,7 +1979,7 @@ class C :I
 
 Diese Regel akzeptiert einen Wert aus der folgenden Tabelle:
 
-| Wert | Beschreibung  |
+| Wert | Beschreibung |
 | ----- |:------------|
 | before_and_after | Leerzeichen vor und nach dem binären Operator einfügen |
 | Keine | Leerzeichen vor und nach dem binären Operator entfernen |

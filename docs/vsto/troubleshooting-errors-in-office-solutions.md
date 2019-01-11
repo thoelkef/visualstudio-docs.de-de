@@ -1,9 +1,6 @@
 ---
 title: Behandeln von Fehlern in Office-Projektmappen
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919019"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Behandeln von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672950"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Fehler beim Erstellen einer Excel-Arbeitsmappenprojekt basierend auf einer vorhandenen Arbeitsmappe  
  Wenn Sie ein neues Excel-Arbeitsmappenprojekt basierend auf einer vorhandenen Arbeitsmappe erstellen, wird möglicherweise eine Kombination der folgenden Fehler angezeigt.  
   
- Excel: "Datenschutzwarnung: Dieses Dokument enthält Makros, ActiveX-Steuerelemente, XML-Erweiterungspaketinformationen oder Webkomponenten. Diese enthalten möglicherweise persönliche Informationen, die durch die Dokumentprüfung nicht entfernt werden können."  
+ Excel: "Datenschutzwarnung: Dieses Dokument enthält Makros, ActiveX-Steuerelemente, XML-erweiterungspaketinformationen oder Webkomponenten. Diese enthalten möglicherweise persönliche Informationen, die durch die Dokumentprüfung nicht entfernt werden können."  
   
- Visual Studio: "Der Designer wurde nicht ordnungsgemäß geladen."  
+ Visual Studio: "Designer wurde nicht ordnungsgemäß geladen werden."  
   
  Diese Fehler können auftreten, wenn Sie versuchen, ein Projekt zu erstellen, das auf einer Arbeitsmappe basiert, deren persönliche Informationen mithilfe der Dokumentprüfung entfernt wurden. Führen Sie vor dem Erstellen des Projekts die folgenden Schritte aus, um diesen Fehler zu vermeiden.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Dieser Code führt zu folgenden Kompilierungsfehlern:  
   
-- Visual Basic: "Verweis auf die Klasse 'DocumentClass' ist nicht zulässig, wenn die Assembly nicht-PIA-Modus verknüpft ist."  
+- Visual Basic: "Verweis auf die Klasse 'DocumentClass' ist nicht zulässig, wenn die Assembly nicht-PIA-Modus verknüpft ist."  
   
-- Visual c#: "der Interoptyp 'Microsoft.Office.Interop.Word.DocumentClass' kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."  
+- Visual C#: "Der Interoptyp 'Microsoft.Office.Interop.Word.DocumentClass' kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."  
   
   Um diesen Fehler zu beheben, ändern Sie den Code, sodass er stattdessen auf die entsprechende Schnittstelle verweist. Verwenden Sie z. B. anstelle eines Verweises auf ein <xref:Microsoft.Office.Interop.Word.DocumentClass>-Objekt einen Verweis auf eine Instanz der <xref:Microsoft.Office.Interop.Word.Document>-Schnittstelle.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Problembehandlung bei Office-Projektmappen](../vsto/troubleshooting-office-solutions.md)   
  [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)   
  [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

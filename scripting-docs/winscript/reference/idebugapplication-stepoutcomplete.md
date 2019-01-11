@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Microsoft Docs
+title: IDebugApplication::StepOutComplete | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c344f0316bda6ed5ef895c1b88ae7b1a6465e73
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725640"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089920"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Benachrichtigt, dass ein Sprachmodul im einschrittigen Modus umgehend an den Aufrufer zurückgeben dem Debug-Prozess-Manager.  
+Benachrichtigt prozessbasierten Debug-Manager, dass es sich bei eine Sprach-Engine im einschrittigen Modus zum an den Aufrufer zurückgegeben wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT StepOutComplete();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,7 +45,7 @@ HRESULT StepOutComplete();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Sprache-Module aufrufen im einschrittigen Modus diese Methode, unmittelbar bevor sie sich an ihren Aufrufer zurückgeben. Der Prozess-Manager verwendet diese Möglichkeit, um Script-Module zu informieren, die bei der ersten Gelegenheit umgebrochen werden soll. Diese Technik ist wie sprachübergreifende Schritt Modi implementiert werden.  
+ Sprach-Engines aufrufen im einschrittigen Modus diese Methode, unmittelbar bevor sie sich an ihren Aufrufer zurückgeben. Prozessbasierten Debug-Manager verwendet diese Gelegenheit, um die Skript-Engines zu informieren, die sie bei der ersten Gelegenheit umgebrochen werden soll. Diese Technik ist wie sprachübergreifende Schritt Modi implementiert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden'
+title: 'CA1709: Bezeichner sollten beachtet werden'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881726"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bezeichner sollten beachtet werden
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "49891348"
 
  Diese Regel den Namen in Wörter, die basierend auf die Groß-/Kleinschreibung unterteilt und überprüft alle zwei Buchstaben bestehenden Wörter mit einer Liste der allgemeinen zwei Buchstaben bestehenden Wörter wie "In" oder "My". Wenn eine Übereinstimmung nicht gefunden wird, wird angenommen, dass das Wort ein Akronym handelt. Mit dieser Regel wird außerdem davon ausgegangen, dass es ein Akronym gefunden hat, wenn Sie den Namen entweder vier Großbuchstaben in einer Zeile oder drei Großbuchstaben in einer Zeile am Ende des Namens enthält.
 
- Gemäß der Konvention verwenden zwei Buchstaben bestehenden Akronyme Großbuchstaben und Akronyme der drei oder mehr Zeichen verwenden Pascal-Schreibweise zur Groß-und Kleinschreibung. Die folgenden Beispiele verwenden die Benennungskonvention: "DB", "CR", "Cpa" und "Ecma". In den folgenden Beispielen verstoßen gegen die Konvention: '-e/a', 'XML' und "DoD", und für nicht-Parameternamen, "Xp" und "cpl".
+ Gemäß der Konvention verwenden zwei Buchstaben bestehenden Akronyme Großbuchstaben und Akronyme der drei oder mehr Zeichen verwenden Pascal-Schreibweise zur Groß-und Kleinschreibung. Die folgenden Beispiele verwenden die Benennungskonvention: "DB", "CR", "Cpa" und "Ecma". In den folgenden Beispielen verstoßen gegen die Konvention: '-E/a', 'XML' und "DoD", und für nicht-Parameternamen, "Xp" und "cpl".
 
  "ID" ist, einen Sonderfall dar, die dazu führen, dass einen Verstoß gegen diese Regel. "Id" ist kein Akronym, aber es ist eine Abkürzung für "ID".
 
@@ -60,7 +59,7 @@ ms.locfileid: "49891348"
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
  Es ist sicher, diese Warnung zu unterdrücken, wenn Sie Ihre eigenen Benennungskonventionen haben oder wenn der Bezeichner, einen ordnungsgemäßen Namen, z. B. den Namen eines Unternehmens oder eine Technologie darstellt.
 
- Sie können auch bestimmte Begriffe, Abkürzungen und Akronyme hinzufügen, um ein benutzerdefiniertes Wörterbuch des Code-Analyse. In benutzerdefinierten Wörterbuchs angegebenen Begriffe verursacht keine Verstöße gegen diese Regel. Weitere Informationen finden Sie unter [wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Sie können auch bestimmte Begriffe, Abkürzungen und Akronyme hinzufügen, um ein benutzerdefiniertes Wörterbuch des Code-Analyse. In benutzerdefinierten Wörterbuchs angegebenen Begriffe verursacht keine Verstöße gegen diese Regel. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

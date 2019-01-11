@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: IScriptEntry::GetRange | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729040"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088737"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Gibt die Startposition und Länge eines Eintrags an.  
+Gibt die Startposition und Länge eines Eintrags.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -39,18 +39,18 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parameter  
  `pichMin`  
- [out] Für `IScriptEntry` Objekte, die einen Skriptblock geben 0 zurück.  
+ [out] Für `IScriptEntry` Objekte, die einen Skriptblock angeben, wird 0 zurückgegeben.  
   
- Für `IScriptEntry` Objekte, die angeben, ein Funktionsobjekt gibt die Startposition der Funktion im aktuellen Skriptblock.  
+ Für `IScriptEntry` Objekte, die angeben, ein Funktionsobjekt, gibt die Anfangsposition der Funktion im aktuellen Skriptblock.  
   
  Für `IScriptScriptlet` Objekte, wird 0 zurückgegeben.  
   
  `pcch`  
- [out] Für `IScriptEntry` Objekte, die einen Skriptblock angeben gibt die Länge des Texts zurück.  
+ [out] Für `IScriptEntry` Objekte, die angeben, einen Skriptblock, gibt die Länge des Texts zurück.  
   
- Für `IScriptEntry` Objekte, die angeben, ein Funktionsobjekt gibt die Länge der Definition der Funktion zurück.  
+ Für `IScriptEntry` Objekte, die angeben, ein Funktionsobjekt, gibt die Länge der Definition der Funktion zurück.  
   
- Für `IScriptScriptlet` Objekte, gibt die Länge des Eintrags.  
+ Für `IScriptScriptlet` Objekte, gibt die Länge des Eintrags zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

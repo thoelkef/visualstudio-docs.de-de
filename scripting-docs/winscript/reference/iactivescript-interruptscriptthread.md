@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: 'IActiveScript:: Interruptscriptthread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad717ee950dda4f0f0d7a14292f0f5f150ab4973
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d20847245e25ec6227bb043df3190a6db5f095d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088932"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Unterbricht die Ausführung von einem ausgeführten Skriptthread (eine Ereignissenke, eine unmittelbare Ausführung oder einen Makroaufruf). Diese Methode kann verwendet werden, um ein Skript zu beenden, die (z. B. in einer Endlosschleife) festsitzt. Kann ohne eine Legende nicht zur Basis Hostobjekte oder in von nicht-Base-Threads aufgerufen werden der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Methode.  
+Unterbricht die Ausführung einen ausgeführten Skriptthread (eine Ereignissenke, eine unmittelbare Ausführung oder einem Makroaufruf). Diese Methode kann verwendet werden, um ein Skript zu beenden, die (z. B. in einer Endlosschleife) gebunden ist. Kann ohne eine Legende nicht zur Basis, auf dem Host-Objekte oder von nicht-Base Threads aufgerufen werden die [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Methode.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT InterruptScriptThread(  
     SCRIPTTHREADID   stidThread,  // identifier of thread  
     const EXCEPINFO *pexcepinfo,  // receives error information  
@@ -40,24 +40,24 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Parameter  
  `stidThread`  
- [in] Der Bezeichner des Threads, die Interrupts oder einer der folgenden speziellen Thread-ID-Werte:  
+ [in] Die ID des Threads, um den Interrupt oder eine der folgenden speziellen Thread-ID-Werte:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Alle Threads. Die Unterbrechung wird für alle Skriptmethoden gleichzeitig in Verarbeitung befindlichen angewendet. Beachten Sie, dass, wenn der Aufrufer angefordert hat, dass das Skript getrennt werden, das nächste Skript Ereignis den Code erneut ausführen, durch den Aufruf bewirkt, dass die [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) Methode mit dem SCRIPTSTATE_DISCONNECTED oder SCRIPTSTATE_INITIALIZED-Flag festgelegt.|  
-|SCRIPTTHREADID_BASE|Die Basis-Thread. d. h. wurde der Thread, in dem das Skript-engine-instanziiert.|  
-|SCRIPTTHREADID_CURRENT|Den gerade ausgeführten Thread.|  
+|SCRIPTTHREADID_ALL|Alle Threads. Die Unterbrechung wird auf alle Skriptmethoden gerade angewendet. Beachten Sie, dass, wenn der Aufrufer angefordert hat, dass das Skript getrennt werden, das nächste Skript Ereignis Serverskript-Code erneut ausführen durch den Aufruf bewirkt, dass die [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) -Methode mit dem SCRIPTSTATE_DISCONNECTED oder SCRIPTSTATE_INITIALIZED-Flag festlegen.|  
+|SCRIPTTHREADID_BASE|Die Basis-Thread. instanziiert wurde, also die in dem der Skript-Engine-Threads.|  
+|SCRIPTTHREADID_CURRENT|Der aktuell ausgeführten Thread.|  
   
  `pexcepinfo`  
- [in] Der Adresse einer `EXCEPINFO` Struktur, enthält die Fehlerinformationen, die an der abgebrochenen Skript gemeldet werden sollte.  
+ [in] Adresse von einem `EXCEPINFO` Struktur, die mit den Fehlerinformationen, die an das Skript abgebrochenen gemeldet werden sollen.  
   
  `dwFlags`  
- [in] Optionsflags für die Unterbrechung zugeordnet. Einer der folgenden Werte ist möglich:  
+ [in] Flags, die über diese Unterbrechung-Option. Einer der folgenden Werte ist möglich:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|Wenn unterstützt, geben Sie das Skriptmodul-Debugger an den aktuellen Ausführungspunkt in Skript aus.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Wenn das Skriptmodul Sprache unterstützt, können Sie das Skript, das die Ausnahme zu behandeln. Andernfalls Skriptmethode wird abgebrochen, und der Fehlercode an den Aufrufer zurückgegeben wird; d. h. Ereignis Quelle oder das Makro Invoker.|  
+|SCRIPTINTERRUPT_DEBUG|Wenn unterstützt, geben Sie die Skript-Engine-Debugger am aktuellen Ausführungspunkt Skript aus.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Wenn von der Skript-Engine-Sprache unterstützt wird, können Sie das Skript die Ausnahme zu behandeln. Andernfalls die Skriptmethode wird abgebrochen, und der Fehlercode an den Aufrufer zurückgegeben wird; d. h. die Ereignis Quelle oder das Makro aufrufende Instanz.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -67,7 +67,7 @@ HRESULT InterruptScriptThread(
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

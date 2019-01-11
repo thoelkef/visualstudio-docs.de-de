@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Target Office-Anwendungen durch primäre Interopassemblys'
-ms.custom: ''
+title: 'Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845901"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Gewusst wie: Target Office-Anwendungen durch primäre Interopassemblys
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:  
   
 - Sie möchten Funktionen anderer Microsoft Office-Anwendungen im Projekt verwenden. Sie möchten z. B. Features von Microsoft Office Excel in einem Projekt für Microsoft Office Word verwenden.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863749"
  [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)   
  [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Gewusst wie: Installieren von Office primary interop-Assemblys](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

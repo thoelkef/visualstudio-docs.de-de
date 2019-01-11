@@ -1,9 +1,6 @@
 ---
-title: Ausdruck Auswertung Schnittstellen | Microsoft Docs
-ms.custom: ''
+title: Schnittstellen für die Ausdrucksauswertung | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, interfaces
@@ -13,51 +10,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9582f965fe1d8a00c97548dbc5f458ae4e1198
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5367d12593ae9789ff0529c76cc0494a6f99ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932271"
 ---
-# <a name="expression-evaluation-interfaces"></a>Ausdruck Auswertung Schnittstellen
+# <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
->  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Im folgenden sind die Schnittstellen der Auswertung Ausdruck für die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging-SDK.  
+ Im folgenden sind die Schnittstellen für die Ausdrucksauswertung für die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging-SDK.  
   
 ## <a name="discussion"></a>Diskussion  
- Diese Schnittstellen werden zum Auswerten von Ausdrücken in einer Aufrufliste im Unterbrechungsmodus. Sie sind nur für common Language Run-Time-ausdrucksauswertungen (EE) implementiert.  
+ Diese Schnittstellen werden zum Auswerten von Ausdrücken in einer Aufrufliste während des Unterbrechungsmodus verwendet. Sie sind nur für die common Language Run-Time-ausdrucksauswertungen (EE) implementiert.  
   
- Jede Schnittstelle in der Tabelle wird die Komponente, die sie, in der folgenden Liste implementieren kann gezeigt:  
+ Jede Schnittstelle in der Tabelle zeigt die Komponente, die sie in der folgenden Liste implementieren kann:  
   
--   Debuggen des Datenbankmoduls (DE)  
+-   Debug-Engine (DE)  
   
 -   Ausdrucksauswertung (EE)  
   
 -   Visual Studio (VS)  
   
-|Interface|Implementiert durch|Beschreibung|  
+|Interface|Implementiert von|Beschreibung|  
 |---------------|--------------------|-----------------|  
-|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Stellt einen numerische Alias für eine Variable dar.|  
-|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Stellt einen numerische Alias für eine Variable dar und ermöglicht eine ausdrucksauswertung (EE), um die Anwendungsdomäne für den Alias zu erhalten.|  
-|[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Stellt ein Arrayobjekt.|  
-|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Stellt ein verwaltetes Array-Objekt dar und ermöglicht eine ausdrucksauswertung (EE), um zu bestimmen, den Basisindex (Untergrenze) für das Array.|  
+|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Stellt einen numerischen Alias für eine Variable dar.|  
+|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Stellt einen numerischen Alias für eine Variable dar und ermöglicht eine ausdrucksauswertung (EE), um die Anwendungsdomäne für den Alias zu erhalten.|  
+|[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Stellt ein Arrayobjekt dar.|  
+|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Stellt ein verwaltetes Array-Objekt dar und ermöglicht eine ausdrucksauswertung (EE), um zu bestimmen, den Basisindex (untere Grenzen) für das Array.|  
 |[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|Stellt einen Binder, bindet die Symbole, die eigentlichen Adressen im Arbeitsspeicher zu debuggen.|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|Identisch mit der [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Schnittstelle bietet jedoch Zugriff auf Typen, Aliase und benutzerdefinierte Schnellansichten.|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|Identisch mit der [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Schnittstelle ermöglicht jedoch den Zugriff auf Typen, Aliase und benutzerdefinierte Schnellansichten.|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|Stellt die Ausdrucksauswertung dar.|  
-|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Stellt eine erweiterte Version des eine ausdrucksauswertung (EE).|  
-|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|Stellt eine ausdrucksauswertung (EE) mit einer verbesserten Parser-Struktur dar.|  
+|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Stellt eine erweiterte Version eines ausdrucksauswerters (EE) dar.|  
+|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|Stellt eine ausdrucksauswertung (EE) mit einer erweiterten Parser-Struktur dar.|  
 |[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|Stellt eine Funktion dar.|  
-|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Stellt eine Funktion dar und verbessert die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.|  
+|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Stellt eine Funktion dar, und verbessert die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.|  
 |[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|Ermöglicht eine ausdrucksauswertung (EE), um eine Meldung im Ausgabefenster des Debuggers anzuzeigen.|  
-|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Stellt ein Objekt für verwalteten Code dar.|  
+|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Ein Objekt von verwaltetem Code darstellt.|  
 |[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|Basisschnittstelle, die alle Symbole darstellt, die an einer Speicheradresse gebunden werden.|  
-|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Identisch mit der [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Schnittstelle bietet jedoch den Zugriff auf zusätzliche Informationen.|  
-|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|Stellt einen analysierten Ausdruck zur Auswertung bereiter.|  
+|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Identisch mit der [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Schnittstelle bietet jedoch Zugriff auf zusätzliche Informationen.|  
+|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|Stellt einen analysierten Ausdruck zur Auswertung bereiter dar.|  
 |[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)|EE|Stellt einen Zeiger.|  
-|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|Stellt einen Zeiger in einen Analysestruktur und erweitert die **IDebugPointerObject** Schnittstelle.|  
-|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|Bietet die Möglichkeit, einen Typ als Wert in einer Schnellansicht Typ zu ändern.|  
+|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|Stellt einen Zeiger in eine Analysestruktur und erweitert die **IDebugPointerObject** Schnittstelle.|  
+|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|Bietet die Möglichkeit, eines Typs Wert über eine typschnellansicht zu ändern.|  
 |[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|VS|Bietet Zugriff auf den benutzerdefinierten Viewer und Typ-Schnellansichten.|  
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|Bietet die Möglichkeit zum Erstellen einer [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Objekt.|  
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Stellt eine Auflistung von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekte.|  

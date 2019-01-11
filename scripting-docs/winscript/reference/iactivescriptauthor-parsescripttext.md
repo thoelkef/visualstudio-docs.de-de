@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor::ParseScriptText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645510"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091805"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Skripttext analysiert und fügt Text an das Modul authoring Skript erstellt ein `IScriptEntry` Objekt, das den Skriptblock entspricht.  
+Skripttext analysiert und fügt den Text an das Skript-Engine-Erstellung erstellt eine `IScriptEntry` Objekt, das den Skriptblock entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -42,16 +42,16 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parameter  
  `pszCode`  
- [in] Der Skripttext analysiert.  
+ [in] Der Skripttext analysiert werden soll.  
   
  `pszItemName`  
- [in] Der Pufferadresse, die der Elementname, die den Skriptblock zugeordneten enthält.  
+ [in] Die Pufferadresse, die den Namen des zugeordneten des Skriptblocks enthält.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens zum Ende der Skriptblock. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn es keine Trennzeichen ist, das das Ende der Skriptblock zu identifizieren.  
+ [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn es keine Trennzeichen ist, das das Ende der Skriptblock zu identifizieren.  
   
  `dwCookie`  
- [in] Eine anwendungsdefinierte-Wert, der mit dem neuen anfallen `IScriptEntry` Objekt.  
+ [in] Einer der Anwendung definierter Wert, der mit dem neuen verknüpft ist `IScriptEntry` Objekt.  
   
  `dwFlags`  
  [in] Nicht verwendet.  

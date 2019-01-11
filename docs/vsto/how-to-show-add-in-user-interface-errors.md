@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler'
-ms.custom: ''
+title: 'Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5a11f6bcff5d16a6fc12de5db7e1a7410b4357fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819709"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Gewusst wie: Anzeigen-Add-in-Benutzeroberflächenfehler
+# <a name="how-to-show-add-in-user-interface-errors"></a>Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen
   Wenn ein VSTO-Add-in versucht, die Microsoft Office-Benutzeroberfläche (UI) und ein Fehler auftritt, bearbeiten, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Sie können diese Nachrichten verwenden, um zu ermitteln, warum ein Menüband nicht angezeigt wird, oder warum ein Menüband angezeigt wird, jedoch keine Steuerelemente angezeigt werden.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "35672736"
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)  
-  
-  

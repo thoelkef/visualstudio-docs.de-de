@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913816"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.  
   
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852744"
  [Übersicht über Leistungssitzungen](/visualstudio/profiling/performance-session-overview)   
  [Einführung in die Leistungsprofilerstellung](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Aufspüren von Anwendungsengpässen mit Visual Studio-Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

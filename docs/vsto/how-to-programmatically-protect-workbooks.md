@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Schützen von Arbeitsmappen'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Schützen von Arbeitsmappen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900770"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Gewusst wie: Programmgesteuertes Schützen von Arbeitsmappen
+# <a name="how-to-programmatically-protect-workbooks"></a>Vorgehensweise: Programmgesteuertes Schützen von Arbeitsmappen
   Sie können eine Microsoft Office Excel-Arbeitsmappe schützen, sodass Benutzer hinzufügen oder Löschen von Arbeitsblättern und Schutz für die Arbeitsmappe auch programmgesteuert aufheben können nicht. Optional können Sie ein Kennwort angeben, gibt an, ob die Struktur (Benutzer können keine Tabellen verschieben) werden soll, und gibt an, ob die Fenster der Arbeitsmappe geschützt werden sollen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -70,8 +67,6 @@ ms.locfileid: "35671912"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

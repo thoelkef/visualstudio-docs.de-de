@@ -1,7 +1,6 @@
 ---
 title: Erste Schritte mit Roslyn-Analysetools | Microsoft-Dokumentation
 ms.date: 04/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 70dcdcfbc31434dd09f83951e7d89d9fd1832168
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821291"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091714"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analysetools
 
@@ -24,7 +23,7 @@ Mit live-projektbasierten codeanalysemodulen in Visual Studio können die API-Au
 
 [Einführung in Roslyn live Code-Analyzer und exemplarische Vorgehensweise](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[Hinzufügen von codefehlerbehebungen Exemplarische Vorgehensweise: bieten Sie Benutzern Korrekturen für Analyzer-Probleme](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Fügen Sie codefehlerbehebungen Exemplarische Vorgehensweise: Bieten Sie Benutzern Korrekturen für Analyzer-Probleme](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
 [Einführung und exemplarische Vorgehensweise des Analyzers der realen Welt kommunizieren.](https://channel9.msdn.com/events/Build/2015/3-725)
 
@@ -40,4 +39,4 @@ Mit live-projektbasierten codeanalysemodulen in Visual Studio können die API-Au
 - [Tutorial: Schreiben Sie Ihre erste Lösung für Analyzer und code](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET Compiler Platform-Version-Paketverweis](roslyn-version-support.md)
 - [Weitere-Dokumentation auf der GitHub-OSS-Website](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [FxCop-Regeln, die mit Roslyn-Analysetools auf GitHub implementiert](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [FxCop-Regeln, die mit Roslyn-Analyzern implementiert](http://roslynanalyzersstatus.azurewebsites.net/)

@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d82df4cef343965d9fdf88357154a9a3a399d9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 562263f9b1d96795ae0bfcd0837f82ee99730e87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850712"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Erstellt ein Objekt mit keinen Konstruktor.  
@@ -28,7 +25,7 @@ Erstellt ein Objekt mit keinen Konstruktor.
 ## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CreateObjectNoConstructor(   
+HRESULT CreateObjectNoConstructor(   
    IDebugField*   pClassObject,  
    IDebugObject** ppObject  
 );  

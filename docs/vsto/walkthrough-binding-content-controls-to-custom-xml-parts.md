@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899651"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Inhaltssteuerelemente in einer Anpassung auf Dokumentebene für Word an XML-Daten binden, die in dem Dokument gespeichert sind.  
@@ -36,21 +33,21 @@ ms.locfileid: "35673304"
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Hinzufügen von Inhaltssteuerelementen zum Word-Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit.  
+- Hinzufügen von Inhaltssteuerelementen zum Word-Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit.  
   
--   Erstellen einer XML-Datendatei und eines XML-Schemas, das die Elemente definiert, die an die Inhaltssteuerelemente gebunden werden sollen.  
+- Erstellen einer XML-Datendatei und eines XML-Schemas, das die Elemente definiert, die an die Inhaltssteuerelemente gebunden werden sollen.  
   
--   Anfügen des XML-Schemas an das Dokument zur Entwurfszeit.  
+- Anfügen des XML-Schemas an das Dokument zur Entwurfszeit.  
   
--   Hinzufügen von den Inhalt der XML-Datei an einen benutzerdefinierten XML-Abschnitt im Dokument zur Laufzeit.  
+- Hinzufügen von den Inhalt der XML-Datei an einen benutzerdefinierten XML-Abschnitt im Dokument zur Laufzeit.  
   
--   Binden der Inhaltssteuerelemente an Elemente im benutzerdefinierten XML-Abschnitt.  
+- Binden der Inhaltssteuerelemente an Elemente im benutzerdefinierten XML-Abschnitt.  
   
--   Binden eines <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> an eine Gruppe von Werten, die im XML-Schema definiert sind.  
+- Binden eines <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> an eine Gruppe von Werten, die im XML-Schema definiert sind.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -71,36 +68,36 @@ ms.locfileid: "35673304"
   
 ### <a name="to-add-content-controls-to-the-document"></a>So fügen Sie dem Dokument Inhaltssteuerelemente hinzu  
   
-1.  Im Word-Dokument, das im gehostet ist die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wählen Sie auf dem Menüband-Designer die **einfügen** Registerkarte.  
+1. Im Word-Dokument, das im gehostet ist die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wählen Sie auf dem Menüband-Designer die **einfügen** Registerkarte.  
   
-2.  In der **Tabellen** Gruppe **Tabelle**, und fügen Sie eine Tabelle mit 2 Spalten und 3 Zeilen.  
+2. In der **Tabellen** Gruppe **Tabelle**, und fügen Sie eine Tabelle mit 2 Spalten und 3 Zeilen.  
   
-3.  Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
+3. Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
   
-    ||  
-    |-|  
-    |**Name des Mitarbeiters**|  
-    |**Einstellungsdatum**|  
-    |**Titel**|  
+   ||  
+   |-|  
+   |**Name des Mitarbeiters**|  
+   |**Einstellungsdatum**|  
+   |**Titel**|  
   
-4.  Wählen Sie in der zweiten Spalte der Tabelle, die erste Zeile (neben **Mitarbeiternamen**).  
+4. Wählen Sie in der zweiten Spalte der Tabelle, die erste Zeile (neben **Mitarbeiternamen**).  
   
-5.  Wählen Sie auf dem Menüband der **Developer** Registerkarte.  
+5. Wählen Sie auf dem Menüband der **Developer** Registerkarte.  
   
-    > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  In der **Steuerelemente** Gruppe der **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
+6. In der **Steuerelemente** Gruppe der **Text** Schaltfläche ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") Hinzufügen einer <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>bis zur ersten Zelle.  
   
-7.  Wählen Sie in der zweiten Spalte der Tabelle, die zweite Zeile (neben **Hire Date**).  
+7. Wählen Sie in der zweiten Spalte der Tabelle, die zweite Zeile (neben **Hire Date**).  
   
-8.  In der **Steuerelemente** Gruppe der **Datumsauswahl** Schaltfläche ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") eine Hinzufügen<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> der zweiten Zelle.  
+8. In der **Steuerelemente** Gruppe der **Datumsauswahl** Schaltfläche ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") eine Hinzufügen<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> der zweiten Zelle.  
   
 9. Wählen Sie in der zweiten Spalte der Tabelle, die dritte Zeile (neben **Titel**).  
   
 10. In der **Steuerelemente** Gruppe der **Dropdown-Listenfeld** Schaltfläche ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") hinzufügen eine <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> bis zur letzten Zelle.  
   
- Das ist die vollständige Benutzeroberfläche für dieses Projekt. Wenn Sie das Projekt jetzt ausführen, können Sie in der ersten Zeile Text eingeben und in der zweiten Zeile ein Datum auswählen. Im nächsten Schritt fügen Sie die anzuzeigenden Daten in einer XML-Datei an das Dokument an.  
+    Das ist die vollständige Benutzeroberfläche für dieses Projekt. Wenn Sie das Projekt jetzt ausführen, können Sie in der ersten Zeile Text eingeben und in der zweiten Zeile ein Datum auswählen. Im nächsten Schritt fügen Sie die anzuzeigenden Daten in einer XML-Datei an das Dokument an.  
   
 ## <a name="create-the-xml-data-file"></a>Erstellen Sie die XML-Datendatei  
  Sie erhalten XML-Daten zum Speichern in einem benutzerdefinierten XML-Abschnitt üblicherweise von einer externen Quelle, wie etwa einer Datei oder Datenbank. In dieser exemplarischen Vorgehensweise erstellen Sie eine XML-Datei mit Mitarbeiterdaten, die durch Elemente gekennzeichnet sind, die Sie an die Inhaltssteuerelemente im Dokument binden. Um die Daten zur Laufzeit verfügbar zu machen, betten Sie die XML-Datei als Ressource in die Anpassungsassembly.  
@@ -189,7 +186,7 @@ ms.locfileid: "35673304"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Fügen Sie das XML-Schema an das Dokument  
  Sie müssen das XML-Schema an das Dokument anfügen, um das <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> an die gültigen Werte des `title`-Elements zu binden.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>So fügen Sie das XML-Schema an das Dokument an ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Das XML-Schema an das Dokument an ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Aktivieren Sie **EmployeeControls.docx** im Designer.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "35673304"
   
 9. Nennen Sie die Datei **EmployeeControls.docx.zip**.  
   
-     Die **EmployeeControls.docx** Dokument im Open XML-Format gespeichert. Durch Umbenennen dieses Dokuments mit der *ZIP* Dateinamenerweiterung, Sie können den Inhalt des Dokuments überprüfen. Weitere Informationen zu Open XML finden Sie im technischen Artikel [Einführung in die Office (2007) Open XML-Dateiformate](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     Die **EmployeeControls.docx** Dokument im Open XML-Format gespeichert. Durch Umbenennen dieses Dokuments mit der *ZIP* Dateinamenerweiterung, Sie können den Inhalt des Dokuments überprüfen. Weitere Informationen zu Open XML finden Sie im technischen Artikel [Einführung in die Office (2007) Open XML-Dateiformate](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Öffnen der **EmployeeControls.docx.zip** Datei.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "35673304"
 ## <a name="next-steps"></a>Nächste Schritte  
  Weitere Informationen über die Verwendung von Inhaltssteuerelementen finden Sie in den folgenden Themen:  
   
--   Erstellen Sie eine Vorlage mithilfe aller verfügbaren Inhaltssteuerelemente. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Erstellen Sie eine Vorlage mithilfe aller verfügbaren Inhaltssteuerelemente. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Ändern Sie die Daten in den benutzerdefinierten XML-Abschnitten bei geschlossenem Dokument. Wenn der Benutzer das Dokument das nächste Mal öffnet, zeigen die Inhaltssteuerelemente, die an die XML-Elemente gebunden sind, die neuen Daten an.  
   
--   Schützen Sie Teile eines Dokuments mithilfe von Inhaltssteuerelementen. Weitere Informationen finden Sie unter [wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Schützen Sie Teile eines Dokuments mithilfe von Inhaltssteuerelementen. Weitere Informationen finden Sie unter [Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
  [ContentControl-Elemente](../vsto/content-controls.md)   
- [Gewusst wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

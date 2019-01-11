@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986725"
 ---
-# <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen von Signaturhilfe
+# <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Signaturhilfe anzeigen
 Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Zeichen für den Parameter Liste (in der Regel eine öffnende Klammer) eingibt. Wie ein Parameter und das Parametertrennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, und den nächsten Parameter in Fettschrift angezeigt wird. Sie können die Signaturhilfe definieren, es gibt folgende Möglichkeiten: im Kontext von einem Sprachdienst, definieren Sie Ihre eigenen Dateinamenerweiterung und Content-Type und Signatur-Hilfe für nur diesen Typ oder anzeigen Signaturhilfe für einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von Signaturhilfe für den Inhaltstyp "Text".  
   
  Signaturhilfe wird in der Regel ausgelöst werden, geben Sie ein bestimmtes Zeichen, z. B. "(" (Klammer), und geben Sie ein anderes Zeichen, z. B. geschlossen ")" (schließende Klammer). IntelliSense-Funktionen, die ausgelöst werden, durch Eingabe eines Zeichens können implementiert werden, indem ein Befehlshandler für die Tastatureingaben (die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle) und ein Handler für Anbieter, implementiert die <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> Schnittstelle. Um die Quelle Signaturhilfe zu erstellen, die die Liste der Signaturen in der Signatur zu Hilfe nehmen, implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> -Schnittstelle und eine Quellenanbieter, der ausgeführt wird die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> Schnittstelle. Die Anbieter sind Komponenten des Managed Extensibility Framework (MEF) und sind zuständig für die Quell- und Controller-Klassen exportieren und Importieren von Diensten und Makler, z. B. die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, mit dem Sie im Textpuffer navigieren, und die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, die die Sitzung Signaturhilfe ausgelöst.  
   
  Diese exemplarische Vorgehensweise veranschaulicht das Einrichten von Signatur-Hilfe für einen hartcodierten Satz von Bezeichnern. In vollständige Implementierungen ist die Sprache für die Bereitstellung, dass der Inhalt verantwortlich.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts  
@@ -248,4 +245,4 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
 4.  Nachdem Sie die öffnende Klammer eingeben, sollte eine QuickInfo, die zeigt eine Liste mit den zwei Signaturen für die `add()` Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

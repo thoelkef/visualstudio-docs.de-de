@@ -1,8 +1,6 @@
 ---
 title: Weiterführende MSBuild-Konzepte | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917437"
 ---
 # <a name="msbuild-advanced-concepts"></a>Weiterführende MSBuild-Konzepte
 Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum Verbessern der Builds verwendet werden, die Sie mithilfe von MSBuild ausführen.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung |  
+|Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Batchverarbeitung](../msbuild/msbuild-batching.md)|Beschreibt, wie Sie Build-Ziele und -Aufgaben auf Grundlage von Elementmetadaten als Batches erstellen.|  
 |[Transformationen](../msbuild/msbuild-transforms.md)|Erläutert, wie die die Abhängigkeitsanalyse mithilfe von Transformationen aktiviert wird.|  

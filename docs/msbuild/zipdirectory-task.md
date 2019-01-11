@@ -1,10 +1,8 @@
 ---
 title: ZipDirectory-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fffaa61a494c507aedf22238d22c861ba9f11bc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930959"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
 Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
@@ -40,7 +38,7 @@ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `ZipDirectory` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`DestinationFile`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Der vollständige Pfad der *ZIP*-Datei, die erstellt werden soll.|
 |`Overwrite`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die Zieldatei überschrieben, sofern diese vorhanden ist. Wird standardmäßig auf `false` festgelegt.|

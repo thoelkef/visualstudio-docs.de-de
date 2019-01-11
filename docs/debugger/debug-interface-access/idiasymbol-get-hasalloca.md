@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_hasalloca | Microsoft Docs'
-ms.custom: ''
+title: 'Idiasymbol:: Get_hasalloca | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,37 +12,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e701f6b851b48345c9dcbcf3f2482d7c6c0951
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990619"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
-Ruft ein Flag, das angibt, ob die Funktion einen Aufruf enthält `alloca` (Zuweisen von Arbeitsspeicher auf dem Stapel verwendet).  
+Ruft ein Flag, das angibt, ob die Funktion einen Aufruf von enthält `alloca` (dient zum Zuordnen von Speicher auf dem Stapel).  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
+[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
 ```  
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` die Funktion enthält einen Aufruf von `alloca`ist, andernfalls gibt `FALSE`.  
+ [out] Gibt `TRUE` , wenn die Funktion einen Aufruf enthält `alloca`ist, andernfalls gibt `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

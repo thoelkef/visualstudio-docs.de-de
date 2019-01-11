@@ -2,7 +2,6 @@
 title: Parameterinfo, Member auflisten und QuickInfo
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -17,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953075"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
-IntelliSense hilft bei der Codevervollständigung und enthält eine Reihe von Features: Member auflisten, Parameterinfo, QuickInfo und Wort vervollständigen. Mithilfe dieser Features erfahren Sie mehr über den verwendeten Code. Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.
+IntelliSense ist ein Hilfsprogramm für die Codevervollständigung, das folgende Features umfasst: Auflisten von Membern, Parameterinformationen, QuickInfo und Wortvervollständigung. Mithilfe dieser Features erfahren Sie mehr über den verwendeten Code. Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.
 
 Viele Aspekte von IntelliSense sind sprachspezifisch. Weitere Informationen zu IntelliSense für verschiedene Sprachen finden Sie in den Artikeln, die im Abschnitt [Siehe auch](#see-also) aufgeführt sind.
 
@@ -54,7 +53,7 @@ Der Parameter, den Sie beim Eingeben der Funktion als Nächstes angeben müssen,
 
 ![Parameterinfo](../ide/media/vs2015_param_info.png)
 
-Wenn Sie Funktionen und Parameter mit XML-Dokumentationskommentaren versehen, werden die Kommentare als Parameterinfo angezeigt. Weitere Informationen finden Sie unter [Anzeigen von XML-Codekommentaren](../ide/supplying-xml-code-comments.md).
+Wenn Sie Funktionen und Parameter mit XML-Dokumentationskommentaren versehen, werden die Kommentare als Parameterinfo angezeigt. Weitere Informationen finden Sie unter [Anzeigen von XML-Codekommentaren](reference/generate-xml-documentation-comments.md).
 
 Sie können die Parameterinformation manuell aufrufen, indem Sie auf **Bearbeiten** > **IntelliSense** > **Parameterinfo** klicken, indem Sie **STRG**+**UMSCHALT**+**LEERTASTE** drücken, oder indem Sie auf die Schaltfläche **Parameterinfo** auf der Symbolleiste des Editors klicken.
 
@@ -104,4 +103,4 @@ MessageBox( hWnd, "String literal|")
 - [C#-IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Anzeigen von XML-Codekommentaren](../ide/supplying-xml-code-comments.md)
+- [Anzeigen von XML-Codekommentaren](reference/generate-xml-documentation-comments.md)

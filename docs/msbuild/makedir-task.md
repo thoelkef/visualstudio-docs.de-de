@@ -1,8 +1,6 @@
 ---
 title: MakeDir-Aufgabe| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b90ad8ca887c0868f568dee3ed0264f56f122a49
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d56801821a0c041e5de0785a39146a0e8f5a747b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960929"
 ---
 # <a name="makedir-task"></a>MakeDir-Aufgabe
 Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse  
@@ -33,7 +31,7 @@ Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `MakeDir` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Der Satz von zu erstellenden Verzeichnissen.|  
 |`DirectoriesCreated`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die von dieser Aufgabe erstellten Verzeichnisse. Wenn bestimmte Verzeichnisse nicht erstellt werden konnten, enthält dieser Parameter möglicherweise nicht alle Elemente, die an den `Directories`-Parameter übergeben wurden.|  

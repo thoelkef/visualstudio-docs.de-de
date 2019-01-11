@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892302"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache zu entwerfen, und generieren Sie dann alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die von der Sprache basieren.
@@ -66,7 +65,7 @@ Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, k
 ## <a name="validation-in-dsl-tools"></a>Validierung in DSL-Tools
  DSL bietet es sich um eine Ebene der Überprüfung, um sicherzustellen, dass das Domänenmodell die Mindestanforderungen für die codegenerierung erfüllt. Wenn Sie Ihre eigenen domänenspezifischen Sprache erstellen, würden Sie in der Regel eigene Überprüfung, um Ihre Geschäftsregeln für die Logik auszudrücken hinzufügen. Weitere Informationen zu benutzerdefinierten Validierung, finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
- Es wird empfohlen, dass Ihre Domain-Specific Languge häufig, beim Entwerfen überprüfen. Wenn Ihre Domain-Specific Languge Validierungsfehler aufweist, nicht Quellcode generiert werden. Der Prozess zum Generieren von Quellcode aus den Vorlagen wird durchgeführt, indem Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Wenn Sie die Definition der Sprache ändern, stellen Sie außerdem sicher, **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Es wird empfohlen, dass Ihre Domain-Specific Languge häufig, beim Entwerfen überprüfen. Wenn Ihre Domain-Specific Languge Validierungsfehler aufweist, nicht Quellcode generiert werden. Der Prozess zum Generieren von Quellcode aus den Vorlagen wird durchgeführt, indem Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Wenn Sie die Definition der Sprache ändern, stellen Sie außerdem sicher, **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie eine DSL-Projektmappe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Anpassung der DSL-Tools
  Sie können zusätzlichen Code, um das Verhalten des Modells zu verfeinern und zum Definieren der Einschränkungen für die Sprache angeben. Falls erforderlich, können Sie erhebliche Änderungen vornehmen, indem Sie die Textvorlagen ändern.

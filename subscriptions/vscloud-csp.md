@@ -9,18 +9,23 @@ description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899460"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739574"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
 Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen.
 
 [Vergleich von Optionen für Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing)
+
+
+> [!NOTE]
+> In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
+
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -35,7 +40,7 @@ Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://n
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
-0. Melden Sie sich im [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
+1. Melden Sie sich im [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
 0. Klicken Sie auf **Kunden**, und wählen Sie einen Kunden aus, für den Sie einen Kauf durchführen möchten.
 0. Klicken Sie auf **Dienstverwaltung**.
 0. Klicken Sie auf **Visual Studio Marketplace**.
@@ -56,7 +61,7 @@ Sobald Sie den Kauf bestätigt haben, können Sie auf **Verwalten** klicken, um 
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 
-0. Melden Sie sich in [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
+1. Melden Sie sich in [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
 0. Klicken Sie auf **Kunden** und dann auf den Namen des Kunden.
 0. Klicken Sie auf **Dienstverwaltung**.
 0. Klicken Sie auf **Manage Visual Studio Subscriptions** (Visual Studio-Abonnements verwalten).
@@ -79,26 +84,21 @@ So sind die Inhalte der Arbeitsmappe zu interpretieren:
 | Kategorie für Messung    |   name                 |  Einheiten                                |           Beschreibung                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonnement                         | Monatliches Visual Studio Enterprise-Abonnement   |
-| Visual Studio     | Enterprise (jährlich)    |  Jahresabonnements                 | Jährliches Visual Studio Enterprise-Abonnement    |
 | Visual Studio     | Professionell           |  Abonnement                         | Monatliches Visual Studio Professional-Abonnement |
-| Visual Studio     | Professional (jährlich)  |  Jahresabonnements                 | Jährliches Visual Studio Professional-Abonnement  |
+
 
 Es wird ein Rabatt von 5 % auf die sechste Einheit jedes Visual Studio-Abonnements angeboten, die Sie (für einen bestimmten Kunden) in einem bestimmten Monat kaufen. Deshalb werden Ihnen zwei Zeilen für jede Abonnementoption angezeigt. Die eine Zeile zeigt einen „mindestens erforderlichen Wert“ von 0 an, der als Basispreis für die erste bis fünfte Einheit zu interpretieren ist. Die andere Zeile zeigt einen „mindestens erforderlichen Wert“ von 5 an. Dabei handelt es sich also um den Rabattpreis, der ab der sechsten Einheit gilt.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>F: Wie werden **monatliche** Gebühren für Cloudabonnements verarbeitet?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Frage: Wie werden die **monatlichen** Gebühren für Cloudabonnements verarbeitet?
 
 A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt.
 Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
 
 Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai).
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>F: Wie werden **jährliche** Gebühren für Cloudabonnements verarbeitet?
-
-A: Bei jedem Kauf wird die vollständige Menge sofort in Rechnung gestellt. Die Gebühren werden nicht über das Jahr verteilt, und es erfolgt keine anteilige Berechnung. Wenn Sie jährliche Cloudabonnements zu unterschiedlichen Zeitpunkten im Jahr kaufen, werden die Abonnements in unterschiedlichen Monaten verlängert. Die Laufzeit aller jährlichen Cloudabonnements des Kunden wird nicht aneinander angepasst, wie es bei Käufen mit dem Microsoft-Volumenlizenzvertrag üblich ist.
-
-### <a name="q-how-do-cancellations-work"></a>F: Wie funktioniert die Kündigung?
+### <a name="q-how-do-cancellations-work"></a>Frage: Wie funktioniert die Kündigung?
 
 A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab.
 Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
@@ -107,14 +107,12 @@ Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächste
 
 Bei jährlichen Cloudabonnements wird die Kündigung am ersten Tag des Monats wirksam, der 12 Monate nach dem ursprünglichen Kauf liegt, oder 12 Monate nach der letzten jährlichen Verlängerungsgebühr. Wenn Sie beispielsweise ein jährliches Visual Studio Enterprise-Cloudabonnement am 3. Januar 2018 gekauft haben, bleibt dieses bis zum 1. Februar 2019 aktiv. Dann wird es automatisch für ein weiteres Jahr verlängert. Wenn Sie irgendwann zwischen diesem Zeitpunkt und dem 1. Februar 2020 kündigen, läuft das Abonnement am 1. Februar 2020 ab. Es gibt keine Rückzahlung bei jährlichen Cloudabonnements, wenn Sie das Abonnement im laufenden Jahr kündigen.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>F: Welche Mengenrabatte sind für Visual Studio-Abonnements verfügbar?
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Frage: Welche Mengenrabatte sind für Visual Studio-Abonnements verfügbar?
 
-A: Sie erhalten auf das sechste und alle nachfolgenden Abonnements für *jede Art von Abonnement* einen Rabatt von 5 %:
+A:  Sie erhalten auf das sechste und alle nachfolgenden Abonnements für *jede Art von Abonnement* einen Rabatt von 5 %:
 
 * Visual Studio Professional – Monatsabonnement
-* Visual Studio Professional – Jahresabonnement
 * Visual Studio Enterprise – Monatsabonnement
-* Visual Studio Enterprise – Jahresabonnement
 
 Wenn Sie also beispielsweise sechs monatliche Visual Studio Professional-Abonnements und fünf monatliche Visual Studio Enterprise-Abonnements kaufen, zahlen Sie den regulären Preis für fünf Professional-Abonnements, erhalten einen Rabatt von 5 % auf das sechste Professional-Abonnement und zahlen den regulären Preis für alle fünf Enterprise-Abonnements.
 
@@ -122,10 +120,10 @@ Darüber hinaus gilt der Rabatt nur für die Gebühren in einem angegebenen mona
 
 Diese Rabatte werden in den Preisdaten in [Partner Center](https://partnercenter.microsoft.com) berücksichtigt.
 
-### <a name="q-are-there-renewal-discounts"></a>F: Gibt es Rabatte auf Verlängerungen?
+### <a name="q-are-there-renewal-discounts"></a>Frage: Gibt es Rabatte auf Verlängerungen?
 
-A: Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich um Pauschalpreise. Es gilt der gleiche Preis für neue und laufende Abonnements.
+A:  Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich um Pauschalpreise. Es gilt der gleiche Preis für neue und laufende Abonnements.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>F: Gibt es Azure Dev/Test-Preisoptionen für CSPs?
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Frage: Gibt es Azure Dev/Test-Preisoptionen für CSPs?
 
 A: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](http://aka.ms/azuredevtestpricing) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.

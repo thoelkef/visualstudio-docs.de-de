@@ -1,8 +1,6 @@
 ---
 title: CPPClean-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 749d60c764f522d188b45b4ecf7302d69b6cd64b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fbf575db0289f0b5bbb5fbcd0bf47605871e52c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966371"
 ---
 # <a name="cppclean-task"></a>CPPClean-Aufgabe
 Löscht die temporären Dateien, die MSBuild erstellt, wenn ein Visual C++-Projekt erstellt wird. Das Löschen von Builddateien wird *Bereinigen* genannt.  
@@ -34,7 +32,7 @@ Löscht die temporären Dateien, die MSBuild erstellt, wenn ein Visual C++-Proje
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **CPPClean**-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |**DeletedFiles**|Optionaler `ITaskItem[]`-Ausgabeparameter.<br /><br /> Definiert ein Array von MSBuild-Ausgabedateielementen, die von Aufgaben verbraucht und ausgegeben werden können|  
 |**DoDelete**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn der Wert `true` ist, werden temporäre Builddateien bereinigt.|  

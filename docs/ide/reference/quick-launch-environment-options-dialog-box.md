@@ -2,7 +2,6 @@
 title: Schnellstart, Umgebung, Dialogfeld „Optionen“
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
@@ -16,22 +15,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3dca4a9eb34a950fe571db4da8c9c30d7f2a08b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893512"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
+
 Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination STRG+Q aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten. 
 
- **Schnellstart** ist standardmäßig aktiviert, wenn Sie Visual Studio installieren. Auf der Menüleiste können Sie **Schnellstart** darstellen oder ausblenden, indem Sie **Extras** und **Optionen** auswählen. Erweitern Sie den Knoten **Umgebungen**, und wählen Sie dann **Schnellstart** aus. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Schnellstart aktivieren**. Sie können auf dieser Seite auch Suchkategorien aktivieren oder deaktivieren.
+**Schnellstart** ist standardmäßig aktiviert, wenn Sie Visual Studio installieren. Auf der Menüleiste können Sie **Schnellstart** darstellen oder ausblenden, indem Sie **Extras** und **Optionen** auswählen. Erweitern Sie den Knoten **Umgebungen**, und wählen Sie dann **Schnellstart** aus. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Schnellstart aktivieren**. Sie können auf dieser Seite auch Suchkategorien aktivieren oder deaktivieren.
 
 ## <a name="category-list"></a>Kategorieliste
- Es gibt vier Kategorien von Schnellstart-Suchergebnissen: **Zuletzt verwendet**, **Menüs**, **Optionen** und **Geöffnete Dokumente**. Außerdem wird die Anzahl von Elementen pro Kategorie angezeigt. Um die Suchergebnisse nach Kategorie zu durchlaufen, drücken Sie die Tastenkombination STRG+Q. So werden alle Ergebnisse der nächsten Kategorie angezeigt. Nach Anzeigen der letzten Kategorie können Sie mit STRG+Q einige Ergebnisse aus jeder Kategorie aufrufen. Mit STRG+UMSCHALT+Q können Sie in umgekehrter Reihenfolge durch die Kategorien navigieren. Wählen Sie den Kategorienamen aus, um alle Suchergebnisse aus einer Kategorie anzuzeigen.
 
- Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestimmte Kategorien einzuschränken.
+Schnellstart-Suchergebnisse werden in vier Kategorien unterteilt: **Zuletzt verwendet**, **Menüs**, **Optionen** und **Geöffnete Dokumente**. Außerdem wird die Anzahl von Elementen pro Kategorie angezeigt. Um die Suchergebnisse nach Kategorie zu durchlaufen, drücken Sie die Tastenkombination STRG+Q. So werden alle Ergebnisse der nächsten Kategorie angezeigt. Nach Anzeigen der letzten Kategorie können Sie mit STRG+Q einige Ergebnisse aus jeder Kategorie aufrufen. Mit STRG+UMSCHALT+Q können Sie in umgekehrter Reihenfolge durch die Kategorien navigieren. Wählen Sie den Kategorienamen aus, um alle Suchergebnisse aus einer Kategorie anzuzeigen.
+
+Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestimmte Kategorien einzuschränken.
 
 |Kategorie|Verknüpfung|Verknüpfungsbeschreibung|
 |--------------|--------------| - |
@@ -43,13 +44,12 @@ Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optione
 > [!NOTE]
 > Die Tastenkombinationen können auf der Seite **Tastatur** im Dialogfeld **Optionen** unter **Allgemein** geändert werden.
 
-
 ## <a name="show-previous-results"></a>Vorherige Ergebnisse anzeigen
- Standardmäßig wird der eingegebene Suchbegriff nicht zwischen Suchsitzungen beibehalten. Die Suchzeichenfolge wird gelöscht, wenn Sie nach einem Begriff suchen. Bewegen Sie den Cursor außerhalb des Bereichs **Schnellstart** und dann wieder zurück. Um die Suchergebnisse beizubehalten, wechseln Sie in das Dialogfeld **Optionen**, wählen Sie **Schnellstart** aus, und aktivieren Sie dann das Kontrollkästchen **Suchergebnisse aus vorherigen Suchen anzeigen, wenn Schnellstart aktiviert ist** . Wenn Sie das nächste Mal eine Suche ausführen, verlassen Sie den Schnellstartbereich, und kehren Sie dahin zurück. Der Schnellstart behält den zuletzt verwendeten Suchbegriff bei und zeigt auch die Suchergebnisse an.
 
- Die neuesten Tipps und Tricks für die Verwendung von **Schnellstart** finden Sie im [Visual Studio-Blog](http://go.microsoft.com/fwlink/?LinkId=236054).
+Standardmäßig wird der eingegebene Suchbegriff nicht zwischen Suchsitzungen beibehalten. Die Suchzeichenfolge wird gelöscht, wenn Sie nach einem Begriff suchen. Bewegen Sie den Cursor außerhalb des Bereichs **Schnellstart** und dann wieder zurück. Um die Suchergebnisse beizubehalten, wechseln Sie in das Dialogfeld **Optionen**, wählen Sie **Schnellstart** aus, und aktivieren Sie dann das Kontrollkästchen **Suchergebnisse aus vorherigen Suchen anzeigen, wenn Schnellstart aktiviert ist** . Wenn Sie das nächste Mal eine Suche ausführen, verlassen Sie den Schnellstartbereich, und kehren Sie dahin zurück. Der Schnellstart behält den zuletzt verwendeten Suchbegriff bei und zeigt auch die Suchergebnisse an.
+
+Die neuesten Tipps und Tricks für die Verwendung von **Schnellstart** finden Sie im [Visual Studio-Blog](http://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Allgemeine Elemente der Benutzeroberfläche (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)
 - [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)

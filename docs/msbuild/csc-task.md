@@ -1,8 +1,6 @@
 ---
 title: Csc-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd360a34c70d3208211b861dae064bd4c5a01595
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838332"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic Link Libraries (*DLL*-Dateien) und Codemodule (*NETMODULE*-Dateien). Weitere Informationen zu *csc.exe* finden Sie unter [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -34,7 +32,7 @@ Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic 
  In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.  
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |------------------------------| - |
 | `AdditionalLibPaths` | Optionaler `String[]` -Parameter.<br /><br /> Gibt zusätzliche Verzeichnisse an, in denen nach Verweisen gesucht wird. Weitere Informationen finden Sie unter [-lib (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Optionaler `String` -Parameter.<br /><br /> Gibt mindestens Modul an, das Bestandteil dieser Assembly sein soll. Weitere Informationen finden Sie unter [-addmodule (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
@@ -72,7 +70,7 @@ Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic 
 | `Resources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Fügt eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ressource in die Ausgabedatei ein.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName` entspricht dem `identifier`-Parameter des `/resource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [-resource (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
 | `ResponseFiles` | Optionaler `String` -Parameter.<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Weitere Informationen finden Sie unter [@ (Antwortdatei festlegen)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option). |
 | `Sources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt mindestens eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quelldatei an. |
-| `TargetType` | Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`. Weitere Informationen finden Sie unter [-target (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). |
+| `TargetType` | Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`sein. Weitere Informationen finden Sie unter [-target (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). |
 | `TreatWarningsAsErrors` | Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden alle Warnungen als Fehler behandelt. Weitere Informationen finden Sie unter[-warnaserror (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option). |
 | `UseHostCompilerIfAvailable` | Optionaler `Boolean` -Parameter.<br /><br /> Weist die Aufgabe an, das prozessinterne Compilerobjekt (falls verfügbar) zu verwenden. Wird nur von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet. |
 | `Utf8Output` | Optionaler `Boolean` -Parameter.<br /><br /> Protokolliert die Compilerausgabe mit UTF-8-Codierung. Weitere Informationen finden Sie unter [-utf8output (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option). |

@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856424"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Word. Die Features, die Sie in dieser Art von Lösung erstellen, sind nur verfügbar, wenn ein bestimmtes Dokument geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen (z. B. eine neue Registerkarte des Menübands anzuzeigen, wenn ein Dokument geöffnet ist) vorzunehmen.  
@@ -147,13 +144,13 @@ ms.locfileid: "49928814"
   
 -   Programmieraufgaben, die für Anpassungen auf Dokumentebene für Word spezifisch sind: [Word-Projektmappen](../vsto/word-solutions.md).  
   
--   Mithilfe des Objektmodells von Word: [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md).  
+-   Verwenden das Objektmodell von Word: [Word-Objektmodell-Übersicht](../vsto/word-object-model-overview.md).  
   
--   Anpassen der Benutzeroberfläche von Word, beispielsweise durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen Aktionsbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
+-   Anpassen der Benutzeroberfläche von Word, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen Aktionsbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
   
--   Verwenden erweiterter Word-Objekte, die von Office-Projektmappen in Visual Studio bereitgestellten Aufgaben, die mit dem Word-Objektmodell (z. B. Hosten verwalteter Steuerelemente für Dokumente und Binden von Word-Steuerelemente an Daten mithilfe der Windows Forms-Daten nicht möglich sind Datenbindungsmodell): [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md).  
+-   Verwenden erweiterter Word-Objekte, die von Office-Projektmappen in Visual Studio bereitgestellten Aufgaben, die mit dem Word-Objektmodell (z. B. Hosten verwalteter Steuerelemente für Dokumente und Binden von Word-Steuerelemente an Daten mithilfe der Windows Forms-Daten nicht möglich sind Bindung-Modell): [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Erstellen und Debuggen von Anpassungen auf Dokumentebene für Word: [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
+-   Erstellen und Debuggen von Anpassungen auf Dokumentebene für Word: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
   
 -   Bereitstellen von Anpassungen auf Dokumentebene für Word: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
   
@@ -167,5 +164,3 @@ ms.locfileid: "49928814"
  [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
  [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
-  
-  

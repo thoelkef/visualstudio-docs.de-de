@@ -2,7 +2,6 @@
 title: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -14,42 +13,42 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e15c6acc241e36e7cadc1d6f043549f1f5e46c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829510"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code für potenzielle Codefehler zu analysieren, indem Sie das Codeanalysetool für C/C++-Code.
+In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Fehler zu analysieren, indem Sie mit dem Code Analysis-Tool für C/C++-Code veranschaulicht.
 
-- Ausführen der Codeanalyse für systemeigenen Code.
-- Analysieren von Code (Warnungen) austragen.
-- Treat Warnung als Fehler.
-- Kommentieren Sie Quellcode um defekt Codeanalyse zu verbessern.
+- Codeanalyse für systemeigenen Code ausführen.
+- Analysieren Sie Fehler für Code (Warnungen).
+- Behandeln Sie Warnung als Fehler.
+- Kommentieren Sie Quellcode, um Fehler der Codeanalyse zu verbessern.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 - Eine Kopie der [Demobeispiel](../code-quality/demo-sample.md).
-- Grundlegendes Verständnis von C/C++.
+- Grundlegende Kenntnisse von C/C++.
 
-### <a name="to-run-code-defect-analysis-on-native-code"></a>Zum Ausführen von defekt Codeanalyse auf systemeigenen code
+### <a name="to-run-code-defect-analysis-on-native-code"></a>Fehler der Codeanalyse auf systemeigenen Code ausführen
 
-1. Öffnen Sie die Projektmappe Demo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1. Öffnen Sie die Demo-Projektmappe in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-     Die Demo-Projektmappe jetzt füllt **Projektmappen-Explorer**.
+     Die Demoprojektmappe jetzt wird **Projektmappen-Explorer**.
 
-2. Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.
+2. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.
 
-     Die Projektmappe ohne Fehler oder Warnungen erstellt wird.
+     Die Projektmappe ohne Fehler oder Warnungen wird erstellt.
 
 3. In **Projektmappen-Explorer**, wählen Sie das Projekt CodeDefects.
 
 4. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
 
-     Die **CodeDefects-Eigenschaftenseiten** Dialogfeld wird angezeigt.
+     Die **CodeDefects Eigenschaftenseiten** Dialogfeld wird angezeigt.
 
 5. Klicken Sie auf **Codeanalyse**.
 
@@ -59,19 +58,19 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
      Codeanalysewarnungen werden angezeigt, der **Fehlerliste**.
 
-### <a name="to-analyze-code-defect-warnings"></a>Analysieren Sie Fehler in Code (Warnungen)
+### <a name="to-analyze-code-defect-warnings"></a>Analysieren von Code (Warnungen) der Mängel
 
 1. Auf der **Ansicht** Menü klicken Sie auf **Fehlerliste**.
 
-     Abhängig vom Entwicklerprofil, die im ausgewählten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Ihnen zu zeigen **Weitere Fenster** auf die **Ansicht** Menü, und klicken Sie dann auf **Fehlerliste**.
+     Abhängig von der Developer-Profil, das in ausgewählten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], möglicherweise müssen Sie es auf **Other Windows** auf die **Ansicht** , und klicken Sie dann auf **Fehlerliste**.
 
 2. In der **Fehlerliste**, doppelklicken Sie auf die folgende Warnung:
 
-     Warnung C6230: implizite Umwandlung zwischen semantisch unterschiedlichen Typen: Verwenden von HRESULT in ein Boolean-Kontext.
+     Warnung C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT in einen Boolean-Kontext verwenden.
 
-     Der Code-Editor zeigt die Zeile, die die Warnung verursacht, in der Funktion hat `bool``ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einer 'if'-Anweisung verwendet wird, obwohl ein boolesches Ergebnis erwartet wird.
+     Der Code-Editor zeigt die Codezeile, die die Warnung verursacht, in der Funktion hat `bool``ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einen "if"-Anweisung verwendet wird, wo ein boolesches Ergebnis erwartet wird.
 
-3. Beheben Sie diese Warnung wird unter Verwendung des Makros SUCCEEDED. Der Code sollte dem folgenden Code ähneln:
+3. Korrigieren Sie diese Warnung mit dem SUCCEEDED-Makro. Ihr Code sollte dem folgenden Code ähneln:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -81,7 +80,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
      Warnung C6282: Falscher Operator: Zuweisung zu Konstante im Testkontext. War == beabsichtigt?
 
-5. Diese Warnung zu korrigieren, Testen auf Gleichheit. Der Code sollte ähnlich dem folgenden Code aussehen:
+5. Korrigieren Sie diese Warnung, indem Sie auf Gleichheit. Der Code sollte ähnlich dem folgenden Code aussehen:
 
    ```cpp
    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
@@ -89,7 +88,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
 ### <a name="to-treat-warning-as-an-error"></a>Warnung als Fehler behandelt.
 
-1. Fügen Sie in der Datei Bug.cpp Folgendes `#pragma` Anweisung am Anfang der Datei, die die Warnung C6001 als Fehler zu behandeln:
+1. Fügen Sie die folgenden, in der Datei Bug.cpp `#pragma` Anweisung am Anfang der Datei, die die Warnung C6001 als Fehler behandeln:
 
    ```cpp
    #pragma warning (error: 6001)
@@ -97,37 +96,37 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
 2. Erstellen Sie das Projekt CodeDefects neu.
 
-     In der **Fehlerliste**, C6001 jetzt als Fehler angezeigt wird.
+     In der **Fehlerliste**, C6001 wird jetzt als Fehler.
 
-3. Beheben Sie die verbleibenden beiden C6001-Fehler in der **Fehlerliste** durch initialisieren `i` und `j` auf 0.
+3. Korrigieren Sie die verbleibenden zwei C6001 Fehler in der **Fehlerliste** initialisieren `i` und `j` auf 0.
 
 4. Erstellen Sie das Projekt CodeDefects neu.
 
      Das Projekt erstellt, ohne alle Warnungen oder Fehler.
 
-### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>So beheben Sie die Source Code Annotation-Warnungen in annotation.c
+### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Um die Source Code Annotation-Warnungen in annotation.c zu beheben.
 
-1. Wählen Sie im Projektmappen-Explorer das Projekt Anmerkungen.
+1. Wählen Sie im Projektmappen-Explorer das Annotations-Projekt ein.
 
 2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
 
-     Die **Anmerkungen Eigenschaftenseiten** Dialogfeld wird angezeigt.
+     Die **Annotations-Eigenschaftenseiten** Dialogfeld wird angezeigt.
 
 3. Klicken Sie auf **Codeanalyse**.
 
 4. Wählen Sie die **Codeanalyse für C/C++ auf Build aktivieren** Kontrollkästchen.
 
-5. Das Annotations-Projekt neu.
+5. Erstellen Sie das Annotations-Projekt neu.
 
 6. In der **Fehlerliste**, doppelklicken Sie auf die folgende Warnung:
 
-     Warnung C6011: NULL-Zeiger 'NewNode' Dereferenzierung.
+     Warnung C6011: Dereferenzierender NULL-Zeiger "NewNode".
 
-     Diese Warnung gibt an, vom Aufrufer Fehler, um den Rückgabewert zu überprüfen. In diesem Fall ein Aufruf von **AllocateNode** kann einen NULL-Wert zurückzugeben (siehe die annotations.h-Headerdatei für die Funktionsdeklaration AllocateNode).
+     Diese Warnung gibt an, dass der Aufrufer den Rückgabewert zu überprüfen. In diesem Fall ein Aufruf von **AllocateNode** möglicherweise einen NULL-Wert zurück (siehe die annotations.h-Headerdatei für die Funktionsdeklaration für AllocateNode).
 
 7. Öffnen Sie die Datei annotations.cpp.
 
-8. Um diese Warnung zu beheben, verwenden Sie eine 'if'-Anweisung so testen Sie den Rückgabewert aus. Der Code sollte dem folgenden Code ähneln:
+8. Um diese Warnung zu korrigieren, verwenden Sie eine "if"-Anweisung, um den Rückgabewert zu testen. Ihr Code sollte dem folgenden Code ähneln:
 
    ```cpp
    if (NULL != newNode)
@@ -138,13 +137,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
    }
    ```
 
-9. Das Annotations-Projekt neu.
+9. Erstellen Sie das Annotations-Projekt neu.
 
      Das Projekt erstellt, ohne alle Warnungen oder Fehler.
 
-### <a name="to-use-source-code-annotation"></a>Source Code Annotation verwenden
+### <a name="to-use-source-code-annotation"></a>Verwenden von Code quellcodeanmerkungen
 
-1. Kommentieren Sie formale Parameter und Rückgabewert der Funktion `AddTail` Pre- und Post-Bedingungen mit, wie im folgenden Beispiel gezeigt:
+1. Kommentieren Sie die formalen Parameter und Rückgabewert der Funktion `AddTail` mithilfe der Pre- und Post-Bedingungen, wie im folgenden Beispiel gezeigt:
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -158,11 +157,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
 3. In der **Fehlerliste**, doppelklicken Sie auf die folgende Warnung:
 
-     Warnung C6011: NULL-Zeiger "Knoten".
+     Warnung C6011: Dereferenzierender NULL-Zeiger "Node".
 
-     Diese Warnung gibt an, dass der Knoten, die an die Funktion übergeben null sein kann, und gibt die Zeilennummer, in dem die Warnung ausgelöst wurde.
+     Diese Warnung gibt an, dass der Knoten, die an die Funktion übergeben möglicherweise null ist, und gibt die Nummer der Zeile, in dem die Warnung ausgelöst wurde.
 
-4. Um diese Warnung zu beheben, verwenden Sie eine 'if'-Anweisung so testen Sie den Rückgabewert aus. Der Code sollte dem folgenden Code ähneln:
+4. Um diese Warnung zu korrigieren, verwenden Sie eine "if"-Anweisung, um den Rückgabewert zu testen. Ihr Code sollte dem folgenden Code ähneln:
 
    ```cpp
    . . .
@@ -180,5 +179,5 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
 
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: Analysieren von verwaltetem Code Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[für C/C++-Codeanalyse](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[Codeanalyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von MSBuild | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: msbuild
+ms.date: 12/18/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956919"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:
@@ -116,24 +114,28 @@ Die Message-Aufgabe ist eine der vielen Aufgaben, die im Lieferumfang von MSBuil
 Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Eingabe und zeigt diesen auf dem Ausgabegerät an. Das HelloWorld-Ziel führt die Message-Aufgabe zweimal aus: zuerst wird "Hello" angezeigt, dann "World".
 
 ## <a name="build-the-target"></a>Erstellen des Ziels
- Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter -target oder -t, um das Ziel auszuwählen.
+ Führen Sie MSBuild über die **Developer-Eingabeaufforderung** für Visual Studio aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter -target oder -t, um das Ziel auszuwählen.
 
 > [!NOTE]
->  In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.
+>  In den folgenden Abschnitten wird die **Developer-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.
 
 #### <a name="to-build-the-target"></a>So erstellen Sie das Ziel
 
-1.  Klicken Sie auf **Start**, und klicken Sie dann auf **Alle Programme**. Suchen Sie im Ordner **Visual Studio Tools** die **Visual Studio-Eingabeaufforderung**, und klicken Sie darauf.
+1. Öffnen Sie das **Befehlsfenster**.
 
-2.  Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
+   (Windows 10) Geben Sie den Namen des Tools im Suchfeld auf der Taskleiste ein, z. B. `dev` oder `developer command prompt`. Dadurch wird eine Liste der installierten Apps angezeigt, die Ihrem Suchmuster entsprechen.
 
-3.  Führen Sie msbuild mit dem Befehlsschalter -t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
+   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<visualstudio installation folder>\<Version>\Common7\Tools*.
+
+2. Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
+
+3. Führen Sie msbuild mit dem Befehlsschalter -t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:
+4. Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:
 
     ```
     Hello
@@ -290,7 +292,7 @@ Weitere Informationen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuil
 </ItemGroup>
 ```
 
- definiert eine Elementgruppe mit zwei Elementen. Der Compile-Elementtyp umfasst zwei Werte: *Program.cs* und *Properties\AssemblyInfo.cs*.
+ definiert eine Elementgruppe mit zwei Elementen. Der Elementtyp „Compile“ verfügt über zwei Werte: *Program.cs* und *Properties\AssemblyInfo.cs*.
 
  Mit folgendem Code wird der gleiche Elementtyp erstellt, indem die beiden durch ein Semikolon getrennten Dateien in einem Include-Attribut deklariert werden.
 
@@ -409,7 +411,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- fügt dem Compile-Elementtyp alle Dateien mit der Dateierweiterung *CS* hinzu, mit Ausnahme von Dateien, deren Namen die Zeichenfolge *Designer* enthalten. Weitere Beispiele finden Sie unter [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
+ fügt dem Compile-Elementtyp alle Dateien mit der Dateierweiterung *CS* hinzu, mit Ausnahme von Dateien, deren Namen die Zeichenfolge *Designer* enthalten. Weitere Beispiele finden Sie unter [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
 
 Das Exclude-Attribut wirkt sich nur auf die Elemente aus, die über das Include-Attribut in dem Elementelement hinzugefügt wurden, das beide enthält. Ein auf ein Objekt angewendeter
 
@@ -562,7 +564,7 @@ Beispielsweise kann eine Elementliste von Quelldateien über einen Ausdruck, z.�
 Beachten Sie, dass die in dieser Syntax ausgedrückten Metadaten keine Batchverarbeitung verursachen.
 
 ## <a name="whats-next"></a>Ausblick
- Probieren Sie die [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) aus, um zu erfahren, wie Sie schrittweise eine einfache Projektdatei erstellen können.
+ Einzelne Schritte zum Erstellen einer einfachen Projektdatei finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Siehe auch
 

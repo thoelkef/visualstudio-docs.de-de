@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802406"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086696"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>"break" ist außerhalb der Schleife unzulässig
 Sie haben versucht, Sie verwenden die **Break** -Schlüsselwort außerhalb einer Schleife. Die **Break** -Schlüsselwort wird verwendet, um eine Schleife zu beenden oder `switch` Anweisung. Es muss im Text einer Schleife eingebettet werden oder `switch` Anweisung. Allerdings eine **Bezeichnung** können der Schlüsselwort "Break" folgen.  
   
-```  
+```js
 break labelname;  
 ```  
   

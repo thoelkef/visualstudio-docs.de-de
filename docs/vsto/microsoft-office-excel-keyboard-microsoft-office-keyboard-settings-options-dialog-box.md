@@ -1,9 +1,6 @@
 ---
-title: Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen, Optionen (Dialogfeld)
-ms.custom: ''
+title: Im Dialogfeld "Optionen" Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen,
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ExcelOptions.KeyboardMappingScheme
@@ -19,28 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc71c699dfea11b8654791efdd52e4c0751a9762
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: db76d40db1038983cd756c5eb35549357afa53c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926475"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen, Optionen (Dialogfeld)
-  Microsoft Office Excel und Visual Studio behandelt sowohl Tastenkombinationen. Die gleichen Tastenkombination kann für unterschiedliche Befehle in Excel und in Visual Studio verwendet. Wenn Excel in einem Projekt auf Dokumentebene in Visual Studio geöffnet ist, empfängt nur eine Anwendung zu einem Zeitpunkt Befehle der Tastenkombination. Standardmäßig wird die Visual Studio alle Befehle für Tastenkombination geschickt, jedoch können Sie Excel, die sie erhalten, wenn das Dokument durch Auswahl den Fokus besitzt vornehmen **dynamische Folgendes zusätzliches Tastaturzuordnungsschema**.  
+# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Im Dialogfeld "Optionen" Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen,
+  Microsoft Office Excel und Visual Studio behandelt sowohl Tastenkombinationen. Die gleichen Tastenkombination kann für verschiedene Befehle, die in Excel und in Visual Studio verwendet. Wenn Excel in einem Projekt auf Dokumentebene in Visual Studio geöffnet ist, empfängt nur eine Anwendung zu einem Zeitpunkt Befehle der Tastenkombination. Standardmäßig Visual Studio alle Befehle für Tastenkombination erhält, werden Sie jedoch Excel, die sie empfangen werden, wenn das Dokument den Fokus durch Auswahl besitzt **Dynamisches Tastaturschema**.  
   
- Wenn Sie eine Tastenkombination, die nicht an einen Befehl in der Anwendung zugewiesen wird, die zurzeit die Tastenkombinationen bearbeitet verwenden, wird die Tastenkombination auf auf die andere Anwendung übergeben.  
+ Wenn Sie eine Tastenkombination, die nicht an einen Befehl in der Anwendung zugewiesen ist, die gerade die Tastenkombination gedrückt wird verwenden, wird die Tastenkombination für an eine andere Anwendung übergeben.  
   
- Die Option, die Sie auswählen, bleiben für Excel-Projekte wirksam, bis Sie ihn ändern. Die Auswahl wirkt sich nicht auf Microsoft Office Word-Projekte aus; Sie müssen alle Änderungen für Word, mithilfe der Optionen für die Microsoft Office Word-Tastatur.  
+ Der, die von Ihnen auszuwählende Option bleibt für Excel-Projekte wirksam, bis Sie ihn ändern. Die Auswahl wirkt sich nicht auf Microsoft Office Word-Projekten aus; Sie müssen alle Änderungen für Word, mit den Optionen für die Microsoft Office Word-Tastatur.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
- **Visual Studio Folgendes zusätzliches Tastaturzuordnungsschema**  
- Visual Studio empfängt alle Tastenkombinationsbefehle, auch wenn Excel den Fokus besitzt. Angenommen, Sie mit der Taste drücken **F5** während Excel den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
+ **Visual Studio-Tastaturschema**  
+ Visual Studio empfängt alle Tastenkombinationsbefehle, auch wenn Excel den Fokus hat. Wenn Sie die Taste z. B. **F5** während Excel den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
   
- **Dynamische Folgendes zusätzliches Tastaturzuordnungsschema**  
- Visual Studio empfängt Tastenkombinationsbefehle nur, wenn es den Fokus hat. Wenn Excel den Fokus hat, empfängt Excel alle Befehle für Tastenkombination. Angenommen, Sie mit der Taste drücken **F5** Excel geöffnet wird, während Excel den Fokus besitzt, die **Gehe zu** (Dialogfeld). Wenn Sie drücken **F5** während Visual Studio den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
+ **Dynamisches Tastaturschema**  
+ Visual Studio erhält Tastenkombinationsbefehle nur, wenn es den Fokus besitzt. Wenn Excel den Fokus hat, erhält die Excel Verknüpfung alle Befehle. Angenommen, Sie die Taste **F5** Excel geöffnet wird, während Excel den Fokus besitzt, die **Gehe zu** im Dialogfeld. Wenn Sie drücken **F5** während Visual Studio den Fokus besitzt, Visual Studio startet das Debuggen der Projektmappe.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Microsoft Office Word-Tastatur, Microsoft Office-Tastatureinstellungen, Optionen (Dialogfeld)](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
-  
-  
+ [Im Dialogfeld "Optionen" Microsoft Office Word-Tastatur, Microsoft Office-Tastatureinstellungen,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  

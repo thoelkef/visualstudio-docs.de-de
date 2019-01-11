@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)'
+title: 'Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ac0ff3943d1209b0442c29785408c70b55cef43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882931"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Vorgehensweise: Anpassen von Klassendiagrammen
 
@@ -129,7 +128,6 @@ Sie können eine Typform aus dem Klassendiagramm entfernen, ohne dass dies Auswi
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit Klassendiagrammen](working-with-class-diagrams.md)
 - [Vorgehensweise: Wechseln zwischen Member- und Zuordnungsnotation](how-to-change-between-member-notation-and-association-notation.md)
 - [Vorgehensweise: Anzeigen von vorhandenen Typen](how-to-view-existing-types.md)
-- [Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)
+- [Anzeigen von Typen und Beziehungen](designing-and-viewing-classes-and-types.md)

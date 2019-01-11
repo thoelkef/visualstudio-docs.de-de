@@ -1,9 +1,6 @@
 ---
 title: Unterstützung für Benutzereinstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea4d5bd890c28721539fa9528df72446fedc126
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930907"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer wählt definieren die **Import-/Exporteinstellungen** Befehl die **Tools** Menü. Zum Aktivieren der dieser Persistenz, die Sie verwenden der Einstellungen-APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -61,4 +58,3 @@ Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zu
 | Kategorie | REG_SZ | GUID | GUID, die die Einstellungskategorie identifiziert werden.<br /><br /> Für Implementierungen, die basierend auf interop-Assemblys, kann dieser Wert kann nach dem Zufallsprinzip gewählten sein GUID, die die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE übergibt an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> Methoden. Alle Implementierungen dieser beiden Methoden sollten überprüfen, ob ihre GUID-Argumente.<br /><br /> Für Implementierungen basierend auf MPF-diese GUID wird abgerufen, indem die <xref:System.Type> von der Klasse implementiert die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einstellungsmechanismus. |
 | ResourcePackage | REG_SZ | GUID | Dies ist optional.<br /><br /> Pfad zur Satelliten-DLL mit lokalisierte Zeichenfolgen auf, wenn das VSPackage implementierende, wird diese nicht bereitgestellt.<br /><br /> MPF verwendet Reflektion, um die richtige Ressource VSPackage, erhalten so die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse wird dieses Argument nicht festgelegt. |
 | AlternateParent | REG_SZ | Der Name des Ordners, unter der Extras Optionen-Seite, enthält dieses benutzerdefinierten Einstellungspunkts. | Dies ist optional.<br /><br /> Sie müssen diesen Wert festlegen, nur, wenn eine einstellungenimplementierung unterstützt **Extras/Optionen** Seiten, verwenden den persistenzmechanismus in, der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] statt der Mechanismus in das Automatisierungsmodell zum Zustand zu speichern.<br /><br /> In diesen Fällen ist der Wert im Schlüssel AlternateParent ist die `topic` Teil der `topic.sub-topic` Zeichenfolge zur Identifizierung der entsprechenden **ToolsOptions** Seite. Z. B. für die **ToolsOptions** Seite `"TextEditor.Basic"` wäre der Wert des AlternateParent `"TextEditor"`.<br /><br /> Wenn <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> des benutzerdefinierten Einstellungspunkts, generiert es ist identisch mit den Namen der Kategorie. |
-

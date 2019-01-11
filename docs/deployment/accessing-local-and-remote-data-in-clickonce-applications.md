@@ -1,8 +1,6 @@
 ---
 title: Zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874870"
 ---
-# <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und remote-Daten in ClickOnce-Anwendungen
+# <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.  
   
 ## <a name="local-data"></a>Lokale Daten  
@@ -39,13 +37,13 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 ### <a name="clickonce-data-directory"></a>ClickOnce-Datenverzeichnis  
  Jede auf einem lokalen Computer installierte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung verfügt über ein Datenverzeichnis, das im Ordner "Dokumente und Einstellungen" des Benutzers gespeichert ist. Jede in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthaltene und als "Daten"-Datei gekennzeichnete Datei wird in dieses Verzeichnis kopiert, wenn eine Anwendung installiert wird. Datendateien können einen beliebigen Dateityp aufweisen. Zu den am häufigsten verwendeten gehören Text, XML und Datenbankdateien, z. B. Microsoft Access-MDB-Dateien.  
   
- Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist, in dem die ausführbare Datei der Anwendung (*.exe*) Dateien und Assemblys befinden.  
+ Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien (.exe) und die Assemblys der Anwendung befinden.  
   
 > [!NOTE]
->  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um end-user-verwaltet werden, wie z. B. Dokumente zu speichern.  
+>  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z. B. Dokumente, zu speichern.  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Markieren von Datendateien in einer ClickOnce-Verteilung  
- Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>Lesen und Schreiben in das Datenverzeichnis  
  Zum Lesen aus dem Datenverzeichnis muss Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung eine Leseberechtigung anfordern; analog dazu erfordert das Schreiben in das Verzeichnis eine Schreibberechtigung. Ihre Anwendung verfügt automatisch über diese Berechtigung, wenn sie für die Ausführung mit voller Vertrauenswürdigkeit konfiguriert ist. Weitere Informationen zum Erhöhen von Berechtigungen für die Anwendung unter Verwendung der Berechtigungserweiterung oder der Bereitstellung vertrauenswürdiger Anwendungen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
@@ -53,12 +51,12 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 > [!NOTE]
 >  Wenn Ihre Organisation die Bereitstellung vertrauenswürdiger Anwendungen nicht verwendet und die Berechtigungserweiterung deaktiviert hat, schlägt die Assertion der Berechtigungen fehl.  
   
- Nachdem die Anwendung über diese Berechtigungen verfügt, kann sie auf das Datenverzeichnis zugreifen, indem sie Methodenaufrufe für Klassen innerhalb von <xref:System.IO>verwendet. Den Pfad des Datenverzeichnisses innerhalb einer Windows Forms [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung erhalten Sie mithilfe der in der <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> -Eigenschaft von <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> definierten <xref:System.Deployment.Application.ApplicationDeployment>-Eigenschaft. Dies ist die einfachste und empfohlene Möglichkeit, auf Ihre Daten zuzugreifen. Im folgenden Codebeispiel wird veranschaulicht, wie Sie dies für eine Textdatei mit dem Namen *CSV.txt vorgehen* , die Sie in der Bereitstellung als Datendatei aufgenommen haben.  
+ Nachdem die Anwendung über diese Berechtigungen verfügt, kann sie auf das Datenverzeichnis zugreifen, indem sie Methodenaufrufe für Klassen innerhalb von <xref:System.IO>verwendet. Den Pfad des Datenverzeichnisses innerhalb einer Windows Forms [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung erhalten Sie mithilfe der in der <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> -Eigenschaft von <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> definierten <xref:System.Deployment.Application.ApplicationDeployment>-Eigenschaft. Dies ist die einfachste und empfohlene Möglichkeit, auf Ihre Daten zuzugreifen. Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit einer Textdatei mit dem Namen CSV.txt vorgehen, die Sie als Datendatei in die Bereitstellung aufgenommen haben.  
   
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Weitere Informationen über die Kennzeichnung von Dateien in der Bereitstellung als Datendateien finden Sie unter [wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Weitere Informationen über die Kennzeichnung von Bereitstellungsdateien als Datendateien finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
   
  Sie können den Pfad zum Datenverzeichnis auch mit den relevanten Variablen in der <xref:System.Windows.Forms.Application> -Klasse wie z. B. <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>abrufen.  
   
@@ -78,7 +76,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
   
  Weitere Informationen finden Sie unter [Isolierte Speicherung](/dotnet/standard/io/isolated-storage).  
   
-### <a name="other-local-files"></a>Andere lokalen Dateien  
+### <a name="other-local-files"></a>Andere lokale Dateien  
  Wenn Ihre Anwendung mit Daten von Endbenutzern wie z. B. Berichten, Bildern, Musik usw. arbeiten oder solche Daten speichern muss, benötigt sie <xref:System.Security.Permissions.FileIOPermission> , um Daten im lokalen Dateisystem zu lesen oder in dieses zu schreiben.  
   
 ## <a name="remote-data"></a>Remotedaten  
@@ -105,9 +103,9 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Wenn ein XML-Webdienst über HTTP ausgeführt wird, gelten für den Dienst dieselben Sicherheitsbeschränkungen wie für die <xref:System.Net.WebClient> -Klasse und die <xref:System.Net.HttpWebRequest> -Klasse.  
   
 ### <a name="access-a-database-directly"></a>Greifen Sie direkt auf einer Datenbank  
- Mithilfe der Klassen im <xref:System.Data> -Namespace können Sie direkte Verbindungen zu einem Datenbankserver im Netzwerk herstellen, z. B. SQL Server, allerdings sind dabei bestimmte Sicherheitsaspekte zu berücksichtigen. Anders als HTTP-Anforderungen sind Datenbankverbindungsanforderungen in einer teilweise vertrauenswürdigen Umgebung standardmäßig unzulässig. Über die entsprechenden Berechtigungen verfügen Sie standardmäßig nur dann, wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung von einer CD-ROM installiert haben. Dadurch erhalten Anwendungen volle Vertrauenswürdigkeit. Um den Zugriff auf eine bestimmte SQL Server-Datenbank zu ermöglichen, muss die Anwendung <xref:System.Data.SqlClient.SqlClientPermission> für diese Datenbank anfordern. Für den Zugriff auf andere Datenbanken als SQL Server muss <xref:System.Data.OleDb.OleDbPermission>angefordert werden.  
+ Mithilfe der Klassen im <xref:System.Data> -Namespace können Sie direkte Verbindungen zu einem Datenbankserver im Netzwerk herstellen, z. B. SQL Server, allerdings sind dabei bestimmte Sicherheitsaspekte zu berücksichtigen. Anders als HTTP-Anforderungen sind Datenbankverbindungsanforderungen in einer teilweise vertrauenswürdigen Umgebung standardmäßig unzulässig. Über die entsprechenden Berechtigungen verfügen Sie standardmäßig nur dann, wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung von einer CD-ROM installiert haben. Dadurch erhalten Anwendungen volle Vertrauenswürdigkeit. Um den Zugriff auf eine bestimmte SQL Server-Datenbank zu ermöglichen, muss die Anwendung <xref:System.Data.SqlClient.SqlClientPermission> für diese Datenbank anfordern. Für den Zugriff auf andere Datenbanken als SQL Server muss <xref:System.Data.OleDb.OleDbPermission>angefordert werden.  
   
  In den meisten Fällen ist ein direkter Zugriff auf die Datenbank nicht erforderlich, sondern der Zugriff erfolgt über eine in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geschriebene Webserveranwendung oder einen XML-Webdienst. Diese Art des Datenbankzugriffs ist häufig die beste Methode, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung über einen Webserver bereitgestellt wird. Sie können auf den als teilweise vertrauenswürdig eingestuften Server zugreifen, ohne dass die Berechtigungen der Anwendung erweitert werden müssen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

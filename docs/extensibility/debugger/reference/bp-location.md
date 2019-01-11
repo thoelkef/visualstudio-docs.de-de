@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839642"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Gibt den Typ der Struktur verwendet, um den Speicherort des Haltepunkts zu beschreiben.  
@@ -79,21 +76,21 @@ public struct BP_LOCATION {
  [Nur für C++] Enthält die [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) Struktur, wenn `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember2`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember3`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
  `unionmember4`  
- [Nur in c#] Siehe Hinweise zum interpretieren.  
+ [C# nur] Siehe Hinweise zum interpretieren.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur ist ein Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
   
- [Nur in c#] Die `unionmemberX` Elemente werden gemäß der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpLocationType` Wert ein, und suchen Sie in den anderen Spalten, um zu bestimmen, was von den einzelnen `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Methode zur Interpretation von eines Teils dieser Struktur in C# geschrieben.  
+ [C# nur] Die `unionmemberX` Elemente werden gemäß der folgenden Tabelle interpretiert. Suchen Sie in der linken Spalte für die `bpLocationType` Wert ein, und suchen Sie in den anderen Spalten, um zu bestimmen, was von den einzelnen `unionmemberX` Member darstellt und Marshal-Argument der `unionmemberX` entsprechend. Siehe das Beispiel für eine Methode zur Interpretation von eines Teils dieser Struktur in C# geschrieben.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819626"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Gewusst wie: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Vorgehensweise: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus
   Sie können komplexe Vorgänge mit einem Methodenaufruf ausführen, durch den Aufruf der integrierter Dialogfelder in Microsoft Office Word ohne diese an den Benutzer anzuzeigen. Sie erreichen dies, indem die <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> Methode der <xref:Microsoft.Office.Interop.Word.Dialog> Objekt ohne Aufrufen der <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> Methode.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35672809"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Vorgehensweise: Programmgesteuertes verwenden Sie integrierter Dialogfelder in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
  [Spätes Binden in Office-Projektmappen](../vsto/late-binding-in-office-solutions.md)   
  [Reflektion (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflektion (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

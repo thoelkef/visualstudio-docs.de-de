@@ -1,9 +1,6 @@
 ---
-title: Was&#39;s in der Quelle steuern-Plug-in-API-Version 1.2 | Microsoft Docs
-ms.custom: ''
+title: Was&#39;Neues in der Quelle steuern-Plug-in-API-Version 1.2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
@@ -14,31 +11,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 409c862244b47970629ab57c6417dfc7f3b10a1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f323bde8719090815e76cf9887630930e5151da7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915295"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Was&#39;s in der Quelle steuern-Plug-in-API-Version 1.2
-In diesem Abschnitt werden die erweiterten Code Quellcodeverwaltungsfunktion in der Quelle Steuerelement-Plug-in-API Version 1.2 hervorgehoben. Im folgenden werden die neuen Funktionen in Version 1.2 aufgeführt:  
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Was&#39;Neues in der Quelle steuern-Plug-in-API-Version 1.2
+In diesem Abschnitt werden die erweiterten Code Quellcodeverwaltungsfunktionen in die Source-Plug-in-API Version 1.2 hervorgehoben. Im folgenden werden die neuen Features in Version 1.2 aufgeführt:  
   
 ## <a name="changes"></a>Änderungen  
  [Beseitigung von ~SAK-Dateien](../../extensibility/internals/elimination-of-tilde-sak-files.md)  
  Erläutert, wie die Datenquellen-Steuerelement-Plug-in-API 1.2 mit temporären Dateien interagiert.  
   
  [Anwendung von Einstellungen auf mehrere Projektverbindungen](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)  
- Wird veranschaulicht, wie ein Quellcodeverwaltungs-Plug-in einen Batchvorgang zum Ausführen der gleichen Quelle-Steuerungsvorgang über mehrere Projekte oder mehrere Kontexte der Verbindung.  
+ Wird veranschaulicht, wie ein Quellcodeverwaltungs-Plug-in einen Batchvorgang zum Ausführen des gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindungs-Kontexte.  
   
  [Erstellen von übergeordneten Containerordnern für Projektmappen](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)  
- Erläutert, wie Source Control-Plug-in-API-Version 1.2 einen Benutzer ein einziger Stammknoten Quelle Steuerelement Ziel für alle Web-Projekte innerhalb der Projektmappe angeben können.  
+ Erläutert, wie die Quelle Steuerelement-Plug-in-API-Version 1.2 den Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben können.  
   
  [Optionaler Vergleich des lokalen Projektordners mit dem Speicher der Quellcodeverwaltung](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)  
  Erläutert, wie die Datenquellen-Steuerelement-Plug-in-API 1.2 Dateiversionen vergleicht.  
   
  [Entfernen von Informationen der Quellcodeverwaltung aus PROJ- und SLN-Dateien](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
- Erläutert, wie Informationen zu Projekten und Lösungen von Source Control-Plug-in-API-Version 1.2 speichert.  
+ Erläutert, wie die Source-Steuerelement-Plug-in-API-Version 1.2 Informationen zu Projekten und Projektmappen gespeichert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902187"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren-Codeausschnitte
+# <a name="walkthrough-implement-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer von der Erweiterung sie ihren eigenen Code hinzufügen können.  
   
  Ein Codeausschnitt ist ein Fragment von Code oder Text, der in einer Datei eingebunden werden kann. Um alle Codeausschnitte anzuzeigen, die für bestimmte Programmiersprachen erfasst wurden, auf die **Tools** Menü klicken Sie auf **Codeausschnitt-Manager**. Klicken Sie zum Einfügen eines Ausschnitts in einer Datei mit der rechten Maustaste, Sie den Ausschnitt möchten, auf Ausschnitt einfügen oder **Umschließen mit**suchen den gewünschten Codeausschnitt, und doppelklicken Sie darauf. Drücken Sie die **Registerkarte** oder **UMSCHALT**+**Registerkarte** ändern die relevanten Teile des Ausschnitts ein, und drücken anschließend **EINGABETASTE** oder **Esc** annehmen. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  

@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
+title: ISimpleConnectionPoint::Unadvise | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733900"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089264"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 Beendet eine Advise-Verbindung, die zuvor über `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parameter  
  `dwCookie`  
- [in] Der Verbindung zum Beenden von zurückgegeben, Token `ISimpleConnectionPoint::Advise`.  
+ [in] Die Verbindung beendet wurde, der von zurückgegebene Token `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT Unadvise(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn eine Advise-Verbindung beendet wird, zeigen Sie die Verbindung Aufrufe der `Release` Methode auf den Zeiger, der gespeichert wurde, für die Verbindung während der `ISimpleConnectionPoint::Advise` Methode. Kehrt Aufrufen der `AddRef` , erfolgt während der `ISimpleConnectionPoint::Advise` Wenn Verbindungspunkt der Advise-Senke aufruft `QueryInterface`.  
+ Wenn eine Advise-Verbindung beendet wird, zeigen Sie die Verbindung Aufrufe der `Release` Methode für den Zeiger, der gespeichert wurde, für die Verbindung während der `ISimpleConnectionPoint::Advise` Methode. Aufrufen kehrt das Ergebnis der `AddRef` , wurde ausgeführt, während die `ISimpleConnectionPoint::Advise` Wenn der Verbindungspunkt für der Advise-Senke aufruft `QueryInterface`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)

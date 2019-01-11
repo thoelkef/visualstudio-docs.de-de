@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProperty-Schnittstelle | Microsoft Docs
+title: IJsDebugProperty-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 459a26f78e2dd5c2d1d85d829fd622d9d2697409
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e608da11e09020f12f6506f6830b5640f82688ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727930"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090246"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty-Schnittstelle
 Stellt einen Eigenschaftenbrowser dar.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 IJsDebugProperty : public IUnknown;  
 ```  
   
-## <a name="members"></a>Mitglieder  
+## <a name="members"></a>Member  
   
 ### <a name="public-methods"></a>Öffentliche Methoden  
   

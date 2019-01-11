@@ -1,9 +1,6 @@
 ---
 title: Erstellen von Projekttypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a453e8ed6c59f242e8a3aadbf056f956aedcaca
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d80dd7fcaa75b5090145821307dfe7def28afbc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987407"
 ---
 # <a name="create-project-types"></a>Erstellen von Projekttypen
 Sie können die erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einen neuen Projekttyp erstellen. Um einen neuen Projekttyp zu erstellen, müssen Sie einige Konzepte verstehen und eine Reihe von Schritten ausführen. Die folgenden Themen enthalten eine Übersicht über zum Erstellen von Projekttypen zur Verfügung.  
@@ -28,7 +25,7 @@ Sie können die erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
  [Entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md)  
  Beschreibt, Element, Projekt-Datei-Persistenz und Engagement Mechanic entwurfsentscheidungen, die Sie vornehmen, bevor ein neuer Projekttyp erstellen.  
   
- [Prüfliste: Erstellen Sie neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Prüfliste: Erstellen Sie neue Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Bietet eine Übersicht über die Schritte, die Sie befolgen müssen, um einen neuen Projekttyp zu erstellen, der Programmierung Aufgaben wie das Bearbeiten von Code und kompilieren, erstellen, Debuggen und Bereitstellen von Anwendungen in Ihrem Projekt unterstützt.  
   
  [Erstellen von Projektinstanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

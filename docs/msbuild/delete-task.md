@@ -1,8 +1,6 @@
 ---
 title: Aufgabe löschen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4e0d4aa2567656e8aa37f88b59128bb60a786c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a61a81c3a3d3644f82f955b362b74fd990351c05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851429"
 ---
 # <a name="delete-task"></a>Delete-Aufgabe
 Löscht die angegebene Datei.  
@@ -33,7 +31,7 @@ Löscht die angegebene Datei.
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`DeletedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die Dateien an, die erfolgreich gelöscht wurden.|  
 |`Files`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Legt die zu löschenden Dateien fest.|  

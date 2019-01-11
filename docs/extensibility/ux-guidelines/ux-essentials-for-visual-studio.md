@@ -1,9 +1,6 @@
 ---
 title: UX Essentials für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874868"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -63,7 +60,7 @@ ms.locfileid: "49848591"
  - Erste Dialogfeld Höhe muss **weniger als 700 Pixel**, sodass sie in die minimale Auflösung der des IDE-Fensterrahmens mit 96 dpi passt.
   
 ### <a name="high-density-displays"></a>Mit hoher Dichte zeigt  
- Benutzeroberfläche in Visual Studio muss funktionieren gut in alle DPI-Skalierung von Faktoren, die von Windows unterstützt: 150 %, 200 % und 250 %.  
+ Benutzeroberfläche in Visual Studio muss auch in alle DPI-Skalierungsfaktoren arbeiten, die von Windows standardmäßig unterstützt: 150 %, 200 % und 250 %.  
   
 ## <a name="anti-patterns"></a>Anti-Muster  
  Visual Studio enthält viele Beispiele der Benutzeroberfläche, die unsere Richtlinien und bewährte Methoden befolgen. In dem Bestreben konsistent ist nutzen die Entwickler häufig aus Produkt UI-Entwurfsmuster ähnelt, was sie erstellen. Obwohl dies ein guter Ansatz, hilft uns Konsistenz bei der Interaktion des Benutzers und den visuellen Entwurf fördern, wir gelegentlich Funktionen mit ein paar Details mitgeliefert werden, die nicht erfüllt unsere Richtlinien aufgrund der Einschränkungen in Zeitplan oder vollziehen des Austritts Priorisierung ist. In diesen Fällen möchten wir Teams, kopieren Sie eine der folgenden "Anti-Muster" nicht, weil sie ungültige oder inkonsistente UI in Visual Studio-Umgebung angelegt.  
@@ -120,15 +117,15 @@ Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzero
 ### <a name="using-command-bars-for-settings"></a>Mithilfe der Befehlsleisten für Einstellungen  
  **Abbildung A** dieses Antimuster darstellt: platzieren eine Einstellung unter eine Befehlsschaltfläche, die auf mehr als nur den Befehl angewendet wird. Bei dieser Version stehen die folgenden Befehle, die neben dem Debugging starten –-ähnliche Ansicht in Browser starten ohne Debugging sowie schrittweise ausführen –, die die ausgewählte Einstellung berücksichtigt.  
 
-  ![Abbildung A: Befehlsleisten Antimuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-Muster – FigureA")<br />Abbildung A: Antimuster Befehlsleiste
+  ![Abbildung A: Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-Muster – FigureA")<br />Abbildung A: Antimuster für Befehlsleiste
   
  Etwas bessere Leistung, der aber dennoch unerwünschtem, wäre, Einstellungen dieses Typs in den Symbolleisten, siehe **Abbildung B**. Unterteilte Schaltflächen belegen weniger Speicherplatz und sind daher eine Verbesserung über die Dropdown-Elemente, werden beide Entwürfe eine Symbolleiste weiterhin verwendet, um etwas höher zu stufen, die einen Befehl handelt es sich nicht.  
  
- ![Abbildung b besser, aber dennoch ein Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Muster – FigureB")<br />Abbildung b besser, aber immer noch ein Antimuster für Befehlsleiste
+ ![Abbildung b Besser, aber dennoch ein Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Muster – FigureB")<br />Abbildung b Besser, aber dennoch ein Antimuster für Befehlsleiste
  
   In den richtigen Lösungsansatz **Abbildung C**, die Einstellung an eine Reihe von Befehlen gebunden ist. Es gibt keine globale Einstellung festgelegt wird, und wir nur zwischen vier Befehle wechseln. Dies ist die einzige Situation, in der Befehle auf der Symbolleiste zulässig sind. 
 
- ![Abbildung "c:" Korrigieren der Verwendung von Visual Studio-Befehlsleiste Befehlsmuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Muster – FigureC")<br />Abbildung "c:" richtige Verwendung von Visual Studio-Befehlsleiste Befehlsmuster
+ ![Abbildung "c:" Korrigieren Sie die Verwendung von Visual Studio-Befehlsleiste Befehlsmuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Muster – FigureC")<br />Abbildung "c:" Richtige Verwendung von Visual Studio-Befehlsleiste Befehlsmuster
    
 ### <a name="control-anti-patterns"></a>Anti-Steuerelementmuster  
  Einige Antimuster für sind einfach falsche Verwendung oder eine Präsentation eines Steuerelements oder einer Gruppe von Steuerelementen.  
@@ -156,7 +153,7 @@ Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzero
   
    ![Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-J_HyperlinkIncorrect")<br />Ignorieren den Dienst für die Farbe, und Verwenden von "Erfahren Sie mehr" für Links sind Antimuster für Visual Studio.  
   
-   **Bessere Lösung:** stellten die Frage, die der Benutzer auf den Link bitten würden.  
+   **Eine bessere Lösung:** Stellen Sie die Frage, die der Benutzer aufgefordert werden würde, auf den Link.  
   
 -   Wie funktionieren die Windows Azure-Dienste?  
   
@@ -167,4 +164,4 @@ Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzero
   
  **Ungültige:** "Klicken Sie hier, um Anweisungen zum Erstellen eines neuen Projekts."
   
- **Gut:** "Wie erstelle ich ein neues Projekt aus?"
+ **Gute:** "Wie erstelle ich ein neues Projekt?"

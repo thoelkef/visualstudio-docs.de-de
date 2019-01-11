@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_compilergenerated | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 207a92e8e510b01b817e6633830b0478b325254b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fce5344d4997a50443bb1c0ec7a3b6166c9de8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919757"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 Ruft ein Flag, das angibt, ob das Symbol vom Compiler generiert wurde.  
@@ -27,7 +25,7 @@ Ruft ein Flag, das angibt, ob das Symbol vom Compiler generiert wurde.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_compilerGenerated (   
+HRESULT get_compilerGenerated (   
    BOOL* pRetVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_compilerGenerated (
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

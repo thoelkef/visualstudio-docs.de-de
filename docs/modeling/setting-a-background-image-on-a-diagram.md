@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887866"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
 In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
@@ -45,7 +44,7 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergr
 
 11. Wenn "Resources.Designer.cs" fehlt, klicken Sie auf die Datei "Resources.resx" im **Projektmappen-Explorer**.
 
-12. In der **Eigenschaften** legen die `Custom Tool` Eigenschaft `ResXFileCodeGenerator`.
+12. Legen Sie im Fenster **Eigenschaften** die Eigenschaft `Custom Tool` auf `ResXFileCodeGenerator`fest.
 
 13. In **Projektmappen-Explorer**, mit der rechten Maustaste in des Dsl-Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie auf **neuer Ordner**.
 

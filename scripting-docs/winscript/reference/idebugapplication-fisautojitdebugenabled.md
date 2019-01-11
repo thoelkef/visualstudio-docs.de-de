@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725180"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090544"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Bestimmt, ob ein Just-in-Time (JIT)-Debugger dumb Auto-Debug-Hosts registriert ist.  
+Bestimmt, ob ein just-in-Time (JIT)-Debugger zu dumm Auto-Debug-Hosts registriert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, und ein JIT-Debugger dumb Auto-Debug-Hosts registriert wird, gibt die Methode `TRUE`. Andernfalls wird zurückgegeben `FALSE`.  
+ Die Methode gibt zurück, wenn die Methode erfolgreich ist, und ein JIT-Debugger ist zu dumm Auto-Debug-Hosts registriert, `TRUE`. Andernfalls wird `FALSE` zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bestimmt, ob ein Debugger JIT dumb Auto-Debug-Hosts registriert ist.  
+ Diese Methode wird bestimmt, ob ein JIT-Debugger zu dumm Auto-Debug-Hosts registriert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

@@ -1,15 +1,10 @@
 ---
 title: 'Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964016"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Gewusst wie: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Fügen Sie SharePoint-Projektelemente hinzu, einer Funktion  
@@ -35,7 +30,7 @@ ms.locfileid: "49854831"
   
 1. Öffnen Sie die Funktions-Designer.  
   
-    Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854831"
 ## <a name="see-also"></a>Siehe auch
  [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)   
  [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: IDispatchEx::GetNextDispID | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728520"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092988"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Listet die Member des Objekts.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -44,16 +44,16 @@ HRESULT GetNextDispID(
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|fdexEnumDefault|Fordert an, dass das Objekt die Standardelemente zählt. Das Objekt ist zulässig, einen beliebigen Satz von Elementen aufgelistet werden.|  
-|fdexEnumAll|Fordert an, dass das Objekt alle Elemente zählt. Das Objekt ist zulässig, einen beliebigen Satz von Elementen aufgelistet werden.|  
+|fdexEnumDefault|Fordert an, dass das Objekt die Standardelemente zählt. Das Objekt kann einen beliebigen Satz von Elementen aufzählen.|  
+|fdexEnumAll|Fordert an, dass das Objekt alle Elemente zählt. Das Objekt kann einen beliebigen Satz von Elementen aufzählen.|  
   
  `id`  
- Gibt das aktuelle Element. GetNextDispID Ruft das Element in der Enumeration nach diesem ab. Verwendet GetDispID oder einem vorherigen Aufruf GetNextDispID, um diesen Bezeichner abzurufen. Verwendet zum Abrufen des ersten Bezeichners des ersten Elements der DISPID_STARTENUM-Wert.  
+ Gibt das aktuelle Element. GetNextDispID Ruft das Element in der Enumeration nach dieser ab. Verwendet GetDispID oder einem vorherigen Aufruf von GetNextDispID, um diesen Bezeichner abzurufen. Wird mit den DISPID_STARTENUM-Wert des ersten Elements den ersten Bezeichner abgerufen.  
   
  `pid`  
  Adresse des einen DISPID-Variable, die den Bezeichner des nächsten Elements in der Enumeration empfängt.  
   
- Wenn ein Element, indem gelöscht wird `DeleteMemberByName` oder `DeleteMemberByDispID`, `DISPID` für gültig bleiben muss, `GetNextDispID`.  
+ Wenn ein Element, indem gelöscht wird `DeleteMemberByName` oder `DeleteMemberByDispID`, `DISPID` gültig bleiben muss `GetNextDispID`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -65,7 +65,7 @@ HRESULT GetNextDispID(
   
 ## <a name="example"></a>Beispiel  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

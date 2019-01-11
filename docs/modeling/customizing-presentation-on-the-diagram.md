@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473d0a1e1f9bd215513e7a69f8fc511f6416db7a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968296"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
 Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprach-Designers. Normalerweise konstruieren die Benutzer ihre Modelle mit dem Diagramm. Sie können das Diagramm wie in den folgenden Themen beschrieben anpassen.

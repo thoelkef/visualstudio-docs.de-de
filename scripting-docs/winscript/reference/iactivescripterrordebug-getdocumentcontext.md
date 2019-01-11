@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft Docs
+title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1342465ed306f43d07248f8e3c776e9e9af2c774
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 308ee38b6b4e2e63d113934dd535fa04ec576c2e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645860"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094223"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
-Stellt den Dokumentenkontext für diesen Fehler bereit.  
+Der Dokumentenkontext bereitgestellt für diesen Fehler.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppssc  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Position des Zeichens des Dokumentbereichs-Kontext sollen alle Zeichen, die dem Fehler entspricht.  
+ Position des Zeichens des Dokumentbereichs-Kontext sollte alle Zeichen, die für den Fehler enthalten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptErrorDebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)

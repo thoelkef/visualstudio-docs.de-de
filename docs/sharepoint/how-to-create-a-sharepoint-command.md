@@ -1,9 +1,6 @@
 ---
-title: 'Vorgehensweise: Erstellen eines SharePoint-Befehls | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen Sie ein SharePoint-Befehl | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894849"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Gewusst wie: Erstellen eines SharePoint-Befehls
+# <a name="how-to-create-a-sharepoint-command"></a>Vorgehensweise: Erstellen eines SharePoint-Befehls
   Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie erstellen eine benutzerdefinierte *SharePoint-Befehls* zum Aufrufen der API. Sie definieren den SharePoint-Befehl in einer Assembly, die direkt in das Serverobjektmodell aufrufen können.  
   
  Weitere Informationen zum Zweck der SharePoint-Befehle finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -31,7 +28,7 @@ ms.locfileid: "37117136"
   
 1.  Erstellen Sie ein Klassenbibliotheksprojekt, das die folgende Konfiguration aufweist:  
   
-    -   Ist .NET Framework 3.5 ausgerichtet. Weitere Informationen zur Auswahl des Zielframeworks finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+    -   Ist .NET Framework 3.5 ausgerichtet. Weitere Informationen zur Auswahl des Zielframeworks finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   Das Ziel ist die "anycpu" oder X64 Plattform. Standardmäßig ist die Zielplattform für Klassenbibliotheksprojekte "anycpu". Weitere Informationen zum Auswählen der Zielplattform finden Sie unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).  
   
@@ -60,7 +57,7 @@ ms.locfileid: "37117136"
   
 4.  Anwenden der <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> an die Methode. Dieses Attribut gibt einen eindeutigen Bezeichner für den Befehl an; Diese ID muss nicht dem Methodennamen entsprechen.  
   
-     Sie müssen den gleichen Bezeichner angeben, wenn Sie den Befehl aufrufen, die sich von der SharePoint-Tools-Erweiterung. Weitere Informationen finden Sie unter [wie: Ausführen einer SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md).  
+     Sie müssen den gleichen Bezeichner angeben, wenn Sie den Befehl aufrufen, die sich von der SharePoint-Tools-Erweiterung. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen einer SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, einen SharePoint-Befehl mit dem Bezeichner `Contoso.Commands.UpgradeSolution`. Dieser Befehl verwendet die APIs in das Serverobjektmodell auf einer bereitgestellten Lösung aktualisieren.  
@@ -68,7 +65,7 @@ ms.locfileid: "37117136"
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
   
- Zusätzlich zu den impliziten ersten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> -Parameter mit diesem Befehl verfügt auch über eine benutzerdefinierte Zeichenfolge-Parameter, der den vollständigen Pfad der WSP-Datei enthält, die zur SharePoint-Website aktualisiert wird. Dieser Code im Rahmen eines größeren Beispiels, finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Zusätzlich zu den impliziten ersten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> -Parameter mit diesem Befehl verfügt auch über eine benutzerdefinierte Zeichenfolge-Parameter, der den vollständigen Pfad der WSP-Datei enthält, die zur SharePoint-Website aktualisiert wird. Dieser Code im Rahmen eines größeren Beispiels, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ## <a name="compiling-the-code"></a>Kompilieren des Codes  
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:  
@@ -82,6 +79,5 @@ ms.locfileid: "37117136"
   
 ## <a name="see-also"></a>Siehe auch
  [Rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Gewusst wie: Ausführen einer SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Vorgehensweise: Führen Sie einen SharePoint-Befehl](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  

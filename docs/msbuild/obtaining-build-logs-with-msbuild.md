@@ -1,8 +1,6 @@
 ---
 title: Erhalten von Buildprotokollen mit MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
@@ -13,61 +11,77 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83f4de3efc64d78dd561a44fabed1e16f673d736
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 37c2c9b1ff1380fc8a8f4a96f64a45a0a7fbd1b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925861"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
+
 Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in eine oder mehrere Dateien speichern möchten. Sie können auch eine benutzerdefinierte Protokollierung zum Sammeln von Builddaten angeben. Weitere Informationen zu MSBuild-Befehlszeilenschaltern, die in diesem Thema nicht behandelt werden, finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Wenn Sie Projekte mithilfe von Visual Studio-IDE erstellen, können Sie die Probleme diese Builds beheben, indem Sie Buildprotokolle überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> Wenn Sie Projekte mithilfe von Visual Studio-IDE erstellen, können Sie die Probleme diese Builds beheben, indem Sie Buildprotokolle überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
   
 ## <a name="set-the-level-of-detail"></a>Festlegen des Detailgrads  
+
  Wenn Sie ein Projekt mithilfe von MSBuild ohne Angabe einer Detailebene erstellen, werden die folgenden Informationen im Ausgabeprotokoll angezeigt:  
   
--   Fehler, Warnungen und Nachrichten, die als äußerst wichtig eingestuft werden.  
+- Fehler, Warnungen und Nachrichten, die als äußerst wichtig eingestuft werden.  
   
--   Einige Statusereignisse.  
+- Einige Statusereignisse.  
   
--   Eine Übersicht des Build.  
+- Eine Übersicht des Build.  
 
 Mithilfe des Schalters **-verbosity** (**-v**) können Sie steuern, wie viele Daten im Ausgabeprotokoll angezeigt werden. Verwenden Sie für die Problembehandlung entweder den Ausführlichkeitsgrad `detailed` (`d`) oder `diagnostic` (`diag`), der die meisten Informationen bietet.  
 
 Der Buildprozess ist möglicherweise langsamer, wenn Sie **-verbosity** auf `detailed` festlegen, und sogar noch langsamer, wenn Sie **-verbosity** auf `diagnostic` festlegen.  
-  
-```cmd  
+
+```cmd
 msbuild MyProject.proj -t:go -v:diag  
 ```  
 
+### <a name="verbosity-settings"></a>Einstellungen für die Ausführlichkeit
+
+In der folgenden Tabelle wird gezeigt, wie sich die Ausführlichkeit der Protokolle (Spaltenwerte) darauf auswirkt, welche Nachrichtentypen (Zeilenwerte) protokolliert werden.
+
+|                                       | Quiet | Minimal | Normal | Detailliert | Diagnose |
+|---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
+| Fehler                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Warnungen                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Nachrichten mit hoher Priorität              |       |    ✅    |    ✅   |     ✅    |      ✅     |
+| Nachrichten mit normaler Priorität           |       |         |    ✅   |     ✅    |      ✅     |
+| Nachrichten mit niedriger Priorität              |       |         |        |     ✅    |      ✅     |
+| Zusätzliche Informationen zur MSBuild-Engine |       |         |        |          |      ✅     |
+
 ## <a name="save-the-build-log-to-a-file"></a>Speichern des Buildprotokolls in einer Datei  
- Sie können den Schalter **-fileLogger** (**fl**) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen *msbuild.log* gespeichert.  
-  
+
+Sie können den Schalter **-fileLogger** (**fl**) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen *msbuild.log* gespeichert.  
+
 ```cmd  
 msbuild MyProject.proj -t:go -fileLogger  
 ```  
-  
+
  Im folgenden Beispiel heißt die Protokolldatei *MyProjectOutput.log*, und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **-filelogparameters** (`flp`) an.  
-  
+
 ```cmd  
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
-  
+
  Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="save-the-log-output-to-multiple-files"></a>Speichern der Protokollausgabe in mehreren Dateien  
+
  Im folgenden Beispiel wird das gesamte Protokoll in *msbuild1.log*, nur die Fehler in *JustErrors.log* und nur die Warnungen in *JustWarnings.log* gespeichert. Im Beispiel werden Dateinummern für jede der drei Dateien verwendet. Die Dateinummern werden nach den Schaltern **-fl** und **-flp** angegeben (z.B. `-fl1` und `-flp1`).  
   
  Die Schalter **-filelogparameters** (`flp`) für die Dateien 2 und 3 gibt an, wie jede Datei benannt werden und was sie enthalten soll. Es wird kein Name für die Datei 1 angegeben, deshalb wird der Standardname *msbuild1.log* verwendet.  
-  
+
 ```cmd  
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly  
-  
 ```  
-  
+
  Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
 
 ## <a name="save-a-binary-log"></a>Speichern eines binären Protokolls
@@ -79,15 +93,17 @@ Im folgenden Beispiel wird eine binäre Protokolldatei mit dem Namen *binarylogf
 ```cmd  
 /bl:binarylogfilename.binlog
 ``` 
- 
+
 Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
 
 ## <a name="use-a-custom-logger"></a>Verwenden einer benutzerdefinierten Protokollierung  
+
  Sie können eine eigene Protokollierung schreiben, indem Sie einen verwalteten Typ erstellen, der die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle implementiert. Sie können eine benutzerdefinierte Protokollierung verwenden, um z.B. Buildfehler per E-Mail zu versenden, sie in einer Datenbank oder einer XML-Datei zu protokollieren. Weitere Informationen finden Sie unter [Buildprotokollierungen](../msbuild/build-loggers.md).  
   
  In der MSBuild-Befehlszeile geben Sie die benutzerdefinierte Protokollierung mithilfe des Schalters **-logger** an. Sie können auch den Schalter **-noconsolelogger** verwenden, um die Standardkonsole zu deaktivieren.  
   
 ## <a name="see-also"></a>Siehe auch  
+
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [Buildprotokollierungen](../msbuild/build-loggers.md)   
  [Protokollierung in einer Multiprozessorumgebung](../msbuild/logging-in-a-multi-processor-environment.md)   

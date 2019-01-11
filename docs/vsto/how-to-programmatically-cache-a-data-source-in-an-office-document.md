@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - StartCaching method
 - data caching [Office development in Visual Studio], programmatically
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3db60729facffdfd42553f95215e154de528436f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804444"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088490"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument
   Sie können ein Objekt, das dem Datencache in einem Dokument programmgesteuert hinzufügen, durch den Aufruf der `StartCaching` Methode von einem Host-Elements, z. B. eine <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, oder <xref:Microsoft.Office.Tools.Excel.Worksheet>. Entfernen Sie ein Datenobjekt aus dem Datencache durch Aufrufen der `StopCaching` Methode eines Hostelements.

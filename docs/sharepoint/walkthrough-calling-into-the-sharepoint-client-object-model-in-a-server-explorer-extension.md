@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918887"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie das SharePoint-Clientobjektmodell von eine Erweiterung für die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -39,7 +36,7 @@ ms.locfileid: "51296033"
 -   Das Debuggen und Testen der Erweiterung.  
   
 > [!NOTE]  
->  Die Erweiterung, die Sie in dieser exemplarischen Vorgehensweise erstellen, ähnelt der Erweiterung, die Sie, in erstellen [Exemplarische Vorgehensweise: Server-Explorer erweitern, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Diese exemplarische Vorgehensweise verwendet das SharePoint-Serverobjektmodell, aber in dieser exemplarischen Vorgehensweise führt dieselben Aufgaben mithilfe des Clientobjektmodells.  
+>  Die Erweiterung, die Sie in dieser exemplarischen Vorgehensweise erstellen, ähnelt der Erweiterung, die Sie, in erstellen [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Diese exemplarische Vorgehensweise verwendet das SharePoint-Serverobjektmodell, aber in dieser exemplarischen Vorgehensweise führt dieselben Aufgaben mithilfe des Clientobjektmodells.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  

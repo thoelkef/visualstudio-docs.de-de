@@ -1,9 +1,6 @@
 ---
 title: Was&#39;Neues in Visual Studio 2015 SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952841"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Was&#39;Neues in Visual Studio 2015 SDK
 Visual Studio SDK hat die folgenden neuen und aktualisierten Funktionen für Visual Studio 2015, Visual Studio 2017 und Visual Studio 2015 aktualisiert.  
@@ -67,7 +64,7 @@ Visual Studio SDK hat die folgenden neuen und aktualisierten Funktionen für Vis
 ## <a name="light-bulbs"></a>Glühbirnen  
  Eine der interessantesten neuen Möglichkeiten des Schreibens von Code für wird durch das Roslyn-Projekt bereitgestellt. Weitere Informationen finden Sie unter [Roslyn](https://github.com/dotnet/Roslyn).  
   
- Glühbirnen sind ein neues Feature, das mit das VS SDK geliefert wird. Sie sind in Visual Studio-Editor verwendeten Symbole, die erweitert werden, um einen Satz von Umgestaltung Codeaktionen oder Fehlerbehebungen für Probleme, die den integrierten Code-Analyzer identifizierte anzuzeigen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen einer Glühbirne gekennzeichneten Vorschlägen](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+ Glühbirnen sind ein neues Feature, das mit das VS SDK geliefert wird. Sie sind in Visual Studio-Editor verwendeten Symbole, die erweitert werden, um einen Satz von Umgestaltung Codeaktionen oder Fehlerbehebungen für Probleme, die den integrierten Code-Analyzer identifizierte anzuzeigen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
 ## <a name="updated-user-experience-guidelines"></a>Aktualisierte Richtlinien zur benutzerfreundlichkeit  
  Entwerfen von Features oder neue Erweiterungen für Visual Studio ein? Sehen Sie sich die aktualisierten und erweiterten [Richtlinien zur benutzerfreundlichkeit Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Finden Sie die [Farbe Token](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [Schriftgrade Ihren Bedürfnissen entsprechend](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [layoutspezifikationen für Dialogfeld](../extensibility/ux-guidelines/layout-for-visual-studio.md), und bewährten Leitfäden stammen, Sie Ihre neue Benutzeroberfläche in Visual Studio nahtlos zu integrieren müssen.

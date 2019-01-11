@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumdebugstreams:: Reset | Microsoft Docs'
-ms.custom: ''
+title: 'Idiaenumdebugstreams:: Reset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b64989e14f592444e4d958c1242ca4b6a77ffa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a6dae55232e96a566a63ca0553ff51d9594e3981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883849"
 ---
 # <a name="idiaenumdebugstreamsreset"></a>IDiaEnumDebugStreams::Reset
-Setzt ein Enumerationsfolge auf den Anfang zurück.  
+Setzt eine Enumerationsfolge auf den Anfang zurück.  
   
 ## <a name="syntax"></a>Syntax  
   

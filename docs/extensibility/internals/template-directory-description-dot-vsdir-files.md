@@ -1,9 +1,6 @@
 ---
 title: Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925208"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
 Eine Vorlage Directory-Beschreibungsdatei (VSDIR) ist eine Textdatei, die es ermöglicht die integrierte Entwicklungsumgebung (IDE) zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben werden, alle VSDIR-Dateien an einem Ort auf die verwiesen wird zusammengeführt.  
@@ -43,8 +40,8 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Feld | Beschreibung |
 | - | - |
 | Relativer Pfadname (RelPathName) | Der Name des der Ordner, einer Vorlage oder VSZ-Datei, z. B. HeaderFile.h oder MyWizard.vsz. Dieses Feld kann auch einen Namen, die zum Darstellen von eines Ordners sein. |
-| {clsidPackage} | Die GUID des VSPackage, die Zugriff auf die lokalisierten Zeichenfolgen, z. B. LocalizedName, Beschreibung, Symbolressourcen Kennung und SuggestedBaseName, in die VSPackage Satelliten-dynamic Link Library (DLL) Ressourcen ermöglicht. Symbolressourcen Kennung gilt, wenn DLL-Pfad nicht angegeben ist. **Hinweis:** dieses Feld ist optional, es sei denn, eine oder mehrere dieser vorherigen Felder eine Ressourcen-ID ist. Dieses Feld ist in der Regel für VSDIR-Dateien, die mit Drittanbieter-Assistenten entsprechen, die nicht den Text lokalisieren ist leer. |
-| LocalizedName | Der lokalisierte Name der Vorlagendatei oder des Assistenten. Dieses Feld kann es sich um eine Zeichenfolge oder eine ressourcenkennung in der Form "#ResID" sein. Dieser Name wird angezeigt, der **neues Element hinzufügen** Dialogfeld. **Hinweis:** Wenn LocalizedName eine Ressourcen-ID, {CLSID-Paket} ist erforderlich. |
+| {clsidPackage} | Die GUID des VSPackage, die Zugriff auf die lokalisierten Zeichenfolgen, z. B. LocalizedName, Beschreibung, Symbolressourcen Kennung und SuggestedBaseName, in die VSPackage Satelliten-dynamic Link Library (DLL) Ressourcen ermöglicht. Symbolressourcen Kennung gilt, wenn DLL-Pfad nicht angegeben ist. **Hinweis**:  Dieses Feld ist optional, es sei denn, eine oder mehrere dieser vorherigen Felder eine Ressourcen-ID ist. Dieses Feld ist in der Regel für VSDIR-Dateien, die mit Drittanbieter-Assistenten entsprechen, die nicht den Text lokalisieren ist leer. |
+| LocalizedName | Der lokalisierte Name der Vorlagendatei oder des Assistenten. Dieses Feld kann es sich um eine Zeichenfolge oder eine ressourcenkennung in der Form "#ResID" sein. Dieser Name wird angezeigt, der **neues Element hinzufügen** Dialogfeld. **Hinweis**:  Wenn LocalizedName eine Ressourcen-ID ist {CLSID-Paket} erforderlich ist. |
 | SortPriority | Eine ganze Zahl, die die relative Priorität dieser Vorlagendatei oder Assistenten darstellt. Z. B. Wenn dieses Element den Wert 1 aufweist, klicken Sie dann dieses Element neben anderen Elementen mit einem Wert von 1 und vor alle Elemente mit einem Wert für die Sortierreihenfolge 2 oder größer wird.<br /><br /> Sortierpriorität ist relativ zu den Elementen im selben Verzeichnis. Es gibt möglicherweise mehr als eine VSDIR-Datei im selben Verzeichnis. In diesem Fall die Elemente aus allen <em>.</em> VSDIR-Dateien in diesem Verzeichnis werden zusammengeführt. Elemente mit derselben Priorität werden in der Groß-/Kleinschreibung lexikografischen Reihenfolge der angezeigten Namen aufgeführt. Die `_wcsicmp` Funktion wird verwendet, um die Elemente anzuordnen.<br /><br /> Elemente, die nicht in der VSDIR-Dateien beschrieben enthalten eine Priorität größere Zahl als die höchste Priorität Anzahl, die in der VSDIR-Dateien aufgeführt. Das Ergebnis ist, dass diese Elemente am Ende der angezeigten Liste aus, unabhängig von deren Namen. |
 | Beschreibung | Die lokalisierte Beschreibung der Vorlagendatei oder des Assistenten. Dieses Feld kann es sich um eine Zeichenfolge oder eine ressourcenkennung in der Form "#ResID" sein. Diese Zeichenfolge wird in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld, wenn das Element ausgewählt ist. |
 | DLL-Pfad oder {CLSID-Paket} | Wird verwendet, um ein Symbol für die Vorlagendatei oder den Assistenten zu laden. Das Symbol wird als Ressource aus einer .dll oder .exe-Datei mithilfe der Symbolressourcen Kennung geladen. Diese .dll oder .exe-Datei kann entweder mithilfe eines vollständigen Pfads oder mithilfe einer GUID eines VSPackage identifiziert werden. Die DLL des VSPackage-Implementierung wird verwendet, um das Symbol "(nicht Satelliten-DLL) zu laden. |

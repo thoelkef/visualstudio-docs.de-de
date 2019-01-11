@@ -1,9 +1,6 @@
 ---
 title: 'Vorgehensweise: Implementieren von geschachtelten Projekten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945807"
 ---
-# <a name="how-to-implement-nested-projects"></a>Gewusst wie: Implementieren von geschachtelten Projekten
+# <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekten
 
 Wenn Sie eine geschachtelte Projekt erstellen, stehen einige zusätzliche Schritte ausgeführt werden, die implementiert werden müssen. Ein übergeordnetes Projekt nimmt Teil die gleichen Aufgaben, die die Lösung für die geschachtelten (untergeordnet) Projekte. Das übergeordnete Projekt ist ein Container für Projekte, die ähnlich wie eine Lösung. Insbesondere stehen mehrere Ereignisse, die von der Lösung und von der übergeordneten zu erstellenden Projekte an die Hierarchie von geschachtelten Projekten ausgelöst werden müssen. Diese Ereignisse werden in den folgenden Prozess zum Erstellen von geschachtelten Projekten beschrieben.
 
@@ -91,6 +88,6 @@ In den folgenden Themen behandeln verschiedene andere Konzepte beim Implementier
 
 - [Fügen Sie Elemente hinzu, um das Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Prüfliste: Erstellen Sie neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Prüfliste: Erstellen Sie neue Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Kontextparameter](../../extensibility/internals/context-parameters.md)
 - [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -2,9 +2,8 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869660"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -56,7 +55,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `update` | Aktualisiert ein installiertes Produkt. |
 | `repair` | Repariert ein installiertes Produkt. |
 | `uninstall` | Deinstalliert ein installiertes Produkt. |
-| `export` | **Neues in 15.9:** Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei |
+| `export` | **Neues in 15.9:** Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei **Hinweis:** Kann nur mit der Datei „vs_installer.exe“ verwendet werden. |
 
 | **Option installieren** | **Beschreibung** |
 | ----------------------- | --------------- |

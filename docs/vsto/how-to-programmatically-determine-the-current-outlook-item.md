@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], current item
 - SelectionChange event
 - Outlook [Office development in Visual Studio], current item
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7ed0a235a24b65b89a1b82ec47236f3f013f81dc
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257042"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153969"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Gewusst wie: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Vorgehensweise: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements
   Dieses Beispiel verwendet die `Explorer.SelectionChange` Ereignis, um den Namen des aktuellen Ordners und einige Informationen über das ausgewählte Element anzuzeigen. Der Code zeigt das ausgewählte Element.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -41,7 +38,5 @@ ms.locfileid: "35257042"
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)   
- [Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Gewusst wie: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

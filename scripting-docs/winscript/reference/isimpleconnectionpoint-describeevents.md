@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Microsoft Docs
+title: ISimpleConnectionPoint::DescribeEvents | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734020"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088503"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 Gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -42,19 +42,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parameter  
  `iEvent`  
- [in] Index des ersten Ereignisses abgerufen.  
+ [in] Der Index des ersten Ereignisses abrufen.  
   
  `cEvents`  
  [in] Anzahl der Ereignisse abgerufen.  
   
  `prgid`  
- [out] Ereignis Wertearray DISPID.  
+ [out] Array von DISPID Ereigniswerten.  
   
  `prgbstr`  
- [out] Array von Ereignisnamen.  
+ [out] Array von Namen von Ereignissen.  
   
  `pcEventsFetched`  
- [out] Die tatsächliche Anzahl von Ereignissen, die abgerufen werden soll.  
+ [out] Die tatsächliche Anzahl der Ereignisse abgerufen werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -62,11 +62,11 @@ HRESULT DescribeEvents(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`S_FALSE`|Weitere Ereignisse, die angefordert wurden, als verfügbar waren. Mit DISPID_NULL und null BSTR werden Ereignisse nicht verfügbar dargestellt.|  
+|`S_FALSE`|Weitere Ereignisse, die angefordert wurden, als verfügbar waren. Nicht verfügbar-Ereignisse werden mit DISPID_NULL und null BSTR dargestellt.|  
 |`E_INVALIDARG`|Es konnte keine Elemente abgerufen werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.  
+ Diese Methode gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen an.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)

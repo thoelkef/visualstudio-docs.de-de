@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Erstellen eine Besprechungsanfrage'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - meeting requests [Office development in Visual Studio]
 - appointments [Office development in Visual Studio]
 - calendars [Office development in Visual Studio], meeting requests
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5cada5d337eb4f72caf9077afc9bcd42706b21d1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 339c4c5de89d6ad3000fe721888e292902ddff1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257370"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088555"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Gewusst wie: Programmgesteuertes Erstellen eine Besprechungsanfrage
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage
   In diesem Beispiel wird in Microsoft Office Outlook eine Besprechungsanfrage erstellt und die Anforderung an einen erforderlichen Teilnehmer gesendet.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -36,5 +33,3 @@ ms.locfileid: "35257370"
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)   
  [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

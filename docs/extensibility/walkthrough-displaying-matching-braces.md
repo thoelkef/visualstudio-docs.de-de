@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden geschweiften Klammern | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Übereinstimmende Klammern anzeigen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956575"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden geschweiften Klammern
 Implementieren Sie die Sprache basierende Funktionen, z. B., Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen sollten, und die übereinstimmenden geschweiften Klammern einer Textmarkierungstag hinzugefügt wird, wenn sich die Einfügemarke eines die geschweiften Klammern befindet. Sie können geschweifte Klammern im Kontext einer Sprache, eigene Dateinamenerweiterung und Inhaltstyp definieren, Tags definieren und Anwenden der zu, die geben oder Anwenden von Tags zu einem vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise zeigt, wie Tags aus, um den Inhaltstyp "Text" Zugehörige Klammer angewendet wird.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015 können installieren nicht Sie das Visual Studio SDK aus dem Downloadcenter. Es wurde als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen Sie ein Projekt Managed Extensibility Framework (MEF)  
@@ -126,4 +123,4 @@ Implementieren Sie die Sprache basierende Funktionen, z. B., Zuordnung von gesch
 4.  Wenn Sie die position der Einfügemarke, bevor Sie eine öffnende geschweifte Klammer, sollten sowohl, geschweifte Klammer und der entsprechende schließende geschweifte Klammer hervorgehoben werden. Wenn Sie den Cursor direkt nach der schließenden geschweiften Klammer positionieren, sollten sowohl dieser geschweifte Klammer als auch die entsprechende öffnende geschweifte Klammer hervorgehoben werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

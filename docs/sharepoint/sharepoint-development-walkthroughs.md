@@ -1,13 +1,8 @@
 ---
 title: Exemplarische Vorgehensweisen zu SharePoint-Entwicklung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945846"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Exemplarische Vorgehensweisen zu SharePoint-Entwicklung
   In den folgenden exemplarischen Vorgehensweisen wird das Entwickeln und Bereitstellen von SharePoint-Lösungen mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] veranschaulicht.  
@@ -31,7 +26,7 @@ ms.locfileid: "37119166"
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Exemplarische Vorgehensweise: Hinzufügen von Funktionsereignisempfängern](../sharepoint/walkthrough-add-feature-event-receivers.md)|Beschreibt das Hinzufügen von Funktionsereignisempfängern; hierbei handelt es sich um Methoden, die beim Installieren, Aktivieren, Deaktivieren oder Entfernen einer Funktion ausgeführt werden.|  
+|[Exemplarische Vorgehensweise: Feature-Ereignisempfänger hinzufügen](../sharepoint/walkthrough-add-feature-event-receivers.md)|Beschreibt das Hinzufügen von Funktionsereignisempfängern; hierbei handelt es sich um Methoden, die beim Installieren, Aktivieren, Deaktivieren oder Entfernen einer Funktion ausgeführt werden.|  
 |[Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht das Erstellen eines benutzerdefinierten Felds, eines Inhaltstyps, einer Listendefinition auf Basis eines Inhaltstyps sowie das Erstellen einer Listeninstanz.|  
 |[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts definition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Veranschaulicht das Erstellen einer grundlegenden Websitedefinition, die ein visuelles Webpart mit Steuerelementen enthält.|  
 |[Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|Veranschaulicht, wie eine benutzerdefinierte SharePoint-Gestaltungsvorlage und eine Websiteseite mit einem Bild in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-SharePoint-Projekt importiert werden.|  
@@ -40,15 +35,15 @@ ms.locfileid: "37119166"
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint-Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht, wie ein im SharePoint-Designer 2010 erstellter, wieder verwendbarer Workflow in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt importiert wird.|  
+|[Exemplarische Vorgehensweise: Importieren eines Wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht, wie ein im SharePoint-Designer 2010 erstellter, wieder verwendbarer Workflow in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt importiert wird.|  
 |[Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Veranschaulicht, wie Elemente aus einer vorhandenen SharePoint-Website in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt importiert werden.|  
   
 ## <a name="web-parts"></a>Webparts
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Zeigt, wie ein Webpart erstellen, mit der **Webpart** Item-Vorlage in Visual Studio.|  
-|[Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Zeigt, wie ein Webpart visuell zu erstellen, mit dem SharePoint **visuelles Webpart** Projektvorlage in Visual Studio.|  
+|[Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Zeigt, wie ein Webpart erstellen, mit der **Webpart** Item-Vorlage in Visual Studio.|  
+|[Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Zeigt, wie ein Webpart visuell zu erstellen, mit dem SharePoint **visuelles Webpart** Projektvorlage in Visual Studio.|  
   
 ## <a name="workflows"></a>Workflows  
   
@@ -96,8 +91,7 @@ ms.locfileid: "37119166"
 |Thema|Beschreibung|  
 |-----------|-----------------|  
 |[Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Veranschaulicht das Hinzufügen neuer Knoten zum Anzeigen von Webparts in SharePoint-Websites, die in Server-Explorer angezeigt werden. Diese exemplarische Vorgehensweise veranschaulicht auch, wie ein SharePoint-Befehl erstellt wird, der das SharePoint-Serverobjektmodell aufruft.|  
-|[Exemplarische Vorgehensweise: Aufrufen der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Veranschaulicht das Hinzufügen neuer Knoten zum Anzeigen von Webparts in SharePoint-Websites, die in Server-Explorer angezeigt werden. In dieser exemplarischen Vorgehensweise wird auch die Verwendung des SharePoint-Clientobjektmodells beschrieben.|  
+|[Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Veranschaulicht das Hinzufügen neuer Knoten zum Anzeigen von Webparts in SharePoint-Websites, die in Server-Explorer angezeigt werden. In dieser exemplarischen Vorgehensweise wird auch die Verwendung des SharePoint-Clientobjektmodells beschrieben.|  
   
 ## <a name="see-also"></a>Siehe auch
  [Beispiele für die SharePoint-Entwicklung und exemplarische Vorgehensweisen](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

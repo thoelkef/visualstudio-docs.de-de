@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Ändern der Größe ListObject-Steuerelementen'
-ms.custom: ''
+title: 'Vorgehensweise: Größe von ListObject-Steuerelementen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e655305400915f1ac97a042ac1cca26e52a05ec5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909683"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Gewusst wie: Ändern der Größe ListObject-Steuerelementen
+# <a name="how-to-resize-listobject-controls"></a>Vorgehensweise: Größe von ListObject-Steuerelementen
   Sie legen die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements fest, wenn Sie es einer Microsoft Office Excel-Arbeitsmappe hinzufügen. Möglicherweise möchten Sie dessen Größe jedoch zu einem späteren Zeitpunkt ändern. Beispielsweise könnte es sein, dass Sie eine zweispaltige Liste in eine dreispaltige Liste ändern möchten.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "49811502"
   
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelemente finden Sie [ListObject-Steuerelement](../vsto/listobject-control.md).  
   
-  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [I: Hinzufügen von Spalten zu einer datengebundenen List-Objekt zur Laufzeit Gewusst?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Spalten zu einer datengebundenen List-Objekt zur Laufzeit? ](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Ändern der Größe eines ListObject-Steuerelements zur Entwurfszeit  
  Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.  
@@ -74,7 +71,7 @@ ms.locfileid: "49811502"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
 ##  <a name="runtimeaddin"></a> Ändern der Größe eines ListObject zur Laufzeit in einem VSTO-Add-in-Projekt  
- Sie können die Größe einer <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf jedem geöffneten Arbeitsblatt zur Laufzeit. Weitere Informationen zur Vorgehensweise beim Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins, finden Sie unter [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zur Arbeitsblätter](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ Sie können die Größe einer <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf jedem geöffneten Arbeitsblatt zur Laufzeit. Weitere Informationen zur Vorgehensweise beim Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins, finden Sie unter [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 ### <a name="to-resize-a-list-object-programmatically"></a>So ändern Sie die Größe eines Listenobjekts programmgesteuert  
   
@@ -95,8 +92,6 @@ ms.locfileid: "49811502"
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
  [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject-Steuerelement](../vsto/listobject-control.md)   
- [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Gewusst wie: Ändern der Größe Lesezeichen-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)   
- [Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)  
-  
-  
+ [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Vorgehensweise: Größe von Bookmark-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)   
+ [Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)  

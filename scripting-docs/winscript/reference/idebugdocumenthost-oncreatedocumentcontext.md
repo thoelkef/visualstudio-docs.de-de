@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs
+title: 'Idebugdocumenthost:: Oncreatedocumentcontext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55598a4191d421d3aea01d27cc7991b70bd6a019
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0f8ce73e05fa8dd163564184361254fd58163ee
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726720"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096334"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Benachrichtigt den Host, dass ein neuer Dokumentenkontext erstellt wird und der Host kann optional einen unbekannten für den neuen Kontext steuernden zurückgeben.  
+Benachrichtigt den Host, ein neuen Dokumentkontext erstellt wird und der Host kann optional einen unbekannten für den neuen Kontext steuernden zurückgeben.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT OnCreateDocumentContext(  
    IUnknown**  ppunkOuter  
 );  
@@ -46,10 +46,10 @@ HRESULT OnCreateDocumentContext(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_NOTIMPL`|Der Host stellt kein steuerndes Objekt bereit.|  
+|`E_NOTIMPL`|Der Host ist ein steuerndes Objekt nicht bereit.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode kann der Host die Kontexte Helper bereitgestellte Dokument neue Funktionen hinzu. Diese Methode gelegten **E_NOTIMPL** oder ein null-äußeren Objekt, in dem Fall der Aufrufer für die Erstellung des Kontexts verantwortlich ist.  
+ Diese Methode ermöglicht den Host, den bereitgestellten Helper dokumentenkontexte neue Funktionalität hinzufügen. Diese Methode zurückgeben kann **E_NOTIMPL** oder ein null-äußeren Objekt, in dem Fall der Aufrufer dafür verantwortlich ist, den Kontext zu erstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::ResetStats | Microsoft Docs
+title: IActiveScriptStats::ResetStats | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b56ca147c4484b00bfac5d1876ac58361901a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dd53cf1b91ae7eb18ccc88763437ecda44a574c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724860"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091350"
 ---
 # <a name="iactivescriptstatsresetstats"></a>IActiveScriptStats::ResetStats
 Setzt die Statistik für dieses Skript.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT ResetStats();  
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode nimmt keine Parameter.  
+ Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,7 +45,7 @@ HRESULT ResetStats();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode setzt die Statistik für dieses Skript.  
+ Diese Methode wird die Statistik für dieses Skript zurückgesetzt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptStats-Schnittstelle](../../winscript/reference/iactivescriptstats-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetDebugger | Microsoft Docs
+title: IRemoteDebugApplication::GetDebugger | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 908d6b43ca33a3b9c35d2690ccb5453032ce151a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ddb6ac5ab9f8597b1f8d22924bdd57204f66c359
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729190"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095445"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
-Gibt der aktuellen Debugger an die Anwendung verbunden.  
+Gibt zurück, der aktuelle Debugger an die Anwendung verbunden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT GetDebugger(  
    IApplicationDebugger**  pad  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDebugger(
   
 #### <a name="parameters"></a>Parameter  
  `pad`  
- [out] Der aktuelle Debugger mit der Anwendung verbunden ist.  
+ [out] Der aktuelle Debugger ist mit der Anwendung verbunden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT GetDebugger(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die aktuelle Debugger an die Anwendung verbunden.  
+ Diese Methode gibt zurück, der aktuelle Debugger an die Anwendung verbunden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   

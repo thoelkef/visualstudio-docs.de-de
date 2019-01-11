@@ -1,9 +1,6 @@
 ---
 title: METADATA_TYPE | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - METADATA_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e0a87f6b20093c1ddca1a9f132003f63afbaa1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8596704408c1266d98d24f221ac7642150c79af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852874"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Diese Struktur gibt Informationen über einen Feldtyp aus Metadaten erstellt.  

@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Erstellen Sie Neuer Visio-Dokumente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], creating Visio documents
 - documents [Office development in Visual Studio], creating Visio documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f22361facb881f7306d4c235a96dab0c79877f86
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671559"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154023"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Vorgehensweise: Programmgesteuertes Erstellen Sie Neuer Visio-Dokumente
   Wenn Sie ein neues Microsoft Office Visio-Zeichnungsdokument erstellen, fügen Sie dieses Dokument der `Microsoft.Office.Interop.Visio.Documents`-Auflistung geöffneter Visio-Dokumente hinzu. Daher wird ein neues Visio-Zeichnungsdokument mithilfe der `Microsoft.Office.Interop.Visio.Documents.Add`-Methode erstellt. Weitere Informationen finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) -Methode.  
   
 ## <a name="create-new-blank-documents"></a>Erstellen neuer leerer Dokumente  
@@ -77,9 +74,7 @@ ms.locfileid: "50671559"
 ## <a name="see-also"></a>Siehe auch  
  [Visio-Projektmappen](../vsto/visio-solutions.md)   
  [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
- [Gewusst wie: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Vorgehensweise: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  

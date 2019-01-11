@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Öffnen von Arbeitsmappen'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Öffnen von Arbeitsmappen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd8f6786bd2f7b54ce6b50f2493ebd5d45bba51e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860948"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Gewusst wie: Programmgesteuertes Öffnen von Arbeitsmappen
+# <a name="how-to-programmatically-open-workbooks"></a>Vorgehensweise: Programmgesteuertes Öffnen von Arbeitsmappen
   Die <xref:Microsoft.Office.Interop.Excel.Workbooks> Sammlung in Microsoft Office Excel ermöglicht es mit allen geöffneten Arbeitsmappen funktionieren, und Öffnen von Arbeitsmappen.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,12 +39,10 @@ ms.locfileid: "35257357"
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)   
  [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
  [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

@@ -3,19 +3,18 @@ title: Bearbeiten von R-Code
 description: Visual Studio stellt eine speziell auf R zugeschnittene Bearbeitungsoberfläche bereit und behält zugleich alle Features und die Möglichkeit zum Verwenden von Erweiterungen bei.
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968364"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Bearbeiten von R-Code in Visual Studio
 
@@ -115,7 +114,7 @@ Optionen auf den Registerkarten **Allgemein**, **Scrollleisten** und **Registerk
 
 Optionen auf der Registerkarte **R** > **Erweitert** sind für RTVS spezifisch:
 
-| Gruppieren | Option | Standard | Beschreibung  |
+| Gruppieren | Option | Standard | Beschreibung |
 | --- | --- | --- | --- |
 | Formatierung | Automatische Formatierung | Ein | Formatiert Code während der Eingabe neu. Wirkt sich nicht auf die Befehle **Auswahl formatieren** oder **Dokument formatieren** aus. |
 | | Expanded braces | Aus | Platziert eine öffnende { in eine neue Zeile |

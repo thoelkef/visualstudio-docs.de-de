@@ -1,9 +1,6 @@
 ---
-title: 'Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen'
-ms.custom: ''
+title: 'Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - ranges, styles
 - styles, workbook ranges
 - workbooks, styles
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d12b42d7af92204992f1e32cbb29f311d337b70f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672416"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096127"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen
   Sie können benannte Formatvorlagen auf Bereiche in Arbeitsmappen anwenden. Excel stellt eine Reihe von vordefinierten Formaten bereit.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35672416"
  [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
  [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
  [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

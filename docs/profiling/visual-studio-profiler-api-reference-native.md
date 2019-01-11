@@ -3,7 +3,6 @@ title: Referenz zu Profiler-APIs in Visual Studio (nativ)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945024"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referenz für Profiler-APIs in Visual Studio (nativ)
 Visual Studio-Profiler-APIs ermöglichen Ihnen das programmgesteuerte Bestimmen der gesammelten Datenmenge und Einfügen von Zeitstempel- und Profilmarkierungen bei der Profilerstellung. Beziehen Sie die Headerdatei *VSPerf.h* ein, und fügen Sie Ihrem Projekt *VSPerf.lib* hinzu, um native APIs verwenden zu können.  
   
 > [!NOTE]
->  Standardmäßig befinden sich *VSPerf.h* und *VSPerf.lib* im Ordner *PerfSDK*. Beispiel: *\<Laufwerk>:\Programme\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*.  
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

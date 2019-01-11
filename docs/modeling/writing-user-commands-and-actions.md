@@ -8,28 +8,27 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: fda89444e0451b5d562aff37beffc2d7a97c0123
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 263df1391fcc9795b08a21a7e56b1113ef1fb82e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895674"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
 Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Befehle zum Diagramm hinzufügen und indem eine Reaktion auf Gesten wie etwa bei Drag & Drop-, Klick- oder Doppelklickereignissen vorgesehen wird.
 
 ## <a name="user-actions"></a>Benutzeraktionen
 
--   [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -können Sie passen das Verhalten der Befehle wie z. B. kopieren und drucken.
+-   [Vorgehensweise: Ändern Sie einen Standard Menübefehl](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – Sie können anpassen, das Verhalten von Befehlen, wie z. B. kopieren und drucken.
 
--   [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -erstellen Sie eigene Befehle, die Ihrem Modell bzw. externe Ressourcen aktualisiert werden können.
+-   [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – erstellen Sie Ihre eigenen Befehle, die Ihre Model oder externe Ressourcen aktualisiert werden können.
 
--   [Vorgehensweise: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md) -ermöglicht dem Benutzer Elemente aus einem Diagramm in eine andere verschieben, einschließlich UML-Diagramme. Sie können Verweise auf ein Modell in einem anderen speichern.
+-   [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) -ermöglicht dem Benutzer, die Elemente aus einem Diagramm in ein anderes zu verschieben, einschließlich UML-Diagramme. Sie können Verweise auf ein Modell in einem anderen speichern.
 
--   [Vorgehensweise: Abfangen mit einem Klick auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -zulassen, dass Ihre Benutzer über ein Element auf ein anderes Element klicken Sie auf, die darauf verweist.
+-   [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -zulassen, dass Ihre Benutzer über ein Element in ein anderes Element klicken Sie auf, die darauf verweist.
 
--   [Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)
+-   [Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 -   [Anpassen von Elementtools](../modeling/customizing-element-tools.md)
 

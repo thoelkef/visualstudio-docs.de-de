@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs
+title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a669d435d84295b22af4298936babf8439eaefa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5680d22ffa5ec648afaced5e98f651e35758f929
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724990"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092117"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-Ermöglicht einen smart Host kann bestimmen, wie zur Laufzeit Fehler behandelt.  
+Ermöglicht einen Smarthost zu bestimmen, wie zum Behandeln von Laufzeitfehlern führen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```cpp
 HRESULT OnScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    BOOL*                     pfEnterDebugger,  
@@ -40,16 +40,16 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parameter  
  `pErrorDebug`  
- [in] Die aufgetretenen zur Laufzeit  
+ [in] Die Laufzeitfehler, die aufgetreten sind  
   
  `pfEnterDebugger`  
- [out] Kennzeichen Sie, der angibt, ob der Fehler an dem Debugger JIT-Debuggen übergeben.  
+ [out] Dieses Flag gibt an, ob der Fehler an dem Debugger an, führen Sie die JIT-Debuggen übergeben.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Flag, das angibt, ob aufgerufen `IActiveScriptSite::OnScriptError` Wenn der Benutzer entscheidet, um ohne Debuggen zu fortfahren.  
+ [out] Flag, das angibt, ob aufgerufen `IActiveScriptSite::OnScriptError` Wenn der Benutzer entscheidet, ohne das Debuggen fortzusetzen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück. Mögliche Werte enthalten, aber nicht beschränkt auf den Wert in der folgenden Tabelle sind.  
+ Die Methode gibt ein `HRESULT` zurück. Mögliche Werte enthalten, aber Sie sind nicht auf den Wert in der folgenden Tabelle beschränkt.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  

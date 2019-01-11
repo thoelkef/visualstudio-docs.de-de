@@ -5,16 +5,15 @@ description: Informieren Sie sich über die Erweiterbarkeit von Visual Studio.
 author: gregvanl
 ms.author: gregvanl
 ms.date: 10/31/2018
-ms.technology: vs-ide-sdk
 ms.topic: landing-page
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 089173cc363bfa006d23fc784c1a437aeebcbf3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824089"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentation zur Visual Studio-Erweiterbarkeit
 

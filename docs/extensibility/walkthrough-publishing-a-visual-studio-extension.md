@@ -1,9 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterungs | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Veröffentlichung von Visual Studio-Erweiterung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852452"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterungs
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen von Visual Studio-Erweiterung
 
 Diese exemplarische Vorgehensweise veranschaulicht die Visual Studio-Erweiterung in Visual Studio Marketplace zu veröffentlichen. Wenn Sie die Erweiterung zum Marketplace hinzufügen, können Entwickler **Erweiterungen und Updates** nach neuen und aktualisierten Erweiterungen suchen.
 
@@ -33,7 +30,7 @@ Diese exemplarische Vorgehensweise veranschaulicht die Visual Studio-Erweiterung
 
 In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung, aber die Schritte für jede Art von Erweiterung gültig sind.
 
-1. Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hallo Welt](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Packen Sie die Erweiterung
 
@@ -123,13 +120,13 @@ Marketplace unterstützt die zusätzlichen Benutzerberechtigungen zum Zugreifen 
 
 3. Sie können dann angeben, die e-Mail-Adresse des Benutzers, die Sie verwenden möchten, hinzufügen und gewähren die richtige Zugriffsebene unter **wählen Sie eine Rolle**.  Sie können eine der folgenden Optionen auswählen:
 
-   * **Ersteller**: der Benutzer-Erweiterungen zu veröffentlichen, jedoch nicht anzeigen oder Verwalten von Erweiterungen, die von anderen Benutzern veröffentlicht kann.
+   * **Ersteller**: Der Benutzer kann von anderen Benutzern veröffentlichte Erweiterungen-Erweiterungen veröffentlichen, aber kann nicht anzeigen und verwalten.
   
-   * **Reader**: der Benutzer anzeigen, Extensions aber kann nicht veröffentlichen oder Verwalten von Erweiterungen.
+   * **Reader**: Der Benutzer kann nicht anzeigen, Extensions aber veröffentlichen oder Verwalten von Erweiterungen.
   
-   * **"Mitwirkender"**: der Benutzer zu veröffentlichen und Verwalten von Erweiterungen, jedoch kann nicht herausgebereinstellungen bearbeiten oder Verwalten des Zugriffs auf.
+   * **"Mitwirkender"**: Der Benutzer kann nicht zu veröffentlichen und Verwalten von Erweiterungen, jedoch herausgebereinstellungen bearbeiten oder Verwalten des Zugriffs auf.
   
-   * **Besitzer**: der Benutzer zu veröffentlichen und Verwalten von Erweiterungen, herausgebereinstellungen bearbeiten und Verwalten des Zugriffs auf.
+   * **Besitzer**: Der Benutzer kann veröffentlichen und Verwalten von Erweiterungen, herausgebereinstellungen bearbeiten und Verwalten des Zugriffs auf.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren Sie die Erweiterung von Visual Studio Marketplace
 

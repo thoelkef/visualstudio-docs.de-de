@@ -1,9 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915902"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.  
@@ -57,7 +54,7 @@ ms.locfileid: "49843820"
   
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Erstellen Sie ein VSTO-Add-In-Projekt für Excel namens **ExcelImportData**, indem Sie die Excel-VSTO-Add-In-Projektvorlage verwenden. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Erstellen Sie ein VSTO-Add-In-Projekt für Excel namens **ExcelImportData**, indem Sie die Excel-VSTO-Add-In-Projektvorlage verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das **ExcelImportData** -Projekt dem **Projektmappen-Explorer**hinzu.  
   
@@ -151,14 +148,12 @@ ms.locfileid: "49843820"
   
 -   Erstellen Sie einen benutzerdefinierten Aufgabenbereich in einem VSTO-Add-In. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md) und [Vorgehensweise: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Anpassen des Menübands in einem VSTO-Add-in. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md) und [wie: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Anpassen des Menübands in einem VSTO-Add-in. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md) und [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
  [Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Anpassen von Funktionen der Benutzeroberfläche mithilfe von Erweiterbarkeitsschnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

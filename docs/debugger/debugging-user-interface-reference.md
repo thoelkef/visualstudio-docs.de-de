@@ -1,8 +1,6 @@
 ---
-title: Referenz zur Benutzeroberfläche Debuggen | Microsoft Docs
-ms.custom: ''
+title: Referenz zur Benutzeroberfläche Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.uiref
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83021f492eeb712f489641e3019fe9c8ecc47bdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988023"
 ---
 # <a name="debugging-user-interface-reference"></a>Referenz zur Debugger-Benutzeroberfläche
 Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angezeigt.  
   
- Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfeatures automatisieren. Weitere Informationen finden Sie unter Visual Studio Debugging-SDK.  
+ Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfunktionen automatisieren. Weitere Informationen finden Sie unter Visual Studio Debugging-SDK.  
   
 -   [Dialogfeld "Haltepunkte wählen"](../debugger/choose-breakpoints-dialog-box.md)  
   
