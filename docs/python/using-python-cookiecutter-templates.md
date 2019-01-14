@@ -3,7 +3,6 @@ title: Verwenden der CookieCutter-Vorlagen für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958234"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -189,7 +188,7 @@ Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Si
 
 Argumente können auf andere Cookiecutter-Variablen verweisen. In den oben stehenden Beispielen wird die interne `_output_folder_path`-Variable verwendet, um einen absoluten Pfad zu den generierten Dateien zu bilden.
 
-Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
+Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der  - **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
