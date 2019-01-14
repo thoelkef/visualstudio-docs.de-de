@@ -2,7 +2,6 @@
 title: Durchsuchungsbegrenzungen | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935462"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -31,7 +30,7 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden<p />
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können

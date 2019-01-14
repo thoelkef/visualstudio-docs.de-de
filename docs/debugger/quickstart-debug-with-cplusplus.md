@@ -3,7 +3,6 @@ title: Debuggen mit C++
 description: Debuggen von nativem Code mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986478"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C++ mithilfe des Visual Studio-Debuggers
 
