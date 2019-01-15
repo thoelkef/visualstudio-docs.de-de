@@ -45,7 +45,7 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten** auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektspeicherbelegungsinformationen auflisten**.
+2. Klicken Sie im Dialogfeld *Leistungssitzung* **Eigenschaftenseiten** auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektspeicherbelegungsinformationen auflisten**.
 
 3. Aktivieren Sie das Kontrollkästchen **Lebensdauerinformationen für .NET-Objekt auflisten**, um Lebensdauerinformationen für .NET-Objekte zu sammeln.
 
