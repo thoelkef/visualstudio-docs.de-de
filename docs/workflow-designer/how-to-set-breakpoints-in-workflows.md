@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 570e7c5b4ec64c4e21b53cef38b89a5846cc1bb7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849631"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269695"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows
 
@@ -37,7 +37,7 @@ Ein Haltepunkt verfügt über drei Zustände: *Ausstehende*, *gebunden*, und *Fe
 
 2. Auf der **Debuggen** , wählen Sie im Menü **Haltepunkt ein/aus**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.
 
-   Sie können alternativ drücken **F9** nach dem Auswählen der Aktivität, oder Sie können mit der rechten Maustaste in der Aktivitäts und wählen Sie **Haltepunkt** > **Haltepunkt einfügen** Klicken Sie im Kontextmenü.
+   Sie können alternativ drücken **F9** nach dem Auswählen der Aktivität, oder Sie können mit der rechten Maustaste in der Aktivitäts und wählen Sie **Haltepunkt** > **Haltepunkt einfügen** über das Kontextmenü.
 
 ## <a name="see-also"></a>Siehe auch
 

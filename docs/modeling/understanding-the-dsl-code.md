@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886370"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270293"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
@@ -191,7 +191,7 @@ Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Si
 
  `CommandSet.cs`
 
- Die Kontextmenübefehle, die auf dem Diagramm angezeigt werden. Sie können diesen Satz anpassen oder erweitern. Diese Datei enthält den Code für die Befehle. Die Position der Befehle in Menüs wird durch die Datei "Commands.vsct" bestimmt. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
+ Die Befehle im Menü mit der rechten Maustaste, die im Diagramm sichtbar sind. Sie können diesen Satz anpassen oder erweitern. Diese Datei enthält den Code für die Befehle. Die Position der Befehle in Menüs wird durch die Datei "Commands.vsct" bestimmt. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Sucht nach der standardmäßigen Menübefehle in Menüs, beispielsweise das diagrammkontextmenü, das **bearbeiten** Menü, und So weiter. Der Code für die Befehle befindet sich in "CommandSet.cs". Sie können die Standardbefehle verschieben oder ändern, und Sie können eigene Befehle hinzufügen. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
+ Sucht nach der standardmäßigen Menübefehle in Menüs, beispielsweise im Diagramm (Context) Kontextmenü der **bearbeiten** Menü, und So weiter. Der Code für die Befehle befindet sich in "CommandSet.cs". Sie können die Standardbefehle verschieben oder ändern, und Sie können eigene Befehle hinzufügen. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Mit folgendem Code können Sie festlegen, dass die Auswahl im Modell-Explorer mit der Diagrammauswahl synchron bleibt:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

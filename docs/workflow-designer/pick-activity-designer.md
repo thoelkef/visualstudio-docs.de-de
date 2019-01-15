@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946606"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269500"
 ---
 # <a name="pick-activity-designer"></a>Pick-Aktivitätsdesigner
 
@@ -30,7 +30,7 @@ Eine <xref:System.Activities.Statements.Pick>-Aktivität enthält eine Auflistun
 
 Zugriff die **auswählen** Aktivitäts-Designer in der **Ablaufsteuerung** Kategorie der **Toolbox**. Die **auswählen** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht werden, wo Aktivitätsdesigner normalerweise, z. B. innerhalb eines platziert werden eine  **Sequenz** Aktivitäts-Designer. Nach dem Ablegen in Workflow-Designer, erstellt er eine <xref:System.Activities.Statements.Pick> -Aktivität, die standardmäßig zwei leere enthält <xref:System.Activities.Statements.PickBranch> Aktivitäten als Elemente mit den Anzeigenamen von Branch1 und Branch2. Die jeweiligen <xref:System.Activities.Statements.PickBranch.DisplayName%2A> Eigenschaftswerte können bearbeitet werden, der **PickBranch** Aktivitäts-Designer-Header oder in der **Eigenschaften** für jeden Branch.
 
-Es gibt zwei Möglichkeiten zum Hinzufügen von <xref:System.Activities.Statements.PickBranch> -Aktivitäten der Auflistung eine <xref:System.Activities.Statements.Pick> Objekt: Drag & Drop die **PickBranch** -Designer aus der **Toolbox** oder über das Kontextmenü in in der **auswählen** Entwurfsoberfläche. Weitere Informationen finden Sie unter den [PickBranch](../workflow-designer/pickbranch-activity-designer.md) Thema. Beachten Sie, dass als einziges Element platziert werden kann eine **auswählen** Aktivitäts-Designer eine **PickBranch** Aktivitäts-Designer.
+Es gibt zwei Möglichkeiten zum Hinzufügen von <xref:System.Activities.Statements.PickBranch> -Aktivitäten der Auflistung eine <xref:System.Activities.Statements.Pick> Objekt: Ziehen und Ablegen der **PickBranch** -Designer aus der **Toolbox** oder mit der rechten Maustaste innerhalb der **auswählen** Entwurfsoberfläche. Weitere Informationen finden Sie unter den [PickBranch](../workflow-designer/pickbranch-activity-designer.md) Thema. Beachten Sie, dass als einziges Element platziert werden kann eine **auswählen** Aktivitäts-Designer eine **PickBranch** Aktivitäts-Designer.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Eigenschaften für Pick-Aktivitäten im Workflow-Designer
 
