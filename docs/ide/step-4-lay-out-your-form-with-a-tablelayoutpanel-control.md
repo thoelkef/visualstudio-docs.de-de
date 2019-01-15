@@ -1,9 +1,7 @@
 ---
-title: 'Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
-ms.custom: ''
+title: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821339"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
 In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.TableLayoutPanel>-Steuerelement hinzu. Das TableLayoutPanel hilft, Steuerelemente im Formular ordnungsgemäß auszurichten, die Sie später hinzufügen.
 
- ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Artikels finden Sie in Video 2 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205211) oder in Video 2 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 2 (Erstellen eines Bildanzeigeprogramms in Visual Basic – Video 2)](http://go.microsoft.com/fwlink/?LinkId=205211) oder [Tutorial 1: Create a picture viewer in C# – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 2)](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>So erstellen Sie ein Layout für das Formular mit einem TableLayoutPanel-Steuerelement
 
@@ -62,7 +60,7 @@ In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.Table
 7.  Nachdem Sie die **Dock**-Eigenschaft des TableLayoutPanel-Steuerelements auf **Fill** festgelegt haben, nimmt der Bereich das ganze Formular ein. Wenn Sie die Größe des Formulars wieder ändern, bleibt das TableLayoutPanel-Steuerelement verankert und passt sich an die Formulargröße an.
 
     > [!NOTE]
-    >  Ein TableLayoutPanel-Steuerelement funktioniert wie eine Tabelle in Microsoft Office Word: Es weist Zeilen und Spalten auf, und eine einzelne Zelle kann mehrere Zeilen und Spalten umfassen. Jede Zelle kann ein Steuerelement enthalten (z. B. eine Schaltfläche, ein Kontrollkästchen oder eine Beschriftung). Das TableLayoutPanel-Steuerelement verfügt über ein <xref:System.Windows.Forms.PictureBox>-Steuerelement, das sich auf die gesamte oberste Zeile erstreckt, ein <xref:System.Windows.Forms.CheckBox>-Steuerelement in der Zelle unten links und vier <xref:System.Windows.Forms.Button>-Steuerelemente in der Zelle unten rechts.
+    >  Ein TableLayoutPanel-Steuerelement funktioniert wie eine Tabelle in Microsoft Office Word: Es weist Zeilen und Spalten auf, und eine einzelne Zelle kann sich über mehrere Zeilen und Spalten erstrecken. Jede Zelle kann ein Steuerelement enthalten (z. B. eine Schaltfläche, ein Kontrollkästchen oder eine Beschriftung). Das TableLayoutPanel-Steuerelement verfügt über ein <xref:System.Windows.Forms.PictureBox>-Steuerelement, das sich auf die gesamte oberste Zeile erstreckt, ein <xref:System.Windows.Forms.CheckBox>-Steuerelement in der Zelle unten links und vier <xref:System.Windows.Forms.Button>-Steuerelemente in der Zelle unten rechts.
 
 8.  Derzeit weist das TableLayoutPanel-Steuerelement zwei gleich große Zeilen und zwei gleich große Spalten auf. Sie müssen die Größe der Zeilen und Spalten ändern, damit die oberste Zeile und die rechte Spalte sehr viel größer sind. Wählen Sie im **Windows Forms-Designer** das TableLayoutPanel-Steuerelement aus. Oben rechts in der Ecke befindet sich eine Schaltfläche in Form eines kleinen schwarzen Dreiecks, die wie folgt aussieht.
 
@@ -90,6 +88,6 @@ Schaltfläche für **Dreieck**
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
 
--   Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).

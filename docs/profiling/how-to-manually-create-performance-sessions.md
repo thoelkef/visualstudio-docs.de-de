@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Manuelles Erstellen von Leistungssitzungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bf92b01828764652cd75de648b1def01bb722c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819678"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Vorgehensweise: Manuelles Erstellen von Leistungssitzungen
 Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öffnen. Weitere Informationen finden Sie unter [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md).  

@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11bace93efc253ffcb0f8d2b97ecc57c7462bb8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820357"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 Es gibt nur ein <xref:System.Windows.Forms.PictureBox> im Formular. Als Sie es hinzugefügt haben, hat die IDE diesem Steuerelement automatisch den Namen **pictureBox1**gegeben. Es gibt nur ein <xref:System.Windows.Forms.CheckBox>, das den Namen **checkBox1** trägt. Bald schreiben Sie einige Codezeilen, die auf das CheckBox- und das PictureBox-Steuerelement verweisen. Da jedes Steuerelement nur einmal vorhanden ist, wissen Sie, was sich hinter den Namen **pictureBox1** oder **checkBox1** im Code verbirgt.
@@ -26,7 +24,7 @@ Es gibt nur ein <xref:System.Windows.Forms.PictureBox> im Formular. Als Sie es h
 
  Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen zugewiesen: **button1**, **button2**, **button3**und **button4**. Anhand der aktuellen Namen können Sie jedoch nicht erkennen, welches Steuerelement die Schaltfläche **Close** ist und welches Steuerelement die Schaltfläche **Show a picture** ist. Daher ist es hilfreich, den Schaltflächen-Steuerelementen aufschlussreichere Namen zu geben.
 
- ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Themas finden Sie in Video 3 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205213) oder in Video 3 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 3 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic – Video 3)](http://go.microsoft.com/fwlink/?LinkId=205213) und [Tutorial 1: Create a picture viewer in C# – Video 3 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 3)](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-name-your-button-controls"></a>So benennen Sie die Schaltflächen-Steuerelemente
 
@@ -36,7 +34,7 @@ Es gibt nur ein <xref:System.Windows.Forms.PictureBox> im Formular. Als Sie es h
 **Eigenschaftenfenster** mit **closeButton**-Name
 
     > [!NOTE]
-    >  Wenn Sie versuchen, den Namen der Schaltfläche in **closeButton** zu ändern, also mit einem Leerzeichen zwischen den beiden Wörtern, zeigt die IDE eine Fehlermeldung an: "Der Eigenschaftswert ist ungültig". Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.
+    >  Wenn Sie versuchen, den Namen der Schaltfläche in **closeButton** zu ändern, also mit einem Leerzeichen zwischen den beiden Wörtern „close“ und Button“, zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.
 
 2.  Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.
 
@@ -77,6 +75,6 @@ Es gibt nur ein <xref:System.Windows.Forms.PictureBox> im Formular. Als Sie es h
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).
 
--   Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
