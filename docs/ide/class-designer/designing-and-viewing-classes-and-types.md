@@ -2,7 +2,6 @@
 title: Verwenden des Klassen-Designers
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853423"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Entwerfen und Anzeigen von Klassen und Typen mit dem Klassen-Designer
 

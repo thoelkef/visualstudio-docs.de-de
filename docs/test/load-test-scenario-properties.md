@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843618"
 ---
 # <a name="load-test-scenario-properties"></a>Eigenschaften von Auslastungstestszenarios
 
@@ -43,11 +42,11 @@ ms.locfileid: "52894598"
 
 |Eigenschaft|Definition|
 |-|----------------|
-|**Zu verwendende Agents**|Gibt die Agents an, die für das zu verwendende Szenario verwendet werden sollen, wenn Sie den Auslastungstest remote ausführen. Sie möchten z. B. einen bestimmten Satz von Agents angeben, damit Sie die Konsistenz beim Analysieren von Leistungstrends aufrechterhalten. Zudem sind Agents möglicherweise geografisch verteilt, sodass bezüglich der ausgeführten Skripts und des Standorts des Agents eine Affinität besteht.<br /><br />Agents müssen durch Kommas getrennt sein, z.B. **Agent1, Agent2, Agent3**. Wenn Sie keine Eigenschaft angeben, verwendet das Szenario alle verfügbaren Agents.<br /><br />Weitere Informationen finden Sie unter [How to: Specify Test Agents to Use (Vorgehensweise: Angeben der zu verwendenden Test-Agents)](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Verteilung auf Geschwindigkeitsverzögerung anwenden**|Boolescher Wert, mit dem angegeben wird, wenn Sie typische Verteilungsverzögerungen im Testmischungsmodell mit Geschwindigkeitsangabe anwenden möchten. Diese Eigenschaft ist nur gültig, wenn die Eigenschaft **Testmischungstyp** auf **Auf Grundlage der Benutzergeschwindigkeit** festgelegt wird.<br /><br />Weitere Informationen finden Sie unter [How to: Apply Distribution to Pacing Delay (Vorgehensweise: Anwenden der Verteilung auf Geschwindigkeitsverzögerungen)](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
+|**Zu verwendende Agents**|Gibt die Agents an, die für das zu verwendende Szenario verwendet werden sollen, wenn Sie den Auslastungstest remote ausführen. Sie möchten z. B. einen bestimmten Satz von Agents angeben, damit Sie die Konsistenz beim Analysieren von Leistungstrends aufrechterhalten. Zudem sind Agents möglicherweise geografisch verteilt, sodass bezüglich der ausgeführten Skripts und des Standorts des Agents eine Affinität besteht.<br /><br />Agents müssen durch Kommas getrennt sein, z.B. **Agent1, Agent2, Agent3**. Wenn Sie keine Eigenschaft angeben, verwendet das Szenario alle verfügbaren Agents.<br /><br />Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu verwendenden Test-Agents](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Verteilung auf Geschwindigkeitsverzögerung anwenden**|Boolescher Wert, mit dem angegeben wird, wenn Sie typische Verteilungsverzögerungen im Testmischungsmodell mit Geschwindigkeitsangabe anwenden möchten. Diese Eigenschaft ist nur gültig, wenn die Eigenschaft **Testmischungstyp** auf **Auf Grundlage der Benutzergeschwindigkeit** festgelegt wird.<br /><br />Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
 |**IP-Wechsel**|Boolescher Wert, der angibt, ob ein IP-Wechsel verwendet wird.<br /><br />Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert. Der IP-Wechsel ist wichtig, wenn Sie den Test mit einer Webfarm ausführen, deren Last ausgeglichen ist. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver durch die Verwendung der IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, ist es wichtig, dass die Anfragen von mehreren IP-Adressen stammen.<br /><br />Der IP-Wechsel ist nur für den Test-Agent verfügbar.|
 |**Maximale Anzahl von Testiterationen**|Numerischer Wert, mit dem die maximale Anzahl der Tests angegeben wird, die im Szenario ausgeführt werden sollen. Der Wert "0" gibt kein Maximum an.<br /><br />Weitere Informationen finden Sie unter [Configuring Test Iterations for Scenarios (Konfigurieren von Testiterationen für Szenarios)](../test/configure-test-iterations-in-a-load-test-scenario.md).|
-|**Prozentsatz neuer Benutzer**|Numerischer Wert, mit dem der Prozentsatz neuer Benutzer oder erstmaliger Besucher im Szenario angegeben wird.<br /><br />Weitere Informationen finden Sie unter [How to: Specify the Percentage of Virtual Users that Use Web Cache Data (Vorgehensweise: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen)](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
+|**Prozentsatz neuer Benutzer**|Numerischer Wert, mit dem der Prozentsatz neuer Benutzer oder erstmaliger Besucher im Szenario angegeben wird.<br /><br />Weitere Informationen finden Sie unter [Vorgehensweise: Angeben des Prozentsatzes virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Reaktionsprofil**|Gibt an, ob vom Szenario **Normalverteilung** verwendet wird, oder ob das Reaktionsprofil **Aktiviert** oder **Deaktiviert** ist.<br /><br />Weitere Informationen finden Sie unter [Editing Think Times to Simulate Website Human Interaction Delays (Bearbeiten von Reaktionszeiten zum Simulieren von Website-Interaktionsverzögerungen des Benutzers)](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Zeitliche Steuerung

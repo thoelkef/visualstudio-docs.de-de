@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832137"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmenaufzeichnungen während der Tests mit Testeinstellungen
 
 Im Konfigurations-Editor in Visual Studio können Sie den Adapter für diagnostische Daten konfigurieren, der den Bildschirm und die Stimme des Benutzers aufzeichnet, der den Test ausführt. Dieser Adapter für diagnostische Daten speichert eine Bildschirm- und Stimmenaufzeichnung der Desktopsitzung während des Tests. Die Aufzeichnung wird mit dem Testergebnis gespeichert, oder sie kann einem Fehler angefügt werden. Andere Teammitglieder können die Videoaufzeichnungen verwenden, um schwer zu reproduzierende Anwendungsfehler zu isolieren.
 
@@ -52,9 +51,9 @@ Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für 
 
 6.  Konfigurieren Sie unter **Qualität der Bildschirmaufzeichnung** die folgenden Dropdownlistenoptionen:
 
-    1.  **Framerate:** Geben Sie an, wie viele Frames pro Sekunde in der Bildschirm- und Stimmenaufzeichnung verwendet werden sollen. Der Standardwert ist 4 Frames pro Sekunde. Werte zwischen 2 und 20 sind zulässig.
+    1.  **Bildfrequenz:** Geben Sie an, wie viele Frames pro Sekunde in der Bildschirm- und Stimmenaufzeichnung verwendet werden sollen. Der Standardwert ist 4 Frames pro Sekunde. Werte zwischen 2 und 20 sind zulässig.
 
-    2.  **Bitrate:** Geben Sie an, wie viele Kilobytes pro Sekunde in der Bildschirm- und Stimmenaufzeichnung verwendet werden sollen. Der Standardwert ist 512. Werte zwischen 512 und 10.000 sind zulässig.
+    2.  **Bitrate:** Geben Sie an, wie viele Kilobyte pro Sekunde in der Bildschirm- und Stimmenaufzeichnung verwendet werden sollen. Der Standardwert ist 512. Werte zwischen 512 und 10.000 sind zulässig.
 
     3.  **Qualität (1 bis 100):** Sie können die Qualität der Bildschirm- und Stimmaufzeichnung angeben, indem Sie einen Bereich zwischen 1 und 100 auswählen. Der Standardwert ist 50 (mittlerer Bereich).
 

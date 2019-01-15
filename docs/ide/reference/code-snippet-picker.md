@@ -2,7 +2,6 @@
 title: Codeausschnittauswahl
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03503c2ea708dd9093e4ee7b3490879724c3f7d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887645"
 ---
 # <a name="code-snippet-picker"></a>Codeausschnittauswahl
 
@@ -44,7 +43,7 @@ Wie Sie die **Codeausschnittauswahl** aufrufen, hängt von der verwendeten Sprac
 
 - SQL: Klicken Sie mit der rechten Maustaste auf die gewünschte Stelle im Code-Editor, um das Kontextmenü anzuzeigen, und klicken Sie auf **Ausschnitt einfügen**.
 
-In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur Ordnerliste hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).
+In den meisten Entwicklungssprachen von Visual Studio können Sie mit dem **Codeausschnitt-Manager** Ordner zur Ordnerliste hinzufügen, die die **Codeausschnittauswahl** auf XML-Codeausschnittdateien überprüft. Sie haben außerdem die Möglichkeit, eigene Ausschnitte zu erstellen und zur Liste hinzuzufügen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einfügen eines Codeausschnitts](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
@@ -61,4 +60,4 @@ Eine Liste von Codeausschnitten, die eingefügt werden können, oder eine Liste 
 - [Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense-Codeausschnitte](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Festlegen von Lesezeichen im Code](../../ide/setting-bookmarks-in-code.md)
-- [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Vorgehensweise: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)

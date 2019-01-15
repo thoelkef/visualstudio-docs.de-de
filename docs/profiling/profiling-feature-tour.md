@@ -3,7 +3,6 @@ title: Messen von Leistung mit Profilerstellungstools
 description: Einführung in die verschiedenen für Visual Studio verfügbaren Diagnosetools
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880311"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -168,4 +167,4 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
 
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

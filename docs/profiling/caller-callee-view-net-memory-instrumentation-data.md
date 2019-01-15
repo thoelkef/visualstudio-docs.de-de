@@ -1,8 +1,6 @@
 ---
 title: Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentationsdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6005bfcd4c69220c26929a8ad57f0e37923f388c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a2ac6322f7264f6a6816b6724f0e477c7daa977c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833468"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Aufrufer-/Aufgerufener-Ansicht: .NET-Speicherinstrumentationsdaten
 Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher, die mit der Instrumentationsmethode gesammelt wurden, zeigt Belegungs- und Zeitsteuerungsdaten für eine ausgewählte Funktion und die übergeordneten und untergeordneten Funktionen dieser ausgewählten Funktion an. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -32,7 +30,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
   
 ## <a name="general"></a>Allgemein  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Funktionsname**|Der Name der Funktion.|  
 |**Funktionsadresse**|Die Adresse der Funktion.|  
@@ -50,7 +48,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
   
 ## <a name="net-memory-allocation-values"></a>Werte zur .NET-Speicherbelegung  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusive Speicherbelegungen**|- Bei der aktuellen Funktion die Anzahl der Objekte, die während der Ausführung von Code im Funktionsrumpf erstellt wurden (d.h., während sich die Funktion an erster Stelle der Aufrufliste befand). Diese Zahl umfasst keine Objekte, die in den von dieser Funktion aufgerufenen Funktionen erstellt wurden.<br />- Bei einer aufrufenden Funktion die Anzahl der exklusiven Belegungen der aktuellen Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurden.<br />- Bei einer aufgerufenen Funktion die Anzahl von Objekten, die von den Instanzen dieser Funktion erstellt wurden, die von der aktuellen Funktion aufgerufen wurden. Diese Zahl umfasst keine Objekte, die von den von der aufgerufenen Funktion aufgerufenen Funktionen erstellt wurden.|  
 |**Exklusive Speicherbelegungen in %**|Der Prozentsatz aller Objekte, die während der Profilerstellung erstellt wurden und exklusive Belegungen dieser Funktion waren.|  
@@ -64,7 +62,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst den zeitlichen Aufwand für untergeordnete Funktionen und Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**verstrichene inklusive Zeit**|- Für die aktuelle Funktion die in der Funktion aufgewendete Zeit. Der Wert umfasst die Zeit in untergeordneten Funktionen und für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an verstrichener inklusiver Zeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit in dieser Funktion, die auf Aufrufe aus der aktuellen Funktion entfällt. Der Wert umfasst die Zeit in untergeordneten Funktionen und für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.|  
 |**verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen inklusiven Zeit, die innerhalb der verstrichenen inklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -75,7 +73,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit  
  Werte für verstrichene exklusive Zeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Sie umfasst nur den zeitlichen Aufwand für Aufrufe des Betriebssystems (z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen), aber nicht die Zeit, die für untergeordnete Funktionen aufgewendet wurde.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**verstrichene exklusive Zeit**|- Bei der aktuellen Funktion die Zeit, die für die direkte Ausführung im Funktionsrumpf aufgewendet wurde. Der Wert umfasst nicht die Zeit in untergeordneten Funktionen, Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen) sind jedoch enthalten.<br />- Bei einer aufrufenden Funktion die Menge an verstrichener exklusiver Zeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit in dieser Funktion, die auf Aufrufe aus der aktuellen Funktion entfällt. Der Wert umfasst die Zeit für Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen), jedoch nicht die Zeit in untergeordneten Funktionen der aufgerufenen Funktion.|  
 |**verstrichene exklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der gesamten verstrichenen exklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -86,7 +84,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit  
  Werte für die inklusive Anwendungszeit geben die Zeit an, die sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in untergeordneten Funktionen, jedoch nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**inklusive Anwendungszeit**|- Bei der aktuellen Funktion die Zeit, die für die Funktion und ihre untergeordneten Funktionen aufgewendet wurde. Der Wert umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an inklusiver Anwendungszeit für die aktuelle Funktion, die von Aufrufen von dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit in dieser Funktion und den untergeordneten Funktionen, die durch Aufrufe aus der aktuellen Funktion generiert wurden. Der Wert umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.|  
 |**inklusive Anwendungszeit %**|Der Prozentsatz der insgesamt verstrichenen inklusiven Zeit, die innerhalb der gesamten inklusiven Anwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -97,7 +95,7 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Werte für die exklusive Anwendungszeit geben die Zeit an, die in der Funktion verbracht wurde, jedoch ohne die Zeit, die in untergeordneten Funktionen verbracht wurde. Die angegebene Zeit berücksichtigt außerdem keine Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**exklusive Anwendungszeit**|- Bei der aktuellen Funktion die Zeit, die für die Ausführung im Funktionsrumpf aufgewendet wurde. Der Wert umfasst weder die Zeit in untergeordneten Funktionen noch die Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br />- Bei einer aufrufenden Funktion die Menge an exklusiver Anwendungszeit für die aktuelle Funktion, die von Aufrufen aus dieser aufrufenden Funktion generiert wurde.<br />- Bei einer aufgerufenen Funktion die Zeit in dieser Funktion, die auf Aufrufe aus der aktuellen Funktion entfällt. Der Wert umfasst weder die Zeit in untergeordneten Funktionen der aufgerufenen Funktion noch die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.|  
 |**exklusive Anwendungszeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der exklusiven Gesamtanwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -107,6 +105,6 @@ Die Aufrufer/Aufgerufener-Ansicht für Profilerstellungsdaten zum .NET-Speicher,
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufer-/Aufgerufener-Ansicht: .NET-Speichersamplingdaten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Caller/Callee view – .NET memory sampling data (Aufrufer-/Aufgerufener-Ansicht – Samplingdaten des .NET-Arbeitsspeichers)](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Aufrufer-/Aufgerufener-Ansicht: Instrumentationsdaten](../profiling/caller-callee-view-instrumentation-data.md)   
  [Aufrufer-/Aufgerufener-Ansicht: Samplingdaten](../profiling/caller-callee-view-sampling-data.md)

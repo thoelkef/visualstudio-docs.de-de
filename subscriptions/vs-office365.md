@@ -9,20 +9,20 @@ description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968390"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 in Visual Studio-Abonnements
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus in Visual Studio-Abonnements
 
-Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access (Publisher und Access nur auf dem PC verfügbar) enthält. Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Office 365 bietet auch Dienste wie 1 TB OneDrive-Speicher, 60 Skype-Minuten pro Monat sowie Chat- und Telefonsupport von Microsoft. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 Pro Plus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Office 365 bietet auch Dienste wie 1 TB OneDrive-Speicher, 60 Skype-Minuten pro Monat sowie Chat- und Telefonsupport von Microsoft. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
 
-## <a name="getting-started-with-office-365"></a>Erste Schritte mit Office 365
+## <a name="getting-started-with-office-365-pro-plus"></a>Erste Schritte mit Office 365 Pro Plus
 
-Führen Sie die folgenden Schritte aus, um Office 365 herunterzuladen und zu aktivieren:
+Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen und zu aktivieren:
 1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.  
 2. Klicken Sie auf die Registerkarte **Downloads**.
 3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus. 

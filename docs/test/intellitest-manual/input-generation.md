@@ -2,7 +2,6 @@
 title: Dynamische symbolische Ausführung | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834671"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
@@ -29,7 +28,7 @@ Die Schritte der Schleife sind wie folgt:
 
 1. IntelliTest führt den Test mit der ausgewählten Eingabe **i** aus und überwacht die Ausführung des Test sowie das getestete Programm.
 
-1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Der Satz aller Bedingungen, die die Ausführung bestimmen, wird als *Pfadbedingung* bezeichnet. Diese wird über die formellen Eingabeparameter als **p: I -> {true, false}** geschrieben. IntelliTest berechnet eine Repräsentation dieses Prädikats.
+1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Der Satz aller Bedingungen, die die Ausführung bestimmen, wird als *Pfadbedingung* bezeichnet. Diese wird über die formellen Eingabeparameter als Prädikat **p: I -> {true, false}** geschrieben. IntelliTest berechnet eine Repräsentation dieses Prädikats.
 
 1. IntelliTest legt Folgendes fest: **q := (q or p)**. Anders gesagt bedeutet dies, dass erfasst wird, dass es den Pfad gesehen hat, der mit **p** dargestellt wird.
 

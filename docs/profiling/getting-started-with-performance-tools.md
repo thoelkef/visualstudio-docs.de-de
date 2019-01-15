@@ -1,8 +1,6 @@
 ---
 title: Erste Schritte mit Leistungstools | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942852"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 
@@ -28,9 +26,9 @@ Visual Studio bietet verschiedene Möglichkeiten zum Erfassen, Anzeigen und Anal
 
 - Leistungsberichte bieten Einblicke in verschiedene Ebenen der Anwendungsstruktur, von Quellcodezeilen und Prozessen. Mit Leistungsberichten können App-Ausführungsdaten angezeigt werden, von aufrufenden und abrufenden Funktionen einer bestimmten Funktion bis hin zur Aufrufstruktur der gesamten App.  
   
-Wählen Sie **Debuggen** > **Leistungsprofiler**, und wählen Sie **Leistungs-Assistent**, um schnell ein Profil für ein Projekt, eine App oder eine ASP.NET-Website zu erstellen. Ausführliche Anweisungen finden Sie in der [Anleitung zur Leistungsprofilerstellung](../profiling/beginners-guide-to-cpu-sampling.md) und unter [Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+Wählen Sie **Debuggen** > **Leistungsprofiler**, und wählen Sie **Leistungs-Assistent**, um schnell ein Profil für ein Projekt, eine App oder eine ASP.NET-Website zu erstellen. Ausführliche Anweisungen finden Sie in der [Anleitung zur Leistungsprofilerstellung](../profiling/beginners-guide-to-cpu-sampling.md) und unter [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
 
-Wählen Sie **Debuggen** > **Profiler** > **Leistungs-Explorer**, um eine Leistungsprofilerstellungssitzung manuell anzugeben und zu konfigurieren. Verwenden Sie den Ordner **Ziele** und die **Eigenschaftenseiten** im **Leistungs-Explorer**, um Sitzungen zu konfigurieren. Anweisungen zur Vorgehensweise finden Sie unter [Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md).  
+Wählen Sie **Debuggen** > **Profiler** > **Leistungs-Explorer**, um eine Leistungsprofilerstellungssitzung manuell anzugeben und zu konfigurieren. Verwenden Sie den Ordner **Ziele** und die **Eigenschaftenseiten** im **Leistungs-Explorer**, um Sitzungen zu konfigurieren. Anweisungen hierzu finden Sie unter [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md).  
   
 **Weitere Informationen finden Sie in den folgenden Artikeln:**
   

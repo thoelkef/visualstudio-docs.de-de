@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860204"
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
@@ -45,7 +44,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |-|----------------|
 |**Maximale Testprotokolle**|Gibt die maximale Anzahl von Testprotokollen an, die für den Auslastungstest gespeichert werden sollen. Wenn der für die maximale Anzahl von Testprotokollen eingegebene Wert erreicht wird, wird das Sammeln von Protokollen durch den Auslastungstest beendet. Daher werden die Protokolle am Anfang des Tests gesammelt, und nicht am Ende. Der Auslastungstest wird weiterhin ausgeführt, bis er abgeschlossen ist.|
 |**Protokollhäufigkeit für abgeschlossene Tests speichern**|Gibt die Häufigkeit an, mit der das Testprotokoll geschrieben wird. Die Zahl gibt an, dass von jeder eingegebenen Anzahl von Tests jeweils ein Test im Testprotokoll gespeichert wird. Durch Eingabe des Werts zehn wird z. B. angegeben, dass der zehnte, zwanzigste und dreißigste Test in das Testprotokoll geschrieben wird. Wenn Sie den Wert auf "0" festlegen, werden keine Testprotokolle gespeichert.|
-|**Protokoll bei Testfehler speichern**|Ein boolescher Wert, der bestimmt, ob Testprotokolle gespeichert werden, wenn ein Test in einem Auslastungstest fehlschlägt. Die Standardeinstellung ist `True`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md).|
+|**Protokoll bei Testfehler speichern**|Ein boolescher Wert, der bestimmt, ob Testprotokolle gespeichert werden, wenn ein Test in einem Auslastungstest fehlschlägt. Die Standardeinstellung ist `True`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben, ob Testfehler in Testprotokollen gespeichert werden](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Weitere Informationen finden Sie unter [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md).
 
@@ -54,7 +53,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |Eigenschaft|Definition|
 |-|----------------|
 |**Speichertyp**|Die Art der Speicherung von Leistungsindikatoren, die in einem Auslastungstest abgerufen werden. Dies sind die Optionen:<br /><br /> -   **Datenbank:** Erfordert eine SQL-Datenbank mit einem **Auslastungstest-Ergebnisspeicher**.<br />-   **Keine**.|
-|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das **Diagramm für Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** zu verwenden.<br />     Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Releases.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das **Diagramm für Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** zu verwenden.<br />     Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Releases.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
 
 ## <a name="sql-tracing-properties"></a>Eigenschaften der SQL-Ablaufverfolgung
 
@@ -63,7 +62,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |**Mindestdauer von SQL-Vorgängen, für die Ablaufverfolgung durchgeführt wird**|Notwendige Mindestdauer eines SQL-Vorgangs in Millisekunden, damit dieser von der SQL-Ablaufverfolgung aufgezeichnet wird. Wenn Sie z. B. nach SQL-Vorgängen suchen, die unter Belastung langsam durchgeführt werden, ermöglicht Ihnen diese Einstellung das Ignorieren von schnell ablaufenden Vorgängen.|
 |**Verbindungszeichenfolge für SQL-Ablaufverfolgung**|Die Verbindungszeichenfolge für den Zugriff auf die Datenbank, für die eine SQL-Ablaufverfolgung durchgeführt werden soll.|
 |**SQL-Ablaufverfolgungsverzeichnis**|Der Speicherort, an dem die SQL-Ablaufverfolgungsdatei nach Abschluss der Aufzeichnung gespeichert wird. Dieses Verzeichnis muss über Schreibberechtigungen für SQL Server und Leseberechtigungen für den Controller verfügen.|
-|**SQL-Ablaufverfolgung aktiviert**|Hiermit wird die Ablaufverfolgung von SQL-Vorgängen aktiviert. Der Standardwert ist `False`.|
+|**SQL-Ablaufverfolgung aktiviert**|Hiermit wird die Ablaufverfolgung von SQL-Vorgängen aktiviert. Der Standardwert ist `False`sein.|
 
 ## <a name="test-iterations-properties"></a>Eigenschaften von Testiterationen
 
@@ -72,7 +71,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |**Testiterationen**|Gibt die Gesamtzahl einzelner Tests an, die vor dem Abschließen des Auslastungstests ausgeführt werden müssen. Diese Eigenschaft ist nur gültig, wenn die Eigenschaft "Testiterationen verwenden" den Wert `True` hat.|
 |**Testiterationen verwenden**|Wenn "Testiterationen verwenden" den Wert `True` aufweist, wird der Auslastungstest so lange ausgeführt, bis die Anzahl der innerhalb des Auslastungstests durchgeführten einzelnen Tests den in der Eigenschaft "Testiterationen" angegebenen Wert erreicht. In diesem Fall werden die zeitbasierten Einstellungen Aufwärmdauer, Testlaufdauer und Abkühldauer ignoriert. Wenn "Testiterationen verwenden" den Wert `False` hat, werden alle Zeitsteuerungseinstellungen angewendet und "Testiterationen" ignoriert.|
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung für Auslastungstests](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Zeitsteuerungseigenschaften
 
@@ -80,7 +79,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |-|----------------|
 |**Abkühldauer**|Die Abkühldauer für den Test im Format hh:mm:ss. Einzelne innerhalb eines Auslastungstests ausgeführte Tests sind nach Ende des Auslastungstests möglicherweise noch aktiv. Diese Tests können noch während der Abkühldauer weiter ausgeführt werden, bis sie abgeschlossen sind oder das Ende der Abkühldauer erreicht wurde. Standardmäßig wird keine Abkühldauer eingestellt. Die einzelnen Tests werden beendet, sobald der Auslastungstest auf der Grundlage der Einstellung für die Testlaufdauer beendet wird.|
 |**Testlaufdauer**|Die Dauer des Tests, im Format hh:mm:ss.|
-|**Samplingrate**|Der Intervall zum Erfassen von Leistungsindikatorwerten, im Format hh:mm:ss.<br /><br /> Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Samplingrate**|Der Intervall zum Erfassen von Leistungsindikatorwerten, im Format hh:mm:ss.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Aufwärmdauer**|Die Zeitspanne zwischen dem Beginn des Tests und dem Beginn der Aufzeichnung von Beispieldaten, im Format hh:mm:ss. Diese Einstellung wird häufig verwendet, um stufenweise virtuelle Benutzer zu laden, damit eine bestimmte Auslastung erreicht wird, bevor die Aufzeichnung der Samplingwerte beginnt. Die in der Aufwärmzeitspanne aufgezeichneten Beispielwerte werden im **Auslastungstest-Analyzer** angezeigt.|
 
 ## <a name="webtest-connections-properties"></a>WebTest-Verbindungseigenschaften
@@ -91,7 +90,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |**WebTest-Verbindungspoolgröße**|Gibt die maximale Anzahl von Verbindungen zwischen dem Auslastungstest-Agent und dem Webserver an. Dies gilt nur für das Modell **Verbindungspool**.|
 
 ##  <a name="change-run-setting-properties"></a>Ändern der Eigenschaften von Laufzeiteinstellungen
- Sie können dem Auslastungstest weitere Laufzeiteinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Vorgehensweise: Auswählen der aktiven Laufzeiteinstellung für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+ Sie können dem Auslastungstest weitere Laufzeiteinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Gewusst wie: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>So ändern Sie Laufzeiteinstellungen
 

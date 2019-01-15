@@ -1,8 +1,6 @@
 ---
 title: marker_importance Enumeration | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841689"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
 Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.  
@@ -34,7 +32,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Werte  
   
-|name|Beschreibung |  
+|name|Beschreibung|  
 |----------|-----------------|  
 |`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
 |`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  

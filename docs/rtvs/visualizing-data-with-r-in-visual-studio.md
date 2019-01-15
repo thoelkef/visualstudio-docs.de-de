@@ -3,19 +3,18 @@ title: Visualisieren von Daten mit R
 description: Zeichnen von Daten aus R-Programmen in Visual Studio mithilfe von Plotfenstern.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859080"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -25,7 +24,7 @@ Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenana
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
 
 ## <a name="the-plot-window"></a>Das Plotfenster
 
@@ -47,7 +46,7 @@ Durch die Größenanpassung eines Plotfensters wird immer der Plot erneut gerend
 
 Die Symbolleiste des Plotfensters enthält anwendbare Befehle, von denen die meisten auch über das Menü **R Tools** > **Plots** verfügbar sind.
 
-| Schaltfläche | Befehl | Beschreibung  | 
+| Schaltfläche | Befehl | Beschreibung | 
 | --- | --- | --- |
 | ![Schaltfläche „Neues Plotfenster“](media/plotting-toolbar-01-new-plot-window.png) | Neues Plotfenster | Erstellt ein separates Plotfenster mit eigener Versionsgeschichte. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |
 | ![Schaltfläche „Plotfenster aktivieren“](media/plotting-toolbar-02-activate-plot-window.png) | Plotfenster aktivieren | Legt das aktuelle Plotfenster als aktives Fenster fest, sodass nachfolgende `plot`-Befehle an dieses Fenster gerendert werden. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |

@@ -1,8 +1,6 @@
 ---
 title: Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19f868089c5f8a6187d1bdd36adaf22162b8e2b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878743"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 
@@ -32,7 +30,7 @@ Eine parallelisierte Anwendung wird manchmal weiter seriell ausgeführt, obwohl 
 
 Wie in der folgenden Abbildung gezeigt, kann die Parallelitätsschnellansicht dieses Symptom auch in der CPU-Auslastungsansicht anzeigen, wo die Anwendung trotz mehrerer Threads nur einen logischen Kern nutzt.
 
-Weitere Informationen finden Sie unter „Performance Pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) auf der MSDN-Blogwebsite.
+Weitere Informationen finden Sie unter „Performance pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) auf der MSDN-Blogwebsite.
 
 ![Sperrenkonflikte](../profiling/media/lockcontention_2.png "LockContention_2")
 

@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)'
+title: 'Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953036"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Vorgehensweise: Erstellen eines Typs im Klassen-Designer, der NULL-Werte zulässt
 
@@ -92,5 +91,5 @@ Weitere Informationen zu Typen in C#, die NULL-Werte zulassen, finden Sie unter 
 - <xref:System.Nullable%601>
 - [Typen mit Nullwert](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Verwenden von Typen mit Nullwert](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Gewusst wie: Identifizieren eines Typs mit Nullwerten](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Auf NULL festlegbare Werttypen](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

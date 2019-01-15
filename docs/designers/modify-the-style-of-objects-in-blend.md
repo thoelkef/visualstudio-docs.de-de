@@ -2,19 +2,18 @@
 title: Ändern des Stils von Objekten in Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906786"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 
@@ -22,7 +21,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 
 Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, erstellen Sie eine wieder verwendbare Ressource. Dies könnte ein *Stil*, eine *Vorlage* oder etwas so einfaches wie eine benutzerdefinierte Farbe sein. Sie können auch ein Steuerelement unterschiedlich basierend auf seine Status anzeigen. Beispielsweise wird eine Schaltfläche grün, wenn der Benutzer darauf klickt.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Ändern des Erscheinungsbilds einen Objekts
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Aussehen eines Objekts ändern
 
 Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden soll.
 
@@ -48,9 +47,9 @@ Erstellen Sie einen visuellen Pinsel aus einem Steuerelement, z. B. einer Schalt
 
 Sie entwerfen die Darstellung und das Verhalten eines Steuerelements einmal und wenden diesen Entwurf auf andere Steuerelemente an, sodass Sie sie nicht einzeln verwalten müssen.
 
-**Sollten Sie einen Stil verwenden?** Wenn Sie nur die Standardeigenschaften (beispielsweise die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
+**Sollten Sie einen Stil verwenden?**: Wenn Sie nur die Standardeigenschaften (z. B. die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
 
-**Sollten Sie eine Vorlage verwenden?** Wenn Sie die Struktur des Steuerelements ändern möchten, verwenden Sie eine *Vorlage*. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
+**Sollten Sie eine Vorlage verwenden?**: Wenn Sie nur Text anzeigen möchten, können Sie eine *Vorlage* verwenden. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
 
 ### <a name="create-a-template-or-style"></a>Erstellen einer Vorlage oder eines Stils
 
@@ -88,7 +87,7 @@ Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](../designers
 
 Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern des Erscheinungsbilds eines Steuerelements basierend auf dessen Status
+## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf deren Status
 
 Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie können eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.
 
@@ -96,7 +95,7 @@ Steuerelemente können über unterschiedliche visuelle Darstellungen basierend a
 
 **Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Verwalten des Zustands der WPF-Steuerelemente](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressourcen: Künftige erneute Verwendung von Farben, Stilen und Vorlagen
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressourcen: Farben, Stile und Vorlagen erstellen und später erneut verwenden
 
 Sie können fast alles in Ihrem Projekt in eine Ressource konvertieren. Eine Ressource ist ein Objekt, das an unterschiedlichen Stellen in Ihrer Anwendung wiederverwendet werden kann. Sie können z. B. eine Farbe einmal erstellen, sie in eine Ressource konvertieren und dann diese Farbe auf mehrere Objekte anwenden. Um die Farbe aller dieser Objekte zu ändern, ändern Sie einfach die Farbressource.
 

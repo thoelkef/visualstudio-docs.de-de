@@ -1,8 +1,6 @@
 ---
 title: Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed1db5bd560c32cdb40ddc728b3ede63c70dbc88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917422"
 ---
 # <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
 Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.  
@@ -32,7 +30,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jede Ressource.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name der Ressource.|  
 |**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|  
@@ -42,7 +40,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**ID**|Der Threadbezeichner.|  
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|  

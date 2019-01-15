@@ -2,7 +2,6 @@
 title: Codeanalyse, Projekt-Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860131"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
 Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool erstellt Berichte zu Informationen zu Ihren Assemblys, wie z.B. Verstöße gegen die Programmier- und Entwurfsregeln, die in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegt sind.
@@ -78,4 +77,4 @@ Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Too
 
 - [Warnungen bei der Analyse von verwaltetem Code](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Übersicht über die Analyse von verwaltetem Code](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code im Hinblick auf Codefehler](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

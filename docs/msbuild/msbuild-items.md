@@ -1,9 +1,7 @@
 ---
 title: MSBuild-Elemente | Microsoft-Dokumentation
 description: Verwenden Sie das MSBuild Include-Attribut der ItemGroup, um Dateien anzugeben, die in einem Build enthalten sein sollen.
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898685"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien (die Dateien sind im `Include`-Attribut angegeben). Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.  
@@ -55,7 +53,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 -   Ab .NET Framework 3.5 enthalten `Target`-Elemente möglicherweise [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elemente, die Item-Elemente enthalten.  
   
 ##  <a name="reference-items-in-a-project-file"></a>Verweisen auf Elemente in einer Projektdatei  
- Verwenden Sie die Syntax @(\<ItemType>), um auf Elementtypen in der gesamten Projektdatei zu verweisen. Auf den Elementtyp aus dem vorherigen Beispiel würden Sie z.B. mithilfe von `@(Compile)` verweisen. Mithilfe dieser Syntax können Sie Elemente an Aufgaben übergeben, indem Sie den Elementtyp als einen Parameter dieser Aufgabe angeben. Weitere Informationen finden Sie unter [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md).  
+ Verwenden Sie die Syntax @(\<ItemType>), um auf Elementtypen in der gesamten Projektdatei zu verweisen. Auf den Elementtyp aus dem vorherigen Beispiel würden Sie z.B. mithilfe von `@(Compile)` verweisen. Mithilfe dieser Syntax können Sie Elemente an Aufgaben übergeben, indem Sie den Elementtyp als einen Parameter dieser Aufgabe angeben. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
   
  Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Verwenden Sie die Syntax @(\<ItemType>, '\<Trennzeichen>'), um ein anderes Trennzeichen als den Standard anzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
@@ -81,7 +79,7 @@ Das folgende Element wählt alle `.vb`-Dateien auf Laufwerk `D:` aus:
 
 Wenn Sie literale Zeichen `*` oder `?` in ein Element ohne Platzhaltererweiterung aufnehmen möchten, müssen Sie [die Platzhalterzeichen mit Escapezeichen versehen](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Weitere Informationen zu Platzhalterzeichen finden Sie unter [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md).  
+Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
 
 ##  <a name="use-the-exclude-attribute"></a>Verwenden des Exclude-Attributs  
  Item-Elemente können das `Exclude`-Attribut enthalten, das bestimmte Elemente (Dateien) aus dem Elementtyp ausschließt. Das `Exclude`-Attribut wird normalerweise zusammen mit Platzhalterzeichen verwendet. Der folgende XML-Code fügt z.B. dem CSFile-Elementtyp alle *CS*-Dateien außer *DoNotBuild.cs* hinzu, die sich im Verzeichnis befinden.  
@@ -99,7 +97,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [How to: Select the
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="item-metadata"></a>Elementmetadaten  
  Zusätzlich zu den Informationen aus den Attributen `Include` und `Exclude` können Elemente Metadaten enthalten. Diese Metadaten können von Aufgaben verwendet werden, die weitere Informationen zu den Elementen oder zur Batchverarbeitung von Aufgaben und Zielen benötigen. Weitere Informationen finden Sie unter [MSBuild Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
@@ -326,8 +324,8 @@ Output:
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
- [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md)   
- [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)   
+ [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Elementdefinitionen](../msbuild/item-definitions.md)   
  [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   

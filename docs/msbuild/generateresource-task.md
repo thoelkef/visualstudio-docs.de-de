@@ -1,8 +1,6 @@
 ---
 title: GenerateResource-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917500"
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
 Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenformat) und binären *RESOURCES*-Dateien der Common Language Runtime, die in eine ausführbare Laufzeitbinärdatei eingebettet oder in Satellitenassemblys kompiliert werden können. Diese Aufgabe dient normalerweise zum Konvertieren von *TXT*- oder *RESX*-Dateien in *RESOURCES*-Dateien. Die `GenerateResource`-Aufgabe ist funktional identisch mit [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -33,7 +31,7 @@ Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenforma
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Enthält zusätzliche Eingaben für die Abhängigkeitsüberprüfung, die von dieser Aufgabe ausgeführt wird. Beispielsweise sollten die Projekt- und Zieldateien in der Regel Eingaben sein, damit bei ihrer Aktualisierung alle Ressourcen neu generiert werden.|  
 |`EnvironmentVariables`|Optionaler `String[]` -Parameter.<br /><br /> Gibt ein Array von Name-Wert-Paaren von Umgebungsvariablen an, das zusätzlich zum regulären Umgebungsblock (oder diesen selektiv überschreibend) an die erzeugte *resgen.exe* übergeben werden sollte.|  
@@ -46,7 +44,7 @@ Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenforma
 |`PublicClass`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird eine stark typisierte Ressourcenklasse als öffentliche Klasse erstellt.|  
 |`References`|Optionaler `String[]` -Parameter.<br /><br /> Verweise, aus denen Typen in *RESX*-Dateien geladen werden. Datenelemente der *RESX*-Datei können vom Typ „.NET“ sein. Wenn die *RESX*-Datei gelesen wird, muss dieser aufgelöst werden. In der Regel wird dies mit Typladungsregeln erfolgreich aufgelöst. Wenn Sie in `References` Assemblys angeben, haben diese Vorrang.<br /><br /> Dieser Parameter ist für stark typisierte Ressourcen nicht erforderlich.|  
 |`SdkToolsPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools fest, wie z.B. *resgen.exe*.|  
-|`Sources`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu konvertierenden Elemente an. An diesen Parameter übergebene Elemente müssen eine der folgenden Erweiterungen aufweisen:<br /><br /> -   *.txt:* Gibt die Erweiterung für eine zu konvertierende Textdatei an. Textdateien dürfen nur Zeichenfolgenressourcen enthalten.<br />-   *.resx:* Gibt die Erweiterung für eine zu konvertierende XML-basierte Ressourcendatei an.<br />-   *.restext:* Gibt das gleiche Format wie *.txt* an. Diese andere Erweiterung ist nützlich, wenn Sie Quelldateien klar unterscheiden möchten, die Ressourcen aus anderen Quelldateien in Ihrem Buildprozess enthalten.<br />-   *.resources:* Gibt die Erweiterung für eine zu konvertierende Ressourcendatei an.|  
+|`Sources`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu konvertierenden Elemente an. An diesen Parameter übergebene Elemente müssen eine der folgenden Erweiterungen aufweisen:<br /><br /> -   *.txt*: Gibt die Erweiterung für eine zu konvertierende Textdatei an. Textdateien dürfen nur Zeichenfolgenressourcen enthalten.<br />-   *.resx*: Gibt die Erweiterung für eine zu konvertierende XML-basierte Ressourcendatei an.<br />-   *.restext*: Gibt das gleiche Format wie *.txt* an. Diese andere Erweiterung ist nützlich, wenn Sie Quelldateien klar unterscheiden möchten, die Ressourcen aus anderen Quelldateien in Ihrem Buildprozess enthalten.<br />-   *.resources*: Gibt die Erweiterung für eine zu konvertierende Ressourcendatei an.|  
 |`StateFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Pfad zu einer optionalen Cachedatei an, die zum Beschleunigen der Abhängigkeitsprüfung von Verknüpfungen in *RESX*-Eingabedateien verwendet wird.|  
 |`StronglyTypedClassName`|Optionaler `String` -Parameter.<br /><br /> Gibt den Klassennamen für die stark typisierte Ressourcenklasse an. Wenn dieser Parameter nicht angegeben ist, wird der Basisname der Ressourcendatei verwendet.|  
 |`StronglyTypedFilename`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Dateinamen der Quelldatei an. Wenn dieser Parameter nicht angegeben ist, wird der Name der Klasse mit sprachabhängiger Erweiterung als Basisdateiname verwendet. Beispiel: *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Konvertiert zwischen *TXT-* und *RESX*-Dateien (im XML-basierten Ressourcenforma
  Unter der Voraussetzung, dass die Assembly „myAssembly“ genannt wird, generiert der folgende Code eine eingebettete Ressource namens *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Ohne die \<LogicalName>-Metadaten würde die Ressource den Namen *myAssembly.myResource.resources* erhalten.  Dieses Beispiel gilt nur für den Visual Basic- und Visual C#-Buildprozess.  

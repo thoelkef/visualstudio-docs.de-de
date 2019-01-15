@@ -1,8 +1,6 @@
 ---
 title: Anpassen von Berichtsansichten von Leistungstools | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, customizing report views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21df85a54071a6fffe03483856c55194af08a2da
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8a4cd42732d6e7b4a7ff1bdfbec69d5c35f0cd2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842715"
 ---
 # <a name="customize-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
 In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.  
