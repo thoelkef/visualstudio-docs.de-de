@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a8e9787d3f130bc6fb6597b3e8a5a6a8483029d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907215"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen
 In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das Spiel. Jedes Symbol wird zwei zufällig ausgewählten Zellen im TableLayoutPanel auf dem Formular hinzugefügt. Sie verwenden zwei `new`-Anweisungen, um zwei Objekte zu erstellen. Das erste Objekt ist ein <xref:System.Random>-Objekt, wie Sie es auch im Mathematik-Quiz verwendet haben. Es wird in diesem Code verwendet, um Zellen im TableLayoutPanel zufällig auszuwählen. Das zweite Objekt ist möglicherweise neu für Sie – es ist ein <xref:System.Collections.Generic.List%601>-Objekt, das verwendet wird, um die zufällig ausgewählten Symbole zu speichern.
@@ -43,7 +41,7 @@ In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das S
 
      Der Code (samt Kommentar) ist einfacher zu verstehen, wenn Sie sich diesen in kleinen Abschnitten ansehen. Sie können Listenobjekte in Programmen verwenden, um viele verschiedene Elementtypen im Auge zu behalten. Eine Liste kann Zahlen, Wahr/Falsch-Werte, Text oder andere Objekte enthalten. Sie können auch ein Listenobjekt verwenden, das andere Listenobjekte enthält. Die Bestandteile der Liste werden als „Elemente“ bezeichnet, und jede Liste enthält nur einen Typ von Element. Eine Liste für Zahlen kann somit nur Zahlen enthalten. Sie können einer solchen Liste keinen Text hinzufügen. Ebenso ist es nicht möglich, einer Liste mit Wahr/Falsch-Werten Zahlen hinzuzufügen.
 
-     Wenn Sie ein `List`-Objekt mit einer `new`-Anweisung erstellen, müssen Sie die Art von Daten angeben, die in der Liste gespeichert werden soll. Aus diesem Grund zeigt die QuickInfo oben im **IntelliSense**-Fenster den Typ der Elemente in der Liste an. `List<string>` (in Visual C#) und `List(Of String)` (in Visual Basic) gibt an: Es handelt sich um ein `List`-Objekt, das Datenelemente vom Typ `string` enthält. Das Programm speichert Text als Zeichenfolge. Diese Information steht in der QuickInfo rechts im **IntelliSense**-Fenster.
+     Wenn Sie ein `List`-Objekt mit einer `new`-Anweisung erstellen, müssen Sie die Art von Daten angeben, die in der Liste gespeichert werden soll. Aus diesem Grund zeigt die QuickInfo oben im **IntelliSense**-Fenster den Typ der Elemente in der Liste an. Dies bedeuten auch `List<string>` (in Visual C#) und `List(Of String)` (in Visual Basic): Hierbei handelt es sich um ein `List`-Objekt, das Elemente des Datentyps `string` enthält. Das Programm speichert Text als Zeichenfolge. Diese Information steht in der QuickInfo rechts im **IntelliSense**-Fenster.
 
 4.  Überlegen Sie, warum in Visual Basic zuerst ein temporäres Array erstellt werden muss, während die Liste in Visual C# mit einer Anweisung erstellt werden kann. Der Grund ist, dass die Sprache Visual C# über *Auflistungsinitialisierer* verfügt, mit deren Hilfe die Liste zur Aufnahme von Werten vorbereitet wird. In Visual Basic können Sie einen Auflistungsinitialisierer verwenden. Um jedoch die Kompatibilität mit der früheren Version von Visual Basic sicherzustellen, empfiehlt sich die Verwendung des oben angegebenen Codes.
 
@@ -54,6 +52,6 @@ In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das S
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufällig ausgewählten Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).
 
 -   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

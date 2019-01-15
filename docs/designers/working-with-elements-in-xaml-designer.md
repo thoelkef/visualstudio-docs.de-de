@@ -2,7 +2,6 @@
 title: Arbeiten mit Elementen im XAML-Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922598"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML, im Code oder mit dem XAML-Designer hinzufügen. Dieses Thema beschreibt, wie Elemente im XAML-Designer in Visual Studio oder in Blend für Visual Studio verwendet werden.

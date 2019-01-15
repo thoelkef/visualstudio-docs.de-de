@@ -2,7 +2,6 @@
 title: 'Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852913"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
@@ -34,7 +33,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
  Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt „Generieren von unsignierten Manifesten“ in diesem Dokument.
 
- Weitere Informationen zum Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen bzw. privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt nur Schlüsseldateien für den privaten Informationsaustausch mit der Erweiterung *.pfx*. Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
@@ -112,6 +111,6 @@ Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen option
 ## <a name="see-also"></a>Siehe auch
 
 - [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Vorgehensweise: Erstellen eines Schlüsselpaars aus einem öffentlichen und einem privaten Schlüssel](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Seite „Signierung“, Projekt-Designer](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)

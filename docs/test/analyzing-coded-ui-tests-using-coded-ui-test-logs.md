@@ -2,19 +2,18 @@
 title: Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944959"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -22,7 +21,7 @@ Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Schritt 1: Aktivieren der Protokollierung
+## <a name="step-1-enable-logging"></a>Schritt 1: Protokollierung aktivieren
 
 Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des Protokolls:
 

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917146"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile
 Zum Anzeigen von Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (*PDB*) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:  

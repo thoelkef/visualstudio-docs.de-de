@@ -2,7 +2,6 @@
 title: Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876785"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
@@ -38,7 +37,7 @@ Wenn diese Option aktiviert ist, wird eine vertikale Scrollleiste angezeigt, mit
 
 Wählen Sie aus, ob die vertikale Scrollleiste die folgenden Anmerkungen anzeigen soll:
 
-- Änderungen
+- wird geändert
 - Markierungen
 - Fehler
 - Position der Einfügemarke
@@ -65,4 +64,4 @@ Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, spr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Anpassen der Scrollleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Vorgehensweise: Anpassen der Bildlaufleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)

@@ -1,8 +1,6 @@
 ---
 title: Filtern von Berichtsansichten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986374"
 ---
 # <a name="filter-report-views"></a>Filtern von Berichtsansichten
 Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberichtansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken. Sie können einen Bericht auf die Daten zwischen Zeitstempelwerten einschränken, Sie können die Daten aber auch auf bestimmte Prozesse und Threads einschränken. Sie können Filter in einer Datei speichern und dann durch Importieren des gespeicherten Filters einen Filter für eine andere Profilerstellungs-Datendatei erstellen.  
   
- Mithilfe der grafischen Zeitachse in der Zusammenfassungsansicht können Sie einen Bericht auch auf ein Zeitsegment beschränken. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Mithilfe der grafischen Zeitachse in der Zusammenfassungsansicht können Sie einen Bericht auch auf ein Zeitsegment beschränken. Weitere Informationen finden Sie unter [How to: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Weitere Informationen zum Ausschließen von System- und Drittanbietercode aus einem Bericht finden Sie unter [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).  
+ Wenn Sie System- und Drittanbietercode aus einem Bericht ausschließen möchten, finden Sie entsprechende Informationen unter [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Verfahren  
   
@@ -36,7 +34,7 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 2.  Für jede Klausel, die Sie einem Filter hinzufügen möchten, wählen Sie Werte in den folgenden Feldern einer Zeile aus oder geben diese ein.  
   
-    |Feld|Beschreibung |  
+    |Feld|Beschreibung|  
     |-----------|-----------------|  
     |**Und/Oder**|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
     |**Feld**|Wählen Sie das in der Filterklausel zu verwendende Berichtsfeld in der angezeigten Liste der Datenfelder aus.|  

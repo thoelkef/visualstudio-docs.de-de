@@ -2,7 +2,6 @@
 title: Einführung in WPF
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955291"
 ---
 # <a name="wpf-overview"></a>WPF-Übersicht
 
@@ -91,16 +90,16 @@ Der Hauptzweck einer Anwendung besteht darin, die Funktionalität zu implementie
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +116,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 In diesem Beispiel wird im CodeBehind eine Klasse implementiert, die aus der <xref:System.Windows.Window> -Klasse abgeleitet wird. Das `x:Class` -Attribut wird verwendet, um den Markupcode mit der CodeBehind-Klasse zu verknüpfen. `InitializeComponent` wird vom Konstruktor der CodeBehind-Klasse aufgerufen, um die im Markup definierte Benutzeroberfläche mit der CodeBehind-Klasse zusammenzuführen. (`InitializeComponent` wird bei der Erstellung der Anwendung automatisch generiert, weshalb eine manuelle Implementierung daher nicht notwendig ist.) Mit der Kombination von `x:Class` und `InitializeComponent` wird sichergestellt, dass Ihre Implementierung jedes Mal, wenn sie erstellt wird, ordnungsgemäß initialisiert wird. In der CodeBehind-Klasse wird außerdem ein Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click>-Ereignis der Schaltfläche implementiert. Wird auf die Schaltfläche geklickt, zeigt der Ereignishandler ein Meldungsfeld an, indem er die <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> -Methode aufruft.
@@ -209,7 +208,7 @@ Das Layoutsystem wird untergeordneten Steuerelementen über WPF-Basisklassen ver
 
 - <xref:System.Windows.Controls.WrapPanel>: Untergeordnete Steuerelemente werden der Reihe nach von links nach rechts angeordnet und, wenn sich in der jeweiligen Zeile mehr Steuerelemente befinden, als der Platz zulässt, ggf. auf die nächste Zeile umbrochen.
 
-Im folgenden Beispiel wird ein <xref:System.Windows.Controls.DockPanel> -Objekt verwendet, um ein Layout mit mehreren <xref:System.Windows.Controls.TextBox> -Steuerelementen zu erstellen.
+Im folgenden Beispiel wird ein <xref:System.Windows.Controls.DockPanel>-Objekt verwendet, um ein Layout mit mehreren <xref:System.Windows.Controls.TextBox>-Steuerelementen zu erstellen.
 
 [!code-xaml[IntroToWPFSnippets#LayoutMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_1.xaml)]
 
@@ -575,7 +574,7 @@ Im folgenden Beispiel wird eine gemeinsame Hintergrundfarbe festgelegt, die für
 </Window>
 ```
 
-In diesem Beispiel wird mit dem `Window.Resources`-Eigenschaftenelements eine Ressource für die Hintergrundfarbe implementiert. Diese Ressource ist für alle untergeordneten Elemente des <xref:System.Windows.Window>-Elements verfügbar. Es gibt eine Vielzahl von Ressourcenbereichen, von denen einige nachfolgend in der Reihenfolge aufgeführt sind, in der sie aufgelöst werden:
+In diesem Beispiel wird mit dem `Window.Resources` -Eigenschaftenelements eine Ressource für die Hintergrundfarbe implementiert. Diese Ressource ist für alle untergeordneten Elemente des <xref:System.Windows.Window>-Elements verfügbar. Es gibt eine Vielzahl von Ressourcenbereichen, von denen einige nachfolgend in der Reihenfolge aufgeführt sind, in der sie aufgelöst werden:
 
 1.  Ein einzelnes Steuerelement (über die geerbte <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> -Eigenschaft)
 

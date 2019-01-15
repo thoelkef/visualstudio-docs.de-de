@@ -1,8 +1,6 @@
 ---
 title: Objektlebensdaueransicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8175a8337f15517e0b9c88ae3f5405148a4b22b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934968"
 ---
 # <a name="object-lifetime-view"></a>Objektlebensdaueransicht
 Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET object lifetime data** (Lebensdauerinformationen für .NET-Objekt ebenfalls erfassen) auf den Eigenschaftenseiten zur **Leistungssitzung** aktiviert ist.  
@@ -34,7 +32,7 @@ Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET 
   
 ## <a name="general"></a>Allgemein  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Klassenname**|Der Klassenname des zugeordneten Typs.|  
 |**Prozess-ID**|Die Prozess-ID der Profilerstellung.|  
@@ -45,7 +43,7 @@ Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET 
 ## <a name="instance-data"></a>Instanzdaten  
  Die Instanzdaten geben die Anzahl von Objekten des Typs an, die während der Profilerstellung erstellt wurden, sowie die Generation, in der die Objekte vom Garbage Collector freigegeben wurden.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Instanzen**|Die Anzahl der Objektzuordnungen von diesem Typ.|  
 |**Instanzen gesamt in Prozent**|Der Anteil der gesamten Zuordnungen, die während der Profilerstellung vorgenommen wurden.|  
@@ -57,7 +55,7 @@ Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET 
 ## <a name="size-byte-data"></a>Größendaten (Byte)  
  Die Größendaten (Byte) geben die Größe der Objekte des Typs an, die während der Profilerstellung erstellt wurden sowie die Menge des Arbeitsspeichers, die in jeder Generation freigegeben wurde, in der die Objekte freigegeben wurden.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Zugeordnete Bytes insgesamt**|Die Gesamtanzahl von Bytes für alle Instanzen des Typs.|  
 |**Bytes gesamt in Prozent**|Der Anteil der gesamten zugeordneten Bytes während der Profilerstellung, die Instanzen von diesem Typ zugeordnet wurden.|  
@@ -68,7 +66,7 @@ Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET 
 ## <a name="large-object-heap-data"></a>Heapdaten für große Objekte  
  Die .NET-Speicherbelegungsfunktion verwaltet große Objekte an einem Speicherort, der vom standardmäßig verwalteten Heap getrennt ist. Heapdaten für große Objekte geben die Anzahl und Größe von Objekten des Typs an, die an diesem Speicherort verwaltet wurden.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Erfasste Heapinstanzen für große Objekte**|Die Anzahl der Instanzen von diesem Typ, die sich im Heap für große Objekte befanden und während der Profilerstellung erfasst wurden.|  
 |**Erfasste Heapbytes für große Objekte**|Die Größe der Instanzen von diesem Typ in Byte, die sich im Heap für große Objekte befanden und während der Profilerstellung erfasst wurden.|  

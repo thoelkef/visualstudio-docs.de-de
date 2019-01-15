@@ -1,8 +1,6 @@
 ---
 title: Exec-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959247"
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
 Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.  
@@ -33,7 +31,7 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie *program.exe*, *runprogram.bat* oder *setup.msi*.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|  
 |`ConsoleOutput`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Jede Elementausgabe stellt eine Zeile der Standardausgabe oder einen Standardfehlerstream dar, der vom Tool ausgegeben wird. Dies wird nur erfasst, wenn `ConsoleToMsBuild` auf `true` festgelegt ist.|
@@ -47,7 +45,7 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 |`Outputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgabeelemente aus der Aufgabe. Die `Exec`-Aufgabe legt diese nicht selbst fest. Stattdessen können Sie sie so bereitstellen, als ob die Aufgabe sie festgelegt hätte, damit sie später im Projekt verwendet werden können.|  
 |`StdErrEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Fehlerdatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|  
 |`StdOutEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Ausgabedatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|  
-|`WorkingDirectory`|Optionaler `String` -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem der Befehl ausgeführt wird.<br /><br />Standardwert: Das aktuelle Arbeitsverzeichnis des Projekts.|  
+|`WorkingDirectory`|Optionaler `String` -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem der Befehl ausgeführt wird.<br /><br />Standardeinstellung: Das aktuelle Arbeitsverzeichnis des Projekts.|  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Aufgabe ist nützlich, wenn eine bestimmte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe für den Auftrag, den Sie ausführen möchten, nicht verfügbar ist. Im Gegensatz zu einer spezifischeren Aufgabe kann die `Exec`-Aufgabe jedoch keine zusätzliche Verarbeitung oder bedingten Vorgänge durchführen, die auf dem Ergebnis des Tools oder des Befehls basieren, das bzw. der von dieser ausgeführt wird.

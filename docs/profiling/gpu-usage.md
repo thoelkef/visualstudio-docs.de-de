@@ -1,20 +1,18 @@
 ---
 title: GPU-Nutzung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941085"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 
@@ -100,17 +98,17 @@ Filtern Sie den GPU-Nutzungsbericht nach Prozessnamen, Thread-IDs und dem Ereign
 
  Nachstehend finden Sie weitere Details:
 
-|Filtersteuerelement|Beschreibung |
+|Filtersteuerelement|Beschreibung|
 |--------------------|-----------------|
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie mit diesen Informationen bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|
-|**Display**|Die Anzahl von Anzeigen, deren Aktualisierungsrate angezeigt wird. **Hinweis:** Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzige große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|
+|**Anzeige**|Die Nummer der Anzeige, deren Aktualisierungsrate angezeigt wird. **Hinweis:**  Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzelne, große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|
 |**Filter**|Die Schlüsselwörter, die Sie interessieren. Der untere Bereich des Berichts beinhaltet nur die Ereignisse, die mit einem Schlüsselwort ganz oder teilweise übereinstimmen. Sie können mehrere Schlüsselwörter durch Semikolons (;) getrennt angeben.|
 |**Hierarchische Sortierung**|Ein Kontrollkästchen, das angibt, ob durch Benutzermarkierungen definierte  Ereignishierarchien beibehalten oder ignoriert werden.|
 
  Die Liste der Ereignisse im unteren Bereich des GPU-Nutzungsberichts enthält detaillierte Informationen zu jedem Ereignis.
 
-|Spalte|Beschreibung |
+|Spalte|Beschreibung|
 |------------|-----------------|
 |**Ereignisname**|Der Name des Grafikereignisses. Ein Ereignis entspricht in der Regel einem Ereignis auf einer CPU-Threadzeitachse und einem Ereignis auf einer GPU-Zeitachse.<br /><br /> Ereignisnamen weisen möglicherweise keine Attribute auf, wenn die GPU-Nutzung nicht den Namen eines Ereignisses bestimmen konnte. Weitere Informationen finden Sie unter dieser Tabelle.|
 |**CPU-Start (ns)**|Die Zeit, zu der das Ereignis auf der CPU durch Aufrufen einer Direct3D-API initiiert wurde. Die Zeit wird in Nanosekunden relativ zum Start der Anwendung gemessen.|

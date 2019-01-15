@@ -2,7 +2,6 @@
 title: Erstellen einer Benutzeroberfläche mit XAML-Designer
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880404"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 
@@ -201,4 +200,4 @@ Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der
 
 - [Arbeiten mit Elementen im XAML-Designer](../designers/working-with-elements-in-xaml-designer.md)
 - [So erstellen Sie eine Ressource und wenden Sie an](../designers/how-to-create-and-apply-a-resource.md)
-- [Exemplarische Vorgehensweise: Binden an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

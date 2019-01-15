@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcbee1d5339405d21b7b61ca5db35815568983b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910947"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.
 
 > [!NOTE]
-> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>So erstellen Sie ein Projekt und legen Eigenschaften für ein Formular fest
 
@@ -173,6 +171,6 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).
 
--   Um zum Übersichtsthema zurückzukehren, klicken Sie auf [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Um zum Übersichtsthema zurückzukehren, beachten Sie [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).

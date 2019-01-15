@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders'
+title: 'Vorgehensweise: Erstellen eines Standard-Phong-Shaders'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3120142b2d6fae7c8ee02c81f6ae76efb0aaaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934121"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Vorgehensweise: Erstellen eines Standard-Phong-Shaders
 
@@ -25,11 +24,11 @@ In diesem Artikel wird veranschaulicht, wie der Shader-Designer und die Directed
 
 Das Phong-Beleuchtungsmodell erweitert das Lambert-Beleuchtungsmodell, indem es Glanzlichter hinzufügt, die die reflektierenden Eigenschaften einer Oberfläche simulieren. Die glänzende Komponente sorgt für zusätzliche Beleuchtung aus den gleichen diffusen Lichtquellen, die im Lambert-Beleuchtungsmodell verwendet werden. Jedoch wird sein Beitrag zur endgültigen Farbe unterschiedlich verarbeitet. Aufgrund der Beziehung zwischen der Blickrichtung, der Richtung der Lichtquellen und der Ausrichtung der Oberfläche, wirken sich Glanzlichter auf jede Oberfläche in der Szene unterschiedlich aus. Es ist ein Produkt aus der glänzenden Farbe, der Glanzkraft und Ausrichtung der Oberfläche sowie der Farbe, Intensität und Ausrichtung der Lichtquelle. Oberflächen, die die Lichtquelle direkt auf den Betrachter reflektieren, erhalten die maximale Glanzwirkung, während Oberflächen, die die Lichtquelle vom Betrachter weglenken, keine Wirkung erhalten. Unter dem Phong-Beleuchtungsmodell werden eine oder mehrere glänzende Komponenten kombiniert, um die Farbe und Intensität des Glanzlichts für jeden Punkt auf dem Objekt festzulegen und werden anschließend zum Ergebnis des Lambert-Beleuchtungsmodells hinzugefügt, um die endgültige Farbe des Pixels zu erzeugen.
 
-Weitere Informationen zum Lambert-Beleuchtungsmodell finden Sie unter [Vorgehensweise: Erstellen eines Standard-Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
+Weitere Informationen zum Lambert-Beleuchtungsmodell finden Sie unter [Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1. Erstellen Sie einen Lambert-Shader wie es unter [Vorgehensweise: Erstellen eines Standard-Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md) beschrieben wird.
+1. Erstellen Sie einen Lambert-Shader wie dies unter [Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md) beschrieben wird.
 
 2. Trennen Sie den Knoten **Lambert** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Lambert** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 

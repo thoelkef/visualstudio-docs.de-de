@@ -1,8 +1,6 @@
 ---
 title: SetThreadCount | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 apiname:
 - SetThreadCount
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 13e7e2bb1ecabc67f60da7b2d4c68b413fa9cf92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844365"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Legt die Anzahl der globalen Threads fest, und weist diese Anzahl für dem aktuellen Thread zu.  

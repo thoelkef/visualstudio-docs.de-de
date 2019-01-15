@@ -2,7 +2,6 @@
 title: Befehlszeilenoptionen für VSTest.Console.exe
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -12,12 +11,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870754"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -32,7 +31,7 @@ ms.locfileid: "51220969"
 
 In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mit einer kurzen Beschreibung aufgeführt. Durch Eingabe von `VSTest.Console/?` in eine Befehlszeile wird eine ähnliche Zusammenfassung ausgegeben.
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
 |**[*Testdateinamen*]**|Führt Tests auf Grundlage der angegebenen Dateien aus. Trennt mehrere Testdateinamen durch Leerzeichen.<br />Beispiele: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings: [*Dateiname*]**|Führen Sie Tests mit zusätzlichen Einstellungen wie Datensammlern aus.<br />Ein Beispiel: `/Settings:Local.RunSettings`|

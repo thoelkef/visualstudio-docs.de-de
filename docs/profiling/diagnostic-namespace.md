@@ -1,8 +1,6 @@
 ---
 title: diagnostic-Namespace | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839442"
 ---
 # <a name="diagnostic-namespace"></a>Diagnostic-Namespace
 Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.  
@@ -34,14 +32,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Klassen  
   
-|name|description|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_series-Klasse](../profiling/marker-series-class.md)|Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.|  
 |[span-Klasse](../profiling/span-class.md)|Definiert eine Phase der Anwendung.|  
   
 ### <a name="enumerations"></a>Enumerationen  
   
-|name|description|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_importance-Enumeration](../profiling/marker-importance-enumeration.md)|Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.|  
   

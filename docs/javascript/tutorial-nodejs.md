@@ -1,9 +1,7 @@
 ---
 title: Erstellen einer Node.js- und Express-App
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
-ms.custom: ''
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: d366816df1247c5e0c09a5cc714fb8daaa831968
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927492"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://visualstudio.microsoft.com) gratis herunterladen.
@@ -51,7 +49,7 @@ Express ist ein Webanwendungsframework, das für Node.js als Serverframework zum
 
 * Sie müssen Visual Studio 2017 und die Workload für die Node.js-Entwicklung installiert haben.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
 
     Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 

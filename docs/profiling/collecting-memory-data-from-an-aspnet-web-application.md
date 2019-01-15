@@ -1,8 +1,6 @@
 ---
 title: Sammeln von Speicherdaten aus einer ASP.NET-Webanwendung über die Profiler-Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: c99ca461acc51697a8c5b654f5b350149ac76c09
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 9772961d8ebd7b91b75886d7c5fa9cafbf76cfae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902866"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten aus einer ASP.NET-Webanwendung über die Profiler-Befehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Speicherbelegungs- und Objektlebensdauerdaten für eine ASP.NET-Webanwendung mithilfe des Befehls **VSPerfCmd** in der Befehlszeile beschrieben.  
@@ -32,7 +30,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen für das Sammeln von Spei
 |----------|---------------------|  
 |**Anfügen des Profilers an eine aktive ASP.NET-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentieren statisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer statisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|  
-|**Instrumentieren dynamisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profiler-Befehlszeile](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|  
+|**Instrumentieren dynamisch kompilierter Binärdateien**|-   [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben
   

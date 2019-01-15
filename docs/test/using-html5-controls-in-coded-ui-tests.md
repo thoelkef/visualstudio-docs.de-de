@@ -2,19 +2,18 @@
 title: Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883025"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 
@@ -34,7 +33,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
 ## <a name="audio-control"></a>Audio-Steuerelement
 
-**Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
+**Audio-Steuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
 
 ![HTML5-Audiosteuerelement](../test/media/codedui_html5_audio.png)
 

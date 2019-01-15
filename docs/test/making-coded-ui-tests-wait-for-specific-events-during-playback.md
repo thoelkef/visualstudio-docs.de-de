@@ -2,19 +2,18 @@
 title: Festlegen, dass Tests der programmierten UI auf bestimmte Ereignisse warten
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850913"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
@@ -27,7 +26,7 @@ Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass
 Visual Studio Enterprise
 
 > [!TIP]
-> Sie können mithilfe des Test-Editors der programmierten UI zudem Verzögerungen vor Aktionen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Editors für Tests der programmierten UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Sie können mithilfe des Test-Editors der programmierten UI zudem Verzögerungen vor Aktionen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Test-Editors der programmierten UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 **UITestControl.WaitForControlXXX()-Methoden**
 

@@ -2,7 +2,6 @@
 title: 'Vorgehensweise: Verteilen von Codeausschnitten'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836061"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Vorgehensweise: Verteilen von Codeausschnitten
 
@@ -103,7 +102,7 @@ In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemp
 
 4. Speichern Sie den Ausschnitt. Öffnen Sie in der experimentellen Instanz ein Visual Basic-Projekt, und öffnen Sie dann eine der Codedateien. Platzieren Sie den Cursor an einer beliebigen Stelle im Code, klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü den Befehl **Ausschnitt einfügen**.
 
-5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Es sollte ein Popupfenster **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:
+5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Daraufhin sollte das Popupelement **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:
 
     ```vb
     Console.WriteLine("Hello, World!")

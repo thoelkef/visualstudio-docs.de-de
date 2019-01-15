@@ -3,7 +3,6 @@ title: Barrierefreiheitsfeatures in Visual Studio
 description: Erfahren Sie mehr über die Features und Hilfsprogramme, durch die die Windows-Betriebssysteme und die Visual Studio-Entwicklersuite für alle Benutzer, einschließlich Personen mit Behinderungen, leichter verwendet werden können.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866477"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
 

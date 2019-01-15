@@ -1,9 +1,7 @@
 ---
-title: 'Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat'
-ms.custom: ''
+title: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b4e8085c3ff3de8037827769331eac83325ff8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3d06338a92722b6e969d45960eb449b0a6dcf2a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930920"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat
 Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätzliche Funktion. Das Spiel soll enden, wenn der Spieler gewonnen hat. Sie müssen also eine `CheckForWinner()`-Methode hinzufügen, mit der überprüft wird, ob der Spieler gewonnen hat.
 
 ## <a name="to-add-a-method-to-verify-whether-the-player-won"></a>So fügen Sie eine Methode hinzu, mit der überprüft wird, ob der Spieler gewonnen hat
@@ -42,6 +40,6 @@ Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätz
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um zum nächsten Tutorialschritt zu wechseln, klicken Sie auf [Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md).
 
--   Wenn Sie zum vorherigen Tutorialschritt zurückkehren möchten, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).

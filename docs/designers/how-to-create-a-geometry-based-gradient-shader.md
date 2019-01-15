@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders'
+title: 'Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c690aa0b18969dd3a832550789a65db01d61f08e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831861"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlaufshaders
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders
 
 In diesem Artikel wird erläutert, wie der Shader-Designer und die Directed Graph Shader Language zum Erstellen eines geometriebasierten Farbverlauf-Shaders verwendet wird. Dieser Shader skaliert einen konstanten RGB-Farbwert anhand der Höhe von jedem Punkt eines Objekts im Raum.
 

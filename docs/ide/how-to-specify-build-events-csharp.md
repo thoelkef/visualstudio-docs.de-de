@@ -2,7 +2,6 @@
 title: 'Vorgehensweise: Angeben von Buildereignissen (C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964675"
 ---
 # <a name="how-to-specify-build-events-c"></a>Vorgehensweise: Angeben von Buildereignissen (C#)
 
@@ -189,5 +188,5 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 - [Seite „Buildereignisse“, Projekt-Designer (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Pre-build Event/Post-build Event command line dialog box (Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

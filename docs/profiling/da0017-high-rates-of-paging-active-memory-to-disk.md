@@ -1,8 +1,6 @@
 ---
 title: 'DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.17
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6128e5f98efe2a5ef29ffff407918be5d925c75b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d7dc552119390660dcc70e8fb670918e357a2d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864776"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger
 
@@ -39,7 +37,7 @@ ms.locfileid: "49824346"
 ## <a name="rule-description"></a>Regelbeschreibung  
 
 > [!NOTE]
->  Diese Informationsregel wird ausgelöst, wenn die Auslagerung des aktiven Speichers ein hohes Maß erreicht. Bei Erreichen eines äußerst hohen Auslagerungsaufkommens wird stattdessen die Warnregel [DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) ausgelöst.  
+>  Diese Informationsregel wird ausgelöst, wenn die Auslagerung des aktiven Speichers ein hohes Maß erreicht. Bei einem äußerst hohen Maß an Paging wird stattdessen die Warnregel [DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) ausgelöst.  
 
  Eine übermäßige Auslagerung auf den Datenträger kann auf einen zu kleinen physischen Speicher zurückzuführen sein. Wenn der physische Datenträger, auf dem sich die Auslagerungsdatei befindet, hauptsächlich für Auslagerungsvorgänge verwendet wird, kann dies zu einer Verlangsamung anderer anwendungsorientierter Datenträgervorgänge auf diesem Datenträger führen.  
 

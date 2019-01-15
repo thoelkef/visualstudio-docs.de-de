@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Ausschließen von Dateien vom Buildvorgang | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833276"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang
 Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in einem Verzeichnis oder einer geschachtelten Gruppe von Verzeichnissen als Eingaben für einen Buildvorgang einzuschließen. Möglicherweise gibt es jedoch eine Datei im Verzeichnis oder ein Verzeichnis in einer geschachtelten Gruppe von Verzeichnissen, die nicht als Eingabe für einen Buildvorgang eingeschlossen werden sollen. Sie können diese Datei oder dieses Verzeichnis explizit aus der Liste der Eingaben ausschließen. Vielleicht gibt es auch eine Datei in einem Projekt, das Sie nur unter bestimmten Umständen miteinbeziehen wollen. Sie können die Bedingungen explizit deklarieren, unter denen eine Datei in einem Buildvorgang enthalten ist.  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Ausschließen einer Datei oder eines Verzeichnisses aus den Eingaben für einen Buildvorgang  
- Elementlisten sind die Eingabedateien für einen Buildvorgang. Die Elemente, die Sie einschließen möchten, werden entweder einzeln oder als Gruppe mithilfe des Attributs `Include` deklariert. Zum Beispiel:  
+ Elementlisten sind die Eingabedateien für einen Buildvorgang. Die Elemente, die Sie einschließen möchten, werden entweder einzeln oder als Gruppe mithilfe des Attributs `Include` deklariert. Beispiel:  
   
 ```xml  
 <CSFile Include="Form1.cs"/>  

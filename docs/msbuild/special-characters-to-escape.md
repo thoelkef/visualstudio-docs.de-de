@@ -1,8 +1,6 @@
 ---
 title: Sonderzeichen mit Escapezeichen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57316904aa1075484a4d33c6e2259586c88fe78
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc3c69553912a8881e56c5b33d5d5afa3ef5e4fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847112"
 ---
 # <a name="special-characters-to-escape"></a>Sonderzeichen mit Escapezeichen
 Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine besondere Bedeutung in dem Kontext haben, in dem sie verwendet werden. Beispielsweise ist das Sternchen (*) nur in den "Include"- und "Exclude"-Attributen einer Elementdefinition oder in einem Aufruf von <xref:Microsoft.Build.Tasks.CreateItem> ein Sonderzeichen. In allen anderen Fällen wird das Sternchen als einfaches Sternchen behandelt. Obwohl sie Sternchen nicht überall in Projektdateien mit Escapezeichen versehen müssen, kann dies auch nicht schaden.  
@@ -32,7 +30,7 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
   
  Es folgt die vollständige Liste der Sonderzeichen mit Escapezeichen:  
   
-|Zeichen|Beschreibung |  
+|Zeichen|Beschreibung|  
 |---------------|-----------------|  
 |%|Prozentzeichen, für Verweise auf Metadaten verwendet.|  
 |$|Dollarzeichen, für Verweise auf Eigenschaften verwendet.|  

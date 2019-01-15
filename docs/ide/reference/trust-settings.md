@@ -6,7 +6,6 @@ ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 17b204a54e2ecd52438f6a05f5190a6ee0f396f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955606"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Konfigurieren von Vertrauenseinstellungen für Dateien und Ordner
 
@@ -37,11 +36,11 @@ Führen Sie die folgenden Schritte aus, um Vertrauenseinstellungen zu ändern:
 
 2. Wählen Sie die Ebene der Überprüfungen für Dateien und Ordner aus. Für jede Datei bzw. jeden Ordner können Sie verschiedene Überprüfungen einrichten. Folgende Optionen stehen zur Verfügung:
 
-   * **Keine Überprüfung:** Visual Studio führt keine Überprüfungen aus.
+   * **Keine Überprüfung**: Visual Studio führt keine Überprüfungen aus.
 
-   * **MOTW-Attribut überprüfen:** Wenn die Datei oder der Ordner über das MOTW-Attribut verfügt, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
+   * **MOTW-Attribut überprüfen**: Wenn die Datei oder der Ordner über das MOTW-Attribut verfügt, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
 
-   * **Vertrauenswürdigkeit des Pfads überprüfen:** Wenn die Datei oder der Pfad nicht Teil der Liste **Vertrauenswürdige Pfade** ist, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
+   * **Vertrauenswürdigkeit des Pfads überprüfen**: Wenn die Datei oder der Pfad nicht Teil der Liste **Vertrauenswürdige Pfade** ist, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
 
    ![Optionen für die Überprüfung der Vertrauenswürdigkeit](media/trust-settings.png)
 

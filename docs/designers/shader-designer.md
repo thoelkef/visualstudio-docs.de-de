@@ -2,7 +2,6 @@
 title: Shader-Designer
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968539"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -83,7 +82,7 @@ So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
 In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|Beschreibung |
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|
 |**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
@@ -98,7 +97,7 @@ In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste
 |**Vorschau mit Ebene**|Wenn diese aktiviert ist, wird ein Modell einer Ebene für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird.<br /><br /> **Mit D3D11 rendern**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Mit D3D11WARP rendern**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Framerate**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
 
 > [!TIP]
 > Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.
@@ -147,12 +146,12 @@ Die folgende Tabelle enthält die Shaderparameter, die Sie ändern können:
 
 |Parameter|Eigenschaften|
 |---------------|----------------|
-|**Textur 1** - **Textur 8**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
-|**Material (Umgebung)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
-|**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|
-|**Material (Selbstleuchtend)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
-|**Material (Glanz)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
-|**Material (Glanzkraft)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
+|**Textur 1** - **Textur 8**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
+|**Material (Umgebung)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
+|**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**:  Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|
+|**Material (Selbstleuchtend)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
+|**Material (Glanz)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
+|**Material (Glanzkraft)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
 
 #### <a name="time-based-effects"></a>Zeitbasierte Effekte
 
@@ -201,7 +200,7 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie beim Arbeiten mit Texturen, Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|

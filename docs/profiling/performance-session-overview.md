@@ -1,8 +1,6 @@
 ---
 title: Übersicht über Leistungssitzungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867172"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entwickler, die wenig Erfahrung mit Leistungsarbeit haben, werden lernen, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ihnen helfen, schnell produktiv zu werden und die Leistung ihres Codes zu steigern. Entwickler, die bereits Erfahrung mit der Profilerstellung haben, erhalten eine Übersicht über besondere Features und Vorgänge der Profilerstellungstools.  
@@ -77,4 +75,4 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)
+ [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

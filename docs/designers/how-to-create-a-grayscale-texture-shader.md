@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen eines Graustufentextur-Shaders'
+title: 'Vorgehensweise: Erstellen eines Graustufentextur-Shaders'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933540"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Vorgehensweise: Erstellen eines Graustufentexturshaders
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Vorgehensweise: Erstellen eines Graustufentextur-Shaders
 
 In diesem Artikel wird veranschaulicht, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Graustufentextur-Shaders verwendet werden. Dieser Shader verändert die RGB-Farbwerte des Textursamples und verwendet es anschließend zusammen mit dem unveränderten Alphawert, um die endgültige Farbe festzulegen.
 
@@ -27,7 +26,7 @@ Sie können einen Graustufentextur-Shader implementieren, indem Sie den Farbwert
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1.  Erstellen Sie wie unter [Vorgehensweise: Erstellen eines Basistexturshaders](../designers/how-to-create-a-basic-texture-shader.md) beschrieben einen Basistexturshader.
+1.  Erstellen Sie einen Basistexturshader wie unter [Vorgehensweise: Erstellen eines Basistexturshaders](../designers/how-to-create-a-basic-texture-shader.md) beschrieben.
 
 2.  Trennen Sie das Terminal **RGB** des Knotens **Textursample** vom Terminal **RGB** des Knotens **Endgültige Farbe**. Klicken Sie im Modus **Auswählen** auf das Terminal **RGB** des Knotens **Textursample** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 
@@ -53,6 +52,6 @@ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. W
 
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
-- [Bildbearbeitung](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [Shader-Designer](../designers/shader-designer.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

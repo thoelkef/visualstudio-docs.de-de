@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)'
+title: 'Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916292"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Vorgehensweise: Kopieren von Elementen des Klassendiagramms in ein Microsoft Office-Dokument
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument
 
 Sie können Formen aus einem .NET-Klassendiagramm (*CD*-Datei) in andere Dokumente kopieren. Entweder erhalten Sie eine Kopie der Form oder den zugrunde liegenden Code, basierend auf dem Typ des Dokuments, in das Sie sie eingefügt haben. Informationen zum Kopieren von Formen aus UML-Klassendiagrammen in ein Modellierungsprojekt finden Sie unter [Exportieren von Bildern eines Diagramms](../../modeling/export-diagrams-as-images.md).
 

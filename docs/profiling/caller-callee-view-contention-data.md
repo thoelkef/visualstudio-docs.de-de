@@ -1,8 +1,6 @@
 ---
 title: 'Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902905"
 ---
 # <a name="callercallee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten
 In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -28,7 +26,7 @@ In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine 
   
  **Funktionen, die von der aktuellen Funktion aufgerufen wurden** wird im unteren Raster angezeigt, und gibt Konfliktinformationen für die aufgerufene Funktion (untergeordnete Funktion) der ausgewählten Funktion an, als die untergeordnete Funktion von der aktuellen Funktion aufgerufen wurde.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Type**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Exklusive blockierte Zeit %**|– Bei einer aktuellen Funktion die Zeit, für die die Funktion vom Ausführen von Code im Funktionsrumpf abgehalten wurde. Dies umfasst nicht die blockierte Zeit für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einer aufrufenden Funktion der Anteil der exklusiven blockierten Zeit der aktuellen Funktion, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />– Bei einer aufgerufenen Funktion die Zeit, während der diese Funktion ihren eigenen Code nicht ausführen konnte, als diese Funktion von der aktuellen Funktion aufgerufen wurde. Dies umfasst nicht die blockierte Zeit für untergeordnete Funktionen, die von dieser aufgerufenen Funktion aufgerufen wurden.|  

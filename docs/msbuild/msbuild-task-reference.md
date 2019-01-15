@@ -1,8 +1,6 @@
 ---
 title: MSBuild-Aufgabenverweis | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 790d3e788fb04351fc379e8a4205e802c58516ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 77473f001d3d363309f1ac2403a146d0aa8124cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884723"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [Visual C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -30,10 +28,10 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
  Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt sind, verfügt jeder Task ebenfalls über folgende Parameter:  
 
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 |-------------------| - |
 | `Condition` | Optionaler `String` -Parameter.<br /><br /> Ein `Boolean`-Ausdruck, den die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine verwendet, um zu bestimmen, ob diese Aufgabe ausgeführt wird. Informationen zu den Bedingungen, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterstützt werden, finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Gewusst wie: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Aufgabenbasisklasse](../msbuild/task-base-class.md)  

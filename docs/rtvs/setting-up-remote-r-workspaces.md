@@ -3,19 +3,18 @@ title: Remotearbeitsbereiche für R
 description: Einrichten von R-Remotearbeitsbereichen und Herstellen von Verbindungen mit ihnen aus Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837783"
 ---
 # <a name="set-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 

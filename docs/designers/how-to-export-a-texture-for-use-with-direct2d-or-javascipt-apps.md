@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps'
+title: 'Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850838"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps
 
@@ -37,7 +36,7 @@ In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
 
 Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Direct2D-Renderingkonventionen entsprechen:
 
--   Direct2D implementiert Transparenz und Durchsichtigkeit, indem ein prämultipliziertes Alpha verwendet wird. Die mit Direct2D verwendeten Texturen müssen ein multipliziertes Alpha enthalten, selbst wenn für die Textur weder Transparenz noch Durchsichtigkeit verwendet wird. Weitere Informationen zu integrierten Alphakanälen finden Sie unter [Vorgehensweise: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+-   Direct2D implementiert Transparenz und Durchsichtigkeit, indem ein prämultipliziertes Alpha verwendet wird. Die mit Direct2D verwendeten Texturen müssen ein multipliziertes Alpha enthalten, selbst wenn für die Textur weder Transparenz noch Durchsichtigkeit verwendet wird. Weitere Informationen über prämultipliziertes Alpha finden Sie unter [Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 -   Die Textur muss im *DDS*-Format angegeben werden, indem eines dieser Blockkomprimierungsformate verwendet wird:
 
@@ -51,7 +50,7 @@ Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Dire
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>So erstellen Sie eine Textur, die mit den Renderingkonventionen von Direct2D kompatibel ist
 
-1. Beginnen Sie mit einer Standardtextur. Laden Sie ein vorhandenes Bild, oder erstellen Sie wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben ein neues. Um die Blockkomprimierung im *DDS*-Format zu unterstützen, geben Sie eine Textur an, deren Breite und Höhe ein Vielfaches von vier ist, beispielsweise 100x100, 128x128 oder 256x192. Da Mipmapping nicht unterstützt wird, muss die Textur nicht quadratisch und keine Potenz von zwei sein.
+1. Beginnen Sie mit einer Standardtextur. Laden Sie ein vorhandenes Bild, oder erstellen Sie ein Neues, wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben. Um die Blockkomprimierung im *DDS*-Format zu unterstützen, geben Sie eine Textur an, deren Breite und Höhe ein Vielfaches von vier ist, beispielsweise 100x100, 128x128 oder 256x192. Da Mipmapping nicht unterstützt wird, muss die Textur nicht quadratisch und keine Potenz von zwei sein.
 
 2. Konfigurieren Sie die Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die soeben erstellte Texturdatei, und wählen Sie dann **Eigenschaften** aus. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Stellen Sie sicher, dass die Eigenschaft **Inhalt** auf **JA** und die Option **Aus Build ausschließen** auf **NEIN** festgelegt ist. Wählen Sie dann die Schaltfläche **Übernehmen** aus. Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.
 

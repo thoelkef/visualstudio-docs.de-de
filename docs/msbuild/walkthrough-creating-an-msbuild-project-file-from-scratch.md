@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2efe3801639fb85e1331fc77cc27cbb42717a12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926108"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.  
@@ -139,10 +137,10 @@ Die minimale Projektdatei sollte dem folgenden Code ähneln:
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -232,7 +230,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -308,7 +306,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -392,7 +390,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
      **Das Ziel „Build“ wird übersprungen, da alle Ausgabedateien hinsichtlich der Eingabedateien aktuell sind.**  
   
-     **Eingabedateien: HelloWorld.cs**  
+     **en: HelloWorld.cs**  
   
      **Ausgabedateien: BinMSBuildSample.exe**  
   
@@ -400,7 +398,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung   
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  
@@ -438,7 +436,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung   
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  

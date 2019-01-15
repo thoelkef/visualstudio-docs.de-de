@@ -1,8 +1,6 @@
 ---
 title: Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profiler-Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 706e591a96cf5bdd1c13fb0775c8a91e3995cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871257"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profilerbefehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungsstatistiken für eine Clientanwendung (eigenständig) mit der Samplingmethode über die Befehlszeile beschrieben.  
@@ -31,8 +29,8 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungs
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
 |**Starten einer Anwendung mit der Profilerstellung**|-   [Vorgehensweise: Starten einer eigenständigen Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
-|**Anfügen des Profilers an eine aktive .NET Framework-Anwendung**|-   [How to: Attach the profiler to a .NET Framework application and collect application statistics (Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung und Sammeln von Anwendungsstatistiken)](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**Anfügen des Profilers an eine aktive C/C++-Anwendung**|-   [How to: Attach the profiler to a native application and collect application statistics (Vorgehensweise: Anfügen des Profilers an eine native Anwendung und Sammeln von Anwendungsstatistiken)](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
+|**Anfügen des Profilers an eine aktive .NET Framework-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine .NET Framework-Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
+|**Anfügen des Profilers an eine aktive C/C++-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine native Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
 |**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Verwandte Aufgaben  
@@ -54,4 +52,3 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungs
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für Samplingdaten  
  [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
-

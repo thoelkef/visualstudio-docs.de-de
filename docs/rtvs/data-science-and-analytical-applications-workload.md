@@ -3,7 +3,6 @@ title: Workload von Data Science und analytischen Anwendungen
 description: Die Visual Studio-Workload kombiniert Python, R, F# und die entsprechenden Laufzeitverteilungen einschließlich Anaconda miteinander.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ebaf77963968edd61aa0109c7b16964af7fac90c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891163"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installieren von Data Science-Unterstützung in Visual Studio
 
@@ -64,7 +63,7 @@ Wenn Sie Ihren Code dort ausführen, wo sich Ihre Daten bereits befinden, hat da
 
 - **Einfache Bereitstellung**: Sobald Sie ein R- oder Python-Modell fertiggestellt haben, können Sie es für die Produktion mühelos bereitstellen, indem Sie es in ein T-SQL-Skript einbetten. Sämtliche, in beliebigen Sprachen geschriebene SQL-Clientanwendungen können dann die Modelle und Informationen durch Aufruf einer gespeicherten Prozedur nutzen. Es sind keine bestimmten R- oder Python-Integrationen erforderlich.
 
-- **Leistung und Skalierung auf Unternehmensniveau**: Sie können die erweiterten Funktionen von SQL Server mit den leistungsstarken, skalierbaren APIs der Pakete „RevoScaleR“ und „RevoScalePy“nutzen, z.B. Indizes zur In-Memory-Speicherung von Tabellen und Spalten. Das Wegfallen der Datenverschiebung bedeutet auch, dass Sie Einschränkungen des Clientspeichers umgehen können, z.B. wenn sich ihre Datenmenge vergrößert oder Sie die Leistung der Anwendung erhöhen möchten.
+- **Leistung und Skalierung auf Unternehmensniveau**: Sie können die erweiterten Funktionen von SQL Server mit den leistungsstarken, skalierbaren APIs der Pakete „RevoScaleR“ und „RevoScalePy“ nutzen, z. B. Indizes zur In-Memory-Speicherung von Tabellen und Spalten. Das Wegfallen der Datenverschiebung bedeutet auch, dass Sie Einschränkungen des Clientspeichers umgehen können, z.B. wenn sich ihre Datenmenge vergrößert oder Sie die Leistung der Anwendung erhöhen möchten.
 
 - **Umfangreiche Erweiterungsmöglichkeiten**: In SQL Server können Sie die neuesten Open Source-Pakete für R oder Python installieren und ausführen, und damit in SQL Server Deep Learning- und KI-Anwendungen auf Basis sehr großer Datenmengen erstellen. Das Installieren eines Pakets in SQL Server ist so einfach, wie ein Paket auf Ihrem lokalen Computer zu installieren.
 

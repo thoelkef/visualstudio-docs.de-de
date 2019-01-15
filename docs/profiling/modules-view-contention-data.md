@@ -1,8 +1,6 @@
 ---
 title: 'Modulansicht: Konfliktdaten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926398"
 ---
 # <a name="modules-view---contention-data"></a>Modulansicht: Konfliktdaten
 Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitätsdaten an, die in den Profilerstellungsdaten abgefragt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen der Module, in denen Konfliktereignisse aufgetreten sind, werden unter dem Modulknoten aufgeführt.  
@@ -26,7 +24,7 @@ Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitä
   
  Die folgende Tabelle beschreibt die Werte der Spalten in der Modulansicht der Konfliktdaten.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion die Zeit, für die die Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einem Modul die Summe der exklusiv blockierten Zeit der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  

@@ -1,8 +1,6 @@
 ---
 title: Zusammenfassungsbericht – Samplingdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method, Summary view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0313c5e0bcc18bf9ca22bdd996b862056010af1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d0b1c1da6bd493fc53419ef5b371b74488002e27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938604"
 ---
 # <a name="summary-view---sampling-data"></a>Zusammenfassungsansicht: Samplingdaten
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen in einem Profilerstellungslauf. Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).  
@@ -27,14 +25,14 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="timeline-graph"></a>Zeitachsendiagramm  
- Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt den Prozentsatz der Auslastung des Prozessors (CPU) durch die profilierte Anwendung während des Zeitraums an, in dem die Profilerstellung stattgefunden sind. Sie können das Zeitachsendiagramm zum Filtern der Ansicht in einem ausgewählten Zeitraum verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht.](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+ Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt den Prozentsatz der Auslastung des Prozessors (CPU) durch die profilierte Anwendung während des Zeitraums an, in dem die Profilerstellung stattgefunden sind. Sie können das Zeitachsendiagramm zum Filtern der Ansicht in einem ausgewählten Zeitraum verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="hot-path"></a>Langsamster Pfad  
  **Langsamster Pfad** zeigt den Ausführungspfad, in dem die meisten Samples erfasst wurden. Sie können auf eine Funktion klicken, um die Ansicht „Funktionsdetails“ für die Funktion anzuzeigen. Zum Anzeigen anderer Ansichten für die Funktion klicken Sie mit rechten Maustaste auf die Funktion, und klicken Sie dann auf eine Ansicht in der Liste.  
   
  **Langsamster Pfad** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
 |**Inklusive Samplings in %**|Der Prozentsatz aller Samplings, die stattgefunden haben, wenn die Funktion oder eine von ihr aufgerufene Funktion ausgeführt wurde.|  
@@ -47,7 +45,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
   
  **Funktionen mit den meisten einzelnen Aufgaben** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
 |**Exklusive Samplings %**|Der Prozentsatz aller Samplings bei der Profilerstellung, die gesammelt wurden, als die Funktion Code in ihrem Funktionsrumpf ausgeführt hat. Der Prozentsatz schließt Samplings aus, die während der Ausführung von Funktionen erfasst wurden, die von dieser Funktion aufgerufen wurden.|  

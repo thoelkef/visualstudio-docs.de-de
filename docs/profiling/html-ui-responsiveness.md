@@ -2,7 +2,6 @@
 title: Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843527"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.  
@@ -69,7 +68,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 6.  Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.  
   
 ## <a name="isolate-an-issue"></a>Isolieren eines Problems  
- Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](/visualstudio/profiling/html-ui-responsiveness).  
   
 ###  <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler effektiver verwenden können:  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.  
   
 ###  <a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung  
- Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.  
+ Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert und stellen die folgenden spezifischen Kategorien dar: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Formatieren**, **Rendering** und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.  
   
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.  
   
@@ -328,7 +327,7 @@ if (performance.mark && performance.measure) {
 |event|Ereigniskategorie|Tritt auf bei|  
 |-----------|--------------------|-----------------|  
 |CSS-Analyse|Laden|Neuer CSS-Inhalt wurde gefunden, und es wurde versucht, den CSS-Inhalt zu analysieren.|  
-|HTML-Analyse|Ladevorgang|Neuer HTML-Inhalt wurde gefunden, und es wurde versucht, den Inhalt in Knoten zu analysieren und in die DOM-Struktur einzufügen.|  
+|HTML-Analyse|Laden|Neuer HTML-Inhalt wurde gefunden, und es wurde versucht, den Inhalt in Knoten zu analysieren und in die DOM-Struktur einzufügen.|  
 |HTTP-Anforderung|Laden|Eine Remoteressource wurde im DOM gefunden, oder ein XMLHttpRequest wurde erstellt, das zu einer HTTP-Anforderung geführt hat.|  
 |Spekulatives Herunterladen|Laden|Der HTML-Inhalt der Seite wurde für erforderliche Ressourcen gefunden, sodass darauf folgende HTTP-Anforderungen für die Ressourcen schnell geplant werden konnten.|  
 |Rückruffunktion für den Animationsframe|Skripterstellung|Der Browser war im Begriff, einen anderen Frame zu rendern, und dies hat eine Rückruffunktion der App ausgelöst.|  

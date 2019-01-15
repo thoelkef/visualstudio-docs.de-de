@@ -2,7 +2,6 @@
 title: Testen einer UWP-App mit einem Test der programmierten UI
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842043"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
@@ -207,15 +206,15 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 ## <a name="q--a"></a>Fragen und Antworten
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>F: Warum wird im Dialogfeld „Test der programmierten UI“ unter „Code generieren“ nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Frage: Warum wird im Dialogfeld „Test der programmierten UI“ unter „Code generieren“ nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?
 
-**A:** Die Option zum Aufzeichnen wird für UWP-Apps nicht unterstützt.
+**A**: Die Option zum Aufzeichnen wird für UWP-Apps nicht unterstützt.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>F: Kann ich einen Test der programmierten UI für UWP-Apps auf Grundlage von WinJS erstellen?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Frage: Kann ich einen Test der programmierten UI für UWP-Apps auf Grundlage von WinJS erstellen?
 
 **A**: Nein, nur XAML-basierte Apps werden unterstützt.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>F: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Frage: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
 
 **A**: Alle Codeänderungen, die Sie an der Datei *UIMapDesigner.cs* vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem **Coded UI Test Builder** (Generator für Tests der programmierten UI) generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, kopieren Sie sie in die Datei *UIMap.cs*, und benennen Sie sie um. Die Datei *UIMap.cs* kann verwendet werden, um Methoden und Eigenschaften in der Datei *UIMapDesigner.cs* zu überschreiben. Entfernen Sie den Verweis auf die ursprüngliche Methode in der Datei *CodedUITest.cs*, und ersetzen Sie ihn durch den umbenannten Methodennamen.
 

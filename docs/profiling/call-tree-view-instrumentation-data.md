@@ -1,8 +1,6 @@
 ---
 title: Aufrufstrukturansicht – Instrumentationsdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 34ae8f845e53fdd80be055c8d0e592d6d01d75e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898098"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Aufrufstrukturansicht: Instrumentationsdaten
 Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktionsinstanzen an, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden. Prozentwerte werden berechnet, indem der Wert der Funktionsinstanzen mit der gesamten verstrichenen inklusiven Zeit aller Funktionen in der Profilerstellung verglichen wird.  
@@ -25,7 +23,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="general"></a>Allgemein  
  Die allgemeinen Spalten bezeichnen die Funktion in einer Ansichtszeile.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Funktionsname**|Der Name der Funktion.|  
 |**Funktionsadresse**|Die Adresse der Funktion.|  
@@ -43,7 +41,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Die Werte für die verstrichene inklusive Zeit geben die Zeit an, die sich Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden, in der Aufrufliste befanden. Die Zeit umfasst die Zeit in untergeordneten Funktionen, die von der Funktion aufgerufen wurden, und die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**verstrichene inklusive Zeit**|Die gesamte verstrichene inklusive Zeit aller Aufrufe dieser Funktion in diesem Kontext.|  
 |**verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen inklusiven Zeit, die innerhalb der gesamten verstrichenen inklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -54,7 +52,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="elapsed-exclusive-values"></a>Werte für verstrichene exklusive Zeit  
  Die Werte für die verstrichene exklusive Zeit geben die Zeit an, die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurden, Code im Funktionsrumpf ausgeführt haben, d.h., als sich die Funktion an erster Stelle der Aufrufliste befunden hat. Die Zeit beinhaltet die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde, wird jedoch nicht berücksichtigt.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**verstrichene exklusive Zeit**|Die gesamte verstrichene exklusive Zeit aller Aufrufe dieser Funktion in diesem Kontext.|  
 |**verstrichene exklusive Zeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der gesamten verstrichenen exklusiven Zeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -65,7 +63,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="application-inclusive-values"></a>Werte für inklusive Anwendungszeit  
  Die Werte für die inklusive Anwendungszeit geben die Zeit an, die sich Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufliste aufgerufen wurden, in der Aufrufliste befanden. Die Zeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Berücksichtigt wird hingegen die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**inklusive Anwendungszeit**|Die gesamte inklusive Anwendungszeit aller Aufrufe dieser Funktion in diesem Kontext.|  
 |**inklusive Anwendungszeit %**|Der Prozentsatz der insgesamt verstrichenen inklusiven Zeit, die innerhalb der gesamten inklusiven Anwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  
@@ -76,7 +74,7 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
 ## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Die Werte für die exklusive Anwendungszeit geben die Zeit an, die Funktionsinstanzen, die von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde, direkt Code im Funktionsrumpf ausgeführt haben, d.h., als sich die Funktion an erster Stelle der Aufrufliste befunden hat. Die Zeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen. Auch die Zeit, die in von der Funktion aufgerufenen untergeordneten Funktionen aufgewendet wurde, wird nicht berücksichtigt.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**exklusive Anwendungszeit**|Die gesamte exklusive Anwendungszeit aller Aufrufe dieser Funktion in diesem Kontext.|  
 |**exklusive Anwendungszeit %**|Der Prozentsatz der gesamten verstrichenen exklusiven Zeit, die innerhalb der exklusiven Gesamtanwendungszeit dieser Funktion in diesem Kontext auf die Profilerstellung entfällt.|  

@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 8: Anpassen des Quiz'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f2b2f9d46b623f63d216ce530cd283bf799a3a73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842355"
 ---
 # <a name="step-8-customize-the-quiz"></a>Schritt 8: Anpassen des Quiz
 Im letzten Teil des Lernprogramms untersuchen Sie mehrere Möglichkeiten, das Quiz anzupassen. Damit erweitern Sie Ihre bereits erworbenen Kenntnisse. Sie können z. B. überlegen, wie das Programm zufällige Divisionsaufgaben erstellt, für die die Antwort nie eine Bruchzahl ist. Um den Lerneffekt zu erhöhen, können Sie für das `timeLabel`-Steuerelement eine andere Farbe festlegen und dem Quizteilnehmer einen Hinweis geben.  
@@ -31,6 +29,6 @@ Im letzten Teil des Lernprogramms untersuchen Sie mehrere Möglichkeiten, das Qu
   
 -   Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Complete math quiz tutorial sample (Tutorialbeispiel des vollständigen Mathequiz)](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
--   Um zum nächsten Tutorial zu wechseln, klicken Sie auf [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).  
+-   Das nächste Tutorial finden Sie unter [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).  
   
--   Um zum vorhergehenden Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).

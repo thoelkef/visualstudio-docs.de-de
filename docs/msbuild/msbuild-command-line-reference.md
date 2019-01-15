@@ -1,8 +1,6 @@
 ---
 title: MSBuild-Befehlszeilenreferenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4a692f203a0a120c2ab0da5c745aee8803badc
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 56e37053e92ca009ecdd5ba1f72ce02f1932ee2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935033"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 Wenn Sie mithilfe von *MSBuild.exe* ein Projekt oder eine Projektmappendatei erstellen, können Sie diverse Optionen verwenden, um verschiedene Aspekte des Prozesses festzulegen.  
@@ -39,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="arguments"></a>Argumente  
   
-|Argument|Beschreibung |  
+|Argument|Beschreibung|  
 |--------------|-----------------|  
 |`ProjectFile`|Erstellt die Ziele in der von Ihnen angegebenen Projektdatei. Wenn Sie keine Projektdatei angeben, durchsucht MSBuild das aktuelle Arbeitsverzeichnis nach einer Erweiterung, die mit *proj* endet, und verwendet diese. Sie können hier auch eine Visual Studio-Projektmappendatei als Argument angeben.|  
   
 ## <a name="switches"></a>Schalter  
   
-|Schalter|Kurzform|Beschreibung |  
+|Schalter|Kurzform|Beschreibung|  
 |------------|----------------|-----------------|  
 |-help|/? oder -h|Zeigt Nutzungsinformationen an. Der folgende Befehl ist ein Beispiel:<br /><br /> `msbuild.exe -?`|  
 |-detailedsummary|-ds|Zeigt am Ende des Buildprotokolls ausführliche Informationen zu den erstellten Konfigurationen und deren Planung in Knoten an.|  
@@ -58,7 +56,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-property:`name`=`value`|/p:`name`=`value`|Dient zum Festlegen oder Überschreiben der angegebenen Eigenschaften auf Projektebene. Dabei ist `name` der Name und `value` der Wert der Eigenschaft. Geben Sie jede Eigenschaft einzeln an oder verwenden Sie ein Semikolon oder ein Komma, um mehrere Eigenschaften zu trennen (siehe Beispiel):<br /><br /> `-property:WarningLevel=2;OutDir=bin\Debug`|  
 |-restore|-r|Führt das `Restore`-Ziel vor dem Erstellen der eigentlichen Ziele aus.|
 |-target:`targets`|-t:`targets`|Erstellt die angegebenen Ziele im Projekt. Geben Sie jedes Ziel einzeln an oder verwenden Sie ein Semikolon oder ein Komma, um mehrere Ziele zu trennen (siehe Beispiel):<br /><br /> `-target:Resources;Compile`<br /><br /> Wenn Sie über diesen Schalter Ziele angeben, werden diese anstelle der im `DefaultTargets`-Attribut in der Projektdatei angegebenen Ziele ausgeführt. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md) und [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Als Ziel wird eine Gruppe von Aufgaben bezeichnet. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).|  
-|-toolsversion:`version`|-tv:`version`|Gibt die Version des Toolsets an, mit dem das Projekt erstellt werden soll, wie zum Beispiel: `-toolsversion:3.5`<br /><br /> Wenn Sie diese Option verwenden, können Sie ein Projekt mit einer anderen Version als der im [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md) festgelegten erstellen. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Bei MSBuild 4.5 können Sie für `version` die folgenden Werte angeben: 2.0, 3.5 und 4.0. Wenn Sie 4.0 angeben, gibt die Buildeigenschaft `VisualStudioVersion` an, welches Unter-Toolset verwendet werden soll. Weitere Informationen finden Sie im Abschnitt zu Unter-Toolsets unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Ein Toolset besteht aus Aufgaben, Zielen und Tools, die beim Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie *csc.exe* und *vbc.exe*. Weitere Informationen zu Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md) und [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md). **Hinweis:** Die Toolsetversion ist nicht das gleiche wie das Zielframework – dieses ist die Version von .NET Framework, auf der das zu erstellende Projekt ausgeführt werden soll. Weitere Informationen finden Sie unter [Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).|  
+|-toolsversion:`version`|-tv:`version`|Gibt die Version des Toolsets an, mit dem das Projekt erstellt werden soll, wie zum Beispiel: `-toolsversion:3.5`<br /><br /> Wenn Sie diese Option verwenden, können Sie ein Projekt mit einer anderen Version als der im [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md) festgelegten erstellen. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Bei MSBuild 4.5 können Sie für `version` die folgenden Werte angeben: 2.0, 3.5 und 4.0. Wenn Sie 4.0 angeben, gibt die Buildeigenschaft `VisualStudioVersion` an, welches Unter-Toolset verwendet werden soll. Weitere Informationen finden Sie im Abschnitt zu Unter-Toolsets unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Ein Toolset besteht aus Aufgaben, Zielen und Tools, die beim Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie *csc.exe* und *vbc.exe*. Weitere Informationen zu Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md) und [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md). **Hinweis**:  Die Toolsetversion ist nicht das gleiche wie das Zielframework – dieses ist die Version von .NET Framework, auf der das zu erstellende Projekt ausgeführt werden soll. Weitere Informationen finden Sie unter [Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |-validate:[`schema`]|-val[`schema`]|Überprüft die Projektdatei und erstellt bei erfolgreicher Überprüfung das Projekt.<br /><br /> Wenn Sie `schema` nicht angeben, wird das Projekt anhand des Standardschemas überprüft.<br /><br /> Wenn Sie `schema` angeben, wird das Projekt anhand des angegebenen Schemas überprüft.<br /><br /> Die folgende Einstellung ist ein Beispiel: `-validate:MyExtendedBuildSchema.xsd`|  
 |-verbosity:`level`|-v:`level`|Gibt den Umfang an Informationen an, die im Buildprotokoll angezeigt werden sollen. Jede Protokollierung zeigt Ereignisse gemäß des Ausführlichkeitsgrads an, den Sie für diese Protokollierung festlegen.<br /><br /> Für den Ausführlichkeitsgrad können Sie die folgenden Werte angeben: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` und `diag[nostic]`.<br /><br /> Die folgende Einstellung ist ein Beispiel: `-verbosity:quiet`|  
 |-version|-ver|Zeigt nur Versionsinformationen an. Das Projekt wird nicht erstellt.|  
@@ -66,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>Optionen für Protokollierungen  
   
-|Schalter|Kurzform|Beschreibung |  
+|Schalter|Kurzform|Beschreibung|  
 |------------|----------------|-----------------|  
 |-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Übergibt die angegebenen Parameter an die Konsolenprotokollierung, die Buildinformationen im Konsolenfenster anzeigt. Sie können die folgenden Parameter angeben:<br /><br /> -   **PerformanceSummary**. Zeigt die Zeitdauer bei der Arbeit an Aufgaben, Zielen und Projekten an<br />-   **Summary**. Zeigt am Ende eine Zusammenfassung zu aufgetretenen Fehlern und Warnungen an.<br />-   **NoSummary**. Am Ende wird keine Zusammenfassung zu aufgetretenen Fehlern und Warnungen angezeigt.<br />-   **ErrorsOnly**. Nur Fehler werden angezeigt.<br />-   **WarningsOnly**. Nur Warnungen werden angezeigt.<br />-   **NoItemAndPropertyList**. Unterdrückt die Anzeige der Liste von Elementen und Eigenschaften, die zu Beginn jedes Projekts angezeigt wird, wenn der Ausführlichkeitsgrad auf `diagnostic` festgelegt ist.<br />-   **ShowCommandLine**. Zeigt `TaskCommandLineEvent`-Meldungen an.<br />-   **ShowTimestamp**. Stellt jeder Meldung den zugehörigen Zeitstempel voran.<br />-   **ShowEventId**. Zeigt zu jedem Ereignis vom Typ "Gestartet" und "Abgeschlossen" sowie zu jeder Meldung die Ereignis-ID an.<br />-   **ForceNoAlign**. Hierbei wird der Text nicht der Größe des Konsolenpuffers angeglichen.<br />-   **DisableConsoleColor**. Verwendet bei allen Protokollierungsmeldungen die Standardkonsolenfarben.<br />-   **DisableMPLogging**. Deaktiviert bei Ausführung im Einzelprozessormodus das Multiprozessor-Protokollierungsformat der Ausgabe.<br />-   **EnableMPLogging**. Aktiviert das Multiprozessor-Protokollierungsformat auch bei Ausführung im Einzelprozessormodus. Dieses Protokollierungsformat ist standardmäßig aktiviert.<br />-   **Verbosity**. Überschreibt die Einstellung **-verbosity** für diese Protokollierung.<br /><br /> Mehrere Parameter sind mit einem Semikolon oder Komma zu trennen, wie im folgenden Beispiel gezeigt:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|  
 |-distributedFileLogger|-dfl|Protokolliert die Buildausgabe jedes MSBuild-Knotens in dessen eigene Datei. In der Standardeinstellung werden diese Dateien im aktuellen Verzeichnis gespeichert. Die Namen der Dateien lauten standardmäßig *MSBuild\<NodeId>.log*. Sie können den Schalter **-fileLoggerParameters** verwenden, um den Speicherort der Dateien und andere Parameter für „fileLogger“ anzugeben.<br /><br /> Wenn Sie eine Protokolldatei mithilfe des Schalters **-fileLoggerParameters** benennen, wird die verteilte Protokollierung diesen Namen als Vorlage verwenden und die Knoten-ID an ihn anfügen, wenn sie eine Protokolldatei für jeden Knoten erstellt.|  

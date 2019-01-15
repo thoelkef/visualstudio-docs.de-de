@@ -2,7 +2,6 @@
 title: Bearbeiten von Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959692"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 

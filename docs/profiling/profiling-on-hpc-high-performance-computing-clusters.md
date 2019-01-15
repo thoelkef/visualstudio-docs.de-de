@@ -1,8 +1,6 @@
 ---
 title: Profilerstellung bei HPC-Clustern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856656"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
@@ -55,8 +53,8 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 | | |
 |------------------| - |
 | *%HeadNode%* | Der Name des Hauptknotens für den Cluster. |
-| *%FxPath%* | Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
-| *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe. |
+| *%FxPath%* | Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten
 
@@ -126,7 +124,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|
@@ -137,7 +135,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften
 
-| Eigenschaft | Beschreibung  |
+| Eigenschaft | Beschreibung |
 |---------------------------------------| - |
 | **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
 | **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |
@@ -150,4 +148,3 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 | **Präprofilskriptargumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
 | **Postprofilskript** | Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer nach dem Ende der Profilerstellungssitzung ausgeführt wird. |
 | **Postprofilskriptargumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
-

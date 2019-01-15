@@ -1,8 +1,6 @@
 ---
 title: Funktionsansicht – Samplingdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942579"
 ---
 # <a name="functions-view---sampling-data"></a>Funktionsansicht: Samplingdaten
 Die Funktionsberichtansicht für die Samplingprofilmethode listet die Funktionen auf, die während der Profilerstellung abgetastet wurden.  
@@ -26,7 +24,7 @@ Die Funktionsberichtansicht für die Samplingprofilmethode listet die Funktionen
 > [!NOTE]
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  

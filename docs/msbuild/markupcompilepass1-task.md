@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass1-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db623dd06db06a1dfee3e22345564f888431d1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52b6e36e06ee74f974d2d774af806a234835cff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906877"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
 
@@ -32,7 +30,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 | - | - |
 | `AllGeneratedFiles` | Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält eine vollständige Liste von Dateien, die vom <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task generiert werden. |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob der Task in einer separaten <xref:System.AppDomain> ausgeführt werden soll. Wenn dieser Parameter **FALSE** zurückgibt, wird der Task in der gleichen <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **TRUE** zurückgibt, wird der Task in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt. |

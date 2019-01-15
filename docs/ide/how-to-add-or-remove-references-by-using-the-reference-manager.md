@@ -2,7 +2,6 @@
 title: Hinzufügen von Verweisen mit dem Verweis-Manager
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856279"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen oder Entfernen von Verweisen mit dem Verweis-Manager
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
 Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Komponenten hinzuzufügen und zu verwalten, die von Ihnen, Microsoft oder einem anderen Unternehmen entwickelt wurden. Wenn Sie eine universelle Windows-App entwickeln, verweist das Projekt automatisch auf alle richtigen Windows SDK-DLLs. Wenn Sie eine .NET-Anwendung entwickeln, verweist das Projekt automatisch auf *mscorlib.dll*. Einige .NET-APIs werden in Komponenten verfügbar gemacht, die Sie manuell hinzufügen müssen. Verweise auf COM-Komponenten oder benutzerdefinierte Komponenten müssen manuell hinzugefügt werden.
 
@@ -72,7 +71,7 @@ Die Registerkarte **Assemblys** besteht aus zwei untergeordneten Registerkarten:
 
 1. In **Framework** werden alle Assemblys aufgelistet, die das Zielframework darstellen.
 
-    Projekte für Windows 8.x Store-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend listet die Registerkarte **Framework** keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: „Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um Verweise im Framework zu durchsuchen“. Für Desktopprojekte werden auf der Registerkarte **Framework** Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.
+    Projekte für Windows 8.x Store-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend listet die Registerkarte **Framework** keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: „All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework. (Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um Verweise im Framework zu durchsuchen)“. Für Desktopprojekte werden auf der Registerkarte **Framework** Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.
 
 2. Unter **Erweiterungen** werden alle Assemblys aufgelistet, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.
 
@@ -155,9 +154,9 @@ Die Registerkarte **Windows** führt alle SDKs auf, die für Plattformen gelten,
 
 Sie können eine WinMD-Datei in Visual Studio auf zwei Arten generieren:
 
-- **Mit einer App aus dem Windows 8.x Store verwaltete Projekte**: Windows 8.x Store-App-Projekte können WinMD-Binärdateien ausgeben, indem **Projekteigenschaften** > **Ausgabetyp = WinMD-Datei** festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus den Namespaces `A.B` und `A.B.C` besteht, sind die möglichen Namen für die ausgegebene WinMD-Datei *A.winmd* und *A.B.winmd*. Wenn ein Benutzer einen Wert **Projekteigenschaften** > **Assemblyname** oder einen Wert **Projekteigenschaften** > **Namespace** eingibt, der nicht mit den Namespaces im Projekt zusammenhängt, oder kein übergeordneter Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: "'A.winmd' isn't a valid .winmd file name for this assembly." ('A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly.). Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste gemeinsame Namespace `CSWSClassLibrary1`. Ein Visual Basic- oder C#-Desktopprojekt kann nur WinMDs nutzen, die mit Windows 8 SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.
+- **Verwaltete Windows 8.x Store-App-Projekte:** Windows 8.x Store-App-Projekte können WinMD-Binärdateien ausgeben, indem **Projekteigenschaften** > **Ausgabetyp = WinMD-Datei** festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus den Namespaces `A.B` und `A.B.C` besteht, sind die möglichen Namen für die ausgegebene WinMD-Datei *A.winmd* und *A.B.winmd*. Wenn ein Benutzer einen Wert **Projekteigenschaften** > **Assemblyname** oder einen Wert **Projekteigenschaften** > **Namespace** eingibt, der nicht mit den Namespaces im Projekt zusammenhängt, oder kein übergeordneter Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: "'A.winmd' isn't a valid .winmd file name for this assembly." ('A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly.). Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste gemeinsame Namespace `CSWSClassLibrary1`. Ein Visual Basic- oder C#-Desktopprojekt kann nur WinMDs nutzen, die mit Windows 8 SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.
 
-- **Native Windows 8.x Store-App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.
+- **Native Windows 8.x Store-App-Projekte:** Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.
 
 Die Registerkarte **Windows** besteht aus zwei Untergruppen.
 

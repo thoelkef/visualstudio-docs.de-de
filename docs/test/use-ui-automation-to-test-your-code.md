@@ -2,7 +2,6 @@
 title: Automatisierte Benutzeroberflächentests
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840641"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -293,7 +292,7 @@ Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mi
 
     - Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Erstellen eines datengesteuerten Tests der programmierten UI](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode „WaitForControlEnabled“ auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der codierten UI, bei dem ein Steuerelement auf die Aktivierung mit der WaitForControlEnabled-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Verwenden von HTML5-Steuerelementen in Tests der programmierten UI](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -445,9 +444,9 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [How to: Set up your test agent to run tests that interact with the desktop (Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests, die mit dem Desktopcomputer interagieren)](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:** Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der programmierten UI für Microsoft Excel erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
+**Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:**  Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der programmierten UI für Microsoft Excel erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
 
 - [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md)
 

@@ -1,8 +1,6 @@
 ---
 title: VSInstr | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945768"
 ---
 # <a name="vsinstr"></a>VSInstr
 Das VSInstr-Tool wird zum Instrumentieren von Binärdateien verwendet. Es wird mithilfe der folgenden Syntax aufgerufen:  
@@ -35,7 +33,7 @@ VSInstr [/U] filename [/options]
   
  In der folgenden Tabelle werden die Optionen des VSInstr-Tools beschrieben:  
   
-|Optionen|Beschreibung |  
+|Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**Help** oder **?**|Zeigt die Hilfe an.|  
 |**U**|Schreibt die umgeleitete Konsolenausgabe als Unicode. Dabei muss es sich um die erste angegebene Option handeln.|  
@@ -46,7 +44,7 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|Listet die Funktionen innerhalb des angegebenen Images auf. Es wird keine Instrumentierung durchgeführt.|  
 |**ExcludeSmallFuncs**|Schließt kleine Funktionen, also kurze Funktionen, die keine Funktionsaufrufe ausführen, aus der Instrumentierung aus. Die Option **ExcludeSmallFuncs** bietet bei weniger Instrumentierungsoverhead eine daher verbesserte Instrumentierungsgeschwindigkeit.<br /><br /> Der Ausschluss kleiner Funktionen reduziert auch die Größe der *VSP-Datei* und den Zeitaufwand für die Analyse.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Fügt eine Profilmarkierung (ein Bezeichner, der zum Einschränken der Daten in Berichten verwendet wird) ein, die Sie zum Identifizieren des Beginns oder des Endes eines Datenbereichs in der VSP-Berichtsdatei verwenden können.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion<br /><br /> `Markid`: Eine positive ganze Zahl (lang), die als Bezeichner der Profilmarkierung verwendet werden soll.|  
-|**Coverage**|Führt die Coverage-Instrumentierung durch. Kann nur mit den folgenden Optionen verwendet werden: **Verbose**, **OutputPath**, **Exclude** und **Logfile**.|  
+|**Coverage**|Führt die Coverage-Instrumentierung durch. Sie kann nur mit den folgenden Optionen verwendet werden: **Verbose**, **OutputPath**, **Exclude** und **Logfile**.|  
 |**Verbose**|Die **Verbose**-Option wird verwendet, um detaillierte Informationen zum Instrumentierungsprozess anzuzeigen.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Alle oder bestimmte Warnungen unterdrücken.<br /><br /> `Message Number`: Warnnummer. Wenn `Message Number` ausgelassen wird, werden alle Warnungen unterdrückt.<br /><br /> Weitere Informationen finden Sie unter [VSInstr-Warnungen](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Gibt die Profilerstellungsebene der folgenden VSInstr-Steuerungsoptionen für die Datensammlung an:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**: Gibt die Steuerungsfunktionen für die Datensammlung auf Thread-Ebene an. Die Profilerstellung wird nur für den aktuellen Thread gestartet oder angehalten. Der Profilerstellungsstatus anderer Threads ist nicht betroffen. Der Standardwert ist Thread.<br /><br /> **Process**: Gibt die Steuerungsfunktionen für die Profildatensammlung auf Prozessebene an. Die Profilerstellung wird für alle Threads im aktuellen Prozess gestartet oder angehalten. Der Profilerstellungsstatus anderer Prozesse ist nicht betroffen.<br /><br /> **Global**: Gibt die Steuerungsfunktionen für die Datensammlung auf globaler Ebene (prozessübergreifend) an.<br /><br /> Wenn Sie die Profilerstellungsebene nicht angeben, tritt ein Fehler auf.|  

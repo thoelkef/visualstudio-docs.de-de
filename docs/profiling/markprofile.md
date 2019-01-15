@@ -1,8 +1,6 @@
 ---
 title: MarkProfile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853748"
 ---
 # <a name="markprofile"></a>MarkProfile
 Die `MarkProfile`-Methode fügt eine Profilmarkierung in die *VSP*-Datei ein. Damit die Markierung eingefügt wird, muss die Profilerstellung für den Thread, der die `MarkProfile`-Funktion enthält, auf ON festgelegt sein.  
@@ -36,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
  Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:  
   
-|Enumerator|Beschreibung |  
+|Enumerator|Beschreibung|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|Der Parameter ist kleiner oder gleich 0 (null). Diese Werte sind reserviert. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
 |MARK_ERROR_MODE_NEVER|Der Profilerstellungsmodus wurde beim Aufruf der Funktion auf NEVER festgelegt. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  

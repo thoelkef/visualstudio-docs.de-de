@@ -1,8 +1,6 @@
 ---
 title: Aufrufstrukturansicht – Samplingdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90035daf13008122e7d529408a6de0389b311628
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c71ff415ea121f5fb8a28eb8365e601414ba5d0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917487"
 ---
 # <a name="call-tree-view---sampling-data"></a>Aufrufstrukturansicht: Samplingdaten
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden.  
@@ -38,7 +36,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste auf das Fenster der Aufrufstrukturansicht, und wählen Sie dann **Stamm zurücksetzen** aus.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  

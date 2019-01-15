@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875244"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten
 Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl von Daten, die in der Aufrufstrukturansicht und der Zuordnungsansicht angezeigt werden, eingeschränkt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung erkennbarer. Dies ist hilfreich bei der Analyse von Leistungsberichten.  
@@ -80,6 +78,6 @@ Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl 
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)   
- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen aus der bzw. in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view.md)   
  [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)

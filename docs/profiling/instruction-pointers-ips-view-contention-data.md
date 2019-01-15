@@ -1,8 +1,6 @@
 ---
 title: Anweisungszeigeransicht – Konfliktdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853475"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Anweisungszeigeransicht: Konfliktdaten
 Die Anweisungszeigeransicht (IPs-Ansicht) der Konfliktdaten führt Daten für die Assemblyanweisungen auf, die nicht während der Profilerstellung ausgeführt werden durften.  
   
  In der nachstehenden Tabelle werden die Werte der Spalten in der Anweisungszeigeransicht erklärt.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit %**|Die blockierte Zeit in dieser Funktion|  
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der blockierten Zeit, während die Anweisung ausgeführt wurde|  

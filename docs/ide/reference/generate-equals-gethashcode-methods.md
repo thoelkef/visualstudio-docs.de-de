@@ -2,19 +2,18 @@
 title: Generieren der Equals- und GetHashCode-Methodenüberschreibungen in C#
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e7b1f2f196e8cb737d179e12e49d829b1651c5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960903"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generieren der Überschreibungsmethoden „Equals“ und „GetHashCode“ in Visual Studio
 
@@ -22,9 +21,9 @@ Diese Codegenerierung gilt für:
 
 - C#
 
-**Beschreibung**: Ermöglicht das Generieren von **Equals**- und **GetHashCode**-Methoden.
+**Beschreibung:** Ermöglicht das Generieren von **Equals**- und **GetHashCode**-Methoden.
 
-**Hintergrund**: Generieren Sie diese Überschreibungsmethoden, wenn Sie einen Typ haben, der durch ein Feld oder mehrere Felder verglichen werden soll, anstelle des Objektspeicherorts im Arbeitsspeicher.
+**Hintergrund:** Generieren Sie diese Überschreibungsmethoden, wenn Sie einen Typ haben, der durch ein Feld oder mehrere Felder verglichen werden soll, anstelle des Objektspeicherorts im Arbeitsspeicher.
 
 **Vorteile**:
 

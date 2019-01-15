@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863639"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten
 

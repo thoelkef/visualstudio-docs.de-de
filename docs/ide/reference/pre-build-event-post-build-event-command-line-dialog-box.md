@@ -2,7 +2,6 @@
 title: Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877902"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfeld "Befehlszeile für Präbuildereignis"/"Befehlszeile für Postbuildereignis"
 Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direkt in das Bearbeitungsfeld eingeben oder Prä- und Postbuildmakros aus der Liste der verfügbaren Makros auswählen.
@@ -73,7 +72,7 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 ### <a name="macros"></a>Makros
  Sie können diese Makros verwenden, um Speicherorte für Dateien anzugeben oder bei einer Mehrfachauswahl den tatsächlichen Namen der Eingabedatei abrufen. Bei diesen Makros wird nicht zwischen Groß-/Kleinschreibung unterschieden.
 
-|Makro|description|
+|Makro|Beschreibung|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Der Name der aktuellen Projektkonfiguration, z.B. „Debug“.|
 |`$(OutDir)`|Der Pfad des Ausgabedateiverzeichnisses relativ zum Projektverzeichnis. Dies wird in den Wert für die Eigenschaft „Output Directory“ aufgelöst. Ein nachgestellter umgekehrter Schrägstrich („\\“) ist enthalten.|
@@ -99,5 +98,5 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 
 - [Angeben von benutzerdefinierten Build-Ereignissen in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Gewusst wie: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Gewusst wie: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)

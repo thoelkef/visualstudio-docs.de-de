@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968244"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features
 Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Um den Lerneffekt zu erhöhen, können Sie das Programm verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern.
 
  Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![Link zum Video](../data-tools/media/playvideo.gif) Eine Videoversion dieses Artikels finden Sie in Video 5 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205216) oder in Video 5 zu [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 5 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic – Video 5)](http://go.microsoft.com/fwlink/?LinkId=205216) und [Tutorial 1: Create a picture viewer in C# – Video 5 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 5)](http://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>So können Sie das Programm ausführen und die Hintergrundfarbe festlegen
 
@@ -59,6 +57,6 @@ Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm aus
 
 -   Weitere Informationen zu Visual C# finden Sie in der [Einführung in die Programmiersprache C# und in .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Um mit dem nächsten Tutorial fortzufahren, klicken Sie auf [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Das nächste Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

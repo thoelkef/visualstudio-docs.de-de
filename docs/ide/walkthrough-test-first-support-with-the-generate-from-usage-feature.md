@@ -2,7 +2,6 @@
 title: 'Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“'
 ms.date: 10/09/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1ea4f3fe408643c3d1c15d33b5754d829e5145e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842936"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 

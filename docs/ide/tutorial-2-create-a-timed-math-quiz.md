@@ -1,9 +1,7 @@
 ---
 title: 'Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d6dc353f7c296dce86bd2b410cfef09683576943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985721"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung
 
@@ -43,7 +41,7 @@ Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Beginnen Sie, indem Sie das Projekt erstellen, Eigenschaften ändern und `Label`-Steuerelemente hinzufügen.|
 |[Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md)|Erstellen Sie eine Additionsaufgabe, und erstellen Sie Zufallszahlen mithilfe der `Random`-Klasse.|

@@ -1,8 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden'
+title: 'Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988004"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Vorgehensweise: Erstellen einer Textur mit prämultiplizierten Alphas
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden
 
 Mit der Pipeline für Bildinhalte können prämultiplizierte Alphatexturen aus einem Quellbild generiert werden. Diese können einfacher zu verwenden und robuster als Texturen ohne ein prämultipliziertes Alpha sein.
 
@@ -40,7 +39,7 @@ In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>So erstellen Sie eine Textur, in der integrierte Alphakanäle verwendet werden
 
-1. Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Bilddatei, oder erstellen Sie wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben eine.
+1. Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Datei, oder erstellen Sie eine, wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben.
 
 2. Konfigurieren Sie die Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die Texturdatei, und wählen Sie dann **Eigenschaften** aus. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Stellen Sie sicher, dass die Eigenschaft **Inhalt** auf **JA** und die Option **Aus Build ausschließen** auf **NEIN** festgelegt ist. Wählen Sie dann die Schaltfläche **Übernehmen** aus. Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.
 

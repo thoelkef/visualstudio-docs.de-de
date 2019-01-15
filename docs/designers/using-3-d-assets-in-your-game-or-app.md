@@ -2,7 +2,6 @@
 title: Verwenden von 3D-Objekten in Spielen oder Apps
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986764"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -90,28 +89,28 @@ Sie können die Eigenschaften der Inhaltspipeline für jede Ressourcendatei fest
 
 Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines verwenden, können Sie die Textur auf verschiedene Arten komprimieren. Und Sie können angeben, ob MIP-Ebenen zum Zeitpunkt der Erstellung generiert werden sollen, und den Namen der Ausgabedatei angeben.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
 |**MIPS generieren**|**Ja**, um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguration der Mesh-Inhaltspipeline
 
 Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguration der Shader-Inhaltspipeline
 
 Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Laden und verwenden von 3D-Objekten zur Laufzeit
 
@@ -206,10 +205,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
-|[Vorgehensweise: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
+|[Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
+|[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
 |[Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Es werden die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Objekten bereitstellt, inklusive Texturen und Bildern, 3D Modellen sowie Shadern beschrieben.|
 |[Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|

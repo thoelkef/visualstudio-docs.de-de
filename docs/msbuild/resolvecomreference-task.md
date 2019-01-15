@@ -1,8 +1,6 @@
 ---
 title: ResolveCOMReference-Task | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893340"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
 Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB*-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.  
@@ -33,7 +31,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `ResolveCOMReference` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung |  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`DelaySign`|Optionaler `Boolean` -Parameter.<br /><br /> Legt den öffentlichen Schlüssel in der Assembly ab, wenn der Wert `true` ist Signiert die Assembly vollständig, wenn der Wert `false` ist|  
 |`EnvironmentVariables`|Optionaler `String[]` -Parameter.<br /><br /> Ein Array von Paaren von Umgebungsvariablen; durch Gleichheitszeichen getrennt. Diese Variablen werden an die erstellten *tlbimp.exe* und *aximp.exe* zusätzlich zum regulären Umgebungsblock oder zum ausgewählten Überschreiben übergeben.|  
@@ -56,7 +54,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames-Elementmetadaten  
  In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibNames`-Parameter übergebene Elemente zur Verfügung stehen.  
   
-|Metadaten|Beschreibung |  
+|Metadaten|Beschreibung|  
 |--------------|-----------------|  
 |`GUID`|Erforderliche Elementmetadaten<br /><br /> Die GUID für die Typbibliothek. Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|  
 |`VersionMajor`|Erforderliche Elementmetadaten<br /><br /> Die Hauptversion der Typbibliothek Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|  
@@ -67,7 +65,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles-Elementmetadaten  
  In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibFiles`-Parameter übergebene Elemente zur Verfügung stehen.  
   
-|Metadaten|Beschreibung |  
+|Metadaten|Beschreibung|  
 |--------------|-----------------|  
 |`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|  
   

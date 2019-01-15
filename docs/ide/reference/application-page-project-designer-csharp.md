@@ -2,7 +2,6 @@
 title: Seite „Anwendung“ der C#-Projekteigenschaften
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850926"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -59,7 +58,7 @@ Standardmäßig entspricht der Wert dem Zielframework, das Sie im Dialogfeld **N
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Ausgabetyp**
 

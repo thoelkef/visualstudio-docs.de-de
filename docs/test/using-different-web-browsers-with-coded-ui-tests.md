@@ -2,19 +2,18 @@
 title: Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986140"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -88,7 +87,7 @@ Im Folgenden finden Sie weitere wichtige Informationen:
 
 - Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.
 
-   Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Coded UI-Tests einzubinden.
+   Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.
 
 - Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.
 

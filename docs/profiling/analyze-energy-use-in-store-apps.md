@@ -1,8 +1,6 @@
 ---
 title: Analysieren des Energieverbrauchs in UWP-Apps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860859"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
 Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und Energieverbrauch von UWP-Apps auf Tablets mit geringer Leistung zu analysieren, die die ganze Zeit oder zeitweilig von eigenen Akkus betrieben werden. Auf einem akkubetriebenen Gerät kann eine App, die zu viel Energie verbraucht, die Kundenzufriedenheit so sehr beeinträchtigen, dass sie von den Kunden möglicherweise sogar deinstalliert wird. Ein optimierter Energieverbrauch kann die Akzeptanz Ihrer App und deren Nutzung durch die Kunden erhöhen.  
@@ -29,9 +27,9 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
  Der Energieverbrauch-Profiler erfasst die Aktivitäten der Anzeige, CPU und Netzwerkverbindungen eines Geräts während einer Profilerstellungssitzung. Daraufhin generiert er Schätzungen der Energie, die für diese Aktivitäten verbraucht wird, sowie der Gesamtmenge an Energie, die für die Profilerstellungssitzung verwendet wird.  
   
 > [!NOTE]
->  Der Energie-Profiler schätzt den Strom- und Energieverbrauch unter Anwendung eines Softwaremodells einer Standardreferenzgerätehardware, die repräsentativ für Tabletgeräte mit geringer Leistung ist, auf denen Ihre Anwendung möglicherweise ausgeführt wird. Um eine optimale Schätzung zu ermöglichen, wird empfohlen, die Profildaten auf einem Tabletgerät mit geringer Leistung zu sammeln.  
+> Der Energie-Profiler schätzt den Strom- und Energieverbrauch unter Anwendung eines Softwaremodells einer Standardreferenzgerätehardware, die repräsentativ für Tabletgeräte mit geringer Leistung ist, auf denen Ihre Anwendung möglicherweise ausgeführt wird. Um eine optimale Schätzung zu ermöglichen, wird empfohlen, die Profildaten auf einem Tabletgerät mit geringer Leistung zu sammeln.  
 >   
->  Auch wenn das Modell gute Schätzungen für eine Vielzahl an Geräten mit geringer Leistung liefert, sind die tatsächlichen Werte des Geräts, für das Sie ein Profil erstellen, wahrscheinlich anders. Anhand der Werte können Sie herausfinden, welche Anzeige-, CPU- und Netzwerkaktivitäten im Vergleich zur Nutzung anderer Ressourcen recht teuer sind und sich so möglicherweise besonders gut für Optimierungszwecke eignen.  
+> Auch wenn das Modell gute Schätzungen für eine Vielzahl an Geräten mit geringer Leistung liefert, sind die tatsächlichen Werte des Geräts, für das Sie ein Profil erstellen, wahrscheinlich anders. Anhand der Werte können Sie herausfinden, welche Anzeige-, CPU- und Netzwerkaktivitäten im Vergleich zur Nutzung anderer Ressourcen recht teuer sind und sich so möglicherweise besonders gut für Optimierungszwecke eignen.  
   
  Der Energieverbrauch-Profiler verwendet folgende Definitionen von *Strom* und *Energie*:  
   
@@ -54,13 +52,13 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
   
  **Hinzufügen von Markierungen zu C#-, Visual Basic- und C++-Code**  
   
- Erstellen Sie zuerst ein [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) -Objekt, um C#-, Visual Basic- und C++-Code eine Benutzermarkierung hinzuzufügen. Fügen Sie anschließend an den Positionen im Code, die Sie markieren möchten, Aufrufe von [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) -Methoden ein. Verwenden Sie in den Aufrufen [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) .  
+ Um eine Benutzermarkierung zu Code von C#, Visual Basic oder C++ hinzuzufügen, erstellen Sie zunächst ein <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName>-Objekt. Fügen Sie anschließend an den Positionen im Code, die Sie markieren möchten, Aufrufe von <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType>-Methoden ein. Verwenden Sie in den Aufrufen [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) .  
   
  Wenn die Methode ausgeführt wird, wird eine Benutzermarkierung zu den Profilerstellungsdaten zusammen mit einer Meldung hinzugefügt.  
   
 > [!NOTE]
 > - Die Windows.Foundation.Diagnostics LoggingChannel-Klasse implementiert die [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable)-Schnittstelle (in C# und VB als [System.IDisposable](/dotnet/api/system.idisposable) projiziert). Rufen Sie [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) in C# und VB) auf, wenn Sie mit einem Protokollierungskanal fertig sind, um Verluste von Betriebssystemressourcen zu vermeiden.  
->   -   Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
+>  - Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
   
  Beispiele hierzu finden Sie im Windows SDK-Beispiel [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      Mit dem Visual Studio-Simulator für UWP-Apps können Sie Datenverbindungseigenschaften der APIs für Netzwerkinformationen simulieren. Weitere Informationen finden Sie unter [Ausführen von UWP-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
--   Mit den Tools **JavaScript-Funktionstiming** und **CPU-Auslastung** können Sie die CPU-Last reduzieren, wenn diese von ineffizienten Funktionen verursacht wird. Weitere Informationen finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   Mit den Tools **JavaScript-Funktionstiming** und **CPU-Auslastung** können Sie die CPU-Last reduzieren, wenn diese von ineffizienten Funktionen verursacht wird. Weitere Informationen finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](/visualstudio/profiling/beginners-guide-to-performance-profiling).
 
 ## <a name="see-also"></a>Siehe auch
- [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+
+- [Profilerstellung in Visual Studio](../profiling/index.md)  
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

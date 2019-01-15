@@ -1,9 +1,7 @@
 ---
 title: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 64a0b17d47d0906df680ed51c25fe3386d9b6b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846112"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Schritt 2: Erstellen einer zufälligen Additionsaufgabe
 Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem Sie mathematische Aufgaben hinzufügen, die auf Zufallszahlen basieren. Sie erstellen außerdem eine Methode mit dem Namen `StartTheQuiz()`, mit der die Aufgaben ausgefüllt und der Countdownzeitgeber gestartet wird. Später in diesem Lernprogramm fügen Sie die Subtraktions-, die Multiplikations- und Divisionsaufgaben hinzu.
@@ -95,6 +93,6 @@ Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 3: Hinzufügen eines Countdowntimers](../ide/step-3-add-a-countdown-timer.md).
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Hinzufügen eines Countdowntimers](../ide/step-3-add-a-countdown-timer.md).
 
--   Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

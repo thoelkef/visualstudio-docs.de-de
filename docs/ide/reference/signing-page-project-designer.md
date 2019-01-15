@@ -2,7 +2,6 @@
 title: Seite "Signierung", Projekt-Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856643"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendungs- und Bereitstellungsmanifeste zu signieren. Außerdem können sie damit die Assembly signieren (Signierung mit starkem Namen).
@@ -40,7 +39,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="application-and-deployment-manifest-signing"></a>Signierung von Anwendungs- und Bereitstellungsmanifesten
  Kontrollkästchen **ClickOnce-Manifeste signieren**
 
- Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen dazu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  Schaltfläche **Aus Speicher auswählen**
 
@@ -71,7 +70,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="assembly-signing"></a>Signieren von Assemblys
  Kontrollkästchen **Assembly signieren**
 
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
  Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu AI.exe finden Sie unter [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
@@ -101,7 +100,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 
 - [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)
 - [Verwalten der Signierung von Assemblys und Manifesten](../../ide/managing-assembly-and-manifest-signing.md)
-- [Gewusst wie: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [How to: Sign an Assembly (Visual Studio) (Vorgehensweise: Signieren einer Assembly (Visual Studio))](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies)

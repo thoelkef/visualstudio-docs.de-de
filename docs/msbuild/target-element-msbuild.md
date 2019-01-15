@@ -1,8 +1,6 @@
 ---
 title: Target-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965248"
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sequenziell ausführt.  
@@ -58,7 +56,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|Beschreibung |  
+|Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels.|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +71,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-| Element | Beschreibung  |
+| Element | Beschreibung |
 | - | - |
 | [Aufgabe](../msbuild/task-element-msbuild.md) | Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. Ein Ziel kann null oder mehrere Elemente enthalten. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Enthält eine Reihe von benutzerdefinierten `Property`-Elementen. Seit .NET Framework 3.5 enthält ein `Target`-Element möglicherweise `PropertyGroup`-Elemente. |
@@ -82,7 +80,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-| Element | Beschreibung  |
+| Element | Beschreibung |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
 

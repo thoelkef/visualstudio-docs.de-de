@@ -1,8 +1,6 @@
 ---
 title: Prozessansicht - Konfliktdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943888"
 ---
 # <a name="process-view---contention-data"></a>Prozessansicht: Konfliktdaten
 Die Prozessansicht zeigt Konfliktdaten für die Prozesse und Threads, die während der Profilerstellung ausgeführt wurden.  
@@ -26,7 +24,7 @@ Die Prozessansicht zeigt Konfliktdaten für die Prozesse und Threads, die währe
   
  In der nachstehenden Tabelle werden die Werte der Spalten in der Prozessansicht erklärt.  
   
-|Spalte|Beschreibung |  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Anfangszeit**|Die Anzahl von Millisekunden oder Prozessorzyklen vom Anfang der Profilerstellung zum Anfang des Prozesses oder Threads.|  
 |**Blockierte Zeit**|Die Gesamtzeit, für die die Ausführung von Funktionen des Prozesses oder Threads blockiert wurden.|  

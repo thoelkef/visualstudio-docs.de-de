@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915467"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist eine *CSV-Datei*.  
@@ -49,7 +47,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Allgemeine Berichtsoptionen  
  In der folgenden Tabelle werden die allgemeinen Optionen zur Berichtsformatierung beschrieben sowie die Optionen, die die Daten auswählen, die gemeldet werden sollen.  
   
-|Optionen|description|  
+|Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**U**|Die Berichtsausgabe und die umgeleitete Konsolenausgabe werden als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
 |**Summary:**[*types*]|Erstellt mindestens einen Berichtstyp<br /><br /> -   `All` – alle Berichtstypen werden generiert<br />-   `CallerCallee` – über- und untergeordnete Beziehungen zwischen Funktionen<br />-   `Function` – aufgerufene Funktionen<br />-   `CallTree` – Hierarchien der aufgerufenen Funktionen<br />-   `Counter` – alle Markierungen und Windows-Leistungsindikatorwerte<br />-   `Ip` – Anweisungen mit Profilen<br />-   `Life` – Lebensdauer von zugeordneten Objekten (verfügbar, wenn Speicherbelegungsdaten erfasst wurden)<br />-   `Line` – Profildaten von Quellcodezeilen<br />-   `Header` – der Bericht enthält Dateiheaderinformationen<br />-   `Mark` – alle Markierungen<br />-   `Module` – Module mit Profilen<br />-   `Process` – Prozesse mit Profilen<br />-   `Thread` – Threads mit Profilen<br />-   `Type` – zugeordnete Typen<br />-   `Contention` – Ressourcenkonflikte<br />-   `RuleWarnings` – Probleme mit Leistungsregeln<br />-   `ETW` – alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW). Die ETL-Datendatei muss sich am ursprünglichen Standort oder in dem Verzeichnis mit der VSP- oder VSPS-Datei befinden.|  
@@ -69,7 +67,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Filteroptionen  
  In der folgenden Tabelle werden Optionen beschrieben, über die Sie verfügbare Daten filtern können.  
   
-|Optionen|description|  
+|Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**JustMyCode**[**:**[`caller`][,`callee`]]|Zeigt nur Funktionsaufrufe der Benutzeranwendung an und blendet Systemaufrufe aus<br /><br /> – Keine Parameter: blendet alle Systemfunktionen aus<br />-   `caller` – zeigt eine Ebene von Systemfunktionen an, die Anwendungsfunktionen aufrufen<br />-   `callee` – zeigt eine Ebene von Systemfunktionen an, die von Benutzeranwendungsfunktionen aufgerufen werden|  
 |**StartTime:**[*Wert*]|Zeigt nur Daten an, die nach dem Wert erfasst werden (in Millisekunden)|  
@@ -83,7 +81,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Optionen für Unterschiedeberichte  
  In der folgenden Tabelle werden die Optionen zum Vergleichen von Berichtsdateien beschrieben.  
   
-|Optionen|description|  
+|Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (*VSP-* oder *VSPS-Dateien*). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|  
 |**Diff:**[*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|  
