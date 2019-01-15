@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868182"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269552"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)
 
@@ -30,11 +30,11 @@ Auf dieser Registerkarte des der **Toolboxelemente** Dialogfeld zeigt eine Liste
 
  Die Filterung wird auf jeder Registerkarte ausgeführt. Dies bedeutet, es ist nicht möglich, zum Hinzufügen von Workflowaktivitäten, durch die **.NET Component** Registerkarte. Sie müssen über hinzugefügt werden die **System.Activities** Registerkarte selbst.
 
- Deaktivieren Sie alle Elemente, die Sie nicht in finden Sie unter möchten den **Toolbox** in diesem Dialogfeld Tab oder alternativ Sie können dazu die **löschen** Kontextmenüoption in die **Toolbox** und Aufheben des Verweises auf eine Assembly entfernt sich nicht auf das Element aus der **Toolbox**.
+ Deaktivieren Sie alle Elemente, die Sie nicht in finden Sie unter möchten den **Toolbox** in diesem Dialogfeld Tab oder alternativ Sie können dazu die **löschen** Option in der Maustaste der **Toolbox**und Aufheben des Verweises auf eine Assembly entfernt sich nicht auf das Element aus der **Toolbox**.
 
  Durch Ziehen und Ablegen im Designer wird die Aktivität instanziiert und die Assembly, die das Element enthält, automatisch der Liste von Assemblys hinzugefügt, auf die verwiesen wird. Außerdem gilt, wenn die Aktivität auf eine Assembly C verweist, wird C nicht der Liste von Assemblys, auf die verwiesen wird, hinzugefügt. Assembly C muss im GAC oder dem gleichen Verzeichnis wie Aktivität b Im Fall eines eigenständigen muss die Assembly im GAC oder den überprüfungspfaden von VS zu sein. Nur dann können Sie die Aktivität auf die Workflow-Designer-Oberfläche ziehen und dort ablegen.
 
- **Toolbox** Einstellungen werden standardmäßig als Benutzeroptionen gespeichert daher beim nächsten Öffnen, wenn die **Toolbox**, die benutzerdefinierte Liste von Workflowaktivitäten angezeigt. Ein Nebeneffekt dieser ist, die, wenn Sie bestimmte Elemente Ihrer Domäne, hinzugefügt haben die **Toolbox** über die **Toolboxelemente auswählen** Dialogfeld Sie weiterhin diese Elemente finden bei der Arbeit einer Konsolenanwendung für Workflows ebenfalls. Wenn Sie nicht, um sie anzuzeigen möchten, klicken Sie dann mithilfe des Kontextmenüs löschen oder deaktivieren Sie sie über die **Toolboxelemente** Dialogfeld wie bereits erwähnt.
+ **Toolbox** Einstellungen werden standardmäßig als Benutzeroptionen gespeichert daher beim nächsten Öffnen, wenn die **Toolbox**, die benutzerdefinierte Liste von Workflowaktivitäten angezeigt. Ein Nebeneffekt dieser ist, die, wenn Sie bestimmte Elemente Ihrer Domäne, hinzugefügt haben die **Toolbox** über die **Toolboxelemente auswählen** Dialogfeld Sie weiterhin diese Elemente finden bei der Arbeit einer Konsolenanwendung für Workflows ebenfalls. Wenn Sie nicht, um sie anzuzeigen möchten, klicken Sie dann löschen Sie sie mit der rechten Maustaste, oder deaktivieren Sie diese über die **Toolboxelemente** Dialogfeld wie bereits erwähnt.
 
  Die Spalten in diesem Dialogfeld enthalten die folgenden Informationen:
 

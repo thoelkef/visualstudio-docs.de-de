@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826993"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269903"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -42,7 +42,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Breadcrumb-Leiste am unteren Rand der Diagrammansicht zeigt an, wo sich der ausgewählte Knoten im Schemaset befindet. Wenn mehrere Elemente ausgewählt sind, ist die Breadcrumb-Leiste leer.
 
-## <a name="context-menu"></a>Kontextmenü
+## <a name="context-right-click-menu"></a>Im Kontextmenü (Rechtsklick)
 
  In der folgenden Tabelle werden die Optionen beschrieben, die für alle Knoten auf der Entwurfsoberfläche der Diagrammansicht verfügbar sind.
 
@@ -92,7 +92,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
 
- Verwenden Sie das Kontextmenü um zu Beginn zu öffnen der **Eigenschaften** Fenster. In der Standardeinstellung die **Eigenschaften** Fenster wird angezeigt, in der unteren rechten Ecke von Visual Studio. Wenn Sie einen Knoten, die in der Inhaltsmodellansicht gerendert wird klicken, werden die Eigenschaften des Knotens angezeigt werden, der **Eigenschaften** Fenster.
+ Verwenden Sie im Kontextmenü (Rechtsklick), öffnen Sie zunächst die **Eigenschaften** Fenster. In der Standardeinstellung die **Eigenschaften** Fenster wird angezeigt, in der unteren rechten Ecke von Visual Studio. Wenn Sie einen Knoten, die in der Inhaltsmodellansicht gerendert wird klicken, werden die Eigenschaften des Knotens angezeigt werden, der **Eigenschaften** Fenster.
 
 ## <a name="xsd-toolbar"></a>XSD-Symbolleiste
 
@@ -102,9 +102,9 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 |Option|Beschreibung|
 |-|-----------------|
-|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**1**.|
-|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalt Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**2**.|
-|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**3**.|
+|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**1**.|
+|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalt Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**2**.|
+|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**3**.|
 |**Arbeitsbereich löschen**|Löscht den Arbeitsbereich und die Entwurfsoberfläche.|
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche. Diese Option ist in der Inhaltsmodellansicht und der Diagrammansicht aktiviert.|
@@ -141,7 +141,7 @@ Der Zoomschieberegler ist nicht transparent, wenn Sie es auswählen, zeigen Sie 
 
 ## <a name="xml-editor-integration"></a>Integration des XML-Editors
 
- Klicken Sie auf einen Knoten, und wählen Sie das Kontextmenüelement "Code anzeigen" aus, um zwischen der Diagrammansicht und dem XML-Editor hin- und herzuwechseln.
+ Sie können hin und her zwischen der Diagrammansicht und der XML-Editor wechseln, indem Sie auf einen Knoten klicken und im Kontextmenü (Rechtsklick) "Anzeigecode".
 
  Wenn Sie im XML-Editor Änderungen am Schemaset vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
 

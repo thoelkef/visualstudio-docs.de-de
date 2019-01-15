@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929697"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269318"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen
-Einige Eigenschaften der Form, wie z. B. Farbe "verfügbar gemacht werden kann' - verknüpft, d. h. einer Domäneneigenschaft der Form. Andere haben direkt gesteuert werden.
+
+Einige Eigenschaften von Formen wie z. B. Farbe können "verfügbar gemacht werden". D. h. können die Eigenschaften einer Domäneneigenschaft der Form verknüpft werden. Andere haben direkt gesteuert werden.
 
 ## <a name="exposing-a-property"></a>Verfügbarmachen einer Eigenschaft
  Einige Eigenschaften wie Farbe der Form können auf den Wert einer Domäneneigenschaft verknüpft werden.
 
- Wählen Sie in der DSL-Definition einer Form, den Connector oder die Diagrammklasse aus. Wählen Sie auf das Kontextmenü zu öffnen, **verfügbare hinzufügen**, und wählen Sie dann die gewünschte Eigenschaft, z. B. Farbe füllen.
+ Wählen Sie in der DSL-Definition einer Form, den Connector oder die Diagrammklasse aus. Wählen Sie auf der rechten Maustaste, **verfügbare hinzufügen**, und wählen Sie dann die gewünschte Eigenschaft, z. B. Farbe füllen.
 
  Die Form verfügt jetzt über eine Eigenschaft "Domain", die Sie im Programmcode oder als Benutzer festlegen können.
 

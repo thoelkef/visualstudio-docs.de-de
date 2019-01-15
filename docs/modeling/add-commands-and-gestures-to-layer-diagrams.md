@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2322980bcc3cc1c18052b7949cc9e4752ebfaa9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940861"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270137"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
-Sie können definieren die Kontextmenübefehle und Gestenhandler in Abhängigkeitsdiagrammen in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
+Sie können definieren mit der rechten Maustaste Menübefehle und Gestenhandler in Abhängigkeitsdiagrammen in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
 
 Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Beispielsweise können Sie eine einzelne VSIX definieren, die Ebenenbefehle, und eine domänenspezifische Sprache enthält.
 

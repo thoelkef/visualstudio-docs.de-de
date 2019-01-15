@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825256"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269149"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML-Schema-Designer-Arbeitsbereich
 
@@ -30,7 +30,7 @@ Zum Hinzufügen von Knoten zum Arbeitsbereich stehen die folgenden Methoden zur 
 
 -   Drag & drop, globale Knoten, Dateiknoten und Namespaceknoten aus der **XML-Schema-Explorer** auf eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "Knoten ziehen und Ablegen von" in [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).
 
--   Verwenden Sie das Kontextmenü in der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Verwenden Sie das Kontextmenü (Rechtsklick), in der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Ausführen einer Suche im XSD-Explorer, und klicken Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:
 
 -   XSD-Designer-Symbolleiste
 
--   Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht
+-   (Rechtsklick) Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht.
 
 -   Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht
 

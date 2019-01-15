@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955252"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269223"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
 
@@ -183,13 +183,11 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
 ## <a name="exclude-code-analysis-warnings"></a>Ausschließen von codeanalysewarnungen
 
-### <a name="to-exclude-code-defect-warnings"></a>Auszuschließende Mängel Code (Warnungen)
-
 1. Führen Sie für jede der verbleibenden Warnungen folgende Schritte aus:
 
     1. Wählen Sie die Warnung in der **Fehlerliste**.
 
-    1. Wählen Sie im Menü Kontextmenü **unterdrücken** > **In Unterdrückungsdatei**.
+    1. Wählen Sie im Kontextmenü (Kontextmenü) **unterdrücken** > **In Unterdrückungsdatei**.
 
 1. Erstellen Sie das Projekt neu.
 
