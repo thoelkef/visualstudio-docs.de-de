@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumSymbols | Microsoft Docs
-ms.custom: ''
+title: IDiaEnumSymbols | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb30549dc50b9e585768cd8778b8cbb70fb0f0c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53b407a8bceca3127bea54470bcab3cc42aa3b81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964047"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Listet die verschiedenen Symbole in der Datenquelle an.  
@@ -27,7 +25,7 @@ Listet die verschiedenen Symbole in der Datenquelle an.
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaEnumSymbols : IUnknown  
+IDiaEnumSymbols : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
@@ -35,19 +33,19 @@ IDiaEnumSymbols : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Ruft die `IEnumVARIANT Interface` Version des Enumerators.|  
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Ruft die `IEnumVARIANT Interface` Version von diesem Enumerator.|  
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Ruft die Anzahl der Symbole ab.|  
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Ruft ein Symbol, das über einen Index ab.|  
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Ruft eine angegebene Anzahl der Symbole in der Enumerationsfolge ab.|  
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Überspringt eine angegebene Anzahl der Symbole in einem Enumerationsfolge.|  
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Ruft ein Symbol mithilfe eines Indexes ab.|  
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Ruft eine angegebene Anzahl von Symbolen in der Enumerationsfolge ab.|  
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Überspringt eine angegebene Anzahl von Symbolen in einer Enumerationsfolge.|  
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle bietet Symbole, die durch einen bestimmten Typ von Symbolen, z. B. gruppiert `SymTagUDT` (benutzerdefinierte Typen) oder `SymTagBaseClass`. Verwenden Sie zum Arbeiten mit nach Adresse angeordneten Symbole der [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) Schnittstelle.  
+ Diese Schnittstelle bietet, gruppiert nach einem bestimmten Typ von Symbolen, z. B. Symbole `SymTagUDT` (benutzerdefinierte Typen) oder `SymTagBaseClass`. Verwenden Sie zum Arbeiten mit nach Adresse angeordneten Symbole die [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, durch Aufrufen der folgenden Methoden:  
+ Rufen Sie diese Schnittstelle durch Aufrufen der folgenden Methoden:  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -56,10 +54,10 @@ IDiaEnumSymbols : IUnknown
 -   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Abrufen der `IDiaEnumSymbols` Schnittstelle, und klicken Sie dann diese Liste von benutzerdefinierten Typen (UDTs)-Enumeration.  
+ Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumSymbols` Schnittstelle, und klicken Sie dann diese Enumeration so Listen Sie benutzerdefinierte Typen (UDTs).  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, umschließt eine `BSTR` und behandelt automatisch die Zeichenfolge freigeben, wenn es sich bei die Instanziierung den Gültigkeitsbereich verlässt.  
+>  `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -96,6 +94,6 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

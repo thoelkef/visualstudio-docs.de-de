@@ -1,8 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Mithilfe der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c92a8b24dd3d932eedfcb122b4da9294dd3418
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9644e4b9f9d0a193c0d8088aa9e237d84f276aa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823314"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Studio-Grafikdiagnosetools zur Untersuchung eines Compute-Shaders verwendet werden, der falsche Ergebnisse generiert.  
@@ -24,9 +22,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 -   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.  
   
--   Mithilfe der **Aufrufliste des Grafikereignisses** um zu bestimmen, welcher Shader wird ausgeführt, indem eine DirectCompute `Dispatch` Ereignis.  
+-   Verwenden Sie die **Aufrufliste des Grafikereignisses**, um zu ermitteln, welcher Compute-Shader durch ein `Dispatch`-Ereignis in DirectCompute ausgeführt wird.  
   
--   Mithilfe der **Grafikpipelinestufen** Fenster und HLSL-debugger um den Compute-Shader zu untersuchen, die die Quelle des Problems ist.  
+-   Untersuchen Sie den Compute-Shader, der das Problem verursacht, über das Fenster **Grafikpipelinestufen** und mit dem HLSL-Debugger.  
   
 ## <a name="scenario"></a>Szenario  
  In diesem Szenario haben Sie eine Fluiddynamiksimulation geschrieben, die DirectCompute zur Ausführung der berechnungsintensivsten Teile des Simulationsupdates verwendet. Beim Ausführen der App werden Dataset und Benutzeroberfläche korrekt wiedergegeben, die Simulation verhält sich jedoch nicht wie erwartet. Mithilfe der Grafikdiagnose können Sie den Fehler in einer Grafikprotokolldatei erfassen, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:  
@@ -40,19 +38,19 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>So überprüfen Sie einen Frame in einem Grafikprotokoll  
   
-1. Laden Sie ein Grafikprotokoll in Visual Studio, das einen Frame mit falschen Simulationsergebnissen enthält. Eine neue Grafikdiagnose-Registerkarte wird in Visual Studio angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet der **Frameliste**, die alle aufgezeichneten Frames als Miniaturansichten angezeigt.  
+1. Laden Sie ein Grafikprotokoll in Visual Studio, das einen Frame mit falschen Simulationsergebnissen enthält. Eine neue Grafikdiagnose-Registerkarte wird in Visual Studio angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.  
   
-2. In der **Frameliste**, wählen Sie einen Frame aus, die das falsche simulationsverhalten auftritt. Obwohl sich der Fehler scheinbar im Simulationscode und nicht im Renderingode befindet, müssen Sie trotzdem einen Frame auswählen, da DirectCompute-Ereignisse von einem Frame zum nächsten, gemeinsam mit Direct3D-Ereignissen aufgezeichnet werden. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
+2. Wählen Sie einen Frame in der **Frameliste** aus, in dem das falsche Simulationsverhalten auftritt. Obwohl sich der Fehler scheinbar im Simulationscode und nicht im Renderingode befindet, müssen Sie trotzdem einen Frame auswählen, da DirectCompute-Ereignisse von einem Frame zum nächsten, gemeinsam mit Direct3D-Ereignissen aufgezeichnet werden. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   
     ![Das grafikprotokolldokument in Visual Studio. ](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
-   Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Graphics Event List** enthält ein Ereignis für jeden directcompute- und Direct3D-API-Aufruf, der während des aktiven Frames erfolgt, z. B. API-Aufrufe, um eine Berechnung auf dem GPU ausgeführt oder um das Dataset oder der Benutzeroberfläche zu rendern. In diesem Fall interessieren uns die `Dispatch`-Ereignisse, die Teile der im GPU ausgeführten Simulation darstellen.  
+   Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** zeigt ein Ereignis für jeden DirectCompute- und Direct3D-API-Aufruf an, der erfolgte, als der Frame aktiv war. Dazu gehören beispielsweise API-Aufrufe zur Ausführung einer Berechnung auf dem GPU, das Rendern eines Datasets oder der Benutzeroberfläche. In diesem Fall interessieren uns die `Dispatch`-Ereignisse, die Teile der im GPU ausgeführten Simulation darstellen.  
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>So finden Sie das Dispatchereignis für das Simulationsupdate  
   
-1. Auf der **Grafikdiagnose** Symbolleiste wählen **Ereignisliste** zum Öffnen der **Graphics Event List** Fenster.  
+1. Klicken Sie auf der Symbolleiste **Grafikdiagnose** auf **Ereignisliste**, um das Fenster **Grafikereignisliste** zu öffnen.  
   
-2. Überprüfen Sie die **Graphics Event List** für das Zeichnen-Ereignis, das das Dataset gerendert wird. Um dies zu vereinfachen, geben Sie `Draw` in die **Suche** der oberen rechten Ecke des Dialogfelds die **Graphics Event List** Fenster. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario ermitteln Sie, dass die folgenden Zeichnen-Ereignisse aufgetreten sind:  
+2. Suchen Sie das Zeichnen-Ereignis, mit dem das Dataset gerendert wird, in der **Grafikereignisliste**. Um dies zu vereinfachen, geben Sie `Draw` in die **Suche** der oberen rechten Ecke des Dialogfelds die **Graphics Event List** Fenster. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario ermitteln Sie, dass die folgenden Zeichnen-Ereignisse aufgetreten sind:  
   
     ![Die Ereignisliste &#40;EL&#41; zeigt zeichnen-Ereignisse. ](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
@@ -62,7 +60,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
     ![Dieses draw-Ereignis rendert das simulationsdataset. ](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5. Jetzt überprüfen die **Graphics Event List** für die `Dispatch` -Ereignis, das die Simulation aktualisiert. Da es wahrscheinlich ist, dass die Simulation vor dem Rendering aktualisiert wird, können Sie sich zunächst auf die `Dispatch`-Ereignisse konzentrieren, die vor dem Zeichnen-Ereignis auftreten, das die Ergebnisse rendert. Um dies zu vereinfachen, Ändern der **Suche** Feld lesen `Draw;Dispatch;CSSetShader(`. Dadurch wird die Liste gefiltert, sodass sie zusätzlich zu den Zeichnen-Ereignissen auch `Dispatch`- und `CSSetShader`-Ereignisse enthält. In diesem Szenario ermitteln Sie, dass mehrere `Dispatch`-Ereignisse vor dem Zeichnen-Ereignis aufgetreten sind:  
+5. Überprüfen Sie jetzt die **Grafikereignisliste** auf das `Dispatch`-Ereignis, das die Simulation aktualisiert. Da es wahrscheinlich ist, dass die Simulation vor dem Rendering aktualisiert wird, können Sie sich zunächst auf die `Dispatch`-Ereignisse konzentrieren, die vor dem Zeichnen-Ereignis auftreten, das die Ergebnisse rendert. Um dies zu vereinfachen, Ändern der **Suche** Feld lesen `Draw;Dispatch;CSSetShader(`. Dadurch wird die Liste gefiltert, sodass sie zusätzlich zu den Zeichnen-Ereignissen auch `Dispatch`- und `CSSetShader`-Ereignisse enthält. In diesem Szenario ermitteln Sie, dass mehrere `Dispatch`-Ereignisse vor dem Zeichnen-Ereignis aufgetreten sind:  
   
     ![Der EREIGNISLISTE werden Draw-, Dispatch- und CSSetShader-Ereignisse](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
@@ -70,17 +68,17 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 #### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>So ermitteln Sie, welcher Compute-Shader von einem Dispatchaufruf ausgeführt wird  
   
-1. Auf der **Grafikdiagnose** Symbolleiste wählen **Ereignisaufrufliste** Öffnen der **Aufrufliste des Grafikereignisses** Fenster.  
+1. Wählen Sie zum Öffnen des Fensters **Aufrufliste des Grafikereignisses** auf der Symbolleiste **Grafikdiagnose** die Option **Ereignisaufrufliste** aus.  
   
-2. Bewegen Sie sich ausgehend vom Zeichnen-Ereignis, das die Simulationsergebnisse rendert, rückwärts durch die vorherigen `CSSetShader`-Ereignisse. Klicken Sie auf die **Aufrufliste des Grafikereignisses** Fenster die oberste Funktion verwenden, zu der Aufrufsite zu navigieren. An der Aufrufsite können Sie den ersten Parameter die [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) Funktionsaufruf, um zu bestimmen, welcher Shader durch das nächste ausgeführt wird `Dispatch` Ereignis.  
+2. Bewegen Sie sich ausgehend vom Zeichnen-Ereignis, das die Simulationsergebnisse rendert, rückwärts durch die vorherigen `CSSetShader`-Ereignisse. Wählen Sie anschließend im Fenster **Aufrufliste des Grafikereignisses** die oberste Funktion aus, um zur Aufrufsite zu navigieren. An der Aufrufsite können Sie den ersten Parameter des [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader)-Funktionsaufrufs verwenden, um zu bestimmen, welcher Shader durch das nächste `Dispatch`-Ereignis ausgeführt wird.  
   
    In diesem Szenario befinden sich in jedem Frame drei Paare mit `CSSetShader`- und `Dispatch`-Ereignissen. Von hinten angefangen stellt das dritte Paar den Integrationsschritt dar (in dem die flüssigen Partikel tatsächlich verschoben werden), das zweite Paare stellt den Schritt der Kräfteberechnung dar (in dem die Kräfte berechnet werden, die jedes einzelne Partikel beeinflussen), und das dritte Paar enthält den Schritt der Dichteberechnung.  
   
 #### <a name="to-debug-the-compute-shader"></a>So debuggen Sie den Compute-Shader  
   
-1. Auf der **Grafikdiagnose** Symbolleiste wählen **Pipelinestufen** zum Öffnen der **Grafikpipelinestufen** Fenster.  
+1. Klicken Sie auf der Symbolleiste **Grafikdiagnose** auf **Pipelinestufen**, um das Fenster **Grafikpipelinestufen** zu öffnen.  
   
-2. Wählen Sie das dritte `Dispatch` Ereignis (diejenige, die das Zeichnen-Ereignis unmittelbar vorangestellt) und dann auf die **Grafikpipelinestufen** Fenster unter dem **Compute-Shader** -Stufe  **Starten Sie das Debuggen**.  
+2. Wählen Sie das dritte `Dispatch`-Ereignis aus (das Ereignis direkt vor dem Zeichnen-Ereignis), und klicken Sie dann im Fenster **Grafikpipelinestufen** unter der Stufe **Compute-Shader** auf **Debuggen starten**.  
   
     ![Wählen das dritte Dispatch-Ereignis in der EL.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
@@ -90,7 +88,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
     ![Debuggen des IntegrateCS-Compute-Shaders. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Zum Beenden des Debuggens im Compute-Shaders in der **Debuggen** Symbolleiste wählen **Debuggen beenden** (Tastatur: UMSCHALT + F5).  
+4. Zum Beenden des Debuggens im Compute-Shaders in der **Debuggen** Symbolleiste wählen **Debuggen beenden** (Tastatur: UMSCHALT+F5  
   
 5. Wählen Sie danach Sie das zweite `Dispatch`-Ereignis aus, und starten Sie das Debugging des Compute-Shaders, wie Sie dies bereits im vorherigen Schritt getan haben.  
   

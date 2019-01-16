@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Produktmanifests | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824599"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Gewusst wie: Erstellen eines Produktmanifests
+# <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Die Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, durch den Endbenutzer-Lizenzverträge und die Language Packs.  
   
- Weitere Informationen zu der Produkt-Manifeste, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).  
+ Weitere Informationen zu der Produkt-Manifeste, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)  
   
 ## <a name="create-the-product-manifest"></a>Das Produktmanifest erstellen  
   
@@ -161,4 +159,4 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

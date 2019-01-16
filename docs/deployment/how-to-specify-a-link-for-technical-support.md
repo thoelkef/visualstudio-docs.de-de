@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Angeben eines Links für technischen Support | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Geben Sie einen Link für den technischen Support | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933939"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Gewusst wie: Angeben eines Links für technischen Support
+# <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für den technischen Support
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung, die **Support-URL** Eigenschaft identifiziert, einer Webseite oder Dateifreigabe, in dem Benutzer zum Abrufen von Informationen zur Anwendung gelangen. Diese Eigenschaft ist optional. Wenn angegeben, wird die URL in der Eintrag der Anwendung angezeigt werden **Software** Dialogfeld.  
   
  Die **Support-URL** Eigenschaft kann festgelegt werden, auf die **veröffentlichen** auf der Seite die **Projekt-Designer**.  
@@ -38,7 +36,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
   
@@ -48,4 +46,4 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Gewusst wie: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,8 +1,6 @@
 ---
-title: "\"DebugBreak\" und \"_debugbreak\" | Microsoft Docs"
-ms.custom: ''
+title: DebugBreak und __debugbreak | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933848"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak und "_debugbreak"
-Sie können die DebugBreak Win32-Funktion aufrufen oder die [__debugbreak](/cpp/intrinsics/debugbreak) systeminterne an einem beliebigen Punkt im Code. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.  
+Die Win32-Funktion „DebugBreak“ oder die systeminterne Funktion [__debugbreak](/cpp/intrinsics/debugbreak) kann an einer beliebigen Stelle im Code aufgerufen werden. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.  
   
  Da durch `DebugBreak` eine Systemfunktion aufgerufen wird, müssen Systemdebugsymbole installiert werden, um sicherzustellen, dass nach dem Abbrechen die richtigen Aufruflisteninformationen angezeigt werden. Andernfalls sind die vom Debugger angezeigten Aufruflisteninformationen möglicherweise um einen Rahmen verschoben sind. Wenn Sie `__debugbreak` verwenden, sind keine Symbole erforderlich.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Intrinsische Compilerfunktionen](/cpp/intrinsics/compiler-intrinsics)   
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

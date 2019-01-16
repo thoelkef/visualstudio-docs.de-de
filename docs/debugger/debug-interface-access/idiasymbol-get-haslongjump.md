@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_haslongjump | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b9b15ce97abaad224a6728120e5a22e766ae01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879865"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl (mit gekoppelten eine [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl bilden die C-Stil-Methode der Ausnahmebehandlung).  
@@ -46,11 +44,11 @@ HRESULT get_hasLongJump
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_hassetjump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
+ [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
  [setjmp](/cpp/c-runtime-library/reference/setjmp)

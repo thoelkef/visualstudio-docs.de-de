@@ -1,8 +1,6 @@
 ---
 title: '&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899823"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; -Element (ClickOnce-Bereitstellung)
 Das Element der obersten Ebene für das Bereitstellungsmanifest.  
@@ -32,7 +30,7 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
   
 ```xml  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -40,7 +38,7 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
  Die `assembly` -Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Manifestelemente muss in den folgenden Namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, und `http://www.w3.org/2000/09/xmldsig#`. Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, die durch Vererbung oder durch markieren.  
   
- Die `assembly` Element weist das folgende Attribut.  
+ Das `assembly` -Element hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

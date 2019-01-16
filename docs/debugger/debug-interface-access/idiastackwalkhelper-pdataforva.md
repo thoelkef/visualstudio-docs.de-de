@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888022"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Gibt zurück, der PDATA-Datenblock, der der virtuellen Adresse zugeordnet.  
@@ -27,7 +25,7 @@ Gibt zurück, der PDATA-Datenblock, der der virtuellen Adresse zugeordnet.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT pdataForVA(   
+HRESULT pdataForVA(   
    ULONGLONG  va,  
    DWORD      cbData,  
    DWORD*     pcbData,  
@@ -46,10 +44,10 @@ HRESULT pdataForVA(
  [out] Gibt die tatsächliche Größe der Daten in Byte, das abgerufen wurde.  
   
  `pbData`  
- [in, out] Ein Puffer, der mit der angeforderten Daten gefüllt wird. Nicht möglich, `NULL`.  
+ [in, out] Ein Puffer, der mit der angeforderten Daten gefüllt wird. Darf nicht `NULL` sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` liegt keine PDATA für die angegebene Adresse. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` liegt keine PDATA für die angegebene Adresse. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Der pdata-Abschnitt (Abschnitt mit dem Namen ".pdata-Datensatz") eine Kompiliereinheit enthält Informationen über Ausnahmebehandlung für Funktionen.  

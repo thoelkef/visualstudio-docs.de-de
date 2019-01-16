@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Site verwendet IP-Adresse | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: Site verwendet IP-Adresse | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
@@ -18,25 +16,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b726902c57cc95b694f2ab7e656a444ed42a0ba9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 66e63a85ecbf42d0d4091a7ce9315c91184078ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871368"
 ---
 # <a name="error-site-uses-ip-address"></a>Fehler: Site verwendet IP-Adresse
-Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine Webanwendung anzuhängen, die eine IP-Adresse verwendet. Dies tritt auf, wenn Sie ändern **Websiteidentifikation** auf **spezifische IP-Adresse** in IIS.  
+Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine Webanwendung anzuhängen, die eine IP-Adresse verwendet. Dies passiert, wenn Sie in IIS **Identifikation der Webseite** in **Spezielle IP-Adresse verwenden** ändern.  
   
  Damit das automatische Anhängen funktioniert, muss das Projekt mit einer speziellen IP-Adresse und nicht nur mit dem Computernamen erstellt werden. Andernfalls ändert der Debugger den Computeramen in Localhost, wodurch beim Senden des DEBUG-Verbs an IIS ein Fehler auftritt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Anhängen stattdessen manuell (Wählen Sie im Menü Debuggen **an den Prozess anhängen**).  
+1.  Führen Sie das Anhängen stattdessen manuell aus (wählen Sie im Menü „Debuggen“ **An den Prozess anhängen** aus).  
   
      – oder –  
   
-2.  Ändern der **Identifikation der IIS-Website** Einstellung.  
+2.  Ändern Sie die Einstellung **Identifikation der IIS-Website**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

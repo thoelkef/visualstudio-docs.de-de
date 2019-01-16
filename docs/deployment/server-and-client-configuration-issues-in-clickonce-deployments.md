@@ -1,8 +1,6 @@
 ---
 title: Server Probleme und Clientkonfiguration in ClickOnce-Bereitstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955554"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.  
 
  Darüber hinaus einige Webserver und Anwendungssoftware, z. B. Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], enthalten eine Liste von Dateien und Dateitypen, die nicht heruntergeladen werden können. Z. B. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] verhindert das Herunterladen aller *"Web.config"* Dateien. Diese Dateien möglicherweise vertraulichen Informationen wie Benutzernamen und Kennwörter enthalten.  
@@ -35,11 +33,11 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 
  Einige Webserver können Dateien mit Erweiterungen, z. B. blockieren *DLL*, *config*, und *mdf*. Windows-basierten Anwendungen beinhalten in der Regel einige dieser Erweiterungen. Wenn ein Benutzer versucht, Sie führen eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die eine blockierte Datei auf einem Webserver zugreift, ein Fehler ausgegeben. Anstatt alle Dateierweiterungen, Blockierung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] veröffentlicht-Datei mit jeder Anwendung eine *".deploy"* Dateierweiterung standardmäßig. Aus diesem Grund muss der Administrator nur so konfigurieren Sie den Webserver so Entsperren die folgenden drei Erweiterungen:  
 
-- *.Application*  
+- *.application*  
 
-- *". manifest"*  
+- *.manifest*  
 
-- *".deploy"* 
+- *.deploy* 
 
   Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
 
@@ -82,7 +80,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ## <a name="use-third-party-web-servers"></a>Verwenden von Drittanbieter-Web-Server  
  Bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung von einem Webserver als IIS können Sie ein Problem auftreten, wenn der Server, den falschen Inhaltstyp für Schlüssel zurückgibt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien, z. B. das Bereitstellungsmanifest und Anwendungsmanifest. Um dieses Problem zu beheben, finden Sie in Ihrem Webserver-Hilfe, die Dokumentation über das Hinzufügen von neuer Inhaltstypen an den Server, und stellen Sie sicher, dass alle Datei Namen Erweiterung Zuordnungen in der folgenden Tabelle aufgeführt sind.  
 
-|Dateierweiterung|Inhaltstyp|  
+|Dateinamenerweiterung|Inhaltstyp|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -99,7 +97,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 
 | URL-Typ | Beschreibung |
 |----------| - |
-| FTP: / / | Sie können Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
+| ftp:// | Sie können Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
 | http:// | Installation kann ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
 | https:// | Installation kann ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
 | file:// | Installation kann ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
@@ -107,12 +105,12 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows-Firewall  
  Windows XP SP2 aktiviert standardmäßig die Windows-Firewall. Wenn Sie Ihre Anwendung auf einem Computer, die Windows XP installiert ist entwickeln, können Sie weiterhin auf veröffentlichen, und führen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen vom lokalen Server, auf denen IIS ausgeführt wird. Allerdings können nicht Sie den Server zugreifen, der IIS auf einem anderen Computer ausgeführt wird, es sei denn, Sie die Windows-Firewall zu öffnen. Informationen zum Verwalten der Windows-Firewall finden Sie in der Windows-Hilfe.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>WindowsServer: Aktivieren Sie FrontPage-Servererweiterungen  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Aktivieren Sie FrontPage-Servererweiterungen  
  FrontPage-Servererweiterungen von Microsoft ist erforderlich, für die Veröffentlichung von Anwendungen auf einem Windows-Webserver, der HTTP verwendet.  
 
  Standardmäßig verfügt Windows Server nicht über FrontPage-Servererweiterungen installiert. Wenn Sie verwenden möchten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] um an einen Webserver für Windows Server zu veröffentlichen, die mit FrontPage-Servererweiterungen HTTP verwendet, müssen Sie zunächst die FrontPage-Servererweiterungen installieren. Sie können die Installation ausführen, indem mithilfe des Verwaltungstools für die Serververwaltung in Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>WindowsServer: Gesperrten-Inhaltstypen  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Gesperrte Inhaltstypen  
  IIS auf [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Sperren nach-unten-alle Dateitypen mit Ausnahme bestimmter bekannten Inhaltstypen (z. B. *.htm*, *.html*, *.txt*und so weiter). So aktivieren Sie die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die diesen Server verwenden, müssen Sie die IIS-Einstellungen zum Zulassen der Herunterladen von Dateien des Typs ändern *.application*, *". manifest"*, und beliebige andere benutzerdefinierte Typen von verwendet der Anwendung.  
 
  Wenn Sie die Bereitstellung mit einem IIS-Server, führen Sie *inetmgr.exe* und fügen Sie neue Dateitypen für die Standardwebseite hinzu:  
@@ -137,5 +135,5 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)   
- [Wählen Sie eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
+ [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)

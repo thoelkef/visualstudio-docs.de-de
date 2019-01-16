@@ -2,7 +2,6 @@
 title: Erstellen und Konfigurieren von Datasets
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829234"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
 
@@ -40,7 +39,7 @@ Sie können einen typisierten erstellen <xref:System.Data.DataSet> Klasse in Vis
 
 4. Wählen Sie die Tabellen (oder einzelne Spalten), gespeicherte Prozeduren, Funktionen und Sichten aus der Datenbank, die im Dataset dargestellt werden sollen.
 
-     ![Wählen Sie Datenbankobjekte aus](../data-tools/media/raddata-chose-objects.png)
+     ![Datenbankobjekte auswählen](../data-tools/media/raddata-chose-objects.png)
 
 5. Klicken Sie auf **Fertig stellen**.
 
@@ -82,7 +81,7 @@ Diese Prozedur zeigt, wie Sie eine Tabelle aus der gleichen Datenbank hinzufüge
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Hinzufügen einer eigenständigen Datentabelle zu einem dataset
 
-1. Öffnen Sie das Dataset im DataSet-Designer **.
+1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
 2. Ziehen Sie eine <xref:System.Data.DataTable> -Klasse aus der **DataSet** Registerkarte die **Toolbox** auf die **Dataset-Designer**.
 

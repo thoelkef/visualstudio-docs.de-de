@@ -223,29 +223,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932719"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Beheben von Datenzugriffsfehlern in den Foren
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Hier sind einige datenbezogenen Foren auf MSDN verfügbar sind:
 
-- [Windows Forms-Datensteuerelemente und Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms-Datensteuerelemente und -Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [ADO.NET DataSet-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework und LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
-- [WCF Data Services-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [WCF Data Services-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [SQL Server-datenzugriffsforum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Forum zum SQL Server-Datenzugriff](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [LINQ to SQL-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 

@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Arbeitsgruppe Fehler bei Remoteanmeldung | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: Fehler bei Remoteanmeldung von Arbeitsgruppe | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60cee4e6bdb4ebab925325695eb9ad6813929879
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1b197913abecbaf2ff74913a41720f464646fc67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848047"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Fehler: Fehler bei Remoteanmeldung von Arbeitsgruppe
 Inhalt dieses Fehlers:  
@@ -38,43 +36,43 @@ Inhalt dieses Fehlers:
   
 -   Es gibt kein Konto auf dem Remotecomputer mit übereinstimmendem Namen und Kennwort.  
   
--   Wenn der Visual Studio-Computer und dem Remotecomputer in Arbeitsgruppen befinden, kann dieser Fehler auftreten, aufgrund der Standardeinstellung **lokale Sicherheitsrichtlinie** auf dem Remotecomputer festlegen. Die Standardeinstellung für die **lokale Sicherheitsrichtlinie** Einstellung **nur Gast - lokale Benutzer authentifizieren sich als Gast**. Um in diesem Setup zu debuggen, müssen Sie die Einstellung auf dem Remotecomputer zu ändern **Klassisch - lokale Benutzer authentifizieren sich als Sie selbst**.  
+-   Wenn der Visual Studio-Computer und der Remotecomputer sich beide in Arbeitsgruppen befinden, wird dieser Fehler u.U. aufgrund der Standardeinstellung für die **Lokale Sicherheitsrichtlinie** auf dem Remotecomputer ausgelöst. Die Standardeinstellung für die **Lokale Sicherheitsrichtlinie** ist **Nur Gast – lokale Benutzer authentifizieren sich als Gast**. Um in diesem Setup zu debuggen, müssen Sie die Einstellung auf dem Remotecomputer in **Klassisch – lokale Benutzer authentifizieren sich als sie selbst** ändern.  
   
 > [!NOTE]
 >  Sie müssen Administrator sein, um die folgenden Aufgaben ausführen zu können.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>So öffnen Sie das Fenster "Lokale Sicherheitsrichtlinie"  
   
-1.  Starten Sie die **secpol.msc** Microsoft Management Console-Snap-in. Geben Sie "secpol.msc" in die Windows-Suche, das Windows-Ausführungsfeld oder in einer Eingabeaufforderung ein.  
+1.  Starten Sie das Microsoft Management Console-Snap-In **secpol.msc**. Geben Sie "secpol.msc" in die Windows-Suche, das Windows-Ausführungsfeld oder in einer Eingabeaufforderung ein.  
   
 ### <a name="to-add-user-rights-assignments"></a>So fügen Sie Benutzerrechtezuordnungen hinzu  
   
-1.  Öffnen der **lokale Sicherheitsrichtlinie** Fenster.  
+1.  Öffnen Sie das Fenster **Lokale Sicherheitsrichtlinie**.  
   
-2.  Erweitern Sie die **lokale Richtlinien** Ordner.  
+2.  Erweitern Sie den Ordner **Lokale Richtlinien**.  
   
 3.  Klicken Sie auf **Zuweisen von Benutzerrechten**.  
   
-4.  In der **Richtlinie** Spalte doppelklicken Sie auf **Debuggen von Programmen** zum Anzeigen der aktuellen richtlinienzuweisungen der lokalen Gruppe "in der **lokale Sicherheitsrichtlinie einstellen** (Dialogfeld).  
+4.  Doppelklicken Sie in der Spalte **Richtlinie** auf **Debuggen von Programmen**, um die aktuell zugewiesenen Richtlinien der lokalen Gruppe im Dialogfeld **Lokale Sicherheitsrichtlinieneinstellung** anzuzeigen.  
   
-     ![Lokale Richtlinie Benutzerrechten](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
+     ![Lokalen Benutzerrechte für Richtlinie](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-5.  Um neue Benutzer hinzuzufügen, klicken Sie auf die **Benutzer oder Gruppe hinzufügen** Schaltfläche.  
+5.  Klicken Sie auf die Schaltfläche **Benutzer oder Gruppe hinzufügen**, um neue Benutzer hinzuzufügen.  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>So ändern Sie das Modell für gemeinsame Nutzung und das Sicherheitsmodell  
   
-1.  Öffnen der **lokale Sicherheitsrichtlinie** Fenster.  
+1.  Öffnen Sie das Fenster **Lokale Sicherheitsrichtlinie**.  
   
-2.  Erweitern Sie die **lokale Richtlinien** Ordner.  
+2.  Erweitern Sie den Ordner **Lokale Richtlinien**.  
   
 3.  Klicken Sie auf **Sicherheitsoptionen**.  
   
 4.  In der **Richtlinie** Spalte doppelklicken Sie auf **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.  
   
-5.  In der **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** Dialogfeld Feld, ändern Sie den Wert auf **Klassisch - lokale Benutzer authentifizieren sich als Sie selbst** , und klicken Sie auf die **übernehmen**Schaltfläche.  
+5.  In der **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** Dialogfeld ändern den Wert, der **Klassisch - lokale Benutzer authentifizieren sich als Sie selbst** , und klicken Sie auf die **übernehmen** Schaltfläche.  
   
-     ![Sicherheitsoptionen für Richtlinie lokalen Sicherheitsgruppe](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Sicherheitsoptionen für lokale Richtlinie](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)
+ [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

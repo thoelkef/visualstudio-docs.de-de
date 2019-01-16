@@ -1,8 +1,6 @@
 ---
 title: Schnellansichtarchitektur | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822951"
 ---
 # <a name="visualizer-architecture"></a>Schnellansichtarchitektur
 Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:  
   
-- Die *Debuggerseite* in Visual Studio-Debugger ausgeführt wird. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
+- Die *Debuggerseite* wird innerhalb des Visual Studio-Debuggers ausgeführt. Im debuggerseitigen Code wird die Benutzeroberfläche für die Schnellansicht erstellt und angezeigt.  
   
-- Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, die Visual Studio debuggt (die *zu debuggende Komponente*).  
+- Die *zu debuggende Seite* wird innerhalb des Prozesses ausgeführt, den Visual Studio debuggt (die *zu debuggende Komponente*).  
   
-  Eine Schnellansicht ist eine Debuggerkomponente, mit dem Sie den Debugger zum anzeigen kann (*visualisieren*) den Inhalt eines Datenobjekts in aussagekräftiger, verständlicher Form. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
+  Eine Schnellansicht ist eine Debuggerkomponente, mit der der Debugger die Inhalte eines Datenobjekts in aussagekräftiger, verständlicher Form anzeigen (*visualisieren*) kann. Einige Schnellansichten unterstützen auch die Bearbeitung des Datenobjekts. Sie können den Debugger erweitern, um eigene benutzerdefinierte Datentypen zu behandeln, indem Sie benutzerdefinierte Schnellansichten schreiben.  
   
-  Das Datenobjekt, das visualisiert werden befindet sich innerhalb des Prozesses, die Sie Debuggen (der *zu debuggende Komponente* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
+  Das Datenobjekt, das visualisiert werden soll, befindet sich innerhalb des Prozesses, den Sie debuggen (der *zu debuggende* Prozess). Die Benutzeroberfläche, die die Daten anzeigt, wird innerhalb des Visual Studio-Debuggerprozesses erstellt:  
   
 |Debuggerprozess|Zu debuggender Prozess|  
 |----------------------|----------------------|  
 |Debuggerbenutzeroberfläche (DataTips, Überwachenfenster, Schnellüberwachung)|Zu visualisierendes Datenobjekt|  
   
- Um das Datenobjekt innerhalb der Debuggerschnittstelle zu visualisieren, benötigen Sie Code zur Kommunikation zwischen den beiden Prozessen. Folglich die Schnellansichtarchitektur besteht aus zwei Teilen: *Debuggerseite* Code und *zu debuggende Seite* Code.  
+ Um das Datenobjekt innerhalb der Debuggerschnittstelle zu visualisieren, benötigen Sie Code zur Kommunikation zwischen den beiden Prozessen. Infolgedessen besteht die Schnellansichtarchitektur aus zwei Teilen: aus *debuggerseitigem Code* und aus *Code der zu debuggenden Seite*.  
   
  Der debuggerseitige Code erstellt eine eigene Benutzeroberfläche, die von der Debuggerschnittstelle aufgerufen werden kann, zum Beispiel DataTip, das Überwachungsfenster oder die Schnellüberwachung. Die Schnellansichtschnittstelle wird mithilfe der <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>-Klasse und der <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>-Schnittstelle erstellt. Wie alle Schnellansicht-APIs befinden sich DialogDebuggerVisualizer und IDialogVisualizerService im <xref:Microsoft.VisualStudio.DebuggerVisualizers>-Namespace.  
   
@@ -88,8 +86,8 @@ Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> – oder –<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
- [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Sicherheitsüberlegungen zu Schnellansichten](../debugger/visualizer-security-considerations.md)

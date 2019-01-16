@@ -1,8 +1,6 @@
 ---
 title: Grafik-Frameanalyse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838100"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54154375"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
@@ -28,7 +26,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
 - Die Frame-Analyse kann Leistungsinformationen für andere Hardwarekonfigurationen und Geräte generieren als diejenigen, in denen die Informationen erfasst wurden.  
   
-- Die Frame-Analyse kann neue leistungszusammenfassungen aus zuvor erfassten Informationen – z. B., wenn GPU-Treiber sind optimiert oder zusätzliche Debuggingfunktionen bereitstellen.  
+- Die Frame-Analyse kann neue Leistungszusammenfassungen aus zuvor erfassten Informationen erstellen – z.B., wenn GPU-Treiber optimiert werden – oder zusätzliche Debuggingfunktionen bereitstellen.  
   
   Zusätzlich zu diesen Vorteilen kann die Frame-Analyse auch verwendet werden, um die Art zu ändern, in der der Frame während der Wiedergabe dargestellt wird, so dass er Informationen darüber darstellen kann, wie sich diese Änderungen auf die Rendering-Leistung einer App auswirken könnten. Sie können diese Informationen verwenden, um zwischen potenziellen Optimierungsstrategien zu wählen, ohne sie alle implementieren zu müssen, und dann alle Ergebnisse zu erfassen und miteinander zu vergleichen.  
   
@@ -37,7 +35,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   Um eine Demonstration der Frame-Analyse für Ihre app Möglichkeiten zu sehen, können Sie beobachten das [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video auf Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Verwenden der Frame-Analyse  
- Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie in der (.vsglog) grafikprotokolldokumentfenster, klicken Sie dann die **Frame-Analyse** Registerkarte.  
+ Bevor Sie die Frame-Analyse verwenden können, müssen Sie die Grafikinformationen von Ihrer App erfassen, während diese ausgeführt wird, und zwar so wie Sie dies mit einem anderen der Grafikanalysetools vornehmen würden. Wählen Sie anschließend im Fenster mit dem Grafikprotokolldokument die Registerkarte **Frame-Analyse**.  
   
  ![Wählen Sie die Registerkarte "Frameanalyse"](media/pix_frame_analysis_select_tab.png "Pix_frame_analysis_select_tab")  
   
@@ -64,10 +62,10 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
 - Wenn sich bei der Variante "Halbe/Viertel-Texturdimensionen" deutliche Leistungssteigerungen ergeben, belegen Ihre Texturen wahrscheinlich zu viel Speicher, verbrauchen zu viel Bandbreite oder verwenden den Texturcache ineffizient. Wenn sich bei dieser Variante keine Leistungsänderungen ergeben, können Sie wahrscheinlich auch größere und detailliertere Texturen verwenden, ohne Abstriche bei der Leistung machen zu müssen.  
   
-  Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte von Funktionsebene 9.2 oder höher unterstützen tiefenokklusionsabfragen (**okkludierte Pixel** Leistungsindikator) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
+  Wenn Hardwarezähler zur Verfügung stehen, können Sie sie verwenden, um sehr genaue Informationen darüber zu gewinnen, warum die Renderingleistung Ihrer App niedrig sein könnte. Alle Geräte mit Funktionsebene 9.2 oder höher unterstützen alle Tiefenokklusionsabfragen (Zähler für **okkludierte Pixel**) und Zeitstempel. Eventuell sind noch andere Hardwarezähler verfügbar. Dies hängt davon ab, ob der GPU-Hersteller Hardwarezähler implementiert und sie in seinen Treiber integriert hat. Sie können diese Zähler verwenden, um den genauen Grund der in der Zusammenfassungstabelle aufgeführten Ergebnisse zu bestätigen – Sie können z. B. ermitteln, ob Überzeichnung ein Faktor ist, indem Sie den Prozentsatz an Pixeln untersuchen, die durch den Tiefentest okkludiert wurden.  
   
 ### <a name="timeline-and-summary-table"></a>Zeitachse und Zusammenfassungstabelle  
- Standardmäßig werden die Zeitachse und die Zusammenfassungstabelle angezeigt und die anderen Abschnitte ausgeblendet.  
+ Standardmäßig werden die Zeitachse und die Zusammenfassungstabelle angezeigt und die anderen Abschnitte reduziert.  
   
 #### <a name="timeline"></a>Zeitachse  
  Die Zeitachse zeigt eine relative Übersicht über die Zeichnen-Befehle. Da längere Balken längeren Zeichnungszeiten entsprechen, können Sie die Zeitachse verwenden, um schnell die teuersten Zeichnen-Befehle im betreffenden Frame zu finden. Wenn der erfasste Frame eine sehr große Anzahl von Zeichnen-Befehlen enthält, werden mehrere Zeichnen-Befehle in einem Balken kombiniert, dessen Länge der Summe dieser Zeichnen-Befehle entspricht.  
@@ -98,7 +96,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Zum Bestimmen der statistischen Relevanz verwendet die Frame-Analyse der [Student t-Test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   
 ### <a name="details-table"></a>Detailtabelle  
- Unter der Zusammenfassungstabelle befindet sich die Detailtabelle, die standardmäßig ausgeblendet ist. Der Inhalt der Detailtabelle hängt von der Hardwareplattform des Wiedergabecomputers ab. Weitere Informationen zu den unterstützten Hardwareplattformen finden Sie unter [Hardwaresupport](#HardwareSupport).  
+ Unter der Zusammenfassungstabelle befindet sich die Detailtabelle, die standardmäßig reduziert ist. Der Inhalt der Detailtabelle hängt von der Hardwareplattform des Wiedergabecomputers ab. Weitere Informationen zu den unterstützten Hardwareplattformen finden Sie unter [Hardwaresupport](#HardwareSupport).  
   
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plattformen, die keine Hardwarezähler unterstützen  
  Die meisten Plattformen unterstützen Hardware-GPU-Zähler nicht vollständig. Zu diesen Plattformen gehören alle zurzeit von Intel, AMD und nVidia angebotenen GPUs. Wenn es keine Hardwarezähler zu sammeln gibt, wird nur eine Detailtabelle angezeigt. Diese enthält dann die mittleren absoluten Zeitwerte aller Varianten.  
@@ -173,22 +171,22 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Frame-Analyse auf WARP-Geräten ausgeführt werden, wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da es sich bei Ausführung von WARP auf einer High-End-CPU langsamer als auch den leistungsschwächsten modernen GPUs ist und WARP-Leistung je nach der bestimmten CPU stark variieren können dieser ausgeführt wird.  
   
 ##  <a name="Variants"></a> Varianten  
- Jede Änderung, die die Frame-Analyse an der Art durchführt, während der Wiedergabe ein Frames gerendert wird, wird als bezeichnet ein *Variante*. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
+ Jede Änderung, die die Frame-Analyse an der Art durchführt, in der ein Frame während der Wiedergabe gerendert wird, wird *Variante* genannt. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
   
 |Variante|Beschreibung|  
 |-------------|-----------------|  
-|**1 x 1 Viewport-Größe**|Reduziert die Viewport-Dimensionen auf allen Renderzielen auf 1x1 Pixel.<br /><br /> Weitere Informationen finden Sie unter [1 x 1-Viewportgrößenvariante](1x1-viewport-size-variant.md)|  
-|**0 X MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**4 X MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**1×1-Viewportgröße**|Reduziert die Viewport-Dimensionen auf allen Renderzielen auf 1x1 Pixel.<br /><br /> Weitere Informationen finden Sie unter [1×1-Viewportgrößenvariante](1x1-viewport-size-variant.md).|  
+|**0× MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](0x-2x-4x-msaa-variants.md)|  
+|**2× MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](0x-2x-4x-msaa-variants.md)|  
+|**4× MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0×/2×/4×-MSAA-Varianten](0x-2x-4x-msaa-variants.md)|  
 |**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Anisotrope Texturfilterung**|Setzt den Filtermodus zu `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` zu `16` (16 x anisotrope texturfilterung) für alle passenden Textur-Samples.<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**16bpp-Renderzielformat**|Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, Format 565).<br /><br /> Weitere Informationen finden Sie unter [16bpp-Renderzielformat-Variante](16bpp-render-target-format-variant.md)|  
-|**MipMap-Erzeugung**|Aktiviert Mipmaps auf allen Texturen, die keine Renderziele sind.<br /><br /> Weitere Informationen finden Sie unter [MipMap-Generierungsvariante](mip-map-generation-variant.md).|  
-|**Halbe Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, auf die Hälfte in jeder Dimension ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 128x64 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|  
-|**Viertel-Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, in jeder Dimension auf ein Viertel ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 64x32 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|  
+|**Anisotrope Texturfilterung**|Legt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_ANISOTROPIC` und `MaxAnisotropy` auf `16` (16× anisotrope Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Point, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**16bpp-Renderzielformat**|Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, Format 565).<br /><br /> Weitere Informationen finden Sie unter [16bpp-Renderzielformat-Variante](16bpp-render-target-format-variant.md).|  
+|**Mipmap-Generierung**|Aktiviert Mipmaps auf allen Texturen, die keine Renderziele sind.<br /><br /> Weitere Informationen finden Sie unter [Mipmap-Generierungsvariante](mip-map-generation-variant.md).|  
+|**Halbe Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, auf die Hälfte in jeder Dimension ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 128x64 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [Halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|  
+|**Viertel-Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, in jeder Dimension auf ein Viertel ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 64x32 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [Halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|  
 |**BC-Texturkomprimierung**|Aktiviert die Blockkomprimierung auf allen Texturen mit der Pixelformatvariante B8G8R8X8, B8G8R8A8 oder R8G8B8A8. Varianten im Format B8G8R8X8 werden mit BC1 komprimiert; die Formatvarianten B8G8R8A8 und R8G8B8A8 werden mit BC3 komprimiert.<br /><br /> Weitere Informationen finden Sie unter [BC-Texturkomprimierungsvariante](bc-texture-compression-variant.md).|  
   
- Das Ergebnis für die meisten Varianten ist präskriptiv: "Die Reduzierung der Texturgröße um die Hälfte ist um 25 % schneller" oder "Die Aktivierung von 2x MSAA ist nur um 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.
+ Das Ergebnis für die meisten Varianten ist präskriptiv: "Verringern der Texturgröße um die Hälfte ist 25 Prozent schneller" oder "Aktivierung von 2 X MSAA ist nur 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.

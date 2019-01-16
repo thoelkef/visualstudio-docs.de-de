@@ -1,8 +1,6 @@
 ---
 title: LocationType | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bb8765f6671914d145600be925cacadc87d51387
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859801"
 ---
 # <a name="locationtype"></a>LocationType
 Gibt die Art der Standortinformationen in ein Symbol an.  
@@ -27,7 +25,7 @@ Gibt die Art der Standortinformationen in ein Symbol an.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-enum LocationType {   
+enum LocationType {   
    LocIsNull,  
    LocIsStatic,  
    LocIsTLS,  
@@ -91,5 +89,5 @@ enum LocationType {
 ## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Symbolspeicherorte](../../debugger/debug-interface-access/symbol-locations.md)

@@ -1,8 +1,6 @@
 ---
 title: Melden Sie Hook-Funktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -25,15 +23,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d39a171d812915a1cf3c1c6450c73098067949
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892354"
 ---
 # <a name="report-hook-functions"></a>Hookfunktionen für Berichte
-Eine Hookfunktion mithilfe von installiert [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), wird immer dann aufgerufen [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) ein Debugbericht generiert. Sie können mit dieser Funktion u. a. Berichte filtern, um bestimmte Reservierungstypen herauszustellen. Der Prototyp einer Hookfunktion für Berichte sollte etwa wie folgt aussehen:  
+Eine mithilfe von [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) installierte Hookfunktion für Berichte wird jedes Mal aufgerufen, wenn durch [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) ein Debugbericht generiert wird. Sie können mit dieser Funktion u. a. Berichte filtern, um bestimmte Reservierungstypen herauszustellen. Der Prototyp einer Hookfunktion für Berichte sollte etwa wie folgt aussehen:  
   
 ```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
@@ -45,9 +43,9 @@ int YourReportHook(int nRptType, char *szMsg, int *retVal);
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- Wenn die Laufzeitbibliothek die Hookfunktion aufruft, die *nRptType* Argument enthält die Kategorie des Berichts (**_CRT_WARN**, **_CRT_ERROR**, oder **_CRT _ASSERT**), *wird* enthält einen Zeiger auf eine Berichtskategorie-Meldungszeichenfolge und *RetVal* gibt an, ob `_CrtDbgReport` die normale Ausführung fortsetzen soll nach dem Generieren des Berichts oder den Start des Debuggers. (Ein *RetVal* Wert 0 (null) wird die Ausführung fortgesetzt, die der Wert 1 wird der Debugger gestartet.)  
+ Wenn die Hookfunktion von der Laufzeitbibliothek aufgerufen wird, enthält das *nRptType*-Argument die Berichtskategorie (**_CRT_WARN**, **_CRT_ERROR** oder **_CRT_ASSERT**); *szMsg* enthält einen Zeiger auf eine vollständig assemblierte Berichtsmeldungszeichenfolge, und *retVal* gibt an, ob `_CrtDbgReport` nach der Berichtgenerierung die normale Ausführung fortsetzen oder den Debugger starten soll. (Bei einem *retVal*-Wert von 0 (null) wird die Ausführung fortgesetzt, und bei einem Wert von 1 wird der Debugger gestartet.)  
   
- Wenn der Hook betreffende Meldung vollständig behandelt wird, sodass kein weiterer Bericht erforderlich ist, sollte es zurückgeben **"true"**. Wenn sie zurückgibt **"false"**, `_CrtDbgReport` wird die Nachricht normalerweise.  
+ Wenn die betreffende Meldung vollständig vom Hook behandelt wird, sodass kein weiterer Bericht erforderlich ist, muss er **TRUE** zurückgeben. Wenn **FALSE** zurückgegeben wird, gibt `_CrtDbgReport` die Meldung wie üblich aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)   

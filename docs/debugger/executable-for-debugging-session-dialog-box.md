@@ -1,8 +1,6 @@
 ---
-title: Ausführbare Datei für die Sitzung (Dialogfeld) | Microsoft Docs
-ms.custom: ''
+title: Ausführbare Datei für das Debuggen (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.exefordebug
@@ -22,24 +20,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cee61b9a43e031daf468555f31349d10023fcc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 90278476b2530e80c33440ca6e2dc299be5e9be5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473458"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269786"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Ausführbare Datei für die Debugsitzung (Dialogfeld)
-Dieses Dialogfeld wird angezeigt, wenn Sie eine DLL debuggen, für die keine ausführbare Datei festgelegt wurde. In Visual Studio können DLLs nicht direkt gestartet werden. Stattdessen wird die angegebene ausführbare Datei ausgeführt. Sie können die DLL debuggen, wenn diese durch die ausführbare Datei aufgerufen wird.  
+
+Dieses Dialogfeld wird angezeigt, wenn Sie eine DLL debuggen, für die keine ausführbare Datei festgelegt wurde. Eine DLL-Datei kann nicht von Visual Studio direkt gestartet werden. Stattdessen startet Visual Studio die angegebene ausführbare Datei. Sie können die DLL debuggen, wenn sie die ausführbare Datei aufgerufen wird.  
   
  **Name der ausführbaren Datei**  
  Geben Sie den Pfad zu einer ausführbaren Datei ein, mit der die zu debuggende DLL aufgerufen wird.  
   
- **URL, in dem das Projekt zugegriffen kann (nur ATL-Server werden)**  
+ **URL, von der aus auf das Projekt zugegriffen werden kann (nur ATL-Server)**  
  Wenn Sie eine ATL-Server-DLL debuggen, geben Sie die URL ein, unter der sich das Projekt befindet.  
   
- Nach der Eingabe werden diese Einstellungen in den Eigenschaftenseiten des Projekts gespeichert, sodass Sie diese bei späteren Debugsitzungen nicht erneut eingeben müssen. Wenn Sie diese Einstellungen ändern möchten, können Sie die Eigenschaftenseiten öffnen und die Werte ändern. Weitere Informationen zum Angeben einer ausführbaren Datei für die Debugsitzung finden Sie unter [Debuggen von DLLs](../debugger/how-to-debug-from-a-dll-project.md).  
+ Nach der Eingabe werden diese Einstellungen im Projekt-Eigenschaftenseiten gespeichert, sodass Sie nicht bei späteren Debugsitzungen erneut eingeben müssen. Wenn Sie diese Einstellungen ändern möchten, können Sie die Eigenschaftenseiten öffnen und die Werte ändern. Weitere Informationen zum Angeben einer ausführbaren Datei für die Debugsitzung finden Sie unter [Debuggen von DLLs](../debugger/how-to-debug-from-a-dll-project.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
+
  [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

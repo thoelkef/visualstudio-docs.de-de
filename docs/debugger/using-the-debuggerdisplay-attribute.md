@@ -1,11 +1,9 @@
 ---
 title: Verwenden des DebuggerDisplay-Attributs | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 08/09/2017
-ms.technology: vs-ide-debug
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228057"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Verwenden des DebuggerDisplay-Attributs (C#, Visual Basic, C++ / CLI)
 Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.  
   
  Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.  
@@ -32,10 +30,13 @@ Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von O
   
 > [!IMPORTANT]
 >  Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.  
+
+> [!NOTE]
+> Dieses Attribut wird unterstützt für nativen Code nur in C++ / CLI-Code.
   
  In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.  
   
-|Attribut|Ausgabe in der Wertspalte angezeigt werden|  
+|Attribut|In der Spalte „Wert“ angezeigte Ausgabe|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Angewendet auf einen Typ mit den Feldern `x` und `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Die Parametersyntax kann je nach Sprache unterschiedlich sein. Achten Sie deshalb besonders auf die Syntax.|`String value is [5, 6, 6]`|  
@@ -76,15 +77,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -178,6 +179,6 @@ class MyHashtable
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md)   
- [Erstellen Sie benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md)   
- [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md)   
+ [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [Formatbezeichner in C#](../debugger/format-specifiers-in-csharp.md)   
  [Verbessern des Debuggens mit den Debuggeranzeigeattributen](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

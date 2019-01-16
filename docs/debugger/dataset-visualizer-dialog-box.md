@@ -1,8 +1,6 @@
 ---
-title: DataSet-Schnellansicht (Dialogfeld) | Microsoft Docs
-ms.custom: ''
+title: DataSet-Schnellansicht (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985302"
 ---
-# <a name="dataset-visualizer-dialog-box"></a>Dialogfeld "DataSet-Schnellansicht"
+# <a name="dataset-visualizer-dialog-box"></a>Dataset-Schnellansicht (Dialogfeld)
 Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen. Sie können auf diese Schnellansicht zugreifen, indem Sie auf das Symbol mit dem Vergrößerungsglas klicken, das neben dem Wert eines dieser Objekte in einem Debuggervariablenfenster oder in einem DataTip angezeigt wird.  
   
  Sie können in dieser Schnellansicht Änderungen an den Objekten vornehmen. Die Änderungen werden gespeichert, sobald Sie für eine Zeile einen Commit ausführen.  
@@ -40,7 +38,7 @@ Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-
  Verwenden Sie dieses Dropdown-Listenfeld, um eine Tabelle innerhalb des Datasets auszuwählen, das Sie visuell darstellen möchten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [Erstellen Sie benutzerdefinierte Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+ [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
  [Debuggerfenster](../debugger/debugger-windows.md)   
  [Anzeigen von Datenwerten als Datentipps](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

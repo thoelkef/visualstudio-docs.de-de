@@ -1,8 +1,6 @@
 ---
 title: Keine Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: 8babc9b86cc006e120a76a037260b62852e8f041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931332"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 Diese Meldung kann auftreten, weil der Remotedebugmonitor nicht ordnungsgemäß auf dem Remotecomputer eingerichtet ist oder der Remotecomputer aufgrund von Netzwerkproblemen oder das Vorhandensein einer Firewall nicht mehr verfügbar ist.
@@ -90,7 +88,7 @@ Der Remotecomputer vorhanden ist, aber Visual Studio konnte keine Verbindung mit
 
 - Ein DNS-Problem verhindert, dass die Verbindung. Finden Sie unter [folgendermaßen](#dns).
 
-- Der Remotedebugger kann unter einem anderen Benutzerkonto ausgeführt werden. Führen Sie [folgendermaßen](#user_accounts).
+- Der Remotedebugger kann unter einem anderen Benutzerkonto ausgeführt werden. Führen Sie [folgende Schritte](#user_accounts) aus.
 
 - Der Port ist in der Firewall blockiert. Stellen Sie sicher, dass die Firewall [nicht blockiert Ihre Anforderung](#firewall), insbesondere, wenn Sie eine Drittanbieter Firewall verwenden.
 
@@ -120,14 +118,14 @@ Wenn dies fehlschlägt, stellen Sie sicher, dass der Remotecomputer im Netzwerk 
   
 ### <a name="server_incorrect"></a> Der Servername ist falsch oder Drittanbieter-Software beeinträchtigt wird, mit dem Remotedebugger
 
-Sehen Sie in Visual Studio sich die Projekteigenschaften, und stellen Sie sicher, dass der Servername richtig ist. Finden Sie in Themen [(c# und Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) und [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Öffnen Sie für ASP.NET **Eigenschaften / Web / Servern** oder **Eigenschaften / Debug** je nach Projekttyp.
+Sehen Sie in Visual Studio sich die Projekteigenschaften, und stellen Sie sicher, dass der Servername richtig ist. Finden Sie in Themen [ C# und Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) und [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Öffnen Sie für ASP.NET **Eigenschaften / Web / Servern** oder **Eigenschaften / Debug** je nach Projekttyp.
 
 > [!NOTE]
 > Wenn Sie an den Prozess anfügen, werden die Einstellungen des remote in den Projekteigenschaften nicht verwendet werden.
 
 Wenn der Servername richtig ist, kann Ihre Antivirensoftware oder einer Drittanbieter-Firewall des Remotedebuggers blockieren. Wenn Sie lokal debuggen, kann dies passieren, wenn Visual Studio eine 32-Bit-Anwendung ist, und die 64-Bit-Version des Remotedebuggers zum Debuggen von 64-Bit-Anwendungen verwendet. Die 32-Bit- und 64-Bit-Prozesse kommunizieren über das lokale Netzwerk innerhalb des lokalen Computers. Kein Netzwerkdatenverkehr verlässt den Computer, aber es ist möglich, dass Drittanbieter-Sicherheitssoftware die Kommunikation blockiert.
 
-### <a name="user_accounts"></a> Der Remotedebugger wird unter einem anderen Benutzerkonto ausgeführt werden. 
+### <a name="user_accounts"></a> Der Remotedebugger wird unter einem anderen Benutzerkonto ausgeführt 
 
 Der Remotedebugger, in der Standardeinstellung nur akzeptiert Verbindungen von der Benutzer, der dem Remotedebugger und den Mitgliedern der Gruppe "Administratoren" gestartet hat. Zusätzliche Benutzern müssen explizit Berechtigungen gewährt werden. 
  
@@ -140,14 +138,14 @@ Mit einer der folgenden Möglichkeiten können Sie dieses Problem beheben:
     > [!NOTE]
     > Wenn Sie den Remotedebugger auf einem Remoteserver ausführen, mit der rechten Maustaste in der Remote Debugger-app, und wählen Sie **als Administrator ausführen** (oder Sie können den Remotedebugger als Dienst ausführen). Wenn Sie Sie nicht auf einem Remoteserver ausgeführt werden, starten Sie es normalerweise.
   
--   Sie können den Remotedebugger über die Befehlszeile mit starten die **/ allow \<Benutzername >** Parameter: `msvsmon /allow <username@computer>`. 
+-   Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<Benutzername>** starten: `msvsmon /allow <username@computer>`. 
   
--   Alternativ können Sie allen Benutzern das Remotedebuggen erlauben. Navigieren Sie im Remotedebugger-Fenster, zu der **Tools > Optionen** Dialogfeld. Bei der Auswahl von   **Keine Authentifizierung**können Sie **Allen Benutzern das Debugging ermöglichen**aktivieren. Allerdings sollten Sie diese Option nur, wenn die anderen Optionen fehlschlagen oder wenn Sie sich in einem privaten Netzwerk befinden.
+-   Alternativ können Sie allen Benutzern das Remotedebuggen erlauben. Öffnen Sie im Remotedebuggerfenster das Dialogfeld **Extras > Optionen**. Bei der Auswahl von   **Keine Authentifizierung**können Sie **Allen Benutzern das Debugging ermöglichen**aktivieren. Allerdings sollten Sie diese Option nur, wenn die anderen Optionen fehlschlagen oder wenn Sie sich in einem privaten Netzwerk befinden.
 
 ### <a name="firewall"></a> Die Firewall auf dem Remotecomputer lässt keine eingehenden Verbindungen mit dem Remotedebugger zu  
  Die Firewalls auf dem Visual Studio-Computer und dem Remotecomputer müssen für die Kommunikation zwischen Visual Studio und Remotedebugger konfiguriert sein. Weitere Informationen zu den Ports, die vom Remotedebugger verwendet werden, finden Sie unter [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Weitere Informationen zum Konfigurieren der Windows-Firewall finden Sie unter [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
   
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Die Version des Remotedebuggers stimmt nicht mit die Version von Visual Studio überein.  
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Die Version des Remotedebuggers stimmt nicht mit der Version von Visual Studio überein  
  Die lokal ausgeführte Version von Visual Studio muss mit der Version des Remotedebugmonitors übereinstimmen, der auf dem Remotecomputer ausgeführt wird. Um dieses Problem zu beheben, laden Sie die passende Version des Remotedebugmonitors herunter, und installieren Sie sie. Rufen Sie die richtige Version des Remotedebuggers finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
   
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Der lokale Computer und der Remotecomputer weisen unterschiedliche Authentifizierungsmodi auf  

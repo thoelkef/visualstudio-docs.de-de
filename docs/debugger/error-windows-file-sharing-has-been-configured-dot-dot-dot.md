@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Windows-Dateifreigabe konfiguriert wurde... | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: Windows-Dateifreigabe konfiguriert wurde... | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942212"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Fehler: Der gemeinsame Dateizugriff von Windows wurde so konfiguriert...
 Der gemeinsame Dateizugriff von Windows wurde so konfiguriert, dass Sie mit einem anderen Benutzernamen eine Verbindung mit dem Remotecomputer herstellen. Dies ist mit dem Remotedebuggen nicht kompatibel.  
@@ -40,7 +38,7 @@ Der gemeinsame Dateizugriff von Windows wurde so konfiguriert, dass Sie mit eine
   
      sein. Trennen Sie die Verbindung mit dem Remotecomputer, und konfigurieren Sie anschließend die Dateifreigabe, um anhand Ihres Kontonamens eine Verbindung mit dem anderen Computer herzustellen:  
   
-    1.  Auf der **starten** Sie im Menü **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
+    1.  Zeigen Sie imMenü **Start** auf **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
   
     2.  Geben Sie an der Windows-Eingabeaufforderung Folgendes ein:  
   

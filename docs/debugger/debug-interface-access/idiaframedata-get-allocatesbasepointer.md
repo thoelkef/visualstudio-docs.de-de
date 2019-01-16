@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_allocatesbasepointer | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e981a29352c5adf192a0eb3cdccd59a088e29db6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e3ce39d0fb64cdd89139bb4506c9b95719a3f172
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951318"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 Ruft ein Flag, das angibt, ob der basiszeiger für Code in dieser Adressbereich zugeordnet ist. Diese Methode ist veraltet.  
@@ -27,7 +25,7 @@ Ruft ein Flag, das angibt, ob der basiszeiger für Code in dieser Adressbereich 
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_allocatesBasePointer (
  [out] Gibt `TRUE` , wenn ein basiszeiger zugeordnet ist; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Eigenschaft sollte verwendet werden, nur von Code, die früher auf FPO_DATA zugegriffen werden soll, oder wenn die Programm-Zeichenfolge zurückgegeben, durch, die [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) Methode `NULL`. Die Programm-Zeichenfolge enthält, andernfalls die Informationen, die zum Berechnen des vorherigen Registerwerte erforderlich sind.  

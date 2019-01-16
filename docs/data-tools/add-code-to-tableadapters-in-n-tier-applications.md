@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783089"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928288"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 Sie können die Funktionalität eines TableAdapter erweitern, indem die Datei eine partielle Klasse für den TableAdapter zu erstellen und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName.DataSet.Designer* Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](/dotnet/visual-basic/language-reference/modifiers/partial) oder [Partial (Typ)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -31,7 +30,7 @@ Der Code, der einen TableAdapter definiert wird generiert, jedes Mal, wenn Ände
 Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standardmäßig eine separate Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei namens *dem Namen DatasetName.Designer.vb* (oder *DatasetName.Designer.cs*), die den TableAdapter-Code enthält. Das Projekt, das angegeben die **Dataset-Projekt** Eigenschaft verfügt über eine Datei namens *dem Namen DatasetName.DataSet.Designer.vb* (oder *DatasetName.DataSet.Designer.cs*), enthält den Dataset-Code.
 
 > [!NOTE]
->  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), werden vorhandene partielle Dataset-Klassen im Projekt nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
+>  Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
 
 > [!NOTE]
 > Das Dataset bietet Funktionen zum Generieren von <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> Ereignishandler, die bei der Überprüfung erforderlich ist. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -69,7 +68,7 @@ Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standard
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Gewusst wie: Hinzufügen von Code zu DataSets in N-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Erstellen und Konfigurieren eines TableAdapters](create-and-configure-tableadapters.md)
 - [Übersicht über die hierarchische Aktualisierung](hierarchical-update.md)

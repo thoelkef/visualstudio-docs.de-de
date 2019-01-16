@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Speichern und Bearbeiten von Verbindungszeichenfolgen'
+title: 'Vorgehensweise: Speichern und Bearbeiten von Verbindungszeichenfolgen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -7,18 +7,17 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 050d5f7bcda86890642a5bef10fa04d2c12b4203
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 96c55b44e6e6ebbfba27c4daf10512cefe1fd393
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961269"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>Gewusst wie: Speichern und Bearbeiten von Verbindungszeichenfolgen
-Verbindungszeichenfolgen in Visual Studio-Anwendungen sind in der Anwendungskonfigurationsdatei (auch als Anwendungseinstellungen bezeichnet) gespeichert, oder direkt in der Anwendung hartcodiert. Das Speichern von Verbindungszeichenfolgen in der Anwendungskonfigurationsdatei vereinfacht das Verwalten der Anwendung. Wenn die Verbindungszeichenfolge geändert werden muss, können Sie es aktualisieren, in der Datei mit den Anwendungseinstellungen (anstatt sie in den Quellcode ändern und die Anwendung neu kompilieren).
+# <a name="how-to-save-and-edit-connection-strings"></a>Vorgehensweise: Speichern und Bearbeiten von Verbindungszeichenfolgen
+Verbindungszeichenfolgen in Visual Studio-Anwendungen sind in der Anwendungskonfigurationsdatei (auch als Anwendungseinstellungen bezeichnet) gespeichert, oder direkt in der Anwendung hartcodiert. Das Speichern von Verbindungszeichenfolgen in der Anwendungskonfigurationsdatei vereinfacht das Verwalten der Anwendung. Wenn die Verbindungszeichenfolge geändert werden muss, können Sie dies in der Datei mit den Anwendungseinstellungen durchführen (und müssen nicht den Quellcode ändern und die Anwendung dann neu kompilieren).
 
 Das Speichern vertraulicher Informationen (z. B. das Kennwort) in der Verbindungszeichenfolge kann sich auf die Sicherheit der Anwendung auswirken. In der Anwendungskonfigurationsdatei gespeicherte Verbindungszeichenfolgen sind nicht verschlüsselt oder verschleiert, sodass es möglich ist, dass jemand auf die Datei zugreift und ihre Inhalte liest. Die integrierte Sicherheit von Windows bietet eine sicherere Methode der Zugriffssteuerung für eine Datenbank.
 
@@ -29,19 +28,19 @@ Weitere Informationen finden Sie unter [Schützen von Verbindungsinformationen](
 In der **Assistenten zur Datenquellenkonfiguration**, wählen Sie die Option zum Speichern der Verbindung auf die **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** Seite.
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>So speichern Sie eine Verbindungszeichenfolge direkt in den Anwendungseinstellungen
-1. In **Projektmappen-Explorer**, doppelklicken Sie auf die **Mein Projekt** Symbol (Visual Basic) oder **Eigenschaften** (c#), zum Öffnen der **Projekt-Designer** .
-1. Wählen Sie die **Einstellungen** Registerkarte.
-1. Geben Sie einen **Namen** für die Verbindungszeichenfolge. Verweisen Sie beim Zugriff auf die Verbindungszeichenfolge im Code auf diesen Namen.
-1. Legen Sie die **Typ** auf (**Verbindungszeichenfolge**).
-1. Lassen Sie die **Bereich** festgelegt **Anwendung**.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf das Symbol **Mein Projekt** (Visual Basic) oder **Eigenschaften** (C#), um den **Projekt-Designer** zu öffnen.
+1. Wählen Sie die Registerkarte **Einstellungen** aus.
+1. Geben Sie einen **Namen** für die Verbindungszeichenfolge ein. Verweisen Sie beim Zugriff auf die Verbindungszeichenfolge im Code auf diesen Namen.
+1. Legen Sie den **Typ** auf (**Verbindungszeichenfolge**) fest.
+1. Lassen Sie den **Bereich** auf **Anwendung** eingestellt.
 1. Geben Sie die Verbindungszeichenfolge in der **Wert** Feld, oder klicken Sie auf die **mit den Auslassungspunkten** Schaltfläche (…), in der **Wert** zu öffnen der **Verbindungseigenschaften** Dialogfeld, um die Verbindungszeichenfolge zu erstellen.
 
 ## <a name="edit-connection-strings-stored-in-application-settings"></a>Bearbeiten von Verbindungszeichenfolgen, die in Anwendungseinstellungen gespeichert
-Sie können die Verbindungsinformationen, die in den Anwendungseinstellungen, mithilfe gespeichert wird der **Projekt-Designer**.
+Sie können mithilfe des **Projekt-Designers** die Verbindungsinformationen ändern, die in den Anwendungseinstellungen geändert sind.
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>So bearbeiten Sie eine Verbindungszeichenfolge, die in den Anwendungseinstellungen gespeichert ist
-1. In **Projektmappen-Explorer**, doppelklicken Sie auf die **Mein Projekt** Symbol (Visual Basic) oder **Eigenschaften** (c#), zum Öffnen der **Projekt-Designer** .
-1. Wählen Sie die **Einstellungen** Registerkarte.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf das Symbol **Mein Projekt** (Visual Basic) oder **Eigenschaften** (C#), um den **Projekt-Designer** zu öffnen.
+1. Wählen Sie die Registerkarte **Einstellungen** aus.
 1. Suchen Sie die Verbindung, die Sie bearbeiten möchten und wählen Sie den Text in die **Wert** Feld.
 1. Bearbeiten Sie die Verbindungszeichenfolge in der **Wert** Feld, oder klicken Sie auf die **mit den Auslassungspunkten** Schaltfläche (…), in der **Wert** Feld so bearbeiten Sie die Verbindung mit der **Verbindung Eigenschaften** Dialogfeld.
 

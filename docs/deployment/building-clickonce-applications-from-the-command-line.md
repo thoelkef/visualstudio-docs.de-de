@@ -1,8 +1,6 @@
 ---
 title: Erstellen von ClickOnce-Anwendungen über die Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926264"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.  
@@ -35,7 +33,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
  Ein "Ziel" ist ein Indikator dafür, dass MSBuild zum Verarbeiten des Befehls. Die wichtigsten Ziele sind das Ziel "Build" und das Ziel "publish". Das Build-Ziel ist das Äquivalent zur Auswahl des Builds-Befehl (oder drücken Sie F5), in der IDE. Wenn Sie nur das Projekt erstellen möchten, können Sie diese erreichen, die durch Eingabe `msbuild`. Dieser Befehl funktioniert, da das Build-Ziel als Standardziel für alle Projekte, die vom [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Dies bedeutet, dass Sie nicht explizit benötigen, geben Sie das Build-Ziel. Aus diesem Grund geben `msbuild` den gleichen Vorgang wie das Eingeben von `msbuild /target:build`.  
   
- Die `/target:publish` weist MSBuild an das Veröffentlichungsziel aufrufen. Das Veröffentlichungsziel hängt von der Build-Ziel. Dies bedeutet, dass der Veröffentlichungsvorgang eine Obermenge des Buildvorgangs. Z. B. Wenn Sie auf eine der quellcodeverwaltung für Ihre Visual Basic oder C#-Dateien eine Änderung vorgenommen haben, wird die entsprechende Assembly automatisch durch den Veröffentlichungsvorgang neu erstellt werden.  
+ Die `/target:publish` weist MSBuild an das Veröffentlichungsziel aufrufen. Das Veröffentlichungsziel hängt von der Build-Ziel. Dies bedeutet, dass der Veröffentlichungsvorgang eine Obermenge des Buildvorgangs. Angenommen, Sie zu einem der in Visual Basic eine Änderung vorgenommen oder C# Quelldateien, die entsprechende Assembly werden durch den Veröffentlichungsvorgang automatisch neu erstellt werden.  
   
  Weitere Informationen zum Generieren einer vollständiges [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung über das Befehlszeilentool "Mage.exe" zum Erstellen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest, finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
@@ -67,7 +65,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
 2. Aus dem Windows **starten** im Menü klicken Sie auf **Programme**, klicken Sie dann **Microsoft Visual Studio**, klicken Sie dann **Visual Studio-Tools**, und klicken Sie dann **Visual Studio-Eingabeaufforderung**. Im Stammordner des aktuellen Benutzers sollte eine Eingabeaufforderung geöffnet werden.  
   
-3. In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie z. B. `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie beispielsweise Folgendes ein: `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
 4. So entfernen Sie die vorhandenen Dateien in der erstellten "zum Erstellen und Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Projekt" Typ `rmdir /s publish`.  
   
@@ -170,5 +168,5 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

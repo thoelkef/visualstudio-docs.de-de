@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Suchen einer Meldung in der Meldungsansicht | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863380"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Gewusst wie: Suchen einer Meldung in der Meldungsansicht
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Vorgehensweise: Suchen einer Meldung in der Meldungsansicht
 Sie können mithilfe der Handle, Typ oder Meldungs-ID als Suchkriterium für eine bestimmte Nachricht in der Ansicht "Nachrichten" suchen. Eine dieser – oder eine Kombination – werden gültige Suchkriterien. Die anfängliche Richtung für die Suche kann auch angegeben werden. Die Felder im Dialogfeld werden mit den Attributen der aktuell ausgewählten Nachricht vorab geladen.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Suchen Sie für eine Nachricht in der Meldungsansicht  

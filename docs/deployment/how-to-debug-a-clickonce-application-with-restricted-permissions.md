@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921256"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen
 Als Entwickler führen Sie wahrscheinlich Ihre Entwicklungscomputer mit der Berechtigungen „Voll vertrauenswürdig“ aus, daher werden Sie nicht die gleichen Sicherheitsausnahmen beim Debuggen einer ClickOnce-Anwendung sehen, die der Endbenutzer möglicherweise sieht, wenn sie mit eingeschränkten Berechtigungen ausgeführt wird.  
   
  Um diese Ausnahmen zu erfassen, müssen Sie die Anwendung mit genau den Berechtigungen debuggen, die ein Endbenutzer hat. Debuggen mit eingeschränkten Berechtigungen kann im **Projekt-Designer** auf der Seite **Sicherheit**aktiviert werden.  
@@ -61,7 +59,7 @@ Als Entwickler führen Sie wahrscheinlich Ihre Entwicklungscomputer mit der Bere
 6.  Geben Sie im Textfeld **Diese Anwendung debuggen, als ob sie von folgender URL heruntergeladen würde:** eine URL oder einen Netzwerkpfad ein.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)   
- [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
+ [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)

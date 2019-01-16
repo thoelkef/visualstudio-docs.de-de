@@ -1,8 +1,6 @@
 ---
-title: Konfigurieren der Firewall für Remotedebuggen Dialogfeld | Microsoft Docs
-ms.custom: ''
+title: Konfigurieren der Firewall für das Remotedebuggen im Dialogfeld | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.firewallconfiguration
@@ -22,30 +20,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 982e677639cec6a98ae3aafe3d0ae624df588ccd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: bea1024af65ae788cae9909d3b6e86f1ae84dc4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916756"
 ---
-# <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Dialogfeld "Firewall für Remotedebuggen konfigurieren"
+# <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Firewall für Remotedebuggen konfigurieren (Dialogfeld)
 Dieses Dialogfeld wird angezeigt, wenn von der Windows-Firewall Daten blockiert werden, die der Debugger über das Netzwerk empfangen soll. Um das Remotedebuggen fortzusetzen, müssen Sie der Firewall Ausnahmen hinzufügen und Ports öffnen, damit der Debugger Informationen empfangen kann.  
   
 > [!CAUTION]
->  Wenn Sie Ports in der Firewall öffnen, ist der Computer unter Umständen Sicherheitsrisiken ausgesetzt, die sonst von der Firewall blockiert werden. Durch das Öffnen einer Lücke für das Remotedebuggen wird die Blockierung der Ports 4020 und 4021 in Visual Studio 2015 aufgehoben. In anderen Versionen von Visual Studio werden andere Portnummern verwendet. Weitere Informationen finden Sie unter [-Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md). Zusätzlich wird dem Debugger ermöglicht, weitere Ports zu öffnen. Weitere Informationen finden Sie unter [der Windows-Firewall für Remotedebuggen konfigurieren](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
+>  Wenn Sie Ports in der Firewall öffnen, ist der Computer unter Umständen Sicherheitsrisiken ausgesetzt, die sonst von der Firewall blockiert werden. Durch das Öffnen einer Lücke für das Remotedebuggen wird die Blockierung der Ports 4020 und 4021 in Visual Studio 2015 aufgehoben. In anderen Versionen von Visual Studio werden andere Portnummern verwendet. Weitere Informationen finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md). Zusätzlich wird dem Debugger ermöglicht, weitere Ports zu öffnen. Weitere Informationen finden Sie unter [der Windows-Firewall für Remotedebuggen konfigurieren](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
- **Remotedebugging Abbrechen**  
+ **Remotedebugging abbrechen**  
  Mit dieser Option wird der Remotedebugversuch abgebrochen. Die Sicherheitseinstellungen des Computers bleiben bestehen.  
   
- **Blockierung für aufheben Sie Remotedebugging von Computern im lokalen Netzwerk (Subnetz)**  
+ **Blockierung für Remotedebugging auf Computern im lokalen Netzwerk (Subnetz) aufheben**  
  Mit dieser Option wird das Remotedebuggen der Computer im lokalen Subnetz aktiviert. Dadurch können Sicherheitslücken in den Computern des Subnetzes entstehen, die Firewall wird jedoch weiterhin Informationen von außerhalb des Subnetzes blockieren.  
   
- **Blockierung für aufheben Sie Remotedebugging von einem beliebigen computer**  
+ **Blockierung für Remotedebugging von beliebigem Computer aufheben**  
  Mit dieser Option wird das Remotedebuggen von jedem möglichen Computer aus dem Netzwerk aktiviert. Diese Einstellung ist am unsichersten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)  
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [Referenz zur Debugger-Benutzeroberfläche](../debugger/debugging-user-interface-reference.md)

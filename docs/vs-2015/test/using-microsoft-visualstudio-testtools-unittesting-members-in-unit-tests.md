@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 9cc93fb1382dba70aedc989a609ac2932cf4f466
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53901476"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
@@ -34,7 +34,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 >  `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Für datengesteuerte Tests verwendete Elemente
- Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [How To: Create a Data-Driven Unit Test (Vorgehensweise: Erstellen eines datengesteuerten Komponententests)](../test/how-to-create-a-data-driven-unit-test.md) und [Walkthrough: Using a Configuration File to Define a Data Source (Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle)](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md) und [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

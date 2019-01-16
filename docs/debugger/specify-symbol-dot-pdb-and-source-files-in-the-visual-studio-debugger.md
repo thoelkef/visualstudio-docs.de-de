@@ -2,7 +2,6 @@
 title: Festlegen von Symbol-(PDB-) und Quelldateien im debugger
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892447"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -156,7 +155,7 @@ Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen**
   Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
   >
   >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.  
   

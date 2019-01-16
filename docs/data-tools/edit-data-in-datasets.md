@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885209"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 Ähnlich wie Sie die Daten in einer Tabelle in einer beliebigen Datenbank bearbeiten, bearbeiten Sie die Daten in Tabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitbare sind. In diesen Fällen behandelt die Infrastruktur für die Datenbindung an, alle der änderungsnachverfolgung, damit die Änderungen später an die Datenbank gesendet werden können. Wenn Sie programmgesteuert Änderungen an Daten vornehmen und diese Änderungen an die Datenbank gesendet werden sollen, müssen Sie verwenden die Objekte und Methoden, die die änderungsnachverfolgung für die Sie ausführen.
@@ -82,7 +81,7 @@ Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%
 
 -   Rufen Sie die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets auf, um geänderte Zeilen zu suchen.
 
-Das folgende Beispiel zeigt, wie Sie den Rückgabewert überprüfen die <xref:System.Data.DataSet.HasChanges%2A> -Methode feststellen, ob geänderten Zeilen vorhanden, in einem Dataset mit dem Namen sind `NorthwindDataset1`:
+Im folgenden Beispiel wird veranschaulicht, wie Sie anhand des Rückgabewerts der <xref:System.Data.DataSet.HasChanges%2A>-Methode feststellen, ob ein Dataset mit dem Namen `NorthwindDataset1` geänderte Zeilen enthält:
 
 [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
 [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]

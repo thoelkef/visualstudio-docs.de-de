@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen von Inline-Assemblycode | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935423"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Gewusst wie: Debuggen von Inline-Assemblycode
+# <a name="how-to-debug-inline-assembly-code"></a>Vorgehensweise: Debuggen von Inline-Assemblycode
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
-Der Debugger bietet zwei Fenster für das Debuggen von Inline-Assemblycode, das Fenster Disassembly **und das Fenster Register**.
+Der Debugger bietet zwei Fenster für das Debuggen von Inline-Assemblycode, das Fenster **Disassemblierung** und das Fenster **Register**.
 
 ## <a name="debug-inline-assembly-code"></a>Debuggen von Inline-Assemblycode
 
-1.  Verwenden Sie das Fenster Disassembly **, um die Assemblyanweisungen anzuzeigen.
+1.  Verwenden Sie das Fenster **Disassemblierung**, um die Assemblyanweisungen anzuzeigen.
 
-2.  Zum Anzeigen von Registerinhalten verwenden Sie das Fenster Register **.
+2.  Zum Anzeigen von Registerinhalten verwenden Sie das Fenster **Register**.
 
 ## <a name="see-also"></a>Siehe auch
 

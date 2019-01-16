@@ -28,7 +28,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Aus einer C++-Anwendung eine Verbindung mit LocalDB über ODBC und SQL Native Client
 
-1. SQL Server Data Tools installieren
+1. Installieren Sie SQL Server Data Tools.
 
 2. Wenn Sie eine Beispiel-SQL-Datenbank für die Verbindung benötigen, laden Sie die Northwind-Datenbank, und Entzippen Sie sie an einem neuen Speicherort.
 
@@ -57,7 +57,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
    #include <sqlncli.h>
    ```
 
-    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorherigen Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt ist jetzt für die Sie verwenden diese Funktion konfiguriert. Weitere Informationen finden Sie unter [SQL Server Native Client Programming (SQL Server Native Client-Programmierung)](/sql/relational-databases/native-client/sql-server-native-client)
+    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorherigen Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt ist jetzt für die Sie verwenden diese Funktion konfiguriert. Weitere Informationen finden Sie unter [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client).
 
 7. Geben Sie den zu verwendenden im Subsystem ODBC-Treiber. Im Beispiel wird das Treiber Verbindungszeichenfolgen-Attribut in als ein Befehlszeilenargument übergeben. In **Projekt** > **Eigenschaften** > **Debuggen**, fügen Sie diesen Befehlsargument hinzu:
 
@@ -65,7 +65,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Daraufhin sollte ein Dialogfeld aus dem Treiber, die Sie aufgefordert werden, geben Sie eine Datenbank. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung**. Klicken Sie auf „OK“: Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Außerdem sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
+8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Daraufhin sollte ein Dialogfeld aus dem Treiber, die Sie aufgefordert werden, geben Sie eine Datenbank. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung**. Klicken Sie auf **OK**. Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Außerdem sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
 
    ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png)
 

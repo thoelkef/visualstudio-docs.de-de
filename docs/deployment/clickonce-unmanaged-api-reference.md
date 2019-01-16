@@ -1,6 +1,5 @@
 ---
 title: Nicht verwalteten für ClickOnce-API-Referenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968140"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>Nicht verwalteten API-Referenz für ClickOnce
+# <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht verwaltete öffentliche APIs aus dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -56,8 +54,8 @@ ms.locfileid: "39082138"
   
 |Parameter|Beschreibung|Typ|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|Ein Zeiger auf die `ActivationURL`.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|Ein Zeiger auf die `PathToDeploymentManifest`.|LPCWSTR|  
+|`pcwzActivationUrl`|Ein Zeiger auf `ActivationURL`.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|Ein Zeiger auf `PathToDeploymentManifest`.|LPCWSTR|  
 |`pwzApplicationIdentity`|Ein Zeiger auf einen Puffer zur Aufnahme von einer auf NULL endende Zeichenfolge, die angibt, die Identität des vollständigen zurückgegeben.|LPWSTR|  
 |`pdwIdentityBufferLength`|Ein Zeiger auf einen DWORD-Wert, der die Länge der `pwzApplicationIdentity` Puffers in WCHARs so lang wie. Dies umfasst den Speicherplatz für das NULL-Abschlusszeichen.|LPDWORD|  
 |`pwzProcessorArchitecture`|Ein Zeiger auf einen Puffer zur Aufnahme von einer auf NULL endende Zeichenfolge, die die Prozessorarchitektur der anwendungsbereitstellung, aus dem Manifest angibt.|LPWSTR|  
@@ -85,8 +83,8 @@ ms.locfileid: "39082138"
 |Parameter|Beschreibung|Typ|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Ein Zeiger auf eine auf NULL endende Zeichenfolge, die die URL des Bereitstellungsmanifests enthält.|LPCWSTR|  
-|`data`|Für zukünftige Verwendung reserviert. NULL muss sein.|LPVOID|  
-|`flags`|Für zukünftige Verwendung reserviert. 0 muss sein.|DWORD|  
+|`data`|Für zukünftige Verwendung reserviert. Muss NULL sein.|LPVOID|  
+|`flags`|Für zukünftige Verwendung reserviert. Muss 0 (null) sein.|DWORD|  
   
 ### <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, 0 x 80020009 (DISP_E_EXCEPTION).  

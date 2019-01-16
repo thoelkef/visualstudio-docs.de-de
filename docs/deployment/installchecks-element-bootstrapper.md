@@ -1,8 +1,6 @@
 ---
 title: '&lt;InstallChecks&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8004ccdcbd320479bcc1e343443ebdb017ee77f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865980"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Tests mit dem lokalen Computer aus, um sicherzustellen, dass alle erforderlichen Komponenten für eine Anwendung installiert wurden.  
@@ -184,4 +182,4 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 
 ## <a name="see-also"></a>Siehe auch  
  [\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)   
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

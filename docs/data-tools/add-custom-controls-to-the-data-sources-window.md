@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ae05111b1a075515d8011daaf8626e5da7f506e1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b4cd6004519573064683d87a35d1b3c49711edb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867932"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
@@ -80,7 +79,7 @@ Wenn ein Steuerelement mit einem Datentyp zugeordnet werden soll, aber das Steue
 
      Das Steuerelement muss es sich um einen der folgenden Attribute aufweisen.
 
-    |Attribut|Beschreibung |
+    |Attribut|Beschreibung|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) der Daten anzeigen, wie z. B. eine <xref:System.Windows.Forms.TextBox>.|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut auf Steuerelemente zum Anzeigen von Listen (oder Tabellen) von Daten, z. B. eine <xref:System.Windows.Forms.DataGridView>.|

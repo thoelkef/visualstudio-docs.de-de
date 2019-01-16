@@ -2,7 +2,6 @@
 title: Debugger-Fenster | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875805"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Erfahren Sie mehr über Windows der Debugger in Visual Studio
 
@@ -35,19 +34,19 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Direkt|STRG+ALT+I|[Direktfenster](../ide/reference/immediate-window.md)|
 |Parallele Stapel|STRG+UMSCHALT+D, S|[Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)|
 |Parallele Überwachung|STRG+UMSCHALT+D, (1, 2, 3, 4)|[Get started Debugging Multithreaded Applications (Erste Schritte zum Debuggen von Multithreadanwendungen)](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Threads|STRG+ALT+H|[Debuggen Sie mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md)|
+|Threads|STRG+ALT+H|[Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md)|
 |Module|STRG+ALT+U|[Vorgehensweise: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)|
 |GPU-Threads|-|[Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Aufgaben|STRG+UMSCHALT+D, K|[Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)|
 |Python Debug Interactive|UMSCHALT+ALT+I|[Interaktive Python-REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM-Explorer|STRG+ALT+V, D|[Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|
+|DOM-Explorer|STRG+ALT+V, D|[Debuggen von Layout mithilfe von DOM Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Visuelle Echtzeitstruktur|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Echtzeit-Eigenschaften-Explorer|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Prozesse|STRG+ALT+Z|[Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)|
 |Arbeitsspeicher|STRG+ALT+M, (1, 2, 3, 4)|[Fenster "Arbeitsspeicher"](../debugger/memory-windows.md)|
 |Disassemblierung|STRG+ALT+D|[Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)|
-|Register|STRG+ALT+G|[Vorgehensweise: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)|
+|Register|STRG+ALT+G|[Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Siehe auch
 

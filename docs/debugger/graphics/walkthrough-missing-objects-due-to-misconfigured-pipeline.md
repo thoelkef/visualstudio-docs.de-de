@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863968"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.  
@@ -73,7 +71,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 #### <a name="to-examine-device-context"></a>So untersuchen Sie den Gerätekontext  
   
-1. Öffnen Sie den **d3d11-Gerätekontext**. In der **Grafikpipelinestufen** Fenster, wählen Sie die **ID3D11DeviceContext** aus, die Teil der `DrawIndexed` Aufruf, der am oberen Rand des Fensters angezeigt wird.  
+1. Öffnen Sie den **d3d11-Gerätekontext**. Wählen Sie im Fenster **Grafikpipelinestufen** die Verknüpfung **ID3D11DeviceContext** aus, die einen Teil des oben im Fenster angezeigten `DrawIndexed`-Aufrufs bildet.  
   
 2. Untersuchen Sie den Gerätezustand, der auf der Registerkarte **d3d11-Gerätekontext** angezeigt wird, um zu bestätigen, dass während des Zeichnen-Befehls kein Pixelshader aktiv war. In diesem Szenario zeigen die **Allgemeinen Informationen für Shader**– die unter **Pixelshaderzustand**angezeigt werden – an, dass der Shader den Wert **NULL**hat:  
   

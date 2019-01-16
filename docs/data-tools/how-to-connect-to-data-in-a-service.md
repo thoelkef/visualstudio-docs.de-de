@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst'
+title: 'Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,24 +15,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923873"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst
+# <a name="how-to-connect-to-data-in-a-service"></a>Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst
 
 Sie verbinden Ihrer Anwendung für die Daten von einem Dienst zurückgegeben wird, mit der [Assistenten zur Datenquellenkonfiguration](../data-tools/media/data-source-configuration-wizard.png) , und wählen **Service** auf die **wählen Sie einen Datenquellentyp**Seite.
 
 Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt und ist sofort verfügbar ist, in der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Die im Fenster Datenquellen** angezeigten Elemente hängen von den vom Dienst zurückgegebenen Informationen ab. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** Fenster nach Abschluss des Assistenten. Das liegt nicht typisierte Datasets kein Schema angeben, damit der Assistent nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
+> Die im Fenster **Datenquellen** angezeigten Elemente hängen von den vom Dienst zurückgegebenen Informationen ab. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** Fenster nach Abschluss des Assistenten. Das liegt nicht typisierte Datasets kein Schema angeben, damit der Assistent nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +52,7 @@ Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt u
 
 6.  Klicken Sie auf **Fertig stellen**.
 
-     Die **-Datenquelle wird dem Fenster Datenquellen** hinzugefügt.
+     Die Datenquelle wird dem Fenster **Datenquellen** hinzugefügt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

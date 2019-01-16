@@ -1,8 +1,6 @@
 ---
 title: Debuggen von clientseitigen Skripts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898720"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
 Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und Beheben von Fehlern in clientseitigen Skripts auf ASP.NET-Seiten bereit.  
   
 ## <a name="opening-script-documents"></a>Öffnen von Skriptdokumenten  
-Sie können Sie eine Liste der serverseitigen und clientseitigen Skriptdokumente in der **Projektmappen-Explorer** anzeigen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitiger Skriptdokumente anzeigen lassen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen von Skriptdokumenten](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Zuordnen von Haltepunkten  
  In Visual Studio können Sie serverseitigen Code nicht direkt debuggen, Sie können jedoch einen Haltepunkt in einer serverseitigen Datei festlegen. Visual Studio ordnet den Haltepunkt automatisch einer entsprechenden Position in der clientseitigen Datei zu und erstellt einen zugeordneten Haltepunkt im clientseitigen Code.  
@@ -37,7 +35,7 @@ Sie können Sie eine Liste der serverseitigen und clientseitigen Skriptdokumente
 ## <a name="manually-or-automatically-attaching-to-script"></a>Manuelles oder automatisches Anhängen an Skripts  
  Um mit dem Debuggen von Skripts in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zu beginnen, muss der Debugger an das Skript anhängt werden, das Sie debuggen möchten. Dies kann manuell oder automatisch geschehen.  
   
- Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md).  
   
  Der Debugger wird automatisch an das Skript angehängt, wenn eine der folgenden Bedingungen zutrifft:  
   
@@ -62,8 +60,8 @@ Sie können Sie eine Liste der serverseitigen und clientseitigen Skriptdokumente
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)öffnen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Einschränkungen beim Skriptdebugging](../debugger/limitations-on-script-debugging.md)   
- [Variable Windows](../debugger/debugger-windows.md)   
+ [Debuggen von ASP.NET- und AJAX-Anwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
+ [Einschränkungen beim Skriptdebuggen](../debugger/limitations-on-script-debugging.md)   
+ [Variablenfenster](../debugger/debugger-windows.md)   
  [Direktfenster](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

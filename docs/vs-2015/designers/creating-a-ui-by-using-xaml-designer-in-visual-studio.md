@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837289"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
@@ -91,9 +91,9 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  **Anzeige** Gibt die verschiedenen Anzeigegrößen und Auflösungen für die App an.
 
- **Ausrichtung** gibt die verschiedenen Ausrichtungen für die app: **Querformat** oder **Hochformat**.
+ **Ausrichtung** gibt die verschiedenen Ausrichtungen für die app: Querformat oder **Hochformat**.
 
- **Edge** gibt die verschiedenen randausrichtungen für Ihre app an: **Beide**, **Links**, **rechts**, oder **keine**.
+ **Edge** gibt die verschiedenen randausrichtungen für Ihre app an: Beide, **Links**, **Rechts**oder **Keine**.
 
  **Hoher Kontrast** Zeigt eine Vorschau der App anhand der gewählten Kontrasteinstellung an. Diese Einstellung überschreibt, sofern der Wert nicht auf **Standard**festgelegt ist, die in App.xaml. festgelegte `RequestedTheme` -Eigenschaft.
 
@@ -142,4 +142,4 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
  Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der als Feldsymbol angezeigt wird. Die Anzeige des Eigenschaftenmarkers weist darauf hin, ob es eine Datenbindung oder eine Ressource gibt, die auf die Eigenschaft angewendet wurde. Beispielsweise zeigt ein weißes Feldsymbol einen Standardwert an, ein schwarzes Feldsymbol zeigt in der Regel an, dass eine lokale Ressource angewendet wurde, und ein oranges Feld zeigt in der Regel an, dass eine Datenbindung angewendet wurde. Wenn Sie auf den Eigenschaftenmarker klicken, können Sie zur Definition eines Stils navigieren, den Datenbindungs-Generator öffnen oder die Ressourcenauswahl öffnen.
 
 ## <a name="see-also"></a>Siehe auch
- [Arbeiten mit Elementen im XAML-Designer](../designers/working-with-elements-in-xaml-designer.md) [erstellen und Anwenden einer Ressource](../designers/how-to-create-and-apply-a-resource.md) [Exemplarische Vorgehensweise: Binden an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Arbeiten mit Elementen im XAML-Designer](../designers/working-with-elements-in-xaml-designer.md) [erstellen und Anwenden einer Ressource](../designers/how-to-create-and-apply-a-resource.md) [Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

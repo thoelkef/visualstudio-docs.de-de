@@ -1,8 +1,6 @@
 ---
 title: Bereitstellen von Com_komponenten mit ClickOnce | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888451"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige Aufgabe. Komponenten müssen global registriert werden und daher können dazu führen, dass unerwünschte Nebeneffekte zwischen überlappende Anwendungen. Dies ist in der Regel kein Problem in .NET Framework-Anwendungen, da Komponenten vollständig isoliert zu einer Anwendung werden oder Seite-an-Seite kompatibel sind. Visual Studio können Sie isolierte COM-Komponenten auf dem Windows XP oder neueren Betriebssystemen bereitgestellt.  
@@ -110,7 +108,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
    End Sub  
    ```  
   
-9. Führen Sie die Anwendung aus. Von der **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
+9. Führen Sie die Anwendung aus. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
   
    Als Nächstes müssen Sie das Steuerelement zu isolieren. Jede COM-Komponente, die Ihre Anwendung verwendet wird als COM-Verweis in Ihrem Projekt dargestellt. Diese Verweise werden unter der **Verweise** Knoten in der **Projektmappen-Explorer** Fenster. (Beachten Sie, die Sie hinzufügen können die Verweise entweder direkt die **Verweis hinzufügen** Befehl die **Projekt** Menü oder indirekt durch ein ActiveX-Steuerelement auf das Formular ziehen.)  
   
@@ -139,7 +137,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
 2. Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem lokalen Computer, Datenträger, in dem Sie zugreifen können, und überprüfen die veröffentlichten Dateien.  
   
-3. Klicken Sie auf **Fertig stellen** zum Veröffentlichen der Anwendung.  
+3. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.  
   
    Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei dann enthalten ist. Das Steuerelement ist völlig isoliert ist, klicken Sie auf diese Anwendung, was bedeutet, dass wenn der Endbenutzer-Computer eine andere Version des Steuerelements mit einer anderen Anwendung verfügt, sie mit dieser Anwendung beeinflusst werden kann.  
   
@@ -165,7 +163,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
 - Die Komponente verwaltet einen physischen oder virtuellen Gerät für das System, z. B. einen Gerätetreiber für eine Druckwarteschlange.  
   
-- Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
   
   In einigen Fällen kann es möglich, dass der Entwickler es für die registrierungsfreie COM Umgestalten der Komponente sein Wenn dies nicht möglich ist, können Sie weiterhin erstellen und Veröffentlichen von Anwendungen, die über das standard-Registrierung-Schema mithilfe des Bootstrappers abhängig. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   

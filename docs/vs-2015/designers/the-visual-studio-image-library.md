@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e715dbeff8fe490a95da240ad63f5b8b0404876a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2f82b8bae9bf983ede20e0fca24e635288c15cea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965735"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +35,7 @@ Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Vis
 
  [Laden Sie die Visual Studio-Bildbibliothek herunter](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
- Die Bildbibliothek wird in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
+ Die Bibliothek ist in fünf Kategorien unterteilt: Allgemeine Elemente, Aktionen, Anmerkungen, Symbole und Objekte. Infodateien sind im PDF-Format für die allgemeinen Element- und Symboltypen enthalten. Diese Infodateien enthalten Informationen zur richtigen Verwendung dieser Bilder in Anwendungen.
 
 ## <a name="see-also"></a>Siehe auch
  [Bilder, Bitmaps und Metadateien](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

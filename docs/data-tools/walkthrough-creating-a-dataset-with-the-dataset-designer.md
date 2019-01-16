@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem DataSet-Designer'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Datasets mit Dataset-Designer'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868516"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem Dataset-Designer
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Dataset mit dem Dataset-Designer
 
 In dieser exemplarischen Vorgehensweise erstellen Sie ein Dataset mithilfe der **Dataset-Designer**. Der Artikel führt Sie durch den Prozess der Erstellung eines neuen Projekts und Hinzufügen eines neuen **DataSet** wird. Sie erfahren, wie Tabellen, die basierend auf Tabellen in einer Datenbank ohne mithilfe eines Assistenten erstellen können.
 
@@ -44,11 +43,11 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
-## <a name="create-a-new-windows-forms-application-project"></a>Erstellen Sie ein neues Windows Forms-Anwendungsprojekt
+## <a name="create-a-new-windows-forms-application-project"></a>Erstellen eines neuen Windows Forms-Anwendungsprojekts
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -58,7 +57,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Hinzufügen eines neuen Datasets zur Anwendung
 
-1.  Auf der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.
+1.  Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -70,9 +69,9 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Erstellen Sie eine Datenverbindung im Server-Explorer
 
-1.  Auf der **Ansicht** Menü klicken Sie auf **Server-Explorer**.
+1.  Klicken Sie im Menü **Ansicht** auf **Server-Explorer**.
 
-2.  In **Server-Explorer**, klicken Sie auf die **Herstellen einer Verbindung mit Datenbank** Schaltfläche.
+2.  Klicken Sie im **Server-Explorer** auf die Schaltfläche **Mit Datenbank verbinden**.
 
 3.  Erstellen Sie eine Verbindung mit der Beispieldatenbank Northwind.
 
@@ -82,21 +81,21 @@ In diesem Abschnitt wird erläutert, wie das Dataset Tabellen hinzugefügt.
 
 ### <a name="to-create-the-customers-table"></a>So erstellen Sie die Tabelle Customers
 
-1.  Erweitern Sie die Datenverbindung, die Sie erstellt, im haben **Server-Explorer**, und erweitern Sie dann die **Tabellen** Knoten.
+1.  Erweitern Sie die Datenverbindung, die Sie im **Server-Explorer** erstellt haben, und erweitern Sie dann den Knoten **Tabellen**.
 
-2.  Ziehen Sie die **Kunden** Tabelle **Server-Explorer** auf die **Dataset-Designer**.
+2.  Ziehen Sie die Tabelle **Customers** aus dem **Server-Explorer** auf den **DataSet-Designer**.
 
-     Ein **Kunden** Datentabelle und **CustomersTableAdapter** zum Dataset hinzugefügt werden.
+     Dem Dataset werden die Datentabelle **Customers** und ein **CustomersTableAdapter** hinzugefügt.
 
 ### <a name="to-create-the-orders-table"></a>So erstellen Sie die Tabelle Orders
 
--   Ziehen Sie die **Bestellungen** Tabelle **Server-Explorer** auf die **Dataset-Designer**.
+-   Ziehen Sie die Tabelle **Orders** aus dem **Server-Explorer** auf den **DataSet-Designer**.
 
-     Ein **Bestellungen** Datentabelle **OrdersTableAdapter**, und eine datenbeziehung zwischen den **Kunden** und **Bestellungen** Tabellen hinzugefügt werden die das DataSet.
+     Dem Dataset werden die Datentabelle **Orders**, ein **OrdersTableAdapter** und eine Datenbeziehung zwischen den Tabellen **Customers** und **Orders** hinzugefügt.
 
 ### <a name="to-create-the-orderdetails-table"></a>So erstellen Sie die Tabelle OrderDetails
 
--   Ziehen Sie die **Bestelldetails** Tabelle **Server-Explorer** auf die **Dataset-Designer**.
+-   Ziehen Sie die Tabelle **Order Details** aus dem **Server-Explorer** auf den **DataSet-Designer**.
 
      Ein **Bestelldetails** Datentabelle **OrderDetailsTableAdapter**, und eine datenbeziehung zwischen den **Bestellungen** und **OrderDetails** Tabellen dem Dataset hinzugefügt werden.
 
@@ -104,7 +103,7 @@ In diesem Abschnitt wird erläutert, wie das Dataset Tabellen hinzugefügt.
 
 -   Speichern Sie das DataSet.
 
--   Wählen Sie Elemente in der **Datenquellen** Fenster, und ziehen Sie sie in einem Formular. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+-   Wählen Sie im Fenster **Datenquellen** Elemente aus, und ziehen Sie sie auf ein Formular. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
 -   Fügen Sie den TableAdapters weitere Abfragen hinzu.
 

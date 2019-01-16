@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Next | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 781fd79611e8de323085ed73dc7682808d69b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958383"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Ruft eine angegebene Anzahl von Datensätzen in der Enumerationsfolge ab.  
@@ -27,7 +25,7 @@ Ruft eine angegebene Anzahl von Datensätzen in der Enumerationsfolge ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG  celt,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -46,14 +44,14 @@ HRESULT Next (
  "pcbdata"  
  [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` NULL ist, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes an Daten zur Verfügung, für alle Datensätze angeforderten.  
   
- Daten]  
+ data[]  
  [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt werden soll.  
   
  pceltFetched  
  [in, out] Gibt die Anzahl der Datensätze in `data`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn keine weitere Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine weitere Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

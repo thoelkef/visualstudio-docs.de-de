@@ -1,8 +1,6 @@
 ---
 title: Erfassen von Grafikinformationen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09571f593c77ffed1daaeaa2ac7639e2a97a32ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838150"
 ---
 # <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen
 Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual Studio-Grafikanalyse zum Diagnostizieren von Rendering- und Leistungsproblemen verwenden können.  
@@ -29,7 +27,7 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
   
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>So führen Sie die App unter der Grafikdiagnose aus  
   
-- Wählen Sie auf der Menüleiste **Debuggen**, **Grafiken**, **Grafikdebuggen starten**. (Tastatur: Drücken Sie ALT+F5)  
+- Wählen Sie auf der Menüleiste **Debuggen**, **Grafiken**, **Grafikdebuggen starten**. (Tastatur: Drücken Sie Alt + F5)  
   
 - Auf der **Grafiken** Symbolleiste wählen Sie die **Grafikdebuggen starten** Schaltfläche.  
   
@@ -42,17 +40,17 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
 - Drücken Sie auf der Tastatur die Taste "Druck" aus.
   
   > [!NOTE]
-  >  Während der Ausführung einer app unter **Grafikdiagnose**, Druck-Taste kann nur verwendet werden, um eine Frames von Grafikinformationen zu erfassen; wird nicht ausgeführt, eine reguläre Funktion. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.  
+  >  Während eine App unter **Grafikdiagnose** ausgeführt wird, kann die Taste DRUCK nur verwendet werden, um Frames von Grafikinformationen aufzuzeichnen – die übliche Tastenfunktion wird nicht ausgeführt. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.  
   
-- In Visual Studio aufnahmeschnittstelle gewählt haben die **Frame erfassen** Schaltfläche unterhalb der **diagnosesitzung** Zeitachse, oder wählen Sie die große **Frame erfassen** Schaltfläche unterhalb der **Frames pro Sekunde** verantwortlichkeitsbereichs und rechts von zuvor erfassten Frames. Beide Schaltflächen werden in der folgenden Abbildung hervorgehoben.  
+- Wählen Sie in der Visual Studio-Aufnahmeschnittstellen die Schaltfläche **Frame erfassen** unterhalb der Zeitachse **Diagnosesitzung**, oder wählen Sie die große Schaltfläche **Frame erfassen** unterhalb des Verantwortlichkeitsbereichs **Frames pro Sekunde** und rechts von zuvor erfassten Frames aus. Beide Schaltflächen werden in der folgenden Abbildung hervorgehoben.  
   
    ![Sammeln von Frames mithilfe des GPU-Auslastungstools.](media/pix_gpu_usage_tool_capture_frame.png)  
   
-   Wenn Sie bereit sind, die Frames überprüfen Sie erfasst haben, starten Sie den **Visual Studio-Grafikanalyse** anhand der **Frame...**  Link über den Bildminiaturansichten oder durch Doppelklicken auf die Miniaturansicht.  
+   Wenn Sie bereit sind, die von Ihnen erfassten Frames zu prüfen, starten Sie die **Visual Studio-Grafikanalyse**, indem Sie den **Frame**-Link über den Bildminiaturansichten oder durch Doppelklicken auf die Miniaturansicht aufrufen.  
   
-  Nur ganze Frames können erfasst werden, daher bei der Initiierung einer erfassungs der Grafikinformationen aus dem nächsten Frame ist es, die aufgezeichnet wird. Die Aufzeichnung beginnt sofort nach Darstellung des Frames, in dem Sie die Aufzeichnung gestartet haben, und endet, wenn der aufgezeichnete Frame dargestellt wird. Während die App unter der Grafikdiagnose ausgeführt wird, können Sie so viele Frames aufzeichnen, wie Sie möchten. Wenn Sie keine Frames aufzeichnen, wird das Grafikprotokoll verworfen.  
+  Es können nur ganze Frames aufgezeichnet werden. Wenn Sie eine Aufzeichnung starten, werden daher die Grafikinformationen aus dem nächsten Frame aufgezeichnet. Die Aufzeichnung beginnt sofort nach Darstellung des Frames, in dem Sie die Aufzeichnung gestartet haben, und endet, wenn der aufgezeichnete Frame dargestellt wird. Während die App unter der Grafikdiagnose ausgeführt wird, können Sie so viele Frames aufzeichnen, wie Sie möchten. Wenn Sie keine Frames aufzeichnen, wird das Grafikprotokoll verworfen.  
   
-  Beim Erfassen von Frames zeigt Visual Studio das Diagnosesitzungsfenster (.diagsession) an. Wenn Sie dieses Fenster schließen, das Debuggen beenden oder schließen Sie die app, wird Sie können nicht in das Protokoll keine Frames mehr erfassen. Wenn Sie weitere Grafikinformationen erfassen möchten, müssen Sie die App erneut unter der Grafikdiagnose ausführen, um ein neue Diagnosesitzung zu starten.  
+  Beim Erfassen von Frames zeigt Visual Studio das Diagnosesitzungsfenster (.diagsession) an. Wenn Sie dieses Fenster schließen, das Debugging beenden oder die App schließen, können Sie in diesem Protokoll keine Frames mehr erfassen. Wenn Sie weitere Grafikinformationen erfassen möchten, müssen Sie die App erneut unter der Grafikdiagnose ausführen, um ein neue Diagnosesitzung zu starten.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Erfassungsoptionen der Grafikdiagnose  
  Sie können die Aufzeichnung konfigurieren, um Aufruflisten für alle Grafikereignisse oder eine eingeschränkte Teilmenge zu sammeln, die HUD-Aufzeichnung zu deaktivieren und den Capture-Kompatibilitätsmodus zu deaktivieren oder zu aktivieren.  
@@ -63,8 +61,8 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
   
 2.  Wählen Sie Grafikdiagnose in der Kategorieliste auf der linken Seite und konfigurieren Sie die gewünschten Optionen für die Grafikdiagnose.  
   
-     **Sammeln von Aufruflisten während der Erfassung aufzeichnen (verlangsamt die Aufzeichnung)**  
-     Aktivieren Sie dieses Kontrollkästchen, um die Aufruflisten zu sammeln. Standardmäßig werden die Aufruflisten nicht erfasst. Um Aufruflisten zu erfassen, stellen sicher, dass die **Aufrufstapel während der Erfassung aufzeichnen (verlangsamt die Aufzeichnung** Kontrollkästchen festgelegt ist, aktivieren Sie die Sammlung aus, und legen Sie dann entweder die **für Zeichnen-Befehl "," Dispatch "," vorhanden "und" Perf-Marker**Option (Standard) aus, um nur die wichtigsten Aufruflisten zu erfassen oder die **für alles** Option aus, um alle Aufruflisten zu erfassen. Zum Beenden der Erfassung von Aufruflisten zu einem späteren Zeitpunkt Deaktivieren der **Aufrufstapel während der Erfassung aufzeichnen (verlangsamt die Aufzeichnung** Kontrollkästchen.  
+     **Sammeln von Aufruflisten während der Aufzeichnung (verlangsamt die Aufzeichnung)**  
+     Aktivieren Sie dieses Kontrollkästchen, um die Aufruflisten zu sammeln. Standardmäßig werden die Aufruflisten nicht erfasst. Stellen Sie zum Erfassen der Aufruflisten sicher, dass das Kontrollkästchen **Aufrufstapel während der Erfassung aufzeichnen (verlangsamt die Erfassung)** für die Aktivierung der Auflistung aktiviert ist. Legen Sie anschließend die Option (Standard) für **Zeichnen, Versand, Vorhandensein und Leistungsmarker** so fest, dass nur die wichtigsten Aufruflisten erfasst werden, oder legen Sie die Option **für alles** fest, um alle Aufruflisten zu erfassen. Deaktivieren Sie zum Anhalten der Erfassung von Aufruflisten zu einem späteren Zeitpunkt das Kontrollkästchen **Aufrufstapel während der Erfassung aufzeichnen (verlangsamt die Erfassung)**.  
   
      **In-Game-HUD während der Aufzeichnung deaktivieren**  
      Aktivieren Sie dieses Kontrollkästchen, um die HUD-Überlagerung zu deaktivieren, die eine Anwendung unter der Grafikdiagnose in der Regel anzeigt. Deaktivieren Sie das Kontrollkästchen Sie, um die HUD-Überlagerung anzuzeigen.  
@@ -72,7 +70,7 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
      **Erfassen im Kompatibilitätsmodus**  
      Aktivieren Sie dieses Kontrollkästchen, um Grafikinformationen im Kompatibilitätsmodus zu erfassen. Erfassen im Kompatibilitätsmodus ist die Standardeinstellung. Unter dem Kompatibilitätsmodus wird Direct3D nicht melden, dass die GPU zusätzliche Features unterstützt, die über die in der Basis-KE-Ebene definierten Features hinausgehen. Dadurch wird verhindert, dass die Anwendung bei Verwendung von Hardware-spezifischen Erweiterungen der GPU erfasst wird, und es wird sichergestellt, dass das Grafikprotokoll mit jeder GPU, die die gleiche oder eine höhere Funktionsebene unterstützt, wiedergegeben werden kann. Deaktivieren Sie dieses Kontrollkästchen, um den Kompatibilitätsmodus zu deaktivieren; Protokolle mit deaktiviertem Kompatibilitätsmodus werden nicht auf allen GPUs wiedergegeben, die nicht die gleichen zusätzlichen Funktionen unterstützen, die von der Anwendung während der Aufnahme verwendet wurden.  
   
-     **Beenden Sie Erfassung, wenn der SDK-layerfehler gefunden werden**  
+     **Erfassung beenden, wenn Fehler vom Typ „SDK_layers“ gefunden werden**  
      Aktivieren Sie dieses Kontrollkästchen, um die Erfassung sofort anzuhalten, wenn Fehler ermittelt werden.  
   
 ## <a name="capturing-graphics-information-remotely"></a>Grafikinformationen remote aufzeichnen  
@@ -80,10 +78,10 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
   
  Wie Sie Ihr Projekt für das Remotedebugging konfigurieren, hängt von der Art der App ab, die Sie entwickeln, und von der dabei verwendeten Programmiersprache. Weitere Informationen zum Konfigurieren des Remotedebuggings für eine UWP-app, finden Sie unter [Ausführen von UWP-apps auf einem Remotecomputer](../run-windows-store-apps-on-a-remote-machine.md). Weitere Informationen zum Konfigurieren des Remotedebuggings für eine Windows-desktop-app, finden Sie unter [Remotedebuggen](../remote-debugging.md).  
   
- Sie können später einen Remotecomputer oder ein Remotegerät verwenden, um die Grafikinformationen unabhängig vom Gerät wiederzugeben, auf dem sie erfasst wurden. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie die Grafikdiagnose-Wiedergabecomputers](how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Sie können später einen Remotecomputer oder ein Remotegerät verwenden, um die Grafikinformationen unabhängig vom Gerät wiederzugeben, auf dem sie erfasst wurden. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Das Aufzeichnen von Grafikinformationen von der Befehlszeile aus  
- Grafikinformationen können von einer Anwendung mit einem Befehlszeilentool erfasst werden. Dieses Tool DXCap.exe kann Grafikinformationen schnell erfassen und ohne Verwendung von Visual Studio oder programmgesteuerte Aufnahme wiedergeben. Insbesondere können Sie DXCap.exe für die Automatisierung oder in einer Testumgebung verwenden. Weitere Informationen zu DXCap.exe finden Sie unter [Befehlszeilen-Erfassungs-Tool](command-line-capture-tool.md)  
+ Grafikinformationen können von einer Anwendung mit einem Befehlszeilentool erfasst werden. Dieses Tool DXCap.exe kann Grafikinformationen schnell erfassen und ohne Verwendung von Visual Studio oder programmgesteuerte Aufnahme wiedergeben. Insbesondere können Sie DXCap.exe für die Automatisierung oder in einer Testumgebung verwenden. Weitere Informationen über „DXCap.exe“ finden Sie unter [Befehlszeilenerfassungstool](command-line-capture-tool.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erfassen von Grafikinformationen](walkthrough-capturing-graphics-information.md)
+ [Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen](walkthrough-capturing-graphics-information.md)

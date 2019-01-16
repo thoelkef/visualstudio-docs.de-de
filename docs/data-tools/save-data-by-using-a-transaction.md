@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Speichern von Daten mithilfe von Transaktionen'
+title: 'Vorgehensweise: Speichern von Daten mithilfe von Transaktionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918745"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Gewusst wie: Speichern von Daten mithilfe von Transaktionen
+# <a name="how-to-save-data-by-using-a-transaction"></a>Vorgehensweise: Speichern von Daten mithilfe von Transaktionen
 
 Speichern Sie Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. Verwenden der <xref:System.Transactions.TransactionScope> Objekt, das an einer Transaktion teilnehmen, die automatisch für Sie verwaltet wird.
 
@@ -55,4 +54,4 @@ Um ein Rollback die Transaktion, eine Ausnahme vor dem Aufrufen der <xref:System
 ## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-- [Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion](../data-tools/save-data-in-a-transaction.md)
+- [Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion](../data-tools/save-data-in-a-transaction.md)

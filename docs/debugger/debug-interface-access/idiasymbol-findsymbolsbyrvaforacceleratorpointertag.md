@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827977"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Wenn einen entsprechenden Tagwert, gibt diese Methode eine Enumeration von Symbolen, die enthalten sind in dieser Stub-Funktion auf einem angegebenen relativen virtuellen Adresse an.  
+Wenn einen entsprechenden Tagwert, gibt diese Methode eine Enumeration von Symbolen, die enthalten sind, in dieser Stub-Funktion an eine angegebene relative virtuelle Adresse.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,19 +31,19 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Parameter  
  `tagValue`  
- [in] Der Wert des Zeigers-Tag, für den die Pointee symboldatensätze gefunden werden.  
+ [in] Der Wert des Zeigers-Tag, für den die symboldatensätze Pointee gefunden werden.  
   
  `rva`  
- [in] Die Rva, die verwendet wird, um die Symbole zu filtern, die die Pointee-Variable mit dem angegebenen Tag-Wert entsprechen.  
+ [in] Die Rva, die verwendet wird, um die Symbole zu filtern, die die Pointee-Variable mit dem angegebenen Tagwert entsprechen.  
   
  `ppResult`  
- [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger auf die mit dem Ergebnis initialisiert wird.  
+ [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 ## <a name="remarks"></a>Hinweise  
- Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Zugriffstaste Stub-Funktion entspricht.  
+ Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Accelerator-Stub-Funktion entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

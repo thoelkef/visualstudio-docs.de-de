@@ -2,7 +2,6 @@
 title: Anzeigen von Arbeitsspeicher für Variablen im Debugger | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837224"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -49,7 +48,7 @@ Anderen Debuggerfenster wie die **Arbeitsspeicher** Windows nur während einer D
 >[!IMPORTANT]
 >So aktivieren Sie die **Arbeitsspeicher** Windows **Debuggen auf Adressebene aktivieren** muss ausgewählt werden **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen** > **allgemeine**. 
 
-**Um ein Fenster "Arbeitsspeicher" zu öffnen.**
+**So öffnen Sie ein Arbeitsspeicherfenster**
   
 1. Stellen Sie sicher, dass **Debuggen auf Adressebene aktivieren** ausgewählt ist **Tools** > **Optionen** (oder **Debuggen**  >  **Optionen**) > **Debuggen** > **allgemeine**. 
    
@@ -81,26 +80,26 @@ In der Standardeinstellung die **Arbeitsspeicher** Fenster behandelt **Adresse**
   
 ## <a name="customize-the-memory-window"></a>Passen Sie das Fenster "Arbeitsspeicher" 
 
-In der Standardeinstellung Speicherinhalt angezeigt als 1-Byte-Ganzzahlen im Hexadezimalformat angegeben werden, und die Fensterbreite bestimmt die Anzahl der Spalten angezeigt. Sie können anpassen, wie die **Arbeitsspeicher** Speicherinhalts im Fenster.  
+In der Standardeinstellung Speicherinhalt angezeigt als 1-Byte-Ganzzahlen im Hexadezimalformat angegeben werden, und die Fensterbreite bestimmt die Anzahl der Spalten angezeigt. Die Art und Weise der Anzeige des Speicherinhalts im Fenster **Arbeitsspeicher** kann angepasst werden.  
   
-**So ändern Sie das Format des Speicherinhalts**  
+**So ändern Sie das Format des Speicherinhalts:**  
   
 -  Mit der rechten Maustaste den **Arbeitsspeicher** Fenster, und wählen Sie die Formate, die Sie möchten, aus dem Kontextmenü.  
   
-**So ändern Sie die Anzahl der Spalten in das Fenster "Arbeitsspeicher"**
+**So ändern Sie die Anzahl der Spalten im Fenster „Arbeitsspeicher“:**
   
 - Wählen Sie den Dropdownpfeil neben der **Spalten** ein, und wählen Sie die Anzahl der Spalten, um anzuzeigen, oder wählen Sie **automatisch** für automatische Anpassung basierend auf Fensterbreite.  
   
 Wenn Sie nicht, dass der Inhalt des möchten der **Arbeitsspeicher** Fenster ändern, wie Ihre app ausgeführt wird, können Sie die live-ausdrucksauswertung deaktivieren. 
 
-**Um live-Auswertung zu wechseln:**  
+**So schalten Sie die Liveauswertung um:**  
   
 - Mit der rechten Maustaste den **Arbeitsspeicher** , und wählen **automatisch neu auswerten** im Kontextmenü. 
 
   >[!NOTE]
   >Live-Ausdruck ist eine Umschaltoption Auswertung und ist standardmäßig so auswählen **automatisch neu auswerten** ausgeschaltet. Auswählen von **automatisch neu auswerten** wird er erneut wieder eingeschaltet. 
   
-Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbeitsspeicher** Fenster. Sie müssen nicht den Zugriff auf die **Adresse** Feld oder eine andere Tools, wenn die Symbolleiste ausgeblendet ist.  
+Die Symbolleiste am oberen Rand des Fensters **Arbeitsspeicher** kann angezeigt oder ausgeblendet werden. Sie müssen nicht den Zugriff auf die **Adresse** Feld oder eine andere Tools, wenn die Symbolleiste ausgeblendet ist.  
   
 **Um die Anzeige der Symbolleiste zu wechseln:**  
   
@@ -110,7 +109,7 @@ Sie können ausblenden oder anzeigen die Symbolleiste am oberen Rand der **Arbei
 
 In systemeigenen Code-apps können Sie als live-Ausdrücke Registernamen. Zur Verfolgung des Stapels können Sie z. B. den Stapelzeiger verwenden.  
   
-**Um einen Zeiger im Arbeitsspeicher gehen Sie folgendermaßen:**
+**So verfolgen Sie einen Zeiger im Arbeitsspeicher:**
   
 1. In der **Arbeitsspeicher** Fenster **Adresse** Geben Sie einen Zeigerausdruck, der im aktuellen Bereich ist. Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
   
@@ -119,4 +118,4 @@ In systemeigenen Code-apps können Sie als live-Ausdrücke Registernamen. Zur Ve
    Verwendung einem Debugbefehl wie z. B. **Schritt**, die Speicheradresse angezeigt, der **Adresse** Feld- und am oberen Rand der **Arbeitsspeicher** Fenster wird automatisch als der Zeiger ändert ändert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)
+ [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

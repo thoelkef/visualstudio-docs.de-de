@@ -1,8 +1,6 @@
 ---
 title: 'Idiasegment:: Get_frame | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90dbe786155fa11e5bf1df9ed113362382838d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898679"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 Ruft die Segmentnummer ab.  
@@ -27,7 +25,7 @@ Ruft die Segmentnummer ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_frame (   
+HRESULT get_frame (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_frame (
  [out] Gibt die Anzahl von Segment.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

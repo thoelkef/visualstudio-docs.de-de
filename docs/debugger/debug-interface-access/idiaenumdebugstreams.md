@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumDebugStreams | Microsoft Docs
-ms.custom: ''
+title: IDiaEnumDebugStreams | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2169ee7a4a6b703461ec580753595748e26e5a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0154972398656c3ebd1caf8cab112f193c02fd62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963352"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
-Listet die verschiedenen Debug-Datenströme, die in der Datenquelle enthaltenen.  
+Listet die verschiedenen Debug-Datenströme, die in der Datenquelle enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaEnumDebugStreams : IUnknown  
+IDiaEnumDebugStreams : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
@@ -35,22 +33,22 @@ IDiaEnumDebugStreams : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Ruft die `IEnumVARIANT` Version des Enumerators.|  
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Ruft die `IEnumVARIANT` Version von diesem Enumerator.|  
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Ruft die Anzahl der Debug-Streams ab.|  
-|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Ruft eine Debugstream mithilfe eines Indexes ab.|  
-|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Ruft eine angegebene Anzahl von Debug-Datenströmen in der Enumerationsfolge ab.|  
-|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Überspringt eine angegebene Anzahl der Debug-Streams in einen Enumerationsfolge.|  
-|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
-|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Ruft eine Debug-Stream mithilfe eines Indexes ab.|  
+|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Ruft eine angegebene Anzahl von Debug-Streams in der Enumerationsfolge ab.|  
+|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Überspringt eine angegebene Anzahl von Debug-Datenströme in einer Enumerationsfolge.|  
+|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Inhalt des Debug-Streams ist implementierungsabhängig, und die Datenformate werden nicht dokumentiert.  
+ Der Inhalt der Debug-Streams ist abhängig von der Implementierung und die Datenformate sind nicht dokumentiert.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Rufen Sie die [idiasession:: Getenumdebugstreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) Methode zum Abrufen einer `IDiaEnumDebugStreams` Objekt.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt die verfügbaren Datenströme von dieser Schnittstelle Zugriff auf. Finden Sie unter der [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) für eine Implementierung der Schnittstelle die `PrintStreamData` Funktion.  
+ Dieses Beispiel zeigt, wie Sie auf die verfügbaren Datenströme von dieser Schnittstelle zugreifen. Finden Sie unter den [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Schnittstelle für eine Implementierung der `PrintStreamData` Funktion.  
   
 ```C++  
 void DumpAllDebugStreams( IDiaSession* pSession)  

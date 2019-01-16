@@ -1,8 +1,6 @@
 ---
-title: Fenstereigenschaften (Dialogfeld) Registerkarte "-Klasse | Microsoft Docs
-ms.custom: ''
+title: Registerkarte ", Dialogfeld" Fenstereigenschaften "-Klasse | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
@@ -12,28 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afce149a2124ba8caa827b73b258fb421792c13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 37c02e529740bdfe5e2b0ed9bdfecd077ee05f4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824326"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Registerkarte "Klasse", Dialogfeld "Fenstereigenschaften"
-Verwenden der **Klasse** Registerkarte ", um Informationen für die Klasse für das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md), den Fokus auf die [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
+Verwenden der **Klasse** Tab, um Informationen für die Klasse des ausgewählten Fensters angezeigt. Zum Anzeigen der [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md), Verschieben des Fokus auf die [Windows-Ansicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
- Die folgenden Einstellungen sind verfügbar, auf die **Klasse** Registerkarte:  
+ Die folgenden Einstellungen stehen auf der **Klasse** Registerkarte:  
   
-|Eintrag|Beschreibung|  
+|Eingabe|Beschreibung|  
 |-----------|-----------------|  
 |**Klassenname**|Der Name (oder die Ordnungszahl) der Fensterklasse.|  
-|**Klasse Stile**|Eine Kombination von Klassencodes-Stil.|  
-|**Klasse Bytes**|Anwendungsspezifische Daten dieser Fensterklasse zugeordnet.|  
-|**Klasse Atom**|Das Atom für die Klasse zurückgegebenes der **RegisterClass** aufrufen.|  
+|**Klassenstile**|Eine Kombination von Klasse-Stil-Codes.|  
+|**Klassenbytes**|Anwendungsspezifische Daten, die dieser Fensterklasse zugeordnet.|  
+|**Klassenatom**|Das Atom für die Klasse, die vom der **"registerClass"** aufrufen.|  
 |**Instanzhandle**|Der Instanzhandle des Moduls, das die Klasse registriert. Instanzenhandles sind nicht eindeutig.|  
-|**Fenster Bytes**|Die Anzahl der zusätzlichen Bytes jedes Fenster dieser Klasse zugeordnet. Die Bedeutung dieser Bytes wird von der Anwendung bestimmt. Erweitern Sie im Listenfeld aus, um die Bytewerte im DWORD-Format anzuzeigen.|  
-|**Fensterprozedur**|Die aktuelle Adresse des dem **WndProc** Funktion für Windows von dieser Klasse. Dies unterscheidet sich von **Fensterprozedur** auf die **allgemeine** Registerkarte, wenn das Fenster als Unterklasse definiert ist.|  
-|**Menünamen**|Der Name des Hauptmenüs, das Windows dieser Klasse ("none", wenn kein Menü vorhanden ist) zugeordnet ist.|  
-|**Symbol "-Handle**|Das Handle für das Symbol, das Windows dieser Klasse ("none", wenn kein Symbol) zugeordnet ist.|  
+|**Fensterbytes**|Die Anzahl der zusätzlichen Bytes jedes Fenster dieser Klasse zugeordnet. Die Bedeutung dieser Bytes wird von der Anwendung bestimmt. Erweitern Sie im Listenfeld aus, um die Bytewerte in DWORD-Format anzuzeigen.|  
+|**Fensterprozedur**|Die aktuelle Adresse des der **WndProc** -Funktion für Windows, die von dieser Klasse. Dies unterscheidet sich von **Fensterprozedur** auf die **allgemeine** Registerkarte, wenn das Fenster als Unterklasse definiert ist.|  
+|**Menüname**|Der Name des im Hauptmenü, der mit Windows dieser Klasse ("none", wenn kein Menü vorhanden ist) zugeordnet ist.|  
+|**Symbolhandle**|Das Handle für das Symbol, das Windows dieser Klasse ("none", wenn es kein Symbol angezeigt wird) zugeordnet ist.|  
 |**Cursorhandle**|Das Handle für den Cursor, der mit Windows dieser Klasse ("none", wenn kein Cursor vorhanden ist) zugeordnet ist.|  
-|**Hintergrund Pinsel**|Das Handle für den Hintergrundpinsel, der mit Windows für diese Klasse oder eine der vordefinierten COLOR_ * Farben für der Fenster Hintergrund ("none", wenn kein Pinsel vorhanden ist) zugeordnet ist.|
+|**Hintergrundpinsel**|Das Handle für den Hintergrundpinsel an, der mit Windows, die von dieser Klasse oder eine der vordefinierten COLOR_ * Farben für das Zeichnen des Fensterhintergrunds ("none", wenn kein Pinsel) zugeordnet ist.|

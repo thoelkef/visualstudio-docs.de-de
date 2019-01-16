@@ -37,7 +37,7 @@ Es können bequem mit der **Fenster Suchen** Dialogfeld Wählen Sie ein Zielfens
 
 4. Klicken Sie unter **anzeigen**Option **Nachrichten**.  
 
-5. Klicken Sie auf „OK“:  
+5. Klicken Sie auf **OK**.  
 
     Ein leerer [Meldungsansicht](../debugger/messages-view.md) Fenster geöffnet wird, und ein **Nachrichten** Menü zur Spy++-Symbolleiste hinzugefügt wird.  
 

@@ -14,14 +14,14 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860727"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen zu sammeln.  
@@ -146,7 +146,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**Wert**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
@@ -155,7 +155,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**Wert**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdatei. Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert ist im Standardspeicherort installiert ist, entspricht der Wert **C:\Program Files\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools**  
   
@@ -228,7 +228,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Speicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Arbeitsspeicherdaten](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
 
 
 

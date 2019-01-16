@@ -1,8 +1,6 @@
 ---
-title: Debuggen von HTML und CSS-Beispielcode | Microsoft Docs
-ms.custom: ''
+title: Debuggen von HTML und CSS-Beispielcode | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947555"
 ---
-# <a name="debug-html-and-css-sample-code"></a>Debuggen von HTML und CSS-Beispielcode
+# <a name="debug-html-and-css-sample-code"></a>Debuggen von HTML- und CSS-Beispielcode
   
- Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
+ Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md) Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
   
 ## <a name="sample-code"></a>Beispielcode  
- Der folgende HTML-Code wird verwendet, der \<Body >-Tag im Schnellstart.  
+ Der folgende HTML-Code wird im \<body>-Tag im Schnellstart verwendet.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456792"
 }  
 ```  
   
- Im folgenden Codebeispiel wird der vollständige JavaScript-Code in default.js dargestellt. Die Verweise auf WinJS-Namespaces für diesen Code befinden sich in der Vorlagendatei "default.HTML".  
+ Im folgenden Codebeispiel wird der vollständige JavaScript-Code in default.js dargestellt. Die Verweise auf WinJS-Namespaces für diesen Code befinden sich in der Datei „default.html“ der Vorlage.  
   
 ```javascript  
 (function () {  
@@ -103,4 +101,4 @@ ms.locfileid: "31456792"
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

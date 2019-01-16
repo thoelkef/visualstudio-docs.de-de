@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941556"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb
 Fehler beim schrittweisen Ausführen einer Webanwendung oder eines XML-Webdiensts, da das Tool zum Sperren der IIS-Sicherheit ausgeführt und URLScan installiert und aktiviert wurde. Durch diesen Zustand wird IIS daran gehindert, das DEBUG-Verb zu empfangen.  
@@ -38,7 +36,7 @@ Fehler beim schrittweisen Ausführen einer Webanwendung oder eines XML-Webdienst
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Erstellen Sie eine Kopie der Datei, und nennen sie **Urlscan.old**.  
+2.  Erstellen Sie eine Kopie der Datei, und nennen Sie sie **Urlscan.old**.  
   
 3.  Öffnen Sie die ursprüngliche Version der Datei Urlscan.ini mit dem Editor oder einem Text-Editor Ihrer Wahl.  
   

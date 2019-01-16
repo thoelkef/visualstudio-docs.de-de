@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Item | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ddb54c8084cea8d89b7453fb11547063c338cfee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958370"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Ruft den angegebenen Datensatz ab.  
@@ -27,7 +25,7 @@ Ruft den angegebenen Datensatz ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD  index,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -45,7 +43,7 @@ HRESULT Item (
  "pcbdata"  
  [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in den angegebenen Datensatz verfügbar sind.  
   
- Daten]  
+ data[]  
  [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
@@ -53,7 +51,7 @@ HRESULT Item (
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [Idiaenumdebugstreamdata:: Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [Idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)

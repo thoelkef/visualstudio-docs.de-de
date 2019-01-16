@@ -1,8 +1,6 @@
 ---
-title: Verwenden der CRT-Debugbibliothek | Microsoft Docs
-ms.custom: ''
+title: Verwenden der CRT-Debugbibliothek | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -30,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890903"
 ---
 # <a name="crt-debug-library-use"></a>Verwenden der CRT-Debugbibliothek
 Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-Debugbibliotheken verwenden zu können, müssen Sie eine Verknüpfung mit [/DEBUG](/cpp/build/reference/debug-generate-debug-info) und kompilieren Sie mit **/MDd**, **/MTd**, oder **"/ LDD"**.  
@@ -43,11 +41,11 @@ Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-
 ## <a name="remarks"></a>Hinweise  
  Die Hauptdefinitionen und Makros für CRT-Debugverfahren befinden sich in der Headerdatei Crtdbg.h.  
   
- Die Funktionen in den CRT-Debugbibliotheken werden mit Debuginformationen kompiliert (["/ Z7", / Zd, / Zi, / Zi (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format)) und ohne Optimierung. Einige der Funktionen enthalten Assertionen, um die an sie übergebenen Parameter zu überprüfen. Außerdem ist Quellcode enthalten. Mit diesem Quellcode können Sie in die CRT-Funktionen springen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, und fehlerhafte Parameter oder Speicherzustände suchen. (Einige CRT-Laufzeittechnologien sind jedoch proprietär und beinhalten daher keinen Quellcode für Ausnahmebehandlung, Gleitkomma- und einige andere Routinen.)  
+ Die Funktionen in den CRT-Debugbibliotheken werden mit Debuginformationen ([/Z7, /Zd, /Zi, /ZI (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format)) und ohne Optimierung kompiliert. Einige der Funktionen enthalten Assertionen, um die an sie übergebenen Parameter zu überprüfen. Außerdem ist Quellcode enthalten. Mit diesem Quellcode können Sie in die CRT-Funktionen springen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, und fehlerhafte Parameter oder Speicherzustände suchen. (Einige CRT-Laufzeittechnologien sind jedoch proprietär und beinhalten daher keinen Quellcode für Ausnahmebehandlung, Gleitkomma- und einige andere Routinen.)  
   
  Sie haben beim Installieren von Visual C++ die Möglichkeit, den Quellcode der C-Laufzeitbibliothek auf der Festplatte zu installieren. Wenn Sie den Quellcode nicht installieren, benötigen Sie die CD-ROM, um in die einzelnen CRT-Funktionen zu springen.  
   
- Weitere Informationen zu den verschiedenen Laufzeitbibliotheken können, finden Sie unter [C-Laufzeitbibliotheken](/cpp/c-runtime-library/crt-library-features).  
+ Weitere Informationen zum Verwenden der verschiedenen Laufzeitbibliotheken finden Sie unter [C-Laufzeitbibliotheken](/cpp/c-runtime-library/crt-library-features).  
   
 ## <a name="see-also"></a>Siehe auch  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)   

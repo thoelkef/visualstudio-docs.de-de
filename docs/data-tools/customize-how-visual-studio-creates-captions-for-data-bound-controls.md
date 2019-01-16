@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847959"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
@@ -33,7 +32,7 @@ Smart-captioning wird gesteuert, mit dem regulären Ausdruck eingegeben haben, i
 
 Die folgende Tabelle beschreibt die Registrierungswerte, die die Beschriftung Bezeichnungen zu steuern.
 
-|Registrierungselement|Beschreibung |
+|Registrierungselement|Beschreibung|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Der reguläre Ausdruck, die, den Sie verwenden, um Ihre Muster übereinstimmen.|
 |**SmartCaptionReplacement**|Das Format, das Gruppen angezeigt werden die **SmartCaptionExpression**.|
@@ -44,7 +43,7 @@ In der folgende Tabelle sind die internen Standardeinstellungen für diese Regis
 |Registrierungselement|Standardwert|Erklärung|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Entspricht einem Kleinbuchstaben Zeichen gefolgt von einem Großbuchstaben oder ein Unterstrich.|
-|**SmartCaptionReplacement**|"$1"|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
+|**SmartCaptionReplacement**|**$1 $2**|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
 |**SmartCaptionSuffix**|**:**|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Wenn die Beschriftung wird z. B. `Company Name`, erleichtert das Suffix `Company Name:`|
 
 > [!CAUTION]

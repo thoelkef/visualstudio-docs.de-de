@@ -1,8 +1,6 @@
 ---
-title: Debuggen von f# | Microsoft Docs
-ms.custom: ''
+title: Debuggen von F# | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903980"
 ---
 # <a name="debugging-f"></a>Debuggen von F#
 Das Debuggen von F# entspricht mit wenigen Ausnahmen dem Debuggen einer verwalteten Sprache:  
   
--   Die **"Auto"** Fenster zeigt keine F#-Variablen.  
+-   Das Fenster **Auto** zeigt keine F#-Variablen an.  
   
 -   Bearbeiten und Fortfahren wird für F# nicht unterstützt. Das Bearbeiten von F#-Code während einer Debugsitzung ist möglich, sollte aber vermieden werden. Da Codeänderungen während der Debugsitzung nicht übernommen werden, verursacht das Bearbeiten von F#-Code während des Debuggens einen Konflikt zwischen dem Quellcode und dem gedebuggten Code.  
   

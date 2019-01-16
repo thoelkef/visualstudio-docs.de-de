@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen von optimiertem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387862"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154323"
 ---
-# <a name="how-to-debug-optimized-code"></a>Gewusst wie: Debuggen von optimiertem Code
+# <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -76,7 +74,7 @@ ms.locfileid: "52387862"
 
 8. Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.
 
-9. Wählen Sie den C/C++-Befehlszeilenknoten „Konfigurationseigenschaften“ der Eigenschaftenseite des Projekts aus, und fügen Sie `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` dem Textfeld **Weitere Optionen** hinzu.
+9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` auf die **zusätzliche Optionen** Textfeld.
 
     > [!WARNING]
     >  Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.

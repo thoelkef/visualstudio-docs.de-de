@@ -18,7 +18,7 @@ ms.locfileid: "53935397"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Der Designer kann während des Debuggens nicht geändert werden
 
-Diese Meldung wird angezeigt, wenn Elemente im O/R-Designer geändert werden, während die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus ausgeführt wird, ist der O/R-Designer schreibgeschützt.
+Diese Meldung wird angezeigt, wenn Elemente im **O/R-Designer** geändert werden, während die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus ausgeführt wird, ist der **O/R-Designer** schreibgeschützt.
 
 Wählen Sie zum Beheben dieses Fehlers **Debuggen beenden** auf die **Debuggen** Menü. Die Anwendung beendet das Debuggen, und Sie können Elemente in der **O/R Designer**.
 

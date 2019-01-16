@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen von ActiveX-Steuerelementen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389292"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269682"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Gewusst wie: Debuggen von ActiveX-Steuerelementen
+# <a name="how-to-debug-an-activex-control"></a>Vorgehensweise: Debuggen von ActiveX-Steuerelementen
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -64,4 +62,4 @@ Um das ActiveX-Steuerelement zu debuggen, müssen Sie einen Container (ausführb
 - [Testen der Eigenschaften und Ereignisse mit Test Container](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debuggen in Visual Studio](../debugger/index.md)
-- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

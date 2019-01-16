@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967269"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen
+# <a name="how-to-enable-clickonce-security-settings"></a>Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen
 Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die Anwendung zu veröffentlichen. Dies erfolgt automatisch bei der Veröffentlichung einer Anwendung mithilfe des Veröffentlichungs-Assistenten.  
   
  In einigen Fällen kann die Leistung, die bei der Erstellung oder Debuggen der Anwendung aktivieren auf die Codezugriffssicherheit auswirken werden; in diesen Fällen können Sie die Sicherheitseinstellungen vorübergehend deaktivieren möchten.  
@@ -61,4 +59,3 @@ Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die An
 ## <a name="see-also"></a>Siehe auch  
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)   
- 

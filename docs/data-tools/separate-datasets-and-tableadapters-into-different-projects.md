@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932037"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](create-and-configure-tableadapters.md) und Dataset-Klassen in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.
@@ -32,12 +31,12 @@ Wenn Sie Dataset-Code von TableAdapter-Code zu trennen, muss das Projekt, das de
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>So separieren Sie das DataSet in ein anderes Projekt
 
-1.  Öffnen Sie eine Projektmappe, die ein Dataset enthält (*XSD* Datei).
+1.  Öffnen Sie eine Projektmappe, die ein Dataset (*XSD*-Datei) enthält.
 
     > [!NOTE]
     >  Wenn die Projektmappe das Projekt keinen ist in dem Sie den Dataset-Code zu trennen möchten, erstellen Sie das Projekt oder fügen Sie ein vorhandenes Projekt zur Projektmappe hinzu.
 
-2.  Doppelklicken Sie auf eine typisierte Dataset-Datei (eine *XSD* Datei) in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.
+2.  Doppelklicken Sie im **Projektmappen-Explorer** auf eine typisierte Dataset-Datei (*XSD*-Datei), um das Dataset mit dem **DataSet-Designer** zu öffnen.
 
 3.  Wählen Sie einen leeren Bereich der **Dataset-Designer**.
 
@@ -45,7 +44,7 @@ Wenn Sie Dataset-Code von TableAdapter-Code zu trennen, muss das Projekt, das de
 
 5.  In der **DataSet-Projekt** Liste, wählen Sie den Namen des Projekts, in dem Sie den Dataset-Code generieren möchten.
 
-     Nachdem Sie das Projekt auswählen, in dem Sie den Dataset-Code generieren möchten, die **Datasetdatei** -Eigenschaft mit einem standardmäßigen Dateinamen aufgefüllt. Sie können diesen Namen bei Bedarf ändern. Darüber hinaus, wenn Sie den Dataset-Code in einem bestimmten Verzeichnis generieren möchten, legen Sie die **Projektordner** -Eigenschaft auf den Namen eines Ordners.
+     Nachdem Sie das Projekt auswählen, in dem Sie den Dataset-Code generieren möchten, die **Datasetdatei** -Eigenschaft mit einem standardmäßigen Dateinamen aufgefüllt. Sie können diesen Namen bei Bedarf ändern. Wenn Sie den Dataset-Code in einem bestimmten Verzeichnis generieren möchten, können Sie in der **Projektordner**-Eigenschaft den Namen des Ordners angeben.
 
     > [!NOTE]
     >  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
@@ -61,8 +60,8 @@ Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standard
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)
-- [Exemplarische Vorgehensweise: Erstellen einer N-Tier-datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

@@ -1,9 +1,7 @@
 ---
 title: Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten
 description: Verwenden Sie das Natvis-Framework anpassen, dass Visual Studio systemeigene Typen im Debugger angezeigt.
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821191"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Erstellen Sie benutzerdefinierte Ansichten systemeigener Objekte im debugger
+# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Erstellen benutzerdefinierter Ansichten nativer Objekte im Debugger
 
 Visual Studio *Natvis* Framework passt die Möglichkeit, native Typen in Variablenfenstern des Debuggers, z. B. werden, die **"lokal"** und **Watch** Windows und **DataTips**. Natvis-Visualisierungen können die Typen zu, die Sie während des Debuggens besser sichtbar zu erstellen. 
 
@@ -169,7 +167,7 @@ Die Fehler erscheinen in der **Ausgabe** Fenster.
 ##  <a name="BKMK_Syntax_reference"></a> Natvis-Syntaxverweis  
 
 ###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer-Element  
-Die `AutoVisualizer` Element ist der Stammknoten der *natvis* Datei, und den Namespace enthält `xmlns:` Attribut. 
+Bei dem `AutoVisualizer`-Element handelt es sich um den Stammknoten der *NATVIS*-Datei, der das `xmlns:`-Attribut für den Namespace enthält. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ Im folgenden Beispiel wird der gleichen Visualisierung kennen, ob das Objekt ver
 </Type>  
 ```  
 
-Sie können Vorlagenparameter im visualisierungseintrag verwiesen, mithilfe von Makros "$t1", $T2, und so weiter. Beispiele zu diesen Makros finden Sie unter den *natvis* Dateien in Visual Studio bereitgestellt.  
+Sie können Vorlagenparameter im visualisierungseintrag verwiesen, mithilfe von Makros "$t1", $T2, und so weiter. Beispiele zu diesen Makros finden Sie in den *NATVIS*-Dateien, die in Visual Studio bereitgestellt werden.  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> Typenabgleich in der Schnellansicht  
 Wenn ein visualisierungseintrag nicht überprüft, wird die nächste verfügbare Visualisierung verwendet.  
@@ -231,7 +229,7 @@ Im folgenden Beispiel gilt die Visualisierung nur für die `BaseClass` Typ:
 
 #### <a name="priority-attribute"></a>Priority-Attribut  
 
-Der optionale `Priority` -Attribut gibt die Reihenfolge, in denen alternative Definitionen verwendet, wenn eine Definition kann nicht analysiert werden. Die möglichen Werte der `Priority` sind: `Low`, `MediumLow`,`Medium`, `MediumHigh`, und `High`. Der Standardwert ist `Medium`. Die `Priority` -Attribut unterscheidet nur zwischen Prioritäten in derselben *natvis* Datei.  
+Der optionale `Priority` -Attribut gibt die Reihenfolge, in denen alternative Definitionen verwendet, wenn eine Definition kann nicht analysiert werden. Die möglichen Werte der `Priority` sind: `Low`, `MediumLow`,`Medium`, `MediumHigh`, und `High`. Der Standardwert ist `Medium`sein. Die `Priority` -Attribut unterscheidet nur zwischen Prioritäten in derselben *natvis* Datei.  
 
 Im folgende Beispiel analysiert zuerst den Eintrag, der die 2015 STL entspricht. Schlägt dies fehl, analysiert, wird den alternativen Eintrag für die 2013-Version von STL verwendet:  
 
@@ -421,7 +419,7 @@ Im `std::vector` -Knoten werden die einzelnen Elemente angezeigt, wenn sie im Va
 
 Die `ArrayItems` Knoten benötigen:  
 
-- Ein `Size` Ausdruck (die in eine ganze Zahl ausgewertet werden muss) für den Debugger, um die Länge des Arrays zu verstehen.  
+- Einen `Size`-Ausdruck (der als ganze Zahl ausgewertet werden muss), damit der Debugger die Länge des Arrays kennt.  
 - Ein `ValuePointer` Ausdruck, der auf das erste Element verweist (die einen Zeiger eines Elementtyps, der nicht sein muss `void*`).  
 
 Der Standardwert mit der Arrayuntergrenze lautet „0“. Um den Wert zu überschreiben, verwenden eine `LowerBound` Element. Die *natvis* Dateien, die mit Visual Studio bereitgestellt haben, Beispiele.  
@@ -448,7 +446,7 @@ Sie können auch auf mehrdimensionale Arrays angeben. In diesem Fall benötigt d
 
 - `Direction` Gibt an, ob das Array in zeilengerichteter oder spaltengerichteter Reihenfolge ist. 
 - `Rank` gibt den Rang des Arrays an. 
-- Die `Size` -Element akzeptiert den impliziten `$i` -Parameter, der mit dem Index der Dimension, die die Länge des Arrays in dieser Dimension festzustellen ersetzt. Im vorherigen Beispiel ist der Ausdruck `_M_extent.M_base[0]` soll die Länge der 0. Dimension `_M_extent._M_base[1]` den 1. und So weiter.  
+- Das `Size`-Element akzeptiert den impliziten `$i`-Parameter, der durch den Dimensionsindex ersetzt wird, um die Länge des Arrays in dieser Dimension festzustellen. Im vorherigen Beispiel ist der Ausdruck `_M_extent.M_base[0]` soll die Länge der 0. Dimension `_M_extent._M_base[1]` den 1. und So weiter.  
 
 Hier wird gezeigt, wie es ein zweidimensionales `Concurrency::array` Objekt im Debuggerfenster aussieht:  
 
@@ -582,7 +580,7 @@ Z. B. der Typ des intelligenten Zeigers `auto_ptr<vector<int>>` zeigt in der Reg
 
  ![automatische&#95;Ptr&#60;Vektor&#60;Int&#62; &#62; standarderweiterung](../debugger/media/dbg_natvis_expand_expandeditem_default.png "Standarderweiterung")  
 
- Um die Werte des Vektors anzuzeigen, müssen Sie zwei Ebenen im Variablenfenster, durchläuft einen Drilldown der `_Myptr` Member. Durch das Hinzufügen einer `ExpandedItem` -Element, Sie können vermeiden, die `_Myptr` Variable, die aus der Hierarchie und direkt anzeigen, die Elemente des Vektors:  
+ Um die Werte des Vektors anzuzeigen, müssen Sie zwei Ebenen im Variablenfenster, durchläuft einen Drilldown der `_Myptr` Member. Durch Hinzufügen eines `ExpandedItem`-Elements können Sie die `_Myptr`-Variable aus der Hierarchie ausschließen und die Vektorelemente direkt anzeigen:  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ Das folgende Beispiel zeigt, wie Sie Eigenschaften aus der Basisklasse in einer 
 </Type>  
 ```  
 
-Die **Nd** Formatbezeichner, der Visualisierung Abgleich für die abgeleitete Klasse deaktiviert werden, ist hier erforderlich. Andernfalls den Ausdruck `*(CFrameworkElement*)this` würde dazu führen, dass die `CPanel` Visualisierung aus, um erneut angewendet werden, da die für die visualisierungstypenabstimmung Abgleichsregeln halten es für die geeignetste angesehen. Verwenden Sie die **Nd** Formatbezeichner um anzuweisen, den Debugger an die basisklassenvisualisierung oder die standarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung hat.  
+Der **nd**-Formatbezeichner, mit dem die Visualisierungsabstimmung für die abgeleitete Klasse deaktiviert wird, ist hier erforderlich. Andernfalls den Ausdruck `*(CFrameworkElement*)this` würde dazu führen, dass die `CPanel` Visualisierung aus, um erneut angewendet werden, da die für die visualisierungstypenabstimmung Abgleichsregeln halten es für die geeignetste angesehen. Verwenden Sie die **Nd** Formatbezeichner um anzuweisen, den Debugger an die basisklassenvisualisierung oder die standarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung hat.  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetische Item-Erweiterung  
- Während der `ExpandedItem` -Element stellt eine flachere Ansicht der Daten bereit, durch die Beseitigung von Hierarchien, die `Synthetic` Knoten führt das Gegenteil. Sie können ein künstliches untergeordnetes Element zu erstellen, die ein Ergebnis eines Ausdrucks nicht ist. Das künstliche Element haben untergeordnete Elemente des eigenen. Im folgenden Beispiel verwendet die Visualisierung für den `Concurrency::array` -Typ einen `Synthetic` -Knoten, um dem Benutzer eine Diagnosemeldung anzuzeigen:  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetische Elementerweiterung  
+ Während das `ExpandedItem`-Element eine flachere Datenansicht durch die Beseitigung von Hierarchien bereitstellt, bewirkt der `Synthetic`-Knoten das Gegenteil. Sie können ein künstliches untergeordnetes Element zu erstellen, die ein Ergebnis eines Ausdrucks nicht ist. Das künstliche Element haben untergeordnete Elemente des eigenen. Im folgenden Beispiel verwendet die Visualisierung für den `Concurrency::array` -Typ einen `Synthetic` -Knoten, um dem Benutzer eine Diagnosemeldung anzuzeigen:  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ Die **Nd** Formatbezeichner, der Visualisierung Abgleich für die abgeleitete Kl
  ![Concurrency:: Array mit synthetischen Element-Erweiterung](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: Array mit synthetischen Element-Erweiterung")  
 
 ###  <a name="BKMK_HResult"></a> HResult-element 
- Die `HResult` Element können Sie anpassen, die für die angezeigten Informationen eine **HRESULT** in Debuggerfenstern. Die `HRValue` -Element muss enthalten den 32-Bit-Wert, der die **HRESULT** das heißt, die angepasst werden. Die `HRDescription` -Element enthält die Informationen im Debuggerfenster angezeigt.  
+ Die `HResult` Element können Sie anpassen, die für die angezeigten Informationen eine **HRESULT** in Debuggerfenstern. Das `HRValue`-Element muss den 32-Bit-Wert des anzupassenden **HRESULT**-Elements enthalten. Die `HRDescription` -Element enthält die Informationen im Debuggerfenster angezeigt.  
 
 ```xml
 
@@ -661,7 +659,7 @@ Im Folgenden ist ein Beispiel eines UIVisualizer-Elements angegeben:
 
 - Ein `ServiceId`  -  `Id` -Paar des Attributs identifiziert eine `UIVisualizer`. Die `ServiceId` ist die GUID des Diensts die Schnellansicht Paket verfügbar macht. `Id` ist ein eindeutiger Bezeichner, der Schnellansichten, unterscheidet, wenn ein Dienst mehrere bereitstellt. Im vorherigen Beispiel enthält der gleiche schnellansichtsdienst zwei Schnellansichten bereit.  
   
-- Die `MenuName` Attribut definiert eine Schnellansicht-Name, der in der Dropdownliste neben dem Lupensymbol im Debugger angezeigt. Zum Beispiel:  
+- Die `MenuName` Attribut definiert eine Schnellansicht-Name, der in der Dropdownliste neben dem Lupensymbol im Debugger angezeigt. Beispiel:  
 
   ![Kontextmenü für UIVisualizer-Menü](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer-Menü-Kontextmenü")  
 
@@ -675,7 +673,7 @@ Alle Typen, die der *natvis* Datei muss explizit auflisten alle Benutzeroberflä
 
  Sehen Sie ein Beispiel für eine `UIVisualizer` in die [Image Watch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) Erweiterung, die zum Anzeigen von Bitmaps im Speicher verwendet. 
 
-### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer-element  
+### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer-Element  
  `CustomVisualizer` ist ein Erweiterungspunkt, der eine VSIX-Erweiterung, die Sie schreiben angibt, um Visualisierungen in Visual Studio-Code zu steuern. Weitere Informationen zum Schreiben von VSIX-Erweiterungen finden Sie unter den [Visual Studio SDK](../extensibility/visual-studio-sdk.md). 
 
 Es ist viel aufwendiger als eine XML-Natvis-Definition eine benutzerdefinierte Schnellansicht schreiben, jedoch steht Ihnen frei von Einschränkungen zu Natvis Funktionsweise oder Bedeutung nicht unterstützt. Benutzerdefinierte Schnellansichten haben Zugriff auf den vollständigen Satz der Debugger-Erweiterbarkeits-APIs, die Abfragen und Ändern des debuggenden Prozesses oder die Kommunikation mit anderen Teilen von Visual Studio.  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackframe:: Get_lengthsavedregisters | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5399f43fcbed203e6841980886a9ad857940df33
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d107ab752ba2038cd0d658ac6b0785f09e454a2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935748"
 ---
 # <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgelegt.  
@@ -27,7 +25,7 @@ Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgeleg
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_lengthSavedRegisters (   
+HRESULT get_lengthSavedRegisters (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lengthSavedRegisters (
  [out] Gibt die Anzahl der Bytes der gespeicherten Register zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

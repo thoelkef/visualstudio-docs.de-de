@@ -1,8 +1,6 @@
 ---
 title: Codezugriffssicherheit für ClickOnce-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe8709d6bb94c1437f03c4bd0c5b8b368d05b21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828354"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssicherheits-Einschränkungen. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von ClickOnce-Anwendungen anwenden.  
@@ -45,7 +43,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 - Wenn eine Anwendung "Voll vertrauenswürdig"-Berechtigungen erfordert, wird ein Endbenutzer möglicherweise aufgefordert, Berechtigungen für die Anwendung zu gewähren. Dies bedeutet, dass die Anwendung keine wirkliche ClickOnce-Bedienung bereitstellt, und die Eingabeaufforderung kann für weniger erfahrene Benutzer verwirrend sein.  
   
   > [!NOTE]
-  >  Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von vertrauenswürdigen Anwendung](../deployment/trusted-application-deployment-overview.md).  
+  >  Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
   
   Um die Berechtigungen für eine ClickOnce-Anwendung einzuschränken, können Sie die Codezugriffsberechtigungen für Ihre Anwendung so ändern, dass sie die Zone anfordert, die am besten für die Berechtigungen geeignet ist, die Ihre Anwendung erfordert. In den meisten Fällen können Sie die Zone auswählen, aus der die Anwendung bereitgestellt wird. Ist Ihre Anwendung beispielsweise eine Unternehmensanwendung, können Sie die Zone **Lokales Intranet** verwenden. Ist Ihre Anwendung eine Internetanwendung, können Sie die Zone **Internet** verwenden.  
   
@@ -58,7 +56,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
   
  Als Ausgangspunkt für ein Konfigurieren von Berechtigungen können Sie auf der Seite **Sicherheit** eine Sicherheitszone in der Liste **Zone** auswählen. Wird Ihre Anwendung möglicherweise aus mehreren Zonen bereitgestellt, wählen Sie die Zone mit den wenigsten Berechtigungen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Die Eigenschaften, die festgelegt werden können, variieren je nach Berechtigungssatz (nicht alle Berechtigungssätze haben konfigurierbare Eigenschaften). Weitere Informationen zur vollständigen Liste der Berechtigungen, die Ihre Anwendung anfordern kann, finden Sie unter <xref:System.Security.Permissions>. Weitere Informationen zum Festlegen von Berechtigungen für eine benutzerdefinierte Zone finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Die Eigenschaften, die festgelegt werden können, variieren je nach Berechtigungssatz (nicht alle Berechtigungssätze haben konfigurierbare Eigenschaften). Weitere Informationen zur vollständigen Liste der Berechtigungen, die Ihre Anwendung anfordern kann, finden Sie unter <xref:System.Security.Permissions>. Weitere Informationen zum Festlegen von Berechtigungen für eine benutzerdefinierte Zone finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Debuggen einer Anwendung, die über eingeschränkte Berechtigungen verfügt  
  Als Entwickler führen Sie Ihren Entwicklungscomputer höchstwahrscheinlich mit "Voll vertrauenswürdig"-Berechtigungen aus. Aus diesem Grund sehen Sie beim Debuggen der Anwendung nicht die Sicherheitsausnahmen, die Benutzern angezeigt werden können, wenn diese die Anwendung mit eingeschränkten Berechtigungen ausführen.  
@@ -69,7 +67,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
   
  Außerdem deaktiviert die IntelliSense-Funktion, wenn Sie Code schreiben, im Code-Editor alle Elemente, die nicht in den Sicherheitsberechtigungen enthalten sind, die Sie konfiguriert haben.  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Debuggen eine ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Sicherheitsberechtigungen für im Browser gehostete Anwendungen  
  Visual Studio bietet die folgenden Projekttypen für WPF-Anwendungen (Windows Presentation Foundation):  
@@ -94,9 +92,9 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
   
 ## <a name="see-also"></a>Siehe auch  
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Gewusst wie: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Übersicht über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
+ [Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
  [Seite „Sicherheit“, Projekt-Designer](../ide/reference/security-page-project-designer.md)

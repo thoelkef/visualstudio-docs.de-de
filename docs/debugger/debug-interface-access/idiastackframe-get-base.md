@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackframe:: Get_base | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 728c9af4470cfaa96d333cd41d119a342bc680ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 40b3948cdc8d752a6d491b0b094477fdc327f0ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956815"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
 Ruft die Basisadresse des Rahmens ab.  
@@ -27,7 +25,7 @@ Ruft die Basisadresse des Rahmens ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_base (   
+HRESULT get_base (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_base (
  [out] Gibt die Basisadresse zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

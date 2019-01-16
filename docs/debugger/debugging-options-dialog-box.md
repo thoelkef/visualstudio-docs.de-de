@@ -1,8 +1,6 @@
 ---
-title: Debuggen, Dialogfeld "Optionen" | Microsoft Docs
-ms.custom: ''
+title: Debuggen, Dialogfeld "Optionen" | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d920897c831ca1c92b1db5fe3d649ffd7ee67143
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472884"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268772"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
-Die **Debuggen** Ordner in der **Optionen** Dialogfeld auf die **Tools** Menü sind die folgenden Seiten, die es ermöglichen Ihnen das Festlegen der Debugger Tooloptionen.  
+Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.  
   
 -   [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -39,9 +37,9 @@ Die **Debuggen** Ordner in der **Optionen** Dialogfeld auf die **Tools** Menü s
   
 -   [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Symbole, Debuggen, Optionen (Dialogfeld)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [Symbole, Debuggen, Dialogfeld „Optionen“](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md) [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)   
  [Referenz zur Debugger-Benutzeroberfläche](../debugger/debugging-user-interface-reference.md)

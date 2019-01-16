@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwenden von systemeigenen Laufzeitprüfungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860811"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269643"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Gewusst wie: Verwenden von systemeigenen Laufzeitprüfungen
+# <a name="how-to-use-native-run-time-checks"></a>Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen
 In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:  
   
 - Beschädigung des Stapelzeigers  
@@ -81,6 +79,6 @@ In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/r
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Laufzeitfehlerüberprüfung](/cpp/c-runtime-library/run-time-error-checking)

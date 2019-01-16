@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Paketmanifests | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943472"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Gewusst wie: Erstellen eines Paketmanifests
+# <a name="how-to-create-a-package-manifest"></a>Vorgehensweise: Erstellen eines Paketmanifests
 Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können Sie ein Bootstrapperpaket. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Gemeinsam genutzte Funktionen in den verschiedenen lokalisierten Versionen sollten das Produktmanifest näher betrachten.  
   
- Weitere Informationen zu Paketmanifesten, finden Sie unter [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md).  
+ Weitere Informationen zu Paketmanifesten, finden Sie unter [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Erstellen des Paketmanifests  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

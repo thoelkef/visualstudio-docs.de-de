@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_noinline | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24864562d11267cfc96bd3b3622864275eaecea2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e5cc3557f3c04cf2cbe615944c3106b62cdc5b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843553"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Ruft ein Flag, das angibt, ob die Funktion als nicht Inline markiert wurde (mithilfe der [Noinline](/cpp/cpp/noinline) Attribut).  
@@ -46,7 +44,7 @@ HRESULT get_noInline(
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

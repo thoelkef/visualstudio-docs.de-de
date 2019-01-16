@@ -1,8 +1,6 @@
 ---
 title: Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert. | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
@@ -22,21 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 193c93e7c29d3ea9fa13c08c9d77e4e88026d814
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: MT
+ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49900513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938657"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert.
 Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und dem Remotecomputer, wenn eine der folgenden Situationen vorliegt:  
   
-- Der Debugger so eingestellt ist **systemeigenen Kompatibilitätsmodus** oder **verwalteter Kompatibilitätsmodus** aktiviert ist, der **Tools > Optionen > Debugging** Seite  
+- Der Debugger ist auf **Nativer Kompatibilitätsmodus** festgelegt, oder auf der Seite **Extras > Optionen > Debuggen** ist **Verwalteter Kompatibilitätsmodus** aktiviert.  
   
 - Sie debuggen verwalteten C++-Code (C++/CLI).  
   
-- In Visual Studio 2013 Wenn **systemeigenes bearbeiten und Fortfahren aktivieren** wird eingecheckt. die **Tools > Optionen > Debugging** Seite  
+- In Visual Studio 2013 ist auf der Seite **Extras > Optionen > Debuggen** die Option **Natives Bearbeiten und Fortfahren aktivieren** aktiviert.  
   
 - Einige Debuggingszenarien von Drittanbietern  
   
@@ -51,5 +49,5 @@ Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und d
 - Wenn für das Remotedebugging die Eingabe von Anmeldeinformationen erforderlich ist, aktivieren Sie die Option zum Speichern der Anmeldeinformationen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

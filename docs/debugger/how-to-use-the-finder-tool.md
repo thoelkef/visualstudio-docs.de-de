@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwenden des Suchtools | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965261"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Gewusst wie: Verwenden des Suchtools
+# <a name="how-to-use-the-finder-tool"></a>Vorgehensweise: Verwenden des Suchtools
 Können Sie das Suchtool im der **Fenster Suchen** Dialogfeld zum Anzeigen von Eigenschaften oder Meldungen. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, deaktivierte untergeordnete Fenster überlappen.  
   
  ![Spy++&#43; &#43; finden Sie im Dialogfeld Fenster](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
@@ -48,7 +46,7 @@ Suchtool im Dialogfeld "Fenster Suchen"
   
 4. Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.  
   
-5. Drücken Sie **OK**.  
+5. Klicken Sie auf **OK**.  
   
     Wenn Sie ausgewählt haben **Eigenschaften**, [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md) wird geöffnet. Wenn Sie ausgewählt haben **Nachrichten**, [Meldungsansicht](../debugger/messages-view.md) Fenster wird geöffnet.  
   

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen im gemischten Modus | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896057"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Gewusst wie: Debuggen im gemischten Modus (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Vorgehensweise: Debuggen im gemischten Modus (C#, C++, Visual Basic)
 
 Die folgenden Verfahren wird beschrieben, wie debugging für das Debuggen von verwaltetem und systemeigenem Code gemeinsam, auch bekannt als im gemischten Modus zu aktivieren. Es gibt zwei Szenarios des Debuggens im gemischten Modus:
 
@@ -36,10 +34,10 @@ Die folgenden Verfahren wird beschrieben, wie debugging für das Debuggen von ve
 
 Sie können sowohl verwaltete als auch systemeigene Debugger in der aufrufenden app-Projekt **Eigenschaft** Seiten. Die Einstellungen unterscheiden sich zwischen nativen und verwalteten apps.
 
-Wenn Sie keinen Zugriff auf eine aufrufende app-Projekt haben, können Sie die DLL aus dem DLL-Projekt debuggen. Im gemischten Modus nur das DLL-Projekt zu Debuggen ist nicht erforderlich. Weitere Informationen finden Sie unter [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).
+Wenn Sie keinen Zugriff auf eine aufrufende app-Projekt haben, können Sie die DLL aus dem DLL-Projekt debuggen. Im gemischten Modus nur das DLL-Projekt zu Debuggen ist nicht erforderlich. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen über ein DLL-Projekt](../debugger/how-to-debug-from-a-dll-project.md).
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können von den in diesem Artikel, abhängig von der Visual Studio-Einstellungen oder die Edition abweichen. Wählen Sie zum Ändern Ihrer Einstellungen **Tools** > **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Die angezeigten Dialogfelder und Menübefehle können von den in diesem Artikel, abhängig von der Visual Studio-Einstellungen oder die Edition abweichen. Wählen Sie zum Ändern Ihrer Einstellungen **Tools** > **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Aktivieren Sie Debuggen im gemischten Modus für eine native aufrufende app
 
@@ -47,7 +45,7 @@ Wenn Sie keinen Zugriff auf eine aufrufende app-Projekt haben, können Sie die D
 
 1. In der  **\<Projekt > Eigenschaftenseiten** Dialogfeld erweitern Sie **Konfigurationseigenschaften**, und wählen Sie dann **Debuggen**.
 
-1. Legen Sie Debuggertyp **auf Gemischt** oder Automatisch** fest.
+1. Legen Sie **Debuggertyp** auf **Gemischt** oder **Automatisch** fest.
 
 1. Klicken Sie auf **OK**.
 
@@ -68,4 +66,4 @@ Wenn Sie keinen Zugriff auf eine aufrufende app-Projekt haben, können Sie die D
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Debuggen über ein DLL-Projekt](../debugger/how-to-debug-from-a-dll-project.md)
+- [Vorgehensweise: Debuggen über ein DLL-Projekt](../debugger/how-to-debug-from-a-dll-project.md)

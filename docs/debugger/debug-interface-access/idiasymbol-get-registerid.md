@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_registerid | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0acc6d79e1e5da810e2f2da699df5d4def424df9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0938bc4cc8692f9cb092938429c925fe68433bf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911220"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 Ruft ab, der Register-Kennzeichner des Standorts bei der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) nastaven NA hodnotu `LocIsEnregistered`.  
@@ -27,7 +25,7 @@ Ruft ab, der Register-Kennzeichner des Standorts bei der [LocationType-Enumerati
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_registerId (   
+HRESULT get_registerId (   
    DWORD* pRetVal  
 );  
 ```  

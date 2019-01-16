@@ -1,8 +1,6 @@
 ---
-title: Tastenkombinationen (HTML und JavaScript) | Microsoft Docs
-ms.custom: ''
+title: Tastenkombinationen (HTML und JavaScript) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949468"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Tastenkombinationen (HTML und JavaScript)
   
- Tastenkombinationen in Visual Studio zum Debuggen von uwp-apps mit HTML und JavaScript.  
+ Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und JavaScript.  
   
 ## <a name="general-shortcuts"></a>Allgemeine Tastenkombinationen  
- Die folgenden Tastenkombinationen funktionieren für alle Tools für uwp-apps mit HTML und JavaScript.  
+ Diese Tastenkombinationen gelten für alle Tools für UWP-apps mit HTML und JavaScript.  
   
 |Aktion|Verknüpfung|  
 |------------|--------------|  
@@ -51,9 +49,9 @@ ms.locfileid: "31475495"
 |Aktion|Verknüpfung|  
 |------------|--------------|  
 |Element auswählen|Strg+B|  
-|Wechseln zwischen anzeigen und Ausblenden von webseitenmarkierungsfeldern bei Verwendung **Element auswählen**|STRG+UMSCHALT+I|  
-|Vornehmen von Änderungen über **als HTML bearbeiten**|STRG+EINGABETASTE|  
-|Verwerfen von Änderungen über **als HTML bearbeiten**|Esc|  
+|Wechseln zwischen Anzeigen und Ausblenden von Webseitenmarkierungsfeldern bei der Verwendung von **Element auswählen**|STRG+UMSCHALT+I|  
+|Vornehmen von Änderungen über **Als HTML bearbeiten**|STRG+EINGABETASTE|  
+|Verwerfen von Änderungen über **Als HTML bearbeiten**|Esc|  
 |Erhöhen des ausgewählten CSS-Werts um 1|NACH-OBEN|  
 |Verringern des ausgewählten CSS-Werts um 1|NACH-UNTEN|  
   

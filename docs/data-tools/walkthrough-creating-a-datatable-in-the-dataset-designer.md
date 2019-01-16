@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824833"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen einer DataTable im Dataset-Designer
 
@@ -29,7 +28,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie zum Erstellen einer
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -39,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie zum Erstellen einer
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Hinzufügen eines neuen Datasets zur Anwendung
 
-1.  Auf der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.
+1.  Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -59,11 +58,11 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie zum Erstellen einer
 
 ## <a name="add-columns-to-the-datatable"></a>Hinzufügen von Spalten zu einer DataTable
 
-1.  Mit der rechten Maustaste die **Musik** Tabelle. Zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Spalte**.
+1.  Mit der rechten Maustaste die **Musik** Tabelle. Zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Spalte**.
 
 2.  Den Namen der Spalte `SongID`.
 
-3.  In der **Eigenschaften** legen die <xref:System.Data.DataColumn.DataType%2A> Eigenschaft <xref:System.Int16?displayProperty=fullName>.
+3.  Legen Sie im Fenster **Eigenschaften** die Eigenschaft <xref:System.Data.DataColumn.DataType%2A> auf <xref:System.Int16?displayProperty=fullName>fest.
 
 4.  Wiederholen Sie diesen Vorgang aus, und fügen Sie die folgenden Spalten:
 
@@ -79,7 +78,7 @@ Alle Datentabellen sollte es sich um einen Primärschlüssel besitzen können. E
 
 Um den Primärschlüssel festzulegen, Maustaste den **SongID** Spalte, und klicken Sie dann auf **Primärschlüssel festlegen**. Ein Schlüsselsymbol wird neben der **SongID** Spalte.
 
-## <a name="save-your-project"></a>Speichern Sie das Projekt
+## <a name="save-your-project"></a>Speichern Ihres Projekts
 
 Zum Speichern der **DataTableWalkthrough** -Projekt im der **Datei** , wählen Sie im Menü **Alles speichern**.
 

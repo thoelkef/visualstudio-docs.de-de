@@ -1,8 +1,6 @@
 ---
 title: Referenz zur Schnellansicht-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902213"
 ---
 # <a name="visualizer-api-reference"></a>Referenz zur Schnellansicht-API
 
-Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellansicht für den Visual Studio-Debugger schreiben möchten. Eine Schnellansicht ist eine kleine Anwendung, die die Funktionalität der Benutzeroberfläche des Visual Studio-Debuggers erweitert. Eine Schnellansicht kann angezeigt (und optional) ein Datenobjekt eines bestimmten Typs, der für den die Schnellansicht vorgesehen ist.  
+Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellansicht für den Visual Studio-Debugger schreiben möchten. Eine Schnellansicht ist eine kleine Anwendung, die die Funktionalität der Benutzeroberfläche des Visual Studio-Debuggers erweitert. In einer Schnellansicht kann ein Datenobjekt eines bestimmten Typs, für den die Schnellansicht vorgesehen ist, angezeigt und optional auch bearbeitet werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
@@ -44,6 +42,6 @@ Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellans
   
 ## <a name="see-also"></a>Siehe auch
 
- [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
+ [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

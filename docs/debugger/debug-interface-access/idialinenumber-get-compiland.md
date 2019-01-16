@@ -1,8 +1,6 @@
 ---
 title: 'Idialinenumber:: Get_compiland | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca79c4a2f90e21d71518033ffb8450c02998945
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c24c79abb4b907c79c45e6dea5843546e3ce9804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851809"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
 Ruft einen Verweis auf das Symbol für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.  
@@ -27,7 +25,7 @@ Ruft einen Verweis auf das Symbol für der Kompiliereinheit, das die Bytes des I
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_compiland (   
+HRESULT get_compiland (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_compiland (
  [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

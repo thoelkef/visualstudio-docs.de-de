@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_maxstack | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb5a7b9365cbcb63e6f260e70c37fe3921e2f61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0f8f258dfa240fe1f0e659eebd6b1f4397956e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951286"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.  
@@ -27,7 +25,7 @@ Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_maxStack (   
+HRESULT get_maxStack (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_maxStack (
  [out] Gibt die maximale Anzahl von Bytes, die auf dem Stapel abgelegt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Der von dieser Methode zurückgegebene Wert wird normalerweise verwendet, bei der Interpretation einer Programm-Zeichenfolge (finden Sie unter den [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) -Methode für die Definition einer Programm-Zeichenfolge).  

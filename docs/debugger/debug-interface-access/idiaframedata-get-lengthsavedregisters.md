@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_lengthsavedregisters | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff9ab2fb5550cb2b127224865e4b248657456a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bb5fc5469aecdfbfee9a7f24586c384013f89f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912755"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgelegt.  
@@ -27,7 +25,7 @@ Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgeleg
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_lengthSavedRegisters (   
+HRESULT get_lengthSavedRegisters (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lengthSavedRegisters (
  [out] Gibt die Anzahl der Bytes der gespeicherten Register zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Der von dieser Methode zurückgegebene Wert wird normalerweise verwendet, bei der Interpretation einer Programm-Zeichenfolge (finden Sie unter den [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) -Methode für die Definition einer Programm-Zeichenfolge).  

@@ -1,8 +1,6 @@
 ---
 title: Anzeigen von Threads in das Fenster "Parallele Stapel" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227940"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Anzeigen von Threads und Tasks in das Fenster "Parallele Stapel"
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Anzeigen von Threads und Tasks in das Fenster "Parallele Stapel" (C#, Visual Basic, C++)
 
 Die **parallele Stapel** Fenster eignet sich zum Debuggen von Multithreadanwendungen. Er hat mehrere Ansichten:
 

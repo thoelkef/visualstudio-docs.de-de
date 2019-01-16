@@ -1,8 +1,6 @@
 ---
 title: Halb-/ Viertel-Textur Dimensionen Variante | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956217"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Halb-/Viertel-Texturdimensionsvariante
 Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.  
@@ -46,5 +44,5 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
  Diese Variante ändert die Größe von Texturen vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [MipMap-Generierungsvariante](mip-map-generation-variant.md)   
+ [Mipmap-Generierungsvariante](mip-map-generation-variant.md)   
  [BC-Texturkomprimierungsvariante](bc-texture-compression-variant.md)

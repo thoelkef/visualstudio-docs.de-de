@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Anhalten von Codeänderungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843254"
 ---
-# <a name="how-to-stop-code-changes"></a>Gewusst wie: Anhalten von Codeänderungen
+# <a name="how-to-stop-code-changes"></a>Vorgehensweise: Anhalten von Codeänderungen
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.  
   
 > [!CAUTION]
@@ -34,12 +32,12 @@ Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den V
   
 ### <a name="to-stop-applying-code-changes"></a>So beenden Sie das Übernehmen von Codeänderungen  
   
-- Wählen Sie **übernehmen von Codeänderungen beenden** aus der **Debuggen** Menü.  
+- Klicken Sie im Menü **Debuggen** auf **Übernehmen von Codeänderungen beenden**.  
   
   Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
   
   Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bearbeiten und fortfahren](../debugger/edit-and-continue.md)   
+ [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)   
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)

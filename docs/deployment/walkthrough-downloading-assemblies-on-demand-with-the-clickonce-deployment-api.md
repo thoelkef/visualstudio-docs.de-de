@@ -1,8 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c45f600462d1862b9f50e12c5849d9d7175310a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989214"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
-Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile Ihrer Anwendung möglicherweise, die durch eine kleine Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie bestimmte Assemblys in Ihrer Anwendung als "optional" markieren und zum Herunterladen mithilfe von Klassen der <xref:System.Deployment.Application> Namespace verwenden, wenn die common Language Runtime (CLR) angefordert.  
+Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile Ihrer Anwendung möglicherweise, die durch eine kleine Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application>-Namespace verwenden, wenn diese von der Common Language Runtime (CLR) angefordert werden.  
   
 > [!NOTE]
 >  Die Anwendung muss mit voller Vertrauenswürdigkeit ausgeführt werden, um dieses Verfahren zu verwenden.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Sie benötigen eine der folgenden Komponenten in dieser exemplarischen Vorgehensweise benötigt:  
   
 -   Das Windows SDK. Das Windows SDK kann aus dem Microsoft Download Center heruntergeladen werden.  
@@ -114,7 +112,7 @@ Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../dep
   
     -   Nennen Sie das Bereitstellungsmanifest `ClickOnceOnDemand`.  
   
-## <a name="testing-the-new-assembly"></a>Testen der neuen assembly  
+## <a name="testing-the-new-assembly"></a>Testen der neuen Assembly  
   
 #### <a name="to-test-your-on-demand-assembly"></a>So testen Sie die bedarfsabhängige Assembly  
   
@@ -126,7 +124,7 @@ Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../dep
    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
    ```  
   
-3. Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Eine Zeichenfolge in einem Meldungsfeldfenster sollte angezeigt werden, die "Hello, World!" liest.  
+3. Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Daraufhin sollte eine Zeichenfolge in einem Meldungsfeldfenster angezeigt werden, die „Hello, World!“ lautet.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Deployment.Application.ApplicationDeployment>

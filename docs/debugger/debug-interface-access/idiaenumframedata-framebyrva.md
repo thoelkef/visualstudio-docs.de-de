@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumframedata:: Framebyrva | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6806532c6d70048c621e8c079ea4ead317eb0707
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fba9982d26ebde88716e345cd449c488dc2bf8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898681"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Gibt einen Frame relative virtuelle Adresse (RVA) zurück.  
@@ -27,7 +25,7 @@ Gibt einen Frame relative virtuelle Adresse (RVA) zurück.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT frameByRVA(   
+HRESULT frameByRVA(   
    DWORD           relativeVirtualAddress,  
    IDiaFrameData** frame  
 );  
@@ -41,7 +39,7 @@ HRESULT frameByRVA(
  [out] Gibt eine [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den Rahmen, die die angegebene Adresse enthält darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

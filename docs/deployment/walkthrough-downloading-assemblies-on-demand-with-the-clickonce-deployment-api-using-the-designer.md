@@ -1,8 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878600"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung
 Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthalten sind, beim ersten Ausführen der Anwendung heruntergeladen. Allerdings gibt es möglicherweise Teile der Anwendung, die von einer begrenzten Anzahl von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application> -Namespace verwenden, wenn diese von der Common Language Runtime angefordert werden.
@@ -33,7 +31,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 > Die Anwendung muss mit voller Vertrauenswürdigkeit ausgeführt werden, um dieses Verfahren zu verwenden.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
 
@@ -77,11 +75,11 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 
 2.  Klicken Sie auf die Schaltfläche **Anwendungsdateien** .
 
-3.  Suchen Sie die Sammlung für ClickOnceLibrary.dll. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
+3.  Suchen Sie das Listing für *ClickOnceLibrary.dll*. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
 
 4.  Erweitern Sie das Dropdownfeld **Gruppe** , und wählen Sie **Neu**aus. Geben Sie den Namen `ClickOnceLibrary` als den neuen Gruppennamen ein.
 
-5.  Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5.  Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe von Manifest Generation and Editing Tool— Graphical Client (MageUI.exe) als optional
 
@@ -93,7 +91,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 
 ## <a name="test-the-new-assembly"></a>Testen Sie die neue assembly
 
-So testen Sie die bedarfsabhängige Assembly
+So testen Sie die bedarfsabhängige Assembly:
 
 1. Starten Sie Ihre Anwendung, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bereitgestellt wurde.
 
