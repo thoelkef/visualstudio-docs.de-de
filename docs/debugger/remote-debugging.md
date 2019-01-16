@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866334"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269955"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -122,7 +122,7 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
 - [Remotedebuggen von ASP.NET Core auf einem Remotecomputer mit IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

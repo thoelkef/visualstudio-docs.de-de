@@ -1,8 +1,6 @@
 ---
 title: Erstellen einer visuellen Zuordnung der Aufrufliste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960838"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen 
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Code Map vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
-Eine exemplarische Vorgehensweise in diesem Video: [Video: visuelles Debuggen mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Eine exemplarische Vorgehensweise die diesem Video aus: [Video. Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Details zu Befehlen und Aktionen, die Sie mit Code Maps verwenden können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 

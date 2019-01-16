@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898072"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204400"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten in DataTips im Code-editor
 
-DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen. Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
-
-Ist dies Ihre erste Time-Debuggen, sollten Sie zum Lesen [besser schreiben C# code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) vor der Lektüre dieses Artikels.
+DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen. Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
   
 ## <a name="work-with-datatips"></a>Arbeiten mit DataTips
 

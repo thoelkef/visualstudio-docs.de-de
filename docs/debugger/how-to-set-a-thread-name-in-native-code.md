@@ -16,19 +16,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecc9eb2dc437847786022526265bfcc2942ace88
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961348"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153653"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Vorgehensweise: Festlegen eines Threadnamens in nativem Code
-Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Das Benennen von Threads ist hilfreich beim Verfolgen von Threads im Fenster **Threads**.
+Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Benennen von Threads ist nützlich zum Identifizieren von Threads von Interesse an der **Threads** Wartungszeitfensters, in einen laufenden Prozess zu debuggen. Mit Threads in Form Namen kann auch nützlich beim Ausführen der Post-Mortem-debugging über Crash Dumps Untersuchung und beim Analysieren der Leistung werden erfasst, die mit verschiedenen Tools.
 
-## <a name="set-a-thread-name"></a>Festlegen eines Threadnamens
+## <a name="ways-to-set-a-thread-name"></a>Möglichkeiten zum Festlegen eines Threadnamens
 
-Die `SetThreadName` Funktion ist nützlich zum Festlegen und Anzeigen von Threads, wenn der Debugger an der ausgeführte Code angefügt ist. Ab Visual Studio 2017 Version 15.6, können Sie die [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) Funktion zum Festlegen und Threadnamen anzeigen.
+Es gibt zwei Möglichkeiten zum Festlegen eines Threadnamens. Die erste besteht die [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) Funktion. Die zweite ist durch eine bestimmte Ausnahme auslösen, während Visual Studio-Debugger an den Prozess angefügt ist. Jeder Ansatz hat Vorteile und Einschränkungen.
+
+Es ist, beachten Sie, dass _sowohl_ Ansätze können zusammen verwendet werden, bei Bedarf, da die Mechanismen, die mit dem sie arbeiten unabhängig voneinander sind.
+
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Festlegen eines Threadnamens mithilfe von `SetThreadDescription`
+
+Vorteile:
+ * Threadnamen sind sichtbar, wenn das Debuggen in Visual Studio, unabhängig davon, ob der Debugger an den Prozess zum Zeitpunkt angefügt wurde, der SetThreadDescription aufgerufen wird.
+ * Threadnamen sind sichtbar, beim Ausführen der Post-Mortem-Debuggen, indem Sie ein Absturzabbild in Visual Studio geladen.
+ * Threadnamen werden auch angezeigt, wenn andere Tools wie z. B. mithilfe der [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) Debugger und die [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Leistungsanalyse.
+
+Zu beachten:
+ * Threadnamen sind nur sichtbar, in Visual Studio 2017 Version 15.6 und höher.
+ * Beim Debuggen eines Absturzes Post-Mortem-Datei speichern, sind Threadnamen nur sichtbar, wenn der Absturz auf Windows 10, Version 1607, Windows Server 2016 oder höheren Versionen von Windows erstellt wurde.
+ 
+*Beispiel:*
 
 ```C++
 #include <windows.h>
@@ -46,11 +61,20 @@ int main()
 }
 ```
 
-## <a name="set-a-thread-name-using-setthreadname"></a>Festlegen eines Threadnamens SetThreadName verwenden
+### <a name="set-a-thread-name-by-throwing-an-exception"></a>Festlegen eines Threadnamens durch Auslösen einer Ausnahme
 
-Sie können auch verwenden, um das Festlegen eines Threadnamens im Programm, das `SetThreadName` Funktion, wie im folgenden Codebeispiel gezeigt. Der Threadname wird in den Thread kopiert, damit der Arbeitsspeicher für den `threadName` -Parameter freigegeben werden kann.  Diese Methode verwendet einen auf Ausnahmen basierende Ansatz, der funktioniert nur, wenn zum Zeitpunkt, die die Ausnahmen basierende Methode verwendet wird, der Debugger angefügt ist. Ein Threadnamen, den Sie festlegen, mit dieser Methode wird in Dumps oder Tools zur Leistungsanalyse nicht verfügbar.
+Eine weitere Möglichkeit zum Festlegen eines Threadnamens im Programm ist, um den Namen des gewünschten Thread mit Visual Studio-Debugger zu kommunizieren, durch eine speziell konfigurierte Ausnahme auslösen. 
 
-Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit `SetThreadName`:
+Vorteile:
+ * Funktioniert in allen Versionen von Visual Studio.
+
+Zu beachten:
+ * Funktioniert nur, wenn zum Zeitpunkt, die die Ausnahmen basierende Methode verwendet wird, der Debugger angefügt ist. 
+ * Threadnamen, die festlegen, indem Sie mit dieser Methode werden in Dumps oder Tools zur Leistungsanalyse nicht verfügbar sein.
+ 
+*Beispiel:*
+
+Die `SetThreadName` Funktion, die unten gezeigten veranschaulicht dieses Ausnahme-basierten Ansatzes. Beachten Sie, dass der Threadname automatisch auf den Thread kopiert werden, damit der Speicher für die `threadName` -Parameter freigegeben werden kann, nachdem die `SetThreadName` Aufruf abgeschlossen ist. 
 
 ```C++
 //  

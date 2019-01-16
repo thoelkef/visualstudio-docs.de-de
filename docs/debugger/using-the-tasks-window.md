@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb95e3bc1a2a1aaf94db229d951773e97d4ef2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227771"
 ---
-# <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>Verwenden das Fenster "Aufgaben" (C#, Visual Basic, C++)
 
 Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werden jedoch Informationen zu jedem <xref:System.Threading.Tasks.Task?displayProperty=fullName>-, [task_handle](/cpp/parallel/concrt/reference/task-group-class)- oder [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10))-Objekt anstatt für die einzelnen Threads angezeigt. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden.
 
