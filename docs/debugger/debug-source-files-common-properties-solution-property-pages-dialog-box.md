@@ -1,8 +1,6 @@
 ---
-title: Debuggen von Quelle Dateien, allgemeine Eigenschaften Lösung Property Pages Dialog Box | Microsoft Docs
-ms.custom: ''
+title: Debuggen von Quelle, allgemeine Eigenschaften, Lösung Eigenschaft Eigenschaftenseiten (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -24,24 +22,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931907"
 ---
-# <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Dialogfeld "-Eigenschaftenseiten"
+# <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)
 Auf dieser Eigenschaftenseite wird angegeben, wo der Debugger beim Debuggen der Projektmappe nach Quelldateien sucht.  
   
- Für den Zugriff auf die **Quelldateien debuggen** auf der Seite mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer** , und wählen Sie **Eigenschaften** aus dem Kontextmenü. Erweitern Sie die **allgemeine Eigenschaften** Ordner, und klicken Sie auf die **Quelldateien debuggen** Seite.  
+ Zum Öffnen der Eigenschaftenseite **Quelldateien debuggen** klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die betreffende Projektmappe und wählen dann im Kontextmenü **Eigenschaften** aus. Erweitern Sie den Ordner **Allgemeine Eigenschaften**, und klicken Sie auf die Seite **Quelldateien debuggen**.  
   
  **Verzeichnisse mit Quellcode**  
  Darin enthalten ist eine Liste der Verzeichnisse, in denen der Debugger beim Debuggen der Projektmappe nach Quelldateien sucht. Unterverzeichnisse der angegebenen Verzeichnissen werden ebenfalls durchsucht.  
   
  **Nach folgenden Quelldateien nicht suchen**  
- Geben Sie hier die Namen aller Quelldateien ein, die vom Debugger nicht gelesen werden sollen. Wird eine dieser Dateien vom Debugger in einem der oben angegebenen Verzeichnisse gefunden, wird diese ignoriert. Wenn die **Quellcode suchen** Dialogfeld hochgefahren wird, während Sie Debuggen, und Sie auf **"Abbrechen"**, die Datei, die Sie für die Suche wurden zu dieser Liste hinzugefügt, damit der Debugger nicht länger wird nach dieser Datei sucht.  
+ Geben Sie hier die Namen aller Quelldateien ein, die vom Debugger nicht gelesen werden sollen. Wird eine dieser Dateien vom Debugger in einem der oben angegebenen Verzeichnisse gefunden, wird diese ignoriert. Wenn während des Debuggens das Dialogfeld **Quellcode suchen** angezeigt wird und Sie auf **Abbrechen** klicken, wird die gesuchte Datei dieser Liste hinzugefügt, sodass der Debugger nicht länger nach dieser Datei sucht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

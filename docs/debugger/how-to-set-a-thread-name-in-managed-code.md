@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code | Microsoft-Dokumentation'
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867643"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code
-Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Benennen von Threads ist nützlich zum Nachverfolgen der Threads in der **Threads** Fenster.
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code
+Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Das Benennen von Threads ist hilfreich beim Verfolgen von Threads im Fenster **Threads**.
   
  Um einen Threadnamen in verwaltetem Code festzulegen, verwenden Sie die <xref:System.Threading.Thread.Name%2A>-Eigenschaft.  
   
@@ -79,4 +77,4 @@ End Sub
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Gewusst wie: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Vorgehensweise: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)

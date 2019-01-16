@@ -1,8 +1,6 @@
 ---
 title: Suche nach Speicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931026"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>Suchen von Speicherverlusten mit der CRT-Bibliothek
+# <a name="find-memory-leaks-with-the-crt-library"></a>Finden von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 
 Speicherverluste gehören zu den kleinen und schwierig zu erkennenden Fehlern in C/C++-apps. Arbeitsspeicherverluste Ergebnis nach dem Fehler um ordnungsgemäß Arbeitsspeicher freizugeben, der zuvor zugewiesen wurde. Ein geringfügiger Speicherverlust möglicherweise zuerst nicht bemerkt werden, aber im Laufe der Zeit Symptome, die von einer schlechten Leistung bis hin zu Abstürzen bei der Ausführung der app nicht genügend Arbeitsspeicher verursachen. Ein Verlust app, die verwendet, um den gesamten verfügbaren Arbeitsspeicher auf andere apps zum Absturz verursachen können, ist das Erstellen von Verwirrung in Bezug auf die app verantwortlich. Sogar harmlose Arbeitsspeicherverluste möglicherweise andere Probleme, die korrigiert werden sollten.  
 
@@ -183,7 +181,7 @@ Die Speicherbelegungsnummer gibt Aufschluss darüber, wann ein Speicherblock mit
 
 Sie können die Speicherbelegungsnummer verwenden, um einen Haltepunkt für die Speicherbelegung festzulegen.  
 
-**So legen Sie einen speicherbelegung Haltepunkt im Überwachungsfenster fest**  
+**So legen Sie einen Haltepunkt für die Speicherbelegung im Überwachungsfenster fest:**  
 
 1. Legen Sie einen Haltepunkt am Anfang Ihrer app, und starten Sie das Debuggen.  
    
@@ -195,7 +193,7 @@ Sie können die Speicherbelegungsnummer verwenden, um einen Haltepunkt für die 
    
 1. Drücken Sie die **EINGABETASTE**.  
    
-   Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Dieser Wert **-1** , wenn Sie keine Haltepunkte für speicherbelegungen festgelegt haben.  
+   Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Wenn Sie keine Haltepunkte für Speicherbelegungen festgelegt haben, lautet dieser Wert **–1**.  
    
 1. In der **Wert** Spalte, ersetzen Sie den Wert durch die Speicherbelegungsnummer der speicherbelegung, in denen den Debugger unterbrochen werden sollen.  
 
@@ -203,7 +201,7 @@ Nachdem Sie einen Haltepunkt für eine Speicherbelegungsnummer festgelegt, wird 
 
 Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
 
-Sie können auch Speicherbelegungshaltepunkte im Code festlegen. Sie können festlegen:  
+Sie können auch Speicherbelegungshaltepunkte im Code festlegen. Sie können folgende Einstellungen vornehmen:  
 
 ```cpp
 _crtBreakAlloc = 18;  
@@ -263,5 +261,5 @@ Ein Verfahren zum Suchen von Arbeitsspeicherverlusten beginnt, mit dem Platziere
 
 ## <a name="see-also"></a>Siehe auch  
  [Details zum CRT-Debugheap](../debugger/crt-debug-heap-details.md)   
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [Debuggen von nativem code](../debugger/debugging-native-code.md)
+ [Debugger security (Debuggersicherheit)](../debugger/debugger-security.md)   
+ [Debuggen von nativem Code](../debugger/debugging-native-code.md)

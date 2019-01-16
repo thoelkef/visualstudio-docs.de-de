@@ -1,8 +1,6 @@
 ---
 title: '&lt;Befehle&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 785df23b3d76573182eeb97efc5b359e7298a009
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2370f8e394727c0a4f83488a77096b10cb36746c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990450"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Befehle&gt; -Element (Bootstrapper)
 Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben die `InstallChecks` -Element, und welches Paket deklariert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bootstrapper sollten installiert werden, wenn der Test fehlschlägt.  
@@ -68,14 +66,14 @@ Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Commands` Element ist erforderlich. Das Element hat das folgende Attribut.  
+ Die `Commands` Element ist erforderlich. Das Element weist das folgende Attribut auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn keines der Pakete einen Neustart-Exitcode zurückgeben. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Defer` Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate` Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None` Bewirkt, dass alle Anforderungen Neustart ignoriert werden soll.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
+|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn keines der Pakete einen Neustart-Exitcode zurückgeben. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Defer`. Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate`. Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None`. Bewirkt, dass alle Anforderungen Neustart ignoriert werden soll.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
   
 ## <a name="command"></a>Befehl  
- Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein `Commands` Element haben eine oder mehrere `Command` Elemente. Das-Element weist die folgenden Attribute.  
+ Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein `Commands` Element haben eine oder mehrere `Command` Elemente. Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -115,7 +113,7 @@ Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben 
 |`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tag, das definiert, wenn diese Regel ausgewertet werden soll.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Die `ExitCodes` Element ist ein untergeordnetes Element des der `Command` Element. Die `ExitCodes` Element enthält ein oder mehrere `ExitCode` Element, das bestimmt, was die Installation als Reaktion auf einen Exitcode aus einem Paket tun sollten. Es kann eine optionale `ExitCode` untergeordnete Element einer `Command` Element. `ExitCodes` besitzt keine Attribute.  
+ Die `ExitCodes` Element ist ein untergeordnetes Element des der `Command` Element. Die `ExitCodes` Element enthält ein oder mehrere `ExitCode` Element, das bestimmt, was die Installation als Reaktion auf einen Exitcode aus einem Paket tun sollten. Es kann eine optionale `ExitCode` untergeordnete Element einer `Command` Element. `ExitCodes` weist keine Attribute auf.  
   
 ## <a name="exitcode"></a>ExitCode  
  Die `ExitCode` Element ist ein untergeordnetes Element des der `ExitCodes` Element. Die `ExitCode` Element bestimmt, was die Installation als Reaktion auf einen Exitcode aus einem Paket tun sollten. `ExitCode` enthält keine untergeordneten Elemente ein, und weist folgende Attribute.  
@@ -123,7 +121,7 @@ Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Value`|Erforderlich. Der Wert für den Exitcode an den diese `ExitCode` Element angewendet wird.|  
-|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Success` Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot` Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail` Kennzeichnet das Paket an, wie Fehler.<br /><br /> `FailReboot` Kennzeichnet das Paket als Fehler, und weist das System neu starten.|  
+|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte an:<br /><br /> `Success`. Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot`. Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail`. Kennzeichnet das Paket an, wie Fehler.<br /><br /> `FailReboot`. Kennzeichnet das Paket als Fehler, und weist das System neu starten.|  
 |`String`|Dies ist optional. Der Wert, der für den Benutzer als Reaktion auf diese Exitcode anzuzeigen.|  
 |`FormatMessageFromSystem`|Dies ist optional. Bestimmt, ob anhand der vom System bereitgestellten Fehlermeldung, die für den Exitcode ein, oder verwenden Sie den Wert im bereitgestellten `String`. Gültige Werte sind `true`, das bedeutet, dass den Fehler vom System bereitgestellten und `false`, das bedeutet, dass die vom bereitgestellten Zeichenfolge `String`. Die Standardeinstellung ist `false`. Wenn diese Eigenschaft `false`, aber `String` ist nicht festgelegt ist, wird vom System bereitgestellten Fehlermeldung verwendet werden.|  
   
@@ -206,5 +204,5 @@ Die `Commands` Element implementiert, Tests, die durch die Elemente beschrieben 
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)   
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)

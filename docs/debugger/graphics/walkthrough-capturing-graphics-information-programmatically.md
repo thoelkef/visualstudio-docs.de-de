@@ -1,20 +1,18 @@
 ---
-title: 'Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen programmgesteuert | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850686"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
@@ -28,7 +26,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
 -   Rufen Sie `CaptureCurrentFrame`auf, wenn ein Renderingproblem schwer durch manuelles Testen zu antizipieren und zu erfassen ist, aber programmgesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.  
   
 ##  <a name="CaptureDX11_2"></a> Programmgesteuerte Erfassung in Windows 10  
- Dieser Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in apps, die die API DirectX 11.2 unter Windows 10 verwenden, die Methode der stabilen Erfassung verwendet.
+ In diesem Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in Apps gezeigt, die die DirectX 11.2-API unter Windows 10 verwenden, in der die Methode der stabilen Erfassung verwendet wird.
   
  In diesem Abschnitt wird gezeigt, wie folgende Aufgaben ausgeführt werden:  
   
@@ -42,7 +40,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
 >  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für Visual Studio für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um erfassungsfunktionalität bereitzustellen.
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
- Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Teil des Windows 10-SDK.  
+ Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 10 SDK.  
   
 ##### <a name="to-include-programmatic-capture-headers"></a>So schließen Sie die Header für die programmgesteuerte Erfassung ein  
   
@@ -56,7 +54,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
     ```  
   
     > [!IMPORTANT]
-    >  Schließen Sie nicht die Header-Datei vsgcapture.h—which unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher – programmgesteuerte Erfassung in Ihren Windows 10-apps ausführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.  
+    >  Schließen Sie nicht die Headerdatei „vsgcapture.h“ ein – diese unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher –, um die programmgesteuerte Erfassung in Ihren Windows 10-Apps auszuführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.  
   
     > [!NOTE]
     >  Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.  

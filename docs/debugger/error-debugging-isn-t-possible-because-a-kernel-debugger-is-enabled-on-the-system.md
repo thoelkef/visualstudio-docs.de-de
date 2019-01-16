@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Das Debuggen ist&#39;t möglich, da ein Kerneldebugger, auf dem System aktiviert ist | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Fehler: Debuggen ist&#39;t möglich, da ein Kerneldebugger, auf dem System aktiviert ist | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832830"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Das Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
 Beim Debuggen von verwaltetem Code kann die folgende Fehlermeldung ausgegeben werden:  
   
 ```cmd
@@ -76,7 +74,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>So deaktivieren Sie Kerneldebuggen für alle Sitzungen (andere Windows-Betriebssysteme)  
   
-1.  Suchen Sie die Datei "Boot.ini" auf dem Systemlaufwerk (normalerweise "c:"\\). Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt. Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:  
+1.  Suchen Sie die Datei „boot.ini“ auf dem Systemlaufwerk (normalerweise C:\\). Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt. Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:  
   
     ```cmd
     dir /ASH  
@@ -101,5 +99,5 @@ Debugging isn't possible because a kernel debugger is enabled on the system
      `gn`  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

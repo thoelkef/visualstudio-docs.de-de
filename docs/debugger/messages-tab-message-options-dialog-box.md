@@ -24,10 +24,10 @@ Verwenden der **Nachrichten** Tab, um auszuwählen, welche Nachrichtentypen zur 
   
  Die folgenden Einstellungen stehen auf der **Nachrichten** Registerkarte:  
   
- &Anzuzeigende Meldungen:  
+ **Anzuzeigende Meldungen**  
  Wählen Sie bestimmte Nachrichten für die Anzeige. Wenn Sie ein neues Fenster für die Nachrichten erstellen, können sie alle Meldungen anzuzeigen. Wenn Sie Nachrichten von Filtern die **Nachrichten** Registerkarte, dass der Filter gilt nur für neue Nachrichten, nicht die Nachrichten, die bereits in der Windows-Ansicht angezeigt wurden.  
   
- Meldungsgruppen  
+ **Meldungsgruppen**  
  Wählen Sie für die Anzeige. Die verfügbaren Gruppen enthalten:  
   
 - WM_USER: Klicken Sie mit einem Code, die größer als oder gleich WM_USER  
@@ -40,5 +40,5 @@ Verwenden der **Nachrichten** Tab, um auszuwählen, welche Nachrichtentypen zur 
   
   In das Kontrollkästchen grau **Nachrichtengruppen** gibt an, dass die **Nachrichten zu Ansicht** Listenfeld für Nachrichten in dieser Gruppe geändert wurde, nicht alle die Nachrichtentypen in der Gruppe ausgewählt werden.  
   
-  Als Voreinstellung &speichern  
+  **Als Voreinstellung speichern**  
   Speichern Sie die aktuellen Einstellungen für die spätere Verwendung als Nachricht Suchoptionen an. Diese Einstellungen werden ebenfalls gespeichert, wenn Spy++ beendet wird.

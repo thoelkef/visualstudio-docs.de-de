@@ -1,8 +1,6 @@
 ---
-title: Menübefehle im "Hilfe" | Microsoft Docs
-ms.custom: ''
+title: Befehle im Menü Hilfe | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922441"
 ---
 # <a name="help-menu-commands"></a>Befehle im Menü "Hilfe"
 Die **Hilfe** Menü enthält Befehle zum Öffnen der Hilfedateien.  
   
  **Index**  
- Öffnet das Inhaltsverzeichnis Spy++-Hilfe.  
+ Öffnet das Inhaltsverzeichnis für die Spy++-Hilfe.  
   
- **Verwenden der Hilfe**  
- Öffnet eine Hilfedatei, die beschreibt, wie die Hilfe an.  
+ **Hilfe verwenden**  
+ Öffnet eine Hilfedatei, die beschreibt, wie Sie mit der Hilfe.  
   
- **Informationen zu Spy++**  
- Zeigt die Version und urheberrechtliche Informationen für Spy++ an.
+ **Info**  
+ Zeigt die Version und urheberrechtliche Informationen für die Spy++.

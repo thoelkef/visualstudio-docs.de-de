@@ -1,8 +1,6 @@
 ---
 title: 'Idiainjectedsource:: Get_filename | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1230d34e62b2e50e84e4f0fbb935d13506a9a097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41d9cfbc2619f3701567f594b6d7db7400003212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911116"
 ---
 # <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
 Ruft den Dateinamen für die Quelle ab.  
@@ -27,7 +25,7 @@ Ruft den Dateinamen für die Quelle ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_filename (   
+HRESULT get_filename (   
    BSTR* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_filename (
  [out] Gibt den Dateinamen für die Quelle zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

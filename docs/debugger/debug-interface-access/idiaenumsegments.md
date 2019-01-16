@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSegments | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e359192ea6d19d6bc6e31de3c91943bda2deee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 72795807415e3ae81a44e38e66ddfc9ebc7ab94c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954473"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Listet die verschiedenen Segmente, die in der Datenquelle enthalten sind.  
@@ -27,7 +25,7 @@ Listet die verschiedenen Segmente, die in der Datenquelle enthalten sind.
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaEnumSegments : IUnknown  
+IDiaEnumSegments : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  

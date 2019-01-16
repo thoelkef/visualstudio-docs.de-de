@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Debuggen von COM-Server | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Debuggen von COM-Servern | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853930"
 ---
-# <a name="how-to-debug-com-servers"></a>Gewusst wie: Debuggen von COM-Servern
+# <a name="how-to-debug-com-servers"></a>Vorgehensweise: Debuggen von COM-Servern
 Das Debuggen von COM-Serveranwendungen wirft einige spezifische Probleme auf, die nicht immer einfach zu lösen sind.  
   
  Wenn Sie keine Debuginformationen besitzen oder diese für Ihre Containeranwendung nicht verwenden möchten, besteht das Debuggen der Serveranwendung aus drei Schritten.  
@@ -45,8 +43,8 @@ Das Debuggen von COM-Serveranwendungen wirft einige spezifische Probleme auf, di
 3.  Starten Sie die Containeranwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [COM und ActiveX-Debugging](../debugger/com-and-activex-debugging.md)   
- [Vorgehensweise: Debuggen von COM-Clients und Servern mithilfe von RPC-Debuggen](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [COM-Servern und-Containern](../debugger/com-server-and-container-debugging.md)   
+ [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Vorgehensweise: RPC-Debuggen von COM-Clients und -Servern](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)   
  [Debuggen in Visual Studio](../debugger/index.md)  
  [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

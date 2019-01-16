@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a3db855d06c71551dd6f1bb1d9e6f6ac0d34da72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957445"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Gewusst wie: Angeben eines anderen Speicherorts für bereitstellungsaktualisierungen
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 Sie installieren können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung zunächst von einer CD oder eine Dateifreigabe, aber die Anwendung muss überprüfen, regelmäßig nach Updates suchen im Web. Sie können einen alternativen Speicherort für Updates im Bereitstellungsmanifest angeben, damit Ihre Anwendung selbst aus dem Web nach der Erstinstallation kann aktualisiert werden.  
   
 > [!NOTE]
@@ -34,11 +32,11 @@ Sie installieren können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndpt
   
 1.  Öffnen Sie einen .NET Framework-Eingabeaufforderung, und geben:  
   
-     **MageUI.exe**  
+     **mageui.exe**  
   
 2.  Auf der **Datei** Menü wählen **öffnen** zu Ihrer Anwendung das Bereitstellungsmanifest öffnen.  
   
-3.  Wählen Sie die **Bereitstellungsoptionen** Registerkarte.  
+3.  Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.  
   
 4.  In das Textfeld mit dem Namen **starten Speicherort**, geben Sie die URL in das Verzeichnis, das das Bereitstellungsmanifest für Anwendungsupdates enthält.  
   
@@ -66,4 +64,4 @@ Sie installieren können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndpt
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Auswählen einer Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
+ [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)

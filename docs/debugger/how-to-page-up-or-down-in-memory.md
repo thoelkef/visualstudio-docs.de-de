@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Seite nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902226"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Gewusst wie: Bildlauf nach oben oder unten im Arbeitsspeicher
+# <a name="how-to-page-up-or-down-in-memory"></a>Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher
 
-Bei der Anzeige der Speicherinhalt in einem **Arbeitsspeicher** Fenster oder der **Disassembly** Fenster können Sie die vertikale Bildlaufleiste um nach oben oder unten im Arbeitsspeicher zu verschieben.  
+Beim Anzeigen des Speicherinhalts im Fenster **Arbeitsspeicher** oder im Fenster **Disassemblierung** können Sie mithilfe der vertikalen Scrollleiste im Speicher nach oben oder unten navigieren.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>So führen Sie im Speicher einen Bildlauf nach oben oder nach unten durch  
   
@@ -49,6 +47,6 @@ Bei der Anzeige der Speicherinhalt in einem **Arbeitsspeicher** Fenster oder der
 -   Klicken Sie auf den Pfeil am oberen oder unteren Ende der vertikalen Scrollleiste.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Arbeitsspeicher-Windows](../debugger/memory-windows.md)   
+ [Fenster „Arbeitsspeicher“](../debugger/memory-windows.md)   
  [Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

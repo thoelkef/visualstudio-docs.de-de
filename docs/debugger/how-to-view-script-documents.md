@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Skriptdokumenten | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Anzeigen von Skriptdokumenten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MTE95
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867726"
 ---
-# <a name="how-to-view-script-documents"></a>Gewusst wie: Anzeigen von Skriptdokumenten
+# <a name="how-to-view-script-documents"></a>Vorgehensweise: Anzeigen von Skriptdokumenten
 In früheren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wurden clientseitige Skriptdateien, die durch Skripts auf Serverseite generiert wurden, im Fenster Skript-Explorer angezeigt. Da das Fenster Skript-Explorer häufig ausgeblendet war, war die Verfügbarkeit clientseitiger Skripts nicht immer direkt erkennbar.  
   
  In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] werden clientseitige Skriptdateien, die durch Skripts auf Serverseite generiert wurden, im Projektmappen-Explorer angezeigt, der standardmäßig immer eingeblendet ist. Das Fenster Skript-Explorer wurde entfernt.  
   
- Clientseitige Skriptdateien sind nur sichtbar, wenn Sie sich im Debugmodus oder Unterbrechungsmodus befinden. Sie werden in der **Skriptdokumente** Knoten.  
+ Clientseitige Skriptdateien sind nur sichtbar, wenn Sie sich im Debugmodus oder Unterbrechungsmodus befinden. Sie werden im Knoten **Skriptdokumente** angezeigt.  
   
- Serverseitige Skriptdateien sind immer sichtbar. Sie werden in der  **\<Website-Pfadname >** Knoten. Der Name des Knotens sieht etwa wie in diesem Beispiel aus: `c:\...\Website2\`  
+ Serverseitige Skriptdateien sind immer sichtbar. Sie werden im Knoten **\<Website-Pfadname>** angezeigt. Der Name des Knotens sieht etwa wie in diesem Beispiel aus: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>So zeigen Sie ein serverseitiges Skriptdokument an  
   
-1.  In **Projektmappen-Explorer**öffnen die  **\<Website-Pfadname >** Knoten.  
+1.  Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>**.  
   
 2.  Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
   
@@ -43,7 +41,7 @@ In früheren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
   
 ### <a name="to-view-a-client-side-script-document"></a>So zeigen Sie ein clientseitiges Skriptdokument an  
   
-1.  In **Projektmappen-Explorer**öffnen die **Skriptdokumente** Knoten.  
+1.  Öffnen Sie im **Projektmappen-Explorer** den Knoten **Skriptdokumente**.  
   
 2.  Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
   

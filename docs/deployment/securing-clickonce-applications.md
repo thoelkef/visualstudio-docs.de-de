@@ -1,8 +1,6 @@
 ---
 title: Sichern von ClickOnce-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/17/2017
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a49bf9cbf2c43cd7692592b53b9aca2b256313
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944271"
 ---
 # <a name="secure-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.  
@@ -40,9 +38,9 @@ ms.locfileid: "39080339"
 |Installieren aus einer Dateifreigabe im Netzwerk|Zone "Lokales Intranet"|  
 |Installieren von CD-ROM|Voll vertrauenswürdig|  
   
- Die Standardberechtigungen basieren auf dem Speicherort, von dem aus die Originalversion der Anwendung bereitgestellt wurde. Updates der Anwendung erben diese Berechtigungen. Falls die Anwendung so konfiguriert ist, dass sie an einem Web- oder Netzwerkspeicherort nach Updates sucht und eine neuere Version zur Verfügung steht, kann die ursprüngliche Installation statt der Berechtigung Volle Vertrauenswürdigkeit u. U. Berechtigungen für die Internet- oder Intranetzone erhalten. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Für Computer, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Um die Bereitstellung vertrauenswürdiger Anwendungen zu konfigurieren, kann das Zertifikat auf Computer- oder Unternehmensebene installiert werden. Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Die Standardberechtigungen basieren auf dem Speicherort, von dem aus die Originalversion der Anwendung bereitgestellt wurde. Updates der Anwendung erben diese Berechtigungen. Falls die Anwendung so konfiguriert ist, dass sie an einem Web- oder Netzwerkspeicherort nach Updates sucht und eine neuere Version zur Verfügung steht, kann die ursprüngliche Installation statt der Berechtigung Volle Vertrauenswürdigkeit u. U. Berechtigungen für die Internet- oder Intranetzone erhalten. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Für Computer, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Um die Bereitstellung vertrauenswürdiger Anwendungen zu konfigurieren, kann das Zertifikat auf Computer- oder Unternehmensebene installiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
-## <a name="code-access-security-policies"></a>Codezugriffs-Sicherheitsrichtlinien  
+## <a name="code-access-security-policies"></a>Richtlinien der Codezugriffssicherheit  
  Berechtigungen für eine Anwendung hängen von den Einstellungen in der [ \<TrustInfo >-Element](../deployment/trustinfo-element-clickonce-application.md) Element des Anwendungsmanifests. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert diese Informationen automatisch basierend auf den Einstellungen auf der Eigenschaftenseite **Sicherheit** des Projekts. Einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung werden nur die speziellen Berechtigungen gewährt, die diese anfordert. Wenn für den Dateizugriff beispielsweise Berechtigungen für volle Vertrauenswürdigkeit erforderlich sind und die Anwendung eine Dateizugriffsberechtigung anfordert, wird ihr nur eine Berechtigung für den Dateizugriff und keine volle Vertrauenswürdigkeit gewährt. Beim Entwickeln der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung sollten Sie sicherstellen, dass Sie nur die spezifischen Berechtigungen anfordern, die für die Anwendung erforderlich sind. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" verwenden, um Ihre Anwendung auf teilweise Vertrauenswürdigkeit zu beschränken. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Wenn die Anwendung benutzerdefinierte Berechtigungen erfordert, können Sie eine benutzerdefinierte Zone erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Das Einschließen einer Berechtigung, die nicht zum Standardberechtigungssatz der Zone gehört, aus der die Anwendung bereitgestellt wird, führt dazu, dass der Endbenutzer bei der Installation oder bei einem Update zum Gewähren der Berechtigung aufgefordert wird. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Auf Computern, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben.  
@@ -68,7 +66,7 @@ ms.locfileid: "39080339"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Abfragezeichenfolgenargumente werden standardmäßig deaktiviert. Um sie zu aktivieren, muss das `trustUrlParameters` -Attribut im Bereitstellungsmanifest der Anwendung festgelegt werden. Dieser Wert kann von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und von MageUI.exe aus festgelegt werden. Ausführliche Schritte zum Aktivieren der Übergabe von Abfragezeichenfolgen, finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Abfragezeichenfolgenargumente werden standardmäßig deaktiviert. Um sie zu aktivieren, muss das `trustUrlParameters` -Attribut im Bereitstellungsmanifest der Anwendung festgelegt werden. Dieser Wert kann von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und von MageUI.exe aus festgelegt werden. Ausführliche Schritte zum Aktivieren der Übergabe von Abfragezeichenfolgen, finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
   
  Übergeben Sie Argumente, die über eine Abfragezeichenfolge abgerufen wurden, nie an eine Datenbank oder an die Befehlszeile, ohne die Argumente auf ihre Sicherheit zu überprüfen. Unsichere Argumente sind Argumente, die Datenbank- oder Befehlszeilen-Escapezeichen enthalten, mit denen böswillige Benutzer die Möglichkeit erhalten können, Ihre Anwendung für die Ausführung beliebiger Befehle zu manipulieren.  
   
@@ -79,5 +77,5 @@ ms.locfileid: "39080339"
  Visual Studio umfasst die kostenlose [PreEmptive Protection – Dotfuscator Community Edition](../ide/dotfuscator/index.md), die Sie verwenden können, schützen Sie Ihre ClickOnce-Anwendungen mithilfe von codeobfuskation und Maßnahmen zum aktiven Schutz.  Weitere Informationen finden Sie unter [im ClickOnce-Abschnitt des Dotfuscator Community Edition-Benutzerhandbuchs](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
- [Wählen Sie eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

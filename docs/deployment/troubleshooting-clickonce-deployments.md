@@ -1,8 +1,6 @@
 ---
 title: Problembehandlung bei ClickOnce-Bereitstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944482"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Problembehandlung bei ClickOnce-Bereitstellungen
 Dieses Thema hilft Ihnen bei der diagnose und Behebung der häufigsten Probleme mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen.  
@@ -34,16 +32,16 @@ Dieses Thema hilft Ihnen bei der diagnose und Behebung der häufigsten Probleme 
 
 ## <a name="deployment-considerations"></a>Überlegungen zur Bereitstellung
 
- [Gewusst wie: Festlegen ein benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Vorgehensweise: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Beschreibt, wie Sie alle umleiten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Aktivierung auf einem Computer in einer einzelnen Protokolldatei.  
   
- [Gewusst wie: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Vorgehensweise: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Beschreibt, wie Sie die Details zu erhöhen, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] in Protokolldateien geschrieben.  
   
- [Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
+ [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
  Beschreibt verschiedene Probleme mit der Konfiguration des Webservers, das Herunterladen von schwierigkeiten verursachen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen.  
   
- [Probleme mit Sicherheit, versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ [Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
  Beschreibt verschiedene Probleme im Zusammenhang mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen.  
   
  [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben von Debuggereinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847177"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Gewusst wie: Angeben von Debuggereinstellungen
-Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Debuggereinstellungen werden in der **Optionen** Dialogfeld.  
+# <a name="how-to-specify-debugger-settings"></a>Vorgehensweise: Angeben von Debuggereinstellungen
+Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Die Debuggereinstellungen werden im Dialogfeld **Optionen** festgelegt.  
   
 ### <a name="to-set-debugger-options"></a>So legen Sie Debuggeroptionen fest  
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  In der **Optionen** öffnen Sie im Dialogfeld die **Debuggen** Ordner.  
+2.  Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**.  
   
-3.  In der **Debuggen** Ordner, wählen Sie die Kategorie der Optionen soll.  
+3.  Wählen Sie die gewünschte Optionskategorie im Ordner **Debuggen** aus.  
   
-     Die am häufigsten verwendeten Optionen befinden sich in der **allgemeine** Kategorie. Weitere Informationen finden Sie unter [Allgemein, Debuggen, Dialogfeld Optionen](../debugger/general-debugging-options-dialog-box.md).  
+     Die am häufigsten verwendeten Optionen sind unter der Kategorie **Allgemein** aufgeführt. Weitere Informationen finden Sie unter [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Aktivieren oder deaktivieren Sie die gewünschten Optionen. Hilfe zu den Optionen erhalten Sie, indem Sie F1 drücken.  
   

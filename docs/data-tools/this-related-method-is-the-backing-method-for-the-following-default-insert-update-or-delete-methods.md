@@ -11,7 +11,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 1b5579c8916e81e3c49e9d6e24bf37ed85039c03
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53851822"
@@ -30,7 +30,7 @@ Die ausgewählte `DataContext` Methode dient als eines der derzeit die `Insert`,
 
 ## <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>So schließen Sie das Meldungsfeld, ohne die ausgewählte Methode zu ändern
 
-- Klicken Sie auf Nein **.
+- Klicken Sie auf **Nein**.
 
     Das Meldungsfeld wird geschlossen, und es werden keine Änderungen vorgenommen.
 

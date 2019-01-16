@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936190"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 Überprüfen von Daten ist der Prozess der Bestätigung der Werte, die in Datenobjekte eingegeben werden, die die Einschränkungen in einer Dataset Schema entsprechen. Der Überprüfungsprozess wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es hat sich bewährt, überprüfen Sie die Daten vor dem Senden von Aktualisierungen an der zugrunde liegenden Datenbank. Dies verringert sowohl Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.
@@ -90,7 +89,7 @@ Sie können Daten validieren, wenn der Wert in einer Datenspalte geändert wird,
 
 -   Den vorgeschlagenen Wert ablehnen, indem Sie den Spaltenfehler festlegen (<xref:System.Data.DataRow.SetColumnError%2A>) von in der Column-changing-Ereignishandler.
 
--   Optional können Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement verwenden, um dem Benutzer eine Fehlermeldung anzuzeigen. Weitere Informationen finden Sie unter [ErrorProvider-Komponente](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+-   Optional können Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement verwenden, um dem Benutzer eine Fehlermeldung anzuzeigen. Weitere Informationen finden Sie unter [ErrorProvider Component (ErrorProvider-Komponente)](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Überprüfung kann auch ausgeführt werden, während die <xref:System.Data.DataTable.RowChanging> Ereignis.
 
@@ -99,7 +98,7 @@ Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalt
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>So validieren Sie Daten bei Zeilenänderungen (Visual Basic)
 
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird der <xref:System.Data.DataTable.RowChanging>-Ereignishandler der <xref:System.Data.DataTable> in der Datei für die partielle Klasse des Datasets automatisch erstellt.
 
@@ -110,12 +109,12 @@ Sie können Code schreiben, um sicherzustellen, dass alle zu validierenden Spalt
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>So validieren Sie Daten bei Zeilenänderungen (C#)
 
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird eine Datei für die partielle Klasse der <xref:System.Data.DataTable> erstellt.
 
     > [!NOTE]
-    >  Die **Dataset-Designer** erstellt nicht automatisch einen Ereignishandler für die <xref:System.Data.DataTable.RowChanging> Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.
+    >  Der **DataSet-Designer** erstellt nicht automatisch einen Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.
 
 3.  Kopieren Sie den folgenden Code in die partielle Klasse:
 
@@ -212,5 +211,5 @@ Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spalteninde
 ## <a name="see-also"></a>Siehe auch
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Gewusst wie: Überprüfen von Daten in Windows Forms-DataGridView-Steuerelement](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Gewusst wie: Anzeigen von Fehlersymbolen für die formularvalidierung mit der Windows Forms ErrorProvider-Komponente](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Vorgehensweise: Überprüfen von Daten in Windows Forms-DataGridView-Steuerelement](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Vorgehensweise: Anzeigen von Fehlersymbolen für die formularvalidierung mit der Windows Forms ErrorProvider-Komponente](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

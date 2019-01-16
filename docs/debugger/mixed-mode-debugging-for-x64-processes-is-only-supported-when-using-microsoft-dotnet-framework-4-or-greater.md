@@ -29,7 +29,7 @@ ms.locfileid: "53830637"
   
 -   Aktualisieren Sie das Projekt, um Microsoft .NET Framework 4 oder höher zu verwenden.  
   
-     - oder -   
+     - oder -  
   
      Debuggen Sie den verwalteten und den nativen Code in separaten Debugsitzungen.  
   
@@ -39,19 +39,19 @@ ms.locfileid: "53830637"
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>So ändern Sie die Plattform in 32-Bit (Visual Basic oder C#)  
   
-1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf Eigenschaften**.  
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf den Eigenschaftenseiten auf die Registerkarte Kompilieren **oder auf die Registerkarte Debuggen**.  
+2.  Klicken Sie auf den Eigenschaftenseiten auf die Registerkarte **Kompilieren** oder auf die Registerkarte **Debuggen**.  
   
-3.  Klicken Sie auf Plattform **, und wählen Sie x86 aus der Liste der Plattformen aus.  
+3.  Klicken Sie auf **Plattform**, und wählen Sie x86 aus der Liste der Plattformen aus.  
   
-     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Wählen Sie Win32 **anstelle von AnyCPU** aus, wenn Sie die Ausführung in einem 32-Bit-Prozess wünschen.  
+     Die Visual Basic- und C#-Compiler erzeugen standardmäßig Code, der mit jeder CPU ausgeführt werden kann. Auf einem 64-Bit-Computer werden diese Binärdateien als 64-Bit-Prozesse ausgeführt. Wählen Sie **Win32** anstelle von **AnyCPU** aus, wenn Sie die Ausführung in einem 32-Bit-Prozess wünschen.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>So ändern Sie die Plattform in 32-Bit (C/C++)  
   
-1.  Klicken Sie im Projektmappen-Explorer **mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf Eigenschaften**.  
+1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf den Eigenschaftenseiten auf Plattform **, und wählen Sie Win32 aus der Liste der Plattformen aus.  
+2.  Klicken Sie auf den Eigenschaftenseiten auf **Plattform**, und wählen Sie Win32 aus der Liste der Plattformen aus.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

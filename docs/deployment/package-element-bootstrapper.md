@@ -1,8 +1,6 @@
 ---
 title: '&lt;Paket&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868614"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; -Element (Bootstrapper)
 Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei.  
@@ -150,7 +148,7 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 |--------------------| - |
 | `Culture` | Erforderlich. Definiert die Kultur für dieses Paket an, der bestimmt, die Sprache, die verwendet werden. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das kulturspezifischen Zeichenfolgen für Produktnamen und Fehlermeldungen während der Installation führt. |
 | `Name` | Erforderlich. Der Name des Pakets angezeigt, die Entwickler in einem Tool wie z. B. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das enthalten soll eine `String` -Element mit der `Name` und `Culture` Eigenschaften festgelegt werden, entsprechend der `Name` und `Culture` Eigenschaften `Package`. |
-| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text sein (*.txt*) oder Rich-Text-Format. (*RTF*) |
+| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text sein (*.txt*) oder Rich-Text-Format. (*.rtf*) |
 
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel zeigt eine vollständige Paketdatei zum Verteilen der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
@@ -191,4 +189,4 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

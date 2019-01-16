@@ -2,7 +2,6 @@
 title: Anzeigen der Disassembly-Code im Debugger | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922227"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Anzeigen der Disassembly-Code in Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -57,7 +56,7 @@ Assemblycode basiert stark auf Prozessor registriert, oder für verwalteten Code
 
 Um Computercode Anweisungen in ihre numerische Rohdaten und nicht als Assembly Sprache anzuzeigen, verwenden die **Arbeitsspeicher** Fenster, oder wählen **Codebytes** aus dem Kontextmenü in der **Disassembly**  Fenster.
 
-## <a name="use-the-disassembly-window"></a>Verwenden des disassembierungsfensters
+## <a name="use-the-disassembly-window"></a>Verwenden des Disassembierungsfensters
 
 So aktivieren Sie die **Disassembly** Fenster unter **Tools** > **Optionen** (oder **Tools**  >  **Optionen**) > **Debuggen**Option **Debuggen auf Adressebene aktivieren**.
 
@@ -74,4 +73,4 @@ Ein gelber Pfeil am linken Rand kennzeichnet den aktuellen Ausführungspunkt an.
 
 * [Paging up or down in memory (Vertikales Paging im Arbeitsspeicher)](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)
-* [Vorgehensweise: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)
+* [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)

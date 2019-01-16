@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924799"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
 
@@ -33,13 +32,13 @@ Sie können Daten in der Anwendung wieder in der Datenbank speichern, indem Sie 
 
 In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
 
--   Erstellen eines neuen Projekts vom Typ Windows Forms-Anwendung **.
+-   Erstellen eines neuen Projekts vom Typ **Windows Forms-Anwendung**.
 
 -   Erstellen und Konfigurieren einer Datenquelle in Ihrer Anwendung mit der [Assistenten zur Datenquellenkonfiguration](../data-tools/media/data-source-configuration-wizard.png).
 
 -   Festlegen der Steuerelemente für die Elemente in der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window). Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Erstellen datengebundener Steuerelemente durch Ziehen von Elementen aus dem Datenquellenfenster** auf das Formular.
+-   Erstellen datengebundener Steuerelemente durch Ziehen von Elementen aus dem Fenster **Datenquellen** auf das Formular.
 
 -   Ändern einige Datensätze in jeder Tabelle im Dataset.
 
@@ -75,17 +74,17 @@ Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**. Während
 
 4. Nennen Sie das Projekt **UpdateMultipleTablesWalkthrough**, und wählen Sie dann **OK**.
 
-     Das Projekt UpdateMultipleTablesWalkthrough **wird erstellt und dem Projektmappen-Explorer** hinzugefügt.
+     Das Projekt **UpdateMultipleTablesWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
 
-In diesem Schritt wird mit dem Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle aus der Northwind-Datenbank erstellt. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
+In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle aus der Northwind-Datenbank erstellt. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Auf der **Daten** , wählen Sie im Menü **Datenquellen anzeigen**.
 
-   Das Datenquellenfenster** wird geöffnet.
+   Das Fenster **Datenquellen** wird geöffnet.
 
-2. Wählen Sie im Datenquellenfenster **die Option Neue Datenquelle hinzufügen** aus, um den Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Auf der **wählen Sie einen Datenquellentyp** auf **Datenbank**, und wählen Sie dann **Weiter**.
 
@@ -93,9 +92,9 @@ In diesem Schritt wird mit dem Assistenten zum Konfigurieren von Datenquellen** 
 
     -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder - 
+         - oder -
 
-    -   Wählen Sie Neue Verbindung **aus, um das Dialogfeld Verbindung hinzufügen/ändern** zu öffnen.
+    -   Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
 
 5. Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.
 
@@ -105,7 +104,7 @@ In diesem Schritt wird mit dem Assistenten zum Konfigurieren von Datenquellen** 
 
 8. Wählen Sie die **Kunden** und **Bestellungen** Tabellen, und wählen Sie dann **Fertig stellen**.
 
-     NorthwindDataSet **wird dem Projekt hinzugefügt. Die Tabellen werden im Datenquellenfenster** angezeigt.
+     **NorthwindDataSet** wird dem Projekt hinzugefügt. Die Tabellen werden im Fenster **Datenquellen** angezeigt.
 
 ## <a name="set-the-controls-to-be-created"></a>Festlegen der Kontrollen, die erstellt werden
 
@@ -119,22 +118,22 @@ In dieser exemplarischen Vorgehensweise die Daten in die `Customers` Tabelle bef
 
 ## <a name="create-the-data-bound-form"></a>Erstellen des datengebundenen Formulars
 
-Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem Datenquellenfenster** auf das Formular ziehen.
+Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem Fenster **Datenquellen** auf das Formular ziehen.
 
-1. Ziehen Sie den Hauptknoten Customers **aus dem Fenster Datenquellen** auf Form1.
+1. Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.
 
      Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
 
-2. Ziehen Sie den Knoten Orders **aus dem Datenquellenfenster** in Form1 **.
+2. Ziehen Sie den Knoten **Orders** aus dem Fenster **Datenquellen** auf **Form1**.
 
     > [!NOTE]
-    > Der verknüpfte Knoten Orders **befindet sich unter der Spalte Fax** und ist ein untergeordneter Knoten des Knotens Customers **.
+    > Der verknüpfte Knoten **Orders** befindet sich unter der Spalte **Fax** und ist ein untergeordneter Knoten des Knotens **Customers**.
 
      Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein `OrdersTableAdapter` und <xref:System.Windows.Forms.BindingSource> werden in der Komponentenleiste angezeigt.
 
 ## <a name="add-code-to-update-the-database"></a>Fügen Sie Code zum Aktualisieren der Datenbank hinzu
 
-Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters von Customers **und Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die **speichern** -Schaltfläche der<xref:System.Windows.Forms.BindingNavigator> Code des Formulars zum Senden von Updates in der Datenbank hinzugefügt. In dieser Prozedur wird den Code zum Senden von Updates in der richtigen Reihenfolge. Dadurch wird die Möglichkeit, referenzielle Integritätsfehler auslösen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
+Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters **Customers** und **Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die **speichern** -Schaltfläche der<xref:System.Windows.Forms.BindingNavigator> Code des Formulars zum Senden von Updates in der Datenbank hinzugefügt. In dieser Prozedur wird den Code zum Senden von Updates in der richtigen Reihenfolge. Dadurch wird die Möglichkeit, referenzielle Integritätsfehler auslösen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
 
 > [!NOTE]
 > Aus Gründen der Übersichtlichkeit wird in dieser exemplarischen Vorgehensweise eine Transaktion nicht verwendet. Wenn jedoch aktualisieren Sie zwei oder mehr verknüpfte Tabellen, enthalten Sie alle Aktualisierungslogik einer Transaktion. Eine Transaktion ist ein Prozess, der gewährleistet, dass alle zugehörige Änderungen an einer Datenbank erfolgreich sind, bevor ein Commit für Änderungen ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und Parallelität](/dotnet/framework/data/adonet/transactions-and-concurrency).

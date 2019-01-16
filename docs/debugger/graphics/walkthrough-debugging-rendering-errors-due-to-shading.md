@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828406"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Grafikdiagnose, um ein Objekt zu untersuchen, die aufgrund eines shaderfehlers falsche Farbe hat.  
@@ -52,7 +50,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
 1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf**aus.  
   
-2. Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie auf das grafikprotokolldokumentfenster eines der Pixel für das Objekt, das falsche Farbe hat:  
+2. Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie im Grafikprotokolldokumentfenster eines der Pixel des Objekts aus, das die falsche Farbe hat:  
   
     ![Auswählen eines Pixels werden Informationen zu seinem Verlauf angezeigt. ](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
     Beachten Sie, dass Ergebnis des Pixelshaders vollständig deckendes Schwarz (0, 0, 0, 1), und dass die **Ausgabemerge** kombiniert diese Pixel-Shader, mit der **zurück** Farbe des Pixels so, die die  **Ergebnis** ist ebenfalls vollständig deckend Schwarz.  
   
-   Nachdem Sie eine Pixel, die mit falscher Farbe ist untersuchen und ermitteln, dass die Ausgabe des Pixelshaders nicht die erwartete Farbe angibt, können Sie den HLSL-Debugger den Pixel-Shader überprüfen und erfahren Sie, was mit der Farbe des Objekts geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.  
+   Nachdem Sie ein Pixel mit falscher Farbe überprüft und festgestellt haben, dass die Ausgabe des Pixelshaders nicht die erwartete Farbe angibt, können Sie den HLSL-Debugger dazu verwenden, den Pixelshader zu untersuchen und herauszufinden, was mit der Farbe des Objekts geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.  
   
 #### <a name="to-examine-the-pixel-shader"></a>So überprüfen Sie den Pixelshader  
   
@@ -84,7 +82,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCL
   
 2. Suchen Sie nach der Ausgabestruktur des Vertexshaders, denn diese ist die Eingabe für den Pixelshader. In diesem Szenario hat diese Struktur den Namen `output`. Überprüfen Sie den Code des Vertexshaders. Sie stellen fest, dass der `color` -Member der `output` -Struktur explizit auf vollständig deckendes Schwarz festgelegt wird, möglicherweise als Ergebnis von Debugaktionen einer anderen Person.  
   
-3. Vergewissern Sie sich, dass der color-Member nie aus der Eingabestruktur (input) kopiert wird. Da der Wert des `output.color` kurz vor dem Ausführen auf vollständig deckendes Schwarz festgelegt ist die `output` Struktur wird zurückgegeben, es ist eine gute Idee, um sicherzustellen, dass der Wert des `output` wurde nicht in einer vorherigen Zeile korrekt initialisiert. Durchlaufen Sie den der Vertexshadercode bis zu der Zeile, in der `output.color` auf Schwarz festgelegt wird. Beobachten Sie dabei den Wert von `output.color`. Sie stellen fest, dass der Wert von `output.color` nicht initialisiert wird, bis er auf Schwarz festgelegt wird. Dadurch wird bestätigt, dass die Codezeile, in der `output.color` auf Schwarz festgelegt wird, nicht gelöscht, sondern geändert werden sollte.  
+3. Vergewissern Sie sich, dass der color-Member nie aus der Eingabestruktur (input) kopiert wird. Da der Wert von `output.color` unmittelbar vor der Rückgabe der `output`-Struktur auf vollständig deckendes Schwarz festgelegt wird, sollten Sie sich vergewissern, dass der Wert von `output` in keiner vorherigen Zeile korrekt initialisiert wurde. Durchlaufen Sie den der Vertexshadercode bis zu der Zeile, in der `output.color` auf Schwarz festgelegt wird. Beobachten Sie dabei den Wert von `output.color`. Sie stellen fest, dass der Wert von `output.color` nicht initialisiert wird, bis er auf Schwarz festgelegt wird. Dadurch wird bestätigt, dass die Codezeile, in der `output.color` auf Schwarz festgelegt wird, nicht gelöscht, sondern geändert werden sollte.  
   
     ![Der Wert von "output.color" ist schwarz. ](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

@@ -1,8 +1,6 @@
 ---
 title: '&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870494"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
   
 ## <a name="syntax"></a>Syntax  
@@ -270,5 +268,5 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Übersicht über die vertrauenswürdige Anwendungsbereitstellung](../deployment/trusted-application-deployment-overview.md)   
+ [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

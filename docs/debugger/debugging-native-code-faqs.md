@@ -1,8 +1,6 @@
 ---
-title: Debuggen von systemeigenem Code häufig gestellte Fragen | Microsoft Docs
-ms.custom: ''
+title: Debuggen von nativem Code häufig gestellte Fragen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
@@ -22,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866932"
 ---
-# <a name="debugging-native-code-faqs"></a>FAQs zum Debuggen von systemeigenem Code
+# <a name="debugging-native-code-faqs"></a>FAQs zum Debuggen von nativem Code
 In den folgenden Abschnitten werden die folgenden häufig gestellten Fragen beantwortet:  
   
--   [Wie können Zugriffsverletzungen beim Ausführen des Programms im eigenständigen Modus werden gedebuggt?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
+-   [Wie kann ein Debugging für Zugriffsverletzungen erfolgen, die beim Ausführen des Programms im eigenständigen Modus auftreten?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
 -   [Wie kann eine Zugriffsverletzung gedebuggt werden?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
--   [Wie finde ich heraus, wenn mein Zeiger eine Speicheradresse zerstören?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
+-   [Wie wird festgestellt, ob Zeiger eine Speicheradresse zerstören?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
 -   [Wie wird festgestellt, woher der falsche Parameterwert stammt?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
--   [Beim Aufrufen von einer Funktion sehr häufig, welcher fehlgeschlagen ist Aufruf?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
+-   [Wie kann festgestellt werden, welcher Aufruf einen Fehler verursacht, wenn eine Funktion sehr häufig aufgerufen wird?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 -   [Wo sind die Win32-Fehlercodes zu finden?](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
@@ -48,8 +46,8 @@ In den folgenden Abschnitten werden die folgenden häufig gestellten Fragen bean
   
 -   [Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
--   [Halt in MFC wie zurück an die Funktion erhalte ich, die MFC aufgerufen?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
+-   [Wie kann ich nach einem Halt in MFC zur aufrufenden Funktion zurückkehren?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

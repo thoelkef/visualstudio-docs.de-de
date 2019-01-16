@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Suchen nach Anwendungsupdates programmgesteuert mithilfe der API für der ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25585dce22f74c8e8b2f6aef253ea00c3a6ad4e8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a890a7ad0a3b65580f5ef08d33774182c8916140
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869965"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Gewusst wie: Suchen nach Anwendungsupdates programmgesteuert mithilfe der API für der ClickOnce-Bereitstellung
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung
 ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem er bereitgestellt wurde. In der ersten Methode können Sie die ClickOnce-Bereitstellung automatisch nach Updates, die in bestimmten Intervallen suchen konfigurieren. In der zweiten Methode schreiben Sie Code, verwendet der <xref:System.Deployment.Application.ApplicationDeployment> Klasse, um nach Updates suchen auf der Grundlage von Ereignissen, wie eine benutzeranforderung.  
   
  Die folgenden Verfahren von Code für ein Programmgesteuertes Update anzeigen und außerdem wird beschrieben, wie Sie zum Konfigurieren der ClickOnce-Bereitstellung zum programmgesteuerten Suche nach Updates zu aktivieren.  
@@ -32,7 +30,7 @@ ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem e
  Um eine ClickOnce-Anwendung programmgesteuert aktualisieren, müssen Sie einen Speicherort auf Updates angeben. Dies wird manchmal als Bereitstellungsanbieter bezeichnet. Weitere Informationen zum Festlegen dieser Eigenschaft finden Sie unter [auswählen eine Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 > [!NOTE]
->  Sie können auch das Verfahren unten, um die Anwendung von einem Speicherort bereitstellen, aber von einem anderen aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben eines anderen Speicherorts für bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
+>  Sie können auch das Verfahren unten, um die Anwendung von einem Speicherort bereitstellen, aber von einem anderen aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
   
 ### <a name="to-check-for-updates-programmatically"></a>Programmgesteuert nach Updates suchen  
   
@@ -62,6 +60,6 @@ ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem e
  Ihre Anwendung benötigen Berechtigungen für volle Vertrauenswürdigkeit mit programmgesteuerten Aktualisieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Angeben eines anderen Speicherorts für bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
- [Auswählen einer Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
+ [Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+ [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)   
+ [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)

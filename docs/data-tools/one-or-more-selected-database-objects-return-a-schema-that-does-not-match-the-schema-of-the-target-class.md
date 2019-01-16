@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944125"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
 
@@ -25,9 +24,9 @@ Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vo
 
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1. Klicken Sie auf **OK** um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
-2. Wählen Sie ein Objekt, das Daten zurückgibt, die das Schema der Zielklasse entspricht (die Klasse das Datenbankobjekt, das in abgelegt wird wird die **O/R Designer**).
+2. Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die dem Schema der Zielklasse entsprechen (der Klasse, auf die das Datenbankobjekt im **O/R-Designer** abgelegt wird).
 
 ## <a name="see-also"></a>Siehe auch
 

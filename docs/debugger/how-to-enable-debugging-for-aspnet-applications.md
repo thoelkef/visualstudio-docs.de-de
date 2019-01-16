@@ -2,7 +2,6 @@
 title: Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft-Dokumentation
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881100"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-apps in Visual Studio
 
@@ -139,7 +138,7 @@ ASP.NET-Projekte verfügen über *"Web.config"* Dateien standardmäßig die beid
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] erkennt automatisch Änderungen an *"Web.config"* -Dateien und die neuen Konfigurationseinstellungen angewendet. Sie müssen den Computer oder den IIS-Server für die Änderungen wirksam werden neu zu starten.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] erkennt an *web.config*-Dateien vorgenommene Änderungen automatisch und wendet die neuen Konfigurationseinstellungen an. Sie müssen den Computer oder den IIS-Server für die Änderungen wirksam werden neu zu starten.  
   
 Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse, mit enthalten *"Web.config"* Dateien in den einzelnen. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Apps erben Konfigurationseinstellungen zur von *"Web.config"* Dateien auf höheren Ebenen im URL-Pfad. Die hierarchische *"Web.config"* -dateieinstellungen gelten für alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] apps, darunter in der Hierarchie. Festlegen einer anderen Konfigurations in eine *"Web.config"* Datei, die sich in der Hierarchie überschreibt die Einstellungen in der Datei höher.  
   
@@ -184,11 +183,10 @@ Es gibt verschiedene Möglichkeiten zum Veröffentlichen von apps in IIS. Diese 
 > Debugmodus sinkt die Leistung Ihrer App. Legen Sie für eine optimale Leistung `debug="false"` in die *"Web.config"* , und geben Sie einen Releasebuild aus, wenn Sie eine Produktions-app bereitstellen oder leistungsmessungen.  
 
 ## <a name="see-also"></a>Siehe auch  
-[ASP.NET-Debugging: Systemanforderungen](aspnet-debugging-system-requirements.md)   
-[Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto](how-to-run-the-worker-process-under-a-user-account.md)   
-[Gewusst wie: herausfinden des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md)   
+[Debuggen von ASP.NET: Systemanforderungen](aspnet-debugging-system-requirements.md)   
+[Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](how-to-run-the-worker-process-under-a-user-account.md)   
+[Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md)   
 [Debuggen bereitgestellter Webanwendungen](debugging-deployed-web-applications.md)   
-[Exemplarische Vorgehensweise: Debuggen eines Web Forms](walkthrough-debugging-a-web-form.md)   
-[Gewusst wie: Debuggen von ASP.NET-Ausnahmen](how-to-debug-aspnet-exceptions.md)   
+[Exemplarische Vorgehensweise: Debuggen eines Webformulars](walkthrough-debugging-a-web-form.md)   
+[Vorgehensweise: Debuggen von ASP.NET-Ausnahmen](how-to-debug-aspnet-exceptions.md)   
 [Debuggen von Webanwendungen: Fehler und Problembehandlung](debugging-web-applications-errors-and-troubleshooting.md)
-  

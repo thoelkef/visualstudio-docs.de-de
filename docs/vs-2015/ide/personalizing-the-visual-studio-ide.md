@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916773"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalisieren von Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +40,10 @@ In diesem Abschnitt wird beschrieben, wie Visual Studio auf verschiedene Arten p
  Zum Erstellen einer benutzerdefinierten Startseite für Sie und Ihr Team finden Sie weitere Informationen unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ### <a name="environment-color-themes"></a>Umgebungsfarbschemas
- Um das Farbschema in hell, dunkel und blau zu ändern, geben Sie in **QuickLaunch** „Umgebung“ ein, und wählen Sie **Umgebung &#124; Allgemein** aus. Um die Optionen für die farbliche Kennzeichnung im Editor zu ändern, geben Sie `environment` in **QuickLaunch** ein, und wählen Sie **Umgebung &#124; Schriftarten und Farben** aus. Weitere Informationen finden Sie unter [Gewusst wie: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Um das Farbschema in hell, dunkel und blau zu ändern, geben Sie in **QuickLaunch** „Umgebung“ ein, und wählen Sie **Umgebung &#124; Allgemein** aus. Um die Optionen für die farbliche Kennzeichnung im Editor zu ändern, geben Sie `environment` in **QuickLaunch** ein, und wählen Sie **Umgebung &#124; Schriftarten und Farben** aus. Weitere Information finden Sie unter [Gewusst wie: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menüs und Symbolleisten
- Weitere Informationen zum Hinzufügen oder Entfernen von Menü-oder Symbolleistenelementen finden Sie unter [Gewusst wie: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Informationen zum Hinzufügen oder Entfernen von Menü- oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Groß-/Kleinschreibung im Hauptmenü
  Aufgrund der großen Nachfrage können Sie die Groß-und Kleinschreibung im Hauptmenü zwischen **Große Anfangsbuchstaben** und **GROSSBUCHSTABEN** umschalten, indem Sie in **QuickLaunch** den Begriff `environment` eingeben und **Umgebung &#124; Allgemein** auswählen.

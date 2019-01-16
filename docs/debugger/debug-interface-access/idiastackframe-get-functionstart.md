@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_functionStart | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d6502a99827d6835fb1f6d9368615fd6045203
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 214f62788c77ea5a15d6065a1661213201d1a341
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827886"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
 Ruft ein Flag, das angibt, ob der Block den Einstiegspunkt einer Funktion enthält.  
@@ -27,7 +25,7 @@ Ruft ein Flag, das angibt, ob der Block den Einstiegspunkt einer Funktion enthä
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_functionStart (   
+HRESULT get_functionStart (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_functionStart (
  [out] Gibt `TRUE` Wenn den Stapelrahmen den Einstiegspunkt einer Funktion; enthält andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

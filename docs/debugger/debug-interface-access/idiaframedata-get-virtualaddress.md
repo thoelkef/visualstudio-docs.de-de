@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_virtualaddress | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bf445a194a199bf67652d497738aa16c7c680
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7df3ab1a17cb4d8eaf50ff22acbe276d2ad890a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936216"
 ---
 # <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
 Ruft die virtuelle Adresse (VA) des Codes für den Frame ab.  
@@ -27,7 +25,7 @@ Ruft die virtuelle Adresse (VA) des Codes für den Frame ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_virtualAddress (
  [out] Gibt die virtuelle Adresse des Codes für den Frame zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

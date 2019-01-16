@@ -1,8 +1,6 @@
 ---
 title: ClickOnce-Anwendungsmanifest | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929227"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce-Anwendungsmanifest
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest ist eine XML-Datei, die eine Anwendung, das bereitgestellt wird beschreibt, mithilfe von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -48,8 +46,8 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 
  Das Anwendungsmanifest muss immer vor der Bereitstellung signiert werden. Wenn Sie ein Anwendungsmanifest manuell ändern, müssen Sie verwenden *mage.exe* um das Anwendungsmanifest erneut signieren, das Bereitstellungsmanifest aktualisieren, und klicken Sie dann das Bereitstellungsmanifest erneut signieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
-## <a name="file-name-syntax"></a>Die Syntax für Dateinamen  
- Der Name des eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifestdatei muss den vollständigen Namen und die Erweiterung der Anwendung, das in der `assemblyIdentity` -Element, gefolgt von der Erweiterung *". manifest"*. Z. B. ein Anwendungsmanifest, die auf die *Example.exe* Anwendung folgende Syntax für Dateinamen verwendet.  
+## <a name="file-name-syntax"></a>Dateinamenssyntax  
+ Der Name einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifestdatei muss den vollständigen Namen und die Erweiterung der Anwendung, wie im `assemblyIdentity`-Element angegeben, gefolgt von der Erweiterung *.manifest* aufweisen. Z. B. ein Anwendungsmanifest, die auf die *Example.exe* Anwendung folgende Syntax für Dateinamen verwendet.  
 
  `example.exe.manifest`  
 
@@ -118,4 +116,4 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
+ [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)

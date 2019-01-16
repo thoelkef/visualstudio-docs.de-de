@@ -1,8 +1,6 @@
 ---
-title: IDiaStackFrame | Microsoft Docs
-ms.custom: ''
+title: IDiaStackFrame | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ad1dc5417055c6a17288ee67031d0473062a66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893483"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
-Zeigt die Eigenschaften einen Stapelrahmen entspricht.  
+Zeigt die Eigenschaften ein Stapelrahmen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,35 +29,35 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Im folgenden sind die Methoden, die von dieser Schnittstelle unterstützt:  
+ Im folgenden finden Methoden, die von dieser Schnittstelle unterstützt:  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Ruft ein Flag gibt an, dass der basiszeiger für Code in diesem Adressbereich zugeordnet ist. Diese Methode ist veraltet.|  
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Ruft die Adresse Basis des Frames ab.|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Ruft ein Flag gibt an, dass die C++-Ausnahmebehandlung aktiviert ist.|  
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Ruft ein Flag gibt an, dass der Block den Einstiegspunkt der Funktion enthält.|  
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Ruft die Anzahl der Bytes von lokalen Variablen, die auf dem Stapel abgelegt.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Ruft ein Flag, das angibt, dass der basiszeiger für Code in dieser Adressbereich zugeordnet ist. Diese Methode ist veraltet.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Ruft die Basis der Adresse des Rahmens ab.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Ruft ein Flag, das angibt, dass C++-Ausnahmebehandlung gültig ist.|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Ruft ein Flag, das angibt, dass der Block den Einstiegspunkt einer Funktion enthält.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Ruft die Anzahl der Bytes der lokalen Variablen, die auf dem Stapel abgelegt.|  
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Ruft die Anzahl der Bytes von Parametern, die auf dem Stapel abgelegt.|  
-|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Ruft die Anzahl der Bytes der Prolog-Code im Block ab|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Ruft die Anzahl der Bytes der Prolog-Code im block|  
 |[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgelegt.|  
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Ruft die Adresse Basis der "lokal" ab.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Ruft die Adresse Basis die lokalen Variablen ab.|  
 |[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.|  
-|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Ruft den Wert der angegebenen lokalen Variablen als unformatierte Bytes ab.|  
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Ruft den Wert der angegebenen lokalen Variable als unformatierte Bytes ab.|  
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Ruft den Wert eines angegebenen Registers.|  
-|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Ruft die Rückgabeadresse des Frames ab.|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Ruft die Größe des Frames, in Bytes ab.|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Ruft ein Flag gibt an, dass die Ausnahmebehandlung System aktiviert ist.|  
-|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Ruft die Frametyp ab.|  
+|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Ruft die Rückgabeadresse des Rahmens ab.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Ruft die Größe des Rahmens in Bytes ab.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Ruft ein Flag, das angibt, dass die Behandlung von Ausnahmen aktiviert ist.|  
+|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Ruft den Frametyp ab.|  
   
 ## <a name="remarks"></a>Hinweise  
- Stack-Frame ist eine Abstraktion eines Funktionsaufrufs während seiner Ausführung.  
+ Ein Stapelrahmen ist eine Abstraktion eines Funktionsaufrufs während seiner Ausführung.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) Methode. Finden Sie unter der [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) Schnittstelle für ein Beispiel zum Abrufen der `IDiaStackFrame` Schnittstelle.  
+ Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) Methode. Finden Sie unter den [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) Schnittstelle für ein Beispiel zum Abrufen der `IDiaStackFrame` Schnittstelle.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt verschiedene Attribute einen Stapelrahmen entspricht.  
+ Dieses Beispiel zeigt die verschiedenen Attribute des ein Stapelrahmen.  
   
 ```C++  
 void PrintStackFrame(IDiaStackFrame* pFrame)  
@@ -112,5 +110,5 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [Idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
+ [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

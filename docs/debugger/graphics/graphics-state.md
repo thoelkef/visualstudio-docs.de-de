@@ -1,8 +1,6 @@
 ---
-title: Grafikzustand | Microsoft Docs
-ms.custom: ''
+title: Grafikzustand | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968101"
 ---
 # <a name="graphics-state"></a>Grafikzustand
 Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, der zum Zeitpunkt des aktuellen Ereignisses aktiv ist, wie z. B. bei einem Zeichnen-Befehl.  
@@ -38,21 +36,21 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
   
 -   Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.  
   
-    -   **API-eingabestatusansicht anzeigen**  
+    -   **API-Eingabestatusansicht anzeigen**  
   
     -   **Logische Statusansicht anzeigen**  
   
     -   **Angeheftete Statusansicht anzeigen**  
   
 > [!IMPORTANT]
->  Müssen Sie anheften, Status in der **API anzeigen Eingabe Zustand** oder **logischen Status anzeigen** Ansichten, damit er in angezeigt werden die **angeheftete Statusansicht anzeigen**.  
+>  Sie müssen den Status in den Ansichten **API-Eingabestatus anzeigen** oder **Logischen Status anzeigen** anheften, damit er in der Ansicht **Angeheftete Statusansicht anzeigen** angezeigt wird.  
   
 ### <a name="state-table-format"></a>Format der Statustabelle  
  Das Statusfenster enthält mehrere Spalten mit Informationen.  
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  
-|name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API Eingabe Statusansicht** und **logischen Statusansicht** angegeben, um die hierarchische Beziehung zwischen den Zuständen an eingerückt werden.<br /><br /> In der **angeheftete Statusansicht** Zustand befindet, vollständig qualifizierte Namen in einer flachen Liste angezeigt werden.|  
+|name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API-Eingabestatusansicht** und in der **logischen Statusansicht** geben Namen die hierarchische Beziehung zwischen den Zuständen an.<br /><br /> In der **angehefteten Statusansicht** werden vollqualifizierte Namen in einer einfachen Liste angezeigt.|  
 |Wert|Der Wert des Statuselements.|  
 |Typ|Der Typ des Statuselements.|  
   

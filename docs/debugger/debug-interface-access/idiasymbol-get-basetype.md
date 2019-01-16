@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_basetype | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 37f42b1f999b2f73d6ef534dddd9cfd907ac34f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919611"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Ruft ab, der Basistyp für dieses Symbol<em>.</em>  
@@ -27,7 +25,7 @@ Ruft ab, der Basistyp für dieses Symbol<em>.</em>
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_baseType (   
+HRESULT get_baseType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -64,7 +62,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

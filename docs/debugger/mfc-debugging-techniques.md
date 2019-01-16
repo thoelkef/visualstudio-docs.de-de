@@ -1,8 +1,6 @@
 ---
 title: MFC Debugtechniken | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832216"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- Das TRACE-Makro entsprechend verarbeitet, Char * sowohl für "wchar_t"\* Parameter. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.  
+ Das TRACE-Makro behandelt char*- und wchar_t\*-Parameter ordnungsgemäß. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **Nicht-Objektreservierungen**  
 
- Beachten Sie, dass einige Belegungen sich auf Objekte (z. B. `CPerson`) und andere auf „Nicht-Objekte“ beziehen. "Nicht-objektreservierungen-speicherbelegungen" sind speicherbelegungen für Objekte nicht von abgeleiteten `CObject` oder speicherbelegungen primitiver C-Typen wie z. B. `char`, `int`, oder `long`. Wenn die von **CObject-** abgeleitete Klasse zusätzlichen Arbeitsspeicher reserviert, z. B. für interne Puffer, weisen die Objekte sowohl Objekt- als auch Nicht-Objektreservierungen auf.  
+ Beachten Sie, dass einige Belegungen sich auf Objekte (z. B. `CPerson`) und andere auf „Nicht-Objekte“ beziehen. „Nicht-Objekt-Speicherbelegungen“ sind Speicherbelegungen für Objekte, die nicht von `CObject` abgeleitet wurden, oder Speicherbelegungen primitiver C-Typen wie `char`, `int` oder `long`. Wenn die von **CObject-** abgeleitete Klasse zusätzlichen Arbeitsspeicher reserviert, z. B. für interne Puffer, weisen die Objekte sowohl Objekt- als auch Nicht-Objektreservierungen auf.  
 
  **Verhindern von Speicherverlusten**  
 
@@ -432,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. Zunächst erstellen Sie eine neue Projektkonfiguration.  
 
-   1.  In der  **\<Projekt > Eigenschaftenseiten** Dialogfeld klicken Sie auf die **Configuration Manager** Schaltfläche.  
+   1.  Klicken Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.  
 
-   2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)). In der **Konfiguration** Spalte  **\<neu... >**.  
+   2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)). Wählen Sie in der Spalte **Konfiguration** die Option **\<Neu...>** aus.  
 
    3.  Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
 
@@ -474,7 +472,7 @@ pMyPerson->Dump( afxDump );
 
    6.  Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.  
 
-   7.  Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie ändern die **vorkompilierten Header erstellen/verwenden** festlegen in der  **\<Projekt > Eigenschaften** Dialogfeld (**Konfigurationseigenschaften**  Ordner **C/C++-** Unterordner **vorkompilierte Header** Kategorie).  
+   7.  Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++**, Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.  
 
 7. Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.  
 

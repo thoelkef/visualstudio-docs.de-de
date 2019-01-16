@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_bitposition | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bba39752470cf9f282245cbece7f260558b8b21d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 82940d50d82945ab8ef4efcbf63801339536f8f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956621"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 Ruft die Bitposition des Speicherorts ab. Wird verwendet, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsBitField`.  
@@ -27,7 +25,7 @@ Ruft die Bitposition des Speicherorts ab. Wird verwendet, wenn die [LocationType
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_bitPosition (   
+HRESULT get_bitPosition (   
    DWORD* pRetVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_bitPosition (
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|Header:|Dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

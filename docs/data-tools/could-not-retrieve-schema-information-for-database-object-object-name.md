@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885591"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Schemainformationen für das Datenbankobjekt konnten nicht abgerufen werden \<Objektname >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Die Schemainformationen für das Datenbankobjekt \<Objektname> konnten nicht abgerufen werden
 
-Diese Nachricht wird meist angezeigt, wenn ein Objekt in **Server-Explorer** oder **Datenbank-Explorer** in die Zwischenablage kopiert, aus der Datenbank gelöscht und dann in den Designer eingefügt wird. Da das Datenbankobjekt nicht mehr vorhanden ist, wird diese Meldung angezeigt.
+Diese Meldung wird normalerweise angezeigt, wenn ein Objekt in **Server-Explorer** oder **Datenbank-Explorer** in die Zwischenablage kopiert, aus der Datenbank gelöscht und dann in den Designer eingefügt wird. Da das Datenbankobjekt nicht mehr vorhanden ist, wird diese Meldung angezeigt.
 
 Wählen Sie zum Beheben dieses Fehlers **OK** um das Dialogfeld zu schließen.
 

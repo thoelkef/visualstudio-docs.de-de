@@ -1,8 +1,6 @@
 ---
 title: Makros für die Berichterstellung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 8453f00dda843f6940c518b7ed3ea83c8c261476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989973"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
 Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen. Sie müssen nicht in inclose **#ifdef**s, da sie nicht mehr automatisch in Ihrer Version angezeigt erstellen, wenn **_DEBUG** ist nicht definiert.  
   
 |Makro|Beschreibung|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4**, fungiert die Meldungszeichenfolge als Printf-Style-Formatierung Zeichenfolge für die Argumente.|  
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**, aber diese Makros auch ausgeben, die Datei Dateiname und Zeilennummer angegeben, wo das Makro befindet.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|  
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**. Bei diesen Makros wird jedoch zusätzlich der Name der Datei und die Zeilennummer ausgegeben, in der sich das Makro befindet.|  
   
  Betrachten Sie das folgende Beispiel:  
   
@@ -50,13 +48,13 @@ Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definier
 #endif  
 ```  
   
- Dieser Code gibt die Werte der `someVar` und `otherVar` zu **"stdout"**. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:  
+ Durch diesen Code werden die Werte von `someVar` und `otherVar` in **stdout** ausgegeben. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:  
   
 ```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
-Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. In einem der Headerdateien, z. B. Sie können Code einfügen wie im folgenden ein Makro aufgerufen **ALERT_IF2**:  
+Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. Beispielsweise könnten Sie in eine der Headerdateien mit dem folgenden Beispiel vergleichbaren Code einfügen, durch den ein Makro mit dem Namen **ALERT_IF2** definiert wird:  
   
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  

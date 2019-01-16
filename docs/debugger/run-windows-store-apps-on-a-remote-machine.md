@@ -1,8 +1,6 @@
 ---
 title: Debuggen von UWP-apps auf Remotecomputern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892250"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-apps auf Remotecomputern aus Visual Studio
   
@@ -78,7 +76,7 @@ In der **Remoteverbindungen** (Dialogfeld), Sie können für einen bestimmten Re
 >[!TIP]
 >Wenn Sie anhand des Namens mit einem Remotegerät herstellen können, verwenden Sie die IP-Adresse. Um zu bestimmen, die IP-Adresse, auf dem Remotegerät, geben Sie **Ipconfig** in einem Befehlsfenster. Die IP-Adresse wird als **IPv4-Adresse**.  
     
-## <a name="BKMK_download"></a> Herunterladen Sie und installieren Sie der Remotetools für Visual Studio
+## <a name="BKMK_download"></a> Herunterladen und Installieren der Remotetools für Visual Studio
 
 Für Visual Studio zum Debuggen von apps auf einem Remotecomputer befindet muss auf der Remotecomputer die Remotetools für Visual Studio ausgeführt werden. 
 
@@ -109,6 +107,6 @@ Remotedebuggen funktioniert genauso wie das lokale Debuggen die folgenden Schrit
 1. Wählen Sie bei Bedarf **Debuggen** > **Debuggen beenden** , oder drücken Sie **UMSCHALT**+**F5** debugging beenden, und Schließen Sie die RemoteApp.
   
 ## <a name="see-also"></a>Siehe auch  
- [Erweiterte Optionen für die remote-Bereitstellung](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Advanced remote deployment options (Erweiterte Optionen für die Remotebereitstellung)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Testen von UWP-Apps mit Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [Debuggen von UWP-Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

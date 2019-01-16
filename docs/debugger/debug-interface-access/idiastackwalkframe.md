@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalkFrame | Microsoft Docs
-ms.custom: ''
+title: IDiaStackWalkFrame | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f16d6f824b3b150406c23cce87e186fe9b120999
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: aa93204c7011fb13a079c22a0f18bede145631c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927206"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
-Stapel Kontext zwischen den Aufrufen des verwaltet die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode.  
+Stack Kontext zwischen den Aufrufen der verwaltet die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode.  
   
 ## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
@@ -39,13 +37,13 @@ IDiaStackWalkFrame : IUnknown
 |[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Legt den Wert eines Registers.|  
 |[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Liest Arbeitsspeicher aus Image an.|  
 |[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Sucht den angegebenen Stapelrahmen für die nächste Funktion Absenderadresse an.|  
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Sucht den angegebenen Stapelrahmen für eine Absenderadresse Beginn oder kurz vor der angegebenen Adresse an.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Sucht den angegebenen Stapelrahmen für eine Absenderadresse an oder in der Nähe der angegebenen Adresse an.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird verwendet, während der Ausführung des Programms zum Lesen und Schreiben von Registern als auch auf Arbeitsspeicher zugreifen und return Adressen suchen.  
+ Diese Schnittstelle wird verwendet, während der Ausführung des Programms zum Lesen und Schreiben von Register als auch auf Speicher zugreifen und Absenderadressen finden.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die Clientanwendung implementiert diese Schnittstelle und übergibt eine Instanz der Schnittstelle an, die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode. Die gleiche Instanz dieser Schnittstelle wird wieder verwendet, um den Status der Register bei jedem Aufruf beibehalten der `execute` Methode. Die `execute` Methode verwendet auch diese Schnittstelle, um die Rücksprungadresse zu ermitteln.  
+ Die Client-Anwendung implementiert diese Schnittstelle und übergibt eine Instanz der Schnittstelle, die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode. Die gleiche Instanz dieser Schnittstelle wird wieder verwendet, um den Status der Register bei jedem Aufruf des verwalten die `execute` Methode. Die `execute` Methode verwendet auch diese Schnittstelle, um zu bestimmen, die Rückgabeadresse.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

@@ -1,8 +1,6 @@
 ---
 title: Dia2dump-Beispiel | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859645"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 
@@ -34,7 +32,7 @@ Das Beispiel installiert ist, bei der Auswahl der **Desktopentwicklung mit C++**
 
 Bei der Installation ist das Beispiel, in Ihrem Visual Studio-Installationsverzeichnis, in ein Unterverzeichnis namens \DIA SDK\Samples\DIA2Dump.
 
-## <a name="build-the-sample"></a>Erstellen Sie das Beispiel
+## <a name="build-the-sample"></a>Erstellen des Beispiels
 
 Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. Das bedeutet, dass es sich bei Verwendung einer Developer-Eingabeaufforderung mit erhöhten Rechten oder eine Instanz von Visual Studio zum Erstellen und bearbeiten die beispiellösung an diesem Speicherort. Um den Build zu vereinfachen, empfehlen wir, Sie kopieren Sie die Dateien zuerst im Beispielverzeichnis aus, um ein anderes Verzeichnis, z. B. einen Ordner im Ordner "Dokumente", und klicken Sie dann das Beispiel erstellen.
 
@@ -50,7 +48,7 @@ Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. D
 
 1. In der **Additional Include Directories** -Eigenschaft, wählen Sie im Dropdown-Steuerelement, und wählen Sie dann **bearbeiten**.
 
-1. In der **Additional Include Directories** Dialogfeldecke, in das Bearbeitungsfeld, geben Sie die `$(VSInstallDir)DIA SDK\include` Verzeichnis. Fügen Sie diesem Verzeichnis aus, um sicherzustellen, dass der Compiler die Datei dia2.h finden kann. Wählen Sie **OK** zum Speichern der Änderungen.
+1. In der **Additional Include Directories** Dialogfeldecke, in das Bearbeitungsfeld, geben Sie die `$(VSInstallDir)DIA SDK\include` Verzeichnis. Fügen Sie diesem Verzeichnis aus, um sicherzustellen, dass der Compiler die Datei dia2.h finden kann. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 1. Wählen Sie **OK** zum Speichern der Änderungen in den Projekteigenschaften.
 

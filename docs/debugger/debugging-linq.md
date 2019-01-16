@@ -1,8 +1,6 @@
 ---
 title: Debuggen von LINQ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871004"
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von Language Integrated Query (LINQ)-Code, wobei einige Einschränkungen bestehen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. Dieses Thema beschreibt die haupteinschränkungen des LINQ-Debuggens.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von Language Integrated Query (LINQ)-Code, wobei einige Einschränkungen bestehen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. In diesem Thema werden die Haupteinschränkungen des LINQ-Debuggens beschrieben.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> Anzeigen von LINQ-Ergebnissen  
  Das Ergebnis einer LINQ-Anweisung kann mithilfe von DataTips, über das Überwachungsfenster oder im Dialogfeld Schnellüberwachung angezeigt werden. Bei Verwendung eines Quellcodefensters können Sie den Mauszeiger auf eine Abfrage im Quellcodefenster bewegen, woraufhin ein DataTip eingeblendet wird. Sie können eine LINQ-Variable kopieren und in das Überwachungsfenster oder das Dialogfeld Schnellüberwachung einfügen.  
   
- In LINQ wird eine Abfrage nicht ausgewertet, wenn sie erstellt oder deklariert wird, sondern wenn die Abfrage verwendet wird. Deshalb verfügt die Abfrage erst nach der Auswertung über einen Wert. Eine vollständige Beschreibung der Abfrage erstellen und auswerten, finden Sie unter [Introduction to LINQ Queries (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) oder [Schreiben Ihrer ersten LINQ-Abfrage](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
+ In LINQ wird eine Abfrage nicht ausgewertet, wenn sie erstellt oder deklariert wird, sondern wenn die Abfrage verwendet wird. Deshalb verfügt die Abfrage erst nach der Auswertung über einen Wert. Eine vollständige Beschreibung der Abfrage erstellen und auswerten, finden Sie unter [Introduction to LINQ Queries (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) oder [Schreiben Ihrer ersten LINQ-Abfrage](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
   
  Um das Ergebnis einer Abfrage anzuzeigen, muss es vom Debugger ausgewertet werden. Diese implizite Auswertung, die beim Anzeigen eines LINQ-Abfrageergebnisses im Debugger erfolgt, hat einige Auswirkungen, die berücksichtigt werden sollten:  
   
@@ -42,7 +40,7 @@ ms.locfileid: "51349425"
   
 -   Die Auswertung einer Abfrage kann dazu führen, dass der Datenwert oder Zustand des Programms geändert wird. Nicht alle Abfragen verfügen über Nebeneffekte. Um festzustellen, ob eine Abfrage ohne Nebeneffekte sicher ausgewertet werden kann, sollten Sie den Code verstehen, durch den die Abfrage implementiert wird.  
   
-##  <a name="BKMK_SteppingAndLinq"></a> Stepping und LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Ausführung in Einzelschritten und LINQ  
  Wenn Sie LINQ-Code debuggen, weist die schrittweise Ausführung teilweise ein abweichendes Verhalten auf, das Sie beachten sollten.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -106,7 +104,7 @@ End Function
   
  Die überarbeitete Abfrage ruft bei jedem Durchlauf von `IsEven` die `items`-Funktion auf. Mithilfe der Debuggerfenster können Sie feststellen, ob die einzelnen Elemente die angegebene Bedingung erfüllen und den Code in `IsEven` schrittweise ausführen. Das Prädikat in diesem Beispiel ist recht einfach gehalten. Falls Ihr zu debuggendes Prädikat jedoch komplizierter ist, kann diese Technik sehr hilfreich sein.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten Sie und fortfahren Sie wird für LINQ nicht unterstützt.  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten und Fortfahren wird für LINQ nicht unterstützt  
  Bearbeiten und Fortfahren unterstützt LINQ-Abfragen mit Einschränkungen. Weitere Informationen finden Sie unter [EnC unterstützt Änderungen](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Siehe auch

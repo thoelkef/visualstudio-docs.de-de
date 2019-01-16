@@ -1,8 +1,6 @@
 ---
 title: Senden von Nachrichten an das Ausgabefenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906747"
 ---
-# <a name="send-messages-to-the-output-window"></a>Senden von Nachrichten an das Fenster "Ausgabe"
+# <a name="send-messages-to-the-output-window"></a>Senden von Meldungen an das Ausgabefenster
 
 Können Sie laufzeitmeldungen zum Schreiben der **Ausgabe** unter Verwendung der <xref:System.Diagnostics.Debug> Klasse oder die <xref:System.Diagnostics.Trace> -Klasse, die Teil von der <xref:System.Diagnostics> -Klassenbibliothek. Verwenden der <xref:System.Diagnostics.Debug> Klasse, wenn Sie nur Ausgabe die *Debuggen* Version des Programms. Verwenden der <xref:System.Diagnostics.Trace> Klasse, wenn die Ausgabe in beiden soll die *Debuggen* und *Version* Versionen.  
   
@@ -59,8 +57,8 @@ Die **Ausgabe** Fenster auch Informationen zum Anzeigen:
 - Threads, die beendet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [Fenster "Ausgabe"](../ide/reference/output-window.md)   
+ [Debugger security (Debuggersicherheit)](../debugger/debugger-security.md)   
+ [Ausgabefenster](../ide/reference/output-window.md)   
  [Ablaufverfolgung und Instrumentieren von Anwendungen](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#, F#, und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debuggen von verwaltetem code](../debugger/debugging-managed-code.md)
+ [C#, F#, and Visual Basic project types (C#-, F#- und Visual Basic-Projekttypen)](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

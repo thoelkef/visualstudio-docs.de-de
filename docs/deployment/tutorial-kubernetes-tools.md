@@ -1,20 +1,18 @@
 ---
 title: Tutorial für Kubernetes-Tools | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 06/08/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8cb250cd319f28b444a8f3bfecef421ecbaac9b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848362"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Erste Schritte mit Kubernetes-Tools für Visual Studio
 
@@ -22,7 +20,7 @@ Die Visual Studio-Kubernetes-Tools vereinfachen die Entwicklung von Anwendungen 
 
 In diesem Tutorial wird die Verwendung von Visual Studio zum Hinzufügen von Kubernetes-Unterstützung zu einem Projekt, und Veröffentlichen in AKS behandelt. Wenn Sie in erster Linie mit [Azure Dev Leerzeichen](http://aka.ms/get-azds) zum Debuggen und Testen Sie das Projekt, das in AKS ausgeführte, können Sie direkt zum die [Tutorial für Azure Dev Leerzeichen](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) stattdessen.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Um diese neue Funktionalität nutzen zu können, benötigen Sie Folgendes:
 

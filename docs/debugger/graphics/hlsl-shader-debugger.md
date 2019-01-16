@@ -1,8 +1,6 @@
 ---
 title: HLSL-Shaderdebugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27db26a732ec53b81aed4807f4aec546e1bc7f1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8425857b6774d9a880c769ea3b46943686f3deb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832436"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie Ihr HLSL-Shader-Code unter echten Bedingungen Ihrer App ausgeführt wird.  
@@ -42,7 +40,7 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   Dennoch stellt der HLSL-Debugger eine bessere, CPU-ähnlichere Debugleistung zur Verfügung, als andernfalls möglich wäre.  
   
 ## <a name="hlsl-shader-edit--apply"></a>HLSL-Shader bearbeiten und anwenden  
- Der HLSL-Shader-Debugger unterstützt Bearbeiten und Fortfahren nicht auf die gleiche Weise wie der CPU-Debugger, da das GPU-Ausführungsmodell keine Umkehrung des Shader-Zustands ermöglicht. Stattdessen unterstützt der HLSL-Debugger, bearbeiten und anwenden, wodurch Sie HLSL-Quelldateien bearbeiten, und wählen Sie dann **übernehmen** , den Rahmen, um die Auswirkungen Ihrer Änderungen finden Sie unter erneut zu generieren. Ihr geänderter Shader-Code befindet sich in einer separaten Datei, die Integrität der ursprünglichen HLSL-Quelldatei des Projekts beizubehalten, aber wenn Sie mit Ihren Änderungen zufrieden sind können Sie **kopieren in...**  um die Änderungen in Ihr Projekt kopieren. Mit dieser Funktion können Sie den Shader-Code, der Fehler enthält, schnell durchlaufen und kostspielige Wiederherstellungs- und Erfassungsschritte aus Ihrem Workflow HLSL debuggen beseitigen.  
+ Der HLSL-Shader-Debugger unterstützt Bearbeiten und Fortfahren nicht auf die gleiche Weise wie der CPU-Debugger, da das GPU-Ausführungsmodell keine Umkehrung des Shader-Zustands ermöglicht. Stattdessen unterstützt der HLSL-Debugger das Bearbeiten und Anwenden, mit dem Sie HLSL-Quelldateien bearbeiten und dann **Anwenden** wählen können, um den Frame zu regenerieren und die Auswirkungen Ihrer Änderungen zu sehen. Ihr geänderter Shader-Code befindet sich in einer separaten Datei, um die Integrität der ursprünglichen HLSL-Quelldatei des Projekts beizubehalten, aber wenn Sie mit den Änderungen zufrieden sind können Sie **Kopieren in** wählen, um die Änderungen in Ihr Projekt zu kopieren. Mit dieser Funktion können Sie den Shader-Code, der Fehler enthält, schnell durchlaufen und kostspielige Wiederherstellungs- und Erfassungsschritte aus Ihrem Workflow HLSL debuggen beseitigen.  
   
 ## <a name="hlsl-disassembly"></a>HLSL-Disassembly  
  Der HLSL-Shader-Debugger enthält eine Liste der HLSL-Shader-Assembly rechts neben der Auflistung des HLSL-Quellcodes.  
@@ -52,22 +50,22 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>So starten Sie den HLSL-Debugger im Fenster "Grafikpipelinestufen"  
   
-1.  In der **Grafikpipelinestufen** Fenster Suchen Sie die Pipelinestufe, die mit dem Shader zugeordnet sind, die Sie debuggen möchten.  
+1.  Im Fenster **Grafikpipelinestufen** suchen Sie die Pipelinestufe, die dem Shader zugeordnet ist, den Sie debuggen möchten.  
   
-2.  Wählen Sie unterhalb des Titels der Pipelinestufe, **Debuggen starten**, was als kleiner grüner Pfeil angezeigt wird.  
+2.  Unterhalb des Titels der Pipelinestufe wählen Sie **Debuggen starten**. Dies wird als kleiner grüner Pfeil angezeigt.  
   
     > [!NOTE]
     >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt nur den ersten Shader-Thread für die entsprechende Stufe, d. h. für den ersten Vertex oder das erste Pixel, der bzw. das verarbeitet wird. Sie können „Pixelverlauf“ verwenden, um auf andere Threads dieser Shader-Stufen zuzugreifen.  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>So starten Sie den HLSL-Debugger im Fenster "Grafikpixelverlauf"  
   
-1. In der **Grafikpixelverlauf** Fenster, erweitern Sie den Draw-Aufruf, der mit dem Shader zugeordnet sind, die Sie debuggen möchten. Jeder Zeichnen-Befehl kann mehreren Primitiva entsprechen.  
+1. Erweitern Sie im Fenster **Grafikpixelverlauf** den Zeichnen-Befehl, die dem Shader zugeordnet ist, den Sie debuggen möchten. Jeder Zeichnen-Befehl kann mehreren Primitiva entsprechen.  
   
 2. Erweitern Sie in den Eigenschaften des Zeichnen-Befehls das Primitivum, dessen resultierender Farbbeitrag auf einen Fehler im Shadercode hindeutet. Wenn für mehrere Primitiva ein Fehler zu vermuten ist, wählen Sie davon das erste Primitivum aus, um eine Häufung von Fehlern zu vermeiden, durch die eine Diagnose des Problems schwieriger wird.  
   
-3. In den Eigenschaften des primitivums wählen, ob zum Debuggen der **Vertex-Shader** oder **Pixel-Shader**. Debuggen Sie den Vertex-Shader, wenn Sie vermuten, dass der Pixel-Shader fehlerfrei ist, aber einen falschen Farbbeitrag generiert, weil der Vertex-Shader ihm falsche Konstanten übergibt. Andernfalls debuggen Sie den Pixel-Shader.  
+3. In den Eigenschaften des Primitivums wählen Sie aus, ob Sie **Vertex-Shader** oder den **Pixel-Shader** debuggen möchten. Debuggen Sie den Vertex-Shader, wenn Sie vermuten, dass der Pixel-Shader fehlerfrei ist, aber einen falschen Farbbeitrag generiert, weil der Vertex-Shader ihm falsche Konstanten übergibt. Andernfalls debuggen Sie den Pixel-Shader.  
   
-    Wählen Sie rechts vom ausgewählten Shader, **Debuggen starten**, was als kleiner grüner Pfeil angezeigt wird.  
+    Wählen Sie rechts vom ausgewählten Shader **Debuggen starten**. Dies wird als kleiner grüner Pfeil angezeigt.  
   
    > [!NOTE]
    >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  

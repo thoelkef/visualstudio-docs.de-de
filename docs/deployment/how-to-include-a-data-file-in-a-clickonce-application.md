@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990213"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung
 Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten:-Text-Dateien, XML-Dateien oder sogar Microsoft Access-Datenbank (*MDB*) Dateien. Die folgenden Verfahren zeigen, wie zum Hinzufügen einer Datendatei eines beliebigen Typs in Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>So schließen eine Datendatei mit Mage.exe  
@@ -85,4 +83,4 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
      Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Zugreifen auf lokale und remote-Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

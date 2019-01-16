@@ -1,8 +1,6 @@
 ---
 title: '&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e919574ffaa6b1e5545f4c97685722a3017c2182
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906929"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)
 Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.  
@@ -60,7 +58,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ```  
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das-Element weist die folgenden Attribute.  
+ Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das Element weist folgende Attribute auf.  
 
 
 | Attribut | Beschreibung |
@@ -84,7 +82,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` Element und weist keine Attribute. Wenn die `beforeApplicationStartup` Element vorhanden ist, wird die Anwendung blockiert, wenn [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sucht nach Updates, wenn der Client online ist. Wenn dieses Element nicht vorhanden ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scannt zunächst nach Updates, die basierend auf die Werte für die `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
 
-## <a name="expiration"></a>Ablaufdatum  
+## <a name="expiration"></a>Ablauf  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` -Element, und hat keine untergeordneten Elemente. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden. Wenn die Überprüfung auf Updates tritt ein, und eine aktualisierte Version gefunden wird, werden die neue Version zwischengespeichert, während die vorhandene Version ausgeführt wird. Installiert die neue Version dann beim nächsten Start von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
 
  Die `expiration` Element unterstützt die folgenden Attribute.  
@@ -94,7 +92,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 |`maximumAge`|Erforderlich. Gibt an, wie ALT das aktuelle Update werden soll, bevor die Anwendung eine Prüfung auf Updates ausführt. Die Zeiteinheit richtet sich nach der `unit` Attribut.|  
 |`unit`|Erforderlich. Gibt die Zeiteinheit für `maximumAge`. Gültige Einheiten sind `hours`, `days`, und `weeks`.|  
 
-## <a name="deploymentprovider"></a>deploymentProvider  
+## <a name="deploymentprovider"></a>"deploymentProvider"  
  Für .NET Framework 2.0, dieses Element ist erforderlich, wenn das Bereitstellungsmanifest enthält eine `subscription` Abschnitt. Für .NET Framework 3.5 und höher, wird dieses Element ist optional und wird standardmäßig mit dem Server und Pfad der Datei, die in der das Bereitstellungsmanifest erkannt wurde.  
 
  Dieses Element ist ein untergeordnetes Element des `deployment` -Elements und weist folgende Attribute auf.  

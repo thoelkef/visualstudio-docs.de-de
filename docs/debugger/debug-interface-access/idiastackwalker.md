@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalker | Microsoft Docs
-ms.custom: ''
+title: IDiaStackWalker | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9c4509e56949d739af3e39e04b89f289edfbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935971"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Enthält Methoden, führen Sie einen Stapel zu durchlaufen, anhand der Informationen in der PDB-Datei.  
+Bietet Methoden, die Sie für einen Stapel durchlaufen, anhand der Informationen in die PDB-Datei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,17 +33,17 @@ IDiaStackWalker: IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Ruft ab einen Stack-Frame-Enumerator für X86 Plattformen.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Ruft eine Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Ruft einen Stack-Frame-Enumerator für X86 Plattformen.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird verwendet, um eine Liste der Stapelrahmen für einem geladenen Modul zu erhalten. Jede der Methoden übergeben ein [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt (von der Clientanwendung implementiert) die notwendigen Informationen, um die Liste der Stapelrahmen erstellen bereitstellt.  
+ Diese Schnittstelle wird verwendet, um eine Liste der Stapelrahmen für ein geladenes Modul zu erhalten. Jede der Methoden übergeben einen [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt (von der Clientanwendung implementiert) bietet die erforderlichen Informationen zum Erstellen der Liste der Stapelrahmen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird durch den Aufruf abgerufen der `CoCreateInstance` Methode mit der Klassenbezeichner `CLSID_DiaStackWalker` und die Schnittstellen-ID des `IID_IDiaStackWalker`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.  
+ Diese Schnittstelle wird abrufen durch Aufrufen der `CoCreateInstance` Methode mit dem Klassenbezeichner `CLSID_DiaStackWalker` und die Schnittstellen-ID des `IID_IDiaStackWalker`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Abrufen der `IDiaStackWalker` Schnittstelle.  
+ Dieses Beispiel zeigt, wie Sie erhalten die `IDiaStackWalker` Schnittstelle.  
   
 ```C++  
   

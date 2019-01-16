@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919468"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -49,7 +48,7 @@ So beheben Sie diesen Fehler
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remotedesktop
 
-Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer erhalten die folgende Fehlermeldung angezeigt: "die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
+Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer die folgende Fehlermeldung angezeigt: "Die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
 
 So beheben Sie diesen Fehler
 
@@ -96,13 +95,13 @@ Wenn versucht wird, zeigen Sie eine XML-Darstellung der Daten in einem [!INCLUDE
 
 Um diesen Fehler zu beheben, deaktivieren Sie RSS-Feeds:
 
-1.  In Internet Explorer auf die **Tools** Menü klicken Sie auf **Internetoptionen**.
+1.  Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
 
 2.  Auf der **Content** Registerkarte die **Feeds** auf **Einstellungen**.
 
 3.  In der **Feedeinstellungen** Dialogfeld das Kontrollkästchen der **Feedleseanzeige einschalten** , und klicken Sie dann auf **OK**.
 
-4.  Klicken Sie auf **OK** schließen die **Internetoptionen** Dialogfeld.
+4.  Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
 

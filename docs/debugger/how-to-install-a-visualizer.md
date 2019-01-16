@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Installieren einer Schnellansicht | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Installieren einer Schnellansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914570"
 ---
-# <a name="how-to-install-a-visualizer"></a>Gewusst wie: Installieren einer Schnellansicht
+# <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.  
   
 > [!NOTE]
->  HTML, XML und JSON-Schnellansichten werden in uwp-apps, die nur die standard-Text unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
+>  In UWP-apps können nur den standard-Text werden die HTML-, XML- und JSON-Schnellansichten unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
   
 ### <a name="to-install-a-visualizer"></a>So installieren Sie eine Schnellansicht  
   
@@ -47,5 +45,5 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 4.  Starten Sie die Debugsitzung neu.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erstellen Sie benutzerdefinierte Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Gewusst wie: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)
+ [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
+ [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)

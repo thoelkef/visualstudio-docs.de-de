@@ -1,8 +1,6 @@
 ---
-title: Sichern Sie die Datei Zusammenfassung Erweiterbarkeits-API | Microsoft Docs
-ms.custom: ''
+title: Erweiterbarkeits-API für Dumpdateizusammenfassung | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938918"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Erweiterbarkeits-API für Dumpdateizusammenfassung
-Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt, Sie können erweitern die. EXE-Projektsystem und die **Dumpzusammenfassung** Seite für die Verwendung mit Ihren eigenen benutzerdefinierten Debugmodul.  
+Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt können Sie das EXE-Projektsystem und die Seite **Dumpzusammenfassung** für die Verwendung mit Ihrer eigenen benutzerdefinierten Debug-Engine erweitern.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- Die APIs für die Erweiterung der **Dumpzusammenfassung** Seite und die. EXE-Projektsystem sind in den folgenden Namespace verfügbar:  
+ Die APIs für die Erweiterung der Seite **Dumpzusammenfassung** und das EXE-Projektsystem befinden sich im folgenden Namespace:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

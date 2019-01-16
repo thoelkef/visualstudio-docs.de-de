@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Suchen nach einem Thread in der Ansicht "Threads" | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Suchen Sie nach einem Thread in der Ansicht "Threads" | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e16d0edce411192f7b6e40bd0e5fedb32bfac5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832163"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Gewusst wie: Suchen nach einem Thread in der Threadansicht
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Vorgehensweise: Suchen nach einem Thread in der Threadansicht
 Sie können mithilfe der Thread-ID oder eine Modul-Zeichenfolge als Suchkriterium für einen bestimmten Thread in der Ansicht "Threads" suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Threads in der Threadstruktur angezeigt werden.  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Suchen Sie nach einem Thread in der Ansicht "Threads"  

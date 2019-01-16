@@ -1,8 +1,6 @@
 ---
 title: Bearbeiten und Fortfahren Fehlermeldungsdialogfeld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828669"
 ---
 # <a name="edit-and-continue-error-message"></a>Bearbeiten Sie und fortfahren Sie-Fehlermeldung 
 
@@ -37,7 +35,7 @@ Mögliche Ursachen für diese Fehlermeldung
 -   Versucht, optimierten Code zu bearbeiten. Sie müssen möglicherweise aus einem versionsbuild in einem Debugbuild zu wechseln.
 -   Versucht, Code zu bearbeiten, während er ausgeführt wird, anstatt während der Unterbrechung im Debugger. Versuchen Sie es [Festlegen eines Haltepunkts](../debugger/using-breakpoints.md), und Bearbeiten des Codes während angehalten.
 -   Möchten verwalteten Code zu bearbeiten, wenn nur nicht verwaltetes debugging aktiviert ist. Bearbeiten und Fortfahren funktioniert nicht mit [Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
--   Vornehmen der Änderung wird nicht in einer Programmiersprache bearbeiten und Fortfahren unterstützt. Weitere Informationen finden Sie in Artikeln über [unterstützte codeänderungen in C# ](supported-code-changes-csharp.md), [nicht unterstützte Bearbeitungen in Visual Basic zu bearbeiten und Fortfahren](unsupported-edits-in-visual-basic-edit-and-continue.md), und [unterstützt C++-Code-Änderungen](supported-code-changes-cpp.md).
+-   Vornehmen der Änderung wird nicht in einer Programmiersprache bearbeiten und Fortfahren unterstützt. Weitere Informationen finden Sie in Artikeln über [unterstützte codeänderungen in C# ](supported-code-changes-csharp.md), [nicht unterstützte Bearbeitungen in Visual Basic zu bearbeiten und Fortfahren](/visualstudio/debugger/supported-code-changes-csharp), und [unterstützt C++-Code-Änderungen](supported-code-changes-cpp.md).
 -   Versucht, Code in einer app zu bearbeiten, Sie, angefügt sind, statt von Debuggen, die **Debuggen** Menü.  
 -   Versucht, Code zu bearbeiten, während des Debuggens einer Notfallwiederherstellung. Dr.Watson-Dumps.  
 -   Versucht, Code zu bearbeiten, nachdem eine unbehandelte Ausnahme auftritt und die Option **Aufrufliste für Ausnahmefehler entladen** nicht ausgewählt ist.  

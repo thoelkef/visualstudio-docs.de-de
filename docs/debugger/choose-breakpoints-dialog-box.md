@@ -1,8 +1,6 @@
 ---
-title: Wählen Sie im Dialogfeld Breakpoints | Microsoft Docs
-ms.custom: ''
+title: Wählen Sie im Dialogfeld Breakpoints | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898790"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Dialogfeld "Haltepunkte wählen"
-Die **Haltepunkte wählen** Dialogfeld wird geöffnet, wenn Sie versuchen, einen Haltepunkt von mehrdeutigen Eingaben im Festlegen der **Neuer Haltepunkt** (Dialogfeld). Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.  
+Das Dialogfeld **Haltepunkte wählen** wird geöffnet, wenn Sie versuchen, mithilfe von mehrdeutigen Eingaben im Dialogfeld **Neuer Haltepunkt** einen Haltepunkt zu setzen. Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.  
   
- **Haltepunkte**  
+ **Breakpoints**  
  Listet die möglichen Haltepunkte auf, die basierend auf den mehrdeutigen Eingaben gesetzt werden können. Sie können einen oder mehrere Haltepunkte auswählen.  
   
  **All**  
- Wählt alle Breakpoints aufgelistet, die der **Haltepunkte** Feld.  
+ Alle im Feld **Haltepunkte** aufgelisteten Haltepunkte werden ausgewählt.  
   
  **Keine**  
- Löscht alle Breakpoints aufgelistet, die der **Haltepunkte** Feld.  
+ Alle im Feld **Haltepunkte** aufgelisteten Haltepunkte werden gelöscht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

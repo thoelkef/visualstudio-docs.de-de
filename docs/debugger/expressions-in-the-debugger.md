@@ -1,8 +1,6 @@
 ---
 title: Ausdrücke im Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837237"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke in Visual Studio-debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.
@@ -207,7 +205,7 @@ int main()
 -   Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)   
+ [Formatspezifizierer in C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md)   
+ [Formatspezifizierer in C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariablen](../debugger/pseudovariables.md)

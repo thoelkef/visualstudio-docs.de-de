@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: Firewall und keine Authentifizierung | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: Keine Authentifizierung Firewall | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.firewall.noauth
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ca9603b7b678eb288b78d09f62cc8aac5774ebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a37fc9c1df938c1cb4817b74d2ebb1d239377823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827233"
 ---
-# <a name="error-firewall-no-authentication"></a>Fehler: Firewall und "Keine Authentifizierung"
+# <a name="error-firewall-no-authentication"></a>Fehler: Firewall und „Keine Authentifizierung“
 Die Internetverbindungsfirewall auf dem Remotecomputer wurde nicht für das Remotedebuggen eingerichtet. Für das Remotedebuggen mit `No Authentication` muss der Ausnahmenliste die Datei msvsmon.exe hinzugefügt werden. Es ist möglicherweise auch erforderlich, einige IPSEC-Anschlüsse zu öffnen.  
   
 > [!NOTE]

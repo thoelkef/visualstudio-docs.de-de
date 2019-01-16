@@ -1,8 +1,6 @@
 ---
-title: 'Fehler: RPC verlangt Authentifizierung | Microsoft Docs'
-ms.custom: ''
+title: 'Fehler: RPC verlangt Authentifizierung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 214dafa5acc925434cf3569570f20ab7f3331bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 66f319ba24a52a99994e693774aa9e7c0db7757e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874406"
 ---
 # <a name="error-rpc-requires-authentication"></a>Fehler: RPC verlangt Authentifizierung
 Der Visual Studio-Debugger kann keine Verbindung mit dem Remotecomputer herstellen. Auf dem lokalen Computer ist eine RPC-Richtlinie aktiviert, die das Remotedebugging verhindert.  
@@ -34,4 +32,4 @@ Der Visual Studio-Debugger kann keine Verbindung mit dem Remotecomputer herstell
   
 3.  Starten Sie den Computer neu, damit die Registrierungsänderung wirksam wird.  
   
-4.  Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Domänenadministrator, über die **Computerkonfiguration > Administrative Vorlagen > System > Remoteprozeduraufruf > Einschränkungen für nicht authentifizierte RPC-Clients** Gruppenrichtlinie festlegen.
+4.  Wenn das Problem weiterhin besteht, wenden Sie sich an den Domänenadministrator bitten, über die **Computerkonfiguration > Administrative Vorlagen > System > Remote Procedure Call > Einschränkungen für nicht authentifizierte RPC-Clients** Gruppenrichtlinie die Einstellung.

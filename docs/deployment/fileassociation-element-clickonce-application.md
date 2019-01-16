@@ -1,8 +1,6 @@
 ---
 title: '&lt;FileAssociation&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866162"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;FileAssociation&gt; -Element (ClickOnce-Anwendung)
 Gibt eine Dateierweiterung mit der Anwendung zugeordnet werden soll.  
@@ -40,7 +38,7 @@ Gibt eine Dateierweiterung mit der Anwendung zugeordnet werden soll.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `fileAssociation`-Element ist optional. Das-Element weist die folgenden Attribute.  
+ Das `fileAssociation`-Element ist optional. Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

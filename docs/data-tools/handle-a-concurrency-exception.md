@@ -117,7 +117,7 @@ In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?d
 
 ## <a name="test-the-form"></a>Testen Sie das Formular
 
-Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bisher wie erwartet ausfällt.
+Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bisher wie erwartet ausfällt:
 
 1. Wählen Sie **F5** zum Ausführen der Anwendung.
 
@@ -166,11 +166,11 @@ Wenn Sie versuchen, ein Update ausführen und eine Ausnahme ausgelöst wird, mö
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Zeigen Sie die Auswahloptionen für den Benutzer an.
+### <a name="display-choices-to-the-user"></a>Anzeigen der Auswahloptionen für den Benutzer
 
 Durch den soeben geschriebenen Code wird die `CreateMessage`-Prozedur aufgerufen, um Fehlerinformationen für den Benutzer anzuzeigen. In dieser exemplarischen Vorgehensweise verwenden Sie ein Meldungsfeld, um die verschiedenen Versionen des Datensatzes für den Benutzer anzuzeigen. Dadurch kann der Benutzer auswählen, ob der Datensatz mit den Änderungen überschreiben oder die Bearbeitung abbricht. Wenn der Benutzer durch Klicken auf eine Schaltfläche eine Option im Meldungsfeld ausgewählt hat, wird die Antwort an die `ProcessDialogResult`-Methode übergeben.
 
-Erstellen Sie die Meldung, indem Sie dem Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein.
+Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
@@ -194,7 +194,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 3. Auf der **Ansicht** Menü wählen **Server-Explorer**.
 
-4. Erweitern Sie im Server-Explorer **die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten Tabellen**.
+4. Erweitern Sie im **Server-Explorer** die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten **Tabellen**.
 
 5. Mit der rechten Maustaste die **Kunden** Tabelle, und wählen Sie dann **Tabellendaten anzeigen**.
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsourcefiles:: Next | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cde1b47754a254c0031946bf3a7fa534d1710c40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876032"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Ruft eine angegebene Anzahl von Quelldateien in der Enumerationsfolge ab.  
@@ -27,7 +25,7 @@ Ruft eine angegebene Anzahl von Quelldateien in der Enumerationsfolge ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG            celt,  
    IDiaSourceFile** rgelt,  
    ULONG*           pceltFetched  
@@ -45,9 +43,9 @@ HRESULT Next (
  [out] Gibt die Anzahl der Quelldateien in der abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` , wenn keine weitere Quelldateien vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine weitere Quelldateien vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

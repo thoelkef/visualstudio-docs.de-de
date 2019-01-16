@@ -1,8 +1,6 @@
 ---
 title: ClickOnce-Bereitstellungsmanifest | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2391888e1955c48c1baafcd62c4337916a1a5322
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911337"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
 Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsversion für die Bereitstellung.  
@@ -34,7 +32,7 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 | - | - | - |
 | [\<Assembly >-Element](../deployment/assembly-element-clickonce-deployment.md) | Erforderlich. Ein Element der obersten Ebene. | `manifestVersion` |
 | [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Description >-Element](../deployment/description-element-clickonce-deployment.md) | Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags verwendet und die **Software** Element in der Systemsteuerung. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<Description >-Element](../deployment/description-element-clickonce-deployment.md) | Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags und des Elements **Software** in der Systemsteuerung verwendet werden. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<Bereitstellung >-Element](../deployment/deployment-element-clickonce-deployment.md) | Dies ist optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann. | `SupportUrl` |
 | [\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
@@ -52,8 +50,8 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 
  Die Bereitstellungsmanifestdatei muss über einen starken Namen verfügen und kann auch Zertifikate für die Herausgebervalidierung enthalten.  
 
-## <a name="file-name-syntax"></a>Die Syntax für Dateinamen  
- Der Name einer Bereitstellungsmanifestdatei muss mit enden die *.application* Erweiterung.  
+## <a name="file-name-syntax"></a>Dateinamenssyntax  
+ Der Name einer Bereitstellungsmanifestdatei muss mit der Erweiterung *.application* enden.  
 
 ## <a name="examples"></a>Beispiele  
  Das folgende Codebeispiel veranschaulicht ein Bereitstellungsmanifest.  
@@ -121,4 +119,4 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 ```  
 
 ## <a name="see-also"></a>Siehe auch  
- [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
+ [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)

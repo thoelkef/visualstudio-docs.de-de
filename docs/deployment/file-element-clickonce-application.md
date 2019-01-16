@@ -1,8 +1,6 @@
 ---
 title: '&lt;Datei&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b516a8e63d29f91b3404e8e62d910ca18ca69c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828302"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; -Element (ClickOnce-Anwendung)
 Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung verwendet.  
@@ -86,7 +84,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ```  
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `file`-Element ist optional. Das-Element weist die folgenden Attribute.  
+ Das `file`-Element ist optional. Das Element weist folgende Attribute auf.  
 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -94,10 +92,10 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`size`|Erforderlich. Gibt die Größe in Bytes der Datei an.|  
 |`group`|Optional, wenn die `optional` Attribut nicht angegeben oder legen Sie auf `false`; erforderlich, wenn `optional` ist `true`. Der Name der Gruppe, zu dem diese Datei gehört. Der Name kann eine Unicode-Zeichenfolge, die vom Entwickler ausgewählt werden und dient zum Herunterladen von Dateien bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment> Klasse.|  
 |`optional`|Dies ist optional. Gibt an, ob diese Datei muss herunterladen, wenn die Anwendung erstmals ausführen, oder gibt an, ob Sie nur auf dem Server verbleiben soll, bis die Anwendung bei Bedarf angefordert. Wenn `false` oder nicht definiert, die Datei wird heruntergeladen, wenn die Anwendung zuerst ausführen oder installiert wird. Wenn `true`, `group` muss angegeben werden, für das Anwendungsmanifest gültig ist. `optional` darf nicht "true" sein. wenn `writeableType` angegeben ist, mit dem Wert `applicationData`.|  
-|`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Zurzeit der einzige gültige Wert ist `applicationData`.|  
+|`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Derzeit ist `applicationData` der einzige gültige Wert.|  
 
 ## <a name="typelib"></a>Typbibliothek (typelib)  
- Die `typelib` Element ist ein optionales untergeordnetes Element des File-Elements. Das Element beschreibt die Bibliothek, zu dem die COM-Komponente gehört. Das-Element weist die folgenden Attribute.  
+ Die `typelib` Element ist ein optionales untergeordnetes Element des File-Elements. Das Element beschreibt die Bibliothek, zu dem die COM-Komponente gehört. Das Element weist folgende Attribute auf.  
 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -108,7 +106,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`flags`|Dies ist optional. Die Zeichenfolgendarstellung der Flags der Typbibliothek für diese Typbibliothek. Insbesondere sollten sie eine der "RESTRICTED", "CONTROL", "HIDDEN" und "HASDISKIMAGE" sein.|  
 
 ## <a name="comclass"></a>comClass  
- Die `comClass` Element ist ein optionales untergeordnetes Element von der `file` -Element, jedoch ist erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die Sie mithilfe von COM ohne Registrierung bereitstellen möchte Das-Element weist die folgenden Attribute.  
+ Die `comClass` Element ist ein optionales untergeordnetes Element von der `file` -Element, jedoch ist erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die Sie mithilfe von COM ohne Registrierung bereitstellen möchte Das Element weist folgende Attribute auf.  
 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

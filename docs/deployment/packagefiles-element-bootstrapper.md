@@ -1,8 +1,6 @@
 ---
 title: '&lt;"PackageFiles"&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990346"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;"PackageFiles"&gt; -Element (Bootstrapper)
 Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für die Installation ausgeführt wird, als Ergebnis des definieren die `Command` Element.  
@@ -79,4 +77,4 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
 ## <a name="see-also"></a>Siehe auch  
  [\<Produkt >-Element](../deployment/product-element-bootstrapper.md)   
  [\<Package >-Element](../deployment/package-element-bootstrapper.md)   
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

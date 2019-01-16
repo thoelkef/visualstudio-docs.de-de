@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige | Microsoft Docs'
-ms.custom: ''
+title: 'Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926637"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Gewusst wie: Starten und Beenden der Meldungsprotokollanzeige
-Wenn eine [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster aktiv ist, eine **Start Logging** oder **Protokollierung beenden** Auswahl angezeigt wird, auf die Spy++- **Nachrichten** im Menü und die entsprechende **Start Logging** oder **Protokollierung beenden** Symbolleisten-Schaltfläche aktiviert wird.  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige
+Wenn eine [Meldungsansicht](../debugger/messages-view.md) Fenster aktiv ist, eine **Protokollierung starten** oder **Protokollierung beenden** Auswahl wird angezeigt, auf die Spy++- **Nachrichten** im Menü und die entsprechende **Protokollierung starten** oder **Protokollierung beenden** Symbolleisten-Schaltfläche aktiviert wird.  
   
 ### <a name="to-start-the-message-log-display"></a>Starten der Meldungsprotokollanzeige  
   
-1.  Aus der **Nachrichten** Menü wählen **Start Logging**.  
+1.  Von der **Nachrichten** Menü wählen **Protokollierung starten**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Zum Beenden der Meldungsprotokollanzeige  
   
-1.  Aus der **Nachrichten** Menü wählen **Protokollierung beenden**.
+1.  Von der **Nachrichten** Menü wählen **Protokollierung beenden**.

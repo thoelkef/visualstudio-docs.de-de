@@ -1,8 +1,6 @@
 ---
 title: Debuggen mehrerer Prozesse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968578"
 ---
 # <a name="debug-multiple-processes"></a>Debuggen mehrerer Prozesse
 
@@ -50,7 +48,7 @@ So debuggen Sie ein Projekt aus **Projektmappen-Explorer** ohne dass sie das Sta
    
 1. Wählen Sie **aktuelle Auswahl**, **einzelnes Startprojekt** und eine Projektdatei oder **mehrere Startprojekte**. 
 
-   Bei Auswahl von **mehrere Startprojekte**, können Sie die Startreihenfolge und die Aktion für jedes Projekt zu ändern: **starten**, **Starten ohne debugging**, oder **Keine**.  
+   Bei Auswahl von **mehrere Startprojekte**, können Sie die Startreihenfolge und die Aktion für jedes Projekt zu ändern: **Starten Sie**, **Starten ohne debugging**, oder **keine**.  
    
 1. Wählen Sie **übernehmen**, oder **OK** zu übernehmen und das Dialogfeld zu schließen. 
 
@@ -122,7 +120,7 @@ Die folgende Tabelle beschreibt die Verhalten des Debuggens Befehle, wenn die **
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Suchen der Quell- und Symboldateien (.pdb)  
 Um den Quellcode eines Prozesses zu navigieren, werden von der Debugger Zugriff auf die Quelldateien und Symboldateien erforderlich. Weitere Informationen finden Sie unter [Specify symbol (.pdb) and source files (Angeben von Symbol- und Quelldateien (.pdb))](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-Wenn Sie die Dateien für einen Prozess zugreifen können, können Sie navigieren, indem die **Disassembly** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md).  
+Wenn Sie die Dateien für einen Prozess zugreifen können, können Sie navigieren, indem die **Disassembly** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md).  
 
 ###  <a name="BKMK_Switch_between_processes"></a> Wechseln zwischen Prozessen  
 

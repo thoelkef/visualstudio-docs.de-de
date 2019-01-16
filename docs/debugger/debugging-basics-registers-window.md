@@ -1,8 +1,6 @@
 ---
 title: Über das Fenster "Register" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: a08b7f3731de490443cc56a418c75974bf9ff722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919533"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Über das Fenster "Register" in Visual Studio (C#, C++, Visual Basic F#)
 
@@ -52,5 +50,5 @@ Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Di
  Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** in Gruppen organisiert. Wenn Sie mit der rechten Maustaste in das Fenster **Register** klicken, wird ein Kontextmenü mit einer Liste von Gruppen geöffnet, die Sie je nach Bedarf ein- oder ausblenden können.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden Sie das Fenster "Register"](../debugger/how-to-use-the-registers-window.md)   
+ [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)   
  [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

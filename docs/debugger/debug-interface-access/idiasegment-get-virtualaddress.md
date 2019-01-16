@@ -1,8 +1,6 @@
 ---
 title: 'Idiasegment:: Get_virtualaddress | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f2390e5afedfe2db6abb38c014ce58eeb72778
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 70373ef0b2024cc0650d8b8a5b1607bc86b6350d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819492"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
 Ruft die virtuelle Adresse (VA), der den Anfang des Abschnitts ab.  
@@ -27,7 +25,7 @@ Ruft die virtuelle Adresse (VA), der den Anfang des Abschnitts ab.
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_virtualAddress (
  [out] Gibt die VA des Anfangs des Abschnitts zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

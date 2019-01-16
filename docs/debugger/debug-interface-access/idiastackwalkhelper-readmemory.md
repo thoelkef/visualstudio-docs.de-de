@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::readMemory | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7d12d1da983a69f71d96bb06271bd3a971a16cbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825736"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Liest einen Block von Daten aus der ausführbaren Datei Image im Arbeitsspeicher.  
@@ -27,7 +25,7 @@ Liest einen Block von Daten aus der ausführbaren Datei Image im Arbeitsspeicher
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT readMemory(   
+HRESULT readMemory(   
    enum MemoryTypeEnum type,  
    ULONGLONG           va,  
    DWORD               cbData,  
@@ -40,7 +38,7 @@ HRESULT readMemory(
  `type`  
  [in] Ein Wert aus der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumeration, die den Typ des Arbeitsspeichers zu lesen.  
   
- VA  
+ va  
  [in] Virtuelle Adresse in das Image aus dem gelesen werden soll.  
   
  `cbData`  

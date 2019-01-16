@@ -1,8 +1,6 @@
 ---
 title: 'Idialinenumber:: Get_linenumberend | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0dfff78c54c1e051e04c33ae73d82691bf0d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 73d20175422a78a2b84c1b969f7a9776a45b2522
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951536"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Ruft ab, die 1-basierte Zeilennummer, an dem die Anweisung oder den Ausdruck endet.  
@@ -27,7 +25,7 @@ Ruft ab, die 1-basierte Zeilennummer, an dem die Anweisung oder den Ausdruck end
 ## <a name="syntax"></a>Syntax  
   
 ```C++  
-HRESULT get_lineNumberEnd (   
+HRESULT get_lineNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lineNumberEnd (
  [out] Gibt die Zeilennummer, an dem endet die Anweisung oder den Ausdruck zurück. Wenn der Wert 0 (null) ist, ist die End-Informationen nicht vorhanden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

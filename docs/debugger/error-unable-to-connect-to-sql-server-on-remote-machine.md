@@ -1,8 +1,6 @@
 ---
 title: 'Fehler: Keine Verbindung mit SQL Server auf dem Remotecomputer herstellen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlle_dcom_accessdenied
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d714bf188d995fa786fecd1038699f16743a4059
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858525"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Fehler: Mit dem SQL-Server auf dem Remotecomputer "" konnte keine Verbindung hergestellt werden.
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Fehler: Mit SQL Server auf dem Remotecomputer konnte keine Verbindung hergestellt werden
 Keine Verbindung mit SQL Server auf dem Remotecomputer *Namen*. Zugriff verweigert. Vergewissern Sie sich, dass Sie den Remotedebugger auf dem Remotecomputer installiert haben. Wenn sich der Remotecomputer nicht in einer Domäne befindet oder Visual Studio als lokales Konto ausgeführt wird, muss auf dem Remotecomputer ein Konto vorhanden sein, dessen Benutzername und Kennwort mit dem lokalen Konto übereinstimmen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  

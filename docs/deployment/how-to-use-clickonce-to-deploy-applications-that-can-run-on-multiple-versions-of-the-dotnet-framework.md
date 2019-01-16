@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden kann | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Mithilfe von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden kann | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943115"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Gewusst wie: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden können
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
 Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framework ausgerichtet ist, mithilfe der ClickOnce-bereitstellungstechnologie. Dies erfordert, dass Sie generieren und aktualisieren die Anwendungs- und Bereitstellungsmanifeste.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Um die Anwendungs- und Bereitstellungsmanifeste zu generieren.  
   
--   Verwenden Sie den Webpublishing-Assistenten oder die Seite "Veröffentlichen", Projekt-Designer zum Veröffentlichen der Anwendung und generieren die Anwendung und der Bereitstellungsmanifestdateien an. Weitere Informationen finden Sie unter [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oder [Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md).  
+-   Verwenden Sie den Webpublishing-Assistenten oder die Seite "Veröffentlichen", Projekt-Designer zum Veröffentlichen der Anwendung und generieren die Anwendung und der Bereitstellungsmanifestdateien an. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oder [Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>So ändern Sie das Bereitstellungsmanifest zum Auflisten der mehrere Versionen von .NET Framework  
   
@@ -59,10 +57,10 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
   
     |.NET Framework-Version|XML|  
     |----------------------------|---------|  
-    |4-client|\<Framework "targetversion" = "4.0" Profile = "Client" SupportedRuntime = "4.0.30319" / >|  
-    |4-vollständig|\<Framework "targetversion" = "4.0" Profile = "Full" SupportedRuntime = "4.0.30319" / >|  
-    |3.5-client|\<Framework "targetversion" = "3.5" Profile = "Client" SupportedRuntime = "2.0.50727" / >|  
-    |3.5 vollständige|\<Framework "targetversion" = "3.5" Profile = "Full" SupportedRuntime = "2.0.50727" / >|  
+    |4 Client|\<Framework "targetversion" = "4.0" Profile = "Client" SupportedRuntime = "4.0.30319" / >|  
+    |4 Full|\<Framework "targetversion" = "4.0" Profile = "Full" SupportedRuntime = "4.0.30319" / >|  
+    |3.5 Client|\<Framework "targetversion" = "3.5" Profile = "Client" SupportedRuntime = "2.0.50727" / >|  
+    |3.5 Full|\<Framework "targetversion" = "3.5" Profile = "Full" SupportedRuntime = "2.0.50727" / >|  
     |3.0|\<Framework "targetversion" = "3.0" SupportedRuntime = "2.0.50727" / >|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>So ändern Sie die Datei "App.config", um die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste  
@@ -75,10 +73,10 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
   
     |.NET Framework Common Language Runtime-version|XML|  
     |------------------------------------|---------|  
-    |4-client|\<SupportedRuntime Version = "v4.0.30319" Sku = ". NETFramework, Version = v4. 0, Profil Client = "/ >|  
-    |4-vollständig|\<SupportedRuntime Version = "v4.0.30319" Sku = ". NETFramework, Version = v4. 0 "/ >|  
-    |3.5 vollständige|\<SupportedRuntime version="v2.0.50727"/ >|  
-    |3.5-client|\<SupportedRuntime Version = "v2.0.50727" Sku = "Client" / >|  
+    |4 Client|\<SupportedRuntime Version = "v4.0.30319" Sku = ". NETFramework, Version = v4. 0, Profil Client = "/ >|  
+    |4 Full|\<SupportedRuntime Version = "v4.0.30319" Sku = ". NETFramework, Version = v4. 0 "/ >|  
+    |3.5 Full|\<SupportedRuntime version="v2.0.50727"/ >|  
+    |3.5 Client|\<SupportedRuntime Version = "v2.0.50727" Sku = "Client" / >|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>So ändern Sie das Anwendungsmanifest, um abhängige Assemblys als .NET Framework-Assemblys zu kennzeichnen.  
   
@@ -102,7 +100,7 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste  
   
--   Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [Vorgehensweise: Signieren Sie Anwendungs- und Bereitstellungsmanifeste erneut](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   

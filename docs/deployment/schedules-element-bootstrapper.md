@@ -1,8 +1,6 @@
 ---
 title: '&lt;Zeitpläne&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 850c94274f783c306fe31fde4d86c9563c928adf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894297"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Zeitpläne&gt; -Element (Bootstrapper)
 Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten, auf welche Befehle, die definiert, durch Definieren der `Command` Element ausgeführt werden soll.  
@@ -42,7 +40,7 @@ Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Schedules` Element ist ein untergeordnetes Element des der `Product` Element. Jede `Product` Element möglicherweise mindestens eine `Schedules` Element. Die `Schedules` Element besitzt keine Attribute.  
+ Die `Schedules` Element ist ein untergeordnetes Element des der `Product` Element. Jede `Product` Element möglicherweise mindestens eine `Schedules` Element. Das `Schedules` -Element weist keine Attribute auf.  
   
 ## <a name="schedule"></a>Zeitplan  
  Die `Schedule` Element ist ein untergeordnetes Element des der `Schedules` Element. Ein `Schedules` Element benötigen mindestens einen `Schedule` Element.  
@@ -66,4 +64,4 @@ Die `Schedules` Element enthält `Schedule` Elementen, die bestimmte Zeitpunkten
   
 ## <a name="see-also"></a>Siehe auch  
  [\<Produkt >-Element](../deployment/product-element-bootstrapper.md)   
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

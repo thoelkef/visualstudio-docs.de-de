@@ -1,8 +1,6 @@
 ---
-title: AddMessage | Microsoft Docs
-ms.custom: ''
+title: AddMessage | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de3460a345dba21e3a8f481adb510b9e3bdd4990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6555072bcbebe24011ca0701f02f48bc1703c34a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985734"
 ---
 # <a name="addmessage"></a>AddMessage
-Fügt eine benutzerdefinierte Meldung an das Grafikdiagnose *HUD* (Head-Up-Display).  
+Fügt dem Grafikdiagnose-*HUD* (Head-Up Display) eine benutzerdefinierte Meldung hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,4 +33,4 @@ void AddMessage(
 ## <a name="remarks"></a>Hinweise  
  Das Grafikdiagnose-HUD wird in der linken oberen Ecke der App angezeigt, die unter der Grafikdiagnose ausgeführt wird. Es werden Laufzeitinformationen über die App und die Erfassung von Grafikinformationen sowie Meldungen angezeigt, die hinzugefügt werden, indem diese Funktion aufgerufen wird.  
   
- Um die HUD eine Meldung hinzugefügt haben, müssen Sie nicht aktiv Grafikinformationen erfasst werden – d. h. eine Nachricht über eine Instanz hinzugefügt werden kann die `VsgDbg` -Klasse, aber die [Init](init.md) Member-Funktion werden keine zuerst aufgerufen werden. Meldungen werden nur im HUD angezeigt, sie werden nicht in der Grafikprotokolldatei aufgezeichnet.
+ Um dem HUD eine Meldung hinzuzufügen, müssen Sie Grafikinformationen nicht aktiv erfassen – d.h. eine Meldung kann durch eine Instanz der `VsgDbg`-Klasse hinzugefügt werden, die Memberfunktion [Init](init.md) muss jedoch nicht zuerst aufgerufen werden. Meldungen werden nur im HUD angezeigt, sie werden nicht in der Grafikprotokolldatei aufgezeichnet.

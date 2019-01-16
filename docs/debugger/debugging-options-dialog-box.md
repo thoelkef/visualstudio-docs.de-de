@@ -1,8 +1,6 @@
 ---
-title: Debuggen, Dialogfeld "Optionen" | Microsoft Docs
-ms.custom: ''
+title: Debuggen, Dialogfeld "Optionen" | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935111"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
-Die **Debuggen** Ordner in der **Optionen** Dialogfeld auf die **Tools** Menü sind die folgenden Seiten, die es ermöglichen Ihnen das Festlegen der Debugger Tooloptionen.  
+Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.  
   
 -   [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -39,7 +37,7 @@ Die **Debuggen** Ordner in der **Optionen** Dialogfeld auf die **Tools** Menü s
   
 -   [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Symbole, Debuggen, Optionen (Dialogfeld)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [Symbole, Debuggen, Dialogfeld „Optionen“](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md) [Debuggen in Visual Studio](../debugger/index.md)  

@@ -1,8 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen ein benutzerdefiniertes Bootstrappers einer datenschutzeingabeaufforderung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers einer datenschutzeingabeaufforderung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -21,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882720"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers einer datenschutzeingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und die Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden, die dieses Verhalten zu gestatten, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob gewähren der Berechtigung für die Anwendung zum automatischen Aktualisieren verwendet wird. Wenn die Anwendung nicht zulässig ist, automatisch zu aktualisieren, wird es nicht installiert.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   Visual Studio 2010.  
@@ -129,7 +127,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
        > [!NOTE]
        >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-       Visual C# -Code nur für Entwickler:  
+       Für visuelle C# nur für Entwickler:  
   
        Öffnen der *"Program.cs"* Codedatei, und fügen Sie den folgenden Code hinzu.  
   
@@ -148,9 +146,9 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 -   Ein Dokument für die Software-Lizenzbedingungen.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Erstellen Sie das Bootstrapperverzeichnis  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Beim Erstellen des Bootstrappers-Verzeichnisses  
   
-1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in der *SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft*.  
+1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in die *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Möglicherweise Administratorrechte verfügen, um diesen Ordner zu erstellen.  
@@ -160,7 +158,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
     > [!NOTE]
     >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Beispielsweise können Sie die Unterverzeichnisse für den fr und de Gebietsschemas hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und Language Packs bei Bedarf enthalten.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Erstellen Sie die product.xml-Manifestdatei  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Die product.xml-manifest-Datei erstellen  
   
 1.  Erstellen Sie eine Textdatei namens *product.xml*.  
   
@@ -192,7 +190,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 3.  Speichern Sie die Datei in das Bootstrapperverzeichnis UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Erstellen Sie das Manifest "Package.xml" Lizenzbedingungen-Datei und der software  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Zum Erstellen der manifest-Datei "Package.xml" und die Software-Lizenzbedingungen  
   
 1.  Erstellen Sie eine Textdatei namens *"Package.xml"*.  
   
@@ -236,7 +234,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **Voraussetzungen**.  
   
@@ -254,7 +252,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
@@ -266,13 +264,13 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 6.  Lesen Sie die Software-Lizenzbedingungen, und klicken Sie dann auf **Accept**.  
   
-     Die Anwendung für die Update-Zustimmungsdialogfeld angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
+     Die Update-Zustimmungsdialogfeld-Anwendung wird angezeigt und zeigt den folgenden Text: Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
   
 7.  Schließen Sie die Anwendung aus, oder klicken Sie auf "Abbrechen".  
   
      Die Anwendung wird ein Fehler angezeigt: Fehler beim Installieren der Systemkomponenten für *ApplicationName*. Setup kann nicht fortgesetzt, bis alle Systemkomponenten erfolgreich installiert wurden.  
   
-8.  Klicken Sie auf Details, um die folgende Fehlermeldung angezeigt: Komponente aktualisieren-Zustimmungsdialogfeld Fehler bei der Installation die folgende Fehlermeldung angezeigt: "die Vereinbarung für die automatische Aktualisierung wird nicht akzeptiert." Die folgenden Komponenten konnten nicht installiert:-Update-Zustimmungsdialogfeld  
+8.  Klicken Sie auf Details, um die folgende Fehlermeldung angezeigt: Komponente Update-Zustimmungsdialogfeld Fehler bei der Installation die folgende Fehlermeldung angezeigt: "Die Vereinbarung für die automatische Aktualisierung wird nicht akzeptiert." Die folgenden Komponenten konnten nicht installiert:-Update-Zustimmungsdialogfeld  
   
 9. Klicken Sie auf **Schließen**.  
   
@@ -280,7 +278,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
@@ -292,7 +290,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 6.  Lesen Sie die Software-Lizenzbedingungen, und klicken Sie dann auf **Accept**.  
   
-     Die Anwendung für die Update-Zustimmungsdialogfeld angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
+     Die Update-Zustimmungsdialogfeld-Anwendung wird angezeigt und zeigt den folgenden Text: Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
   
 7.  Klicken Sie auf **ich stimme zu**, und klicken Sie dann auf **fortsetzen**.  
   
@@ -301,8 +299,8 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
 8.  Wenn das Dialogfeld "Anwendung installieren" angezeigt wird, klicken Sie auf **installieren**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorbedingungen für die anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)   
+ [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)   
  [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)   
- [Gewusst wie: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
- [Gewusst wie: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
- [Schemareferenz für Produkt- und Paketdateien](../deployment/product-and-package-schema-reference.md)
+ [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
+ [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

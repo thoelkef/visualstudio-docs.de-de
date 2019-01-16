@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4567ab9b72ccf827f8fad0bd35654210a4457ad4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21fe434c1128c9f0b81455e010872ccaa49790f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871624"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Vorgehensweise: Ändern der Sprache für die Veröffentlichung einer ClickOnce-Anwendung
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Vorgehensweise: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung
 
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung, die Benutzeroberfläche während der Standardwerte für die Installation in der Sprache und Kultur des Entwicklungscomputers angezeigt. Wenn Sie eine lokalisierte Anwendung veröffentlichen, müssen Sie eine Sprache und Kultur, die lokalisierte Version entsprechend an. Dies richtet sich nach der `Publish language` -Eigenschaft für Ihr Projekt.
 
@@ -49,4 +47,4 @@ Die `Publish language` Eigenschaft kann festgelegt werden, der **Veröffentlichu
 ## <a name="see-also"></a>Siehe auch
 
 - [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
-- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
