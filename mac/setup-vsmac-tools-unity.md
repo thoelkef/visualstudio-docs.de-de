@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027327"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315526"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Einrichten von Visual Studio für Mac-Tools für Unity
 
@@ -44,7 +44,7 @@ Wenn Sie bereits Unity 5.6.1 oder höher installiert haben, Visual Studio für M
 
 * Laden Sie unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/) Visual Studio für Mac herunter.
 * Visual Studio für Mac-Tools für Unity werden automatisch während des Installationsprozesses installiert.
-* Weitere Informationen zur Installation finden Sie im [Installationshandbuch](installation.md).
+* Weitere Informationen zur Installation finden Sie im [Installationshandbuch](/visualstudio/mac/installation/?view=vsmac-2017).
 
 > [!NOTE]
 > Visual Studio für Mac-Tools für Unity erfordert Unity 5.6.1 oder höher. Überprüfen Sie, ob Visual Studio-Tools für Unity in Ihrer Version von Unity aktiviert sind, indem Sie im Unity-Menü auf **About Unity** (Informationen zu Unity) klicken und unten links im Dialogfeld nach dem Text „Visual Studio-Tools für Unity aktiviert“ suchen.

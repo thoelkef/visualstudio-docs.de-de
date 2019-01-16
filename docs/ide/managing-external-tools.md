@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904179"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154062"
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
 
@@ -65,8 +65,8 @@ Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, 
 |Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
 |Zielerweiterung|$(TargetExt)|Die Dateinamenerweiterung zu erstellenden Elements.|
 |Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert).|
-|Projektverzeichnis|$(ProjDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|
-|Projektdateiname|$(ProjFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|
+|Projektverzeichnis|$(ProjectDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|
+|Projektdateiname|$(ProjectFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|
 |Projektmappenverzeichnis|$(SolutionDir)|Das Verzeichnisses der aktuellen Projektmappe (Laufwerk + Pfad).|
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|
 
