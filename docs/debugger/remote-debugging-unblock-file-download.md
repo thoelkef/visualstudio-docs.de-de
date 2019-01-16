@@ -1,8 +1,6 @@
 ---
 title: Entsperren Sie den Download der Remotetools
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905344"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Vorgehensweise: entsperren Sie den Download der Remotetools unter Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Vorgehensweise: Entsperren Sie den Download der Remotetools unter Windows Server
 
 Die standardsicherheitseinstellungen in Internet Explorer unter Windows Server können zum Herunterladen von Komponenten wie z. B. die Remotetools zeitaufwändige gestalten.
 
@@ -34,7 +32,7 @@ Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
 
 * Laden Sie die Remoteserver-Verwaltungstools direkt auf Windows Server, und akzeptieren Sie die aufforderungen, um den vertrauenswürdigen Sites hinzufügen. Moderne Websites enthalten häufig viele Ressourcen von Drittanbietern, damit dies zahlreiche Anweisungen führen kann. Darüber hinaus müssen alle umgeleiteten Links manuell hinzugefügt werden. Sie können auch einige der vertrauenswürdigen Sites hinzufügen, bevor Sie den Download ab. Wechseln Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Websites** und fügen Sie den folgenden Websites hinzu.
 
-  * VisualStudio.Microsoft.com
+  * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
   * Informationen zu: leer
 
@@ -43,10 +41,10 @@ Herunterladen von Tools unter Windows Server, empfehlen wir eine der folgenden:
   * microsoft.com
   * go.microsoft.com
   * 0download.microsoft.com
-  * My.VisualStudio.com
-  * "Login.microsoftonline.com"
+  * my.visualstudio.com
+  * login.microsoftonline.com
   * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
+  * secure.aadcdn.microsoftonline-p.com
   * msft.STS.Microsoft.com
   * auth.GFX.ms
   * app.vssps.visualstudio.com
