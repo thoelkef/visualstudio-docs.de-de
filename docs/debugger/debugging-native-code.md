@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870767"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269514"
 ---
 # <a name="debugging-native-code"></a>Debuggen von nativem Code
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md)).  
@@ -67,9 +67,9 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
 
  [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) erläutert, wie Sie native und verwaltete DLLs zu debuggen.
   
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)  
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von nativem Code, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)  
- [Debuggen in Visual Studio](../debugger/index.md) [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+ [Debuggen in Visual Studio](../debugger/index.md) 

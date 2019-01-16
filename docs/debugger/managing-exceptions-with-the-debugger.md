@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094813"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204417"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
-Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger anweisen, welche Ausnahmen oder Sätze von Ausnahmen auf unterbrochen, und an diesem Punkt des Debuggers zum unterbrechen soll. Wenn der Debugger unterbrochen wird, wird es Sie, wo die Ausnahme ausgelöst wurde. Sie können auch hinzufügen oder Löschen von Ausnahmen. Mit einer Lösung in Visual Studio geöffnet ist, verwenden Sie **Debuggen > Windows > Ausnahmeeinstellungen** zum Öffnen der **Ausnahmeeinstellungen** Fenster.
+Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger anweisen, welche Ausnahmen oder Sätze von Ausnahmen auf unterbrochen, und an diesem Punkt des Debuggers zum unterbrechen soll (d. h. im Debugger angehalten). Wenn der Debugger unterbrochen wird, wird es Sie, wo die Ausnahme ausgelöst wurde. Sie können auch hinzufügen oder Löschen von Ausnahmen. Mit einer Lösung in Visual Studio geöffnet ist, verwenden Sie **Debuggen > Windows > Ausnahmeeinstellungen** zum Öffnen der **Ausnahmeeinstellungen** Fenster.
 
-Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Außerdem erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
+Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Wenn Sie müssen wissen, wie zum Hinzufügen von Ereignishandlern für Ausnahmen finden Sie unter [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md). Darüber hinaus erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
 
 Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster **Ausgabe**. Es kann die Ausführung unterbrechen, in den folgenden Fällen:
 

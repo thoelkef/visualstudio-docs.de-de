@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f8827bea4ad3819c7915c34793dfe3b2164d5bb
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923035"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269630"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
@@ -37,7 +37,7 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
  Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen zu ermöglichen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+ [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
+ [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)  
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)  
+ [Debuggen in Visual Studio](../debugger/index.md)

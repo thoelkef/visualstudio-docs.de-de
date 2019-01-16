@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874218"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269261"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Vorgehensweise: RPC-Debuggen von COM-Clients und -Servern
 Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden, um COM-Client-/Server-Anwendungen zu debuggen. Vor der Verwendung muss RPC-Debuggen allerdings aktiviert werden. Bei aktiviertem RPC-Debuggen wird der Debugger an den Server angefügt, wenn Sie vom Client in den Serveraufruf springen. Der Code kann nun debuggt werden. Wenn der Debugger angefügt wurde, können alle Debuggerfeatures sowohl für Client- als auch für Serverprozesse verwendet werden.  
@@ -54,4 +54,5 @@ Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)  
- [Debuggen in Visual Studio](../debugger/index.md) [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+ [Debuggen in Visual Studio](../debugger/index.md)  
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

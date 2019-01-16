@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936505"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204468"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung 
 
@@ -30,7 +30,7 @@ Während des Debuggens, können Sie **Watch** Windows und **Schnellüberwachung*
 
 **Sehen Sie sich** Windows können mehrere Variablen zu einem Zeitpunkt während des Debuggens angezeigt. Die **Schnellüberwachung** Dialogfeld zeigt eine einzelne Variable an, und muss geschlossen werden, bevor Sie mit dem Debuggen fortfahren kann.
 
-Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
+Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Beobachten Sie Variablen mit einem Überwachungsfenster
 
