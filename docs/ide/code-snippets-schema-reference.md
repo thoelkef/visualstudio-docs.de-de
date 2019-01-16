@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864713"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315591"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -547,7 +547,7 @@ Gibt die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt a
 |[Code-Element](../ide/code-snippets-schema-reference.md#code-element)|Erforderliches Element. Gibt den Code an, den Sie in eine Dokumentationsdatei einfügen möchten. Es muss genau ein `Code`-Element in einem `Snippet`-Element vorhanden sein.|
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Optionales Element. Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschnitts darstellen. Ein `Declarations`-Element kann kein oder ein `Snippet`-Element enthalten.|
 |[Imports-Element](../ide/code-snippets-schema-reference.md#imports-element)|Optionales Element. Gruppiert einzelne `Import`-Elemente. Ein `Imports`-Element kann kein oder ein `Snippet`-Element enthalten.|
-||Optionales Element. Gruppiert einzelne `Reference`-Elemente. Ein `References`-Element kann kein oder ein `Snippet`-Element enthalten.|
+|[References-Element](../ide/code-snippets-schema-reference.md#references-element)|Optionales Element. Gruppiert einzelne `Reference`-Elemente. Ein `References`-Element kann kein oder ein `Snippet`-Element enthalten.|
 
 |Übergeordnetes Element|Beschreibung|
 | - |-----------------|
