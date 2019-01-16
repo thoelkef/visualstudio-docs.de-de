@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820856"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269606"
 ---
 # <a name="com-and-activex-debugging"></a>Debuggen von COM und ActiveX
 Dieser Abschnitt enthält Tipps zum Debuggen von COM‑Anwendungen und ActiveX-Steuerelementen.  
@@ -42,7 +42,7 @@ Dieser Abschnitt enthält Tipps zum Debuggen von COM‑Anwendungen und ActiveX-S
  Listet Viewer und Beispielanwendungen auf, die beim Debuggen der COM-Anwendung u. U. hilfreich sind.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)  
+ [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von Visual C++-Projekten, Debuggen von COM und ActiveX, Debuggen von DLLs, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.  
   
 ## <a name="see-also"></a>Siehe auch  

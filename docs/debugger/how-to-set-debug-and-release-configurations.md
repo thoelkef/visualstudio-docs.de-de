@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837757"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204346"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
 
 In der Debugkonfiguration kompiliert Ihr Programm mit vollständigen symbolischen Debuginformationen und ohne Optimierung. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.
 
-Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Debuginformationen können in PDB-Dateien generiert werden, [je nachdem, welche Compileroptionen verwendet werden](#BKMK_symbols_release). Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
+Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Für verwalteten Code und C++-Code, Debuginformationen in PDB-Dateien generiert werden kann [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
 
 Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
 

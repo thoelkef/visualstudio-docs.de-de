@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227706"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Überprüfen Sie Ihre app mit IntelliTrace verlaufsbezogenes Debuggen in Visual Studio
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Überprüfen Sie Ihre app mit IntelliTrace verlaufsbezogenes Debuggen in Visual Studio (C#, Visual Basic, C++)
+
 Sie können [verlaufsbezogenes debugging](../debugger/historical-debugging.md) rückwärts und Vorwärts durch die Ausführung Ihrer Anwendung und ihren Status überprüfen.  
   
 Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden, jedoch nicht in der Professional oder Community Edition.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Navigieren Sie in Ihrem Code mit verlaufsbezogenem debugging  
+## <a name="navigate-your-code-with-historical-debugging"></a>Navigieren Sie in Ihrem Code mit verlaufsbezogenem debugging
+
  Beginnen wir mit einem einfachen Programm, das einen Fehler aufweist. Fügen Sie in einer C#-Konsolenanwendung folgenden Code hinzu:  
   
 ```csharp  

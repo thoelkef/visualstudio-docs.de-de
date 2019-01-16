@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f90e6db9a86457d0a9a0c7c4f61edac5d997414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823916"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154191"
 ---
 # <a name="allocation-hook-functions"></a>Hookfunktionen für Reservierungen
 Einer Reservierungshookfunktion, installiert mit [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), wird jedes Mal aufgerufen Arbeitsspeicher reserviert, neu zugeordnet oder freigegeben wird. Sie können diese Art von Hook für unterschiedliche Zwecke verwenden. Verwenden Sie, um zu testen, wie eine Anwendung nicht genügend Arbeitsspeicher Situationen, z. B. verhält, Reservierungsmuster überprüfen oder protokollieren Sie Reservierungsinformationen für die spätere Analyse.  

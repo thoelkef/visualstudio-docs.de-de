@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880597"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154217"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
 
@@ -25,7 +25,7 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und D
 
 - Cloud-Explorer
 
-   Installieren Sie dieses Fenster manuell wie Visual Studio-Erweiterung dazu **Tools** > **Erweiterungen und Updates** > **Online**  >  **Visual Studio Marketplace unter**. Bietet speziellen Funktionen zum Durchsuchen und eine Verbindung mit Azure-Dienste.
+   Installieren Sie dieses Fenster manuell wie Visual Studio-Erweiterung dazu **Tools** > **Erweiterungen und Updates** > **Online**  >  **Visual Studio Marketplace**. Bietet speziellen Funktionen zum Durchsuchen und eine Verbindung mit Azure-Dienste.
 
 - SQL Server-Objekt-Explorer
 
