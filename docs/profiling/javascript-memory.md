@@ -20,10 +20,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53962375"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
@@ -98,7 +98,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 -   [Anzeigen eines Momentaufnahmevergleichs](#view-a-snapshot-diff). Es werden differenzielle Werte zwischen Momentaufnahmen angezeigt. Diese Ansichten zeigen Unterschiede in der Objektgröße und -anzahl an.  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Öffnen Sie die App in Visual Studio.  
   
