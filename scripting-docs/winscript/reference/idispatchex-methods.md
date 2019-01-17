@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx-Methode | Microsoft Docs
+title: IDispatchEx-Methode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,34 +14,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727640"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347800"
 ---
 # <a name="idispatchex-methods"></a>IDispatchEx-Methode
-Es folgen IDispatchEx-Methode.  
+Im folgenden werden die IDispatchEx-Methode.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
- Löscht ein Element über die DISPID an.  
+ Löscht ein Element von DISPID an.  
   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)  
  Löscht ein Element anhand des Namens an.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Ordnet die Mitgliedsname für eine einzelnes seiner entsprechenden DISPID, die dann bei nachfolgenden Aufrufen IDispatchEx::InvokeEx verwendet werden kann.  
+ Ordnet einen Namen für die einzelnen Member der entsprechenden DISPID, die dann bei nachfolgenden Aufrufen IDispatchEx::InvokeEx verwendet werden kann.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
  Ruft den Namen eines Members ab.  
   
  [IDispatchEx::GetMemberProperties](../../winscript/reference/idispatchex-getmemberproperties.md)  
- Ruft die Eigenschaften eines Elements ab.  
+ Ruft ein Element der Eigenschaften ab.  
   
  [IDispatchEx::GetNameSpaceParent](../../winscript/reference/idispatchex-getnamespaceparent.md)  
- Ruft die Schnittstelle für das übergeordnete Namespace eines Objekts ab.  
+ Ruft die Schnittstelle für den übergeordneten Namespace eines Objekts ab.  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
  Listet die Member des Objekts.  

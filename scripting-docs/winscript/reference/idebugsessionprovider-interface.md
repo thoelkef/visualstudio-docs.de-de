@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider-Schnittstelle | Microsoft Docs
+title: IDebugSessionProvider-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6d17546d5461a1ad76b144bf2652672ab4aa675
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727140"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345148"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider-Schnittstelle
-Die primäre Schnittstelle bereitgestellt, die von einem Debugger IDE zum Aktivieren von Host- und Sprache initiiert Debuggen. Dabei wird eine Debugsitzung für eine ausgeführte Anwendung. Diese Schnittstelle wird von der Computer-Manager implementiert.  
+Die primäre Schnittstelle bereitgestellt, die von einem Debugger-IDE, um den Host und der Sprache ermöglichen initiiert Debuggen. Er richtet eine Debugsitzung für eine ausgeführte Anwendung. Diese Schnittstelle wird von computerbasierten Debug-Manager implementiert.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSessionProvider` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSessionProvider` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Startet eine Debugsitzung mit der angegebenen Anwendung an.|
+|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Startet eine Debugsitzung mit der angegebenen Anwendung.|

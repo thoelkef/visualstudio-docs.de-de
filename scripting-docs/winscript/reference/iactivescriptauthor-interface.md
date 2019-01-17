@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor-Schnittstelle | Microsoft Docs
+title: IActiveScriptAuthor-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,36 +14,36 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37abb356ab24d64a05a1f1209809d63e2f55e228
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bd9d9c2a330ee72c6a843cd42586a09bb1d51e3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645770"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346370"
 ---
 # <a name="iactivescriptauthor-interface"></a>IActiveScriptAuthor-Schnittstelle
-Stellt die Erstellung von Diensten, einschließlich IntelliSense und die Sortierung der Informationen dar.  
+Stellt das Erstellen von Diensten, einschließlich IntelliSense und die Sortierung der Informationen dar.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptAuthor` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptAuthor` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)|Fügt den Namen eines Elements auf der Stammebene an das Skript des Moduls Namespace erstellen. Ein *Element auf der Stammebene* ist ein Objekt, das Eigenschaften und Methoden enthalten kann, und eine Ereignisquelle enthalten können.|  
-|[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)|Fügt einen Code-Scriptlet als ein untergeordnetes Element der Stammebene `IScriptNode` Objekt. Der vollqualifizierte Name des Scriptlets kann nur zwei Ebenen verfügen, auf dem Host.|  
+|[IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)|Fügt den Namen eines Elements auf der Stammebene an das Skript-Engine-Namespace erstellen. Ein *auf Stammebene Element* ist ein Objekt, das Eigenschaften und Methoden enthalten kann, und eine Ereignisquelle enthalten können.|  
+|[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)|Fügt einen Code-Scriptlet als untergeordnetes Element der Stammebene `IScriptNode` Objekt. Im Host haben der vollqualifizierte Namen des Scriptlets nur zwei Ebenen.|  
 |[IActiveScriptAuthor::AddTypeLib](../../winscript/reference/iactivescriptauthor-addtypelib.md)|Der Namespace für das Skript wird eine Typbibliothek hinzugefügt.|  
 |[IActiveScriptAuthor::GetChars](../../winscript/reference/iactivescriptauthor-getchars.md)|Gibt den Satz der Abschluss Zeichen für einen Kontext für die angeforderte Abschluss.|  
-|[IActiveScriptAuthor::GetEventHandler](../../winscript/reference/iactivescriptauthor-geteventhandler.md)|Gibt das Scriptlet, das die angegebenen Attribute aufweist.|  
-|[IActiveScriptAuthor::GetInfoFromContext](../../winscript/reference/iactivescriptauthor-getinfofromcontext.md)|Gibt geben Informationen und Anker Positionen für ein angegebenes Zeichen in einem Code-Block. Dies bietet Informationen für Member, IntelliSense, globalen Listen und parametertipps.|  
-|[IActiveScriptAuthor::GetLanguageFlags](../../winscript/reference/iactivescriptauthor-getlanguageflags.md)|Gibt Informationen zurück.|  
-|[IActiveScriptAuthor::GetRoot](../../winscript/reference/iactivescriptauthor-getroot.md)|Gibt die `IScriptNode` Stamm des Autors Skript-Struktur.|  
+|[IActiveScriptAuthor::GetEventHandler](../../winscript/reference/iactivescriptauthor-geteventhandler.md)|Gibt zurück, das Scriptlet, das die angegebenen Attribute aufweist.|  
+|[IActiveScriptAuthor::GetInfoFromContext](../../winscript/reference/iactivescriptauthor-getinfofromcontext.md)|Gibt geben Informationen und Positionen der Anker für ein angegebenes Zeichen in einem Codeblock. Dies bietet Informationen für Mitglied, IntelliSense, globale Listen und parametertipps.|  
+|[IActiveScriptAuthor::GetLanguageFlags](../../winscript/reference/iactivescriptauthor-getlanguageflags.md)|Gibt die Language-Informationen zurück.|  
+|[IActiveScriptAuthor::GetRoot](../../winscript/reference/iactivescriptauthor-getroot.md)|Gibt die `IScriptNode` Stamm des Autors-Skript-Struktur.|  
 |[IActiveScriptAuthor::GetScriptletTextAttributes](../../winscript/reference/iactivescriptauthor-getscriptlettextattributes.md)|Gibt den Textattribute des Scriptlet.|  
 |[IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)|Gibt die Textattribute eines Skriptblocks.|  
-|[IActiveScriptAuthor::IsCommitChar](../../winscript/reference/iactivescriptauthor-iscommitchar.md)|Gibt einen Wert, der angibt, ob ein angegebenes Zeichen eine Anweisungsvervollständigung von der Anwendung festlegen sollten.|  
-|[IActiveScriptAuthor::ParseScriptText](../../winscript/reference/iactivescriptauthor-parsescripttext.md)|Skripttext analysiert und fügt Text an das authoring Skript authoring Modul erstellt eine `IScriptEntry` Objekt, das den Skriptblock entspricht.|  
-|[IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)|Entfernt eine `NamedItem` Objekt aus dem Namespace des Skripts Modul erstellen.|  
-|[IActiveScriptAuthor::RemoveTypeLib](../../winscript/reference/iactivescriptauthor-removetypelib.md)|Entfernt eine Typbibliothek aus dem Skript Modul Namespace erstellen.|  
+|[IActiveScriptAuthor::IsCommitChar](../../winscript/reference/iactivescriptauthor-iscommitchar.md)|Gibt einen Wert, der angibt, ob ein angegebenes Zeichen von der Anwendung eine Anweisungsvervollständigung committet werden soll.|  
+|[IActiveScriptAuthor::ParseScriptText](../../winscript/reference/iactivescriptauthor-parsescripttext.md)|Skripttext analysiert und fügt den Text für das authoring Skript-Engine-Erstellung erstellt eine `IScriptEntry` Objekt, das den Skriptblock entspricht.|  
+|[IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)|Entfernt eine `NamedItem` Objekt aus dem Namespace, der das Skript-Engine-Erstellung.|  
+|[IActiveScriptAuthor::RemoveTypeLib](../../winscript/reference/iactivescriptauthor-removetypelib.md)|Entfernt eine Typbibliothek aus dem Skript-Engine-Namespace erstellen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Autorisierungsschnittstellen](../../winscript/reference/active-script-authoring-interfaces.md)

@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097044"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348802"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Bewirkt, dass die Skript-Engine alle aktuell geladenen Skripts abbrechen, verlieren den Zustand und release-Schnittstellenzeiger auf die sie für andere Objekte, also einen geschlossenen Zustand verfügt. Ereignissenken, sofort ausgeführten Skripttext und -Makroaufrufe, die bereits in Bearbeitung sind werden abgeschlossen, bevor die Änderungen des Ansichtszustands (verwenden Sie [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) , einen ausgeführten Skriptthread abzubrechen). Diese Methode muss durch den Host erstellen aufgerufen werden, bevor die Schnittstelle freigegeben wird, um zu verhindern, dass der Zirkelverweis Probleme.  

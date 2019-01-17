@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext-Schnittstelle | Microsoft Docs
+title: IDebugCodeContext-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725760"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349165"
 ---
 # <a name="idebugcodecontext-interface"></a>IDebugCodeContext-Schnittstelle
 Eine Abstraktion, die eine Position in ausführbaren Code darstellt.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugCodeContext` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugCodeContext` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Gibt den Dokumentenkontext dieses Codekontext zugeordnet.|  
-|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Legt fest oder löscht einen Haltepunkt in diesem Codekontext.|
+|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Gibt den Dokumentenkontext mit diesem Codekontext verknüpft ist.|  
+|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Legt fest oder löscht einen Haltepunkt an diesem Codekontext.|

@@ -1,5 +1,5 @@
 ---
-title: Die Bezeichnung wurde nicht gefunden. | Microsoft Docs
+title: Die Bezeichnung wurde nicht gefunden. | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633080"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346973"
 ---
 # <a name="label-not-found"></a>Die Bezeichnung wurde nicht gefunden
-Sie haben einen Verweis auf eine Bezeichnung, die nicht vorhanden ist. Bezeichnungen, markieren Sie Blöcke des Codes, aber innerhalb eines angegebenen Bereichs verwendet werden kann, muss eindeutig sein.  
+Sie haben einen Verweis auf eine Bezeichnung, die nicht vorhanden ist. Bezeichnungen können verwendet werden, um Blöcke von Code, aber innerhalb eines angegebenen Bereichs zu markieren, muss eindeutig sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Überprüfen Sie außerdem sicherstellen, dass Sie nicht den Bezeichnungsnamen richtig geschrieben ist.  
+-   Überprüfen Sie, um sicherzustellen, dass Sie den Namen der Bezeichnung nicht richtig geschrieben ist.  
   
--   Stellen Sie sicher, alle Bezeichnungsverweise Bezeichnungen vorgenommen werden, die im aktuellen Bereich definiert wurden (Dies schließt forward Definitionen).  
+-   Stellen Sie sicher, alle Bezeichnungsverweisen Bezeichnungen vorgenommen werden, die im aktuellen Bereich definiert wurden (Dies schließt forward Definitionen).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   

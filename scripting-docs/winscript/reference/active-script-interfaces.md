@@ -1,5 +1,5 @@
 ---
-title: Active Script-Schnittstellen | Microsoft Docs
+title: Active Script-Schnittstellen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,15 +15,15 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641470"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344329"
 ---
 # <a name="active-script-interfaces"></a>Active Script-Schnittstellen
-Die ActivScp.h-Header-Datei enthält die Schnittstellen, Enumerationen und Fehlercodes, die in diesem Abschnitt aufgeführten.  
+Die Headerdatei ActivScp.h enthält die Schnittstellen, Enumerationen und Fehlercodes, die in diesem Abschnitt aufgeführten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   

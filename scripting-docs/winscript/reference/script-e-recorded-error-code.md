@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_E_RECORDED-Fehlercode | Microsoft Docs
+title: SCRIPT_E_RECORDED-Fehlercode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcefd3ff7ca2f084366f1317b47d1718b5e71fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8473c905f7524c72449d96c32bec4260e2502e34
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733950"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349087"
 ---
 # <a name="scripterecorded-error-code"></a>SCRIPT_E_RECORDED-Fehlercode
-Ein Fehler wurde zwischen dem Skriptmodul und dem Host übergeben. Der Host muss den Fehlercode an dem Aufrufer übergeben.  
+Ein Fehler wurde zwischen der Skript-Engine und dem Host übergeben. Der Host muss den Fehlercode an den Aufrufer übergeben.  
   
 ## <a name="syntax"></a>Syntax  
   

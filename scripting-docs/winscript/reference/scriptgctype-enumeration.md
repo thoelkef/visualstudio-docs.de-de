@@ -1,5 +1,5 @@
 ---
-title: SCRIPTGCTYPE-Enumeration | Microsoft Docs
+title: SCRIPTGCTYPE-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d42187cc7467bea9d777f35bb208c4e42cabb31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b25ffb530bf16fff0008bb73b55ecb0c523efe0d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734170"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349100"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE-Enumeration
-Der Typ der Garbagecollection auszuführen. Verwendet die [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) Methode.  
+Der Typ der Garbagecollection ausführen. Verwendet die [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) Methode.  
   
 ## <a name="syntax"></a>Syntax  
   

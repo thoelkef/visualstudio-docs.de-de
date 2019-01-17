@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable | Microsoft Docs
+title: IDebugApplicationThread110::IsThreadCallable | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34e2c45d7e94c72ade62780f46f4b5c7c22405e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3edf7e8a1495be99d2c5130c307acae92a96b11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725570"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344206"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Bestimmt, ob dieser Thread in einem Zustand befindet, das Aufrufe mithilfe der PDM Threads wechseln Mechanismen, z. B. SynchronousCallInThread verarbeitet.  
+Bestimmt, ob dieser Thread in einem Zustand befindet, die Aufrufe, die über das PDM Threadwechsel Mechanismen, wie z. B. SynchronousCallInThread verarbeitet werden.  
   
 > [!IMPORTANT]
 >  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
@@ -35,7 +35,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Parameter  
  `pfIsCallable`  
- [out] `true` ist der Thread aufgerufen werden kann, andernfalls `false`.  
+ [out] `true` Wenn der Thread aufgerufen wird, andernfalls `false`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md)

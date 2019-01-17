@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348309"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350114"
 ---
 # <a name="expected-"></a>"}" erwartet
 Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objektinitialisierer. Ein Beispiel für diesen Fehler wäre eine **für** -Schleife mit der nur die linke geschweifte Klammer der Hauptteil der Schleife markiert.  

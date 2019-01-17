@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats-Schnittstelle | Microsoft Docs
+title: IActiveScriptStats-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725050"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350140"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats-Schnittstelle
-Ermöglicht es einem Host die Statistik von einem ausgeführten Skript abgefragt. Der Host kann diese Informationen verwenden, um festzustellen, ob das Skript zu lange gedauert hat.  
+Ermöglicht es einem Host zum Abfragen der Statistiken eines ausgeführten Skripts ein. Der Host kann diese Informationen verwenden, um zu bestimmen, ob das Skript zu lange dauernde stattgefunden hat.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptStats` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptStats` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Gibt einen der Standardskripts Statistiken zurück.|  
-|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Gibt eine benutzerdefiniertes Skript Statistik zurück.|  
+|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Gibt einen von der standard-Skripterstellung für Statistiken.|  
+|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Gibt eine benutzerdefiniertes Skript für Statistik zurück.|  
 |[IActiveScriptStats::ResetStats](../../winscript/reference/iactivescriptstats-resetstats.md)|Setzt die Statistik für dieses Skript.|

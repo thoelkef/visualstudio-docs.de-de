@@ -1,5 +1,5 @@
 ---
-title: Konstante erwartet | Microsoft Docs
+title: Konstante erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632940"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344316"
 ---
 # <a name="expected-constant"></a>Konstante erwartet
-Sie haben versucht, eine Variable (nicht bedingte Kompilierung) in einer bedingten Kompilierung Test-Anweisung verwenden. Anweisungen für bedingte Kompilierung Test müssen auf eine Konstante ausgewertet werden.  
+Sie versucht, eine Variable (nicht-bedingte Kompilierung) in einer bedingten kompilierungsanweisung Test zu verwenden. Test-Anweisungen für die bedingte Kompilierung müssen mit einer Konstante ausgewertet werden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
 -   Ersetzen Sie die Variable mit einem Literal.  
   
--   Ersetzen Sie die Variable mit einer Variablen für die bedingte Kompilierung.  
+-   Ersetzen Sie die Variable durch eine Variable für die bedingte Kompilierung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [Für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

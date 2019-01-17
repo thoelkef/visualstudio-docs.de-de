@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b78285f332b339533d81228de5877043f699a67c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096290"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349139"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS-Enumeration
 Flags, die angeben, ob ein Heapobjekt, auf das in einer Objektbeziehung verwiesen wird, eine Getter- oder eine Setter-Methode ist. Verwendet die [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) Methode, wenn der PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS-Wert, in angegeben wird der `enumFlags` Parameter.  

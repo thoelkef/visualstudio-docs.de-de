@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951053"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345421"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Auf 'throw' muss ein Ausdruck in derselben Quellzeile folgen
 Sie verwendet die `throw` -Schlüsselwort, aber nicht es mit einem Ausdruck in derselben Quellzeile folgen. Ein `throw` Anweisung besteht aus zwei Teilen: dem `throw` -Schlüsselwort, gefolgt von dem Ausdruck, der ausgelöst wird. Zum Beispiel:  

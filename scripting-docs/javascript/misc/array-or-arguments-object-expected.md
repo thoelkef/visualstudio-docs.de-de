@@ -1,5 +1,5 @@
 ---
-title: Array- oder Arguments-Objekt erwartet | Microsoft Docs
+title: Array- oder Arguments-Objekt erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632740"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345356"
 ---
 # <a name="array-or-arguments-object-expected"></a>Array- oder arguments-Objekt erwartet
-Sie haben ein Array nicht als Argument angegeben. Dieser Fehler bezieht sich auf die **Function.prototype.apply** nur Methode. Wenn angegeben, das zweite Argument für diese Funktion muss entweder ein `Array` Objekt oder ein **Argumente** Objekt.  
+Sie haben kein Array als Argument angegeben. Dieser Fehler bezieht sich auf die **Function.prototype.apply** nur Methode. Wenn angegeben, das zweite Argument für diese Funktion muss entweder eine `Array` Objekt oder ein **Argumente** Objekt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Geben Sie entweder eine `Array` oder ein **Argumente** Objekt als zweites Argument.  
+-   Geben Sie entweder eine `Array` oder **Argumente** Objekt als zweites Argument.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)   

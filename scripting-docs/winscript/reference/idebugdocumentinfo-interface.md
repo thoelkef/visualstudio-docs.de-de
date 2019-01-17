@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo-Schnittstelle | Microsoft Docs
+title: IDebugDocumentInfo-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726380"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349334"
 ---
 # <a name="idebugdocumentinfo-interface"></a>IDebugDocumentInfo-Schnittstelle
-Enthält Informationen über ein Dokument, das möglicherweise oder kann nicht instanziiert werden.  
+Stellt Informationen zu einem Dokument bereit, das möglicherweise instanziiert wird.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugDocumentInfo` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugDocumentInfo` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Gibt den Namen des angegebenen Dokuments zurück.|  
-|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Gibt die CLSID identifizieren den Dokumenttyp zurück.|
+|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Gibt die CLSID, der den Dokumenttyp zurück.|

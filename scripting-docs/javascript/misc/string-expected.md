@@ -1,5 +1,5 @@
 ---
-title: Zeichenfolge erwartet | Microsoft Docs
+title: Zeichenfolge erwartet | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632800"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346799"
 ---
 # <a name="string-expected"></a>Zeichenfolge erwartet
-Sie haben versucht, das Aufrufen der **String.prototype.toString** oder **String.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `String`. Das Objekt dieses Typs des Aufrufs muss vom Typ `String`.  
+Sie haben versucht, rufen Sie die **String.prototype.toString** oder **String.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `String`. Das Objekt dieser Art von Aufruf muss vom Typ `String`.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

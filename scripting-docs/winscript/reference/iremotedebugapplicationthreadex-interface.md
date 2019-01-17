@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThreadEx-Schnittstelle | Microsoft Docs
+title: IRemoteDebugApplicationThreadEx-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 071a34b16ce9b3cbe7e73f44a01de889d113b7e4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728620"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344226"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>IRemoteDebugApplicationThreadEx-Schnittstelle
 Stellt einen Ausführungsthread innerhalb einer bestimmten Anwendung dar.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplicationThreadEx` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplicationThreadEx` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Listet die globalen ausdruckskontexten für alle Sprachen, die in diesem Thread ausgeführt wird.|
+|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Listet die globale ausdruckskontexten für alle Sprachen, die in diesem Thread ausgeführt wird.|

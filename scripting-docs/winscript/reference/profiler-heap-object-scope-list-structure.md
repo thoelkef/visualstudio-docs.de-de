@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088568"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344823"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST-Struktur
 Diese Struktur ist nur Funktionsobjekten zugeordnet. Die Bereichsliste stellt den Schließvorgang für die Funktion als Liste von Bereichen dar, wobei jeder Bereich ein Heapobjekt mit einer zugeordneten Eigenschaftenliste ist, die Variablen in jedem angegebenen Bereich darstellt. In einigen Fällen ist die Namen der Objekte im Bereich stehen möglicherweise nicht zur Verfügung, und nur deren Index in der Liste verfügbar.  

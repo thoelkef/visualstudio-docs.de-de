@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx-Schnittstelle | Microsoft Docs
+title: IActiveScriptSiteDebugEx-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cf5849ff1fca282bace97774c6b7ac9e4510226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e462630f7bf52c4ca94aa59df22616e9a335a7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725040"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345876"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx-Schnittstelle
-Implementieren Sie diese Schnittstelle zusammen mit der `IActiveScriptSiteDebug` Schnittstelle, wenn Sie einen Host schreiben, die muss eine Benachrichtigung über einen Laufzeitfehler in einer Anwendung abrufen und optional an die Anwendung zum Debuggen anzufügen. Der Debug-Prozess-Manager stellt eine Benachrichtigung über bereit `IActiveScriptDebug` Wenn Skript für eine Just-In-Time-Debugger ist auf dem Computer gefunden. Wenn keine Just-in-Time-Skriptdebugger wird gefunden, die PDM stellt die Benachrichtigung über `IActiveScriptDebugEx` stattdessen.  
+Implementieren Sie diese Schnittstelle zusammen mit den `IActiveScriptSiteDebug` Schnittstelle, wenn Sie einen Host, die Sie erhalten eine Benachrichtigung von einem Laufzeitfehler in einer Anwendung aus, und fügen Sie optional für die Anwendung schreiben für das Debuggen muss. Den prozessbasierten Debugmanager stellt Benachrichtigung über `IActiveScriptDebug` , wenn eine Just-In-Time-Debugger-Skript auf dem Computer gefunden wird. Wenn keine Just-In-Time-Debugger Skript gefunden wird; das PDM stellt Benachrichtigung über `IActiveScriptDebugEx` stattdessen.  
   
- Um eine Benachrichtigung über einen Laufzeitfehler zu erhalten, muss der Host behandeln [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Basierend auf eine Benutzeraktion, Sie können dann entscheiden, ob die internen Debugger und die Rückgabetypen anfügen oder zurückzugeben, das Starten des Debuggers in der OnScriptErrorDebug `pfEnterDebugger` Parameter.  
+ Um eine Benachrichtigung über einen Laufzeitfehler zu erhalten, muss Ihr Host behandeln [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Basierend auf eine Benutzeraktion, Sie können dann entscheiden, ob die internen Debugger und die Rückgabe anfügen oder das Starten des Debuggers in der OnScriptErrorDebug `pfEnterDebugger` Parameter.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Informiert, dass der Host über ein Skript zur Laufzeit Fehler beim Debuggen die Prozess-Manager einen externen nur Just-in-Time-Debugger nicht finden kann.|
+|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Informiert, dass der Host über einen Laufzeit-Skriptfehler beim Debuggen des Prozesses Manager einen externen Just-in-Time-Debugger nicht gefunden wird.|

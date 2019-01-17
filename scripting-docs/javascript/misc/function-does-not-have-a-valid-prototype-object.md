@@ -1,5 +1,5 @@
 ---
-title: Funktion enthält kein gültiges Prototype-Objekt. | Microsoft Docs
+title: Funktion enthält kein gültiges Prototype-Objekt. | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633010"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346695"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funktion enthält kein gültiges prototype-Objekt.
-Sie haben versucht, **Instanceof** zu bestimmen, ob ein Objekt von einer bestimmten Funktion-Klasse abgeleitet wurde, aber Sie des Objekts neu `prototype` Eigenschaft entweder als `null`, oder einen externen Typ (beide ungültig [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte). Ein externes Objekt möglich ein Objekt aus dem Host-Objektmodell (z. B. Internet Explorer Dokument oder -Fensterobjekt) oder einer externen COM-Objekts.  
+Sie haben versucht, verwenden Sie **Instanceof** zu bestimmen, ob ein Objekt von einer bestimmten Funktion-Klasse abgeleitet wurde, aber Sie neu des Objekts definiert `prototype` Eigenschaft entweder als `null`, oder ein externes Objekt-Typ (beide ungültig [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte). Ein externes Objekt kann es sich um ein Objekt aus dem Host-Objektmodell (z. B. Internet Explorer Dokument oder Window-Objekt) oder ein externes COM-Objekt sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Gewährleisten Sie der Funktion `prototype` Eigenschaft bezieht sich auf eine gültige [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt.  
+-   Sicherstellen der Funktion `prototype` Eigenschaft bezieht sich auf einen gültigen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Function-Objekt](../../javascript/reference/function-object-javascript.md)   

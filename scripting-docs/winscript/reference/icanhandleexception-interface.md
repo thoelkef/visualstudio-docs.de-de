@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException-Schnittstelle | Microsoft Docs
+title: ICanHandleException-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725210"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349971"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException-Schnittstelle
-Ermöglicht es dem Aufrufer eines Skriptmoduls welche Ausnahmen an den Aufrufer Handles.  
+Mit welcher der Aufrufer eine Skript-Engine welche Ausnahmen an den Aufrufer behandelt.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `ICanHandleException` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `ICanHandleException` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Bestimmt, ob der Aufrufer des Skriptmoduls eine angegebene Ausnahme verarbeiten kann.|
+|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Bestimmt, ob der Aufrufer von der Skript-Engine eine angegebene Ausnahme verarbeiten kann.|

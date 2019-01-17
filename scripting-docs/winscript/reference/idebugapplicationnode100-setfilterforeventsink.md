@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::SetFilterForEventSink | Microsoft Docs
+title: IDebugApplicationNode100::SetFilterForEventSink | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8ea26787427844a92417bf525dba271063cba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b273b770a1d82edbf5bbbe26c0865060234b852
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726010"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346487"
 ---
 # <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
-Legt den Filter für eine bestimmte [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md) Implementierung. Skriptdebugger, die vom Compiler generierte Anwendung Unterknoten herausfiltern, damit die PDM mehr senden, werden Ereignisse aus, wenn diese erstellt oder entfernt werden können. Standardmäßig werden alle Knoten gesendet.  
+Legt den Filter für eine bestimmte [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md) Implementierung. Sie können die Skriptdebugger, um vom Compiler generierten untergeordneten Anwendungsknoten zu filtern, damit das PDM mehr senden, werden Ereignisse aus, wenn diese erstellt oder entfernt werden. Standardmäßig werden alle Knoten gesendet.  
   
 > [!IMPORTANT]
 >  [IDebugApplicationNode100-Schnittstelle](../../winscript/reference/idebugapplicationnode100-interface.md) wird implementiert von PDM v10. 0 und höher. Gefunden in activdbg100.h.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor-Schnittstelle | Microsoft Docs
+title: IDebugDocumentTextAuthor-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726550"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344069"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor-Schnittstelle
-Bereitgestellt durch Textdokumente, Bearbeitung unterstützen.  
+Bereitgestellt von Textdokumente, Unterstützung bearbeiten.  
   
- Zusätzlich zu den von geerbten Methoden `IDebugDocumentText`, `IDebugDocumentTextAuthor` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IDebugDocumentText`, `IDebugDocumentTextAuthor` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
@@ -32,4 +32,4 @@ Bereitgestellt durch Textdokumente, Bearbeitung unterstützen.
 |------------|-----------------|  
 |[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Neuen Text in das Dokument eingefügt.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Entfernt den Text aus dem Dokument.|  
-|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Ersetzt Text in das Dokument.|
+|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Ersetzt Text in das Dokument an.|

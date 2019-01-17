@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall-Schnittstelle | Microsoft Docs
+title: IDebugThreadCall-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726940"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346266"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall-Schnittstelle
-Die `IDebugThreadCall` Schnittstelle wird von einer Komponente, die threadübergreifende Aufrufe mit stellt in der Regel implementiert die `IDebugThread` marshalling-Implementierung, die der Prozess-Manager (PDM).  
+Die `IDebugThreadCall` Schnittstelle wird von einer Komponente, die threadübergreifende Aufrufe mit stellt in der Regel implementiert die `IDebugThread` marshalling-Implementierung von prozessbasierten Debug-Manager (PDM).  
   
- Ruft die PDM die `IDebugThreadCall` -Schnittstelle in der gewünschten Thread und die `IDebugThreadCall` Schnittstelle leitet den Aufruf an die gewünschte Implementierung. Die `IDebugThreadCall` Schnittstelle wandelt die Parameterinformationen, die in den Parametern der entsprechenden nach oben übergeben.  
+ Der PDM Ruft die `IDebugThreadCall` -Schnittstelle in den gewünschten Thread und die `IDebugThreadCall` Schnittstelle sendet den Aufruf an die gewünschte Implementierung. Die `IDebugThreadCall` Schnittstelle wandelt die Parameterinformationen, die entsprechende oben in den Parametern übergeben.  
   
- Die `IDebugThreadCall` Schnittstelle ist eine Freethread-Objekt.  
+ Die `IDebugThreadCall` Schnittstelle ist ein Freethread-Objekt.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugThreadCall` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugThreadCall` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Aufrufe zum Ausführen von Code in einem anderen Thread verarbeitet.|
+|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Verarbeitet die Aufrufe an Code in einem anderen Thread auszuführen.|

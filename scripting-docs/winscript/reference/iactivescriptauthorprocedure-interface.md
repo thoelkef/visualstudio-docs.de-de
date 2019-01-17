@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure-Schnittstelle | Microsoft Docs
+title: IActiveScriptAuthorProcedure-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5676044e9adb17e0c477c40f9045c4a2bb656b89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec6696a40868ad3cc64cf41efe5ab6bfc9d95ec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645630"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349620"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure-Schnittstelle
 Zusätzlich zu den von geerbten Methoden `IUnknown`, `IScriptAuthorProcedure` Schnittstelle verfügbar macht, die folgende Methode.  
@@ -28,7 +28,7 @@ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IScriptAuthorProcedure` Sc
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Analysiert eine Code-Prozedur, die Code-Prozedur Text an das Modul authoring Skript hinzugefügt und erstellt ein `IScriptEntry` Objekt, das die Prozedur Code entspricht.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Eine Prozedur Code analysiert und fügt den Code der Prozedur Text an das Skript-Engine-Erstellung erstellt eine `IScriptEntry` Objekt, das die Code-Prozedur entspricht.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Autorisierungsschnittstellen](../../winscript/reference/active-script-authoring-interfaces.md)

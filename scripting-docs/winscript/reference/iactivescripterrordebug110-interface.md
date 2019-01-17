@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110-Schnittstelle | Microsoft Docs
+title: IActiveScriptErrorDebug110-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645760"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345902"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110-Schnittstelle
-Fügt Funktionen für die [IActiveScriptDebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md). Diese Schnittstelle wird durch das JavaScript-Modul implementiert, um zu bestimmen, warum ein BREAKREASON_ERROR-Ereignis aufgetreten ist.  
+Funktionell die [IActiveScriptDebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md). Diese Schnittstelle wird durch die JavaScript-Engine implementiert, um zu bestimmen, warum ein BREAKREASON_ERROR-Ereignis aufgetreten ist.  
   
 > [!IMPORTANT]
 >  Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  

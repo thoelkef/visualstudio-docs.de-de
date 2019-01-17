@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity-Schnittstelle | Microsoft Docs
+title: IObjectIdentity-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e85c5dac657684cfd3113ba403ebb25a75b49a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 375b0be54e1f9a71dd5f70cf70c66a26886af127
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728910"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345629"
 ---
 # <a name="iobjectidentity-interface"></a>IObjectIdentity-Schnittstelle
-Zusätzlich zu den von geerbten Methoden `IUnknown`, `IObjectIdentity` Schnittstelle macht die folgenden Methoden verfügbar.  
+Zusätzlich zu den von geerbten Methoden `IUnknown`, `IObjectIdentity` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods"></a>Methoden  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|Bestimmt, ob ein Objekt mit dem aktuellen Objekt identisch ist.|
+|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|Bestimmt, ob ein Objekt mit dem aktuellen Objekt entspricht.|

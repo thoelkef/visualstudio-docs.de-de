@@ -20,12 +20,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f6a0128bb73e69a151415518ae6c019be0e4df9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f9736e7195d8594e881aa778b0683959fe5d4c88
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804668"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346201"
 ---
 # <a name="expected--javascript"></a>")" erwartet (JavaScript)
 Sie haben versucht, einen Ausdruck in Klammern einschließen, aber es hat keine die schließenden Klammer. Einige Ausdruck muss in einer Gruppe von öffnende und schließende Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern, die im folgenden Beispiel aus.  

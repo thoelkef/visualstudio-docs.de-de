@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger-Schnittstelle | Microsoft Docs
+title: IApplicationDebugger-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725410"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348320"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger-Schnittstelle
-Die primäre Schnittstelle verfügbar gemacht werden, von einem Debugger. Zusätzlich zu den von geerbten Methoden `IUnknown`, `IApplicationDebugger` Schnittstelle macht die folgenden Methoden verfügbar.  
+Die primäre Schnittstelle, die von einem Debugger verfügbar gemacht werden. Zusätzlich zu den von geerbten Methoden `IUnknown`, `IApplicationDebugger` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Gibt an, ob der Debugger reagiert.|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Ermöglicht die Erstellung von Objekten im Debuggerprozess in Code vorgesehen, Out-of-Process an den Debugger.|  
-|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Verarbeitet ein Debug-Ausgabe-Ereignis.|  
-|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Ein Haltepunktereignis behandelt.|  
-|[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Verarbeitet eine Debugereignis Anwendung schließen.|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Ermöglicht die Erstellung von Objekten im Debuggerprozess von Code, Out-of-Process an den Debugger.|  
+|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Behandelt ein Ereignis der Debug-Ausgabe.|  
+|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Behandelt ein Haltepunktereignis.|  
+|[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Behandelt ein Debug-Anwendung schließen-Ereignis.|  
 |[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Behandelt ein Ereignis für die benutzerdefinierte Anwendung.|

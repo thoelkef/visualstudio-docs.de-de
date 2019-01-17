@@ -1,5 +1,5 @@
 ---
-title: Application_node_event_filter-Schnittstelle | Microsoft Docs
+title: APPLICATION_NODE_EVENT_FILTER-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641120"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344550"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER-Schnittstelle
-Gibt die Typen von Knoten sollen, wenn der Code-Dokumente filtern. Verwendet [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) und [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+Gibt die Typen von Knoten ausschließen, wenn der Code Dokumente zu filtern. Verwendet [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) und [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
 >  Diese Konstanten werden durch PDM v10. 0 und höher implementiert. Gefunden in activdbg100.h.  
@@ -37,9 +37,9 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 |Member|Wert|Beschreibung|  
 |------------|-----------|-----------------|  
-|FILTER_EXCLUDE_NOTHING|0x00000000|Alle Ereignisse zu senden.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Schließen Sie anonyme Code-Knoten. Diese Knoten werden verwendet, von der Laufzeit JScript für `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Schließen Sie auswertungscode-Knoten. Diese Knoten werden von der Laufzeit JScript eval Supportzwecken verwendet.|  
+|FILTER_EXCLUDE_NOTHING|0x00000000|Senden Sie alle Ereignisse.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Schließen Sie anonymer Code Knoten aus. Diese Knoten werden verwendet, von der JScript-Laufzeit zur `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Schließen Sie auswertungscode Knoten aus. Diese Knoten werden von der JScript-Laufzeit für die eval-Unterstützung verwendet.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo-Schnittstelle | Microsoft Docs
+title: IEnumDebugExtendedPropertyInfo-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,25 +18,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728170"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346032"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo-Schnittstelle
-Listet `ExtendedDebugPropertyInfo` Strukturen.  
+Listet die `ExtendedDebugPropertyInfo` Strukturen.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IEnumDebugExtendedPropertyInfo`.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
-|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Ruft die Anzahl der `ExtendedDebugPropertyInfo` Strukturen in einen Enumerator.|  
-|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Ruft eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in eine Enumerationsfolge.|  
-|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Überspringt die angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in eine Enumerationsfolge.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
+|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Ruft die Anzahl der `ExtendedDebugPropertyInfo` Strukturen in einem Enumerator.|  
+|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Ruft eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge.|  
+|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Überspringt eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Setzt die Enumerationsfolge auf den Anfang zurück.|  
   
 ## <a name="requirements"></a>Anforderungen  
