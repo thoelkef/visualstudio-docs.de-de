@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51760719"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
@@ -79,7 +79,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 6.  Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.  
   
 ##  <a name="IsolateAnIssue"></a> Isolieren eines Problems  
- Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-app für die Leistungstests erhalten, finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)  
   
 ###  <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler effektiver verwenden können:  
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
 -   Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.  
   
 ###  <a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung  
- Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#ProfilerEvents) in diesem Thema.  
+ Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert und stellen die folgenden spezifischen Kategorien dar: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Formatieren**, **Rendering** und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#ProfilerEvents) in diesem Thema.  
   
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.  
   
@@ -338,7 +338,7 @@ if (performance.mark && performance.measure) {
 |event|Ereigniskategorie|Tritt auf bei|  
 |-----------|--------------------|-----------------|  
 |CSS-Analyse|Laden|Neuer CSS-Inhalt wurde gefunden, und es wurde versucht, den CSS-Inhalt zu analysieren.|  
-|HTML-Analyse|Ladevorgang|Neuer HTML-Inhalt wurde gefunden, und es wurde versucht, den Inhalt in Knoten zu analysieren und in die DOM-Struktur einzufügen.|  
+|HTML-Analyse|Laden|Neuer HTML-Inhalt wurde gefunden, und es wurde versucht, den Inhalt in Knoten zu analysieren und in die DOM-Struktur einzufügen.|  
 |HTTP-Anforderung|Laden|Eine Remoteressource wurde im DOM gefunden, oder ein XMLHttpRequest wurde erstellt, das zu einer HTTP-Anforderung geführt hat.|  
 |Spekulatives Herunterladen|Laden|Der HTML-Inhalt der Seite wurde für erforderliche Ressourcen gefunden, sodass darauf folgende HTTP-Anforderungen für die Ressourcen schnell geplant werden konnten.|  
 |Rückruffunktion für den Animationsframe|Skripterstellung|Der Browser war im Begriff, einen anderen Frame zu rendern, und dies hat eine Rückruffunktion der App ausgelöst.|  
@@ -368,7 +368,7 @@ if (performance.mark && performance.measure) {
 -   Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Analysieren der app-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
 
 
 

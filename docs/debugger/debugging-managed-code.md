@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867039"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270205"
 ---
 # <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
 
@@ -86,7 +86,7 @@ Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Zu de
 
 ## <a name="see-also"></a>Siehe auch
 
-[Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[Debuggersicherheit](../debugger/debugger-security.md)
-[Debuggen in Visual Studio](../debugger/index.md) 
- [ Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+[Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Debuggersicherheit](../debugger/debugger-security.md)  
+[Debuggen in Visual Studio](../debugger/index.md)  
+[Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117939"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53863419"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 
@@ -71,9 +70,9 @@ Vor dem upgrade einer Datenbank sollten Sie der folgenden Kriterien:
 
         -   Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 ist und V13 LocalDB 2016.
 
-    -   **Anfügen einer Datenbankdatei**: der physische Pfad der primären Datenbank *mdf* Datei.
+    -   **Anfügen einer Datenbankdatei**: Der physische Pfad der primären Datenbank *mdf* Datei.
 
-    -   **Der logische Name**: der Name, der mit der Datei verwenden möchten.
+    -   &Logischer Name: Der Name, die Sie mit der Datei verwenden möchten.
 
 3.  Klicken Sie auf die Schaltfläche **OK**.
 

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052649"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53931056"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +57,4 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 -   Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Optimieren des parallelen Erstellens für C++).
 
 ## <a name="see-also"></a>Siehe auch
- [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten.

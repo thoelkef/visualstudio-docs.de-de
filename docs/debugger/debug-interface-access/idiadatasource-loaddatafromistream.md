@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880688"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154162"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Bereitet die Debug-Daten in ein Zugriff erfolgt über einen in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.  
@@ -40,7 +40,7 @@ HRESULT loadDataFromIStream ( 
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|Es wurde versucht, Zugriff auf eine Datei mit der ein veraltetes Format.|  
-|E_INVALIDARG|Invalidparameter.|  
+|E_INVALIDARG|Ungültiger Parameter.|  
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|  
   
 ## <a name="remarks"></a>Hinweise  

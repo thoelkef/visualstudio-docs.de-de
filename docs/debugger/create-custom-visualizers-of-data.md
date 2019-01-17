@@ -1,8 +1,6 @@
 ---
 title: Erstellen von benutzerdefinierten Daten-Schnellansichten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607821"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204387"
 ---
-# <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Daten-Schnellansichten 
+# <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Daten-Schnellansichten
  Ein *Schnellansicht* ist Teil der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugger-Benutzeroberfläche, die eine Variable oder ein Objekt in einer entsprechend seinem Datentyp angezeigt. Beispielsweise wird eine HTML-Schnellansicht eine HTML-Zeichenfolge interpretiert und das Ergebnis zeigt, wie es in einem Browserfenster angezeigt wird. Eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die Grafik aus, die es darstellt. Einige Schnellansichten können Sie sowie das Anzeigen der Daten ändern.
 
  Der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Der Text, HTML, XML und JSON-Schnellansichten für String-Objekten zu arbeiten. Der WPF Tree Visualizer zeigt die Eigenschaften der visuellen Struktur eines WPF-Objekts. Die Dataset-Schnellansicht funktioniert für DataView DataSet und DataTable-Objekten. 
@@ -42,13 +40,13 @@ Im Debugger wird eine Schnellansicht durch ein Lupensymbol dargestellt ![Visuali
  > [!NOTE]
  > Um eine benutzerdefinierte Schnellansicht für nativen Code zu erstellen, finden Sie unter den [nativen SQLite-Debuggerschnellansicht](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) Beispiel. Benutzerdefinierte Schnellansichten werden nicht für UWP und Windows 8.x-apps unterstützt.
 
-Sie können eine benutzerdefinierte Schnellansicht für ein Objekt einer beliebigen verwalteten Klasse mit Ausnahme von schreiben <xref:System.Object> und <xref:System.Array>.  
+Sie können für ein Objekt einer beliebigen verwalteten Klasse eine benutzerdefinierte Schnellansicht schreiben. Ausnahmen stellen <xref:System.Object> und <xref:System.Array> dar.  
   
 Die Architektur einer Debuggerschnellansicht besteht aus zwei Teilen:  
   
 - Die *Debuggerseite* innerhalb der Visual Studio-Debugger ausgeführt wird, erstellt und zeigt die Benutzeroberfläche der Schnellansicht.  
   
-- Die *zu debuggende Seite* ausgeführt wird, innerhalb des Prozesses, die Visual Studio debuggt (die *zu debuggende Komponente*). Das Datenobjekt zu visualisieren (z. B. ein Zeichenfolgenobjekt), die in der zu debuggenden Prozess vorhanden ist. Die zu debuggende Seite sendet das Objekt auf der Seite des Debuggers, die sie in der Benutzeroberfläche anzeigt, die Sie erstellen.  
+- Die *zu debuggende Seite* wird innerhalb des Prozesses ausgeführt, den Visual Studio debuggt (die *zu debuggende Komponente*). Das Datenobjekt zu visualisieren (z. B. ein Zeichenfolgenobjekt), die in der zu debuggenden Prozess vorhanden ist. Die zu debuggende Seite sendet das Objekt auf der Seite des Debuggers, die sie in der Benutzeroberfläche anzeigt, die Sie erstellen.  
 
 Die Debuggerseite empfängt das Datenobjekt aus einer *Objektanbieter* , implementiert die <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> Schnittstelle. Die zu debuggende Seite sendet das Objekt über die *Objektquelle*, ergibt sich aus <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -60,7 +58,7 @@ Sie können eine Schnellansicht für einen generischen Typ erstellen, nur dann, 
   
 In benutzerdefinierten Schnellansichten treten möglicherweise Sicherheitsprobleme auf. Finden Sie unter [sicherheitsüberlegungen zu Schnellansichten](../debugger/visualizer-security-considerations.md).  
   
-Die folgenden Schritte bieten einen allgemeinen Überblick über die Schnellansicht erstellen. Ausführliche Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben eine Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
+Die folgenden Schritte bieten einen allgemeinen Überblick über die Schnellansicht erstellen. Ausführliche Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic  
   
 ### <a name="to-create-the-debugger-side"></a>So erstellen Sie die Debuggerseite  
   
@@ -88,10 +86,10 @@ Sie geben zu debuggende Code mit der <xref:System.Diagnostics.DebuggerVisualizer
 
  [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)  
+ [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)  
   
- [Gewusst wie: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Vorgehensweise: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Referenz zur Schnellansicht-API](../debugger/visualizer-api-reference.md)  
   
- [Anzeigen von Daten im debugger](../debugger/viewing-data-in-the-debugger.md)
+ [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

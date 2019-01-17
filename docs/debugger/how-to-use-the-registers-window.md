@@ -2,7 +2,6 @@
 title: Ansicht im Debugger Registerwerte | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,25 +24,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058440"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53867578"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ansicht Registerwerte in das Fenster "Register" (C#, C++, Visual Basic F#)
 
-Die **registriert** Fenster zeigt Registerinhalt während des Debuggens von Visual Studio. Eine allgemeine Einführung in Konzepte hinter Register und die **registriert** Fenster finden Sie unter [Grundlagen des Debuggens: Fenster "Register"](../debugger/debugging-basics-registers-window.md).
+Die **registriert** Fenster zeigt Registerinhalt während des Debuggens von Visual Studio. Eine allgemeine Einführung in Konzepte hinter Register und die **registriert** Fenster finden Sie unter [Grundlagen des Debuggens: Registerfenster
 
 > [!NOTE]
 > Registerinformationen ist nicht für Skriptsprachen oder SQL-apps verfügbar.
 
 Registrieren Sie während des Debuggens geändert werden, während Code in Ihrer app ausgeführt wird. Kürzlich geänderte Werte angezeigt, in Rot der **registriert** Fenster.
 
-Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** nach Gruppen eingeteilt, die sich je nach Plattform und Prozessortyp unterscheiden. Sie können anzeigen oder Ausblenden von Registergruppen. Weitere Informationen finden Sie unter [How to: Display and hide register groups (Anzeigen und Ausblenden von Registergruppen)](../debugger/how-to-display-and-hide-register-groups.md)
+Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** nach Gruppen eingeteilt, die sich je nach Plattform und Prozessortyp unterscheiden. Sie können anzeigen oder Ausblenden von Registergruppen. Weitere Informationen finden Sie unter [Vorgehensweise: Display and hide register groups (Anzeigen und Ausblenden von Registergruppen)](../debugger/how-to-display-and-hide-register-groups.md)
 
-Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [How to: Edit a register value (Bearbeiten eines Registerwerts)](../debugger/how-to-edit-a-register-value.md).
+Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Edit a register value (Bearbeiten eines Registerwerts)](../debugger/how-to-edit-a-register-value.md).
 
 **Um das Fenster "Register" zu öffnen.**
 
@@ -56,5 +55,5 @@ Die Registerwerte können bearbeitet werden. Weitere Informationen finden Sie un
 
 ### <a name="see-also"></a>Siehe auch
 
-- [Debugging basics: Registers window (Grundlagen des Debuggens: Das Registerfenster)](../debugger/debugging-basics-registers-window.md)
+- [Debuggrundlagen: Registerfenster](../debugger/debugging-basics-registers-window.md)
 - [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)

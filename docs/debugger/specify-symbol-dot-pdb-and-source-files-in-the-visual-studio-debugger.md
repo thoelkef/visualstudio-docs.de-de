@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892447"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
@@ -155,7 +155,7 @@ Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen**
   Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.  
   
@@ -179,7 +179,7 @@ Wenn Sie ein Projekt erstellen, aus der Visual Studio-IDE mit dem Standard **Deb
     
     Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >*, die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.  
   
-  - *\<Projekt > PDB-Datei* 
+  - *\<project>.pdb* 
     
     Die  *\<Projekt > pdb* Datei werden alle Debuginformationen für des Projekts des *.exe* Datei, und befindet sich in der *\debug* Unterverzeichnis. Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen. 
   

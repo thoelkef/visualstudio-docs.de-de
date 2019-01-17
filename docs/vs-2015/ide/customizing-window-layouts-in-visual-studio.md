@@ -29,10 +29,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934374"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
@@ -57,7 +57,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  Wenn Sie zwei Positionen gleichzeitig in einem Dokument anzeigen oder bearbeiten müssen, können Sie die Fenster teilen. Um das Dokument in zwei Abschnitte zu teilen, durch die unabhängig voneinander gescrollt werden kann, klicken Sie auf **Teilen** im Menü **Fenster** . Klicken Sie auf **Teilung aufheben** im Menü **Fenster** , um die ursprüngliche Ansicht wiederherzustellen.
 
 ### <a name="toolbars"></a>Symbolleisten
- Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zum Positionieren und Anpassen von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+ Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zur Anordnung und Anpassung von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Anordnen und Andocken von Fenstern
  Dokumentfenster und Toolfenster können *angedockt*werden, sodass sie eine Position und Größe innerhalb des IDE-Fensterrahmens haben, oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per Rafting zu außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.
