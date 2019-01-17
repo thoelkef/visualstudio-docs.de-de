@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804337"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347202"
 ---
 # <a name="expected-"></a>';' erwartet
 Sie haben versucht, mehr als eine Anweisung in einer Zeile platziert, aber nicht durch Semikolons getrennt werden. Semikolons werden verwendet, um Anweisungen zu beenden. Obwohl Sie mehrere Anweisungen in einer einzelnen Zeile platzieren können, muss jedes von der nächsten durch ein Semikolon getrennt werden.  

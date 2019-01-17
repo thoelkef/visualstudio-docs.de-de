@@ -1,5 +1,5 @@
 ---
-title: Die Ausnahme ausgelöst und nicht abgefangen | Microsoft Docs
+title: Ausnahme ausgelöst und nicht abgefangen. | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633120"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349035"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Ausnahme ausgelöst und nicht abgefangen
-Sie enthalten eine `throw` Anweisung im Code, aber es wurde keine eingefasst eine **versuchen** blockieren, oder es wurde keine zugeordnete **catch** Block, um den Fehler. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** -block mit einer **catch** -Anweisung.  
+Sie enthalten eine `throw` -Anweisung in Ihrem Code, aber es wurde keine eingefasst eine **versuchen** -Block, oder es wurde keine zugeordnete **catch** Block zum Abfangen des Fehlers. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** -block mit einer **catch** -Anweisung.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Schließen Sie Code, der eine Ausnahme, in auslösen kann eine **versuchen** blockieren, und Sie sicher, dass es ein entsprechendes **catch** Block.  
+-   Einschließen von Code, der eine Ausnahme, in auslösen kann eine **versuchen** blockieren, und stellen Sie sicher, es wird eine entsprechende **catch** Block.  
   
 -   Stellen Sie sicher, dass die Catch-Anweisung erwartet, dass die richtige Art der Ausnahme.  
   
@@ -40,5 +40,5 @@ Sie enthalten eine `throw` Anweisung im Code, aber es wurde keine eingefasst ein
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)   
- [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

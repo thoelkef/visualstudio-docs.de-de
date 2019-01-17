@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl-Schnittstelle | Microsoft Docs
+title: IActiveScriptProfilerControl-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724670"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349490"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl-Schnittstelle
-Implementiert das Skriptmodul, das profilerstellung unterstützt. In der Regel ein Objekt, implementiert die `IActiveScriptProfilerControl` implementiert außerdem die [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstelle. In diesem Fall erhalten Sie ein Handle für die `IActiveScriptProfilerControl` Schnittstelle durch Aufrufen der `IUnknown::QueryInterface` -Methode für das Objekt. Die Schnittstelle enthält die erforderlichen Methoden für das Skriptmodul für die profilerstellung starten und beenden.  
+Durch die Skript-Engine, die profilerstellung unterstützt implementiert. In der Regel auf ein Objekt, implementiert die `IActiveScriptProfilerControl` implementiert auch die [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstelle. In diesem Fall erhalten Sie ein Handle für die `IActiveScriptProfilerControl` Schnittstelle durch Aufrufen der `IUnknown::QueryInterface` Methode für das Objekt. Die Schnittstelle enthält die erforderlichen Methoden für das Beenden und starten die profilerstellung auf die Skript-Engine.  
   
 ## <a name="methods"></a>Methoden  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Mit der profilerstellung auf das Skriptmodul beginnt.|  
-|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|Legt den Profiler Event Maske in das Skriptmodul fest.|  
-|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Beendet die profilerstellung auf dem Skriptmodul.|  
+|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Startet die profilerstellung auf die Skript-Engine.|  
+|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|Legt den Profiler Ereignismaske in die Skript-Engine fest.|  
+|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Beendet die profilerstellung auf die Skript-Engine.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Profilerschnittstelle](../../winscript/reference/active-script-profiler-interfaces.md)

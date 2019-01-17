@@ -1,5 +1,5 @@
 ---
-title: IDispError-Schnittstelle | Microsoft Docs
+title: IDispError-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f139d317db5aa00f03f8e9abd71020e5ff35b03
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b717ebfe740a9b356513bb0f15e90c629a14e147
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728110"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345837"
 ---
 # <a name="idisperror-interface"></a>IDispError-Schnittstelle
-Stellt ausführliche Informationen zu kontextbezogenen bereit.  
+Stellt ausführliche kontextbedingte Fehlerinformationen bereit.  
   
 > [!NOTE]
 >  Diese Schnittstelle ist nicht implementiert.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDispError` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDispError` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Ruft eine bestimmte Art von Fehlerinformationen ab.|  
-|[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Ruft den nächsten `IDispError` Objekt.|  
+|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Ruft einen bestimmten Typ von Fehlerinformationen ab.|  
+|[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Ruft die nächste `IDispError` Objekt.|  
 |[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Ruft den Fehlercode aus der `IDispError` Objekt.|  
-|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Gibt den sprachabhängig programmgesteuerten Bezeichner für die Klasse oder eine Anwendung, die den Fehler ausgelöst.|  
-|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Gibt den Pfad der Hilfedatei und des Themas, die den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.|  
-|[IDispError::GetDescription](../../winscript/reference/idisperror-getdescription.md)|Gibt eine Beschreibung des Fehlers zurück.|
+|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Gibt den sprachabhängige programmgesteuerten Bezeichner für die Klasse oder eine Anwendung, die den Fehler ausgelöst hat.|  
+|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.|  
+|[IDispError::GetDescription](../../winscript/reference/idisperror-getdescription.md)|Gibt eine textbeschreibung des Fehlers zurück.|

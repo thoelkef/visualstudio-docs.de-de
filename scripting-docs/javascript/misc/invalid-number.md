@@ -1,5 +1,5 @@
 ---
-title: Ungültige Anzahl | Microsoft Docs
+title: Ungültige Anzahl | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632910"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346812"
 ---
 # <a name="invalid-number"></a>Ungültige Zahl
 Ungültige Anzahl (ErrbadNumber 1013)  
   
  Sie haben versucht, eine Zahl zu verwenden, die in JavaScript nicht gültig ist.  
   
- Informationen über gültige Nummern finden Sie unter [Number-Objekt](../../javascript/reference/number-object-javascript.md).
+ Weitere Informationen zu gültigen Zahlen finden Sie unter [Number-Objekt](../../javascript/reference/number-object-javascript.md).

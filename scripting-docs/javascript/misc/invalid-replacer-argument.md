@@ -1,5 +1,5 @@
 ---
-title: Ungültiges Replacer-Argument | Microsoft Docs
+title: Ungültiges Replacer-Argument | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632860"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346214"
 ---
 # <a name="invalid-replacer-argument"></a>Ungültiges replacer-Argument
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Argument, das ungültig ist. Die `replacer` -Argument muss eine Funktion oder ein Array sein.  
@@ -35,7 +35,7 @@ Wurde versucht, aufzurufen `JSON.stringify` mit einem Argument, das ungültig is
 -   Ändern der `replacer` Argument an eine Funktion oder ein Array.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ist ein Objekt anstelle einer Funktion oder einem Array.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ist ein Objekt anstelle einer Funktion oder eines Arrays.  
   
 ```JavaScript  
 var contact = new Object();  

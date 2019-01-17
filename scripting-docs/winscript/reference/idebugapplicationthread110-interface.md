@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110-Schnittstelle | Microsoft Docs
+title: IDebugApplicationThread110-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aee30ae68319810f58bf31f8d0eb32cf8f30d34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 170b345bdb4587d1fd29c1f0f906df0157abd877
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726350"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348918"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110-Schnittstelle
-Bietet mehr Funktionen für die [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md) Schnittstelle.  
+Stellt weitere Funktionen für die [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md) Schnittstelle.  
   
 > [!IMPORTANT]
 >  Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
@@ -32,7 +32,7 @@ Bietet mehr Funktionen für die [IDebugApplicationThread-Schnittstelle](../../wi
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugApplicationThread110::AsynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread110-asynchronouscallintothread.md)|Stellt einen asynchronen Aufruf im Hauptthread an.|  
-|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Die Anzahl der, wie viele Threadanforderungen von der PDM Thread wechseln Mechanismen gerade verarbeitet werden. In der Regel's 0 oder 1, aber sie möglich, dass diese Option, um die höher sein, wenn ein Thread Aufruf Verarbeitung gestartet wurde, jedoch wird, einen synchronen Aufruf nicht genügend Threads ausgelöst oder andernfalls hält den Thread (z. B. durch das Auslösen eines IDebugApplicationEvents-Ereignisses, das auf der Debugger ausgegeben wird Thread)|  
-|[IDebugApplicationThread110::IsSuspendedForBreakPoint](../../winscript/reference/idebugapplicationthread110-issuspendedforbreakpoint.md)|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) in diesem Thread aufgerufen wurde und noch nicht abgeschlossen.|  
-|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Dieser Thread befindet sich in einem Zustand, der Aufrufe, die mithilfe der PDM Threads wechseln Mechanismen (z. B. SynchronousCallInThread) verarbeiten kann.|
+|[IDebugApplicationThread110::AsynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread110-asynchronouscallintothread.md)|Führt einen asynchronen Aufruf im Hauptthread verarbeitet.|  
+|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Die Anzahl der, wie viele Threadanforderungen von Mechanismen für das PDM Threadwechsel gerade verarbeitet werden. In der Regel ist 0 oder 1, aber es möglich, dass diese Option, um die höher sein, wenn ein Thread-Aufruf Verarbeitung gestartet wurde, aber einen synchronen Aufruf aus dem Thread löst oder hält andernfalls den Thread (z. B. durch das Auslösen eines IDebugApplicationEvents-Ereignisses, das für den Debugger ausgegeben wird Thread)|  
+|[IDebugApplicationThread110::IsSuspendedForBreakPoint](../../winscript/reference/idebugapplicationthread110-issuspendedforbreakpoint.md)|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) für diesen Thread aufgerufen wurde und noch nicht abgeschlossen.|  
+|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Dieser Thread befindet sich in einem Zustand, der Aufrufe, die über das PDM Threadwechsel Mechanismen (z. B. SynchronousCallInThread) verarbeiten kann.|

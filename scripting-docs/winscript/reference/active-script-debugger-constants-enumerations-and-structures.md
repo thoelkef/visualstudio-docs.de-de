@@ -1,5 +1,5 @@
 ---
-title: Active Script-Debugger-Konstanten, Enumerationen und Strukturen | Microsoft Docs
+title: Active Script-Debugger-Konstanten, Enumerationen und Strukturen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642070"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345434"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Konstanten, Enumerationen und Strukturen für Active Script-Debugger
 Die folgenden Konstanten, Enumerationen und Strukturen werden von den Active Debugging-Schnittstellen verwendet.  
@@ -31,7 +31,7 @@ Die folgenden Konstanten, Enumerationen und Strukturen werden von den Active Deb
 |Konstanten|Beschreibung|  
 |---------------|-----------------|  
 |[APPBREAKFLAGS-Konstanten](../../winscript/reference/appbreakflags-enumeration.md)|Geben den aktuellen Debugzustand für Anwendungen und Threads an.|  
-|[DEBUG_TEXT-Konstanten](../../winscript/reference/debug-text-constants.md)|Flags, die während der Option [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[DEBUG_TEXT-Konstanten](../../winscript/reference/debug-text-constants.md)|Während der verwendete Optionsflags [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)|Beschreiben die Attribute des Dokuments.|  
   
 |Enumerationen|Beschreibung|  

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug-Schnittstelle | Microsoft Docs
+title: IActiveScriptErrorDebug-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645750"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345200"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug-Schnittstelle
-Stellt Kontextinformationen Dokument für die Kompilierungsfehlern und Laufzeitausnahmen bereit. Die `IActiveScriptError::QueryInterface` -Methode unterstützt die `IActiveScriptErrorDebug` Schnittstelle.  
+Stellt den Dokument-Kontextinformationen für Kompilierungsfehler und Laufzeitausnahmen bereit. Die `IActiveScriptError::QueryInterface` -Methode unterstützt die `IActiveScriptErrorDebug` Schnittstelle.  
   
- Zusätzlich zu den von geerbten Methoden `IActiveScriptError`, `IActiveScriptErrorDebug` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IActiveScriptError`, `IActiveScriptErrorDebug` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Stellt den Dokumentenkontext für diesen Fehler bereit.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Stellt den Stapelrahmen, der für die Common Language Runtime Fehlern gültig ist.|
+|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Der Dokumentenkontext bereitgestellt für diesen Fehler.|  
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Stellt den Stapelrahmen, der für Laufzeitfehler gültig ist.|

@@ -1,5 +1,5 @@
 ---
-title: Syntaxfehler (JavaScript) | Microsoft Docs
+title: Syntaxfehler (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632960"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345369"
 ---
 # <a name="syntax-error-javascript"></a>Syntaxfehler (JavaScript)
-Sie erstellt eine Anweisung, die eine oder mehrere der Grammatikregeln für verletzt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Sie erstellt haben, eine Anweisung, die eine oder mehrere der Grammatikregeln für verletzt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
 -   Überprüfen Sie die Syntax des Programms auf der angegebenen Zeilennummer.  
   
--   Suchen Sie nach fehlgeleiteten runden oder geschweiften Klammern.  
+-   Suchen Sie nach fehlgeleitete runden oder geschweiften Klammern.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

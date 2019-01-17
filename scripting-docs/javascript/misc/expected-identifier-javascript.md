@@ -1,5 +1,5 @@
 ---
-title: Bezeichner (JavaScript) | Microsoft Docs
+title: Bezeichner erforderlich (JavaScript) | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,26 +21,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632870"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349230"
 ---
 # <a name="expected-identifier-javascript"></a>Bezeichner erwartet (JavaScript)
-Sie verwendet etwas anderes als einen Bezeichner in einem Kontext, bei denen eine erforderlich war. Ein Bezeichner ist möglich:  
+Sie verwendet etwas anderes als ein Bezeichner in einem Kontext, in denen eine erforderlich war. Ein Bezeichner kann Folgendes sein:  
   
 -   eine variable  
   
 -   eine Eigenschaft  
   
--   ein array  
+-   ein Array ist,  
   
--   oder Funktionsname.  
+-   oder einem Funktionsnamen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Ändern Sie den Ausdruck auf der linken Seite des Gleichheitszeichens Kanton ein Bezeichners.  
+-   Ändern Sie den Ausdruck aus, damit ein Bezeichner auf der linken Seite des Gleichheitszeichens wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: APPBREAKFLAGS-Enumeration | Microsoft Docs
+title: APPBREAKFLAGS-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641680"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349022"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS-Enumeration
 Geben den aktuellen Debugzustand für Anwendungen und Threads an.  
@@ -38,18 +38,18 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Member|Wert|Beschreibung|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Sprachmodul sollten sofort auf alle Threads mit BREAKREASON_DEBUGGER_BLOCK unterbrechen.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Sprachmodul sollte mit BREAKREASON_DEBUGGER_HALT sofort unterbrechen.|  
-|APPBREAKFLAG_STEP|0x00010000|Sprachmodul sollte in der schrittweisen Thread mit BREAKREASON_STEP sofort unterbrechen.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Sprach-Engine sollte sofort für alle Threads mit BREAKREASON_DEBUGGER_BLOCK unterbrochen.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Sprach-Engine durch BREAKREASON_DEBUGGER_HALT sollte sofort nicht mehr ausgeführt.|  
+|APPBREAKFLAG_STEP|0x00010000|Sprach-Engine sollten sofort in der schrittweisen Ausführung Thread mit BREAKREASON_STEP unterbrochen.|  
 |APPBREAKFLAG_NESTED|0x00020000|Die Anwendung ist in der verschachtelten Ausführung an einem Haltepunkt.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Der Debugger wird auf der Ebene der Datenquelle ausführen in Einzelschritten.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Der Debugger wird auf der Ebene der Byte-Code schrittweise durchlaufen.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Der Debugger wird auf Computerebene ausführen in Einzelschritten.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maske für Ausklammern die Schritttypen.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Der Debugger wird auf der Ebene der Datenquelle schrittweise ausführen.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Der Debugger wird auf der Byteebene für den Code schrittweise ausführen.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Der Debugger wird auf der Computerebene schrittweise ausführen.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maske zum Ausklammern von den Typen.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Ein Haltepunkt ist in Bearbeitung.|  
   
 ## <a name="remarks"></a>Hinweise  
- Einige Kennzeichen angeben, dass die Sprache-Module bei nächster Gelegenheit umgebrochen werden soll, während andere Flags die schrittweise Ausführung des Debuggers angeben.  
+ Einige Kennzeichen angeben, dass die Sprach-Engines bei nächster Gelegenheit, umgebrochen werden soll, während andere Flags Geben Sie die schrittweisen Modus des Debuggers.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Debugger-Konstanten, Enumerationen und Strukturen](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   

@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094631"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345798"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
 Ruft eine scripting-Engine-definierten Bezeichner für den aktuell ausgeführten Thread ab. Der Bezeichner kann z. B. bei nachfolgenden Aufrufen von Skripts Thread ausführungssteuerung Methoden verwendet werden die [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) Methode.  

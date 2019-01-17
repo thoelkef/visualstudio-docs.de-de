@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite | Microsoft Docs
+title: IActiveScriptSite | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,29 +14,29 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23dba403a7889fe46817a21ed8e4be65b1c05b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7ebbd5301ea1d8ea7cabf235ae3f3c7bb1ba3b2
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725010"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346890"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
-Vom Host zum Erstellen einer Website für die Windows-Skriptmodul implementiert. In der Regel werden diese Website mit dem Container aller Objekte verknüpft, die für das Skript (z. B. ActiveX-Steuerelemente) sichtbar sind. In der Regel entspricht dieses Containers in das Dokument oder die Seite angezeigt wird. Microsoft Internet Explorer, würden z. B. solche einen Container für jede HTML-Seite angezeigt wird erstellen. Jede ActiveX-Steuerelement (oder andere Automatisierungsobjekt) auf der Seite und dem Skriptmodul selbst innerhalb dieses Containers aufzählbare wäre.  
+Vom Host zum Erstellen einer Website für die Windows-Skript-Engine implementiert. In der Regel werden diese Website der Container aller Objekte zugeordnet, die an das Skript (z. B. ActiveX-Steuerelemente) sichtbar sind. Dieser Container entsprechen in der Regel in das Dokument oder eine Seite angezeigt wird. Microsoft Internet Explorer würden z. B. solche einen Container für jedes HTML-Seite angezeigt wird erstellen. Jede ActiveX-Steuerelement (oder ein anderes Automatisierungsobjekt) auf der Seite, und die Skript-Engine selbst innerhalb dieses Containers aufzählbare wäre.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |||  
 |-|-|  
 |Methode|Beschreibung|  
-|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Ruft die Gebietsschema-ID, die vom Host verwendet werden, für die Anzeige von Benutzeroberflächenelementen ab.|  
-|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Ruft Informationen über ein Element, das ein Modul durch einen Aufruf von hinzugefügte der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) Methode.|  
-|[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Ruft eine Zeichenfolge mit Host definiert, die eindeutig für die aktuelle Dokumentversion aus Sicht des Hosts ab.|  
-|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Wird aufgerufen, wenn das Skript die Ausführung abgeschlossen wurde.|  
-|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Benachrichtigt den Host, dass das Skriptmodul Status geändert hat.|  
-|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Informieren dem Host, dass ein Ausführungsfehler aufgetreten, während das Modul, das Skript ausgeführt wurde.|  
-|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Benachrichtigt den Host, dass das Skriptmodul begonnen hat den Skriptcode ausführen.|  
-|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Benachrichtigt den Host, dass das Skriptmodul von Skriptcode ausführen zurückgegeben hat.|  
+|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Ruft die Gebietsschema-ID, die vom Host verwendet werden, für die Anzeige der Elemente der Benutzeroberfläche ab.|  
+|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Ruft Informationen über ein Element, das ein Modul durch einen Aufruf von hinzugefügt wurde, die [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) Methode.|  
+|[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Ruft eine vom Host definierte Zeichenfolge, die eindeutig für die aktuelle Version aus der Sicht des Hosts ab.|  
+|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Wird aufgerufen, wenn das Skript die Ausführung abgeschlossen ist.|  
+|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Informiert den Host, dass die Skript-Engine Status geändert hat.|  
+|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Informiert den Host, dass ein Ausführungsfehler aufgetreten, während die Engine das Skript ausgeführt wurde.|  
+|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Informiert den Host, dass die Skript-Engine begonnen hat, den Skriptcode ausführen.|  
+|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Informiert, dass die Skript-Engine, vom Ausführen von Skriptcode zurückgegeben hat des Hosts.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

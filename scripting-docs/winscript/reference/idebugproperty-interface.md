@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty-Schnittstelle | Microsoft Docs
+title: IDebugProperty-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,26 +14,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2888a6d781ecd501128545e483971a47859d9cda
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727060"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348359"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty-Schnittstelle
-Verwendet, um eine hierarchische Eigenschaft der Entität, der debuggt wird beschreiben, die über einen Namen, Typ und Wert verfügt. In den meisten Fällen `IDebugProperty` wird verwendet, um das Ergebnis der Auswertung von Ausdrücken, Auswertung der Anweisung oder Register Evaluation beschrieben.  
+Wird verwendet, um eine hierarchische Eigenschaft der Entität im Debugmodus befindlichen beschreiben, die über einen Namen, Typ und Wert verfügt. In den meisten Fällen `IDebugProperty` wird verwendet, um das Ergebnis der Auswertung von Ausdrücken, Auswertung der Anweisung oder Register Evaluation beschreiben.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugProperty` Schnittstelle.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Abrufen der `DebugPropertyInfo` , die eine Beschreibung`IDebugProperty``.`|  
-|[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Ruft die erweiterten Informationen für eine Eigenschaft ab.|  
+|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Abrufen der `DebugPropertyInfo` , die zeigt, wie diese `IDebugProperty``.`|  
+|[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Ruft den erweiterten Informationen für eine Eigenschaft ab.|  
 |[IDebugProperty::SetValueAsString](../../winscript/reference/idebugproperty-setvalueasstring.md)|Legt den Wert einer Eigenschaft aus einer Zeichenfolge fest.|  
-|[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Listet die Elemente einer Eigenschaft an.|  
-|[IDebugProperty::GetParent](../../winscript/reference/idebugproperty-getparent.md)|Ruft das übergeordnete Element einer Eigenschaft ab.|  
+|[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Listet die Member einer Eigenschaft.|  
+|[IDebugProperty::GetParent](../../winscript/reference/idebugproperty-getparent.md)|Ruft das übergeordnete Element eine Eigenschaft ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: dbgprop.h

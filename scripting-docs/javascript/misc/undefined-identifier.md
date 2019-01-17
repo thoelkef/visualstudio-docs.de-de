@@ -1,5 +1,5 @@
 ---
-title: Nicht definierter Bezeichner | Microsoft Docs
+title: Nicht definierter Bezeichner | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633580"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346136"
 ---
 # <a name="undefined-identifier"></a>Nicht definierter Bezeichner
-Sie haben versucht, einen Bezeichner verwenden, die die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkennt. Nicht definierte Wert wird zurückgegeben, wenn Sie verwenden:  
+Sie haben versucht, einen Bezeichner verwenden, die die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkennt. Den nicht definierte Wert wird zurückgegeben, wenn Sie verwenden:  
   
 -   eine Variable, die nicht vorhanden ist,  
   
--   eine Variable, die deklariert, aber nie war wurde ein Wert zugewiesen werden,  
+-   eine Variable, die deklariert wurde, aber noch nie war ein Wert zugewiesen,  
   
 -   eine Objekteigenschaft, die nicht vorhanden ist.  
   

@@ -1,5 +1,5 @@
 ---
-title: Bezeichnung wurde neu definiert | Microsoft Docs
+title: Neudefinition einer Bezeichnung | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633020"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347813"
 ---
 # <a name="label-redefined"></a>Die Bezeichnung wurde neu definiert
-Sie erstellt eine neue Bezeichnung, aber den Namen einer vorhandenen Bezeichnung zugewiesen. Bezeichnungen können verwendet werden, um die Codeblöcke markieren, innerhalb eines angegebenen Bereichs, sie müssen jedoch eindeutig sein.  
+Sie erstellt eine neue Bezeichnung, aber den Namen einer vorhandenen Bezeichnung zugewiesen. Bezeichnungen können verwendet werden, um Blöcke von Code zu markieren, aber innerhalb eines angegebenen Bereichs ist, sie muss eindeutig sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass alle Bezeichnungen an, die Sie in Ihren Programmen zu verwenden in ihren jeweiligen Gültigkeitsbereichen eindeutig sind.  
+-   Stellen Sie sicher, dass alle Bezeichnungen, die Sie in Ihren Programmen verwenden in ihren jeweiligen Gültigkeitsbereichen eindeutig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   

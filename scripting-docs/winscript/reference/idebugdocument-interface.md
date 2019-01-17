@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument-Schnittstelle | Microsoft Docs
+title: IDebugDocument-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 207dc0166cb9d0a59e99c03c511ec9bd75ea4bf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b70ef255b5f1e5eed4d36373274bc05cf92e67
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725750"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344290"
 ---
 # <a name="idebugdocument-interface"></a>IDebugDocument-Schnittstelle
-Die Basisschnittstelle für alle Debug-Dokumente.  
+Die Basisschnittstelle für alle Debugdokumente.  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IDebugDocument` Schnittstelle verfügbar macht, die von geerbten Methoden [IDebugDocumentInfo-Schnittstelle](../../winscript/reference/idebugdocumentinfo-interface.md). Keine zusätzlichen Methoden ist nicht verfügbar machen.
+ Die `IDebugDocument` Schnittstelle verfügbar macht, nur die Methoden, die vererbt [IDebugDocumentInfo-Schnittstelle](../../winscript/reference/idebugdocumentinfo-interface.md). Es ist keine zusätzlichen Methoden verfügbar.

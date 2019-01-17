@@ -1,5 +1,5 @@
 ---
-title: IActiveScript | Microsoft Docs
+title: IActiveScript | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,33 +14,33 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68d91a7ad91364d0c2133150d76cdb221929b16b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 340a76dbb6d81c78463fa644dafcbe8097508561
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645680"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346708"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Stellt die Methoden zum Initialisieren des verwendeten Skriptmoduls. Das Skriptmodul implementieren muss die `IActiveScript` Schnittstelle.  
+Stellt die Methoden, die zum Initialisieren der Skript-Engine. Muss die Skript-Engine implementiert die `IActiveScript` Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informiert das Skriptmodul von der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Website, die vom Host bereitgestellt.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Ruft das Site-Objekt, das das Windows-Skriptmodul zugeordnet.|  
-|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Setzt das Skriptmodul in den angegebenen Zustand übergeht.|  
+|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informiert die Skript-Engine, der die [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Website, die vom Host bereitgestellt wird.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Ruft das zugeordnete Windows-Skript-Engine-Objekt ab.|  
+|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Platziert die Skript-Engine in den angegebenen Zustand.|  
 |[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Ruft den aktuellen Status des verwendeten Skriptmoduls ab.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Bewirkt, dass das Skriptmodul in verwerfen Sie alle derzeit geladenes Skript, verlieren den Zustand, und lassen Sie alle Schnittstellenzeiger er für andere Objekte, daher eingeben Zustand "geschlossen" aufweist.|  
-|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Namespace für das Skriptmodul hinzugefügt den Namen eines Elements auf der Stammebene.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Bewirkt, dass die Skript-Engine alle aktuell geladenen Skripts abbrechen, verlieren den Zustand und release-Schnittstellenzeiger auf die sie für andere Objekte, also einen geschlossenen Zustand verfügt.|  
+|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Der Name eines Elements auf der Stammebene wird auf die Skript-Engine-Namespace hinzugefügt.|  
 |[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Der Namespace für das Skript wird eine Typbibliothek hinzugefügt.|  
-|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Ruft die `IDispatch` Schnittstelle für die Ausführung des Skripts.|  
-|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Ruft einen Bezeichner scripting-Engine-definiert, für den gerade ausgeführten Thread ab.|  
-|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Ruft einen scripting-Engine-definierten Bezeichner für den Thread, der dem angegebenen Microsoft Win32-Thread zugeordnet.|  
+|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Ruft die `IDispatch` Schnittstelle für das ausgeführte Skript ein.|  
+|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Ruft eine scripting-Engine-definierten Bezeichner für den aktuell ausgeführten Thread ab.|  
+|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Ruft ab eine scripting-Engine-definierten Bezeichner für den Thread, der dem angegebenen Microsoft Win32-Thread zugeordnet.|  
 |[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Ruft den aktuellen Status eines Threads Skript ab.|  
-|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Unterbricht die Ausführung von einem ausgeführten Skriptthread an.|  
-|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Klont das aktuelle Skriptmodul (minus alle aktuellen Ausführungsstatus), Rückgabe einer geladenen Skriptmodul, die keine Standort in den aktuellen Thread verfügt.|  
+|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Unterbricht die Ausführung einen ausgeführten Skriptthread an.|  
+|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Klont die aktuelle Skript-Engine (minus alle aktuellen Ausführungsstatus), eine geladene Skript-Engine, die keine Standort in den aktuellen Thread zurückgibt.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)
