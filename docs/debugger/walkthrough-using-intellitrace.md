@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227992"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Anzeigen von Ereignissen mit IntelliTrace in Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Anzeigen von Ereignissen mit IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)
+
 Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereignisse oder Ereigniskategorien oder zum Erfassen von einzelnen Funktionsaufrufen zusätzlich zu den Ereignissen verwenden. In der folgenden Vorgehensweisen wird gezeigt, wie dies umzusetzen ist.  
   
- Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden, jedoch nicht in der Professional oder Community Edition.  
+Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden, jedoch nicht in der Professional oder Community Edition.  
   
-##  <a name="GettingStarted"></a> Konfigurieren von Intellitrace  
+##  <a name="GettingStarted"></a> Konfigurieren von IntelliTrace  
+
  Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. IntelliTrace-Ereignisse sind Debuggerereignisse, Ausnahmen, .NET Framework-Ereignisse und andere Systemereignisse. Bevor Sie mit dem Debuggen beginnen, sollten Sie bestimmte Ereignisse aktivieren oder deaktivieren, um die von IntelliTrace aufgezeichneten Ereignisse zu steuern. Weitere Informationen finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
  - Aktivieren Sie das IntelliTrace-Ereignis für den Dateizugriff. Wechseln Sie zur Seite **Extras > Optionen > IntelliTrace > IntelliTrace-Ereignisse**, und erweitern Sie die Kategorie **Datei**. Aktivieren Sie die Ereigniskategorie **Datei** . Dadurch werden alle Dateiereignisse (Zugriff, Schließen, Löschen) überprüft.
@@ -62,7 +64,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
      Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update 1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 3.  Wählen Sie das Ereignis aus, um die Details zu erweitern.  
   
@@ -76,7 +78,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
      Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update 1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 4.  Wenn Sie den Fehler nicht finden, überprüfen Sie andere Ereignisse, die zu dem Fehler geführt haben. Sie können auch veranlassen, dass IntelliTrace Aufrufinformationen aufzeichnet, damit Sie die Funktionsaufrufe schrittweise durchlaufen können. 
   

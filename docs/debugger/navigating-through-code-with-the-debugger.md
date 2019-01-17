@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931423"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204487"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
-Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
+Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
   
 ## <a name="basic-debugging"></a>Debuggen – Grundlagen  
 
 Um Ihre app mit dem angefügten Debugger zu starten, drücken Sie die **F5**Option **Debuggen** > **Debuggen starten**, oder wählen Sie den grünen Pfeil in der Visual Studio-Symbolleiste.  
   
- ![DBG&#95;Grundlagen&#95;starten&#95;Debuggen](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 Während des Debuggens, zeigt eine gelbe Hervorhebung die Codezeile, die weiter ausgeführt wird.  
   

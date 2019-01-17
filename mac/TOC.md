@@ -1,7 +1,15 @@
-# [Einführung in Visual Studio für Mac](index.md)
-# [IDE Tour (IDE-Tour)](ide-tour.md)
+---
+ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315474"
+---
+# [Visual Studio für Mac](index.md)
+# [IDE Tour (IDE-Tour)](/visualstudio/mac/ide-tour/)
 
-# [Installation](installation.md)
+# [Installation](/visualstudio/mac/installation/)
 ## [Installieren und Verwenden hinter einer Firewall oder einem Proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Installieren einer Vorschauversion](install-preview.md)
 ## [Update (Aktualisieren)](update.md)
@@ -65,6 +73,7 @@
 ### [Using Unity Tools (Verwenden von Unity-Tools)](using-vsmac-tools-unity.md)
 ### [Verwenden von .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Mobile Apps mit Xamarin](/xamarin/)
 
 # [Barrierefreiheit](accessibility.md)
 

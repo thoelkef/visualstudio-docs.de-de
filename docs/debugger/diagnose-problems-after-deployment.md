@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860909"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228031"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostizieren von Problemen nach der Bereitstellung mit IntelliTrace
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostizieren von Problemen nach der Bereitstellung mithilfe von IntelliTrace (C#, Visual Basic)
 
 Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrace zu diagnostizieren, geben Sie Buildinformationen zu Ihrer Version mit an, damit Visual Studio automatisch die richtigen Quelldateien und Symboldateien findet, die für das Debuggen des IntelliTrace-Protokolls erforderlich sind.
 
@@ -147,7 +147,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 ###  <a name="MSBuild"></a> Erstellen des Buildmanifests für einen manuellen Buildvorgang mithilfe von „MSBuild.exe“
  Fügen Sie diese Buildargumente beim Ausführen des Builds hinzu:
 
- **/p:GenerateBuildInfoConfigFile = True**
+ **/p:GenerateBuildInfoConfigFile=True**
 
  **/p:IncludeServerNameInBuildInfo=True**
 

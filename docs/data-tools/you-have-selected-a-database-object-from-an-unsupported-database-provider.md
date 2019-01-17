@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894440"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204247"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt.
 
@@ -23,17 +23,11 @@ Die **O/R Designer** unterstützt nur die .NET Framework-Datenanbieter für SQL 
 > [!NOTE]
 > Es werden nur Datenverbindungen unterstützt, die den .NET Framework-Datenanbieter für SQL Server verwenden.
 
-## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
+## <a name="options"></a>Optionen
 
-- Klicken Sie auf **OK**.
+- Klicken Sie auf **OK**, um mit dem Entwerfen der Entitätsklassen fortzufahren, die der Verbindung mit dem nicht unterstützten Datenbankanbieter zugeordnet sind. Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.
 
-   Sie können das Entwerfen der Entitätsklassen, die der Verbindung zugeordnet werden soll, die den nicht unterstützten Datenbankanbieter verwendet, weiterhin. Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.
-
-    - oder - 
-
-- Klicken Sie auf **Abbrechen**.
-
-   Die Aktion wird beendet. Erstellen oder verwenden Sie eine Datenverbindung, die .NET Framework-Anbieter für SQL Server verwendet.
+- Klicken Sie auf **Abbrechen** zum Beenden des. Erstellen Sie oder verwenden Sie eine andere Datenverbindung, die den .NET Framework-Datenanbieter für SQL Server verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

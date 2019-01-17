@@ -1,8 +1,6 @@
 ---
 title: Befehlszeilen-Erfassungstool | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775551"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960653"
 ---
 # <a name="command-line-capture-tool"></a>Befehlszeilen-Erfassungs-Tool
 DXCap.exe ist ein Befehlszeilenprogramm für die Aufzeichnung und Wiedergabe der Grafikdiagnose. Es unterstützt Direct3D 10 bis Direct3D 12 auf allen Funktionsebenen.  
@@ -36,7 +34,7 @@ DXCap.exe -info
  `-file` `filename`  
  Unter dem Erfassungsmodus (`-c`), `filename` gibt den Namen der grafikprotokolldatei an, die Grafikinformationen aufgezeichnet werden. Wenn `filename` nicht angegeben ist, werden Grafikinformationen in eine Datei namens aufgezeichnet `<appname>-<date>-<time>.vsglog` standardmäßig.  
   
- Unter Gültigkeitsprüfung (-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, das grafikprotokoll an, die zuletzt überprüft wurde, erneut verwendet.  
+ Unter Validierungs(-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, das grafikprotokoll an, die zuletzt überprüft wurde, erneut verwendet.  
   
  `-frame` `frames`  
  Unter dem Erfassungsmodus gibt `frames` die Frames an, die Sie erfassen möchten. Der erste Frame ist 1. Sie können mehrere Frames mithilfe von Kommas und Bereichen angeben. Z. B. wenn `frames` ist `2, 5, 7-9, 15`, dann werden die frames `2`, `5`, `7`, `8`, `9`, und `15` erfasst werden.  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- Der Befehl im obigen Beispiel zeichnet Grafikinformationen aus der Desktopversion von Internet Explorer beim Anzeigen der Webseite am www.fishgl.com die WebGL-API, die zum Rendern von 3D-Inhalt verwendet.  
+ Der Befehl in dem obigen Beispiel zeichnet Grafikinformationen aus der Desktopversion von Internet Explorer auf, während die Webseite unter www.fishgl.com angezeigt wird. Diese verwendet die WebGL-API zum Rendern des 3-D-Inhalts.  
   
 > [!NOTE]
->  Da die Befehlszeilenargumente, die nach der Anwendung angezeigt werden, die an ihn übergeben werden, müssen Sie die Argumente, die für die DXCap.exe vor der Verwendung vorgesehen angeben der `-c` Option.  
+>  Da die nach der App angezeigten Befehlszeilenargumente an sie übergeben werden, müssen Sie die für „DXCap.exe“ bestimmten Argumente vor der `-c`-Option angeben.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Erfassen Sie Grafikinformationen aus einer UWP-app.  
  Sie können Grafikinformationen aus einer UWP-app erfassen.  
@@ -163,16 +161,16 @@ DXCap.exe -e map
  Der obige Befehl listet die UWP-apps, die mit "Zuordnung"; übereinstimmen. So sieht die Ausgabe aus:  
   
  **Package "Microsoft.BingMaps":**  
- **InstallDirectory: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **"FullName": Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Name: Microsoft.BingMaps**  
- **Herausgeber: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Version: 2.1.2914.1734**  
+ &Name: Microsoft.BingMaps**  
+ **Publisher CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          : 2.1.2914.1734**  
  **Ausführbare Anwendungen:**  
- **ID: AppexMaps**  
- **Exe: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: Nein**  
+ **ID AppexMaps**  
+ **Exe C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: Nein  
  **AppSpec (zum Starten): DXCap.exe - C Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** die letzte Zeile der Ausgabe für jede aufgelistete Anwendung zeigt der Befehl, der sie Grafikinformationen erfassen können.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Erfassen Sie bestimmte Bilder oder Bilder zwischen bestimmten Zeiten.  
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>Überprüfen einer Grafikprotokolldatei anhand von WARP  
- Unter dem Validierungsmodus wird die Grafikprotokolldatei sowohl auf Hardware als auch WARP wiedergegeben und ihre Ergebnisse werden verglichen. Dadurch können Sie die Rendering-Fehler identifizieren, die vom Treiber verursacht werden. Verwenden Sie zum Überprüfen des richtigen Verhaltens der Grafikhardware gegenüber WARP - V.  
+ Unter dem Validierungsmodus wird die Grafikprotokolldatei sowohl auf Hardware als auch WARP wiedergegeben und ihre Ergebnisse werden verglichen. Dadurch können Sie die Rendering-Fehler identifizieren, die vom Treiber verursacht werden. Verwenden Sie „-v“ zum Überprüfen des Verhaltens der Grafikhardware gegenüber WARP.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Um das Vergleichsmaß zu verringern, können Sie eine Teilmenge der Befehle für die Validierung des Vergleichs angeben, und andere Befehle werden ignoriert. Verwenden Sie - examine, um die Befehle anzugeben, deren Ergebnisse Sie vergleichen möchten.  
+ Um das Vergleichsmaß zu verringern, können Sie eine Teilmenge der Befehle für die Validierung des Vergleichs angeben, und andere Befehle werden ignoriert. Verwenden Sie „-examine“, um die Befehle anzugeben, deren Ergebnisse Sie vergleichen möchten.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  

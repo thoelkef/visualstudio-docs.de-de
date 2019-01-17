@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947412"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204486"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Überprüfen von Variablen in den Fenstern "Auto" und "lokal"
 
-Die **"Auto"** und **"lokal"** Windows zeigen Variablenwerte an, während des Debuggens. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **"Auto"** Fenster zeigt die Variablen, die in der Nähe der aktuellen Haltepunkt verwendet. Die **"lokal"** Fenster zeigt die Variablen, die im lokalen Gültigkeitsbereich, in der Regel die aktuelle Funktion oder Methode definiert. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md) und [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) , bevor Sie diesen Artikel durchgehen.
+Die **"Auto"** und **"lokal"** Windows zeigen Variablenwerte an, während des Debuggens. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **"Auto"** Fenster zeigt die Variablen, die in der Nähe der aktuellen Haltepunkt verwendet. Die **"lokal"** Fenster zeigt die Variablen, die im lokalen Gültigkeitsbereich, in der Regel die aktuelle Funktion oder Methode definiert. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
  Die **"Auto"** Fenster ist verfügbar für C#, Visual Basic, C++ und Python-Code, aber nicht für JavaScript oder F#.
   
@@ -39,7 +39,7 @@ Zum Öffnen der **"lokal"** wählen Sie im Fenster während des Debuggens **Debu
 
 Anzeigen von Arrays und Objekten in der **"Auto"** und **"lokal"** Windows-as-Struktur-Steuerelemente. Wählen Sie den Pfeil links neben der Name einer Variablen um die Ansicht zum Anzeigen von Feldern und Eigenschaften erweitern. Hier ist ein Beispiel für eine <xref:System.IO.FileStream?displayProperty=fullName> -Objekt in der **"lokal"** Fenster:
 
-!["Lokal" die FileStream-](../debugger/media/locals-filestream.png "\"lokal\" die FileStream-")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 Ein Wert in der **"lokal"** oder **"Auto"** bedeutet der Wert wurde seit der letzten Auswertung geändert. Die Änderung möglicherweise aus einer vorherigen Debugsitzung stammen, oder weil Sie den Wert im Fenster geändert haben.
 
@@ -109,7 +109,7 @@ Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepun
 
     Legen Sie einen Haltepunkt in der Zeile `e = 5;` und den Debugger ausführen. Wenn die Ausführung anhält, der **"Auto"** Fenster angezeigt:
 
-    !["Auto" – C++](../debugger/media/autos-cplus.png "\"Auto\" – C++")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     Die Variable `e` ist nicht initialisiert, da die Zeile `e = 5` noch nicht ausgeführt wurde.
 

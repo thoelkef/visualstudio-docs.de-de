@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227329"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace für Visual Studio Enterprise (C#, Visual Basic, C++)
 
 Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codeausführungsverlaufs können Sie beim Debuggen Ihrer Anwendung Zeit sparen. Sie können leicht Fehler finden, da mit IntelliTrace Folgendes möglich ist:
 
@@ -53,7 +53,7 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 | | |
 |---------------------| - |
 | **Vollständige Unterstützung** | – Visual Basic- und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Eingeschränkte Unterstützung** | -Native-apps für Windows-Unterstützung, Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück. Es werden nur Debugger- und Ausnahmeereignissen Ereignisse unterstützt.<br />– .NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur (MVC-Controller, ADO.NET und HTTPClicent) beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- oder ASP.NET Core-apps nicht unterstützt.<br />– F#-Apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt |
+| **Eingeschränkte Unterstützung** | -Schritt C++-apps, die für Windows-Unterstützung, Anzeigen von Momentaufnahmen mithilfe von IntelliTrace, zurück. Es werden nur Debugger- und Ausnahmeereignissen Ereignisse unterstützt.<br />– .NET Core und ASP.NET Core-apps unterstützt nur Ereignisse (MVC-Controller, ADO.NET und HTTPClient-Ereignisse) für bestimmte beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- oder ASP.NET Core-apps nicht unterstützt.<br />– F#-Apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt |
 | **Nicht unterstützt** | -Andere Sprachen und Skript<br />– Windows-Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]-Apps |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 Sie können konfigurieren, dass IntelliTrace zum Aufzeichnen von Momentaufnahmen an jedem Haltepunkt und debugger Schrittereignis. IntelliTrace zeichnet die vollständigem Anwendungszustand auf jede Momentaufnahme, in dem Sie komplexe Variablen anzeigen und zum Auswerten von Ausdrücken kann.
 
 > [!NOTE]
-> Die [eigenständigen IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md) erfassen Snapshots wird nicht unterstützt.
+> Die [eigenständigen IntelliTrace Collector](../debugger/using-the-intellitrace-stand-alone-collector.md) Erfassen von Momentaufnahmen nicht unterstützt.
 
 Finden Sie unter [überprüfen Sie die vorherigen app-Status, die mithilfe von IntelliTrace](../debugger/view-historical-application-state.md).
 

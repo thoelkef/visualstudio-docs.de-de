@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927154"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270059"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
-Lesen Sie dieses Thema, um ein paar produktivitätstipps und Tricks für Visual Studio-Debugger zu erfahren. Informationen zu den grundlegenden Funktionen des Debuggers, finden Sie unter [Debugger – Featuretour](../debugger/debugger-feature-tour.md). In diesem Thema werden einige Bereiche, die nicht in der Führung durch Features enthalten sind.
+Lesen Sie dieses Thema, um ein paar produktivitätstipps und Tricks für Visual Studio-Debugger zu erfahren. Informationen zu den grundlegenden Funktionen des Debuggers, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md). In diesem Thema werden einige Bereiche, die nicht in der Führung durch Features enthalten sind.
 
 ## <a name="pin-data-tips"></a>PIN-Datentipps
 
@@ -88,7 +88,7 @@ Weitere Informationen finden Sie unter [erstellen Sie eine Objekt-ID](../debugge
 
 Um die Rückgabe von Werten für Ihre Funktionen anzeigen, sehen Sie sich die Funktionen, die in angezeigt werden die **"Auto"** Fenster, während Sie durch den Code schrittweise ausführen. Um den Rückgabewert für eine Funktion anzuzeigen, stellen Sie sicher, dass die Funktion, die Sie interessiert sind, bereits ausgeführt wurde (drücken Sie die **F10** einmal, wenn Sie derzeit für den Funktionsaufruf beendet sind). Wenn das Fenster geschlossen wird, verwenden Sie **Debuggen > Windows > "Auto"** zum Öffnen der **"Auto"** Fenster.
 
-![Fenster Auto Fenster](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Autos Window](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 Darüber hinaus können Sie Funktionen in eingeben der **direkt** Fenster zum Anzeigen der Rückgabewerte. (Öffnen Sie sie in **Debuggen > Windows > direkt**.)
 

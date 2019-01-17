@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768507"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
@@ -51,7 +51,7 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 5.  Klicken Sie auf **Speichern**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren Berichte für Profilerstellungstools zu einer XML- oder CSV-Datei  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren von Berichten der Profilerstellungstools in eine XML- oder CSV-Datei  
  Sie können eine oder mehrere Berichtsansichten aus einer VSP-Datei oder einer VSP-Profilerstellungsdatendatei als eine durch Trennzeichen getrennte Datei oder als XML-Datei exportieren. Sie können die Daten im Fenster „Berichtsansicht“ filtern, bevor Sie exportieren, oder Sie können Berichtsansichten der gesamten Datendatei aus dem Fenster **Leistungs-Explorer** exportieren.  
   
 > [!NOTE]
@@ -69,7 +69,7 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 4.  Geben Sie unter **Speicherort des exportierten Berichts**das Verzeichnis an.  
   
-5.  Klicken Sie unter **Format des exportierten Berichts**, wählen Sie (durch Trennzeichen getrennt) (*.csv) oder XML-Daten (\*XML).  
+5.  Wählen Sie unter **Format des exportierten Berichts** eine (durch Trennzeichen getrennte) CSV-Datei (*.csv) oder XML-Daten (\*.xml) aus.  
   
 6.  Klicken Sie auf **Exportieren**.  
   
@@ -89,7 +89,7 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 6.  Geben Sie unter **Speicherort des exportierten Berichts**das Verzeichnis an.  
   
-7.  Klicken Sie unter **Format des exportierten Berichts**, wählen Sie (durch Trennzeichen getrennt) (*.csv) oder XML-Daten (\*XML).  
+7.  Wählen Sie unter **Format des exportierten Berichts** eine (durch Trennzeichen getrennte) CSV-Datei (*.csv) oder XML-Daten (\*.xml) aus.  
   
 8.  Klicken Sie auf **Exportieren**.  
   

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389486"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53926881"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Gewusst wie: Überprüfen von IIS-Eigenschafteneinstellungen
+# <a name="how-to-verify-iis-property-settings"></a>Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen
 
 Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool festlegen. Diese Eigenschaften müssen korrekt festgelegt sein, damit die Anwendung ausgeführt werden kann. Das Überprüfen dieser Einstellungen ist daher ein häufig erforderlicher Schritt bei der Fehlerbehebung.
 
@@ -37,7 +35,7 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>So überprüfen Sie die IIS-Einstellungen der Webanwendung
 
-1. Öffnen Sie das Fenster **Verwaltung**. Zeigen Sie dazu im **Startmenü** auf **Programme**, und klicken Sie dann auf **Verwaltung**. Falls der Eintrag **Verwaltung** nicht im Menü **Programme** vorhanden ist, befindet er sich in der **Systemsteuerung**.
+1. Öffnen Sie das Fenster **Verwaltung**. Auf der **starten** Startmenü **Programme**, und klicken Sie dann auf **Verwaltung**. Falls der Eintrag **Verwaltung** nicht im Menü **Programme** vorhanden ist, befindet er sich in der **Systemsteuerung**.
 
    -   Unter Windows 2000 klicken Sie auf **Internetdienste-Manager**.
 
@@ -61,7 +59,7 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
 
    3.  Klicken Sie auf **OK**, um das Dialogfeld **Authentifizierungsmethoden** zu schließen.
 
-5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen von DEBUG Verb mit der Erweiterung](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Ordnen Sie DEBUG-Verb, mit der Erweiterung](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Stellen Sie bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung sicher, dass für das virtuelle Verzeichnis der Anwendung in **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** ein Anwendungsname festgelegt ist.
 

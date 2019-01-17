@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820915"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227719"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden den eigenständigen IntelliTrace Collector (C#, Visual Basic)
+
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.
 
  Sehen Sie IntelliTrace in Aktion: [Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -118,7 +119,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 2.  Verwenden Sie den Windows-Befehl **icacls** , um dem Serveradministrator vollständige Berechtigungen für das Collector-Verzeichnis einzuräumen. Beispiel:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  So sammeln Sie Daten für eine Web App oder eine SharePoint-Anwendung:
 
@@ -126,7 +127,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
          Beispiel:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID-Paar >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Räumen Sie dem Anwendungspool für die Webanwendung oder SharePoint-Anwendung Lese-/Schreib-Berechtigungen für das Collector-Verzeichnis ein.
 
@@ -190,7 +191,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - oder -
+       - oder - 
 
    - So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:
 
@@ -212,7 +213,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 1.  Um mit dem Sammeln von Daten zu beginnen, öffnen Sie ein PowerShell-Befehlsfenster als Administrator, dann führen Sie diesen Befehl aus:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Nach Ausführen dieses Befehls, geben Sie **Y** ein, um zu bestätigen, dass Sie mit dem Sammeln von Daten beginnen möchten.
@@ -254,7 +255,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 1.  Um die App zu starten und gleichzeitig Daten zu erfassen, verwenden Sie die folgende Syntax:
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      So sammeln Sie beispielsweise Daten von einer App namens **MyApp**:
 
