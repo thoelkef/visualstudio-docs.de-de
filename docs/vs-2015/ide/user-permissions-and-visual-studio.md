@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83a45aaebbf621a5ae84a0ae4bdf3379697a47e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34eab1bed0113c3fbe39574c9ef2a4c2822af5c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858369"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +52,8 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 ||Verwenden des Emulators zum Debuggen von Cloud-Dienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Leistungstools|Profilerstellung für eine Anwendung|[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)|
-|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter mit Visual Studio oder Visual Web Developer: Bereitstellen in IIS als Testumgebung](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[How to: Send Feedback (Vorgehensweise: Senden von Feedback)](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[Vorgehensweise: Send Feedback (Vorgehensweise: Senden von Feedback)](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator
  Sie können Visual Studio bei jedem Starten der IDE mit Administratorberechtigungen starten, oder Sie können die Anwendungsverknüpfung so ändern, dass sie immer mit Administratorberechtigungen ausgeführt werden muss. Weitere Informationen finden Sie in der Windows-Hilfe.
