@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53899612"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
@@ -160,8 +160,8 @@ Geben Sie einen laufenden Prozess anfügen, in Visual Studio schnell auf **STRG*
 |-|-|-|-|
 |Remotedebuggen von ASP.NET 4 oder 4.5 auf einem IIS-server|Remotetools verwenden und **an den Prozess anhängen**|*w3wp.exe*|Finden Sie unter [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Remotedebuggen von ASP.NET Core auf einem IIS-server|Remotetools verwenden und **an den Prozess anhängen**|*dotnet.exe*|App-Bereitstellung, finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html). Debuggen, finden Sie unter [Remote debugging ASP.NET Core auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debuggen des clientseitigen Skripts auf einem lokalen IIS-Server, für unterstützte app-Typen |Verwendung **an den Prozess anhängen**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, oder *iexplore.exe*|Debuggen von Skripts muss aktiviert sein. Chrome, müssen Sie auch Chrome im Debugmodus befindet, und wählen ausführen **Webkit-Code** in die **Anfügen an** Feld.|
-|Debuggen einer C#, Visual Basic oder C++-app auf dem lokalen Computer|Verwenden Sie entweder [standard Debuggen](../debugger/debugger-feature-tour.md) oder **an den Prozess anhängen**|*\<Appname > .exe*|In den meisten Szenarien verwenden standard Debuggen und nicht **an den Prozess anhängen**.|
+|Debuggen des clientseitigen Skripts auf einem lokalen IIS-Server, für unterstützte app-Typen |Verwendung **an den Prozess anhängen**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Debuggen von Skripts muss aktiviert sein. Chrome, müssen Sie auch Chrome im Debugmodus befindet, und wählen ausführen **Webkit-Code** in die **Anfügen an** Feld.|
+|Debuggen einer C#, Visual Basic oder C++-app auf dem lokalen Computer|Verwenden Sie entweder [standard Debuggen](../debugger/debugger-feature-tour.md) oder **an den Prozess anhängen**|*\<appname>.exe*|In den meisten Szenarien verwenden standard Debuggen und nicht **an den Prozess anhängen**.|
 |Remotedebuggen einer Windows-desktop-app|Remotetools|Nicht zutreffend| Finden Sie unter [Remotedebuggen einer C# oder Visual Basic-Anwendungen](../debugger/remote-debugging-csharp.md) oder [Remote Debuggen einer C++-app](../debugger/remote-debugging-cpp.md)|
 |Debuggen einer ASP.NET-Apps auf dem lokalen Computer aus, nachdem Sie die app ohne den Debugger starten|Verwendung **an den Prozess anhängen**|*iiexpress.exe*|Dies kann hilfreich sein, Ihre App laden schneller, z. B. (z. B.) bei der profilerstellung. |
 |Debuggen Sie andere unterstützte app-Typen für einen Serverprozess|Wenn der Server remote verfügbar ist, verwenden Sie die Remoteserver-Verwaltungstools, und **an den Prozess anhängen**|*Chrome.exe*, *iexplore.exe*, oder andere Prozesse|Verwenden Sie bei Bedarf Resource Monitor können Sie den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|

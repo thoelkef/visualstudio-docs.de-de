@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065558"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53829195"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie die Remoteserver-Verwaltungstools auf dem Computer, in dem Sie Ihre app bereitgestellt haben, und fügen Sie dann auf der ausgeführten app in Visual Studio.
@@ -49,7 +48,7 @@ Dieser Artikel enthält Schritte zum Einrichten einer Standardkonfiguration von 
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Erstellen von ASP.NET 4.5.2 auf Visual Studio-Computer
   
-1. Erstellen Sie eine neue MVC ASP.NET-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann <strong>Visual C# > Web > ASP.NET-Webanwendung. Im ASP.NET 4.5.2 -Vorlagenabschnitt wählen Sie MVC</strong>aus. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.)
+1. Erstellen Sie eine neue MVC ASP.NET-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann <strong>Visual C# > Web > ASP.NET-Webanwendung. In der **ASP.NET 4.5.2</strong> -Vorlagenabschnitt wählen **MVC**. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.)
 
 2. Öffnen Sie die Datei „HomeController.cs“, und legen Sie einen Haltepunkt in der `About()` -Methode fest.
 
@@ -81,7 +80,7 @@ Weitere ausführliche Informationen zum Installieren von ASP.NET in IIS, finden 
     > [!NOTE]
     > Wenn Sie Windows Server 2008 R2 verwenden, installieren Sie ASP.NET 4 stattdessen mit dem folgenden Befehl aus:
 
-     **C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Starten Sie das System neu, oder führen Sie über eine Eingabeaufforderung **net stop was /y** gefolgt von **net start w3svc** aus, um eine Änderung am Systempfad zu übernehmen.
 
@@ -207,7 +206,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-## <a name="bkmk_openports"></a> Problembehandlung: Erforderliche Ports für Windows Server öffnen
+## <a name="bkmk_openports"></a> Problembehandlung Öffnen Sie die erforderlichen Ports unter Windows Server
 
 In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie sicherstellen, dass die Ports geöffnet sind.
 
