@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840641"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270192"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -216,7 +216,7 @@ Wählen Sie **Code generieren** aus, um den Code für die Assertionen zu generie
 
 Vorgehensweise, wenn das Steuerelement den Fokus verliert und nicht mehr angezeigt wird, wenn Sie das Tool **Assertionen hinzufügen** über den **Test-Generator der programmierten UI** auswählen:
 
-Beim Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften müssen Sie manchmal die Tastatur verwendet werden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenü-Steuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im **Test-Generator der programmierten UI** das Tool **Assertionen hinzufügen** auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit **Assertionen hinzufügen** auszuwählen.
+Beim Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften müssen Sie manchmal die Tastatur verwendet werden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenüsteuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im **Test-Generator der programmierten UI** die Option Tool **Add Assertions** (Assertionen hinzufügen) auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit **Add Assertions** (Assertionen hinzufügen) auszuwählen.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
@@ -444,7 +444,7 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [How to: Set up your test agent to run tests that interact with the desktop (Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests, die mit dem Desktopcomputer interagieren)](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Vorgehensweise: Set up your test agent to run tests that interact with the desktop (Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests, die mit dem Desktopcomputer interagieren)](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:**  Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der programmierten UI für Microsoft Excel erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
 
