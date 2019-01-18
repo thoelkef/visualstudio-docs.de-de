@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0a4ebdc99a416d46b9329137211a79d01700003
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: HT
+ms.openlocfilehash: 31d11e16eba87efd19ae07afde64e27e9905636c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804564"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53899599"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,7 +158,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
    Die restlichen Abschnitten dieses Themas enthalten weitere Informationen über die Schritte in dieser Prozedur.
 
-   Ein ausführlicheres Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen, bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In der exemplarischen Vorgehensweise erstellen Sie eine einfache WPF (Windows Presentation Foundation)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.
+   Ein ausführlicheres Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) In der exemplarischen Vorgehensweise erstellen Sie eine einfache WPF (Windows Presentation Foundation)-Anwendung, um das Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI zu veranschaulichen. Die exemplarische Vorgehensweise umfasst Lösungen zum Korrigieren von Tests, die aufgrund verschiedener Probleme mit den Zeitabläufen und des Steuerelementrefactorings nicht mehr funktionieren.
 
 ###  <a name="starting"></a> Starten und Beenden der getesteten Anwendung
  *Ich möchte meine Anwendung, meinen Browser oder meine Datenbank nicht für jeden Test separat starten und beenden. Wie kann ich dies vermeiden?*
@@ -296,7 +295,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ##  <a name="VerifyingCodeCUITModify"></a> Anpassen des Tests der programmierten UI
  Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mithilfe eines der folgenden Tools in Visual Studio bearbeiten:
 
--   Test-Generator der programmierten UI Verwenden Sie den Test-Generator für codierte UI können Sie Ihren Tests zusätzliche Steuerelemente und Überprüfungen hinzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
+-   **Generator für Tests der programmierten UI:** Mithilfe des Generators für den Test der programmierten UI können Sie Ihren Tests zusätzliche Steuerelemente und Überprüfungen hinzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
 
 -   **Editor für Tests der programmierten UI:** Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Editing Coded UI Tests Using the Coded UI Test Editor (Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI)](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -306,7 +305,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     -   Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
 
-    -   Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der codierten UI, die für ein Steuerelement aktiviert werden, mit der WaitForControlEnabled-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    -   Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der codierten UI, bei dem ein Steuerelement auf die Aktivierung mit der WaitForControlEnabled-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 
     -   Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Using HTML5 Controls in Coded UI Tests (Verwenden von HTML5-Steuerelementen in Tests der programmierten UI)](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -448,7 +447,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Sie können Tests der programmierten UI mithilfe von Testprotokollen der programmierten UI analysieren. Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten Test der codierten UI und zeichnen diese auf. Durch das Format der Protokolle können Sie Probleme schnell debuggen. Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI Test Logs (Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI)](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Weitere Informationen
- **Zusätzliche Optionen für die ausgeführten Tests der programmierten UI:** Sie können Tests der programmierten UI direkt aus Visual Studio heraus ausführen, wie weiter oben in diesem Thema beschrieben. Außerdem können Sie automatisierte UI-Tests von [!INCLUDE[TCMext](../includes/tcmext-md.md)] oder [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
+ **Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI direkt in Visual Studio ausführen, wie weiter oben in diesem Thema beschrieben. Außerdem können Sie automatisierte UI-Tests von [!INCLUDE[TCMext](../includes/tcmext-md.md)] oder [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
 
 - [Vorgehensweise: Ausführen von Tests in Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
@@ -460,11 +459,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Ausführen von automatisierten Tests über die Befehlszeile](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
-- [Vorgehensweise: Richten Sie Ihres Test-Agents zum Ausführen von Tests, die Interaktion mit dem Desktop ein](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
+- [Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests mit Interaktion mit dem Desktopcomputer](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
 - [&#91;veraltet&#93; Using Coded UI Tests in Load Tests (Verwenden von Tests der programmierten UI in Auslastungstests)](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
-  **Hinzufügen von Unterstützung für benutzerdefinierte Steuerelemente:**  Framework für den Test der codierte UI unterstützt nicht alle Benutzeroberflächen und unterstützen möglicherweise nicht die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der codierten UI für die Benutzeroberfläche von [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
+  **Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:**  Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der codierten UI für die Benutzeroberfläche von [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
 
 - [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md)
 
@@ -477,7 +476,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ### <a name="guidance"></a>Empfehlungen
 - [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
 - [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -492,7 +491,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Verbessern der Codequalität](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [Exemplarische Vorgehensweise: Erstellen, bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
 - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
 - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
