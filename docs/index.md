@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f84c7155fb46e462f899e0037deab925ecbbcda6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 427c4545425f19576da39455bbf659fe64aac549
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562138"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398155"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -527,7 +527,7 @@ Web-App mit ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="/visualstudio/javascript/">
                                                     <h3>JavaScript</h3>
                                                     <p>Eine einfache, plattformübergreifende Skriptsprache, die häufig verwendet wird, um Webseiten interaktiver zu gestalten.</p>
                                                 </a>
