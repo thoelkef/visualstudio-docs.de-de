@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908891"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269825"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -129,7 +129,7 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 
 ### <a name="to-permanently-delete-a-solution"></a>Dauerhaftes Löschen einer Projektmappe
 
-1. Klicken Sie im **Projektmappen-Explorer** im Kontextmenü auf die Projektmappe, die Sie löschen möchten, und wählen Sie dann **Ordner in Datei-Explorer öffnen** aus.
+1. Wählen Sie im **Projektmappen-Explorer** im Kontextmenü die zu löschende Projektmappe aus, und wählen Sie dann **Ordner in Datei-Explorer öffnen**.
 
 1. Navigieren Sie im Datei-Explorer eine Ebene höher.
 

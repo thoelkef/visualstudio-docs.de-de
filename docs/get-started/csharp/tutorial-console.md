@@ -2,7 +2,7 @@
 title: 'Tutorial: Erste Schritte mit C#-Konsolen-Apps'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562216"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204430"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Tutorial: Erste Schritte mit einer C#-Konsolen-App in Visual Studio
 
@@ -135,9 +135,11 @@ Wie Sie auf dem folgenden Screenshot sehen, erhalten Sie die Zahl 0 (null) als E
 
 Gehen Sie daher wie folgt vor, um den Code für die Verarbeitung von Dezimalzahlen anzupassen.
 
+1. Drücken Sie **STRG** + **F**, um das Steuerelement **Suchen und Ersetzen** zu öffnen.
+
 1. Ändern Sie sämtliche Instanzen der `int`-Variablen in `float`.
 
-   (Sie können dafür das Steuerelement [Suchen und Ersetzen](../../ide/finding-and-replacing-text.md#find-and-replace-control) verwenden. Drücken Sie **STRG**+**F**, um im Code-Editor auf das Steuerelement für die Suche zuzugreifen. Klicken Sie anschließend für das Steuerelement für die Suche auf **Weitersuchen** oder **Vorheriges Element suchen**. Über die Schaltfläche neben dem Textfeld **Suchen** können Sie auf die Optionen zum Ersetzen zugreifen. Um Ersetzungen einzeln durchzuführen, klicken Sie neben dem Textfeld **Ersetzen** auf **Nächstes ersetzen**. Klicken Sie auf **Alle ersetzen**, um alle Übereinstimmungen auf einmal zu ersetzen.)
+    ![Animation des Steuerelements „Suchen und Ersetzen“, die zeigt, wie die Variable „int“ in „float“ geändert wird.](./media/find-replace-control-animation.gif)
 
 1. Führen Sie Ihre Rechner-App erneut aus, und dividieren Sie **42** durch **119**.
 
@@ -147,9 +149,7 @@ Gehen Sie daher wie folgt vor, um den Code für die Verarbeitung von Dezimalzahl
 
 Die App gibt allerdings nur Dezimalzahlen als Ergebnis zurück. Gehen Sie daher wie folgt vor, damit die App auch mit Dezimalzahlen rechnen kann.
 
-1. Ändern Sie sämtliche Instanzen der `float`-Variablen in `double`.
-
-1. Ändern Sie sämtliche Instanzen der `Convert.ToInt32`-Methode in `Convert.ToDouble`.
+1. Verwenden Sie das Steuerelement **Suchen und Ersetzen** (**STRG** + **F**), um jede Instanz der Variablen `float` in `double` und jede Instanz der Methode `Convert.ToInt32` in `Convert.ToDouble` zu ändern.
 
 1. Führen Sie Ihre Rechner-App aus, und dividieren Sie **42,5** durch **119,75**.
 

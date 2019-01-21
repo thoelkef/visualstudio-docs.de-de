@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889227"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269407"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 

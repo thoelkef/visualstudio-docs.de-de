@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964298"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315539"
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
 
@@ -57,15 +57,15 @@ Mit dieser Einstellung wird bestimmt, wie das Zoomen beim Bearbeiten eines XAML-
 |||
 |-|-|
 |**Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen.|
-|**STRG+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die STRG-Taste drücken, während Sie das Mausrad drehen.|
-|**Alt+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die ALT-Taste drücken, während Sie das Mausrad drehen.|
+|**STRG+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die **STRG**-Taste drücken, während Sie das Mausrad drehen.|
+|**Alt+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die **ALT**-Taste drücken, während Sie das Mausrad drehen.|
 
 Diese Einstellungen bestimmen das Designer-Verhalten beim Bearbeiten eines XAML-Dokuments.
 
 |||
 |-|-|
 |**Interaktive Elemente beim Erstellen automatisch benennen**|Gibt an, ob beim Hinzufügen eines neuen interaktiven Elements zum Designer ein Standardname für das Element bereitgestellt wird.|
-|**Layouteigenschaften bei Elementerstellung automatisch einfügen**|Gibt an, ob beim Hinzufügen eines neuen Elements zum Designer Layouteigenschaften für das Element bereitgestellt werden.|
+|**Layouteigenschaften bei Elementerstellung automatisch einfügen**|Gibt an, ob beim Hinzufügen eines neuen Elements zum Designer Layouteigenschaften für das Element bereitgestellt werden. Layouteigenschaften sind diejenigen, die sich auf das Layout eines Steuerelements auswirken, z.B. „Margin“ und „VerticalAlignment“. Der folgende XAML-Code zeigt, wie eine Schaltfläche mit und ohne diese Option erstellt wird:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Quadrantbasiertes Layout verwenden**|Gibt an, ob das momentan ausgewählte Steuerelement an den nächstgelegenen Kanten des übergeordneten Containers ausgerichtet wird. Ist dieses Kontrollkästchen deaktiviert, werden die Steuerelementausrichtungen während des Verschiebens oder Erstellens nicht geändert.|
 |**Toolboxelemente automatisch ausfüllen**|Gibt an, ob Benutzersteuerelemente und benutzerdefinierte Steuerelemente in der aktuellen Projektmappe automatisch in der Toolbox angezeigt werden.|
 
@@ -75,7 +75,7 @@ Verwenden Sie diese Optionen, um beim Bearbeiten von XAML-Dateien mit Blend die 
 
 |||
 |-|-|
-|**Zoomen durch Verwendung von**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen, oder indem Sie die STRG-Taste bzw. die ALT-Taste drücken, während Sie das Mausrad drehen.|
+|**Zoomen durch Verwendung von**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen, oder indem Sie die **STRG**-Taste bzw. die **ALT**-Taste drücken, während Sie das Mausrad drehen.|
 |**Texteinheiten**|Gibt an, ob Messungen im Designer auf Punkten oder Pixeln basieren. Da universelle Windows-Apps keine Punkte unterstützen, werden die Einheiten automatisch in Pixel konvertiert, falls **Punkt** ausgewählt ist.|
 
 ## <a name="artboard-blend-only"></a>Zeichenfläche (nur in Blend)

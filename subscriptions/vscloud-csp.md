@@ -9,12 +9,12 @@ description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739574"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270007"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -46,7 +46,7 @@ Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://n
 0. Klicken Sie auf **Visual Studio Marketplace**.
 0. Versichern Sie sich, dass der Name des Kunden in der oberen rechten Ecke angezeigt wird.
 0. Klicken Sie auf **Abonnements**.
-0. Wählen Sie „Enterprise“ oder „Professional“ aus und ob Sie ein monatliches oder ein jährliches Visual Studio-Abonnement kaufen möchten.
+0. Wählen Sie „Enterprise“ oder „Professional“ für Visual Studio aus.
 0. Klicken Sie auf **Kaufen**.
 0. Wählen Sie das Azure-Abonnement aus, dem der Kauf in Rechnung gestellt wird.
 0. Geben Sie die Anzahl von Benutzern ein, die Ihr Kunde benötigt.

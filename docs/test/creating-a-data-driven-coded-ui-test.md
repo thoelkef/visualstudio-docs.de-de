@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968604"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270244"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests für die codierte UI
 
@@ -64,7 +64,7 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
    }
    ```
 
-5. Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: **Strg**+**R**,**T**).
+5. Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, und wählen Sie **Tests ausführen** aus. (Tastenkombination: **Strg**+**R**,**T**).
 
     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des **Test-Explorers** angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **Test** die Option **Windows** und anschließend **Test-Explorer** aus.
 
@@ -93,7 +93,7 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
    }
    ```
 
-9. Stellen Sie sicher, dass der Test mithilfe der Methode `ValidateSum()` ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: **Strg**+**R**,**T**).
+9. Stellen Sie sicher, dass der Test mithilfe der Methode `ValidateSum()` ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, und wählen Sie **Tests ausführen** aus. (Tastenkombination: **Strg**+**R**,**T**).
 
      An diesem Punkt werden alle Parameterwerte in ihren Methoden als Konstanten definiert. Als Nächstes erstellen wir ein Dataset, um unseren Test datengesteuert zu machen.
 

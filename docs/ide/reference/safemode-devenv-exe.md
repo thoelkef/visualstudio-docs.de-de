@@ -1,6 +1,6 @@
 ---
 title: -SafeMode („devenv.exe“)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,32 +13,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed14c3ec0da75df37c5a006f4e25240ac6630d20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 092cc1fc3267113e862646b7572e9091b8f6ddef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227199"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und -dienste
+
+Startet Visual Studio im abgesicherten Modus und lädt nur die Standardumgebung und -dienste.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Hinweise
- Dieser Schalter verhindert, dass beim Start von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackages von Drittanbietern geladen werden und stellt dadurch eine stabile Ausführung sicher.
 
-## <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherter Modus.
+Dieser Schalter verhindert, dass beim Start von Visual Studio VSPackages von Drittanbietern geladen werden und ermöglicht so eine stabile Ausführung.
 
-## <a name="code"></a>Code
+## <a name="example"></a>Beispiel
 
-```cmd
-Devenv.exe /SafeMode
+Im folgenden Beispiel wird Visual Studio im abgesicherten Modus gestartet.
+
+```shell
+devenv /safemode
 ```
 
 ## <a name="see-also"></a>Siehe auch

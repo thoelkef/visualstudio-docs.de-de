@@ -1,6 +1,6 @@
 ---
 title: -Log („devenv.exe“)
-ms.date: 11/04/2016
+ms.date: 12/12/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,30 +13,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2e6af25b4e0acc4aad88c33861e9d22a775b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6573bb8bb6118a38266c0b76ef435c59e6ccecb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227238"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldatei. Diese Datei wird angezeigt, nachdem Sie `devenv /log` mindestens einmal aufgerufen haben. Standardmäßig wird folgende Protokolldatei verwendet:
 
- *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml
+Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldatei. Diese Datei wird angezeigt, nachdem Sie `devenv /log` mindestens einmal aufgerufen haben. Standardmäßig befindet sich die Protokolldatei an folgendem Speicherort:
 
- wobei *Version* für die Visual Studio-Version steht. Sie können jedoch einen anderen Pfad und Dateinamen angeben.
+**%APPDATA%\\Microsoft\\VisualStudio\\**\<Version\>**\\ActivityLog.xml**
+
+wobei \<Version\> für die Visual Studio-Version steht. Sie können jedoch einen anderen Pfad und Dateinamen angeben.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-Devenv /log Path\NameOfLogFile
+```shell
+devenv /Log NameOfLogFile
 ```
 
-## <a name="remarks"></a>Hinweise
- Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.
+## <a name="arguments"></a>Argumente
 
- Das Protokoll wird für alle Instanzen von Visual Studio geschrieben, die Sie mit dem /log-Schalter aufgerufen haben. Es werden keine Instanzen von Visual Studio protokolliert, die Sie ohne den Schalter aufgerufen haben.
+- *NameOfLogFile*
+
+  Erforderlich. Der vollständige Pfad und Name der Protokolldatei, in die gespeichert werden soll.
+
+## <a name="remarks"></a>Hinweise
+
+Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.
+
+Das Protokoll wird nur für alle Instanzen von Visual Studio geschrieben, die Sie mit dem `/Log`-Schalter geöffnet haben.
+
+## <a name="example"></a>Beispiel
+
+In diesem Beispiel erfolgt die Protokollierung in der Datei `MyVSLog.xml` im Basisverzeichnis des Benutzers.
+
+```shell
+devenv /log "%USERPROFILE%\MyVSLog.xml"
+```
 
 ## <a name="see-also"></a>Siehe auch
 
