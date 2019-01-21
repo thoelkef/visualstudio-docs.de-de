@@ -2,7 +2,6 @@
 title: Projekteinstellungen für eine C++-Debug-Konfiguration
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,12 +112,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066899"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53957909"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Projekteinstellungen für eine C++-Debugkonfiguration
 Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Dialogfeld wie in beschrieben [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.  
@@ -143,7 +142,7 @@ Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfigura
 | **Remoteservername** (Remote-Windows-Debugger) | Gibt den Namen eines anderen Remotecomputers an, auf dem Sie eine Anwendung debuggen möchten.<br /><br /> Das RemoteMachine-Buildmakro wird auf den Wert dieser Eigenschaft festgelegt. Weitere Informationen hierzu finden Sie unter [Makros für Buildbefehle und -eigenschaften](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Verbindung** (Remote-Windows-Debugger) | Ermöglicht es Ihnen, für das Remotedebugging zwischen den Verbindungstypen "Standard" und "Ohne Authentifizierung" zu wechseln. Geben Sie im Feld **Remoteservername** den Namen des Remotecomputers an. Folgende Verbindungstypen stehen zur Verfügung:<br /><br /> -   **Remote mit Windows-Authentifizierung**<br />-   **Remote ohne Authentifizierung**<br /><br /> **Hinweis:** Der Remotecomputer ist durch das Remotedebuggen ohne Authentifizierung möglicherweise anfällig für Sicherheitsverletzungen. Der Windows-Authentifizierungsmodus ist sicherer.<br /><br /> Weitere Informationen finden Sie unter [Remote Debugging setup (Einrichten des Remotedebuggens)](../debugger/remote-debugging.md). |
 | **HTTP-URL** (Webdienst- und Webbrowserdebugger) | Gibt die URL zu dem Projekt an, das Sie debuggen. |
-| **Debuggertyp** | Gibt den Typ des zu verwendenden Debuggers an: **Nur systemeigen**, **nur verwaltet**, **nur GPU**, **gemischt**, **automatisch** (Standard), oder **Skript**.<br /><br /> Die Einstellung **Nur nativ** eignet sich für nicht verwalteten C++-Code.<br />Die Einstellung **Nur verwaltet** ist für Code konzipiert, der in der Common Language Runtime ausgeführt wird (verwalteter Code).<br />Mit **Gemischt** werden Debugger sowohl für verwalteten als auch für nicht verwalteten Code aufgerufen.<br />Die Einstellung **Automatisch** legt den Debuggertyp anhand von Compilerdaten und EXE-Daten fest.<br />**Skript** ruft einen Debugger für Skripts auf.<br />Die Einstellung **Nur GPU** ist für C++ AMP-Code vorgesehen, der auf einem GPU-Gerät oder im DirectX-Referenzraster ausgeführt wird. Finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md). |
+| **Debuggertyp** | Gibt den Typ des zu verwendenden Debuggers an: **Nur systemeigen**, **nur verwaltet**, **nur GPU**, **gemischt**, **automatisch** (Standard), oder **Skript**.<br /><br /> -   Die Einstellung **Nur nativ** eignet sich für nicht verwalteten C++-Code.<br />-   Die Einstellung **Nur verwaltet** ist für Code konzipiert, der in der Common Language Runtime ausgeführt wird (verwalteter Code).<br />-   Mit **Gemischt** werden Debugger sowohl für verwalteten als auch für nicht verwalteten Code aufgerufen.<br />-   Die Einstellung **Automatisch** legt den Debuggertyp anhand von Compilerdaten und EXE-Daten fest.<br />-   **Skript** ruft einen Debugger für Skripts auf.<br />-   Die Einstellung **Nur GPU** ist für C++ AMP-Code vorgesehen, der auf einem GPU-Gerät oder im DirectX-Referenzraster ausgeführt wird. Finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md). |
 | **Umgebung** (lokaler Windows-Debugger und Remote Windows-Debugger) | Gibt die Umgebungsvariablen für das Programm an, das Sie debuggen. Verwenden Sie die standardmäßige Umgebungsvariablensyntax (z. B. `PATH="%SystemRoot%\..."`). Je nach Einstellung der **Zusammenführungsumgebung** überschreiben diese Variablen die Systemumgebung oder werden mit der Systemumgebung zusammengeführt. Wenn Sie in der Spalte "Einstellungen" klicken, wird "Bearbeiten...". Wählen Sie diesen Link, um Umgebungsvariablen zu bearbeiten. |
 | **Zusammenführungsumgebung** (Lokaler Windows-Debugger) | Legt fest, ob die in dem Feld **Umgebung** angegebenen Variablen mit der vom verwendeten Betriebssystem definierten Umgebung zusammengeführt werden. Die Standardeinstellung ist "Ja". |
 | **SQL-Debugging** (alle außer MPI-Clusterdebugger) | Ermöglicht das Debuggen von SQL-Prozeduren über die [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Anwendung. Die Standardeinstellung ist "Nein". |
