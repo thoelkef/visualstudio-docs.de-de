@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947840"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315630"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -127,7 +127,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
     | | **Allgemein** > **Zielerweiterung** | **.pyd** |
     | | **Projektstandards** > **Konfigurationstyp** | **Dynamische Bibliothek (.dll)** |
     | **C/C++-** > **Allgemein** | **Zusätzliche Includeverzeichnisse** | Fügen Sie den für Ihre Installation geeigneten Python Add the Python *include*-Ordner hinzu, z.B. `c:\Python36\include`.  |
-    | **C/C++-** > **Präprozessor** | **Präprozessordefinitionen** | Fügen Sie `Py_LIMITED_API;` (einschließlich des Semikolons) zum Anfang der Zeichenfolge hinzu. Durch diese Definition werden einige Funktionen eingeschränkt, die Sie aus Python aufrufen können, und der Code wird zwischen unterschiedlichen Python-Versionen portabler. |
+    | **C/C++-** > **Präprozessor** | **Präprozessordefinitionen** | **Nur CPython**: Fügen Sie `Py_LIMITED_API;` (einschließlich des Semikolons) zum Anfang der Zeichenfolge hinzu. Durch diese Definition werden einige Funktionen eingeschränkt, die Sie aus Python aufrufen können, und der Code wird zwischen unterschiedlichen Python-Versionen portabler. Wenn Sie mit PyBind11 arbeiten, fügen Sie diese Definition nicht hinzu, da sonst Buildfehler angezeigt werden. |
     | **C/C++** > **Codegenerierung** | **Laufzeitbibliothek** | **Multithreaded-DLL (/MD)** (siehe Warnung unten) |
     | **Linker** > **Allgemein** | **Zusätzliche Bibliotheksverzeichnisse** | Fügen Sie den für Ihre Installation geeigneten Python *libs*-Ordner hinzu, der *.lib*-Dateien enthält, z.B. `c:\Python36\libs`. (Achten Sie darauf, dass Sie auf den *libs*-Ordner verweisen, der *.lib*-Dateien enthält und *nicht* auf den *Lib*-Ordner, der *.py*-Dateien enthält.) |
 
@@ -135,7 +135,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
     > Wenn die Registerkarte „C/C++“ nicht in den Projekteigenschaften angezeigt wird, enthält das Projekt keine Dateien, die als C/C++-Quelldateien identifiziert werden. Dieser Zustand kann eintreten, wenn Sie eine Quelldatei ohne eine *.c*- oder *.cpp*-Erweiterung erstellen. Wenn Sie zuvor versehentlich `module.coo` statt `module.cpp` im Dialogfeld „Neues Element“ eingegeben haben, erstellt Visual Studio die Datei, legt den Dateityp jedoch nicht auf „C/C++-Code“ fest, was die Registerkarte „C/C++-Eigenschaften“ aktiviert. Solche falschen Identifizierungen können auch auftreten, wenn Sie die Datei mit `.cpp` umbenennen. Zum Festlegen des korrekten Dateityps klicken Sie mit der rechten Maustaste auf die Datei im **Projektmappen-Explorer**, wählen **Eigenschaften** aus und legen **Dateityp** auf **C/C++-Code** fest.
 
     > [!Warning]
-    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie die **Multithreaded-Debug-DLL (/MDd)**-Option festlegen, wird beim Erstellen einer **Debugkonfiguration** die folgende Fehlermeldung ausgegeben: **C1189: Py_LiMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel)**. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen, um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, wie im Folgenden beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
+    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie CPython verwenden und die **Multithreaded-Debug-DLL (/MDd)**-Option festlegen, wird beim Erstellen einer **Debug**-Konfiguration die folgende Fehlermeldung ausgegeben: **C1189: Py_LiMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel)**. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen (dies ist bei CPython, aber nicht bei PyBind11 erforderlich), um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, wie im Folgenden beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
     >
     > Die /MDd-Option wird zum Erstellen der Python-Debugbinärdateien (z.B. *python_d.exe*) verwendet. Wenn Sie sie jedoch für eine Erweiterungs-DLL verwenden, wird weiterhin der Buildfehler mit `Py_LIMITED_API` verursacht.
 

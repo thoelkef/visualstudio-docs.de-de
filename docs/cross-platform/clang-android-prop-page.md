@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232116"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154310"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang-Projekteigenschaften (Android C++)
 
-Eigenschaft | Beschreibung  | Auswahlmöglichkeiten
+Eigenschaft | Beschreibung | Auswahlmöglichkeiten
 --- | ---| ---
 Zusätzliche Includeverzeichnisse | Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind. (-I[path]).
 Debuginformationsformat | Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. | **Keine**: Generiert keine Debuginformationen, sodass die Kompilierung ggf. schneller erfolgt.<br>**Vollständige Debugging-Informationen(DWARF2)**: Generiert DWARF2-Debuginformationen.<br>**Informationen zur Zeilennummer**: Nur Zeilennummerninformationen generieren.<br>

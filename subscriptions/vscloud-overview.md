@@ -9,12 +9,12 @@ description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740220"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269747"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 
@@ -37,9 +37,7 @@ Jeder Benutzer mit [Zugriffsrechten als Eigentümer und Mitwirkender](https://na
 
 1.  Melden Sie sich bei [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions) an.
 
-2.  Wählen Sie das Abonnement aus, das Sie kaufen möchten, zum Beispiel:
-    > [!div class="mx-imgBorder"]
-    > ![Erwerben eines Visual Studio-Abonnements](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Wählen Sie das Abonnement aus, das Sie erwerben möchten, z.B. – Visual Studio Professional – Monatsabonnement.
 
 3.  Wählen Sie das Azure-Abonnement, über das abgerechnet werden soll. Wenn Sie noch nicht über ein Azure-Abonnement verfügen, können Sie ein neues erstellen.
     > [!div class="mx-imgBorder"]

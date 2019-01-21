@@ -1,58 +1,66 @@
 ---
 title: -Run („devenv.exe“)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /run Devenv
-- run Devenv switch
+- /Run Devenv
+- Run Devenv switch
 - applications [Visual Studio], running
-- /r Devenv switch
-- Devenv, /run switch
-- r Devenv switch (/r)
+- /R Devenv switch
+- Devenv, /Run switch
+- R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6653bf0b44d186ad30f3d1dffa367db7fe354b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227472"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
+
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe und führt sie aus.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv {/run|/r} {SolutionName|ProjectName}
+```shell
+devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Argumente
- `SolutionName`
 
- Erforderlich. Der vollständige Pfad und Name einer Projektmappendatei
+- *SolutionName*
 
- `ProjectName`
+  Der vollständige Pfad und Name einer Projektmappendatei
 
- Erforderlich. Der vollständige Pfad und Name einer Projektdatei
+- *ProjectName*
+
+  Der vollständige Pfad und Name einer Projektdatei
+
+- `/Out` *OutputFilename*
+
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
 ## <a name="remarks"></a>Hinweise
- Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die IDE und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 
--   Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+
+- Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/Out`-Schalter in einer Protokolldatei angezeigt werden.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird die Projektmappe `MySolution` mithilfe der aktiven Bereitstellungskonfiguration ausgeführt.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+In diesem Beispiel wird die Projektmappe `MySolution` mithilfe der aktiven Bereitstellungskonfiguration ausgeführt.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Siehe auch

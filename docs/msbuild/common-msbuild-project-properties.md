@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918763"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315578"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
@@ -85,9 +85,11 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | OutputPath | Gibt den Pfad zum Ausgabeverzeichnis relativ zum Projektverzeichnis an, zum Beispiel *bin\Debug*. |
 | OutputType | Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann einen der folgenden Werte aufweisen:<br /><br /> – Library. Erstellt eine Codebibliothek. (Standardwert)<br />– Exe. Erstellt eine Konsolenanwendung.<br />– Module. Erstellt ein Modul.<br />– Winexe. Erstellt ein Windows-Programm.<br /><br /> Diese Eigenschaft entspricht der `/target`-Option des Compilers *vbc.exe*. |
 | OverwriteReadOnlyFiles | Ein boolescher Wert, der angibt, ob schreibgeschützte Dateien vom Build überschrieben werden sollen oder ob ein Fehler ausgelöst werden soll. |
+| PathMap | Gibt an, wie physische Pfade den Quellpfadnamen zugeordnet werden, die vom Compiler ausgegeben werden. Diese Eigenschaft entspricht der `/pathmap`-Option des Compilers *csc.exe*. |
 | PdbFile | Der Dateiname der *PDB*-Datei, die Sie ausgeben. Diese Eigenschaft entspricht der `/pdb`-Option des Compilers *csc.exe*. |
 | Plattform | Das Betriebssystem, für das Sie erstellen. Gültige Werte sind "Beliebige CPU", "x86" und "x64". |
 | ProduceReferenceAssembly | Ein boolescher Wert, der auf `true` festgelegt wurde, ermöglicht die Produktion von [Verweisassemblys](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) für die aktuelle Assembly. `Deterministic` sollte beim Verwenden dieser Funktion `true` entsprechen. Diese Eigenschaft entspricht der `/refout`-Option der Compiler *vbc.exe* und *csc.exe*. |
+| ProduceOnlyReferenceAssembly | Ein boolescher Wert, der den Compiler anweist, nur eine Verweisassembly und keinen kompilierten Code ausgegeben. Kann nicht in Verbindung mit `ProduceReferenceAssembly` verwendet werden.  Diese Eigenschaft entspricht der `/refonly`-Option der Compiler *vbc.exe* und *csc.exe*. |
 | RemoveIntegerChecks | Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`sein. Diese Eigenschaft entspricht der `/removeintchecks`-Option des Compilers *vbc.exe*. |
 | SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
 | SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. |

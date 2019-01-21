@@ -1,15 +1,15 @@
 ---
 title: -Project („devenv.exe“)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /project Devenv switch
+- /Project Devenv switch
 - projects [Visual Studio], rebuilding
 - projects [Visual Studio], building
 - deployment projects, specifying
-- project Devenv switch (/project)
-- Devenv, /project switch
+- Project Devenv switch (/Project)
+- Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: gewarren
@@ -17,68 +17,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c73167c5529eda0f97f414e7c0e2d76083b7bb0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1706d8dade02bd7f247d7f2ce163955615a3b0f3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921613"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269185"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
+
 Identifiziert ein einzelnes Projekt innerhalb der angegebenen Projektmappenkonfiguration, das erstellt, bereinigt, neu erstellt oder bereitgestellt werden soll
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumente
- /build
 
- Erstellt das durch `/project` `ProjName` angegebene Projekt
+- *SolutionName*
 
- /clean
+  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
 
- Bereinigt alle Zwischendateien und Ausgabeverzeichnisse, die während eines Builds erstellt werden
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
- /rebuild
+  Erforderlich. Dient zum [Erstellen](build-devenv-exe.md), [Bereinigen](clean-devenv-exe.md), [Bereitstellen](deploy-devenv-exe.md) oder [Neuerstellen](rebuild-devenv-exe.md) des Projekts.
 
- Bereinigt und erstellt das durch `/project` `ProjName` angegebene Projekt
+- *SolnConfigName*
 
- /deploy
+  Dies ist optional. Der Name der Projektmappenkonfiguration (z.B. `Debug` oder `Release`), die auf die in *SolutionName* benannte Projektmappe angewendet wird. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
 
- Gibt an, dass das Projekt nach dem Erstellen oder Neuerstellen bereitgestellt werden soll
+- `/Project` *ProjName*
 
- `SolnConfigName`
+  Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können den Anzeigenamen des Projekts oder einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei eingeben. Sie können auch den vollständigen Pfad und Namen der Projektdatei eingeben.
 
- Erforderlich. Der Name der Projektmappenkonfiguration, die auf die in `SolutionName` benannte Projektmappe angewendet wird
+- `/ProjectConfig` *ProjConfigName*
 
- `SolutionName`
+  Dies ist optional. Der Name der Buildkonfiguration des Projekts (z.B. `Debug` oder `Release`), die auf das benannte `/Project` angewendet werden soll. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`).
 
- Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
+- `/Out` *OutputFilename*
 
- /project `ProjName`
-
- Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.
-
- /projectconfig `ProjConfigName`
-
- Dies ist optional. Der Name der Projektbuildkonfiguration für die Anwendung auf das benannte `/project`
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
 ## <a name="remarks"></a>Hinweise
 
--   Muss als Teil der Befehle `devenv /build`, /`clean`, `/rebuild` oder `/deploy` verwendet werden
+- Muss als Teil der `devenv`-Befehle `/Build`, `/Clean`, `/Rebuild` oder `/Deploy` verwendet werden.
 
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
 
--   Zusammenfassende Informationen für Builds, inklusive Fehlermeldungen, können im Fenster **Befehl** oder in einer Protokolldatei, die durch den Schalter `/out` angegeben wird, angezeigt werden.
+- Zusammenfassende Informationen für Builds, inklusive Fehlermeldungen, können im Fenster **Befehl** oder in einer Protokolldatei, die durch den Schalter `/Out` angegeben wird, angezeigt werden.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird das Projekt `CSharpConsoleApp` mithilfe der `Debug`-Projektbuildkonfiguration in der `Debug`-Projektmappenkonfiguration von `MySolution` erstellt.
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+Dieses Beispiel erstellt das Projekt `CSharpWinApp` mithilfe der Projektbuildkonfiguration `Debug` in `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Siehe auch

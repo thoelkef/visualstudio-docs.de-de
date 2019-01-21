@@ -1,6 +1,6 @@
 ---
-title: DevEnv-Schalter „Build“
-ms.date: 11/04/2016
+title: -Build („devenv.exe“)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -15,50 +15,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9caddb066d02366cac7ee9e34f2d55c726a69896
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824443"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269474"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
-Erstellt mithilfe einer angegebenen Konfigurationsdatei eine Projektmappe
+Erstellt mithilfe einer angegebenen Projektmappen-Konfigurationsdatei eine Projektmappe oder ein Projekt.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
+```shell
+devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumente
 
-|||
-|-|-|
-|*SolutionName*|Erforderlich. Der vollständige Pfad und Name der Projektmappendatei|
-|*SolnConfigName*|Erforderlich. Der Name der Projektmappenkonfiguration, die für das Erstellen der Projektmappe verwendet wird, die in *SolutionName* benannt wurde. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben, z.B. **"Debug\|Win32"**.|
-|/project *ProjName*|Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.|
-|/projectconfig *ProjConfigName*|Dies ist optional. Der Name der Projektbuildkonfiguration für die Erstellung des benannten Projekts. Wenn mehrere Projektplattformen verfügbar sind, müssen Sie auch die Plattform angeben, z.B. **"Debug\|Win32"**.|
+- *SolutionName*
+
+  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
+
+- *SolnConfigName*
+
+  Dies ist optional. Der Name der Projektmappenkonfiguration (z.B. `Debug` oder `Release`), die zum Erstellen der in *SolutionName* benannten Projektmappe verwendet werden soll. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
+
+- `/Project` *ProjName*
+
+  Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Dies ist optional. Der Name der Projektbuildkonfiguration (z.B. `Debug` oder `Release`), die beim Erstellen des benannten Projekts verwendet wird. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieser Schalter angegeben ist, überschreibt er das Argument *SolnConfigName*.
+
+- `/Out` *OutputFilename*
+
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
 ## <a name="remarks"></a>Hinweise
 
-- Der Schalter **/build** führt dieselbe Funktion aus wie der Menübefehl **Projektmappe erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).
+- Der Schalter `/Build` führt dieselbe Funktion aus wie der Menübefehl **Projektmappe erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).
 
 - Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
 
-- Zusammenfassungsinformationen für Builds, inklusive Fehlermeldungen, können im Befehlsfenster oder in einer Protokolldatei, die durch den **/out**-Schalter angegeben wird, angezeigt werden.
+- Zusammenfassende Informationen für Builds, inklusive Fehlermeldungen, können im Befehlsfenster oder in einer Protokolldatei, die durch den Schalter `/Out` angegeben wird, angezeigt werden.
 
-- Der Schalter **/build** erstellt nur Projekte, die seit dem letzten Build geändert wurden. Verwenden Sie stattdessen [/rebuild](../../ide/reference/rebuild-devenv-exe.md), um alle Projekte in einer Projektmappe zu erstellen.
+- Der Schalter `/Build` erstellt nur Projekte, die seit dem letzten Build geändert wurden. Verwenden Sie stattdessen [/rebuild](../../ide/reference/rebuild-devenv-exe.md), um alle Projekte in einer Projektmappe zu erstellen.
 
-- Wenn Sie die Fehlermeldung **Ungültige Projektkonfiguration** erhalten, stellen Sie sicher, dass Sie eine Projektmappenplattform oder eine Projektplattform angegeben haben, z.B. **"Debug\|Win32"**.
+- Wenn Sie die Fehlermeldung **Ungültige Projektkonfiguration** erhalten, stellen Sie sicher, dass Sie eine Projektmappenplattform oder eine Projektplattform angegeben haben (z.B. `Debug|Win32`).
 
 ## <a name="example"></a>Beispiel
 
-Mit dem folgenden Befehl wird das Projekt „CSharpConsoleApp“ mithilfe der Projektbuildkonfiguration „Debug“ innerhalb der Projektmappenkonfiguration „Debug“ von „MySolution“ erstellt.
+Mit dem folgenden Befehl wird das Projekt `CSharpWinApp` mithilfe der Projektbuildkonfiguration `Debug` in `MySolution` erstellt.
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Siehe auch

@@ -9,16 +9,19 @@ description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739642"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315500"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
 Wandeln Sie Ihre Daten in ansprechende visuelle Darstellungen um, die Sie sammeln und strukturieren können.
+
+> [!Note]
+> Diese Power BI-Lizenz wird zum Kennenlernen und Experimentieren mit Power BI-Funktionen an einem sicheren Ort ohne Auswirkungen auf größere Produktions-, Entwicklungs- und Testumgebungen bereitgestellt.  Für das aktuelle Power BI-Angebot muss der Abonnent einen eigenen Mandanten erstellen, um eine Trennung zu erzwingen. Wenn Sie eine Power BI-Lizenz benötigen, die Ihren Unternehmensanmeldeinformationen im Mandanten Ihres Unternehmens zugeordnet ist, wenden Sie sich an Ihren Unternehmensadministrator, um eine Lizenz zu erwerben und zuzuweisen.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden, um Power BI Pro zu verwenden.
@@ -95,8 +98,10 @@ A:  Der Vorteil ist kostenlos, aber die Aktivierung verwendet das gleiche System
 - Kreditkarte:  Wenn Sie eine Kreditkartennummer angeben, wird Ihre Kreditkarte nicht belastet. 
 - Rechnung:  Wenn Sie „Rechnung“ als Zahlungsart auswählen, müssen Sie keine Kreditkartennummer angeben.  Sie können das Intervall auch auf „Jährlich“ festlegen.  Dadurch erhalten Sie eine einzelne E-Mail, die Sie darüber informiert, dass eine Rechnung für Sie bereit steht.  Der Rechnungsbetrag entspricht 0,00 €.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Frage:  Kann der Power BI Pro-Vorteil, der in meinen Abonnementlizenzen enthalten ist, in einer Produktionsumgebung genutzt werden?
-A:  Ja.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>Frage:  Kann der Power BI Pro-Vorteil, der in meinen Abonnementlizenzen enthalten ist, in einer Produktionsumgebung genutzt werden?
+A:  Ja, Sie können ihn unter zwei wichtigen Voraussetzungen in einer Produktionsumgebung verwenden:
+- Für dieses Angebot muss ein eigener Mandant installiert werden.  Wenn Sie eine Power BI-Lizenz benötigen, die Ihren Unternehmensanmeldeinformationen im Mandanten Ihres Unternehmens zugeordnet ist, wenden Sie sich an Ihren Unternehmensadministrator, um eine Lizenz zu erwerben und zuzuweisen. 
+- Dieser Power BI Pro-Vorteil kann nicht für Behördenmandanten genutzt werden.  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Frage:  Beim Versuch, Power BI Pro zu aktivieren, erhalte ich folgende Meldung: „You already have an account through work“ (Sie verfügen bereits über ein Arbeitskonto.).  Kann ich den Vorteil dennoch nutzen?
 A:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Office 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2ce52e970187e2d18679b60522a24899a5e43e8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227563"
 ---
-# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Anzeigen von Momentaufnahmen mit dem IntelliTrace-Feature „Schritt zurück“ (Visual Studio Enterprise)
+# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Anzeigen von Momentaufnahmen mit dem IntelliTrace-Feature „Schritt zurück“ (Visual Studio Enterprise) (C#, Visual Basic, C++)
 
 Das **IntelliTrace-Feature „Schritt zurück“** erstellt bei jedem Breakpoint und Debuggerschritt automatisch eine Momentaufnahme Ihrer Anwendung. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 

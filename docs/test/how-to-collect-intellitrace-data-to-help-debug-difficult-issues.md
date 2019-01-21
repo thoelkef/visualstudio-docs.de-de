@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952997"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154362"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -61,7 +61,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
      Dieser Proxy ermöglicht das Erfassen von Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten.
 
     > [!WARNING]
-    > Wenn Sie ein benutzerdefiniertes Konto für die Identität verwenden möchten, die für den Anwendungspool auf dem Internet Information Server (IIS) verwendet wird, mit dem Sie Intellitrace-Daten sammeln möchten, müssen Sie das lokale Benutzerprofil auf dem IIS-Computer mit dem verwendeten benutzerdefinierten Konto erstellen. Sie können das lokale Profil für das benutzerdefinierte Konto entweder durch die einmalige lokale Anmeldung am IIS-Computer oder durch Ausführung der folgenden Befehlszeile unter Verwendung der Anmeldeinformationen des benutzerdefinierten Kontos erstellen:
+    > Wenn Sie ein benutzerdefiniertes Konto für die Identität verwenden möchten, die für den Anwendungspool auf dem Internet Information Server (IIS) verwendet wird, mit dem Sie IntelliTrace-Daten sammeln möchten, müssen Sie das lokale Benutzerprofil auf dem IIS-Computer mit dem verwendeten benutzerdefinierten Konto erstellen. Sie können das lokale Profil für das benutzerdefinierte Konto entweder durch die einmalige lokale Anmeldung am IIS-Computer oder durch Ausführung der folgenden Befehlszeile unter Verwendung der Anmeldeinformationen des benutzerdefinierten Kontos erstellen:
     >
     > **runas /user:domain\name /profile cmd.exe**
 
@@ -82,7 +82,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 7.  Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **Collect data from only the following modules** (Daten nur aus den folgenden Modulen auflisten) aus, und fügen Sie der Liste der Module ein Modul mit **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit **Entfernen**. Mit dieser Option können Sie die gewünschten Module genau angeben.
 

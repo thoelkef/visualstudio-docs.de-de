@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte beim Debuggen in Visual Studio 2017
+title: Debuggen von Apps mithilfe von Visual Studio
 description: Erste Schritte beim Debuggen von Anwendungen mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227888"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -185,7 +185,7 @@ In diesem Beispiel zeigt die **Ausnahmen-Hilfe** eine `System.Argument`-Ausnahme
 
 In diesem Beispiel hat der `DirectoryInfo`-Aufruf den Fehler für eine leere Zeichenfolge zurückgegeben, die in der `value`-Variable gespeichert ist.
 
-Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen.
+Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > Die Ausnahmen-Hilfe ersetzt den Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

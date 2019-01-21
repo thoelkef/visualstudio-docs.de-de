@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868903"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269838"
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
