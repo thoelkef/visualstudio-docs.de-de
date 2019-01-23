@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967426"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398285"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
@@ -26,9 +26,6 @@ In dieser kurzen Einführung in den Code-Editor von Visual Studio wird erläuter
 > Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 In diesem Artikel wird vorausgesetzt, dass Sie bereits mit der JavaScript-Entwicklung vertraut sind. Wenn dies nicht der Fall ist, sollten Sie sich zunächst ein Tutorial dazu ansehen, z. B.: [Erstellen einer Node.js- und Express-App in Visual Studio](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Damit Sie die in diesem Artikel beschriebenen Vorgänge ausführen können, vergewissern Sie sich, dass Sie für Visual Studio die JavaScript-Einstellungen ausgewählt haben. Weitere Informationen zum Auswählen von Einstellungen für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) finden Sie unter [Umgebungseinstellungen](../ide/environment-settings.md). Wenn Sie Einstellungen importieren, sollte es sich um **JavaScript**-Einstellungen handeln.
 
 ## <a name="add-a-new-project-file"></a>Hinzufügen einer neuen Projektdatei
 
@@ -96,7 +93,7 @@ Klicken Sie erst mit der rechten Maustaste auf `render` und anschließend im Inh
 
    ![Fenster „Definition einsehen“](../javascript/media/write-code-peek-definition.png)
 
-1. Schließen Sie das eingesehene Definitionsfenster, indem Sie auf das kleine „x“ in der oberen rechten Ecke des Popupfensters klicken.
+Schließen Sie das eingesehene Definitionsfenster, indem Sie auf das kleine „x“ in der oberen rechten Ecke des Popupfensters klicken.
 
 ## <a name="use-code-snippets"></a>Verwenden von Codeausschnitten
 
