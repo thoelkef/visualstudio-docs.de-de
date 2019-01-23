@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898685"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345603"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien (die Dateien sind im `Include`-Attribut angegeben). Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
+ [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)  
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)   
  [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Elementdefinitionen](../msbuild/item-definitions.md)   
- [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
- [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Batchverarbeitung](../msbuild/msbuild-batching.md)

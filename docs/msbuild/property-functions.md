@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb006506b479b98710059e8c4d40f0b1af4682c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fab9dc76bf47dbe03388aaef56c85ca2fa5a7bf
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911090"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417901"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
@@ -128,7 +128,7 @@ Der Name der Klasse muss mit dem Namespace vollqualifiziert sein.
 Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaft auf das heutige Datum festzulegen.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>MSBuild-Eigenschaftenfunktionen

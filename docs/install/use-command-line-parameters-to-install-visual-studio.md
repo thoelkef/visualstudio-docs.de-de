@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869660"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403966"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -77,7 +77,8 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--help, --?, -h, -?` | Eine Offline-Version dieser Seite wird angezeigt. |
 | `--config <path>` | **Optionales** und **Neues in 15.9:** Während eines Installations- oder Änderungsvorgangs werden die hinzuzufügenden Workloads und Komponenten basierend auf einer zuvor gespeicherten Installationskonfigurationsdatei ermittelt. Dieser Vorgang ist optional und entfernt keine Workloads oder Komponenten, wenn diese nicht in der Datei vorhanden sind. Außerdem werden Elemente, die nicht für das Produkt gelten, nicht hinzugefügt. Während eines Exportvorgangs wird der Speicherort bestimmt, an dem die Installationskonfigurationsdatei gespeichert wird. |
 
-> Hinweis: Wenn Sie mehrere Workloads und Komponenten angeben, müssen Sie den `--add`- oder `--remove`-Befehlszeilenwechsel für jedes Element wiederholen.
+> [!IMPORTANT]
+> Wenn Sie mehrere Workloads und Komponenten angeben, müssen Sie den `--add`- oder `--remove`-Befehlszeilenwechsel für jedes Element wiederholen.
 
 | **Layoutoptionen** | **Beschreibung** |
 | ----------------------- | --------------- |

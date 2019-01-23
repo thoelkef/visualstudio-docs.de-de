@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872264"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347696"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die folgenden Links verweisen auf [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Referenzinformationen.  
@@ -71,9 +71,6 @@ ms.locfileid: "53872264"
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über MSBuild](../msbuild/msbuild.md)     
  Bietet eine Einführung in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
-  
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- Enthält den Namespaceverweis für die Konvertierung.  
   
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Enthält den Namespaceverweis für die Auswertung.  

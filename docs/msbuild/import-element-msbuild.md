@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd8cdf4b97285b1c0793bb3e80ec85def432bdb4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900872"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348749"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.  
@@ -71,10 +71,6 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
  Das Schema eines importierten Projekts ist identisch mit dem Schema eines Standardprojekts. Obwohl [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] möglicherweise ein importiertes Projekt erstellen kann, ist es unwahrscheinlich, da ein importiertes Projekt normalerweise keine Informationen enthält, wie Eigenschaften festzulegen sind oder die Reihenfolge, in der Ziele ausgeführt werden. Das importierte Projekt ist abhängig vom Projekt in das es importiert wird, um diese Information bereitzustellen.  
 
-> [!NOTE]
->  Während bedingte Import-Anweisungen in Befehlszeilen-MSBuilds arbeiten, arbeiten Sie nicht mit MSBuild in der integrierten Entwicklungsumgebung (Integrated Development Environment; IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Bedingte Importe werden mithilfe der Konfiguration und den Plattformwerten ausgewertet, die beim Laden des Projekts festgelegt werden. Wenn anschließend Änderungen vorgenommen werden, die eine erneute Auswertung der Bedingungen in der Projektdatei erfordern, z.B. Ändern der Plattform, wertet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die Bedingungen für Eigenschaften und Elemente aus, jedoch nicht für Importe. Da die Importbedingung nicht erneut ausgewertet wird, wird der Import übersprungen.  
-> 
->  Fügen Sie zur Umgehung dieses Problems den *TARGETS*-Dateien bedingte Importe hinzu, oder fügen Sie Code in einen bedingten Block ein, z.B. den Block [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Platzhalter  
  In .NET Framework 4 erlaubt MSBuild Platzhalter im Attribut „Projekt“. Wenn Platzhalter vorhanden sind, werden alle gefundenen Übereinstimmungen (für die Reproduzierbarkeit) sortiert und dann werden sie in dieser Reihenfolge importiert, so als ob diese explizit festgelegt wurde.  

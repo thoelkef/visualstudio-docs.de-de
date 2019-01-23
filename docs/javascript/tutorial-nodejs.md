@@ -11,14 +11,15 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d366816df1247c5e0c09a5cc714fb8daaa831968
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bbd7dd67c85d0693a7aa5df8253dbe12d1e52b1
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927492"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398259"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
+
 In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://visualstudio.microsoft.com) gratis herunterladen.
 
 In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:

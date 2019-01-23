@@ -14,35 +14,35 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9413e8b6e6db0c81eb1853c24506d20c8d06f3e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f207261af82f8f5e64710df5177e891a6a47c1a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571440"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347501"
 ---
 # <a name="active-script-profiling-overview"></a>Active Script-Profilerstellung - Übersicht
-Die [Active Script Profiler-Schnittstelle](../winscript/reference/active-script-profiler-interfaces.md) erlaubt die Profilerstellung eines Skriptmoduls. Die Active Script-Profilerstellung umfasst folgende Teile:  
+Die [Active Script Profiler-Schnittstelle](../winscript/reference/active-script-profiler-interfaces.md) erlaubt die Profilerstellung einer Skript-Engine. Die Active Script-Profilerstellung umfasst folgende Teile:  
   
--   Sprachmodul  
+-   Sprach-Engine  
   
 -   Host  
   
 -   Profiler  
   
-## <a name="language-engine"></a>Sprachmodul  
- Das Sprachmodul führt das Skript aus. Es bietet Methoden, die die Profilerstellung des Skriptcodes aktiviert, wenn dieser ausgeführt wird. Wenn die Profilerstellung aktiviert ist, nimmt das Sprachmodul die Klassen-ID (CLSID) des COM-Profilerobjekts als Argument. Es erstellt eine Instanz des COM-Profilerstellungsobjekts und führt einen Aufruf im Profiler auf, wenn unterschiedliche Ereignisse auftreten.  
+## <a name="language-engine"></a>Sprach-Engine  
+ Die Sprach-Engine führt das Skript aus. Es bietet Methoden, die die Profilerstellung des Skriptcodes aktiviert, wenn dieser ausgeführt wird. Wenn die Profilerstellung aktiviert ist, nimmt die Sprach-Engine die Klassen-ID (CLSID) des COM-Profilerobjekts als Argument. Es erstellt eine Instanz des COM-Profilerstellungsobjekts und führt einen Aufruf im Profiler auf, wenn unterschiedliche Ereignisse auftreten.  
   
- Das Sprachmodul implementiert die [IActiveScriptProfilerControl-Schnittstelle](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
+ Die Sprach-Engine implementiert die [IActiveScriptProfilerControl-Schnittstelle](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
 >  Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Language Runtime überprüft die Umgebungsvariable JS_PROFILER bei der Erstellung, um zu bestimmen, ob die Profilerstellung aktiviert werden soll. Wenn diese Variable auf die CLSID des Profilers festgelegt ist, erstellt die Language Runtime eine Instanz des COM-Profilerobjekts unter Verwendung des Werts der Variable, um festzustellen, welcher Profiler erstellt werden soll.  
   
 ## <a name="host"></a>Host  
- Der Host erstellt das Sprachmodul und stellt es mit Skripts bereit, die ausgeführt werden sollen. Ein Smarthost stellt ebenso den Dokumentkontext bereit, der von einem Debugger oder Profiler verwendet werden kann, damit bessere Informationen beim Debuggen oder bei der Profilerstellung bereitgestellt werden können.  
+ Der Host erstellt die Sprach-Engine und stellt sie mit Skripts bereit, die ausgeführt werden sollen. Ein Smarthost stellt ebenso den Dokumentkontext bereit, der von einem Debugger oder Profiler verwendet werden kann, damit bessere Informationen beim Debuggen oder bei der Profilerstellung bereitgestellt werden können.  
   
 ## <a name="profiler"></a>Profiler  
- Wenn verschiedene Ereignisse eintreten, erhält der Profiler die Aufrufe des Sprachmoduls. Der Profiler muss als COM-Objekt registriert sein und die [IActiveScriptProfilerCallback-Schnittstelle](../winscript/reference/iactivescriptprofilercallback-interface.md) implementieren.  
+ Wenn verschiedene Ereignisse eintreten, erhält der Profiler die Aufrufe der Sprach-Engine. Der Profiler muss als COM-Objekt registriert sein und die [IActiveScriptProfilerCallback-Schnittstelle](../winscript/reference/iactivescriptprofilercallback-interface.md) implementieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Profilerschnittstelle](../winscript/reference/active-script-profiler-interfaces.md)
