@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960838"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417927"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen (C#, Visual Basic, C++, JavaScript)
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Code Map vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
-Eine exemplarische Vorgehensweise die diesem Video aus: [Video. Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Eine exemplarische Vorgehensweise die diesem Video aus: [Video: Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Details zu Befehlen und Aktionen, die Sie mit Code Maps verwenden können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -53,7 +53,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
 
 ##  <a name="MapStack"></a> Abbilden der Aufrufliste
 
-1. In einem Visual Studio Enterprise C#, Visual Basic, C++, JavaScript oder X++ Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5**.
+1. In einem Visual Studio Enterprise C#, Visual Basic, C++ oder JavaScript-Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5**.
    
 1. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Debuggen** > **Code Map**, oder drücken Sie **STRG**+**UMSCHALT** +**`**.
 
