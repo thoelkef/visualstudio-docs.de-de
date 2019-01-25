@@ -1,6 +1,6 @@
 ---
 title: Unterdrücken von codeanalysewarnungen
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932873"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835057"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Unterdrücken von codeanalysewarnungen
 
@@ -66,17 +66,19 @@ Die Eigenschaften des Attributs gehören:
 
 - **MessageId** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.
 
-- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt
+- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Unterstützt [Bereiche](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) umfassen Folgendes:
 
-    - Modul
+   - `module`
 
-    - Namespace
+   - `resource`
 
-    - Ressource
+   - `type`
 
-    - Typ
+   - `member`
 
-    - Member
+   - `namespace` : In diesem Bereich unterdrückt Warnungen für den Namespace selbst. Unterdrückt nicht die Warnungen für Typen im Namespace.
+
+   - `namespaceanddescendants` -(Neu in Visual Studio-2019) unterdrückt dieses Bereichs Warnungen in einem Namespace und alle seine untergeordneten Symbole. Die `namespaceanddescendants` Wert gilt nur für Roslyn-Analysetools und wird ignoriert, binär-, FxCop-basierten statischen Analyse.
 
 - **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss eine vollständig qualifizierte Elementnamen enthalten.
 
@@ -151,7 +153,7 @@ Das Analysetool für verwalteten Code untersucht `SuppressMessage` Attribute, di
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.
+> Wenn Sie eine Warnung mit unterdrücken `namespace` Bereich es unterdrückt die Warnmeldung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.
 
 Durch einen expliziten Bereich angeben, kann jede Unterdrückung ausgedrückt werden. Diese Unterdrückungen müssen auf globaler Ebene befinden. Sie können nicht auf Memberebene Unterdrückung angeben, durch das ergänzen eines Typs.
 
@@ -168,5 +170,6 @@ Der globale Unterdrückungsdatei verwaltet Unterdrückungen, die entweder auf gl
 
 ## <a name="see-also"></a>Siehe auch
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Verwenden von Roslyn-Analysetools](../code-quality/use-roslyn-analyzers.md)
