@@ -18,33 +18,35 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 537fb9cba51b1a13e82ffd2321bb96514dc16337
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: dd014defff65ee4b29566219ea3bc04ce0cc3a4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754558"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
-Widerruft einen Break-Befehl.  
-  
-## <a name="syntax"></a>Syntax  
-  
+
+Widerruft einen Break-Befehl.
+
+## <a name="syntax"></a>Syntax
+
 ```cpp
-HRESULT RevokeBreak( );  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- Keine  
-  
-## <a name="return-value"></a>Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
-  
-|Wert|Beschreibung|  
-|-----------|-----------------|  
-|`S_OK`|Die Methode war erfolgreich.|  
-  
-## <a name="remarks"></a>Hinweise  
-  
-## <a name="see-also"></a>Siehe auch  
- [IRemoteDebugApplicationEx-Schnittstelle](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT RevokeBreak( );
+```
+
+### <a name="parameters"></a>Parameter
+
+Keine
+
+## <a name="return-value"></a>Rückgabewert
+
+Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.
+
+|Wert|Beschreibung|
+|-----------|-----------------|
+|`S_OK`|Die Methode war erfolgreich.|
+
+## <a name="see-also"></a>Siehe auch
+
+- [IRemoteDebugApplicationEx-Schnittstelle](iremotedebugapplicationex-interface.md)

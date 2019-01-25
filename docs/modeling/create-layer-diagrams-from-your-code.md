@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761413"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
-Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustellen, erstellen Sie eine *Abhängigkeitsdiagramm* in Visual Studio. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, können überprüfen Sie Ihren Code mit einem Abhängigkeitsdiagramm. Sie können Abhängigkeitsdiagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustellen, erstellen Sie eine *Abhängigkeitsdiagramm* in Visual Studio. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, können überprüfen Sie Ihren Code mit einem Abhängigkeitsdiagramm. Sie können Abhängigkeitsdiagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Erstellen Sie ein Abhängigkeitsdiagramm](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -159,6 +159,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
 - [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800047"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projektsystems, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird das Erstellen eines grundlegenden Projektsystems veranschaulicht. In dieser exemplarischen Vorgehensweise baut auf dem Projektsystem für die basic-eine Visual Studio-Vorlage auf einer Eigenschaftenseite und andere Funktionen. Sie müssen die erste exemplarischen Vorgehensweise abschließen, bevor Sie mit dieser beginnen.  
@@ -106,7 +106,7 @@ Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundleg
   
 - *Program.cs*  
   
-- *Datei "AssemblyInfo.cs"*  
+- *AssemblyInfo.cs*  
   
   Alle drei Dateien `ReplaceParameters` auf True festgelegt, die parameterersetzung ermöglicht.  Die *"Program.cs"* Datei `OpenInEditor` auf True festgelegt, wodurch die Datei im Code-Editor geöffnet werden, wenn ein Projekt erstellt wird.  
   
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr eine Eigenschaftenseite des Projekts  
+## <a name="create-a-project-property-page"></a>Erstellen Sie eine Projekt-Eigenschaftenseite  
  Sie können eine Eigenschaftenseite für den Projekttyp erstellen, sodass Benutzer anzeigen und Ändern der Eigenschaften in Projekten, die basierend auf der Vorlage basieren können. In diesem Abschnitt erfahren Sie, wie Sie eine Konfiguration unabhängig Eigenschaftenseite zu erstellen. Diese grundlegende Eigenschaft verwendet ein Eigenschaftenraster zum Anzeigen der öffentlichen Eigenschaften, die Sie in der Eigenschaft Page-Klasse verfügbar machen.  
   
  Leiten Sie die Eigenschaft-Seite-Klasse aus der `SettingsPage` Basisklasse. Das Eigenschaftenraster bereitgestellt, die von der `SettingsPage` Klasse kennt den meisten primitiven Datentypen und weiß, wie sie angezeigt.  Darüber hinaus die `SettingsPage` Klasse weiß, wie Eigenschaftswerte, zu der Projektdatei beibehalten werden.  
