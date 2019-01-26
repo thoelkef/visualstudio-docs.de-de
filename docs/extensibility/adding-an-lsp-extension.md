@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965691"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -58,33 +58,33 @@ client/registerCapability |
 client/unregisterCapability |
 workspace/didChangeConfiguration | ja
 workspace/didChangeWatchedFiles | ja
-Workspace-symbol | ja
-Arbeitsbereich/executeCommand | ja
-Arbeitsbereich/applyEdit | ja
+workspace/symbol | ja
+workspace/executeCommand | ja
+workspace/applyEdit | ja
 textDocument/publishDiagnostics | ja
 textDocument/didOpen | ja
-TextDocument/didChange | ja
-TextDocument/willSave |
+textDocument/didChange | ja
+textDocument/willSave |
 textDocument/willSaveWaitUntil |
-TextDocument/didSave | ja
+textDocument/didSave | ja
 textDocument/didClose | ja
 TextDocument/Vervollständigung | ja
 Abschluss/auflösen | ja
-TextDocument/gezeigt wird | ja
-TextDocument/signatureHelp | ja
-TextDocument/Verweise | ja
-TextDocument/documentHighlight | ja
+textDocument/hover | ja
+textDocument/signatureHelp | ja
+textDocument/references | ja
+textDocument/documentHighlight | ja
 textDocument/documentSymbol | ja
-TextDocument/Formatierung | ja
+textDocument/formatting | ja
 textDocument/rangeFormatting | ja
-TextDocument/onTypeFormatting |
-TextDocument/definition | ja
+textDocument/onTypeFormatting |
+textDocument/definition | ja
 textDocument/codeAction | ja
 textDocument/codeLens |
 codeLens/resolve |
-TextDocument/documentLink |
-DocumentLink/auflösen |
-TextDocument/umbenennen | ja
+textDocument/documentLink |
+documentLink/resolve |
+textDocument/rename | ja
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -330,7 +330,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 
    ![Bearbeiten von Vspackage-asset](media/lsp-add-vspackage-asset.png)
 
-   * **Typ**: "Microsoft.VisualStudio.VSPackage"
+   * **Typ**: Microsoft.VisualStudio.VsPackage
    * **Quelle**: Datei im Dateisystem
    * **Pfad**: [Pfad zu Ihrem *PKGDEF* Datei]
 

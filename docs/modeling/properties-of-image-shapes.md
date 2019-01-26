@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f1f18a0957c3ee2c67fb9a316460a8883e146f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918208"
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 
@@ -26,13 +26,13 @@ Sie können die Bildformen verwenden, um anzugeben, wie die Domänenklassen in e
 
 - GIF
 
-- JPG
+- .jpg
 
 - .JPEG
 
 - .bmp
 
-- WMF
+- .wmf
 
 - .EMF
 
@@ -54,7 +54,7 @@ Bildformen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 |Umrissstärke|Die konturlinienstärke dieser Form.|0.03125|
 |Textfarbe|Die Farbe, die für Text-Decorators verwendet wird, die mit dieser Form verknüpft sind.|Schwarz|
 |Zugriffsmodifizierer|Der Zugriffsmodifizierer des der Geometrie-Form (öffentlich oder intern).|Public|
-|Benutzerdefinierte Attribute|Verwendet, um die Attribute der Quellklasse Code hinzufügen, die von dieser Form generiert wird.|\<Keine >|
+|Benutzerdefinierte Attribute|Verwendet, um die Attribute der Quellklasse Code hinzufügen, die von dieser Form generiert wird.|\<none>|
 |Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit dem Bild-Form generiert (`none`, `abstract` oder `sealed`).|none|
@@ -62,15 +62,15 @@ Bildformen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 |name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Der Ort, in dem die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|none|
-|Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<Keine >|
+|Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<none>|
 |Die ursprüngliche Höhe|Die ursprüngliche Höhe dieser Form in Zoll.|1|
 |Die ursprüngliche Breite|Die ursprüngliche Breite dieser Form in Zoll.|1.5|
 |Als Eigenschaft verfügbar gemachte Füllfarbe<br /><br /> Verfügbar gemachte Füllverlaufsmodus<br /><br /> Konturfarbe als Eigenschaft verfügbar gemacht.<br /><br /> Konturstrichstil als Eigenschaft verfügbar gemacht.<br /><br /> Umrissstärke als Eigenschaft verfügbar<br /><br /> Stellt Text Color|Wenn `True`, der Benutzer kann die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, mit der rechten Maustaste in der Definition der Form, und klicken Sie auf **verfügbare hinzufügen**.|False|
-|Beschreibung|Dokumentieren des generierten Designers verwendet.|\<Keine >|
-|Anzeigename|Der Name, der im generierten Designer für diese Form angezeigt werden soll.|\<Keine >|
-|Feste QuickInfo-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<Keine >|
-|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Element verwendet wird.|\<Keine >|
-|Bild|Der Pfad zur Bilddatei, die für diese Form verwendet wird.|\<Keine >|
+|Beschreibung|Dokumentieren des generierten Designers verwendet.|\<none>|
+|Anzeigename|Der Name, der im generierten Designer für diese Form angezeigt werden soll.|\<none>|
+|Feste QuickInfo-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<none>|
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Element verwendet wird.|\<none>|
+|Bild|Der Pfad zur Bilddatei, die für diese Form verwendet wird.|\<none>|
 
 ## <a name="see-also"></a>Siehe auch
 

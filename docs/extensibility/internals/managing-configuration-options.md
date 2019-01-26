@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c515270e530428e7d23ce6c8ea698024eecf145d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d54fbcf42786e7c31244dc0c37f4986e36096e17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958485"
 ---
 # <a name="managing-configuration-options"></a>Verwalten von Konfigurationsoptionen
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Konfigurationseinstellungen für Projekt- und Projektmappendateien verwalten, die bestimmen, wie Ihr Projekt, App-Pakete, bereitgestellt und Ausführung erstellt wird. Die folgenden Themen behandeln die Konfiguration von Projekt- und Projektmappendateien.  
