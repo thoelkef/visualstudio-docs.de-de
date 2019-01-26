@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd60d4c042e7fa27386ef549ce6b9d8e808a3176
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962874"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.
 Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von Projektmappen oder Projekte unter quellcodeverwaltung und Abrufen von Verbindungszeichenfolgen aus der quellcodeverwaltung.  

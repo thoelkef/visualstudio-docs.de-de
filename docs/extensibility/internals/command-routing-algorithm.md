@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2a99fc6e87e59bf4cc0008c20905f9dc145102b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709cea938ea898eab1440f38deb563db2530e57d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949617"
 ---
 # <a name="command-routing-algorithm"></a>Algorithmus für das Befehlsrouting
 In Visual Studio werden die Befehle durch eine Reihe von verschiedenen Komponenten behandelt. Befehle werden aus dem innersten Kontext, die für die aktuelle Auswahl basiert, an der äußerste Kontext angegeben (auch bekannt als "global") weitergeleitet. Weitere Informationen finden Sie unter [Befehl Verfügbarkeit](../../extensibility/internals/command-availability.md).  
@@ -40,7 +40,7 @@ In Visual Studio werden die Befehle durch eine Reihe von verschiedenen Komponent
   
      **Ausschneiden**, **Kopie**, **einfügen**, **löschen**, **umbenennen**, **geben**, und **DoubleClick** Befehle erfordern eine besondere Behandlung. Informationen zum Umgang mit **löschen** und **entfernen** Befehle in Hierarchien finden Sie unter den <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> Schnittstelle.  
   
-8.  Globale: Wenn ein Befehl nicht von den zuvor erwähnten Kontexten behandelt wurde, versucht Visual Studio, um die Weiterleitung an das VSPackage, das einen Befehl besitzt, die implementiert die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Wenn das VSPackage nicht bereits geladen wurde, wird Sie nicht geladen, wenn Visual Studio ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode. Das VSPackage geladen wird nur dann, wenn die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode wird aufgerufen.  
+8.  Global: Wenn ein Befehl nicht von den zuvor erwähnten Kontexten behandelt wurde, versucht Visual Studio, um die Weiterleitung an das VSPackage, das einen Befehl besitzt, die implementiert die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Wenn das VSPackage nicht bereits geladen wurde, wird Sie nicht geladen, wenn Visual Studio ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode. Das VSPackage geladen wird nur dann, wenn die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode wird aufgerufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehlsentwurf](../../extensibility/internals/command-design.md)

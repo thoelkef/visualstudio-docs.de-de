@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931c4b29bd5f90b23492cba854644435a7e99bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980881"
 ---
 # <a name="naming-warnings"></a>Benennungswarnungen
 Benennungskonventionen Warnungen unterstützen die Einhaltung der Namenskonventionen der von den .NET Framework-Entwurfsrichtlinien.
@@ -49,6 +49,6 @@ Benennungskonventionen Warnungen unterstützen die Einhaltung der Namenskonventi
 |[CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Ein Namespacename oder ein Typname stimmt mit einem reservierten Schlüsselwort in einer Programmiersprache überein. Bezeichner für Namespaces und Typen dürfen nicht mit Schlüsselwörtern übereinstimmen, die in Programmiersprachen für die Common Language Runtime definiert sind.|
 |[CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)|Der Name eines extern sichtbaren Bezeichners schließt einen Begriff ein, für den ein alternativer, bevorzugter Begriff vorhanden ist. Der Name kann auch den Begriff "Flag" oder "Flags" enthalten.|
 |[CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|Gemäß der Konvention Parameternamen Camel-Case Groß-/Kleinschreibung, und einen Namespace, Typ und Elementnamen Pascal-Schreibweise zur Groß-und Kleinschreibung.|
-|[CA1702: BEI Bei zusammengesetzten Begriffen sollte beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Der Name eines Bezeichners enthält mehrere Begriffe, und mindestens einer der Begriffe ist anscheinend ein zusammengesetztes Wort mit falscher Groß-/Kleinschreibung.|
+|[CA1702: Bei zusammengesetzten Begriffen sollte beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Der Name eines Bezeichners enthält mehrere Begriffe, und mindestens einer der Begriffe ist anscheinend ein zusammengesetztes Wort mit falscher Groß-/Kleinschreibung.|
 |[CA1712: Führen Sie keine Präfixe für Enumerationswerte mit Typnamen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|Namen von Enumerationsmembern werden der Typname nicht vorangestellt werden, weil Typinformationen von Entwicklungstools bereitgestellt werden soll.|
 |[CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|Gemäß der Konvention, die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen implementieren, bzw. von diesen Typen abgeleitete Typen, müssen Sie ein Suffix, das die Basisklasse oder Schnittstelle zugeordnet ist.|

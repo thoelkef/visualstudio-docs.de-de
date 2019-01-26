@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728258dc363f906e005c654909cb86fd782824a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0df2de67466205c9dfe3cd27b338762b80c888ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959069"
 ---
 # <a name="hit-a-breakpoint"></a>Treffen eines Haltepunkts
 Der folgende Abschnitt beschreibt den Prozess aus, wenn die Debug-Engine (DE) einen Haltepunkt erreicht, bei der Ausführung oder das schrittweise ausführen:  
