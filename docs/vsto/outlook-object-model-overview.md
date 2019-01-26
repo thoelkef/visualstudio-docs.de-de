@@ -13,20 +13,20 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b78df3968f23df8685d38d7278ffbf4f331260b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945352"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872364"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über Outlook-Objektmodell
-  Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application>-Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem>-Objekt eine E-Mail dar.  
+  Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt eine E-Mail dar.  
   
  Dieses Thema enthält eine kurze Übersicht über einige der Hauptobjekte im Outlook-Objektmodell. Ressourcen, in denen Sie mehr über das gesamte Outlook-Objektmodell erfahren können, finden Sie unter [verwenden die Dokumentation zum Outlook-Objektmodell](#refdoc).  
   
@@ -74,7 +74,7 @@ ms.locfileid: "53945352"
   
 -   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um auf alle <xref:Microsoft.Office.Interop.Outlook.Explorer> -Objekte in Outlook zuzugreifen.  
   
--   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A>-Methode des <xref:Microsoft.Office.Interop.Outlook.Application>-Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Explorer> abzurufen, der gerade den Fokus besitzt.  
+-   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> -Methode des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Explorer> abzurufen, der gerade den Fokus besitzt.  
   
 -   Verwenden Sie die `GetExplorer`-Methode des <xref:Microsoft.Office.Interop.Outlook.Folder>-Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Explorer> für den aktuellen Ordner abzurufen.  
   
@@ -85,14 +85,14 @@ ms.locfileid: "53945352"
   
 -   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um auf alle <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte in Outlook zuzugreifen.  
   
--   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A>-Methode des <xref:Microsoft.Office.Interop.Outlook.Application>-Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Inspector> abzurufen, der gerade den Fokus besitzt.  
+-   Verwenden Sie die <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> -Methode des <xref:Microsoft.Office.Interop.Outlook.Application> -Objekts, um den <xref:Microsoft.Office.Interop.Outlook.Inspector> abzurufen, der gerade den Fokus besitzt.  
   
 -   Verwenden Sie die `GetInspector`-Methode eines bestimmten Elements, z. B. <xref:Microsoft.Office.Interop.Outlook.MailItem> oder <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, um den dem Element zugeordneten Inspektor abzurufen.  
   
 ### <a name="folder-object"></a>Objekt "Ordner"  
- Das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt stellt einen Ordner dar, der E-Mails, Kontakte, Aufgaben und andere Elemente enthält. Outlook stellt 16 <xref:Microsoft.Office.Interop.Outlook.Folder>-Standardobjekte bereit.  
+ Das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt stellt einen Ordner dar, der E-Mails, Kontakte, Aufgaben und andere Elemente enthält. Outlook stellt 16 <xref:Microsoft.Office.Interop.Outlook.Folder> -Standardobjekte bereit.  
   
- Die <xref:Microsoft.Office.Interop.Outlook.Folder>-Standardobjekte werden durch die Werte der <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders>-Enumeration definiert. Ein auf ein Objekt angewendeter  
+ Die <xref:Microsoft.Office.Interop.Outlook.Folder> -Standardobjekte werden durch die Werte der <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> -Enumeration definiert. Ein auf ein Objekt angewendeter  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox entspricht der **Posteingang** im Outlook-Ordner.  
   

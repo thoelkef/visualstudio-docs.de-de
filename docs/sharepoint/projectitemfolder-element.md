@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItemFolder element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a4a0f60afb35a3e52e3e7b8f00afaef29cf409e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855623"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875588"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder-Element
   Stellt einen zugeordneten Ordner an.  
@@ -58,9 +58,9 @@ ms.locfileid: "53855623"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
 |**Name des Schemas**|SharePoint-Projektelementschema|  
-|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
 |**Kann leer sein.**|Nein|  
   
 ## <a name="see-also"></a>Siehe auch

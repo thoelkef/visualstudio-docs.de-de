@@ -13,17 +13,17 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ec1bc999025128c0dd68281dfc53e3f6353ae6b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931946"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875549"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
   Visual Studio bietet die Projektelementvorlagen für viele verschiedene grundlegende SharePoint-Elemente, einschließlich *listet* und *Inhaltstypen*, beide können Websitespalten integrieren (oder  *Felder*). Die neuen Designer für die Inhaltstypen und Listen stellen diese Elemente einfacher als je zuvor zu erstellen.  

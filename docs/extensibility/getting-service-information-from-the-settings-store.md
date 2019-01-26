@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: decb5edb3e0cc243bacd3be0beda8aba621e8af2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0d24a65997097261bb4b103d4de79086487c754
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956037"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Abrufen von Dienstinformationen aus dem einstellungsspeicher
 Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu finden oder um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.  

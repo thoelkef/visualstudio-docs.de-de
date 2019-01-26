@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872481"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten
   Sie können ein vollständiges Microsoft Office Visio-Dokument oder nur eine bestimmte Seite drucken.  
@@ -29,7 +29,7 @@ ms.locfileid: "53845524"
   
 ### <a name="to-print-a-complete-document"></a>So drucken Sie ein vollständiges Dokument  
   
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Print`-Methode des `Microsoft.Office.Interop.Visio.Document`-Objekts auf, das Sie drucken möchten.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Print` -Methode des `Microsoft.Office.Interop.Visio.Document` -Objekts auf, das Sie drucken möchten.  
   
      Im folgenden Codebeispiel wird das aktive Dokument gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "53845524"
   
 ### <a name="to-print-a-page-of-a-document"></a>So drucken Sie eine Seite eines Dokuments  
   
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Pages.Print`-Methode des `Microsoft.Office.Interop.Visio.Pages`-Objekts auf, das Sie drucken möchten.  
+-   Rufen Sie die `Microsoft.Office.Interop.Visio.Pages.Print` -Methode des `Microsoft.Office.Interop.Visio.Pages` -Objekts auf, das Sie drucken möchten.  
   
      Im folgenden Codebeispiel wird die erste Seite des aktiven Dokuments gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.  
   

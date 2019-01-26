@@ -11,15 +11,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 882183d1e23168e1a3a833cd7cc723f28ce1a139
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 94f39c80fc2b9294afb172c58fa62ef17f06516d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874652"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Vorgehensweise: Programmgesteuertes Erstellen neuer Dokumente
   Wenn Sie ein Dokument programmgesteuert erstellen, ist das neue Dokument ein systemeigenes <xref:Microsoft.Office.Interop.Word.Document>-Objekt. Dieses Objekt verfügt nicht über die zusätzlichen Ereignisse und Datenbindungsfunktionen eines <xref:Microsoft.Office.Tools.Word.Document>-Hostelements. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3697fe85d13e1131c58f28d572e443affa77a81
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914435"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875562"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Zusammenführen von XML in Funktions- und Manifesten
   Funktionen und Pakete werden durch definiert [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifestdateien. Diese App-Pakete Manifeste sind eine Kombination von Daten aus Designer und benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in der Manifestvorlage vom Benutzer eingegeben. Zum Zeitpunkt der paketerstellung [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt die benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Anweisungen mit der vom Designer bereitgestellten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Paket bilden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest-Datei. Ähnliche Elemente, mit der Ausnahmen, die weiter unten in der Merge-Ausnahmen werden zusammengeführt, um zu vermeiden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Validierungsfehler, nachdem Sie die Dateien in SharePoint bereitstellen, und das Manifest zu kleiner und effizienter Dateien.  
@@ -69,7 +69,7 @@ ms.locfileid: "53914435"
 |DwpFiles/DwpFile|Speicherort|  
 |FeatureManifests/FeatureManifest|Speicherort|  
 |Ressourcen oder Ressourcengruppe|Speicherort|  
-|"RootFiles" RootFile /|Speicherort|  
+|RootFiles/RootFile|Speicherort|  
 |SiteDefinitionManifests/SiteDefinitionManifest|Speicherort|  
 |WebTempFile|Speicherort|  
 |TemplateFiles/TemplateFile|Speicherort|  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - site workflows [SharePoint development in Visual Studio]
 - workflow activities [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, site workflows
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cf57ccb62d5a87a3dfb516cc1d7b03f45d609ad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951812"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875185"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität
   In dieser exemplarischen Vorgehensweise veranschaulicht, wie eine benutzerdefinierte Aktivität für eine Website-Ebene mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Workflowdokumentbibliothek auf Siteebene Workflows gelten für die gesamte Website, nicht nur eine Liste auf der Website.) Die benutzerdefinierte Aktivität wird eine Liste der Ankündigungen-Sicherung erstellt und kopiert dann den Inhalt dieser Liste hinein.  
