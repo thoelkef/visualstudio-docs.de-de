@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b8ac2efc6627eae017c7154743091b7682dc8ac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904798"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869199"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
   Wenn Sie gerade die Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word mit Visual Studio Schritte ersten, ist hier was Sie wissen müssen.  

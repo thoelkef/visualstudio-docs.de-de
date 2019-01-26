@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbb481fffecc6a6b4848fd4cd771cb5b16406d9a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905279"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871207"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Vorgehensweise: Inhalt hinzufügen von Steuerelementen zu Word-Dokumenten
   In Word-Projekten auf Dokumentebene können Sie von Inhaltssteuerelementen zum Dokument in Ihrem Projekt zur Entwurfszeit oder zur Laufzeit hinzufügen. In Word-VSTO-Add-in-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen.  
@@ -173,7 +173,7 @@ ms.locfileid: "53905279"
   
 1.  Verwenden einer <xref:Microsoft.Office.Tools.Word.ControlCollection> Methode mit dem Namen `Add` \< *Steuerelementklasse*> (, in denen *Steuerelementklasse* ist der Name der Steuerelement-Klasse, die Sie hinzufügen z. B. ,möchten<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), und eine `Microsoft.Office.Interop.Word.ContentControl` Parameter.  
   
-     Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um für jedes in einem Dokument enthaltene systemeigene Rich-Text-Steuerelement ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu erstellen, nachdem das Dokument geöffnet wurde. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn`-Klasse im Projekt hinzu.  
+     Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um für jedes in einem Dokument enthaltene systemeigene Rich-Text-Steuerelement ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu erstellen, nachdem das Dokument geöffnet wurde. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse im Projekt hinzu.  
   
      [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]  

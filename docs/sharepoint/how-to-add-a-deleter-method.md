@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting entity instances
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cad4de5ed1b31d02d9136b5ec2b46be71f54fea4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924175"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870882"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Vorgehensweise: Hinzufügen einer Deleter-Methode
   Sie können die Benutzer, einen Datensatz aus einer externen Liste auf einer SharePoint-Website zu löschen, durch das Hinzufügen einer Deleter-Methode für das Modell aktivieren. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
