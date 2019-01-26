@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f79a05268a6c1741f7c5d341b0d56e316dbce9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940530"
 ---
 # <a name="include-element"></a>Include-element
 Das Include-Element gibt eine Datei, die gefunden werden, kann für die angegebenen Includepfad für das Einfügen in die aktuelle Datei.  Alle Symbole und Typen, die definiert, werden Teil des kompilierten Ergebnisses.  
