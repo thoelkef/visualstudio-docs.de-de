@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946840"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863928"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projektmappe mit ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Aus diesem Grund sollten Sie erwägen, mithilfe von Windows Installer (*MSI*), wenn mehr als ein Benutzer die Lösung auf dem gleichen Computer ausgeführt wird.
@@ -340,7 +340,7 @@ ms.locfileid: "53946840"
 
  Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (*VSTOInstaller.exe*), das standardmäßig an folgendem Speicherort installiert wird:
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Wenn Sie nicht das Tool an diesem Speicherort ist, können Sie die **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** oder **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** Registrierungsschlüssel, den Pfad zu diesem Tool finden.
 

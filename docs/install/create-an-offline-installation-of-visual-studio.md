@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Offlineinstallation
 description: Erfahren Sie, wie Sie Visual Studio offline installieren können, wenn Sie über eine unzuverlässige Internetverbindung oder eine geringe Bandbreite verfügen.
-ms.date: 08/28/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952395"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345252"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
 
@@ -65,6 +65,9 @@ Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein
 
 Öffnen Sie eine Eingabeaufforderung, und rufen Sie einen der Befehle in den folgenden Beispielen auf. Bei den hier aufgeführten Beispielen wird davon ausgegangen, dass Sie die Community-Edition von Visual Studio verwenden. Passen Sie den Befehl nach Bedarf für Ihre Edition an.
 
+> [!TIP]
+> Um Fehler zu vermeiden, darf Ihr vollständiger Installationspfad nicht mehr 80 Zeichen enthalten.
+
 - Führen Sie für die .NET-Web- und .NET-Desktopentwicklung Folgendes aus:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +84,10 @@ Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-Wenn Sie eine andere Sprache als Englisch installieren möchten, ändern Sie `en-US` in das gewünschte Gebietsschema aus der [Liste der Gebietsschemas](#list-of-language-locales). Verwenden Sie dann die [Liste verfügbarer Komponenten und Workloads](workload-and-component-ids.md), um Ihren Installationscache weiter anzupassen.
+  > [!NOTE]
+  > Ein vollständiges Visual Studio 2017-Layout erfordert mindestens 35 GB Speicherplatz. Weitere Informationen zur Erstellung eines Layouts, das nur die gewünschten Komponenten enthält, finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
 
-> [!IMPORTANT]
-> Ein vollständiges Visual Studio 2017-Layout erfordert mindestens 35 GB Speicherplatz, und der Download kann einige Zeit in Anspruch nehmen. Weitere Informationen zur Erstellung eines Layouts, das nur die gewünschten Komponenten enthält, finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
+Wenn Sie eine andere Sprache als Englisch installieren möchten, ändern Sie `en-US` in das gewünschte Gebietsschema aus der [Liste der Gebietsschemas](#list-of-language-locales). Verwenden Sie dann die [Liste verfügbarer Komponenten und Workloads](workload-and-component-ids.md), um Ihren Installationscache weiter anzupassen.
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Schritt 3: Installieren von Visual Studio über den lokalen Cache
 

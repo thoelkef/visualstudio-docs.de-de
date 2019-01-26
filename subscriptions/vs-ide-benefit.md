@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und insta
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739798"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380067"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Verwenden des Visual Studio 2017-Vorteils
 
@@ -69,7 +69,7 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Dev Essentials | Nicht zutreffend  | Visual Studio-Community |Ja |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  Umfasst nicht: MCT Software & Services.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht: MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio, extending tools
 - SharePoint development in Visual Studio, extensibility object models
 - SharePoint development in Visual Studio, extending tools
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e575ac4d73464ba216d98bbd126a0165fdc9a2a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b5d15775b8c37edeb38d7d5ca3565d3d615e72a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941939"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864058"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von SharePoint-tools extensions
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Features in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie sie miteinander zu verwenden, um das Erweiterungen für die SharePoint-Tools erstellen.  
@@ -31,14 +31,14 @@ ms.locfileid: "53941939"
 
 |Interface|Beschreibung|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementieren Sie diese Schnittstelle, um einen neuen Typ von SharePoint-Projektelement zu definieren. Ein Beispiel finden Sie unter [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementieren Sie diese Schnittstelle, um einen SharePoint-Projektelementtyp zu erweitern, der in Visual Studio bereits installiert ist. Ein Beispiel finden Sie unter [Vorgehensweise: Erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Implementieren Sie diese Schnittstelle, um SharePoint-Projekte zu erweitern. Ein Beispiel finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementieren Sie diese Schnittstelle, um einen neuen Typ von SharePoint-Projektelement zu definieren. Ein Beispiel finden Sie unter [Gewusst wie: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementieren Sie diese Schnittstelle, um einen SharePoint-Projektelementtyp zu erweitern, der in Visual Studio bereits installiert ist. Ein Beispiel finden Sie unter [Gewusst wie: Erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Implementieren Sie diese Schnittstelle, um SharePoint-Projekte zu erweitern. Ein Beispiel finden Sie unter [Gewusst wie: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|Implementieren Sie diese Schnittstelle, um einen neuen Bereitstellungsschritt zu definieren, der beim Bereitstellen oder Zurückziehen eines SharePoint-Projektelements ausgeführt werden kann. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Implementieren Sie diese Schnittstelle zum Erweitern eines vorhandenen Knotens unter der **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Ein Beispiel finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Implementieren Sie diese Schnittstelle, um eine neue Art von Knoten zu definieren die **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Ein Beispiel finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Implementieren Sie diese Schnittstelle, um eine benutzerdefinierte Funktionsvalidierungsregel zu definieren. Ein Beispiel finden Sie unter [Vorgehensweise: Erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Implementieren Sie diese Schnittstelle, um eine benutzerdefinierte Paketvalidierungsregel zu definieren. Ein Beispiel finden Sie unter [Vorgehensweise: Erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Implementieren Sie diese Schnittstelle zum Erweitern eines vorhandenen Knotens unter der **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Ein Beispiel finden Sie unter [Gewusst wie: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Implementieren Sie diese Schnittstelle, um eine neue Art von Knoten zu definieren die **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Ein Beispiel finden Sie unter [Gewusst wie: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Implementieren Sie diese Schnittstelle, um eine benutzerdefinierte Funktionsvalidierungsregel zu definieren. Ein Beispiel finden Sie unter [Gewusst wie: Erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Implementieren Sie diese Schnittstelle, um eine benutzerdefinierte Paketvalidierungsregel zu definieren. Ein Beispiel finden Sie unter [Gewusst wie: Erstellen, benutzerdefinierte Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
 
  Nachdem Sie eine Erweiterung der SharePoint-Tools implementiert haben, müssen Sie die Erweiterungsassembly in einem Visual Studio-Erweiterungspaket (VSIX) bereitstellen, damit Visual Studio die Erweiterung ermitteln und laden kann. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
 

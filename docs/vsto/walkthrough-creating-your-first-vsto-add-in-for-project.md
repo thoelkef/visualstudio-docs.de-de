@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ec2a0959e09cac4522697ebe8ab27d58a890f45
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931254"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872767"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines VSTO-Add-Ins für Microsoft Office-Projekt. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -67,7 +67,7 @@ ms.locfileid: "53931254"
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstProjectAddIn** -Projekt und öffnet die Codedatei **ThisAddIn** im Editor.  
   
 ## <a name="write-code-that-adds-a-new-task-to-a-project"></a>Schreiben von Code, der ein Projekt eine neue Aufgabe hinzufügt  
- Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Objektmodell von Project, um eine neue Aufgabe zu einem Projekt hinzuzufügen. Standardmäßig enthält die Codedatei „ThisAddIn“ den folgenden generierten Code:  
+ Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Objektmodell von Project, um eine neue Aufgabe zu einem Projekt hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:  
   
 -   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Project. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "53931254"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>So fügen Sie eine Aufgabe zu einem neuen Projekt hinzu  
   
-1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn`-Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das `NewProject`-Ereignis der `Microsoft.Office.Interop.MSProject.Application`-Klasse.  
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das `NewProject`-Ereignis der `Microsoft.Office.Interop.MSProject.Application`-Klasse.  
   
     Wenn der Benutzer ein neues Projekt erstellt, fügt dieser Ereignishandler eine Aufgabe zum Projekt hinzu.  
   

@@ -1,6 +1,6 @@
 ---
-title: Debuggen einer Node.js-App
-description: Visual Studio unterstützt das Debuggen von Node.js-Anwendungen
+title: Debuggen einer JavaScript- oder TypeScript-App
+description: Visual Studio unterstützt das Debuggen JavaScript- and TypeScript-Apps in Visual Studio
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,16 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955892"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398233"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>Debuggen einer Node.js-App in Visual Studio
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
 Sie können mithilfe von Visual Studio JavaScript- und TypeScript-Code debuggen. Sie können Breakpoints festlegen und erreichen, den Debugger anfügen, Variablen untersuchen, die Aufrufliste anzeigen und andere Debugfeatures verwenden.
+
+> [!TIP]
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 ## <a name="debug-server-side-script"></a>Debuggen von serverseitigen Skripts
 

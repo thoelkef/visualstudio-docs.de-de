@@ -11,17 +11,17 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8360194e9efc59634162781fd3b4e0787c1c3260
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909111"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870164"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.  
@@ -66,8 +66,8 @@ ms.locfileid: "53909111"
   
 |Office-Version|Konfigurationspfad|  
 |--------------------|------------------------|  
-|32-Bit|*Stamm*\Software\Microsoft\Visio\Addins\\*Add-in-ID*|  
-|64-Bit|*Stamm*\Software\Wow6432Node\Visio\Addins\\*Add-in-ID*|  
+|32-Bit|*Root*\Software\Microsoft\Visio\Addins\\*add-in ID*|  
+|64-Bit|*Root*\Software\Wow6432Node\Visio\Addins\\*add-in ID*|  
   
  In der folgenden Tabelle werden die Einträge in diesem Registrierungsschlüssel aufgeführt.  
   

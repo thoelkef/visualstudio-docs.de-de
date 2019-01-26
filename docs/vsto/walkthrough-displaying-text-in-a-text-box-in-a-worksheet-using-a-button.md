@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8bdde07844da26b03bca45f41887d6b4eb64ef
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941608"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863824"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Office Excel-Arbeitsblättern, und Erstellen von Excel-Projekten, die mit Office-Entwicklungstools in Visual Studio. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  

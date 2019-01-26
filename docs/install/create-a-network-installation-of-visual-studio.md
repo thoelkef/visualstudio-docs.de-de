@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966731"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349919"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Erstellen einer Netzwerkinstallation von Visual Studio 2017
 
@@ -30,7 +30,7 @@ Normalerweise erstellen Unternehmensadministratoren für die Bereitstellung auf 
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Herunterladen des Visual Studio-Bootstrappers
 
-**Laden** Sie die gewünschte Edition von Visual Studio herunter. Achten Sie darauf, auf **Speichern** zu klicken, und dann auf **Ordner öffnen**.
+Laden Sie die gewünschte Edition von Visual Studio herunter. Achten Sie darauf, auf **Speichern** zu klicken, und dann auf **Ordner öffnen**.
 
 Ihre ausführbare Setupdatei &mdash; oder genauer gesagt die Bootstrapperdatei &mdash; entspricht einer der folgenden.
 
@@ -115,11 +115,15 @@ Wenn Sie ein vorhandenes Layout auf ein vollständiges Layout aktualisieren möc
 
 Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines Installationsskripts bereitstellen. Oder Benutzer mit Administratorrechten können das Setup direkt über die Freigabe ausführen, um Visual Studio auf ihrem Computer zu installieren.
 
-- Benutzer müssen für die Installation Folgendes ausführen: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Administratoren können eine Installation im unbeaufsichtigten Modus ausführen, indem Folgendes aufgerufen wird: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Benutzer müssen für die Installation Folgendes ausführen: <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Administratoren können eine Installation im unbeaufsichtigten Modus ausführen, indem Folgendes aufgerufen wird: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Um Fehler zu vermeiden, darf Ihr vollständiger Installationspfad nicht mehr 80 Zeichen enthalten.
+>
 > [!TIP]
 > Bei Ausführung als Teil einer Batchdatei wird mit der Option `--wait` sichergestellt, dass der `vs_enterprise.exe`-Prozess wartet, bis die Installation abgeschlossen ist, ehe ein Exitcode zurückgegeben wird. Dies ist hilfreich, wenn ein Unternehmensadministrator weitere Aktionen für vollständige Installation durchführen möchte (z.B. um [einen Product Key auf eine erfolgreiche Installation anzuwenden](automatically-apply-product-keys-when-deploying-visual-studio.md)), aber auf die Beendigung der Installation warten muss, um den Rückgabecode dieser Installation zu verarbeiten.  Wenn Sie `--wait` nicht verwenden, wird der Prozess `vs_enterprise.exe` beendet, bevor die Installation abgeschlossen ist, und gibt ungenauen Exitcode zurück, der den Status des Installationsvorgangs nicht darstellt.
+
 
 Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`.  Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.
 

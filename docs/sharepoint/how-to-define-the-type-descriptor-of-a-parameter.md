@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866791"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Vorgehensweise: Definieren des Typdeskriptors für einen parameter
   Ein Typdeskriptor enthält Eigenschaften, mit denen der Datentyp eines Parameters beschrieben wird. Von einem Typdeskriptor kann ein Feld, eine Entität oder eine Auflistung von Entitäten definiert werden. Weitere Informationen finden Sie unter [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
@@ -95,19 +95,19 @@ ms.locfileid: "53953156"
   
       Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von Klassen in Ihrem Projekt.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1] "  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`  
   
    - Bei Verwendung eines Typs, der sich in einer Assembly der Lösung befindet, enthält der vollqualifizierte Name den Namen des Typs, den Namen der Assembly, die Versionsnummer, die Kultur sowie das öffentliche Schlüsseltoken.  
   
       Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von Typen in einer Assembly, die Sie in der Projektmappe verweisen.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, MyAssemblyName, Version = 4.0.0.0, Culture = Neutral, PublicKeyToken = b77a5c561934e089] "  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - Bei Verwendung eines im BDC-Objektmodell definierten Typs enthält der vollqualifizierte Name lediglich den Namespace und den Namen des Typs.  
   
       Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von im BDC-Objektmodell definierten Typen.  
   
-      `System.Collections.Generic.IEnumerable`1 ' Microsoft.BusinessData.Runtime.DynamicType [']'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. In der **BDC-Methodendetails** , öffnen Sie die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **bearbeiten**.  
   

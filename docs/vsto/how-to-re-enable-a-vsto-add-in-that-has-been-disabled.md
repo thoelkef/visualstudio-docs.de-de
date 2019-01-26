@@ -11,17 +11,17 @@ helpviewer_keywords:
 - disabled add-ins
 - add-ins [Office development in Visual Studio], disabled
 - add-ins [Office development in Visual Studio], enabling
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfc5a70e309ffece432a2d9c9adb10011557239d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939397"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869251"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde
   VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Wenn Ihr VSTO-Add-In beim Debuggen von der Anwendung nicht geladen wird, wurde das VSTO-Add-In von der Anwendung möglicherweise hart oder weich deaktiviert.  

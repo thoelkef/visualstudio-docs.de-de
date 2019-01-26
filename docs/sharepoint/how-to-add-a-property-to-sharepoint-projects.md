@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f898ffd70888f00b508223ec4d3c578cbc4d538
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950471"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869605"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte
   Sie können eine projekterweiterung verwenden, zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt. Die Eigenschaft wird in der **Eigenschaften** Wartungszeitfensters, in das Projekt ausgewählt ist, im **Projektmappen-Explorer**.  

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929574"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869436"
 ---
 # <a name="ribbon-xml"></a>Multifunktionsleisten-XML
   Das Element "Menüband (XML) können Sie zum Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element "Menüband (XML), sollten Sie im Menüband auf eine Weise anpassen, die von dem Element" Menüband (visueller Designer) "nicht unterstützt wird. Einen Vergleich der, wie Sie mit jedem Element ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).  
@@ -117,7 +117,7 @@ ms.locfileid: "53929574"
 |-------------|-----------------|  
 |**customUI**|Stellt das benutzerdefinierte Menüband im VSTO-Add-in-Projekt dar.|  
 |**ribbon**|Stellt das Menüband dar.|  
-|**Registerkarten**|Stellt eine Sammlung von Registerkarten des Menübands dar.|  
+|**tabs**|Stellt eine Sammlung von Registerkarten des Menübands dar.|  
 |**Registerkarte**|Stellt eine einzelne Registerkarte des Menübands dar.|  
 |**group**|Stellt eine Gruppe von Steuerelementen auf der Registerkarte des Menübands dar.|  
   

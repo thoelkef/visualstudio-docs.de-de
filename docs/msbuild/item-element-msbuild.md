@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908279"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345616"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup` Elements angegeben werden.  
@@ -122,5 +122,5 @@ Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die
 
 ## <a name="see-also"></a>Siehe auch  
  [Elemente](../msbuild/msbuild-items.md)   
- [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)   
+ [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md) [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)   
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
