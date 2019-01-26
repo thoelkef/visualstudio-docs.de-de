@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899651"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864734"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Inhaltssteuerelemente in einer Anpassung auf Dokumentebene für Word an XML-Daten binden, die in dem Dokument gespeichert sind.  
@@ -269,7 +269,7 @@ ms.locfileid: "53899651"
   
 ### <a name="to-test-the-content-controls"></a>So testen Sie die Inhaltssteuerelemente  
   
-1.  Drücken Sie **F5** um das Projekt auszuführen.  
+1.  Drücken Sie **F5**, um das Projekt auszuführen.  
   
 2.  Überprüfen Sie, ob die Tabelle im Dokument ähnlich aussieht wie die folgende Tabelle. Jede der Zeichenfolgen in der zweiten Spalte wird von einem Element im benutzerdefinierten XML-Abschnitt im Dokument abgerufen.  
   

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControl element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a05fe8be5097933351eec4816ee3faa0f92a3e37
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864137"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869519"
 ---
 # <a name="safecontrol-element"></a>SafeControl-Element
   Stellt eine ASPX-Steuerelement oder ein Webpart, das als für alle Benutzer Zugriff auf jede ASPX-Seite auf die SharePoint-Website festgelegt ist.  
@@ -45,7 +45,7 @@ ms.locfileid: "53864137"
 |**IsSafeAgainstScript**|Optionale **xs: Boolean** Attribut.<br /><br /> Gibt an, ob nicht vertrauenswürdige Benutzer anzeigen oder bearbeiten Sie die Eigenschaften des ASPX-Steuerelements oder -Webpart können.|  
 |**Name**|Optionale **xs: String** Attribut.<br /><br /> Der Name der diesem Eintrag für sicheres Steuerelement in der Auflistung.|  
 |**Namespace**|Optionale **xs: String** Attribut.<br /><br /> Der Namespace des ASPX-Steuerelements oder -Webpart.|  
-|**Typname**|Optionale **xs: String** Attribut.<br /><br /> Der Typname des ASPX-Steuerelements oder -Webpart.|  
+|**TypeName**|Optionale **xs: String** Attribut.<br /><br /> Der Typname des ASPX-Steuerelements oder -Webpart.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine  
@@ -63,9 +63,9 @@ ms.locfileid: "53864137"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Name des Schemas**|SharePoint-Projektelementschema|  
-|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
 |**Kann leer sein.**|Nein|  
   
 ## <a name="see-also"></a>Siehe auch
