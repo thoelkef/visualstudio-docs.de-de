@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 867eb1fd64a7318d460a387ededd39e4f188d445
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835473"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868104"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Vorgehensweise: Anpassen einer SharePoint-Funktion
   Sie können erstellen und Anpassen von SharePoint-Funktionen mithilfe der Funktions-Designer in Visual Studio. Sie können z. B. Festlegen des Gültigkeitsbereichs der Funktion und weitere Funktionen als Abhängigkeiten hinzufügen. Standardmäßig wird die Funktions-Designer geöffnet, wenn Sie ein neues Feature in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.  

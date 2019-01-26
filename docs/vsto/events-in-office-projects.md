@@ -29,15 +29,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62007fc37efb6659e156c5d99d49076c59bfdca8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868416"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.  
@@ -131,7 +131,7 @@ ms.locfileid: "53929878"
  Visual Studio stellt generierten Code in VSTO-Add-Ins bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: <xref:Microsoft.Office.Tools.AddInBase.Startup> und <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
   
 ### <a name="startup-event"></a>Startup-Ereignis  
- Das <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignis wird ausgelöst, nachdem das VSTO-Add-In geladen und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dieses Ereignis wird mit der `ThisAddIn_Startup`-Methode in der generierten Codedatei behandelt.  
+ Das <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignis wird ausgelöst, nachdem das VSTO-Add-In geladen und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dieses Ereignis wird mit der `ThisAddIn_Startup` -Methode in der generierten Codedatei behandelt.  
   
  Code im `ThisAddIn_Startup` -Ereignishandler ist der erste Benutzercode, der ausgeführt wird, es sei denn, Ihr VSTO-Add-In setzt die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode außer Kraft. In diesem Fall wird der `ThisAddIn_Startup` -Ereignishandler nach <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>aufgerufen.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "53929878"
  Weitere Informationen zur Startsequenz von VSTO-Add-ins finden Sie unter [Architecture of VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
 ### <a name="shutdown-event"></a>Shutdown-Ereignis  
- Das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis wird ausgelöst, wenn die Anwendungsdomäne, in der Ihr Code geladen wird, entladen werden soll. Dieses Ereignis wird mit der `ThisAddIn_Shutdown`-Methode in der generierten Codedatei behandelt. Dieser Ereignishandler ist der letzte Benutzercode, der beim Entladen des VSTO-Add-Ins ausgeführt wird.  
+ Das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis wird ausgelöst, wenn die Anwendungsdomäne, in der Ihr Code geladen wird, entladen werden soll. Dieses Ereignis wird mit der `ThisAddIn_Shutdown` -Methode in der generierten Codedatei behandelt. Dieser Ereignishandler ist der letzte Benutzercode, der beim Entladen des VSTO-Add-Ins ausgeführt wird.  
   
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown-Ereignis in Outlook-VSTO-Add-ins  
  Das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis wird nur ausgelöst, wenn der Benutzer das VSTO-Add-In in Outlook über das Dialogfeld "COM-Add-Ins" deaktiviert. Es wird nicht ausgelöst, wenn Outlook beendet wird. Wenn Sie über Code verfügen, der beim Beenden von Outlook ausgeführt werden muss, sollten Sie eines der folgenden Ereignisse behandeln:  

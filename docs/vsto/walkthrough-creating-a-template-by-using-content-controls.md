@@ -9,17 +9,17 @@ helpviewer_keywords:
 - building blocks [Office development in Visual Studio]
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b2bc96a9df16c43c8fe4e66dbed4079a1ae3a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931985"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874174"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word-Vorlage verwendet.  
@@ -189,7 +189,7 @@ ms.locfileid: "53931985"
   
 ### <a name="to-test-the-employee-table"></a>So testen Sie die Mitarbeitertabelle  
   
-1.  Drücken Sie **F5** um das Projekt auszuführen.  
+1.  Drücken Sie **F5**, um das Projekt auszuführen.  
   
 2.  Klicken Sie auf **ersten Baustein auswählen** auf das erste Steuerelement für Inhalt anzuzeigen.  
   

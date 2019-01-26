@@ -12,15 +12,15 @@ helpviewer_keywords:
 - RibbonManager class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876225"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Zugriff auf das Menüband zur Laufzeit
   Sie können Code zum Einblenden, Ausblenden und Ändern des Menübands schreiben und Benutzern das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook-Formularbereich ermöglichen.  
@@ -58,7 +58,7 @@ ms.locfileid: "53989489"
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Menüband-Designer](../vsto/ribbon-designer.md)   
- [Menüband-XML](../vsto/ribbon-xml.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
  [Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   

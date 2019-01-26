@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895572"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868679"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Vorgehensweise: Konfigurieren der aufnahmelistensicherheit
   Wenn Sie über Administratorberechtigungen verfügen, können Sie konfigurieren die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung um zu steuern, ob der Endbenutzer die Möglichkeit, Office-Projektmappen installieren, indem Sie eine Entscheidung über die Vertrauenswürdigkeit in der Aufnahmeliste speichern angegeben werden. Weitere Informationen zu Aufnahmelisten, finden Sie unter [vertrauen Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -40,13 +40,13 @@ ms.locfileid: "53895572"
   
 1.  Öffnen Sie den Registrierungs-Editor ein:  
   
-    1.  Klicken Sie auf **starten**, und klicken Sie dann auf **ausführen**.  
+    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
   
     2.  In der **öffnen** geben **regedt32.exe**, und klicken Sie dann auf **OK**.  
   
 2.  Suchen Sie den folgenden Registrierungsschlüssel:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn aus.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "53895572"
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Disabled** (deaktiviert)|  
-    |**Arbeitsplatz**|**Aktiviert**|  
+    |**MyComputer**|**Aktiviert**|  
     |**LocalIntranet**|**Aktiviert**|  
     |**TrustedSites**|**Aktiviert**|  
   
@@ -99,13 +99,13 @@ ms.locfileid: "53895572"
   
 1.  Öffnen Sie den Registrierungs-Editor ein:  
   
-    1.  Klicken Sie auf **starten**, und klicken Sie dann auf **ausführen**.  
+    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
   
     2.  In der **öffnen** geben **regedt32.exe**, und klicken Sie dann auf **OK**.  
   
 2.  Suchen Sie den folgenden Registrierungsschlüssel:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn aus.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "53895572"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled** (deaktiviert)|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Arbeitsplatz**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
@@ -158,13 +158,13 @@ ms.locfileid: "53895572"
   
 1.  Öffnen Sie den Registrierungs-Editor ein:  
   
-    1.  Klicken Sie auf **starten**, und klicken Sie dann auf **ausführen**.  
+    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
   
     2.  In der **öffnen** geben **regedt32.exe**, und klicken Sie dann auf **OK**.  
   
 2.  Erstellen Sie den folgenden Registrierungsschlüssel aus, wenn dies nicht bereits vorhanden ist:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugehörigen Werten vorhanden sind.  
   
@@ -172,7 +172,7 @@ ms.locfileid: "53895572"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled** (deaktiviert)|  
     |**Internet**|**Disabled** (deaktiviert)|  
-    |**Arbeitsplatz**|**Disabled** (deaktiviert)|  
+    |**MyComputer**|**Disabled** (deaktiviert)|  
     |**LocalIntranet**|**Disabled** (deaktiviert)|  
     |**TrustedSites**|**Disabled** (deaktiviert)|  
   

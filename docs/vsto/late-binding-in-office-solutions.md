@@ -10,17 +10,17 @@ helpviewer_keywords:
 - types [Office development in Visual Studio], casting
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 520ad17bf96f4a6c657a8bd48ac0fdd29b52e1b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873170"
 ---
 # <a name="late-binding-in-office-solutions"></a>Spätes Binden in Office-Projektmappen
   Einige Typen in der Objektmodelle von Office-Anwendungen bieten Funktionen, die über die Funktionen mit späten Bindung verfügbar ist. Beispielsweise werden einige Methoden und Eigenschaften können je nach Kontext der Office-Anwendung verschiedene Objekttypen zurückgeben, und einige Typen können verschiedene Methoden oder Eigenschaften in unterschiedlichen Kontexten verfügbar machen.  

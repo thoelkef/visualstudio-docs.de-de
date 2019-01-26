@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 474c0085851d826b4b15f5f7c84600e0dd04bcb1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986400"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862179"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekt geben.
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:  
@@ -53,8 +53,8 @@ ms.locfileid: "53986400"
 |-------------|--------------------------------------------|---------------------|  
 |Aktionsbereich|Projekte auf Dokumentebene|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|  
 |ClickOnce-Bereitstellung:|VS-Projekte und Projekte auf Dokumentebene|[Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)|  
-|Benutzerdefinierte Aufgabenbereiche|VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-Outlook<br />-PowerPoint<br />-Word|[Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)|  
-|Benutzerdefinierte XML-Teile|Projekte auf Dokumentebene<br /><br /> Projekte auf Anwendungsebene für die folgenden Anwendungen:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)|  
+|Benutzerdefinierte Aufgabenbereiche|VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-   Outlook<br />-PowerPoint<br />-Word|[Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)|  
+|Benutzerdefinierte XML-Teile|Projekte auf Dokumentebene<br /><br /> Projekte auf Anwendungsebene für die folgenden Anwendungen:<br /><br /> -   Excel<br />-PowerPoint<br />-Word|[Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)|  
 |Datencache|Projekte auf Dokumentebene|[Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)|  
 |Machen Sie ein Objekt in einem VSTO-Add-in für andere Microsoft Office-Projektmappen verfügbar.|VSTO-Add-In-Projekte|[Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Folgende Hoststeuerelemente:<br /><br /> -Diagramm<br />-ListObject<br />-NamedRange<br />– Content-Steuerelementen<br />-Lesezeichen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für Word und Excel|[Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)|  
@@ -62,7 +62,7 @@ ms.locfileid: "53986400"
 |Bereitstellung von mehreren Projekten|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Bereitstellen von mehreren Office-Projektmappen in einem einzelnen ClickOnce-installer](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook-Formularbereiche|VSTO-Add-In-Projekte für Outlook|[Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)|  
 |Aktionen nach der Bereitstellung|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte|[Exemplarische Vorgehensweise: Kopieren Sie ein Dokument auf dem Computer des Endbenutzers nach einer ClickOnce-installation](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-Outlook<br />-PowerPoint<br />-Projekt<br />-Visio<br />-Word|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
+|Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 und InfoPath 2010 nur)<br />-   Outlook<br />-PowerPoint<br />-Projekt<br />-   Visio<br />-Word|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|  
 |Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Siehe auch  

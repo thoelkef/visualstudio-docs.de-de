@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868273"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokumentebene
   Ein primäres Ziel von Anpassungen auf Dokumentebene ist, Daten aus der Ansicht in Office-Dokumenten zu trennen. Daten bezieht sich auf die Informationen, die in das Dokument, einschließlich der Zahlen und Text gespeichert ist. Ansicht bezieht sich auf die Benutzeroberfläche und das Objektmodell der Microsoft Office Word und Microsoft Office Excel.  
@@ -56,7 +56,7 @@ ms.locfileid: "53964649"
   
 ||Datencache|Benutzerdefinierte XML-Elemente|  
 |-|----------------|----------------------|  
-|Welche Office-Anwendungen können diese verwenden?|Anpassungen auf Dokumentebene für die folgenden Anwendungen:<br /><br /> -Excel<br />-Word|Dokument- und Anwendungsebene Lösungen für die folgenden Anwendungen:<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
+|Welche Office-Anwendungen können diese verwenden?|Anpassungen auf Dokumentebene für die folgenden Anwendungen:<br /><br /> -   Excel<br />-Word|Dokument- und Anwendungsebene Lösungen für die folgenden Anwendungen:<br /><br /> -   Excel<br />-PowerPoint<br />-Word|  
 |Welche Arten von Daten können Sie speichern?|Alle öffentlichen Objekt in der Anpassungsassembly, die bestimmte Anforderungen erfüllt. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).|Alle XML-Daten.|  
 |Können Sie die Daten ohne Starten des Microsoft Office-Anwendungen zugreifen?|Ja, mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> vom bereitgestellten-Klasse die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Ja, mithilfe von Klassen in der <xref:System.IO.Packaging> -Namespace oder mithilfe von Open XML-Format SDK.|  
   

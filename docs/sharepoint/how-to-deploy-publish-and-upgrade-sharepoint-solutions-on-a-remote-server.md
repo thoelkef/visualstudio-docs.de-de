@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, remote deployment
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aafc503ff2b8dffed5b70d17f4eb488baf72704
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835671"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865085"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen auf dem lokalen System aus, können Sie die SharePoint-sandkastenlösungen Remotestandorten oder lokale SharePoint-Websites veröffentlichen. Die remote veröffentlichen Prozess Kopien der *.wsp* Datei mit dem SharePoint-Server installiert die Lösung und anschließend können Sie die Lösung zu aktivieren. Sie können auch eine Remoteinstallation der SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen werden.  
