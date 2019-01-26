@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - localizing XML [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df6e4be288e957708ba7339383d8e80e82f27e40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959843"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870268"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Vorgehensweise: Lokalisieren von ASPX-markup
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (ASPX) verwenden Sie in der Regel hartcodierte Zeichenfolgenwerte. Um diese Zeichenfolgen zu lokalisieren, ersetzen Sie sie mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.  

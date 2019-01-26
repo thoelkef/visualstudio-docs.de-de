@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cb56698d01739f632f56da061f447ace1153212
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 242412c5cf29a39294c7f223d5ebf34b56b6ea82
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900965"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866752"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Von SharePoint unterstützte MsBuild-Eigenschaften
   Alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaft, die in der Microsoft.VisualStudio.SharePoint.targets-Datei, die Projektdatei oder das Projektbenutzerdatei definierten kann verwendet werden, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Zusätzlich zu den allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften bereitgestellt, die vom SharePoint-Projekt definiert zusätzliche Eigenschaften, die spezifisch für SharePoint-Projekte sind.  
@@ -29,7 +29,7 @@ ms.locfileid: "53900965"
   
 |Eigenschaftenname|Beschreibung|  
 |-------------------|-----------------|  
-|' SharePointSiteUrl '|Eine Zeichenfolge, die stellt die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] zur SharePoint-Website.|  
+|SharePointSiteUrl|Eine Zeichenfolge, die stellt die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] zur SharePoint-Website.|  
 |SandboxedSolution|Ein boolescher Wert, der angibt, ob die Lösung eine Sandbox-Lösung ist.|  
 |ActiveDeploymentConfiguration|Der aktiven Bereitstellungskonfiguration.|  
 |IncludeAssemblyInPackage|Ein boolescher Wert, der angibt, ob die Assembly in der Paketdatei enthalten ist.|  
@@ -40,7 +40,7 @@ ms.locfileid: "53900965"
 |LayoutPath|Eine Zeichenfolge, die stellt das Stammverzeichnis, in dem alle Dateien gepackt werden vorübergehend platziert werden, bevor sie hinzugefügt wurden, die *.wsp* Datei. Dieser Pfad kann hilfreich zu wissen, wenn Sie außer Kraft setzen die BeforeLayout und AfterLayout Ziele hinzufügen, entfernen oder ändern Dateien gepackt werden, da Sie ihn verwenden können, um den Inhalt zu ändern, werden die *.wsp* Datei.|  
 |BasePackagePath|Eine Zeichenfolge, die den Ordner darstellt, in dem das Paket abgelegt wird. Dieser Wert wird verwendet, das Ausgabeverzeichnis des Projekts, z. B. "bin\Debug".|  
 |PackageExtension|Eine Zeichenfolge, die die Dateinamenerweiterung zum Anfügen an das Paket darstellt. Der Standardwert ist die WSP-Datei.|  
-|"Assemblydeploymenttarget"|Eine Zeichenfolge, die den Speicherort darstellt, in denen die Projektassembly auf dem SharePoint-Server bereitgestellt wird. Der Wert ist entweder GlobalAssemblyCache (Standard) oder WebApplication. Diese Eigenschaft kann auch im Eigenschaftenfenster festgelegt werden.|  
+|AssemblyDeploymentTarget|Eine Zeichenfolge, die den Speicherort darstellt, in denen die Projektassembly auf dem SharePoint-Server bereitgestellt wird. Der Wert ist entweder GlobalAssemblyCache (Standard) oder WebApplication. Diese Eigenschaft kann auch im Eigenschaftenfenster festgelegt werden.|  
 |PackageWithValidation|Ein boolescher Wert, der angibt, ob die Überprüfung vor dem Packen. Diese Eigenschaft können Sie die Überprüfungsfehler beim Erstellen von Paketen zu ignorieren.|  
 |ValidatePackageDependsOn|Eine Zeichenfolge, die zusätzliche Ziele zum Ausführen vor dem ValidatePackage Ziel definiert.|  
 |TokenReplacementFileExensions|Eine Zeichenfolge, die Dateien definiert, die die Token, die während des Verpackens ersetzt haben.|  

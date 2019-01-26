@@ -14,15 +14,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea47b000adb3f60a0925659ff869d25e8ed8f4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910268"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874872"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Aufrufen von Code in VSTO-Add-ins aus anderen Office-Projektmappen
   Sie können ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen, einschließlich anderer Microsoft Office-Projektmappen, verfügbar machen. Dies ist hilfreich, wenn Ihr VSTO-Add-In einen Dienst bereitstellt, der durch andere Projektmappen verwendet werden soll. Z. B. Wenn Sie ein VSTO-Add-in für Microsoft Office Excel, die Berechnungen auf finanzielle Daten von einem Webdienst vornimmt verfügen, können andere Projektmappen diese Berechnungen durch den Aufruf in das Excel-VSTO-Add-in zur Laufzeit ausführen.  
@@ -102,7 +102,7 @@ ms.locfileid: "53910268"
 ## <a name="access-objects-from-other-solutions"></a>Zugreifen auf Objekte aus anderen Projektmappen  
  Befolgen Sie zum Aufrufen des verfügbar gemachten Objekts in Ihrem VSTO-Add-In die folgenden Schritte in der Clientlösung:  
   
-1. Rufen Sie das <xref:Microsoft.Office.Core.COMAddIn>-Objekt ab, das für das verfügbar gemachte VSTO-Add-In steht. Clients können mithilfe der `Application.COMAddIns`-Eigenschaft im Objektmodell der Office-Hostanwendung auf alle verfügbaren VSTO-Add-Ins zugreifen.  
+1. Rufen Sie das <xref:Microsoft.Office.Core.COMAddIn> -Objekt ab, das für das verfügbar gemachte VSTO-Add-In steht. Clients können mithilfe der `Application.COMAddIns`-Eigenschaft im Objektmodell der Office-Hostanwendung auf alle verfügbaren VSTO-Add-Ins zugreifen.  
   
 2. Zugriff auf die COMAddIn.Object-Eigenschaft, der die <xref:Microsoft.Office.Core.COMAddIn> Objekt. Diese Eigenschaft gibt das verfügbar gemachte Objekt aus dem VSTO-Add-In zurück.  
   

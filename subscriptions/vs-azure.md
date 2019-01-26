@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739811"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380125"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -43,7 +43,7 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 |      Visual Studio Enterprise – MCT Software & Services      |     100 USD monatliches Guthaben     |                             Ja                             |
 | Visual Studio Enterprise – MCT Software & Services, Developer |     150 USD monatliches Guthaben     |                             Ja                             |
 
-*Umfasst Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
+*Enthält Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
 
 > [!NOTE]

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867363"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
@@ -143,7 +143,7 @@ ms.locfileid: "53942371"
   
 ### <a name="to-test-the-map-it-form-region"></a>So testen Sie den Map It-Formularbereich  
   
-1.  Drücken Sie **F5** um das Projekt auszuführen.  
+1.  Drücken Sie **F5**, um das Projekt auszuführen.  
   
      Outlook wird geöffnet.  
   

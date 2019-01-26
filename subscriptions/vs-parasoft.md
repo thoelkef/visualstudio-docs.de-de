@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739668"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379948"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
@@ -83,7 +83,7 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 | Visual Studio Dev Essentials | NA  | Nicht verfügbar|NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 
 > [!NOTE]

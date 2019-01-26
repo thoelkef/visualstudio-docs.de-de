@@ -20,15 +20,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], deploying Office solutions (2007 system)
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 890f237f576025743ff17a2e924ab38dec74e923
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0040ee123c88d2cd54b96701523a5a28fd03b64
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866064"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872390"
 ---
 # <a name="deploy-an-office-solution"></a>Bereitstellen einer Office-Projektmappe
   Sie können Office-Lösungen mit ClickOnce oder Windows Installer bereitstellen. Mit ClickOnce verringern Sie die Anzahl von Schritten, die zum Bereitstellen und Aktualisieren der Lösung erforderlich sind. Wenn Sie Windows Installer verwenden, haben Sie die Kontrolle darüber, wie eine Lösung installiert wird und welche Informationen das Setupprogramm anzeigt, wenn der Benutzer die Lösung installiert.  

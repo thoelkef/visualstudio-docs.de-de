@@ -9,12 +9,12 @@ description: Informationen zur ModernRequirements-Suite von Produkten, die in au
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd7aed3acd11b0d9e5ce05784619c34a97e726a8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740259"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380232"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Der MODERNRequirements4TFS-Vorteil in Visual Studio-Abonnements
 
@@ -95,7 +95,7 @@ Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement f
 | Visual Studio Dev Essentials | NA  |Nicht verfügbar                                                          |NA     |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP) und Region Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

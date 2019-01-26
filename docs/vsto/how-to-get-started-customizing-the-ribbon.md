@@ -12,15 +12,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c393633477debd18857da4296d43b3832e343434
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1308a496f77408be5e8d8fb814fcf88a1516ed2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856825"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876251"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Vorgehensweise: Erste Schritte beim Anpassen des Menübands
   Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.  
@@ -72,6 +72,6 @@ ms.locfileid: "53856825"
 ## <a name="see-also"></a>Siehe auch  
  [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Menüband-Designer](../vsto/ribbon-designer.md)   
- [Menüband-XML](../vsto/ribbon-xml.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks [Office development in Visual Studio], common tasks
 - Excel [Office development in Visual Studio], workbooks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95e7d2fd33a0fd8b9fd0718f1a96a00c49fb804f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aacc1793d72457ff6c27331f81e401c5e51ca7ab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823379"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875029"
 ---
 # <a name="work-with-workbooks"></a>Arbeiten mit Arbeitsmappen
   Die Klassen <xref:Microsoft.Office.Tools.Excel.Workbook> und <xref:Microsoft.Office.Interop.Excel.Workbooks> enthalten die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Arbeitsmappen verwenden.  

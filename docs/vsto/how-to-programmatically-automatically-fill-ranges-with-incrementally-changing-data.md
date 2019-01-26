@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 867f59c04e9d0f99b36e6a067ad9a5cbc1041f46
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 94652358e18b18255a92444672cc59528cb0b2e2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866490"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten
   Die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht Ihnen, einen Bereich in einem Arbeitsblatt automatisch mit Werten zu füllen. In den meisten Fällen die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode wird verwendet, um schrittweise erhöhen oder verringern die Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration.  

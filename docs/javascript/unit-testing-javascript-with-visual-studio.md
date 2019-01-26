@@ -1,6 +1,6 @@
 ---
-title: Unittests in Node.js
-description: Visual Studio bietet Unterstützung zum Durchführen von Unittests für JavaScript-Code mithilfe der Node.js-Tools für Visual Studio.
+title: Komponententests für JavaScript und TypeScript
+description: Visual Studio bietet Unterstützung zum Durchführen von Komponententests für JavaScript- und TypeScript Code mithilfe der Node.js-Tools für Visual Studio.
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952763"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398220"
 ---
-# <a name="unit-testing-in-nodejs"></a>Unittests in Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Komponententests für JavaScript und TypeScript in Visual Studio
 
 Mithilfe der Node.js-Tools für Visual Studio können Sie Komponententests mit gängigen JavaScript-Frameworks schreiben und ausführen, ohne zu einer Eingabeaufforderung wechseln zu müssen.
 

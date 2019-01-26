@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Files element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25bb220d3c22af280a486de115193af38c85dbe
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922306"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864526"
 ---
 # <a name="files-element"></a>Files-Element
   Gibt die Dateien, die mit der SharePoint-Projektelement, z. B. von featureelementen und die Ausgabe der abhängigen nicht-SharePoint-Projekten bereitgestellt.  
@@ -57,9 +57,9 @@ ms.locfileid: "53922306"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Name des Schemas**|SharePoint-Projektelementschema|  
-|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
 |**Kann leer sein.**|Nein|  
   
 ## <a name="see-also"></a>Siehe auch

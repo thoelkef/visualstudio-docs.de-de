@@ -21,15 +21,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa94c6a3b86abe53e374f8d797158bcded55f440
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866674"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinieren von VBA und Anpassungen auf Dokumentebene
   Sie können VBA-Code (Visual Basic for Applications) in einem Dokument verwenden, das Teil einer Dokumentebenenanpassung für Microsoft Office Word oder Microsoft Office Excel ist. Sie können VBA-Code im Dokument über die Anpassungsassembly aufrufen, oder Sie können für Ihr Projekt die Aktivierung des VBA-Codes im Dokument konfigurieren, um Code in der Anpassungsassembly aufzurufen.  
@@ -143,7 +143,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Diese Eigenschaft ist ein bequemerer Weg zum Aufrufen der Anpassungsassembly als die direkte Verwendung der `GetManagedClass`-Methode. `CallVSTOAssembly` gibt ein Objekt zurück, das für die Hostelementklasse steht, die Sie für VBA verfügbar gemacht haben. Die Member und Methodenparameter des zurückgegebenen Objekts werden in IntelliSense angezeigt.  
+ Diese Eigenschaft ist ein bequemerer Weg zum Aufrufen der Anpassungsassembly als die direkte Verwendung der `GetManagedClass` -Methode. `CallVSTOAssembly` gibt ein Objekt zurück, das für die Hostelementklasse steht, die Sie für VBA verfügbar gemacht haben. Die Member und Methodenparameter des zurückgegebenen Objekts werden in IntelliSense angezeigt.  
   
  Die `CallVSTOAssembly` -Eigenschaft verfügt über eine Deklaration, die dem folgenden Code ähnelt. In diesem Code wird vorausgesetzt, dass Sie die `Sheet1` -Hostelementklasse in einem Excel-Arbeitsmappenprojekt mit dem Namen `ExcelWorkbook1` für VBA verfügbar gemacht haben.  
   

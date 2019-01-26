@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Azure Advisory Chat-Vorteil nutzen könne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739412"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380043"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -46,7 +46,7 @@ Die Nutzung von Azure Advisory Chat ist einfach.
 |                                                  MSDN Platforms (Standard)                                                   |        Alle        | Nicht verfügbar |     Nein     |
 |                                                 Visual Studio Dev Essentials                                                 |        Nicht zutreffend        | Nicht verfügbar |     Nein     |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

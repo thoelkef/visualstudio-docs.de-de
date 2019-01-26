@@ -10,17 +10,17 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5da24d43173a0124849855bf9184f3a823230d3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865007"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.  
@@ -180,7 +180,7 @@ ms.locfileid: "53964051"
   
    |EmployeeID|LastName|FirstName|Titel|  
    |----------------|--------------|---------------|-----------|  
-   |10|Fest|ERwin|Vertriebsleiter|  
+   |10|Fest|Shu|Vertriebsleiter|  
   
 ### <a name="to-delete-rows"></a>Zum Löschen von Zeilen  
   

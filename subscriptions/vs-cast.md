@@ -9,12 +9,12 @@ description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739996"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379811"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 
@@ -94,12 +94,12 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar | Nicht zutreffend |
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
 
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]

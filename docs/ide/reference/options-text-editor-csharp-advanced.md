@@ -1,6 +1,6 @@
 ---
 title: Optionen, Text-Editor, C#, Erweitert
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887905"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398298"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -109,13 +109,17 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 
 - Zeilentrennzeichen zwischen Prozeduren anzeigen
 
-   Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
+   Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *CS*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
 
-   |Position in der VB-Quelldatei|Beispiel für die Linienposition|
+   |Position in der CS-Quelldatei|Beispiel für die Linienposition|
    |---------------------------------|------------------------------|
    |Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
    |Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
    |Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
+
+## <a name="block-structure-guides"></a>Führungslinien für Blockstruktur
+
+Aktivieren Sie diese Kontrollkästchen, um gestrichelte vertikale Linien zwischen geschweiften Klammern (**{}**) in Ihrem Code anzuzeigen. Dann können Sie leicht einzelne Codeblöcke für Ihre Deklarations- und Codeebenen erkennen.
 
 ## <a name="editor-help"></a>Editor-Hilfe
 

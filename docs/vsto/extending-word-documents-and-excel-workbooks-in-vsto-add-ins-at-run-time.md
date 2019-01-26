@@ -15,15 +15,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a93923525ce1a3c1a3396963f05b2f0335a8f635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c3527070c1934c723b6038c93347f1a78ac948a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909189"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864877"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-add-ins zur Laufzeit
   Sie können ein VSTO-Add-In verwenden, um Word-Dokumente und Excel-Arbeitsmappen wie folgt anzupassen:  
@@ -116,7 +116,7 @@ ms.locfileid: "53909189"
 ##  <a name="HasVstoObject"></a> Bestimmen Sie, ob ein Office-Objekt erweitert wurde  
  Verwenden Sie die `HasVstoObject`-Methode, um zu ermitteln, ob ein erweitertes Objekt für ein bestimmtes systemeigenes Office-Objekt bereits generiert wurde. Diese Methode gibt **"true"** Wenn bereits ein erweitertes Objekt generiert wurde.  
   
- Verwenden Sie die `Globals.Factory.HasVstoMethod`-Methode. Übergeben Sie das systemeigene Word- oder Excel-Objekt, z. B. <xref:Microsoft.Office.Interop.Word.Document> oder <xref:Microsoft.Office.Interop.Excel.Worksheet>, das Sie für ein erweitertes Objekt testen möchten.  
+ Verwenden Sie die `Globals.Factory.HasVstoMethod`-Methode. Übergeben Sie das systemeigene Word- oder Excel-Objekt, z. B. <xref:Microsoft.Office.Interop.Word.Document> oder <xref:Microsoft.Office.Interop.Excel.Worksheet>, das Sie für ein erweitertes Objekt testen möchten.  
   
  Die `HasVstoObject`-Methode ist nützlich, falls Code nur ausgeführt werden soll, wenn ein bestimmtes Office-Objekt über ein erweitertes Objekt verfügt. Angenommen, Sie einem Word-VSTO-Add-in besitzen, verarbeitet die <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Ereignis, um verwaltete Steuerelemente aus einem Dokument entfernen, bevor es gespeichert wird, und Verwenden der `HasVstoObject` Methode, um zu bestimmen, ob das Dokument erweitert wurde. Wenn das Dokument nicht erweitert wurde, es kann keinen verwalteten Steuerelemente und der Ereignishandler kann zurückgeben, ohne zu versuchen, um die Steuerelemente im Dokument zu bereinigen.  
   

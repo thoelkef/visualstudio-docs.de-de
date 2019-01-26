@@ -9,12 +9,12 @@ description: Informationen zum Trainingsvorteil von Skill Me Up – Powered by O
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739707"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380213"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Der Skill Me Up – Powered by Opsgility-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -46,7 +46,7 @@ Ausgewählte Visual Studio-Abonnements bieten bis zu sechs Monate Zugriff auf Ex
 | Visual Studio Dev Essentials | NA  | Nicht verfügbar | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-*Umfasst nicht:  Microsoft Partner Network (MPN), Microsoft Valued Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR und FTE*
+*Umfasst nicht:  Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

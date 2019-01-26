@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, adding to worksheets
 - worksheets, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cd97cc6f85930523b6f0be02385dcb85b7af93d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936931"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872780"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern
   Die Schutzfunktion in Microsoft Office Excel verhindert, dass Objekte in einem Arbeitsblatt durch Benutzer und Code geändert werden. Standardmäßig werden alle Zellen gesperrt, nachdem der Schutz aktiviert wurde.  

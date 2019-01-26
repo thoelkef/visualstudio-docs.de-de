@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivie
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315513"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380246"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -99,7 +99,7 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 | Visual Studio Dev Essentials | NA | Nicht verfügbar |NA|
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Imagine Premium Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Standard, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services.*
+<sup>1</sup> *Umfasst: Imagine Premium Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Umfasst: Imagine Standard*
 

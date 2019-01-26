@@ -9,12 +9,12 @@ description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315500"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380185"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -83,7 +83,7 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 | Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA|
 | Visual Studio Enterprise (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                  |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services (Developer), MCT Software & Service, Microsoft Valued Professional (MVP) und Region Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

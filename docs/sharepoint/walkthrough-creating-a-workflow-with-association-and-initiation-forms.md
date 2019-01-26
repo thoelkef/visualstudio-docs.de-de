@@ -12,17 +12,17 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9d4fe908e372a478d382a1087a7d7e1363dbef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864383"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie einen grundlegenden sequenziellen Workflow erstellen, der die Verwendung von Zuordnungs-und Initiierungsformularen beinhaltet. Hierbei handelt es sich um ASPX-Formulare, mit denen Parameter für die zu einem Workflow hinzugefügt werden, wenn es zuerst von der SharePoint-Administrator (Zuordnungsformular) zugeordnet ist und der Workflow gestartet wird, durch den Benutzer (des Initiierungsformulars).  
