@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postActions> element
 - postActions element
 - <postActions> element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b719ec4b796e052abc018734b4acc3acbc0b138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 548396e6393720824c93c07e55046ec2d91797a2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845057"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862862"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;PostActions&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `postActions` -Element des `vstav3` -Namespace enthält alle `postAction` -Elemente, die Aktionen nach der Bereitstellung beschreiben, die ausgeführt werden, nachdem Office-Projektmappen installiert sind.
@@ -40,7 +40,7 @@ ms.locfileid: "53845057"
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `postActions` -Element ist optional und befindet sich im `vstav3` -Namespace. In einem Anwendungsmanifest ist nur ein `postActions` -Element definiert.
 
- Das `postActions`-Element hat keine Attribute.
+ Das `postActions` -Element weist keine Attribute auf.
 
  `postActions` weist das folgende Element auf:
 

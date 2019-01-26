@@ -10,15 +10,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e54e8f4b2cb4e94a83446497c24f9f808210f7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a2c218453edfa29d79ae4acb8dcf4ccd0010eab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865644"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente
   Sie können eine Anpassungsassembly an ein vorhandenes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe anfügen. Das Dokument oder die Arbeitsmappe kann in einem beliebigen Dateiformat sein, die von der Microsoft Office-Projekten und Entwicklungstools in Visual Studio unterstützt wird. Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).  

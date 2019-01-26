@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890468"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871376"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Gewähren von Vertrauen für Office-Projektmappen
   Gewähren von Vertrauen für Office-Projektmappen bedeutet, dass Ändern der Sicherheitsrichtlinie von jedem Zielcomputer, die Projektmappenassembly, Anwendungsmanifest, Bereitstellungsmanifest und Dokument zu vertrauen. Office-Projektmappe können Sie oder der Endbenutzer Vertrauenswürdigkeit gewährt werden.
@@ -38,12 +38,12 @@ ms.locfileid: "53890468"
 
  Wenn Sie die Projektmappe mit einem bekannten und vertrauenswürdigen Zertifikat anmelden, wird die Projektmappe automatisch installiert werden, ohne dem Benutzer eine Entscheidung hinsichtlich der Vertrauenswürdigkeit. Weitere Informationen zur Vorgehensweise zum Abrufen eines Zertifikats zum Signieren finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md). Nachdem Sie ein Zertifikat abgerufen wird, muss das Zertifikat explizit vertrauenswürdig sein, indem sie Sie der Liste vertrauenswürdiger Herausgeber hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).
 
- Wenn ein Entwickler die Lösung mit einem temporären Zertifikat signiert, ein Administrator kann erneut signieren die Anpassung mit einem bekannten und vertrauenswürdigen Zertifikat mit dem Manifest Generation and Editing Tool (*mage.exe*), einer der der Microsoft .NET Framework-Tools. Weitere Informationen zum Signieren von Lösungen finden Sie unter [Vorgehensweise: Signieren von Office-Projektmappen](../vsto/how-to-sign-office-solutions.md) und [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifeste](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Wenn ein Entwickler die Lösung mit einem temporären Zertifikat signiert, ein Administrator kann erneut signieren die Anpassung mit einem bekannten und vertrauenswürdigen Zertifikat mit dem Manifest Generation and Editing Tool (*mage.exe*), einer der der Microsoft .NET Framework-Tools. Weitere Informationen zum Signieren von Lösungen finden Sie unter [Vorgehensweise: Signieren von Office-Projektmappen](../vsto/how-to-sign-office-solutions.md) und [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ##  <a name="TrustPrompt"></a>Vertrauen Sie der Projektmappe mithilfe der ClickOnce-vertrauensaufforderung
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] fordert den Endbenutzer auf die Vertrauensstellung Entscheidung zu treffen, wenn keine organisationsweite Richtlinie, die das Zertifikat der Projektmappe als vertrauenswürdig eingestuft. Wenn der Benutzer der Projektmappe Vertrauenswürdigkeit gewährt, wird ein Eintrag der Aufnahmeliste erstellt, die eine URL und einen öffentlichen Schlüssel zum Speichern von dieser Entscheidung über die Vertrauenswürdigkeit enthält. Wenn eine vertrauenswürdige Anpassung später ausgeführt wird, wird der Endbenutzer nicht erneut aufgefordert werden.
 
- Administratoren können Deaktivieren der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung oder erfordern, dass die Aufforderung nur für Projektmappen ausgeführt werden, die mit einem Authenticode-Zertifikat signiert sind. Weitere Informationen zum Ändern dieser Einstellungen für die Zonen "Arbeitsplatz" "," LocalIntranet "," Internet "," TrustedSites, und "UntrustedSites finden Sie unter [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce Vertrauenswürdigkeit auffordern](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Administratoren können Deaktivieren der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung oder erfordern, dass die Aufforderung nur für Projektmappen ausgeführt werden, die mit einem Authenticode-Zertifikat signiert sind. Weitere Informationen zum Ändern dieser Einstellungen für die Zonen "Arbeitsplatz" "," LocalIntranet "," Internet "," TrustedSites, und "UntrustedSites finden Sie unter [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="see-also"></a>Siehe auch
 

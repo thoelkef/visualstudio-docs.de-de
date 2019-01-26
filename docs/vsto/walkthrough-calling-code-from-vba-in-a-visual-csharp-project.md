@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989029"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871311"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem visuellen Objekt C# Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Excel aus VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `Sheet1` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code in der Arbeitsmappe.  
@@ -157,11 +157,11 @@ ms.locfileid: "53989029"
   
      Die Datei **Sheet1.cs** wird im Code-Editor geöffnet.  
   
-2.  Fügen Sie der `Sheet1` -Klasse folgenden Code hinzu. Die `CreateVstoNamedRange` -Methode erstellt ein neues <xref:Microsoft.Office.Tools.Excel.NamedRange> -Objekt im angegebenen Bereich. Durch diese Methode wird auch ein Ereignishandler für das <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> -Ereignis von <xref:Microsoft.Office.Tools.Excel.NamedRange>erstellt. Weiter unten in dieser exemplarischen Vorgehensweise rufen Sie die `CreateVstoNamedRange`-Methode aus VBA-Code im Dokument auf.  
+2.  Fügen Sie der `Sheet1` -Klasse folgenden Code hinzu. Die `CreateVstoNamedRange` -Methode erstellt ein neues <xref:Microsoft.Office.Tools.Excel.NamedRange> -Objekt im angegebenen Bereich. Durch diese Methode wird auch ein Ereignishandler für das <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> -Ereignis von <xref:Microsoft.Office.Tools.Excel.NamedRange>erstellt. Weiter unten in dieser exemplarischen Vorgehensweise rufen Sie die `CreateVstoNamedRange` -Methode aus VBA-Code im Dokument auf.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Fügen Sie der `Sheet1`-Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.  
+3.  Fügen Sie der `Sheet1` -Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   
@@ -223,7 +223,7 @@ ms.locfileid: "53989029"
   
 4.  Fügen Sie dem neuen Modul den folgenden Code hinzu.  
   
-     Dieser Code Ruft die `CreateTable`-Methode in der Anpassungsassembly auf. Das Makro greift auf diese Methode zu, indem es die globale `GetManagedClass` -Methode für den Zugriff auf die `Sheet1` -Hostelementklasse verwendet, die Sie für VBA-Code verfügbar gemacht haben. Die `GetManagedClass` -Methode wurde beim Festlegen der **ReferenceAssemblyFromVbaProject** -Eigenschaft weiter oben in dieser exemplarischen Vorgehensweise automatisch generiert.  
+     Dieser Code Ruft die `CreateTable` -Methode in der Anpassungsassembly auf. Das Makro greift auf diese Methode zu, indem es die globale `GetManagedClass` -Methode für den Zugriff auf die `Sheet1` -Hostelementklasse verwendet, die Sie für VBA-Code verfügbar gemacht haben. Die `GetManagedClass` -Methode wurde beim Festlegen der **ReferenceAssemblyFromVbaProject** -Eigenschaft weiter oben in dieser exemplarischen Vorgehensweise automatisch generiert.  
   
     ```vb  
     Sub CallVSTOMethod()  

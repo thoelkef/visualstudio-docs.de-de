@@ -10,15 +10,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89da5b9c960c3df426a4ae96c99e2628540fc6ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967465"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873794"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern
   Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokumentebene. Sie können auch hinzufügen <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen zur Laufzeit in VSTO-Add-ins.  

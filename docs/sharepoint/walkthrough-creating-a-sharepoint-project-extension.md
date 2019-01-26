@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd142b71de2919f1f44f36134ce286e58229bae5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866112"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine Erweiterung für SharePoint-Projekte erstellt werden. Sie können eine projekterweiterung verwenden, zum Reagieren auf Ereignisse auf Projektebene, z. B. wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn ein Eigenschaftswert ändert. Im Gegensatz zu projektelementerweiterungen darf nicht projekterweiterungen einen bestimmten Typ von SharePoint-Projekt zugeordnet sein. Bei der Erstellung einer projekterweiterung lädt die Erweiterung wird in der jede Art von SharePoint-Projekt geöffnet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

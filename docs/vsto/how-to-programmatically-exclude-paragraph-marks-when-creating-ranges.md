@@ -10,17 +10,17 @@ helpviewer_keywords:
 - ranges, excluding paragraph marks in Word
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20227318063a2b9a2c7b64384d7c31b7fb956946
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872065"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Vorgehensweise: Programmgesteuertes ausschließen Absatzmarken beim Erstellen von Bereichen
   Immer dann, wenn Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt auf Grundlage eines Absatzes erstellen, umfasst der Bereich (das Objekt) alle nicht druckbaren Zeichen, etwa Absatzmarken. Möglicherweise möchten Sie den Text aus einem Quellabsatz in einen Zielabsatz einfügen. Soll der Zielabsatz dabei nicht in mehrere Absätze aufgeteilt werden, müssen Sie zunächst die Absatzmarke aus dem Quellabsatz entfernen. Außerdem kann es sein, dass Sie die Absatzmarke, weil Absatzformatierungsinformationen in ihr gespeichert sind, nicht einbeziehen möchten, wenn Sie den Bereich in einen vorhandenen Absatz einfügen.  
@@ -63,7 +63,7 @@ ms.locfileid: "53847089"
      [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
      [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
   
-6.  Ersetzen Sie den Text in `secondRange` einschließlich der Absatzmarke.  
+6.  Ersetzen Sie den Text in `secondRange`einschließlich der Absatzmarke.  
   
      [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
      [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
@@ -87,7 +87,7 @@ ms.locfileid: "53847089"
      [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]
      [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
   
-10. Stellen Sie in `firstRange` den ursprünglichen Text des Absatzes wieder her.  
+10. Stellen Sie in `firstRange`den ursprünglichen Text des Absatzes wieder her.  
   
      [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]
      [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  

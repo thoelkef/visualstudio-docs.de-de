@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989162"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871948"
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
   Ersetzbare Parameter oder *Token*, kann in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte werden nicht zur Entwurfszeit bekannt. Sie sind ähnlich wie in der Funktion die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
@@ -65,15 +65,15 @@ ms.locfileid: "53989162"
 |$SharePoint.Feature.DeploymentPath$|Der Name des Ordners, der die Funktion im Paket enthält. Dieses Token entspricht die Eigenschaft "Bereitstellungspfad" in der Funktions-Designer. Ein Beispielwert ist "Project1_Feature1".|  
 |$SharePoint.Feature.Id$|Die SharePoint-ID der enthaltenden Funktion. Dieses Token hinzugefügt, wie mit alle Funktionsebene Token nur von Dateien in ein Paket über eine Funktion, die verwendet werden können nicht direkt auf ein Paket außerhalb einer Funktion.|  
 |$SharePoint.ProjectItem.Name$|Der Name des Projektelements (nicht der Name der Objektdatei), als aus abgerufen **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Die Assembly qualifizierten Namen der übereinstimmenden Typ der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] des Tokens. Das Format der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (d. h. Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. "FullName" $|Der vollständige Name des Typs der GUID im Token. Das Format der GUID ist in Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (d. h. Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|Die Assembly qualifizierten Namen der übereinstimmenden Typ der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] des Tokens. Das Format der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (d. h. Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|Der vollständige Name des Typs der GUID im Token. Das Format der GUID ist in Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (d. h. Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Erweiterungen der tokenersetzung Datei Extensions-Liste hinzufügen
  Obwohl das Token theoretisch durch eine beliebige Datei verwendet werden können, die zu einem SharePoint-Projekt, das Element im Paket enthalten sind, in der Standardeinstellung gehört [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sucht Token nur in Paketdateien, manifest-Dateien und Dateien, die die folgenden Erweiterungen aufweisen:  
   
 - [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
-- ASCX-DATEI  
+- ASCX  
   
 - ASPX  
   

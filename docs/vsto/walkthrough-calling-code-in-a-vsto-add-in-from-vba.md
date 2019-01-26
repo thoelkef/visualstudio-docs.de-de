@@ -13,17 +13,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa71d4cefabbb59e7b9b5255cfebf3677e257a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915902"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865748"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.  

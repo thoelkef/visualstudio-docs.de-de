@@ -9,17 +9,17 @@ helpviewer_keywords:
 - bookmarks, updating text
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e85b4df6b7ad9a01a6a0f1c7369c03fd3779c6c6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863265"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext
   Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  

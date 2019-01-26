@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 814af35e452bce86dd2a6ba780b9fca5fe9bb4d4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939279"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873196"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele
   Durch die Verwendung von MSBuild-Ziele an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien erstellt (*.wsp*). Beispielsweise können Sie anpassen, die MSBuild-Eigenschaften, um das Zwischenverzeichnis Verpacken und die MSBuild-Element-Gruppen, die angeben, die aufgelisteten Dateien zu ändern.  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - ranges, extending
 - documents [Office development in Visual Studio], extending ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed2df2d844383ab0cfc26d67104d03644e1db671
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919663"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868861"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Vorgehensweise: Programmgesteuertes Erweitern von Bereichen in Dokumenten
   Nachdem Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt in einem Microsoft Office Word-Dokument definiert haben, ändern Sie dessen Start- und Endpunkt mithilfe der Methoden <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> und <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . Die Methoden <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> und <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> akzeptieren dieselben beiden Argumente *Unit* und *Count*. Die Methoden *Count* -Argument entspricht der Anzahl zu verschiebender Einheiten, und das *Unit* -Argument kann einer der folgenden <xref:Microsoft.Office.Interop.Word.WdUnits> -Werte sein:  

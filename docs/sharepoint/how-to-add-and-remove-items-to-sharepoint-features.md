@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 876c6a6a328c5a617a6773b76cdb9bb2c6d8f546
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874236"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.  

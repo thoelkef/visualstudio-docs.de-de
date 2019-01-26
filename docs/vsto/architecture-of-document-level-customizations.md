@@ -17,15 +17,15 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e80fbe0244c897f626c6fba248447881a92594a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917380"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868455"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektur von Anpassungen auf Dokumentebene
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] enthält Projekte für das Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. In diesem Thema werden die folgenden Aspekte von Anpassungen auf Dokumentebene beschrieben:  

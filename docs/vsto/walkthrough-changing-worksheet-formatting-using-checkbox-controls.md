@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935098"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871025"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Kontrollkästchen in einem Microsoft Office Excel-Arbeitsblatt zum Ändern der Formatierung. Verwenden Sie Office-Entwicklungstools in Visual Studio erstellen, und fügen Sie Code zum Projekt hinzu. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -83,7 +83,7 @@ ms.locfileid: "53935098"
     |Eigenschaft|Wert|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Unterstreichen**|  
+    |**Text**|**Underline**|  
   
 7.  Wählen Sie alle drei Kontrollkästchen-Steuerelemente, indem Sie bei gedrückter der **STRG** Schlüssel.  
   
@@ -112,8 +112,8 @@ ms.locfileid: "53935098"
   
    |Eigenschaft|Wert|  
    |--------------|-----------|  
-   |**Name**|**Name textFont**|  
-   |**Wert2**|**Klicken Sie auf das Kontrollkästchen, um die Formatierung von Text zu ändern.**|  
+   |**Name**|**textFont**|  
+   |**Value2**|**Klicken Sie auf das Kontrollkästchen, um die Formatierung von Text zu ändern.**|  
   
    Als Nächstes schreiben Sie den Code, um den Text zu formatieren, wenn eine Option ausgewählt ist.  
   

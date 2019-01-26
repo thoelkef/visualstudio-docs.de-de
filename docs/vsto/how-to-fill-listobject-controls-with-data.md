@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41c9c630eb95fbd0fed2b9ca2f05d56eff65c44
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925627"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865582"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Vorgehensweise: Füllen Sie ListObject-Steuerelementen mit Daten.
   Sie können die Datenbindung als Möglichkeit zum schnellen Hinzufügen von Daten zu Ihrem Dokument verwenden. Nach dem Binden der Daten an ein Listenobjekt können Sie das Listenobjekt trennen, damit es die Daten anzeigt, aber nicht länger an die Datenquelle gebunden ist.  
@@ -38,12 +38,12 @@ ms.locfileid: "53925627"
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]  
   
-2.  Fügen Sie Beispielspalten und Daten im `Startup`-Ereignishandler der `Sheet1`-Klasse (in einem Projekt auf Dokumentebene) oder der `ThisAddIn`-Klasse (in einem Projekt auf Anwendungsebene) hinzu.  
+2.  Fügen Sie Beispielspalten und Daten im `Startup` -Ereignishandler der `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder der `ThisAddIn` -Klasse (in einem Projekt auf Anwendungsebene) hinzu.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]  
   
-3.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>-Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Die Reihenfolge der Spalten im Listenobjekt kann von der Reihenfolge abweichen, in der sie in der <xref:System.Data.DataTable>angezeigt werden.  
+3.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Die Reihenfolge der Spalten im Listenobjekt kann von der Reihenfolge abweichen, in der sie in der <xref:System.Data.DataTable>angezeigt werden.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]  

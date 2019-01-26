@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], printing documents
 - documents [Office development in Visual Studio], printing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: da618b4b972c8f49d98118d26b5f0a4aa47cfde0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6242d30236a00749688995ed3edae7707c6ee028
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917357"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862693"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Vorgehensweise: Programmgesteuertes Drucken von Dokumenten
   Sie können ein ganzes Microsoft Office Word-Dokument oder einen Teil eines Dokuments auf dem Standarddrucker drucken.  
@@ -29,7 +29,7 @@ ms.locfileid: "53917357"
   
 ### <a name="to-print-the-entire-document"></a>So drucken Sie das ganze Dokument  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> -Methode der `ThisDocument` -Klasse im Projekt auf, um das gesamte Dokument zu drucken. Um dieses Codebeispiel verwenden zu können, müssen Sie den Code in der `ThisDocument`-Klasse ausführen.  
+1.  Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> -Methode der `ThisDocument` -Klasse im Projekt auf, um das gesamte Dokument zu drucken. Um dieses Codebeispiel verwenden zu können, müssen Sie den Code in der `ThisDocument` -Klasse ausführen.  
   
      [!code-vb[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#11)]
      [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]  

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], Project
 - Office projects [Office development in Visual Studio], Project
 - solutions [Office development in Visual Studio], Project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7daf85494964ec3d32a744e064f2326f24542f4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909774"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865306"
 ---
 # <a name="project-solutions"></a>Projektmappen
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Project verwenden können. Mit VSTO-Add-Ins können Sie Project automatisieren, Project-Features erweitern oder die Project-Benutzeroberfläche anpassen.  

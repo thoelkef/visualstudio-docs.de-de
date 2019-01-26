@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d2c36ce055816f712b4d38bca42a8af9c75921da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871064"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Vorgehensweise: Ausführen von Code bei der Bereitstellung ausgeführt werden
   Wenn Sie zusätzliche Aufgaben für einen Schritt der Bereitstellung in einer SharePoint-Projekt ausführen möchten, können Sie Ereignisse behandeln, die ausgelöst werden, von SharePoint-Projektelemente vor und nach der Visual Studio jeden Schritt der Bereitstellung ausgeführt wird. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
