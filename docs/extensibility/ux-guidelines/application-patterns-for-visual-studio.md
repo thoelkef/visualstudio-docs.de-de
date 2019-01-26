@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938392"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen  
@@ -497,8 +497,8 @@ Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgang
 
 | Mauszeiger | Befehl | Beschreibung |  
 | :---: | --- | --- |  
-| ![Symbol für "keine Ablage" mit der Maus](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Keine Ablage | Element kann nicht am angegebenen Speicherort abgelegt werden. |  
-| ![Symbol für "Copy" der Maus](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Kopieren | Element wird an den Zielspeicherort kopiert werden. |  
+| ![Mouse "no drop" icon](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Keine Ablage | Element kann nicht am angegebenen Speicherort abgelegt werden. |  
+| ![Mouse "copy" icon](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Kopieren | Element wird an den Zielspeicherort kopiert werden. |  
 | ![Maus Symbol "verschieben"](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Verschieben | Element wird an den Zielspeicherort verschoben werden. |  
 | ![Symbol für "Verweis hinzufügen" Maus](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Verweis hinzufügen | Ein Verweis auf das ausgewählte Element wird an den Zielspeicherort hinzugefügt werden. |
 
