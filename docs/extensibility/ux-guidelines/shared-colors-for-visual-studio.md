@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928905"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 Wenn Sie beim Entwerfen, Benutzeroberfläche, die allgemeine Visual Studio Shell-Elementen oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, verwenden Sie Tokennamen in Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.  
@@ -160,7 +160,7 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrer Funktion ver
 | Glyphe | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>Dropdownlisten und Kombinationsfelder Felder
-![Drop-/ Kombinationsfeld ((rote Linie))](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Drop-/ Kombinationsfeld ((rote Linie))  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Drop-/ Kombinationsfeld ((rote Linie))  
 
 | Verwenden Sie... | Verwenden Sie keine... |
 | --- | --- |
@@ -322,7 +322,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 #### <a name="instructional-text"></a>Hinweistext
 Anweisungstext bietet eine deutliche main Erklärung der Vorgehensweise in einem Dialogfeld oder Dokument.
 
-![Standard-Anweisungstext](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standard-Anweisungstext
+![Default instructional text](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standard-Anweisungstext
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -331,7 +331,7 @@ Anweisungstext bietet eine deutliche main Erklärung der Vorgehensweise in einem
 #### <a name="secondary-instructional-text"></a>Sekundäre Anweisungstext
 Einige Anweisungstext verwendet Seiten des Dokuments mit vielen von Text und Steuerelementen einen andere Farbe-Wert. Dadurch wird die vermitteln, welche Informationen am wichtigsten ist, und verringern die gesamte Dichte der Elemente der Benutzeroberfläche. (Siehe auch die im folgenden Abschnitt auf den Hinweistext.)
 
-![Sekundäre Anweisungstext](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundäre Anweisungstext
+![Secondary instructional text](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundäre Anweisungstext
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -342,7 +342,7 @@ Hinweistext angezeigt wird, in ein leeres Steuerelement, das unterhalb eines Ste
 
 **Standard-Hinweistext**
 
-![Hinweistext standardmäßig](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard-Hinweistext
+![Default hint text](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard-Hinweistext
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -350,7 +350,7 @@ Hinweistext angezeigt wird, in ein leeres Steuerelement, das unterhalb eines Ste
 
 **Erforderliche Hinweistext**
 
-![Erforderliche Hinweistext](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderliche Hinweistext
+![Required hint text](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderliche Hinweistext
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -370,7 +370,7 @@ Hinweistext angezeigt wird, in ein leeres Steuerelement, das unterhalb eines Ste
 ### <a name="hyperlink"></a>Link  
 Der Link ist ein Steuerelement, das nicht über ein paar Vordergrund-/Hintergrundfarbe verfügt. Verwenden Sie in allen Fällen die Vordergrund-Linkfarbe, die auf dunklem, grauen und weißem Hintergrund ordnungsgemäß angezeigt wird. Wenn Sie nicht das farbtoken für das Linksteuerelement verwenden, sehen Sie die Standardsystemfarbe für "gedrückt", die rot blinken wird. Dies ist das Signal, dass das Steuerelement die richtige Umgebung-farbtoken verwenden, ist nicht.  
 
-![Hyperlink ((rote Linie))](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hyperlink ((rote Linie))
+![Hyperlink (redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hyperlink ((rote Linie))
 
 | Verwenden Sie... | Verwenden Sie keine... |
 | --- | --- |
@@ -411,7 +411,7 @@ Der Link ist ein Steuerelement, das nicht über ein paar Vordergrund-/Hintergrun
 ### <a name="infobars"></a>Infoleisten  
 Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Kontext bereitzustellen. Sie erscheinen immer im oberen Bereich eines Dokument- oder Toolfensters.  
 
-![Infoleiste ((rote Linie))](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infoleiste ((rote Linie))
+![Infobar (redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infoleiste ((rote Linie))
 
 | Verwenden Sie... | Verwenden Sie keine... |
 | --- | --- |
@@ -459,7 +459,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Linkschaltfläche: Status**
 
-![Schaltfläche "Standard Infoleiste Hyperlink"](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Schaltfläche "Standard Infoleiste Hyperlink"
+![Default infobar hyperlink button](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Schaltfläche "Standard Infoleiste Hyperlink"
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -467,7 +467,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Linkschaltfläche: Zeigen Sie mit Status**
 
-![Infoleiste Linkschaltfläche bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird
+![Infobar hyperlink button on hover](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -475,7 +475,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Linkschaltfläche: gedrückt-Status**
 
-![Hyperlink-Schaltfläche gedrückt Infoleiste](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Hyperlink-Schaltfläche gedrückt Infoleiste
+![Pressed infobar hyperlink button](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Hyperlink-Schaltfläche gedrückt Infoleiste
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -491,7 +491,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Inline-Link (innerhalb eines Satzes) Infoleiste: Zeigen Sie mit Status**
 
-![Infoleiste Linkschaltfläche "Inline" bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird
+![Infobar inline hyperlink button on hover](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -499,7 +499,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Inline-Link (innerhalb eines Satzes) Infoleiste: gedrückt-Status**
 
-![Inline-Hyperlink-Schaltfläche gedrückt Infoleiste](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Infoleiste Inline Hyperlink geklickt
+![Pressed infobar inline hyperlink button](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Infoleiste Inline Hyperlink geklickt
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -507,7 +507,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: Status**
 
-![Infoleiste Standardschaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Infoleiste-Schaltfläche "Standard"
+![Default infobar button](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Infoleiste-Schaltfläche "Standard"
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -517,7 +517,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: Zeigen Sie mit Status**
 
-![Infoleiste-Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infoleiste-Schaltfläche, wenn darauf gezeigt wird
+![Infobar button on hover](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infoleiste-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -527,7 +527,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: gedrückt-Status**
 
-![Schaltfläche "gedrückten Infoleiste"](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Schaltfläche "gedrückten Infoleiste"
+![Pressed infobar button](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Schaltfläche "gedrückten Infoleiste"
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -537,7 +537,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: Status "deaktiviert"**
 
-![Deaktivierte Infoleiste Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Infoleiste-Schaltfläche
+![Disabled infobar button](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Infoleiste-Schaltfläche
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -547,7 +547,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: mit Fokus Zustand**
 
-![Schaltfläche "mit Fokus Infoleiste"](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Schaltfläche "mit Fokus Infoleiste"
+![Focused infobar button](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Schaltfläche "mit Fokus Infoleiste"
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
@@ -673,7 +673,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 **Hervorgehobene sucheingabefeld (nur Text)**
 
-![Hervorgehobene sucheingabefeld](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Hervorgehobene sucheingabefeld
+![Highlighted search input field](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Hervorgehobene sucheingabefeld
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
