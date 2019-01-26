@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89c92dad143ab29c34537913335e9b5db31c5be4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927189"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
 Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster im Dialogfeld deaktiviert ist, während das Dialogfeld angezeigt wird und anschließend das übergeordnete Fenster erneut aktivieren, nachdem Sie das Dialogfeld geschlossen wurde. Wenn Sie dies nicht tun, können Sie die Fehlermeldung angezeigt: *Microsoft Visual Studio kann nicht heruntergefahren, da ein modales Dialogfeld noch aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut.*  
@@ -36,7 +36,7 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
   
     -   *WindowsBase*  
   
-    -   *"System.xaml" enthalten*  
+    -   *System.Xaml*  
   
 3.  In *OpenDialog.cs*, fügen Sie die folgenden `using` Anweisung:  
   

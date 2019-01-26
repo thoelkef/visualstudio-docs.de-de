@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5d65617a354bc5e752d138bc2cf80261ba2736a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828640"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955154"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren eines Legacysprachdiensts
 Die folgenden Abschnitte enthalten Listen der Registrierungseinträge für die verschiedenen Sprach Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -29,9 +29,9 @@ Die folgenden Abschnitte enthalten Listen der Registrierungseinträge für die v
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|*\<GUID &GT;*|Die GUID des Sprachdiensts.|  
-|LangResID|REG_DWORD|0 x 0 – 0xffff|Ressourcenbezeichner ("RESID") für den Namen lokalisierter Text, der die Sprache eine Zeichenfolge.|  
-|Package|REG_SZ|*\<GUID &GT;*|Die GUID des VSPackage.|  
+|(Standard)|REG_SZ|*\<GUID>*|Die GUID des Sprachdiensts.|  
+|LangResID|REG_DWORD|0x0-0xffff|Ressourcenbezeichner ("RESID") für den Namen lokalisierter Text, der die Sprache eine Zeichenfolge.|  
+|Package|REG_SZ|*\<GUID>*|Die GUID des VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Gibt an, ob die **Anweisungsvervollständigung** "Optionen" der **Optionen** Dialogfeld aktiviert sind.|  
 |ShowSmartIndent|REG_DWORD|0-1|Gibt an, ob die Option zum auswählen **intelligente** Einzug der **Optionen** Dialogfeld ist aktiviert.|  
 |RequestStockColors|REG_DWORD|0-1|Gibt an, ob der benutzerdefinierten oder standardmäßigen Farben werden verwendet, um die Farbe, die Schlüsselwörter.|  
@@ -85,7 +85,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|(Standard)|REG_SZ|"RESID"|Der lokalisierte Anzeigename von dieser Seite. Der Name kann es sich um Literaltext oder #`nnn`, wobei `nnn` ist eine Zeichenfolge-Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackage.|  
+|(Standard)|REG_SZ|ResID|Der lokalisierte Anzeigename von dieser Seite. Der Name kann es sich um Literaltext oder #`nnn`, wobei `nnn` ist eine Zeichenfolge-Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackage.|  
 |Package|REG_SZ|*GUID*|Die GUID des VSPackage, das diese Optionsseite implementiert.|  
 |Seite|REG_SZ|*GUID*|Die GUID des auf der Seite der Anforderung aus dem VSPackage durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> Methode. Wenn dieser Registrierungseintrag nicht vorhanden ist, wird der Registrierungsschlüssel einen Knoten, die nicht auf einer Seite beschrieben.|  
   
@@ -138,10 +138,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ|""|Nicht verwendet; Sie können Ihren Namen für die Dokumentation hier einfügen.|  
 |DefaultToolboxTab|REG_SZ|""|Name der Toolboxregisterkarte, der als Standard festlegen, wenn der Editor aktiv ist.|  
-|DisplayName|REG_SZ|"RESID"|Anzuzeigenden Namen der **Öffnen mit** Dialogfeld. Der Name ist die Zeichenfolgenressource-ID oder ein Name im Standardformat.|  
+|DisplayName|REG_SZ|ResID|Anzuzeigenden Namen der **Öffnen mit** Dialogfeld. Der Name ist die Zeichenfolgenressource-ID oder ein Name im Standardformat.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Verwendet für die **Öffnen mit** Menübefehl. Wenn Sie nicht die Standard-Text-Editor in der Liste der verfügbaren Editoren anzuzeigen, für einen bestimmten Dateityp auflisten möchten, legen Sie diesen Wert auf 1 fest.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Verwendet für alle Sprachdienst, der eine Datei mit der Codepage-Unterstützung öffnen kann. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editor, mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editor-Factory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten Editor in der Liste verwenden. Dieser nächste Editor darf nicht die Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde die Editor-Factory identisch ist, die Fehler.|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage GUID für den Anzeigenamen "RESID".|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Verwendet für alle Sprachdienst, der eine Datei mit der Codepage-Unterstützung öffnen kann. Z. B. beim Öffnen einer TXT-Datei mithilfe der **Öffnen mit** Befehl Optionen stehen zur Verfügung, für die Verwendung der Quellcode-Editor, mit und ohne Codierung.<br /><br /> Die GUID, die Namen der Unterschlüssel angegeben ist, für die Codepage-Editor-Factory. in diesem bestimmten Registrierungseintrag angegebene verknüpfte GUID ist für die reguläre Editor-Factory. Der Zweck dieses Eintrags ist, wenn die IDE keine Datei mit dem Standardeditor öffnen, die IDE versucht, den nächsten Editor in der Liste verwenden. Dieser nächste Editor darf nicht die Codepage-Editor-Factory sein, da dieser Editorfactory im Grunde die Editor-Factory identisch ist, die Fehler.|  
+|Package|REG_SZ|*\<GUID>*|VSPackage GUID für den Anzeigenamen "RESID".|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -162,7 +162,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ||Nicht verwendet.|  
-|*\<GUID &GT;*|REG_SZ|""|Schlüssel, der die unterstützten logischen Ansichten. Sie können beliebig viele verwenden, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
+|*\<GUID>*|REG_SZ|""|Schlüssel, der die unterstützten logischen Ansichten. Sie können beliebig viele verwenden, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -184,7 +184,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |(Standard)|REG_SZ||Nicht verwendet.|  
-|*\<Ext >*|REG_DWORD|0-0xffffffff|Relative Priorität von Erweiterungen. Wenn zwei oder mehr Sprachen die gleiche Erweiterung verwenden, wird die Sprache der höheren Priorität ausgewählt.|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|Relative Priorität von Erweiterungen. Wenn zwei oder mehr Sprachen die gleiche Erweiterung verwenden, wird die Sprache der höheren Priorität ausgewählt.|  
   
  Darüber hinaus befindet sich der aktuelle Benutzer die Standardauswahl für einen Editor in HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default Editoren\\*Ext*. Die GUID des Sprachdiensts ausgewählten ist im Custom-Eintrag. Dies hat es sich um Vorrang vor, für den aktuellen Benutzer.  
   
@@ -214,13 +214,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 |QuickInfo|REG_DWORD|0-1|Unterstützung für den IntelliSense-QuickInfo-Vorgang.|  
 |ShowMatchingBrace|REG_DWORD|0-1|Unterstützung für das entsprechende Sprachpaar in der Statusleiste angezeigt.|  
 |MatchBracesAtCaret|REG_DWORD|0-1|Unterstützung für die Anzeige von entsprechende Sprachpaare, in der Regel durch die zwei Elemente markieren.|  
-|MaxErrorMessages|REG_DWORD|0-n-Gerät|Die maximale Anzahl von Fehlern, die in angezeigt werden, kann die **Fehlerliste** Fenster.|  
-|CodeSenseDelay|REG_DWORD|0-n-Gerät|Die Anzahl der Millisekunden, um vor dem Initiieren des Analysieren von ASP.NET-Vorlagen für einen IntelliSense-Vorgang im Hintergrund verzögert.|  
+|MaxErrorMessages|REG_DWORD|0-n|Die maximale Anzahl von Fehlern, die in angezeigt werden, kann die **Fehlerliste** Fenster.|  
+|CodeSenseDelay|REG_DWORD|0-n|Die Anzahl der Millisekunden, um vor dem Initiieren des Analysieren von ASP.NET-Vorlagen für einen IntelliSense-Vorgang im Hintergrund verzögert.|  
 |EnableAsyncCompletion|REG_DWORD|0-1|Unterstützung für das Analysieren im Hintergrund.|  
 |EnableCommenting|REG_DWORD|0-1|Unterstützung für die ausgewählte Textblöcke auskommentieren und auch Unterstützung für die Kommentierung Textauswahl impliziert.|  
 |EnableFormatSelection|REG_DWORD|0-1|Unterstützung für die Formatierung von Text wie z. B. automatischer-Einzug, oder die Position geschweifter Klammern anpassen.|  
 |AutoOutlining|REG_DWORD|0-1|Unterstützung für eine Gliederung (Bereiche, die reduziert werden können).|  
-|MaxRegions|REG_DWORD|0-n-Gerät|Die maximale Anzahl der ausgeblendeten Bereiche pro Datei.|  
+|MaxRegions|REG_DWORD|0-n|Die maximale Anzahl der ausgeblendeten Bereiche pro Datei.|  
   
 ```  
 ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950815"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875718"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio
   Sie können SharePoint-Tools-Erweiterungen in der experimentellen Instanz oder in der regulären Instanz von Visual Studio debuggen. Wenn Sie Fehler im Verhalten einer Erweiterung beheben müssen, können Sie auch Registrierungswerte ändern, um weitere Fehlerinformationen anzuzeigen und die Ausführung von SharePoint-Befehlen durch Visual Studio zu konfigurieren.

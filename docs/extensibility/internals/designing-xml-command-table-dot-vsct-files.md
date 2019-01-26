@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904295"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923093"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabellen (VSCT) Befehlsdateien
 Ein XML-Befehl-Tabelle (*VSCT*) Datei beschreibt das Layout und die Darstellung der Befehl-Elemente für ein VSPackage. Befehls-Elemente enthalten, Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Gruppen von Elementen für Befehl. Dieser Artikel beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl-Elemente und Menüs auswirken und zu deren Erstellung.
@@ -54,7 +54,7 @@ Ein XML-Befehl-Tabelle (*VSCT*) Datei beschreibt das Layout und die Darstellung 
 
 - Bitmap-Abschnitt: In diesem Abschnitt wird dem Verhalten in einer *CTC* Datei mit dem Unterschied, dass Sie jetzt einen Dateinamen über Href angeben können, die von, in abgerufen wird der *vsct.exe* Compiler zum Zeitpunkt der Kompilierung.
 
-- "RESID": Die alte bitmap-Ressource-ID kann verwendet und noch immer funktioniert gleich sein *CTC* Dateien.
+- ResID: Die alte bitmap-Ressource-ID kann verwendet und noch immer funktioniert gleich sein *CTC* Dateien.
 
 - HRef: Eine neue Methode, die Sie einen Namen für die Bitmapressource angeben kann. Es wird davon ausgegangen, dass alle verwendet werden, damit Sie die verwendete Bereich weglassen können. Der Compiler sucht zuerst für lokale Ressourcen für die Datei wird auf net Freigaben und alle Ressourcen definiert, durch die **/i** wechseln.
 
@@ -117,7 +117,7 @@ Können Sie die *vsct.exe* Compiler das Konvertieren einer vorhandenen *CTO* Ein
 
  Während der Entwicklung ist es möglich, dass mehrere VSPackage-Projekte erstellt und in der experimentellen Registrierungsstruktur, die zu verwirrend Überfrachtung in der IDE führen kann registriert werden. Um dieses Problem zu beheben, können Sie die experimentelle Struktur zurücksetzen, um die Standardeinstellungen, entfernen Sie alle registrierten VSPackages und alle Änderungen, die sie der IDE vorgenommen haben, können. Verwenden Sie zum Zurücksetzen der experimentellen Struktur das CreateExpInstance.exe-Tool, das in Visual Studio SDK enthalten ist. Sie finden sie unter:
 
- *% PROGRAMFILES (x 86) %\Visual Studio\\\<Version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  Führen Sie das Tool mithilfe des Befehls **CreateExpInstance/Reset**. Denken Sie daran, dass dieses Tool aus der experimentellen Struktur, alle registrierte VSPackages, die normalerweise nicht entfernt mit installierten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

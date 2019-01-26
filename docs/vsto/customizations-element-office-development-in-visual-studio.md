@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4810f347301f8e91b1a3a0498021d152eaf20974
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878665"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864240"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;Anpassungen&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `customizations` -Element des `vstov4` -Namespace enthält alle Informationen zum Installieren und Laden der einzelnen Office-Projektmappen.

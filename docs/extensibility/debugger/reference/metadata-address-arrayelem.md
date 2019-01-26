@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80839c9c2a73e71d0d70301e8c4dfcd81913ed8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 900ac5f6dec739574af27601e2b3a26d6041da55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917210"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 Diese Struktur stellt ein Arrayelement in einem Array dar.  
@@ -44,7 +44,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
   
  [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.  
   
- dwIndex ab  
+ dwIndex  
  Der Index dieses Elements innerhalb des Arrays.  
   
 ## <a name="remarks"></a>Hinweise  

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fbd977b733aa6e8e663cf4a69e577030f5c6106a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 854f282b22427fd805091d39377654b8d988084b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919148"
 ---
 # <a name="properties-of-domain-roles"></a>Eigenschaften von Domänenrollen
 Die Eigenschaften in der folgenden Tabelle sind einer Domäne zugewiesen. Weitere Informationen zu den Funktionen der Domäne, finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -36,7 +36,7 @@ Die Eigenschaften in der folgenden Tabelle sind einer Domäne zugewiesen. Weiter
 |Kategorie|Die Kategorie, unter der die generierte Eigenschaft angezeigt, in wird, der **Eigenschaften** Fenster im generierten Designer. Wenn diese Eigenschaft leer ist, und klicken Sie dann die generierte Eigenschaft angezeigt, unter wird dem **Verschiedenes** Kategorie|< keine\>|
 |Beschreibung|Die Beschreibung, die wird verwendet, um Code zu dokumentieren, die in der Benutzeroberfläche des generierten Designers verwendet wird.<br /><br /> Die Beschreibung wird in der IntelliSense-QuickInfo für die der rolleninhaberklasse generierten Eigenschaft.|`Description for` *der vollständige Name der Rolle*|
 |Anzeigename|Der Name, der im generierten Designer für die Domänenrolle angezeigt wird.|Der angepasste Wert der Name-Eigenschaft.|
-|Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänenrolle verwendet wird.|\<Keine >|
+|Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänenrolle verwendet wird.|\<none>|
 |Anzeigename der Eigenschaft|Der Name, der im generierten Designer für die Eigenschaft der generierten Rolle angezeigt wird.|Der angepasste Wert der Eigenschaftenname-Eigenschaft.|
 
 > [!NOTE]

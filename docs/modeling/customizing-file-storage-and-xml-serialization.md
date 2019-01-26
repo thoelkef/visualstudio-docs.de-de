@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918577"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 
@@ -290,7 +290,7 @@ Eigenschaft "XML"-Knoten befinden sich unter den Knoten für die Klasse.
 |Eigenschaft|Beschreibung|
 |Eigenschaft "Domain"|Die Eigenschaft, die Xml-serialisierungskonfigurationsdaten gelten. Schreibgeschützt.|
 |Wird der Monikerschlüssel|Bei "true", dient die Eigenschaft als Schlüssel für das Erstellen von Monikern, die Instanzen dieser Domänenklasse verweisen.|
-|Ist der Monikerqualifizierer|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|
+|Is Moniker Qualifier|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|
 |Darstellung|Wenn das Attribut, das die Eigenschaft als XML-Attribut serialisiert wird; Wenn das Element, es ist als ein Element serialisiert Falls Sie nicht serialisiert.|
 |XML-Name|Namen für die XML-Attribut oder Element, das die Eigenschaft darstellt. Standardmäßig ist dies eine lower-case-Version vom Namen Domäne.|
 |Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind|

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923347"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875822"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
   Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem der Formularbereich der Nachrichtenklasse jedes Elements zugeordnet. Z. B. Wenn Sie einen Formularbereich am unteren Rand eine e-Mail-Nachricht anfügen möchten, Sie können Zuordnen des Formularbereichs mit den `IPM.Note` message-Klasse.  

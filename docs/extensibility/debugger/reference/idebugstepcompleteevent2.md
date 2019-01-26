@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39495d2e2150f880c62be1f4349465ce5aa2e48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09f7d20954f23825cca9b69a774d6316f1a89982
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919780"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn die zu debuggende Programm wird ein Einzelschritt in einen Prozedurschritt oder einen Schritt aus einer Zeile der Quellcode oder die Anweisung oder die Anweisung abgeschlossen ist.  

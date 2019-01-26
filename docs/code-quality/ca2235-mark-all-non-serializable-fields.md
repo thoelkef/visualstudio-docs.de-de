@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 40a4326924d83d4604f512f41f85e7adb8d21bb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975048"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Alle nicht serialisierbaren Felder markieren.
 
@@ -39,7 +39,7 @@ ms.locfileid: "54154149"
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein serialisierbarer Typ mit gekennzeichnet ist, wird die <xref:System.SerializableAttribute?displayProperty=fullName> Attribut. Wenn der Typ serialisiert wird, eine <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> Ausnahme wird ausgelöst, wenn der Typ ein Instanzenfeld eines Typs enthält, die nicht serialisierbar ist.
- 
+
  Eine Ausnahme ist, wenn der Typ, benutzerdefinierte Serialisierung, die über verwendet die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle. Typen implementieren diese Schnittstelle bieten, ihre eigene Serialisierungslogik und daher CA2235 für solche Typen nicht serialisierbaren Instanzfelder nicht ausgelöst wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

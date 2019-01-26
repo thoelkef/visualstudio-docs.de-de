@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e10980c1ed075b9ce1f06b6bb945cdf42263546
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 571fe8085dc07ff32fa8a253c99cb9a0790120bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974239"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Ermöglicht die ausdrucksauswertung (EE) an die Rückrufschnittstelle, die die Debugger-Engine (DE) verwenden, lesen Sie die Metric-Einstellung.  

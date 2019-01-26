@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bba57c0a069f515f29e02ec712e3cce7d457f95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2fff27f665453ff1b722ec1ef061494d48361988
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927619"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
 IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle, wenn der Benutzer entweder die Einfügemarke in die ID setzt und wählt **Quick Info** aus der **IntelliSense** Menü oder die Maus der Cursor über einen Bezeichner. Dadurch wird eine QuickInfo mit Informationen zu den Bezeichner angezeigt werden. Diese Informationen enthalten i. d. r. der Typ des Bezeichners. Wenn die Debug-Engine aktiv ist, kann diese Informationen den aktuellen Wert enthalten. Die Debug-Engine stellt Ausdruckswerte, während der Sprachdienst nur Bezeichner behandelt.  

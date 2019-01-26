@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Word [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 597d8e415a6d5c72026f0ccf8086b3e01c5f1e61
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856424"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872910"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Word. Die Features, die Sie in dieser Art von Lösung erstellen, sind nur verfügbar, wenn ein bestimmtes Dokument geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen (z. B. eine neue Registerkarte des Menübands anzuzeigen, wenn ein Dokument geöffnet ist) vorzunehmen.  
@@ -98,7 +98,7 @@ ms.locfileid: "53856424"
   
 -   Eine partielle Definition der Klasse `ThisDocument`, die das Programmiermodell des Dokuments darstellt und den Zugriff auf das Word-Objektmodell bereitstellt. Weitere Informationen finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `ThisDocument` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
--   Die `ThisDocument_Startup`- und `ThisDocument_Shutdown`-Ereignishandler. Diese Ereignishandler werden aufgerufen, wenn das Dokument geöffnet und geschlossen wird. Verwenden Sie diese Ereignishandler, um Ihre Anpassung zu initialisieren, wenn das Dokument geöffnet wird, sowie zum Bereinigen von Ressourcen, die von Ihrer Anpassung verwendet werden, wenn das Dokument geschlossen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+-   Die Ereignishandler `ThisDocument_Startup` und `ThisDocument_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn das Dokument geöffnet und geschlossen wird. Verwenden Sie diese Ereignishandler, um Ihre Anpassung zu initialisieren, wenn das Dokument geöffnet wird, sowie zum Bereinigen von Ressourcen, die von Ihrer Anpassung verwendet werden, wenn das Dokument geschlossen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>So fügen Sie dem Dokument mithilfe von Code einen zweiten Textabsatz hinzu  
   

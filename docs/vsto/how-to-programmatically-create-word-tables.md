@@ -10,15 +10,15 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 995e2ed35334c0e3022d7d48dd57add7e2e45198
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 1e0b75230ccce5004d1f764db7c7ea39775f3a4f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154407"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869930"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen
   Die Auflistung <xref:Microsoft.Office.Interop.Word.Tables> ist ein Element der Klassen <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> und <xref:Microsoft.Office.Interop.Word.Range>. Dies bedeutet, dass Sie in jedem dieser Kontexte eine Tabelle erstellen können. Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> der Auflistung <xref:Microsoft.Office.Interop.Word.Tables>, um eine Tabelle im angegebenen Bereich hinzuzufügen.  
