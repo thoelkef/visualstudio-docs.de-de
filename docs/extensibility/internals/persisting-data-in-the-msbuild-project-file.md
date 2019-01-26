@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 362a4c09e3e0c732d939cf42b926b003260c4b00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebd8fef41c1ba8a81d116bddca61026cdf79ee24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929204"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
 Einem Projektuntertyp untertypspezifischen Daten in die Projektdatei für die spätere Verwendung beibehalten werden müssen. Project-Datei-Persistenz wird von einem Projektuntertyp verwendet, um die folgenden Anforderungen erfüllen:  

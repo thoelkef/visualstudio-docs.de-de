@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9fca1eedc94aeb327191f44469945f69584500
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1000009e243906daf32fd68b22b5c49a07b21595
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868585"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947529"
 ---
 # <a name="performance-warnings"></a>Leistungswarnungen
 Leistungswarnungen unterstützt leistungsstarke Bibliotheken und Anwendungen.
@@ -32,7 +32,7 @@ Leistungswarnungen unterstützt leistungsstarke Bibliotheken und Anwendungen.
 | - | - |
 | [CA1800: Keine unnötigen Umwandlungen](../code-quality/ca1800-do-not-cast-unnecessarily.md) | Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. |
 | [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md) | Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. |
-| [CA1802: NACH MÖGLICHKEIT Verwenden Sie Literale](../code-quality/ca1802-use-literals-where-appropriate.md) | Ein Feld ist statisch und schreibgeschützt deklariert (Shared und ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), und mit einem Wert, der zum Zeitpunkt der Kompilierung zu berechnendes ist initialisiert wird. Da der Wert, der dem verwendeten Feld zugewiesen wird zum Zeitpunkt der Kompilierung zu berechnendes ist, ändern Sie die Deklaration in ein Const (Const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Feld, sodass der Wert zur Kompilierzeit statt zur Laufzeit berechnet wird. |
+| [CA1802: Verwenden Sie Literale](../code-quality/ca1802-use-literals-where-appropriate.md) | Ein Feld ist statisch und schreibgeschützt deklariert (Shared und ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), und mit einem Wert, der zum Zeitpunkt der Kompilierung zu berechnendes ist initialisiert wird. Da der Wert, der dem verwendeten Feld zugewiesen wird zum Zeitpunkt der Kompilierung zu berechnendes ist, ändern Sie die Deklaration in ein Const (Const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Feld, sodass der Wert zur Kompilierzeit statt zur Laufzeit berechnet wird. |
 | [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md) | Nicht verwendete lokale Variablen und unnötige Zuweisungen vergrößern die Assembly unnötig und beeinträchtigen die Leistung. |
 | [CA1806: Methodenergebnisse nicht ignorieren](../code-quality/ca1806-do-not-ignore-method-results.md) | Ein neues Objekt erstellt wird, aber nie verwendet, oder eine Methode, die erstellt und gibt eine neue Zeichenfolge aufgerufen wird und die neue Zeichenfolge wird nie verwendet, oder eine Component Object Model (COM) oder P/Invoke-Methode gibt einen HRESULT oder den Fehlercode-Code, der nie verwendet wird. |
 | [CA1809: Übermäßige lokale Variablen vermeiden](../code-quality/ca1809-avoid-excessive-locals.md) | Zur Leistungsoptimierung wird ein Wert häufig in einem Prozessorregister statt im Speicher gespeichert. Dieser Vorgang wird als Registrierung des Werts bezeichnet.  Um die Wahrscheinlichkeit zu erhöhen, dass alle lokale Variablen registriert werden, die Anzahl der lokalen Variablen auf 64. |

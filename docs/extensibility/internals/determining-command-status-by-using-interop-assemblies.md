@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d3c6a0f74f6f9f684e35c927bafc2ead7c19485
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7d21e69bbcfbacd50070b7f5787059ca81e464c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933424"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys
 Eine VSPackage muss den Status der Befehle von verfolgt, die er verarbeiten kann. Die Umgebung kann nicht bestimmt werden, wenn ein Befehl in einem VSPackage behandelt aktiviert oder deaktiviert wird. Es ist Aufgabe Ihres VSPackage informiert die Umgebung zum Status von Befehl, z. B. der Zustand der allgemeine Befehle wie z. B. **Ausschneiden**, **Kopie**, und **einfügen**.  

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933025"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -39,7 +39,7 @@ Auch die Vorgänge zur Erstellung scheint sich von der Kopiervorgänge untersche
 
 Die Verantwortung für eine EMD besteht darin zu entscheiden, wie ein Objekt oder eine Gruppe von Objekten in einem bestimmten Speicherort im Modell zusammengeführt werden sollen. Insbesondere können sie entscheidet, welche Beziehungen instanziiert werden sollten, um die zusammengeführte Gruppe in das Modell zu verknüpfen. Sie können auch zum Festlegen von Eigenschaften und zum Erstellen zusätzlicher Objekte anpassen.
 
-![DSL&#45;EMD&#95;zusammenführen](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Eine EMD wird automatisch generiert, wenn Sie eine einbettende Beziehung definieren. Diese Standardeinstellung EMD erstellt eine Instanz der Beziehung aus, wenn Benutzer neue Instanzen der untergeordneten zum übergeordneten Element hinzufügen. Sie können diese Standardeinstellung EMDs, z. B. Hinzufügen von benutzerdefiniertem Code ändern.
 

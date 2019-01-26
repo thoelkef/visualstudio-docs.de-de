@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0671a8f0d926cb90419470278f65eedf07486da7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862152"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945878"
 ---
 # <a name="launch-a-program"></a>Ein Programm starten
 Drücken Sie die Benutzer, die ein Programm debuggen möchten, können **F5** zum Ausführen des Debuggers in der IDE. Dies beginnt mit einer Reihe von Ereignissen, die letztlich in der IDE mit einer Debug-Engine (DE), die wiederum verbunden ist, oder angefügt, um die Anwendung wie folgt:  

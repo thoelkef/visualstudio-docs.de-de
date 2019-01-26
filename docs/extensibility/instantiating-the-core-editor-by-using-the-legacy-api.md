@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 292e30a094cd78954e48817324a44ebacda7a78a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838163"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934533"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Instanziieren Sie die Kern-Editor, indem Sie die legacy-API
 Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. einfügen, löschen, kopieren und einfügen. Sie kombiniert diese Funktionen mit den Funktionen von Language-Diensten, z. B. Text, Farben, die Einzüge und IntelliSense-Anweisungsvervollständigung bereitgestellt werden.  

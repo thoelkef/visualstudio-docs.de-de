@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77635f360b2602bc2d75d672b26d770877422c02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8cc5e25355758312227687f4319bfa95eb1c7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929756"
 ---
 # <a name="source-control-vspackage-features"></a>Funktionen von Quellcodeverwaltungs-VSPackages
 Dieser Abschnitt beschreibt die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackage. Es wird beschrieben, die Registrierung und Auswahl für diese ein VSPackage und drei der Hauptquelle Steuerelement-bezogenen Funktionen erläutert: Behandeln von Ereignissen, Symbol ersetzt und benutzerdefinierte Benutzeroberfläche (UI) für das Datenquellen-Steuerelement Abfragebearbeitung Abfrage speichern (QEQS.) -Funktionen.  
