@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ListObject control, mapping data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 276b606bbd4f87898916a6e7ca1dbf57ce3d6716
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899982"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873781"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten
   Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an <xref:System.Data.DataTable>sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject> -Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> angezeigt werden sollen.  

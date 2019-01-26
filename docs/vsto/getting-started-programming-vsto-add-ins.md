@@ -12,15 +12,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef79de32a467bee1d96972da0ccdfd91eede350
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7827f76703964d76b8a9f217dd781c3f85be6db
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853043"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874430"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Erste Schritte zum Programmieren von VSTO-Add-ins
   Sie können mit VSTO-Add-Ins Microsoft Office-Anwendungen automatisieren, Funktionen der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen. Informationen zu VSTO-Add-ins im Vergleich zu anderen Arten von Office-Projektmappen können Sie mithilfe von Visual Studio erstellen, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  

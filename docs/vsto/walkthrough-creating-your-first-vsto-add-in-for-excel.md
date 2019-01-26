@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Excel [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d3512c8b3f2383b755e75bf62958dab9f82ae2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873313"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel
   Diese exemplarische Vorgehensweise zur Einführung veranschaulicht, wie Sie ein Add-In auf Anwendungsebene für Microsoft Office Excel erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Arbeitsmappen geöffnet sind.  
@@ -75,20 +75,20 @@ ms.locfileid: "53831887"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>So fügen Sie der gespeicherten Arbeitsmappe eine Textzeile hinzu  
   
-1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn`-Klasse den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis definiert, das ausgelöst wird, wenn eine Arbeitsmappe gespeichert wird.  
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis definiert, das ausgelöst wird, wenn eine Arbeitsmappe gespeichert wird.  
   
     Wenn der Benutzer eine Arbeitsmappe speichert, fügt der Ereignishandler am Anfang des aktiven Arbeitsblatts neuen Text hinzu.  
   
     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup`-Ereignishandler den folgenden erforderlichen Code hinzu. Dieser Code wird verwendet, um den `Application_WorkbookBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis zu verbinden.  
+2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden erforderlichen Code hinzu. Dieser Code wird verwendet, um den `Application_WorkbookBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis zu verbinden.  
   
     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
    Um die Arbeitsmappe beim Speichern zu ändern, wurden in den vorherigen Codebeispielen die folgenden Objekte verwendet:  
   
--   Das Feld `Application` der `ThisAddIn`-Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Excel.Application> -Objekt zurück, das für die aktuelle Instanz von Excel steht.  
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Excel.Application> -Objekt zurück, das für die aktuelle Instanz von Excel steht.  
   
 -   Der Parameter `Wb` des Ereignishandlers für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis. Der Parameter `Wb` ist ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt, das für die gespeicherte Arbeitsmappe steht. Weitere Informationen finden Sie unter [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
   

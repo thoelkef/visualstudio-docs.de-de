@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac39cd45c566d837d34cf8e7be0cf94ded8de419
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862537"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Vorgehensweise: Hinzufügen eines Dialogfeld-Startprogramms zu einer Menübandgruppe
   Sie können ein Dialogfeld-Startprogramms zu einer Gruppe auf einem Menüband hinzufügen. Ein Dialogfeld-Startprogramm ist ein kleines Symbol, das in einer Gruppe angezeigt wird. Benutzer klicken Sie auf dieses Symbol, um den zugehörigen Dialogfeldern oder Aufgabenbereiche, die weitere Optionen angeben, die im Zusammenhang mit der Gruppe zu öffnen.  
@@ -41,7 +41,7 @@ ms.locfileid: "53846203"
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
  [Menüband-designer](../vsto/ribbon-designer.md)   
  [Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md)   
- [Menüband-XML](../vsto/ribbon-xml.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
  [Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
  [Vorgehensweise: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)   

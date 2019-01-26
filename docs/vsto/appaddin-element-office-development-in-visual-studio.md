@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b53fcfaa28694b88f3401d0e2e40b157ba7c3201
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905438"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875991"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)
   Die **AppAddin** Element der `vstov4` Namespace werden anpassungsspezifische Informationen für VSTO-Add-ins gespeichert.
@@ -44,9 +44,9 @@ ms.locfileid: "53905438"
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|**Anwendung**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Der Wert kann in folgenden Formen vorliegen: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|
-|**LoadBehavior**|Dies ist optional. In der Standardeinstellung die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
-|**Schlüsselname**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**application**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Der Wert kann in folgenden Formen vorliegen: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|
+|**loadBehavior**|Dies ist optional. In der Standardeinstellung die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**keyName**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  Die **AppAddin** Element hat die folgenden untergeordneten Elemente.
 

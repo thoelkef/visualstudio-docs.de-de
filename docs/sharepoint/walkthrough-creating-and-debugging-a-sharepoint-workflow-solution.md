@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b2affcb8339027f146a629b47db57154b173591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912989"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871389"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine grundlegenden sequenziellen Workflowvorlage erstellen. Der Workflow überprüft eine Eigenschaft eine Bibliothek freigegebener Dokumente, um festzustellen, ob ein Dokument überprüft wurde. Wenn das Dokument überprüft wurde, wird der Workflow abgeschlossen.  
@@ -164,7 +164,7 @@ ms.locfileid: "53912989"
   
     |Eigenschaft|Wert|  
     |--------------|-----------|  
-    |**"CorrelationToken"**|**"workflowtoken"**|  
+    |**CorrelationToken**|**workflowToken**|  
     |**Wird aufgerufen**|**onWorkflowItemChanged**|  
   
 ## <a name="handle-activity-events"></a>Behandeln von Aktivitätsereignissen

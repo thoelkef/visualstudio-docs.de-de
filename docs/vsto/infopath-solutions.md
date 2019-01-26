@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], InfoPath
 - Office solutions [Office development in Visual Studio], InfoPath
 - Office projects [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09880992ff2e0d85e4706fb65753a31e49713e1d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864946"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862732"
 ---
 # <a name="infopath-solutions"></a>InfoPath-Projektmappen
   In Visual Studio werden Projektvorlagen bereitgestellt, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office InfoPath 2013 und InfoPath 2010 verwenden können. InfoPath ist in Office 2016 nicht verfügbar.  

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948971"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868325"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word
   Diese exemplarischen Vorgehensweise bietet eine Einführung in das Erstellen eines VSTO-Add-Ins für Microsoft Office Word. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.  
@@ -33,7 +33,7 @@ ms.locfileid: "53948971"
   
 - Schreiben von Code, in dem das Word-Objektmodell zum Hinzufügen von Text zu einem Dokument beim Speichern verwendet wird.  
   
-- Erstellen und Ausführen des Projekts, um es zu testen.  
+- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
 - Bereinigen des abgeschlossenen Projekts, damit das VSTO-Add-In nicht mehr automatisch auf Ihrem Entwicklungscomputer ausgeführt wird.  
   
@@ -69,13 +69,13 @@ ms.locfileid: "53948971"
 ## <a name="write-code-to-add-text-to-the-saved-document"></a>Schreiben Sie Code zum Hinzufügen von Text zum gespeicherten Dokument  
  Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Word-Objektmodell, um jedem gespeicherten einen Textbaustein hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:  
   
--   Eine Teildefinition der Klasse `ThisAddIn`. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Word. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
+-   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Word. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
 -   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Word geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>So fügen Sie dem gespeicherten Dokument einen Textabsatz hinzu  
   
-1. Fügen Sie in der Codedatei "ThisAddIn" der Klasse `ThisAddIn` den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das Ereignis <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> definiert, das ausgelöst wird, wenn ein Dokument gespeichert wird.  
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das Ereignis <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> definiert, das ausgelöst wird, wenn ein Dokument gespeichert wird.  
   
     Wenn der Benutzer ein Dokument speichert, fügt der Ereignishandler am Anfang des Dokuments neuen Text hinzu.  
   
@@ -91,9 +91,9 @@ ms.locfileid: "53948971"
   
    Zum  Ändern des Dokuments beim Speichern wurden in den vorherigen Codebeispielen die folgenden Objekte verwendet:  
   
--   Das Feld `Application` der Klasse `ThisAddIn`. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Word.Application>-Objekt zurück, das die aktuelle Instanz von Word darstellt.  
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Word.Application>-Objekt zurück, das die aktuelle Instanz von Word darstellt.  
   
--   Der Parameter `Doc` des Ereignishandlers für das Ereignis <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Der Parameter `Doc` ist ein <xref:Microsoft.Office.Interop.Word.Document>-Objekt, das das gespeicherte Dokument darstellt. Weitere Informationen finden Sie unter [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md).  
+-   Der `Doc` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis. Der Parameter `Doc` ist ein <xref:Microsoft.Office.Interop.Word.Document>-Objekt, das das gespeicherte Dokument darstellt. Weitere Informationen finden Sie unter [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md).  
   
 ## <a name="test-the-project"></a>Testen Sie das Projekt  
   

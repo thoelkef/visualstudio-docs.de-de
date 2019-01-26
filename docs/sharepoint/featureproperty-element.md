@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - FeatureProperty element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dc58683d2cff7e6c25493924b63666c390cdffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c9407e78a32ad9f9d8ee4ecd1ae4462409decfc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991187"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867909"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty-Element
   Stellt eine benutzerdefinierte Eigenschaft, die mit einer Funktion enthalten ist, wenn sie in SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaft in Ihrem Code zugreifen.  
@@ -55,9 +55,9 @@ ms.locfileid: "53991187"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Name des Schemas**|SharePoint-Projektelementschema|  
-|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
 |**Kann leer sein.**|Nein|  
   
 ## <a name="see-also"></a>Siehe auch

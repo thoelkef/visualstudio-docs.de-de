@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868325"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874041"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Das Projekt für SharePoint-Sitedefinition im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht das Erstellen einer *Websitedefinition*, die dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten der SharePoint-Website, aber auch den Standardinhalt und Funktionalität. In der Definition können Sie die vorkonfigurierten Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint bietet einige Websitedefinitionen, z. B. BLOG, z. B. aus. Wenn Sie einen Standort, basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.  
@@ -36,9 +36,9 @@ ms.locfileid: "53868325"
   
 |Dateiname|Beschreibung|  
 |---------------|-----------------|  
-|*"Default.aspx"*|Die standardmäßige ASPX-Homepage für die neue SharePoint-Website.|  
-|*"onet.xml"*|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Websitevorlage für die Definition und Standardverhalten. Diese Einstellungen können zählen etwa Attribute wie die Inhaltstypen, die aktiviert sind, den standardmäßigen Listenansichten Dokument Vorlagendateien und Webparts, die mit dem Standort enthalten. In der Standardeinstellung die `Modules` Abschnitt listet die Dateien hinzugefügt werden, die SharePoint-Website und wie sie konfiguriert sind.|  
-|*Webtemp_\<SiteDefinitionName > .xml*|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird. die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
+|*default.aspx*|Die standardmäßige ASPX-Homepage für die neue SharePoint-Website.|  
+|*onet.xml*|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Websitevorlage für die Definition und Standardverhalten. Diese Einstellungen können zählen etwa Attribute wie die Inhaltstypen, die aktiviert sind, den standardmäßigen Listenansichten Dokument Vorlagendateien und Webparts, die mit dem Standort enthalten. In der Standardeinstellung die `Modules` Abschnitt listet die Dateien hinzugefügt werden, die SharePoint-Website und wie sie konfiguriert sind.|  
+|*webtemp_\<SiteDefinitionName>.xml*|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird. die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|  
   
  Standardmäßig befinden sich alle Website-Definitionen der  *\<Laufwerk: > \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* Ordner. Jede Sitedefinition verfügt über einen eigenen Unterordner.  
   

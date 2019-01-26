@@ -11,17 +11,17 @@ helpviewer_keywords:
 - displaying custom task panes in e-mail
 - e-mail [Office development in Visual Studio], custom task panes displayed in
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b9a9e3d5fba8b9aeea2124f79522642d4320783
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926581"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867779"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs mit jeder e-Mail-Nachricht angezeigt, die erstellt oder geöffnet wird. Benutzer können den benutzerdefinierten Aufgabenbereich über eine Schaltfläche auf dem Menüband jeder E-Mail anzeigen oder ausblenden.  
@@ -171,12 +171,12 @@ ms.locfileid: "53926581"
   
    - Das `inspectorWrappersValue` -Feld enthält alle vom VSTO-Add-In verwalteten <xref:Microsoft.Office.Interop.Outlook.Inspector> - und `InspectorWrapper` -Objekte.  
   
-   - Das `inspectors`-Feld behält einen Verweis auf die Auflistung von Inspektor-Fenstern in der aktuellen Outlook-Instanz. Dieser Verweis verhindert, dass der Garbage Collector den Arbeitsspeicher freigibt, der den Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis enthält, das Sie im nächsten Schritt deklarieren.  
+   - Das `inspectors` -Feld behält einen Verweis auf die Auflistung von Inspektor-Fenstern in der aktuellen Outlook-Instanz. Dieser Verweis verhindert, dass der Garbage Collector den Arbeitsspeicher freigibt, der den Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis enthält, das Sie im nächsten Schritt deklarieren.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3. Ersetzen Sie die `ThisAddIn_Startup`-Methode durch folgenden Code: Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an und übergibt alle vorhandenen <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte an den Ereignishandler. Wenn der Benutzer das VSTO-Add-in geladen wird, nachdem Outlook bereits ausgeführt wird, verwendet diese Informationen das VSTO-Add-in, um benutzerdefinierte Aufgabenbereiche für alle e-Mail-Nachrichten zu erstellen, die bereits geöffnet sind.  
+3. Ersetzen Sie die `ThisAddIn_Startup` -Methode durch folgenden Code: Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an und übergibt alle vorhandenen <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte an den Ereignishandler. Wenn der Benutzer das VSTO-Add-in geladen wird, nachdem Outlook bereits ausgeführt wird, verwendet diese Informationen das VSTO-Add-in, um benutzerdefinierte Aufgabenbereiche für alle e-Mail-Nachrichten zu erstellen, die bereits geöffnet sind.  
   
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  

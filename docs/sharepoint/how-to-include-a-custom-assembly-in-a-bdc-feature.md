@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], add reference
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b53b7c8b5cf4dd2c13adbb53a9724a8adaf2328
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4effb22f85ed7328a121340124f43b24b09e0ddc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919520"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870661"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion
   Das Projekt kann aus anderen Projekten in der gleichen Projektmappe auf Assemblys verweisen. Allerdings müssen Sie diese Assemblys auch das Feature-Datei des Projekts hinzufügen, mit der **weisen referenzierten Assemblys, LobSystems** Dialogfeld.  
