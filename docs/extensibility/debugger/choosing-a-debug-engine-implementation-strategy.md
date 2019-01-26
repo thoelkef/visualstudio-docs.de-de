@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97b3c82a59736b72a58237f1e53ff39e9e3b86b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b71176d7cc8f60393a42e3d300e84c2c2de5ef05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945917"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Auswählen einer Implementierungsstrategie für die Debug-engine
 Verwenden Sie die Run-Time-Architektur, um Ihre Implementierungsstrategie für die Debug-Engine (DE) festzulegen. Sie können die Debug-Engine-in-Process an das Programm erstellen, die Sie debuggen. Erstellen Sie die Debug-Engine im Prozess in der Visual Studio sitzungsbasierter Debug-Manager (SDM). Alternativ können die Debug-Engine-Out-of-Process zu erstellen. Die folgenden Richtlinien sollten Sie für diese drei Strategien für die Auswahl helfen.  

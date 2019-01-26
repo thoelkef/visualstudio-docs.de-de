@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947408"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen Sie eine Ansicht Zusatzelement, Befehle und Einstellungen)
 Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Effekten erweitern. Diesem Artikel erfahren Sie, wie zum Einstieg in eine Funktion für beliebte Erweiterung Spaltenführungslinien können. Spaltenführungslinien werden visuell hell Zeilen, die auf den Text-Editor-Ansicht helfen Ihnen beim Verwalten von Code, um bestimmte Spaltenbreite gezeichnet. Insbesondere kann formatierten Code für Beispiele wichtig sein, Sie enthalten, die in Dokumenten, Blogbeiträgen oder Fehlerberichte, werden sollen.

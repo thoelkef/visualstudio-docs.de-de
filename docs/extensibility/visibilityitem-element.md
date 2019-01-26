@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eca5e797fe41c56cfcdbe1b1678c0824f3b93b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0bfdf54ccd3975864b965182d86923c6c335eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980920"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem-element
 Die `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag gibt einen Befehl oder im Menü und auch eine UI-Kontext zugeordnete Befehl. Visual Studio erkennt die Befehle, Menüs und Symbolleisten und ihrer Sichtbarkeit, ohne Sie zu laden das VSPackages, die sie definieren. Die IDE verwendet das <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob eine befehlsbenutzeroberflächenkontext aktiv ist.  

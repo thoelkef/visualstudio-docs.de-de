@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f75c519af75376f74135aaa662d2a25e98a2e4c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd000e439a3ed52681fe9fb8c24fcb32266453d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963020"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 Erstellt einen Enumerator von Haltepunkten, die auf dieses Ereignis gebunden wurden.  
@@ -41,7 +41,7 @@ int EnumBoundBreakpoints( 
  [out] Gibt eine [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) -Objekt, das Listet alle Haltepunkte von diesem Ereignis gebunden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` treten keine gebundene Haltepunkte; andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine gebundene Haltepunkte; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Die Liste der gebundene Haltepunkte für diese Grenze auf dieses Ereignis ist und möglicherweise nicht die gesamte Liste der Haltepunkte ein ausstehender Haltepunkt gebunden. Rufen Sie zum Abrufen einer Liste aller Haltepunkte, die an ein ausstehender Haltepunkt gebunden der [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) -Methode zum Abrufen von der zugeordneten [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Objekt und rufen Sie dann die [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) -Methode zum Abrufen einer [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) Objekt, das die gebundene Haltepunkte für den ausstehenden Haltepunkt enthält.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987323"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Neues oder Geändertes Verhalten mit Editor-Adaptern
 Wenn Sie planen, die Editor-Adapter (oder Shims) verwenden, anstatt die neue API aktualisieren Sie Code, der auf früheren Versionen von Visual Studio-Kern-Editor geschrieben wurde, sollten Sie beachten Sie die folgenden Unterschiede im Verhalten der Editor für Adapter sein. in Bezug auf die vorherige Kern-Editor.  

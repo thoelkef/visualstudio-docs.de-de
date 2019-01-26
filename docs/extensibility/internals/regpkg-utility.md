@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979425"
 ---
 # <a name="regpkg-utility"></a>RegPkg-Hilfsprogramm
 > [!NOTE]
@@ -32,7 +32,7 @@ ms.locfileid: "53904876"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
- /Root:Root  
+ /root:root  
  Führt die Registrierung unter der angegebenen  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stamm.  
@@ -55,10 +55,10 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /codebase  
  Erzwingt, dass die Registrierung mit Codebasis und nicht als Assembly.  
   
- / Assembly  
+ /assembly  
  Erzwingt, dass die Registrierung mit Assembly anstelle der Codebasis.  
   
- / unregister  
+ /unregister  
  Hebt die Registrierung dieses Pakets.  Kann nicht verwendet werden  
   
  mit/regfile oder /vrgfile /rgsfile oder /wixfile.  

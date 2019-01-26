@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b088b4a697c84ed774877c35539d2b2a99d06853
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980959"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusammen mit benutzerdefinierten Programmcode definiert, die Sie schreiben können. Die meisten der Programmcode in der DSL-Projektmappe wird aus dieser Datei generiert.
@@ -55,7 +55,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
 
  Die Abbildung zeigt vier Domänenklassen: Musik, Album, Künstler und "Song". Die Domänenklassen definieren Domäneneigenschaften wie Name, Titel und So weiter. Im Modell werden die Werte für einige dieser Eigenschaften im Diagramm angezeigt.
 
- Sind Sie Beziehungen zwischen den Klassen: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs und "artistappearedonalbums". Die Beziehungen haben Multiplizitäten wie z. B. 1..1, 0.. *. Beispielsweise muss jeder "Song" mit genau einem Album über die AlbumHasSongs-Beziehung verknüpft sein. Jedes Album kann es sich um eine beliebige Anzahl von Songs verfügen.
+ Sind Sie Beziehungen zwischen den Klassen: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs, and ArtistAppearedOnAlbums. Die Beziehungen haben Multiplizitäten wie z. B. 1..1, 0.. *. Beispielsweise muss jeder "Song" mit genau einem Album über die AlbumHasSongs-Beziehung verknüpft sein. Jedes Album kann es sich um eine beliebige Anzahl von Songs verfügen.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Neuanordnen von DSL-Definitionsdiagramm
  Beachten Sie, dass eine Domänenklasse mehrmals auf die DSL-Definitionsdiagramm angezeigt werden kann, wie das Album in dieser Abbildung ist. Es gibt immer eine Hauptansicht, und es kann einige *Verweis* Ansichten.

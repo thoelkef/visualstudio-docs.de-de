@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974252"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagenanweisung
 
@@ -36,7 +36,7 @@ Beispiel:
 `compilerOptions="optimize+"`
 
 Gültige Werte:
- 
+
 Alle gültigen Compileroptionen.
 
 Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).
@@ -46,11 +46,11 @@ Diese Optionen werden übernommen, wenn die Vorlage in [!INCLUDE[csprcs](../data
 ## <a name="culture-attribute"></a>Kulturattribut
 
 Beispiel:
- 
+
 `culture="de-CH"`
 
 Gültige Werte:
- 
+
 "", die invariante Kultur (Standard).
 
 Eine als Zeichenfolge im Format xx-XX ausgedrückte Kultur. Beispiel: en-US, ja-JP, de-CH, de-DE. Weitere Informationen finden Sie unter <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Gültige Werte:
- 
+
 `true`
- 
+
 `false` (Standardwert)
- 
+
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
 Für Entwurfszeitvorlagen wird die Zwischencodedatei in geschrieben Ihre **% TEMP%** Verzeichnis.
@@ -88,9 +88,9 @@ hostspecific="true"
 Gültige Werte:
 
 `true`
- 
+
 `false` (Standardwert)
- 
+
 `trueFromBase`
 
 Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die Eigenschaft ist ein Verweis auf den Host des Transformations-Engine und wird als <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
