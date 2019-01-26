@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9682e774533d9aa350d52b777ec783ea2abe9463
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896083"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071071"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 Um eine DSL-Projektmappe zu erstellen, wählen Sie eine der Lösungsvorlagen, die in den Designer-Assistenten in einer domänenspezifischen Sprache verfügbar sind. Durch Auswählen der Vorlage, die am ehesten entspricht von der Sprache, die Sie erstellen möchten, können Sie den Änderungsaufwand verringern, die Sie an der Lösung ab.

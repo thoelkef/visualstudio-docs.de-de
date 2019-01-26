@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017800"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Erste Schritte mit der quellcodeverwaltung VSPackages
 Eine VSPackage für die quellcodeverwaltung ist eine erweiterte Alternative zum das Quellcodeverwaltungs-Plug-in. Weitere Informationen zu den Quellcodeverwaltungs-Plug-ins, finden Sie unter [erstellen ein Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md). Eine VSPackage für die quellcodeverwaltung ermöglicht die vollständige Kontrolle über das quellcodeverwaltungmodell, Features und Benutzeroberfläche (UI) sowie integriert in die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung wie ein VSPackage.  

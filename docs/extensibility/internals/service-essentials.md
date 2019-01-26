@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a72dfb519e35cb0bec94fb73d112e0bff27b0b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027957"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Auflistung von VSPackages, die Dienste für andere VSPackages bereitstellt.  
@@ -89,7 +89,7 @@ Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A
     End If
     ```  
     
-    Dieser Code Ruft einen Dienst SVsActivityLog und wandelt ihn in eine IVsActivityLog-Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).  
+    Dieser Code Ruft einen Dienst SVsActivityLog und wandelt ihn in eine IVsActivityLog-Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Gewusst wie: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Liste der verfügbaren Dienste](../../extensibility/internals/list-of-available-services.md)   

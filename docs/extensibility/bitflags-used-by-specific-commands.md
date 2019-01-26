@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875419"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003260"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Von bestimmten Befehlen verwendete Bitflags
 Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Festlegen von einem oder mehreren Bits in einem einzelnen Wert geändert werden. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle-Plug-in-API verwendet, werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.  
@@ -25,17 +25,17 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_KEEP_CHECKEDOUT`|0 x 1000|Halten Sie die Datei ausgecheckt haben.|  
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Halten Sie die Datei ausgecheckt haben.|  
   
 ## <a name="add-flags"></a>Hinzufügen von flags  
  Diese Flags werden verwendet, durch die [SccAdd](../extensibility/sccadd-function.md).  
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_FILETYPE_AUTO`|0 x 00|Das Quellcodeverwaltungs-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärdaten.|  
-|`SCC_FILETYPE_TEXT`|0 x 01|Dateityp ist Text.|  
+|`SCC_FILETYPE_AUTO`|0x00|Das Quellcodeverwaltungs-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärdaten.|  
+|`SCC_FILETYPE_TEXT`|0x01|Dateityp ist Text.|  
 |`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig. Legen Sie genau eines oder keines von beiden.|  
-|`SCC_ADD_STORELATEST`|0 x 02|Store nur die neueste Version (keine Deltas).|  
+|`SCC_ADD_STORELATEST`|0x02|Store nur die neueste Version (keine Deltas).|  
   
 ## <a name="diff-flags"></a>Diff-flags  
  Die [SccDiff](../extensibility/sccdiff-function.md) diese Flags definieren des Bereichs eines Diff-Vorgangs verwendet. Die `SCC_DIFF_QD_xxx` Flags schließen sich gegenseitig. Wenn eines dieser Projekte angegeben wird, ist kein visuelles Feedback gegeben werden soll. In einem "schnellen"Diff (QD), das plug-in wird nicht bestimmt, wie die Datei unterscheidet sich, nur dann, wenn er sich unterscheidet. Wenn keines ist diese Flags angegeben "visual Diff" erfolgt., Ausführliche Dateiunterschieden werden berechnet und angezeigt. Wenn die angeforderte QD nicht unterstützt wird, verschiebt zur nächsten bewährte des Plug-Ins. Z. B. überprüfen, ob die IDE, eine Prüfsumme anfordert, und das plug-in nicht unterstützt,-Plug-in ist eine vollständige-Inhalt (immer noch sehr viel schneller als eine visuelle Darstellung).  
@@ -46,7 +46,7 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von Leerzeichen Unterschiede. **Hinweis**:  Die `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen der gesamte Dateiinhalt.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Warteschlangentiefe von Checksum.|  
-|`SCC_DIFF_QD_TIME`|0 x 0040|Warteschlangentiefe von Datums-/Zeitstempel der Datei.|  
+|`SCC_DIFF_QD_TIME`|0x0040|Warteschlangentiefe von Datums-/Zeitstempel der Datei.|  
 |`SCC_DIFF_QUICK_DIFF`|0x0070|Dies ist eine Maske, mit der alle dem QD Bitflags überprüft. Es sollte nicht in eine Funktion übergeben werden; die drei QD Bitflags schließen sich gegenseitig aus. QD bedeutet immer ohne Anzeige der Benutzeroberfläche.|  
   
 ## <a name="populatelist-flag"></a>PopulateList-flag  

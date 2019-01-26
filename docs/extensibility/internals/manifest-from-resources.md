@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993974"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine Liste von Bildressourcen (PNG oder XAML-Dateien) und generiert eine .imagemanifest-Datei, die diese Images mit dem Visual Studio-Image-Dienst verwendet werden kann. Darüber hinaus kann dieses Tool verwendet werden, eine vorhandene .imagemanifest Bilder hinzugefügt. Dieses Tool eignet sich für das Hinzufügen von hohen dpi- und Design-Unterstützung für Bilder für Visual Studio-Erweiterung. Die generierte .imagemanifest-Datei sollte in enthalten und als Teil der Visual Studio-Erweiterung (VSIX) bereitgestellt werden.  
@@ -28,12 +28,12 @@ Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine
 ||||  
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
-|Systemablagen|Eine durch Semikolons getrennte Liste von Bildern oder Verzeichnisse. Diese Liste sollte immer die vollständige Liste der Bilder enthalten, die im Manifest werden. Wenn nur eine unvollständige Liste angegeben ist, werden die Einträge nicht enthalten gelöscht.<br /><br /> Wenn eine bestimmte Ressource-Datei einen Bildstreifen handelt, teilt das Tool es in einzelne Bilder vor dem Hinzufügen jedes Teilbild im Manifest.<br /><br /> Wenn das Bild eine PNG-Datei ist, wird empfohlen, dass Sie den Namen wie folgt formatieren, sodass das Tool in den richtigen Attributen für das Bild gefüllt werden kann: \<Name >. \<Breite >. \<Höhe > PNG.|Erforderlich|  
-|/ Assembly|Der Name, der die verwaltete Assembly (nicht einschließlich Erweiterung), oder der Common Language Runtime-Pfad, der systemeigenen Assembly, auf dem die Ressourcen (relativ zum Speicherort des Manifests Common Language Runtime) gehostet werden soll.|Erforderlich|  
-|"/ manifest"|Der Name der generierten .imagemanifest-Datei zugewiesen. Dies kann auch einen absoluten oder relativen Pfad zum Erstellen der Datei an einem anderen Speicherort enthalten. Der Standardname entspricht der Name der Assembly.<br /><br /> Standardeinstellung: \<Aktuelles Verzeichnis >\\< Assembly\>.imagemanifest|Optional|  
+|Systemablagen|Eine durch Semikolons getrennte Liste von Bildern oder Verzeichnisse. Diese Liste sollte immer die vollständige Liste der Bilder enthalten, die im Manifest werden. Wenn nur eine unvollständige Liste angegeben ist, werden die Einträge nicht enthalten gelöscht.<br /><br /> Wenn eine bestimmte Ressource-Datei einen Bildstreifen handelt, teilt das Tool es in einzelne Bilder vor dem Hinzufügen jedes Teilbild im Manifest.<br /><br /> Wenn das Bild eine PNG-Datei ist, wird empfohlen, dass Sie den Namen wie folgt formatieren, sodass das Tool in den richtigen Attributen für das Bild gefüllt werden kann: \<Name>.\<Width>.\<Height>.png.|Erforderlich|  
+|/assembly|Der Name, der die verwaltete Assembly (nicht einschließlich Erweiterung), oder der Common Language Runtime-Pfad, der systemeigenen Assembly, auf dem die Ressourcen (relativ zum Speicherort des Manifests Common Language Runtime) gehostet werden soll.|Erforderlich|  
+|/manifest|Der Name der generierten .imagemanifest-Datei zugewiesen. Dies kann auch einen absoluten oder relativen Pfad zum Erstellen der Datei an einem anderen Speicherort enthalten. Der Standardname entspricht der Name der Assembly.<br /><br /> Standardeinstellung: \<Aktuelles Verzeichnis >\\< Assembly\>.imagemanifest|Optional|  
 |/guidName|Der Name, auf das Symbol "GUID" für alle Images im generierten Manifest zu gewähren.<br /><br /> Standardeinstellung: AssetsGuid|Optional|  
 |/rootPath|Der Stammpfad, der vor dem Erstellen von verwalteten Ressourcen-URIs entfernt werden muss. (Dieses Flag ist in Fällen helfen, in dem das Tool den relativen URI-Pfad falsch sein, sodass Ressourcen, die Fehler beim Laden der ruft.)<br /><br /> Standardeinstellung: \<Aktuelles Verzeichnis >|Optional|  
-|Recursive|Wenn Sie dieses Flag weist das Tool rekursiv durchsucht Verzeichnisse im Systemablagen-Argument. Das Auslassen dieses Flags führt zu einer top-Ebenen nur Suche von Verzeichnissen.|Optional|  
+|/recursive|Wenn Sie dieses Flag weist das Tool rekursiv durchsucht Verzeichnisse im Systemablagen-Argument. Das Auslassen dieses Flags führt zu einer top-Ebenen nur Suche von Verzeichnissen.|Optional|  
 |/isNative|Legen Sie dieses Flag an, wenn das Assemblyargument einen Pfad für eine native Assembly ist. Lassen Sie dieses Flag an, wenn das Assemblyargument den Namen einer verwalteten Assembly ist. (Siehe Abschnitt "Hinweise" Weitere Informationen über dieses Flag).|Optional|  
 |/newGuids|Wenn Sie dieses Flag weist das Tool zum Erstellen eines neuen Werts für Bilder GUID-Symbol anstelle der Definition aus der vorhandenen Manifest zusammenführen.|Optional|  
 |/newIds|Wenn Sie dieses Flag weist das Tool zum Erstellen der neuen ID-Symbolwerte für jedes Bild anstelle von Werten aus dem vorhandenen Manifest zusammenführen.|Optional|  
@@ -43,9 +43,9 @@ Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine
   
  **Beispiele**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

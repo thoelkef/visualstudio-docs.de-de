@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7cecbe627d432e24f12b334747d4e4ec55c1c73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020164"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -339,7 +339,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Alle Pronomen|Einschließlich der Hauptwortgruppe "Die" ebenfalls unverändert"," ein Zusammenschluss der das Pronomen "it" und das Verb "is"|  
 |Vor- und Nachnamen Wörter, unabhängig von Wortarten||  
 |Präpositionen, die Teil eines Ausdrucks verb|"Wird geschlossen, alle Windows" oder "Das System herunterzufahren"|  
-|Alle Buchstaben der Abkürzung|HTML-"," XML "," URL "," IDE "," RGB|  
+|Alle Buchstaben der Abkürzung|HTML, XML, URL, IDE, RGB|  
 |Die zweite Begriff im ein zusammengesetztes Wort angezeigt, wenn es sich um ein Nomen oder Adjektiv, das richtige ist, oder wenn die Wörter die gleiche Gewichtung haben|Querverweis, vor der Microsoft-Software-Lese-/Schreibzugriff, Laufzeit|  
   
 |Kleinbuchstaben|Beispiele|  

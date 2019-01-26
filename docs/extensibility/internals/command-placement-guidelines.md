@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6834a12c4ecc052c9589a156c2eeb701e88036e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a24273999d98b929cf43f10dbbef0f5573963d08
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023430"
 ---
 # <a name="command-placement-guidelines"></a>Richtlinien zur befehlsplatzierung
 Bewährte Methoden für die Positionierung von Befehlen in der integrierten Entwicklungsumgebung (IDE) von Visual Studio variieren je nach Größe für den Befehlssatz. Befehle definiert sind, und entsprechend den Informationen in positioniert *VSCT* Dateien.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41970ba51b11ddbd81eca679dd7c540efe7d59a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1a8814ebf769ba76fe7c1dc6646248a088bc17f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982558"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
 Es gibt eine Reihe von Möglichkeiten, um die Anwendung zu ermitteln, die eine Datei behandelt, die eine bestimmte Dateierweiterung hat. Die Verben OpenWithList und OpenWithProgids werden zwei Möglichkeiten zum Angeben von dateihandlern unter dem Registrierungseintrag für die Dateierweiterung.  
@@ -38,7 +38,7 @@ HKEY_CLASSES_ROOT\
   
  Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung Eigentümer der Erweiterung wird. Dies kann einer zukünftigen Version Ihrer Anwendung oder eine andere Anwendung sein.  
   
-## <a name="openwithprogids"></a>"OpenWithProgIds"  
+## <a name="openwithprogids"></a>OpenWithProgIDs  
  Den programmatischen Bezeichner (ProgIDs) gibt die Anzeigenamen Versionen ClassIDs, die eine Version einer Anwendung oder COM-Objekt zu identifizieren. Alle gemeinsam erstellbares Objekt muss es sich um eine eigene ProgID sein. VisualStudio.DTE.7.1 startet z. B. Visual Studio .NET 2003, während VisualStudio.DTE.10.0 startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Als Besitzer eines Projekttyps oder Projektelementtyp müssen Sie eine bestimmte Version ProgID für die Dateierweiterung erstellen. Diese ProgIDs möglicherweise redundant sein, da mehr als eine ProgID die gleiche Anwendung starten kann. Weitere Informationen finden Sie unter [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).  
   
  Verwenden Sie die folgende Benennungskonvention für eine Datei mit versionsabhängige Programm-IDs, um bei der Registrierung von anderen Anbietern tragen:  

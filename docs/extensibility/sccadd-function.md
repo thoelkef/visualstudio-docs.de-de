@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027892"
 ---
 # <a name="sccadd-function"></a>SccAdd-Funktion
 Diese Funktion wird vom Quellcodeverwaltungssystem neue Dateien hinzugefügt.  
@@ -84,14 +84,14 @@ SCCRTN SccAdd(
   
 |Option|Wert|Bedeutung|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|Das Quellcodeverwaltungs-Plug-in sollte es sich um den Dateityp erkennen.|  
-|SCC_FILETYPE_TEXT|0 x 01|Gibt eine ASCII-Textdatei an.|  
-|SCC_FILETYPE_BINARY|0 x 02|Gibt einen Dateityp als ASCII-Text an.|  
+|SCC_FILETYPE_AUTO|0x00|Das Quellcodeverwaltungs-Plug-in sollte es sich um den Dateityp erkennen.|  
+|SCC_FILETYPE_TEXT|0x01|Gibt eine ASCII-Textdatei an.|  
+|SCC_FILETYPE_BINARY|0x02|Gibt einen Dateityp als ASCII-Text an.|  
 |SCC_ADD_STORELATEST|0x04|Speichert nur die letzte Kopie der Datei keine Deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Die Datei behandelt als ANSI-Text.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Die Datei behandelt als ANSI-Text.|  
 |SCC_FILETYPE_UTF8|0x10|Behandelt die Datei als Unicode-Text im UTF8-Format.|  
 |SCC_FILETYPE_UTF16LE|0x20|Behandelt die Datei als Unicode-Text im UTF16-Little-Endian-Format.|  
-|SCC_FILETYPE_UTF16BE|0 x 40|Behandelt die Datei im UTF16-Format Big-Endian Unicode-Text formatieren.|  
+|SCC_FILETYPE_UTF16BE|0x40|Behandelt die Datei im UTF16-Format Big-Endian Unicode-Text formatieren.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

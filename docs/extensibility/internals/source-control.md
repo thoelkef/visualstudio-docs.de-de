@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f1245818ef964a49aafdec3e25b67fddbfac40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdf98d64b5896d0827d39983a812b80500ff9515
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007996"
 ---
 # <a name="source-control"></a>Quellcodeverwaltung
 Dieser Abschnitt beschreibt die Optionen zum Implementieren von Datenquellen-Steuerelement als eine integrierte Funktion von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], entweder durch ein Quellcodeverwaltungs-Plug-in oder ein Quellcodeverwaltungs-VSPackage.  
