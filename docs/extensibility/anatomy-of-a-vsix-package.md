@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921483"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971234"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 Ein VSIX-Paket ist eine *VSIX* Datei, die eine oder mehrere Visual Studio-Erweiterungen zusammen mit den Metadaten von Visual Studio enthält verwendet wird, zu klassifizieren und die Erweiterungen installieren. Diese Metadaten enthalten ist im VSIX-Manifest und die *[Content_Types] .xml* Datei. Ein VSIX-Paket kann auch enthalten, eine oder mehrere *Extension.vsixlangpack* Dateien zu setuptext lokalisiert, und können zusätzliche VSIX-Pakete, um Abhängigkeiten zu installieren.  
@@ -54,7 +54,7 @@ Ein VSIX-Paket ist eine *VSIX* Datei, die eine oder mehrere Visual Studio-Erweit
   
  Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *%LocalAppData%* ist ein Verzeichnis für benutzerspezifische. Allerdings setzen Sie die [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) Element des Manifests, das `True`, wird die Erweiterung installiert werden, unter <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> werden für alle Benutzer des Computers zur Verfügung stehen.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Die *[Content_Types] .xml* Datei identifiziert die Dateitypen in der erweiterten *VSIX* Datei. Visual Studio verwendet diese Datei während der Installation des Pakets, aber die Datei selbst wird nicht installiert. Weitere Informationen zu dieser Datei finden Sie unter [die Struktur der [Content_types] .xml-Datei](the-structure-of-the-content-types-dot-xml-file.md).  
   
  Ein *[Content_Types] .xml* Datei ist durch den Open Packaging Conventions (OPC) Standard erforderlich. Weitere Informationen zu OPC finden Sie unter [OPC: Ein neuer Standard für das Verpacken Ihrer Daten](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) auf der MSDN-Website.

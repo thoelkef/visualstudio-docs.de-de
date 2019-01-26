@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa66cb409b1ccdf8a0d60635c343fe7f356090af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da0ec7eb05c27c3c5f78a4337f2df508b3f3e0ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945904"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur der ausgeführten Dokumententabelle (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument ist ein Element, das gespeichert wird, einschließlich der Dateien in einem Projekt oder der Hauptprojektdatei (z. B. eine VCXPROJ-Datei).  
@@ -57,5 +57,5 @@ Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer interne
 -   Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.  
   
 ## <a name="see-also"></a>Siehe auch  
- [RDT_ReadLock-Verwendung](../../extensibility/internals/rdt-readlock-usage.md)   
+ [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
  [Persistenz und die aktive Dokumenttabelle](../../extensibility/internals/persistence-and-the-running-document-table.md)
