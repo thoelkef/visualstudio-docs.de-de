@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 270cdaac1f58aefaf13535218613f50bbf645b59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981302"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
 Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige unterstreichungen und schreibgeschützter Bereiche. Textmarkierungen unterscheiden sich grundsätzlich von Syntaxfarben. Farben für Syntax ist eine schnelle Möglichkeit, um die Sprachsyntax zu kommunizieren, die dem Textbereich zugeordnet ist. Farben für Syntax wird in der Regel angefordert, wenn Windows den Bildschirm zeichnet neu, wenn Geschwindigkeit von Bedeutung ist. Farben für Syntax ändert nur die Farbe des Texts. Textmarkierungen können viele andere Eigenschaften des Texts ändern. Textmarkierungen "float" und besonderes Verhalten angewendet werden können und färben.  

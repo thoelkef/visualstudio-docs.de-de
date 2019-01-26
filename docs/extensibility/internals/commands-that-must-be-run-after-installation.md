@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd5fdae152cf3810d9b9bc95596081473eecc965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915548"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942530"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden muss
 Wenn Sie die Erweiterung durch Bereitstellen einer *MSI* -Datei, die Sie ausführen müssen **Devenv/Setup** im Rahmen der Installation in der Reihenfolge für Visual Studio, um Ihre Erweiterungen zu ermitteln.  
@@ -60,10 +60,10 @@ Wenn Sie die Erweiterung durch Bereitstellen einer *MSI* -Datei, die Sie ausfüh
   
 |Aktion|Typ|Source|Target|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/ Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/ Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Benutzerdefinierte Aktionen müssen in die Tabelle InstallExecuteSequence Planung für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung, um zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nicht auf dem System installiert ist.  
   

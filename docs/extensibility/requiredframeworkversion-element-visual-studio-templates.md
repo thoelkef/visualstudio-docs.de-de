@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946996"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion-Element (Visual Studio-Vorlagen)
 
@@ -26,7 +26,7 @@ Gibt die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist
 > [!IMPORTANT]
 > Ab Visual Studio 2017 Version 15.6, die **Framework-Zielversion** Dropdown ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen fungiert der Dropdown-Liste als eine Framework-Auswahl für die ausgewählte Vorlage ein.
 
- \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>Syntax
 

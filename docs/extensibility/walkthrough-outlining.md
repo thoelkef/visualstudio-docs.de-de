@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ec5c409e13838c68656a35a92dab3688a5ce326
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827522"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948075"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von definiert die Arten der Textbereiche, die Sie erweitern oder reduzieren möchten. Sie können Regionen im Kontext von einem Sprachdienst zu definieren oder definieren eigene Erweiterung und Inhalt Dateinamentyp und gelten von der Region-Definition für nur diesen Typ, oder wenden die Definitionen für die Region auf einem vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarische Vorgehensweise veranschaulicht das Definieren und Anzeigen von Gliederungsbereiche.  

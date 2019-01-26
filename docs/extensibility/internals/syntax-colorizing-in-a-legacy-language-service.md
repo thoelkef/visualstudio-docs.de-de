@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948647"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Einfärben der Syntax in einem Legacysprachdienst
 Farbliche Markierung der Syntax ist ein Feature, das bewirkt, dass verschiedene Elemente in einer Programmiersprache, die in einer Quelldatei in unterschiedlichen Farben und Stile angezeigt werden. Um dieses Feature zu unterstützen, müssen Sie angeben, einen Parser oder den Scanner, die Typen von lexikalischen Elemente oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden, Schlüsselwörter, Trennzeichen (z. B. das runden oder geschweiften Klammern) und Kommentare farbliche Kennzeichnung von ihnen auf unterschiedliche Weise.  

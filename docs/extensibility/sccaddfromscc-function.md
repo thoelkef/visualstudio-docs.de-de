@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717820bdd16daf9c32b32d873035a652d68f6348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e02c061e6f85ad25e6cd9509b8a86a977a78cbba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978515"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc-Funktion
 Diese Funktion ermöglicht es dem Benutzer nach Dateien suchen, die bereits in der Quellcode-Verwaltungssystems sind, und stellen anschließend diese Dateien Teil des aktuellen Projekts. Diese Funktion kann z. B. eine allgemeinen Headerdatei in das aktuelle Projekt erhalten, ohne die Datei zu kopieren. Zurückgegebenen Array von Dateien mit `lplpFileNames`, enthält die Liste der Dateien, die der Benutzer möchte die IDE-Projekt hinzu.  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 704a37b1aeb211921b962fd816af89abb686a14e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d846039532f5279a8945ada465d4d8029ddd8aff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940192"
 ---
 # <a name="commands-element"></a>Commands-element
 Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage. Die Auflistung kann bis zu fünf Unterabschnitte, wie folgt aufweisen: Gruppen, Menüs, Schaltflächen, Combos und Bitmaps.  

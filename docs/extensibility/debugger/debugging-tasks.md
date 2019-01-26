@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa719871e075a5448fa2d351c5bd7950a833601a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19777ec9020fb5e4e825652cbea8034755a0ebac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937099"
 ---
 # <a name="debug-tasks"></a>Tasks zum Debuggen
 Um ein Programm zu debuggen, es muss gestartet werden und eine Debug-Engine (DE) angefügt werden muss, andernfalls die DE muss an eine bereits gestartete Programm angefügt werden. Nach dem Anfügen, muss die DE bestimmte Startup-Ereignisse generieren. Das debugpaket versucht, in der Antwort die Haltepunkte, die in der IDE zu binden. Wenn das Programm einen gebundenen Haltepunkt trifft, hält und Benutzereingaben wartet.  

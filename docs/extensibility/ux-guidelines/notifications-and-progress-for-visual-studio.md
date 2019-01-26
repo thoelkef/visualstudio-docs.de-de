@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936696"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Benachrichtigungssysteme  
@@ -281,12 +281,12 @@ ms.locfileid: "53942670"
   
  **Ausgabefenster mit dem Status des laufenden Prozess und warten Sie, messaging**  
   
-##  <a name="BKMK_Infobars"></a> Infoleisten  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Übersicht  
  Infoleisten weisen Sie dem Benutzer einen Indikator in der Nähe ihrer Punkt Aufmerksamkeit und mithilfe des freigegebenen Infoleiste-Steuerelements, wird die Konsistenz in visual Erscheinungsbild und Wechselwirkung sichergestellt wird.  
   
- ![Infoleiste](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Infoleisten in Visual Studio**  
   
@@ -326,7 +326,7 @@ ms.locfileid: "53942670"
 ### <a name="creating-an-infobar"></a>Erstellen eine Infoleiste  
  Die Infoleiste verfügt über vier Abschnitte, von links nach rechts:  
   
--   **Symbol:** Dies ist, in dem Sie alle Symbol hinzufügen würden Sie möchten für die Infoleiste, z. B. ein Warnsymbol angezeigt werden soll.  
+-   **Icon:** Dies ist, in dem Sie alle Symbol hinzufügen würden Sie möchten für die Infoleiste, z. B. ein Warnsymbol angezeigt werden soll.  
   
 -   **Text:** Sie können, dass Text, der den Benutzer-Szenario/Situation zu beschreiben, zusammen mit Links innerhalb des Texts, wird bei Bedarf hinzufügen. Denken Sie daran, um den Text kompakt zu halten.  
   
@@ -516,6 +516,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Wasserzeichen  
  Manchmal ist eine gesamte Steuerelement oder das Fenster, in einem Fehlerzustand befindet. Verwenden Sie in diesem Fall ein Wasserzeichen den Fehler angibt.  
   
- ![Wasserzeichen](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Feldvalidierung Wasserzeichen**

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ee9f574b1d0db7a90b2d056456ccb29db0604e1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb5a43224ff94e0e5115265383bff578031793bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936306"
 ---
 # <a name="customizing-element-tools"></a>Anpassen von Elementtools
 In einigen DSL-Definitionen stellen Sie ein einmaliges Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell erstellen, in dem eine Komponente über einen festen Satz von Ports verfügt, z. B. Sie immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie das Tool zur Erstellung von Element anpassen, sodass eine Gruppe von Elementen statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.
