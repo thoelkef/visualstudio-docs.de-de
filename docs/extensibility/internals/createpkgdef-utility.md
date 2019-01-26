@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312bbab46cfb7dec85e42f425b2363c2442e576b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910934"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016225"
 ---
-# <a name="createpkgdef-utility"></a>CreatePkgDef-Hilfsprogramm
+# <a name="createpkgdef-utility"></a>CreatePkgDef utility
 Eine DLL-Datei für Visual Studio-Erweiterung als Parameter akzeptiert und erstellt eine *PKGDEF* Datei zur Ergänzung der *DLL* Datei. Die *PKGDEF* -Datei enthält alle Informationen, die in die systemregistrierung andernfalls geschrieben werden sollen, wenn die Erweiterung installiert ist.  
   
 > [!NOTE]
@@ -33,16 +33,16 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```  
   
 ## <a name="arguments"></a>Argumente  
- **/ out =&lt;Dateiname&gt;**  
+ **/out=&lt;FileName&gt;**  
  Erforderlich. Legt den Namen der der *PKGDEF* Ausgabedatei &lt;FileName&gt;.  
   
  **/codebase**  
  Dies ist optional. Erzwingt, dass die Registrierung mit dem **Codebasis** Hilfsprogramm.  
   
- **/ Assembly**  
+ **/assembly**  
  Erzwingt, dass die Registrierung mit dem **Assembly** Hilfsprogramm.  
   
- **&lt;Assemblypfad&gt;**  
+ **&lt;AssemblyPath&gt;**  
  Der Pfad des der *DLL* Datei, die von dem Sie generieren möchten die *PKGDEF*.  
   
 ## <a name="remarks"></a>Hinweise  
@@ -50,7 +50,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  Die *PKGDEF* Dateien müssen in einem der folgenden Speicherorte installiert sein: 
 
-- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
 - *%VSInstallDir%\Common7\IDE\Extensions\\*
     

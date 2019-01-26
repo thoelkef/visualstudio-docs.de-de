@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030391"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen
 Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisieren Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
@@ -32,7 +32,7 @@ Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisier
   
 1. Erstellen Sie einen Registrierungseintrag wie folgt:  
   
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version > \Text Editor\External Marker\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
   
     *\<MarkerGUID >* ist eine `GUID` zum Identifizieren des Markers, der hinzugefügt wird  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd772667223dace8f08fdd5c4a18c4860b50aaa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000873"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Verwalten des Ladens von Projekten in einer Projektmappe
 Visual Studio-Projektmappen können es sich um eine große Anzahl von Projekten enthalten. Das Standardverhalten für Visual Studio ist beim Laden alle Projekte in einer Projektmappe zum Zeitpunkt der Projektmappe geöffnet wird und nicht, damit Benutzer auf keinem der Projekte zugreifen, bis alle abgeschlossen sind. Wenn der Prozess des Ladens von Projekten mit mehr als zwei Minuten dauern wird, wird eine Statusanzeige zeigt die Anzahl der Projekte, die geladen und die Gesamtzahl der Projekte angezeigt. Der Benutzer kann Projekte entladen, während der Arbeit in einer Projektmappe mit mehreren Projekten, aber dieses Verfahren hat einige Nachteile: die entladenen Projekte werden nicht als Teil eines Befehls für die Projektmappe neu erstellen erstellt und IntelliSense-Beschreibungen von Typen und Member von geschlossen Projekte werden nicht angezeigt.  

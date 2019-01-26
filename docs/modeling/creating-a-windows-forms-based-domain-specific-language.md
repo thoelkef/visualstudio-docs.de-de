@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6e192d9bf22f2cd299164c1782db208d250e773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028694"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.

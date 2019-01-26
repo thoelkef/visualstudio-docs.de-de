@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b058324bfe0dcde4b2285c1a7478859ed27131b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4cc5847d2d3403ddb1624ecd97084ad4d548ad3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030898"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Diese Schnittstelle ermöglicht es einen Aufrufer, die bestimmen, ob ein portanbieters beizubehalten, die Ports (auf Datenträger schreiben) zwischen den Aufrufen des Debuggers und Sie anschließend eine Liste mit diesen beibehaltenen Ports rufen kann.  

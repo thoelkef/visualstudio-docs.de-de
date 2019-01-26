@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012273"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -94,7 +94,7 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 * Visual Studio installiert zuvor viele Registrierungsschlüssel des Systems **HKEY_LOCAL_MACHINE** und **HKEY_CURRENT_USER** Strukturen unter einem Visual Studio-spezifischer Schlüssel:
   * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel von MSI-Installationsprogramme und pro Computer Erweiterungen erstellt werden.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel erstellt, die von Visual Studio benutzerspezifische Einstellungen speichern.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: Eine Kopie von Visual Studio-HKLM-Taste oben, und die Registrierungsschlüssel vom zusammengeführt *PKGDEF* Dateien von Erweiterungen.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Eine Kopie von Visual Studio-HKLM-Taste oben, und die Registrierungsschlüssel vom zusammengeführt *PKGDEF* Dateien von Erweiterungen.
 * Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) Funktion zum Speichern von Registrierungsschlüssel in einer privaten Binärdatei unter *[VSAPPDATA]\privateregistry.bin*. Nur eine sehr kleine Anzahl von Visual Studio-spezifischer Schlüssel bleiben in der systemregistrierung.
 
 * Vorhandenem Code innerhalb des Visual Studio ausgeführt wird nicht beeinträchtigt. Visual Studio werden alle Registrierungsvorgängen unter dem HKCU Visual Studio-spezifischer Schlüssel in die private Registrierung umgeleitet werden. Lesen und Schreiben in andere Registrierungsspeicherorte werden weiterhin die Registrierung des Systems verwenden.

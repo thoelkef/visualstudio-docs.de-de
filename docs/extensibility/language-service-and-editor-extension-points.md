@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907961"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010050"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Language-Dienst und -Editor-Erweiterungspunkte
 Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framework (MEF) Komponenten, einschließlich der meisten Language Service-Features erweitern können. Dies sind die haupterweiterung zeigen Kategorien:  
@@ -91,7 +91,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- (Findresults) aus  
+- FindResults  
   
 - F#  
   
@@ -229,7 +229,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
   
    Dies sind die integrierten Ränder:  
   
-  - "WPF-horizontale Bildlaufleiste"  
+  - "Wpf Horizontal Scrollbar"  
   
   - "Wpf vertikale Bildlaufleiste"  
   
@@ -411,7 +411,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   5.  RIFF  
   
-  6.  DIF  
+  6.  Dif  
   
   7.  Gebietsschema  
   
@@ -423,7 +423,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eefced00e0d2c920947213f559325eb5ad2551b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990515"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993102"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. In der Vorlage eingefügt werden *Kontrollblöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
