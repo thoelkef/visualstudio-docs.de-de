@@ -1,5 +1,5 @@
 ---
-title: 'CA1806: Methodenergebnisse nicht ignorieren'
+title: 'CA1806: Methodenergebnisse nicht ignorieren.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 - VB
-manager: douge
-ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4ac122534a42cb78b80d1a12004a8db3d1b5b203
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954197"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043634"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren.
 
 |||
 |-|-|

@@ -1,5 +1,5 @@
 ---
-title: 'CA2222: Sichtbarkeit für geerbte Member nicht verringern'
+title: 'CA2222: Sichtbarkeit für geerbte Member nicht verringern.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71b4bd27b7c2258e508f02c7c4e88a516c370209
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdae21ec1a95cdc12cb6511a39f45e610e09b329
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031785"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern.
 
 |||
 |-|-|

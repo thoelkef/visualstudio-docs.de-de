@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10d18989ad94de7a1645b1dc48c474a983450f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb2ee2a39f97e2c138eb8cbc8488b8acca2b2286
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991150"
 ---
 # <a name="document-windows"></a>Dokumentfenster
 In Visual Studio eine *Dokumentfenster* ist ein gerahmter untergeordnete Fenster, das ein Fenster für die Multiple Document Interface (MDI) zugeordnet ist. Dokumentfenster in der Regel für die Anzeige und Änderung von Quellcode oder Text verwendet werden, aber sie können auch andere funktionale Typen hosten. Dokumentfenster:  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961101"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042542"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance-Hilfsprogramm
 Verwenden der **CreateExpInstance** Hilfsprogramm zu erstellen, zurücksetzen oder löschen eine experimentelle Instanz von Visual Studio. Sie können die experimentelle Instanz zum Debuggen und Testen Visual Studio-Erweiterungen, ohne die zugrunde liegenden Produkt verwenden.  
@@ -33,16 +33,16 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="parameters"></a>Parameter  
  **/ Erstellen Sie** die experimentelle Instanz erstellt.  
   
- **/ Reset**  
+ **/Reset**  
  Löscht die experimentelle Instanz, und klicken Sie dann eine neue erstellt.  
   
  **/Clean**  
  Löscht die experimentelle Instanz.  
   
- **/ VSInstance**  
+ **/VSInstance**  
  Der Name des Verzeichnisses, das die zu kopierende grundlegende Visual Studio-Instanz enthält.  
   
- **/ RootSuffix**  
+ **/RootSuffix**  
  Das Suffix, auf den Namen des Verzeichnisses experimentelle Instanz angefügt werden soll.  
   
 ## <a name="remarks"></a>Hinweise  

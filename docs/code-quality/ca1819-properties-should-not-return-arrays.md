@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7fe25198e46c1f6860dc73198bea860ac16896d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003164"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 
@@ -91,4 +91,4 @@ Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaf
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1024: NACH MÖGLICHKEIT Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

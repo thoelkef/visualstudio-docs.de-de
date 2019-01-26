@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69278a0faca0d31ae5afbf4b84dbc78efad1bf06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37643aecf5e106c84121008423a391f8075c76fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005617"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Dies ist eine Callback-Funktion übergeben, um die [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Funktion zum Aktualisieren einer Sammlung von Verzeichnissen und (optional) um Dateinamen, um herauszufinden, die unter quellcodeverwaltung stehen.  

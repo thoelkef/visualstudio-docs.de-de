@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852452"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038343"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen von Visual Studio-Erweiterung
 
@@ -30,7 +30,7 @@ Diese exemplarische Vorgehensweise veranschaulicht die Visual Studio-Erweiterung
 
 In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung, aber die Schritte für jede Art von Erweiterung gültig sind.
 
-1. Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hallo Welt](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Packen Sie die Erweiterung
 

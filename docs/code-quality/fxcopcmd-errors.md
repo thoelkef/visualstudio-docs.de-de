@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34ec1b04e10b874d6f8373b5eb0e6c2e5c6d70e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b5dea79f1c9e3b21b45542a0617daf47ee7e80b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026024"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd-Tool-Fehler
 
@@ -29,15 +29,15 @@ Die folgende Tabelle beschreibt die Fehlercodes von FxCopCmd zurückgegeben:
 |Keine Fehler|0x0|
 |Analysefehler.|0x1|
 |Ausnahmen von Netzwerkregeln|0x2|
-|Fehler beim Laden des Projekts|0 x 4|
+|Fehler beim Laden des Projekts|0x4|
 |Fehler beim Laden der Assembly|0x8|
 |Fehler beim Laden von Regel-Bibliothek|0x10|
 |Fehler beim Laden von Import-Bericht|0x20|
-|Ausgabefehler|0 x 40|
+|Ausgabefehler|0x40|
 |Befehlszeilenfehler switch|0x80|
-|Initialisierungsfehler|0 x 100|
-|Assembly-Verweise-Fehler|0 x 200|
-|BuildBreakingMessage|0 x 400|
+|Initialisierungsfehler|0x100|
+|Assembly-Verweise-Fehler|0x200|
+|BuildBreakingMessage|0x400|
 |Unbekannter Fehler|0x1000000|
 
 **Analysefehler** für schwerwiegende Fehler zurückgegeben wird. Er gibt an, dass die Analyse nicht abgeschlossen werden konnte. Der Fehlercode enthält ggf. auch die zugrunde liegende Ursache des schwerwiegenden Fehlers. Die folgenden Bedingungen schwerwiegende Fehler zu generieren:

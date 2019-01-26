@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73e49c3ac9586f5287e21e63e4560b7009927f46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7856015fff4f62fb1f95ba791be34295717c439f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003057"
 ---
 # <a name="add-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
 Befehle können in sowohl Menüs und Symbolleisten angezeigt werden. Auf der Symbolleiste ist es üblich, dass ein Befehl aus, um mit nur einem Symbol (um Platz zu sparen) und in Menüs angezeigt werden, dass ein Befehl in der Regel mit einem Symbol und die Text angezeigt wird.  

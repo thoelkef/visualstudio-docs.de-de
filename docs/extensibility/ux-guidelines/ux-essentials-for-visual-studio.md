@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac8fdabc54965d521df2552ad4f152b53a7be70a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874868"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997181"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -133,7 +133,7 @@ Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzero
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Unterstreichungen, die verwendet werden, während eine gruppenbezeichnung, nicht auf einen Link  
  Unterstrichenen Text sollte nur für Links verwendet werden.  
   
- **Ungültige:**    
+ **Bad:**    
  ![Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-G_GroupLabelIncorrect")<br />Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster.
   
  **Gute:**   

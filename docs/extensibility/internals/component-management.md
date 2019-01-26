@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31508fd720d1bf6695d6f735e57a829b72087ba9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10d5654983de6ced572d60243a7744608b2c3f53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031382"
 ---
 # <a name="component-management"></a>Verwaltung von Komponenten
 Einheiten von Aufgaben in der Windows Installer werden als Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, wird die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die Windows Installer verwenden.  
