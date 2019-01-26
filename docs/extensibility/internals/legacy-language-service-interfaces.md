@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affb6fac59413fc80f07c6e5ff238b4f9d56ee33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47ee32c78588978f009c29f331fda90632cec42e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957480"
 ---
 # <a name="legacy-language-service-interfaces"></a>Schnittstellen von Legacysprachdiensten
 Für die einer bestimmten Programmiersprache kann nur eine Instanz von einem Sprachdienst zu einem Zeitpunkt vorhanden sein. Allerdings kann ein einzelnes Sprachdienst mehr als ein Editor dienen.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d73dd67f0f2d64a2ac02c77b2eb86d21e559c0d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d2e3ef83cf3b68cd7077dc7abd82527908ed34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965639"
 ---
 # <a name="source-control-plug-in-api-functions"></a>API-Funktionen von Quellcodeverwaltungs-Plug-Ins
 Die Source-Plug-in-API bietet die folgenden Funktionen, die durch das Quellcodeverwaltungs-Plug-in in Übereinstimmung mit dieser API implementiert werden muss. Die Signaturen für jede Funktion und die Semantik von die Bitflags zugeordnet, und andere Parameter sind in dieser Referenz ausführlich beschrieben.  

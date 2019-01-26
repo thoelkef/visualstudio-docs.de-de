@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964248"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer wählt definieren die **Import-/Exporteinstellungen** Befehl die **Tools** Menü. Zum Aktivieren der dieser Persistenz, die Sie verwenden der Einstellungen-APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -38,9 +38,9 @@ Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zu
 
  Die Struktur des Registrierungseintrags ist nachstehend dargestellt:  
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \usersettings\coreui_mypackage  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
 
- `<CSPName`> = s '#12345'  
+ `<CSPName`>= s '#12345'  
 
  Paket = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
 

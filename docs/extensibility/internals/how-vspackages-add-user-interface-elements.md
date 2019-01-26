@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b83da9cfa04183a1820d8b455d6bc609216cf9cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962687"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975295"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Wie VSPackages Benutzeroberflächenelemente hinzufügen
 Eine VSPackage hinzufügen Elemente der Benutzeroberfläche (UI), z. B. Menüs, Symbolleisten und Toolfenster in Visual Studio mit der die *VSCT* Datei.  
@@ -195,7 +195,7 @@ priority="0x0100" type="Menu">
 |Symbolleiste|[Menus-Element](../../extensibility/menus-element.md), die IDE, die anderen VSPackages|Das Element selbst|0 bis *n* Gruppen|  
 |Menübefehl|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst|-0, um *n* Gruppen|  
 |Schaltfläche|[Buttons-Element](../../extensibility/buttons-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst||  
-|Kombinationsfeld|[Combos-Element](../../extensibility/combos-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst||  
+|Combo|[Combos-Element](../../extensibility/combos-element.md), die IDE, die anderen VSPackages|1 bis *n* gruppiert werden, das Element selbst||  
   
 ### <a name="menu-command-and-group-placement"></a>Menü-Befehl und Group-Platzierung  
  Ein Menü, eine Gruppe oder ein Befehl kann in mehreren Speicherorten in der IDE angezeigt. Für ein Element an mehreren Orten angezeigt werden, es muss hinzugefügt werden die `CommandPlacements` Abschnitt als eine [CommandPlacement-Element](../../extensibility/commandplacement-element.md). Alle Menü, eine Gruppe oder ein Befehl kann als eine Platzierung Befehl hinzugefügt werden. Symbolleisten können nicht jedoch auf diese Weise angeordnet werden, da sie in mehreren kontextbezogene Standorten nicht verwendet werden.  
