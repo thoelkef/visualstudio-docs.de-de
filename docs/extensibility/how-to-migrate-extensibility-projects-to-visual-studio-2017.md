@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953509"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 
@@ -32,7 +32,7 @@ Alle VSIX-Projekte müssen ein unidirektionales Upgrade der Hauptversion zu Visu
 
 Die Projektdatei (z. B. **csproj*) aktualisiert werden:
 
-* MinimumVisualStudioVersion - legen Sie jetzt auf 15.0
+* MinimumVisualStudioVersion - now set to 15.0
 * OldToolsVersion (wenn zuvor vorhanden ist) – jetzt auf 14.0 festgelegt.
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Aktualisieren von NuGet-Paket Microsoft.VSSDK.BuildTools
@@ -98,7 +98,7 @@ Anstatt das manifest-XML direkt zu bearbeiten, können Sie die neue **Voraussetz
 
   ![Hinzufügen der Roslyn-Voraussetzungen](media/add-roslyn-prerequisite.png)
 
-* Drücken Sie **OK**.
+* Klicken Sie auf **OK**.
 
 ## <a name="update-debug-settings-for-the-project"></a>Debug-Einstellungen für das Projekt aktualisieren
 
@@ -117,9 +117,9 @@ Dies kann so aus: *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio
   * Standardmäßig befindet sich die VSIX-Datei in *Bin/Debug* oder *Bin/Release* als *[YourCustomExtension] VSIX*.
   * Benennen Sie *VSIX* zu *ZIP* , einfach den Inhalt anzuzeigen.
 * Überprüfen Sie das Vorhandensein von drei Dateien:
-  * *"Extension.vsixmanifest"*
-  * *"Manifest.JSON"*
-  * *"Catalog.JSON"*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Überprüfen Sie, wenn alle erforderliche Komponenten installiert sind
 

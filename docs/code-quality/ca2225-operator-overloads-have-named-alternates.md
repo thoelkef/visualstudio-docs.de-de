@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954804"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965132"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 
@@ -57,8 +57,8 @@ ms.locfileid: "53954804"
 |>=|>=|>=|Vergleichen|
 |++|Nicht zutreffend|++|Inkrement|
 |<>|!=|gleich|
-|<<|<<|<<|Linke UMSCHALTTASTE|
-|<<=|<<=|<<=|Linke UMSCHALTTASTE|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
 |&&|Nicht zutreffend|&&|LogicalAnd|
@@ -69,8 +69,8 @@ ms.locfileid: "53954804"
 |* (binär)|*|*|Multiplizieren|
 |*=|Nicht zutreffend|*=|Multiplizieren|
 |~|Not|~|OnesComplement|
-|>>|>>|>>|Rechte UMSCHALTTASTE|
-=|Nicht zutreffend|>>=|Rechte UMSCHALTTASTE|
+|>>|>>|>>|RightShift|
+=|Nicht zutreffend|>>=|RightShift|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
 |-=|Nicht zutreffend|-=|Subtrahieren|
 |true|IsTrue|Nicht zutreffend|"IsTrue" (Eigenschaft)|

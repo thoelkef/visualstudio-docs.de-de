@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981349"
 ---
 # <a name="core-interfaces"></a>Wichtige Schnittstellen
 Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung des Debuggers mit den [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -93,7 +93,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Die Anfangsposition einer Code-Anweisung darstellt.|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Erweitert die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Schnittstelle für den Abruf von Modul und die Prozess-Schnittstellen zu aktivieren.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VISUAL STUDIO, DE|Stellt eine Position in einem Dokument dar.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Stellt eine Position in einem Dokument dar.|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt den Kontext in der zum Auswerten eines Ausdrucks dar.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt die Anfangsposition im Arbeitsspeicher, der eine Sammlung von Bytes an.|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Stack-Frame-Kontext an einem Haltepunkt oder die Ausnahme dar.|  
@@ -127,12 +127,12 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Gesendet durch die DE um fordern ein Dokument geöffnet werden.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Stellt einen Stream von disassemblierten Anweisungen aus einem Dokument dar.|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VISUAL STUDIO, DE|Stellt ein Dokument vom DE, einen Namen und eine Klasse-ID (CLSID) angeben.|  
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|Stellt ein Dokument vom DE, einen Namen und eine Klasse-ID (CLSID) angeben.|  
 |[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Stellt eine Prüfsumme für eine Debug-Dokument und ermöglicht die Prüfsumme zwischen Komponenten übergeben.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VISUAL STUDIO, DE|Stellt einen Dokumentkontext, eine Position in einem Dokument, einem bestimmten Kontext der Anweisung und der Code entspricht.|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VISUAL STUDIO, DE|Stellt eine allgemeine Position in einem Dokument dar.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Stellt einen Dokumentkontext, eine Position in einem Dokument, einem bestimmten Kontext der Anweisung und der Code entspricht.|  
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|Stellt eine allgemeine Position in einem Dokument dar.|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Stellt eine Position in einer Quelldatei als ein Zeichenoffset dar.|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VISUAL STUDIO, DE|Stellt ein Textdokument, die von der DE bereitgestellt (abgeleitet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), den tatsächlichen Text bereitstellt.|  
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Stellt ein Textdokument, die von der DE bereitgestellt (abgeleitet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), den tatsächlichen Text bereitstellt.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Durch die DE gesendet, Änderungen an einer Quelldatei an, die im Arbeitsspeicher befindet.|  
 
 ##  <a name="Events"></a> Ereignisse  
@@ -164,7 +164,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 | [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) | DE | Von der DE gesendet, wenn ein Modul geladen oder entladen wird. |
 | [IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md) | DE | Signalisiert dem [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger-Benutzeroberfläche auf den Benutzer zu warnen, dass die Symbole für die gestartete ausführbare Datei nicht gefunden. |
 | [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md) | DE | Von der DE, damit die IDE-Anzeige eine beliebige Zeichenfolge gesendet. |
-| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VISUAL STUDIO, DE | Gesendet von einem Port portereignisse an alle Listener zu kommunizieren. |
+| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VS, DE | Gesendet von einem Port portereignisse an alle Listener zu kommunizieren. |
 | [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md) | DE, PS | Vom DE oder Port gesendet, wenn ein Prozess erstellt wurde. |
 | [IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) | DE, PS | Vom DE oder Port gesendet, wenn ein Prozess zerstört wurde. |
 | [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) | DE, PS | Vom DE oder Port gesendet, wenn ein Programm erstellt wurde. |
@@ -215,9 +215,9 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 
 | Interface | Implementiert von | Beschreibung |
 | - |----------------| - |
-| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VISUAL STUDIO, PS | Stellt den Standardport auf dem lokalen Computer. |
+| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS, PS | Stellt den Standardport auf dem lokalen Computer. |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | Ermöglicht es eine Debug-Engine, die DCOM verwendet wird, stellen die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche, um sicherzustellen, dass die Firewall das Remotedebugging nicht blockiert wird. |
-| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VISUAL STUDIO, PS | Stellt einen Port an. |
+| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VS, PS | Stellt einen Port an. |
 | [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | PS | Gesendet von einem Port portereignisse an alle Listener zu kommunizieren. |
 | [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md) | PS | Stellt einen Port, der starten und Beenden von Prozessen. |
 | [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) | PS | Verwendet, um die an- und Abmelden von Programmen mit einem Port. können den Port zum Nachverfolgen der aktuell gedebuggten Programme ab. |
@@ -227,7 +227,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 | [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md) | PS | Stellt eine Anbieter von Ports, die beibehalten werden kann (auf Datenträger speichern) Informationen zu den Ports er erstellt. |
 | [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md) | PS | Ermöglicht die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche zum Anzeigen von Text in die **Transportinformationen** Teil der **an den Prozess anhängen** Dialogfeld. |
 | [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md) | VS | Ermöglicht das Abfragen von Informationen über den Zielcomputer. |
-| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VISUAL STUDIO, PS | Stellt eine Enumeration dar, über einen Satz von Ports. |
+| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | Stellt eine Enumeration dar, über einen Satz von Ports. |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | Stellt eine Enumeration über einen Satz von Portanbieter dar. |
 
 ##  <a name="Processes"></a> Prozesse  

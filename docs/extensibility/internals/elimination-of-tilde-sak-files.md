@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951273"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~ SAK-Dateien
 Im Datenquellen-Steuerelement-Plug-in-API 1.2 die *~ SAK* Dateien wurden durch funktionsflags ersetzt, und neue Funktionen, die erkennen, ob eine Quelle steuern-Plug-in unterstützt die *MSSCCPRJ* Datei- und freigegebene ausgecheckte Elemente nicht.  
@@ -45,7 +45,7 @@ Die IDE kann für Plug-ins, die erweiterten Funktionen in die Datenquellen-Steue
   
  Wenn ein Quellcodeverwaltungs-Plug-in unterstützt die Erstellung und Verwendung von ein *MSSCCPRJ.SCC* -Datei, und klicken Sie dann die es deklariert die `SCC_CAP_SCCFILE` Funktion und implementiert die [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Diese Funktion wird eine Liste mit Dateien aufgerufen. Die Funktion gibt `TRUE' or 'FALSE` für jede Datei, um anzugeben, ob Visual Studio verwenden, sollte ein *MSSCCPRJ.SCC* -Datei. Wenn das Quellcodeverwaltungs-Plug-in auswählt, nicht zu dieser neuen Funktionen und Funktionen zu unterstützen, können sie den folgenden Registrierungsschlüssel verwenden, um die Erstellung dieser Dateien zu deaktivieren:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
 >  Wenn dieser Registrierungsschlüssel, um festgelegt ist *DWORD: 00000000*, dies entspricht dem Schlüssel, die nicht vorhandene wird und Visual Studio weiterhin versucht wird, um die temporären Dateien zu erstellen. Jedoch, wenn der Registrierungsschlüssel, um festgelegt ist *DWORD: 00000001*, versucht Visual Studio nicht zur Erstellung der temporären Dateien. Stattdessen es wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-in nicht unterstützt. die *MSSCCPRJ.SCC* Datei und nicht freigegebene ausgecheckte Elemente nicht unterstützt.  
