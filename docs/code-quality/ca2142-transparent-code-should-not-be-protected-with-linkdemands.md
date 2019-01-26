@@ -1,5 +1,5 @@
 ---
-title: 'CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden'
+title: 'CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 508d9606b07798a1aaa788d3d7ee87da4797dcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ad4ca58848412944d28874554383caf178c2af4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899901"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970850"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden.
 
 |||
 |-|-|

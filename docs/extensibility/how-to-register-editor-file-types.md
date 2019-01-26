@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f26b7421676081b32060dd4f342ee05098d90a7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980322"
 ---
 # <a name="how-to-register-editor-file-types"></a>Vorgehensweise: Registrieren Sie die Editor-Dateitypen
 Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den Registrierung-Attributen, die als Teil der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], Sie können auch eine Registrierungsdatei, der den Editor und den verbundenen nebenanschlüssen registriert schreiben.
