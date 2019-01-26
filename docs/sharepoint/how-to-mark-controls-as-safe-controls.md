@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989373"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875457"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die vor der Script-Injection zu schützen und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, über nicht vertrauenswürdige Benutzer zugegriffen werden kann. Sie können Steuerelemente wie in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im abgesicherten markieren die **-Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter  
@@ -89,7 +89,7 @@ ms.locfileid: "53989373"
     |-------------------|-----------|  
     |Namespace|Der vollqualifizierte Namespace für das Steuerelement, z. B. **BdcModelProject1.VisualWebPart1**.|  
     |Typname|Schaltfläche1|  
-    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = Neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Deaktivieren der **sicher** Kontrollkästchen.|  
     |Sicher vor Skripteinschleusung|Lassen Sie die **sicher für Skript** Kontrollkästchen deaktivieren.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989373"
     |-------------------|-----------|  
     |Namespace|Der vollqualifizierte Namespace für das Steuerelement, z. B. **BdcModelProject1.VisualWebPart1**.|  
     |Typname|TextBox1|  
-    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = Neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Wählen Sie die **sicher** Kontrollkästchen.|  
     |Sicher vor Skripteinschleusung|Wählen Sie die **sicher für Skript** Kontrollkästchen.|  
   

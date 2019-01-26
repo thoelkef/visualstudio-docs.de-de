@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864742d3e2ded8ca4cb0531989bebfde9f6f3593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0479e6de85d156b8a4302b92d2abf0526029c1da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827337"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871649"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Anpassungen von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn Ihr Projekt eine menübandanpassung, die erstellt wurde die **Menüband (visueller Designer)** Projektelement, müssen Sie die folgenden Änderungen an Ihrem Projektcode vornehmen, wenn das Zielframework geändert wird, um die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später noch mal.  

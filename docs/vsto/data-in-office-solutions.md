@@ -11,15 +11,15 @@ helpviewer_keywords:
 - datasets [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dad32dd0412c8cc6ad1ce45160fc06c96e089772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871792"
 ---
 # <a name="data-in-office-solutions"></a>Daten in Office-Projektmappen
   Viele Office-Projektmappen ermöglichen Benutzern das Abrufen und Ändern von Daten. Wenn Sie Office-Projektmappen mithilfe von Visual Studio erstellen, gibt es mehrere verschiedene Verfahren, wie Sie mit Daten arbeiten können.

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28bdf4e9b116522256606bc9fbbe6b05edb45114
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872975"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu sandkastenlösungen
   *Sandbox-Lösungen* sind ein Feature in Microsoft SharePoint 2010, mit dem Standort Sammlung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Allgemeine Sandbox-Lösung ist die Benutzer ihre eigenen Webparts hochladen.  
@@ -41,7 +41,7 @@ ms.locfileid: "53862093"
 ## <a name="sharepoint-site-hierarchy"></a>SharePoint-Websitehierarchie
  Wie Sandbox-Lösungen zu arbeiten, ist es hilfreich, wissen, dass die SharePoint-Websites, die im Bereich hierarchisch angeordnet sind. Das oberste Element wird als Webfarm bezeichnet, und andere Elemente, die ihm untergeordnet sind:  
   
- Webfarm  
+ Web Farm  
   
  Webanwendung A  
   
@@ -107,7 +107,7 @@ ms.locfileid: "53862093"
   
 - Navigation  
   
-- *"onet.xml"*  
+- *Onet.xml*  
   
 - SPItemEventReceiver  
   

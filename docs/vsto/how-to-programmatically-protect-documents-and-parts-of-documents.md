@@ -9,17 +9,17 @@ helpviewer_keywords:
 - document protection
 - documents [Office development in Visual Studio], document protection
 - Word documents, protection
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d72f7c0136921592c8327dc0c101acd63388631
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991109"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872572"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Vorgehensweise: Programmgesteuertes Schützen von Dokumenten und Teilen von Dokumenten
   Sie können Schutz zu einem Microsoft Office Word-Dokument hinzufügen, um zu verhindern, dass Benutzer irgendwelche Änderungen an dem Dokument vornehmen können.  

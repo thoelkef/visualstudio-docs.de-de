@@ -9,17 +9,17 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcc0869b8d255ba91e1a1fd017c93cdb24346b27
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829170"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874548"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen
   Es gibt mehrere Möglichkeiten, eine Arbeitsmappe zu speichern. Sie können eine Arbeitsmappe speichern, ohne den Pfad zu ändern. Wenn die Arbeitsmappe noch nicht gespeichert wurde, sollten Sie sie unter Angabe eines Pfads speichern. Ohne expliziten Pfad speichert Microsoft Office Excel die Datei unter dem bei der Erstellung angegebenen Namen im aktuellen Ordner. Sie können auch eine Kopie der Arbeitsmappe speichern, ohne die geöffnete Arbeitsmappe im Arbeitsspeicher zu ändern.  
@@ -50,7 +50,7 @@ ms.locfileid: "53829170"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>So speichern Sie eine Arbeitsmappe, die einer Anpassung auf Dokumentebene zugeordnet ist  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A>-Methode der `ThisWorkbook`-Klasse auf. Zur Verwendung des folgenden Codebeispiels führen Sie es in der `ThisWorkbook`-Klasse aus.  
+1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> -Methode der `ThisWorkbook` -Klasse auf. Zur Verwendung des folgenden Codebeispiels führen Sie es in der `ThisWorkbook`-Klasse aus.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
@@ -67,7 +67,7 @@ ms.locfileid: "53829170"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>So speichern Sie eine Arbeitsmappe, die einer Anpassung auf Dokumentebene zugeordnet ist  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A>-Methode der `ThisWorkbook`-Klasse auf. Zur Verwendung des folgenden Codebeispiels führen Sie es in der `ThisWorkbook`-Klasse aus.  
+1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> -Methode der `ThisWorkbook` -Klasse auf. Zur Verwendung des folgenden Codebeispiels führen Sie es in der `ThisWorkbook`-Klasse aus.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  

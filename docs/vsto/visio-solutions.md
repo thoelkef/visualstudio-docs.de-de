@@ -12,17 +12,17 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], Visio
 - projects [Office development in Visual Studio], Visio
 - Office solutions [Office development in Visual Studio], Visio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce1de2fae3fe9b5543a779bb3cad95ef8e8b38e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41a583b54caa706d0e103bb8652b80a25b6837b7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885008"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873015"
 ---
 # <a name="visio-solutions"></a>Visio-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Visio verwenden können. Mit VSTO-Add-Ins können Sie Visio automatisieren, Visio -Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Visio anpassen.  

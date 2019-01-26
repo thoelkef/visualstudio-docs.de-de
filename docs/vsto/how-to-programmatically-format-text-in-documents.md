@@ -9,17 +9,17 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - documents [Office development in Visual Studio], formatting text
 - text [Office development in Visual Studio], formatting in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e0cc5c9e42d3de2b0b5ed34664639b70b31abb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba0c69768f8961fa6c23a599a385c46a93d7c47c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835275"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875393"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Vorgehensweise: Programmgesteuertes Formatieren von Text in Dokumenten
   Sie können mit dem <xref:Microsoft.Office.Interop.Word.Range> -Objekt Text in einem Microsoft Office Word-Dokument formatieren.  
@@ -32,7 +32,7 @@ ms.locfileid: "53835275"
   
 ### <a name="to-format-text-using-a-document-level-customization"></a>So formatieren Sie Text mit einer Anpassung auf Dokumentebene  
   
-1.  Das folgende Beispiel kann in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie diesen Code verwenden möchten, führen Sie ihn von der `ThisDocument`-Klasse im Projekt aus.  
+1.  Das folgende Beispiel kann in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie diesen Code verwenden möchten, führen Sie ihn von der `ThisDocument` -Klasse im Projekt aus.  
   
      [!code-vb[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#62)]
      [!code-csharp[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#62)]  

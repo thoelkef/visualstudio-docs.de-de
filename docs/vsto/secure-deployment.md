@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - ClickOnce deployment [Office development in Visual Studio], security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a334b9eab9fb9b859d45eda4419cdfdcde4b44fc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827926"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875640"
 ---
 # <a name="secure-deployment"></a>Sichere Bereitstellung
   Wenn Sie eine Office-Projektmappe erstellen, wird Ihrem Entwicklungscomputer automatisch aktualisiert, um in Ihrem Projekt zum Ausführen des Codes zu ermöglichen. Wenn Sie Ihre Lösung bereitstellen, Sie müssen jedoch bereitstellen Beweise auf der eine Entscheidung über die Vertrauenswürdigkeit basieren, indem Sie die Projektmappe mit einem Zertifikat signieren oder die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vorgelegt. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).  

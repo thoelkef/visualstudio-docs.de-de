@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842787"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869186"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
   Sie können eine Microsoft Office Word-Dokument und Microsoft Office Excel-Arbeitsmappe zur Laufzeit Steuerelemente hinzugefügt. Sie können auch zur Laufzeit entfernen. Steuerelemente, die Sie hinzufügen oder entfernen zur Laufzeit heißen *dynamische Steuerelemente*.  
@@ -75,7 +75,7 @@ ms.locfileid: "53842787"
  Statische Steuerelemente zur Laufzeit kann nicht entfernt werden. Wenn Sie versuchen, ein statisches Steuerelement mit der `Delete`- oder der `Remove`-Methode zu entfernen, wird eine <xref:Microsoft.Office.Tools.CannotRemoveControlException> ausgelöst.  
 
 > [!NOTE]  
->  Vermeiden Sie es, Steuerelemente im `Shutdown`-Ereignishandlerzeitraum des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das `Shutdown`-Ereignis ausgelöst wird. Wenn Sie Steuerelemente vor dem Schließen des Dokuments entfernen möchten, fügen Sie den Code dem Ereignishandler für ein anderes Ereignis hinzu, z. B. <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> oder <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> für Word oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> für Excel.  
+>  Vermeiden Sie es, Steuerelemente im `Shutdown` -Ereignishandlerzeitraum des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das `Shutdown` -Ereignis ausgelöst wird. Wenn Sie Steuerelemente vor dem Schließen des Dokuments entfernen möchten, fügen Sie den Code dem Ereignishandler für ein anderes Ereignis hinzu, z. B. <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> oder <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> für Word oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> für Excel.  
 
 ##  <a name="HostControls"></a> Hinzufügen von Hoststeuerelementen zu Dokumenten  
  Wenn Sie Dokumenten programmgesteuert Hoststeuerelemente hinzufügen, müssen Sie einen Namen angeben, der das Steuerelement eindeutig identifiziert, und Sie müssen angeben, wo das Steuerelement im Dokument hinzugefügt werden soll. Spezifische Anweisungen finden Sie unter den folgenden Themen:  
@@ -110,7 +110,7 @@ ms.locfileid: "53842787"
 
 - Verwenden Sie für Excel eine der <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> -Methoden eines <xref:Microsoft.Office.Tools.Excel.ControlCollection> -Objekts.  
 
-- Verwenden Sie für Word eine der <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A>-Methoden eines <xref:Microsoft.Office.Tools.Word.ControlCollection>-Objekts.  
+- Verwenden Sie für Word eine der <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> -Methoden eines <xref:Microsoft.Office.Tools.Word.ControlCollection> -Objekts.  
 
   Übergeben Sie zum Hinzufügen des Steuerelements das <xref:System.Windows.Forms.Control>, eine Position für das Steuerelement und einen Namen, der das Steuerelement eindeutig identifiziert, an die `AddControl`-Methode. Die `AddControl`-Methode gibt ein Objekt zurück, das definiert, wie das Steuerelement mit dem Arbeitsblatt oder dem Dokument interagiert. Die `AddControl` Methode gibt eine <xref:Microsoft.Office.Tools.Excel.ControlSite> (für Excel) oder ein <xref:Microsoft.Office.Tools.Word.ControlSite> Objekt (für Word).  
 
@@ -122,7 +122,7 @@ ms.locfileid: "53842787"
 ### <a name="use-members-of-custom-controls"></a>Verwenden von Membern von benutzerdefinierten Steuerelementen  
  Nachdem Sie mit einer der `AddControl`-Methoden einem Arbeitsblatt oder Dokument ein Steuerelement hinzugefügt haben, verfügen Sie nun über zwei verschiedene Steuerelementobjekte:  
 
-- das <xref:System.Windows.Forms.Control>-Objekt, das das benutzerdefinierte Steuerelement darstellt, und  
+- das <xref:System.Windows.Forms.Control> -Objekt, das das benutzerdefinierte Steuerelement darstellt, und  
 
 - das `ControlSite`-, das `OLEObject` oder das `OLEControl`-Objekt, das das Steuerelement nach dem Hinzufügen zum Arbeitsblatt oder Dokument darstellt.  
 
@@ -132,7 +132,7 @@ ms.locfileid: "53842787"
 
 - Verwenden Sie zum Zugreifen auf Member, die von den Steuerelementen gemeinsam genutzt werden, das `ControlSite`-, das `OLEObject` oder das `OLEControl`-Objekt.  
 
-  Wenn Sie auf einen gemeinsam genutzten Member über das <xref:System.Windows.Forms.Control> zugreifen, schlägt dieser möglicherweise ohne Warnung oder Benachrichtigung fehl, oder es werden ungültige Ergebnisse erzeugt. Verwenden Sie stets Methoden oder Eigenschaften des `ControlSite`-, des `OLEObject`- oder des `OLEControl`-Objekts, es sei denn, die benötigte Methode oder Eigenschaft ist nicht verfügbar; nur in diesem Fall sollten Sie auf <xref:System.Windows.Forms.Control> verweisen.  
+  Wenn Sie auf einen gemeinsam genutzten Member über das <xref:System.Windows.Forms.Control>zugreifen, schlägt dieser möglicherweise ohne Warnung oder Benachrichtigung fehl, oder es werden ungültige Ergebnisse erzeugt. Verwenden Sie stets Methoden oder Eigenschaften des `ControlSite`-, des `OLEObject`- oder des `OLEControl`-Objekts, es sei denn, die benötigte Methode oder Eigenschaft ist nicht verfügbar; nur in diesem Fall sollten Sie auf <xref:System.Windows.Forms.Control> verweisen.  
 
   Sowohl die <xref:Microsoft.Office.Tools.Excel.ControlSite>-Klasse als auch die <xref:System.Windows.Forms.Control>-Klasse weisen eine `Top`-Eigenschaft auf. Verwenden Sie zum Abrufen oder Festlegen des Abstands zwischen dem oberen Rand des Steuerelements und dem oberen Rand des Dokuments die <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> -Eigenschaft von <xref:Microsoft.Office.Tools.Excel.ControlSite>anstelle der <xref:System.Windows.Forms.Control.Top%2A> -Eigenschaft von <xref:System.Windows.Forms.Control>.  
 
