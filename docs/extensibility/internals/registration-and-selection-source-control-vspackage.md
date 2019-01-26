@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930712"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988765"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfügbar machen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Wenn mehr als eine quellcodeverwaltung VSPackage registriert ist, kann der Benutzer, die VSPackages, laden Sie zur richtigen Zeit jeweils auswählen. Finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) für Weitere Informationen zu VSPackages und wie Sie sie zu registrieren.  
@@ -41,10 +41,10 @@ Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfüg
   
 | Schlüsselname | Einträge |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (Standard) = Rg_sz: {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (Standard) = Rg_sz:\<Anzeigename des Pakets ><br /><br /> Dienst = Rg_sz: {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (Standard) = Rg_sz: #\<Ressourcen-ID für lokalisierte Name ><br /><br /> Paket = Rg_sz: {ID_Package} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Beachten Sie, dass der Schlüsselname, `SourceCodeControl`, wird bereits von verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und ist nicht als Option verfügbar \<Paketname >.) | (Standard) = Rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (default) = rg_sz:{ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (Standard) = Rg_sz:\<Anzeigename des Pakets ><br /><br /> Service = rg_sz:{SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (Standard) = Rg_sz: #\<Ressourcen-ID für lokalisierte Name ><br /><br /> Package = rg_sz:{ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Beachten Sie, dass der Schlüsselname, `SourceCodeControl`, wird bereits von verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und ist nicht als Option verfügbar \<Paketname >.) | (default) = rg_sz:{ID_Package} |
   
 ## <a name="selecting-a-source-control-package"></a>Ein Quellcodeverwaltungspaket auswählen  
  Mehrere Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-ins und Datenquellen-Steuerelement, die VSPackages gleichzeitig registriert werden können. Der Prozess der Auswahl einer Datenquellen-Steuerelement-Plug-in oder VSPackage muss sicherstellen, dass [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lädt das plug-in oder VSPackage zum richtigen Zeitpunkt, und können nicht benötigte Komponenten geladen, bis sie benötigt werden. Darüber hinaus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss, entfernen Sie alle Benutzeroberfläche aus anderen inaktiv VSPackages, einschließlich werden, Menüelemente, Dialogfelder und Symbolleisten, und zeigt die grafische Benutzeroberfläche für das VSPackage aktiv.  

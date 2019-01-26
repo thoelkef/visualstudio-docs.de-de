@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948985"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst ist eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und haben unterschiedliche Werte je nach Kontext, in dem der Ausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst im Codeausschnitt formatieren.  
@@ -86,10 +86,10 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |% LCID %|Gebietsschema-ID.|  
-|Installroot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
-|ProjDir %|Ordner mit dem aktuellen Projekt.|  
-|ProjItem %|Dieser Ordner enthält das aktuelle Projektelement.|  
-|TestDocs %|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
+|%InstallRoot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
+|%ProjDir%|Ordner mit dem aktuellen Projekt.|  
+|%ProjItem%|Dieser Ordner enthält das aktuelle Projektelement.|  
+|%TestDocs%|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihren Sprachdienst  
  Sie können Codeausschnitte für den Sprachdienst aktivieren, durch das Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> Attribut für das VSPackage (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten einschließen, die `SearchPaths` benannter Parameter, um zu den **Codeausschnitt-Manager** des Speicherorts für Ihre Ausschnitte.  
