@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922839"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929126"
 ---
 # <a name="create-a-software-development-kit"></a>Erstellen eines Software Development Kits
 Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein einzelnes Element in Visual Studio verweisen können. Die **Verweis-Manager** Dialogfeld listet alle SDKs, die für das Projekt relevant sind. Wenn Sie ein Projekt eine SDK hinzufügen, sind die APIs in Visual Studio verfügbar.  
@@ -57,7 +57,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 | *DesignTime* Ordner | Enthält Dateien, die nur zum Zeitpunkt der pre-ausführen/Debuggen erforderlich sind. Diese können XML-Dokumente, Bibliotheken, Header, Toolbox während der Entwurfszeit-Binärdateien, MSBuild-Elementen usw. enthalten.<br /><br /> XML-Dokumente würde, im Idealfall platziert werden, der *\DesignTime* Ordner, sondern XML-Dokumente nach verweisen weiterhin zusammen mit der Referenzdatei in Visual Studio platziert werden. Z. B. das XML-Dokument für einen Verweis<em>\References\\[Config]\\[arch]\sample.dll</em> werden *\References\\[Config]\\[arch]\sample.xml*, die lokalisierte Version von diesem Dokument werden *\References\\[Config]\\[Arch]\\[locale]\sample.xml*. |
 | *Konfiguration* Ordner | Dafür kann es nur drei Ordnern: *Debuggen von*, *Retail* und *CommonConfiguration*. SDK-Autoren können ihre Dateien unterhalb platzieren *CommonConfiguration* Wenn der gleiche Satz von SDK-Dateien, unabhängig von der Konfiguration genutzt werden sollen, die SDK-Consumers ausgerichtet wird. |
 | *Architektur* Ordner | Ein unterstütztes *Architektur* Ordner kann vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: X86, X64, ARM "und" Neutral. Hinweis: Win32 X86 zugeordnet, und "anycpu" neutrale zugeordnet.<br /><br /> MSBuild sucht nur unter *\CommonConfiguration\neutral* für die Plattform-SDKs. |
-| *SDKManifest.xml* | Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **"DisplayName":** Der Wert, den die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** Das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, die das SDK ist ein Plattform-SDK und die Verweise hinzugefügt, daraus dürfen nicht kopiert werden, lokal.<br /><br /> **TargetFramework:** Dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** Dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** Dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten. |
+| *SDKManifest.xml* | Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Der Wert, den die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** Das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, die das SDK ist ein Plattform-SDK und die Verweise hinzugefügt, daraus dürfen nicht kopiert werden, lokal.<br /><br /> **TargetFramework:** Dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** Dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** Dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten. |
 
 ##  <a name="ExtensionSDKs"></a> Erweiterungs-SDKs  
  In den folgenden Abschnitten wird beschrieben, was Sie tun, um ein Erweiterungs-SDK bereitstellen müssen.  
@@ -75,7 +75,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 
 1.  Geben sie in einem Registrierungsschlüssel:  
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<Zielplattform > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\  
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\  
 
      und fügen Sie einen (Standard)-Unterschlüssel mit dem Wert des `<path to SDK><SDKName><SDKVersion>`.  
 
@@ -184,7 +184,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 12. CopyRedistToSubDirectory: Gibt an, wo die Dateien unter der *\redist* Ordner kopiert werden sollen, relativ zum Stammverzeichnis app-Paket (, also die **Paketspeicherort** ausgewählt, die der **App-Pakete erstellen** -Assistent) und Common Language Runtime-Layoutstamm. Der Standardspeicherort ist der Stamm des app-Pakets und **F5** Layout.  
 
-13. "DependsOn": Eine Liste der SDK-Identitäten, die die SDKs zu definieren, von denen dieses SDK abhängig ist. Dieses Attribut wird im Detailbereich des Verweis-Managers angezeigt.  
+13. DependsOn: Eine Liste der SDK-Identitäten, die die SDKs zu definieren, von denen dieses SDK abhängig ist. Dieses Attribut wird im Detailbereich des Verweis-Managers angezeigt.  
 
 14. MoreInfo: Die URL zur Webseite, die Hilfe und Weitere Informationen bereitstellt. Dieser Wert wird unter dem Link "Weitere Informationen" im rechten Bereich des Verweis-Managers verwendet.  
 

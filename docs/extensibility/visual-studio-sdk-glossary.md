@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b036142e119157d04dcf971a4bbbba984394956
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 140fc5cc5db1ff7cb0b92bccf664e9b3d4ed4baa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930471"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK-Glossar
 In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Dokumentation.  
@@ -60,7 +60,7 @@ In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLU
   Designer  
   Eine Programmierschnittstelle, die Benutzern zum Bearbeiten von Elementen der Benutzeroberfläche (Formulare, Schaltflächen und andere Steuerelemente) ermöglicht.  
   
-  Docdata-Objekt  
+  DocData  
   Ein COM-Objekt, das die zugrunde liegenden Daten eines Dokuments in einer Welt kapseln, wenn die Trennung von Dokument/Ansicht vorhanden ist (z. B. im Text-Editor-Fall, wäre dies der Textpuffer, der zugrunde liegenden alle Text-Editor-Ansichten). Wenn der EditorFactory dieses Objekt nicht bereitstellt, stellt die IDE eine in dessen Auftrag aufzubauen. Die Verantwortung für dieses Objekt wird zum Verwalten von Datenpersistenz und die Freigabe Semantik für mehrere Ansichten auf diesem gleichen `DocData`. Wenn die `DocData` -Objekt unterstützt die `IOleCommandTarget` -Schnittstelle ab, die sie in das Befehlsrouting der UIShell enthalten ist.  
   
   DocObject  
