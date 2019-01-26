@@ -8,26 +8,26 @@ helpviewer_keywords:
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78e34e919d912af09e1265ea5326189d4f3e7b89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935942"
 ---
 # <a name="test-area-5-change-source-control"></a>Testbereich 5: Quellcodeverwaltung ändern
 Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelement über die **Quellcodeverwaltung ändern** Befehl.  
 
  **Ändern Sie die Quellcodeverwaltung** Befehl bietet vier grundlegende Funktionen für den Benutzer:  
 
-- **Binden:**  
+- **Bind:**  
 
    Ermöglicht einem Benutzer zum Herstellen oder zum Wiederherstellen einer Datenquellen-Steuerelement-Verknüpfung zwischen einer Projektmappe oder eines Projekts und den Versionsspeicher.  
 
-- **Aufheben der Bindung:**  
+- **Unbind:**  
 
    Entfernt eine Projekt/Projektmappe aus der quellcodeverwaltung auf einer Basis pro Verbindung.  
 
@@ -55,7 +55,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
 | Binden Sie die Lösung, die nicht unter quellcodeverwaltung Stand | 1.  Erstellen Sie einen leeren Ordner, in der quellcodeverwaltung.<br />2.  Erstellen Sie ein Clientprojekt.<br />3.  Open **Quellcodeverwaltung ändern** (Dialogfeld) (**Datei**, **Quellcodeverwaltung**, **Quellcodeverwaltung ändern**).<br />4.  Binden Sie die Lösung an leerer Speicherort in der quellcodeverwaltung an.<br />5.  Klicken Sie auf **OK** schließen die **Quellcodeverwaltung ändern** Dialogfeld.<br />6.  Klicken Sie auf **Bindungsvorgang fortsetzen** im Dialogfeld zur Bestätigung.<br />7.  Klicken Sie auf **OK** in das Warnungsdialogfeld, wenn es angezeigt wird. | Projektmappe wird zur quellcodeverwaltung hinzugefügt.<br /><br /> Projektmappen- und Projektdateien werden ausgecheckt. |
 | Cancel-Bindung | 1.  Erstellen eines Projekts.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Öffnen Sie das Dialogfeld "Quellcodeverwaltung ändern".<br />4.  Heben Sie alle.<br />5.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Wenn dieser Schritt erfolgreich ist, können Sie mit nächsten Schritt fort.<br />6.  Öffnen Sie erneut die **Quellcodeverwaltung ändern** Dialogfeld.<br />7.  Binden Sie an nicht verknüpfte Speicherort.<br />8.  Klicken Sie auf **Abbrechen**. | `Result from Step 5:`<br /><br /> Die Lösung befindet sich nicht mehr unter quellcodeverwaltung<br /><br /> `Result from Step 8:`<br /><br /> Projektmappe wird noch nicht unter quellcodeverwaltung. |
 
-### <a name="case-5b-unbind"></a>Fall 5: Aufheben der Bindung  
+### <a name="case-5b-unbind"></a>Case 5b: Aufheben der Bindung  
  Aufheben der Bindung entfernt Code Steuerelement Quellinformationen aus Projekten und ihre Lösung. Die betroffenen Projekte und Projektmappen basieren auf einer Kombination aus Benutzerauswahl, und wie die Elemente zur quellcodeverwaltung hinzugefügt wurden.  
 
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  

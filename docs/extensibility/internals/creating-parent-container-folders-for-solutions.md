@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 531e1cbf3e8489fd68d2bbd94c9a66af3c817a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929938"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten containerordnern für Projektmappen
 In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben. Diese einzelne Stamm ist eine Super Unified-Stamm (SUR) aufgerufen.  
@@ -56,14 +56,14 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es wird empfohl
   
 |Projektmappe enthält|Auf Datenträger|Datenbank-Standardstruktur|  
 |-----------------------|-----------------------|--------------------------------|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> WEB2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < User_choice > / sln1<br /><br /> $/ < User_choice >/C/Web1<br /><br /> $/ < User_choice > / Web2|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < User_choice > / sln1<br /><br /> $/ < User_choice >/D/web1<br /><br /> $/ < User_choice >/sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < User_choice > / sln1<br /><br /> $/ < User_choice >/C/Web1<br /><br /> $/ < User_choice > / Web2|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < User_choice > / sln1<br /><br /> $/ < User_choice >/D/web1<br /><br /> $/<user_choice>/sln1/win1|  
   
  Die SUR-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang abgebrochen wird oder aufgrund eines Fehlers fehlschlägt. Sie werden nicht automatisch in "Abbrechen" oder fehlerbedingungen entfernt.  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] standardmäßig auf Version 1.1-Verhalten, wenn das Quellcodeverwaltungs-Plug-in nicht zurückgibt `SCC_CAP_CREATESUBPROJECT` und `SCC_CAP_GETPARENTPROJECT` funktionsflags. Darüber hinaus Benutzern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können auch die Version 1.1-Verhalten durch Festlegen des Werts von den folgenden Schlüssel wiederherstellen *DWORD: 00000001*:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
 ## <a name="see-also"></a>Siehe auch  
  [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
