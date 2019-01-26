@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa203c04c897a59a6b48471cb792a5680fe2e375
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013742"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü wird ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, im Textfeld oder Fensterhintergrund klickt. Befehle im Kontextmenü der Verhalten sich wie die Befehle auf anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der *VSCT* Datei, und es als Reaktion auf der rechten Maustaste angezeigt werden.  

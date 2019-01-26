@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926313"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988128"
 ---
 # <a name="command-handling"></a>Behandlung von Befehlen
 Als Editor verwenden, kann neue Befehle definieren. Befehle werden in der Regel in einem Menü, das auf einer Symbolleiste oder in einem Kontextmenü angezeigt.  
@@ -27,21 +27,21 @@ Als Editor verwenden, kann neue Befehle definieren. Befehle werden in der Regel 
 ## <a name="add-commands-to-the-editor-context-menu"></a>Hinzufügen von Befehlen zu Editor-Kontextmenüs  
  Um einen Befehl im Kontextmenü hinzugefügt haben, müssen Sie zunächst eine Gruppe von Menübefehlen, die einer bestimmten Gruppe definieren. Das folgende Beispiel stammt aus dem *VSCT* Datei, die als Teil der exemplarischen Vorgehensweise generiert [Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einer benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menü-Guid = "GuidCustomEditorCmdSet" Id = "IDMX_RTF" Priorität = "0 x 0000" Type = "Kontext" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Guid des übergeordneten = "GuidCustomEditorCmdSet" Id = "0" / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
- \<Zeichenfolgen >  
+ \<Strings>  
   
  \<ButtonText > CustomEditor Kontextmenü\</ButtonText >  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>CustomEditorContextMenu\</CommandName>  
   
- \</ Zeichenfolgen >  
+ \</Strings>  
   
  \</ Menü ">  
   
- \</-Menüs >  
+ \</Menus>  
   
  Der obige Text Fügt einen Befehl im Kontextmenü, mit dem Text **CustomEditor Kontextmenü**. Der Menü-GUID ist Teil der Befehlssatz, der mit diesem Editor erstellt wird. Der Typ ist "Kontext".  
   

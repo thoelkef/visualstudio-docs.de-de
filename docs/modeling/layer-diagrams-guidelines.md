@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13ffde9d399e0535f7cf6790f199ba4924156636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924422"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012182"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeitsdiagramme: Richtlinien
 
@@ -31,7 +31,7 @@ Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unte
 
 ## <a name="what-is-a-dependency-diagram"></a>Was ist ein Abhängigkeitsdiagramm?
 
-Wie einem herkömmlichen Architekturdiagramm identifiziert ein Abhängigkeitsdiagramm, die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Abhängigkeitsdiagramme: Verweis](../modeling/layer-diagrams-reference.md).
+Wie einem herkömmlichen Architekturdiagramm identifiziert ein Abhängigkeitsdiagramm, die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Abhängigkeitsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>So entwerfen oder aktualisieren Sie Ihre app mit Abhängigkeitsdiagrammen
 

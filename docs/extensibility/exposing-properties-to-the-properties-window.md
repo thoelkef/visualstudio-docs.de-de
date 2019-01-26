@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e696e1dc71af4dbcfc408e169c1a6e5ba8984921
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2e396afabe6ea54668e4dedbbf743f6b91a065e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921837"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998572"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Verfügbarmachen der Eigenschaften, um das Fenster "Eigenschaften"
 In dieser exemplarischen Vorgehensweise macht die öffentlichen Eigenschaften eines Objekts auf der **Eigenschaften** Fenster. Die Änderungen, die Sie, um diese Eigenschaften vornehmen werden angezeigt, der **Eigenschaften** Fenster.  

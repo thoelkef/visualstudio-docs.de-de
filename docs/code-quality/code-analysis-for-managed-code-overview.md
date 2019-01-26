@@ -10,15 +10,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d609413f0c0c955ef334e6b4e25719d59ab06e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987102"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030079"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die statische Codeanalyse für verwalteten Code in Visual Studio
 
@@ -29,7 +29,7 @@ Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstel
 Das Analysetool stellt die während einer Analyse durchgeführten Prüfungen als Warnmeldungen dar. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
 
 > [!NOTE]
-> Analyse von statischem Code wird für .NET Core und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Codeanalyse für ein Projekt für .NET Core oder .NET Standard als Teil von Msbuild ausführen, sehen Sie eine Fehlermeldung ähnlich **Fehler: CA0055: Plattform für konnte nicht identifiziert \<your.dll >**. Verwenden Sie zum Analysieren von Code in Projekten auf .NET Core oder .NET Standard [Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md) stattdessen.
+> Analyse von statischem Code wird für .NET Core und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Codeanalyse für ein Projekt für .NET Core oder .NET Standard als Teil von Msbuild ausführen, sehen Sie eine Fehlermeldung ähnlich **Fehler: CA0055 : Plattform für konnte nicht identifiziert \<your.dll >**. Verwenden Sie zum Analysieren von Code in Projekten auf .NET Core oder .NET Standard [Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md) stattdessen.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integration von IDE (integrierte Entwicklungsumgebung)
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d051809d02624f686f3ffc5408441d18e890854
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001484"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Unterstützen von Tools zum Durchsuchen von Symbolen
 **Objektkatalog**, **Klassenansicht**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche** Tools bieten Symbol Suchfunktionen in Visual Studio. Diese Tools Ansichten der hierarchischen Struktur von Symbolen angezeigt, und die Beziehungen zwischen den Symbolen in der Struktur angezeigt. Die Symbole können Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente, die in verschiedenen Komponenten enthalten darstellen. Zu den Komponenten zählen Visual Studio-Projekte, externe [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] Komponenten und Typbibliotheken (TLB). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  

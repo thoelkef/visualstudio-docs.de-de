@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914542"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004499"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, erhalten Sie möglicherweise Fehler, wenn die Engine die Vorlage auf den Quellcode oder transformiert bei der Kompilierung des generierten Codes. Die folgende exemplarische Vorgehensweise veranschaulicht einige der Dinge, die Sie tun können, um das Debuggen einer Textvorlage.
@@ -158,7 +158,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 
      (C#)
 
-     **Kompilieren von Transformation: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "enthält keine Definition für"ExampleModel"**
+     **Kompilieren von Transformation: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "enthält keine Definition für"ExampleModel"**
 
      (Visual Basic)
 
