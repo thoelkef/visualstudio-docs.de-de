@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c373e061ba7aa057babccd178354f4577b2c74fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0eb0d88d0e4cf2628ef2c9c8ed2c9070f25aac9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937963"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004772"
 ---
 # <a name="what39s-new-in-source-control"></a>Was&#39;Neues in der Quellcodeverwaltung
 In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] können Sie eine vollständig integriert Source-Control-Lösung bereitstellen, durch die Implementierung eines Quellcodeverwaltungs-VSPackage. Dieser Abschnitt beschreibt die Funktionen der quellcodeverwaltung VSPackages und bietet eine Übersicht über die Schritte für die Implementierung.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2a17c5c9f4121725ebfb9ca5a01f6209408c9a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdb218bb7b982d145d2c296edb68a00dff144349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031225"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Diese Schnittstelle stellt einen Prozess auf einem Port ausgeführt wird. Wenn der Port der lokale Port, dann ist `IDebugProcess2` in der Regel einen physischen Prozess auf dem lokalen Computer darstellt.  
@@ -53,7 +53,7 @@ IDebugProcess2 : IUnknown
 |[Trennen](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Trennt den Debugger aus dem Prozess.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ruft die System-Prozess-ID ab.|  
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ruft einen global eindeutigen Bezeichner für diesen Prozess ab.|  
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [ALS VERALTET MARKIERT. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [DEPRECATED. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Listet die Threads im Prozess ausgeführt wird.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Fordert an, die das nächste Programm, das Ausführen von Code in diesem Prozess beenden.|  
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ruft ab, der Port, den diesem Prozess ausgeführt wird.|  

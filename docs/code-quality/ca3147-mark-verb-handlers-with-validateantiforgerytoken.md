@@ -1,23 +1,23 @@
 ---
-title: 'CA3147: Verb-Handler mit ValidateAntiForgeryToken markieren'
+title: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 96660dfe1de6b4fb2490bd00b7ce408d0548ba67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 630d16b17f687842574348d86c1591a5433d9bfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037143"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Verb-Handler mit ValidateAntiForgeryToken markieren
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.
 
 |||
 |-|-|

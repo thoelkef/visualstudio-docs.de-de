@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a90f1fa098cfb60e6a3939332095dca5e52e3eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e71fb57a4890c29652473338391a0f7181d19ac0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852098"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010414"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Ausführung und Auswertung
 Debuggen einer Anwendung erfordert die Implementierung von Ausführung Steuerelement Features wie Funktionen schrittweise an Haltepunkten anhalten und Fortsetzen der Ausführung. Visual Studio-debugging Basen werden die Steuerung der Ausführung auf Ereignissen zwischen Debuggerkomponenten gesendet.  

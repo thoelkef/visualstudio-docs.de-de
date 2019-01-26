@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a05be5b08afa04dc8ca3e9c0a5eb2a9d015a66c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4590d8586667421c7d97e3010166e8b496ed7c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997792"
 ---
 # <a name="commandname-element"></a>CommandName-element
 Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Optionen** im Dialogfeld und klicken Sie in der **Befehle** Liste der **anpassen** Dialogfeld Box.  

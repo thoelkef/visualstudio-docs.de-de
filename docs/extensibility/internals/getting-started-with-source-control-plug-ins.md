@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829bf676a407fd166eda252cb4e6e2fbdb93fa41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d3d756984f27c66a74e1342aeac99c4fd076ff8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028431"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Erste Schritte mit Quellcodeverwaltungs-Plug-ins
 Um ein Quellcodeverwaltungs-Plug-in erstellen, müssen Sie eine DLL, die in der Quelle-Plug-in-API, definierten Funktionen implementiert, erstellen und dann zum Registrieren der DLL mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um es in der quellcodeverwaltung Code-Version für die Verwendung verfügbar zu machen.  

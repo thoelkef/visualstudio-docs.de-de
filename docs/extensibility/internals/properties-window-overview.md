@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3994c46d2786b86c01b75ee2d89a4e202a13847d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38579bcfee3aa390d9135006b8fc57f7b4b06b0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993302"
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für Objekte, die in der zwei Haupttypen von Windows verfügbar in ausgewählten der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Diese beiden Arten von Windows sind:  

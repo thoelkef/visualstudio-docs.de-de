@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930621"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041086"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und Projekt Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bestimmt die Registrierungsinformationen Ihrer Projekttypen zugeordnet, was für die anzuzeigenden in die **neues Projekt hinzufügen** und **neues Element hinzufügen** Dialogfelder.  
@@ -111,7 +111,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 
  \Form  
 
- \Web Seite  
+ \Web Page  
 
  \HelperFiles (enthält die in der Projektelemente mit mehreren Dateien verwendeten Dateien)  
 

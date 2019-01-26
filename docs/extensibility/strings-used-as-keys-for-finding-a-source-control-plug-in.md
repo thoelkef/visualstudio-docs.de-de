@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f245a1657883acb63e9721837063c6a8ef245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977023"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-Ins verwendete Zeichenfolgen
 Die nachfolgenden Zeichenfolgen sind die Schlüssel für den Zugriff auf die Registrierung, um Informationen über das Quellcodeverwaltungs-Plug-in finden.  
@@ -36,13 +36,13 @@ Die nachfolgenden Zeichenfolgen sind die Schlüssel für den Zugriff auf die Reg
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
 |`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Eine Quellcodedatei-Steuerelement|  
 |`SCC_NSE`|Namespace-Erweiterung|  
 |`SCC_NSE_PREFIX`|Protokoll-Präfix|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
-|`STR_SCCHELPCOLLECTION`|Helpcollection hinzu|  
+|`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   

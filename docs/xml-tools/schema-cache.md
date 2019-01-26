@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 574de335bdc7be6cbef658009645efbd6bc6620d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 131926011a12f397310fe6d4a70836a4972b48bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026813"
 ---
 # <a name="schema-cache"></a>Schemacache
 
@@ -27,23 +27,23 @@ In der folgenden Tabelle werden die mit dem XML-Editor installierten Schemata be
 
 | Dateiname | Beschreibung |
 |-| - |
-| *Catalog.xsd* | Schema für Schemakatalogdateien des XML-Editors. Weitere Informationen zu den Schemakatalogen finden Sie weiter unten. |
+| *catalog.xsd* | Schema für Schemakatalogdateien des XML-Editors. Weitere Informationen zu den Schemakatalogen finden Sie weiter unten. |
 | *DotNetConfig.xsd* | Schema für die Dateien "Web.config", "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild.xsd* | Schema für die MSBuild-Dateien stellen "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msbuild.xsd* | Schema für die MSBuild-Dateien stellen "<http://schemas.microsoft.com/developer/msbuild/2003>". |
 | *msdata.xsd* | Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, "urn:schemas-microsoft-com:xml-msdata". |
 | *msxsl.xsd* | Schema für Microsoft XSLT-Skriptblockerweiterungen, urn:schemas-microsoft-com:xslt. |
 | *SnippetFormat.xsd* | Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie in *%InstallDir%\VC#\Expansions*. |
 | *Soap1.1.xsd* | Schema für Simple Object Access Protocol (SOAP) 1.1 http://schemas.xmlsoap.org/soap/envelope/. |
 | *Soap1.2.xsd* | Schema für Simple Object Access Protocol 1.2. |
 | *SiteMapSchema.xsd* | Schema für XML-Datei mit ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL.xsd* | Schema für Web Service Description Language, http://schemas.xmlsoap.org/wsdl/. |
+| *wsdl.xsd* | Schema für Web Service Description Language, http://schemas.xmlsoap.org/wsdl/. |
 | *xenc.xsd* | Schema für XML-Verschlüsselung, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML.xsd* | Schema für XHTML http://www.w3.org/1999/xhtml. |
+| *xhtml.xsd* | Schema für XHTML http://www.w3.org/1999/xhtml. |
 | *xlink.xsd* | Schema für XLink1.0, http://www.w3.org/1999/xlink. |
-| *XML.xsd* | Schema, das XML: space "und" XML: lang-Attribute beschreibt http://www.w3.org/XML/1998/namespace. |
+| *xml.xsd* | Schema, das XML: space "und" XML: lang-Attribute beschreibt http://www.w3.org/XML/1998/namespace. |
 | *xmlsig.xsd* | Schema für XML Digital Signatures, http://www.w3.org/2000/09/xmldsig#. |
-| *XSDSchema.xsd* | Schema, beschreibt der XSD selbst http://www.w3.org/2001/XMLSchema. |
-| *XSLT.xsd* | Schema für XML Transforms, http://www.w3.org/1999/XSL/Transform. |
+| *xsdschema.xsd* | Schema, beschreibt der XSD selbst http://www.w3.org/2001/XMLSchema. |
+| *xslt.xsd* | Schema für XML Transforms, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Aktualisieren von Schemata im cache
  Der Editor lädt das Verzeichnis des Schemacache beim Laden des XML-Editorpakets und überwacht während der Ausführung alle Änderungen. Wenn ein Schema hinzugefügt wurde, wird es automatisch in einen Index bekannter Schemata im Speicher geladen. Wenn ein Schema entfernt wurde, wird es automatisch vom Index im Speicher entfernt. Wenn ein Schema aktualisiert wurde, wird es automatisch im speicherinternen Cache dieses Schemas für ungültig erklärt.

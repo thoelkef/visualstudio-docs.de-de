@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f43d18c-6bd1-4ddd-95ef-9550abd2ad09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d90b4d96b5c0ec9e53c68dd58325cdbc9a55fe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55c5c6061595b1cd48db9c91b670b8ade26e15de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031241"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.  
@@ -51,7 +51,7 @@ int Next(
  [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2ad435b4b70f2314822414c0cc0eb429c2478e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5fb28cdfe387c5eb82c79bdab5c848be727ffbb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988869"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 Ruft die Quelle des Bereichs dieses Kontexts Dokument ab.  
@@ -54,6 +54,6 @@ int GetSourceRange( 
  Um den Bereich nur Code enthaltenen Anweisungen in diesem Dokumentenkontext abzurufen, rufen die [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
+ [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

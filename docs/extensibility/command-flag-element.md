@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034154"
 ---
 # <a name="command-flag-eelement"></a>Befehlsflag Eelement
 Ändert das übergeordnete Element.  
@@ -47,7 +47,7 @@ ms.locfileid: "53836987"
 |DontCache|Die Entwicklungsumgebung ist keine Zwischenspeicherung der `QueryStatus` Methodenergebnisse für diesen Befehl.<br /><br /> Für ein Menü wird hier ein Menücontroller nicht auf den Text der Einträge im cache. Verwenden Sie dieses Flag an, wenn das Menü enthält dynamische Elemente oder Elemente, die dynamischen Text enthalten.<br /><br /> Gültig für: `Button`, `Menu`|  
 |DynamicItemStart|Gibt den Anfang einer dynamischen Liste. Dies ermöglicht die Umgebung, die eine Liste erstellen, indem Sie nacheinander Aufrufen der `QueryStatus` Methode für Listenelemente, bis das Flag OLECMDERR_E_UNSUPPORTED zurückgegeben wird. Dies funktioniert gut für Elemente, z. B. die meisten vor kurzem (MRU) und Fensterlisten verwendet.<br /><br /> Gültig für: `Button`|  
 |DynamicVisibility|Die Sichtbarkeit des Befehls kann geändert werden, über die `QueryStatus` Methode oder über eine Kontext-GUID, der Bestandteil der `VisibilityConstraints` Abschnitt.<br /><br /> Gilt für Befehle, die angezeigt werden, in Menüs und Symbolleisten des Toolfensters, jedoch nicht auf der obersten Ebene Symbolleisten, die auf das Hauptfenster angezeigt werden. Auf oberster Ebene Symbolleistenelemente können deaktiviert, jedoch nicht ausgeblendet werden, wenn das Flag OLECMDF_INVISIBLE zurückgegeben wird, aus der `QueryStatus` Methode. Symbolleistenbefehle, die Symbolleisten des Toolfensters angezeigt werden, können ausgeblendet werden.<br /><br /> In einem Menü gibt dieses Flag auch, dass es automatisch ausgeblendet werden soll, wenn alle seine Member ausgeblendet sind. Dieses Flag wird in der Regel Untermenüs zugewiesen, da dies bereits über Menüs der obersten Ebene verfügen.<br /><br /> Dieses Flag kombiniert werden soll, mit der `DefaultInvisible` Flag.<br /><br /> Gültig für: `Button`, `Combo`, `Menu`|  
-|Filter-Schlüssel|Finden Sie im Thema "Filtern von Schlüssel" unter [Combo-Element](../extensibility/combo-element.md).<br /><br /> Gültig für: `Combo`|  
+|FilterKeys|Finden Sie im Thema "Filtern von Schlüssel" unter [Combo-Element](../extensibility/combo-element.md).<br /><br /> Gültig für: `Combo`|  
 |FixMenuController|Wenn Sie diesen Befehl auf ein Menücontroller positioniert ist, ist der Befehl immer die Standardeinstellung; Dies bedeutet, ist der Befehl ausgewählt, wenn die Controller-Menüschaltfläche selbst ausgewählt ist. Wenn der Menücontroller verfügt die `TextIsAnchorCommand` flag so festgelegt, und klicken Sie dann die Menücontroller nimmt auch den Text des Befehls, die die `FixMenuController` Flag.<br /><br /> Nur ein Befehl für ein Menücontroller müssen die `FixMenuController` Flag. Wenn mehr als einen Befehl so gekennzeichnet ist, wird mit dem letzte Befehl im Menü der Standardbefehl.<br /><br /> Gültig für: `Button`|  
 |IconAndText|Zeigen Sie im Menü und Symbolleiste ein Symbol und Text.<br /><br /> Gültig für: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Automatische Vervollständigung ist deaktiviert.<br /><br /> Gültig für: `Combo`|  

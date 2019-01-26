@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b20d710b6a2ec51567fdffeeffeecde54c0f524
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923639"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983689"
 ---
 # <a name="source-control-plug-ins"></a>Quellcodeverwaltungs-Plug-Ins
 Der Referenzabschnitt Source Control-Plug-in SDK enthält die vollständige Benutzeroberfläche-Spezifikation, mit dem Quellcodeverwaltungs-Systeme integriert werden kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Es gibt an, die Syntax und Semantik der verschiedenen Funktionen und Daten, die das Quellcodeverwaltungs-Plug-in implementieren muss, um die Kommunikation mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE).  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989951"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Fügen Sie Elemente hinzu, um das Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dialogfeld beginnt mit dem Registrierungsschlüssel. Siehe die folgenden Registrierungseinträge, die **AddItemTemplates** Abschnitt enthält den Pfad und Name des Verzeichnisses in der die Elemente zur Verfügung gestellt der **neues Element hinzufügen** Dialogfeld abgelegt werden.  
@@ -27,7 +27,7 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 
  Die erste GUID ist die CLSID für Projekte dieses Typs. die zweite GUID gibt an, den registrierten Projekttyp für die Vorlagen für Elemente hinzufügen:  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 
@@ -38,8 +38,8 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 
 | name | Typ | Daten (aus *RGS* Datei) | Beschreibung |
 |------------------|-----------| - | - |
-| @ (Standard) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | Ressourcen-ID für **Element hinzufügen** Vorlagen. |
-| Val TemplatesDir | REG_SZ | TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Pfad der Projektelemente angezeigt, die im Dialogfeld für die **neues Element hinzufügen** Assistenten. |
+| @ (Standard) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | Ressourcen-ID für **Element hinzufügen** Vorlagen. |
+| Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | Pfad der Projektelemente angezeigt, die im Dialogfeld für die **neues Element hinzufügen** Assistenten. |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Bestimmt die Sortierreihenfolge im Knoten "Struktur" der Dateien angezeigt, der **neues Element hinzufügen** Dialogfeld. |
 
 > [!NOTE]

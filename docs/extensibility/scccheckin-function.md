@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a211c7e3c338c962c75d31871515c4398dd04406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998468"
 ---
 # <a name="scccheckin-function"></a>SccCheckin-Funktion
 Diese Funktion überprüft im zuvor ausgecheckten Dateien auf das Quellcodeverwaltungssystem, die Änderungen zu speichern und Erstellen einer neuen Version. Diese Funktion wird mit einem Zähler und ein Array von Namen der Dateien eingecheckt werden aufgerufen.  
