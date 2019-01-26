@@ -7,16 +7,16 @@ helpviewer_keywords:
 - layer models, deploying extensions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8614df4c8e7b3a640f7ba488ad18384886b56afe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e39463004ddaa30c79cd944710aef56ba1e5498
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834307"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029777"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
 
@@ -62,7 +62,7 @@ Team Foundation Server-Servern müssen normalerweise keine Visual Studio install
 
     -   Wenn Sie den Build zur Ausführung im interaktiven Modus als einen bestimmten Benutzer konfiguriert haben, können Sie nur für diesen Benutzer installieren:
 
-         %LocalAppData%\Microsoft\VisualStudio\\[Version] \Extensions\Microsoft
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
 2.  Erweitern Sie jede VSIX-Datei in einen Ordner am gleichen Speicherort:
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 361e23ebe7f9311139a96a1188e3e13474c93f19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee84291be79127af4ded052f9c16e17f426bd134
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838686"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026436"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Diese Methode sucht einen Alias, erhält einen Namen an. Alle Aliase Suchen in der Anwendung.  

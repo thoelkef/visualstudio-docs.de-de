@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999469"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio-Vorlage manifest Schemareferenz
 Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman*) Dateien, die generiert werden, die für Visual Studio Projekt- oder Elementvorlagen. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.  
@@ -30,7 +30,7 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
   
 -   **Version**: Eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.  
   
--   **Gebietsschema**: Eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.  
+-   **Locale**: Eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
@@ -51,7 +51,7 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
   
 -   **RelativePathOnDisk**:  Der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zu dem Verzeichnis, das die Vorlagendateien enthält. Vorlagen als "bereitgestellt" eine *ZIP* -Datei in diesen Pfad muss der Pfad zu der *ZIP* Datei.  
   
--   ** VSTemplateHeader: Ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.  
+-   **VSTemplateHeader: Ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.  
   
 ### <a name="parent-element"></a>Übergeordnetes Element  
  **VSTemplateManifest**  

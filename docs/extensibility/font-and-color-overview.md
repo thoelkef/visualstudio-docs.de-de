@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e73d021e89ea59ada88e79ce3235e7f08f75b10f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984001"
 ---
 # <a name="font-and-color-overview"></a>Übersicht über die Schriftart und Farbe
 In diesem Thema wird erläutert, Text-Schriftart und Farbe Einstellungen in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Es stellt auch die Konzepte der Kategorien "und" Elemente anzeigen, und es wird beschrieben, wie VSPackages und den Haupteditor von Text-Attribute.  

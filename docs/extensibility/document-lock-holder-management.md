@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 320f394aa08a3be7f1dfc571b3aa80aaecadead6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983899"
 ---
 # <a name="document-lock-holder-management"></a>Verwaltung von Dokumentsperren
 Der ausgeführten Dokumententabelle (RDT) verwaltet die Anzahl der geöffneten Dokumente und bearbeitungssperren, die Sie. Sie können eine Bearbeitungssperre in einem Dokument im RDT platzieren, wenn sie programmgesteuert im Hintergrund ohne dass der Benutzer sehen ein geöffnetes Dokument in einem Dokumentfenster bearbeitet wird. Diese Funktion wird häufig von Designern verwendet werden, die mehrere Dateien über eine grafische Benutzeroberfläche zu ändern.

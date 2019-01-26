@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06bfb109ce58ee822a32bc3a92d7e6e45578fb05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005503"
 ---
 # <a name="manage-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und ermöglichen es Entwicklern, Code und anderen Ressourcen auf beiden Plattformen verwenden. Freigegebenen Code und Ressourcen werden in einem freigegebenen Projekt enthalten, während die plattformspezifischen Code und Ressourcen in separate Projekte für Windows und die andere für Windows Phone gespeichert werden. Weitere Informationen zu universellen Windows-apps finden Sie unter [universelle Windows-apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Visual Studio-Erweiterungen, die Projekte zu verwalten sollten bedenken, dass universelle Windows-app-Projekten eine Struktur verfügen, die von apps für mehrere Plattformen abweicht. In dieser exemplarischen Vorgehensweise veranschaulicht das freigegebene Projekt navigieren und Verwalten der freigegebenen Elemente.  
