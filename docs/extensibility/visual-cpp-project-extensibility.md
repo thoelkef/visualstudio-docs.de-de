@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013703"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -47,7 +47,7 @@ Diese Dateien definieren wenig selbst. Stattdessen importieren sie die anderen D
 
    Die Build-Architektur ist mit dem Namen "Platform" Historisch bedingt.
 
-   Beispiele: Win32 "," X86, X64, ARM   
+   Beispiele: Win32, x86, x64, ARM   
 
 - `$(PlatformToolset)`
 
@@ -61,11 +61,11 @@ Diese Eigenschaftswerte Geben Sie die Namen von Ordnern unter dem `$(VCTargetsPa
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Plattformen*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\PlatformToolsets*\\  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
 > &nbsp;&nbsp;&nbsp;&nbsp;Plattformen\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(wird verwendet, wenn `$(ApplicationType)` leer ist, für Windows Desktop-Projekte)  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\PlatformToolsets*\\  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
 
 ### <a name="add-a-new-platform-toolset"></a>Fügen Sie ein neues Plattformtoolset hinzu.
@@ -98,7 +98,7 @@ Um einen neuen Anwendungstyp hinzuzufügen, erstellen Sie eine *MyApplicationTyp
 Eine vereinfachte Struktur von Direktiven für Dateien in Microsoft C++-Eigenschaften und-Zielen sieht wie folgt aus:
 
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\ *"Microsoft.Common.props"*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*Standard*\\\*. *Eigenschaftendatei*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\*Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props*  
@@ -108,9 +108,9 @@ Eine vereinfachte Struktur von Direktiven für Dateien in Microsoft C++-Eigensch
 Windows-Desktop-Projekten nicht definieren `$(ApplicationType)`, sodass sie nur importieren
 
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\ *"Microsoft.Common.props"*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*Standard*\\\*. *Eigenschaftendatei*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Plattformen*\\`$(Platform)`\\*Platform.default.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*  
 
 Wir verwenden die `$(_PlatformFolder)` Eigenschaft zum Speichern der `$(Platform)` Ordnerpfade Plattform. Diese Eigenschaft ist 
@@ -129,7 +129,7 @@ Die Props-Dateien werden in dieser Reihenfolge importiert:
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Eigenschaftendatei*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*\PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *Eigenschaftendatei*  
 
 Targets-Dateien werden in dieser Reihenfolge importiert:
@@ -139,7 +139,7 @@ Targets-Dateien werden in dieser Reihenfolge importiert:
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Ziele*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*\PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *Ziele*  
 
 Wenn Sie einige Standardeigenschaften für das Toolset definieren müssen, können Sie Dateien in die entsprechenden ImportBefore und ImportAfter Ordner hinzufügen.
@@ -158,7 +158,7 @@ Obwohl ein Toolset für den gesamten Buildprozess überschrieben werden kann, m�
 
    - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\ *"Microsoft.Common.targets"*
+   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -480,10 +480,10 @@ Die `PageTemplate` Attribut wird definiert, wie die Regel angezeigt wird, in der
 
 | Attribut | Beschreibung |
 |------------| - |
-| `generic` | Alle Eigenschaften werden auf einer Seite unter Kategorieüberschriften angezeigt.<br/>Die Regel kann für sichtbar sein `Project` und `PropertySheet` Kontexte, aber nicht `File`.<br/><br/> Beispiel: `$(VCTargetsPath)`\\*1033*\\ *"debugger_general.xml"* |
+| `generic` | Alle Eigenschaften werden auf einer Seite unter Kategorieüberschriften angezeigt.<br/>Die Regel kann für sichtbar sein `Project` und `PropertySheet` Kontexte, aber nicht `File`.<br/><br/> Beispiel: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Kategorien werden als Unterseiten angezeigt.<br/>Die Regel kann in allen Kontexten angezeigt werden: `Project`, `PropertySheet` und `File`.<br/>Die Regel in den Projekteigenschaften angezeigt wird, nur, wenn das Projekt Elemente mit der `ItemType` in definierten `Rule.DataSource`, es sei denn, der den Namen der Regel enthalten ist, in der `ProjectTools` Elementgruppe.<br/><br/>Beispiel: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | Die Seite wird als Teil der Seite "Debuggen" angezeigt.<br/>Kategorien werden derzeit ignoriert.<br/>Name der Regel sollte des Debuggen Startprogramm MEF-Objekts übereinstimmen `ExportDebugger` Attribut.<br/><br/>Beispiel: `$(VCTargetsPath)`\\*1033*\\*Debugger\_lokalen\_windows.xml* |
-| *custom* | Benutzerdefinierte Vorlage. Der Name der Vorlage sollte übereinstimmen der `ExportPropertyPageUIFactoryProvider` Attribut der `PropertyPageUIFactoryProvider` MEF-Objekt. Finden Sie unter **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Beispiel: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
+| `debugger` | Die Seite wird als Teil der Seite "Debuggen" angezeigt.<br/>Kategorien werden derzeit ignoriert.<br/>Name der Regel sollte des Debuggen Startprogramm MEF-Objekts übereinstimmen `ExportDebugger` Attribut.<br/><br/>Beispiel: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
+| *custom* | Benutzerdefinierte Vorlage. Der Name der Vorlage sollte übereinstimmen der `ExportPropertyPageUIFactoryProvider` Attribut der `PropertyPageUIFactoryProvider` MEF-Objekt. See **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Beispiel: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Wenn die Regel eine der Eigenschaftenraster-basierte Vorlagen verwendet, können sie diese Erweiterbarkeitspunkte für die zugehörigen Eigenschaften:
 

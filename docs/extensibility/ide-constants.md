@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929551"
 ---
 # <a name="ide-constants"></a>IDE-Konstanten
 
@@ -75,7 +75,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse enthält die Konstanten, di
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Eine Konstante, die speziell für Visual Studio ist, der angibt, dass ein Cookie nicht festgelegt wurde.|
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Eine Visual Studio-Element-ID, die das Fehlen eines Projektelements darstellt. Dieser Wert wird verwendet, wenn keine aktuelle Auswahl vorhanden ist.|
 |[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Eine Visual Studio-Element-ID, die den Stamm einer Projekthierarchie darstellt und wird verwendet, um die gesamte Hierarchie, im Gegensatz zu einem einzelnen Element zu identifizieren.|
-|[VSITEMID. Auswahl](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Eine Visual Studio-Element-ID, die darstellt, die aktuell ausgewählte Element oder Elemente, die den Stamm der Hierarchie enthalten können.|
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Eine Visual Studio-Element-ID, die darstellt, die aktuell ausgewählte Element oder Elemente, die den Stamm der Hierarchie enthalten können.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Beschreibt, welche Komponente der IDE einfach, im ausgewählt wurde ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> aufrufen, z. B.
@@ -83,10 +83,10 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse enthält die Konstanten, di
 |Konstante|Wert|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
-|[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0 x 4|
+|[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
 |[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
 |[SelectionElement.UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
-|[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0 x 5|
+|[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
 |[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
 
 ## <a name="vsselelemid"></a>VSSELELEMID

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189f524ff96c8ad353425820e9f3931364951774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e02c7e7ff030d2fd2bb9de86dfd1e7211f8de1f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946710"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementieren und Registrieren eines portanbieters
 Die Rolle eines portanbieters wird zum Nachverfolgen und Bereitstellen von Ports, die wiederum Prozesse zu verwalten. Wenn ein Port werden erstellt muss, wird Anschlusslieferanten instanziiert die anschlusslieferant GUID (die sitzungsbasierter Debug-Manager [SDM] verwenden, den vom Benutzer ausgewählten oder Anschlusslieferanten vom Projektsystem angegeben Anschlusslieferanten) CoCreate mit. Klicken Sie dann aufruft, das SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) um festzustellen, ob alle Ports hinzugefügt werden können. Wenn ein Port hinzugefügt werden kann, ein neuer Port von Aufrufen angefordert wird [Port hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) und an Sie übergeben eine [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , die den Port beschreibt. `AddPort` Gibt einen neuen Port, dargestellt durch ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle.  

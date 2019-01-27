@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3129fe384dc434f10024336a3e53864babcd5eb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d001e324352c566d71e66ae26d769cc8f3c2f644
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011517"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>QueryEditQuerySave (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editoren können die Abfrage bearbeiten Abfrage speichern (QEQS) Ereignisse senden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcode-Verwaltungsstub implementiert den QEQS-Dienst, sodass der Empfänger von Ereignissen von QEQS. Diese Ereignisse werden dann an das derzeit aktive Quellcodeverwaltungs-VSPackage delegiert. Die aktiven Datenquellen-Steuerelement, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
   
-## <a name="queryeditquerysave-events"></a>QueryEditQuerySave-Ereignisse  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave Events  
  Das Quellcodeverwaltungs-VSPackage muss die QEQS-Ereignisse behandeln, durch die Implementierung der `IVsQueryEditQuerySave2` Schnittstelle und die erforderlichen Methoden. Es folgt eine kurze Beschreibung der beiden Methoden, die das VSPackage mindestens implementieren müssen. Die tatsächliche Implementierung muss in Übereinstimmung mit der Logik des Quellmodells Steuerelement sein.  
   
 ### <a name="queryeditfiles-method"></a>QueryEditFiles-Methode  
