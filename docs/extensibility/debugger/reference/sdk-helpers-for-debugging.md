@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951731"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen für die Implementierung von Debug-Engines, ausdrucksauswertung und Symbol-Anbieter in C++.  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Legen Sie den anzuzeigenden Nonuser Code ungleich NULL.|  
 |metricJustMyCodeStepping|Legen Sie den ungleich NULL, um anzugeben, dass die schrittweise Ausführung nur im Benutzercode auftreten kann.|  
 |metricCLSID|Die CLSID für ein Objekt eines bestimmten Typs für die Metrik.|  
-|"Metricname"|Benutzerfreundlicher Name für ein Objekt eines bestimmten Typs für die Metrik.|  
+|metricName|Benutzerfreundlicher Name für ein Objekt eines bestimmten Typs für die Metrik.|  
 |metricLanguage|Name der Sprache.|  
   
 ## <a name="registry-locations"></a>Registrierung  
@@ -422,7 +422,7 @@ HRESULT EnumMetricSections(
   
  Header: includes\dbgmetric.h  
   
- -Bibliothek: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d076b7d02b5acec811ed4789a3fe1711f5dca6e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e48df9e255fc433a9e7a5f15e1ed9923b47b7284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013982"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Bereitstellen von Visual Studio-Erweiterungen
 Nachdem Sie die Entwicklung Ihrer Erweiterungs abgeschlossen haben, können Sie auf anderen Computern installieren, mit Ihren Freunden und Kollegen freigeben oder veröffentlichen Sie sie in Visual Studio Marketplace. In diesem Abschnitt erläutern wir all die Dinge zu tun, um das Veröffentlichen und verwalten Ihre Erweiterung benötigten: Arbeiten mit der VSIX-Dateien, die Veröffentlichung, zu lokalisieren und zu aktualisieren.  
