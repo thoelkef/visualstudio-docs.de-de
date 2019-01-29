@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946161"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228018"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Threads in Visual Studio-Debugger mithilfe des Fensters Threads anzeigen
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads in Visual Studio-Debugger mithilfe des Fensters Threads (C#, Visual Basic, C++)
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können. Schrittweise Anleitung zur Verwendung der **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Verwenden des Fensters „Threads“ 
@@ -38,11 +38,11 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - **Kennzeichnen** In diesem Artikel noch nicht gekennzeichneten können Sie einen Thread markieren, den besondere Aufmerksamkeit werden soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md)  
   
-- Aktueller Thread In diesem Artikel noch nicht gekennzeichneten gibt mit ein gelber Pfeil für den aktuellen Thread. Eine Gliederung Pfeil gibt den aktuellen Debuggerkontext für eine nicht-aktuellen Threads an.
+- **Aktuellen Thread**: In diesem Artikel noch nicht gekennzeichneten ein gelber Pfeil gibt den aktuellen Thread. Eine Gliederung Pfeil gibt den aktuellen Debuggerkontext für eine nicht-aktuellen Threads an.
   
-- **ID** Zeigt an, die für jeden Thread-ID zurück.  
+- **ID**: Zeigt an, die für jeden Thread-ID zurück.  
   
-- Verwaltete ID Zeigt die verwalteten IDs für verwaltete Threads.  
+- **Verwaltete ID**: Zeigt die verwalteten IDs für verwaltete Threads.  
   
 - **Kategorie**. Zeigt die Kategorie der Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf-Handler oder Arbeitsthreads. In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.  
   
@@ -50,17 +50,17 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - **location**: Zeigt an, wobei der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
   
-- Priorität Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt an, die die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.  
+- **Priorität**: eine erweiterte Spalte (standardmäßig ausgeblendet), die anzeigt, die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.  
   
-- Affinitätsmaske Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt, dass die Prozessor-Affinitätsmaske für jeden Thread. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.  
+- **Affinitätsmaske**: eine erweiterte Spalte (standardmäßig ausgeblendet), die der Prozessor-Affinitätsmaske für jeden Thread anzeigt. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.  
   
-- Angehaltene Anzahl Eine erweiterte Spalte (standardmäßig ausgeblendet), die die Anzahl die angehaltene anzeigt. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Weitere Informationen zu der Anzahl der angehaltenen, finden Sie unter [Einfrieren und Reaktivieren von Threads](#freeze-and-thaw-threads).  
+- **Unterbrechungszähler**: eine erweiterte Spalte (standardmäßig ausgeblendet), die die Anzahl die angehaltene anzeigt. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Weitere Informationen zu der Anzahl der angehaltenen, finden Sie unter [Einfrieren und Reaktivieren von Threads](#freeze-and-thaw-threads).  
   
-- Prozessname Eine erweiterte Spalte (standardmäßig ausgeblendet), in dem den Prozess angezeigt, zu dem jeder Thread gehört. Die Daten in dieser Spalte können nützlich sein, wenn Sie viele Prozesse debuggen.  
+- **Prozessname**: eine erweiterte Spalte (standardmäßig ausgeblendet), in dem den Prozess angezeigt, zu der jeder Thread gehört. Die Daten in dieser Spalte können nützlich sein, wenn Sie viele Prozesse debuggen.  
 
-- process id Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt an, die die Prozess-ID, zu der jeder Thread gehört. 
+- **Prozess-ID**: eine erweiterte Spalte (standardmäßig ausgeblendet), die der Prozess zeigt die ID, zu der jeder Thread gehört. 
 
-- Transportqualifizierer Eine erweiterte Spalte (standardmäßig ausgeblendet) eindeutig identifiziert, den Computer mit dem der Debugger verbunden ist. 
+- **Transportqualifizierer**: eine erweiterte Spalte (standardmäßig ausgeblendet), die den Computer eindeutig mit dem der Debugger verbunden ist. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>So zeigen Sie das Fenster Threads im Unterbrechungs- oder Ausführmodus an  
   
