@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48322adffff68d1eecb0d44da7e8f78d39d82203
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd05cbfb1cd6bf158a0e491d87903fd43fb0bbc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043296"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrieren von .NET Framework-Erweiterungen
 Sie können eine Assembly entwickeln, die eine bestimmte Version von .NET Framework erweitert. Damit die Assembly im Dialogfeld **Verweise hinzufügen** in Visual Studio angezeigt wird, müssen Sie den Ordner, in dem sie enthalten ist, zur Systemregistrierung hinzufügen.  
