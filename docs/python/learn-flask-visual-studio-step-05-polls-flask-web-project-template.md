@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ecbfb1c9b399327bede2fe479f0518a26e107e7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 2b265224198cff87f808a946d4fa1397ec1db0e7
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060815"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231921"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Flask-Webprojektvorlage für Umfragen
 
@@ -355,6 +355,6 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Stellen Sie die Web-App auf einem Produktionsserver bereit, z.B. Azure App Service. Siehe [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- Fügen Sie eine Repositoryimplementierung hinzu, die einen anderen Datenspeicher auf Produktionsebene verwendet, z.B. MySQL, PostgreSQL und SQL Server (alle können in Azure gehostet werden). Sie können auch die [Azure SDK für Python](azure-sdk-for-python.md) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs sowie mit Cosmos DB zu arbeiten.
+- Fügen Sie eine Repositoryimplementierung hinzu, die einen anderen Datenspeicher auf Produktionsebene verwendet, z.B. MySQL, PostgreSQL und SQL Server (alle können in Azure gehostet werden). Sie können auch die [Azure SDK für Python](/python/azure/?view=azure-python) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs sowie mit Cosmos DB zu arbeiten.
 
 - Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure DevOps ein. Zusätzlich zur Arbeit mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie ein Azure DevOps-Projekt automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts) sowie in der allgemeinen [Azure DevOps-Dokumentation](/azure/devops/?view=vsts).

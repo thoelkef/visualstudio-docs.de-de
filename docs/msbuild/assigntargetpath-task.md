@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a711c20198b117b53536f9b0fe043a468eb8a0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f15e11f563a96c9376f7c50b6db7de83abee396e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001708"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath-Aufgabe
 Diese Aufgabe akzeptiert eine Liste von Dateien und fügt `<TargetPath>`-Attribute hinzu, wenn diese nicht bereits angegeben wurden.  

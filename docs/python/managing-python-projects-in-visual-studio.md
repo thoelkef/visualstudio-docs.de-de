@@ -1,22 +1,22 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
 description: Projekte in Visual Studio verwalten Abhängigkeiten zwischen Dateien sowie die Komplexität von Beziehungen in einer Anwendung.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825291"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231934"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -113,7 +113,7 @@ Verknüpfte Dateien werden unter folgenden Bedingungen ignoriert:
 
 Klicken Sie zum Hinzufügen eines vorhandenen Elements als Link mit der rechten Maustaste auf den Ordner im Projekt, dem Sie die Datei hinzufügen möchten, und wählen Sie **Hinzufügen** > **Vorhandenes Element** aus. Wählen Sie im daraufhin angezeigten Dialogfeld eine Datei aus, und wählen Sie **Als Link hinzufügen** aus der Dropdownliste der Schaltfläche **Hinzufügen**. Sofern keine in Konflikt stehenden Dateien vorhanden sind, wird mit diesem Befehl ein Link im ausgewählten Ordner erstellt. Allerdings wird der Link nicht hinzugefügt, wenn bereits eine Datei mit dem gleichen Namen vorhanden ist, oder ein Link zu dieser Datei bereits im Projekt vorhanden ist.
 
-Wenn Sie versuchen, eine Verknüpfung zu einer Datei zu erstellen, die bereits im Projektordner vorhanden ist, wird sie als normale Datei und nicht als Link hinzugefügt. Um eine Datei in einen Link zu konvertieren, wählen Sie **Datei** > **Speichern unter** aus, um die Datei an einem Speicherort außerhalb der Projekthierarchie zu speichern; Visual Studio konvertiert sie automatisch in einen Link. Auf ähnliche Weise kann ein Link mit **Datei** > **Speichern unter** zurückkonvertiert werden, um die Datei an beliebiger Stelle in der Projekthierarchie zu speichern. 
+Wenn Sie versuchen, eine Verknüpfung zu einer Datei zu erstellen, die bereits im Projektordner vorhanden ist, wird sie als normale Datei und nicht als Link hinzugefügt. Um eine Datei in einen Link zu konvertieren, wählen Sie **Datei** > **Speichern unter** aus, um die Datei an einem Speicherort außerhalb der Projekthierarchie zu speichern; Visual Studio konvertiert sie automatisch in einen Link. Auf ähnliche Weise kann ein Link mit **Datei** > **Speichern unter** zurückkonvertiert werden, um die Datei an beliebiger Stelle in der Projekthierarchie zu speichern.
 
 Wenn Sie eine verknüpfte Datei im **Projektmappen-Explorer** verschieben, wird der Link verschoben, aber die eigentliche Datei ist nicht betroffen. Ebenso wird beim Löschen eines Links nur der Link entfernt, ohne Auswirkung auf die Datei.
 

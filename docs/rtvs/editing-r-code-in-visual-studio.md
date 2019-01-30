@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918601"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Bearbeiten von R-Code in Visual Studio
 
@@ -40,7 +40,7 @@ Navigieren Sie unter [Editor-Optionen](#editor-options) zur Einstellung **Erweit
 
 ## <a name="edit-and-organize-code"></a>Bearbeiten und Organisieren von Code
 
-Bei der Codeeingabe stellt RTVS die automatische Vervollständigung bereit, wie Sie auf der [IntelliSense](r-intellisense.md) nachlesen können. Außerdem nimmt es automatische Formatierungen vor, wie etwa das Schließen von Klammern: 
+Bei der Codeeingabe stellt RTVS die automatische Vervollständigung bereit, wie Sie auf der [IntelliSense](r-intellisense.md) nachlesen können. Außerdem nimmt es automatische Formatierungen vor, wie etwa das Schließen von Klammern:
 
 ![Animation der Inlineformatierung](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Optionen auf der Registerkarte **R** > **Erweitert** sind für RTVS spezifisch:
 | | Vervollständigungsliste beim ersten Zeichen | Ein | Zeigt eine Vervollständigungsliste bei den ersten eingegebenen Zeichen. Wenn dies deaktiviert ist, wird eine Vervollständigungsliste mit **Bearbeiten** > **IntelliSense** > **Member auflisten** angezeigt (**STRG**+**J**). |
 | | Vervollständigungsliste beim Drücken der **TAB-TASTE** | Aus | Ruft eine Vervollständigungsliste auf, wenn Sie ein oder mehrere Zeichen eingeben und dann die **TAB-TASTE** drücken. |
 | | Match gibt den Argumentnamen teilweise ein | Aus | Wenn Sie in einem Funktionsaufruf Argumentnamen eingeben, zeigt die Signaturhilfe eine Beschreibung der Arguments an, dass am besten passt. |
-| Interaktives Fenster | Syntax-Prüfung in der R-Konsole | Aus | Wendet die Syntaxüberprüfung im interaktiven Fenster an Die Syntaxüberprüfung funktioniert bei Anweisungen mit mehreren Zeilen möglicherweise nicht ordnungsgemäß. | 
+| Interaktives Fenster | Syntax-Prüfung in der R-Konsole | Aus | Wendet die Syntaxüberprüfung im interaktiven Fenster an Die Syntaxüberprüfung funktioniert bei Anweisungen mit mehreren Zeilen möglicherweise nicht ordnungsgemäß. |
 | Gliedern | Code outlining | Ein | Erstellt automatisch reduzierbare Codebereiche für Bereiche mit Anweisungen mit mehreren Zeilen |
 | Syntax check | Syntaxfehler anzeigen | Ein | Aktiviert die automatische Syntaxüberprüfung von Code |

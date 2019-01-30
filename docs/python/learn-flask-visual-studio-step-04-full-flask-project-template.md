@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060828"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927514"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
@@ -163,7 +163,7 @@ Die einzelnen Seitenvorlagen *about.html*, *contact.html* und *index.html* erwei
 
 Wie am Anfang dieses Artikels bereits erwähnt wurde, ist die Vorlage „Flask/Jade-Webprojekt“ in Visual Studio enthalten, mit der eine Anwendung erstellt wird, die optisch dem entspricht, was mit der Vorlage „Flask-Webprojekt“ generiert wird. Der Hauptunterschied besteht darin, dass diese die Jade-Vorlagen-Engine verwendet, die eine Erweiterung von Jinja darstellt und die gleichen Konzepte in einer kompakteren Sprache implementiert. Insbesondere verwendet Jade Schlüsselwörter anstelle von Tags, die beispielsweise in Trennzeichen ({% %}) eingeschlossen sind, und mit denen Sie mithilfe von Schlüsselwörtern auf CSS-Stile und HTML-Elemente verweisen können.
 
-Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in *requirements.txt* ein. 
+Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in *requirements.txt* ein.
 
 Die Datei *\_\_init\_\_.py* der App enthält folgende Zeile:
 

@@ -1,22 +1,22 @@
 ---
 title: Verwenden der CookieCutter-Vorlagen für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958234"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231791"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -60,7 +60,7 @@ Nachdem die Vorlage lokal installiert wurde, zeigt Cookiecutter eine Optionsseit
 
 ![Cookiecutter – Optionsseite](media/cookiecutter-template-options.png)
 
-Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen. 
+Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen.
 
 Es ist möglich, Standardwerte für bestimmte Optionen mithilfe einer Benutzerkonfigurationsdatei anzupassen. Wenn die Cookiecutter-Erweiterung eine Benutzerkonfigurationsdatei erkennt, werden die Standardwerte der Vorlage mit den Standardwerten der Benutzerkonfiguration überschrieben. Dieses Verhalten wird im Abschnitt [Benutzerkonfiguration](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) der Cookiecutter-Dokumentation erläutert.
 
