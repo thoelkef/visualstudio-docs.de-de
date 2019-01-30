@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944625"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024096"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
-Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installing-r-tools-for-visual-studio.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten. 
+Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installing-r-tools-for-visual-studio.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten.
 
 ## <a name="create-an-r-project"></a>Erstellen eines R-Projekts
 
@@ -93,7 +93,7 @@ Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen 
 
 > [!Tip]
 > Lernen Sie die Muster kennen, mit denen Sie Bearbeitungen durchführen und **STRG**+**EINGABETASTE** drücken (oder alles mit **STRG**+**A** auswählen und danach **STRG**+**EINGABETASTE** drücken), um den Code schnell auszuführen. Das ist viel effizienter, als wenn Sie für denselben Vorgang die Maus verwenden.
-> 
+>
 > Sie können zusätzlich das Plotfenster durch Drag & Drop aus dem Visual Studio-Rahmen nehmen und es beliebig auf Ihrem Bildschirm platzieren. Sie können dann die Größe des Plotfensters wie gewünscht ändern und es dann in einer Bild- oder PDF-Datei speichern.
 
 1. Fügen Sie weitere Codezeilen hinzu, um einen zweiten Plot einzuschließen:

@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899755"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043712"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
@@ -32,9 +32,9 @@ Wählen Sie zum Einstieg auf der Startseite, die angezeigt wird, wenn Sie Visual
 
 ## <a name="npm-integration"></a>NPM-Integration
 
-Wenn der Ordner, den Sie öffnen, die Datei *package.json* enthält, können Sie mit der rechten Maustaste auf *package.json* klicken, um ein NPM-spezifisches Kontextmenü anzuzeigen. 
+Wenn der Ordner, den Sie öffnen, die Datei *package.json* enthält, können Sie mit der rechten Maustaste auf *package.json* klicken, um ein NPM-spezifisches Kontextmenü anzuzeigen.
 
-![NPM-Menü im Projektmappen-Explorer](../javascript/media/solution-explorer-npm-ctx.png) 
+![NPM-Menü im Projektmappen-Explorer](../javascript/media/solution-explorer-npm-ctx.png)
 
 Im Kontextmenü können Sie die durch NPM installierten Pakete auf dieselbe Weise verwalten, wie Sie [NPM-Pakete mit einer Projektdatei verwalten](npm-package-management.md).
 
@@ -43,7 +43,8 @@ Ferner können Sie über das Menü auch Skripts ausführen, die im `scripts`-Ele
 ## <a name="build-and-debug"></a>Kompilieren und Debuggen
 
 ### <a name="packagejson"></a>package.json
-Wenn die Datei *package.json* im Ordner ein `main`-Element angibt, ist der Befehl **Debuggen** im Kontextmenü für *package.json* verfügbar. Wenn Sie darauf klicken, wird *node.exe* mit dem angegebenen Skript als Argument ausgeführt.
+Wenn die Datei *package.json* im Ordner ein `main`-Element angibt, ist der Befehl **Debuggen** im Kontextmenü für *package.json* verfügbar.
+Wenn Sie darauf klicken, wird *node.exe* mit dem angegebenen Skript als Argument ausgeführt.
 
 ### <a name="javascript-files"></a>JavaScript-Dateien
 Sie können JavaScript-Dateien debuggen, indem Sie mit der rechten Maustaste auf eine Datei klicken und im Kontextmenü **Debuggen** auswählen. Dadurch wird *node.exe* mit der jeweiligen JavaScript-Datei als Argument ausgeführt.
