@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5187c3f914a9c276cdc546691b24f123721a7af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990081"
 ---
 # <a name="replace-in-files-command"></a>Befehl "In Dateien ersetzen"
 Ersetzt Text in Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** verfügbar sind.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f8e6c880d6213c2b64d46011dc890a0c2de44f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988596"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039357"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly-Aufgabe
 Die Metadaten in der angegebenen Assembly werden gelesen, und die erforderlichen Einträge werden der Registrierung hinzugefügt. COM-Clients sind so in der Lage, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Klassen transparent zu erstellen. Das Verhalten dieser Aufgabe ähnelt dem von [Regasm.exe (Assemblyregistrierungstool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), ist aber nicht identisch.  

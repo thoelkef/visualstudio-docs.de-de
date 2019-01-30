@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935462"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069914"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -106,7 +106,7 @@ Jeder Pfad im folgenden Code verwendet z.B. n + 1 Bedingungen:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ Die maximale Anzahl von eindeutigen Pfaden, die IntelliTest während einer Durch
 
 Diese Durchsuchungsbegrenzung soll IntelliTest während der [Eingabeerzeugung](input-generation.md) einschränken, da jeder Code, der Schleifen oder Rekursionen enthält, möglicherweise eine unendliche Anzahl von Ausführungspfaden enthält.
 
-Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft. 
+Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft.
 
 * IntelliTest ruft eine Methode eine parametrisierte Testmethode so oft auf, wie von **MaxRuns** angegeben. Dabei werden unterschiedliche Testeingaben verwendet.
-* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben. 
+* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben.
 * IntelliTest zählt, wie viele eindeutige Ausführungspfade es findet. Diese Zahl wird durch die Option **MaxRunsWithUniquePaths** eingeschränkt.
 
 <a name="maxexceptions"></a>

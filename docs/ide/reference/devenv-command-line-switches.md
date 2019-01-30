@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2ea1bfc4cc49378308933dffd5bc3873b25209
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 0bc159ffb4fe330f52cf8364fc9f0d07b4bc5979
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016199"
 ---
-# <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
+# <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenparameter
 
 Mit Devenv können Sie über die Befehlszeile verschiedene Optionen für die IDE festlegen und Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE aus einem Skript oder einer BAT-Datei auszuführen (z.B. einem über Nacht ausgeführten Buildskript) oder um die IDE in einer bestimmten Konfiguration zu starten.
 

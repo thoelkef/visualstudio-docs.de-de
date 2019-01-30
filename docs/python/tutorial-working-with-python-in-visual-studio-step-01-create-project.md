@@ -2,22 +2,22 @@
 title: 'Tutorialschritt 1: Python in Visual Studio, Erstellen eines Projekts'
 titleSuffix: ''
 description: Dies ist die Übersicht und Schritt 1 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, einschließlich Voraussetzungen und das Erstellen eines neuen Python-Projekts.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916045"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231869"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Arbeiten mit Python in Visual Studio
 
@@ -61,7 +61,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
 
     (1) Ihr Projekt wird fettgedruckt dargestellt, mit dem Namen, den Sie im Dialogfeld **Neues Projekt** festgelegt haben. Auf dem Datenträger wird dieses Projekt im Projektordner durch eine *.pyproj* dargestellt.
 
-    (2) Auf der oberen Ebene finden Sie eine *Projektmappe*, die standardmäßig denselben Namen hat wie Ihr Projekt. Eine Projektmappe, die auf dem Datenträger durch eine *SLN*-Datei dargestellt wird, ist ein Container für mindestens ein zugehöriges Projekt. Wenn Sie z.B. eine C++-Erweiterung für Ihre Python-Anwendung schreiben, kann das C++-Projekt in derselben Projektmappe gespeichert werden. Die Projektmappe enthält unter Umständen neben Projekten für dedizierte Projektprogramme ein Projekt für einen Webdienst. 
+    (2) Auf der oberen Ebene finden Sie eine *Projektmappe*, die standardmäßig denselben Namen hat wie Ihr Projekt. Eine Projektmappe, die auf dem Datenträger durch eine *SLN*-Datei dargestellt wird, ist ein Container für mindestens ein zugehöriges Projekt. Wenn Sie z.B. eine C++-Erweiterung für Ihre Python-Anwendung schreiben, kann das C++-Projekt in derselben Projektmappe gespeichert werden. Die Projektmappe enthält unter Umständen neben Projekten für dedizierte Projektprogramme ein Projekt für einen Webdienst.
 
     (3) Unter Ihrem Projekt werden Quelldateien angezeigt – in diesem Fall eine einzelne *.py*-Datei. Wenn Sie auf eine Datei klicken, werden deren Eigenschaften im **Eigenschaftenfenster** angezeigt. Wenn Sie auf eine Datei doppelklicken, wird diese je nach Dateityp auf die vorgesehene Weise geöffnet.
 

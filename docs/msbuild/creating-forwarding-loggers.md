@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7bb2519389503be10bbab57a3ea97fb3b0609d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c9157b09773a99d66ee4fa431482b64fc7528e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936501"
 ---
 # <a name="create-forwarding-loggers"></a>Erstellen von Weiterleitungsprotokollierungen
 Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie wählen können, welche Ereignisse Sie gerne protokollieren möchten, wenn Sie Projekte auf einem System mit mehreren Prozessoren erstellen. Wenn Sie Weiterleitungsprotokollierungen aktivieren, können Sie vermeiden, dass nicht benötigte Ereignisse die zentrale Protokollierung überlasten, die Buildzeit verlangsamen und dafür sorgen, dass das Protokoll unübersichtlich wird.  

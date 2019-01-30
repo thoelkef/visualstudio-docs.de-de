@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e970655f37b02d588064ac57c5dea30bf5b1214e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ab20b8698fd7d46f274439d676825b27be0fc8c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989259"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Start, Umgebung, Dialogfeld „Optionen“
 Verwenden Sie diese Seite zum Anpassen der Visual Studio-Startseite oder zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Weitere Informationen finden Sie unter [Anpassen der Startseite](../../ide/customizing-the-start-page-for-visual-studio.md).

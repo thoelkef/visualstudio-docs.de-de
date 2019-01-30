@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57fc5075ee375ed73b448e8a90e8bb2c3e22e7bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970811"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Ressourcen auf, die die Quelle der Konfliktereignisse waren. Ein Konfliktereignis tritt auf, wenn eine Funktion in einem Thread gezwungen wird, auf den Zugriff auf die Ressource zu warten, da eine Funktion in einem anderen Thread exklusiven Zugriff auf die Ressource abgerufen hat. Jede Ressource ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, die die Konfliktereignisse geführt haben.  

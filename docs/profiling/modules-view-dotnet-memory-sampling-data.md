@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a099a30b0a87db8ebae46543528d9af9f28f497a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd59dd0ffafcaab3b3de4e514bb3cc4dc2dd405a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956388"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modulansicht: .NET-Speichersamplingdaten
 In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrumentationsmethode erfasst wurden, werden die Arbeitsspeicher- und Zeitsteuerungsdaten nach den Modulen gruppiert, die während der Profilerstellung ausgeführt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen des Moduls werden unter dem Modulknoten aufgeführt.  

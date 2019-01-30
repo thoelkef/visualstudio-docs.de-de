@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 33dd1d131d85a066078d9e145ccbbc1fed6e98b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932349"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -74,7 +74,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 5.  Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **IntelliTrace events and call information** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um Diagnoseereignisse und die Ablaufverfolgung auf Methodenebene unter Anzeige von Aufrufinformationen aufzuzeichnen. Diese Ebene der Ablaufverfolgung kann sich beim Ausführen der Tests auf die Leistung auswirken.
 
@@ -82,7 +82,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 7.  Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
 
-     - oder -
+     - oder - 
 
      Wählen Sie **Collect data from only the following modules** (Daten nur aus den folgenden Modulen auflisten) aus, und fügen Sie der Liste der Module ein Modul mit **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit **Entfernen**. Mit dieser Option können Sie die gewünschten Module genau angeben.
 

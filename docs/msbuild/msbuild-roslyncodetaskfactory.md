@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0f391e39c815be289dc0985005ee10ff63b958a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982662"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
 Ähnlich wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) verwendet RoslynCodeTaskFactory die plattformübergeifenden Roslyn-Compiler, um In-Memory-Taskassemblys für die Verwendung als Inlinetasks zu generieren.  RoslynCodeTaskFactory-Tasks sind für .NET Standard vorgesehen und funktionieren ebenfalls mit .NET Framework- und .NET Core-Runtimes sowie auf anderen Plattformen wie Linux und macOS.

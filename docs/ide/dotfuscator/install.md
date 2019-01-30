@@ -21,13 +21,13 @@ description: Finden Sie heraus, wie Sie Dotfuscator Community Edition, der in Vi
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dc0a366eadfb5a077fdc2a7d346ef5f3638afe27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1ce5d7204eaa93fe63fc9ffa49e7ef422d028e76
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988167"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Installation von Dotfuscator Community Edition (CE)
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c15f3ae12aec25747629dfb634ad5790405a11c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940660"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest. Ein systemeigenes Manifest beschreibt eine Komponente, indem eine eindeutige Identität für die Komponente definiert wird und alle Assemblys und Dateien, aus denen die Komponente besteht, bezeichnet werden. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest erweitert ein systemeigenes Manifest durch die Angabe des Einstiegspunkts und der Sicherheitsebene der Anwendung.  

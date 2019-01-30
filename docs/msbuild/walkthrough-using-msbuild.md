@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956919"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947061"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:

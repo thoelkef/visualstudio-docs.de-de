@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daea7d3c5309ef3486d5605d60dcaa692dd17b66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f21bc2eacdc6886410e03ea80fad451c32abfc3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961815"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949401"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension-Basisklasse
 Viele Aufgaben erben von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Diese Vererbungskette fügt verschiedene Parameter zu den Aufgaben hinzu, die aus ihnen abgeleitet werden. Diese Parameter werden in diesem Dokument aufgeführt.  
