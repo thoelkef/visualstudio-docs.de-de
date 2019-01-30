@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417797"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989743"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 
@@ -67,7 +67,7 @@ Wenn diese Option ausgewählt ist, überschreiben die angegebenen Codierungskonv
 
 Wenn diese Option ausgewählt ist, können Sie **STRG** drücken und beim Klicken mit der Maus über ein Element fahren. Dadurch gelangen Sie zur Definition des ausgewählten Elements. Sie können auch entweder **ALT** oder **CTRL** + **ALT** aus der Dropdownliste **Zusatztaste verwenden** auswählen.
 
-Aktivieren Sie das Kontrollkästchen **Definition in der Peek-Ansicht öffnen**, um die Definition des Elements in einem Fenster anzuzeigen, ohne Ihrer aktuellen Position im Code-Editor zu verlassen. 
+Aktivieren Sie das Kontrollkästchen **Definition in der Peek-Ansicht öffnen**, um die Definition des Elements in einem Fenster anzuzeigen, ohne Ihrer aktuellen Position im Code-Editor zu verlassen.
 
 ## <a name="display"></a>Anzeige
 

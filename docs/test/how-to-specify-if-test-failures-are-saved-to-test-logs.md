@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ae52695e980a46cf6385108ae0b4fb4e8b8d5b09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f35d4488add1f66ef8ee57d3a2b1125c4284ef9b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932557"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Vorgehensweise: Angeben, ob Testfehler mithilfe des Auslastungstest-Editors in Testprotokollen gespeichert werden
 

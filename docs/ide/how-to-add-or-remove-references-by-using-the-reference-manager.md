@@ -19,15 +19,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6fc2b414ae7e49cae326ae5ce660e45cc8b47a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856279"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010253"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -71,7 +71,7 @@ Die Registerkarte **Assemblys** besteht aus zwei untergeordneten Registerkarten:
 
 1. In **Framework** werden alle Assemblys aufgelistet, die das Zielframework darstellen.
 
-    Projekte für Windows 8.x Store-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend listet die Registerkarte **Framework** keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: „All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework. (Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um Verweise im Framework zu durchsuchen)“. Für Desktopprojekte werden auf der Registerkarte **Framework** Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.
+    Projekte für Windows 8.x Store-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend listet die Registerkarte **Framework** keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: „All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework. (Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um Verweise im Framework zu durchsuchen“. Für Desktopprojekte werden auf der Registerkarte **Framework** Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.
 
 2. Unter **Erweiterungen** werden alle Assemblys aufgelistet, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.
 

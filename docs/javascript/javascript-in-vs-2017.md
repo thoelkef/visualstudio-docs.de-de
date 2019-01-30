@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013001"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -206,7 +206,8 @@ Sie können z.B. die folgende `tsconfig.json`-Datei verwenden, um sicherzustelle
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Problembehandlung: „JavaScript Language Service wurde für die folgenden Projekte deaktiviert.“
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Problembehandlung: „JavaScript Language Service wurde für die folgenden Projekte deaktiviert.“
 Wenn Sie ein JavaScript-Projekt mit umfangreichen Inhalten öffnen, erhalten Sie möglicherweise die Meldung „JavaScript Language Service wurde für die folgenden Projekte deaktiviert“. Die häufigste Ursache für eine umfassende JavaScript-Quelle ist, dass Bibliotheken mit Quellcode, der einen Projektgrenzwert von 20 MB überschreitet, enthalten sind.
 
 Eine einfache Möglichkeit zur Optimierung Ihres Projekts besteht darin, eine `tsconfig.json`-Datei in Ihren Projektstamm hinzufügen, um dem Sprachdienst mitzuteilen, welche Dateien bedenkenlos ignoriert werden können. Verwenden Sie das Beispiel unten, um die am häufigsten verwendeten Verzeichnisse, in denen Bibliotheken gespeichert werden, auszuschließen:
@@ -231,7 +232,7 @@ Eine einfache Möglichkeit zur Optimierung Ihres Projekts besteht darin, eine `t
 }
 ```
 
-Fügen Sie weitere Verzeichnisse nach Bedarf hinzu. Einige weitere Beispiele sind „vendor“- oder „wwwroot/lib“-Verzeichnisse. 
+Fügen Sie weitere Verzeichnisse nach Bedarf hinzu. Einige weitere Beispiele sind „vendor“- oder „wwwroot/lib“-Verzeichnisse.
 
 > [!NOTE]
 > Die Compilereigenschaft `disableSizeLimit` kann ebenfalls verwendet werden, um den 20-MB-Überprüfungsgrenzwert zu deaktivieren. Gehen Sie besonders vorsichtig bei der Verwendung dieser Eigenschaft vor, da die Begrenzung zum Abstürzen des Sprachdiensts führen kann.

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e8de1edc266489a6260176e0b9e8aec8df62ba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956700"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  

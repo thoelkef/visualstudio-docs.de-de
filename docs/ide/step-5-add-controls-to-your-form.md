@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6c26af81045723e8986db4dffafb012fb850a82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968429"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997441"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref:System.Windows.Forms.PictureBox>-Steuerelement und ein <xref:System.Windows.Forms.CheckBox>-Steuerelement. Anschließend fügen Sie dem Formular <xref:System.Windows.Forms.Button>-Steuerelemente hinzu.

@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56493da196a0d53ead738b2eff6d10a2f9328c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929324"
 ---
 # <a name="static-helper-classes"></a>Statische Hilfsklassen
 
@@ -131,7 +131,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +149,8 @@ Normalerweise versucht IntelliTest alle Ausführungspfade des Codes während der
 
 **Beispiel**
 
-Dieses Beispiel zeigt die Implementierung der **PexAssume.Arrays.ElementsAreNotNull**-Methode. In dieser Methode ignorieren Sie die Einschränkungen für die Länge des Arraywerts, um zu vermeiden, dass IntelliTest versucht, verschiedene Größen des Arrays zu generieren. Die Einschränkungen werden nur hier ignoriert. Wenn sich der getestete Code für verschiedene Arraylängen unterschiedlich verhält, kann IntelliTest keine verschieden großen Arrays von den Einschränkungen des getesteten Codes generieren.
+Dieses Beispiel zeigt die Implementierung der **PexAssume.Arrays.ElementsAreNotNull**-Methode.
+In dieser Methode ignorieren Sie die Einschränkungen für die Länge des Arraywerts, um zu vermeiden, dass IntelliTest versucht, verschiedene Größen des Arrays zu generieren. Die Einschränkungen werden nur hier ignoriert. Wenn sich der getestete Code für verschiedene Arraylängen unterschiedlich verhält, kann IntelliTest keine verschieden großen Arrays von den Einschränkungen des getesteten Codes generieren.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170f80cc1abb12570e01dd9f9b2fcd04d7bff139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961896"
 ---
 # <a name="msbuild-targets-files"></a>TARGETS-Dateien von MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst mehrere *TARGETS*-Dateien, die Elemente, Eigenschaften, Ziele und Aufgaben für allgemeine Szenarios enthalten. Diese Dateien werden in die meisten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektdateien automatisch importiert, um Lesbarkeit und Verwaltung zu vereinfachen.  

@@ -2,22 +2,22 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 2: Schreiben und Ausführen von Code'
 titleSuffix: ''
 description: Dies ist Schritt 2 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Bearbeiten von Code und Ausführen eines Projekts erläutert wird.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935140"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231778"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -46,7 +46,7 @@ Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten S
     ![Syntaxfarben und Hervorheben von Fehlern mit IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen. 
+    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen.
 
 1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie **STRG**+**F5** drücken oder das Menüelement **Debuggen** > **Starten ohne Debuggen**n. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
 

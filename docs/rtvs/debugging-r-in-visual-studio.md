@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925497"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918367"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debuggen von R in Visual Studio
 
 Der Integration des vollständigen Debug-Vorgangs von Visual Studio ist in R-Tools für Visual Studio (RTVS) vorhanden (siehe [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour). Diese Unterstützung umfasst Haltepunkte, Anfügen an laufende Prozesse, das Überprüfen und Beobachten von Variablen, sowie das Überprüfen der Aufrufliste. Dieser Artikel erforscht die Aspekte des Debuggens, die in R und RTVS exklusiv sind.
 
-Das Starten des Debuggers für die R-Startdatei in einem R-Projekt funktioniert genauso wie in anderen Projekttypen: Verwenden Sie **Debuggen** > **Debugging starten**, die **F5**-Taste oder die **Startdatei der Quelle** auf der Debugsymbolleiste: 
+Das Starten des Debuggers für die R-Startdatei in einem R-Projekt funktioniert genauso wie in anderen Projekttypen: Verwenden Sie **Debuggen** > **Debugging starten**, die **F5**-Taste oder die **Startdatei der Quelle** auf der Debugsymbolleiste:
 
 ![Debugger-Schaltfläche „Start“ für R](media/debugger-start-button.png)
 

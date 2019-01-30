@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8db20a51872af37ce9f7ee655a365efb98d2f687
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938619"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden. Registrieren Sie die ETW-Anbieter-GUID über das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), um die EventSource-Marker anzuzeigen. In der Nebenläufigkeitsschnellansicht werden für die Darstellung von EventSource-Ereignissen als [Flag-Marker](../profiling/flag-markers.md), [Bereichsmarker](../profiling/span-markers.md) und [Meldungsmarker](../profiling/message-markers.md) Standardkonventionen verwendet. Durch Hinzufügen von benutzerdefinierten Feldern zu den Ereignissen, können Sie festlegen, wie EventSource-Ereignisse angezeigt werden. Weitere Informationen zu Markern finden Sie unter [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md). Weitere Informationen zu EventSource-Ereignissen finden Sie unter <xref:System.Diagnostics.Tracing>.  

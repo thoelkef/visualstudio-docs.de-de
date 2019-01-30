@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370b15d1530a924396b72cbefabd782094e2b91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34640a06fb231aad0cf0a48ebc001ef7e1b597a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979100"
 ---
 # <a name="modules-view"></a>Modulansicht
 In der Modulansicht werden die Module der Profilerstellungsdaten aufgelistet. Jedes Modul ist der Stammknoten einer hierarchischen Struktur. Die Profilfunktionen des Moduls, für die ein Sampling ausgeführt wurde, werden unter dem Modulknoten aufgeführt. Wenn die Profilerstellungsdaten mithilfe der Samplingmethode gesammelt wurden, werden Zeileninformationen unter dem Funktionsknoten aufgelistet, und Anweisungszeigerdaten werden unter dem Zeilenknoten aufgelistet.  

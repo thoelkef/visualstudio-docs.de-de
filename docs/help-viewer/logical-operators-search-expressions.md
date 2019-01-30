@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e9739ffe1e66186f62bb87ef5ffabdef27801a
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 827977f2763eff209e400538262b511a2124a1f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956193"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 
@@ -27,7 +27,7 @@ Sie können Ihre Suche im Hilfe-Inhalt in **Help Viewer** mit logischen Operator
 
 Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer Suchabfrage kombiniert werden sollen. In der folgenden Tabelle werden die logischen Operatoren AND, OR, NOT und NEAR veranschaulicht.
 
-|Suchen nach|Mit|Beispiel|Ergebnis|
+|Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
 |Beide Begriffe im gleichen Artikel|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
 |Einer der Begriffe in einem Artikel|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
@@ -41,7 +41,7 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 
 Mit erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalt optimieren, indem Sie festlegen, in welchem Bereich des Artikels nach dem Suchbegriff gesucht werden soll. In der folgenden Tabelle werden die vier verfügbaren erweiterten Suchoperatoren veranschaulicht.
 
-|Suchen nach|Mit|Beispiel|Ergebnis|
+|Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
 |Ein Begriff im Titel des Artikels|`title:`|`title:binaryreader`|Themen, die „Binaryreader“ im Titel enthalten.|
 |Eine Benennung in einem Codebeispiel|`code:`|`code:readdouble`|Themen, die „readdouble“ in einem Codebeispiel enthalten.|
