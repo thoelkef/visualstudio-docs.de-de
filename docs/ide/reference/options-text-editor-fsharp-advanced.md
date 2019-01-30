@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b58f22983d11e44a863c834188cc938282c2626
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9a3158708215303be4dc0bd66202a165cf3a5d4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955712"
 ---
 # <a name="options-text-editor-f-advanced"></a>Optionen, Text-Editor, F#, Erweitert
 
@@ -23,12 +23,12 @@ Verwenden Sie die Optionsseite **Erweitert**, um einige Text-Editor-Einstellunge
 
 ## <a name="block-structure-guides"></a>Führungslinien für Blockstruktur
 
-Aktivieren Sie dieses Kontrollkästchen, um gestrichelte vertikale Linien zwischen geschweiften Klammern (**{}**) in Ihrem Code anzuzeigen. Damit können Sie ganz einfach Ihre einzelnen Codeblöcke erkennen.
-  
+Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die sich mit strukturierten Codeblöcken decken, sodass Sie die einzelnen Codeblöcke leicht identifizieren können.
+
 ## <a name="outlining"></a>Gliedern
 
 Aktivieren Sie dieses Kontrollkästchen, um die Codedatei automatisch zu gliedern. Hierdurch werden reduzierbare Codeblöcke erstellt.
-  
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
