@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1414c2102d2b19728c8dfb74470fefae499bc622
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877136"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089265"
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
 Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-feature-tour.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
 
-Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
+Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
 
 In einem Projekt wie dem Folgenden, in dem `MemoryPool` ein benutzerdefinierter Heap ist, würden Sie z.B. nur eine einzige Zuordnung auf dem Windows-Heap sehen:
 

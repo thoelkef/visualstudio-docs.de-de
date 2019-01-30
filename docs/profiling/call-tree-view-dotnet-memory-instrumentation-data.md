@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 51bdbe7f36b37ffbc0e1c911a8aa122cd3a44dd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0211dda6590591a8a701389e1f3a99a316dbe458
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037511"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Aufrufstrukturansicht: Instrumentierungsdaten des .NET-Arbeitsspeichers
 Die Aufrufstrukturansicht von .NET-Profilerstellungsdaten zur Speicherreservierung, die über die Instrumentationsmethoden erfasst werden, zeigt die Funktionsausführungspfade an, die in der Anwendung mit Profil durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Jeder Funktionsknoten listet alle von ihm aufgerufenen Funktionen sowie den .NET-Speicher und Zeitdaten für die Funktion auf.  

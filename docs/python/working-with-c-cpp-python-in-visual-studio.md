@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: cd0e2079edde74155d38646fa5e22b6a11c1c7fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032422"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -323,7 +323,7 @@ Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, 
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -409,7 +409,7 @@ Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erste
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Ähnlich wie cffi mit C++. | Neuer, kann möglicherweise zu Problemen mit Visual Studio 2017 führen. |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Ähnlich wie cffi mit C++. | Neuer, kann möglicherweise zu Problemen mit Visual Studio 2017 führen. |
 
 ## <a name="see-also"></a>Siehe auch
 

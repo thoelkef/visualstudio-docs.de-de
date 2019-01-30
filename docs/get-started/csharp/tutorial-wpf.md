@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af7126910971cdf9ce583c57c1f88bb56a87f744
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405380"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089197"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C#
 
@@ -274,5 +274,4 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Dat
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuerungen in Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
 - [Produktivitätstipps](../../ide/productivity-tips-for-visual-studio.md)
