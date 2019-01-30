@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918734"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer-Referenz
 
@@ -80,8 +80,12 @@ Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/a
 - [Email query results list using Outlook (Senden der Abfrageergebnisliste per E-Mail mit Outlook)](/azure/devops/boards/queries/share-plans)
 - [Create reports from query in Excel (Erstellen von Berichten aus Abfragen in Excel)](/azure/devops/report/excel/create-status-and-trend-excel-reports) (nur TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > In Visual Studio 2019 Preview 1 gibt es eine neue [Arbeitselementfunktion](/azure/devops/boards/work-items/set-work-item-experience-vs). Weitere Informationen zum Anzeigen von Arbeitselementen in Visual Studio 2019 Preview 1 finden Sie unter [View and add work items (Anzeigen und Hinzufügen von Arbeitselementen)](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Seite „Builds“
 

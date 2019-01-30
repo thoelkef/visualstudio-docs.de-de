@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959722"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -47,7 +47,7 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Nach dem Sortieren:
 
    ```csharp
@@ -58,7 +58,7 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Using-Direktivengruppen trennen
 
    Wenn ausgewählt, trennt der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen, indem er eine leere Zeile zwischen Gruppen von Anweisungen einfügt, die den gleichen Stammnamespace aufweisen.
@@ -73,28 +73,28 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Nach dem Sortieren:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Using-Direktiven für Typen in Verweisassemblys vorschlagen 
-- Using-Direktiven für Typen in NuGet-Paketen vorschlagen 
+
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen
+- Using-Direktiven für Typen in NuGet-Paketen vorschlagen
 
    Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
 
    ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Markieren
 
 - Verweise auf Symbole unter dem Cursor markieren

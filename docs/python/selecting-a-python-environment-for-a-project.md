@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010206"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 
@@ -46,7 +46,7 @@ Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche
 
 ## <a name="use-virtual-environments"></a>Verwenden von virtuellen Umgebungen
 
-Eine virtuelle Umgebung ist eine einzigartige Kombination aus einem bestimmten Python-Interpreter und einem bestimmten Satz Bibliotheken, die sich von anderen globalen und Conda-Umgebungen unterscheidet. Eine virtuelle Umgebung ist für ein Projekt spezifisch und wird in einem Projektordner gespeichert. Dieser Ordner enthält die installierten Bibliotheken der Umgebung sowie eine *pyvenv.cfg*-Datei, die den Pfad zum *Basisinterpreter* der Umgebung angibt, der sich an anderer Stelle im Dateisystem befindet. (Das bedeutet, dass eine virtuelle Umgebung keine Kopie des Interpreters enthält, sondern nur einen Link zu diesem.) 
+Eine virtuelle Umgebung ist eine einzigartige Kombination aus einem bestimmten Python-Interpreter und einem bestimmten Satz Bibliotheken, die sich von anderen globalen und Conda-Umgebungen unterscheidet. Eine virtuelle Umgebung ist für ein Projekt spezifisch und wird in einem Projektordner gespeichert. Dieser Ordner enthält die installierten Bibliotheken der Umgebung sowie eine *pyvenv.cfg*-Datei, die den Pfad zum *Basisinterpreter* der Umgebung angibt, der sich an anderer Stelle im Dateisystem befindet. (Das bedeutet, dass eine virtuelle Umgebung keine Kopie des Interpreters enthält, sondern nur einen Link zu diesem.)
 
 Ein Vorteil bei der Verwendung einer virtuellen Umgebung liegt daran, dass diese immer die genauen Abhängigkeiten des Projekts angibt, während Sie das Projekt entwickeln. (Im Gegensatz dazu enthält eine gemeinsam genutzte globale Umgebung alle Bibliotheken, unabhängig davon, ob Sie diese im Projekt verwenden.) Über die virtuelle Umgebung können Sie dann einfach eine *requirements.txt*-Datei erstellen, die dazu verwendet wird, diese Abhängigkeiten auf einem anderen Entwicklungs- oder Produktionscomputer erneut zu installieren. Weitere Informationen finden Sie unter [Verwalten von erforderlichen Paketen mit „requirements.txt“](managing-required-packages-with-requirements-txt.md).
 

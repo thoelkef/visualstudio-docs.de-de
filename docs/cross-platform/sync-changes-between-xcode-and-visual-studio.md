@@ -7,15 +7,15 @@ ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 ms.technology: vs-ide-mobile
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xamarin
-ms.openlocfilehash: a32d72869a14e22ba8707036cd4b549ef5228d3b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 665eafb9a564ffc140e2784665b5f872eaf0eec9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379301"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034115"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronisieren von Änderungen zwischen XCode und Visual Studio
 Die Komponente Microsoft Visual C++ für Mobile-Entwicklung umfasst Remotefunktionen für die Synchronisierung Ihrer Daten zwischen Ihrem PC und Ihrem Mac. Wenn Ihr Visual Studio- und Ihr Mac-Computer gekoppelt sind, sind für iOS-Anwendungsprojekte neue Optionen in Visual Studio verfügbar, mit denen Sie Ihr Projekt in XCode öffnen, den Code zwischen XCode und Visual Studio verschieben und das temporäre XCode-Projektverzeichnis bereinigen können.
