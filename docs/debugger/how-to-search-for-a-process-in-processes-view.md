@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d492d741cef4cba98e5c48c1b95116d1dbcffc5e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932453"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Vorgehensweise: Suchen eines Prozesses in der Prozessansicht
 Sie können mithilfe der Prozess-ID oder ein Modul Zeichenfolge als Suchkriterium für einen bestimmten Prozess in der Prozessansicht suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld zeigt die Attribute des ausgewählten Prozess in der Struktur verarbeiten.  

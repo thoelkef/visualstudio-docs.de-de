@@ -1,14 +1,9 @@
 ---
 title: Verwalten des Help Viewer-Fensters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Help Viewer 2.0, rearranging the window
 - Help Viewer 2.0, restoring the default window layout
@@ -16,13 +11,13 @@ ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 37d7ccda7d04fd135968608b6272199c9949ed67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8931b37805e1f24dfaf7fad35a70434da3ed9ebf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281488"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833911"
 ---
 # <a name="manage-the-help-viewer-window"></a>Verwalten des Help Viewer-Fensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Im Help Viewer können Sie das Windows-Layout anpassen.
   
 ## <a name="minimize-a-navigation-tab"></a>Minimieren von Navigationsregisterkarten  
  Schaffen Sie mehr Platz zum Anzeigen von Themen, indem Sie das Heftzweckensymbol für die Navigationsregisterkarten auswählen. Wenn diese Registerkarten minimiert werden, werden nur ihre Bezeichnungen am Rand des Fensters angezeigt. Um die Registerkarten wiederherzustellen, wählen Sie die Beschriftung der Registerkarten aus, und wählen Sie dann das Pinsymbol erneut aus.
-
-
-

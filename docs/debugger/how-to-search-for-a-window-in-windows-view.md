@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 1526ed73b1a4f5c665f6b60c3cbb7e5b0b659380
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837065"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974057"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Vorgehensweise: Suchen nach einem Fenster in der Fensteransicht
 Sie können für ein bestimmtes Fenster in der Windows-Ansicht mit das Handle, Beschriftung, Klasse oder eine Kombination der Beschriftung und die Klasse als Suchkriterium suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Fensters in der Fensterstruktur im angezeigt werden.  

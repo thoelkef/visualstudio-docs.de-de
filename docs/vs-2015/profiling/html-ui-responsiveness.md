@@ -1,14 +1,9 @@
 ---
 title: Reaktionsfähigkeit der HTML-Benutzeroberfläche | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51760719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752965"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 6.  Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.  
   
 ##  <a name="IsolateAnIssue"></a> Isolieren eines Problems  
- Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-app für die Leistungstests erhalten, finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)  
+ Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine Schrittanleitung zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler effektiver verwenden können:  
@@ -369,6 +364,3 @@ if (performance.mark && performance.measure) {
   
 ## <a name="see-also"></a>Siehe auch  
  [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, C#, IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
@@ -23,13 +18,13 @@ ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7c1bf08c5e97a2504d797a58e96cd12cdcf08cc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793189"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Optionen, Text-Editor, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49262170"
 Verwenden Sie die Eigenschaftenseite von **IntelliSense**, um Einstellungen zu ändern, die das Verhalten von IntelliSense für Visual C# beeinflussen. Sie rufen die Eigenschaftenseite von **IntelliSense** durch Klicken auf **Optionen** im Menü **Extras** auf. Klicken Sie danach im Ordner **Text-Editor** auf **C#** und anschließend auf **IntelliSense**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Die Eigenschaftenseite von **IntelliSense** enthält folgende Eigenschaften:  
   
@@ -80,6 +75,3 @@ Verwenden Sie die Eigenschaftenseite von **IntelliSense**, um Einstellungen zu �
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML-Dokumentationskommentare](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)
-
-
-

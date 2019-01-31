@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2904b4a8fbb6e4ec3fd831251b5675f2047b6368
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922703"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
 Anwendungseinstellungen für Windows Forms erleichtert das Erstellen, speichern und Verwalten von benutzerdefinierten Anwendungs- und benutzereinstellungen auf dem Client. Das folgende Dokument beschreibt die Funktionsweise der Anwendung-Dateien für konformitätseinstellungen in eine ClickOnce-Anwendung und wie ClickOnce Einstellungen migriert, wenn der Benutzer ein Upgrade auf die nächste Version.  

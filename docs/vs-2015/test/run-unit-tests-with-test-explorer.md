@@ -1,26 +1,21 @@
 ---
 title: Ausführen von Komponententests mit Test-Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805107"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Anzeigen des Quellcodes einer Testmethode  
- Zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor wählen Sie den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: F12) aus.  
+ Wählen Sie zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: F12) aus.  
   
  ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
@@ -135,8 +130,8 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
   
 |Gruppieren|Beschreibung|  
 |-----------|-----------------|  
-|**Dauer**|Die Tests werden nach Ausführungszeit gruppiert: **Schnell**, **Mittel**und **Langsam**.|  
-|**Ergebnis**|Die Tests werden nach Ausführungsergebnis gruppiert: **Fehlgeschlagene Tests**, **Übersprungene Tests**und **Bestandene Tests**.|  
+|**Dauer**|Tests werden anhand der Ausführungszeit gruppiert: **Schnell**, **Mittel** und **Langsam**.|  
+|**Ergebnis**|Tests werden anhand der Ausführungsergebnisse gruppiert: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|  
 |**Merkmale**|Gruppiert Tests nach von Ihnen definierten Kategorie/Wert-Paaren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|  
 |**Projekt**|Gruppiert Tests nach den Namen der Projekte.|  
   
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Dateipfad**|Durchsucht die vollqualifizierten Dateinamen der Testquelldateien nach Übereinstimmungen.|  
 |**Vollqualifizierter Name**|Durchsucht die vollqualifizierten Dateinamen von Testnamespaces, Klassen und Methoden nach Übereinstimmungen.|  
 |**Ausgabe**|Durchsucht die benutzerdefinierten Fehlermeldungen, die als Standardausgabe (stdout) oder Standardfehler (stderr) geschrieben werden. Die Syntax zum Angeben von Ausgabemeldungen wird durch das Komponententest-Framework festgelegt.|  
-|**Ergebnis**|Durchsucht die Test-Explorer-Kategorienamen nach Übereinstimmungen: **Fehlgeschlagene Tests**, **Abgebrochene Tests**und **Bestandene Tests**.|  
+|**Ergebnis**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|  
   
  Verwenden Sie folgende Syntax, um eine Teilmenge von Filterergebnissen auszuschließen :  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Externe Ressourcen  
   
 ###  <a name="BKMK_Guidance"></a> Empfehlungen  
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
  [Ausführen eines Komponententest als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

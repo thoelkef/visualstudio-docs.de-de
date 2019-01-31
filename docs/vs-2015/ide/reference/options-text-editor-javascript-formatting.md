@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, JavaScript, Formatierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
@@ -17,13 +12,13 @@ ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794409"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Optionen, Text-Editor, JavaScript, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 |**Öffnende geschweifte Klammer für Kontrollblöcke in neuer Zeile platzieren**|Wenn diese Option ausgewählt ist, verschiebt der Code-Editor die mit einem Kontrollblock verknüpfte öffnende geschweifte Klammer (z. B. `if`- und `while`-Kontrollblöcke) in eine neue Zeile.|  
   
 ## <a name="spacing"></a>Abstand  
- Diese Optionen bestimmen, wie für das Einfügen von Leerzeichen in **Quelle** anzeigen.  
+ Diese Optionen bestimmen, wie Leerzeichen in die **Quellansicht** eingefügt werden.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
   
@@ -64,13 +59,10 @@ Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen
 |------------|-----------------|  
 |**Leerzeichen nach Trennzeichen einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen nach einem Kommatrennzeichen eingefügt.|  
 |**In for-Anweisung Leerzeichen nach Semikolon einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor hinter jedem Semikolon in der ersten Zeile einer `for`-Schleife ein Leerzeichen eingefügt.|  
-|**Leerzeichen vor und nach binären Operatoren einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen vor und nach einem binären Operator (z.B. +, -, &&, ||) eingefügt.|  
+|**Leerzeichen vor und nach binären Operatoren einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen vor und nach einem binären Operator (z.B. +, -, &&, &#124;&#124;) eingefügt.|  
 |**Leerzeichen nach Schlüsselwörtern in Anweisungen für die Ablaufsteuerung einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor in Anweisungen für die Ablaufsteuerung ein Leerzeichen nach JavaScript-Schüsselwörtern eingefügt.|  
 |**Leerzeichen nach function-Schlüsselwort für anonyme Funktionen einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen hinter dem `function`-Schlüsselwort für anonyme Funktionen eingefügt.|  
 |**Leerzeichen nach öffnender und vor schließender nicht leerer Klammer einfügen**|Wenn diese Option ausgewählt ist, wird im Code-Editor ein Leerzeichen hinter die öffnende Klammer und vor der schließenden Klammer eingefügt, sofern nicht leere Zeichen innerhalb der Klammern vorhanden sind.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

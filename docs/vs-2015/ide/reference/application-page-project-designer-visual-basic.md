@@ -1,14 +1,9 @@
 ---
 title: Seite „Anwendung“, Projekt-Designer (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175486"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774859"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 > [!NOTE]
 >  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Anwendungstyp**  
  Gibt den Typ der zu erstellenden Anwendung an. Für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.  
@@ -116,7 +111,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Im folgenden Abschnitt werden die **Eigenschaften des Windows-Anwendungsframeworks**-Einstellungen für Windows Presentation Foundation (WPF)-Anwendungen beschrieben.  
   
  **Visuelle XP-Stile aktivieren**  
- Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Einzelinstanzanwendung erstellen**  
  Aktivieren Sie dieses Kontrollkästchen, um zu verhindern, dass Benutzer mehrere Instanzen der Anwendung ausführen. Das Kontrollkästchen ist standardmäßig deaktiviert. Mit dieser Einstellung können mehrere Instanzen der Anwendung ausgeführt werden.  
@@ -166,6 +161,3 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

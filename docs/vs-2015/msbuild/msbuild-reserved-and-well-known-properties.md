@@ -1,14 +1,9 @@
 ---
 title: Reservierte und bekannte Eigenschaften für MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804175"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +55,10 @@ ms.locfileid: "49225406"
 |`MSBuildThisFileDirectory`|Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein.|Reserviert|  
 |`MSBuildThisFileDirectoryNoRoot`|Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt, ausschließlich des Stammlaufwerks.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein.|Reserviert|  
 |`MSBuildThisFileExtension`|Der Teil von `MSBuildThisFileFullPath`, der die Dateinamenerweiterung angibt.|Reserviert|  
-|`MSBuildThisFileFullPath`|Der absolute Pfad des Projekts oder der TARGETS-Datei, die das gerade ausgeführte Ziel enthält.<br /><br /> Hinweis: Sie können einen relativen Pfad in einer TARGETS-Datei angegeben, der relativ zur TARGETS-Datei und nicht relativ zur ursprünglichen Projektdatei ist.|Reserviert|  
+|`MSBuildThisFileFullPath`|Der absolute Pfad des Projekts oder der TARGETS-Datei, die das gerade ausgeführte Ziel enthält.<br /><br /> Tipp: Sie können einen relativen Pfad in einer TARGETS-Datei angegeben, der relativ zur TARGETS-Datei und nicht relativ zur ursprünglichen Projektdatei ist.|Reserviert|  
 |`MSBuildThisFileName`|Der Teil von `MSBuildThisFileFullPath`, der den Dateinamen angibt, jedoch ohne die Dateinamenerweiterung.|Reserviert|  
 |`MSBuildToolsPath`|Der Installationspfad der [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Version, die mit dem Wert von `MSBuildToolsVersion` verknüpft ist.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich nicht in den Pfad ein.<br /><br /> Diese Eigenschaft kann nicht überschrieben werden.|Reserviert|  
 |`MSBuildToolsVersion`|Die Version des [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Toolsets, das zum Erstellen des Projekts verwendet wird.<br /><br /> Hinweis: Ein [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Toolset besteht aus Aufgaben, Zielen und Tools, die zum Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie "csc.exe" und "vbc.exe". Weitere Informationen finden Sie unter [Toolset (ToolsVersion) (Toolset (ToolsVersion))](../msbuild/msbuild-toolset-toolsversion.md) sowie unter [Standard and Custom Toolset Configurations (Standardmäßige und benutzerdefinierte Toolsetkonfigurationen)](../msbuild/standard-and-custom-toolset-configurations.md).|Reserviert|  
   
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md) [MSBuild-Eigenschaften](msbuild-properties1.md)
-
-
-
