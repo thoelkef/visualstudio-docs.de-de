@@ -1,25 +1,20 @@
 ---
 title: Unittests bei einer Visual C++-DLL für Store-Apps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dbdf8ccb423058f10246a439838d1b970d65109f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771194"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Unittests bei einer Visual C++-DLL für Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -354,6 +349,3 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     >  Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
     >   
     >  Halten Sie Umgestaltungen getrennt von anderen Änderungen.
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774100"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Gewusst wie: Ändern des Pivotpunkts eines 3D-Modells
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpunkts* eines 3D-Modells verwendet wird. Der Pivotpunkt ist der Punkt im Raum, der das mathematische Zentrum des Objektes für Rotation und Skalierung definiert.  
@@ -37,7 +32,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpun
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>So ändern Sie den Pivotpunkt eines 3D-Modells  
   
-1. Beginnen Sie mit einer vorhandenen 3D-Modell, z.B. das Modell, das unter [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md) beschrieben wird.  
+1. Beginnen Sie mit einer vorhandenen 3D-Modell wie diejenige, die in beschriebenen [Vorgehensweise: Erstellen ein 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md).  
   
 2. Gehen Sie in den Pivot-Modus. Klicken Sie zum Aktivieren des Pivot-Modus auf der Symbolleiste **Model-Editor-Modus** auf **Pivot-Modus**. Es erscheint ein Feld um die Schaltfläche **Pivot-Modus**, der angibt, dass der Modell-Editor sich nun im Pivot-Modus befindet. Vorgänge wie die Verschiebung beeinflussen im Pivot-Modus den Pivotpunkt des Objektes anstatt der Struktur des Objektes im Raum.  
   
@@ -57,6 +52,3 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpun
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md)   
  [Modell-Editor](../designers/model-editor.md)
-
-
-

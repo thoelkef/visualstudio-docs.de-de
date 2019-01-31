@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754873"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
   
   Im folgenden sind Schritte zur Erstellung, zum Lauf und zum Debugging von Komponententests für verwaltete Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps beschrieben.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Visual Studio  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Erstellen eines Komponententestprojekts  
@@ -119,7 +114,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
     >  Sie müssen die Projektmappe erstellen, um die Liste der Komponententests im Komponententest-Explorer zu aktualisieren.  
   
     > [!WARNING]
-    >  Bekanntes Visual Studio-Problem: Sie müssen den Komponententest-Explorer vor dem Erstellen des Testprojekts öffnen.  
+    >  Visual Studio bekanntes Problem: Test-Explorer müssen Sie vor dem Erstellen des Testprojekts öffnen.  
   
 3.  Wählen Sie im Test-Explorer den Komponententest aus, den Sie erstellt haben.  
   
@@ -144,7 +139,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="videos"></a>Videos  
- [Channel 9: Unit testing your Windows Store apps built using XAML (Durchführen von Komponententests für Ihre mit XAML erstellten Windows Store-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9 Komponententests für Ihre mit XAML erstellten Windows Store-apps](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foren  
  [Visual Studio-Komponententest](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 ## <a name="see-also"></a>Siehe auch  
  [Testen von Store-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Erstellen und Testen einer Windows Store-App mithilfe von Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

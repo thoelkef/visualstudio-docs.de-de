@@ -1,14 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen von mehreren Computern Umgebung erstellen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769073"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen eine Buildumgebung auf mehreren Computern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual Studio auf einem Hostcomputer installieren und anschließend verschiedene Dateien und Einstellungen zu einem anderen Computer kopieren, sodass er mit den Builds verwendet werden kann. Visual Studio muss auf dem anderen Computer nicht installiert werden.  
@@ -71,7 +66,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
 - [Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
 -   Eine lizenzierte Kopie von Visual StudioUltimate, Visual Studio Premium oder Visual Studio Professional  
   
@@ -431,6 +426,3 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 ## <a name="see-also"></a>Siehe auch  
  [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
-
-
-

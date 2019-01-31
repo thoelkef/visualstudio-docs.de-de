@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Bereinigen eines Builds | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,15 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780746"
 ---
-# <a name="how-to-clean-a-build"></a>Gewusst wie: Bereinigen eines Builds
+# <a name="how-to-clean-a-build"></a>Vorgehensweise: Bereinigen eines Builds
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +36,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Verwenden Sie die [MakeDir](../msbuild/makedir-task.md)-Aufgabe, um das Verzeichnis zu erstellen, wenn dieses noch nicht vorhanden ist. Zum Beispiel:  
+2.  Verwenden Sie die [MakeDir](../msbuild/makedir-task.md)-Aufgabe, um das Verzeichnis zu erstellen, wenn dieses noch nicht vorhanden ist. Beispiel:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,14 +47,14 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Entfernen eines Verzeichnisses und aller enthaltenen Dateien  
   
--   Verwenden Sie die `RemoveDir`-Aufgabe, um das Verzeichnis zu entfernen. Zum Beispiel:  
+-   Verwenden Sie die `RemoveDir`-Aufgabe, um das Verzeichnis zu entfernen. Beispiel:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.  
   
- `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **/target**, um ein anderes Ziel anzugeben. Zum Beispiel:  
+ `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **/target**, um ein anderes Ziel anzugeben. Beispiel:  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -113,6 +108,3 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
  [RemoveDir Task (RemoveDir-Aufgabe)](../msbuild/removedir-task.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
  [Ziele](../msbuild/msbuild-targets.md)
-
-
-

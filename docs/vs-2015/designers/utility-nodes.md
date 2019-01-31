@@ -1,25 +1,20 @@
 ---
 title: Hilfsprogrammknoten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783862"
 ---
 # <a name="utility-nodes"></a>Hilfsprogrammknoten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Im Shader-Designer stellen Hilfsprogrammknoten allgemeine, nützliche Shader-Ber
 |**Maskierungsvektor**|Maskiert Komponenten des angegebenen Vektors.<br /><br /> Damit können Sie bestimmte Farbkanäle aus einem Farbwert entfernen oder verhindern, dass sich bestimmte Komponenten auf nachfolgenden Berechnungen auswirken.<br /><br /> **Eingabe:**<br /><br /> `Vector`: `float4`<br /> Der zu maskierende Vektor.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Der maskierte Vektor.|**Rot / X**<br /> **FALSE** zum Ausblenden der Rot-(x-)Komponente, andernfalls **TRUE**.<br /><br /> **Grün / Y**<br /> **FALSE** zum Ausblenden der Grün-(y-)Komponente, andernfalls **TRUE**.<br /><br /> **Blau / Z**<br /> **FALSE** zum Ausblenden der Blau-(w-)Komponente, andernfalls **TRUE**.<br /><br /> **Alpha / W**<br /> **FALSE** zum Ausblenden der Alpha-(w-)Komponente, andernfalls **TRUE**.|  
 |**Reflektionsvektor**|Berechnet den Reflektionsvektor für den aktuellen Pixel im Tangentialraum basierend auf der Kameraposition.<br /><br /> Damit können Sie Reflektionen, Cubemap-Koordinaten und Glanzlichteinwirkungen berechnen.<br /><br /> **Eingabe:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> Die Oberflächennormale des aktuellen Pixels, definiert im Tangentialraum des aktuellen Pixels. Damit können Sie die sichtbare Oberflächennormale wie beim Normal Mapping stören.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Der Reflektionsvektor.|Keiner|  
 |**Glänzend**|Berechnet die Glanzlichteinwirkung entsprechend dem Phong-Beleuchtungsmodell, unter Verwendung der angegebenen Oberflächennormalen.<br /><br /> Glanzlicht gibt einem Objekt eine leuchtende, spiegelnde Erscheinung, z.B. Wasser, Kunststoff oder Metalle.<br /><br /> **Eingabe:**<br /><br /> `Surface Normal`: `float3`<br /> Die Oberflächennormale des aktuellen Pixels, definiert im Tangentialraum des aktuellen Pixels. Damit können Sie die sichtbare Oberflächennormale wie beim Normal Mapping stören.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Die Farbeinwirkung von Glanzlichtern.|Keiner|
-
-
-

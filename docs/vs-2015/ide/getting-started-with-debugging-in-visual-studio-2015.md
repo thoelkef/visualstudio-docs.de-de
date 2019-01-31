@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764847"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
  Sie haben also herausgefunden, wie der Editor funktioniert, und Code erstellt. Nun möchten Sie mit dem Debuggen von Code beginnen. In Visual Studio 2015 besteht das Debuggen wie bei den meisten IDEs aus zwei Phasen: Erstellen des Codes zum Abfangen und Beheben von Projekt- und Compilerfehlern und Ausführen dieses Codes in der Umgebung zum Abfangen und Beheben von Laufzeit- und dynamischen Fehlern.
 
 ### <a name="configuring-a-build"></a>Konfigurieren von Builds
- Es gibt zwei grundlegende Arten der Buildkonfiguration: **Debuggen von** und **Version**. Die erste Konfiguration erzeugt eine langsamere und größere ausführbare Datei, die für ein umfangreicheres interaktives Debuggen zur Laufzeit verwendet werden kann, aber nie ausgeliefert werden sollte. Mit der zweiten wird eine schnellere, optimierte ausführbare Datei erstellt, die (zumindest aus Sicht des Compilers) ausgeliefert werden kann.
+ Es gibt zwei grundlegende Arten der Buildkonfiguration: **Debug** und **Release**. Die erste Konfiguration erzeugt eine langsamere und größere ausführbare Datei, die für ein umfangreicheres interaktives Debuggen zur Laufzeit verwendet werden kann, aber nie ausgeliefert werden sollte. Mit der zweiten wird eine schnellere, optimierte ausführbare Datei erstellt, die (zumindest aus Sicht des Compilers) ausgeliefert werden kann.
 
  Die Standardbuildkonfiguration ist **Debug**.
 
@@ -184,7 +184,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
  ![Visual Studio 2015-Diagnosetools-Fenster](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Ausführen von Komponententests
- Komponententests sind Programme, die Codepfade in Ihrer App oder Ihrem Dienst ausführen. Visual Studio 2015 enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Verwenden Sie ein Komponententest-Framework, um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. Wenn Sie Visual Studio 2015 Enterprise verwenden, können die Tests automatisch nach jedem Build ausgeführt werden.
+ Komponententests sind Programme, die Codepfade in Ihrer App oder Ihrem Dienst ausführen. Visual Studio 2015 enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Verwenden Sie ein Unittest-Framework, um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. Wenn Sie Visual Studio 2015 Enterprise verwenden, können die Tests automatisch nach jedem Build ausgeführt werden.
 
  Weitere Informationen finden Sie unter [Generieren intelligenter Komponententests für Ihren Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 

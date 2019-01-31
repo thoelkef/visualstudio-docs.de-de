@@ -1,25 +1,20 @@
 ---
 title: Leistungsregeln für die .NET Framework-Verwendung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0706a5279a2ab338cc6e50cce25051b4fba7b366
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a9c976560b39fd8a9146733d78cd3a094ed3b118
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755111"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Leistungsregeln für die .NET Framework-Verwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +24,9 @@ Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestim
 |||  
 |-|-|  
 |[DA0001: StringBuilder für Verkettungen verwenden](../profiling/da0001-use-stringbuilder-for-concatenations.md)|Aufrufe von <xref:System.String.Concat%28System.String%2CSystem.String%29?displayProperty=fullName> machen einen großen Teil der Profilerstellungsdaten aus. Verwenden Sie ggf. die <xref:System.Text.StringBuilder>-Klasse zum Erstellen von Zeichenfolgen aus mehreren Segmenten.|  
-|[DA0005: Häufige GC2-Auflistung](../profiling/da0005-frequent-gc2-collections.md)|Bei der Garbage Collection der Generation 2 wird eine relativ hohe Anzahl von .NET-Speicherobjekten freigegeben. Wenn zu viele kurzlebige Objekte die Garbage Collection der Generation 1 überleben, kann schnell ein unverhältnismäßig hoher Aufwand für die Speicherverwaltung entstehen.|  
+|[DA0005: Häufige Ausführung einer GC der Generation 2](../profiling/da0005-frequent-gc2-collections.md)|Bei der Garbage Collection der Generation 2 wird eine relativ hohe Anzahl von .NET-Speicherobjekten freigegeben. Wenn zu viele kurzlebige Objekte die Garbage Collection der Generation 1 überleben, kann schnell ein unverhältnismäßig hoher Aufwand für die Speicherverwaltung entstehen.|  
 |[DA0006: Equals() für Werttypen überschreiben](../profiling/da0006-override-equals-parens-for-value-types.md)|Aufrufe der `Equals`-Methode oder der Gleichheitsoperatoren eines öffentlichen Werttyps machen einen großen Teil der Profilerstellungsdaten aus. Implementieren Sie ggf. eine effizientere Methode.|  
-|[DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|In den Profilerstellungsdaten wurde eine Vielzahl von .NET Framework-Ausnahmehandlern aufgerufen. Verwenden Sie ggf. eine andere Kontrollflusslogik, um die Anzahl der ausgelösten Ausnahmen zu verringern.|  
+|[DA0007: Vermeiden der Verwendung von Ausnahmen für die Ablaufsteuerung](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|In den Profilerstellungsdaten wurde eine Vielzahl von .NET Framework-Ausnahmehandlern aufgerufen. Verwenden Sie ggf. eine andere Kontrollflusslogik, um die Anzahl der ausgelösten Ausnahmen zu verringern.|  
 |[DA0010: Speicherintensive GetHashCode-Funktionen](../profiling/da0010-expensive-gethashcode.md)|Aufrufe der `GetHashCode`-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die `GetHashCode`-Methode belegt Arbeitsspeicher. Verringern Sie die Komplexität der Methode.|  
 |[DA0011: Speicherintensive CompareTo-Funktionen](../profiling/da0011-expensive-compareto.md)|Die `CompareTo`-Methode des Typs ist aufwändig, oder die Methode belegt Arbeitsspeicher. Verringern Sie die Komplexität der `CompareTo`-Methode.|  
 |[DA0012: Starke Reflektion](../profiling/da0012-significant-amount-of-reflection.md)|Aufrufe der <xref:System.Reflection?displayProperty=fullName>-Methode, z.B. <xref:System.Reflection.IReflect.InvokeMember%2A> und <xref:System.Reflection.IReflect.GetMember%2A> oder der Typmethoden (beispielsweise <xref:System.Type.InvokeMember%2A>) machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys.|  
@@ -43,6 +38,3 @@ Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestim
 |[DA0024: Übermäßige GC-CPU-Zeit](../profiling/da0024-excessive-gc-cpu-time.md)|Die bei der Profilerstellung erfassten Systemleistungsdaten deuten darauf hin, dass für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung übermäßig viel Zeit aufgewendet wird. Diese Regel wird ausgelöst, wenn die Zeit, die für die Garbage Collection aufgewendet wurde, den oberen Schwellenwert der Regel DA0023 überschreitet.|  
 |[DA0038: Hohes Maß an Sperrkonflikten](../profiling/da0038-high-rate-of-lock-contentions.md)|Die zusammen mit den Profilerstellungsdaten erfassten Systemleistungsdaten deuten darauf hin, dass während der Anwendungsausführung ein überaus hohes Maß an Sperrkonflikten aufgetreten ist. Wiederholen Sie die Profilerstellung mit der Nebenläufigkeitsmethode, um die Ursache der Konflikte zu ermitteln.|  
 |[DA0039: Sehr hohes Maß an Sperrkonflikten](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Die zusammen mit den Profilerstellungsdaten erfassten Systemleistungsdaten deuten darauf hin, dass während der Anwendungsausführung ein übermäßig hohes Maß an Sperrkonflikten aufgetreten ist. Wiederholen Sie die Profilerstellung mit der Nebenläufigkeitsmethode, um die Ursache der Konflikte zu ermitteln. Diese Regel wird ausgelöst, wenn die Rate von Sperrkonflikten den oberen Schwellenwert der Regel DA0038 überschreitet.|
-
-
-

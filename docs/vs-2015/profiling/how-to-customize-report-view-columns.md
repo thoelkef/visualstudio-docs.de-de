@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Anpassen von Spalten in Berichtsansichten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bfa51d15145606b7f17dc21d91e240ec006826bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aec26c293c0603196613a325c48946f124573cbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769278"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Gewusst wie: Anpassen von Spalten in Berichtsansichten
+# <a name="how-to-customize-report-view-columns"></a>Vorgehensweise: Anpassen von Spalten in Berichtsansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Leistungstools in Visual Studio Team System Development Edition sind in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE), vollständig integriert, um eine reibungslose Benutzererfahrung anzubieten Die folgende Liste stellt für Ansichten dar, die durch Hinzufügen, Entfernen und Neuanordnen von Spalten angepasst werden können:  
@@ -64,6 +59,3 @@ Leistungstools in Visual Studio Team System Development Edition sind in der inte
 4.  Klicken Sie auf die Pfeilschaltfläche, um Spalten neu anzuordnen.  
   
 5.  Klicken Sie auf **OK**.
-
-
-
