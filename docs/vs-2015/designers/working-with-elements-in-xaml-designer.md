@@ -1,25 +1,20 @@
 ---
 title: Arbeiten mit Elementen in XAML-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 49ec96150eda9bf0a62b9767fefbfd5936aef840
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49896951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774164"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,9 +66,9 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
   
 1.  Wählen Sie die Elemente aus, die Sie ausrichten möchten. Sie können mehr als ein Element auswählen, indem Sie die STRG-Taste gedrückt halten, während Sie die Elemente auswählen.  
   
-2.  Wählen Sie eine der folgenden Eigenschaften unter **HorizontalAlignment** in die **Layout** Abschnitt des Fensters Eigenschaften: **Links**, **Center**, **rechts**, oder **Stretch**.  
+2.  Wählen Sie im Abschnitt **Layout** des Eigenschaftenfensters unter **Horizontale Ausrichtung** eine der folgenden Eigenschaften aus: **Links**, **Mitte**, **Rechts** oder **Strecken**.  
   
-3.  Wählen Sie eine der folgenden Eigenschaften unter **Vertikale Ausrichtung** im **Layout**-Abschnitt des Eigenschaftenfensters aus: Oben, Mitte, Unten oder Strecken. **Top**, **Center**, **unten**, oder **Stretch**.  
+3.  Wählen Sie im Abschnitt **Layout** des Eigenschaftenfensters unter **Vertikale Ausrichtung** eine der folgenden Eigenschaften aus: **Oben**, **Mitte**, **Unten** oder **Strecken**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>So richten Sie zwei oder mehr Elemente mithilfe von Ausrichtungslinien aus  
   
@@ -128,6 +123,3 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

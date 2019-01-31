@@ -1,14 +1,9 @@
 ---
 title: Dialogfeld „Erweiterte Buildeinstellungen“ (C#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763347"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld "Erweiterte Buildeinstellungen" (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Des
   Gibt an, ob ein arithmetischer Ganzzahlauszug, der sich außerhalb des Bereichs der [geprüften](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) oder [ungeprüften](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) Schlüsselwörter befindet und der einen Wert außerhalb des Bereichs des Datentyps nach sich zieht, eine Ausnahme verursacht. Weitere Informationen finden Sie unter [/checked (C# Compiler Options)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).  
   
   **Nicht auf mscorlib.dll verweisen**  
-  Gibt an, ob "mscorlib.dll" in der Definition des gesamten Programms importiert wird <xref:System> Namespace. Klicken Sie dieses Kästchen an, wenn Sie Ihren eigenen <xref:System>-Namespace und Objekte definieren oder erstellen möchten. Weitere Informationen finden Sie unter [/nostdlib (C# Compiler Options)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
+  Gibt an, ob „mscorlib.dll“ in Ihr Programm importiert wird und damit den gesamten Namespace <xref:System> definiert. Klicken Sie dieses Kästchen an, wenn Sie Ihren eigenen <xref:System>-Namespace und Objekte definieren oder erstellen möchten. Weitere Informationen finden Sie unter [/nostdlib (C# Compiler Options)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
   
 ## <a name="output"></a>Output  
  Die folgenden Optionen geben Ihnen die Möglichkeit, erweiterte Ausgabeoptionen anzugeben.  
@@ -85,6 +80,3 @@ Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Des
 ## <a name="see-also"></a>Siehe auch  
  [C#-Compileroptionen](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [Seite „Erstellen“, Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

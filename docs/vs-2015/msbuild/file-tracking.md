@@ -1,27 +1,22 @@
 ---
 title: Dateinachverfolgung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 179124c09e0846cbbf649a819bd8c954b5a72e7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5afc245bd16954ba348b4ec581238bf17e5d994
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758712"
 ---
 # <a name="file-tracking"></a>Dateinachverfolgung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Die Dateinachverfolgung protokolliert Aufrufe an das Windows-Dateisystem für ei
   
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
  Schreiben des Nachverfolgungsprotokolls für den aktuellen Kontext.
-
-
-

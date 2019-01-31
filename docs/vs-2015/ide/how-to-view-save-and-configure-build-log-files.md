@@ -1,27 +1,22 @@
 ---
-title: 'Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760056"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informationen zu diesem Build im Fenster **Ausgabe** angezeigt. Anhand dieser Informationen können Sie beispielsweise einen Buildfehler beheben. Bei C++-Projekten werden die gleichen Informationen in einer TXT-Datei angezeigt, die automatisch erstellt und gespeichert wird. Bei Projekten mit verwaltetem Code können Sie die Informationen aus dem Fenster **Ausgabe** kopieren, in eine TXT-Datei kopieren und diese manuell speichern. Sie können die IDE ebenfalls verwenden, um anzugeben, welche Informationen zu jedem Build angezeigt werden sollen.  
@@ -65,6 +60,3 @@ Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informat
  [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

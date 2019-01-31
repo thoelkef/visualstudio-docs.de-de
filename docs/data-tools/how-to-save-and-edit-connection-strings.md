@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96c55b44e6e6ebbfba27c4daf10512cefe1fd393
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60253ada78391c48543e81093136da15e1446f91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961269"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000418"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Vorgehensweise: Speichern und Bearbeiten von Verbindungszeichenfolgen
 Verbindungszeichenfolgen in Visual Studio-Anwendungen sind in der Anwendungskonfigurationsdatei (auch als Anwendungseinstellungen bezeichnet) gespeichert, oder direkt in der Anwendung hartcodiert. Das Speichern von Verbindungszeichenfolgen in der Anwendungskonfigurationsdatei vereinfacht das Verwalten der Anwendung. Wenn die Verbindungszeichenfolge geändert werden muss, können Sie dies in der Datei mit den Anwendungseinstellungen durchführen (und müssen nicht den Quellcode ändern und die Anwendung dann neu kompilieren).

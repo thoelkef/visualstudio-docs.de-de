@@ -1,27 +1,22 @@
 ---
 title: Installieren und Konfigurieren von Tools zum Erstellen mit iOS | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792862"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787808"
 Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.  
   
 > [!NOTE]
->  Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Wenn Sie die Anweisungen zum Erstellen mit Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden möchten, ersetzen Sie "vcremote" durch "vs-mda-remote".  
+>  Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Wenn Sie die Anweisungen zum Erstellen mit Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden möchten, ersetzen Sie "vcremote" durch "vs-mda-remote".  
   
  Lesen Sie nach der Installation der Tools zum Erstellen mit iOS in diesem Thema nach, wie Sie den Remote-Agent schnell für die iOS-Entwicklung in Visual Studio und auf Ihrem Macintosh-Computer konfigurieren und aktualisieren können.  
   
@@ -247,4 +242,3 @@ Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden
   
 ## <a name="see-also"></a>Siehe auch  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

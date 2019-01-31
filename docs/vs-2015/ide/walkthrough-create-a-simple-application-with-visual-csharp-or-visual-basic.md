@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802615"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +30,14 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
  [Debuggen und Testen der Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Diese exemplarische Vorgehensweise basiert auf Visual Studio Professional, da diese Version die WPF-Anwendungsvorlage enthält, mit deren Hilfe Sie das Projekt für diese exemplarische Vorgehensweise erstellen. Visual Studio Express für Windows Desktop enthält diese Vorlage ebenfalls, nicht aber Visual Studio Express für Windows und Visual Studio Express für das Web. Einführende Informationen zur Verwendung von Visual Studio Express für Windows finden Sie unter [Developer Center für Windows Store-Apps](http://msdn.microsoft.com/windows/apps/br229519). Einführende Informationen zur Verwendung von Visual Studio Express für das Web finden Sie unter [Erste Schritte mit ASP.NET](http://www.asp.net/get-started). Außerdem bestimmen die Edition von Visual Studio und Einstellungen, die Sie verwenden, die Namen und Positionen einiger Elemente der Benutzeroberfläche. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  Diese exemplarische Vorgehensweise basiert auf Visual Studio Professional, da diese Version die WPF-Anwendungsvorlage enthält, mit deren Hilfe Sie das Projekt für diese exemplarische Vorgehensweise erstellen. Visual Studio Express für Windows Desktop enthält diese Vorlage ebenfalls, nicht aber Visual Studio Express für Windows und Visual Studio Express für das Web. Einführende Informationen zur Verwendung von Visual Studio Express für Windows finden Sie unter [Developer Center für Windows Store-Apps](http://msdn.microsoft.com/windows/apps/br229519). Einführende Informationen zur Verwendung von Visual Studio Express für das Web finden Sie unter [Erste Schritte mit ASP.NET](http://www.asp.net/get-started). Außerdem bestimmen die Edition von Visual Studio und Einstellungen, die Sie verwenden, die Namen und Positionen einiger Elemente der Benutzeroberfläche. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ##  <a name="BKMK_ConfigureIDE"></a> Konfigurieren der IDE  
  Wenn Sie Visual Studio zum ersten Mal starten, werden Sie aufgefordert, sich mit einem Microsoft Dienstkonto (Microsoft Service Account; MSA) anzumelden, [Anmelden bei Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Sie müssen sich nicht jetzt anmelden, sondern können dies auch später machen.  
   
  Beim Start von Visual Studio müssen Sie als Nächstes eine Einstellungskombination auswählen, die einen Satz an vordefinierten Anpassungen auf die IDE anwendet. Jede Einstellungskombination wurde entwickelt, um Ihnen die Entwicklung von Anwendungen zu vereinfachen.  
   
- Grundlage dieser exemplarischen Vorgehensweise sind die **Allgemeinen Entwicklungseinstellungen**, bei denen nur ein Mindestmaß an Anpassungen auf die IDE angewendet wird. Wenn Sie bereits C# oder Visual Basic (beides sind gute Optionen) ausgewählt haben, müssen Sie die Einstellungen nicht ändern.  Wenn Sie Ihre Einstellungen ändern möchten, können Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**verwenden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ Grundlage dieser exemplarischen Vorgehensweise sind die **Allgemeinen Entwicklungseinstellungen**, bei denen nur ein Mindestmaß an Anpassungen auf die IDE angewendet wird. Wenn Sie bereits C# oder Visual Basic (beides sind gute Optionen) ausgewählt haben, müssen Sie die Einstellungen nicht ändern.  Wenn Sie Ihre Einstellungen ändern möchten, können Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**verwenden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  Wenn Sie Visual Studio geöffnet haben, können Sie die Toolfenster, die Menüs und Symbolleisten und den Hauptfensterbereich erkennen. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.  
   
@@ -52,7 +47,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  Sie können weitere Anpassungen an Visual Studio vornehmen. Sie können z. B. die Schriftart und Größe des Texts im Editor oder das Farbschema der IDE ändern, indem Sie das Dialogfeld **Optionen** verwenden. Je nach gültiger Einstellungskombination werden möglicherweise einige Elemente in diesem Dialogfeld nicht automatisch angezeigt. Sie können überprüfen, ob alle möglichen Optionen angezeigt werden, indem Sie das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren.  
   
- Abbildung3: Dialogfeld "Optionen"  
+ Abbildung 3: Optionen (Dialogfeld)  
   
  ![Dialogfeld „Optionen“ mit Option „Alle Einstellungen anzeigen“](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -72,7 +67,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    ![IDE mit dunklem Farbschema übernommen](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
   
@@ -97,9 +92,9 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     ![Visual C#-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
+   Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
-   Abbildung 5: Projektelemente  
+   Abbildung 5: Projektelemente  
   
    ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -137,7 +132,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    Das Fenster sollte der folgenden Abbildung entsprechen:  
   
-   Abbildung 7: Greetings-Fenster mit TextBlock-Steuerelement  
+   figure Greetings-Fenster mit TextBlock-Steuerelement  
   
    ![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -167,7 +162,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     Das Fenster sieht wie folgt aus:  
   
-    Abbildung 8: RadioButtons im Greetings-Fenster.  
+    Abbildung 8. RadioButtons im Greetings-Fenster.  
   
     ![Greetings-Formular mit Textblock und zwei RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -264,7 +259,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Ein Dialogfeld wird angezeigt, das angibt, dass ein IOException aufgetreten ist: Ressource "mainwindow.xaml" kann nicht gefunden werden.  
+    Ein Dialogfeld angezeigt wird, gibt an, dass ein IOException aufgetreten ist: Cannot locate resource 'mainwindow.xaml' (Die Ressource „mainwindow.xaml“ kann nicht gefunden werden).  
   
 2. Wählen Sie die Schaltfläche **OK** aus, und beenden Sie anschließend den Debugger.  
   
@@ -340,6 +335,3 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
  [Neues in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   
  [Get Started Developing with Visual Studio (Erste Schritte bei der Entwicklung mit Visual Studio)](../ide/get-started-developing-with-visual-studio.md)   
  [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
-
-
-

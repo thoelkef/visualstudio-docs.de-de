@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064059"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834438"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Melden eines Problems mit Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [melden ein P
 
 Wenn Sie ein Problem mit Visual Studio 2015 auftreten, möchten wir davon erfahren, damit wir das diagnostizieren und beheben können.  Mithilfe des Tools **Problem melden** können Sie detaillierte Informationen zum Problem erfassen und mit wenigen Mausklicks an Microsoft senden.
 
- Microsoft respektiert Ihre Privatsphäre. Weitere Informationen dazu, wie wir Daten behandeln, die Sie uns senden, finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/en-us/dn948229).
+ Microsoft respektiert Ihre Privatsphäre. Weitere Informationen dazu, wie wir Daten behandeln, die Sie uns senden, finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Öffnen Sie das Tool „Problem melden“
  Klicken Sie auf das Benutzerfeedbacksymbol neben **Schnellstart** in der Titelleiste, oder klicken Sie auf           **Hilfe &#124; Feedback senden &#124; Problem melden**.

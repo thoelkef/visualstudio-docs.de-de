@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4dc9e8ef259c67abe0b972584153c7eba8e80b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3f30d9724346686a980fc139ff48474557145a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042972"
 ---
 # <a name="compiland"></a>Compiland
 Es gibt ein `SymTagCompiland` symbol für jede Kompiliereinheit zur .exe-Datei verknüpft. Kompiliereinheit Informationen Symbole mit aufgeteilt ist eine `SymTagCompiland` -Tag, das abgerufen werden kann, ohne zusätzliche Compiland-Symbole werden geladen und Symbole mit einer `SymTagCompilandDetails` -Tag, das möglicherweise zusätzliche Symbole werden geladen.  

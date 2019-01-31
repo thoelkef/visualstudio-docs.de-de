@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db10bb714fa4ee96030bfce918b01fe877890078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56b2a70ecd0f8d4b7f9e3d49df0e764923f21fac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939607"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 Ruft eine Enumeration, die ermöglicht einem Client die Zeilennummerninformationen aller Funktionen durchlaufen, die inline erweitert wird, direkt oder indirekt auf dieses Symbol in der angegebene Adressbereich befinden.  

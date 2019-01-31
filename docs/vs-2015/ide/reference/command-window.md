@@ -1,14 +1,9 @@
 ---
 title: Befehlsfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788346"
 ---
 # <a name="command-window"></a>Befehlsfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -128,11 +123,8 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen  
- Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"**.  
+ Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\„Programmdateien“** oder **„C:\Programdateien“**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
-
-
-

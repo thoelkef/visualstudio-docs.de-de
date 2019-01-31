@@ -1,23 +1,19 @@
 ---
 title: Problembehandlung bei der Emulator für Android | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754937"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Fehlerbehebung beim Visual Studio-Emulator für Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,7 +255,7 @@ Dieses Thema enthält Informationen zur Lösung von Problemen, die bei der Verwe
 
   Deaktivieren Sie USB3 in den BIOS-Einstellungen des Motherborads und starten Sie den Computer neu, um dieses Problem zu lösen. Prüfen Sie dann, ob Gigabyte ein Update für das BIOS Ihres Motherboards veröffentlicht hat.
 
-  Weitere Informationen finden Sie unter den folgenden Knowledge Base-Artikel: [Startfehler nach Installation der Hyper-V-Rolle auf Gigabyte-Systemen](https://support.microsoft.com/en-us/kb/2693144).
+  Weitere Informationen finden Sie unter den folgenden Knowledge Base-Artikel: [Startfehler nach Installation der Hyper-V-Rolle auf Gigabyte-Systemen](https://support.microsoft.com/kb/2693144).
 
 ##  <a name="ADB"></a> Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt
  Wenn der Emulator ausgeführt wird, jedoch anscheinend nicht mit der ADB (Android Debug Bridge) verbunden ist oder in Android-Tools nicht angezeigt wird, die ADB verwenden (z. B. Android Studio oder Eclipse), müssen Sie möglicherweise den Ort anpassen, an dem der Emulator nach ADB sucht. Der Emulator verwendet zum Ermitteln des Speicherorts Ihres Android SDK einen Registrierungsschlüssel und sucht in dem Verzeichnis nach der \platform-tools\adb.exe-Datei. So ändern Sie den vom Emulator verwendeten Android-SDK-Pfad:

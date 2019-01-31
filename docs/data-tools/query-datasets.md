@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfbc185a8bc0a340f41f7fae1b6075846bd9f46b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852491"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028653"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden die `FindBy` Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Anweisung, die Schleife in der-Auflistung der Tabelle Zeilen, oder verwenden Sie [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

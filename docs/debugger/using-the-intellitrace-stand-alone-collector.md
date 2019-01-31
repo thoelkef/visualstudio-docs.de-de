@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227719"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986799"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden den eigenständigen IntelliTrace Collector (C#, Visual Basic)
 
@@ -78,7 +78,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installieren von Collector
 
-1. Erstellen Sie das Collector-Verzeichnis auf dem Server der App, beispielsweise:  **C:\IntelliTraceCollector**
+1. Erstellen Sie das Collector-Verzeichnis auf dem Server der App, beispielsweise: **C:\IntelliTraceCollector**
 
 2. Sie finden den Collector im Microsoft Download Center oder dem Installationsordner von Visual Studio 2013 Update 3. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
@@ -86,7 +86,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      1. Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
 
-     2. Speichern Sie IntelliTraceCollector.exe im Collector-Verzeichnis, beispielsweise:  **C:\IntelliTraceCollector**
+     2. Speichern Sie „IntelliTraceCollector.exe“ im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
      3. Führen Sie die IntelliTraceCollector.exe aus. Dadurch wird die IntelliTraceCollection.cab-Datei extrahiert.
 
@@ -98,13 +98,13 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
           **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  Legen Sie IntelliTraceCollection.cab im Collector-Verzeichnis ab, beispielsweise:  **C:\IntelliTraceCollector**
+     2.  Legen Sie „IntelliTraceCollection.cab“ im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
 
 3. Erweitern Sie die Datei "IntelliTraceCollection.cab":
 
    1.  Öffnen Sie auf dem Server der App ein Eingabeaufforderungsfenster als Administrator.
 
-   2.  Wechseln Sie zum Collector-Verzeichnis, beispielsweise:  **C:\IntelliTraceCollector**
+   2.  Wechseln Sie zum Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
    3.  Verwenden Sie den Befehl **expand** , einschließlich des Punkts (**.**) am Ende, zum Erweitern der IntelliTraceCollection.cab-Datei:
 
@@ -167,7 +167,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Berechtigungen für das ITRACE-Dateiverzeichnis einrichten
 
-1. Erstellen Sie das .iTrace-Dateiverzeichnis auf dem Server der App, beispielsweise:  **C:\IntelliTraceLogFiles**
+1. Erstellen Sie das .iTrace-Dateiverzeichnis auf dem Server der App, beispielsweise: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Um eine Verlangsamung der App zu vermeiden, wählen Sie einen Speicherort auf einem lokalen Hochgeschwindigkeitsdatenträger, der nicht sehr aktiv ist.
@@ -191,7 +191,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - oder - 
+       - oder -
 
    - So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:
 

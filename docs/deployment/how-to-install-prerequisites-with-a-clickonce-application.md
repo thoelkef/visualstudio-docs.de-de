@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973966"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen erfordern, dass die richtige Version von .NET Framework auf einem Computer installiert ist, bevor sie ausgeführt werden können; viele Anwendungen verfügen über sowie andere erforderliche Komponenten. Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung können Sie eine Reihe von Komponenten, die für die zusammen mit der Anwendung verpackt werden. Bei der Installation wird eine Überprüfung ausgeführt werden, für jede erforderliche Komponente, um festzustellen, ob sie bereits vorhanden ist; Wenn nicht es vor der Installation von installiert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  

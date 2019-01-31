@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8b25b3a5ef82093403392fcce9c60beeb36c156
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7efe1fc6b4a1bf47a2b9d2fe34eee203fcf014a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018926"
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 Verwenden Sie die Tools in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)], um den XAML-Code in der App zu debuggen. Beim Erstellen eines Projekts werden alle Fehler im Bereich **Ergebnisse** angezeigt. Doppelklicken Sie auf einen Fehler, um das dazugehörige Markup zu suchen. Wenn Sie mehr Platz zum Arbeiten benötigen, können Sie den Bereich **Ergebnisse** durch Drücken von F12 ausblenden.  

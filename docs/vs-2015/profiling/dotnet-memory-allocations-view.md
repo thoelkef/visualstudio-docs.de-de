@@ -1,14 +1,9 @@
 ---
 title: .NET-Speicherbelegungsansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798806"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
 |**Inklusive Bytes in %**|– Bei einer Funktion der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der inklusive Belegungen des übergeordneten Typs dieser Funktion war.<br />– für einen Typ: der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der den Instanzen des Typs zugeordnet war.|  
 |**Exklusive Bytes**|– für eine Funktion: die Anzahl der Bytes im Arbeitsspeicher, die von der Funktion dem Objekt des übergeordneten Typs zugeordnet wurden. Diese Zahl schließt den Arbeitsspeicher mit nicht ein, der von seinen untergeordneten Funktionen zugeordnet wurde.<br />– Bei einem Typ die Gesamtanzahl von Bytes, die bei der Profilerstellung für die Instanzen des Typs zugeordnet waren.|  
 |**Exklusive Bytes %**|– Bei einer Funktion der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der exklusive Belegungen des übergeordneten Typs dieser Funktion war.<br />– für einen Typ: der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der den Instanzen des Typs zugeordnet war.|
-
-
-

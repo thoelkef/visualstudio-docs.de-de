@@ -1,26 +1,21 @@
 ---
 title: Generieren von Komponententests für Code mit IntelliTest | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790507"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generieren von Komponententests für Code mit IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
 ## <a name="get-started-with-intellitest"></a>Erste Schritte mit IntelliTest  
  Sie benötigen Visual Studio Enterprise.  
   
-### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Untersuchen: Verwenden Sie IntelliTest, um Ihren Code zu untersuchen und Komponententests zu generieren.  
+### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Untersuchen: Verwenden von IntelliTest zum Untersuchen Ihres Codes und Generieren von Komponententests  
  Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstellen Sie Komponententests](#NoRun) andernfalls, bevor Sie sie generieren.  
   
 1.  Öffnen Sie Ihre Projektmappe in Visual Studio. Öffnen Sie dann die Klassendatei, welche die zu testenden Methoden enthält.  
@@ -53,7 +48,7 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
      Prüfen Sie bei bestandenen Tests, ob die gemeldeten Ergebnisse in der Ergebnisspalte den Erwartungen an den Code entsprechen. Korrigieren Sie bei nicht bestandenen Tests den Code entsprechend. Führen Sie dann IntelliTest noch einmal aus, um die Korrekturen zu überprüfen.  
   
-### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Beibehalten: Speichern Sie die Komponententests als Regressionsreihe.  
+### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Beibehalten: Speichern der Komponententests als Regressionssammlung  
   
 1.  Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.  
   
@@ -67,7 +62,7 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
      Wenn sich der Methodencode ändert, führen Sie IntelliTest erneut aus, damit die Komponententests mit den Änderungen synchron bleiben.  
   
-### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Hilfe: Verwenden Sie IntelliTest für die Codeuntersuchung.  
+### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Hilfe: Verwenden von IntelliTest für die Codeuntersuchung  
   
 1.  Wenn Ihr Code komplizierter ist, hilft Ihnen IntelliTest bei der Untersuchung des Codes. Ein Beispiel: Sie verwenden eine Methode, die eine Schnittstelle als Parameter hat, und diese Schnittstelle wird von mehreren Klassen implementiert. Dann ermittelt IntelliTest diese Klassen und gibt eine Warnung aus.  
   
@@ -87,16 +82,16 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
      ![IntelliTest zum Generieren der Testdaten erneut ausführen](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
-### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Angeben: Verwenden Sie IntelliTest, um Eigenschaften für die Richtigkeit zu überprüfen, die Sie im Code angeben.  
+### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Angeben: Verwenden von IntelliTest zum Überprüfen der Richtigkeit der im Code festgelegten Eigenschaften  
  Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von den generierten Komponententests überprüft werden soll. Diese Spezifikation ist in einer Methode gekapselt, die wie eine Testmethode aussieht, aber universell quantifiziert ist. Dies ist die parametrisierte Komponententestmethode, und alle Assertionen, die Sie vornehmen, müssen für alle möglichen Eingabewerte gelten, die IntelliTest generieren kann.  
   
 ##  <a name="QandALink"></a> Fragen und Antworten  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>F: Kann IntelliTest für nicht verwalteten Code verwendet werden?  
- **A:** Nein, IntelliTest funktioniert nur mit verwaltetem Code.  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Frage: Kann IntelliTest für nicht verwalteten Code verwendet werden?  
+ **Antwort:** Nein, IntelliTest funktioniert nur mit verwaltetem Code.  
   
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>F: Wann gilt ein generierter Test als bestanden oder nicht bestanden?  
- **A:** Er gilt wie jeder andere Komponententest als bestanden, wenn keine Ausnahmen auftreten. Er gilt als nicht bestanden, wenn eine Assertion fehlschlägt oder wenn der getestete Code eine nicht behandelte Ausnahme auslöst.  
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Frage: Wann gilt ein generierter Test als bestanden oder nicht bestanden?  
+ **Antwort:** Er gilt wie jeder andere Komponententest als bestanden, wenn keine Ausnahmen auftreten. Er gilt als nicht bestanden, wenn eine Assertion fehlschlägt oder wenn der getestete Code eine nicht behandelte Ausnahme auslöst.  
   
  Wenn Sie einen Test haben, der bestanden wird, wenn bestimmte Ausnahmen ausgelöst werden, können Sie je nach Ihren Anforderungen auf Ebene der Testmethode, der Testklasse oder der Assembly eines der folgenden Attribute festlegen:  
   
@@ -108,22 +103,22 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
 -   **PexAllowedExceptionFromAssemblyAttribute**  
   
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>F: Kann ich dem parametrisierten Komponententest Annahmen hinzufügen?  
- **A:** Ja. Geben Sie mit Annahmen an, welche Testdaten für den Komponententest einer bestimmten Methode nicht benötigt werden. Verwenden Sie die Klasse <xref:Microsoft.Pex.Framework.PexAssume> , um Annahmen hinzuzufügen. Sie können z. B. die Annahme hinzufügen, dass die Längenvariable ungleich null ist:  
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Frage: Kann ich dem parametrisierten Komponententest Annahmen hinzufügen?  
+ **Antwort:** Ja. Geben Sie mit Annahmen an, welche Testdaten für den Komponententest einer bestimmten Methode nicht benötigt werden. Verwenden Sie die Klasse <xref:Microsoft.Pex.Framework.PexAssume> , um Annahmen hinzuzufügen. Sie können z. B. die Annahme hinzufügen, dass die Längenvariable ungleich null ist:  
   
  `PexAssume.IsNotNull(lengths);`  
   
  Wenn Sie eine Annahme hinzufügen und IntelliTest erneut ausführen, werden die nicht mehr relevanten Testdaten entfernt.  
   
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>F: Kann ich dem parametrisierten Komponententest Assertionen hinzufügen?  
- **A:** Ja. IntelliTest prüft beim Ausführen der Komponententests, dass die Assertion in Ihrer Anweisung wirklich richtig ist. Verwenden Sie die Klasse <xref:Microsoft.Pex.Framework.PexAssert> oder die Assertions-API aus dem Testframework, um Assertionen hinzufügen. Sie können z. B. die Assertion hinzufügen, dass zwei Variablen gleich sind.  
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Frage: Kann ich dem parametrisierten Komponententest Assertionen hinzufügen?  
+ **Antwort:** Ja. IntelliTest prüft beim Ausführen der Komponententests, dass die Assertion in Ihrer Anweisung wirklich richtig ist. Verwenden Sie die Klasse <xref:Microsoft.Pex.Framework.PexAssert> oder die Assertions-API aus dem Testframework, um Assertionen hinzufügen. Sie können z. B. die Assertion hinzufügen, dass zwei Variablen gleich sind.  
   
  `PexAssert.AreEqual(a, b);`  
   
  Wenn Sie eine Assertion hinzufügen und IntelliTest erneut ausführen, wird geprüft, ob die Assertion gültig ist; falls nicht, schlägt der Test fehl.  
   
-###  <a name="NoRun"></a> F: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?  
- **A:** Ja, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus.  
+###  <a name="NoRun"></a> Frage: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?  
+ **Antwort:** Ja, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen** aus.  
   
  ![Klicken Sie mit der rechten Maustaste auf „Editor“ und wählen Sie „IntelliTest erstellen“](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -131,15 +126,12 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
  ![Erstellen Sie IntelliTest mit standardmäßigen MSTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>F: Kann ich andere Komponententestframeworks mit IntelliTest verwenden?  
- **A:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Wenn Sie Visual Studio neu gestartet und Ihre Projektmappe geöffnet haben, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus. Wählen Sie hier das installierte Framework aus:  
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Frage: Kann ich andere Komponententestframeworks mit IntelliTest verwenden?  
+ **Antwort:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Wenn Sie Visual Studio neu gestartet und Ihre Projektmappe geöffnet haben, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus. Wählen Sie hier das installierte Framework aus:  
   
  ![Wählen Sie anderen Komponententest-Framework für IntelliTest aus](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
  Führen Sie dann IntelliTest aus, um einzelne Komponententests in den zugehörigen .g.cs-Dateien zu generieren.  
   
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>F: Kann ich mehr darüber erfahren, wie die Tests generiert werden?  
- **A:** Ja, einen allgemeinen Überblick finden Sie in diesem [Blogbeitrag](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-
-
-
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Frage: Kann ich mehr darüber erfahren, wie die Tests generiert werden?  
+ **Antwort:** Ja, einen allgemeinen Überblick finden Sie in diesem [Blogbeitrag](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).

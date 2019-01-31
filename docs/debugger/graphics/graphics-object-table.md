@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a509e88671fc9fec3deb63c172469326d24e169d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016101"
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
 Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direct3D-Objekte erkennen, die einen Frame Ihres Spiels oder Ihrer App unterstützen.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7673a4a9ccde94589ba03bd130645558ec088f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965261"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013157"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Vorgehensweise: Verwenden des Suchtools
 Können Sie das Suchtool im der **Fenster Suchen** Dialogfeld zum Anzeigen von Eigenschaften oder Meldungen. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, deaktivierte untergeordnete Fenster überlappen.  

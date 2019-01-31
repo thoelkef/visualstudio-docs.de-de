@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3b7805f54275c1f2370f981cdd97bdeabfa58c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832163"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069799"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Vorgehensweise: Suchen nach einem Thread in der Threadansicht
 Sie können mithilfe der Thread-ID oder eine Modul-Zeichenfolge als Suchkriterium für einen bestimmten Thread in der Ansicht "Threads" suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Threads in der Threadstruktur angezeigt werden.  

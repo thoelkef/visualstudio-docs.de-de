@@ -1,14 +1,9 @@
 ---
 title: FormatVersion-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +13,13 @@ ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 817731ae86eeb5f6e093cdb2b0e93000761f141a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755124"
 ---
 # <a name="formatversion-task"></a>FormatVersion-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ ms.locfileid: "49269328"
   
 Fügt die Revisionsnummer an die Versionsnummer an.  
   
--   Fall 1: Input: Version=\<undefined>; Revision=\<don't care>; Output: OutputVersion="1.0.0.0"  
+-   Fall 1: Eingabe: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"  
   
--   Fall 2: Input: Version="1.0.0.*" Revision="5" Output: OutputVersion="1.0.0.5"  
+-   Fall 2: Eingabe: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
--   Fall 3: Input: Version="1.0.0.0" Revision=\<don't care>; Output: OutputVersion="1.0.0.0"  
+-   Fall 3: Eingabe: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `FormatVersion` -Aufgabe beschrieben.  
@@ -54,6 +49,3 @@ Fügt die Revisionsnummer an die Versionsnummer an.
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

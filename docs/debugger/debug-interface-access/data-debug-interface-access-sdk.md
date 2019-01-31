@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d52ee800d048ea9973fd6a26bdc0836c58a722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa3191533bb28071f4161017e35f91a5a9c4b3e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999261"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Daten (Debug Interface Access SDK)
 Alle Variablen, z. B. Parameter, lokale Variablen, globale Variablen und Klassenmember, werden identifiziert, indem `SymTagData` Symbole. Konstante Werte (`LocIsConstant`) auch bei dieser Art angegeben werden.  
