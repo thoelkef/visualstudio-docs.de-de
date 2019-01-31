@@ -1,27 +1,22 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49913890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769431"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,10 +479,8 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 ```  
   
 ## <a name="whats-next"></a>Weitere Informationen  
- Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Erfahren Sie, wie Sie mit Visual Studio zu erstellen, bearbeiten, erstellen und Testen von MSBuild-Projektdateien, finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Informationen zum Erstellen und Bearbeiten sowie zum Build und zu Tests von MSBuild-Projektdateien in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Siehe auch  
 [Übersicht über MSBuild](msbuild.md)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-
-

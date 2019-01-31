@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06fb3d5af44a220a1eb88fd7a4df53bc589972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df711f61500d241d9f5ec0234d4f9b29f525c4f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013941"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"
 Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einem bestimmten Thread. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Ansicht "Threads"](../debugger/threads-view.md) Fenster, oder Sie öffnen [Meldungsansicht](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

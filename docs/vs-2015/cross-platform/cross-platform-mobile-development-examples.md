@@ -1,27 +1,22 @@
 ---
 title: Beispiele für die plattformübergreifende mobile Entwicklung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783761"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Beispiele für plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
   Um eines der Beispiele in Visual Studio öffnen, laden Sie die ZIP-Datei herunter, und öffnen Sie im Explorer die **Eigenschaften** -Seite der heruntergeladenen Datei. Wählen Sie die Schaltfläche **Zulassen** aus, und wählen Sie dann **OK**aus. Extrahieren Sie den Inhalt der ZIP-Datei in einem geeigneten Speicherort, öffnen Sie den C++-Ordner im extrahierten Beispiel, und öffnen Sie die Projektmappendatei.  
   
   Um das Beispiel zu erstellen, drücken Sie F7, oder wählen Sie auf der Menüleiste den Befehl **Erstellen**, **Projektmappe erstellen**aus.
-

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881100"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035249"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-apps in Visual Studio
 
@@ -116,7 +116,7 @@ ASP.NET-Projekte verfügen über *"Web.config"* Dateien standardmäßig die beid
 
 1. Öffnen Sie in Visual Studio des ASP.NET-Projekts *"Web.config"* Datei.  
   
-2. *"Web.config"* eine XML-Datei, so enthält, die mithilfe von Tags markierte, geschachtelte Abschnitte. Suchen Sie die `configuration/system.web/compilation` Abschnitt. (Wenn die `compilation` Element nicht vorhanden ist, erstellen Sie ihn.)
+2. *"Web.config"* eine XML-Datei, so enthält, die mithilfe von Tags markierte, geschachtelte Abschnitte. Machen Sie den Abschnitt `configuration/system.web/compilation` ausfindig. (Wenn die `compilation` Element nicht vorhanden ist, erstellen Sie ihn.)
   
 3. Stellen Sie sicher, dass die `debug` -Attribut in der `compilation` Element nastaven NA hodnotu `true`. (Wenn die `compilation` Element nicht enthalten. ein `debug` Attribut, fügen Sie es hinzu, und legen Sie ihn auf `true`.) 
   

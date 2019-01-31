@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
 - locations
@@ -21,15 +16,15 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8631d10d56a35f8cf4ef6024d087bf94ec89b9d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781001"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Gewusst wie: Verweisen auf den Namen oder Speicherort der Projektdatei
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -40,7 +35,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
   
 #### <a name="to-use-the-msbuildprojectname-property"></a>So verwenden Sie die MSBuildProjectName-Eigenschaft  
   
-- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Zum Beispiel:  
+- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Beispiel:  
   
   ```  
   <CSC Sources = "@(CSFile)"   
@@ -84,5 +79,3 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 ## <a name="see-also"></a>Siehe auch  
 [MSBuild](msbuild.md)  
  [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
-

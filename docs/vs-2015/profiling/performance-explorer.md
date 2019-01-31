@@ -1,14 +1,9 @@
 ---
 title: Leistungs-Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,13 +13,13 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784099"
 ---
 # <a name="performance-explorer"></a>Leistungs-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Mit den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools kön
 |----------|---------------------|  
 |**Neue Techniken für Windows 8**|[Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**Verständnis der Profilerstellungskonzepte:** Informationen zu den Konzepten und Begriffen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden.|[Übersichten](../profiling/overviews-performance-tools.md)|  
-|**Erste Schritte:** Informationen zu den grundlegenden Vorgehensweisen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|  
+|**Erste Schritte:** Informationen zu den grundlegenden Prozeduren, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|  
 |**Konfigurieren einer Profilerstellungssitzung:** Informationen zu komplexeren Verfahren zum Angeben der Projekte oder Binärdateien für die Profilerstellung, zum Auswählen einer Profilerstellungsmethode, zum Auswählen der zu sammelnden Leistungsdaten und zum Festlegen anderer Optionen für die Profilerstellungssitzung.|[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)|  
 |**Steuern der Daten, die vom Profiler gesammelt werden:** Informationen zum Verwenden der Leistungssitzungseigenschaften und interaktiven Verfahren zum Starten und Beenden der Profilerstellung und zum Beschränken der gesammelten Leistungsdaten auf die gewünschten Informationen.|[Steuern der Datenauflistung](../profiling/controlling-data-collection.md)|  
 |**Ermitteln von Leistungsproblemen:** Informationen zum Anzeigen und Analysieren der gesammelten Leistungsdaten im Berichtsansichtsfenster der Profilerstellungstools.|[Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)|  
@@ -55,6 +50,3 @@ Mit den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools kön
   
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungstools](../profiling/profiling-tools.md)
-
-
-

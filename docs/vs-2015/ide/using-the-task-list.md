@@ -1,14 +1,9 @@
 ---
 title: Verwenden der Aufgabenliste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801169"
 ---
 # <a name="using-the-task-list"></a>Verwenden der Aufgabenliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
   
 #### <a name="to-open-the-task-list"></a>So öffnen Sie die Aufgabenliste  
   
--   Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: STRG+\\,T).  
+-   Auf der **Ansicht** Menü wählen **Aufgabenliste** (Tastatur: CTRL+\\, T).  
   
      ![Fenster mit Aufgabenliste](../ide/media/vs2015-task-list.png "vs2015_Aufgabenliste")  
   
@@ -91,7 +86,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
  Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO` -Aufgabe in der Liste angezeigt.  
   
 ###  <a name="customTokens"></a> Benutzerdefinierte Token  
- Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, UNDONE, NOTE. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.  
+ Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, RÜCKGÄNGIG GEMACHT WERDEN, BEACHTEN. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.  
   
  Sie können außerdem eigene benutzerdefinierte Token erstellen.  
   
@@ -127,12 +122,9 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
   
 #### <a name="to-create-a-shortcut"></a>So erstellen Sie eine Verknüpfung  
   
--   Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten. Wählen Sie **Bearbeiten > Lesezeichen > Verknüpfung für Aufgabenliste hinzufügen** aus, oder drücken Sie STRG+K, STRG+H.  
+-   Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten. Wählen Sie **bearbeiten &#124; Lesezeichen &#124; Verknüpfung für Aufgabenliste hinzufügen** , oder drücken Sie (Tastatur: STRG+K, STRG+H  
   
      Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

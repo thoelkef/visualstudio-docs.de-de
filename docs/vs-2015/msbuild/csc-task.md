@@ -1,14 +1,9 @@
 ---
 title: Csc-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 657535e73294508ac59330cd379c1c6bd192a0b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766188"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 |`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Fügt eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Ressource in die Ausgabedatei ein.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName`entspricht dem `identifier`-Parameter des `/resource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [/resource (C# Compiler Options)](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f).|  
 |`ResponseFiles`|Optionaler `String` -Parameter.<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Weitere Informationen finden Sie unter [@ (C# Compiler Options)](http://msdn.microsoft.com/library/dda4fa9f-a02c-400f-8b6a-d58834e13d7f) (@ [C#-Compileroptionen]).|  
 |`Sources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt mindestens eine [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Quelldatei an.|  
-|`TargetType`|Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`. Weitere Informationen finden Sie unter [/target (C# Compiler Options)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f).|  
+|`TargetType`|Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`sein. Weitere Informationen finden Sie unter [/target (C# Compiler Options)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f).|  
 |`TreatWarningsAsErrors`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden alle Warnungen als Fehler behandelt. Weitere Informationen finden Sie unter [/warnaserror (C# Compiler Options)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).|  
 |`UseHostCompilerIfAvailable`|Optionaler `Boolean` -Parameter.<br /><br /> Weist die Aufgabe an, das prozessinterne Compilerobjekt (falls verfügbar) zu verwenden. Wird nur von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet.|  
 |`Utf8Output`|Optionaler `Boolean` -Parameter.<br /><br /> Protokolliert die Compilerausgabe mit UTF-8-Codierung. Weitere Informationen finden Sie unter [/utf8output (C# Compiler Options)](http://msdn.microsoft.com/library/27ff7381-c281-45d7-b2eb-1ad644b1354e).|  
@@ -103,6 +98,3 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-
-

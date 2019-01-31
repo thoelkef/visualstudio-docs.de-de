@@ -1,14 +1,9 @@
 ---
 title: Analysieren der durch Leistungstools erstellten Daten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -21,13 +16,13 @@ ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 caps.latest.revision: 46
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57d223cfe71db947a33545d27b6a75947db6b016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794303"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analysieren der durch Leistungstools erstellten Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Leistungsberichte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstell
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Verwenden Sie Leistungsregeln, um Probleme schnell zu identifizieren: Regeln für** -Profilerstellungstools identifizieren häufige Probleme und helfen Ihnen dabei, zum Quellcode zu navigieren, der das Problem enthält. Ausführliche Hilfethemen bieten oft eine Lösung.|-   [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Verwenden Sie Leistungsregeln, um Probleme schnell zu identifizieren:** Leistungsregeln der Profilerstellungstools identifizieren häufige Probleme und helfen, die Sie ganz einfach auf den Quellcode navigieren, die das betreffende Problem enthält. Ausführliche Hilfethemen bieten oft eine Lösung.|-   [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)|  
 |**Details der Berichtsanzeige verstehen:** Berichtsansichten von Profilerstellungstools bieten aggregierte Leistungsdaten für die Prozesse, Threads, Module und Funktionen einer Profilerstellungsausführung. Die angezeigten Daten sind von der Profilerstellungsmethode abhängig, die zur Datensammlung verwendet wurde.|-   [Leistungsberichtansichten](../profiling/performance-report-views.md)|  
 |**Konfigurieren, Sortieren und Filtern von Berichtsansichten:** Sie können die Datenspalten, die in einem Bericht angezeigt werden sollen, bestimmen und festlegen, in welcher Reihenfolge sie angezeigt werden; des Weiteren können Sie die Berichtszeilen sortieren und die Daten so filtern, dass nur ein von Ihnen bestimmtes Zeitsegment angezeigt wird.|-   [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)|  
   
@@ -49,6 +44,3 @@ Leistungsberichte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstell
   
 ## <a name="see-also"></a>Siehe auch  
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
-
-
-

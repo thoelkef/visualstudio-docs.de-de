@@ -3,10 +3,7 @@ title: Neuerungen in Visual Studio 2015 | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790732"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -144,7 +141,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
  Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zum Einstieg finden Sie unter [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Fehlerliste
  Die Fehlerliste kann nun nach einer beliebigen Spalte gefiltert werden. Sie zeigt zudem eine Liveansicht von Fehlern, Warnungen und Codeanalysen für die gesamte C#- oder Visual Basic-Projektmappe an, selbst wenn eine Codeänderung Tausende von Warnungen nach sich zieht. Die neue Fehlerliste ist abwärtskompatibel zur derzeitigen Verwendung. Weitere Informationen finden Sie unter [Error List Window](./ide/reference/error-list-window.md).

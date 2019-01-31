@@ -1,27 +1,22 @@
 ---
 title: Tipps und Tricks zu Barrierefreiheit | Microsoft Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800787"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "49241019"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Barrierefreiheit sowie nützliche Tastenkombinationen.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Speichern Ihrer IDE-Einstellungen  
- Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Häufig verwendete Windows-Tastenkombinationen  
  Sie können viele standardmäßige Windows-Tastenkombinationen für Aufgaben in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwenden. Dazu zählen folgende Tastenkombinationen:  
@@ -55,10 +50,7 @@ ms.locfileid: "49241019"
 |Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|  
 |Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**RÜCKTASTE**|  
 |Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT** + **ALT**|  
-|IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **TAB** **Hinweis:** Drücken Sie **STRG** + **TAB** erneut, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  
+|IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **Registerkarte** **beachten:**  Drücken Sie **STRG** + **Registerkarte** erneut aus, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

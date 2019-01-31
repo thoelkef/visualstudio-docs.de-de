@@ -1,13 +1,9 @@
 ---
 title: Übersicht über die Festlegung von Zielversionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -17,13 +13,13 @@ ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768879"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +71,7 @@ In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie d
 > [!NOTE]
 >  Ein .NET Framework Client Profile ist eine Teilmenge von .NET Framework, das einen eingeschränkten Satz von Bibliotheken und Funktionen bereitstellt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
- Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind DLL-Dateien, die in einer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+ Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind DLL-Dateien, die in einer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
  Weitere Informationen zu Assemblyverweisen finden Sie unter [Resolving Assemblies at Design Time (Auflösen von Assemblys zur Entwurfszeit)](../msbuild/resolving-assemblies-at-design-time.md).
 

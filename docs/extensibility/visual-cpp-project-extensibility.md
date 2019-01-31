@@ -1,6 +1,6 @@
 ---
 title: Visual C++-projekterweiterbarkeit
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013703"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232051"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -274,6 +274,8 @@ Die Microsoft.Cpp.Common.Tasks.dll implementiert diese Aufgaben:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Wenn Sie ein Tool verfügen, die die gleiche Aktion wie ein vorhandenes Tool, und ähnliche Befehlszeilenoptionen (wie "Clang-cl" und CL) aufweist, können Sie die gleiche Aufgabe für beide Ausgaben.
 
 Wenn Sie einen neuen Task für einen Buildtool erstellen möchten, können Sie anhand der folgenden Optionen auswählen:
@@ -294,11 +296,14 @@ Wenn Sie einen neuen Task für einen Buildtool erstellen möchten, können Sie a
 
 Der inkrementelle Standardwert MSBuild-Build ausgerichtet ist, verwenden `Inputs` und `Outputs` Attribute. Wenn Sie diese angeben, ruft MSBuild das Ziel nur, wenn eine der Eingaben einen neueren Zeitstempel als alle Ausgaben auf. Da Quelldateien häufig enthalten oder andere Dateien importieren und Tools erzeugen verschiedene Ausgaben abhängig von den Optionen des Tools zu erstellen, ist schwierig, geben Sie alle Mögliche Eingaben und Ausgaben in MSBuild-Ziele.
 
-Um dieses Problem zu lösen, verwendet der C++-Build eine andere Methode, um inkrementelle Builds zu unterstützen. Die meisten Ziele nicht angeben von Eingaben und Ausgaben, und es wird daher immer während des Buildvorgangs ausgeführt wird. Die Aufgaben, die aufgerufen wird, von Zielen zu schreiben, Informationen zu allen Eingaben und Ausgaben in *Tlog* Dateien, die eine TLog-Dateierweiterung aufweisen. Die Nachverfolgungsprotokolldateien sind von späteren Builds verwendet, um zu überprüfen, was hat sich geändert und muss neu erstellt werden, und was auf dem neuesten Stand ist.
+Um dieses Problem zu lösen, verwendet der C++-Build eine andere Methode, um inkrementelle Builds zu unterstützen. Die meisten Ziele nicht angeben von Eingaben und Ausgaben, und es wird daher immer während des Buildvorgangs ausgeführt wird. Die Aufgaben, die aufgerufen wird, von Zielen zu schreiben, Informationen zu allen Eingaben und Ausgaben in *Tlog* Dateien, die eine TLog-Dateierweiterung aufweisen. Die Nachverfolgungsprotokolldateien sind von späteren Builds verwendet, um zu überprüfen, was hat sich geändert und muss neu erstellt werden, und was auf dem neuesten Stand ist. Die Nachverfolgungsprotokolldateien sind auch die einzige Quelle für die Standardeinstellung der aktualitätsprüfung Build, in der IDE.
 
 Um die Eingaben und Ausgaben zu bestimmen, einheitlichen Aufgaben tracker.exe verwenden und die [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) Klasse, die von MSBuild bereitgestellt.
 
 Microsoft.Build.CPPTasks.Common.dll definiert die `TrackedVCToolTask` öffentliche abstrakte Basisklasse. Die meisten systemeigenen Tools Aufgaben werden von dieser Klasse abgeleitet.
+
+Seit Visual Studio 2017 Update 15.8, können Sie die `GetOutOfDateItems` Task implementiert Microsoft.Cpp.Common.Tasks.dll TLog-Dateien für benutzerdefinierte Ziele mit bekannten Eingaben und Ausgaben erzeugt.
+Alternativ können sie durch Verwenden der `WriteLinesToFile` Aufgabe. Finden Sie unter den `_WriteMasmTlogs` im Ziel `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* als Beispiel.
 
 ## <a name="tlog-files"></a>TLog-Dateien
 
@@ -314,7 +319,6 @@ Die [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) K
 
 Befehlszeile TLog-Dateien enthalten Informationen über die Befehlszeilen, die in den Build verwendet werden. Sie werden nur verwendet für inkrementelle Builds nicht auf dem neuesten Stand Überprüfungen aus, damit das interne Format von der MSBuild-Aufgabe bestimmt wird, die diese hervorbringen.
 
-Wenn Nachverfolgungsprotokolldateien, die von einer Aufgabe erstellt werden, empfiehlt es sich, diese Hilfsklassen verwenden, um sie zu erstellen. Jedoch, weil die Standard-aktualitätsprüfung jetzt ausschließlich auf die Nachverfolgungsprotokolldateien verwendet, ist manchmal empfiehlt es sich um sie in einem Ziel ohne einen Task zu erstellen. Sie können diese schreiben, mit der `WriteLinesToFile` Aufgabe. Finden Sie unter den `_WriteMasmTlogs` im Ziel `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* als Beispiel.
 
 ### <a name="read-tlog-format"></a>Read-TLog-format
 

@@ -1,14 +1,9 @@
 ---
 title: Toolbox | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -20,13 +15,13 @@ ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799797"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
  In der **Toolbox** werden nur Elemente angezeigt, die sich für den Dateityp eignen, in dem Sie arbeiten. Sie können eine Suche in der Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern. Wenn das Projekt ein Steuerelement erfordert, das vom Client Profile nicht unterstützt wird, können Sie durch Bearbeiten der Projekteigenschaften für das Projekt festlegen, dass das gesamte Framework als Ziel festgelegt wird.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten  
  Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.  
@@ -58,6 +53,3 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden der Toolbox](../../ide/using-the-toolbox.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: JavaScript-Speicher | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,13 +22,13 @@ ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51798936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792206"
 ---
 # <a name="javascript-memory"></a>JavaScript-Memory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
    Automatische Filterung von Objekten, die nicht direkt im App-Code erstellt werden. Sie können Daten auch nach Objektnamen filtern.  
   
-  Ein Lernprogramm, das Sie durch den Prozess Identifizieren eines Speicherverlusts in einer funktionierenden app führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)  
+  Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   In diesem Thema:  
   
@@ -131,7 +126,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 -   [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff). Es werden differenzielle Werte zwischen Momentaufnahmen angezeigt. Diese Ansichten zeigen Unterschiede in der Objektgröße und -anzahl an.  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess Identifizieren eines Speicherverlusts in einer funktionierenden app führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)  
+ In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Öffnen Sie die App in Visual Studio.  
   
@@ -407,6 +402,3 @@ if (performance && performance.mark) {
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
-
-
-

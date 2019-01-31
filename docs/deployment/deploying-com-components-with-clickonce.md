@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984703"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige Aufgabe. Komponenten müssen global registriert werden und daher können dazu führen, dass unerwünschte Nebeneffekte zwischen überlappende Anwendungen. Dies ist in der Regel kein Problem in .NET Framework-Anwendungen, da Komponenten vollständig isoliert zu einer Anwendung werden oder Seite-an-Seite kompatibel sind. Visual Studio können Sie isolierte COM-Komponenten auf dem Windows XP oder neueren Betriebssystemen bereitgestellt.  
@@ -163,7 +163,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
   
 - Die Komponente verwaltet einen physischen oder virtuellen Gerät für das System, z. B. einen Gerätetreiber für eine Druckwarteschlange.  
   
-- Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
+- Die Komponente ist einer verteilbaren Datenzugriff. Data-Anwendungen erfordern in der Regel eine separate Data Access redistributable installiert werden, bevor sie ausgeführt werden können. Sie sollten nicht versuchen, zum Isolieren von Komponenten wie z. B. die Microsoft ADO-Datensteuerelement, Microsoft OLE DB oder Microsoft Data Access Components (MDAC). Wenn Ihre Anwendung MDAC oder SQL Server Express verwendet, sollten Sie diese stattdessen als erforderliche Komponenten festlegen; finden Sie unter [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   In einigen Fällen kann es möglich, dass der Entwickler es für die registrierungsfreie COM Umgestalten der Komponente sein Wenn dies nicht möglich ist, können Sie weiterhin erstellen und Veröffentlichen von Anwendungen, die über das standard-Registrierung-Schema mithilfe des Bootstrappers abhängig. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   

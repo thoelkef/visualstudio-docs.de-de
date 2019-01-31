@@ -1,14 +1,9 @@
 ---
 title: Dokumente, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778577"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumente, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246206"
 Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung (IDE) zu steuern und externe Änderungen an Dokumenten und Dateien zu verwalten. Sie können auf dieses Dialogfeld zugreifen, indem Sie im Menü **Extras** auf **Optionen** klicken, und anschließend auf dem Knoten **Umgebung** **Dokumente** auswählen. Wenn **Dokumente** nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Gespeichertes aktives Dokumentfenster wiederverwenden**  
  Wenn diese Option aktiviert ist, wird Ihr aktuelles Dokument geschlossen, falls es bereits gespeichert wurde, und ein neues Dokument im selben Fenster wird geöffnet. Wenn das aktuelle Dokument noch nicht gespeichert wurde bleibt es geöffnet. Das neue Dokument wird in einem separaten Fenster geöffnet. Wenn diese Option deaktiviert ist, werden neue Dokumente immer in separaten Fenstern geöffnet.  
@@ -95,6 +90,3 @@ Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Anzeige von Dokum
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)   
  [Verschiedene Dateien](../../ide/reference/miscellaneous-files.md)   
  [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)
-
-
-

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269760"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231570"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Remotedebuggen von Visual C++-Projekt in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer, installieren und die Remotetools auf dem Computer ausführen, werden Sie Ihre app bereitstellen, konfigurieren Sie das Projekt, um die Verbindung mit dem Remotecomputer in Visual Studio, und klicken Sie dann bereitstellen und Ausführen Ihrer app.
@@ -96,9 +96,11 @@ Der Remotedebugger ist nur unter Windows 7 und höher (nicht "phone") und Versio
 11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.  
   
     > [!TIP]
-    >  Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **mymfc**, und wählen Sie dann **Bereitstellen** aus.  
+    > Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **mymfc**, und wählen Sie dann **Bereitstellen** aus.
   
-    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen Sie einen Projektordner für die zusätzlichen Dateien (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Neuer Ordner**). Fügen Sie die Dateien anschließend zum Ordner hinzu (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Vorhandenes Element**, und wählen Sie dann die Dateien aus). Legen Sie auf der Seite **Eigenschaften** der einzelnen Dateien die Option **In Ausgabeverzeichnis kopieren** auf **Immer kopieren** fest.
+    Wenn Sie Dateien ohne Code, die von der Anwendung erforderlich sind verfügen, können Sie angeben, in **Weitere Dateien zum Bereitstellen** auf die **Remote-Windows-Debugger** Seite.
+
+    Alternativ Sie können umfassen die Dateien in Ihr Projekt, und legen Sie die **Content** Eigenschaft **Ja** in die **Eigenschaften** Seite für jede Datei. Diese Dateien werden kopiert, um die **Bereitstellungsverzeichnis** angegebenen, auf die **Remote-Windows-Debugger** Seite. Sie können auch ändern, die **Elementtyp** zu **Datei kopieren** und gibt es zusätzliche Eigenschaften angeben, bei Bedarf die Dateien in einem Unterordner des kopiert werden sollen die **Bereitstellungsverzeichnis**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen 
 

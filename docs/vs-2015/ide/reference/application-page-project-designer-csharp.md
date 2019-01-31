@@ -1,14 +1,9 @@
 ---
 title: Seite "Anwendung", Projekt-Designer (C#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778645"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 > [!NOTE]
 >  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Anwendungstyp**  
  Gibt den Typ der zu erstellenden Anwendung an. Für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.  
@@ -108,6 +103,3 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md)  
  [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

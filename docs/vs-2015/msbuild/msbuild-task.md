@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772336"
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +39,15 @@ Erstellt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekte aus e
 |---------------|-----------------|  
 |`BuildInParallel`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die gemäß `Projects`-Parameter angegebenen Projekte nach Möglichkeit gleichzeitig erstellt. Der Standardwert ist `false`.|  
 |`Projects`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu erstellenden Projektdateien an.|  
-|`Properties`|Optionaler `String` -Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Eigenschaftenname-Wert-Paare, die als globale Eigenschaften auf das untergeordnete Projekt angewendet werden. Wenn Sie diesen Parameter angeben, entspricht sie funktional dem Festlegen von Eigenschaften, die beim Erstellen mit [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) den Schalter **/property** aufweisen. Zum Beispiel:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Wenn Sie Eigenschaften mithilfe des `Properties`-Parameters in das Projekt übergeben, erstellt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] selbst dann eine neue Instanz des Projekts, wenn die Datei bereits geladen wurde. Wurde eine neue Instanz des Projekts erstellt, behandelt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] diese als ein anderes Projekt mit anderen globalen Eigenschaften, das gleichzeitig mit anderen Instanzen des Projekts erstellt werden kann. So können z.B. eine Releasekonfiguration und eine Debugkonfiguration gleichzeitig erstellen.|  
+|`Properties`|Optionaler `String` -Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Eigenschaftenname-Wert-Paare, die als globale Eigenschaften auf das untergeordnete Projekt angewendet werden. Wenn Sie diesen Parameter angeben, entspricht sie funktional dem Festlegen von Eigenschaften, die beim Erstellen mit [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) den Schalter **/property** aufweisen. Beispiel:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Wenn Sie Eigenschaften mithilfe des `Properties`-Parameters in das Projekt übergeben, erstellt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] selbst dann eine neue Instanz des Projekts, wenn die Datei bereits geladen wurde. Wurde eine neue Instanz des Projekts erstellt, behandelt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] diese als ein anderes Projekt mit anderen globalen Eigenschaften, das gleichzeitig mit anderen Instanzen des Projekts erstellt werden kann. So können z.B. eine Releasekonfiguration und eine Debugkonfiguration gleichzeitig erstellen.|  
 |`RebaseOutputs`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die Pfade der relativen Pfade von Zielausgabeelementen der erstellten Projekte angepasst, damit sie relativ zum aufrufenden Projekt sind. Der Standardwert ist `false`.|  
 |`RemoveProperties`|Optionaler `String` -Parameter.<br /><br /> Gibt die zu entfernenden globalen Eigenschaften an.|  
 |`RunEachTargetSeparately`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, ruft die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgabe die einzelnen an [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] übergebenen Ziele in der Liste nicht gleichzeitig, sondern nacheinander auf. Wenn für diesen Parameter `true` eingestellt wird, ist gewährleistet, dass nachfolgende Ziele selbst dann aufgerufen werden, wenn zuvor aufgerufene Ziele nicht erfolgreich waren. Ansonsten würde ein Buildfehler den Aufruf aller nachfolgenden Ziele beenden. Der Standardwert ist `false`.|  
 |`SkipNonexistentProjects`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden Projektdateien übersprungen, die sich nicht auf dem Datenträger befinden. Ansonsten verursachen Projekte dieser Art einen Fehler.|  
 |`StopOnFirstFailure`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wenn eines der Projekte nicht erstellt werden kann, werden keine weiteren Projekte erstellt. Dies wird zurzeit nicht unterstützt, wenn Sie gleichzeitig (mit mehreren Prozessoren) erstellen.|  
 |`TargetAndPropertyListSeparators`|Optionaler `String[]` -Parameter.<br /><br /> Gibt eine Liste mit Zielen und Eigenschaften als `Project`-Elementmetadaten an. Bei Trennzeichen werden vor der Verarbeitung die Escapezeichen entfernt. So wird z.B. % 3 b (';' mit Escapezeichen) behandelt, als wäre es ein ';' ohne Escapezeichen.|  
-|`TargetOutputs`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Ausgaben der erstellten Ziele von allen Projektdateien zurück. Es werden nur die Ausgaben der angegebenen Ziele zurückgegeben, jedoch keine Ausgaben, die möglicherweise für Ziele vorhanden sind, von denen diese Ziele abhängen.<br /><br /> Der `TargetOutputs`-Parameter enthält zudem die folgenden Metadaten:<br /><br /> -   `MSBuildSourceProjectFile`: Die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdatei, die das Ziel enthält, das die Ausgaben festlegt.<br />-   `MSBuildSourceTargetName`: Das Ziel, das die Ausgaben festlegt. **Hinweis:** Wenn Sie die Ausgaben einzelner Projektdateien oder Ziele separat ermitteln möchten, führen Sie die `MSBuild`-Aufgabe für jede Projektdatei und jedes Ziel einzeln aus. Wenn Sie die `MSBuild`-Aufgabe zum Erstellen aller Projektdateien nur einmal ausführen, werden die Ausgaben aller Ziele in einem Array zusammengefasst.|  
-|`Targets`|Optionaler `String` -Parameter.<br /><br /> Das Ziel oder die Ziele, die in den Projektdateien erstellt werden sollen. Verwenden Sie Semikolons, um eine Liste von Zielnamen zu trennen. Sind in der `MSBuild` Aufgabe keine Ziele angegeben, werden die in den Projektdateien angegebenen Standardziele erstellt. **Hinweis:**: Die jeweiligen Ziele müssen in allen Projektdateien auftreten. Wenn dies nicht der Fall ist, tritt ein Buildfehler auf.|  
+|`TargetOutputs`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Ausgaben der erstellten Ziele von allen Projektdateien zurück. Es werden nur die Ausgaben der angegebenen Ziele zurückgegeben, jedoch keine Ausgaben, die möglicherweise für Ziele vorhanden sind, von denen diese Ziele abhängen.<br /><br /> Der `TargetOutputs`-Parameter enthält zudem die folgenden Metadaten:<br /><br /> -   `MSBuildSourceProjectFile`: Die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdatei, die das Ziel enthält, das die Ausgaben festlegt.<br />-   `MSBuildSourceTargetName`: Das Ziel, das die Ausgaben festlegt. **Hinweis**:  Wenn Sie die Ausgaben einzelner Projektdateien oder Ziele separat ermitteln möchten, führen Sie die `MSBuild`-Aufgabe für jede Projektdatei und jedes Ziel einzeln aus. Wenn Sie die `MSBuild`-Aufgabe zum Erstellen aller Projektdateien nur einmal ausführen, werden die Ausgaben aller Ziele in einem Array zusammengefasst.|  
+|`Targets`|Optionaler `String` -Parameter.<br /><br /> Das Ziel oder die Ziele, die in den Projektdateien erstellt werden sollen. Verwenden Sie Semikolons, um eine Liste von Zielnamen zu trennen. Sind in der `MSBuild` Aufgabe keine Ziele angegeben, werden die in den Projektdateien angegebenen Standardziele erstellt. **Hinweis**:  Die jeweiligen Ziele müssen in allen Projektdateien auftreten. Wenn dies nicht der Fall ist, tritt ein Buildfehler auf.|  
 |`ToolsVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die `ToolsVersion` an, die verwendet werden muss, um Projekte zu erstellen, die an diese Aufgabe übergeben werden.<br /><br /> Ermöglicht es einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgabe, ein Projekt zu erstellen, das auf eine Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] abzielt, die von der im Projekt angegebenen Version abweicht. Gültige Werte sind `2.0`, `3.0` und `3.5`. Der Standardwert lautet `3.5`.|  
 |`UnloadProjectsOnCompletion`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das Projekt entladen, sobald der Vorgang abgeschlossen ist.|  
 |`UseResultsCache`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben (sofern vorhanden). Beim Ausführen der MSBuild-Aufgabe wird das jeweilige Ergebnis in einem Gültigkeitsbereich (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> als Liste von Buildelementen zwischengespeichert.|  
@@ -198,6 +193,3 @@ Erstellt [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekte aus e
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

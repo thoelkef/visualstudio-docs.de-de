@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9cb24bb4ea3f1edbb36f8e0f1219f6a0c653ec8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920630"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069120"
 ---
 # <a name="how-to-debug-injected-code"></a>Vorgehensweise: Debuggen von eingefügtem Code
 

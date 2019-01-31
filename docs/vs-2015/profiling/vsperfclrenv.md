@@ -1,14 +1,9 @@
 ---
 title: VSPerfCLREnv | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -19,13 +14,13 @@ ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ff359904b2b4d8b10dbc180f076606651028e80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768084"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ VsPerfCLREnv [/option]
  **VSPerfCLREnv-Optionen zum Einschließen von Ebeneninteraktionsdaten**  
   
 > [!WARNING]
->  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] angezeigt werden.  
+>  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
   
  Die Profilerstellung für die Ebeneninteraktion bietet zusätzliche Informationen zu ADO.NET-Abfragen in mehrstufigen Anwendungen. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Interaktionsdaten können zu jeder Profilerstellung hinzugefügt werden, unabhängig von der Profilerstellungsmethode.  
   
@@ -118,6 +113,3 @@ VSPerfCmd /Attach:MyService.exe
   
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

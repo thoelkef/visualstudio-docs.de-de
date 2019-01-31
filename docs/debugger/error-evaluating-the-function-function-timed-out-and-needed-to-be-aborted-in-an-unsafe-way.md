@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be26ff3c1c878cee5f2760897f3652de30c52d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883310"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004785"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Auswerten der Funktion &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen werden
 
@@ -46,6 +46,6 @@ Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versuc
  
 Wenn die vorherigen Lösungen das Problem nicht beheben, wechseln Sie zu **Tools** > **Optionen**, und deaktivieren Sie die Einstellung **Debuggen**  >   **Allgemeine** > **eigenschaftenauswertung und andere implizite Funktionsaufrufe**. Dadurch werden die meisten Evaluierungsversionen von impliziten Funktionen deaktiviert und sollte das Problem zu beheben.
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>&Projektmappe Aktivieren der verwalteten Kompatibilitätsmodus
+### <a name="solution-4-enable-managed-compatibility-mode"></a>Projektmappe: "" Aktivieren der verwalteten Kompatibilitätsmodus
 
 Wenn Sie die Legacyversion des Debugmoduls wechseln, können Sie dieser Fehler vermieden werden können. Wechseln Sie zu **Tools** > **Optionen**, und wählen Sie die Einstellung **Debuggen** > **allgemeine**  >  **Verwalteten Kompatibilitätsmodus verwenden**. Weitere Informationen finden Sie unter [allgemeinen Debugoptionen](../debugger/general-debugging-options-dialog-box.md).

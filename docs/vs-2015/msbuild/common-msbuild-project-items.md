@@ -1,14 +1,9 @@
 ---
 title: Gemeinsame MSBuild-Projektelemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796876"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ## <a name="common-items"></a>Gemeinsame Elemente  
  In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.  
   
-### <a name="reference"></a>Verweis  
+### <a name="reference"></a>Referenz  
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.  
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
 |FusionName|Optionale Zeichenfolge. Gibt den einfachen oder starken Fusionsnamen für das Element an.<br /><br /> Wenn dieses Attribut vorhanden ist, führt dies zu Zeiteinsparungen, da die Assemblydatei zum Abrufen des Fusionsnamens nicht geöffnet werden muss.|  
 |SpecificVersion|Optionaler boolescher Wert. Gibt an, ob nur auf die Version im Fusionsnamen verwiesen werden soll.|  
 |Aliase|Optionale Zeichenfolge. Alle Aliase für den Verweis.|  
@@ -54,8 +49,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
-|Guid|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
+|GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Optionale Zeichenfolge. Der Hauptteil der Versionsnummer der Komponente. Beispielsweise "5", wenn die Versionsnummer "5.46" lautet.|  
 |VersionMinor|Optionale Zeichenfolge. Der zweite Teil der Versionsnummer (Nebenversionsnummer) der Komponente. Beispielsweise "46", wenn die Versionsnummer "5.46" lautet.|  
 |LCID|Optionale Zeichenfolge. Die LocaleID (Gebietsschema-ID) für die Komponente.|  
@@ -74,7 +69,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
+|name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|  
   
 ### <a name="projectreference"></a>ProjectReference  
@@ -82,8 +77,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
-|Project|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
+|Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Optionale Zeichenfolge. Der Pfad der Projektdatei, auf die verwiesen wird.|  
   
 ### <a name="compile"></a>Compile  
@@ -126,7 +121,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
 |CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Keine  
+### <a name="none"></a>Keiner  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
 |Elementname|Beschreibung|  
@@ -150,6 +145,3 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 ## <a name="see-also"></a>Siehe auch  
  [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
-
-
-

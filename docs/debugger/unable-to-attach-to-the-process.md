@@ -11,22 +11,22 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: affcff981ee516810f2ed9f6c2337c5145ebc572
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 78246ffbb73aea2bbf6c774ec741d710d87586d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53819574"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042568"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Anfügen an den Prozess nicht möglich
 Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wurde beim Herstellen einer Verbindung zu diesem Computer der Zugriff verweigert.  
   
  Es gibt zwei gängige Szenarios, durch die dieser Fehler verursacht wird:  
   
- Szenario Computer A wird Windows XP ausgeführt. Auf Computer B wird Windows Server 2003 ausgeführt. Die Registrierung auf Computer B enthält den folgenden DWORD-Wert:  
+ **Szenario 1:** Computer A wird Windows XP ausgeführt. Auf Computer B wird Windows Server 2003 ausgeführt. Die Registrierung auf Computer B enthält den folgenden DWORD-Wert:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
@@ -34,7 +34,7 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
   
  Benutzer 2, Administrator beider Computer ist, ist bei Computer a angemeldet. Von dort aus versucht er für die Verbindung zu einer Anwendung, die auf Computer b in Sitzung 1 ausgeführt  
   
- Szenario Ein Benutzer hat auf zwei Computern, A und B in derselben Arbeitsgruppe, angemeldet mit dem gleichen Kennwort auf beiden Computern. Der Debugger auf Computer A ausgeführt wird und versucht, Anfügen an eine verwaltete Anwendung, die auf Computer b-Computer ein **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** festgelegt **Gast**.  
+ **Szenario 2:** Ein Benutzer hat auf zwei Computern, A und B in derselben Arbeitsgruppe, angemeldet mit dem gleichen Kennwort auf beiden Computern. Der Debugger auf Computer A ausgeführt wird und versucht, Anfügen an eine verwaltete Anwendung, die auf Computer b-Computer ein **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** festgelegt **Gast**.  
   
 ### <a name="to-solve-scenario-1"></a>So lösen Sie Szenario 1  
   

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ab1335b846ecccf31addfa134fc63396dc841b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 324066d1f6bd6ad1719b2dc960de2b2357ec8cbd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976380"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Vorgehensweise: Anpassen der Standardwebseite für eine ClickOnce-Anwendung
 Wenn Sie eine ClickOnce-Anwendung im Web veröffentlichen, eine Webseite automatisch generiert und zusammen mit der Anwendung veröffentlicht. Die Standardseite enthält den Namen der Anwendung und Links zu die Anwendung zu installieren, Installieren der erforderlichen Komponenten oder zugreifen auf die Hilfe auf MSDN.  

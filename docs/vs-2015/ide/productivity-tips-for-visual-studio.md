@@ -1,24 +1,20 @@
 ---
 title: Produktivitätstipps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785686"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +115,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
 -   **Suchen von Dialogfeldern, Menübefehlen und Optionen**. Geben Sie im Feld [Schnellstart, Umgebung, Dialogfeld „Optionen“](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie `new project` eingeben:
 
-     Abbildung 3. Ergebnisse des Schnellstarts Liste für `new project`
+     Abbildung 3: Ergebnisse des Schnellstarts Liste für `new project`
 
      ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 

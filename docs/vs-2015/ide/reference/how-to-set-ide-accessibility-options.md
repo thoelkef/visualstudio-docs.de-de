@@ -1,29 +1,24 @@
 ---
 title: 'Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803222"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
+# <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -32,12 +27,12 @@ ms.locfileid: "49867285"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt außerdem Dvorak-Tastaturlayouts, die den Zugriff auf die am häufigsten eingetippten Zeichen vereinfachen. Sie können auch die Standardtastenkombinationen anpassen, die in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verfügbar sind. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editoren, Dialogfelder und Toolfenster  
  Standardmäßig wird in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema unter [Allgemein, Umgebung, Dialogfeld "Optionen"](../../ide/reference/general-environment-options-dialog-box.md) ändern.  
   
- Sie können auch festlegen, dass in der Codeansicht des Editors Popupfenster angezeigt werden. Diese Fenster zeigen Ihnen möglicherweise verfügbare Member für das aktuelle Objekt und die Parameter, die für eine Funktion oder Anweisung benötigt werden. Sie können besonders hilfreich sein, wenn Sie Schwierigkeiten bei der Eingabe über die Tastatur haben. Allerdings kollidiert diese Funktion mit dem Fokus im Code-Editor, was für manche Benutzer problematisch sein kann. Sie können diese Fenster deaktivieren, indem Sie das Dialogfeld **Optionen** öffnen und **Member automatisch auflisten** sowie **Parameterinformationen** im **Text-Editor** auf der Seite **Alle Sprachen** unter **Allgemein** löschen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Sie können auch festlegen, dass in der Codeansicht des Editors Popupfenster angezeigt werden. Diese Fenster zeigen Ihnen möglicherweise verfügbare Member für das aktuelle Objekt und die Parameter, die für eine Funktion oder Anweisung benötigt werden. Sie können besonders hilfreich sein, wenn Sie Schwierigkeiten bei der Eingabe über die Tastatur haben. Allerdings kollidiert diese Funktion mit dem Fokus im Code-Editor, was für manche Benutzer problematisch sein kann. Sie können diese Fenster deaktivieren, indem Sie das Dialogfeld **Optionen** öffnen und **Member automatisch auflisten** sowie **Parameterinformationen** im **Text-Editor** auf der Seite **Alle Sprachen** unter **Allgemein** löschen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Sie können die Fenster in der IDE (Integrated Development Environment, Integrierte Entwicklungsumgebung) so anordnen, dass sie Ihrer individuellen Arbeitsweise entgegenkommen. Sie können jedes Toolfenster andocken, verschieben, ausblenden oder automatisch ausblenden.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49867285"
   
 4.  Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.  
   
-5.  Wählen Sie in den folgenden Steuerelementen Anzeigeoptionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
+5.  Wählen Sie die Anzeigeeinstellungen in den folgenden Optionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
   
 6.  Klicken Sie auf **OK**.  
   
@@ -119,6 +114,3 @@ ms.locfileid: "49867285"
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit](../../ide/reference/resources-for-designing-accessible-applications.md)
-
-
-

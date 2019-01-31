@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018344"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssicherheits-Einschränkungen. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von ClickOnce-Anwendungen anwenden.  
@@ -56,7 +56,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
   
  Als Ausgangspunkt für ein Konfigurieren von Berechtigungen können Sie auf der Seite **Sicherheit** eine Sicherheitszone in der Liste **Zone** auswählen. Wird Ihre Anwendung möglicherweise aus mehreren Zonen bereitgestellt, wählen Sie die Zone mit den wenigsten Berechtigungen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Die Eigenschaften, die festgelegt werden können, variieren je nach Berechtigungssatz (nicht alle Berechtigungssätze haben konfigurierbare Eigenschaften). Weitere Informationen zur vollständigen Liste der Berechtigungen, die Ihre Anwendung anfordern kann, finden Sie unter <xref:System.Security.Permissions>. Weitere Informationen zum Festlegen von Berechtigungen für eine benutzerdefinierte Zone finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ Die Eigenschaften, die festgelegt werden können, variieren je nach Berechtigungssatz (nicht alle Berechtigungssätze haben konfigurierbare Eigenschaften). Weitere Informationen zur vollständigen Liste der Berechtigungen, die Ihre Anwendung anfordern kann, finden Sie unter <xref:System.Security.Permissions>. Weitere Informationen zum Festlegen von Berechtigungen für eine benutzerdefinierte Zone finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Debuggen einer Anwendung, die über eingeschränkte Berechtigungen verfügt  
  Als Entwickler führen Sie Ihren Entwicklungscomputer höchstwahrscheinlich mit "Voll vertrauenswürdig"-Berechtigungen aus. Aus diesem Grund sehen Sie beim Debuggen der Anwendung nicht die Sicherheitsausnahmen, die Benutzern angezeigt werden können, wenn diese die Anwendung mit eingeschränkten Berechtigungen ausführen.  
