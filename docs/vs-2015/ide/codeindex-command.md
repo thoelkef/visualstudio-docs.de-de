@@ -1,14 +1,9 @@
 ---
 title: CodeIndex-Befehl | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797293"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +49,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Option**|**Beschreibung**|  
 |----------------|---------------------|  
 |**/indexingStatus**|Zeigen Sie den Status und die Konfiguration des Codeindexdiensts an.|  
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Indizierung aller Changesets beginnen.<br />-   **off**: Indizierung aller Changesets beenden.<br />-   **keepupOnly**: Indizierung zuvor erstellter Changesets beenden und mit der Indizierung nur der neuen Changesets beginnen.|  
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die Sie nicht indizieren möchten, zur Liste der ignorierten Dateien hinzufügen.<br />-   **remove**: Die Datei, die Sie indizieren möchten, aus der Liste der ignorierten Dateien entfernen.<br />-   **removeAll**: Die Liste der ignorierten Dateien wird geleert und die Indizierung aller Dateien begonnen.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|  
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Die Indizierung aller Changesets wird gestartet.<br />-   **off**: Die Indizierung aller Changesets wird beendet.<br />-   **keepupOnly**: Die Indizierung zuvor erstellter Changesets wird beendet und die Indizierung nur neuer Changesets wird gestartet.|  
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Fügt die Datei, die nicht indiziert werden soll, der Liste ignorierter Dateien hinzu.<br />-   **remove**: Entfernt die Datei, die indiziert werden soll, aus der Liste ignorierter Dateien.<br />-   **removeAll**: Die Liste ignorierter Dateien wird gelöscht, und die Indizierung aller Dateien wird gestartet.<br />-   **view**: Zeigt alle Dateien an, die nicht indiziert werden.|  
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Zeigt die angegebene Anzahl der Dateien an, die die angegebene Größe in KB überschreitet. Sie können dann mithilfe der Option **/ignoreList** diese Dateien von der Indizierung ausschließen.|  
 |**/reindexAll**|Zuvor indizierte Daten werden gelöscht, und die Indizierung wird neu gestartet.|  
 |**/destroyCodeIndex [/noPrompt]**|Der Codeindex wird gelöscht, und alle indizierten Daten werden entfernt. Erfordert keine Bestätigung, wenn Sie die Option **/noPrompt** verwenden.|  
-|**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Steuern Sie, wie viele temporäre Daten CodeLens bei der Verarbeitung von Changesets erstellt. Die Standardgrenze ist 2 GB.<br /><br /> -   **view**: Die aktuelle Größenbeschränkung anzeigen.<br />-   `SizeInGBs`: Die Größenbeschränkung ändern.<br />-   **disable**: Die Größenbeschränkung entfernen.<br /><br /> Diese Grenze wird überprüft, bevor CodeLens ein neues Changeset verarbeitet. Wenn die temporären Daten diese Grenze überschreiten, hält CodeLens die Verarbeitung vergangener und nicht neuer Changesets an. CodeLens beginnt wieder mit der Verarbeitung, nachdem die Daten bereinigt wurden und unter diese Grenze fallen. Die Bereinigung wird automatisch einmal pro Tag ausgeführt. Das bedeutet, dass temporäre Daten diese Grenze möglicherweise überschreiten, bis die Bereinigung ausgeführt wird.|  
-|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Steuern, wie lange der Änderungsverlauf indiziert werden soll. Dies beeinflusst, wie viel Verlauf von CodeLens gezeigt wird. Die Standardgrenze beträgt 12 Monate. Das bedeutet, dass CodeLens Ihren Änderungsverlauf nur aus den vergangenen 12 Monaten anzeigt.<br /><br /> -   **view**: Die aktuelle Anzahl Monate anzeigen.<br />-   **all**: Gesamten Änderungsverlauf indizieren.<br />-   `NumberOfMonths`: Anzahl der Monate ändern, für die der Änderungsverlauf indiziert wird.|  
+|**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Steuern Sie, wie viele temporäre Daten CodeLens bei der Verarbeitung von Changesets erstellt. Die Standardgrenze ist 2 GB.<br /><br /> -   **view**: Die aktuelle Größenbeschränkung anzeigen<br />-   `SizeInGBs`: Die Größenbeschränkung ändern.<br />-   **disable**: Die Größenbeschränkung entfernen.<br /><br /> Diese Grenze wird überprüft, bevor CodeLens ein neues Changeset verarbeitet. Wenn die temporären Daten diese Grenze überschreiten, hält CodeLens die Verarbeitung vergangener und nicht neuer Changesets an. CodeLens beginnt wieder mit der Verarbeitung, nachdem die Daten bereinigt wurden und unter diese Grenze fallen. Die Bereinigung wird automatisch einmal pro Tag ausgeführt. Das bedeutet, dass temporäre Daten diese Grenze möglicherweise überschreiten, bis die Bereinigung ausgeführt wird.|  
+|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Steuern, wie lange der Änderungsverlauf indiziert werden soll. Dies beeinflusst, wie viel Verlauf von CodeLens gezeigt wird. Die Standardgrenze beträgt 12 Monate. Das bedeutet, dass CodeLens Ihren Änderungsverlauf nur aus den vergangenen 12 Monaten anzeigt.<br /><br /> -   **view**: Die aktuelle Anzahl der Monate anzeigen.<br />-   **all**: Den gesamten Änderungsverlauf indizieren.<br />-   `NumberOfMonths`: Die Anzahl der Monate ändern, gemäß der der Änderungsverlauf indiziert werden soll.|  
 |**/collectionName:** `CollectionName`|Gibt den Namen der Teamprojektsammlung an, für die der **CodeIndex**-Befehl ausgeführt werden soll. Erforderlich, wenn Sie **/CollectionId** nicht verwenden.|  
 |**/collectionId:** `CollectionId`|Gibt die ID der Teamprojektsammlung an, für die der **CodeIndex**-Befehl ausgeführt werden soll. Erforderlich, wenn Sie **/CollectionName** nicht verwenden.|  
   
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwalten der Serverkonfiguration mit TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Befehlszeilentools für TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
-
-
-
+ [Verwalten der Serverkonfiguration mit TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Befehlszeilentools für TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)
