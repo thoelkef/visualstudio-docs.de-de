@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c24f35ec68fdfda173cf24d8018102a42ea81b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824599"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976549"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Die Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, durch den Endbenutzer-Lizenzverträge und die Language Packs.  
   
- Weitere Informationen zu der Produkt-Manifeste, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)  
+ Weitere Informationen zu der Produkt-Manifeste, finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="create-the-product-manifest"></a>Das Produktmanifest erstellen  
   
