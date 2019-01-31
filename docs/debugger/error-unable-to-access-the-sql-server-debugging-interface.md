@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cc911368544801e03ec9ac272f91831a652c051
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 950af1d92067d987506e37cd5f87d68f3a9c9f38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916523"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Fehler: Auf die SQL Server-Debugschnittstelle kann nicht zugegriffen werden
 Diese Meldung wird angezeigt, wenn Sie SQL-Debuggen auf einem Computer versuchen, bei dem SQL-Debuggen nicht aktiviert ist.  

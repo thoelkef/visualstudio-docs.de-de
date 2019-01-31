@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269773"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942856"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.  
