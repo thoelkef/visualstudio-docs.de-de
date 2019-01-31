@@ -1,25 +1,20 @@
 ---
 title: Entwickeln von Apps für die universelle Windows-Plattform (UWP) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787017"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +49,9 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
   
   Wenn Sie universelle Windows-Apps mit Visual Studio 2015 auf einer anderen Plattform als Windows 10 entwickeln möchten, sind dies die Einschränkungen:  
   
-- Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können die Emulatoren in Visual Studio, jedoch nicht den Simulator verwenden.  
+- Windows 8.1: Sie können nicht die app lokal (nur auf einem Windows 10-Remotegerät) ausführen. Sie können die Emulatoren in Visual Studio, jedoch nicht den Simulator verwenden.  
   
-- Windows 8.1: Sie können die App nicht lokal ausführen (Nur auf einem Windows-10-Remotegerät). Sie können weder die Emulatoren noch den Simulator in Visual Studio verwenden.  
+- Windows 7: Sie können nicht die app lokal (nur auf einem Windows 10-Remotegerät) ausführen. Sie können weder die Emulatoren noch den Simulator in Visual Studio verwenden.  
   
   Sie können den XAML-Designer nur verwenden, wenn Ihre Entwicklungsplattform Windows 10 ist.  
   
@@ -66,4 +61,3 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
  Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps verfügen, [portieren Sie diese vorhandenen Apps](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , um die neueste Version der universellen Windows-Plattform zu verwenden.  
   
  Nachdem Sie die universelle Windows-App erstellt haben, müssen Sie [Ihre App packen](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , um sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln.
-

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5ec881d8704558ec023aa0562cb7d9ca831c6f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880178"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935332"
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 Mithilfe einer Assertion oder einer `Assert`-Anweisung wird eine Bedingung überprüft, die Sie als Argument der `Assert`-Anweisung angeben. Wenn die Bedingung als "Tue" ausgewertet wird, erfolgt keine Aktion. Wenn die Bedingung auf "False" ausgewertet wird, schlägt die Assertion fehl. Wenn das Programm mit einem Debugbuild ausgeführt wird, wechselt es in den Unterbrechungsmodus.  

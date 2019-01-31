@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden eines Ziels in mehreren Projektdateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,15 +11,15 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769332"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -37,7 +32,7 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projek
   
 1.  Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
   
-2.  Verwenden Sie das `Import`-Element zum Importieren des Projekts. Zum Beispiel:  
+2.  Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -123,6 +118,3 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projek
 ## <a name="see-also"></a>Siehe auch  
  [Import Element (MSBuild)](../msbuild/import-element-msbuild.md)  (Import-Element (MSBuild))  
  [Ziele](../msbuild/msbuild-targets.md)
-
-
-

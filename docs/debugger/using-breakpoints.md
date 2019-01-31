@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e3ec71123cd03c8b5b431d8b8dd6042a610bad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d2d60113e3020e92d44cb45727ac1d422745f03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943090"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.

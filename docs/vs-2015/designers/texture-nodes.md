@@ -1,25 +1,20 @@
 ---
 title: Texturknoten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779839"
 ---
 # <a name="texture-nodes"></a>Texturknoten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Im Shader Designer beproben Texturknoten verschiedene Texturtypen und Geometrien
 |**Texturdimensionen**|Gibt die Breite und Höhe einer 2D-Texturmap aus.<br /><br /> Sie können die Texturdimensionen verwenden, um die Breite und Höhe der Textur in einem Shader zu berücksichtigen.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Die Breite und Höhe der Textur, ausgedrückt als Vektor. Die Breite wird als das erste Element des Vektors gespeichert. Die Höhe wird in das zweite Element gespeichert.|**Textur**<br /> Das Texturregister, das den Texturdimensionen zugeordnet ist.|  
 |**Texeldelta**|Gibt das Delta (Abstand) zwischen den Texeln einer 2D-Texturmap aus.<br /><br /> Sie können mit dem Texeldelta benachbarte Texelwerte in einem Shader sampeln.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Das Delta (Abstand) von einem zum nächsten Texel (diagonal in positiver Richtung verschieben), ausgedrückt als Vektor im normalisierten Texturraum. Sie können die Positionen aller benachbarten Texel ableiten, indem Sie selektiv entweder die U- oder die V- Koordinate des Deltas ignorieren oder negieren.|**Textur**<br /> Das Texturregister, das dem Texel zugeordnet ist.|  
 |**Texturbeispiel**|Entnimmt ein Farbsample aus einer 2D-Texturmap an den angegebenen Koordinaten.<br /><br /> Mit einer Texturmap können Sie Farbdetails auf der Oberfläche eines Objekts bereitstellen.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten, an denen das Sample entnommen wird.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Farbbeispiel.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist.|
-
-
-

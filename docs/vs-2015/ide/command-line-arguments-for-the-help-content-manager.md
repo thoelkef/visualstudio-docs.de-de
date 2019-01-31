@@ -1,25 +1,20 @@
 ---
 title: Befehlszeilenargumente für den Hilfeinhalts-Manager | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778629"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|Nein|Gibt die Stock Keeping Unit (SKU) des Produkts aus der Installationsquelle an und filtert Bücher, die durch den Schalter /SourceURI- ermittelt werden.|  
 |/membership|Nein|-   **Minimum** – Installiert den minimalen Hilfeinhalt auf Basis der SKU, die mit dem Schalter /skuId angegeben wurde. Die Zuordnung zwischen SKU und Inhalt wird in der Service-API verfügbar gemacht.<br />-   **Recommended** – Installiert eine Reihe empfohlener Bücher für die SKU, die mit dem Argument /skuId angegeben werden. Die Installationsquelle ist die Service-API oder die MSHA-Datei.<br />-   **Full** – Installiert den gesamten Satz von Büchern für die SKU, die mit dem Argument /skuId angegeben werden. Die Installationsquelle ist die Service-API oder die MSHA-Datei.|  
 |/locationpath|Nein|Gibt den Standardordner für den lokalen Hilfeinhalt an. Sie dürfen diesen Schalter nur zum Installieren oder Verschieben von Inhalt verwenden. Wenn Sie diesen Schalter angeben, müssen Sie auch den Schalter /silent angeben.|  
-|/silent|Nein|Installiert oder entfernt Hilfeinhalte ohne eine Bestätigung durch den Benutzer und ohne Anzeige einer Benutzeroberfläche. Auch im Bereich mit Statusbenachrichtigungen wird kein Symbol angezeigt. Die Ausgabe wird in einer Datei im Verzeichnis %Temp% protokolliert. **Wichtig:** Für eine automatische Installation von Inhalt müssen Sie digital signierte CAB-Dateien verwenden, keine MSHC-Dateien.|  
+|/silent|Nein|Installiert oder entfernt Hilfeinhalte ohne eine Bestätigung durch den Benutzer und ohne Anzeige einer Benutzeroberfläche. Auch im Bereich mit Statusbenachrichtigungen wird kein Symbol angezeigt. Die Ausgabe wird in einer Datei im Verzeichnis %Temp% protokolliert. **Wichtig:**  Für eine automatische Installation von Inhalt müssen Sie digital signierte CAB-Dateien verwenden, keine MSHC-Dateien.|  
 |/launchingApp|Nein|Definiert den Anwendungs- und Katalogkontext, wenn der Help Viewer ohne die übergeordnete Anwendung gestartet wird. Die Argumente für diesen Schalter sind *CompanyName*, *ProductName* und *VersionNumber* (z.B. `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Dies ist erforderlich, wenn Sie Inhalt mit dem Parameter /silent installieren.|  
 |/wait *Sekunden*|Nein|Hält die Vorgänge zum Installieren, Deinstallieren und Aktualisieren an. Wird bereits ein Vorgang für den Katalog ausgeführt, wird eine festgelegte Anzahl von Sekunden gewartet, bis der Prozess fortgesetzt wird. Verwenden Sie 0 für eine unbegrenzte Wartezeit.|  
 |/?|Nein|Führt die Schalter und ihre Beschreibungen für das Befehlszeilentool für den Hilfeinhalts-Manager auf.|  
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>Siehe auch  
  [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)   
  [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md)
-
-
-

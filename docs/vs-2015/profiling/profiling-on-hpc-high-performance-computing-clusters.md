@@ -1,14 +1,9 @@
 ---
 title: Profilerstellung bei HPC-Clustern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,20 +20,20 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802313"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) auf der Microsoft-Website.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:  
   
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.  
@@ -60,8 +55,8 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
 |||  
 |-|-|  
 |*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|  
-|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Der Pfad auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf dem [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedium ist: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilerstellung auf einem HPC-Berechnungsknoten  
  Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistenten, um die Informationen des HPC-Cluster und -Ziel anzugeben. Sie können zusätzliche Optionen in der Eigenschaftenseiten der Leistungssitzung festlegen. Die Profilerstellungstools stellen automatisch die erforderlichen Zielbinärdateien bereit und starten den Profiler und die HPC-Anwendung.  
@@ -155,6 +150,3 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
 |**Präprofilskriptargumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|  
 |**Postprofilskript**|Gibt den Pfad und den Dateinamen eines Skripts an, das auf dem lokalen Entwicklungscomputer nach dem Ende der Profilerstellungssitzung ausgeführt wird.|  
 |**Postprofilskriptargumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Erstellen einer Android Native Activity-App | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: f6bc8d96c6207889f07ec6bf1257be3d620855fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 045955ff33cc4c4e745e0c844f1b2cca80e62955
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773870"
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
 #### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1. Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1. Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
 2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **Native-Activity Application (Android)** aus.  
   
@@ -86,7 +81,6 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
      Visual Studio startet den Emulator, wobei das Laden und Bereitstellen Ihres Codes einige Sekunden in Anspruch nimmt. Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Debugger verwenden, um den Code schrittweise zu durchlaufen, lokale Variablen zu prüfen und Werte anzuzeigen.  
   
-5.  Drücken Sie UMSCHALT + F5, um das Debuggen zu beenden.  
+5.  Drücken Sie UMSCHALTTASTE+F5, um das Debuggen zu beenden.  
   
      Der Emulator ist ein separater Prozess, der weiterhin ausgeführt wird. Sie können Ihren Code mehrfach auf demselben Emulator bearbeiten, kompilieren und bereitstellen.
-

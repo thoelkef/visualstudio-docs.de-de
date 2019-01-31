@@ -1,25 +1,20 @@
 ---
 title: 'Erste Schritte mit PTVS: Erstellen einer Website in Azure | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 3bdbda36-14d2-4fde-ba42-d91042777ff6
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 1c4f0d0a1bf963857cde5dc0c6aa36e2aa04ca7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783195"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Erste Schritte mit PTVS: Erstellen einer Website in Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Beginnen Sie ganz schnell und einfach damit, eine Python-Website in Azure zu ers
 ## <a name="see-also"></a>Siehe auch  
  [Wiki-Dokumentation](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS-Videos: Einstieg und ausführliche Erläuterungen](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-
