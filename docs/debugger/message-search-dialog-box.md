@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53326df5a1f868bda4ee2843ddf658b87176b8b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984872"
 ---
 # <a name="message-search-dialog-box"></a>Meldungssuche (Dialogfeld)
 Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für eine bestimmte Nachricht in [Meldungsansicht](../debugger/messages-view.md). Verschieben Sie den Fokus auf ein Nachrichten anzeigen, um das Dialogfeld anzuzeigen. Wählen Sie dann **Nachricht suchen** aus der **Suche** Menü.  
