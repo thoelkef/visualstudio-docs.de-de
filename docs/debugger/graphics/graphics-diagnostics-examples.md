@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8419ea4f653d870802fd104da2824952b422ab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2509b7e3c373cecfe5cd1554805554afbedd2b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999313"
 ---
 # <a name="graphics-diagnostics-examples"></a>Grafikdiagnosebeispiele
 In diesen Beispielen wird gezeigt, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Grafikdiagnose verwendet wird, um Renderingprobleme in DirectX-basierten Apps zu debuggen.  
@@ -52,4 +52,4 @@ In diesen Beispielen wird gezeigt, wie die [!INCLUDE[vsprvs](../../code-quality/
 ## <a name="debugging-compute-shaders"></a>Debugging von Compute-Shadern  
  Mithilfe der Grafikdiagnose können Sie Compute-Shader-Kernels in DirectCompute debuggen, die falsche Ergebnisse generieren. Mit DirectCompute können Sie die Rechenleistung des GPUs verwenden, um Berechnungen für eine große Anzahl von Datenelementen parallel auszuführen. Bei bestimmten Problemen können Berechnungen durch Verwendung des GPUs sogar sehr viel schneller erfolgen, als durch Verwendung eines gut optimierten CPU-Codes. Herkömmliche Debugger können jedoch Code nicht erkennen, der auf dem GPU ausgeführt wird. Das Debuggen dieser Art von Code erfordert spezielle Tools, die häufig anbieterspezifisch sind, und sich möglicherweise nicht gut in Visual Studio integrieren lassen. Damit Compute-Shader-Debugging eine größere Konsistenz über verschiedene GPUs erzielt, zeichnet die Grafikdiagnose zusätzlich zu Direct3D-Rendereignissen auch DirectCompute-Dispatchereignisse auf. So können Sie Probleme in Ihrem Compute-Shader-Code mit den Ihnen vertrauten Tools debuggen.  
   
- Ein Szenario, das veranschaulicht, wie eine Simulationsproblem Debuggen, die durch einen Fehler im Compute-Shader verursacht wird, finden Sie unter [Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+ Ein Szenario, das veranschaulicht, wie eine Simulationsproblem Debuggen, die durch einen Fehler im Compute-Shader verursacht wird, finden Sie unter [Exemplarische Vorgehensweise: Verwenden der Grafikdiagnose zum Debuggen eines Compute-Shaders](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md).
