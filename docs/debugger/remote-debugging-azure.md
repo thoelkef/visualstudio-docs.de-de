@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53839095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981271"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf IIS in Azure in Visual Studio 2017
 
@@ -225,7 +225,7 @@ In diesem Tutorial verwenden wir Visual Studio 2017.
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-### Problembehandlung Öffnen Sie die erforderlichen Ports unter Windows Server
+### <a name="bkmk_openports"></a> Problembehandlung Öffnen Sie die erforderlichen Ports unter Windows Server
 
 In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Wenn die Behandlung von Problemen bei der Bereitstellung, und die app hinter einer Firewalls gehostet wird, müssen Sie sicherstellen, dass die richtigen Ports geöffnet sind.
 
