@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016550"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlichen. Für die Veröffentlichung stehen im **Projekt-Designer** auf der Seite **Veröffentlichen** zusätzliche Eigenschaften zur Verfügung. Weitere Informationen finden Sie unter [Publishing ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md).

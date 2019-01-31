@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 522abadda10cac4e715bf5dcf48980aac9cf59e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016348"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Registerkarte "Stile", Dialogfeld "Fenstereigenschaften"
 Verwenden der **Stile** Tab, um die Stile angewendet werden, um das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md), Verschieben des Fokus auf die [Windows-Ansicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

@@ -1,24 +1,20 @@
 ---
 title: Entwerfen von XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754185"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Entwerfen von XAML-Code in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ans
 
      ![Oberfläche für erneutes Laden einer Datei](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Toolfensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen sowohl für Visual Studio als auch für Blend für Visual Studio computerübergreifend, wenn Sie sich bei demselben Microsoft-Konto anmelden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+-   **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Toolfensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen sowohl für Visual Studio als auch für Blend für Visual Studio computerübergreifend, wenn Sie sich bei demselben Microsoft-Konto anmelden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 -   **Ein gemeinsamer Projektmappen-Explorer:** Der Projektmappen-Explorer bietet eine strukturierte Ansicht für Ihre Projekte und Dateien sowie einen schnellen Zugriff auf die zugehörigen Befehle. Mit dem Projektmappen-Explorer ist es einfacher, mit großen Firmenprojekten zu arbeiten. Informationen hierzu finden Sie unter [Solutions and Projects (Projektmappen und Projekte)](../ide/solutions-and-projects-in-visual-studio.md).
 

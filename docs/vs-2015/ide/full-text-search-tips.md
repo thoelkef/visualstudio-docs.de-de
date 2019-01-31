@@ -1,14 +1,9 @@
 ---
 title: Tipps zur Volltextsuche | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791707"
 ---
 # <a name="full-text-search-tips"></a>Tipps zur Volltextsuche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,6 +63,3 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
 ## <a name="see-also"></a>Siehe auch  
  [Suchen nach Informationen](../ide/locate-information.md)   
  [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md)
-
-
-

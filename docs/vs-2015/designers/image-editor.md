@@ -1,14 +1,9 @@
 ---
 title: Bild-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768302"
 ---
 # <a name="image-editor"></a>Bildbearbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,10 +111,10 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |**Raster**|Aktiviert oder deaktiviert das Raster, das die Pixelgrenzen anzeigt. Das Raster wird möglicherweise erst angezeigt, wenn Sie das Bild vergrößern.|  
 |**Nächste MIP-Ebene anzeigen**|Aktiviert die nächsthöhere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|  
 |**Vorherige MIP-Ebene anzeigen**|Aktiviert die nächstkleinere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|  
-|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis:** Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|  
+|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis**:  Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|  
 |**Hintergrund**|Aktiviert oder deaktiviert die Anzeige des Hintergrunds durch transparente Teile des Bilds. Sie können durch Auswahl einer der folgenden Optionen konfigurieren, wie der Hintergrund angezeigt wird:<br /><br /> **Schachbrett**<br /> Verwendet eine grüne Farbe zusammen mit der angegebenen Hintergrundfarbe, um den Hintergrund als Schachbrettmuster darzustellen. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.<br /><br /> Weißer Hintergrund<br /> Verwendet die Farbe Weiß, um den Hintergrund anzuzeigen.<br /><br /> Schwarzer Hintergrund<br /> Verwendet die Farbe Schwarz, um den Hintergrund anzuzeigen.<br /><br /> Hintergrund animieren<br /> Schwenkt das Schachbrettmuster langsam. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.|  
 |**Eigenschaften**|Öffnet bzw. schließt das Fenster **Eigenschaften**.|  
-|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Um die MIP-Ebenen zu speichern, die Sie generiert haben, müssen Sie zum Speichern des Bilds das DDS-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|  
+|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarzweiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Um die MIP-Ebenen zu speichern, die Sie generiert haben, müssen Sie zum Speichern des Bilds das DDS-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:**  Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|  
   
  Dies ist die Symbolleiste des **Bild-Editors**.  
   
@@ -141,7 +136,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |**Trim** (Kürzen)|Schneidet das Bild gemäß der aktuellen Auswahl ab.|  
   
 ### <a name="working-with-mip-levels"></a>Arbeiten mit MIP-Ebenen  
- Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen MIP-Ebenen für die Detailebene Texturraum. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).  
+ Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen MIP-Ebenen für die Detailebene Texturraum. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Arbeiten mit Transparenz  
  Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, mit Transparenz zu arbeiten. Dies hängt vom Werkzeug ab, das Sie verwenden. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben. Im Folgenden wird gezeigt, wie die verschiedenen Werkzeuge die Anwendung von Transparenz steuern:  
@@ -279,6 +274,3 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Werkzeuge, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden können, um mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten zu arbeiten.|  
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|  
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader-Designers zur Arbeit mit Shadern.|
-
-
-

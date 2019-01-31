@@ -1,14 +1,9 @@
 ---
 title: UnregisterAssembly-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 497a767a1cd67c08e82a743d0665a152c5dd7062
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298609"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833718"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Hebt die Registrierung der angegebenen Assemblys für COM-Interop-Zwecke auf Fü
 |---------------|-----------------|  
 |`Assemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Legt die Assemblys fest, deren Registrierung aufgehoben werden soll|  
 |`AssemblyListFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Enthält Informationen zum Zustand zwischen der `RegisterAssembly`- und der `UnregisterAssembly`-Aufgabe. Dies verhindert, dass die Aufgabe versucht, die Registrierung einer Assembly aufzuheben, die in der `RegisterAssembly`-Aufgabe nicht registriert werden konnte.<br /><br /> Wenn dieser Parameter angegeben wird, werden die Parameter `Assemblies` und `TypeLibFiles` ignoriert.|  
-|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Hebt die angegebene Typbibliothek in der angegebenen Assembly auf. **Hinweis:** Dieser Parameter ist nur erforderlich, wenn der Name der Typbibliotheksdatei und der Name der Assembly sich unterscheiden.|  
+|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Hebt die angegebene Typbibliothek in der angegebenen Assembly auf. **Hinweis**:  Dieser Parameter ist nur erforderlich, wenn der Name der Typbibliotheksdatei und der Name der Assembly sich unterscheiden.|  
   
 ## <a name="remarks"></a>Hinweise  
  Zum erfolgreichen Ausführen der Aufgabe muss die Assembly nicht vorhanden sein. Wenn Sie versuchen, die Registrierung einer Assembly aufzuheben, die nicht vorhanden ist, wird die Aufgabe mit einer Warnung abgeschlossen. Dies liegt daran, dass die Aufgabe dafür verantwortlich ist, die Assemblyregistrierung aus der Registrierung zu entfernen. Wenn die Assembly nicht vorhanden ist, befindet sie sich nicht in der Registrierung, und der Task wird erfolgreich abgeschlossen.  
@@ -73,6 +68,3 @@ Hebt die Registrierung der angegebenen Assemblys für COM-Interop-Zwecke auf Fü
  [RegisterAssembly-Aufgabe](../msbuild/registerassembly-task.md)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,29 +1,24 @@
 ---
-title: 'Gewusst wie: Ändern des Buildausgabeverzeichnisses | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Ändern des Buildausgabeverzeichnisses | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc0f6b30abd8c737db018bbc2bb761afc996d6c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d8ee4bac6f04515439f5703fe2f98546e011af4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777364"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Gewusst wie: Ändern des Buildausgabeverzeichnisses
+# <a name="how-to-change-the-build-output-directory"></a>Vorgehensweise: Ändern des Buildausgabeverzeichnisses
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können den Speicherort der vom das Projekt generierten Ausgabe auf Basis der Konfiguration („Debug“, „Release“ oder beides) angeben.  
@@ -50,6 +45,3 @@ Sie können den Speicherort der vom das Projekt generierten Ausgabe auf Basis de
  [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)   
  [Eigenschaftenseite „Allgemein“ (Projekt)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

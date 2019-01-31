@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f741e20ed6a7a328904d7ddcadfb0025ac869
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccafbcf829b78fa4e1c12b3a46c46dfa59e3e863
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996401"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Registerkarte "Arbeitsspeicher", Dialogfeld "Prozesseigenschaften"
 Verwenden der **Arbeitsspeicher** Tab, um zu zeigen, wie ein Prozess Arbeitsspeicher verwendet. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), verschieben Sie den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

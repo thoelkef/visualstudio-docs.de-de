@@ -1,14 +1,9 @@
 ---
 title: Problembehandlung bei fehlerhaften Verweisen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual C# projects, references
 - Visual Basic projects, references
@@ -19,13 +14,13 @@ ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780526"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein A
   Im Folgenden werden Möglichkeiten zur Behebung dieser Probleme beschrieben.  
   
 > [!NOTE]
->  Auf Dateien in Assemblys wird mit absoluten Pfaden in der Projektdatei verwiesen. Deshalb können Benutzer in einer Umgebung mit mehreren Entwicklern eine Assembly, für die ein Verweis vorhanden ist, in ihrer lokalen Umgebung möglicherweise nicht finden. Um diese Fehler zu vermeiden, empfiehlt es sich, in diesen Fällen Verweise zwischen Projekten hinzuzufügen. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) und [Programming with Assemblies (Programmieren mit Assemblys)](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+>  Auf Dateien in Assemblys wird mit absoluten Pfaden in der Projektdatei verwiesen. Deshalb können Benutzer in einer Umgebung mit mehreren Entwicklern eine Assembly, für die ein Verweis vorhanden ist, in ihrer lokalen Umgebung möglicherweise nicht finden. Um diese Fehler zu vermeiden, empfiehlt es sich, in diesen Fällen Verweise zwischen Projekten hinzuzufügen. Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) und [Programmieren mit Assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Verweispfad ist falsch  
  Wenn von verschiedenen Computern aus auf Projekte zugegriffen wird, werden einige Verweise möglicherweise nicht gefunden, wenn sich eine Komponente auf den einzelnen Computern in unterschiedlichen Verzeichnissen befindet. Verweise werden unter dem Namen der Komponentendatei gespeichert (z.B. MeineKomponente). Wenn ein Verweis zu einem Projekt hinzugefügt wird, wird der Speicherort des Ordners der Komponentendatei (z.B. C:\MeineKomponenten\\) an die **Verweispfad**-Eigenschaft des Projekts angefügt.  
@@ -65,7 +60,7 @@ Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein A
   
 3.  Wenn Sie Visual Basic verwenden, wählen Sie die Seite **Verweise** aus, und klicken Sie auf die Schaltfläche **Verweispfade**. Geben Sie im Dialogfeld **Verweispfade** im Feld **Ordner** den Pfad des Ordners mit dem Element an, auf das verwiesen werden soll, und klicken Sie dann auf die Schaltfläche **Ordner hinzufügen**.  
   
-     - oder -   
+     - oder -  
   
      Wenn Sie Visual C# verwenden, wählen Sie die Seite **Verweispfade** aus. Geben Sie im Feld **Ordner** den Pfad des Ordners mit dem Element an, auf das verwiesen werden soll, und klicken Sie dann auf die Schaltfläche **Ordner hinzufügen**.  
   
@@ -78,7 +73,7 @@ Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein A
   
 -   Wenn der Verweis auf dem Computer an einem anderen Speicherort vorhanden ist, lesen Sie ihn von diesem Speicherort.  
   
--   Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Verweisdatei wurde umbenannt  
  Die Datei, auf die verwiesen wird, wurde möglicherweise umbenannt.  
@@ -87,18 +82,15 @@ Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein A
   
 -   Löschen Sie den Verweis, und fügen Sie dann einen Verweis auf die umbenannte Datei hinzu.  
   
--   Wenn der Verweis auf dem Computer an einem anderen Speicherort vorhanden ist, müssen Sie ihn von diesem Speicherort einlesen. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Wenn der Verweis auf dem Computer an einem anderen Speicherort vorhanden ist, müssen Sie ihn von diesem Speicherort einlesen. Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Fehler beim Herstellen der Netzwerkverbindung oder der Authentifizierung  
- Es kann viele mögliche Ursachen geben, warum auf Dateien nicht zugegriffen werden kann, z.B. eine fehlerhafte Netzwerkverbindung oder eine fehlgeschlagene Authentifizierung. Für jede dieser Ursachen kann es eine bestimmte Maßnahme zur Fehlerbehebung geben. Für den Zugriff auf die benötigten Ressourcen müssen Sie sich z.B. möglicherweise an den lokalen Administrator wenden. Es ist jedoch immer möglich, den Verweis zu löschen und den Code, in dem er verwendet wurde, entsprechend zu ändern. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+ Es kann viele mögliche Ursachen geben, warum auf Dateien nicht zugegriffen werden kann, z.B. eine fehlerhafte Netzwerkverbindung oder eine fehlgeschlagene Authentifizierung. Für jede dieser Ursachen kann es eine bestimmte Maßnahme zur Fehlerbehebung geben. Für den Zugriff auf die benötigten Ressourcen müssen Sie sich z.B. möglicherweise an den lokalen Administrator wenden. Es ist jedoch immer möglich, den Verweis zu löschen und den Code, in dem er verwendet wurde, entsprechend zu ändern. Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="com-component-is-not-installed-on-computer"></a>COM-Komponente nicht auf Computer installiert  
  Wenn ein Benutzer einen Verweis auf eine COM-Komponente hinzugefügt hat und ein anderer Benutzer nun versucht, den Code auf einem Computer auszuführen, auf dem diese Komponente nicht installiert ist, erhält er die Fehlermeldung, dass der Verweis fehlerhaft ist. Der Fehler wird behoben, indem die Komponente auf dem zweiten Computer installiert wird. Weitere Informationen über das Verwenden von Verweisen auf COM-Komponenten in Projekten finden Sie unter [COM Interoperability in .NET Framework Applications (COM-Interoperabilität in .NET Framework-Anwendungen)](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Introduction to the Project Designer (Einführung in den Projekt-Designer)](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Introduction to the Project Designer (Einführung in den Projekt-Designer)](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Seite „Verweise“, Projekt-Designer (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
-
-
-
+ [(NIB) Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

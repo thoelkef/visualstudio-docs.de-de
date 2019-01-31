@@ -1,13 +1,9 @@
 ---
 title: Anpassen von Fensterlayouts
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802028"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
   Tool- und Dokumentfenster können durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters angeordnet werden.
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Andocken von Fenstern
  Beim Klicken und Ziehen der Titelleiste eines Toolfensters oder der Registerkarte im Dokumentfenster wird ein Diamant-Führungssymbol angezeigt. Während des Ziehvorgangs wird, wenn sich der Mauszeiger über einem der Pfeile im Diamanten befindet, ein schattierter Bereich angezeigt, der anzeigt, wo das Fenster angedockt wird, wenn Sie die Maustaste loslassen.
@@ -186,4 +182,4 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 |[Fensterarten](../misc/kinds-of-windows.md)|Beschreibt die Unterschiede zwischen Toolfenstern und Dokumentfenstern in der IDE.|
 |[Vorgehensweise: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)|Beschreibt das Andocken, automatische Ausblenden und Anordnen von Fenstern sowie das Zurücksetzen des Fensterlayouts.|
 |[Vorgehensweise: Move Around in the IDE (Vorgehensweise: Navigieren in der IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Beschreibt, wie Sie in der IDE zwischen geöffneten Fenstern in der Reihenfolge ihrer Verwendung wechseln können. Es wird auch beschrieben, wie Sie zu bestimmten Dokumenten springen können.|
-|[Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Enthält Informationen zu Einstellungskombinationen und deren Auswirkungen auf Fensterlayouts, Tastenkombinationen und andere Elemente in der IDE.|
+|[Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Enthält Informationen zu Einstellungskombinationen und deren Auswirkungen auf Fensterlayouts, Tastenkombinationen und andere Elemente in der IDE.|

@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f472f8756a0599102a0da99b6db1cc3496b41f42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9610198859962e804482096e6f2ab75f4da07991
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830637"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069748"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 .NET Framework-Versionen vor Version 4 bieten keine Unterstützung für das Debuggen im gemischten Modus von x64-Prozessen. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu systemeigenem Code oder von systemeigenem Code zu verwaltetem Code wechseln können.  
@@ -29,11 +29,11 @@ ms.locfileid: "53830637"
   
 -   Aktualisieren Sie das Projekt, um Microsoft .NET Framework 4 oder höher zu verwenden.  
   
-     - oder -  
+     - oder -   
   
      Debuggen Sie den verwalteten und den nativen Code in separaten Debugsitzungen.  
   
-     - oder -   
+     - oder -  
   
      Debuggen Sie den gemischten Code als 32-Bit-Prozess, wie in den folgenden Prozeduren beschrieben.  
   
