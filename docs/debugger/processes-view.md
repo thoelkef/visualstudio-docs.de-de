@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b898713b456afd72f6453bad01028af9090b8dd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b3dad44f0c3971ed3b206db9b3c022f8375153a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024668"
 ---
 # <a name="processes-view"></a>Prozessansicht
 Die Prozessansicht zeigt eine Struktur aller aktiven Prozesse auf Ihrem System. Die Prozess-ID und-Modul werden angezeigt. Verwenden Sie die Systemprozesse angezeigt, wenn Sie möchten, um ein bestimmtes System-Prozess zu überprüfen, die zum Ausführen eines Programms in der Regel entspricht. Prozesse werden identifiziert, von dem Modulnamen oder sie sind vorgesehen, "Systemprozesse".  

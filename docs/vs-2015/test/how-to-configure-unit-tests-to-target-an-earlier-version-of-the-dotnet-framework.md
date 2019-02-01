@@ -1,26 +1,21 @@
 ---
-title: 'Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf einer früheren Version von .NET Framework | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795859"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste Version von .NET Framework standardmäßig als Ziel festgelegt. Wenn Sie ein Upgrade von Projekten aus früheren Versionen von Visual Studio durchführen, werden Projektupgrades darüber hinaus auf die neueste Version von .NET Framework durchgeführt. Durch Bearbeiten der Projekteigenschaften können Sie das Projekt auf frühere Versionen von .NET Framework explizit umleiten.  
@@ -131,10 +126,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
 8.  Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Erstellen von SharePoint-Lösungen](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [Erstellen und Debuggen von SharePoint-Lösungen](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-

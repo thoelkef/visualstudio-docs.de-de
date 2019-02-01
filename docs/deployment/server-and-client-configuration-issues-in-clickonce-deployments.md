@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30547a985f752d2302e7d8cd33203a9261c3445c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003253"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.  

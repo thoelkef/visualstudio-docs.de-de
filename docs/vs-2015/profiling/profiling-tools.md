@@ -1,27 +1,22 @@
 ---
 title: Profilerstellungstools | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780843"
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
  Mit[IntelliTrace](../debugger/intellitrace.md) können Sie bestimmte Ereignisse aufzeichnen, Daten im Fenster **Lokal** während Debuggerereignissen und Funktionsaufrufen untersuchen sowie Fehler debuggen, die schwer zu reproduzieren sind.  IntelliTrace ist in erster Linie ein Tool zum Debuggen, aber es enthält auch Informationen, die für Leistungsuntersuchungen verwendet werden kann. Sie können dieses Tool nur in Visual Studio Enterprise mit Desktop-Apps, universellen Windows-Apps und ASP.NET C#-Apps verwenden. Sie finden IntelliTrace im Fenster **Diagnosetools** während des Debuggens (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**).  
   
 ## <a name="profiling-in-production"></a>Profilerstellung im Produktivbetrieb  
- Im Produktivbetrieb empfiehlt es sich, die Profilerstellung mithilfe von [vsperf.exe über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md) durchzuführen, um ein CPU-Profil zu erhalten. Azure App Service bietet Ihnen über [Server Explorer oder das Kudu-Portal](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/)die Möglichkeit, von einem entfernten Standort aus ein Profil zu erstellen.  
+ Im Produktivbetrieb empfiehlt es sich, die Profilerstellung mithilfe von [vsperf.exe über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md) durchzuführen, um ein CPU-Profil zu erhalten. Azure App Service bietet Ihnen über [Server Explorer oder das Kudu-Portal](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/)die Möglichkeit, von einem entfernten Standort aus ein Profil zu erstellen.  
   
 ## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
  Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:  
@@ -103,6 +98,3 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-IDE](../ide/visual-studio-ide.md)
-
-
-

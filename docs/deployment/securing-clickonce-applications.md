@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932817"
 ---
 # <a name="secure-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.  
@@ -66,7 +66,7 @@ ms.locfileid: "53944271"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Abfragezeichenfolgenargumente werden standardmäßig deaktiviert. Um sie zu aktivieren, muss das `trustUrlParameters` -Attribut im Bereitstellungsmanifest der Anwendung festgelegt werden. Dieser Wert kann von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und von MageUI.exe aus festgelegt werden. Ausführliche Schritte zum Aktivieren der Übergabe von Abfragezeichenfolgen, finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ Abfragezeichenfolgenargumente werden standardmäßig deaktiviert. Um sie zu aktivieren, muss das `trustUrlParameters` -Attribut im Bereitstellungsmanifest der Anwendung festgelegt werden. Dieser Wert kann von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und von MageUI.exe aus festgelegt werden. Ausführliche Schritte zum Aktivieren der Übergabe von Abfragezeichenfolgen, finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Übergeben Sie Argumente, die über eine Abfragezeichenfolge abgerufen wurden, nie an eine Datenbank oder an die Befehlszeile, ohne die Argumente auf ihre Sicherheit zu überprüfen. Unsichere Argumente sind Argumente, die Datenbank- oder Befehlszeilen-Escapezeichen enthalten, mit denen böswillige Benutzer die Möglichkeit erhalten können, Ihre Anwendung für die Ausführung beliebiger Befehle zu manipulieren.  
   

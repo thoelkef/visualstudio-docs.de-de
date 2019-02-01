@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997324"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Erstellen benutzerdefinierter Ansichten nativer Objekte im Debugger
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* Framework passt die Möglichkeit, native Typen in Variabl
 
 Natvis ersetzt die *autoexp.dat* Datei in früheren Versionen von Visual Studio mit XML-Syntax, bessere Diagnose, versionsverwaltung und mehrere Dateitypen unterstützen.  
 
-Natvis funktioniert nicht für:
-
-- C++-Windows-Desktop-Projekte mit **Debuggertyp** festgelegt **gemischt** unter **Konfigurationseigenschaften** > **Debuggen**. 
-- [Debuggen im gemischten Modus](how-to-debug-in-mixed-mode.md) für Windows desktop-apps im verwalteten Kompatibilitätsmodus (**Tools** > **Optionen** > **Debuggen**  >  **Allgemeine** > **verwalteten Kompatibilitätsmodus verwenden**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Natvis-Visualisierungen
 

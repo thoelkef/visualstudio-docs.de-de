@@ -1,14 +1,9 @@
 ---
-title: 'Gewusst wie: Anpassen von Suchergebnissen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Anpassen von Suchergebnissen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Help Viewer 2.0, customizing search results
 - customizing search results [Help Viewer 2.0]
@@ -16,15 +11,15 @@ ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 033dc1cac295e0a4c0a42724eaf91ebdf123abb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799784"
 ---
-# <a name="how-to-customize-search-results"></a>Gewusst wie: Anpassen von Suchergebnissen
+# <a name="how-to-customize-search-results"></a>Vorgehensweise: Anpassen von Suchergebnissen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können auf verschiedene Weise anpassen, wie Suchergebnisse auf der Registerkarte **Suche** angezeigt werden.  
@@ -56,6 +51,3 @@ Sie können auf verschiedene Weise anpassen, wie Suchergebnisse auf der Register
   
 ## <a name="see-also"></a>Siehe auch  
  [Tipps zur Volltextsuche](../ide/full-text-search-tips.md)
-
-
-

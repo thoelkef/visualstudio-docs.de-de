@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf99d44e25bf33a773865e0bcf2084d3ac0bbe10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9eecbd9c02d2df1c6355ea47f4c63ad6317ae40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920803"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte Datasets im Vergleich zu nicht typisierten Datasets
 Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleitet ist <xref:System.Data.DataSet> Klasse, und klicken Sie dann mithilfe von Informationen aus der **Dataset-Designer**, die in einer XSD-Datei zum Generieren einer neuen gespeichert wird stark typisierte Dataset-Klasse. Informationen aus dem Schema (Tabellen, Spalten usw.) generiert und in diese neue Datasetklasse als einen Satz von Eigenschaften und Objekte erster Klasse kompiliert. Da ein typisiertes Dataset von der Basisklasse erbt <xref:System.Data.DataSet> -Klasse übernimmt die typisierte Klasse die Funktionalität der <xref:System.Data.DataSet> Klasse mit Methoden, die eine Instanz von verwendet werden kann, und wählen Sie eine <xref:System.Data.DataSet> Klasse als Parameter.
