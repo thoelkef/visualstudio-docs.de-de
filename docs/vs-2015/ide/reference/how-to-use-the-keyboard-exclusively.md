@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweisen: Ausschließliches Verwenden der Tastatur | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Ausschließliches Verwenden der Tastatur | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -20,22 +15,22 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782620"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
+# <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Toolbox-Steuerelementen  
  Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Designer in der Toolbox einfügen.  
@@ -106,6 +101,3 @@ ms.locfileid: "49862163"
  [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Tipps und Tricks zu Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)   
  [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
-
-

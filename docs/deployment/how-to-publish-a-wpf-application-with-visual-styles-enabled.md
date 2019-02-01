@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029309"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen
 Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Grundlage des vom Benutzer ausgewählten Designs geändert werden. Standardmäßig werden keine visuellen Stile für WPF-Anwendungen (Windows Presentation Foundation) aktiviert. Daher müssen Sie sie manuell aktivieren. Allerdings tritt bei der Veröffentlichung der Projektmappe ein Fehler auf, wenn visuelle Stile für eine WPF-Anwendung aktiviert sind. In diesem Thema wird beschrieben, wie dieser Fehler zu beheben ist und wie eine WPF-Anwendung mit aktivierten visuellen Stilen veröffentlicht werden kann. Weitere Informationen zu visuellen Stilen finden Sie unter [Übersicht über die visuelle Stile](/windows/desktop/Controls/visual-styles-overview). Weitere Informationen zur Fehlermeldung finden Sie unter [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -71,7 +71,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
          Mit dieser Schaltfläche werden alle Projektelemente angezeigt, einschließlich der ausgeschlossen und derjenigen, die normalerweise ausgeblendet werden. Die Manifestdatei erscheint als Projektelement.  
   
-2.  Erstellen und veröffentlichen Sie die Projektmappe. Weitere Informationen zum Veröffentlichen der Projektmappe finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
+2.  Erstellen und veröffentlichen Sie die Projektmappe. Weitere Informationen zum Veröffentlichen der Projektmappe finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="create-a-manifest-file"></a>So erstellen Sie eine Manifestdatei  
   

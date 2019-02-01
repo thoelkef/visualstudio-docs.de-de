@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f080af10bbac990359f176792f5fab02e5bd285
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973511"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.  
@@ -56,7 +56,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Weitere Informationen über die Kennzeichnung von Bereitstellungsdateien als Datendateien finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
+ Weitere Informationen über die Kennzeichnung von Bereitstellungsdateien als Datendateien finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Sie können den Pfad zum Datenverzeichnis auch mit den relevanten Variablen in der <xref:System.Windows.Forms.Application> -Klasse wie z. B. <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>abrufen.  
   

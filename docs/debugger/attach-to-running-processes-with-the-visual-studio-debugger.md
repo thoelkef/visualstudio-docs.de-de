@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: fa81baae882376aae99eedd1fdf825c863fd70c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53899612"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932401"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **an den Prozess anhängen** , oder drücken Sie **STRG**+**Alt** + **P** in Visual Studio, und die Verwendung der **an den Prozess anhängen** Dialogfeld, um den Debugger an den Prozess anzuhängen.
@@ -118,7 +118,7 @@ Vollständige Anweisungen für das Debuggen von ASP.NET-Anwendungen, die auf IIS
    - Um Prozesse, die unter der alle Benutzerkonten zu suchen, wählen Sie die **Prozesse aller Benutzer anzeigen** Kontrollkästchen.
       
      >[!NOTE]
-     >Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann riskant sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
       
 5. In der **Anfügen an** Feld, stellen Sie sicher, dass der Code, die Sie debuggen möchten aufgeführt ist. Der Standardwert **automatische** funktioniert für die meisten app-Typen festlegen. 
   
