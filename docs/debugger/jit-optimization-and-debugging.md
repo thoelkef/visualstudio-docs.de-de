@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959290"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-Optimierung und -Debuggen
 **Funktionsweise von Optimierungen in .NET:** Wenn Sie versuchen, Code zu debuggen, es ist einfacher bei, dass Code **nicht** optimiert. Das liegt bei der Code optimiert, Compiler und Laufzeit Änderungen an der ausgegebene Code für die CPU-vornehmen, damit sie schneller ausgeführt, aber eine weniger direkte Zuordnung zu den ursprünglichen Quellcode hat. Dies bedeutet, dass der Debugger sind häufig nicht teilen Sie den Wert der lokalen Variablen und code durchlaufen und Haltepunkte funktionieren möglicherweise nicht wie erwartet.

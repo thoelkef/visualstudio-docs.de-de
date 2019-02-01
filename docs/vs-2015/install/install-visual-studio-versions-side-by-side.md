@@ -2,11 +2,8 @@
 title: Installieren Sie Visual Studio-Versionen Seite-an-Seite | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
@@ -15,13 +12,13 @@ ms.assetid: 4d00f240-4910-4699-aaf3-cda6461f0c29
 caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: f2bbf63e45996d41889109c7423611bfe3218f0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838384"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834860"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +52,11 @@ Sie können diese Visual Studio-Version auf einem Computer installieren, auf dem
     |Visual C#|[Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Konfigurieren von Projekten](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
     |C++|[Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ausführen einer JScript-Anwendung auf einer früheren Version der Common Language Runtime](http://msdn.microsoft.com/en-us/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ausführen einer JScript-Anwendung auf einer früheren Version der Common Language Runtime](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Visual Studio](../install/install-visual-studio-2015.md)
 - [Übertragung, Migration und Upgrade der Visual Studio-Projekte](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [Erstellen von isolierten Anwendungen und parallelen Assemblys (C/C++)](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
