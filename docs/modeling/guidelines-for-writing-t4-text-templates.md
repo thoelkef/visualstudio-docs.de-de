@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959891"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571160"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 Diese allgemeinen Richtlinien ist möglicherweise hilfreich, wenn Sie Programmcode oder andere Ressourcen der Anwendung in Visual Studio generieren. Sie sind nicht die Regeln fest.
@@ -48,7 +48,8 @@ Für Code, der Sie darüber hinaus manuell an den generierten Code schreiben kö
 
   In anderen generierten Sprachen wie z. B. XML, verwenden die `<#@include#>` Direktive, um einfache Kombinationen von Hand geschriebene und generierten Inhalt zu erstellen. In komplexeren Fällen müssen Sie möglicherweise ein Nachverarbeitungsschritt zu schreiben, die die generierte Datei mit Hand geschriebene Dateien kombiniert.
 
-  Häufige Material in Include-Dateien zu verschieben oder Laufzeitvorlagen, um zu vermeiden wiederholen ähnliche Blöcke von Text und Code in mehreren Vorlagen, verwenden Sie die `<#@ include #>` Richtlinie. Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).
+  Verschieben Sie allgemeine Material, in der Include-Dateien oder Laufzeitvorlagen.
+  Wiederholen ähnliche Blöcke von Text und Code in mehreren Vorlagen verwenden damit, die `<#@ include #>` Richtlinie. Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).
 
   Sie können auch die Laufzeit-Textvorlagen in einem separaten Projekt erstellen, und rufen sie dann aus der Vorlage zur Entwurfszeit. Verwenden Sie hierzu die `<#@ assembly #>` Richtlinie den Zugriff auf die separaten Projekt. Beispiele finden Sie in ["Vererbung in Textvorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -57,13 +58,15 @@ Für Code, der Sie darüber hinaus manuell an den generierten Code schreiben kö
 
   Sie können die Methoden in einer abstrakten Klasse einfügen, die die Vorlage erben kann. Die abstrakte Klasse erben muss <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Weitere Informationen finden Sie unter [T4-Vorlagenanweisung](../modeling/t4-template-directive.md).
 
-  Generieren von Code, nicht Konfiguration Dateien eine Methode zum Schreiben einer Variablen Anwendung generische Programmcode schreiben, die eine Konfigurationsdatei akzeptiert. Eine Anwendung, die auf diese Weise geschrieben ist sehr flexibel und kann neu konfiguriert werden, wenn die geschäftsanforderungen ändern, ohne die Anwendung neu zu erstellen. Ein Nachteil dieses Ansatzes ist jedoch, dass die Anwendung nicht so gut wie eine spezifische Anwendung ausgeführt werden. Darüber hinaus werden die Programmcode schwieriger zu lesen und zu verwalten, teilweise daran, dass es immer hat für den Umgang mit der meisten generischen Typen.
+  Generieren von Code, nicht-Konfigurationsdateien.
+  Eine Methode zum Schreiben einer Variablen Anwendung werden generische Programmcode schreiben, die eine Konfigurationsdatei akzeptiert. Eine Anwendung, die auf diese Weise geschrieben ist sehr flexibel und kann neu konfiguriert werden, wenn die geschäftsanforderungen ändern, ohne die Anwendung neu zu erstellen. Ein Nachteil dieses Ansatzes ist jedoch, dass die Anwendung nicht so gut wie eine spezifische Anwendung ausgeführt werden. Darüber hinaus werden die Programmcode schwieriger zu lesen und zu verwalten, teilweise daran, dass es immer hat für den Umgang mit der meisten generischen Typen.
 
   Im Gegensatz dazu kann eine Anwendung, deren Variablen Teile vor der Kompilierung generiert werden, stark typisiert werden. Dies macht es viel einfacher und zuverlässiger handgeschriebenem Code schreiben, und integrieren Sie sie in der generierten Teile dieser Software.
 
   Um alle Vorteile der codegenerierung zu erhalten, versuchen Sie, generieren Programmcode anstelle von Konfigurationsdateien.
 
-  Verwenden Sie ein Ordner generierter Code platzieren Sie die Vorlagen und die generierten Dateien in einem Projektordner mit dem Namen **generierten Code**, damit es deaktivieren, dass diese Dateien nicht sind, die direkt bearbeitet werden soll. Wenn Sie benutzerdefinierten Code überschrieben oder hinzugefügt werden, auf die generierten Klassen erstellen, speichern Sie diese Klassen in einem Ordner mit dem Namen **benutzerdefinierten Code**. Die Struktur von einem typischen Projekt sieht folgendermaßen aus:
+  Verwenden Sie einen Ordner für die Code generiert.
+  Platzieren Sie die Vorlagen und die generierten Dateien in einem Projektordner mit dem Namen **generierten Code**, damit es deaktivieren, dass diese Dateien nicht sind, die direkt bearbeitet werden soll. Wenn Sie benutzerdefinierten Code überschrieben oder hinzugefügt werden, auf die generierten Klassen erstellen, speichern Sie diese Klassen in einem Ordner mit dem Namen **benutzerdefinierten Code**. Die Struktur von einem typischen Projekt sieht folgendermaßen aus:
 
 ```
 MyProject
@@ -79,7 +82,8 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Richtlinien für die Laufzeit (vorverarbeiteten) T4-Vorlagen
- Verschieben von allgemeinem Material in geerbten Vorlagen können Sie Vererbung, Methoden und Textblöcke zwischen T4-Textvorlagen freizugeben. Weitere Informationen finden Sie unter [T4-Vorlagenanweisung](../modeling/t4-template-directive.md).
+ Verschieben Sie häufige Material in geerbten Vorlagen.
+Sie können die Vererbung verwenden, zum Freigeben von Methoden und Textblöcke zwischen T4-Textvorlagen. Weitere Informationen finden Sie unter [T4-Vorlagenanweisung](../modeling/t4-template-directive.md).
 
  Sie können auch Includedateien, die Laufzeit-Vorlagen haben.
 
@@ -96,7 +100,8 @@ Jede Laufzeitvorlage generiert eine partielle Klassendefinition, die den gleiche
 
  `private string ComputeTotal() { ... }`
 
- Zulassen von benutzerdefiniertem Code: Bereitstellen von Erweiterungspunkten ggf. Generieren von virtuelle Methoden in \<#+ Klassenfunktion blockiert #>. Dadurch wird eine einzelne Vorlage, die in vielen Kontexten ohne Änderung verwendet werden. Anstatt die Vorlage ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulären Code, oder es kann eine Laufzeitvorlage sein.
+ Zulassen von benutzerdefiniertem Code: Bereitstellen von Erweiterungspunkten.
+Erwägen Sie die Generierung von virtueller Methoden in \<#+ Klassenfunktion blockiert #>. Dadurch wird eine einzelne Vorlage, die in vielen Kontexten ohne Änderung verwendet werden. Anstatt die Vorlage ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulären Code, oder es kann eine Laufzeitvorlage sein.
 
  Z. B. in "MyStandardRunTimeTemplate.tt":
 
@@ -117,9 +122,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Richtlinien für alle T4-Vorlagen
- Separate Sammeln von Daten aus der textgenerierung versuchen Sie, mischen Sie Berechnungen und Textblöcke. Verwenden Sie in jeder Textvorlage, die erste \<#-Codeblock #> zum Festlegen von Variablen und komplexe Berechnungen ausführen. Aus der ersten TextBlock ans Ende der Vorlage oder die erste \<#+ Klassenfunktion blockieren #>, vermeiden Sie lange Ausdrücke und Vermeiden von Schleifen und Bedingungen, wenn sie die Textblöcke enthalten. Diese Vorgehensweise erleichtert die Vorlage zu lesen und zu verwalten.
+ Sammeln von Daten aus der textgenerierung zu trennen.
+Versuchen Sie, mischen Sie Berechnungen und Textblöcke. Verwenden Sie in jeder Textvorlage, die erste \<#-Codeblock #> zum Festlegen von Variablen und komplexe Berechnungen ausführen. Aus der ersten TextBlock ans Ende der Vorlage oder die erste \<#+ Klassenfunktion blockieren #>, vermeiden Sie lange Ausdrücke und Vermeiden von Schleifen und Bedingungen, wenn sie die Textblöcke enthalten. Diese Vorgehensweise erleichtert die Vorlage zu lesen und zu verwalten.
 
- Verwenden Sie keine `.tt` sind Dateien verwenden Sie eine andere Dateinamenerweiterung wie `.ttinclude` nach Includedateien. Verwendung `.tt` nur für Dateien, die Sie möchten wie Laufzeit oder Entwurfszeit-Textvorlagen verarbeitet. In einigen Fällen erkennt Visual Studio `.tt` -Dateien und deren Eigenschaften für die Verarbeitung automatisch festgelegt.
+ Verwenden Sie keine `.tt` nach Includedateien.
+Verwenden Sie z. B. eine andere Dateinamenerweiterung `.ttinclude` nach Includedateien. Verwendung `.tt` nur für Dateien, die Sie möchten wie Laufzeit oder Entwurfszeit-Textvorlagen verarbeitet. In einigen Fällen erkennt Visual Studio `.tt` -Dateien und deren Eigenschaften für die Verarbeitung automatisch festgelegt.
 
  Starten Sie jede Vorlage als feste Prototyp.
 Schreiben Sie ein Beispiel für den Code oder Text, den Sie verwenden möchten, generieren, und stellen Sie sicher, dass er korrekt ist. Ändern Sie ihre Erweiterung in TT und inkrementell fügen Sie Code, den Inhalt lesen Sie das Modell ändert.
