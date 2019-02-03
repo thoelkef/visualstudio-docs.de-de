@@ -1,14 +1,9 @@
 ---
 title: 'DA0004: Hohe Prozessorauslastung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -18,13 +13,13 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762523"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Hohe Prozessorauslastung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51764026"
 Regel-Id | DA0004 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Instrumentation Sampling |  
-| Nachricht | Die prozessorauslastung liegt permanent über 75 %. Betrachten Sie die Verwendung des Samplingmodus für CPU-gebundene Anwendungen. |  
+| Nachricht | Die prozessorauslastung liegt permanent über 75 %. Sie sollten die Verwendung des Samplingmodus für CPU-gebundene Anwendungen in Betracht ziehen.  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -45,7 +40,3 @@ Regel-Id | DA0004 |
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Wiederholen Sie die Profilerstellung für Ihre Anwendung, wobei Sie diesmal anstelle der Instrumentierungsmethode die Samplingmethode verwenden, es sei denn, Sie benötigen Funktionstimings oder Sie möchten sich nicht so sehr über Prozessorengpässe als vielmehr über die Ein-/Ausgabe informieren.
-
-
-
-

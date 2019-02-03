@@ -1,14 +1,9 @@
 ---
 title: Paralleles Erstellen von mehreren Projekten mit MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - parallel project builds
 - building multiple projects in parallel
@@ -17,13 +12,13 @@ ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 98444a8af0dfd231d63748a1dd0e9b62ca54b651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a553363894bbaf10daf242164f13e777b12f10a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795411"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Paralleles Erstellen von mehreren Projekten mit MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel-Aufgabenparameter  
- `BuildInParallel` ist ein optionaler boolescher Parameter für eine [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgabe. Wenn `BuildInParallel` nastaven NA hodnotu `true` (der Standardwert), werden mehrere Arbeitsprozesse zum Erstellen so vieler Projekte zur gleichen Zeit wie möglich generiert. Damit dies ordnungsgemäß funktioniert, muss der `/maxcpucount`-Schalter auf einen Wert größer 1 festgelegt sein, und das System muss mindestens ein Dualcore-System sein oder über mindestens zwei Prozessoren verfügen.  
+ `BuildInParallel` ist ein optionaler boolescher Parameter für eine [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgabe. Wenn `BuildInParallel` auf `true` (der Standardwert) festgelegt ist, werden mehrere Arbeitsprozesse zum gleichzeitigen Erstellen so vieler Projekte wie möglich erzeugt. Damit dies ordnungsgemäß funktioniert, muss der `/maxcpucount`-Schalter auf einen Wert größer 1 festgelegt sein, und das System muss mindestens ein Dualcore-System sein oder über mindestens zwei Prozessoren verfügen.  
   
  Nachfolgend ist ein Beispiel aus microsoft.common.targets aufgeführt, das veranschaulicht, wie der `BuildInParallel`-Parameter festgelegt wird.  
   
@@ -82,6 +77,3 @@ msbuild.exe myproj.proj /maxcpucount:3
  [Verwenden mehrerer Prozessoren für die Erstellung von Projekten](../msbuild/using-multiple-processors-to-build-projects.md)   
  [Schreiben von multiprozessorfähigen Protokollierungen](../msbuild/writing-multi-processor-aware-loggers.md)   
  [Blog zum Optimieren der C++-Buildparallelität](http://go.microsoft.com/fwlink/?LinkId=251457)
-
-
-

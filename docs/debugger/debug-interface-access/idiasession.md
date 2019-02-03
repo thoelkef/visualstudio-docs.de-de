@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026358"
 ---
 # <a name="idiasession"></a>IDiaSession
 Stellt einen Abfragekontext für Debugsymbole bereit.  
@@ -114,7 +114,7 @@ void InitializeDIA(const char *szFilename)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

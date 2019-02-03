@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b896cf54f06e84316f67a32c10f66dda21c2cd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e50952247d441b9fbc3132074b9b17c201d34dad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931390"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Können Sie die dauerhaften Eigenschaften einen DIA-Eigenschaftensatz zu lesen.  
@@ -124,7 +124,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
