@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780933"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript).
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
@@ -224,7 +219,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
     - Dieses Objekt ist ein übrig gebliebenes Objekt von Momentaufnahme Nr. 2 und stellt einen potenziellen Speicherverlust dar.  
   
-      An diesem Punkt sind Kenntnisse der App nützlich: Durch Auswählen der Schaltfläche **Speicherverlust** sollte ein DIV-Element entfernt sowie ein Element hinzugefügt werden. Der Code scheint also nicht richtig zu funktionieren, d. h. er weist einen Speicherverlust auf. Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
+      An diesem Punkt sind Kenntnisse der app nützlich zur Verfügung: Auswählen der **Speicherverlust** Schaltfläche sollte ein DIV-Element zu entfernen und ein Element hinzugefügt, der Code scheint also nicht richtig zu funktionieren (d. h. er weist Speicher). Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
   
     > [!TIP]
     >  Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
@@ -293,6 +288,3 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript-Memory](../profiling/javascript-memory.md)
-
-
-

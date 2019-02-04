@@ -1,27 +1,22 @@
 ---
-title: 'Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93809264569065d1b13fd08b89f91a9335576413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802377"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.  
@@ -137,6 +132,3 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
-
-
-

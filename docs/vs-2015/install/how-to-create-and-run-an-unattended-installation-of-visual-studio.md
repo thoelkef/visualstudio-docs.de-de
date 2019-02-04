@@ -1,13 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio, unattended
 - unattended installation, Visual Studio
@@ -15,13 +11,13 @@ ms.assetid: 3867b5dc-ed34-4ee2-be32-a42e7e320517
 caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803561"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +62,13 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 |Element|Attribut|Werte|Beschreibung|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Pfad*|Identisches Verhalten wie beim Überschreiben eines Pfades in der Benutzeroberfläche der Installationsanwendung. Dieses Element wird ignoriert, wenn Visual Studio bereits installiert ist.|
-|BundleCustomizations|NoWeb|Ja&#124;Standard|Wenn der Wert dieses Elements "Ja" lautet, versucht die Installationsanwendung nie, während der Setupaktion ins Internet zu wechseln.|
+|BundleCustomizations|NoWeb|yes&#124;default|Wenn der Wert dieses Elements "Ja" lautet, versucht die Installationsanwendung nie, während der Setupaktion ins Internet zu wechseln.|
 |SelectableItemCustomization|Hidden|Ja&#124;Nein|Wenn der Wert dieses Elements "Ja" lautet, wird ein wählbares Element in der Anpassungsstruktur ausgeblendet.|
 |SelectableItemCustomization|Ausgewählt|Ja&#124;Nein|Wählt ein wählbares Element in der Anpassungsstruktur aus oder löscht dieses.|
 |BundleCustomizations|Feed|Pfad|Speicherort des Feeds, den der Benutzer verwenden möchte.  Dieser Feed wird für nachfolgende Änderungsvorgänge auf dem Computer verwendet (standardmäßig "Default").|
-|BundleCustomizations|SuppressRefreshPrompt|Ja&#124;Standard|Verhindert, dass der Benutzer aufgefordert wird, das Setup zu aktualisieren, wenn eine neuere Version verfügbar ist.|
-|BundleCustomizations|NoRefresh|Ja&#124;Standard|Das Setup wird nicht aktualisiert, wenn eine neuere Version verfügbar ist.|
-|BundleCustomizations|NoCacheOnlyMode|Ja&#124;Standard|Verhindert, dass der Paket-Cache vorab gefüllt wird.|
+|BundleCustomizations|SuppressRefreshPrompt|yes&#124;default|Verhindert, dass der Benutzer aufgefordert wird, das Setup zu aktualisieren, wenn eine neuere Version verfügbar ist.|
+|BundleCustomizations|NoRefresh|yes&#124;default|Das Setup wird nicht aktualisiert, wenn eine neuere Version verfügbar ist.|
+|BundleCustomizations|NoCacheOnlyMode|yes&#124;default|Verhindert, dass der Paket-Cache vorab gefüllt wird.|
 
 > [!WARNING]
 >  Die Installationsanwendung berücksichtigt den Auswahlzustand eines auswählbaren Elements, selbst wenn es ausgeblendet ist. Wenn Sie beispielsweise ein wählbares Element immer installieren möchten, können Sie es als ausgeblendet und ausgewählt markieren.

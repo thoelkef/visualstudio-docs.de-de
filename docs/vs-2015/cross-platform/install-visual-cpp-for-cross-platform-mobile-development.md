@@ -1,33 +1,28 @@
 ---
 title: Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 0c8cbe8992a1035e2fb4a26feb9a77b5546bfa56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762858"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.microsoft.com/fwlink/p/?LinkId=536383) ist eine installierbare Komponente von Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+http://go.microsoft.com/fwlink/p/?LinkId=536383)Visual C++ für die plattformübergreifende mobile Entwicklung ist eine installierbare Komponente in Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Anforderungen](#Requirements)   
  [Beschaffung der Tools](#GetTheTools)   
@@ -44,7 +39,7 @@ Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.micr
   
   Zum Erstellen von Anwendungen für bestimmte Plattformen bestehen einige zusätzliche Anforderungen:  
   
-- Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
+- Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
   
 - Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
@@ -142,4 +137,3 @@ Visual C++ für plattformübergreifende Mobilgeräteentwicklung] (http://go.micr
 ## <a name="see-also"></a>Siehe auch  
  [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
-
