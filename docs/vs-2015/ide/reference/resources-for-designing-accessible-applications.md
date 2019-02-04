@@ -1,14 +1,9 @@
 ---
 title: Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761671"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="windows-applications"></a>Windows-Anwendungen  
   
--   [Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Dieses Thema enthält schrittweise Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.  
+-   [Exemplarische Vorgehensweise: Erstellen einer Anwendung zugegriffen werden kann, Windows-basierten](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) dieses Thema enthält schrittweise Anweisungen zu den fünf Anforderungen zur Barrierefreiheit für das Logo zertifiziert für Windows in einer Windows-beispielanwendung.  
   
 -   **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Benutzeroberfläche für Windows-Anwendungen beschrieben, die über die Tastatur gesteuert werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -50,7 +45,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="web-sites"></a>Websites  
   
--   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
+-   [Exemplarische Vorgehensweise: Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
   
 -   **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
@@ -64,6 +59,3 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

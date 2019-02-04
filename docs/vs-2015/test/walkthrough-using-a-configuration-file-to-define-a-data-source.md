@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843040"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835120"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 -   Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
   
 -   Visual Studio Enterprise  
@@ -200,7 +195,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 3.  Erstellen Sie in `MyDataTable` zwei Felder mit dem Namen `Arg1` und `Arg2` mit dem Datentyp `Number`.  
   
-4.  Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2`: (10,50), (3,2), (6,0), (0,8) bzw. (12312,1000).  
+4.  Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2` hinzu: (10,50), (3,2), (6,0), (0,8) und (12312,1000).  
   
 5.  Speichern und schließen Sie die Datenbank.  
   
@@ -214,7 +209,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 3.  Erstellen Sie die zwei Spaltenüberschriften `Val1` und `Val2` in `Sheet1`.  
   
-4.  Fügen Sie `Sheet1` fünf Entitäten mit folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) bzw. (5,0).  
+4.  Fügen Sie `Sheet1` fünf Entitäten mit den folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) und (5,0).  
   
 5.  Speichern und schließen Sie das Arbeitsblatt.  
   
@@ -224,7 +219,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 1.  Fügen Sie dem Testprojekt einen Komponententest hinzu.  
   
-     Weitere Informationen finden Sie unter [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Weitere Informationen finden Sie unter [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2.  Ersetzen Sie den automatisch generierten Inhalt des Komponententests durch folgenden Code:  
   
@@ -275,9 +270,6 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 ## <a name="see-also"></a>Siehe auch  
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
- [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-
+ [How To: Create a data-driven unit test (Vorgehensweise: Erstellen eines datengesteuerten Komponententests)](../test/how-to-create-a-data-driven-unit-test.md)

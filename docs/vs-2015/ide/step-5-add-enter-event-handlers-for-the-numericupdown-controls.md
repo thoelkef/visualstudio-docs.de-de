@@ -1,33 +1,28 @@
 ---
-title: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Schritt 5: Hinzufügen Enter-Ereignishandlern für die NumericUpDown-Steuerelemente | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5156af5f8532879bc748627fb62b0b4b6fba4af2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776014"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im fünften Teil dieses Lernprogramms fügen Sie Enter-Ereignishandler hinzu, um die Eingabe von Antworten auf Quizfragen zu vereinfachen. Mit diesem Code wird der aktuelle Wert in den einzelnen NumericUpDown-Steuerelementen markiert und gelöscht, sobald ein Quizteilnehmer das Steuerelement ausgewählt und einen anderen Wert eingibt.  
   
 > [!NOTE]
->  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-verify-the-default-behavior"></a>So überprüfen Sie das Standardverhalten  
   
@@ -77,9 +72,6 @@ Dialogfeld "Eigenschaften"
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   
--   Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).  
+-   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md)  
   
--   Um zum vorhergehenden Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).
-
-
-
+-   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md)
