@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835291"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690311"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führen Sie eine entsprechende Sperren Disziplin immer, und Verwenden von SAL-Anmerkungen an.
@@ -105,6 +105,19 @@ Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führ
 |`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Der Parameter mit Anmerkung versehenen Funktion ist der Target-Operand, der eine der verschiedenen Interlocked-Funktionen.  Die Operanden müssen bestimmte zusätzliche Eigenschaften.|
 |`_Write_guarded_by_(expr)`|Kommentiert eine Variable aus, und gibt an, dass jedes Mal, wenn die Variable geändert wird, wird die Anzahl der Sperren des Objekts mit dem Namen von Sperren `expr` ist mindestens eine.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock und RAII-Anmerkungen
+ Intelligente Schlösser umschließen native Sperren in der Regel und Verwalten ihrer Lebensdauer. Die folgende Tabelle enthält Anmerkungen, die für intelligente Schlösser und RAII-Muster mit Unterstützung für die Codierung verwendet werden können `move` Semantik.
+
+|Anmerkung|Beschreibung|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Gibt die Analyse, um Sie davon ausgehen, dass eine intelligente Sperre abgerufen wurde. Diese Anmerkung erwartet einen Sperre-Verweistyp als Parameter an.|
+|`_Analysis_assume_smart_lock_released_`|Gibt die Analyse, um Sie davon ausgehen, dass eine intelligente Sperre freigegeben wurde. Diese Anmerkung erwartet einen Sperre-Verweistyp als Parameter an.|
+|`_Moves_lock_(target, source)`|Beschreibt `move constructor` Vorgang der Zustand der remotesperre aus überträgt die `source` -Objekt an die `target`. Die `target` gilt ein neu konstruiertes Objekt, damit alle Status, und es wird vor dem ist verloren gegangen durch ersetzt die `source` Zustand. Die `source` ist auch auf einen fehlerfreien Zustand ohne Sperre Zeilenzahlen oder Aliasing-Ziel, aber mit Aliase, die sie darauf zeigen zurücksetzen, bleiben unverändert.|
+|`_Replaces_lock_(target, source)`|Beschreibt `move assignment operator` , in dem der Ziel-Sperre aufgehoben wird, bevor der Status aus der Quelle übertragen, Semantik. Dies kann als eine Kombination aus betrachtet werden `_Moves_lock_(target, source)` vorangestellt eine `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Beschreibt, den Standard `swap` Verhalten dem davon ausgegangen wird, in der Objekte `left` und `right` exchange-Zustand. Der Status, die ausgetauscht enthält Sperre Anzahl und Aliasing-Ziel, falls vorhanden. Aliase, die auf die `left` und `right` Objekte bleiben unverändert.|
+|`_Detaches_lock_(detached, lock)`|Beschreibt ein Szenario, in dem eine Sperre Wrappertyp Aufhebung der gatewayzuordnung mit der enthaltenen Ressource ermöglicht. Dies ist ähnlich wie `std::unique_ptr` arbeitet mit der internen Zeiger: Es kann Programmierer das Extrahieren Sie des Zeigers und den intelligenten Zeiger-Container in einen fehlerfreien Zustand belassen. Ähnliche Logik wird von unterstützt `std::unique_lock` und können in benutzerdefinierten Sperre Wrapper implementiert werden. Die getrennte Sperre behält den Zustand (Sperre Anzahl und Aliasing Ziel, falls vorhanden), während der Wrapper um 0 (null) Anzahl der Sperren und kein Aliasing-Ziel enthalten, und behalten Sie ihre eigenen Aliase zurückgesetzt wird. Es ist kein Vorgang auf der Menge der Sperre (Freigabe und Zuordnung von) aus. Diese Anmerkung verhält sich genauso wie `_Moves_lock_` mit dem Unterschied, dass das Argument getrennt werden soll `return` statt `this`.|
 
 ## <a name="see-also"></a>Siehe auch
 
