@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029155"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742391"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn ein Programm geladen wird, aber bevor irgendwelcher Code ausgeführt wird.  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Die DE erstellt und sendet dieses Ereignisobjekt, um zu melden, dass ein Programm erfolgreich geladen wurde. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
-  
-## <a name="remarks"></a>Hinweise  
- Dieses Ereignis ist ein Ereignis wird beendet und muss den `EVENT_STOPPING` flag so festgelegt, für die Ereignisattribute.  
-  
+   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   

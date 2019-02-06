@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036094"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742442"
 ---
 # <a name="receive-activity-designer"></a>Receive-Aktivitätsdesigner
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Receive
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Gibt eine Auflistung bekannter Typen für den von dieser <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang an. Diese Eigenschaft muss in Verbindung mit der <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>-Eigenschaft verwendet werden, die auf <xref:System.Runtime.Serialization.DataContractSerializer> festgelegt wurde. Sie wird ignoriert, wenn der <xref:System.Xml.Serialization.XmlSerializer> verwendet wird.<br /><br /> Wählen Sie die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Feld im Eigenschaftenraster zum Anzeigen der **Typauflistungs-Editor** Dialogfeld, in dem Sie relevante Typen hinzufügen können. Weitere Informationen zur Verwendung dieses Dialogfelds finden Sie unter den [Auflistung-Editor-Dialogfeld](../workflow-designer/type-collection-editor-dialog-box.md) Thema. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Gibt die <xref:System.Net.Security.ProtectionLevel>-Einstellung für die Nachricht an.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass nur die Authentifizierung.<br />2. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass signiert Daten, die Integrität übertragener Daten sicherzustellen.<br />3. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass Daten verschlüsselt und signiert, um die Vertraulichkeit und Integrität übertragener Daten sicherzustellen. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Gibt den Typ des Serialisierungsprogramms an, das für den von der <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang verwendet werden soll. Der Standardwert ist <xref:System.Runtime.Serialization.DataContractSerializer>, der eine Instanz eines Typs, der einen angegebenen Datenvertrag verwendet, in einen XML-Datenstrom oder ein Dokument serialisiert und deserialisiert. Der <xref:System.Xml.Serialization.XmlSerializer> kann auch verwendet werden, wenn eine genauere Kontrolle des XML-Codes erforderlich ist. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: https://tempuri.org/{service Vertrag Namespace} / {Dienstvertragsname} / {Vorgangsname}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Siehe auch
 

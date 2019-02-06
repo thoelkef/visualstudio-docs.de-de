@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979555"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742473"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 
-Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Textvorlagen-Transformationsmodul* ausgeführt. Der Host ist für die Verwaltung der Interaktion der Engine mit dem Dateisystem zuständig. Das Modul oder *anweisungsprozessor* , welcher eine Datei oder eine Assembly kann eine Ressource vom Host anfordern. Der Host kann dann Verzeichnisse und den globalen Assemblycache nach der angeforderten Ressource durchsuchen. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).
+Ein *Textvorlagenhosts* bietet eine Umgebung, die es ermöglicht die *Textvorlagen-Transformationsmodul* ausgeführt. Der Host ist für die Verwaltung der Interaktion der Engine mit dem Dateisystem zuständig. Das Modul oder *anweisungsprozessor* , welcher eine Datei oder eine Assembly kann eine Ressource vom Host anfordern. Der Host kann dann Verzeichnisse und den globalen Assemblycache nach der angeforderten Ressource durchsuchen. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).
 
 Sie können einem benutzerdefinierten Host schreiben, sollten Sie verwenden die *Textvorlagen-Transformationsprozess* Funktionalität von außerhalb von Visual Studio, oder wenn Sie diese Funktion in benutzerdefinierte Tools integrieren möchten. Um einen benutzerdefinierten Host zu erstellen, müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> erbt. Die Dokumentation der einzelnen Methoden finden Sie unter <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
