@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48db0eed985ec22f5a3032d6a601664723dca2ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931725"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
@@ -42,7 +42,7 @@ Am Ende sieht das Programm wie in der folgenden Abbildung aus:
 
 Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
-![Link zum Video](../data-tools/media/playvideo.gif)Eine Videoversion dieses Artikels finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Gewusst wie: Erstellen eines Bildanzeigeprogramms in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How do I: Create a picture viewer in C#? (Gewusst wie: Erstellen eines Bildanzeigeprogramms in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).
+![Videolink](../data-tools/media/playvideo.gif)Weitere Informationen erhalten Sie in der Videoversion dieses Themas unter [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic - Video 1)](http://go.microsoft.com/fwlink/?LinkId=205207) oder unter [Leitfaden für C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
@@ -53,7 +53,7 @@ Informationen zum Herunterladen einer vollständigen Version des Beispiels finde
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)|Beginnen Sie, indem Sie ein Windows Forms-Anwendungsprojekt erstellen.|
 |[Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-Anwendungsprogramm aus, das Sie im vorherigen Schritt erstellt haben.|

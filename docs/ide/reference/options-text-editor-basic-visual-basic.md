@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998260"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) umfasst die folgenden Eigenschaften:
@@ -40,18 +40,18 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
 - System-Direktiven beim Sortieren von Using-Direktiven an erster Stelle platzieren
 
    Wenn er ausgewählt wurde, sortiert der Befehl **Remove and Sort Usings** (Using-Anweisungen entfernen und sortieren) im Kontextmenü die `using`-Anweisungen und platziert die „System“-Namespaces ganz oben in der Liste.
-   
+
 - Using-Direktivengruppen trennen
 
    Wenn ausgewählt, trennt der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen, indem er eine leere Zeile zwischen Gruppen von Anweisungen einfügt, die den gleichen Stammnamespace aufweisen.
-   
-- Using-Direktiven für Typen in Verweisassemblys vorschlagen 
-- Using-Direktiven für Typen in NuGet-Paketen vorschlagen 
+
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen
+- Using-Direktiven für Typen in NuGet-Paketen vorschlagen
 
    Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
 
    ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Markieren
 
@@ -77,7 +77,7 @@ Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelld
 
 ## <a name="block-structure-guides"></a>Führungslinien für Blockstruktur
 
-Aktivieren Sie diese Kontrollkästchen, um gestrichelte vertikale Linien zwischen geschweiften Klammern (**{}**) in Ihrem Code anzuzeigen. Auf diese Weise können Sie leicht einzelne Codeblöcke für Ihre Deklarations- und Codeebenen erkennen.
+Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die sich mit strukturierten Codeblöcken decken, sodass Sie die einzelnen Codeblöcke leicht identifizieren können. Beispielsweise würden Sie in einer `Sub`-Anweisung eine Linie zwischen `Sub` und `EndSub` sehen.
 
 ## <a name="editor-help"></a>Editor-Hilfe
 

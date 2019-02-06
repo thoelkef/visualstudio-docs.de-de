@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821100"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231947"
 ---
 # <a name="installation"></a>Installation
 
@@ -199,21 +199,32 @@ pip3.5 install Theano==0.9.0
 Führen Sie den folgenden Befehl über ein Terminal aus, um PyTorch zu installieren:
 
 - **Windows**
-    - Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können aber ein [Anaconda PyTorch-Paket](https://anaconda.org/pytorch/repo?type=all) eines Drittanbieters herunterladen.
-    - Dekomprimieren Sie es in Ihr Basisverzeichnis, z.B.: „C:\Users\test\pytorch“.
-    - Fügen Sie „C:\Users\test\pytorch\Lib\site-packages“ der Umgebungsvariablen „%PYTHONPATH%“ hinzu.
+
+   Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können von [Anaconda](https://anaconda.org/pytorch/repo?type=all) oder von der [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) ein Drittanbieter-Paket herunterladen.
+
+   - Dekomprimieren Sie es in Ihrem Basisverzeichnis, z. B. in *C:\Users\test\pytorch*.
+   - Fügen Sie *C:\Users\test\pytorch\Lib\site-packages* der Umgebungsvariable „%PYTHONPATH%“ hinzu.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > macOS-Binärdateien unterstützen CUDA nicht. Führen Sie daher eine Installation aus der Quelle durch, wenn CUDA benötigt wird.
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Dieses einzelne Paket unterstützt sowohl GPU als auch CPU.
 

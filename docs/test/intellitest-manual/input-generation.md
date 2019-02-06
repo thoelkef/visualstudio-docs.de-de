@@ -6,29 +6,32 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936618"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
-IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert. Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können. Die Analyse ist ein inkrementeller Prozess. Er verfeinert das Prädikat **q: I -> {true, false}** mit den formellen Eingabeparametern des Tests **l**. **q** steht für die Verhalten, die IntelliTest bereits beobachtet hat. Zunächst ist dies **q := false**, weil noch nichts beobachtet wurde.
+IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert.
+Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können.
+Die Analyse ist ein inkrementeller Prozess. Sie verfeinert das Prädikat **q: I -> {true, false}** mit den formalen Eingabeparametern für den Test **l**. **q** steht für das Verhalten, das IntelliTest bereits beobachtet hat.
+Zunächst ist dies **q := false**, weil noch nichts beobachtet wurde.
 
 Die Schritte der Schleife sind wie folgt:
 
-1. IntelliTest bestimmt Eingaben **i** mit einem [Einschränkungs-Solver](#constraint-solver), sodass **q(i)=false**. 
+1. IntelliTest bestimmt Eingaben **i** mit einem [Einschränkungs-Solver](#constraint-solver), sodass **q(i)=false**.
    Aufgrund der Konstruktion nimmt die Eingabe **i** einen neuen Ausführungspfad. Zunächst bedeutet dies, dass **i** jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
 
 1. IntelliTest führt den Test mit der ausgewählten Eingabe **i** aus und überwacht die Ausführung des Test sowie das getestete Programm.
 
-1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Der Satz aller Bedingungen, die die Ausführung bestimmen, wird als *Pfadbedingung* bezeichnet. Diese wird über die formellen Eingabeparameter als Prädikat **p: I -> {true, false}** geschrieben. IntelliTest berechnet eine Repräsentation dieses Prädikats.
+1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Die Bedingungen, die die Ausführung bestimmen, werden zusammen als *Pfadbedingung* bezeichnet. Diese wird über die formalen Eingabeparameter als Prädikat **p: I -> {true, false}** geschrieben. IntelliTest berechnet eine Repräsentation dieses Prädikats.
 
 1. IntelliTest legt Folgendes fest: **q := (q or p)**. Anders gesagt bedeutet dies, dass erfasst wird, dass es den Pfad gesehen hat, der mit **p** dargestellt wird.
 
@@ -55,7 +58,8 @@ IntelliTest verwendet den Einschränkungs-Solver [Z3](https://github.com/Z3Prove
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Dynamische Code Coverage
 
-Als Nebenwirkung der Laufzeitüberwachung sammelt IntelliTest Daten zu dynamischen Code Coverage. Dies wird als *dynamisch* bezeichnet, da IntelliTest nur von Code weiß, der bereits ausgeführt wurde. Deshalb kann es keine absoluten Werte für die Coverage angeben, wie dies andere Coveragetools machen. 
+Als Nebenwirkung der Laufzeitüberwachung sammelt IntelliTest Daten zu dynamischen Code Coverage.
+Dies wird als *dynamisch* bezeichnet, da IntelliTest nur von Code weiß, der bereits ausgeführt wurde. Deshalb kann es keine absoluten Werte für die Coverage angeben, wie dies andere Coveragetools machen.
 
 Wenn IntelliTest z.B. angibt, dass die Coverage aus 5/10 Basisblöcken besteht, bedeutet dies, das fünf von zehn Blöcken abgedeckt wurden, wobei die gesamte Zahl an Blöcken in allen bis jetzt von der Analyse erreichten Methoden zehn ist (im Gegensatz zu allen Methode in der getesteten Assembly vorhanden sind).
 Je weiter die Analyse fortschreitet und je mehr erreichbare Methoden gefunden werden, desto höher können der Zähler (in diesem Fall 5) und der Nenner (in diesem Fall 10) sein.
@@ -80,8 +84,7 @@ IntelliTest überwacht die ausgeführten Anweisungen, wenn es einen Test und das
 Dies bedeutet, dass IntelliTest Objekte eines bestimmten Typs erstellen und deren Feldwerte festlegen muss. Wenn die Klasse [sichtbar](#visibility) ist und über einen [sichtbaren](#visibility) Konstruktor verfügt, kann IntelliTest eine Instanz der Klasse erstellen.
 Wenn alle Felder der Klasse [sichtbar](#visibility) sind, kann IntelliTest die Felder automatisch festlegen.
 
-Wenn der Typ nicht sichtbar ist oder wenn die Felder nicht [sichtbar](#visibility) sind, benötigt IntelliTest Hilfe beim Erstellen von Objekten und dabei, diese in interessante Zustände zu versetzen, um die maximale Code Coverage zu erreichen. IntelliTest kann die Reflektion verwenden, um Instanzen zu erstellen und diese auf arbiträre Weise zu initialisieren – dies ist jedoch meistens  
-nicht wünschenswert, da es dazu führen kann, dass sich das Objekt in einem Zustand befindet, der niemals während der normalen Ausführung des Programm auftreten kann. Stattdessen verlässt sich IntelliTest auf Hinweise des Benutzers.
+Wenn der Typ nicht sichtbar ist oder wenn die Felder nicht [sichtbar](#visibility) sind, benötigt IntelliTest Hilfe beim Erstellen von Objekten und dabei, diese in interessante Zustände zu versetzen, um die maximale Code Coverage zu erreichen. IntelliTest könnte Reflektion verwenden, um auf beliebige Weise Instanzen zu erstellen und zu initialisieren. Dies ist in der Regel allerdings nicht die Ideallösung, da dadurch möglicherweise das Objekt in einen Zustand versetzt wird, der bei der normalen Programmausführung nicht auftreten würde. Stattdessen verlässt sich IntelliTest auf Hinweise des Benutzers.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Sichtbarkeit
@@ -108,7 +111,7 @@ Dies sind die Regeln:
 
 Wie teste ich eine Methode, die einen Parameter eines Schnittstellentyps hat? Oder einer nicht versiegelten Klasse? IntelliTest weiß nicht, welche Implementierungen später verwendet werden, wenn diese Methode aufgerufen wird. Möglicherweise ist zur Zeit des Tests noch nicht mal eine Implementierung verfügbar.
 
-Die konventionelle Antwort ist das Verwenden von *Pseudoobjekten* mit explizitem Verhalten. 
+Die konventionelle Antwort ist das Verwenden von *Pseudoobjekten* mit explizitem Verhalten.
 
 Ein Pseudoobjekt implementiert eine Schnittstelle (oder weitet eine nicht versiegelte Klasse aus). Dies stellt keine tatsächliche Implementierung dar, sondern ist nur eine Verknüpfung, die die Ausführung von Tests mit dem Pseudoobjekt ermöglicht. Sein Verhalten wird manuell im Rahmen jedes Testfalls definiert, in dem es zum Einsatz kommt. Es gibt viele Tools, die das Definieren eines Pseusoobjekts und dessen erwarteten Verhaltens erleichtern. Dennoch muss dieses Verhalten manuell definiert werden.
 
@@ -129,7 +132,8 @@ Der Ansatzpunkt von IntelliTest zu **struct**-Werten ist ähnlich zu seiner Vorg
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Arrays und Zeichenfolgen
 
-IntelliTest überwacht die ausgeführten Anweisungen, wenn es einen Test und das getestete Programm ausführt. Es beobachtet insbesondere, wann das Programm von einer bestimmten Länge der Zeichenfolge oder eines Arrays abhängt (und die unteren Grenzen und Längen eines mehrdimensionalen Arrays). Außerdem beobachtet es, wie das Programm die unterschiedlichen Elemente einer Zeichenfolge oder eines Arrays verwendet. Anschließend verwendet es einen [Einschränkungs-Solver](#constraint-solver), um zu bestimmen, welche Längen und Elementwerte möglicherweise dazu führen, dass sich der Test und das getestete Programm interessant verhalten.
+IntelliTest überwacht die ausgeführten Anweisungen, wenn es einen Test und das getestete Programm ausführt. Es beobachtet insbesondere, wann das Programm von einer bestimmten Länge der Zeichenfolge oder eines Arrays abhängt (und die unteren Grenzen und Längen eines mehrdimensionalen Arrays).
+Außerdem beobachtet es, wie das Programm die unterschiedlichen Elemente einer Zeichenfolge oder eines Arrays verwendet. Anschließend verwendet es einen [Einschränkungs-Solver](#constraint-solver), um zu bestimmen, welche Längen und Elementwerte möglicherweise dazu führen, dass sich der Test und das getestete Programm interessant verhalten.
 
 IntelliTest versucht, die Größe der Arrays und der Zeichenfolgen zu senken, die benötigt werden, um interessantes Programmverhalten auszulösen.
 

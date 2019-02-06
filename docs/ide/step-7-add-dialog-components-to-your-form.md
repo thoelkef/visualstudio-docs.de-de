@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0ed047ed1c77638aed1128d8a73dc3347fd2e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dde58462d1f9fd985b99a6abf943ee21de51a96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982948"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 In diesem Schritt fügen Sie Ihrem Formular die Komponenten <xref:System.Windows.Forms.OpenFileDialog> und <xref:System.Windows.Forms.ColorDialog> hinzu, damit Ihr Programm Bilddateien öffnen und eine Hintergrundfarbe auswählen kann.
@@ -43,7 +43,7 @@ In diesem Schritt fügen Sie Ihrem Formular die Komponenten <xref:System.Windows
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    -   Legen Sie die Eigenschaft **Titel** auf Folgendes fest: **Select a picture file** („Bilddatei auswählen“).
+    -   Legen Sie für die Eigenschaft **Title** (Titel) Folgendes fest: **Select a picture file** (Bilddatei auswählen).
 
          Die Eigenschafteneinstellungen für **Filter** geben die Arten von Dateitypen an, die im Dateidialogfeld **Select a picture** („Bilddatei auswählen“) angezeigt werden.
 

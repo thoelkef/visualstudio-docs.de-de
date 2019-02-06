@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941413"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979490"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 
@@ -53,15 +53,15 @@ Sie können auch **Diagnosetools** aufrufen, um Remotedebugziele anzuzeigen. Der
 
 ### <a name="the-events-tab"></a>Die Registerkarte „Ereignisse“
 
-Während einer Debugsitzung werden die auftretenden Diagnoseereignisse auf der Registerkarte **Ereignisse** im Fenster **Diagnosetools** aufgelistet. Mit den Kategorie-Präfixen **Breakpoint**, **Datei** und anderen Präfixen können Sie schnell die Liste nach einer Kategorie durchsuchen oder die Kategorien überspringen, die für Sie gerade nicht relevant sind.  
+Während einer Debugsitzung werden die auftretenden Diagnoseereignisse auf der Registerkarte **Ereignisse** im Fenster **Diagnosetools** aufgelistet. Mit Kategoriepräfixen wie **Breakpoint** und **Datei** können Sie schnell die Liste nach einer Kategorie durchsuchen oder die Kategorien überspringen, die für Sie gerade nicht relevant sind.  
   
 Verwenden Sie in der Dropdownliste **Filter**, um Ereignisse anzuzeigen oder auszublenden, indem Sie bestimmte Ereigniskategorien auswählen oder abwählen. 
 
-![Diagnoseereignisfilter] (../profiling/media/diagnosticeventfilter.png "Diagnostic Event Filter")  
+![Diagnoseereignisfilter](../profiling/media/diagnosticeventfilter.png "Diagnostic Event Filter")  
 
 Verwenden Sie das Suchfeld, um eine bestimmte Zeichenfolge in der Ereignisliste zu suchen. Dies sind die Suchergebnisse für die Zeichenfolge „Name“, die mit vier Ereignissen übereinstimmt:  
 
-![Diagnoseereignissuche] (../profiling/media/diagnosticseventsearch.png "Diagnostic Event Search")  
+![Diagnoseereignissuche](../profiling/media/diagnosticseventsearch.png "Diagnostic Event Search")  
 
 Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
 

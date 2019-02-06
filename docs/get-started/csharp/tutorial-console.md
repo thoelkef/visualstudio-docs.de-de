@@ -1,32 +1,32 @@
 ---
-title: 'Tutorial: Erste Schritte mit C#-Konsolen-Apps'
+title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204430"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936956"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Tutorial: Erste Schritte mit einer C#-Konsolen-App in Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
-In diesem Tutorial für C# verwenden Sie Visual Studio, um eine Konsolen-App zu erstellen und auszuführen und einige Funktionen der [integrierten Visual Studio-Entwicklungsumgebung (IDE)](../visual-studio-ide.md) zu untersuchen, während Sie diese Aufgaben ausführen.
+In diesem Tutorial für C# verwenden Sie Visual Studio, um eine Konsolen-App zu erstellen und auszuführen sowie einige Funktionen der integrierten Visual Studio-Entwicklungsumgebung (IDE) zu untersuchen, während Sie diese Aufgaben ausführen.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -42,19 +42,58 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
 ### <a name="add-a-workgroup-optional"></a>Hinzufügen einer Workgroup (optional)
 
-Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Weitere Informationen dazu finden Sie in diesem Artikel unter [Was sind Workloads und wie füge ich diese hinzu?](#workload) in den häufig gestellten Fragen.
+Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Verwenden des Dialogfelds „Neues Projekt“
+
+1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich den Link **Visual Studio-Installer öffnen** aus.
+
+   ![Auswählen des Links „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+
+   ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Verwenden der Menüleiste „Extras“
+
+1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
+
+1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
 ## <a name="create-the-app"></a>Erstellen der App
 
-Als Erstes erfahren Sie, wie Sie Code hinzufügen, um einen einfachen Rechner zu erstellen. Dann wird erläutert, wie der Code optimiert werden muss, um Funktionen hinzuzufügen. Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
+Zunächst befassen Sie sich mit grundlegenden Berechnungen von Integern in C#. Daraufhin fügen Sie Code hinzu, um einen einfachen Rechner zu erstellen. Dann wird erläutert, wie der Code optimiert werden muss, um Funktionen hinzuzufügen. Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
 
-Beginnen Sie, indem Sie Code für den einfachen Rechner zu Ihrem Projekt hinzufügen.
+Beginnen Sie mit der Berechnung von Integern in C#.
 
 1. Löschen Sie im Code-Editor den „Hallo Welt“-Standardcode.
 
     ![Löschen des „Hallo Welt“-Standardcodes aus der neuen Rechner-App](./media/csharp-console-calculator-deletehelloworld.png)
 
-   Löschen Sie den gesamten Code im Code-Editor.
+   Löschen Sie die Zeile, die `Console.WriteLine("Hello World!");` beinhaltet.
+
+1. Geben Sie stattdessen folgenden Code in diese Zeile ein:
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
+
+   ![Auswählen der Schaltfläche „Calculator“ zum Ausführen der App aus der Symbolleiste](./media/csharp-console-calculator-button.png)
+
+   Ein neues Konsolenfenster wird geöffnet, das die Summe von 42 + 119 zeigt.
+
+1. Versuchen Sie jetzt, die Codezeile `int c = a + b;` zu ändern, indem Sie einen anderen Operator verwenden, z. B. `-` für die Subtraktion, `*` für die Multiplikation oder */* für die Division.
+
+    Beachten Sie, dass das Ergebnis sich ebenfalls ändert, wenn Sie den Operator ändern und das Programm ausführen.
+
+Als Nächstes fügen Sie Ihrem Projekt komplexeren Rechnercode hinzu.
+
+1. Löschen Sie den gesamten Code im Code-Editor.
 
 1. Geben oder fügen Sie den folgenden neuen Code in den Code-Editor ein:
 
@@ -165,7 +204,10 @@ Sie haben nun bereits Ihre einfache App verbessert, allerdings fehlen noch Optio
 
 Wenn Sie beispielsweise versuchen, eine Zahl durch 0 zu dividieren oder einen Buchstaben eingeben, obwohl die App eine Zahl erwartet (oder umgekehrt), funktioniert die App nicht mehr und gibt einen Fehler zurück.
 
-Nachfolgend werden einige häufige durch den Benutzer verursachte Eingabefehler erläutert, und Sie erfahren, wie Sie diese im [Debugger](../../debugger/debugger-feature-tour.md) finden und im Code beheben.
+Nachfolgend werden einige häufige durch den Benutzer verursachte Eingabefehler erläutert, und Sie erfahren, wie Sie diese im Debugger finden und im Code beheben.
+
+>[!TIP]
+>Weitere Informationen zum Debugger und dessen Funktionsweise finden Sie auf der Seite [Ein erster Blick auf den Visual Studio-Debugger](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Beheben des Fehlers „Division durch Null“
 
@@ -209,7 +251,7 @@ Damit dieser Fehler behoben werden kann, muss der zuvor eingegebene Code umgesta
 
 #### <a name="revise-the-code"></a>Überarbeiten des Codes
 
-Damit Sie nicht davon abhängig sind, dass die `program`-Klasse den gesamten Code verarbeitet, sollten Sie Ihre App in zwei Klassen (`calculator` und `program`) aufteilen.  
+Damit Sie nicht davon abhängig sind, dass die `program`-Klasse den gesamten Code verarbeitet, sollten Sie Ihre App in zwei Klassen (`calculator` und `program`) aufteilen.
 
 Die `calculator`-Klasse soll einen Großteil der Rechenarbeit übernehmen, während die `program`-Klasse die Benutzeroberfläche und das Erfassen von Fehlern handhabt.
 
@@ -483,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>Schnelle Antworten zu häufig gestellten Fragen
-
-Im folgenden kurzen Abschnitt zu häufig gestellten Fragen werden einige wichtige Konzepte besprochen. Außerdem erhalten Sie Antworten auf Fragen, die aufkommen können, wenn Sie die in dem Tutorial beschriebenen Vorgänge durchführen.
-
-### <a name="what-is-c"></a>Was ist C#?
-
-C# ist eine typsichere Programmiersprache, die unter .NET Framework und .NET Core ausgeführt wird. Mit C# können Sie Windows-Anwendungen, Client-/Serveranwendungen, Datenbankanwendungen, XML-Webdienste, verteilte Komponenten und vieles mehr erstellen.
-
-### <a name="what-is-visual-studio"></a>Was ist Visual Studio?
-
-Visual Studio ist eine integrierte Zusammenstellung von Entwicklertools, die die Produktivität fördern. Es ist also ein Programm zum Erstellen von Programmen und Anwendungen.
-
-### <a name="what-is-a-console-app"></a>Was ist eine Konsolen-App?
-
-Eine Konsolen-App nimmt eine Eingabe und zeigt die Ausgabe in einem Befehlszeilenfenster (Konsole) an.
-
-### <a name="what-is-net-core"></a>Was ist .NET Core?
-
-.NET Core ist die Weiterentwicklung von .NET Framework. In .NET Framework war es nur möglich, Code programmiersprachenübergreifend zu verwenden. Mit .NET Core kann er auch plattformübergreifend genutzt werden. Und die Technologie ist sogar Open Source.
-
-(.NET Framework und .NET Core enthalten Bibliotheken mit vordefinierter Funktionalität. Sie umfassen auch eine CLR (Common Language Runtime), die als ein virtueller Computer fungiert, auf dem Ihr Code ausgeführt wird.)
-
-### <a id="workload"></a>Was sind Workloads und wie füge ich diese hinzu?
-
-In Visual Studio umfassen Workloads mehrere Programmieroptionen und Vorlagen, die Sie verwenden können, um Ihre Visual Studio-Installation anzupassen. Workloads installieren nur die Tools, die Sie für die jeweilige Programmiersprache und die ausgewählte Plattform benötigen. Sie können Workloads wie folgt installieren:
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Verwenden des Dialogfelds „Neues Projekt“
-
-1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich den Link **Visual Studio-Installer öffnen** aus.
-
-   ![Auswählen des Links „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
-
-   ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Verwenden der Menüleiste „Extras“
-
-1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
-
-1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
-
 ## <a name="next-steps"></a>Nächste Schritte
 
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wenn Sie weitere Informationen erhalten möchten, fahren Sie mit den folgenden Tutorials fort.
@@ -534,4 +534,5 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wenn Sie weitere Informa
 
 ## <a name="see-also"></a>Siehe auch
 
-* Videokurs: [C# Fundamentals for Absolute Beginners (C#-Grundlagen für Neueinsteiger)](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Video course: C# Fundamentals for Absolute Beginners (Videokurs: C#-Grundlagen für Einsteiger)](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Tutorial: Debuggen von C#-Code mit Visual Studio](tutorial-debugger.md)

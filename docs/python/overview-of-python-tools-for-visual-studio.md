@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927336"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232064"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -40,7 +40,7 @@ Das Visual Studio-Fenster **Python-Umgebungen** (unten in einer breiten, erweite
 
 ![Erweiterte Ansicht des Fensters „Python-Umgebungen“](media/environments-expanded-view.png)
 
-Verwenden Sie den Befehl **Interaktives Fenster öffnen**, um Python-Code im Kontext von Visual Studio interaktiv auszuführen. Verwenden Sie den Befehl **In PowerShell öffnen**, um ein separates Befehlsfenster im Ordner der ausgewählten Umgebung zu öffnen. Über dieses Befehlsfenster können Sie jedes beliebige Python-Skript ausführen. 
+Verwenden Sie den Befehl **Interaktives Fenster öffnen**, um Python-Code im Kontext von Visual Studio interaktiv auszuführen. Verwenden Sie den Befehl **In PowerShell öffnen**, um ein separates Befehlsfenster im Ordner der ausgewählten Umgebung zu öffnen. Über dieses Befehlsfenster können Sie jedes beliebige Python-Skript ausführen.
 
 Weitere Informationen finden Sie unter: 
 
@@ -140,7 +140,7 @@ Weitere Informationen finden Sie unter:
 
 Die Python-Arbeitsauslastung umfasst das Azure SDK für Python, das die Nutzung von Azure-Diensten aus Windows-, Mac OS X- und Linux-Apps vereinfacht.
 
-Weitere Informationen finden Sie unter [Azure SDK für Python](azure-sdk-for-python.md).
+Weitere Informationen finden Sie unter [Azure SDK für Python](/python/azure/?view=azure-python).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python-Schulungen in der Microsoft Virtual Academy
 

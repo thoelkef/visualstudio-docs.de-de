@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dc5f35c3c530098b9186d0bb4bba7bb13bfc7db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024070"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmenaufzeichnungen während der Tests mit Testeinstellungen
 
@@ -23,7 +23,7 @@ Im Konfigurations-Editor in Visual Studio können Sie den Adapter für diagnosti
 > [!WARNING]
 > Bei der Bildschirm- und Stimmenaufzeichnung werden Konfigurationen mit mehreren Monitoren nicht unterstützt.
 
-Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für automatisierte Tests verwendet werden. Wenn Sie beispielsweise einen Test der programmierten UI remote ausführen, können Sie den Desktop aufzeichnen, um die Ausführung des Tests der programmierten UI anzuzeigen. Weitere Informationen dazu, wie Sie über eine Remoteverbindung eine Bildschirm- und eine Stimmaufzeichnung vornehmen können, finden Sie unter [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für automatisierte Tests verwendet werden. Wenn Sie beispielsweise einen Test der programmierten UI remote ausführen, können Sie den Desktop aufzeichnen, um die Ausführung des Tests der programmierten UI anzuzeigen. Weitere Informationen zum Erstellen von Bildschirm- und Stimmenaufzeichnung über eine Remoteverbindung finden Sie unter [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

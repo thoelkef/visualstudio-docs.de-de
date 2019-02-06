@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966032"
 ---
 # <a name="model-editor"></a>Modell-Editor
 
@@ -87,7 +87,7 @@ Die Symbolleiste **Model Editor Mode** (Modell-Editor-Modus):
 
 In dieser Tabelle werden die Elemente der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht, abhängig vom aktiven Auswahlmodus, das Auswählen von Punkten, Rändern, Flächen oder Objekten in der Szene.|
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene unter Berücksichtigung des Fensterrahmens. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
@@ -115,7 +115,7 @@ Die Symbolleiste **Model Editor** (Modell-Editor):
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste **Model Editor** (Modell-Editor) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Verschieben**|Verschiebt die Markierung.|
 |**Scale** (Skalieren)|Ändert die Größe der Auswahl.|
@@ -133,7 +133,7 @@ Die 3D-Szene wird entsprechend der Ansicht gerendert, die Sie sich als virtuelle
 
 In der folgenden Tabelle werden die Hauptsteuerelemente der Ansicht beschrieben.
 
-|Ansichtsteuerung|Beschreibung|
+|Ansichtsteuerung|BESCHREIBUNG|
 |------------------|-----------------|
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene unter Berücksichtigung des Fensterrahmens. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Szenendetails relativ zum Fensterrahmen. Klicken Sie im **Zoom**-Modus auf einen Punkt in der Szene, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten, und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswahl**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie währenddessen die **STRG**-TASTE gedrückt.|
@@ -142,7 +142,7 @@ In der folgenden Tabelle werden die Hauptsteuerelemente der Ansicht beschrieben.
 
 Die Ansicht wird zwar von der virtuellen Kamera erstellt, ist jedoch auch durch eine Projektion definiert. Die Projektion definiert, wie Formen und Objekte in der Ansicht auf der Entwurfsoberfläche in Pixel übersetzt werden. Sie können auf der Symbolleiste **Model Editor** (Modell-Editor) zwischen der Projektionsoption **Perspektive** oder **Orthografisch** auswählen.
 
-|Projection|Beschreibung|
+|Projection|BESCHREIBUNG|
 |----------------|-----------------|
 |**Perspektive**|In der perspektivischen Projektion erscheinen weiter vom Blickpunkt entfernte Objekte kleiner und laufen letztendlich in der Entfernung zu einem Punkt zusammen.|
 |**Orthografisch**|In der ortographischen Projektion erscheinen Objekte unabhängig von ihrer Entfernung zum Blickpunkt gleich Groß. Es wird keine Konvergenz angezeigt. Ist die Projektionsoption **Orthografisch** aktiviert, können Sie den **Orbit**-Modus nicht beliebig zum Positionieren der Ansicht verwenden.|
@@ -192,7 +192,7 @@ Es ist es möglicherweise hilfreich, Objekte zum Arbeiten am Raster auszurichten
 
 Der Pivotpunkt eines Objekts definiert seinen Drehungs- und Skalierungsmittelpunkt. Sie können den Pivotpunkt eines Objekts ändern, um die Auswirkungen von Drehungs- und Skalierungstransformationen auf das Objekt zu ändern. Klicken Sie zum Aktivieren (oder Deaktivieren) des Pivotmodus auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Pivot-Modus**. Bei aktiviertem Pivotmodus wird ein kleiner Achsenindikator am Pivotpunkt des ausgewählten Objekts angezeigt. Sie können die Tools **Übersetzung** und **Drehung** anschließend zur Bearbeitung des Pivotpunkts verwenden.
 
-Unter [Gewusst wie: Ändern des Pivotpunkts eines 3D-Modells](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md) wird die Verwendung eines Pivotpunkts erläutert.
+Ein Beispiel für die Verwendung des Pivotpunkts finden Sie unter [Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Welt-Modus und lokaler Modus
 
@@ -242,7 +242,7 @@ Die Darstellung eines Objekts wird durch das Zusammenwirken der Beleuchtung in d
 
 Der Model-Editor stellt folgende Standardmaterialien bereit:
 
-|Material|Beschreibung|
+|Material|BESCHREIBUNG|
 |--------------|-----------------|
 |**Unbeleuchtet**|Rendert eine Oberfläche ohne simulierte Beleuchtung.|
 |**Lambert**|Rendert eine Oberfläche mit simulierter umgebender und diffuser Beleuchtung.|
@@ -252,7 +252,7 @@ Jedes dieser Materialien stellt eine Textur auf der Oberfläche eines Objekts. S
 
 Um die Reaktion eines bestimmten Objekts auf verschiedenen Lichtquellen in der Szene zu ändern, können Sie die Beleuchtungseigenschaften des Materials unabhängig von anderen Objekten ändern, bei denen das Material verwendet wird. Die folgende Tabelle beschreibt allgemeine Beleuchtungseigenschaften:
 
-|Beleuchtungseigenschaft|Beschreibung|
+|Beleuchtungseigenschaft|BESCHREIBUNG|
 | - |-----------------|
 |**Umgebend**|Beschreibt die Auswirkung von umgebenden Beleuchtung auf die Oberfläche.|
 |**Diffus**|Beschreibt die Auswirkung direktionaler Punktlichter auf die Oberfläche.|
@@ -264,7 +264,7 @@ Abhängig von den vom Material unterstützten Möglichkeiten, können Sie seine 
 
 Wählen Sie zum Entfernen sämtlicher Materialien von einem Objekt in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Materialien** > **Materialien entfernen** aus.
 
-Sie können den **Shader-Designer** verwenden, um benutzerdefinierte Shadermaterialien zu erstellen, die Sie auf Objekte in der 3D-Szene anwenden können. Informationen zum Erstellen benutzerdefinierter Shadermaterialien finden Sie unter [Shader-Designer](../designers/shader-designer.md). Informationen zur Anwendung benutzerdefinierter Shadermaterialien auf ein Objekt finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Sie können den **Shader-Designer** verwenden, um benutzerdefinierte Shadermaterialien zu erstellen, die Sie auf Objekte in der 3D-Szene anwenden können. Informationen zum Erstellen benutzerdefinierter Shadermaterialien finden Sie unter [Shader-Designer](../designers/shader-designer.md). Weitere Informationen zur Anwendung benutzerdefinierter Shadermaterialien auf ein Objekt finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Szenenverwaltung
 
@@ -335,7 +335,7 @@ Wenn Sie die Zuordnung zwischen zwei übergeordneten und untergeordneten Objekte
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikobjekten wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|

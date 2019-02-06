@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: stevehoag
 ms.author: shoag
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a7f0279249be7b5a48b342f1de26179af7b89f80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843790"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483795"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 Mit Universelle Windows-Plattform und unserem zentralen Windows-Kern können Sie die gleiche App auf jedem Windows 10-Gerät ausführen, egal ob es sich um Smartphones oder Desktop-PCs handelt. Erstellen Sie diese universellen Windows-Apps mit Visual Studio und den universellen Windows-App-Entwicklungstools.
@@ -39,7 +39,7 @@ Universelle Windows-Plattform ist einfach eine Sammlung von Verträgen und Versi
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 unterstützt die UWP-Entwicklung nur unter Windows 10. Weitere Informationen finden Sie unter [Platform targeting](/visualstudio/productinfo/vs2017-compatibility-vs) (Zielplattformen) und [Systemanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs) auf Visual Studio.
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Sie benötigen ebenso die Entwicklungsworkload von Universelle Windows-Plattform.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Sie benötigen ebenso die Entwicklungsworkload von Universelle Windows-Plattform.
 
      ![UWP-Workload](media/uwp_workload.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen in einem allgemeinen Ausgabeverzeichnis'
+title: 'Vorgehensweise: Erstellen in einem gemeinsamen Ausgabeverzeichnis'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f45890224684ff2e4c411875ab61bdfb698cfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea36368a60fc08d6a818d1ca1e66cfb92d814478
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030768"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Vorgehensweise: Erstellen in einem allgemeinen Ausgabeverzeichnis
+# <a name="how-to-build-to-a-common-output-directory"></a>Vorgehensweise: Erstellen in einem gemeinsamen Ausgabeverzeichnis
 
 Standardmäßig erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jedes Projekt in einer Projektmappe in einem eigenen Ordner in der Projektmappe. Sie können die Buildausgabepfade Ihrer Projekte so ändern, dass alle Ausgaben im selben Ordner abgelegt werden.
 

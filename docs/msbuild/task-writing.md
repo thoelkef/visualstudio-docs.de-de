@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b825cd17c11677b95f9400b56cf42c526292e5c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9701497def997b96eff50b0713bc3e16a97f63d
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026023"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483860"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [MSBuild Task Reference](../msbuild/msbuild-task-reference.md).  
@@ -74,14 +74,9 @@ namespace MyTasks
         public override bool Execute()  
         {  
             return true;  
-         }  
-  
-        private string myProperty;  
-        public string MyProperty  
-        {  
-            get { return myProperty; }  
-            set { myProperty = value; }  
         }  
+  
+        public string MyProperty { get; set; }
     }  
 }  
 ```  
@@ -122,12 +117,7 @@ public override bool Execute()
 ```csharp
 public class SimpleTask : ITask  
 {  
-    private IBuildEngine buildEngine;  
-    public IBuildEngine BuildEngine  
-    {  
-        get{ return buildEngine; }  
-        set{ buildEngine = value; }  
-    }  
+    public IBuildEngine BuildEngine { get; set; }
   
     public override bool Execute()  
     {  
@@ -145,14 +135,8 @@ public class SimpleTask : ITask
  Sie können Aufgabeneigenschaften als „Erforderlich“ markieren, damit jede Projektdatei, die die Aufgabe ausführt, Werte für diese Eigenschaften oder die fehlgeschlagenen Builds festlegt. Wenden Sie das erforderliche `[Required]`-Attribut in der .NET-Eigenschaft in Ihrer Aufgabe wie folgt an:  
   
 ```csharp
-private string requiredProperty;  
-  
 [Required]  
-public string RequiredProperty  
-{  
-    get { return requiredProperty; }  
-    set { requiredProperty = value; }  
-}  
+public string RequiredProperty { get; set; }
 ```  
   
  Das `[Required]`-Attribut wird von <xref:Microsoft.Build.Framework.RequiredAttribute> im <xref:Microsoft.Build.Framework>-Namespace definiert.  
@@ -200,35 +184,12 @@ namespace SimpleTask2
         //implement a BuildEngine property of type  
         //Microsoft.Build.Framework.IBuildEngine. This is done for  
         //you if you derive from the Task class.  
-        private IBuildEngine buildEngine;  
-        public IBuildEngine BuildEngine  
-        {  
-            get  
-            {  
-                return buildEngine;  
-            }  
-            set  
-            {  
-                buildEngine = value;  
-            }  
-         }  
+        public IBuildEngine BuildEngine { get; set; }
   
         // When implementing the ITask interface, it is necessary to  
-        // implement a HostObject property of type Object.  
+        // implement a HostObject property of type object.  
         // This is done for you if you derive from the Task class.  
-        private Object hostObject;  
-        public Object HostObject  
-        {  
-            get  
-            {  
-                return hostObject;  
-            }  
-  
-            set  
-            {  
-                hostObject = value;  
-            }  
-        }  
+        public object HostObject { get; set; }
   
         public bool Execute()  
         {  

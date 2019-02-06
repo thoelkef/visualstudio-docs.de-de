@@ -7,16 +7,16 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50fe9249baae6d881c2d67ebc0a65a0c6335cbd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935357"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -46,7 +46,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 
 - \* (verwenden Sie diesen Wert, um alle Symbole anzugeben)
 - namespace
-- Klasse
+- class
 - struct
 - interface
 - enum
@@ -85,7 +85,7 @@ Um die Modifizierer der Symbole zu beschreiben, für die die Namensregel gelten 
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
+In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen. Eine Namensregel stimmt nur mit den Signaturen überein, die alle Modifizierer besitzen, die in `required_modifiers` festgelegt sind. Wenn Sie diese Eigenschaft nicht bestimmen, wird der Standardwert einer leeren Liste verwendet, d. h. keine bestimmten Modifizierer werden für eine Übereinstimmung benötigt. Das bedeutet, dass die Modifizierer eines Symbols keine Auswirkungen darauf haben, ob die Regel angewendet wird oder nicht.
 
 - `abstract` oder `must_inherit`
 - `async`

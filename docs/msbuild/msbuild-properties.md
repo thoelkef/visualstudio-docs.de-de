@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44f098cf1a7e8535dfcf533721c24638bdddd975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987037"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070096"
 ---
 # <a name="msbuild-properties"></a>MSBuild-Eigenschaften
 Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet werden können. Sie sind hilfreich, um Werte an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen wird.  
@@ -92,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Globale Eigenschaften werden auch an untergeordnete Projekte weitergeleitet, es sei denn, das `RemoveProperties`-Attribut des MSBuild-Tasks wird dafür verwendet, eine Liste von Eigenschaften anzugeben, die nicht weitergeleitet werden sollen. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
   
- Wenn Sie eine Eigenschaft angeben, indem Sie das `TreatAsLocalProperty`-Attribut in einem Projekttag verwenden, überschreibt dieser globale Eigenschaftswert nicht den Eigenschaftswert, der in der Projektdatei festgelegt ist. Weitere Informationen finden Sie unter [Project Element (MSBuild) (Project-Element (MSBuild))](../msbuild/project-element-msbuild.md) und [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
+ Wenn Sie eine Eigenschaft angeben, indem Sie das `TreatAsLocalProperty`-Attribut in einem Projekttag verwenden, überschreibt dieser globale Eigenschaftswert nicht den Eigenschaftswert, der in der Projektdatei festgelegt ist. Weitere Informationen finden Sie unter [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md) und [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
 ## <a name="property-functions"></a>Eigenschaftenfunktionen  
  Ab .NET Framework Version 4 können Sie Eigenschaftenfunktionen verwenden, um MSBuild-Skripts auszuwerten. Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen ohne MSBuild-Aufgaben im Buildskript ausführen.  

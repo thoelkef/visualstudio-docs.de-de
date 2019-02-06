@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829304"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231817"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 
@@ -30,19 +30,7 @@ LayoutPanel-Elemente helfen Ihnen, Objekte auf einer Seite anzuordnen, aber sie 
 
 Starten Sie die Seite durch Auswahl eines dieser Layoutpanels. Ihre Seite kann mehrere Panele enthalten. Sie können z.B. mit einem Layoutbereich des Typs **Raster** beginnen und dann einem Bereich des **Rasters** ein **StackPanel** hinzufügen, um in diesem Element Steuerelemente vertikal anzuordnen.
 
-Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber es gibt noch andere. Sie befinden sich im Bereich **Bestand**.
-
-- [Raster](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber es gibt noch andere. Sie finden sie alle in der **Toolbox** in Visual Studio oder im Bereich **Objekte** in Blend für Visual Studio.
 
 ### <a name="grid"></a>Raster
 
@@ -92,15 +80,7 @@ Ordnet Elemente so an, dass sie an einer Kante des Panels bleiben (*andocken*).
 
 Sie können Ihre Objekte auch zu Layout-Steuerelementen hinzufügen. Sie verfügen über einen kleineren Funktionsumfang als Layoutbereiche, sind aber in manchen Szenarios nützlich.
 
-Die folgenden Layoutsteuerelemente werden zwar am häufigsten verwendet, es gibt aber noch weitere. Sie finden Sie alle im Bereich **Bestand**.
-
-- [Randbereich](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Die folgenden Layoutsteuerelemente werden zwar am häufigsten verwendet, es gibt aber noch weitere. Sie finden sie alle in der **Toolbox** in Visual Studio oder im Bereich **Objekte** in Blend für Visual Studio.
 
 ### <a name="border"></a>Rahmen
 

@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070460"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690312"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimieren der Leistung von Visual Studio
 
@@ -26,7 +26,7 @@ Dieser Artikel enthält einige Vorschläge, die Sie ausprobieren können, wenn V
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Upgrade auf Visual Studio 2017 Version 15.6 oder höher
 
-Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunter, um die verbesserte Leistung dieses Tools zu nutzen. Projektmappen werden in Visual Studio 2017 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 kann parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
+Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunter, um die verbesserte Leistung dieses Tools zu nutzen. Projektmappen werden in Visual Studio 2017 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 kann parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
 
 Wenn Sie derzeit Visual Studio 2017 verwenden, stellen Sie sicher, dass Sie Version 15.6 oder höher ausführen. Die Daten zeigen, dass Projektmappen in Version 15.6 zwei- bis dreimal schneller geladen werden. Sie können das Tool [hier](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunterladen.
 
