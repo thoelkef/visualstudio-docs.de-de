@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23148307f372ba094df86344031aaea4c081d826
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918380"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484172"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Willkommen in der Visual Studio-IDE | C#
 
@@ -98,7 +98,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 ## <a name="install-the-visual-studio-ide"></a>Installieren von Visual Studio-IDE
 
-In diesem Artikel werden Sie durch das Erstellen eines einfachen Projekts geführt. Zudem testen Sie einige Optionen von Visual Studio, z.B. das Verwenden [IntelliSense](../../ide/using-intellisense.md) als Hilfsmittel beim Programmieren. das Debuggen einer App, um den Wert einer Variablen während der Ausführung des Programms zu sehen und das Ändern des Farbschemas. Laden Sie zunächst [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunter, und installieren Sie es auf Ihrem System.
+In diesem Artikel werden Sie durch das Erstellen eines einfachen Projekts geführt. Zudem testen Sie einige Optionen von Visual Studio, z.B. das Verwenden [IntelliSense](../../ide/using-intellisense.md) als Hilfsmittel beim Programmieren. das Debuggen einer App, um den Wert einer Variablen während der Ausführung des Programms zu sehen und das Ändern des Farbschemas. Laden Sie zunächst [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) herunter, und installieren Sie es auf Ihrem System.
 
 Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 

@@ -1,4 +1,19 @@
 ---
+title: Klonen eines Repositorys
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986058"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -10,16 +25,16 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 2. Starten Sie Visual Studio.
 
-3. Klicken Sie auf **Ansicht > Team Explorer...**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
+3. Klicken Sie auf **Ansicht > Team Explorer**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung zu GitHub oder Azure DevOps herstellen oder ein Repository klonen.
 
-    ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media/create-project-repo/team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Azure DevOps, GitHub und das Klonen eines Repositorys an.](media/create-project-repo/team-explorer-devops.png)
 
 4. Geben Sie `https://github.com/Microsoft/samples-for-ai` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 
     > [!Tip]
     > Der Ordner, den Sie in Team Explorer angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in Team Explorer nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.
 
-5. Wenn der Klonvorgang abgeschlossen ist, doppelklicken Sie auf den Repositoryordner im unteren Bereich von Team Explorer, um zum Repositorydashboard zu navigieren. Klicken Sie unter **Projektmappen** auf **Neu...**.
+5. Wenn der Klonvorgang abgeschlossen ist, doppelklicken Sie auf den Repositoryordner im unteren Bereich von Team Explorer, um zum Repositorydashboard zu navigieren. Klicken Sie unter **Projektmappen** auf **Neu**.
 
     ![Das Fenster „Team Explorer“, in dem ein neues Projekt aus einem Klon erstellt wird](media/create-project-repo/team-explorer-new-project.png)
 
@@ -29,7 +44,7 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 8. Erweitern Sie im Projektmappen-Explorer den Knoten `TensorFlow Examples> MNIST`. Klicken Sie mit der rechten Maustaste zunächst auf `convolutional.py`, und klicken Sie anschließend auf **Als Startdatei festlegen**. Bei diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
 
-9. Drücken Sie **STRG**+**F5**, oder klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein ` angezeigt wird, prüfen Sie die Einstellungen für das Arbeitsverzeichnis im nächsten Schritt erneut.
+9. Drücken Sie **STRG**+**F5**, oder klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen. Wenn Ihnen ein Fehler angezeigt wird, überprüfen Sie die Einstellungen für das Arbeitsverzeichnis im vorherigen Schritt erneut.
 
 10. Wenn das Programm erfolgreich ausgeführt wird, beginnt es mit dem Herunterladen des Trainings- und Testdatasets. Anschließend wird das Modell trainiert und die Fehlerquote ausgegeben. Sie möchten, dass die Fehlerquote mit der Zeit abnimmt.
 
@@ -42,6 +57,6 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
    ![Ausführen von TensorBoard](media/create-project-repo/run-tensorboard.png)
 
-12. Beachten Sie, dass Fehler mit der Zeit abnehmen, was bedeutet, dass sich die Qualität verbessert.
+12. Beachten Sie, dass die Anzahl der Fehler mit der Zeit abnehmen, was bedeutet, dass sich die Qualität verbessert.
 
    ![Ausführen von TensorBoard](media/create-project-repo/tensorboard.png)

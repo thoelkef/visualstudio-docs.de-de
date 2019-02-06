@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012223"
 ---
 # <a name="understand-build-platforms"></a>Grundlagen zu Buildplattformen
 
@@ -31,9 +31,9 @@ Sie können verschiedene Versionen von Projektmappen- und Projekteigenschaften s
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
- [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md) In diesem Artikel wird die Konfiguration eines Projekts für eine bestimmte Zielplattform erläutert.
+ [How to: Configure Projects to Target Platforms (Vorgehensweise: Konfigurieren von Projekten für Zielplattformen)](../ide/how-to-configure-projects-to-target-platforms.md) In diesem Artikel wird die Konfiguration eines Projekts für eine bestimmte Zielplattform erläutert.
 
- [Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md) In diesem Artikel wird die Konfiguration eines Projekts für mehrere Zielplattform erläutert.
+ [How to: Configure projects to target multiple platforms (Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen)](../ide/how-to-configure-projects-to-target-multiple-platforms.md) In diesem Artikel wird die Konfiguration eines Projekts für mehrere Zielplattform erläutert.
 
 ## <a name="see-also"></a>Siehe auch
 

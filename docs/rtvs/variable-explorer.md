@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5058931e5568b7a84016e599faced9ae614e80d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000254"
 ---
 # <a name="variable-explorer"></a>Variablen-Explorer
 
@@ -70,7 +70,7 @@ Der **Variablen-Explorer** ändert automatisch den Funktionsbereich, während de
 
 ## <a name="import-data-into-variable-explorer"></a>Importieren von Daten in den Variablen-Explorer
 
-Es gibt zwei Befehle auf der Symbolleiste des **Variablen-Explorers**, die auch über das Menü **R Tools** > **Daten** verfügbar sind und die externe CSV-Datasets in Ihre R-Sitzung importieren:  **Dataset aus Web-URL in R-Sitzung importieren** und **Dataset aus Textdatei in R-Sitzung importieren**.
+Es gibt zwei Befehle auf der Symbolleiste des **Variablen-Explorers**, die auch über das Menü **R-Tools** > **Daten** verfügbar sind und externe CSV-Datasets in Ihre R-Sitzung importieren:  **Dataset aus Web-URL in R-Sitzung importieren** und **Dataset aus Textdatei in R-Sitzung importieren**.
 
 Wenn Sie die zu importierende CSV-Datei ermittelt haben, zeigt Visual Studio das Dialogfeld **Dataset importieren** an, in dem Sie mit Optionen steuern können, wie eine Datendatei analysiert wird (d.h. wie der Feldseparator definiert ist und wie Anführungszeichen behandelt werden). Sie können auch eine Vorschauversion des importierten Datenrahmens und der ursprünglichen Datendatei anzeigen lassen:
 

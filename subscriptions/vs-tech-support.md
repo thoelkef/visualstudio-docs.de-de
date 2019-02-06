@@ -9,12 +9,12 @@ description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivie
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380246"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089223"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -27,7 +27,7 @@ Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betri
 > ![Kachel des Vorteils „Technischer Support“](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Klicken Sie auf der Kachel „Technischer Support“ auf **Chat to activate** (Chat aktivieren), um den Vorteil „Technischer Support“ nutzen zu können. 
+1. Wenn Sie den technischen Support nutzen wollen, gehen Sie zu https://my.visualstudio.com/Benefits, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der entsprechenden Kachel auf **Chat to activate** (Chat aktivieren). 
 2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre Vertrags-ID und Ihre Zugriffs-ID erstellen und diese für Sie bereitstellen kann. 
 3. Sie müssen dem Mitarbeiter Folgendes angeben, um den Vorgang abzuschließen:
    - Die E-Mail Adresse, die Sie für die Anmeldung bei Ihrem Abonnement verwenden.
