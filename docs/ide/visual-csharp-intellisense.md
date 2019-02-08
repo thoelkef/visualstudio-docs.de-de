@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979061"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484185"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -99,7 +99,7 @@ Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor a
 
 ![Darstellung vom Hinzufügen der using-Anweisung über eine schnelle Aktion](../ide/media/addusing-quickaction.png)
 
-Klicken Sie auf das Glühbirnensymbol und dann auf **using System.Xml;**, um die using-Anweisung automatisch hinzuzufügen.
+Klicken Sie auf das Fehlerglühbirnensymbol und dann auf **using System.Xml;**, um die using-Anweisung automatisch hinzuzufügen.
 
 ### <a name="remove-and-sort-usings"></a>Using-Direktiven entfernen und sortieren
 
@@ -123,7 +123,7 @@ Mit der Funktion **Aus Verwendung generieren** können Sie Klassen und Member ve
 
 Unter jedem nicht definierten Bezeichner wird eine rote, wellenförmige Unterstreichung angezeigt. Wenn Sie den Mauszeiger auf den Bezeichner bewegen, wird eine Fehlermeldung als QuickInfo angezeigt. Sie können eines der folgenden Verfahren verwenden, um die entsprechenden Optionen anzuzeigen:
 
-- Klicken Sie auf den nicht definierten Bezeichner. Unter dem Bezeichner wird eine Glühbirne für **Schnellaktionen** angezeigt. Klicken Sie auf die Glühbirne.
+- Klicken Sie auf den nicht definierten Bezeichner. Unter dem Bezeichner wird ein Fehlerglühbirnensymbol für **Schnellaktionen** angezeigt. Klicken Sie auf das Fehlerglühbirnensymbol.
 
 - Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG**+**.** (**STRG**+Punkt).
 

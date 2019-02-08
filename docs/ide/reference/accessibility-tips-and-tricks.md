@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010388"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484133"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
@@ -41,7 +41,7 @@ Einige Personen haben Schwierigkeiten damit, manche Farben zu erkennen. Wenn Sie
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Verwenden von Anmerkungen, um nützliche Informationen über Ihren Code anzuzeigen
 
-Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z.B. Glühbirnen, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
+Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z. B. die Schraubendreher- und Glühbirnensymbole, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
 
   ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png)
 

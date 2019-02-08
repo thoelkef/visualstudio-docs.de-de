@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999755"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424381"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
-Verwenden Sie Visual Studio, um Ihre Unittests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden.
+Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden. Führen Sie Ihre Komponententests regelmäßig durch, um sicherzustellen, dass Ihr Core ordnungsgemäß funktioniert.
 
 ## <a name="create-unit-tests"></a>Erstellen von Unittests
 
-Erstellen Sie Unittests, und führen Sie sie häufig aus, um sicherzustellen, dass der Code ordnungsgemäß funktioniert.
+In diesem Abschnitt wird genauestens beschrieben, wie Sie ein Komponententestprojekt erstellen.
+
+> [!TIP]
+> Das getestete Projekt „HelloWorld“ ist ein Beispielprojekt, für das kein Code angezeigt werden soll. Wenn Sie ein HelloWorld-Projekt zum Testen erstellen möchten, finden Sie Anweisungen dazu unter [Erstellen Ihrer ersten C#-Konsolenanwendung](../ide/quickstart-csharp-console.md). Eine vollständige exemplarische Vorgehensweise finden Sie unter [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Erstellen Sie ein Unittests.
 
@@ -150,6 +153,7 @@ Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu 
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Create Unit Tests command (Befehl „Komponententests erstellen“)](create-unit-tests-menu.md)
 * [Generieren von Tests mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Ausführen von Unittests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)

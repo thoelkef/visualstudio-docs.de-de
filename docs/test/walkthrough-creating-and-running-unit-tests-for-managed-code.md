@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924599"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484198"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
 1. Klicken Sie im Menü **Datei** auf **Hinzufügen** > **Neues Projekt**.
+
+   > [!TIP]
+   > Es gibt mehrere andere Möglichkeiten zum Hinzufügen eines zusätzlichen Projekts zu einer vorhandenen Projektmappe. Sie können im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe klicken und anschließend **Hinzufügen** > **Neues Projekt** auswählen. Alternativ können Sie auf **Datei** > **Neu** > **Projekt** klicken und dann die Option **Zur Projektmappe hinzufügen** im Dialogfeld **Neues Projekt** auswählen:
+   >
+   > ![Option „Zur Projektmappe hinzufügen“ im Dialogfeld „Neues Projekt“](media/add-to-solution.png)
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 

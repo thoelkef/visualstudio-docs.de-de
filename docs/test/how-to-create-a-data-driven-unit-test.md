@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen eines datengesteuerten Komponententests'
+title: Erstellen von datengesteuerten Komponententests
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e8092663f7ccc0b6443f392358e7c487d0f6b63f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5166b2d4e7bc56ab61d8ca93b4d86019572554df
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968137"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484016"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 
@@ -36,7 +36,7 @@ Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schr
 
 4.  Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.
 
-##  <a name="BKMK_The_method_under_test"></a> Die zu testende Methode
+## <a name="the-method-under-test"></a>Die zu testende Methode
 
 Nehmen wir zum Beispiel an, dass Sie über Folgendes verfügen:
 
@@ -64,8 +64,9 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="create-a-data-source"></a>Erstellen einer Datenquelle
- Erstellen Sie zum Testen der Methode `AddIntegers` eine Datenquelle, die einen Wertebereich für die Parameter und die Summe angibt, die zurückgegeben werden soll. In diesem Beispiel wird eine SQL Compact-Datenbank mit dem Namen `MathsData` und eine Tabelle mit dem Namen `AddIntegersData` erstellt, die die folgenden Spaltennamen und -werte enthält:
+## <a name="create-a-data-source"></a>Erstellen einer Datenquelle
+
+Erstellen Sie zum Testen der Methode `AddIntegers` eine Datenquelle, die einen Wertebereich für die Parameter und die Summe angibt, die zurückgegeben werden soll. In diesem Beispiel wird eine SQL Compact-Datenbank mit dem Namen `MathsData` und eine Tabelle mit dem Namen `AddIntegersData` erstellt, die die folgenden Spaltennamen und -werte enthält:
 
 |FirstNumber|SecondNumber|Summe|
 |-|------------------|-|
@@ -73,8 +74,9 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="add-a-testcontext-to-the-test-class"></a>Hinzufügen eines TestContext zur Testklasse
- Das Komponententestframework erstellt ein Objekt `TestContext`, um die Informationen der Datenquelle für einen datengesteuerten Test zu speichern. Im Framework wird anschließend dieses Objekt als Wert für die von Ihnen erstellte Eigenschaft `TestContext` festgelegt.
+## <a name="add-a-testcontext-to-the-test-class"></a>Hinzufügen eines TestContext zur Testklasse
+
+Das Komponententestframework erstellt ein Objekt `TestContext`, um die Informationen der Datenquelle für einen datengesteuerten Test zu speichern. Im Framework wird anschließend dieses Objekt als Wert für die von Ihnen erstellte Eigenschaft `TestContext` festgelegt.
 
 ```csharp
 private TestContext testContextInstance;
@@ -85,10 +87,11 @@ public TestContext TestContext
 }
 ```
 
- In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
+In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
 
-##  <a name="write-the-test-method"></a>Schreiben der Testmethode
- Die Testmethode für `AddIntegers` ist recht einfach. Rufen Sie für jede Zeile in der Datenquelle `AddIntegers` mit den Spaltenwerten **FirstNumber** und **SecondNumber** als Parameter auf, und vergleichen Sie den Rückgabewert mit dem Spaltenwert **Summe**:
+## <a name="write-the-test-method"></a>Schreiben der Testmethode
+
+Die Testmethode für `AddIntegers` ist recht einfach. Rufen Sie für jede Zeile in der Datenquelle `AddIntegers` mit den Spaltenwerten **FirstNumber** und **SecondNumber** als Parameter auf, und vergleichen Sie den Rückgabewert mit dem Spaltenwert **Summe**:
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -110,8 +113,9 @@ public void AddIntegers_FromDataSourceTest()
 
 Die Methode `Assert` enthält eine Nachricht, die die Werte `x` und `y` einer fehlerhaften Iteration anzeigt. Die bestätigen Werte `expected` und `actual` sind bereits standardmäßig in den Details eines fehlgeschlagenen Tests enthalten.
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute
- Das Attribut `DataSource` gibt die Verbindungszeichenfolge für die Datenquelle den Tabellennamen an, die Sie in der Testmethode verwenden. Die genaue Information in der Verbindungszeichenfolge ist unterschiedlich, je nachdem welche Datenquelle Sie verwenden. In diesem Beispiel wurde eine Datenbank „SqlServerCe“ verwendet.
+### <a name="specify-the-datasourceattribute"></a>Angeben des DataSourceAttribute
+
+Das Attribut `DataSource` gibt die Verbindungszeichenfolge für die Datenquelle den Tabellennamen an, die Sie in der Testmethode verwenden. Die genaue Information in der Verbindungszeichenfolge ist unterschiedlich, je nachdem welche Datenquelle Sie verwenden. In diesem Beispiel wurde eine Datenbank „SqlServerCe“ verwendet.
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
@@ -123,17 +127,17 @@ Das DataSource-Attribut hat drei Konstruktoren.
 [DataSource(dataSourceSettingName)]
 ```
 
- Ein Konstruktor mit einem Parameter verwendet die Verbindungsinformationen, die in der *app.config*-Datei für die Projektmappe gespeichert sind. *dataSourceSettingsName* ist der Name des XML-Elements in der Config-Datei, das die Verbindungsinformationen angibt.
+Ein Konstruktor mit einem Parameter verwendet die Verbindungsinformationen, die in der *app.config*-Datei für die Projektmappe gespeichert sind. *dataSourceSettingsName* ist der Name des XML-Elements in der Config-Datei, das die Verbindungsinformationen angibt.
 
- Eine *app.config*-Datei hilft Ihnen dabei, den Speicherort der Datenquelle zu ändern, ohne den Komponententest selbst zu ändern. Weitere Informationen zum Erstellen und Verwenden einer *app.config*-Datei finden Sie unter [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Eine *app.config*-Datei hilft Ihnen dabei, den Speicherort der Datenquelle zu ändern, ohne den Komponententest selbst zu ändern. Weitere Informationen zum Erstellen und Verwenden einer *app.config*-Datei finden Sie unter [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
- Der Konstruktor `DataSource` mit zwei Parametern gibt die Verbindungszeichenfolge für die Datenquelle und den Tabellennamen an, die die Daten für die Testmethode enthält.
+Der Konstruktor `DataSource` mit zwei Parametern gibt die Verbindungszeichenfolge für die Datenquelle und den Tabellennamen an, die die Daten für die Testmethode enthält.
 
- Die Verbindungszeichenfolgen hängen vom Typ der Datenquelle ab, er sollte jedoch ein Anbieterelement enthalten, das den unveränderlichen Namen des Datenanbieters angibt.
+Die Verbindungszeichenfolgen hängen vom Typ der Datenquelle ab, er sollte jedoch ein Anbieterelement enthalten, das den unveränderlichen Namen des Datenanbieters angibt.
 
 ```csharp
 [DataSource(
@@ -144,21 +148,26 @@ Das DataSource-Attribut hat drei Konstruktoren.
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow für den Zugriff auf die Daten
- Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein <xref:System.Data.DataRow>-Objekt. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, konvertieren Sie sie in den entsprechenden Typ:
+### <a name="use-testcontextdatarow-to-access-the-data"></a>Verwenden von TestContext.DataRow für den Zugriff auf die Daten
+
+Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein <xref:System.Data.DataRow>-Objekt. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, konvertieren Sie sie in den entsprechenden Typ:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="run-the-test-and-view-results"></a>Ausführen des Tests und Anzeigen von Ergebnissen
- Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster **Test-Explorer** in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen Ihrer Tests werden die Ergebnisse vom **Test-Explorer** in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** und **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen.
+## <a name="run-the-test-and-view-results"></a>Ausführen des Tests und Anzeigen von Ergebnissen
 
- Während Ihr Test ausgeführt wird, wird die Testergebnisleiste im oberen Bereich des Explorers animiert. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich waren, oder rot, wenn einer der Tests fehlgeschlagen ist. Im Detailbereich unten im Fenster des **Test-Explorers** wird eine Zusammenfassung des Testlaufs angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen.
+Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im **Test-Explorer** in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen Ihrer Tests werden die Ergebnisse vom **Test-Explorer** in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** und **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen.
 
- Wenn Sie die `AddIntegers_FromDataSourceTest`-Methode in unserem Beispiel ausgeführt haben, wird die Ergebnisleiste rot, und die Testmethode wird in die Gruppe **Fehlgeschlagene Tests** verschoben. Ein datengesteuerter Test schlägt fehl, wenn eine der durchlaufenen Methoden aus der Datenquelle fehlschlägt. Wenn Sie einen fehlgeschlagenen datengesteuerten Test im Fenster des **Test-Explorers** auswählen, wird im Detailbereich das Ergebnis von jedem Durchlauf angezeigt, der vom Datenzeilenindex identifiziert wird. Es scheint, dass in diesem Beispiel der Algorithmus `AddIntegers` negative Werte nicht richtig behandelt.
+Während Ihr Test ausgeführt wird, wird die Testergebnisleiste im oberen Bereich des **Test-Explorers** animiert. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich waren, oder rot, wenn einer der Tests fehlgeschlagen ist. Im Detailbereich unten im Fenster des **Test-Explorers** wird eine Zusammenfassung des Testlaufs angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen.
 
- Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wird die Ergebnisleiste grün, und die Testmethode wird in die Gruppe **Bestandene Tests** verschoben.
+> [!NOTE]
+> Es gibt ein Ergebnis für jede Zeile mit Daten sowie ein zusammengefasstes Ergebnis. Wenn alle Zeilen den Test bestehen, gibt die Zusammenfassung das Ergebnis **Bestanden** zurück. Wenn eine beliebige Zeile den Test nicht besteht, gibt die Zusammenfassung das Ergebnis **Fehlgeschlagen** zurück.
+
+Wenn Sie die `AddIntegers_FromDataSourceTest`-Methode in unserem Beispiel ausgeführt haben, wird die Ergebnisleiste rot, und die Testmethode wird in die Gruppe **Fehlgeschlagene Tests** verschoben. Ein datengesteuerter Test schlägt fehl, wenn eine der durchlaufenen Methoden aus der Datenquelle fehlschlägt. Wenn Sie einen fehlgeschlagenen datengesteuerten Test im Fenster des **Test-Explorers** auswählen, wird im Detailbereich das Ergebnis von jedem Durchlauf angezeigt, der vom Datenzeilenindex identifiziert wird. Es scheint, dass in diesem Beispiel der Algorithmus `AddIntegers` negative Werte nicht richtig behandelt.
+
+Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wird die Ergebnisleiste grün, und die Testmethode wird in die Gruppe **Bestandene Tests** verschoben.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,6 +1,6 @@
 ---
 title: Suchen und Verwenden von Erweiterungen
-ms.date: 06/07/2017
+ms.date: 01/30/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -15,56 +15,52 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf5ae1c4109f88e9fca74f59fec09233bbec04d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 766d2e87361ad191b985272a8e1de8a6fa272353
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027853"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484081"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 
 Visual Studio-Extensions sind Codepakete, die innerhalb von Visual Studio ausgeführt werden und neue oder verbesserte Visual Studio-Funktionen bereitstellen. Weitere Informationen zu Visual Studio-Erweiterungen finden Sie hier: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Sie können das Dialogfeld **Erweiterungen und Updates** verwenden, um Visual Studio-Erweiterungen und Beispiele von Websites und anderen Speicherorten zu installieren, und sie dann aktivieren, deaktivieren, aktualisieren oder deinstallieren. (**Extras > Erweiterungen und Updates**, oder geben Sie **Erweiterungen** im Fenster **Schnellstart** ein.) Das Dialogfeld zeigt auch Updates für installierte Beispiele und Erweiterungen. Sie können auch Erweiterungen von Websites herunterladen oder von anderen Entwicklern erhalten.
+Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um Visual Studio-Erweiterungen zu installieren und zu verwalten. Klicken Sie auf **Extras** > **Erweiterungen und Updates**, oder geben Sie **Erweiterungen** in das Fenster **Schnellstart** ein, um das Dialogfeld **Erweiterungen und Updates** zu öffnen.
 
-> [!NOTE]
-> Ab Visual Studio 2015 werden in Visual Studio Marketplace gehostete Erweiterungen automatisch aktualisiert. Diese Einstellung können Sie über das Dialogfeld **Erweiterungen und Updates** ändern.  Details finden Sie im untenstehenden Abschnitt **Automatische Erweiterungsaktualisierungen** .
+![Dialogfeld „Erweiterungen und Updates“ in Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
 
-## <a name="finding-visual-studio-extensions"></a>Suchen von Visual Studio-Erweiterungen
+Im linken Bereich werden die Erweiterungen nach installierten Erweiterungen, im Visual Studio Marketplace (**Online**) verfügbaren Erweiterungen und Erweiterungen, für die Updates verfügbar sind, kategorisiert. Der **Roaming-Erweiterungs-Manager** enthält eine Liste aller Visual Studio-Erweiterungen, die Sie auf jeglichen Computern oder Instanzen von Visual Studio installiert haben. Er ist dazu konzipiert, dass Sie Ihre bevorzugten Erweiterungen einfacher finden können.
 
-Sie können Erweiterungen über [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) installieren. Zu diesen Erweiterungen können Steuerelemente, Beispiele, Vorlagen, Werkzeuge oder andere Komponenten zählen, die Visual Studio Funktionen hinzufügen. In Visual Studio werden Erweiterungen im VSIX-Paketformat unterstützt. Diese umfassen Projektvorlagen, Elementvorlagen, **Werkzeugkasten** -Komponenten des Managed Extension Framework (MEF) und VSPackages. Sie können auch MSI-basierte Erweiterungen herunterladen und installieren, doch können diese nicht über das Dialogfeld **Erweiterungen und Updates** aktiviert oder deaktiviert werden. Visual Studio Marketplace enthält sowohl VSIX- als auch MSI-Erweiterungen.
+## <a name="find-visual-studio-extensions"></a>Suchen von Visual Studio-Erweiterungen
 
-## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Installieren oder Deinstallieren von Visual Studio-Erweiterungen
+Sie können Erweiterungen über den [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) installieren. Zu diesen Erweiterungen können Steuerelemente, Beispiele, Vorlagen, Werkzeuge oder andere Komponenten zählen, die Visual Studio Funktionen hinzufügen. In Visual Studio werden Erweiterungen im VSIX-Paketformat unterstützt. Diese umfassen Projektvorlagen, Elementvorlagen, **Werkzeugkasten** -Komponenten des Managed Extension Framework (MEF) und VSPackages. Sie können auch MSI-basierte Erweiterungen herunterladen und installieren, doch können diese nicht über das Dialogfeld **Erweiterungen und Updates** aktiviert oder deaktiviert werden. Visual Studio Marketplace enthält sowohl VSIX- als auch MSI-Erweiterungen.
 
-Suchen Sie in **Erweiterungen und Updates**nach der Erweiterung, die Sie installieren möchten. (Wenn Sie den Namen der Erweiterung oder einen Teil des Namens kennen, können Sie im Fenster **Suche** danach suchen.) Klicken Sie auf **Download** (Herunterladen).  Die Erweiterung wird der Warteschlange für die Installation hinzugefügt. Sie wird installiert, sobald alle Instanzen von Visual Studio geschlossen wurden.
+## <a name="install-or-uninstall-visual-studio-extensions"></a>Installieren oder Deinstallieren von Visual Studio-Erweiterungen
+
+Suchen Sie in **Erweiterungen und Updates**nach der Erweiterung, die Sie installieren möchten. (Wenn Sie den Namen der Erweiterung oder einen Teil des Namens kennen, können Sie im Fenster **Suche** danach suchen.) Klicken Sie auf **Download** (Herunterladen). Die Erweiterung wird der Warteschlange für die Installation hinzugefügt. Sie wird installiert, sobald alle Instanzen von Visual Studio geschlossen wurden.
 
 Wenn Sie versuchen, eine Erweiterung zu installieren, die Abhängigkeiten enthält, wird vom Installationsprogramm überprüft, ob diese bereits installiert sind. Sind sie nicht installiert, werden im Dialogfeld **Erweiterungen und Updates** die vor der Installation der Erweiterung zu installierenden Abhängigkeiten aufgeführt.
 
-Wenn Sie die Verwendung einer Erweiterung beenden möchten, können Sie diese deaktivieren oder deinstallieren. Beim Deaktivieren einer Erweiterung bleibt sie installiert, wird jedoch nicht geladen. Sie können nur VSIX-Erweiterungen deaktivieren. Erweiterungen, die mit MSI installiert wurden, können nur deinstalliert werden. Suchen Sie nach der Erweiterung, und klicken Sie auf **Deinstallieren** oder **Deaktivieren**. Sie müssen Visual Studio neu starten, um eine deaktivierte Erweiterung zu entladen.
+Wenn Sie die Verwendung einer Erweiterung beenden möchten, können Sie diese deaktivieren oder deinstallieren. Beim Deaktivieren einer Erweiterung bleibt sie installiert, wird jedoch nicht geladen. Sie können nur VSIX-Erweiterungen deaktivieren. Erweiterungen, die mit MSI installiert wurden, können nur deinstalliert werden. Suchen Sie nach der Erweiterung, und klicken Sie auf **Deinstallieren** oder **Deaktivieren**. Starten Sie Visual Studio neu, um deaktivierte Erweiterungen zu entladen.
 
 ## <a name="per-user-and-administrative-extensions"></a>Erweiterungen pro Benutzer und Verwaltungserweiterungen
 
 Bei den meisten Erweiterungen handelt es sich um Erweiterungen pro Benutzer, und diese werden im Ordner *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio-Version>\>\Extensions\\* installiert. Bei einigen Erweiterungen handelt es sich um Verwaltungserweiterungen, und diese werden im Ordner *\<Visual Studio-Installationsordner>\Common7\IDE\Extensions\\* installiert.
 
-Um das System vor Erweiterungen zu schützen, in denen möglicherweise Fehler oder bösartiger Code enthalten ist, können Sie das Laden von Erweiterungen pro Benutzer dahingehend einschränken, dass sie nur geladen werden, wenn Visual Studio mit normalen Benutzerberechtigungen ausgeführt wird. Das bedeutet, dass Erweiterungen pro Benutzer deaktiviert sind, wenn Visual Studio mit Administratorberechtigungen ausgeführt wird. Wechseln Sie hierzu zur Optionsseite **Erweiterungen und Updates** (**Extras > Optionen** > **Umgebung** > **Erweiterungen und Updates**, oder geben Sie einfach **Erweiterung** in das Fenster **Schnellstart** ein). Deaktivieren Sie das Kontrollkästchen **Pro-Benutzer-Erweiterungen bei Ausführung als Administrator laden** , und starten Sie Visual Studio dann neu.
+Um das System vor Erweiterungen zu schützen, in denen möglicherweise Fehler oder bösartiger Code enthalten ist, können Sie das Laden von Erweiterungen pro Benutzer dahingehend einschränken, dass sie nur geladen werden, wenn Visual Studio mit normalen Benutzerberechtigungen ausgeführt wird. Das bedeutet, dass Erweiterungen pro Benutzer deaktiviert sind, wenn Visual Studio mit Administratorberechtigungen ausgeführt wird. Wechseln Sie hierzu zur Optionsseite **Erweiterungen und Updates** (**Extras > Optionen** > **Umgebung** > **Erweiterungen und Updates**). Deaktivieren Sie das Kontrollkästchen **Pro-Benutzer-Erweiterungen bei Ausführung als Administrator laden** , und starten Sie Visual Studio dann neu.
 
 ## <a name="automatic-extension-updates"></a>Automatische Erweiterungsupdates
 
-Pro-Benutzer-Erweiterungen werden automatisch aktualisiert, wenn eine neue Version für Visual Studio Marketplace zur Verfügung steht.  Die neue Version der Erweiterung wird erkannt und im Hintergrund installiert. Beim nächsten Neustart von Visual Studio wird entsprechend die neue Version der Erweiterung ausgeführt.
-
-Nur Pro-Benutzer-Erweiterungen können automatisch aktualisiert werden.  Administrative Erweiterungen, die für alle Benutzer installiert werden, werden nicht aktualisiert, und Sie müssen neue Versionen weiterhin über das Dialogfeld **Erweiterungen und Updates** und den Knoten **Updates** manuell installieren. Sie können im Detailbereich des Dialogfelds **Erweiterungen und Updates** der Erweiterung anzeigen, welche Erweiterungen automatisch aktualisiert werden.
+Erweiterungen werden automatisch aktualisiert, wenn eine neue Version im Visual Studio Marketplace zur Verfügung steht. Die neue Version der Erweiterung wird im Hintergrund erkannt und installiert. Beim nächsten Start von Visual Studio wird die neue Version der Erweiterung ausgeführt.
 
 Wenn Sie automatische Updates deaktivieren möchten, können Sie das Feature für alle Erweiterungen oder nur für bestimmte Erweiterungen deaktivieren.
 
-- Wählen Sie zum Deaktivieren von automatischen Updates für alle Erweiterungen den Link **Einstellungen für die Erweiterungen und Updates ändern** im Dialogfeld **Erweiterungen und Updates** aus, und deaktivieren Sie **Erweiterungen automatisch aktualisieren**.
+- Wählen Sie zum Deaktivieren von automatischen Updates für alle Erweiterungen den Link **Einstellungen für die Erweiterungen und Updates ändern** im Dialogfeld **Erweiterungen und Updates** aus. Deaktivieren Sie die Option **Erweiterungen automatisch aktualisieren** im Dialogfeld **Optionen**.
 
 - Deaktivieren Sie zum automatischen Deaktivieren einer bestimmten Erweiterung die Option **Diese Extension automatisch aktualisieren** im Detailbereich der Erweiterung auf der rechten Seite des Dialogfelds **Erweiterungen und Updates**.
 
-> [!NOTE]
-> Von Visual Studio 2015 Update 2 an können Sie (unter **Extras > Optionen > Umgebung > Erweiterungen und Updates**) angeben, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) vorgenommen werden sollen.
-
-## <a name="extension-crashunresponsiveness-notifications"></a>Benachrichtigungen über einen Erweiterungsabsturz oder eine nicht reagierende Benutzeroberfläche
+## <a name="extension-crash-and-unresponsiveness-notifications"></a>Benachrichtigungen zum Absturz von und zu nicht reagierenden Erweiterungen
 
 In **Visual Studio 2017 (Version 15.3)** werden Sie von Visual Studio benachrichtigt, wenn die Vermutung besteht, dass eine Erweiterung während einer vorherigen Sitzung zu einem Absturz beigetragen hat. Wenn Visual Studio abstürzt, speichert das Programm den Ausnahmestapel. Beim nächsten Start von Visual Studio untersucht es den Stapel. Es beginnt dabei auf der Blattebene und arbeitet sich zur Basis herunter. Wenn Visual Studio ermittelt, dass ein Frame zu einem Modul einer installierten und aktivierten Erweiterung gehört, wird eine Benachrichtigung angezeigt.
 
@@ -75,6 +71,7 @@ Sie können diese Benachrichtigung ignorieren oder eine der folgenden Maßnahmen
 - Wählen Sie **Disable this extension** (Diese Erweiterung deaktivieren) aus. Visual Studio deaktiviert die Erweiterung und informiert Sie, ob Sie Ihr System neu starten müssen, damit die Deaktivierung wirksam wird. Sie können die Erweiterung im Dialogfeld **Erweiterungen und Updates** erneut aktivieren, falls Sie das wünschen.
 
 - Klicken Sie auf **Diese Meldung nicht mehr anzeigen**.
+
   - Wenn sich die Benachrichtigung auf einen Absturz in einer vorherigen Sitzung bezieht, zeigt Visual Studio keine weiteren Benachrichtigungen an, wenn ein Absturz in Zusammenhang mit dieser Erweiterung auftritt. Visual Studio zeigt weiterhin Benachrichtigungen an, wenn eine nicht reagierende Benutzeroberfläche dieser Erweiterung zugeordnet werden kann, oder wenn ein Absturz oder eine nicht reagierende Benutzeroberfläche mit anderen Erweiterungen in Zusammenhang steht.
   - Wenn sich die Benachrichtigung auf eine nicht reagierende Benutzeroberfläche bezieht, zeigt die IDE keine Benachrichtigung mehr an, wenn diese Erweiterung mit einer nicht reagierenden Benutzeroberfläche in Zusammenhang steht. Visual Studio zeigt weiterhin absturzbezogene Benachrichtigungen für diese Erweiterung sowie absturzbezogene Benachrichtigungen und Benachrichtigungen zu einer nicht reagierenden Benutzeroberfläche für andere Erweiterungen an.
 
@@ -109,7 +106,7 @@ Sie können das Dialogfeld **Erweiterungen und Updates** dazu verwenden, die fol
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installieren ohne das Dialogfeld „Erweiterungen und Updates“
 
-Erweiterungen, die in *VSIX-Dateien* gepackt wurden, sind möglicherweise an anderen Orten als in Visual Studio Marketplace verfügbar. Diese Dateien können mithilfe des Dialogfelds **Erweiterungen und Updates** nicht erkannt werden. Sie können eine *VSIX-Datei* jedoch installieren, indem Sie auf die Datei doppelklicken oder sie auswählen und die **EINGABETASTE** drücken. Befolgen Sie dann die angezeigten Anweisungen. Wenn die Erweiterung installiert ist, können Sie das Dialogfeld **Erweiterungen und Updates** zum Aktivieren, Deaktivieren oder Deinstallieren der Erweiterung verwenden.
+Erweiterungen, die in *VSIX-Dateien* gepackt wurden, sind möglicherweise an anderen Orten als Visual Studio Marketplace verfügbar. Diese Dateien können mithilfe des Dialogfelds **Erweiterungen und Updates** nicht erkannt werden. Sie können eine *VSIX-Datei* jedoch installieren, indem Sie auf die Datei doppelklicken oder sie auswählen und die **EINGABETASTE** drücken. Befolgen Sie dann die angezeigten Anweisungen. Wenn die Erweiterung installiert ist, können Sie das Dialogfeld **Erweiterungen und Updates** zum Aktivieren, Deaktivieren oder Deinstallieren der Erweiterung verwenden.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Vom Dialogfeld „Erweiterungen und Updates“ nicht unterstützte Erweiterungstypen
 

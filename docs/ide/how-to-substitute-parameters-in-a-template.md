@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031759"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424277"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
 
@@ -25,7 +25,7 @@ Vorlagenparameter werden im Format $*Parameter*$ geschrieben. Eine vollständige
 
 Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Namen eines Namespaces durch den „sicheren Projektnamen“ zu ersetzen.
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Verwenden eines Parameters, um einen Namespacenamen zu ersetzen
+## <a name="example---namespace-name"></a>Beispiel: Namespacename
 
 1. Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Beispiel:
 

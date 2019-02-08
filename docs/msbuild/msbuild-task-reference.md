@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951286"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483977"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [Visual C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
  [GetAssemblyIdentity-Aufgabe](../msbuild/getassemblyidentity-task.md)  
  Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identitätsinformation aus  
 
- [GetFrameworkPath-Aufgabe](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash-Aufgabe](../msbuild/getfilehash-task.md)  
+ Berechnet Prüfsummen der Inhalte einer Datei oder mehrerer Dateien.
+
+[GetFrameworkPath-Aufgabe](../msbuild/getframeworkpath-task.md)  
  Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Assembly ab  
 
  [GetFrameworkSdkPath-Aufgabe](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
 
  [Vbc-Aufgabe](../msbuild/vbc-task.md)  
  Ruft den Visual Basic-Compiler auf, um ausführbare Dateien, DLLs oder Codemodule zu erzeugen  
+
+ [VerifyFileHash-Aufgabe](../msbuild/verifyfilehash-task.md)  
+ Überprüft, ob die Datei mit dem erwarteten Dateihash übereinstimmt.
 
  [Warning-Aufgabe](../msbuild/warning-task.md)  
  Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Bedingungsanweisung basiert  

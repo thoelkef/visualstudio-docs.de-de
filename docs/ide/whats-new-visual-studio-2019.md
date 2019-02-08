@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090106"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483704"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
@@ -40,7 +40,7 @@ Im Folgenden finden Sie eine allgemeine Zusammenfassung der Funktionen von Visua
 * **[Ständige Innovation](#continuous-innovation)**. Code mit intelligenter, cloudbasierter Unterstützung.
 
 > [!NOTE]
-> Eine vollständige Liste der neuen Features und Funktionen in der Vorschauversion von Visual Studio 2019 finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Eine vollständige Liste der neuen Features und Funktionen in der Vorschauversion von Visual Studio 2019 finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Eine Zusammenfassung der Neuerungen in der zweiten Preview finden Sie im Blogbeitrag [Visual Studio 2019 Preview 2 is now available (Visual Studio 2019 Preview 2 ist nun verfügbar)](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/).
 
 ## <a name="personal-and-team-productivity"></a>Persönliche Produktivität und Teamproduktivität
 
@@ -82,6 +82,8 @@ Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, �
 
    ![Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019](media/search-watch-window.png)
 
+Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows (Erweiterungen in Visual Studio 2019: Suchen nach Objekten und Eigenschaften in den Fenstern „Überwachen“, „Auto“ und „Lokal“)](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) ist ein Entwicklerdienst, mit dem Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.
@@ -110,7 +112,7 @@ Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NE
 
 Wenn Sie Monitore verwenden, die mit unterschiedlichen Anzeigeskalierungsfaktoren konfiguriert sind, oder eine Remoteverbindung mit einem Computer herstellen, bei dem die Anzeigeskalierungsfaktoren von denen auf Ihrem Hauptgerät abweichen, werden Sie vielleicht feststellen, dass Visual Studio unscharf aussieht oder bei der falschen Skalierung gerendert wird.
 
-Mit dem Release der Vorschauversion 1 von Visual Studio 2019 werden die ersten Schritte unternommen, mit denen Visual Studio zu einer PMA-fähigen Anwendung wird. Es wird die Grundlage dafür geschaffen, dass Visual Studio unabhängig von den verwendeten Anzeigeskalierungsfaktoren korrekt gerendert wird.
+Mit dem Release von Visual Studio 2019 Preview werden die ersten Schritte unternommen, mit denen Visual Studio zu einer PMA-fähigen Anwendung wird. Es wird die Grundlage dafür geschaffen, dass Visual Studio unabhängig von den verwendeten Anzeigeskalierungsfaktoren korrekt gerendert wird.
 
    ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 

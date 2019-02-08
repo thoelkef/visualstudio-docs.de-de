@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017096"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483769"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -89,9 +89,9 @@ Alle neuen oder aktualisierten Warnungen werden auf der Registerkarte **Fehlerli
 
 ![Visual Studio, Fehlerliste mit Warnungen](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Verwenden von Glühbirnen zum Beheben oder Umgestalten von Code
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Verwenden von Schnellaktionen zum Beheben oder Umgestalten von Code
 
-Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder auf das Glühbirnen- oder Schraubendrehersymbol auf dem rechten Rand klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
+Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder im Randbereich auf das Glühbirnen-, Fehlerglühbirnen- oder Schraubendrehersymbol klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
 
 ![Visual Studio, Glühbirne mit Vorschau](../ide/media/quick-actions-options.png)
 

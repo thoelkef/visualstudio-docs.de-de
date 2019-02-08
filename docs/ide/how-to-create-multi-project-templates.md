@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985915"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424213"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -69,17 +69,20 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Erstellen einer Vorlage mit mehreren Projekten aus einer vorhandenen Projektmappe
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Erstellen einer Vorlage mit mehreren Projekten aus einer vorhandenen Projektmappe
 
 1. Erstellen Sie eine Projektmappe, und fügen Sie mindestens zwei Projekte hinzu.
 
 1. Passen Sie die Projekte an, bis diese in eine Vorlage exportiert werden können.
 
+   > [!TIP]
+   > Wenn Sie [Vorlagenparameter](template-parameters.md) verwenden und auf die Variablen der übergeordneten Vorlage verweisen möchten, fügen Sie das Präfix `ext_` zum Namen des Parameters hinzu. Beispielsweise `$ext_safeprojectname$`.
+
 1. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**.
 
    Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.
 
-1. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie das Projekt aus, das Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**.
+1. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie eines der Projekte aus, die Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**. (Sie müssen diese Schritte für jedes Projekt in der Projektmappe wiederholen.)
 
 1. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Klicken Sie auf **Fertig stellen**.
 
