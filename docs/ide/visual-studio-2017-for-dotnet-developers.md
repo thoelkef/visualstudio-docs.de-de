@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941391"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484094"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
@@ -155,7 +155,7 @@ Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schre
 | Feature | Details | Vorgehensweise zum Aktivieren |
 |-|-|-|
 | Suchen von Dateien im Projektmappen-Explorer | Markiert die aktive Datei im **Projektmappen-Explorer** | **Extras** > **Optionen** > **Projekte und Projektmappen** > **Aktives Element im Projektmappen-Explorer überwachen** |
-| Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen | Zeigt eine Glühbirne mit einer Codefehlerbehebung zum Installieren eines NuGet-Pakets für einen nicht referenzierten Typ an. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **using-Direktiven für Typen in Referenzassemblys vorschlagen** und **using-Direktiven für Typen in NuGet-Paketen vorschlagen** |
+| Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen | Zeigt eine Fehlerglühbirne mit einer Codefehlerbehebung zum Installieren eines NuGet-Pakets für einen nicht referenzierten Typ an. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **using-Direktiven für Typen in Referenzassemblys vorschlagen** und **using-Direktiven für Typen in NuGet-Paketen vorschlagen** |
 | Vollständige Projektmappenanalyse aktivieren | Zeigt alle Fehler in der Projektmappe in der **Fehlerliste** an. | **Tools** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Vollständige Projektmappenanalyse aktivieren** |
 | Aktivieren der Navigation zu dekompilierten Quellen | Lässt die Aktivierung von „Gehe zu Definition“ für Typen/Member aus externen Quellen zu und verwendet den ILSpy-Decompiler zur Anzeige von Methodentexten. | **Extras** > **Optionen** > **Text-Editor** > **C#** > **Erweitert** > **Navigation zu dekompilierten Quellen aktivieren** |
 | Vervollständigungs-/Vorschlagsmodus | Ändert das Vervollständigungsverhalten in IntelliSense (Entwickler mit IntelliJ-Hintergründen ändern meist die Einstellung des Standardwerts). | **Menü** > **Bearbeiten** > **IntelliSense** > **Beendigungsmodus umschalten** |

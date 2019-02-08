@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020567"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571186"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -35,7 +35,7 @@ In diesem Schritt wird Folgendes erläutert:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Schritt 2.1: Erstellen einer App mit einer Standardstruktur
 
-Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen Dateien für einen bestimmten Zweck enthält. Ein Django-Projekt kann eine beliebige Anzahl von Apps enthalten, da ein Webhost eine beliebige Anzahl getrennter Einstiegspunkte über einen Domänennamen bedienen kann. Beispielsweise enthält ein Django-Projekt für eine Domäne wie contoso.com möglicherweise eine App für www.contoso.com, eine zweite App für support.contoso.com und eine dritte App für docs.contoso.com. In diesem Fall verarbeitet das Django-Projekt das URL-Routing auf Websiteebene (in seinen Dateien *urls.py* und *settings.py*), während jede App durch ihr internes Routing, ihre Ansichten und Modelle, ihre statischen Dateien und ihre Verwaltungsschnittstelle ihren eigenen Stil und ihr eigenes Verhalten hat.
+Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen Dateien für einen bestimmten Zweck enthält. Ein Django-Projekt kann eine beliebige Anzahl von Apps enthalten, da ein Webhost eine beliebige Anzahl getrennter Einstiegspunkte über einen Domänennamen bedienen kann. Beispielsweise enthält ein Django-Projekt für eine Domäne wie contoso.com möglicherweise eine App für `www.contoso.com`, eine zweite App für support.contoso.com und eine dritte App für docs.contoso.com. In diesem Fall verarbeitet das Django-Projekt das URL-Routing auf Websiteebene (in seinen Dateien *urls.py* und *settings.py*), während jede App durch ihr internes Routing, ihre Ansichten und Modelle, ihre statischen Dateien und ihre Verwaltungsschnittstelle ihren eigenen Stil und ihr eigenes Verhalten hat.
 
 Eine Django-App beginnt normalerweise mit einen Standardsatz von Dateien. Visual Studio bietet Elementvorlagen, um eine Django-App in einem Django-Projekt zusammen mit einem integrierten Menübefehl zu initialisieren, der demselben Zweck dient:
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964612"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484107"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -64,7 +64,7 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
    > [!NOTE]
    >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
 
-3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
+3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Fehlerglühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
 
     ![Schnellaktionen in Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -90,7 +90,7 @@ Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse übe
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Glühbirne **Schnellaktionen** und dann auf **Generate property 'Automobile.Model'** (Eigenschaft „Automobile.Model“ generieren).
+2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Fehlerglühbirne **Schnellaktionen**, und wählen Sie dann **Eigenschaft „Automobile.Model“ generieren** aus.
 
 3. Generieren Sie auf dieselbe Weise einen Eigenschaftenstub für die `TopSpeed`-Eigenschaft.
 
@@ -104,12 +104,12 @@ Jetzt möchten wir Ihnen zeigen, wie Sie eine Testmethode erstellen, die einen K
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Klicken Sie auf die Glühbirne **Schnellaktionen** unterhalb der roten Wellenlinie, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
+2.  Klicken Sie unterhalb der roten Wellenlinie auf die Fehlerglühbirne **Schnellaktionen**, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
 
      In der `Automobile` -Klassendatei hat der neue Konstruktor die Namen der lokalen Variablen geprüft, die im Konstruktoraufruf verwendet werden, Eigenschaften gefunden, die die gleichen Namen in der `Automobile` -Klasse aufweisen, und Code im Konstruktortext zum Speichern der Argumentwerte in den Eigenschaften `Model` und `TopSpeed` bereitgestellt.
 
 
-3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf die Glühbirne **Schnellaktionen** und dann auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
+3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf die Fehlerglühbirne **Schnellaktionen** und dann auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
 
 ### <a name="generate-a-stub-for-a-method"></a>Generieren eines Stubs für eine Methode
 Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsRunning`-Zustand versetzt werden kann, wenn die zugehörigen Eigenschaften `Model` und `TopSpeed` auf andere als die Standardwerte festgelegt werden.
@@ -119,7 +119,7 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Klicken Sie auf die Glühbirne **Schnellaktionen** für den Methodenaufruf `myAuto.Start` und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).
+2.  Klicken Sie auf die Fehlerglühbirne **Schnellaktionen** für den Methodenaufruf `myAuto.Start` und dann auf **Methode „Automobile.Start“ generieren**.
 
 3.  Klicken Sie auf die Glühbirne **Schnellaktionen** für die `IsRunning`-Eigenschaft und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).
 

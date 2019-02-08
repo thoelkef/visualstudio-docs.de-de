@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935019"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424446"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
 Wenn die Vorlage instanziiert wird, können Sie die darin erhaltenen Werte ersetzen. Verwenden Sie *Vorlagenparameter*, um diese Funktion einzurichten. Sie können diese Vorlagenparameter dazu verwenden, Werte wie Klassennamen und Namespaces in der Vorlage zu ersetzen. Der Vorlagen-Assistent, der im Hintergrund ausgeführt wird, wenn ein Benutzer ein neues Element oder Projekt hinzufügt, ersetzt diese Parameter.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern
+## <a name="declare-and-enable-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern
 
 Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
@@ -32,7 +32,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>So aktivieren Sie die Parameterersetzung in Vorlagen
+### <a name="enable-parameter-substitution-in-templates"></a>Aktivieren der Parameterersetzung in Vorlagen
 
 1. Suchen Sie in der *VSTEMPLATE*-Datei der Vorlage das `ProjectItem`-Element, das dem Element entspricht, für das Sie die Parameterersetzung aktivieren möchten.
 
@@ -46,11 +46,12 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 ## <a name="reserved-template-parameters"></a>Reservierte Vorlagenparameter
 
-In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können.
+In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können:
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
+|ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
 |itemname|Der vom Benutzer im Dialogfeld **Neues Element hinzufügen** angegebene Name|
 |machinename|Der aktuelle Computername (z. B. Computer01).|
@@ -118,6 +119,7 @@ Fügen Sie der *VSTEMPLATE*-Datei für die Projektvorlage das `ReplaceParameters
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](how-to-substitute-parameters-in-a-template.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer ASP.NET Core-Web-App in C#
 description: Dieser Artikel enthält eine exemplarische Vorgehensweise zum Erstellen einer einfachen „Hallo Welt“-Web-App mit C# und ASP.NET Core.
-ms.date: 10/29/2018
+ms.date: 02/01/2019
 ms.prod: visual-studio-dev15
 ms.custom: mvc,seodec18
 ms.topic: quickstart
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b30580db600b93464a7db377370ad49bd3a935a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 61bfe7dfa42542199f3773d1587d0e10ec315f98
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021087"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571147"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -28,11 +28,7 @@ In dieser 5-10-minütigen Einführung in die Bedienung von Visual Studio erstell
 
 ### <a name="install-visual-studio"></a>Installieren von Visual Studio
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
-
-### <a name="update-visual-studio"></a>Aktualisieren von Visual Studio 2017
-
-Wenn Sie Visual Studio bereits installiert haben, stellen Sie sicher, dass Sie die aktuelle Version verwenden. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio 2017 auf die aktuelle Version](../install/update-visual-studio.md).
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 
 ### <a name="choose-your-theme-optional"></a>Auswählen eines Designs (optional)
 
@@ -46,7 +42,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 
-1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **.NET Core** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. Benennen Sie Ihre Datei anschließend mit `HelloWorld` und wählen Sie **OK**.
+1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **.NET Core** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. <br/><br/>Benennen Sie Ihre Datei anschließend mit `HelloWorld` und wählen Sie **OK**.
 
    ![Erstellen des neuen Projekts für die ASP.NET Core-Web-App für C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -61,24 +57,22 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
    >
    > (Möglicherweise müssen Sie Visual Studio schließen, bevor Sie die Installation des neuen Workloads fortsetzen können.)
 
-1. Klicken Sie im oberen Dropdownmenü des Dialogfelds **Neue ASP.NET Core-Webanwendung** auf **ASP.NET Core 2.0** (oder höher).
+1. Klicken Sie im oberen Dropdownmenü des Dialogfelds **Neue ASP.NET Core-Webanwendung** auf **ASP.NET Core 2.1**. Wählen Sie dann **Webanwendung** und anschließend **OK** aus.
+
+   ![Dialogfeld „Neue ASP.NET Core-Webanwendung“](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Wenn **ASP.NET Core 2.0** (oder höher) nicht angezeigt wird, stellen Sie sicher, dass Sie die aktuelle Version von Visual Studio ausführen. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio 2017 auf die aktuelle Version](../install/update-visual-studio.md).
-
-1. Wählen Sie dann **Webanwendung** und anschließend **OK** aus.
-
-   ![Dialogfeld „Neue ASP.NET Core-Webanwendung“](../ide/media/quickstart-aspnet-core20.png)
+   > Wenn **ASP.NET Core 2.1** (oder höher) nicht angezeigt wird, stellen Sie sicher, dass Sie die aktuelle Version von Visual Studio ausführen. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio 2017 auf die aktuelle Version](../install/update-visual-studio.md).
 
 Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
-## <a name="create-the-app"></a>Erstellen der App
+## <a name="create-and-run-the-app"></a>Erstellen und Ausführen der App
 
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die **About.cshtml**.
 
    ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-   Diese Datei entspricht der Seite mit der Bezeichnung **Info** in der Webanwendung.
+   Diese Datei entspricht der Seite mit der Bezeichnung **Info** in der Web-App, die im Webbrowser ausgeführt wird.
 
    ![Die Seite „Info“ in der Web-App](../ide/media/csharp-aspnet-about-page.png)
 
@@ -90,7 +84,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![Ändern des standardmäßigen HTML-Codes für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **About.cshtml**, und wählen Sie die **About.cshtml.cs**. (Diese Datei entspricht auch der Seite **Info** in Ihrer Web-App.)
+1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **About.cshtml**, und wählen Sie die **About.cshtml.cs**. (Diese Datei entspricht auch der Seite **Info** in einem Webbrowser.)
 
    ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-code-file.png)
 
@@ -102,22 +96,24 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![Ändern des Standardnachrichtentexts im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-app"></a>Ausführen der App
+1. Klicken Sie auf **IIS Express**, oder drücken Sie **STRG**+**F5**, um die App auszuführen und im Webbrowser zu öffnen.
 
-1. Drücken Sie **STRG**+**F5**, um die App auszuführen und sie im Webbrowser zu öffnen.
+   ![Die Schaltfläche „IIS Express“ in Visual Studio](../ide/media/csharp-aspnet-helloworld-iisbutton.png)
 
    > [!NOTE]
    > Wenn Sie die Fehlermeldung **Verbindung mit Webserver „IIS Express“ nicht möglich** erhalten oder eine Fehlermeldung angezeigt wird, in der ein SSL-Zertifikat erwähnt wird, schließen Sie Visual Studio. Öffnen Sie dann Visual Studio unter Verwendung der Option **Als Administrator ausführen** aus dem Kontextmenü. Führen Sie die Anwendung anschließend erneut aus.
 
-1. Wählen Sie im oberen Bereich der Webseite **Info** aus.
+1. Überprüfen Sie im Webbrowser, ob auf der Seite **Info** Ihr aktualisierter Text angezeigt wird.
 
-   ![Auswählen von „Info“ auf der Webseite](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. Schauen Sie sich den aktualisierten Text an, den Sie auf der Seite **Info** hinzugefügt haben.
-
-   ![Anzeigen der aktualisierten „Info“-Seite mit dem hinzugefügten Text](../ide/media/csharp-aspnet-about-page-hello-world.png)
+   ![Anzeigen der aktualisierten „Info“-Seite mit den gemachten Änderungen](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
 1. Schließen Sie den Webbrowser.
+
+### <a name="review-your-work"></a>Überprüfen Ihrer Arbeit
+
+Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Sie im Rahmen des vorherigen Abschnitts verrichtet haben.
+
+  ![Animierte GIF-Datei, auf der gezeigt wird, wie eine einfache C#-ASP.NET Core-Web-App in Visual Studio erstellt und ausgeführt wird](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE (Integrierte Entwicklungsumgebung) gelernt haben.
 

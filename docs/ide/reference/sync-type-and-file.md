@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948179"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742429"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring des Synchronisierens eines Typs mit einem Dateinamen oder eines Dateinamens mit einem Typ
 
@@ -31,6 +31,9 @@ Dieses Refactoring gilt für:
 **Hintergrund:** Sie haben eine Datei oder einen Typ umbenannt und noch nicht die entsprechende Datei oder den entsprechenden Typ aktualisiert.
 
 **Vorteile**: Das Platzieren eines Typs in einer Datei mit einem anderen Namen oder umgekehrt erschwert die Suche nach den gewünschten Elementen. Durch das Umbenennen des Typs oder des Dateinamens wird der Code besser lesbar und einfacher zu navigieren.
+
+> [!NOTE]
+> Dieses Refactoring ist für Projekte in .NET Standard und .NET Core noch nicht verfügbar.
 
 ## <a name="how-to"></a>Vorgehensweise
 
@@ -62,8 +65,6 @@ Dieses Refactoring gilt für:
    - Visual Basic: Im nachfolgenden Beispiel wurde die Datei **Employee.vb** entsprechend des Typnamens in **Person.vb** umbenannt.
 
        ![Ergebnis des Inlinevorgangs in Visual Basic](media/synctype-result-vb.png)
-
-> ![HINWEIS] Dieses Refactoring ist für Projekte in .NET Standard und .NET Core noch nicht verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 
