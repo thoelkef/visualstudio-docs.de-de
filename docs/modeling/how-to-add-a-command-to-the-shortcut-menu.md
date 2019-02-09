@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 365e5cae52eb9b1982900faa68afdd72de9e1337
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913378"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -335,7 +334,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Der Befehl wird nicht im Menü angezeigt:**
 
-- Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
+- Der Befehl wird nur in Debuginstanzen von Visual Studio angezeigt, bis Sie das DSL-Paket installiert haben. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
 - Stellen Sie sicher, dass Ihr experimentelles Beispiel die richtige Dateinamenerweiterung für diese DSL hat. Öffnen Sie "DslDefinition.dsl" in der Hauptinstanz von Visual Studio, um die Dateinamenerweiterung zu überprüfen. Klicken Sie dann in DSL Explorer mit der rechten Maustaste auf den Editor-Knoten, und klicken Sie auf "Eigenschaften". Untersuchen Sie im Eigenschaftenfenster die Eigenschaft "FileExtension".
 

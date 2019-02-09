@@ -1,7 +1,6 @@
 ---
 title: Statische Codeanalyse für verwalteten code
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030079"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909140"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die statische Codeanalyse für verwalteten Code in Visual Studio
 
@@ -35,13 +34,13 @@ Das Analysetool stellt die während einer Analyse durchgeführten Prüfungen als
 
 Sie können die Codeanalyse manuell oder automatisch auf das Projekt ausführen.
 
-Um die Codeanalyse immer auszuführen, die Sie ein Projekt erstellen, wählen Sie **Codeanalyse für Build aktivieren** auf der Eigenschaftenseite des Projekts. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Um die Codeanalyse immer auszuführen, die Sie ein Projekt erstellen, wählen Sie **Codeanalyse für Build aktivieren** auf der Eigenschaftenseite des Projekts. Weitere Informationen finden Sie unter [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Die Codeanalyse manuell an einem Projekt ausführen, wählen Sie in der Menüleiste **analysieren** > **Codeanalyse ausführen** > **Ausführen der Codeanalyse für \<Projekt >**.
 
 ## <a name="rule-sets"></a>Regelsätze
 
-Regeln für die Codeanalyse für verwalteten Code in gruppiert [-Regelsätze](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Sie können eines der Microsoft-Standardregelsätze verwenden, oder Sie können [Erstellen eines benutzerdefinierten Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) auf eine bestimmte Anforderung zu erfüllen.
+Codeanalyseregeln für verwalteten Code werden in [Regelsätze](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) gruppiert. Sie können eines der Microsoft-Standardregelsätze verwenden, oder Sie können [Erstellen eines benutzerdefinierten Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) auf eine bestimmte Anforderung zu erfüllen.
 
 ## <a name="suppress-warnings"></a>Unterdrücken von Warnungen
 
@@ -80,4 +79,4 @@ Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analy
 
 - [Übersicht über die Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md)
 - [Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

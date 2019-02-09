@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 93990d8437df75ff290d6c471f5f2ff38f710959
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944597"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debuggen einer T4-Textvorlage
 Sie können Haltepunkte in den Textvorlagen festlegen. Um eine Entwurfszeit-Textvorlage zu debuggen, speichern Sie die Textvorlagendatei, und wählen Sie dann **T4-Vorlage Debuggen** im Kontextmenü der Datei im Projektmappen-Explorer. Um eine Laufzeit-Textvorlage zu debuggen, müssen Sie einfach die Anwendung debuggen, zu der sie gehört.
