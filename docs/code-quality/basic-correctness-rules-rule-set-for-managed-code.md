@@ -1,7 +1,6 @@
 ---
 title: Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 937a41f6d308e9c3ff8a99f925cd75c95c17fb24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012481"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937267"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
 Die grundlegenden Regeln für Richtigkeit-Regelsatz zielt auf logische Fehler und häufige Fehler bei der Verwendung von Framework-APIs. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln im Regelsatz-Mindestregeln. Weitere Informationen finden Sie unter [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) sollten Sie diesen Regelsatz, um auf die Liste der Warnungen zu erweitern, dass die empfohlene Regeln Bericht einschließen.

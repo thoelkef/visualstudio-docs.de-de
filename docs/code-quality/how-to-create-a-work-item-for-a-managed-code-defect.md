@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1cb63612194148b5f3ea1f90d7c57e59fb84edbc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e55ddf51e0c81f57c504e398c23c8e1d3f721a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941826"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934795"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 

@@ -1,7 +1,6 @@
 ---
 title: Übersicht über den Aktionsbereich
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875952"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924382"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbares **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe angefügt ist. Der Bereich "Aktionen" innerhalb der Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen, gehostet wird z. B. die **XML-Quelle** Aufgabenbereich in Excel oder dem **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.

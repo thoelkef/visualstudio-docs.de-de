@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93a121a103d18d886fafa2368d8669276a8010e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940127"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938283"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
@@ -394,7 +393,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
  Sie können das gleiche Verfahren verwenden, auf die DSL auf Ihrem eigenen Computer installieren, sodass Sie nicht mit der experimentellen Instanz von Visual Studio verfügen.
 
- Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
+ Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
 ##  <a name="Reset"></a> Entfernen alte experimentelle DSLs
  Wenn Sie die experimentelle DSLs, die Sie nicht mehr benötigen erstellt haben, können Sie sie auf Ihrem Computer entfernen, durch die experimentelle Instanz Visual Studio zurücksetzen.

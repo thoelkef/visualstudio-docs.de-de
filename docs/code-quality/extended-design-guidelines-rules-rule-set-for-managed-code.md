@@ -1,7 +1,6 @@
 ---
 title: Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017031"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918168"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf die grundlegenden Regeln für Entwurfsrichtlinien, die Fehler bezüglich Verwendbarkeit und wartbarkeit zu maximieren, die gemeldet werden. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.

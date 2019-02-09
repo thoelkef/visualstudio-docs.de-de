@@ -1,7 +1,6 @@
 ---
 title: Architektur von Anpassungen auf Dokumentebene
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e80fbe0244c897f626c6fba248447881a92594a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eab615c7ce03dbf5a2763a5081c32ea3e09317c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868455"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949179"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektur von Anpassungen auf Dokumentebene
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] enthält Projekte für das Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. In diesem Thema werden die folgenden Aspekte von Anpassungen auf Dokumentebene beschrieben:  
