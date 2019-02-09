@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004499"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938110"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, erhalten Sie möglicherweise Fehler, wenn die Engine die Vorlage auf den Quellcode oder transformiert bei der Kompilierung des generierten Codes. Die folgende exemplarische Vorgehensweise veranschaulicht einige der Dinge, die Sie tun können, um das Debuggen einer Textvorlage.
@@ -26,13 +25,13 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 
 - Name: DebuggingTestLanguage
 
-- Lösungsvorlage: Minimale Sprache
+- Lösungsvorlage: Minimal Language (Einfache Version der Sprache)
 
 - Dateierweiterung: .ddd
 
 - Name des Unternehmens: Fabrikam
 
-  Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen Sie eine DSL-Projektmappe](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Erstellen einer Textvorlage
  Fügen Sie eine Textvorlage, um Ihre Lösung.

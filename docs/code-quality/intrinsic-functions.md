@@ -1,7 +1,6 @@
 ---
 title: Systeminterne Funktionen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907957"
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 Ein Ausdruck in SAL kann ein C-/C++-Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, die keine Nebeneffekte haben, wird – z. B. ++,--, und Funktionsaufrufe, die alle haben Nebenwirkungen in diesem Kontext.  SAL bietet jedoch einige funktionsähnliches-Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als bezeichnet *systeminterne Funktionen*.

@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c02bdb890ed6e65db4916efa9899e967a1ce897c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942595"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.

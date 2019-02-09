@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911584"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaften wie z. B. versionsnummerierung Definition. DslDefinition Eigenschaften werden in der **Eigenschaften** anzeigen, wenn Sie einen offenen Bereich des Diagramms im klicken Sie auf die *domänenspezifischen Sprachdesigner*.
@@ -45,4 +44,4 @@ DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaf
 
 ## <a name="see-also"></a>Siehe auch
 
-- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

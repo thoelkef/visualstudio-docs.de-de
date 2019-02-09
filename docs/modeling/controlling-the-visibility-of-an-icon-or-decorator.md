@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933749"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913209"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können das Decorator-angezeigt und nicht mehr angezeigt, abhängig von der Zustand der Eigenschaften im Modell. Für eine Form, die eine Person darstellt, können Sie z. B. unterschiedliche Symbole haben, die je nach Geschlecht der Person, die Anzahl der untergeordneten Elemente angezeigt werden und so weiter.
