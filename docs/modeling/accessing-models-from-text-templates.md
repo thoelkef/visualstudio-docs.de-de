@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966802"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945676"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und anderen Textdateien, die für DSL-Modelle basieren erstellen. Grundlegende Informationen zu Textvorlagen finden Sie [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Die Textvorlagen funktioniert im experimentellen Modus während des Debuggens Ihrer DSL, und es funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.

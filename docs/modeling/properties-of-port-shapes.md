@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5559bd3b27f66ab54a05ca7be184b8aff34ae636
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97de488672ac201a418326e39535b7e7c9bd643b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938405"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914239"
 ---
 # <a name="properties-of-port-shapes"></a>Eigenschaften von Anschlussformen
 Sie können die Anschluss-Formen verwenden, um Domänenklassen im generierten Designer darzustellen.
@@ -56,4 +55,4 @@ Sie können die Anschluss-Formen verwenden, um Domänenklassen im generierten De
 
 ## <a name="see-also"></a>Siehe auch
 
-- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
