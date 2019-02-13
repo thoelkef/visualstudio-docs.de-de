@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d21a032c100f2a76815e25a9d7c96aa4c071b62
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988336"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925515"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Vorgehensweise: Erstellen eines Typs im Klassen-Designer, der NULL-Werte zulässt
 

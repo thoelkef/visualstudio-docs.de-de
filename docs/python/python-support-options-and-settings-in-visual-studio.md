@@ -1,8 +1,7 @@
 ---
 title: Optionen und Einstellungen für Python
 description: Eine Referenz zu den verschiedenen Einstellungen in Visual Studio, die sich auf Python-Code und -Projekte beziehen.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -18,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc107c4679c9e270518281636ddf5f5a83c108f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000821"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987391"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 

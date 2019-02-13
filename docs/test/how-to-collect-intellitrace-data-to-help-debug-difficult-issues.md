@@ -11,13 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 33dd1d131d85a066078d9e145ccbbc1fed6e98b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932349"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926553"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -74,7 +73,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 5.  Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
 
-     - oder -
+     - oder - 
 
      Wählen Sie **IntelliTrace events and call information** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um Diagnoseereignisse und die Ablaufverfolgung auf Methodenebene unter Anzeige von Aufrufinformationen aufzuzeichnen. Diese Ebene der Ablaufverfolgung kann sich beim Ausführen der Tests auf die Leistung auswirken.
 
@@ -91,7 +90,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 8.  Wählen Sie die Registerkarte **Prozesse** aus. Wählen Sie **Collect data from all processes except for the following** (Daten von allen Prozessen mit Ausnahme der folgenden sammeln) aus, und fügen Sie der Liste der Prozesse einen Prozess mit **Hinzufügen** hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Prozesse einschließen, mit Ausnahme der von Ihnen angegebenen Prozesse.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **Nur Daten von den angegebenen Prozessen sammeln** aus, und fügen Sie der Liste der Prozesse mit **Hinzufügen** einen Prozess hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie die gewünschten Prozesse genau angeben.
 
