@@ -1,24 +1,19 @@
 ---
 title: Application Lifecycle Management (ALM) mit Xamarin-Apps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793810"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) mit Xamarin-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
  In der folgenden Tabelle wird beschrieben, welche ALM-Funktionen von Visual Studio bei einem Xamarin-Projekt ordnungsgemäß bzw. eingeschränkt funktionieren. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.  
   
 ## <a name="agile-tools"></a>Agile-Tools  
- Verweislink: **[Arbeit](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
+ Referenzlink: **[Arbeit](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
@@ -80,7 +75,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |-------------|----------------------------|-------------------------|  
 |Lokaler TFS-Server|Ja|Auf Buildcomputern muss Xamarin installiert sein, und sie können mit einem OSX-Computer verknüpft werden, um Builds für iOS zu erstellen. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin-Website)|  
 |Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Ja|Anweisungen finden Sie unter [Buildserver](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
-|Gehosteter Controllerdienst von Visual Studio Team Services|Ja|Siehe [Erstellen Ihrer Xamarin-App](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin).|  
+|Gehosteter Controllerdienst von Visual Studio Team Services|Ja|Siehe [Erstellen Ihrer Xamarin-App](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Builddefinitionen mit Vor- und Nachskripts|Ja||  
 |Fortlaufende Integration einschließlich abgegrenzter Eincheckvorgänge|Ja|Abgegrenzte Eincheckvorgänge für TFVC, nur wenn Git auf einem Pull-Request-Modell statt mit Eincheckvorgängen arbeitet.|  
   
@@ -122,4 +117,3 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Absturzanalysen, Telemetrie und Betaverteilung|Ja||
-

@@ -1,25 +1,20 @@
 ---
-title: 'Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 847655d04359fa795f878ea921e69b1b5cd16460
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 732fa9a5d32916545b281a006cbeeaa93771f3ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754335"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Gewusst wie: Erstellen einer Textur, die Mipmaps enthält
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Mit der Bildinhaltspipeline können Mipmaps aus einem Quellbild als Teil der Bui
 4. Klicken Sie auf die Schaltfläche **OK** .  
   
    Wenn Sie das Projekt erstellen, wird das Quellbild von der Pipeline für Bildinhalte vom Arbeitsformat in das angegebene Ausgabeformat konvertiert, einschließlich MIP-Ebenen. Das Ergebnis wird dann in das Ausgabeverzeichnis des Projekts kopiert.
-
-
-

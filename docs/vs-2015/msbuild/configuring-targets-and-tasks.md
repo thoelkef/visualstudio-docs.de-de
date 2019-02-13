@@ -1,25 +1,20 @@
 ---
 title: Konfigurieren von Zielen und Aufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 304ebde1c30a78ab000a1fae4a16b5082b0aeecf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769265"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurieren von Zielen und Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Sie können MSBuild-Ziele und -Aufgaben so konfigurieren, dass sie prozessextern
   
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

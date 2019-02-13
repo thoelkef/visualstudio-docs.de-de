@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Verteilen von Codeausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799031"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Gewusst wie: Verteilen von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
  Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Suchen Sie die Version des VSSDK, die auf Visual Studio-Installation entspricht [Visual Studio 2015 Downloads](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  
   
 ## <a name="setting-up-the-extension"></a>Einrichten der Erweiterung  
- In diesem Verfahren verwenden wir den „Hello World“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Wir stellen den SNIPPET-Text zur Verfügung, damit Sie ihn nicht selbst erstellen müssen.  
+ In diesem Verfahren verwenden wir die Hello World-Codeausschnitt [Exemplarische Vorgehensweise: Einfügen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md) Wir stellen den SNIPPET-Text zur Verfügung, damit Sie ihn nicht selbst erstellen müssen.  
   
 1.  Erstellen Sie ein neues VSIX-Projekt namens **TestSnippet**. (**Datei / Neu / Projekt / Visual C# (oder Visual Basic / Erweiterungen**)  
   
@@ -101,7 +96,7 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
   
 4.  Speichern Sie den Ausschnitt. Öffnen Sie in der experimentellen Instanz ein Visual Basic-Projekt, und öffnen Sie dann eine der Codedateien. Platzieren Sie den Cursor an einer beliebigen Stelle im Code, klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü den Befehl **Ausschnitt einfügen**.  
   
-5.  "HelloWorldVB" sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Es sollte ein Popupfenster **Ausschnitt einfügen: HellowWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste HelloWorldVB. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:  
+5.  "HelloWorldVB" sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Daraufhin sollte das Popupelement **Ausschnitt einfügen: HellowWorldVB >** , bei dem eine Dropdownliste **HelloWorldVB**. Klicken Sie auf die Dropdownliste HelloWorldVB. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:  
   
     ```vb  
     Console.WriteLine("Hello, World!")  
@@ -109,6 +104,3 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
   
 ## <a name="see-also"></a>Siehe auch  
  [Codeausschnitte](../ide/code-snippets.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Erstellen in einem allgemeinen Ausgabeverzeichnis | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen Sie in einem allgemeinen Ausgabeverzeichnis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - output directory
 - builds [Visual Studio], common directory
@@ -17,13 +12,13 @@ ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8e53b6e110040763c93c2786e81d82f105fa5eb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd3d32873b98187f2a24a0e31e8d24ae8b0a6a01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805431"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Gewusst wie: Erstellen in einem allgemeinen Ausgabeverzeichnis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Standardmäßig erstellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jedes Proj
 ## <a name="see-also"></a>Siehe auch  
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)   
  [Gewusst wie: Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: 'Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen eines Geometriebasierten Farbverlauf-Shaders | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797536"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,19 +65,16 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
   
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.  
   
- In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf die 3D-Szene angewandt wurde, wie unter [Vorgehensweise: Modellieren eines 3-D-Geländes](../designers/how-to-model-3-d-terrain.md) gezeigt wird. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.  
+ Die folgende Abbildung zeigt den Shader, der beschrieben wird, in diesem Dokument angewendet werden, auf die 3D-Szene, die gezeigt wird [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md). Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.  
   
  ![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Weitere Informationen über das Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
- [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md)   
+ [Vorgehensweise: Modell 3D-Geländes](../designers/how-to-model-3-d-terrain.md)   
  [Vorgehensweise: Erstellen eines Graustufentextur-Shaders](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Shader-Designer](../designers/shader-designer.md)   
  [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)
-
-
-

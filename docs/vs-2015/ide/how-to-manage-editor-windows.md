@@ -21,7 +21,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54761639"
 ---
-# <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von Editor-Fenstern
+# <a name="how-to-manage-editor-windows"></a>Gewusst wie: Verwalten von Editorfenstern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teilen Sie ein Editorfenster oder öffnen mehrere Instanzen von Editorfenstern.  
