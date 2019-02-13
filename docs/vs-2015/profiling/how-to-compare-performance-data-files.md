@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf80c86f233a40ba0d65d239ae1668d575a66bb2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee0da10a6ac8786666aaf9dc041f6f198cff2d10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799563"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp
 2.  Durchsuchen und wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** und **Vergleichsdatei** (.vsp oder .vsps) aus.  
   
 3.  Klicken Sie auf **OK**.
-
-
-

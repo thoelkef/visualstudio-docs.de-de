@@ -18,45 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb225297973a1bedb6fabb56770622ecc100c3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026490"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922224"
 ---
 # <a name="makedir-task"></a>MakeDir-Aufgabe
-Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse  
-  
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `MakeDir` -Aufgabe beschrieben.  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Der Satz von zu erstellenden Verzeichnissen.|  
-|`DirectoriesCreated`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die von dieser Aufgabe erstellten Verzeichnisse. Wenn bestimmte Verzeichnisse nicht erstellt werden konnten, enthält dieser Parameter möglicherweise nicht alle Elemente, die an den `Directories`-Parameter übergeben wurden.|  
-  
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird das von der Eigenschaft `OutputDirectory` angegebene Verzeichnis mit der `MakeDir`-Aufgabe erstellt.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <PropertyGroup>  
-        <OutputDirectory>\Output\</OutputDirectory>  
-    </PropertyGroup>  
-  
-    <Target Name="CreateDirectories">  
-        <MakeDir  
-            Directories="$(OutputDirectory)"/>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse
+
+## <a name="parameters"></a>Parameter
+In der folgenden Tabelle werden die Parameter der `MakeDir` -Aufgabe beschrieben.
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Der Satz von zu erstellenden Verzeichnissen.|
+|`DirectoriesCreated`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die von dieser Aufgabe erstellten Verzeichnisse. Wenn bestimmte Verzeichnisse nicht erstellt werden konnten, enthält dieser Parameter möglicherweise nicht alle Elemente, die an den `Directories`-Parameter übergeben wurden.|
+
+## <a name="remarks"></a>Hinweise
+Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Beispiel
+Im folgenden Codebeispiel wird das von der Eigenschaft `OutputDirectory` angegebene Verzeichnis mit der `MakeDir`-Aufgabe erstellt.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OutputDirectory>\Output\</OutputDirectory>
+    </PropertyGroup>
+
+    <Target Name="CreateDirectories">
+        <MakeDir
+            Directories="$(OutputDirectory)"/>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+[Aufgaben](../msbuild/msbuild-tasks.md)  
+[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

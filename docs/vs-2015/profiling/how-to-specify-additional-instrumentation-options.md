@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54803042"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen
+# <a name="how-to-specify-additional-instrumentation-options"></a>Gewusst wie: Angeben zusätzlicher Instrumentierungsoptionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Binärdateien entweder in der integrierten [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Entwicklungsumgebung (Integrated Development Environment, IDE) oder mithilfe von Befehlszeilentools instrumentieren. Beim Instrumentieren einer Binärdatei in der IDE können Sie die Menge der Daten steuern, die während der Instrumentation erfasst werden. Dazu geben Sie im [VSInstr](../profiling/vsinstr.md)-Tool zusätzliche Instrumentierungsoptionen an. Diese Optionen stehen auf der Sitzungs- oder der Zielebene zur Verfügung. Um beispielsweise während des Instrumentierungsvorgangs bestimmte Funktionen ein- oder auszuschließen, verwenden Sie die zusätzliche Instrumentierungsoption auf der Zielebene.  

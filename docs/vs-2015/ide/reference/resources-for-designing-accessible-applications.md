@@ -45,7 +45,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="web-sites"></a>Websites  
   
--   [Exemplarische Vorgehensweise: Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
+-   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
   
 -   **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   

@@ -7,12 +7,12 @@ ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 93117ddabe3184d5e1900b68f058a7a5f3dba711
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030508"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156032"
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
@@ -49,24 +49,6 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                     </div>
                     <div class="cardText">
                         <h3>Debugverfahren und -tools</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Video zur Verwendung des Debuggers ansehen</h3>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 ---
 title: Direktauswahlwerkzeug-Zusatztasten in Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a56279d9b7bd773bd56d260abe9944e653f78148
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029701"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940255"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Direktauswahlwerkzeug-Zusatztasten in Blend
 In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die Form eines vorhandenen Pfads mit dem **Direktauswahl**-Tool ![Direktauswahl-Tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) bearbeiten können. Sie können mit dem **Stiftwerkzeug** Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen oder zwei vorhandene Pfade verbinden.

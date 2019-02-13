@@ -9,57 +9,57 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6d56c1b4e22250f56592e45d56c433c7ad78065
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024798"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853286"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
-Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.  
-  
-## <a name="use-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs  
- Das Attribut `ContinueOnError` des Elements `Task` steuert, ob ein Build beendet oder fortgesetzt wird, wenn eine Aufgabe fehlschlägt. Dieses Attribut steuert auch, ob Fehler als Fehler oder Warnungen behandelt werden, wenn der Buildvorgang fortgesetzt wird.  
-  
- Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte enthalten:  
-  
-- **WarnAndContinue** oder **TRUE**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.  
-  
-- **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.  
-  
+Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.
+
+## <a name="use-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs
+Das Attribut `ContinueOnError` des Elements `Task` steuert, ob ein Build beendet oder fortgesetzt wird, wenn eine Aufgabe fehlschlägt. Dieses Attribut steuert auch, ob Fehler als Fehler oder Warnungen behandelt werden, wenn der Buildvorgang fortgesetzt wird.
+
+Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte enthalten:
+
+- **WarnAndContinue** oder **TRUE**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.
+
+- **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.
+
 - **ErrorAndStop** oder **FALSE** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.  
   
   Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.  
   
-  Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut auf `ErrorAndStop` festlegen, machen Sie das Verhalten für jeden explizit, der die Projektdatei lesen kann.  
+  Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut auf `ErrorAndStop` festlegen, machen Sie das Verhalten für jeden explizit, der die Projektdatei lesen kann.
+
+#### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe
+
+- Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:  
   
-#### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe  
-  
--   Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:  
-  
-     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter ausgeführt wird und der Build als erfolgreich betrachtet wird, selbst wenn die Aufgabe `Delete` fehlschlägt.  
-  
-```xml  
-<Project DefaultTargets="FakeBuild"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Files Include="*.obj"/>  
-    </ItemGroup>  
-    <Target Name="Clean">  
-        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>  
-    </Target>  
-  
-    <Target Name="FakeBuild" DependsOnTargets="Clean">  
-        <Message Text="Building after cleaning..."/>  
-    </Target>  
-</Project>  
-```  
-  
+    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+
+## <a name="example"></a>Beispiel
+Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter ausgeführt wird und der Build als erfolgreich betrachtet wird, selbst wenn die Aufgabe `Delete` fehlschlägt.
+
+```xml
+<Project DefaultTargets="FakeBuild"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Files Include="*.obj"/>
+    </ItemGroup>
+    <Target Name="Clean">
+        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+    </Target>
+
+    <Target Name="FakeBuild" DependsOnTargets="Clean">
+        <Message Text="Building after cleaning..."/>
+    </Target>
+</Project>
+```
+
 ## <a name="see-also"></a>Siehe auch
 [MSBuild](../msbuild/msbuild.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
+[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
 [Aufgaben](../msbuild/msbuild-tasks.md)

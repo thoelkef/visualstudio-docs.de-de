@@ -1,7 +1,6 @@
 ---
 title: Schemareferenz für Codeausschnitte
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8e0f253dbd1f97bc2b485b2e18dd6a5d40db1c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 203236c454b2047872bc9f71242e4992a1c1294f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002033"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929634"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 

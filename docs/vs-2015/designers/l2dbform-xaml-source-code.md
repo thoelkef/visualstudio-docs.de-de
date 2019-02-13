@@ -1,25 +1,20 @@
 ---
 title: L2DBForm.xaml-Quellcode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797352"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml-Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Dieses Thema enthält und beschreibt die XAML-Quelldatei für die in [WPF Data B
  Jeder Abschnitt enthält eine Bezeichnung, mit dem er identifiziert wird. In den ersten beiden Abschnitten wird diese Bezeichnung durch die Verwendung eines <xref:System.Windows.FrameworkElement.LayoutTransform%2A>-Elements um 90° gedreht. Der restliche Teil des Abschnitts enthält für den Zweck des Abschnitts passende Benutzeroberflächenelemente wie Textblöcke, Textfelder, Schaltflächen usw. Mitunter wird zur Ausrichtung dieser untergeordneten Steuerelemente ein untergeordnetes <xref:System.Windows.Controls.StackPanel> -Steuerelement verwendet.  
   
 ## <a name="window-resource-section"></a>Abschnitt "Window.Resources"  
- Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.  
+ Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.  
   
  Das `<ObjectDataProvider>` -Tag, das sich über die Zeilen 11 bis 25 erstreckt, deklariert einen <xref:System.Windows.Data.ObjectDataProvider>mit dem Namen `LoadedBooks`, der als Quelle ein <xref:System.Xml.Linq.XElement> verwendet. Dieses <xref:System.Xml.Linq.XElement> wird initialisiert, indem ein eingebettetes XML-Dokument (ein `CDATA` -Element) analysiert wird. Beachten Sie, dass Leerraum beim Deklarieren des eingebetteten XML-Dokuments und auch beim Analysieren des Dokuments beibehalten wird. Der Grund: Das <xref:System.Windows.Controls.TextBlock> -Steuerelement, das zum Anzeigen des unformatierten XML verwendet wird, besitzt keine speziellen XML-Formatierungsfunktionen.  
   
@@ -249,6 +244,3 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
-
-
-

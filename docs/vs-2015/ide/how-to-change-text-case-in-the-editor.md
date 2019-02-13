@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799742"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Gewusst wie: Ändern der Groß-/Kleinschreibung von Text im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.  

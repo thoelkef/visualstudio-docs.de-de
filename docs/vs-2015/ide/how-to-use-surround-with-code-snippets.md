@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799057"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Vorgehensweise: Verwenden von umschließenden Codeausschnitten
+# <a name="how-to-use-surround-with-code-snippets"></a>Gewusst wie: Verwenden von umschließenden Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeausschnitte verwenden. Umschließende Codeausschnitte sind auf drei verschiedene Arten verfügbar: über Tastenkombinationen, über das Menü „Bearbeiten“ und über das Kontextmenü.  

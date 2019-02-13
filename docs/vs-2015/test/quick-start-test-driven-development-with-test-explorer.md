@@ -53,13 +53,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
     Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.  
   
-   **So können Sie eine vollständige Liste der Tests anzeigen:** Klicken Sie in einer beliebigen Kategorie auf **Alle anzeigen**.  
+   **So zeigen Sie eine vollständige Liste der Tests an:** Wählen Sie **Alle anzeigen** in einer beliebigen Kategorie aus.  
   
-   **So können Sie Details zu Testergebnissen anzeigen:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.  
+   **So zeigen Sie die Details eines Testergebnisses an:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.  
   
-   **So können Sie zum Code eines Tests navigieren:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.  
+   **So navigieren Sie zum Testcode:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.  
   
-   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen** aus.  
+   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen**aus.  
   
 > [!IMPORTANT]
 >  Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.  
@@ -67,7 +67,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 > [!NOTE]
 >  Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks mit Test-Explorer](#frameworks).  
   
-##  <a name="walkthrough"></a>Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
+##  <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
  Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks](#frameworks).  
   
 #### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode  

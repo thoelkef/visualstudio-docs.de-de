@@ -1,25 +1,20 @@
 ---
 title: 'Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788205"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Gewusst wie: Verfolgen von Code durch Anpassen der Scrollleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +54,3 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
      ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Wenn Sie das Verhalten der Bildlaufleiste im Zuordnungsmodus beibehalten und die Vorschau-QuickInfo anzeigen möchten, nicht aber die Quellcodeübersicht, dann legen Sie die Option für **Quellenübersicht** auf **Aus** fest.
-

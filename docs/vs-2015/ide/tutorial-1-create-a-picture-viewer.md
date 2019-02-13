@@ -1,25 +1,20 @@
 ---
 title: 'Tutorial 1: Erstellen eines Bildanzeigeprogramms | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 756c979a19451a940e52165d60cc2e5d3fb6b315
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796815"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Lernprogramm 1: Erstellen eines Bildanzeigeprogramms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei 
   
   Informationen zum Herunterladen einer vollständige Version des Beispiels finden Sie unter [Tutorialbeispiel für vollständiges Bildanzeigeprogramm](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
-  ![Link zum Video](../data-tools/media/playvideo.gif "Videoabspielen")Eine Videoversion dieses Themas finden Sie unter [How Do I: Create a Picture Viewer in Visual Basic? (Wie erstelle ich eine Bildanzeige in Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=205207) oder [How Do I: Create a Picture Viewer in C#? (Wie erstelle ich eine Bildanzeige in C#)](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo")eine Videoversion dieses Themas finden Sie unter [Gewusst wie: Erstellen ein Bildanzeigeprogramms in Visual Basic? ](http://go.microsoft.com/fwlink/?LinkId=205207) oder [Gewusst wie: Erstellen eines Bildanzeigeprogramms in C#? ](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.  
@@ -71,6 +66,3 @@ In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei 
 |[Schritt 9: Überprüfen, Kommentieren und Testen des Codes](../ide/step-9-review-comment-and-test-your-code.md)|Prüfen und testen Sie den Code. Fügen Sie bei Bedarf Kommentare hinzu.|  
 |[Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Schreiben Sie mithilfe von IntelliSense Code, damit andere Schaltflächen und ein Kontrollkästchen funktionieren.|  
 |[Schritt 11: Ausführen des Programms und Ausprobieren weiterer Funktionen](../ide/step-11-run-your-program-and-try-other-features.md)|Führen Sie das Programm aus, und legen Sie die Hintergrundfarbe fest. Probieren Sie andere Funktionen aus. Ändern Sie z. B. Farben, Schriftarten und Rahmen.|
-
-
-

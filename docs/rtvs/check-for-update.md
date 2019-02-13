@@ -2,19 +2,18 @@
 title: Aktuelle Version von R Tools
 description: Überprüfen der Version von R-Tools für Visual Studio und Installieren von Updates.
 ms.date: 07/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: dfbf4e2b39347fb6307121c84acc6e9f70f8dc2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6f37c26dac231bbfab38b6370786bd9bbe6b17c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956401"
 ---
 # <a name="rtvs-current-version"></a>Aktuelle Version von RTVS
 

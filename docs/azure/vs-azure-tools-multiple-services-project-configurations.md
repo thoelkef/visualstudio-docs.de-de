@@ -4,18 +4,17 @@ description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt konfigurieren, i
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: e12c7c321022672283c2e202829d53fcebacfe02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139719"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948094"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -70,7 +69,7 @@ Sie können festlegen, dass die Verbindungszeichenfolge nach Bedarf lokalen Spei
 
 Zum Erstellen einer Verbindungszeichenfolge wählen Sie **Einstellung hinzufügen** aus und legen den **Typ** auf „Verbindungszeichenfolge“ fest.
 
-Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...** * rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
+Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...*** rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
 
 1. Wählen Sie unter **Verbindung herstellen über** die Option **Ihr Abonnement**aus, um ein Speicherkonto aus einem Abonnement auszuwählen. Visual Studio ruft dann die Anmeldeinformationen des Speicherkontos automatisch aus der `.publishsettings`-Datei ab.
 1. Mit der Option **Manuell eingegebene Anmeldeinformationen** können Sie den Kontonamen und -schlüssel mithilfe von Informationen aus dem Azure-Portal direkt angeben. Kopieren des Kontoschlüssels:

@@ -1,25 +1,20 @@
 ---
-title: 'Vorgehensweise: Erstellen eines Lambert-Shaders | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen Sie einen Lambert-Shaders | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792007"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Gewusst wie: Erstellen eines Lambert-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
   
  ![Lambert-Beleuchtung in einem Modell.](../designers/media/digit-lambert-effect-result.png "Digital-Lambert-Effect-Result")  
   
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Weitere Informationen über das Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
@@ -72,6 +67,3 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
  [Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)   
  [Shader-Designer](../designers/shader-designer.md)   
  [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)
-
-
-

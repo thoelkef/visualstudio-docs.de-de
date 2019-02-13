@@ -1,24 +1,19 @@
 ---
 title: Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765098"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -356,7 +351,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **A**: Alle Codeänderungen, die Sie an der Datei "UIMapDesigner.cs" vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für programmierte UI generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.  
   
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>F: Kann ich einen Test der programmierten UI für Windows Phone-Apps aus der Befehlszeile ausführen?  
- **A**: Ja, verwenden Sie eine RUNSETTINGS-Datei für das Festlegen des Zielgeräts bei der Ausführung des Tests. Zum Beispiel:  
+ **A**: Ja, verwenden Sie eine RUNSETTINGS-Datei für das Festlegen des Zielgeräts bei der Ausführung des Tests. Beispiel:  
   
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
@@ -366,7 +361,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
 <MSPhoneTest>  
-<!--to specify test execution on device, use a TargetDevice option as follows-->  
+<!--to specify test execution on device, use a TargetDevice option as follows-->  
 <TargetDevice>Device</TargetDevice>  
 <!--to specify an emulator instead, use a TargetDevice option like below-->  
 <!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->  
@@ -387,10 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Datengesteuerte Tests|Sie [Datengesteuerte Tests](../test/creating-a-data-driven-coded-ui-test.md) zu Informationen über den Einsatz externer Datenquellen und die Verwendung des Attributs DataSource für eine Testmethode.|Daten werden inline mit dem Attribut DataRow für eine Testmethode festgelegt. Siehe [Einsatz datengesteuerter Tests der programmierten UI für Windows Phone-Apps](#TestingPhoneAppsCodedUI_DataDriven) in diesem Thema.|  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
- Blog "Anwendungslebenszyklus-Verwaltung von Microsoft Visual Studio": [Verwenden der programmierten UI zum Testen XAML-basierter Windows Phone-Apps](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
+ Blog "Anwendungslebenszyklus-Verwaltung von Microsoft Visual Studio": [Verwenden der programmierten UI zum Testen XAML-basierten Windows Phone-apps](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
-
-
-

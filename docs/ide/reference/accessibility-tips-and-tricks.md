@@ -2,7 +2,6 @@
 title: Tipps und Tricks zur Barrierefreiheit für Visual Studio
 description: Informationen zu Tipps und Tricks, die Ihnen dabei helfen sollen, die Visual Studio-IDE für jeden Benutzer, einschließlich Benutzer mit einer Behinderung, leichter zugänglich zu machen
 ms.date: 09/15/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954048"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 

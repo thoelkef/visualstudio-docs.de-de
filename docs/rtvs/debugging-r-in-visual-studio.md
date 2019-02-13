@@ -2,19 +2,18 @@
 title: Debuggen von R-Code
 description: Visual Studio stellt eine umfassende Debugoberfläche für R bereit, einschließlich Haltepunkten, Anfügen, Aufrufliste und Variablenprüfung.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918367"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933950"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debuggen von R in Visual Studio
 

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785899"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen mit mehreren Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Elementvorlagen können nur ein Element angeben, manchmal besteht ein Element je
   
 1.  Erstellen Sie die Elementvorlage wie eine Elementvorlage mit einer einzelnen Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md).  
   
-2.  Fügen Sie jedem `ProjectItem`-Element das `TargetFileName`-Attribut hinzu. Legen Sie die Werte des `TargetFileName`-Attributs auf „$fileinputname$.*Dateierweiterung*“ fest, wobei *Dateierweiterung* der Erweiterung der Datei entspricht, die in die Vorlage eingefügt wird. Zum Beispiel:  
+2.  Fügen Sie jedem `ProjectItem`-Element das `TargetFileName`-Attribut hinzu. Legen Sie die Werte des `TargetFileName`-Attributs auf „$fileinputname$.*Dateierweiterung*“ fest, wobei *Dateierweiterung* der Erweiterung der Datei entspricht, die in die Vorlage eingefügt wird. Beispiel:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -93,6 +88,3 @@ Elementvorlagen können nur ein Element angeben, manchmal besteht ein Element je
  [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)   
  [Gewusst wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-
