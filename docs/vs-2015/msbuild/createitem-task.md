@@ -1,14 +1,9 @@
 ---
 title: CreateItem-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db76f3ec603c493cef38536b6fb54b74ac6c43b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802159"
 ---
 # <a name="createitem-task"></a>CreateItem-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +83,3 @@ Füllt Elementauflistungen mit den Eingabeelementen aus. Dadurch können Element
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-
-

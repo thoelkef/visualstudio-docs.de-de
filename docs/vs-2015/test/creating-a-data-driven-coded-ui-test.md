@@ -1,26 +1,21 @@
 ---
 title: Erstellen eines Coded UI-Testprojekts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755369"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -210,7 +205,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
   
    **Empfehlungen**  
   
-   Weitere Informationen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 2: Komponententests: Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188) und [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisierte Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Weitere Informationen finden Sie in [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188) und [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Fragen und Antworten  
   
@@ -262,6 +257,3 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  [Erstellen von Tests der codierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Empfohlene Vorgehensweisen für Tests der codierten UI](../test/best-practices-for-coded-ui-tests.md)   
  [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

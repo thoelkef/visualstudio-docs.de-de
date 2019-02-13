@@ -2,7 +2,6 @@
 title: Debuggen von Python-Code
 description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036068"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155876"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -27,10 +26,6 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Arti
 - [Linux-Remotedebuggen](debugging-python-code-on-remote-linux-machines.md)
 - [Python/C++ – Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole für das Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
 
 <a name="debugging-without-a-project"></a>
 

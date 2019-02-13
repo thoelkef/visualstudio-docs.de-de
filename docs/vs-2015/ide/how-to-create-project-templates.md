@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54785912"
 ---
-# <a name="how-to-create-project-templates"></a>Vorgehensweise: Erstellen von Projektvorlagen
+# <a name="how-to-create-project-templates"></a>Gewusst wie: Erstellen von Projektvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des **Assistenten zum Exportieren von Vorlagen**, bei dem Ihre Vorlage in einer ZIP-Datei verpackt wird. Sie können für eine verbesserte Bereitstellung auch Vorlagen im Dateiformat VSIX erstellen, indem Sie die Erweiterung des „Assistenten zum Exportieren von Vorlagen“ oder Vorlagen verwenden, die in [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] enthalten sind. Außerdem können Sie Vorlagen manuell erstellen.  
@@ -58,4 +58,4 @@ Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des 
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Vorgehensweise: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)
+ [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)

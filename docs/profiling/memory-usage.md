@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c58825aab4d882ac6ca80b71b2c5a0aa542f76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef69d38374835632768bda69e57ee0c2cf1200cb
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994565"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155733"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Messen der Speicherauslastung in Visual Studio
 Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem im Debugger integrierten **Speicherauslastungs**-Diagnosetool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und nativen Momentaufnahme-Heaps erstellen, um ein besseres Verständnis darüber zu erlangen, welchen Einfluss die Speicherauslastung von Objekttypen hat. Sie können Momentaufnahmen von .NET-Apps, systemeigenen Apps und Apps in gemischtem Modus (.Net und systemeigen) erfassen.  
@@ -160,10 +160,6 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
   ![Diff-Ansicht nativer Typen](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs und Videos  
-
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), in dem die Diagnosetools erläutert werden, mit denen Sie die CPU-Auslastung und die Speicherauslastung in Visual Studio 2017 analysieren können. |
 
  [Analyze CPU and Memory While Debugging (Analysieren der CPU und des Arbeitsspeichers beim Debuggen)](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

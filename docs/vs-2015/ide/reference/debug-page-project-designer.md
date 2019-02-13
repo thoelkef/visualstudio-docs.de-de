@@ -80,5 +80,5 @@ ms.locfileid: "54776143"
  [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Verwalten von Debugeigenschaften](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)
+ [How to: Debug a ClickOnce Application with Restricted Permissions (Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen)](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)

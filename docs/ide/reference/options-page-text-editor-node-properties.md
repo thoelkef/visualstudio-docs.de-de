@@ -1,7 +1,6 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens "Text-Editor"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb698083b6c24f0f7deed70e17f6a1e6b1f5b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977056"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924655"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Text-Editor"
 In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Text-Editor**, `DTE.Properties("TextEditor", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die `Properties`-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.

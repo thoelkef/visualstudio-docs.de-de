@@ -1,14 +1,9 @@
 ---
 title: 'DA0038: Hohes Maß an Sperrkonflikten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,18 +12,18 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766201"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Hohes Maß an Sperrkonflikten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0038: hohes Rate von Sperrkonflikten](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) auf docs.microsoft.com.  
+Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0038: Hohe Maß an Sperrkonflikten](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) auf docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -55,10 +50,9 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0038: hohe
  Diese Regel wird ausgelöst, wenn die während der Profilerstellung ermittelten Werte auf ein sehr hohes Maß an Sperrkonflikten hindeuten. Durch Sperrkonflikte verzögert sich die Ausführung von Threads, von denen auf die Sperre gewartet wird. Es empfiehlt sich, selbst eine recht geringe Anzahl von Sperrkonflikten in Komponenten- oder Auslastungstests zu untersuchen, die auf weniger leistungsfähiger Hardware ausgeführt werden.  
   
 > [!NOTE]
->  Wenn das Maß an gemeldeten Sperrkonflikten in den Profilerstellungsdaten übermäßig hoch ist, wird statt dieser Informationsmeldung die Warnmeldung [DA0039: Sehr hohes Maß an Sperrkonflikten](../profiling/da0039-very-high-rate-of-lock-contentions.md) ausgelöst.  
+>  Wenn das Maß an gemeldeten Sperrkonflikten in den Profilerstellungsdaten übermäßig hoch, die [DA0039: Sehr hohe Maß an Sperrkonflikten](../profiling/da0039-very-high-rate-of-lock-contentions.md) statt dieser informationsmeldung die Warnmeldung ausgelöst wird.  
   
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren.  Suchen Sie die Spalte **NET CLR-Sperren und Threads\Konfliktrate/s**. Überprüfen Sie, ob Sperrkonflikte in bestimmten Phasen der Programmausführung besonders häufig auftreten.  
   
  Diese Regel wird nur ausgelöst, wenn nicht die Nebenläufigkeitsmethode zur Profilerstellung verwendet wird. Die Nebenläufigkeitsmethode zur Profilerstellung ist das am besten geeignete Tool, um Leistungsprobleme im Zusammenhang mit Sperrkonflikten in der Anwendung zu untersuchen. Sammeln Sie Nebenläufigkeitsprofilerstellungsdaten, um das Sperrverhalten der Anwendung nachvollziehen zu können. Ermitteln Sie hierzu, für welche Sperren eine hohe Anzahl von Konflikten vorliegt, um wie viel sich die Threadausführungszeit durch das Warten auf Sperren mit Konflikten verlängert und welcher Code impliziert wird. In Nebenläufigkeitsprofilen werden Daten zu allen Sperrkonflikten gesammelt. Dies schließt auch das Sperrverhalten von nativen Windows-Funktionen, .NET Framework-Klassen und beliebigen anderen Bibliotheken von Drittanbietern ein, auf die von der Anwendung verwiesen wird. Informationen zur Nebenläufigkeitsprofilerstellung mithilfe der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE finden Sie unter [Collecting Thread and Process Concurrency Data (Sammeln von Nebenläufigkeitsdaten zu Threads und Prozessen)](../profiling/collecting-thread-and-process-concurrency-data.md). Links zu Informationen zur Nebenläufigkeitsprofilerstellung über die Befehlszeile finden Sie im Abschnitt **Using the Concurrency Method to Collect Resource Contention and Thread Activity Data (Erfassen von Daten zu Ressourcenkonflikten und Threadaktivitäten mit der Nebenläufigkeitsmethode)** unter [Using Profiling Methods From the Command Line (Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile)](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

@@ -2,7 +2,6 @@
 title: 'Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen'
 description: Informationen zum Festlegen von Barrierefreiheitsoptionen in Visual Studio, die die Verwendung der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) für jeden vereinfachen, auch für Benutzer mit eingeschränktem Seh- und Schreibvermögen
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac057edf27661403185fb31e5ca9364c629bd38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982415"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928438"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
 

@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Hinzufügen oder Entfernen von verweisen mit dem Verweis-Manager | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756985"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
  Sie können eine WinMD-Datei in Visual Studio auf zwei Arten generieren:  
   
-- Von der **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer einen Wert „Projekteigenschaften &#124; Assemblyname“ oder „Projekteigenschaften &#124; Namespace“ eingibt, der nicht mit dem Satz von Namespaces im Projekt zusammenhängt, wenn kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly. Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Desktop-Visual Basic- oder Visual C#-Projekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../includes/win8-md.md)] SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.  
+- Von der **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer eine Projekteigenschaften eingibt &#124; Assemblyname "oder" Projekteigenschaften &#124; Namespace-Wert, der den Satz von Namespaces im Projekt ist kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' ist ein gültiger winmd-Dateiname für diese Assembly nicht. Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Desktop-Visual Basic- oder Visual C#-Projekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../includes/win8-md.md)] SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.  
   
-- Native **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] native App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.  
   
   Die Registerkarte "Windows" besteht aus zwei Untergruppen.  
   
 ### <a name="core-subgroup"></a>Kernspeicher-Unterregisterkarte  
  Die Untergruppe "Core" listet alle WinMDs (für Windows Runtime-Elemente) im SDK für die jeweilige Windows-Version auf.  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte enthalten bei Projekterstellung standardmäßig Verweise auf alle WinMDs im [!INCLUDE[win8](../includes/win8-md.md)] SDK. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte [!INCLUDE[win8](../includes/win8-md.md)] SDK an. Entsprechend listet die Untergruppe "Core" im Verweis-Manager keine der Assemblys aus dem [!INCLUDE[win8](../includes/win8-md.md)]-SDK auf, sondern zeigt stattdessen eine Meldung an: "Windows SDK ist bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Windows SDK zu durchsuchen."  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte enthalten bei Projekterstellung standardmäßig Verweise auf alle WinMDs im [!INCLUDE[win8](../includes/win8-md.md)] SDK. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte [!INCLUDE[win8](../includes/win8-md.md)] SDK an. Entsprechend ist die Untergruppe "Core" im Verweis-Manager wird nicht frameworkregisterkarte keine der Assemblys aus dem [!INCLUDE[win8](../includes/win8-md.md)] SDK und stattdessen eine Meldung angezeigt: „The Windows SDK is already referenced. Verwenden Sie den Objektkatalog, um die Verweise im Windows SDK zu durchsuchen."  
   
  In den Desktopprojekten wird die Core-Untergruppe nicht standardmäßig angezeigt. Sie können die Windows-Runtime hinzufügen, indem Sie das Kontextmenü für den Projektknoten öffnen, **Projekt entladen** auswählen, den folgenden Codeabschnitt hinzufügen, und das Projekt erneut öffnen (indem Sie auf dem Projektknoten **Projekt erneut laden** wählen). Wenn Sie das Dialogfeld **Verweis-Manager** aufrufen, wird die Untergruppe „Core“ angezeigt.  
   
@@ -221,8 +216,5 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [NIB: Vorgehensweise: Hinzufügen oder Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
-
-
-

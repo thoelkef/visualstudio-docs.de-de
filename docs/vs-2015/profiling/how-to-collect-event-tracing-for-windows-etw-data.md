@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54793060"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Gewusst wie: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ereignisablaufverfolgung für Windows (ETW) ist eine effiziente Ablaufverfolgungsfunktion auf Kernelebene, mit dem der Profiler kernel- oder anwendungsdefinierte Ereignisse protokollieren kann. Die vom Ereignisanbieter gesammelten Daten können nur mithilfe der Option /**Summary:ETW** des Befehlszeilentools [VSPerfReport](../profiling/vsperfreport.md) angezeigt werden. In diesem Bericht können Sie bestimmen, wo Leistungsprobleme in der Anwendung aufgetreten.  

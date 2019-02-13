@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 6: Hinzufügen von Timern'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5b1a83c377b58bd42f03e3898243b3e956e31b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 10581b66a22946012bb6f1ac86423fd92ca534cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016354"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957803"
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen von Timern
 Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.

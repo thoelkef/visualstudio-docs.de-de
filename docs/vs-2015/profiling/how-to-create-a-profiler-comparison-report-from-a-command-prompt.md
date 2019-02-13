@@ -1,25 +1,20 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Profilervergleichsberichts über eine Eingabeaufforderung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1fa855b4674963fdb213cd11e9a29361096bff5d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775081"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756738"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Gewusst wie: Erstellen eines Profiler-Vergleichsberichts über eine Eingabeaufforderung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Sie können einen Bericht zu Profilerstellungstools von [!INCLUDE[vsprvs](../inc
 |**DiffThreshold:**[*Wert*]|Ignorieren der Differenz, wenn Sie sich unterhalb dieses prozentualen Schwellenwerts befindet. Neue Daten mit Werten unterhalb dieses Schwellenwerts werden nicht angezeigt.|  
 |**DiffTable:** *Tabellenname*|Vergleichen Sie die Dateien anhand dieser Tabelle. Standardmäßig wird die Funktionstabelle verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|  
 |**DiffColumn:** *Spaltenname*|Verwenden Sie diese Spalte, um Werte zu vergleichen. Standardmäßig wird die exklusive Beispielprozentsatzspalte verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|
-
-
-

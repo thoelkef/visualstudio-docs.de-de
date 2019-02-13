@@ -1,14 +1,9 @@
 ---
 title: Verwenden von 3D-Objekten in Spielen oder Apps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863593"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775110"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +111,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Laden und Verwenden von 3D-Ressourcen zur Laufzeit  
   
 ### <a name="using-textures-and-images"></a>Verwenden von Texturen und Bildern  
- Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](http://go.microsoft.com/fwlink/p/?LinkID=246267). Weitere Informationen darüber, wie Sie die Bibliothek D3DX11 verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [Vorgehensweise: Initialisieren einer Textur aus einer Datei](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
+ Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](http://go.microsoft.com/fwlink/p/?LinkID=246267). Weitere Informationen dazu, wie Sie die Bibliothek D3DX11 verwenden, erstellen Sie eine Texturressource oder Ressourcenansicht aus einer Bilddatei, finden Sie unter [Vorgehensweise: Initialisieren eine Textur aus einer Datei](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
   
 ### <a name="using-3-d-models"></a>Verwenden von 3D-Modellen  
  Direct3D 11 bietet keine Funktionen für das Erstellen von Ressourcen von 3D-Modellen. Stattdessen müssen Sie Code schreiben, der die 3D-Modelldatei liest sowie Vertex- und Indexpuffer erstellt, die das 3D-Modell und alle Ressourcen darstellen, die das Modell benötigt, z. B. Texturen oder Shader.  
@@ -212,6 +207,3 @@ cbuffer MiscVars : register(b3)
 |[Gewusst wie: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|  
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Ressourcen bereitstellt, inklusive Texturen und Bilder, 3D Modelle sowie Shader werden beschrieben.|  
 |[Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|
-
-
-

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
 ms.date: 05/07/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -19,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e01f51bd94f14b5f78ab26d452be6a100e4fd50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961879"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156136"
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 
@@ -55,10 +54,6 @@ Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu di
  > [!div class="button"]
  > [Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171), das erläutert, wie Sie die Visual Studio-Bootstrapperdatei herunterladen und die Edition von Visual Studio auswählen, die sich für Ihre Zwecke eignet. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Schritt 3: Installieren des Visual Studio-Installers
 
@@ -95,29 +90,17 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 > [!TIP]
 > Nach der Installation können Sie jederzeit die Installation von Workloads oder Komponenten nachholen. Wenn Sie Visual Studio geöffnet haben, navigieren Sie zu **Extras** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Öffnen Sie den **Visual Studio-Installer** alternativ über das Startmenü. Nun können Sie die Workloads oder Komponenten auswählen, die Sie installieren möchten. Klicken Sie anschließend auf **Ändern**.
 
-|         |         |
-|---------|---------|
-|   ![Kamerasymbol für Video](media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an](https://mva.microsoft.com/de-de/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171), in dem erläutert wird, wie Sie den Visual Studio-Installer und anschließend eine Arbeitsauslastung installieren. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Schritt 5: Auswählen einzelner Komponenten (optional)
 
 Wenn Sie das Feature für Arbeitsauslastungen nicht zur Anpassung Ihrer Visual Studio-Installation verwenden möchten, können Sie stattdessen auch einzelne Komponenten installieren. Klicken Sie dazu im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
 
   ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
 
-  |         |         |
-  |---------|---------|
-  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers eine einzelne Komponente installieren. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Schritt 6: Installieren von Language Packs (optional)
 
 Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl klicken Sie im Visual Studio-Installationsprogramm auf die Option **Sprachpakete** und folgen den Aufforderungen.
 
   ![Visual Studio 2017 - Installieren von Language Packs](media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
-
-  |         |         |
-  |---------|---------|
-  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers ein Sprachpaket installieren. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Ändern der Installersprache über die Befehlszeile
 

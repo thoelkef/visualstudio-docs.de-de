@@ -195,7 +195,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 3.  Erstellen Sie in `MyDataTable` zwei Felder mit dem Namen `Arg1` und `Arg2` mit dem Datentyp `Number`.  
   
-4.  Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2` hinzu: (10,50), (3,2), (6,0), (0,8) und (12312,1000).  
+4.  Fügen Sie `MyDataTable` fünf Entitäten mit den folgenden Werten für `Arg1` und `Arg2`: (10,50), (3,2), (6,0), (0,8) bzw. (12312,1000).  
   
 5.  Speichern und schließen Sie die Datenbank.  
   
@@ -209,7 +209,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 3.  Erstellen Sie die zwei Spaltenüberschriften `Val1` und `Val2` in `Sheet1`.  
   
-4.  Fügen Sie `Sheet1` fünf Entitäten mit den folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) und (5,0).  
+4.  Fügen Sie `Sheet1` fünf Entitäten mit folgenden Werten für `Val1` und `Val2` hinzu: (1,1), (2,2), (3,3), (4,4) bzw. (5,0).  
   
 5.  Speichern und schließen Sie das Arbeitsblatt.  
   
@@ -272,4 +272,4 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
  [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [How To: Create a data-driven unit test (Vorgehensweise: Erstellen eines datengesteuerten Komponententests)](../test/how-to-create-a-data-driven-unit-test.md)
+ [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

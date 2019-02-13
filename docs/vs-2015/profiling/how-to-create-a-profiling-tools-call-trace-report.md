@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Aufrufablaufverfolgungsberichts für Profilerstellungstools | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, viewing ETW data
 - ETW [Visual Studio ALM], viewing data
@@ -16,13 +11,13 @@ ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7699e169477dd0933532ff95a874d52dcf0e97d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774900"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Gewusst wie: Erstellen eines Aufrufablaufverfolgungsberichts für Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Im *Aufrufablaufverfolgungsbericht* für die [!INCLUDE[vsprvs](../includes/vsprv
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)
-
-
-

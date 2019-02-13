@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758684"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,7 +202,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
      ![Timerereignis](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Eine Vielzahl von Fakten kann aus den Daten abgeleitet werden. Zum Beispiel:  
+     Eine Vielzahl von Fakten kann aus den Daten abgeleitet werden. Beispiel:  
   
     -   Jedes `Timer`-Ereignis ist farbcodiert, um es als scripting-Ereignis zu identifizieren. Es enthält einen `document.createElement`-Aufruf, gefolgt von einer Formatberechnung und einem Aufruf von `style.backgroundColor` und `appendChild()`.  
   
@@ -249,6 +244,3 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 ## <a name="see-also"></a>Siehe auch  
  [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3043605e401942fe6aedb51d5a36d58dc03f6d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 47019ae4b9ae116113cb0174b10e2008dfd68732
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909569"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung
 Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen erscheinen. Um dies zu vermeiden, weisen Sie die Symbole mithilfe einer `AssignIconsToSquares()`-Methode zufällig den Bezeichnungsfeldern des Formulars zu.

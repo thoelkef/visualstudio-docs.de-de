@@ -14,20 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e550bb3ead112ed614bb95c1dc90036a33ef0d09
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 0d643a3ad43c41b90cdb2c331ff0222f1dc8a75f
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690540"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155473"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
 In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Einen allgemeineren Überblick über die Funktionen des Debuggers finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md). Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
-
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Zum Debuggen können Sie sich ein [Video ansehen](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171), in dem ähnliche Schritte beschrieben werden. |
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 

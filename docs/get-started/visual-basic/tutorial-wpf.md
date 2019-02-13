@@ -3,7 +3,6 @@ title: 'Tutorial: „Hallo Welt“-App mit Windows Presentation Foundation (WPF)
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in Visual Basic mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
 ms.date: 10/03/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 848fe369083b4dd01ee0ee1b541ab7228ee338f8
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945379"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 

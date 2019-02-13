@@ -1,14 +1,9 @@
 ---
 title: Schnelle Website-Profilerstellung mit VSPerfASPNETCmd | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,13 +11,13 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760296"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Website-Profilerstellung mit VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,6 +100,3 @@ Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos Profile fü
 |------------|-----------------|  
 |**/Output:** `VspFile`|Standardmäßig wird die Profilerstellungsdatendatei (.vsp) im aktuellen Verzeichnis mit dem Dateinamen **PerformanceReport.vsp** erstellt. Verwenden Sie die Option /Output, um einen anderen Speicherort, Dateinamen oder beides anzugeben.|  
 |**/PackSymbols:Off**|Standardmäßig bettet VsPerfASPNETCmd Symbole (Funktion und Parameternamen usw.) in die VSP-Datei ein. Das Einbetten der Symbole kann die Profilerstellungsdatendatei sehr groß werden lassen. Wenn Sie auf die PDB-Dateien zugreifen können, die die Symbole enthalten, wenn Sie die Daten analysieren, verwenden Sie die Option /packsymbols: off, um die Einbettung der Symbole zu deaktivieren.|
-
-
-

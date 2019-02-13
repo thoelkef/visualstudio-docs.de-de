@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042893"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934652"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features
 Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Um den Lerneffekt zu erhöhen, können Sie das Programm verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern.

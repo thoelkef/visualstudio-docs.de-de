@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Instrumentieren eines nativen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profilerbefehlszeile | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Instrumentieren eines nativen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54781402"
 ---
-# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren eines nativen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile
+# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Gewusst wie: Instrumentieren eines systemeigenen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools einen systemeigenen Dienst (C/C++) instrumentieren und ausführliche Zeitsteuerungsdaten sammeln können.  

@@ -2,7 +2,6 @@
 title: Bearbeiten von Python-Code
 description: In Visual Studio stehen für Python umfassende IntelliSense-Funktionen, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036055"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155395"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
 Da Sie einen Großteil Ihrer Entwicklungszeit im Code-Editor verbringen, bietet [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
 
 Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
 
 Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliedern](../ide/outlining.md), um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
 

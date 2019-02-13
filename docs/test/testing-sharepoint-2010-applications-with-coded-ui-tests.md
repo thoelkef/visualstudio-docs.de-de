@@ -1,19 +1,18 @@
 ---
 title: Testen von SharePoint-Anwendungen mit Tests der programmierten UI
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4b79531948310d0f2628b6ade334d6ea9df35ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b2851d436e9cef64f8a03c3f794d07f12cd0cf8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946012"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912754"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testen von SharePoint-Anwendungen mit Tests der programmierten UI
 

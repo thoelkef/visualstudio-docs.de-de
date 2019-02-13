@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54781100"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools an eine ASP.NET-Webanwendung angefügt wird und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.  

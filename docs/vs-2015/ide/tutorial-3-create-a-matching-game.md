@@ -1,25 +1,20 @@
 ---
-title: 'Tutorial 3: Erstellen eines Memory-Spiels | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Tutorial 3: Erstellen eines Spiels | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44c9b6578085ee49796078976b30d78f1656e58f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792710"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Memory-Spiels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,6 +56,3 @@ In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeb
 |[Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md)|Behalten Sie die Sichtbarkeit von Symbolpaaren bei, falls ein übereinstimmendes Paar ausgewählt wird.|  
 |[Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Fügen Sie eine `CheckForWinner()`-Methode hinzu, um zu überprüfen, ob ein Spieler gewonnen hat.|  
 |[Schritt 9: Ausprobieren weiterer Funktionen](../ide/step-9-try-other-features.md)|Probieren Sie andere Funktionen aus, z. B. das Ändern von Symbolen und Farben, das Hinzufügen eines Rasters und das Hinzufügen von Sounds. Versuchen Sie, die Spielfläche zu vergrößern und den Zeitgeber anzupassen.|
-
-
-

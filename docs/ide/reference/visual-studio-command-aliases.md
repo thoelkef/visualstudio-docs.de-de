@@ -1,7 +1,6 @@
 ---
 title: Befehlsaliase
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33ff7874a6f5af1c9196f498f6a72e51cdce265e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938366"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928854"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -93,13 +92,13 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Open File Command](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Befehl "Projekt öffnen"](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Nur Definitionen anzeigen/Gliederung anhalten|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
-|Prozedurschritt|d|Debug.StepOver|
+|Prozedurschritt|p|Debug.StepOver|
 |Parameterinformationen|ParamInfo|Edit.ParameterInfo|
 |Ausführen bis Rücksprung|pr|Debug.StepOut|
 |Vorheriges Lesezeichen|PrevBook|Edit.PreviousBookmark|
 |Datei drucken|print|File.Print|
 |Eigenschaftenfenster|props|View.PropertiesWindow|
-|Anhalten|q|Debug.StopDebugging|
+|Beenden|q|Debug.StopDebugging|
 |Wiederholen|redo|Edit.Redo|
 |Registerfenster|Register|Debug.Registers|
 |Ausführen bis Cursor|rtc|Debug.RunToCursor|

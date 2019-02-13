@@ -1,25 +1,20 @@
 ---
-title: 'Schritt 3: Zuweisen eines zufällig ausgewählten Symbols zu jeder Bezeichnung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Schritt 3: Zuweisen ein zufällig ausgewählten Symbols zu jeder Bezeichnung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799666"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Schritt 3: Zuweisen eines zufällig ausgewählten Symbols zu jeder Bezeichnung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]  
   
-2.  Fügen Sie die `AssignIconsToSquares()`-Methode wie im vorherigen Schritt gezeigt hinzu. Sie können sie direkt unterhalb dem in [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md) hinzugefügten Code einfügen.  
+2.  Fügen Sie die `AssignIconsToSquares()`-Methode wie im vorherigen Schritt gezeigt hinzu. Sie können es direkt unter der Sie hinzugefügt, im haben Code platzieren [Schritt2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Wie bereits erwähnt, enthält die `AssignIconsToSquares()`-Methode ein neues Element: Eine `foreach`-Schleife in Visual C# und eine `For Each`-Schleife in Visual Basic. Sie können eine `For Each`-Schleife verwenden, wenn Sie die gleiche Aktion immer wieder ausführen möchten. In diesem Fall sollen die gleichen Anweisungen für jedes Bezeichnungsfeld aus TableLayoutPanel ausgeführt werden, wie im folgenden Code erläutert wird. Die erste Zeile erstellt eine Variable mit dem Namen `control`, die nacheinander jedes Steuerelement speichert. Jedes dieser Steuerelement umfasst die Anweisungen, die in der Schleife ausgeführt werden.  
   
@@ -43,7 +38,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
     > [!NOTE]
     >  Die Namen "iconLabel" (Symbolbezeichnung) und "control" (Steuerelement) dienen zur Verdeutlichung der Verwendungsweise. Sie können diese Namen durch beliebige andere Namen ersetzen, ohne die Funktionsweise des Codes zu beeinflussen, sofern Sie die Namen in jeder Anweisung innerhalb der Schleife ändern.  
   
-     Die `AssignIconsToSquares()`-Methode durchläuft jedes Bezeichnungsfeld-Steuerelement in TableLayoutPanel und führt für jedes die gleichen Anweisungen aus. Diese Anweisungen ziehen ein zufälliges Symbol aus der Liste, die Sie in [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md) hinzugefügt haben. (Sie haben deshalb zwei Exemplare jedes Symbols in die Liste eingefügt, damit zufälligen Bezeichnungsfeld-Steuerelementen ein Symbolpaar zugewiesen werden kann.)  
+     Die `AssignIconsToSquares()`-Methode durchläuft jedes Bezeichnungsfeld-Steuerelement in TableLayoutPanel und führt für jedes die gleichen Anweisungen aus. Diese Anweisungen ziehen ein zufälliges Symbol aus der Liste, die Sie hinzugefügt [Schritt2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Sie haben deshalb zwei Exemplare jedes Symbols in die Liste eingefügt, damit zufälligen Bezeichnungsfeld-Steuerelementen ein Symbolpaar zugewiesen werden kann.)  
   
      Betrachten Sie den Code genauer, der innerhalb der `foreach`-Schleife oder der `For Each`-Schleife ausgeführt wird. Dabei handelt es sich um den folgenden Code.  
   
@@ -52,7 +47,7 @@ Es wäre zu einfach, wenn die Symbole in jedem Spiel in den gleichen Zellen ersc
   
      In der ersten Zeile wird die Variable `control` in ein Bezeichnungsfeld mit dem Namen `iconLabel` konvertiert. Die folgende Zeile ist eine `if`-Anweisung, die prüft, ob die Konvertierung erfolgt ist. Wenn die Konvertierung funktioniert, werden die Anweisungen innerhalb der `if`-Anweisung ausgeführt. (Wie Sie vielleicht aus vorherigen Lernprogrammen wissen, kann mit der `if`-Anweisung eine beliebige Bedingung geprüft werden.) Die erste Zeile in der `if`-Anweisung erstellt die Variable `randomNumber`, die eine Zufallszahl enthält, die einem der Elemente in der Symbolliste entspricht. Dazu verwendet die Anweisung die `Next`-Methode des `Random`-Objekts, das Sie früher erstellt haben. Die `Next`-Methode gibt eine Zufallszahl zurück. Diese Zeile verwendet auch die `Count`-Eigenschaft der `icons`-Liste, um den Bereich festzulegen, aus dem die Zufallszahl ausgewählt wird. Die nächste Zeile weist der `Text`-Eigenschaft des Bezeichnungsfelds eines der Symbollistenelemente zu. Die auskommentierte Zeile wird später in diesem Thema erläutert. Schließlich entfernt die letzte Zeile in der `if`-Anweisung das Symbol aus der Liste, das dem Formular hinzugefügt wurde.  
   
-     Vergessen Sie nicht: Wenn Sie sich über die Funktionsweise eines Codeabschnitts nicht sicher sind, können Sie den Mauszeiger über einem Codeelement positionieren und erhalten eine entsprechende QuickInfo. Mithilfe des Visual Studio-Debuggers können Sie auch während der Programmausführung jede Codezeile untersuchen. Weitere Informationen finden Sie unter [How Do I: Step with The Debugger in Visual Studio? (Wie setze ich den Debugger in Visual Studio ein?)](http://msdn.microsoft.com/vstudio/ee672313.aspx) oder unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).  
+     Vergessen Sie nicht: Wenn Sie sich über die Funktionsweise eines Codeabschnitts nicht sicher sind, können Sie den Mauszeiger über einem Codeelement positionieren und erhalten eine entsprechende QuickInfo. Mithilfe des Visual Studio-Debuggers können Sie auch während der Programmausführung jede Codezeile untersuchen. Finden Sie unter [Gewusst wie: Schritt durch den Debugger in Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) oder [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md) für Weitere Informationen.  
   
 3.  Um das Spielbrett mit Symbolen zu füllen, müssen Sie die `AssignIconsToSquares()`-Methode aufrufen, sobald das Programm startet. Wenn Sie Visual C# verwenden, fügen Sie direkt unter dem Aufruf der `InitializeComponent()`-Methode im `Form1`*Konstruktor* eine Anweisung hinzu, mit der das Formular die neue Methode aufruft und sich entsprechend einrichtet, bevor es angezeigt wird. Konstruktoren werden aufgerufen, wenn Sie ein neues Objekt erstellen, beispielsweise eine Klasse oder eine Struktur. Weitere Informationen finden Sie unter [Konstruktoren (C#-Programmierhandbuch)](http://msdn.microsoft.com/library/ace5hbzh.aspx) oder unter [Verwenden von Konstruktoren und Destruktoren](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) in Visual Basic.  
   
@@ -90,6 +85,3 @@ Vergleichsspiel mit zufälligen Symbolen
 -   Informationen darüber, wie Sie zum nächsten Lernprogramm-Schritt wechseln, finden Sie unter [Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
 -   Informationen darüber, wie Sie zum vorherigen Lernprogramm-Schritt zurückzukehren, finden Sie unter [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
-
-
-

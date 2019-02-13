@@ -2,7 +2,6 @@
 title: Ausführen und Debuggen von Komponententests mit dem Test-Explorer
 description: Erfahren Sie, wie Sie Tests mit dem Test-Explorer in Visual Studio ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c7e1f5dbe45f9792c1db4afbfbc151a9a2e26
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484159"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956544"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 

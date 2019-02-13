@@ -1,14 +1,9 @@
 ---
 title: Shader-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805460"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,6 +188,3 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|
-
-
-

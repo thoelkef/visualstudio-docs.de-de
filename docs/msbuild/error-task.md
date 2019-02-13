@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f5515be77cfa6ae734b97a2cdba52f6702f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946983"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853377"
 ---
 # <a name="error-task"></a>Fehleraufgabe
-Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.  
+Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.
 
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.  
-
+## <a name="parameters"></a>Parameter
+In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.
 
 | Parameter | Beschreibung |
 |---------------| - |
@@ -39,30 +38,30 @@ Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewer
 | `HelpKeyword` | Optionaler `String` -Parameter.<br /><br /> Das dem Fehler zuzuordnende Hilfeschlüsselwort. |
 | `Text` | Optionaler `String` -Parameter.<br /><br /> Der Fehlertext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn die `Condition`-Parameter `true` ergeben. |
 
-## <a name="remarks"></a>Hinweise  
- Die `Error`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, Fehlertexte an Protokollierungen herauszugeben und die Buildausführung zu beenden.  
+## <a name="remarks"></a>Hinweise
+Die `Error`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, Fehlertexte an Protokollierungen herauszugeben und die Buildausführung zu beenden.
 
- Wenn der `Condition`-Parameter `true` entspricht wird der Build beendet und ein Fehler protokolliert. Wenn kein `Condition`-Parameter vorhanden ist, wird der Fehler Protokolliert und die Buildausführung wird beendet. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).  
+Wenn der `Condition`-Parameter `true` entspricht wird der Build beendet und ein Fehler protokolliert. Wenn kein `Condition`-Parameter vorhanden ist, wird der Fehler Protokolliert und die Buildausführung wird beendet. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
+Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird überprüft, ob alle erforderlichen Eigenschaften festgelegt sind. Wenn sie nicht festgelegt sind, löst das Projekt ein Fehlerereignis aus, und protokolliert den Wert des `Text`-Parameters der `Error`-Aufgabe.  
+## <a name="example"></a>Beispiel
+Im folgenden Codebeispiel wird überprüft, ob alle erforderlichen Eigenschaften festgelegt sind. Wenn sie nicht festgelegt sind, löst das Projekt ein Fehlerereignis aus, und protokolliert den Wert des `Text`-Parameters der `Error`-Aufgabe.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Error  
-            Text=" The 0 property must be set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Error  
-            Text="The FREEBUILD property must be set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Error
+            Text=" The 0 property must be set on the command line."
+            Condition="'$(0)' == ''" />
+        <Error
+            Text="The FREEBUILD property must be set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>Siehe auch
+[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
+[Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)

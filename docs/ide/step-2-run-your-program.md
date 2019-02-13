@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 2: Ausführen des Programms'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0095ec2788cf0ce0a906ceea4300d7c23b2325
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941245"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952320"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.

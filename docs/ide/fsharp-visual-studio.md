@@ -2,7 +2,6 @@
 title: F#-Tools
 description: Hier erfahren Sie, welche Features von Visual Studio in F# unterstützt werden.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920629"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955858"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
 
@@ -61,7 +60,7 @@ Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach v
 
 |Projekt-Designer-Seite|Verwandte Links|Beschreibung|
 | - |-------------|-----------|
-|Application|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Damit können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen, auf welche Version von .NET Framework die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
+|Anwendung|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Damit können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen, auf welche Version von .NET Framework die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
 |Build|[Seite „Erstellen“, Projekt-Designer](reference/build-page-project-designer-csharp.md)|Damit können Sie festlegen, wie der Code kompiliert wird.|
 |Buildereignisse|[Seite „Buildereignisse“, Projekt-Designer](reference/build-events-page-project-designer-csharp.md)|Damit können Sie Befehle angeben, die vor oder nach dem Kompilieren ausgeführt werden sollen.|
 |Debug|[Seite „Debuggen“, Projekt-Designer](reference/debug-page-project-designer.md)|Damit können Sie festlegen, wie die Anwendung beim Debuggen ausgeführt wird. So legen Sie beispielsweise fest, welche Befehle verwendet werden und welches Verzeichnis als Startverzeichnis für die Anwendung dient. Ferner legen Sie alle Debugmodi fest, die Sie aktivieren möchten, wie etwa den Modus zum Debuggen von nativem Code und SQL.|

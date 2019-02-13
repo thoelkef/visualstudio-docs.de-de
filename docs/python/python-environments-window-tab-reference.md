@@ -2,7 +2,6 @@
 title: Referenz zum Fenster „Python-Umgebungen“
 description: Dieser Artikel beschreibt jede der Registerkarten, die im Fenster „Python-Umgebungen“ in Visual Studio angezeigt werden.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa82d2d475d540dfdda31c7dea1bd4681aaeb7a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982389"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909985"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 

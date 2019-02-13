@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Datasets mit Dataset-Designer'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem DataSet-Designer'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce6d5a6a485a2d72c3a531219455efd425cd991f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003304"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927671"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Dataset mit dem Dataset-Designer
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem Dataset-Designer
 
 In dieser exemplarischen Vorgehensweise erstellen Sie ein Dataset mithilfe der **Dataset-Designer**. Der Artikel führt Sie durch den Prozess der Erstellung eines neuen Projekts und Hinzufügen eines neuen **DataSet** wird. Sie erfahren, wie Tabellen, die basierend auf Tabellen in einer Datenbank ohne mithilfe eines Assistenten erstellen können.
 

@@ -2,19 +2,18 @@
 title: Programm zur Verbesserung der Benutzerfreundlichkeit
 description: In diesem Artikel erfahren Sie mehr über die Datenschutzeinstellungen in Visual Studio.
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ef70228979d1d302a644cda022d086e710b7c7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921019"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927528"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 

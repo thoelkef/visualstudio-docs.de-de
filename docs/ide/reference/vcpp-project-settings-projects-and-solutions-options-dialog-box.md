@@ -1,7 +1,6 @@
 ---
 title: VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 ms.date: 08/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb53b30b00f6f55bce21fd0069aac733d4a59228
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f35f9dfddeb905277084de9f20d46daf43d69f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938041"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913862"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Build- und Projekteinstellungen definieren, die für die Protokollierung, die Leistung sowie unterstützende Dateitypen relevant sind.

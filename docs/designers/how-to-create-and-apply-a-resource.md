@@ -1,7 +1,6 @@
 ---
 title: So erstellen Sie eine Ressource und wenden Sie an
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b27afce3f27b2a6325f3ee59f5220bac68275c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042009"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919338"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [Schnellstart: Styling controls (Formatieren von Steuerelementen)](http://go.microsoft.com/fwlink/?LinkID=248239) und [QuickStart: Control templates (Schnellstart: Steuerelementvorlagen)](http://go.microsoft.com/fwlink/?LinkID=247982).

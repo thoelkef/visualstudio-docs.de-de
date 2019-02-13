@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 9: Ausprobieren weiterer Features'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fcc95d0383919d17e5620204119248e9d5c5f30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d2d32a0d2e208b5f8bfd7869c8dfa92f063f1db5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959982"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925942"
 ---
 # <a name="step-9-try-other-features"></a>Schritt 9: Ausprobieren weiterer Features
 Um den Lerneffekt zu erhöhen, können Sie das Ändern von Symbolen und Farben, das Hinzufügen eines Spieltimers und das Hinzufügen von Sounds ausprobieren. Versuchen Sie, die Spielfläche zu vergrößern und den Timer anzupassen, um das Spiel anspruchsvoller zu machen.

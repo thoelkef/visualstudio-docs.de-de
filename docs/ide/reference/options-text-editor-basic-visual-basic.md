@@ -1,7 +1,6 @@
 ---
 title: Optionen, Text-Editor, Standard (VB), Erweitert
 ms.date: 01/16/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998260"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925461"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) umfasst die folgenden Eigenschaften:

@@ -1,27 +1,22 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von MSBuild | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792219"
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
 - Eine Aufgabe bildet die kleinste Arbeitseinheit, d. h. das „Atom“ eines Builds. Aufgaben sind unabhängige ausführbare Komponenten, die über Eingaben und Ausgaben verfügen können. Derzeit wird in der Projektdatei nicht auf Aufgaben verwiesen, und solche wurden nicht definiert. In den folgenden Abschnitten fügen Sie der Projektdatei Aufgaben hinzu. Weitere Informationen finden Sie im Thema [Aufgaben](../msbuild/msbuild-tasks.md).  
   
-- Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Am Ende der Projektdatei befinden sich zwei Ziele, die derzeit in HTML-Kommentare eingeschlossen sind: BeforeBuild und AfterBuild.  
+- Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Es gibt zwei Ziele am Ende der Projektdatei, die derzeit in HTML-Kommentare eingeschlossen werden: BeforeBuild und AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -587,5 +582,3 @@ $(PropertyName)
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über MSBuild](msbuild.md)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-
-

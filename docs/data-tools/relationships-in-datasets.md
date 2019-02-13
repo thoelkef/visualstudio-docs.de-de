@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970226"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951734"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
 Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation> Objekte aus, um eine über-/unterordnungsbeziehung zwischen den Tabellen und verknüpften Datensätze von den anderen zurück. Hinzufügen verknüpfte Tabellen zu Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**, oder die **Dataset-Designer**, erstellt und konfiguriert die <xref:System.Data.DataRelation> -Objekt für Sie.
@@ -59,7 +58,7 @@ Die Regeln, die Sie vornehmen können, werden angegeben, der <xref:System.Data.R
 |Regel für Foreign Key-Einschränkung|Aktion|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|Die Änderung (Update- oder Delete) an den übergeordneten Datensatz wird auch in verwandten Datensätze in der untergeordneten Tabelle vorgenommen.|
-|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird festgelegt, um <xref:System.DBNull>. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" bleiben – d. h., sie haben keine Beziehung zur übergeordneten Datensätze. **Hinweis**: Mit dieser Regel kann dazu führen, dass ungültige Daten in der untergeordneten Tabelle.|
+|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird festgelegt, um <xref:System.DBNull>. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" bleiben – d. h., sie haben keine Beziehung zur übergeordneten Datensätze. **Hinweis:** mit dieser Regel kann ungültige Daten in der untergeordneten Tabelle führen.|
 |<xref:System.Data.Rule.SetDefault>|Der Fremdschlüssel in die zugehörigen untergeordneten Datensätze auf den Standardwert festgelegt ist (wie von der Spaltenwerts festgelegt <xref:System.Data.DataColumn.DefaultValue%2A> Eigenschaft).|
 |<xref:System.Data.Rule.None>|Verknüpfte untergeordnete Datensätze wird nicht geändert. Mit dieser Einstellung können untergeordnete Datensätze Verweise auf ungültige übergeordnete Datensätze enthalten.|
 

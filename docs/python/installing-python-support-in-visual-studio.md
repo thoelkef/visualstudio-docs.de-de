@@ -2,7 +2,6 @@
 title: Installieren von Python-Unterstützung
 description: Informationen zum Installieren von Python Tools für Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 und 2010, einschließlich Optionen und Installationsspeicherorten.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31fc5a4ffd9f6c973597e59bac6c89823b30d80b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991176"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155486"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Installieren von Python-Unterstützung für Visual Studio unter Windows
 
@@ -69,10 +68,6 @@ Wenn die Python-Unterstützung nach Ausführung der Installationsschritte schnel
 1. Nach der Installation bietet der Installer Optionen für das Ändern, Starten, Reparieren oder Deinstallieren von Visual Studio. Die Schaltfläche **Ändern** ändert sich zu **Aktualisieren**, wenn Updates für die installierten Komponenten von Visual Studio verfügbar sind. (Die Option **Ändern** ist anschließend im Dropdownmenü verfügbar.) Sie können Visual Studio und den Installer ebenfalls über das Windows-Menü **Start** starten, indem Sie nach „Visual Studio“ suchen.
 
     ![Starten, Ändern oder Deinstallieren von Visual Studio über den Installer](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) zur Installation von Python-Unterstützung in Visual Studio an.|
 
 ### <a name="troubleshooting"></a>Problembehandlung
 

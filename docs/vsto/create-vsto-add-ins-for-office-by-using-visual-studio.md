@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6dfbd0ed4ae41942f3c587d490a4dafaa1f93a7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ad4ea46d79ea06b83b5456f41d013c70b76e5011
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875887"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156084"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
   Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .  
@@ -101,7 +101,7 @@ ms.locfileid: "54875887"
  [Visual Studio-Entwicklercenter](http://go.microsoft.com/fwlink/?LinkID=99124)  
  Enthält zusätzliche Visual Studio-Ressourcen, z. B. technische Artikel, Videos und Blogs.  
   
- [Entwicklerportal für Office Business-Anwendungen](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ [Entwicklerportal für Office-Geschäftsanwendungen](http://go.microsoft.com/fwlink/?LinkId=99125)  
  Enthält Informationen zu Office Business Applications (OBAs) und zum Erstellen von OBAs mithilfe der Office-System-Plattform.  
   
  [Microsoft Office-Entwicklung im Abschnitt der MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  

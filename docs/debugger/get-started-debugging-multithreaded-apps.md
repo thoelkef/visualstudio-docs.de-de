@@ -12,31 +12,27 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227979"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155785"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)
-Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. In diesem Tutorial wird gezeigt, wie mit Threadmarker, der **parallele Stapel** Fenster die **parallele Überwachung** bedingter Haltepunkte, Fenster und filterhaltepunkte. Das Abschließen dieses Lernprogramms werden Sie mit Visual Studio-Funktionen für das Debuggen von Multithreadanwendungen vertraut machen.
 
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) für Multithread-debugging, die ähnliche Schritte zeigt. |
+Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. In diesem Tutorial wird gezeigt, wie mit Threadmarker, der **parallele Stapel** Fenster die **parallele Überwachung** bedingter Haltepunkte, Fenster und filterhaltepunkte. Das Abschließen dieses Lernprogramms werden Sie mit Visual Studio-Funktionen für das Debuggen von Multithreadanwendungen vertraut machen.
 
 Diese zwei Themen enthalten weitere Informationen zur Verwendung von anderen Multithread-debugging-Tools:
 
 - Verwenden der **Debugspeicherort** Symbolleiste und die **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
 
-- Ein Beispiel, verwendet <xref:System.Threading.Tasks.Task> (verwalteter Code) und die Concurrency Runtime (C++), finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung Finden Sie allgemeine Tipps zum Debuggen, die für die meisten Multithread-Anwendungstypen gelten sowohl für dieses Thema als auch für diese.
+- Ein Beispiel, verwendet <xref:System.Threading.Tasks.Task> (verwalteter Code) und die Concurrency Runtime (C++), finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md). Finden Sie allgemeine Tipps zum Debuggen, die für die meisten Multithread-Anwendungstypen gelten sowohl für dieses Thema als auch für diese.
   
 Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein Beispiel aufgeführt.  
   
@@ -46,7 +42,7 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Sprache auswählen **Visual C#** , **Visual C++**, oder **Visual Basic**.  
+2.  Wählen Sie eine Sprache: **Visual C#** , **Visual C++**, oder **Visual Basic**.  
   
 3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.  
   
@@ -106,39 +102,37 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +188,8 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
     ```
   
 7.  Wählen Sie im Menü **Datei** den Befehl **Alle speichern** aus.  
+
+8. (Nur Visual Basic) Maustaste Sie im Projektmappen-Explorer (rechter Bereich) auf den Projektknoten, wählen **Eigenschaften**. Unter den **Anwendung** Registerkarte die **Startobjekt** zu **einfache**.
   
 ## <a name="debug-the-multithreaded-app"></a>Debuggen Sie die Multithread-app  
   
@@ -205,8 +201,8 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +210,7 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
     Console.WriteLine()
     ```
 
-1. Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.  
+1. Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `std::this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.  
   
     Im Bundsteg gibt ein roter Kreis an, dass ein Haltepunkt an dieser Stelle festgelegt wurde. 
   
@@ -257,7 +253,7 @@ In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (f�
     Sie können verschiedene Aktionen in diese Menüs mit der rechten Maustaste, aber in diesem Tutorial erfahren Sie mehr diese Details in der **parallele Überwachung** Fenster (nächsten Abschnitten).
 
     > [!NOTE]
-    > Um eine Liste mit Informationen für jeden Thread anzeigen zu anzuzeigen, verwenden die **Threads** Fenster stattdessen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
+    > Um eine Liste mit Informationen für jeden Thread anzeigen zu anzuzeigen, verwenden die **Threads** Fenster stattdessen. Finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Festlegen eines überwachungselements für eine variable
 
@@ -342,8 +338,9 @@ Sie können Haltepunkte festlegen, auf verschiedenen Bedingungen, z. B. den Thre
     > [!NOTE]
     > Wenn Sie fahren fort, um den Debugger, werden alle Threads ausgeführt werden. Der Debugger wird nicht jedoch in Code in anderen Threads unterbrechen, es sei denn, eine der anderen Threads ein Haltepunkt erreicht. 
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
+
 [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Vorgehensweise: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Vorgehensweise: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)  
-[Vorgehensweise: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)  
+[Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Gewusst wie: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)  
+[Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)  

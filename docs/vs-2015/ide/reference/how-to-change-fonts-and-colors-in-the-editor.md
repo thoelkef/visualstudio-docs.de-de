@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Ändern von Schriftarten und Farben im Editor | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -19,13 +14,13 @@ ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799107"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 -   Die Optionen **Elementvordergrund**, **Elementhintergrund** und **Fett** können für jeden Typ Textelement festgelegt werden. Wenn Sie z.B. Farben ändern und für **Kommentar** und **Lesezeichen** **Fett** auswählen, werden andere Typen Textelemente nicht betroffen.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, Größe und Farben  
   
@@ -64,6 +59,3 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
  [Text-Editor-Optionen (Dialogfeld)](../../ide/reference/text-editor-options-dialog-box.md)   
  [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)   
  [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
