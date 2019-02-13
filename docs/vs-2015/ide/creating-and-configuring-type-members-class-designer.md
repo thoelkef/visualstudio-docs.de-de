@@ -1,14 +1,9 @@
 ---
 title: Erstellen und Konfigurieren von Typmembern (Klassen-Designer) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795302"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +131,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
      **Hinweis:** Sie können Member auch mithilfe von Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster „Klassendetails“ (Klassen-Designer)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a> Ändern von Typmembern  
- Mit dem Klassen-Designer können Sie die Member der Typen ändern, die im Diagramm angezeigt werden. Sie können die Member jedes nicht schreibgeschützten Typs ändern, die in einem Klassendiagramm angezeigt werden. (Weitere Informationen finden Sie unter [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Ändern Sie Typmember, indem Sie die direkte Bearbeitung auf der Entwurfsoberfläche, das Eigenschaftenfenster und das Klassendetailsfenster verwenden.  
+ Mit dem Klassen-Designer können Sie die Member der Typen ändern, die im Diagramm angezeigt werden. Sie können die Member jedes nicht schreibgeschützten Typs ändern, die in einem Klassendiagramm angezeigt werden. (Weitere Informationen finden Sie unter [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Ändern Sie Typmember, indem Sie die direkte Bearbeitung auf der Entwurfsoberfläche, das Eigenschaftenfenster und das Klassendetailsfenster verwenden.  
   
  Alle im Klassendetailsfenster angezeigten Member stellen die Member der Typen im Klassendiagramm dar. Es gibt vier Arten von Membern: Methoden, Eigenschaften, Felder und Ereignisse.  
   
@@ -268,7 +263,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
  Alle Zellen im Klassendetailsfenster sind bis auf einige Ausnahmen bearbeitbar:  
   
-- Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
+- Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
   
 - Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.  
   

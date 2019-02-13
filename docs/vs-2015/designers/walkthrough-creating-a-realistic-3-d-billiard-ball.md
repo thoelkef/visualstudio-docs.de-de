@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793304"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 -   Erzeugen eines Raumgefühls durch das Spiegeln der Umgebung  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie folgende Komponenten und Kenntnisse:  
   
 -   Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist  
@@ -225,6 +220,3 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
  [Shader-Designer](../designers/shader-designer.md)   
  [Bildbearbeitung](../designers/image-editor.md)   
  [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)
-
-
-

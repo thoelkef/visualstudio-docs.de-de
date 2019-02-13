@@ -2,18 +2,18 @@
 title: Aktualisieren von Tests der programmierten UI
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 664eeb618b92b7d3181a223a531aac02e046ab0f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803626"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade der Tests der programmierten UI von Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Tests der programmierten UI enthaltende Testprojekte, die in [!INCLUDE[vs_dev10_
 -   Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio enthält mehr als ein Typ des Testprojekts. Wenn Sie einen neuen Test der programmierten UI erstellen, wird er in einem Projekttyp für den Test der programmierten UI erstellt. Weitere Informationen finden Sie unter [Upgrade der Tests von früheren Visual Studio-Versionen](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+>  Visual Studio enthält mehr als ein Typ des Testprojekts. Wenn Sie einen neuen Test der programmierten UI erstellen, wird er in einem Projekttyp für den Test der programmierten UI erstellt. Weitere Informationen finden Sie unter [Upgrade der Tests von früheren Visual Studio-Versionen](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 >  Tests der programmierten UI enthaltende[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] -Testprojekte müssen neu erstellt werden, wenn Sie das Testprojekt in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oder [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] oder zusammen mit [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]öffnen.
@@ -57,11 +57,11 @@ Tests der programmierten UI enthaltende Testprojekte, die in [!INCLUDE[vs_dev10_
 
   Das Update enthält zudem Fixes für die folgenden Probleme:
 
-- **Code Coverage** Unfähigkeit, die eine Codeabdeckungsdatei (.coverage) zu öffnen, die von Visual Studio 2012 in erstellt wird [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **Codeabdeckung:** Unfähigkeit eine durch Visual Studio 2012 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 erstellte Codeabdeckungsdatei (.coverage) zu öffnen.
 
-- **Isolierte Testartefakte:** Ihr Team verfügt über ein testartefakt, das in Team Foundation Server (TFS) 2010 über einen ungültigen Benutzer zugewiesen ist. Dies ist beispielsweise der Fall, wenn ein Benutzer das Unternehmen verlassen hat, diesem jedoch weiterhin ein Testfall zugewiesen ist. Sie aktualisieren TFS 2010 auf TFS 2012. Sie verwenden [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, um eine Verbindung zum aktualisierten TFS-Server herzustellen. Sie können das Testartefakt mithilfe von [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 anderen TFS-Benutzern nicht zuweisen.
+- **Isolierte Testartefakte:** Ihr Team verfügt über ein Testartefakt, das in TFS 2010 (Team Foundation Server) einem ungültigen Benutzer zugewiesen ist. Dies ist beispielsweise der Fall, wenn ein Benutzer das Unternehmen verlassen hat, diesem jedoch weiterhin ein Testfall zugewiesen ist. Sie aktualisieren TFS 2010 auf TFS 2012. Sie verwenden [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, um eine Verbindung zum aktualisierten TFS-Server herzustellen. Sie können das Testartefakt mithilfe von [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 anderen TFS-Benutzern nicht zuweisen.
 
-- Auslastungstests Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp als das Profil für das lokale Netzwerk (LAN) auf einem Computer ausführen. diese Windows 8 ausgeführt wird, wird der Emulator-Netzwerktreiber das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](http://support.microsoft.com/kb/2736182).
+- **Auslastungstest:** Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp ausführen, der nicht dem LAN-Profil auf einem Computer unter Windows 8 entspricht, führt der Netzwerkemulatortreiber dazu, dass das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Siehe auch
- [Portieren, migrieren und Aktualisieren von Visual Studio-Projekte](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrade der Tests von früheren Versionen von Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Verwenden von Benutzeroberflächenautomatisierung zum Testen Ihres Codes](../test/use-ui-automation-to-test-your-code.md) [generieren eine Tests der programmierten UI aus einer vorhandenen Aktionsaufzeichnung](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portieren, migrieren und Aktualisieren von Visual Studio-Projekte](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrade der Tests von früheren Versionen von Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Verwenden von Benutzeroberflächenautomatisierung zum Testen Ihres Codes](../test/use-ui-automation-to-test-your-code.md) [generieren eine Tests der programmierten UI aus einer vorhandenen Aktionsaufzeichnung](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

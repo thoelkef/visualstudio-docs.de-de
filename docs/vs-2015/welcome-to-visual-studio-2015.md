@@ -3,10 +3,7 @@ title: Willkommen bei Visual Studio 2015 | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835085"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,17 +50,17 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 ## <a name="build-apps-for-android-ios-and-windows"></a>Erstellen von Apps für Android, iOS und Windows
  Sie können mithilfe von Visual Studio Apps für Android-, iOS- und Windows-Geräte erstellen. Weitere Informationen hierzu erhalten Sie unter [Cross-Platform Mobile Development (Plattformübergreifende Entwicklung für mobile Geräte)](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
- Informationen über universelle Windows-Apps (UWP) finden Sie unter [universelle Windows-Apps](https://dev.windows.com/en-us/windows-apps).
+ Informationen über universelle Windows-Apps (UWP) finden Sie unter [universelle Windows-Apps](https://dev.windows.com/windows-apps).
 
  Wählen Sie die benötigten Tools auf Grundlage Ihrer App-Anforderungen und der zu verwendenden Sprache aus.
 
 1.  [Xamarin für Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)– eine gemeinsame Codebasis in C# für alle Geräte
 
-2.  [Apache Cordova mit Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript
+2.  [Apache Cordova mit Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)– eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript
 
 3.  [Visual Studio-Tools für Unity](./cross-platform/visual-studio-tools-for-unity.md): Entwicklung von 2D/3D-Spielen in C#
 
-4.  [C++ für plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Freigegebene Codebibliotheken und apps in C++
+4.  [C++ für plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)– freigegebene Codebibliotheken und Apps in C++
 
 5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)Visual Studio-Emulator für Android: Debuggen und Testen Ihrer Android-Apps, unabhängig von der IDE
 
@@ -82,7 +79,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 ## <a name="build-test-and-manage-your-code"></a>Erstellen, Testen und Verwalten von Code
 
 ### <a name="check-in-your-code"></a>Einchecken von Code
- Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Erfahren Sie mehr darüber, welches Versionskontrollsystem System für Ihre Anforderungen am besten geeignet ist: [Verwenden der Versionskontrolle](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)
+ Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Informationen darüber, welches Versionskontrollsystem für Ihre Anforderungen am besten geeignet ist, finden Sie unter [Verwenden der Versionskontrolle](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Erstellen der App
  Sie können Ihre [App lokal erstellen](./ide/compiling-and-building-in-visual-studio.md) und sicherstellen, dass sie ordnungsgemäß funktioniert. Dann verwenden Sie die [Debugtools](./debugger/debugging-in-visual-studio.md) , um Probleme mit der App zu beheben. Sie können auch Projekte auf freigegebenen Buildservern oder in der Cloud erstellen. Automatisieren Sie den Buildprozess, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen.
@@ -99,7 +96,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 
 |||||
 |-|-|-|-|
-|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[Neues bei Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[Neues bei Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[Neues bei Visual C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Neues bei Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[What’s new for JavaScript (Neues bei JavaScript)](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

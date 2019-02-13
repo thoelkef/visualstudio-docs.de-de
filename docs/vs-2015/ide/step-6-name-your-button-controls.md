@@ -1,25 +1,20 @@
 ---
 title: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e02c240f8e4146ce1c87fd1d90c30eb7787cef5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796828"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +73,10 @@ Form1.cs-Registerkarte mit Visual C#-Code
   
      Nachdem Sie für ein Steuerelement einen Ereignishandler hinzugefügt haben, können Sie jederzeit vom Windows Forms-Designer aus zum Steuerelement zurückkehren, indem Sie auf das Steuerelement doppelklicken oder in der Menüleiste **Ansicht**, **Code**auswählen.  
   
-     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennen (c#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
+     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennung (C#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   
 -   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).  
   
 -   Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
-
-
-
