@@ -11,13 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1edf37a6c6c22591f0a4f857e9ff38a701b8ddff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919915"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929231"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents
 
@@ -69,7 +68,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - oder -
+    - oder - 
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `AgentInitializeTimeout`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von fünf Minuten angeben:
 
@@ -103,7 +102,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - oder -
+    - oder - 
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `RemotingTimeoutSeconds`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von 15 Minuten angeben:
 

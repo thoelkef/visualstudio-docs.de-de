@@ -4,7 +4,6 @@ description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie ei
 ms.custom: seodec18, get-started
 ms.date: 01/25/2019
 ms.technology: vs-ide-general
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f303b67365b5f824fe1ee114921ddc94c333922
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424524"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156071"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -534,5 +533,4 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wenn Sie weitere Informa
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Video course: C# Fundamentals for Absolute Beginners (Videokurs: C#-Grundlagen für Einsteiger)](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
 * [Tutorial: Debuggen von C#-Code mit Visual Studio](tutorial-debugger.md)

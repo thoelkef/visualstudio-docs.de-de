@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2bb63fefe98426d63a7dd682c8a66c1d9b594c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070551"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909998"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup-Element (MSBuild)
-Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.  
-  
- \<Project>  
- \<ItemGroup>  
-  
-## <a name="syntax"></a>Syntax  
-  
-```xml  
-<ItemGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemGroup>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[Item](../msbuild/item-element-msbuild.md)|Definiert die Eingaben für den Buildprozess. Es kann keine oder mehrere `Item`-Elemente in einer `ItemGroup` geben.|  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
+Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.
+
+\<Project>  
+\<ItemGroup>
+
+## <a name="syntax"></a>Syntax
+
+```xml
+<ItemGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemGroup>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[Item](../msbuild/item-element-msbuild.md)|Definiert die Eingaben für den Buildprozess. Es kann keine oder mehrere `Item`-Elemente in einer `ItemGroup` geben.|
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
 | Element | Beschreibung |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei. |
 | [Target](../msbuild/target-element-msbuild.md) | Ab.NET Framework 3.5 kann das `ItemGroup`-Element innerhalb eines `Target`-Elements angezeigt werden. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md). |
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res` und `CodeFiles` gezeigt, die innerhalb eines `ItemGroup`-Element deklariert sind. Jedes der Elemente in der `Res`-Elementsammlung enthält ein benutzerdefiniertes untergeordnetes [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)-Element.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Res Include = "Strings.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-        <Res Include = "Dialogs.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-  
-        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />  
-        <CodeFiles Include="..\..\Resources\Constants.cs" />  
-    </ItemGroup>  
-...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
- [Elemente](../msbuild/msbuild-items.md)   
- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
+
+## <a name="example"></a>Beispiel
+Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res` und `CodeFiles` gezeigt, die innerhalb eines `ItemGroup`-Element deklariert sind. Jedes der Elemente in der `Res`-Elementsammlung enthält ein benutzerdefiniertes untergeordnetes [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)-Element.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Res Include = "Strings.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+        <Res Include = "Dialogs.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+
+        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />
+        <CodeFiles Include="..\..\Resources\Constants.cs" />
+    </ItemGroup>
+...
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+[Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
+[Elemente](../msbuild/msbuild-items.md)  
+[Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
