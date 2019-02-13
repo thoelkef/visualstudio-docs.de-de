@@ -2,7 +2,6 @@
 title: Einführung in das Bearbeiten von Code für JavaScript-Entwickler
 description: In dieser Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in JavaScript-Code vereinfacht.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -11,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4c272ba3009f3a9e947563cfa8c65843eab57067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034128"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957839"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser kurzen Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in Code vereinfacht.
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 In diesem Artikel wird vorausgesetzt, dass Sie bereits mit der JavaScript-Entwicklung vertraut sind. Wenn dies nicht der Fall ist, sollten Sie sich zunächst ein Tutorial dazu ansehen, z. B.: [Erstellen einer Node.js- und Express-App in Visual Studio](../javascript/tutorial-nodejs.md).
 
