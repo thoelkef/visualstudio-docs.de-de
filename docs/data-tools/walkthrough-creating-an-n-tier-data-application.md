@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung'
+title: 'Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,16 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933014"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-Tier-datenanwendung
 *N-Tier*-Datenanwendungen sind Anwendungen, die auf Daten zugreifen und in mehrere logische Ebenen (oder *Tiers*) aufgeteilt sind. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenebene enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-schichtige datenanwendungen](../data-tools/n-tier-data-applications-overview.md).
 
 Eine Möglichkeit zum Trennen der verschiedenen Ebenen einer N-Tier-Anwendung besteht im Erstellen separater Projekte für jede Ebene, die in der Anwendung enthalten sein soll. Typisierte DataSets enthalten eine `DataSet Project`-Eigenschaft, mit der festgelegt wird, in welche Projekte der erzeugte DataSet-Code und der erzeugte `TableAdapter`-Code eingefügt werden.
@@ -155,7 +154,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, das ursprünglich das gesamte Dataset enthalten (`DataAccessTier`) enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** Eigenschaft (`DataEntityTier`) enthält das typisierte Dataset: *NorthwindDataSet.Dataset.Designer.vb* (oder *NorthwindDataSet.Dataset.Designer.cs*).
+   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, das ursprünglich das gesamte Dataset enthalten (`DataAccessTier`) enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** Eigenschaft (`DataEntityTier`) enthält das typisierte Dataset: *NorthwindDataSet.Dataset.Designer.vb* (oder  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.

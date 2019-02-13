@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031287"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927044"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -48,7 +47,7 @@ So beheben Sie diesen Fehler
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remotedesktop
 
-Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer die folgende Fehlermeldung angezeigt: "Die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
+Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer erhalten die folgende Fehlermeldung angezeigt: "die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
 
 So beheben Sie diesen Fehler
 
