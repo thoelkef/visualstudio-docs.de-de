@@ -1,7 +1,6 @@
 ---
 title: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043595"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946148"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 Es gibt nur ein <xref:System.Windows.Forms.PictureBox> im Formular. Als Sie es hinzugefügt haben, hat die IDE diesem Steuerelement automatisch den Namen **pictureBox1**gegeben. Es gibt nur ein <xref:System.Windows.Forms.CheckBox>, das den Namen **checkBox1** trägt. Bald schreiben Sie einige Codezeilen, die auf das CheckBox- und das PictureBox-Steuerelement verweisen. Da jedes Steuerelement nur einmal vorhanden ist, wissen Sie, was sich hinter den Namen **pictureBox1** oder **checkBox1** im Code verbirgt.
