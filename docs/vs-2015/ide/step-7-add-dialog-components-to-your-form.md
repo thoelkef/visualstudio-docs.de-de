@@ -1,25 +1,20 @@
 ---
 title: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796656"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Dialogfeldkomponenten
 -   Klicken Sie auf [Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Build anzeigen“](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md), um zum nächsten Tutorialschritt zu gelangen.  
   
 -   Klicken Sie auf [Schritt 6: Benennen der Schaltflächen-Steuerelemente](../ide/step-6-name-your-button-controls.md), um zum vorherigen Schritt des Tutorials zurückzugehen.
-
-
-

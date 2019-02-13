@@ -1,13 +1,9 @@
 ---
 title: Erstellen einer Benutzeroberfläche mit dem XAML-Designer
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -17,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795168"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +87,9 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  **Anzeige** Gibt die verschiedenen Anzeigegrößen und Auflösungen für die App an.
 
- **Ausrichtung** gibt die verschiedenen Ausrichtungen für die app: Querformat oder **Hochformat**.
+ **Ausrichtung** Gibt die verschiedenen Ausrichtungen für die App an: **Querformat** oder **Hochformat**.
 
- **Edge** gibt die verschiedenen randausrichtungen für Ihre app an: Beide, **Links**, **Rechts**oder **Keine**.
+ **Rand** Gibt die verschiedenen Randausrichtungen für die App an: **Beide**, **Links**, **Rechts** oder **Keine**.
 
  **Hoher Kontrast** Zeigt eine Vorschau der App anhand der gewählten Kontrasteinstellung an. Diese Einstellung überschreibt, sofern der Wert nicht auf **Standard**festgelegt ist, die in App.xaml. festgelegte `RequestedTheme` -Eigenschaft.
 

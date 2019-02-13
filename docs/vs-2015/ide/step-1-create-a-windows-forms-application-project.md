@@ -1,25 +1,20 @@
 ---
 title: 'Schritt 1: Erstellen ein Windows Forms-Anwendungsprojekts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780468"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
   
 ### <a name="to-create-a-windows-forms-application-project"></a>So erstellen Sie ein Windows Forms-Anwendungsprojekt  
   
-1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus. Das Dialogfeld sollte wie folgt aussehen.  
+1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus. Das Dialogfeld sollte wie folgt aussehen.  
   
      ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png "NeuesProjektDialogfeldLegende")  
 Dialogfeld "Neues Projekt"  
@@ -78,6 +73,3 @@ Schaltfläche "Alle speichern" in der Symbolleiste
 -   Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md).  
   
 -   Wie Sie zum Übersichtsthema zurückkehren, erfahren Sie unter [Tutorial 1: Erstellen eines Bildanzeigeprogramms](../ide/tutorial-1-create-a-picture-viewer.md).
-
-
-

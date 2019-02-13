@@ -1,23 +1,19 @@
 ---
 title: Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9cc93fb1382dba70aedc989a609ac2932cf4f466
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c3b0e7cf2ddc4ada4fe015feba17c5adbcc328d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53901476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803266"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +30,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 >  `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Für datengesteuerte Tests verwendete Elemente
- Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md) und [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
+ Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Komponententests. Weitere Informationen finden Sie unter [How To: Create a Data-Driven Unit Test (Vorgehensweise: Erstellen eines datengesteuerten Komponententests)](../test/how-to-create-a-data-driven-unit-test.md) und [Walkthrough: Using a Configuration File to Define a Data Source (Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle)](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -45,7 +41,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Zum Einrichten einer Aufrufreihenfolge verwendete Attribute
- Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Für Assemblys
  AssemblyInitialize und AssemblyCleanup werden direkt nach dem Laden und direkt vor dem Entladen der Assembly aufgerufen.
@@ -68,7 +64,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Zum Angeben von Testklassen und Testmethoden verwendete Attribute
- Jede Testklasse muss das TestClass-Attribut aufweisen und jede Testmethode das TestMethod-Attribut. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Jede Testklasse muss das TestClass-Attribut aufweisen und jede Testmethode das TestMethod-Attribut. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -122,7 +118,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Mit privaten Accessoren verwendete Klassen
- Wie unter [Using Publicize to Create a Private Accessor (Verwenden von Publicize zum Erstellen eines privaten Accessors)](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb) beschrieben, kann ein Komponententest für eine private Methode erstellt werden. Dabei wird eine private Accessor-Klasse erstellt, die ein Objekt der PrivateObject-Klasse instanziiert. Bei der PrivateObject-Klasse handelt es sich um eine Wrapperklasse, die im Rahmen des Prozesses für den privaten Accessor Reflektionen verwendet. Die PrivateType-Klasse ist ähnlich, unterscheidet sich jedoch insofern, als sie zum Aufrufen von privaten statischen Methoden statt von privaten Instanzmethoden verwendet wird.
+ Wie unter [Using Publicize to Create a Private Accessor (Verwenden von Publicize zum Erstellen eines privaten Accessors)](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb) beschrieben, kann ein Komponententest für eine private Methode erstellt werden. Dabei wird eine private Accessor-Klasse erstellt, die ein Objekt der PrivateObject-Klasse instanziiert. Bei der PrivateObject-Klasse handelt es sich um eine Wrapperklasse, die im Rahmen des Prozesses für den privaten Accessor Reflektionen verwendet. Die PrivateType-Klasse ist ähnlich, unterscheidet sich jedoch insofern, als sie zum Aufrufen von privaten statischen Methoden statt von privaten Instanzmethoden verwendet wird.
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

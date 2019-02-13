@@ -1,14 +1,9 @@
 ---
 title: Seite „Signierung“, Projekt-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
 - ResolveKeySource.KeyFileForSignAssemblyNotImported
@@ -24,13 +19,13 @@ ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263939"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788725"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
   
 ## <a name="assembly-signing"></a>Signieren von Assemblys  
  Kontrollkästchen **Assembly signieren**  
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
  Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] bereitgestellt wurde, um die Assembly zu signieren. Weitere Informationen zu AI.exe finden Sie unter [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
@@ -97,11 +92,8 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="see-also"></a>Siehe auch  
  [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)   
  [Verwalten der Signierung von Assemblys und Manifesten](../../ide/managing-assembly-and-manifest-signing.md)   
- [Signieren mit starkem Namen für verwaltete Anwendungen](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Signieren mit starkem Namen für verwaltete Anwendungen](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
  [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
-
-
-
