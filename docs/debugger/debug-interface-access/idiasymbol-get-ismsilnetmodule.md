@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 593827f3-8437-4a12-ada4-ff715ec95fb2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a04709615d14d7b5bd5d017bce378333d24b2b7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965158"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Ruft ein Flag, der angibt, ob das Modul ist eine NETMODULE-Datei (ein Microsoft Intermediate Language (MSIL)-Modul, das nur die Metadaten und enthält keine systemeigenen Symbole enthält) ab.  

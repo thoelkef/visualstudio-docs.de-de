@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865980"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023576"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Tests mit dem lokalen Computer aus, um sicherzustellen, dass alle erforderlichen Komponenten für eine Anwendung installiert wurden.  
@@ -92,7 +92,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`PackageFile`|Erforderlich. Das externe Programm ausgeführt werden soll. Das Programm muss Teil des Setuppakets Verteilung sein.|  
 |`Arguments`|Dies ist optional. Gibt Befehlszeilenargumente an die ausführbare Datei mit dem Namen von `PackageFile`.|  
 
-## <a name="filecheck"></a>Menüoptionen Datei  
+## <a name="filecheck"></a>FileCheck  
  Dieses Element ist ein optionales untergeordnetes Element des `InstallChecks`. Für jede Instanz der `FileCheck`, der Bootstrapper bestimmen, ob die angegebene Datei vorhanden ist, und geben Sie die Versionsnummer der Datei zurück. Wenn Sie eine Versionsnummer in der Datei nicht vorhanden ist, legt der Bootstrapper die Eigenschaft mit dem Namen von `Property` auf 0. Wenn die Datei nicht vorhanden ist, `Property` nicht auf einen beliebigen Wert festgelegt ist.  
 
  `FileCheck` keine Elemente enthält, und weist folgende Attribute.  
@@ -168,7 +168,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |Eigenschaft|Hinweise|Mögliche Werte|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Die Versionsnummer des Betriebssystems Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Die Versionsnummer des Betriebssystems Windows NT-basierten.|"Major.minor.Servicepack"<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = WindowsServer 2003|  
+|`VersionNT`|Die Versionsnummer des Betriebssystems Windows NT-basierten.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = WindowsServer 2003|  
 |`VersionNT64`|Die Versionsnummer eines 64-Bit-Windows NT-basierten Windows-Betriebssystems.|Wie bereits zuvor erwähnt.|  
 |`VersionMsi`|Die Versionsnummer des Windows Installer-Diensts.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Gibt an, ob ein Benutzer über Administratorrechte auf einem Windows NT-basierten Betriebssystem verfügt.|0 = keine Administratorrechte<br /><br /> 1 = Administratorrechte|  

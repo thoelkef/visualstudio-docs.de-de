@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009894"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ in Visual Studio-debugger
 Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch** mithilfe von Formatbezeichnern.  
@@ -74,7 +74,7 @@ int main() {
 |su|Unicode (UTF-16-Codierung)-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort > L "Hello World"|hello world|  
 |bstr|Binärer BSTR-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > L "Hello World"|L"hello world"|  
-|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<Speicherort > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\Windows\\\\" System32 "\\0ALLUSERSPROFILE =...|
+|env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\Windows\\\\" System32 "\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort > U "Hello World"|u"hello world"|  
 |**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|  
 |**en**|enum|Samstag(6)|Samstag|  

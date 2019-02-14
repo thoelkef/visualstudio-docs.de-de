@@ -1,14 +1,9 @@
 ---
 title: Installieren und Verwalten von lokalen Inhalten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -28,13 +23,13 @@ ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766223"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
     -   Geben Sie den Pfad einer MSHA-Datei oder die URL eines Dienstendpunkts ein.  
   
-    -   Wählen Sie die Schaltfläche zum Durchsuchen (**...** ), um zu einer msha-Datei zu wechseln.  
+    -   Klicken Sie auf die Schaltfläche „Durchsuchen“ (**…**), um zu einer MSHA-Datei zu navigieren.  
   
     -   Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.  
   
@@ -131,6 +126,3 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 ## <a name="see-also"></a>Siehe auch  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
-
-
-

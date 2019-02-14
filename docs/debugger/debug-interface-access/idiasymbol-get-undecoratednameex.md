@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928828"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Ruft teilweise oder vollständig einen nicht ergänzten Namen für eine C++ versehen (Bindung) Namen.  
@@ -59,9 +59,9 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Deaktiviert die Erweiterung des Modells Deklaration.|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Deaktiviert die Erweiterung der Sprache deklarationsspezifizierer.|  
 |UNDNAME_RESERVED1|0x0020|RESERVIERT.|  
-|UNDNAME_RESERVED2|0 x 0040|RESERVIERT.|  
+|UNDNAME_RESERVED2|0x0040|RESERVIERT.|  
 |UNDNAME_NO_THISTYPE|0x0060|Deaktiviert alle Modifizierer auf der `this` Typ.|  
-|UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Deaktiviert die Erweiterung der Zugriffsspezifizierer für Member.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Deaktiviert die Erweiterung der Zugriffsspezifizierer für Member.|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Deaktiviert die Erweiterung "Throw-Signaturen" für Funktionen und Zeigern auf Funktionen.|  
 |UNDNAME_NO_MEMBER_TYPE|0x0200|Deaktiviert die Erweiterung der `static` oder `virtual` Member.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Deaktiviert die Erweiterung des Modells Microsoft zur UDT zurückgibt.|  
@@ -71,7 +71,7 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_HAVE_PARAMETERS|0x4000|Die tatsächlichen Vorlagenparameter sind verfügbar.|  
 |UNDNAME_NO_ECSU|0x8000|Unterdrückt die Enumeration/Klasse/Struktur/Union.|  
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Unterdrückt die Überprüfung auf gültige Bezeichnerzeichen.|  
-|UNDNAME_NO_PTR64|0 x 20000|Umfasst keine ptr64 in der Ausgabe.|  
+|UNDNAME_NO_PTR64|0x20000|Umfasst keine ptr64 in der Ausgabe.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

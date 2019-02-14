@@ -1,14 +1,9 @@
 ---
 title: Vbc-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802188"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) des Compilers „vbc.exe“.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht dem Schalter [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) des Compilers „vbc.exe“.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Optional, [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
+|`LangVersion`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String-Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
 |`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) des Compilers „vbc.exe“.|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht dem [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)-Schalter des Compilers „vbc.exe“.|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört.|  
@@ -76,7 +71,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`OutputAssembly`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Namen der Ausgabedatei an. Dieser Parameter entspricht dem Schalter [/out](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) des Compilers „vbc.exe“.|  
 |`Platform`|Optionaler `String` -Parameter.<br /><br /> Gibt die Prozessorplattform an, die das Ziel der Ausgabedatei darstellen soll. Dieser Parameter kann den Wert `x86`, `x64`, `Itanium` oder `anycpu` aufweisen. Der Standardwert ist `anycpu`. Dieser Parameter entspricht dem Schalter [/platform](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1) des Compilers „vbc.exe“.|  
 |`References`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Dieser Parameter entspricht dem Schalter [/reference](http://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737) des Compilers „vbc.exe“.|  
-|`RemoveIntegerChecks`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Fehlerüberprüfungen auf Ganzzahlüberlauf deaktiviert. Der Standardwert ist `false`. Dieser Parameter entspricht dem [/removeintchecks](http://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) Schalter des Compilers „vbc.exe“.|  
+|`RemoveIntegerChecks`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Fehlerüberprüfungen auf Ganzzahlüberlauf deaktiviert. Der Standardwert ist `false`sein. Dieser Parameter entspricht dem [/removeintchecks](http://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) Schalter des Compilers „vbc.exe“.|  
 |`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bettet eine .NET Framework-Ressource in die Ausgabedatei ein. Dieser Parameter entspricht dem Schalter [/resource](http://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) des Compilers „vbc.exe“.|  
 |`ResponseFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Dieser Parameter entspricht der Option [@ (Antwortdatei angeben)](http://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca) des Compilers „vbc.exe“.|  
 |`RootNamespace`|Optionaler `String` -Parameter.<br /><br /> Gibt den Stammnamespace für alle Typdeklarationen an. Dieser Parameter entspricht dem Schalter [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783) des Compilers „vbc.exe“.|  
@@ -113,6 +108,3 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
  [Visual Basic-Befehlszeilencompiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

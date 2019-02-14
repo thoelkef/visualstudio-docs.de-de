@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995686"
 ---
 # <a name="application-deployment-prerequisites"></a>Vorbedingungen für die Anwendungsbereitstellung
 
@@ -45,10 +45,10 @@ Damit Ihre Anwendung erfolgreich installiert und ausgeführt, müssen Sie zunäc
 
 - Die Mindestversion aller Assemblys, die im globalen Assemblycache (GAC), gemäß der Assembly Abhängigkeit Deklarationen im Assemblymanifest vorinstalliert werden müssen.  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann fehlende erforderliche Komponenten bestimmen, und Sie können erforderliche Komponenten mit einem Bootstrapper installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann fehlende erforderliche Komponenten bestimmen, und Sie können erforderliche Komponenten mit einem Bootstrapper installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
 
 > [!NOTE]
->  Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und *MageUI.exe* generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und *MageUI.exe* generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
 
  Wenn Sie Visual Studio und ClickOnce für die Bereitstellung der Anwendung verwenden, hängen die standardmäßig ausgewählten Bootstrapperpakete von der .NET Framework-Version in der Projektmappe ab. Wenn Sie jedoch die .NET Framework-Zielversion ändern, müssen Sie die Optionen im Dialogfeld **Erforderliche Komponenten** manuell aktualisieren.  
 
@@ -75,10 +75,10 @@ Damit Ihre Anwendung erfolgreich installiert und ausgeführt, müssen Sie zunäc
 | Befehlszeilenargument | Beschreibung |
 | - | - |
 | **-?, -h, -help** | Zeigt das Dialogfeld der Hilfe an. |
-| **-Url - Componentsurl** | Zeigt die gespeicherte URL und Komponenten-URLs für diese Installation an. |
-| **-Url =** `location` | Legt die URL fest, bei der *Setup.exe* nach der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung sucht. |
-| **-Componentsurl =** `location` | Legt die URL fest, bei der *Setup.exe* nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sucht. |
-| **-Homesite =** `true`**&#124;** `false` | Wenn `true`, lädt die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters herunter. Diese Einstellung überschreibt die **- Componentsurl** festlegen. Wenn `false`, die Abhängigkeiten aus dem vom angegebenen URL heruntergeladen **- Componentsurl**. |
+| **-url, -componentsurl** | Zeigt die gespeicherte URL und Komponenten-URLs für diese Installation an. |
+| **-url=** `location` | Legt die URL fest, bei der *Setup.exe* nach der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung sucht. |
+| **-componentsurl=** `location` | Legt die URL fest, bei der *Setup.exe* nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sucht. |
+| **-homesite=** `true` **&#124;** `false` | Wenn `true`, lädt die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters herunter. Diese Einstellung überschreibt die **- Componentsurl** festlegen. Wenn `false`, die Abhängigkeiten aus dem vom angegebenen URL heruntergeladen **- Componentsurl**. |
 
 ## <a name="operating-system-support"></a>Unterstützte Betriebssysteme  
  Visual Studio-Bootstrappers wird auf Windows Server 2008 Server Core oder Windows Server 2008 R2 Server Core nicht unterstützt, wie eine wartungsarme serverumgebung mit eingeschränkter Funktionalität bieten. Die Server Core-Installationsoption unterstützt beispielsweise nur das .NET Framework 3.5 Server Core-Profil, in dem Visual Studio-Funktionen nicht ausgeführt werden kann, die das vollständige .NET Framework abhängig.  

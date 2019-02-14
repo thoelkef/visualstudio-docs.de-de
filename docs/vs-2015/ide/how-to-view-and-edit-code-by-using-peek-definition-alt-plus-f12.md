@@ -1,32 +1,27 @@
 ---
-title: 'Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt + F12) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777302"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.  
   
- Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic **"Definition einsehen"** zeigt eine Verknüpfung mit der **Objektkatalog** für Symbole ohne Definition Metadaten (z. B. .NET Framework-Typen, die integriert sind).  
+ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic zeigt **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten an (z.B. integrierte .NET Framework-Typen).  
   
 > [!IMPORTANT]
 >  Sie können diesen Befehl in einer Express-Version von Visual Studio 2013 nicht verwenden.  
@@ -85,6 +80,3 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
   
 ## <a name="see-also"></a>Siehe auch  
  [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
-
-
-

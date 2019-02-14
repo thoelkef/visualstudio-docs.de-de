@@ -1,25 +1,20 @@
 ---
 title: Ändern des Stils von Objekten in Blend | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781374"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 ##  <a name="Brushes"></a> Pinsel: Ändern des Erscheinungsbilds einen Objekts  
  Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden soll.  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Brushes Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Pinsel-Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt  
  Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt mithilfe des *Kacheleffekts*.  
@@ -60,7 +55,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Kachelpinsel](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
 ##  <a name="Styles"></a> Stile und Vorlagen: Erstellen eines konsistenten Aussehens und Verhaltens für Steuerelemente  
  Sie entwerfen die Darstellung und das Verhalten eines Steuerelements einmal und wenden diesen Entwurf auf andere Steuerelemente an, sodass Sie sie nicht einzeln verwalten müssen.  
@@ -84,7 +79,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   
 - Wählen Sie **Leere erstellen**, um von Grund auf neu zu starten.  
   
-  Die **aktuelle bearbeiten** Option nur angezeigt, wenn Sie bearbeiten, einen Stil oder eine Vorlage, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
+  Die Option **Aktuelle bearbeiten** erscheint nur, wenn Sie einen Stil oder eine Vorlage bearbeiten, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
   
   Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die Vorlage so benennen, dass sie später verwendet werden kann, oder Sie können den Stil oder die Vorlage auf alle Steuerelemente des Typs anwenden.  
   
@@ -97,34 +92,31 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create a style](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Erstellen eines Stils](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Creating a Control Template in Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [erstellen eine Steuerelementvorlage in Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Anwenden von Stilen oder Vorlagen für ein Steuerelement  
- Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden**.  
+ Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements  
- Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
+ Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
   
 ##  <a name="Visual"></a> Visuelle Zustände: Ändern des Erscheinungsbilds eines Steuerelements basierend auf dessen Status  
  Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie könnten eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Manage the state of your WPF controls](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Verwalten des Zustands der WPF-Steuerelemente](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a> Ressourcen: Künftige erneute Verwendung von Farben, Stilen und Vorlagen  
  Sie können fast alles in Ihrem Projekt in eine Ressource konvertieren. Eine Ressource ist ein Objekt, das an unterschiedlichen Stellen in Ihrer Anwendung wiederverwendet werden kann. Sie können z. B. eine Farbe einmal erstellen, sie in eine Ressource konvertieren und dann diese Farbe auf mehrere Objekte anwenden. Um die Farbe aller dieser Objekte zu ändern, ändern Sie einfach die Farbressource.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen ](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [eine kurze Fingereingabe auf Ressourcen](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

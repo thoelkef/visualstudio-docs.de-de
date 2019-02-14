@@ -1,14 +1,9 @@
 ---
 title: 'DA0012: Starke Reflektion | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -18,13 +13,13 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9cea0faef4a0ee46b2fba0ea5c5bbbcd91e43bfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770772"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Starke Reflektion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51739517"
 Regel-Id | DA0012 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  
-| Nachricht | Sie können Reflektion übermäßig verwendet werden. Es ist ein kostenintensiver Vorgang. |  
+| Nachricht | Sie können Reflektion übermäßig verwendet werden. Dieser Vorgang ist äußerst speicherintensiv.  
 | Regeltyp | Warnung |  
   
 ## <a name="cause"></a>Ursache  
@@ -45,6 +40,3 @@ Regel-Id | DA0012 |
   
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur [Funktionsdetailansicht](../profiling/function-details-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie in den aufrufenden Funktionen der System.Type-Methode oder der System.Reflection-Methode nach Programmabschnitten, von denen die .NET-Reflektions-APIs am häufigsten verwendet werden. Vermeiden Sie die Verwendung von Methoden, von denen Metadaten zurückgegeben werden. Wenn es auf die Leistung der Anwendung ankommt, sollten Sie möglichst keine späte Bindung verwenden und Typen nicht zur Laufzeit dynamisch erstellen.
-
-
-

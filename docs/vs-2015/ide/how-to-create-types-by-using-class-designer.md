@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen von Typen mit Klassen-Designer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772153"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Gewusst wie: Erstellen von Typen mit dem Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|  
     |Enumerationen|Feldwerte, die die Enumeration bilden|  
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|  
-    |Delegate|Parameter, die den Delegaten definieren|  
+    |delegate|Parameter, die den Delegaten definieren|  
     |Modul|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode) und Konstanten, die das Modul definieren|  
   
      Weitere Informationen finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -84,7 +79,7 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
   
 1.  Klicken Sie in einem Klassendiagramm auf die Form des Typs.  
   
-2.  Klicken Sie im Eigenschaftenfenster neben der **benutzerdefinierte Attribute** -Eigenschaft für den Typ, klicken Sie auf die Schaltfläche mit den Auslassungspunkten (...).  
+2.  Klicken Sie im Eigenschaftenfenster neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit dem Auslassungszeichen (…).  
   
 3.  Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.  
   
@@ -106,6 +101,3 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
  [Erstellen und Konfigurieren von Typmembern (Klassen-Designer)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)   
  [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

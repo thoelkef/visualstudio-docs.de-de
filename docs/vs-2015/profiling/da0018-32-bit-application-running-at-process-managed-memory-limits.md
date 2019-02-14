@@ -1,14 +1,9 @@
 ---
 title: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773286"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722259"
 Regel-Id | DA0018 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Die verwalteten speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Ihre Anwendung ist möglicherweise speichergebunden. |  
+| Nachricht | Die verwalteten speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.  
 | Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -59,7 +54,7 @@ Regel-Id | DA0018 |
   
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-   - oder -   
+   - oder -  
   
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   
@@ -74,6 +69,3 @@ Regel-Id | DA0018 |
   Wenn Sie den architektonischen Einschränkungen für virtuellen Arbeitsspeicher hinsichtlich der Größe des privaten Teils eines Prozessadressbereichs entgehen möchten, führen Sie diesen 32-Bit-Prozess auf einem 64-Bit-Computer aus.  Einem 32-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 4 GB an privatem, virtuellem Arbeitsspeicher zur Verfügung.  
   
   Einem 64-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 8 TB an virtuellem Arbeitsspeicher zur Verfügung. Kompilieren Sie die Anwendung neu, um sie als native 64-Bit-Anwendung auszuführen. Diese Regel dient nur als Information. Möglicherweise sind keine Korrekturmaßnahmen erforderlich.
-
-
-

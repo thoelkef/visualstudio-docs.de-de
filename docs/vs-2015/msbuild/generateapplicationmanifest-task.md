@@ -1,14 +1,9 @@
 ---
 title: GenerateApplicationManifest-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245569"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756583"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +45,10 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
 |`Dependencies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Elementliste an, die die abhängigen Assemblys für das generierte Manifest definiert. Jedes Element wird ggf. anhand von Elementmetadaten näher beschrieben, um zusätzlich den Bereitstellungszustand und den Typ der Abhängigkeit anzugeben. Weitere Informationen finden Sie im Abschnitt "Elementmetadaten" weiter unten.|  
 |`Description`|Optionaler `String` -Parameter.<br /><br /> Gibt die Beschreibung der Anwendung oder Komponente an.|  
 |`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt ein einzelnes Element an, das den Einstiegspunkt für die generierte Manifestassembly bezeichnet.<br /><br /> Bei einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsmanifest gibt dieser Parameter die Assembly an, die gestartet wird, wenn die Anwendung ausgeführt wird.|  
-|`ErrorReportUrl`|Optional, [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
+|`ErrorReportUrl`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String-Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
 |`FileAssociations`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Liste mit mindestens einem Dateityp an, der dem ClickOnce-Bereitstellungsmanifest zugeordnet ist.<br /><br /> Dateizuordnungen sind nur gültig, wenn als Ziel .NET Framework 3.5 oder höher verwendet wird.|  
 |`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Dateien, die in das Manifest eingeschlossen werden sollen. Geben Sie den vollständigen Pfad für jede Datei an.|  
-|`HostInBrowser`|Optional, [boolescher Wert] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
+|`HostInBrowser`|Optionaler [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
 |`IconFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Anwendungssymboldatei an. Das Anwendungssymbol wird im generierten Anwendungsmanifest ausgedrückt und im Startmenü sowie im Dialogfeld Software verwendet. Erfolgt diese Angabe nicht, wird ein Standardsymbol verwendet. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`InputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt ein Eingabe-XML-Dokument an, das als Basis für den Manifestgenerator dienen soll. Dadurch können strukturierte Daten, z. B. für Anwendungssicherheit oder benutzerdefinierte Manifestdefinitionen, im Ausgabemanifest dargestellt werden. Das Stammelement im XML-Dokument muss ein Assemblyknoten im "asmv1"-Namespace sein.|  
 |`IsolatedComReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt COM-Komponenten an, die im generierten Manifest isoliert werden sollen. Dieser Parameter unterstützt das Isolieren von COM-Komponenten für die Bereitstellung über "COM-Interop ohne Registrierung". Zu diesem Zweck wird automatisch ein Manifest mit standardmäßigen COM-Registrierungsdefinitionen generiert. Die COM-Komponenten müssen jedoch auf dem Buildcomputer registriert werden, damit dies ordnungsgemäß funktioniert.|  
@@ -363,6 +358,3 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
  [GenerateDeploymentManifest Task (GenerateDeploymentManifest-Aufgabe)](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile-Aufgabe](../msbuild/signfile-task.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-
