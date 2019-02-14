@@ -1,13 +1,9 @@
 ---
-title: 'Vorgehensweise: Ändern von Schriftarten und Farben'
-ms.custom: ''
+title: 'Gewusst wie: Ändern von Schriftarten und Farben'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -15,21 +11,21 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53915360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760346"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Gewusst wie: Ändern von Schriftarten und Farben in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf verschiedene Arten anpassen.
 
 > [!TIP]
->  Informationen zum Ändern der Farben des Code-Editors finden Sie unter [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Informationen zum Ändern der Farben im Code-Editor finden Sie unter [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Ändern des Farbschemas der IDE
 

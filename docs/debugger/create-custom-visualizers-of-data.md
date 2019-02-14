@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204387"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009046"
 ---
 # <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Daten-Schnellansichten
  Ein *Schnellansicht* ist Teil der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugger-Benutzeroberfläche, die eine Variable oder ein Objekt in einer entsprechend seinem Datentyp angezeigt. Beispielsweise wird eine HTML-Schnellansicht eine HTML-Zeichenfolge interpretiert und das Ergebnis zeigt, wie es in einem Browserfenster angezeigt wird. Eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die Grafik aus, die es darstellt. Einige Schnellansichten können Sie sowie das Anzeigen der Daten ändern.
@@ -58,7 +58,7 @@ Sie können eine Schnellansicht für einen generischen Typ erstellen, nur dann, 
   
 In benutzerdefinierten Schnellansichten treten möglicherweise Sicherheitsprobleme auf. Finden Sie unter [sicherheitsüberlegungen zu Schnellansichten](../debugger/visualizer-security-considerations.md).  
   
-Die folgenden Schritte bieten einen allgemeinen Überblick über die Schnellansicht erstellen. Ausführliche Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic  
+Die folgenden Schritte bieten einen allgemeinen Überblick über die Schnellansicht erstellen. Ausführliche Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oder [Exemplarische Vorgehensweise: Schreiben eine Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
   
 ### <a name="to-create-the-debugger-side"></a>So erstellen Sie die Debuggerseite  
   
@@ -86,9 +86,9 @@ Sie geben zu debuggende Code mit der <xref:System.Diagnostics.DebuggerVisualizer
 
  [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)  
+ [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)  
   
- [Vorgehensweise: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Gewusst wie: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Referenz zur Schnellansicht-API](../debugger/visualizer-api-reference.md)  
   
