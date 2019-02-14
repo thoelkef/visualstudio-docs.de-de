@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53821314"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043764"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
 
@@ -28,7 +28,7 @@ Die Funktionen zur Bereitstellung von Visual Studio erstellt und registriert UWP
 
 - Handelt es sich bei dem Ziel um ein Remotegerät, kopiert Visual Studio die erforderlichen Dateien auf den Remotecomputer und registriert anschließend die App auf dem Gerät.
 
-Die Bereitstellung erfolgt automatisch, wenn Sie Ihre App von Visual Studio aus mit der Option Debuggen starten** debuggen (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: STRG + F5 Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
+Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: STRG + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
 
 - Ad-Hoc-Tests auf einem lokalen oder Remotecomputer.
 

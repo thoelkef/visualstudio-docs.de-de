@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa48ff41739752ff37817192b26483a23579419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45e4fb01613ab3d1ea2a5d521abccf81471a89bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829472"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985765"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen für das Debuggen
 
@@ -166,7 +166,7 @@ Visual Studio warnt Sie bei Verwendung einer benutzerdefinierten Debuggerschnell
 Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.
 
 **UI-Debugtools für XAML aktivieren**:  
-Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).
+Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (**F5**). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).
 
 - **Voransicht für ausgewählte Elemente in der visuellen Echtzeitstruktur anzeigen**:  
     Das XAML-Element, dessen Kontext ausgewählt ist, ist auch im Fenster **Visuelle Echtzeitstruktur** ausgewählt.

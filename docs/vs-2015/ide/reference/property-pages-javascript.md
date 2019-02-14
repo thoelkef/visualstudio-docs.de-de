@@ -1,14 +1,9 @@
 ---
 title: Eigenschaftenseiten, JavaScript | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
 - javascript.project.property.debugging.requireauthentication
@@ -21,13 +16,13 @@ ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768141"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  Verwenden Sie die folgenden Optionen zum Auswählen der anzuzeigenden bzw. zu ändernden Konfiguration und Plattform.  
   
  **Konfiguration**  
- Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)**, **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)**, **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Plattform**  
- Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Seite "Allgemein"  
  Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.  
@@ -59,7 +54,7 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  **Ausgabepfad**  
  Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".  
   
- Bei Verwendung vereinfachter Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Wenn Sie auf **Debuggen**, **Debuggen starten** klicken (oder F5 drücken), wird der Build unabhängig vom angegebenen **Ausgabepfad** am Speicherort für das Debuggen abgelegt. Mit dem Befehl **Projektmappe erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Um erweiterte Buildkonfigurationen zu aktivieren, wählen Sie in der Menüleiste die Optionen **Extras**, **Optionen** aus. Erweitern Sie im Dialogfeld **Optionen** die Option **Projekte und Projektmappen**, wählen Sie **Allgemein** aus, und heben Sie anschließend die Markierung des Kontrollkästchens **Erweiterte Buildkonfigurationen anzeigen** auf. Dadurch erlangen Sie die manuelle Steuerung aller Konfigurationswerte, und Sie können festlegen, ob eine Debug- oder eine Releaseversion erstellt werden soll. Weitere Informationen finden Sie unter [NIB: Allgemein, Projekte und Projektmappen, Dialogfeld Optionen](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Bei Verwendung vereinfachter Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Wenn Sie auf **Debuggen**, **Debuggen starten** klicken (oder F5 drücken), wird der Build unabhängig vom angegebenen **Ausgabepfad** am Speicherort für das Debuggen abgelegt. Mit dem Befehl **Projektmappe erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Um erweiterte Buildkonfigurationen zu aktivieren, wählen Sie in der Menüleiste die Optionen **Extras**, **Optionen** aus. Erweitern Sie im Dialogfeld **Optionen** die Option **Projekte und Projektmappen**, wählen Sie **Allgemein** aus, und heben Sie anschließend die Markierung des Kontrollkästchens **Erweiterte Buildkonfigurationen anzeigen** auf. Dadurch erlangen Sie die manuelle Steuerung aller Konfigurationswerte, und Sie können festlegen, ob eine Debug- oder eine Releaseversion erstellt werden soll. Weitere Informationen finden Sie unter [NIB: Allgemein, Projekte und Projektmappen, Dialogfeld Optionen](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Standardsprache**  
  Gibt die Standardsprache für das Projekt an. Die Sprachenoption, die unter **Zeit, Sprache und Region** in der Systemsteuerung ausgewählt ist, gibt die bevorzugte Sprache des Benutzers an. Mit der Angabe einer Standardsprache für das Projekt kann überprüft werden, ob die angegebenen Standardsprachressourcen verwendet werden, wenn die bevorzugte Sprache des Benutzers nicht mit den in der Anwendung bereitgestellten Sprachressourcen übereinstimmt.  
@@ -93,6 +88,3 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
   
   **Authentifizierung erforderlich**  
   Gibt an, ob für den Remotecomputer eine Authentifizierung erforderlich ist. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.
-
-
-

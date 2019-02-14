@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 05d2a2cbd3cfe59b1d110fdd8b0b7c5fd042d25c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934896"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937326"
 ---
-# <a name="how-to-attach-to-script"></a>Vorgehensweise: Anfügen an ein Skript
+# <a name="how-to-attach-to-script"></a>Gewusst wie: Anfügen an ein Skript
 In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen manuell an eine Skriptdatei angefügt wird.  
   
 ### <a name="to-attach-to-a-running-process"></a>So fügen Sie einen Profiler an einen laufenden Prozess an  
@@ -42,7 +42,7 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
   
 3. Klicken Sie auf den Prozess, mit dem eine Verbindung hergestellt werden soll.  
   
-4. In der **Anfügen an** Feld sollte **Skriptcode** oder **automatische: Skriptcode Wenn etwas anderes angezeigt wird, führen Sie die folgenden Schritte aus:  
+4. In der **Anfügen an** Feld sollte **Skriptcode** oder **automatisch: Skriptcode**. Wenn etwas anderes angezeigt wird, führen Sie die folgenden Schritte aus:  
   
    1.  Klicken Sie auf **Auswählen**.  
   
@@ -52,7 +52,7 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
   
 5. Klicken Sie auf **Anfügen**aus.  
   
-    Zu diesem Zeitpunkt kann eine Warnung mit dem Hinweis ausgegeben werden, dass das Skriptdebuggen in Internet Explorer deaktiviert ist. In diesem Fall finden Sie unter [Warnung: Skriptdebuggen deaktiviert  
+    Zu diesem Zeitpunkt kann eine Warnung mit dem Hinweis ausgegeben werden, dass das Skriptdebuggen in Internet Explorer deaktiviert ist. In diesem Fall finden Sie unter [Warnung: Skriptdebugging deaktiviert](../debugger/warning-script-debugging-disabled.md).  
   
    Die Liste **Verfügbare Prozesse** wird beim Öffnen des Dialogfelds **Prozesse** automatisch angezeigt. Prozesse können bei geöffnetem Dialogfeld im Hintergrund gestartet und angehalten werden. Deshalb ist der Inhalt u. U. nicht immer aktuell. Sie können diese Liste jederzeit aktualisieren, um die aktuelle Liste der Prozesse anzuzeigen. Klicken Sie dazu auf die Schaltfläche **Aktualisieren**.  
   
@@ -61,7 +61,7 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
    Alle Ausführungsbefehle des Menüs **Debuggen** wirken sich auf das aktive Programm aus. Sie können jedes debuggte Programm über das Dialogfeld "Prozesse" unterbrechen. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
->  Beim Versuch, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
+>  Beim Versuch, eine Verbindung mit einem Prozess herzustellen, der zu einem nicht vertrauenswürdigen Benutzerkonto gehört, wird ein Bestätigungsdialogfeld mit einer Sicherheitswarnung angezeigt. Weitere Informationen finden Sie unter [Sicherheitswarnung: Anfügen an einen Prozess von einem nicht vertrauenswürdigen Benutzer gehört, kann riskant sein. Wenn Sie die folgende Informationen verdächtig wirken oder Sie nicht sicher sind, nicht für diesen Prozess anfügen](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
  In einigen Fällen werden beim Debuggen in einer Terminaldienstesitzung (Remotedesktop) in der Liste Verfügbare Prozesse nicht alle verfügbaren Prozesse angezeigt. Wenn Visual Studio unter [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] oder höher mit einem eingeschränkten Benutzerkonto ausgeführt wird, werden in der Liste Verfügbare Prozesse keine Prozesse in Sitzung 0 angezeigt, die für Dienste und andere Serverprozesse einschließlich w3wp.exe verwendet wird. Sie können dieses Problem beheben, indem Sie Visual Studio unter einem Administratorkonto oder an der Serverkonsole, und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit eine Verbindung mit dem Prozess herstellen, indem Sie „vsjitdebugger.exe -p ProcessId“ in der Windows-Befehlszeile eingeben. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um die Datei „tlist.exe“ abzurufen, laden Sie die Debugtools für Windows von [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/) herunter und installieren diese.  
   
