@@ -1,26 +1,21 @@
 ---
 title: Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782658"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
 2.  Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![„Code Coverage-Färbung anzeigen“-Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Code Coverage-Färbung anzeigen**.  
   
-     Um die Farben zu ändern oder den Text fett formatiert anzuzeigen, wählen Sie **Extras**, **Optionen**, **Umgebung**, **Schriftarten und Farben** und **Einstellungen anzeigen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.  
+     Um die Farben zu ändern, oder um Text fett formatiert anzuzeigen, wählen **Tools**, **Optionen**, **Umgebung**, **Schriftarten und Farben**, **anzeigen Einstellungen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.  
   
 3.  Wenn die Ergebnisse eine niedrige Abdeckung anzeigen, untersuchen Sie, welche Teile des Codes nicht ausgeführt werden, und schreiben Sie weitere Tests, um diese abzudecken. Entwicklungsteams streben normalerweise eine Codeabdeckung von ca. 80 % an. In einigen Situationen ist eine geringere Abdeckung akzeptabel. Beispielsweise ist eine geringere Abdeckung akzeptabel, wenn ein Teil des Codes aus einer Standardvorlage generiert wird.  
   
@@ -101,7 +96,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Ausschließen von Elementen aus den Codeabdeckungsergebnissen  
  Sie können bestimmte Elemente im Code aus den Abdeckungsergebnissen ausschließen, zum Beispiel, wenn der Code aus einer Textvorlage generiert wird. Fügen Sie das `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage`-Attribut zu einem der folgenden Codeelemente hinzu: Klasse, Struktur, Methode, Eigenschaft-Setter oder -Getter oder Ereignis. Beachten Sie, dass durch das Ausschließen einer Klasse nicht deren abgeleitete Klassen ausgeschlossen werden.  
   
- Zum Beispiel:  
+ Beispiel:  
   
 ```csharp  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-   - <em>Es ist jedoch kein Feld mit dem Namen **ausführen Einstellungen Dateityp</em>*. *  
+   - <em>Es ist jedoch kein Feld mit dem Namen *Type of Run Settings File</em> (Typ der Laufzeiteinstellungsdatei) vorhanden.*  
   
       Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)   
  [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md)   
  [Komponententest für Code](../test/unit-test-your-code.md)
-
-
-

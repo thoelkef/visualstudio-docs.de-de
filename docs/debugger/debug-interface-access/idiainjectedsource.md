@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a29c4b3dbf4541f11770c4bc32eb922f120325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0d57b23f83171d4d220a87a27df67f42e82fd14c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935997"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Greift auf eingefügt, in der DIA-Datenquelle gespeicherten Quellcodes.  
@@ -117,7 +117,7 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

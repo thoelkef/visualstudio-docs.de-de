@@ -1,25 +1,20 @@
 ---
 title: Verwenden von Visual Studio Tools für Unity | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777380"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 3.  Suchen Sie die Methode, die überladen werden soll. Beginnen Sie im Fenster "Skriptmethode erstellen" mit der Eingabe des Namens der Methode in das Textfeld. Eine Liste der Methoden, deren Namen mit Ihrer Eingabe übereinstimmen, wird angezeigt.  
   
-4.  Wählen Sie die Methode, die überladen werden soll. Wenn Sie die gewünschte Methode in der Liste angezeigt wird, wählen Sie sie mit der Maus oder den Pfeiltasten aus, und drücken Sie dann die **EINGABETASTE**. Wenn dies die einzige Methode in der Liste ist, können Sie nur drücken **EINGABETASTE**. Die Methode wird in Ihren Code eingefügt.  
+4.  Wählen Sie die Methode, die überladen werden soll. Wenn Sie die gewünschte Methode in der Liste angezeigt wird, wählen Sie sie mit der Maus oder den Pfeiltasten aus, und drücken Sie dann die **EINGABETASTE**. Wenn die Liste nur eine Methode enthält, können Sie einfach die **EINGABETASTE** drücken. Die Methode wird in Ihren Code eingefügt.  
   
 ### <a name="unity-project-explorer"></a>Unity-Projekt-Explorer  
  Im Unity-Projekt-Explorer können Sie innerhalb von Visual Studio zu Ihrem Unity-Projekt navigieren.  
@@ -193,4 +188,3 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
      Die PDB-Dateien sind für das Debuggen erforderlich, da sie Debugsymbole der DLL enthalten und den DLL-Code seiner Quellcodeform zuordnen. Visual Studio-Tools für Unity verwendet Informationen aus der DLL- und PDB-Datei, um eine DLL.MDB-Datei zu erstellen. Dies ist das Debugsymbolformat, das von der Unity-Skript-Engine verwendet wird.  
   
 4. Debuggen Sie Ihren Code. Sie können jetzt Ihren DLL-Quellcode zusammen mit dem Quellcode Ihres Unity-Projekts debuggen und alle vertrauten Debuggingfunktionen nutzen, d. h. Haltepunkte setzen und Code schrittweise durchlaufen.
-

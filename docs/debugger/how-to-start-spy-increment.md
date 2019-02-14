@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f121bf823a65999b3c43f14f8e3e10d274a78c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84e16c5d540aa59ae0c5d56ccb311618ab311bd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993456"
 ---
-# <a name="how-to-start-spy"></a>Vorgehensweise: Starten von Spy++
+# <a name="how-to-start-spy"></a>Gewusst wie: Starten von Spy++
 
 Sie können Spy++ aus Visual Studio oder an einer Eingabeaufforderung starten.  
   
@@ -48,7 +48,7 @@ Da Spy++ unabhängig voneinander ausgeführt wird, nachdem Sie ihn starten, kön
   
 1.  Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel ist der Pfad zu diesem Ordner... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.  
   
-2.  Geben Sie **spyxx.exe**. 
+2.  Enter **spyxx.exe**. 
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)   

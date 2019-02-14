@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83079b044a8e9d21010b203f080918e11098d1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5c55cd5adf46226471bd90f289392b6eb2e09c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951598"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 Ruft die Buildnummer der Back-End des Compilers ab.  

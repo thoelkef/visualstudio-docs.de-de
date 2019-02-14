@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55026358"

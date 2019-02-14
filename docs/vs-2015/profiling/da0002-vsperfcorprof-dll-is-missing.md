@@ -21,7 +21,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54792922"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: „VSPerfCorProf.dll“ fehlt
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll fehlt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regel-Id | DA0002 |  
