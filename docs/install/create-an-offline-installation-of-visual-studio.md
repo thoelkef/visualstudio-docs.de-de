@@ -1,9 +1,8 @@
 ---
 title: Erstellen einer Offlineinstallation
 description: Erfahren Sie, wie Sie Visual Studio offline installieren können, wenn Sie über eine unzuverlässige Internetverbindung oder eine geringe Bandbreite verfügen.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035522"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954022"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
 
-Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
+Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
 
 Gründe hierfür können eine unzuverlässige Internetverbindung oder eine Verbindung mit geringer Bandbreite sein. Falls dies der Fall sein sollte, haben Sie die folgenden Möglichkeiten: Sie können die neue Funktion „Download all, then install“ (Alles herunterladen, dann installieren) verwenden, um die Dateien vor der Installation herunterzuladen, oder Sie können über die Befehlszeile einen lokalen Cache für die Dateien erstellen.
 
@@ -33,10 +32,14 @@ Gründe hierfür können eine unzuverlässige Internetverbindung oder eine Verbi
 
 ## <a name="use-the-download-all-then-install-feature"></a>Verwenden der Funktion „Download all, then install“ (Alles herunterladen, dann installieren)
 
-[**Neues in 15.8:**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-) Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
+[**Neues in 15.8:**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install) Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
 
    ![Die Option „Download all, then install“ (Alles herunterladen, dann installieren)](media/download-all-then-install.png)
+
+Das „Alles herunterladen, dann installieren“-Feature wurde so gestaltet, dass Sie Visual Studio als einzelne Installation für denselben Computer herunterladen können, auf den Sie es heruntergeladen haben. Auf diese Weise können Sie sich vor der Installation von Visual Studio problemlos vom Internet trennen.
+
+> [!IMPORTANT]
+> Verwenden Sie das „Alles herunterladen, dann installieren“-Feature nicht zum Erstellen eines Offlinecaches, den Sie auf einen anderen Computer übertragen möchten. Hierfür ist es nicht vorgesehen. <br><br>Wenn Sie einen Offlinecache erstellen möchten, um Visual Studio auf einem anderen Computer zu installieren, finden Sie im Abschnitt [Verwenden der Befehlszeile zum Erstellen eines lokalen Caches](#use-the-command-line-to-create-a-local-cache) dieser Seite Informationen zum Erstellen eines lokalen Caches, oder auf der Seite [Erstellen einer Netzwerkinstallation von Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) Informationen zum Erstellen eines Netzwerkcaches.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Verwenden der Befehlszeile zum Erstellen eines lokalen Caches
 

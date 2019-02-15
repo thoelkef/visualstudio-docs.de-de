@@ -3,7 +3,6 @@ title: 'Tutorial: Erste Schritte mit Visual Basic'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie Visual Basic-Konsolenanwendungen in Visual Studio erstellen.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424498"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155694"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Erste Schritte mit Visual Basic in Visual Studio
 
@@ -142,10 +141,10 @@ Eine Konsolen-App nimmt eine Eingabe und zeigt die Ausgabe in einem Befehlszeile
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Weitere Informationen finden Sie im folgenden Tutorial.
 
 > [!div class="nextstepaction"]
-> [Videotutorial: Visual Basic Fundamentals for Absolute Beginners (Visual Basic-Grundlagen für Einsteiger)](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Erstellen einer Klassenbibliothek mit Visual Basic und dem .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Neues in Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense für Visual Basic-Codedateien](../../ide/visual-basic-specific-intellisense.md)
+* [Exemplarische Vorgehensweisen für Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Sprachreferenz zu Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense für Visual Basic-Codedateien](../../ide/visual-basic-specific-intellisense.md)

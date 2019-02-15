@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969667"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768427"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `Imports` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht der Option [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) des Compilers *vbc.exe*. |
 | `KeyContainer` | Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht der Option [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) des Compilers *vbc.exe*. |
 | `KeyFile` | Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an |
+| `LangVersion` | Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die [Sprachversion](/dotnet/visual-basic/language-reference/configure-language-version) (z.B. 15.5) an. |
 | `LinkResources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht der Option [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) des Compilers *vbc.exe*. |
 | `MainEntryPoint` | Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht der Option [-main](/dotnet/visual-basic/reference/command-line-compiler/main) des Compilers *vbc.exe*. |
 | `ModuleAssemblyName` | Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört. |

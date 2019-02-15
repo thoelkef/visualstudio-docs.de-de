@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 01/29/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,13 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483704"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987417"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
@@ -90,6 +89,8 @@ Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019:
 
 In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
 
+   ![Eine animierte GIF-Datei, die das Feature Live Share für die Zusammenarbeit in Visual Studio 2019 anzeigt](media/live-share-collaboration.gif)
+
 Weitere Informationen finden Sie im Blogbeitrag [Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share für Echtzeit-Code Reviews und interaktiven Unterricht)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/).
 
 ## <a name="modern-development-support"></a>Unterstützung für moderne Entwicklung
@@ -100,11 +101,16 @@ Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit der 
 
 Als erste Schritte laden Sie die [Pull Requests für Visual Studio](https://aka.ms/pr4vs)-Erweiterung aus dem Visual Studio Marketplace herunter.
 
-### <a name="develop-with-net-core-3-preview-1"></a>Entwickeln mit .NET Core 3 Vorschauversion 1
+### <a name="develop-with-net-core-3-preview"></a>Entwickeln mit .NET Core 3 Preview
 
-Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NET Core 3](http://aka.ms/netcore3preview1)-Anwendungen für beliebige Plattformen. Die plattformübergreifende C++-Entwicklung wird weiterhin unterstützt und verbessert, ebenso wie die mobile .NET-Entwicklung für iOS und Android mit Xamarin.
+Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0)-Anwendungen für beliebige Plattformen. Die plattformübergreifende C++-Entwicklung wird weiterhin unterstützt und verbessert, ebenso wie die mobile .NET-Entwicklung für iOS und Android mit Xamarin.
 
-   ![Entwickeln von Apps mit .NET Core 3 Vorschauversion 1 in Visual Studio 2019](media/dot-net-core-three-dev.png)
+   ![Entwickeln von Apps mit .NET Core 3 Preview in Visual Studio 2019](media/dot-net-core-three-dev.png)
+
+Weitere Informationen finden Sie auf den folgenden Seiten:
+
+* Anmerkungen zu den Versionen [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) und [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)
+* Blogbeiträge zur [Ankündigung von .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) und [Ankündigung von .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)
 
 ## <a name="continuous-innovation"></a>Ständige Innovation
 
@@ -116,6 +122,8 @@ Mit dem Release von Visual Studio 2019 Preview werden die ersten Schritte untern
 
    ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
+Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience with Visual Studio 2019 (Bessere Erfahrung mit mehreren Monitoren mit Visual Studio 2019)](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/).
+
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) ist eine Erweiterung, die Ihre Bemühungen bei der Softwareentwicklung mithilfe von künstlicher Intelligenz (KI) verbessert. IntelliCode trainiert über 2.000 Open Source-Projekte auf GitHub &mdash; jedes mit über 100 Sternen &mdash; zum Generieren von Empfehlungen.
@@ -126,6 +134,8 @@ Im Folgenden werden einige Möglichkeiten aufgeführt, wie Sie mit Visual Studio
 * Hilfe für Entwickler, sich an die Muster und Konventionen ihres Teams zu halten
 * Suche nach schwer auffindbaren Codeproblemen
 * Schwerpunkt auf Code Reviews, indem die Aufmerksamkeit auf die wichtigen Bereiche gerichtet wird
+
+ ![Ein Beispiel für einen IntelliSense-Vorschlag](media/intellicode-intellisense-suggestion.png)
 
 Bei der ersten Vorschauversion der IntelliCode-Erweiterung für Visual Studio wurde zunächst nur C# unterstützt. Jetzt wurde in Visual Studio auch Unterstützung für C++ und XAML hinzugefügt.
 
