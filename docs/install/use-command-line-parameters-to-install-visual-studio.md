@@ -2,9 +2,8 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.date: 11/14/2018
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089141"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155499"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 
@@ -108,7 +107,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--cache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation für nachfolgende Reparaturen gespeichert. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--nocache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--noUpdateInstaller` | **Neu in Version 15.2 (optional):** Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
-| `--noWeb` | **Neu in Version 15.3 (optional):** Das Setup lädt jetzt jeden Inhalt herunter, der aus dem Internet installiert wird.  Jeder Inhalt, der installiert wird, muss in einem Offlinelayout verfügbar sein.  Wenn dem Layout Inhalt fehlt, schlägt die Einrichtung fehl.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Neu in Version 15.3 (optional):** Falls vorhanden, verwendet das Visual Studio-Setup die Dateien in Ihrem Layoutverzeichnis zum Installieren von Visual Studio. Wenn ein Benutzer versucht, Komponenten zu installieren, die nicht im Layout enthalten sind, wird das Setup nicht abgeschlossen.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). <br/><br/> **Wichtig:** Dieser Schalter verhindert nicht, dass das Visual Studio-Setup nach Updates sucht. Weitere Informationen finden Sie unter [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Neu in Version 15.7 (optional):** Zur Angabe der benutzerdefinierten Installationspfade für die Installation. Unterstützte Pfadnamen lauten: „shared“, „cache“ und „install“. |
 | `--path cache=<path>` | **Neu in Version 15.7 (optional):** Verwendet den Speicherort, den Sie beim Herunterladen der Installationsdateien angeben. Dieser Speicherort kann nur bei der ersten Installation von Visual Studio festgelegt werden. Ein Beispiel: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Neu in Version 15.7 (optional):** Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` <br><br>Wichtig: Dies kann nur einmal festgelegt werden, und zwar bei der ersten Installation von Visual Studio. |

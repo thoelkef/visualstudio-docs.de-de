@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947022"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155382"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -177,6 +177,6 @@ Die Automatisierung des Buildprozesses wird durch einen unbekannten Fehler bei v
 
 ## <a name="see-also"></a>Siehe auch
 
-- https://vuejs.org/v2/guide: Erste Schritte – Leitfaden für Vue
-- https://github.com/vuejs/vue-cli: Vue-CLI-Projekt
-- https://webpack.js.org/configuration/: Dokumentation zur Konfiguration von Webpack
+- [Erste Schritte – Leitfaden für Vue](https://vuejs.org/v2/guide).
+- [Vue-CLI-Projekt](https://github.com/vuejs/vue-cli(.
+- [Dokumentation zur Konfiguration von Webpack](https://webpack.js.org/configuration/).

@@ -2,7 +2,6 @@
 title: Verwalten von Python-Anwendungsprojekten
 description: Projekte in Visual Studio verwalten Abhängigkeiten zwischen Dateien sowie die Komplexität von Beziehungen in einer Anwendung.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231934"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155863"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -37,8 +36,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) mit einer Einführung in Python-Projekte an (2 Minuten, 17 Sekunden). |
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Weitere Informationen finden Sie zudem unter [Deep Dive: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Vertiefung: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 

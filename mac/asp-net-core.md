@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910986"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -41,7 +42,7 @@ Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**.
 
 ![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-image4.png)
 
-Mit „Leere ASP.NET Core-Webanwendung“ wird eine neue Webanwendung mit zwei Standarddateien erstellt: **program.cs** und **startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
+Mit „Leere ASP.NET Core-Webanwendung“ wird eine neue Webanwendung mit zwei Standarddateien erstellt: **Program.cs** und **Startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
 
 ![Anzeige des Projektmappenpads mit Abhängigkeiten](media/asp-net-core-image12.png)
 
@@ -64,10 +65,10 @@ public static void Main(string[] args)
 ```
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
-* `UseKestrel`: gibt an, dass der Kestrel-Server von der Anwendung verwendet wird
-* `UseContentRoot(Directory.GetCurrentDirectory())`: verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird
-* `.UseIISIntegration()`: gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
-* `.UseStartup<Startup>()`: gibt die Startup-Klasse an
+* `UseKestrel`: Gibt an, dass der Kestrel-Server von der Anwendung verwendet wird.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird.
+* `.UseIISIntegration()`: Gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
+* `.UseStartup<Startup>()`: Gibt die Startup-Klasse an.
 
   Die Methoden zum Erstellen und Ausführen erstellen den IWebHost, der die App hostet und startet, während er auf eingehende HTTP-Anforderungen lauscht.
 
@@ -130,9 +131,9 @@ Visual Studio für Mac verwendet einen zufälligen Port, um Ihr Webprojekt zu st
 
 ASP.NET Core-Apps verwenden das Entwurfsmuster von Model-View-Controller (MVC), um eine logische Trennung zwischen den Verantwortlichkeiten der verschiedenen Teile der Anwendung zu gewährleisten. MVC besteht aus den folgenden Elementen:
 
-- **Model**: eine einfache Klasse, die die Daten darstellt
-- **View**: zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt)
-- **Controller**: eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert
+- **Model**: Eine Klasse, die die Daten der App darstellt.
+- **Ansicht**: Zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt).
+- **Controller**: Eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert.
 
 Weitere Informationen zum Verwenden von MVC finden Sie im Handbuch [Overview of ASP.NET Core MVC (Überblick über ASP.NET Core MVC)](/aspnet/core/mvc/overview).
 
@@ -236,3 +237,7 @@ Weiter Informationen zu weiteren Schritten finden Sie in den folgenden Handbüch
 - Dokumentation zu [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc)
 - [Creating Backend Services for Native Mobile Applications (Erstellen von Back-End-Diensten für native mobile Anwendungen)](/aspnet/core/mobile/native-mobile-backend), wo Sie erfahren, wie Sie einen REST-Dienst mit ASP.NET Core für eine Xamarin.Forms-App erstellen können.
 - [Praktische Übung zu ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]
