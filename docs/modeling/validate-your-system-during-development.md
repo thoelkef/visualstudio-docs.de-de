@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970373"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316755"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Benutzer und der Architektur des Systems in Einklang zu bringen.
@@ -35,7 +35,7 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
 |-|-|
 |**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: Verstehen von Code und Systementwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: Entwerfen einer Anwendung mit einem Abhängigkeitsdiagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [MSDN-Reihe: Überprüfen von Code mithilfe von Abhängigkeitsdiagrammen](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogs**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Siehe auch
