@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965691"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318796"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -89,9 +89,9 @@ textDocument/rename | ja
 ## <a name="getting-started"></a>Erste Schritte
 
 > [!NOTE]
-> Beginnend mit Visual Studio 15.8 Preview 3-Unterstützung für die allgemeine Sprachserverprotokoll ist in Visual Studio integriert.  Wenn Sie LSP-Erweiterungen, die unter Verwendung der in der Vorschauphase erstellt haben [Sprache Server Client VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) Version, sie funktioniert nicht mehr, nachdem auf Sie 15,8 Preview 3 oder höher aktualisiert haben.  Sie benötigen Sie Folgendes ein, um Ihren LSP Erweiterungen wieder funktionsfähig zu erhalten:
+> Beginnend mit Visual Studio 15.8 Preview 3-Unterstützung für die allgemeine Sprachserverprotokoll ist in Visual Studio integriert. Wenn Sie LSP-Erweiterungen, die unter Verwendung der in der Vorschauphase erstellt haben [Sprache Server Client VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) Version, sie funktioniert nicht mehr, nachdem auf Sie 15,8 Preview 3 oder höher aktualisiert haben. Sie benötigen Sie Folgendes ein, um Ihren LSP Erweiterungen wieder funktionsfähig zu erhalten:
 >
-> 1. Deinstallieren Sie die Microsoft Visual Studio Server-Protokoll Vorschau VSIX.  15,8 Preview 4 ab, jedes Mal, die Sie ein Upgrade in Visual Studio ausführen wir automatisch zu erkennen und entfernen die Vorschau VSIX für den Sie während des Upgrades.
+> 1. Deinstallieren Sie die Microsoft Visual Studio Server-Protokoll Vorschau VSIX. 15,8 Preview 4 ab, jedes Mal, die Sie ein Upgrade in Visual Studio ausführen wir automatisch zu erkennen und entfernen die Vorschau VSIX für den Sie während des Upgrades.
 >
 > 2. Aktualisieren Sie den Nuget-Verweis auf die neueste Version von nicht-Vorschau für [LSP Pakete](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
@@ -129,10 +129,10 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
 
 4. Erstellen Sie eine *PKGDEF* Datei, und fügen eine Zeile, die etwa wie folgt hinzu:
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern der **erstellen** Aktion **Content** und **Include in VSIX-Datei** Eigenschaft auf "true".
 
@@ -292,31 +292,31 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 
 1. Fügen Sie eine JSON-Datei (z. B. *MockLanguageExtensionSettings.json*) in Ihrem Projekt, das die Einstellungen und Standardwerte enthält. Zum Beispiel:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. Mit der rechten Maustaste auf die JSON-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um den "Content" und "Include in VSIX-Datei" Eigenschaft auf "true".
 
 3. Implementieren von ConfigurationSections und Zurückgeben der Liste der Präfixe für die Einstellungen, die in der JSON-Datei definiert (In Visual Studio Code, dies würde zugeordnet, der Name des Konfigurationsabschnitts in "Package.JSON"):
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. Fügen Sie dem Projekt eine PKGDEF-Datei (neuen Text-Datei hinzufügen und ändern Sie die Dateierweiterung in PKGDEF). Die Pkgdef-Datei sollte diese Informationen enthalten:
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     Beispiel:
     ```xml
@@ -340,13 +340,13 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 2. Hinzufügen eine Datei in die *.vs* Ordner mit dem Namen *VSWorkspaceSettings.json*.
 3. Hinzufügen eine Zeile, um die *VSWorkspaceSettings.json* -Datei für eine Einstellung, die der Server bietet. Zum Beispiel:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
-   Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann.  Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
+    Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann. Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
 
 4. Öffnen oder erstellen Sie die Datei mit den Arbeitsbereich *VSWorkspaceSettings.json* (siehe "Benutzer Bearbeiten der Einstellungen für einen Arbeitsbereich").
 5. Fügen Sie in der JSON-Datei die folgende Zeile hinzu:
@@ -362,7 +362,7 @@ Es gibt drei mögliche Werte für die Ausführlichkeit der Ablaufverfolgung:
 * "Messages": Ablaufverfolgung aktiviert ist, aber nur Name und die Antwort-ID nachverfolgt werden.
 * "Verbose":-Ablaufverfolgung aktiviert; die gesamte RPC-Nachricht wird nachverfolgt.
 
-Wenn Ablaufverfolgung aktiviert ist, auf dem Inhalt in eine Datei im richtet die *%temp%\VisualStudio\LSP* Verzeichnis.  Das Protokoll folgt das Namensformat *[LanguageClientName]-[Datums-/ Zeitstempel] .log*.  Derzeit kann die Ablaufverfolgung nur für Szenarien mit "Ordner öffnen" aktiviert werden.  Öffnen eine einzelne Datei zum Aktivieren eines Servers für die Sprache muss sich nicht auf Diagnose nachverfolgungsunterstützung aus.
+Wenn Ablaufverfolgung aktiviert ist, auf dem Inhalt in eine Datei im richtet die *%temp%\VisualStudio\LSP* Verzeichnis. Das Protokoll folgt das Namensformat *[LanguageClientName]-[Datums-/ Zeitstempel] .log*. Derzeit kann die Ablaufverfolgung nur für Szenarien mit "Ordner öffnen" aktiviert werden. Öffnen eine einzelne Datei zum Aktivieren eines Servers für die Sprache muss sich nicht auf Diagnose nachverfolgungsunterstützung aus.
 
 ### <a name="custom-messages"></a>Benutzerdefinierte Meldungen
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Den Quellcode einer Beispiel-Erweiterung, die mithilfe der LSP-Client-API in Vis
 
 **Ich würde gerne, erstellen Sie eine benutzerdefinierte Projektsystem als Ergänzung für meinen Server LSP Sprache, um umfangreichere Unterstützung dieser Funktion in Visual Studio bieten wie Stelle ich Informationen zu tun?**
 
-Unterstützung für Server LSP-basierte Sprache, in Visual Studio basiert auf der [open Folder-Feature](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) und wurde speziell für eine benutzerdefinierte Projektsystem nicht erforderlich. Sie können eigene benutzerdefinierte Projektsystem Anweisungen erstellen [hier](https://github.com/Microsoft/VSProjectSystem), aber einige Funktionen, z. B. Einstellungen, funktionieren nicht. Die Standardlogik für die Initialisierung für LSP Language-Server wird im Ordner Stamm des Ordners, die gerade geöffnet wird, übergeben werden, sodass, wenn Sie eine benutzerdefinierte Projektsystem verwenden, Sie möglicherweise während der Initialisierung, um sicherzustellen, dass Ihre Sprache-Server kann benutzerdefinierte Logik bereitzustellen müssen ordnungsgemäß gestartet.
+Unterstützung für Server LSP-basierte Sprache, in Visual Studio basiert auf der [open Folder-Feature](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) und wurde speziell für eine benutzerdefinierte Projektsystem nicht erforderlich. Sie können eigene benutzerdefinierte Projektsystem Anweisungen erstellen [hier](https://github.com/Microsoft/VSProjectSystem), aber einige Funktionen, z. B. Einstellungen, funktionieren nicht. Die Standardlogik für die Initialisierung für LSP Language-Server wird im Ordner Stamm des Ordners, die gerade geöffnet wird, übergeben werden, sodass, wenn Sie eine benutzerdefinierte Projektsystem verwenden, Sie möglicherweise während der Initialisierung, um sicherzustellen, dass Ihre Sprache-Server kann benutzerdefinierte Logik bereitzustellen müssen ordnungsgemäß gestartet.
 
 **Wie füge ich den Debugger-Support?**
 
