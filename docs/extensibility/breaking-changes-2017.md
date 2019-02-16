@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012273"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318744"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
-Mit Visual Studio 2017, bieten wir eine [schnellere und schlankere Visual Studio-Installationsvorgang](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) , die durch die Reduzierung von Visual Studio auf Benutzersystemen und bietet den Benutzern mehr Auswahlmöglichkeiten über die arbeitsauslastungen und Features installiert werden. Um diese Verbesserungen zu unterstützen, wir Änderungen vorgenommen haben, für das Erweiterbarkeitsmodell und einige wichtige Änderungen an Visual Studio-Erweiterungen vorgenommen haben. In diesem Dokument wird beschrieben, die technischen Details dieser Änderungen, und was getan werden, um ihnen zu begegnen. Bitte beachten Sie, dass einige Informationen Point-in-Time-Implementierungsdetails und später nicht geändert werden kann.
+Mit Visual Studio 2017, bieten wir eine [schnellere und schlankere Visual Studio-Installationsvorgang](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) , die durch die Reduzierung von Visual Studio auf Benutzersystemen und bietet den Benutzern mehr Auswahlmöglichkeiten über die arbeitsauslastungen und Features installiert werden. Um diese Verbesserungen zu unterstützen, wir Änderungen vorgenommen haben, für das Erweiterbarkeitsmodell und einige wichtige Änderungen an Visual Studio-Erweiterungen vorgenommen haben. In diesem Dokument wird beschrieben, die technischen Details dieser Änderungen, und was getan werden, um ihnen zu begegnen. Bitte beachten Sie, dass einige Informationen Point-in-Time-Implementierungsdetails und später nicht geändert werden kann.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>Änderungen, die Auswirkungen auf die VSIX-Format und installation
 
@@ -28,7 +28,7 @@ Wir einführen, die VSIX-v3-Format (Version 3) zur Unterstützung der Lightweigh
 * Die Deklaration der setupvoraussetzungen. Zum Übermitteln von die Vorzüge der eine einfache, schnelle Installation von Visual Studio bietet der Installer jetzt weitere Konfigurationsoptionen für Benutzer. Daher werden um sicherzustellen, dass die Features und Komponenten, die erforderlich sind, indem Sie eine Erweiterung installiert sind, Erweiterungen müssen ihre Abhängigkeiten deklarieren.
   * Das Visual Studio 2017-Installationsprogramm wird automatisch zum Abrufen und installieren die erforderlichen Komponenten für den Benutzer als Teil der Erweiterungsinstallation bieten.
   * Benutzer werden auch gewarnt, wenn Sie versuchen, eine Erweiterung zu installieren, die das neue VSIX v3-Format mit nicht erstellt wurde, auch wenn sie in deren Manifest als Ziel Version 15.0 markiert wurden.
-* Erweiterte Funktionen für das VSIX-Format. Für die Einführung einer [mit geringen Auswirkungen Installation](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) von Visual Studio, die auch die Seite-an-Seite-Installationen unterstützt, wird nicht mehr speichern die meisten Konfigurationsdaten in die systemregistrierung und zusätzlichen Wartungsversionen wird Visual Studio-spezifische Assemblys aus dem GAC. Wir haben auch die Funktionen des VSIX-Format und VSIX-Installations-Engine, sodass Sie sie statt einer MSI oder EXE-Datei verwenden, um Ihre Erweiterungen für einige Installationstypen zu installieren.
+* Erweiterte Funktionen für das VSIX-Format. Für die Einführung einer [mit geringen Auswirkungen Installation](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) von Visual Studio, die auch die Seite-an-Seite-Installationen unterstützt, wird nicht mehr speichern die meisten Konfigurationsdaten in die systemregistrierung und zusätzlichen Wartungsversionen wird Visual Studio-spezifische Assemblys aus dem GAC. Wir haben auch die Funktionen des VSIX-Format und VSIX-Installations-Engine, sodass Sie sie statt einer MSI oder EXE-Datei verwenden, um Ihre Erweiterungen für einige Installationstypen zu installieren.
 
   Die neuen Funktionen gehören:
 

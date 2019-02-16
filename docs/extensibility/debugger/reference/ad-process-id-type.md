@@ -12,50 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6eb106897ef8783f611a4779f25da785ac1f125
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c600dd1fcf22ac7e32e91a38c98d6f524a9ba79
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983169"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315650"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-Gibt an, wie eine Prozess-ID interpretieren die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
-};  
-typedef DWORD AD_PROCESS_ID_TYPE;  
-```  
-  
-```csharp  
-public enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
-};  
-```  
-  
-## <a name="members"></a>Member  
- AD_PROCESS_ID_SYSTEM  
- Prozess-ID ist ein Systembezeichner. Verwenden der `ProcessId.dwProcessId` Feld der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.  
-  
- AD_PROCESS_ID_GUID  
- Prozess-ID ist eine GUID. Verwenden der `ProcessId.guidProcessId` Feld der `AD_PROCESS_ID` Struktur.  
-  
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `ProcessIdType` Mitglied der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Typ des Prozess-ID zu identifizieren, die in der Struktur enthalten ist. Bestimmt, wie zum Interpretieren der `ProcessId` union in der Struktur.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+Gibt an, wie eine Prozess-ID interpretieren die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+enum enum_AD_PROCESS_ID {
+    AD_PROCESS_ID_SYSTEM = 0,
+    AD_PROCESS_ID_GUID   = 1
+};
+typedef DWORD AD_PROCESS_ID_TYPE;
+```
+
+```csharp
+public enum enum_AD_PROCESS_ID {
+    AD_PROCESS_ID_SYSTEM = 0,
+    AD_PROCESS_ID_GUID   = 1
+};
+```
+
+## <a name="members"></a>Member
+AD_PROCESS_ID_SYSTEM Prozess-ID ist ein Systembezeichner. Verwenden der `ProcessId.dwProcessId` Feld der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.
+
+AD_PROCESS_ID_GUID Prozess-ID ist eine GUID. Verwenden der `ProcessId.guidProcessId` Feld der `AD_PROCESS_ID` Struktur.
+
+## <a name="remarks"></a>Hinweise
+Verwendet für die `ProcessIdType` Mitglied der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Typ des Prozess-ID zu identifizieren, die in der Struktur enthalten ist. Bestimmt, wie zum Interpretieren der `ProcessId` union in der Struktur.
+
+## <a name="requirements"></a>Anforderungen
+Header: msdbg.h
+
+Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
