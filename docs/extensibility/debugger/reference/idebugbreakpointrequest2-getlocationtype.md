@@ -12,73 +12,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1340d127d029bb1c857ae3748b529253f8bb4a85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: afddb4f27eaae9ae9960ae07127d88d0d4588d1f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973732"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315676"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-Ruft die Haltepunktpositionstyp dieser Haltepunkt-Anforderung ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetLocationType(   
-   BP_LOCATION_TYPE* pBPLocationType  
-);  
-```  
-  
-```csharp  
-int GetLocationType(   
-   out enum_BP_LOCATION_TYPE pBPLocationType  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pBPLocationType`  
- [out] Gibt einen Wert aus der [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) -Enumeration, der den Speicherort dieser Haltepunkt-Anforderung beschreibt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_FAIL` Wenn die `bpLocation` im zugehörigen Feld [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ist ungültig.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugBreakpointRequest` -Objekt, das macht die[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Schnittstelle.  
-  
-```  
-HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
-{    
-   HRESULT hr;    
-  
-   if (pBPLocationType)    
-   {    
-      // Set default BP_LOCATION_TYPE.    
-      *pBPLocationType = BPLT_NONE;    
-  
-      // Check if the BPREQI_BPLOCATION flag is set in BPREQI_FIELDS.    
-      if (IsFlagSet(m_bpRequestInfo.dwFields, BPREQI_BPLOCATION))    
-      {    
-         // Get the new BP_LOCATION_TYPE.    
-         *pBPLocationType = m_bpRequestInfo.bpLocation.bpLocationType;    
-         hr = S_OK;    
-      }    
-      else    
-      {    
-         hr = E_FAIL;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+Ruft die Haltepunktpositionstyp dieser Haltepunkt-Anforderung ab.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetLocationType(
+    BP_LOCATION_TYPE* pBPLocationType
+);
+```
+
+```csharp
+int GetLocationType(
+    out enum_BP_LOCATION_TYPE pBPLocationType
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`pBPLocationType` [out] Gibt einen Wert aus der [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) -Enumeration, der den Speicherort dieser Haltepunkt-Anforderung beschreibt.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_FAIL` Wenn die `bpLocation` im zugehörigen Feld [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ist ungültig.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugBreakpointRequest` -Objekt, das macht die[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Schnittstelle.
+
+```
+HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)
+{
+    HRESULT hr;
+
+    if (pBPLocationType)
+    {
+        // Set default BP_LOCATION_TYPE.
+        *pBPLocationType = BPLT_NONE;
+
+        // Check if the BPREQI_BPLOCATION flag is set in BPREQI_FIELDS.
+        if (IsFlagSet(m_bpRequestInfo.dwFields, BPREQI_BPLOCATION))
+        {
+            // Get the new BP_LOCATION_TYPE.
+            *pBPLocationType = m_bpRequestInfo.bpLocation.bpLocationType;
+            hr = S_OK;
+        }
+        else
+        {
+            hr = E_FAIL;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
+[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
+[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

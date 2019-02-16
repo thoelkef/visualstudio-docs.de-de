@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957441"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317119"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
@@ -102,7 +102,7 @@ Nachdem Sie die richtige Verzögerung der Benutzeroberfläche im Aktivitätsprot
 Wählen Sie die Datei im linken Bereich und öffnen Sie es durch Auswahl **öffnen** aus dem Kontextmenü -Menü.
 
 > [!NOTE]
-> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.) 
+> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.) 
 
 Es dauert einige Minuten, bis PerfView zum Verarbeiten und die Ablaufverfolgung zu öffnen. Sobald die Ablaufverfolgung geöffnet ist, wird eine Liste der verschiedenen "Ansichten" darunter angezeigt.
 
