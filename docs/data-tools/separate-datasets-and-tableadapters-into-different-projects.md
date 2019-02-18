@@ -9,15 +9,14 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d3386cd6a379a1d38c40f97f3a9c4ef93e293d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927658"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](create-and-configure-tableadapters.md) und Dataset-Klassen in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.
@@ -61,7 +60,7 @@ Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standard
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
-- [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Exemplarische Vorgehensweise: Erstellen einer n schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

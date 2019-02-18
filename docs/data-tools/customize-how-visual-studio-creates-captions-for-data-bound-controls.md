@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939839"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
@@ -42,7 +41,7 @@ In der folgende Tabelle sind die internen Standardeinstellungen für diese Regis
 
 |Registrierungselement|Standardwert|Erklärung|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Entspricht einem Kleinbuchstaben Zeichen gefolgt von einem Großbuchstaben oder ein Unterstrich.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Entspricht einem Kleinbuchstaben Zeichen gefolgt von einem Großbuchstaben oder ein Unterstrich.|
 |**SmartCaptionReplacement**|**$1 $2**|Die **$1** stellt alle Zeichen in der ersten Klammern für den Ausdruck übereinstimmen und die **$2** stellt alle Zeichen in der zweiten Klammer übereinstimmt. Der Austausch ist die erste Übereinstimmung, ein Leerzeichen und die zweite Übereinstimmung.|
 |**SmartCaptionSuffix**|**:**|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Wenn die Beschriftung wird z. B. `Company Name`, erleichtert das Suffix `Company Name:`|
 

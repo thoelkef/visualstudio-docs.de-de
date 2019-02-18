@@ -19,15 +19,14 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004395"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945806"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 Überprüfen von Daten ist der Prozess der Bestätigung der Werte, die in Datenobjekte eingegeben werden, die die Einschränkungen in einer Dataset Schema entsprechen. Der Überprüfungsprozess wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es hat sich bewährt, überprüfen Sie die Daten vor dem Senden von Aktualisierungen an der zugrunde liegenden Datenbank. Dies verringert sowohl Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.
@@ -211,5 +210,5 @@ Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spalteninde
 ## <a name="see-also"></a>Siehe auch
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Vorgehensweise: Überprüfen von Daten in Windows Forms-DataGridView-Steuerelement](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Vorgehensweise: Anzeigen von Fehlersymbolen für die formularvalidierung mit der Windows Forms ErrorProvider-Komponente](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Vorgehensweise: Überprüfen von Daten im DataGridView-Steuerelement in Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Vorgehensweise: Anzeigen von Fehlersymbolen für die Formularvalidierung mit der ErrorProvider-Komponente in Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
