@@ -6,15 +6,14 @@ ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953392"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935679"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Datenklassenvererbung (O/R-Designer)
 
@@ -45,6 +44,6 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet und sich auf relation
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mit einer Vererbung für eine einzelne Tabelle (O/R-Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Erste Schritte](/dotnet/framework/data/adonet/sql/linq/getting-started)

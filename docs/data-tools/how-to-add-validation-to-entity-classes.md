@@ -8,16 +8,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9e73fe476dbe323289e7ebe90508aec695b6bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942553"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913495"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.
@@ -124,4 +123,4 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Überprüfen von Daten](../data-tools/validate-data-in-datasets.md)
-- [LINQ to SQL ((.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)

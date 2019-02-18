@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957506"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940320"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Hinzufügen von Validierungen zu einem N-Tier-Dataset
 Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt ist, grundsätzlich auf die gleiche Art hinzugefügt wie einem DataSet in einer einzelnen Datei (in einem einzelnen Projekt). Es wird empfohlen, die Datenvalidierung während des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses und/oder des <xref:System.Data.DataTable.RowChanging>-Ereignisses einer Datentabelle auszuführen.
 
- Das Dataset stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie Benutzercode, Spalte und Zeile-Ereignisse mit wechselndem der Datentabellen im Dataset hinzufügen können. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Das Dataset stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie Benutzercode, Spalte und Zeile-Ereignisse mit wechselndem der Datentabellen im Dataset hinzufügen können. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Bei einer Abtrennung der Datasets von TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.

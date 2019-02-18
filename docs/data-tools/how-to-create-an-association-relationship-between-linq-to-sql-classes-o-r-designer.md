@@ -6,17 +6,16 @@ ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001329"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907788"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Vorgehensweise: Erstellen Sie eine Zuordnung zwischen LINQ to SQL-Klassen (O/R Designer)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Gewusst wie: Erstellen einer Assoziation zwischen LINQ to SQL-Klassen (O/R Designer)
 Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ähneln Beziehungen zwischen Tabellen einer Datenbank. Sie können Zuordnungen zwischen Entitätsklassen mithilfe des Dialogfelds **Zuordnungs-Editor** erstellen.
 
 Sie müssen eine übergeordnete und eine untergeordnete Klasse auswählen, wenn Sie das Dialogfeld **Zuordnungs-Editor** verwenden, um eine Zuordnung zu erstellen. Die übergeordnete Klasse ist die Entitätsklasse, die den Primärschlüssel enthält. Die untergeordnete Klasse ist die Entitätsklasse, die den Fremdschlüssel enthält. Angenommen, Entitätsklassen, die zugeordnet erstellt wurden die `Northwind Customers` und `Orders` Tabellen, die `Customer` Klasse wäre die übergeordnete Klasse und die `Order` Klasse wäre der untergeordneten Klasse.

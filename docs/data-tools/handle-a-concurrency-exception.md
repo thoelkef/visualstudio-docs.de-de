@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825645"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927216"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -175,7 +174,7 @@ Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufü
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
-### <a name="process-the-users-response"></a>Verarbeitet die Antwort des Benutzers
+### <a name="process-the-users-response"></a>Verarbeiten der Antwort des Benutzers
 
 Außerdem benötigen Sie Code zum Verarbeiten der Antwort des Benutzers in der MessageBox. Die Optionen sind entweder auf den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung überschreiben oder die lokalen Änderungen verwerfen und aktualisieren Sie die Datentabelle mit dem Datensatz, der derzeit in der Datenbank vorhanden ist. Wenn der Benutzer **Ja**, wird die <xref:System.Data.DataTable.Merge%2A> Methode wird aufgerufen, mit der *PreserveChanges* Argument festgelegt wird, um **"true"**. Dies bewirkt, dass den Updateversuch, die erfolgreich ist, muss, da die ursprüngliche Version des Datensatzes nun der Eintrag in der Datenbank übereinstimmt.
 
@@ -207,7 +206,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 8. Im ersten Datensatz auf dem Formular (**ALFKI**), ändern Sie **ContactName** zu **Maria Anders1**.
 
-9. Wählen Sie die **speichern** Schaltfläche.
+9. Klicken Sie auf die Schaltfläche **Speichern**.
 
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.
 
