@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794303"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analysieren der durch Leistungstools erstellten Daten
@@ -33,7 +33,7 @@ Leistungsberichte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstell
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Verwenden Sie Leistungsregeln, um Probleme schnell zu identifizieren:** Leistungsregeln der Profilerstellungstools identifizieren häufige Probleme und helfen, die Sie ganz einfach auf den Quellcode navigieren, die das betreffende Problem enthält. Ausführliche Hilfethemen bieten oft eine Lösung.|-   [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Verwenden Sie Leistungsregeln, um Probleme schnell zu identifizieren: Regeln für** -Profilerstellungstools identifizieren häufige Probleme und helfen Ihnen dabei, zum Quellcode zu navigieren, der das Problem enthält. Ausführliche Hilfethemen bieten oft eine Lösung.|-   [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)|  
 |**Details der Berichtsanzeige verstehen:** Berichtsansichten von Profilerstellungstools bieten aggregierte Leistungsdaten für die Prozesse, Threads, Module und Funktionen einer Profilerstellungsausführung. Die angezeigten Daten sind von der Profilerstellungsmethode abhängig, die zur Datensammlung verwendet wurde.|-   [Leistungsberichtansichten](../profiling/performance-report-views.md)|  
 |**Konfigurieren, Sortieren und Filtern von Berichtsansichten:** Sie können die Datenspalten, die in einem Bericht angezeigt werden sollen, bestimmen und festlegen, in welcher Reihenfolge sie angezeigt werden; des Weiteren können Sie die Berichtszeilen sortieren und die Daten so filtern, dass nur ein von Ihnen bestimmtes Zeitsegment angezeigt wird.|-   [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)|  
   
