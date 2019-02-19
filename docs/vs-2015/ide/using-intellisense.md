@@ -26,16 +26,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758827"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Auflisten von Membern, Parameterinformationen, QuickInfo und Wortvervollständigung. Mithilfe dieser Funktionen erfahren Sie mehr über den verwendeten Code, Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.  
+IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member auflisten, Parameterinfo, QuickInfo und Wort vervollständigen. Mithilfe dieser Funktionen erfahren Sie mehr über den verwendeten Code, Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.  
   
  Viele Aspekte von IntelliSense sind sprachspezifisch. Weitere Informationen zu IntelliSense für verschiedene Sprachen finden Sie in den Themen, die unter "Siehe auch" aufgelistet sind.  
   

@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780678"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio-IDE
@@ -92,7 +92,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 
  Wenn das Projekt eine XAML-basierte Benutzeroberfläche hat, ist Blend der Standard-Designer für Visual Studio – ein anspruchsvolles Grafiktool, das nahtlos mit Visual Studio zusammenarbeitet.
 
- ![Artboard](../ide/media/b5-artboard.png "b5_artboard")
+ ![Zeichenfläche](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -111,7 +111,7 @@ Wenn Sie Informationen zu neuen Features in Visual Studio 2015 finden möchten, 
 
  ![GreetingsConsoleApp.cpp im Code-Editor](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- Der Text-Editor ist hochgradig interaktiv (falls Sie dies wünschen) und bietet viele Produktivitätsfeatures, mit denen Sie schneller besseren Code schreiben können. Die Funktionen variieren je nach Sprache, und Sie müssen diese (vom Typ "Editor" in der Schnellstartleiste) verwenden, um Funktionen zu aktivieren oder deaktivieren: Einige der allgemeinen Produktivitätsfeatures sind:
+ Der Text-Editor ist hochgradig interaktiv (falls Sie dies wünschen) und bietet viele Produktivitätsfeatures, mit denen Sie schneller besseren Code schreiben können. Die Features sind je nach Sprache unterschiedlich, und Sie müssen keine davon verwenden (geben Sie in der Schnellstartleiste "Editor" ein), um Funktionen zu aktivieren oder zu deaktivieren. Im Folgenden finden Sie einige der allgemeinen Produktivitätsfeatures:
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) enthält die Vorgänge, wie z. B. intelligentes Umbenennen von Variablen, Verschieben von ausgewählten Codezeilen in eine separate Funktion, Verschieben von Code an eine andere Position und Neuanordnen von Funktionsparametern.
 

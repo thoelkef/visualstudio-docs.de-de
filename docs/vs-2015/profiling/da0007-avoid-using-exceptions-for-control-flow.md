@@ -27,7 +27,7 @@ ms.locfileid: "54770833"
 Regel-Id | DA0007 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Alle |  
-| Nachricht | Permanent wird eine hohe Anzahl von Ausnahmen ausgelöst. Verwenden Sie nach Möglichkeit weniger Ausnahmen in der Programmlogik.  
+| Nachricht | Permanent wird eine hohe Anzahl von Ausnahmen ausgelöst. Verwenden Sie nach Möglichkeit weniger Ausnahmen in der Programmlogik.|  
 | Nachrichtentyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 25 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

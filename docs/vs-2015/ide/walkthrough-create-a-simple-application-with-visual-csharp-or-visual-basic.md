@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802615"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
@@ -47,7 +47,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  Sie können weitere Anpassungen an Visual Studio vornehmen. Sie können z. B. die Schriftart und Größe des Texts im Editor oder das Farbschema der IDE ändern, indem Sie das Dialogfeld **Optionen** verwenden. Je nach gültiger Einstellungskombination werden möglicherweise einige Elemente in diesem Dialogfeld nicht automatisch angezeigt. Sie können überprüfen, ob alle möglichen Optionen angezeigt werden, indem Sie das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren.  
   
- Abbildung 3: Optionen (Dialogfeld)  
+ Abbildung3: Dialogfeld "Optionen"  
   
  ![Dialogfeld „Optionen“ mit Option „Alle Einstellungen anzeigen“](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -94,7 +94,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
-   Abbildung 5: Projektelemente  
+   Abbildung 5: Projektelemente  
   
    ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -132,7 +132,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    Das Fenster sollte der folgenden Abbildung entsprechen:  
   
-   figure Greetings-Fenster mit TextBlock-Steuerelement  
+   Abbildung 7: Greetings-Fenster mit TextBlock-Steuerelement  
   
    ![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     Das Fenster sieht wie folgt aus:  
   
-    Abbildung 8. RadioButtons im Greetings-Fenster.  
+    Abbildung 8: RadioButtons im Greetings-Fenster.  
   
     ![Greetings-Formular mit Textblock und zwei RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -259,7 +259,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Ein Dialogfeld angezeigt wird, gibt an, dass ein IOException aufgetreten ist: Cannot locate resource 'mainwindow.xaml' (Die Ressource „mainwindow.xaml“ kann nicht gefunden werden).  
+    Ein Dialogfeld wird angezeigt, das angibt, dass ein IOException aufgetreten ist: Ressource "mainwindow.xaml" kann nicht gefunden werden.  
   
 2. Wählen Sie die Schaltfläche **OK** aus, und beenden Sie anschließend den Debugger.  
   

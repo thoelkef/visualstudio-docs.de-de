@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756464"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn und ProcessOff
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Der ganzzahlige Bezeichner des Prozesses zum Starten oder Beenden. Prozess-IDs werden auf der Registerkarte „Prozesse“ des Windows Task-Managers aufgeführt.  
   
 ## <a name="required-subcommands"></a>Erforderliche Unterbefehle  
- Keiner  
+ Keine  
   
 ## <a name="valid-subcommands"></a>Gültige Unterbefehle  
  **ProcessOn** und **ProcessOff** können in Befehlszeilen angegeben werden, die auch die folgenden Unterbefehle enthalten:  

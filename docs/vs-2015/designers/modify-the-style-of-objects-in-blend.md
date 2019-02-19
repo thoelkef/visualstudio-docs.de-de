@@ -79,7 +79,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   
 - Wählen Sie **Leere erstellen**, um von Grund auf neu zu starten.  
   
-  Die Option **Aktuelle bearbeiten** erscheint nur, wenn Sie einen Stil oder eine Vorlage bearbeiten, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
+  Die Option **Aktuelle bearbeiten** erscheint nur, wenn Sie eine Formatvorlage oder Vorlage bearbeiten, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.  
   
   Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die Vorlage so benennen, dass sie später verwendet werden kann, oder Sie können den Stil oder die Vorlage auf alle Steuerelemente des Typs anwenden.  
   

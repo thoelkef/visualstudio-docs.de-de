@@ -26,7 +26,7 @@ ms.locfileid: "54801478"
 Regel-Id | DA0030 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Sammeln von interaktionsmessdaten für Anwendungen mit mehreren Ebenen greift können Sie sich über datenbankverwendungsmuster sowie Schlüsseldaten Verzögerungen. Erstellen Sie ein neues Profil für die Anwendung, und aktivieren Sie dabei die Option zum Aktivieren der Profilerstellung für Ebeneninteraktion.  
+| Nachricht | Sammeln von interaktionsmessdaten für Anwendungen mit mehreren Ebenen greift können Sie sich über datenbankverwendungsmuster sowie Schlüsseldaten Verzögerungen. Erstellen Sie ein neues Profil für die Anwendung, und aktivieren Sie dabei die Option zum Aktivieren der Profilerstellung für Ebeneninteraktion.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  

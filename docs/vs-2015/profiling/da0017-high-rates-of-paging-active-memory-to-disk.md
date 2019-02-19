@@ -26,7 +26,7 @@ ms.locfileid: "54803487"
 Regel-Id | DA0017 |  
 | Kategorie | Speicher und Auslagerung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | Ein hohes Maß an paging von aktivem Speicher auf den Datenträger wurde festgestellt. Die Anwendung ist möglicherweise speichergebunden.  
+| Nachricht | Ein hohes Maß an paging von aktivem Speicher auf den Datenträger wurde festgestellt. Die Anwendung ist möglicherweise speichergebunden.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

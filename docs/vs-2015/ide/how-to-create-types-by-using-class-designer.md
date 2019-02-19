@@ -79,7 +79,7 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
   
 1.  Klicken Sie in einem Klassendiagramm auf die Form des Typs.  
   
-2.  Klicken Sie im Eigenschaftenfenster neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit dem Auslassungszeichen (…).  
+2.  Klicken Sie im Eigenschaftenfenster neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit den Auslassungspunkten (…).  
   
 3.  Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.  
   

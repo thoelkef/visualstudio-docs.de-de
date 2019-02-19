@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: be3b993034ef9ab8d39b254cf3f4be1fdebbb106
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769125"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
@@ -70,7 +70,7 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Umgebungsvariablen, Befehlszeileneigenschaften und Eigenschaften auf Projektebene können im gesamten `UsingTask`-Element referenziert werden, wenn es in der Projektdatei angezeigt wird, und zwar entweder explizit oder mithilfe einer importierten Projektdatei. Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben).  
   
 > [!NOTE]

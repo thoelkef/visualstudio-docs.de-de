@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 58e48676cb8719cca5da1989342642669c6565cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778483"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -46,7 +46,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
  /projectconfig `ProjConfigName`  
  Dies ist optional. Der Name der Projektbuildkonfiguration für die Erstellung des benannten `/project`.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Dieser Schalter führt dieselbe Funktion aus wie der Menübefehl **Projektmappe erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).  
   
  Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelte Anführungszeichen ein.  

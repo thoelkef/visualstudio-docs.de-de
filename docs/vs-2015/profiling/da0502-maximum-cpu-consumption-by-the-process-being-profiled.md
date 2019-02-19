@@ -26,7 +26,7 @@ ms.locfileid: "54787354"
 Regel-Id | DA0502 |  
 | Kategorie | Ressourcenüberwachung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | Diese Regel dient nur zu Informationszwecken. Der Leistungsindikator für die Process()\\%-Prozessorzeit dient zum Messen der CPU-Auslastung des Prozesses, für den die Profilerstellung ausgeführt wird. Bei dem gemeldeten Wert handelt es sich um den Maximalwert aus allen Messintervallen.  
+| Nachricht | Diese Regel dient nur zu Informationszwecken. Der Leistungsindikator für die Process()\\%-Prozessorzeit dient zum Messen der CPU-Auslastung des Prozesses, für den die Profilerstellung ausgeführt wird. Bei dem gemeldeten Wert handelt es sich um den Maximalwert aus allen Messintervallen.|  
 | Regeltyp | Nur zu Informationszwecken |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

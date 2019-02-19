@@ -46,7 +46,7 @@ HRESULT ReadExecutableAt ( 
  data[]  
  [in, out] Ein Array, das sich aus der Datei gelesenen Bytes gefüllt wird.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Methode wird von der Code für die Unterstützung von DIA Datenbytes aus einer ausführbaren Datei, die über einen Offset absolute Datei laden aufgerufen. Diese Methode wird aufgerufen, Unterstützung des der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  

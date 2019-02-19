@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758453"
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
@@ -71,7 +71,7 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
 </PropertyGroup>  
 ```  
   
- Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente: KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.  
+ Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.  
   
 ## <a name="properties-and-items-in-tasks"></a>Eigenschaften und Elemente in Aufgaben  
  Eigenschaften und Elemente werden als Ein- und Ausgaben für MSBuild-Aufgaben verwendet. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  

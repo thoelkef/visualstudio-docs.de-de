@@ -27,7 +27,7 @@ ms.locfileid: "54782633"
 Regel-Id | DA0003 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  
-| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Erstellen Sie nach Möglichkeit ein neues Profil für die Anwendung, und verwenden Sie dabei den Instrumentierungsmodus.  
+| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Erstellen Sie nach Möglichkeit ein neues Profil für die Anwendung, und verwenden Sie dabei den Instrumentierungsmodus.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  

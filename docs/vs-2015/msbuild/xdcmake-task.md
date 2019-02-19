@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792888"
 ---
 # <a name="xdcmake-task"></a>XDCMake-Aufgabe
@@ -35,7 +35,7 @@ Umschließt das XML-Dokumentationstool (xdcmake.exe), das die XML-Dokument-Komme
   
  Es wird eine XDC-Datei erstellt, wenn Sie Dokumentationskommentare in Ihren Visual C++-Quellcode eingeben und mithilfe der Compileroption [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) kompilieren. Weitere Informationen finden Sie unter [XDCMake-Verweis](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) und unter der Befehlszeilenhilfe-Option (**/?**) für xdcmake.exe.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Standardmäßig unterstützt das xdcmake.exe-Tool einige Befehlszeilenoptionen. Zusätzliche Optionen werden bei der Angabe der **/old**-Befehlszeilenoption unterstützt.  
   
 ## <a name="parameters"></a>Parameter  

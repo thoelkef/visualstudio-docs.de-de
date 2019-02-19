@@ -26,7 +26,7 @@ ms.locfileid: "54779116"
 # <a name="concurrency-visualizer"></a>Parallelitätsschnellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-HINWEIS
+HINWEIS]
 >  Concurrency Visualizer ist eine optionale Erweiterung für Visual Studio. Laden Sie Concurrency Visualizer und die Concurrency Visualizer Collection Tools unter folgenden Links herunter:  
 > 
 > - Laden Sie die Erweiterung              [Concurrency Visualizer](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) herunter.  

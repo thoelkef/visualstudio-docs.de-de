@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780316"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;Signatur&gt; (JavaScript)
@@ -45,7 +45,7 @@ Gruppiert einen Satz zugehöriger Elementen für eine Funktion oder Methode, um 
  `locid`  
  Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über das Feld. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Verwenden Sie ein `<signature>`-Element für jede der überladenen Funktionsbeschreibung in der JS-Datei, oder verwenden Sie ein `<signature>`-Element für jede angegebene externe Member-ID.  
   
  Das `<signature>`-Element muss im Funktionstext vor allen Anweisungen eingefügt werden. Bei Verwendung [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), oder [ \<gibt >](../ide/returns-javascript.md) Elemente mit den `<signature>` Element Platzieren Sie die anderen Elemente innerhalb der `<signature>` Block.  

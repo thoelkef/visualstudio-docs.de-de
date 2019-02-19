@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft Docs
+title: IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -31,7 +31,7 @@ HRESULT RestrictSymbolServerAccess();
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Code als Rückgabewert `S_OK` verhindert die Verwendung von einem Symbolserver Symbole auflösen.  
   
 ## <a name="see-also"></a>Siehe auch  

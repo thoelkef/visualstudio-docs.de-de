@@ -1,24 +1,19 @@
 ---
 title: Anpassen der Code Coverage-Analyse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768032"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +101,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke  
  In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:  
   
-1. **\.\\*** entspricht eine Zeichenfolge beliebiger Zeichen  
+1. **\.\\*** entspricht einer Zeichenfolge beliebiger Zeichen  
   
 2. **\\.** entspricht einem Punkt „.“  
   
@@ -158,7 +153,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
   **Abgleichen eines Funktionsnamens**  
   
-  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:  
+  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Ein auf ein Objekt angewendeter  
   
 - C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -207,7 +202,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
 3. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Wählen Sie die **RUNSETTINGS**-Datei aus.  
   
-   - <em>Aber **Testassembly</em>* angezeigt wird, anstelle von **Testquelle**. Beim Versuch, das Feld Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
+   - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
       Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Siehe auch  
  [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Komponententest für Code](../test/unit-test-your-code.md)
-
-
-
