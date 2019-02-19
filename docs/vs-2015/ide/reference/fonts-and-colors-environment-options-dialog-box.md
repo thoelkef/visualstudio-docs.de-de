@@ -192,7 +192,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**XML-Attribut**|Attributnamen.|  
 |**XML-Attributanführungszeichen**|Die Anführungszeichen für XML-Attribute.|  
 |**XML-Attributwert**|Der Inhalt von XML-Attributen.|  
-|**XML-CData-Abschnitt**|Der Inhalt von \<![CDATA[...]]>|  
+|**XML-CData-Abschnitt**|Der Inhalt von \<![CDATA[…]]>.|  
 |**XML-Kommentar**|Der Inhalt von \<!-- -->|  
 |**XML-Trennzeichen**|XML-Syntaxtrennzeichen, z.B. <, <?, <!, \<!--, -->, ?\>, \<![, ]]> und [, ]|  
 |**XML-Dokumentattribut**|Der Wert eines XML-Dokumentationsattributs wie z.B. \<param name="I">, wobei das „I“ farbig hervorgehoben ist|  

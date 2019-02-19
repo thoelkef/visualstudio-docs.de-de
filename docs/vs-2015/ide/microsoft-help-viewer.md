@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755037"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820095"
 Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen.  
   
 > [!WARNING]
->  Help Viewer wird gemeinsam mit Visual Studio installiert. Um Hilfethemen nicht auf der MSDN-Downloadsite, sondern in Help Viewer lesen zu starten, wechseln Sie zu der **Hilfe** in Visual Studio, wählen Sie im Menü **Hilfeeinstellungen festlegen**, und wählen Sie dann **starten in der Hilfe Viewer**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
+>  Help Viewer wird gemeinsam mit Visual Studio installiert. Wenn Sie Hilfeartikel nicht auf der MSDN-Downloadwebsite, sondern in Help Viewer zu lesen, wechseln Sie zum Menü **Hilfe** in Visual Studio, wählen Sie **Hilfeeinstellungen festlegen** aus, und klicken Sie dann auf **In Help Viewer starten**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
   
  Sie haben folgende Möglichkeiten:  
   
@@ -84,6 +79,3 @@ Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Mic
  [Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)   
  [Suchen nach Informationen](../ide/locate-information.md)   
  [Problembehandlung bei Help Viewer](../ide/troubleshooting-the-help-viewer.md)
-
-
-

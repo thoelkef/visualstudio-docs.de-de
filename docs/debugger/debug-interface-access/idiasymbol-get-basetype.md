@@ -40,7 +40,7 @@ HRESULT get_baseType ( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der Basistyp für ein Symbol kann ermittelt werden, indem zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den Basistyp. Beachten Sie, dass einige Symbole nicht keinen Basistyp aufweisen können – z. B. einen ein.  
   
 ## <a name="example"></a>Beispiel  
@@ -62,7 +62,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

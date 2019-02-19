@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81d41918d61bbe95cfe19d2382535449a47deb8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775813"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;Zusammenfassung&gt; (JavaScript)
@@ -38,7 +38,7 @@ Gibt die Beschreibung für eine Funktion oder Methode an.
  `description`  
  Dies ist optional. Eine Beschreibung der Funktion oder Methode.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Elemente verwendet, um Funktionen, mit Anmerkungen versehen, darunter [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md), muss im Funktionstext vor allen Anweisungen platziert werden.  
   
 ## <a name="example"></a>Beispiel  

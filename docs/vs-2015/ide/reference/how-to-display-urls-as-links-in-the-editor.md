@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5842f0f931eecd822dcaeba5eb6b3e33bd826c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758840"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Vorgehensweise: Anzeigen von URLs als Links im Editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   

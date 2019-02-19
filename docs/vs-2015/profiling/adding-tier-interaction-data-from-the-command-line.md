@@ -1,14 +1,9 @@
 ---
 title: Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
@@ -16,13 +11,13 @@ ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b3912e823a6e6ee32488fcda94616aef414d3d22
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778882"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
  **Sammeln von TIP-Daten auf einem Remotecomputer**  
   
- Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie kopieren die **Vs\_Profiler\_**_\<Plattform >_ **\_**  _\<Sprache >_**.exe** -Datei aus dem _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**Ordner eines Visual Studio-Computers auf dem Remotecomputer und installieren Sie es. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
+ Sie müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner _%VInstallDir%_**\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren, um Ebeneninteraktionsdaten auf einem Remotecomputer zu erfassen. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
   
  **TIP-Berichte**  
   
@@ -159,6 +154,3 @@ vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```  
   
  Weitere Informationen zu VSPerfASPNETCmd finden Sie unter [Schnelle Website-Profilerstellung mit VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
-
-
-

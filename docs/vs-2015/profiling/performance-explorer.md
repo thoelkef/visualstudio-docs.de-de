@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784099"
 ---
 # <a name="performance-explorer"></a>Leistungs-Explorer
@@ -38,7 +38,7 @@ Mit den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools kön
 |----------|---------------------|  
 |**Neue Techniken für Windows 8**|[Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**Verständnis der Profilerstellungskonzepte:** Informationen zu den Konzepten und Begriffen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden.|[Übersichten](../profiling/overviews-performance-tools.md)|  
-|**Erste Schritte:** Informationen zu den grundlegenden Prozeduren, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|  
+|**Erste Schritte:** Informationen zu den grundlegenden Vorgehensweisen, die beim Sammeln, Anzeigen und Analysieren der Codeleistung unter Verwendung von Profilerstellungstools angewendet werden. Probieren Sie es mit einer praktischen exemplarischen Vorgehensweise aus.|[Erste Schritte](../profiling/getting-started-with-performance-tools.md)|  
 |**Konfigurieren einer Profilerstellungssitzung:** Informationen zu komplexeren Verfahren zum Angeben der Projekte oder Binärdateien für die Profilerstellung, zum Auswählen einer Profilerstellungsmethode, zum Auswählen der zu sammelnden Leistungsdaten und zum Festlegen anderer Optionen für die Profilerstellungssitzung.|[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)|  
 |**Steuern der Daten, die vom Profiler gesammelt werden:** Informationen zum Verwenden der Leistungssitzungseigenschaften und interaktiven Verfahren zum Starten und Beenden der Profilerstellung und zum Beschränken der gesammelten Leistungsdaten auf die gewünschten Informationen.|[Steuern der Datenauflistung](../profiling/controlling-data-collection.md)|  
 |**Ermitteln von Leistungsproblemen:** Informationen zum Anzeigen und Analysieren der gesammelten Leistungsdaten im Berichtsansichtsfenster der Profilerstellungstools.|[Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)|  

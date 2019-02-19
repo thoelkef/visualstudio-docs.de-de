@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54952300"
@@ -60,7 +60,7 @@ typedef enum THUNK_ORDINAL { 
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  Branch Punkt Trampoline Thunk.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte in dieser Enumeration werden zurückgegeben, von einem Aufruf der [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  

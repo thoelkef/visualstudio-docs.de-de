@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54919551"
@@ -442,7 +442,7 @@ enum CV_HREG_e { 
  CV_M32R_*  
  Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Jeder Prozessortyp verwendet seinen eigenen Satz von Registern.  
   
  Die Werte in dieser Enumeration werden für die folgenden Methoden übergeben:  

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
+title: IDiaStackWalker::getEnumFrames2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -46,7 +46,7 @@ Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zum Abrufen einer Stack-Frame-Liste für die nur die X86-Plattform, rufen die [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  

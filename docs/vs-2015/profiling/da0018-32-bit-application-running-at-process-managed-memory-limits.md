@@ -26,7 +26,7 @@ ms.locfileid: "54773286"
 Regel-Id | DA0018 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Die verwalteten speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.  
+| Nachricht | Die verwalteten speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.|  
 | Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -54,7 +54,7 @@ Regel-Id | DA0018 |
   
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-   - oder -  
+   - oder -   
   
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   

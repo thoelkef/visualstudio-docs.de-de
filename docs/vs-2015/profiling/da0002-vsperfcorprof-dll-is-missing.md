@@ -27,7 +27,7 @@ ms.locfileid: "54792922"
 Regel-Id | DA0002 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Profilerstellung mithilfe der Befehlszeilentools VSPerfCmd und VSPerfASPNETCmd |  
-| Nachricht | Offenbar wurde die Datei ohne ordnungsgemäße Festlegen der Umgebungsvariablen mit "VSPerfCLREnv.cmd" erfasst. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.  
+| Nachricht | Offenbar wurde die Datei ohne ordnungsgemäße Festlegen der Umgebungsvariablen mit "VSPerfCLREnv.cmd" erfasst. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  

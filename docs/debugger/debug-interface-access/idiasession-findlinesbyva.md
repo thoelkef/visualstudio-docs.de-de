@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByVA | Microsoft Docs
+title: IDiaSession::findLinesByVA | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

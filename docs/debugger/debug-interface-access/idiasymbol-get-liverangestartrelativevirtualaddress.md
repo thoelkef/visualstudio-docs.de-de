@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs
+title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,7 +40,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 > [!NOTE]
 >  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

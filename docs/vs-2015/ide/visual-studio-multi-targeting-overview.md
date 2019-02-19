@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768879"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio
@@ -60,7 +60,7 @@ In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie d
 >  Durch Frameworkziele wird nicht garantiert, dass die Anwendung ordnungsgemäß ausgeführt wird. Sie müssen die Anwendung dennoch testen, um sicherzustellen, dass Sie mit der Zielversion ausgeführt wird. Sie können keine Frameworkversionen als Ziel verwenden, die älter als .NET Framework 2.0 sind.
 
 ## <a name="selecting-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
- Wenn Sie ein Projekt erstellen, wählen Sie die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Projektvorlagen wird basierend auf der Auswahl gefiltert. Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Wenn Sie ein Projekt erstellen, wählen Sie die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Projektvorlagen wird basierend auf der Auswahl gefiltert. Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  In den Express-Editionen von Visual Studio können Sie das Zielframework im Dialogfeld **Neues Projekt** nicht festlegen.
@@ -76,7 +76,7 @@ In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie d
  Weitere Informationen zu Assemblyverweisen finden Sie unter [Resolving Assemblies at Design Time (Auflösen von Assemblys zur Entwurfszeit)](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Aktivieren von LINQ
- Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf "System.Core" und ein Import auf Projektebene für "System.Linq" (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich Option Infer aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Create a LINQ Project (Vorgehensweise: Erstellen eines LINQ-Projekts)](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf "System.Core" und ein Import auf Projektebene für "System.Linq" (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich Option Infer aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [How to: Create a LINQ Project (Vorgehensweise: Erstellen eines LINQ-Projekts)](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Siehe auch
  [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework-Zielversionen für ASP.NET Web Projects](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [Plattform Plattformkompatibilität und Systemanforderungen](http://www.microsoft.com/visualstudio/eng/products/compatibility)

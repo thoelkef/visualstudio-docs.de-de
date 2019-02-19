@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8477de8bf84950d778d4ce843522be35b2d7387
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54772380"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;Param&gt; (JavaScript)
@@ -86,7 +86,7 @@ Gibt Dokumentationsinformationen für einen Parameter in einer Funktion oder Met
   `description`  
   Dies ist optional. Eine Beschreibung des Parameters.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Das einzig erforderliche Attribut ist das `name`-Attribut. Alle anderen Attribute sind optional.  
   
  Elemente verwendet, um Funktionen, z. B. kommentieren [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md), platziert werden muss in den Funktionstext vor allen Anweisungen.  

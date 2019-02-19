@@ -27,7 +27,7 @@ ms.locfileid: "54785770"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-HINWEIS
+HINWEIS]
 >  In der Fehlerliste werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im Ausgabefenster kopieren. Drücken Sie zum Anzeigen des Ausgabefensters STRG+ALT+O. Siehe [Ausgabefenster](../../ide/reference/output-window.md).  
   
  Sie können Apps mithilfe des Fensters **Fehlerliste** schneller entwickeln. Sie können z. B. folgende Aufgaben ausführen:  

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f57dedfecd8db92f93183fa0430de712431f83a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787607"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Gewusst wie: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2010 Premium stellt Filter für Leistungsberichte bereit, sodass diese nur Code anzeigen, die Sie implementiert haben. Diese Funktion, die „Nur eigenen Code“ genannt wird, ist standardmäßig aktiviert. Die Funktion wird im Dialogfeld **Optionen** über die Option **Nur eigenen Code** konfiguriert.  

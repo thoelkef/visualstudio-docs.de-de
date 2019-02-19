@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen nach Themen im Index | Microsoft-Dokumentation'
+title: 'Gewusst wie: Suchen vom Themen im Index | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758168"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Vorgehensweise: Suchen nach Themen im Index
+# <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten Inhalten zugeordnet sind. Jedem Thema ist möglicherweise mehr als ein Stichwort zugeordnet, und jedem Stichwort können mehrere Themen zugeordnet sein. Nutzen Sie diesen Index genau so, wie Sie den Index eines Buchs verwenden würden.  
