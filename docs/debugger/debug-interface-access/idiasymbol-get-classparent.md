@@ -44,10 +44,10 @@ HRESULT get_classParent ( 
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Typen von Symbolen, die Klasse Eltern können in dokumentiert sind [Hierarchie der Symboltypen Klasse](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Siehe auch  

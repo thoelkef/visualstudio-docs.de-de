@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54835025"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
@@ -30,7 +30,7 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
 - Wenn das Kontrollkästchen neben einer Komponente aktiviert wird, wird für diese Komponente in der **Toolbox** ein Symbol aufgeführt.  
   
   > [!TIP]
-  >  Um zu einem projektspezifischen Dokument, das zur Bearbeitung geöffnet ist, eine Instanz eines WPF-Steuerelements hinzuzufügen, ziehen Sie dessen Symbol **Toolbox** auf die Entwurfsoberfläche. Standardmarkup und Code für die Komponente werden in das Projekt eingefügt und können bearbeitet werden. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Toolbox-Fensters](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) und [Vorgehensweise: Ändern von Registerkarten der Toolbox](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  >  Um zu einem projektspezifischen Dokument, das zur Bearbeitung geöffnet ist, eine Instanz eines WPF-Steuerelements hinzuzufügen, ziehen Sie dessen Symbol **Toolbox** auf die Entwurfsoberfläche. Standardmarkup und Code für die Komponente werden in das Projekt eingefügt und können bearbeitet werden. Weitere Informationen finden Sie unter [How to: Manage the Toolbox Window (Vorgehensweise: Verwalten des Toolbox-Fensters)](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) und [Vorgehensweise: Ändern von Registerkarten der Toolbox](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Wenn das Kontrollkästchen neben einer Komponente deaktiviert wird, wird das zugehörige Symbol aus der **Toolbox** entfernt.  
   
@@ -73,10 +73,10 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
   
   Wenn Entwurfszeit-Metadaten auf das benutzerdefinierte Steuerelement angewendet werden und diese Metadaten angeben, dass <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> auf `false` festgelegt ist, wird das Steuerelement nicht in der Toolbox angezeigt.  
   
-  Sie können direkt in der XAML-Ansicht auf die Steuerelemente verweisen, indem Sie den Namespace und die Assembly für das Steuerelement zuordnen. Weitere Informationen finden Sie unter [Vorgehensweise: Ein Namespace in XAML importieren](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  Sie können direkt in der XAML-Ansicht auf die Steuerelemente verweisen, indem Sie den Namespace und die Assembly für das Steuerelement zuordnen. Weitere Informationen finden Sie unter [Vorgehensweise: Importieren eines Namespace in XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dialogfeld „Toolboxelemente auswählen“ (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Toolbox](../../ide/reference/toolbox.md)   
- [Vorgehensweise: Verwenden Sie ein Drittanbieter-WPF-Steuerelement in einer WPF-Anwendung](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [Vorgehensweise: Verwenden eines WPF-Steuerelements eines Drittanbieters in der WPF-Anwendung](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
  [WPF-Designer](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

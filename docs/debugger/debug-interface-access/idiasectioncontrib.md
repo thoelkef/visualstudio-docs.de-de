@@ -58,7 +58,7 @@ IDiaSectionContrib : IUnknown
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Ruft die CRC-Wert für die Umsetzungsinformationen für den Abschnitt ab.|  
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Ruft den Compiland-Bezeichner für den Abschnitt ab.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Diese Schnittstelle wird abrufen durch Aufrufen der [idiaenumsectioncontribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) und [idiaenumsectioncontribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) Methoden. Finden Sie unter den [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Schnittstelle für ein Beispiel zum Abrufen von der `IDiaSectionContrib` Schnittstelle.  

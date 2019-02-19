@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8760a529ddc9453911e2fcaf53255c98ec992e4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54789951"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
@@ -35,7 +35,7 @@ Registriert unter „*\<Visual Studio-Installationspfad>* \Common7\IDE\ProjectTe
 devenv.exe /InstallVSTemplates  
 ```  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="see-also"></a>Siehe auch  
  [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

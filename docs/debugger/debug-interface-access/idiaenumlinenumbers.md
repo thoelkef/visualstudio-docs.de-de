@@ -41,7 +41,7 @@ IDiaEnumLineNumbers : IUnknown
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
 |[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Diese Schnittstelle wird abrufen durch Aufrufen einer der folgenden Methoden in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle:  

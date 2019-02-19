@@ -1,25 +1,20 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802641"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,20 +46,20 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
   
 1.  Erstellen Sie ein Universal App-Projekt in C#.  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Projektknoten im Projektmappen-Explorer, und wählen Sie **hinzufügen > verbundener Dienst**. Der Assistent zum Hinzufügen eines verbundenen Diensts zeigt die Liste der Dienste in dem Azure-Konto an, das mit Ihrer Visual Studio-Anmelde-ID verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem bestimmten Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.  
+2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Verbundener Dienst** aus. Der Assistent zum Hinzufügen eines verbundenen Diensts zeigt die Liste der Dienste in dem Azure-Konto an, das mit Ihrer Visual Studio-Anmelde-ID verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem bestimmten Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.  
   
     > [!WARNING]
-    >  Wenn dies das erste Mal ist Sie eine Store-app in Visual Studio 2015 auf einem bestimmten Computer erstellen, werden Sie aufgefordert, Ihr Gerät Entwicklungsmodus zu aktivieren, indem Sie auf **Einstellungen &#124; . Updates und Sicherheit &#124; für Entwickler** auf Ihrem Computer. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    >  Wenn Sie auf einem bestimmten Computer zum ersten Mal eine Store-App in Visual Studio 2015 erstellen, werden Sie aufgefordert, den Entwicklungsmodus für das Gerät zu aktivieren. Gehen Sie dazu auf Ihrem Computer zu Einstellungen |  **Updates und Sicherheit &#124; für Entwickler** auf Ihrem Computer. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
 ###  <a name="access_azure"></a> Zugreifen auf Azure Active Directory in einem Webprojekt  
- Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Um dies in Aktion zu sehen, erstellen Sie eine Webanwendung (**Datei > Neues Projekt > c# > Cloud > ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld „Neues ASP.NET-Projekt“ **Authentifizierung ändern**. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.  
+ Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Erstellen Sie eine Webanwendung (**Datei > Neues Projekt > C# > Cloud > ASP.NET-Webanwendung**), um diesen Vorgang in der Praxis zu testen. Wählen Sie im Dialogfeld „Neues ASP.NET-Projekt“ **Authentifizierung ändern**. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.  
   
  ![Dialogfeld „Authentifizierung ändern“ für ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
   
  Weitere Informationen zu den verschiedenen Arten der Authentifizierung in ASP.NET finden Sie unter [Erstellen von ASP.NET-Webprojekten in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) . Die Informationen zur Authentifizierung gelten auch für Visual Studio 2015.  
   
 ### <a name="access-your-visual-studio-team-services-account"></a>Zugreifen auf Ihr Visual Studio Team Services-Konto  
- Wählen Sie im Hauptmenü **Team > Herstellen einer Verbindung mit Team Foundation Server** um die **Team Explorer** Fenster. Klicken Sie auf **Teamprojekte auswählen**. Im Listenfeld unter **Team Foundation Server-Computer auswählen**sehen Sie die URL für Ihr Visual Studio Team Services-Konto. Nach Auswahl der URL werden Sie angemeldet, ohne Ihre Anmeldeinformationen erneut eingeben zu müssen.  
+ Wählen Sie im Hauptmenü **Team > Verbindung mit Team Foundation Server herstellen** aus, um das Fenster **Team Explorer** aufzurufen. Klicken Sie auf **Teamprojekte auswählen**. Im Listenfeld unter **Team Foundation Server-Computer auswählen**sehen Sie die URL für Ihr Visual Studio Team Services-Konto. Nach Auswahl der URL werden Sie angemeldet, ohne Ihre Anmeldeinformationen erneut eingeben zu müssen.  
   
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Hinzufügen eines zweiten Benutzerkontos zu Visual Studio  
  Klicken Sie auf den Abwärtspfeil neben Ihrem Benutzernamen oben rechts in Visual Studio. Klicken Sie anschließend auf das Menüelement **Kontoeinstellungen** . Im Dialogfeld **Konto-Manager** wird das Konto angezeigt, mit dem Sie sich angemeldet haben. Klicken Sie auf den Link **Konto hinzufügen** unten links im Dialogfeld, um ein neues Microsoft-Konto oder ein neues Geschäfts- bzw. Schulkonto hinzuzufügen.  
@@ -76,7 +71,4 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
  ![Konto-Manager](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Erneutes Aufrufen des Assistenten zum Hinzufügen verbundener Dienste und des Server-Explorers  
- Wechseln Sie nun erneut zum **Server Explorer** , klicken Sie mit der rechten Maustaste auf den Azure-Knoten, und wählen Sie **Abonnements verwalten und filtern**. Wählen Sie das neue Konto durch Klicken auf den Pfeil nach unten neben dem aktuellen Konto, und wählen Sie dann aus, welche Abonnements Sie im Server-Explorer anzeigen möchten. Es sollten alle Dienste angezeigt werden, die dem angegebenen Abonnement zugeordnet sind. Auch wenn Sie mit dem zweiten Konto gerade nicht bei der Visual Studio-IDE angemeldet sind, sind Sie bei den Diensten und Ressourcen dieses Kontos angemeldet. Das gleiche gilt für **Projekt > verbundenen Dienst hinzufügen** und **Team > Verbindung mit Team Foundation Server**.
-
-
-
+ Wechseln Sie nun erneut zum **Server Explorer** , klicken Sie mit der rechten Maustaste auf den Azure-Knoten, und wählen Sie **Abonnements verwalten und filtern**. Wählen Sie das neue Konto durch Klicken auf den Pfeil nach unten neben dem aktuellen Konto, und wählen Sie dann aus, welche Abonnements Sie im Server-Explorer anzeigen möchten. Es sollten alle Dienste angezeigt werden, die dem angegebenen Abonnement zugeordnet sind. Auch wenn Sie mit dem zweiten Konto gerade nicht bei der Visual Studio-IDE angemeldet sind, sind Sie bei den Diensten und Ressourcen dieses Kontos angemeldet. Das Gleiche gilt für **Projekt > Verbundenen Dienst hinzufügen** und **Team > Verbindung mit Team Foundation Server herstellen**.

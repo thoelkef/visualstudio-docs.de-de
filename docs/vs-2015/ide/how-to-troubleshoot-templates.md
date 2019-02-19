@@ -39,7 +39,7 @@ Wenn keine Vorlage in der Entwicklungsumgebung geladen werden kann, gibt es eini
 5.  Stellen Sie sicher, dass das XML-Format der VSTEMPLATE-Datei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Vorlagenschema folgt. Weitere Informationen zum VSTEMPLATE-Schema finden Sie in der [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Fügen Sie dem -Element ein http://schemas.microsoft.com/developer/vstemplate/2005-Attribut hinzu, und weisen Sie diesem einen Wert von  zu, um die IntelliSense-Unterstützung während der Erstellung der `xmlns`VSTEMPLATE`VSTemplate`-Datei zu nutzen.  
+    >  Fügen Sie dem `VSTemplate`-Element ein `xmlns`-Attribut hinzu, und weisen Sie diesem den Wert http://schemas.microsoft.com/developer/vstemplate/2005 zu, um die IntelliSense-Unterstützung während der Erstellung der VSTEMPLATE-Datei zu nutzen.  
   
 6.  Speichern und schließen Sie die VSTEMPLATE-Datei.  
   

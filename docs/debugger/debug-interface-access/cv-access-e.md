@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c77135fe5ab8e6971bac7cb17d8fa98e5c20577a
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54986565"
@@ -42,7 +42,7 @@ typedef enum CV_access_e { 
  CV_public  
  Element verfügt über öffentlichen Zugriff.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die `friend` Zugriffsspezifizierer ist hier nicht enthalten, da sie in der Regel von nicht-Memberfunktionen verwendet wird, die Zugriff auf private oder geschützte Elemente der Klasse haben. Verwenden der [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) Methode zum Suchen von Symbolen mit `SymTagFriend` Zugriff.  
   
 ## <a name="requirements"></a>Anforderungen  

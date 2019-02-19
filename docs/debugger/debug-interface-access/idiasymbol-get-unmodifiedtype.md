@@ -40,7 +40,7 @@ HRESULT get_unmodifiedType( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der aktuelle Typ ist eine Änderung des ursprünglichen Typs zurückgegeben. Der ursprüngliche Typ für ein Symbol kann zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den ursprünglichen Typ ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über einen geänderten Typ, der den ursprünglichen Typ.  
   
 ## <a name="requirements"></a>Anforderungen  

@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204487"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070616"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
-Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+Visual Studio-Debugger können Sie das Navigieren im Code, untersuchen Sie den Status einer App und der Ausführungsablauf anzeigen. Sie können die Tastenkombinationen in Visual Studio, Debug-Befehle, Haltepunkte und andere Funktionen verwenden, um schnell auf den Code zu erhalten, die Sie untersuchen möchten. Vertrautheit mit dem Debugger-Navigation-Befehle und Verknüpfungen können sie schneller und einfacher zu finden und Lösung von Anwendungsproblemen.  Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) und [Debuggen, Techniken und Tools](../debugger/write-better-code-with-visual-studio.md) , bevor Sie diesen Artikel durchgehen.
   
 ## <a name="basic-debugging"></a>Debuggen – Grundlagen  
 
@@ -186,5 +186,5 @@ Um Microsoft-Symbole laden zu können, finden Sie unter [Orte für Symboldateien
 
 ## <a name="see-also"></a>Siehe auch
  [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
- [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
+ [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md) 

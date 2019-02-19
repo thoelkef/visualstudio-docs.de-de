@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
+title: IDiaSession::findAcceleratorInlineesByName | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -43,7 +43,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Funktion sucht nach Ihren Inlinees zuzuordnen sind, nur innerhalb von Accelerator-Stub-Funktionen. Native C++-Prozedur Datensätze werden ignoriert.  
   
 ## <a name="see-also"></a>Siehe auch  

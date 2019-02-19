@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Prev | Microsoft Docs
+title: IDiaEnumSymbolsByAddr::Prev | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -45,7 +45,7 @@ HRESULT Prev ( 
 ## <a name="return-value"></a>Rückgabewert  
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine vorherigen Symbole. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Methode aktualisiert die Position des Enumerators durch die Anzahl der Elemente abgerufen.  
   
 ## <a name="see-also"></a>Siehe auch  

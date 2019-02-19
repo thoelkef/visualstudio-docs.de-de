@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
+title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,7 +40,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 > [!NOTE]
 >  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die gebildet, indem Sie den Abschnitt und den Offset-Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
  Verwenden Sie zum Abrufen des Teils "Abschnitt" die Adresse [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  

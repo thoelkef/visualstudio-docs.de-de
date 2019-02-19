@@ -23,10 +23,10 @@ ms.locfileid: "54768970"
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|TODO|  
+Regel-ID|TODO|  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Es wurde relativ hohes Maß an CPU Kernelmoduszeit gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.  
+| Nachricht | Es wurde relativ hohes Maß an CPU Kernelmoduszeit gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

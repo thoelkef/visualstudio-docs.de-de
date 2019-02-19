@@ -51,7 +51,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
   Im folgenden Verzeichnis sind beispielsweise benutzerdefinierte [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projektvorlagen enthalten:  
   
-  C:\Dokumente und Einstellungen\Benutzername\Eigene Dateien\Visual Studio\\Version\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Dokumente und Einstellungen\Benutzername\Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Visual C#\  
   
   Benutzerdefinierte Vorlagen enthalten kein Unterverzeichnis für lokalisierte Vorlagen. Sie können das Standardverzeichnis für benutzerdefinierte Vorlagen im Dialogfeld **Optionen** unter **Umgebung\Projekte und Projektmappen** ändern.  
   
@@ -117,7 +117,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 1. Erstellen Sie im Verzeichnis für benutzerdefinierte Projektvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie "HelloWorld" für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, erstellen Sie das folgende Verzeichnis:  
   
-    \Eigene Dateien\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
@@ -131,7 +131,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 1.  Erstellen Sie im Verzeichnis für benutzerdefinierte Elementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie HelloWorld für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
   
-     \Eigene Dateien\Visual Studio \\Version\>\Templates\ProjectTemplates\Language\  
+     \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Language\  
   
 2.  Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   

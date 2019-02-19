@@ -129,7 +129,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
   
 14. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **als Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten (**...** ) Schaltfläche.  
   
-     - oder -  
+     - oder -   
   
      Wenn das Zertifikat im Zertifikatspeicher gespeichert wird, der von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option mit gespeicherten Zertifikat signieren**, und wählen Sie das Zertifikat aus der Liste aus.  
   

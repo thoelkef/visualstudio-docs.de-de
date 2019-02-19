@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768957"
 ---
 # <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
@@ -34,7 +34,7 @@ Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können
   
 |name|Beschreibung|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt. Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Hinweis**:  Das <xref:System.Data.DataSet>-Objekt in der **Toolbox** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt. Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Hinweis:** Das <xref:System.Data.DataSet>-Objekt in der **Toolbox** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Bietet ein leistungsstarkes und flexibles Instrument zum Anzeigen von Daten in Tabellenform.|  
 |<xref:System.Windows.Forms.BindingSource>|Vereinfacht das Binden von Steuerelementen an eine zugrunde liegende Datenquelle.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Stellt die Benutzeroberfläche zum Navigieren und Bearbeiten von Steuerelementen, die an Daten gebunden sind, auf einem Formular dar.|  

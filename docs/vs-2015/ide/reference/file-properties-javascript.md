@@ -54,7 +54,7 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
   
 - **Inhalt**: Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.  
   
-- **Manifest**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.  
+- **Manifest:** Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.  
   
 - **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.  
   
@@ -91,7 +91,7 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
  Zeigt den Pfad zur SDK-Datei an, auf die verwiesen wird.  
   
 ### <a name="uri"></a>URI  
- Zeigt den URI an, der in den HTML- oder JavaScript-Dateien enthalten sein muss, um die Datei als Quelldatei zu enthalten.  
+ Zeigt den URI an, der in den HTML- oder JavaScript-Dateien enthalten sein muss, um die Datei als Quelldatei zu einzufügen.  
   
 ### <a name="version"></a>Version  
  Zeigt die Version des Verweises an.  

@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae2ed3e8a9c07d59f5b1c2fe2350956a54dfaa66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761506"
 ---
 # <a name="list-source-command"></a>Befehl "Quelle auflisten"
@@ -51,7 +51,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
  /ShowLineNumbers:`yes|no`  
  Dies ist optional. Gibt an, ob Zeilennummern angezeigt werden sollen.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel listet den Quellcode aus Zeile 4 der Datei „Form1.vb“ mit eingeblendeten Zeilennummern an.  

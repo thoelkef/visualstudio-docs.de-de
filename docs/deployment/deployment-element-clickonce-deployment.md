@@ -102,7 +102,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 |------------| - |
 | `codebase` | Erforderlich. Identifiziert den Speicherplatz, als ein Uniform Resource Identifier (URI), der das Bereitstellungsmanifest, das zum Aktualisieren von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Element ermöglicht es auch für die Weiterleitung der Speicherorte für die Aktualisierung für Installationen von CD-basierte. Ein gültiger URI muss sein. |
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Sie können konfigurieren, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung für die Suche nach Updates beim Start nach Updates suchen, nach dem Start oder nie nach Updates suchen. Stellen Sie sicher, die für die Suche nach Updates beim Start der `beforeApplicationStartup` Element vorhanden ist, unter der `update` Element. Suche nach Updates nach dem Start sicher, dass die `expiration` Element vorhanden ist, unter dem `update` -Element, und die Updateintervallen angegeben werden.  
 
  Zum Suchen nach Updates zu deaktivieren, entfernen Sie die `subscription` Element. Bei der Angabe im Bereitstellungsmanifest nie nach Updates gesucht, Sie können weiterhin manuell nach Updates Suchen mithilfe der <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> Methode.  

@@ -33,10 +33,10 @@ Mithilfe von erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalten ver
   
 |Suchen nach|Verwendung|Beispiel|Ergebnis|  
 |-------------------|---------|-------------|------------|  
-|Eine Benennung im Titel des Themas|title:|title:binaryreader|Themen, die „Binaryreader“ im Titel enthalten.|  
+|Eine Benennung im Titel des Themas|title:|title:binaryreader|Themen, die „binaryreader“ im Titel enthalten.|  
 |Eine Benennung in einem Codebeispiel|code:|code:readdouble|Themen, die „readdouble“ in einem Codebeispiel enthalten.|  
 |Eine Benennung in einem Beispiel einer spezifischen Programmiersprache|code:vb:|code:vb:string|Themen, die „string“ in einem Visual Basic-Beispiel enthalten.|  
-|Ein Thema, das einem bestimmten Index-Schlüsselwort zugeordnet ist|Schlüsselwort:|Schlüsselwort: readbyte|Themen, die dem Index-Schlüsselwort „readbyte“ zugeordnet sind.|  
+|Ein Thema, das einem bestimmten Index-Schlüsselwort zugeordnet ist|Schlüsselwort:|Schlüsselwort: readbyte|Themen, die dem Indexschlüsselwort „readbyte“ zugeordnet sind.|  
   
  Sie können den Operator code: verwenden, um Inhalt zu einer beliebigen Programmiersprache zu suchen. Es werden allerdings nur Ergebnisse für Inhalt zurückgegeben, der mit einer spezifischen Programmiersprache markiert ist. Die folgende Tabelle enthält die Programmiersprachen, die dieser Operator unterstützt:  
   

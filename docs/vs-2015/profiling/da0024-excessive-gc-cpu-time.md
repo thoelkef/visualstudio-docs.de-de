@@ -26,7 +26,7 @@ ms.locfileid: "54771068"
 Regel-Id | DA0024 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | %Zeit für GC ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.  
+| Nachricht | %Zeit für GC ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|  
 | Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

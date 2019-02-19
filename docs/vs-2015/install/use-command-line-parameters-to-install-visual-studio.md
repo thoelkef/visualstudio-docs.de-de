@@ -40,7 +40,7 @@ Wenn Sie Visual Studio 2015 von einer Eingabeaufforderung aus installieren, kön
 |**/AddRemoveFeatures**|Gibt an, welche Funktionen vom installierten Produkt entfernt oder zu diesem hinzugefügt werden.|
 |**/AdminFile** *AdminDeployment.xml*|Installiert Visual Studio mithilfe der von Ihnen für administrative Installation angegebenen Datendatei.|
 |**/ ChainingPackage** *BundleName*|Gibt an, welches Bündel dieses Bündel verkettet. Dies kann auch zum Angeben einer Customer Improvement Experience-Gruppe verwendet werden.|
-|**/CreateAdminFile \<filename>**|Gibt den Speicherort an, um eine Kontrolldateien zu erstellen, die mit „/AdminFile“ verwendet werden kann.|
+|**/CreateAdminFile \<Dateiname>**|Gibt den Speicherort an, um eine Kontrolldateien zu erstellen, die mit „/AdminFile“ verwendet werden kann.|
 |**/CustomInstallPath** *InstallationDirectory*|Installiert alle alternativen Pakete in dem von Ihnen angegebenen Verzeichnis.|
 |**/ForceRestart**|Startet den Computer nach der Installation immer neu.|
 |**/full**|Installiert alle Produktfunktionen.|

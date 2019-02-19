@@ -37,7 +37,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="return-value"></a>Rückgabewert  
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Behandlung von Ausnahmen wird häufiger als strukturierte Ausnahmebehandlung bezeichnet.  
   
  Um zu bestimmen, wenn die C++-Ausnahmebehandlung gültig ist, rufen Sie die [idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) Methode.  

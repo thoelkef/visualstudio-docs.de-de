@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47d898e9a0fb40347b2463cfa8ecccb1e58f896
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c0f8241bfb4ba4d6eee228dd3563209a4c4afae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920122"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Beschreibt die Eigenschaften einer Instanz des Symbols.  
@@ -220,7 +220,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Ruft die ID der virtuellen Tabelle Form des Symbols ab.|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Ruft ein Flag, der angibt, ob der benutzerdefinierte Datentyp "volatile" ist.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Rufen Sie diese Schnittstelle, indem Sie eine der folgenden Methoden aufrufen:  
@@ -340,7 +340,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

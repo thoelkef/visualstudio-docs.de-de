@@ -28,7 +28,7 @@ ms.locfileid: "54785048"
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektbrowser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Klassenansicht** und der Objektkatalog zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.  
+Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.  
   
 |Symbol|Beschreibung|Symbol|Beschreibung|  
 |----------|-----------------|----------|-----------------|  

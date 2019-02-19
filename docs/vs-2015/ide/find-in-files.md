@@ -31,7 +31,7 @@ ms.locfileid: "54804358"
 # <a name="find-in-files"></a>Suchen in Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit der Option Suchen in Dateien können Sie einen bestimmten Satz Dateien durchsuchen. Die gefundenen Übereinstimmungen und ausgeführten Aktionen werden im Fenster **Suchergebnisse** angezeigt, das unter **Ergebnisoptionen** ausgewählt wurde.  
+Mit der Option **In Dateien suchen** können Sie bestimmte Dateien durchsuchen. Die gefundenen Übereinstimmungen und ausgeführten Aktionen werden im Fenster **Suchergebnisse** angezeigt, das unter **Ergebnisoptionen** ausgewählt wurde.  
   
  Rufen Sie die Option **Suchen in Dateien** im Fenster **Suchen und Ersetzen** mithilfe einer der folgenden Methoden auf.  
   

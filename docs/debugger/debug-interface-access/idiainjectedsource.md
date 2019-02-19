@@ -41,7 +41,7 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Ruft den Indikator verwendeten Komprimierungstyp für die Datenquelle ab.|  
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Ruft die Quellbytes-Code ab.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Eingefügte Quelle ist Text, der während der Kompilierung eingefügt wird. Dies bedeutet jedoch nicht den Präprozessor `#include` in C++ verwendet.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

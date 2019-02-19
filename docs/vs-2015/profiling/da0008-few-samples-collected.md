@@ -27,7 +27,7 @@ ms.locfileid: "54800404"
 Regel-Id | DA0008 ES WURDEN NUR |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Es wurden nur wenige Samplings gesammelt. Sie sollten eine längere Ausführung oder eine schnellere Samplingrate in Betracht ziehen, um aussagekräftigere Ergebnisse zu erzielen.  
+| Nachricht | Es wurden nur wenige Samplings gesammelt. Sie sollten eine längere Ausführung oder eine schnellere Samplingrate in Betracht ziehen, um aussagekräftigere Ergebnisse zu erzielen.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  

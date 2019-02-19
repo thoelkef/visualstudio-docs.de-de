@@ -169,7 +169,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Alle Assemblys, die von Ihrer Anwendung verwendeten setzt das Vorhandensein einer entsprechenden `dependency` Element. Abhängige Assemblys enthalten keine Assemblys, die als Testplattform-Assemblys im globalen Assemblycache vorinstalliert sein müssen.  
 
 ## <a name="example"></a>Beispiel  

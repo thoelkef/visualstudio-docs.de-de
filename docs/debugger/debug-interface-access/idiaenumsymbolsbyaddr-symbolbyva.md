@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByVA | Microsoft Docs
+title: IDiaEnumSymbolsByAddr::symbolByVA | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

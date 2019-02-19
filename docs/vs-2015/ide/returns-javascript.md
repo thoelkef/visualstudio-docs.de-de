@@ -1,14 +1,9 @@
 ---
 title: '&lt;Gibt&gt; (JavaScript) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - returns JavaScript XML tag
 - <returns> JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 10d97829-c0ae-40a5-b04c-d8b538cdefbc
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5896c35c53feedb2f253bd86691f2fbf6793099e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81a9a42a104adb2a9d9a9aba483e2588d7332868
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875709"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54801775"
 ---
-# <a name="ltreturnsgt-javascript"></a>&lt;Gibt&gt; (JavaScript)
+# <a name="ltreturnsgt-javascript"></a>&lt;returns&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gibt Dokumentationsinformationen für das Ergebnis einer Funktion oder eines Methodenaufrufs an.  
@@ -57,7 +52,7 @@ Gibt Dokumentationsinformationen für das Ergebnis einer Funktion oder eines Met
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob der dokumentierte Rückgabewert ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass der Rückgabewert ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense den dokumentierten Rückgabewert bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `mayBeNull`  
-  Dies ist optional. Gibt an, ob der dokumentierte Rückgabewert auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Gibt an, ob der dokumentierte Rückgabewert auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Rückgabewert auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `elementType`  
   Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
@@ -69,7 +64,7 @@ Gibt Dokumentationsinformationen für das Ergebnis einer Funktion oder eines Met
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `elementMayBeNull`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `locid`  
   Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über den Rückgabewert. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
@@ -80,7 +75,7 @@ Gibt Dokumentationsinformationen für das Ergebnis einer Funktion oder eines Met
   `description`  
   Dies ist optional. Eine Beschreibung des Rückgabewerts.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Das `<returns>`-Element muss im Funktionstext vor allen Anweisungen eingefügt werden.  
   
 ## <a name="example"></a>Beispiel  
@@ -119,6 +114,3 @@ calculate().  // Completion list for a Number.
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
-
-
-

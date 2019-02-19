@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 49ec96150eda9bf0a62b9767fefbfd5936aef840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774164"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
@@ -66,9 +66,9 @@ Sie können Elemente – Steuerelemente, Layouts und Formen – der App in XAML,
   
 1.  Wählen Sie die Elemente aus, die Sie ausrichten möchten. Sie können mehr als ein Element auswählen, indem Sie die STRG-Taste gedrückt halten, während Sie die Elemente auswählen.  
   
-2.  Wählen Sie im Abschnitt **Layout** des Eigenschaftenfensters unter **Horizontale Ausrichtung** eine der folgenden Eigenschaften aus: **Links**, **Mitte**, **Rechts** oder **Strecken**.  
+2.  Wählen Sie eine der folgenden Eigenschaften unter **Horizontale Ausrichtung** im **Layout**-Abschnitt des Eigenschaftenfensters aus: **Links**, **Mitte**, **Rechts** oder **Strecken**.  
   
-3.  Wählen Sie im Abschnitt **Layout** des Eigenschaftenfensters unter **Vertikale Ausrichtung** eine der folgenden Eigenschaften aus: **Oben**, **Mitte**, **Unten** oder **Strecken**.  
+3.  Wählen Sie eine der folgenden Eigenschaften unter **Vertikale Ausrichtung** im **Layout**-Abschnitt des Eigenschaftenfensters aus: **Oben**, **Mitte**, **Unten** oder **Strecken**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>So richten Sie zwei oder mehr Elemente mithilfe von Ausrichtungslinien aus  
   

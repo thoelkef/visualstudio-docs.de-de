@@ -141,7 +141,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`FileName`|Dies ist optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass der Wert aus dem Registrierungsschlüssel einen Verzeichnispfad ein, und dieser Name wird an ihn angefügt. Wenn nicht angegeben, wird angenommen, dass der Rückgabewert aus der Registrierung den vollständigen Pfad zu einer Datei enthalten.|  
 |`SearchDepth`|Dies ist optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche zum Ordner obersten Ebene, die durch den Registrierungsschlüssel-Wert angegeben werden schränkt.|  
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Untergeordneten Elemente `InstallChecks` definieren Sie die auszuführenden Tests, die sie nicht ausgeführt. Um die Tests auszuführen, müssen Sie erstellen `Command` Elemente unterhalb der `Commands` Element.  
 
 ## <a name="example"></a>Beispiel  

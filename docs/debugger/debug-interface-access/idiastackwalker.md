@@ -36,7 +36,7 @@ IDiaStackWalker: IUnknown
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Ruft einen Stack-Frame-Enumerator für X86 Plattformen.|  
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Schnittstelle wird verwendet, um eine Liste der Stapelrahmen für ein geladenes Modul zu erhalten. Jede der Methoden übergeben einen [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt (von der Clientanwendung implementiert) bietet die erforderlichen Informationen zum Erstellen der Liste der Stapelrahmen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

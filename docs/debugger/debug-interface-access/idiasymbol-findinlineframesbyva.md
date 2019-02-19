@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByVA | Microsoft Docs
+title: IDiaSymbol::findInlineFramesByVA | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800787"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
@@ -50,7 +50,7 @@ ms.locfileid: "54800787"
 |Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|  
 |Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**RÜCKTASTE**|  
 |Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT** + **ALT**|  
-|IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **Registerkarte** **beachten:**  Drücken Sie **STRG** + **Registerkarte** erneut aus, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  
+|IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **TAB** **Hinweis:** Drücken Sie **STRG** + **TAB** erneut, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

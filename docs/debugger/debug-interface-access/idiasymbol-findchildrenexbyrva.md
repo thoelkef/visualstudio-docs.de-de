@@ -53,7 +53,7 @@ HRESULT findChildrenExByRVA ( 
 ## <a name="return-value"></a>Rückgabewert  
  Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die lokalen Symbole, die zurückgegeben werden enthalten Informationen zum aktiven Bereich.  
   
 ## <a name="requirements"></a>Anforderungen  

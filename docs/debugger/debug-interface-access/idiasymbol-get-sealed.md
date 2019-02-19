@@ -40,7 +40,7 @@ HRESULT get_sealed( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode darf nicht außer Kraft gesetzt sein.  
   
 ## <a name="requirements"></a>Anforderungen  

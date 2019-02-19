@@ -94,7 +94,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
   
 ##  <a name="mac"></a> Mac-Setup (Apple ID, Xcode und Xamarin)  
   
-1.  Erstellen Sie eine kostenlose Apple-ID unter [https://appleid.apple.com](https://appleid.apple.com/), wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.  
+1.  Unter [https://appleid.apple.com](https://appleid.apple.com/) können Sie eine kostenlose Apple-ID erstellen, wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.  
   
 2.  Laden Sie Xcode von [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) herunter, installieren Sie Xcode, und fügen Sie Ihre Apple-ID so hinzu, wie es unter [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Hinzufügen Ihres Kontos zu XCode) (apple.com) beschrieben wird.  
   

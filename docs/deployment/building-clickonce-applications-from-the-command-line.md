@@ -78,7 +78,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Eigenschaften veröffentlichen  
  Wenn Sie die Anwendung in den oben genannten Verfahren veröffentlichen, werden die folgenden Eigenschaften in der Projektdatei, durch den Veröffentlichungs-Assistenten eingefügt. Diese Eigenschaften direkt beeinflussen, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erzeugt wird.  
   
- In *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  
+ Unter *CmdLineDemo.vbproj* / *CmdLineDemo.csproj* ist Folgendes möglich:  
   
 ```xml  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  

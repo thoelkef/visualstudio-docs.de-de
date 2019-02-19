@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs
+title: IDiaLoadCallback::NotifyOpenPDB | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

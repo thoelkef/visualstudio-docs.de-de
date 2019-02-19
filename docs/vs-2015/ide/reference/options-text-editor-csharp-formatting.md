@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800766"
 ---
 # <a name="options-text-editor-c-formatting"></a>Optionen, Text-Editor, C#, Formatierung
@@ -56,7 +56,7 @@ Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Opt
 ## <a name="preview-window"></a>Vorschaufenster  
  Die Bereiche, in denen Optionen für **Einzug**, **Neue Zeilen**, **Abstand** und **Umbruch** angezeigt werden, enthalten jeweils ein Vorschaufenster. Im Vorschaufenster wird die Auswirkung der einzelnen Optionen angezeigt. Wählen Sie zur Verwendung des Vorschaufensters eine Formatierungsoption aus. Im Vorschaufenster wird ein Beispiel der ausgewählten Option angezeigt. Wenn Sie die Einstellung ändern, beispielsweise ein Kontrollkästchen aktivieren oder deaktivieren, wird das Vorschaufenster in Anpassung an die neue Einstellung aktualisiert.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Durch die Einzugsoptionen auf den Seiten **Tabstopps** für die jeweiligen Sprachen wird lediglich festgelegt, an welche Position der Cursor im Code-Editor gesetzt wird, wenn Sie am Ende einer Zeile die EINGABETASTE drücken. Die Einzugsoptionen unter **Formatierung** werden bei der automatischen Codeformatierung übernommen, beispielsweise wenn Sie Code bei aktivierter Option **Einzug beim Einfügen anpassen** in die Datei einfügen, und wenn der zu formatierende Block manuell eingegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  

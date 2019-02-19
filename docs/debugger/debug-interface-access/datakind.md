@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a967581a2b5da2354908f6f5d6a2f5a35d7fa1c
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55040020"
@@ -70,7 +70,7 @@ enum DataKind { 
  DataIsConstant  
  Datenelement ist ein konstanter Wert.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  

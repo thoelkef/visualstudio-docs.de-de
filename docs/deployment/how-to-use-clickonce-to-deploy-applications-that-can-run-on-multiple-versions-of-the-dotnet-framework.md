@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54975438"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Gewusst wie: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
 Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framework ausgerichtet ist, mithilfe der ClickOnce-bereitstellungstechnologie. Dies erfordert, dass Sie generieren und aktualisieren die Anwendungs- und Bereitstellungsmanifeste.  
   
 > [!NOTE]
@@ -100,7 +100,7 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste  
   
--   Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests (Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten)](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
