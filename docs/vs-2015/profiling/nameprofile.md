@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752261"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Die Textlänge des Namens überschreitet 32 Zeichen inklusive des NULL-Zeichens und wurde daher gekürzt.|  
 |NAME_OK|Der Name wurde erfolgreich registriert.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Jedem Prozess oder Thread kann nur ein Name zugewiesen werden. Nachdem ein Profilerstellungselement benannt wird, werden nachfolgende Aufrufe von NameProfile für dieses Element ignoriert.  
   
  Wenn verschiedenen Threads oder Prozessen der gleiche Name gegeben wird, enthält der Bericht die Daten aller Elemente auf dieser Ebene, die diesen Namen tragen.  

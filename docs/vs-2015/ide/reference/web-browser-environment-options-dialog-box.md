@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755312"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
@@ -54,7 +54,7 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
   
 - **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Code- und Text-Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.  
   
-- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.  
+- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: In der Entwurfsansicht oder in der Standardtext-Quellansicht.  
   
 - **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.  
   

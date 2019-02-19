@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764891"
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
@@ -47,7 +47,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 |`TimestampUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|  
 |`TargetFrameworkVersion`|Die Version des .NET Framework, die für das Ziel verwendet wird.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Beispiel  

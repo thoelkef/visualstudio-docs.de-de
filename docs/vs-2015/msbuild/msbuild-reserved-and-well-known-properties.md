@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804175"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
@@ -55,7 +55,7 @@ ms.locfileid: "54804175"
 |`MSBuildThisFileDirectory`|Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein.|Reserviert|  
 |`MSBuildThisFileDirectoryNoRoot`|Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt, ausschließlich des Stammlaufwerks.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein.|Reserviert|  
 |`MSBuildThisFileExtension`|Der Teil von `MSBuildThisFileFullPath`, der die Dateinamenerweiterung angibt.|Reserviert|  
-|`MSBuildThisFileFullPath`|Der absolute Pfad des Projekts oder der TARGETS-Datei, die das gerade ausgeführte Ziel enthält.<br /><br /> Tipp: Sie können einen relativen Pfad in einer TARGETS-Datei angegeben, der relativ zur TARGETS-Datei und nicht relativ zur ursprünglichen Projektdatei ist.|Reserviert|  
+|`MSBuildThisFileFullPath`|Der absolute Pfad des Projekts oder der TARGETS-Datei, die das gerade ausgeführte Ziel enthält.<br /><br /> Hinweis: Sie können einen relativen Pfad in einer TARGETS-Datei angegeben, der relativ zur TARGETS-Datei und nicht relativ zur ursprünglichen Projektdatei ist.|Reserviert|  
 |`MSBuildThisFileName`|Der Teil von `MSBuildThisFileFullPath`, der den Dateinamen angibt, jedoch ohne die Dateinamenerweiterung.|Reserviert|  
 |`MSBuildToolsPath`|Der Installationspfad der [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Version, die mit dem Wert von `MSBuildToolsVersion` verknüpft ist.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich nicht in den Pfad ein.<br /><br /> Diese Eigenschaft kann nicht überschrieben werden.|Reserviert|  
 |`MSBuildToolsVersion`|Die Version des [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Toolsets, das zum Erstellen des Projekts verwendet wird.<br /><br /> Hinweis: Ein [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Toolset besteht aus Aufgaben, Zielen und Tools, die zum Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie "csc.exe" und "vbc.exe". Weitere Informationen finden Sie unter [Toolset (ToolsVersion) (Toolset (ToolsVersion))](../msbuild/msbuild-toolset-toolsversion.md) sowie unter [Standard and Custom Toolset Configurations (Standardmäßige und benutzerdefinierte Toolsetkonfigurationen)](../msbuild/standard-and-custom-toolset-configurations.md).|Reserviert|  

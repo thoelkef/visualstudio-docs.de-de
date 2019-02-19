@@ -26,10 +26,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805473"
 ---
 # <a name="mt-task"></a>MT-Aufgabe
@@ -72,7 +72,7 @@ Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen find
 |**UpdateFileHashesSearchPath**|Optionaler `String` -Parameter.<br /><br /> Gibt den Suchpfad an, der verwendet werden soll, wenn die Dateihashwerte aktualisiert werden. Verwenden Sie diesen Parameter mit dem **UpdateFileHashesMT**-Aufgabenparameter.<br /><br /> Weitere Informationen finden Sie unter dem **UpdateFileHashes**-Parameter in dieser Tabelle.|  
 |**VerboseOutput**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden ausführliche Debuginformationen angezeigt.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/verbose**.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

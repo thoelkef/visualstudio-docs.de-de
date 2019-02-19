@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796876"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
@@ -89,8 +89,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |AutoGen|Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwicklungsumgebung (IDE) generiert wurde.|  
 |Link|Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses der Projektdatei befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.  
@@ -102,8 +102,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |LastGenOutput|Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde.|  
 |CustomToolNamespace|Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte.|  
 |Link|Optionale Zeichenfolge. Der Notationspfad wird angezeigt, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Erforderliche Zeichenfolge. Der logische Name der eingebetteten Ressource.|  
   
 ### <a name="content"></a>Inhalt  
@@ -118,10 +118,10 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |Link|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
 |PublishState|Erforderliche Zeichenfolge. Der Inhalt kann einen der folgenden Veröffentlichungszustände aufweisen:<br /><br /> –  Default (Standard)<br />–   Included (Enthalten)<br />–   Excluded (Ausgeschlossen)<br />–   DataFile<br />–   Prerequisite (Voraussetzung)|  
 |IsAssembly|Optionaler boolescher Wert. Gibt an, ob die Datei eine Assembly ist.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Keiner  
+### <a name="none"></a>Keine  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
 |Elementname|Beschreibung|  
@@ -131,8 +131,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |LastGenOutput|Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde.|  
 |CustomToolNamespace|Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte.|  
 |Link|Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung.  

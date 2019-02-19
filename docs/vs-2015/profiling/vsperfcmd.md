@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776097"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -54,17 +54,17 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Beendet die Datensammlung für den angegebenen Prozess.|  
 |[ThreadOn und ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Setzt Profilerstellung für den angegebenen Prozess fort, nachdem die Profilerstellung durch einen Aufruf von **VSPerfCmdThreadOff** angehalten wurde. Verwenden Sie **ThreadOn** nur, wenn Sie Profile mit der Instrumentationsmethode erstellen.|  
 |[ThreadOn und ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Hält die Profilerstellung für den angegebenen Thread an. Verwenden Sie **ThreadOff** nur, wenn Sie Profile mit der Instrumentationsmethode erstellen.|  
-|[Mark](../profiling/mark.md)**:** _MarkNum_[**,**_MarkText_**]**|Fügt eine Markierung mit einem optionalen Text in die Profilerstellungs-Datendatei ein.|  
+|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Fügt eine Markierung mit einem optionalen Text in die Profilerstellungs-Datendatei ein.|  
   
 ## <a name="sampling-method-options"></a>Optionen der Samplingmethode  
  Die folgenden Optionen sind nur beim Verwenden der Samplingmethode für die Profilerstellung verfügbar.  
   
 |Option|Beschreibung|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md)**:** *Ausführbare Datei*|Startet die angegebene Anwendung und beginnt mit der Profilerstellung.|  
-|[Args](../profiling/args.md)**:** *Argumente*|Gibt Befehlszeilenargumente an, die an die Anwendung übergeben werden sollen.|  
+|[Launch](../profiling/launch.md) **:** *Executable*|Startet die angegebene Anwendung und beginnt mit der Profilerstellung.|  
+|[Args](../profiling/args.md) **:** *Arguments*|Gibt Befehlszeilenargumente an, die an die Anwendung übergeben werden sollen.|  
 |[Konsole](../profiling/console.md)|Startet den angegebenen Befehl in einem neuen Eingabeaufforderungsfenster.|  
-|[Attach](../profiling/attach.md)**:** *PID*[**,**_PID_]|Startet die Profilerstellung für die angegebenen Prozesse Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Startet die Profilerstellung für die angegebenen Prozesse. Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Beendet die Profilerstellung für die angegebenen Prozesse. Prozesse können über die Prozess-ID oder den Prozessnamen identifiziert werden. Wenn kein Prozess angegeben wird, wird die Profilerstellung für alle Prozesse angehalten.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Sammelt .NET-Speicherbelegungsinformationen und Daten zur Objektlebensdauer. Nur zusammen mit der **VSPerfCmdLaunch**-Option verwenden.|  
   
@@ -86,8 +86,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW|DENY**> *Right*[ *Right*] \<*User*|*Group*>|Gewährt oder verweigert dem angegebenen Benutzer oder der angegebenen Gruppe den Zugriff auf die Profilerstellungsdienste.<br /><br /> `Right` kann Folgendes sein:<br /><br /> CrossSession: Gewährt dem Benutzer Zugriff auf den Dienst für die sitzungsübergreifende Profilerstellung.<br /><br /> SampleProfiling: Gewährt dem Benutzer Zugriff auf den Treiber für die Sampling-Profilerstellung. Wird auch für den Zugriff auf Kernelübergangsinformationen während der Erstellung von Ablaufverfolgungsprofilen verwendet.<br /><br /> FullAccess: Gewährt dem Benutzer Zugriff sowohl auf CrossSession als auch auf SampleProfiling.|  
 |**Admin:Security, List**|Listet den aktuellen Zustand von Profilerstellungsdiensten und Benutzerberechtigungen auf.|  
-|**Admin:** \<*Dienst*&#124;*Treiber*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Startet, beendet, installiert oder deinstalliert die Komponente (Dienst) für den Profilerstellungsdienst oder den Gerätetreiber (Treiber) für den Kernelmodus.|  
-|**Admin:** \<*Dienst*&#124;*Treiber*>**AutoStart**\<**ON**&#124;**OFF**>|Aktiviert oder deaktiviert den automatischen Start des Profilerstellungsdienstes (Dienst) oder des Gerätetreibers (Treiber) für den Kernelmodus nach einem Neustart.|  
+|**Admin:** \<*Service*&#124;***Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Startet, beendet, installiert oder deinstalliert die Komponente (Dienst) für den Profilerstellungsdienst oder den Gerätetreiber (Treiber) für den Kernelmodus.|  
+|**Admin:** \<*Service*&#124;***Driver*>**AutoStart**\<**ON**&#124;****OFF**>|Aktiviert oder deaktiviert den automatischen Start des Profilerstellungsdienstes (Dienst) oder des Gerätetreibers (Treiber) für den Kernelmodus nach einem Neustart.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  Die **VSPerfCmd /Driver**-Option ist veraltet. Verwenden Sie die **VsPerfCmdAdmin**-Optionen für diese Funktionalität.  

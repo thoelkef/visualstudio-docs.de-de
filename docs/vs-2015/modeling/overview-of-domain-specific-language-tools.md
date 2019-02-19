@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805644"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
@@ -68,7 +68,7 @@ Mithilfe von in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gehosteten DSL-Tool
 ## <a name="validation-in-dsl-tools"></a>Validierung in DSL-Tools  
  Die DSL-Tools umfassen eine Validierungsebene, die sicherstellt, dass das Domänenmodell die allgemeinen Anforderungen für die Codegenerierung erfüllt. Wenn Sie Ihre eigene domänenspezifische Sprache erstellen, sollten Sie Ihre eigene Validierung hinzufügen, um die Regeln Ihrer Geschäftslogik auszudrücken. Weitere Informationen zur benutzerdefinierten Validierung finden Sie unter [Validation in a Domain-Specific Language (Validierung in einer domänenspezifischen Sprache)](../modeling/validation-in-a-domain-specific-language.md).  
   
- Es wird empfohlen, eigene domänenspezifische Sprachen während des Entwurfvorgangs häufig zu überprüfen. Wenn Ihre domänenspezifische Sprache Validierungsfehler aufweist, können Sie keinen Quellcode erstellen. Sie können anhand der Vorlagen Quellcode erstellen, indem Sie in der Symbolleiste des Projektmappen-Explorers auf **Alle Vorlagen transformieren** klicken. Auch wenn Sie die Sprachdefinition ändern, sollten Sie anschließend immer **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [How to: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Es wird empfohlen, eigene domänenspezifische Sprachen während des Entwurfvorgangs häufig zu überprüfen. Wenn Ihre domänenspezifische Sprache Validierungsfehler aufweist, können Sie keinen Quellcode erstellen. Sie können anhand der Vorlagen Quellcode erstellen, indem Sie in der Symbolleiste des Projektmappen-Explorers auf **Alle Vorlagen transformieren** klicken. Auch wenn Sie die Sprachdefinition ändern, sollten Sie anschließend immer **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="customization-of-dsl-tools"></a>Anpassen von DSL-Tools  
  Sie können zusätzlichen Code zur Verfügung stellen, um das Verhalten des Modells zu verfeinern und Einschränkungen für Ihre Sprache zu definieren. Wenn nötig können Sie auch wichtige Änderungen vornehmen, indem Sie die Textvorlagen ändern.  

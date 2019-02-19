@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834828"
 ---
 # <a name="uninstall-visual-studio"></a>Deinstallieren von Visual Studio
@@ -43,7 +43,7 @@ Diese Seite führt Sie durch die Deinstallation von Visual Studio 2015, eine fr�
 1.  Suchen Sie die Visual Studio-.exe-Datei (z.B. "vs_enterprise.exe" Suchen).
 
     > [!NOTE]
-    >  Die Datei sollte in einem Unterordner von "%ProgramData%\Package Cache", z. B. sein: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  Die Datei sollte in einem Unterordner von "%ProgramData%\Package Cache" befinden, z. B.: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
 
 2.  Führen Sie die .exe-Datei mit der / uninstall/force-Parameter in der Befehlszeile.
 

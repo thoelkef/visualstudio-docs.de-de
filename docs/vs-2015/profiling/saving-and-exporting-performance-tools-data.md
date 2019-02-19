@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 22dd181a991c4c2c006335df955ba27dd4d27ce6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756410"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
@@ -46,7 +46,7 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
   
 5.  Klicken Sie auf **Speichern**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren von Berichten der Profilerstellungstools in eine XML- oder CSV-Datei  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Vorgehensweise: Exportieren Berichte für Profilerstellungstools zu einer XML- oder CSV-Datei  
  Sie können eine oder mehrere Berichtsansichten aus einer VSP-Datei oder einer VSP-Profilerstellungsdatendatei als eine durch Trennzeichen getrennte Datei oder als XML-Datei exportieren. Sie können die Daten im Fenster „Berichtsansicht“ filtern, bevor Sie exportieren, oder Sie können Berichtsansichten der gesamten Datendatei aus dem Fenster **Leistungs-Explorer** exportieren.  
   
 > [!NOTE]
