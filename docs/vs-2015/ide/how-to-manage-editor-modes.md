@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwalten von Editormodi | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -29,13 +24,13 @@ ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781033"
 ---
 # <a name="how-to-manage-editor-modes"></a>Gewusst wie: Verwalten von Editormodi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49229215"
 Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="enabling-full-screen-mode"></a>Aktivieren des Vollbildmodus  
  Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenster anzeigen, indem Sie den **Vollbildmodus** aktivieren.  
@@ -72,8 +67,5 @@ Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../ide/customizing-the-editor.md)   
- [Vorgehensweise: anordnen und Andocken von Windows](../misc/how-to-arrange-and-dock-windows.md)   
+ [How to: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)   
  [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
-
-
-

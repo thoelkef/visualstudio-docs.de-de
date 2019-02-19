@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793433"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Vorgehensweise: Erstellen eines Basistexturshaders
+# <a name="how-to-create-a-basic-texture-shader"></a>Gewusst wie: Erstellen eines Basistextur-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Ein-Textur-Shaders verwendet wird. Dieser Shader legt die endgültige Farbe direkt auf die RGB- und Alphawerte fest, die von der Textur bezogen werden.  

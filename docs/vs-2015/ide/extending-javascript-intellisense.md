@@ -1,14 +1,9 @@
 ---
 title: Erweitern von JavaScript IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797446"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 |Funktion|Beschreibung|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Fügt einen Ereignishandler für ein IntelliSense-Ereignis hinzu.<br /><br /> `type` ist ein Zeichenfolgenwert. Gültige Werte sind `statementcompletion`, `signaturehelp`, und `statementcompletionhint`.<br /><br /> `handler` ist eine Ereignishandlerfunktion, die empfängt ein Ereignisobjekt, eines der folgenden Typen:<br /><br /> -   `CompletionEvent`, verwendet für die `statementcompletion` Ereignis.<br />-   `SignatureHelpEvent`, verwendet für die `signaturehelp` Ereignis.<br />-   `CompletionHintEvent`, verwendet für die `statementcompletionhint` Ereignis.<br /><br /> Beispiele, die diese Funktion verwenden, finden Sie unter [Codebeispiele](#CodeExamples).|  
+|`addEventListener(type, handler);`|Fügt einen Ereignishandler für ein IntelliSense-Ereignis hinzu.<br /><br /> `type` ist ein Zeichenfolgenwert. Gültige Werte sind u.a. `statementcompletion`, `signaturehelp` und `statementcompletionhint`.<br /><br /> `handler` ist eine Ereignishandlerfunktion, die empfängt ein Ereignisobjekt, eines der folgenden Typen:<br /><br /> -   `CompletionEvent`, verwendet für die `statementcompletion` Ereignis.<br />-   `SignatureHelpEvent`, verwendet für die `signaturehelp` Ereignis.<br />-   `CompletionHintEvent`, verwendet für die `statementcompletionhint` Ereignis.<br /><br /> Beispiele, die diese Funktion verwenden, finden Sie unter [Codebeispiele](#CodeExamples).|  
 |`annotate(obj, doc);`|Gibt die Dokumentation für ein Objekt durch Kopieren der Kommentare zur Dokumentation von einem Objekt in ein anderes Objekt an.<br /><br /> `obj` Gibt das Objekt, in der Dokumentation zu kopieren.<br /><br /> `doc` Gibt das Objekt aus der Dokumentation zu kopieren.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter [Hinzufügen von IntelliSense Anmerkungen](#Annotations).|  
 |`getFunctionComments(func);`|Gibt die Kommentare für eine angegebene Funktion zurück.<br /><br /> `func` Gibt die Funktion für die Kommentare zurückgegeben werden.<br /><br /> Sie können festlegen, die `func` Parameter, indem `completionItem.value`.<br /><br /> Das zurückgegebene `functionComments` Objekt enthält die folgenden Elemente: `above`, `inside`, und `paramComment`. Weitere Informationen finden Sie unter den [FunctionComments Eigenschaft](#FunctionComments) Eigenschaft.<br /><br /> `getFunctionComments` kann nur aufgerufen werden, in einem Ereignishandler, die von registriert werden `addEventListener`.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter \\ \\ *Visual Studio-Installationspfad*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Sendet diagnosemeldungen im Ausgabefenster.<br /><br /> `msg` ist eine Zeichenfolge, die die Nachricht enthält.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter [Senden von Nachrichten an das Fenster "Ausgabe"](#Logging).|  
@@ -491,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, werden Sie feststellen, dass das Symbol für den Namespace, um geändert hat "{}", wie in c# verwendet wird.  
+4.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, werden Sie feststellen, dass das Symbol für den Namespace, um geändert hat "{}", wie in dient C#.  
   
      ![Beispiel für die Verwendung der Symboleigenschaft](../ide/media/js-intellisense-glyph-namespace.png "Js_intellisense_glyph_namespace")  
   
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript-IntelliSense](../ide/javascript-intellisense.md)   
  [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md)
-
-
-

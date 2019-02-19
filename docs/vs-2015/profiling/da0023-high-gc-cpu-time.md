@@ -26,7 +26,7 @@ ms.locfileid: "54794159"
 Regel-Id | DA0023 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | %Zeit für GC ist relativ hoch. Dies ist ein Hinweis auf einen sehr hohen Mehraufwand für die Garbage Collection, der sich möglicherweise auf die Reaktionsfähigkeit Ihrer Anwendung auswirkt. Sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um besser nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.  
+| Nachricht | %Zeit für GC ist relativ hoch. Dies ist ein Hinweis auf einen sehr hohen Mehraufwand für die Garbage Collection, der sich möglicherweise auf die Reaktionsfähigkeit Ihrer Anwendung auswirkt. Sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um besser nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
 | Regeltyp | Nur zu Informationszwecken |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

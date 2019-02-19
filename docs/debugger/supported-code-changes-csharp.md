@@ -37,7 +37,7 @@ Die folgende Tabelle zeigt die Änderungen werden möglicherweise C# und Visual 
 |Async/await-Ausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Dynamische Objekte|Hinzufügen oder ändern|Nein|
 |Lambdaausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ expressions|Hinzufügen oder ändern|[Identisch mit Lambda-Ausdrücke](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ-Ausdrücke|Hinzufügen oder ändern|[Identisch mit Lambda-Ausdrücke](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
 > Neuere Sprachfunktionen wie etwa zeichenfolgeninterpolation und Null-Bedingte Operatoren werden in der Regel von bearbeiten und Fortfahren unterstützt. Die aktuellsten Informationen finden Sie die [Enc unterstützt bearbeitet](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) Seite.

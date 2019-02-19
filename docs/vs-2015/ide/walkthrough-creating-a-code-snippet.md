@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,21 +15,21 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790112"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt zu Visual Studio-Installation mithilfe der Schaltfläche "Importieren" für den Codeausschnitt-Manager hinzufügen (**Tools/Codeausschnitt-Manager**).  
+Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt im Codeausschnitt-Manager über die Schaltfläche „Importieren“ (**Extras > Codeausschnitt-Manager**) zur Visual Studio-Installation hinzufügen.  
   
 > [!TIP]
->  Suchen Sie Informationen dazu, wie Sie Codeausschnitte leichter schreiben, die CodePlex-Website für communitytools wie [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
+>  Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](http://go.microsoft.com/fwlink/?LinkId=251033), finden Sie auf der CodePlex-Website für Communitytools.  
   
 ## <a name="snippet-template"></a>Ausschnittvorlage  
  Im Folgenden finden Sie eine einfache Ausschnittvorlage:  
@@ -78,7 +73,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>So fügen Sie einen Codeausschnitt zu Visual Studio hinzu  
   
-1.  Sie können der Visual Studio-Installation mithilfe des Codeausschnitt-Managers eigene Ausschnitte hinzufügen. Öffnen Sie den Codeausschnitt-Manager (**Tools/Codeausschnitt-Manager**).  
+1.  Sie können der Visual Studio-Installation mithilfe des Codeausschnitt-Managers eigene Ausschnitte hinzufügen. Öffnen Sie den Codeausschnitt-Manager (**Extras > Codeausschnitt-Manager**).  
   
 2.  Klicken Sie auf die Schaltfläche **Importieren**.  
   
@@ -90,7 +85,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Testen Sie den Ausschnitt, indem Sie ein Visual Basic-Projekt und eine Codedatei öffnen. Klicken Sie in der Datei auf **Ausschnitt einfügen** klicken Sie dann im Kontextmenü **Meine Codeausschnitte**. Es sollte ein Ausschnitt mit dem Namen **My Visual Basic Code Snippet** („Mein Visual Basic-Codeausschnitt“) angezeigt werden. Doppelklicken Sie darauf.  
+6.  Testen Sie den Ausschnitt, indem Sie ein Visual Basic-Projekt und eine Codedatei öffnen. Klicken Sie in der Datei im Kontextmenü auf **Codeausschnitt einfügen** und dann auf **Meine Codeausschnitte**. Es sollte ein Ausschnitt mit dem Namen **My Visual Basic Code Snippet** („Mein Visual Basic-Codeausschnitt“) angezeigt werden. Doppelklicken Sie darauf.  
   
 7.  Sie sollten `Console.WriteLine("Hello, World!")` sehen, das in den Code eingefügt wurde.  
   
@@ -268,6 +263,3 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)
-
-
-

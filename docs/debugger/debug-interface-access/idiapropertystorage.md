@@ -42,7 +42,7 @@ IDiaPropertyStorage : IUnknown
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ruft entsprechende Zeichenfolgennamen für angegebenen Eigenschaftenbezeichner.|  
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Liest `ULONGLONG` Werte in einem Eigenschaftensatz.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Jede Eigenschaft in einem Eigenschaftensatz wird durch einen Bezeichner (ID), ein aus vier Bytes identifiziert `ULONG` dieses Satzes eindeutiger Wert. Die Eigenschaften verfügbar gemacht werden, über die `IDiaPropertyStorage` Schnittstelle entsprechen den Eigenschaften, die in der übergeordneten Schnittstelle zur Verfügung. Z. B. die Eigenschaften des der [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Schnittstelle kann zugegriffen werden, anhand des Namens über die `IDiaPropertyStorage` Schnittstelle (Beachten Sie jedoch, dass, obwohl die Eigenschaft zugegriffen werden kann, bedeutet das nicht die Eigenschaft gilt für eine bestimmte `IDiaSymbol` Objekt).  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

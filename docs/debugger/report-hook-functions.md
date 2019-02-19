@@ -49,4 +49,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+ [crt_dbg2, Beispiel](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

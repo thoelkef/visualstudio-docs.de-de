@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Microsoft Docs
+title: StackFrameTypeEnum | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -54,7 +54,7 @@ enum StackFrameTypeEnum {
  `FrameTypeUnknown`  
  Frame aus, der kein Debuginformationen vorhanden wären.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  

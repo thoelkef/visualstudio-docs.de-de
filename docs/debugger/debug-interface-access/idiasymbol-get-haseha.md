@@ -40,14 +40,14 @@ HRESULT get_hasEHa(
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Es ist möglich, asynchrone oder strukturierte Ausnahmebehandlung mit C++-Stil für die Ausnahmebehandlung zu kombinieren, aber es erfordert, dass eine bestimmte Compilerschalter/EHa, um ihn zu aktivieren.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

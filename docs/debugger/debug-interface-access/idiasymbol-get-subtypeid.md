@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_subTypeId | Microsoft Docs
+title: IDiaSymbol::get_subTypeId | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

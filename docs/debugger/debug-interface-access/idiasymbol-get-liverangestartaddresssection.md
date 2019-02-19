@@ -40,7 +40,7 @@ HRESULT get_liveRangeStartAddressSection ( 
 > [!NOTE]
 >  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die gebildet, indem Sie den Abschnitt und den Offset-Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
  Verwenden Sie zum Abrufen der Zeitzonenoffset-Teils der Adresse [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  

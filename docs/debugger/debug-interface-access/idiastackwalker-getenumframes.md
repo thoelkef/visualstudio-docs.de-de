@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames | Microsoft Docs
+title: IDiaStackWalker::getEnumFrames | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -41,7 +41,7 @@ HRESULT getEnumFrames( 
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Um eine Liste der Stack-Frame auf eine andere Plattform zu erhalten, rufen die [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801169"
 ---
 # <a name="using-the-task-list"></a>Verwenden der Aufgabenliste
@@ -47,7 +47,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
   
 #### <a name="to-open-the-task-list"></a>So öffnen Sie die Aufgabenliste  
   
--   Auf der **Ansicht** Menü wählen **Aufgabenliste** (Tastatur: CTRL+\\, T).  
+-   Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: STRG+\\,T).  
   
      ![Fenster mit Aufgabenliste](../ide/media/vs2015-task-list.png "vs2015_Aufgabenliste")  
   
@@ -86,7 +86,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
  Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO` -Aufgabe in der Liste angezeigt.  
   
 ###  <a name="customTokens"></a> Benutzerdefinierte Token  
- Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, RÜCKGÄNGIG GEMACHT WERDEN, BEACHTEN. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.  
+ Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, UNDONE, NOTE. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.  
   
  Sie können außerdem eigene benutzerdefinierte Token erstellen.  
   
@@ -122,7 +122,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
   
 #### <a name="to-create-a-shortcut"></a>So erstellen Sie eine Verknüpfung  
   
--   Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten. Wählen Sie **bearbeiten &#124; Lesezeichen &#124; Verknüpfung für Aufgabenliste hinzufügen** , oder drücken Sie (Tastatur: STRG+K, STRG+H  
+-   Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren möchten. Wählen Sie **Bearbeiten > Lesezeichen > Verknüpfung für Aufgabenliste hinzufügen** aus, oder drücken Sie STRG+K, STRG+H.  
   
      Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.  
   

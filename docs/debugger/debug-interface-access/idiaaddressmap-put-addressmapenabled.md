@@ -37,7 +37,7 @@ HRESULT put_addressMapEnabled ( 
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die ausführbare Datei wird von Prozessoren für ausführbare Datei nach der Zeit zu Zeit aktualisiert. DIA enthält einen Mechanismus, um die Übersetzung von Symbolen, für das neue Layout zu unterstützen.  
   
  Wenn eine PDB-Datei geladen wird, ist die Adresse-Karte, die in der Datei gespeicherten aktiviert. Es gibt jedoch Situationen, wenn eine Clientanwendung möglicherweise Geben Sie eine eigene Adresszuordnung durch Aufrufen der [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode. Wenn die `set_addressMap` Methode erfolgreich ist, muss die Clientanwendung Aufrufen der `put_addressMapEnabled` -Methode mit einem `NewVal` Parameter der `TRUE` So aktivieren Sie die Verwendung der Adresse zugeordnet.  

@@ -70,7 +70,7 @@ IDiaSession : IUnknown
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Gibt eine Enumeration von Symbolen für Inlineframes, die für den Namen der Funktion Inline angegeben.|  
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Gibt eine Enumeration von Symbolen für Inlineframes, die entsprechen zum Speicherort angegebenen Quelle zurück.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Es ist wichtig, rufen Sie die [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) Methode nach dem Erstellen der `IDiaSession` Objekt – und den übergebenen Wert die `put_loadAddress` Methode muss einen Wert ungleich – für alle virtuelle Adresse (VA) Eigenschaften von Symbolen sein zugegriffen werden kann. Die Ladeadresse stammt jedes beliebige Programm der debuggten, ausführbaren Datei geladen. Sie können z. B. die Win32-Funktion aufrufen `GetModuleInformation` abzurufenden Ladeadresse für die ausführbare Datei, ein Handle an die ausführbare Datei übergeben.  
   
 ## <a name="example"></a>Beispiel  

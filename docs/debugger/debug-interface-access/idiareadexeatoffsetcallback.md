@@ -35,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |------------|-----------------|  
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Client-Anwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mit einem absoluten Offset in der ausführbaren Datei Datei bereitzustellen. Um eine relative virtuelle Adresse zu verwenden, implementieren die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

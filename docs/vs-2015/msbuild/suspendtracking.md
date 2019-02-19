@@ -37,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Ein <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->, bei dem SUCCEEDED festgelegt ist, wenn die Nachverfolgung angehalten wurde.  
+ Ein [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->), bei dem [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) festgelegt ist, wenn die Nachverfolgung angehalten wurde.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** FileTracker.h  

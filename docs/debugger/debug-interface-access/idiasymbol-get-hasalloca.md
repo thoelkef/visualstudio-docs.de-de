@@ -42,7 +42,7 @@ Ruft ein Flag, das angibt, ob die Funktion einen Aufruf von enthält `alloca` (d
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

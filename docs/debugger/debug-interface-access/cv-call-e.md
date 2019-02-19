@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55012637"
@@ -57,7 +57,7 @@ typedef enum CV_call_e { 
  CV_CALL_CLRCALL  
  Gibt an, eine funktionsaufrufkonvention verwendet durch die Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention).  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  

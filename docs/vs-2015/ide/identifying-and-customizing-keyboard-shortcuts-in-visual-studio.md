@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798986"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
@@ -91,7 +91,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
      Wählen Sie beispielsweise **Global** aus, wenn die Tastenkombination in allen Zusammenhängen funktionieren soll. Sie können jede Tastenkombination verwenden, die in keinem anderen Editor (als Global) zugeordnet ist. Andernfalls wird die Tastenkombination vom Editor überschrieben.
 
     > [!NOTE]
-    >  Die folgenden Tasten können Sie nicht als Teil einer **globalen** Tastenkombination zuweisen: Drucken Sie Bildschirmnavigation/s-ABF, Rollen, Pause/Untbr, Registerkarte, FESTSTELLTASTE, INSERT-, Start, Ende, Bild-auf, Bild-ab, die Windows-Logo-Taste, Schlüssels der Anwendung, die Pfeiltasten oder EINGABETASTE; Num-Lock, löschen oder deaktivieren Sie auf der Zehnertastatur oder Strg + Alt + Entf.
+    >  Folgende Tasten können im Gültigkeitsbereich **Global** nicht in einer Tastenkombination verwendet werden: DRUCK/S-ABF, ROLLEN, PAUSE/UNTBR, TAB, FESTSTELLTASTE, EINFG, POS1, ENDE, BILD-AUF, BILD-AB, die WINDOWS-TASTE, die ANWENDUNGSTASTE, alle PFEILTASTEN sowie die EINGABETASTE, NUM, ENTF bzw. ENTF im Tastenblock und STRG+ALT+ENTF.
 
 6.  Geben Sie in das Feld **Press shortcut key(s)** (Tastenkombination drücken) die Tastenkombination ein, die Sie verwenden möchten.
 

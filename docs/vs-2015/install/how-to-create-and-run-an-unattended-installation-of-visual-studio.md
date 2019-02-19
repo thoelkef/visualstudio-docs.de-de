@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803561"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] als unbeaufsichtigte Installation (d. h. benutzerdefinierte automatische Installation) über ein Intranet anstatt von Medien wie DVDs ausführen. In diesem Thema wird beschrieben, wie vorbereiten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] für diese Art der Installation von einer Netzwerkfreigabe.
@@ -114,7 +114,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
 2. Öffnen Sie das Menü **Start** , und wählen Sie dann **Ausführen**aus.
 
-3. Geben Sie folgenden Text ein: \\\\*ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" PathToAdmindeployment.xml-Datei
+3. Geben Sie den folgenden Text: \\ \\ *ServerName*\IDEinstall\vs_*Produkt*.exe "/ adminfile" PathToAdmindeployment.xml-Datei
 
     AdditionalParametersAsNeeded
 
@@ -173,7 +173,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
 2.  Geben Sie den Product Key ein.
 
-     Weitere Informationen finden Sie unter [How to: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) Themen.)
+     (Weitere Informationen finden Sie unter der [wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) Themen.)
 
 ## <a name="see-also"></a>Siehe auch
  [Installieren von Visual Studio](../install/install-visual-studio-2015.md)

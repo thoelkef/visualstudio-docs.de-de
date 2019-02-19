@@ -50,7 +50,7 @@ IDiaStackFrame : IUnknown
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Ruft ein Flag, das angibt, dass die Behandlung von Ausnahmen aktiviert ist.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Ruft den Frametyp ab.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Ein Stapelrahmen ist eine Abstraktion eines Funktionsaufrufs während seiner Ausführung.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

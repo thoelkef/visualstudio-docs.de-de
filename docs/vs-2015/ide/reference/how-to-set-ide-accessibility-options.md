@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803222"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
+# <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -84,7 +84,7 @@ ms.locfileid: "54803222"
   
 4.  Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.  
   
-5.  Wählen Sie die Anzeigeeinstellungen in den folgenden Optionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
+5.  Wählen Sie in den folgenden Steuerelementen Anzeigeoptionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
   
 6.  Klicken Sie auf **OK**.  
   

@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: eaca67dd56fa34993e46693d6274bc4b7b593006
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54929405"
@@ -46,7 +46,7 @@ enum UdtKind { 
  UdtInterface  
  UDT ist eine Schnittstelle.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) Methode.  
   
 ## <a name="requirements"></a>Anforderungen  

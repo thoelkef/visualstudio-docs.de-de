@@ -27,7 +27,7 @@ ms.locfileid: "54770772"
 Regel-Id | DA0012 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  
-| Nachricht | Sie können Reflektion übermäßig verwendet werden. Dieser Vorgang ist äußerst speicherintensiv.  
+| Nachricht | Sie können Reflektion übermäßig verwendet werden. Dieser Vorgang ist äußerst speicherintensiv.|  
 | Regeltyp | Warnung |  
   
 ## <a name="cause"></a>Ursache  

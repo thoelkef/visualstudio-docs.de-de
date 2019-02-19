@@ -77,13 +77,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 3. Bei der ersten Änderung von `output` werden Werte in den Member `worldPos` geschrieben.  
   
-    ![The value of "output.worldPos" appears reasonable](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    ![Der Wert von „output.worldPos“ erscheint angemessen](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
     Da diese Werte sinnvoll aussehen, durchlaufen Sie den Code weiter bis zur nächsten Zeile, in der `output`geändert wird.  
   
 4. Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.  
   
-    ![The value of "output.pos" has been zeroed out](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    ![Der Wert von „output.pos“ wurde gelöscht.](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
     Die Werte des `pos` -Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.  
   

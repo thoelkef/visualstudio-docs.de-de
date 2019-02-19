@@ -45,7 +45,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Gibt zurück, der PDATA-Datenblock, der der angegebenen virtuellen Adresse zugeordnet.|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Ruft ab, dass die virtuelle Startadresse einer ausführbaren Datei, wenn eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Schnittstelle wird von der DIA-Code zum Abrufen von Informationen zu der ausführbaren Datei zum Erstellen der Liste der Stapelrahmen während der programmausführung aufgerufen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

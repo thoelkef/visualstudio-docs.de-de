@@ -29,7 +29,7 @@ ms.locfileid: "54803539"
 Regel-Id | DA0029 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Profilerstellung über die Befehlszeile |  
-| Nachricht | Eine nicht unterstützte CLR-Version wurde während der Sammlung erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.  
+| Nachricht | Eine nicht unterstützte CLR-Version wurde während der Sammlung erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|  
 | Regeltyp | Informationen. |  
   
 ## <a name="cause"></a>Ursache  

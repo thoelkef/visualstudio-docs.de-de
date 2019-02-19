@@ -53,7 +53,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) des Compilers „vbc.exe“.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht dem Schalter [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) des Compilers „vbc.exe“.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String-Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
+|`LangVersion`|Optionaler [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
 |`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) des Compilers „vbc.exe“.|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht dem [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)-Schalter des Compilers „vbc.exe“.|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört.|  
@@ -90,7 +90,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`Win32Icon`|Optionaler `String` -Parameter.<br /><br /> Fügt der Assembly eine ICO-Datei hinzu, die der Ausgabedatei im Datei-Explorer das gewünschte Aussehen verleiht. Dieser Parameter entspricht dem Schalter [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) des Compilers „vbc.exe“.|  
 |`Win32Resources`|Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (RES-Datei) in die Ausgabedatei ein. Dieser Parameter entspricht dem Schalter [/win32resource](http://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b) des Compilers „vbc.exe“.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  

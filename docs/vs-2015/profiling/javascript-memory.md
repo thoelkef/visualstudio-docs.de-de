@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792206"
 ---
 # <a name="javascript-memory"></a>JavaScript-Memory
@@ -47,7 +47,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
    Automatische Filterung von Objekten, die nicht direkt im App-Code erstellt werden. Sie können Daten auch nach Objektnamen filtern.  
   
-  Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   In diesem Thema:  
   
@@ -126,7 +126,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 -   [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff). Es werden differenzielle Werte zwischen Momentaufnahmen angezeigt. Diese Ansichten zeigen Unterschiede in der Objektgröße und -anzahl an.  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Öffnen Sie die App in Visual Studio.  
   
@@ -168,7 +168,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
     - Differenzielle Heapgröße (Link links unter der Heapgröße). Der Linktext gibt die Differenz zwischen der Heapgröße der aktuellen Momentaufnahme und der Heapgröße der vorherigen Momentaufnahme an.  
   
-    - Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext zeigt zwei Werte an (z. B. + 1858 / -1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
+    - Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext gibt zwei Werte an (z. B. +1858/-1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
   
       Über diese Links wird eine Detailansicht der Differenzen zwischen den Momentaufnahmen für die Heaptypen geöffnet, die entweder nach beibehaltener Größe oder nach Objektanzahl sortiert ist, abhängig davon, auf welchen Link Sie geklickt haben.  
   
@@ -224,7 +224,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 -   Objektanzahl. Diese Zahl gibt nur die in der App erstellten Objekte an. Integrierte, von der JavaScript-Laufzeit erstellte Objekte werden herausgefiltert. Die Objektanzahl ist ein Link zur Typansicht der Momentaufnahmedetails.  
   
--   Differenzielle Objektanzahl. Hier werden zwei Werte angezeigt: Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden. Die Abbildung zeigt zum Beispiel, dass 1.859 Objekte hinzugefügt wurden und 1.733 Objekte seit Momentaufnahme Nr. 1 entfernt wurden. Hinter dieser Information sehen Sie einen roten Pfeil nach oben, falls die Objektgesamtanzahl angestiegen ist, bzw. einen grünen Pfeil nach unten, wenn sie gesunken ist. Wenn sich die Objektanzahl nicht geändert hat, wird der Text **Keine Änderung** anstelle einer Zahl angezeigt. Für die erste Momentaufnahme sehen Sie den Text **Basislinie**. Die differenzielle Objektanzahl ist mit der Ansicht "Typen" des Momentaufnahmenvergleichs verknüpft.  
+-   Differenzielle Objektanzahl. Dadurch werden zwei Werte angezeigt: Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden. Die Abbildung zeigt zum Beispiel, dass 1.859 Objekte hinzugefügt wurden und 1.733 Objekte seit Momentaufnahme Nr. 1 entfernt wurden. Hinter dieser Information sehen Sie einen roten Pfeil nach oben, falls die Objektgesamtanzahl angestiegen ist, bzw. einen grünen Pfeil nach unten, wenn sie gesunken ist. Wenn sich die Objektanzahl nicht geändert hat, wird der Text **Keine Änderung** anstelle einer Zahl angezeigt. Für die erste Momentaufnahme sehen Sie den Text **Basislinie**. Die differenzielle Objektanzahl ist mit der Ansicht "Typen" des Momentaufnahmenvergleichs verknüpft.  
   
 -   Screenshot des Bildschirms zum Zeitpunkt der Momentaufnahme.  
   

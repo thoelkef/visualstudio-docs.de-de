@@ -48,7 +48,7 @@ Da Spy++ unabhängig voneinander ausgeführt wird, nachdem Sie ihn starten, kön
   
 1.  Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel ist der Pfad zu diesem Ordner... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.  
   
-2.  Enter **spyxx.exe**. 
+2.  Geben Sie **spyxx.exe** ein. 
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)   

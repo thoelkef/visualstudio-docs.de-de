@@ -18,7 +18,7 @@ ms.locfileid: "54784140"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Shimtypen sind eine von zwei Technologien, die vom Microsoft Fakes-Framework verwendet werden, um das Isolieren von getesteten Komponenten von der Umgebung zu vereinfachen. Shims leiten Aufrufe an bestimmte Methoden für Code um, den Sie im Rahmen Ihres Tests schreiben. Viele Methoden geben abhängig von den externen Bedingungen unterschiedliche Ergebnisse zurück, aber ein Shim wird vom Test kontrolliert und kann bei jedem Aufruf konsistente Ergebnisse zurückgeben. Dies erleichtert das Schreiben von Tests erheblich.  
+**Shimtypen** sind eine von zwei Technologien, die vom Microsoft Fakes-Framework verwendet werden, um das Isolieren von getesteten Komponenten von der Umgebung zu vereinfachen. Shims leiten Aufrufe an bestimmte Methoden für Code um, den Sie im Rahmen Ihres Tests schreiben. Viele Methoden geben abhängig von den externen Bedingungen unterschiedliche Ergebnisse zurück, aber ein Shim wird vom Test kontrolliert und kann bei jedem Aufruf konsistente Ergebnisse zurückgeben. Dies erleichtert das Schreiben von Tests erheblich.  
   
  Verwenden Sie Shims, um Ihren Code von Assemblys zu isolieren, die nicht Teil der Projektmappe sind. Um Komponenten Ihrer Projektmappe voneinander zu isolieren, wirr die Verwendung von Stubs empfohlen.  
   

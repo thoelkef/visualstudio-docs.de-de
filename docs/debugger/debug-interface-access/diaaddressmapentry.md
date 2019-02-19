@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e968cd89c66e0f8c13dbb0468e66e06ca53e273
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54999131"
@@ -38,7 +38,7 @@ struct DiaAddressMapEntry { 
  `rvaTo`  
  Die relative virtuelle Adresse `rva` in Abbildung b zugeordnet ist  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Eine Adresszuordnung enthält eine Übersetzung aus einem Image-Layout (A) in einem anderen (B). Ein Array von `DiaAddressMapEntry` Strukturen, sortiert nach `rva` definiert eine Adresszuordnung.  
   
  Um eine Adresse zu übersetzen `addrA`, in der Abbildung ein in eine Adresse `addrB`, führen Sie in Abbildung B die folgenden Schritte aus:  

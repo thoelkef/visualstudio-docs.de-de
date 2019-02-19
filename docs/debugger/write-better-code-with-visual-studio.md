@@ -40,7 +40,7 @@ Um diese Aufgaben zu demonstrieren, zeigen wir nur einige der am häufigsten ver
 
 Der folgende Code verfügt über einige Fehler, die Sie beheben können, mit der Visual Studio-IDE. Hier der app handelt es sich um eine einfache app, die JSON-Daten aus einen Vorgang, Deserialisieren der Daten auf ein Objekt, und aktualisieren eine einfache Liste mit den neuen Daten simuliert.
 
-So erstellen Sie die App
+So erstellen Sie die App:
 
 1. Öffnen Sie Visual Studio, und wählen Sie **Datei > Neues Projekt**. Klicken Sie unter **Visual C#** , wählen Sie **Windows Desktop** oder **.NET Core**, und wählen Sie dann im mittleren Bereich eine **Konsolen-App**.
 

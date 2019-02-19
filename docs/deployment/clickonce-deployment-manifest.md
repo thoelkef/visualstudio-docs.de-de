@@ -40,7 +40,7 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 | [\<Signature >-Element](../deployment/signature-element-clickonce-deployment.md) | Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren. | Keine |
 | [\<CustomErrorReporting >-Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird. | URI |
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Bereitstellungsmanifestdatei identifiziert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung einschließlich der aktuellen Version und anderer Bereitstellungseinstellungen. Sie verweist auf das Anwendungsmanifest, in dem die aktuelle Version der Anwendung und alle in der Bereitstellung enthaltenen Dateien beschrieben werden.  
 
  Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  

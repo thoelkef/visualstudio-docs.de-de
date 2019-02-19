@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764847"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
@@ -22,7 +22,7 @@ ms.locfileid: "54764847"
 
 Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projektbuild- und Debugtools. Sie erfahren in diesem Thema, wie Sie die grundlegenden Funktionen zum Debuggen von Benutzeroberflächenfunktionen verwenden.
 
- Hinweis: Links zu erweiterten Features und plattform- oder featurespezifischen Themen befinden sich unten auf dieser Seite.
+ Hinweis: Links zu erweiterten Features und plattform- oder featurespezifischen Themen sind unten auf dieser Seite.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Mein Code funktioniert nicht. Ich benötige Hilfe in Visual Studio 2015.
  Sie haben also herausgefunden, wie der Editor funktioniert, und Code erstellt. Nun möchten Sie mit dem Debuggen von Code beginnen. In Visual Studio 2015 besteht das Debuggen wie bei den meisten IDEs aus zwei Phasen: Erstellen des Codes zum Abfangen und Beheben von Projekt- und Compilerfehlern und Ausführen dieses Codes in der Umgebung zum Abfangen und Beheben von Laufzeit- und dynamischen Fehlern.

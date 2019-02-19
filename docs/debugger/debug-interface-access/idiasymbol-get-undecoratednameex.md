@@ -44,7 +44,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die `undecorateOptions` kann eine Kombination der folgenden Flags sein.  
   
 > [!NOTE]

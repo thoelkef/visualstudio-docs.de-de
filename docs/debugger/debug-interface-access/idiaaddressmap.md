@@ -42,7 +42,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Legt image-Header, um die Übersetzung der relativen virtuellen Adressen zu aktivieren.|  
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Stellt eine Adresszuordnung zum Unterstützen von Bild Layout Übersetzungen bereit.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Kontrolle von dieser Schnittstelle in zwei Sätze von Daten, die Sie angeben, gekapselt: Header Bild aus, und Adressieren von Zuordnungen. Die meisten Clients verwenden die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode, um die richtige Debuginformationen zu ermitteln, für ein Bild und die Methode in der Regel alle notwendigen Header und Zuordnungen Daten selbst ermitteln können. Implementieren einige Clients jedoch spezielle Verarbeitung und die Suche nach Daten. Solche Clients verwenden die Methoden der `IDiaAddressMap` Schnittstelle, um die DIA-SDK mit den Suchergebnissen bereitzustellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  

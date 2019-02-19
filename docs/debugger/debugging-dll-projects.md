@@ -35,7 +35,7 @@ Die folgenden Projektvorlagen in Visual Studio können DLLs erstellen:
 
 - C#, Visual Basic oder F# -Klassenbibliothek 
 - C#oder Visual Basic-Windows Forms-Steuerelementbibliothek (WCF) 
-- C++ Dynamic-Link Library (DLL)
+- C++-Dynamic Link Library (DLL)
 
 Weitere Informationen finden Sie unter [MFC Debugging Techniques (MFC-Debugverfahren)](../debugger/mfc-debugging-techniques.md).
 
@@ -52,7 +52,7 @@ Wenn Sie eine Visual Studio-Projektvorlage, zum Erstellen einer app verwenden, [
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [How to: Set Debug and Release configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen)](../debugger/how-to-set-debug-and-release-configurations.md)  
   
-### <a name="set-c-debuggableattribute"></a>Set C++ DebuggableAttribute
+### <a name="set-c-debuggableattribute"></a>Festlegen des C++-Attributs „Debuggable“
 
 Damit der Debugger an eine C++-DLL angefügt werden soll, muss der C++-Code ausgeben `DebuggableAttribute`. 
 

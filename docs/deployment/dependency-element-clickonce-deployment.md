@@ -126,7 +126,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Bereitstellungsmanifeste verfügen in der Regel über eine einzige `assemblyIdentity` -Element, das den Namen und die Version des Anwendungsmanifests bezeichnet.  
 
 ## <a name="example"></a>Beispiel  

@@ -93,7 +93,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
 4. Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **Neu** aus.  
   
-5. 5. Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.  
+5. Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.  
   
     ![Dialogfeld „Neue Projektmappenplattform“](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

@@ -40,7 +40,7 @@ HRESULT get_offsetInUdt( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Funktion ist nur in lokalen Datensätze in einem optimierten Build verwendet.  
   
 ## <a name="requirements"></a>Anforderungen  

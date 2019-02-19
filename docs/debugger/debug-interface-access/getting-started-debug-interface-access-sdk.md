@@ -35,7 +35,7 @@ Die Debug Interface Access (DIA) SDK stellt Sie bereit, mit dem Lehrzwecken Doku
   
   Header: include\dia2.h  
   
-  Library: lib\diaguids.lib  
+  Bibliothek: lib\diaguids.lib  
   
   DLL: bin\msdia80.dll  
   

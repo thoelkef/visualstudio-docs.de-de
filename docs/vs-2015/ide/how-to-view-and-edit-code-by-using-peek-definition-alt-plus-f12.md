@@ -21,7 +21,7 @@ ms.locfileid: "54777302"
 
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.  
   
- Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic zeigt **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten an (z.B. integrierte .NET Framework-Typen).  
+ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic enthält **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten (z.B. integrierte .NET Framework-Typen).  
   
 > [!IMPORTANT]
 >  Sie können diesen Befehl in einer Express-Version von Visual Studio 2013 nicht verwenden.  

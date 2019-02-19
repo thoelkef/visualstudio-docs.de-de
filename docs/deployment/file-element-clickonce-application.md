@@ -182,7 +182,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Dieses Element identifiziert alle Nichtassemblydateien, aus denen die Anwendung besteht, und insbesondere die Hashwerte für die Überprüfung der Datei. Dieses Element kann auch mit Component Object Model (COM) Isolationsdaten, die mit der Datei verknüpften enthalten. Wenn eine Datei geändert wird, muss die Anwendungsmanifestdatei ebenfalls aktualisiert werden, um die Änderung zu übernehmen.  
 
 ## <a name="example"></a>Beispiel  

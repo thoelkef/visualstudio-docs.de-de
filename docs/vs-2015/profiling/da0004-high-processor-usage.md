@@ -27,7 +27,7 @@ ms.locfileid: "54762523"
 Regel-Id | DA0004 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Instrumentation Sampling |  
-| Nachricht | Die prozessorauslastung liegt permanent über 75 %. Sie sollten die Verwendung des Samplingmodus für CPU-gebundene Anwendungen in Betracht ziehen.  
+| Nachricht | Die prozessorauslastung liegt permanent über 75 %. Sie sollten die Verwendung des Samplingmodus für CPU-gebundene Anwendungen in Betracht ziehen.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  

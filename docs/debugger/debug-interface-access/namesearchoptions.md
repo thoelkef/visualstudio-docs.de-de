@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4bbe801b749b60cd22ce8a980ea78b7713fa4422
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54973888"
@@ -61,7 +61,7 @@ enum NameSearchOptions { 
  `nsfUndecoratedName`  
  Gilt nur für Symbole, die nicht ergänzten Form und ergänzte Namen haben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Werte aus dieser Enumeration werden für die folgenden Methoden übergeben:  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  

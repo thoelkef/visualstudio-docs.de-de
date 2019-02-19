@@ -52,7 +52,7 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
 </Target>  
 ```  
   
- Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. In der vorherigen [Csc-Aufgabe](../msbuild/csc-task.md) kann z.B. die Ausgabedatei hello.exe keiner einzelnen Eingabe zugeordnet werden – sie hängt von allen Eingaben ab.  
+ Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. Im vorherigen [Csc-Task](../msbuild/csc-task.md) kann z.B. die Ausgabedatei „hello.exe“ keiner einzelnen Eingabe zugeordnet werden – sie hängt von allen Eingaben ab.  
   
 > [!NOTE]
 >  Ein Ziel, in dem keine direkte Zuordnung zwischen den Ein- und Ausgaben besteht, führt immer öfter eine Erstellung durch, als ein Ziel, in dem jede Ausgabe nur einer Eingabe zugeordnet werden kann, da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nicht bestimmen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben verändert haben.  

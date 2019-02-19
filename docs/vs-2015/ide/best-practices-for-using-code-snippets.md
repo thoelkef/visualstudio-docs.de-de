@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770321"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
@@ -25,7 +25,7 @@ ms.locfileid: "54770321"
 Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tun. Für die meisten Anwendungen muss der Code geändert werden, um der Anwendung zu entsprechen.  
   
 ## <a name="handling-exceptions"></a>Behandeln von Ausnahmen  
- Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele hierzu finden Sie unter [Vorgehensweise: Behandeln eine Ausnahme mit Try/Catch (C# Programming Guide)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) und [testen... Catch... Finally-Anweisung](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#-Programmierhandbuch)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) und [Try...Catch...Finally Statement (Try...Catch...Finally-Anweisung)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Dateispeicherorte  
  Wenn Sie die Speicherorte an die Anwendung anpassen, sollten Sie Folgendes beachten:  
