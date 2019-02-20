@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdcc9e05a3b238adcd559911208cbb6532b1d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918246"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318432"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -24,13 +24,13 @@ Installieren Sie die [Selenium components for Coded UI Cross Browser (Selenium-K
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Folgendes wird auf allen Webbrowsern unterstützt:
 
--   [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) wie Eigenschaften, Suche und Playback-Waiter
+-   [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) wie Eigenschaften, Suche und Playback-Waiter
 
 -   Popups und Dialogfelder
 
--   [Ausführen von einfachem JavaScript ohne Rückgabetyp](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [Ausführen von einfachem JavaScript ohne Rückgabetyp](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Warum sollte ich Tests der programmierten UI in mehreren Webbrowsertypen durchführen?
 

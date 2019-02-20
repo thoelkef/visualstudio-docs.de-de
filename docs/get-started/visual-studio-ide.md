@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155955"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316820"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Willkommen in der Visual Studio-IDE
 
@@ -285,5 +285,5 @@ Wenn Sie sich ausführlicher mit dem Codieren beschäftigen möchten, erhalten S
 
 - Entdecken Sie [weitere Visual Studio-Features](../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
-- Lesen Sie den [Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/).
+- Lesen Sie den [Visual Studio-Blog](https://devblogs.microsoft.com/visualstudio/).
 - Laden Visual Studio unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunter.

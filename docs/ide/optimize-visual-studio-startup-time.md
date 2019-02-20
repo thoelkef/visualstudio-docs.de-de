@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f6316332ce74ddcd291612524cab2b2019606d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954477"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315871"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -72,4 +72,4 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

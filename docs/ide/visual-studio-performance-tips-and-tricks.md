@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d800336a921d76e3b30580127547081dc8f02967
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930245"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318770"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -130,4 +130,4 @@ Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fun
 ## <a name="see-also"></a>Siehe auch
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

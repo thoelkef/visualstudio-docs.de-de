@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955140"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315104"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
@@ -60,11 +60,11 @@ Testframeworkerweiterungen sind im Visual Studio Marketplace verfügbar:
 
 ## <a name="when-should-i-use-this-feature"></a>Wann ist diese Funktion sinnvoll?
 
-Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der wenig oder keine Testabdeckung und keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Im Prinzip implementiert sie einen Ansatz, der den [intelligenten Komponententests](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
+Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der wenig oder keine Testabdeckung und keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Im Prinzip implementiert sie einen Ansatz, der den [intelligenten Komponententests](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
 
 Diese Funktion kann jedoch auch auf Situationen angewendet werden, in denen der Entwickler beginnt, indem er Code schreibt und diesen dann dazu verwendet, die Unittests zu bootstrappen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Unittestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Blogbeiträge zu Komponententests](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Blogbeiträge zu Komponententests](https://devblogs.microsoft.com/devops/?s=unit+testing)
