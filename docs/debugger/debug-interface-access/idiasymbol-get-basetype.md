@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ade7c30ec3cc67af28f3f609d91ccb0a3a8d289
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c2844003bf7ec81b256537fe06520dfdff473faa
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993727"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227276"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Ruft ab, der Basistyp für dieses Symbol<em>.</em>  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_baseType (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) Enumeration, der den Basistyp des Symbols angibt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ab, der Basistyp für dieses Symbol<em>.</em>
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_baseType (
+    DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`pRetVal`  
+[out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) Enumeration, der den Basistyp des Symbols angibt.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Der Basistyp für ein Symbol kann ermittelt werden, indem zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den Basistyp. Beachten Sie, dass einige Symbole nicht keinen Basistyp aufweisen können – z. B. einen ein.  
-  
-## <a name="example"></a>Beispiel  
-  
-```C++  
-IDiaSymbol* pType;  
-CComPtr<IDiaSymbol> pBaseType;  
-if (pType->get_type( &pBaseType ) == S_OK)  
-{  
-    BasicType btBaseType;  
-    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
-    {  
-        // Do something with basic type.  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)   
- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="remarks"></a>Anmerkungen
+Der Basistyp für ein Symbol kann ermittelt werden, indem zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den Basistyp. Beachten Sie, dass einige Symbole nicht keinen Basistyp aufweisen können – z. B. einen ein.
+
+## <a name="example"></a>Beispiel
+
+```C++
+IDiaSymbol* pType;
+CComPtr<IDiaSymbol> pBaseType;
+if (pType->get_type( &pBaseType ) == S_OK)
+{
+    BasicType btBaseType;
+    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)
+    {
+        // Do something with basic type.
+    }
+}
+```
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK V7. 0|
+
+## <a name="see-also"></a>Siehe auch
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)  
+[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

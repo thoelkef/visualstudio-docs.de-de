@@ -1,6 +1,6 @@
 ---
 title: Herstellen einer Verbindung mit Daten in einer Access-Datenbank (Windows Forms)
-ms.date: 09/15/2017
+ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - databases, connecting to
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: efad211c5807aa4a018ede3c9018cf69f4668747
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933781"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227643"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank (Windows Forms)
 
@@ -29,44 +29,35 @@ Sie können mit einer Access-Datenbank verbinden (entweder ein *mdf* Datei oder 
 
 Zum Verwenden dieser Prozeduren benötigen Sie ein Windows Forms-Anwendungsprojekt und entweder eine Access-Datenbank (*ACCDB*-Datei) oder eine Datenbank unter Access 2000–2003 (*MDB*-Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 
-## <a name="creating-the-dataset-for-an-accdb-file"></a>Erstellen des DataSets für eine ACCDB-Datei
+## <a name="create-a-dataset-for-an-accdb-file"></a>Erstellen eines Datasets für eine ACCDB-Datei
 
 Sie können mit Datenbanken über Access 2013, Office 365, Access 2010 oder Access 2007 erstellt wurden, mithilfe des folgenden Verfahrens verbinden.
 
-### <a name="to-create-the-dataset"></a>So erstellen Sie das DataSet
+1. Öffnen Sie die Windows Forms-Anwendung, mit der Sie Daten verknüpfen möchten.
 
-1.  Öffnen Sie die Windows Forms-Anwendung, mit der Sie Daten verknüpfen möchten.
+2. Zum Öffnen der **Datenquellen** Fenster auf der **Ansicht** , wählen Sie im Menü **andere Windows** > **Datenquellen**.
 
-2.  Zum Öffnen der **Datenquellen** Fenster auf der **Ansicht** , wählen Sie im Menü **andere Windows** > **Datenquellen**.
+   ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
-     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
+3. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
+   Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
-     Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
+4. Wählen Sie **Datenbank** auf die **wählen Sie einen Datenquellentyp** Seite, und wählen Sie dann **Weiter**.
 
-4.  Wählen Sie **Datenbank** auf die **wählen Sie einen Datenquellentyp** Seite, und wählen Sie dann **Weiter**.
+5. Wählen Sie **Dataset** auf die **Auswählen eines Datenbankmodells** Seite, und wählen Sie dann **Weiter**.
 
-5.  Wählen Sie **Dataset** auf die **Auswählen eines Datenbankmodells** Seite, und wählen Sie dann **Weiter**.
+6. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** die Option **Neue Verbindung** aus, um eine neue Datenverbindung zu konfigurieren.
 
-6.  Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** die Option **Neue Verbindung** aus, um eine neue Datenverbindung zu konfigurieren.
+   Das Dialogfeld **Verbindung hinzufügen** wird geöffnet.
 
-     Das Dialogfeld **Verbindung hinzufügen** wird geöffnet.
+7. Wenn **Datenquelle** ist nicht festgelegt, um **Microsoft Access-Datenbankdatei (OLE DB)**, wählen die **Änderung** Schaltfläche.
 
-7.  Wählen Sie die **Änderung** neben der **Datenquelle** Textfeld.
+   Die **Datenquelle wechseln** Dialogfeld wird geöffnet. Wählen Sie in der Liste der Datenquellen, **Microsoft Access-Datenbankdatei**. In der **Datenanbieter** Dropdown-Menü, Option **.NET Framework-Datenanbieter für OLE DB**, und wählen Sie dann **OK**.
 
-     Die **Datenquelle wechseln** Dialogfeld wird geöffnet.
+8. Wählen Sie **Durchsuchen** neben **Name der Datenbankdatei**, und navigieren Sie zu Ihrem *ACCDB* Datei, und wählen **öffnen**.
 
-8.  Wählen Sie in der Liste der Datenquellen,  **\<andere\>**. In der **Datenanbieter** Dropdown-Menü, Option **.NET Framework-Datenanbieter für OLE DB**, wählen Sie dann **OK**.
-
-9. In der **Verbindung hinzufügen** wählen Sie im Dialogfeld **Microsoft Office 12.0 Access Database Engine OLE DB Provider** aus der **OLE DB-Anbieter** Dropdownliste aus.
-
-     ![OLE DB-Anbieter Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
-
-     > [!NOTE]
-     > Wenn Sie nicht sehen **Microsoft Office 12.0 Access Database Engine OLE DB Provider** in der OLE DB-Anbieter Dropdown-Liste müssen Sie möglicherweise zum Installieren der [2007 Office System-Treiber: datenkonnektivitätskomponenten](https://www.microsoft.com/download/confirmation.aspx?id=23734).
-
-9. In der **Server-oder Dateiname** im Textfeld Geben Sie den Pfad und Dateinamen des der *ACCDB* Datei, die Sie verwenden möchten, Herstellen einer Verbindung mit, und wählen Sie dann **OK**. (Wenn die Datenbankdatei einen Benutzernamen und ein Kennwort verfügt, geben Sie diese vor der Auswahl **OK**.)
+9. Geben Sie einen Benutzernamen und Kennwort (falls erforderlich), und wählen Sie dann **OK**.
 
 10. Wählen Sie **Weiter** auf die **wählen Sie Ihre Datenverbindung** Seite.
 
@@ -76,37 +67,35 @@ Sie können mit Datenbanken über Access 2013, Office 365, Access 2010 oder Acce
 
 12. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.
 
-13. Wählen Sie alle Tabellen oder Sichten, die im Dataset werden soll, und wählen Sie dann **Fertig stellen**.
+13. Wählen Sie die Tabellen oder Sichten, die Sie verwenden möchten, im Dataset, und wählen Sie dann **Fertig stellen**.
 
      Das DataSet wird Ihrem Projekt hinzugefügt, und die Tabellen und Ansichten werden im Fenster **Datenquellen** angezeigt.
 
-## <a name="create-the-dataset-for-an-mdb-file"></a>Erstellen Sie das Dataset für eine MDB-Datei
+## <a name="create-a-dataset-for-an-mdb-file"></a>Erstellen eines Datasets für eine MDB-Datei
 
 Das Dataset wird erstellt, indem der **Assistent zum Konfigurieren von Datenquellen** ausgeführt wird.
 
-### <a name="to-create-the-dataset"></a>So erstellen Sie das DataSet
+1. Öffnen Sie die Windows Forms-Anwendung, mit der Sie Daten verknüpfen möchten.
 
-1.  Öffnen Sie die Windows Forms-Anwendung, mit der Sie Daten verknüpfen möchten.
+2. Auf der **Ansicht** , wählen Sie im Menü **Other Windows** > **Datenquellen**.
 
-2.  Auf der **Ansicht** , wählen Sie im Menü **Other Windows** > **Datenquellen**.
+   ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
-     ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
+3. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
+    Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
-     Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
+4. Wählen Sie **Datenbank** auf die **wählen Sie einen Datenquellentyp** Seite, und wählen Sie dann **Weiter**.
 
-4.  Wählen Sie **Datenbank** auf die **wählen Sie einen Datenquellentyp** Seite, und wählen Sie dann **Weiter**.
+5. Wählen Sie **Dataset** auf die **Auswählen eines Datenbankmodells** Seite, und wählen Sie dann **Weiter**.
 
-5.  Wählen Sie **Dataset** auf die **Auswählen eines Datenbankmodells** Seite, und wählen Sie dann **Weiter**.
+6. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** die Option **Neue Verbindung** aus, um eine neue Datenverbindung zu konfigurieren.
 
-6.  Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** die Option **Neue Verbindung** aus, um eine neue Datenverbindung zu konfigurieren.
+7. Die Datenquelle ist nicht **Microsoft Access-Datenbankdatei (OLE DB)** wählen **Änderung** zu öffnen der **Datenquelle wechseln** , und wählen Sie im Dialogfeld **Microsoft Zugriff auf die Datenbankdatei**, und wählen Sie dann **OK**.
 
-7.  Die Datenquelle ist nicht **Microsoft Access-Datenbankdatei (OLE DB)** wählen **Änderung** zu öffnen der **Datenquelle wechseln** , und wählen Sie im Dialogfeld **Microsoft Zugriff auf die Datenbankdatei**, und wählen Sie dann **OK**.
+8. In der **Name der Datenbankdatei**, geben Sie den Pfad und Namen von der *MDB* Datei, die Sie verwenden möchten, Herstellen einer Verbindung mit, und wählen Sie dann **OK**.
 
-8.  In der **Name der Datenbankdatei**, geben Sie den Pfad und Namen von der *MDB* Datei, die Sie verwenden möchten, Herstellen einer Verbindung mit, und wählen Sie dann **OK**.
-
-     ![Verbindungszugriff-Datenbankdatei hinzufügen](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Verbindungszugriff-Datenbankdatei hinzufügen](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Wählen Sie **Weiter** auf die **wählen Sie Ihre Datenverbindung** Seite.
 
@@ -116,7 +105,7 @@ Das Dataset wird erstellt, indem der **Assistent zum Konfigurieren von Datenquel
 
 12. Wählen Sie alle Tabellen oder Sichten, die im Dataset werden soll, und wählen Sie dann **Fertig stellen**.
 
-     Das DataSet wird Ihrem Projekt hinzugefügt, und die Tabellen und Ansichten werden im Fenster **Datenquellen** angezeigt.
+    Das DataSet wird Ihrem Projekt hinzugefügt, und die Tabellen und Ansichten werden im Fenster **Datenquellen** angezeigt.
 
 ## <a name="security"></a>Sicherheit
 
@@ -126,11 +115,11 @@ Das Speichern vertraulicher Informationen (z. B. ein Kennwort) kann sich auf di
 
 Das Dataset, das Sie gerade erstellt haben, ist jetzt verfügbar ist, in der **Datenquellen** Fenster. Sie können nun eine der folgenden Aufgaben ausführen:
 
--   Wählen Sie Elemente in der **Datenquellen** Fenster und ziehen Sie sie auf das Formular (finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
+- Wählen Sie Elemente in der **Datenquellen** Fenster und ziehen Sie sie auf das Formular (finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
 
--   Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
+- Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
 
--   Eine Validierungslogik Hinzufügen der <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging> -Ereignis der Datentabellen im Dataset (finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
+- Eine Validierungslogik Hinzufügen der <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging> -Ereignis der Datentabellen im Dataset (finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Siehe auch
 

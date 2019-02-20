@@ -12,58 +12,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9310c60e73f3d51ab93e5fe0b40a5d871681175e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986617"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227182"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Ruft ab, die Zeilen in einer angegebenen Kompiliereinheit, die eine angegebene relative virtuelle Adresse (RVA) enthalten.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT findLinesByRVA (   
-   DWORD                 rva,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `rva`  
- [in] Gibt die Adresse als eine RVA an.  
-  
- `length`  
- [in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.  
-  
- `ppResult`  
- [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine Funktion, die alle Zeilennummern enthalten sind, in der angegebenen Funktion, die mit der Funktion relative virtuelle Adresse und die Länge abgerufen werden.  
-  
-```C++  
-IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
-{  
-    IDiaEnumLineNumbers* pEnum = NULL;  
-    DWORD                rva;  
-    ULONGLONG            length;  
-  
-    if (pFunc->get_relativeVirtualAddress ( &rva ) == S_OK)  
-    {  
-        pFunc->get_length ( &length );  
-        pSession->findLinesByRVA( rva, static_cast<DWORD>( length ), &pEnum );  
-    }  
-    return(pEnum);  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+Ruft ab, die Zeilen in einer angegebenen Kompiliereinheit, die eine angegebene relative virtuelle Adresse (RVA) enthalten.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT findLinesByRVA ( 
+    DWORD                 rva,
+    DWORD                 length,
+    IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`rva`  
+[in] Gibt die Adresse als eine RVA an.
+
+`length`  
+[in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.
+
+`ppResult`  
+[out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="example"></a>Beispiel
+Dieses Beispiel zeigt eine Funktion, die alle Zeilennummern enthalten sind, in der angegebenen Funktion, die mit der Funktion relative virtuelle Adresse und die Länge abgerufen werden.
+
+```C++
+IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)
+{
+    IDiaEnumLineNumbers* pEnum = NULL;
+    DWORD                rva;
+    ULONGLONG            length;
+
+    if (pFunc->get_relativeVirtualAddress ( &rva ) == S_OK)
+    {
+        pFunc->get_length ( &length );
+        pSession->findLinesByRVA( rva, static_cast<DWORD>( length ), &pEnum );
+    }
+    return(pEnum);
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756359"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Vorgehensweise: Installieren eines bestimmten Releases von Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Gewusst wie: Installieren eines bestimmten Releases von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wir aktualisieren Visual Studio-Setup häufig, damit Sie die aktuellste, optimierte Version der optionalen Funktionen erhalten.  Wenn Sie aber ein früheres Release von Visual Studio 2015 installieren möchten, – beispielsweise ein Release von Visual Studio 2015 mit iOS-Unterstützung vor Update 1 – müssen Sie Visual Studio-Setup zwingen, eine frühere Version der Funktionsmanifestdateien zu verwenden. Dieser Artikel beschreibt, wie das geht.
@@ -33,7 +33,7 @@ Wir aktualisieren Visual Studio-Setup häufig, damit Sie die aktuellste, optimie
 
 |Visual Studio 2015-Edition|Auszuführendes Programm|Zu übergebende Befehlszeile|Aktionen von Setup|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise (die neueste veröffentlichte Version)|Visual Studio Enterprise mit Updates (verfügbar über [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Hinweis:**  Mit dem Standardverhalten dieser Installation werden die aktuellsten optionalen Funktionen installiert, daher sind dafür keine Befehlszeilenparameter erforderlich.|Visual Studio-Setup verwendet die aktuellste „feed.xml“ und installiert die aktuellsten Dateien|
+|Visual Studio Enterprise (die neueste veröffentlichte Version)|Visual Studio Enterprise mit Updates (verfügbar über [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Hinweis:** Mit dem Standardverhalten dieser Installation werden die aktuellsten optionalen Funktionen installiert, daher sind dafür keine Befehlszeilenparameter erforderlich.|Visual Studio-Setup verwendet die aktuellste „feed.xml“ und installiert die aktuellsten Dateien|
 |Visual Studio Enterprise Update 3 (das ursprüngliche Update 3 ohne weitere Updates aus der Zeit der allgemeinen Verfügbarkeit von Update 3)|Visual Studio Enterprise RTM (verfügbar über die [Downloadseite für MSDN-Abonnements](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Visual Studio-Setup verwendet die "Feed.xml", die verfügbar waren, bei der Veröffentlichung von Update 3|
 |Visual Studio Enterprise Update 2 (die ursprüngliche Update 2, jedoch mit updates, dass vor Update 3)|Visual Studio Enterprise RTM (verfügbar über die [Downloadseite für MSDN-Abonnements](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|Visual Studio-Setup verwendet die „feed.xml“, die vor der Veröffentlichung von Update 3 aktuell war|
 |Visual Studio Enterprise (die ursprüngliche Update 2 ohne weitere Update 2-Ära Updates)|Visual Studio Enterprise RTM (verfügbar über die [Downloadseite für MSDN-Abonnements](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio-Setup verwendet die "Feed.xml", die verfügbar waren, bei der Veröffentlichung von Update 2|
