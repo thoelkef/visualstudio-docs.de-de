@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918543"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314597"
 ---
 # <a name="help-content-manager-overrides"></a>Überschreibungen durch den Hilfeinhalts-Manager
 
-Sie können das Standardverhalten von Help Viewer und der Hilfefeatures der Visual Studio-IDE ändern. Einige Optionen werden durch Erstellen einer [PKGDEF](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/)-Datei angegeben, um verschiedene Registrierungsschlüsselwerte festzulegen. Andere werden direkt in der Registrierung festgelegt.
+Sie können das Standardverhalten von Help Viewer und der Hilfefeatures der Visual Studio-IDE ändern. Einige Optionen werden durch Erstellen einer [PKGDEF](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)-Datei angegeben, um verschiedene Registrierungsschlüsselwerte festzulegen. Andere werden direkt in der Registrierung festgelegt.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Steuern des Help Viewer-Verhaltens mithilfe der PKGDEF-Datei
 

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155993"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317223"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Willkommen in der Visual Studio-IDE | C#
 
@@ -122,18 +122,6 @@ Lassen Sie uns Visual Studio so konfigurieren, dass es Umgebungseinstellungen ve
 Weitere Informationen dazu, wie Sie die IDE personalisieren können, finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Erstellen eines Programms
-
-Zunächst konfigurieren wir Visual Studio so, dass es Umgebungseinstellungen verwendet, die auf C#-Entwickler zugeschnitten sind.
-
-1. Klicken Sie in der Menüleiste auf **Extras** > **Einstellungen importieren und exportieren**.
-
-2. Klicken Sie im **Assistenten zum Importieren und Exportieren von Einstellungen** auf der ersten Seite auf **Alle Einstellungen zurücksetzen** und dann auf **Weiter**.
-
-3. Wählen Sie auf der Seite **Aktuelle Einstellungen speichern** eine Option zum Speichern oder Nichtspeichern Ihrer aktuellen Einstellungen, und wählen Sie dann **Weiter**. (Wenn Sie keine Einstellungen angepasst haben, wählen Sie **Nein, einfach die Einstellungen zurücksetzen meine aktuellen Einstellungen überschreiben**.)
-
-4. Wählen Sie auf der Seite **Standardsammlung von Eigenschaften auswählen** die Option **Visual C#** aus, und klicken Sie dann auf **Fertig stellen**.
-
-5. Klicken Sie auf der Seite **Zurücksetzungsvorgang abgeschlossen** auf **Schließen**.
 
 Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
@@ -303,4 +291,4 @@ Informationen zu weiteren Features von Visual Studio finden Sie in den folgenden
 
 - Entdecken Sie [weitere Visual Studio-Features](../../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
-- Lesen Sie den [Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/).
+- Lesen Sie den [Visual Studio-Blog](https://devblogs.microsoft.com/visualstudio/).

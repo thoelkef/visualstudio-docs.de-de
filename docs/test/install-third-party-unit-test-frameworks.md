@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916166"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316144"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
@@ -58,7 +58,7 @@ So durchsuchen Sie eine Liste der Frameworks und anderer Testtools:
 
 ## <a name="update-to-the-latest-test-adapters"></a>Aktualisieren auf die neuesten Testadapter
 
-Aktualisieren Sie auf den neuesten stabilen Testadapter, um eine bessere Testermittlung und Ausführung zu erzielen. Weitere Informationen über Updates für MSTest-, NUnit- und xUnit-Testadapter finden Sie im [Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+Aktualisieren Sie auf den neuesten stabilen Testadapter, um eine bessere Testermittlung und Ausführung zu erzielen. Weitere Informationen über Updates für MSTest-, NUnit- und xUnit-Testadapter finden Sie im [Visual Studio-Blog](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>So aktualisieren Sie auf die neueste stabile Testadapterversion
 

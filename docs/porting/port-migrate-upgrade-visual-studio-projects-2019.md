@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058662"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335570"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Projektmigration und Upgradereferenz für Visual Studio 2019 Preview
 
@@ -35,7 +35,7 @@ Die Unterstützung für einige Projekttypen ändert sich im Laufe der Zeit. Mög
 
 In diesem Artikel werden Einzelheiten zu den Projekttypen aufgeführt, die von Visual Studio 2019 Preview migriert werden können. Außerdem werden Details zu Projekttypen aufgeführt, die mit Visual Studio 2019 Preview veraltet sind oder bald als veraltet gelten. Projekttypen, die in Visual Studio 2019 nicht mehr unterstützt werden und daher nicht migriert werden können, werden aus diesem Artikel ausgeschlossen. Außerdem werden auch unterstützte Projekttypen ausgeschlossen, die keine Migrationsprobleme aufweisen. Eine Liste finden Sie unter [Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Für bestimmte Projekttypen ist erforderlich, dass Sie bestimmte Workloads über den Visual Studio-Installer installieren. Wenn die Workload nicht installiert ist, meldet Visual Studio einen unbekannten oder nicht kompatiblen Projekttyp. Überprüfen Sie in einem solchen Fall Ihre Installationsoptionen, und versuchen Sie es dann erneut. Ausführliche Informationen zur Projektunterstützung in Visual Studio 2019 Preview finden Sie im Artikel [Visual Studio 2019 Preview: Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility).
 
 ## <a name="project-types"></a>Projekttypen
