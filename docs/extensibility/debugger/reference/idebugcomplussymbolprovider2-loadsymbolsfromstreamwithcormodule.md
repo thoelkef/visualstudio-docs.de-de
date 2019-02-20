@@ -11,134 +11,134 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6280c198ece34c105bb9141d6119c995ff7743d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025435"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412798"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Laden Sie Debugsymbole aus einem angegebenen Datenstrom der **ICorDebugModule** Objekt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT LoadSymbolsFromStreamWithCorModule(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   IUnknown* pUnkCorDebugModule,  
-   IStream*  pStream  
-);  
-```  
-  
-```csharp  
-int LoadSymbolsFromStreamWithCorModule(  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   ulong   baseAddress,  
-   object  pUnkMetadataImport,  
-   object  pUnkCorDebugModule,  
-   IStream pStream  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ulAppDomainID`  
- [in] Der Bezeichner der Anwendungsdomäne.  
-  
- `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
-  
- `baseAddress`  
- [in] Basis Speicheradresse.  
-  
- `pUnkMetadataImport`  
- [in] Objekt, das die Symbol-Metadaten enthält.  
-  
- `pUnkCorDebugModule`  
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
-  
- `pStream`  
- [in] Ein Datenstrom, die die Debugsymbole geladen enthält.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    ULONGLONG baseOffset,  
-    IUnknown* pUnkMetadataImport,  
-    IUnknown* pUnkCorDebugModule,  
-    IStream* pStream  
-)  
-{  
-    CAutoLock Lock(this);  
-  
-    HRESULT hr = S_OK;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    CComPtr<ICorDebugModule> pCorModule;  
-  
-    CModule* pmodule = NULL;  
-    CModule* pmoduleNew = NULL;  
-    bool fAlreadyLoaded = false;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-    DWORD dwCurrentState = 0;  
-  
-    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));  
-    ASSERT(IsValidInterfacePtr(pUnkMetadataImport, IUnknown));  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::LoadSymbolsFromStream );  
-  
-    IfFalseGo( pUnkMetadataImport, E_INVALIDARG );  
-    IfFalseGo( pUnkCorDebugModule, E_INVALIDARG );  
-  
-    IfFailGo( pUnkMetadataImport->QueryInterface( IID_IMetaDataImport,  
-              (void**)&pMetadata) );  
-  
-    IfFailGo( pUnkCorDebugModule->QueryInterface( IID_ICorDebugModule,  
-              (void**)&pCorModule) );  
-  
-    ASSERT(guidModule != GUID_NULL);  
-  
-    fAlreadyLoaded = GetModule( idModule, &pmodule ) == S_OK;  
-  
-    IfNullGo( pmoduleNew = new CModule, E_OUTOFMEMORY );  
-  
-    dwCurrentState = m_pSymProvGroup ? m_pSymProvGroup->GetCurrentState() : 0;  
-  
-    IfFailGo( pmoduleNew->Create( idModule,  
-                                  dwCurrentState,  
-                                  pMetadata,  
-                                  pCorModule,  
-                                  pStream,  
-                                  baseOffset ) );  
-  
-    if (fAlreadyLoaded)  
-    {  
-        IfFailGo(pmoduleNew->AddEquivalentModulesFrom(pmodule));  
-        RemoveModule(pmodule);  
-    }  
-  
-    IfFailGo( AddModule( pmoduleNew ) );  
-  
-Error:  
-  
-    RELEASE (pmodule);  
-    RELEASE (pmoduleNew);  
-  
-    METHOD_EXIT( CDebugSymbolProvider::LoadSymbolsFromStream, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+Laden Sie Debugsymbole aus einem angegebenen Datenstrom der **ICorDebugModule** Objekt.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT LoadSymbolsFromStreamWithCorModule(
+    ULONG32   ulAppDomainID,
+    GUID      guidModule,
+    ULONGLONG baseAddress,
+    IUnknown* pUnkMetadataImport,
+    IUnknown* pUnkCorDebugModule,
+    IStream*  pStream
+);
+```
+
+```csharp
+int LoadSymbolsFromStreamWithCorModule(
+    uint    ulAppDomainID,
+    Guid    guidModule,
+    ulong   baseAddress,
+    object  pUnkMetadataImport,
+    object  pUnkCorDebugModule,
+    IStream pStream
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`ulAppDomainID`  
+[in] Der Bezeichner der Anwendungsdomäne.
+
+`guidModule`  
+[in] Eindeutiger Bezeichner des Moduls.
+
+`baseAddress`  
+[in] Basis Speicheradresse.
+
+`pUnkMetadataImport`  
+[in] Objekt, das die Symbol-Metadaten enthält.
+
+`pUnkCorDebugModule`  
+[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`  
+[in] Ein Datenstrom, die die Debugsymbole geladen enthält.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.
+
+```cpp
+HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    ULONGLONG baseOffset,
+    IUnknown* pUnkMetadataImport,
+    IUnknown* pUnkCorDebugModule,
+    IStream* pStream
+)
+{
+    CAutoLock Lock(this);
+
+    HRESULT hr = S_OK;
+    CComPtr<IMetaDataImport> pMetadata;
+    CComPtr<ICorDebugModule> pCorModule;
+
+    CModule* pmodule = NULL;
+    CModule* pmoduleNew = NULL;
+    bool fAlreadyLoaded = false;
+    Module_ID idModule(ulAppDomainID, guidModule);
+    DWORD dwCurrentState = 0;
+
+    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));
+    ASSERT(IsValidInterfacePtr(pUnkMetadataImport, IUnknown));
+
+    METHOD_ENTRY( CDebugSymbolProvider::LoadSymbolsFromStream );
+
+    IfFalseGo( pUnkMetadataImport, E_INVALIDARG );
+    IfFalseGo( pUnkCorDebugModule, E_INVALIDARG );
+
+    IfFailGo( pUnkMetadataImport->QueryInterface( IID_IMetaDataImport,
+              (void**)&pMetadata) );
+
+    IfFailGo( pUnkCorDebugModule->QueryInterface( IID_ICorDebugModule,
+              (void**)&pCorModule) );
+
+    ASSERT(guidModule != GUID_NULL);
+
+    fAlreadyLoaded = GetModule( idModule, &pmodule ) == S_OK;
+
+    IfNullGo( pmoduleNew = new CModule, E_OUTOFMEMORY );
+
+    dwCurrentState = m_pSymProvGroup ? m_pSymProvGroup->GetCurrentState() : 0;
+
+    IfFailGo( pmoduleNew->Create( idModule,
+                                  dwCurrentState,
+                                  pMetadata,
+                                  pCorModule,
+                                  pStream,
+                                  baseOffset ) );
+
+    if (fAlreadyLoaded)
+    {
+        IfFailGo(pmoduleNew->AddEquivalentModulesFrom(pmodule));
+        RemoveModule(pmodule);
+    }
+
+    IfFailGo( AddModule( pmoduleNew ) );
+
+Error:
+
+    RELEASE (pmodule);
+    RELEASE (pmoduleNew);
+
+    METHOD_EXIT( CDebugSymbolProvider::LoadSymbolsFromStream, hr );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
