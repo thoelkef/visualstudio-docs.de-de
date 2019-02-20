@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8ee0de9cad23b6208c9b015c65a8d9494821eae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54789806"
 ---
 # <a name="quick-watch-command"></a>Befehl "Aktuellen Wert anzeigen"
@@ -37,7 +37,7 @@ Debug.QuickWatchq [text]
  `text`  
  Dies ist optional. Der Text, der zum Dialogfeld **Schnellüberwachung** hinzugefügt werden soll.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn `text` ausgelassen wird, wird der aktuell ausgewählte Text oder das Wort an der Curserposition zum Überwachungsfenster hinzugefügt.  
   
 ## <a name="example"></a>Beispiel  
@@ -47,7 +47,7 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden Sie das Dialogfeld ' Schnellüberwachung '](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Vorgehensweise: Verwenden des Dialogfelds „Schnellüberwachung“](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   

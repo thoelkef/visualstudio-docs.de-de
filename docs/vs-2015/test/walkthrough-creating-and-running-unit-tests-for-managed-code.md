@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784659"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 > [!NOTE]
 >  Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
 -   Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Ein Komponententestprojekt erstellen  
- **Voraussetzung**: Führen Sie die im Verfahren " [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)" angegebenen Schritte aus.  
+ **Erforderliche**: Führen Sie die Schritte im Verfahren [Vorbereiten der exemplarischen Vorgehensweise](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt  
   
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  Anhand der Analyse der zu testenden Methode bestimmen Sie, dass mindestens drei Verhaltensweisen überprüft werden müssen:  
   
-1. Löst die Methode [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Wenn der abbuchungsbetrag größer ist als das Guthaben ist.  
+1. Die Methode löst eine [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) aus, wenn der Abbuchungsbetrag größer ist als das Guthaben.  
   
 2. Außerdem löst sie eine `ArgumentOutOfRangeException` aus, wenn der Abbuchungsbetrag kleiner als null ist.  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  In diesem letzten Abschnitt hat die Verbesserung des Testcodes zu robusteren und informativeren Testmethoden geführt. Noch wichtiger ist jedoch, dass die zusätzliche Analyse auch zu besserem Code im zu testenden Projekt geführt hat.
-
-
-

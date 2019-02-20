@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788189"
 ---
 # <a name="watch-command"></a>Befehl "Überwachung"
@@ -37,7 +37,7 @@ Debug.Watch[index]
  `index`  
  Erforderlich. Die Instanznummer des Fensters „Überwachen“.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der `index` muss eine ganze Zahl sein. Gültige Werte sind 1, 2, 3 oder 4.  
   
 ## <a name="example"></a>Beispiel  
@@ -49,7 +49,7 @@ Debug.Watch[index]
 ## <a name="see-also"></a>Siehe auch  
  [Fenster „Auto“ und „Lokal“](../../debugger/autos-and-locals-windows.md)   
  [Vorgehensweise: Bearbeiten eines Werts in einem Variablenfenster](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [Vorgehensweise: Verwenden Sie das Dialogfeld ' Schnellüberwachung '](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Vorgehensweise: Verwenden des Dialogfelds „Schnellüberwachung“](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   

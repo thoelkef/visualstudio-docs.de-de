@@ -8,66 +8,66 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fbbf151f4978b5c4a7406a6c3aa617cab08f94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953171"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227536"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
-Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.  
-  
-## <a name="interpretation"></a>Interpretation  
- Mipmaps werden hauptsächlich zur Eliminierung von Aliasing-Artefakten in Texturen verwendet, die gerade verkleinert werden, indem Sie kleinere Versionen der Textur vorausberechnen. Obwohl diese zusätzlichen Texturen GPU-Speicher verbrauchen – ca. 33 % mehr als die Originaltextur –, sind sie effizienter, da mehr von ihrem Oberflächenbereich in den GPU-Texturcache passt und ihre Inhalte eine höhere Verwendung erreichen.  
-  
- Für 3D-Szenen empfehlen wir Mipmaps, wenn Speicher verfügbar ist, um die zusätzlichen Texturen zu speichern, da sie sowohl die Renderingleistung als auch die Bildqualität erhöhen.  
-  
- Wenn diese Variante zu einer deutlichen Leistungssteigerung führt, zeigt dies an, dass Sie Texturen ohne Aktivierung von Mipmaps verwenden und deshalb den Texturcache nicht optimal nutzen.  
-  
-## <a name="remarks"></a>Hinweise  
- Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. MipMap-Erzeugung wird insbesondere erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt übergeben `pDesc` beschreibt eine nicht geänderte Shaderressource, das ist:  
-  
-- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
-  
-- Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
-  
-- Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
-  
-- Das Count-Member des SampleDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
-  
-- Das MipLevels-Member ist auf 1 (keine existierende Mipmap) gesetzt.  
-  
-  Wenn die Anwendung die ursprünglichen Daten ausgibt, muss das Texturformat – wie durch D3D11_FORMAT_SUPPORT_MIP_AUTOGEN festgelegt – die automatische Mipmap-Erzeugung unterstützen, außer wenn das Format BC1, BC2 oder BC3 ist; andernfalls wird die Textur nicht verändert, und bei Ausgabe der ursprünglichen Daten werden keine Mipmaps erzeugt.  
-  
-  Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
-  
-## <a name="example"></a>Beispiel  
- Die Variante **Mipmap-Erzeugung** lässt sich durch Verwendung eines ähnlichen Codes wie dem folgenden reproduzieren:  
-  
+Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
+
+## <a name="interpretation"></a>Interpretation
+Mipmaps werden hauptsächlich zur Eliminierung von Aliasing-Artefakten in Texturen verwendet, die gerade verkleinert werden, indem Sie kleinere Versionen der Textur vorausberechnen. Obwohl diese zusätzlichen Texturen GPU-Speicher verbrauchen – ca. 33 % mehr als die Originaltextur –, sind sie effizienter, da mehr von ihrem Oberflächenbereich in den GPU-Texturcache passt und ihre Inhalte eine höhere Verwendung erreichen.
+
+Für 3D-Szenen empfehlen wir Mipmaps, wenn Speicher verfügbar ist, um die zusätzlichen Texturen zu speichern, da sie sowohl die Renderingleistung als auch die Bildqualität erhöhen.
+
+Wenn diese Variante zu einer deutlichen Leistungssteigerung führt, zeigt dies an, dass Sie Texturen ohne Aktivierung von Mipmaps verwenden und deshalb den Texturcache nicht optimal nutzen.
+
+## <a name="remarks"></a>Anmerkungen
+Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. MipMap-Erzeugung wird insbesondere erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt übergeben `pDesc` beschreibt eine nicht geänderte Shaderressource, das ist:
+
+- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.
+
+- Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.
+
+- Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.
+
+- Das Count-Member des SampleDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.
+
+- Das MipLevels-Member ist auf 1 (keine existierende Mipmap) gesetzt.
+
+  Wenn die Anwendung die ursprünglichen Daten ausgibt, muss das Texturformat – wie durch D3D11_FORMAT_SUPPORT_MIP_AUTOGEN festgelegt – die automatische Mipmap-Erzeugung unterstützen, außer wenn das Format BC1, BC2 oder BC3 ist; andernfalls wird die Textur nicht verändert, und bei Ausgabe der ursprünglichen Daten werden keine Mipmaps erzeugt.
+
+  Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.
+
+## <a name="example"></a>Beispiel
+Die Variante **Mipmap-Erzeugung** lässt sich durch Verwendung eines ähnlichen Codes wie dem folgenden reproduzieren:
+
 ```cpp
-D3D11_TEXTURE2D_DESC texture_description;  
-  
-// ...  
-  
-texture_description.MipLevels = 0; // generate a full mipchain  
-  
-std::vector<D3D11_SUBRESOURCE_DATA> initial_data(num_mips);  
-  
-for (auto&& mip_level : initial_data)  
-{  
-    // fill mip_level with the application-supplied initial data  
-}  
-  
-d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
-```  
-  
- Wenn Sie eine Textur mit einer vollständigen Mip-Kette erstellen möchten, setzen Sie `D3D11_TEXTURE2D_DESC::MipLevels` auf 0. Die Anzahl der mip-Ebenen in einer vollständigen mip-Kette ist floor(log2(n) + 1), wobei n die größte Dimension der Textur ist.  
-  
- Bitte bedenken Sie, dass bei einer Bereitstellung der ursprünglichen Daten auf `CreateTexture2D` ein D3D11_SUBRESOURCE_DATA-Objekt für jede Mip-Ebene erstellt werden muss.  
-  
+D3D11_TEXTURE2D_DESC texture_description;
+
+// ...
+
+texture_description.MipLevels = 0; // generate a full mipchain
+
+std::vector<D3D11_SUBRESOURCE_DATA> initial_data(num_mips);
+
+for (auto&& mip_level : initial_data)
+{
+    // fill mip_level with the application-supplied initial data
+}
+
+d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
+```
+
+Wenn Sie eine Textur mit einer vollständigen Mip-Kette erstellen möchten, setzen Sie `D3D11_TEXTURE2D_DESC::MipLevels` auf 0. Die Anzahl der mip-Ebenen in einer vollständigen mip-Kette ist floor(log2(n) + 1), wobei n die größte Dimension der Textur ist.
+
+Bitte bedenken Sie, dass bei einer Bereitstellung der ursprünglichen Daten auf `CreateTexture2D` ein D3D11_SUBRESOURCE_DATA-Objekt für jede Mip-Ebene erstellt werden muss.
+
 > [!NOTE]
->  Wenn Sie Ihre eigenen Inhalte auf Mip-Ebene bereitstellen möchten, anstatt sie automatisch zu erzeugen, müssen Sie Ihre Texturen mithilfe eines Bildeditors erstellen, der Mipmap-Texturen unterstützt, und dann die Datei laden und die Mip-Ebenen an `CreateTexture2D` übergeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md)
+> Wenn Sie Ihre eigenen Inhalte auf Mip-Ebene bereitstellen möchten, anstatt sie automatisch zu erzeugen, müssen Sie Ihre Texturen mithilfe eines Bildeditors erstellen, der Mipmap-Texturen unterstützt, und dann die Datei laden und die Mip-Ebenen an `CreateTexture2D` übergeben.
+
+## <a name="see-also"></a>Siehe auch
+[Halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md)

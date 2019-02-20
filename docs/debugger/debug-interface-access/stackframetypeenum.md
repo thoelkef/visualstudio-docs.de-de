@@ -12,54 +12,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 157ee347b52a3820811693732fce183b6f54a303
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: dab674576655df3b4a695d97fdfdb42df2ffa449
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917497"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227263"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-Gibt den Stack-Frame-Typ.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
-};  
-```  
-  
-## <a name="elements"></a>Elements  
- `FrameTypeFPO`  
- Frame-Pointer ausgelassen; FPO-Informationen verfügbar.  
-  
- `FrameTypeTrap`  
- Kernel-Trap-Frame.  
-  
- `FrameTypeTSS`  
- Kernel-Trap-Frame.  
-  
- `FrameTypeStandard`  
- Standard EBP-Stapelrahmen.  
-  
- `FrameTypeFrameData`  
- Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.  
-  
- `FrameTypeUnknown`  
- Frame aus, der kein Debuginformationen vorhanden wären.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: cvconst.h  
-  
-## <a name="see-also"></a>Siehe auch  
- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+Gibt den Stack-Frame-Typ.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+enum StackFrameTypeEnum {
+    FrameTypeFPO,
+    FrameTypeTrap,
+    FrameTypeTSS,
+    FrameTypeStandard,
+    FrameTypeFrameData,
+    FrameTypeUnknown = -1
+};
+```
+
+## <a name="elements"></a>Elements
+`FrameTypeFPO`  
+Frame-Pointer ausgelassen; FPO-Informationen verfügbar.
+
+`FrameTypeTrap`  
+Kernel-Trap-Frame.
+
+`FrameTypeTSS`  
+Kernel-Trap-Frame.
+
+`FrameTypeStandard`  
+Standard EBP-Stapelrahmen.
+
+`FrameTypeFrameData`  
+Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.
+
+`FrameTypeUnknown`  
+Frame aus, der kein Debuginformationen vorhanden wären.
+
+## <a name="remarks"></a>Anmerkungen
+Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.
+
+## <a name="requirements"></a>Anforderungen
+Header: cvconst.h
+
+## <a name="see-also"></a>Siehe auch
+[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

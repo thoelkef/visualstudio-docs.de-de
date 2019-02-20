@@ -1,25 +1,26 @@
 ---
-title: Debuggen von ASP.NET Azure-live-apps
+title: Debug live ASP.NET virtuellen Azure-Computern und Azure-VM-skalierungsgruppen
 description: Erfahren Sie, wie Sie legen Sie andockpunkte und Anzeigen von Momentaufnahmen mit dem Momentaufnahmedebugger.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335596"
+ms.locfileid: "56335989"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug live ASP.NET-Azure-apps, die mit dem Momentaufnahmedebugger
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debug live ASP.NET-Apps auf Azure Virtual Machines und Azure-VM-skalierungsgruppen, die mit der Snapshot-Debugger
 
 Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps in der Produktion aus, bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
@@ -34,13 +35,11 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Momentaufnahmedebugger ist nur verfügbar für Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **Azure-entwicklungsworkload**. (Unter der **Einzelkomponenten** Registerkarte finden Sie unter **Debuggen und testen** > **momentaufnahmedebugger**.)
+* Momentaufnahmedebugger für mit Azure Virtual Machines (VMs) und Azure Virtual Machine Scale Sets (VMSS) ist nur verfügbar für Visual Studio 2019 Enterprise Preview oder höher mit der **Azure-entwicklungsworkload**. (Unter der **Einzelkomponenten** Registerkarte finden Sie unter **Debuggen und testen** > **momentaufnahmedebugger**.)
 
-    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2017 Enterprise-Version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aktualisieren, führen Sie den Visual Studio-Installer, und überprüfen Sie die Snapshot-Debugger-Komponente in der **ASP.NET und Web-entwicklungsworkload**.
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2019 Enterprise Preview](https://visualstudio.microsoft.com/vs/preview/).
 
-* Azure App Service-Plan Basic oder höher.
-
-* Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
+* Erfassung von Momentaufnahmen ist für die folgenden Azure-VM/VMSS-Web-apps zur Verfügung:
   * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
   * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
@@ -49,44 +48,37 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 1. Öffnen Sie das Projekt, für die Momentaufnahme debuggen möchten.
 
     > [!IMPORTANT]
-    > Momentaufnahme Debuggen, müssen Sie öffnen die *dieselbe Version des Quellcodes* , die in Azure App Service veröffentlicht wird.
-::: moniker range="< vs-2019"
+    > Momentaufnahme Debuggen, müssen Sie öffnen die *dieselbe Version des Quellcodes* dar, mit dem Azure-VM/VMSS-Dienst veröffentlicht wird.
 
-2. In der Cloud-Explorer (**Ansicht > Cloud-Explorer**) mit der rechten Maustaste auf das Projekt, um bereitgestellt wird Azure App Service, und wählen Sie **Momentaufnahmedebugger Anfügen**.
+1. Fügen Sie die Snapshot-Debugger. Sie können eine der Methoden verwenden:
 
-   ![Starten Sie den Snapshot-debugger](../debugger/media/snapshot-launch.png)
-
-    Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen**, Sie werden aufgefordert, um die websiteerweiterung des Momentaufnahmedebuggers in Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Fügen Sie die Snapshot-Debugger. Sie können eine der Methoden verwenden:
-
-    * Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen...** . Wählen Sie Ihr Projekt, um bereitgestellt wird Azure App Service und Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
+    * Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen...** . Wählen Sie die Azure-VM/VMSS für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
   
       ![Starten Sie den Snapshot-Debugger im Menü Debuggen](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **veröffentlichen**, und klicken Sie dann auf die Veröffentlichung auf **Momentaufnahmedebugger Anfügen**. Wählen Sie Ihr Projekt, um bereitgestellt wird Azure App Service und Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
+    * Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **veröffentlichen**, und klicken Sie dann auf die Veröffentlichung auf **Momentaufnahmedebugger Anfügen**. Wählen Sie die Azure-VM/VMSS für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
     ![Starten Sie den Snapshot-Debugger von der Seite "Veröffentlichen"](../debugger/media/snapshot-publish-attach.png)
 
-    * In der Debug-Ziel Dropdown-Menü die Option **Momentaufnahmedebugger**, Treffer **F5** und ob es sich bei Bedarf wählen Sie Ihr Projekt, um bereitgestellt wird Azure App Service und Azure Storage-Konto, und klicken Sie dann auf  **Fügen Sie**.
+    * In der Debug-Ziel Dropdown-Menü die Option **Momentaufnahmedebugger**, Treffer **F5** und ob es sich bei Bedarf wählen Sie die Azure-VM/VMSS für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf  **Fügen Sie**.
     ![Starten Sie den Snapshot-Debugger im F5 Dropdown-Menü](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Mit dem Cloud-Explorer (**Ansicht > Cloud-Explorer**), mit der rechten Maustaste in das Projekt, um bereitgestellt wird Azure App Service und wählen Sie ein Azure Storage-Konto, und klicken Sie dann auf **Momentaufnahmedebugger Anfügen**.
+    * Mit dem Cloud-Explorer (**Ansicht > Cloud-Explorer**), mit der rechten Maustaste in der Azure VM/VMSS für Ihre Web-app bereitgestellt wird, und wählen Sie ein Azure Storage-Konto, und klicken Sie dann auf **Momentaufnahmedebugger Anfügen**.
   
       ![Starten Sie den Snapshot-Debugger aus der Cloud-Explorer](../debugger/media/snapshot-launch.png)
 
-    Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen**, Sie werden aufgefordert, um die websiteerweiterung des Momentaufnahmedebuggers in Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.
-::: moniker-end
+    > [!IMPORTANT]
+    > Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen** für Ihren virtuellen Computer und IIS wird automatisch neu gestartet.
+    > Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen** Ihrer VM-skalierungsgruppen, erfordern die manuelle Aktualisierung jeder der VMSS-Instanz.
 
-   Visual Studio ist jetzt im Debugmodus Momentaufnahme.
+    Die Metadaten für die **Module** ist anfänglich nicht aktiviert, und navigieren Sie zur Web-app und die **Sammlung starten** Schaltfläche aktiv. Visual Studio ist jetzt im Debugmodus Momentaufnahme.
 
-  > [!NOTE]
-  > Die Application Insights-websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine Fehlermeldung "websiteerweiterung veraltet" auftreten, finden Sie unter [zur Problembehandlung, Tipps und bekannte Probleme beim Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-troubleshooting.md) zum Aktualisieren von Informationen.
+    > [!NOTE]
+    > Die Application Insights-websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine Fehlermeldung "websiteerweiterung veraltet" auftreten, finden Sie unter [zur Problembehandlung, Tipps und bekannte Probleme beim Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-troubleshooting.md) zum Aktualisieren von Informationen.
+    > VM-skalierungsgruppen ist der Benutzer erforderlich, um die Instanzen in ihren VMSS manuell zu aktualisieren, nachdem Sie den Momentaufnahmedebugger anzufügen, zum ersten Mal.
 
    ![Momentaufnahme-debugging-Modus](../debugger/media/snapshot-message.png)
 
-   Die **Module** Fenster erfahren Sie, wenn alle Module für Azure App Service geladen wurden (Wählen Sie **Debuggen > Windows > Module** zum Öffnen des Fensters).
+   Die **Module** Fenster erfahren Sie, wenn alle Module für die Azure-VM/VMSS geladen haben (Option **Debuggen > Windows > Module** zum Öffnen des Fensters).
 
    ![Überprüfen Sie das Fenster "Module"](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
    ![Legen Sie einen andockpunkt](../debugger/media/snapshot-set-snappoint.png)
 
-2. Klicken Sie auf **Sammlung starten** um die andockpunkt zu aktivieren.
+1. Klicken Sie auf **Sammlung starten** um die andockpunkt zu aktivieren.
 
    ![Aktivieren Sie die andockpunkt](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ Zusätzlich zum Erstellen einer Momentaufnahme aus, wenn Sie einen andockpunkt e
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, wie den Momentaufnahmedebugger für App Services verwendet wird. Sie sollten, lesen Weitere Informationen zu diesem Feature.
+In diesem Tutorial haben Sie gelernt, wie den Momentaufnahmedebugger für Azure Virtual Machines und Azure Virtual Machine Scale Sets verwendet wird. Sie sollten, lesen Weitere Informationen zu diesem Feature.
 
 > [!div class="nextstepaction"]
 > [Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)

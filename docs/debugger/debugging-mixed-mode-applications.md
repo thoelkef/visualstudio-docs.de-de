@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8f0f2f09d0ee0741fea4af2477ce0e95e00db0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998455"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318692"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debuggen von Anwendungen im gemischten Modus
 Eine Anwendung im gemischten Modus ist eine Anwendung, in der nativer Code (C++) mit verwaltetem Code (z. B. Visual Basic-Code, Visual C#-Code oder verwaltetes C++, das mit der Common Language Runtime ausgeführt wird) kombiniert wird. Das Debuggen von Anwendungen im gemischten Modus erfolgt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] weitestgehend transparent. Es unterscheidet sich nicht maßgeblich vom Debuggen einer Anwendung im einfachen Modus. Beachten Sie jedoch einige besondere Aspekte.
@@ -36,7 +36,7 @@ Eine Anwendung im gemischten Modus ist eine Anwendung, in der nativer Code (C++)
 Zum Aktivieren von "Bearbeiten und Fortfahren" für C++ finden Sie unter [aktivieren und Deaktivieren von bearbeiten und Fortfahren](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
-> Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Informationen dazu finden Sie im Microsoft Application Lifecycle Management-Blogbeitrag [Switching to Managed Compatibility Mode in Visual Studio 2013 (Wechseln zum verwalteten Kompatibilitätsmodus in Visual Studio 2013)](https://blogs.msdn.microsoft.com/devops/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013/)
+> Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Informationen dazu finden Sie im Microsoft Application Lifecycle Management-Blogbeitrag [Switching to Managed Compatibility Mode in Visual Studio 2013 (Wechseln zum verwalteten Kompatibilitätsmodus in Visual Studio 2013)](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)
 
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>Auswertung von Eigenschaften in Anwendungen im gemischten Modus
  In einer Anwendung im gemischten Modus erfordert die Auswertung von Eigenschaften durch den Debugger sehr viel Rechenleistung. Folglich werden Debugoperationen, z. B. das schrittweise Ausführen, scheinbar langsam ausgeführt. Weitere Informationen finden Sie unter [Stepping](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)). Falls Sie beim Debuggen im gemischten Modus einen Leistungsabfall beobachten, empfiehlt es sich u. U., die Eigenschaftenauswertung in den Debuggerfenstern zu deaktivieren.

@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae33fc6c135322e6b6a0a965188848ddac363cbc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 67c19b37fbe6d5867e44a81233c44aceb5138b68
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993672"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227224"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Bietet Methoden, die Sie für einen Stapel durchlaufen, anhand der Informationen in die PDB-Datei.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IDiaStackWalker: IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDiaStackWalker`.  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Ruft einen Stack-Frame-Enumerator für X86 Plattformen.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.|  
-  
-## <a name="remarks"></a>Anmerkungen  
- Diese Schnittstelle wird verwendet, um eine Liste der Stapelrahmen für ein geladenes Modul zu erhalten. Jede der Methoden übergeben einen [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt (von der Clientanwendung implementiert) bietet die erforderlichen Informationen zum Erstellen der Liste der Stapelrahmen.  
-  
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird abrufen durch Aufrufen der `CoCreateInstance` Methode mit dem Klassenbezeichner `CLSID_DiaStackWalker` und die Schnittstellen-ID des `IID_IDiaStackWalker`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.  
-  
-## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt, wie Sie erhalten die `IDiaStackWalker` Schnittstelle.  
-  
-```C++  
-  
-      IDiaStackWalker* pStackWalker;  
-HRESULT hr = CoCreateInstance(CLSID_DiaStackWalker,  
-                              NULL,  
-                              CLSCTX_INPROC_SERVER,  
-                              IID_IDiaStackWalker,  
-                              (void**) &pStackWalker);  
-if (FAILED(hr))  
-{  
-    // Report error and exit  
-}  
-```  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: Dia2.h  
-  
- Bibliothek: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+Bietet Methoden, die Sie für einen Stapel durchlaufen, anhand der Informationen in die PDB-Datei.
+
+## <a name="syntax"></a>Syntax
+
+```
+IDiaStackWalker: IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+Die folgende Tabelle zeigt die Methoden der `IDiaStackWalker`.
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Ruft einen Stack-Frame-Enumerator für X86 Plattformen.|
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.|
+
+## <a name="remarks"></a>Anmerkungen
+Diese Schnittstelle wird verwendet, um eine Liste der Stapelrahmen für ein geladenes Modul zu erhalten. Jede der Methoden übergeben einen [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt (von der Clientanwendung implementiert) bietet die erforderlichen Informationen zum Erstellen der Liste der Stapelrahmen.
+
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+Diese Schnittstelle wird abrufen durch Aufrufen der `CoCreateInstance` Methode mit dem Klassenbezeichner `CLSID_DiaStackWalker` und die Schnittstellen-ID des `IID_IDiaStackWalker`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.
+
+## <a name="example"></a>Beispiel
+Dieses Beispiel zeigt, wie Sie erhalten die `IDiaStackWalker` Schnittstelle.
+
+```C++
+
+IDiaStackWalker* pStackWalker;
+HRESULT hr = CoCreateInstance(CLSID_DiaStackWalker,
+                              NULL,
+                              CLSCTX_INPROC_SERVER,
+                              IID_IDiaStackWalker,
+                              (void**) &pStackWalker);
+if (FAILED(hr))
+{
+    // Report error and exit
+}
+```
+
+## <a name="requirements"></a>Anforderungen
+Header: Dia2.h
+
+Bibliothek: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Siehe auch
+[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943798"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335479"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
@@ -48,14 +48,26 @@ Führen Sie diese Schritte aus:
 
 - Alternativ verwenden Sie Ihre Organisation verwendet einen Symbolserver oder löscht Symbole in einen anderen Pfad, den symboleinstellungen Laden Sie die richtigen Symbole für die Bereitstellung.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: Die Option "Snapshot Debugger anfügen" in der Cloud-Explorer nicht angezeigt werden.
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: die Option "Snapshot Debugger anfügen" in der Cloud-Explorer nicht angezeigt werden.
 
 Führen Sie diese Schritte aus:
 
 - Stellen Sie sicher, dass die Snapshot-Debugger-Komponente installiert ist. Öffnen Sie Visual Studio-Installer aus, und überprüfen Sie die **Momentaufnahmedebugger** -Komponente in der Azure-Workload.
+::: moniker range="< vs-2019"
 - Stellen Sie sicher, dass Ihre app unterstützt wird. Derzeit nur ASP.NET (4.6.1+) und ASP.NET Core (2.0 und höher)-apps, die in Azure App Service bereitgestellt werden unterstützt.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Stellen Sie sicher, dass Ihre app unterstützt wird:
+  - Azure App Services – ASP.NET-Anwendungen unter .NET Framework 4.6.1 oder höher.
+  - Azure App Services – ASP.NET Core-Anwendungen, die auf .NET Core 2.0 oder höher unter Windows ausgeführt wird.
+  - Azure virtuelle Computer (und VMSS) - ASP.NET-Anwendungen unter .NET Framework 4.6.1 oder höher.
+  - Azure virtuelle Computer (und VMSS) – ASP.NET Core-Anwendungen, die auf .NET Core 2.0 oder höher unter Windows ausgeführt.
+  - Azure Kubernetes-Dienste – ASP.NET Core-Anwendungen, die auf .NET Core 2.2 oder höher auf Debian 9 ausgeführt wird.
+  - Azure Kubernetes-Dienste – ASP.NET Core-Anwendungen, die auf .NET Core 2.2 oder höher auf Alpine 3.8 ausgeführt wird.
+  - Azure Kubernetes-Dienste – ASP.NET Core-Anwendungen, die auf .NET Core 2.2 oder höher auf Ubuntu 18.04 ausgeführt wird.
+::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: Ich sehen nur eingeschränkt Momentaufnahmen in den Diagnosetools
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: ich sehen nur eingeschränkt Momentaufnahmen in den Diagnosetools
 
 ![Gedrosselte andockpunkt](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "gedrosselt andockpunkt")
 
@@ -66,7 +78,7 @@ Führen Sie diese Schritte aus:
 ## <a name="known-issues"></a>Bekannte Probleme
 
 - Debuggen von Momentaufnahmen mit mehreren Visual Studio-Clients für den gleichen App Service wird derzeit nicht unterstützt.
-- Roslyn-IL-Optimierungen sind nicht vollständig in ASP.NET Core-Projekten unterstützt. Für einige ASP.NET Core-Projekte ist es möglicherweise nicht möglich, finden einige Variablen, oder verwenden einige Variablen in bedingten Anweisungen. 
+- Roslyn-IL-Optimierungen sind nicht vollständig in ASP.NET Core-Projekten unterstützt. Für einige ASP.NET Core-Projekte ist es möglicherweise nicht möglich, finden einige Variablen, oder verwenden einige Variablen in bedingten Anweisungen.
 - Bestimmte Variablen, wie z. B. *$FUNCTION* oder *$CALLER*, kann nicht ausgewertet werden, in bedingten Anweisungen oder protokollpunkte für ASP.NET Core-Projekte.
 - Debuggen von Momentaufnahmen funktioniert nicht auf App-Dienste, die [lokale Zwischenspeicherung](/azure/app-service/app-service-local-cache) aktiviert.
 - API-Apps Debuggen von Momentaufnahmen wird derzeit nicht unterstützt.
@@ -86,4 +98,6 @@ Momentaufnahme Debuggen und Application Insights basieren auf einer ICorProfiler
 
 [Debuggen in Visual Studio](../debugger/index.md)  
 [Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)  
+[Debug live ASP.NET Azure virtuelle Machines\Virtual Computer Skalierungsgruppen mit der Snapshot-Debugger](../debugger/debug-live-azure-virtual-machines.md)  
+[Debug live ASP.NET-Azure-Kubernetes, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)  
 [Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)  

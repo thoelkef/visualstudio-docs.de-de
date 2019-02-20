@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016532"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318419"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -77,9 +77,9 @@ Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **
 3. Suchen Sie die Variable in der **"lokal"** Fenster (**Debuggen > Windows > "lokal"**) mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID**.
 
     ![Erstellen Sie eine ObjectID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
-  
+
 5.  Mit der rechten Maustaste der Objekt-ID-Variable, und wählen Sie **Überwachung hinzufügen**.
 
 Weitere Informationen finden Sie unter [erstellen Sie eine Objekt-ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Wenn Sie die Arten von Problemen zu debuggen, die für Multithreadanwendungen be
 #### <a name="to-show-threads-in-your-source-code"></a>Um Threads in Ihrem Quellcode anzuzeigen.
 
 1.  Während des Debuggens, klicken Sie auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in die **Debuggen** Symbolleiste.
-  
+
 2.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile, die Sie sehen eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
     Beachten Sie, dass ein Threadmarker teilweise kann, können Sie durch einen Haltepunkt abgedeckt werden.
-  
+
 3.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads.
 
     Sie können auch den Speicherort der Threads im Anzeigen der [Fenster "Parallele Stapel"](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Um herauszufinden, wie der Debugger Code als Benutzercode klassifiziert, finden 
 
 Zusätzliche Tipps und Tricks und ausführlichere Informationen finden Sie in folgenden Blogbeiträgen:
 
-- [7 weniger bekannte Hacks für das Debuggen in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 verborgenen Funktionen in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 weniger bekannte Hacks für das Debuggen in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 verborgenen Funktionen in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Siehe auch
 [Tastenkombinationen](../ide/tips-and-tricks-for-visual-studio.md)
