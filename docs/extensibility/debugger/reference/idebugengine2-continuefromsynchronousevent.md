@@ -12,79 +12,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4d8756beeeec87b663c565382947a8824bbe37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038902"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450463"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Wird aufgerufen, durch die sitzungsbasierter Debug-Manager (SDM), um anzugeben, dass ein synchroner Debug-Ereignis, die zuvor von der Debug-Engine (DE), dem SDM, gesendet, empfangen und verarbeitet wurde.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2* pEvent  
-);  
-```  
-  
-```csharp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2 pEvent  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pEvent`  
- [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte jetzt fortfahren.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Die DE muss sicherstellen, dass die Quelle des Ereignisses durch dargestellt wurden die `pEvent` Parameter.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CEngine` Objekt, das implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.  
-  
-```cpp  
-HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
-{  
-   HRESULT hr;  
-  
-   // Create a pointer to a unique event interface defined for batch file  
-   // breaks.    
-   IAmABatchFileEvent *pBatEvent;  
-   // Check for successful query for the unique batch file event  
-   // interface.  
-   if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,  
-                                       (void **)&pBatEvent)))  
-   {  
-      // Release the result of the QI.  
-      pBatEvent->Release();  
-      // Check thread message for notification to continue.  
-      if (PostThreadMessage(GetCurrentThreadId(),  
-                            WM_CONTINUE_SYNC_EVENT,  
-                            0,  
-                            0))  
-      {    
-         hr = S_OK;  
-      }  
-      else  
-      {  
-         hr = HRESULT_FROM_WIN32(GetLastError());  
-      }  
-   }  
-   else  
-   {  
-      hr = E_INVALIDARG;  
-   }  
-   return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+Wird aufgerufen, durch die sitzungsbasierter Debug-Manager (SDM), um anzugeben, dass ein synchroner Debug-Ereignis, die zuvor von der Debug-Engine (DE), dem SDM, gesendet, empfangen und verarbeitet wurde.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2* pEvent
+);
+```
+
+```csharp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2 pEvent
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`pEvent`  
+[in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte jetzt fortfahren.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+Die DE muss sicherstellen, dass die Quelle des Ereignisses durch dargestellt wurden die `pEvent` Parameter.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CEngine` Objekt, das implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.
+
+```cpp
+HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
+{
+    HRESULT hr;
+
+    // Create a pointer to a unique event interface defined for batch file
+    // breaks.
+    IAmABatchFileEvent *pBatEvent;
+    // Check for successful query for the unique batch file event
+    // interface.
+    if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,
+                                        (void **)&pBatEvent)))
+    {
+        // Release the result of the QI.
+        pBatEvent->Release();
+        // Check thread message for notification to continue.
+        if (PostThreadMessage(GetCurrentThreadId(),
+                              WM_CONTINUE_SYNC_EVENT,
+                              0,
+                              0))
+        {
+            hr = S_OK;
+        }
+        else
+        {
+            hr = HRESULT_FROM_WIN32(GetLastError());
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
+[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

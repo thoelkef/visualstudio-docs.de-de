@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866830"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450177"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Projektmappen
   Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Weitere Informationen finden Sie unter [Globalize und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md).
@@ -47,7 +47,7 @@ ms.locfileid: "54866830"
  Sie müssen weiterhin sicherstellen, dass jeder Teil des Codes, der mit dem Dokumenttext interagiert, stets mit der Sprache des Texts übereinstimmt, und dass sich Lesezeichen, benannte Bereiche und andere Anzeigefelder allen neuen Formatierungen des Office-Dokuments anpassen, die hinsichtlich einer anderen Grammatik und Textlänge geändert werden mussten. Für Dokumentvorlagen, die relativ wenig Text enthalten, empfiehlt es sich, sollten den Text in Ressourcendateien zu speichern, und klicken Sie dann zur Laufzeit zu laden.
 
 ### <a name="text-direction"></a>Textrichtung
- In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Hoststeuerelemente oder beliebige Steuerelemente mit einem `RightToLeft` Eigenschaft, die automatisch im Designer platziert wird, entsprechen diese Einstellungen zur Laufzeit. Word verfügt nicht über eine Dokumenteinstellung für bidirektionalen Text (Sie ändern einfach die Ausrichtung des Texts), daher können dieser Einstellung die Steuerelemente nicht zugeordnet werden. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
+ In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Hoststeuerelemente oder beliebige Steuerelemente mit einem `RightToLeft` Eigenschaft, die automatisch im Designer platziert wird, entsprechen diese Einstellungen zur Laufzeit. Word verfügt nicht über eine dokumenteinstellung für bidirektionalen Text (Sie wird nur die Ausrichtung des Texts ändern), damit die Steuerelemente an dieser Einstellung zugeordnet werden können. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
 
 ### <a name="change-culture"></a>Ändern der Kultur
  Ihr Anpassungscode auf Dokumentebene teilt in der Regel den primären UI-Thread von Excel. Daher wirken sich alle Änderungen, die Sie an der Threadkultur vornehmen, auf alles andere aus, das in diesem Thread ausgeführt wird. Die Änderung ist nicht auf Ihre Anpassung beschränkt.
