@@ -19,8 +19,7 @@ ms.locfileid: "55940763"
 ---
 # <a name="state-activity-designer"></a>Zustandsaktivitäts-Designer
 
-
-  <xref:System.Activities.Statements.State> stellt einen Zustand dar, in dem sich ein Zustandsautomat befinden kann.
+<xref:System.Activities.Statements.State> stellt einen Zustand dar, in dem sich ein Zustandsautomat befinden kann.
 
 ## <a name="using-the-state-activity-designer"></a>Verwenden des Zustandsaktivitäts-Designers
 
