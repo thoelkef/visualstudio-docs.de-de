@@ -12,29 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d30c57139141bf0d739097032064190f4fcd3da
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009959"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596580"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchien und Auswahl
-Wenn Sie anpassen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie wissen, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] behandelt Hierarchien, z. B. Projekte, und wie es Auswahlkontext verwendet, um zu bestimmen, was dem Benutzer angezeigt wird. In diesem Abschnitt wird erläutert, die Konzepte der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hierarchien und Auswahl.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Beschreibt projekthierarchien und das allgemeine Konzept von Hierarchien.  
-  
- [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- Beschreibt, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu derzeit aktiven Objekte des Benutzers und VSPackages Währung nachverfolgen können.  
-  
- [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)  
- Erläutert das Modell für die Bestimmung des Benutzers Auswahl Kontext den Fokus auf ein Fenster an.  
-  
- [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md)  
- Erläutert, wie die verfügbaren Funktionen auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basiert auf aktuellen Auswahlkontext und allgemeine IDE-Kontext des Benutzers.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Architektur von Projekttypen](../../extensibility/internals/project-types-architecture.md)  
+Wenn Sie anpassen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie wissen, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] behandelt Hierarchien, z. B. Projekte, und wie es Auswahlkontext verwendet, um zu bestimmen, was dem Benutzer angezeigt wird. In diesem Abschnitt wird erläutert, die Konzepte der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hierarchien und Auswahl.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
+
+ Beschreibt projekthierarchien und das allgemeine Konzept von Hierarchien.
+
+- [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+
+ Beschreibt, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu derzeit aktiven Objekte des Benutzers und VSPackages Währung nachverfolgen können.
+
+- [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)
+
+ Erläutert das Modell für die Bestimmung des Benutzers Auswahl Kontext den Fokus auf ein Fenster an.
+
+- [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md)
+
+ Erläutert, wie die verfügbaren Funktionen auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basiert auf aktuellen Auswahlkontext und allgemeine IDE-Kontext des Benutzers.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Architektur von Projekttypen](../../extensibility/internals/project-types-architecture.md)
+
  Bietet ausführliche technische Informationen zu Projekttypen zur Verfügung.

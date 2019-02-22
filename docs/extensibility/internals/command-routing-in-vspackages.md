@@ -11,29 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 048ce0d88a87f42f5b98104d6ec928f5af8b40e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023066"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641298"
 ---
 # <a name="command-routing-in-vspackages"></a>Befehlsrouting in VSPackages
-Ein Befehl ist im weitergeleitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basierend auf dem Kontext, in dem er ausgeführt wird. Es wird auf den globalen Kontext aus dem ersten Kontext nach außen weitergeleitet.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Algorithmus für das Befehlsrouting](../../extensibility/internals/command-routing-algorithm.md)  
- Beschreibt die Reihenfolge der Befehl-routing-Auflösung.  
-  
- [Befehlsverfügbarkeit](../../extensibility/internals/command-availability.md)  
- Erläutert das Befehlsrouting.  
-  
- [Befehle und Menüs, die interop-Assemblys verwenden.](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Beschreibt Überlegungen zum routing zwischen verwaltetem Code und COM-Befehle  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)  
- Erläutert das Modell für die Bestimmung des Benutzers Auswahl Kontext den Fokus auf ein Fenster an.  
-  
- [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)  
+Ein Befehl ist im weitergeleitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basierend auf dem Kontext, in dem er ausgeführt wird. Es wird auf den globalen Kontext aus dem ersten Kontext nach außen weitergeleitet.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Algorithmus für das Befehlsrouting](../../extensibility/internals/command-routing-algorithm.md)
+
+ Beschreibt die Reihenfolge der Befehl-routing-Auflösung.
+
+- [Befehlsverfügbarkeit](../../extensibility/internals/command-availability.md)
+
+ Erläutert das Befehlsrouting.
+
+- [Befehle und Menüs, die interop-Assemblys verwenden.](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+
+ Beschreibt Überlegungen zum routing zwischen verwaltetem Code und COM-Befehle
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)
+
+ Erläutert das Modell für die Bestimmung des Benutzers Auswahl Kontext den Fokus auf ein Fenster an.
+
+- [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Erläutert, wie eine Benutzeroberfläche mit Menüs, Symbolleisten und Kombinationsfeldern für Befehle erstellt wird.

@@ -13,36 +13,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59163e0e054e3546ada8c7ee7b7d23362ca96fba
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869900"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611892"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Vorgehensweise: Programmgesteuertes Öffnen von Arbeitsmappen
-  Die <xref:Microsoft.Office.Interop.Excel.Workbooks> Sammlung in Microsoft Office Excel ermöglicht es mit allen geöffneten Arbeitsmappen funktionieren, und Öffnen von Arbeitsmappen.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="to-open-an-existing-workbook"></a>Um einer vorhandenen Arbeitsmappe zu öffnen.  
-  
-1.  Verwenden der <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Workbooks> Auflistung, die den Pfad zur Arbeitsmappe übergeben.  
-  
+  Die <xref:Microsoft.Office.Interop.Excel.Workbooks> Sammlung in Microsoft Office Excel ermöglicht es mit allen geöffneten Arbeitsmappen funktionieren, und Öffnen von Arbeitsmappen.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="to-open-an-existing-workbook"></a>Um einer vorhandenen Arbeitsmappe zu öffnen.
+
+1.  Verwenden der <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Workbooks> Auflistung, die den Pfad zur Arbeitsmappe übergeben.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]  
-  
-## <a name="compile-the-code"></a>Kompilieren des Codes  
- Für dieses Codebeispiel benötigen Sie Folgendes:  
-  
--   Eine Arbeitsmappe mit dem Namen `YourWorkbook.xls` muss vorhanden sein, in ein Verzeichnis namens `Test` auf Laufwerk C.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)   
- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
+
+## <a name="compile-the-code"></a>Kompilieren des Codes
+ Für dieses Codebeispiel benötigen Sie Folgendes:
+
+-   Eine Arbeitsmappe mit dem Namen `YourWorkbook.xls` muss vorhanden sein, in ein Verzeichnis namens `Test` auf Laufwerk C.
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)
+- [Vorgehensweise: Programmgesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
+- [Vorgehensweise: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)
+- [Vorgehensweise: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)
+- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)

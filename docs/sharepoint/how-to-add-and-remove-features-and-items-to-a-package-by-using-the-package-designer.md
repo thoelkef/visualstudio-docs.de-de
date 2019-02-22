@@ -14,49 +14,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1cf39b2ec563d76d5fb580e3c3e37a8e47bd4f0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608096"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers
-  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die Standardfeatures von SharePoint auf das Paket in der Projektmappe. Sie können vor der letzten Bereitstellung hinzufügen und Entfernen von SharePoint-Projektelemente und Features so ändern Sie das SharePoint-Paket.  
-  
- Alternativ können Sie die Paket-Explorer verwenden, zum Hinzufügen und Entfernen von SharePoint-Projektelemente. Sie können auch anzeigen und ändern die Hierarchie der SharePoint-Projektelemente und Funktionen, die in das Paket (.wsp) abgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
-  
-## <a name="add-features-to-a-sharepoint-package"></a>Hinzufügen von Funktionen zu einer SharePoint-Paket  
- Der Paket-Designer können ein SharePoint-Paket Features hinzu.  
-  
+  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die Standardfeatures von SharePoint auf das Paket in der Projektmappe. Sie können vor der letzten Bereitstellung hinzufügen und Entfernen von SharePoint-Projektelemente und Features so ändern Sie das SharePoint-Paket.
+
+ Alternativ können Sie die Paket-Explorer verwenden, zum Hinzufügen und Entfernen von SharePoint-Projektelemente. Sie können auch anzeigen und ändern die Hierarchie der SharePoint-Projektelemente und Funktionen, die in das Paket (.wsp) abgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+
+## <a name="add-features-to-a-sharepoint-package"></a>Hinzufügen von Funktionen zu einer SharePoint-Paket
+ Der Paket-Designer können ein SharePoint-Paket Features hinzu.
+
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>So fügen Sie die SharePoint-Funktionen mit der Paket-Designer hinzu
-  
-1. Öffnen der **Paket-Designer**.  
-  
-    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
-  
-2. Fügen Sie ein oder mehrere SharePoint-Features durch eine oder mehrere der folgenden Schritte aus:  
-  
-   1. Doppelklicken Sie auf jedes Element in der **Elemente in der Lösung** Liste, die Sie hinzufügen möchten.  
-  
-   2. Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
-  
-   3. Wählen Sie die **alle hinzufügen** Schaltfläche (>>) alle Elemente auf einmal hinzuzufügen.  
-  
-      Sie können z. B. doppelklicken, ein Element in der **Elemente in der Lösung** Liste aus, um das Hinzufügen der **Elemente in diesem Paket** Liste.  
-  
-      Die SharePoint-Projektelemente und-Funktionen werden in der **Elemente in diesem Paket** Liste.  
-  
-## <a name="remove-features-from-a-sharepoint-package"></a>Entfernen von Funktionen aus einer SharePoint-Paket  
- Sie können den Paket-Designer zum Entfernen von Features zu einem SharePoint-Paket verwenden.  
-  
+
+1. Öffnen der **Paket-Designer**.
+
+    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+
+2. Fügen Sie ein oder mehrere SharePoint-Features durch eine oder mehrere der folgenden Schritte aus:
+
+   1. Doppelklicken Sie auf jedes Element in der **Elemente in der Lösung** Liste, die Sie hinzufügen möchten.
+
+   2. Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).
+
+   3. Wählen Sie die **alle hinzufügen** Schaltfläche (>>) alle Elemente auf einmal hinzuzufügen.
+
+      Sie können z. B. doppelklicken, ein Element in der **Elemente in der Lösung** Liste aus, um das Hinzufügen der **Elemente in diesem Paket** Liste.
+
+      Die SharePoint-Projektelemente und-Funktionen werden in der **Elemente in diesem Paket** Liste.
+
+## <a name="remove-features-from-a-sharepoint-package"></a>Entfernen von Funktionen aus einer SharePoint-Paket
+ Sie können den Paket-Designer zum Entfernen von Features zu einem SharePoint-Paket verwenden.
+
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>So entfernen Sie die SharePoint-Funktionen mit der Paket-designer
-  
-1.  In der **Elemente in diesem Paket** wählen ein Elements, das Sie verwenden möchten, entfernen Sie aus, und wählen Sie dann die **entfernen** (<) Schaltfläche aus, oder wählen Sie die **alle entfernen** Schaltfläche (<<) entfernen alle Elemente.  
-  
-     Die SharePoint-Elemente werden in der **Elemente in der Lösung** Liste.  
-  
+
+1.  In der **Elemente in diesem Paket** wählen ein Elements, das Sie verwenden möchten, entfernen Sie aus, und wählen Sie dann die **entfernen** (<) Schaltfläche aus, oder wählen Sie die **alle entfernen** Schaltfläche (<<) entfernen alle Elemente.
+
+     Die SharePoint-Elemente werden in der **Elemente in der Lösung** Liste.
+
 ## <a name="see-also"></a>Siehe auch
- [Erstellen von SharePoint-Lösungspakete](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Vorgehensweise: Erstellen eines Pakets](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
+- [Erstellen von SharePoint-Lösungspakete](../sharepoint/creating-sharepoint-solution-packages.md)
+- [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [Vorgehensweise: Erstellen eines Pakets](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
