@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b66cd0b380612502bb982efd464607a4759f9c4b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3328c8900a202dd28eb2cab7c9651de8f45aa35e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636917"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Vorgehensweise: Erstellen eines SharePoint-Webparts
-  Sie können das Erstellen und Anpassen von einem Webpart durch Hinzufügen einer **Webpart** Element zu einem SharePoint-Projekt aus, und bearbeiten Sie dann die Codedatei für das Webpart oder mithilfe eines Designers. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
-  
+  Sie können das Erstellen und Anpassen von einem Webpart durch Hinzufügen einer **Webpart** Element zu einem SharePoint-Projekt aus, und bearbeiten Sie dann die Codedatei für das Webpart oder mithilfe eines Designers. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+
 ### <a name="to-create-a-sharepoint-web-part"></a>Zum Erstellen eines SharePoint-Webparts
-  
-1.  Erstellen oder öffnen Sie ein SharePoint-Projekt.  
-  
-     Weitere Informationen finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
-  
-2.  Wählen Sie den SharePoint-Projektknoten im **Projektmappen-Explorer** und wählen Sie dann **Projekt** > **neues Element hinzufügen**.  
-  
-3.  In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
-  
-4.  Wählen Sie in der Liste der SharePoint-Vorlagen, **Webpart**.  
-  
-5.  In der **Namen** Feld Geben Sie einen Namen für das Webpart, und wählen Sie dann die **hinzufügen** Schaltfläche.  
-  
-     Das Webpart wird angezeigt, **Projektmappen-Explorer**. Weitere Informationen zu den Dateien, die ein Webpart enthält, finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md).  
-  
-6.  In **Projektmappen-Explorer**, öffnen Sie die Codedatei für das Webpart, das Sie gerade erstellt haben.  
-  
-     Wenn der Name des Webparts ist z. B. *WebPart1*öffnen *WebPart1.vb* (in Visual Basic) oder *WebPart1.cs* (in C# -Referenz).  
-  
-7.  Fügen Sie in der Codedatei der <xref:System.Web.UI.Control.CreateChildControls%2A>-Methode Steuerelemente hinzu.  
-  
-     Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
-  
+
+1.  Erstellen oder öffnen Sie ein SharePoint-Projekt.
+
+     Weitere Informationen finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
+
+2.  Wählen Sie den SharePoint-Projektknoten im **Projektmappen-Explorer** und wählen Sie dann **Projekt** > **neues Element hinzufügen**.
+
+3.  In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+
+4.  Wählen Sie in der Liste der SharePoint-Vorlagen, **Webpart**.
+
+5.  In der **Namen** Feld Geben Sie einen Namen für das Webpart, und wählen Sie dann die **hinzufügen** Schaltfläche.
+
+     Das Webpart wird angezeigt, **Projektmappen-Explorer**. Weitere Informationen zu den Dateien, die ein Webpart enthält, finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md).
+
+6.  In **Projektmappen-Explorer**, öffnen Sie die Codedatei für das Webpart, das Sie gerade erstellt haben.
+
+     Wenn der Name des Webparts ist z. B. *WebPart1*öffnen *WebPart1.vb* (in Visual Basic) oder *WebPart1.cs* (in C# -Referenz).
+
+7.  Fügen Sie in der Codedatei der <xref:System.Web.UI.Control.CreateChildControls%2A>-Methode Steuerelemente hinzu.
+
+     Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
+
 ## <a name="see-also"></a>Siehe auch
- [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+- [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+- [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

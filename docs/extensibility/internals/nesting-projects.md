@@ -13,33 +13,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ee02bbe830c8ef3eab5766cd97a4c04837dc585
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2e05b47563c62f34e4a01c945a45d5c7ec069ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014007"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612230"
 ---
 # <a name="nesting-projects"></a>Schachteln von Projekten
-Entwicklern von Unternehmensanwendungen, die das Visual Studio-Paket zu verwenden, können bequem gruppieren ähnliche Arten von Projekten, die zusammen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit *Projekt Schachtelung*. Beispielsweise verwendet das Enterprise-Vorlagenprojekt geschachtelte Projekte zum Gruppieren von Projekten in Kategorien. Business-Fassade-Projekte, Web-UI-Projekte und usw. werden in einer Kategorie gruppiert.  
-  
- In diesem Szenario gibt es keine Beschränkung der Anzahl der Projekte, die der Entwickler unter jedes übergeordneten Projekts, geschachtelt werden kann, auch wenn der Entwickler Grenzwerte programmgesteuert bereitstellen kann. Diese Art der Gruppierung kann auch rekursiv erfolgen in diesem Fall können die Projekte des gleichen Typs als ein untergeordnetes Projekt geschachtelt werden, unter das untergeordnete Element ein Unterprojekt des untergeordneten Elements, zu dem ein Unterprojekt des übergeordneten Elements ist.  
-  
- Projekt Schachtelung ist nicht fester Bestandteil eines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sie müssen den Code zum Aktivieren der Schachtelung und Unterprojekt Schachtelung innerhalb von untergeordneten Projekten schreiben. Das übergeordnete Projekt ist eine spezielle VSPackage oder Projekttyp erstellt und registriert durch eine eigene GUID, die den Code, der erforderlich ist enthält, um die Schachtelung von Projekt zu implementieren.  
-  
- Sie finden ein Beispiel für geschachtelte Projekte im Beispiel Example.Nested C#-Projekt.  
-  
-## <a name="nested-projects-example"></a>Beispiel für geschachtelte Projekte  
- ![Geschachtelte Projektmappen](../../extensibility/internals/media/vsnestedprojects.gif "VsNestedProjects")  
-Beispiel für geschachtelte Projekte  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Implementieren von geschachtelten Projekten](../../extensibility/internals/how-to-implement-nested-projects.md)   
- [Überlegungen zum Entladen und Neuladen geschachtelte Projekte](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
- [Assistentenunterstützung für geschachtelte Projekte](../../extensibility/internals/wizard-support-for-nested-projects.md)   
- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Implementieren der Befehlsbehandlung für geschachtelte Projekte](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
- [Filtern des AddItem-Dialogfelds für geschachtelte Projekte](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Kontextparameter](../../extensibility/internals/context-parameters.md)   
- [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)
+Entwicklern von Unternehmensanwendungen, die das Visual Studio-Paket zu verwenden, können bequem gruppieren ähnliche Arten von Projekten, die zusammen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit *Projekt Schachtelung*. Beispielsweise verwendet das Enterprise-Vorlagenprojekt geschachtelte Projekte zum Gruppieren von Projekten in Kategorien. Business-Fassade-Projekte, Web-UI-Projekte und usw. werden in einer Kategorie gruppiert.
+
+ In diesem Szenario gibt es keine Beschränkung der Anzahl der Projekte, die der Entwickler unter jedes übergeordneten Projekts, geschachtelt werden kann, auch wenn der Entwickler Grenzwerte programmgesteuert bereitstellen kann. Diese Art der Gruppierung kann auch rekursiv erfolgen in diesem Fall können die Projekte des gleichen Typs als ein untergeordnetes Projekt geschachtelt werden, unter das untergeordnete Element ein Unterprojekt des untergeordneten Elements, zu dem ein Unterprojekt des übergeordneten Elements ist.
+
+ Projekt Schachtelung ist nicht fester Bestandteil eines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sie müssen den Code zum Aktivieren der Schachtelung und Unterprojekt Schachtelung innerhalb von untergeordneten Projekten schreiben. Das übergeordnete Projekt ist eine spezielle VSPackage oder Projekttyp erstellt und registriert durch eine eigene GUID, die den Code, der erforderlich ist enthält, um die Schachtelung von Projekt zu implementieren.
+
+ Sie finden ein Beispiel für geschachtelte Projekte im Beispiel Example.Nested C#-Projekt.
+
+## <a name="nested-projects-example"></a>Beispiel für geschachtelte Projekte
+ ![Geschachtelte Projektmappen](../../extensibility/internals/media/vsnestedprojects.gif "VsNestedProjects") Beispiel für geschachtelte Projekte
+
+## <a name="see-also"></a>Siehe auch
+- [Vorgehensweise: Implementieren von geschachtelten Projekten](../../extensibility/internals/how-to-implement-nested-projects.md)
+- [Überlegungen für das Entladen und Neuladen von geschachtelten Projekten](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Assistentenunterstützung für geschachtelte Projekte](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Implementieren der Befehlsbehandlung für geschachtelte Projekte](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtern des AddItem-Dialogfelds für geschachtelte Projekte](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Kontextparameter](../../extensibility/internals/context-parameters.md)
+- [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

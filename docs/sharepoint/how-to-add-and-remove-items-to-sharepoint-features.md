@@ -14,44 +14,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876c6a6a328c5a617a6773b76cdb9bb2c6d8f546
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874236"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619224"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
-  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.  
-  
-## <a name="add-sharepoint-project-items-to-a-feature"></a>Fügen Sie SharePoint-Projektelemente hinzu, einer Funktion  
-  
-#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint-Projektelemente mit dem Funktions-Designer hinzufügen  
-  
-1. Öffnen Sie die Funktions-Designer.  
-  
-    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
-  
-2. Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:  
-  
-   - Doppelklicken Sie auf jedes Element, das Sie hinzufügen möchten.  
-  
-   - Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
-  
-   - Wählen Sie die **alle hinzufügen** Schaltfläche (>>).  
-  
-     Die SharePoint-Projektelemente werden in der **Elemente in der Funktion** Liste.  
-  
-## <a name="remove-sharepoint-project-items-from-a-feature"></a>Entfernen von SharePoint-Projektelemente aus einer Funktion  
-  
+  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.
+
+## <a name="add-sharepoint-project-items-to-a-feature"></a>Fügen Sie SharePoint-Projektelemente hinzu, einer Funktion
+
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint-Projektelemente mit dem Funktions-Designer hinzufügen
+
+1. Öffnen Sie die Funktions-Designer.
+
+    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+
+2. Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:
+
+   - Doppelklicken Sie auf jedes Element, das Sie hinzufügen möchten.
+
+   - Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).
+
+   - Wählen Sie die **alle hinzufügen** Schaltfläche (>>).
+
+     Die SharePoint-Projektelemente werden in der **Elemente in der Funktion** Liste.
+
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>Entfernen von SharePoint-Projektelemente aus einer Funktion
+
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>So entfernen Sie die SharePoint-Elemente mit dem Funktions-Designer
-  
-1.  Wählen Sie eine oder mehrere Elemente in der **Elemente in der Funktion** Liste.  
-  
-2.  Wählen Sie die **entfernen** Schaltfläche (<), um ein Element zu einem Zeitpunkt entfernen, oder wählen die **alle entfernen** Schaltfläche (<<) alle Elemente entfernt.  
-  
-     Die SharePoint-Projektelemente werden in der **Elemente in der Lösung** Liste.  
-  
+
+1.  Wählen Sie eine oder mehrere Elemente in der **Elemente in der Funktion** Liste.
+
+2.  Wählen Sie die **entfernen** Schaltfläche (<), um ein Element zu einem Zeitpunkt entfernen, oder wählen die **alle entfernen** Schaltfläche (<<) alle Elemente entfernt.
+
+     Die SharePoint-Projektelemente werden in der **Elemente in der Lösung** Liste.
+
 ## <a name="see-also"></a>Siehe auch
- [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)   
- [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+- [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)
+- [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

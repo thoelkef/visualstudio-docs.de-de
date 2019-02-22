@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30a4992bed527b017f66f42067f88ec127fb9ed3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625620"
 ---
 # <a name="command-availability"></a>Befehlsverfügbarkeit
 
@@ -49,7 +49,7 @@ Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, kö
 2.  Rufen Sie den Status der Kontext-GUID durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode.
 
 3.  Aktivieren Sie das Kontext-GUIDs und deaktivieren durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode.
-   
+
 > [!CAUTION]
 > Stellen Sie sicher, dass Ihr VSPackage keine vorhandenen Kontext GUIDs auswirkt, da es sich bei anderen VSPackages möglicherweise von ihnen abhängig sind.
 

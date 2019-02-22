@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935032"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605691"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
-Eine Vorlage Directory-Beschreibungsdatei (VSDIR) ist eine Textdatei, die es ermöglicht die integrierte Entwicklungsumgebung (IDE) zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben werden, alle VSDIR-Dateien an einem Ort auf die verwiesen wird zusammengeführt.  
+Eine Vorlage Directory-Beschreibungsdatei (VSDIR) ist eine Textdatei, die es ermöglicht die integrierte Entwicklungsumgebung (IDE) zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben werden, alle VSDIR-Dateien an einem Ort auf die verwiesen wird zusammengeführt.
 
- Ordner (Unterverzeichnisse), Dateien, die in der VSDIR-Datei, und der VSDIR-Datei selbst verwiesen wird im gleichen Verzeichnis befinden. Wenn die IDE führt einen Assistenten, oder zeigt einen Ordner oder eine Datei in die **neues Projekt** oder **neues Element hinzufügen** Dialogfelder, die IDE untersucht das Verzeichnis mit den ausgeführten Dateien aus, um zu bestimmen, ob eine VSDIR-Datei ist vorhanden. Wenn eine VSDIR-Datei gefunden wird, liest die IDE, um zu ermitteln, ob es sich um einen Eintrag für die ausgeführte oder angezeigten Ordner oder die Datei enthält. Wenn ein Eintrag gefunden wird, verwendet die IDE die Informationen in die Ausführung des Assistenten oder Anzeige des Inhalts an.  
+ Ordner (Unterverzeichnisse), Dateien, die in der VSDIR-Datei, und der VSDIR-Datei selbst verwiesen wird im gleichen Verzeichnis befinden. Wenn die IDE führt einen Assistenten, oder zeigt einen Ordner oder eine Datei in die **neues Projekt** oder **neues Element hinzufügen** Dialogfelder, die IDE untersucht das Verzeichnis mit den ausgeführten Dateien aus, um zu bestimmen, ob eine VSDIR-Datei ist vorhanden. Wenn eine VSDIR-Datei gefunden wird, liest die IDE, um zu ermitteln, ob es sich um einen Eintrag für die ausgeführte oder angezeigten Ordner oder die Datei enthält. Wenn ein Eintrag gefunden wird, verwendet die IDE die Informationen in die Ausführung des Assistenten oder Anzeige des Inhalts an.
 
- Im folgenden Codebeispiel wird aus der Datei SourceFiles.vsdir ist in der \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files-Registrierungsschlüssel:  
+ Im folgenden Codebeispiel wird aus der Datei SourceFiles.vsdir ist in der \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files-Registrierungsschlüssel:
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- In diesem Fall sind zwei Datensätze in einer Datei ein. Eine neue Zeile (Wagenrücklaufzeichen) trennt jeden Datensatz. Jede Zeile steht für ein anderes Dateiformat. Eine Pipe (&#124;)-Zeichen als Trennzeichen für Felder in jedem Datensatz. Ein einzelnes Verzeichnis kann mehrere VSDIR-Dateien, die unterschiedliche Dateinamen enthalten können, Sie auch eine VSDIR-Datei für jeden Dateityp.  
+ In diesem Fall sind zwei Datensätze in einer Datei ein. Eine neue Zeile (Wagenrücklaufzeichen) trennt jeden Datensatz. Jede Zeile steht für ein anderes Dateiformat. Eine Pipe (&#124;)-Zeichen als Trennzeichen für Felder in jedem Datensatz. Ein einzelnes Verzeichnis kann mehrere VSDIR-Dateien, die unterschiedliche Dateinamen enthalten können, Sie auch eine VSDIR-Datei für jeden Dateityp.
 
-## <a name="fields"></a>Felder  
- Die folgende Tabelle enthält die Felder, die für jeden Datensatz angegeben.  
+## <a name="fields"></a>Felder
+ Die folgende Tabelle enthält die Felder, die für jeden Datensatz angegeben.
 
 
 | Feld | Beschreibung |
@@ -49,20 +49,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Flags (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Zum Aktivieren oder deaktivieren Sie die **Namen** und **Speicherort** Felder der **neues Element hinzufügen** Dialogfeld. Der Wert des der **Flags** Feld ist die dezimale Entsprechung der Kombination von Bitflags erforderlich.<br /><br /> Wenn ein Benutzer ein Element auswählt, auf die **neu** Registerkarte des Projekts bestimmt, ob das Feld Name und das Feld "Speicherort" beim angezeigt werden die **neues Element hinzufügen** wird zuerst das Dialogfeld angezeigt. Ein Element kann nur über eine VSDIR-Datei steuern, ob die Felder im Vergleich zu deaktiviert aktiviert sind, wenn das Element ausgewählt ist. |
 | SuggestedBaseName | Stellt den Standardnamen für die Datei, den Assistenten oder die Vorlage an. Dieses Feld ist entweder eine Zeichenfolge oder ein Ressourcenbezeichner, der Form "#ResID". Die IDE verwendet diesen Wert, um einen Standardnamen für das Element bereitzustellen. Basiswert ist ein ganzzahliger Wert und den Namen eindeutig sind, z. B. MyFile21.asp macht angefügt.<br /><br /> Wenden in der vorherigen Liste Beschreibung, DLL-Pfad, Symbolressourcen Kennung, Flags und SuggestedBaseNumber nur für die Vorlagen-und Assistenten. Diese Felder gelten nicht für Ordner. Dies wird im Code in der Datei BscPrjProjectItems veranschaulicht die \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems-Registrierungsschlüssel. Diese Datei enthält drei Datensätze (eine für jeden Ordner) mit vier Feldern für die einzelnen Datensätze: RelPathName, {CLSID-Paket}, LocalizedName und SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Wenn Sie eine Datei des Assistenten zum Erstellen, sollten Sie auch die folgenden Probleme.  
+ Wenn Sie eine Datei des Assistenten zum Erstellen, sollten Sie auch die folgenden Probleme.
 
--   Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.  
+-   Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.
 
--   Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.  
+-   Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.
 
--   DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.  
+-   DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.
 
--   Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.  
+-   Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.
 
--   Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.  
+-   Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.
 
--   Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.  
+-   Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.
 
-## <a name="see-also"></a>Siehe auch  
- [Assistenten](../../extensibility/internals/wizards.md)   
- [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>Siehe auch
+- [Assistenten](../../extensibility/internals/wizards.md)
+- [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)
