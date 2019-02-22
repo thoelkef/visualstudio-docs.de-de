@@ -1,22 +1,16 @@
 ---
 layout: LandingPage
 title: Messen der Leistung einer App mithilfe der Profilerstellung | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.
+description: 'Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155772"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Messen der Leistung einer App in Visual Studio
 
-Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen. 
+Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen.
 
 <ul class="panelContent cardsFTitle">
     <li>
