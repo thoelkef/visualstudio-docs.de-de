@@ -15,130 +15,130 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2d4597b6d0a07512b2f22b2b5fa2c3429215d431
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868325"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598413"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word
-  Diese exemplarischen Vorgehensweise bietet eine Einführung in das Erstellen eines VSTO-Add-Ins für Microsoft Office Word. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.  
-  
- [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
-  
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
-  
-- Erstellen eines VSTO-Add-In-Projekts.  
-  
-- Schreiben von Code, in dem das Word-Objektmodell zum Hinzufügen von Text zu einem Dokument beim Speichern verwendet wird.  
-  
-- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
-  
-- Bereinigen des abgeschlossenen Projekts, damit das VSTO-Add-In nicht mehr automatisch auf Ihrem Entwicklungscomputer ausgeführt wird.  
-  
-  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
-  
-## <a name="prerequisites"></a>Vorraussetzungen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
-  
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
-  
--   Microsoft Word  
-  
-## <a name="create-the-project"></a>Erstellen eines Projekts  
-  
-### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>So erstellen Sie ein neues Word VSTO-Add-In-Projekt in Visual Studio  
-  
-1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
-  
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
-  
-3.  Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.  
-  
-4.  Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.  
-  
-5.  Wählen Sie in der Liste der Projektvorlagen ein Word VSTO-Add-In-Projekt aus.  
-  
-6.  In der **Namen** geben **FirstWordAddIn**.  
-  
-7.  Klicken Sie auf **OK**.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWordAddIn** -Projekt und öffnet die Codedatei "ThisAddIn" im Editor.  
-  
-## <a name="write-code-to-add-text-to-the-saved-document"></a>Schreiben Sie Code zum Hinzufügen von Text zum gespeicherten Dokument  
- Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Word-Objektmodell, um jedem gespeicherten einen Textbaustein hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:  
-  
--   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Word. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
-  
--   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Word geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
-  
-### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>So fügen Sie dem gespeicherten Dokument einen Textabsatz hinzu  
-  
-1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das Ereignis <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> definiert, das ausgelöst wird, wenn ein Dokument gespeichert wird.  
-  
-    Wenn der Benutzer ein Dokument speichert, fügt der Ereignishandler am Anfang des Dokuments neuen Text hinzu.  
-  
+  Diese exemplarischen Vorgehensweise bietet eine Einführung in das Erstellen eines VSTO-Add-Ins für Microsoft Office Word. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.
+
+ [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
+
+ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
+
+- Erstellen eines VSTO-Add-In-Projekts.
+
+- Schreiben von Code, in dem das Word-Objektmodell zum Hinzufügen von Text zu einem Dokument beim Speichern verwendet wird.
+
+- Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.
+
+- Bereinigen des abgeschlossenen Projekts, damit das VSTO-Add-In nicht mehr automatisch auf Ihrem Entwicklungscomputer ausgeführt wird.
+
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+
+## <a name="prerequisites"></a>Vorraussetzungen
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+
+-   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+
+-   Microsoft Word
+
+## <a name="create-the-project"></a>Erstellen eines Projekts
+
+### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>So erstellen Sie ein neues Word VSTO-Add-In-Projekt in Visual Studio
+
+1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+
+2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+
+3.  Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+
+4.  Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
+
+5.  Wählen Sie in der Liste der Projektvorlagen ein Word VSTO-Add-In-Projekt aus.
+
+6.  In der **Namen** geben **FirstWordAddIn**.
+
+7.  Klicken Sie auf **OK**.
+
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWordAddIn** -Projekt und öffnet die Codedatei "ThisAddIn" im Editor.
+
+## <a name="write-code-to-add-text-to-the-saved-document"></a>Schreiben Sie Code zum Hinzufügen von Text zum gespeicherten Dokument
+ Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Word-Objektmodell, um jedem gespeicherten einen Textbaustein hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:
+
+-   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Word. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+
+-   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Word geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
+
+### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>So fügen Sie dem gespeicherten Dokument einen Textabsatz hinzu
+
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Mit dem neuen Code wird ein Ereignishandler für das Ereignis <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> definiert, das ausgelöst wird, wenn ein Dokument gespeichert wird.
+
+    Wenn der Benutzer ein Dokument speichert, fügt der Ereignishandler am Anfang des Dokuments neuen Text hinzu.
+
     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
-  
-   > [!NOTE]  
-   >  Dieser Code verwendet den Indexwert 1, um auf den ersten Absatz in der Auflistung <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> zuzugreifen. Obwohl Visual Basic und Visual C# auf Null basierende Arrays verwenden, ist die untere Arraygrenze der meisten Auflistungen im Word-Objektmodell 1. Weitere Informationen finden Sie unter [schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md).  
-  
-2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden erforderlichen Code hinzu. Dieser Code wird verwendet, um den `Application_DocumentBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis zu verbinden.  
-  
-    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
-  
-   Zum  Ändern des Dokuments beim Speichern wurden in den vorherigen Codebeispielen die folgenden Objekte verwendet:  
-  
--   Das `Application` -Feld der `ThisAddIn` -Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Word.Application>-Objekt zurück, das die aktuelle Instanz von Word darstellt.  
-  
--   Der `Doc` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis. Der Parameter `Doc` ist ein <xref:Microsoft.Office.Interop.Word.Document>-Objekt, das das gespeicherte Dokument darstellt. Weitere Informationen finden Sie unter [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md).  
-  
-## <a name="test-the-project"></a>Testen Sie das Projekt  
-  
-### <a name="to-test-the-project"></a>So testen Sie das Projekt  
-  
-1.  Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.  
-  
-     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt außerdem einen Satz von Registrierungseinträgen, mit deren Hilfe Word das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).  
-  
-2.  Speichern Sie das aktive Dokument in Word.  
-  
-3.  Stellen Sie sicher, dass dem Dokument der folgende Text hinzugefügt wurde.  
-  
-     **Dieser Text wurde per Code hinzugefügt.**  
-  
-4.  Schließen Sie Word.  
-  
-## <a name="clean-up-the-project"></a>Bereinigen Sie das Projekt  
- Wenn Sie die Entwicklung eines Projekts abgeschlossen haben, entfernen Sie die VSTO-Add-In-Assembly, die Registrierungseinträge und die Sicherheitseinstellungen vom Entwicklungscomputer. Andernfalls wird das VSTO-Add-In weiterhin jedes Mal ausgeführt, wenn Sie Word auf dem Entwicklungscomputer öffnen.  
-  
-### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>So bereinigen Sie das abgeschlossene Projekt auf dem Entwicklungscomputer  
-  
-1.  Klicken Sie in Visual Studio im Menü **Build** auf **Projektmappe bereinigen**.  
-  
-## <a name="next-steps"></a>Nächste Schritte  
- Nachdem Sie nun ein einfaches VSTO-Add-In für Word erstellt haben, können Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins erfahren:  
-  
--   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins ausführen können: [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).  
-  
--   Programmieraufgaben, die für Word-VSTO-Add-ins spezifisch sind: [Word-Projektmappen](../vsto/word-solutions.md).  
-  
--   Verwenden das Objektmodell von Word: [Word-Objektmodell-Übersicht](../vsto/word-object-model-overview.md).  
-  
--   Anpassen der Benutzeroberfläche von Word, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
-  
--   Erstellen und Debuggen von VSTO-Add-ins für Word: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).  
-  
--   Bereitstellen von VSTO-Add-ins für Word: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Word-Projektmappen](../vsto/word-solutions.md)   
- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
- [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)   
- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
- [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)  
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
+
+   > [!NOTE]
+   >  Dieser Code verwendet den Indexwert 1, um auf den ersten Absatz in der Auflistung <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> zuzugreifen. Obwohl Visual Basic und Visual C# auf Null basierende Arrays verwenden, ist die untere Arraygrenze der meisten Auflistungen im Word-Objektmodell 1. Weitere Informationen finden Sie unter [schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md).
+
+2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden erforderlichen Code hinzu. Dieser Code wird verwendet, um den `Application_DocumentBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis zu verbinden.
+
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]
+
+   Zum  Ändern des Dokuments beim Speichern wurden in den vorherigen Codebeispielen die folgenden Objekte verwendet:
+
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Word.Application>-Objekt zurück, das die aktuelle Instanz von Word darstellt.
+
+-   Der `Doc` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis. Der Parameter `Doc` ist ein <xref:Microsoft.Office.Interop.Word.Document>-Objekt, das das gespeicherte Dokument darstellt. Weitere Informationen finden Sie unter [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md).
+
+## <a name="test-the-project"></a>Testen Sie das Projekt
+
+### <a name="to-test-the-project"></a>So testen Sie das Projekt
+
+1.  Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.
+
+     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt außerdem einen Satz von Registrierungseinträgen, mit deren Hilfe Word das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).
+
+2.  Speichern Sie das aktive Dokument in Word.
+
+3.  Stellen Sie sicher, dass dem Dokument der folgende Text hinzugefügt wurde.
+
+     **Dieser Text wurde per Code hinzugefügt.**
+
+4.  Schließen Sie Word.
+
+## <a name="clean-up-the-project"></a>Bereinigen Sie das Projekt
+ Wenn Sie die Entwicklung eines Projekts abgeschlossen haben, entfernen Sie die VSTO-Add-In-Assembly, die Registrierungseinträge und die Sicherheitseinstellungen vom Entwicklungscomputer. Andernfalls wird das VSTO-Add-In weiterhin jedes Mal ausgeführt, wenn Sie Word auf dem Entwicklungscomputer öffnen.
+
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>So bereinigen Sie das abgeschlossene Projekt auf dem Entwicklungscomputer
+
+1.  Klicken Sie in Visual Studio im Menü **Build** auf **Projektmappe bereinigen**.
+
+## <a name="next-steps"></a>Nächste Schritte
+ Nachdem Sie nun ein einfaches VSTO-Add-In für Word erstellt haben, können Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins erfahren:
+
+-   Allgemeine Programmieraufgaben, die Sie in VSTO-Add-ins ausführen können: [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).
+
+-   Programmieraufgaben, die für Word-VSTO-Add-ins spezifisch sind: [Word-Projektmappen](../vsto/word-solutions.md).
+
+-   Verwenden das Objektmodell von Word: [Word-Objektmodell-Übersicht](../vsto/word-object-model-overview.md).
+
+-   Anpassen der Benutzeroberfläche von Word, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+
+-   Erstellen und Debuggen von VSTO-Add-ins für Word: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).
+
+-   Bereitstellen von VSTO-Add-ins für Word: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
+
+## <a name="see-also"></a>Siehe auch
+- [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Word-Projektmappen](../vsto/word-solutions.md)
+- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
+- [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)
+- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)
+- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+- [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)

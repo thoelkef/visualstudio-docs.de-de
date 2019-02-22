@@ -13,41 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871805"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629442"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Vorgehensweise: Programmgesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblattzelle
-  In diesem Beispiel wird veranschaulicht, wie Text programmgesteuert in einer Zelle angezeigt wird. Um Text in Zelle anzuzeigen, verwenden Sie entweder eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="use-a-namedrange-control"></a>Verwenden Sie ein NamedRange-Steuerelement  
- Dieses Beispiel verwendet eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `message`. Das Steuerelement muss eine Anpassung auf Dokumentebene zur Entwurfszeit hinzugefügt werden. Der folgende Code muss in einer Sheet-Klasse platziert werden, nicht in der `ThisWorkbook` Klasse.  
-  
-### <a name="to-display-text-in-a-namedrange-control"></a>Zum Anzeigen von Text in einem NamedRange-Steuerelement  
-  
-1.  Legen Sie den Wert, der die <xref:Microsoft.Office.Tools.Excel.NamedRange> die Steuerung an **Hello World**.  
-  
+  In diesem Beispiel wird veranschaulicht, wie Text programmgesteuert in einer Zelle angezeigt wird. Um Text in Zelle anzuzeigen, verwenden Sie entweder eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="use-a-namedrange-control"></a>Verwenden Sie ein NamedRange-Steuerelement
+ Dieses Beispiel verwendet eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `message`. Das Steuerelement muss eine Anpassung auf Dokumentebene zur Entwurfszeit hinzugefügt werden. Der folgende Code muss in einer Sheet-Klasse platziert werden, nicht in der `ThisWorkbook` Klasse.
+
+### <a name="to-display-text-in-a-namedrange-control"></a>Zum Anzeigen von Text in einem NamedRange-Steuerelement
+
+1.  Legen Sie den Wert, der die <xref:Microsoft.Office.Tools.Excel.NamedRange> die Steuerung an **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
-     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
-  
-## <a name="use-a-native-excel-range"></a>Verwenden Sie einen systemeigenen Excel-Bereich  
- Der folgende Code wird einen neuen Bereich programmgesteuert erstellt, und klicken Sie dann ein Wert zugewiesen.  
-  
-### <a name="to-display-text-in-an-excel-range"></a>Zum Anzeigen von Text in einem Excel-Bereich  
-  
-1.  Rufen Sie den Bereich in Zelle **A1** auf `Sheet1` und legen Sie den Wert **Hello World**.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
+
+## <a name="use-a-native-excel-range"></a>Verwenden Sie einen systemeigenen Excel-Bereich
+ Der folgende Code wird einen neuen Bereich programmgesteuert erstellt, und klicken Sie dann ein Wert zugewiesen.
+
+### <a name="to-display-text-in-an-excel-range"></a>Zum Anzeigen von Text in einem Excel-Bereich
+
+1.  Rufen Sie den Bereich in Zelle **A1** auf `Sheet1` und legen Sie den Wert **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
-     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Sammeln von Daten mit einem Windows form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Problembehandlung bei Office-Projektmappen](../vsto/troubleshooting-office-solutions.md)   
- [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
+
+## <a name="see-also"></a>Siehe auch
+- [Exemplarische Vorgehensweise: Sammeln von Daten mit einem Windows form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Problembehandlung bei Office-Projektmappen](../vsto/troubleshooting-office-solutions.md)
+- [NamedRange-Steuerelement](../vsto/namedrange-control.md)
+- [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)
+- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4172516ebfdd39dc7504a81c8698337c9d84d5a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041879"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639660"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem legacy-Sprachdienst
-Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder kommentieren Sie den Code. Ein Kommentar ist einen Textabschnitt, der enthält zusätzliche Informationen zu den Code wird jedoch ignoriert, während der Kompilierung oder Interpretation erfordern.  
-  
- Die verwaltete Package Framework (MPF)-Klassen bieten Unterstützung für auskommentieren und Aufheben der auskommentierung markierten Text.  
-  
-## <a name="comment-styles"></a>Kommentarstile  
-Es gibt zwei allgemeine Arten der Kommentar:  
-   
-1.  Zeilenkommentare, die der Kommentar, in dem in einer einzelnen Zeile ist.  
-  
-2.  Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.  
-  
+Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder kommentieren Sie den Code. Ein Kommentar ist einen Textabschnitt, der enthält zusätzliche Informationen zu den Code wird jedoch ignoriert, während der Kompilierung oder Interpretation erfordern.
 
-Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In c# ein Zeilenkommentar starten z. B. mit `//`, und ein blockskommentar beginnt mit `/*` und endet mit `*/`.  
-  
-Wenn der Benutzer den Befehl auswählt **Auswahl kommentieren** aus der **bearbeiten** > **erweitert** im Menü der Befehl geleitet wird die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse. Wenn der Benutzer den Befehl auswählt **Kommentar der Auswahl**, der Befehl weitergeleitet wird, um die <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> Methode.  
-  
-## <a name="support-code-comments"></a>Unterstützung von Kommentaren im code  
- Sie haben Ihre Language Service Support Codekommentare von der `EnableCommenting` benannter Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Weitere Informationen zum Festlegen von Sprache-Service-Features finden Sie unter [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md).  
-  
- Müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> -Methode zur Rückgabe einer <xref:Microsoft.VisualStudio.Package.CommentInfo> Struktur mit die Kommentarzeichen für Ihre Sprache. C#-Stil zeilenkommentarzeichen sind die Standardeinstellungen.  
-  
-### <a name="example"></a>Beispiel  
- Hier ist eine Beispiel einer Implementierung der <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> Methode.  
-  
-```csharp  
-using Microsoft.VisualStudio.Package;  
-  
-namespace MyLanguagePackage  
-{  
-    class MySource : Source  
-    {  
-        public override CommentInfo GetCommentFormat() {  
-            CommentInfo info = new CommentInfo();  
-            info.LineStart       = "//";  
-            info.BlockStart      = "/*";  
-            info.BlockEnd        = "*/";  
-            info.UseLineComments = true;  
-            return info;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md)
+ Die verwaltete Package Framework (MPF)-Klassen bieten Unterstützung für auskommentieren und Aufheben der auskommentierung markierten Text.
+
+## <a name="comment-styles"></a>Kommentarstile
+Es gibt zwei allgemeine Arten der Kommentar:
+
+1.  Zeilenkommentare, die der Kommentar, in dem in einer einzelnen Zeile ist.
+
+2.  Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.
+
+
+Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In c# ein Zeilenkommentar starten z. B. mit `//`, und ein blockskommentar beginnt mit `/*` und endet mit `*/`.
+
+Wenn der Benutzer den Befehl auswählt **Auswahl kommentieren** aus der **bearbeiten** > **erweitert** im Menü der Befehl geleitet wird die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse. Wenn der Benutzer den Befehl auswählt **Kommentar der Auswahl**, der Befehl weitergeleitet wird, um die <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> Methode.
+
+## <a name="support-code-comments"></a>Unterstützung von Kommentaren im code
+ Sie haben Ihre Language Service Support Codekommentare von der `EnableCommenting` benannter Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Weitere Informationen zum Festlegen von Sprache-Service-Features finden Sie unter [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md).
+
+ Müssen Sie auch überschreiben die <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> -Methode zur Rückgabe einer <xref:Microsoft.VisualStudio.Package.CommentInfo> Struktur mit die Kommentarzeichen für Ihre Sprache. C#-Stil zeilenkommentarzeichen sind die Standardeinstellungen.
+
+### <a name="example"></a>Beispiel
+ Hier ist eine Beispiel einer Implementierung der <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> Methode.
+
+```csharp
+using Microsoft.VisualStudio.Package;
+
+namespace MyLanguagePackage
+{
+    class MySource : Source
+    {
+        public override CommentInfo GetCommentFormat() {
+            CommentInfo info = new CommentInfo();
+            info.LineStart       = "//";
+            info.BlockStart      = "/*";
+            info.BlockEnd        = "*/";
+            info.UseLineComments = true;
+            return info;
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)
+- [Registrieren von Diensten legacysprache](../../extensibility/internals/registering-a-legacy-language-service1.md)

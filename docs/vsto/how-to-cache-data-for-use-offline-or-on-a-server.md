@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636514"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server
   Sie können ein Datenelement im Dokument zwischengespeichert werden markieren, damit sie verfügbar ist offline. Dies erleichtert auch möglich, dass die Daten in das Dokument durch anderen Code bearbeitet werden, wenn das Dokument auf einem Server gespeichert ist.
@@ -60,4 +60,8 @@ ms.locfileid: "54873743"
 4.  In der **Eigenschaften** legen die **Modifizierer** Eigenschaft **öffentliche** (der Standardwert ist **intern**).
 
 ## <a name="see-also"></a>Siehe auch
- [Zwischenspeichern von Daten](../vsto/caching-data.md) [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md) [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md) [Speichern von Daten](../data-tools/saving-data.md)
+- [Zwischenspeichern von Daten](../vsto/caching-data.md)
+- [Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Zugreifen auf Daten in Dokumenten auf dem server](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Speichern von Daten](../data-tools/saving-data.md)

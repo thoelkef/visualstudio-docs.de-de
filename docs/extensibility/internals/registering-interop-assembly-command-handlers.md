@@ -11,44 +11,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82d9c559219b47560483e4beab271c262c277573
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996674"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602792"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrieren der Befehlshandler von Interop-Assemblys
-Eine VSPackage muss zaregistrovat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit die integrierte Entwicklungsumgebung (IDE) seine Befehle ordnungsgemäß weiterleitet.  
+Eine VSPackage muss zaregistrovat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit die integrierte Entwicklungsumgebung (IDE) seine Befehle ordnungsgemäß weiterleitet.
 
- Die Registrierung kann entweder durch die manuelle Bearbeitung oder über eine Registrierungsstelle (.rgs)-Datei aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).  
+ Die Registrierung kann entweder durch die manuelle Bearbeitung oder über eine Registrierungsstelle (.rgs)-Datei aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
- Das Managed Package Framework (MPF) stellt diese Funktionalität über die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Klasse.  
+ Das Managed Package Framework (MPF) stellt diese Funktionalität über die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Klasse.
 
- [Tabelle Formatreferenz für Blobüberwachungsprotokolle Befehl](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich im nicht verwalteten Satelliten-UI-Dlls.  
+- [Tabelle Formatreferenz für Blobüberwachungsprotokolle Befehl](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich im nicht verwalteten Satelliten-UI-Dlls.
 
-## <a name="command-handler-registration-of-a-vspackage"></a>Befehl Registrierung von VSPackages  
- Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle erfordert einen Registrierungseintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei an. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.  
+## <a name="command-handler-registration-of-a-vspackage"></a>Befehl Registrierung von VSPackages
+ Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle erfordert einen Registrierungseintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei an. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.
 
 > [!NOTE]
->  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+>  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
-### <a name="the-ctmenu-resource-registry-entry"></a>Der Registrierungseintrag für CTMENU-Ressource  
- Die Struktur des Registrierungseintrags lautet:  
+### <a name="the-ctmenu-resource-registry-entry"></a>Der Registrierungseintrag für CTMENU-Ressource
+ Die Struktur des Registrierungseintrags lautet:
 
-```  
-HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
-  Menus\  
-    <GUID> = <Resource Information>  
-```  
+```
+HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
+  Menus\
+    <GUID> = <Resource Information>
+```
 
- \<*GUID*> ist der `GUID` des VSPackage in der Form {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
+ \<*GUID*> ist der `GUID` des VSPackage in der Form {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.
 
- *\<Informationen zur Ressource >* besteht aus drei Elementen, die durch Kommas getrennt. Diese Elemente sind in der Reihenfolge auf:  
+ *\<Informationen zur Ressource >* besteht aus drei Elementen, die durch Kommas getrennt. Diese Elemente sind in der Reihenfolge auf:
 
- \<*Pfad zur Ressourcen-DLL*>, \< *Menü-Ressourcen-ID*>, \< *Menü-Version*>  
+ \<*Pfad zur Ressourcen-DLL*>, \< *Menü-Ressourcen-ID*>, \< *Menü-Version*>
 
- Die folgende Tabelle beschreibt die Felder der \< *Ressourceninformationen*>.  
+ Die folgende Tabelle beschreibt die Felder der \< *Ressourceninformationen*>.
 
 
 | Element | Beschreibung |
@@ -57,16 +57,16 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 | \<*Menü-Ressourcen-ID*> | Dies ist die Ressourcen-ID der `CTMENU` Ressource, die alle Elemente der Benutzeroberfläche für das VSPackage enthält, wie vom kompiliert einen [VSCT](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) Datei. |
 | \<*Menu Version*> | Dies ist eine Zahl, die als einer Version für die `CTMENU` Ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet diesen Wert um zu bestimmen, ob er den Inhalt der erneutes zusammenführen muss die `CTMENU` Ressource mit dem Cache aller `CTMENU` Ressourcen. Ein erneutes Zusammenführen wird ausgelöst, durch den Devenv-Setup-Befehl ausführen.<br /><br /> Dieser Wert sollte zunächst auf 1 festgelegt und nach jeder Änderung erhöht die `CTMENU` Ressource und vor der erneutes zusammenführen. |
 
-### <a name="example"></a>Beispiel  
- Hier ist ein Beispiel für eine Reihe von Ressourceneinträgen:  
+### <a name="example"></a>Beispiel
+ Hier ist ein Beispiel für eine Reihe von Ressourceneinträgen:
 
-```  
-HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
-  Menus\  
-    {019971D6-4685-11D2-B48A-0000F87572EB} = ,1, 10  
-    {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
-```  
+```
+HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
+  Menus\
+    {019971D6-4685-11D2-B48A-0000F87572EB} = ,1, 10
+    {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Befehle und Menüs, die Interop-Assemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+## <a name="see-also"></a>Siehe auch
+- [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Befehle und Menüs, die Interop-Assemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
