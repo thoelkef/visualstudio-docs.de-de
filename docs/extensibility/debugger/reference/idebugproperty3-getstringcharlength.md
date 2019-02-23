@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringCharLength | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringCharLength
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24f766a0ed5ce4fca2060624b1d8b4016f8e8c41
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fdfb437b079fd3c7b5657a369402bfbe4de047e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450021"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698221"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Gibt die Anzahl der Zeichen in Zeichenfolge für die zugeordnete Eigenschaft zurück.
@@ -92,5 +92,5 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

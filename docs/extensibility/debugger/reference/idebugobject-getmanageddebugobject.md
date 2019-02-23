@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetManagedDebugObject | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::GetManagedDebugObject
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99aa9d4934b6d33890fb69c0564c16ec0706b924
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6738c70b75ff1e2f393b59e330ce57f2232de61
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682374"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-Erstellt eine Kopie des verwalteten Objekts im Adressraum der Debug-Engine.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetManagedDebugObject(   
-   IDebugManagedObject** ppObject  
-);  
-```  
-  
-```csharp  
-int GetManagedDebugObject(  
-   out IDebugManagedObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppObject`  
- [out] Gibt eine [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) Objekt, das das neu erstellte verwaltete Objekt darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL zurück, wenn diese [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) stellt keine Instanz einer verwalteten Klasse dar.  
-  
-## <a name="remarks"></a>Hinweise  
- Dies [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt muss eine Klasseninstanz verwalteten Wert darstellen, z. B. eine `System.Decimal` Instanz. Indem Sie eine lokale Kopie, den Aufwand des Aufrufs [auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) wird gelöscht.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+Erstellt eine Kopie des verwalteten Objekts im Adressraum der Debug-Engine.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetManagedDebugObject( 
+   IDebugManagedObject** ppObject
+);
+```
+
+```csharp
+int GetManagedDebugObject(
+   out IDebugManagedObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppObject`
+
+ [out] Gibt eine [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) Objekt, das das neu erstellte verwaltete Objekt darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL zurück, wenn diese [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) stellt keine Instanz einer verwalteten Klasse dar.
+
+## <a name="remarks"></a>Hinweise
+ Dies [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt muss eine Klasseninstanz verwalteten Wert darstellen, z. B. eine `System.Decimal` Instanz. Indem Sie eine lokale Kopie, den Aufwand des Aufrufs [auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) wird gelöscht.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

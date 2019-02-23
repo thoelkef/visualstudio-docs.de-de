@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a21c4f330d78d35735cb8463af62802d1fa21a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 996f911f37b8226065feb4da311f736dd910550b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961662"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709966"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Registrieren von Dateierweiterungen für Seite-an-Seite-Bereitstellungen
-Für VSPackages, die in einer Seite-an-Seite-Umgebung bereitgestellt werden, müssen Sie die Dateierweiterungen, um die richtige Version der Dateien zuzuordnen registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Wenn Sie eine bestimmte Version Dateinamenerweiterung verwenden, wird nach der Registrierung können Benutzer öffnen Sie das Projekt und Element-Projektdateien in die entsprechende Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md)  
- Erläutert, wie die Dateinamenerweiterungen Weitere Erweiterungen registriert sind.  
-  
- [Angeben von dateihandlern für Dateierweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
- Enthält Informationen zum Registrieren von Anwendungen, die geöffnet werden können, bearbeiten und usw., eine bestimmte Dateinamenerweiterung.  
-  
- [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)  
- Erläutert, wie zum Registrieren von Verben.  
-  
- [Seite-an-Seite dateizuordnungen verwalten](../extensibility/managing-side-by-side-file-associations.md)  
- Beschreibt, wie Sie die Seite-an-Seite-Installationen, in dem Verarbeiten einer bestimmten Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Öffnen einer Datei aufgerufen werden soll.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Unterstützen von mehreren Versionen von Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- Beschrieben werden Probleme, die im Zusammenhang mit mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und dem VSPackage während der Entwicklung und Bereitstellung für Endbenutzer auftreten.
+Für VSPackages, die in einer Seite-an-Seite-Umgebung bereitgestellt werden, müssen Sie die Dateierweiterungen, um die richtige Version der Dateien zuzuordnen registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Wenn Sie eine bestimmte Version Dateinamenerweiterung verwenden, wird nach der Registrierung können Benutzer öffnen Sie das Projekt und Element-Projektdateien in die entsprechende Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md) wird erläutert, wie die Dateinamenerweiterungen Weitere Erweiterungen registriert sind.
+
+- [Angeben von dateihandlern für Dateierweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md) enthält Informationen dazu, wie Sie Anwendungen, die geöffnet werden können, bearbeiten und usw., eine bestimmte Dateinamenerweiterung zu registrieren.
+
+- [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md) wird erläutert, wie Verben zu registrieren.
+
+- [Seite-an-Seite dateizuordnungen verwalten](../extensibility/managing-side-by-side-file-associations.md) beschreibt, wie Sie die Seite-an-Seite-Installationen, in dem Verarbeiten einer bestimmten Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Öffnen einer Datei aufgerufen werden soll.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Unterstützen von mehreren Versionen von Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md) werden Probleme im Zusammenhang mit mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und dem VSPackage während der Entwicklung und Bereitstellung für Endbenutzer.

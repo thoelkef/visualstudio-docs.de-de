@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413357"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701224"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Ruft die Debugsymbole, mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.
@@ -48,26 +48,33 @@ int GetSymAttribute (
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner der Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner des Moduls.
+ [in] Der Bezeichner der Anwendungsdomäne.
 
-`tokParent`  
-[in] Token für das übergeordnete Attribut.
+`guidModule`
 
-`pstrName`  
-[in] Der Name des Moduls.
+ [in] Eindeutiger Bezeichner des Moduls.
 
-`cBuffer`  
-[in] Anzahl der Bytes, die erforderlich sind, für die Ausgabe `buffer`.
+`tokParent`
 
-`pcBuffer`  
-[out] Länge der Ausgabe `buffer`.
+ [in] Token für das übergeordnete Attribut.
 
-`buffer`  
-[out] Ein Array mit den Symbolen.
+`pstrName`
+
+ [in] Der Name des Moduls.
+
+`cBuffer`
+
+ [in] Anzahl der Bytes, die erforderlich sind, für die Ausgabe `buffer`.
+
+`pcBuffer`
+
+ [out] Länge der Ausgabe `buffer`.
+
+`buffer`
+
+ [out] Ein Array mit den Symbolen.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -104,4 +111,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

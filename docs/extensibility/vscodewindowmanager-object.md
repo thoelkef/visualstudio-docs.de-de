@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004632"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711084"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager object
-Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
-  
- Die folgende Tabelle zeigt die Schnittstellen der `VSCodeWindowManager` Objekt.  
-  
-|Interface|Beschreibung|  
-|---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht Zusatzelementen (z. B. dropdownleisten) hinzugefügt oder aus einem Codefenster entfernt werden.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Anpassen von Fenstern des Code mit der legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+
+ Die folgende Tabelle zeigt die Schnittstellen der `VSCodeWindowManager` Objekt.
+
+|Interface|Beschreibung|
+|---------------|-----------------|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht Zusatzelementen (z. B. dropdownleisten) hinzugefügt oder aus einem Codefenster entfernt werden.|
+
+## <a name="see-also"></a>Siehe auch
+- [Anpassen von Fenstern des Code mit der legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

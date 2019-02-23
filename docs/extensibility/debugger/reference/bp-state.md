@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315416"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709251"
 ---
 # <a name="bpstate"></a>BP_STATE
 Gibt an, ob einen gebundenen Haltepunkt vorhanden ist, und gibt auch an, wenn es aktiviert ist.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Member
-BPS_NONE  
-Gibt an, dass kein Haltepunkt vorhanden ist.
+BPS_NONE gibt an, die kein Haltepunkt vorhanden ist.
 
-BPS_DELETED  
-Gibt an, dass der Haltepunkt gelöscht wurde.
+BPS_DELETED gibt an, dass der Haltepunkt gelöscht wurde.
 
-BPS_DISABLED  
-Gibt an, dass der Haltepunkt deaktiviert ist.
+BPS_DISABLED gibt an, dass der Haltepunkt deaktiviert ist.
 
-BPS_ENABLED  
-Gibt an, dass der Breakpoint aktiviert ist.
+BPS_ENABLED gibt an, dass der Breakpoint aktiviert ist.
 
 ## <a name="remarks"></a>Hinweise
 Zurückgegeben von der [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) Methode.
@@ -67,5 +63,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

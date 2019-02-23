@@ -12,54 +12,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7da9bce351ef8910f77713bf77d0f5f698193140
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97c5c06a53214ef16924b50c4b35ee4bb33804ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998312"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698923"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents-Funktion
-Diese Funktion ruft ein Statusereignis in der Warteschlange ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-SCCRTN SccGetEvents (  
-   LPVOID pvContext,  
-   LPSTR  lpFileName,  
-   LPLONG lpStatus,  
-   LPLONG pnEventsRemaining  
-);  
-```  
-  
-### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
-  
- lpFileName  
- [in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-In für die zurückgegebenen Dateinamen (bis zu _MAX_PATH-Zeichen) versetzt.  
-  
- lpStatus  
- [in, out] Gibt den Statuscode zurück (finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md) mögliche Werte).  
-  
- pnEventsRemaining  
- [in, out] Anzahl der Einträge in der Warteschlange verbleibt, nach dem Aufruf zurückgegeben. Wenn diese Zahl groß ist, könnten sich der Aufrufer zum Aufrufen der [SccQueryInfo](../extensibility/sccqueryinfo-function.md) um alle Informationen auf einmal abzurufen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
-  
-|Wert|Beschreibung|  
-|-----------|-----------------|  
-|SCC_OK|Ruft Ereignisse erfolgreich war.|  
-|SCC_E_OPNOTSUPPORTED|Diese Funktion wird nicht unterstützt.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Funktion wird aufgerufen, während der Verarbeitung im Leerlauf befindet, um festzustellen, ob alle statusaktualisierungen für Dateien unter quellcodeverwaltung stattgefunden haben. Das Quellcodeverwaltungs-Plug-in verwaltet er den Status aller Dateien, die er kennt, und wenn eine Änderung des Status finden Sie durch das plug-in, den Status und die dazugehörige Datei in einer Warteschlange gespeichert werden. Wenn `SccGetEvents` aufgerufen wird, wird im oberen Bereich Element der Warteschlange abgerufen und zurückgegeben wird. Diese Funktion ist beschränkt, nur zuvor zwischengespeicherten Informationen zurückgegeben werden sollen, und benötigen einen sehr schnellen Turnaround (d. h. keine Lesen des Datenträgers oder Fragen das Quellcode-Verwaltungssystem für den Status) Andernfalls kann die Leistung der IDE gestartet, kann es zu Leistungseinbußen.  
-  
- Ist kein Update Status Bericht, speichert das Quellcodeverwaltungs-Plug-in eine leere Zeichenfolge in den Puffer, der auf `lpFileName`. Andernfalls das plug-in speichert den vollständigen Pfadnamen der Datei für die die Statusinformationen geändert hat, und gibt den entsprechenden Statuscode zurück (einen der Werte finden Sie im [Datei Statuscode](../extensibility/file-status-code-enumerator.md)).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
- [Datei-Statuscode](../extensibility/file-status-code-enumerator.md)
+Diese Funktion ruft ein Statusereignis in der Warteschlange ab.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+SCCRTN SccGetEvents (
+   LPVOID pvContext,
+   LPSTR  lpFileName,
+   LPLONG lpStatus,
+   LPLONG pnEventsRemaining
+);
+```
+
+### <a name="parameters"></a>Parameter
+ pvContext
+
+[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+
+ lpFileName
+
+[in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-In für die zurückgegebenen Dateinamen (bis zu _MAX_PATH-Zeichen) versetzt.
+
+ lpStatus
+
+[in, out] Gibt den Statuscode zurück (finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md) mögliche Werte).
+
+ pnEventsRemaining
+
+[in, out] Anzahl der Einträge in der Warteschlange verbleibt, nach dem Aufruf zurückgegeben. Wenn diese Zahl groß ist, könnten sich der Aufrufer zum Aufrufen der [SccQueryInfo](../extensibility/sccqueryinfo-function.md) um alle Informationen auf einmal abzurufen.
+
+## <a name="return-value"></a>Rückgabewert
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+
+|Wert|Beschreibung|
+|-----------|-----------------|
+|SCC_OK|Ruft Ereignisse erfolgreich war.|
+|SCC_E_OPNOTSUPPORTED|Diese Funktion wird nicht unterstützt.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|
+
+## <a name="remarks"></a>Hinweise
+ Diese Funktion wird aufgerufen, während der Verarbeitung im Leerlauf befindet, um festzustellen, ob alle statusaktualisierungen für Dateien unter quellcodeverwaltung stattgefunden haben. Das Quellcodeverwaltungs-Plug-in verwaltet er den Status aller Dateien, die er kennt, und wenn eine Änderung des Status finden Sie durch das plug-in, den Status und die dazugehörige Datei in einer Warteschlange gespeichert werden. Wenn `SccGetEvents` aufgerufen wird, wird im oberen Bereich Element der Warteschlange abgerufen und zurückgegeben wird. Diese Funktion ist beschränkt, nur zuvor zwischengespeicherten Informationen zurückgegeben werden sollen, und benötigen einen sehr schnellen Turnaround (d. h. keine Lesen des Datenträgers oder Fragen das Quellcode-Verwaltungssystem für den Status) Andernfalls kann die Leistung der IDE gestartet, kann es zu Leistungseinbußen.
+
+ Ist kein Update Status Bericht, speichert das Quellcodeverwaltungs-Plug-in eine leere Zeichenfolge in den Puffer, der auf `lpFileName`. Andernfalls das plug-in speichert den vollständigen Pfadnamen der Datei für die die Statusinformationen geändert hat, und gibt den entsprechenden Statuscode zurück (einen der Werte finden Sie im [Datei Statuscode](../extensibility/file-status-code-enumerator.md)).
+
+## <a name="see-also"></a>Siehe auch
+- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [Datei-Statuscode](../extensibility/file-status-code-enumerator.md)

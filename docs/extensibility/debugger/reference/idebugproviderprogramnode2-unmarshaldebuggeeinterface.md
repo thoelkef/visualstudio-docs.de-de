@@ -1,7 +1,7 @@
 ---
 title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af69580293e4ff37d0a23e3050955c96cc8f10b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86c20e7c6828cfbf3ec31ba5dcbec9c7ee8478df
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988271"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706222"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT UnmarshalDebuggeeInterface(  
-   REFIID riid,  
-   void** ppvObject  
-);  
-```  
-  
-```csharp  
-int UnmarshalDebuggeeInterface(  
-   ref Guid   riid,  
-   out IntPtr ppvObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `riid`  
- [in] Die GUID der Schnittstelle abrufen.  
-  
- `ppvObject`  
- [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] diese direkt in den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird verwendet, wenn die Debug-Engine, in ausgeführt wird der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Prozessbereich und die zu debuggende Programm wird im eigenen Prozessbereich ausgeführt wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)
+Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT UnmarshalDebuggeeInterface(
+   REFIID riid,
+   void** ppvObject
+);
+```
+
+```csharp
+int UnmarshalDebuggeeInterface(
+   ref Guid   riid,
+   out IntPtr ppvObject
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `riid`
+
+ [in] Die GUID der Schnittstelle abrufen.
+
+ `ppvObject`
+
+ [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] diese direkt in den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Diese Methode wird verwendet, wenn die Debug-Engine, in ausgeführt wird der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Prozessbereich und die zu debuggende Programm wird im eigenen Prozessbereich ausgeführt wird.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)
