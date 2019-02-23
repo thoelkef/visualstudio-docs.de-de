@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922872"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685026"
 ---
 # <a name="stepping-in-break-mode"></a>Schrittausführung im Unterbrechungsmodus
-Der folgende Abschnitt beschreibt den Prozess, der tritt auf, wenn der Debugger im Unterbrechungsmodus ist und Code durchlaufen schrittweise muss:  
-  
-## <a name="stepping-process"></a>Zum schrittweisen Prozess  
-  
-1.  Rufen Sie [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) mit [STEPKIND](../../extensibility/debugger/reference/stepkind.md) und [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) Argumente für einen Schritt ausführen.  
-  
-2.  Wenn der Schritt abgeschlossen ist, Senden einer [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) als Beenden-Ereignis.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+Der folgende Abschnitt beschreibt den Prozess, der tritt auf, wenn der Debugger im Unterbrechungsmodus ist und Code durchlaufen schrittweise muss:
+
+## <a name="stepping-process"></a>Zum schrittweisen Prozess
+
+1.  Rufen Sie [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) mit [STEPKIND](../../extensibility/debugger/reference/stepkind.md) und [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) Argumente für einen Schritt ausführen.
+
+2.  Wenn der Schritt abgeschlossen ist, Senden einer [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) als Beenden-Ereignis.
+
+## <a name="see-also"></a>Siehe auch
+- [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

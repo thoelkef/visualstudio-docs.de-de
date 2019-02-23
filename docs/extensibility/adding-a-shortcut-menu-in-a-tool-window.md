@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316326"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681477"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü wird ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, im Textfeld oder Fensterhintergrund klickt. Befehle im Kontextmenü der Verhalten sich wie die Befehle auf anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben Sie es in der *VSCT* Datei, und es als Reaktion auf der rechten Maustaste angezeigt werden.
@@ -277,5 +277,5 @@ Wählen Sie ein Kontextmenü aufrufen, wie z. B. in dieser exemplarischen Vorgeh
 4. Klicken Sie auf eine Farbe im Kontextmenü auf. Hintergrundfarbe des Tool sollte auf die ausgewählte Farbe geändert werden.
 
 ## <a name="see-also"></a>Siehe auch
-[Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
+- [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

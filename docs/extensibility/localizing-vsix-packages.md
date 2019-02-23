@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936644"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687080"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -27,7 +27,7 @@ Wenn der Inhalt des VSIX-Pakets eine VSPackage enthält, die fügt Menübefehle 
 
 ## <a name="directory-structure"></a>Verzeichnisstruktur
 
- Wenn ein Benutzer eine Erweiterung installiert **Erweiterungen und Updates** überprüft die oberste Ebene der VSIX-Paket für einen Ordner, deren Name mit der Visual Studio-Gebietsschema des Zielcomputers übereinstimmt. Wenn **Erweiterungen und Updates** sucht nach einem *.vsixlangpack* Datei im Ordner "", ersetzt er die lokalisierte Werte in dieser Datei für die entsprechenden Werte in der *vsixmanifest*Datei. Diese Werte werden angezeigt, wenn die Erweiterung installiert wird. Das folgende Beispiel zeigt die Verzeichnisstruktur für ein VSIX-Paket, das in Spanisch (es-ES) und Französisch (fr-FR) lokalisiert ist.  
+ Wenn ein Benutzer eine Erweiterung installiert **Erweiterungen und Updates** überprüft die oberste Ebene der VSIX-Paket für einen Ordner, deren Name mit der Visual Studio-Gebietsschema des Zielcomputers übereinstimmt. Wenn **Erweiterungen und Updates** sucht nach einem *.vsixlangpack* Datei im Ordner "", ersetzt er die lokalisierte Werte in dieser Datei für die entsprechenden Werte in der *vsixmanifest*Datei. Diese Werte werden angezeigt, wenn die Erweiterung installiert wird. Das folgende Beispiel zeigt die Verzeichnisstruktur für ein VSIX-Paket, das in Spanisch (es-ES) und Französisch (fr-FR) lokalisiert ist.
 
 ```text
 .
@@ -63,7 +63,7 @@ Das folgende Beispiel zeigt die relevanten Teile einer *"Extension.vsixmanifest"
 
 ### <a name="code"></a>Code
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Das folgende Beispiel zeigt die relevanten Teile einer *"Extension.vsixmanifest"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

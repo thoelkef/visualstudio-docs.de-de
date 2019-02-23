@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316182"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710083"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Fügen Sie, dass eine zuletzt verwendete Liste aus, um ein Untermenü
 Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie Sie eine dynamische Liste zu einem Untermenü hinzufügen. Liste mit der dynamische bildet die Grundlage zum Erstellen einer Liste der zuletzt verwendeten (MRU).
@@ -202,4 +202,4 @@ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visua
 4. Öffnen Sie das Untermenü erneut ein. Beachten Sie, dass **Element 3** ist jetzt am oberen Rand der Liste und die anderen Elemente haben eine Position nach unten verschoben wurde. Klicken Sie auf **Element 3** erneut, und beachten Sie, die im Meldungsfeld noch werden **ausgewählte Element 3**, was bedeutet, dass der Text ordnungsgemäß auf die neue Position zusammen mit der Bezeichnung Befehl verschoben wurde.
 
 ## <a name="see-also"></a>Siehe auch
-[Dynamisches Hinzufügen von Menüelementen](../extensibility/dynamically-adding-menu-items.md)
+- [Dynamisches Hinzufügen von Menüelementen](../extensibility/dynamically-adding-menu-items.md)

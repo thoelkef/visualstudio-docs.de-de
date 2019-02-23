@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450541"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678604"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck erhält der symbolanbieter und die Adresse des Frames, ausgewertet.
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>Parameter
-`upstrExpression`  
-[in] Die Ausdruckszeichenfolge analysiert werden.
+`upstrExpression`
 
-`dwFlags`  
-[in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
+ [in] Die Ausdruckszeichenfolge analysiert werden.
 
-`nRadix`  
-[in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
+`dwFlags`
 
-`pSymbolProvider`  
-[in] Schnittstelle, die von der symbolanbieter.
+ [in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
 
-`pAddress`  
-[in] Die Adresse des Frames, ausgewertet.
+`nRadix`
 
-`pbstrError`  
-[out] Gibt den Fehler als Klartext zurück.
+ [in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
 
-`pichError`  
-[out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
+ [in] Schnittstelle, die von der symbolanbieter.
+
+`pAddress`
+
+ [in] Die Adresse des Frames, ausgewertet.
+
+`pbstrError`
+
+ [out] Gibt den Fehler als Klartext zurück.
+
+`pichError`
+
+ [out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
+
+`ppParsedExpression`
+
+ [out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

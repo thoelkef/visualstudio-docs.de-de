@@ -1,7 +1,7 @@
 ---
 title: ATTACH_REASON | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ATTACH_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7acd5b87288365cde43b2eb8f460b52048dcf36f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318706"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688263"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Gibt den Grund für die Debug-Engine (DE) Verbindung mit einem Programm-Knoten.
@@ -42,14 +42,11 @@ public enum enum_ATTACH_REASON {
 ```
 
 ## <a name="members"></a>Member
-ATTACH_REASON_AUTO  
-Angefügt werden, da der Prozess derzeit im Debugmodus befindet.
+ATTACH_REASON_AUTO angefügt werden, da der Prozess derzeit im Debugmodus befindet.
 
-ATTACH_REASON_LAUNCH  
-Angefügt werden, da der Prozess gestartet wurde.
+ATTACH_REASON_LAUNCH angefügt werden, da der Prozess gestartet wurde.
 
-ATTACH_REASON_USER  
-Fügen Sie aufgrund einer benutzeranforderung.
+Fügen Sie ATTACH_REASON_USER aufgrund einer benutzeranforderung.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte werden verwendet, als Parameter an die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) und [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden.
@@ -62,6 +59,6 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
-[Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

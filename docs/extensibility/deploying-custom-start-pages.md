@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982766"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693008"
 ---
 # <a name="deploy-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 
@@ -43,13 +44,13 @@ Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager**
 
 - Durch das manuelle Erstellen einer *VSIX* Datei. Zum Erstellen einer *VSIX* Datei manuell:
 
-  1.  Erstellen der *"Extension.vsixmanifest"* Datei und die *[Content_Types] .xml* -Datei in einen neuen Ordner. Weitere Informationen finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Erstellen der *"Extension.vsixmanifest"* Datei und die *[Content_Types] .xml* -Datei in einen neuen Ordner. Weitere Informationen finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  Im Windows-Explorer den Ordner, die zwei XML-Dateien enthält, klicken Sie auf **senden an**, und klicken Sie dann auf komprimierten (gezippten) Ordner. Benennen Sie die resultierende *ZIP* Datei *Filename.vsix*, wobei der Dateiname der Name der verteilbaren Datei ist, die das Paket installiert wird.
+   2. Im Windows-Explorer den Ordner, die zwei XML-Dateien enthält, klicken Sie auf **senden an**, und klicken Sie dann auf komprimierten (gezippten) Ordner. Benennen Sie die resultierende *ZIP* Datei *Filename.vsix*, wobei der Dateiname der Name der verteilbaren Datei ist, die das Paket installiert wird.
 
-  Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.
+Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.
 
-  Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck stellen Sie sicher, dass das Paket enthält eine *PKGDEF* -Datei, die die folgenden Informationen enthält.
+Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck stellen Sie sicher, dass das Paket enthält eine *PKGDEF* -Datei, die die folgenden Informationen enthält.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

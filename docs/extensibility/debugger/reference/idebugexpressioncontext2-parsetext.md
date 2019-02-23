@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionContext2::ParseText | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionContext2::ParseText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e3a368f95354ad96b761658b78778e153b21adb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449647"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677956"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analysiert einen Ausdruck im Text-Format für die spätere Auswertung an.
@@ -47,23 +47,29 @@ int ParseText(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pszCode`  
-[in] Der Ausdruck analysiert werden.
+`pszCode`
 
-`dwFlags`  
-[in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
+ [in] Der Ausdruck analysiert werden.
 
-`nRadix`  
-[in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
+`dwFlags`
 
-`ppExpr`  
-[out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
+ [in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
 
-`pbstrError`  
-[out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
+`nRadix`
 
-`pichError`  
-[out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
+ [in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
+
+`ppExpr`
+
+ [out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
+
+`pbstrError`
+
+ [out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
+
+`pichError`
+
+ [out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -123,8 +129,8 @@ HRESULT CEnvBlock::ParseText(
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)  
-[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)  
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

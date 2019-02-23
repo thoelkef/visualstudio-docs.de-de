@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsNullReference | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsNullReference
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021d7d8b7c1203aab68a93efe8581f66dec698f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25de5fdde9e0d834b98f09d2f5c9e2444f8a9d0e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975269"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706898"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Testet, ob dieses Objekt ein null-Verweis ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT IsNullReference(   
-   BOOL* pfIsNull  
-);  
-```  
-  
-```csharp  
-int IsNullReference(  
-   out int pfIsNull  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pfIsNull`  
- [out] Ungleich NULL zurück (`TRUE`) Wenn dieses Objekt ein null-Verweis; andernfalls wird NULL (`FALSE`).  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Ein null-Verweis bedeutet, dass ein leeres Objekt oder ein Objekt, das nicht zugewiesen wurde.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Testet, ob dieses Objekt ein null-Verweis ist.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT IsNullReference( 
+   BOOL* pfIsNull
+);
+```
+
+```csharp
+int IsNullReference(
+   out int pfIsNull
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pfIsNull`
+
+ [out] Ungleich NULL zurück (`TRUE`) Wenn dieses Objekt ein null-Verweis; andernfalls wird NULL (`FALSE`).
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Ein null-Verweis bedeutet, dass ein leeres Objekt oder ein Objekt, das nicht zugewiesen wurde.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

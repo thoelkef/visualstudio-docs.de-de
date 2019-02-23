@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2::Skip | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPorts2::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3586e3aefa38b7c8a49b693df86c3241a39d194
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56d941a826287f119fefdd11d305359dba02078d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916103"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681776"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
-Überspringt die angegebene Anzahl von Elementen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT Skip(  
-   ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `celt`  
- [in] Die Anzahl der zu überspringenden Elemente.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Wenn `celt` gibt einen Wert größer als die Anzahl der verbleibenden Elemente am Ende die Enumeration festgelegt ist und `S_FALSE` zurückgegeben wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+Überspringt die angegebene Anzahl von Elementen.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT Skip(
+   ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   uint celt
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `celt`
+
+ [in] Die Anzahl der zu überspringenden Elemente.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Wenn `celt` gibt einen Wert größer als die Anzahl der verbleibenden Elemente am Ende die Enumeration festgelegt ist und `S_FALSE` zurückgegeben wird.
+
+## <a name="see-also"></a>Siehe auch
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

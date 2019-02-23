@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8439b2a522405dae9fd8aa1e19f070c917f9ae9c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413214"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723850"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 Ruft das Layout von lokalen Variablen für einen Satz von Methoden ab.
@@ -44,20 +44,25 @@ int GetLocalVariablelayout(
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner der Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner des Moduls.
+ [in] Der Bezeichner der Anwendungsdomäne.
 
-`cMethods`  
-[in] Anzahl von Token in der `rgMethodTokens` Array.
+`guidModule`
 
-`rgMethodTokens`  
-[in] Array von Methodentoken.
+ [in] Eindeutiger Bezeichner des Moduls.
 
-`pStreamLayout`  
-[out] Ein Stream aus Text, der das Layout der Variablen enthält.
+`cMethods`
+
+ [in] Anzahl von Token in der `rgMethodTokens` Array.
+
+`rgMethodTokens`
+
+ [in] Array von Methodentoken.
+
+`pStreamLayout`
+
+ [out] Ein Stream aus Text, der das Layout der Variablen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -111,4 +116,4 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
