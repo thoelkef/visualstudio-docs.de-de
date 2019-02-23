@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::Seek | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::Seek
 helpviewer_keywords:
@@ -12,41 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ab2a7d81fb2c4b0d9963c57d7c85bdb9d5515c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f001eb73e3c24ac1c9f15a4bd2c37c8d2cbe660e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974918"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709524"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Verschiebt den Dokumentenkontext durch eine angegebene Anzahl von Anweisungen oder Zeilen an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT Seek(   
-   int                      nCount,  
-   IDebugDocumentContext2** ppDocContext  
-);  
-```  
-  
-```cpp  
-int Seek(   
-   int                        nCount,  
-   out IDebugDocumentContext2 ppDocContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `nCount`  
- [in] Die Anzahl der Anweisungen oder Zeilen, je nach Dokumentenkontext verschieben.  
-  
- `ppDocContext`  
- [out] Gibt eine neue [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt mit der die neue Position.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+Verschiebt den Dokumentenkontext durch eine angegebene Anzahl von Anweisungen oder Zeilen an.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT Seek( 
+   int                      nCount,
+   IDebugDocumentContext2** ppDocContext
+);
+```
+
+```cpp
+int Seek( 
+   int                        nCount,
+   out IDebugDocumentContext2 ppDocContext
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `nCount`
+
+ [in] Die Anzahl der Anweisungen oder Zeilen, je nach Dokumentenkontext verschieben.
+
+ `ppDocContext`
+
+ [out] Gibt eine neue [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt mit der die neue Position.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugInterceptExceptionCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugInterceptExceptionCompleteEvent2
 helpviewer_keywords:
@@ -12,45 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a54ea7c9745eedf2fe86aed2df29a380447e154
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3bd87a4ae370690a5b055a1c3033d336385b86d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932778"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711461"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
-Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn die DE die Behandlung eines abgefangenen Ereignisses abgeschlossen wurde.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IDebugInterceptExceptionCompleteEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
-  
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die DE erstellt und sendet dieses Ereignisobjekt, um den Abschluss einer abgefangenen Ausnahme melden. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die `IDebugInterceptExceptionCompleteEvent2` -Schnittstelle implementiert die folgenden Methoden.  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert, der die behandelte Ausnahme zugeordnet.|  
-  
-## <a name="remarks"></a>Hinweise  
- Dieses Ereignis wird per [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) bei dieser Methode wurde erfolgreich eine abgefangene Ausnahme behandelt.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
+Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn die DE die Behandlung eines abgefangenen Ereignisses abgeschlossen wurde.
+
+## <a name="syntax"></a>Syntax
+
+```
+IDebugInterceptExceptionCompleteEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer
+ Die DE implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.
+
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Die DE erstellt und sendet dieses Ereignisobjekt, um den Abschluss einer abgefangenen Ausnahme melden. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+ Die `IDebugInterceptExceptionCompleteEvent2` -Schnittstelle implementiert die folgenden Methoden.
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert, der die behandelte Ausnahme zugeordnet.|
+
+## <a name="remarks"></a>Hinweise
+ Dieses Ereignis wird per [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) bei dieser Methode wurde erfolgreich eine abgefangene Ausnahme behandelt.
+
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
