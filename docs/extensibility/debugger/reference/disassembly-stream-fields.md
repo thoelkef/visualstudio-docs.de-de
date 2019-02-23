@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73214385e3bc2b8ac6dbe2dff8705377d6f14e12
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413591"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715673"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Gibt an, welche Informationen Sie über ein Feld für die Disassembly abzurufen.
@@ -62,44 +62,31 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 ```
 
 ## <a name="members"></a>Member
-DSF_ADDRESS  
-Initialisieren und Verwenden der `bstrAddress` Feld.
+DSF_ADDRESS initialisieren und Verwenden der `bstrAddress` Feld.
 
-DSF_ADDRESSOFFSET  
-Initialisieren und Verwenden der `bstrAddressOffset` Feld.
+DSF_ADDRESSOFFSET initialisieren und Verwenden der `bstrAddressOffset` Feld.
 
-DSF_CODEBYTES  
-Initialisieren und Verwenden der `bstrCodeBytes` Feld.
+DSF_CODEBYTES initialisieren und Verwenden der `bstrCodeBytes` Feld.
 
-DSF_OPCODE  
-Initialisieren und Verwenden der `bstrOpCode` Feld.
+DSF_OPCODE initialisieren und Verwenden der `bstrOpCode` Feld.
 
-DSF_OPERANDS  
-Initialisieren und Verwenden der `bstrOperands` Feld.
+DSF_OPERANDS initialisieren und Verwenden der `bstrOperands` Feld.
 
-DSF_SYMBOL  
-Initialisieren und Verwenden der `bstrSymbol` Feld.
+DSF_SYMBOL initialisieren und Verwenden der `bstrSymbol` Feld.
 
-DSF_CODELOCATIONID  
-Initialisieren und Verwenden der `uCodeLocationId` Feld.
+DSF_CODELOCATIONID initialisieren und Verwenden der `uCodeLocationId` Feld.
 
-DSF_POSITION  
-Initialisieren und Verwenden der `posBeg` und `posEnd` Felder.
+DSF_POSITION initialisieren und Verwenden der `posBeg` und `posEnd` Felder.
 
-DSF_DOCUMENTURL  
-Initialisieren und Verwenden der `bstrDocumentUrl` Feld.
+DSF_DOCUMENTURL initialisieren und Verwenden der `bstrDocumentUrl` Feld.
 
-DSF_BYTEOFFSET  
-Initialisieren und Verwenden der `dwByteOffset` Feld.
+DSF_BYTEOFFSET initialisieren und Verwenden der `dwByteOffset` Feld.
 
-DSF_FLAGS  
-Initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.
+DSF_FLAGS initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.
 
-DSF_OPERANDS_SYMBOLS  
-Symbolnamen in umfassen die `bstrOperands` Feld.
+Symbol DSF_OPERANDS_SYMBOLS enthalten Namen in der `bstrOperands` Feld.
 
-DSF_ALL  
-Gibt alle Felder für den Disassembly-Stream an.
+DSF_ALL gibt alle Felder für den Disassembly-Datenstrom.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Parameter an die [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode, um die Felder anzugeben der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) sind, dass die Struktur initialisiert werden.
@@ -116,7 +103,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
-[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
