@@ -1,7 +1,7 @@
 ---
 title: GETHOSTNAME_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETHOSTNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f158cdaba17c030ce830c8adf26b6985c9b86dad
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413435"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689237"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Gibt den Typ des Hostnamens.
@@ -40,11 +40,9 @@ public enum enum_GETHOSTNAME_TYPE {
 ```
 
 ## <a name="members"></a>Member
-GHN_FRIENDLY_NAME  
-Gibt einen Anzeigenamen des Hosts an.
+GHN_FRIENDLY_NAME gibt einen Anzeigenamen des Hosts an.
 
-GHN_FILE_NAME  
-Gibt einen Dateinamen des Hosts an.
+GHN_FILE_NAME gibt einen Dateinamen des Hosts an.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte werden übergeben, als Argument an die [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) Methode, um einen Hostnamen in verschiedenen Formaten abzurufen.
@@ -57,5 +55,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

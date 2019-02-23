@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317756"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703239"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Die Startseite Benutzersteuerelement hinzufügen
+
 Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Verweises auf eine benutzerdefinierte Startseite. Das Beispiel fügt der Projektmappe ein Benutzersteuerelement hinzu, das Benutzersteuerelement erstellt und anschließend verweist auf die erstellte Assembly aus der Startseite *XAML* Datei. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen als einfachen Webbrowser.
 
 Können Sie eine beliebige Assembly hinzufügen, die aus aufgerufen werden, können den gleichen Prozess eine *XAML* Datei.
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Fügen Sie der Projektmappe ein WPF-Benutzersteuerelement
+
 Fügen Sie zunächst ein Windows Presentation Foundation (WPF)-Benutzersteuerelement an die Startseite-Lösung.
 
 1. Erstellen Sie eine Startseite mit, die wir in erstellt [erstellen Sie eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).
@@ -36,6 +39,7 @@ Fügen Sie zunächst ein Windows Presentation Foundation (WPF)-Benutzersteuerele
 4. Benennen Sie das Steuerelement `WebUserControl` , und klicken Sie dann auf **OK**.
 
 ## <a name="implement-the-user-control"></a>Implementieren Sie das Benutzersteuerelement
+
 Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzeroberfläche (UI) in XAML, und klicken Sie dann schreiben Sie die CodeBehind-Ereignisse in c# oder einer anderen .NET-Sprache zu.
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>Der XAML für das Benutzersteuerelement schreiben
@@ -132,7 +136,8 @@ Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzerob
 4. Erstellen Sie die Projektmappe.
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Fügen Sie das Benutzersteuerelement an die Startseite
- Fügen Sie einen Verweis auf die neue Steuerelementbibliothek hinzu, um dieses Steuerelement in der Projektdatei der Startseite auf die Startseitenprojekt verfügbar zu machen. Anschließend können Sie das Steuerelement an das Starten der Seite "-XAML-Markup hinzufügen.
+
+Fügen Sie einen Verweis auf die neue Steuerelementbibliothek hinzu, um dieses Steuerelement in der Projektdatei der Startseite auf die Startseitenprojekt verfügbar zu machen. Anschließend können Sie das Steuerelement an das Starten der Seite "-XAML-Markup hinzufügen.
 
 1. In **Projektmappen-Explorer**, in dem Projekt Startseite mit der Maustaste **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.
 
@@ -185,5 +190,6 @@ Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzerob
     Der benutzerdefinierten Startseite sollte angezeigt werden. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, nehmen Sie die Änderungen, kopieren und fügen Sie die geänderten Dateien und öffnen Sie erneut die experimentelle Instanz um die Änderungen anzuzeigen.
 
 ## <a name="see-also"></a>Siehe auch
-[WPF-Container-Steuerelemente](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML an die Startseite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [WPF-Container-Steuerelemente](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML an die Startseite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
