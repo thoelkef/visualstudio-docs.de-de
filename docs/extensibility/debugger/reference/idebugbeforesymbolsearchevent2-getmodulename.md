@@ -1,7 +1,7 @@
 ---
 title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4edeb41acadd34046497412dde5c61eb249a0bfc
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d30b9559ab26e4634b82332de538cfe181bb106b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315936"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713567"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Ruft den Namen des Moduls, die gerade gedebuggt werden.
@@ -36,8 +36,9 @@ public int GetModuleName (
 ```
 
 #### <a name="parameters"></a>Parameter
-`pbstrModuleName`  
-[out] Der Name des Moduls.
+`pbstrModuleName`
+
+ [out] Der Name des Moduls.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -66,4 +67,4 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
+- [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

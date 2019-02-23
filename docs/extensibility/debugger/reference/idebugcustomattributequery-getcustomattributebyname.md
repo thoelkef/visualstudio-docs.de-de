@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413422"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725020"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Ruft ein benutzerdefiniertes Attribut mit dem angegebenen Namen ab.
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pszCustomAttributeName`  
-[in] Der Name des benutzerdefinierten Attributs.
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in] Der Name des benutzerdefinierten Attributs.
+
+`ppBlob`
+
 [in, out] Array von Bytes, die Daten des benutzerdefinierten Attributs enthalten.
 
-`pdwLen`  
-[out] Länge in Bytes, der die `ppBlob` Parameter.
+`pdwLen`
+
+ [out] Länge in Bytes, der die `ppBlob` Parameter.
 
 ## <a name="return-value"></a>Rückgabewert
 Gibt bei Erfolg `S_OK` zurück. Wenn ein benutzerdefiniertes Attribut nicht vorhanden ist, gibt `S_FALSE`. Andernfalls wird ein Fehlercode zurückgegeben.
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

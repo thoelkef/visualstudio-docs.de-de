@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aa6a1c6c97090da451c2d9bdd08891d0f6cb0f3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412889"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718091"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Erstellt einen vom angegebenen primitiven Typs.
 
 ## <a name="syntax"></a>Syntax
 
-```
-[C++]
+```cpp
 HRESULT CreateTypeFromPrimitive(
     DWORD          dwPrimType,
     IDebugAddress* pAddress,
@@ -32,8 +31,7 @@ HRESULT CreateTypeFromPrimitive(
 );
 ```
 
-```
-[C#]
+```csharp
 int CreateTypeFromPrimitive(
     uint          dwPrimType,
     IDebugAddress pAddress,
@@ -42,14 +40,17 @@ int CreateTypeFromPrimitive(
 ```
 
 #### <a name="parameters"></a>Parameter
-`dwPrimType`  
-[in] Wert aus der [CorElementType-Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , den primitiven Typ darstellt.
+`dwPrimType`
 
-`pAddress`  
-[in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+ [in] Wert aus der [CorElementType-Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , den primitiven Typ darstellt.
 
-`ppType`  
-[in] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ beschreibt.
+`pAddress`
+
+ [in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+
+`ppType`
+
+ [in] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -95,4 +96,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412993"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686293"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Gibt an, welche Informationen Sie über ein Debug-Verweis-Objekt abzurufen.
@@ -54,32 +54,23 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Member
-DEBUGREF_INFO_NAME  
-Initialisieren und Verwenden der `bstrName` Feld in der Struktur.
+DEBUGREF_INFO_NAME initialisieren und Verwenden der `bstrName` Feld in der Struktur.
 
-DEBUGREF_INFO_TYPE  
-Initialisieren und Verwenden der `bstrType` Feld in der Struktur.
+DEBUGREF_INFO_TYPE initialisieren und Verwenden der `bstrType` Feld in der Struktur.
 
-DEBUGREF_INFO_VALUE  
-Initialisieren und Verwenden der `bstrValue` Feld in der Struktur.
+DEBUGREF_INFO_VALUE initialisieren und Verwenden der `bstrValue` Feld in der Struktur.
 
-DEBUGREF_INFO_ATTRIB  
-Initialisieren und Verwenden der `dwAttrib` Feld in der Struktur.
+DEBUGREF_INFO_ATTRIB initialisieren und Verwenden der `dwAttrib` Feld in der Struktur.
 
-DEBUGREF_INFO_REFTYPE  
-Initialisieren und Verwenden der `dwRefType` Feld in der Struktur.
+DEBUGREF_INFO_REFTYPE initialisieren und Verwenden der `dwRefType` Feld in der Struktur.
 
-DEBUGREF_INFO_REF  
-Initialisieren und Verwenden der `pReference` Feld in der Struktur.
+DEBUGREF_INFO_REF initialisieren und Verwenden der `pReference` Feld in der Struktur.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND  
-Feld mit dem Wert sollte den Wert automatisch erweitert, für diesen Objekttyp enthalten.
+DEBUGREF_INFO_VALUE_AUTOEXPAND sollten Feld mit dem Wert den Wert automatisch erweitert, wenn für diesen Objekttyp enthalten.
 
-DEBUGREF_INFO_NONE  
-Gibt an, dass keine Flags festgelegt sind.
+DEBUGREF_INFO_NONE gibt an, die keine Flags festgelegt sind.
 
-DEBUGREF_INFO_ALL  
-Gibt eine Maske der Flags an.
+DEBUGREF_INFO_ALL gibt eine Maske der Flags an.
 
 ## <a name="remarks"></a>Hinweise
 Diese Flags werden an übergeben der [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) Methoden zum Erkennen der Felder der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) sind, dass die Struktur initialisiert werden.
@@ -96,7 +87,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

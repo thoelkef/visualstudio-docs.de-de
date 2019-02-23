@@ -12,70 +12,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d8ea9367d364f0374d08423c2acf892fe3ddb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996258"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691149"
 ---
 # <a name="scchistory-function"></a>SccHistory-Funktion
-Diese Funktion zeigt den Verlauf der angegebenen Dateien.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-SCCRTN SccHistory(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pvContext`  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
-  
- `hWnd`  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
-  
- `nFiles`  
- [in] Anzahl der angegebenen Dateien in die `lpFileName` Array.  
-  
- `lpFileName`  
- [in] Array von vollqualifizierten Namen von Dateien.  
-  
- `fOptions`  
- [in] Befehls-Flags (zurzeit nicht verwendet).  
-  
- `pvOptions`  
- [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
-  
-|Wert|Beschreibung|  
-|-----------|-----------------|  
-|SCC_OK|Versionsverlauf wurde erfolgreich abgerufen.|  
-|SCC_I_RELOADFILE|Das Quellcodeverwaltungssystem tatsächlich Datei auf dem Datenträger geändert, beim Abrufen des Verlaufs (beispielsweise durch Abrufen einer alten Version davon), damit die IDE die Datei neu geladen werden soll.|  
-|SCC_E_FILENOTCONTROLLED|Die Datei ist nicht unter quellcodeverwaltung.|  
-|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
-|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht geöffnet.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Der Dateiversionsverlauf konnte nicht abgerufen werden.|  
-  
-## <a name="remarks"></a>Hinweise  
- Das Quellcodeverwaltungs-Plug-in kann ein eigenes Dialogfeld, um den Verlauf jeder Datei anzeigen Anzeigen mit `hWnd` als übergeordnetes Fenster. Alternativ Ausgabe von der optionale Text Rückruf Funktion angegeben wird, um die [SccOpenProject](../extensibility/sccopenproject-function.md) kann verwendet werden, wenn dies unterstützt wird.  
-  
- Beachten Sie, dass unter bestimmten Umständen die untersuchte Datei während der Ausführung dieses Aufrufs ändern kann. Z. B. die [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] History-Befehl gibt dem Benutzer die Möglichkeit, die eine alte Version der Datei zu erhalten. In diesem Fall die Quellcode-Plug-Ins gibt `SCC_I_RELOAD` um der IDE zu warnen, dass die Datei neu geladen werden muss.  
-  
+Diese Funktion zeigt den Verlauf der angegebenen Dateien.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+SCCRTN SccHistory(
+   LPVOID    pvContext,
+   HWND      hWnd,
+   LONG      nFiles,
+   LPCSTR*   lpFileNames,
+   LONG      fOptions,
+   LPCMDOPTS pvOptions
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pvContext`
+
+[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+
+ `hWnd`
+
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+
+ `nFiles`
+
+[in] Anzahl der angegebenen Dateien in die `lpFileName` Array.
+
+ `lpFileName`
+
+[in] Array von vollqualifizierten Namen von Dateien.
+
+ `fOptions`
+
+[in] Befehls-Flags (zurzeit nicht verwendet).
+
+ `pvOptions`
+
+[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+
+## <a name="return-value"></a>Rückgabewert
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+
+|Wert|Beschreibung|
+|-----------|-----------------|
+|SCC_OK|Versionsverlauf wurde erfolgreich abgerufen.|
+|SCC_I_RELOADFILE|Das Quellcodeverwaltungssystem tatsächlich Datei auf dem Datenträger geändert, beim Abrufen des Verlaufs (beispielsweise durch Abrufen einer alten Version davon), damit die IDE die Datei neu geladen werden soll.|
+|SCC_E_FILENOTCONTROLLED|Die Datei ist nicht unter quellcodeverwaltung.|
+|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
+|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht geöffnet.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Der Dateiversionsverlauf konnte nicht abgerufen werden.|
+
+## <a name="remarks"></a>Hinweise
+ Das Quellcodeverwaltungs-Plug-in kann ein eigenes Dialogfeld, um den Verlauf jeder Datei anzeigen Anzeigen mit `hWnd` als übergeordnetes Fenster. Alternativ Ausgabe von der optionale Text Rückruf Funktion angegeben wird, um die [SccOpenProject](../extensibility/sccopenproject-function.md) kann verwendet werden, wenn dies unterstützt wird.
+
+ Beachten Sie, dass unter bestimmten Umständen die untersuchte Datei während der Ausführung dieses Aufrufs ändern kann. Z. B. die [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] History-Befehl gibt dem Benutzer die Möglichkeit, die eine alte Version der Datei zu erhalten. In diesem Fall die Quellcode-Plug-Ins gibt `SCC_I_RELOAD` um der IDE zu warnen, dass die Datei neu geladen werden muss.
+
 > [!NOTE]
->  Wenn das Quellcodeverwaltungs-Plug-in diese Funktion nicht für ein Array von Dateien unterstützt, kann nur der Dateiversionsverlauf für die erste Datei angezeigt werden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [SccOpenProject](../extensibility/sccopenproject-function.md)
+>  Wenn das Quellcodeverwaltungs-Plug-in diese Funktion nicht für ein Array von Dateien unterstützt, kann nur der Dateiversionsverlauf für die erste Datei angezeigt werden.
+
+## <a name="see-also"></a>Siehe auch
+- [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
+- [SccOpenProject](../extensibility/sccopenproject-function.md)

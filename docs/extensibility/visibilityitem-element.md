@@ -11,69 +11,69 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e0bfdf54ccd3975864b965182d86923c6c335eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c999543306508bdba4a1b600e509ffadbe2ce4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980920"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689784"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem-element
-Die `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag gibt einen Befehl oder im Menü und auch eine UI-Kontext zugeordnete Befehl. Visual Studio erkennt die Befehle, Menüs und Symbolleisten und ihrer Sichtbarkeit, ohne Sie zu laden das VSPackages, die sie definieren. Die IDE verwendet das <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob eine befehlsbenutzeroberflächenkontext aktiv ist.  
-  
- Nachdem das VSPackage geladen wurde, erwartet Visual Studio Befehl Sichtbarkeit vom VSPackage bestimmt werden anstelle der `VisibilityItem`. Um die Sichtbarkeit des Befehls zu bestimmen, implementieren Sie entweder die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignishandler oder <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode, je nachdem, wie Sie den Befehl implementiert haben.  
-  
- Einen Befehl oder ein Menü, die eine `VisibilityItem` Element angezeigt wird, nur wenn die zugeordnete-Kontext aktiv ist. Sie können einen einzelnen Befehl, Menü oder Symbolleiste ein oder mehrere UI befehlskontexte zuordnen, indem Sie einen Eintrag für jede Kombination Befehl kontextbezogen einschließlich. Wenn Sie einen Befehl oder im Menü mit mehreren UI-befehlskontexte verknüpft ist, ist der Befehl oder im Menü sichtbar, wenn eine der benutzeroberflächenkontexte zugeordnete Befehl aktiv ist.  
-  
- Die `VisibilityItem` Element gilt nur für Befehle, Menüs und Symbolleisten, nicht an Gruppen. Ein Element, das nicht über einen zugehörigen verfügt `VisibilityItem` Element sichtbar ist, wenn die übergeordneten Menü aktiv ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```xml  
-<VisibilityItem  
-  guid ="="cmdGuidMyProductCommands"  
-  id=="cmdidAddWidget"  
-  context="guidNotViewSourceMode"/>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|guid|Erforderlich. Die GUID der Befehls-ID der GUID-ID.|  
-|id|Erforderlich. Die ID des Befehls-ID der GUID-ID.|  
-|Kontext|Erforderlich. Der UI-Kontext, in dem der Befehl sichtbar ist.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[VisibilityConstraints-element](../extensibility/visibilityconstraints-element.md)|Die `VisibilityConstraints` Element bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten.|  
-  
-## <a name="remarks"></a>Hinweise  
- Die standardmäßige Visual Studio-Benutzeroberfläche-Kontexte werden definiert, der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\vsshlids.h-Datei wie in der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> und <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klassen. Ein vollständiger Satz von Benutzeroberflächen-Kontexten wird definiert, der <xref:Microsoft.VisualStudio.VSConstants> Klasse.  
-  
-## <a name="example"></a>Beispiel  
-  
-```xml  
-<VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
-    context="guidNotViewSourceMode"/>  
-</VisibilityConstraints>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>   
- <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>   
- <xref:Microsoft.VisualStudio.VSConstants>   
- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>   
- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
- [VisibilityConstraints-element](../extensibility/visibilityconstraints-element.md)   
- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Die `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag gibt einen Befehl oder im Menü und auch eine UI-Kontext zugeordnete Befehl. Visual Studio erkennt die Befehle, Menüs und Symbolleisten und ihrer Sichtbarkeit, ohne Sie zu laden das VSPackages, die sie definieren. Die IDE verwendet das <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob eine befehlsbenutzeroberflächenkontext aktiv ist.
+
+ Nachdem das VSPackage geladen wurde, erwartet Visual Studio Befehl Sichtbarkeit vom VSPackage bestimmt werden anstelle der `VisibilityItem`. Um die Sichtbarkeit des Befehls zu bestimmen, implementieren Sie entweder die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignishandler oder <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode, je nachdem, wie Sie den Befehl implementiert haben.
+
+ Einen Befehl oder ein Menü, die eine `VisibilityItem` Element angezeigt wird, nur wenn die zugeordnete-Kontext aktiv ist. Sie können einen einzelnen Befehl, Menü oder Symbolleiste ein oder mehrere UI befehlskontexte zuordnen, indem Sie einen Eintrag für jede Kombination Befehl kontextbezogen einschließlich. Wenn Sie einen Befehl oder im Menü mit mehreren UI-befehlskontexte verknüpft ist, ist der Befehl oder im Menü sichtbar, wenn eine der benutzeroberflächenkontexte zugeordnete Befehl aktiv ist.
+
+ Die `VisibilityItem` Element gilt nur für Befehle, Menüs und Symbolleisten, nicht an Gruppen. Ein Element, das nicht über einen zugehörigen verfügt `VisibilityItem` Element sichtbar ist, wenn die übergeordneten Menü aktiv ist.
+
+## <a name="syntax"></a>Syntax
+
+```xml
+<VisibilityItem
+  guid ="="cmdGuidMyProductCommands"
+  id=="cmdidAddWidget"
+  context="guidNotViewSourceMode"/>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|guid|Erforderlich. Die GUID der Befehls-ID der GUID-ID.|
+|id|Erforderlich. Die ID des Befehls-ID der GUID-ID.|
+|Kontext|Erforderlich. Der UI-Kontext, in dem der Befehl sichtbar ist.|
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[VisibilityConstraints-element](../extensibility/visibilityconstraints-element.md)|Die `VisibilityConstraints` Element bestimmt die statische Sichtbarkeit von Gruppen von Befehle und Symbolleisten.|
+
+## <a name="remarks"></a>Hinweise
+ Die standardmäßige Visual Studio-Benutzeroberfläche-Kontexte werden definiert, der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\vsshlids.h-Datei wie in der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> und <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klassen. Ein vollständiger Satz von Benutzeroberflächen-Kontexten wird definiert, der <xref:Microsoft.VisualStudio.VSConstants> Klasse.
+
+## <a name="example"></a>Beispiel
+
+```xml
+<VisibilityConstraints>
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+    context="guidNotViewSourceMode"/>
+</VisibilityConstraints>
+```
+
+## <a name="see-also"></a>Siehe auch
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
+- <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
+- <xref:Microsoft.VisualStudio.VSConstants>
+- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>
+- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
+- [VisibilityConstraints-element](../extensibility/visibilityconstraints-element.md)
+- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

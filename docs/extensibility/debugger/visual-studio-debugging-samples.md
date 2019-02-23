@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c084c9c31b024f5ff15b561c04a0c0603633b7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 80783f7e2168400616ea2169fe34d973418d0113
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980206"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721770"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio-Debug-Beispiele
-Zwei Beispiele zeigen, wie mithilfe von Visual Studio-Debugger erweitert [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+Zwei Beispiele zeigen, wie mithilfe von Visual Studio-Debugger erweitert [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
-- Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. In der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **c#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.  
+- Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. In der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **c#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.
 
 - Visual Studio Debug-Engine-Beispiel für systemeigene Sprachen ist in der MSDN Code Gallery verfügbar. Weitere Informationen finden Sie unter [Visual Studio-Debug-Engine-Beispiel](http://go.microsoft.com/fwlink/?LinkId=150236) auf der Microsoft-Website.
