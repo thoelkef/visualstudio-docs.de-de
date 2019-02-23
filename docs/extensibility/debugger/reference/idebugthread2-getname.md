@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetName
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f28726afd6dad7c193d552cd05e4c9a9335fef1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04a76c88e5fd3eee146f6c174087298bac2b6974
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951897"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679904"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
-Ruft den Namen eines Threads.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetName (   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName (   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pbstrName`  
- [out] Gibt den Namen des Threads.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Der abgerufene Name ist immer ein Name, der angezeigt werden kann, und dieser Name wird im Thread beschrieben. Threadname möglicherweise aus einer Runtime-Architektur abgeleitet werden, dass benannter unterstützt, Threads, oder es, einen Namen, die die Debug-Engine abgeleitet sein kann. Alternativ kann der Name des Threads festgelegt werden, durch einen Aufruf der [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) Methode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)
+Ruft den Namen eines Threads.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetName ( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName ( 
+   out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pbstrName`
+
+ [out] Gibt den Namen des Threads.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Der abgerufene Name ist immer ein Name, der angezeigt werden kann, und dieser Name wird im Thread beschrieben. Threadname möglicherweise aus einer Runtime-Architektur abgeleitet werden, dass benannter unterstützt, Threads, oder es, einen Namen, die die Debug-Engine abgeleitet sein kann. Alternativ kann der Name des Threads festgelegt werden, durch einen Aufruf der [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) Methode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugSourceServerModule::GetSourceServerData | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8880f00528b1c2b1f081b6c306e1f94cccc109ec
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fc99d014c1e31616ebd2a6cc16608a1d1bc741ce
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450281"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683869"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Ruft ein Array von Quellserverinformationen ab.
@@ -37,11 +37,13 @@ public int GetSourceServerData(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pDataByteCount`  
-[out] Anzahl der Bytes im Datenarray.
+`pDataByteCount`
 
-`ppData`  
-[out] Verweis auf das Datenarray.
+ [out] Anzahl der Bytes im Datenarray.
+
+`ppData`
+
+ [out] Verweis auf das Datenarray.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -72,4 +74,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+- [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

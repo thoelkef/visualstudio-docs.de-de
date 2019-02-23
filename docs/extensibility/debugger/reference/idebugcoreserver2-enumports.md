@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::EnumPorts | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::EnumPorts
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0555c9167ae24ad1ea700af142d4598117c58f3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bafa89a38d008a54536976097edc2a874d1ba2d3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037979"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686274"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
-Ruft eine Liste aller verfügbaren Ports.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT EnumPorts(   
-   IEnumDebugPorts2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumPorts(   
-   out IEnumDebugPorts2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppEnum`  
- [out] Gibt eine [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) -Objekt, das eine Liste aller Ports aus allen Portanbieter enthält.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+Ruft eine Liste aller verfügbaren Ports.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT EnumPorts( 
+   IEnumDebugPorts2** ppEnum
+);
+```
+
+```csharp
+int EnumPorts( 
+   out IEnumDebugPorts2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppEnum`
+
+ [out] Gibt eine [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) -Objekt, das eine Liste aller Ports aus allen Portanbieter enthält.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
