@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3::SetEngineGuid | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3::SetEngineGuid
 helpviewer_keywords:
@@ -12,37 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b74db445d03f2cb407e74a1a3f9aef4d4e529c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14c1ad0e659df29c462d145e8c98166079857275
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988882"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702212"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Diese Methode legt fest, der Debug-Engine (DE) `GUID`.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT SetEngineGuid(  
-   GUID* guidEngine  
-);  
-```  
-  
-```  
-[C#]  
-int SetEngineGuid(  
-   ref Guid guidEngine  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `guidEngine`  
- [in] `GUID` des Datenbankmoduls.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
+Diese Methode legt fest, der Debug-Engine (DE) `GUID`.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT SetEngineGuid(
+   GUID* guidEngine
+);
+```
+
+```csharp
+int SetEngineGuid(
+   ref Guid guidEngine
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `guidEngine`
+
+ [in] `GUID` des Datenbankmoduls.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318237"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705637"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Eine Symbolleiste ein Menücontroller hinzugefügt
 Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) Exemplarische Vorgehensweise und zeigt, wie die Toolfenster-Symbolleiste ein Menücontroller hinzugefügt. Die hier gezeigten Schritte auch können angewendet werden auf der Symbolleiste, die in erstellt haben, wird die [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md) Exemplarische Vorgehensweise.
@@ -223,5 +223,5 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     Ein Dialogfeld angezeigt wird, mit der Meldung **Menücontroller Element 3 ausgewählten**. Beachten Sie, dass die Meldung und dem Text in die Controller-Menüschaltfläche entspricht. Die Controller-Menüschaltfläche zeigt nun **MC Element 3**.
 
 ## <a name="see-also"></a>Siehe auch
-[Hinzufügen einer Symbolleiste zu einem Toolfenster](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)
+- [Hinzufügen einer Symbolleiste zu einem Toolfenster](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

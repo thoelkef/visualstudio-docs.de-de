@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 723bab4d42f01fe7b2c6362155a959b689428dc5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413188"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680502"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Beschreibt einen Stapelrahmen.
@@ -61,44 +61,31 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Member
-m_dwValidFields  
-Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
+M_dwValidFields eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
 
-m_bstrFuncName  
-Der Funktionsname, die dem Stapelrahmen zugeordnet wird.
+M_bstrFuncName den Namen der Funktion, die dem Stapelrahmen zugeordnet ist.
 
-m_bstrReturnType  
-Der Rückgabetyp, die dem Stapelrahmen zugeordnet.
+M_bstrReturnType der Rückgabetyp, die dem Stapelrahmen zugeordnet.
 
-m_bstrArgs  
-Die Argumente der Funktion, die dem Stapelrahmen zugeordnet werden soll.
+M_bstrArgs die Argumente der Funktion, die dem Stapelrahmen zugeordnet ist.
 
-m_bstrLanguage  
-Die Sprache, in der die Funktion implementiert wird.
+M_bstrLanguage die Sprache in dem die Funktion implementiert wird.
 
-m_bstrModule  
-Der Modulname, die dem Stapelrahmen zugeordnet wird.
+M_bstrModule der Modulnamen, die dem Stapelrahmen zugeordnet ist.
 
-m_addrMin  
-Die minimale physischen Stapel-Adresse.
+M_addrMin die minimale physischen Stapel-Adresse.
 
-m_addrMAX  
-Die maximale physischen Stapel-Adresse.
+M_addrMAX die maximalen physischen Stapel-Adresse.
 
-m_pFrame  
-Die [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das diesen Stapelrahmen darstellt.
+M_pFrame der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das diesen Stapelrahmen darstellt.
 
-m_pFrame  
-Die [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das Modul darstellt, die diesen Stapelrahmen enthält.
+M_pFrame der [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das Modul darstellt, die diesen Stapelrahmen enthält.
 
-m_fHasDebugInfo  
-Ungleich 0 (`TRUE`) ob Debuginformationen im angegebenen Bereich vorhanden ist.
+M_fHasDebugInfo ungleich 0 (`TRUE`) ob Debuginformationen im angegebenen Bereich vorhanden ist.
 
-m_fHasDebugInfo  
-Ungleich 0 (`TRUE`) Wenn der Stapelrahmen Code zugeordnet ist, die nicht mehr gültig ist.
+M_fHasDebugInfo ungleich 0 (`TRUE`) Wenn der Stapelrahmen Code zugeordnet ist, die nicht mehr gültig ist.
 
-m_fHasDebugInfo  
-Ungleich 0 (`TRUE`), wenn die Stapelrahmen von sitzungsbasierter Debug-Manager (SDM) versehen ist.
+M_fHasDebugInfo ungleich 0 (`TRUE`), wenn die Stapelrahmen von sitzungsbasierter Debug-Manager (SDM) versehen ist.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) Methode gefüllt werden soll. Diese Struktur befindet sich in einer Liste, der in enthalten ist auch die [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle, die wiederum von einem Aufruf zurückgegeben wird das [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) Methode.
@@ -111,10 +98,10 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)  
-[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)  
-[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)  
-[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)

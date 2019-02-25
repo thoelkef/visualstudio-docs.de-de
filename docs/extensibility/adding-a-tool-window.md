@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317132"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709940"
 ---
 # <a name="add-a-tool-window"></a>Hinzufügen eines Toolfensters
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie zum Erstellen eines Toolfensters und integrieren in Visual Studio auf folgende Weise:
@@ -277,4 +277,4 @@ Hinzufügen einer Symbolleiste und einen Menübefehl, die aufruft, die **geöffn
     Sie sollten den Glockenton Sound hören.
 
 ## <a name="see-also"></a>Siehe auch
-[Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetLanguageInfo | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetLanguageInfo
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2895d943196f29f39d1abd38415be7ad374f0012
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 0eb1106bce363bcf1b817853cafc77d192adad86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450217"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718793"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Ruft die diesem Dokumentenkontext zugeordnete Sprache ab.
@@ -39,11 +39,13 @@ int GetLanguageInfo(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pbstrLanguage`  
-[out] Gibt den Namen der Sprache, die den Code in diesem Dokumentenkontext implementiert.
+`pbstrLanguage`
 
-`pguidLanguage`  
-[out] Gibt die GUID der Sprache, die den Code in diesem Dokumentenkontext implementiert. Beispielsweise `guidVBScriptLang` oder `guidCPPLang`. Diese GUID ist nicht beschränkt auf die Sprachen, die vom [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ [out] Gibt den Namen der Sprache, die den Code in diesem Dokumentenkontext implementiert.
+
+`pguidLanguage`
+
+ [out] Gibt die GUID der Sprache, die den Code in diesem Dokumentenkontext implementiert. Beispielsweise `guidVBScriptLang` oder `guidCPPLang`. Diese GUID ist nicht beschränkt auf die Sprachen, die vom [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -81,4 +83,4 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

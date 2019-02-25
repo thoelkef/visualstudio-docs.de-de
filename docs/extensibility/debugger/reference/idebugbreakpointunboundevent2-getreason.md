@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9e258f8a267ab2f8211cc4c6f908c3593a485ee
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: fe963923494d5dc68eb2ab3b6fd768036d1c5400
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412954"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719094"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Ruft den Grund ab, die, den der Haltepunkt aufgehoben wurde.
@@ -37,8 +37,9 @@ int GetReason(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pdwUnboundReason`  
-[out] Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Enumeration, der den Grund, der der Haltepunkt aufgehoben wurde.
+`pdwUnboundReason`
+
+ [out] Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Enumeration, der den Grund, der der Haltepunkt aufgehoben wurde.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -69,4 +70,4 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+- [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

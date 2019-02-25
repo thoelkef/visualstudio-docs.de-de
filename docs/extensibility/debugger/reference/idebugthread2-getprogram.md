@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetProgram | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetProgram
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6f4c4c4bbc11d8125262757216eb5c75e5dd48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d25c438e7779c3589ab2deda5ea78cad9799dd5f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959638"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714110"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-Ruft ab, das Programm, in dem ein Thread ausgeführt wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetProgram (   
-   IDebugProgram2** ppProgram  
-);  
-```  
-  
-```csharp  
-int GetProgram (   
-   out IDebugProgram2 ppProgram  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppProgram`  
- [out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in diesem Thread ausgeführt wird.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Ruft ab, das Programm, in dem ein Thread ausgeführt wird.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetProgram ( 
+   IDebugProgram2** ppProgram
+);
+```
+
+```csharp
+int GetProgram ( 
+   out IDebugProgram2 ppProgram
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppProgram`
+
+ [out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in diesem Thread ausgeführt wird.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

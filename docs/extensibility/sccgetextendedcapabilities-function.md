@@ -12,48 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b33858910c435f4dc899b24a707de06548f1c915
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ed27c996a94c4e81a946efbfa2684dc4169005a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931153"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720470"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities-Funktion
-Diese Funktion gibt die zusätzliche Funktionen, die von das Quellcodeverwaltungs-Plug-in unterstützt werden.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-SCCRTN SccGetExtendedCapabilities(  
-   LPVOID pContext,  
-   LONG lSccExCaps,  
-   LPBOOL pbSupported  
-);  
-```  
-  
-### <a name="parameters"></a>Parameter  
- "pContext"  
- [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
-  
- lSccExCaps  
- [in] Ein Flag, das eine erweiterte Funktion, die zu überprüfende angibt (siehe die Tabelle erweiterte Funktion Code im [funktionsflags](../extensibility/capability-flags.md) für die möglichen Flags).  
-  
- pbSupported  
- [out] Ungleich NULL zurück (`TRUE`) Wenn die angegebene Funktion unterstützt wird; andernfalls wird NULL (`FALSE`).  
-  
-## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
-  
-|Wert|Beschreibung|  
-|-----------|-----------------|  
-|SCC_OK|Der Vorgang des Get-Funktion, die erfolgreich abgeschlossen.|  
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Unbekannte oder nicht angegebene Fehler ist aufgetreten.|  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird bei Bedarf aufgerufen. also wenn eine Funktion getestet werden muss, wird diese Methode aufgerufen, um zu bestimmen, ob, die Funktion unterstützt wird. Nur ein Flag zu einem Zeitpunkt angegeben wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
- [Fehlercodes](../extensibility/error-codes.md)   
- [Funktionsflags](../extensibility/capability-flags.md)
+Diese Funktion gibt die zusätzliche Funktionen, die von das Quellcodeverwaltungs-Plug-in unterstützt werden.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+SCCRTN SccGetExtendedCapabilities(
+   LPVOID pContext,
+   LONG lSccExCaps,
+   LPBOOL pbSupported
+);
+```
+
+### <a name="parameters"></a>Parameter
+ "pContext"
+
+[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+
+ lSccExCaps
+
+[in] Ein Flag, das eine erweiterte Funktion, die zu überprüfende angibt (siehe die Tabelle erweiterte Funktion Code im [funktionsflags](../extensibility/capability-flags.md) für die möglichen Flags).
+
+ pbSupported
+
+[out] Ungleich NULL zurück (`TRUE`) Wenn die angegebene Funktion unterstützt wird; andernfalls wird NULL (`FALSE`).
+
+## <a name="return-value"></a>Rückgabewert
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+
+|Wert|Beschreibung|
+|-----------|-----------------|
+|SCC_OK|Der Vorgang des Get-Funktion, die erfolgreich abgeschlossen.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Unbekannte oder nicht angegebene Fehler ist aufgetreten.|
+
+## <a name="remarks"></a>Hinweise
+ Diese Methode wird bei Bedarf aufgerufen. also wenn eine Funktion getestet werden muss, wird diese Methode aufgerufen, um zu bestimmen, ob, die Funktion unterstützt wird. Nur ein Flag zu einem Zeitpunkt angegeben wird.
+
+## <a name="see-also"></a>Siehe auch
+- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [Fehlercodes](../extensibility/error-codes.md)
+- [Funktionsflags](../extensibility/capability-flags.md)

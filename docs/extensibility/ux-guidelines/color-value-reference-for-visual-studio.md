@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016238"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722277"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertreferenz für Visual Studio
 
-Dieses Thema ist ein Verweis zum Erstellen von neuen farbtoken. Wenn Sie neue Benutzeroberfläche erstellen, können Sie ähnliche Farben über die vorhandene Benutzeroberfläche, die Farben für jedes main Design und den Namen des System-Farbe für dieses Element für Designs mit hohem Kontrast auswählen. 
+Dieses Thema ist ein Verweis zum Erstellen von neuen farbtoken. Wenn Sie neue Benutzeroberfläche erstellen, können Sie ähnliche Farben über die vorhandene Benutzeroberfläche, die Farben für jedes main Design und den Namen des System-Farbe für dieses Element für Designs mit hohem Kontrast auswählen.
 
 Implementierungsinformationen zum Erstellen von neuen farbtoken finden Sie [Color-Tools für Farbdesigns](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Farbtoken mit vorhandenen Benutzeroberfläche verwenden, finden Sie unter [freig
 
 Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
--   **Immer kopieren Sie Vordergrund und Hintergrund Farbtöne zusammen.** Wählen Sie ein nicht von einer UI-Element und einen Hintergrund von einem anderen nur, weil Sie die Farbtöne wie.  
+-   **Immer kopieren Sie Vordergrund und Hintergrund Farbtöne zusammen.** Wählen Sie ein nicht von einer UI-Element und einen Hintergrund von einem anderen nur, weil Sie die Farbtöne wie.
 
 -   **Hierbei handelt es sich um hexadezimale Codes nicht farbtoken.** Sie können nicht die tatsächliche Farbe Tokennamen diese Elemente der Benutzeroberfläche nicht verwenden, da Sie nicht steuern können, wie die Token in der Zukunft geändert werden können. Stattdessen erstellen Sie in eine eigene Kategorie-Token, und verwenden Sie die Hue-Werte, die in den Tabellen angezeigt. Color-Token für die vorhandene Benutzeroberfläche finden Sie in [freigegebene Farben für Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen. 
+- **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
 -   **Für optimale Ergebnisse wird Paar Farbe mit Benutzeroberfläche, der ähnlich wie im Beispiel ist.**
 
@@ -39,17 +39,17 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 ![Fenster "Eigenschaften" Light (links), dunkel (Mitte) und Blau (rechts) Designs](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "Fenster \"Eigenschaften\" in hell, dunkel und Blau-Designs")<br />Fenster "Eigenschaften" in den hell, dunkel und Blau-Designs
 
 > [!NOTE]
-> **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen. 
+> **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
 ### <a name="divider-lines"></a>Trennlinien
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Standard | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![ControlDark Farbmuster](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark-Muster")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Expander-Glyphe
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund |![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Fenster Farbmuster](../../extensibility/ux-guidelines/media/HCWindow.png "Fenster-Muster")<br />`Window`|
@@ -60,7 +60,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="embedded-tab-control-body"></a>Registerkarten-Steuerelement eingebettet: Text
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C swatch")<br />`#FF1B1B1C` | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -68,7 +68,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="embedded-tab-control-active-tab"></a>Registerkarten-Steuerelement eingebettet: die aktive Registerkarte
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` |![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![##FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![#FF1B1B1C Farbmuster](../../extensibility/ux-guidelines/media/1B1B1C.png "## FF1B1B1C-Muster")<br />`#FF1B1B1C` | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -76,7 +76,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Registerkarten-Steuerelement eingebettet: Registerkarte "inaktiv"
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -85,12 +85,12 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 | Vordergrund: deaktiviert | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText Farbmuster](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText-Muster")<br />`GrayText` |
 | Hintergrund: deaktiviert | ![## FFF5F5F5 Farbmuster](../../extensibility/ux-guidelines/media/F5F5F5.png "## FFF5F5F5-Muster")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
 | Rahmen | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
-| Rahmen: Wenn darauf gezeigt wird | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE swatch")<br />`#FFFEFEFE` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` | 
+| Rahmen: Wenn darauf gezeigt wird | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE swatch")<br />`#FFFEFEFE` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
 | Rahmen: deaktiviert | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Überschrift des Abschnitts
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![## FFF1F1F1 Farbmuster](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1-Muster")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Vordergrund: Wenn darauf gezeigt wird | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="category-group"></a>Kategoriegruppe
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Text Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Text-Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -110,7 +110,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="toggle-buttons"></a>Umschaltflächen
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![WindowText Farbmuster](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText-Muster")<br />`WindowText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Fenster Farbmuster](../../extensibility/ux-guidelines/media/HCWindow.png "Fenster-Muster")<br />`Window` |
@@ -127,7 +127,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="input-fields"></a>Felder für die Eingabe
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFFCFCFC Farbmuster](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC-Muster")<br />`#FFFCFCFC` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -138,7 +138,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="list-items"></a>Auflisten von Elementen
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Vordergrund: Wenn darauf gezeigt wird | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="command-buttons"></a>Befehlsschaltflächen
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund: Wenn darauf gezeigt wird | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE swatch")<br />`#FFFEFEFE` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -172,7 +172,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="content"></a>Content
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText Farbmuster](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText-Muster")<br />`WindowText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -184,7 +184,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="header"></a>Header
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText Farbmuster](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText-Muster")<br />`WindowText` |
 | Hintergrund | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![ControlDark Farbmuster](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark-Muster")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ![CodeLens-Benutzeroberfläche](../../extensibility/ux-guidelines/media/codelens.png "CodeLens-Benutzeroberfläche")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens UI Farben sind identisch für hell, dunkel und Blau-Designs.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="body"></a>Text
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![WindowText Farbmuster](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText-Muster")<br />`WindowText` |
 | Hintergrund | ![#FFFCFCFC Farbmuster](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC-Muster")<br />`#FFFCFCFC` | ![#FFFCFCFC Farbmuster](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC-Muster")<br />`#FFFCFCFC` | ![#FFFCFCFC Farbmuster](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC-Muster")<br />`#FFFCFCFC` | ![Fenster Farbmuster](../../extensibility/ux-guidelines/media/HCWindow.png "Fenster-Muster")<br />`Window` |
@@ -212,7 +212,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="hyperlink-and-separator"></a>Hyperlink und Trennzeichen
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hyperlink Vordergrund | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![HotTrack Farbmuster](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack-Muster")<br />`HotTrack` |
 | Trennzeichen Vordergrund | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![HotTrack Farbmuster](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack-Muster")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="body"></a>Text
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText Farbmuster](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText-Muster")<br />`WindowText` |
 | Vordergrund: ausgewählte | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Unterabschnitt-header
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![GrayText Farbmuster](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText-Muster")<br />`GrayText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![Fenster Farbmuster](../../extensibility/ux-guidelines/media/HCWindow.png "Fenster-Muster")<br />`Window` |
@@ -241,7 +241,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="grid-lines"></a>Rasterlinien
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Elemente (Vordergrund) | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![ScrollBar-Muster](../../extensibility/ux-guidelines/media/HCScrollBar.png "ScrollBar-Muster")<br />`ScrollBar` |
 | Header (Vordergrund) | ![#FFE0E3E6 swatch](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 swatch")<br />`#FFE0E3E6` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFBEC3CB swatch](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB swatch")<br />`#FFBEC3CB` | ![ControlDark Farbmuster](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark-Muster")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="body"></a>Text
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
 
 ### <a name="active-tab"></a>Die aktive Registerkarte
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` |![ActiveCaption swatch](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption swatch")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Registerkarte "inaktiv"
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
 | Hintergrund | ![#FFFEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE swatch")<br />`#FFFEFEFE` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFFEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE swatch")<br />`#FFFEFEFE` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="watermark-text"></a>Wasserzeichentext
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![GrayText Farbmuster](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText-Muster")<br />`GrayText` |
 | Hintergrund | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
 
 ### <a name="description-pane"></a>Beschreibungsbereich
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
 | Hintergrund | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -299,7 +299,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="tags"></a>Tags
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vordergrund (Text) | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
 | Hintergrund | ![#FFE1E6F1 swatch](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 swatch")<br />`#FFE1E6F1` | ![#FF424242 swatch](../../extensibility/ux-guidelines/media/424242.png "#FF424242 swatch")<br />`#FF424242` | ![#FFE9ECEE Farbmuster](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE-Muster")<br />`#FFE9ECEE` | ![ActiveCaption swatch](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption swatch")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="glyph-on-hover"></a>Symbol, wenn darauf gezeigt wird
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Glyphe | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
 | Hintergrund | ![#FFF7F7F9 swatch](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 swatch")<br />`#FFF7F7F9` | ![#FF393939 swatch](../../extensibility/ux-guidelines/media/393939.png "#FF393939 swatch")<br />`#FF393939` | ![#FFFFFCF4 Farbmuster](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4-Muster")<br />`#FFFFFCF4` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="selected-glyph"></a>Ausgewählte Symbol
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Glyphe | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
 | Hintergrund | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="default"></a>Standard
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Standardschaltfläche in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "Standardschaltfläche in das Design \"hell\"") | ![Als Standardschaltfläche im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "als Standardschaltfläche im dunklen Design") | ![Standardschaltfläche in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "Standardschaltfläche in das Design \"Blau\"") | ![Standardschaltfläche in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "als Standardschaltfläche im das Design \"hoher Kontrast\"") |
 | Vordergrund | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![ControlText Farbmuster](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText-Muster")<br />`ControlText` |
@@ -348,7 +348,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="disabled"></a>Deaktiviert
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Deaktivierte Schaltfläche im das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "deaktiviert Schaltfläche das Design \"hell\"") | ![Deaktivierte Schaltfläche im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "deaktiviert Schaltfläche das Design \"dunkel\"") | ![Deaktivierte Schaltfläche im das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "deaktiviert Schaltfläche das Design \"Blau\"") | ![Deaktivierte Schaltfläche im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "deaktiviert Schaltfläche im Design mit hohem Kontrast") |
 | Vordergrund | ![#A2A4A5 Farbmuster](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5-Muster")<br />`#A2A4A5` | ![#656565 Farbmuster](../../extensibility/ux-guidelines/media/656565.png "#656565-Muster")<br />`#656565` | ![#A2A4A5 Farbmuster](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5-Muster")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="hover"></a>Darauf zeigen (Hover)
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Hover-Zustand-Schaltfläche in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "Hover-Zustand-Schaltfläche in das Design \"hell\"") | ![Hover-Zustand-Schaltfläche im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "Hover-Zustand-Schaltfläche im dunklen Design") | ![Hover-Zustand-Schaltfläche in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "Hover-Zustand-Schaltfläche in das Design \"Blau\"") | ![Zeigen Sie Status-Schaltfläche im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "zeigen Sie Status-Schaltfläche im Design mit hohem Kontrast") |
 | Vordergrund | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="pressed"></a>Gedrückt
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Schaltfläche im gedrückten Zustand in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "Schaltfläche im gedrückten Zustand in das Design \"hell\"") | ![Schaltfläche im gedrückten Zustand im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "Schaltfläche im gedrückten Zustand in das Design \"dunkel\"") | ![Schaltfläche im gedrückten Zustand in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "Schaltfläche im gedrückten Zustand in das Design \"Blau\"") | ![Schaltfläche im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "Schaltfläche im Design mit hohem Kontrast") |
 | Vordergrund | ![#FFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF-Muster")<br />`#FFFFFF` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#FFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF-Muster")<br />`#FFFFFF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="focused"></a>Focused
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Schaltfläche "fokussiert" in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "Focused-Schaltfläche in das Design \"hell\"") | ![Schaltfläche "fokussiert" im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "Focused-Schaltfläche in das Design \"dunkel\"") | ![Schaltfläche "fokussiert" in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "Focused-Schaltfläche in das Design \"Blau\"") | ![Focused-Schaltfläche im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "Focused-Schaltfläche im Design mit hohem Kontrast") |
 | Vordergrund | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="default"></a>Standard
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Kontrollkästchen "Default" in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "Kontrollkästchen \"Default\" in das Design \"hell\"") | ![Standard-Kontrollkästchen im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "Kontrollkästchen \"Default\" in das Design \"dunkel\"") | ![Kontrollkästchen "Default" in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "Kontrollkästchen \"Default\" in das Design \"Blau\"") | ![Standard-Kontrollkästchen im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "Standard-Kontrollkästchen im Design mit hohem Kontrast") |
 | Hintergrund | ![#FEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE swatch")<br />`#FEFEFE` | ![#252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#252526 swatch")<br />`#252526` | ![#FEFEFE swatch](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE swatch")<br />`#FEFEFE` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -399,7 +399,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="disabled"></a>Deaktiviert
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Deaktiviertes Kontrollkästchen im das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "in das Design \"hell\" das Kontrollkästchen deaktiviert") | ![Deaktiviertes Kontrollkästchen im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "in das Design \"dunkel\" das Kontrollkästchen deaktiviert") | ![Deaktiviertes Kontrollkästchen im das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "in das Design \"Blau\" das Kontrollkästchen deaktiviert") | ![Deaktiviertes Kontrollkästchen im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "deaktiviert Kontrollkästchen im Design mit hohem Kontrast") |
 | Hintergrund | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![InactiveCaption Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption-Muster")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="hover"></a>Darauf zeigen (Hover)
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Kontrollkästchen für den Hover-Zustand in das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "Kontrollkästchen für den Hover-Zustand in das Design \"hell\"") | ![Kontrollkästchen für den Hover-Zustand im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "Kontrollkästchen für den Hover-Zustand in das Design \"dunkel\"") | ![Kontrollkästchen für den Hover-Zustand in das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "Kontrollkästchen für den Hover-Zustand in das Design \"Blau\"") | ![Kontrollkästchen für den Hover-Zustand in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Kontrollkästchen für den Hover-Zustand in das Design \"hoher Kontrast\"") |
 | Hintergrund | ![#F3F9FF Farbmuster](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF-Muster")<br />`#F3F9FF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -419,7 +419,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="pressed"></a>Gedrückt
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Gedrücktes Kontrollkästchen im das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "gedrücktes Kontrollkästchen im das Design \"hell\"") | ![Gedrücktes Kontrollkästchen im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "gedrücktes Kontrollkästchen im dunklen Design") | ![Gedrücktes Kontrollkästchen im das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "gedrücktes Kontrollkästchen im das Design \"Blau\"") | ![Gedrücktes Kontrollkästchen im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "gedrücktes Kontrollkästchen im Design mit hohem Kontrast") |
 | Hintergrund | ![#007ACC Farbmuster](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC-Muster")<br />`#007ACC` | ![#007ACC Farbmuster](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC-Muster")<br />`#007ACC` | ![#E5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 swatch")<br />`#E5C365` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -429,7 +429,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="focused"></a>Focused
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Das Kontrollkästchen fokussiert das Design "hell"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused Kontrollkästchen in das Design \"hell\"") | ![Focused Kontrollkästchen im dunklen Design](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "Focused Kontrollkästchen im dunklen Design") | ![Das Kontrollkästchen fokussiert das Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused Kontrollkästchen in das Design \"Blau\"") | ![Focused Kontrollkästchen im Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused Kontrollkästchen im Design mit hohem Kontrast") |
 | Hintergrund | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -446,7 +446,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="default"></a>Standard
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Standard & Drop-/ Kombinationsfeld, in dem Design "hell"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "standardmäßige Drop-/ Kombinationsfeld, in dem Design \"hell\"") | ![Standard & Drop-/ Kombinationsfeld, in dem Design "dunkel"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "standardmäßige Drop-/ Kombinationsfeld, in dem Design \"dunkel\"") | ![Standard & Drop-/ Kombinationsfeld, in dem Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "standardmäßige Drop-/ Kombinationsfeld, in dem Design \"Blau\"") | ![Standard & Drop-/ Kombinationsfeld, in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "standardmäßige Drop-/ Kombinationsfeld, in dem Design \"hoher Kontrast\"") |
 | Hintergrund | ![## 007ACC Farbmuster](../../extensibility/ux-guidelines/media/007ACC.png "## 007ACC-Muster")<br />`##007ACC` | ![#333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#333337 swatch")<br />`#333337` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
@@ -457,19 +457,19 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="disabled"></a>Deaktiviert
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Deaktivierte & Drop-/ Kombinationsfeld, in dem Design "hell"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "deaktiviert Drop-/ Kombinationsfeld, in dem Design \"hell\"") | ![Deaktivierte & Drop-/ Kombinationsfeld, in das Design "dunkel"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "deaktiviert Drop-/ Kombinationsfeld, in dem Design \"dunkel\"") | ![Deaktivierte & Drop-/ Kombinationsfeld, in dem Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "deaktiviert Drop-/ Kombinationsfeld, in dem Design \"Blau\"") | ![Deaktivierte & Drop-/ Kombinationsfeld, in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "deaktiviert Drop-/ Kombinationsfeld, in dem Design \"hoher Kontrast\"") |
 | Hintergrund | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#DFE7F3 swatch](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 swatch")<br />`#DFE7F3` | ![InactiveCaption Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption-Muster")<br />`InactiveCaption` |
 | Rahmen | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![#434346 swatch](../../extensibility/ux-guidelines/media/434346.png "#434346 swatch")<br />`#434346` | ![#A4ADBA swatch](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA swatch")<br />`#A4ADBA` | ![InactiveBorder Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder-Muster")<br />`InactiveBorder` |
 | Text | ![#A2A4A5 Farbmuster](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5-Muster")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565-Muster")<br />`#656565` | ![#A2A4A5 Farbmuster](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5-Muster")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
-| Trennzeichen | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder-Muster")<br />`InactiveBorder` | 
+| Trennzeichen | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder-Muster")<br />`InactiveBorder` |
 | Glyphe | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![#656565 Farbmuster](../../extensibility/ux-guidelines/media/656565.png "#656565-Muster")<br />`#656565` | ![#A2A4A5 Farbmuster](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5-Muster")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
 | Glyphenhintergrund | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveCaption Farbmuster](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption-Muster")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Darauf zeigen (Hover)
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Zeigen Sie Status Drop-/ Kombinationsfeld, in dem Design "hell"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "Hover Zustand Drop-/ Kombinationsfeld, in dem Design \"hell\"") | ![Zeigen Sie Status Drop-/ Kombinationsfeld, in dem Design "dunkel"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "Hover Zustand Drop-/ Kombinationsfeld, in dem Design \"dunkel\"") | ![Zeigen Sie Status Drop-/ Kombinationsfeld, in dem Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "Hover Zustand Drop-/ Kombinationsfeld, in dem Design \"Blau\"") | ![Zeigen Sie Status Drop-/ Kombinationsfeld, in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "Hover Zustand Drop-/ Kombinationsfeld, in das Design \"hoher Kontrast\"") |
 | Hintergrund | ![#007ACC Farbmuster](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC-Muster")<br />`#007ACC` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -481,7 +481,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="pressed"></a>Gedrückt
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Gedrückten Drop-/ Kombinationsfeld, in dem Design "hell"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "gedrückten Drop-/ Kombinationsfeld, in dem Design \"hell\"") | ![Gedrückten Drop-/ Kombinationsfeld, in dem Design "dunkel"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "gedrückten Drop-/ Kombinationsfeld, in dem Design \"dunkel\"") | ![Gedrückten Drop-/ Kombinationsfeld, in dem Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "gedrückten Drop-/ Kombinationsfeld, in dem Design \"Blau\"") | ![Gedrückten Drop-/ Kombinationsfeld, in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "gedrückten Drop-/ Kombinationsfeld, in dem Design \"hoher Kontrast\"") |
 | Hintergrund | ![#FFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF-Muster")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -493,7 +493,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="focused"></a>Focused
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Focused Drop-/ Kombinationsfeld, in dem Design "hell"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "Focused Drop-/ Kombinationsfeld, in dem Design \"hell\"") | ![Focused Drop-/ Kombinationsfeld, in dem Design "dunkel"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused Drop-/ Kombinationsfeld, in dem Design \"dunkel\"") | ![Focused Drop-/ Kombinationsfeld, in dem Design "Blau"](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "Focused Drop-/ Kombinationsfeld, in dem Design \"Blau\"") | ![Focused Drop-/ Kombinationsfeld, in das Design mit hohem Kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused Drop-/ Kombinationsfeld, in dem Design \"hoher Kontrast\"") |
 | Hintergrund | ![#FFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF-Muster")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
@@ -511,7 +511,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="default"></a>Standard
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hintergrund | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C swatch")<br />`#1B1B1C` | ![#EFEFEF swatch](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF swatch")<br />`#EFEFEF` | ![Menü Farbmuster](../../extensibility/ux-guidelines/media/HCMenu.png "Menü-Muster")<br />`Menu` |
 | Rahmen | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#98A7B7 swatch](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 swatch")<br />`#98A7B7`| ![MenuText Farbmuster](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText-Muster")<br />`MenuText` |
@@ -520,7 +520,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="hover"></a>Darauf zeigen (Hover)
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hintergrund | ![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
 | Rahmen | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="pressed"></a>Gedrückt
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hintergrund |![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
 | Rahmen | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 #### <a name="focused"></a>Focused
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hintergrund | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
 | Rahmen | ![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 ### <a name="text-input-selection"></a>Texteingabeauswahl
 
-| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
+| | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Darstellung | ![Auswahl in das Design "hell" in der Eingabetext-Drop-/ Kombinationsfeld](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "Text in Meldungsfeldern Drop-Down/Kombinationsfeld Eingabe Auswahl in das Design \"hell\"") | ![Drop-/ Kombinationsfeld der Auswahl in das Design "dunkel" für den Eingabetext](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "Text in Meldungsfeldern Drop-Down/Kombinationsfeld Eingabe Auswahl in das Design \"dunkel\"") | ![Drop-/ Kombinationsfeld der Auswahl in das Design "Blau" für den Eingabetext](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "Text in Meldungsfeldern Drop-Down/Kombinationsfeld Eingabe Auswahl in das Design \"Blau\"") | ![Auswahl in das Design mit hohem Kontrast in der Eingabetext-Drop-/ Kombinationsfeld](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "Text in Meldungsfeldern Drop-Down/Kombinationsfeld Eingabe Auswahl in das Design \"hoher Kontrast\"") |
 | Texteingabeauswahl | ![#66007ACC Farbmuster](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC-Muster")<br />`#66007ACC` | ![#66007ACC Farbmuster](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC-Muster")<br />`#66007ACC` | ![#66007ACC Farbmuster](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC-Muster")<br />`#66007ACC` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Farbmuster von-Funktion
 
-| Hell | Dunkel | Blau | Verwendet für... | 
+| Hell | Dunkel | Blau | Verwendet für... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Aktionsschaltflächen, Kombinationsfeldelemente, Befehlsleisten-Schaltflächen, Dropdown-Schaltflächen und Menüelemente: Hintergrund |
 | ![#FFCCCEDB Farbmuster](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB-Muster")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![#FF465A7D Farbmuster](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D-Muster")<br />`#FF465A7D` | Automatisch ausgeblendete registerkartenrahmen |

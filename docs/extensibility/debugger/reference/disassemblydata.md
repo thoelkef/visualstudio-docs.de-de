@@ -1,7 +1,7 @@
 ---
 title: DisassemblyData | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DisassemblyData
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbc61236156cdcbfacdf73101752ea6811470c0
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317442"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712475"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Beschreibt eine Disassembly-Anweisung für die integrierte Entwicklungsumgebung (IDE) angezeigt.
@@ -61,45 +61,33 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Member
-`dwFields`  
-Die [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Konstante, die angibt, welche Felder ausgefüllt sind.
+`dwFields` Die [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Konstante, die angibt, welche Felder ausgefüllt sind.
 
-`bstrAddress`  
-Die Adresse als Offset von einem Startpunkt (in der Regel am Anfang der dazugehörigen).
+`bstrAddress` Die Adresse als Offset von einem Startpunkt (in der Regel am Anfang der dazugehörigen).
 
-`bstrCodeBytes`  
-Die Codebytes für diese Anweisung.
+`bstrCodeBytes` Die Codebytes für diese Anweisung.
 
-`bstrOpcode`  
-Der Opcode für diese Anweisung.
+`bstrOpcode` Der Opcode für diese Anweisung.
 
-`bstrOperands`  
-Die Operanden für diese Anweisung.
+`bstrOperands` Die Operanden für diese Anweisung.
 
-`bstrSymbol`  
-Der Symbolname zugeordnet, wenn vorhanden, mit der Adresse (öffentlichen Symboldateien, Bezeichnung und So weiter).
+`bstrSymbol` Der Symbolname zugeordnet, wenn vorhanden, mit der Adresse (öffentlichen Symboldateien, Bezeichnung und So weiter).
 
-`uCodeLocationId`  
-Der Bezeichner für diesen Speicherort disassembliert Zeile. Wenn die Adresse des Code-Kontext einer Zeile größer als die Adresse des Code-Kontext eines anderen ist, dann ist der disassemblierte Code Standortbezeichner des ersten auch größer als der Bezeichner des zweiten Speicherort.
+`uCodeLocationId` Der Bezeichner für diesen Speicherort disassembliert Zeile. Wenn die Adresse des Code-Kontext einer Zeile größer als die Adresse des Code-Kontext eines anderen ist, dann ist der disassemblierte Code Standortbezeichner des ersten auch größer als der Bezeichner des zweiten Speicherort.
 
-`posBeg`  
-Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , entspricht der Position in einem Dokument, in denen die Disassembly Daten anfangen.
+`posBeg` Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , entspricht der Position in einem Dokument, in denen die Disassembly Daten anfangen.
 
-`posEnd`  
-Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , entspricht der Position in einem Dokument, in dem die Daten für die Disassemblierung beendet.
+`posEnd` Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , entspricht der Position in einem Dokument, in dem die Daten für die Disassemblierung beendet.
 
-`bstrDocumentUrl`  
-Für Textdokumente, die als Dateiname dargestellt werden, können die `bstrDocumentUrl` gefüllt wird sich mit den Dateinamen, in die Quelle gefunden werden kann, mit dem Format `file://file name`.
+`bstrDocumentUrl` Für Textdokumente, die als Dateiname dargestellt werden, können die `bstrDocumentUrl` gefüllt wird sich mit den Dateinamen, in die Quelle gefunden werden kann, mit dem Format `file://file name`.
 
 Für Textdokumente, die als Dateiname dargestellt werden, können nicht `bstrDocumentUrl` ist ein eindeutiger Bezeichner für das Dokument und die Debug-Engine implementieren muss die [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) Methode.
 
 Dieses Feld kann auch weitere Informationen zu Prüfsummen enthalten. Einzelheiten finden Sie unter "Hinweise".
 
-`dwByteOffset`  
-Die Anzahl der Bytes, die in die der Anweisung am Anfang der Codezeile ist.
+`dwByteOffset` Die Anzahl der Bytes, die in die der Anweisung am Anfang der Codezeile ist.
 
-`dwFlags`  
-Die [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Konstante, die angibt, welche Flags aktiviert sind.
+`dwFlags` Die [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Konstante, die angibt, welche Flags aktiviert sind.
 
 ## <a name="remarks"></a>Hinweise
 Jede `DisassemblyData` Struktur beschreibt eine Anweisung der Disassemblierung. Ein Array dieser Strukturen wird zurückgegeben, aus der [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode.
@@ -224,10 +212,10 @@ namespace MyNamespace
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)  
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)  
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

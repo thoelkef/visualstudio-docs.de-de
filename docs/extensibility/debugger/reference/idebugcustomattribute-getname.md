@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute::GetName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetName
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e744839b7f0461249f16afec7c2186adc26e245f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021337"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718247"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
-Ruft den Namen des benutzerdefinierten Attributs.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetName(   
-   BSTR* bstrName  
-);  
-```  
-  
-```csharp  
-int GetName(  
-   out string bstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `bstrName`  
- [out] Gibt eine Zeichenfolge, die mit dem Namen des benutzerdefinierten Attributs.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Die von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse verwendet, um das Attribut zu deklarieren. Dies möglicherweise nicht genau auf den Namen der benutzerdefinierten Attributklasse selbst entsprechen, wie in c# können das Suffix "Attribute" aus einem benutzerdefinierten Attributnamen gelöscht werden soll, wenn er in einer Deklaration verwendet wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+Ruft den Namen des benutzerdefinierten Attributs.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetName( 
+   BSTR* bstrName
+);
+```
+
+```csharp
+int GetName(
+   out string bstrName
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `bstrName`
+
+ [out] Gibt eine Zeichenfolge, die mit dem Namen des benutzerdefinierten Attributs.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Die von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse verwendet, um das Attribut zu deklarieren. Dies möglicherweise nicht genau auf den Namen der benutzerdefinierten Attributklasse selbst entsprechen, wie in c# können das Suffix "Attribute" aus einem benutzerdefinierten Attributnamen gelöscht werden soll, wenn er in einer Deklaration verwendet wird.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

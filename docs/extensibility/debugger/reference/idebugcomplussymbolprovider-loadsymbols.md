@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413370"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678201"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Lädt die angegebenen Debug-Symbole im Arbeitsspeicher.
@@ -46,23 +46,29 @@ int LoadSymbols(
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner der Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner der dem Mondule.
+ [in] Der Bezeichner der Anwendungsdomäne.
 
-`baseAddress`  
-[in] Basis Speicheradresse.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objekt, das die Symbol-Metadaten enthält.
+ [in] Eindeutiger Bezeichner der dem Mondule.
 
-`bstrModuleName`  
-[in] Der Name des Moduls.
+`baseAddress`
 
-`bstrSymSearchPath`  
-[in] Suchpfad für die Symboldatei.
+ [in] Basis Speicheradresse.
+
+`pUnkMetadataImport`
+
+ [in] Objekt, das die Symbol-Metadaten enthält.
+
+`bstrModuleName`
+
+ [in] Der Name des Moduls.
+
+`bstrSymSearchPath`
+
+ [in] Suchpfad für die Symboldatei.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -84,4 +90,4 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0878f4224d024e353c2c7ab798450a65e9677178
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413344"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712735"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 Ruft die Typinformationen über das angegebene Array, wenn die debugadresse.
 
 ## <a name="syntax"></a>Syntax
 
-```
-[C++]
+```cpp
 HRESULT GetArrayTypeFromAddress(
     IDebugAddress* pAddress,
     BYTE*          pSig,
@@ -33,8 +32,7 @@ HRESULT GetArrayTypeFromAddress(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetArrayTypeFromAddress(
     IDebugAddress   pAddress,
     int[]           pSig,
@@ -44,17 +42,21 @@ int GetArrayTypeFromAddress(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pAddress`  
-[in] Die debugadresse dargestellt werden, indem ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+`pAddress`
 
-`pSig`  
-[in] Das Array, um zu überprüfen.
+ [in] Die debugadresse dargestellt werden, indem ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
 
-`dwSigLength`  
-[in] Länge in Bytes, der die `pSig` Array.
+`pSig`
 
-`ppField`  
-[out] Gibt den Arraytyp zurück, dargestellt durch ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Schnittstelle.
+ [in] Das Array, um zu überprüfen.
+
+`dwSigLength`
+
+ [in] Länge in Bytes, der die `pSig` Array.
+
+`ppField`
+
+ [out] Gibt den Arraytyp zurück, dargestellt durch ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -96,4 +98,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

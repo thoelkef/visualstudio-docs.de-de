@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317080"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691344"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung eines Befehls. Beispielsweise sollten Sie einen Befehl anders aussehen, wenn sie nicht verfügbar ist. Sie können Befehle stellen, verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.
@@ -85,7 +85,7 @@ Um die Darstellung eines Befehls zu ändern, führen Sie eine der folgenden Akti
 8. Auf der **Tools** Menü jetzt angezeigt werden sollte **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.
 
 ## <a name="see-also"></a>Siehe auch
-[Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

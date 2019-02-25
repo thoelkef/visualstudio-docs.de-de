@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601381"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Auswirkungen des AutoSave Office-Projektmappen
 
@@ -27,5 +27,4 @@ Automatisches Speichern ist ein Feature für Excel, PowerPoint und Word, die aut
 > AutoSave für Windows Desktop Word, Excel und PowerPoint wurde in 2017 eingeführt und ist derzeit für Office 365-Abonnenten verfügbar. Wenn Sie eine unbefristete Lizenz für Office 2016 oder früher erworben haben, zugreifen nicht Sie derzeit auf die Mitverfasserfunktion. (Excel Online Excel für Android, Excel für iOS und Excel Mobile in der Windows Store unterstützen dieses Feature jedoch.)
 
 ## <a name="see-also"></a>Siehe auch
-
-[Entwickeln von Office-Projektmappen](./developing-office-solutions.md)
+- [Entwickeln von Office-Projektmappen](./developing-office-solutions.md)

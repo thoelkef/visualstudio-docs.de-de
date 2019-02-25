@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030677"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722407"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: Erstellen Sie einen Atom-feed für einen privaten Katalog
-Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterungen enthält, und fügen den Feed zu erstellen, **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
-  
-## <a name="create-an-atom-feed"></a>Erstellen Sie einen Atom-feed  
- Um einen Atom-feed als privater Katalog zu erstellen, sammeln Sie zunächst Ihre Erweiterungen (*VSIX* Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:  
-  
-- Ein *atom.xml* -Datei, die die Erweiterungen als privater Katalog zur Verfügung stellt. Informationen zum Herstellen einer Verbindung die *atom.xml* Datei **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
-  
-- Ein Ordner, der Bilddateien enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die *atom.xml* -Datei enthält die relative Links zu diesen Bilder, damit sie in verfügbaren **Erweiterungen und Updates**.  
-  
-  Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einem Ordner gesammelt haben:  
-  
-- *Template_Wizard_239.VSIX*, dies ist eine leere VSIX-Projektvorlage.  
-  
-- *SelectionHighlight.vsix*, dies ist ein Tool, um alle Instanzen eines markierten Worts zu markieren.  
-  
-  Den Inhalt der *atom.xml* Datei wird im folgende Beispiel ähneln:  
-  
-```xml  
+Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterungen enthält, und fügen den Feed zu erstellen, **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).
+
+## <a name="create-an-atom-feed"></a>Erstellen Sie einen Atom-feed
+ Um einen Atom-feed als privater Katalog zu erstellen, sammeln Sie zunächst Ihre Erweiterungen (*VSIX* Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:
+
+- Ein *atom.xml* -Datei, die die Erweiterungen als privater Katalog zur Verfügung stellt. Informationen zum Herstellen einer Verbindung die *atom.xml* Datei **Erweiterungen und Updates**, finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).
+
+- Ein Ordner, der Bilddateien enthält, die von den Erweiterungen (z. B. Screenshots) extrahiert wurden. Die *atom.xml* -Datei enthält die relative Links zu diesen Bilder, damit sie in verfügbaren **Erweiterungen und Updates**.
+
+  Nehmen wir beispielsweise an, dass Sie die folgenden zwei Erweiterungen in einem Ordner gesammelt haben:
+
+- *Template_Wizard_239.VSIX*, dies ist eine leere VSIX-Projektvorlage.
+
+- *SelectionHighlight.vsix*, dies ist ein Tool, um alle Instanzen eines markierten Worts zu markieren.
+
+  Den Inhalt der *atom.xml* Datei wird im folgende Beispiel ähneln:
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" />
@@ -68,9 +68,9 @@ Sie können ein Atom (RSS-Feeds) zu einem Intranet-Speicherort, der Erweiterunge
     ...
   </entry>
 </feed>
-```  
-  
- Beachten Sie, dass die beiden Tags link finden Sie Screenshots im Ordner generierten Bilder.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Private Kataloge](../extensibility/private-galleries.md)
+```
+
+ Beachten Sie, dass die beiden Tags link finden Sie Screenshots im Ordner generierten Bilder.
+
+## <a name="see-also"></a>Siehe auch
+- [Private Kataloge](../extensibility/private-galleries.md)

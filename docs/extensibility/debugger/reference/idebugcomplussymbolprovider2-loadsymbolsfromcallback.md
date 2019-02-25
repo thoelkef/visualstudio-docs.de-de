@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c40fb096eed1c6da83213cbae65e2f2c750a84
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413136"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720743"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Lädt Debugsymbole, die mit der angegebenen Rückrufmethode.
@@ -48,26 +48,33 @@ int LoadSymbolsFromCallback(
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner der Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner des Moduls.
+ [in] Der Bezeichner der Anwendungsdomäne.
 
-`pUnkMetadataImport`  
-[in] Objekt, das die Symbol-Metadaten enthält.
+`guidModule`
 
-`pUnkCorDebugModule`  
-[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+ [in] Eindeutiger Bezeichner des Moduls.
 
-`bstrModuleName`  
-[in] Der Name des Moduls.
+`pUnkMetadataImport`
 
-`bstrSymSearchPath`  
-[in] Suchpfad für die Symboldatei.
+ [in] Objekt, das die Symbol-Metadaten enthält.
 
-`pCallback`  
-[in] Ein Objekt, das die Rückrufmethode darstellt.
+`pUnkCorDebugModule`
+
+ [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Der Name des Moduls.
+
+`bstrSymSearchPath`
+
+ [in] Suchpfad für die Symboldatei.
+
+`pCallback`
+
+ [in] Ein Objekt, das die Rückrufmethode darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -167,4 +174,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

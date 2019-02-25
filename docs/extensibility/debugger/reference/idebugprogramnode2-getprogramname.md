@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetProgramName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetProgramName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6f678adc135e85f8808cef36d819733033447e4
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: ef32de11f1667e32684bf39e38f6b609fc67afa8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450372"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714048"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Ruft den Namen des Programms.
@@ -37,8 +37,9 @@ int GetProgramName (
 ```
 
 #### <a name="parameters"></a>Parameter
-`pbstrProgramName`  
-[out] Gibt den Namen des Programms.
+`pbstrProgramName`
+
+ [out] Gibt den Namen des Programms.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -61,4 +62,4 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

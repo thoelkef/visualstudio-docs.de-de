@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugErrorBreakpoints2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugErrorBreakpoints2
 helpviewer_keywords:
@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac234aca006136068d1fc348627ce0003130ea89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 568257f3ffb38329a95499815e8d7853a2fdb19f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009322"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714217"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
-Diese Schnittstelle listet Fehler Haltepunkte ein ausstehender Haltepunkt zugeordnet.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IEnumDebugErrorBreakpoints2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte an.  
-  
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Visual Studio-Aufrufe [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , rufen Sie diese Schnittstelle stellt eine Liste von Haltepunkten an, die nicht gebunden werden kann, oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) beim Abrufen der diese Schnittstelle, die eine Liste der Haltepunkte darstellt. wurden nicht gebunden.  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugErrorBreakpoints2`.  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Ruft eine angegebene Anzahl von Fehler Breakpoints in einer Enumerationsfolge ab.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Überspringt eine angegebene Anzahl der Fehler von Breakpoints in einer Enumerationsfolge.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Ruft die Anzahl der Fehler, Haltepunkte in einen Enumerator ab.|  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle enthält eine Liste der [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Schnittstellen, die beschreibt, von denen jede einen Haltepunkt nicht gebunden werden kann und warum es konnte nicht gebunden werden. Visual Studio verwendet die `IEnumDebugErrorBreakpoint2` Schnittstelle zum Aktualisieren die Haltepunkte in der IDE angezeigt.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)   
- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)   
- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+Diese Schnittstelle listet Fehler Haltepunkte ein ausstehender Haltepunkt zugeordnet.
+
+## <a name="syntax"></a>Syntax
+
+```
+IEnumDebugErrorBreakpoints2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer
+ Die Debug-Engine (DE) implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte an.
+
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Visual Studio-Aufrufe [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , rufen Sie diese Schnittstelle stellt eine Liste von Haltepunkten an, die nicht gebunden werden kann, oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) beim Abrufen der diese Schnittstelle, die eine Liste der Haltepunkte darstellt. wurden nicht gebunden.
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+ Die folgende Tabelle zeigt die Methoden der `IEnumDebugErrorBreakpoints2`.
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Ruft eine angegebene Anzahl von Fehler Breakpoints in einer Enumerationsfolge ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Überspringt eine angegebene Anzahl der Fehler von Breakpoints in einer Enumerationsfolge.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Ruft die Anzahl der Fehler, Haltepunkte in einen Enumerator ab.|
+
+## <a name="remarks"></a>Hinweise
+ Diese Schnittstelle enthält eine Liste der [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Schnittstellen, die beschreibt, von denen jede einen Haltepunkt nicht gebunden werden kann und warum es konnte nicht gebunden werden. Visual Studio verwendet die `IEnumDebugErrorBreakpoint2` Schnittstelle zum Aktualisieren die Haltepunkte in der IDE angezeigt.
+
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
+- [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
+- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

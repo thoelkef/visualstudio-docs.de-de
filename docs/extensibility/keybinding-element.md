@@ -11,65 +11,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4706114f87e18ce97789e41098e13cf38917d533
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933038"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678435"
 ---
 # <a name="keybinding-element"></a>KeyBinding-element
-KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.  
-  
- Befehle können sowohl bei Einzel- oder dualcontrollern tastenzuordnungen zugeordnet haben. Ist ein Beispiel für eine einzelne tastenzuordnung **STRG**+**S** für die **speichern** Befehl. Duale tastenzuordnungen erfordern zwei aufeinander folgenden Tastenkombinationen einen Befehl ausgelöst. Ist ein Beispiel für eine duale tastenzuordnung <strong>STRG*+</strong>K<strong>,</strong>STRG<strong>+</strong>K** zum Setzen eines Lesezeichens.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|guid|Erforderlich.|  
-|id|Erforderlich.|  
-|Editor|Erforderlich. Der Editor GUID gibt an, der Bearbeitungskontext für den diese Tastenkombination aktiv sein werden. Der globale Bindung Bereichswert ist "guidVSStd97".|  
-|key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|mod1|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|  
-|key2|Dies ist optional. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|mod2|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|  
-|Emulator|Dies ist optional.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|Übergeordnetes Element||  
-|Anmerkung||  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[KeyBindings-element](../extensibility/keybindings-element.md)|Gruppen KeyBinding-Elementen und anderen KeyBindings Gruppierungen.|  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
-<KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
-</KeyBindings>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [KeyBindings-element](../extensibility/keybindings-element.md)   
- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.
+
+ Befehle können sowohl bei Einzel- oder dualcontrollern tastenzuordnungen zugeordnet haben. Ist ein Beispiel für eine einzelne tastenzuordnung **STRG**+**S** für die **speichern** Befehl. Duale tastenzuordnungen erfordern zwei aufeinander folgenden Tastenkombinationen einen Befehl ausgelöst. Ist ein Beispiel für eine duale tastenzuordnung <strong>STRG*+</strong>K<strong>,</strong>STRG<strong>+</strong>K** zum Setzen eines Lesezeichens.
+
+## <a name="syntax"></a>Syntax
+
+```
+<Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|guid|Erforderlich.|
+|id|Erforderlich.|
+|Editor|Erforderlich. Der Editor GUID gibt an, der Bearbeitungskontext für den diese Tastenkombination aktiv sein werden. Der globale Bindung Bereichswert ist "guidVSStd97".|
+|key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod1|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|
+|key2|Dies ist optional. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X vorangestellt und [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Dies ist optional. Eine beliebige Kombination von **STRG**, **Alt**, und **UMSCHALT** durch Leerzeichen getrennt sind.|
+|Emulator|Dies ist optional.|
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|Übergeordnetes Element||
+|Anmerkung||
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[KeyBindings-element](../extensibility/keybindings-element.md)|Gruppen KeyBinding-Elementen und anderen KeyBindings Gruppierungen.|
+
+## <a name="example"></a>Beispiel
+
+```
+<KeyBindings>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"
+    editor="guidWidgetEditor" key1="VK_F5"/>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>
+</KeyBindings>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [KeyBindings-element](../extensibility/keybindings-element.md)
+- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

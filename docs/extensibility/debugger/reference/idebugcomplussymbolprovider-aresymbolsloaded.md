@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e47f84c399f3a2119c42ee12b5384e96a92fb4
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: a53b1a1ad377543107154e355a47b7100dcb2f16
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412850"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686599"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Bestimmt, ob die Debugsymbole für das angegebene Modul mit dem angegebenen Bezeichner der Anwendungsdomäne geladen wurden.
@@ -38,11 +38,13 @@ int AreSymbolsLoaded (
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner für die Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner für das Modul.
+ [in] Der Bezeichner für die Anwendungsdomäne.
+
+`guidModule`
+
+ [in] Eindeutiger Bezeichner für das Modul.
 
 ## <a name="return-value"></a>Rückgabewert
 Gibt zurück, wenn die Debugsymbole geladen sind, `S_OK`ist, andernfalls gibt `S_FALSE`.
@@ -71,4 +73,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

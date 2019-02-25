@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::SetCallback | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef36b663a95f2c6eaca31c9091898cbe70db435
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450385"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686794"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Ermöglicht die ausdrucksauswertung (EE) an die Rückrufschnittstelle, die die Debugger-Engine (DE) verwenden, lesen Sie die Metric-Einstellung.
@@ -36,8 +36,9 @@ int SetCallback (
 ```
 
 #### <a name="parameters"></a>Parameter
-`pCallback`  
-[in] Die Schnittstelle, die für den Rückruf Einstellungen verwendet.
+`pCallback`
+
+ [in] Die Schnittstelle, die für den Rückruf Einstellungen verwendet.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -74,4 +75,4 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

@@ -8,33 +8,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c7970eff1eacfb120a164a15037143342d4909
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 664ecb57a326938345c2c313228c813293230b7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953158"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711747"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Installieren des Visual Studio SDK
 
-Das Visual Studio-SDK (Software Development Kit) ist eine optionale Funktion in Visual Studio-Setup. Sie können das VS-SDK auch später installieren.  
-  
+Das Visual Studio-SDK (Software Development Kit) ist eine optionale Funktion in Visual Studio-Setup. Sie können das VS-SDK auch später installieren.
+
 ## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Installieren Sie Visual Studio SDK als Teil einer Installation von Visual Studio
 
 Installieren Sie das VS-SDK in Visual Studio-Installation enthält, die **Visual Studio-extensionentwicklung** Workload unter **andere Toolsets**. Diese Workload installiert die Visual Studio-SDK und die erforderlichen Voraussetzungen. Sie können die Installation weiter anpassen, durch das Aktivieren oder Deaktivieren von Komponenten aus der **Zusammenfassung** anzeigen.
-  
+
 ## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Installieren von Visual Studio SDK nach der Installation von Visual Studio
 
-Um nach Abschluss der Installation von Visual Studio zu Visual Studio SDK installieren, führen Sie Visual Studio-Installer erneut aus, und wählen Sie die **Visual Studio-extensionentwicklung** arbeitsauslastung.  
-  
+Um nach Abschluss der Installation von Visual Studio zu Visual Studio SDK installieren, führen Sie Visual Studio-Installer erneut aus, und wählen Sie die **Visual Studio-extensionentwicklung** arbeitsauslastung.
+
 ## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Installieren von Visual Studio SDK aus einer Projektmappe
 
 Wenn Sie eine Lösung mit ein Erweiterbarkeitsprojekt öffnen, ohne die erste Installation von Visual Studio SDK, werden Sie aufgefordert durch eine **installieren Sie die fehlende Funktion** Dialogfeld zum Installieren der **Visual Studio-extensionentwicklung** Workload:
 
-![Installieren der erweiterungsentwicklung](../extensibility/media/install-extension-development.png "extensionenentwicklung installieren")  
-  
+![Installieren der erweiterungsentwicklung](../extensibility/media/install-extension-development.png "extensionenentwicklung installieren")
+
 ## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Installieren von Visual Studio SDK über die Befehlszeile
 
 Mit Visual Studio-arbeitsauslastung oder Komponente, installieren Sie auch können die **Visual Studio-extensionentwicklung** Workload (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) über die Befehlszeile. Finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) für Informationen zu den entsprechenden Befehlszeilenoptionen und allgemeine Anweisungen zum Ermitteln der arbeitsauslastung oder Komponenten-IDs.
-  
+
 Beachten Sie, dass Sie Visual Studio-Installer verwenden müssen, der die installierte Version von Visual Studio entspricht. Z. B. Wenn Sie Visual Studio Enterprise auf Ihrem Computer installiert haben, müssen Sie Ausführen den Installer für Visual Studio Enterprise (*vs_enterprise.exe*).

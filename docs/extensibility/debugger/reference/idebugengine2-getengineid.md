@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::GetEngineID | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::GetEngineID
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09863abc81d3f4f1a5e4e541c9e0019d30156b67
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 842d78a2ea2ff665102b9cef922f463baf53cb78
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449632"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698845"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Ruft die GUID der Debug-Engine (DE) ab.
@@ -37,8 +37,9 @@ int GetEngineID(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pguidEngine`  
-[out] Gibt die GUID des DE zurück.
+`pguidEngine`
+
+ [out] Gibt die GUID des DE zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -64,4 +65,4 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

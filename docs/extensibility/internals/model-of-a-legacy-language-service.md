@@ -10,36 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b399a7d65f4bc1eb214b19e5447c99b1f438ff78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953405"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621941"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
-Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und wird verwendet, um den Editor Informationen, die speziell für diese Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.  
-  
- Der Sprachdienst arbeitet eng mit dem Textpuffer, die von der Editor und die Ansicht, die den Editor enthält verwaltet werden. Die Microsoft IntelliSense **Quick Info** Option ist ein Beispiel für eine Funktion, die von einem Sprachdienst bereitgestellt.  
-  
-## <a name="a-minimal-language-service"></a>Ein Minimal-Sprachdienst  
- Die meisten grundlegenden Sprachdiensts enthält die folgenden zwei Objekte:  
-  
-- Die *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Ein Sprachdienst hat Informationen zu Sprache, einschließlich der Namen, die Dateinamenerweiterungen Weitere Erweiterungen, die Codefenster-Manager und die Farbauswahl.  
-  
-- Die *Farbauswahl* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle.  
-  
-  Die folgende schematische Darstellung zeigt ein Modell eines einfachen Sprachdiensts.  
-  
-  ![Sprachdienstmodell](../../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel")  
-  Grundlegende sprachendienstmodell  
-  
-  Die Dokument-Fenster-Hosts die *Dokumentansicht* des Editors in diesem Fall die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Die Ansicht des Dokuments und dem Textpuffer gehören durch den Editor. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einem speziellen Fenster aufgerufen, eine *Codefenster*. Im Code-Fenster befindet sich einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das erstellt und von der IDE gesteuert.  
-  
-  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, wird der Editor sucht den Sprachdienst, der dieser Erweiterung zugeordnet und übergibt, Code-Fenster durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Language-Dienst gibt eine *codefenstermanager*, implementiert der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle.  
-  
-  Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.  
-  
+Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und wird verwendet, um den Editor Informationen, die speziell für diese Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.
+
+ Der Sprachdienst arbeitet eng mit dem Textpuffer, die von der Editor und die Ansicht, die den Editor enthält verwaltet werden. Die Microsoft IntelliSense **Quick Info** Option ist ein Beispiel für eine Funktion, die von einem Sprachdienst bereitgestellt.
+
+## <a name="a-minimal-language-service"></a>Ein Minimal-Sprachdienst
+ Die meisten grundlegenden Sprachdiensts enthält die folgenden zwei Objekte:
+
+- Die *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Ein Sprachdienst hat Informationen zu Sprache, einschließlich der Namen, die Dateinamenerweiterungen Weitere Erweiterungen, die Codefenster-Manager und die Farbauswahl.
+
+- Die *Farbauswahl* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle.
+
+  Die folgende schematische Darstellung zeigt ein Modell eines einfachen Sprachdiensts.
+
+  ![Sprachdienstmodell](../../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel") grundlegende sprachendienstmodell
+
+  Die Dokument-Fenster-Hosts die *Dokumentansicht* des Editors in diesem Fall die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Die Ansicht des Dokuments und dem Textpuffer gehören durch den Editor. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einem speziellen Fenster aufgerufen, eine *Codefenster*. Im Code-Fenster befindet sich einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das erstellt und von der IDE gesteuert.
+
+  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, wird der Editor sucht den Sprachdienst, der dieser Erweiterung zugeordnet und übergibt, Code-Fenster durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Language-Dienst gibt eine *codefenstermanager*, implementiert der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle.
+
+  Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.
+
 | Komponente | Object | Funktion |
 |------------------| - | - |
 | Textpuffer | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Ein Stream der Unicode-Lese-/Schreibzugriff-Text. Es ist möglich, für den Text auf andere Codierungen verwenden. |
@@ -47,6 +46,6 @@ Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprac
 | Textansicht | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Ein Fenster, in dem der Benutzer navigieren, und zeigen Text mithilfe der Tastatur und Maus. Eine Textansicht, die als Editor für den Benutzer angezeigt werden. Sie können der Textansichten in normalen-Editor-Fenster, das Fenster "Ausgabe" und das "Direktfenster" verwenden. Darüber hinaus können Sie eine oder mehrere Textansichten in einem Codefenster konfigurieren. |
 | Text-manager | Von verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> -Diensts, über die Sie erhalten eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Zeiger | Eine Komponente, die allgemeine Informationen, die alle Komponenten, die zuvor beschriebenen freigegebenen verwaltet. |
 | Sprachdienst | Hängt von der Implementierung; implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Ein Objekt, das den Editor Sprachspezifische Informationen wie syntaxhervorhebung, Anweisungsvervollständigung und Klammer bietet. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../../extensibility/document-data-and-document-view-in-custom-editors.md)

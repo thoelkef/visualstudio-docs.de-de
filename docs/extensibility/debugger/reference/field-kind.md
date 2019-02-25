@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd9bd533a8314f73c6d39c34638f018cf4dde53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316300"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680373"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Gibt die Art des Feld in einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
@@ -122,104 +122,71 @@ public enum enum_FIELD_KIND {
 ```
 
 ## <a name="members"></a>Member
-FIELD_KIND_TYPE  
-Gibt an, dass das Feld nur einen Typ.
+FIELD_KIND_TYPE gibt an, dass das Feld nur einen Typ.
 
-FIELD_KIND_SYMBOL  
-Gibt an, dass das Feld ein Symbol, mit dem Typ, Name und andere Informationen.
+FIELD_KIND_SYMBOL gibt an, dass das Feld ein Symbol, mit dem Typ, Name und andere Informationen.
 
-FIELD_TYPE_PRIMITIVE  
-Gibt an, dass das Feld ein primitiver Datentyp.
+FIELD_TYPE_PRIMITIVE gibt an, dass das Feld ein primitiver Datentyp.
 
-FIELD_TYPE_STRUCT  
-Gibt an, dass das Feld eine Struktur ist.
+FIELD_TYPE_STRUCT gibt an, dass das Feld eine Struktur ist.
 
-FIELD_TYPE_CLASS  
-Gibt an, dass das Feld einer Klasse.
+FIELD_TYPE_CLASS gibt an, dass das Feld einer Klasse.
 
-FIELD_TYPE_INTERFACE  
-Gibt an, dass das Feld eine Schnittstelle.
+FIELD_TYPE_INTERFACE gibt an, dass das Feld eine Schnittstelle.
 
-FIELD_TYPE_UNION  
-Gibt an, dass das Feld eine Union ist.
+FIELD_TYPE_UNION gibt an, dass das Feld eine Union ist.
 
-FIELD_TYPE_ARRAY  
-Gibt an, dass das Feld ein Array.
+FIELD_TYPE_ARRAY gibt an, dass das Feld ein Array.
 
-FIELD_TYPE_METHOD  
-Gibt an, dass das Feld eine Methode.
+FIELD_TYPE_METHOD gibt an, dass das Feld eine Methode.
 
-FIELD_TYPE_BLOCK  
-Gibt an, dass das Feld ein Block ist.
+FIELD_TYPE_BLOCK gibt an, dass das Feld ein Block ist.
 
-FIELD_TYPE_POINTER  
-Gibt an, dass das Feld ein Zeiger ist.
+FIELD_TYPE_POINTER gibt an, dass das Feld ein Zeiger ist.
 
-FIELD_TYPE_ENUM  
-Gibt an, dass das Feld enumerierten Datentyps.
+FIELD_TYPE_ENUM gibt an, dass das Feld enumerierten Datentyps.
 
-FIELD_TYPE_LABEL  
-Gibt an, dass das Feld eine Bezeichnung.
+FIELD_TYPE_LABEL gibt an, dass das Feld eine Bezeichnung.
 
-FIELD_TYPE_TYPEDEF  
-Gibt an, dass das Feld eine Typdefinition ist.
+FIELD_TYPE_TYPEDEF gibt an, dass das Feld eine Typdefinition ist.
 
-FIELD_TYPE_BITFIELD  
-Gibt an, dass das Feld ein Bitfeld ist.
+FIELD_TYPE_BITFIELD gibt an, dass das Feld ein Bitfeld ist.
 
-FIELD_TYPE_NAMESPACE  
-Gibt an, dass das Feld ein Namespace ist.
+FIELD_TYPE_NAMESPACE gibt an, dass das Feld ein Namespace ist.
 
-FIELD_TYPE_MODULE  
-Gibt an, dass das Feld ein Modul.
+FIELD_TYPE_MODULE gibt an, dass das Feld ein Modul.
 
-FIELD_TYPE_DYNAMIC  
-Gibt an, dass das Feld dynamisch ist.
+FIELD_TYPE_DYNAMIC gibt an, dass das Feld dynamisch ist.
 
-FIELD_TYPE_PROP  
-Gibt an, dass das Feld eine Eigenschaft ist.
+FIELD_TYPE_PROP gibt an, dass das Feld eine Eigenschaft ist.
 
-FIELD_TYPE_INNERCLASS  
-Gibt an, dass das Feld einer inneren Klasse.
+FIELD_TYPE_INNERCLASS gibt an, dass das Feld einer inneren Klasse.
 
-FIELD_TYPE_REFERENCE  
-Gibt an, dass das Feld ein Verweis ist.
+FIELD_TYPE_REFERENCE gibt an, dass das Feld ein Verweis ist.
 
-FIELD_TYPE_EXTENDED  
-Für zukünftige Verwendung reserviert.
+FIELD_TYPE_EXTENDED für zukünftige Verwendung reserviert.
 
-FIELD_SYM_MEMBER  
-Gibt an, dass das Feld gehört.
+FIELD_SYM_MEMBER gibt an, dass das Feld gehört.
 
-FIELD_SYM_LOCAL  
-Gibt an, dass das Feld lokal ist.
+FIELD_SYM_LOCAL gibt an, dass das Feld lokal ist.
 
-FIELD_SYM_PARAMETER  
-Gibt an, dass das Feld ein Parameter ist.
+FIELD_SYM_PARAMETER gibt an, dass das Feld ein Parameter ist.
 
-FIELD_SYM_THIS  
-Gibt an, dass das Feld, das "this"-Zeigers ist.
+FIELD_SYM_THIS gibt an, dass das Feld, das "this"-Zeigers ist.
 
-FIELD_SYM_GLOBAL  
-Gibt an, dass das Feld auf global festgelegt ist.
+FIELD_SYM_GLOBAL gibt an, dass das Feld auf global festgelegt ist.
 
-FIELD_SYM_PROP_GETTER  
-Gibt an, dass das Feld Eigenschaften abruft.
+FIELD_SYM_PROP_GETTER gibt an, dass das Feld Eigenschaften abruft.
 
-FIELD_SYM_PROP_SETTER  
-Gibt an, dass das Feld Eigenschaften festlegt.
+FIELD_SYM_PROP_SETTER gibt an, dass das Feld Eigenschaften festlegt.
 
-FIELD_SYM_EXTENDED  
-Für zukünftige Verwendung reserviert.
+FIELD_SYM_EXTENDED für zukünftige Verwendung reserviert.
 
-FIELD_KIND_MASK  
-Gibt eine Maske für Feld Arten an.
+FIELD_KIND_MASK gibt eine Maske für Feld Arten an.
 
-FIELD_TYPE_MASK  
-Gibt eine Maske für die Feldtypen an.
+FIELD_TYPE_MASK gibt eine Maske für die Feldtypen an.
 
-FIELD_SYM_MASK  
-Gibt eine Maske für Symbolinformationen an.
+FIELD_SYM_MASK gibt eine Maske für Symbolinformationen an.
 
 ## <a name="remarks"></a>Hinweise
 Zurückgegeben von einem Aufruf der [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) Methode.
@@ -234,7 +201,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

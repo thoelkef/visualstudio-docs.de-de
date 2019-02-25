@@ -12,44 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a7c9cae59bc5a02dcca53afb66c234012e6713
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918680"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602428"
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
-Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speichern der Dateien in Projekten verwalten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Die folgenden Themen behandeln die unterschiedlichen Ansätze zum Öffnen und Speichern von Dateien.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Anzeigen von Dateien mit dem Befehl „Datei öffnen“](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
- Bietet eine schrittweise Erklärung der Behandlung von der IDE die **geöffnete Datei** Befehl und die Rolle von Projekten bei der Reaktion auf diesen Befehl.  
-  
- [Anzeigen von Dateien mit dem Befehl „Öffnen mit“](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
- Eine ausführliche, schrittweise Erklärung der Behandlung von der IDE bereit, die **Öffnen mit** Befehl aufgefordert wird das Öffnen einer Datei, die eine Auswahl aus der standard-Editoren.  
-  
- [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)  
- Enthält schrittweise Anleitungen zum angeben, dass die Dateien eines bestimmten Typs in Ihrem Projekt mit einem projektspezifischen-Editor geöffnet werden soll.  
-  
- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
- Enthält schrittweise Anleitungen zum angeben die IDE zu einen standard-Editor für Dateien in Ihrem Projekttyp öffnen zu aktivieren.  
-  
- [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)  
- Enthält schrittweise Anleitungen für eine geöffnete Datei einen projektspezifische-Editor wird geöffnet.  
-  
- [Speichern eines Standarddokuments](../../extensibility/internals/saving-a-standard-document.md)  
- Enthält eine detaillierte Erläuterung der Behandlung von der IDE die **speichern**, **speichern**, und **Alles speichern** Befehle für ein Dokument in einem standard-Editor geöffnet.  
-  
- [Speichern eines benutzerdefinierten Dokuments](../../extensibility/internals/saving-a-custom-document.md)  
- Enthält ein Diagramm und ausführliche erläuterungen, wie die IDE verarbeitet die **speichern**, **speichern**, und **Alles speichern** Befehle für Dokumente, die in einen benutzerdefinierten Editor geöffnet.  
-  
- [Bestimmen, welcher Editor eine Datei in einem Projekt öffnet](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
- Beschreibt den Prozess, den die IDE folgt, um die geeigneten Editor oder Designer für eine Datei auszuwählen.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Erstellen von benutzerdefinierten Editoren und Designern](../../extensibility/creating-custom-editors-and-designers.md)  
- Listet die vier Typen von Editoren, dass die IDE hosten kann, und listet die Beschreibungen der einzelnen Editoren an.  
-  
- [Projekttypen](../../extensibility/internals/project-types.md)  
+Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speichern der Dateien in Projekten verwalten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Die folgenden Themen behandeln die unterschiedlichen Ansätze zum Öffnen und Speichern von Dateien.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Anzeigen von Dateien mit dem Befehl „Datei öffnen“](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+
+ Bietet eine schrittweise Erklärung der Behandlung von der IDE die **geöffnete Datei** Befehl und die Rolle von Projekten bei der Reaktion auf diesen Befehl.
+
+- [Anzeigen von Dateien mit dem Befehl „Öffnen mit“](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
+
+ Eine ausführliche, schrittweise Erklärung der Behandlung von der IDE bereit, die **Öffnen mit** Befehl aufgefordert wird das Öffnen einer Datei, die eine Auswahl aus der standard-Editoren.
+
+- [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)
+
+ Enthält schrittweise Anleitungen zum angeben, dass die Dateien eines bestimmten Typs in Ihrem Projekt mit einem projektspezifischen-Editor geöffnet werden soll.
+
+- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+
+ Enthält schrittweise Anleitungen zum angeben die IDE zu einen standard-Editor für Dateien in Ihrem Projekttyp öffnen zu aktivieren.
+
+- [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)
+
+ Enthält schrittweise Anleitungen für eine geöffnete Datei einen projektspezifische-Editor wird geöffnet.
+
+- [Speichern eines Standarddokuments](../../extensibility/internals/saving-a-standard-document.md)
+
+ Enthält eine detaillierte Erläuterung der Behandlung von der IDE die **speichern**, **speichern**, und **Alles speichern** Befehle für ein Dokument in einem standard-Editor geöffnet.
+
+- [Speichern eines benutzerdefinierten Dokuments](../../extensibility/internals/saving-a-custom-document.md)
+
+ Enthält ein Diagramm und ausführliche erläuterungen, wie die IDE verarbeitet die **speichern**, **speichern**, und **Alles speichern** Befehle für Dokumente, die in einen benutzerdefinierten Editor geöffnet.
+
+- [Bestimmen, welcher Editor eine Datei in einem Projekt öffnet](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
+
+ Beschreibt den Prozess, den die IDE folgt, um die geeigneten Editor oder Designer für eine Datei auszuwählen.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Erstellen von benutzerdefinierten Editoren und Designern](../../extensibility/creating-custom-editors-and-designers.md)
+
+ Listet die vier Typen von Editoren, dass die IDE hosten kann, und listet die Beschreibungen der einzelnen Editoren an.
+
+- [Projekttypen](../../extensibility/internals/project-types.md)
+
  Beschreibt, wie Projekte, dass der Code kompiliert und erstellt wurde, zu steuern, wie Editoren geöffnet werden und wie Projektelemente formatiert werden.

@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413032"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686248"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Gibt die Kriterien zum Vergleichen von zwei dokumentenkontexte.
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Member
-DOCCONTEXT_EQUAL  
-Finden Sie in der Liste, die den Zielkontext-Dokument entspricht der ersten Dokumentkontext.
+DOCCONTEXT_EQUAL ermittelt den ersten Dokumentenkontext in der Liste, die den Zielkontext-Dokument entspricht.
 
-DOCCONTEXT_LESS_THAN  
-Finden Sie in der Liste, die kleiner ist als den Zielkontext für das Dokument den ersten Dokumentenkontext.
+DOCCONTEXT_LESS_THAN ermittelt den ersten Dokumentenkontext in der Liste, die kleiner ist als die Ziel-Dokumentkontext.
 
-DOCCONTEXT_GREATER_THAN  
-Finden Sie in der Liste, die über den Dokument-Zielkontext liegt der ersten Dokumentkontext.
+DOCCONTEXT_GREATER_THAN ermittelt den ersten Dokumentenkontext in der Liste, die über den Dokument-Zielkontext liegt.
 
-DOCCONTEXT_SAME_DOCUMENT  
-Finden Sie in der Liste, die in demselben Dokument wie den Zielkontext für das Dokument ist der ersten Dokumentkontext.
+DOCCONTEXT_SAME_DOCUMENT ermittelt den ersten Dokumentenkontext in der Liste, die in demselben Dokument wie den Zielkontext für das Dokument ist.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) Methode.
@@ -69,5 +65,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

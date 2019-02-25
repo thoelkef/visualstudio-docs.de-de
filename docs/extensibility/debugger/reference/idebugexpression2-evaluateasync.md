@@ -1,7 +1,7 @@
 ---
 title: IDebugExpression2::EvaluateAsync | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpression2::EvaluateAsync
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1585d68de7e2ea94961e72cf3f07fa9cd147f9b9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2212738a2d2d14ec454cfd42db44f812f72a035a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449813"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684441"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Diese Methode wertet den Ausdruck asynchron aus.
@@ -39,11 +39,13 @@ int EvaluateAsync(
 ```
 
 #### <a name="parameters"></a>Parameter
-`dwFlags`  
-[in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.
+`dwFlags`
 
-`pExprCallback`  
-[in] Dieser Parameter ist immer ein null-Wert.
+ [in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.
+
+`pExprCallback`
+
+ [in] Dieser Parameter ist immer ein null-Wert.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Ein typischer Fehlercode ist:
@@ -73,7 +75,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)  
-[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)  
-[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
+- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

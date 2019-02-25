@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729b56b4161d6cfd38db91334427840d0c7339d8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449654"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678357"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Ruft den Text aus der angegebenen Position im Dokument ab.
@@ -43,17 +43,21 @@ int GetText(
 ```
 
 #### <a name="parameters"></a>Parameter
-`pos`  
-[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort der Text, der abgerufen werden angibt.
+`pos`
 
-`cMaxChars`  
-[in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.
+ [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort der Text, der abgerufen werden angibt.
 
-`pText`  
-[in, out] Ein Zeiger auf einen Puffer, der sich mit den gewünschten Text gefüllt werden soll. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.
+`cMaxChars`
 
-`pcNumChars`  
-[out] Gibt die Anzahl von Zeichen, die tatsächlich abgerufen.
+ [in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.
+
+`pText`
+
+ [in, out] Ein Zeiger auf einen Puffer, der sich mit den gewünschten Text gefüllt werden soll. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.
+
+`pcNumChars`
+
+ [out] Gibt die Anzahl von Zeichen, die tatsächlich abgerufen.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
@@ -98,5 +102,5 @@ namespace Mynamespace
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

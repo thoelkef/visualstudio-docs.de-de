@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412837"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689173"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Gibt die Kriterien zum Vergleichen von zwei Speicher Kontexten.
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Member
-CONTEXT_EQUAL  
-Finden Sie den Speicherkontext für ersten, in der Liste, die den Arbeitsspeicher Zielkontext entspricht.
+CONTEXT_EQUAL ermittelt die erste Speicherkontext in der Liste, die den Arbeitsspeicher Zielkontext entspricht.
 
-CONTEXT_LESS_THAN  
-Finden Sie den Speicherkontext für ersten, in der Liste, die kleiner als den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_LESS_THAN ermittelt die erste Speicherkontext in der Liste, die kleiner als den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_GREATER_THAN  
-Finden Sie die ersten Arbeitsspeicher-Kontext, in der Liste aus, die den Zielkontext der Arbeitsspeicher größer ist.
+CONTEXT_GREATER_THAN Suchen der ersten Arbeitsspeicher-Kontext, in der Liste, die den Zielkontext der Arbeitsspeicher größer ist.
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-Finden Sie den ersten Arbeitsspeicher-Kontext, in der Liste, die kleiner als oder gleich den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_LESS_THAN_OR_EQUAL ermittelt die erste Speicherkontext in der Liste, die kleiner als oder gleich den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-Finden Sie den Speicherkontext für ersten, in der Liste, die größer als oder gleich den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_GREATER_THAN_OR_EQUAL ermittelt die erste Speicherkontext in der Liste, die größer als oder gleich den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_SCOPE  
-Finden Sie den Speicherkontext für ersten, in der Liste, die im gleichen Bereich wie den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_SAME_SCOPE ermittelt die erste Speicherkontext in der Liste, die im gleichen Bereich wie den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_FUNCTION  
-Finden Sie den Speicherkontext für ersten, in der Liste, die in die gleiche Funktion wie der Zielbereich für den Arbeitsspeicher ist.
+CONTEXT_SAME_FUNCTION ermittelt den Speicherkontext für ersten in der Liste, die in die gleiche Funktion wie der Zielbereich für den Arbeitsspeicher ist.
 
-CONTEXT_SAME_MODULE  
-Finden Sie den Speicherkontext für ersten, in der Liste, die im selben Modul wie den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_SAME_MODULE ermittelt die erste Speicherkontext in der Liste, die im selben Modul wie den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_PROCESS  
-Finden Sie den Speicherkontext für ersten, in der Liste, die in demselben Prozess wie den Zielkontext der Arbeitsspeicher ist.
+CONTEXT_SAME_PROCESS ermittelt die erste Speicherkontext in der Liste, die in demselben Prozess wie den Zielkontext der Arbeitsspeicher ist.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) Methode.
@@ -94,5 +85,5 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

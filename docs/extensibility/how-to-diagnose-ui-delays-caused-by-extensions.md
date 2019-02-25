@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317119"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719482"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
@@ -21,7 +21,7 @@ Bei der Benutzeroberfläche nicht mehr reagiert, überprüft Visual Studio die A
 
 Die Benachrichtigung informiert den Benutzer, dass die Verzögerung der Benutzeroberfläche (d. h., die eine nicht reagierende Benutzeroberfläche in der Benutzeroberfläche) für das Ergebnis des Codes von einer Erweiterung gegangen sein könnte. Darüber hinaus werden die Benutzer mit Optionen, um die Erweiterung oder zukünftige Benachrichtigungen für diese Erweiterung zu deaktivieren.
 
-In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was zu Ihrem Erweiterungscode Benachrichtigungen zur UI Verzögerung verursacht. 
+In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was zu Ihrem Erweiterungscode Benachrichtigungen zur UI Verzögerung verursacht.
 
 > [!NOTE]
 > Verwenden Sie nicht die experimentelle Instanz von Visual Studio, um Verzögerungen zu diagnostizieren. Einige Teile der Aufrufliste-Analyse für Benachrichtigungen zur UI Verzögerung erforderlich sind deaktiviert, wenn mit der experimentellen Instanz ein, was bedeutet, dass Benachrichtigungen zur UI Verzögerung nicht angezeigt werden können.
@@ -102,7 +102,7 @@ Nachdem Sie die richtige Verzögerung der Benutzeroberfläche im Aktivitätsprot
 Wählen Sie die Datei im linken Bereich und öffnen Sie es durch Auswahl **öffnen** aus dem Kontextmenü -Menü.
 
 > [!NOTE]
-> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.) 
+> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.)
 
 Es dauert einige Minuten, bis PerfView zum Verarbeiten und die Ablaufverfolgung zu öffnen. Sobald die Ablaufverfolgung geöffnet ist, wird eine Liste der verschiedenen "Ansichten" darunter angezeigt.
 

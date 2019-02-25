@@ -1,7 +1,7 @@
 ---
 title: STEPKIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - STEPKIND
 helpviewer_keywords:
@@ -12,60 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f33f04c08a0160d6eed764f2b2e583b92c2741d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989326"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715868"
 ---
 # <a name="stepkind"></a>STEPKIND
-Gibt den Schritt für die schrittweise Ausführung.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
-};  
-typedef DWORD STEPKIND;  
-```  
-  
-```csharp  
-public enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
-};  
-```  
-  
-## <a name="members"></a>Member  
- STEP_INTO  
- Eine Funktion in Einzelschritten.  
-  
- STEP_OVER  
- Schritte für eine Funktion.  
-  
- STEP_OUT  
- Die Schritte aus einer Funktion.  
-  
- STEP_BACKWARDS  
- Schritte nach hinten an eine Funktion.  
-  
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+Gibt den Schritt für die schrittweise Ausführung.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+enum enum_STEPKIND { 
+   STEP_INTO      = 0,
+   STEP_OVER      = 1,
+   STEP_OUT       = 2,
+   STEP_BACKWARDS = 3
+};
+typedef DWORD STEPKIND;
+```
+
+```csharp
+public enum enum_STEPKIND { 
+   STEP_INTO      = 0,
+   STEP_OVER      = 1,
+   STEP_OUT       = 2,
+   STEP_BACKWARDS = 3
+};
+```
+
+## <a name="members"></a>Member
+ STEP_INTO Schritte in einer Funktion.
+
+ Schrittweite Schritte für eine Funktion.
+
+ STEP_OUT Schritten aus einer Funktion.
+
+ STEP_BACKWARDS Schritte rückwärts in eine Funktion.
+
+## <a name="remarks"></a>Hinweise
+ Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.
+
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

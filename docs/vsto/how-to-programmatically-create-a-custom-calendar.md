@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ded66152b3569242bc763a9375b5aa6fb6a2d40
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624775"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders
-  In diesem Beispiel erstellt einen neuen Kalenderordner, die mit dem Namen **PersonalCalendar**, und klicken Sie dann einen neuer Termin erstellt, und fügt es dem Ordner "Kalender" hinzu. Der Code zeigt anschließend den Ordner "Kalender".  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Beispiel  
- [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+  In diesem Beispiel erstellt einen neuen Kalenderordner, die mit dem Namen **PersonalCalendar**, und klicken Sie dann einen neuer Termin erstellt, und fügt es dem Ordner "Kalender" hinzu. Der Code zeigt anschließend den Ordner "Kalender".
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Beispiel
+ [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
+- [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)
+- [Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)

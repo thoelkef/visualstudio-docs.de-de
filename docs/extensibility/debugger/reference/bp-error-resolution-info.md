@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_RESOLUTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03742dc00f0d42066eb80adfef6946904cae1d77
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317106"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691201"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Beschreibt die Auflösung von einem Fehler Haltepunkt, einschließlich der Standort, Anwendung und Thread an.
@@ -47,23 +47,17 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>Member
-`dwFields`  
-Eine Kombination von Werten aus der [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) Enumeration, die angibt, welche Felder dieser Struktur ausgefüllt werden.
+`dwFields` Eine Kombination von Werten aus der [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) Enumeration, die angibt, welche Felder dieser Struktur ausgefüllt werden.
 
-`bpResLocation`  
-Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Union, der die Position des Haltepunkts Auflösung angibt.
+`bpResLocation` Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Union, der die Position des Haltepunkts Auflösung angibt.
 
-`pProgram`  
-Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung darstellt, in dem der haltepunktfehler aufgetreten ist.
+`pProgram` Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung darstellt, in dem der haltepunktfehler aufgetreten ist.
 
-`pThread`  
-Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, auf dem die Anwendung, die den Breakpoint-Fehler generiert hat, ausgeführt wird.
+`pThread` Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, auf dem die Anwendung, die den Breakpoint-Fehler generiert hat, ausgeführt wird.
 
-`bstrMessage`  
-Eine Zeichenfolge, die Warnung oder Fehlermeldung an, die durch diese Fehlerbehebung enthält.
+`bstrMessage` Eine Zeichenfolge, die Warnung oder Fehlermeldung an, die durch diese Fehlerbehebung enthält.
 
-`dwType`  
-Ein Wert aus der [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) Enumeration, die den Breakpoint-Fehlertyp angibt.
+`dwType` Ein Wert aus der [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) Enumeration, die den Breakpoint-Fehlertyp angibt.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zurückgegeben, die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) Methode.
@@ -76,10 +70,10 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)  
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
+- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)

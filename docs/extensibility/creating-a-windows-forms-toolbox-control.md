@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316586"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687886"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
 Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird, die Toolbox-Steuerelement von Windows Forms-Elementvorlage, die in Visual Studio-Erweiterbarkeitstools (VS SDK) enthalten ist das **Toolbox** beim Installieren der Erweiterung. In diesem Thema wird gezeigt, wie die Vorlage zu verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie für andere Benutzer verteilen können.
@@ -209,7 +209,7 @@ Die `Counter` Steuerelement macht eine Methode zum Erhöhen des Zählerwerts, ei
 Beim Erstellen einer **Toolbox** -Steuerelement, das Visual Studio erstellt eine Datei namens *ProjectName.vsix* in der "\bin\debug\" des Projekts. Sie können das Steuerelement bereitstellen, durch das Hochladen der *VSIX* -Datei mit einem Netzwerk oder auf einer Website. Wenn ein Benutzer öffnet die *VSIX* Datei, die das Steuerelement installiert ist, und Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie hochladen, die *VSIX* Datei [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) , damit Benutzer sie finden können der **Tools**  >   **Erweiterungen und Updates** Dialogfeld.
 
 ## <a name="see-also"></a>Siehe auch
-[Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Grundlagen für die Entwicklung von Windows Forms-Steuerelementen](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Grundlagen für die Entwicklung von Windows Forms-Steuerelementen](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

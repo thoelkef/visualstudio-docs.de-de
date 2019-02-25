@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880951"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710603"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
@@ -125,7 +125,7 @@ Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffne
 * Navigieren Sie zu dem Projektverzeichnis in **Datei-Explorer**.
 * Öffnen der *MyProject.csproj erstellt* -Datei mit einem Text-Editor.
 
-### <a name="1-update-the-minimumvisualstudioversion"></a>1. Aktualisieren Sie die MinimumVisualStudioVersion
+### <a name="1-update-the-minimumvisualstudioversion"></a>1. Update the MinimumVisualStudioVersion
 
 * Legen Sie die minimale visual Studio-Version auf `$(VisualStudioVersion)` , und fügen Sie dafür eine bedingte Anweisung hinzu.  Fügen Sie diese Tags hinzu, wenn sie nicht vorhanden sind.  Stellen Sie sicher, dass die Tags festgelegt sind, wie unten gezeigt:
 

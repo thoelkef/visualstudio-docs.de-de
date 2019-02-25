@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b926a7ce44d4a07bc875a275f82cf2ae24de0a3f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640700"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Vorgehensweise: Programmgesteuertes Erstellen von e-Mail-Elementen
-  Dieses Beispiel erstellt eine e-Mail-Nachricht in Microsoft Office Outlook.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Beispiel  
- [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
- [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+  Dieses Beispiel erstellt eine e-Mail-Nachricht in Microsoft Office Outlook.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Beispiel
+ [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
+- [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)

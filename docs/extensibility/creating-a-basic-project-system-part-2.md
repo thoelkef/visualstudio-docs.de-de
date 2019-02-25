@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318484"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681308"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projektsystems, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird das Erstellen eines grundlegenden Projektsystems veranschaulicht. In dieser exemplarischen Vorgehensweise baut auf dem Projektsystem für die basic-eine Visual Studio-Vorlage auf einer Eigenschaftenseite und andere Funktionen. Sie müssen die erste exemplarischen Vorgehensweise abschließen, bevor Sie mit dieser beginnen.
@@ -40,7 +40,7 @@ In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführe
 > Die Schritte in dieser exemplarischen Vorgehensweise basiert auf einem C#-Projekt. Jedoch mit Ausnahme von Details wie z. B. Dateinamenerweiterungen und Code können die gleichen Schritte für ein Visual Basic-Projekt Sie.
 
 ## <a name="create-a-visual-studio-template"></a>Erstellen Sie eine Visual Studio-Vorlage
-[Erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) veranschaulicht das Erstellen einer grundlegenden Projektvorlage und an das Projektsystem hinzufügen. Darüber hinaus erfahren Sie, wie diese Vorlage mit Visual Studio registrieren mit dem <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> -Attribut, das den vollständigen Pfad der schreibt die *\\Templates\Projects\SimpleProject\\* Ordner im System die Registrierung.
+- [Erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) veranschaulicht das Erstellen einer grundlegenden Projektvorlage und an das Projektsystem hinzufügen. Darüber hinaus erfahren Sie, wie diese Vorlage mit Visual Studio registrieren mit dem <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> -Attribut, das den vollständigen Pfad der schreibt die *\\Templates\Projects\SimpleProject\\* Ordner im System die Registrierung.
 
 Mithilfe von Visual Studio-Vorlage (*VSTEMPLATE* Datei) statt einer basic-Projektvorlage, können Sie steuern, wie die Vorlage wird die **neues Projekt** Dialogfeld und wie bei Vorlagenparametern wird ersetzt. Ein *VSTEMPLATE* Datei ist eine XML-Datei, die beschreibt, wie Quelldateien enthalten sein, wenn ein Projekt mithilfe der Projektvorlage für das System erstellt wird. Das Projektsystem selbst wird erstellt, indem Sie das Sammeln von der *VSTEMPLATE* -Datei und die Quelldateien in eine *ZIP* Datei, und die Bereitstellung durch Kopieren der *ZIP* Datei an einem Speicherort, der Visual Studio bekannt. Dieser Prozess wird weiter unten in dieser exemplarischen Vorgehensweise ausführlicher erläutert.
 
@@ -271,7 +271,7 @@ Testen Sie die geänderte Projektdatei, um festzustellen, ob die **Konsole** unt
     ![Einfaches Projekt-Konsolenknoten](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Projekt-Vorlagenparameter ersetzen
-[Erstellen eines grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) wurde gezeigt, wie Sie überschreiben die `ProjectNode.AddFileFromTemplate` Methode, um eine einfache Art von Vorlage Parameter ersetzt werden. In diesem Abschnitt erfahren, wie Sie die Parameter der höher entwickelten Visual Studio-Vorlage zu verwenden.
+- [Erstellen eines grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md) wurde gezeigt, wie Sie überschreiben die `ProjectNode.AddFileFromTemplate` Methode, um eine einfache Art von Vorlage Parameter ersetzt werden. In diesem Abschnitt erfahren, wie Sie die Parameter der höher entwickelten Visual Studio-Vorlage zu verwenden.
 
 Bei der Erstellung eines Projekts mit Visual Studio-Vorlage in der **neues Projekt** Dialogfeld Vorlage, die durch Parameter ersetzt werden Zeichenfolgen, um das Projekt anpassen. Ein Template-Parameter ist ein spezieller Token, das beginnt und endet mit einem Dollarzeichen, z. B. $time$. Die folgenden beiden Parameter sind besonders nützlich zum Aktivieren der Anpassung in Projekten, die in der Vorlage basieren:
 

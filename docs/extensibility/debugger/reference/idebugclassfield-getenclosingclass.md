@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::GetEnclosingClass | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::GetEnclosingClass
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5be03fc6421f03742878f2b72f568ec0915dc
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 9e6b2cfae694d0d95f70b2251efc66764df1b539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412915"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682010"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Ruft die Klasse, die diese Klasse umschließt.
@@ -37,8 +37,9 @@ int GetEnclosingClass(
 ```
 
 #### <a name="parameters"></a>Parameter
-`ppClassField`  
-[out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt darstellt, der einschließenden Klasse. Gibt einen null-Wert zurück, wenn keine einschließenden Klasse vorhanden ist.
+`ppClassField`
+
+ [out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt darstellt, der einschließenden Klasse. Gibt einen null-Wert zurück, wenn keine einschließenden Klasse vorhanden ist.
 
 ## <a name="return-value"></a>Rückgabewert
 Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
@@ -55,4 +56,4 @@ class RootClass {
 Aufrufen der `GetEnclosingClass` Methode für die `IDebugClassField` Objekt darstellt der `NestedClass` -Klasse zurückgegeben wird ein `IDebugClassField` Objekt, das die Klasse darstellt `RootClass`.
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

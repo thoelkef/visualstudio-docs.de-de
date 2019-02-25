@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413292"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678289"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Aktualisiert die Debugsymbole im Arbeitsspeicher durch die aus dem angegebenen Datenstream.
@@ -40,14 +40,17 @@ int UpdateSymbols (
 ```
 
 #### <a name="parameters"></a>Parameter
-`ulAppDomainID`  
-[in] Der Bezeichner der Anwendungsdomäne.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Eindeutiger Bezeichner des Moduls.
+ [in] Der Bezeichner der Anwendungsdomäne.
 
-`pUpdateStream`  
-[in] Ein Datenstrom, der die aktualisierte Debugsymbole enthält.
+`guidModule`
+
+ [in] Eindeutiger Bezeichner des Moduls.
+
+`pUpdateStream`
+
+ [in] Ein Datenstrom, der die aktualisierte Debugsymbole enthält.
 
 ## <a name="example"></a>Beispiel
 Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
@@ -92,4 +95,4 @@ Error:
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramProvider2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1ca2f649bd680249cc00ec537c6015def6ad8a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 74604e0b3446e33962c6a8e69a69bfc400f0e3e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449607"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700171"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Diese registrierten Schnittstelle ermöglicht es der Sitzung Debug Manager (SDM) zum Abrufen von Informationen zu Programmen, die "über veröffentlicht wurden" die [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) Schnittstelle.
@@ -83,6 +83,6 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)  
-[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)  
-[SDK-Hilfsprogramme für das Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+- [SDK-Hilfsprogramme für das Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

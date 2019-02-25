@@ -13,78 +13,78 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2ea57e16876d550694fb378a853b10d8f0af29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f9dc06b287485d857c18214ade500e63ff8032b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069316"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694256"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
-Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```csharp  
-<VSTemplate Type="TemplateType" Version="x.x.x">  
-    <TemplateData>    </TemplateData>  
-    <TemplateContent>    </TemplateContent>  
-    ...  
-</VSTemplate>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
+Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.
+
+## <a name="syntax"></a>Syntax
+
+```csharp
+<VSTemplate Type="TemplateType" Version="x.x.x">
+    <TemplateData>    </TemplateData>
+    <TemplateContent>    </TemplateContent>
+    ...
+</VSTemplate>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
 | Attribut | Beschreibung |
 |-----------| - |
 | `Type` | Gibt die Vorlage als eine Projektvorlage oder eine Elementvorlage. Dieses Attribut kann den Wert der haben `Project` oder `Item`. |
 | `Version` | Gibt eine Versionsnummer für die Vorlage an. Vorlagen in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] haben eine `Version` -Attributwert `3.0.0`. |
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt an, Daten, die kategorisiert die Vorlage und definiert, wie es in angezeigt. die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Inhalt der Vorlage.|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Optionales Element.|  
-|[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Optionales Element.|  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
- Keine  
-  
-## <a name="remarks"></a>Hinweise  
- Die `VSTemplate` Element ist das Stammelement der *VSTEMPLATE* Dateien.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
-  
-```xml  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic starter kit</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyStarterKit.csproj">  
-            <ProjectItem>Form1.cs</ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt an, Daten, die kategorisiert die Vorlage und definiert, wie es in angezeigt. die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Inhalt der Vorlage.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Optionales Element.|
+|[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Optionales Element.|
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+ Keine
+
+## <a name="remarks"></a>Hinweise
+ Die `VSTemplate` Element ist das Stammelement der *VSTEMPLATE* Dateien.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
+
+```xml
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic starter kit</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyStarterKit.csproj">
+            <ProjectItem>Form1.cs</ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

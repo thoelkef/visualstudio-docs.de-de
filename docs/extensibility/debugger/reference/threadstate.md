@@ -1,7 +1,7 @@
 ---
 title: THREADSTATE | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - THREADSTATE
 helpviewer_keywords:
@@ -12,65 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8acfff2f3b37cfe44565a432ff150073b3ab07ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962143"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694373"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Gibt den Zustand des Threads.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-typedef DWORD THREADSTATE;  
-```  
-  
-```csharp  
-public enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-```  
-  
-## <a name="members"></a>Member  
- THREADSTATE_RUNNING  
- Gibt an, dass der Thread ausgeführt wird.  
-  
- THREADSTATE_STOPPED  
- Gibt an, dass der Thread aufgrund von einem Haltepunkt angehalten wurde.  
-  
- THREADSTATE_FRESH  
- Gibt an, dass der Thread erstellt wurde, aber noch nicht Code ausgeführt wird.  
-  
- THREADSTATE_DEAD  
- Gibt an, dass der Thread inaktiv ist.  
-  
- THREADSTATE_FROZEN  
- Gibt an, dass der Thread gesperrt ist (es kann keine Ausführung ausgeführt werden).  
-  
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `dwThreadState` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+Gibt den Zustand des Threads.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+typedef DWORD THREADSTATE;
+```
+
+```csharp
+public enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+```
+
+## <a name="members"></a>Member
+ THREADSTATE_RUNNING gibt an, die der Thread ausgeführt wird.
+
+ THREADSTATE_STOPPED gibt an, dass der Thread aufgrund von einem Haltepunkt angehalten wurde.
+
+ THREADSTATE_FRESH gibt an, dass der Thread erstellt wurde, aber noch nicht Code ausgeführt wird.
+
+ THREADSTATE_DEAD gibt an, dass der Thread inaktiv ist.
+
+ THREADSTATE_FROZEN gibt an, dass der Thread gesperrt ist (es kann keine Ausführung ausgeführt werden).
+
+## <a name="remarks"></a>Hinweise
+ Verwendet für die `dwThreadState` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.
+
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
