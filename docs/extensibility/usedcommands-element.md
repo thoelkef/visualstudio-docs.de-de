@@ -13,57 +13,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8859e9799b500d838e83ee5fb664ed93103cb11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e951776df807cae1b66cbc3564b9ee7a3d0165ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934980"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699859"
 ---
 # <a name="usedcommands-element"></a>UsedCommands-Element
-UsedCommands-Element gruppiert UsedCommand-Elementen und anderen UsedCommands Gruppierungen.  
-  
- UsedCommands-Element ist optional. Wenn Sie Befehle, die außerhalb des Pakets definiert nicht aufrufen, müssen Sie nicht in diesem Abschnitt in der VSCT-Datei enthalten.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<UsedCommands condition="Defined(DEBUG)">  
-  <UsedCommand ... />  
-</UsedCommands>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der durch anderen Code implementiert wird.|  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern), die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen.|  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
-<UsedCommands>  
-  <UsedCommand guid="guidVSStd97" id="cmdidCut"/>  
-  <UsedCommand guid="guidVSStd97" id="cmdidCopy"/>  
-  <UsedCommand guid="guidVSStd97" id="cmdidPaste"/>  
-</UsedCommands>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [UsedCommand-Element](../extensibility/usedcommand-element.md)   
- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+UsedCommands-Element gruppiert UsedCommand-Elementen und anderen UsedCommands Gruppierungen.
+
+ UsedCommands-Element ist optional. Wenn Sie Befehle, die außerhalb des Pakets definiert nicht aufrufen, müssen Sie nicht in diesem Abschnitt in der VSCT-Datei enthalten.
+
+## <a name="syntax"></a>Syntax
+
+```
+<UsedCommands condition="Defined(DEBUG)">
+  <UsedCommand ... />
+</UsedCommands>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der durch anderen Code implementiert wird.|
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern), die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen.|
+
+## <a name="example"></a>Beispiel
+
+```
+<UsedCommands>
+  <UsedCommand guid="guidVSStd97" id="cmdidCut"/>
+  <UsedCommand guid="guidVSStd97" id="cmdidCopy"/>
+  <UsedCommand guid="guidVSStd97" id="cmdidPaste"/>
+</UsedCommands>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [UsedCommand-Element](../extensibility/usedcommand-element.md)
+- [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

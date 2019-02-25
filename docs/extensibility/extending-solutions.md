@@ -8,19 +8,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92f208b89fce30bc48ec1f2207e3b6a938d861f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943340"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703187"
 ---
 # <a name="extend-solutions"></a>Lösungen erweitern
-Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- Die folgenden exemplarischen Vorgehensweisen zeigen einige Möglichkeiten, die in denen Sie Lösungen erweitern können.  
-  
-1.  [Erweitern Sie den Projektmappen-Explorer-Filter](../extensibility/extending-the-solution-explorer-filter.md) wird erläutert, wie filtern, das im Projektmappen-Explorer angezeigt.  
-  
+Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ Die folgenden exemplarischen Vorgehensweisen zeigen einige Möglichkeiten, die in denen Sie Lösungen erweitern können.
+
+1.  [Erweitern Sie den Projektmappen-Explorer-Filter](../extensibility/extending-the-solution-explorer-filter.md) wird erläutert, wie filtern, das im Projektmappen-Explorer angezeigt.
+
 2.  [Verwalten des Ladens von Projekten in einer Projektmappe](../extensibility/managing-project-loading-in-a-solution.md) wird erläutert, wie zum Verwalten des Ladens von Projekten zur Verbesserung der Leistung, wenn ein Benutzer eine Projektmappe geladen werden.

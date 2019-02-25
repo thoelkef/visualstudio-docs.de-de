@@ -1,14 +1,9 @@
 ---
 title: 'DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -17,21 +12,21 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2dbf52ab216a2272cb3b6094126a34987588704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768970"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Regel-Id | TODO |  
+Regel-ID|TODO|  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Es wurde relativ hohes Maß an CPU Kernelmoduszeit gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling. |  
+| Nachricht | Es wurde relativ hohes Maß an CPU Kernelmoduszeit gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -44,6 +39,3 @@ Regel-Id | TODO |
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Führen Sie das Profil erneut aus, und wählen Sie die Option zum Sammeln von Samplings auf der Grundlage von Systemaufrufen aus, um die Arten der von der Anwendung ausgeführten Systemaufrufe zu untersuchen. Weitere Informationen zum Ausführen der Profilerstellungstools in der IDE finden Sie unter [How to: Choose Sampling Events (Vorgehensweise: Auswählen von Samplingereignissen)](../profiling/how-to-choose-sampling-events.md). Informationen zum Ausführen der Profilerstellungstools über die Befehlszeile finden Sie in der Befehlszeilentoolreferenz der Profilerstellungstools im Abschnitt **Sampling Interval Options (Samplingintervalloptionen)** im Thema [VSPerfCmd](../profiling/vsperfcmd.md).
-
-
-

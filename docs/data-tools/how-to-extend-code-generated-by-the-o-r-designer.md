@@ -1,22 +1,21 @@
 ---
-title: 'Vorgehensweise: Erweitern von mit dem O/R-Designer erstelltem Code'
+title: 'Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966165"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909602"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von mit dem O/R-Designer erstelltem Code
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code
 Vom generierten Code der **O/R Designer** erneut generiert wird, wenn Änderungen an die Entitätsklassen und andere Objekte auf der Designeroberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Die **O/R Designer** bietet die Möglichkeit, Dateien mit partiellen Klassen zu generieren, in dem Sie hinzufügen können, Sie Code, der nicht überschrieben werden. Ein Beispiel für das Hinzufügen eigenen Codes, die vom generierten Code der **O/R Designer** ist Hinzufügen der datenvalidierung zu LINQ to SQL (Entität)-Klassen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -48,5 +47,5 @@ Vom generierten Code der **O/R Designer** erneut generiert wird, wenn Änderunge
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

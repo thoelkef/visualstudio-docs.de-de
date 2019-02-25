@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6bdb40610050f03e54b499b6bc44a57faa09cb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907749"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317418"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generieren von Komponententests für Code mit IntelliTest
 
@@ -157,4 +157,4 @@ Führen Sie dann IntelliTest aus, um einzelne Komponententests in den zugehörig
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Frage: Kann ich mehr darüber erfahren, wie die Tests generiert werden?
 
-**Antwort:** Ja, einen allgemeinen Überblick finden Sie in diesem [Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).
+**Antwort:** Ja, einen allgemeinen Überblick finden Sie in diesem [Blogbeitrag](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

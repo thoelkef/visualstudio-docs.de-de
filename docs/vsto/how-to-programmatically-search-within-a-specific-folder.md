@@ -12,22 +12,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a08451b186cdc3ca1526441e906cf3c9e5d4c9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866843"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638009"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner
-  Dieses Codebeispiel verwendet die `Find` und `FindNext` Methoden, um nach Text in der Betreffzeile von e-Mail-Nachrichten zu suchen, die in der **Posteingang**. Diese Methode verwendet eine Zeichenfolge um zu prüfen, der Buchstabe T Zeichenfolgenfilter ab, der die `Subject` Text.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Beispiel  
- [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
- [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)   
- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
+  Dieses Codebeispiel verwendet die `Find` und `FindNext` Methoden, um nach Text in der Betreffzeile von e-Mail-Nachrichten zu suchen, die in der **Posteingang**. Diese Methode verwendet eine Zeichenfolge um zu prüfen, der Buchstabe T Zeichenfolgenfilter ab, der die `Subject` Text.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Beispiel
+ [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
+- [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)
+- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

@@ -14,30 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621252"
 ---
 # <a name="data-in-office-solutions"></a>Daten in Office-Projektmappen
   Viele Office-Projektmappen ermöglichen Benutzern das Abrufen und Ändern von Daten. Wenn Sie Office-Projektmappen mithilfe von Visual Studio erstellen, gibt es mehrere verschiedene Verfahren, wie Sie mit Daten arbeiten können.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md) beschreibt, wie Sie Daten an Steuerelemente in Office-Projektmappen binden.
+- [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md) beschreibt, wie benutzerdefinierte XML-Elemente zum Arbeiten mit Daten in Office-Projektmappen.
+ Beschreibt, wie Sie Daten an Steuerelemente in Office-Projektmappen binden.
 
- [Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md) wird beschrieben, wie zum Speichern von Daten in einer eingebetteten Dateninsel, der zugänglich ist, ohne die Office-Anwendung zu starten.
+- [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)
 
- [XML-Schemas und-Daten in Anpassungen auf Dokumentebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md) wird beschrieben, wie XML-Schemas in Anpassungen auf Dokumentebene verwenden, um Steuerelemente zu erstellen, die die XML-Daten gebunden sind.
+ Beschreibt, wie Sie benutzerdefinierte XML-Elemente zum Arbeiten mit Daten in Office-Projektmappen verwenden.
 
- [Verwenden lokaler Datenbankdateien in der Übersicht über die Office-Projektmappen](../vsto/using-local-database-files-in-office-solutions-overview.md) beschreibt das Importieren von Datenbankdateien in Ihre Projekte, und wenn Sie Daten zur Offlineverwendung zwischenspeichern können.
+- [Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)
+
+ Beschreibt, wie Sie Daten in einer eingebetteten Dateninsel speichern, auf die ohne Starten der Office-Anwendung zugegriffen werden kann.
+
+- [XML-Schemas und Daten in Anpassungen auf Dokumentebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+
+ Beschreibt, wie Sie XML-Schemas in Anpassungen auf Dokumentebene verwenden, um Steuerelemente zu erstellen, die an XML-Daten gebunden sind.
+
+- [Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)
+
+ Beschreibt, wie Sie Datenbankdateien in Ihre Projekte importieren, und wann Sie Daten für die Offlineverwendung zwischenspeichern können.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Zugriff auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md) enthält Themen, die veranschaulichen, wie Sie mit Daten in Visual Studio arbeiten.
+- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 
- [Speichern von Daten](../data-tools/saving-data.md) enthält Links zu Themen zum Arbeiten mit Datasets, einschließlich der Daten in einem Dataset ändern und das Schreiben von Änderungen an die Datenquelle zurück.
+ Listet Themen auf, die veranschaulichen, wie Sie in Visual Studio mit Daten arbeiten.
 
- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md) enthält Links zu Informationen über das Office-Projekten mit Visual Studio erstellen.
+- [Speichern von Daten](../data-tools/saving-data.md)
+
+ Enthält Links zu Themen über die Arbeit mit Datasets, beispielsweise über das Ändern von Daten in einem Dataset und das Zurückschreiben von Änderungen in die Datenquelle.
+
+- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
+
+ Enthält Links zu Informationen über die ersten Schritte zum Erstellen von Office-Projekten mit Visual Studio.

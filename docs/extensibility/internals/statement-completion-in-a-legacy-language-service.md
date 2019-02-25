@@ -11,30 +11,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0310f515a444d0ff68fe971463602c484763848b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622799"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung in einem Legacysprachdienst
-Anweisungsvervollständigung wird mit dem der Sprachdienst Benutzern, die abgeschlossen wird hilft, ein Programmiersprachen-Schlüsselwort oder das Element, das sie begonnen haben, in der Kern-Editor eingeben. In diesem Thema wird erläutert, wie Anweisungsvervollständigung funktioniert und wie er in den Sprachdienst implementiert.  
-  
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren der Anweisungsvervollständigung finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../../extensibility/walkthrough-displaying-statement-completion.md).  
-  
+Anweisungsvervollständigung wird mit dem der Sprachdienst Benutzern, die abgeschlossen wird hilft, ein Programmiersprachen-Schlüsselwort oder das Element, das sie begonnen haben, in der Kern-Editor eingeben. In diesem Thema wird erläutert, wie Anweisungsvervollständigung funktioniert und wie er in den Sprachdienst implementiert.
+
+ Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren der Anweisungsvervollständigung finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../../extensibility/walkthrough-displaying-statement-completion.md).
+
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
-  
-## <a name="implementing-statement-completion"></a>Implementieren von Anweisungsvervollständigung  
- Im Kern-Editor wird aktiviert, Anweisungsvervollständigung eine spezielle Benutzeroberfläche, die interaktiv hilft Ihnen, noch einfacher und schnell Code zu schreiben. Anweisungsvervollständigung hilft mit relevanten Objekte oder Klassen, wenn sie benötigt werden, wodurch Sie bestimmte Elemente daran erinnern zu müssen, oder müssen in einem Hilfethema für den Verweis nachgeschlagen werden vermieden werden.  
-  
- Um Anweisungsvervollständigung zu implementieren, müssen Ihre Sprache einen Trigger für die Buildfertigstellung Anweisung analysiert werden kann. Z. B. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] verwendet einen Operator Punkt (.), während [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] verwendet einen Pfeil (->)-Operator. Ein Sprachdienst kann mehr als ein Trigger verwenden, um Anweisungsvervollständigung initiieren zu können. Diese Trigger werden im Befehlsfilter so programmiert.  
-  
-## <a name="command-filters-and-triggers"></a>-Befehlsfilter und Trigger  
- Befehl Filter fangen Vorkommen der Auslöser oder Trigger. Um die Ansicht der Befehlsfilter hinzuzufügen, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, und fügen Sie es an die Ansicht durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode. Sie können den gleichen Befehlsfilter (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) für alle Aspekte des Sprachdiensts, wie Anweisungsvervollständigung, fehlermarker und methodentipps. Weitere Informationen finden Sie unter [Befehlen von Legacysprachdiensten abfangen](../../extensibility/internals/intercepting-legacy-language-service-commands.md).  
-  
- Wenn der Trigger im Editor eingegeben wird – insbesondere den Textpuffer, der Sprachdienst ruft dann die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode. Dies bewirkt, dass den Editor in der Benutzeroberfläche anzuzeigen, damit der Benutzer die Anweisung Abschluss Kandidaten auswählen kann. Diese Methode müssen Sie implementieren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> und <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> Flags, die als Parameter. In einem Listenfeld Scrollen wird die Liste der Vervollständigungselemente angezeigt. Wie der Benutzer eingeben weiterhin, wird die Auswahl innerhalb des Listenfelds aktualisiert, um widerzuspiegeln, dass die bestmögliche Übereinstimmung auf die letzten Zeichen eingegeben. Der Kern-Editor implementiert, die Benutzeroberfläche für die Anweisungsvervollständigung, jedoch muss der Sprachdienst implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> Schnittstelle, um einen Satz von kandidatenelemente als Abschluss für die Anweisung zu definieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Abfangen von Befehlen von Legacysprachdiensten](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+>  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
+
+## <a name="implementing-statement-completion"></a>Implementieren von Anweisungsvervollständigung
+ Im Kern-Editor wird aktiviert, Anweisungsvervollständigung eine spezielle Benutzeroberfläche, die interaktiv hilft Ihnen, noch einfacher und schnell Code zu schreiben. Anweisungsvervollständigung hilft mit relevanten Objekte oder Klassen, wenn sie benötigt werden, wodurch Sie bestimmte Elemente daran erinnern zu müssen, oder müssen in einem Hilfethema für den Verweis nachgeschlagen werden vermieden werden.
+
+ Um Anweisungsvervollständigung zu implementieren, müssen Ihre Sprache einen Trigger für die Buildfertigstellung Anweisung analysiert werden kann. Z. B. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] verwendet einen Operator Punkt (.), während [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] verwendet einen Pfeil (->)-Operator. Ein Sprachdienst kann mehr als ein Trigger verwenden, um Anweisungsvervollständigung initiieren zu können. Diese Trigger werden im Befehlsfilter so programmiert.
+
+## <a name="command-filters-and-triggers"></a>-Befehlsfilter und Trigger
+ Befehl Filter fangen Vorkommen der Auslöser oder Trigger. Um die Ansicht der Befehlsfilter hinzuzufügen, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, und fügen Sie es an die Ansicht durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode. Sie können den gleichen Befehlsfilter (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) für alle Aspekte des Sprachdiensts, wie Anweisungsvervollständigung, fehlermarker und methodentipps. Weitere Informationen finden Sie unter [Befehlen von Legacysprachdiensten abfangen](../../extensibility/internals/intercepting-legacy-language-service-commands.md).
+
+ Wenn der Trigger im Editor eingegeben wird – insbesondere den Textpuffer, der Sprachdienst ruft dann die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode. Dies bewirkt, dass den Editor in der Benutzeroberfläche anzuzeigen, damit der Benutzer die Anweisung Abschluss Kandidaten auswählen kann. Diese Methode müssen Sie implementieren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> und <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> Flags, die als Parameter. In einem Listenfeld Scrollen wird die Liste der Vervollständigungselemente angezeigt. Wie der Benutzer eingeben weiterhin, wird die Auswahl innerhalb des Listenfelds aktualisiert, um widerzuspiegeln, dass die bestmögliche Übereinstimmung auf die letzten Zeichen eingegeben. Der Kern-Editor implementiert, die Benutzeroberfläche für die Anweisungsvervollständigung, jedoch muss der Sprachdienst implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> Schnittstelle, um einen Satz von kandidatenelemente als Abschluss für die Anweisung zu definieren.
+
+## <a name="see-also"></a>Siehe auch
+- [Abfangen von Befehlen von Legacysprachdiensten](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

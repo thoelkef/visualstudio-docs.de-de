@@ -1,33 +1,29 @@
 ---
 title: Erste Schritte beim Entwickeln | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b9e2f3bf3525977689bcc5bbf917722da76ea9e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 957e1d771723578b425e4eafbb2aa7c912b230e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805351"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/community) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.
 
--   **[Stellen Sie Web-apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.
+-   **[Erstellen von Web-Apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.
 
      [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](http://www.asp.net/vnext)
 
@@ -43,19 +39,19 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
      [Beispiel laden](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Tutorial durchlaufen](https://msdn.microsoft.com/library/dn707595.aspx) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/library/dn707591.aspx) &#124;                                [Video ansehen](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
--   **[Erstellen von Spielen mit DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**  : Erste Schritte mit DirectX Spiele für die universelle Windows-Plattform erstellen.
+-   **[Erstellen von Spielen mit DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: Erstellen Sie mit DirectX Spiele für die universelle Windows-Plattform.
 
      [Beispiel laden](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124;                    [Tutorial durchlaufen](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124;                                [Dokumentation durchsuchen](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124;                                   [Video ansehen](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
--   **[Erstellen von Spielen mit Unity](../cross-platform/visual-studio-tools-for-unity.md)**  : Mit dem Erstellen plattformübergreifender Spiele mit Unity-Framework.
+-   **[Erstellen von Spielen mit Unity](../cross-platform/visual-studio-tools-for-unity.md)**: Erstellen Sie plattformübergreifende Spiele mit dem Unity-Framework.
 
      [Beispiel laden](http://unity3d.com/learn/resources/downloads) &#124;                     [Tutorial durchlaufen](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [Video ansehen](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
--   **[Stellen Sie die universelle Windows Plattform-apps](https://dev.windows.com/windows-apps)**  : Mit dem Erstellen von apps, die für die universelle Windows-Plattform (XBox, PCs, Tablets, Windows Phone, Surface Hub und Internet der Dinge) ausgeführt.
+-   **[Erstellen von Apps für die universelle Windows-Plattform](https://dev.windows.com/windows-apps)** : Erstellen Sie Apps für die universelle Windows-Plattform (XBox, PCs, Tablets, Windows Phone, Surface Hub und Internet der Dinge).
 
      [Beispiel laden](https://github.com/Microsoft/Windows-universal-samples) &#124;                          [Tutorial durchlaufen](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124;                                [Dokumentation durchsuchen](https://dev.windows.com) &#124;     [Video ansehen](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
--   **[Erstellen von desktopanwendungen](https://dev.windows.com/desktop)**  : Finden Sie hier, um zu beginnen, erstellen herkömmliche desktopanwendungen, die auf Windows-PCs ausgeführt.
+-   **[Erstellen von Desktopanwendungen](https://dev.windows.com/desktop)** : Erstellen Sie herkömmliche Desktopanwendungen für Windows-PCs.
 
      [Beispiel laden](https://github.com/microsoft/windows-classic-samples) &#124;                     [Tutorial durchlaufen](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [Dokumentation durchsuchen](https://dev.windows.com/desktop)
 

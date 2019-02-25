@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800763"
 ---
 # <a name="securing-applications"></a>Sichern von Anwendungen
@@ -57,7 +57,7 @@ Während bei den meisten Anwendungen die Sicherheitsprobleme gleich sind, bringt
  [Sicherheitsüberlegungen zu JScript](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  Enthält Erläuterungen zu einigen Sicherheitsproblemen, mit denen JScript-Programmierer möglicherweise konfrontiert werden.  
   
- [Vorgehensweise: Verwenden von Transportsicherheit](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Vorgehensweise: HTTP-Transportsicherheit](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Beschreibt, wie Transportsicherheit zur Authentifizierung verwendet wird, wenn Sie eine Verbindung mit einem WCF-Dienst herstellen.  
   
 ## <a name="securing-desktop-applications"></a>Sichern von Desktopanwendungen  

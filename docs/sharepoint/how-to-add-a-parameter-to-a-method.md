@@ -17,45 +17,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d55c345d9cd0e57d7af2ed359cf4bd9a4f06cd9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1bec6daa92d4e5b58b97c47a45fa32c410aced5a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868117"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619952"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Vorgehensweise: Fügen Sie einen Parameter einer Methode
-  Verwenden Sie einen Parameter aus, um Informationen an die Methode übergeben oder Informationen aus einer Methode zurückgegeben werden sollen. Alle Methoden müssen über mindestens einen Parameter haben. Weitere Informationen zum Entwerfen eines Parameters, den Typ der Methode zu unterstützen, die Sie erstellen möchten, finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
- Wenn Sie einen Parameter an eine Methode hinzufügen, fügt Visual Studio Parameter-Element, auf das XML-Datei des Modells in Ihrem Projekt. Weitere Informationen zu den Attributen eines Parameter-Elements finden Sie unter [Parameter](http://go.microsoft.com/fwlink/?LinkId=169284).  
-  
-### <a name="to-add-a-parameter-to-a-method"></a>So fügen Sie einer Methode einen Parameter hinzu  
-  
-1.  Fügen Sie eine Methode mit einer Entität.  
-  
-2.  Wählen Sie auf der Menüleiste **Ansicht** > **Other Windows** > **BDC-Methodendetails**.  
-  
-     Die **BDC-Methodendetails** Fenster wird geöffnet. Weitere Informationen finden Sie unter [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md).  
-  
-3.  In der **BDC-Methodendetails** , erweitern Sie den Knoten der Methode, und erweitern Sie dann die **Parameter** Knoten.  
-  
-4.  In der **Hinzufügen eines Parameters** wählen **Parameter erstellen**.  
-  
-     Ein neuer Parameter angezeigt wird, unter dem **Parameter** Knoten.  
-  
-5.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.  
-  
-6.  In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen beliebigen Namen, die sinnvoll ist. Z. B. wenn die Methode Kunden zurückgibt, Sie können benennen Sie die Methode **GetCustomers**.  
-  
-7.  In der **BDC-Methodendetails** , öffnen Sie die Liste, die für die Richtung des Parameters angezeigt wird, und wählen Sie dann **In**, **InOut**, **Out**, oder **zurückgeben**.  
-  
-     Weitere Informationen über die Richtung, wählen Sie für die Typmethode, die Sie erstellen, finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-8.  Ändern Sie den Typdeskriptor des Parameters an. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
-  
+  Verwenden Sie einen Parameter aus, um Informationen an die Methode übergeben oder Informationen aus einer Methode zurückgegeben werden sollen. Alle Methoden müssen über mindestens einen Parameter haben. Weitere Informationen zum Entwerfen eines Parameters, den Typ der Methode zu unterstützen, die Sie erstellen möchten, finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+ Wenn Sie einen Parameter an eine Methode hinzufügen, fügt Visual Studio Parameter-Element, auf das XML-Datei des Modells in Ihrem Projekt. Weitere Informationen zu den Attributen eines Parameter-Elements finden Sie unter [Parameter](http://go.microsoft.com/fwlink/?LinkId=169284).
+
+### <a name="to-add-a-parameter-to-a-method"></a>So fügen Sie einer Methode einen Parameter hinzu
+
+1.  Fügen Sie eine Methode mit einer Entität.
+
+2.  Wählen Sie auf der Menüleiste **Ansicht** > **Other Windows** > **BDC-Methodendetails**.
+
+     Die **BDC-Methodendetails** Fenster wird geöffnet. Weitere Informationen finden Sie unter [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md).
+
+3.  In der **BDC-Methodendetails** , erweitern Sie den Knoten der Methode, und erweitern Sie dann die **Parameter** Knoten.
+
+4.  In der **Hinzufügen eines Parameters** wählen **Parameter erstellen**.
+
+     Ein neuer Parameter angezeigt wird, unter dem **Parameter** Knoten.
+
+5.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+
+6.  In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen beliebigen Namen, die sinnvoll ist. Z. B. wenn die Methode Kunden zurückgibt, Sie können benennen Sie die Methode **GetCustomers**.
+
+7.  In der **BDC-Methodendetails** , öffnen Sie die Liste, die für die Richtung des Parameters angezeigt wird, und wählen Sie dann **In**, **InOut**, **Out**, oder **zurückgeben**.
+
+     Weitere Informationen über die Richtung, wählen Sie für die Typmethode, die Sie erstellen, finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+8.  Ändern Sie den Typdeskriptor des Parameters an. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+
 ## <a name="see-also"></a>Siehe auch
- [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)   
- [Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Vorgehensweise: Definieren des Typdeskriptors für einen parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)   
- [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)  
+- [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)
+- [Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Vorgehensweise: Definieren des Typdeskriptors für einen parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)
+- [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)

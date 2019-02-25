@@ -15,46 +15,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94652358e18b18255a92444672cc59528cb0b2e2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866490"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638529"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten
-  Die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht Ihnen, einen Bereich in einem Arbeitsblatt automatisch mit Werten zu füllen. In den meisten Fällen die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode wird verwendet, um schrittweise erhöhen oder verringern die Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- Sie müssen zwei Bereiche angeben, bei Verwendung <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:  
-  
--   Der Bereich, der die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> -Methode, die gibt den Ausgangspunkt der Füllung und einen Anfangswert enthält.  
-  
--   Der Bereich, die Sie füllen möchten, übergeben wird, als Parameter an die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode. Dieser Zielbereich muss es sich um den Bereich enthalten, der den ursprünglichen Wert enthält.  
-  
-    > [!NOTE]  
-    >  Sie können keine übergeben eine <xref:Microsoft.Office.Tools.Excel.NamedRange> steuern anstelle von der <xref:Microsoft.Office.Interop.Excel.Range>. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
-  
-## <a name="example"></a>Beispiel  
+  Die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht Ihnen, einen Bereich in einem Arbeitsblatt automatisch mit Werten zu füllen. In den meisten Fällen die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode wird verwendet, um schrittweise erhöhen oder verringern die Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ Sie müssen zwei Bereiche angeben, bei Verwendung <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+
+-   Der Bereich, der die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> -Methode, die gibt den Ausgangspunkt der Füllung und einen Anfangswert enthält.
+
+-   Der Bereich, die Sie füllen möchten, übergeben wird, als Parameter an die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode. Dieser Zielbereich muss es sich um den Bereich enthalten, der den ursprünglichen Wert enthält.
+
+    > [!NOTE]
+    >  Sie können keine übergeben eine <xref:Microsoft.Office.Tools.Excel.NamedRange> steuern anstelle von der <xref:Microsoft.Office.Interop.Excel.Range>. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+
+## <a name="example"></a>Beispiel
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]  
-  
-## <a name="compile-the-code"></a>Kompilieren des Codes  
- Die erste Zelle des Bereichs, die zu füllende muss es sich um einen anfänglichen Wert enthalten.  
-  
- Das Beispiel erfordert, dass Sie drei Regionen ausfüllen:  
-  
--   Spalte B ist auf fünf Werktage enthalten. Geben Sie für den ersten Wert **Montag** in Zelle B1.  
-  
--   Spalte C werden fünf Monate enthalten. Geben Sie für den ersten Wert **Januar** in Zelle C1.  
-  
--   D-Spalte ist eine Reihe von Zahlen, besitzt eine Schrittweite von zwei für jede Zeile enthalten. Geben Sie für die Anfangswerte **4** in Zelle D1 und **6** in Zelle D2.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Vorgehensweise: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)   
- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+ [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+
+## <a name="compile-the-code"></a>Kompilieren des Codes
+ Die erste Zelle des Bereichs, die zu füllende muss es sich um einen anfänglichen Wert enthalten.
+
+ Das Beispiel erfordert, dass Sie drei Regionen ausfüllen:
+
+-   Spalte B ist auf fünf Werktage enthalten. Geben Sie für den ersten Wert **Montag** in Zelle B1.
+
+-   Spalte C werden fünf Monate enthalten. Geben Sie für den ersten Wert **Januar** in Zelle C1.
+
+-   D-Spalte ist eine Reihe von Zahlen, besitzt eine Schrittweite von zwei für jede Zeile enthalten. Geben Sie für die Anfangswerte **4** in Zelle D1 und **6** in Zelle D2.
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
+- [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Vorgehensweise: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

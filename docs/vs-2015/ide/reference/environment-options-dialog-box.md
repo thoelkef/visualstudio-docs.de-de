@@ -1,14 +1,9 @@
 ---
 title: Dialogfeld „Umgebungsoptionen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
@@ -16,13 +11,13 @@ ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753306"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "49257672"
 Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.  
   
 > [!NOTE]
->  Die auf Ihrem Computer angezeigten Dialogfelder und Menübefehle können sich abhängig von den aktiven Einstellungen und Ihrer Edition von Visual Studio von den Dialogfeldern und Menübefehlen unterscheiden, die in der Hilfe beschrieben sind. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die auf Ihrem Computer angezeigten Dialogfelder und Menübefehle können sich abhängig von den aktiven Einstellungen und Ihrer Edition von Visual Studio von den Dialogfeldern und Menübefehlen unterscheiden, die in der Hilfe beschrieben sind. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Vorgehensweise|Siehe|  
 |----------------------------------|---------|  
 |Anpassen der Darstellung und des Verhaltens von Fenstern, Menüs und anderen IDE-Elementen|[Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Festlegen der Sicherheitseinstellungen für Add-Ins|[Add-in-Sicherheit, Umgebung, Abonnementoptionen](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Festlegen der Sicherheitseinstellungen für Add-Ins|[Add-In-Sicherheit, Umgebung, Dialogfeld „Optionen“](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Ändern der Einstellungen für das automatische Speichern und Wiederherstellen von Dateien|[AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Festlegen der Anzeige von Dokumenten und Verwaltungseinstellungen, z. B. das Verhalten von Sonstige Dateien|[Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Legen Sie fest, wie Updates auftreten und Erweiterungen verwaltet werden.|[Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  
@@ -54,6 +49,3 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
   
 ## <a name="see-also"></a>Siehe auch  
  [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)
-
-
-

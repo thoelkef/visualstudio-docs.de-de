@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831549"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921431"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 
@@ -40,7 +39,7 @@ Sie können konfigurieren, Just-In-Time-Debuggen von Visual Studio **Tools** > *
 
    ![Aktivieren oder Deaktivieren der JIT-Debuggen](../debugger/media/dbg-jit-enable-or-disable.png "aktivieren oder Deaktivieren der JIT-Debuggen")
 
-1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **Verwaltete**, **Native**, und/oder **Skript**.
+1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **verwaltete**, **Native**, und/oder  **Skript**.
    
 1. Klicken Sie auf **OK**.
 
@@ -56,7 +55,7 @@ Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual
 
 2.  In der **Registrierungs-Editor** Fenster Suchen und löschen Sie die folgenden Registrierungseinträge:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +63,7 @@ Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual
 
 3.  Wenn Ihr Computer eine 64-Bit-Betriebssystem ausgeführt wird, können auch löschen Sie die folgenden Registrierungseinträge:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
 
 In diesem Beispiel erstellen Sie eine C# Konsolen-app in Visual Studio, das löst eine ["NullReferenceException"](/dotnet/api/system.nullreferenceexception).
 
-1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Create a simple application with C# or Visual Basic (Tutorial: Erstellen einer einfachen Anwendung mit C# oder Visual Basic)](/visualstudio/get-started/csharp/tutorial-wpf)
+1. Erstellen Sie in Visual Studio eine C# Konsolen-app (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Konsolenanwendung**) mit dem Namen *ThrowsNullException*. Weitere Informationen zum Erstellen von Projekten in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Wenn Sie das Projekt in Visual Studio geöffnet wird, öffnen Sie die *"Program.cs"* Datei. Ersetzen der Main()-Methode durch den folgenden Code, der gibt eine Zeile an die Konsole, und klicken Sie dann eine NullReferenceException:
    
@@ -157,7 +156,7 @@ Wenn Just-in-Time-Debuggen nicht gestartet, wenn eine app abstürzt, auch wenn e
   
   
 
-  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows-Fehlerberichterstattung**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
     
   - (Für 64-Bit-Computer): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows-Fehlerberichterstattung**
   
@@ -193,6 +192,7 @@ Sie können die folgenden Fehlermeldungen angezeigt, während der Just-in-Time-D
     Um dieses Problem zu beheben, verwenden Sie Visual Studio-Installer, um eine Neuinstallation oder Reparatur von Visual Studio-Installation.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Optionen, Debugging, Just-In-Time-Dialogfeld](../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -1,14 +1,9 @@
 ---
 title: Administratorhandbuch für Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722824"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834876"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation für Visual Studio 2017 finden Sie unter den [Administratorhandbuch für Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer erfüllt die [minimalen Installationsanforderungen](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit dem Schalter ausführen (wie beschrieben die [Erstellen einer Offlineinstallation von Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) Seite), und klicken Sie dann auf die Netzwerkfreigabe aus dem lokalen Computer kopiert wird. Wenn Sie ein ISO-Image verwenden, können Sie das ISO-Image bereitstellen und freigeben oder der ISO-Datei in eine Netzwerkfreigabe kopieren.  
+Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer erfüllt die [minimalen Installationsanforderungen](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit der Option „/layout“ ausführen (wie auf der Seite [Erstellen einer Offlineinstallation von Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) beschrieben) und sie dann vom lokalen Computer auf die Netzwerkfreigabe kopieren. Wenn Sie ein ISO-Image verwenden, können Sie das ISO-Image bereitstellen und freigeben oder der ISO-Datei in eine Netzwerkfreigabe kopieren.  
   
  Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort "merken". Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio 2015-Clients in Ihrer Organisation entspricht.  
   
@@ -59,7 +54,7 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
 ## <a name="controlling-what-is-installed"></a>Steuern der installierten Elemente  
  Wenn Sie steuern möchten, welche Elemente Ihre Endbenutzer installieren können, haben Sie zwei Optionen: die Installation über die Administratordatei und die Befehlszeilenoptionen. Wählen Sie die Installation über die Administratordatei, wenn Sie beschränken möchten, welche Elemente Ihre Endbenutzer bei der Visual Studio-Installation auswählen können. Wählen Sie die Befehlszeilenparameter aus, wenn Sie eine anfängliche Konfiguration erstellen, aber Ihren Endbenutzern erlauben möchten, die Optionen für die Visual Studio-Installation selbst festzulegen.  
   
- Weitere Informationen zur Funktion der Administratordatei finden Sie unter [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
+ Weitere Informationen zu der administratordatei finden finden Sie unter [Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen  
  Standardmäßig ermöglicht die Visual Studio-Installation Kundenfeedback. Sie können Visual Studio so konfigurieren, dass Kundenfeedback auf einzelnen Computern deaktiviert wird. Ändern Sie dazu den Wert des folgenden Registrierungsschlüssels in die Zeichenfolge „0“.  
@@ -73,8 +68,8 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Gewusst wie: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie Sie bestimmte Konfigurationen für die aktuelle Version von installieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Beschreibt, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus.|  
+|[Vorgehensweise: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie Sie bestimmte Konfigurationen für die aktuelle Version von installieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Beschreibt, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus.|  
 |[Gewusst wie: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Beschreibt, wie Produktschlüssel anwenden, wenn Sie auf mehreren Computern bereitstellen.|  
 |[Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)|Enthält Informationen dazu, wie Sie die lokale Hilfe Installationen netzwerkumgebungen zu verwalten, die oder haben keinen Zugriff auf das Internet.|  
 |[Installieren von Visual Studio](../install/install-visual-studio-2015.md)|Enthält Anweisungen und Links zu Themen, die beschreiben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

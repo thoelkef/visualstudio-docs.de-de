@@ -10,73 +10,73 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a8814ebf769ba76fe7c1dc6646248a088bc17f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982558"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687535"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
-Es gibt eine Reihe von Möglichkeiten, um die Anwendung zu ermitteln, die eine Datei behandelt, die eine bestimmte Dateierweiterung hat. Die Verben OpenWithList und OpenWithProgids werden zwei Möglichkeiten zum Angeben von dateihandlern unter dem Registrierungseintrag für die Dateierweiterung.  
-  
-## <a name="openwithlist-verb"></a>OpenWithList Verb  
- Wenn Sie eine Datei im Windows-Explorer mit der rechten Maustaste, sehen Sie die **öffnen** Befehl. Wenn mehr als ein Produkt mit der Erweiterung zugeordnet ist, sehen Sie ein **Öffnen mit** Untermenü.  
-  
- Sie können verschiedene Anwendungen, öffnen Sie eine Erweiterung durch Festlegen des OpenWithList-Schlüssels für die Dateierweiterung in HKEY_CLASSES_ROOT registrieren. Die Anwendungen, die unter diesem Schlüssel für eine Dateierweiterung aufgeführt werden, unter der **Empfohlene Programme** Überschrift in der **Öffnen mit** Dialogfeld. Das folgende Beispiel zeigt die Anwendungen, die zum Öffnen der VCPROJ-Dateierweiterung registriert.  
-  
-```  
-HKEY_CLASSES_ROOT\  
-   .vcproj\  
-      (default)="VisualStudio.vcproj.14.0"  
-      OpenWithList\  
-         devenv.exe  
-```  
-  
+Es gibt eine Reihe von Möglichkeiten, um die Anwendung zu ermitteln, die eine Datei behandelt, die eine bestimmte Dateierweiterung hat. Die Verben OpenWithList und OpenWithProgids werden zwei Möglichkeiten zum Angeben von dateihandlern unter dem Registrierungseintrag für die Dateierweiterung.
+
+## <a name="openwithlist-verb"></a>OpenWithList Verb
+ Wenn Sie eine Datei im Windows-Explorer mit der rechten Maustaste, sehen Sie die **öffnen** Befehl. Wenn mehr als ein Produkt mit der Erweiterung zugeordnet ist, sehen Sie ein **Öffnen mit** Untermenü.
+
+ Sie können verschiedene Anwendungen, öffnen Sie eine Erweiterung durch Festlegen des OpenWithList-Schlüssels für die Dateierweiterung in HKEY_CLASSES_ROOT registrieren. Die Anwendungen, die unter diesem Schlüssel für eine Dateierweiterung aufgeführt werden, unter der **Empfohlene Programme** Überschrift in der **Öffnen mit** Dialogfeld. Das folgende Beispiel zeigt die Anwendungen, die zum Öffnen der VCPROJ-Dateierweiterung registriert.
+
+```
+HKEY_CLASSES_ROOT\
+   .vcproj\
+      (default)="VisualStudio.vcproj.14.0"
+      OpenWithList\
+         devenv.exe
+```
+
 > [!NOTE]
->  Angeben von Anwendungen bei Schlüsseln wird aus der Liste unter HKEY_CLASSES_ROOT\Applications.  
-  
- Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung Eigentümer der Erweiterung wird. Dies kann einer zukünftigen Version Ihrer Anwendung oder eine andere Anwendung sein.  
-  
-## <a name="openwithprogids"></a>OpenWithProgIDs  
- Den programmatischen Bezeichner (ProgIDs) gibt die Anzeigenamen Versionen ClassIDs, die eine Version einer Anwendung oder COM-Objekt zu identifizieren. Alle gemeinsam erstellbares Objekt muss es sich um eine eigene ProgID sein. VisualStudio.DTE.7.1 startet z. B. Visual Studio .NET 2003, während VisualStudio.DTE.10.0 startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Als Besitzer eines Projekttyps oder Projektelementtyp müssen Sie eine bestimmte Version ProgID für die Dateierweiterung erstellen. Diese ProgIDs möglicherweise redundant sein, da mehr als eine ProgID die gleiche Anwendung starten kann. Weitere Informationen finden Sie unter [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).  
-  
- Verwenden Sie die folgende Benennungskonvention für eine Datei mit versionsabhängige Programm-IDs, um bei der Registrierung von anderen Anbietern tragen:  
-  
-|Dateierweiterung|Mit versionsverwaltung durch das Programm-ID|  
-|--------------------|----------------------|  
-|.Extension|ProductName. extension.versionMajor.versionMinor|  
-  
- Sie können verschiedene Anwendungen, die auf eine bestimmte Dateierweiterung zu öffnen, indem Sie mit versionsverwaltung durch das Programm-IDs als Werte hinzufügen, in der HKEY_CLASSES_ROOT können registrieren\\*\<Erweiterung >* \OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateinamenerweiterung verknüpft ist. Die Anwendungen, die die aufgelisteten versionsabhängige Programm-IDs zugeordnet werden im der **Öffnen mit**_Produktname_ Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.  
-  
+>  Angeben von Anwendungen bei Schlüsseln wird aus der Liste unter HKEY_CLASSES_ROOT\Applications.
+
+ Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung Eigentümer der Erweiterung wird. Dies kann einer zukünftigen Version Ihrer Anwendung oder eine andere Anwendung sein.
+
+## <a name="openwithprogids"></a>OpenWithProgIDs
+ Den programmatischen Bezeichner (ProgIDs) gibt die Anzeigenamen Versionen ClassIDs, die eine Version einer Anwendung oder COM-Objekt zu identifizieren. Alle gemeinsam erstellbares Objekt muss es sich um eine eigene ProgID sein. VisualStudio.DTE.7.1 startet z. B. Visual Studio .NET 2003, während VisualStudio.DTE.10.0 startet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Als Besitzer eines Projekttyps oder Projektelementtyp müssen Sie eine bestimmte Version ProgID für die Dateierweiterung erstellen. Diese ProgIDs möglicherweise redundant sein, da mehr als eine ProgID die gleiche Anwendung starten kann. Weitere Informationen finden Sie unter [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).
+
+ Verwenden Sie die folgende Benennungskonvention für eine Datei mit versionsabhängige Programm-IDs, um bei der Registrierung von anderen Anbietern tragen:
+
+|Dateierweiterung|Mit versionsverwaltung durch das Programm-ID|
+|--------------------|----------------------|
+|.Extension|ProductName. extension.versionMajor.versionMinor|
+
+ Sie können verschiedene Anwendungen, die auf eine bestimmte Dateierweiterung zu öffnen, indem Sie mit versionsverwaltung durch das Programm-IDs als Werte hinzufügen, in der HKEY_CLASSES_ROOT können registrieren\\*\<Erweiterung >* \OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateinamenerweiterung verknüpft ist. Die Anwendungen, die die aufgelisteten versionsabhängige Programm-IDs zugeordnet werden im der **Öffnen mit**_Produktname_ Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.
+
 > [!NOTE]
->  Die `OpenWithProgids` Schlüssel wird nur in Windows XP unterstützt. Da andere Betriebssysteme diesem Schlüssel ignorieren möchten, nicht verwenden Sie sie als die einzige Registrierung für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP bereitzustellen.  
-  
- Fügen Sie das gewünschte Programm-IDs als Werte des Typs REG_NONE hinzu. Der folgende Code bietet ein Beispiel für das Registrieren von Programm-IDs für eine Dateierweiterung (. *Ext*).  
-  
-```  
-HKEY_CLASSES_ROOT\  
-   .ext\  
-      (default)="MyProduct.ext.14.0"  
-      OpenWithProgids  
-         progid        REG_NONE (zero-length binary value)  
-         otherprogid   REG_NONE (zero-length binary value)  
-```  
-  
- Die ProgID angegeben, wie der Standardwert für die Dateierweiterung der Standardhandler für die Datei ist. Wenn Sie die ProgID für eine Erweiterung ändern, die mit einer früheren Version von geliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder, die von anderen Anwendungen erstellt werden können, und Sie müssen sich registrieren der `OpenWithProgids` Schlüssel für die Dateierweiterung aus, und geben Sie die neue ProgID in der Liste zusammen mit der alte versionsabhängige Programm-IDs, die Sie unterstützen. Zum Beispiel:  
-  
-```  
-HKEY_CLASSES_ROOT\  
-   .vcproj\  
-      (default)="VisualStudio.vcproj.14.0"  
-      OpenWithProgids  
-         vcprojfile              //old progid  
-         VisualStudio.vcproj.12.0 //old progid  
-         VisualStudio.vcproj.14.0 //new progid  
-```  
-  
- Wenn die alte ProgID Verben zugeordnet, diese Verben werden auch angezeigt, unter **Öffnen mit** *Produktname* im Kontextmenü die Option.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md)   
- [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)
+>  Die `OpenWithProgids` Schlüssel wird nur in Windows XP unterstützt. Da andere Betriebssysteme diesem Schlüssel ignorieren möchten, nicht verwenden Sie sie als die einzige Registrierung für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP bereitzustellen.
+
+ Fügen Sie das gewünschte Programm-IDs als Werte des Typs REG_NONE hinzu. Der folgende Code bietet ein Beispiel für das Registrieren von Programm-IDs für eine Dateierweiterung (. *Ext*).
+
+```
+HKEY_CLASSES_ROOT\
+   .ext\
+      (default)="MyProduct.ext.14.0"
+      OpenWithProgids
+         progid        REG_NONE (zero-length binary value)
+         otherprogid   REG_NONE (zero-length binary value)
+```
+
+ Die ProgID angegeben, wie der Standardwert für die Dateierweiterung der Standardhandler für die Datei ist. Wenn Sie die ProgID für eine Erweiterung ändern, die mit einer früheren Version von geliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder, die von anderen Anwendungen erstellt werden können, und Sie müssen sich registrieren der `OpenWithProgids` Schlüssel für die Dateierweiterung aus, und geben Sie die neue ProgID in der Liste zusammen mit der alte versionsabhängige Programm-IDs, die Sie unterstützen. Zum Beispiel:
+
+```
+HKEY_CLASSES_ROOT\
+   .vcproj\
+      (default)="VisualStudio.vcproj.14.0"
+      OpenWithProgids
+         vcprojfile              //old progid
+         VisualStudio.vcproj.12.0 //old progid
+         VisualStudio.vcproj.14.0 //new progid
+```
+
+ Wenn die alte ProgID Verben zugeordnet, diese Verben werden auch angezeigt, unter **Öffnen mit** *Produktname* im Kontextmenü die Option.
+
+## <a name="see-also"></a>Siehe auch
+- [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md)
+- [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)

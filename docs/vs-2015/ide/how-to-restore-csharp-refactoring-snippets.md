@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Wiederherstellen von c#-Refactoringausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Wiederherstellen C# Refactoringausschnitten | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unsafe expansion
 - expansions, unsafe
@@ -16,13 +11,13 @@ ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227878"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782595"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Gewusst wie: Wiederherstellen von C#-Refactoringausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ C#-Refactoringvorgänge beruhen auf Codeausschnitten im folgenden Verzeichnis:
  [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)   
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)   
  [Codeausschnitte](../ide/code-snippets.md)
-
-
-

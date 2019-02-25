@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970551"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705530"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die Entwicklung von VSPackages
 
-Visual Studio können Entwickler über die Befehlszeile automatisieren Ausführung `devenv.exe`, die Datei, die Visual Studio-IDE wird gestartet.  
+Visual Studio können Entwickler über die Befehlszeile automatisieren Ausführung `devenv.exe`, die Datei, die Visual Studio-IDE wird gestartet.
 
- Tasks gehört Folgendes:  
+ Tasks gehört Folgendes:
 
-- Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.  
+- Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.
 
-- Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.  
+- Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.
 
-- Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Sie können auch die IDE beim Start anpassen.  
+- Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Sie können auch die IDE beim Start anpassen.
 
 ## <a name="guidelines-for-switches"></a>Richtlinien für switches
 
-Visual Studio-Dokumentation beschreibt die Benutzerebene `devenv` Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Die `devenv` Tool unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen hilfreich sind.  
+Visual Studio-Dokumentation beschreibt die Benutzerebene `devenv` Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Die `devenv` Tool unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen hilfreich sind.
 
 | Befehlszeilenschalter | Beschreibung |
 |---------------------| - |

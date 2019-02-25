@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
@@ -11,76 +11,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3f38290d382e8259090ee99214b8199812091a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006953"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708224"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Bestimmt, ob die angegebenen benutzerdefinierten Attributs definiert ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT IsCustomAttributeDefined(  
-   LPCOLESTR pszCustomAttributeName  
-);  
-```  
-  
-```csharp  
-int IsCustomAttributeDefined(  
-   string pszCustomAttributeName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pszCustomAttributeName`  
- [in] Der Name des benutzerdefinierten Attributs.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, wenn das benutzerdefinierte Attribut definiert ist, `S_OK`ist, andernfalls gibt `S_FALSE`.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugClassFieldSymbol** -Objekt, das macht die [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) Schnittstelle.  
-  
-```cpp  
-HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
-    LPCOLESTR pszCustomAttribute  
-)  
-{  
-    HRESULT hr = S_FALSE;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    mdToken token = mdTokenNil;  
-    CComPtr<IDebugField> pField;  
-    CComPtr<IDebugCustomAttributeQuery> pCA;  
-  
-    ASSERT(IsValidWideStringPtr(pszCustomAttribute));  
-  
-    METHOD_ENTRY( CDebugClassFieldSymbol::IsCustomAttributeDefined );  
-  
-    IfFalseGo( pszCustomAttribute, E_INVALIDARG );  
-  
-    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );  
-  
-    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );  
-    IfFailGo( pMetadata->GetCustomAttributeByName( token,  
-              pszCustomAttribute,  
-              NULL,  
-              NULL ) );  
-Error:  
-  
-    METHOD_EXIT( CDebugClassFieldSymbol::IsCustomAttributeDefined, hr );  
-  
-    if (hr != S_OK)  
-    {  
-        hr = S_FALSE;  
-    }  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+Bestimmt, ob die angegebenen benutzerdefinierten Attributs definiert ist.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT IsCustomAttributeDefined(
+    LPCOLESTR pszCustomAttributeName
+);
+```
+
+```csharp
+int IsCustomAttributeDefined(
+    string pszCustomAttributeName
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`pszCustomAttributeName`
+
+ [in] Der Name des benutzerdefinierten Attributs.
+
+## <a name="return-value"></a>Rückgabewert
+Gibt zurück, wenn das benutzerdefinierte Attribut definiert ist, `S_OK`ist, andernfalls gibt `S_FALSE`.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugClassFieldSymbol** -Objekt, das macht die [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) Schnittstelle.
+
+```cpp
+HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(
+    LPCOLESTR pszCustomAttribute
+)
+{
+    HRESULT hr = S_FALSE;
+    CComPtr<IMetaDataImport> pMetadata;
+    mdToken token = mdTokenNil;
+    CComPtr<IDebugField> pField;
+    CComPtr<IDebugCustomAttributeQuery> pCA;
+
+    ASSERT(IsValidWideStringPtr(pszCustomAttribute));
+
+    METHOD_ENTRY( CDebugClassFieldSymbol::IsCustomAttributeDefined );
+
+    IfFalseGo( pszCustomAttribute, E_INVALIDARG );
+
+    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );
+
+    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );
+    IfFailGo( pMetadata->GetCustomAttributeByName( token,
+              pszCustomAttribute,
+              NULL,
+              NULL ) );
+Error:
+
+    METHOD_EXIT( CDebugClassFieldSymbol::IsCustomAttributeDefined, hr );
+
+    if (hr != S_OK)
+    {
+        hr = S_FALSE;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7986a05ed090141734948404cb8580633c50e74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940679"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004356"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:  
@@ -77,13 +77,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 3. Bei der ersten Änderung von `output` werden Werte in den Member `worldPos` geschrieben.  
   
-    ![Der Wert von "output.worldPos" erscheint angemessen](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    ![Der Wert von „output.worldPos“ erscheint angemessen](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
     Da diese Werte sinnvoll aussehen, durchlaufen Sie den Code weiter bis zur nächsten Zeile, in der `output`geändert wird.  
   
 4. Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.  
   
-    ![Der Wert von "output.pos" wurde auf NULL wurde, gesetzt werden](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    ![Der Wert von „output.pos“ wurde gelöscht.](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
     Die Werte des `pos` -Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.  
   

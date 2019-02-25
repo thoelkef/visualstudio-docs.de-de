@@ -1,7 +1,7 @@
 ---
 title: IEEDataStorage | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEDataStorage
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc409f455d93b84b12b9630a5f72f8e82a752d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eeb34d9574a6070b2d1f658575d345d74aa72972
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930971"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704032"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
-Diese Schnittstelle stellt ein Array von Bytes.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IEEDataStorage : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die ausdrucksauswertung (EE) implementiert diese Schnittstelle, um ein Array von Bytes darstellen (von Typ-Schnellansichten verwendet werden, abrufen und Ändern von Daten über die [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstelle). Die EE wird in der Regel implementiert diese Schnittstelle, um externen Typ-Schnellansichten unterstützen.  
-  
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die Methoden für die `IPropertyProxyEESide` Schnittstelle, die alle zurückzugeben, diese Schnittstelle. Rufen Sie [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) zum Abrufen der [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstelle. Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf eine [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle zum Abrufen der [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) Schnittstelle.  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die `IEEDataStorage` -Schnittstelle implementiert die folgenden Methoden:  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Ruft die angegebene Anzahl von Datenbytes in einen angegebenen Puffer ab.|  
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Ruft die Anzahl der Datenbytes, die zur Verfügung.|  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird durch eine typschnellansicht verwendet, den Zugriff auf Daten, die ein bestimmtes Objekt frei. Die Daten werden behandelt, als ein Array von Bytes, sodass der typschnellansicht, und bearbeiten sie mithilfe von bibliotheksgruppen erforderlich, um es dem Benutzer angezeigt wird.  
-  
- Ein benutzerdefinierter Viewer kann diese Schnittstelle auch verwenden, falls gewünscht, zwar in der Regel eher, ein benutzerdefinierter Viewer eine benutzerdefinierte Schnittstelle, verwenden [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) oder [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (für Zeichenfolge-orientierte Daten).  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+Diese Schnittstelle stellt ein Array von Bytes.
+
+## <a name="syntax"></a>Syntax
+
+```
+IEEDataStorage : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer
+ Die ausdrucksauswertung (EE) implementiert diese Schnittstelle, um ein Array von Bytes darstellen (von Typ-Schnellansichten verwendet werden, abrufen und Ändern von Daten über die [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstelle). Die EE wird in der Regel implementiert diese Schnittstelle, um externen Typ-Schnellansichten unterstützen.
+
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Die Methoden für die `IPropertyProxyEESide` Schnittstelle, die alle zurückzugeben, diese Schnittstelle. Rufen Sie [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) zum Abrufen der [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Schnittstelle. Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf eine [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle zum Abrufen der [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) Schnittstelle.
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+ Die `IEEDataStorage` -Schnittstelle implementiert die folgenden Methoden:
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Ruft die angegebene Anzahl von Datenbytes in einen angegebenen Puffer ab.|
+|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Ruft die Anzahl der Datenbytes, die zur Verfügung.|
+
+## <a name="remarks"></a>Hinweise
+ Diese Schnittstelle wird durch eine typschnellansicht verwendet, den Zugriff auf Daten, die ein bestimmtes Objekt frei. Die Daten werden behandelt, als ein Array von Bytes, sodass der typschnellansicht, und bearbeiten sie mithilfe von bibliotheksgruppen erforderlich, um es dem Benutzer angezeigt wird.
+
+ Ein benutzerdefinierter Viewer kann diese Schnittstelle auch verwenden, falls gewünscht, zwar in der Regel eher, ein benutzerdefinierter Viewer eine benutzerdefinierte Schnittstelle, verwenden [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) oder [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (für Zeichenfolge-orientierte Daten).
+
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

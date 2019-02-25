@@ -1,7 +1,7 @@
 ---
 title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugModule2::ReloadSymbols
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 182561200e6239520b1345f43cc0a150baa30622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961308"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721302"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-VERALTET. VERWENDEN SIE NICHT. Lädt die Symbole für dieses Modul erneut.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT ReloadSymbols(   
-   LPCOLESTR pszUrlToSymbols,  
-   BSTR*     pbstrDebugMessage  
-);  
-```  
-  
-```csharp  
-int ReloadSymbols(   
-   string     pszUrlToSymbols,  
-   out string pbstrDebugMessage  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pszUrlToSymbols`  
- [in] Der Pfad zu den Symbolspeicher.  
-  
- `pbstrDebugMessage`  
- [out] Gibt eine informationsmeldung, z. B. eine Status- oder Fehlerinformationen Nachricht, die rechts neben den Namen des Moduls in das Fenster "Module" angezeigt wird.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte immer zurückgeben `E_FAIL`.  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird nicht mehr unterstützt. Implementieren der [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) Methode stattdessen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
- [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)
+VERALTET. VERWENDEN SIE NICHT. Lädt die Symbole für dieses Modul erneut.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT ReloadSymbols( 
+   LPCOLESTR pszUrlToSymbols,
+   BSTR*     pbstrDebugMessage
+);
+```
+
+```csharp
+int ReloadSymbols( 
+   string     pszUrlToSymbols,
+   out string pbstrDebugMessage
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pszUrlToSymbols`
+
+ [in] Der Pfad zu den Symbolspeicher.
+
+ `pbstrDebugMessage`
+
+ [out] Gibt eine informationsmeldung, z. B. eine Status- oder Fehlerinformationen Nachricht, die rechts neben den Namen des Moduls in das Fenster "Module" angezeigt wird.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte immer zurückgeben `E_FAIL`.
+
+## <a name="remarks"></a>Hinweise
+ Diese Methode wird nicht mehr unterstützt. Implementieren der [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) Methode stattdessen.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
+- [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

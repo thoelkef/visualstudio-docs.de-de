@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8718a45f0a2d8ef3075a9c390a756e3ec50062f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c49682d43236f66b3acbef630f1d81b32e97dab2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028711"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688276"
 ---
 # <a name="mstateobject-field"></a>M_stateObject-Feld
-Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** "mscorlib" (in *"mscorlib.dll"*)  
-  
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-.field assembly object m_stateObject  
-```  
-  
-## <a name="remarks"></a>Hinweise  
- Dies ist die `state` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"*)
+
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+
+## <a name="syntax"></a>Syntax
+
+```
+.field assembly object m_stateObject
+```
+
+## <a name="remarks"></a>Hinweise
+ Dies ist die `state` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.
+
+## <a name="see-also"></a>Siehe auch
+- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

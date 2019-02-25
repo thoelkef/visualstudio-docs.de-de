@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962155"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944865"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.  
@@ -40,13 +40,13 @@ HRESULT ReadExecutableAt ( 
  cbData  
  [in] Die Anzahl der zu lesenden Bytes.  
   
- "pcbdata"  
+ pcbData  
  [out] Gibt die Anzahl der gelesenen Bytes.  
   
  data[]  
  [in, out] Ein Array, das sich aus der Datei gelesenen Bytes gefüllt wird.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Methode wird von der Code für die Unterstützung von DIA Datenbytes aus einer ausführbaren Datei, die über einen Offset absolute Datei laden aufgerufen. Diese Methode wird aufgerufen, Unterstützung des der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  

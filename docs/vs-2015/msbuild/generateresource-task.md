@@ -1,14 +1,9 @@
 ---
 title: GenerateResource-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796905"
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,14 +57,14 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 |`StronglyTypedNamespace`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namespace an, der für die generierte Klassenquelle für die Ressource mit starker Typisierung verwendet werden soll. Wenn dieser Parameter nicht angegeben wird, befinden sich alle Ressourcen mit starker Typisierung im globalen Namespace.|  
 |`TLogReadFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Ruft ein Array von Elementen ab, die die Lesenachverfolgungs-Protokolle darstellen.|  
 |`TLogWriteFiles`|Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Ruft ein Array von Elementen ab, die die Schreibnachverfolgungs-Protokolle darstellen.|  
-|`ToolArchitecture`|Optional, [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Wird verwendet, um zu bestimmen, ob „Tracker.exe“ zum Erzeugen von „ResGen.exe“ verwendet werden muss oder nicht.<br /><br /> Sollte als Mitglied der <xref:Microsoft.Build.Utilities.ExecutableType>-Enumeration analysierbar sein. Wenn `String.Empty`, wird eine Heuristik zum Ermitteln einer Standardarchitektur verwendet. Sollte als Mitglied der Microsoft.Build.Utilities.ExecutableType-Enumeration analysierbar sein.|  
+|`ToolArchitecture`|Optionaler [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Wird verwendet, um zu bestimmen, ob „Tracker.exe“ zum Erzeugen von „ResGen.exe“ verwendet werden muss oder nicht.<br /><br /> Sollte als Mitglied der <xref:Microsoft.Build.Utilities.ExecutableType>-Enumeration analysierbar sein. Wenn `String.Empty`, wird eine Heuristik zum Ermitteln einer Standardarchitektur verwendet. Sollte als Mitglied der Microsoft.Build.Utilities.ExecutableType-Enumeration analysierbar sein.|  
 |`TrackerFrameworkPath`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt den Pfad zu dem entsprechenden .NET Framework-Speicherort an, der „FileTracker.dll“ enthält.<br /><br /> Wenn festgelegt, übernimmt der Benutzer die Verantwortung dafür, sicherzustellen, dass die Bitanzahl von „FileTracker.dll“, die er übergibt, der Bitanzahl der „ResGen.exe“ entspricht, die er verwenden möchten. Wenn nicht festgelegt, wählt die Aufgabe den entsprechenden Speicherort basierend auf der aktuellen .NET Framework-Version.|  
 |`TrackerLogDirectory`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt das temporäre Verzeichnis an, in dem die Nachverfolgungsprotokolle vom Ausführen dieser Aufgabe gespeichert werden.|  
 |`TrackerSdkPath`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt den Pfad zu dem entsprechenden Windows SDK-Speicherort an, der „Tracker.exe“ enthält.<br /><br /> Wenn festgelegt, übernimmt der Benutzer die Verantwortung dafür, sicherzustellen, dass die Bitanzahl von „Tracker.exe“, die er übergibt, der Bitanzahl der „ResGen.exe“ entspricht, die er verwenden möchten. Wenn nicht festgelegt, wählt die Aufgabe den entsprechenden Speicherort basierend auf der aktuellen Windows SDK-Version.|  
-|`TrackFileAccess`|Optional, [boolescher Wert] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Wenn „true“, wird das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet.|  
+|`TrackFileAccess`|Optionaler [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Wenn „true“, wird das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet.|  
 |`UseSourcePath`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird angegeben, dass das Verzeichnis der Eingabedatei zum Auflösen relativer Dateipfade verwendet werden soll.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Da RESX-Dateien möglicherweise Links zu anderen Ressourcendateien enthalten, ist es nicht ausreichend, einfach die Zeitstempel von RESX- und RESOURCES-Dateien zu vergleichen, um festzustellen, ob die Ausgaben aktuell sind. Stattdessen folgt die `GenerateResource`-Aufgabe den Links in den RESX-Dateien und prüft ebenfalls die Zeitstempel der verknüpften Dateien. Dies bedeutet, dass Sie `Inputs`- und `Outputs`-Attribute nicht allgemein für das Ziel verwenden sollten, das die `GenerateResource`-Aufgabe enthält, da dies dazu führen könnte, dass es übersprungen wird, wenn es tatsächlich ausgeführt werden sollte.  
   
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension> -Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task> -Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
@@ -94,7 +89,7 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
  Unter der Voraussetzung, dass die Assembly myAssembly genannt wird, generiert der folgende Code eine eingebettete Ressource mit dem Namen someQualifier.someResource.resources:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Ohne die \<LogicalName>-Metadaten würde die Ressource den Namen myAssembly.myResource.resources erhalten.  Dieses Beispiel gilt nur für den Visual Basic- und Visual C#-Buildprozess.  
@@ -102,6 +97,3 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

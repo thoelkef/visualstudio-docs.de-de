@@ -1,26 +1,22 @@
 ---
 title: Angeben von benutzerdefinierten Buildereignissen
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53893551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775845"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Angeben von benutzerdefinierten Build-Ereignissen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +25,9 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
 
  Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
 
--   Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic – [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# und F#--[Vorgehensweise: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)
+-   Visual C# und F# – [Vorgehensweise: Festlegen von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ – [Festlegen von Buildereignissen](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -60,4 +56,4 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
     >  `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
 ## <a name="see-also"></a>Siehe auch
- [Kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md) [Exemplarische Vorgehensweise: Erstellen einer Anwendung.
+ [Kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md) [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)

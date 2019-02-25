@@ -10,42 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a24c661c986116d9966d2ca5785bd51e2726c6d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998403"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719021"
 ---
 # <a name="call-debugger-events"></a>Aufrufen von debuggerereignissen
-Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge.  
-  
-## <a name="discussion"></a>Diskussion  
- Um das Muster der Aufrufe zwischen der Debug-Engine (DE) und sitzungsbasierter Debug-Manager (SDM) zu verstehen, die Folgendes die Aufrufreihenfolge der Ereignisse, die in eine typische Debuggingsitzung auftreten:  
-  
-1.  [Anfügen und Trennen von einem Programm](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
-  
-2.  [Starten des Debuggers](../../extensibility/debugger/launching-the-debugger.md)  
-  
-3.  [Beenden eines Programms](../../extensibility/debugger/terminating-a-program.md)  
-  
-4.  [Erstellen eines Haltepunkts](../../extensibility/debugger/creating-a-breakpoint.md)  
-  
-5.  [Wenn ein Haltepunkt gebunden oder ungebunden immer](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
-  
-6.  [Haltepunktfehler](../../extensibility/debugger/breakpoint-errors.md)  
-  
-7.  [Erreichen eines Haltepunkts](../../extensibility/debugger/hitting-a-breakpoint.md)  
-  
-8.  [Löschen eines Haltepunkts](../../extensibility/debugger/deleting-a-breakpoint.md)  
-  
-9. [In den Unterbrechungsmodus](../../extensibility/debugger/entering-break-mode.md)  
-  
-10. [Schrittausführung im Unterbrechungsmodus](../../extensibility/debugger/stepping-in-break-mode.md)  
-  
-11. [Ausdrucksauswertung im Unterbrechungsmodus](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
-  
-12. [Ausnahmebehandlung](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge.
+
+## <a name="discussion"></a>Diskussion
+ Um das Muster der Aufrufe zwischen der Debug-Engine (DE) und sitzungsbasierter Debug-Manager (SDM) zu verstehen, die Folgendes die Aufrufreihenfolge der Ereignisse, die in eine typische Debuggingsitzung auftreten:
+
+1.  [Anfügen und Trennen von einem Programm](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+
+2.  [Starten des Debuggers](../../extensibility/debugger/launching-the-debugger.md)
+
+3.  [Beenden eines Programms](../../extensibility/debugger/terminating-a-program.md)
+
+4.  [Erstellen eines Haltepunkts](../../extensibility/debugger/creating-a-breakpoint.md)
+
+5.  [Wenn ein Haltepunkt gebunden oder ungebunden immer](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+
+6.  [Haltepunktfehler](../../extensibility/debugger/breakpoint-errors.md)
+
+7.  [Erreichen eines Haltepunkts](../../extensibility/debugger/hitting-a-breakpoint.md)
+
+8.  [Löschen eines Haltepunkts](../../extensibility/debugger/deleting-a-breakpoint.md)
+
+9. [In den Unterbrechungsmodus](../../extensibility/debugger/entering-break-mode.md)
+
+10. [Schrittausführung im Unterbrechungsmodus](../../extensibility/debugger/stepping-in-break-mode.md)
+
+11. [Ausdrucksauswertung im Unterbrechungsmodus](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+
+12. [Ausnahmebehandlung](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)

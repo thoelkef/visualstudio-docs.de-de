@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941982"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Überprüfen von Variablen in den Fenstern "Auto" und "lokal"
 
-Die **"Auto"** und **"lokal"** Windows zeigen Variablenwerte an, während des Debuggens. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **"Auto"** Fenster zeigt die Variablen, die in der Nähe der aktuellen Haltepunkt verwendet. Die **"lokal"** Fenster zeigt die Variablen, die im lokalen Gültigkeitsbereich, in der Regel die aktuelle Funktion oder Methode definiert. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+Die **"Auto"** und **"lokal"** Windows zeigen Variablenwerte an, während des Debuggens. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **"Auto"** Fenster zeigt die Variablen, die in der Nähe der aktuellen Haltepunkt verwendet. Die **"lokal"** Fenster zeigt die Variablen, die im lokalen Gültigkeitsbereich, in der Regel die aktuelle Funktion oder Methode definiert. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) und [Debuggen, Techniken und Tools](../debugger/write-better-code-with-visual-studio.md) , bevor Sie diesen Artikel durchgehen.
 
  Die **"Auto"** Fenster ist verfügbar für C#, Visual Basic, C++ und Python-Code, aber nicht für JavaScript oder F#.
   
@@ -150,5 +150,5 @@ Um die Rückgabewerte der finden Sie unter den `sumVars()` und `subtractVars()` 
   
 ## <a name="see-also"></a>Siehe auch  
  [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
- [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
+ [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)

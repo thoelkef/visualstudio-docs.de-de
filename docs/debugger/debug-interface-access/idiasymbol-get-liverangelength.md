@@ -40,7 +40,7 @@ HRESULT get_liveRangeLength ( 
 > [!NOTE]
 >  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

@@ -26,7 +26,7 @@ Diese Dialogfelder werden Informationen über die Spy++-Anwendung anzeigen.
  Informationen zum Besitzer des Spy++-Programms.  
   
  [Copyrightinformationen zur Spy++-Hilfe](../debugger/copyright-notice-for-spy-increment-help.md)  
- Legal notice of copyright.  
+ Rechtlicher Hinweis zum Urheberrecht.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  

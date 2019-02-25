@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025643"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629572"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Syntaxfarben in einem Legacysprachdienst
 
@@ -63,11 +63,17 @@ Visual Studio verwendet einen Farben-Dienst identifizieren die Elemente der Spra
 >  Zusätzlich zur Verwendung von einer Sprachendienst-Farbauswahl, kann eine VSPackage auch die allgemeinen Visual Studio-Text, Farben Mechanismus verwenden. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md) behandelt, die ein Editor wie zugreift, einer editortooloptionsseite des Sprachdiensts Syntaxfarben und welche der Sprachdienst implementieren muss, um die Farben für Syntax zu unterstützen.
+- [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md) wird veranschaulicht, wie mit integrierten kolorierbaren Elemente des sprachdienstes.
+ Erläutert, wie ein Editor zugreift, einer editortooloptionsseite des Sprachdiensts farbige syntaxmarkierung und welche der Sprachdienst müssen implementieren, um Syntax zu unterstützen färben.
 
- [Benutzerdefinierte kolorierbare Elemente](../../extensibility/internals/custom-colorable-items.md) wird erläutert, wie benutzerdefinierte kolorierbare Elemente implementieren.
+- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Veranschaulicht, wie mit integrierten kolorierbaren Elemente des sprachdienstes.
+
+- [Benutzerdefinierte einfärbbare Elemente](../../extensibility/internals/custom-colorable-items.md)
+
+ Erläutert, wie benutzerdefinierte kolorierbare Elemente implementieren.
 
 ## <a name="see-also"></a>Siehe auch
 

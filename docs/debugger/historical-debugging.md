@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc16c6e6186d53bd08bd0634e07a4d1172859280
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: d00ab3ca18997fe61fc4b36e1f9f9a098b0aa727
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952118"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Verlaufsbezogenes debugging (C#, Visual Basic, C++)
 
@@ -35,4 +35,4 @@ Das verlaufsbezogene Debuggen ist ein Debug-Modus, der von den durch IntelliTrac
 
  - Zum Anzeigen von Momentaufnahmen mit verlaufsbezogenen Debuggen finden Sie unter [überprüfen Sie die vorherigen app-Status, die mit IntelliTrace](../debugger/view-historical-application-state.md)
  - So untersuchen Sie Variablen, und Navigieren im Code finden Sie unter [untersuchen Ihrer app mit verlaufsbezogenem debugging](../debugger/historical-debugging-inspect-app.md)
- - Weitere Informationen zum Debuggen mit IntelliTrace-Ereignissen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace
+ - Weitere Informationen zum Debuggen mit IntelliTrace-Ereignissen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

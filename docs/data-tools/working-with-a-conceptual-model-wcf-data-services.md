@@ -10,15 +10,14 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989639"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910024"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten Sie mit einem konzeptionellen Modell (WCF Data Services)
 
@@ -29,8 +28,8 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 | Thema | Beschreibung |
 | - | - |
-| [Vorgehensweise: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird. |
-| [Vorgehensweise: Projekt-Abfrageergebnisse](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird. |
+| [Vorgehensweise: Ausführen von Datendienstabfragen](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird. |
+| [Vorgehensweise: Projizieren von Abfrageergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird. |
 
  Wenn Sie ein konzeptionelles Modell verwenden, können Sie definieren, welche Art von Daten in der Sprache für Ihre Domäne gültig ist. Sie können gültige Daten im Modell definieren, oder Sie können Vorgängen, die für eine Entität oder einen Datendienst ausgeführt werden, Validierung hinzufügen.
 
@@ -38,14 +37,14 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Datendienst-Nachrichten abfangen](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Zeigt, wie einem Datendienstvorgang Validierung hinzugefügt wird.|
+|[Vorgehensweise: Abfangen von Datendienstnachrichten](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Zeigt, wie einem Datendienstvorgang Validierung hinzugefügt wird.|
 
  In den folgenden Themen wird veranschaulicht, wie durch das Ausführen von Vorgängen für Entitäten Daten erstellt, aktualisiert und gelöscht werden.
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Hinzufügen, ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|
-|[Vorgehensweise: Definieren von entitätsbeziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|
+|[Vorgehensweise: Hinzufügen, Ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|
+|[Vorgehensweise: Definieren von Entitätsbeziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|
 
 ## <a name="see-also"></a>Siehe auch
 

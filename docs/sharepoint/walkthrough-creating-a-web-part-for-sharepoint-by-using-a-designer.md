@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa5817bb7c20cf58457281667dda76ac43608647
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875336"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607020"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers
 
@@ -187,6 +187,6 @@ Die Ereignisse aus allen angegebenen Kalendern werden in der monatlichen Kalende
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758647"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker)-Aufgabe
@@ -72,7 +72,7 @@ Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdkl
 |`Win32Icon`|Optionaler `String` -Parameter.<br /><br /> Fügt eine ICO-Datei in die Assembly ein. Die ICO-Datei verleiht der Ausgabedatei in Datei-Explorer das gewünschte Aussehen. Dieser Parameter entspricht der Option `/win32icon` in [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Win32Resource`|Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (RES-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie in der Dokumentation zur Option `/win32res` in [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  

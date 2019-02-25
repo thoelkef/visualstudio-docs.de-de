@@ -122,4 +122,4 @@ ms.locfileid: "55032997"
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Ausführung von Anwendungsupdates durch ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
- [Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [How to: Manage updates for a ClickOnce application (Vorgehensweise: Verwalten von Updates für ClickOnce-Anwendungen)](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

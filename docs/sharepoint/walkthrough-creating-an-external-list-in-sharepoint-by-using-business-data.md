@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874180"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600297"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen Sie eine externe Liste in SharePoint mithilfe von Geschäftsdaten
 
@@ -186,7 +186,7 @@ Die Entität "Contact" eine bestimmten Finder-Methode hinzugefügt, mit der **BD
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Telefon|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -276,7 +276,7 @@ Erfahren Sie mehr über das Entwerfen von Modellen für den BDC-Dienst in ShareP
 
 ## <a name="see-also"></a>Siehe auch
 
-[Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)  
-[Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
+[erstellen ein Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC-Modell-Designtools Übersicht](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

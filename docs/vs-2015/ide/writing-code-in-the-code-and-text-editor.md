@@ -1,14 +1,9 @@
 ---
 title: Schreiben von Code im Code- und Text-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794240"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Schreiben von Code im Code- und Text-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 
  ![Navigationsschaltflächen „Vor“ und „Zurück“](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Sie können ebenfalls die erweiterte Bildlaufleiste im Codefenster verwenden, um den Code aus der Vogelperspektive zu betrachten. Im Zuordnungsmodus können Sie eine Codevorschau sehen, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Weitere Informationen hierzu finden Sie unter [Gewusst wie: Verfolgen von Code durch Anpassen der Scrollleiste](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Sie können ebenfalls die erweiterte Bildlaufleiste im Codefenster verwenden, um den Code aus der Vogelperspektive zu betrachten. Im Zuordnungsmodus können Sie finden Sie unter Vorschau des Codes, wenn Sie den Cursor nach oben verschieben, und klicken Sie unten die Bildlaufleiste, Weitere Informationen, wie unter [Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
  Die folgenden Befehle stehen für codespezifische Navigationsmethoden:  
 
 |||  
 |-|-|  
-|Gehe zu \<Zeilennummer>|(**Bearbeiten &gt; Gehe zu** oder STRG+G): zu einer bestimmten Zeilennummer im aktiven Dokument wechseln.|  
-|Navigieren zu|(**Bearbeiten/Navigieren zu** oder STRG+,): sucht ein Symbol oder eine Datei in der aktiven Projektmappe. Hiermit können Sie einen geeigneten Satz von übereinstimmenden Ergebnissen für eine Abfrage auswählen. Sie können nach Schlüsselwörtern in einem Symbol suchen, indem Sie die Kamel-Schreibweise und Unterstriche verwenden, um das Symbol in Schlüsselwörter aufzuteilen.|  
+|Gehe zu \<Zeilennummer>|(**Bearbeiten/navigieren Sie zu** oder STRG + G): Verschieben Sie in einer bestimmten Zeilennummer im aktiven Dokument.|  
+|Navigieren zu|(**Bearbeiten/Navigieren zu** oder STRG +,): Sucht ein Symbol oder eine Datei, in der aktiven Projektmappe. Hiermit können Sie einen geeigneten Satz von übereinstimmenden Ergebnissen für eine Abfrage auswählen. Sie können nach Schlüsselwörtern in einem Symbol suchen, indem Sie die Kamel-Schreibweise und Unterstriche verwenden, um das Symbol in Schlüsselwörter aufzuteilen.|  
 |Alle Verweise suchen|(Kontextmenü): sucht alle Verweise auf das ausgewählte Element in der Projektmappe.|  
-|Gehe zu Definition|(Kontextmenü oder F12): sucht die Definition des ausgewählten Elements.|  
-|Peek-Definition|(Kontextmenü oder ALT+F12): sucht die Definition des ausgewählten Elements und zeigt sie in einem Popupfenster an. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Gehe zu Definition|(Kontextmenü oder F12): Sucht die Definition des ausgewählten Elements an.|  
+|Peek-Definition|(Kontextmenü oder Alt + F12): Sucht nach der Definition des ausgewählten Elements an, und in einem Popupfenster angezeigt. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Nächste Methode, Vorherige Methode|(**Bearbeiten > Nächste Methode, Vorherige Methode**): Verwenden Sie diese Befehle in Visual Basic-Codedateien, um die Einfügemarke zu den verschiedenen Methoden zu verschieben.|  
 |Markieren von Verweisen|Wenn Sie auf ein Symbol im Quellcode klicken, werden alle Instanzen dieses Symbols im Dokument hervorgehoben. Die markierten Symbole können Deklarationen und Verweise sowie weitere Symbole umfassen, die von **Alle Verweise suchen** zurückgegeben werden können. Dazu zählen die Namen von Klassen, Objekten, Variablen, Methoden und Eigenschaften. In Visual Basic-Code werden auch Schlüsselwörter für viele Steuerungsstrukturen hervorgehoben. Um zum nächsten oder vorherigen hervorgehobenen Symbol zu springen, drücken Sie STRG+UMSCHALTTASTE+NACH-UNTEN-TASTE bzw. STRG+UMSCHALTTASTE+NACH-OBEN-TASTE. Sie können die Hervorhebungsfarbe in **Extras > Optionen > Umgebung > Schriftarten und Farben > Hervorgehobener Verweis**ändern.|  
 |Suchen von codebezogenen Informationen|Sie können Informationen über bestimmten Code, wie Änderungen und wer diese Änderungen vorgenommen hat, Verweise, Fehler, Arbeitselemente und Codeüberprüfungen sowie Komponententeststatus anzeigen, wenn Sie CodeLens im Code-Editor verwenden. CodeLens funktioniert wie ein Heads-up-Display, wenn Sie Visual Studio Enterprise mit Team Foundation Server verwenden. Weitere Informationen finden Sie unter [Ermitteln von Änderungen am Code und anderer Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -161,7 +156,7 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
   In einer partiellen Klasse sind Member, die außerhalb der aktuellen Codedatei definiert wurden, ggf. abgeblendet.  
 
 ## <a name="find-code-using-navigate-to"></a>Suchen von Code mithilfe von Navigieren zu
-Visual Studio-Befehl "Navigieren zu" führt eine zielgerichtete Suche in Ihrem Code können Sie die angegebenen Elemente in Codedateien, Dateipfaden und Codesymbolen schnell zu finden. Anders als andere Textsuchverfahren, wie etwa Suchen oder In Dateien suchen, beschränkt Navigieren zu seine Suche auf Bereiche, in denen echter Code vorhanden ist, wie etwa Dateien, Formulare und Codemodule. Angenommen, Sie möchten in einer ASP.NET-Webanwendung mithilfe von Suchen oder In Dateien suchen in der gesamten Projektmappe eine Zeichenfolge suchen, erhalten Sie vermutlich mehrere Treffer, einschließlich Instanzen der Zeichenfolge in Codeanmerkungen. Navigieren Sie zum verwenden, können jedoch nur eine einzelne Funktion erhalten Sie wird ignoriert, alle Instanzen der Zeichenfolge in codeanmerkungen.
+Der Visual Studio-Befehl „Navigieren zu“ führt eine zielgerichtete Suche in Ihrem Code aus, um Ihnen das schnelle Auffinden der angegebenen Elemente in Codedateien, Dateipfaden und Codesymbolen zu erleichtern. Anders als andere Textsuchverfahren, wie etwa Suchen oder In Dateien suchen, beschränkt Navigieren zu seine Suche auf Bereiche, in denen echter Code vorhanden ist, wie etwa Dateien, Formulare und Codemodule. Angenommen, Sie möchten in einer ASP.NET-Webanwendung mithilfe von Suchen oder In Dateien suchen in der gesamten Projektmappe eine Zeichenfolge suchen, erhalten Sie vermutlich mehrere Treffer, einschließlich Instanzen der Zeichenfolge in Codeanmerkungen. Navigieren Sie zum verwenden, können jedoch nur eine einzelne Funktion erhalten Sie wird ignoriert, alle Instanzen der Zeichenfolge in codeanmerkungen.
 
 ### <a name="navigate-code-using-navigate-to"></a>Navigieren in Code mithilfe von Navigieren zu
 
@@ -188,9 +183,9 @@ Wenn Sie Binnenmajuskeln im Code verwenden, können Sie Codeelemente schneller f
 Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
 ## <a name="customize-the-editor"></a>Anpassen des Editors  
- **Einstellungen importieren und exportieren**: Sie können im Menü **Extras** unter **Assistent zum Importieren und Exportieren von Einstellungen** Einstellungen für einen anderen Entwickler freigeben, die Einstellungen an einen Standard anpassen oder zu den Visual Studio-Standardeinstellungen zurückkehren. Sie können allgemeine Einstellungen, Spracheinstellungen und projektspezifische Einstellungen ändern.  
+ **Einstellungen importieren und exportieren**: Sie können die Einstellungen für einen anderen Entwickler freigeben, müssen Sie die Einstellungen an einen Standard anpassen oder zur Visual Studio-Standardeinstellungen zurückkehren, indem Sie mit der **-Import- und Exportassistenten Einstellungen** auf der **Tools** Menü. Sie können allgemeine Einstellungen, Spracheinstellungen und projektspezifische Einstellungen ändern.  
 
- **Tastaturzuordnung**: Sie können neue Hotkeys definieren oder bestehende Hotkeys in den Einstellungen "Extras &gt; Optionen &gt; Umgebung &gt; Tastatur" neu definieren. Weitere Informationen zu Hotkeys finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Tastaturzuordnung**: Sie können neue Hotkeys definieren oder bestehende Hotkeys in den Einstellungen für die Extras/Optionen/Umgebung/Tastatur neu zu definieren. Weitere Informationen zu Hotkeys finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Informationen über sprachspezifische Editoroptionen finden Sie unter:  
 
@@ -236,5 +231,3 @@ Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-IDE](../ide/visual-studio-ide.md)
-
-

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002518"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung 
 
@@ -30,7 +30,7 @@ Während des Debuggens, können Sie **Watch** Windows und **Schnellüberwachung*
 
 **Sehen Sie sich** Windows können mehrere Variablen zu einem Zeitpunkt während des Debuggens angezeigt. Die **Schnellüberwachung** Dialogfeld zeigt eine einzelne Variable an, und muss geschlossen werden, bevor Sie mit dem Debuggen fortfahren kann.
 
-Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) und [Debuggen, Techniken und Tools](../debugger/write-better-code-with-visual-studio.md) , bevor Sie diesen Artikel durchgehen.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Beobachten Sie Variablen mit einem Überwachungsfenster
 
@@ -280,5 +280,5 @@ Beobachten der `a` -Variable
 
 ## <a name="see-also"></a>Siehe auch
  [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
- [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)  
+ [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)  
  [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)

@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Befehlszeilenreferenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a1827166829686801743ccc98156a0009e50dc3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777494"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |/preprocess[:`filepath`]|/pp[:`filepath`]|Erstellt eine einzelne, aggregierte Projektdatei durch Einbeziehen ("Inlining") sämtlicher Dateien, die während eines Builds importiert werden, unter Angabe ihrer Grenzen. Mithilfe dieses Schalters können Sie leichter feststellen, welche Dateien importiert werden, woher diese Dateien importiert werden und welche Dateien an dem Buildvorgang beteiligt sind. Wenn Sie diesen Schalter verwenden, wird das Projekt nicht erstellt.<br /><br /> Wenn Sie einen `filepath` angeben, wird die aggregierte Projektdatei in die Datei ausgegeben. Andernfalls wird die Ausgabe im Konsolenfenster angezeigt.<br /><br /> Informationen dazu, wie Sie mithilfe des `Import`-Elements eine Projektdatei in eine andere Projektdatei einfügen können, finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md) (Import-Element (MSBuild)) und [How to: Use the Same Target in Multiple Project Files](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md) (Vorgehensweise: Verwenden eines Ziels in mehreren Projektdateien).|  
 |/property:`name`=`value`|/p:`name`=`value`|Dient zum Festlegen oder Überschreiben der angegebenen Eigenschaften auf Projektebene. Dabei ist `name` der Name und `value` der Wert der Eigenschaft. Geben Sie jede Eigenschaft einzeln an oder verwenden Sie ein Semikolon oder ein Komma, um mehrere Eigenschaften zu trennen (siehe Beispiel):<br /><br /> `/property:WarningLevel=2;OutDir=bin\Debug`|  
 |/target:`targets`|/t:`targets`|Erstellt die angegebenen Ziele im Projekt. Geben Sie jedes Ziel einzeln an oder verwenden Sie ein Semikolon oder ein Komma, um mehrere Ziele zu trennen (siehe Beispiel):<br /><br /> `/target:Resources;Compile`<br /><br /> Wenn Sie über diesen Schalter Ziele angeben, werden diese anstelle der im `DefaultTargets`-Attribut in der Projektdatei angegebenen Ziele ausgeführt. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md) und [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Als Ziel wird eine Gruppe von Aufgaben bezeichnet. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).|  
-|/toolsversion:`version`|/tv:`version`|Gibt die Version des Toolsets an, mit dem das Projekt erstellt werden soll, wie zum Beispiel: `/toolsversion:3.5`<br /><br /> Durch diesen Schalter verwenden, können Sie ein Projekt erstellen und angeben eine Version, die von der Version, die in angegeben ist, unterscheidet sich die [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md). Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Bei MSBuild 4.5 können Sie für `version` die folgenden Werte angeben: 2.0, 3.5 und 4.0. Wenn Sie 4.0 angeben, gibt die Buildeigenschaft `VisualStudioVersion` an, welches Unter-Toolset verwendet werden soll. Weitere Informationen finden Sie im Abschnitt zu Unter-Toolsets unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Ein Toolset besteht aus Aufgaben, Zielen und Tools, die beim Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie "csc.exe" und "vbc.exe". Weitere Informationen zu Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Standard- und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md) und [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md). **Hinweis:** die Toolsetversion ist nicht identisch mit das Zielframework – wird auf dem ein Projekt erstellt wird, führen Sie die Version von .NET Framework. Weitere Informationen finden Sie unter [MSBuild-Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).|  
+|/toolsversion:`version`|/tv:`version`|Gibt die Version des Toolsets an, mit dem das Projekt erstellt werden soll, wie zum Beispiel: `/toolsversion:3.5`<br /><br /> Wenn Sie diese Option verwenden, können Sie ein Projekt mit einer anderen Version als der im [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md) festgelegten erstellen. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Bei MSBuild 4.5 können Sie für `version` die folgenden Werte angeben: 2.0, 3.5 und 4.0. Wenn Sie 4.0 angeben, gibt die Buildeigenschaft `VisualStudioVersion` an, welches Unter-Toolset verwendet werden soll. Weitere Informationen finden Sie im Abschnitt zu Unter-Toolsets unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Ein Toolset besteht aus Aufgaben, Zielen und Tools, die beim Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie "csc.exe" und "vbc.exe". Weitere Informationen zu Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Standard- und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md) und [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md). **Hinweis:** Die Toolsetversion ist nicht das gleiche wie das Zielframework. Bei diesem handelt es sich um die Version von .NET Framework, auf der das zu erstellende Projekt ausgeführt werden soll. Weitere Informationen finden Sie unter [MSBuild-Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |/validate:[`schema`]|/val[`schema`]|Überprüft die Projektdatei und erstellt bei erfolgreicher Überprüfung das Projekt.<br /><br /> Wenn Sie `schema` nicht angeben, wird das Projekt anhand des Standardschemas überprüft.<br /><br /> Wenn Sie `schema` angeben, wird das Projekt anhand des angegebenen Schemas überprüft.<br /><br /> Die folgende Einstellung ist ein Beispiel: `/validate:MyExtendedBuildSchema.xsd`|  
 |/verbosity:`level`|/v:`level`|Gibt den Umfang an Informationen an, die im Buildprotokoll angezeigt werden sollen. Jede Protokollierung zeigt Ereignisse gemäß des Ausführlichkeitsgrads an, den Sie für diese Protokollierung festlegen.<br /><br /> Für den Ausführlichkeitsgrad können Sie die folgenden Werte angeben: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` und `diag[nostic]`.<br /><br /> Die folgende Einstellung ist ein Beispiel: `/verbosity:quiet`|  
 |/version|/ver|Zeigt nur Versionsinformationen an. Das Projekt wird nicht erstellt.|  
@@ -97,6 +92,3 @@ msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
-
-
-

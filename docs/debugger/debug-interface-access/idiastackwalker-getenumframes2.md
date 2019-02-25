@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6391e90a10477d07e5f35e8f5607bee3f412031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fb7fff92007160abdba64970d652ee73042661b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938132"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.  
@@ -46,7 +46,7 @@ Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zum Abrufen einer Stack-Frame-Liste für die nur die X86-Plattform, rufen die [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) Methode.  
   
 ## <a name="see-also"></a>Siehe auch  

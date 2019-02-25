@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038343"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716102"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen von Visual Studio-Erweiterung
 
@@ -73,33 +73,33 @@ In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung, aber die Sch
 8. In **2: Angeben der erweiterungsdetails**, einige Felder werden automatisch aus der *"Source.Extension.vsixmanifest"* -Datei aus der Erweiterung. Finden Sie weitere Informationen zu den folgenden:
 
     * **Interner Name** wird in der URL der Seite mit Details der Erweiterung verwendet. Ein Beispiel, Veröffentlichen einer Extension unter dem Herausgeber "Myname", und geben den internen Namen werden von "my-Erweiterung" führt zu einer URL von "marketplace.visualstudio\.com/items?itemName=myname.myextension" für die Erweiterung der Details Seite ".
-    
+
     * **Der Anzeigename** Ihrer Erweiterung. Dieser Name wird automatisch aus der *"Source.Extension.vsixmanifest"* Datei.
-   
+
     * **Version** Anzahl von der Erweiterung, die Sie hochgeladen werden. Diese Version wird automatisch aus der *"Source.Extension.vsixmanifest"* Datei.
-    
+
     * **VSIX-ID** ist der eindeutige Bezeichner, die Visual Studio für die Erweiterung verwendet. Dieser Bezeichner ist erforderlich, wenn Sie, damit die Erweiterung automatisch aktualisiert möchten. Dieser Bezeichner wird automatisch aus der *"Source.Extension.vsixmanifest"* Datei.
-    
+
    * **Logo** , die für die Erweiterung verwendet wird. Dieses Logo wird automatisch aus der *"Source.Extension.vsixmanifest"* Datei, sofern bereitgestellt.
-    
+
      * **Kurze Beschreibung** der Funktionsweise Ihrer Erweiterungs. Diese Beschreibung wird automatisch aus der *"Source.Extension.vsixmanifest"* Datei.
-    
+
      * **Übersicht über die** ist ein guter Ausgangspunkt, Screenshots und ausführliche Informationen zur Funktionsweise der Erweiterungs.
-    
+
      * **Unterstützte Versionen von Visual Studio** können Sie wählen, welche Versionen von Visual Studio auf die Erweiterung funktioniert. Die Erweiterung ist nur auf diese Versionen installiert.
-    
+
      * ** Unterstützt Visual Studio-Edition Ihnen ermöglicht, welche Editionen von Visual Studio auszuwählen, die die Erweiterung funktioniert. Die Erweiterung ist nur für diese Editionen installiert werden.
-    
+
      * **Typ**. Der am häufigsten verwendete Erweiterungen sind **Tools**.
-    
+
      * **Kategorien**. Wählen Sie bis zu drei, die optimal für Ihre Erweiterung sind.
-    
+
      * **Tags** sind Schlüsselwörter, mit denen Benutzer suchen Sie nach Ihrer Erweiterung. Tags können die Suche nach Relevanz Ihrer Erweiterungen in Marketplace zu erhöhen.
-    
+
      * **Preiskategorie** sind die Kosten für Ihre Erweiterung.
-    
+
      * **Quellcode-Repository** können Sie einen Link zum Quellcode mit der Community teilen.
-    
+
      * **F & A für Ihre Erweiterung zulassen** ermöglicht Benutzern, die Fragen auf der Seite für Ihre Erweiterung zu lassen.
 
 9. Klicken Sie auf **speichern und Hochladen**. Diese Option verwendet, die Sie die Sicherung auf des Herausgebers verwalten (Seite). Die Erweiterung wurde noch nicht veröffentlicht. Zum Veröffentlichen Ihrer Extension Maustaste auf Ihre Erweiterung, und wählen **als öffentlich kennzeichnen**. Sehen Sie, wie die Erweiterung auf Marketplace dazu aussehen wird **Erweiterung anzeigen**. Genaue Zahlen zur Übernahme klicken Sie auf **Berichte**. Um die Erweiterung zu ändern, klicken Sie auf **bearbeiten**.
@@ -121,13 +121,13 @@ Marketplace unterstützt die zusätzlichen Benutzerberechtigungen zum Zugreifen 
 3. Sie können dann angeben, die e-Mail-Adresse des Benutzers, die Sie verwenden möchten, hinzufügen und gewähren die richtige Zugriffsebene unter **wählen Sie eine Rolle**.  Sie können eine der folgenden Optionen auswählen:
 
    * **Ersteller**: Der Benutzer kann von anderen Benutzern veröffentlichte Erweiterungen-Erweiterungen veröffentlichen, aber kann nicht anzeigen und verwalten.
-  
+
    * **Reader**: Der Benutzer kann nicht anzeigen, Extensions aber veröffentlichen oder Verwalten von Erweiterungen.
-  
+
    * **"Mitwirkender"**: Der Benutzer kann nicht zu veröffentlichen und Verwalten von Erweiterungen, jedoch herausgebereinstellungen bearbeiten oder Verwalten des Zugriffs auf.
-  
+
    * **Besitzer**: Der Benutzer kann veröffentlichen und Verwalten von Erweiterungen, herausgebereinstellungen bearbeiten und Verwalten des Zugriffs auf.
-  
+
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren Sie die Erweiterung von Visual Studio Marketplace
 
 Nun, dass die Erweiterung veröffentlicht wurde, installieren Sie es in Visual Studio, und Testen sie dort.

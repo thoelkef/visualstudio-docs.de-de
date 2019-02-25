@@ -28,7 +28,7 @@ Die Code Coverage-Analyse in Microsoft Visual Studio zeigt Ihnen, wie viel Ihres
   
     Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-   - <em>Es ist jedoch kein Feld mit dem Namen *Type of Run Settings File</em> (Typ der Laufzeiteinstellungsdatei) vorhanden.*  
+   - <em>Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File</em>** (Typ der Laufzeiteinstellungsdatei) vorhanden.  
   
       Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   

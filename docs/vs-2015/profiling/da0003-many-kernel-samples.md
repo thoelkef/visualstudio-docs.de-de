@@ -1,14 +1,9 @@
 ---
 title: 'DA0003: Viele Kernelbeispiele | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741697"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782633"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Zahlreiche Kernelbeispiele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741697"
 Regel-Id | DA0003 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  
-| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Betrachten Sie die profilerstellung für Ihre Anwendung erneut mit Instrumentationsmodus. |  
+| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Erstellen Sie nach Möglichkeit ein neues Profil für die Anwendung, und verwenden Sie dabei den Instrumentierungsmodus.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  
@@ -49,6 +44,3 @@ Regel-Id | DA0003 |
 -   Profilerstellung mit der Instrumentierungsmethode  
   
 -   Erhöhen der Samplingrate, um weitere Samples im Benutzermodus zu sammeln
-
-
-

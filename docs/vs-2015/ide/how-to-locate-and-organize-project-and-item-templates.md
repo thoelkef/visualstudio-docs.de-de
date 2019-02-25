@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778525"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
   Im folgenden Verzeichnis sind beispielsweise benutzerdefinierte [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projektvorlagen enthalten:  
   
-  C:\Documents und Einstellungen\Benutzername\Eigene Dokumente\\< Visual Studio-Version\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Dokumente und Einstellungen\Benutzername\Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Visual C#\  
   
   Benutzerdefinierte Vorlagen enthalten kein Unterverzeichnis für lokalisierte Vorlagen. Sie können das Standardverzeichnis für benutzerdefinierte Vorlagen im Dialogfeld **Optionen** unter **Umgebung\Projekte und Projektmappen** ändern.  
   
@@ -122,7 +117,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 1. Erstellen Sie im Verzeichnis für benutzerdefinierte Projektvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie "HelloWorld" für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, erstellen Sie das folgende Verzeichnis:  
   
-    \My Dokumente\\< Visual Studio-Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
@@ -136,7 +131,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 1.  Erstellen Sie im Verzeichnis für benutzerdefinierte Elementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie HelloWorld für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
   
-     \My Dokumente\\< Visual Studio-Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Language\  
   
 2.  Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
@@ -183,6 +178,3 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
  [NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)   
  [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
-
-
-

@@ -6,23 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911779"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317210"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>Visual Studio 2019 für Mac (Vorschauversion): Überblick
 
 > [!NOTE]
 > Die Vorschauversion von Visual Studio 2019 für Mac kann [jetzt getestet](installation.md) werden.
 
-Visual Studio für Mac entwickelt die für mobile Geräte konzipierte IDE von Xamarin, Xamarin Studio, zu einer Mobile-First-, Cloud-First-Entwicklungsumgebung auf dem Mac weiter. Mit diesem auf Entwickler ausgerichteten Tool können Sie die Leistung von .NET nutzen, um Anwendungen für alle Plattformen zu erstellen, die Ihr Benutzer benötigt.
+Visual Studio für Mac ist eine _integrierte Entwicklungsumgebung_ für .NET auf dem Mac, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und um anschließend eine App zu veröffentlichen. Neben erwarteten Features wie einem Standard-Editor und -debugger enthält Visual Studio für Mac Compiler, Codevervollständigungstools, grafische Designer und die Quellcodeverwaltung zur Erleichterung der Entwicklung von Software.
 
-Die Benutzererfahrung von Visual Studio für Mac ähnelt der des Produkts für Windows, allerdings mit dem typischen macOS-Gefühl. Das Erstellen, Öffnen und Entwickeln einer Anwendung ist eine vertraute Erfahrung für jeden, der schon einmal Visual Studio unter Windows verwendet hat. Zusätzlich werden auch in Visual Studio für Mac die leistungsstarken Tools eingesetzt, die sein Windows-Pendant zu einer derartig leistungsfähigen IDE machen. Die Roslyn-Compilerplattform wird für das Refactoring und IntelliSense verwendet. Das Projektsystem und die Build-Engine verwenden MSBuild. Der Quell-Editor unterstützt TextMate-Bündel. Das Produkt verwendet die gleichen Debugger-Engines für Xamarin- und .NET Core-Apps und die gleichen Designer für Xamarin.iOS und Xamarin.Android.
+Visual Studio für Mac unterstützt viele der Dateitypen, die auch vom entsprechenden Windows-Pendant unterstützt werden (z.B. `.csproj`-, `.fsproj`- oder `.sln`-Dateien), sowie Features wie EditorConfig. Sie können also die integrierte Entwicklungsumgebung verwenden, die Ihren Anforderungen am besten entspricht.
+Das Erstellen, Öffnen und Entwickeln einer Anwendung ist eine vertraute Erfahrung für jeden, der schon einmal Visual Studio unter Windows verwendet hat. Zusätzlich werden auch in Visual Studio für Mac die leistungsstarken Tools eingesetzt, die sein Windows-Pendant zu einer derartig leistungsfähigen IDE machen. Die Roslyn-Compilerplattform wird für das Refactoring und IntelliSense verwendet. Das Projektsystem und die Build-Engine verwenden MSBuild. Der Quell-Editor unterstützt TextMate-Bündel. Das Produkt verwendet die gleichen Debugger-Engines für Xamarin- und .NET Core-Apps und die gleichen Designer für Xamarin.iOS und Xamarin.Android.
 
-Dieser Artikel behandelt verschiedene Abschnitte von Visual Studio für Mac, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Verwendungsweise von Visual Studio für Mac
+
+Visual Studio für Mac unterstützt die folgenden Entwicklungstypen:
+
+- ASP.NET Core-Webanwendungen mit C#, F# und Unterstützung von Razor-Seiten, JavaScript und TypeScript
+- .NET Core-Konsolenanwendungen mit C# oder F#
+- Plattformübergreifende Unity-Spiele und -Anwendungen mit C#
+- Android-, iOS-, tvOS- und watchOS-Anwendungen in Xamarin mit C# oder F# und XAML
+- Cocoa-Desktop-Apps in C# oder F#
+
+In diesem Artikel werden verschiedene Bereiche von Visual Studio für Mac thematisiert, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung dieser Anwendungen machen.
 
 ## <a name="ide-tour"></a>IDE-Überblick
 

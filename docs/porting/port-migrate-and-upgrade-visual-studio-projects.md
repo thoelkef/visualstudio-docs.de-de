@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768831"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335536"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Projektmigration und Upgradereferenz für Visual Studio 2017
 
@@ -34,7 +35,7 @@ Die Unterstützung für einige Projekttypen ändert sich im Laufe der Zeit. Eine
 
 Dieser Artikel enthält zurzeit nur Einzelheiten zu Projekttypen, die Visual Studio 2017 migrieren kann. Projekttypen, die in Visual Studio 2017 nicht mehr unterstützt werden und daher nicht migriert werden können, werden aus diesem Artikel ausgeschlossen. Außerdem werden auch unterstützte Projekttypen ausgeschlossen, die keine Migrationsprobleme aufweisen. Eine Liste finden Sie unter [Zielplattformen und Kompatibilität](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Bestimmte Projekttypen erfordern die durch den Visual Studio-Installer installierten Workloads. Wenn die Workload nicht installiert ist, meldet Visual Studio einen unbekannten oder nicht kompatiblen Projekttyp. Überprüfen Sie in einem solchen Fall Ihre Installationsoptionen, und versuchen Sie es dann erneut. Ausführliche Informationen zur Projektunterstützung in Visual Studio 2017 finden Sie ebenfalls im Artikel [Visual Studio 2017 – Zielplattformen und Kompatibilität](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 ## <a name="project-types"></a>Projekttypen

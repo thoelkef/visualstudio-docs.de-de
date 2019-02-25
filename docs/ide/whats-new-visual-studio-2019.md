@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 01/29/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,17 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483704"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318393"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
-**Aktualisiert für das [Release der Vorschauversion 2](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Aktualisiert für das [Release der Vorschauversion 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 >[!div class="button"]
 >[Vorschauversion herunterladen](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -40,7 +39,7 @@ Im Folgenden finden Sie eine allgemeine Zusammenfassung der Funktionen von Visua
 * **[Ständige Innovation](#continuous-innovation)**. Code mit intelligenter, cloudbasierter Unterstützung.
 
 > [!NOTE]
-> Eine vollständige Liste der neuen Features und Funktionen in der Vorschauversion von Visual Studio 2019 finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Eine Zusammenfassung der Neuerungen in der zweiten Preview finden Sie im Blogbeitrag [Visual Studio 2019 Preview 2 is now available (Visual Studio 2019 Preview 2 ist nun verfügbar)](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/).
+> Eine vollständige Liste der neuen Features und Funktionen in der Vorschauversion von Visual Studio 2019 finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
 
 ## <a name="personal-and-team-productivity"></a>Persönliche Produktivität und Teamproduktivität
 
@@ -54,7 +53,7 @@ Wenn Sie Visual Studio 2019 öffnen, wird Ihnen zuerst das neue Startfenster au
 
 Diese neue Startfenster bietet Ihnen Optionen zum Klonen oder Auschecken von Code, zum Öffnen eines Projekts oder einer Projektmappe, zum Öffnen eines lokalen Ordners oder zum Erstellen eines neuen Projekts. Durch die Darstellung dieser Optionen in einem einfache Dialogfeld können Beginner und fortgeschrittene Benutzer von Visual Studio ohne großen Aufwand Code abrufen.
 
-Weitere Informationen finden Sie im Blogbeitrag [Get to code: How we designed the new Visual Studio start window (Entwurf des neuen Visual Studio-Startfensters)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/).
+Weitere Informationen finden Sie im Blogbeitrag [Get to code: How we designed the new Visual Studio start window (Entwurf des neuen Visual Studio-Startfensters)](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/).
 
 ### <a name="better-search"></a>Bessere Suchergebnisse
 
@@ -82,7 +81,7 @@ Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, �
 
    ![Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019](media/search-watch-window.png)
 
-Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows (Erweiterungen in Visual Studio 2019: Suchen nach Objekten und Eigenschaften in den Fenstern „Überwachen“, „Auto“ und „Lokal“)](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows (Erweiterungen in Visual Studio 2019: Suchen nach Objekten und Eigenschaften in den Fenstern „Überwachen“, „Auto“ und „Lokal“)](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
@@ -90,7 +89,9 @@ Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019:
 
 In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
 
-Weitere Informationen finden Sie im Blogbeitrag [Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share für Echtzeit-Code Reviews und interaktiven Unterricht)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/).
+![Eine animierte GIF-Datei, die das Feature Live Share für die Zusammenarbeit in Visual Studio 2019 anzeigt](media/live-share-collaboration.gif)
+
+Weitere Informationen finden Sie im Blogbeitrag [Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share für Echtzeit-Code Reviews und interaktiven Unterricht)](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/).
 
 ## <a name="modern-development-support"></a>Unterstützung für moderne Entwicklung
 
@@ -100,11 +101,16 @@ Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit der 
 
 Als erste Schritte laden Sie die [Pull Requests für Visual Studio](https://aka.ms/pr4vs)-Erweiterung aus dem Visual Studio Marketplace herunter.
 
-### <a name="develop-with-net-core-3-preview-1"></a>Entwickeln mit .NET Core 3 Vorschauversion 1
+### <a name="develop-with-net-core-3-preview"></a>Entwickeln mit .NET Core 3 Preview
 
-Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NET Core 3](http://aka.ms/netcore3preview1)-Anwendungen für beliebige Plattformen. Die plattformübergreifende C++-Entwicklung wird weiterhin unterstützt und verbessert, ebenso wie die mobile .NET-Entwicklung für iOS und Android mit Xamarin.
+Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0)-Anwendungen für beliebige Plattformen. Die plattformübergreifende C++-Entwicklung wird weiterhin unterstützt und verbessert, ebenso wie die mobile .NET-Entwicklung für iOS und Android mit Xamarin.
 
-   ![Entwickeln von Apps mit .NET Core 3 Vorschauversion 1 in Visual Studio 2019](media/dot-net-core-three-dev.png)
+   ![Entwickeln von Apps mit .NET Core 3 Preview in Visual Studio 2019](media/dot-net-core-three-dev.png)
+
+Weitere Informationen finden Sie auf den folgenden Seiten:
+
+* Anmerkungen zu den Versionen [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) und [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)
+* Blogbeiträge zur [Ankündigung von .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) und [Ankündigung von .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)
 
 ## <a name="continuous-innovation"></a>Ständige Innovation
 
@@ -115,6 +121,8 @@ Wenn Sie Monitore verwenden, die mit unterschiedlichen Anzeigeskalierungsfaktore
 Mit dem Release von Visual Studio 2019 Preview werden die ersten Schritte unternommen, mit denen Visual Studio zu einer PMA-fähigen Anwendung wird. Es wird die Grundlage dafür geschaffen, dass Visual Studio unabhängig von den verwendeten Anzeigeskalierungsfaktoren korrekt gerendert wird.
 
    ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
+
+Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience with Visual Studio 2019 (Bessere Erfahrung mit mehreren Monitoren mit Visual Studio 2019)](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -127,11 +135,13 @@ Im Folgenden werden einige Möglichkeiten aufgeführt, wie Sie mit Visual Studio
 * Suche nach schwer auffindbaren Codeproblemen
 * Schwerpunkt auf Code Reviews, indem die Aufmerksamkeit auf die wichtigen Bereiche gerichtet wird
 
+ ![Ein Beispiel für einen IntelliSense-Vorschlag](media/intellicode-intellisense-suggestion.png)
+
 Bei der ersten Vorschauversion der IntelliCode-Erweiterung für Visual Studio wurde zunächst nur C# unterstützt. Jetzt wurde in Visual Studio auch Unterstützung für C++ und XAML hinzugefügt.
 
 Und bei Verwendung von C# können Sie jetzt auch ein benutzerdefiniertes Modell für Ihren eigenen Code trainieren.
 
-Weitere Informationen zu den neuesten Updates finden Sie im Blogbeitrag [Visual Studio IntelliCode supports more languages and learns from your code (Visual Studio IntelliCode unterstützt weitere Sprachen und lernt von Ihrem Code)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/). Weitere Informationen zur Erweiterung und zum Herunterladen der Erweiterung finden Sie auf der Seite [Visual Studio IntelliCode – Preview (Visual Studio IntelliCode (Vorschauversion))](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
+Weitere Informationen zu den neuesten Updates finden Sie im Blogbeitrag [Visual Studio IntelliCode supports more languages and learns from your code (Visual Studio IntelliCode unterstützt weitere Sprachen und lernt von Ihrem Code)](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/). Weitere Informationen zur Erweiterung und zum Herunterladen der Erweiterung finden Sie auf der Seite [Visual Studio IntelliCode – Preview (Visual Studio IntelliCode (Vorschauversion))](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Geben Sie uns Feedback
 

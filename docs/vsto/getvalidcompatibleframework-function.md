@@ -10,31 +10,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79b97867a3a5c87f1e208d93efacea711ba71efc
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869306"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643508"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework-Funktion
-  Diese API unterstützt die Office-Infrastruktur und ist nicht direkt aus Ihrem Code verwendet werden soll.  
+  Diese API unterstützt die Office-Infrastruktur und ist nicht direkt aus Ihrem Code verwendet werden soll.
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```csharp 
-HRESULT WINAPI GetValidCompatibleFramework(  
-    LPCWSTR lpwszCompatibleFrameworksXML,  
-    BSTR* pbstrValidFrameworkTag  
-);  
-```  
+```csharp
+HRESULT WINAPI GetValidCompatibleFramework(
+    LPCWSTR lpwszCompatibleFrameworksXML,
+    BSTR* pbstrValidFrameworkTag
+);
+```
 
-### <a name="parameters"></a>Parameter  
+### <a name="parameters"></a>Parameter
 
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|*lpwszCompatibleFrameworksXML*|Verwenden Sie nicht.|  
-|*pbstrValidFrameworkTag*|Verwenden Sie nicht.|  
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|*lpwszCompatibleFrameworksXML*|Verwenden Sie nicht.|
+|*pbstrValidFrameworkTag*|Verwenden Sie nicht.|
 
-## <a name="return-value"></a>Rückgabewert  
- Wenn die Funktion erfolgreich ist, gibt es **S_OK**. Wenn die Funktion fehlschlägt, wird einen Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert
+ Wenn die Funktion erfolgreich ist, gibt es **S_OK**. Wenn die Funktion fehlschlägt, wird einen Fehlercode zurückgegeben.

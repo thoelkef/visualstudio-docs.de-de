@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775887"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
@@ -42,7 +42,7 @@ Zeigt die Komponenten, die Sie zu [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)
  Erstellt eine <xref:System.Diagnostics.EventLog>-Komponenteninstanz, mit der sie mit nativen und benutzerdefinierten Ereignisprotokollen interagieren und unter anderem Ereignisse in ein Protokoll schreiben und Protokolldaten lesen können. Weitere Informationen finden Sie unter [Einführung in die EventLog-Komponente](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Erstellt eine <xref:System.IO.FileSystemWatcher>-Komponenteninstanz, mit der Sie Verzeichnisse oder Dateien, auf die Sie Zugriff haben, auf Veränderungen überwachen können. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Instanzen der FileSystemWatcher-Komponente](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
+ Erstellt eine <xref:System.IO.FileSystemWatcher>-Komponenteninstanz, mit der Sie Verzeichnisse oder Dateien, auf die Sie Zugriff haben, auf Veränderungen überwachen können. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Instanzen von FileSystemWatcher-Komponenten](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
  Erstellt eine `System.Windows.Forms.HelpProvider`-Komponenteninstanz, die Popup- oder Onlinehilfe für Steuerelemente bereitstellt.  

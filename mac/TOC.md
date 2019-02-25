@@ -1,4 +1,4 @@
-# [Visual Studio für Mac](index.md)
+# [Visual Studio für Mac](index.yml)
 # [IDE Tour (IDE-Tour)](/visualstudio/mac/ide-tour/)
 
 # [Installation](/visualstudio/mac/installation/)
@@ -41,6 +41,7 @@
 # [Kompilieren und Erstellen](compiling-and-building.md)
 ## [Building and Cleaning Projects and Solutions (Erstellen und Bereinigen von Projekten und Projektmappen)](building-and-cleaning-projects-and-solutions.md)
 ## [Build Actions (Buildvorgänge)](build-actions.md)
+## [Vorgehensweise: Festlegen mehrerer Startprojekte](set-startup-projects.md)
 ## [Customizing the Build System (Anpassen des Buildsystems)](customizing-build-system.md)
 ## [Configurations (Konfigurationen)](configurations.md)
 ### [Create and Edit configurations (Erstellen und Bearbeiten von Konfigurationen)](create-and-edit-configurations.md)
@@ -56,11 +57,10 @@
 ## [Veröffentlichen in Azure App Service](publish-app-svc.md)
 ## [In Ordner veröffentlichen](publish-folder.md)
 
-
 # [Workloads (Arbeitslasten)](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript und TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Einführung in Azure Functions](azure-functions.md)
 ### [Tutorial: Azure Functions](azure-functions-lab.md)
@@ -70,7 +70,7 @@
 ### [Using Unity Tools (Verwenden von Unity-Tools)](using-vsmac-tools-unity.md)
 ### [Verwenden von .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Mobile Apps mit Xamarin](/xamarin/)
+## [Mobile Apps mit Xamarin](/visualstudio/mac/xamarin)
 
 # [Barrierefreiheit](accessibility.md)
 

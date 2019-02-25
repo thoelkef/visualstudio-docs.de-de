@@ -1,21 +1,17 @@
 ---
 title: Setup, Installation und Überprüfungen für Mac-Benutzer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fca4f8ef2d3fb1272dc835b4bedd7dcdcc83725f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772034"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Setup, Installation und Überprüfungen für Mac-Benutzer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
   
 - Eine der folgenden Konfigurationen:  
   
-  -   **Zum Ausführen von Xamarin Studio direkt auf dem Mac:** Xamarin Studio ist die Entwicklungsumgebung von Xamarin, die das Erstellen von Android-, iOS- und Windows-Apps mithilfe von C# unterstützt.  Einen schnellen Überblick zu Xamarin Studio finden Sie unter [Xamarin Studio Overview](https://xamarin.com/studio) (xamarin.com).  
+  -   **Für ausgeführte Xamarin.Studio direkt auf dem Mac:** Xamarin Studio ist Xamarins-Entwicklungsumgebung, die die Erstellung unterstützt Android, iOS und Windows-apps mithilfe von C#.  Einen schnellen Überblick zu Xamarin Studio finden Sie unter [Xamarin Studio Overview](https://xamarin.com/studio) (xamarin.com).  
   
   -   **Wenn auf Ihrem Mac bereits Parallels oder VMWare installiert ist:** Führen Sie Windows mit Visual Studio 2015 und Xamarin 4 innerhalb von Parallels oder VMWare aus.  Bei dieser Konfiguration stellt Xamarin eine Erweiterung dar, die zusammen mit Visual Studio installiert wird und die Möglichkeit bereitstellt, Visual Studio als Ihre Entwicklungsumgebung für das Erstellen von Android-, iOS- und WinPhone-Apps mithilfe von C# zu verwenden.  Beachten Sie, dass Sie im Rahmen des Visual Studio Developer Essentials-Programms ein kostenloses Parallels-Abonnement für drei Monate erhalten können. Mehr dazu können Sie unter [Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) [Microsoft Visual Studio Dev Essentials beinhaltet zukünftig auch Parallels Desktop Pro und Parallels Access] (Parallels-Blog) erfahren.  
   
@@ -49,7 +45,7 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
   
 1.  Erstellen Sie eine kostenlose Apple ID unter [My Apple ID](https://appleid.apple.com/) , wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.  
   
-2.  Herunterladen und installieren Sie Xcode von [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/).  
+2.  Laden Sie Xcode von [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) herunter, und führen Sie die Installation durch.  
   
 3.  Laden Sie Xamarin herunter, und installieren Sie es, indem Sie die Anweisungen unter [Installing and Configuring Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) befolgen.  
   
@@ -57,7 +53,7 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
   
 ##  <a name="windows"></a> Windows-Setup innerhalb von Parallels (Visual Studio und Xamarin)  
   
-1.  Auf dem Windows-Desktop, den Sie innerhalb von Parallels/VMWare konfiguriert haben, können Sie [das Installationsprogramm für eine beliebige Edition von Visual Studio 2015 herunterladen und starten](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional oder Enterprise). Visual Studio 2015 Community ist die kostenlose Edition; die Editionen Professional und Enterprise können als Testversion für 30 Tage verwendet werden.  
+1.  Auf dem Windows-Desktop, den Sie innerhalb von Parallels/VMWare konfiguriert haben, können Sie [das Installationsprogramm für eine beliebige Edition von Visual Studio 2015 herunterladen und starten](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional oder Enterprise). Visual Studio 2015 Community ist die kostenlose Edition; die Editionen Professional und Enterprise können als Testversion für 30 Tage verwendet werden.  
   
 2.  Wählen Sie im Installationsprogramm eine **Benutzerdefinierte** Installation aus:  
   
@@ -115,7 +111,7 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
   
 2. Überprüfen Sie den Android-Designer: Öffnen Sie im Android-Projekt im Projektmappen-Explorer die Datei **Ressourcen > Layout > Main.axml**.  
   
-   -   Wenn Sie eine Fehlermeldung "Das installierte Android SDK ist veraltet", klicken Sie auf **Android SDK öffnen** in dieser Nachricht ein, und wählen Sie die neueste verfügbare SDK-Version. Beachten Sie, dass Sie Visual Studio als Administrator ausführen müssen, um das SDK zu aktualisieren.  
+   -   Wenn die Fehlermeldung „Das installierte Android SDK ist veraltet“ angezeigt wird, klicken Sie in dieser Nachricht auf **Android SDK öffnen**, und wählen Sie die neueste verfügbare SDK-Version aus. Beachten Sie, dass Sie Visual Studio als Administrator ausführen müssen, um das SDK zu aktualisieren.  
   
 3. Überprüfen Sie, ob Sie aus Visual Studio eine Verbindung zu dem Emulator herstellen können, der auf dem Mac installiert ist.  Das Ergebnis dieses Vorgangs ist, dass der Xamarin Player in der Liste der Emulatoren angezeigt wird, die in Visual Studio zum Debuggen ausgewählt werden können.  Folgen Sie hierzu den Anweisungen unter [Connecting Visual Studio to the Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (xamarin.com).  
   
@@ -138,4 +134,3 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
    3.  Wählen Sie in der Debug-Dropdownliste von Visual Studio ein iPhone-Ziel aus, und starten Sie den Debugger, indem Sie F5 drücken. Dadurch wird der Simulator auf dem Mac gestartet, auf dem Sie mit der App interagieren, während das Debuggen in Visual Studio erfolgt.  
   
         ![Auswählen eines iPhones als Debugziel](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
-

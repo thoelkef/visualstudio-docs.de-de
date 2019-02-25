@@ -10,31 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927839"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683047"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Erweitern von anderen Teilen von Visual Studio
-Es gibt viele weitere Teile der Benutzeroberfläche von Visual Studio, die Sie erweitern können. Hier zeigen wir Ihnen ein Paar.  
-  
-## <a name="create-a-vspackage"></a>Erstellen Sie ein VSPackage  
- Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie eine VSPackage hinzufügen: [Erstellen Sie eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
-  
-## <a name="extend-the-toolbox"></a>Erweitern der Toolbox  
- Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:  
-  
--   [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)  
-  
--   [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)  
-  
-## <a name="extend-the-status-bar"></a>Erweitern der Statusleiste  
- Erfahren Sie, wie Lese- und Schreibberechtigungen für die Statusleiste und die Statusanzeige und Animationen und andere Benutzeroberfläche bereitstellen: [Erweitern die Statusleiste](../extensibility/extending-the-status-bar.md).  
-  
-## <a name="create-custom-start-pages"></a>Benutzerdefinierte Startseiten erstellen  
- Erfahren Sie, wie Sie eine eigene Startseite, entweder von Grund auf neu oder aus einem herunterladbaren Start-Seite-Beispiel: [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md).  
-  
-## <a name="write-to-the-activity-log"></a>Schreiben Sie in das Aktivitätsprotokoll  
- Erfahren Sie, wie in das Aktivitätsprotokoll geschrieben: [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).
+
+Es gibt viele weitere Teile der Benutzeroberfläche von Visual Studio, die Sie erweitern können. Hier zeigen wir Ihnen ein Paar.
+
+## <a name="create-a-vspackage"></a>Erstellen Sie ein VSPackage
+
+Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie eine VSPackage hinzufügen: [Erstellen Sie eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+
+## <a name="extend-the-toolbox"></a>Erweitern der Toolbox
+
+Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:
+
+-   [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)
+
+-   [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
+
+## <a name="extend-the-status-bar"></a>Erweitern der Statusleiste
+
+Erfahren Sie, wie Lese- und Schreibberechtigungen für die Statusleiste und die Statusanzeige und Animationen und andere Benutzeroberfläche bereitstellen: [Erweitern die Statusleiste](../extensibility/extending-the-status-bar.md).
+
+::: moniker range="vs-2017"
+
+## <a name="create-custom-start-pages"></a>Benutzerdefinierte Startseiten erstellen
+
+Erfahren Sie, wie Sie eine eigene Startseite, entweder von Grund auf neu oder aus einem herunterladbaren Start-Seite-Beispiel: [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md).
+
+::: moniker-end
+
+## <a name="write-to-the-activity-log"></a>Schreiben Sie in das Aktivitätsprotokoll
+
+Erfahren Sie, wie in das Aktivitätsprotokoll geschrieben: [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).

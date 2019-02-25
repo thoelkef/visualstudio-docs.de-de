@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b93a2b4dcc541f32c16766da0dd9dd19a4fdfe0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54759755"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;als veraltet markiert&gt; (JavaScript)
@@ -40,7 +40,7 @@ Gibt eine veraltete Funktion oder Methode an.
  `description`  
  Dies ist optional. Eine Beschreibung der Funktion oder Methode, die veraltet ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Elemente, die verwendet werden, um Funktionen, wie unter anderem `<deprecated>`, mit Anmerkungen zu versehen und müssen vor allen Anweisungen in den Funktionstext eingefügt werden. Wenn Sie eine Funktion als veraltet markieren, es wird empfohlen, die Sie ersetzen die [ \<summary >](../ide/summary-javascript.md) -Element mit der `<deprecated>` Element.  
   
 ## <a name="example"></a>Beispiel  

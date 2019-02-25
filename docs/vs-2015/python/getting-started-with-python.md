@@ -27,11 +27,11 @@ Python ist eine beliebte Programmiersprache, die von vielen Universitäten, Wiss
 
 Ist als eine Programmiersprache Python:
   
-- Zuverlässig
+- Zuverlässig.
 - In der Regel nützlich für die Skripterstellung schnellen Erstellen von Programmen, app-Skripts, desktop-apps, Webserver, Webdienste und wissenschaftliche Berechnungen.
-- Einfach zu erlernen, unterstützt dank seiner guten Struktur eine saubere Programmierung (viele Universitäten nutzen die Sprache in Kursen zur Einführung in die Programmierung)
+- Einfach zu erlernen und unterstützt dank seiner übersichtlichen Struktur eine saubere Programmierung (viele Universitäten wenden Python in Einführungskursen in die Programmierung an).
 - Flexible, zwingend erforderlich, funktionale und objektorientierte Programmierung Formate unterstützen.
-- Kostenlos und Open Source
+- Kostenlos und Open Source.
 - Lässt sich problemlos auf allen wichtigen Betriebssystemen.  
 - Unterstützt viele kostenlose, hilfreiche und gut entworfene-Bibliotheken.  
 - Unterstützt zahlreiche Dokumentation, Beispiele und einer starken Entwicklercommunity.  
@@ -46,7 +46,7 @@ Um Python selbst zu installieren, besuchen Sie [ https://www.python.org/download
 Die Python-Tools für Visual Studio, die Installation von [visualstudio.com](https://www.visualstudio.com/explore/python-vs), bieten die folgenden Features:  
   
 - Unterstützung von mehreren Interpretern: verschiedene Versionen von CPython, IronPython und IPython  
-- Ein Projektsystem, das implizit eine Ordnerstruktur des Python-Codes übernimmt, und auch eine explizite Steuerung ermöglicht, sodass Sie App-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können.  
+- Ein Projektsystem, das implizit eine Ordnerstruktur aus Python-Code übernimmt und eine explizite Steuerung ermöglicht, sodass Sie App-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können.  
 - Projektvorlagen für Konsole, Internet, Azure, Data Science und andere Projekttypen.    
 - Das Azure SDK für Python (siehe unten)    
 - Umfangreiche Funktionen zur Bearbeitung und Kennzeichnung von Codes: Syntaxfarbgebung, automatischer Abschluss über den gesamten Code und allen Bibliotheken hinweg, Signaturhilfe, Klassenansicht, „Gehe zu Definition“, „Alle Verweise suchen“ und vieles mehr.    

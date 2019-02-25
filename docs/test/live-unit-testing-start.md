@@ -1,7 +1,6 @@
 ---
-title: Testen Ihres Codes mit Livekomponententests 2017 | Microsoft-Dokumentation
+title: Erfahren Sie, wie Sie Ihren Code mit Live Unit Testing testen
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950304"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -24,8 +23,11 @@ Wenn Sie Live Unit Testing in einer Visual Studio-Projektmappe aktivieren, werde
 Live Unit Testing kann zum Testen von Projektmappen für .NET Framework oder .NET Core verwendet werden. In diesem Tutorial erlernen Sie die Verwendung von Live Unit Testing, indem Sie eine einfache Klassenbibliothek für .NET Standard erstellen. Des Weiteren erstellen Sie zu Testzwecken ein MSTest-Projekt für .NET Core.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 Die vollständige C#-Projektmappe kann aus dem Repository [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) auf GitHub heruntergeladen werden.
+
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 Die vollständige Visual Basic-Projektmappe kann aus dem Repository [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) auf GitHub heruntergeladen werden.
 
 ---
@@ -51,6 +53,7 @@ Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie 
 Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit dem Namen `StringLibrary`, die einige Erweiterungsmethoden für das Arbeiten mit Zeichenfolgen enthält.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Standard** aus.
@@ -76,9 +79,10 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
       - `HasEmbeddedSpaces` gibt `true` zurück, wenn eine Zeichenfolge mit einem Leerzeichen beginnt; andernfalls wird `false` zurückgegeben.
 
-1.  Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+1. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Standard** aus.
@@ -108,7 +112,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
    ![Das Dialogfeld „Projekteigenschaften für ein Visual Basic-Projekt“](./media/lut-start/vb-properties.png)
 
-1.  Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+1. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 ---
 
@@ -117,6 +121,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibrary`-Bibliothek erstellt. Führen Sie die folgenden Schritte aus, um die Komponententests zu erstellen:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Core** aus.
@@ -208,9 +213,11 @@ Bisher haben Sie die Tests für die `StringLibrary`-Klassenbibliothek zwar gesch
 Nach Abschluss der Testausführung zeigt der **Test-Explorer** die Gesamtergebnisse und das Ergebnis der einzelnen Tests an. Darüber hinaus werden die Code Coverage der Tests und das Ergebnis Ihrer Tests im Codefenster grafisch dargestellt. Wie in der folgenden Abbildung zu sehen ist, wurden alle drei Tests erfolgreich ausgeführt. Zudem ist zu sehen, dass die Tests alle Codepfade in der Methode `StartsWithUpper` abgedeckt haben, und dass diese Tests alle erfolgreich ausgeführt wurden (durch das grüne Häkchen „✓“ gekennzeichnet). Schließlich ist zu sehen, dass keine der anderen Methoden in `StringLibrary` über eine Code Coverage verfügt (dies wird durch eine blaue Linie „➖“ gekennzeichnet).
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![Das Fenster „Test-Explorer“ und das Codefenster nach dem Starten von Live Unit Testing](media/lut-start/lut-results-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![Das Fenster „Test-Explorer“ und das Codefenster nach dem Starten von Live Unit Testing](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +225,7 @@ Nach Abschluss der Testausführung zeigt der **Test-Explorer** die Gesamtergebni
 Ausführlichere Informationen zu Testabdeckung und Testergebnissen erhalten Sie, indem Sie im Codefenster ein bestimmtes Code Coverage-Symbol auswählen. Gehen Sie wie folgt vor, um diese Details zu prüfen:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Klicken Sie in der Zeile, in der `if (String.IsNullOrWhiteSpace(s))` bei der Methode `StartsWithUpper` steht, auf das grüne Häkchen. Wie in der folgenden Abbildung zu sehen ist, gibt Live Unit Testing an, dass drei Tests diese Codezeile abdecken und dass alle Tests erfolgreich ausgeführt wurden.
 
    ![Code Coverage für die Bedingungsanweisung „if“](media/lut-start/code-coverage-cs1.png)
@@ -227,6 +235,7 @@ Ausführlichere Informationen zu Testabdeckung und Testergebnissen erhalten Sie,
    ![Code Coverage für die return-Anweisung](media/lut-start/code-coverage-cs2.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Klicken Sie in der Zeile, in der `If (String.IsNullOrWhiteSpace(s)) Then` bei der Methode `StartsWithUpper` steht, auf das grüne Häkchen. Wie in der folgenden Abbildung zu sehen ist, gibt Live Unit Testing an, dass drei Tests diese Codezeile abdecken und dass alle Tests erfolgreich ausgeführt wurden.
 
    ![Code Coverage für die Bedingungsanweisung „if“](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +255,7 @@ In diesem Abschnitt erweitern Sie die Komponententests um die Methode `StartsWit
 Gehen Sie wie folgt vor, um die Code Coverage um die Methode `StartsWithLower` zu erweitern:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Fügen Sie die folgenden Methoden `TestStartsWithLower` und `TestDoesNotStartWithLower` zur Testquellcodedatei Ihres Projekts hinzu:
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -263,6 +273,7 @@ Gehen Sie wie folgt vor, um die Code Coverage um die Methode `StartsWithLower` z
     ![Code Coverage für die Methode StartsWithLower](media/lut-start/lut-extended-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Fügen Sie die folgenden Methoden `TestStartsWithLower` und `TestDoesNotStartWithLower` zur Testquellcodedatei Ihres Projekts hinzu:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +301,7 @@ Bisher wurden alle Tests erfolgreich abgeschlossen. Im nächsten Abschnitt unter
 In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehler ermitteln, behandeln und beheben können. Hierzu müssen Sie die Testabdeckung um die Methode `HasEmbeddedSpaces` erweitern.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Fügen Sie die folgende Methode zu Ihrer Testdatei hinzu:
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -323,6 +335,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
 1. Klicken Sie auf **Debuggen** > **Fortfahren**, drücken Sie **F5**, oder klicken Sie in der Symbolleiste auf die Schaltfläche **Fortfahren**, um mit der Ausführung des Testprogramms fortzufahren. Der Test wird aufgrund eines Ausnahmefehlers beendet.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Fügen Sie die folgende Methode zu Ihrer Testdatei hinzu:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +373,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
 Die gelieferten Informationen sind für eine vorläufige Untersuchung des Fehlers ausreichend. Sämtliche eingebettete Leerzeichen werden entweder dadurch, dass `TestHasEmbeddedSpaces` (die Testroutine) von falschen Voraussetzungen ausgeht, oder von `HasEmbeddedSpaces` nicht ordnungsgemäß erkannt. Starten Sie mit der `StringLibrary.HasEmbeddedSpaces`-Methode, um das Problem zu diagnostizieren und zu beheben:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Sehen Sie sich den Vergleich in der `HasEmbeddedSpaces`-Methode an. Darin wird angenommen, dass U+0020 für ein eingebettetes Leerzeichen steht. Der Unicode-Standard enthält jedoch mehrere andere Leerzeichen. Dies deutet darauf hin, dass der Bibliothekscode nicht ordnungsgemäß auf ein Leerzeichen getestet wurde.
 
 1. Ersetzen Sie den Übereinstimmungsvergleich durch einen Aufruf der <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>-Methode:
@@ -371,6 +385,7 @@ Die gelieferten Informationen sind für eine vorläufige Untersuchung des Fehler
     ![Der erfolgreich ausgeführte Test der HasEmbeddedSpaces-Methode.](media/lut-start/test-success-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Sehen Sie sich den Vergleich in der `HasEmbeddedSpaces`-Methode an. Darin wird angenommen, dass U+0020 für ein eingebettetes Leerzeichen steht. Der Unicode-Standard enthält jedoch mehrere andere Leerzeichen. Dies deutet darauf hin, dass der Bibliothekscode nicht ordnungsgemäß auf ein Leerzeichen getestet wurde.
 
 1. Ersetzen Sie den Übereinstimmungsvergleich durch einen Aufruf der <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>-Methode:
@@ -384,5 +399,6 @@ Die gelieferten Informationen sind für eine vorläufige Untersuchung des Fehler
 ---
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Live Unit Testing in Visual Studio](live-unit-testing.md)
 - [Live Unit Testing – FAQ (Häufig gestellte Fragen)](live-unit-testing-faq.md)

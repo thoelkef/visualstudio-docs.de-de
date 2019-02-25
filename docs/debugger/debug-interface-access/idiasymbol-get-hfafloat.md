@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73ddcffe-cdac-4b03-be42-82ef985d17ee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e2ba5bc1059e0e3650329b48681687652ae143
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95454741aa20b083c768f0df9678e47b471f6fe3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043127"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Ruft ein Flag, das angibt, ob ein benutzerdefinierten Typ (UDT) homogene Gleitkomma (zu HFA) Aggregatdaten von Typ "float" enthält.  
@@ -40,7 +40,7 @@ HRESULT get_hfaFloat( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

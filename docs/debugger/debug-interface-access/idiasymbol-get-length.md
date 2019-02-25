@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e32585e44c7100d673b35e99ad0db081caa9fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b536aae5431163ae8ac6d7bd2a52d23ced662447
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941501"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Ruft die Anzahl der Bits oder Bytes an Arbeitsspeicher ein, die das Objekt, das durch dieses Symbol dargestellt.  
@@ -40,7 +40,7 @@ HRESULT get_length ( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols ist `LocIsBitField`, die von dieser Methode zurückgegebene Länge in Bits ist; andernfalls ist die Länge in Bytes für alle anderen Typen.  
   
 ## <a name="example"></a>Beispiel  
@@ -55,7 +55,7 @@ pSymbol->get_length( &length );
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

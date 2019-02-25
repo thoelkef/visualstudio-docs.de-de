@@ -12,67 +12,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a01ee4e4010782570d267d5b2e35d56fedb45a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9304f0bdcb414da37e70df66eca470999a685735
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984976"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706950"
 ---
 # <a name="scccheckout-function"></a>SccCheckout-Funktion
-Wenn eine Liste der vollqualifizierten Dateinamen, checkt diese Funktion sie auf dem lokalen Laufwerk. Der Kommentar gilt für alle Dateien, die ausgecheckt werden. Das kommentarargument möglich einen `null` Zeichenfolge.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-SCCRTN SccCheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
-);  
-```  
-  
-### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
-  
- hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
-  
- nFiles  
- [in] Anzahl der Dateien, die ausgecheckt werden sollen.  
-  
- lpFileNames  
- [in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien, die ausgecheckt werden.  
-  
- lpComment  
- [in] Der Kommentar, der auf die einzelnen ausgewählten Dateien ausgecheckt wird, angewendet werden.  
-  
- Bestanden  
- [in] Befehl Flags (finden Sie unter [von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)).  
-  
- pvOptions  
- [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
-  
-|Wert|Beschreibung|  
-|-----------|-----------------|  
-|SCC_OK|Sehen Sie sich war erfolgreich.|  
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung befindet.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Die Datei wurde nicht ausgecheckt.|  
-|SCC_E_ALREADYCHECKEDOUT|Der Benutzer hat bereits die Datei ausgecheckt haben.|  
-|SCC_E_FILEISLOCKED|Die Datei ist gesperrt, verbietet die Erstellung neuer Versionen.|  
-|SCC_E_FILEOUTEXCLUSIVE|Einem anderen Benutzer hat exklusiv ausgecheckt für diese Datei ausgeführt werden.|  
-|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
- [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)
+Wenn eine Liste der vollqualifizierten Dateinamen, checkt diese Funktion sie auf dem lokalen Laufwerk. Der Kommentar gilt für alle Dateien, die ausgecheckt werden. Das kommentarargument möglich einen `null` Zeichenfolge.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+SCCRTN SccCheckout (
+   LPVOID    pvContext,
+   HWND      hWnd,
+   LONG      nFiles,
+   LPCSTR*   lpFileNames,
+   LPCSTR    lpComment,
+   LONG      fOptions,
+   LPCMDOPTS pvOptions
+);
+```
+
+### <a name="parameters"></a>Parameter
+ pvContext
+
+[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+
+ hWnd
+
+[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+
+ nFiles
+
+[in] Anzahl der Dateien, die ausgecheckt werden sollen.
+
+ lpFileNames
+
+[in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien, die ausgecheckt werden.
+
+ lpComment
+
+[in] Der Kommentar, der auf die einzelnen ausgewählten Dateien ausgecheckt wird, angewendet werden.
+
+ Bestanden
+
+[in] Befehl Flags (finden Sie unter [von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)).
+
+ pvOptions
+
+[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+
+## <a name="return-value"></a>Rückgabewert
+ Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+
+|Wert|Beschreibung|
+|-----------|-----------------|
+|SCC_OK|Sehen Sie sich war erfolgreich.|
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung befindet.|
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Die Datei wurde nicht ausgecheckt.|
+|SCC_E_ALREADYCHECKEDOUT|Der Benutzer hat bereits die Datei ausgecheckt haben.|
+|SCC_E_FILEISLOCKED|Die Datei ist gesperrt, verbietet die Erstellung neuer Versionen.|
+|SCC_E_FILEOUTEXCLUSIVE|Einem anderen Benutzer hat exklusiv ausgecheckt für diese Datei ausgeführt werden.|
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|
+
+## <a name="see-also"></a>Siehe auch
+- [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)

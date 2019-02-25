@@ -1,13 +1,9 @@
 ---
 title: Benutzerberechtigungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
@@ -17,13 +13,13 @@ ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 34eab1bed0113c3fbe39574c9ef2a4c2822af5c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858369"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54775871"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +34,7 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 |Bereich|Aufgabe|Weitere Informationen|
 |----------|----------|--------------------------|
 |Installation|Installieren von Visual Studio.|[Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Aktualisieren von einer Testversion von Visual Studio.|[Vorgehensweise: Upgrade von einer Testedition von Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Aktualisieren von einer Testversion von Visual Studio.|[Gewusst wie: Aktualisieren von einer Visual Studio-Testversion](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Installieren, Aktualisieren oder Entfernen der lokalen Hilfeinhalte.|[Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)|
 |Anwendungstypen|Entwickeln von Lösungen für SharePoint 2010.|[Anforderungen für die Entwicklung von SharePoint-Lösungen](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Erwerben einer Entwicklerlizenz für [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Anfordern einer Entwicklerlizenz (Windows Store-Apps)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -53,7 +49,7 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Leistungstools|Profilerstellung für eine Anwendung|[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)|
 |Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[Vorgehensweise: Send Feedback (Vorgehensweise: Senden von Feedback)](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Bereitstellen von Feedback für Microsoft|Ändern der Teilnahme am Visual Studio-Programm zur Verbesserung der Benutzerfreundlichkeit.|[Vorgehensweise: Senden von Feedback](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator
  Sie können Visual Studio bei jedem Starten der IDE mit Administratorberechtigungen starten, oder Sie können die Anwendungsverknüpfung so ändern, dass sie immer mit Administratorberechtigungen ausgeführt werden muss. Weitere Informationen finden Sie in der Windows-Hilfe.

@@ -1,7 +1,7 @@
 ---
 title: IDebugStopCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: gregvanl
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33272f87ae30832588a998ebea2fc46e9adaae50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3ec59d6e9a6008f195cab40fe5c1998aff24a50
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984235"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705280"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -30,7 +30,7 @@ IDebugStopCompleteEvent2 : IUnknown
 
 Diese Schnittstelle wurde mit Visual Studio 2005 eingeführt. Asynchrones beenden wurde von frühere Versionen nicht unterstützt.
 
-[Beenden Sie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird aufgerufen, durch die SDM mit mehreren Prozessen oder mit mehreren Programm Szenarios. Wenn ein Programm eine Beenden-Ereignis, das SDM sendet, fordert das SDM andere Programme zu beenden.
+- [Beenden Sie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) wird aufgerufen, durch die SDM mit mehreren Prozessen oder mit mehreren Programm Szenarios. Wenn ein Programm eine Beenden-Ereignis, das SDM sendet, fordert das SDM andere Programme zu beenden.
 
 Beenden wird verwendet, um asynchron die SDM zu informieren, die ein Programm beendet wurde. Informiert das SDM eignet sich für ein Interpreter-Debug-Engine, dem manchmal innerhalb der debuggten kein Code ausgeführt wird programmieren, also [beenden](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) nicht synchron abgeschlossen werden kann. Wenn eine Debug-Engine diese asynchrone Benachrichtigung einsetzen will, muss es zurückgeben `S_ASYNC_STOP` aus [beenden](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 

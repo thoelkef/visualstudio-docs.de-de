@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704c1cc0-5b84-4334-a02a-70f43aff39d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817d515d9ab744ec7be146e6ee39373cb7d2d2ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 122a71289fc11e4301476c90e7ed9267cce18681
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014821"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 Ruft ein Flag, das angibt, ob die Funktion markiert ist, als die kein Ergebnis zurückgegeben, mit der [Noreturn](/cpp/cpp/noreturn) Attribut.  
@@ -44,7 +44,7 @@ HRESULT get_noReturn(
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

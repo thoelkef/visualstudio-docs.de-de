@@ -13,40 +13,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81c907e54f2334a6b8792da50c38cbdcd4be99f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 16c772ac411669cde082475840197ec2f12c9fb2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865865"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646537"
 ---
 # <a name="how-to-create-an-application-page"></a>Vorgehensweise: Erstellen einer Anwendungsseite
-  Sie können einer ASP.NET-Webseite für eine oder mehrere SharePoint-Websites erstellen. In SharePoint werden diese Seiten Anwendungsseiten bezeichnet. Im Gegensatz zu einer Webseite enthält eine Anwendungsseite Code, der hinter der Seite ausgeführt wird. Weitere Informationen finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
-  
-### <a name="to-create-an-application-page"></a>So erstellen Sie eine Anwendungsseite  
-  
-1.  Öffnen oder erstellen Sie in Visual Studio ein SharePoint-Projekt.  
-  
-     Weitere Informationen finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).  
-  
-2.  Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.  
-  
-3.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.  
-  
-4.  In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Element.  
-  
-5.  Wählen Sie in der Liste der SharePoint-Vorlagen, **Anwendungsseite**.  
-  
-6.  In der **Namen** Feld Geben Sie einen Namen für die Seite "Anwendung", und wählen Sie dann die **hinzufügen** Schaltfläche.  
-  
-     Visual Studio fügt dem Projekt mehrere Ordner und Dateien hinzu. Weitere Informationen zu diesen Dateien finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
-  
-     In der **Quelle** Ansicht des Visual Web Developer-Designers die Auslagerungsdatei von ASP.NET wird angezeigt. Sie können die Seite entwerfen, durch das Hinzufügen von Steuerelementen aus der **Toolbox** und platzieren sie auf den Platzhalter für Inhalte. Weitere Informationen finden Sie unter [Quellansicht, Webseiten-Designer](/previous-versions/aspnet/ms178154\(v\=vs.100\)).  
-  
-7.  Wenn Sie die Steuerelementereignisse behandeln möchten, fügen Sie Code hinzu, um die Codedatei für die Seite "Anwendung".  
-  
-     Die Codedatei wird angezeigt, wenn Sie den Knoten für die Auslagerungsdatei ASP.NET erweitern, und verfügt über eine *cs* oder *vb* Erweiterung, abhängig von der Sprache des Projekts. Ein End-to-End-Beispiel zum Erstellen einer Anwendungsseite, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
-  
+  Sie können einer ASP.NET-Webseite für eine oder mehrere SharePoint-Websites erstellen. In SharePoint werden diese Seiten Anwendungsseiten bezeichnet. Im Gegensatz zu einer Webseite enthält eine Anwendungsseite Code, der hinter der Seite ausgeführt wird. Weitere Informationen finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+
+### <a name="to-create-an-application-page"></a>So erstellen Sie eine Anwendungsseite
+
+1.  Öffnen oder erstellen Sie in Visual Studio ein SharePoint-Projekt.
+
+     Weitere Informationen finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
+
+2.  Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.
+
+3.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+
+4.  In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Element.
+
+5.  Wählen Sie in der Liste der SharePoint-Vorlagen, **Anwendungsseite**.
+
+6.  In der **Namen** Feld Geben Sie einen Namen für die Seite "Anwendung", und wählen Sie dann die **hinzufügen** Schaltfläche.
+
+     Visual Studio fügt dem Projekt mehrere Ordner und Dateien hinzu. Weitere Informationen zu diesen Dateien finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+
+     In der **Quelle** Ansicht des Visual Web Developer-Designers die Auslagerungsdatei von ASP.NET wird angezeigt. Sie können die Seite entwerfen, durch das Hinzufügen von Steuerelementen aus der **Toolbox** und platzieren sie auf den Platzhalter für Inhalte. Weitere Informationen finden Sie unter [Quellansicht, Webseiten-Designer](/previous-versions/aspnet/ms178154\(v\=vs.100\)).
+
+7.  Wenn Sie die Steuerelementereignisse behandeln möchten, fügen Sie Code hinzu, um die Codedatei für die Seite "Anwendung".
+
+     Die Codedatei wird angezeigt, wenn Sie den Knoten für die Auslagerungsdatei ASP.NET erweitern, und verfügt über eine *cs* oder *vb* Erweiterung, abhängig von der Sprache des Projekts. Ein End-to-End-Beispiel zum Erstellen einer Anwendungsseite, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
+
 ## <a name="see-also"></a>Siehe auch
- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
+- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

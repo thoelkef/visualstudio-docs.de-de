@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyField::GetPropertySetter | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyField::GetPropertySetter
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2f9ef2eabe27c2fb1d6c0b27bd1db9c8a11b490
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a661fb9bea0f04b8fc0114473ccedc46e1e478ce
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946778"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717064"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
-Ruft die Methode ab, die die Eigenschaft festlegt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetPropertySetter(   
-   IDebugMethodField** ppField  
-);  
-```  
-  
-```csharp  
-int GetPropertySetter(  
-   out IDebugMethodField ppField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppField`  
- [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft festlegt darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Rufen Sie zum Abrufen der Methode, die die Eigenschaft ruft die [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) Methode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)
+Ruft die Methode ab, die die Eigenschaft festlegt.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetPropertySetter( 
+   IDebugMethodField** ppField
+);
+```
+
+```csharp
+int GetPropertySetter(
+   out IDebugMethodField ppField
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppField`
+
+ [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft festlegt darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Rufen Sie zum Abrufen der Methode, die die Eigenschaft ruft die [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) Methode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

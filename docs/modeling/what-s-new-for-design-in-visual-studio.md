@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02a27775a84dab7d95571665b7fad96e223ec45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933677"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316001"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
 
@@ -38,7 +38,7 @@ Die **Architektur** enthält einen Befehl aus, um direkt zu einem Abhängigkeits
 
 Sie sehen jetzt die Auswirkungen der Änderungen sofort in die Analyseergebnisse, nach dem aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht mehr auf den Abschluss des Befehls "Abhängigkeiten überprüfen" zu warten.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML-Designern wurden entfernt.
 
@@ -59,7 +59,7 @@ Unterstützung für die Architektur von .NET und C++-Code zu visualisieren über
 
 Wenn Sie eine erhebliche UML-Designern verwenden, können Sie weiterhin Visual Studio 2015 oder früher verwenden, während Sie möchten eine alternative Tool für Ihre Anforderungen UML.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

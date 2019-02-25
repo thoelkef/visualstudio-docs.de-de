@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037836"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335245"
 ---
 # <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekten
 
@@ -65,7 +65,7 @@ Wenn Sie eine geschachtelte Projekt erstellen, stehen einige zusätzliche Schrit
      Da über- und untergeordneten Projekte programmgesteuert instanziiert werden, können Sie die Eigenschaften für geschachtelte Projekte an diesem Punkt festlegen.
 
     > [!NOTE]
-    > Nicht nur erhalten Sie die Kontextinformationen aus dem geschachtelten Projekt, sondern können auch gefragt, ob das übergeordnete Projekt einen beliebigen Kontext für dieses Element durch die Überprüfung hat <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Auf diese Weise können Sie zusätzliche dynamische Hilfe-Attribute und bestimmte Optionen für einzelne geschachtelte Projekte hinzufügen.
+    > Nicht nur erhalten Sie die Kontextinformationen aus dem geschachtelten Projekt, sondern können auch gefragt, ob das übergeordnete Projekt einen beliebigen Kontext für dieses Element durch die Überprüfung hat [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Auf diese Weise können Sie zusätzliche dynamische Hilfe-Attribute und bestimmte Optionen für einzelne geschachtelte Projekte hinzufügen.
 
 10. Die Hierarchie wird erstellt, für die Anzeige in **Projektmappen-Explorer** durch einen Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> Methode.
 

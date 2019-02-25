@@ -3,14 +3,14 @@ title: Einrichten eines Git-Repositorys
 description: Verwenden von Git und Subversion in Visual Studio für Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796969"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317347"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -87,9 +87,45 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
 ## <a name="publishing-a-new-project"></a>Veröffentlichen eines neuen Projekts
 
-Das Dialogfeld „Neues Projekt“ kann verwendet werden, um ein neues Projekt mithilfe von Git zu veröffentlichen. Um dies zu aktivieren, aktivieren Sie das Kontrollkästchen **Git-Versionskontrolle verwenden.** , wie im folgenden Screenshot dargestellt. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale GITIGNORE-Datei hinzugefügt:
+Das Dialogfeld „Neues Projekt“ kann zum Erstellen eines neuen Projekts mit einem lokalen Git-Repository verwendet werden. Aktivieren Sie wie im folgenden Screenshot zu sehen das Kontrollkästchen **Use git for version control** (Git zur Versionskontrolle verwenden), damit Sie dieses Dialogfeld verwenden können. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale GITIGNORE-Datei hinzugefügt:
 
-![Übertragen von Änderungen mit einem Push an ein Remoterepository](media/version-control-git12.png)
+![Erstellen eines neuen Projekts mit Git-Unterstützung](media/version-control-git-publish-new1.png)
+
+Führen Sie die folgenden Schritte aus, um Ihr neues lokales Repository auf ein neues GitHub-Repository zu pushen:
+
+> [!NOTE]
+> Wenn Sie noch kein GitHub-Repository erstellt haben, lesen Sie sich den Abschnitt [Erstellen eines Remoterepository auf GitHub](#creating-a-remote-repo-on-github) durch.
+
+1. Erstellen Sie Ihren ersten Commit, indem Sie in der Menüleiste zu **Versionskontrolle > Review Solution and Commit** (Projektmappe überprüfen und committen) navigieren.
+
+2. Klicken Sie auf der Registerkarte „Status“ oben links auf **Committen**.
+
+3. Schreiben Sie eine Commitnachricht wie „First Commit“ (Erster Commit), und klicken Sie anschließend auf **Committen**:
+
+    ![Committen von ersten Änderungen am Git-Repository](media/version-control-git-publish-new2.png)
+
+4. Navigieren Sie als Nächstes in der Menüleiste zu **Versionskontrolle > Branches und Git-Remotespeicherorte verwalten**.
+
+5. Gehen Sie zur Registerkarte **Remotequellen**, und klicken Sie auf **Hinzufügen**.
+
+6. Fügen Sie im Fenster **Remotequelle** die Details zu Ihrem zuvor erstellten GitHub-Repository hinzu, und klicken Sie auf **OK**.
+
+    ![Konfigurieren von Remotequellen für das Git-Repository](media/version-control-git-publish-new3.png)
+
+7. Schließen Sie das Fenster **Git-Repositorykonfiguration**, und navigieren Sie anschließend in der Menüleiste zu **Versionskontrolle > Änderungen mit Push übertragen**.
+
+8. Klicken Sie im Fenster **Mit Push an Repository übertragen** auf die Schaltfläche **Änderungen mit Push übertragen**.
+
+    ![Änderungen auf das Remoterepository pushen](media/version-control-git-publish-new4.png)
+
+9. Geben Sie Ihren Benutzernamen und Ihre Kennwort für GitHub ein, wenn Sie dazu aufgefordert werden.
+
+> [!NOTE]
+> Wenn für Ihr Konto die zweistufige Authentifizierung aktiviert ist, müssen Sie ein Zugriffstoken erstellen, das anstelle eines Kennworts verwendet wird. Wenn Sie kein Zugriffstoken erstellt haben, führen Sie die Schritte in der Git-[Zugriffstoken](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)-Dokumentation aus.
+
+Dann pusht Visual Studio für Mac die Änderungen auf das GitHub-Remoterepository:
+
+![Bestätigung eines erfolgreichen Pushvorgangs](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Auschecken eines vorhandenen Repositorys
 

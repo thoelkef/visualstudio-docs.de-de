@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Festlegen von Buildereignissen (C#) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,13 +14,13 @@ ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781084"
 ---
 # <a name="how-to-specify-build-events-c"></a>Gewusst wie: Angeben von Buildereignissen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
 6.  Geben Sie im Feld **Postbuildereignis ausführen** das Postbuildereignis als auszuführende Bedingung an.  
   
     > [!NOTE]
-    >  Um umfangreiche Syntax hinzuzufügen, oder wählen Sie Buildmakros aus den [Pre-Build Event/Post-build über die Befehlszeile Dialogfeld](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klicken Sie auf die Schaltfläche mit den Auslassungspunkten (**...** ) um ein Bearbeitungsfeld angezeigt.  
+    >  Um umfangreiche Syntax hinzuzufügen oder Buildmakros aus den [Dialogfeldern „Befehlszeile für Präbuildereignis“ und. „Befehlszeile für Postbuildereignis“](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) auszuwählen, klicken Sie auf das Symbol mit den Auslassungspunkten (**...**), damit ein Bearbeitungsfeld angezeigt wird.  
   
      Die Syntax des Buildereignisses kann beliebige Befehle enthalten, die für eine Eingabeaufforderung oder ein BAT-Datei zulässig sind. Dem Namen der Batchdatei sollte ein `call` vorangestellt sein, um sicherzustellen, dass alle nachfolgenden Befehle ausgeführt werden.  
   
@@ -193,6 +188,3 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
  [Dialogfeld „Befehlszeile für Präbuildereignis“/„Befehlszeile für Postbuildereignis“](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

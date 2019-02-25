@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
@@ -11,144 +11,146 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c530960010e3e42fcb65a5b4b1af883eaa22ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955046"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719010"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-Ruft die Klassen mit dem angegebenen Attribut in einem bestimmten Modul ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-[C++]  
-HRESULT GetAttributedClassesinModule (  
-   ULONG32            ulAppDomainID,  
-   GUID               guidModule,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```  
-[C#]  
-int GetAttributedClassesinModule (  
-   uint                 ulAppDomainID,  
-   Guid                 guidModule,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ulAppDomainID`  
- [in] Der Bezeichner der Anwendungsdomäne.  
-  
- `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
-  
- `pstrAttribute`  
- [in] Die Attributzeichenfolge.  
-  
- `ppEnum`  
- [out] Gibt eine Enumeration der attributierten Klassen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    __in_z LPOLESTR pstrAttribute,  
-    IEnumDebugFields** ppEnum  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    CComPtr<IMetaDataImport> pMetaData;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-    const void* pUnused;  
-    ULONG cbUnused;  
-    HCORENUM hEnum = 0;  
-    ULONG cTypeDefs = 0;  
-    ULONG cEnum;  
-    DWORD iTypeDef = 0;  
-    mdTypeDef* rgTypeDefs = NULL;  
-    IDebugField** rgFields = NULL;  
-    DWORD ctField = 0;  
-    CEnumDebugFields* pEnumFields = NULL;  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::GetAttributedClassesinModule );  
-  
-    IfFalseGo( pstrAttribute && ppEnum , E_INVALIDARG );  
-    IfFailGo( GetModule( idModule, &pModule ) );  
-    pModule->GetMetaData( &pMetaData );  
-  
-    IfFailGo( pMetaData->EnumTypeDefs( &hEnum,  
-                                       NULL,  
-                                       0,  
-                                       &cTypeDefs ) );  
-  
-    IfFailGo( pMetaData->CountEnum( hEnum, &cEnum ) );  
-    pMetaData->CloseEnum(hEnum);  
-    hEnum = NULL;  
-  
-    IfNullGo( rgTypeDefs = new mdTypeDef[cEnum], E_OUTOFMEMORY );  
-    IfNullGo( rgFields = new IDebugField * [cEnum], E_OUTOFMEMORY );  
-  
-    IfFailGo( pMetaData->EnumTypeDefs( &hEnum,  
-                                       rgTypeDefs,  
-                                       cEnum,  
-                                       &cTypeDefs ) );  
-  
-    for ( iTypeDef = 0; iTypeDef < cTypeDefs; iTypeDef++)  
-    {  
-  
-        if (pMetaData->GetCustomAttributeByName( rgTypeDefs[iTypeDef],  
-                pstrAttribute,  
-                &pUnused,  
-                &cbUnused ) == S_OK)  
-        {  
-            if (CreateClassType( idModule, rgTypeDefs[iTypeDef], rgFields + ctField) == S_OK)  
-            {  
-                ctField++;  
-            }  
-            else  
-            {  
-                ASSERT(!"Failed to Create Attributed Class");  
-            }  
-        }  
-    }  
-  
-    IfNullGo( pEnumFields = new CEnumDebugFields, E_OUTOFMEMORY );  
-    IfFailGo( pEnumFields->Initialize(rgFields, ctField) );  
-    IfFailGo( pEnumFields->QueryInterface( __uuidof(IEnumDebugFields),  
-                                           (void**) ppEnum ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::GetAttributedClassesinModule, hr );  
-  
-    DELETERG( rgTypeDefs );  
-  
-    for ( iTypeDef = 0; iTypeDef < ctField; iTypeDef++)  
-    {  
-        RELEASE( rgFields[iTypeDef] );  
-    }  
-  
-    DELETERG( rgFields );  
-    RELEASE( pEnumFields );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Ruft die Klassen mit dem angegebenen Attribut in einem bestimmten Modul ab.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetAttributedClassesinModule (
+    ULONG32            ulAppDomainID,
+    GUID               guidModule,
+    LPOLESTR           pstrAttribute,
+    IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetAttributedClassesinModule (
+    uint                 ulAppDomainID,
+    Guid                 guidModule,
+    string               pstrAttribute,
+    out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`ulAppDomainID`
+
+ [in] Der Bezeichner der Anwendungsdomäne.
+
+`guidModule`
+
+ [in] Eindeutiger Bezeichner des Moduls.
+
+`pstrAttribute`
+
+ [in] Die Attributzeichenfolge.
+
+`ppEnum`
+
+ [out] Gibt eine Enumeration der attributierten Klassen.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    __in_z LPOLESTR pstrAttribute,
+    IEnumDebugFields** ppEnum
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    CComPtr<IMetaDataImport> pMetaData;
+    Module_ID idModule(ulAppDomainID, guidModule);
+    const void* pUnused;
+    ULONG cbUnused;
+    HCORENUM hEnum = 0;
+    ULONG cTypeDefs = 0;
+    ULONG cEnum;
+    DWORD iTypeDef = 0;
+    mdTypeDef* rgTypeDefs = NULL;
+    IDebugField** rgFields = NULL;
+    DWORD ctField = 0;
+    CEnumDebugFields* pEnumFields = NULL;
+
+    METHOD_ENTRY( CDebugSymbolProvider::GetAttributedClassesinModule );
+
+    IfFalseGo( pstrAttribute && ppEnum , E_INVALIDARG );
+    IfFailGo( GetModule( idModule, &pModule ) );
+    pModule->GetMetaData( &pMetaData );
+
+    IfFailGo( pMetaData->EnumTypeDefs( &hEnum,
+                                       NULL,
+                                       0,
+                                       &cTypeDefs ) );
+
+    IfFailGo( pMetaData->CountEnum( hEnum, &cEnum ) );
+    pMetaData->CloseEnum(hEnum);
+    hEnum = NULL;
+
+    IfNullGo( rgTypeDefs = new mdTypeDef[cEnum], E_OUTOFMEMORY );
+    IfNullGo( rgFields = new IDebugField * [cEnum], E_OUTOFMEMORY );
+
+    IfFailGo( pMetaData->EnumTypeDefs( &hEnum,
+                                       rgTypeDefs,
+                                       cEnum,
+                                       &cTypeDefs ) );
+
+    for ( iTypeDef = 0; iTypeDef < cTypeDefs; iTypeDef++)
+    {
+
+        if (pMetaData->GetCustomAttributeByName( rgTypeDefs[iTypeDef],
+                pstrAttribute,
+                &pUnused,
+                &cbUnused ) == S_OK)
+        {
+            if (CreateClassType( idModule, rgTypeDefs[iTypeDef], rgFields + ctField) == S_OK)
+            {
+                ctField++;
+            }
+            else
+            {
+                ASSERT(!"Failed to Create Attributed Class");
+            }
+        }
+    }
+
+    IfNullGo( pEnumFields = new CEnumDebugFields, E_OUTOFMEMORY );
+    IfFailGo( pEnumFields->Initialize(rgFields, ctField) );
+    IfFailGo( pEnumFields->QueryInterface( __uuidof(IEnumDebugFields),
+                                           (void**) ppEnum ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::GetAttributedClassesinModule, hr );
+
+    DELETERG( rgTypeDefs );
+
+    for ( iTypeDef = 0; iTypeDef < ctField; iTypeDef++)
+    {
+        RELEASE( rgFields[iTypeDef] );
+    }
+
+    DELETERG( rgFields );
+    RELEASE( pEnumFields );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

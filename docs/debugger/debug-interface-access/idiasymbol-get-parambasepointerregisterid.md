@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f5caeb4-5c88-4054-bf8b-50d34bbbf8c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd02fde67db2b72d34df9d04a16ebc9c80d197e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4e9ef45c3b376aac3252e35bfb3e6c95eac62a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014902"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 Ruft die ID des Registers, die einen grundlegenden Zeiger auf die Parameter enthält. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.  
@@ -40,7 +40,7 @@ HRESULT get_paramBasePointerRegisterId ( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  

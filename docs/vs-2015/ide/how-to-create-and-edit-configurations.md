@@ -20,13 +20,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767330"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
+# <a name="how-to-create-and-edit-configurations"></a>Gewusst wie: Erstellen und Bearbeiten von Konfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. Zum Beispiel können Sie ein Debugbuild konfigurieren, das von den Testern zum Suchen und Beheben von Problemen verwendet werden kann, und Sie können unterschiedliche Builds konfigurieren, die Sie an verschiedene Kunden verteilen können.  
@@ -126,4 +126,4 @@ Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. 
 ## <a name="see-also"></a>Siehe auch  
  [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [(NIB) Vorgehensweise: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

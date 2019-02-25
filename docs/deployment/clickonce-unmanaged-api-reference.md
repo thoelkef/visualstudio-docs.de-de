@@ -44,7 +44,7 @@ ms.locfileid: "54986669"
 ### <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, 0 x 80020009 (DISP_E_EXCEPTION).  
   
-### <a name="remarks"></a>Hinweise  
+### <a name="remarks"></a>Anmerkungen  
  Durch Aufrufen von CleanOnlineAppCache startet die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service, sofern er nicht bereits ausgeführt wird.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
@@ -68,7 +68,7 @@ ms.locfileid: "54986669"
 ### <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Gibt HRESULTFROMWIN32 zurück, wenn ein Puffer zu klein ist.  
   
-### <a name="remarks"></a>Hinweise  
+### <a name="remarks"></a>Anmerkungen  
  Zeiger darf nicht null sein. `pcwzActivationUrl` und `pcwzPathToDeploymentManifest` darf nicht leer sein.  
   
  Es ist der Verantwortung des Aufrufers, um die Aktivierungs-URL zu bereinigen. Beispielsweise Zeichen das Escapezeichen hinzufügen, wo sie benötigt werden, oder entfernen die Abfragezeichenfolge.  

@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935120"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318315"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -107,7 +107,7 @@ Alle Testprojekte müssen den entsprechenden NuGet-Verweis auf den .NET-Testadap
 
 Das **Testprojekt{} verweist auf keinen NuGet-Adapter für .NET. Die Testermittlung oder -ausführung funktioniert für dieses Projekt möglicherweise nicht. Es wird empfohlen, in jedem .NET-Testprojekt in der Projektmappe auf NuGet-Testadapter zu verweisen.**
 
-Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pakete für Testadapter verwenden. Diese Anforderung führt zu einer erheblichen Leistungsverbesserung und verursacht weniger Probleme bei der Continuous Integration. Weitere Informationen zur Einstellung der .NET-Testadaptererweiterung finden Sie in den [Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pakete für Testadapter verwenden. Diese Anforderung führt zu einer erheblichen Leistungsverbesserung und verursacht weniger Probleme bei der Continuous Integration. Weitere Informationen zur Einstellung der .NET-Testadaptererweiterung finden Sie in den [Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > Wenn Sie den NUnit 2-Testadapter verwenden und nicht zum NUnit 3-Testadapter migrieren können, haben Sie die Möglichkeit, dieses neue Ermittlungsverhalten in Visual Studio Version 15.8 unter **Extras** > **Optionen** > **Test** zu deaktivieren.

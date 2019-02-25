@@ -1,14 +1,9 @@
 ---
 title: Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793762"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Bearbeiten der Eigenschaften der UI-Aktion
   
  Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.  
   
- Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die UI-Aktion **Zur Webseite <http://Contoso1/default.aspx’> wechseln** vorhanden ist, können Sie die URL in `‘http://Contoso2/default.aspx’` ändern.  
+ Wenn ein Server beispielsweise nicht verfügbar und in Ihrem Webbrowser die UI-Aktion **Zur Webseite „<http://Contoso1/default.aspx’>“ wechseln** vorhanden ist, können Sie die URL in `‘http://Contoso2/default.aspx’` ändern.  
   
  ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Bearbeiten von Steuerelementeigenschaften  
@@ -125,7 +120,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
-- ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
+- ![Symbol "Vorsicht"](../test/media/caution.gif "Vorsicht") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
   
   **Tipps**  
   
@@ -133,7 +128,7 @@ Bearbeiten von Steuerelementeigenschaften
   
 - ![Tipp](../test/media/tip.png "Tip") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.  
   
-   - oder -   
+   - oder -  
   
    Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.  
   
@@ -149,7 +144,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
-- ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
+- ![Symbol "Vorsicht"](../test/media/caution.gif "Vorsicht") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
   
   **Tipps**  
   
@@ -167,7 +162,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
-- ![Symbol „Warnung](../test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
+- ![Symbol "Vorsicht"](../test/media/caution.gif "Vorsicht") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
   
   **Tipps**  
   
@@ -185,7 +180,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](../test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen der UI-Steuerelemente sicher, dass die Anwendung mit dem Test ausgeführt wird.  
+-   ![Symbol "Vorsicht"](../test/media/caution.gif "Vorsicht") **Warnung:** Stellen Sie vor dem Suchen der UI-Steuerelemente sicher, dass die Anwendung mit dem Test ausgeführt wird.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Einfügen einer Verzögerung vor einer UI-Aktion  
  Gelegentlich soll der Test möglicherweise auf bestimmte Ereignisse warten, z. B. das Anzeigen eines Fensters, das Ausblenden einer Statusleiste usw. Mit dem Editor für Tests der programmierten UI können Sie zu diesem Zweck vor einer UI-Aktion eine Verzögerung einfügen. Sie können angeben, wie viele Sekunden die Verzögerung dauern soll.  
@@ -210,7 +205,7 @@ Bearbeiten von Steuerelementeigenschaften
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
  [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -226,6 +221,3 @@ Bearbeiten von Steuerelementeigenschaften
  [Erstellen eines datengesteuerten Tests der programmierten UI](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generieren eines Tests der programmierten UI aus einer vorhandenen Aktionsaufzeichnung](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

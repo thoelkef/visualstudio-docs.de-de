@@ -11,61 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 016c1f88cff82e0bbe824bf3364c9123384a7470
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9367e412f66ded1fd009b31a4788ed4ecc86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021298"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718182"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement-element
-CommandPlacement-Element kann die Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü einbezogen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen dieser Elemente vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.  
-  
- Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >  
-  <Parent>... </Parent>  
-</CommandPlacement>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|guid|Erforderlich. Die Guid für den Befehlssatz, gemäß der [Symbols-Element](../extensibility/symbols-element.md).|  
-|id|Erforderlich. Die Id der Menüs, eine Gruppe oder ein Befehl aus, um die Platzierung gemäß der `Symbols Element`.|  
-|priority|Erforderlich. Bestimmt die visuelle Position des Elements in seinem übergeordneten Element.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|Übergeordnetes Element|Erforderlich. Der im Menü oder die Gruppe, die das Element platziert werden hostet.|  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[CommandPlacements-element](../extensibility/commandplacements-element.md)|Gibt Gruppen von CommandPlacements und CommandPlacement-Elementen.|  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
-<CommandPlacements>  
-  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
-    priority="0x0300">  
-    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>  
-  </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [CommandPlacements-element](../extensibility/commandplacements-element.md)   
- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+CommandPlacement-Element kann die Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü einbezogen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen dieser Elemente vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.
+
+ Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).
+
+## <a name="syntax"></a>Syntax
+
+```
+<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >
+  <Parent>... </Parent>
+</CommandPlacement>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|guid|Erforderlich. Die Guid für den Befehlssatz, gemäß der [Symbols-Element](../extensibility/symbols-element.md).|
+|id|Erforderlich. Die Id der Menüs, eine Gruppe oder ein Befehl aus, um die Platzierung gemäß der `Symbols Element`.|
+|priority|Erforderlich. Bestimmt die visuelle Position des Elements in seinem übergeordneten Element.|
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|Übergeordnetes Element|Erforderlich. Der im Menü oder die Gruppe, die das Element platziert werden hostet.|
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[CommandPlacements-element](../extensibility/commandplacements-element.md)|Gibt Gruppen von CommandPlacements und CommandPlacement-Elementen.|
+
+## <a name="example"></a>Beispiel
+
+```
+<CommandPlacements>
+  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"
+    priority="0x0300">
+    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>
+  </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [CommandPlacements-element](../extensibility/commandplacements-element.md)
+- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

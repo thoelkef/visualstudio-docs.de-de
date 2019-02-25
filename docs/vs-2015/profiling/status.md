@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770958"
 ---
 # <a name="status"></a>Status
@@ -30,9 +30,9 @@ VSPerfCmd.exe /Status
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Keiner  
+ Keine  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Option **Status** zeigt die folgenden Statusinformationen für den Profiler an.  
   
  **Name der Ausgabedatei**  

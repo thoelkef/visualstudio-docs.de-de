@@ -40,14 +40,14 @@ HRESULT get_offset ( 
 > [!NOTE]
 >  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der Offset wird von einem bestimmten bekannten Punkt zuvor ermittelt. Z. B. den Offset für einen `LocIsBitField` Speicherorttyp ist in der Regel am Anfang der enthaltenden Klasse.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

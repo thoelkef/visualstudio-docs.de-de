@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793938"
 ---
-# <a name="how-to-locate-the-visual-studio-product-key"></a>Vorgehensweise: Suchen des Visual Studio Product Key
+# <a name="how-to-locate-the-visual-studio-product-key"></a>Gewusst wie: Suchen des Visual Studio Product Key
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie möchten unter Umständen den Product Key für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suchen, wenn Sie mit dem Produktsupport arbeiten, ein Upgrade von einer Testversion ausführen oder Ihre eigenen Datensätze aktualisieren.
@@ -35,4 +35,4 @@ Sie möchten unter Umständen den Product Key für [!INCLUDE[vsprvs](../includes
     -   Der Dokumentation oder anderen Mitteilungen vom Anbieter, von dem Sie die Software gekauft haben.
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Upgrade von einer Testedition von Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Installieren von Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio- und MSDN-Lizenzierungs-Whitepaper](http://go.microsoft.com/fwlink/?LinkId=191417)
+ [Vorgehensweise: Aktualisieren von einer Testedition von Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Installieren von Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio- und MSDN-Lizenzierungs-Whitepaper](http://go.microsoft.com/fwlink/?LinkId=191417)

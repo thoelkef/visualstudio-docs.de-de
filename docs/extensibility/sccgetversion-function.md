@@ -12,35 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe071cb0c0de62f4e59785f829adfaacc992336
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2b3818aaa5097313d9150b365544267768507f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023537"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708939"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion-Funktion
-Diese Funktion ruft die Versionsnummer der Source-Plug-in-API von das Quellcodeverwaltungs-Plug-in unterstützt werden.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-LONG SccGetVersion(void);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- Keine  
-  
-## <a name="return-value"></a>Rückgabewert  
- Ein `LONG` -Datentyp, der die Versionsnummer der unterstützten Datenquellen-Plug-in-API enthält:  
-  
-|WORD|Beschreibung|  
-|----------|-----------------|  
-|HIWORD|Hauptversion|  
-|LOWORD|Nebenversion|  
-  
-## <a name="remarks"></a>Hinweise  
- Wenn ein Quellcodeverwaltungs-Plug-in Version 1.3 von der Quelle-Plug-in-API unterstützt, würde diese Funktion z. B. 0x0103 zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
+Diese Funktion ruft die Versionsnummer der Source-Plug-in-API von das Quellcodeverwaltungs-Plug-in unterstützt werden.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+LONG SccGetVersion(void);
+```
+
+#### <a name="parameters"></a>Parameter
+ Keine
+
+## <a name="return-value"></a>Rückgabewert
+ Ein `LONG` -Datentyp, der die Versionsnummer der unterstützten Datenquellen-Plug-in-API enthält:
+
+|WORD|Beschreibung|
+|----------|-----------------|
+|HIWORD|Hauptversion|
+|LOWORD|Nebenversion|
+
+## <a name="remarks"></a>Hinweise
+ Wenn ein Quellcodeverwaltungs-Plug-in Version 1.3 von der Quelle-Plug-in-API unterstützt, würde diese Funktion z. B. 0x0103 zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

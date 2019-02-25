@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7dae0859970d5a9a70abb0bed20630348b270a7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031282"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.  
@@ -78,7 +78,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Eigenschaften veröffentlichen  
  Wenn Sie die Anwendung in den oben genannten Verfahren veröffentlichen, werden die folgenden Eigenschaften in der Projektdatei, durch den Veröffentlichungs-Assistenten eingefügt. Diese Eigenschaften direkt beeinflussen, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erzeugt wird.  
   
- In *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  
+ Unter *CmdLineDemo.vbproj* / *CmdLineDemo.csproj* ist Folgendes möglich:  
   
 ```xml  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
