@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694282"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796789"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 ## <a name="animation-fundamentals"></a>Animation-Grundlagen
@@ -305,7 +305,7 @@ Als einen animierten Übergang, wenn ein Element der Benutzeroberfläche aus ein
 
 -   Architektur-Explorer-Bereich erweitern und reduzieren
 
--   Startseite Element erweitern und reduzieren
+-   Visual Studio 2017-Startseite-Element erweitern und reduzieren
 
 #### <a name="x-y-position-change"></a>X-Y-position ändern
 Bei diesem Muster ändert ein Element der Benutzeroberfläche an seine X- oder Y-Position oder beides.

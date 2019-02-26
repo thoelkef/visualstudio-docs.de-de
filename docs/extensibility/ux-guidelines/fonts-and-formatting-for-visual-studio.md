@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721822"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796750"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Umgebungsschriftart mit 375 % + dünne Darstellung
- **Wird folgendermaßen angezeigt:** 34 pt Segoe UI Light **für verwenden:** (selten vorkommenden) eindeutig mit dem Branding-Benutzeroberfläche wie in der Visual Studio 2017-Startseite
 
- **Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:
+**Wird folgendermaßen angezeigt:** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Verwendung:** (selten vorkommenden) eindeutig mit dem Branding-Benutzeroberfläche wie auf der Startseite
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Verwendung:** (selten vorkommenden) eindeutig mit Branding-Benutzeroberfläche
+
+::: moniker-end
+
+**Prozeduralen Code:** Wo `textBlock` befindet sich ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Festlegen des Formats der TextBlock oder Label wie gezeigt.
+**XAML:** Festlegen des Formats der TextBlock oder Label wie gezeigt.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Umgebungsschriftart mit 310 % + dünne Darstellung
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 28 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 310 % &#43; hell Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> – Verwenden Sie großgeschrieben<br />-Verwenden Sie einfache immer<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als UI-Signatur<br />-Fett, kursiv und fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie das im Toolfenster|**Wird folgendermaßen angezeigt:** 28 pt Segoe UI Light<br /><br /> **Visual-Beispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 310 % &#43; hell Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Umgebungsschriftart mit 200 % + halb dünne Darstellung
 

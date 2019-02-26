@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690460"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796880"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen
@@ -128,10 +128,22 @@ Beispiele für Toolfenster navigierbare Liste werden im Projektmappen-Explorer u
 
 **Andere Toolfenster**
 
+::: moniker range="vs-2017"
+
 | Toolfenster | Funktion |
 | --- | --- |
 | Werkzeugkasten | Das Toolfenster verwendet, um Elemente zu speichern, die auf Entwurfsoberflächen, eine konsistente Ziehquelle bereitstellen, für alle Designer gelöscht werden. |
-| Startseite | Portal für Visual Studio 2017 mit Zugriff auf Feeds von Neuigkeiten für Entwickler, Visual Studio-Hilfe und zuletzt geöffnete Projekte des Benutzers. Benutzer können auch benutzerdefinierte Startseiten erstellen, durch Kopieren der Datei "StartPage.xaml" aus der "Common7\IDE\StartPages\" Verzeichnis für die Dateien von Visual Studio-Programm, des Ordners StartPages in Visual Studio Verzeichnis, und klicken Sie dann entweder Bearbeiten der XAML-Dokumente indem Sie manuell oder durch Sie sie in Visual Studio oder einem anderen Codeeditor öffnen. |
+| Startseite | Portal für Visual Studio mit Zugriff auf Feeds von Neuigkeiten für Entwickler, Visual Studio-Hilfe und zuletzt geöffnete Projekte des Benutzers. Benutzer können auch benutzerdefinierte Startseiten erstellen, durch Kopieren der Datei "StartPage.xaml" aus der "Common7\IDE\StartPages\" Verzeichnis für die Dateien von Visual Studio-Programm, des Ordners StartPages in Visual Studio Verzeichnis, und klicken Sie dann entweder Bearbeiten der XAML-Dokumente indem Sie manuell oder durch Sie sie in Visual Studio oder einem anderen Codeeditor öffnen. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Toolfenster | Funktion |
+| --- | --- |
+| Werkzeugkasten | Das Toolfenster verwendet, um Elemente zu speichern, die auf Entwurfsoberflächen, eine konsistente Ziehquelle bereitstellen, für alle Designer gelöscht werden. |
+
+::: moniker-end
 
 **Debugger-Tool-Fenster**
 

@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949472"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796815"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines Überprüfungsprogramm Verweis
 
@@ -201,7 +201,7 @@ Finden Sie unter [GSL.view für C++-Core-Richtlinien: Ansichten](https://github.
 
 [C26446 USE_GSL_AT](c26446.md) bevorzugen `gsl::at()` anstelle von ungeprüften subscript-Operator. Finden Sie unter [C++ Core Guidelines:  Bounds.4: Verwenden Sie keine Standard-Library-Funktionen und Typen, die keine Grenzen überprüft sind](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) erwägen `gsl::finally` Wenn abschließende Aktion beabsichtigt ist. Finden Sie unter [C++ Core Guidelines:  GSL.util: Dienstprogramme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) erwägen `gsl::finally` Wenn abschließende Aktion beabsichtigt ist. Finden Sie unter [C++ Core Guidelines:  GSL.util: Dienstprogramme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` oder `std::string_view` erstellt aus einer temporären werden ungültige bei temporären für ungültig erklärt. Finden Sie unter [C++ Core Guidelines: GSL.view: Ansichten](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).

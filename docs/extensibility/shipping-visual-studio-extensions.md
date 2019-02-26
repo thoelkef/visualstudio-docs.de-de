@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720496"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796594"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Bereitstellen von Visual Studio-Erweiterungen
 Nachdem Sie die Entwicklung Ihrer Erweiterungs abgeschlossen haben, können Sie auf anderen Computern installieren, mit Ihren Freunden und Kollegen freigeben oder veröffentlichen Sie sie in Visual Studio Marketplace. In diesem Abschnitt erläutern wir all die Dinge zu tun, um das Veröffentlichen und verwalten Ihre Erweiterung benötigten: Arbeiten mit der VSIX-Dateien, die Veröffentlichung, zu lokalisieren und zu aktualisieren.
@@ -25,7 +25,7 @@ Nachdem Sie die Entwicklung Ihrer Erweiterungs abgeschlossen haben, können Sie 
 ## <a name="working-with-vsix-extensions"></a>Arbeiten mit der VSIX-Erweiterungen
  Sie können eine VSIX-Erweiterungen erstellen, indem Sie ein leeres VSIX-Projekt erstellen und dann verschiedene Vorlagen hinzuzufügen. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
- Können Sie das Format des VSIX-Paket-Projektvorlagen, Vorlagen, VSPackages, Managed Extensibility Framework (MEF) Komponenten, Element **Toolbox** Steuerelemente, Assemblys und benutzerdefinierte Typen (Dies schließt benutzerdefinierte Startseiten). Das VSIX-Format wird die dateibasierte Bereitstellung verwendet. Weitere Informationen zu VSIX-Paketen, finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
+ Können Sie das Format des VSIX-Paket-Projektvorlagen, Vorlagen, VSPackages, Managed Extensibility Framework (MEF) Komponenten, Element **Toolbox** Steuerelemente, Assemblys und benutzerdefinierte Typen (Dies schließt benutzerdefinierte Startseiten für visuelle Element Studio 2017). Das VSIX-Format wird die dateibasierte Bereitstellung verwendet. Weitere Informationen zu VSIX-Paketen, finden Sie unter [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md).
 
  Das VSIX-Format unterstützt die Installation von Codeausschnitten nicht. Es unterstützt auch keine bestimmten anderen Szenarios wie z. B. das Schreiben auf den globalen Assemblycache (GAC) oder in die systemregistrierung. Wenn Sie in den GAC oder die Registrierung bei der Installation schreiben möchten, müssen Sie die Windows Installer verwenden. Weitere Informationen finden Sie unter [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
