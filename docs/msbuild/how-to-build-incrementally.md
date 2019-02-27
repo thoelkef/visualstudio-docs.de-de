@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853900"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621330"
 ---
 # <a name="how-to-build-incrementally"></a>Vorgehensweise: Inkrementelles Erstellen
 Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor erstellte Komponenten, die noch immer auf dem neuesten Stand sind, nicht neu erstellt werden. Wenn alle Ziele jedes mal neu erstellt werden, braucht jeder Build sehr lange, bis er abgeschlossen wird. Um inkrementelle Builds zu aktivieren (es werden nur Builds mit den Zielen neu erstellt, die zuvor noch nicht erstellt wurden oder mit Zielen, die nicht mehr aktuell sind) kann [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) die Zeitstempel der Eingabedateien mit jenen der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Es muss jedoch eine 1:1-Zuordnung zwischen Eingaben und Ausgaben bestehen. Sie können Transformationen verwenden, damit Ziele diese direkte Zuordnung identifizieren können. Weitere Informationen zu Transformationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Ein Ziel kann inkrementell erstellt werden, wenn die Eingaben und Ausgaben in de
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien bestimmen und festlegen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die *hello.exe*-Datei ist, führt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das Ziel aus; andernfalls wird es übersprungen:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Diese Projektdatei enthält jeweils die Ziele `Convert` und `Build`. Die `Genera
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Ziele](../msbuild/msbuild-targets.md)  
-[Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Transformationen](../msbuild/msbuild-transforms.md)  
-[Csc-Aufgabe](../msbuild/csc-task.md)  
-[Vbc-Aufgabe](../msbuild/vbc-task.md)
+- [Ziele](../msbuild/msbuild-targets.md)
+- [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Transformationen](../msbuild/msbuild-transforms.md)
+- [Csc-Aufgabe](../msbuild/csc-task.md)
+- [Vbc-Aufgabe](../msbuild/vbc-task.md)

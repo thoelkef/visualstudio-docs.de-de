@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645718"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -61,6 +61,7 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
 
    ```cmd
@@ -123,7 +124,7 @@ Wenn sich die Zertifikatnamen nicht in der Spalte **Ausgestellt für** befinden,
 
 ## <a name="install-visual-studio"></a>Installieren von Visual Studio
 
-Nach der Installation der Zertifikate kann die Bereitstellung von Visual Studio mithilfe der Anweisungen aus dem Abschnitt [Bereitstellen über eine Netzwerkinstallation](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) der Seite „Erstellen einer Netzwerkinstallation von Visual Studio“ fortgesetzt werden.
+Nach der Installation der Zertifikate kann die Bereitstellung von Visual Studio mithilfe der Anweisungen aus dem Abschnitt [Bereitstellen über eine Netzwerkinstallation](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) der Seite „Erstellen einer Netzwerkinstallation von Visual Studio“ fortgesetzt werden.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610306"
 ---
 # <a name="error-task"></a>Fehleraufgabe
 Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.
@@ -38,7 +38,7 @@ In der folgenden Tabelle werden die Parameter der `Error` -Aufgabe beschrieben.
 | `HelpKeyword` | Optionaler `String` -Parameter.<br /><br /> Das dem Fehler zuzuordnende Hilfeschlüsselwort. |
 | `Text` | Optionaler `String` -Parameter.<br /><br /> Der Fehlertext, den [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolliert, wenn die `Condition`-Parameter `true` ergeben. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Die `Error`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten, Fehlertexte an Protokollierungen herauszugeben und die Buildausführung zu beenden.
 
 Wenn der `Condition`-Parameter `true` entspricht wird der Build beendet und ein Fehler protokolliert. Wenn kein `Condition`-Parameter vorhanden ist, wird der Fehler Protokolliert und die Buildausführung wird beendet. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).
@@ -63,5 +63,5 @@ Im folgenden Codebeispiel wird überprüft, ob alle erforderlichen Eigenschaften
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)

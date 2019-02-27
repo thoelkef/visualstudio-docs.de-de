@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449fd3b31f9e640d3fe02007baf7012af974c954
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853991"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640635"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.
@@ -180,4 +180,4 @@ KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)
+- [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)

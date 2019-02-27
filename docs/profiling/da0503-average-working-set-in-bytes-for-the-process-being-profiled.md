@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 195d4a64addfed10452ff2225e6397d5282e208c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e2453b73d7dae0a6a53130156cdb1ce35d38d43
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953525"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630352"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Durchschnittliche Arbeitsseite in Bytes für den Prozess, für den die Profilerstellung ausgeführt wird
 
-|||  
-|-|-|  
-|Regel-ID|DA0503|  
-|Kategorie|Ressourcenüberwachung|  
-|Profilerstellungsmethode|Alle|  
-|Meldung|Diese Information wurde lediglich zu Informationszwecken erhoben. Vom Leistungsindikator für die Verarbeitung von Arbeitsseiten wird die Belegung des physischen Speichers durch den Prozess ermittelt, für den die Profilerstellung ausgeführt wird. Bei dem gemeldeten Wert handelt es sich um den berechneten Durchschnittswert aus allen Messintervallen.|  
-|Regeltyp|Information|  
+|||
+|-|-|
+|Regel-ID|DA0503|
+|Kategorie|Ressourcenüberwachung|
+|Profilerstellungsmethode|Alle|
+|Meldung|Diese Information wurde lediglich zu Informationszwecken erhoben. Vom Leistungsindikator für die Verarbeitung von Arbeitsseiten wird die Belegung des physischen Speichers durch den Prozess ermittelt, für den die Profilerstellung ausgeführt wird. Bei dem gemeldeten Wert handelt es sich um den berechneten Durchschnittswert aus allen Messintervallen.|
+|Regeltyp|Information|
 
- Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
+ Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.
 
-## <a name="rule-description"></a>Regelbeschreibung  
- Diese Meldung gibt Aufschluss über die durchschnittliche Menge an physischem Speicher, die gerade von der Arbeitsseite verwendet wird (in Bytes). Die Prozessarbeitsseite stellt Seiten aus dem Prozessadressbereich dar, die sich gegenwärtig im physischen Speicher befinden.  
+## <a name="rule-description"></a>Regelbeschreibung
+ Diese Meldung gibt Aufschluss über die durchschnittliche Menge an physischem Speicher, die gerade von der Arbeitsseite verwendet wird (in Bytes). Die Prozessarbeitsseite stellt Seiten aus dem Prozessadressbereich dar, die sich gegenwärtig im physischen Speicher befinden.
 
- Der gemeldete Wert enthält residente Seiten aus freigegebenen Arbeitsspeichersegmenten, auf die vom Prozess verwiesen wurde. In den berücksichtigten freigegebenen Arbeitsspeichersegmenten sind auch freigegebene DLLs enthalten, auf die vom Prozess verwiesen wird. Aufgrund von freigegebenen Arbeitsspeichersegmenten kann der Wert der Prozessarbeitsseite die Menge des virtuellen Arbeitsspeichers übersteigen, der vom Prozess belegt wird.  
+ Der gemeldete Wert enthält residente Seiten aus freigegebenen Arbeitsspeichersegmenten, auf die vom Prozess verwiesen wurde. In den berücksichtigten freigegebenen Arbeitsspeichersegmenten sind auch freigegebene DLLs enthalten, auf die vom Prozess verwiesen wird. Aufgrund von freigegebenen Arbeitsspeichersegmenten kann der Wert der Prozessarbeitsseite die Menge des virtuellen Arbeitsspeichers übersteigen, der vom Prozess belegt wird.
 
- Bei dem gemeldeten Wert handelt es sich um den Durchschnittswert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war.  
+ Bei dem gemeldeten Wert handelt es sich um den Durchschnittswert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war.
 
- Die Größe der Prozessarbeitsseite spiegelt die Menge des virtuellen Arbeitsspeichers wider, die aktiv vom Prozess verwendet wird. Sie wird auch von der Menge an physischem Speicher (oder RAM) beeinflusst, die zum Ausführen der Anwendung verfügbar ist, sowie von der Auslastung dieses physischen Speichers durch andere ausgeführte Prozesse. Bei einer Beschränkung des physischen Speichers können sich für den Wert der Prozessarbeitsseite deutliche Schwankungen auftreten, wenn vom Betriebssystem versucht wird, die Speicherauslastung durch die aktive Prozesse auszugleichen, indem in regelmäßigen Abständen Seiten mit relativ geringer Aktivität aus Prozessarbeitsseiten gekürzt werden.  
+ Die Größe der Prozessarbeitsseite spiegelt die Menge des virtuellen Arbeitsspeichers wider, die aktiv vom Prozess verwendet wird. Sie wird auch von der Menge an physischem Speicher (oder RAM) beeinflusst, die zum Ausführen der Anwendung verfügbar ist, sowie von der Auslastung dieses physischen Speichers durch andere ausgeführte Prozesse. Bei einer Beschränkung des physischen Speichers können sich für den Wert der Prozessarbeitsseite deutliche Schwankungen auftreten, wenn vom Betriebssystem versucht wird, die Speicherauslastung durch die aktive Prozesse auszugleichen, indem in regelmäßigen Abständen Seiten mit relativ geringer Aktivität aus Prozessarbeitsseiten gekürzt werden.
 
- Weitere Informationen zu Prozessarbeitsseiten finden Sie unter [Working Set (Arbeitsseite)](http://go.microsoft.com/fwlink/?LinkId=177830) in der Dokumentation zur Speicherverwaltung unter Windows auf MSDN.  
+ Weitere Informationen zu Prozessarbeitsseiten finden Sie unter [Working Set (Arbeitsseite)](http://go.microsoft.com/fwlink/?LinkId=177830) in der Dokumentation zur Speicherverwaltung unter Windows auf MSDN.
 
-## <a name="how-to-use-rule-data"></a>Verwenden von Regeldaten  
- Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Profilerstellungsszenarios nachvollziehen.  
+## <a name="how-to-use-rule-data"></a>Verwenden von Regeldaten
+ Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Profilerstellungsszenarios nachvollziehen.
 
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie die Spalten **Prozess\Arbeitsseite** und **Arbeitsspeicher\Seiten/s**. Vergleichen Sie die beiden Spalten, um zu ermitteln, ob in bestimmten Phasen der Programmausführung ein erhöhtes Maß an E/A-Auslagerungsaktivitäten feststellbar ist.

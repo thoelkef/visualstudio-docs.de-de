@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2e6f653ca7fc6bc335ab58530242f94b1f95d39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963804"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608564"
 ---
 # <a name="uidmanager-task"></a>UidManager-Aufgabe
-Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisiert oder entfernt eindeutige Bezeichner (UIDs), um alle [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Elemente zu lokalisieren, die in den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Quelldateien enthalten sind.  
-  
-## <a name="task-parameters"></a>Aufgabenparameter  
-  
+Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisiert oder entfernt eindeutige Bezeichner (UIDs), um alle [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Elemente zu lokalisieren, die in den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Quelldateien enthalten sind.
+
+## <a name="task-parameters"></a>Aufgabenparameter
+
 | Parameter | Beschreibung |
 |-------------------------| - |
 | `IntermediateDirectory` | Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, das zur Sicherung der Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet wird, die vom **MarkupFiles**-Parameter angegeben werden. |
 | `MarkupFiles` | Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden. |
 | `Task` | Erforderlicher **String**-Parameter.<br /><br /> Gibt die UID-Verwaltungsaufgabe an, die Sie ausführen möchten. Gültige Optionen sind **Check**, **Update** oder **Remove**. |
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird mit dem <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, ob die angegebenen [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Quelldateien [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Elemente enthalten, die über geeignete UIDs verfügen.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask   
-    TaskName="Microsoft.Build.Tasks.Windows.UidManager"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="UidManagerTask">  
-    <UidManager  
-      Task="Check"  
-      MarkupFiles="Page1.xaml;Page2.xaml"  
-      IntermediateDirectory="c:\UidManagerIntermediateDirectory" />  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Vorgehensweise: Lokalisieren einer Anwendung](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird mit dem <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, ob die angegebenen [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Quelldateien [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Elemente enthalten, die über geeignete UIDs verfügen.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.UidManager"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="UidManagerTask">
+    <UidManager
+      Task="Check"
+      MarkupFiles="Page1.xaml;Page2.xaml"
+      IntermediateDirectory="c:\UidManagerIntermediateDirectory" />
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Vorgehensweise: Lokalisieren einer Anwendung](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

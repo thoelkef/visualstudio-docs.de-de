@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 3/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Beispiel für die Onboardingkommunikation, die VLSC-Administratoren bereitgestellt wird
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a91626328b60fee748f465e3b5bde8bd29f227dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847848"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844320"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>E-Mail-Kommunikation zum Onboarding für Administratoren
 
-Die Person, die in der Volumenlizenzvereinbarung (VL) Ihrer Organisation aufgeführt ist, erhält diese E-Mail, sobald Ihre Organisation zur Migration bereit ist. Hier wird das Verfahren beschrieben, das für alle Benutzer im Unternehmen durchgeführt werden muss, die Visual Studio-Abonnements verwalten sollen. 
+Die Person, die in der Volumenlizenzvereinbarung (VL) Ihrer Organisation aufgeführt ist, erhält diese E-Mail, sobald Ihre Organisation zur Migration bereit ist. Hier wird das Verfahren beschrieben, das für alle Benutzer im Unternehmen durchgeführt werden muss, die Visual Studio-Abonnements verwalten sollen.
 
 ![Header](_img/onboarding-email/header.png)
 

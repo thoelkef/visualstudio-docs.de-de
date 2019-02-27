@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922120"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645484"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
 
@@ -42,7 +42,7 @@ Diese Seite enthält Optionen für das Formatieren von Anweisungen und Blöcken 
 
 ### <a name="configuring-clangformat-options"></a>Konfigurieren von ClangFormat-Optionen
 
-In Visual Studio 2017 (Version 15.7 und höher) ist die ClangFormat-Unterstützung standardmäßig aktiviert. Sie können auswählen, welcher dieser gängigen Formatierungskonventionen auf Ihre Projekte angewendet werden sollen: LLVM, Google, Chromium, Mozilla oder WebKit. Sie können ebenfalls eine benutzerdefinierte Datei („.clang-format“ oder „_clang-format“) für die Definition des Formats erstellen. Wenn eine solche Datei in einem Projektordner vorhanden ist, verwendet Visual Studio diese, um alle Quellcodedateien in diesem Ordner und dessen Unterordnern zu formatieren. 
+In Visual Studio 2017 (Version 15.7 und höher) ist die ClangFormat-Unterstützung standardmäßig aktiviert. Sie können auswählen, welcher dieser gängigen Formatierungskonventionen auf Ihre Projekte angewendet werden sollen: LLVM, Google, Chromium, Mozilla oder WebKit. Sie können ebenfalls eine benutzerdefinierte Datei („.clang-format“ oder „_clang-format“) für die Definition des Formats erstellen. Wenn eine solche Datei in einem Projektordner vorhanden ist, verwendet Visual Studio diese, um alle Quellcodedateien in diesem Ordner und dessen Unterordnern zu formatieren.
 
 Standardmäßig führt Visual Studio „clangformat.exe“ im Hintergrund aus, wodurch die Formatierung während der Eingabe angewendet wird. Sie können ebenfalls festlegen, dass die Datei nur für manuell aufgerufene Formatierungsfehle wie **Dokument formatieren (STRG+K, STRG+D)** oder **Auswahl formatieren (STRG+K, STRG+F)** ausgeführt wird.
 

@@ -12,47 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13329ce649ac1947b335ee73d1408e94a5ff52e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613907"
 ---
 # <a name="markerseries-class"></a>marker_series-Klasse
-Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-class marker_series;  
-```  
-  
-## <a name="members"></a>Member  
-  
-### <a name="public-constructors"></a>Öffentliche Konstruktoren  
-  
-|name|Beschreibung|  
-|----------|-----------------|  
-|[marker_series:: marker_series-Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Initialisiert eine neue Instanz der `marker_series`-Klasse.|  
-|[marker_series::~marker_series-Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Zerstört das marker_series-Objekt und gibt alle zugewiesenen Ressourcen frei|  
-  
-### <a name="public-methods"></a>Öffentliche Methoden  
-  
-|name|Beschreibung|  
-|----------|-----------------|  
-|[marker_series:: is_enabled-Methode](../profiling/marker-series-is-enabled-method.md)|Bestimmt, ob eine Sitzung den Anbieter aktiviert hat|  
-|[marker_series::write_alert-Methode](../profiling/marker-series-write-alert-method.md)|Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
-|[marker_series::write_flag-Methode](../profiling/marker-series-write-flag-method.md)|Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
-|[marker_series::write_message-Methode](../profiling/marker-series-write-message-method.md)|Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
-  
-## <a name="inheritance-hierarchy"></a>Vererbungshierarchie  
- `marker_series`  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Siehe auch  
- [diagnostic-Namespace](../profiling/diagnostic-namespace.md)
+Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+class marker_series;
+```
+
+## <a name="members"></a>Member
+
+### <a name="public-constructors"></a>Öffentliche Konstruktoren
+
+|name|Beschreibung|
+|----------|-----------------|
+|[marker_series:: marker_series-Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Initialisiert eine neue Instanz der `marker_series`-Klasse.|
+|[marker_series::~marker_series-Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Zerstört das marker_series-Objekt und gibt alle zugewiesenen Ressourcen frei|
+
+### <a name="public-methods"></a>Öffentliche Methoden
+
+|name|Beschreibung|
+|----------|-----------------|
+|[marker_series:: is_enabled-Methode](../profiling/marker-series-is-enabled-method.md)|Bestimmt, ob eine Sitzung den Anbieter aktiviert hat|
+|[marker_series::write_alert-Methode](../profiling/marker-series-write-alert-method.md)|Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|
+|[marker_series::write_flag-Methode](../profiling/marker-series-write-flag-method.md)|Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|
+|[marker_series::write_message-Methode](../profiling/marker-series-write-message-method.md)|Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|
+
+## <a name="inheritance-hierarchy"></a>Vererbungshierarchie
+ `marker_series`
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Siehe auch
+- [diagnostic-Namespace](../profiling/diagnostic-namespace.md)

@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d46934b6240c07b7fed3fe2025b732eb554813a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963865"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627466"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Schaltfläche „Exportieren“ (Parallelitätsschnellansicht)
-Mit der Schaltfläche **Exportieren** können Sie die Aufrufliste für Ihre Unterlagen oder zur Verwendung mit einem anderen Tool wie Microsoft Excel als *CSV*-Datei exportieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Concurrency Visualizer (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-visualizer.md)   
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+Mit der Schaltfläche **Exportieren** können Sie die Aufrufliste für Ihre Unterlagen oder zur Verwendung mit einem anderen Tool wie Microsoft Excel als *CSV*-Datei exportieren.
+
+## <a name="see-also"></a>Siehe auch
+- [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

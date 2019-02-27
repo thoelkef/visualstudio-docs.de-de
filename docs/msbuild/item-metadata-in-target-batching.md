@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970321"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606315"
 ---
 # <a name="item-metadata-in-target-batching"></a>Elementmetadaten bei der Batchverarbeitung von Zielen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann eine Abhängigkeitsanalyse für die Ein- und Ausgaben eines Buildziels durchführen. Wenn ermittelt wird, dass die Ein- oder Ausgaben des Ziels auf dem neuesten Stand sind, wird das Ziel übersprungen und der Build fortgesetzt. `Target`-Elemente verwenden die `Inputs`- und `Outputs`-Attribute, um die Elemente festzulegen, die bei der Abhängigkeitsanalyse überprüft werden.
@@ -66,7 +66,7 @@ Das folgende Beispiel enthält die Elementliste `Res`, die mithilfe der `Culture
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)  
-[Batchverarbeitung](../msbuild/msbuild-batching.md)  
-[Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Elementmetadaten bei der Batchverarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)
+- [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)
+- [Batchverarbeitung](../msbuild/msbuild-batching.md)
+- [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Elementmetadaten bei der Batchverarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)

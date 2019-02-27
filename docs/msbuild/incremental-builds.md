@@ -10,73 +10,73 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a8543f98778bfdcf1b1a7ae14c12a7d92058947
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0013e050c9b0b47746c365626309b4e093e03cf8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035288"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643924"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
-Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden. Zielelemente können über ein `Inputs`-Attribut, das die Elemente angibt, die das Ziel als Eingabe erwartet, sowie ein `Outputs`-Attribut verfügen, das die Elemente angibt, die es als Ausgabe erzeugt. MSBuild versucht, zwischen den Werten dieser Attribute eine 1:1-Zuordnung zu erzielen. Wenn eine 1:1-Zuordnung vorhanden ist, vergleicht MSBuild den Zeitstempel jedes Eingabeelements mit dem Zeitstempel des zugehörigen Ausgabeelements. Ausgabedateien ohne 1:1-Zuordnung werden mit allen Eingabedateien verglichen. Ein Element wird als aktuell betrachtet, wenn dessen Ausgabedatei genau so alt oder neuer als seine Eingabedatei oder -dateien ist.  
-  
- Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel. Mit diesem *inkrementellen Build* kann die Buildgeschwindigkeit für das Ziel entscheidend erhöht werden. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel aus, überspringt jedoch die aktuellen Elemente und bringt so alle Elemente auf den aktuellen Stand. Dieser Prozess wird als *partieller inkrementeller Build* bezeichnet.  
-  
- 1:1-Zuordnungen werden in der Regel durch Elementtransformationen erzeugt. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md).  
-  
- Betrachten Sie das folgende Ziel.  
-  
-```xml  
-<Target Name="Backup" Inputs="@(Compile)"   
-    Outputs="@(Compile->'$(BackupFolder)%(Identity).bak')">  
-    <Copy SourceFiles="@(Compile)" DestinationFiles=  
-        "@(Compile->'$(BackupFolder)%(Identity).bak')" />  
-</Target>  
-```  
-  
- Die durch den `Compile`-Elementtyp dargestellten Dateien werden in ein Sicherungsverzeichnis kopiert. Die Sicherungsdateien weisen die Erweiterung *.bak* auf. Wenn die durch den `Compile`-Elementtyp dargestellten Dateien oder die entsprechenden Sicherungsdateien nach dem Ausführen des Sicherungsziels nicht gelöscht oder geändert werden, wird das Sicherungsziel in nachfolgenden Builds übersprungen.  
-  
-## <a name="output-inference"></a>Ausgaberückschluss  
- MSBuild bestimmt durch Vergleich des `Inputs`-Attributs mit dem `Outputs`-Attribut eines Ziels, ob dieses ausgeführt werden muss. Idealerweise bleibt der nach einem inkrementellen Build vorhandene Satz von Dateien unabhängig davon gleich, ob die zugeordneten Ziele ausgeführt werden oder nicht. Da sich Eigenschaften und Elemente, die von Aufgaben erstellt oder geändert werden, auf den Build auswirken können, muss MSBuild deren Werte auch dann ableiten, wenn das Ziel, das sich auf sie auswirkt, übersprungen wird. Dieser Prozess wird als *Ausgaberückschluss* bezeichnet.  
-  
- Drei Fälle werden unterschieden:  
-  
--   Das Ziel weist ein `Condition`-Attribut auf, das zu `false` ausgewertet wird. In diesem Fall wird das Ziel nicht ausgeführt, und hat keine Auswirkungen auf den Build.  
-  
--   Das Ziel weist veraltete Ausgaben auf und wird ausgeführt, um diese auf den aktuellen Stand zu bringen.  
-  
--   Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.  
+Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden. Zielelemente können über ein `Inputs`-Attribut, das die Elemente angibt, die das Ziel als Eingabe erwartet, sowie ein `Outputs`-Attribut verfügen, das die Elemente angibt, die es als Ausgabe erzeugt. MSBuild versucht, zwischen den Werten dieser Attribute eine 1:1-Zuordnung zu erzielen. Wenn eine 1:1-Zuordnung vorhanden ist, vergleicht MSBuild den Zeitstempel jedes Eingabeelements mit dem Zeitstempel des zugehörigen Ausgabeelements. Ausgabedateien ohne 1:1-Zuordnung werden mit allen Eingabedateien verglichen. Ein Element wird als aktuell betrachtet, wenn dessen Ausgabedatei genau so alt oder neuer als seine Eingabedatei oder -dateien ist.
 
-Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:  
-  
-```xml  
-<CreateProperty Value="123">  
-    <Output PropertyName="Easy" TaskParameter="Value" />  
-</CreateProperty>  
-```  
-  
- Dieser Code erstellt die Easy-Eigenschaft mit dem Wert „123“ unabhängig davon, ob das Ziel ausgeführt oder übersprungen wird.  
-  
-```xml  
-<CreateItem Include="a.cs;b.cs">  
-    <Output ItemName="Simple" TaskParameter="Include" />  
-</CreateItem>  
-```  
-  
- Dieser Code erstellt den Simple-Elementtyp mit den beiden Elementen *a.cs* und *b.cs* unabhängig davon, ob das Ziel ausgeführt oder übersprungen wird.  
-  
- Ab MSBuild 3.5 wird der Ausgaberückschluss automatisch für Element- und Eigenschaftengruppen in einem Ziel ausgeführt. `CreateItem`-Aufgaben sind in einem Ziel nicht erforderlich und sollten vermieden werden. Zudem sollten `CreateProperty`-Aufgaben in einem Ziel nur verwendet werden, um zu bestimmen, ob dieses ausgeführt wurde.  
-  
-## <a name="determine-whether-a-target-has-been-run"></a>Bestimmen, ob ein Ziel ausgeführt wurde  
- Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-Aufgabe hinzufügen, um Eigenschaften und Elemente untersuchen und so bestimmen zu können, ob das Ziel ausgeführt wurde. Fügen Sie dem Ziel die Aufgabe `CreateProperty` hinzu, und weisen Sie dieser ein `Output`-Element zu, dessen `TaskParameter` auf "ValueSetByTask" festgelegt ist.  
-  
-```xml  
-<CreateProperty Value="true">  
-    <Output TaskParameter="ValueSetByTask" PropertyName="CompileRan" />  
-</CreateProperty>  
-```  
-  
- Wenn das Ziel ausgeführt wird, erstellt dieser Code die Eigenschaft „CompileRan“ und weist ihr den Wert `true` zu. Wenn das Ziel übersprungen wird, wird CompileRan nicht erstellt.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Ziele](../msbuild/msbuild-targets.md)
+ Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel. Mit diesem *inkrementellen Build* kann die Buildgeschwindigkeit für das Ziel entscheidend erhöht werden. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel aus, überspringt jedoch die aktuellen Elemente und bringt so alle Elemente auf den aktuellen Stand. Dieser Prozess wird als *partieller inkrementeller Build* bezeichnet.
+
+ 1:1-Zuordnungen werden in der Regel durch Elementtransformationen erzeugt. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md).
+
+ Betrachten Sie das folgende Ziel.
+
+```xml
+<Target Name="Backup" Inputs="@(Compile)"
+    Outputs="@(Compile->'$(BackupFolder)%(Identity).bak')">
+    <Copy SourceFiles="@(Compile)" DestinationFiles=
+        "@(Compile->'$(BackupFolder)%(Identity).bak')" />
+</Target>
+```
+
+ Die durch den `Compile`-Elementtyp dargestellten Dateien werden in ein Sicherungsverzeichnis kopiert. Die Sicherungsdateien weisen die Erweiterung *.bak* auf. Wenn die durch den `Compile`-Elementtyp dargestellten Dateien oder die entsprechenden Sicherungsdateien nach dem Ausführen des Sicherungsziels nicht gelöscht oder geändert werden, wird das Sicherungsziel in nachfolgenden Builds übersprungen.
+
+## <a name="output-inference"></a>Ausgaberückschluss
+ MSBuild bestimmt durch Vergleich des `Inputs`-Attributs mit dem `Outputs`-Attribut eines Ziels, ob dieses ausgeführt werden muss. Idealerweise bleibt der nach einem inkrementellen Build vorhandene Satz von Dateien unabhängig davon gleich, ob die zugeordneten Ziele ausgeführt werden oder nicht. Da sich Eigenschaften und Elemente, die von Aufgaben erstellt oder geändert werden, auf den Build auswirken können, muss MSBuild deren Werte auch dann ableiten, wenn das Ziel, das sich auf sie auswirkt, übersprungen wird. Dieser Prozess wird als *Ausgaberückschluss* bezeichnet.
+
+ Drei Fälle werden unterschieden:
+
+-   Das Ziel weist ein `Condition`-Attribut auf, das zu `false` ausgewertet wird. In diesem Fall wird das Ziel nicht ausgeführt, und hat keine Auswirkungen auf den Build.
+
+-   Das Ziel weist veraltete Ausgaben auf und wird ausgeführt, um diese auf den aktuellen Stand zu bringen.
+
+-   Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.
+
+Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:
+
+```xml
+<CreateProperty Value="123">
+    <Output PropertyName="Easy" TaskParameter="Value" />
+</CreateProperty>
+```
+
+ Dieser Code erstellt die Easy-Eigenschaft mit dem Wert „123“ unabhängig davon, ob das Ziel ausgeführt oder übersprungen wird.
+
+```xml
+<CreateItem Include="a.cs;b.cs">
+    <Output ItemName="Simple" TaskParameter="Include" />
+</CreateItem>
+```
+
+ Dieser Code erstellt den Simple-Elementtyp mit den beiden Elementen *a.cs* und *b.cs* unabhängig davon, ob das Ziel ausgeführt oder übersprungen wird.
+
+ Ab MSBuild 3.5 wird der Ausgaberückschluss automatisch für Element- und Eigenschaftengruppen in einem Ziel ausgeführt. `CreateItem`-Aufgaben sind in einem Ziel nicht erforderlich und sollten vermieden werden. Zudem sollten `CreateProperty`-Aufgaben in einem Ziel nur verwendet werden, um zu bestimmen, ob dieses ausgeführt wurde.
+
+## <a name="determine-whether-a-target-has-been-run"></a>Bestimmen, ob ein Ziel ausgeführt wurde
+ Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-Aufgabe hinzufügen, um Eigenschaften und Elemente untersuchen und so bestimmen zu können, ob das Ziel ausgeführt wurde. Fügen Sie dem Ziel die Aufgabe `CreateProperty` hinzu, und weisen Sie dieser ein `Output`-Element zu, dessen `TaskParameter` auf „ValueSetByTask“ festgelegt ist.
+
+```xml
+<CreateProperty Value="true">
+    <Output TaskParameter="ValueSetByTask" PropertyName="CompileRan" />
+</CreateProperty>
+```
+
+ Wenn das Ziel ausgeführt wird, erstellt dieser Code die Eigenschaft „CompileRan“ und weist ihr den Wert `true` zu. Wenn das Ziel übersprungen wird, wird CompileRan nicht erstellt.
+
+## <a name="see-also"></a>Siehe auch
+- [Ziele](../msbuild/msbuild-targets.md)

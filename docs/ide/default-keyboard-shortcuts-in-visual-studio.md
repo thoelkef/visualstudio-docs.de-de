@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607407"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -461,7 +461,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.RemovefromDiagram|**Löschen**|
 |View.ViewCode|**EINGABETASTE**|
 
-##  <a name="coded-ui-test-editor"></a>Editor für Tests der programmierten UI
+##  <a name="coded-ui-test-editor"></a>Editor für Tests der codierten UI
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -525,7 +525,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Keine|
+|Debug.Graphics.CaptureFrame|Keiner|
 |Graphics.MovePixelSelectionDown|**UMSCHALT+ALT+NACH-UNTEN**|
 |Graphics.MovePixelSelectionLeft|**STRG+ALT+NACH-LINKS-TASTE**|
 |Graphics.MovePixelSelectionRight|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
@@ -807,8 +807,8 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 | Edit.HideSelection | **STRG+M, STRG+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **STRG+I** |
-| Edit.InsertCaretsatAllMatching | **UMSCHALT+ALT+;** | 
-| Edit.InsertNextMatchingCaret | **UMSCHALT+ALT+.** | 
+| Edit.InsertCaretsatAllMatching | **UMSCHALT+ALT+;** |
+| Edit.InsertNextMatchingCaret | **UMSCHALT+ALT+.** |
 | Edit.InsertTab | **TAB** |
 | Edit.LineCut | **STRG+L** |
 | Edit.LineDelete | **STRG+UMSCHALT+L** |
@@ -1045,7 +1045,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.SizeControlUp|**STRG+UMSCHALT+NACH-OBEN-TASTE**|
 |Edit.TabLeft|**UMSCHALT+TAB**|
 
-##  <a name="work-item-editor"></a>Arbeitselement-Editor
+##  <a name="work-item-editor"></a>Arbeitsaufgaben-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**UMSCHALT+ALT+L**|
 
-##  <a name="work-item-query-view"></a>Abfrageansicht für Arbeitselemente
+##  <a name="work-item-query-view"></a>Abfrageansicht für Arbeitsaufgaben
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1064,7 +1064,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Team.Refresh|**F5**|
 |Window.Toggle|**UMSCHALT+ALT+V**|
 
-##  <a name="work-item-results-view"></a>Abfrageergebnisse für Arbeitselemente
+##  <a name="work-item-results-view"></a>Abfrageergebnisse für Arbeitsaufgaben
 
 |Befehle|Tastenkombinationen|
 |--------------| - |

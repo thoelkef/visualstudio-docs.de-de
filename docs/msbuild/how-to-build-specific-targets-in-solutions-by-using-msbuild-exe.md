@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937365"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610449"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Vorgehensweise: Erstellen von bestimmten Zielen in Projektmappen mit MSBuild.exe
-Sie können *MSBuild.exe* verwenden, um bestimmte Ziele von bestimmten Projekten in einer Projektmappe zu erstellen.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>So erstellen Sie ein bestimmtes Ziel von einem bestimmten Projekt in einer Projektmappe.  
-  
-1.  Geben Sie in der Befehlszeile `MSBuild.exe <SolutionName>.sln` ein, bei der `<SolutionName>` dem Dateinamen der Projektmappe entspricht, die das Ziel enthält, das Sie ausführen möchten.  
-  
+Sie können *MSBuild.exe* verwenden, um bestimmte Ziele von bestimmten Projekten in einer Projektmappe zu erstellen.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>So erstellen Sie ein bestimmtes Ziel von einem bestimmten Projekt in einer Projektmappe.
+
+1.  Geben Sie in der Befehlszeile `MSBuild.exe <SolutionName>.sln` ein, bei der `<SolutionName>` dem Dateinamen der Projektmappe entspricht, die das Ziel enthält, das Sie ausführen möchten.
+
 2. Geben Sie das Ziel nach dem `-target:`-Schalter im Format \<Projektname>:\<Zielname> an. Wenn eines der Zeichen `%`, `$`, `@`, `;`, `.`, `(`, `)` oder `'` im Namen des Projekts enthalten ist, ersetzen Sie es im angegebenen Zielnamen durch `_`.
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel führt das Ziel `Rebuild` des Projekts `NotInSlnFolder` aus und führt anschließend das Ziel `Clean` des Projekts `InSolutionFolder` aus, das sich im Projektmappenordner *NewFolder* befindet.  
-  
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel führt das Ziel `Rebuild` des Projekts `NotInSlnFolder` aus und führt anschließend das Ziel `Clean` des Projekts `InSolutionFolder` aus, das sich im Projektmappenordner *NewFolder* befindet.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ Wenn Sie die für Sie verfügbaren Optionen überprüfen möchten, können Sie h
 
 Erstellen Sie mit dieser Umgebungsvariable nur dann Ziele, wenn Sie diese interne Ansicht benötigen. Diese Einstellung kann zu Problemen beim Erstellen von Projekten in Ihrer Projektmappe führen.
 
-## <a name="see-also"></a>Siehe auch  
- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Siehe auch
+- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

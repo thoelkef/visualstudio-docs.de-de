@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer::DisplayValue | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomViewer::DisplayValue
 helpviewer_keywords:
@@ -12,58 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e711fc91a1d234957a136572cc4f5fddb9a47944
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991085"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717922"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
-Diese Methode wird aufgerufen, um den angegebenen Wert anzuzeigen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT DisplayValue(  
-   HWND             hwnd,  
-   DWORD            dwID,  
-   IUnknown *       pHostServices,  
-   IDebugProperty3* pDebugProperty);  
-);  
-```  
-  
-```csharp  
-int DisplayValue(  
-   IntPtr          hwnd,   
-   uint            dwID,   
-   object          pHostServices,   
-   IDebugProperty3 pDebugProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `hwnd`  
- [in] Übergeordnetes Fenster  
-  
- `dwID`  
- [in] ID für den benutzerdefinierten Viewer, die mehr als einen Typ zu unterstützen.  
-  
- `pHostServices`  
- [in]: Reserviert Legen Sie immer auf Null.  
-  
- `pDebugProperty`  
- [in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts, der angezeigt werden.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.  
-  
-## <a name="remarks"></a>Hinweise  
- Die Anzeige ist "modal", insofern diese Methode die erforderlichen Fenster erstellt, den Wert zeigt, auf Eingabe warten, und schließen Sie das Fenster, alle vor der Rückgabe an den Aufrufer. Dies bedeutet, dass alle Aspekte, die zum Anzeigen von den Wert der Eigenschaft, von der Erstellung eines Fensters für die Ausgabe für das Warten auf Benutzereingaben, um das Löschen des Fensters von die Methode behandelt werden muss.  
-  
- Zur Unterstützung der Änderung des Werts auf die angegebenen [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Objekts verwenden Sie die [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) Methode – Wenn der Wert als Zeichenfolge ausgedrückt werden kann. Andernfalls ist es erforderlich, eine benutzerdefinierte Schnittstelle zu erstellen – ausschließlich für die ausdrucksauswertung Implementierung `DisplayValue` Methode – für das gleiche Objekt, das implementiert die `IDebugProperty3` Schnittstelle. Diese benutzerdefinierte Schnittstelle, die Methoden zum Ändern der Daten von beliebiger Größe oder Komplexität angeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)
+Diese Methode wird aufgerufen, um den angegebenen Wert anzuzeigen.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT DisplayValue(
+   HWND             hwnd,
+   DWORD            dwID,
+   IUnknown *       pHostServices,
+   IDebugProperty3* pDebugProperty);
+);
+```
+
+```csharp
+int DisplayValue(
+   IntPtr          hwnd,
+   uint            dwID,
+   object          pHostServices,
+   IDebugProperty3 pDebugProperty
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `hwnd`
+
+ [in] Übergeordnetes Fenster
+
+ `dwID`
+
+ [in] ID für den benutzerdefinierten Viewer, die mehr als einen Typ zu unterstützen.
+
+ `pHostServices`
+
+ [in]: Reserviert Legen Sie immer auf Null.
+
+ `pDebugProperty`
+
+ [in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts, der angezeigt werden.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.
+
+## <a name="remarks"></a>Hinweise
+ Die Anzeige ist "modal", insofern diese Methode die erforderlichen Fenster erstellt, den Wert zeigt, auf Eingabe warten, und schließen Sie das Fenster, alle vor der Rückgabe an den Aufrufer. Dies bedeutet, dass alle Aspekte, die zum Anzeigen von den Wert der Eigenschaft, von der Erstellung eines Fensters für die Ausgabe für das Warten auf Benutzereingaben, um das Löschen des Fensters von die Methode behandelt werden muss.
+
+ Zur Unterstützung der Änderung des Werts auf die angegebenen [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Objekts verwenden Sie die [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) Methode – Wenn der Wert als Zeichenfolge ausgedrückt werden kann. Andernfalls ist es erforderlich, eine benutzerdefinierte Schnittstelle zu erstellen – ausschließlich für die ausdrucksauswertung Implementierung `DisplayValue` Methode – für das gleiche Objekt, das implementiert die `IDebugProperty3` Schnittstelle. Diese benutzerdefinierte Schnittstelle, die Methoden zum Ändern der Daten von beliebiger Größe oder Komplexität angeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

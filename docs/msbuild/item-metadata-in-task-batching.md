@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623709"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann Elementlisten anhand von Elementmetadatenelementen in verschiedene Kategorien oder Batches unterteilen und eine Aufgabe einmal mit jedem Batch ausführen. Es ist schwierig zu erkennen, welche Elemente mit welchem Batch übergeben werden. In diesem Artikel werden die folgenden häufig auftretenden Szenarios thematisiert, bei denen die Batchverarbeitung ein Bestandteil ist.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)  
-[Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)  
-[ItemMetadata-Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Batchverarbeitung](../msbuild/msbuild-batching.md)  
-[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)
+- [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)
+- [ItemMetadata-Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Batchverarbeitung](../msbuild/msbuild-batching.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)

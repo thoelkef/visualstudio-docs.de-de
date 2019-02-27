@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925448"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638730"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
 Die Fähigkeit von MSBuild 3.5, mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Protokollierung erhöhen. In einer Umgebung mit nur einem Prozessor kann die Protokollierung eingehende Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise verarbeiten. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. MSBuild bietet eine neue mehrprozessorfähige Protokollierung und ermöglicht die Erstellung benutzerdefinierter „weiterleitender Protokollierungen“.
@@ -71,5 +71,5 @@ Culture=neutral
 Ein Sternchen (*) trennt die beiden Protokollierungsnamen im `-dl`-Schalter.
 
 ## <a name="see-also"></a>Siehe auch
-[Buildprotokollierungen](../msbuild/build-loggers.md)  
-[Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)
+- [Buildprotokollierungen](../msbuild/build-loggers.md)
+- [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)

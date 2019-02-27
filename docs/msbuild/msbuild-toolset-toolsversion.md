@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947620"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605184"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*), eine Datei mit allgemeinen Zielen (*microsoft.common.targets*) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.
@@ -116,4 +116,5 @@ MSBuild stellt Überladungen für die `ToolLocationHelper`-Methoden bereit, die 
 Unter-Toolsets wurden in .NET Framework 4.5 eingeführt.
 
 ## <a name="see-also"></a>Siehe auch
- [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md) [Übersicht über die Festlegung von Zielversionen mit MSBuild](../msbuild/msbuild-multitargeting-overview.md)
+- [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

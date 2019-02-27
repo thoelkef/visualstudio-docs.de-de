@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6cb50e3b62380ff8de191de153ff4edd0545de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625191"
 ---
 # <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
-Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.  
-  
- Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.  
-  
- In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)   
- [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)
+Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.
+
+ Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.
+
+ In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.
+
+## <a name="see-also"></a>Siehe auch
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+- [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)
