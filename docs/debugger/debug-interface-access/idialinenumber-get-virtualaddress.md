@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c5b485bf0fbd06b71aa7fb3239ca2796a4512a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98826ec691efdca70a9d0ca98b089904b2ed0c48
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629780"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
-Ruft die virtuelle Adresse (VA) des Blocks ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die virtuelle Adresse des Blocks zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Ruft die virtuelle Adresse (VA) des Blocks ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die virtuelle Adresse des Blocks zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

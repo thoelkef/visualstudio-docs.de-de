@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31dc81f7975d62832e754777db7432c83868ada7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986684"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613491"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Ruft die Array-Index-Typ-ID des Symbols ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_arrayIndexTypeId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die Array-Index-Typ-ID des Symbols zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft die Array-Index-Typ-ID des Symbols ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_arrayIndexTypeId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die Array-Index-Typ-ID des Symbols zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="remarks"></a>Anmerkungen
+ Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK V7. 0|
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

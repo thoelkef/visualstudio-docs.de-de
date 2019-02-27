@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800a270ddb8e320bc7f7f712850cfd84200f00a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983611"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686560"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (Destruktor)
-Zerstört eine Instanz der `VsgDbg`-Klasse. Wenn Grafikinformationen aktiv aufgezeichnet werden, wird die Grafikprotokolldatei abgeschlossen und geschlossen, und die Ressourcen, die während der aktiven Erfassung der Grafikinformationen verwendet wurden, werden freigegeben.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-~VsgDbg();  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [VsgDbg::VsgDbg (Konstruktor)](vsgdbg-vsgdbg-constructor.md)
+Zerstört eine Instanz der `VsgDbg`-Klasse. Wenn Grafikinformationen aktiv aufgezeichnet werden, wird die Grafikprotokolldatei abgeschlossen und geschlossen, und die Ressourcen, die während der aktiven Erfassung der Grafikinformationen verwendet wurden, werden freigegeben.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+~VsgDbg();
+```
+
+## <a name="see-also"></a>Siehe auch
+- [VsgDbg::VsgDbg (Konstruktor)](vsgdbg-vsgdbg-constructor.md)

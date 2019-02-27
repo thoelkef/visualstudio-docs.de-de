@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 981227f24cb35400b3b4483458a4a6afa5175c6a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31b386ff2c31937efc352049f7db068f49e4ba19
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021649"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620134"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-Ruft ein Flag, das angibt, ob C++-Ausnahmebehandlung in Kraft ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` ist C++-Ausnahmebehandlung in Kraft ist, andernfalls gibt `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Um festzustellen, ob strukturiert Ausnahme behandeln gilt (Dies ist sehr stark von der C++-Ausnahmebehandlung), rufen Sie die [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) Methode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+Ruft ein Flag, das angibt, ob C++-Ausnahmebehandlung in Kraft ist.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_cplusplusExceptionHandling ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` ist C++-Ausnahmebehandlung in Kraft ist, andernfalls gibt `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Anmerkungen
+ Um festzustellen, ob strukturiert Ausnahme behandeln gilt (Dies ist sehr stark von der C++-Ausnahmebehandlung), rufen Sie die [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) Methode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f65444b0bd7562c2302eae87ae318b2e6e4989
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc43d94cfe94e63dfb477429c2c81471e5c40af4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916920"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607641"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
-Ruft die virtuelle Tabelle Form Symbol-ID des Symbols ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_virtualTableShapeId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die virtuellen Tabellen Form Symbol-ID des Symbols zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft die virtuelle Tabelle Form Symbol-ID des Symbols ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_virtualTableShapeId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die virtuellen Tabellen Form Symbol-ID des Symbols zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="remarks"></a>Hinweise  
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="remarks"></a>Anmerkungen
+ Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,46 +12,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff59abc8aa0db3d25a42b443cccdc20084dd0d11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031179"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633745"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
-Ruft den angegebenen Datensatz ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Item (   
-   DWORD  index,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- Index  
- [in] Der Index des Datensatzes abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1, wobei `count` von zurückgegeben wird [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
-  
- cbData  
- [in] Größe des Datenpuffers in Byte.  
-  
- pcbData  
- [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in den angegebenen Datensatz verfügbar sind.  
-  
- data[]  
- [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt wird.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und, wenn die `index` -Parameter ist außerhalb des gültigen Bereichs.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
- [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)
+Ruft den angegebenen Datensatz ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Item ( 
+   DWORD  index,
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[]
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ Index
+
+[in] Der Index des Datensatzes abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1, wobei `count` von zurückgegeben wird [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+
+ cbData
+
+[in] Größe des Datenpuffers in Byte.
+
+ pcbData
+
+[out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in den angegebenen Datensatz verfügbar sind.
+
+ data[]
+
+[out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt wird.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und, wenn die `index` -Parameter ist außerhalb des gültigen Bereichs.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)
+- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
+- [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)
+- [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)

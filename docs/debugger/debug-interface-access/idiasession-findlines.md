@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019475"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642884"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Ruft die Zeilennummern im angegebenen Kompiliereinheit und befehlsquellenbezeichner-Datei ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `compiland`  
- [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit darstellt. Verwenden Sie diese Schnittstelle als einem Kontext, in dem für die Zeilennummern gesucht werden soll.  
-  
- `file`  
- [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei in die Suche nach den Zeilennummern darstellt.  
-  
- `ppResult`  
- [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit den Zeilennummern enthält abgerufen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft die Zeilennummern im angegebenen Kompiliereinheit und befehlsquellenbezeichner-Datei ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT findLines ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `compiland`
+
+[in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit darstellt. Verwenden Sie diese Schnittstelle als einem Kontext, in dem für die Zeilennummern gesucht werden soll.
+
+ `file`
+
+[in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei in die Suche nach den Zeilennummern darstellt.
+
+ `ppResult`
+
+[out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit den Zeilennummern enthält abgerufen.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

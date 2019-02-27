@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbfc6b6025ce10cc14aac6db4d04a10a395d436a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a93172c634b9a56df5ebcfb58c131916c4c6282
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920856"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646980"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
-Zurücksetzen von Kennwörtern an den Anfang einer Enumerationsfolge.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK`zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Zurücksetzen von Kennwörtern an den Anfang einer Enumerationsfolge.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt `S_OK`zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -17,24 +17,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb24a4bf5b3625255ea9503c2ce88bb64b28ef4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716258"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Ausgabefenster, Debuggen, Dialogfeld "Optionen"
 Sie können angeben, welche Arten von Debuginformationen im **Ausgabefenster** angezeigt werden. Um diese Optionen anzuzeigen, öffnen Sie das Menü **Extras**, klicken Sie auf **Optionen**, erweitern Sie den Knoten **Debuggen**, und klicken Sie auf **Ausgabefenster**.
 
-**Allgemeine Ausgabeeinstellungen** diese Kategorie enthält Steuerelemente, die bestimmen, ob allgemeine Debugmeldungen im angezeigt werden. die **Ausgabe** Fenster. Sie können für jeden Meldungstyp angeben, ob dieser angezeigt werden soll.  
+**Allgemeine Ausgabeeinstellungen** diese Kategorie enthält Steuerelemente, die bestimmen, ob allgemeine Debugmeldungen im angezeigt werden. die **Ausgabe** Fenster. Sie können für jeden Meldungstyp angeben, ob dieser angezeigt werden soll.
 
 **WPF-Ablaufverfolgungseinstellungen** diese Kategorie enthält Steuerelemente, die die Ebene der WPF-Ablaufverfolgungsmeldungen, die bestimmen in angezeigt werden. die **Ausgabe** Fenster. Sie können für jeden Meldungstyp angeben, ob dieser angezeigt werden soll, und Sie können eine Ebene zwischen **Kritisch** und **Alle** auswählen.
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen](../debugger/how-to-display-wpf-trace-information.md).
 
 Wenn Sie die Standardeinstellungen wiederherstellen möchten, erreichen Sie, dass die Verwendung **Tools** > **Einstellungen importieren und exportieren** > **alle Einstellungen zurücksetzen**. Wenn Sie nur eine Teilmenge der Einstellungen zurücksetzen möchten, speichern Sie die Einstellungen in der **-Import- und Exportassistenten Einstellungen** vorzunehmende Änderungen, die Sie testen möchten, klicken Sie dann die gespeicherten Einstellungen später importieren.
-  
+
 ## <a name="see-also"></a>Siehe auch
-[Debuggen, Dialogfeld „Optionen“](../debugger/debugging-options-dialog-box.md)   
-[Ausgabefenster](../ide/reference/output-window.md)
+- [Debuggen, Dialogfeld "Optionen"](../debugger/debugging-options-dialog-box.md)
+- [Ausgabefenster](../ide/reference/output-window.md)

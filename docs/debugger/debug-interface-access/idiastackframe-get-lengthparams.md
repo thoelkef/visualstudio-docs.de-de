@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf9d5c24e175a3c12084330e01313da1d13b3c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8505556e814493078bcd3944768011a2405510c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040089"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630573"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
-Ruft die Anzahl der Bytes von Parametern, die auf dem Stapel abgelegt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_lengthParams (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die Anzahl der Bytes von Parametern zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Ruft die Anzahl der Bytes von Parametern, die auf dem Stapel abgelegt.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_lengthParams ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die Anzahl der Bytes von Parametern zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

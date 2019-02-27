@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1658944b8db6df25111fb8c490b6eeda9ff016ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8175fc05b05bfd3375fe0dcc0702741266801137
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619172"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
-Ruft ein Flag, das angibt, ob der Abschnitt ausführbaren Code enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_code (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` , wenn der Abschnitt ausführbaren Code enthält, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Ruft ein Flag, das angibt, ob der Abschnitt ausführbaren Code enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_code ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` , wenn der Abschnitt ausführbaren Code enthält, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

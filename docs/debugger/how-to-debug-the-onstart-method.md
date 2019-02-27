@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227060"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714971"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Gewusst wie: Debuggen der OnStart-Methode
 Sie können einen Windows-Dienst debuggen, indem Sie den Dienst starten und den Debugger an den Dienstprozess anfügen. Weitere Informationen finden Sie unter [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Zum Debuggen der <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> -Methode eines Windows-Diensts müssen Sie den Debugger allerdings aus der Methode starten.
@@ -53,5 +53,5 @@ Sie können einen Windows-Dienst debuggen, indem Sie den Dienst starten und den 
 5. Eine neue Instanz von Visual Studio wird gestartet, und die Ausführung wird beim Erreichen der `Debugger.Launch()` -Methode beendet.
 
 ## <a name="see-also"></a>Siehe auch
-[Debuggersicherheit](../debugger/debugger-security.md)  
-[Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

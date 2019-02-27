@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316846"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710590"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden den eigenständigen IntelliTrace Collector (C#, Visual Basic)
 
@@ -70,7 +70,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 5.  [Daten von einer Webapp oder SharePoint-Anwendung sammeln](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - oder - 
+     - oder -
 
      [Sammeln von Daten aus einer verwalteten Anwendung](#BKMK_Collect_Data_from_Executables)
 
@@ -172,7 +172,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
    > [!NOTE]
    > - Um eine Verlangsamung der App zu vermeiden, wählen Sie einen Speicherort auf einem lokalen Hochgeschwindigkeitsdatenträger, der nicht sehr aktiv ist.
    >   -   Die ITRACE-Dateien und die Collector-Dateien können am selben Speicherort abgelegt werden. Achten Sie aber bei einer Web App oder SharePoint-Anwendung darauf, dass der Speicherort außerhalb des Verzeichnisses liegt, indem die Anwendung gehostet wird.
-   > 
+   >
    > [!IMPORTANT]
    > - Beschränken Sie den Zugriff auf das Verzeichnis der ITRACE-Datei auf die Identitäten, die den Collector für ihre Arbeit benötigen. Eine ITRACE-Datei kann möglicherweise vertrauliche Informationen enthalten, wie beispielsweise Daten von Benutzern, Datenbanken, anderen Quellspeicherorten und von den Verbindungszeichenfolgen, da IntelliTrace sowohl alle Daten, die an Methodenparameter übergeben werden, aufzeichnen kann, als auch als Rückgabewerte.
    >   -   Stellen Sie sicher, dass die Personen, die ITRACE-Dateien öffnen können, über die Befugnis verfügen, vertraulichen Daten einzusehen. Seien Sie bei der Freigabe von ITRACE-Dateien vorsichtig. Wenn andere Personen Zugriff benötigen, kopieren Sie die Dateien an einen sicheren freigegebenen Speicherort.

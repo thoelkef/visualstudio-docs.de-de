@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b92bc36a18125322ea105a7c99fb8b586f54cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 874e05c0ba738f3730c23dcd092921e4b8c02829
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020125"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643859"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-Ruft ein Flag, das angibt, ob das Modul aus einem Modul Common Intermediate Language (CIL) in ein systemeigenes Modul konvertiert wurde.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_isCVTCIL(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pFlag`  
- [out] Gibt `TRUE` , wenn das Modul aus der CIL in systemeigenen Code konvertiert wurde, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ein Flag, das angibt, ob das Modul aus einem Modul Common Intermediate Language (CIL) in ein systemeigenes Modul konvertiert wurde.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_isCVTCIL(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pFlag`
+
+[out] Gibt `TRUE` , wenn das Modul aus der CIL in systemeigenen Code konvertiert wurde, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+
+## <a name="remarks"></a>Anmerkungen
+ Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK 8.0|
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

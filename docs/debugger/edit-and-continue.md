@@ -21,31 +21,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7abb1f4a47c7d5274aaef28dfa0838c755f9a689
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1bc71b37572d76632a0936f23386985c2e3a9dc1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930932"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696479"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten von Code und Debugging in Visual Studio fortzusetzen (C#, VB, C++)
-Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, indem Sie einen Ausführungsbefehl wie **Weiter** oder **Schritt**, bearbeiten und Fortfahren automatisch wendet die codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.  
-  
- Dieser Abschnitt schließt folgende Themen ein:   
-  
- [Vorgehensweise: Enable and Disable Edit and Continue (Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“)](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
-  
- [Vorgehensweise: Stop Code Changes (Vorgehensweise: Anhalten von Codeänderungen)](../debugger/how-to-stop-code-changes.md)   
-  
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
-  
- [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
-  
- [Bearbeiten und Fortfahren (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
-  
- [Bearbeiten und Fortfahren wird für F# nicht unterstützt](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, indem Sie einen Ausführungsbefehl wie **Weiter** oder **Schritt**, bearbeiten und Fortfahren automatisch wendet die codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.
+
+ Dieser Abschnitt schließt folgende Themen ein:
+
+ [Gewusst wie: Aktivieren und Deaktivieren von "Bearbeiten und Fortfahren"](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+
+ [Gewusst wie: Anhalten von Codeänderungen](../debugger/how-to-stop-code-changes.md)
+
+ [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+
+ [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+
+ [Bearbeiten und Fortfahren (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
+
+ [Bearbeiten und Fortfahren wird für F# nicht unterstützt](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
