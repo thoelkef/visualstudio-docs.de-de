@@ -12,38 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5582990ff3db2e03dce9dc0c198a907de978d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 604160cdaf8c1ff28b306106afe34e047768f3c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971074"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632094"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
-Ruft die Quellbytes-Code ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_source (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `cbData`  
- [in] Die Anzahl der Bytes, die die Größe des Datenpuffers darstellt.  
-  
- `pcbData`  
- [out] Gibt zurückgegeben, die Anzahl der Bytes, die die Bytes darstellt. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` ist die Gesamtzahl der Bytes der Daten verfügbar.  
-  
- `data[]`  
- [out] Ein Puffer, der sich die Quellbytes gefüllt werden soll.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Ruft die Quellbytes-Code ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_source ( 
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[]
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `cbData`
+
+[in] Die Anzahl der Bytes, die die Größe des Datenpuffers darstellt.
+
+ `pcbData`
+
+[out] Gibt zurückgegeben, die Anzahl der Bytes, die die Bytes darstellt. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` ist die Gesamtzahl der Bytes der Daten verfügbar.
+
+ `data[]`
+
+[out] Ein Puffer, der sich die Quellbytes gefüllt werden soll.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

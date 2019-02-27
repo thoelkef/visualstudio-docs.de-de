@@ -26,33 +26,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9d649ddf3bb9814f837c132bef7d96574336f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925533"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688042"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Vorgehensweise: RPC-Debuggen von COM-Clients und -Servern
-Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden, um COM-Client-/Server-Anwendungen zu debuggen. Vor der Verwendung muss RPC-Debuggen allerdings aktiviert werden. Bei aktiviertem RPC-Debuggen wird der Debugger an den Server angefügt, wenn Sie vom Client in den Serveraufruf springen. Der Code kann nun debuggt werden. Wenn der Debugger angefügt wurde, können alle Debuggerfeatures sowohl für Client- als auch für Serverprozesse verwendet werden.  
-  
-### <a name="to-enable-rpc-debugging"></a>So aktivieren Sie RPC-Debuggen  
-  
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
-  
-2.  Klicken Sie im Dialogfeld **Optionen** auf den Ordner **Debuggen**.  
-  
-3.  Klicken Sie auf die Seite **Native** (Nativ).  
-  
-4.  Aktivieren Sie das Kontrollkästchen **RPC-Debuggen**.  
-  
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Gewusst wie: RPC-Debuggen von COM-Clients und -Servern
+Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden, um COM-Client-/Server-Anwendungen zu debuggen. Vor der Verwendung muss RPC-Debuggen allerdings aktiviert werden. Bei aktiviertem RPC-Debuggen wird der Debugger an den Server angefügt, wenn Sie vom Client in den Serveraufruf springen. Der Code kann nun debuggt werden. Wenn der Debugger angefügt wurde, können alle Debuggerfunktionen sowohl für Client- als auch für Serverprozesse verwendet werden.
+
+### <a name="to-enable-rpc-debugging"></a>So aktivieren Sie RPC-Debuggen
+
+1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+
+2.  Klicken Sie im Dialogfeld **Optionen** auf den Ordner **Debuggen**.
+
+3.  Klicken Sie auf die Seite **Native** (Nativ).
+
+4.  Aktivieren Sie das Kontrollkästchen **RPC-Debuggen**.
+
     > [!NOTE]
-    >  Sie müssen Administrator- oder Hauptbenutzerrechte besitzen, um Remoteprozeduraufrufe debuggen zu können.  
-  
+    >  Sie müssen Administrator- oder Hauptbenutzerrechte besitzen, um Remoteprozeduraufrufe debuggen zu können.
+
     > [!NOTE]
-    >  RPC-Stepping auf einem Remoteserver, auf dem Microsoft Windows Vista ausgeführt wird, funktioniert nur, wenn ein systemeigener Debugger an den Remoteserver angehängt wird. Andernfalls schlägt der RPC-Aufruf ohne eine Fehlermeldung fehl. Sonst wird der RPC-Aufruf abgeschlossen, aber der Einzelschritt beim RPC-Aufruf funktioniert nicht.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)  
- [Debuggen in Visual Studio](../debugger/index.md)  
- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+    >  RPC-Stepping auf einem Remoteserver, auf dem Microsoft Windows Vista ausgeführt wird, funktioniert nur, wenn ein systemeigener Debugger an den Remoteserver angehängt wird. Andernfalls schlägt der RPC-Aufruf ohne eine Fehlermeldung fehl. Sonst wird der RPC-Aufruf abgeschlossen, aber der Einzelschritt beim RPC-Aufruf funktioniert nicht.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)
+- [Debuggen in Visual Studio](../debugger/index.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

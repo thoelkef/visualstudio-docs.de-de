@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155590"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637073"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Wird eine Sitzung für das Abfragen von Symbolen geöffnet.
@@ -31,7 +31,8 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>Parameter
-ppSession  
+ppSession
+
 [out] Gibt eine [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt, das die geöffnete Sitzung darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
@@ -43,7 +44,7 @@ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die
 |E_INVALIDARG|Ungültiger `ppSession`-Parameter.|
 |E_OUTOFMEMORY|Nicht genügend Arbeitsspeicher, um die Sitzung zu öffnen.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Diese Methode öffnet ein [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt für eine Datenquelle.
 
 `IDiaSession` Objekte werden Abfragen in der Datenquelle implementieren. Eine Sitzung verwaltet einen Adressraum für jeden Satz von Debugsymbolen. Wenn die .exe oder .dll-Datei, die von der Quelle Datensymbole beschrieben ist in mehrere Adressen aktiv Bereichen (z. B., weil mehrere Prozesse geladen haben), und dann eine Sitzung für jeden Adressbereich verwendet werden soll.
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[Übersicht](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [Übersicht](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

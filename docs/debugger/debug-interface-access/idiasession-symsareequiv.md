@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a3081cc32eb4286ed7b981dfa2a070dbf4a0ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036692"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613049"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-Überprüft, um festzustellen, ob zwei Symbole entsprechen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT symsAreEquiv (   
-   IDiaSymbol* symbolA,  
-   IDiaSymbol* symbolB  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `symbolA`  
- [in] Die erste [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das im Vergleich verwendet.  
-  
- `symbolB`  
- [in] Die zweite `IDiaSymbol` Objekt, das im Vergleich verwendet.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, wenn die Symbole gleichwertig sind, `S_OK`ist, andernfalls gibt `S_FALSE`, die Symbole sind kein Äquivalent. Geben Sie andernfalls einen Fehlercode zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Überprüft, um festzustellen, ob zwei Symbole entsprechen.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT symsAreEquiv ( 
+   IDiaSymbol* symbolA,
+   IDiaSymbol* symbolB
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `symbolA`
+
+[in] Die erste [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das im Vergleich verwendet.
+
+ `symbolB`
+
+[in] Die zweite `IDiaSymbol` Objekt, das im Vergleich verwendet.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt zurück, wenn die Symbole gleichwertig sind, `S_OK`ist, andernfalls gibt `S_FALSE`, die Symbole sind kein Äquivalent. Geben Sie andernfalls einen Fehlercode zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

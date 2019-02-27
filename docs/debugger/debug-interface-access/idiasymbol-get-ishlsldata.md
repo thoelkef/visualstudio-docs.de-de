@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d736f9b48952d370de3e033ee4dc80edccad6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926676"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617261"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Gibt an, ob dieses Symbol High Level Shader Language (HLSL) Daten darstellt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_isHLSLData(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `BOOL` , der angibt, ob dieses Symbol HLSL-Daten darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Gibt an, ob dieses Symbol High Level Shader Language (HLSL) Daten darstellt.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_isHLSLData(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `BOOL` , der angibt, ob dieses Symbol HLSL-Daten darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc493c13cd5efda4e32f772b202e1855a2996471
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 328536b64bdea2591b4ab8c242348b8304984466
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964885"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624632"
 ---
 # <a name="idiaenumsourcefilesclone"></a>IDiaEnumSourceFiles::Clone
-Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumSourceFiles** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- ppenum  
- [out] Gibt eine [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) Objekt, das ein Duplikat des Enumerators enthält. Die Quelle nicht in Dateien werden dupliziert, nur den Enumerator.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumSourceFiles** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ ppenum
+
+[out] Gibt eine [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) Objekt, das ein Duplikat des Enumerators enthält. Die Quelle nicht in Dateien werden dupliziert, nur den Enumerator.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604c3f7654a21dd17fb20d96cc28d7c37cf01515
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3a77ec9f1b088b135b3947250841d10eb9aa169
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955998"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611359"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
-Ruft ein Flag, das angibt, ob der Abschnitt im Arbeitsspeicher freigegeben werden kann.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_share (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` , wenn der Abschnitt im Speicher freigegeben ist, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Ruft ein Flag, das angibt, ob der Abschnitt im Arbeitsspeicher freigegeben werden kann.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_share ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` , wenn der Abschnitt im Speicher freigegeben ist, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

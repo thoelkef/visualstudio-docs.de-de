@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eea2b3e903e3311773bc1fcfe9df7d67949dc5e5
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645056"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Listet die verschiedenen Elemente der Frame in der Datenquelle enthalten sind.
@@ -43,7 +43,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaEnumFrameData`.
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Gibt einen Frame relative virtuelle Adresse (RVA) zurück.|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Gibt einen Frame virtuelle Adresse (VA) zurück.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle aus der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) Methode. Siehe das Beispiel für Details.
@@ -95,7 +95,7 @@ void ShowFrameData(IDiaSession *pSession)
             PrintFrameData(pFrameData);
             pFrameData->Release();
         }
-        pEnumFrameData->Release(); 
+        pEnumFrameData->Release();
     }
 }
 ```
@@ -108,6 +108,6 @@ void ShowFrameData(IDiaSession *pSession)
 **DLL:** msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

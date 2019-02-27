@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924547"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596346"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Liest `BOOL` Werte in einem Eigenschaftensatz.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `id`  
- [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).  
-  
- `pValue`  
- [out] Gibt den Wert der Eigenschaft zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BOOL`.  
-  
-## <a name="remarks"></a>Hinweise  
- Für einheitliche Ergebnisse interpretiert die `BOOL` Wert, sodass Werte ungleich NULL sind `TRUE` und 0 (null) ist `FALSE`.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Liest `BOOL` Werte in einem Eigenschaftensatz.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `id`
+
+[in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).
+
+ `pValue`
+
+[out] Gibt den Wert der Eigenschaft zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BOOL`.
+
+## <a name="remarks"></a>Anmerkungen
+ Für einheitliche Ergebnisse interpretiert die `BOOL` Wert, sodass Werte ungleich NULL sind `TRUE` und 0 (null) ist `FALSE`.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
