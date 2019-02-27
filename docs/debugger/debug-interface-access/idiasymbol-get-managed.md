@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75df4f6d0b95ebdc50905e312de76b7f50f114e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4da0bb740885f21d8e161cf5f88f45abd5499f21
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070772"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601563"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Ruft ein Flag, das angibt, ob das Symbol für verwalteten Code verweist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_managed (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` , wenn das Symbol auf verwalteten Code verweist, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ein Flag, das angibt, ob das Symbol für verwalteten Code verweist.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_managed ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` , wenn das Symbol auf verwalteten Code verweist, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

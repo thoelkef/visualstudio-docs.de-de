@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c89633c047a0a56a1efed5aba46e6632da7cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983430"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631262"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 
@@ -96,6 +96,6 @@ Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch akt
 
 ## <a name="see-also"></a>Siehe auch
 
-[Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)  
-[Securw ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)  
-[Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
+[Securw ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
+[auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

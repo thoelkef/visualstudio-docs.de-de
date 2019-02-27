@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8800269f47965dacd7a6683c34a8ecd121aa270b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7334452594b3156670d97313dcb7ec7ad644e68b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998832"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630729"
 ---
 # <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
-Ruft das Metadatentoken für eine verwaltete Funktion oder Variable ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_token (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt das Metadatentoken für eine verwaltete Funktion oder Variable zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft das Metadatentoken für eine verwaltete Funktion oder Variable ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_token ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt das Metadatentoken für eine verwaltete Funktion oder Variable zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

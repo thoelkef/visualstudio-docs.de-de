@@ -11,35 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 861129a6251f0142a22cd916cddbfd95d03b22db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938551"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692397"
 ---
 # <a name="spy-views"></a>Spy++-Ansichten
-Spy-Strukturansichten des Windows-, Nachrichten, Prozesse und Threads verfügbar sind auf Ihrem Computer angezeigt.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Fensteransicht](../debugger/windows-view.md)  
- Zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente.  
-  
- [Meldungsansicht](../debugger/messages-view.md)  
- Zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.  
-  
- [Prozessansicht](../debugger/processes-view.md)  
- Zeigt eine Strukturansicht der aktiven Prozesse an.  
-  
- [Threads View (Threadansicht)](../debugger/threads-view.md)  
- Zeigt eine Strukturansicht der aktiven Threads.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md)  
- Dialogfelder, die zum Suchen von bestimmten Knoten in Fenstern mit Spy++-Ansichten verwendet werden.  
-  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
-  
- [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+Spy-Strukturansichten des Windows-, Nachrichten, Prozesse und Threads verfügbar sind auf Ihrem Computer angezeigt.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Windows-Ansicht](../debugger/windows-view.md) zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente.
+
+ [Meldungsansicht](../debugger/messages-view.md) zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.
+
+ [Prozessansicht](../debugger/processes-view.md) zeigt eine Strukturansicht der aktiven Prozesse.
+
+ [Threadansicht](../debugger/threads-view.md) zeigt eine Strukturansicht der aktiven Threads.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md) Dialogfelder verwendet, um bestimmte Knoten in Fenstern mit Spy++-Ansichten zu suchen.
+
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.

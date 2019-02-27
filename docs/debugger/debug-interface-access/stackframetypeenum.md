@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab674576655df3b4a695d97fdfdb42df2ffa449
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602454"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Gibt den Stack-Frame-Typ.
@@ -36,23 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elements
-`FrameTypeFPO`  
-Frame-Pointer ausgelassen; FPO-Informationen verfügbar.
+`FrameTypeFPO` Frame-Pointer ausgelassen; FPO-Informationen verfügbar.
 
-`FrameTypeTrap`  
-Kernel-Trap-Frame.
+`FrameTypeTrap` Kernel-Trap-Frame.
 
-`FrameTypeTSS`  
-Kernel-Trap-Frame.
+`FrameTypeTSS` Kernel-Trap-Frame.
 
-`FrameTypeStandard`  
-Standard EBP-Stapelrahmen.
+`FrameTypeStandard` Standard EBP-Stapelrahmen.
 
-`FrameTypeFrameData`  
-Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.
+`FrameTypeFrameData` Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.
 
-`FrameTypeUnknown`  
-Frame aus, der kein Debuginformationen vorhanden wären.
+`FrameTypeUnknown` Frame aus, der kein Debuginformationen vorhanden wären.
 
 ## <a name="remarks"></a>Anmerkungen
 Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.
@@ -61,5 +55,5 @@ Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [i
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226909"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613582"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktion ist ab.
@@ -31,7 +31,8 @@ HRESULT get_intro ( 
 ```
 
 #### <a name="parameters"></a>Parameter
-`pRetVal`  
+`pRetVal`
+
 [out] Gibt `TRUE` , wenn die Funktion Einführung virtuellen; ist andernfalls `FALSE`.
 
 ## <a name="return-value"></a>Rückgabewert
@@ -61,4 +62,4 @@ Beide `A::f1` und `B::f1` sind virtuelle Funktionen, aber `A::f1` Einführung vi
 |Version:|DIA-SDK V7. 0|
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -81,7 +81,7 @@
 #### [Verwalten von Abonnements für MPN](manage-mpn-subscriptions.md)
 #### [Microsoft für Startups](program-startups.md)
 ## Ressourcen
-### [Whitepaper zur Visual Studio-Lizenzierung](http://aka.ms/vslicensing)
+### [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
 ### [Vergleich von Abonnementoptionen und -preisen](https://visualstudio.microsoft.com/vs/pricing)
 ### [Vergleich von Visual Studio-IDE-Features](https://visualstudio.microsoft.com/vs/compare)
 ### [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3026dc8b228d16ecdd5b41379c180a2a3a5f0502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ac588314b69c6be8b31cc5719a4be8add3cad33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986721"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611034"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-Ruft ein Flag, das angibt, ob das Datensymbol Teil ein Aggregat oder eine Auflistung von Symbolen ist; vom Compiler aggregierte Symbole als separate Entitäten behandelt, aber sie gehören eigentlich ein einmaliges umfangreicheren Symbol.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_isAggregated(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pFlag`  
- [out] Gibt `TRUE` , wenn die Daten eine Kombination aus Symbolen, die aus einer übergeordneten Symbol; Teilen gehört, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ein Flag, das angibt, ob das Datensymbol Teil ein Aggregat oder eine Auflistung von Symbolen ist; vom Compiler aggregierte Symbole als separate Entitäten behandelt, aber sie gehören eigentlich ein einmaliges umfangreicheren Symbol.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_isAggregated(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pFlag`
+
+[out] Gibt `TRUE` , wenn die Daten eine Kombination aus Symbolen, die aus einer übergeordneten Symbol; Teilen gehört, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Die [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) Methode `TRUE` für das Symbol, das das übergeordnete Element der aggregierten Symbole ist.  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+
+## <a name="remarks"></a>Anmerkungen
+ Die [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) Methode `TRUE` für das Symbol, das das übergeordnete Element der aggregierten Symbole ist.
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK 8.0|
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

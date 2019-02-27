@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941982"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636904"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Überprüfen von Variablen in den Fenstern "Auto" und "lokal"
 
 Die **"Auto"** und **"lokal"** Windows zeigen Variablenwerte an, während des Debuggens. Die Windows sind nur verfügbar, während einer Debugsitzung. Die **"Auto"** Fenster zeigt die Variablen, die in der Nähe der aktuellen Haltepunkt verwendet. Die **"lokal"** Fenster zeigt die Variablen, die im lokalen Gültigkeitsbereich, in der Regel die aktuelle Funktion oder Methode definiert. Wenn dies das erste Mal, die Sie versucht haben ist, um Code zu debuggen, sollten Sie lesen [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md) und [Debuggen, Techniken und Tools](../debugger/write-better-code-with-visual-studio.md) , bevor Sie diesen Artikel durchgehen.
 
  Die **"Auto"** Fenster ist verfügbar für C#, Visual Basic, C++ und Python-Code, aber nicht für JavaScript oder F#.
-  
-Zum Öffnen der **"Auto"** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **"Auto"**, oder drücken Sie **STRG**+**Alt**+**V** > **ein**.  
+
+Zum Öffnen der **"Auto"** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **"Auto"**, oder drücken Sie **STRG**+**Alt**+**V** > **ein**.
 
 Zum Öffnen der **"lokal"** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **"lokal"**, oder drücken Sie **Alt**+**4**.
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 Um die Rückgabewerte der finden Sie unter den `sumVars()` und `subtractVars()` Methodenaufrufe im Fenster "Auto":
 
-1. Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.  
-   
-1. Mit dem Debuggen beginnen, und wählen Sie bei der Ausführung am Haltepunkt angehalten wird, **Prozedurschritt** , oder drücken Sie **F10**. Daraufhin sollte die folgenden Rückgabewerte in der **"Auto"** Fenster:  
-   
-  !["Auto" Rückgabewert C# ](../debugger/media/autosreturnvaluecsharp2.png "Rückgabewert für \"Auto\"C#")  
-  
-## <a name="see-also"></a>Siehe auch  
- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)  
- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)  
- [Ein erster Blick auf Debuggen](../debugger/debugger-feature-tour.md) [Debuggerfenster](../debugger/debugger-windows.md)
+1. Legen Sie einen Haltepunkt in der Zeile `int x = sumVars(a, b) + subtractVars(c, d);` fest.
+
+1. Mit dem Debuggen beginnen, und wählen Sie bei der Ausführung am Haltepunkt angehalten wird, **Prozedurschritt** , oder drücken Sie **F10**. Daraufhin sollte die folgenden Rückgabewerte in der **"Auto"** Fenster:
+
+  !["Auto" Rückgabewert C# ](../debugger/media/autosreturnvaluecsharp2.png "Rückgabewert für \"Auto\"C#")
+
+## <a name="see-also"></a>Siehe auch
+
+- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
+- [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
+- [Debuggerfenster](../debugger/debugger-windows.md)

@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931998"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707106"
 ---
 # <a name="tree-menu-commands"></a>Befehle im Menü "Struktur"
-Die **Struktur** Menü enthält Befehle zum Erweitern oder Reduzieren von Ansichten.  
-  
- **Eine Ebene aufklappen**  
- Erweitert das aktuell ausgewählte Element in einer Systemansicht durch eine Ebene darunter anzeigen.  
-  
- **Branch aufklappen**  
- Erweitert alle Ebenen unterhalb der aktuell ausgewählte Element.  
-  
- **Alle aufklappen**  
- Erweitert und zeigt alle Ebenen in einer Systemansicht.  
-  
- **Zuklappen**  
- Reduziert alle Ebenen unterhalb der aktuell ausgewählte Element.
+Die **Struktur** Menü enthält Befehle zum Erweitern oder Reduzieren von Ansichten.
+
+ **Eine Ebene aufklappen** erweitert das aktuell ausgewählte Element in einer Systemansicht durch eine Ebene darunter anzeigen.
+
+ **Erweitern Sie den Zweig** erweitert alle Ebenen unterhalb der aktuell ausgewählte Element.
+
+ **Erweitern Sie alle** wird erweitert und zeigt alle Ebenen in einer Systemansicht.
+
+ **Reduzieren** klappt alle Ebenen unterhalb der aktuell ausgewählte Element.

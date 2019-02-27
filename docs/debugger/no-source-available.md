@@ -17,28 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671593cf19eab22d1b7e233481ee4004ca8ed8ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85d1d1307a119fa23bf7ba015130ab9c7b6f69d5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925098"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703694"
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
-Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Grund hierfür ist meist, dass Sie durch Doppelklicken ein Modul ausgewählt haben, für das im **Aufruflistenfenster** oder im **Threadfenster** kein Quellcode vorhanden ist. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt setzen müssen, verwenden Sie stattdessen das **Disassemblierungsfenster**.  
-  
- Auf den Eigenschaftenseiten für Projektmappen können Sie die Verzeichnisse ändern, in denen der Debugger nach Quelldateien sucht, und den Debugger anweisen, die ausgewählten Quelldateien zu ignorieren. Finden Sie unter [Debuggen Quelle-Dateien, allgemeine Eigenschaften, Lösung Property Pages Dialog Box](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
-  
- **Zum Quellcode navigieren**  
- Klicken Sie auf diesen Link, um ein Dialogfeld zu öffnen, in dem Sie nach dem Quellcode suchen können.  
-  
- **Disassemblierung anzeigen**  
- Öffnet das **Disassemblierungsfenster**.  
-  
- **Disassemblierung für fehlende Quelldateien immer anzeigen**  
- Wählen Sie diese Option aus, um das **Disassemblierungsfenster** automatisch anzuzeigen, wenn kein Quellcode verfügbar ist. Diese Einstellung kann auch im Dialogfeld **Optionen** in der Kategorie **Debuggen** auf der Seite **Allgemein** geändert werden, indem das Kontrollkästchen **Disassemblierung anzeigen, wenn die Quelle nicht verfügbar ist** aktiviert oder deaktiviert wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [Angeben von Symboldateien (PDB) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (SOS-Debugerweiterung)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Grund hierfür ist meist, dass Sie durch Doppelklicken ein Modul ausgewählt haben, für das im **Aufruflistenfenster** oder im **Threadfenster** kein Quellcode vorhanden ist. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt setzen müssen, verwenden Sie stattdessen das **Disassemblierungsfenster**.
+
+ Auf den Eigenschaftenseiten für Projektmappen können Sie die Verzeichnisse ändern, in denen der Debugger nach Quelldateien sucht, und den Debugger anweisen, die ausgewählten Quelldateien zu ignorieren. Finden Sie unter [Debuggen Quelle-Dateien, allgemeine Eigenschaften, Lösung Property Pages Dialog Box](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
+
+ **Navigieren Sie zur Quellcode** klicken Sie auf diesen Link, um ein Dialogfeld zu öffnen, in dem Sie finden den Quellcode durchsuchen können.
+
+ **Disassembly anzeigen** startet die **Disassemblyfenster**.
+
+ **Disassembly für fehlende Quelldateien immer anzeigen** wählen Sie diese Option zum Anzeigen der **Disassemblyfenster** automatisch Wenn kein Quellcode verfügbar ist. Diese Einstellung kann auch im Dialogfeld **Optionen** in der Kategorie **Debuggen** auf der Seite **Allgemein** geändert werden, indem das Kontrollkästchen **Disassemblierung anzeigen, wenn die Quelle nicht verfügbar ist** aktiviert oder deaktiviert wird.
+
+## <a name="see-also"></a>Siehe auch
+- [Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [SOS.dll (SOS-Debugerweiterung)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

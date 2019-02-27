@@ -21,29 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff144a30646ec29c022ba8e55c950e086179337
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628922"
 ---
 # <a name="debug-hook-function-writing"></a>Schreiben von Hookfunktionen zum Debuggen
-In diesem Abschnitt wird eine Reihe von benutzerdefinierten Hookfunktionen zum Debuggen beschrieben, mit denen Code an vordefinierten Punkten in die normalen Verarbeitungsschritte des Debuggers eingefügt werden kann.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Hookfunktionen für Clientblöcke](../debugger/client-block-hook-functions.md)  
- Enthält Anweisungen sowie einen Prototyp für das Schreiben von Funktionen, mit denen der Inhalt der Daten, die in _CLIENT_BLOCK-Blöcken gespeichert werden, überprüft oder dokumentiert wird.  
-  
- [Hookfunktionen für Reservierungen](../debugger/allocation-hook-functions.md)  
- Enthält eine Beschreibung einer Reservierungshookfunktion und deren unterschiedlichen Verwendungen, Hinweise auf Beschränkungen sowie einen Prototyp.  
-  
- [Zuweisungshooks und CRT-Speicherbelegungen](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- In diesem Abschnitt wird die für Reservierungshookfunktionen anwendbare Beschränkung beschrieben, nach der `_CRT_BLOCK`-Blöcke explizit ignoriert werden, wenn sie C-Laufzeitbibliotheksfunktionen aufrufen, durch die interner Speicher belegt wird. Hier wird außerdem beschrieben, welche Konsequenzen es hat, wenn der Zuweisungshook `_CRT_BLOCK`-Blöcke nicht ignoriert (einschließlich Beispielen), und wie Sie die standardmäßige Zuweisungshookfunktion **CrtDefaultAllocHook** ändern.  
-  
- [Berichtshookfunktionen](../debugger/report-hook-functions.md)  
- Hier wird die `_CrtSetReportHook`-Funktion beschrieben, mit der Sie Berichte nach bestimmten Reservierungstypen filtern können. In diesem Thema finden Sie außerdem einen Prototyp.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)  
- Enthält Links zu Debugtechniken für die C-Laufzeitbibliothek, darunter Verwenden der CRT-Debugbibliothek, Makros für die Berichterstellung, Unterschiede zwischen `malloc` und `_malloc_dbg`, Schreiben von Hookfunktionen für das Debuggen und CRT-Debugheap.
+In diesem Abschnitt wird eine Reihe von benutzerdefinierten Hookfunktionen zum Debuggen beschrieben, mit denen Code an vordefinierten Punkten in die normalen Verarbeitungsschritte des Debuggers eingefügt werden kann.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Clientblöcke](../debugger/client-block-hook-functions.md) bietet Anweisungen sowie einen Prototyp für das Schreiben von Funktionen, die überprüfen, oder melden den Inhalt der Daten, die in _CLIENT_BLOCK-Blöcken gespeichert.
+
+ [Hookfunktionen](../debugger/allocation-hook-functions.md) eine Reservierungshookfunktion definiert, deren unterschiedlichen Verwendungen, betont, Einschränkungen und stellt einen Prototyp.
+
+ [Reservierungshooks und CRT-Speicherbelegungen](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) beschreibt die Einschränkung für Reservierungshookfunktionen explizit ignoriert `_CRT_BLOCK` blockiert, wenn sie C-Laufzeitbibliotheksfunktionen aufrufen, die interner Speicher belegt. Hier wird außerdem beschrieben, welche Konsequenzen es hat, wenn der Zuweisungshook `_CRT_BLOCK`-Blöcke nicht ignoriert (einschließlich Beispielen), und wie Sie die standardmäßige Zuweisungshookfunktion **CrtDefaultAllocHook** ändern.
+
+ [Melden Sie Hook Functions](../debugger/report-hook-functions.md) erläutert `_CrtSetReportHook`, die Sie verwenden können, zum Filtern von Berichten in bestimmte Typen von Zuordnungen zu konzentrieren. In diesem Thema finden Sie außerdem einen Prototyp.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+
+- [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md) – enthält Links zu Debugtechniken für die C-Laufzeitbibliothek, einschließlich der Verwendung der CRT-Debugbibliothek, Makros für die berichterstellung, Unterschiede zwischen `malloc` und `_malloc_dbg`, Schreiben von Hookfunktionen und der CRT -Debugheap.

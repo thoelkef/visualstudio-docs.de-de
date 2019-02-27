@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec508ccf26e12ae138eaeeda6409aa3cd9fea592
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: e2865dbf3da103610407cd33eeeaf934caba3c7a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987365"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608616"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Bietet Zugriff auf die Datensätze in einem Debug-Datenstrom.
@@ -42,7 +42,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaEnumDebugStreamData`.
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Setzt die Enumerationsfolge auf den Anfang zurück.|
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Erstellt einen Enumerator, der gleiche aufgelistete Sequenz wie der aktuelle Enumerator enthält.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Diese Schnittstelle stellt einen Datenstrom von Datensätzen in einem Debug-Datenstrom. Die Größe und die Interpretation der jeder Datensatz ist abhängig von den Datenstrom an, die der Datensatz stammt. Diese Schnittstelle bietet effektiv Zugriff auf die Rohdaten-Bytes in der Symboldatei.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
@@ -110,6 +110,6 @@ Bibliothek: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)  
-[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
+- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

@@ -12,38 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 417ec6472d815c873972c1ceefaadd6063b3c187
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59d076781e0f67ad9a2f2af02e7dc937042b0e71
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951572"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620394"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
-Legt den Wert eines Registers.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `index`  
- [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register zum Schreiben in angibt.  
-  
- `NewVal`  
- [in] Der neue Wert von Register.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Trotz der Größe des Werts sollte eine Implementierung speichern, was dem Registrieren normalerweise enthält nur. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)
+Legt den Wert eines Registers.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT put_registerValue ( 
+   DWORD     index,
+   ULONGLONG NewVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `index`
+
+[in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register zum Schreiben in angibt.
+
+ `NewVal`
+
+[in] Der neue Wert von Register.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Anmerkungen
+ Trotz der Größe des Werts sollte eine Implementierung speichern, was dem Registrieren normalerweise enthält nur. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)

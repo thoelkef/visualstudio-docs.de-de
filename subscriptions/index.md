@@ -7,16 +7,9 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856826"
 ---
+
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
 
 Visual Studio-Abonnements sind eine umfassende Sammlung von Ressourcen zum Erstellen, Bereitstellen und Verwalten großartiger Anwendungen auf Ihren bevorzugten Plattformen und Geräten, einschließlich Windows, iOS, Android und Linux.  Abonnements bieten u.a. folgende Vorteile: Zugriff auf Entwicklertools, Clouddienste, Software, Schulungen sowie Unterstützung für Ihre Entwicklungs- und Testanforderungen.

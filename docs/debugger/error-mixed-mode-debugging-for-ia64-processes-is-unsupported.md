@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3edd65cdb9f86d47f6c39965ba6c17ec5de3f7be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f80cc0d38335679df413f104deadc8f9135ab765
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981632"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715751"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Fehler: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt
-Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger unterstützt das Debuggen von gemischtem systemeigenem und verwaltetem Code in Itanium-basierten Prozessen nicht.  
-  
-### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
-  
--   Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging](../debugger/remote-debugging.md)
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Fehler: Debuggen im gemischten Modus wird für IA64-Prozesse nicht unterstützt
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger unterstützt das Debuggen von gemischtem systemeigenem und verwaltetem Code in Itanium-basierten Prozessen nicht.
+
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
+
+-   Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.
+
+## <a name="see-also"></a>Siehe auch
+- [Remote Debugging](../debugger/remote-debugging.md)

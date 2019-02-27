@@ -22,22 +22,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012494"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693450"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dumpdateien in Visual Studio-debugger
 
-<a name="BKMK_What_is_a_dump_file_"></a> Ein *Dumpdatei* ist eine Momentaufnahme, die anzeigt, den Prozess, die ausgeführt wurde und die Module, die für eine app zu einem bestimmten Zeitpunkt geladen wurden. Eine Dumpdatei mit Heapinformationen enthält auch eine Momentaufnahme des Speichers der Anwendung an diesem Punkt. 
+<a name="BKMK_What_is_a_dump_file_"></a> Ein *Dumpdatei* ist eine Momentaufnahme, die anzeigt, den Prozess, die ausgeführt wurde und die Module, die für eine app zu einem bestimmten Zeitpunkt geladen wurden. Eine Dumpdatei mit Heapinformationen enthält auch eine Momentaufnahme des Speichers der Anwendung an diesem Punkt.
 
 Öffnen einer Dumpdatei mit einem Heap in Visual Studio sieht in etwa folgendermaßen an einem Haltepunkt in einer Debugsitzung beenden. Obwohl die Ausführung fortgesetzt werden kann, können Sie den Stapel, Threads und Variablenwerte der app zum Zeitpunkt des Dumps überprüfen.
 
-Dumpdateien werden hauptsächlich zum Debuggen von Problemen von Computern, die Entwickler haben keinen Zugriff auf. Sie können eine Dumpdatei vom Computer eines Kunden verwenden, wenn Sie kein Absturzes reproduzieren oder auf Ihrem eigenen Computer hängen. Tester können auch Dumpdateien um Absturz- oder blockierungsdaten zu sichern, verwenden Sie für weitere Tests erstellen. 
+Dumpdateien werden hauptsächlich zum Debuggen von Problemen von Computern, die Entwickler haben keinen Zugriff auf. Sie können eine Dumpdatei vom Computer eines Kunden verwenden, wenn Sie kein Absturzes reproduzieren oder auf Ihrem eigenen Computer hängen. Tester können auch Dumpdateien um Absturz- oder blockierungsdaten zu sichern, verwenden Sie für weitere Tests erstellen.
 
-Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder nativen Code speichern. Sie können debugdumpdateien erstellt Visual Studio oder andere apps, die Dateien im Speichern der *Minidump* Format.
+Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder systemeigenen Code speichern. Sie können debugdumpdateien erstellt Visual Studio oder andere apps, die Dateien im Speichern der *Minidump* Format.
 
 ##  <a name="BKMK_Requirements_and_limitations"></a> Anforderungen und Einschränkungen
 
@@ -55,23 +55,23 @@ Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder nativen Code s
 
 Dumpdateien können haben oder nicht Heapinformationen.
 
--   **Dumpdateien mit Heaps** enthalten eine Momentaufnahme des Speichers der Anwendung, einschließlich der Werte von Variablen, zum Zeitpunkt des Speicherabbilds. Visual Studio speichert auch die Binärdateien der geladenen systemeigenen Module in einer Dumpdatei mit einem Heap, wodurch das debugging wesentlich vereinfacht. Visual Studio kann aus einer Sicherungsdatei mit einem Heap auf Symbole laden, auch wenn eine app binäre nicht gefunden. 
+-   **Dumpdateien mit Heaps** enthalten eine Momentaufnahme des Speichers der Anwendung, einschließlich der Werte von Variablen, zum Zeitpunkt des Speicherabbilds. Visual Studio speichert auch die Binärdateien der geladenen systemeigenen Module in einer Dumpdatei mit einem Heap, wodurch das debugging wesentlich vereinfacht. Visual Studio kann aus einer Sicherungsdatei mit einem Heap auf Symbole laden, auch wenn eine app binäre nicht gefunden.
 
 -   **Dumpdateien ohne Heaps** sind wesentlich kleiner als Dumpdateien mit Heaps, aber der Debugger muss geladen werden die Binärdateien der Anwendung um Symbolinformationen zu finden. Die geladenen Binärdateien müssen genau ausgeführt wird, während der Erstellung der Sicherung übereinstimmen. Dumpdateien ohne Heaps speichern Sie die Werte von Stapelvariablen nur.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Erstellen einer Dumpdatei
 
-Während des Debuggens eines Prozesses in Visual Studio, können Sie ein Speicherabbild speichern, wenn der Debugger bei einer Ausnahme oder einem Haltepunkt beendet wurde. 
+Während des Debuggens eines Prozesses in Visual Studio, können Sie ein Speicherabbild speichern, wenn der Debugger bei einer Ausnahme oder einem Haltepunkt beendet wurde.
 
 Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aktiviert, Sie können Visual Studio-Debugger an einen abgestürzten Prozess außerhalb von Visual Studio Anfügen und speichern Sie eine Dumpdatei vom Debugger. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **So speichern Sie eine Dumpdatei:**
 
-1. Während bei einem Fehler oder einem Haltepunkt während des Debuggens angehalten wird, wählen Sie **Debuggen** > **Dump speichern unter**. 
+1. Während bei einem Fehler oder einem Haltepunkt während des Debuggens angehalten wird, wählen Sie **Debuggen** > **Dump speichern unter**.
 
 1. In der **Dump speichern unter** Dialogfeld **Dateityp**Option **Minidump** oder **Minidump mit Heap** (Standard).
 
-1. Navigieren Sie zu einem Pfad, und wählen Sie einen Namen für die Dumpdatei, und wählen Sie dann **speichern**. 
+1. Navigieren Sie zu einem Pfad, und wählen Sie einen Namen für die Dumpdatei, und wählen Sie dann **speichern**.
 
 >[!NOTE]
 >Sie können Dumpdateien mit jedem Programm erstellen, die die Windows-minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
@@ -99,7 +99,7 @@ Benötigt vollständige Debugfeatures auf eine Dumpdatei und Verwendung von Visu
 - Die *.exe* und *PDB* Erstellung zum Sichern von Dateien, die genau die Version und der Dateien an.
 - Die Quelldateien für die relevanten Module. Sie können der disassemblys der Module verwenden, wenn Sie die Quelldateien nicht finden.
 
-Wenn das Speicherabbild Heapdaten enthält, stellt Visual Studio mit fehlenden Binärdateien für einige Module, es müssen jedoch Binärdateien für ausreichend Module zum Generieren gültiger Aufruflisten. 
+Wenn das Speicherabbild Heapdaten enthält, stellt Visual Studio mit fehlenden Binärdateien für einige Module, es müssen jedoch Binärdateien für ausreichend Module zum Generieren gültiger Aufruflisten.
 
 ### <a name="search-paths-for-exe-files"></a>Suchpfade für .exe-Dateien
 

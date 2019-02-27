@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978931"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692566"
 ---
 # <a name="messages-menu-commands"></a>Befehle im Menü "Meldungen"
-Die **Nachrichten** Menü enthält Befehle zum Steuern der Nachricht.  
-  
- **Protokollierung starten/beenden**  
- Startet oder beendet der Nachrichtenansicht.  
-  
- **Protokollierungsoptionen**  
- Öffnet die **MessageOptions** Dialogfeld, in dem Sie die Kriterien für die Suche angeben können.  
-  
- **Protokoll löschen**  
- Löscht den Inhalt der aktiven Nachrichten Ansicht.
+Die **Nachrichten** Menü enthält Befehle zum Steuern der Nachricht.
+
+ **Protokollierung starten/beenden** startet oder beendet die Nachricht anzuzeigen.
+
+ **Protokollierungsoptionen** öffnet die **MessageOptions** Dialogfeld, in dem Sie die Kriterien für die Suche angeben können.
+
+ **Protokoll löschen** löscht den Inhalt der aktiven Nachrichten Ansicht.

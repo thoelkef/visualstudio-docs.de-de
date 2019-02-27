@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939789"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703707"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Erste Schritte mit dem Momentaufnahmedebugger
 
@@ -27,7 +27,7 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
 ### <a name="set-a-snappoint"></a>Legen Sie einen Andockpunkt
 
-1. Klicken Sie im linken Bundsteg neben einer Codezeile, die Sie interessieren, um einen andockpunkt festgelegt sind, im Code-Editor. Stellen Sie sicher, dass es sich um Code handelt, die Sie kennen ausgeführt wird. 
+1. Klicken Sie im linken Bundsteg neben einer Codezeile, die Sie interessieren, um einen andockpunkt festgelegt sind, im Code-Editor. Stellen Sie sicher, dass es sich um Code handelt, die Sie kennen ausgeführt wird.
 
     ![Festlegen einen andockpunkt im Editor](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
 ### <a name="open-a-snapshot"></a>Öffnen Sie eine Momentaufnahme
 
-1. Wenn die andockpunkt erreicht wird, wird eine Momentaufnahme im Fenster "Diagnosetools" auf der rechten Seite angezeigt. Wenn das Fenster geöffnet wird, können Sie es öffnen, indem Sie auswählen **Debuggen** > **Windows** > **Diagnosetools anzeigen**. 
+1. Wenn die andockpunkt erreicht wird, wird eine Momentaufnahme im Fenster "Diagnosetools" auf der rechten Seite angezeigt. Wenn das Fenster geöffnet wird, können Sie es öffnen, indem Sie auswählen **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
 
     ![Momentaufnahme im Fenster "Diagnosetools"](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Standar
 
 3. In der **Nachricht** Geben Sie eine protokollmeldung, die Sie protokollieren möchten. Sie können auch Variablen in der protokollmeldung auswerten, indem Sie sie in geschweiften Klammern platzieren.
 
-    Auf Wunsch **an Ausgabefenster senden**, die Meldung im Fenster "Diagnosetools" angezeigt, wenn die protokollpunkt erreicht wird. 
+    Auf Wunsch **an Ausgabefenster senden**, die Meldung im Fenster "Diagnosetools" angezeigt, wenn die protokollpunkt erreicht wird.
 
     Auf Wunsch **an Anwendungsprotokoll senden**, die Meldung angezeigt, dass Sie Meldungen anzuzeigen, können an einer beliebigen Stelle wird `System.Diagnostics.Trace` (oder `ILogger` in .NET Core), z. B. Application Insights, wenn die protokollpunkt erreicht wird.
 
@@ -69,6 +69,6 @@ Weitere Informationen zum Debugger für Momentaufnahmen finden Sie auf die [Doku
 
 ## <a name="dont-show-me-this-again"></a>Diese Meldung nicht mehr anzeigen
 
-Um nie wieder die Snapshot-Debugger-Startseite anzuzeigen für die Verbindung der Snapshot-Debugger, ändern Sie die **"Erste Schritte" die Seite beim sitzungsstart anzeigen** option **Tools**  >   **Optionen** > **Momentaufnahmedebugger**. 
+Um nie wieder die Snapshot-Debugger-Startseite anzuzeigen für die Verbindung der Snapshot-Debugger, ändern Sie die **"Erste Schritte" die Seite beim sitzungsstart anzeigen** option **Tools**  >   **Optionen** > **Momentaufnahmedebugger**.
 
 ![Snapshot Debugger-Tool-Optionsseite](../media/snapshot-startpage-tools-options.png)

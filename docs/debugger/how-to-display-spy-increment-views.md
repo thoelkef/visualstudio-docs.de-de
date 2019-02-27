@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4b0a860c359335f7461bf0608c26dcb2c325ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022988"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688809"
 ---
-# <a name="how-to-display-spy-views"></a>Vorgehensweise: Anzeigen von Spy++-Ansichten
-Wenn Spy++ gestartet wird, öffnet es im [Windows-Ansicht](../debugger/windows-view.md), eine Strukturansicht aller Windows und Steuerelemente, die auf Ihrem Computer verfügbar. Diese stammfenster Indexe ist "Windows-1." Es gibt auch drei weitere Spy++-Ansichten verfügbar: [Meldungsansicht](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md), und [Threadansicht](../debugger/threads-view.md). Sie können anzeigen, die gewünschte Ansicht aus der **Spy** Menü. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)   
- [Spy++-Referenz](../debugger/spy-increment-reference.md)
+# <a name="how-to-display-spy-views"></a>Gewusst wie: Anzeigen von Spy++-Ansichten
+Wenn Spy++ gestartet wird, öffnet es im [Windows-Ansicht](../debugger/windows-view.md), eine Strukturansicht aller Windows und Steuerelemente, die auf Ihrem Computer verfügbar. Diese stammfenster Indexe ist "Windows-1." Es gibt auch drei weitere Spy++-Ansichten verfügbar: [Meldungsansicht](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md), und [Ansicht "Threads"](../debugger/threads-view.md). Sie können anzeigen, die gewünschte Ansicht aus der **Spy** Menü. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).
+
+## <a name="see-also"></a>Siehe auch
+- [Verwenden von Spy++](../debugger/using-spy-increment.md)
+- [Spy++-Referenz](../debugger/spy-increment-reference.md)
