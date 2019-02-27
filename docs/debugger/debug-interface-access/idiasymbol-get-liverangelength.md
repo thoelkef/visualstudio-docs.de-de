@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ea527cb34b1be1a27bed2904788498390ec10
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9f1c8caa9e658cfca4e4b2ede8a38b57fcf8713
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968881"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624619"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-Gibt die Länge des Adressbereichs ein, in dem die lokalen Symbolcache gültig ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_liveRangeLength (   
-   ULONGLONG* length  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `length`  
- [out] Die Länge des Adressbereichs zurückgegeben.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
+Gibt die Länge des Adressbereichs ein, in dem die lokalen Symbolcache gültig ist.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_liveRangeLength ( 
+   ULONGLONG* length
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `length`
+
+[out] Die Länge des Adressbereichs zurückgegeben.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
 > [!NOTE]
->  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
-  
-## <a name="remarks"></a>Anmerkungen  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: Dia2.h  
-  
- Bibliothek: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.
+
+## <a name="remarks"></a>Anmerkungen
+
+## <a name="requirements"></a>Anforderungen
+ Header: Dia2.h
+
+ Bibliothek: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

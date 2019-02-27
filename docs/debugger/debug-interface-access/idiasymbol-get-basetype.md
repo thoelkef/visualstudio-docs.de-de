@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2844003bf7ec81b256537fe06520dfdff473faa
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227276"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640167"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Ruft ab, der Basistyp für dieses Symbol<em>.</em>
@@ -31,7 +31,8 @@ HRESULT get_baseType (
 ```
 
 #### <a name="parameters"></a>Parameter
-`pRetVal`  
+`pRetVal`
+
 [out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) Enumeration, der den Basistyp des Symbols angibt.
 
 ## <a name="return-value"></a>Rückgabewert
@@ -66,6 +67,6 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Version:|DIA-SDK V7. 0|
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)  
-[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)
+- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

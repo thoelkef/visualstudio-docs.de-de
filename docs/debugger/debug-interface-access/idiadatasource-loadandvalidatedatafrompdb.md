@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987352"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626140"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) der bereitgestellten Signaturinformationen entspricht, und bereitet die PDB-Datei als Datenquelle Debuggen.
@@ -34,16 +34,20 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>Parameter
-`pdbPath`  
+`pdbPath`
+
 [in] Der Pfad zur PDB-Datei.
 
-`pcsig70`  
+`pcsig70`
+
 [in] Die GUID-Signatur der Signatur der PDB-Datei überprüft werden soll. Nur PDB-Dateien im [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] und später GUID-Signaturen aufweisen.
 
-`sig`  
+`sig`
+
 [in] Die 32-Bit-Signatur der Signatur der PDB-Datei überprüft werden soll.
 
-`age`  
+`age`
+
 [in] Age-Wert, um zu überprüfen. Das Alter entspricht nicht notwendigerweise alle bekannten Time-Werten, er wird verwendet, um zu bestimmen, ob eine PDB-Datei mit einer entsprechenden .exe-Datei synchron sind.
 
 ## <a name="return-value"></a>Rückgabewert
@@ -58,7 +62,7 @@ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die
 |E_INVALIDARG|Ungültiger Parameter.|
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Eine PDB-Datei enthält sowohl die Signatur als auch die Age-Werte. Diese Werte werden in .exe oder .dll-Datei repliziert, die die PDB-Datei entspricht. Vor der Vorbereitung der Datenquelle, überprüft diese Methode an, dass die Signatur und das Alter des benannten PDB-Datei mit die angegebenen Werten übereinstimmen.
 
 Verwenden Sie zum Laden einer PDB-Datei ohne Überprüfung der [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) Methode.
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

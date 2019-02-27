@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac66540f09f822b42f238b30fe637afc3717a13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c3e942128cdf05f19ecf618cc78dcc1d401ea6ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924927"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603754"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl (mit gekoppelten eine [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl bilden die C-Stil-Methode der Ausnahmebehandlung).  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_hasLongJump  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion enthält einen `longjmp` Befehl; andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl (mit gekoppelten eine [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl bilden die C-Stil-Methode der Ausnahmebehandlung).
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_hasLongJump
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pFlag`
+
+[out] Gibt `TRUE` , wenn die Funktion enthält einen `longjmp` Befehl; andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
- [longjmp](/cpp/c-runtime-library/reference/longjmp)   
- [setjmp](/cpp/c-runtime-library/reference/setjmp)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK 8.0|
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)
+- [longjmp](/cpp/c-runtime-library/reference/longjmp)
+- [setjmp](/cpp/c-runtime-library/reference/setjmp)

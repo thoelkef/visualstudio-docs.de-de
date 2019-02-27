@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b18ed5675841062368b1140d7a7445a6ee2c7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7b139bd9abdb8266acce9bab4d82a8c59b60623a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979113"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640414"
 ---
 # <a name="idiasymbolgetuavslot"></a>IDiaSymbol::get_uavSlot
-Ruft den Uav-Slot ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_uavSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , enthält den Uav-Slot.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft den Uav-Slot ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_uavSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , enthält den Uav-Slot.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

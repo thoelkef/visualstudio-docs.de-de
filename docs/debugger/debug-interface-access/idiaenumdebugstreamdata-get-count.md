@@ -12,31 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5874e4d27b3fe5940b5136958c64014c43f86c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f57318508f06258aec537de30f00326c3afca7a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999118"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602130"
 ---
 # <a name="idiaenumdebugstreamdatagetcount"></a>IDiaEnumDebugStreamData::get_Count
-Ruft die Datensätze in der Debug-Datenstrom ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- pRetVal  
- [Out, Retval] Gibt die Anzahl der Datensätze zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)
+Ruft die Datensätze in der Debug-Datenstrom ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ pRetVal
+- [Out, Retval] Gibt die Anzahl der Datensätze zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)

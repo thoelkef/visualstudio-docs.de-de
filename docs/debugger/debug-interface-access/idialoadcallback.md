@@ -12,48 +12,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9f3609f97d74cad8a9abb8aad511345d3120c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618873"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
-Empfängt Rückrufe aus dem DIA-Symbol, suchen die Prozedur, sodass eine Benutzeroberfläche, über den Fortschritt des Versuchs Standort Berichten.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IDiaLoadCallback : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgenden Methoden werden von dieser Schnittstelle verfügbar gemacht:  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Aufgerufen, wenn ein Debugverzeichnis in die .exe-Datei gefunden wurde.|  
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Wird aufgerufen, wenn eine Kandidat DBG-Datei geöffnet wurde.|  
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Aufgerufen, wenn eine Kandidat PDB-Datei geöffnet wurde.|  
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Bestimmt, ob die Registrierung Abfragen verwendet werden können, um Symbolsuchpfade zu suchen.|  
-|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Bestimmt, ob der Zugriff auf einen anderen Symbolserver zugelassen wird, um Symbole aufzulösen.|  
-  
-## <a name="remarks"></a>Anmerkungen  
- Die Client-Anwendung implementiert diese Schnittstelle und stellt einen Verweis auf die er im Aufruf der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
-  
- Zusätzliche Einschränkungen, die für einen Load-Prozess festgelegt werden können, finden Sie unter den [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) Schnittstelle.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: Dia2.h  
-  
- Bibliothek: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Empfängt Rückrufe aus dem DIA-Symbol, suchen die Prozedur, sodass eine Benutzeroberfläche, über den Fortschritt des Versuchs Standort Berichten.
+
+## <a name="syntax"></a>Syntax
+
+```
+IDiaLoadCallback : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+ Die folgenden Methoden werden von dieser Schnittstelle verfügbar gemacht:
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Aufgerufen, wenn ein Debugverzeichnis in die .exe-Datei gefunden wurde.|
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Wird aufgerufen, wenn eine Kandidat DBG-Datei geöffnet wurde.|
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Aufgerufen, wenn eine Kandidat PDB-Datei geöffnet wurde.|
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Bestimmt, ob die Registrierung Abfragen verwendet werden können, um Symbolsuchpfade zu suchen.|
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Bestimmt, ob der Zugriff auf einen anderen Symbolserver zugelassen wird, um Symbole aufzulösen.|
+
+## <a name="remarks"></a>Anmerkungen
+ Die Client-Anwendung implementiert diese Schnittstelle und stellt einen Verweis auf die er im Aufruf der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.
+
+ Zusätzliche Einschränkungen, die für einen Load-Prozess festgelegt werden können, finden Sie unter den [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) Schnittstelle.
+
+## <a name="requirements"></a>Anforderungen
+ Header: Dia2.h
+
+ Bibliothek: diaguids.lib
+
+ DLL: msdia80.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

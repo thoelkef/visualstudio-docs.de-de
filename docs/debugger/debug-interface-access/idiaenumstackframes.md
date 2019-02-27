@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4b46d2b59566df003b455e9dcf07ae96a28872
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155343"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608740"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Listet die verschiedenen Stapelrahmen verfügbar.
@@ -29,7 +29,7 @@ Listet die verschiedenen Stapelrahmen verfügbar.
 |[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.|
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle durch Aufrufen der [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oder [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methoden.
@@ -70,7 +70,7 @@ Bibliothek: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)  
-[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)  
-[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
+- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ab5a576a81414afe682e750930e7bfb4b57b4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e3a1340821dcbdb9e1b28192f0b798b458528f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646446"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
-Ruft einen Verweis auf die übergeordnete lexikalische des Symbols ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_lexicalParent (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das übergeordnete lexikalische des Symbols darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
-  
+Ruft einen Verweis auf die übergeordnete lexikalische des Symbols ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_lexicalParent ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das übergeordnete lexikalische des Symbols darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
-  
-## <a name="remarks"></a>Hinweise  
- Der übergeordnete lexikalische eines Symbols ist der einschließenden Funktion oder dieses Moduls. Lexikalische übergeordnet Funktionsparameter oder als lokale Variable ist z. B. die Funktion selbst, während das lexikalische übergeordnete Element der Funktion des Moduls ist, die, dem Sie in definiert ist.  
-  
- Die möglichen Symbole, die angezeigt werden können, wie im übergeordneten lexikalischen Elemente dokumentiert werden [lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+
+## <a name="remarks"></a>Anmerkungen
+ Der übergeordnete lexikalische eines Symbols ist der einschließenden Funktion oder dieses Moduls. Lexikalische übergeordnet Funktionsparameter oder als lokale Variable ist z. B. die Funktion selbst, während das lexikalische übergeordnete Element der Funktion des Moduls ist, die, dem Sie in definiert ist.
+
+ Die möglichen Symbole, die angezeigt werden können, wie im übergeordneten lexikalischen Elemente dokumentiert werden [lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

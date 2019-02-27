@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbb07470f63c337ccefd5352b3fb7b2a6ff75e83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a62126b7e752c8d09a32891e8886be0df07b8d12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036211"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606332"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
-Ruft ein Flag, das angibt, ob die Funktion eine Inlineassembly enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_hasInlAsm(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion alle Inlineassembly; hat, andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft ein Flag, das angibt, ob die Funktion eine Inlineassembly enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_hasInlAsm(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pFlag`
+
+[out] Gibt `TRUE` , wenn die Funktion alle Inlineassembly; hat, andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="requirements"></a>Anforderungen  
-  
-|Anforderung|Beschreibung|  
-|-----------------|-----------------|  
-|Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="requirements"></a>Anforderungen
+
+|Anforderung|Beschreibung|
+|-----------------|-----------------|
+|Header:|dia2.h|
+|Version:|DIA-SDK 8.0|
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616884"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841778"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchien in Visual Studio
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) zeigt ein Projekt als eine *Hierarchie*. In der IDE ist eine Hierarchie eine Struktur von Knoten, in dem jeder Knoten über einen Satz zugeordneter Eigenschaften verfügt. Ein *Projekt Hierarchie* ist ein Container, die Elemente des Projekts, die Elemente Beziehungen und zugeordneten Eigenschaften der Elemente und Befehle enthält.
@@ -35,4 +35,4 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 ## <a name="see-also"></a>Siehe auch
 - [Projekttypen](../../extensibility/internals/project-types.md)
 - [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples)
+- [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples)

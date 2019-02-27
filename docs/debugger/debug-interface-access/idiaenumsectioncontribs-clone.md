@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5c7eef010de75165ac6d28e0690fe2e906d00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 46392d87b918a2359d7bf4d9eee14c61b4464006
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999157"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616504"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
-Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Clone(   
-   IDiaEnumSectionContrib** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- ppenum  
- [out] Gibt eine [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Objekt, das ein Duplikat des Enumerators enthält. Der Abschnitt nicht werden Beiträge dupliziert, nur den Enumerator.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Clone( 
+   IDiaEnumSectionContrib** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ ppenum
+
+[out] Gibt eine [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Objekt, das ein Duplikat des Enumerators enthält. Der Abschnitt nicht werden Beiträge dupliziert, nur den Enumerator.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

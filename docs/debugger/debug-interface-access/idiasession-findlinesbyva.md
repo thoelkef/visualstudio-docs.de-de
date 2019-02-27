@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646824"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Ruft die Zeilennummerninformationen für Zeilen in einem Bereich für die angegebene virtuelle Adresse (VA) ab.
@@ -33,13 +33,16 @@ HRESULT findLinesByVA (
 ```
 
 #### <a name="parameters"></a>Parameter
-`va`  
+`va`
+
 [in] Gibt die Adresse an, wie eine VA.
 
-`length`  
+`length`
+
 [in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.
 
-`ppResult`  
+`ppResult`
+
 [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.
 
 ## <a name="example"></a>Beispiel
@@ -62,5 +65,5 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
