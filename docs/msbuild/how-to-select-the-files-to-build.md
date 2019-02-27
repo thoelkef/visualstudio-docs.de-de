@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610540"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.
@@ -29,25 +29,25 @@ Damit Dateien für einen Build eingeschlossen werden können, müssen sie in ein
 
 #### <a name="to-declare-items-individually"></a>So deklarieren Sie Elemente einzeln
 
-- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    oder  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:
+
+    `<CSFile Include="form1.cs"/>`
+
+    oder
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Wenn sich Elemente in einer Elementauflistung nicht im gleichen Verzeichnis wie die Projektdatei befinden, müssen Sie den vollständigen oder relativen Pfad des Elements angeben. Beispiel: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente
 
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    oder  
-  
+-   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    oder
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Angeben von Eingaben mit Platzhaltern
@@ -63,24 +63,24 @@ Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den fol
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG*-Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein
 
-- Verwenden Sie das folgende `Include`-Attribut:  
-  
+- Verwenden Sie das folgende `Include`-Attribut:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG*-Dateien ein, die mit *img* beginnen
 
-- Verwenden Sie das folgende `Include`-Attribut:  
-  
+- Verwenden Sie das folgende `Include`-Attribut:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit *jpgs* enden
 
-- Ändern Sie eines der folgenden `Include`-Attribute:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    oder  
-  
+- Ändern Sie eines der folgenden `Include`-Attribute:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    oder
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Übergeben von Elementen an eine Aufgabe
@@ -88,17 +88,17 @@ Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, 
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe
 
-- Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    oder  
-  
+- Verwenden Sie die `Include`-Attribute ähnlich wie folgt:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    oder
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Beispiel
@@ -170,5 +170,5 @@ Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einz
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).  
-[Elemente](../msbuild/msbuild-items.md)
+- [Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
+- [Elemente](../msbuild/msbuild-items.md)

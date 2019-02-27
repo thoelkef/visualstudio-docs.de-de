@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908490"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603260"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Vorgehensweise: Erweitern des Visual Studio-Buildprozesses
 Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Buildprozess wird durch eine Reihe von *TARGETS*-Dateien von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] definiert, die in die Projektdatei importiert werden. Eine dieser importierten Dateien (*Microsoft.Common.targets*) kann erweitert werden, um Ihnen das Ausführen benutzerdefinierter Aufgaben in unterschiedlichen Phasen während des Buildprozesses zu ermöglichen. In diesem Artikel werden die zwei Methoden erläutert, mit denen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Buildprozess erweitert werden kann:
@@ -35,8 +35,8 @@ Die Datei *Microsoft.Common.targets* enthält eine Reihe vordefinierter, leerer 
 
 1. Identifizieren Sie ein vordefiniertes Ziel in *Microsoft.Common.targets*, das Sie überschreiben möchten. In der Tabelle unten finden Sie die vollständige Liste der Ziele, die Sie bedenkenlos überschreiben können.
 
-2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Beispiel:  
-  
+2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Beispiel:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ Die Datei *Microsoft.Common.targets* enthält eine Reihe vordefinierter, leerer 
         </Target>
     </Project>
     ```
-  
+
 3. Erstellen Sie die Projektdatei.
 
 Die folgende Tabelle zeigt alle Ziele in *Microsoft.Common.targets*, die Sie bedenkenlos überschreiben können.
@@ -124,6 +124,6 @@ Projekte, in die Ihre Projektdateien importiert werden, können diese Eigenschaf
 |`CompileDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie benutzerdefinierte Prozesse vor oder nach dem Kompilieren einfügen möchten|
 
 ## <a name="see-also"></a>Siehe auch
-[Integration von Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
-[TARGETS-Dateien](../msbuild/msbuild-dot-targets-files.md)
+- [Integration von Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [TARGETS-Dateien](../msbuild/msbuild-dot-targets-files.md)

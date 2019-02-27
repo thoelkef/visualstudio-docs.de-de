@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975945"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634343"
 ---
 # <a name="c-library-reference"></a>C++-Bibliotheksreferenz
-Dieser Abschnitt enthält Referenzinformationen für das Nebenläufigkeitsschnellansichts-SDK.  
-  
+
+Dieser Abschnitt enthält Referenzinformationen für das Nebenläufigkeitsschnellansichts-SDK.
+
 > [!NOTE]
->  In der C++-Standardprogrammiersprache ist die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, auf Implementierungen wie Bibliotheken beschränkt. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)
+> In der C++-Standardprogrammiersprache ist die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, auf Implementierungen wie Bibliotheken beschränkt. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+
+[Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>Siehe auch
+
+- [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

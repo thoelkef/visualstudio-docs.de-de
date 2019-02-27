@@ -13,29 +13,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7590cec386fbb455284b59d1d37f32b2eaa56546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012169"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600219"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurieren von Leistungssitzungen
-Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie den Leistungsassistententen und die Eigenschaften der Leistungssitzung sowie der Zielbinärdatei einsetzen, um Profilerstellungstools für das Sammeln von für Sie interessanten Daten zu konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Control data collection (Steuern der Datensammlung)](../profiling/controlling-data-collection.md).  
-  
+Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie den Leistungsassistententen und die Eigenschaften der Leistungssitzung sowie der Zielbinärdatei einsetzen, um Profilerstellungstools für das Sammeln von für Sie interessanten Daten zu konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Control data collection (Steuern der Datensammlung)](../profiling/controlling-data-collection.md).
+
 > [!NOTE]
->  In vielen Fällen können Sie mithilfe der Standardeigenschaften des Leistungsassistenten das Sammeln von Profilerstellungsdaten effizient steuern. Weitere Informationen finden Sie unter [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md) und [Erste Schritte](../profiling/getting-started-with-performance-tools.md).  
-  
+>  In vielen Fällen können Sie mithilfe der Standardeigenschaften des Leistungsassistenten das Sammeln von Profilerstellungsdaten effizient steuern. Weitere Informationen finden Sie unter [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md) und [Erste Schritte](../profiling/getting-started-with-performance-tools.md).
+
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
-  
+
 | Aufgabe | Verwandter Inhalt |
 | - | - |
 | **Festlegen der grundlegenden Profilerstellungsoptionen:** Konfigurieren Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], um den Microsoft-Symbolserver zu verwenden. So stellen Sie sicher, dass Sie für die aktuelle Version von Windows und für andere Microsoft-Anwendungen Zugriff auf Symbole wie Funktions- und Parameternamen haben. Sie können auch andere allgemeinen Optionen angeben, bevor Sie mit einer Profilerstellungssitzung beginnen, wie z.B. Systemberechtigungen für die Profilerstellungstools und die Namen von Profilerstellungs-Datendateien. | -   [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Vorgehensweise: Serialisieren von Symbolinformationen](../profiling/how-to-serialize-symbol-information.md)<br />-   [Vorgehensweise: Festlegen der aktuellen Sitzung](../profiling/how-to-set-the-current-session.md)<br />-   [Vorgehensweise: Festlegen von Berechtigungen](../profiling/how-to-set-permissions.md)<br />-   [Vorgehensweise: Festlegen von Namensoptionen für Dateien mit Leistungsdaten](../profiling/how-to-set-performance-data-file-name-options.md) |
 | **Festlegen der zu erfassenden Daten:** Die Prozeduren zur Konfigurierung einer Profilerstellungssitzung sind abhängig vom Typ der Zielanwendung, für die Sie ein Profil erstellen möchten, sowie vom Typ der Leistungsdaten, die Sie sammeln möchten. | -   [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)<br />-   [Sammeln von Leistungsstatistiken durch Sampling](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Sammeln von Parallelitätsdaten zu Threads und Prozessen](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Sammeln zusätzlicher Leistungsdaten](../profiling/collecting-additional-performance-data.md) |
 | **Festlegen von erweiterten Konfigurationsoptionen:** Wenn Sie das Profil von .NET Framework-Anwendungen anlegen, die mehrere CLR-Versionen laden, können Sie angeben, für welche Version Sie das Profil anlegen möchten. Wenn Ihre Leistungssitzung mehrere EXE-Dateien umfasst, können Sie die Startreihenfolge der Binärdateien festlegen. | -   [Vorgehensweise: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md) |
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Leistungs-Explorer](../profiling/performance-explorer.md)
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Leistungs-Explorer](../profiling/performance-explorer.md)

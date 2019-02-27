@@ -15,40 +15,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44bfbf4f5fb0a0b158d08254656d9c3831c77e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6acba17aca08b233dd80b7eb7ea9e385d907ffb5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948426"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627037"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
-In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von ihnen aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.  
-  
- Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad einer Funktion hervorheben, für die die meisten Samplings durchgeführt oder die meiste Zeit verwendet wurde. Um den leistungsintensivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**.  
-  
- Jeder Prozess in der Profilerstellung wird als Stammknoten angezeigt. Sie können den Startknoten der Aufrufstrukturansicht festlegen, indem Sie mit der rechten Maustaste auf den Knoten klicken, der als Startknoten festgelegt werden soll, und dann **Stamm festlegen** auswählen.  
-  
- Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Sie können den Stammknoten wieder auf den angezeigten Knoten festlegen. Klicken Sie dazu mit der rechten Maustaste in das Fenster der Aufrufstrukturansicht, und wählen Sie **Stamm zurücksetzen** aus.  
-  
- Sie können die Aufrufstrukturansicht an Ihre Bedürfnisse anpassen, indem Sie Spalten hinzufügen oder entfernen. Klicken Sie mit der rechten Maustaste auf die **Titelleiste des Spaltennamens**, und klicken Sie anschließen auf **Spalten hinzufügen/entfernen**.  
-  
- Für die Aufrufstrukturansicht kann die Rauschunterdrückung konfiguriert werden, indem Sie festlegen, das weniger Daten angezeigt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung in der Ansicht erkennbarer. Leichter zu identifizierende Leistungsprobleme können auch leichter analysiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
-  
+In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von ihnen aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.
+
+ Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad einer Funktion hervorheben, für die die meisten Samplings durchgeführt oder die meiste Zeit verwendet wurde. Um den leistungsintensivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**.
+
+ Jeder Prozess in der Profilerstellung wird als Stammknoten angezeigt. Sie können den Startknoten der Aufrufstrukturansicht festlegen, indem Sie mit der rechten Maustaste auf den Knoten klicken, der als Startknoten festgelegt werden soll, und dann **Stamm festlegen** auswählen.
+
+ Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Sie können den Stammknoten wieder auf den angezeigten Knoten festlegen. Klicken Sie dazu mit der rechten Maustaste in das Fenster der Aufrufstrukturansicht, und wählen Sie **Stamm zurücksetzen** aus.
+
+ Sie können die Aufrufstrukturansicht an Ihre Bedürfnisse anpassen, indem Sie Spalten hinzufügen oder entfernen. Klicken Sie mit der rechten Maustaste auf die **Titelleiste des Spaltennamens**, und klicken Sie anschließen auf **Spalten hinzufügen/entfernen**.
+
+ Für die Aufrufstrukturansicht kann die Rauschunterdrückung konfiguriert werden, indem Sie festlegen, das weniger Daten angezeigt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung in der Ansicht erkennbarer. Leichter zu identifizierende Leistungsprobleme können auch leichter analysiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md).
+
 > [!NOTE]
->  Wenn die Rauschunterdrückung so konfiguriert ist, dass sie eine Warnung anzeigt, wenn Sie aktiviert ist, wird eine Informationsleiste im Bericht angezeigt.  
-  
- Weitere Informationen zu Definitionen von Spalten in der Aufrufstrukturansicht finden Sie in den folgenden Artikeln:  
-  
- [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)  
-  
- [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)  
-  
- [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
-  
- [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Leistungsberichtansichten](../profiling/performance-report-views.md)   
- [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+>  Wenn die Rauschunterdrückung so konfiguriert ist, dass sie eine Warnung anzeigt, wenn Sie aktiviert ist, wird eine Informationsleiste im Bericht angezeigt.
+
+ Weitere Informationen zu Definitionen von Spalten in der Aufrufstrukturansicht finden Sie in den folgenden Artikeln:
+
+- [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)
+
+- [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)
+
+- [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+
+- [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Leistungsberichtansichten](../profiling/performance-report-views.md)
+- [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)
+- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

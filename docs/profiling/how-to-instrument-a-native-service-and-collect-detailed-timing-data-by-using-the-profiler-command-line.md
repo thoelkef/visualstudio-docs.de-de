@@ -8,49 +8,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c9061163b36b6d75bb7e6d8a9b8631ce1ea01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634785"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren eines nativen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile
-In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools einen nativen Dienst (C/C++) instrumentieren und ausführliche Zeitsteuerungsdaten sammeln können.  
+In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools einen nativen Dienst (C/C++) instrumentieren und ausführliche Zeitsteuerungsdaten sammeln können.
 
 > [!NOTE]
->  Mit der Instrumentierungsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der nur gleichzeitig mit dem Betriebssystem gestartet wird.  
-> 
+>  Mit der Instrumentationsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der nur gleichzeitig mit dem Betriebssystem gestartet wird.
+>
 >  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
- 
- Um ausführliche Zeitsteuerungsdaten mit der Instrumentierungsmethode aus einem nativen Dienst zu erfassen, generieren Sie mit dem Tool [VSInstr.exe](../profiling/vsinstr.md) eine instrumentierte Version der Komponente. Sie ersetzen dann die nicht instrumentierte Version des Diensts durch die instrumentierte Version und stellen dabei sicher, dass der Dienst für den manuellen Start konfiguriert ist. Starten Sie dann den Profiler.  
 
- Wenn der Dienst gestartet wird, werden die Zeitsteuerungsdaten automatisch in einer Datendatei erfasst. Sie können die Datensammlung während der Profilerstellungssitzung anhalten und fortsetzen.  
+ Um ausführliche Zeitsteuerungsdaten mit der Instrumentierungsmethode aus einem nativen Dienst zu erfassen, generieren Sie mit dem Tool [VSInstr.exe](../profiling/vsinstr.md) eine instrumentierte Version der Komponente. Sie ersetzen dann die nicht instrumentierte Version des Diensts durch die instrumentierte Version und stellen dabei sicher, dass der Dienst für den manuellen Start konfiguriert ist. Starten Sie dann den Profiler.
 
- Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fahren danach den Profiler selbst herunter.  
+ Wenn der Dienst gestartet wird, werden die Zeitsteuerungsdaten automatisch in einer Datendatei erfasst. Sie können die Datensammlung während der Profilerstellungssitzung anhalten und fortsetzen.
 
-## <a name="start-the-application-with-the-profiler"></a>Starten der Anwendung mit dem Profiler  
+ Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fahren danach den Profiler selbst herunter.
 
-#### <a name="to-start-profiling-a-native-service"></a>So starten Sie die Profilerstellung für einen systemeigenen Dienst  
+## <a name="start-the-application-with-the-profiler"></a>Starten der Anwendung mit dem Profiler
 
-1. Öffnen Sie ein Eingabeaufforderungsfenster.  
+#### <a name="to-start-profiling-a-native-service"></a>So starten Sie die Profilerstellung für einen systemeigenen Dienst
 
-2. Generieren Sie mit **VSInstr** eine instrumentierte Version der Binärdatei des Diensts.  
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-3. Ersetzen Sie die ursprüngliche Binärdatei durch die instrumentierte Version. Stellen Sie im Windows Dienststeuerungs-Manager sicher, dass der Starttyp auf Manuell eingestellt ist.  
+2. Generieren Sie mit **VSInstr** eine instrumentierte Version der Binärdatei des Diensts.
 
-4. Starten Sie den Profiler. Typ:  
+3. Ersetzen Sie die ursprüngliche Binärdatei durch die instrumentierte Version. Stellen Sie im Windows Dienststeuerungs-Manager sicher, dass der Starttyp auf Manuell eingestellt ist.
 
-    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+4. Starten Sie den Profiler. Typ:
 
-   - Mit der Option **/start:trace** wird der Profiler initialisiert.  
+    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - Die Option **/output:**`OutputFile` ist für **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.  
+   - Mit der Option **/start:trace** wird der Profiler initialisiert.
 
-     Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.  
+   - Die Option **/output:**`OutputFile` ist für **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.
+
+     Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.
 
    > [!NOTE]
-   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
+   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.
 
    | Option | Beschreibung |
    | - | - |
@@ -64,34 +64,34 @@ In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der [!INC
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
 
-5. Startet den Dienst aus dem Dienststeuerungs-Manager.  
+5. Startet den Dienst aus dem Dienststeuerungs-Manager.
 
-## <a name="control-data-collection"></a>Steuern der Datensammlung  
- Wenn der Dienst ausgeführt wird, können Sie die *VSPerfCmd.exe*-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen des Diensts.  
+## <a name="control-data-collection"></a>Steuern der Datensammlung
+ Wenn der Dienst ausgeführt wird, können Sie die *VSPerfCmd.exe*-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen des Diensts.
 
-#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
+#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+-   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|Beschreibung|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|  
+    |Option|Beschreibung|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|
 
-## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
- Um eine Profilerstellungssitzung zu beenden, beenden Sie den Dienst, der die instrumentierte Komponente ausführt, und rufen Sie dann die Option **VSPerfCmd**[/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.  
+## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
+ Um eine Profilerstellungssitzung zu beenden, beenden Sie den Dienst, der die instrumentierte Komponente ausführt, und rufen Sie dann die Option **VSPerfCmd**[/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.
 
-#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
+#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Beendet den Dienst aus dem Dienststeuerungs-Manager.  
+1.  Beendet den Dienst aus dem Dienststeuerungs-Manager.
 
-2.  Schließen Sie den Profiler. Typ:  
+2.  Schließen Sie den Profiler. Typ:
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  Ersetzen Sie das instrumentierte Modul durch das Original. Konfigurieren Sie bei Bedarf den Starttyp des Diensts neu.  
+3.  Ersetzen Sie das instrumentierte Modul durch das Original. Konfigurieren Sie bei Bedarf den Starttyp des Diensts neu.
 
-## <a name="see-also"></a>Siehe auch  
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   
- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Siehe auch
+- [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)
+- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)

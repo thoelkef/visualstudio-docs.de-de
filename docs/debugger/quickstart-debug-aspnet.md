@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027377"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683596"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
@@ -110,7 +110,7 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
     ![Anzeigen eines Datentipps](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Der aktuelle Wert der Variable `c2` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
+    Der aktuelle Wert der Variable `c2` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
 2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c2`-Objekts einzusehen.
 

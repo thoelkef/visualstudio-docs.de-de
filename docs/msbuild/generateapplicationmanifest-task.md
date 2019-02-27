@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854108"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626621"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest. Ein systemeigenes Manifest beschreibt eine Komponente, indem eine eindeutige Identität für die Komponente definiert wird und alle Assemblys und Dateien, aus denen die Komponente besteht, bezeichnet werden. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest erweitert ein systemeigenes Manifest durch die Angabe des Einstiegspunkts und der Sicherheitsebene der Anwendung.
@@ -64,7 +64,7 @@ In der folgenden Tabelle werden die Parameter für die `GenerateApplicationManif
 | `TrustInfoFile` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Bezeichnet ein XML-Dokument, das die Anwendungssicherheit angibt. Das Stammelement im XML-Dokument muss ein trustInfo-Knoten im asmv2-Namespace sein. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert. |
 | `UseApplicationTrust` | Optionaler `Boolean` -Parameter.<br /><br /> Bei "true" werden die Eigenschaften `Product`, `Publisher` und `SupportUrl` in das Anwendungsmanifest geschrieben. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.GenerateManifestBase>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste der Parameter der Aufgabenklasse finden Sie unter [Task-Basisklasse](../msbuild/task-base-class.md).
 
 Weitere Informationen zum Verwenden der `GenerateDeploymentManifest`-Aufgabe finden Sie unter [GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md).
@@ -88,7 +88,7 @@ Dies ist das einfachste mögliche Szenario für das Generieren von Manifesten, i
 
 > [!NOTE]
 > Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung erstellt
-> 
+>
 > [!NOTE]
 > Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile-Aufgabe](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Dieses Beispiel ist mit dem vorherigen Beispiel vergleichbar und unterscheidet s
 
 > [!NOTE]
 > Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung erstellt
-> 
+>
 > [!NOTE]
 > Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile-Aufgabe](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ Im folgenden Beispiel werden die `GenerateApplicationManifest`-Aufgabe und die `
 
 > [!NOTE]
 > Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung erstellt
-> 
+>
 > [!NOTE]
 > Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile-Aufgabe](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ In diesem Beispiel wird *Test.exe.manifest* erstellt, wodurch die Anwendung mit 
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Aufgaben](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile-Aufgabe](../msbuild/signfile-task.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile-Aufgabe](../msbuild/signfile-task.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623007"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension-Basisklasse
-Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die aus der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt, welche wiederum aus der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Diese Vererbungskette fügt verschiedene Parameter zu den Aufgaben hinzu, die aus ihnen abgeleitet werden. Diese Parameter werden in diesem Dokument aufgeführt.  
+Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die aus der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt, welche wiederum aus der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Diese Vererbungskette fügt verschiedene Parameter zu den Aufgaben hinzu, die aus ihnen abgeleitet werden. Diese Parameter werden in diesem Dokument aufgeführt.
 
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der Basisklassen beschrieben.  
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der Basisklassen beschrieben.
 
 
 | Parameter | Beschreibung |
@@ -48,6 +48,6 @@ Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klas
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Optionaler `bool` -Parameter.<br /><br /> Wenn die Festlegung auf `true` gegeben ist, erstellt diese Aufgabe eine Batchdatei für die Befehlszeile und führt sie aus, indem der Befehl nicht direkt ausgeführt wird, sondern der Befehlsprozessor verwendet wird. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Optionaler `bool` -Parameter.<br /><br /> Bei der Festlegung auf `true` ergibt diese Aufgabe den Knoten, wenn dessen Aufgabe ausgeführt wird. |
 
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Aufgaben](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Siehe auch
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

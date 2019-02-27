@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918103"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843090"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -53,7 +53,7 @@ Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten S
 
     ![Ausgabe für die erste Ausführung des Programms](media/vs-getting-started-python-07-output.png)
 
-1. Zusätzlich zu der Vervollständigung von Anweisungen und Funktionen bietet IntelliSense Vervollständigungen für `import`- und `from`-Anweisungen von Python. Diese Vervollständigungen unterstützen Sie bei der Ermittlung, welche Module in Ihrer Umgebung verfügbar sind und welche Members diese enthalten. Löschen Sie im Editor die `print`-Zeile, und geben Sie `import ` ein. Eine Liste von Modulen wird angezeigt, wenn Sie einen Leerraum eingeben:
+1. Zusätzlich zu der Vervollständigung von Anweisungen und Funktionen bietet IntelliSense Vervollständigungen für `import`- und `from`-Anweisungen von Python. Diese Vervollständigungen unterstützen Sie bei der Ermittlung, welche Module in Ihrer Umgebung verfügbar sind und welche Members diese enthalten. Löschen Sie im Editor die `print`-Zeile, und geben Sie `import` ein. Eine Liste von Modulen wird angezeigt, wenn Sie einen Leerraum eingeben:
 
     ![IntellSense zeigt verfügbare Module für eine Import-Anweisung an](media/vs-getting-started-python-08-import1.png)
 

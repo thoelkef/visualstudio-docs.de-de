@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621616"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Speicherintensive CompareTo-Funktionen
 
-|||  
-|-|-|  
-|Regel-ID|DA0011|  
-|Kategorie|.NET Framework-Verwendung|  
-|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|  
-|Meldung|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|  
-|Regeltyp|Warnung|  
+|||
+|-|-|
+|Regel-ID|DA0011|
+|Kategorie|.NET Framework-Verwendung|
+|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|
+|Meldung|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|
+|Regeltyp|Warnung|
 
-## <a name="cause"></a>Ursache  
- Die CompareTo-Methode des Typs ist aufwändig oder belegt Arbeitsspeicher.  
+## <a name="cause"></a>Ursache
+ Die CompareTo-Methode des Typs ist aufwändig oder belegt Arbeitsspeicher.
 
-## <a name="rule-description"></a>Regelbeschreibung  
- CompareTo-Methoden sollten effizient sein und keinen Arbeitsspeicher zuordnen.  
+## <a name="rule-description"></a>Regelbeschreibung
+ CompareTo-Methoden sollten effizient sein und keinen Arbeitsspeicher zuordnen.
 
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Verringern Sie die Komplexität der CompareTo-Methode.

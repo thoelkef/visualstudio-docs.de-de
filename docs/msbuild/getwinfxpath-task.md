@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd751f36ce3a5f74bea78fd0d57920a5145c0fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853676"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646928"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath-Aufgabe
 Der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task gibt das Verzeichnis der aktuellen [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)]-Runtime zurück.
@@ -36,7 +36,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task gibt das Verzeichnis 
 | `WinFXNativePath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad zur nativen [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)]-Runtime an. |
 | `WinFXWowPath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad zu den [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)]-Assemblys im 32-Bit-**Windows on Windows**-Modul auf 64-Bit-Systemen an. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Wenn der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task auf einem 64-Bit-Prozessor ausgeführt wird, wird der **WinFXPath**-Parametersatz auf den Pfad festgelegt, der im **WinFXWowPath**-Parameter gespeichert ist. Andernfalls wird der **WinFXPath**-Parameter auf den Pfad festgelegt, der im **WinFXNativePath**-Parameter gespeichert ist.
 
 ## <a name="example"></a>Beispiel
@@ -57,8 +57,8 @@ Der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task gibt das Verzeichnis 
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

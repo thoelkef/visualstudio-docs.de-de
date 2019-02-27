@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626608"
 ---
 # <a name="createproperty-task"></a>CreateProperty-Aufgabe
 Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus einer Eigenschaft oder Zeichenfolge in eine andere kopiert werden.
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die Parameter der `CreateProperty` -Aufgabe besc
 | `Value` | Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Wert an, der in die neue Eigenschaft kopiert werden soll |
 | `ValueSetByTask` | Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält denselben Wert wie der `Value`-Parameter. Verwenden Sie diesen Parameter nur, wenn die Ausgabeeigenschaft nicht von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] festgelegt werden soll, wenn es das umschließende Ziel überspringt, weil die Ausgaben auf dem neuesten Stand sind. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
@@ -67,5 +67,5 @@ Im folgenden Beispiel wird die `NewFile`-Eigenschaft mit der `CreateProperty`-Au
 Nach dem Ausführen des Projekts, ist der Wert der `NewFile`-Eigenschaft *Module1.vb*.
 
 ## <a name="see-also"></a>Siehe auch
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

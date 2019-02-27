@@ -18,37 +18,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec3dbc52c381b5e691ecf7a8072a85da70e43fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961961"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608980"
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
 
 Signiert die angegebene Datei mit dem angegebenen Zertifikat.
-  
+
 ## <a name="parameters"></a>Parameter
 
  In der folgenden Tabelle werden die Parameter der `SignFile` -Aufgabe beschrieben.
-  
+
  Beachten Sie, dass SHA-256-Zertifikate nur auf Computern zulässig sind, auf denen .NET 4.5 und höher installiert ist.
-  
+
 > [!WARNING]
 > Ab Visual Studio 2013 Update 3 hat diese Aufgabe eine neue Signatur, mit der Sie die Zielframeworkversion für die Datei angeben können. Sie sollen die neue Signatur verwenden, wo immer möglich, weil der MSBuild-Prozess SHA-256-Hashes nur dann verwendet, wenn das Zielframework .NET 4.5 oder höher ist. Wenn das Zielframework .NET 4.0 oder älter ist, wird der SHA-256-Hash nicht verwendet.
-  
+
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |`CertificateThumbprint`|Erforderlicher `String` -Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|
 |`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|
 |`TimestampUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|
 |`TargetFrameworkVersion`|Die Version des .NET Framework, die für das Ziel verwendet wird.|
-  
-## <a name="remarks"></a>Hinweise
+
+## <a name="remarks"></a>Anmerkungen
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
-  
+
 ## <a name="example"></a>Beispiel
 
  Im folgenden Beispiel wird die `SignFile`-Aufgabe zum Signieren der Dateien verwendet, die in der `FilesToSign`-Elementauflistung mit dem in der `Certificate`-Eigenschaft angegebenen Zertifikat angegeben werden.
@@ -72,7 +72,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 
 > [!NOTE]
 > Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Stellen Sie sicher, dass Sie das zusätzliche (3F) unsichtbare Zeichen beim Kopieren und Einfügen des Fingerabdrucks aus den Zertifikatdetails nicht kopieren, da dies verhindern kann, dass `SignFile` das Zertifikat findet.
-  
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Aufgaben](../msbuild/msbuild-tasks.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

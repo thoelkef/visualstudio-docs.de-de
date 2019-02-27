@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602272"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler-Aufgabe
 Die `AspNetCompiler`-Aufgabe umschließt *aspnet_compiler.exe*, ein Hilfsprogramm zum Vorkompilieren von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen.
@@ -48,7 +48,7 @@ In der folgenden Tabelle werden die Parameter der `AspNetCompiler` -Aufgabe besc
 |`Updateable`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn dieser Parameter `true` ist, ist die vorkompilierte Anwendung aktualisierbar.  Der Standardwert ist `false`sein. Dieser Parameter entspricht dem **-u**-Schalter in *aspnet_compiler.exe*.|
 |`VirtualPath`|Optionaler `String` -Parameter.<br /><br /> Der virtuelle Pfad der zu kompilierenden Anwendung. Wenn `PhysicalPath` festgelegt ist, wird der physische Pfad verwendet, um die Anwendung zu suchen. Andernfalls wird die IIS-Metabasis verwendet, und es wird angenommen, dass sich die Anwendung am Standardspeicherort befindet. Dieser Parameter entspricht dem **-v**-Schalter in *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
@@ -69,5 +69,5 @@ Im folgenden Codebeispiel wird die `AspNetCompiler`-Aufgabe zum Vorkompilieren e
 ```
 
 ## <a name="see-also"></a>Siehe auch
-* [Aufgaben](../msbuild/msbuild-tasks.md)  
+* [Aufgaben](../msbuild/msbuild-tasks.md)
 * [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

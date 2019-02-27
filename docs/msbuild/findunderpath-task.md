@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602183"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath-Aufgabe
 Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im oder unter dem angegebenen Ordner verfügen
@@ -39,7 +39,7 @@ In der folgenden Tabelle werden die Parameter der `FindUnderPath` -Aufgabe besch
 |`Path`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Ordnerpfad an, der als Verweis verwendet werden soll|
 |`UpdateToAbsolutePaths`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn TRUE, werden die Pfade der Ausgabeelemente als absolute Pfade aktualisiert.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
@@ -73,6 +73,6 @@ Im folgenden Beispiel wird die `FindUnderPath`-Aufgabe verwendet um zu bestimmen
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Aufgaben](../msbuild/msbuild-tasks.md)  
-[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

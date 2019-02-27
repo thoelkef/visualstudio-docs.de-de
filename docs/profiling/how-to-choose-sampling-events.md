@@ -18,49 +18,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96e84d459485ef9d9f796cd30b758ebe1613ef2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d3562f446ebbc5f6e24ce9911ff9e09daa04e55
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947568"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621317"
 ---
 # <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
-Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:  
-  
--   Taktzyklen: bei CPU-Problemen  
-  
--   Seitenfehler: bei Arbeitsspeicherproblemen  
-  
--   Systemaufrufe: bei E/A-Probleme  
-  
--   Leistungsindikator – CPU-Indikatoren für Leistungsproblemen auf niedriger Ebene  
-  
+Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:
+
+-   Taktzyklen: bei CPU-Problemen
+
+-   Seitenfehler: bei Arbeitsspeicherproblemen
+
+-   Systemaufrufe: bei E/A-Probleme
+
+-   Leistungsindikator – CPU-Indikatoren für Leistungsproblemen auf niedriger Ebene
+
 > [!IMPORTANT]
->  Wenn Sie .NET-Speicherdaten mithilfe der Sampling-Methode sammeln (Belegungen, Lebensdauer von Objekten oder beides), werden benutzerspezifische Samplingereignisse ignoriert und Ereignisse zur Speicherbelegung, zur automatischen Speicherbereinigung (oder beide) werden zur Datensammlung verwendet.  
-  
-### <a name="to-select-a-sample-event"></a>So wählen Sie ein Beispielereignis aus  
-  
-1.  Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
-  
-2.  Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Sampling**.  
-  
-3.  Wählen Sie aus der Dropdownliste **Beispielereignisse** das Beispielereignis aus, das Sie zur Profilerstellung Ihrer Anwendung verwende möchten.  
-  
+>  Wenn Sie .NET-Speicherdaten mithilfe der Sampling-Methode sammeln (Belegungen, Lebensdauer von Objekten oder beides), werden benutzerspezifische Samplingereignisse ignoriert und Ereignisse zur Speicherbelegung, zur automatischen Speicherbereinigung (oder beide) werden zur Datensammlung verwendet.
+
+### <a name="to-select-a-sample-event"></a>So wählen Sie ein Beispielereignis aus
+
+1.  Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+
+2.  Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Sampling**.
+
+3.  Wählen Sie aus der Dropdownliste **Beispielereignisse** das Beispielereignis aus, das Sie zur Profilerstellung Ihrer Anwendung verwende möchten.
+
     > [!NOTE]
-    >  Die **verfügbaren Leistungsindikatoren** sind nur aktiviert, wenn Sie aus der Dropdown-Liste **Beispielereignis** **Leistungsindikator** auswählen.  
-  
-4.  Wenn Sie **Leistungsindikator** auswählen, klicken Sie vom Strukturansicht-Steuerelement auf **Verfügbare Leistungsindikatoren** auf einen bestimmten CPU-Indikator.  
-  
-    -   Indikatoren aus dem Knoten **Portable Ereignisse** sind für alle Prozessortypen verfügbar.  
-  
-    -   Indikatoren aus dem Knoten **Plattformereignisse** sind spezifische Prozessoren am aktuellen Computer und sind vielleicht für andere Prozessortypen verfügbar.  
-  
-5.  Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)   
- [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+    >  Die **verfügbaren Leistungsindikatoren** sind nur aktiviert, wenn Sie aus der Dropdown-Liste **Beispielereignis** **Leistungsindikator** auswählen.
+
+4.  Wenn Sie **Leistungsindikator** auswählen, klicken Sie vom Strukturansicht-Steuerelement auf **Verfügbare Leistungsindikatoren** auf einen bestimmten CPU-Indikator.
+
+    -   Indikatoren aus dem Knoten **Portable Ereignisse** sind für alle Prozessortypen verfügbar.
+
+    -   Indikatoren aus dem Knoten **Plattformereignisse** sind spezifische Prozessoren am aktuellen Computer und sind vielleicht für andere Prozessortypen verfügbar.
+
+5.  Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.
+
+## <a name="see-also"></a>Siehe auch
+- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+- [Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)
+- [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)
+- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+- [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

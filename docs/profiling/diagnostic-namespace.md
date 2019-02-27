@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984053"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600672"
 ---
 # <a name="diagnostic-namespace"></a>Diagnostic-Namespace
-Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>Member  
-  
-### <a name="classes"></a>Klassen  
-  
-|name|Beschreibung|  
-|----------|-----------------|  
-|[marker_series-Klasse](../profiling/marker-series-class.md)|Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.|  
-|[span-Klasse](../profiling/span-class.md)|Definiert eine Phase der Anwendung.|  
-  
-### <a name="enumerations"></a>Enumerationen  
-  
-|name|Beschreibung|  
-|----------|-----------------|  
-|[marker_importance-Enumeration](../profiling/marker-importance-enumeration.md)|Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.|  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** Parallelität  
-  
-## <a name="see-also"></a>Siehe auch  
- [Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>Member
+
+### <a name="classes"></a>Klassen
+
+|name|Beschreibung|
+|----------|-----------------|
+|[marker_series-Klasse](../profiling/marker-series-class.md)|Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.|
+|[span-Klasse](../profiling/span-class.md)|Definiert eine Phase der Anwendung.|
+
+### <a name="enumerations"></a>Enumerationen
+
+|name|Beschreibung|
+|----------|-----------------|
+|[marker_importance-Enumeration](../profiling/marker-importance-enumeration.md)|Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.|
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** Parallelität
+
+## <a name="see-also"></a>Siehe auch
+- [Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)

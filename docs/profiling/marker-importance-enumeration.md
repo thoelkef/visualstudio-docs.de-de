@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992151"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613894"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
-Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-enum marker_importance;  
-```  
-  
-## <a name="members"></a>Member  
-  
-### <a name="values"></a>Werte  
-  
-|name|Beschreibung|  
-|----------|-----------------|  
-|`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
-|`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  
-|`low_importance`|Gibt an, dass der Marker weniger wichtig ist|  
-|`normal_importance`|Gibt an, dass der Marker normal wichtig ist|  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Siehe auch  
- [diagnostic-Namespace](../profiling/diagnostic-namespace.md)
+Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+enum marker_importance;
+```
+
+## <a name="members"></a>Member
+
+### <a name="values"></a>Werte
+
+|name|Beschreibung|
+|----------|-----------------|
+|`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|
+|`high_importance`|Gibt an, dass der Marker hoch wichtig ist|
+|`low_importance`|Gibt an, dass der Marker weniger wichtig ist|
+|`normal_importance`|Gibt an, dass der Marker normal wichtig ist|
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Siehe auch
+- [diagnostic-Namespace](../profiling/diagnostic-namespace.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000704"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633706"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 
@@ -57,64 +57,64 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
+
 1.  Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile in der `main`-Funktion fest:
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
-  
+
 3.  Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
 4.  Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
@@ -147,7 +147,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
      Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
 
      Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
-  
+
      Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
@@ -165,7 +165,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 2. Doppelklicken Sie in der Funktionsliste auf die `getNumber`-Funktion.
 
-    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet. 
+    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet.
 
     ![Diagnosetools Ansicht Aufrufer-Aufgerufener](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 - [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md) für weitere Informationen zum CPU-Auslastungs-Tool
 - Analysieren der CPU-Auslastung, auch ohne Debugger oder dass eine ausgeführte App als Ziel gesetzt wird: Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten ohne das Debuggen](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
 
- [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

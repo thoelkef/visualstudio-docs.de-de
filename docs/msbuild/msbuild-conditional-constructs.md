@@ -22,62 +22,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cdb38211cb41722feb4a63d5038647b8a245643
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 045a7366546e85ad2e9588ce2a14077f8b18a331
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622955"
 ---
 # <a name="msbuild-conditional-constructs"></a>Bedingte Konstrukte in MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt einen Mechanismus für Entweder/Oder-Verarbeitung mit den Elementen [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) und [Otherwise](../msbuild/otherwise-element-msbuild.md) bereit.  
-  
-## <a name="use-the-choose-element"></a>Verwenden des Elements „Choose“  
- Das `Choose`-Element enthält mehrere `When`-Elemente und `Condition`-Attribute, die in der Reihenfolge von oben nach unten getestet werden, bis eins `true` ergibt. Wenn mehr als ein `When`-Element `true` ergibt, wird nur das Erste verwendet. Falls ein `Otherwise`-Element vorhanden ist, wird es ausgewertet, wenn keine Bedingung für ein `When`-Element `true` ergibt.  
-  
- `Choose`-Elemente können als untergeordnete Elemente der Elemente `Project`, `When` und `Otherwise` verwendet werden. Die Elemente `When` und `Otherwise` können über die untergeordneten Elemente `ItemGroup`, `PropertyGroup` und `Choose` verfügen.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel werden die Elemente `Choose` und `When` für die Entweder/Oder-Verarbeitung verwendet. Die Eigenschaften und Elemente für das Projekt werden anhand des Werts der `Configuration`-Eigenschaft festgelegt.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <PropertyGroup>  
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
-        <OutputType>Exe</OutputType>  
-        <RootNamespace>ConsoleApplication1</RootNamespace>  
-        <AssemblyName>ConsoleApplication1</AssemblyName>  
-        <WarningLevel>4</WarningLevel>  
-    </PropertyGroup>  
-    <Choose>  
-        <When Condition=" '$(Configuration)'=='Debug' ">  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <DebugType>full</DebugType>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\Debug\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-            <ItemGroup>  
-                <Compile Include="UnitTesting\*.cs" />  
-                <Reference Include="NUnit.dll" />  
-            </ItemGroup>  
-        </When>  
-        <When Condition=" '$(Configuration)'=='retail' ">  
-            <PropertyGroup>  
-                <DebugSymbols>false</DebugSymbols>  
-                <Optimize>true</Optimize>  
-                <OutputPath>.\bin\Release\</OutputPath>  
-                <DefineConstants>TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </When>  
-    </Choose>  
-    <!-- Rest of Project -->  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Choose-Element (MSBuild)](../msbuild/choose-element-msbuild.md)   
- [When-Element (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Otherwise-Element (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt einen Mechanismus für Entweder/Oder-Verarbeitung mit den Elementen [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) und [Otherwise](../msbuild/otherwise-element-msbuild.md) bereit.
+
+## <a name="use-the-choose-element"></a>Verwenden des Elements „Choose“
+ Das `Choose`-Element enthält mehrere `When`-Elemente und `Condition`-Attribute, die in der Reihenfolge von oben nach unten getestet werden, bis eins `true` ergibt. Wenn mehr als ein `When`-Element `true` ergibt, wird nur das Erste verwendet. Falls ein `Otherwise`-Element vorhanden ist, wird es ausgewertet, wenn keine Bedingung für ein `When`-Element `true` ergibt.
+
+ `Choose`-Elemente können als untergeordnete Elemente der Elemente `Project`, `When` und `Otherwise` verwendet werden. Die Elemente `When` und `Otherwise` können über die untergeordneten Elemente `ItemGroup`, `PropertyGroup` und `Choose` verfügen.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel werden die Elemente `Choose` und `When` für die Entweder/Oder-Verarbeitung verwendet. Die Eigenschaften und Elemente für das Projekt werden anhand des Werts der `Configuration`-Eigenschaft festgelegt.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>ConsoleApplication1</RootNamespace>
+        <AssemblyName>ConsoleApplication1</AssemblyName>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <Choose>
+        <When Condition=" '$(Configuration)'=='Debug' ">
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <DebugType>full</DebugType>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\Debug\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+            <ItemGroup>
+                <Compile Include="UnitTesting\*.cs" />
+                <Reference Include="NUnit.dll" />
+            </ItemGroup>
+        </When>
+        <When Condition=" '$(Configuration)'=='retail' ">
+            <PropertyGroup>
+                <DebugSymbols>false</DebugSymbols>
+                <Optimize>true</Optimize>
+                <OutputPath>.\bin\Release\</OutputPath>
+                <DefineConstants>TRACE</DefineConstants>
+            </PropertyGroup>
+        </When>
+    </Choose>
+    <!-- Rest of Project -->
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Choose-Element (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [When-Element (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Otherwise-Element (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)

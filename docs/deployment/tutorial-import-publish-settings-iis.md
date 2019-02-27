@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413305"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605404"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in IIS durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
@@ -42,7 +42,7 @@ Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet si
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
 
-* Sie müssen Windows Server 2012 oder Windows Server 2016 auf Ihrem Server ausführen, und die [IIS-Webserverrolle](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) muss ordnungsgemäß installiert sein (zum Generieren der Veröffentlichungseinstellungsdatei (*\*.publishsettings*) erforderlich). Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core auf dem Server installiert sein. Informationen zum Einrichten von ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Informationen zum Einrichten von ASP.NET Core finden Sie unter [Hosten von ASP.NET Core unter Windows mit IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
+* Sie müssen Windows Server 2012 oder Windows Server 2016 auf Ihrem Server ausführen, und die [IIS-Webserverrolle](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) muss ordnungsgemäß installiert sein (zum Generieren der Veröffentlichungseinstellungsdatei (*\*.publishsettings*) erforderlich). Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core auf dem Server installiert sein. Informationen zum Einrichten von ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Informationen zum Einrichten von ASP.NET Core finden Sie unter [Hosten von ASP.NET Core unter Windows mit IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 

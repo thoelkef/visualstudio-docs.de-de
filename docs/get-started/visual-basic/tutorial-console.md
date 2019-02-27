@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155694"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840417"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Erste Schritte mit Visual Basic in Visual Studio
 
@@ -38,7 +38,7 @@ Erstellen wir zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Hinzufügen einer Workgroup (optional)
+### <a name="add-a-workload-optional"></a>Hinzufügen einer Workload (optional)
 
 Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Sie haben folgende Möglichkeiten für das Hinzufügen der Workload, je nachdem, welche Visual Studio 2017-Updates auf dem Computer installiert sind.
 

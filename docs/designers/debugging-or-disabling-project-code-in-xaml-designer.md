@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919273"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596737"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 
@@ -88,7 +88,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 ## <a name="control-display-options"></a>Anzeigeoptionen für Steuerelemente
 
 > [!NOTE]
-> **Anzeigeoptionen für Steuerelemente** ist nur für UWP-Anwendungen (universelle Windows-Plattform) verfügbar, die Windows 10 Fall Creators Update (Build 16299) oder höher als Ziel verwenden. Das Feature **Anzeigeoptionen für Steuerelemente** ist in Visual Studio 2017 Version 15.9 oder höher verfügbar. 
+> **Anzeigeoptionen für Steuerelemente** ist nur für UWP-Anwendungen (universelle Windows-Plattform) verfügbar, die Windows 10 Fall Creators Update (Build 16299) oder höher als Ziel verwenden. Das Feature **Anzeigeoptionen für Steuerelemente** ist in Visual Studio 2017 Version 15.9 oder höher verfügbar.
 
 Im XAML-Designer können Sie Ihre Anzeigeoptionen für Steuerelemente so ändern, dass nur Plattformsteuerelemente aus dem Windows SDK angezeigt werden. Dies kann die Zuverlässigkeit des XAML-Designers verbessern.
 

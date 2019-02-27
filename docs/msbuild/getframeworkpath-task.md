@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610358"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
 Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Assembly ab
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`FrameworkVersion40Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den Assemblys der Framework-Version 4.0, sofern vorhanden. Andernfalls wird `null` zurückgegeben.|
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Wenn mehrere Versionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert sind, gibt diese Aufgabe die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
@@ -61,5 +61,5 @@ Im folgenden Beispiel wird mit der Aufgabe `GetFrameworkPath` der Pfad zu [!INCL
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Aufgaben](../msbuild/msbuild-tasks.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

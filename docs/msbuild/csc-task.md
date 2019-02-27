@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643937"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic Link Libraries (*DLL*-Dateien) und Codemodule (*NETMODULE*-Dateien). Weitere Informationen zu *csc.exe* finden Sie unter [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index).
@@ -80,7 +80,7 @@ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 | `Win32Manifest` | Optionaler `String` -Parameter.<br /><br /> Gibt das Win32-Manifest an, das eingeschlossen werden sollen. |
 | `Win32Resource` | Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie unter [-win32res (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der `Microsoft.Build.Tasks.ManagedCompiler`-Klasse, die selbst von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse erbt, welche wiederum von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
@@ -94,5 +94,5 @@ Im folgenden Beispiel wird die `Csc`-Aufgabe verwendet, um eine ausführbare Dat
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
