@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1b6eb85126dc7612ec76522088f45fb3aabac11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a69d2691b07acb334069edbf4e57602297ac84cc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616000"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
-Ruft die Segmentnummer ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_frame (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die Anzahl von Segment.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Ruft die Segmentnummer ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_frame ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die Anzahl von Segment.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

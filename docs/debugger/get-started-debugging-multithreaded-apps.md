@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155785"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709849"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)
 
@@ -33,25 +33,25 @@ Diese zwei Themen enthalten weitere Informationen zur Verwendung von anderen Mul
 - Verwenden der **Debugspeicherort** Symbolleiste und die **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
 
 - Ein Beispiel, verwendet <xref:System.Threading.Tasks.Task> (verwalteter Code) und die Concurrency Runtime (C++), finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md). Finden Sie allgemeine Tipps zum Debuggen, die für die meisten Multithread-Anwendungstypen gelten sowohl für dieses Thema als auch für diese.
-  
-Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein Beispiel aufgeführt.  
-  
-## <a name="create-a-multithreaded-app-project"></a>Erstellen Sie ein Multithread-app-Projekt  
-  
-1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.  
-  
-     Das Dialogfeld **Neues Projekt** wird angezeigt.  
-  
-2.  Wählen Sie eine Sprache: **Visual C#** , **Visual C++**, oder **Visual Basic**.  
-  
-3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.  
-  
-4.  In der **Namen** geben MyThreadWalkthroughApp ein.  
-  
-5.  Klicken Sie auf **OK**.  
-  
-     Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt. Abhängig von der Sprache, die Sie ausgewählt haben, kann die Quelldatei aufgerufen werden *"Program.cs"*, *MyThreadWalkthroughApp.cpp*, oder *"Module1.vb"*.  
-  
+
+Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein Beispiel aufgeführt.
+
+## <a name="create-a-multithreaded-app-project"></a>Erstellen Sie ein Multithread-app-Projekt
+
+1.  Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+
+     Das Dialogfeld **Neues Projekt** wird angezeigt.
+
+2.  Wählen Sie eine Sprache: **Visual C#** , **Visual C++**, oder **Visual Basic**.
+
+3.  Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolen-App**.
+
+4.  In der **Namen** geben MyThreadWalkthroughApp ein.
+
+5.  Klicken Sie auf **OK**.
+
+     Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt. Abhängig von der Sprache, die Sie ausgewählt haben, kann die Quelldatei aufgerufen werden *"Program.cs"*, *MyThreadWalkthroughApp.cpp*, oder *"Module1.vb"*.
+
 6.  Löschen Sie den Code, der in der Quelldatei angezeigt wird, und Ersetzen Sie sie mit der entsprechenden Beispiel codeauflistung unten.
 
     ```csharp
@@ -186,54 +186,54 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
         End Sub
     End Class
     ```
-  
-7.  Wählen Sie im Menü **Datei** den Befehl **Alle speichern** aus.  
+
+7.  Wählen Sie im Menü **Datei** den Befehl **Alle speichern** aus.
 
 8. (Nur Visual Basic) Maustaste Sie im Projektmappen-Explorer (rechter Bereich) auf den Projektknoten, wählen **Eigenschaften**. Unter den **Anwendung** Registerkarte die **Startobjekt** zu **einfache**.
-  
-## <a name="debug-the-multithreaded-app"></a>Debuggen Sie die Multithread-app  
-  
-1. Suchen Sie in der Quellcode-Editor nach einer der folgenden Codeausschnitte: 
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
+
+## <a name="debug-the-multithreaded-app"></a>Debuggen Sie die Multithread-app
+
+1. Suchen Sie in der Quellcode-Editor nach einer der folgenden Codeausschnitte:
+
+    ```csharp
+    Thread.Sleep(3000);
+    Console.WriteLine();
+    ```
+
+    ```C++
     std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "The function called by the worker thread has ended." << std::endl; 
-    ```  
+    std::cout << "The function called by the worker thread has ended." << std::endl;
+    ```
 
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
 
-1. Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `std::this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.  
-  
-    Im Bundsteg gibt ein roter Kreis an, dass ein Haltepunkt an dieser Stelle festgelegt wurde. 
-  
-2. Auf der **Debuggen** , wählen Sie im Menü **Debuggen starten** (**F5**).  
-  
-    Visual Studio erstellt die Projektmappe, die app gestartet wird, um mit dem angefügten Debugger auszuführen, und klicken Sie dann die app beendet die Ausführung am Haltepunkt.  
-  
+1. Klicken Sie im linken Bundsteg des der `Thread.Sleep` oder `std::this_thread::sleep_for` Anweisung, um einen neuen Haltepunkt einzufügen.
+
+    Im Bundsteg gibt ein roter Kreis an, dass ein Haltepunkt an dieser Stelle festgelegt wurde.
+
+2. Auf der **Debuggen** , wählen Sie im Menü **Debuggen starten** (**F5**).
+
+    Visual Studio erstellt die Projektmappe, die app gestartet wird, um mit dem angefügten Debugger auszuführen, und klicken Sie dann die app beendet die Ausführung am Haltepunkt.
+
 3. Suchen Sie in der Quellcode-Editor die Zeile, die den Haltepunkt enthält.
-  
+
 ### <a name="ShowThreadsInSource"></a>Ermitteln Sie den Threadmarker  
 
 1.  Wählen Sie in der Debug-Symbolleiste die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Drücken Sie **F11** einmal um den Debugger eine Codezeile zu gelangen.
-  
+
 3.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , die zwei twisted Threads ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
-    Ein Threadmarker kann teilweise durch einen Haltepunkt verborgen werden. 
-  
-4.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt, dass Sie die Namen und die Thread-ID jedes angehaltenen Threads. Der Name ist in diesem Fall wahrscheinlich `<noname>`. 
-  
+    Ein Threadmarker kann teilweise durch einen Haltepunkt verborgen werden.
+
+4.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt, dass Sie die Namen und die Thread-ID jedes angehaltenen Threads. Der Name ist in diesem Fall wahrscheinlich `<noname>`.
+
 5.  Wählen Sie den Threadmarker, um die verfügbaren Optionen im Kontextmenü anzuzeigen.
-    
+
 ### <a name="ParallelStacks"></a>Anzeigen der Thread-Orte
 
 In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (für taskbasierte Programmierung) Aufgaben anzeigen, und Sie finden Informationen in der Aufrufliste für jeden Thread. In dieser app können wir die Ansicht "Threads" verwenden.
@@ -243,7 +243,7 @@ In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (f�
     ![Fenster mit parallelen Stapeln von](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     In diesem Beispiel sehen Sie von links nach rechts diese Informationen für verwalteten Code:
-    
+
     - Der Hauptthread (linke Seite) wurde beendet, auf `Thread.Start`, in denen die Beendigungspunkt angegeben wird, durch das Symbol "Thread-Marker" ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker").
     - Zwei Threads eingegeben haben die `ServerClass.InstanceMethod`, von denen der aktuelle Thread (gelben Pfeil), wird während der andere Thread, im beendet wurde `Thread.Sleep`.
     - Ein neuer Thread (rechts) wird auch gestartet, aber auf beendet ist `ThreadHelper.ThreadStart`.
@@ -271,31 +271,31 @@ In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (f�
 
 4. Mit der rechten Maustaste auf eine der Zeilen im Fenster, um die verfügbaren Optionen anzuzeigen.
 
-### <a name="flag-and-unflag-threads"></a>Kennzeichnen von Threads und Aufheben der Kennzeichnung  
-Sie können Threads zum Nachverfolgen wichtiger Threads und ignoriert die anderen Threads kennzeichnen.  
-  
+### <a name="flag-and-unflag-threads"></a>Kennzeichnen von Threads und Aufheben der Kennzeichnung
+Sie können Threads zum Nachverfolgen wichtiger Threads und ignoriert die anderen Threads kennzeichnen.
+
 1. In der **parallele Überwachung** Fenster, halten Sie die **UMSCHALT** gedrückt, und wählen Sie mehrere Zeilen.
 
 2. Mit der rechten Maustaste, und wählen Sie **Flag**.
 
     Alle ausgewählten Threads werden gekennzeichnet. Jetzt können Sie filtern, um nur gekennzeichnete Threads angezeigt.
-  
-3.  In der **parallele Überwachung** wählen Sie im Fenster der **nur gekennzeichnete Threads anzeigen** Schaltfläche ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
-  
+
+3.  In der **parallele Überwachung** wählen Sie im Fenster der **nur gekennzeichnete Threads anzeigen** Schaltfläche ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+
     Nur die gekennzeichneten Threads, die in der Liste angezeigt werden.
 
     > [!TIP]
     > Nachdem Sie einige Threads gekennzeichnet haben, können Sie mit der rechten Maustaste in einer einzige Zeile Code im Code-Editor und wählen Sie **gekennzeichnete Threads bis zum Cursor ausführen**. Stellen Sie sicher, um auszuwählen, dass Code, der alle gekennzeichnete Threads erreicht wird. Visual Studio hält Threads in der ausgewählten Zeile des Codes, erleichtert Ihnen die Steuerung die Reihenfolge der Ausführung von [sperren und Entsperren von Threads](#bkmk_freeze).
 
 4.  Wählen Sie die **nur gekennzeichnete Threads anzeigen** Schaltfläche erneut aus, um zurück in den wechseln **alle Threads anzeigen** Modus.
-    
+
 5. Zum Aufheben der Kennzeichnung von Threads Maustaste einen oder mehrere gekennzeichnete Threads in der **parallele Überwachung** Fenster, und wählen **Flag**.
 
-### <a name="bkmk_freeze"></a> Einfrieren Sie und reaktivieren Sie die Ausführung des Threads 
+### <a name="bkmk_freeze"></a> Einfrieren Sie und reaktivieren Sie die Ausführung des Threads
 
 > [!TIP]
 > Sie können Einfrieren und reaktivieren (anhalten und fortsetzen) Threads zur Steuerung der Reihenfolge, in denen Threads Arbeiten ausführen. Damit können Sie beheben Parallelitätsprobleme wie Deadlocks und Racebedingungen.
-   
+
 1.  In der **parallele Überwachung** Fenster für die alle Zeilen ausgewählt haben, mit der rechten Maustaste, und wählen **fixieren**.
 
     In der zweiten Spalte wird Sie für jede Zeile eine Pausen-Symbol angezeigt. Das Pausensymbol gibt an, dass der Thread gesperrt ist.
@@ -336,11 +336,11 @@ Sie können Haltepunkte festlegen, auf verschiedenen Bedingungen, z. B. den Thre
     Solange die Bedingung für Haltepunkt für den Thread eindeutig ist und der Debugger keine anderen Haltepunkte auf anderen Threads trifft (möglicherweise müssen sie deaktiviert), können Sie Code überspringen und Einzelschritte im Code nicht in anderen Threads wechseln.
 
     > [!NOTE]
-    > Wenn Sie fahren fort, um den Debugger, werden alle Threads ausgeführt werden. Der Debugger wird nicht jedoch in Code in anderen Threads unterbrechen, es sei denn, eine der anderen Threads ein Haltepunkt erreicht. 
-  
+    > Wenn Sie fahren fort, um den Debugger, werden alle Threads ausgeführt werden. Der Debugger wird nicht jedoch in Code in anderen Threads unterbrechen, es sei denn, eine der anderen Threads ein Haltepunkt erreicht.
+
 ## <a name="see-also"></a>Siehe auch
 
-[Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Gewusst wie: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)  
-[Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Gewusst wie: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)
+- [Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)

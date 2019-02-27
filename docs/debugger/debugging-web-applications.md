@@ -18,26 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47d51566074eec4c38bab1bd7846b1dfe0f034d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027827"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693125"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
-In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt   
- [Debuggen von clientseitigen Skripts](../debugger/client-side-script-debugging.md)  
- Erläutert Testskripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Seiten.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
- Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen zu ermöglichen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)  
- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)  
- [Debuggen in Visual Studio](../debugger/index.md)
+In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Debuggen von clientseitigen Skripts](../debugger/client-side-script-debugging.md) behandelt, die Tests, Skripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Seiten.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md) beschreibt die erforderlichen Schritte zum Aktivieren des Debuggens von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Debuggen in Visual Studio](../debugger/index.md)

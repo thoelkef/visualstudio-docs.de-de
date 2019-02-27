@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02307fda339bb7cf45d07aeb1053a2f8a4ca8528
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca50a9fa82f8db33fd12b5a94ee1fc9df7396124
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009075"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610748"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
-Ruft ein Flag, das angibt, ob der Abschnitt nicht verworfen werden kann.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_discardable (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` Wenn Abschnitt aus dem Speicher verworfen werden kann, je nach Bedarf ist; andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Ruft ein Flag, das angibt, ob der Abschnitt nicht verworfen werden kann.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_discardable ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` Wenn Abschnitt aus dem Speicher verworfen werden kann, je nach Bedarf ist; andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

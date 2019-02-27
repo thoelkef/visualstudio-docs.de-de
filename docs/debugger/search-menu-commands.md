@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de9fdd38655c5c4baf8630df75c1365e38fca1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069063"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693333"
 ---
 # <a name="search-menu-commands"></a>Befehle im Menü "Suchen"
-Die **Suche** Menü enthält Befehle zum Suchen nach bestimmten Fenstern.  
-  
- **Fenster/Prozess/Thread/Nachricht suchen**  
- Öffnet die **Fenster**/**Prozess**/**Thread**/**Meldungssuche** Dialogfeld zur Verwendung der **Suchtool** , oder geben Sie Suchkriterien entsprechen.  
-  
- **Weitersuchen**  
- Durchsucht die aktuelle Ansicht nach dem nächsten übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Menüelement (und die zugehörigen Symbolleisten-Schaltfläche) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist.  
-  
- **Vorheriges suchen**  
- Durchsucht die aktuelle Ansicht nach dem vorherigen übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Menüelement (und die zugehörigen Symbolleisten-Schaltfläche) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist.
+Die **Suche** Menü enthält Befehle zum Suchen nach bestimmten Fenstern.
+
+ **Fenster/Prozess/Thread/Meldung suchen** öffnet die **Fenster**/**Prozess**/**Thread** /  **Meldungssuche** klicken Sie im Dialogfeld zur Verwendung der **Suchtool** , oder geben Sie Suchkriterien entsprechen.
+
+ **Weitersuchen** durchsucht die aktuelle Ansicht für den nächsten übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Menüelement (und die zugehörigen Symbolleisten-Schaltfläche) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist.
+
+ **Suchen Sie die vorherige** durchsucht die aktuelle Ansicht nach der vorherigen übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Menüelement (und die zugehörigen Symbolleisten-Schaltfläche) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist.

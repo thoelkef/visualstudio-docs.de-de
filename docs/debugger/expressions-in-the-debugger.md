@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227393"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692267"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke in Visual Studio-debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.
@@ -205,7 +205,7 @@ Neue Variablen können in Debuggerfenstern nicht explizit deklariert werden. All
 - Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.
 
 ## <a name="see-also"></a>Siehe auch
-[Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)  
-[Kontextoperator (C++)](../debugger/context-operator-cpp.md)  
-[Formatbezeichner in C#](../debugger/format-specifiers-in-csharp.md)  
-[Pseudovariablen](../debugger/pseudovariables.md)
+- [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)
+- [Kontextoperator (C++)](../debugger/context-operator-cpp.md)
+- [Formatbezeichner in C#](../debugger/format-specifiers-in-csharp.md)
+- [Pseudovariablen](../debugger/pseudovariables.md)

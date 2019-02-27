@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938459"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688211"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
 Wenn Sie versuchen, eine ASP.NET-Anwendung auf einem Webserver zu debuggen, erhalten Sie möglicherweise folgende Fehlermeldung: `Unable to start debugging on the Web server`.
 
-Häufig tritt dieser Fehler auf, da ein Fehler oder die Konfiguration geändert wurde, die ein Update des Anwendungspools, eine IIS-Rücksetzung oder beides erforderlich ist. Sie können IIS zurücksetzen, indem Sie eine Eingabeaufforderung mit erhöhten Rechten öffnen und eingeben `iisreset`. 
+Häufig tritt dieser Fehler auf, da ein Fehler oder die Konfiguration geändert wurde, die ein Update des Anwendungspools, eine IIS-Rücksetzung oder beides erforderlich ist. Sie können IIS zurücksetzen, indem Sie eine Eingabeaufforderung mit erhöhten Rechten öffnen und eingeben `iisreset`.
 
 ## <a name="specificerrors"></a>Was ist die ausführliche Fehlermeldung?
 
@@ -61,7 +61,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 
 ## <a name="web_server_config"></a> Der Webserver ist nicht richtig konfiguriert
 
-- Finden Sie unter [Fehler: ](../debugger/error-the-web-server-is-not-configured-correctly.md) Der Webserver ist nicht richtig konfiguriert
+- Finden Sie unter [Fehler: der Webserver ist nicht ordnungsgemäß konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Es konnte keine Verbindung zum webserver
 
@@ -106,12 +106,12 @@ Wenn Sie eine Datei "HOSTS" verwenden, stellen Sie außerdem sicher, dass er ric
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
 
-Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems und vor dem erneuten Versuch zum Debuggen müssen Sie auch IIS zurücksetzen. Sie können dies durch eine Eingabeaufforderung mit erhöhten Rechten öffnen und eingeben `iisreset`. 
+Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems und vor dem erneuten Versuch zum Debuggen müssen Sie auch IIS zurücksetzen. Sie können dies durch eine Eingabeaufforderung mit erhöhten Rechten öffnen und eingeben `iisreset`.
 
-* Beenden und starten Sie Ihre IIS-Anwendungspools neu, und wiederholen Sie dann. 
+* Beenden und starten Sie Ihre IIS-Anwendungspools neu, und wiederholen Sie dann.
 
     Der Anwendungspool möglicherweise aufgrund eines Fehlers beendet. Oder möglicherweise eine andere Änderung der Konfiguration, die Sie vorgenommen haben, beenden und starten Sie den Anwendungspool neu.
-    
+
     > [!NOTE]
     > Wenn der Anwendungspool beendet wird, müssen Sie möglicherweise das URL-Rewrite-Modul in der Systemsteuerung deinstallieren. Sie können es mit dem Webplattform-Installer (WebPI) installieren. Dieses Problem kann nach einem Upgrade beträchtliche Systemressourcen auftreten.
 
@@ -120,7 +120,7 @@ Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems 
     Der Anwendungspool kann für eine Version von ASP.NET konfiguriert werden, die nicht mit Visual Studio-Projekts übereinstimmt. Aktualisieren Sie die ASP.NET-Version im Anwendungspool, und starten Sie ihn neu. Ausführliche Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Auch wenn Kennwortanmeldeinformationen geändert haben, müssen Sie sie in Ihrem Anwendungspool oder die Website zu aktualisieren.  In den Anwendungspool Aktualisieren von Anmeldeinformationen in **Advanced Settings > Prozessmodell > Identität**. Für die Website aktualisieren von Anmeldeinformationen in **Grundeinstellungen > Verbinden als...** . Starten Sie den Anwendungspool neu.
-    
+
 * Überprüfen Sie, dass Ihre Web Application-Ordner die richtigen Berechtigungen verfügt.
 
     Stellen Sie sicher, dass Sie IIS_IUSRS, IUSR-Konto, oder den bestimmte Benutzer zugeordneten der [Anwendungspool](/iis/manage/configuring-security/application-pool-identities) Read- und execute-Berechtigungen für Ordner der Web-Anwendung. Beheben Sie das Problem, und starten Sie den Anwendungspool neu.
@@ -128,11 +128,11 @@ Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems 
 * Stellen Sie sicher, dass die richtige Version von ASP.NET in IIS installiert ist.
 
     Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekts können dazu führen, dass dieses Problem. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festgelegt. Verwenden Sie zum Installieren von ASP.NET in IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 * Beheben Sie Authentifizierungsfehler, wenn Sie nur die IP-Adresse verwenden
 
      Standardmäßig wird davon ausgegangen, dass IP-Adressen dem Internet zuzuordnen sind, während die NTLM-Authentifizierung nicht über das Internet vorgenommen wird. Wenn Ihre Website in IIS für die Authentifizierung konfiguriert ist, schlägt diese Authentifizierung fehl. Um dieses Problem zu beheben, können Sie den Namen des Remotecomputers anstelle der IP-Adresse angeben.
-     
+
 ## <a name="other-causes"></a>Andere Ursachen
 
 Wenn die IIS-Konfiguration nicht das Problem verursacht hat, versuchen Sie diese Schritte aus:
@@ -140,7 +140,7 @@ Wenn die IIS-Konfiguration nicht das Problem verursacht hat, versuchen Sie diese
 - Starten Sie Visual Studio mit Administratorrechten aus, und versuchen Sie es noch mal.
 
     Einige ASP.NET Debugszenarien wie die Verwendung von Web Deploy sind erhöhte Rechte für Visual Studio erforderlich.
-    
+
 - Wenn mehrere Instanzen von Visual Studio ausführen, öffnen Sie Ihr Projekt in einer Instanz von Visual Studio (mit Administratorrechten), und versuchen Sie es erneut.
 
 - Wenn Sie eine Datei "HOSTS" mit lokalen Adressen verwenden, versuchen Sie, statt die Loopback-Adresse, die IP-Adresse des Computers.
@@ -152,12 +152,12 @@ Wenn die IIS-Konfiguration nicht das Problem verursacht hat, versuchen Sie diese
 * Fahren Sie die Localhost-Seite im Browser auf dem Server.
 
      Wenn IIS nicht ordnungsgemäß installiert wurde, sollten Fehler angezeigt werden, wenn Sie `http://localhost` in einem Browser eingeben.
-     
+
      Weitere Informationen zum Bereitstellen in IIS finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) und für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Erstellen Sie eine einfache ASP.NET-Anwendung auf dem Server (oder verwenden Sie eine einfache web.config-Datei).
 
     Wenn Sie Ihre app mit dem Debugger funktioniert nicht, versuchen Sie es erstellen eine grundlegende ASP.NET-Anwendung lokal auf dem Server, und versuchen, die grundlegende app zu debuggen. (Sie können die standardmäßige ASP.NET MVC-Vorlage verwenden möchten.) Wenn Sie eine einfache app Debuggen können, kann, mit denen Sie bestimmen, welche Elemente sich zwischen den beiden Konfigurationen. Suchen Sie nach der Unterschiede in den Einstellungen in der Datei "Web.config" ein, z. B. URL rewrite-Regeln gelten.
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

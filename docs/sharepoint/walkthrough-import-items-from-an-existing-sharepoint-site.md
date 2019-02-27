@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605990"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841740"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren von Elementen aus einer vorhandenen SharePoint-Website in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -43,7 +43,7 @@ ms.locfileid: "56605990"
 ## <a name="customize-a-sharepoint-site"></a>Anpassen einer SharePoint-Websites
  In diesem Beispiel werden Sie erstellen und Anpassen eine SharePoint-Unterwebsite, indem eine neue Websitespalte hinzugefügt wird und erstellen eine weitere Unterwebsite zur späteren Verwendung. Sie werden später erste Unterwebsite in eine WSP-Datei exportieren und dann die benutzerdefinierte Website-Spalte in die zweite Unterwebsite mit dem WSP-Import-Projekt importieren.
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Zum Erstellen und Anpassen einer SharePoint-Websites
+### <a name="to-create-and-customize-a-sharepoint-site"></a>Zum Erstellen und Anpassen einer SharePoint-Websites
 
 1. Öffnen Sie eine SharePoint-Website mithilfe eines Webbrowsers, wie z. B. http://<em>Systemname</em>  /SitePages/Home.aspx.
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605990"
 > [!IMPORTANT]
 >  Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>So exportieren Sie eine vorhandene SharePoint-Website
+### <a name="to-export-an-existing-sharepoint-site"></a>So exportieren Sie eine vorhandene SharePoint-Website
 
 1.  Wählen Sie in der SharePoint-Website **Standorteinstellungen** auf die **Websiteaktionen** Tab, um die Seite Siteeinstellungen anzeigen.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605990"
 ## <a name="import-the-wsp-file"></a>Die WSP-Datei importieren
  Nun, Sie haben eine *.wsp* -Datei, die ein Element, die Sie möchten enthält (die benutzerdefinierte Spalte Test-Spalte) wiederverwenden, importieren die *.wsp* Datei für den Zugriff.
 
-#### <a name="to-import-a-wsp-file"></a>Um eine WSP-Datei zu importieren.
+### <a name="to-import-a-wsp-file"></a>Um eine WSP-Datei zu importieren.
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt**Dialogfeld. Wenn Ihre IDE auf der Menüleiste mit Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei** > **neues Projekt**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605990"
 ## <a name="deploy-the-project"></a>Bereitstellen des Projekts
  Stellen Sie abschließend **WspImportProject1** auf der zweiten SharePoint-Unterwebsite, dass Sie zuvor zum Anzeigen der Spalte für die benutzerdefinierte Website erstellt haben.
 
-#### <a name="to-deploy-the-project"></a>Um das Projekt bereitzustellen
+### <a name="to-deploy-the-project"></a>Um das Projekt bereitzustellen
 
 1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel zum Bereitstellen und Ausführen der *.wsp* Projekt importieren.
 

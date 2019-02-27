@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1cad345d099c9f5f8ecd870bcd80de7c886a55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977576"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598753"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-Ruft eine angegebene Anzahl von Tabellen in der Enumerationsfolge ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Next (   
-   ULONG       celt,  
-   IDiaTable** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `celt`  
- [in] Die Anzahl der Tabellen in der Enumerator abgerufen werden sollen.  
-  
- `rgelt`  
- [out] Ein Array, das mit gefüllt werden soll die [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekte, die die gewünschten Tabellen darstellen.  
-  
- `pceltFetched`  
- [out] Gibt die Anzahl der Tabellen in der abgerufenen Enumerator zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine weitere Tabellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Ruft eine angegebene Anzahl von Tabellen in der Enumerationsfolge ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Next ( 
+   ULONG       celt,
+   IDiaTable** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `celt`
+
+[in] Die Anzahl der Tabellen in der Enumerator abgerufen werden sollen.
+
+ `rgelt`
+
+[out] Ein Array, das mit gefüllt werden soll die [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekte, die die gewünschten Tabellen darstellen.
+
+ `pceltFetched`
+
+[out] Gibt die Anzahl der Tabellen in der abgerufenen Enumerator zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine weitere Tabellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

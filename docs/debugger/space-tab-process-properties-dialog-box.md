@@ -10,26 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31370b74405309a3cc67f425da4ce4710031fd70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973903"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708094"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Registerkarte "Speicherplatz", Dialogfeld "Prozesseigenschaften"
-Verwenden der **Speicherplatz** Tab, um den Adressbereich eines Prozesses untersuchen. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), verschieben Sie den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
-  
- Die folgenden Einstellungen stehen auf der **Speicherplatz** Registerkarte:  
-  
-|Eingabe|Beschreibung|  
-|-----------|-----------------|  
-|**Anzeigen, wenn markiert als**|Verwenden Sie dieses Listenfelds können Sie, um die Kategorie des Speicherplatzes (Image, zugeordnet, reserviert oder Zuweisung) auswählen.|  
-|**Ausführbare Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, den dieser Prozess verwendet wird. Ausführbare Speicher ist Speicher, die von Programmen ausgeführt werden können, aber nicht gelesen oder geschrieben werden kann.|  
-|**Ausführb. Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit schreibgeschützten Eigenschaften, die diesen Prozess verwendet wird. EXEC-Read-only-Speicher ist Speicher, die sowohl ausgeführt als auch gelesen werden kann.|  
-|**Ausführb. Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit Lese-/ Schreibzugriff-Eigenschaften, die diesen Prozess verwendet wird. EXEC-Lese-/ Schreibzugriff-Speicher ist Speicher, die Ausführung von Programmen als auch gelesen und geändert werden kann.|  
-|**Kopieren – EXEC-geschriebene Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum an, der Ausführung von Programmen als auch gelesen und geschrieben werden kann. Diese Art von Schutz wird verwendet, wenn der Speicher muss zwischen Prozessen gemeinsam genutzt werden. Wenn die Prozesse, die nur den Arbeitsspeicher lesen, wird im gleichen Speicher verwendet werden. Wenn ein Prozess Schreibzugriff wünscht, wird eine Kopie dieser Arbeitsspeicher für den Prozess vorgenommen werden.|  
-|**Bytes (kein Zugriff)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der verhindert, dass einen Prozess verwenden. Eine zugriffsverletzung wird generiert, wenn schreiben oder lesen wird versucht.|  
-|**Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der sowohl ausgeführt als auch gelesen werden kann.|  
-|**Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der ermöglicht, lesen und schreiben.|  
+Verwenden der **Speicherplatz** Tab, um den Adressbereich eines Prozesses untersuchen. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), verschieben Sie den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.
+
+ Die folgenden Einstellungen stehen auf der **Speicherplatz** Registerkarte:
+
+|Eingabe|Beschreibung|
+|-----------|-----------------|
+|**Anzeigen, wenn markiert als**|Verwenden Sie dieses Listenfelds können Sie, um die Kategorie des Speicherplatzes (Image, zugeordnet, reserviert oder Zuweisung) auswählen.|
+|**Ausführbare Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, den dieser Prozess verwendet wird. Ausführbare Speicher ist Speicher, die von Programmen ausgeführt werden können, aber nicht gelesen oder geschrieben werden kann.|
+|**Ausführb. Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit schreibgeschützten Eigenschaften, die diesen Prozess verwendet wird. EXEC-Read-only-Speicher ist Speicher, die sowohl ausgeführt als auch gelesen werden kann.|
+|**Ausführb. Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit Lese-/ Schreibzugriff-Eigenschaften, die diesen Prozess verwendet wird. EXEC-Lese-/ Schreibzugriff-Speicher ist Speicher, die Ausführung von Programmen als auch gelesen und geändert werden kann.|
+|**Kopieren – EXEC-geschriebene Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum an, der Ausführung von Programmen als auch gelesen und geschrieben werden kann. Diese Art von Schutz wird verwendet, wenn der Speicher muss zwischen Prozessen gemeinsam genutzt werden. Wenn die Prozesse, die nur den Arbeitsspeicher lesen, wird im gleichen Speicher verwendet werden. Wenn ein Prozess Schreibzugriff wünscht, wird eine Kopie dieser Arbeitsspeicher für den Prozess vorgenommen werden.|
+|**Bytes (kein Zugriff)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der verhindert, dass einen Prozess verwenden. Eine zugriffsverletzung wird generiert, wenn schreiben oder lesen wird versucht.|
+|**Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der sowohl ausgeführt als auch gelesen werden kann.|
+|**Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der ermöglicht, lesen und schreiben.|
 |**Bytes (schreiben/kopieren)**|Für die ausgewählte Kategorie die Summe aus den Adressraum, ermöglicht Arbeitsspeicherfreigabe zum Lesen, aber nicht zum Schreiben. Wenn Prozesse diesen Arbeitsspeicher lesen, können sie den gleichen Arbeitsspeicher freigeben. Allerdings möchte, dass ein Prozess Lese-/Schreibzugriff auf diesen freigegebenen Speicher zugreifen, eine Kopie der, dass der Speicher für das Schreiben von erfolgt.|

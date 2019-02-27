@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227573"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720509"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debuggen von JavaScript mithilfe der Konsole in Visual Studio
 
@@ -249,11 +249,11 @@ In der folgenden Abbildung wird die Zielliste des JavaScript-Konsolenfensters ge
 Sie können den Ausführungskontext auch mithilfe des Befehls `cd` wechseln, dazu müssen Sie jedoch den Namen des anderen Ausführungskontexts kennen, und die verwendete Referenz muss im Bereich liegen. Die Liste **Ziel** bietet besseren Zugriff auf andere Ausführungskontexte.
 
 ## <a name="see-also"></a>Siehe auch
-[Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)  
-[Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)  
-[Produktsupport und Barrierefreiheit](https://visualstudio.microsoft.com/vs/support/)
+- [Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)
+- [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)
+- [Produktsupport und Barrierefreiheit](https://visualstudio.microsoft.com/vs/support/)

@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335981"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627947"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debug live ASP.NET Azure Kubernetes-Dienste mit dem Momentaufnahmedebugger
 
@@ -57,7 +57,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 1. Fügen Sie die Snapshot-Debugger. Sie können eine der Methoden verwenden:
 
     * Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen...** . Wählen Sie die AKS-Ressource für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
-  
+
       ![Starten Sie den Snapshot-Debugger im Menü Debuggen](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **veröffentlichen**, und klicken Sie dann auf die Veröffentlichung auf **Momentaufnahmedebugger Anfügen**. Wählen Sie die AKS-Ressource für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
@@ -67,7 +67,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
     ![Starten Sie den Snapshot-Debugger im F5 Dropdown-Menü](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Mit dem Cloud-Explorer (**Ansicht > Cloud-Explorer**) mit der rechten Maustaste auf die AKS-Ressource für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Momentaufnahmedebugger Anfügen**.
-  
+
       ![Starten Sie den Snapshot-Debugger aus der Cloud-Explorer](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

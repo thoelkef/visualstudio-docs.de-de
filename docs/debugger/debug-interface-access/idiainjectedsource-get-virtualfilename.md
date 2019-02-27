@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb0d0b163830b488c44f1c5e3143e1a87e69d55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618652"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Ruft den Namen keine Datei Quellcode; d. h. Code, der eingefügt wurde.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_virtualFilename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt den Namen, die auf eingefügten Quellcode für den nicht-Datei angegeben.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Ruft den Namen keine Datei Quellcode; d. h. Code, der eingefügt wurde.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_virtualFilename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt den Namen, die auf eingefügten Quellcode für den nicht-Datei angegeben.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

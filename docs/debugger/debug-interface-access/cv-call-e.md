@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316181"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602753"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Gibt die Aufrufkonvention für eine Funktion an.
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_CALL_NEAR_C  
-Gibt an, eine funktionsaufrufkonvention einen Nahen rechts-nach-links-Push verwenden. Die aufrufende Funktion löscht den Stapel.
+CV_CALL_NEAR_C gibt an, eine funktionsaufrufkonvention einen Nahen rechts-nach-links-Push verwenden. Die aufrufende Funktion löscht den Stapel.
 
-CV_CALL_NEAR_FAST  
-Gibt an, eine funktionsaufrufkonvention registriert einen nahezu links-nach-rechts-Push mit. Die aufgerufene Funktion verwendet die Summe der Parameter-Bytes auf den Stapel gelöscht.
+Eine funktionsaufrufkonvention mithilfe einer nahezu links-nach-rechts-push-CV_CALL_NEAR_FAST gibt an, die registriert werden. Die aufgerufene Funktion verwendet die Summe der Parameter-Bytes auf den Stapel gelöscht.
 
-CV_CALL_NEAR_STD  
-Gibt an, eine funktionsaufrufkonvention mit nahezu Standardaufruf (rechts-nach-links-Push).
+CV_CALL_NEAR_STD gibt an, eine funktionsaufrufkonvention mit nahezu Standardaufruf (rechts-nach-links-Push).
 
-CV_CALL_NEAR_SYS  
-Gibt an, eine funktionsaufrufkonvention mithilfe eines near Systemaufrufs.
+Rufen Sie eine funktionsaufrufkonvention mithilfe eines near vom Systems CV_CALL_NEAR_SYS angibt.
 
-CV_CALL_THISCALL  
-Gibt einen Funktionsaufruf Konvention über `this` aufrufen (`this` Zeiger im Register übergeben).
+CV_CALL_THISCALL gibt an, eine funktionsaufrufkonvention mit `this` aufrufen (`this` Zeiger im Register übergeben).
 
-CV_CALL_CLRCALL  
-Gibt an, eine funktionsaufrufkonvention verwendet durch die Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention).
+CV_CALL_CLRCALL gibt an, eine funktionsaufrufkonvention verwendet durch die Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention).
 
 ## <a name="remarks"></a>Anmerkungen
 Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) Methode.
@@ -64,5 +58,5 @@ Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [i
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

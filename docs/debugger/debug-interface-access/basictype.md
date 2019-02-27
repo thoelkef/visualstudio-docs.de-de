@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626114"
 ---
 # <a name="basictype"></a>BasicType
 Gibt an, die grundlegende Symboltyp.
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elements
-btNoType  
-Es ist kein Basistyp angegeben.
+BtNoType kein Basistyp angegeben ist.
 
-btVoid  
-Ist der Basistyp ein `void`.
+BtVoid Basistyp ist eine `void`.
 
-btChar  
-Ist der Basistyp ein `char` (C/C++-Typ).
+BtChar Basistyp ist eine `char` (C/C++-Typ).
 
-btWChar  
-Basistyp ist ein Breitzeichen (Unicode) ist (`WCHAR`).
+BtWChar Basistyp ist ein Breitzeichen (Unicode) ist (`WCHAR`).
 
-btInt  
-Ist der Basistyp `signed int` (C/C++-Typ).
+BtInt Basistyp ist `signed int` (C/C++-Typ).
 
-btUInt  
-Ist der Basistyp `unsigned int` (C/C++-Typ).
+BtUInt Basistyp ist `unsigned int` (C/C++-Typ).
 
-btFloat  
-Basistyp ist eine Gleitkommazahl (`FLOAT`).
+BtFloat Basistyp ist eine Gleitkommazahl (`FLOAT`).
 
-btBCD  
-Basistyp ist eine Dezimalzahl Binär codierte (`BCD`).
+BtBCD Basistyp ist eine Dezimalzahl Binär codierte (`BCD`).
 
-btBool  
-Basistyp ist ein boolescher Wert (`BOOL`).
+BtBool Basistyp ist ein boolescher Wert (`BOOL`).
 
-btLong  
-Ist der Basistyp ein `long int` (C/C++-Typ).
+BtLong Basistyp ist eine `long int` (C/C++-Typ).
 
-btULong  
-Ist der Basistyp ein `unsigned long int` (C/C++-Typ).
+BtULong Basistyp ist ein `unsigned long int` (C/C++-Typ).
 
-btCurrency  
-Basistyp ist die Währung.
+BtCurrency Basistyp ist die Währung.
 
-btDate  
-Basistyp ist die Datum/Uhrzeit (`DATE`).
+BtDate Basistyp ist die Datum/Uhrzeit (`DATE`).
 
-btVariant  
-Basistyp ist eine Variable vom Typ-Struktur (`VARIANT`).
+BtVariant Basistyp ist eine Variable vom Typ-Struktur (`VARIANT`).
 
-btComplex  
-Basistyp ist die komplexe Zahl.
+BtComplex Basistyp ist die komplexe Zahl.
 
-btBit  
-Basistyp ist ein wenig.
+BtBit Basistyp ist ein wenig.
 
-btBSTR  
-Basistyp ist eine grundlegende oder binäre Zeichenfolge (`BSTR`).
+BtBSTR Basistyp ist eine grundlegende oder binäre Zeichenfolge (`BSTR`).
 
-btHresult  
-Ist der Basistyp ein `HRESULT`.
+BtHresult Basistyp ist ein `HRESULT`.
 
 ## <a name="remarks"></a>Anmerkungen
 Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) Methode.
@@ -111,6 +93,6 @@ Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: G
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
