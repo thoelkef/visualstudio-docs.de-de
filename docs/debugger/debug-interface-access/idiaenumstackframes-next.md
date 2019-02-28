@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00be37ffa1724cb6ced2423ea388b2a24dae42f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919967"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619445"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Next(   
-   ULONG             celt,  
-   IDiaStackFrame**  rgelt,  
-   ULONG*            pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- celt  
- [in] Die Anzahl der StackFrame-Elemente im Enumerator abgerufen werden sollen.  
-  
- rgelt  
- [out] Ein Array, das mit dem angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
-  
- pceltFetched  
- [out] Gibt die Anzahl der Stack-Rahmenelemente enthält in der abgerufenen Enumerator zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine weiteren Stapelrahmen. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Next( 
+   ULONG             celt,
+   IDiaStackFrame**  rgelt,
+   ULONG*            pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ celt
+
+[in] Die Anzahl der StackFrame-Elemente im Enumerator abgerufen werden sollen.
+
+ rgelt
+
+[out] Ein Array, das mit dem angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.
+
+ pceltFetched
+
+[out] Gibt die Anzahl der Stack-Rahmenelemente enthält in der abgerufenen Enumerator zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine weiteren Stapelrahmen. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

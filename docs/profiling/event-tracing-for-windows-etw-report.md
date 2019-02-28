@@ -11,30 +11,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33c03a15aa0512db613b1f1a2c85696988e8ba98
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf64c2fae940de74978fb2d6c10ce380ed3958d5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930038"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630183"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
-In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst.  
-  
+In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst.
+
 > [!NOTE]
->  ETW-Berichte werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstellen nicht angezeigt.  
-  
-- Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
-  
-- Weitere Informationen zum Erfassen von ETW-Daten über die Befehlszeilentools [VSPerfCmd](../profiling/vsperfcmd.md) finden Sie unter [Events (Ereignisse)](../profiling/events-vsperfcmd.md).  
-  
-- Der ETW-Bericht wird über den Befehl **VSReport/Summary:ETW** erstellt. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
-  
-|Spalte|Beschreibung|  
-|------------|-----------------|  
-|**Zeitstempel**|Gibt an, wann das Ereignis aufgetreten ist|  
-|**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|  
-|**Thread-ID**|Gibt den Thread an, der das Ereignis generiert hat|  
-|**Beschreibung**|Gibt den Ereignisanbieter an|  
-|**Type**|Gibt den Ereignistyp an|  
+>  ETW-Berichte werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstellen nicht angezeigt.
+
+- Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
+
+- Weitere Informationen zum Erfassen von ETW-Daten über die Befehlszeilentools [VSPerfCmd](../profiling/vsperfcmd.md) finden Sie unter [Events (Ereignisse)](../profiling/events-vsperfcmd.md).
+
+- Der ETW-Bericht wird über den Befehl **VSReport/Summary:ETW** erstellt. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).
+
+|Spalte|Beschreibung|
+|------------|-----------------|
+|**Zeitstempel**|Gibt an, wann das Ereignis aufgetreten ist|
+|**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|
+|**Thread-ID**|Gibt den Thread an, der das Ereignis generiert hat|
+|**Beschreibung**|Gibt den Ereignisanbieter an|
+|**Type**|Gibt den Ereignistyp an|
 |**Eigenschaften**|Eigenschaften des Ereignisses Jedes Ereignis besteht aus einem durch Kommas abgetrennten Name/Wert-Paar in Klammern.|

@@ -8,46 +8,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16d4e45b6ef4e62197941286039575b17fbc655d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f94e574f75ab266a18be3b487d49db59172b6e79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973173"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618717"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen nativen Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile
-In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an einen nativen Dienst angefügt wird, und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.  
+In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an einen nativen Dienst angefügt wird, und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.
 
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-> 
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+>
+>  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
- Während der Profiler an den Dienst angefügt ist, können Sie die Datensammlung anhalten und fortsetzen.  
+ Während der Profiler an den Dienst angefügt ist, können Sie die Datensammlung anhalten und fortsetzen.
 
- Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und explizit beendet werden.  
+ Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und explizit beendet werden.
 
-## <a name="start-the-application-with-the-profiler"></a>Starten der Anwendung mit dem Profiler  
- Wenn Sie den Profiler an einen nativen Dienst anfügen möchten, verwenden Sie die Optionen **VSPerfCmd.exe**[/start](../profiling/start.md) und [/attach](../profiling/attach.md), um den Profiler zu initialisieren und an die Zielanwendung anzufügen. Sie können **/start** und **/attach** sowie die zugehörigen Optionen in einer einzigen Befehlszeile angeben. Sie können auch die Option [/globaloff](../profiling/globalon-and-globaloff.md) hinzufügen, um die Datensammlung beim Starten der Zielanwendung anzuhalten. Anschließend können Sie die Datensammlung mithilfe der Option [/globalon](../profiling/globalon-and-globaloff.md) starten.  
+## <a name="start-the-application-with-the-profiler"></a>Starten der Anwendung mit dem Profiler
+ Wenn Sie den Profiler an einen nativen Dienst anfügen möchten, verwenden Sie die Optionen **VSPerfCmd.exe**[/start](../profiling/start.md) und [/attach](../profiling/attach.md), um den Profiler zu initialisieren und an die Zielanwendung anzufügen. Sie können **/start** und **/attach** sowie die zugehörigen Optionen in einer einzigen Befehlszeile angeben. Sie können auch die Option [/globaloff](../profiling/globalon-and-globaloff.md) hinzufügen, um die Datensammlung beim Starten der Zielanwendung anzuhalten. Anschließend können Sie die Datensammlung mithilfe der Option [/globalon](../profiling/globalon-and-globaloff.md) starten.
 
-#### <a name="to-attach-the-profiler-to-a-native-service"></a>So fügen Sie den Profiler an einen nativen Dienst an  
+#### <a name="to-attach-the-profiler-to-a-native-service"></a>So fügen Sie den Profiler an einen nativen Dienst an
 
-1. Starten Sie den Dienst bei Bedarf.  
+1. Starten Sie den Dienst bei Bedarf.
 
-2. Öffnen Sie ein Eingabeaufforderungsfenster.  
+2. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-3. Starten Sie den Profiler. Typ:  
+3. Starten Sie den Profiler. Typ:
 
-    **VSPerfCmd /start:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - Mit der Option **/start:sample** wird der Profiler initialisiert.  
+   - Mit der Option **/start:sample** wird der Profiler initialisiert.
 
-   - Die Option **/output:**`OutputFile` ist für **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.  
+   - Die Option **/output:**`OutputFile` ist für **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.
 
-     Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
+     Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
    > [!NOTE]
-   >  Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.  
+   >  Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.
 
    | Option | Beschreibung |
    | - | - |
@@ -58,51 +58,51 @@ In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools 
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt. |
 
 
-4. Fügen Sie den Profiler an den Dienst an. Typ:  
+4. Fügen Sie den Profiler an den Dienst an. Typ:
 
-    **VSPerfCmd /attach:** `PID` [`Sample Event`]  
+    **VSPerfCmd /attach:** `PID` [`Sample Event`]
 
-    `PID` gibt die Prozess-ID der Zielanwendung an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
+    `PID` gibt die Prozess-ID der Zielanwendung an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
-    Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Dies entspricht ca. 10 Sekunden auf einem 1-GHz-Prozessor. Sie können eine der folgenden Optionen angeben, um das Taktzyklusintervall zu ändern oder ein anderes Samplingereignis anzugeben.  
+    Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Dies entspricht ca. 10 Sekunden auf einem 1-GHz-Prozessor. Sie können eine der folgenden Optionen angeben, um das Taktzyklusintervall zu ändern oder ein anderes Samplingereignis anzugeben.
 
-   |Samplingereignis|Beschreibung|  
-   |------------------|-----------------|  
-   |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall in die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|  
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|  
-   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|  
-   |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis in den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|  
+   |Samplingereignis|Beschreibung|
+   |------------------|-----------------|
+   |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall in die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|
+   |[/pf](../profiling/pf.md)[**:**`Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis in den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|
 
-## <a name="control-data-collection"></a>Steuern der Datensammlung  
- Wenn die Zielanwendung ausgeführt wird, können Sie mit *VSPerfCmd.exe*-Optionen das Schreiben der Daten in die Profilerdatendatei starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
+## <a name="control-data-collection"></a>Steuern der Datensammlung
+ Wenn die Zielanwendung ausgeführt wird, können Sie mit *VSPerfCmd.exe*-Optionen das Schreiben der Daten in die Profilerdatendatei starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
-#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
+#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+-   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|Beschreibung|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID oder des Prozessnamens angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein Prozess angegeben ist) beendet.|  
+    |Option|Beschreibung|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
+    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID oder des Prozessnamens angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein Prozess angegeben ist) beendet.|
 
-## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
- Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und dann explizit beendet werden. Sie können einen nativen Dienst trennen, für den mithilfe der Samplingmethode ein Profil erstellt wurde, indem Sie den Dienst beenden oder indem Sie die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.  
+## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
+ Um eine Profilerstellungssitzung zu beenden, muss der Profiler vom Dienst getrennt und dann explizit beendet werden. Sie können einen nativen Dienst trennen, für den mithilfe der Samplingmethode ein Profil erstellt wurde, indem Sie den Dienst beenden oder indem Sie die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.
 
-#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
+#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
+1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:
 
-    -   Beenden Sie den Dienst.  
+    -   Beenden Sie den Dienst.
 
-         - oder -   
+         - oder - 
 
-    -   Geben Sie **VSPerfCmd /detach** ein.  
+    -   Geben Sie **VSPerfCmd /detach** ein.
 
-2.  Schließen Sie den Profiler. Typ:  
+2.  Schließen Sie den Profiler. Typ:
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>Siehe auch  
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+## <a name="see-also"></a>Siehe auch
+- [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)
+- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)

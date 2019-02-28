@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692696"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843960"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quellcodedateien und anderen Ressourcen zu organisieren. Projekte werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Quellcode bereitstellen und Verweise auf die Web Services, Datenbanken und andere Ressourcen erstellen.
@@ -35,7 +35,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
  In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein Projekt zu erstellen, die die Projekt-Dateinamenerweiterung *.myproj*. In dieser exemplarischen Vorgehensweise, die aus dem vorhandenen Visual C#-Projektsystem nutzt Teile.
 
 > [!NOTE]
->  Weitere Beispiele von Erweiterungsprojekten finden Sie unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).
+>  Weitere Beispiele von Erweiterungsprojekten finden Sie unter [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples).
 
  In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:
 

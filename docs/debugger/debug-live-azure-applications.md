@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613374"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug live ASP.NET-Azure-apps, die mit dem Momentaufnahmedebugger
 
@@ -63,7 +63,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 2. Fügen Sie die Snapshot-Debugger. Sie können eine der Methoden verwenden:
 
     * Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen...** . Wählen Sie Ihr Projekt, um bereitgestellt wird Azure App Service und Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
-  
+
       ![Starten Sie den Snapshot-Debugger im Menü Debuggen](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **veröffentlichen**, und klicken Sie dann auf die Veröffentlichung auf **Momentaufnahmedebugger Anfügen**. Wählen Sie Ihr Projekt, um bereitgestellt wird Azure App Service und Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
@@ -73,7 +73,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
     ![Starten Sie den Snapshot-Debugger im F5 Dropdown-Menü](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Mit dem Cloud-Explorer (**Ansicht > Cloud-Explorer**), mit der rechten Maustaste in das Projekt, um bereitgestellt wird Azure App Service und wählen Sie ein Azure Storage-Konto, und klicken Sie dann auf **Momentaufnahmedebugger Anfügen**.
-  
+
       ![Starten Sie den Snapshot-Debugger aus der Cloud-Explorer](../debugger/media/snapshot-launch.png)
 
     Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen**, Sie werden aufgefordert, um die websiteerweiterung des Momentaufnahmedebuggers in Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.

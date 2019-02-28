@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764577"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841804"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 2.  Wählen Sie ein geeignetes Gerät oder Emulatorziel, und starten Sie die App durch Drücken der Taste F5.
 
-3.  Geben Sie auf dem Gerät oder im Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld (z. B.: 60601), und drücken Sie die **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
+3.  Geben Sie auf dem Gerät oder im Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld ein (zum Beispiel: 60601), und drücken Sie dann **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
 
      ![Wetter-App für Android und Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 2.  Starten Sie die App durch Drücken der Taste "F5".
 
-3.  Geben Sie im Windows Phone-Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld für die Postleitzahl ein (zum Beispiel: 60601), und drücken Sie die **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
+3.  Geben Sie im Windows Phone-Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld ein (zum Beispiel: 60601), und drücken Sie **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
 
      ![Windows-Version der ausgeführten App](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
  Freigegebener Code in einer PCL ist plattformneutral, da die PCL einmal kompiliert und in alle plattformspezifischen App-Pakete aufgenommen wird. Wenn Sie freigegebenen Code schreiben möchten, der eine bedingte Kompilierung verwendet, um plattformspezifischen Code zu isolieren, können Sie ein *freigegebenes* Projekt verwenden. Weitere Informationen finden Sie unter [Code Sharing Options (Codefreigabeoptionen)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Siehe auch
- [Xamarin-Entwicklerwebsite](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift und C# Schnellreferenzposter](http://aka.ms/scposter)
+ [Xamarin-Entwicklerwebsite](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift und C# Schnellreferenzposter](https://aka.ms/scposter)

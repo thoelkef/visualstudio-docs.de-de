@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603230"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Vorgehensweise: Konfigurieren von Zielen und Aufgaben
 Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.
@@ -108,4 +108,4 @@ Die Parameter `MSBuildRuntime` und `MSBuildArchitecture` bieten die flexibelste 
 > Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der *Programme*) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht. Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.
 
 ## <a name="see-also"></a>Siehe auch
-[Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)
+- [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)

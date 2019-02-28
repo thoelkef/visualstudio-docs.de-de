@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918563"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716518"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C++ mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
 1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
@@ -47,7 +47,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
     durch den folgenden (`#include "stdafx.h"` nicht entfernen):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
     > [!TIP]
     > Verwenden Sie bei Breakpoints in einer Schleife oder Rekursion oder bei sehr vielen Breakpoints, die Sie häufig schrittweise durchlaufen, einen [bedingten Breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression), damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Wenn Sie mit einem bedingten Breakpoint arbeiten, sparen Sie Zeit und erleichtern sich möglicherweise das Debuggen von Problemen, die nur schwierig zu reproduzieren sind.
 
-    Wenn Sie versuchen, in C++ Fehler zu debuggen, die im Zusammenhang mit dem Arbeitsspeicher stehen, können Sie Breakpoints auch dazu verwenden, Adresswerte (suchen Sie nach NULL-Werten) und die Anzahl von Verweisen zu untersuchen. 
+    Wenn Sie versuchen, in C++ Fehler zu debuggen, die im Zusammenhang mit dem Arbeitsspeicher stehen, können Sie Breakpoints auch dazu verwenden, Adresswerte (suchen Sie nach NULL-Werten) und die Anzahl von Verweisen zu untersuchen.
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -110,7 +110,7 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
     ![Datentipp anzeigen](../debugger/media/dbg-qs-data-tip.png "View a datatip")
 
-    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
+    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
 2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c1`-Objekts einzusehen.
 

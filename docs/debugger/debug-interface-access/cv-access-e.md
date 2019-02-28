@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5fa908692167b49c6bb92c892fb143b882d231
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318575"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605473"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Gibt den Bereich, Sichtbarkeit (Zugriffsebene) von Memberfunktionen und Variablen.
@@ -33,14 +33,11 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_private  
-Element verfügt über privaten Zugriff.
+CV_private bindflags privaten Zugriff.
 
-CV_protected  
-Member hat Zugriff geschützt werden.
+CV_protected Member hat Zugriff geschützt werden.
 
-CV_public  
-Element verfügt über öffentlichen Zugriff.
+CV_public Element verfügt über öffentlichen Zugriff.
 
 ## <a name="remarks"></a>Anmerkungen
 Die `friend` Zugriffsspezifizierer ist hier nicht enthalten, da sie in der Regel von nicht-Memberfunktionen verwendet wird, die Zugriff auf private oder geschützte Elemente der Klasse haben. Verwenden der [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) Methode zum Suchen von Symbolen mit `SymTagFriend` Zugriff.
@@ -49,6 +46,6 @@ Die `friend` Zugriffsspezifizierer ist hier nicht enthalten, da sie in der Regel
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)  
-[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
+- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

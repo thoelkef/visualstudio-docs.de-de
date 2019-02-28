@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853429"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610462"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
 Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.
@@ -67,5 +67,5 @@ In diesem Beispiel lautet die entsprechende Befehlszeile:
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)  
-[Elemente](../msbuild/msbuild-items.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Elemente](../msbuild/msbuild-items.md)

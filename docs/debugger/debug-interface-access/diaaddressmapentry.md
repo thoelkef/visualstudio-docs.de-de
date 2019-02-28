@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318640"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637086"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Beschreibt einen Eintrag in einer-Adresszuordnung an.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elements
-`rva`  
-Eine relative virtuelle Adresse (RVA) in Abbildung A.
+`rva` Eine relative virtuelle Adresse (RVA) in Abbildung A.
 
-`rvaTo`  
-Die relative virtuelle Adresse `rva` in Abbildung b zugeordnet ist
+`rvaTo` Die relative virtuelle Adresse `rva` in Abbildung b zugeordnet ist
 
 ## <a name="remarks"></a>Anmerkungen
 Eine Adresszuordnung enthält eine Übersetzung aus einem Image-Layout (A) in einem anderen (B). Ein Array von `DiaAddressMapEntry` Strukturen, sortiert nach `rva` definiert eine Adresszuordnung.
@@ -55,5 +53,5 @@ Um eine Adresse zu übersetzen `addrA`, in der Abbildung ein in eine Adresse `ad
 Header: dia2.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

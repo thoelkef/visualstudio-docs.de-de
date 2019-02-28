@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317769"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720184"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-Funktionen (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher ve
 
 Diese Option ist nicht standardmäßig aktiviert, aber IntelliTrace kann Methodenaufrufe zusammen mit Ereignissen aufzeichnen. Sammeln von methodenbezogenen aktivieren Aufrufe finden Sie unter **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Ereignisse und Aufrufinformationen (nur verwaltet)**.
 
-Es ist nicht Informationen zu den derzeit für .NET Core und ASP.NET Core-apps verfügbar. 
+Es ist nicht Informationen zu den derzeit für .NET Core und ASP.NET Core-apps verfügbar.
 
 Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in Ihrem Code schrittweise durchlaufen. IntelliTrace zeichnet Daten wie z. B. Methodennamen, Methodeneinstiegs- und -Endpunkte sowie bestimmte Parameter- und Rückgabewerte auf.
 

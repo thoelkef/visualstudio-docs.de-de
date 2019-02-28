@@ -18,57 +18,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577a87d9faccbb110011eb1fe9bdc6ddb6b3d732
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919368"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653871"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile-Aufgabe
-Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.  
-  
-## <a name="task-parameters"></a>Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `WriteLinestoFile` -Aufgabe beschrieben.  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|`File`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Datei an, in die Elemente geschrieben werden sollen|  
-|`Lines`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Elemente an, die in die Datei geschrieben werden sollen|  
-|`Overwrite`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, überschreibt die Aufgabe den vorhandenen Inhalt in der Datei|  
-|`Encoding`|Optionaler `String` -Parameter.<br /><br /> Wählt die Zeichencodierung aus, z.B. „Unicode“  Siehe auch <xref:System.Text.Encoding>.|  
-|`WriteOnlyWhenDifferent`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die angegebene Zieldatei (sofern vorhanden) zuerst gelesen, um den Inhalt mit der Ausgabe des Tasks zu vergleichen. Wenn beides identisch ist, wird die Datei nicht auf den Datenträger geschrieben, und der Zeitstempel bleibt erhalten.|  
+Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.
 
-## <a name="remarks"></a>Hinweise  
- Wenn `Overwrite` `true` ist, wird eine neue Datei erstellt. Anschließend werden die Inhalte in die Datei geschrieben und diese wird geschlossen. Ist die Zieldatei bereits vorhanden, wird sie überschrieben. Wenn `Overwrite` `false` ist, wird der Inhalt an die Datei angefügt und die Zieldatei erstellt, wenn sie nicht bereits vorhanden ist.  
-  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel verwendet die Aufgabe `WriteLinesToFile`, um Pfade der Elemente in der `MyItems`-Elementauflistung in die von der `MyTextFile`-Elementauflistung angegebene Datei zu schreiben.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-        <MyItems Include="*.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="WriteToFile">  
-        <WriteLinesToFile  
-            File="@(MyTextFile)"  
-            Lines="@(MyItems)"  
-            Overwrite="true"  
-            Encoding="Unicode"/>  
-    </Target>  
-  
-</Project>  
+## <a name="task-parameters"></a>Aufgabenparameter
+ In der folgenden Tabelle werden die Parameter der `WriteLinestoFile` -Aufgabe beschrieben.
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`File`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Datei an, in die Elemente geschrieben werden sollen|
+|`Lines`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Elemente an, die in die Datei geschrieben werden sollen|
+|`Overwrite`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, überschreibt die Aufgabe den vorhandenen Inhalt in der Datei|
+|`Encoding`|Optionaler `String` -Parameter.<br /><br /> Wählt die Zeichencodierung aus, z.B. „Unicode“  Siehe auch <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die angegebene Zieldatei (sofern vorhanden) zuerst gelesen, um den Inhalt mit der Ausgabe des Tasks zu vergleichen. Wenn beides identisch ist, wird die Datei nicht auf den Datenträger geschrieben, und der Zeitstempel bleibt erhalten.|
+
+## <a name="remarks"></a>Anmerkungen
+ Wenn `Overwrite` `true` ist, wird eine neue Datei erstellt. Anschließend werden die Inhalte in die Datei geschrieben und diese wird geschlossen. Ist die Zieldatei bereits vorhanden, wird sie überschrieben. Wenn `Overwrite` `false` ist, wird der Inhalt an die Datei angefügt und die Zieldatei erstellt, wenn sie nicht bereits vorhanden ist.
+
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel verwendet die Aufgabe `WriteLinesToFile`, um Pfade der Elemente in der `MyItems`-Elementauflistung in die von der `MyTextFile`-Elementauflistung angegebene Datei zu schreiben.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+        <MyItems Include="*.cs"/>
+    </ItemGroup>
+
+    <Target Name="WriteToFile">
+        <WriteLinesToFile
+            File="@(MyTextFile)"
+            Lines="@(MyItems)"
+            Overwrite="true"
+            Encoding="Unicode"/>
+    </Target>
+
+</Project>
 ```
 
 In diesem Beispiel wird eine Eigenschaft mit eingebettetem Zeilenvorschub verwendet, um Textdateien zu schreiben, die aus mehreren Zeilen bestehen. Wenn ein Eintrag in `Lines` eingebettete Zeilenumbruchzeichen aufweist, werden die neuen Zeilen in die Ausgabedatei eingefügt. Dadurch können Sie auf Eigenschaften verweisen, die aus mehreren Zeilen bestehen.
 
-```xml  
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -89,8 +89,8 @@ dotnet %~dp0$(AssemblyName).dll %*
         Lines="$(LauncherCmd)" />
   </Target>
 </Project>
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

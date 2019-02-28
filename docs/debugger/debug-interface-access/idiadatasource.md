@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c7c2edc71843377c4213764dfb30727a14d4b5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987599"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612360"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Initiiert den Zugriff auf eine Quelle für die Debugsymbole.
@@ -40,7 +40,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaDataSource`.
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bereitet die Debug-Daten in ein Zugriff erfolgt über einen in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Wird eine Sitzung für das Abfragen von Symbolen geöffnet.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Aufrufen einer der Load-Methoden von der `IDiaDataSource` Schnittstelle öffnet die Symbol-Quelle. Einem erfolgreichen Aufruf der [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) Methode gibt ein [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle, die Abfragen der Datenquelle unterstützt. Wenn die Load-Methode einen Datei-bezogener Fehler zurückgibt und dann die [idiadatasource:: Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) Methodenrückgabewert Wert enthält den Dateinamen, die dem Fehler zugeordnet.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
@@ -70,4 +70,4 @@ Bibliothek: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

@@ -22,62 +22,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f185aebdd23bffbcf7b793a9e3fbda4a0b55271
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959368"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689290"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
-Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen. Sie müssen nicht in inclose **#ifdef**s, da sie nicht mehr automatisch in Ihrer Version angezeigt erstellen, wenn **_DEBUG** ist nicht definiert.  
-  
-|Makro|Beschreibung|  
-|-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|  
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**. Bei diesen Makros wird jedoch zusätzlich der Name der Datei und die Zeilennummer ausgegeben, in der sich das Makro befindet.|  
-  
- Betrachten Sie das folgende Beispiel:  
-  
+Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen. Sie müssen nicht in inclose **#ifdef**s, da sie nicht mehr automatisch in Ihrer Version angezeigt erstellen, wenn **_DEBUG** ist nicht definiert.
+
+|Makro|Beschreibung|
+|-----------|-----------------|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**. Bei diesen Makros wird jedoch zusätzlich der Name der Datei und die Zeilennummer ausgegeben, in der sich das Makro befindet.|
+
+ Betrachten Sie das folgende Beispiel:
+
 ```cpp
-#ifdef _DEBUG  
-    if ( someVar > MAX_SOMEVAR )  
-        printf( "OVERFLOW! In NameOfThisFunc( ),  
-               someVar=%d, otherVar=%d.\n",  
-               someVar, otherVar );  
-#endif  
-```  
-  
- Durch diesen Code werden die Werte von `someVar` und `otherVar` in **stdout** ausgegeben. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:  
-  
+#ifdef _DEBUG
+    if ( someVar > MAX_SOMEVAR )
+        printf( "OVERFLOW! In NameOfThisFunc( ),
+               someVar=%d, otherVar=%d.\n",
+               someVar, otherVar );
+#endif
+```
+
+ Durch diesen Code werden die Werte von `someVar` und `otherVar` in **stdout** ausgegeben. Sie können den folgenden Aufruf von `_RPTF2` verwenden, um dieselben Werte und zusätzlich Dateinamen und Zeilennummer auszugeben:
+
 ```cpp
-if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
-```  
-  
-Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. Beispielsweise könnten Sie in eine der Headerdateien mit dem folgenden Beispiel vergleichbaren Code einfügen, durch den ein Makro mit dem Namen **ALERT_IF2** definiert wird:  
-  
+if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
+```
+
+Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. Beispielsweise könnten Sie in eine der Headerdateien mit dem folgenden Beispiel vergleichbaren Code einfügen, durch den ein Makro mit dem Namen **ALERT_IF2** definiert wird:
+
 ```cpp
-#ifndef _DEBUG                  /* For RELEASE builds */  
-#define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
-#else                           /* For DEBUG builds   */  
-#define  ALERT_IF2(expr, msg, arg1, arg2) \  
-    do { \  
-        if ((expr) && \  
-            (1 == _CrtDbgReport(_CRT_ERROR, \  
-                __FILE__, __LINE__, msg, arg1, arg2))) \  
-            _CrtDbgBreak( ); \  
-    } while (0)  
-#endif  
-```  
-  
- Ein Aufruf von **ALERT_IF2** möglich, dass alle Funktionen von der **Printf** Code:  
-  
+#ifndef _DEBUG                  /* For RELEASE builds */
+#define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)
+#else                           /* For DEBUG builds   */
+#define  ALERT_IF2(expr, msg, arg1, arg2) \
+    do { \
+        if ((expr) && \
+            (1 == _CrtDbgReport(_CRT_ERROR, \
+                __FILE__, __LINE__, msg, arg1, arg2))) \
+            _CrtDbgBreak( ); \
+    } while (0)
+#endif
+```
+
+ Ein Aufruf von **ALERT_IF2** möglich, dass alle Funktionen von der **Printf** Code:
+
 ```cpp
-ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
-someVar=%d, otherVar=%d.\n", someVar, otherVar );  
-```  
-  
- Sie können ganz einfach ein benutzerdefiniertes Makro, um mehr oder weniger Informationen an verschiedenen Ziele melden ändern. Dieser Ansatz ist besonders nützlich, da es sich bei steigenden Debuganforderungen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)
+ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
+someVar=%d, otherVar=%d.\n", someVar, otherVar );
+```
+
+ Sie können ganz einfach ein benutzerdefiniertes Makro, um mehr oder weniger Informationen an verschiedenen Ziele melden ändern. Dieser Ansatz ist besonders nützlich, da es sich bei steigenden Debuganforderungen.
+
+## <a name="see-also"></a>Siehe auch
+- [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)

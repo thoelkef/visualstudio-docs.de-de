@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602038"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841728"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602038"
 ## <a name="create-a-sharepoint-project"></a>Erstellen Sie ein SharePoint-Projekt
  Erstellen Sie zunächst eine SharePoint-Projekt.
 
-#### <a name="to-create-a-sharepoint-project"></a>So erstellen Sie ein SharePoint-Projekt
+### <a name="to-create-a-sharepoint-project"></a>So erstellen Sie ein SharePoint-Projekt
 
 1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.
 
@@ -70,13 +70,13 @@ ms.locfileid: "56602038"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Fügen Sie eine Funktion und den Funktionsereignisempfänger hinzu
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>So fügen Sie eine Funktion und den Funktionsereignisempfänger hinzu
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>So fügen Sie ein Feature und den Funktionsereignisempfänger hinzu
 
 1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Features** Knoten, wählen Sie **Feature hinzufügen**, und behalten Sie den Standardwert für den Namen **Feature1**.
 
 2.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignisempfänger hinzufügen**.
 
-     Dadurch wird der Funktion eine Codedatei mit verschiedenen auskommentierten Ereignishandlern hinzugefügt, und die Datei wird für die Bearbeitung geöffnet.
+     Dadurch wird dem Feature eine Codedatei mit verschiedenen auskommentierten Ereignishandlern hinzugefügt, und die Datei wird für die Bearbeitung geöffnet.
 
 3.  Fügen Sie in der Ereignisempfängerklasse die folgenden Variablendeklarationen hinzu.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602038"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Konfigurieren und Bereitstellen der SharePoint-Anwendung
  Da das SharePoint-Projekt nun bereit ist, können Sie es konfigurieren und für den SharePoint-Server bereitstellen.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>So konfigurieren und stellen Sie die SharePoint-Anwendung bereit
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>So konfigurieren und stellen Sie die SharePoint-Anwendung bereit
 
 1.  Auf der **analysieren** Menü wählen **Leistungs-Assistenten starten**.
 
@@ -205,16 +205,16 @@ ms.locfileid: "56602038"
 
 4.  Auf Seite drei von der **Leistungs-Assistent**Deaktivieren der **Profilerstellung für Ebeneninteraktion aktivieren** aus, und wählen Sie dann die **Weiter** Schaltfläche.
 
-     Die Funktion „Profilerstellung für Ebeneninteraktion“ (Tier Interaction Profiling, TIP) ist für das Messen der Leistung von Anwendungen, die Datenbanken abfragen, sowie für das Anzeigen der Anzahl der Häufigkeit, wie oft eine Webseite angefordert wird, hilfreich. Da diese Daten für dieses Beispiel nicht erforderlich sind, aktivieren wir diese Funktion nicht.
+     Das Feature Profilerstellung für Ebeneninteraktion (Tier Interaction Profiling, TIP) ist für das Messen der Leistung von Anwendungen, die Datenbanken abfragen, sowie für das Anzeigen der Anzahl der Häufigkeit, wie oft eine Webseite angefordert wird, hilfreich. Da diese Daten für dieses Beispiel nicht erforderlich sind, aktivieren wir dieses Feature nicht.
 
 5.  Auf Seite vier von der **Leistungs-Assistent**, lassen Sie die **profilerstellung nach Abschluss des Assistenten starten** ausgewählt, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
      Der Assistent ermöglicht die anwendungsprofilerstellung auf dem Server, zeigt der **Leistungs-Explorer** Fenster erstellt, bereitgestellt und die SharePoint-Anwendung ausgeführt wird.
 
 ## <a name="run-the-sharepoint-application"></a>Führen Sie die SharePoint-Anwendung
- Aktivieren Sie die Funktion in SharePoint, wodurch die Auslösung des `FeatureActivation`-Ereigniscodes ausgelöst wird.
+ Aktivieren Sie das Feature in SharePoint, wodurch die Auslösung des `FeatureActivation`-Ereigniscodes ausgelöst wird.
 
-#### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus
+### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus
 
 1.  Öffnen Sie in SharePoint die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602038"
 ## <a name="view-and-interpret-the-profile-results"></a>Anzeigen und Interpretieren der Ergebnisse des Profils
  Zeigen Sie nun nach der Ausführung und Profilerstellung der SharePoint-Anwendung die Testergebnisse an.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Zum Anzeigen und Interpretieren der Ergebnisse des Profils
+### <a name="to-view-and-interpret-the-profile-results"></a>Zum Anzeigen und Interpretieren der Ergebnisse des Profils
 
 1.  In der **Funktionen, die meisten Einzelaufgaben durchführen** Abschnitt der Beispiel-Berichterstellungsberichts, beachten Sie, dass `TimeCounter` wird am oberen Rand der Liste.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602038"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Korrigieren Sie den Code und die Anwendung reprofile
  Beheben Sie nun nach Ermittlung der fehlerhaften Funktion in der SharePoint-Anwendung das Problem.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>So beheben Sie den Code und nehmen eine erneute Profilerstellung der Anwendung vor
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>So beheben Sie den Code und nehmen eine erneute Profilerstellung der Anwendung vor
 
 1.  Kommentieren Sie im Funktionsereignisempfänger-Code den `TimeCounter`-Methodenaufruf in `FeatureActivated` aus, um zu verhindern, dass er aufgerufen wird.
 

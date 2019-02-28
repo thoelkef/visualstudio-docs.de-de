@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042061"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696739"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -27,7 +27,7 @@ Die hier beschriebenen Features gelten für C#, C++, Visual Basic, JavaScript un
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Breakpoints und Starten des Debuggers
 
-Sie müssen Ihre App mit dem an den App-Prozess angefügten Debugger starten, um diese zu debuggen. Am häufigsten wird hierfür die Taste **F5** (alternativ: **Debuggen > Debuggen starten**) verwendet. Bisher haben Sie jedoch wahrscheinlich noch keine Breakpoints für die Untersuchung Ihres App-Codes festgelegt, deshalb werden Sie dies tun, bevor Sie mit dem Debuggen beginnen. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+Sie müssen Ihre App mit dem an den App-Prozess angefügten Debugger starten, um diese zu debuggen. Am häufigsten wird hierfür die Taste **F5** (alternativ: **Debuggen > Debuggen starten**) verwendet. Bisher haben Sie jedoch wahrscheinlich noch keine Breakpoints für die Untersuchung Ihres App-Codes festgelegt, deshalb werden Sie dies tun, bevor Sie mit dem Debuggen beginnen. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
 Wenn Sie eine Datei im Code-Editor geöffnet haben, können Sie einen Breakpoint festlegen, indem Sie auf den Rand links neben einer Codezeile klicken.
 

@@ -11,37 +11,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21beeecd4910f2b2f4b5c47ecb694abd31ecedd5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944994"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713684"
 ---
 # <a name="thread-properties-dialog-box"></a>Dialogfeld "Threadeigenschaften"
-Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread zu erhalten. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Ansicht "Threads"](../debugger/threads-view.md) Fenster, oder Sie öffnen [Meldungsansicht](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
-  
- Die **allgemeine** Registerkarte ist die einzige Registerkarte angezeigt. Auf Windows 98 und Windows 95-Betriebssystemen ist eine geänderte Version des auf dieser Registerkarte angezeigt.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"](../debugger/general-tab-thread-properties-dialog-box.md)  
- Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu den ausgewählten Thread.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Dialogfeld "Threadsuche"](../debugger/thread-search-dialog-box.md)  
- Verwendet, um den Knoten für einen bestimmten Thread in der Ansicht "Threads" suchen.  
-  
- [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.  
-  
- [Suchen nach einem Thread in der Ansicht "Threads"](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Erläutert, wie Sie einen bestimmten Thread in der Threadansicht.  
-  
- [Threads View (Threadansicht)](../debugger/threads-view.md)  
- Zeigt eine Strukturansicht der aktiven Threads.  
-  
- [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
-  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.
+Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread zu erhalten. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Ansicht "Threads"](../debugger/threads-view.md) Fenster, oder Sie öffnen [Meldungsansicht](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.
+
+ Die **allgemeine** Registerkarte ist die einzige Registerkarte angezeigt. Auf Windows 98 und Windows 95-Betriebssystemen ist eine geänderte Version des auf dieser Registerkarte angezeigt.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Registerkarte "Allgemein", im Dialogfeld "Eigenschaften" Thread](../debugger/general-tab-thread-properties-dialog-box.md) mithilfe dieses Dialogfelds finden Sie weitere Informationen zu den ausgewählten Thread.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Meldungssuche (Dialogfeld) Thread](../debugger/thread-search-dialog-box.md) verwendet, um den Knoten für einen bestimmten Thread in der Ansicht "Threads" suchen.
+
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+
+ [Suchen nach einem Thread in der Ansicht "Threads"](../debugger/how-to-search-for-a-thread-in-threads-view.md) wird erläutert, wie Sie einen bestimmten Thread in der Threadansicht.
+
+ [Threadansicht](../debugger/threads-view.md) zeigt eine Strukturansicht der aktiven Threads.
+
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.

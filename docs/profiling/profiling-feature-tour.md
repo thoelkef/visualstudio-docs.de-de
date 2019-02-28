@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000834"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611918"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -149,22 +149,22 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 ![Tool „Leistungs-Explorer“](../profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
 
-## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
+## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?
 
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
-  
-|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
-|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
-|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein| 
+|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
+|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein|
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|ja|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
 |[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>Siehe auch
+- [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

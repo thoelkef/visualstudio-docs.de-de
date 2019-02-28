@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5727232b90955d660be88f57327e058d6969c8
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ede7789fcdba63595cecd6426c8f3ca1a4048e07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227523"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631756"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Listet die verschiedenen Abschnitt Beiträge, die in der Datenquelle enthalten sind.
@@ -107,6 +107,6 @@ Bibliothek: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

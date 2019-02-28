@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb6e7332386e7dc22465eaffedd01a969673dc3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335479"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607914"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
@@ -96,8 +96,8 @@ Momentaufnahme Debuggen und Application Insights basieren auf einer ICorProfiler
 
 ## <a name="see-also"></a>Siehe auch
 
-[Debuggen in Visual Studio](../debugger/index.md)  
-[Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)  
-[Debug live ASP.NET Azure virtuelle Machines\Virtual Computer Skalierungsgruppen mit der Snapshot-Debugger](../debugger/debug-live-azure-virtual-machines.md)  
-[Debug live ASP.NET-Azure-Kubernetes, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)  
-[Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)  
+- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)
+- [Debug live ASP.NET Azure virtuelle Machines\Virtual Computer Skalierungsgruppen mit der Snapshot-Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Debug live ASP.NET-Azure-Kubernetes, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)
+- [Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)

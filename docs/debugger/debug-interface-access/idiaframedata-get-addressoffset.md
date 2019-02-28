@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ba0a925f74bec1c4bd14d20bda13260f2083d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4460f5102fbb5fd62f332f41a2901d1759731e7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596892"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-Ruft den Zeitzonenoffset-Teil der Codeadresse für den Frame ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt den Zeitzonenoffset-Teil der Codeadresse für den Frame zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Ruft den Zeitzonenoffset-Teil der Codeadresse für den Frame ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt den Zeitzonenoffset-Teil der Codeadresse für den Frame zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

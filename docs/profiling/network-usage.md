@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23db31cc0ede03072d42a36fb089038bb097e9ae
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606094"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analysieren der Netzwerkauslastung in UWP-Apps
 Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.Web.Http-API](/uwp/api/windows.web.http) Daten zu Netzwerkoperationen. Durch Analysieren der Daten können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung in den Griff bekommen.
@@ -74,7 +74,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 ## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Visual Studio blog: Introducing Visual Studio's network inspector (Visual Studi-Blog: Einführung in die Netzwerkinspektion von Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=535022)
+- [Visual Studio-Blog: Introducing Visual Studio's network inspector (Visual Studi-Blog: Einführung in die Netzwerkinspektion von Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=535022)
 - [Channel 9-Video: VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Profilerstellung in Visual Studio](../profiling/index.md)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

@@ -3,19 +3,17 @@ title: Neuerungen in Visual Studio-Abonnements
 description: Hier erfahren Sie, welche neuen und aktualisierten Features Sie für die Verwaltung von Visual Studio-Abonnements verwenden können.
 ms.custom: ''
 ms.date: 06/25/2018
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003411"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842064"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 

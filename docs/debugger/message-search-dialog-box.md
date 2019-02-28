@@ -10,57 +10,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53326df5a1f868bda4ee2843ddf658b87176b8b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984872"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691786"
 ---
 # <a name="message-search-dialog-box"></a>Meldungssuche (Dialogfeld)
-Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für eine bestimmte Nachricht in [Meldungsansicht](../debugger/messages-view.md). Verschieben Sie den Fokus auf ein Nachrichten anzeigen, um das Dialogfeld anzuzeigen. Wählen Sie dann **Nachricht suchen** aus der **Suche** Menü.  
-  
- Die folgenden Einstellungen sind verfügbar:  
-  
- **Suchtool**  
- Das Drag & Drop-Tool verwendet, um ein Fenster auszuwählen.  
-  
- **Spy++ ausblenden**  
- Entfernt das Hauptfenster Spy++ und behält die **Meldungssuche** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen.  
-  
- **Handle**  
- Die eindeutige ID der Nachricht, die gesucht werden soll.  
-  
- **Type**  
- Der Nachrichtentyp für die Suche.  
-  
- **Meldung**  
- Die Nachrichten-ID für die Suche.  
-  
- **Suchrichtung nach oben oder unten**  
- Die erste Richtung für die Suche.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Suchen nach einer Nachricht in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Erläutert, wie Sie eine bestimmte Nachricht in der Ansicht "Nachrichten".  
-  
- [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md)  
- Erläutert das Öffnen der Ansicht "Nachrichten" im Dialogfeld "Fenster Suchen".  
-  
- [Meldungsansicht](../debugger/messages-view.md)  
- Zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.  
-  
- [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
-  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
-  
- [Dialogfeld "Meldungsoptionen"](../debugger/message-options-dialog-box.md)  
- Wird verwendet, um auszuwählen, welche Nachrichten in der Ansicht "Nachrichten" aufgeführt sind.  
-  
- [Dialogfeld "Meldungseigenschaften"](../debugger/message-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften einer Nachricht in der Ansicht "Nachrichten" ausgewählt.  
-  
- [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für eine bestimmte Nachricht in [Meldungsansicht](../debugger/messages-view.md). Verschieben Sie den Fokus auf ein Nachrichten anzeigen, um das Dialogfeld anzuzeigen. Wählen Sie dann **Nachricht suchen** aus der **Suche** Menü.
+
+ Die folgenden Einstellungen sind verfügbar:
+
+ **Suchtool** das Drag & Drop-Tool verwendet, um ein Fenster auszuwählen.
+
+ **Ausblenden von Spy++-** Spy++-Hauptfenster entfernt und behält die **Meldungssuche** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen.
+
+ **Behandeln** die eindeutige ID der zu suchenden Meldung.
+
+ **Typ** Typ der zu suchenden.
+
+ **Nachricht** die Nachrichten-ID für die Suche.
+
+ **Suchen Sie nach oben oder unten Richtung** die anfangsrichtung für die Suche.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Suchen nach einer Nachricht in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md) wird erläutert, wie Sie eine bestimmte Nachricht in der Ansicht "Nachrichten".
+
+ [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md) wird erläutert, wie im Dialogfeld "Fenster Suchen" Ansicht "Nachrichten" zu öffnen.
+
+ [Meldungsansicht](../debugger/messages-view.md) zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.
+
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+
+ [Optionen (Dialogfeld) Nachricht](../debugger/message-options-dialog-box.md) verwendet, um auszuwählen, welche Nachrichten in der Ansicht "Nachrichten" aufgeführt sind.
+
+ [Im Dialogfeld Eigenschaften von Nachrichten](../debugger/message-properties-dialog-box.md) verwendet zum Anzeigen der Eigenschaften einer Nachricht in der Ansicht "Nachrichten" ausgewählt.
+
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.

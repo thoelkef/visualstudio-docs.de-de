@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ca047f29f1112fc551188548dc98c60885f83d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1205ede5e91e33b9e89f46f46e03ffece2554da
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019436"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608967"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht
-Sie können die Daten filtern, die in Leistungsberichten angezeigt werden, indem Sie ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht angeben. Wenn Sie Berichte filtern, wird die Profilerstellungs-Datendatei erneut analysiert, damit sie nur das von Ihnen angegebene Zeitsegment enthält.  
-  
-### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Filtern eines Profilerstellungsberichts aus dem Zeitachsendiagramm der Zusammenfassungsansicht  
-  
-1.  Klicken Sie im Zeitachsendiagramm der Zusammenfassungsansicht auf einen Punkt der Zeitachse, halten Sie die Maustaste gedrückt, und ziehen Sie die Maus zu einen anderem Punkt auf der Zeitachse.  
-  
-     Die Region, die Sie markiert haben, wird schattiert.  
-  
+Sie können die Daten filtern, die in Leistungsberichten angezeigt werden, indem Sie ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht angeben. Wenn Sie Berichte filtern, wird die Profilerstellungs-Datendatei erneut analysiert, damit sie nur das von Ihnen angegebene Zeitsegment enthält.
+
+### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Filtern eines Profilerstellungsberichts aus dem Zeitachsendiagramm der Zusammenfassungsansicht
+
+1.  Klicken Sie im Zeitachsendiagramm der Zusammenfassungsansicht auf einen Punkt der Zeitachse, halten Sie die Maustaste gedrückt, und ziehen Sie die Maus zu einen anderem Punkt auf der Zeitachse.
+
+     Die Region, die Sie markiert haben, wird schattiert.
+
 2.  Klicken Sie auf **Nach Auswahl filtern**.

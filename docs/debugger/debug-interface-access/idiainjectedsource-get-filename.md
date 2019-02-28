@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a96f1aac998c95f467fb644d67a49535749df4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26c68e4f58706fe9d65738e2e58b6ba011999e6a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619250"
 ---
 # <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
-Ruft den Dateinamen für die Quelle ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_filename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- pRetVal  
- [out] Gibt den Dateinamen für die Quelle zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Ruft den Dateinamen für die Quelle ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_filename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ pRetVal
+
+[out] Gibt den Dateinamen für die Quelle zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

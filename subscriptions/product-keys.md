@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803823"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843718"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -47,9 +45,9 @@ Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abon
 
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
 Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
-    
+
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
 

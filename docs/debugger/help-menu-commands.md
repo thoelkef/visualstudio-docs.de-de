@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec2b4c518223d308f27a853c28c97b99b5ff7188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917472"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680008"
 ---
 # <a name="help-menu-commands"></a>Befehle im Menü "Hilfe"
-Die **Hilfe** Menü enthält Befehle zum Öffnen der Hilfedateien.  
-  
- **Index**  
- Öffnet das Inhaltsverzeichnis für die Spy++-Hilfe.  
-  
- **Hilfe verwenden**  
- Öffnet eine Hilfedatei, die beschreibt, wie Sie mit der Hilfe.  
-  
- **Info**  
- Zeigt die Version und urheberrechtliche Informationen für die Spy++.
+Die **Hilfe** Menü enthält Befehle zum Öffnen der Hilfedateien.
+
+ **Index** wird der Inhalt-Bildschirm für die Spy++-Hilfe geöffnet.
+
+ **Verwenden der Hilfe** öffnet eine Hilfedatei, die beschreibt, wie Sie mit der Hilfe.
+
+ **Info** zeigt die Version und urheberrechtliche Informationen für die Spy++.

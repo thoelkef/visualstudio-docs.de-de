@@ -10,36 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4716443ae2225428980306beb1c3be0e23b4306e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019319"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691890"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Dialogfeld "Schriftart" (Hilfe zu Microsoft Spy++)
-Mithilfe dieses Dialogfelds konfigurieren Sie die Schriftart verwendet eine [Spy++-Ansichten](../debugger/spy-increment-views.md) Fenster. Um das Dialogfeld anzuzeigen, erweitern Sie die **Ansicht** Menü, und wählen Sie **Schriftart**.  
-  
- Die folgenden Einstellungen sind verfügbar:  
-  
- **Schriftart**  
- Die Schriftart für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
-  
- **Schriftschnitt**  
- Der Schriftschnitt für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
-  
- **Size**  
- Der Schriftgrad für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
-  
- **Als Standard speichern**  
- Beim Öffnen von Spy++-Ansichten, wird die aktuelle schriftarteinstellungen als Ihre Einstellungen gespeichert.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
-  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
-  
- [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+Mithilfe dieses Dialogfelds konfigurieren Sie die Schriftart verwendet eine [Spy++-Ansichten](../debugger/spy-increment-views.md) Fenster. Um das Dialogfeld anzuzeigen, erweitern Sie die **Ansicht** Menü, und wählen Sie **Schriftart**.
+
+ Die folgenden Einstellungen sind verfügbar:
+
+ **Schriftart** die Schriftart für das Spy++-Ansichten-Fenster, das Fokus besitzt.
+
+ **Schriftschnitt** den Schriftschnitt für das Spy++-Ansichten-Fenster, das Fokus besitzt.
+
+ **Größe** den Schriftgrad für das Spy++-Ansichten-Fenster, das Fokus besitzt.
+
+ **Als Standard speichern** beim Öffnen von Spy++-Ansichten wird die aktuelle schriftarteinstellungen als Ihre Einstellungen gespeichert.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.

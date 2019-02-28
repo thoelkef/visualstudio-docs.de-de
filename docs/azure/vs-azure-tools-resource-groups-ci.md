@@ -4,19 +4,19 @@ description: Beschreibt die Einrichtung von Continuous Integration in Azure DevO
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139742"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841791"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Continuous Integration in Azure DevOps Services mit Bereitstellungsprojekten für Azure-Ressourcengruppen
+
 Zum Bereitstellen einer Azure-Vorlage führen Sie Aufgaben in verschiedenen Phasen durch: Erstellen, Testen, Staging (in Azure kopieren) und Bereitstellen der Vorlage. Es gibt zwei Möglichkeiten zum Bereitstellen von Vorlagen für Azure DevOps Services. Da beide Verfahren zum gleichen Ergebnis führen, können Sie das Verfahren wählen, das am besten in Ihren Workflow passt.
 
 1. Fügen Sie Ihrer Buildpipeline einen Schritt hinzu, mit dem das PowerShell-Skript ausgeführt wird, das im Bereitstellungsprojekt für die Azure-Ressourcengruppe („Deploy-AzureResourceGroup.ps1“) enthalten ist. Mit dem Skript werden Artefakte kopiert, und anschließend wird die Vorlage bereitgestellt.

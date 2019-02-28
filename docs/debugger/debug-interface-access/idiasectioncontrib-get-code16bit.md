@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0200c65cfd89086a58466913967e73a00e4d7fd4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635890"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-Ruft ein Flag, das angibt, ob der Abschnitt 16-Bit-Code enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_code16bit(  
-   BOOL *pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` ist der Code in den Abschnitt, 16-Bit-; andernfalls, gibt `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Methode gibt nur auf, wenn der Code 16-Bit ist. Wenn der Code keine 16-Bit ist, konnte es nichts anderes, z. B. 32-Bit oder 64-Bit-Code sein.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Ruft ein Flag, das angibt, ob der Abschnitt 16-Bit-Code enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_code16bit(
+   BOOL *pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` ist der Code in den Abschnitt, 16-Bit-; andernfalls, gibt `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Anmerkungen
+ Diese Methode gibt nur auf, wenn der Code 16-Bit ist. Wenn der Code keine 16-Bit ist, konnte es nichts anderes, z. B. 32-Bit oder 64-Bit-Code sein.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

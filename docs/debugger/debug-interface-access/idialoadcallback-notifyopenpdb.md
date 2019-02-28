@@ -12,34 +12,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a5399a0e473172bb94b22cba813512ccf74014
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5945ba54f1c09f4f13d2a982e90a3bb58cfb5f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635916"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
-Aufgerufen, wenn eine Kandidat PDB-Datei geöffnet wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT NotifyOpenPDB (   
-   LPCOLESTR pdbPath,  
-   HRESULT   resultCode  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pdbPath`  
- [in] Der vollständige Pfad der PDB-Datei.  
-  
- `resultCode`  
- [in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last auf diese Datei angewendet.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Aufgerufen, wenn eine Kandidat PDB-Datei geöffnet wird.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT NotifyOpenPDB ( 
+   LPCOLESTR pdbPath,
+   HRESULT   resultCode
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pdbPath`
+
+[in] Der vollständige Pfad der PDB-Datei.
+
+ `resultCode`
+
+[in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last auf diese Datei angewendet.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -26,101 +26,101 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920655"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612672"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung)
-Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung erforderlich ist.  
+Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung erforderlich ist.
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```xml  
+```xml
 
-      <dependency>  
-   <dependentOS  
-      supportURL  
-      description  
-   >  
-      <osVersionInfo>  
-         <os  
-            majorVersion  
-            minorVersion  
-            buildNumber  
-            servicePackMajor  
-            servicePackMinor  
-            productType  
-            suiteType  
-         />   
-      </osVersionInfo>  
-   </dependentOS>  
-   <dependentAssembly  
-      dependencyType  
-      allowDelayedBinding  
-      group  
-      codeBase  
-      size  
-   >  
-      <assemblyIdentity  
-         name  
-         version  
-         processorArchitecture  
-         language  
-      >  
-         <hash>  
-            <dsig:Transforms>  
-               <dsig:Transform  
-                  Algorithm  
-            />  
-            </dsig:Transforms>  
-            <dsig:DigestMethod />  
-            <dsig:DigestValue>  
-            </dsig:DigestValue>  
-    </hash>  
+      <dependency>
+   <dependentOS
+      supportURL
+      description
+   >
+      <osVersionInfo>
+         <os
+            majorVersion
+            minorVersion
+            buildNumber
+            servicePackMajor
+            servicePackMinor
+            productType
+            suiteType
+         />
+      </osVersionInfo>
+   </dependentOS>
+   <dependentAssembly
+      dependencyType
+      allowDelayedBinding
+      group
+      codeBase
+      size
+   >
+      <assemblyIdentity
+         name
+         version
+         processorArchitecture
+         language
+      >
+         <hash>
+            <dsig:Transforms>
+               <dsig:Transform
+                  Algorithm
+            />
+            </dsig:Transforms>
+            <dsig:DigestMethod />
+            <dsig:DigestValue>
+            </dsig:DigestValue>
+    </hash>
 
-      </assemblyIdentity>  
-   </dependentAssembly>  
-</dependency>  
-```  
+      </assemblyIdentity>
+   </dependentAssembly>
+</dependency>
+```
 
-## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `dependency` Element ist erforderlich. Gibt es möglicherweise mehrere Instanzen von `dependency` im gleichen Anwendungsmanifest.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute
+ Die `dependency` Element ist erforderlich. Gibt es möglicherweise mehrere Instanzen von `dependency` im gleichen Anwendungsmanifest.
 
- Die `dependency` Element weist keine Attribute und enthält die folgenden untergeordneten Elemente.  
+ Die `dependency` Element weist keine Attribute und enthält die folgenden untergeordneten Elemente.
 
-### <a name="dependentos"></a>dependentOS  
- Dies ist optional. Enthält die `osVersionInfo` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
+### <a name="dependentos"></a>dependentOS
+ Dies ist optional. Enthält die `osVersionInfo` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.
 
- `dependentOS` unterstützt die folgenden Attribute an.  
+ `dependentOS` unterstützt die folgenden Attribute an.
 
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`supportUrl`|Dies ist optional. Gibt eine Support-URL für die abhängige Plattform. Diese URL wird für den Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|  
-|`description`|Dies ist optional. Beschreibt das Betriebssystem beschrieben in Menschen lesbarem Format die `dependentOS` Element.|  
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`supportUrl`|Dies ist optional. Gibt eine Support-URL für die abhängige Plattform. Diese URL wird für den Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|
+|`description`|Dies ist optional. Beschreibt das Betriebssystem beschrieben in Menschen lesbarem Format die `dependentOS` Element.|
 
-### <a name="osversioninfo"></a>osVersionInfo  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentOS` -Elements und enthält das `os` -Element. Dieses Element weist keine Attribute auf.  
+### <a name="osversioninfo"></a>osVersionInfo
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentOS` -Elements und enthält das `os` -Element. Dieses Element weist keine Attribute auf.
 
-### <a name="os"></a>os  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `osVersionInfo` -Elements. Dieses Element weist folgende Attribute auf.  
+### <a name="os"></a>os
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `osVersionInfo` -Elements. Dieses Element weist folgende Attribute auf.
 
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`majorVersion`|Erforderlich. Gibt die Hauptversionsnummer des Betriebssystems an.|  
-|`minorVersion`|Erforderlich. Gibt die Nummer der Nebenversion des Betriebssystems an.|  
-|`buildNumber`|Erforderlich. Gibt die Buildnummer des Betriebssystems an.|  
-|`servicePackMajor`|Erforderlich. Gibt an, die wichtigsten Service Pack-Nummer des Betriebssystems.|  
-|`servicePackMinor`|Dies ist optional. Gibt die kleinere Service Pack-Nummer des Betriebssystems an.|  
-|`productType`|Dies ist optional. Gibt die Produkt-Typwert. Gültige Werte sind `server`, `workstation` und `domainController`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `workstation`.|  
-|`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|  
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`majorVersion`|Erforderlich. Gibt die Hauptversionsnummer des Betriebssystems an.|
+|`minorVersion`|Erforderlich. Gibt die Nummer der Nebenversion des Betriebssystems an.|
+|`buildNumber`|Erforderlich. Gibt die Buildnummer des Betriebssystems an.|
+|`servicePackMajor`|Erforderlich. Gibt an, die wichtigsten Service Pack-Nummer des Betriebssystems.|
+|`servicePackMinor`|Dies ist optional. Gibt die kleinere Service Pack-Nummer des Betriebssystems an.|
+|`productType`|Dies ist optional. Gibt die Produkt-Typwert. Gültige Werte sind `server`, `workstation` und `domainController`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `workstation`.|
+|`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|
 
-### <a name="dependentassembly"></a>dependentAssembly  
- Dies ist optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
+### <a name="dependentassembly"></a>dependentAssembly
+ Dies ist optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.
 
- `dependentAssembly` hat die folgenden Attribute an.  
+ `dependentAssembly` hat die folgenden Attribute an.
 
 
 | Attribut | Beschreibung |
@@ -131,94 +131,94 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 | `codeBase` | Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Der Pfad der abhängigen Assembly. Entweder ein absoluter Pfad oder einen Pfad relativ zum des Manifests kann Basisklasse sein. Dieser Pfad muss ein gültiger URI in der Reihenfolge für das Assemblymanifest gültig ist. |
 | `size` | Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Die Größe der abhängigen Assembly, in Bytes. |
 
-### <a name="assemblyidentity"></a>assemblyIdentity  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements und weist folgende Attribute auf.  
+### <a name="assemblyidentity"></a>assemblyIdentity
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements und weist folgende Attribute auf.
 
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`name`|Erforderlich. Identifiziert den Namen der Anwendung.|  
-|`version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
-|`publicKeyToken`|Dies ist optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren des Katalogs muss mindestens 2048 Bits sein.|  
-|`processorArchitecture`|Dies ist optional. Gibt den Prozessor. Gültige Werte sind `x86` für 32-Bit-Windows und `I64` für 64-Bit-Windows.|  
-|`language`|Dies ist optional. Identifiziert den zweiteiligen Sprachcodes, z. B. EN-US, der Assembly an.|  
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`name`|Erforderlich. Identifiziert den Namen der Anwendung.|
+|`version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
+|`publicKeyToken`|Dies ist optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren des Katalogs muss mindestens 2048 Bits sein.|
+|`processorArchitecture`|Dies ist optional. Gibt den Prozessor. Gültige Werte sind `x86` für 32-Bit-Windows und `I64` für 64-Bit-Windows.|
+|`language`|Dies ist optional. Identifiziert den zweiteiligen Sprachcodes, z. B. EN-US, der Assembly an.|
 
-### <a name="hash"></a>hash  
- Die `hash` Element ist ein optionales untergeordnetes Element von der `assemblyIdentity` Element. Das `hash` -Element weist keine Attribute auf.  
+### <a name="hash"></a>hash
+ Die `hash` Element ist ein optionales untergeordnetes Element von der `assemblyIdentity` Element. Das `hash` -Element weist keine Attribute auf.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.
 
-### <a name="dsigtransforms"></a>dsig:Transforms  
- Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
+### <a name="dsigtransforms"></a>dsig:Transforms
+ Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.
 
-### <a name="dsigtransform"></a>dsig:Transform  
- Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.  
+### <a name="dsigtransform"></a>dsig:Transform
+ Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.
 
 
 | Attribut | Beschreibung |
 |-------------| - |
 | `Algorithm` | Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
-### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
+### <a name="dsigdigestmethod"></a>dsig:DigestMethod
+ Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.
 
 
 | Attribut | Beschreibung |
 |-------------| - |
 | `Algorithm` | Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue
+ Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Anmerkungen  
- Alle Assemblys, die von Ihrer Anwendung verwendeten setzt das Vorhandensein einer entsprechenden `dependency` Element. Abhängige Assemblys enthalten keine Assemblys, die als Testplattform-Assemblys im globalen Assemblycache vorinstalliert sein müssen.  
+## <a name="remarks"></a>Anmerkungen
+ Alle Assemblys, die von Ihrer Anwendung verwendeten setzt das Vorhandensein einer entsprechenden `dependency` Element. Abhängige Assemblys enthalten keine Assemblys, die als Testplattform-Assemblys im globalen Assemblycache vorinstalliert sein müssen.
 
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, `dependency` Elemente in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md) Thema.  
+## <a name="example"></a>Beispiel
+ Im folgenden Codebeispiel wird veranschaulicht, `dependency` Elemente in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md) Thema.
 
-```xml  
-<dependency>  
-  <dependentOS>  
-    <osVersionInfo>  
-      <os   
-        majorVersion="4"   
-        minorVersion="10"   
-        buildNumber="0"   
-        servicePackMajor="0" />  
-    </osVersionInfo>  
-  </dependentOS>  
-</dependency>  
-<dependency>  
-  <dependentAssembly  
-    dependencyType="preRequisite"  
-    allowDelayedBinding="true">  
-    <assemblyIdentity  
-      name="Microsoft.Windows.CommonLanguageRuntime"  
-      version="4.0.20506.0" />  
-  </dependentAssembly>  
-</dependency>  
+```xml
+<dependency>
+  <dependentOS>
+    <osVersionInfo>
+      <os
+        majorVersion="4"
+        minorVersion="10"
+        buildNumber="0"
+        servicePackMajor="0" />
+    </osVersionInfo>
+  </dependentOS>
+</dependency>
+<dependency>
+  <dependentAssembly
+    dependencyType="preRequisite"
+    allowDelayedBinding="true">
+    <assemblyIdentity
+      name="Microsoft.Windows.CommonLanguageRuntime"
+      version="4.0.20506.0" />
+  </dependentAssembly>
+</dependency>
 
-<dependency>  
-  <dependentAssembly  
-    dependencyType="install"  
-    allowDelayedBinding="true"  
-    codebase="MyApplication.exe"  
-    size="4096">  
-    <assemblyIdentity  
-      name="MyApplication"  
-      version="1.0.0.0"  
-      language="neutral"  
-      processorArchitecture="x86" />  
-    <hash>  
-      <dsig:Transforms>  
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-      </dsig:Transforms>  
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>  
-    </hash>  
-  </dependentAssembly>  
-</dependency>  
-```  
+<dependency>
+  <dependentAssembly
+    dependencyType="install"
+    allowDelayedBinding="true"
+    codebase="MyApplication.exe"
+    size="4096">
+    <assemblyIdentity
+      name="MyApplication"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="x86" />
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>
+    </hash>
+  </dependentAssembly>
+</dependency>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)   
- [\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md)
+## <a name="see-also"></a>Siehe auch
+- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md)

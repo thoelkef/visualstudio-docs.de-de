@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e00919d290ca3152ffeaa27fae9273d47117b83b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 999be3e6d97158406aad32e79be87051ff11d3b3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979074"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609877"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Es können keine Threadaktivitäten angezeigt werden (Threadansicht)
-In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbaren Zeitbereich angezeigt.  
-  
- Wenn keine Informationen angezeigt werden, überprüfen Sie die folgenden Einstellungen:  
-  
--   Ist der Zoomfaktor hoch? Versuchen Sie, diesen zu verkleinern oder zu scrollen, um mehr Threadaktivitäten in den Bereich zu bringen.  
-  
--   Sind zu viele Threads ausgeblendet? Wenn dies der Fall ist, versuchen Sie alle Threads anzuzeigen.  
-  
--   Wenn **Nur eigenen Code** ausgewählt ist, können Sie nur Daten zu Ihrem Code anzeigen. Versuchen Sie, die Einstellung zu deaktivieren, um zu ermitteln, ob Systemthreadaktivitäten vorhanden sind.  
-  
--   Stellen Sie sicher, dass die Rauschunterdrückung auf einen niedrigen Schwellenwert festgelegt ist.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbaren Zeitbereich angezeigt.
+
+ Wenn keine Informationen angezeigt werden, überprüfen Sie die folgenden Einstellungen:
+
+-   Ist der Zoomfaktor hoch? Versuchen Sie, diesen zu verkleinern oder zu scrollen, um mehr Threadaktivitäten in den Bereich zu bringen.
+
+-   Sind zu viele Threads ausgeblendet? Wenn dies der Fall ist, versuchen Sie alle Threads anzuzeigen.
+
+-   Wenn **Nur eigenen Code** ausgewählt ist, können Sie nur Daten zu Ihrem Code anzeigen. Versuchen Sie, die Einstellung zu deaktivieren, um zu ermitteln, ob Systemthreadaktivitäten vorhanden sind.
+
+-   Stellen Sie sicher, dass die Rauschunterdrückung auf einen niedrigen Schwellenwert festgelegt ist.
+
+## <a name="see-also"></a>Siehe auch
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

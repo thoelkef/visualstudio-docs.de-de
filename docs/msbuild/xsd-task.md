@@ -20,71 +20,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9996ee8c3b1cf8a6298ad21d0ae0058d90f78b64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631171"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
-Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.  
+Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
 
 > [!NOTE]
-> In Visual Studio 2017 ist die Unterstützung von C++-Projekten für *xsd.exe* veraltet. Sie können die APIs **Microsoft.VisualC.CppCodeProvider** weiterhin verwenden, indem Sie die Datei *CppCodeProvider.dll* manuell dem globalen Assemblycache hinzufügen. 
-  
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.  
-  
--   **AdditionalOptions**  
-  
-     Optionaler **String**-Parameter.  
-  
-     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.  
-  
--   **GenerateFromSchema**  
-  
-     Optionaler **String**-Parameter.  
-  
-     Gibt die Typen an, die aus dem angegebenen Schema generiert werden.  
-  
-     Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.  
-  
-    -   **classes** - **/classes**  
-  
-    -   **dataset** - **/dataset**  
-  
--   **Sprache**  
-  
-     Optionaler **String**-Parameter.  
-  
-     Gibt die Programmiersprache an, die für den generierten Code verwendet werden soll.  
-  
-     Wählen Sie zwischen **CS** (C#, der Standard), **VB** (Visual Basic) und **JS** (JScript) aus. Sie können auch einen vollqualifizierten Namen für eine Klasse angeben, die `System.CodeDom.Compiler.CodeDomProvider Class` implementiert.  
-  
--   **Namespace**  
-  
-     Optionaler **String**-Parameter.  
-  
-     Gibt den Laufzeitnamespace für die generierten Typen an.  
-  
--   **Sources**  
-  
-     Erforderlicher `ITaskItem[]` -Parameter.  
-  
-     Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.  
-  
--   **SuppressStartupBanner**  
-  
-     Optionaler **Boolean**-Parameter.  
-  
-     Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
-  
--   **TrackerLogDirectory**  
-  
-     Optionaler **String**-Parameter.  
-  
-     Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+> In Visual Studio 2017 ist die Unterstützung von C++-Projekten für *xsd.exe* veraltet. Sie können die APIs **Microsoft.VisualC.CppCodeProvider** weiterhin verwenden, indem Sie die Datei *CppCodeProvider.dll* manuell dem globalen Assemblycache hinzufügen.
+
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.
+
+-   **AdditionalOptions**
+
+     Optionaler **String**-Parameter.
+
+     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
+
+-   **GenerateFromSchema**
+
+     Optionaler **String**-Parameter.
+
+     Gibt die Typen an, die aus dem angegebenen Schema generiert werden.
+
+     Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.
+
+    -   **classes** - **/classes**
+
+    -   **dataset** - **/dataset**
+
+-   **Sprache**
+
+     Optionaler **String**-Parameter.
+
+     Gibt die Programmiersprache an, die für den generierten Code verwendet werden soll.
+
+     Wählen Sie zwischen **CS** (C#, der Standard), **VB** (Visual Basic) und **JS** (JScript) aus. Sie können auch einen vollqualifizierten Namen für eine Klasse angeben, die `System.CodeDom.Compiler.CodeDomProvider Class` implementiert.
+
+-   **Namespace**
+
+     Optionaler **String**-Parameter.
+
+     Gibt den Laufzeitnamespace für die generierten Typen an.
+
+-   **Sources**
+
+     Erforderlicher `ITaskItem[]` -Parameter.
+
+     Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.
+
+-   **SuppressStartupBanner**
+
+     Optionaler **Boolean**-Parameter.
+
+     Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
+
+-   **TrackerLogDirectory**
+
+     Optionaler **String**-Parameter.
+
+     Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.
+
+## <a name="see-also"></a>Siehe auch
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

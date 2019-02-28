@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615532"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840903"
 ---
 # <a name="projects"></a>Projekte
 In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren von Quellcodedateien und anderen Ressourcen, die in angezeigt werden **Projektmappen-Explorer**. In der Regel sind Projekte, Dateien (z. B. einer CSPROJ-Datei für ein C#-Projekt), die Verweise auf Quellcodedateien und Ressourcen wie die Bitmap-Dateien zu speichern. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, auf drei Arten: *Projekttypen*, *Projektuntertypen*, und *benutzerdefinierte Tools*.
@@ -41,7 +41,7 @@ In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren 
 
  Erläutert, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen.
 
-- [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples) enthält die Beispiele in Visual Studio SDK PASST, die Projekte und Projektmappen behandeln.
+- [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples) enthält die Beispiele in Visual Studio SDK PASST, die Projekte und Projektmappen behandeln.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Im Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)

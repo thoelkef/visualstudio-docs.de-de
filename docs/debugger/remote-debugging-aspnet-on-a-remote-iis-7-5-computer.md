@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023953"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720030"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie die Remoteserver-Verwaltungstools auf dem Computer, in dem Sie Ihre app bereitgestellt haben, und fügen Sie dann auf der ausgeführten app in Visual Studio.
@@ -47,7 +47,7 @@ Dieser Artikel enthält Schritte zum Einrichten einer Standardkonfiguration von 
 * Wenn Sie Hilfe, um sicherzustellen, dass Ihre app bereitgestellt eingerichtet wurde, anzeigen möchten und ordnungsgemäß in IIS ausgeführt, damit Sie debuggen können, befolgen alle Schritte in diesem Thema.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Erstellen von ASP.NET 4.5.2 auf Visual Studio-Computer
-  
+
 1. Erstellen Sie eine neue MVC ASP.NET-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann <strong>Visual C# > Web > ASP.NET-Webanwendung. Im ASP.NET 4.5.2</strong> -Vorlagenabschnitt wählen Sie **MVC** aus. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.)
 
 2. Öffnen Sie die Datei „HomeController.cs“, und legen Sie einen Haltepunkt in der `About()` -Methode fest.
@@ -147,7 +147,7 @@ Sie können diese Option verwenden, um Ihre app bereitzustellen, wenn Sie die ap
 Sie können auch veröffentlichen und Bereitstellen der app, die über das Dateisystem oder andere Tools.
 
 1. (ASP.NET 4.5.2) Stellen Sie sicher, dass die Datei "Web.config" die richtige Version von .NET Framework aufgeführt.  Wenn Sie ASP.NET 4.5.2 verwenden möchten, stellen Sie beispielsweise sicher, dass diese Version in der Datei "Web.config" aufgeführt ist.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ Sie können auch veröffentlichen und Bereitstellen der app, die über das Datei
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Beispielsweise sollte die Version 4.0, bei der Installation von ASP.NET 4 statt 4.5.2.
@@ -168,7 +168,7 @@ Sie können auch veröffentlichen und Bereitstellen der app, die über das Datei
 In diesem Tutorial verwenden wir Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Richten Sie den Remotedebugger unter Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 2. Klicken Sie in Visual Studio auf **Debuggen > an den Prozess anhängen** (Strg + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017 können Sie an denselben Prozess, die Sie zuvor mit angefügte Anfügen **Debuggen > an Prozess anfügen...** UMSCHALT+ALT+P 
+    > In Visual Studio 2017 können Sie an denselben Prozess, die Sie zuvor mit angefügte Anfügen **Debuggen > an Prozess anfügen...** UMSCHALT+ALT+P
 
 3. Legen Sie das Feld „Qualifizierer“ auf **\<Name_des_Remotecomputers>:4022** fest.
 4. Klicken Sie auf **Aktualisieren**.
@@ -200,7 +200,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 7. Klicken Sie auf **Attach** (Anhängen).
 
 8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>**.
-    
+
     Es sollte die ASP.NET-Webseite angezeigt werden.
 9. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.
 
@@ -211,7 +211,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie sicherstellen, dass die Ports geöffnet sind.
 
 > [!NOTE]
-> Auf einem virtuellen Azure-Computer müssen Sie Ports durch Öffnen der [Netzwerksicherheitsgruppe](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> Auf einem virtuellen Azure-Computer müssen Sie Ports durch Öffnen der [Netzwerksicherheitsgruppe](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Erforderliche Ports:
 

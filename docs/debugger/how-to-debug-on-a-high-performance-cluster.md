@@ -16,91 +16,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 124aae4c9e6c0ddb28562230203d2210b8e464be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8eedc9c469e4ceb4ac4b5be018f2ebdd227ffcf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070005"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681789"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Vorgehensweise: Debuggen auf einem Hochleistungscluster (C#, Visual Basic, C++)
 
-Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleicht dem Debuggen eines gewöhnlichen Programms auf einem Remotecomputer. Es müssen jedoch einige zusätzliche Aspekte berücksichtigt werden. Allgemeine remote-setupanforderungen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
-  
- Beim Debuggen auf einem Hochleistungscluster können alle Debugfenster von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Verfahren für das Remotedebuggen eingesetzt werden. Da Sie jedoch remote debuggen, ist das externe Konsolenfenster nicht verfügbar.  
-  
- Das Fenster **Threads** und das Fenster **Prozesse** sind zum Debuggen von parallelen Anwendungen besonders nützlich. Tipps zur Verwendung dieser Fenster finden Sie [Vorgehensweise: Verwenden des Fensters Prozesse](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) und [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).  
-  
- In den folgenden Verfahren werden einige Techniken vorgestellt, die beim Debuggen in einem Hochleistungscluster besonders nützlich sind.  
-  
- Beim Debuggen einer parallelen Anwendung kann es erforderlich sein, einen Haltepunkt für einen bestimmten Thread, Prozess oder Computer festzulegen. Dies kann durch das Erstellen eines normalen Haltepunkts und das Hinzufügen eines Haltepunktfilters erfolgen.  
-  
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>So öffnen Sie das Dialogfeld Haltepunktfilter
-  
-1.  Klicken Sie in einem Quellcodefenster, im Fenster **Disassemblierung**, im Fenster **Aufrufliste** oder im Fenster **Haltepunkte** mit der rechten Maustaste auf ein Haltepunktsymbol.  
-  
-2.  Klicken Sie im Kontextmenü auf **Filter**. Diese Option wird möglicherweise auf oberster Ebene oder im Untermenü unter **Haltepunkte** angezeigt.  
-  
-### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>So legen Sie einen Haltepunkt für einen bestimmten Computer fest  
-  
-1.  Entnehmen Sie dem Fenster **Prozesse** den Computernamen.  
-  
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der vorigen Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
-  
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
-  
-     MachineName =*IhrComputerName*  
-  
-     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
-  
-4.  Klicken Sie auf **OK**.  
-  
-### <a name="to-set-a-breakpoint-on-a-specific-process"></a>So legen Sie einen Haltepunkt für einen bestimmten Prozess fest  
-  
-1.  Entnehmen Sie dem Fenster **Prozesse** den Prozessnamen oder die Prozess-ID.  
-  
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
-  
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
-  
-     `ProcessName =`  *IhrProzessName*  
-  
-     – oder –  
-  
-     `ProcessID =` *IhreProzessIDNummer*  
-  
-     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
-  
-4.  Klicken Sie auf **OK**.  
-  
-### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>So legen Sie einen Haltepunkt für einen bestimmten Thread fest  
-  
-1.  Entnehmen Sie dem Fenster **Threads** den Threadnamen oder die Thread-ID.  
-  
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
-  
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
-  
-     `ThreadName =` *IhrThreadName*  
-  
-     – oder –  
-  
-     `ThreadID =` *IhreThreadIDNummer*  
-  
-     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
-  
-4.  Klicken Sie auf **OK**.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird das Erstellen eines Filters für einen Haltepunkt für einen Computer mit dem Namen `marvin` und einen Thread mit dem Namen `fourier1` beschrieben.  
-  
-`(MachineName = marvin) & (ThreadName = fourier1)`  
+Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleicht dem Debuggen eines gewöhnlichen Programms auf einem Remotecomputer. Es müssen jedoch einige zusätzliche Aspekte berücksichtigt werden. Allgemeine remote-setupanforderungen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Remotedebuggen](../debugger/remote-debugging.md)   
- [Vorgehensweise: Verwenden des Prozessfensters](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
- [Erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Threads und Prozessen](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
+ Beim Debuggen auf einem Hochleistungscluster können alle Debugfenster von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Verfahren für das Remotedebuggen eingesetzt werden. Da Sie jedoch remote debuggen, ist das externe Konsolenfenster nicht verfügbar.
+
+ Das Fenster **Threads** und das Fenster **Prozesse** sind zum Debuggen von parallelen Anwendungen besonders nützlich. Tipps zur Verwendung dieser Fenster finden Sie [Vorgehensweise: Verwenden des Fensters Prozesse](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) und [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).
+
+ In den folgenden Verfahren werden einige Techniken vorgestellt, die beim Debuggen in einem Hochleistungscluster besonders nützlich sind.
+
+ Beim Debuggen einer parallelen Anwendung kann es erforderlich sein, einen Haltepunkt für einen bestimmten Thread, Prozess oder Computer festzulegen. Dies kann durch das Erstellen eines normalen Haltepunkts und das Hinzufügen eines Haltepunktfilters erfolgen.
+
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>So öffnen Sie das Dialogfeld Haltepunktfilter
+
+1.  Klicken Sie in einem Quellcodefenster, im Fenster **Disassemblierung**, im Fenster **Aufrufliste** oder im Fenster **Haltepunkte** mit der rechten Maustaste auf ein Haltepunktsymbol.
+
+2.  Klicken Sie im Kontextmenü auf **Filter**. Diese Option wird möglicherweise auf oberster Ebene oder im Untermenü unter **Haltepunkte** angezeigt.
+
+### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>So legen Sie einen Haltepunkt für einen bestimmten Computer fest
+
+1.  Entnehmen Sie dem Fenster **Prozesse** den Computernamen.
+
+2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der vorigen Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.
+
+3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:
+
+     MachineName =*IhrComputerName*
+
+     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.
+
+4.  Klicken Sie auf **OK**.
+
+### <a name="to-set-a-breakpoint-on-a-specific-process"></a>So legen Sie einen Haltepunkt für einen bestimmten Prozess fest
+
+1.  Entnehmen Sie dem Fenster **Prozesse** den Prozessnamen oder die Prozess-ID.
+
+2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.
+
+3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:
+
+     `ProcessName =`  *IhrProzessName*
+
+     – oder –
+
+     `ProcessID =` *IhreProzessIDNummer*
+
+     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.
+
+4.  Klicken Sie auf **OK**.
+
+### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>So legen Sie einen Haltepunkt für einen bestimmten Thread fest
+
+1.  Entnehmen Sie dem Fenster **Threads** den Threadnamen oder die Thread-ID.
+
+2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.
+
+3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:
+
+     `ThreadName =` *IhrThreadName*
+
+     – oder –
+
+     `ThreadID =` *IhreThreadIDNummer*
+
+     Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.
+
+4.  Klicken Sie auf **OK**.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird das Erstellen eines Filters für einen Haltepunkt für einen Computer mit dem Namen `marvin` und einen Thread mit dem Namen `fourier1` beschrieben.
+
+`(MachineName = marvin) & (ThreadName = fourier1)`
+
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Remote Debugging](../debugger/remote-debugging.md)
+- [Vorgehensweise: Verwenden des Prozessfensters](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md)
+- [Threads und Prozessen](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
+- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

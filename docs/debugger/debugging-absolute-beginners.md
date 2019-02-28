@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484224"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713151"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -101,7 +101,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Die App wird gestartet, und der Debugger zeigt keine Ausnahmen an. Die Ausgabe im Konsolenfenster entspricht jedoch nicht Ihren Erwartungen. Folgende Ausgabe wird erwartet:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Stattdessen wird allerdings Folgendes ausgegeben:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Wenn Sie einen Breakpoint festlegen, wird ein roter Punkt am linken Rand angezeigt.
@@ -247,13 +247,13 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 1. Wenn Sie den Code betrachten, der für das Festlegen des Galaxietyps verwendet wird, werden Sie feststellen, dass die `GalaxyType`-Eigenschaft der `Galaxy`-Klasse auf `object` statt `GType` festgelegt ist.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Ändern Sie den vorangehenden Code folgendermaßen:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um den Code neu zu kompilieren und zu starten.
@@ -265,8 +265,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Die App wird ausgeführt, und eine Ausgabe wird angezeigt. Diese sieht nun gut aus, aber Sie werden feststellen, dass der Galaxietyp von „Small Magellanic Cloud“ nicht wie erwartet als „Irregular“ angezeigt wird, sondern gar nicht.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um die App neu zu starten.
 
-    Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.  
+    Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.
 
 1. Zeigen Sie auf die Variable `type`. Sie sehen, dass der Wert (dem Zeichencode nach) `S` ist. Für Sie ist jedoch der Wert `I` relevant, da Sie wissen, dass der Galaxietyp „Irregular“ ist.
 
@@ -323,7 +323,7 @@ Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, 
 * Überprüfen Sie, ob die Anwendung den Code ausführt, den Sie erwarten. (In der Beispielanwendung haben Sie beispielsweise erwartet, dass der Code für die switch-Anweisung den Galaxietyp auf „Irregular“ festlegt, aber die App hat den Code wegen eines Tippfehlers übersprungen.)
 
 > [!TIP]
-> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md). 
+> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

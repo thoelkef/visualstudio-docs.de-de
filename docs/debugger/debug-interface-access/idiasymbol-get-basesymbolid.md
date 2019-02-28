@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49aa4df8c37a51ee5347c2a983c383c2ecca8ee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880d207a41418e12cab4374578fea4f3c4f338c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951962"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622448"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-Ruft ab, die Symbol-ID, die von dem der Zeiger basiert.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_baseSymbolId(   
-   DWORD *pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , enthält die Symbol-ID, die von dem der Zeiger basiert.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)
+Ruft ab, die Symbol-ID, die von dem der Zeiger basiert.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_baseSymbolId(
+   DWORD *pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , enthält die Symbol-ID, die von dem der Zeiger basiert.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)

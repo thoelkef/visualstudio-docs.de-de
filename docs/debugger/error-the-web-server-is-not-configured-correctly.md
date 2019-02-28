@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Die Webserver nicht ordnungsgemäß konfiguriert ist | Microsoft-Dokumentation'
+title: 'Fehler: Der Webserver ist nicht ordnungsgemäß konfiguriert | Microsoft-Dokumentation'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019191"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711604"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Fehler: Der Webserver ist nicht richtig konfiguriert
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Fehler: Der Webserver ist nicht richtig konfiguriert.
 
 Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems und vor dem erneuten Versuch zum Debuggen müssen Sie auch IIS zurücksetzen. Sie können Sie dies, indem Sie eine Administrator-Eingabeaufforderung öffnen und Folgendes eingeben `iisreset`.
 
@@ -44,9 +44,9 @@ Führen Sie diese Schritte, um dieses Problem zu beheben:
 4. (IIS) Stellen Sie sicher, dass die richtige Version von ASP.NET auf dem Server installiert ist.
 
     Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekts können dazu führen, dass dieses Problem. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festgelegt. Verwenden Sie zum Installieren von ASP.NET in IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Wenn die `maxConnection` Begrenzung in IIS ist zu niedrig ist, und Sie zu viele Verbindungen haben, müssen Sie möglicherweise [erhöhen Sie das Verbindungslimit](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

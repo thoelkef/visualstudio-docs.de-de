@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd01a89c17235223176d5e36d8560f7e9152d327
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25d990ab019c01daf1f977464211fb72838275a1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969758"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618665"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
-Ruft einen Verweis auf das Symbol für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_compiland (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- pRetVal  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Ruft einen Verweis auf das Symbol für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_compiland ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ pRetVal
+
+[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt für der Kompiliereinheit, das die Bytes des Image Text beigetragen hat.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

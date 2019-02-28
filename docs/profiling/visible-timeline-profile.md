@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bca63018ca2396126c487f2588da5c658a5eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975932"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637671"
 ---
 # <a name="visible-timeline-profile"></a>Sichtbares Zeitachsenprofil
-Das sichtbare Zeitachsenprofil für die Threadblockierungsansicht stellt statistische Informationen und Links für Berichte bereit. Wenn Sie die Ansicht vergrößern oder verkleinern, horizontal Scrollen oder Kanäle aus- oder einblenden, ändern sich die Zahlen in der aktiven Legende entsprechend den gegenwärtig angezeigten Elementen. Um in der Legende einen Bericht zu einem Element anzuzeigen, klicken Sie auf das Element.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+Das sichtbare Zeitachsenprofil für die Threadblockierungsansicht stellt statistische Informationen und Links für Berichte bereit. Wenn Sie die Ansicht vergrößern oder verkleinern, horizontal Scrollen oder Kanäle aus- oder einblenden, ändern sich die Zahlen in der aktiven Legende entsprechend den gegenwärtig angezeigten Elementen. Um in der Legende einen Bericht zu einem Element anzuzeigen, klicken Sie auf das Element.
+
+## <a name="see-also"></a>Siehe auch
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

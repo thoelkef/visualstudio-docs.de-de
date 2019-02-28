@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978268"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796672"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Hilfsprogramme und ähnliches.
@@ -55,13 +55,13 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 
  Toolfenster bieten in der Regel verschiedene Steuerelemente, mit denen der Benutzer interagieren kann. Z. B. die **Eigenschaften** Fenster ermöglicht dem Benutzer, die Eigenschaften der Objekte, die einen bestimmten Zweck dienen, festgelegt. Die **Eigenschaften** Fenster ist in diesem Sinne spezialisierte, aber auch allgemeine, da es in vielen unterschiedlichen Situationen verwendet werden kann. Auf ähnliche Weise die **Ausgabe** Fenster ist darauf spezialisiert, da sie textbasierte Ausgabe ist jedoch Allgemein bietet, da es sich bei vielen Subsystemen in Visual Studio verwenden können, um Ausgabe für Visual Studio-Benutzer bereitzustellen.
 
- Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält.
+ Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält:
 
  ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Einige Toolfenster sind zusammen auf einem einzelnen Bereich angedockt, die zeigt das Toolfenster des Projektmappen-Explorer an und blendet Sie aus der andere Toolfenster, jedoch stellt sie durch Klicken auf die Registerkarten zur Verfügung. Die Abbildung zeigt zwei andere Toolfenster, die **Fehlerliste** und **Ausgabe** auf einem zentralen Fensterbereich zusammen angedockten Fenster.
 
- Außerdem wird dargestellt im Hauptabschnitt des Dokuments Bereich mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument zu bearbeiten, aber alle angedockt werden haben der gleiche Bereich. Die Abbildung zeigt ein Dokumentfenster, dessen zwei Editorfenster, ein Formular-Designer-Fenster und ein Browserfenster, das die Startseite zeigt. Alle Fenster in den Aufgabenbereich durch Klicken auf die Registerkarten verfügbar sind, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist sichtbar und aktiv.
+ Außerdem wird dargestellt im Hauptabschnitt des Dokuments Bereich mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument zu bearbeiten, aber alle angedockt werden haben der gleiche Bereich. Die Abbildung zeigt einen Dokument Bereich mit zwei-Editor-Fenster, ein Formular-Designer-Fenster. Alle Fenster in den Aufgabenbereich durch Klicken auf die Registerkarten verfügbar sind, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist sichtbar und aktiv.
 
  Wenn Sie Visual Studio erweitern, können Sie die Tool-Fenster, mit denen Visual Studio-Benutzer interagieren mit der Erweiterung erstellen. Sie können auch Ihren eigenen Editor erstellen, mit denen Sie Visual Studio-Benutzer, die Dokumente bearbeiten können. Da Ihr Toolfenster und Editoren in Visual Studio integriert werden, müssen Sie keinen programmieren, andocken oder ordnungsgemäß auf einer Registerkarte angezeigt werden. Wenn sie in Visual Studio ordnungsgemäß registriert sind, müssen sie den üblichen Features von Toolfenstern und Dokumentfenstern in Visual Studio automatisch. Weitere Informationen finden Sie unter [erweitern und Anpassen von Tool Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 

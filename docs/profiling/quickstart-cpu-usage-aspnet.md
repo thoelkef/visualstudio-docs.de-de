@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996206"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634057"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten 
-  
+##  <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
+
 1.  Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
-  
+
 1.  Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
 1.  Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
@@ -189,7 +189,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
      Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
 
      Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
-  
+
      Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
@@ -207,7 +207,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 2. Doppelklicken Sie in der Funktionsliste auf die `MyProfilingApp_MVC.Models.ServerClass::GetNumber`-Funktion.
 
-    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet. 
+    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet.
 
     ![Ansicht „Aufrufer/Aufgerufener“ der Diagnosetools](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 - [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md) für weitere Informationen zum CPU-Auslastungs-Tool
 - Analysieren der CPU-Auslastung, auch ohne Debugger oder dass eine ausgeführte App als Ziel gesetzt wird: Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten ohne das Debuggen](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
 
- [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

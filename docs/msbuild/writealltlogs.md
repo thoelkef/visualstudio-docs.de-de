@@ -15,34 +15,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bae108ad946485fac3a9ba555978ccc1cb308a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919980"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704318"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
-Schreibt Nachverfolgungsprotokolle für alle Threads und Kontexte  
-  
-## <a name="syntax"></a>Syntax  
-  
+Schreibt Nachverfolgungsprotokolle für alle Threads und Kontexte
+
+## <a name="syntax"></a>Syntax
+
 ```cpp
-HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- [in] `intermediateDirectory`  
- Das Verzeichnis, in dem das Nachverfolgungsprotokoll gespeichert werden soll  
-  
- [in] `tlogRootName`  
- Der Stammname des Namens der Protoktolldatei  
-  
-## <a name="return-value"></a>Rückgabewert  
- Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Siehe auch  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)
+HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);
+```
+
+#### <a name="parameters"></a>Parameter
+[in] `intermediateDirectory`
+
+ Das Verzeichnis, in dem das Nachverfolgungsprotokoll gespeichert werden soll
+
+[in] `tlogRootName`
+
+ Der Stammname des Namens der Protoktolldatei
+
+## <a name="return-value"></a>Rückgabewert
+ Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *FileTracker.h*
+
+## <a name="see-also"></a>Siehe auch
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md)

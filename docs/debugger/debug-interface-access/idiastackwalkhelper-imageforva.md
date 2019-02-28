@@ -12,34 +12,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cb6957edd30d36fbc1a9ebbf982fd3ce91c94a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971245"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612019"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Gibt den Anfang einer ausführbaren Datei des Image im Arbeitsspeicher eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT imageForVA(  
-   ULONGLONG  vaContext,  
-   ULONGLONG *pvaImageStart  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `vaContext`  
- [in] Die virtuelle Adresse, die sich an einer beliebigen Stelle in der ausführbaren Datei Leerzeichen.  
-  
- `pvaImageStart`  
- [out] Gibt zurück, die virtuelle Startadresse des Images von der ausführbaren Datei.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+Gibt den Anfang einer ausführbaren Datei des Image im Arbeitsspeicher eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei zurück.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT imageForVA(
+   ULONGLONG  vaContext,
+   ULONGLONG *pvaImageStart
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `vaContext`
+
+[in] Die virtuelle Adresse, die sich an einer beliebigen Stelle in der ausführbaren Datei Leerzeichen.
+
+ `pvaImageStart`
+
+[out] Gibt zurück, die virtuelle Startadresse des Images von der ausführbaren Datei.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

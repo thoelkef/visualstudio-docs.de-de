@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610410"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Vorgehensweise: Erstellen eines Projekts, das über Ressourcen verfügt
 Wenn Sie lokalisierte Versionen eines Projekts erstellen, müssen alle Benutzeroberflächenelemente in Ressourcendateien für die verschiedenen Sprachen eingeteilt werden. Wenn das Projekt nur Zeichenfolgen verwendet, können die Ressourcendateien Textdateien verwenden. Alternativ können Sie *RESX*-Dateien als Ressourcendateien verwenden.
@@ -77,7 +77,7 @@ Das folgende Beispielprojekt enthält zwei Aufgaben: die Aufgabe `GenerateResour
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[MSBuild](../msbuild/msbuild.md)  
-[GenerateResource-Aufgabe](../msbuild/generateresource-task.md)  
-[Csc-Aufgabe](../msbuild/csc-task.md)  
-[Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)
+- [Csc-Aufgabe](../msbuild/csc-task.md)
+- [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089223"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841702"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -22,13 +20,13 @@ Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betri
 
 > [!NOTE]
 > Nicht alle Abonnements auf einer bestimmten Ebene sind berechtigt, Supportanfragen zu empfangen. Abonnements, die über FTE, NFR, MPN, MCT und andere Programme erworben wurden, empfangen keine Supportanfragen. Wenn Ihr Abonnement nicht dafür berechtigt ist, technische Supportanfragen zu empfangen, wird die Kachel „Technischer Support“ nicht bei Ihren verfügbaren Vorteilen angezeigt.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Kachel des Vorteils „Technischer Support“](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Wenn Sie den technischen Support nutzen wollen, gehen Sie zu https://my.visualstudio.com/Benefits, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der entsprechenden Kachel auf **Chat to activate** (Chat aktivieren). 
-2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre Vertrags-ID und Ihre Zugriffs-ID erstellen und diese für Sie bereitstellen kann. 
+1. Wenn Sie den technischen Support nutzen wollen, gehen Sie zu https://my.visualstudio.com/Benefits, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der entsprechenden Kachel auf **Chat to activate** (Chat aktivieren).
+2. Dadurch wird eine Chatsitzung mit einem Mitarbeiter gestartet, der Ihre Vertrags-ID und Ihre Zugriffs-ID erstellen und diese für Sie bereitstellen kann.
 3. Sie müssen dem Mitarbeiter Folgendes angeben, um den Vorgang abzuschließen:
    - Die E-Mail Adresse, die Sie für die Anmeldung bei Ihrem Abonnement verwenden.
    - Die Abonnement-ID, die sich auf der Registerkarte [Abonnements](https://my.visualstudio.com/subscriptions) befindet.
@@ -38,7 +36,7 @@ Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betri
 
 
 > [!NOTE]
-> Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.   
+> Wählen Sie Ihr Land aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
 
 
 ## <a name="how-to-submit-an-incident"></a>Übermitteln eines Vorfalls
@@ -48,12 +46,12 @@ Wenn Sie Unterstützung benötigen und Ihre Vertrags-ID und Zugriffs-ID bereits 
 ### <a name="submit-an-incident-online"></a>Übermitteln eines Incidents (online)
 
 1. Geben Sie das Produkt an, bei dem Sie Hilfe benötigen, wenn Sie [online einen Incident senden](http://support.microsoft.com/oas/). Sie können dieses aus den verschiedenen Listen auswählen oder anhand des Namens danach suchen. Wenn Sie beispielsweise in Visual Studio Enterprise 2017 einen Incident senden möchten, klicken Sie in der Gruppe **Entwicklertools** auf **Visual Studio**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Technischer Support-Vorteil: Auswählen des Produkts, bei dem der Incident auftrat](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Wählen Sie das Produkt aus, für das Sie Support benötigen. (Klicken Sie in der Liste der Visual Studio-Produkte beispielsweise auf **Visual Studio Enterprise 2017**.)
 3. Wählen Sie auf der Seite **Create an incident** (Einen Incident erstellen) aus der Dropdownliste den entsprechenden Problemtyp aus. In unserem Beispiel haben wir **Integrierte Entwicklungsumgebung (IDE)** gewählt.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Technischer Support-Vorteil: Erstellen eines Incidents](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Wählen Sie dann die **Kategorie**, die am besten zu Ihrer Frage bzw. Ihrem Problem passt. In unserem Beispiel haben wir **Architect tools** (Architektentools) gewählt.
@@ -64,7 +62,7 @@ Wenn Sie Unterstützung benötigen und Ihre Vertrags-ID und Zugriffs-ID bereits 
    - Geben Sie Ihre Zugriffs-ID und Vertrags-ID ein.
    - Klicken Sie auf **Hinzufügen**.
 7. Nachdem Ihr Supportvertrag hinzugefügt wurde, erscheint er in der Liste „Professional Support Contract“ (Professioneller Support-Vertrag). Wählen Sie diesen aus, und klicken Sie auf **Fortfahren**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Technischer Support-Vorteil: Zahlung](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Geben Sie Ihre Kontaktinformationen und Ihre bevorzugte Kontaktmethode an, und klicken Sie auf **Fortfahren**.

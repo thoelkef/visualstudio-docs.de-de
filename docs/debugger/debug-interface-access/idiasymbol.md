@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e0bdf7c5c22794fa271e43dd1b4c4605480cc3f
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227851"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603117"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Beschreibt die Eigenschaften einer Instanz des Symbols.
@@ -343,10 +343,10 @@ Bibliothek: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Siehe auch
-[Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[Klassenhierarchie der Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
-[Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
-[Compiland](../../debugger/debug-interface-access/compiland.md)
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [Klassenhierarchie der Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+- [Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Compiland](../../debugger/debug-interface-access/compiland.md)

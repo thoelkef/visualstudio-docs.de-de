@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965458"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843233"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Erste Schritte mit Kubernetes-Tools für Visual Studio
 
 Die Visual Studio-Kubernetes-Tools vereinfachen die Entwicklung von Anwendungen in Containern für Kubernetes. Visual Studio kann die Konfiguration als Code erforderlichen Dateien für Kubernetes-Bereitstellung, z. B. dockerfile-Dateien und Helm-Diagrammen unterstützen automatisch erstellen. Sie können Debuggen Ihres Codes in einem aktiven Azure Kubernetes Service (AKS)-Cluster mithilfe von Azure-Dev-Speicherplätzen oder direkt in einem AKS-Cluster aus veröffentlichen in Visual Studio.
 
-In diesem Tutorial wird die Verwendung von Visual Studio zum Hinzufügen von Kubernetes-Unterstützung zu einem Projekt, und Veröffentlichen in AKS behandelt. Wenn Sie in erster Linie mit [Azure Dev Leerzeichen](http://aka.ms/get-azds) zum Debuggen und Testen Sie das Projekt, das in AKS ausgeführte, können Sie direkt zum die [Tutorial für Azure Dev Leerzeichen](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) stattdessen.
+In diesem Tutorial wird die Verwendung von Visual Studio zum Hinzufügen von Kubernetes-Unterstützung zu einem Projekt, und Veröffentlichen in AKS behandelt. Wenn Sie in erster Linie mit [Azure Dev Leerzeichen](https://aka.ms/get-azds) zum Debuggen und Testen Sie das Projekt, das in AKS ausgeführte, können Sie direkt zum die [Tutorial für Azure Dev Leerzeichen](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) stattdessen.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -78,7 +78,7 @@ Die hinzugefügten Dateien sind:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Veröffentlichen Sie in Azure Kubernetes Service (AKS)
 
-Mit diesen Dateien vorhanden können Sie Visual Studio-IDE schreiben und Debuggen von Ihrem Anwendungscode verwenden, so wie bisher. Sie können auch [Azure Dev Leerzeichen](http://aka.ms/get-azds) schnell ausführen und Debuggen Ihres Codes in einem AKS-Cluster live ausgeführt. Weitere Informationen finden Sie die [Speicherplätze für Azure-Dev-Tutorial](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Mit diesen Dateien vorhanden können Sie Visual Studio-IDE schreiben und Debuggen von Ihrem Anwendungscode verwenden, so wie bisher. Sie können auch [Azure Dev Leerzeichen](https://aka.ms/get-azds) schnell ausführen und Debuggen Ihres Codes in einem AKS-Cluster live ausgeführt. Weitere Informationen finden Sie die [Speicherplätze für Azure-Dev-Tutorial](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Sobald Sie Ihr Code ausgeführt werden sollen haben, wie Sie können direkt aus Visual Studio in einem AKS-Cluster veröffentlichen.
 
@@ -120,4 +120,4 @@ Herzlichen Glückwunsch! Sie können jetzt die volle Leistungsfähigkeit von Vis
 
 Erfahren Sie mehr über Kubernetes-Entwicklung in Azure durch Lesen der [Dokumentation AKS](/azure/aks).
 
-Erfahren Sie mehr über Azure Dev Leerzeichen durch Lesen der [Speicherplätze für Azure-Dev-Dokumentation](http://aka.ms/get-azds)
+Erfahren Sie mehr über Azure Dev Leerzeichen durch Lesen der [Speicherplätze für Azure-Dev-Dokumentation](https://aka.ms/get-azds)

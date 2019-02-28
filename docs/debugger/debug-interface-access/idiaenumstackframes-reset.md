@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7432359916c2f6af904c892ab1951a77e4e248b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0bdf24fb9926c66b389430208d16f943af41cc11
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641441"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
-Setzt die Enumerationsfolge auf den Anfang zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK`zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+Setzt die Enumerationsfolge auf den Anfang zurück.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt `S_OK`zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853520"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602480"
 ---
 # <a name="build-loggers"></a>Buildprotokollierungen
 Protokollierungen bieten eine Möglichkeit, die Ausgabe des Builds anzupassen und Meldungen, Fehler oder Warnungen als Reaktion auf bestimmte Buildereignisse anzuzeigen. Jede Protokollierung wird als .NET- Klasse implementiert, die die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle implementiert, die in der Assembly *Microsoft.Build.Framework.dll* definiert ist.
@@ -25,8 +25,8 @@ Protokollierungen bieten eine Möglichkeit, die Ausgabe des Builds anzupassen un
 Es gibt zwei Ansätze, die Sie verwenden können, wenn Sie eine Protokollierung implementieren:
 
 - Implementieren Sie die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle direkt.
-- Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Logger> ab, die in der Assembly *Microsoft.Build.Utilities.dll* definiert ist. <xref:Microsoft.Build.Utilities.Logger> implementiert <xref:Microsoft.Build.Framework.ILogger> und bietet standardmäßig Implementierungen einiger <xref:Microsoft.Build.Framework.ILogger>-Elemente.  
-  
+- Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Logger> ab, die in der Assembly *Microsoft.Build.Utilities.dll* definiert ist. <xref:Microsoft.Build.Utilities.Logger> implementiert <xref:Microsoft.Build.Framework.ILogger> und bietet standardmäßig Implementierungen einiger <xref:Microsoft.Build.Framework.ILogger>-Elemente.
+
   In diesem Thema wird erläutert, wie Sie eine einfache Protokollierung schreiben, die von <xref:Microsoft.Build.Utilities.Logger> abgeleitet ist und Meldungen in der Konsole als Reaktion auf bestimmte Buildereignisse anzeigt.
 
 ## <a name="register-for-events"></a>Registrieren für Ereignisse
@@ -76,5 +76,5 @@ Das folgende Beispiel zeigt das Implementieren einer Protokollierung, die das Pr
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Siehe auch
-[Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea8f2b9fc9b6cc2694db94e156f1a182fb98e29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 329a3aa2805e8a95e14a5d78dc2231ade81ad6e4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011597"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691825"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Stop-Anweisungen in Visual Basic
-Die Stop-Anweisung in Visual Basic bietet eine Alternative zum Festlegen eines Haltepunktes. Wenn der Debugger auf eine Stop-Anweisung trifft, wird die Programmausführung unterbrochen (der Unterbrechungsmodus wird aktiviert). C#-Programmierer erzielen den gleichen Effekt mit einem Aufruf von System.Diagnostics.Debugger.Break.  
-  
- Sie legen Stop-Anweisungen fest oder entfernen sie, indem Sie den Quellcode bearbeiten. Stop-Anweisungen können im Gegensatz zu Haltepunkten jedoch nicht mithilfe von Debuggerbefehlen definiert oder entfernt werden.  
-  
- Anders als eine End-Anweisung setzt die Stop-Anweisung keine Variablen zurück und kehrt auch nicht zum Entwurfsmodus zurück. Um mit der Programmausführung fortzufahren, können Sie im Menü Debuggen die Option Weiter auswählen.  
-  
- Beim Ausführen einer Visual Basic-Anwendung außerhalb des Debuggers bewirkt eine Stop-Anweisung, dass der Debugger gestartet wird, sofern das Just‑In‑Time-Debuggen aktiviert ist. Ist das Just-In-Time-Debuggen nicht aktiviert, verhält sich die Stop-Anweisung wie eine End-Anweisung und beendet die Ausführung. Da kein QueryUnload-Ereignis oder Unload-Ereignis auftritt, müssen alle Stop-Anweisungen aus der Releaseversion der Visual Basic-Anwendung entfernt werden. Weitere Informationen hierzu finden Sie unter [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md).  
-  
- Damit Sie Stop-Anweisungen nicht explizit entfernen müssen, können Sie die bedingte Kompilierung nutzen:  
-  
+Die Stop-Anweisung in Visual Basic bietet eine Alternative zum Festlegen eines Haltepunktes. Wenn der Debugger auf eine Stop-Anweisung trifft, wird die Programmausführung unterbrochen (der Unterbrechungsmodus wird aktiviert). C#-Programmierer erzielen den gleichen Effekt mit einem Aufruf von System.Diagnostics.Debugger.Break.
+
+ Sie legen Stop-Anweisungen fest oder entfernen sie, indem Sie den Quellcode bearbeiten. Stop-Anweisungen können im Gegensatz zu Haltepunkten jedoch nicht mithilfe von Debuggerbefehlen definiert oder entfernt werden.
+
+ Anders als eine End-Anweisung setzt die Stop-Anweisung keine Variablen zurück und kehrt auch nicht zum Entwurfsmodus zurück. Um mit der Programmausführung fortzufahren, können Sie im Menü Debuggen die Option Weiter auswählen.
+
+ Beim Ausführen einer Visual Basic-Anwendung außerhalb des Debuggers bewirkt eine Stop-Anweisung, dass der Debugger gestartet wird, sofern das Just‑In‑Time-Debuggen aktiviert ist. Ist das Just-In-Time-Debuggen nicht aktiviert, verhält sich die Stop-Anweisung wie eine End-Anweisung und beendet die Ausführung. Da kein QueryUnload-Ereignis oder Unload-Ereignis auftritt, müssen alle Stop-Anweisungen aus der Releaseversion der Visual Basic-Anwendung entfernt werden. Weitere Informationen hierzu finden Sie unter [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md).
+
+ Damit Sie Stop-Anweisungen nicht explizit entfernen müssen, können Sie die bedingte Kompilierung nutzen:
+
 ```cpp
-#If DEBUG Then  
-   Stop  
-#Else  
-   ' Don't stop  
-#End If  
-```  
-  
- Eine Alternative besteht darin, eine Assert-Anweisung anstelle der Stop-Anweisung zu verwenden. Durch eine Debug.Assert-Anweisung wird die Ausführung nur unterbrochen, wenn eine bestimmte Bedingung nicht erfüllt wird. Außerdem wird sie beim Erstellen einer Releaseversion automatisch entfernt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md). Wenn Sie eine Assert-Anweisung benötigen, durch die die Ausführung in der Debugversion immer unterbrochen wird, verfahren Sie wie folgt:  
-  
+#If DEBUG Then
+   Stop
+#Else
+   ' Don't stop
+#End If
+```
+
+ Eine Alternative besteht darin, eine Assert-Anweisung anstelle der Stop-Anweisung zu verwenden. Durch eine Debug.Assert-Anweisung wird die Ausführung nur unterbrochen, wenn eine bestimmte Bedingung nicht erfüllt wird. Außerdem wird sie beim Erstellen einer Releaseversion automatisch entfernt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md). Wenn Sie eine Assert-Anweisung benötigen, durch die die Ausführung in der Debugversion immer unterbrochen wird, verfahren Sie wie folgt:
+
 ```csharp
-Debug.Assert(false)  
-```  
-  
- Eine weitere Alternative ist die Verwendung der Debug.Fail-Methode:  
-  
+Debug.Assert(false)
+```
+
+ Eine weitere Alternative ist die Verwendung der Debug.Fail-Methode:
+
 ```csharp
-Debug.Fail("a clever output string goes here")  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
+Debug.Fail("a clever output string goes here")
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

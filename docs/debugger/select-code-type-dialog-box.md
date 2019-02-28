@@ -21,22 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7568975ff23694e9a62f7d6b3010d1598c5bc8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940166"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701354"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
-Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhängen** und klicken auf die Schaltfläche **Auswählen**.  
-  
- **Zu debuggenden Codetyp automatisch bestimmen**  
- Der entsprechende Debugger wird auf Grundlage des ausgeführten Codetyps ausgewählt.  
-  
- **Diese Codetypen debuggen:**  
- Wählen Sie den zu debuggenden Codetyp in der angegebenen Liste aus.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhängen** und klicken auf die Schaltfläche **Auswählen**.
+
+ **Den Typ der zu debuggenden Codetyp automatisch bestimmen** die entsprechende Debugger wird basierend auf die Art des ausgeführten Codetyps ausgewählt.
+
+ **Diese Codetypen debuggen:** aus der Liste aus, wählen Sie den Typ des Codes, die Sie debuggen möchten.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

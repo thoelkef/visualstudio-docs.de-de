@@ -16,24 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb9e84de2724943511017027f51fa8e74b73091
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008698"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716843"
 ---
 # <a name="debugging-wcf-services"></a>Debuggen von WCF-Diensten
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md)  
- Beschreibt Beschränkungen beim Debuggen von WCF.  
-  
- [Vorgehensweise: Ausführen eines Einzelschritts in WCF-Diensten](../debugger/how-to-step-into-wcf-services.md)  
- Erläutert die Debuggerunterstützung beim Ausführen von Einzelschritten in einen WCF-Dienst.  
-  
- [Vorgehensweise: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
- Beschreibt das Debuggen eines WCF-Diensts, der außerhalb von IIS oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md) beschreibt Beschränkungen beim Debuggen von WCF.
+
+ [Gewusst wie: Einzelschritt in WCF-Dienste](../debugger/how-to-step-into-wcf-services.md) erläutert die Debuggerunterstützung für die schrittweise Ausführung eines WCF-Diensts.
+
+ [Gewusst wie: Debuggen eines WCF-Diensts für selbstgehostete](../debugger/how-to-debug-a-self-hosted-wcf-service.md) wird beschrieben, wie Sie einen WCF-Dienst zu debuggen, die außerhalb von IIS ausgeführt wird oder die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Entwicklungsserver.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 444e26aa0f4ec4cb7270f6632b6d5f7e56a34853
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600284"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840324"
 ---
 # <a name="handle-specialized-deployment"></a>Behandeln der speziellen Bereitstellung
 Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unterstützt ein Webprojekt eine Bereitstellung können Sie ein Projekt, das einen Webserver zu aktualisieren. Ebenso eine **intelligente Geräte** Projekt unterstützt eine Bereitstellung aus, um eine integrierte Anwendung auf dem Zielgerät zu kopieren. Projektuntertypen können spezielle bereitstellungsverhalten angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle. Diese Schnittstelle definiert einen vollständigen Satz von Bereitstellungsvorgänge:
@@ -288,7 +288,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
     ```
 
 > [!NOTE]
->  Alle Codebeispiele in diesem Thema werden die Teile eines umfangreicheren Beispiels unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).
+>  Alle Codebeispiele in diesem Thema werden die Teile eines umfangreicheren Beispiels unter [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Siehe auch
 - [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

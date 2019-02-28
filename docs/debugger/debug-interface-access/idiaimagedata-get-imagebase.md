@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238eb138f7e7452e942047d776411d973a689c2a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623865"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Ruft die Speicheradresse, in dem das Abbild basieren soll.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt den Basiswert der vorgeschlagenen Image zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Aufgrund von Image-Basis-Konflikten kann ein Bild automatisch auf einen nicht verwendeten Speicherbereich ein REBASE ausgeführt werden, wenn es geladen wird. Diese Methode gibt den Basis-Hinweis (empfohlene Speicherort), der zum Zeitpunkt der Kompilierung im Modul gespeichert wurden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Ruft die Speicheradresse, in dem das Abbild basieren soll.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_imageBase ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt den Basiswert der vorgeschlagenen Image zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Anmerkungen
+ Aufgrund von Image-Basis-Konflikten kann ein Bild automatisch auf einen nicht verwendeten Speicherbereich ein REBASE ausgeführt werden, wenn es geladen wird. Diese Methode gibt den Basis-Hinweis (empfohlene Speicherort), der zum Zeitpunkt der Kompilierung im Modul gespeichert wurden.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

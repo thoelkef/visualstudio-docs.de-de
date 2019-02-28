@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227682"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698988"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# in Visual Studio-Debugger
 Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch** mithilfe von Formatbezeichnern. Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, erscheint das Ergebnis einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) in der Anzeige des angegebenen Formats.
@@ -68,5 +68,5 @@ Die folgende Tabelle beschreibt die C# Formatbezeichner für Visual Studio-Debug
 |results|Wird mit einer Variablen eines Typs, die "IEnumerable" oder "IEnumerable" implementiert\<T >, in der Regel das Ergebnis eines Abfrageausdrucks. Zeigt nur die das Abfrageergebnis enthaltenden Member an.|Zeigt alle Member an.|Zeigt die Member an, die die Bedingungen der Abfrage erfüllen.|
 
 ## <a name="see-also"></a>Siehe auch
-[Fenster „Überwachen“ und „Schnellüberwachung“](../debugger/watch-and-quickwatch-windows.md)  
-[Autos and Locals windows (Fenster „Auto“ und „Lokal“)](../debugger/autos-and-locals-windows.md)
+- [Fenster „Überwachen“ und „Schnellüberwachung“](../debugger/watch-and-quickwatch-windows.md)
+- [Autos and Locals windows (Fenster „Auto“ und „Lokal“)](../debugger/autos-and-locals-windows.md)

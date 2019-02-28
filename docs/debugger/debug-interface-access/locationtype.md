@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 779df14d01950b90a45764ba9d84760a1448d475
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627934"
 ---
 # <a name="locationtype"></a>LocationType
 Gibt die Art der Standortinformationen in ein Symbol an.
@@ -42,41 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elements
-`LocIsNull`  
-Informationen zum Speicherort ist nicht verfügbar.
+`LocIsNull` Informationen zum Speicherort ist nicht verfügbar.
 
-`LocIsStatic`  
-Speicherort ist statisch.
+`LocIsStatic` Speicherort ist statisch.
 
-`LocIsTLS`  
-Speicherort ist im lokalen Threadspeicher.
+`LocIsTLS` Speicherort ist im lokalen Threadspeicher.
 
-`LocIsRegRel`  
-Speicherort ist relativ registrieren.
+`LocIsRegRel` Speicherort ist relativ registrieren.
 
-`LocIsThisRel`  
-Speicherort ist `this`-relative.
+`LocIsThisRel` Speicherort ist `this`-relative.
 
-`LocIsEnregistered`  
-Speicherort ist in einem Register.
+`LocIsEnregistered` Speicherort ist in einem Register.
 
-`LocIsBitField`  
-Speicherort ist in einem Bitfeld.
+`LocIsBitField` Speicherort ist in einem Bitfeld.
 
-`LocIsSlot`  
-Speicherort ist ein Microsoft Intermediate Language (MSIL)-Slot.
+`LocIsSlot` Speicherort ist ein Microsoft Intermediate Language (MSIL)-Slot.
 
-`LocIsIlRel`  
-Der Speicherort ist relativ MSIL.
+`LocIsIlRel` Der Speicherort ist relativ MSIL.
 
-`LocInMetaData`  
-Speicherort ist in den Metadaten.
+`LocInMetaData` Speicherort ist in den Metadaten.
 
-`LocIsConstant`  
-Speicherort ist in einem konstanten Wert.
+`LocIsConstant` Speicherort ist in einem konstanten Wert.
 
-`LocTypeMax`  
-Die Anzahl der Typen in dieser Enumeration.
+`LocTypeMax` Die Anzahl der Typen in dieser Enumeration.
 
 ## <a name="remarks"></a>Anmerkungen
 Die Eigenschaften für die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Schnittstelle hängen Speicherort des Symbols, in der Imagedatei. Weitere Informationen finden Sie unter [Orte für Symboldateien](../../debugger/debug-interface-access/symbol-locations.md).
@@ -87,7 +75,7 @@ Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [i
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)  
-[Symbolspeicherorte](../../debugger/debug-interface-access/symbol-locations.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)
+- [Symbolspeicherorte](../../debugger/debug-interface-access/symbol-locations.md)

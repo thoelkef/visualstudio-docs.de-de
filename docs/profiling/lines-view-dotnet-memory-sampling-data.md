@@ -10,55 +10,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d49cba09d5ca9f7a3a88d2b585937b50a2c5aa1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033071"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625204"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht: Samplingdaten zum .NET-Speicher
-In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die die Samplingmethode verwenden, werden die Anweisungen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben. Die Spalten enthalten auch die Größe und Anzahl der Zuordnungen.  
-  
- In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten.  
-  
- Eine Anweisung wird mit dem Folgenden identifiziert:  
-  
-- Die Quelldatei, die die Funktionsanweisung enthält.  
-  
-- Die Funktion, die die Anweisung enthält.  
-  
-- Die Quellzeile, an der die Anweisung beginnt.  
-  
-- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.  
-  
-- Die Quellzeile, an der die Anweisung endet.  
-  
-- Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
-  
-  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.  
-  
-  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.  
-  
-|Spalte|Beschreibung|  
-|------------|-----------------|  
-|**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
-|**Prozessname**|Der Prozessname.|  
-|**Modulname**|Der Name des Moduls, das die Anweisung enthält.|  
-|**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält.|  
-|**Quelldatei**|Die Quelldatei, die die Anweisung enthält.|  
-|**Funktionsname**|Der Namen der Funktion, die die Anweisung enthält.|  
-|**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
-|**Funktionsadresse**|Die Startadresse der Funktion.|  
-|**Quellanfangszeile**|Die Nummer der Anfangszeile in der Quelldatei, an der die Zuordnung aufgetreten ist.|  
-|**Quellendzeile**|Die Nummer der Endzeile in der Quelldatei, an der die Zuordnung aufgetreten ist.|  
-|**Quellanfangszeichen**|Das Offset des Startzeichens in der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|  
-|**Quellendzeichen**|Der Offset des Endzeichens der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|  
-|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile mit folgender Syntax:`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|  
-|**Exklusive Speicherbelegungen**|Die Gesamtanzahl der Objekte, die in dieser Zeile erstellt wurden.|  
-|**Exklusive Zuordnungen %**|Der Prozentsatz aller Objekte, die während der Profilerstellung erstellt und in dieser Zeile zugeordnet wurden.|  
-|**Exklusive Bytes**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|  
-|**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Zeilenansicht](../profiling/lines-view-sampling-data.md)
+In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die die Samplingmethode verwenden, werden die Anweisungen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben. Die Spalten enthalten auch die Größe und Anzahl der Zuordnungen.
+
+ In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten.
+
+ Eine Anweisung wird mit dem Folgenden identifiziert:
+
+- Die Quelldatei, die die Funktionsanweisung enthält.
+
+- Die Funktion, die die Anweisung enthält.
+
+- Die Quellzeile, an der die Anweisung beginnt.
+
+- Das Zeichen in der Quellzeile, an dem die Anweisung beginnt.
+
+- Die Quellzeile, an der die Anweisung endet.
+
+- Das Zeichen in der Quellzeile, an dem die Anweisung endet.
+
+  Die Zeilennamensspalte, die eine sortierbare Verkettung der Bezeichnerdaten bereitstellt.
+
+  Per Definition ruft eine Anweisung keine anderen Funktionen auf. Daher sind nur exklusive Werte aufgeführt.
+
+|Spalte|Beschreibung|
+|------------|-----------------|
+|**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
+|**Prozessname**|Der Prozessname.|
+|**Modulname**|Der Name des Moduls, das die Anweisung enthält.|
+|**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält.|
+|**Quelldatei**|Die Quelldatei, die die Anweisung enthält.|
+|**Funktionsname**|Der Namen der Funktion, die die Anweisung enthält.|
+|**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|
+|**Funktionsadresse**|Die Startadresse der Funktion.|
+|**Quellanfangszeile**|Die Nummer der Anfangszeile in der Quelldatei, an der die Zuordnung aufgetreten ist.|
+|**Quellendzeile**|Die Nummer der Endzeile in der Quelldatei, an der die Zuordnung aufgetreten ist.|
+|**Quellanfangszeichen**|Das Offset des Startzeichens in der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|
+|**Quellendzeichen**|Der Offset des Endzeichens der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|
+|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile mit folgender Syntax:`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|
+|**Exklusive Speicherbelegungen**|Die Gesamtanzahl der Objekte, die in dieser Zeile erstellt wurden.|
+|**Exklusive Zuordnungen %**|Der Prozentsatz aller Objekte, die während der Profilerstellung erstellt und in dieser Zeile zugeordnet wurden.|
+|**Exklusive Bytes**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
+|**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
+
+## <a name="see-also"></a>Siehe auch
+- [Zeilenansicht](../profiling/lines-view-sampling-data.md)
