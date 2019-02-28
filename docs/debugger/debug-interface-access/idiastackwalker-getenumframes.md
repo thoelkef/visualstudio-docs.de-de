@@ -12,40 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b59824b8010987161937d16f852295e6929f2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9011f0becd893fa4ca966c40013844b0be47e46d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951910"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629390"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
-Ruft einen Stack-Frame-Enumerator für X86 Plattformen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT getEnumFrames(   
-   IDiaStackWalkHelper*   pHelper,  
-   IDiaEnumStackFrames**  ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pHelper`  
- [in] Das Hilfsprogramm [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt.  
-  
- `ppEnum`  
- [out] Gibt eine [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) -Objekt, das eine Liste der enthält [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Um eine Liste der Stack-Frame auf eine andere Plattform zu erhalten, rufen die [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
+Ruft einen Stack-Frame-Enumerator für X86 Plattformen.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT getEnumFrames( 
+   IDiaStackWalkHelper*   pHelper,
+   IDiaEnumStackFrames**  ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pHelper`
+
+[in] Das Hilfsprogramm [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt.
+
+ `ppEnum`
+
+[out] Gibt eine [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) -Objekt, das eine Liste der enthält [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Anmerkungen
+ Um eine Liste der Stack-Frame auf eine andere Plattform zu erhalten, rufen die [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

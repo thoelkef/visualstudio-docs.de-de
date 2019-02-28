@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c73f99fdb210c611287f07c5ba4131b3a2d2d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a7096550dc3de67ba38058c4029a6bd3c30ca4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026070"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611489"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-Ruft den compilerspezifischen Frametyp ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_type (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt einen Wert aus der [StackFrameTypeEnum-Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md) -Enumeration, die den compilerspezifischen Frametyp angibt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [StackFrameTypeEnum-Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md)
+Ruft den compilerspezifischen Frametyp ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_type ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt einen Wert aus der [StackFrameTypeEnum-Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md) -Enumeration, die den compilerspezifischen Frametyp angibt.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [StackFrameTypeEnum-Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md)

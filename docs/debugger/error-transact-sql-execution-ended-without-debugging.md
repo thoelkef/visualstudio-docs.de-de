@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Ausführen von Transact-SQL wurde ohne Debuggen beendet. | Microsoft-Dokumentation'
+title: 'Fehler: Ein Transact-SQL-Ausführung wurde ohne Debuggen beendet. | Microsoft-Dokumentation'
 ms.date: 11/08/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -15,40 +15,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17c1854826de2314dfe8124d99f6ec6c8899ee70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011220"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722342"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Fehler: Das Ausführen von Transact-SQL wurde ohne Debuggen beendet
 
-Dieser Fehler tritt auf, wenn Sie versuchen, eine Transact-SQL oder eine CLR-Prozedur Debuggen und der Debugger keine Debugmeldungen vom SQL Server erhält.  
-  
-Dieses Problem kann aufgrund von Netzwerkproblemen oder zu Problemen auf dem SQL Server sein, aber die wahrscheinlichste Ursache ist ein Berechtigungsproblem vorliegt.  
-  
-Zwei Konten sind beteiligt:  
-  
-- Das Anwendungskonto ist das Benutzerkonto, unter dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird.  
-  
-- Das Verbindungskonto ist die Identität, mit der die Verbindung zu SQL Server hergestellt wird. Dieses Konto ist nicht unbedingt identisch mit der Identität, die Visual Studio ausgeführt wird, als ob die Verbindung mit SQL-Authentifizierung verwendet wird.  
-  
-  SQL-Debuggen erfordert, dass das Konto muss mit dem Verbindungskonto übereinstimmen oder Mitglied der Rolle Sysadmin.  
-  
-  Wenn Sie einen SQL-Kontonamen wie sa verwenden, muss das Anwendungskonto auf dem SQL Server als Systemadministrator eingerichtet werden. Standardmäßig sind Administratoren auf dem Computer, den SQLServer ausgeführt wird, auf SQL Server-Systemadministratoren.  
-  
-  So können Sie diesen Fehler korrigieren:  
-  
-  - Überprüfen Sie die Berechtigungseinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
-  
-  - Stellen Sie sicher, dass SQL-Debuggen ordnungsgemäß eingerichtet ist.  
-  
-  - Weitere Informationen erhalten Sie vom Netzwerk- oder Datenbankadministrator.  
-  
+Dieser Fehler tritt auf, wenn Sie versuchen, eine Transact-SQL oder eine CLR-Prozedur Debuggen und der Debugger keine Debugmeldungen vom SQL Server erhält.
+
+Dieses Problem kann aufgrund von Netzwerkproblemen oder zu Problemen auf dem SQL Server sein, aber die wahrscheinlichste Ursache ist ein Berechtigungsproblem vorliegt.
+
+Zwei Konten sind beteiligt:
+
+- Das Anwendungskonto ist das Benutzerkonto, unter dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird.
+
+- Das Verbindungskonto ist die Identität, mit der die Verbindung zu SQL Server hergestellt wird. Dieses Konto ist nicht unbedingt identisch mit der Identität, die Visual Studio ausgeführt wird, als ob die Verbindung mit SQL-Authentifizierung verwendet wird.
+
+  SQL-Debuggen erfordert, dass das Konto muss mit dem Verbindungskonto übereinstimmen oder Mitglied der Rolle Sysadmin.
+
+  Wenn Sie einen SQL-Kontonamen wie sa verwenden, muss das Anwendungskonto auf dem SQL Server als Systemadministrator eingerichtet werden. Standardmäßig sind Administratoren auf dem Computer, den SQLServer ausgeführt wird, auf SQL Server-Systemadministratoren.
+
+  So können Sie diesen Fehler korrigieren:
+
+  - Überprüfen Sie die Berechtigungseinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von SQL Server-Berechtigungen zum Debugging](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+
+  - Stellen Sie sicher, dass SQL-Debuggen ordnungsgemäß eingerichtet ist.
+
+  - Weitere Informationen erhalten Sie vom Netzwerk- oder Datenbankadministrator.
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Einrichten von SQL-Debugging](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Vorgehensweise: Festlegen von SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

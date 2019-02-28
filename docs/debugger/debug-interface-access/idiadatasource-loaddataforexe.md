@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b078e918f399019b2532e7fe3adea220fc09e012
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987547"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609643"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Wird geöffnet, und bereitet die Debug-Daten, die der Datei.exe/.dll zugeordnet.
@@ -33,13 +33,16 @@ HRESULT loadDataForExe (
 ```
 
 #### <a name="parameters"></a>Parameter
-executable  
+executable
+
 [in] Pfad zur .exe oder .dll-Datei.
 
-searchPath  
+searchPath
+
 [in] Alternativen Pfad für die Debug-Daten zu suchen.
 
-pCallback  
+pCallback
+
 [in] Ein `IUnknown` Schnittstelle für ein Objekt, das eine Debug-Rückrufschnittstelle,, z. B. unterstützt die [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), bzw. die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstellen.
 
 ## <a name="return-value"></a>Rückgabewert
@@ -54,7 +57,7 @@ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die
 |E_INVALIDARG|Ungültiger Parameter.|
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 Die debugheader der Datei.exe/.dll benennt den Speicherort der zugeordneten Debuggen.
 
 Diese Methode liest den debugheader und sucht dann nach und bereitet die Debug-Daten. Der Status der Suche kann optional gemeldet und durch Rückrufe gesteuert werden. Z. B. die [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) wird aufgerufen, wenn die `IDiaDataSource::loadDataForExe` Methode findet und ein Debugverzeichnis verarbeitet.
@@ -84,12 +87,12 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
-[IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
-[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)  
-[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)  
-[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+- [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

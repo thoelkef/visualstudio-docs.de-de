@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0244aca54ffe7b68ea4cfd82be465c28524758ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616104"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Ruft einen Enumerator für Eigenschaften in dieser Gruppe ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Enum (   
-   IEnumSTATPROPSTG** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppenum`  
- [out] Gibt eine `IEnumSTATPROPSTG` -Objekt (im Namespace Microsoft.VisualStudio.OLE.Interop), die eine Enumeration von Eigenschaften darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Ruft einen Enumerator für Eigenschaften in dieser Gruppe ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Enum ( 
+   IEnumSTATPROPSTG** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppenum`
+
+[out] Gibt eine `IEnumSTATPROPSTG` -Objekt (im Namespace Microsoft.VisualStudio.OLE.Interop), die eine Enumeration von Eigenschaften darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

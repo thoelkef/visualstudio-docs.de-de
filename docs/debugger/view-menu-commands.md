@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c05e19b3bbd5078b29628101e90ca33592cda31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014041"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721003"
 ---
 # <a name="view-menu-commands"></a>Befehle im Menü "Ansicht"
-Die **Ansicht** Menü enthält Befehle zum Steuern von Spy++-Benutzeroberfläche.  
-  
- **Schriftart**  
- Öffnet die **Schriftart** Dialogfeld, in dem Sie eine Schriftart für die Verwendung in der aktuellen Spy++-Ansicht auswählen können.  
-  
- **Symbolleiste**  
- Blendet Sie aus, oder die Symbolleiste angezeigt.  
-  
- **Statusleiste**  
- Zeigt die Statusleiste, oder blendet Sie aus.  
-  
- **Eigenschaften**  
- Öffnet die **Eigenschaften** im Dialogfeld für die aktive Ansicht.
+Die **Ansicht** Menü enthält Befehle zum Steuern von Spy++-Benutzeroberfläche.
+
+ **Schriftart** öffnet die **Schriftart** Dialogfeld, in dem Sie eine Schriftart für die Verwendung in der aktuellen Spy++-Ansicht auswählen können.
+
+ **Symbolleiste** bzw. Blendet die Symbolleiste.
+
+ **Statusleiste** ausgeblendet oder zeigt die Statusleiste.
+
+ **Eigenschaften** öffnet die **Eigenschaften** im Dialogfeld für die aktive Ansicht.

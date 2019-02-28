@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623423"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Gibt an, ein Ziel-Register.
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_REG_*  
-Führt die Registrierung von Intel 80 x 86- und ix86 Prozessoren und p-Code genutzt werden.
+CV_REG_ * registriert, die von Intel 80 x 86- und ix86 Prozessoren und p-Code verwendet.
 
-CV_R68_*  
-Führt die Registrierung von 68 KB-Prozessor verwendet.
+CV_R68_ * registriert, die von 68 KB-Prozessor verwendet.
 
-CV_M4_*  
-Führt die Registrierung von MIPS 4000 Reihe Prozessor verwendet.
+CV_M4_ * registriert, die von MIPS 4000 Reihe Prozessor verwendet.
 
-CV_ALPHA_*  
-Führt die Registrierung von Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.
+CV_ALPHA_ * registriert, die von der Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.
 
-CV_PPC_*  
-Führt die Registrierung, die von Get/IBM Motorola PowerPC-Prozessor verwendet.
+CV_PPC_ * registriert, die von Get/IBM Motorola PowerPC-Prozessor verwendet.
 
-CV_SH3_ * und CV_SH_\*  
-Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.
+CV_SH3_ * und CV_SH_\* Register, die von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.
 
-CV_ARM_*  
-Führt die Registrierung von Advanced RISC Machine (ARM)-Prozessoren verwendet.
+CV_ARM_ * registriert, die von Advanced RISC Machine (ARM)-Prozessoren verwendet.
 
-CV_IA64_*  
-Führt die Registrierung von Prozessoren der Intel-IA64-Serie verwendet.
+CV_IA64_ * registriert, die von Prozessoren der Intel-IA64-Serie verwendet.
 
-CV_TRI_*  
-Führt die Registrierung von Infineon Technologien TriCore Prozessor verwendet.
+CV_TRI_ * registriert, die von Infineon Technologien TriCore Prozessor verwendet.
 
-CV_AM33_*  
-Registriert von Matsushita/Panasonic AM33 verwendet und beziehen Prozessoren.
+CV_AM33_ * registriert von Matsushita/Panasonic AM33 und zugehörigen Prozessoren.
 
-CV_M32R_*  
-Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.
+CV_M32R_ * registriert, die von Mitsubishi M32R Prozessor verwendet.
 
 ## <a name="remarks"></a>Anmerkungen
 Jeder Prozessortyp verwendet seinen eigenen Satz von Registern.
@@ -461,9 +450,9 @@ Die Werte in dieser Enumeration werden für die folgenden Methoden übergeben:
 Header: cvconst.h
 
 ## <a name="see-also"></a>Siehe auch
-[Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

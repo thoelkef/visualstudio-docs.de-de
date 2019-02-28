@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 822a32bdef1a9974c12b5f2b19e03cc4bedbcb0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616806"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
-Ruft die Anzahl der Elemente in der Tabelle ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die Anzahl der Elemente in der Tabelle zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)
+Ruft die Anzahl der Elemente in der Tabelle ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die Anzahl der Elemente in der Tabelle zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+- [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

@@ -16,57 +16,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e70852f0e720f5c7c67fbce82608929ac13728f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635669"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;AssemblyIdentity&gt; -Element (ClickOnce-Anwendung)
-Identifiziert die bereitgestellte Anwendung eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.  
-  
-## <a name="syntax"></a>Syntax  
-  
+Identifiziert die bereitgestellte Anwendung eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.
+
+## <a name="syntax"></a>Syntax
+
 ```xml
-  
-      <assemblyIdentity   
-   name  
-   version  
-   publicKeyToken  
-   processorArchitecture  
-   language  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `assemblyIdentity` Element ist erforderlich. Es enthält keine untergeordneten Elemente und weist folgende Attribute.  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`Name`|Erforderlich. Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|  
-|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
-|`publicKeyToken`|Dies ist optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly empfohlen aber optional ist, ist dieses Attribut erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" nur Nullen.|  
-|`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itaniumprozessoren gegeben.|  
-|`language`|Erforderlich. Identifiziert die zweiteiligen Sprachcodes (z. B. `en-US`) der Assembly. Dieses Element ist der `asmv2` Namespace. Falls nicht angegeben, wird der Standardwert ist `neutral`.|  
-  
-## <a name="examples"></a>Beispiele  
-  
-### <a name="description"></a>Beschreibung  
- Im folgenden Codebeispiel wird veranschaulicht, eine `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
-  
-### <a name="code"></a>Code  
-  
-```xml  
-<asmv1:assemblyIdentity   
-  name="My Application Deployment.exe"   
-  version="1.0.0.0"   
-  publicKeyToken="43cb1e8e7a352766"   
-  language="neutral"   
-  processorArchitecture="x86"   
-  type="win32" />  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)   
- [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+
+      <assemblyIdentity
+   name
+   version
+   publicKeyToken
+   processorArchitecture
+   language
+/>
+```
+
+## <a name="elements-and-attributes"></a>Elemente und Attribute
+ Die `assemblyIdentity` Element ist erforderlich. Es enthält keine untergeordneten Elemente und weist folgende Attribute.
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`Name`|Erforderlich. Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|
+|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
+|`publicKeyToken`|Dies ist optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly empfohlen aber optional ist, ist dieses Attribut erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" nur Nullen.|
+|`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itaniumprozessoren gegeben.|
+|`language`|Erforderlich. Identifiziert die zweiteiligen Sprachcodes (z. B. `en-US`) der Assembly. Dieses Element ist der `asmv2` Namespace. Falls nicht angegeben, wird der Standardwert ist `neutral`.|
+
+## <a name="examples"></a>Beispiele
+
+### <a name="description"></a>Beschreibung
+ Im folgenden Codebeispiel wird veranschaulicht, eine `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).
+
+### <a name="code"></a>Code
+
+```xml
+<asmv1:assemblyIdentity
+  name="My Application Deployment.exe"
+  version="1.0.0.0"
+  publicKeyToken="43cb1e8e7a352766"
+  language="neutral"
+  processorArchitecture="x86"
+  type="win32" />
+```
+
+## <a name="see-also"></a>Siehe auch
+- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)

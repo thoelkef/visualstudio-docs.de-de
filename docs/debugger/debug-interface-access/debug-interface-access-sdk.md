@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932297"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608083"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 
@@ -27,17 +27,22 @@ Das Microsoft Debug-Schnittstelle Zugriff Software Development Kit (DIA-SDK) bie
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[Erste Schritte](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Erste Schritte](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Bietet eine Übersicht über die DIA-SDK-Funktionen, und gibt an, wo die DIA-SDK sowie die erforderlichen Header und Bibliotheksdateien installiert ist.
 
-[Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Enthält Anweisungen zur Verwendung der DIA-API zum Abfragen der PDB-Datei an.
 
-[Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Erläutert, wie Symbole und symboltags in die DIA-API verwendet werden.
 
-[Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Enthält die Schnittstellen, Methoden, Enumerationen und Strukturen der DIA-API.
 
-[Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Veranschaulicht, wie die DIA-API zu suchen und Durchsuchen von Informationen zum Debuggen.
