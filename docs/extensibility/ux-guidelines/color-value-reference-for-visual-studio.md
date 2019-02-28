@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722277"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954428"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertreferenz für Visual Studio
 
@@ -553,7 +553,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
 | Hell | Dunkel | Blau | Verwendet für... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Aktionsschaltflächen, Kombinationsfeldelemente, Befehlsleisten-Schaltflächen, Dropdown-Schaltflächen und Menüelemente: Hintergrund |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Aktionsschaltflächen, Kombinationsfeldelemente, Befehlsleisten-Schaltflächen, Dropdown-Schaltflächen und Menüelemente: Hintergrund |
 | ![#FFCCCEDB Farbmuster](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB-Muster")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![#FF465A7D Farbmuster](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D-Muster")<br />`#FF465A7D` | Automatisch ausgeblendete registerkartenrahmen |
 | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | Ausblendbaren Sie automatisch Registerkarte Standard und zeigen Sie die Hintergründe |
 | ![#FF444444 swatch](../../extensibility/ux-guidelines/media/444444.png "#FF444444 swatch")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | Registerkartentext automatisch im Hintergrund ohne Fokus Tool-Fenster Titelleistentext und Toolfenster – Registerkartentext |
@@ -570,7 +570,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 | ![#FF007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC swatch")<br />`#FF007ACC` | ![#FF007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC swatch")<br />`#FF007ACC` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Befehl befehlsleistenoptionen: Zeigen Sie mit Glyphe |
 | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FFFFFFFF Farbmuster](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF-Muster")<br />`#FFFFFFFF` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Befehl befehlsleistenoptionen: Symbol bei gedrückter Maustaste |
 | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | Befehlsleiste – Text und Dropdown-Kombinationsfeld Feld Menüelementtext |
-| ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | Befehlsleiste: Zeigen Sie mit, Maus nach unten, und ausgewählten Text |
+| ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | Befehlsleiste: Zeigen Sie mit, Maus nach unten, und ausgewählten Text |
 | ![#FFCCCEDB Farbmuster](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB-Muster")<br />`#FFCCCEDB` | ![#FF222222 swatch](../../extensibility/ux-guidelines/media/222222.png "#FF222222 swatch")<br />`#FF222222` | ![#FF8591A2 swatch](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 swatch")<br />`#FF8591A2` | Befehlsleiste: Symbolleiste mit Trennzeichen |
 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF46464A swatch](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A swatch")<br />`#FF46464A` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | Befehlszeile: der Symbolleiste Hervorhebung von Trennzeichen |
 | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | Befehlsregalhintergrunds |

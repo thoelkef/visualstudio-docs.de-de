@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318796"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954279"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -129,7 +129,7 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
 
 4. Erstellen Sie eine *PKGDEF* Datei, und fügen eine Zeile, die etwa wie folgt hinzu:
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
 
 4. Fügen Sie dem Projekt eine PKGDEF-Datei (neuen Text-Datei hinzufügen und ändern Sie die Dateierweiterung in PKGDEF). Die Pkgdef-Datei sollte diese Informationen enthalten:
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Beispiel:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
-    Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann. Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
+
+### <a name="enabling-diagnostics-tracing"></a>Aktivieren der Diagnose-Ablaufverfolgung
+
+Diagnose-Ablaufverfolgung kann aktiviert werden, um alle Meldungen zwischen Client und Server, der beim Debuggen von Problemen hilfreich sein kann. Um die diagnoseablaufverfolgung zu aktivieren, führen Sie folgende Schritte aus:
 
 4. Öffnen oder erstellen Sie die Datei mit den Arbeitsbereich *VSWorkspaceSettings.json* (siehe "Benutzer Bearbeiten der Einstellungen für einen Arbeitsbereich").
 5. Fügen Sie in der JSON-Datei die folgende Zeile hinzu:
