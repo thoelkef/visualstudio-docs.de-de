@@ -1,5 +1,5 @@
 ---
-title: Synchron automatisch geladen-Erweiterungen
+title: Synchron automatisch geladene Erweiterungen
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,30 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 960fd54564bc25a8338461c30cd8a893e277b5a5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844580"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007162"
 ---
-# <a name="synchronously-autoloaded-extensions"></a>Synchron automatisch geladen-Erweiterungen
+# <a name="synchronously-autoloaded-extensions"></a>Synchron automatisch geladene Erweiterungen
 
 Synchron automatisch geladen Erweiterungen haben sich negativ auf die Leistung von Visual Studio und konvertiert werden sollen, um asynchrone Autoload stattdessen zu verwenden. In Visual Studio 2019 Preview 2 beginnen, werden Benutzer benachrichtigt, wenn eine Erweiterung synchron automatisch geladen wird. Die Erweiterung wird geladen werden und wie gewohnt funktionieren.
 
 ![kompatibilitätswarnung Erweiterung](media/extension-compatibility-warning.png)
 
-1. Benutzer klicken können, auf **erfahren Sie mehr** , um diese Informationsseite zu erhalten.
+Benutzer können Aktionen ausführen:
 
-3. Benutzer klicken können, auf **-Leistung verwalten** zum Öffnen der [Performance Manager-Dialogfeld](#performance-manager-dialog) zeigt, dass Leistungsprobleme mit Erweiterungen und Toolfenster.
+- Klicken Sie auf **erfahren Sie mehr** , um diese Informationsseite zu erhalten.
 
-3. Benutzer klicken können, auf **diese Meldung nicht mehr anzeigen** um diese zu schließen. Bei Auswahl dieser Option wird auch verhindert, dass diese alle zukünftigen Benachrichtigungen synchron-Erweiterungen automatisch geladen ist. Benutzer weiterhin Benachrichtigungen auf andere Funktionen von Visual Studio erhalten.
+- Klicken Sie auf **-Leistung verwalten** zum Öffnen der [Performance Manager Dialogfeld](#performance-manager-dialog) zeigt, dass Leistungsprobleme mit Erweiterungen und Toolfenster.
+
+- Klicken Sie auf **diese Meldung nicht mehr anzeigen** um diese zu schließen. Bei Auswahl dieser Option wird verhindert, dass auch alle künftige Benachrichtigungen synchron-Erweiterungen automatisch geladen. Benutzer weiterhin Benachrichtigungen zu anderen Visual Studio-Features zu erhalten.
 
 ### <a name="performance-manager-dialog"></a>Dialogfeld "Performance-Manager"
 
-  ![Leistung-Dialogfeld "Manager"](media/performance-manager.png)
+![Leistung-Dialogfeld "Manager"](media/performance-manager.png)
 
-Alle Erweiterungen, die synchron alle Pakete in jeder Sitzung des Benutzers geladen werden angezeigt, der **veraltete APIs** Registerkarte.
+Alle Erweiterungen, die alle Pakete synchron in alle benutzersitzungen geladen werden, der **veraltete APIs** Registerkarte.
 
 * Benutzer klicken können, auf die **Weitere Informationen zu diesem Problem** zum Sammeln von Informationen zu den veralteten APIs.
 * Benutzer können den Migrationsstatus Erweiterung Hersteller erhalten.
