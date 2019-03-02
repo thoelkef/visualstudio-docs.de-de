@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316794"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223506"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit der Modellierungs-SDK für Visual Studio erstellt wird.
 
 > [!NOTE]
-> In Visual Studio 2017 werden im Text Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Das Text-Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -60,7 +60,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 3.  Klicken Sie auf **domänenspezifischen Sprachdesigner**.
 
-     ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
+     ![Dialogfeld "DSL erstellen"](../modeling/media/create_dsldialog.png)
 
 4.  In der **Namen** geben **FamilyTree**. Klicken Sie auf **OK**.
 
@@ -303,7 +303,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
     1.  Klicken Sie auf die **Verweisbeziehung** tool, klicken Sie auf die Person und klicken Sie dann auf Stadt.
 
-         ![DSL-Definitionsfragment: Stammstrukturstamm](../modeling/media/familyt_root.png)
+         ![DSL-Definitionsfragment: Stammbaumstamm](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Verweisbeziehungen darstellen Querverweise von einem Teil der Modellstruktur auf einen anderen.
@@ -328,7 +328,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
     2.  Verwenden der **Diagrammelementzuordnung** Tool, um den neuen Connector auf die Beziehung zwischen Person "und" Stadt zu verknüpfen.
 
-         ![Stammstrukturdefinition mit Formzuordnung](../modeling/media/familyt_shapemap.png)
+         ![Stammbaumdefinition mit Formzuordnung](../modeling/media/familyt_shapemap.png)
 
 6.  Erstellen Sie ein Elementtool dafür eine neue Stadt ein.
 

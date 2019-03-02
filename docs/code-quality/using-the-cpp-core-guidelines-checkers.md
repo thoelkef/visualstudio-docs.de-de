@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914996"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223350"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
-Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und bewährten Methoden zum Schreiben von Code in C++, die von Experten für C++ und Designern erstellt. Visual Studio unterstützt eine Teilmenge dieser Regeln im Rahmen der Codeanalysetools derzeit für C++. Die Richtlinie kernrichtlinien werden standardmäßig in Visual Studio 2017 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
+
+Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und bewährten Methoden zum Schreiben von Code in C++, die von Experten für C++ und Designern erstellt. Visual Studio unterstützt eine Teilmenge dieser Regeln im Rahmen der Codeanalysetools derzeit für C++. Die Führungslinie kernrichtlinien werden standardmäßig in Visual Studio 2017 und Visual Studio-2019 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Projizieren den C++ Core Guidelines
- Bjarne Stroustrup und andere erstellt haben, werden den C++ Core Guidelines eine Anleitung zur Verwendung von modernem C++ problemlos und effektiv. Die Richtlinien Betonen Sie statische typsicherheit und Sicherheit der Ressource. Sie identifizieren Möglichkeiten zum beseitigen oder minimieren die am häufigsten fehleranfälligen Teile der Sprache, und es empfiehlt sich, wie Sie Ihren Code vereinfachen und bieten eine bessere Leistung auf zuverlässige Weise. Diese Richtlinien werden von der Standard C++ Foundation verwaltet. Weitere Informationen finden Sie in der Dokumentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), und der Zugriff auf die Projektdateien der C++ Core Guidelines-Dokumentation auf [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Bjarne Stroustrup und andere erstellt haben, werden den C++ Core Guidelines eine Anleitung zur Verwendung von modernem C++ problemlos und effektiv. Die Richtlinien Betonen Sie statische typsicherheit und Sicherheit der Ressource. Sie identifizieren Möglichkeiten zum beseitigen oder minimieren die am häufigsten fehleranfälligen Teile der Sprache, und es empfiehlt sich, wie Sie Ihren Code vereinfachen und bieten eine bessere Leistung auf zuverlässige Weise. Diese Richtlinien werden von der Standard C++ Foundation verwaltet. Weitere Informationen finden Sie in der Dokumentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), und der Zugriff auf die Projektdateien der C++ Core Guidelines-Dokumentation auf [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Aktivieren Sie die C++ Core Check-Richtlinien in der Codeanalyse
  Sie können die Codeanalyse auf Ihr Projekt aktivieren, indem Sie auswählen der **Codeanalyse für Build aktivieren** Kontrollkästchen in der **Codeanalyse** Teil der **Eigenschaftenseiten** Dialogfeld für Ihr Projekt.

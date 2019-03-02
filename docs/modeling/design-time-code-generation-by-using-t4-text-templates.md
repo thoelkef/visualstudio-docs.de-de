@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318044"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223073"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateien in Ihrem Visual Studio-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -120,7 +120,7 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Anweisung `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
  So debuggen Sie eine Textvorlage
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, haben Sie alle Vorlagen, die bei jeder Buildausführung automatisch transformiert. Bearbeiten Sie dazu die Projektdatei (.csproj oder .vbproj) in einem Text-Editor, und fügen Sie in der Nähe des Endes der Datei nach allen anderen `<import>`-Anweisungen die folgenden Zeilen hinzu:
 
 > [!NOTE]
-> In Visual Studio 2017 werden im Text Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Das Text-Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -364,7 +364,7 @@ Warning("A warning message");
 |Generieren Sie zur Laufzeit Dokumente aus Vorlagen.|[Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Führen Sie die textgenerierung außerhalb von Visual Studio.|[Generieren von Dateien mit dem Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
+|Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
 
 ## <a name="see-also"></a>Siehe auch
 

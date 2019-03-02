@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316001"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223376"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
 
@@ -65,7 +65,7 @@ Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Edition-Unterstützung für Architektur- und Modellierungstools
 
-Visual Studio 2017 ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+Visual Studio ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
 |**Funktion**|**Enterprise edition**|**Professional-edition**|**Community-edition**|
 |-|-|-|-|

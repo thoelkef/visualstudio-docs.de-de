@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914775"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222882"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -26,7 +26,7 @@ ms.locfileid: "55914775"
 2. In der **neues Projekt** wählen Sie im Dialogfeld die **Workflow** Kategorie auf der linken Seite, und wählen Sie dann die **Konsolenanwendung für Workflows** Projektvorlage. Nennen Sie das Projekt (falls gewünscht), und klicken Sie auf **Ok**.
 
    > [!NOTE]
-   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio 2017. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie die **Workflow** Kategorie, und wählen Sie dann die **Aktivität** Elementvorlage. Nennen Sie die neue Aktivität **MyForEach.xaml** und wählen Sie dann **OK**.
 

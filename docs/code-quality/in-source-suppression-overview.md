@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927814"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223085"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Unterdrücken von codeanalysewarnungen
 
@@ -33,7 +33,7 @@ In C++ / CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\_Nac
 > Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich Protokollversand. Darüber hinaus kann aufgrund der Verarbeitungskosten Unterdrückung im Quellcode, die Leistung Ihrer Anwendung beeinträchtigt werden.
 
 > [!NOTE]
-> Wenn Sie ein Projekt in Visual Studio 2017 migrieren, können Sie plötzlich eine große Anzahl von Warnungen der Codeanalyse ausgesetzt sind. Diese Warnungen stammen [Roslyn-Analysetools](roslyn-analyzers-overview.md). Wenn Sie nicht bereit, die Warnungen zu beheben sind, können Sie alle unterdrücken, indem auswählen **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt in Visual Studio 2017 oder Visual Studio-2019 migrieren, können Sie mit einer großen Anzahl von Warnungen der Codeanalyse plötzlich konfrontiert werden. Diese Warnungen stammen [Roslyn-Analysetools](roslyn-analyzers-overview.md). Wenn Sie nicht bereit, die Warnungen zu beheben sind, können Sie alle unterdrücken, indem auswählen **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken**.
 >
 > ![Ausführen der Codeanalyse und Unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
 

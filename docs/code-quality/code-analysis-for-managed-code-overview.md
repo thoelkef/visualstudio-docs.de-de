@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909140"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222596"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die statische Codeanalyse für verwalteten Code in Visual Studio
 
-Visual Studio 2017 können Codeanalyse für verwalteten Code ausführen, gibt es zwei Möglichkeiten: mit *FxCop* statische Analysen für verwalteten Assemblys sowie die moderner *Roslyn-Analysetools*. Dieses Thema behandelt die Analyse von statischem Code FxCop. Weitere Informationen zum Analysieren von Code mithilfe von Code-Analyzer finden Sie unter [Übersicht der Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio Codeanalyse von verwaltetem Code ausführen kann, gibt es zwei Möglichkeiten: mit *FxCop* statische Analysen für verwalteten Assemblys sowie die moderner *Roslyn-Analysetools*. Dieses Thema behandelt die Analyse von statischem Code FxCop. Weitere Informationen zum Analysieren von Code mithilfe von Code-Analyzer finden Sie unter [Übersicht der Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md).
 
 Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstellt einen Bericht mit Informationen zu diesen Assemblys, in dem z. B. Verletzungen der in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegten Programmierungs- und Entwurfsregeln gemeldet werden.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Weitere Informationen finden Sie unter [Unterdrücken von Warnungen](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Wenn Sie ein Projekt in Visual Studio 2017 migrieren, können Sie plötzlich eine große Anzahl von Warnungen der Codeanalyse ausgesetzt sind. Wenn Sie nicht möchten Sie die Warnungen beheben und sofort produktiv werden soll, können Sie *Baseline* den Analyse-Zustand des Projekts. Von der **analysieren** , wählen Sie im Menü **Codeanalyse ausführen und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt in Visual Studio 2017 oder Visual Studio-2019 migrieren, können Sie mit einer großen Anzahl von Warnungen der Codeanalyse plötzlich konfrontiert werden. Wenn Sie nicht möchten Sie die Warnungen beheben und sofort produktiv werden soll, können Sie *Baseline* den Analyse-Zustand des Projekts. Von der **analysieren** , wählen Sie im Menü **Codeanalyse ausführen und aktive Probleme unterdrücken**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ausführen der Codeanalyse im Rahmen der Eincheckrichtlinien
 
@@ -73,7 +73,7 @@ Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrich
 
 ## <a name="team-build-integration"></a>Team Build-integration
 
-Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939002"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222333"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält die Windows Workflow Foundation (WF)-Elemente, die
 1. Wählen Sie im linken Bereich die **Workflow** Kategorie, und wählen Sie dann eine Elementvorlage für den Workflow.
 
    > [!NOTE]
-   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio 2017. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Geben Sie einen Namen für das Element in der **Namen** Feld am unteren Rand des Dialogfelds.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908780"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223818"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeitsdiagramme: Richtlinien
 
@@ -26,7 +26,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Abhä
 Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio 2017 nicht unterstützt.
+> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
 ## <a name="what-is-a-dependency-diagram"></a>Was ist ein Abhängigkeitsdiagramm?
 
@@ -113,7 +113,7 @@ Beschreibung die Änderungen, die Sie an Ihrem System oder der vorgesehenen Arch
 
 ### <a name="Improving"></a> Verbessern der Struktur des Codes
 
-Refactoringänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Gut strukturierter Code verfügt über ein Design, das ist einfach, um ein Abhängigkeitsdiagramm zu abstrahieren.
+Umgestaltungsänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Gut strukturierter Code verfügt über ein Design, das ist einfach, um ein Abhängigkeitsdiagramm zu abstrahieren.
 
 Wenn Sie z. B. eine Ebene für jeden Namespace im Code erstellen und die Abhängigkeiten dann zurück entwickeln, sollte die Anzahl unidirektionaler Abhängigkeiten zwischen den Ebenen minimal sein. Wenn Sie ein detailliertes Diagramm mit Klassen oder Methoden als Ebenen zeichnen, sollte das Ergebnis dieselben Merkmale aufweisen.
 
