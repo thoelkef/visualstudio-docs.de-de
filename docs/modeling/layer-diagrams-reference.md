@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957912"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223012"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeitsdiagramme: Referenz
 
@@ -34,7 +34,7 @@ In Visual Studio können Sie eine *Abhängigkeitsdiagramm* um die hochrangige, l
 Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio 2017 nicht unterstützt.
+> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
 Sie können die vorgesehenen oder vorhandenen Abhängigkeiten zwischen Ebenen angeben. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Indem Sie Ihr System in Ebenen, die verschiedene Rollen und Funktionen zu beschreiben organisieren, können ein Abhängigkeitsdiagramm für Sie einfacher zu verstehen, wiederverwenden und Verwalten von Code erleichtern.
 

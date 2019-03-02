@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007357"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223727"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 
@@ -206,7 +206,7 @@ Weitere Informationen finden Sie unter [aktivieren, Generieren von Codemetrikdat
 
 ### <a name="previous-versions"></a>Frühere Versionen
 
-Frühere Versionen von Visual Studio, einschließlich Visual Studio 2015 enthalten ein Befehlszeilentool Metriken-Tool, das so genannte wurde *Metrics.exe*. Diese frühere Version des Tools wurde eine binäre Analyse, d. h. eine Assembly-basierte Analyse. Das neue Tool analysiert Quellcode stattdessen an. Da das neue Befehlszeilentool Metriken Tool Code basierende Datenquelle ist, werden die Ergebnisse unterscheiden, was von früheren Versionen von generiert wird *Metrics.exe* und innerhalb der Visual Studio 2017-IDE.
+Visual Studio 2015 bietet ein Befehlszeilentool Metriken-Tool, das so genannte wurde *Metrics.exe*. Diese frühere Version des Tools wurde eine binäre Analyse, d. h. eine Assembly-basierte Analyse. Die neue *Metrics.exe* stattdessen Tool analysiert die Source-Code. Da die neue *Metrics.exe* Tool ist der Code basiert, Befehlszeilen Code datenquellenmetriken Ergebnisse, die von Visual Studio-IDE und früheren Versionen von generiert unterscheiden *Metrics.exe*.
 
 Das neue Befehlszeilentool Metriken Tool berechnet Metriken auch bei der Quelle von Codefehlern, solange die Projektmappen- und Projektdateien geladen werden können.
 
@@ -214,7 +214,7 @@ Das neue Befehlszeilentool Metriken Tool berechnet Metriken auch bei der Quelle 
 
 Die `LinesOfCode` Metrik ist genauer und zuverlässiger, in das neue Befehlszeilentool Metriken-Tool. Dabei handelt es sich unabhängig von Codegen Unterschiede nicht geändert werden, wenn das Toolset oder Laufzeit ändert. Das neue Tool zählt, tatsächliche Zeilen von Code, einschließlich Leerzeilen und Kommentare.
 
-Andere Metriken wie z. B. `CyclomaticComplexity` und `MaintainabilityIndex` verwenden die gleichen Formeln wie in früheren Versionen von *Metrics.exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logische Quelle Anweisungen) anstelle von fortgeschrittene Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von früheren Versionen von *Metrics.exe* und von der Codemetrikergebnisse für Visual Studio 2017-IDE.
+Andere Metriken wie z. B. `CyclomaticComplexity` und `MaintainabilityIndex` verwenden die gleichen Formeln wie in früheren Versionen von *Metrics.exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logische Quelle Anweisungen) anstelle von fortgeschrittene Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig auf die von Visual Studio-IDE und früheren Versionen von generiert *Metrics.exe*.
 
 ## <a name="see-also"></a>Siehe auch
 

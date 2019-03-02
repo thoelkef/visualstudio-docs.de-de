@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913014"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223233"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
@@ -41,7 +41,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Fügen Sie ein neues Abhängigkeitsdiagramm zu einem Modellierungsprojekt
 
 > [!NOTE]
-> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio 2017 nicht unterstützt.
+> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
 1.  Auf der **Architektur** Menü wählen **neues Abhängigkeitsdiagramm**.
 
@@ -81,7 +81,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ## <a name="CreateLayers"></a> Ebenen aus Artefakten erstellen
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.
 
- Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie „Layer 1“ und „Layer 2“ angezeigt werden, jedoch nicht berücksichtigt.
+ Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie "Layer 1" und "Layer 2" angezeigt werden, jedoch nicht berücksichtigt.
 
  Um festzustellen, ob ein verknüpftes Element die Validierung unterstützt, öffnen Sie **Ebenen-Explorer** und untersuchen Sie die **unterstützt die Validierung** -Eigenschaft des Elements. Finden Sie unter [Verwalten von Links zu Artefakten](#Managing).
 

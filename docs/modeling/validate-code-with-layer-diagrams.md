@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317366"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223194"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -49,7 +49,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht ist, können ü
 - Eine Lösung, die ein Modellierungsprojekt mit einem Abhängigkeitsdiagramm enthält. In diesem Abhängigkeitsdiagramm muss mit Artefakten in c# oder Visual Basic-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio 2017 nicht unterstützt.
+> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
 Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -235,6 +235,6 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Live-abhängigkeitsüberprüfung in Visual Studio 2017](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Live-abhängigkeitsüberprüfung in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
 - [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

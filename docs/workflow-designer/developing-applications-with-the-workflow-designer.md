@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909244"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223285"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Entwickeln von Apps mit dem Workflow-Designer
 
@@ -29,7 +29,7 @@ Der Workflow-Designer ist ein visueller Designer und Debugger für die grafische
 
 ## <a name="install-windows-workflow-foundation"></a>Installieren Sie Windows Workflow Foundation
 
-Um Workflow-Projektvorlagen in Visual Studio 2017 zu verwenden, installieren Sie zuerst die **Windows Workflow Foundation** Komponente.
+Um Workflow-Projektvorlagen in Visual Studio zu verwenden, installieren Sie zuerst die **Windows Workflow Foundation** Komponente.
 
 1. Öffnen Sie Visual Studio-Installer. Eine schnelle Möglichkeit, ihn zu öffnen, ist die Auswahl **Tools** > **Tools und Features abrufen** in Visual Studio.
 
@@ -37,7 +37,7 @@ Um Workflow-Projektvorlagen in Visual Studio 2017 zu verwenden, installieren Sie
 
 1. Führen Sie einen Bildlauf nach unten, um die **Entwicklungsaktivitäten** Kategorie, und wählen Sie dann die **Windows Workflow Foundation** Komponente.
 
-   ![Windows Workflow Foundation-Komponente für Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Windows Workflow Foundation-Komponente für Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Klicken Sie auf **Ändern**.
 
