@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909205"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007357"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 
@@ -25,6 +25,8 @@ Sie können die Codemetrikergebnisse für eine oder mehrere Projekte oder eine g
 Darüber hinaus können Sie installieren ein [NuGet-Paket](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , enthält vier Codemetrik [Analyzer](roslyn-analyzers-overview.md) Regeln: CA1501, CA1502, CA1505 und CA1506. Diese Regeln sind standardmäßig deaktiviert, aber Sie können sie aus **Projektmappen-Explorer** oder in einem [Regelsatz](using-rule-sets-to-group-code-analysis-rules.md) Datei.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Codemetrik für Visual Studio-IDE
+
+Codemetrik für eine oder alle der die geöffneten Projekte in der IDE generieren Sie mit der **analysieren** > **Berechnen der Codemetrik** Menü.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Codemetrikergebnisse für eine gesamte Projektmappe generieren
 
@@ -45,6 +47,16 @@ Die Ergebnisse werden generiert und die **Codemetrikergebnisse** Fenster wird an
 1. Wählen Sie in der Menüleiste **analysieren** > **Berechnen der Codemetrik** > **für ausgewählte Projekte**.
 
 Die Ergebnisse werden generiert und die **Codemetrikergebnisse** Fenster wird angezeigt. Um die Ergebnisdetails anzuzeigen, erweitern Sie die Struktur in der **Hierarchie**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> Die **Berechnen der Codemetrik** Befehl funktioniert nicht für .NET Core und .NET Standard-Projekte. Zum Berechnen der Codemetrik für ein Projekt für .NET Core oder .NET Standard können Sie folgende Aktionen ausführen:
+>
+> - Berechnen der Codemetrik aus der [Befehlszeile](#command-line-code-metrics) stattdessen
+> - ein Upgrade auf Visual Studio-2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Befehlszeile Codemetrik
 
