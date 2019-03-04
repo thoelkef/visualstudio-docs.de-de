@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991527"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694815"
 ---
 # <a name="graphics-frame-validation"></a>Grafik-Frame-Überprüfung
 <!-- VERSIONLESS --> Visual Studio 2017 und höher unterstützt die **Frame-Überprüfung** Tool.  Die Frame-Überprüfung-Fenster werden Fehler und Warnungen im Zusammenhang mit der Ereignisliste angezeigt.  Um dieses Fenster anzuzeigen, wählen die **Ansicht > Frame-Überprüfung** Menü.
@@ -33,6 +33,6 @@ Klicken Sie auf die **Überprüfung ausführen** auf der linken oberen Ecke, um 
 | Meldung | Die Meldung, die dem Ereignis zugeordnet wird. |
 | event | Das Ereignis, das den Fehler oder die Warnung zugeordnet. |
 
-## <a name="see-also"></a>Siehe auch  
-[Grafikdiagnose (Debuggen von DirectX-Grafiken)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Siehe auch
+[Graphics Diagnostics (Debugging DirectX Graphics) (Grafikdiagnose (Debuggen von DirectX-Grafiken))](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

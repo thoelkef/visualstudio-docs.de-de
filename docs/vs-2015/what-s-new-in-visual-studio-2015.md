@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790732"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844138"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
  Die Visual Studio-Tools für Apache Cordova sind das Ergebnis enger Zusammenarbeit zwischen Microsoft und der Open Source Apache Cordova-Community. Die Tools ermöglichen plattformübergreifende mobile Entwicklung mit HTML, CSS und JavaScript (oder Typescript). Sie können mit einer einzigen Codebasis für Android, iOS und Windows entwickeln und von der reichhaltigen Visual Studio-IDE mit JavaScript IntelliSense, dem DOM Explorer, der JavaScript-Konsole, Haltepunkten, Überwachungen, dem Lokalfenster, "Nur eigenen Code" und mehr profitieren.  Mit den Visual Studio-Tools für Apache Cordova erhalten Ihre Apps über Plug-Ins, die eine gemeinsame JavaScript-API bereitstellen, Zugriff auf systemeigene Gerätefunktionen auf allen Plattformen. Informationen zum Einstieg finden Sie unter [erste Schritte mit Visual Studio-Tools für Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Plattformübergreifende mobile Spiele in C# mit Unity
- Unity ist eine häufig verwendete Plattform für die 2D- und 3D-Spielentwicklung auf mehreren Plattformen. Sie können ein Spiel in C# schreiben und es dann nativ unter Android, iOS, Windows Phone und vielen weiteren Plattformen ausführen. Die Visual Studio-Tools für Unity sind eine Erweiterung, die Unity mit der Visual Studio-IDE integrieren. Mit dieser Erweiterung erhalten Sie zusätzlich zu allen Features der IDE und des Debuggers von Visual Studio Produktivitätsfeatures, die auf Unity-Entwickler ausgerichtet sind. Visual Studio-Tools für Unity Preview 2.0 sorgt neben einer Reihe neuer Features wie besserer Visualisierung von Objekten in den Fenstern "Lokal" und "Überwachen" zusätzlich für Unterstützung von Visual Studio 2015. Microsoft hat kürzlich SyntaxTree, den Ersteller der Visual Studio-Tools für Unity übernommen. Weitere Informationen zu Visual Studio-Tools für Unity und den Download der Visual Studio-Tools für Unity 2.0 Preview 2 finden Sie unter [Visual Studio-Tools für Unity 2.0](http://Aka.ms/vstu).
+ Unity ist eine häufig verwendete Plattform für die 2D- und 3D-Spielentwicklung auf mehreren Plattformen. Sie können ein Spiel in C# schreiben und es dann nativ unter Android, iOS, Windows Phone und vielen weiteren Plattformen ausführen. Die Visual Studio-Tools für Unity sind eine Erweiterung, die Unity mit der Visual Studio-IDE integrieren. Mit dieser Erweiterung erhalten Sie zusätzlich zu allen Features der IDE und des Debuggers von Visual Studio Produktivitätsfeatures, die auf Unity-Entwickler ausgerichtet sind. Visual Studio-Tools für Unity Preview 2.0 sorgt neben einer Reihe neuer Features wie besserer Visualisierung von Objekten in den Fenstern "Lokal" und "Überwachen" zusätzlich für Unterstützung von Visual Studio 2015. Microsoft hat kürzlich SyntaxTree, den Ersteller der Visual Studio-Tools für Unity übernommen. Weitere Informationen zu Visual Studio-Tools für Unity und den Download der Visual Studio-Tools für Unity 2.0 Preview 2 finden Sie unter [Visual Studio-Tools für Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Plattformübergreifende Apps und Bibliotheken für systemeigenes C++
  C++ ist eine Sprache, die systemintern auf den meisten mobilen Geräten verfügbar ist. Sie können Sie verwenden, um plattformübergreifend gemeinsam genutzte Codebibliotheken zu schreiben, die für mehrere mobile Plattformen entwickelt werden können. Sie können sogar komplette mobile Apps in C++ erstellen. Mit Visual C++ erhalten Sie die Tools an die Hand, um plattformübergreifenden Code zu bearbeiten, zu erstellen, bereitzustellen und zu debuggen. Zusätzlich zu den Vorlagen für Windows-Apps können Sie Projekte aus Vorlagen für systemeigene Android Aktivitäts-Apps, iOS-Apps oder freigegebene Code-Bibliotheksprojekte für mehrere Plattformen erstellen, die hybride Xamarin-Apps enthalten. Mit dem plattformspezifischen IntelliSense können Sie APIs entdecken und Code für Android-, iOS- oder Windows-Ziele generieren. Sie können Ihr Build für x86- oder ARM-Plattformen konfigurieren und Ihren Code für den iOS-Simulator oder für an einen in das Netzwerk eingebundenen Mac angeschlossene iOS-Geräte und direkt angeschlossene Android-Geräte bereitstellen, oder Sie können zu Testzwecken den leistungsfähigen Microsoft Visual Studio-Emulator für Android verwenden. Im Visual Studio-Debugger können Sie Haltepunkte setzen, Variablen überwachen, den Stapel anzeigen und C++-Code schrittweise durchlaufen. Sie können abgesehen vom plattformspezifischsten Code den Code für mehrere App-Plattformen freigeben und eine Lösung für alle Plattformen in Visual Studio schreiben.
@@ -100,7 +100,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
  ![Gerät-Menü "Gerätevorschau"](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
- Seit Visual Studio 2013 wurden in der Visual Studio-Grafikdiagnose viele neue Funktionen hinzugefügt, einschließlich der Frame-Analyse, Windows Phone-Unterstützung, der Bearbeiten- und Anwenden-Funktion im Shader und der Befehlszeilen-Erfassungstools. Es wurde auch die Unterstützung für das Debuggen von DirectX12 Apps hinzugefügt. Weitere Informationen finden Sie unter [Visual Studio-Grafikdiagnose](./debugger/visual-studio-graphics-diagnostics.md).
+ Seit Visual Studio 2013 wurden zu der Visual Studio-Grafikdiagnose viele neue Features hinzugefügt, einschließlich der Frame-Analyse, Windows Phone-Unterstützung, der Funktion zum Bearbeiten und Anwenden im Shader sowie der Erfassungstools für die Befehlszeile. Es wurde auch die Unterstützung für das Debuggen von DirectX12 Apps hinzugefügt. Weitere Informationen finden Sie unter [Visual Studio-Grafikdiagnose](./debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="connect-to-services"></a>Verbinden mit Diensten
  Mit Visual Studio 2015 ist es einfacher denn je, Ihre App mit Diensten zu verbinden.  Der neue Assistent zum Hinzufügen eines verbundenen Diensts konfiguriert Ihr Projekt, fügt die nötige Unterstützung für die Authentifizierung hinzu und lädt die nötigen NuGet-Pakete herunter, damit Sie schnell und einfach mit der Programmierung für Ihren Dienst beginnen können. Außerdem ist der Assistent zum Hinzufügen eines verbundenen Diensts in den neuen Konto-Manager integriert, um die Verwendung mehrerer Benutzerkonten und Abonnements zu erleichtern. Bei Visual Studio 2015 ist die Unterstützung der folgenden Dienste standardmäßig direkt enthalten (sofern Sie ein Konto besitzen):
@@ -141,7 +141,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
  Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zum Einstieg finden Sie unter [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Fehlerliste
  Die Fehlerliste kann nun nach einer beliebigen Spalte gefiltert werden. Sie zeigt zudem eine Liveansicht von Fehlern, Warnungen und Codeanalysen für die gesamte C#- oder Visual Basic-Projektmappe an, selbst wenn eine Codeänderung Tausende von Warnungen nach sich zieht. Die neue Fehlerliste ist abwärtskompatibel zur derzeitigen Verwendung. Weitere Informationen finden Sie unter [Error List Window](./ide/reference/error-list-window.md).
@@ -157,7 +157,7 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
 ## <a name="enjoy-these-additional-ide-improvements"></a>Zusätzliche Verbesserungen der IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Synchronisierte Einstellungen (Roamingeinstellungen)
- In Visual Studio 2013 wurden synchronisierte Einstellungen für einige der am häufigsten konfigurierten Einstellungen wie Text-Editor, Tastaturzuordnungen, Design & Schriftarten & Farben, Starten sowie Umgebungsaliase eingeführt.  In Visual Studio 2015 wird diese Erfahrung verbessert, indem mehr Einstellungen synchronisiert werden und Einstellungen in der ganzen Visual Studio-Anwendungsfamilie wie Professional, Enterprise, Express-SKUs und Blend synchronisiert werden. Wenn Sie sich erstmalig bei Visual Studio 2015 mit demselben Konto anmelden, das Sie in Visual Studio 2013 verwendet haben, werden Sie sehen, dass Ihre synchronisierten Einstellungen aus Visual Studio 2013 angewendet wurden. Sie können auf Ihre Einstellungen zugreifen, indem Sie in **Schnellstart** „sync“ eingeben oder indem Sie zu **Extras > Optionen > Umgebung > Synchronisierte Einstellungen** navigieren.
+ Visual Studio 2013 wurden synchronisierte Einstellungen für einige der am häufigsten konfigurierten Einstellungen wie z. B. Text-Editor, Keybindings, Design & Schriftarten & Farben, starten und Umgebungsaliase eingeführt.  In Visual Studio 2015 wird diese Erfahrung verbessert, indem mehr Einstellungen synchronisiert werden und Einstellungen in der ganzen Visual Studio-Anwendungsfamilie wie Professional, Enterprise, Express-SKUs und Blend synchronisiert werden. Wenn Sie sich erstmalig bei Visual Studio 2015 mit demselben Konto anmelden, das Sie in Visual Studio 2013 verwendet haben, werden Sie sehen, dass Ihre synchronisierten Einstellungen aus Visual Studio 2013 angewendet wurden. Sie können auf Ihre Einstellungen zugreifen, indem Sie in **Schnellstart** „sync“ eingeben oder indem Sie zu **Extras > Optionen > Umgebung > Synchronisierte Einstellungen** navigieren.
 
 ### <a name="automatic-extension-updates"></a>Automatische Erweiterungsaktualisierungen
  Ihre installierten Visual Studio-Erweiterungen werden nun automatisch aktualisiert, wenn in Visual Studio Gallery eine neue Version verfügbar ist. Unter [Suchen und Verwenden von Visual Studio-Erweiterungen](./ide/finding-and-using-visual-studio-extensions.md) finden Sie Einzelheiten in Bezug auf die Anpassung automatischer Erweiterungsaktualisierungen.
@@ -180,18 +180,18 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
 ### <a name="notification-hub"></a>Notification Hub
  Die Benutzeroberfläche für den Notification Hub wurde optimiert und kann jetzt schneller durchsucht werden. Es wurden weitere Arten von Benachrichtigungen hinzugefügt, z. B. für Leistungsprobleme, Renderingprobleme und Abstürze, und Sie können Visual Studio jetzt anweisen, eine Benachrichtigung nicht mehr anzuzeigen. Weitere Informationen finden Sie unter [Visual Studio-Benachrichtigungen](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln Sie, was mit Ihrem Code (nur Enterprise und Professional-Editionen) geschehen ist.
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln, was mit Ihrem Code geschehen ist (nur Enterprise und Professional Editionen)
  Bleiben Sie auf Ihre Arbeit konzentriert, während Sie Informationen zum Code suchen, ohne den Editor zu verlassen. Sie können Änderungen und andere Verläufe für Arbeitselemente, Fehler, Codeüberprüfungen usw. für den Code prüfen, der in Visual Studio Team Services (VSTS) oder in Team Foundation Server (TFS) gespeichert ist.
 
  Visual Studio Professional und Visual Studio Enterprise ermöglichen jetzt Folgendes:
 
 - Rufen Sie den Verlauf für eine gesamte Codedatei im Visual Studio-Editor ab.
 
-   ![CodeLens Codedateidetails abrufen](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Abrufen von Codedateidetails](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Zeigen Sie ein Diagramm mit den Personen an, die Ihren Code geändert haben. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.
 
-   ![CodeLens Finden Sie unter Verlaufs von codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Anzeigen des Verlaufs von Codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")
 
 - Erkennen Sie ganz leicht, wann der Code zuletzt geändert wurde.
 

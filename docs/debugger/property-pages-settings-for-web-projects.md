@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001968"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690525"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Einstellungen von Eigenschaftenseiten für Webprojekte
-Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** ändern. Eine genaue Anweisung finden Sie unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.  
-  
+Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** ändern. Eine genaue Anweisung finden Sie unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.
+
 ### <a name="start-options-category"></a>Starten Sie die Kategorie mit Optionen
-  
+
 | **Einstellung** | **Beschreibung** |
 | - | - |
 | **Startaktion** | Überschrift, unter der sich Optionen für den Anwendungsstart befinden. |
@@ -51,6 +51,6 @@ Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration 
 | **Debuggen von nativem Code** | Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen. |
 | **SQL Server debuggen** | Ermöglicht das Debuggen von SQL Server-Datenbankobjekten. |
 | **Silverlight-Debuggen** | Ermöglicht das Debuggen von Silverlight-Komponenten. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

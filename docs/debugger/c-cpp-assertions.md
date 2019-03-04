@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987469"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628324"
 ---
 # <a name="cc-assertions"></a>C/C++-Assertionen
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht den Wert TRUE aufweist, kann die Assertion nicht durchgeführt werden, die Programmausführung wird unterbrochen, und das Dialogfeld [Assertionsfehler](../debugger/assertion-failed-dialog-box.md) wird geöffnet.
@@ -46,7 +46,7 @@ Visual C++ unterstützt Assertionsanweisungen, die auf folgenden Konstrukten bas
 
 - CRT-Assertionen für Programme, die die C-Laufzeitbibliothek verwenden.
 
-- Die ANSI-[assert-Funktion](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) für andere C/C++‑Programme.  
+- Die ANSI-[assert-Funktion](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) für andere C/C++‑Programme.
 
   Sie können Assertionen verwenden, um logische Fehler zu erfassen, Ergebnisse einer Operation zu überprüfen und Fehlerbedingungen zu testen, die bearbeitet werden müssten.
 
@@ -63,7 +63,7 @@ Visual C++ unterstützt Assertionsanweisungen, die auf folgenden Konstrukten bas
 
 - [MFC ASSERT_VALID und CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Einschränkungen von AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Einschränkungen von AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Verwenden von Assertionen](#BKMK_Using_assertions)
 
@@ -81,7 +81,7 @@ Verwenden Sie Assertionen, um Fehler während der Entwicklung zu erkennen. Verwe
 [Inhalt](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Assertionen in Debug- und Versionsbuilds
-Assertionsanweisungen werden nur kompiliert, wenn `_DEBUG` definiert ist. Andernfalls behandelt der Compiler Assertionen als NULL-Anweisungen. Assertionsanweisungen verursachen daher keinen Mehraufwand und keine Leistungseinbußen in der endgültigen Programmversion, sodass Sie keine `#ifdef`-Anweisungen verwenden müssen.
+Assertionsanweisungen werden nur kompiliert, wenn `_DEBUG` definiert ist. Andernfalls behandelt der Compiler Assertionen als NULL-Anweisungen. Assertionsanweisungen verursachen daher keinen Mehraufwand und keine Leistungseinbußen in der endgültigen Programmversion, sodass Sie keine `#ifdef`-Direktiven verwenden müssen.
 
 ## <a name="BKMK_Side_effects_of_using_assertions"></a> Nebeneffekte der Verwendung von Assertionen
 Wenn Sie Assertionen in den Code einfügen, sollten Sie sicherstellen, dass die Assertionen keine Nebeneffekte haben. Betrachten Sie beispielsweise die folgende Assertion, mit der der `nM`-Wert geändert wird:
@@ -251,7 +251,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der in ihrem Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.
+`CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der im Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.
 
 Die Gültigkeitsüberprüfung wird auf dieser Ebene nicht beendet, da die `CObList`-Klasse auch von `AssertValid` überschrieben wird. Diese Überschreibung bewirkt weitere Gültigkeitsüberprüfungen des internen Listenzustands. Auf diese Weise führt eine Gültigkeitsüberprüfung für ein `CMyData`-Objekt zu weiteren Gültigkeitsüberprüfungen, mit denen der interne Zustand des gespeicherten `CObList`-Listenobjekts getestet wird.
 
@@ -323,7 +323,7 @@ _ASSERT(!myErr); -- CRT version
 
 Wenn der Fehlerbehandlungscode einwandfrei funktioniert, sollte der Fehler behandelt und `myErr` vor Erreichen der Assertion auf 0 (null) zurückgesetzt werden. Wenn `myErr` verfügt über einen anderen Wert, schlägt die Assertion fehl, das Programm wird angehalten, und die [Dialogfeld zur Assertion Fehler](../debugger/assertion-failed-dialog-box.md) angezeigt wird.
 
-Assertionsanweisungen sind allerdings kein Ersatz für Fehlerbehandlungscode. So kann die Assertionsanweisung im folgenden Beispiel im Releaseversionscode u. U. Probleme bereiten:
+Assertionsanweisungen sind allerdings kein Ersatz für Fehlerbehandlungscode. So kann die Assertionsanweisung im folgenden Beispiel im Releasecode u. U. Probleme bereiten:
 
 ```cpp
 myErr = myGraphRoutine(a, b);
@@ -334,11 +334,12 @@ ASSERT(!myErr); // Don't do this!
 _ASSERT(!myErr); // Don't do this, either!
 ```
 
-Bei diesem Code wird davon ausgegangen, dass der Fehlerzustand durch die Assertionsanweisung behandelt wird. Dies würde im endgültigen Releasecode dazu führen, dass alle von `myGraphRoutine` zurückgegebenen Fehlercodes nicht behandelt würden.
+Bei diesem Code wird davon ausgegangen, dass der Fehlerzustand durch die Assertionsanweisung behandelt wird. Dies würde im Releaseversionscode dazu führen, dass alle von `myGraphRoutine` zurückgegebenen Fehlercodes nicht behandelt würden.
 
 [Inhalt](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Siehe auch
-[Debuggersicherheit](../debugger/debugger-security.md)  
-[Debuggen von nativem Code](../debugger/debugging-native-code.md)  
-[Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md)
+
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+- [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md)
