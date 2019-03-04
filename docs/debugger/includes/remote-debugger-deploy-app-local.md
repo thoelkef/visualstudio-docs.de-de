@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen in lokalen Ordner
+title: Bereitstellen in einem lokalen Ordner
 description: Bereitstellen einer app in einen lokalen Ordner
 services: ''
 author: mikejo5000
@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809447"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723876"
 ---
 1. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **veröffentlichen** (für Web Forms, **Web-App veröffentlichen**).
 
-    Wenn Sie Veröffentlichungsprofile, zuvor konfiguriert haben die **veröffentlichen** angezeigt. Klicken Sie auf **neues Profil**.
+    Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **neues Profil**.
 
 1. In der **veröffentlichen** wählen Sie im Dialogfeld **Ordner**, klicken Sie auf **Durchsuchen**, und erstellen Sie einen neuen Ordner **C:\Publish**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809447"
 1. Klicken Sie auf **Veröffentlichen**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     Die Anwendung veröffentlicht ein **Debuggen** Konfiguration des Projekts zum lokalen Ordner. Fortschritt zeigt im Ausgabefenster angezeigt.
 
 1. Kopieren Sie das ASP.NET-Projektverzeichnis vom Visual Studio-Computer das lokale Verzeichnis für die ASP.NET-App). konfiguriert (in diesem Beispiel **C:\Publish**) auf dem Windows Server-Computer. In diesem Tutorial gehen wir davon aus, Sie manuell kopieren, jedoch können Sie andere Tools wie PowerShell, Xcopy oder Robocopy.

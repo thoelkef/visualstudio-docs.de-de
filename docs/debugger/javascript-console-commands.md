@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227406"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701952"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsole Befehle in Visual Studio
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Die folgenden Ersetzungsmuster werden unterstützt:
 
-- %s – Zeichenfolge %i – ganze Zahl  
-  %d – Ganzzahl  
-  %f – Gleitkommazahl  
-  %o – Objekt  
-  %b – Binärzahl  
-  %x – Hexadezimalzahl  
-  %e – Exponent  
+- %s – Zeichenfolge %i – Integer %d – Integer %f – Gleitkommazahl %o – Objekt %b – Binärzahl %x – Hexadezimalzahl %e – Exponent
 
   Nachfolgend finden Sie einige Beispiele für die Verwendung von Ersetzungsmustern in `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)

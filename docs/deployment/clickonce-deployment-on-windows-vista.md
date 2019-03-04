@@ -17,41 +17,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 953761232c184c3f77dea089767bfcfbb4b2ff70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600102"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>ClickOnce-Bereitstellung unter Windows Vista
 
-Erstellen von Anwendungen in Visual Studio, für die Benutzerkontensteuerung (UAC) unter Windows Vista normalerweise ein eingebettetes Manifest, generiert codiert als binary XML-Daten in die ausführbare Datei der Anwendung.  ClickOnce und registrierungsfreiem COM-Anwendungen erfordern ein externes Manifest, damit Visual Studio eine Datei für diese Projekte mit den UAC-Daten, statt ein eingebettetes Manifest generiert wird. Für ClickOnce und registrierungsfreiem COM-Bereitstellungen, verwendet Visual Studio Informationen aus einer Datei namens *"App.manifest"* zum Generieren externer UAC-Manifestinformationen. In allen anderen Fällen bettet Visual Studio die UAC-Daten in die ausführbare Datei der Anwendung. 
+Erstellen von Anwendungen in Visual Studio, für die Benutzerkontensteuerung (UAC) unter Windows Vista normalerweise ein eingebettetes Manifest, generiert codiert als binary XML-Daten in die ausführbare Datei der Anwendung.  ClickOnce und registrierungsfreiem COM-Anwendungen erfordern ein externes Manifest, damit Visual Studio eine Datei für diese Projekte mit den UAC-Daten, statt ein eingebettetes Manifest generiert wird. Für ClickOnce und registrierungsfreiem COM-Bereitstellungen, verwendet Visual Studio Informationen aus einer Datei namens *"App.manifest"* zum Generieren externer UAC-Manifestinformationen. In allen anderen Fällen bettet Visual Studio die UAC-Daten in die ausführbare Datei der Anwendung.
 
-Visual Studio bietet die folgenden Optionen für die manifestgenerierung auf:  
-  
-- Verwenden Sie ein eingebettetes Manifest. UAC-Daten in die ausführbare Datei der Anwendung einbetten, und als ein normaler Benutzer ausführen.  
-  
-   Dies ist die Standardeinstellung (es sei denn, Sie ClickOnce verwenden). Diese Einstellung unterstützt die übliche Weise, in der Visual Studio funktioniert, unter Windows Vista, mit der Generierung von einer internen und ein externes Anwendungsmanifest mit `AsInvoker`.  
-  
-- Verwenden Sie ein externes Manifest. Generieren Sie ein externes Manifest mit *"App.manifest"*.  
-  
-   Dadurch wird nur auf das externe Manifest generiert, mit den Informationen in *"App.manifest"*. Wenn Sie eine Anwendung mit ClickOnce oder COM ohne Registrierung veröffentlichen, fügt Visual Studio *"App.manifest"* auf das Projekt und fügt dann diese Option aus.  
-  
-- Verwenden Sie kein Manifest. Erstellen Sie die Anwendung ohne Manifest.  
-  
-   Dieser Ansatz ist auch bekannt als *Virtualisierung*. Verwenden Sie diese Option für die Kompatibilität mit vorhandenen Anwendungen aus früheren Versionen von Visual Studio.  
-  
-  Die neuen Eigenschaften stehen auf der **Anwendung** im Projekt-Designer auf der Seite (für Visual C# nur Projekte) und in das MSBuild-Projektdateiformat.  
-  
-  Die Methode zum Konfigurieren von UAC-manifestgenerierung in Visual Studio-IDE unterscheidet sich je nach Projekttyp (Visual C# oder Visual Basic).  
-  
-  * Informationen zum Konfigurieren von Visual C# Projekte für die Generierung von Manifesten finden Sie unter [Anwendungsseite, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
-  
-  * Informationen zum Konfigurieren von Visual Basic-Projekte zur Generierung von Manifesten finden Sie unter [Anwendungsseite, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
- [Benutzerberechtigungen und Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+Visual Studio bietet die folgenden Optionen für die manifestgenerierung auf:
+
+- Verwenden Sie ein eingebettetes Manifest. UAC-Daten in die ausführbare Datei der Anwendung einbetten, und als ein normaler Benutzer ausführen.
+
+   Dies ist die Standardeinstellung (es sei denn, Sie ClickOnce verwenden). Diese Einstellung unterstützt die übliche Weise, in der Visual Studio funktioniert, unter Windows Vista, mit der Generierung von einer internen und ein externes Anwendungsmanifest mit `AsInvoker`.
+
+- Verwenden Sie ein externes Manifest. Generieren Sie ein externes Manifest mit *"App.manifest"*.
+
+   Dadurch wird nur auf das externe Manifest generiert, mit den Informationen in *"App.manifest"*. Wenn Sie eine Anwendung mit ClickOnce oder COM ohne Registrierung veröffentlichen, fügt Visual Studio *"App.manifest"* auf das Projekt und fügt dann diese Option aus.
+
+- Verwenden Sie kein Manifest. Erstellen Sie die Anwendung ohne Manifest.
+
+   Dieser Ansatz ist auch bekannt als *Virtualisierung*. Verwenden Sie diese Option für die Kompatibilität mit vorhandenen Anwendungen aus früheren Versionen von Visual Studio.
+
+  Die neuen Eigenschaften stehen auf der **Anwendung** im Projekt-Designer auf der Seite (für Visual C# nur Projekte) und in das MSBuild-Projektdateiformat.
+
+  Die Methode zum Konfigurieren von UAC-manifestgenerierung in Visual Studio-IDE unterscheidet sich je nach Projekttyp (Visual C# oder Visual Basic).
+
+  * Informationen zum Konfigurieren von Visual C# Projekte für die Generierung von Manifesten finden Sie unter [Anwendungsseite, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
+
+  * Informationen zum Konfigurieren von Visual Basic-Projekte zur Generierung von Manifesten finden Sie unter [Anwendungsseite, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+
+## <a name="see-also"></a>Siehe auch
+- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+- [Benutzerberechtigungen und Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

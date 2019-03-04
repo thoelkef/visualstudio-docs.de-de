@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb05c054ffc5dd273b532f72afe0ca046adbe606
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041723"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686157"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak und "_debugbreak"
-Die Win32-Funktion „DebugBreak“ oder die systeminterne Funktion [__debugbreak](/cpp/intrinsics/debugbreak) kann an einer beliebigen Stelle im Code aufgerufen werden. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.  
-  
- Da durch `DebugBreak` eine Systemfunktion aufgerufen wird, müssen Systemdebugsymbole installiert werden, um sicherzustellen, dass nach dem Abbrechen die richtigen Aufruflisteninformationen angezeigt werden. Andernfalls sind die vom Debugger angezeigten Aufruflisteninformationen möglicherweise um einen Rahmen verschoben sind. Wenn Sie `__debugbreak` verwenden, sind keine Symbole erforderlich.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Intrinsische Compilerfunktionen](/cpp/intrinsics/compiler-intrinsics)   
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+Die Win32-Funktion „DebugBreak“ oder die systeminterne Funktion [__debugbreak](/cpp/intrinsics/debugbreak) kann an einer beliebigen Stelle im Code aufgerufen werden. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.
+
+ Da durch `DebugBreak` eine Systemfunktion aufgerufen wird, müssen Systemdebugsymbole installiert werden, um sicherzustellen, dass nach dem Abbrechen die richtigen Aufruflisteninformationen angezeigt werden. Andernfalls sind die vom Debugger angezeigten Aufruflisteninformationen möglicherweise um einen Rahmen verschoben sind. Wenn Sie `__debugbreak` verwenden, sind keine Symbole erforderlich.
+
+## <a name="see-also"></a>Siehe auch
+- [Intrinsische Compilerfunktionen](/cpp/intrinsics/compiler-intrinsics)
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -8,27 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35558a9ad6a4e7d31103910f3fe71c0a12374c22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a888605cfae6b5430782defd198f83988c31870
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042252"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719079"
 ---
 # <a name="copy-programmatic-capture"></a>Kopieren (Programmgesteuerte Aufzeichnung)
-Kopiert den Inhalt der aktiven Grafikprotokolldatei (VSGLOG) in eine neue Datei.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-void Copy(  
-  wchar_t const * szNewVSGLog  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `szNewVSGLog`  
- Der Dateiname der neuen Grafikprotokolldatei.  
-  
-## <a name="remarks"></a>Hinweise  
+Kopiert den Inhalt der aktiven Grafikprotokolldatei (VSGLOG) in eine neue Datei.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+void Copy(
+  wchar_t const * szNewVSGLog
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `szNewVSGLog` Der Dateiname der neuen Grafikprotokolldatei.
+
+## <a name="remarks"></a>Anmerkungen
  Um die Grafikinformationen in eine neuen Datei zu kopieren, müssen Sie bereits einige Grafikinformationen erfasst haben, andernfalls geschieht nichts.

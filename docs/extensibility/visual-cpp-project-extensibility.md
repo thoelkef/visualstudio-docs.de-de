@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692059"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223558"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -604,7 +604,7 @@ Verwenden Sie zum Deaktivieren von Projektupgrades eine `NoUpgrade` Wert:
 
 ## <a name="project-cache-and-extensibility"></a>Ein projektcache und Erweiterbarkeit
 
-Zur Verbesserung der Leistung bei der Arbeit mit großen C++-Projektmappen in Visual Studio 2017 die [Projekt Cache](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) wurde eingeführt. Die Implementierung erfolgt als eine SQLite-Datenbank, die mit Project-Daten aufgefüllt, und klicken Sie dann verwendet, um Projekte zu laden, ohne MSBuild oder CPS-Projekten in den Arbeitsspeicher geladen.
+Zur Verbesserung der Leistung bei der Arbeit mit großen C++-Projektmappen in Visual Studio 2017 die [Projekt Cache](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) wurde eingeführt. Die Implementierung erfolgt als eine SQLite-Datenbank, die mit Project-Daten aufgefüllt, und klicken Sie dann verwendet, um Projekte zu laden, ohne MSBuild oder CPS-Projekten in den Arbeitsspeicher geladen.
 
 Keine CPS-Objekte, die für die VCXPROJ-Projekte, die aus dem Cache geladen vorhanden sind, die Erweiterung des MEF-Komponenten, die importiert werden, da `UnconfiguredProject` oder `ConfiguredProject` kann nicht erstellt werden. Um Erweiterbarkeit zu unterstützen, ist nicht der projektcache verwendet, wenn Visual Studio erkennt, ob ein Projekt MEF-Erweiterungen verwendet (oder vermutlich verwenden).
 

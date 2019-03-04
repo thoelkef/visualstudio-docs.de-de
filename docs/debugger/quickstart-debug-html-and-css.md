@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227812"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721055"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-apps in Visual Studio
 
@@ -254,10 +254,10 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 > Im Windows Phone-Emulator wird das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise unterstützt.
 
 ## <a name="see-also"></a>Siehe auch
-[Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)  
-[Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)  
-[Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Produktsupport und Barrierefreiheit](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)
+- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)
+- [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Produktsupport und Barrierefreiheit](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
