@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710603"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323814"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
@@ -51,7 +51,7 @@ Es wird dringend empfohlen, um das Upgrade mit Visual Studio 2015, anstelle von 
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass es ist kein Verweis auf Datei "Project.JSON"
 
-Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei.  Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"*. Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
+Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei. Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"*. Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
 Wenn das Projekt enthält eine *"Project.JSON"* Datei:
 
 * Beachten Sie die Verweise in *"Project.JSON"*.
@@ -61,7 +61,7 @@ Wenn das Projekt enthält eine *"Project.JSON"* Datei:
     * Visual Studio erstellt automatisch die *"Packages.config"* -Datei für Sie.
 
 > [!NOTE]
-> Wenn Ihr Projekt EnvDTE-Pakete enthalten, müssen sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** auswählen **Verweis hinzufügen** und den entsprechenden Verweis hinzugefügt haben.  Mithilfe von NuGet-Pakete kann Fehler erstellen, bei dem Versuch, Ihr Projekt zu erstellen.
+> Wenn Ihr Projekt EnvDTE-Pakete enthalten, müssen sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** auswählen **Verweis hinzufügen** und den entsprechenden Verweis hinzugefügt haben. Mithilfe von NuGet-Pakete kann Fehler erstellen, bei dem Versuch, Ihr Projekt zu erstellen.
 
 ## <a name="add-appropriate-build-tools"></a>Hinzufügen der entsprechenden Build-tools
 
@@ -84,18 +84,18 @@ Gehen Sie hierzu wie folgt vor:
 
 ### <a name="1-installation-targets"></a>1. Installationsziele
 
-Wir müssen, um Visual Studio mitzuteilen, welche Versionen als Ziel für das Erstellen einer VSIX-Datei.  Diese Verweise sind in der Regel entweder mit der Version 14.0 (Visual Studio 2015) oder Version 15.0 (Visual Studio 2017).  In diesem Fall möchten wir eine VSIX erstellen, die eine Erweiterung für beide installiert wird, daher wir beide Versionen als Ziel müssen.  Wenn Sie möchten Ihre VSIX erstellen und installieren in Versionen vor 14.0, kann dies erfolgen durch Festlegen der Anzahl der früheren Version; Allerdings Version 10.0 und ältere Versionen werden nicht mehr unterstützt.
+Wir müssen, um Visual Studio mitzuteilen, welche Versionen als Ziel für das Erstellen einer VSIX-Datei. Diese Verweise sind in der Regel entweder Version 14.0 (Visual Studio 2015), Version 15.0 (Visual Studio 2017) oder Version 16.0 (Visual Studio 2019). In diesem Fall möchten wir eine VSIX erstellen, die eine Erweiterung für beide installiert wird, daher wir beide Versionen als Ziel müssen. Wenn Sie möchten Ihre VSIX erstellen und installieren in Versionen vor 14.0, kann dies erfolgen durch Festlegen der Anzahl der früheren Version; Allerdings Version 10.0 und ältere Versionen werden nicht mehr unterstützt.
 
 * Öffnen der *"Source.Extension.vsixmanifest"* Datei in Visual Studio.
 * Öffnen der **Ziele installieren** Registerkarte.
-* Ändern der **Versionsbereich** auf [14.0, 16,0).  Die ' [' teilt Visual Studio das 14.0 und alle Versionen fügen Sie ihn.  Die ')' teilt Visual Studio, um alle Versionen von 15.0 bis zur, aber nicht einschließlich Version 16.0 enthalten.
+* Ändern der **Versionsbereich** auf [14.0, 17.0). Die ' [' teilt Visual Studio das 14.0 und alle Versionen fügen Sie ihn. Die ')' teilt Visual Studio, um alle Versionen bis, enthalten aber nicht einschließlich, Version 17.0.
 * Speichert alle Änderungen, und schließen Sie alle Instanzen von Visual Studio.
 
 ![Installationsabbilddatei (Ziele)](media/visual-studio-installation-targets-example.png)
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Hinzufügen von Voraussetzungen für die *"Extension.vsixmanifest"* Datei
 
-Voraussetzungen sind ein neues Feature in Visual Studio 2017.  In diesem Fall müssen wir die Visual Studio-Kern-Editor als erforderliche Komponente. Da der Visual Studio 2015-VSIX-Designer nicht des neuen behandeln `Prerequisites` Abschnitt müssen Sie diese Komponente in der XML-Code manuell bearbeiten.  Alternativ können Sie Visual Studio 2017 öffnen, und verwenden den aktualisierte Manifesten-Designer, um die erforderlichen Komponenten einzufügen.
+Voraussetzungen sind ein neues Feature in Visual Studio 2017. In diesem Fall müssen wir die Visual Studio-Kern-Editor als erforderliche Komponente. Da der Visual Studio 2015-VSIX-Designer nicht des neuen behandeln `Prerequisites` Abschnitt müssen Sie diese Komponente in der XML-Code manuell bearbeiten. Alternativ können Sie Visual Studio 2017 öffnen, und verwenden den aktualisierte Manifesten-Designer, um die erforderlichen Komponenten einzufügen.
 
 Die CWL manuell erstellen:
 
@@ -112,7 +112,7 @@ Die CWL manuell erstellen:
 * Speichern und schließen Sie die Datei.
 
 > [!NOTE]
-> Wenn Sie auswählen, um dies mit dem VSIX-Designer in Visual Studio 2017 zu erreichen, müssen Sie manuell bearbeiten, um sicherzustellen, dass er kompatibel mit allen Versionen von Visual Studio 2017 ist die erforderliche Version.  Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird.  Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
+> Wenn Sie auswählen, um dies mit dem VSIX-Designer in Visual Studio 2017 zu erreichen, müssen Sie manuell bearbeiten, um sicherzustellen, dass er kompatibel mit allen Versionen von Visual Studio 2017 ist die erforderliche Version. Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird. Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
 
 An diesem Punkt sollte Ihre Manifestdatei etwa wie folgt aussehen:
 
@@ -120,14 +120,14 @@ An diesem Punkt sollte Ihre Manifestdatei etwa wie folgt aussehen:
 
 ## <a name="modify-the-project-file-myprojectcsproj"></a>Ändern der Projektdatei (MyProject.csproj erstellt)
 
-Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffnet ist, während der Ausführung dieses Schritts zu erhalten.  Sie finden einige Beispiele für [hier](https://github.com/Microsoft/VSSDK-Extensibility-Samples).  Markieren Sie ein erweiterbarkeitsbeispiel, suchen die *csproj* -Datei für den Verweis, und führen Sie die folgenden Schritte aus:
+Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffnet ist, während der Ausführung dieses Schritts zu erhalten. Sie finden einige Beispiele für [hier](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Markieren Sie ein erweiterbarkeitsbeispiel, suchen die *csproj* -Datei für den Verweis, und führen Sie die folgenden Schritte aus:
 
 * Navigieren Sie zu dem Projektverzeichnis in **Datei-Explorer**.
 * Öffnen der *MyProject.csproj erstellt* -Datei mit einem Text-Editor.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. Update the MinimumVisualStudioVersion
 
-* Legen Sie die minimale visual Studio-Version auf `$(VisualStudioVersion)` , und fügen Sie dafür eine bedingte Anweisung hinzu.  Fügen Sie diese Tags hinzu, wenn sie nicht vorhanden sind.  Stellen Sie sicher, dass die Tags festgelegt sind, wie unten gezeigt:
+* Legen Sie die minimale visual Studio-Version auf `$(VisualStudioVersion)` , und fügen Sie dafür eine bedingte Anweisung hinzu. Fügen Sie diese Tags hinzu, wenn sie nicht vorhanden sind. Stellen Sie sicher, dass die Tags festgelegt sind, wie unten gezeigt:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -163,7 +163,7 @@ Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffne
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Hinzufügen von Bedingungen auf der Build-Tools-Importe
 
-* Fügen Sie zusätzliche bedingte Anweisungen, um die `<import>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen.  Fügen Sie `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung.  Diese Anweisungen werden in die Kopf- und Fußzeile der Csproj-Datei angezeigt.
+* Fügen Sie zusätzliche bedingte Anweisungen, um die `<import>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen. Fügen Sie `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in die Kopf- und Fußzeile der Csproj-Datei angezeigt.
 
 Zum Beispiel:
 
@@ -179,7 +179,7 @@ Zum Beispiel:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen.  Zu diesem Zweck einfügen `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
+* Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen. Zu diesem Zweck einfügen `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
 
 Zum Beispiel:
 
@@ -187,7 +187,7 @@ Zum Beispiel:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 aufweisen.  Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
+* Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 aufweisen. Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
 
 Zum Beispiel:
 

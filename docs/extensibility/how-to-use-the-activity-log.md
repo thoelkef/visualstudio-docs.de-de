@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719274"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324012"
 ---
 # <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden des Aktivitätsprotokolls
 VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses Feature ist besonders nützlich zum Debuggen von VSPackages im Einzelhandel-Umgebungen.
@@ -46,7 +46,9 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses 
 
 1. Führen Sie Visual Studio mit der [/Log](../ide/reference/log-devenv-exe.md) Befehlszeilenschalter ActivityLog.xml während einer Sitzung auf dem Datenträger zu schreiben.
 
-2. Suchen Sie nach dem Schließen von Visual Studio, das Aktivitätsprotokoll im Unterordner für Visual Studio-Daten:  <em>*% appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. Suchen Sie nach dem Schließen von Visual Studio, das Aktivitätsprotokoll im Unterordner für Visual Studio-Daten:
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor ein. Hier ist ein typischer Eintrag ein:
 
@@ -55,11 +57,13 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll zu schreiben. Dieses 
    ```
 
 ## <a name="robust-programming"></a>Stabile Programmierung
- Da das Aktivitätsprotokoll auf einen Dienst handelt, ist das Aktivitätsprotokoll in der VSPackage-Konstruktor nicht verfügbar.
 
- Sie sollten das Aktivitätsprotokoll abrufen, unmittelbar vor der in den sie schreiben. Zwischenspeichern Sie und speichern Sie das Aktivitätsprotokoll für die zukünftige Verwendung nicht.
+Da das Aktivitätsprotokoll auf einen Dienst handelt, ist das Aktivitätsprotokoll in der VSPackage-Konstruktor nicht verfügbar.
+
+Sie sollten das Aktivitätsprotokoll abrufen, unmittelbar vor der in den sie schreiben. Zwischenspeichern Sie und speichern Sie das Aktivitätsprotokoll für die zukünftige Verwendung nicht.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

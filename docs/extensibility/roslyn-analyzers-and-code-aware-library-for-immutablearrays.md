@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843311"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323639"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 
@@ -298,7 +298,7 @@ Als Nächstes die Methode ruft den Stamm des Dokuments ab, und da dies mit belie
 
 Sie können jetzt drücken **F5** das Analysemodul in eine zweite Instanz von Visual Studio ausführen. Öffnen Sie das Konsolenprojekt, die, dem Sie zuvor verwendet. Nachdem Sie, dass die Glühbirne angezeigt sehen sollten, in denen Ihre neuen Objekterstellungsausdruck ist `ImmutableArray<int>`. Wenn Sie drücken **STRG**+**.** (Punkt), sehen Sie Ihren Code zu beheben, und Sie sehen eine Vorschau des automatisch generierten Code-Unterschied in der Glühbirne Benutzeroberfläche. Roslyn, die dies für Sie erstellt haben.
 
-**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Die "15.0" ändert sich von Version zu Version mit Visual Studio). Löschen Sie das Unterverzeichnis *ComponentModelCache*.
+**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Die "16.0" ändert sich von Version zu Version mit Visual Studio.) Löschen Sie das Unterverzeichnis *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Sprechen Sie Video- und schließen Sie Codeprojekt
 
