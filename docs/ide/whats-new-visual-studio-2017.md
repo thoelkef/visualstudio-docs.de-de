@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318809"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450593"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -364,7 +364,7 @@ Weitere Informationen finden Sie unter [Visual Studio Tools für KI](../ai/about
 
 Wir aktualisieren Visual Studio 2017 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Nachfolgend werden einige der wichtigsten Updates aufgeführt, die sich derzeit in der Phase der experimentellen Vorschau befinden:
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**: ein neues Tool, über das Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.<br><br>Weitere Informationen finden Sie unter [Live Share FAQ (Häufig gestellte Fragen zu Live Share)](/visualstudio/liveshare/faq).<br><br>
+* **[Live Share:](https://visualstudio.microsoft.com/services/live-share/)** ein neues Tool, über das Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.<br><br>Weitere Informationen finden Sie unter [Live Share FAQ (Häufig gestellte Fragen zu Live Share)](/visualstudio/liveshare/faq).<br><br>
 * **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**: eine neue Funktion zur Verbesserung der Softwareentwicklung unter Verwendung von KI. Dabei werden bessere kontextbezogene Codevervollständigungen zur Verfügung gestellt, Entwickler werden dabei unterstützt, gemäß den Mustern und Formatierungen ihres Teams zu codieren, versteckte Codeprobleme zu finden und Code Reviews auf die Bereiche zu beschränken, die wirklich wichtig sind. <br><br>Weitere Informationen finden Sie unter [IntelliCode FAQ (Häufig gestellte Fragen zu IntelliCode)](/visualstudio/intellicode/faq).
 
 Sie möchten mehr über unsere Pläne für Visual Studio 2017 erfahren? Weitere Informationen finden Sie auf der Seite [Visual Studio-Roadmap](/visualstudio/productinfo/vs2018-roadmap).

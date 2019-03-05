@@ -18,70 +18,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad60ce9352e85208a3548f6bcb0dabc8f63bee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb8f7a02183fe34dcd882e23ee7bf8b90f9a2cc6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617300"
 ---
 # <a name="output-element-msbuild"></a>Output-Element (MSBuild)
-Speichert Aufgabenausgabewerte in Elementen und Eigenschaften.  
+Speichert Aufgabenausgabewerte in Elementen und Eigenschaften.
 
- \<Project>  
- \<Target>  
- \<Task>  
- \<Output>  
+ \<Project> \<Target> \<Task> \<Output>
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```xml  
-<Output TaskParameter="Parameter"  
-    PropertyName="PropertyName"   
-    Condition = "'String A' == 'String B'" />  
-```  
+```xml
+<Output TaskParameter="Parameter"
+    PropertyName="PropertyName"
+    Condition = "'String A' == 'String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute  
+### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`TaskParameter`|Erforderliches Attribut.<br /><br /> Der Name des Ausgabeparameters der Aufgabe.|  
-|`PropertyName`|Entweder ist Attribut `PropertyName` oder Attribut `ItemName` erforderlich.<br /><br /> Die Eigenschaft, die den Ausgabeparameterwert der Aufgabe empfängt. Das Projekt kann dann mit der $(\<PropertyName>)-Syntax auf die Eigenschaft verweisen. Dieser Eigenschaftsname kann entweder ein neuer Eigenschaftsname oder ein Name sein, der bereits im Projekt definiert ist.<br /><br /> Dieses Attribut kann nicht verwendet werden, wenn `ItemName` auch verwendet wird.|  
-|`ItemName`|Entweder ist Attribut `PropertyName` oder Attribut `ItemName` erforderlich.<br /><br /> Das Element, das den Ausgabeparameterwert der Aufgabe empfängt. Das Projekt kann dann mit der @(\<ItemName>)-Syntax auf das Element verweisen. Der Name des Elements kann entweder ein neuer Elementname oder ein Name sein, der bereits im Projekt definiert ist. Wenn es sich bei dem Elementnamen um ein bereits vorhandenes Element handelt, werden die Ausgabeparameterwerte zum bereits vorhandenen Element hinzugefügt. <br /><br /> Dieses Attribut kann nicht verwendet werden, wenn `PropertyName` auch verwendet wird.|  
-|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`TaskParameter`|Erforderliches Attribut.<br /><br /> Der Name des Ausgabeparameters der Aufgabe.|
+|`PropertyName`|Entweder ist Attribut `PropertyName` oder Attribut `ItemName` erforderlich.<br /><br /> Die Eigenschaft, die den Ausgabeparameterwert der Aufgabe empfängt. Das Projekt kann dann mit der $(\<PropertyName>)-Syntax auf die Eigenschaft verweisen. Dieser Eigenschaftsname kann entweder ein neuer Eigenschaftsname oder ein Name sein, der bereits im Projekt definiert ist.<br /><br /> Dieses Attribut kann nicht verwendet werden, wenn `ItemName` auch verwendet wird.|
+|`ItemName`|Entweder ist Attribut `PropertyName` oder Attribut `ItemName` erforderlich.<br /><br /> Das Element, das den Ausgabeparameterwert der Aufgabe empfängt. Das Projekt kann dann mit der @(\<ItemName>)-Syntax auf das Element verweisen. Der Name des Elements kann entweder ein neuer Elementname oder ein Name sein, der bereits im Projekt definiert ist. Wenn es sich bei dem Elementnamen um ein bereits vorhandenes Element handelt, werden die Ausgabeparameterwerte zum bereits vorhandenen Element hinzugefügt. <br /><br /> Dieses Attribut kann nicht verwendet werden, wenn `PropertyName` auch verwendet wird.|
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
 
-### <a name="parent-elements"></a>Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
 | [Aufgabe](../msbuild/task-element-msbuild.md) | Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. |
 
-## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel zeigt die Ausführung einer `Csc`-Aufgabe innerhalb eines `Target`-Elements. Die Elemente und Eigenschaften, die den Aufgabeparametern übergeben werden, werden außerhalb des Bereichs dieses Beispiels deklariert. Der Wert des Ausgabeparameters `OutputAssembly` wird im `FinalAssemblyName`-Element gespeichert, und der Wert des Ausgabeparameters `BuildSucceeded` wird in der `BuildWorked`-Eigenschaft gespeichert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
+## <a name="example"></a>Beispiel
+ Das folgende Codebeispiel zeigt die Ausführung einer `Csc`-Aufgabe innerhalb eines `Target`-Elements. Die Elemente und Eigenschaften, die den Aufgabeparametern übergeben werden, werden außerhalb des Bereichs dieses Beispiels deklariert. Der Wert des Ausgabeparameters `OutputAssembly` wird im `FinalAssemblyName`-Element gespeichert, und der Wert des Ausgabeparameters `BuildSucceeded` wird in der `BuildWorked`-Eigenschaft gespeichert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
-```xml  
-<Target Name="Compile" DependsOnTargets="Resources">  
-    <Csc  Sources="@(CSFile)"  
-            TargetType="library"  
-            Resources="@(CompiledResources)"  
-            EmitDebugInformation="$(includeDebugInformation)"  
-            References="@(Reference)"  
-            DebugType="$(debuggingType)"  
-            OutputAssembly="$(builtdir)\$(MSBuildProjectName).dll" >  
-        <Output TaskParameter="OutputAssembly"  
-                  ItemName="FinalAssemblyName" />  
-        <Output TaskParameter="BuildSucceeded"  
-                  PropertyName="BuildWorked" />  
-    </Csc>  
-</Target>  
-```  
+```xml
+<Target Name="Compile" DependsOnTargets="Resources">
+    <Csc  Sources="@(CSFile)"
+            TargetType="library"
+            Resources="@(CompiledResources)"
+            EmitDebugInformation="$(includeDebugInformation)"
+            References="@(Reference)"
+            DebugType="$(debuggingType)"
+            OutputAssembly="$(builtdir)\$(MSBuildProjectName).dll" >
+        <Output TaskParameter="OutputAssembly"
+                  ItemName="FinalAssemblyName" />
+        <Output TaskParameter="BuildSucceeded"
+                  PropertyName="BuildWorked" />
+    </Csc>
+</Target>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
- [Aufgaben](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Siehe auch
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

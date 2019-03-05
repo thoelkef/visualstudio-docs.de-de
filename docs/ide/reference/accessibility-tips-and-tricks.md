@@ -1,7 +1,7 @@
 ---
 title: Tipps und Tricks zur Barrierefreiheit für Visual Studio
 description: Informationen zu Tipps und Tricks, die Ihnen dabei helfen sollen, die Visual Studio-IDE für jeden Benutzer, einschließlich Benutzer mit einer Behinderung, leichter zugänglich zu machen
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318551"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680931"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
 > [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
+> Weitere Informationen zu Updates zur Barrierefreiheit finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017, Version 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sprachausgaben und anderen Hilfstechnologien kompatibel sind. In diesem Thema werden allgemeine Tastenkombinationen aufgeführt, die Sie verwenden können, um Aufgaben nur über die Tastatur auszuführen. Außerdem werden Informationen darüber bereitgestellt, wie Sie die Designs mit hohem Kontrast zum Verbessern der Sichtbarkeit verwenden. Außerdem erfahren Sie, wie Anmerkungen verwendet werden, um nützliche Informationen über Ihren Code anzuzeigen. Sie erhalten ebenfalls Informationen darüber, wie Sie Sounds für Build- und Breakpointereignisse festlegen.
 
@@ -64,6 +64,7 @@ Zu diesen Tastenkombinationen gehören:
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|
 |Kontextmenüs|Öffnen Sie ein Kontextmenü (Rechtsklick). <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**UMSCHALT** + **F10**|
 |Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-TASTE gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Um z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio anzuzeigen, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
+|Suchfeld „Schnellstart“| Verwenden des Suchfeatures in Visual Studio|**Strg** + **Q**|
 |Fenster „Toolbox“|Wechseln Sie zwischen Toolboxregisterkarten.|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|
 |Fenster „Toolbox“|Fügen Sie ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzu.|**EINGABETASTE**|
 |Tastatur, Umgebung, Dialogfeld „Optionen“|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|

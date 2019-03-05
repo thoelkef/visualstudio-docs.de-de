@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure Advisory Chat-Vorteil nutzen können, der in Visual Studio-Abonnements enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380043"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841012"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -57,7 +55,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Frage:  Inwiefern unterscheiden sich Azure Advisory Chat und Azure Advisor?
--  A:  Der Azure Advisory Chat ist ein Echtzeitchatdienst, der bei Fragen zu Azure hilft. [Azure Advisor](/azure/advisor/advisor-overview) ist ein personalisierter Cloudberater, der Sie mit bewährten Methoden dabei unterstützt, Ihre Azure-Bereitstellungen zu optimieren. Dieser Dienst analysiert Ihre Ressourcenkonfiguration und Nutzungstelemetriedaten und empfiehlt dann Lösungen, mit denen Sie die Kosteneffizienz, Leistung, Hochverfügbarkeit und Sicherheit Ihrer Azure-Ressourcen verbessern können.
+-  Antwort:  Der Azure Advisory Chat ist ein Echtzeitchatdienst, der bei Fragen zu Azure hilft. [Azure Advisor](/azure/advisor/advisor-overview) ist ein personalisierter Cloudberater, der Sie mit bewährten Methoden dabei unterstützt, Ihre Azure-Bereitstellungen zu optimieren. Dieser Dienst analysiert Ihre Ressourcenkonfiguration und Nutzungstelemetriedaten und empfiehlt dann Lösungen, mit denen Sie die Kosteneffizienz, Leistung, Hochverfügbarkeit und Sicherheit Ihrer Azure-Ressourcen verbessern können.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.

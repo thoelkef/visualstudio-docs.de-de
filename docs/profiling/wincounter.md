@@ -8,53 +8,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d602ca205cc8b60b867606e391d6a3c33f46107a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620641"
 ---
 # <a name="wincounter"></a>WinCounter
-Über die Option **WinCounter** wird ein Leistungsindikator für Windows oder die Anwendung angegeben, um bei der Profilerstellung festgelegte Intervalle zu erfassen. Leistungsindikatoren für Windows und die Anwendung werden als Markierungen in den Profilerstellungs-Datendateien aufgeführt. Sie können mehrere Leistungsindikatoren angeben, die in separaten Optionen erfasst werden sollen.  
-  
- Standardmäßig werden Leistungsindikatoren alle 500 ms erfasst. Verwenden Sie die Option **AutoMark**, um ein anderes Intervall für die Erfassung festzulegen.  
-  
- Es wird nur die Option **AutoMark** verwendet. Wenn mehrere Optionen **AutoMark** angegeben sind, wird nur die letzte verwendet.  
-  
- Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `Path`  
- Der Windows-Leistungsindikator im PDH-Indikatorpfadformat.  
-  
-## <a name="required-options"></a>Erforderliche Optionen  
- Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.  
-  
- **Start:** `Method`  
- Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
-  
-## <a name="exclusive-options"></a>Ausschließende Optionen  
- Die Option **AutoMark** kann nur mit der Option **WinCounter** verwendet werden.  
-  
- **AutoMark:** `Milliseconds`  
- Gibt die Zeit in Millisekunden zwischen Datenerfassungen mit einem Windows-Leistungsindikator an.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel werden zwei Windows-Leistungsindikatoren angeben, die in einem Intervall von 1000 ms erfasst werden.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)
+Über die Option **WinCounter** wird ein Leistungsindikator für Windows oder die Anwendung angegeben, um bei der Profilerstellung festgelegte Intervalle zu erfassen. Leistungsindikatoren für Windows und die Anwendung werden als Markierungen in den Profilerstellungs-Datendateien aufgeführt. Sie können mehrere Leistungsindikatoren angeben, die in separaten Optionen erfasst werden sollen.
+
+ Standardmäßig werden Leistungsindikatoren alle 500 ms erfasst. Verwenden Sie die Option **AutoMark**, um ein anderes Intervall für die Erfassung festzulegen.
+
+ Es wird nur die Option **AutoMark** verwendet. Wenn mehrere Optionen **AutoMark** angegeben sind, wird nur die letzte verwendet.
+
+ Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.
+
+## <a name="syntax"></a>Syntax
+
+```cmd
+VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]
+```
+
+#### <a name="parameters"></a>Parameter
+ `Path`: der Windows-Leistungsindikator im PDH-Indikatorpfadformat.
+
+## <a name="required-options"></a>Erforderliche Optionen
+ Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.
+
+ **Start:** `Method`: Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.
+
+## <a name="exclusive-options"></a>Ausschließende Optionen
+ Die Option **AutoMark** kann nur mit der Option **WinCounter** verwendet werden.
+
+ **AutoMark:** `Milliseconds` gibt die Zeit in Millisekunden zwischen Datenerfassungen mit einem Windows-Leistungsindikator an.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel werden zwei Windows-Leistungsindikatoren angeben, die in einem Intervall von 1000 ms erfasst werden.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000
+```
+
+## <a name="see-also"></a>Siehe auch
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

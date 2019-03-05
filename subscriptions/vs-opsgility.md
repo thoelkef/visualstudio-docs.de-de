@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informationen zum Trainingsvorteil von Skill Me Up – Powered by Opsgility im ausgewählten Visual Studio-Abonnement.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380213"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843843"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Der Skill Me Up – Powered by Opsgility-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -32,7 +30,7 @@ Ausgewählte Visual Studio-Abonnements bieten bis zu sechs Monate Zugriff auf Ex
    > [!div class="mx-imgBorder"]
    > ![Angebotsseite des Opsgility-Vorteils](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4. Das ist auch schon alles.  Jetzt können Sie loslegen.  
+4. Das ist auch schon alles.  Jetzt können Sie loslegen.
 
 
 ## <a name="eligibility"></a>Berechtigung

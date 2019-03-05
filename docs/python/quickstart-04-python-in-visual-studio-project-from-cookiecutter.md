@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe von Cookiecutter'
 description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe einer Cookiecutter-Vorlage.
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920157"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843103"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Schnellstart: Erstellen eines Projekts aus einer Cookiecutter-Vorlage
 
@@ -29,13 +29,13 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](i
 
     ![Neues Projekt aus einer Cookiecutter-Vorlage erstellen](media/projects-from-cookiecutter1.png)
 
-1. Wenn Sie die Vorlage **Microsoft/python-sklearn-classifier-cookiecutter** ausgewählt haben, klicken Sie auf **Weiter**. Dieser Prozess kann bei der ersten Verwendung von Cookiecutter mehrere Minuten dauern.
+1. Wenn Sie die Vorlage **Microsoft/python-sklearn-classifier-cookiecutter** ausgewählt haben, klicken Sie auf **Weiter**. (Der Prozess kann einige Minuten beanspruchen, wenn Sie eine bestimmte Vorlage zum ersten Mal verwenden, da Visual Studio die erforderlichen Python-Pakete installiert.)
 
-1. Legen Sie als Nächstes über das Feld **Erstellen in** einen Speicherort für das neue Projekt fest, und klicken Sie dann auf **Erstellen**.
+1. Legen Sie als Nächstes über das Feld **Erstellen in** einen Speicherort für das neue Projekt fest, und klicken Sie dann auf **Projekt erstellen und öffnen**.
 
     ![Zweiter Schritt mit Cookiecutter, Festlegen von Projekteigenschaften](media/projects-from-cookiecutter2.png)
 
-1. Wenn der Prozess abgeschlossen ist, sehen Sie die Meldung **Files created successfully** (Die Dateien wurden erfolgreich erstellt). Klicken Sie auf den Befehl **Im Projektmappen-Explorer öffnen**, um das Projekt zu öffnen.
+1. Wenn der Prozess abgeschlossen ist, sehen Sie die Meldung **Successfully created files using template...** (Dateien wurden erfolgreich mit der Vorlage erstellt). Das Projekt wird automatisch im Projektmappen-Explorer geöffnet.
 
 1. Drücken Sie **STRG**+**F5**, oder wählen Sie **Debuggen** > **Ohne Debuggen starten** aus, um das Programm auszuführen.
 

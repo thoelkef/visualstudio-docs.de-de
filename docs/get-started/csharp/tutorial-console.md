@@ -2,7 +2,7 @@
 title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156071"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841174"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -39,7 +39,7 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Hinzufügen einer Workgroup (optional)
+### <a name="add-a-workload-optional"></a>Hinzufügen einer Workload (optional)
 
 Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
 
@@ -80,6 +80,7 @@ Beginnen Sie mit der Berechnung von Integern in C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
 
    ![Auswählen der Schaltfläche „Calculator“ zum Ausführen der App aus der Symbolleiste](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Als Nächstes fügen Sie Ihrem Projekt komplexeren Rechnercode hinzu.
         }
     }
     ```
+
 1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
 
    ![Auswählen der Schaltfläche „Calculator“ zum Ausführen der App aus der Symbolleiste](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Fangen wir also an.
         }
     }
     ```
+
 1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
 
 1. Befolgen Sie die Anweisungen, und dividieren Sie die Zahl **42** durch **119**. Ihre App sollte dann in etwa wie folgt aussehen:

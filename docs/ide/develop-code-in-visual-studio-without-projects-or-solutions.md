@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155356"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718547"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
-In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
+Sie können Code von Verzeichnisbasierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappe oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
 
 Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Explorer** alle Dateien im Ordner an. Sie können auf eine beliebige Datei klicken, um mit der Bearbeitung zu beginnen. Visual Studio beginnt im Hintergrund damit, die Dateien zu indizieren, um IntelliSense, Navigation und Refactoringfunktionen zu ermöglichen. Während Sie Dateien bearbeiten, erstellen, verschieben und löschen, verfolgt Visual Studio die Änderungen automatisch nach und aktualisiert den IntelliSense-Index kontinuierlich. Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen eine grundlegende Anweisungsvervollständigung per IntelliSense.
 
@@ -29,9 +29,19 @@ Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Expl
 Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
 
 - Wählen Sie in der Visual Studio-Menüleiste die Einträge **Datei** > **Öffnen** > **Ordner**, und navigieren Sie zum Codespeicherort.
+
 - Wählen Sie im Kontextmenü (Rechtsklick) eines Ordners, der Code enthält, den Befehl **In Visual Studio öffnen** .
+
+::: moniker range="vs-2017"
 - Klicken Sie auf der Visual Studio-**Startseite** auf den Link **Ordner öffnen**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Klicken Sie im Startfenster auf den Link **Ordner öffnen**.
+::: moniker-end
+
 - Wenn Sie eine Tastatur verwenden, drücken Sie in Visual Studio die Tasten **STRG**+**UMSCHALT**+**ALT**+**O**.
+
 - Öffnen Sie Code aus einem geklonten GitHub-Repository.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>So öffnen Sie Code aus einem geklonten GitHub-Repository

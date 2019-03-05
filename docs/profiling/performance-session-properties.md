@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959420"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624970"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
 
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie unter:
 
 [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Starten
 
@@ -111,6 +111,6 @@ Weitere Informationen finden Sie unter:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersichten](../profiling/overviews-performance-tools.md)  
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
+[Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Steuern der Datensammlung](../profiling/controlling-data-collection.md)

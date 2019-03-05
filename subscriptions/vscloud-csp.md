@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270007"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842636"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -34,7 +32,7 @@ Sie müssen Ihren Kundenmandanten zunächst im Partner Center einrichten und ein
 [Weitere Informationen](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Wer kann Visual Studio-Abonnements erwerben?
-Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) für das Azure-Abonnement kann Visual Studio-Abonnements erwerben. 
+Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) für das Azure-Abonnement kann Visual Studio-Abonnements erwerben.
 
 ## <a name="how-to-buy"></a>Informationen zum Kauf
 
@@ -93,14 +91,14 @@ Es wird ein Rabatt von 5 % auf die sechste Einheit jedes Visual Studio-Abonnemen
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Frage: Wie werden die **monatlichen** Gebühren für Cloudabonnements verarbeitet?
 
-A: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt.
+Antwort: Beim ersten Kauf wird eine anteilige Menge in Rechnung gestellt, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn beispielsweise zehn monatliche Visual Studio Professional-Cloudabonnements am 15. April gekauft wurden, werden fünf Einheiten berechnet, da noch 15 von 30 Tagen des Monats (oder 50 %) verbleiben. Die Einheiten werden anteilsmäßig zu 50 % in Rechnung gestellt.
 Ab dem 1. Mai und in jedem Folgemonat werden die 10 Einheiten vollständig in Rechnung gestellt, bis Sie die Abonnements kündigen.
 
 Wenn Sie die bezahlte Menge später erhöhen, werden die erhöhten Einheiten ebenfalls anteilig berechnet, um die verbleibenden Tage des aktuellen Monats abzudecken. Wenn Sie also am 10. Mai ein weiteres monatliches Visual Studio Professional-Cloudabonnement kaufen, werden etwa 0,677 Einheiten in Rechnung gestellt (21 von 31 Tagen verbleiben im Mai).
 
 ### <a name="q-how-do-cancellations-work"></a>Frage: Wie funktioniert die Kündigung?
 
-A: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab.
+Antwort: Wenn Sie ein Visual Studio-Cloudabonnement kündigen, kündigen Sie die automatische Verlängerung. Das Abonnement wird bis zum normalen Verlängerungsdatum fortgesetzt und läuft dann ab.
 Nach dem Ablauf kann das Visual Studio-Abonnement weder Visual Studio noch andere Vorteile des Abonnements verwenden.
 
 Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächsten Monats wirksam. Wenn Sie nur manche der monatlichen Cloudabonnements Ihres Kunden kündigen, entfernen Sie die Benutzer am ersten Tag des nächsten Monats, um sicherzustellen, dass den richtigen Personen weiterhin aktive Abonnements zugewiesen sind.
@@ -109,7 +107,7 @@ Bei jährlichen Cloudabonnements wird die Kündigung am ersten Tag des Monats wi
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Frage: Welche Mengenrabatte sind für Visual Studio-Abonnements verfügbar?
 
-A:  Sie erhalten auf das sechste und alle nachfolgenden Abonnements für *jede Art von Abonnement* einen Rabatt von 5 %:
+Antwort:  Sie erhalten auf das sechste und alle nachfolgenden Abonnements für *jede Art von Abonnement* einen Rabatt von 5 %:
 
 * Visual Studio Professional – Monatsabonnement
 * Visual Studio Enterprise – Monatsabonnement
@@ -122,8 +120,8 @@ Diese Rabatte werden in den Preisdaten in [Partner Center](https://partnercenter
 
 ### <a name="q-are-there-renewal-discounts"></a>Frage: Gibt es Rabatte auf Verlängerungen?
 
-A:  Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich um Pauschalpreise. Es gilt der gleiche Preis für neue und laufende Abonnements.
+Antwort:  Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich um Pauschalpreise. Es gilt der gleiche Preis für neue und laufende Abonnements.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Frage: Gibt es Azure Dev/Test-Preisoptionen für CSPs?
 
-A: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](http://aka.ms/azuredevtestpricing) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.
+Antwort: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](https://aka.ms/azuredevtestpricing) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.

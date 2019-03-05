@@ -10,39 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878d4d7e56c51d8a41a0e3cf3e78d6c83ed5d0b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7770da734143b2b6185b266137eeb46ba25bd32a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027671"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640609"
 ---
 # <a name="file-tracking"></a>Dateinachverfolgung
-Die Dateinachverfolgung protokolliert Aufrufe an das Windows-Dateisystem für einen Prozess und dessen untergeordnete Prozesse. Durch das Aufrufen der unten aufgeführten Funktionen wird gesteuert, wann diese Protokollierung aktiviert oder deaktiviert wird, und die zu verwendende Protokolldatei angegeben.  
-  
- [EndTrackingContext](../msbuild/endtrackingcontext.md)  
- Beenden der Nachverfolgung des aktuellen Kontexts.  
-  
- [ResumeTracking](../msbuild/resumetracking.md)  
- Fortsetzen der Nachverfolgung nach einem Aufruf von [SuspendTracking](../msbuild/suspendtracking.md)  
-  
- [SetThreadCount](../msbuild/setthreadcount.md)  
- Festlegen der Anzahl der Threads, die zur Nachverfolgung verwendet werden sollen.  
-  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)  
- Beginnen eines neuen Nachverfolgungskontexts.  
-  
- [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md)  
- Beginnen eines neuen Nachverfolgungskontexts mit einem angegebenen Stamm.  
-  
- [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md)  
- Beenden der Nachverfolgung und Freigeben der verwendeten Ressourcen.  
-  
- [SuspendTracking](../msbuild/suspendtracking.md)  
- Vorübergehendes Anhalten der Nachverfolgung.  
-  
- [WriteAllTLogs](../msbuild/writealltlogs.md)  
- Schreiben der Nachverfolgungsprotokolle für alle Kontexte.  
-  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
- Schreiben des Nachverfolgungsprotokolls für den aktuellen Kontext.
+Die Dateinachverfolgung protokolliert Aufrufe an das Windows-Dateisystem für einen Prozess und dessen untergeordnete Prozesse. Durch das Aufrufen der unten aufgeführten Funktionen wird gesteuert, wann diese Protokollierung aktiviert oder deaktiviert wird, und die zu verwendende Protokolldatei angegeben.
+
+- [EndTrackingContext:](../msbuild/endtrackingcontext.md) Beendet der Nachverfolgung des aktuellen Kontexts.
+
+- [ResumeTracking:](../msbuild/resumetracking.md) Setzt die Nachverfolgung nach einem Aufruf von [SuspendTracking](../msbuild/suspendtracking.md) fort.
+
+- [SetThreadCount:](../msbuild/setthreadcount.md) Legt die Anzahl der Threads fest, die zur Nachverfolgung verwendet werden sollen.
+
+- [StartTrackingContext:](../msbuild/starttrackingcontext.md) Startet einen neuen Nachverfolgungskontext.
+
+- [StartTrackingContextWithRoot:](../msbuild/starttrackingcontextwithroot.md) Startet einen neuen Nachverfolgungskontext mit einem angegebenen Stamm.
+
+- [StopTrackingAndCleanup:](../msbuild/stoptrackingandcleanup.md) Beendet die Nachverfolgung und gibt die verwendeten Ressourcen frei.
+
+- [SuspendTracking:](../msbuild/suspendtracking.md) Hält die Nachverfolgung vorübergehend an.
+
+- [WriteAllTLogs:](../msbuild/writealltlogs.md) Erstellt Nachverfolgungsprotokolle für alle Kontexte.
+
+- [WriteContextTLogs:](../msbuild/writecontexttlogs.md) Erstellt ein Nachverfolgungsprotokoll für den aktuellen Kontext.

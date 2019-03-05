@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970919"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796659"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests für die codierte UI
 
@@ -35,7 +35,7 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
 1. Erstellen eines Projekts.
 
-    ![Erstellen eines Testprojekts der programmierten UI](../test/media/cuit_datadriven_.png)
+    ![Erstellen eines codierten Benutzeroberflächen-Testprojekts](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
@@ -50,7 +50,7 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
 4. Fügen Sie 1 plus 2 hinzu, halten Sie die Aufzeichnung an und generieren Sie die Testmethode. Später werden wir die Werte dieser Benutzereingaben mit Werten aus einer Datendatei ersetzen.
 
-    ![Erstellen einer Test-Methode](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Generieren der Testmethode](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Schließen Sie den Test-Generator. Die Methode wird dem Test hinzugefügt:
 
@@ -181,11 +181,11 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
     -   Öffnen Sie die *UIMap.uitest*-Datei.
 
-         ![Öffnen Sie den Editor für Tests der programmierten UI](../test/media/cuit_datadriven_opentesteditor.png)
+         ![Öffnen Sie den codierten Benutzeroberflächen-Test-Editor](../test/media/cuit_datadriven_opentesteditor.png)
 
     -   Wählen Sie die UI-Aktion aus und beobachten Sie die entsprechende Zuordnung des UI-Steuerelements. Beachten Sie die Zuordnung des Codes, wie z. B. `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Verwenden Sie den Editor für Tests der programmierten UI zur Unterstützung mit Code](../test/media/cuit_datadriven_testeditor.png)
+         ![Verwenden Sie den codierten Benutzeroberflächen-Test-Editor zur Unterstützung mit Code](../test/media/cuit_datadriven_testeditor.png)
 
     -   Öffnen Sie im **Eigenschaftenfenster** die Auswahl **Sucheigenschaften**. Der Wert der Sucheigenschaften **Name** ist der Wert, der im Code unter Verwendung der Datenquelle manipuliert wird. Angenommen, den `SearchProperties` werden die Werte in der ersten Spalte jeder Datenzeile zugewiesen: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();` Bei den drei Iterationen dieses Tests ändert sich der Wert **Name** für die Sucheigenschaft auf 3, dann auf 5 und zuletzt auf 6.
 

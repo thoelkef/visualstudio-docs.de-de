@@ -12,37 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fed378aad3a988daa532bb22c0dfd6cb3cbfd2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923229"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626842"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider-Funktion
-Initialisiert Markeranbieter. Muss vor anderen Funktionen des SDK für die Nebenläufigkeitsschnellansicht aufgerufen werden.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C  
-HRESULT CvInitProvider(  
-   _In_ const GUID* pGuid,  
-   _Out_ PCV_PROVIDER* ppProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pGuid`  
- Anbieter-GUID. Darf nicht NULL sein.  
-  
- `ppProvider`  
- Adresse einer Ausgabevariablen, mit der Anbieterkontext gespeichert wird. Darf nicht NULL sein.  
-  
-## <a name="return-value"></a>Rückgabewert  
- S_OK, wenn der Anbieter erfolgreich initialisiert wurde, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Siehe auch  
- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+Initialisiert Markeranbieter. Muss vor anderen Funktionen des SDK für die Nebenläufigkeitsschnellansicht aufgerufen werden.
+
+## <a name="syntax"></a>Syntax
+
+```C
+HRESULT CvInitProvider(
+   _In_ const GUID* pGuid,
+   _Out_ PCV_PROVIDER* ppProvider
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pGuid`: die Anbieter-GUID. Darf nicht NULL sein.
+
+ `ppProvider`: die Adresse einer Ausgabevariablen, mit der der Anbieterkontext gespeichert wird. Darf nicht NULL sein.
+
+## <a name="return-value"></a>Rückgabewert
+ S_OK, wenn der Anbieter erfolgreich initialisiert wurde, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkers.h*
+
+## <a name="see-also"></a>Siehe auch
+- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920482"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796646"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -30,11 +30,23 @@ Um diesen Schritten folgen zu können, benötigen Sie Visual Studio 2017 Version
 
 ## <a name="create-a-console-app"></a>Erstellen einer Konsolenanwendung
 
-Starten Sie Visual Studio, falls es noch nicht ausgeführt wird.
+Öffnen Sie Visual Studio, falls es noch nicht ausgeführt wird.
+
+::: moniker range="vs-2017"
 
 ![IDE mit angewendeten Visual C&#43;&#43;-Einstellungen](../ide/media/get-started-cpp-ide-layout.png)
 
 Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile der IDE sehen: Toolsfenster, Menüs und Symbolleisten und den Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Feld **Schnellstart**, die Menüleiste und die Standardsymbolleiste finden Sie oben. In der Mitte des Fensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt öffnen, werden Editoren und Designer in diesem Bereich angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Nachdem Sie Visual Studio geöffnet haben, wird zuerst das **Startfenster** angezeigt. Klicken Sie auf **Contine without code** (Ohne Code fortfahren), um die Entwicklungsumgebung zu öffnen.
+
+Ihnen werden drei grundlegende Teile der IDE angezeigt: Toolfenster, Menüs, Symbolleisten sowie der Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Feld **Schnellstart**, die Menüleiste und die Standardsymbolleiste finden Sie oben. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+
+::: moniker-end
 
 Visual Studio verwendet *Projekte*, um Code für eine App zu ordnen, und *Projektmappen*, um Ihre Projekte zu ordnen. Ein Projekt beinhaltet alle Optionen, Einstellungen und Regeln, die Sie zum Erstellen Ihrer Anwendung verwendet haben. Es verwaltet auch die Beziehungen zwischen allen Projektdateien und externen Dateien. Erstellen Sie zunächst ein neues Projekt und eine Projektmappe, um ihre Anwendung zu erstellen.
 

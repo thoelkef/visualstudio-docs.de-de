@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9554740cc576fc90ed232e64dbc4f73b619a8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640934"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Vorgehensweise: Sammeln von Windows-Indikatordaten
 
@@ -48,6 +48,6 @@ Windows-Indikatoren sind Systemleistungsindikatoren, die während der Profilerst
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)
 [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380403"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841428"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -33,7 +31,7 @@ Der Gültigkeitszeitraum Ihres DataCamp-Vorteils hängt von Ihrem Visual Studio-
 3. Auf der DataCamp-Seite können Sie ein neues Konto erstellen.  Sie können entweder eine E-Mail-Adresse und ein Kennwort eingeben, um sich anzumelden, oder ein vorhandenes Facebook-, LinkedIn- oder Google-Konto verwenden.  Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, klicken Sie auf **Erste Schritte**.
    > [!div class="mx-imgBorder"]
    > ![Erstellen eines neuen DataCamp-Kontos](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Wenn Sie Ihr Konto erstellen, erhalten Sie möglicherweise folgende Fehlermeldung:  „OOPS! Your promo code is invalid or expired.“ („Hoppla! Ihr Angebotscode ist ungültig oder abgelaufen.“)  Dies liegt daran, dass der Angebotscode einige Minuten nach der Erstellung abläuft.  Wenn Sie diese Meldung erhalten, kehren Sie zur Seite [Vorteile](https://my.visualstudio.com/benefits) zurück, und klicken Sie auf der Kachel mit dem DataCamp-Vorteil auf den Link **Aktivieren**.
 
@@ -62,7 +60,7 @@ Der Gültigkeitszeitraum Ihres DataCamp-Vorteils hängt von Ihrem Visual Studio-
 
 Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetzen.  Besuchen Sie [http://www.datacamp.com](http://www.datacamp.com), und melden Sie sich an.  Zunächst wird Ihnen Ihr Dashboard angezeigt, und Sie können Ihr Training dort fortsetzen, wo Sie es angehalten haben. Klicken Sie einfach auf **Continue Track** (Pfad fortsetzen).
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Fortsetzen des DataCamp-Trainings](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Berechtigung

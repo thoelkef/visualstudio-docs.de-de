@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380007"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843619"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -60,12 +58,8 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Frage:  Ist der Chatdienst in mehreren Sprachen verfügbar?
-   A: Hilfe bei Fragen zu Konten, Abrechnung und Abonnements ist in mehreren Sprachen verfügbar.  Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten ist nur auf Englisch verfügbar.
+   Antwort: Hilfe bei Fragen zu Konten, Abrechnung und Abonnements ist in mehreren Sprachen verfügbar.  Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten ist nur auf Englisch verfügbar.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 -  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
-
-
-
-

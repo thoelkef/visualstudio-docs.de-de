@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43759d33c776e7ca4a6bdd8269df4bee0f882a53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982935"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638516"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
@@ -91,6 +91,6 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)

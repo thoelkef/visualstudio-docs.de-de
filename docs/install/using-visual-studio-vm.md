@@ -2,7 +2,7 @@
 title: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
 titleSuffix: ''
 description: Erfahren Sie, wie Visual Studio auf einem virtuellen Azure-Computer verwendet wird
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952904"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450398"
 ---
 # <a id="top"> </a> Visual Studio-Images in Azure
 
@@ -34,11 +34,11 @@ Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual
 
 | Releaseversion                                              | Editionen                     |     Produktversion      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Vorschauversion 2                   |           Enterprise         | Version 16.0.0, Vorschauversion 2 |
-| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.4      |
+|    Visual Studio 2019: Preview (Vorschauversion 3)                   |           Enterprise         | Version 16.0.0 Preview 3 |
+| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Version 15.0.20     |
 |   Visual Studio 2015: Aktuellste Version (Update 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             Keine             | (Aus dem Wartungsfenster gelaufen)  |
+|         Visual Studio 2015: RTW                              |             Keiner             | (Aus dem Wartungsfenster gelaufen)  |
 
 > [!NOTE]
 > In Übereinstimmung mit der Microsoft-Wartungsrichtlinie ist die ursprünglich veröffentlichte Version (RTW) von Visual Studio 2015 aus dem Wartungsfenster gelaufen. Visual Studio 2015 Update 3 ist die einzig verbleibende Version, die für die Visual Studio 2015-Produktlinie angeboten wird.
@@ -51,7 +51,7 @@ Jedes Image enthält die für die betreffende Visual Studio-Edition empfohlene F
 
 * Alle verfügbaren Workloads einschließlich der jeweils empfohlenen optionalen Komponenten
 * .NET 4.6.2 und .NET 4.7 SDKs, Pakete zur Festlegung von Zielversionen und Entwicklertools
-* Visual F#
+* Visual F#
 * GitHub-Erweiterung für Visual Studio
 * LINQ zu SQL-Tools
 

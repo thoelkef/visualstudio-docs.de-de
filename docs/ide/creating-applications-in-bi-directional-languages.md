@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,31 +12,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335232"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450320"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
+# <a name="create-applications-in-bidirectional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 
 Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibrichtung von rechts nach links, einschließlich Arabisch und Hebräisch, korrekt anzeigen. Für einige Funktionen können Sie ganz einfach Eigenschaften festlegen. In anderen Fällen müssen Features im Code implementiert werden.
 
 > [!NOTE]
-> Um bidirektionale Sprachen anzeigen und eingeben zu können, müssen Sie mit einer Windows-Version arbeiten, in der die entsprechende Sprache konfiguriert ist. Entweder sollten Sie also eine englischsprachige Windows-Version und das entsprechende Sprachpaket installiert haben, oder Sie verwenden die entsprechende lokalisierte Windows-Version.
+> Wenn Sie bidirektionale Sprachen anzeigen und eingeben möchten, müssen Sie mit einer Windows-Version arbeiten, in der die entsprechende Sprache konfiguriert ist. Entweder sollten Sie also eine englischsprachige Windows-Version und das entsprechende Sprachpaket installiert haben, oder Sie verwenden die entsprechende lokalisierte Windows-Version.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen
 
 -  Windows-Apps
 
-   Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, die Rechts-nach-Links-Lesefolge und das Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [bidirectional support for Windows Forms applications (Unterstützung von bidirektionalen Sprachen in Windows Forms-Anwendungen)](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Web-Apps
 
-   Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen geeignet, die bidirektionalen Text verwenden. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen geeignet, die bidirektionale Sprachen verwenden. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Features unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
-Konsolen-Apps unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.
+Konsolen-Apps unterstützen keinen Text für bidirektionale Sprachen. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.
 
 ## <a name="fully-supported-features"></a>Vollständig unterstützte Funktionen
 
@@ -48,7 +48,7 @@ Zur Entwurfszeit sind bidirektionale Sprachen in Visual Studio folgendermaßen e
 
 - **Objektnamen**
 
-   Mithilfe von bidirektionalen Sprachen können Sie Projektmappen, Projekten, Dateien, Ordern usw. Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen.
+   Mithilfe von bidirektionalen Sprachen können Sie unter anderem Projektmappen, Projekten, Dateien und Ordern Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen.
 
 - **Dateicodierung**
 

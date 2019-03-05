@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46494c22a11be09efb6181340e0fb6108a17c8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647032"
 ---
 # <a name="performance-explorer-window"></a>Das Fenster "Leistungs-Explorer"
 
@@ -51,6 +51,6 @@ Das Fenster **Leistungs-Explorer** enthält eine Strukturansicht, in dem die Bin
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersichten](../profiling/overviews-performance-tools.md)  
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Steuern der Datenauflistung](../profiling/controlling-data-collection.md)
+[Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Steuern der Datensammlung](../profiling/controlling-data-collection.md)

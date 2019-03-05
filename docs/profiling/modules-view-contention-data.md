@@ -10,42 +10,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e37b85dbcf1cbbb6801cd73b30b65ee7f16d9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932050"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599297"
 ---
 # <a name="modules-view---contention-data"></a>Modulansicht: Konfliktdaten
-Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitätsdaten an, die in den Profilerstellungsdaten abgefragt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen der Module, in denen Konfliktereignisse aufgetreten sind, werden unter dem Modulknoten aufgeführt.  
-  
- Wenn die Funktion ihren eigenen Code ausgeführt hat, während ein Konfliktereignis aufgetreten ist, die Funktion sich also ganz oben in der Aufrufliste befunden hat, werden die ausgeführten Quellzeilen und Anweisungsadressen unter dem Funktionsknoten aufgeführt. Da die Daten für eine Quellzeile oder einen Anweisungszeiger erfasst werden, wenn die Zeile oder die Anweisung ausgeführt wird, sind die inklusiven und exklusiven Werte der Zeilen- und der Anweisungsdaten immer gleich.  
-  
- Die folgende Tabelle beschreibt die Werte der Spalten in der Modulansicht der Konfliktdaten.  
-  
-|Spalte|Beschreibung|  
-|------------|-----------------|  
-|**Exklusive blockierte Zeit %**|– Bei einer Funktion die Zeit, für die die Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einem Modul die Summe der exklusiv blockierten Zeit der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
-|**Exklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
-|**Exklusive Konflikte**|– Bei einer Funktion, wie oft diese vom Ausführen von Code im Text der Funktion abgehalten wurde. Konflikte in Funktionen, die von dieser Funktion aufgerufen wurden, werden nicht einbezogen.<br />– Bei einem Modul die Summe der exklusiven Konflikte der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung, wie oft diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
-|**Exklusive Konflikte %**|– Bei einer Funktion oder einem Modul der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um exklusive Konflikte dieser Funktion oder dieses Moduls handelt.<br />– Bei einer Zeile oder Anweisung der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um Konflikte handelt, die diese Zeile oder Anweisung von der Ausführung abgehalten haben.|  
-|**Inklusive blockierte Zeit**|– Bei einer Funktion die Zeit, für die diese Funktion oder eine Funktion, die von dieser Funktion aufgerufen wurde, nicht ausgeführt werden konnte.<br />– Bei einem Modul die Summe der blockierten Zeit, für die sich mindestens eine Funktion dieses Moduls im Stapel befunden hat.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
-|**Inklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit Ausführung der Profilerstellung, die der inklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung ausgeführt wurde.|  
-|**Inklusive Konflikte %**|– Bei einer Funktion, wie oft diese oder eine Funktion, die von dieser Funktion aufgerufen wurde, nicht ausgeführt werden konnte.<br />– Bei einem Modul die Anzahl von Konflikten, bei denen sich mindestens eine Funktion dieses Moduls im Stapel befunden hat.<br />– Bei einer Zeile oder einer Anweisung, wie oft diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
-|**Inklusive Konflikte %**|– Bei einer Funktion oder einem Modul der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um inklusive Konflikte dieser Funktion oder dieses Moduls handelt.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung ausgeführt wurde.|  
-|**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
-|**Modulname**|Der Name des Moduls mit der Funktion, der Zeile oder dem Anweisungszeiger.|  
-|**Modulpfad**|Der Pfad des Moduls mit dem Modul, der Funktion, der Zeile oder dem Anweisungszeiger.|  
-|**Name**|Der Name des Moduls oder der Funktion.|  
-|**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
-|**Prozessname**|Der Prozessname.|  
-|**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Modulansicht](../profiling/modules-view.md)   
- [Modulansicht: Instrumentierung](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Modulansicht](../profiling/modules-view-instrumentation-data.md)   
- [Modulansicht](../profiling/modules-view-sampling-data.md)
+Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitätsdaten an, die in den Profilerstellungsdaten abgefragt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen der Module, in denen Konfliktereignisse aufgetreten sind, werden unter dem Modulknoten aufgeführt.
+
+ Wenn die Funktion ihren eigenen Code ausgeführt hat, während ein Konfliktereignis aufgetreten ist, die Funktion sich also ganz oben in der Aufrufliste befunden hat, werden die ausgeführten Quellzeilen und Anweisungsadressen unter dem Funktionsknoten aufgeführt. Da die Daten für eine Quellzeile oder einen Anweisungszeiger erfasst werden, wenn die Zeile oder die Anweisung ausgeführt wird, sind die inklusiven und exklusiven Werte der Zeilen- und der Anweisungsdaten immer gleich.
+
+ Die folgende Tabelle beschreibt die Werte der Spalten in der Modulansicht der Konfliktdaten.
+
+|Spalte|Beschreibung|
+|------------|-----------------|
+|**Exklusive blockierte Zeit %**|– Bei einer Funktion die Zeit, für die die Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einem Modul die Summe der exklusiv blockierten Zeit der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
+|**Exklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
+|**Exklusive Konflikte**|– Bei einer Funktion, wie oft diese vom Ausführen von Code im Text der Funktion abgehalten wurde. Konflikte in Funktionen, die von dieser Funktion aufgerufen wurden, werden nicht einbezogen.<br />– Bei einem Modul die Summe der exklusiven Konflikte der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung, wie oft diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
+|**Exklusive Konflikte %**|– Bei einer Funktion oder einem Modul der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um exklusive Konflikte dieser Funktion oder dieses Moduls handelt.<br />– Bei einer Zeile oder Anweisung der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um Konflikte handelt, die diese Zeile oder Anweisung von der Ausführung abgehalten haben.|
+|**Inklusive blockierte Zeit**|– Bei einer Funktion die Zeit, für die diese Funktion oder eine Funktion, die von dieser Funktion aufgerufen wurde, nicht ausgeführt werden konnte.<br />– Bei einem Modul die Summe der blockierten Zeit, für die sich mindestens eine Funktion dieses Moduls im Stapel befunden hat.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
+|**Inklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit Ausführung der Profilerstellung, die der inklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung ausgeführt wurde.|
+|**Inklusive Konflikte %**|– Bei einer Funktion, wie oft diese oder eine Funktion, die von dieser Funktion aufgerufen wurde, nicht ausgeführt werden konnte.<br />– Bei einem Modul die Anzahl von Konflikten, bei denen sich mindestens eine Funktion dieses Moduls im Stapel befunden hat.<br />– Bei einer Zeile oder einer Anweisung, wie oft diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
+|**Inklusive Konflikte %**|– Bei einer Funktion oder einem Modul der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um inklusive Konflikte dieser Funktion oder dieses Moduls handelt.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung ausgeführt wurde.|
+|**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|
+|**Modulname**|Der Name des Moduls mit der Funktion, der Zeile oder dem Anweisungszeiger.|
+|**Modulpfad**|Der Pfad des Moduls mit dem Modul, der Funktion, der Zeile oder dem Anweisungszeiger.|
+|**Name**|Der Name des Moduls oder der Funktion.|
+|**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
+|**Prozessname**|Der Prozessname.|
+|**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
+
+## <a name="see-also"></a>Siehe auch
+- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [Modulansicht](../profiling/modules-view.md)
+- [Modulansicht: .NET-Speicherinstrumentierungsdaten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Modulansicht](../profiling/modules-view-instrumentation-data.md)
+- [Modulansicht](../profiling/modules-view-sampling-data.md)

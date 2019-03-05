@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020879"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610605"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
-In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
-  
- Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter  
-  
+In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
+
+ Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
+
 | Eigenschaften- oder Parametername | Beschreibung |
 |------------------------------------| - |
 | AdditionalLibPaths | Gibt weitere Ordner an, in denen Compiler nach Verweisassemblys suchen sollen. |
@@ -64,7 +64,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | DisableFastUpToDateCheck | Ein boolescher Wert, der nur für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gilt. Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager stellt mithilfe des "FastUpToDateCheck"-Prozesses fest, ob ein Projekt neu erstellt werden muss, damit es aktuell ist. Dieser Prozess ist schneller als die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Durch Festlegen der „DisableFastUpToDateCheck“-Eigenschaft auf `true` können Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager umgehen und die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Bestimmen der Aktualität des Projekts erzwingen. |
 | DocumentationFile | Der Name der Datei, die als XML-Dokumentationsdatei generiert wird. Dieser Name umfasst nur den Dateinamen und weist keine Pfadinformationen auf. |
 | ErrorReport | Gibt an, wie interne Compilerfehler von der Compileraufgabe gemeldet werden sollen. Gültige Werte sind "prompt", "send" und "none". Diese Eigenschaft entspricht dem `/errorreport`-Compilerschalter. |
-| ExcludeDeploymentUrl | Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein deploymentProvider-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Hinweis**:  "ExcludeDeploymentUrl" wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht verfügbar gemacht und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird. |
+| ExcludeDeploymentUrl | Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein deploymentProvider-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Hinweis**:  „ExcludeDeploymentUrl“ wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht zur Verfügung gestellt und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird. |
 | FileAlignment | Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter. |
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
 | GenerateDocumentation | (Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
@@ -128,6 +128,6 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | WarningsNotAsErrors | Gibt eine Liste mit Warnungen an, die nicht als Fehler behandelt werden sollen. Dieser Parameter entspricht dem `/warnaserror`-Compilerschalter. |
 | Win32Manifest | Der Name der Manifestdatei, die in die endgültige Assembly eingebettet werden soll. Dieser Parameter entspricht dem `/win32Manifest`-Compilerschalter. |
 | Win32Resource | Der Dateiname der Win32-Ressource, die in die endgültige Assembly eingebettet werden soll. Dieser Parameter entspricht dem `/win32resource`-Compilerschalter. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
