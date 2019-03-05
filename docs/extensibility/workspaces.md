@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925435"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324233"
 ---
 # <a name="workspaces"></a>Arbeitsbereiche
 
@@ -175,7 +175,19 @@ Ein UI-Kontext kann verwendet werden, um das Paket automatisch laden. Der Wert i
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Das Paket SourceExplorerPackage wurde nicht ordnungsgemäß geladen.
 
-Arbeitsbereich Erweiterbarkeit ist stark MEF-basierte und Komposition Fehler bewirken, dass das Ordner öffnen, um Fehler beim Laden der hosting-Paket. Wenn eine Erweiterung ein Typs mit exportiert z. B. `ExportFileContextProviderAttribute`, aber der Typ nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`, wird eine Fehlermeldung beim Versuch, einen Ordner in Visual Studio zu öffnen. Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+Arbeitsbereich Erweiterbarkeit ist stark MEF-basierte und Komposition Fehler bewirken, dass das Ordner öffnen, um Fehler beim Laden der hosting-Paket. Wenn eine Erweiterung ein Typs mit exportiert z. B. `ExportFileContextProviderAttribute`, aber der Typ nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`, wird eine Fehlermeldung beim Versuch, einen Ordner in Visual Studio zu öffnen.
+
+::: moniker range="vs-2017"
+
+Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 

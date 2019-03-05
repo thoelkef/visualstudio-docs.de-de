@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689837"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323999"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung bei der Vorlageninstallation
 
 Wenn Sie Ihre Projekt- oder Elementvorlagen Bereitstellung Probleme auftreten, können Sie die diagnoseprotokollierung aktivieren.
 
-1. Erstellen Sie eine Pkgdef-Datei im Ordner "Common7\IDE\CommonExtensions" für die Installation (z. B. C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef), mit dem folgenden Inhalt:
+::: moniker range="vs-2017"
+
+1. Erstellen Sie eine Pkgdef-Datei in die *Common7\IDE\CommonExtensions* Ordner für die Installation. Z. B. *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Erstellen Sie eine Pkgdef-Datei in die *Common7\IDE\CommonExtensions* Ordner für die Installation. Z. B. *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+2. Fügen Sie Folgendes, um die Pkgdef-Datei:
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Öffnen Sie eine Developer-Eingabeaufforderung "für die Installation nach einer Suche in der Windows-Suche, und führen `devenv /updateConfiguration`.
+3. Öffnen einer [Developer-Eingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs) für die Installation und Ausführung `devenv /updateConfiguration`.
 
-1. Starten Sie Visual Studio, und starten Sie die Dialogfeldern "Neues Projekt und neues Element" zum Initialisieren der beiden Bäumen Vorlage. Das Protokoll für die Vorlage wird nun in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (Instanz-ID entspricht der Installations-ID der Instanz von Visual Studio). Jede Vorlage Struktur Initialisierung fügt Einträge in dieses Protokoll.
+::: moniker range="vs-2017"
+
+4. Starten Sie Visual Studio, und starten Sie die Dialogfeldern "Neues Projekt und neues Element" zum Initialisieren der beiden Bäumen Vorlage.
+
+   Das Protokoll für die Vorlage wird nun in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (Instanz-ID entspricht der Installations-ID der Instanz von Visual Studio). Jede Vorlage Struktur Initialisierung fügt Einträge in dieses Protokoll.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Starten Sie Visual Studio, und starten Sie die Dialogfeldern "Neues Projekt und neues Element" zum Initialisieren der beiden Bäumen Vorlage.
+
+   Das Protokoll für die Vorlage wird nun in **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (Instanz-ID entspricht der Installations-ID der Instanz von Visual Studio). Jede Vorlage Struktur Initialisierung fügt Einträge in dieses Protokoll.
+
+::: moniker-end
 
 Die Protokolldatei enthält die folgenden Spalten:
 

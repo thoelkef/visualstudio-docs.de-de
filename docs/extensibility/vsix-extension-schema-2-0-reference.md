@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf013f24f38485d0db1ec6ca9f45d26f2ede2c9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: af4fd52b28846228f447f70320babbdd357bac89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684740"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324129"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterung Schema 2.0
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.
@@ -127,11 +127,11 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
         -   Einzelne Version # - nur die angegebene Version.
 
         > [!IMPORTANT]
-        >  Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.
+        > Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.
 
         Visual Studio 2017-Versionsnummern finden Sie unter [Visual Studio-Buildnummern und-Veröffentlichungstermine](../install/visual-studio-build-numbers-and-release-dates.md).
 
-        Wenn die Version für Visual Studio 2017-Versionen auszudrücken, sollte immer die Nebenversion sein **0**. Z. B. sollten Visual Studio 2017 Version 15.3.26730.0 ausgedrückt werden, als [15.0.26730.0,16.0). Dies ist nur für Visual Studio 2017-Versionsnummern erforderlich sind.
+        Wenn die Version für Visual Studio 2017-Versionen auszudrücken, sollte immer die Nebenversion sein **0**. Z. B. sollten Visual Studio 2017 Version 15.3.26730.0 ausgedrückt werden, als [15.0.26730.0,16.0). Dies ist nur für Visual Studio 2017 und höher Versionsnummern erforderlich sind.
 
     -   `AnyAttribute*` – Die `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als Wörterbuch mit Name-Wert-Paar verfügbar gemacht wird.
 
