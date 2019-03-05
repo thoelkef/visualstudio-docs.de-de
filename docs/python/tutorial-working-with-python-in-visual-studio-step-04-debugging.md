@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948809"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716505"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
@@ -47,12 +47,9 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 1. Überprüfen Sie, ob der Code ordnungsgemäß funktioniert, indem Sie **F5** drücken oder den Menübefehl **Debuggen** > **Debuggen starten** auswählen. Durch diesen Befehl wird der Code im Debugger ausgeführt. Da Sie jedoch keine Maßnahmen ergriffen haben, um das Programm während seiner Ausführung anzuhalten, werden nur Wellenmuster für ein paar Iterationen ausgegeben. Drücken Sie eine beliebige Taste, um das Ausgabefenster zu schließen.
 
     > [!Tip]
-    > Damit das Ausgabefenster automatisch geschlossen wird, wenn das Programm abgeschlossen ist, ersetzen Sie den `main()`-Aufruf durch den folgenden Code:
+    > Klicken Sie auf die Menübefehle **Extras** > **Optionen**, erweitern Sie den Knoten **Python**, wählen Sie die Option **Debuggen** aus, und deaktivieren Sie dann die Option **Auf Eingabe warten, wenn der Prozess normal beendet wird**, um das Ausgabefenster automatisch zu schließen, wenn das Programm abgeschlossen ist:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Python-Debugoption zum Schließen des Ausgabefensters bei normaler Beendigung des Programms](media/vs-getting-started-python-22-debugging5.png)
 
 1. Legen Sie in der `for`-Anweisung einen Haltepunkt fest, indem Sie auf den grauen Rand dieser Zeile klicken oder das Caretzeichen in dieser Zeile platzieren und den Befehl **Debuggen** > **Haltepunkt ein/aus** (**F9**) ausführen. Auf dem grauen Rand erscheint ein roter Punkt, der den Haltepunkt kennzeichnet (siehe Pfeil unten):
 

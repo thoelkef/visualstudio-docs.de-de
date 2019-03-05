@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970412"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710109"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Administratorhandbuch für Visual Studio 2017
 
@@ -54,7 +54,7 @@ Sie können Visual Studio 2017 auf Clientarbeitsstationen bereitstellen, solange
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md) können:
 
 > [!TIP]
-> Zusätzlich zur Dokumentation im Administratorhandbuch ist der [Blog von Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) eine gute Quelle für Informationen zum Setup von Visual Studio 2017.
+> Neben der Dokumentation im Administratorhandbuch sind die [Archive zum Setup von Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) eine gute Quelle für Informationen zum Setup von Visual Studio 2017.
 
 ## <a name="specify-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen
 

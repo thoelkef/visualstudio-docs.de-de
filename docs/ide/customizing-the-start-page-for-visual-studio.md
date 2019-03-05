@@ -1,5 +1,5 @@
 ---
-title: Installieren einer benutzerdefinierten Startseite oder Ändern des Startelements
+title: Ändern der Benutzeroberfläche beim Start
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948289"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685130"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
+# <a name="customize-startup"></a>Anpassen des Programmstarts
 
-Sie können die Visual Studio-Startbenutzeroberfläche auf unterschiedliche Weise anpassen. Sie können das Dialogfeld **Projekt öffnen** anzeigen, oder Sie können die Projektmappe öffnen, die zuletzt geladen wurde. Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows Presentation Foundation (WPF)-XAML-Seite, die in einem Toolfenster ausgeführt wird und Visual Studio-interne Befehle ausführen kann.
+Sie können die Benutzeroberfläche beim Start von Visual Studio auf verschiedene Weisen anpassen. So können Sie beispielsweise festlegen, dass die zuletzt geöffnete Projektmappe oder eine leere Entwicklungsumgebung geöffnet wird.
+
+::: moniker range="vs-2017"
+
+Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows Presentation Foundation (WPF)-XAML-Seite, die in einem Toolfenster ausgeführt wird und Visual Studio-interne Befehle ausführen kann.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>So ändern Sie das Startelement
 
@@ -30,7 +36,19 @@ Sie können die Visual Studio-Startbenutzeroberfläche auf unterschiedliche Weis
 
 1. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
+::: moniker range="vs-2017"
+
 1. Wählen Sie in der Liste **Beim Starten** das Element aus, das nach dem Start von Visual Studio angezeigt werden soll.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie aus der Liste **On startup, open** (Beim Start öffnen) aus, was beim Starten von Visual Studio angezeigt werden soll. Sie können zwischen **Startfenster** (über das Sie ein neues oder vorhandenes Projekt öffnen können), **Letzte Projektmappe** und **Leere Umgebung** auswählen.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>So zeigen Sie eine benutzerdefinierte Startseite an
 
@@ -40,15 +58,17 @@ Sie können [eine eigene benutzerdefinierte Startseite](../extensibility/creatin
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>So wählen Sie aus, welche benutzerdefinierte Startseite angezeigt werden soll
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 1. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
 1. Wählen Sie in der Liste **Startseite anpassen** die gewünschte Seite aus.
 
-> [!NOTE]
+> [!TIP]
 > Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

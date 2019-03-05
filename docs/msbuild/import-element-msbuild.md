@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924434"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629910"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,7 +48,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 |`Condition`|Optionales Attribut.<br /><br /> Eine auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keiner
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,7 +57,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Enthält eine Sammlung von `Import` -Elementen, die unter einer optionalen Bedingung gruppiert sind. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Mithilfe des `Import` -Elements können Sie Code wiederverwenden, der in vielen Projektdateien verwendet wird. Dies erleichtert die Verwaltung des Codes, da jedes von Ihnen ausgeführte Update für den freigegebenen Code an alle Projekte weitergegeben wird, die ihn importieren.
 
  Konventionsgemäß werden freigegebene importierte Projektdateien als *TARGETS*-Dateien gespeichert, sie sind jedoch [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Standardprojektdateien. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung besitzt. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
@@ -108,5 +107,5 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
-[Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+- [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

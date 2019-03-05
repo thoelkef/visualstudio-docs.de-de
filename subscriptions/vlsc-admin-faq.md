@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Häufig gestellte Fragen zur Migration der Volume License Service Center-Verwaltung
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297545"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844099"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -60,7 +58,7 @@ Anweisungen für den Prozess finden Sie weiter unten.
 
     Nach dem Eingeben der PCN wird die Seite aufgerufen, auf sie der Superadministratoren und Administratoren (vormals Abonnement-Manager) hinzufügen können. Im Idealfall sollte dies vor dem Migrationsdatum Ihrer Organisation durchgeführt werden, damit bei der Verwaltung Ihrer Abonnements keine Unterbrechungen auftreten.
 
-3.  **Auf das neue Portal zur Verwaltung von Abonnements zugreifen:** Nach der Migration Ihrer Organisation werden die Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
+3.  **Greifen Sie auf das neue Verwaltungsportal für Abonnements zu:** Nach der Migration Ihrer Organisation werden die Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
 
 > [!NOTE]
 > Wenn die primären Kontakte oder Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCNs besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCNs abschließen, die jeweils in den E-Mails genannt werden.
@@ -77,10 +75,10 @@ Primäre Kontakte und Ansprechpartner Ihrer Organisation erhalten eine E-Mail mi
 Sie verwalten Abonnements weiterhin über das VLSC, bis Sie die E-Mail zu Visual Studio-Abonnements erhalten, in der Sie informiert werden, dass Ihre Organisation migriert wurde und das neue Portal für die Verwaltung nutzen kann.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>Wie finde ich die öffentliche Kundennummer (Public Customer Number, PCN) oder Autorisierungsnummer meiner Organisation?
-Melden Sie sich beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und folgen Sie dem folgenden Pfad: **Abonnements** > **Visual Studio-Abonnements**. Die PCN befindet sich unterhalb der **Ergebnisse für Vereinbarung/öffentliche Kundennummer**. Eine ausführliche Anleitung zum Suchen Ihrer PCN finden Sie in diesem [Hilfeartikel](find-pcn.md).
+Melden Sie sich bei [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und navigieren Sie zu folgendem Pfad: **Abonnements** > **Visual Studio-Abonnements**. Die PCN befindet sich unterhalb der **Ergebnisse für Vereinbarung/öffentliche Kundennummer**. Eine ausführliche Anleitung zum Suchen Ihrer PCN finden Sie in diesem [Hilfeartikel](find-pcn.md).
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Wie finde ich heraus, wer mein primärer Kontakt oder Ansprechpartner ist?
-Melden Sie sich beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und folgen Sie dem folgenden Pfad: **Lizenzen > Beziehungszusammenfassung**. Wählen Sie Ihre **Lizenzierungs-ID > Kontakte** aus. Eine ausführliche Anleitung zum Suchen Ihres primären Kontakts oder Ansprechpartners finden Sie in diesem [Hilfeartikel](find-primary-contact.md).
+Melden Sie sich bei [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) an, und navigieren Sie zu folgendem Pfad: **Lizenzen > Beziehungszusammenfassung**. Klicken Sie dann auf **Licensing ID > Contacts** (Lizenzierungs-ID > Kontakte). Eine ausführliche Anleitung zum Suchen Ihres primären Kontakts oder Ansprechpartners finden Sie in diesem [Hilfeartikel](find-primary-contact.md).
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Was geschieht, wenn mein primärer Kontakt oder Ansprechpartner nicht mehr im Unternehmen oder nicht verfügbar ist, um das Onboarding durchzuführen?
 Sie müssen sich [an den Support wenden](https://visualstudio.microsoft.com/subscriptions/support/#talktous) und die E-Mail-Adresse angeben, die Sie zum Verwalten von Abonnements im VLSC verwendet haben. Nach der Überprüfung kann der Support Sie beim Onboardingprozess unterstützen.
@@ -98,7 +96,7 @@ Ja, wenn die Vereinbarung weiterhin aktiv ist, wird Ihre Organisation migriert.
 Ja, Ihre Organisation wird dennoch zum neuen System migriert. Die Möglichkeit einer übermäßigen Inanspruchnahme (bei Vereinbarungstypen, die dies zulassen) ist im neuen System vorhanden.
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>Was geschieht, wenn meine Organisation über mehrere Abonnements verfügt, die einem einzelnen Benutzer/einer E-Mail-Adresse zugewiesen sind?
-Ihre Organisation wird dennoch migriert.  Sie können jedoch diesem Benutzer/der E-Mail-Adresse keine weiteren Abonnements der gleichen Ebene (d.h. Professional, Enterprise usw.) zuweisen. Alle Abonnements der gleichen Ebene, die bei der Migration dieselbe E-Mail-Adresse aufweisen, werden weiterhin angezeigt, aber Administratoren müssen die E-Mail-Adressen ändern, damit sie eindeutig sind. Mehrere Abonnements der gleichen Ebene können im neuen Portal nicht einem einzelnen Benutzer/einer E-Mail-Adresse zugewiesen werden.
+Ihre Organisation wird dennoch migriert.  Sie können diesem Benutzer/dieser E-Mail-Adresse jedoch keine weiteren Abonnements mit dem gleichen Tarif (d.h. Professional, Enterprise usw.) zuweisen. Alle Abonnements der gleichen Ebene, die bei der Migration dieselbe E-Mail-Adresse aufweisen, werden weiterhin angezeigt, aber Administratoren müssen die E-Mail-Adressen ändern, damit sie eindeutig sind. Mehrere Abonnements der gleichen Ebene können im neuen Portal nicht einem einzelnen Benutzer/einer E-Mail-Adresse zugewiesen werden.
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>Wo finde ich aktuelle Informationen zur Migration?
 Aktuelle Informationen bezüglich dieser Migration finden Sie auf unserer [Webseite](https://aka.ms/vs-admin) für Administratoren von Visual Studio-Abonnements. Wenn Sie Unterstützung benötigen, sehen Sie sich die [Supportseite](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions) für Visual Studio-Abonnements an, die Informationen zur Selbsthilfe und Kontaktdaten für den Support enthält. In den nächsten Monaten werden wir weitere Updates auf der Webseite für Administratoren und per E-Mail bereitstellen, damit dieser Übergang mit Leichtigkeit durchgeführt werden kann.

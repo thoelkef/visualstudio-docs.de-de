@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911194"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800530"
 ---
 # <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
 
@@ -52,7 +52,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 ![Status „Weitere Informationen erforderlich“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Weitere Informationen erforderlich** gibt an, dass wir weitere Diagnoseinformationen von Ihnen benötigen, um die Untersuchung fortzusetzen.  Weitere Informationen zum Beantworten dieser Anforderungen finden Sie im Abschnitt „Wann sind weitere Informationen erforderlich? (Weitere Informationen erforderlich)“ des Artikels [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info).
+**Weitere Informationen erforderlich** gibt an, dass wir weitere Diagnoseinformationen von Ihnen benötigen, um die Untersuchung fortzusetzen.  Weitere Informationen zum Beantworten dieser Anforderungen finden Sie im Abschnitt „Wann sind weitere Informationen erforderlich? (Weitere Informationen erforderlich)“ des Artikels [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info).
 
 - - -
 
@@ -110,7 +110,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 Es wird empfohlen, dass Sie die Suchfunktion verwenden, um sicherzustellen, dass Ihr Problem nicht bereits gemeldet wurde. Wenn Sie einen vorhandenen Eintrag finden, der zu Ihrem Problem passt, dann folgen Sie diesem Problemticket, und stimmen Sie dafür.
 
- Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Wie wird mein Feedback priorisiert?
 

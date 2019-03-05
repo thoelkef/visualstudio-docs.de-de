@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089265"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615545"
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Dieser Decorator informiert den Compiler, dass diese Funktion ein Aufruf an eine Zuweisung ist.  Jeder Aufruf der Funktion wird die Adresse der Aufrufsite, die Größe der Aufrufanweisung und die TypeId des neuen Objekts zu einem neuen `S_HEAPALLOCSITE`-Symbol ausgeben.  Wenn eine Aufrufliste zugeordnet ist, wird Windows ein ETW-Ereignis mit diesen Informationen ausgeben.  Der Speicherprofilerstellungstool führt die Aufrufliste dazu, eine Rückgabeadresse entsprechend des `S_HEAPALLOCSITE`-Symbols zu suchen. Die TypeId-Informationen im Symbol wird verwendet, um den Laufzeittyp der Zuordnung anzuzeigen.
    >
@@ -79,7 +79,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```
 
    Wenn Sie C verwenden, verwenden Sie stattdessen.die `OpenHeapTracker`-Funktion.  Diese Funktion gibt ein Handle zurück, das Sie verwenden, wenn Sie andere Nachverfolgungsfunktionen aufrufen:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```
 
 ## <a name="track-memory-usage"></a>Nachverfolgen der Speicherauslastung
-Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
+Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt.
 
 ![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwend
 > Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen** > **Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen** > **Windows** > **Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
-[Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
-[Speicherauslastung](../profiling/memory-usage.md)
+[Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+[Messen der Speicherauslastung in Visual Studio](../profiling/memory-usage.md)

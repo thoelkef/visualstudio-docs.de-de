@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933157"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722498"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
@@ -109,7 +109,7 @@ Der Codeblock wird bis auf die erste Zeile reduziert, an die Auslassungspunkte a
 
 ## <a name="view-symbol-definitions"></a>Anzeigen von Symboldefinitionen
 
-Der Visual Studio-Editor erleichtert u.a. die Prüfung der Definition eines Typs oder einer Methode. Sie können z.B. zu der Datei navigieren, die die Definition enthält, indem Sie an einer beliebigen Stelle, an der auf das Symbol verwiesen wird, **Gehe zu Definition** auswählen. Sie können auch die Option [Definition einsehen](../../ide/go-to-and-peek-definition.md#peek-definition) verwenden. Dies stellt eine schnellere Möglichkeit dar, bei der der Fokus weiterhin auf der Datei liegt. Im Folgenden wird die Definition von Typ `string` dargestellt.
+Der Visual Studio-Editor erleichtert u.a. die Prüfung der Definition eines Typs oder einer Methode. Sie können z.B. zu der Datei navigieren, die die Definition enthält, indem Sie an einer beliebigen Stelle, an der auf das Symbol verwiesen wird, **Gehe zu Definition** auswählen oder **F12** drücken. Sie können auch die Option [Definition einsehen](../../ide/go-to-and-peek-definition.md#peek-definition) verwenden. Dies stellt eine schnellere Möglichkeit dar, bei der der Fokus weiterhin auf der Datei liegt. Im Folgenden wird die Definition von Typ `string` dargestellt.
 
 1. Klicken Sie mit der rechten Maustaste auf eine beliebige Darstellung von `string`, und wählen Sie im Inhaltsmenü die Option **Definition einsehen** aus. Drücken Sie alternativ **ALT**+**F12**.
 

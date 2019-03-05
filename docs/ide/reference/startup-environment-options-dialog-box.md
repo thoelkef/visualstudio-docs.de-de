@@ -10,15 +10,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942283"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696492"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Start, Umgebung, Dialogfeld „Optionen“
-Verwenden Sie diese Seite zum Anpassen der Visual Studio-Startseite oder zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Weitere Informationen finden Sie unter [Anpassen der Startseite](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker range="vs-2017"
+
+Verwenden Sie diese Seite zum Anpassen der Visual Studio-Startseite oder zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Weitere Informationen finden Sie unter [Anpassen der Startseite für Visual Studio](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Verwenden Sie diese Seite zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Sie können in der Liste **On startup, open** (Beim Start öffnen) zwischen **Startfenster** (über das Sie ein neues oder vorhandenes Projekt öffnen können), **Letzte Projektmappe** und **Leere Umgebung** auswählen.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

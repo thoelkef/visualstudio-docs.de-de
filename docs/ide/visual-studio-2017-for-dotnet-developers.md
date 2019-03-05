@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920599"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708640"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017-Produktivitätsleitfaden für C#
 
@@ -92,6 +92,8 @@ Visual Studio 2017 bietet eine Vielzahl von Refactorings, Aktionen zum Generiere
   - *NULL-Überprüfung hinzufügen*
   - *Parameter hinzufügen*
   - *Nicht erforderliche using-Direktiven entfernen*
+  - *Konvertieren einer Foreach-Schleife in eine LINQ-Abfrage oder LINQ-Methode*
+  - *Refactoring per Pull von Elementen mit Dialogfeldoptionen*
   - Weitere Informationen finden Sie in unserer [Dokumentation](https://aka.ms/refactorings).
 - Schreiben Sie mit [Roslyn-Analysetools](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix) Ihr eigenes Refactoring oder Ihre eigene Codefehlerbehebung.
 - Mehrere Communitymitglieder haben kostenlose Erweiterungen geschrieben, die zusätzliche Codeüberprüfungen hinzufügen:
@@ -108,7 +110,7 @@ Visual Studio 2017 weist viele Features zum Suchen und Navigieren in Ihrer Codeb
 
 | Feature | Verknüpfung | Details oder Verbesserungen |
 |- | - | -|
-| Alle Verweise suchen | **Umschalt**+**F12**| Ergebnisse werden farbig hervorgehoben und können nach Projekt, Definition usw. gruppiert werden. Sie können Ergebnisse auch sperren. |
+| Alle Verweise suchen | **Umschalt**+**F12**| Ergebnisse werden farbig hervorgehoben und können nach Projekt, Definition und Verweistyp (z.B. „read“ (Lesen) oder „write“ (Schreiben)) gruppiert werden. Sie können Ergebnisse auch sperren. |
 | Gehe zu Implementierung | **Strg**+**F12** | Mit „Gehe zu Definition“ für das Schlüsselwort `override` können Sie zum überschriebenen Member navigieren. |
 | Gehe zu Definition | **F12** oder **Strg**+**Klicken**| Sie können bei gedrückter **STRG**-TASTE klicken, um zur Definition zu navigieren. |
 | Peek-Definition | **ALT**+**F12** | Inlineansicht einer Definition |

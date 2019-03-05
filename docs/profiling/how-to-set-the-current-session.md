@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c082abccc6201bd0e0af2152767dd61ce1e720c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042503"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601658"
 ---
 # <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Sitzung
 
@@ -36,7 +36,7 @@ Wenn Sie nach dem Festlegen einer Sitzung als aktuelle Sitzung auf **Start** auf
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)  
-[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)
+[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)
 [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)

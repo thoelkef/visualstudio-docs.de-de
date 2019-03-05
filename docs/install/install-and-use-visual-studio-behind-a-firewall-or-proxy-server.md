@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954646"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796620"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -84,7 +84,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
-| Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite in Visual Studio. |
+| Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite (nur in Visual Studio 2017). |
 | Ziel-<br> benachrichtigungs- <br>Dienst | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Dient zum Filtern einer globalen Liste mit Benachrichtigungen in eine Liste, die nur für bestimmte Computertypen/Verwendungsszenarien gilt. |
 | Erweiterung <br>auf Update überprüfen | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Dient zum Bereitstellen von Benachrichtigungen wenn für eine installierte Erweiterung ein Update verfügbar ist. <br><br> Wird als Anmeldestandort verwendet. |
 | AI-Projekt <br>Integration | az861674.vo.msecnd.net | | 443<br> | Wird zum Konfigurieren neuer Projekte und zum Senden von Nutzungsdaten an Ihr registriertes Application Insights-Konto verwendet. |

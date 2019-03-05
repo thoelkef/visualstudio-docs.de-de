@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768427"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623826"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
-Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.  
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.
 
 
 | Parameter | Beschreibung |
@@ -88,21 +88,21 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `Win32Icon` | Optionaler `String` -Parameter.<br /><br /> Fügt der Assembly eine *ICO*-Datei hinzu, die der Ausgabedatei im **Datei-Explorer** das gewünschte Aussehen verleiht. Dieser Parameter entspricht der Option [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) des Compilers *vbc.exe*. |
 | `Win32Resources` | Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Dieser Parameter entspricht der Option [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) des Compilers *vbc.exe*. |
 
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Anmerkungen
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird ein Visual Basic-Projekt kompiliert.  
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird ein Visual Basic-Projekt kompiliert.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Visual Basic command-line compiler (Visual Basic-Befehlszeilencompiler)](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

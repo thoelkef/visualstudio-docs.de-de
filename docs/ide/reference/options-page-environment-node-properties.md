@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955751"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708328"
 ---
-# <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
-In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Umgebung**, `DTE.Properties("Environment", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.
+# <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens „Umgebung“
+
+In diesem Artikel werden die Seiten (oder Eigenschaftensammlungen) beschrieben, die der **Umgebungskategorie** `DTE.Properties("Environment", <Property Page>)` des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.
 
 ## <a name="general"></a>Allgemein
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |AutohidePinActiveTabOnly|Get/Set (boolesch)|Bestimmt, ob die Schaltfläche **Automatisch im Hintergrund** nur auf die aktive Registerkarte angewendet wird.|
 
 ## <a name="add-inmacros-security"></a>Add-In/Makrosicherheit
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |LoadAddinsFromTheWeb|Get/Set (boolesch)|Ermöglicht das Laden von Add-Ins über eine URL im Internet.|
 
 ## <a name="documents"></a>Dokumente
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |DocumentDockPreference|Get/Set (Enumeration)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Die Position in der Gruppe der Registerkarten, an der das geöffnete Dokument eingefügt wird.|
 
 ## <a name="extension-manager"></a>Erweiterungs-Manager
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |AutomaticallyCheckForUpdates|Get/Set (boolesch)|Sucht automatisch nach Updates für installierte Erweiterungen.|
 
 ## <a name="find-and-replace"></a>Suchen und Ersetzen
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (boolesch)|Blendet das Fenster **Suchen und Ersetzen** aus, nachdem mit **Schnellsuche** oder **Schnellersetzung** eine Übereinstimmung gefunden wurde.|
 
 ## <a name="import-and-export-settings"></a>Einstellungen importieren und exportieren
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |AutoSaveFile|Get/Set (Zeichenfolge)|Der Name der Datei, in der Benutzereinstellungen automatisch gespeichert werden.|
 
 ## <a name="international-settings"></a>Internationale Einstellungen
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |Sprache|Get/Set (Zeichenfolge)|Der LCID-Wert der aktuellen Sprache für Visual Studio.|
 
 ## <a name="keyboard"></a>Tastatur
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |Schema|Get/Set (Zeichenfolge)|Gibt eine Zeichenfolge zurück, die ein integriertes Schema oder den vollständigen Pfad der geladenen VSK-Datei enthält, oder gibt "(Standard)" zurück, wenn keine VSK-Datei geladen ist.|
 
 ## <a name="projects-and-solution"></a>Projekte und Projektmappe
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |MSBuildOutputVerbosity|Get/Set (Zeichenfolge)|Gibt den Ausführlichkeitsgrad für die Buildausgabe an.|
 
 ## <a name="startup"></a>Start
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |StartPageRefreshDownloadedContent|Get/Set (boolesch)|Aktualisiert die Startseite nach jedem Ablauf des in StartPageRefreshInterval angegebenen Intervalls.|
 |StartPageRefreshInterval|Get/Set (kurzer Name)|Das Intervall in Minuten, in dem die Startseite aktualisiert wird.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Eigenschaftenelementname|Wert|Beschreibung|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enumeration)|Beim Start auszuführende Aktion von <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |CommentTokens|SafeArray|Gibt ein SafeArray von Kommentartokenwerten zurück. Es sind jeweils die folgenden Felder enthalten: `Name` (Zeichenfolge) und `Priority` (<xref:EnvDTE.vsTaskPriority>, High, Medium oder Low).|
 
 ## <a name="web-browser"></a>Webbrowser
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|

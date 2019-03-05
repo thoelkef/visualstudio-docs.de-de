@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer netzwerkbasierten Installation
 description: Erfahren Sie, wie Sie eine netzwerkbasierte Installation von Visual Studio mit dem Befehl „--layout“ aktualisieren.
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937538"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796633"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio 2017
 
@@ -26,13 +26,13 @@ Es ist möglich, ein Layout für die Netzwerkinstallation von Visual Studio mit 
 
 ## <a name="how-to-update-a-network-layout"></a>Gewusst wie: Aktualisieren eines Netzwerklayouts
 
-Um die Netzwerkinstallationsfreigabe so zu aktualisieren, dass sie die neuesten Updates aufweist, führen Sie den Befehl „--layout“ aus, um aktualisierte Pakete schrittweise herunterzuladen.
+Wenn Sie die Netzwerkinstallationsfreigabe mit den neuesten Updates aktualisieren möchten, führen Sie den Befehl `--layout` aus, um aktualisierte Pakete schrittweise herunterzuladen.
 
-Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert.  Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben.  (Dies ist neu in Version 15.3.)  Wenn Sie ein Layout einer älteren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
+**Neues in 15.3:** Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert.  Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben. Wenn Sie jedoch ein Layout einer früheren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
 
 Wenn Sie ein Layout in einer Dateifreigabe hosten, sollten Sie eine private Kopie des Layouts aktualisieren (z.B. c:\vs2017offline) und diese, nachdem alle aktualisierten Inhalte heruntergeladen wurden, in Ihre Dateifreigabe kopieren (z.B. \\server\products\VS2017). Wenn Sie dies nicht tun, ist es wahrscheinlicher, dass Benutzer, die das Setup ausführen, während Sie das Layout aktualisieren, nicht alle Inhalte aus dem Layout erhalten, da es noch nicht vollständig aktualisiert wurde.
 
-Sehen wir uns Schritt für Schritt das Erstellen und Aktualisieren eines Layouts an:
+Hier finden Sie einige ausführliche Beispiele für das Erstellen und Aktualisieren eines Layouts:
 
 * Hier ist erst einmal ein Beispiel für die Erstellung eines Layouts mit nur einer Workload für Englisch:
 
@@ -58,7 +58,11 @@ Sehen wir uns Schritt für Schritt das Erstellen und Aktualisieren eines Layouts
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* Und so wird eine zusätzliche Workload und die lokalisierte Sprache hinzugefügt, ohne die Version zu aktualisieren. (Mit diesem Befehl wird die ASP.NET & Web-Workload hinzugefügt.)  Nun sind der verwaltete Desktop, Azure und die ASP.NET & Web-Workloads in diesem Layout enthalten.  Die Sprachressourcen für Englisch, Deutsch und Französisch sind auch für all diese Workloads enthalten.  Das Layout wurde bei der Ausführung dieses Befehls jedoch nicht auf die neueste verfügbare Version aktualisiert.  Es bleibt weiterhin in der vorhandenen Version.
+    > [!IMPORTANT]
+    > Ein Updatevorgang installiert keine neu hinzugefügten optionalen Komponenten, auch wenn Sie diese in den add-Abschnitt einer [Antwortdatei](automated-installation-with-response-file.md) einfügen. Das liegt daran, dass der add-Vorgang während eines Updates nicht verwendet wird.<br>
+    > **Problemumgehung:** Führen Sie einen separaten modify-Vorgang nach einem Upgrade aus, um die fehlenden Komponenten zu installieren.
+
+* Und so wird eine zusätzliche Workload und die lokalisierte Sprache hinzugefügt, ohne die Version zu aktualisieren. (Mit diesem Befehl wird die ASP.NET & Web-Workload hinzugefügt.)  Nun sind der verwaltete Desktop, Azure und die ASP.NET & Web-Workloads in diesem Layout enthalten. Die Sprachressourcen für Englisch, Deutsch und Französisch sind auch für all diese Workloads enthalten.  Das Layout wurde bei der Ausführung dieses Befehls jedoch nicht auf die neueste verfügbare Version aktualisiert. Es bleibt weiterhin in der vorhandenen Version.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

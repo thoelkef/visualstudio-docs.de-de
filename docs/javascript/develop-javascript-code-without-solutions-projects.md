@@ -13,19 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043712"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796763"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
-Mit Visual Studio 2017 wird die Möglichkeit eingeführt, [Code ohne Projekte oder Projektmappen zu entwickeln](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Dadurch können Sie einen Ordner mit Code öffnen und sofort mit umfassender Editor-Unterstützung wie IntelliSense, Suche, Refactoring, Debuggen und vielem mehr arbeiten.
-Neben diesen Features unterstützen die Node.js-Tools für Visual Studio das Erstellen von TypeScript-Dateien, das Verwalten von NPM-Paketen sowie das Ausführen von NPM-Skripts.
+Mit Visual Studio 2017 wurde die Möglichkeit eingeführt, [Code ohne Projekte oder Projektmappen zu entwickeln](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Dadurch können Sie einen Ordner mit Code öffnen und sofort mit umfassender Editor-Unterstützung wie IntelliSense, Suche, Refactoring, Debuggen und vielem mehr arbeiten. Neben diesen Features unterstützen die Node.js-Tools für Visual Studio das Erstellen von TypeScript-Dateien, das Verwalten von NPM-Paketen sowie das Ausführen von NPM-Skripts.
 
-Wählen Sie zum Einstieg auf der Startseite, die angezeigt wird, wenn Sie Visual Studio öffnen, die Option **Ordner öffnen** aus. Sie können auch in der Symbolleiste **Datei** > **Öffnen** > **Ordner** auswählen. Im Projektmappen-Explorer werden alle Dateien im Ordner angezeigt und Sie können die Dateien zum Bearbeiten öffnen. Im Hintergrund werden die Dateien indiziert, um NPM-Features und Features zum Kompilieren und Debuggen zu aktivieren.
+Klicken Sie zunächst in der Symbolleiste auf **Datei** > **Öffnen** > **Ordner**. Im Projektmappen-Explorer werden alle Dateien im Ordner angezeigt und Sie können die Dateien zum Bearbeiten öffnen. Im Hintergrund werden die Dateien indiziert, um NPM-Features und Features zum Kompilieren und Debuggen zu aktivieren.
 
 > [!IMPORTANT]
 > Für viele in diesem Artikel beschriebene Features ist Visual Studio 2017 Version 15.8 erforderlich, so auch für die NPM-Integration.

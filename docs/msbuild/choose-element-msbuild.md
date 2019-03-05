@@ -19,48 +19,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9769cc862df3dd7c9502e84a8638ff051f5b330
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 316343e355f9cf3070f04660d89f9fbfd15484d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995803"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609084"
 ---
 # <a name="choose-element-msbuild"></a>Choose-Element (MSBuild)
-Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-Elementen und/oder `PropertyGroup`-Elementen auszuwählen.  
+Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-Elementen und/oder `PropertyGroup`-Elementen auszuwählen.
 
- \<Project>  
- \<Choose>  
- \<When>  
- \<Choose>  
- ...  
- \<Otherwise>  
- \<Choose>  
- ...  
+ \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```xml  
-<Choose>  
-    <When Condition="'StringA'=='StringB'">... </When>  
-    <Otherwise>... </Otherwise>  
-</Choose>  
-```  
+```xml
+<Choose>
+    <When Condition="'StringA'=='StringB'">... </When>
+    <Otherwise>... </Otherwise>
+</Choose>
+```
 
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute  
- Keine  
+### <a name="attributes"></a>Attribute
+ Keine
 
-### <a name="child-elements"></a>Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Optionales Element.<br /><br /> Gibt den Codeblock mit `PropertyGroup`- und `ItemGroup`-Elementen an, die ausgewertet werden sollen, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden. Ein `Choose`-Element kann kein oder ein `Otherwise`-Element enthalten, und es muss das letzte Element sein.|  
-|[When](../msbuild/when-element-msbuild.md)|Erforderliches Element.<br /><br /> Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann. Ein `Choose`-Element kann ein oder mehrere `When`-Elemente enthalten.|  
+|Element|Beschreibung|
+|-------------|-----------------|
+|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Optionales Element.<br /><br /> Gibt den Codeblock mit `PropertyGroup`- und `ItemGroup`-Elementen an, die ausgewertet werden sollen, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden. Ein `Choose`-Element kann kein oder ein `Otherwise`-Element enthalten, und es muss das letzte Element sein.|
+|[When](../msbuild/when-element-msbuild.md)|Erforderliches Element.<br /><br /> Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann. Ein `Choose`-Element kann ein oder mehrere `When`-Elemente enthalten.|
 
-### <a name="parent-elements"></a>Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
@@ -68,57 +61,57 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
 | [When](../msbuild/when-element-msbuild.md) | Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann. |
 
-## <a name="remarks"></a>Hinweise  
- Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md).  
+## <a name="remarks"></a>Anmerkungen
+ Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md).
 
-## <a name="example"></a>Beispiel  
- Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.  
+## <a name="example"></a>Beispiel
+ Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.
 
-```xml  
-<Project  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <PropertyGroup>  
-        <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>  
-        <OutputType>Exe</OutputType>  
-        <RootNamespace>ConsoleApplication1</RootNamespace>  
-        <AssemblyName>ConsoleApplication1</AssemblyName>  
-        <WarningLevel>4</WarningLevel>  
-    </PropertyGroup>  
-    <Choose>  
-        <When Condition=" '$(Configuration)'=='debug' ">  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <DebugType>full</DebugType>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\Debug\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-            <ItemGroup>  
-                <Compile Include="UnitTesting\*.cs" />  
-                <Reference Include="NUnit.dll" />  
-            </ItemGroup>  
-        </When>  
-        <When Condition=" '$(Configuration)'=='retail' ">  
-            <PropertyGroup>  
-                <DebugSymbols>false</DebugSymbols>  
-                <Optimize>true</Optimize>  
-                <OutputPath>.\bin\Release\</OutputPath>  
-                <DefineConstants>TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </When>  
-        <Otherwise>  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\$(Configuration)\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </Otherwise>  
-    </Choose>  
-    <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />  
-</Project>  
-```  
+```xml
+<Project
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <PropertyGroup>
+        <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>ConsoleApplication1</RootNamespace>
+        <AssemblyName>ConsoleApplication1</AssemblyName>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <Choose>
+        <When Condition=" '$(Configuration)'=='debug' ">
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <DebugType>full</DebugType>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\Debug\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+            <ItemGroup>
+                <Compile Include="UnitTesting\*.cs" />
+                <Reference Include="NUnit.dll" />
+            </ItemGroup>
+        </When>
+        <When Condition=" '$(Configuration)'=='retail' ">
+            <PropertyGroup>
+                <DebugSymbols>false</DebugSymbols>
+                <Optimize>true</Optimize>
+                <OutputPath>.\bin\Release\</OutputPath>
+                <DefineConstants>TRACE</DefineConstants>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\$(Configuration)\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+    <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Conditional Constructs (Bedingte Konstrukte)](../msbuild/msbuild-conditional-constructs.md)   
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md)
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

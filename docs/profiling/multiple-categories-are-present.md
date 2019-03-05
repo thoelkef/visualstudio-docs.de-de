@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956817"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597984"
 ---
 # <a name="multiple-categories-are-present"></a>Es sind mehrere Kategorien vorhanden
-Es wurde ein Abschnitt ausgewählt, der mehr als eine Art der Aktivität für einen bestimmten Zeitraum enthält. Beachten Sie, dass zwei Farbbalken angezeigt werden, einer vertikal auf den anderen gestapelt. Diese Farben stellen nur die beiden häufigsten Aktivitäten im angegebenen Zeitraum dar. Die Häufigkeit dieser zwei Aktivitäten wird relativ zueinander als Drittel oder Hälften des vertikalen Balkens angezeigt. Um weitere Details anzuzeigen, vergrößern Sie diesen Abschnitt der Threadansicht.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md)   
- [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)   
- [Speicherverwaltungszeit](../profiling/memory-management-time.md)   
- [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md)   
- [Standbyzeit](../profiling/sleep-time.md)   
- [Synchronisierungszeit](../profiling/synchronization-time.md)   
- [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md)
+Es wurde ein Abschnitt ausgewählt, der mehr als eine Art der Aktivität für einen bestimmten Zeitraum enthält. Beachten Sie, dass zwei Farbbalken angezeigt werden, einer vertikal auf den anderen gestapelt. Diese Farben stellen nur die beiden häufigsten Aktivitäten im angegebenen Zeitraum dar. Die Häufigkeit dieser zwei Aktivitäten wird relativ zueinander als Drittel oder Hälften des vertikalen Balkens angezeigt. Um weitere Details anzuzeigen, vergrößern Sie diesen Abschnitt der Threadansicht.
+
+## <a name="see-also"></a>Siehe auch
+- [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md)
+- [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)
+- [Speicherverwaltungszeit](../profiling/memory-management-time.md)
+- [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md)
+- [Standbyzeit](../profiling/sleep-time.md)
+- [Synchronisierungszeit](../profiling/synchronization-time.md)
+- [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md)

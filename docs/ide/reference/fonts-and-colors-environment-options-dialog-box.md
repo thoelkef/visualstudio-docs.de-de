@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970828"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700262"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
-Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
+Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras** > **Optionen** klicken und dann **Umgebung** > **Schriftarten und Farben** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
 
 Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
 
@@ -63,7 +63,13 @@ Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schrift
 
 -   **Umgebungsschriftart**
 
-     Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist. Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.
+     Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist.
+
+     ::: moniker range="vs-2017"
+
+     Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.
+
+     ::: moniker-end
 
 -   **[Alle Texttoolfenster]**
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952826"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703252"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 
@@ -35,7 +35,7 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
 |Festlegen von Optionen für die Tastenzuordnung|[Tastatur, Umgebung, Dialogfeld „Optionen“](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Aktivieren von Benachrichtigungen|[Benachrichtigungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Angeben von Optionen für das Fenster „Schnellstart“|[Schnellstart, Umgebung, Dialogfeld „Optionen“](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Festlegen der Optionen für die Startseite|[Start, Umgebung, Dialogfeld „Optionen“](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Festlegen der Startoptionen|[Start, Umgebung, Dialogfeld „Optionen“](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Festlegen, ob Einstellungen für alle Computer angewendet werden|[Synchronisierte Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Vorgehensweise zum Festlegen von Optionen für Aufgaben und Aufgabenlisten|[Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Ändern der Standardstart- und -suchseiten, Ändern des vom System verwendeten Quellcode-Editors und Konfigurieren von Optionen für Internet Explorer|[Webbrowser, Umgebung, Dialogfeld „Optionen“](../../ide/reference/web-browser-environment-options-dialog-box.md)|

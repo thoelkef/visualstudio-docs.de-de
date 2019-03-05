@@ -6,15 +6,13 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Hinzufügen einer alternativen Identität zu Ihrem Visual Studio-Abonnement, die für Azure DevOps und Azure verwendet werden kann
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858151"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842129"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identitäten für Visual Studio-Abonnenten
 
@@ -62,9 +60,9 @@ Ihr alternatives Konto wird dem Visual Studio-Abonnement hinzugefügt, sodass be
 
 ## <a name="faq"></a>FAQ
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>F: Warum erkennt Azure DevOps nicht, dass ich Visual Studio-Abonnent bin?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Frage:  Warum erkennt Azure DevOps mich nicht als Visual Studio-Abonnent?
 
-A: Azure DevOps sollte Ihr Abonnement automatisch erkennen, wenn Sie sich mit Ihrer primären oder alternativen Identität anmelden. Wenn dies nicht der Fall ist, können Sie Folgendes ausprobieren:
+Antwort: Azure DevOps sollte Ihr Abonnement automatisch erkennen, wenn Sie sich mit Ihrer primären oder alternativen Identität anmelden. Wenn dies nicht der Fall ist, können Sie Folgendes ausprobieren:
 
 * Überprüfen Sie, ob Sie über ein aktives Visual Studio-Abonnement verfügen, das [Azure DevOps als Vorteil enthält](vs-azure-devops.md).
 

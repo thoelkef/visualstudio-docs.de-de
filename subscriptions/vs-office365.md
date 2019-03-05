@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380144"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841069"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus in Visual Studio-Abonnements
 
@@ -23,9 +21,9 @@ Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer
 ## <a name="getting-started-with-office-365-pro-plus"></a>Erste Schritte mit Office 365 Pro Plus
 
 Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen und zu aktivieren:
-1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.  
+1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.
 2. Klicken Sie auf die Registerkarte **Downloads**.
-3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus. 
+3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus.
    > [!div class="mx-imgBorder"]
    > ![Office 365-Downloads](_img/vs-office365/vs-office365-downloads.png)
 0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
@@ -36,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen u
    > ![Office 365-Product Key anfordern](_img/vs-office365/vs-office365-claim-key.png)
 0. Notieren Sie sich den Schlüssel, den Sie soeben angefordert haben. (Sie können jederzeit zu dieser Liste zurückkehren, um ihn erneut anzuzeigen.)
 0. Schließen Sie das Flyoutfenster.
-0. Klicken Sie auf die Schaltfläche **Herunterladen**: 
+0. Klicken Sie auf die Schaltfläche **Herunterladen**:
    > [!div class="mx-imgBorder"]
    > ![Office 365-Download starten](_img/vs-office365/vs-office365-download-button.png)
 0. Melden Sie sich mit Ihrem Microsoft-Konto an. (Wenn Sie bereits angemeldet sind, klicken Sie auf **Weiter**.)
@@ -44,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen u
    > [!div class="mx-imgBorder"]
    > ![Office 365-Product Key eingeben](_img/vs-office365/vs-office365-enter-key.png)
 0. Klicken Sie erneut auf **Weiter**.
-0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren. 
+0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

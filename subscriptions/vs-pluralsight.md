@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/25/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089239"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841639"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -29,29 +27,29 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 1. Stellen Sie eine Verbindung mit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und klicken Sie auf der Kachel mit den Pluralsight-Vorteilen im Abschnitt „Professionelle Entwicklung“ auf den Link **Code abrufen**, um Ihr Abonnement zu aktivieren.
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „Pluralsight“](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
-   > 
+   >
    > [!IMPORTANT]
    > Wenn Sie auf der Kachel „Pluralsight-Vorteil“ auf den Link „Code abrufen“ klicken, wird möglicherweise folgende Meldung angezeigt:
-   > 
+   >
    > **„Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.“** („Bitte beachten Sie: Wenn Sie zuvor ein anderes Pluralsight-Angebot über Ihr Visual Studio-Abonnement aktiviert haben, können Sie mit diesem Code möglicherweise kein neues Pluralsight-Konto erstellen.“)
 
 2. Sie erhalten eine Benachrichtigung, dass der Gutscheincode erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
    > [!div class="mx-imgBorder"]
    > ![Pluralsight-Vorteil: Aktivieren](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.  
+3. Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.
    - Geben Sie im Formular die geforderten Kontaktinformationen ein.
    - Klicken Sie auf das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren.
    - Klicken Sie auf **I agree, activate benefit** (Ich stimme zu, Vorteil aktivieren).
      > [!div class="mx-imgBorder"]
-     > ![Pluralsight-Vorteil: Aktivierung](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
+     > ![Pluralsight-Vorteil: Aktivierung](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
      > [!div class="mx-imgBorder"]
      > ![Pluralsight-Vorteil: Nutzungsbedingungen](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
 5. Das Einrichten Ihres Kontos kann einen Moment dauern.  Sobald dieser Vorgang abgeschlossen ist, wird auf der Seite eine Bestätigung angezeigt, und Sie erhalten eine E-Mail, die Ihre Anmeldeinformationen enthält.  Diese E-Mail wird an den Alias gesendet, den Sie bei der Erstellung des Kontos angegeben haben.  Überprüfen Sie auch Ihre Ordner für Junk- oder Spam-E-Mails, wenn Sie die Nachricht nicht finden können.
    > [!div class="mx-imgBorder"]
    > ![Pluralsight-Vorteil: Bestätigung](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   > 
+   >
    > [!NOTE]
    > Wenn Ihr Konto nicht dafür berechtigt ist, neue Angebote einzulösen, informiert Sie die empfangene E-Mail darüber, dass es ein Problem mit der Erstellung Ihres Accounts gab, da diesem Berechtigungen fehlen.  Darüber hinaus sind Informationen enthalten, die Sie dabei unterstützen, das Pluralsight-Supportteam zu kontaktieren, damit dieses Ihnen bei Bedarf offene Fragen zu Ihrem Konto beantwortet.
 
@@ -92,10 +90,10 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Frage: Ich habe ein Visual Studio Enterprise-Abonnement, aber ich sehe die Pluralsight-Kachel nicht auf der Seite mit den Vorteilen. Wo liegt der Fehler?
-A: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vorteile.  Sehen Sie in der [Berechtigungstabelle](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
+Antwort: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vorteile.  Sehen Sie in der [Berechtigungstabelle](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Frage: Habe ich Zugriff auf benutzerdefinierte Wiedergabelisten oder -Kanäle mit Lernressourcen?
-A: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-Schulungsvorteile Zugang zu Expertenkanälen. Diese Kanäle wurden von Microsoft-Experten speziell zusammengestellt und sind auf das Lernen in den Bereichen .Net, Azure, DevOps und Mobilität ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnement-Portal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), um auf der Startseite von Pluralsight Zugriff auf diese Kanäle zu erhalten –
+Antwort: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-Schulungsvorteile Zugang zu Expertenkanälen. Diese Kanäle wurden von Microsoft-Experten speziell zusammengestellt und sind auf das Lernen in den Bereichen .Net, Azure, DevOps und Mobilität ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnement-Portal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), um auf der Startseite von Pluralsight Zugriff auf diese Kanäle zu erhalten –
 
 •   Scott Hanselmann (.Net, Azure): [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
 
@@ -105,7 +103,7 @@ A: Ja, als Abonnent von Visual Studio erhalten Sie im Rahmen Ihrer Pluralsight-S
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Frage: Was passiert, wenn mein Pluralsight-Abonnement abläuft?
-A:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonnement direkt bei Pluralsight abschließen.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.
+Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonnement direkt bei Pluralsight abschließen.  Wenden Sie sich an [Pluralsight](http://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) bietet Hilfe bei der Durchführung von Pluralsight-Kursen und der Verwendung der Pluralsight-Website.
@@ -113,4 +111,4 @@ A:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonne
 -  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](http://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren. 
+Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](http://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.

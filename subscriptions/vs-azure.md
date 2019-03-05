@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380125"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843207"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -28,7 +26,7 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD monatliches Guthaben     |                             Ja                             ||
 |               Visual Studio Enterprise – Monatsabonnement               |        Nicht verfügbar        |                                                             |
-|             Visual Studio Professional Standard              |     50 USD monatliches Guthaben      |                             Ja                            
+|             Visual Studio Professional Standard              |     50 USD monatliches Guthaben      |                             Ja
 |              Visual Studio Professional – Monatsabonnement              |        Nicht verfügbar        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD monatliches Guthaben      |                             Ja                             |
 |                        MSDN Platforms                        |     100 USD monatliches Guthaben     |                             Ja                             |
@@ -77,7 +75,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="faq"></a>FAQ
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Frage: Wie sende ich aus dem Azure-Portal eine Anfrage an den technischen Support?
-A:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst drei Schritte.
+Antwort:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst drei Schritte.
 1. Aktivieren Sie Ihren Vorteil für den technischen Support, und rufen Sie die Zugriffs-ID und Ihre Vertrags-ID ab.
 2. Verknüpfen Sie Ihren Supportvertrag mit Ihrem Azure-Abonnement.
 3. Senden Sie die Supportanfrage.
@@ -86,7 +84,7 @@ Ausführliche Informationen finden Sie in der Dokumentation zum [technischen Sup
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Frage: Ich habe eine Nachricht erhalten, dass ich bald keinen Zugriff auf Azure mehr haben werde.  Wie kann ich Azure weiterhin nutzen?
 
-A:  Sie erhalten diese E-Mail, weil Sie den mit Ihrem Visual Studio-Abonnement verbundenen Azure-Vorteil nutzen und dieses Abonnement abgelaufen ist oder entfernt wurde.  Um Azure weiterhin zu verwenden, haben Sie mehrere Möglichkeiten:
+Antwort:  Sie erhalten diese E-Mail, weil Sie den mit Ihrem Visual Studio-Abonnement verbundenen Azure-Vorteil nutzen und dieses Abonnement abgelaufen ist oder entfernt wurde.  Um Azure weiterhin zu verwenden, haben Sie mehrere Möglichkeiten:
 
 **Empfohlene Aktion:**
 

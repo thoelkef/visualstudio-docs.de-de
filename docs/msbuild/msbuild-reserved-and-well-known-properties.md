@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1241de2849ce0b32206c0815928c8beb140e23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963657"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632393"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt eine Reihe vordefinierter Eigenschaften zum Speichern von Informationen über die Projektdatei und die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien bereit. Diese Eigenschaften werden auf dieselbe Weise ausgewertet wie andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften. Zum Verwenden der `MSBuildProjectFile`-Eigenschaft geben Sie beispielsweise `$(MSBuildProjectFile)` ein.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt eine Reihe vordefinierter Eigenschaften zum Speichern von Informationen über die Projektdatei und die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien bereit. Diese Eigenschaften werden auf dieselbe Weise ausgewertet wie andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften. Zum Verwenden der `MSBuildProjectFile`-Eigenschaft geben Sie beispielsweise `$(MSBuildProjectFile)` ein.
 
  MSBuild verwendet die Werte in der folgenden Tabelle, um die reservierten und bekannten Eigenschaften vorzudefinieren. Reservierte Eigenschaften können nicht überschrieben werden, aber bekannte Eigenschaften können überschrieben werden, indem identisch benannte Umgebungseigenschaften, globale Eigenschaften oder Eigenschaften verwendet werden, die in der Projektdatei deklariert sind.
 
-## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften  
- In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften beschrieben.  
+## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften
+ In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften beschrieben.
 
 
 | Eigenschaft | Reserviert oder bekannt | Beschreibung |
@@ -75,7 +75,7 @@ Zusätzlich zu den oben genannten können MSBuild-Sprachelemente entsprechende N
 * When
 * Otherwise
 
-## <a name="see-also"></a>Siehe auch  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 
-[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
+- [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)

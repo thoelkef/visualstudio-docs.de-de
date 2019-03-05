@@ -16,19 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c872f10b9a0d092cc5dc4c3904fad6c6d5a4ea94
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944766"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643768"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup` Elements angegeben werden.
 
-\<Project>  
-\<ItemGroup>  
-\<Item>  
+\<Project> \<ItemGroup> \<Item>
 
 ## <a name="syntax"></a>Syntax
 
@@ -91,7 +89,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping-Element für Elemente.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 `Item`-Elemente definieren Eingaben ins Buildsystem und sind basierend auf ihren benutzerdefinierten Auflistungsnamen in Elementauflistungen gruppiert. Diese Elementtypen können als Parameter für [Aufgaben](../msbuild/msbuild-tasks.md) verwendet werden, die mithilfe der einzelnen Elemente in den Auflistungen die Schritte des Buildprozesses ausführen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
 Mithilfe der Notation @(\<myType>) kann eine Auflistung von Elementen vom Typ \<myType> in eine durch Semikolons getrennte Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um Elemente mit einem anderen Zeichen als einem Semikolon voneinander zu trennen, verwenden Sie die Syntax @(\<myType>, '\<separator>').
@@ -120,7 +118,7 @@ Das folgende Codebeispiel zeigt, wie Sie das `Update`-Attribut verwenden, um die
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Elemente](../msbuild/msbuild-items.md)  
-[Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)  
-[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)  
-[Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elemente](../msbuild/msbuild-items.md)
+- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
+- [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817437"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841626"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -150,7 +148,7 @@ Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherwe
 
 6. Ihre Vorteile sollten jetzt angezeigt werden.
 
-Hinweis: Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, dass Sie verwenden möchten (z.B. „Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).  Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
+Hinweis:  Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, das Sie verwenden möchten (z.B. „Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).  Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
 
 Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
 

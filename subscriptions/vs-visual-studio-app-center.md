@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380106"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843559"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -63,7 +61,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Frage:  Ich erhalte die Fehlermeldung, dass mein Browser nicht unterstützt wird.  Wo liegt der Fehler?
-A:  App Center erfordert neuere Funktionen, die von einigen älteren Browsern möglicherweise nicht bereitgestellt werden.  Wenn Ihr Browser nicht unterstützt wird, führen Sie die folgenden Schritte aus:
+Antwort:  App Center erfordert neuere Funktionen, die von einigen älteren Browsern möglicherweise nicht bereitgestellt werden.  Wenn Ihr Browser nicht unterstützt wird, führen Sie die folgenden Schritte aus:
 1.  Öffnen Sie einen anderen Browser, z.B. Microsoft Edge oder die neueste Version von Google Chrome, Firefox oder Safari.
 2.  Stellen Sie eine Verbindung zur Visual Studio-Website [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und melden Sie sich an.
 3.  Klicken Sie jetzt auf der Visual Studio App Center-Kachel auf den Link **Los geht‘s**.

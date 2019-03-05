@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946076"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609435"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio-Produktfeedback
 
@@ -38,12 +38,12 @@ Vorabversionen von Visual Studio verfügen über ein Menüelement **Dieses Produ
 
 Weitere Visual Studio-Supportinformationen finden Sie unter [Informationen zu Produktlebenszyklus und Wartung für Visual Studio- und Team Foundation Server](/visualstudio/productinfo/vs-servicing-vs).
 
-Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?LinkID=99019).
+Onlinehilfe zu anderen Microsoft-Produkten und -Diensten finden Sie unter [Microsoft-Support](https://go.microsoft.com/fwlink/?LinkID=99019).
 
 > [!NOTE]
-> Die Unterstützung außerhalb der USA und Kanada kann variieren. Eine Liste internationaler Kontakte finden Sie unter [Microsoft Worldwide Sites](http://www.microsoft.com/worldwide/).
+> Die Unterstützung außerhalb der USA und Kanada kann variieren. Eine Liste internationaler Kontakte finden Sie unter [Microsoft Worldwide Sites](https://www.microsoft.com/worldwide/).
 
-Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Enterprise-Supportangebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft Enterprise-Supportlösungen](http://go.microsoft.com/fwlink/?LinkId=258223).
+Für größere Organisationen, die verwaltete Unterstützung direkt von Microsoft benötigen, stehen Verträge über verschiedene Enterprise-Supportangebote zur Verfügung. Weitere Informationen finden Sie unter [Microsoft Enterprise-Supportlösungen](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Wenn das Produkt auf einem neuen Computer oder einem Gerät installiert geliefert wurde, erhalten Sie technischen Support und Hilfe für diese Software vom Hardwarehersteller. Wenden Sie sich für Unterstützung direkt an den Hersteller.
 
@@ -51,7 +51,7 @@ Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und Vertra
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Ich möchte mich an der Entwicklercommunity beteiligen
 
-Ihre Fragen und Antworten können Sie auf der Website [Visual Studio Developer Community (Visual Studio-Entwicklercommunity)](https://developercommunity.visualstudio.com), in den [MSDN-Foren](https://social.msdn.microsoft.com/Forums/home) oder auf [StackOverflow](http://stackoverflow.com/) für andere Entwickler freigeben. Sie können auf der Website [Codebeispiele für Entwickler](https://code.msdn.microsoft.com/) auch Code anderer Entwickler einsehen und eigene Beispiele teilen.
+Ihre Fragen und Antworten können Sie auf der Website der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com), in den [MSDN-Foren](https://social.msdn.microsoft.com/Forums/home) oder auf [Stack Overflow](https://stackoverflow.com/) für andere Entwickler freigeben. Sie können auf der Website [Codebeispiele für Entwickler](https://code.msdn.microsoft.com/) auch Code anderer Entwickler einsehen und eigene Beispiele teilen.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Ich möchte zur Verbesserung der Visual Studio-Dokumentation beitragen
 

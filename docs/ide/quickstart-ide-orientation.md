@@ -1,19 +1,19 @@
 ---
 title: Einführung in die Visual Studio-IDE
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955829"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712527"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -78,6 +78,8 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 ## <a name="quick-launch"></a>Schnellstart
 
 Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
+
+1. Das Feld **Schnellstart** finden Sie in der oberen rechten Ecke der IDE. (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
 
 1. Geben Sie im Feld **Schnellstart** **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
 

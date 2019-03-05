@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318393"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450255"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
 
@@ -85,7 +85,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019:
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) ist ein Entwicklerdienst, mit dem Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.
+[Visual Studio Live Share:](https://visualstudio.microsoft.com/services/live-share/) ist ein Entwicklerdienst, mit dem Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.
 
 In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
 

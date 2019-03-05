@@ -11,27 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d9942e7bc711889006184b5ec3dc491168183d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de8eb3b0e56351e9da0af799db40a29721df5df6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606381"
 ---
 # <a name="customize-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
-In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.  
-  
+In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.
+
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
-  
-|Aufgabe|Verwandter Inhalt|  
-|----------|---------------------|  
-|**Hinzufügen, Entfernen und Sortieren nach Spalten in einer Berichtsansicht:** Sie können festlegen, welche Spalten in welcher Reihenfolge in tabellenbasierten Ansichten angezeigt werden sollen. Darüber hinaus können Sie die Zeilen der Berichtstabelle auch nach Spaltenwerten sortieren.|-   [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)|  
-|**Entfernen kleiner Funktionen aus dem Bericht:** Sie können aus Berichten Funktionen entfernen, die kleiner sind als ein festgelegter Schwellenwert.|-   [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md)|  
-|**Filtern des Datums in einer Berichtsansicht**: Sie können die Daten in einem Bericht auf ein Zeitsegment der Profilerstellungsausführung begrenzen. Sie können ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht oder in einer Abfrage festlegen, die Sie im Filter der Berichtsansicht definieren. Zudem können Sie die Berichte filtern, sodass nur Funktionen angezeigt werden, die in Ihren Codedateien definiert sind.|-   [Filtern von Berichtsansichten](../profiling/filtering-report-views.md)<br />-   [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filter für die Leistungsberichtansicht](../profiling/performance-report-view-filter.md)|  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Leistungsberichtansichten](../profiling/performance-report-views.md)  
- Beschreibt die Ansichten, die Sie zum Analysieren von Profilerstellungsdaten verwenden können.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+
+|Aufgabe|Verwandter Inhalt|
+|----------|---------------------|
+|**Hinzufügen, Entfernen und Sortieren nach Spalten in einer Berichtsansicht:** Sie können festlegen, welche Spalten in welcher Reihenfolge in tabellenbasierten Ansichten angezeigt werden sollen. Darüber hinaus können Sie die Zeilen der Berichtstabelle auch nach Spaltenwerten sortieren.|-   [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)|
+|**Entfernen kleiner Funktionen aus dem Bericht:** Sie können aus Berichten Funktionen entfernen, die kleiner sind als ein festgelegter Schwellenwert.|-   [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
+|**Filtern des Datums in einer Berichtsansicht**: Sie können die Daten in einem Bericht auf ein Zeitsegment der Profilerstellungsausführung begrenzen. Sie können ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht oder in einer Abfrage festlegen, die Sie im Filter der Berichtsansicht definieren. Zudem können Sie die Berichte filtern, sodass nur Funktionen angezeigt werden, die in Ihren Codedateien definiert sind.|-   [Filtern von Berichtsansichten](../profiling/filtering-report-views.md)<br />-   [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filter für die Leistungsberichtansicht](../profiling/performance-report-view-filter.md)|
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Leistungsberichtansichten:](../profiling/performance-report-views.md) beschreiben die Ansichten, die Sie zum Analysieren von Profilerstellungsdaten verwenden können.
+
+## <a name="see-also"></a>Siehe auch
+- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

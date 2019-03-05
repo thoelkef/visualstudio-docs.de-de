@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379811"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840896"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 
-Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio Enterprise ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.  
+Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio Enterprise ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.
 
-Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abonnent ein kostenloses einmonatiges Abonnement von CAST Highlight mit vollem Funktionsumfang. 
+Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abonnent ein kostenloses einmonatiges Abonnement von CAST Highlight mit vollem Funktionsumfang.
 
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
@@ -32,7 +30,7 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    > [!div class="mx-imgBorder"]
    > ![Kachel für den CAST Highlight-Vorteil](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. Ihnen wird eine Meldung angezeigt, die bestätigt, dass Ihr Code erfolgreich abgerufen wurde.  Klicken Sie auf **Aktivieren**. Dadurch werden Sie auf die CAST Highlight-Seite weitergeleitet, auf der Sie mit der Aktivierung fortfahren können.  (Wenn Sie die Aktivierung noch nicht durchführen möchten, können Sie diese jederzeit über die CAST Highlight-Kachel im Abonnementportal durchführen.  Der Link „Get Code“ (Code abrufen) ändert sich in „Aktivieren“. Wenn Sie darauf klicken, gelangen Sie zum nächsten Schritt im Aktivierungsprozess.)
 
 0. Sie werden zur CAST Highlight-Seite umgeleitet, auf der Sie die Features Ihres Abonnements erkunden können.  Wenn Sie für die Erstellung Ihres Kontos bereit sind, geben Sie einfach Ihre Kontaktdaten in das Webformular ein, und klicken Sie auf **Senden**.
@@ -43,16 +41,16 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    > [!NOTE]
    > Pro Organisation können bis zu zehn CAST Highlight-Vorteile aktiviert werden.  Wenn in Ihrer Organisation bereits zehn Aktivierung durchgeführt wurden, können Sie den CAST Highlight-Vorteil nicht aktivieren. Sie erhalten dann eine E-Mail mit weiteren Informationen.
 
- 0. Nachdem Sie Ihre Informationen gesendet haben, wird Ihnen eine Seite angezeigt, auf der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.    
+ 0. Nachdem Sie Ihre Informationen gesendet haben, wird Ihnen eine Seite angezeigt, auf der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
 
     > [!div class="mx-imgBorder"]
     > ![Dankesseite von CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  Der CAST-Team werte Ihre Anforderung aus und kontaktiert Sie, um die Erstellung Ihres Kontos abzuschließen.  
+0.  Der CAST-Team werte Ihre Anforderung aus und kontaktiert Sie, um die Erstellung Ihres Kontos abzuschließen.
 
 0.  Darüber hinaus erhalten Sie eine E-Mail wie die folgende von CAST, in der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
 
-   *Vielen Dank für Ihre Anforderung zur Aktivierung des 30-tägigen Zugriffs auf CAST Highlight, einem exklusiven Angebot für Kunden von Microsoft Visual Studio Enterprise!*  
+   *Vielen Dank für Ihre Anforderung zur Aktivierung des 30-tägigen Zugriffs auf CAST Highlight, einem exklusiven Angebot für Kunden von Microsoft Visual Studio Enterprise!*
 
    *Derzeit überprüfen wir Ihre Anforderung zur Aktivierung und zum Zugriff auf CAST Highlight. Ich melde mich innerhalb der nächsten 48 Stunden bei Ihnen.*
 
@@ -60,7 +58,7 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    *Greg*
 
 
-Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der die erfolgreiche Erstellung Ihres Kontos bestätigt wird. Darüber hinaus werden Sie darin dazu aufgefordert, zum Abschließen des Aktivierungsprozesses auf den Aktivierungslink zu klicken. 
+Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der die erfolgreiche Erstellung Ihres Kontos bestätigt wird. Darüber hinaus werden Sie darin dazu aufgefordert, zum Abschließen des Aktivierungsprozesses auf den Aktivierungslink zu klicken.
 
    *Wir haben Ihre Anforderung zum Zugriff auf CAST Highlight erfolgreich überprüft und bestätigt. Willkommen an Bord!*
 
@@ -76,7 +74,7 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
     -   [Leitfaden für erste Schritte (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   Video-Tutorial: [Konfigurieren Ihres Portfolios](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   Video-Tutorial: [Integrieren Ihrer Apps](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    *Mit freundlichen Grüßen,*
    *Greg*
 
@@ -120,4 +118,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre kostenlose Azure-Gutschrift zu erhalten.
 
-Und vergessen Sie nicht, sich die Demo, das Benutzerhandbuch und die Tutorial-Videos anzusehen, die in Gregs E-Mail erwähnt wurden. 
+Und vergessen Sie nicht, sich die Demo, das Benutzerhandbuch und die Tutorial-Videos anzusehen, die in Gregs E-Mail erwähnt wurden.

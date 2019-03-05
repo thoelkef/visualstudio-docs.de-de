@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909946"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796802"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C#
 
@@ -32,9 +32,19 @@ Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefor
 
 ![Dialogfeld „Einstellungen auswählen“](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
-![IDE mit "Allgemeine Einstellungen" übernommen](../media/exploreide-idewithgeneralsettings.png)
+![Visual Studio 2017 IDE mit übernommenen allgemeinen Einstellungen](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn Sie Visual Studio starten, wird zunächst das Fenster **Start** geöffnet. Klicken Sie auf **Contine without code** (Ohne Code fortfahren), um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
@@ -265,7 +275,7 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 2. Ändern Sie die Build-Konfiguration für HelloWPFApp über das Dropdown-Steuerelement in der Symbolleiste (derzeit „Debug“) von **Debug** in **Release**.
 
-     ![Standardsymbolleiste mit ausgewähltem Release](../media/exploreide-releaseversion.png)
+     ![Standardsymbolleiste mit ausgewählter Release](../media/exploreide-releaseversion.png)
 
 3. Erstellen Sie die Projektmappe, indem Sie auf **Erstellen** > **Projektmappe erstellen** klicken.
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380185"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843869"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -94,17 +92,17 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Frage:  Warum muss ich eine Kreditkartennummer angeben, wenn der Vorteil kostenlos ist?
-A:  Der Vorteil ist kostenlos, aber die Aktivierung verwendet das gleiche System, das auch für die Verarbeitung kostenpflichtiger Bestellungen verwendet wird.  Sie können aus zwei Zahlungsarten auswählen. 
-- Kreditkarte:  Wenn Sie eine Kreditkartennummer angeben, wird Ihre Kreditkarte nicht belastet. 
-- Rechnung:  Wenn Sie „Rechnung“ als Zahlungsart auswählen, müssen Sie keine Kreditkartennummer angeben.  Sie können das Intervall auch auf „Jährlich“ festlegen.  Dadurch erhalten Sie eine einzelne E-Mail, die Sie darüber informiert, dass eine Rechnung für Sie bereit steht.  Der Rechnungsbetrag entspricht 0,00 €.  
+Antwort:  Der Vorteil ist kostenlos, aber die Aktivierung verwendet das gleiche System, das auch für die Verarbeitung kostenpflichtiger Bestellungen verwendet wird.  Sie können aus zwei Zahlungsarten auswählen.
+- Kreditkarte:  Wenn Sie eine Kreditkartennummer angeben, wird Ihre Kreditkarte nicht belastet.
+- Rechnung:  Wenn Sie „Rechnung“ als Zahlungsart auswählen, müssen Sie keine Kreditkartennummer angeben.  Sie können das Intervall auch auf „Jährlich“ festlegen.  Dadurch erhalten Sie eine einzelne E-Mail, die Sie darüber informiert, dass eine Rechnung für Sie bereit steht.  Der Rechnungsbetrag entspricht 0,00 €.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>Frage:  Kann der Power BI Pro-Vorteil, der in meinen Abonnementlizenzen enthalten ist, in einer Produktionsumgebung genutzt werden?
-A:  Ja, Sie können ihn unter zwei wichtigen Voraussetzungen in einer Produktionsumgebung verwenden:
-- Für dieses Angebot muss ein eigener Mandant installiert werden.  Wenn Sie eine Power BI-Lizenz benötigen, die Ihren Unternehmensanmeldeinformationen im Mandanten Ihres Unternehmens zugeordnet ist, wenden Sie sich an Ihren Unternehmensadministrator, um eine Lizenz zu erwerben und zuzuweisen. 
-- Dieser Power BI Pro-Vorteil kann nicht für Behördenmandanten genutzt werden.  
+Antwort:  Ja, Sie können ihn unter zwei wichtigen Voraussetzungen in einer Produktionsumgebung verwenden:
+- Für dieses Angebot muss ein eigener Mandant installiert werden.  Wenn Sie eine Power BI-Lizenz benötigen, die Ihren Unternehmensanmeldeinformationen im Mandanten Ihres Unternehmens zugeordnet ist, wenden Sie sich an Ihren Unternehmensadministrator, um eine Lizenz zu erwerben und zuzuweisen.
+- Dieser Power BI Pro-Vorteil kann nicht für Behördenmandanten genutzt werden.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Frage:  Beim Versuch, Power BI Pro zu aktivieren, erhalte ich folgende Meldung: „You already have an account through work“ (Sie verfügen bereits über ein Arbeitskonto.).  Kann ich den Vorteil dennoch nutzen?
-A:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Office 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.
+Antwort:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Office 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.
 1.  Wenn die Meldung angezeigt wird, dass Sie bereits über die Arbeit ein Konto besitzen, klicken Sie auf **Neues Konto erstellen**.
 
 2.  Geben Sie im nächsten Bildschirm Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter**.
@@ -112,12 +110,12 @@ A:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Of
 3.  Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Um das kostenlose Angebot zu nutzen, müssen Sie **.onmicrosoft.com** als Domäne auswählen. Klicken Sie auf **Create my account** (Mein Konto erstellen).
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro-Vorteil: Benutzer-ID für privaten Mandanten erstellen](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  Die verbleibenden Schritte sind identisch mit denen in der Vorgehensweise weiter oben in diesem Artikel, beginnend mit Schritt 6.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Frage:  Ich arbeite mit einem Behördenmandanten.  Kann ich den Vorteil nutzen? 
-A:  Nein.  Der Power BI Pro-Vorteil kann nicht zu Behördenmandanten hinzugefügt werden. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Frage:  Ich arbeite mit einem Behördenmandanten.  Kann ich den Vorteil nutzen?
+Antwort:  Nein.  Der Power BI Pro-Vorteil kann nicht zu Behördenmandanten hinzugefügt werden.
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei Power BI Pro?

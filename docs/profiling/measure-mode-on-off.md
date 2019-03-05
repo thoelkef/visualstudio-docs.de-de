@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639946"
 ---
 # <a name="measure-mode-onoff"></a>Aktivieren/Deaktivieren des Messmodus
-Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.  
-  
- Sie können den Messvorgang zwar wiederholen, allerdings wird immer nur der neuste Messwert angezeigt. Klicken Sie erneut auf die Schaltfläche „Messen“, um den Messmodus zu deaktivieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Verwalten von Kanälen](../profiling/manage-channels.md)   
- [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)   
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.
+
+ Sie können den Messvorgang zwar wiederholen, allerdings wird immer nur der neuste Messwert angezeigt. Klicken Sie erneut auf die Schaltfläche „Messen“, um den Messmodus zu deaktivieren.
+
+## <a name="see-also"></a>Siehe auch
+- [Verwalten von Kanälen](../profiling/manage-channels.md)
+- [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
