@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706706"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428751"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
@@ -133,7 +133,7 @@ Während im Debugger angehalten wird, können Sie eine Anweisung im Quellcode ze
 ![Ausführung bis Klick](../debugger/media/dbg-run-to-click.png "Run to Click")
 
 > [!NOTE]
-> **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Ausführung bis Klick** ist verfügbar in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 ### <a name="manually-break-into-code"></a>Manuelles Unterbrechen im Code
 

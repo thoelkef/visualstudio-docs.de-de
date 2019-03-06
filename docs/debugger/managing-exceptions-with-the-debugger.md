@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700912"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428699"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
@@ -204,7 +204,7 @@ Sie können die Ausnahme hinzufügen **Ausnahmeeinstellungen** mithilfe der vorh
 Verwenden der **Ausnahmeeinstellungen** Fenster Bedingungen auf Ausnahmen festzulegen. Derzeit unterstützte Bedingungen umfassen die Namen der Module zum ein- oder ausschließen, für die Ausnahme. Wenn Sie Modulnamen als Bedingungen festlegen, können Sie auswählen, für die Ausnahme nur für bestimmte Codemodule unterbrochen. Sie können auch auswählen, um wichtige auf bestimmte Module zu vermeiden.
 
 > [!NOTE]
-> Hinzufügen von Bedingungen zu einer Ausnahme ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Hinzufügen von Bedingungen zu einer Ausnahme wird ab unterstützt [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 So fügen Sie bedingte Ausnahmen hinzu:
 

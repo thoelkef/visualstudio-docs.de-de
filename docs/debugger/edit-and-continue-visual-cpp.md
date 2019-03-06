@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: HT
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694997"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222356"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. Finden Sie unter [unterstützt-Code-Änderungen (C++)](../debugger/supported-code-changes-cpp.md) für Informationen zu den Einschränkungen von bearbeiten und fortfahren.
 
-Weitere Informationen zu Visual Studio 2015 Update 3 Verbesserungen, finden Sie unter [C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Weitere Informationen zu Visual Studio 2015 Update 3 Verbesserungen, finden Sie unter [C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  Die Compileroption [/Zo (erweitertes optimiertes Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](https://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.
 
@@ -37,7 +37,7 @@ Weitere Informationen zu Visual Studio 2015 Update 3 Verbesserungen, finden Sie 
  Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.
 
 > [!IMPORTANT]
-> Erforderliche Buildeinstellungen und andere Informationen zur featurekompatibilität von finden Sie unter [C++ Edit and Continue in Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Erforderliche Buildeinstellungen und andere Informationen zur featurekompatibilität von finden Sie [C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Wenn Sie in einer Debugsitzung sind, beenden Sie das Debuggen (**UMSCHALT + F5**).
 

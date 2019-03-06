@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703707"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428647"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Erste Schritte mit dem Momentaufnahmedebugger
 
@@ -69,6 +69,6 @@ Weitere Informationen zum Debugger für Momentaufnahmen finden Sie auf die [Doku
 
 ## <a name="dont-show-me-this-again"></a>Diese Meldung nicht mehr anzeigen
 
-Um nie wieder die Snapshot-Debugger-Startseite anzuzeigen für die Verbindung der Snapshot-Debugger, ändern Sie die **"Erste Schritte" die Seite beim sitzungsstart anzeigen** option **Tools**  >   **Optionen** > **Momentaufnahmedebugger**.
+Um nie die Snapshot-Debugger-Startseite erneut anzuzeigen, wenn Sie die Snapshot-Debugger eine Verbindung herstellen, ändern Sie die **"Erste Schritte" die Seite beim sitzungsstart anzeigen** option **Tools**  >   **Optionen** > **Momentaufnahmedebugger**.
 
 ![Snapshot Debugger-Tool-Optionsseite](../media/snapshot-startpage-tools-options.png)
