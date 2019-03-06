@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3db48578d2b316ddd203316a15536b144cb28cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910453"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954334"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -85,5 +85,5 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Datenschutz in C++-Problemberichten](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

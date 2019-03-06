@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609435"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953518"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio-Produktfeedback
 
@@ -24,7 +24,7 @@ Sprechen Sie mit uns! Wir würden gern Ihre Ideen zur Verbesserung unserer Produ
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Ich möchte ein Problem mit Visual Studio melden
 
-Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung oder unerwartetes Verhalten&mdash; haben, lassen Sie es uns mit dem Tool **Ein Problem melden** wissen. Wählen Sie in Visual Studio das Feedbacksymbol neben **Schnellstart** aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Ein Problem melden**. Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung oder unerwartetes Verhalten&mdash; haben, lassen Sie es uns mit dem Tool **Ein Problem melden** wissen. Wählen Sie in Visual Studio das Feedbacksymbol neben **Schnellstart** aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Ein Problem melden**. Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com) in Ihrem Browser, auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Ich möchte einen Vorschlag zu Visual Studio-Features machen
 
@@ -59,6 +59,6 @@ Verwenden Sie die Feedbackschaltfläche **War diese Seite hilfreich?** am untere
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Developer Community (Entwicklercommunity)](https://developercommunity.visualstudio.com)
 * [Developer Community data privacy (Datenschutz in der Entwicklercommunity)](developer-community-privacy.md)

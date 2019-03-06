@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren mit zu häufig in Anspruch genommenen Abonnements umgehen.
 searchscope: VS Subscription
-ms.openlocfilehash: aa80a065568cbe7b7f7c3cef1a62fd230c54e751
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843697"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953929"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Umgang mit zu häufig in Anspruch genommenen Abonnements
 
@@ -24,9 +24,8 @@ Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt 
 > [!div class="mx-imgBorder"]
 > ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img/over-claimed/over-claimed-alert.png)
 
+1. Klicken Sie auf den Warnungstext, um eine Lösung für Lizenzen zu finden, die zu häufig in Anspruch genommen wurden. Dann werden eine filterbare Liste mit den Abonnenten, die der Abonnementstufe zugewiesen sind, und das zu häufig in Anspruch genommene Ablaufdatum angezeigt. 
 
-1.  Klicken Sie auf den Warnungstext, um eine Lösung für Lizenzen zu finden, die zu häufig in Anspruch genommen wurden. Dann werden eine filterbare Liste mit den Abonnenten, die der Abonnementstufe zugewiesen sind, und das zu häufig in Anspruch genommene Ablaufdatum angezeigt.
+2. Entfernen Sie so viele Abonnenten wie nötig, um die zu häufig in Anspruch genommenen Lizenzen zu bearbeiten. 
 
-2.  Entfernen Sie so viele Abonnenten wie nötig, um die zu häufig in Anspruch genommenen Lizenzen zu bearbeiten.
-
-3.  Die Übersicht im linken Bereich der Seite wird aktualisiert und zeigt an, dass die Kompatibilität wiederhergestellt wurde. Es werden keine Benachrichtigungen mehr über zu häufig in Anspruch genommene Abonnements angezeigt.
+3. Die Übersicht im linken Bereich der Seite wird aktualisiert und zeigt an, dass die Kompatibilität wiederhergestellt wurde. Es werden keine Benachrichtigungen mehr über zu häufig in Anspruch genommene Abonnements angezeigt. 

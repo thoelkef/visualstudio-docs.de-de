@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319466"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428569"
 ---
 # <a name="xamarin-mobile-app-development"></a>Entwicklung mobiler Apps mit Xamarin
 
@@ -28,7 +28,7 @@ Weitere Informationen zum Android Designer finden Sie im Dokument [Xamarin.Andro
 
 ## <a name="ios"></a>iOS
 
-Der iOS Designer ist vollständig in Visual Studio für Mac integriert und ermöglicht die visuelle Bearbeitung von -xib- und Storyboard-Dateien, um Übergänge und Benutzeroberflächen für iOS, tvOS und WatchOS zu erstellen. Die gesamte Benutzeroberfläche kann erstellt werden, indem die Drag & Drop-Funktionen zwischen der Toolbox und der Entwurfsoberfläche verwendet werden, während ein intuitiver Ansatz zur Behandlung von Ereignissen verwendet wird. Der iOS-Designer unterstützt außerdem [custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview) mit dem zusätzlichen Vorteil des Renderings zur Entwurfszeit.
+Der iOS Designer ist vollständig in Visual Studio für Mac integriert und ermöglicht die visuelle Bearbeitung von -xib- und Storyboard-Dateien, um Übergänge und Benutzeroberflächen für iOS, tvOS und WatchOS zu erstellen. Die gesamte Benutzeroberfläche kann erstellt werden, indem die Drag & Drop-Funktionen zwischen der Toolbox und der Entwurfsoberfläche verwendet werden, während ein intuitiver Ansatz zur Behandlung von Ereignissen verwendet wird. Der iOS Designer unterstützt auch [custom controls (benutzerdefinierte Steuerelemente)](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) mit dem zusätzlichen Vorteil von Rendering zur Entwurfszeit.
 
 ![iOS Storyboard-Designer](media/intro-image30.png)
 

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie mithilfe des Administratorportals die Visual Studio-Abonnements Ihrer Organisation verwalten können.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843711"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953950"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Verwenden des Administratorportals für Visual Studio-Abonnements
 
@@ -38,13 +38,14 @@ Damit Sie die Abonnements Ihrer Organisation über das Administratorportal verwa
 ### <a name="onboarding"></a>Onboarding
 
 Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonnements aufgenommen werden kann, werden die primären Ansprechpartner per E-Mail gebeten, den Onboardingprozess abzuschließen. Unten sind die zum Aufnehmen in das neue Portal erforderlichen Schritte genannt. Wenn Sie gerne schrittweise durch den Prozess geführt werden möchten, sehen Sie sich dieses [Video zum Administrator-Onboarding](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) an, oder lesen Sie sich diesen [Supportartikel](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio-Abonnements: Administrator-Migrationsprozess") durch.
-1.  **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
-    - Die E-Mail an die primären Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer persönlichen öffentlichen Kundennummer (Public Customer Number, PCN). *
-    - Der primäre Ansprechpartner muss sich im VLSC anmelden, um die gesamte PCN zu erhalten. Dort stehen Anweisungen zum Ermitteln der PCN zur Verfügung.
-    - Nachdem die primären Ansprechpartner ihre jeweilige PCN ermittelt haben, müssen sie auf ihre persönlichen Links klicken, woraufhin sie zum Anmelden aufgefordert werden. Diese können sich mit ihrem Geschäfts-, Schul- oder Unikonto (sofern Ihre Organisation bei AAD registriert ist) oder einem Microsoft-Konto (MSA) einloggen (wenn Ihre Organisation nicht bei AAD registriert ist).
-    - Als Nächstes müssen sie die PCN eingeben.
-2.  **Ihre Administratoren einrichten** Nach dem Eingeben der PCN werden sie im neuen System als Superadministratoren registriert und können weitere Superadministratoren und Administratoren (vormals „Abonnementverwalter“) hinzufügen. Dieser Vorgang sollte abgeschlossen worden sein, bevor Ihre Organisation migriert wird, um einem Zugriffsverlust vorzubeugen.
-3.  **Auf das neue Portal zur Verwaltung von Abonnements zugreifen**  Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
+
+1. **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
+    - Die E-Mail an die primären Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer persönlichen öffentlichen Kundennummer (Public Customer Number, PCN). * 
+    - Der primäre Ansprechpartner muss sich im VLSC anmelden, um die gesamte PCN zu erhalten. Dort stehen Anweisungen zum Ermitteln der PCN zur Verfügung. 
+    - Nachdem die primären Ansprechpartner ihre jeweilige PCN ermittelt haben, müssen sie auf ihre persönlichen Links klicken, woraufhin sie zum Anmelden aufgefordert werden. Diese können sich mit ihrem Geschäfts-, Schul- oder Unikonto (sofern Ihre Organisation bei AAD registriert ist) oder einem Microsoft-Konto (MSA) einloggen (wenn Ihre Organisation nicht bei AAD registriert ist). 
+    - Als Nächstes müssen sie die PCN eingeben. 
+2. **Ihre Administratoren einrichten** Nach dem Eingeben der PCN werden sie im neuen System als Superadministratoren registriert und können weitere Superadministratoren und Administratoren (vormals „Abonnementverwalter“) hinzufügen. Dieser Vorgang sollte abgeschlossen worden sein, bevor Ihre Organisation migriert wird, um einem Zugriffsverlust vorzubeugen. 
+3. **Auf das neue Portal zur Verwaltung von Abonnements zugreifen**  Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.  
 
 > [!NOTE]
 > Wenn die primären Kontakte oder Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCNs besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCN abschließen, die jeweils in den E-Mails genannt werden.*

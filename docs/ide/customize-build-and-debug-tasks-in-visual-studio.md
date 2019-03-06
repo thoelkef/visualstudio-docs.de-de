@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919052"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954168"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -56,6 +56,7 @@ Wenn Ihre Codebasis benutzerdefinierte Buildtools verwendet, die von Visual Stud
 
 Betrachten wir eine Codebasis, die aus einer einzelnen C#-Datei namens *hello.cs* besteht. Das *Makefile* für eine solche Codebasis könnte folgendermaßen aussehen:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Für ein solches *Makefile*, das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json*-Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
 

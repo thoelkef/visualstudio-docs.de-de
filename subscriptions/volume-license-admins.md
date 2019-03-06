@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Abonnementadministratoren auf das Verwaltungsportal zugreifen und die über die Volumenlizenzierung (VL) erworbenen Abonnements verwalten können.
 searchscope: VS Subscription
-ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843135"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953259"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Zugreifen auf das Portal und Verwalten von Administratoren – für durch Volumenlizenzierung (VL) erworbene Abonnements
 
@@ -31,7 +31,7 @@ Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Administr
 
 Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonnements aufgenommen werden kann, werden die primären Ansprechpartner per E-Mail gebeten, den Onboardingprozess abzuschließen. Unten sind die zum Onboarding in das neue Portal erforderlichen Schritte aufgeführt. Wenn Sie den Prozess durchlaufen möchten, sehen Sie sich dieses Video zum Administratoronboarding oder die nächsten Abschnitte in der Dokumentation an.
 
-1.  Ermitteln Sie Ihre öffentliche Kundennummer, und melden Sie sich an.
+1. Ermitteln Sie Ihre öffentliche Kundennummer, und melden Sie sich an.
 
      a. Die E-Mail an die primären Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer persönlichen öffentlichen Kundennummer (Public Customer Number, PCN).  (Wenn die primäre Kontaktperson oder die Kontaktperson für Mitteilungen mehrere E-Mails erhält, bedeutet dies, dass sie mehrere PCNs besitzt. Sie muss den Prozess mithilfe des eindeutigen Links für die PCN abschließen, die jeweils in der E-Mail genannt wird.)
 
@@ -41,9 +41,9 @@ Sobald Ihre Organisation in das Portal zur Verwaltung von Visual Studio-Abonneme
 
      d. Als Nächstes müssen sie die PCN eingeben.
 
-2.  Richten Sie Ihre Administratoren ein.  Nach dem Eingeben der PCN werden sie im neuen System als Superadministratoren registriert und können weitere Superadministratoren und Administratoren (vormals „Abonnementverwalter“) hinzufügen. Dieser Vorgang sollte abgeschlossen worden sein, bevor Ihre Organisation migriert wird, um einem Zugriffsverlust vorzubeugen.
+2. Richten Sie Ihre Administratoren ein.  Nach dem Eingeben der PCN werden sie im neuen System als Superadministratoren registriert und können weitere Superadministratoren und Administratoren (vormals „Abonnementverwalter“) hinzufügen. Dieser Vorgang sollte abgeschlossen worden sein, bevor Ihre Organisation migriert wird, um einem Zugriffsverlust vorzubeugen.
 
-3.  Greifen Sie auf das neue Portal zur Verwaltung von Abonnements zu. Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
+3. Greifen Sie auf das neue Portal zur Verwaltung von Abonnements zu. Nach der Migration Ihrer Organisation werden die neu hinzugefügten Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
 
 Wenn Sie dem neuen Portal zur Verwaltung von Visual Studio-Abonnements hinzugefügt werden müssen und nicht sicher sind, wer Ihr primärer Ansprechpartner ist, finden Sie diese Informationen nach dem Anmelden bei dem [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Lesen Sie das Thema [Ermitteln Ihres primären Kontakts](find-primary-contact.md), um eine Anleitung zum Ermitteln Ihres primären Ansprechpartners im VLSC zu erhalten.
 

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b04f9edc946b83f8785c6a6fb3e9720db4840f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596197"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953300"
 ---
 # <a name="spanspan-constructor"></a>span::span-Konstruktor
+
 Initialisiert eine neue Instanz der `span`-Klasse.
 
 ## <a name="syntax"></a>Syntax
@@ -52,18 +53,21 @@ span(
 ```
 
 #### <a name="parameters"></a>Parameter
- `_Series`: gültiger Markerreihenkontext.
 
- `_Format`: eine zusammengesetzte Formatzeichenfolge mit Text, der „0“ (null) oder mehr Formatelemente enthält, die Objekten in der Argumentliste entsprechen.
+`_Series`: gültiger Markerreihenkontext.
 
- `_Importance`: die Wichtigkeitsstufe.
+`_Format`: eine zusammengesetzte Formatzeichenfolge mit Text, der „0“ (null) oder mehr Formatelemente enthält, die Objekten in der Argumentliste entsprechen.
 
- `_Category`: die Kategorie.
+`_Importance`: die Wichtigkeitsstufe.
+
+`_Category`: die Kategorie.
 
 ## <a name="requirements"></a>Anforderungen
- **Header:** *cvmarkersobj.h*
 
- **Namespace:** Concurrency::diagnostic
+**Header:** *cvmarkersobj.h*
 
- ## <a name="see-also"></a>Siehe auch
+**Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Siehe auch
+
 - [span-Klasse](../profiling/span-class.md)
