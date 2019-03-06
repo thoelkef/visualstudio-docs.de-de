@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023914"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323931"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -29,7 +29,8 @@ Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer In
 
 -   Zusätzliche Ressourcen
 
-### <a name="creating-a-topic-f1-support"></a>Erstellen eines Themas (F1-Unterstützung)
+## <a name="create-a-topic-f1-support"></a>Erstellen eines Themas (F1-Unterstützung)
+
 Dieser Abschnitt enthält eine Übersicht über die Komponenten von einem Thema dargestellten, Thema Anforderungen, eine kurze Beschreibung zum Erstellen eines Themas (einschließlich der F1-Supportanforderungen) und schließlich eine Beispielthema durch das gerenderte Ergebnis.
 
 **Help Viewer Themenübersicht**
@@ -91,17 +92,17 @@ Erstellen Sie ein neues XHTML-Dokument mit dem Namen ContosoTopic4.htm, und umfa
 
 ```
 
-Fügen Sie Daten zu definieren, wie das Thema (selbst mit dem Branding oder nicht), angezeigt werden wie in diesem Thema für F1, verweisen, in dem in diesem Thema im Inhaltsverzeichnis, dessen ID (für den Verweis auf eine andere Themen) vorhanden ist, usw.  Finden Sie unter "Inhaltsmetadaten" der folgenden Tabelle eine vollständige Liste der unterstützten Metadaten.
+Fügen Sie Daten zu definieren, wie das Thema (selbst mit dem Branding oder nicht), angezeigt werden wie in diesem Thema für F1, verweisen, in dem in diesem Thema im Inhaltsverzeichnis, dessen ID (für den Verweis auf eine andere Themen) vorhanden ist, usw. Finden Sie unter "Inhaltsmetadaten" der folgenden Tabelle eine vollständige Liste der unterstützten Metadaten.
 
 -   In diesem Fall werden wir unseren eigenen branding-Paket eine Variante des Visual Studio Help Viewer Brandingpakets verwenden.
 
--   Fügen Sie die F1-Meta-Name und Wert ("Microsoft.Help.F1" Content = "ContosoTopic4") entspricht, die den angegebenen Wert von F1 in der IDE-Eigenschaftensammlung.  (Siehe Abschnitt F1-Unterstützung für Weitere Informationen.)   Dies ist der Wert, der mit dem F1 übereinstimmende rufen Sie in der IDE, die in diesem Thema angezeigt wird, wenn Sie F1 in der IDE ausgewählt wird.
+-   Fügen Sie die F1-Meta-Name und Wert ("Microsoft.Help.F1" Content = "ContosoTopic4") entspricht, die den angegebenen Wert von F1 in der IDE-Eigenschaftensammlung. (Siehe Abschnitt F1-Unterstützung für Weitere Informationen.) Dies ist der Wert, der mit dem F1 übereinstimmende rufen Sie in der IDE, die in diesem Thema angezeigt wird, wenn Sie F1 in der IDE ausgewählt wird.
 
--   Fügen Sie das Thema-ID hinzu Dies ist die Zeichenfolge, die von anderen Themen zum Verknüpfen mit diesem Thema verwendet wird.  Es ist die Hilfe-Viewer-ID in diesem Thema.
+-   Fügen Sie das Thema-ID hinzu Dies ist die Zeichenfolge, die von anderen Themen zum Verknüpfen mit diesem Thema verwendet wird. Es ist die Hilfe-Viewer-ID in diesem Thema.
 
 -   Fügen Sie für das Inhaltsverzeichnis dieses Themas übergeordneten Knoten, um zu definieren, in diesem Thema Inhaltsverzeichnisknoten angezeigt werden.
 
--   Fügen Sie für das Inhaltsverzeichnis dieses Themas Knotenreihenfolge hinzu. Wenn der übergeordnete Knoten n-Anzahl von untergeordneten Knoten verfügt, definieren Sie in der Reihenfolge der untergeordneten Knoten Speicherort des Themas. Dieses Thema ist z. B. Anzahl 4 von 4 untergeordneten Themen.)
+-   Fügen Sie für das Inhaltsverzeichnis dieses Themas Knotenreihenfolge hinzu. Wenn der übergeordnete Knoten hat `n` Anzahl der untergeordneten Elemente, Definieren von Knoten in der Reihenfolge der untergeordneten Knoten Speicherort des Themas. In diesem Thema ist z. B. Anzahl 4 von 4 untergeordneten Themen.
 
 Abschnitt für Beispiel-Metadaten:
 
@@ -124,7 +125,6 @@ Abschnitt für Beispiel-Metadaten:
 
 </body>
 </html>
-
 ```
 
 **Der Text des Themas**
@@ -141,10 +141,10 @@ Seite enthält Links, einen Abschnitt "Hinweis", einem reduzierbaren Bereich, Co
 
 5.  Fügen Sie Code sprachenspezifischer Text hinzu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Beachten Sie, dass `devLangnu=` können Sie andere Sprachen eingeben. Z. B. `devLangnu="Fortran"` Fortran zeigt bei der der Codeausschnitt DisplayLanguage Fortran =
 
-6.  Fügen Sie die Seite enthält Links hinzu: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Fügen Sie die Seite enthält Links hinzu: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Hinweis: für nicht unterstützte neue "Anzeigesprache" (beispielsweise F#, Cobol, Fortran) farbliche Kennzeichnung von Code im Codeausschnitt werden Monochrom.
+> Hinweis: für nicht unterstützte neue "Anzeigesprache" (beispielsweise F#, Cobol, Fortran) farbliche Kennzeichnung von Code im Codeausschnitt werden Monochrom.
 
 **Beispiel-Viewer-Hilfethema** der Code wird veranschaulicht, wie Metadaten, einen Codeausschnitt, einen reduzierbaren Bereich und sprachspezifischen Text definieren.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Ein Benutzer kann Klicken Sie dann CustomLibrary registrieren, wie der Namespace
 
 Fügen Sie den folgenden Registrierungsschlüssel und den Wert ein:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Debugausgabe in Verkaufswert anzeigen: "JA"
+::: moniker range="vs-2017"
 
-Wählen Sie in der IDE unter das Menüelement "Hilfe" "Hilfekontext Debuggen"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Wert: Anzeigen der Debugausgabe in Retail-Daten: "JA"
+
+Wählen Sie in der IDE vornehmen, klicken Sie unter der Hilfe **Hilfekontext Debuggen**.
 
 **Content-Metadaten**
 
@@ -366,7 +378,8 @@ In der folgenden Tabelle ist eine beliebige Zeichenfolge, die in Klammern steht 
 | \< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/> | Gibt diese Version des Themas an, wenn mehrere Versionen in einem Katalog vorhanden sind. Da Microsoft.Help.Id nicht eindeutig ist unbedingt, ist dieses Tag erforderlich, wenn mehr als eine Version eines Themas in einem Katalog, z. B. liegt, wenn der Katalog ein Thema für .NET Framework 3.5 und ein Thema für .NET Framework 4 enthält und jeweils die gleichen Micro vorläufig. Help.Id. |
 | \< Meta-Name = "SelfBranded" Content = "[" true "oder" false "]" / > | Gibt an, ob es sich bei diesem Thema wird der Hilfebibliotheks-Manager starten branding oder branding-Paket, das an das Thema spezifisch ist. Dieses Tag muss entweder "true" oder "false". Ist dies "true", und klicken Sie dann die branding-Paket für das zugeordnete Thema Brandingpakets, die festgelegt wird überschreibt, wenn der Hilfebibliotheks-Manager startet, sodass das Thema gerendert wird, wie beabsichtigt, auch wenn es das Rendern von anderem Inhalt unterscheidet. Wenn es auf "false" ist, wird das aktuelle Thema gemäß Brandingpakets gerendert, die festgelegt wird, wenn der Hilfebibliotheks-Manager wird gestartet. Standardmäßig nimmt der Hilfebibliotheks-Manager selbst branding auf "falsch" sein, es sei denn, die SelfBranded-Variable deklariert wird, als "true"; aus diesem Grund, Sie müssen keine deklarieren \<Meta-Name = "SelfBranded" Content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Erstellen eines Pakets branding
+## <a name="create-a-branding-package"></a>Erstellen Sie ein branding-Paket
+
 Die Visual Studio-Version umfasst eine Anzahl von anderen Visual Studio-Produkten, einschließlich der isoliert und die integrierte Shells für Visual Studio-Partnern.  Jedes dieser Produkte erfordert ein gewisses Maß an themenbasierte Hilfeinhalt branding-Unterstützung für das Produkt eindeutig.  Beispielsweise benötigen Visual Studio-Themen eine Präsentation einheitlichem Branding während der SQL-Studio, das ISO-Shell umhüllt, erfordert einen eigenen eindeutigen Hilfe Inhalte branding für jedes Thema.  Eine integrierte Shell-Partner sollten ihre innerhalb des übergeordneten Elements Hilfeinhalt für Visual Studio-Produkt zu werden, und gleichzeitig ihre eigenen Thema branding-Hilfethemen.
 
 Branding-Pakete werden mit dem Produkt der Help Viewer mit installiert.  Für Visual Studio-Produkte:
@@ -432,7 +445,6 @@ Die Branding.xml-Datei enthält eine Liste von Elementen, die zum Rendern konsis
 Hinweis: Variablen, die von "{n}" angegeben haben codeabhängigkeiten – entfernen oder Ändern dieser Werte führt dazu, dass Fehler und möglicherweise zum Absturz der Anwendung. Lokalisierung Bezeichner (Beispiel _locID="codesnippet.n") sind in der Visual Studio-Branding-Paket enthalten.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Inhalte zu Visual Studio zeigt eine Visual Studio-Logo als auch für andere Graf
 |ccOn.png|Grafik zu Untertitel||
 |ImageSprite.png|Zum Rendern von reduzierbaren Bereich verwendet|erweitert oder reduziert Grafik|
 
-### <a name="deploying-a-set-of-topics"></a>Bereitstellen einer Reihe von Themen
+## <a name="deploy-a-set-of-topics"></a>Bereitstellen einer Reihe von Themen
+
 Dies ist eine einfache und schnelle Tutorial zum Erstellen eines Help Viewer beim Bereitstellen von Inhalt einer diese MSHA-Datei und den Satz der CAB-Dateien oder MSHCs, enthält die Themen umfassen. Die MSHA ist eine XML-Datei, die beschreibt, einen Satz von CAB-Dateien oder MSHC-Dateien. Help Viewer kann die zum Abrufen einer Liste von Inhalten (der. MSHA lesen. CAB-Datei oder. MSHC-Dateien) für die lokale Installation verfügbar.
 
 Dies ist nur eine Einführung, die das einfache XML-Schema für die MSHA-Hilfe-Viewer beschreibt.  Es ist eine Beispiel einer Implementierung unterhalb dieses kurze Übersicht und Beispiel "HelpContentSetup.msha".
@@ -677,14 +690,14 @@ Kopieren Sie zum Abrufen der Visual Studio-Paket branding Branding_en-US.mshc-Da
 </div>
 </body>
 </html>
-
 ```
 
 **Zusammenfassung**
 
 Verwenden und erweitern die oben genannten Schritte können VSPs, deren Inhalt legt für die Visual Studio Help Viewer bereitstellen.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Hinzufügen von Hilfe zu Visual Studio Shell (integriert und isoliert)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Hinzufügen von Hilfe zu Visual Studio Shell (integriert und isoliert)
+
 **Introduction (Einführung)**
 
 In dieser exemplarischen Vorgehensweise veranschaulicht die Hilfe-Inhalt in einer Visual Studio Shell-Anwendung integrieren und diese dann bereitstellen.
@@ -786,7 +799,7 @@ Um dies zu testen, als ob bereitgestellt:
 
 6. Erstellen von "catalogtype.xml" und fügen Sie auf die Inhaltsspeicher (im vorherigen Schritt) mit:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Um dies zu testen, als ob bereitgestellt:
 
 12. Wählen Sie in der Contoso-IDE die F1-Taste F1 Funktionalität testen.
 
-### <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 
