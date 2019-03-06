@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Visual Studio-Abonnements für Ihre Organisation integrieren, nachdem die Migration zum Verwaltungsportal durchgeführt wurde.
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842155"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954227"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Onboarding von Visual Studio-Abonnements nach der Migration Ihrer Organisation zum Verwaltungsportal
 
@@ -24,9 +24,9 @@ Abonnements werden nun jedoch über ein neues Portal namens Visual Studio Subscr
 
 Es können verschiedene Szenarien auftreten:
 
-1. [Die primäre Kontaktperson hat den Onboardingprozess nicht abgeschlossen.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>
-2. [Die primäre Kontaktperson hat das Onboarding abgeschlossen, Sie aber nicht als Administrator hinzugefügt. Ihre Anmeldeinformationen wurden in VLSC aufgeführt.](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [Die primäre Kontaktperson hat das Onboarding abgeschlossen, Sie aber nicht als Administrator hinzugefügt. Ihre Anmeldeinformationen wurden im VLSC nicht aufgeführt.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [Die primäre Kontaktperson hat den Onboardingprozess nicht abgeschlossen.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
+2. [Die primäre Kontaktperson hat das Onboarding abgeschlossen, Sie aber nicht als Administrator hinzugefügt. Ihre Anmeldeinformationen wurden in VLSC aufgeführt.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [Die primäre Kontaktperson hat das Onboarding abgeschlossen, Sie aber nicht als Administrator hinzugefügt. Ihre Anmeldeinformationen wurden im VLSC nicht aufgeführt.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> Wenn Sie die primäre Kontaktperson oder die Kontaktperson für Benachrichtigungen sind und den Onboardingprozess nicht abgeschlossen haben, müssen Sie die Schritte in Szenario 1 befolgen, um Ihre Organisation einzurichten.
 

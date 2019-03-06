@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842220"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953420"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 
@@ -26,28 +26,28 @@ Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnement
 
 ## <a name="before-you-start"></a>Vor der Installation
 
-*   Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können. Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://portal.azure.com).
+* Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können. Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://portal.azure.com).
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Wer kann Visual Studio-Cloudabonnements erwerben?
 Jeder Benutzer mit [Zugriffsrechten als Eigentümer und Mitwirkender](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) für das Azure-Abonnement kann Cloudabonnements erwerben.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Erwerben von Cloudabonnements
 
-1.  Melden Sie sich bei [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions) an.
+1. Melden Sie sich bei [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions) an.
 
-2.  Wählen Sie das Abonnement aus, das Sie erwerben möchten, z.B. – Visual Studio Professional – Monatsabonnement.
+2. Wählen Sie das Abonnement aus, das Sie erwerben möchten, z.B. – Visual Studio Professional – Monatsabonnement.
 
-3.  Wählen Sie das Azure-Abonnement, über das abgerechnet werden soll. Wenn Sie noch nicht über ein Azure-Abonnement verfügen, können Sie ein neues erstellen.
+3. Wählen Sie das Azure-Abonnement, über das abgerechnet werden soll. Wenn Sie noch nicht über ein Azure-Abonnement verfügen, können Sie ein neues erstellen.
     > [!div class="mx-imgBorder"]
     > ![Auswählen eines Azure-Abonnements für die Rechnungsstellung](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  Wählen Sie die Anzahl der zu erwerbenden Abonnements aus.
+4. Wählen Sie die Anzahl der zu erwerbenden Abonnements aus.
     > [!div class="mx-imgBorder"]
     > ![Auswählen mehrerer Abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Wenn Sie nicht möchten, dass Abonnements Ihnen persönlich zugewiesen werden, deaktivieren Sie die Option **Assign this subscription to me** (Dieses Abonnement mir zuweisen).
 
-5.  Bestätigen Sie Ihren Kauf, und schließen Sie diesen ab. Wenn Sie sich selbst ein Abonnement zugewiesen haben, können Sie das [Portal für Visual Studio-Abonnenten](https://my.visualstudio.com) besuchen, um die Software herunterzuladen und andere Vorteile des Abonnements zu nutzen.
+5. Bestätigen Sie Ihren Kauf, und schließen Sie diesen ab. Wenn Sie sich selbst ein Abonnement zugewiesen haben, können Sie das [Portal für Visual Studio-Abonnenten](https://my.visualstudio.com) besuchen, um die Software herunterzuladen und andere Vorteile des Abonnements zu nutzen.
 
 > [!div class="mx-imgBorder"]
 > ![Kauf erfolgreich abgeschlossen](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

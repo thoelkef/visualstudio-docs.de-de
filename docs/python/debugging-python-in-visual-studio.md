@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155876"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954360"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -246,7 +246,7 @@ Die folgenden Schritte ermöglichen das Debuggen in der aktuellen Visual Studio-
 1. Geben Sie folgenden Befehl ein:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Beginnen Sie mit dem Debuggen, und führen Sie alle notwendigen Schritte aus, um Ihr Problem zu reproduzieren. Während dieser Zeit werden Debugprotokolle im Fenster **Ausgabe** unter **Adapterhostprotokoll debuggen** angezeigt. Sie können die Protokolle dann aus diesem Fenster kopieren und in ein GitHub-Problem, eine E-Mail usw. einfügen.
@@ -256,7 +256,7 @@ Die folgenden Schritte ermöglichen das Debuggen in der aktuellen Visual Studio-
 1. Wenn Visual Studio nicht mehr reagiert oder Sie anderweitig nicht auf das Fenster **Ausgabe** zugreifen können, starten Sie Visual Studio neu, öffnen Sie ein Befehlsfenster, und geben Sie den folgenden Befehl ein:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Beginnen Sie mit dem Debuggen, und reproduzieren Sie Ihr Problem erneut. Die Debuggerprotokolle finden Sie dann in `%temp%\DebugAdapterHostLog.txt`.

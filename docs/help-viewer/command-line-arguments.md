@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944259"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323464"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die Schalter und die Argumente definiert, die Si
 |/membership|Nein|-   **Minimum** – Installiert den minimalen Hilfeinhalt auf Basis der SKU, die mit dem Schalter /skuId angegeben wurde. Die Zuordnung zwischen SKU und Inhalt wird in der Service-API verfügbar gemacht.<br />-   **Recommended** – Installiert eine Reihe empfohlener Bücher für die SKU, die mit dem Argument /skuId angegeben werden. Die Installationsquelle ist die Service-API oder die *MSHA-Datei*.<br />-   **Full** – Installiert den gesamten Satz von Büchern für die SKU, die mit dem Argument /skuId angegeben werden. Die Installationsquelle ist die Service-API oder die *MSHA-Datei*.|
 |/locationpath|Nein|Gibt den Standardordner für den lokalen Hilfeinhalt an. Sie dürfen diesen Schalter nur zum Installieren oder Verschieben von Inhalt verwenden. Wenn Sie diesen Schalter angeben, müssen Sie auch den Schalter /silent angeben.|
 |/silent|Nein|Installiert oder entfernt Hilfeinhalte ohne eine Bestätigung durch den Benutzer und ohne Anzeige einer Benutzeroberfläche. Auch im Bereich mit Statusbenachrichtigungen wird kein Symbol angezeigt. Die Ausgabe wird in einer Datei im Verzeichnis *%Temp%* protokolliert. **Wichtig:**  Für eine automatische Installation von Inhalt müssen Sie digital signierte *CAB*-Dateien verwenden, keine *MSHC*-Dateien.|
-|/launchingApp|Nein|Definiert den Anwendungs- und Katalogkontext, wenn der Help Viewer ohne die übergeordnete Anwendung gestartet wird. Die Argumente für diesen Schalter sind *CompanyName*, *ProductName* und *VersionNumber* (z.B. `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Dies ist erforderlich, wenn Sie Inhalt mit dem Parameter „/silent“ installieren.|
+|/launchingApp|Nein|Definiert den Anwendungs- und Katalogkontext, wenn der Help Viewer ohne die übergeordnete Anwendung gestartet wird. Die Argumente für diesen Schalter sind *CompanyName*, *ProductName* und *VersionNumber* (z.B. `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Dies ist erforderlich, wenn Sie Inhalt mit dem Parameter „/silent“ installieren.|
 |/wait *Sekunden*|Nein|Hält die Vorgänge zum Installieren, Deinstallieren und Aktualisieren an. Wird bereits ein Vorgang für den Katalog ausgeführt, wird eine festgelegte Anzahl von Sekunden gewartet, bis der Prozess fortgesetzt wird. Verwenden Sie 0 für eine unbegrenzte Wartezeit.|
 |/?|Nein|Führt die Schalter und ihre Beschreibungen für das Befehlszeilentool für den Hilfeinhalts-Manager auf.|
 

@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841669"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953806"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 
@@ -29,21 +29,22 @@ Ein nicht verwalteter Mandant ist ein Mandant ohne interne Administratoren, und 
 Vor dem Abschließen der Mandantenzuordnung sind hier einige Anforderungen/Schritte erforderlich, um ein Administrator für Visual Studio-Abonnements zu werden.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Vorabzuordnung des Mandanten (verwalteter Mandant)
--   Sie müssen ein bei Business Center registrierter Benutzer sein.
--   Sie müssen ein Benutzeradministrator (mindestens) oder ein globaler Administrator innerhalb des Mandanten sein, dem Sie angehören. (Dies gilt, wenn Ihr Unternehmen bereits Clouddienste verwendet). Die Rollen müssen Administratoren für Visual Studio-Abonnements sein.
--   Sie müssen ein globaler Administrator des Mandanten sein, dem Sie angehören, um Ihr Einkaufskonto Ihrem Mandanten zuordnen zu können.
--   Sie müssen ein Kontoadministrator oder Konto-Manager in Business Center sein.
--   Das Feld „Land oder Region“ in Ihrem Benutzerprofil (sowie für alle anderen Benutzer) in [Azure](https://portal.azure.com/) muss abhängig von Ihrer Region (z.B. USA, Kanada usw.) ausgefüllt sein.
+
+- Sie müssen ein bei Business Center registrierter Benutzer sein.
+- Sie müssen ein Benutzeradministrator (mindestens) oder ein globaler Administrator innerhalb des Mandanten sein, dem Sie angehören. (Dies gilt, wenn Ihr Unternehmen bereits Clouddienste verwendet). Die Rollen müssen Administratoren für Visual Studio-Abonnements sein.
+- Sie müssen ein globaler Administrator des Mandanten sein, dem Sie angehören, um Ihr Einkaufskonto Ihrem Mandanten zuordnen zu können.
+- Sie müssen ein Kontoadministrator oder Konto-Manager in Business Center sein.
+- Das Feld „Land oder Region“ in Ihrem Benutzerprofil (sowie für alle anderen Benutzer) in [Azure](https://portal.azure.com/) muss abhängig von Ihrer Region (z.B. USA, Kanada usw.) ausgefüllt sein. 
 
 > [!NOTE]
 > Benutzer, die Sie zu Administratoren für Visual Studio-Abonnements machen möchten, müssen keine Benutzer in Business Center sein, da sie nur die Kriterien in den Schritten 2 und 5 erfüllen müssen.
 
 Sobald Sie die Kriterien in den vorherigen fünf Schritten erfüllen, können Sie damit fortfahren, Ihr Einkaufskonto mit den folgenden Schritten Ihrem Mandanten zuzuordnen.
-1.  Melden Sie sich bei [Business Center](https://businessaccount.microsoft.com/) an.
-2.  Klicken Sie auf die Registerkarte **Konto**, und wählen Sie **Domänen zuordnen** aus.
-3.  Wählen Sie Ihr **Einkaufskonto** aus (falls mehrere vorhanden sind).
-4.  Wählen Sie Ihren **Mandanten** aus (z.B. „contoso.onmicrosoft.com“).
-5.  Klicken Sie auf **Domäne zuordnen**.
+1. Melden Sie sich bei [Business Center](https://businessaccount.microsoft.com/) an.
+2. Klicken Sie auf die Registerkarte **Konto**, und wählen Sie **Domänen zuordnen** aus.
+3. Wählen Sie Ihr **Einkaufskonto** aus (falls mehrere vorhanden sind).
+4. Wählen Sie Ihren **Mandanten** aus (z.B. „contoso.onmicrosoft.com“).
+5. Klicken Sie auf **Domäne zuordnen**.
 
 Nach der Zuordnung werden alle Benutzer, die die erforderlichen Kriterien erfüllen, in der Regel innerhalb von Minuten als Administratoren für Visual Studio Abonnements bereitgestellt. Manchmal kann es allerdings bis zu 24 Stunden dauern. Nach der Bereitstellung können Sie auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen. Wenn es länger als 24 Stunden dauert, wenden Sie sich an den MPSA-Support.
 

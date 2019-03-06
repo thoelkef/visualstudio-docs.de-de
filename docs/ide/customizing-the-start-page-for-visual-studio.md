@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685130"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953381"
 ---
 # <a name="customize-startup"></a>Anpassen des Programmstarts
 
@@ -34,17 +34,17 @@ Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows P
 
 1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
-1. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
+2. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie in der Liste **Beim Starten** das Element aus, das nach dem Start von Visual Studio angezeigt werden soll.
+3. Wählen Sie in der Liste **Beim Starten** das Element aus, das nach dem Start von Visual Studio angezeigt werden soll.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie aus der Liste **On startup, open** (Beim Start öffnen) aus, was beim Starten von Visual Studio angezeigt werden soll. Sie können zwischen **Startfenster** (über das Sie ein neues oder vorhandenes Projekt öffnen können), **Letzte Projektmappe** und **Leere Umgebung** auswählen.
+3. Wählen Sie aus der Liste **On startup, open** (Beim Start öffnen) aus, was beim Starten von Visual Studio angezeigt werden soll. Sie können zwischen **Startfenster** (über das Sie ein neues oder vorhandenes Projekt öffnen können), **Letzte Projektmappe** und **Leere Umgebung** auswählen.
 
 ::: moniker-end
 

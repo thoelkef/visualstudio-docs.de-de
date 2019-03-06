@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Migration der Volume License Service Center-Verwaltung
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844099"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953943"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -44,21 +44,21 @@ Ja.  In diesem Prozess gibt es zwei Phasen. Durch das Einrichten (oder Onboardin
 ### <a name="what-is-the-onboarding-process"></a>Was ist der Onboardingprozess?
 Eine E-Mail wird an die primären Kontakte und Ansprechpartner gesendet, um sie aufzufordern, den Onboardingprozess durchzuführen.
 Anweisungen für den Prozess finden Sie weiter unten.
-1.  **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
+1. **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
 
-    a.  Die E-Mail an die primären Kontakte und Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer öffentlichen Kundennummer (Public Customer Number, PCN).*
+    a. Die E-Mail an die primären Kontakte und Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer öffentlichen Kundennummer (Public Customer Number, PCN).*
 
-    b.  Der primäre Ansprechpartner muss sich im VLSC anmelden, um die gesamte PCN zu erhalten. (Anweisungen zum Ermitteln der PCN finden Sie unten.)
+    b. Der primäre Ansprechpartner muss sich im VLSC anmelden, um die gesamte PCN zu erhalten. (Anweisungen zum Ermitteln der PCN finden Sie unten.)
 
-    c.  Nachdem die primären Ansprechpartner ihre jeweilige PCN ermittelt haben, müssen sie auf ihre persönlichen Links klicken, woraufhin sie zum Anmelden aufgefordert werden. Sie können sich mit ihrem Geschäfts-, Schul- oder Unikonto (sofern Ihre Organisation bei Azure AD registriert ist) oder einem Microsoft-Konto (MSA) anmelden (wenn Ihre Organisation nicht bei Azure AD registriert ist).
+    c. Nachdem die primären Ansprechpartner ihre jeweilige PCN ermittelt haben, müssen sie auf ihre persönlichen Links klicken, woraufhin sie zum Anmelden aufgefordert werden. Sie können sich mit ihrem Geschäfts-, Schul- oder Unikonto (sofern Ihre Organisation bei Azure AD registriert ist) oder einem Microsoft-Konto (MSA) anmelden (wenn Ihre Organisation nicht bei Azure AD registriert ist).
 
-    d.  Als Nächstes müssen sie die PCN eingeben.
+    d. Als Nächstes müssen sie die PCN eingeben.
 
-2.  **Ihre Administratoren einrichten:**
+2. **Ihre Administratoren einrichten:**
 
     Nach dem Eingeben der PCN wird die Seite aufgerufen, auf sie der Superadministratoren und Administratoren (vormals Abonnement-Manager) hinzufügen können. Im Idealfall sollte dies vor dem Migrationsdatum Ihrer Organisation durchgeführt werden, damit bei der Verwaltung Ihrer Abonnements keine Unterbrechungen auftreten.
 
-3.  **Greifen Sie auf das neue Verwaltungsportal für Abonnements zu:** Nach der Migration Ihrer Organisation werden die Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
+3. **Greifen Sie auf das neue Verwaltungsportal für Abonnements zu:** Nach der Migration Ihrer Organisation werden die Superadministratoren und Administratoren per E-Mail gebeten, auf das neue Portal zuzugreifen und die Abonnements zu verwalten.
 
 > [!NOTE]
 > Wenn die primären Kontakte oder Ansprechpartner mehr als eine E-Mail erhalten, bedeutet dies, dass sie mehrere PCNs besitzen. Sie müssen den Prozess mithilfe der persönlichen Links für die PCNs abschließen, die jeweils in den E-Mails genannt werden.

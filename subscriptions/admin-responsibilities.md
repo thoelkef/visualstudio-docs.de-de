@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadministratoren.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842350"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954479"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
 Als Administrator haben Sie die Möglichkeit, Abonnements für Ihre Organisation zu verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.
 
 ## <a name="roles--responsibilities"></a>Rollen und Zuständigkeiten
 Die Verantwortlichkeit eines Visual Studio-Administrators besteht hauptsächlich aus vier Aufgaben:
-1.  **Verstehen Sie die Vorteile und Einschränkungen von Visual Studio-Abonnements.** Wenn Sie die Vorteile in vollem Umfang verstehen, kann Ihnen das dabei helfen, die Hardwarekosten einzuschränken, indem Sie Clouddienste verwenden, und Softwarekosten mithilfe von Lizenzen pro Benutzer für Präproduktionsumgebungen zu reduzieren.
-2.  **Weisen Sie die Visual Studio-Abonnements bestimmten Personen zu, und fordern Sie sie zur Nutzung auf.** In ihrem Vertrag ist festgehalten, dass Visual Studio-Abonnements bestimmten Personen zugewiesen werden müssen. Bleiben Sie mit diesen Personen in Kontakt, um zu gewährleisten, dass sie die Vorteile, die in ihrem Visual Studio-Abonnement enthalten sind, in vollem Umfang nutzen.
-3.  **Führen Sie eine genaue Inventur für die Präproduktion durch.** Dieser Vorgang ist notwendig, um sicherzustellen, dass alle Benutzer, die mit lizenzierter Visual Studio-Software interagieren, angemessen für ihr Visual Studio-Abonnement lizenziert sind.
-4.  **Verfolgen Sie Änderungen von Benutzerzuweisungen, und erwerben Sie zusätzliche Lizenzen nach Zeitplan.** Mithilfe von Microsoft-Volumenlizenzverträgen (VL) und MPSA können Sie Visual Studio-Abonnements flexibel verwenden und zuweisen. Im Gegenzug wird von Ihnen erwartet, dass Sie Änderungen im Hinblick auf die Softwarenutzung und Benutzerzuordnungen nachverfolgen und Bestellungen für zusätzliche Lizenzen gemäß dem in der Vereinbarung festgelegten Zeitplan aufgeben.
+
+1. **Verstehen Sie die Vorteile und Einschränkungen von Visual Studio-Abonnements.** Wenn Sie die Vorteile in vollem Umfang verstehen, kann Ihnen das dabei helfen, die Hardwarekosten einzuschränken, indem Sie Clouddienste verwenden, und Softwarekosten mithilfe von Lizenzen pro Benutzer für Präproduktionsumgebungen zu reduzieren. 
+2. **Weisen Sie die Visual Studio-Abonnements bestimmten Personen zu, und fordern Sie sie zur Nutzung auf.** In ihrem Vertrag ist festgehalten, dass Visual Studio-Abonnements bestimmten Personen zugewiesen werden müssen. Bleiben Sie mit diesen Personen in Kontakt, um zu gewährleisten, dass sie die Vorteile, die in ihrem Visual Studio-Abonnement enthalten sind, in vollem Umfang nutzen.
+3. **Führen Sie eine genaue Inventur für die Präproduktion durch.** Dieser Vorgang ist notwendig, um sicherzustellen, dass alle Benutzer, die mit lizenzierter Visual Studio-Software interagieren, angemessen für ihr Visual Studio-Abonnement lizenziert sind. 
+4. **Verfolgen Sie Änderungen von Benutzerzuweisungen, und erwerben Sie zusätzliche Lizenzen nach Zeitplan.** Mithilfe von Microsoft-Volumenlizenzverträgen (VL) und MPSA können Sie Visual Studio-Abonnements flexibel verwenden und zuweisen. Im Gegenzug wird von Ihnen erwartet, dass Sie Änderungen im Hinblick auf die Softwarenutzung und Benutzerzuordnungen nachverfolgen und Bestellungen für zusätzliche Lizenzen gemäß dem in der Vereinbarung festgelegten Zeitplan aufgeben.
 
 ## <a name="benefits-and-limitations"></a>Vorteile und Einschränkungen
 Visual Studio-Abonnements ermöglichen Teammitgliedern die Installation und Verwendung von Software, um andere Software zu entwerfen, zu entwickeln, zu testen, zu bewerten und vorzuführen. Die in Visual Studio-Abonnements enthaltene Software ist für Produktionsumgebungen nicht lizenziert.
@@ -70,9 +71,10 @@ Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie di
 - Ein Benutzer mit Visual Studio-Software interagiert
 
 Es hängt vom **hohen Auslastungsgrenzwert** ab, ob Sie ein Abonnement erwerben müssen oder nicht. Dieser Grenzwert gilt entweder für die täglichen Zuweisungen an Benutzer oder für die Anzahl der Benutzer, die mit Visual Studio-Software interagieren. Dabei gilt immer der höhere der beiden Werte.
-1.  Administratoren für Visual Studio-Abonnements können den hohen Auslastungsgrenzwert erhöhen, indem sie Einzelpersonen Visual Studio-Abonnements zuweisen.
-2.  Administratoren für Visual Studio-Abonnements können Abonnements nach 90 Tagen ab der ursprünglichen Zuweisung erneut von einem Benutzer an einen anderen übertragen. Dafür müssen sie zunächst das bereits vorhandene Abonnement entfernen und ein neues hinzufügen, um zu vermeiden, dass der Grenzwert künstlich in die Höhe getrieben wird.
-3.  Administratoren für Visual Studio-Abonnements können die zugewiesene Abonnementstufe für eine Einzelperson unter Umständen ändern. Dabei wird die Abonnementstufe des einen Benutzers erhöht und dafür die des anderen herabgestuft. Wenn Sie das Abonnement eines zugewiesenen Abonnenten herabstufen, muss diese Person alle Produkte, die nur im höheren Abonnement enthalten sind, beenden und deinstallieren.
+
+1. Administratoren für Visual Studio-Abonnements können den hohen Auslastungsgrenzwert erhöhen, indem sie Einzelpersonen Visual Studio-Abonnements zuweisen.
+2. Administratoren für Visual Studio-Abonnements können Abonnements nach 90 Tagen ab der ursprünglichen Zuweisung erneut von einem Benutzer an einen anderen übertragen. Dafür müssen sie zunächst das bereits vorhandene Abonnement entfernen und ein neues hinzufügen, um zu vermeiden, dass der Grenzwert künstlich in die Höhe getrieben wird.
+3. Administratoren für Visual Studio-Abonnements können die zugewiesene Abonnementstufe für eine Einzelperson unter Umständen ändern. Dabei wird die Abonnementstufe des einen Benutzers erhöht und dafür die des anderen herabgestuft. Wenn Sie das Abonnement eines zugewiesenen Abonnenten herabstufen, muss diese Person alle Produkte, die nur im höheren Abonnement enthalten sind, beenden und deinstallieren. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Cloud-Abonnements, Open License oder Open Value
 Ihre Abonnements werden Ihnen möglicherweise über Programme wie Microsoft Cloud-Abonnements, Open License oder Open Value zugewiesen. Wenn dies der Fall ist, müssen Sie Ihre Bestellung für zusätzliche Benutzer in dem Monat verarbeiten, in dem diese (Mitarbeiter oder externe Vertragspartner) mit der Interaktion mit lizenzierter Visual Studio-Software beginnen.

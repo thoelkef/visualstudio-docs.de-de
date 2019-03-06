@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923537"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222485"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
-Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in Ihrem Code aus, damit Sie angegebene Elemente schneller finden. Sie können über eine einfache und einheitliche Oberfläche zu einer bestimmten Zeile, einem bestimmten Typ, einem bestimmten Symbol oder einer bestimmten Datei gehen. Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.
+Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in Ihrem Code aus, damit Sie angegebene Elemente schneller finden. Sie können über eine einfache und einheitliche Oberfläche zu einer bestimmten Zeile, einem bestimmten Typ, einem bestimmten Symbol oder einer bestimmten Datei gehen.
 
 ## <a name="how-to-use-it"></a>Verwendungsweise
 
