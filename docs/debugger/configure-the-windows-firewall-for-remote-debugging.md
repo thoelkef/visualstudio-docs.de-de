@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637333"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428725"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Windows-Firewall für Remotedebuggen konfigurieren
 
@@ -52,11 +52,25 @@ Visual Studio und den Remotedebugger versuchen Sie die richtigen Ports während 
 
 Für das Remotedebuggen, müssen die folgenden Ports auf dem Remotecomputer geöffnet sein:
 
+::: moniker range="vs-2017"
+
 |**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|
 |-|-|-|-|
 |4022|Eingehend|TCP|Für VS 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).|
 |4023|Eingehend|TCP|Für VS 2017. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Dieser Port wird nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).|
 |3702|Ausgehend|UDP|(Optional) Erforderlich für die remotedebuggerermittlung.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Ports**|**Eingehend/Ausgehend**|**Protokoll**|**Beschreibung**|
+|-|-|-|-|
+|4024|Eingehend|TCP|Für VS 2019. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).|
+|4025|Eingehend|TCP|Für VS 2019. Der Port Number Schritten durch 2 für jede Visual Studio-Version. Dieser Port wird nur verwendet, um remote Debuggen von 64-Bit-Version des Remotedebuggers eine 32-Bit-Prozess. Weitere Informationen finden Sie unter [Visual Studio remote debugger port assignments (Visual Studio-Remotedebugger – Portzuweisungen)](../debugger/remote-debugger-port-assignments.md).|
+|3702|Ausgehend|UDP|(Optional) Erforderlich für die remotedebuggerermittlung.|
+
+::: moniker-end
 
 Bei Auswahl von **verwalteten Kompatibilitätsmodus verwenden** unter **Tools** > **Optionen** > **Debuggen**öffnen Diese zusätzliche Remotedebugger-Ports. Debugger verwalteter Kompatibilitätsmodus ermöglicht eine Vorgängerversion, die Visual Studio 2010-Version des Debuggers.
 

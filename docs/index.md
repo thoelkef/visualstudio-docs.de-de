@@ -580,7 +580,7 @@ Web-App mit ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Eine erweiterbare Programmiersprache, die normalerweise für statistische Berechnungen und Grafiken verwendet wird.</p>
+                                                    <p>(nur Visual Studio 2017) Eine erweiterbare Programmiersprache, die normalerweise für statistische Berechnungen und Grafiken verwendet wird.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Web-App mit ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Web-App mit ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Data Science und analytische Anwendungen</h3>
-                                            <p>Sprachen und Tools zum Erstellen von Data Science-Anwendungen (einschließlich Python, R und F#).</p>
+                                            <p>Sprachen und Tools zum Erstellen von Data Science-Anwendungen (einschließlich Python und F# oder R in Visual Studio 2017).</p>
                                         </div>
                                       </div>
                                     </div>
