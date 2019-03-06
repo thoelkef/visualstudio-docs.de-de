@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694984"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222346"
 ---
 # <a name="edit-and-continue-error-message"></a>Bearbeiten Sie und fortfahren Sie-Fehlermeldung
 
@@ -37,7 +37,7 @@ Mögliche Ursachen für diese Fehlermeldung
 -   Möchten verwalteten Code zu bearbeiten, wenn nur nicht verwaltetes debugging aktiviert ist. Bearbeiten und Fortfahren funktioniert nicht mit [Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
 -   Vornehmen der Änderung wird nicht in einer Programmiersprache bearbeiten und Fortfahren unterstützt. Weitere Informationen finden Sie in Artikeln über [unterstützte codeänderungen in C# ](supported-code-changes-csharp.md), [nicht unterstützte Bearbeitungen in Visual Basic zu bearbeiten und Fortfahren](/visualstudio/debugger/supported-code-changes-csharp), und [unterstützt C++-Code-Änderungen](supported-code-changes-cpp.md).
 -   Versucht, Code in einer app zu bearbeiten, Sie, angefügt sind, statt von Debuggen, die **Debuggen** Menü.
--   Versucht, Code zu bearbeiten, während des Debuggens einer Notfallwiederherstellung. Dr.Watson-Dumps.
+-   Versucht, Code zu bearbeiten, während des Debuggens einer Notfallwiederherstellung. Watson-Sicherungskopie.
 -   Versucht, Code zu bearbeiten, nachdem eine unbehandelte Ausnahme auftritt und die Option **Aufrufliste für Ausnahmefehler entladen** nicht ausgewählt ist.
 -   Versucht, Code zu bearbeiten, während des Debuggens einer eingebetteten Laufzeitanwendung.
 -   Möchten verwalteten Code verwenden eine Version von .NET Framework 4.5.1 vor mit einer 64-Bit-Anwendung zu bearbeiten. Zum Bearbeiten und Fortfahren für .NET Framework 4.5.1 vor verwenden, legen Sie das Ziel auf **X86** in die  **\<Projektname >** > **Eigenschaften**  >  **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.
@@ -46,6 +46,6 @@ Mögliche Ursachen für diese Fehlermeldung
 -   Da die neueste Version Buildfehler enthält zum Debuggen einer alten Version einer app wird gestartet.
 
 Weitere Informationen finden Sie unter:
-- [C++-bearbeiten und Fortfahren-Blog Posten](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++-bearbeiten und Fortfahren-Blog Posten](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)
 - [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)

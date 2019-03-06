@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722485"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223675"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur mein Code Debuggen
 
@@ -97,7 +97,7 @@ Für das Schrittverhalten für Code, nur mein Code in C++ nur diese Funktionen w
 - Funktionen, die im angegebenen  *\*natjmc* Dateien in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
 
 > [!NOTE]
-> Für Code zum schrittweisen Unterstützung in nur mein Code muss C++-Code mit dem MSVC-Compiler in Visual Studio 15.8 Vorschau 3 oder höher kompiliert werden, und der Compilerschalter /JMC muss aktiviert sein (es ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Anpassen von C++-Aufrufliste und code Schrittverhalten](#BKMK_CPP_Customize_call_stack_behavior)) und [Blogbeitrag](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Für Code mit einer älteren Version des Compilers, kompiliert *natstepfilter* Dateien sind die einzige Möglichkeit zum Anpassen von Code in Einzelschritten, die unabhängig vom nur mein Code ist. Finden Sie unter [Anpassen von C++-Schrittverhalten](#BKMK_CPP_Customize_stepping_behavior).
+> Für Code zum schrittweisen Unterstützung in nur mein Code muss C++-Code mit dem MSVC-Compiler in Visual Studio 15.8 Vorschau 3 oder höher kompiliert werden, und der Compilerschalter /JMC muss aktiviert sein (es ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Anpassen von C++-Aufrufliste und code Schrittverhalten](#BKMK_CPP_Customize_call_stack_behavior)) und [Blogbeitrag](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Für Code mit einer älteren Version des Compilers, kompiliert *natstepfilter* Dateien sind die einzige Möglichkeit zum Anpassen von Code in Einzelschritten, die unabhängig vom nur mein Code ist. Finden Sie unter [Anpassen von C++-Schrittverhalten](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Beim C++ Debuggen:
 

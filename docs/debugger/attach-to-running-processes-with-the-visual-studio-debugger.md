@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637502"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428764"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **an den Prozess anhängen** , oder drücken Sie **STRG**+**Alt** + **P** in Visual Studio, und die Verwendung der **an den Prozess anhängen** Dialogfeld, um den Debugger an den Prozess anzuhängen.
@@ -95,9 +95,20 @@ Vollständige Anweisungen für das Debuggen von ASP.NET-Anwendungen, die auf IIS
 
    - Aktivieren Sie den Dropdown-Pfeil neben **Verbindungsziel**, und wählen Sie den Namen des Computers aus der Dropdown Liste.
    - Geben Sie den Namen in der **Verbindungsziel** Feld.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Wenn Sie keine Verbindung mit dem Remotecomputer mit dem Namen herstellen können, versuchen Sie es mit der IP-Adresse und den port der Adresse (z. B. `123.45.678.9:4022`). 4022 ist der Standardport für den Remotedebugger von Visual Studio 2017 X64. Andere Remotedebugger-portzuweisungen finden Sie unter [Remotedebugger – portzuweisungen](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Wenn Sie keine Verbindung mit dem Remotecomputer mit dem Namen herstellen können, versuchen Sie es mit der IP-Adresse und den port der Adresse (z. B. `123.45.678.9:4022`). 4024 ist der Standardport für den Remotedebugger von Visual Studio 2019 X64. Andere Remotedebugger-portzuweisungen finden Sie unter [Remotedebugger – portzuweisungen](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Wählen Sie die **finden** neben der **Verbindungsziel** um öffnen die **Remoteverbindungen** Dialogfeld. Die **Remoteverbindungen** Dialogfeld listet alle Geräte, die im lokalen Subnetz oder direkt auf Ihrem Computer verbunden. Sie müssen möglicherweise [Öffnen von UDP-Port 3702](../debugger/remote-debugger-port-assignments.md) auf dem Server um Remotegeräte zu ermitteln. Wählen Sie die Computer oder das gewünschte Medium, und klicken Sie dann auf **wählen**.
 
@@ -142,7 +153,7 @@ Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte M
 Sie können schnell erneut anfügen an Prozesse, die Sie zuvor durch Auswahl angefügt wurden **Debuggen** > **erneut an Prozess anfügen** (**UMSCHALT** + **Alt**+**P**). Wenn Sie diesen Befehl auswählen, verarbeitet der Debugger sofort versucht, mit dem letzten Prozesse anfügen, die Sie angefügt haben, indem er zunächst versucht, mit die vorherigen Prozess-ID übereinstimmen, und wenn dies fehlschlägt, durch den Vergleich mit dem vorherigen, Name. Wenn keine Übereinstimmungen gefunden werden, oder wenn mehrere Prozesse den gleichen Namen haben, die **an den Prozess anhängen** Dialogfeld wird geöffnet, sodass Sie den richtigen Prozess auswählen können.
 
 > [!NOTE]
-> Die **erneut an Prozess anfügen** Befehl ist neu in Visual Studio 2017.
+> Die **erneut an Prozess anfügen** Befehl ist ab Visual Studio 2017 verfügbar.
 
 ## <a name="BKMK_Scenarios"></a> Häufige Szenarios des Debuggens
 

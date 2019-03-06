@@ -10,16 +10,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223558"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323587"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
-Die *Visual C++-Projektsystem* vcxproj-Dateien verwendet wird. Es basiert auf der [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) und bietet zusätzlich spezifische C++-Erweiterungspunkte, mit denen eine einfache Integration von neue Toolsets, Build-Architekturen und Zielplattformen.
+Das Visual C++-Projektsystem wird für .vcxproj-Dateien verwendet. Es basiert auf der [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) und bietet zusätzlich spezifische C++-Erweiterungspunkte, mit denen eine einfache Integration von neue Toolsets, Build-Architekturen und Zielplattformen.
 
 ## <a name="c-msbuild-targets-structure"></a>C++-MSBuild-Ziele-Struktur
 
@@ -55,7 +55,7 @@ Diese Dateien definieren wenig selbst. Stattdessen importieren sie die anderen D
 
 Diese Eigenschaftswerte Geben Sie die Namen von Ordnern unter dem `$(VCTargetsPath)` Stammordner:
 
-> `$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Anwendungstyp* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plattformen* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *\PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>Plattformen</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Anwendungstyp* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plattformen* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *\PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>Plattformen</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Fügen Sie ein neues Plattformtoolset hinzu.
 
@@ -81,34 +81,33 @@ Um einen neuen Anwendungstyp hinzuzufügen, erstellen Sie eine *MyApplicationTyp
 
 `$(ApplicationType)` und `$(ApplicationTypeRevision)` Eigenschaften werden nicht in der Benutzeroberfläche angezeigt. Sie werden in den Projektvorlagen definiert und können nicht geändert werden, nachdem das Projekt erstellt wird.
 
-
 ## <a name="the-vcxproj-import-tree"></a>Die VCXPROJ-Import-Struktur
 
 Eine vereinfachte Struktur von Direktiven für Dateien in Microsoft C++-Eigenschaften und-Zielen sieht wie folgt aus:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*
 
 Windows-Desktop-Projekten nicht definieren `$(ApplicationType)`, sodass sie nur importieren
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Standard*\\\*. *Eigenschaftendatei*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Standard*\\\*. *Eigenschaftendatei*
 
 Wir verwenden die `$(_PlatformFolder)` Eigenschaft zum Speichern der `$(Platform)` Ordnerpfade Plattform. Diese Eigenschaft ist
 
-> `$(VCTargetsPath)`\\*Plattformen*\\`$(Platform)`
+`$(VCTargetsPath)`\\*Plattformen*\\`$(Platform)`
 
 für Windows Desktop-apps und
 
-> `$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen*\\`$(Platform)`
+`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen*\\`$(Platform)`
 
 für alles andere.
 
 Die Props-Dateien werden in dieser Reihenfolge importiert:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *Eigenschaftendateien* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *Eigenschaftendatei</span>*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *Eigenschaftendateien* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *Eigenschaftendatei</span>*
 
 Targets-Dateien werden in dieser Reihenfolge importiert:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Ziele* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *Ziele</span>*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Ziele* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *Ziele</span>*
 
 Wenn Sie einige Standardeigenschaften für das Toolset definieren müssen, können Sie Dateien in die entsprechenden ImportBefore und ImportAfter Ordner hinzufügen.
 
@@ -361,7 +360,9 @@ Derzeit die Befehlszeile erstellt, durch die `CLCommandLine` Task verwendet CL-S
 
 Wenn Sie ein Ziel hinzufügen, die ausgeführt wird, vor der Kompilierung, regulären oder zur Entwurfszeit, stellen Sie sicher, dass es nicht unterbrechen kann zur Entwurfszeit erstellt oder auf die Leistung auswirken. Die einfachste Möglichkeit, testen Sie Ihr Ziel ist, öffnen Sie eine Developer-Eingabeaufforderung, und führen Sie diesen Befehl:
 
-> MSBuild-/p:SolutionDir =*Lösung-Verzeichnis-mit-nachfolgende-umgekehrten Schrägstrich*; Konfiguration = Debuggen; Plattform = Win32; BuildingInsideVisualStudio = True; DesignTimebuild = "true" / t:\_PerfIntellisenseInfo/v: d/fl /fileloggerparameters:PerformanceSummary \*.vcxproj
+```
+msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuration=Debug;Platform=Win32;BuildingInsideVisualStudio=true;DesignTimebuild=true /t:\_PerfIntellisenseInfo /v:d /fl /fileloggerparameters:PerformanceSummary \*.vcxproj
+```
 
 Dieser Befehl erzeugt eine ausführliche Buildprotokoll *msbuild.log*, am Ende eine Zusammenfassung für die Ziele und Aufgaben Leistung aufweist.
 
@@ -373,7 +374,17 @@ Achten Sie darauf, verwenden Sie `Condition ="'$(DesignTimeBuild)' != 'true'"` i
 
 Wenn `GeneratorTarget` Metadaten für ein Projekt definiert ist, wird das Ziel wird automatisch sowohl ausgeführt, wenn das Projekt geladen wird und wenn die Quelldatei geändert wird.
 
+::: moniker range="vs-2017"
+
 Z. B. zum automatischen Generieren von .cpp oder. h-Dateien von XAML-Dateien, die `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v15.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* Dateien definieren Entitäten:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Z. B. zum automatischen Generieren von .cpp oder. h-Dateien von XAML-Dateien, die `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v16.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* Dateien definieren Entitäten:
+
+::: moniker-end
 
 ```xml
 <ItemDefinitionGroup>
@@ -422,7 +433,7 @@ Die Regel muss hinzugefügt werden die `PropertyPageSchema` Elementgruppe:
 
 `Context` Grenzwerte Regel Sichtbarkeit von Metadaten, die auch durch Regeltyp gesteuert und kann einen der folgenden Werte aufweisen:
 
-> `Project` | `File` | `PropertySheet`
+`Project` | `File` | `PropertySheet`
 
 CPS unterstützt andere Werte für den Typ, aber sie können in Visual C++-Projekten nicht verwendet.
 
@@ -448,7 +459,6 @@ Das Regelformat ist einfach, damit Sie diesem Abschnitt wird nur die Attribute b
 ```
 
 Die `PageTemplate` Attribut wird definiert, wie die Regel angezeigt wird, in der **Eigenschaftenseiten** Dialogfeld. Das Attribut kann einen der folgenden Werte aufweisen:
-
 
 | Attribut | Beschreibung |
 |------------| - |

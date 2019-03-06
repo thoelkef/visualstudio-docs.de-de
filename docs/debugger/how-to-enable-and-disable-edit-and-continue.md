@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694607"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223584"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Gewusst wie: Aktivieren und Deaktivieren von bearbeiten und Fortfahren (C#, VB, C++)
 
 Sie können das Aktivieren oder deaktivieren **bearbeiten und Fortfahren** in Visual Studio **Optionen** Dialogfeld zur Entwurfszeit. Die Funktion **Bearbeiten und Fortfahren** funktioniert nur in Debugversionen. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
 
-Bei systemeigenem C++ **bearbeiten und Fortfahren** erfordert die Verwendung der `/INCREMENTAL` Option. Weitere Informationen zu den Funktionen in C++ finden Sie in diesem [Blogbeitrag](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) und [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
+Bei systemeigenem C++ **bearbeiten und Fortfahren** erfordert die Verwendung der `/INCREMENTAL` Option. Weitere Informationen zu den Funktionen in C++ finden Sie in diesem [Blogbeitrag](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) und [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
 **So aktivieren oder deaktivieren, bearbeiten und Fortfahren:**
 

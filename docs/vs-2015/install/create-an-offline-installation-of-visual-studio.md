@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d76e4b1c9a7f7b6882eccab4a250e95c7419ea0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89575318a8dd5357e5f786e25d3e3518d35348d6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763132"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954292"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +87,4 @@ Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht 
 |        Türkisch        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>Siehe auch
- [Installieren von Visual Studio]()
+ [Installieren von Visual Studio](../install/install-visual-studio-2015.md)
