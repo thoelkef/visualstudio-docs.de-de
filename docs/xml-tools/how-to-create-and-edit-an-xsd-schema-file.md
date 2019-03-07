@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937915"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525357"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei
 
@@ -29,14 +29,10 @@ In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt u
 
 ## <a name="to-edit-a-file"></a>So bearbeiten Sie eine Datei
 
-1. Wählen Sie die **verwenden Sie den XML-Editor anzeigen und bearbeiten die zugrunde liegende XML-Schemadatei** Link in der Ausgangsansicht auf.
+1. Wählen Sie die **verwenden Sie XML-Editor anzeigen und bearbeiten die zugrunde liegende XML-Schemadatei** Link in der Ausgangsansicht auf.
 
-   Der XML-Editor wird mit der neuen Datei angezeigt.
+   Mit der neuen Datei öffnen, wird der XML-Editor angezeigt.
 
 2. Kopieren Sie die XML-schemabeispielcode aus [Bestellungsschema](../xml-tools/sample-xsd-file-simple-schema.md) und fügen Sie ihn, um den Standardcode zu ersetzen, das die neue XSD-Datei standardmäßig hinzugefügt wurde.
 
    Die **XML-Schema-Explorer** wird mit dem neuen Schemaset aktualisiert.
-
-## <a name="see-also"></a>Siehe auch
-
-- [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md)

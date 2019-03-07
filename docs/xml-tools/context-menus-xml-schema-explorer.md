@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910546"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526489"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> – Alle Namespaces, die in den Namespaceattributen aller angegebenen importanweisungen, denen keine das `schemaLocation` Attribut.<br />– Alle angegebenen Dateien in die `schemaLocation` -Attributen aller Import- und include-Anweisungen.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen in dieser Datei und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen in dieser Datei und hebt sie hervor.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das in der XML-Schema-Explorer ausgewählt ist, wird auch in der XML-Editor ausgewählt werden.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="all-global-node-types"></a>Alle globalen Knotentypen
@@ -60,7 +60,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |-|-----------------|
 |**In Diagrammansicht anzeigen**|Öffnet die Diagrammansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
 |**In Inhaltsmodellansicht anzeigen**|Öffnet die Inhaltsmodellansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das in der XML-Schema-Explorer ausgewählt ist, wird auch in der XML-Editor ausgewählt werden.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="node-type-element"></a>Knotentyp: Element

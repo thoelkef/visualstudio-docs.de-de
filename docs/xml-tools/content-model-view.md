@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933573"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525790"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 
@@ -52,7 +52,7 @@ Wenn Sie mit der rechten Maustaste auf die Entwurfsoberfläche ein Element oder 
 |**Beispiel-XML generieren**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
 |**Dokumentation anzeigen**|Blendet den Inhalt von Anmerkungs-/Dokumentationsknoten ein bzw. aus.|
 |**Diagramm als Bild exportieren**|Speichert die Entwurfsoberfläche in einer XPS-Datei.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor aktiviert ist.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor ausgewählt ist.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 Die folgende Tabelle beschreibt die verfügbaren Optionen für die **Arbeitsbereich** Bereich.
@@ -66,7 +66,7 @@ Die folgende Tabelle beschreibt die verfügbaren Optionen für die **Arbeitsbere
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Beispiel-XML generieren**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
 |**Wählen Sie alle**|Wählt alle Knoten in der **Arbeitsbereich** Bereich.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor aktiviert ist.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor ausgewählt ist.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="properties-window"></a>Eigenschaftenfenster

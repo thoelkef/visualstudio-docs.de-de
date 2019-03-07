@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913953"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526242"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-schema
 
-Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema (XML Schema Definition Language) zu generieren. Beispielsweise, wie Sie eine XML-Datei, während Sie neben dem Elementnamen positioniert erstellen, Sie können drücken **Registerkarte** , füllen Sie das Element mit XML-Daten aus den Schemainformationen für dieses Element generiert.
+Der XML-Editor verfügt über die Möglichkeit zum Generieren von XML-Ausschnitte aus einem Schema für XML Schema Definition Language (XSD). Beispielsweise, wie Sie eine XML-Datei, während Sie neben dem Elementnamen positioniert erstellen, Sie können drücken **Registerkarte** , füllen Sie das Element mit XML-Daten aus den Schemainformationen für dieses Element generiert.
 
 Diese Funktion ist nur für Elemente verfügbar. Zudem gelten die folgenden Regeln:
 
@@ -43,7 +43,7 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 
 ## <a name="example"></a>Beispiel
 
- Die Schritte in diesem Abschnitt veranschaulichen das Schema generiert XML-Ausschnittfeature des XML-Editor verwenden.
+ Die Schritte in diesem Abschnitt veranschaulichen die schemagenerierter XML-Ausschnitt-Funktion von der XML-Editor verwenden.
 
 > [!NOTE]
 > Speichern Sie vor dem Starten dieser Prozeduren die Schemadatei auf dem lokalen Computer.

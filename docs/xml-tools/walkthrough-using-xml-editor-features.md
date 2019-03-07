@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954685"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525868"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen
 
-Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Bei der exemplarischen Vorgehensweise werden auch die Funktionen des XML-Editors verwendet, die für das Verfassen von XML nützlich sind.
+Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Die exemplarische Vorgehensweise verwendet auch einige der Funktionen des XML-Editors, die nützlich für das Erstellen von XML zu erleichtern.
 
 > [!NOTE]
 > Speichern Sie vor dem Starten der exemplarischen Vorgehensweise, die *hireDate.xsd* Datei (unten in diesem Thema enthalten) auf dem lokalen Computer.
@@ -96,9 +96,11 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 ## <a name="to-format-the-xml-document"></a>So formatieren Sie das XML-Dokument
 
-- Wählen Sie die **Dokument formatieren** der XML-Editor-Symbolleiste die Schaltfläche.
+- Wählen Sie die **Dokument formatieren** auf der Symbolleiste des XML-Editors, oder drücken Sie Schaltfläche **STRG**+**E**,**D**.
 
-    Das XML-Dokument wird neu formatiert.
+   ![Schaltfläche für Format XML-Dokument in Visual Studio](media/format-xml-document.png)
+
+   Das XML-Dokument wird neu formatiert.
 
 ## <a name="to-save-the-xml-document"></a>So speichern Sie das XML-Dokument
 
@@ -109,7 +111,8 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 2.  Geben Sie den Dateinamen und Speicherort für das XML-Dokument aus, und klicken Sie auf **speichern**.
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd-Datei
- Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
+
+Die folgende Schemadatei wird in dieser exemplarischen Vorgehensweise verwendet:
 
 ```xml
 <?xml version="1.0"?>
@@ -129,4 +132,4 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Editor](../xml-tools/xml-editor.md)
+- [XML-editor](../xml-tools/xml-editor.md)

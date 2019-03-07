@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602285"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525898"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
@@ -57,15 +57,15 @@ Bei der Installation von Visual Studio werden die PIAs automatisch an einem Spei
 
 Diese Kopien der PIAs helfen dabei, mehrere Entwicklungsprobleme im Zusammenhang mit Visual Studio zu vermeiden. Diese können auftreten, wenn unterschiedliche Versionen der PIAs im globalen Assemblycache registriert werden.
 
-Visual Studio installiert diese Kopien der PIAs an den folgenden Speicherorten auf dem Entwicklungscomputer:
+Ab Visual Studio 2017, werden diese Kopien der PIAs installiert, die folgenden freigegebene Speicherorten auf dem Entwicklungscomputer:
 
-- *%ProgramFiles%\Microsoft-visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Studio\Shared\Visual von visual Studio-Tools für Office\PIA\*
 
-  (oder *% ProgramFiles% (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14* auf 64-Bit-Betriebssystemen)
+- (oder * % ProgramFiles% (x86) %\Microsoft Visual Studio-Tools mit Studio\Shared\Visual für Office\PIA\* auf 64-Bit-Betriebssystemen)
 
-- *%ProgramFiles%\Microsoft-visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15*
-
-  (oder *% ProgramFiles% (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15* auf 64-Bit-Betriebssystemen)
+> [!NOTE]
+> Für ältere Versionen von Visual Studio, die diese PIAs installiert werden, um Visual Studio-Tools für Office\PIA Ordner unter dem * Ordner "% ProgramFiles%" für diese Version von Visual Studio.  
+> Beispiel: * % ProgramFiles% (x86) %\Microsoft Visual Studio 14.0\Visual Studio-Tools für Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primäre interop-Assemblys im globalen Assemblycache
 
@@ -79,7 +79,7 @@ Zur Ausführung von Office-Lösungen sind die Office-PIAs auf Endbenutzercompute
 
 Jede Office-Projektvorlage in Visual Studio wird im Hinblick auf die Arbeit mit einer einzelnen Microsoft Office-Anwendung entworfen. Um Funktionen in mehreren Microsoft Office-Anwendungen oder in einer Anwendung bzw. Komponente zu verwenden, die kein Projekt in Visual Studio besitzt, müssen Sie einen Verweis auf die erforderlichen PIAs hinzufügen.
 
-In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio unter installiert sind Hinzufügen der `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` Verzeichnis. Diese Versionen der Assemblys werden auf die **Framework** Registerkarte die **Verweis-Manager** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio unter installiert sind Hinzufügen der `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` Verzeichnis. Diese Versionen der Assemblys werden auf die **Framework** Registerkarte die **Verweis-Manager** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Wenn Sie die PIAs im globalen Assemblycache installiert und registriert haben, werden diese Versionen im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** angezeigt. Vermeiden Sie es, Verweise auf diese Versionen hinzuzufügen, da sonst bei ihrer Verwendung Entwicklungsprobleme auftreten können. Wenn verschiedene Versionen der PIAs im globalen Assemblycache registriert sind, bindet das Projekt automatisch an die Version der Assembly, die zuletzt registriert wurde - auch dann, wenn Sie im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** eine andere Version angeben.
 
@@ -90,14 +90,14 @@ Wenn Sie die PIAs im globalen Assemblycache installiert und registriert haben, w
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Primäre Interopassemblys für Microsoft Office-Anwendungen
 
-In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die für [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] verfügbar sind.
+Die folgende Tabelle enthält die primäre interop-Assemblys, die für die verfügbar sind [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 
 |Office-Anwendung oder Office-Komponente|Name der primären Interop-Assembly|
 |-------------------------------------|-----------------------------------|
 |Microsoft Access 14.0-Objektbibliothek<br /><br /> Microsoft Access 15,0-Objektbibliothek|Microsoft.Office.Interop.Access.dll|
-|Objektbibliothek des Microsoft Office 14.0 Access-Datenbankmoduls<br /><br /> Objektbibliothek des Microsoft Office 15,0 Access-Datenbankmoduls|Microsoft.Office.Interop.Access.Dao.dll|
+|Objektbibliothek der Microsoft Office 14.0 Access-Datenbank-Engine<br /><br /> Objektbibliothek der Microsoft Office 15.0 Access-Datenbank-Engine|Microsoft.Office.Interop.Access.Dao.dll|
 |Microsoft Excel 14.0-Objektbibliothek<br /><br /> Microsoft Excel 15,0-Objektbibliothek|[Microsoft.Office.Interop.Excel.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
 |Microsoft Graph 14.0-Objektbibliothek(wird von PowerPoint, Access und Word für Diagramme verwendet)<br /><br /> Microsoft Graph 15.0-Objektbibliothek|Microsoft.Office.Interop.Graph.dll|
 |Microsoft InfoPath 2.0-Typbibliothek (nur für InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
@@ -110,7 +110,7 @@ In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die
 |Microsoft Publisher 14.0-Objektbibliothek<br /><br /> Microsoft Publisher 15,0-Objektbibliothek|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0-Webobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0-Seitenobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft Smart Tags 2.0-Typbibliothek **beachten:**  Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] veraltet.|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft Smart Tags 2.0-Typbibliothek **beachten:**  Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.|Microsoft.Office.Interop.SmartTag.dll|
 |Microsoft Visio 14.0-Typbibliothek<br /><br /> Microsoft Visio 15,0-Typbibliothek|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0-Typbibliothek für "Speichern als Web"<br /><br /> Microsoft Visio 15,0-Typbibliothek für "Speichern als Web"|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0-Typbibliothek für Zeichnungssteuerelemente<br /><br /> Microsoft Visio 15,0-Typbibliothek für Zeichnungssteuerelemente|Microsoft.Office.Interop.VisOcx.dll|
@@ -121,7 +121,7 @@ In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die
 
 Wenn Sie die Office-PIAs im globalen Assemblycache installieren und registrieren (entweder mit Office oder durch das Installieren des verteilbaren Pakets für die PIAs), werden die Bindungsumleitungsassemblys ebenfalls nur im globalen Assemblycache installiert. Diese Assemblys tragen dazu bei, die sicherstellen, dass die richtige Version der primären interop-Assemblys zur Laufzeit geladen wird.
 
-Wenn eine Projektmappe, die auf eine Assembly für [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] verweist, beispielsweise auf einem Computer mit der [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]-Version derselben primären Interop-Assembly ausgeführt wird, weist die Bindungsumleitungsassembly die [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]-Laufzeit an, die [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]-Version der primären Interop-Assembly zu laden.
+Wenn eine Projektmappe, die auf eine Assembly für [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] verweist, beispielsweise auf einem Computer mit der [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] -Version derselben primären Interop-Assembly ausgeführt wird, weist die Bindungsumleitungsassembly die [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] -Laufzeit an, die [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] -Version der primären Interop-Assembly zu laden.
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der bindungsumleitung](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 

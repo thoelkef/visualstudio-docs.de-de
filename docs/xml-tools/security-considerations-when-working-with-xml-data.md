@@ -8,28 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcf5769c9ca59a0772530e3551517d14c1ec0c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af91f02b6cc34fcc05b83bb6c09cfd37e8a18ef
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955842"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525465"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten
 
-In diesem Thema werden Sicherheitsaspekte erörtert, mit denen Sie beim Arbeiten mit dem XML-Editor oder dem XSLT-Debugger vertraut sein müssen.
+Dieses Thema beschreibt die Sicherheitsprobleme, denen Sie beim Arbeiten mit XML-Editor oder dem XSLT-Debugger kennen müssen.
 
-## <a name="xml-editor"></a>XML-Editor
+## <a name="xml-editor"></a>XML-editor
 
- Der XML-Editor basiert auf dem Texteditor von Visual Studio. Er beruht auf der <xref:System.Xml>-Klasse und der <xref:System.Xml.Xsl>-Klasse zum Behandeln vieler XML-Prozesse.
+ Der XML-Editor basiert auf der Visual Studio-Text-Editor. Er beruht auf der <xref:System.Xml>-Klasse und der <xref:System.Xml.Xsl>-Klasse zum Behandeln vieler XML-Prozesse.
 
 -   XSLT-Transformationen werden in einer neuen Anwendungsdomäne ausgeführt. Die XSLT-Transformationen sind *Sandbox*; also wird die Sicherheitsrichtlinie für Codezugriff Ihres Computers verwendet, um zu bestimmen, die eingeschränkten Berechtigungen, die basierend auf, in dem das XSLT-Stylesheet befindet. Stylesheets von einem Internetspeicherort weisen die am stärksten eingeschränkten Berechtigungen auf, während auf die Festplatte kopierte Stylesheets mit voller Vertrauenswürdigkeit ausgeführt werden.
 
 -   Mithilfe der <xref:System.Xml.Xsl.XslCompiledTransform>-Klasse wird XSLT in die Microsoft Intermediate Language (MSIL) kompiliert, um eine höhere Leistung bei der Ausführung zu erzielen.
 
--   Schemata, die auf einen externen Speicherort in der Katalogdatei zeigen, werden beim ersten Laden des XML-Editors automatisch heruntergeladen. Mithilfe der <xref:System.Xml.Schema.XmlSchemaSet>-Klasse werden Schemata kompiliert. Die mit dem XML-Editor gelieferte Katalogdatei weist keine Links zu externen Schemata auf. Bevor der XML-Editor die Schemadatei herunterlädt, muss der Benutzer explizit einen Verweis auf das externe Schema hinzufügen. HTTP-Downloads kann deaktiviert werden, über die **verschiedene Extras/Optionen** Seite für die XML-Editor.
+-   Schemas, die auf einem externen Speicherort in der Katalogdatei zeigen, werden automatisch heruntergeladen, beim ersten Laden der XML-Editor. Mithilfe der <xref:System.Xml.Schema.XmlSchemaSet>-Klasse werden Schemata kompiliert. Links zu externen Schemata keinen für die Katalogdatei, die im XML-Editor bereitgestellt wird. Der Benutzer hat einen Verweis auf das externe Schema explizit hinzufügen, bevor der XML-Editor die Schemadatei herunterlädt. HTTP-Downloads kann deaktiviert werden, über die **verschiedene Extras/Optionen** Seite für den XML-Editor.
 
--   Der XML-Editor verwendet die <xref:System.Net>-Klassen für Downloads von Schemata.
+-   Der XML-Editor verwendet die <xref:System.Net> Klassen für Downloads von Schemata
 
 ## <a name="xslt-debugger"></a>XSLT-Debugger
 
