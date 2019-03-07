@@ -1,5 +1,5 @@
 ---
-title: IntelliSense-Funktionen des XML-Editors
+title: XML-Editor IntelliSense-Funktionen
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,69 +8,76 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4c2f9f47b8b47f0258a9cb90e8350549d91fe7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938357"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525816"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML-Editor IntelliSense-Funktionen
 
 Der XML-Editor stellt die vollständigen IntelliSense-Funktionen bereit, vergleichbar mit anderen verfügbaren Spracheditoren in Visual Studio. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in einem XSD-Dokument
- Nachdem ein Schema mit dem Dokument zugeordnet ist, erhalten Sie eine Dropdown-Liste von erwarteten Elementen jedes Mal, die Sie eingeben `"<"` oder klicken Sie auf die **Memberliste für Objekt anzeigen** Schaltfläche auf der Symbolleiste des XML-Editors. Informationen zum Zuordnen von Schemas mit XML-Dokumenten, finden Sie unter [XML-dokumentvalidierung](../xml-tools/xml-document-validation.md).
 
- Wenn Sie SPACE in einem Starttag eingeben, erhalten Sie ebenfalls eine Dropdownliste mit allen Attributen, die dem aktuellen Element hinzugefügt werden können.
+Nachdem ein Schema mit dem Dokument zugeordnet ist, erhalten Sie eine Dropdown-Liste von erwarteten Elementen jedes Mal, die Sie eingeben `"<"` oder klicken Sie auf die **Memberliste für Objekt anzeigen** Schaltfläche auf der Symbolleiste des XML-Editors.
 
- Wenn Sie `"="` für einen Attributwert oder das öffnende Anführungszeichen für den Wert eingeben, erhalten Sie ebenfalls eine Liste von möglichen Werten für dieses Attribut. Werte werden nur angegeben, wenn das Schema Enumerationswerte über `xsd:enumeration`-Facets bereitstellt oder das Attribut ein `Boolean`-Typ ist. Eine IntelliSense-Liste von bekannten Sprachcodes wird auch für `xml:lang` und jeden `simpleType` bereitgestellt, der von `xsd:language` abgeleitet ist. Eine IntelliSense-Liste bekannter `targetNamespace`-Werte wird für Namespacedeklarationen bereitgestellt.
+![Schaltfläche "Display Objekt Member List"](media/display-object-member-list-xml.png)
 
- Eine IntelliSense-Liste möglicher Werte wird auch bei Eingabe von `">"` zum Schließen eines Starttags bereitgestellt, wenn es sich bei dem Element um einen `simpleType` handelt. Das Verhalten bei Elementen ähnelt dem im vorherigen Absatz beschriebenen Verhalten für Attribute.
+Informationen zum Zuordnen von Schemas mit XML-Dokumenten, finden Sie unter [XML-dokumentvalidierung](../xml-tools/xml-document-validation.md).
 
- Für diese IntelliSense-Listen werden basierend auf den im zugeordneten Schema gefundenen `xsd:annotation`- und `xsd:documentation`-Informationen auch QuickInfos angezeigt.
+Wenn Sie SPACE in einem Starttag eingeben, erhalten Sie ebenfalls eine Dropdownliste mit allen Attributen, die dem aktuellen Element hinzugefügt werden können.
+
+Wenn Sie `"="` für einen Attributwert oder das öffnende Anführungszeichen für den Wert eingeben, erhalten Sie ebenfalls eine Liste von möglichen Werten für dieses Attribut. Werte werden nur angegeben, wenn das Schema Enumerationswerte über `xsd:enumeration`-Facets bereitstellt oder das Attribut ein `Boolean`-Typ ist. Eine IntelliSense-Liste von bekannten Sprachcodes wird auch für `xml:lang` und jeden `simpleType` bereitgestellt, der von `xsd:language` abgeleitet ist. Eine IntelliSense-Liste bekannter `targetNamespace`-Werte wird für Namespacedeklarationen bereitgestellt.
+
+Eine IntelliSense-Liste möglicher Werte wird auch bei Eingabe von `">"` zum Schließen eines Starttags bereitgestellt, wenn es sich bei dem Element um einen `simpleType` handelt. Das Verhalten bei Elementen ähnelt dem im vorherigen Absatz beschriebenen Verhalten für Attribute.
+
+Für diese IntelliSense-Listen werden basierend auf den im zugeordneten Schema gefundenen `xsd:annotation`- und `xsd:documentation`-Informationen auch QuickInfos angezeigt.
 
 ## <a name="intellisense-in-an-xslt-document"></a>IntelliSense in einem XSLT-Dokument
- Nachdem Sie dem XSLT-Dokument eine benannte Vorlage oder ein Attribut hinzugefügt haben, können Sie mithilfe von IntelliSense Folgendes einfügen:
 
--   Attributsatznamen
+Nachdem Sie dem XSLT-Dokument eine benannte Vorlage oder ein Attribut hinzugefügt haben, können Sie mithilfe von IntelliSense Folgendes einfügen:
 
--   Vorlagenmodi
+- Attributsatznamen
 
--   Vorlagennamen
+- Vorlagenmodi
 
--   Parameternamen für einen angegebenen Modus
+- Vorlagennamen
 
--   Parameternamen für eine angegebene benannte Vorlage
+- Parameternamen für einen angegebenen Modus
+
+- Parameternamen für eine angegebene benannte Vorlage
 
 Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) Thema.
 
 ## <a name="auto-completion"></a>Automatische Vervollständigung
- Durch den XML-Editor wird das Bearbeiten von XML erleichtert, weil die erforderliche XML-Syntax automatisch eingefügt wird. Angenommen, Sie geben folgendes Starttag ein:
 
- `<book>`
+Durch den XML-Editor wird das Bearbeiten von XML erleichtert, weil die erforderliche XML-Syntax automatisch eingefügt wird. Angenommen, Sie geben folgendes Starttag ein:
 
- Der XML-Editor fügt das Endtag ein und platziert den Cursor hinter dem Starttag. Folgendes ist ein Beispiel dafür (die "&#124;" kennzeichnet die Cursorposition):
+`<book>`
 
- `<book>`&#124;`</book>`
+Der XML-Editor fügt das Endtag ein und platziert den Cursor hinter dem Starttag. Folgendes ist ein Beispiel dafür (die "&#124;" kennzeichnet die Cursorposition):
 
- Da die Attributwerte immer in Anführungszeichen eingeschlossen werden müssen, fügt der XML-Editor die Anführungszeichen für Sie ein. Angenommen, Sie geben Folgendes ein:
+`<book>`&#124;`</book>`
 
- `<book title=`
+Da die Attributwerte immer in Anführungszeichen eingeschlossen werden müssen, fügt der XML-Editor die Anführungszeichen für Sie ein. Angenommen, Sie geben Folgendes ein:
 
- Vom XML-Editor werden die Anführungszeichen hinzugefügt, und der Cursor wird zwischen den Anführungszeichen platziert:
+`<book title=`
 
- `<book title="`&#124;`"`
+Vom XML-Editor werden die Anführungszeichen hinzugefügt, und der Cursor wird zwischen den Anführungszeichen platziert:
 
- Ebenso fügt der XML-Editor auch die folgende XML-Syntax automatisch für Sie ein:
+`<book title="`&#124;`"`
 
--   Beenden einer Verarbeitungsanweisung: `?>`
+Ebenso fügt der XML-Editor auch die folgende XML-Syntax automatisch für Sie ein:
 
--   Beenden eines CDATA-Blocks: `]]>`
+- Beenden einer Verarbeitungsanweisung: `?>`
 
--   Beenden eines Kommentars: `-->`
+- Beenden eines CDATA-Blocks: `]]>`
 
--   Beenden einer DTD-Deklaration: `>`
+- Beenden eines Kommentars: `-->`
+
+- Beenden einer DTD-Deklaration: `>`
 
 Der XML-Editor verfügt auch über die Möglichkeit, eine Namespacedeklaration einzufügen Deklaration, wenn Sie wählen Sie einen Namespace qualifiziertes Element oder Attribut aus einer IntelliSense-Liste und den Namespace für dieses Element oder Attribut befindet sich noch nicht im Bereich.
 
@@ -79,28 +86,30 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Überprüfung des Klammergleichgewichts
- Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch die Tastenkombination (**STRG**+**]**) von einer Klammer zur zugehörigen Klammer springen.
 
- Dies wird vom XML-Editor für folgende Elemente ausgeführt:
+Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den Elementen erhalten, die Sie gerade geschlossen haben. Sie können auch die Tastenkombination (**STRG**+**]**) von einer Klammer zur zugehörigen Klammer springen.
 
--   Zusammengehörige Start- und Endtags.
+Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
--   Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.
+- Zusammengehörige Start- und Endtags.
 
--   Anfang und Ende von Kommentaren.
+- Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.
 
--   Anfang und Ende von Verarbeitungsanweisungen.
+- Anfang und Ende von Kommentaren.
 
--   Anfang und Ende von CDATA-Blöcken.
+- Anfang und Ende von Verarbeitungsanweisungen.
 
--   Anfang und Ende von DTD-Deklarationen.
+- Anfang und Ende von CDATA-Blöcken.
 
--   Öffnende und schließende Anführungszeichen für Attribute.
+- Anfang und Ende von DTD-Deklarationen.
+
+- Öffnende und schließende Anführungszeichen für Attribute.
 
 ## <a name="modify-the-intellisense-options"></a>Ändern Sie die IntelliSense-Optionen
- Die IntelliSense-Funktionen und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Sie können jedoch ändern diese durch Ändern Ihrer **Tools** > **Optionen** Einstellungen.
 
- Die **Automatisches Einfügen** Teil der **Sonstiges** -Seite steuert das folgende Verhalten:
+Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Sie können jedoch ändern diese durch Ändern Ihrer **Tools** > **Optionen** Einstellungen.
+
+Die **Automatisches Einfügen** Teil der **Sonstiges** -Seite steuert das folgende Verhalten:
 
 |name|Beschreibung|
 |-|-----------------|
@@ -110,11 +119,11 @@ Wenn Sie z. B. das `e:Book`-Element aus der IntelliSense-Liste auswählen und d
 
 ### <a name="to-change-the-auto-completion-behavior"></a>So ändern Sie das Verhalten bezüglich der automatischen Vervollständigung
 
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
 
-2.  Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.
 
-3.  Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.
+3. Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 

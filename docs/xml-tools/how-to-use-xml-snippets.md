@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913625"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526216"
 ---
 # <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
 
-Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie XML-Ausschnitte aufrufen. Die **Ausschnitt einfügen** Befehl wird den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für den XML-Ausschnitt für den ausgewählten Text. Jeder XML-Ausschnitt verfügt über definierte Ausschnitttypen. Die Ausschnitttypen bestimmen, ob der Ausschnitt mit verfügbar ist. die **Ausschnitt einfügen** Befehl aus, die **Umschließen mit** oder mit beiden Befehlen.
+Sie können XML-Ausschnitte aufrufen, indem Sie die folgenden zwei Befehle im Kontextmenü des XML-Editor verwenden. Die **Ausschnitt einfügen** Befehl wird den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für den XML-Ausschnitt für den ausgewählten Text. Jeder XML-Ausschnitt verfügt über definierte Ausschnitttypen. Die Ausschnitttypen bestimmen, ob der Ausschnitt mit verfügbar ist. die **Ausschnitt einfügen** Befehl aus, die **Umschließen mit** oder mit beiden Befehlen.
 
 Nachdem dem Editor der XML-Ausschnitt hinzugefügt wurde, werden alle editierbaren Felder in den Ausschnitten in gelber Farbe hervorgehoben, und der Cursor wird auf dem ersten editierbaren Feld platziert.
 
@@ -80,7 +80,7 @@ Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Umschlie
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Umschließen mit aus dem Kontextmenü verwenden
 
-1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.
+1. Wählen Sie den Text an, in der XML-Editor umgeben.
 
 2. Mit der rechten Maustaste, und wählen Sie **Umschließen mit**.
 
@@ -90,7 +90,7 @@ Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Umschlie
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Umschließen mit der IntelliSense-Menü verwenden
 
-1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.
+1. Wählen Sie den Text an, in der XML-Editor umgeben.
 
 2. Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Umschließen mit**.
 

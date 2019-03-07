@@ -7,16 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9126b16692e844ca6bb3dcdbd6aad250b1209011
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948159"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526190"
 ---
 # <a name="xml-editor"></a>XML-editor
 
-Der XML-Editor basiert auf der Visual Studio-Text-Editor, und bietet zusätzliche Unterstützung für die XML-Sprachen. Der XML-Editor umfasst die folgenden Funktionen:
+Der XML-Editor in Visual Studio basiert auf den Text-Editor, und bietet zusätzliche Unterstützung für die XML-Sprachen. Wenn Sie eine XML-Datei in Visual Studio öffnen, wird es in der XML-Editor geöffnet.
+
+Der XML-Editor umfasst die folgenden Funktionen:
 
 - Syntaxüberprüfung für XML 1.0
 
@@ -32,13 +34,13 @@ Der XML-Editor basiert auf der Visual Studio-Text-Editor, und bietet zusätzlich
 
 - Konvertierung einer DTD oder eines XDR-Schemas (XML-Data Reduced) in ein XML-Schema.
 
-- Syntaxüberprüfung für XSLT 1.0
+- Syntaxüberprüfung für XSLT
 
 - Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können
 
 - Integration in die [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Dadurch wird eine hierarchische Ansicht von XML-Schemas.
 
-Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*, *XSD*, *.xsl*, und *config*. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch eine beliebige Datei im XML-Editor öffnen, mit der **Öffnen mit** Option und den XML-Editor aus der Liste auswählen.
+Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*, *XSD*, *.xsl*, und *config*. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält.
 
 ## <a name="xslt-intellisense"></a>XSLT-IntelliSense
 
@@ -46,7 +48,7 @@ Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*
 
 ## <a name="xslt-profiler"></a>XSLT-profiler
 
-Die [XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md) erstellt ausführliche XSLT-Leistung, Berichte, mit denen Sie messen, auswerten und leistungsbezogene Probleme im XSLT-Code. Der XSLT-Profiler enthält auch nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen.
+Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) erstellt ausführliche XSLT-Leistung, Berichte, mit denen Sie messen, auswerten und leistungsbezogene Probleme im XSLT-Code. Der XSLT-Profiler enthält auch nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen.
 
 ## <a name="xslt-hierarchy"></a>XSLT-Hierarchie
 
@@ -54,6 +56,8 @@ Die [XSLT-hierarchietool](../xml-tools/walkthrough-using-xslt-hierarchy.md) kön
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Features des Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md) enthält Informationen zu den Text-Editor.
-- [Referenzen zu XML-Standards](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) enthält Informationen zu XML-Technologien, einschließlich XML, Dokumenttypdefinition (DTD), XML Schema Definition Language (XSD) und XSLT.
+- [XML-Editor-Optionen - Formatierung](../ide/reference/options-text-editor-xml-formatting.md)
+- [XML-Editor-Optionen: sonstige](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Referenzen zu XML-standards](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

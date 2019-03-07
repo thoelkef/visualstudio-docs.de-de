@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912884"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525117"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
@@ -45,7 +45,7 @@ Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, w
 
 2.  In der [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), mit der rechten Maustaste die `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**.
 
-     Wenn Sie diese Option, die "PurchaseOrder" auswählen. *Xml* -Datei mit dem folgenden Beispiel-XML-Inhalt generiert und im XML-Editor geöffnet:
+     Wenn Sie diese Option, die "PurchaseOrder" auswählen. *Xml* -Datei mit dem folgenden Beispiel-XML-Inhalt generiert und in der XML-Editor geöffnet:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, w
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>Siehe auch
-
-- [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md)

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931753"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525452"
 ---
 # <a name="how-to-edit-xml-files"></a>Vorgehensweise: Bearbeiten von XML-Dateien
 
-Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenständige XML-Datei oder für eine einem Visual Studio-Projekt zugeordnete Datei verwendet werden. Der XML-Editor ist den folgenden Dateierweiterungen zugeordnet: *config*, *.dtd*, *XML*, *XSD*, *.xdr*, *.xsl*, *.xslt*, und *.vssettings*. Dem XML-Editor wird auch jeder andere Dateityp mit XML- bzw. DTD-Inhalten zugeordnet, für den kein bestimmter Editor registriert ist.
+Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenständige XML-Datei oder für eine einem Visual Studio-Projekt zugeordnete Datei verwendet werden. Der XML-Editor ist den folgenden Dateierweiterungen zugeordnet: *config*, *.dtd*, *XML*, *XSD*, *.xdr*, *.xsl*, *.xslt*, und *.vssettings*. Der XML-Editor ist auch jeder andere Dateityp, besitzt kein bestimmten Editor registriert und XML- bzw. DTD-Inhalt enthält, zugeordnet.
 
 > [!NOTE]
 > XHTML-Dokumente werden vom HTML-Editor behandelt.
@@ -64,10 +64,10 @@ Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenstä
 
 3.  Fügen Sie dem Projekt XML-Dateien hinzu.
 
-     Der XML-Editor sucht die dem Projekt hinzugefügten Schemata und verwendet sie für die Validierung und für IntelliSense in allen XML-, Schema- oder XSLT-Dateien, die Sie bearbeiten, während das Projekt geöffnet ist.
+     Der XML-Editor sucht die Schemas, die Sie diesem Projekt hinzu und verwendet sie für die Validierung und IntelliSense-Funktionen in jeder XML-, Schema oder XSLT-Dateien, die Sie bearbeiten, während das Projekt geöffnet ist.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Editor](../xml-tools/xml-editor.md)
+- [XML-editor](../xml-tools/xml-editor.md)
 - [XML-Dokumenteigenschaften, Eigenschaftenfenster](../xml-tools/xml-document-properties-properties-window.md)
 - [Vorgehensweise: Erstellen Sie ein XML-Schema aus einem XML-Dokument](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

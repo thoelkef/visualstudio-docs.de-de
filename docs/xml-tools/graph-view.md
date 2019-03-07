@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952644"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526645"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -27,7 +27,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Entwurfsoberfläche der Diagrammansicht zeigt den Inhalt der [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md). Wenn der Arbeitsbereich globale Knoten aus dem Schemaset enthält, werden die Knoten auf der Entwurfsoberfläche der Diagrammansicht angezeigt, und zwischen Knoten mit Beziehungen werden Pfeile gezeichnet.
 
- Per Doppelklick auf einen Knoten in der Diagrammansicht öffnen Sie den XML-Editor.
+ Durch Doppelklicken auf einen Knoten in der Diagrammansicht wird angezeigt, wenn XML-Editor.
 
  Zum ausgewählte Knoten aus dem Arbeitsbereich löschen, verwenden Sie die XSD-Designer-Symbolleiste oder die **löschen** Schlüssel.
 
@@ -55,7 +55,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Diagramm als Bild exportieren**|Speichert die Entwurfsoberfläche in einer XPS-Datei.|
 |**Wählen Sie alle**|Wählt alle Knoten auf der Entwurfsoberfläche aus.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor aktiviert ist.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor ausgewählt ist.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Elemente die folgenden Optionen:
@@ -142,7 +142,7 @@ Der Zoomschieberegler ist nicht transparent, wenn Sie es auswählen, zeigen Sie 
 
  Sie können hin und her zwischen der Diagrammansicht und der XML-Editor wechseln, indem Sie auf einen Knoten klicken und im Kontextmenü (Rechtsklick) "Anzeigecode".
 
- Wenn Sie im XML-Editor Änderungen am Schemaset vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
+ Wenn Sie Änderungen am Schemaset im XML-Editor vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert werden. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 
