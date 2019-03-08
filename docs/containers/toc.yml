@@ -8,6 +8,8 @@ items:
     href: docker-tools.md
   - name: 'Tutorial: Multicontainer-App mit Docker Compose'
     href: tutorial-multicontainer.md
+  - name: 'Tutorial: Kubernetes in Visual Studio'
+    href: tutorial-kubernetes-tools.md
   - name: Debuggen von Apps in einem lokalen Docker-Container
     href: vs-azure-tools-docker-edit-and-refresh.md
   - name: Bereitstellen eines ASP.NET-Containers an eine Containerregistrierung mithilfe von Visual Studio
@@ -17,9 +19,9 @@ items:
   - name: Problembehandlung bei der Entwicklung von Visual Studio 2017 mit Docker
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 6b2ede8520ff6919c5bbd370e320bdb661fa487e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223337"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525906"
