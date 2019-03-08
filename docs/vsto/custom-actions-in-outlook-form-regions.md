@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638035"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567182"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formularbereichen
   Aktionen angezeigt, Schaltflächen, mit die Benutzer mit einem Microsoft Office Outlook-Element reagieren können. Klicken Sie beispielsweise, um auf ein e-Mail-Element reagieren, Benutzer auf die **Antwort**, **allen Antworten**, oder **Vorwärts** Aktionsschaltflächen. Jede dieser Aktionen erstellt ein neues e-Mail-Element und füllt die Felder des Elements mit den Informationen aus dem ursprünglichen Element.
@@ -28,7 +28,7 @@ ms.locfileid: "56638035"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich
- Verwenden Sie zum Hinzufügen einer benutzerdefinierten Aktion in einem Formularbereich der **benutzerdefinierte Aktionen** Dialogfeld. Öffnen Sie die **benutzerdefinierte Aktionen** im Dialogfeld **Projektmappen-Explorer** durch Erweitern der **Manifest** Knoten auswählen der **CustomActions**-Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET mobile-Designer-Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")).
+ Verwenden Sie zum Hinzufügen einer benutzerdefinierten Aktion in einem Formularbereich der **benutzerdefinierte Aktionen** Dialogfeld. Öffnen Sie die **benutzerdefinierte Aktionen** Dialogfeld durch Auswählen der Formularbereich in **Projektmappen-Explorer**, erweiterbare der **Manifest** Knoten in der **Eigenschaften Fenster**, wählen die **CustomActions** -Eigenschaft, und klicken auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET mobile-Designer-Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
 
  Können Sie die **benutzerdefinierte Aktionen** Geben Sie im Dialogfeld eine *Formular*. Ein Zielformular ist das Formular, das angezeigt wird, wenn der Benutzer die benutzerdefinierte Aktion ausführt.
 

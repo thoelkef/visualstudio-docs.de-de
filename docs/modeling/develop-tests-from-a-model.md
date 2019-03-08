@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940281"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567314"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Hierdurch wird sichergestellt, dass Sie die für die Benutzer und anderen Projektbeteiligten wichtigen Anforderungen testen, und es hilft Ihnen, die Tests schnell zu aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.
@@ -57,9 +57,9 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall
 
-1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
+1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren.
 
-    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
+    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.
 
@@ -145,9 +145,9 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>So verknüpfen Sie Tests mit einem Modellelement oder einer Beziehung
 
-1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren.
+1. Erstellen Sie in [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren.
 
-    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/overview?view=vsts).
+    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Eine User Story, eine Anforderung oder Anwendungsfall-Arbeitsaufgabe, abhängig von der Prozessvorlage möglicherweise, die Ihr Projekt mit Team Foundation verwendet. Weitere Informationen finden Sie unter [zur Agile-Tools und Agile-Projektmanagement](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.
 

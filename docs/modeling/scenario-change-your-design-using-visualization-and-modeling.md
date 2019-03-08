@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951604"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567369"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 
@@ -214,7 +214,7 @@ Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitselemente, um die Zeit
 
 Thema
 
-- [Informationen zu Agile-Tools und Agile-projektverwaltung](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Informationen zu Agile-Tools und Agile-projektverwaltung](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Diagramme, Dashboards und Widgets (Azure DevOps-Services)](/azure/devops/report/dashboards/overview?view=vsts)
 
