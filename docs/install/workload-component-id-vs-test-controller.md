@@ -1,61 +1,46 @@
 ---
-title: Workload- und Komponenten-IDs in Visual Studio Test Controller 2017
+title: Workload- und Komponenten-IDs in Visual Studio Test Controller
 titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um automatisierte Tests auf mehrere Computer zu verteilen
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-ms.openlocfilehash: 0af631c4422a4e139cc799a8f4489e0d71e1e7b5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 546ae0fe1660c6b04198f2b562d4358cebbdb192
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840548"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324103"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017-Komponentenverzeichnis
+# <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller: Komponentenverzeichnis
 
-In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren, oder die Sie als Abhängigkeit in einem VSIX-Manifest angeben können. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Beachten Sie zudem Folgendes im Hinblick auf die Seite:
+::: moniker range="vs-2017"
 
-* Für jede Arbeitsauslastung gibt es einen eigenen Abschnitt, gefolgt von der Arbeitsauslastungs-ID und einer Tabelle der Komponenten, die für die Arbeitsauslastung zur Verfügung stehen.
-* Die **erforderlichen** Komponenten werden standardmäßig bei der Installation der Arbeitsauslastung installiert.
-* Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
-* Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Wenn Sie Abhängigkeiten im VSIX-Manifest festlegen, müssen Sie nur Komponenten-IDs angeben. Verwenden Sie die Tabellen auf dieser Seite, um die minimalen Komponentenabhängigkeiten zu bestimmen. In einigen Fällen könnte dies bedeuten, dass Sie nur eine Komponente einer Arbeitsauslastung angeben. In anderen Fällen könnte dies bedeuten, dass Sie mehrere Komponenten einer einzelnen Arbeitsauslastung oder mehrere Komponenten von mehreren Arbeitsauslastungen angeben. Weitere Informationen finden Sie unter [How to: Migrate Extensibility Projects to Visual Studio 2017 (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
+::: moniker-end
 
-## <a name="test-controller"></a>Testcontroller
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Beschreibung:** Verteilt automatisierte Tests auf mehrere Computer.
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
-
-Komponenten-ID | name | Version | Abhängigkeitstyp
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller-Hauptfunktionen | 15.6.27309.0 | Erforderlich
-
-## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
-
-Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
-
-Komponenten-ID | name | Version
---- | --- | ---
-n/v | n/v | n/v
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

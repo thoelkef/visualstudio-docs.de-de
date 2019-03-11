@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952917"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007175"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Gefilterte Projektmappen in Visual Studio
 
-**Neues in der Vorschauversion 1 von Visual Studio 2019**
+**Neu in Visual Studio 2019**
 
-Große Entwicklungsteams arbeiten häufig mit einer einzigen großen Projektmappe, die viele Projekten enthält. Einzelne Entwickler arbeiten jedoch in der Regel mit einer kleinen Teilmenge dieser Projekte. Zur Leistungsverbesserung beim Öffnen großer Projektmappen wird in der Vorschauversion 1 von Visual Studio 2019 nun die *Projektmappenfilterung* eingeführt. Mit der Projektmappenfilterung können Sie eine Projektmappe öffnen, in der nur ausgewählte Projekte geladen sind. Durch das Laden einer Teilmenge von Projekten in einer Projektmappe wird die Zeit zum Laden und Erstellen einer Projektmappe sowie für den Testlauf einer Projektmappe verringert. Zudem wird eine zielgerichtetere Überprüfung ermöglicht.
+Große Entwicklungsteams arbeiten häufig mit einer einzigen großen Projektmappe, die viele Projekten enthält. Einzelne Entwickler arbeiten jedoch in der Regel mit einer kleinen Teilmenge dieser Projekte. Zur Leistungsverbesserung beim Öffnen großer Projektmappen wird in Visual Studio 2019 nun die *Projektmappenfilterung* eingeführt. Mit der Projektmappenfilterung können Sie eine Projektmappe öffnen, in der nur ausgewählte Projekte geladen sind. Durch das Laden einer Teilmenge von Projekten in einer Projektmappe wird die Zeit zum Laden und Erstellen einer Projektmappe sowie für den Testlauf einer Projektmappe verringert. Zudem wird eine zielgerichtetere Überprüfung ermöglicht.
 
 Die folgenden Features sind verfügbar:
 

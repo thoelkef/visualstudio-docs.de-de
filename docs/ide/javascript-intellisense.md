@@ -19,31 +19,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9eeb443684e769a119ae2e319351abc5a72b1417
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318455"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223688"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-Visual Studio 2017 bietet eine leistungsfähige direkte JavaScript-Bearbeitung. Unterstützt von einem TypeScript-basierten Sprachdienst, bietet Visual Studio umfangreichere IntelliSense, Support für moderne JavaScript-Funktionen und verbesserte Produktivitätsfeatures wie die „Gehe zu Definition“, die Umgestaltung und vieles mehr.
+Visual Studio bietet eine leistungsfähige, sofort einsatzfähige JavaScript-Bearbeitung. Unterstützt von einem TypeScript-basierten Sprachdienst, bietet Visual Studio umfangreichere IntelliSense, Support für moderne JavaScript-Funktionen und verbesserte Produktivitätsfeatures wie die „Gehe zu Definition“, die Umgestaltung und vieles mehr.
 
 > [!NOTE]
-> Der JavaScript-Sprachdienst in Visual Studio 2017 verwendet eine neue Engine für den Sprachdienst mit dem Namen „Salsa“. Details dazu finden Sie in diesem Artikel und im folgenden [Blogbeitrag](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Der neue Bearbeitungsvorgang gilt weitestgehend auch für Visual Studio Code. Finden Sie unter [VS Code docs (VS Code Dokumentation)](https://code.visualstudio.com/docs/languages/javascript) weitere Informationen.
+> Ab Visual Studio 2017 verwendet der JavaScript-Sprachdienst eine neue Engine für den Sprachdienst mit dem Namen „Salsa“. Details dazu finden Sie in diesem Artikel und im folgenden [Blogbeitrag](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Der neue Bearbeitungsvorgang gilt weitestgehend auch für Visual Studio Code. Finden Sie unter [VS Code docs (VS Code Dokumentation)](https://code.visualstudio.com/docs/languages/javascript) weitere Informationen.
 
 Weitere Informationen zur allgemeinen IntelliSense-Funktionalität von Visual Studio finden Sie unter [Using IntelliSense (Verwenden von IntelliSense)](../ide/using-intellisense.md).
 
 ## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Neues im JavaScript-Sprachdienst in Visual Studio 2017
 
-Ab Visual Studio 2017 zeigt JavaScript IntelliSense eine Vielzahl weiterer Informationen zu Parameter- und Memberlisten an.
-Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen.
+Ab Visual Studio 2017 zeigt JavaScript IntelliSense eine Vielzahl weiterer Informationen zu Parameter- und Memberlisten an. Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen.
+
 TypeScript verwendet mehrere Quellen, um diese Informationen zu erstellen:
 
 - [IntelliSense basierend auf dem Typrückschluss](#TypeInference)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919715"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223740"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
 
@@ -26,7 +26,7 @@ Sie können Klassendiagramme nicht aus Projekten erstellen, deren Code in mehrer
 
 ## <a name="install-the-class-designer-component"></a>Installieren der Klassen-Designer-Komponente
 
-Wenn Sie Visual Studio 2017 ausführen und die Komponente **Klassen-Designer** nicht installiert haben, befolgen Sie die nachstehenden Schritte, um sie zu installieren.
+Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen Sie die nachstehenden Schritte, um sie zu installieren.
 
 1. Öffnen Sie den **Visual Studio-Installer** über das Windows-Startmenü der durch Auswahl von **Extras** > **Get Tools and Features** (Tools und Features abrufen) über die Menüleiste in Visual Studio.
 
@@ -59,7 +59,7 @@ Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.
 
 Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü der Klassendatei (durch Rechtsklick), und klicken Sie anschließend auf **Klassendiagramm anzeigen**.
 
-- oder -
+- oder - 
 
 Öffnen Sie in **Klassenansicht** das Kontextmenü für den Namespace oder Typ, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.
 

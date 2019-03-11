@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155486"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323250"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Installieren von Python-Unterstützung für Visual Studio unter Windows
 
@@ -47,7 +47,17 @@ Wenn die Python-Unterstützung nach Ausführung der Installationsschritte schnel
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-workload.png)
 
-    Optional: Wenn Sie mit Data Science arbeiten, verwenden Sie ggf. die Workload **Data Science und analytische Anwendungen**. Diese Workload enthält Unterstützung für Python und R- und F#-Sprachen. Weitere Informationen finden Sie unter [Data science and analytical applications workload (Workload für Data Science und analytische Anwendungen)](../rtvs/data-science-and-analytical-applications-workload.md).
+   ::: moniker range="vs-2017"
+
+    Optional: Wenn Sie mit Data Science arbeiten, verwenden Sie ggf. die Workload **Data Science und analytische Anwendungen**. Diese Workload enthält Support für Python und R- und F#-Sprachen. Weitere Informationen finden Sie unter [Data science and analytical applications workload (Workload für Data Science und analytische Anwendungen)](data-science-and-analytical-applications-workload.md).
+    
+    ::: moniker-end
+    
+   ::: moniker range=">=vs-2019"
+
+    Optional: Wenn Sie mit Data Science arbeiten, verwenden Sie ggf. die Workload **Data Science und analytische Anwendungen**. Diese Workload enthält Support für Python und F#-Sprachen. Weitere Informationen finden Sie unter [Data science and analytical applications workload (Workload für Data Science und analytische Anwendungen)](data-science-and-analytical-applications-workload.md).
+    
+    ::: moniker-end
 
     > [!Note]
     > Die Python- und Data Science-Workloads sind nur für Visual Studio 2017, Version 15.2 und höher verfügbar.

@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450255"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223545"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Neues in der Vorschauversion von Visual Studio 2019
+# <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Aktualisiert für das [Release der Vorschauversion 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Update für den [Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Vorschauversion herunterladen](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[RC herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-Die Vorschauversion von Visual Studio 2019 enthält viele allgemeine Verbesserungen und neue Features, die Entwicklerproduktivität und Zusammenarbeit im Team optimieren. Egal, ob Sie Visual Studio zum ersten Mal verwenden oder schon seit Jahren: Sie können die Features für alle Aspekte des Entwicklungslebenszyklus nutzen &mdash; von der vereinfachten Projekterstellung und der Verwaltung der Codeintegrität bis hin zu kollaborativen Team- und Open-Source-Workflows.<br/><br/>
+Visual Studio 2019 enthält viele allgemeine Verbesserungen und neue Features, die Entwicklerproduktivität und Zusammenarbeit im Team optimieren. Egal, ob Sie Visual Studio zum ersten Mal verwenden oder schon seit Jahren: Sie können die Features für alle Aspekte des Entwicklungslebenszyklus nutzen &mdash; von der vereinfachten Projekterstellung und der Verwaltung der Codeintegrität bis hin zu kollaborativen Team- und Open-Source-Workflows.<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Im Folgenden finden Sie eine allgemeine Zusammenfassung der Funktionen von Visua
 * **[Ständige Innovation](#continuous-innovation)**. Code mit intelligenter, cloudbasierter Unterstützung.
 
 > [!NOTE]
-> Eine vollständige Liste der neuen Features und Funktionen in der Vorschauversion von Visual Studio 2019 finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Eine vollständige Liste der neuen Features und Funktionen in Visual Studio 2019 finden Sie in den [RC release notes (RC-Versionshinweise)](/visualstudio/releases/2019/release-notes/) und in den [Preview 4 release notes (Versionshinweise zur Vorschauversion 4)](/visualstudio/releases/2019/release-notes-preview/). Weitere Informationen über diese beiden aktuellen Releases finden Sie im Blogbeitrag [Visual Studio 2019 Release Candidate now available (Visual Studio 2019-Release Candidate jetzt verfügbar)](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/).
 
 ## <a name="personal-and-team-productivity"></a>Persönliche Produktivität und Teamproduktivität
 
@@ -75,7 +75,7 @@ Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorre
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>Suche in einem Überwachungsfenster und Formatieren von Überwachungswerten
 
-Sie haben sicher schon mal im Überwachungsfenster unter einer Reihe von Werten nach einer Zeichenfolge gesucht. In der Vorschauversion von Visual Studio 2019 haben wir die Suche in den Fenstern „Überwachung“, „Lokal“ und „Auto“ hinzugefügt, damit Sie die Objekte und Werte, nach denen Sie suchen, besser finden können.
+Sie haben sicher schon mal im Überwachungsfenster unter einer Reihe von Werten nach einer Zeichenfolge gesucht. In Visual Studio 2019 haben wir die Suche in den Fenstern „Überwachung“, „Lokal“ und „Auto“ hinzugefügt, damit Sie die Objekte und Werte, nach denen Sie suchen, besser finden können.
 
 Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, „Lokal“ und „Auto“ angezeigt wird.  Doppelklicken Sie in einem Fenster auf eines der Elemente, und fügen Sie ein Komma („,“) hinzu, um auf die Dropdown-Liste der möglichen Formatbezeichner Zugriff zu haben, von denen jeder eine Beschreibung des erwarteten Ergebnisses enthält.
 
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019:
 
 [Visual Studio Live Share:](https://visualstudio.microsoft.com/services/live-share/) ist ein Entwicklerdienst, mit dem Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.
 
-In der Vorschauversion von Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
+In Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
 
 ![Eine animierte GIF-Datei, die das Feature Live Share für die Zusammenarbeit in Visual Studio 2019 anzeigt](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Visual Studio Live Share for re
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Verwalten von Pull Requests (PRs) über die IDE
 
-Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit der Vorschauversion von Visual Studio 2019 herunterladen können. Mit dieser neuen Erweiterung können Sie Pull Requests Ihres Teams überprüfen, ausführen und sogar debuggen, ohne die Visual Studio IDE [(Integrated Development Environment, integrierte Entwicklungsumgebung)](../get-started/visual-studio-ide.md) verlassen zu müssen. Aktuell wird Code in Azure Repos unterstützt. Es wird jedoch eine Erweiterung auf die Unterstützung von GitHub durchgeführt. Zudem wird die Benutzerfreundlichkeit insgesamt verbessert.
+Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit Visual Studio 2019 herunterladen können. Mit dieser neuen Erweiterung können Sie Pull Requests Ihres Teams überprüfen, ausführen und sogar debuggen, ohne die Visual Studio IDE [(Integrated Development Environment, integrierte Entwicklungsumgebung)](../get-started/visual-studio-ide.md) verlassen zu müssen. Aktuell wird Code in Azure Repos unterstützt. Es wird jedoch eine Erweiterung auf die Unterstützung von GitHub durchgeführt. Zudem wird die Benutzerfreundlichkeit insgesamt verbessert.
 
 Als erste Schritte laden Sie die [Pull Requests für Visual Studio](https://aka.ms/pr4vs)-Erweiterung aus dem Visual Studio Marketplace herunter.
 
@@ -110,7 +110,7 @@ Die Vorschauversion von Visual Studio 2019 unterstützt die Erstellung von [.NE
 Weitere Informationen finden Sie auf den folgenden Seiten:
 
 * Anmerkungen zu den Versionen [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) und [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)
-* Blogbeiträge zur [Ankündigung von .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) und [Ankündigung von .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)
+* Blogbeiträge zur [Ankündigung von .NET Core 3 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) und [Ankündigung von .NET Core 3 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 
 ## <a name="continuous-innovation"></a>Ständige Innovation
 
@@ -118,7 +118,7 @@ Weitere Informationen finden Sie auf den folgenden Seiten:
 
 Wenn Sie Monitore verwenden, die mit unterschiedlichen Anzeigeskalierungsfaktoren konfiguriert sind, oder eine Remoteverbindung mit einem Computer herstellen, bei dem die Anzeigeskalierungsfaktoren von denen auf Ihrem Hauptgerät abweichen, werden Sie vielleicht feststellen, dass Visual Studio unscharf aussieht oder bei der falschen Skalierung gerendert wird.
 
-Mit dem Release von Visual Studio 2019 Preview werden die ersten Schritte unternommen, mit denen Visual Studio zu einer PMA-fähigen Anwendung wird. Es wird die Grundlage dafür geschaffen, dass Visual Studio unabhängig von den verwendeten Anzeigeskalierungsfaktoren korrekt gerendert wird.
+Mit dem Release von Visual Studio 2019 werden die ersten Schritte unternommen, mit denen Visual Studio zu einer PMA-fähigen (per-monitor aware) Anwendung wird. Es wird die Grundlage dafür geschaffen, dass Visual Studio unabhängig von den verwendeten Anzeigeskalierungsfaktoren korrekt gerendert wird.
 
    ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
+* [Neuigkeiten im Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect(); 2018 conference (Microsoft Connect(); 2018-Konferenz)](https://www.microsoft.com/connectevent)
 * [Neuerungen in Visual Studio 2017](whats-new-visual-studio-2017.md)

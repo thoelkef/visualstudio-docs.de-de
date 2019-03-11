@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796646"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222518"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -26,7 +26,17 @@ Arbeiten Sie sich durch diesen Schnellstart, um mit den vielen Tools und Dialogf
 
 Sie müssen sich nicht mit C++ auskennen, um diesen Schnellstart durchzuführen, aber Sie sollten grundlegende Programmier- und Debuggingkonzepte kennen. Die Visual Studio-Dokumentation bringt Ihnen nicht bei, wie man mit C++ programmiert. Nützliche Informationen über Lernressourcen zu C++ finden Sie unter [Erste Schritte](https://isocpp.org/get-started) auf der Website von ISO C++.
 
-Um diesen Schritten folgen zu können, benötigen Sie Visual Studio 2017 Version 15.3 oder höher, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+Um diese Schritte ausführen zu können, benötigen Sie Visual Studio 2017, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Um diese Schritte ausführen zu können, benötigen Sie Visual Studio 2019, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Erstellen einer Konsolenanwendung
 

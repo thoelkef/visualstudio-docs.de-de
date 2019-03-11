@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923369"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223129"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -38,11 +38,11 @@ Codeformateinstellungen für .NET können auch mithilfe einer [EditorConfig](../
 
 ## <a name="format-document-command"></a>Befehl „Dokument formatieren“
 
-In Visual Studio 2017 Version 15.8 und höher können Sie den Befehl **Dokument formatieren** konfigurieren (**Bearbeiten** > **Erweitert** > **Dokument formatieren**), um in einer Datei zusätzliche Codebereinigung anzuwenden, wie z.B. das Entfernen und Sortieren von Using-Direktiven oder das Anwenden von Codeformateinstellungen. Sie können festlegen, welche Einstellungen von **Dokument formatieren** auf die Seite [Formatierungsoptionen](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+Sie können den Befehl **Dokument formatieren** konfigurieren (**Bearbeiten** > **Erweitert** > **Dokument formatieren**), um in einer Datei zusätzliche Codebereinigung anzuwenden, wie z.B. das Entfernen und Sortieren von Using-Direktiven oder das Anwenden von Codeformateinstellungen. Sie können festlegen, welche Einstellungen von **Dokument formatieren** auf die Seite [Formatierungsoptionen](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
 
 Bei der Codebereinigung werden die in einer *.editorconfig*-Datei konfigurierten Einstellungen beachtet. Wenn die Regel oder die Datei fehlen, werden die Einstellungen respektiert, die in **Tools** > **Optionen** > **Text-Editor** > **C#** > [**Codeformat** oder **Formatierung**] festgelegt sind.
 
-Beim ersten Auslösen des Befehls **Dokument formatieren** in Visual Studio 2017 werden Sie über eine gelbe Infoleiste aufgefordert, Ihre Codebereinigungseinstellungen zu konfigurieren.
+Beim ersten Auslösen des Befehls **Dokument formatieren** in Visual Studio werden Sie über eine gelbe Infoleiste aufgefordert, Ihre Codebereinigungseinstellungen zu konfigurieren.
 
 > [!TIP]
 > Regeln, die in einer *.editorconfig*-Datei als **Kein** konfiguriert sind, nehmen nicht an der Codebereinigung teil, können aber einzeln über das Menü **Schnellaktionen und Refactorings** angewendet werden.

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926371"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323866"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
@@ -126,7 +126,19 @@ Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
 Das Fenster **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
-Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* gespeichert.
+Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen.
+
+::: moniker range="vs-2017"
+
+Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* gespeichert.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* gespeichert.
+
+::: moniker-end
 
 Der linke Bereich des **Objektbrowsers** zeigt Assemblys. Sie können die Assemblys erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.
 

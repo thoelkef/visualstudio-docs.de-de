@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679124"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428777"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
@@ -35,11 +35,20 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
+::: moniker range=">=vs-2019"
+
+* Sie müssen Visual Studio 2019 und die Workload für die **Desktopentwicklung mit C++** installiert haben.
+
+::: moniker-end
+::: moniker range="vs-2017"
+
 * Sie müssen Visual Studio 2017 und die **Workload für die Desktopentwicklung mit C++** installiert haben.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
+::: moniker-end
 
-    Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
+
+Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -218,7 +227,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
      ![Verwenden der Funktion „Ausführung bis Klick“](../debugger/media/get-started-run-to-click-cpp.png "Ausführung bis Klick")
 
    > [!NOTE]
-   > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
+   > Die Schaltfläche für die Aktion **Ausführung bis Klick** ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
 
 2. Klicken Sie auf die Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 

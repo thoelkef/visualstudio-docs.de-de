@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920043"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428660"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
 In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Startfenster
+
+Das erste, was Sie nach dem Start von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Schließen oder Überprüfen von Code, zum Öffnen von bestehenden Projekten oder Projektmappen, zum Erstellen eines neuen Projekts, oder einfach zum Öffnen eines Ordners, der Codedateien enthält.
+
+[![](media/vs-2019/start-window.png "Das Startfenster in Visual Studio 2019")](media/vs-2019/start-window.png)
+
+Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
+
+Wenn Sie mit einer nicht auf MSBuild basierenden Codebasis arbeiten, verwenden Sie die Option **Lokalen Ordner öffnen**, um Ihren Code in Visual Studio zu öffnen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](develop-javascript-code-without-solutions-projects.md). Andernfalls können Sie ein neues Projekt erstellen oder ein Projekt von einem Quellenanbieter wie GitHub oder Azure DevOps klonen.
+
+Die Option **Ohne Code fortfahren** öffnet einfach nur die Entwicklungsumgebung von Visual Studio, ohne dass spezielle Projekte oder Code geladen würden. Sie können diese Option auch dazu verwenden, um einer [Live Share](/visualstudio/liveshare/)-Sitzung beizutreten, oder Anfügungen an einen Prozess zum Debuggen durchzuführen. Sie können auch **Esc** drücken, um das Startfenster zu schließen, und die IDE zu öffnen.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Startseite
 
@@ -31,9 +49,27 @@ Wenn Sie die **Startseite** schließen und dann erneut anzeigen möchten, könne
 
 ![Dateimenü in Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
 Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenzulernen.
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie im **Startfenster** die Option **Neues Projekt erstellen** aus, und geben Sie dann im Suchfeld **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
+
+   Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. (Alternativ können Sie das Projekt auch in TypeScript erstellen, wenn Sie damit vertraut sind. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+
+   ![Suchen von Projektvorlagen im Visual Studio-Startfenster](media/vs-2019/create-new-project.png)
+
+1. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus, und klicken Sie dann auf **Weiter**. 
+
+1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt konfigurieren** den Standardprojektnamen, und klicken Sie anschließend auf **Erstellen**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
 
@@ -42,6 +78,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
    Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus. (Alternativ können Sie das Projekt auch in TypeScript erstellen, wenn Sie damit vertraut sind. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
 1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
+::: moniker-end
 
    Das Projekt wird erstellt, und eine Datei namens *server.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
 

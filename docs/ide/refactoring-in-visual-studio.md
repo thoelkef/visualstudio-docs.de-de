@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927112"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428608"
 ---
 # <a name="refactor-code"></a>Refactoring von Code
 
@@ -22,7 +22,11 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 
 ## <a name="programming-languages"></a>Programmiersprachen
 
-In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Programmiersprachen zur Verfügung. Die Themen in diesem Abschnitt erläutern die Refactoringoptionen, die für C# und Visual Basic verfügbar sind. Informationen zum Refactoring von in C++ geschriebenem Code finden Sie unter [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp). Refactoringunterstützung für F# wird durch die [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung eines Drittanbieters.
+In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Programmiersprachen zur Verfügung:
+
+- Die Seiten in diesem Abschnitt der Tabelle mit Inhalten erläutern die Refactoringoptionen, die für C# und Visual Basic verfügbar sind. Beispiele dafür sind [Refactoring des Extrahierens einer Methode](reference/extract-method.md) und [Verschieben eines Typs in ein entsprechendes Dateirefactoring](reference/move-type-to-matching-file.md).
+- Informationen zum Refactoring von in C++ geschriebenem Code finden Sie unter [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Refactoringunterstützung für F# wird durch die [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung eines Drittanbieters.
 
 ## <a name="see-also"></a>Siehe auch
 

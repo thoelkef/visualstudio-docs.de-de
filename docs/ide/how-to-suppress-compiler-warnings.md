@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913131"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323973"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
 
 Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Ausführlichkeit erhalten Sie im Artikel [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F\#
 
 Verwenden Sie die Eigenschaftenseite **Build**, um bestimmte Warnungen für C#- und F#-Projekte zu unterdrücken.
 

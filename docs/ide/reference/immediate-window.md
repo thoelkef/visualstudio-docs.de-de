@@ -1,6 +1,6 @@
 ---
 title: Direktfenster
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931948"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954198"
 ---
 # <a name="immediate-window"></a>Direktfenster
 
-Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen.
+Das **Direktfenster** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen und Ausgeben von Variablenwerten verwendet. Mit dem **Direktfenster** werden Ausdrücke durch Erstellen und Verwenden des derzeit ausgewählten Projekts ausgewertet.
 
 Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann **Debuggen** > **Windows** > **Direkt** oder drücken **STRG**+**ALT**+**I**. Alternativ können Sie auch im **Befehlsfenster** **Debug.Immediate** eingeben.
 
-Sie können das Fenster **Direkt** verwenden, um einzelne Visual Studio-Befehle auszugeben. Zu den verfügbaren Befehlen gehört `EvaluateStatement`. Damit können Variablen Werte zugewiesen werden. Das Fenster **Direkt** unterstützt auch IntelliSense.
+Das **Direktfenster** unterstützt IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Anzeigen der Werte von Variablen
 
-Das Fenster **Direkt** kann besonders beim Debuggen einer Anwendung von Nutzen sein. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Drucken-Befehl](../../ide/reference/print-command.md) verwenden:
+Das **Direktfenster** ist besonders beim Debuggen einer App nützlich. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Print-Befehl](../../ide/reference/print-command.md) verwenden:
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ Das Fenster **Direkt** kann besonders beim Debuggen einer Anwendung von Nutzen s
 Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
 
 ```cmd
->? varA
+? varA
 ```
 
 Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
 
 > [!TIP]
-> Wenn Sie einen Visual Studio-Befehl im Fenster **Direkt** ausgeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.
+> Wenn Sie einen Visual Studio-Befehl im Fenster **Direkt** ausgeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum [Befehlsfenster](command-window.md), wenn Sie mehrere Befehle eingeben möchten.
 
 ## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit
 
@@ -56,7 +56,7 @@ Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine
 
 ### <a name="execute-a-function-at-design-time"></a>Ausführen einer Funktion zur Entwurfszeit
 
-1. Kopieren Sie den folgenden Code in eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Konsolenanwendung:
+1. Kopieren Sie den folgenden Code, und fügen Sie ihn in eine Visual Basic-Konsolenanwendung ein:
 
    ```vb
    Module Module1
@@ -72,15 +72,15 @@ Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine
    End Module
    ```
 
-2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie dann auf **Direkt**.
+2. Klicken Sie im Menü **Debuggen** auf **Windows** > **Direkt**.
 
 3. Geben Sie `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die **EINGABETASTE**.
 
     Über das Fenster **Direkt** wird `MyFunction` ausgeführt und `4` angezeigt.
 
-Wenn die Funktion oder die Unterroutine einen Breakpoint enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
+Wenn die Funktion oder die Unterroutine einen Breakpoint enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z.B. [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
+Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z.B. Visual Studio-Tools für Office-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Ausdrucksauswertung zur Entwurfszeit in Projektmappen mit mehreren Projekten
 
@@ -88,7 +88,7 @@ Beim Festlegen des Kontexts für die Ausdrucksauswertung zur Entwurfszeit verwei
 
 ## <a name="enter-commands"></a>Eingeben von Befehlen
 
-Sie müssen das Größer-als-Zeichen (>) eingeben, wenn Sie Visual Studio-Befehle im Fenster **Direkt** angeben. Verwenden Sie die **NACH-OBEN**- und **NACH UNTEN**-TASTEN, um durch bereits ausgegebene Befehle zu scrollen.
+Sie müssen das Größer-als-Zeichen (>) eingeben, wenn Sie Visual Studio-Befehle im Fenster **Direkt** angeben. Verwenden Sie die **NACH-OBEN**- und **NACH UNTEN**-TASTEN, um durch Ihre zuvor verwendeten Befehle zu scrollen.
 
 |Aufgabe|Lösung|Beispiel|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Sie müssen das Größer-als-Zeichen (>) eingeben, wenn Sie Visual Studio-Befehl
 
 Wenn Sie im Fenster **Direkt** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
 
-## <a name="the-equals-sign-"></a>Das Gleichheitszeichen (=)
+## <a name="examples"></a>Beispiele
 
-Abhängig vom Fenster, das zur Eingabe des `EvaluateStatement`-Befehls verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
-
-Im Fenster **Direkt** wird ein Gleichheitszeichen (=) als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
+Im folgenden Beispiel werden vier Ausdrücke und die dazugehörigen Ergebnisse im **Direktfenster** für ein Visual Basic-Projekt veranschaulicht.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-der Variablen `varA` der Wert von Variable `varB` zugewiesen.
-
-Im Fenster **Befehl** wird ein Gleichheitszeichen (=) hingegen als Vergleichsoperator interpretiert. Sie können keine Zuweisungsvorgänge im Fenster **Befehl** ausführen. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-wird dann beispielsweise der Wert `False` zurückgegeben.
 
 ## <a name="first-chance-exception-notifications"></a>Ausnahmebenachrichtigungen (erste Chance)
 

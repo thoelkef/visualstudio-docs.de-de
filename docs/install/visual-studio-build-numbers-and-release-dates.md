@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317990"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954133"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -171,13 +171,15 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.1 Vorschauversion 1 | Vorschau | 7. März 2017 | 15.0.26304.0 |
 | 15.0.0 | Freigabe | 7. März 2017 | 15.0.26228.4 |
 
-## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Vorschauversion
+## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichungstermine für die Vorschauversion von Visual Studio 2019 aufgeführt.
+In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine für Visual Studio 2019 aufgeführt.
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.0.0 | Preview 3 | 13. Februar 2019 | 16.0.28608.199 |
+| 16.0.0 | Release Candidate (RC) | 27. Februar 2019 | 16.0.28625.133 |
+| 16.0.0 | Vorschauversion 4 | 27. Februar 2019 | 16.0.28625.133 |
+| 16.0.0 | Vorschauversion 3 | 13. Februar 2019 | 16.0.28608.199 |
 | 16.0.0 | Preview 2.2 | 5. Februar 2019 | 16.0.28602.52 |
 | 16.0.0 | Preview 2.1 | 31. Januar 2019 | 16.0.28529.54 |
 | 16.0.0 | Vorschau 2 | 23. Januar 2019 | 16.0.28522.59 |

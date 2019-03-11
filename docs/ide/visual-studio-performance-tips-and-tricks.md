@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318770"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222986"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
 Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situationen mit wenig Arbeitsspeicher gedacht, die selten auftreten. In solchen Fällen können Sie bestimmte Funktionen von Visual Studio optimieren, die zu dem Zeitpunkt wahrscheinlich nicht verwendet werden. Die folgenden Tipps sind nicht als allgemeine Empfehlungen gedacht.
 
 > [!NOTE]
-> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Verwenden eines 64-Bit-Betriebssystems
 
@@ -41,9 +41,9 @@ Wenn Sie die automatische Dateiwiederherstellung deaktivieren, können Sie mit e
 
 - Für die allgemeine **Gehe zu**-Funktionalität klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**, oder drücken Sie **STRG**+**T**.
 
-- In Visual Studio 2017 Version 15.8 und höher können Sie in einer Projektmappe direkt zum Speicherort der letzten Bearbeitung wechseln, indem Sie auf **Bearbeiten** > **Gehe zu** > **Zum Speicherort der letzten Bearbeitung wechseln** bzw. **STRG**+**UMSCHALTTASTE**+**RÜCKTASTE** drücken.
+- Wechseln Sie in einer Projektmappe direkt zum Speicherort der letzten Bearbeitung, indem Sie auf **Bearbeiten** > **Gehe zu** > **Zum Speicherort der letzten Bearbeitung wechseln** bzw. **STRG**+**UMSCHALT**+**RÜCK** drücken.
 
-- Verwenden Sie in Visual Studio 2017 Version 15.8 und höher **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), um eine Liste der zuletzt besuchten Dateien in einer Projektmappe anzuzeigen. Wählen Sie **Bearbeiten** > **Gehe zu** > **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), oder drücken Sie **STRG**+**1**, **STRG**+**R**.
+- Verwenden Sie **Go To Recent File** (Zur zuletzt besuchten Datei wechseln), um eine Liste der zuletzt besuchten Dateien in einer Projektmappe anzuzeigen. Wählen Sie **Bearbeiten** > **Gehe zu** > **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), oder drücken Sie **STRG**+**1**, **STRG**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurieren von Debugoptionen
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935575"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222086"
 ---
 # <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 
@@ -109,19 +109,29 @@ In einigen Fällen sollten Sie eine Elementvorlage manuell von Grund auf neu ers
 
 1. Erstellen Sie ein Projekt und ein Projektelement.
 
-1. Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.
+2. Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.
 
-1. Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameter ersetzt werden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameter ersetzt werden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *VSTEMPLATE* in demselben Verzeichnis wie die Projektelementdatei.
+4. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *VSTEMPLATE* in demselben Verzeichnis wie die Projektelementdatei.
 
-1. Erstellen Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Elementvorlagen bereitzustellen. Weitere Informationen finden Sie unter [Template schema reference (extensibility) (Schemareferenz zu Vorlagen (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.
+5. Erstellen Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Elementvorlagen bereitzustellen. Weitere Informationen finden Sie unter [Template schema reference (extensibility) (Schemareferenz zu Vorlagen (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.
 
-1. Speichern Sie die *VSTEMPLATE*-Datei, und schließen Sie sie.
+6. Speichern Sie die *VSTEMPLATE*-Datei, und schließen Sie sie.
 
-1. Wählen Sie im **Windows-Explorer** die Dateien aus, die in Ihrer Vorlage enthalten sein sollen. Klicken Sie mit der rechten Maustaste auf Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in eine *ZIP*-Datei komprimiert.
+7. Wählen Sie im **Windows-Explorer** die Dateien aus, die in Ihrer Vorlage enthalten sein sollen. Klicken Sie mit der rechten Maustaste auf Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in eine *ZIP*-Datei komprimiert.
 
-1. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2017 ist *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* das Standardverzeichnis. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. Das Standardverzeichnis ist *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. Das Standardverzeichnis ist *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

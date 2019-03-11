@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864869"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222895"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
 
@@ -74,7 +74,7 @@ Dieses Problem manifestiert sich in Visual Studio häufig auf zweierlei Weise:
 
 Um diese Art von Problemen zu beheben, fügen Sie dem Stammverzeichnis Ihres Lösungsverzeichnisses eine Datei namens **cpp.hint** hinzu. Weitere Informationen finden Sie unter [Hinweisdateien](/cpp/ide/hint-files).
 
-**Visual Studio 2017 Version 15.7**: Tagparserfehler werden im Fenster „Fehlerliste“ angezeigt.
+Tagparserfehler werden im Fenster **Fehlerliste** angezeigt.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Überprüfen der Projekteinstellungen mit Diagnoseprotokollierung
 
@@ -107,7 +107,7 @@ In einigen Fällen kann es jedoch vorkommen, dass Visual Studio die IntelliSense
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Problembehandlung bei IntelliSense-Buildfehlern
 
-Ein IntelliSense-Build generiert zwar keine Binärdateien, kann aber trotzdem fehlschlagen. Eine mögliche Ursache für Fehler sind benutzerdefinierte PROPS- oder TARGET-Dateien. In Visual Studio 2017 Version 15.6 werden reine IntelliSense-Buildfehler im Ausgabefenster protokolliert. Legen sie zum Anzeigen dieser Fehler **Ausgabe anzeigen von** auf **Projektmappe** fest:
+Ein IntelliSense-Build generiert zwar keine Binärdateien, kann aber trotzdem fehlschlagen. Eine mögliche Ursache für Fehler sind benutzerdefinierte PROPS- oder TARGET-Dateien. In Visual Studio 2017 Version 15.6 und höher werden reine IntelliSense-Buildfehler im Ausgabefenster protokolliert. Legen sie zum Anzeigen dieser Fehler **Ausgabe anzeigen von** auf **Projektmappe** fest:
 
 ![Ausgabefenster für Projektmappenfehler](media/vcpp-intellisense-output-window.png)
 

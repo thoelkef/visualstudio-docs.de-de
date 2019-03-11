@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948276"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221943"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Übersicht über .NET Compiler Platform-Analysetools
 
-Visual Studio 2017 enthält integrierte .NET Compiler Platform-Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Analysetools untersuchen das Codeformat, die Qualität und Wartbarkeit des Codes, den Codeentwurf und andere Probleme. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder projektbezogen als NuGet-Paket installieren.
+Visual Studio enthält integrierte .NET Compiler Platform-Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Analysetools untersuchen das Codeformat, die Qualität und Wartbarkeit des Codes, den Codeentwurf und andere Probleme. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder projektbezogen als NuGet-Paket installieren.
 
 Wenn von einem Analysetool Verstöße gegen Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer *Wellenlinie* unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
 

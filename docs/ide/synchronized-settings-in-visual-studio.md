@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926046"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221878"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern
 
@@ -60,20 +60,30 @@ Einstellungen werden zwischen allen *parallel* installierten Versionen und Editi
 
 ## <a name="side-by-side-synchronized-settings"></a>Parallel synchronisierte Einstellungen
 
-In Visual Studio 2017 Version 15.3 und höher werden bestimmte Einstellungen wie das Toolfensterlayout zwischen parallelen Installationen von Visual Studio 2017 nicht freigegeben. Die Datei *CurrentSettings.vssettings* unter *%userprofile%\Documents\Visual Studio 2017\Settings* befindet sich in einem installationsspezifischen Ordner, der *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings* ähnelt.
+::: moniker range="vs-2017"
+
+Bestimmte Einstellungen wie das Layout des Toolfensters werden nicht zwischen verschiedenen parallelen Installationen von Visual Studio freigegeben. Die Datei *CurrentSettings.vssettings* unter *%userprofile%\Documents\Visual Studio 2017\Settings* befindet sich in einem installationsspezifischen Ordner, der *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings* ähnelt.
 
 > [!NOTE]
-> Führen Sie eine neue Installation durch, um die neuen installationsspezifischen Einstellungen zu verwenden. Wenn ein Upgrade einer vorhandenen Installation von Visual Studio 2017 auf das aktuellste Update durchgeführt wird, verwendet es den vorhandenen freigegebenen Speicherort.
+> Führen Sie eine neue Installation durch, um die neuen installationsspezifischen Einstellungen zu verwenden. Wenn Sie eine vorhandene Visual Studio-Installation aktualisieren, verwendet sie den vorhandenen freigegebenen Speicherort.
 
-Wenn Sie derzeit über Parallelinstallationen von Visual Studio 2017 verfügen und den neuen installationsspezifischen Speicherort für die Einstellungsdatei verwenden möchten, führen Sie die folgenden Schritte aus:
+Wenn Sie derzeit über Parallelinstallationen von Visual Studio verfügen und den neuen installationsspezifischen Speicherort für die Einstellungsdatei verwenden möchten, führen Sie die folgenden Schritte aus:
 
 1. Upgrade auf Visual Studio 2017 Version 15.3 oder höher
 
-1. Verwenden Sie den **Assistenten zum Importieren/Exportieren von Einstellungen**, um alle Ihre vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
+2. Verwenden Sie den **Assistenten zum Importieren/Exportieren von Einstellungen**, um alle Ihre vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
 
-1. Öffnen Sie die **Developer-Eingabeaufforderung für Visual Studio 2017** der aktualisierten Visual Studio-Installation, und führen Sie `devenv /resetuserdata` aus.
+3. Öffnen Sie die **Developer-Eingabeaufforderung für Visual Studio 2017**, und führen Sie `devenv /resetuserdata` aus.
 
 1. Starten Sie Visual Studio, und importieren Sie die gespeicherten Einstellungen aus der exportierten Einstellungsdatei.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Bestimmte Einstellungen wie das Layout des Toolfensters werden nicht zwischen verschiedenen parallelen Installationen von Visual Studio freigegeben. Die Datei *CurrentSettings.vssettings* unter *%userprofile%\Documents\Visual Studio 2019\Settings* befindet sich in einem installationsspezifischen Ordner, der *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings* ähnelt.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

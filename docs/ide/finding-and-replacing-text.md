@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937447"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323733"
 ---
 # <a name="find-and-replace-text"></a>Suchen und Ersetzen von Text
 
-Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) oder mit [In Dateien suchen/In Dateien ersetzen](#find-in-files-and-replace-in-files) suchen und ersetzen. Ab Version 15.8 von Visual Studio 2017 können Sie *bestimmte* Musterinstanzen mithilfe des *[Auswählens mehrerer Caretzeichen](#multi-caret-selection)* suchen und ersetzen.
+Sie können Text im Visual Studio-Editor mit [Suchen und Ersetzen](#find-and-replace-control) (**STRG**+**F** oder **STRG**+**H**) oder mit [In Dateien suchen/In Dateien ersetzen](#find-in-files-and-replace-in-files) (**STRG**+**UMSCHALT**+**F** oder **STRG**+**UMSCHALT**+**H**) suchen und ersetzen. Sie können auch nur *bestimmte* Musterinstanzen mithilfe des *[Auswählens mehrerer Caretzeichen](#multi-caret-selection)* suchen und ersetzen.
 
 > [!TIP]
 > Wenn Sie Codesymbole wie Variablen und Methoden umbenennen, ist es besser, anstelle von Suchen und Ersetzen eine *[Umgestaltung](../ide/reference/rename.md)* zu verwenden. Die Umgestaltung ist eine intelligente Funktion, die den Projektumfang berücksichtigt, während Suchen und Ersetzen alle Instanzen blind ersetzt.
@@ -53,7 +53,10 @@ Sie können den Suchbereich auf das aktuelle Dokument, die aktuelle Projektmappe
 
 ## <a name="find-and-replace-control"></a>Steuerelement "Suchen und Ersetzen"
 
-Das Steuerelement **Suchen und Ersetzen** finden Sie in der rechten oberen Ecke des Code-Editors. Durch das Steuerelement **Suchen und Ersetzen** wird jedes Vorkommen des angegebenen Suchbegriffs im aktuellen Dokument sofort hervorgehoben. Sie können von einem Vorkommen zum nächsten navigieren, indem Sie auf dem Steuerelement „Suche“ auf **Weitersuchen** oder **Vorheriges suchen** auswählen.
+- Verwenden Sie die Tastenkombination **STRG**+**F**, um eine Zeichenfolge in der aktuellen Datei zu *suchen*.
+- Verwenden Sie die Tastenkombination **STRG**+**H**, um eine Zeichenfolge in der aktuellen Datei zu *suchen und zu ersetzen*.
+
+Das Steuerelement **Suchen und Ersetzen** finden Sie in der rechten oberen Ecke des Code-Editors. Durch dieses wird jedes Vorkommen des angegebenen Suchbegriffs im aktuellen Dokument sofort hervorgehoben. Sie können von einem Vorkommen zum nächsten navigieren, indem Sie auf dem Steuerelement „Suche“ auf **Weitersuchen** oder **Vorheriges suchen** auswählen.
 
 ![Suchen und Ersetzen in Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Eine Version des Steuerelements **Suchen** ist auch in einigen Toolfenstern verf
 
 ## <a name="find-in-files-and-replace-in-files"></a>In Dateien suchen und In Dateien ersetzen
 
-**In Dateien suchen/In Dateien ersetzen** funktioniert wie das Steuerelement **Suchen und Ersetzen** mit dem Unterschied, dass Sie einen Bereich für die Suche definieren können. Sie können nicht nur die aktuell geöffnete Datei im Editor durchsuchen, sondern auch alle geöffneten Dokumente, die gesamte Projektmappe, das aktuelle Projekt und ausgewählte Ordnersätze. Ebenfalls können Sie nach Dateierweiterungen suchen. Um auf das Dialogfeld **In Dateien suchen/In Dateien ersetzen** zuzugreifen, wählen Sie im Menü **Bearbeiten** die Option **Suchen und Ersetzen** aus, oder drücken Sie **Strg+Umschalt+F**.
+- Verwenden Sie die Tastenkombination**STRG**+**UMSCHALT**+**F**, um eine Zeichenfolge in mehreren Dateien zu *suchen*.
+- Verwenden Sie die Tastenkombination**STRG**+**UMSCHALT**+**H**, um eine Zeichenfolge in mehreren Dateien zu *suchen und zu ersetzen*.
+
+**In Dateien suchen/In Dateien ersetzen** funktioniert wie das Steuerelement **Suchen und Ersetzen** mit dem Unterschied, dass Sie einen Bereich für die Suche definieren können. Sie können nicht nur die aktuell geöffnete Datei im Editor durchsuchen, sondern auch alle geöffneten Dokumente, die gesamte Projektmappe, das aktuelle Projekt und ausgewählte Ordnersätze. Ebenfalls können Sie nach Dateierweiterungen suchen. Um auf das Dialogfeld **In Dateien suchen/In Dateien ersetzen** zuzugreifen, wählen Sie im Menü **Bearbeiten** die Option **Suchen und Ersetzen** aus, oder drücken Sie **STRG**+**UMSCHALT**+**F**.
 
 ![Suchen in Dateien in Visual Studio](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ Sie können Komponentensätze als Suchbereich definieren, indem Sie auf die Scha
 > [!NOTE]
 > Dieser Abschnitt gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Blockauswahl](/visualstudio/mac/block-selection).
 
-**Neu in Visual Studio 2017 Version 15.8**
+**Eingeführt in Visual Studio 2017 Version 15.8**
 
 Durch das *Auswählen mehrerer Caretzeichen* können Sie dieselbe Änderung gleichzeitig an unterschiedlichen Stellen durchführen. Beispielsweise können Sie Text hinzufügen oder vorhandenen Text bearbeiten. Die Änderungen werden gleichzeitig an mehreren Stellen übernommen.
 

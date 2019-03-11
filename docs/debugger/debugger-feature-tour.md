@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696739"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428686"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -77,7 +77,7 @@ Zeigen Sie auf eine Codezeile, während der Debugger ausgeführt wird, bis die S
 ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
 
 > [!NOTE]
-> Die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen) ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Die Schaltfläche für die Aktion **Ausführung bis Klick** (Ausführung bis hier ausführen) ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar.
 
 Klicken Sie auf die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen). Der Debugger wechselt zu der Codezeile, auf die Sie geklickt haben.
 
@@ -188,7 +188,7 @@ In diesem Beispiel hat der `DirectoryInfo`-Aufruf den Fehler für eine leere Zei
 Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Die Ausnahmen-Hilfe ersetzt den Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Der Ausnahmen-Assistent wurde in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] durch die Ausnahmen-Hilfe ersetzt.
 
 Erweitern Sie den Knoten **Ausnahmeeinstellungen**, um weitere Optionen zu diesem Ausnahmetyp anzuzeigen. Für dieses Tutorial müssen Sie dort jedoch keine Änderungen vornehmen.
 

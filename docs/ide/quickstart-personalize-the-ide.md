@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934067"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223038"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
 
@@ -22,7 +22,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 
-Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio 2017 heißt **Blau**. Ändern Sie es in **Dunkel**.
+Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **Blau**. Ändern Sie es in **Dunkel**.
 
 1. Klicken Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) auf **Extras** > **Optionen**.
 
