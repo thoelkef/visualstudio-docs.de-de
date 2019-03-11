@@ -479,6 +479,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: 'CA2007: Eine Aufgabe nicht direkt abwarten'
+        href: ca2007-do-not-directly-await-task.md
     - name: Sicherheitswarnungen
       href: security-warnings.md
       items:
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd-Fehler
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835149"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699667"
