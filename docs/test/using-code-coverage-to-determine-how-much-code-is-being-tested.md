@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0869dcaccbd5f0b13661738a1d923758513aeb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935107"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222908"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -28,7 +28,7 @@ Die Codeabdeckungsanalyse kann sowohl in verwaltetem (CLI) als auch in nicht ver
 
 Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
-![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png)
+![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png)
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -258,7 +258,17 @@ Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen
 
 1. Starten Sie die Developer-Eingabeaufforderung für Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    Wählen Sie im Windows-**Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Developer-Eingabeaufforderung für VS 2017) aus.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   Wählen Sie im Windows-**Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Developer-Eingabeaufforderung für VS 2019) aus.
+
+   ::: moniker-end
 
 2. Führen Sie an der Eingabeaufforderung folgenden Befehl aus:
 

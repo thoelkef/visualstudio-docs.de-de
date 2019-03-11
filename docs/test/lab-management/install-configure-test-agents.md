@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912741"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223025"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installieren von Test-Agents und Testcontrollern
 
@@ -24,7 +24,7 @@ Sie könnten auch erwägen, ob es besser wäre, stattdessen [Build- oder Release
 
 ## <a name="system-requirements"></a>Systemanforderungen
 
-Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des Test-Agent oder Testcontrollers für Visual Studio 2017:
+Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des Test-Agent oder Testcontrollers für Visual Studio:
 
 | Element | Anforderungen |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des T
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installieren von Testcontroller und Test-Agents
 
-Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio 2017 herunterladen. Suchen Sie nach *Agents für Visual Studio 2017*, wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
+Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio herunterladen. Suchen Sie nach *Agents für Visual Studio 2017*, wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
 
 Sie können Agents für Visual Studio 2015 und Visual Studio 2013 von der Seite mit [älteren Downloads](https://visualstudio.microsoft.com/vs/older-downloads/) herunterladen.
 

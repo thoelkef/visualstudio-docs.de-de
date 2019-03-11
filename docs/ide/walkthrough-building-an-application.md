@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954126"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323944"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -163,7 +163,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="create-a-release-build"></a>Erstellen eines Releasebuilds
+## <a name="create-a-release-build"></a>Erstellen eines Versionsbuilds
 
 Sie können eine Version der Beispielanwendung erstellen, die für das Versenden optimiert wird. Beim Releasebuild geben Sie an, dass die ausführbare Datei auf eine Netzwerkfreigabe kopiert wird, bevor der Build gestartet wird.
 
@@ -192,7 +192,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
      ![Befehl "Projektmappe erstellen" im Menü "Erstellen"](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C# #
+### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C\#
 
 1. Öffnen Sie den **Projekt-Designer**.
 

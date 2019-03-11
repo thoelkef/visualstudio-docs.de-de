@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946064"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222857"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -50,11 +50,25 @@ Wenn Sie Visual Studio als Administrator ausführen müssen, befolgen Sie diese 
 > [!NOTE]
 > Diese Anweisungen gelten für Windows 10. Für andere Windows-Versionen lauten die Anweisungen ähnlich.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie das Menü **Start**, und scrollen Sie zu Visual Studio 2017.
 
 1. Wählen Sie im Kontextmenü von **Visual Studio 2017** die Optionen **Mehr** > **Als Administrator ausführen** aus.
 
    Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie das Menü **Start**, und scrollen Sie zu Visual Studio 2019.
+
+1. Wählen Sie im Kontextmenü von **Visual Studio 2019** die Optionen **Mehr** > **Als Administrator ausführen** aus.
+
+   Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.
+
+::: moniker-end
 
 Sie können die Anwendungsverknüpfung ebenfalls so ändern, dass die Anwendung immer mit Administratorberechtigungen ausgeführt wird.
 

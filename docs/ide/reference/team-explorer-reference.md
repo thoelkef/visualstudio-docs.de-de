@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946274"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222973"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer-Referenz
 
@@ -33,7 +33,7 @@ Die **Homepage** weist abhängig davon, ob Sie eine Verbindung mit einem [Git](/
 
 | **Homepage** mit Git | **Homepage** mit TFVC |
 | - | - |
-| ![Team Explorer-Homepage mit Git in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer-Homepage mit TFVC in Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Team Explorer-Homepage mit Git in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer-Homepage mit TFVC in Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Seite „Änderungen“ (Git)
 
@@ -82,7 +82,7 @@ Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/a
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> In Visual Studio 2019 Preview 1 gibt es eine neue [Arbeitselementfunktion](/azure/devops/boards/work-items/set-work-item-experience-vs). Weitere Informationen zum Anzeigen von Arbeitselementen in Visual Studio 2019 Preview 1 finden Sie unter [View and add work items (Anzeigen und Hinzufügen von Arbeitselementen)](/azure/devops/boards/work-items/view-add-work-items).
+> In Visual Studio 2019 gibt es eine neue [Arbeitselementfunktion](/azure/devops/boards/work-items/set-work-item-experience-vs). Weitere Informationen zum Anzeigen von Arbeitselementen in Visual Studio 2019 finden Sie unter [View and add work items (Anzeigen und Hinzufügen von Arbeitselementen)](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

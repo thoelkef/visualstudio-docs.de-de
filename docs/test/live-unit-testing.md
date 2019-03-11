@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921535"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223714"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing mit Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing mit Visual Studio
 
 Live Unit Testing führt automatisch alle betroffenen Komponententests im Hintergrund aus, und zeigt die Ergebnisse und Code Coverage in der Visual Studio-IDE in Echtzeit an, während Sie eine Anwendung entwickeln. Wenn Sie Ihren Code ändern, bietet Live Unit Testing Feedback dazu, welche Auswirkungen Ihre Änderungen auf vorhandene Tests haben und ob der neue von Ihnen hinzugefügte Code von einem oder mehreren vorhandenen Tests abgedeckt wird. So werden Sie daran erinnert, Komponententests zu schreiben, während Sie Fehler beheben oder neue Funktionen hinzufügen.
 
 > [!NOTE]
-> Live Unit Testing steht für C#- und Visual Basic-Projekte zur Verfügung, die auf .NET Core und .NET Framework in der Enterprise-Edition von Visual Studio 2017 ausgerichtet sind.
+> Live Unit Testing steht für C#- und Visual Basic-Projekte zur Verfügung, die auf .NET Core und .NET Framework in der Enterprise-Edition von Visual Studio ausgerichtet sind.
 
 Wenn Sie Live Unit Testing für Ihre Tests verwenden, werden Daten zum Status Ihrer Tests beibehalten. Da bei Live Unit Testing persistente Daten verwendet werden können, bietet es eine überragende Leistung bei der dynamischen Ausführung Ihrer Tests in Bezug auf Codeänderungen.
 
@@ -51,7 +51,7 @@ Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests v
 </tr>
 </table>
 
-Wenn Sie über ältere, auf MSTest-basierende Testprojekte verfügen, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie auf Visual Studio 2017 Version 15.4 upgraden.
+Wenn Sie über ältere, auf MSTest basierende Testprojekte verfügen, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie mindestens auf Visual Studio 2017 Version 15.4 upgraden.
 
 In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf die die Projekte in der Projektmappe verweisen, damit Live Unit Testing funktioniert. Hierzu können Sie entweder die Projektmappe explizit erstellen (klicken Sie im obersten Visual Studio-Menü auf **Build** > **Projektmappe neu erstellen**) oder Pakete in der Projektmappe wiederherstellen (klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete wiederherstellen** aus), bevor Sie Live Unit Testing aktivieren.
 
@@ -178,8 +178,8 @@ Bei Projektmappen mit vielen Testprojekten können Sie steuern, welche Projekte 
 
 Um die einzelnen Projekte in Komponententests auszuwählen, gehen Sie nach dem Start von Live Unit Testing wie folgt vor:
 
-1.  Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe, und wählen Sie **Livetests** > **Ausschließen** aus, um die gesamte Projektmappe auszuschließen.
-1.  Klicken Sie mit der rechten Maustaste auf jedes Testprojekt, das Sie in die Tests einschließen möchten, und wählen Sie **Livetests** > **Einschließen** aus.
+1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe, und wählen Sie **Livetests** > **Ausschließen** aus, um die gesamte Projektmappe auszuschließen.
+1. Klicken Sie mit der rechten Maustaste auf jedes Testprojekt, das Sie in die Tests einschließen möchten, und wählen Sie **Livetests** > **Einschließen** aus.
 
 **Ausschließen von einzelnen Tests im Code-Editor-Fenster**
 
@@ -200,4 +200,4 @@ Mithilfe der folgenden Attribute können Sie ebenfalls einzelne Methoden von Liv
 - [Testtools für Code](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing-Blog](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live-Komponententests – Häufig gestellte Fragen](live-unit-testing-faq.md)
-- [Channel 9-Video: Live Unit Testing in Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Channel 9-Video: Live Unit Testing in Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

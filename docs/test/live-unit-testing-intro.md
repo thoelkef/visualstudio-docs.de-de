@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796731"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222009"
 ---
 # <a name="introducing-live-unit-testing"></a>Einführung in Live Unit Testing
 
-Live Unit Testing ist eine in Visual Studio 2017 Version 15.3 verfügbare Technologie, die Komponententests automatisch in Echtzeit ausführt, während Sie Änderungen am Code vornehmen. Livekomponententests:
+Live Unit Testing ist eine Technologie, die in Visual Studio 2017 eingeführt wurde. Mit ihr werden Ihre Komponententests automatisch und in Echtzeit durchgeführt, während Sie den Code ändern. Livekomponententests:
 
 - Sie ermöglichen es Ihnen, Code sicherer umzugestalten und zu ändern. Beim Live Unit Testing werden alle betroffenen Tests beim Bearbeiten des Codes automatisch ausgeführt. So wird gewährleistet, dass die Änderungen die Tests nicht in Mitleidenschaft ziehen.
 
@@ -31,7 +31,7 @@ Hier erfahren Sie mehr über Live Unit Testing:
 
 - Probieren Sie das einführende Tutorial [Erste Schritte mit Live Unit Testing in Visual Studio](live-unit-testing-start.md) aus.
 
-- Lesen Sie die ausführliche Dokumentation zu [Use Live Unit Testing with Visual Studio 2017 Enterprise Edition (Verwenden von Live Unit Testing mit Visual Studio 2017 Enterprise Edition)](live-unit-testing.md).
+- Lesen Sie die ausführliche Dokumentation [Live Unit Testing mit Visual Studio 2017](live-unit-testing.md).
 
 - Lesen Sie den Artikel [Live Unit Testing – häufig gestellte Fragen](live-unit-testing-faq.md), und erfahren Sie alle Neuheiten sowie Tipps und Techniken für Live Unit Testing.
 
@@ -40,5 +40,6 @@ Hier erfahren Sie mehr über Live Unit Testing:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Weitere Informationen
+
 - [Testtools für Code](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Ausführen von Komponententests für Code](unit-test-your-code.md)

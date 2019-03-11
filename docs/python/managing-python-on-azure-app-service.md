@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918922"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324181"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Einrichten einer Python-Umgebung in Azure App Service (Windows)
 
@@ -76,7 +76,7 @@ Nach dem Hinzufügen eines Verweises auf `python361x64` (Python 3.6.1 x64), sieh
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Festlegen, dass die „web.config“-Datei auf den Python-Interpreter verweist
 
-Nach der Installation der Websiteerweiterung (entweder über das Portal oder eine Azure Resource Manager-Vorlage), verweisen Sie als Nächstes mit der *web.config*-Datei Ihrer App auf den Python-Interpreter. Die *web.config*-Datei weist den in App Service ausgeführten IIS-Webserver (7 und höher) entweder über FastCGI oder über HttpPlatform an, wie er mit Python-Anforderungen umgehen soll.
+Nach der Installation der Websiteerweiterung (entweder über das Portal oder eine Azure Resource Manager-Vorlage), verweisen Sie als Nächstes mit der *web.config*-Datei Ihrer App auf den Python-Interpreter. Die *web.config*-Datei weist den in App Service ausgeführten IIS-Webserver (7 und höher) entweder über HttpPlatform (empfohlen) oder FastCGI an, wie er mit Python-Anforderungen umgehen soll.
 
 Suchen Sie zunächst den vollständigen Pfad zur *python.exe* der Websiteerweiterungen, und erstellen und ändern Sie dann die entsprechende *web.config*-Datei.
 
@@ -97,6 +97,33 @@ Wenn beim Anzeigen des Pfads zu einer Erweiterung Probleme auftreten, können Si
 1. Wählen Sie auf der Seite „App Service“ **Entwicklungstools** > **Konsole** aus.
 1. Geben Sie entweder den Befehl `ls ../home` oder den Befehl `dir ..\home` ein, um die Erweiterungsordner auf der obersten Ebene zu sehen, z.B. *Python361x64*.
 1. Geben Sie einen Befehl wie `ls ../home/python361x64` oder `dir ..\home\python361x64` ein, um zu bestätigen, dass er *Python361x64* und andere Interpreterdateien enthält.
+
+### <a name="configure-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
+
+Das HTTP-Plattformmodul übergibt die Socketverbindungen direkt an einen eigenständigen Python-Prozess. Diese Weitergabe ermöglicht es Ihnen, einen beliebigen Webserver auszuführen, benötigt aber ein Startskript, das auf einem lokalen Webserver ausgeführt wird. Geben Sie das Skript in dem `<httpPlatform>`-Element von *web.config* an, in dem das `processPath`-Attribut auf den Python-Interpreter der Websiteerweiterung, und das `arguments`-Attribut auf Ihr Skript und alle Argumente verweist, die Sie bereitstellen möchten:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+Die Umgebungsvariable `HTTP_PLATFORM_PORT`, die an dieser Stelle angezeigt wird, enthält den Port, auf den Ihr lokaler Server nach Verbindungen von „localhost“ lauschen soll. In diesem Beispiel wird auch gezeigt, wie Sie gegebenenfalls eine andere Umgebungsvariable erstellen, in diesem Fall `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Konfigurieren des FastCGI-Handlers
 
@@ -128,33 +155,6 @@ Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Um
 - `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen.
 
 Zusätzliche Informationen zu *web.config*-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
-
-### <a name="configure-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
-
-Das HTTP-Plattformmodul übergibt die Socketverbindungen direkt an einen eigenständigen Python-Prozess. Diese Weitergabe ermöglicht es Ihnen, einen beliebigen Webserver auszuführen, benötigt aber ein Startskript, das auf einem lokalen Webserver ausgeführt wird. Geben Sie das Skript in dem `<httpPlatform>`-Element von *web.config* an, in dem das `processPath`-Attribut auf den Python-Interpreter der Websiteerweiterung, und das `arguments`-Attribut auf Ihr Skript und alle Argumente verweist, die Sie bereitstellen möchten:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-Die Umgebungsvariable `HTTP_PLATFORM_PORT`, die an dieser Stelle angezeigt wird, enthält den Port, auf den Ihr lokaler Server nach Verbindungen von „localhost“ lauschen soll. In diesem Beispiel wird auch gezeigt, wie Sie gegebenenfalls eine andere Umgebungsvariable erstellen, in diesem Fall `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Installieren von Paketen
 

@@ -1,6 +1,6 @@
 ---
-title: Befehl "Anweisung auswerten"
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,48 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911740"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953054"
 ---
-# <a name="evaluate-statement-command"></a>Befehl "Anweisung auswerten"
+# <a name="evaluate-statement-command"></a>Befehl „Anweisung auswerten“
+
 Wertet die angegebene Anweisung aus und zeigt sie an.
 
 ## <a name="syntax"></a>Syntax
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Argumente
- `text` ist erforderlich. Die auszuwertende Anweisung.
 
-## <a name="remarks"></a>Hinweise
- Abhängig vom Fenster, das zur Eingabe des Befehls **Anweisung auswerten** verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
+`text`
 
- Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Wenn die Werte der Variablen `a` und `b` beispielsweise unterschiedlich sind, gibt der Befehl
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- den Wert `false` zurück.
-
- Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- der Variablen `a` der Wert von Variable `b` zugewiesen.
+Erforderlich. Die auszuwertende Anweisung.
 
 ## <a name="example"></a>Beispiel
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>Siehe auch

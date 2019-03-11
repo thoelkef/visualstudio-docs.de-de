@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702719"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223142"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -24,7 +24,7 @@ Weitere Informationen zu häufig verwendeten Tastenkombinationen finden Sie unte
 
 Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
-- **Verwenden von benutzerfreundlichen Befehlen**. Visual Studio verfügt über verschiedene Befehle, mit denen Sie gängige Bearbeitungsaufgaben schneller bewerkstelligen können. Beispielsweise können Sie in **Visual Studio 2017 Version 15.6** und höher einen Befehl auswählen, um ganz einfach eine Codezeile zu duplizieren – ohne diese kopieren, die Position des Cursors ändern und die Zeile einfügen zu müssen. Wählen Sie **Bearbeiten** > **Duplizieren** oder drücken Sie die Tasten **STRG**+**E**,**V**. Sie können eine Auswahl von Texten rasch erweitern oder verkleinern, indem Sie **Bearbeiten** > **Erweitert** > **Auswahl erweitern** oder **Bearbeiten** > **Erweitert** > **Auswahl verkleinern** auswählen oder die Tasten **UMSCHALT**+**ALT**+**=** oder **UMSCHALT**+**ALT**+**-** drücken (verfügbar in **Visual Studio 2017, Version 15.5** und höher).
+- **Verwenden von benutzerfreundlichen Befehlen**. Visual Studio verfügt über verschiedene Befehle, mit denen Sie gängige Bearbeitungsaufgaben schneller bewerkstelligen können. Beispielsweise können Sie einen Befehl auswählen, um ganz einfach eine Codezeile zu duplizieren, ohne diese kopieren, die Position des Cursors ändern und die Zeile einfügen zu müssen. Wählen Sie **Bearbeiten** > **Duplizieren** oder drücken Sie die Tasten **STRG**+**E**,**V**. Sie können eine Auswahl von Texten rasch erweitern oder verkleinern, indem Sie **Bearbeiten** > **Erweitert** > **Auswahl erweitern** oder **Bearbeiten** > **Erweitert** > **Auswahl verkleinern** auswählen oder die Tasten **UMSCHALT**+**ALT**+**=** oder **UMSCHALT**+**ALT**+**-** drücken.
 
 - **Verwenden von IntelliSense**. Wie Sie Code im Editor eingeben, werden IntelliSense-Informationen, wie Listenmember, Parameterinformationen, QuickInfos, Signaturhilfe und Wortvervollständigung angezeigt. Diese Funktionen unterstützen Fuzzyübereinstimmung des Texts. So umfasst die Ergebnisliste für die Listenmember nicht nur Einträge, die mit dem Zeichen beginnen, das Sie eingegeben haben, sondern auch Einträge, die die Zeichenkombination an einer beliebigen Stelle im Namen enthalten. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 
 Sie können schnell auf die Developer-Eingabeaufforderung oder auf ein anderes Visual Studio-Tool zugreifen, wenn Sie diese bzw. dieses im Startmenü oder in der Taskleiste fixieren.
 
-1. Navigieren Sie im Windows-Explorer zu `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Klicken Sie mit der rechten Maustaste darauf, oder öffnen Sie das Kontextmenü, um **Developer-Eingabeaufforderung** auszuwählen. Wählen Sie dann **An "Start" anheften** oder **An Taskleiste anheften** aus.
+1. Navigieren Sie im Windows-Explorer zu *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Navigieren Sie im Windows-Explorer zu *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Klicken Sie mit der rechten Maustaste darauf, oder öffnen Sie das Kontextmenü, um **Developer-Eingabeaufforderung** auszuwählen. Wählen Sie dann **An "Start" anheften** oder **An Taskleiste anheften** aus.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Verwalten von Dateien, Symbolleisten und Fenstern
 

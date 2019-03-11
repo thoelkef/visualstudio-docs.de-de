@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919234"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223480"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -48,7 +48,7 @@ Weitere Informationen dazu, welche Plattformen und Konfigurationen von den Tests
 
 ## <a name="install-the-coded-ui-test-component"></a>Installieren der Komponente für Tests der programmierten UI
 
-Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio 2017, um Zugriff auf Tools und Vorlagen für Tests der programmierten UI zu erhalten.
+Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio, um Zugriff auf Tools und Vorlagen für Tests der programmierten UI zu erhalten.
 
 1. Starten Sie den **Visual Studio-Installer**, indem Sie **Tools** > **Tools und Features abrufen** wählen.
 
@@ -58,9 +58,9 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
 1. Klicken Sie auf **Ändern**.
 
-## <a name="create-a-coded-ui-test"></a>Test der programmierten UI erstellen
+## <a name="create-a-coded-ui-test"></a>Test der codierten UI erstellen
 
-1. Erstellen Sie ein Testprojekt der programmierten UI.
+1. Erstellen Sie ein Testprojekt für codierte UI.
 
    Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Wählen Sie **Datei** > **Neu** > **Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen. Erweitern Sie im Kategoriebereich auf der linken Seite **Installiert** > **Visual Basic** *oder* **Visual C#**  >  **Test**. Wählen Sie die Vorlage **Testprojekt für programmierte UI** aus, und klicken Sie dann auf **OK**.
 
@@ -69,7 +69,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
-2. Fügen Sie eine Testdatei der programmierten UI hinzu.
+2. Fügen Sie eine Testdatei für codierte UI hinzu.
 
      Wenn Sie gerade ein Testprojekt für codierte UI erstellt haben, wird die erste CUIT-Datei automatisch hinzugefügt. Öffnen Sie zum Hinzufügen einer weiteren Testdatei das Kontextmenü im **Projektmappen-Explorer** im Testprojekt für programmierte UI, und wählen Sie dann **Hinzufügen** > **Test der programmierten UI** aus.
 
@@ -79,7 +79,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
      Der **Test-Generator der programmierten UI** wird angezeigt.
 
-     ![Test-Generator der programmierten UI](../test/media/codedui_testbuilder.png)
+     ![Test-Generator für codierte UI](../test/media/codedui_testbuilder.png)
 
 3. Zeichnen Sie eine Sequenz von Aktionen auf.
 
@@ -100,7 +100,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
      Schließen Sie das Assertionsfenster, und wählen Sie **Code generieren** aus.
 
-     ![Testzielelement der programmierten UI](../test/media/codedui_1.png)
+     ![Testzielelement für codierte UI](../test/media/codedui_1.png)
 
     > [!TIP]
     > Wechseln Sie zwischen dem Aufzeichnen von Aktionen und dem Überprüfen von Werten. Generieren Sie Code am Ende jeder Sequenz von Aktionen oder Überprüfungen. Wenn Sie möchten, können Sie auch zu einem späteren Zeitpunkt neue Aktionen und Überprüfungen einfügen.
@@ -134,7 +134,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
      Öffnen Sie *UIMap.uitest*. Diese Datei wird im **Editor für Tests der programmierten UI** geöffnet, in dem Sie jede aufgezeichnete Aktionsfolge sowie die Assertionen bearbeiten können.
 
-     ![Editor für Tests der programmierten UI](../test/media/cuit_editor_edit.png)
+     ![Editor für Tests der codierten UI](../test/media/cuit_editor_edit.png)
 
      Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -164,20 +164,20 @@ Mithilfe des **Generators für den Test der programmierten UI** können Sie der 
 
 Wählen Sie zum Generieren von Assertionen für die UI-Steuerelemente im **Test-Generator der programmierten UI** das Tool **Assertionen hinzufügen** aus, und ziehen Sie es auf das Steuerelement der getesteten Anwendung, die Sie überprüfen möchten. Lassen Sie die Maustaste los, sobald das Feld das Steuerelement enthält. Der Code der Steuerelementklasse wird sofort in der Datei *UIMap.Designer.cs* erstellt.
 
-![Testzielelement der programmierten UI](../test/media/codedui_1.png)
+![Testzielelement für codierte UI](../test/media/codedui_1.png)
 
 Die Eigenschaften dieses Steuerelements werden jetzt im Dialogfeld **Assertionen hinzufügen** angezeigt.
 
 Außerdem können Sie zu einem bestimmten Steuerelement navigieren, indem Sie den Pfeil **(<<)** auswählen und so die Ansicht für die **UI-Steuerelementzuordnung** erweitern. Wenn Sie nach einem übergeordneten, gleichgeordneten oder untergeordneten Steuerelement suchen möchten, können Sie an einer die oft ausgegebene Befehlszeilen Stelle auf die Zuordnung klicken und mit den Pfeiltasten durch die Struktur blättern.
 
-![Eigenschaften für Tests der programmierten UI](../test/media/codedui_2.png)
+![Testeigenschaften für codierte UI](../test/media/codedui_2.png)
 
 > [!TIP]
 > Wenn beim Auswählen eines Steuerelements in Ihrer Anwendung keine Eigenschaften oder keine Steuerelemente in der UI-Steuerelementzuordnung angezeigt werden, stellen Sie sicher, dass das Steuerelement im Anwendungscode über eine eindeutige ID verfügt. Diese eindeutige ID kann ein HTML-ID-Attribut oder eine WPF-UId sein.
 
 Öffnen Sie als nächstes das Kontextmenü der Eigenschaft für das UI-Steuerelement, das Sie überprüfen möchten, und zeigen Sie dann auf **Assertion hinzufügen**. Wählen Sie im Dialogfeld **Assertion hinzufügen** den **Vergleichsoperator** für die Assertion aus, z.B. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, und geben Sie unter **Vergleichswert** den Wert für die Assertion ein.
 
-![Testassertionen der programmierten UI](../test/media/codedui_3.png)
+![Testassertionen für codierte UI](../test/media/codedui_3.png)
 
 Wenn Sie alle Assertionen für den Test hinzugefügt haben, wählen Sie **OK** aus.
 
@@ -198,7 +198,7 @@ Wählen Sie **Code generieren** aus, um den Code für die Assertionen zu generie
 
 - Fügt der UI-Zuordnung (*UIMap.uitest*) eine Methode mit dem Namen `AssertForAddTwoNumbers` hinzu. Diese Datei wird im **Editor für Tests der programmierten UI** geöffnet, in dem Sie die Assertionen bearbeiten können.
 
-     ![Assert mithilfe des Editors für Tests der programmierten UI bearbeiten](../test/media/cuit_editor_assert.png)
+     ![Assert mithilfe des Test-Editors für codierte UI bearbeiten](../test/media/cuit_editor_assert.png)
 
      Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -295,7 +295,7 @@ Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mi
 
     - Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Verwenden von HTML5-Steuerelementen in Tests der programmierten UI](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - Codierungsleitfaden für Tests der programmierten UI:
+    - Codierungsleitfaden für Tests der codierten UI:
 
        - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919741"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222752"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 
@@ -61,9 +61,9 @@ Wenn Sie automatische Updates deaktivieren möchten, können Sie das Feature fü
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Benachrichtigungen zum Absturz von und zu nicht reagierenden Erweiterungen
 
-In **Visual Studio 2017 (Version 15.3)** werden Sie von Visual Studio benachrichtigt, wenn die Vermutung besteht, dass eine Erweiterung während einer vorherigen Sitzung zu einem Absturz beigetragen hat. Wenn Visual Studio abstürzt, speichert das Programm den Ausnahmestapel. Beim nächsten Start von Visual Studio untersucht es den Stapel. Es beginnt dabei auf der Blattebene und arbeitet sich zur Basis herunter. Wenn Visual Studio ermittelt, dass ein Frame zu einem Modul einer installierten und aktivierten Erweiterung gehört, wird eine Benachrichtigung angezeigt.
+Sie werden von Visual Studio benachrichtigt, wenn die Vermutung besteht, dass eine Erweiterung während einer vorherigen Sitzung zu einem Absturz beigetragen hat. Wenn Visual Studio abstürzt, speichert das Programm den Ausnahmestapel. Beim nächsten Start von Visual Studio untersucht es den Stapel. Es beginnt dabei auf der Blattebene und arbeitet sich zur Basis herunter. Wenn Visual Studio ermittelt, dass ein Frame zu einem Modul einer installierten und aktivierten Erweiterung gehört, wird eine Benachrichtigung angezeigt.
 
-Neu in **Visual Studio 2017 Version 15.6**: Visual Studio sendet ebenfalls eine Benachrichtigung, wenn eine Erweiterung vermutlich dazu führt, dass die Benutzeroberfläche nicht mehr reagiert.
+Visual Studio sendet Ihnen ebenfalls eine Benachrichtigung, wenn eine Erweiterung vermutlich dazu führt, dass die Benutzeroberfläche nicht mehr reagiert.
 
 Sie können diese Benachrichtigung ignorieren oder eine der folgenden Maßnahmen ergreifen:
 

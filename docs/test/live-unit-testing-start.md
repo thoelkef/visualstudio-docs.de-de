@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950304"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223769"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -34,13 +34,13 @@ Die vollständige Visual Basic-Projektmappe kann aus dem Repository [MicrosoftDo
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-Für dieses Tutorial ist die Installation von Visual Studio 2017 Enterprise Edition Version 15.3 mit der .NET Core 2.0-Arbeitsauslastung erforderlich.
+Für dieses Tutorial ist die Installation der Visual Studio Enterprise-Edition mit der .NET Core 2.0-Workload erforderlich.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Projektmappe und Klassenbibliotheksprojekt erstellen
 
 Erstellen Sie zunächst eine Visual Studio-Projektmappe mit dem Namen `UtilityLibraries`, die ein einfaches .NET-Standard-Klassenbibliotheksprojekt, `StringLibrary`, enthält. Sie können `StringLibrary` in C# oder Visual Basic schreiben.
 
-Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie Visual Studio 2017 und führen Sie zum Erstellen der Projektmappe die folgenden Schritte aus:
+Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie Visual Studio und führen Sie zum Erstellen der Projektmappe die folgenden Schritte aus:
 
 1. Klicken Sie in der Menüleiste von Visual Studio auf **Datei** > **Neu** > **Projekt**.
 

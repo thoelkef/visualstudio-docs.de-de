@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934665"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323276"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihres ersten ASP.NET Core-Webdiensts in F#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihres ersten ASP.NET Core-Webdiensts in F\#
 
 In dieser 5- bis 10-minütigen Einführung in F# in Visual Studio erstellen Sie eine ASP.NET Core-Webanwendung in F#.
 
@@ -28,7 +28,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 Zunächst müssen Sie ein Projekt für die ASP.NET Core-Web-API erstellen. Der Projekttyp enthält Vorlagendateien, die schon bevor Sie daran gearbeitet haben, einen funktionsfähigen Webdienst darstellen.
 
-1. Öffnen Sie Visual Studio 2017.
+1. Öffnen Sie Visual Studio.
 
 2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
 

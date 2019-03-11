@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927606"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223532"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -82,7 +82,7 @@ Es existieren folgende „Gehe zu“-Befehle, die im Menü **Bearbeiten** unter 
 
 - **Zu Datei wechseln** (**STRG**+**1**, **STRG**+**F**): zur angegebenen Datei in der Projektmappe wechseln.
 
-- **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln (neu in Visual Studio 2017 Version 15.8).
+- **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln.
 
 - **Gehen zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
 
@@ -105,7 +105,7 @@ Mithilfe der „Gehe zu Definition“ gelangen Sie zur Definition des ausgewähl
 Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **F12**
-**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen (neu in Visual Studio 2017, Version 15.4).
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen.
 
 ## <a name="peek-definition"></a>Peek-Definition
 

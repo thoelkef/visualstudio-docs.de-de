@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841428"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428634"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -69,8 +69,8 @@ Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetz
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Dev Essentials | Nicht zutreffend  | 2 Monate | Nein. Nur für neue Abonnenten verfügbar |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |

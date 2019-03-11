@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84eda800cec594eaad390dc973152e094620b319
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908788"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222921"
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
@@ -30,17 +30,19 @@ Das Feature **Gehe zu Definition** navigiert zur Quelle eines Typs oder Members 
 
 ### <a name="ctrl-click-go-to-definition"></a>„Gehe zu Definition“ mit STRG+Klick
 
-In Visual Studio 2017 Version 15.4 gibt es eine einfachere Möglichkeit für Mausbenutzer, um schnell auf **Gehe zu Definition** zuzugreifen. Symbole werden anklickbar, wenn Sie **STRG** drücken und auf den Typ oder Member zeigen. Drücken Sie die Taste **STRG**, und klicken Sie auf ein Symbol, um schnell zu dessen Definition zu navigieren. So einfach ist das!
+Mit der Kombination **STRG**+**Klick** können Mausbenutzer schnell auf **Gehe zu Definition** zugreifen. Symbole werden anklickbar, wenn Sie **STRG** drücken und auf den Typ oder Member zeigen. Drücken Sie die Taste **STRG**, und klicken Sie auf ein Symbol, um schnell zu dessen Definition zu navigieren. So einfach ist das!
 
 ![Animation: „Gehe zu Definition“ per Mausklick](../ide/media/click_gotodef.gif)
 
-Die Zusatztaste für **Gehe zu Definition** per Mausklick können Sie ändern, indem Sie zu **Extras** > **Optionen** > **Text-Editor** > **Allgemein** navigieren und aus der Dropdownliste **Zusatztaste verwenden** entweder **ALT** oder **STRG+ALT** auswählen. Sie können **Gehe zu Definition** per Mausklick auch deaktivieren, indem Sie das Kontrollkästchen **Mausklick zum Wechseln zur Definition aktivieren** deaktivieren.
+Die Zusatztaste für **Gehe zu Definition** per Mausklick können Sie ändern, indem Sie zu **Tools** > **Optionen** > **Text-Editor** > **Allgemein** navigieren und aus der Dropdownliste **Use modifier key** (Zusatztaste verwenden) entweder **ALT** oder **STRG**+**ALT** auswählen. Sie können **Gehe zu Definition** per Mausklick auch deaktivieren, indem Sie das Kontrollkästchen **Mausklick zum Wechseln zur Definition aktivieren** deaktivieren.
 
 ![Aktivieren des Mausklicks zum Wechsel zur Definition](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Peek-Definition
 
-Das Feature **Definition einsehen** ermöglicht eine Vorschau der Definition eines Typs, ohne Ihre Position im Editor verlassen zu müssen. Wenn Sie die Tastatur verwenden, platzieren Sie den Textcursor an einer beliebigen Stelle innerhalb des Typs oder Members, und drücken Sie **ALT+F12**. Wenn Sie die Maus verwenden, können Sie im Kontextmenü auf **Definition einsehen** klicken. In Visual Studio 2017 Version 15.4 und höher gibt es eine neue Möglichkeit, um eine Definition mithilfe der Maus einzusehen. Wechseln Sie zunächst zu **Extras** > **Optionen** > **Text-Editor** > **Allgemein**. Wählen Sie die Option **Definition in der Vorschauansicht öffnen** aus, klicken Sie auf **OK**, und schließen Sie das Dialogfeld **Optionen**.
+Das Feature **Definition einsehen** ermöglicht eine Vorschau der Definition eines Typs, ohne Ihre Position im Editor verlassen zu müssen. Wenn Sie die Tastatur verwenden, platzieren Sie den Textcursor an einer beliebigen Stelle innerhalb des Typs oder Members, und drücken Sie **ALT+F12**. Wenn Sie die Maus verwenden, können Sie im Kontextmenü auf **Definition einsehen** klicken.
+
+Wenn Sie die Funktion **STRG**+**Klick** aktivieren möchten, navigieren Sie zu **Tools** > **Optionen** > **Text-Editor** > **Allgemein**. Wählen Sie die Option **Definition in der Vorschauansicht öffnen** aus, klicken Sie auf **OK**, und schließen Sie das Dialogfeld **Optionen**.
 
 ![Festlegen der Option, Definitionen per Mausklick einzusehen](../ide/media/editor_options_peek_view.png)
 
@@ -67,7 +69,7 @@ Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Cons
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Anzeigen von dekompilierten Quelldefinitionen anstelle von Metadaten (C#)
 
-In Visual Studio 2017 Version 15.6 können Sie jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#** > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
+Sie können jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#** > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
 
 ![Anzeigen einer dekompilierten Definition](media/go-to-definition-decompiled-sources.png)
 

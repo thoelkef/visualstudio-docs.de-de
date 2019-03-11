@@ -11,20 +11,26 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954894"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221394"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
 
-Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt. Diese Features sind rein experimentell und werden möglicherweise in einer zukünftigen Version geändert oder komplett aus Visual Studio entfernt. In diesem Thema werden die Optionen in Visual Studio 2017 beschrieben. Wenn Sie Visual Studio 2015 verwenden, wählen Sie in der Auswahl oberhalb des Inhaltsverzeichnisses **2015** aus.
+Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt. Diese Features sind rein experimentell und werden möglicherweise in einem zukünftigen Release geändert oder komplett aus Visual Studio entfernt.
 
-Drücken Sie **STRG + Q**, um `Quick Launch` zu aktivieren, und geben Sie anschließend „experimentell“ ein, um auf diese Eigenschaftenseite zuzugreifen. Der Schnellstart findet die Seite nach den ersten Buchstaben. Sie können auch darauf zugreifen, indem Sie **Tool | Optionen** auswählen, den **Text-Editor** und **C/C++** erweitern und anschließend **Experimentell** auswählen.
+::: moniker range="vs-2017"
 
-Diese Features sind mit einer Visual Studio 2017-Installation verfügbar.
+In diesem Artikel werden die Optionen in Visual Studio 2017 beschrieben. Wenn Sie Visual Studio 2015 verwenden, wählen Sie in der Auswahl oberhalb des Inhaltsverzeichnisses **2015** aus.
+
+::: moniker-end
+
+Drücken Sie **STRG** + **Q**, um `Quick Launch` zu aktivieren, und geben Sie anschließend „experimentell“ ein, um auf diese Eigenschaftenseite zuzugreifen. Der Schnellstart findet die Seite nach den ersten Buchstaben. Sie können auch darauf zugreifen, indem Sie **Tool** > **Optionen** auswählen, den **Text-Editor** und **C/C++** erweitern und anschließend **Experimentell** auswählen.
+
+Diese Features sind mit einer Visual Studio-Installation verfügbar.
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
@@ -33,10 +39,15 @@ Diese Features sind mit einer Visual Studio 2017-Installation verfügbar.
 
 Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie z.B. <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur Integer oder Funktionen angezeigt, die Integer zurückgeben. Standardmäßig ist Predictive IntelliSense deaktiviert.
 
+::: moniker range="vs-2017"
+
 ## <a name="enable-faster-project-load"></a>Aktivieren von „Schnelleres Laden von Projekten“
 
-**Visual Studio 2017, Version 15.3 und höher**: Diese Funktion heißt jetzt **Zwischenspeichern des Projekts aktivieren** und wurde auf die Eigenschaftenseite [VC++-Projekteinstellungen](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) verschoben.
+Ab Visual Studio 2017, Version 15.3 und höher heißt diese Funktion **Enable Project Caching** (Zwischenspeichern des Projekts aktivieren) und wurde auf die Eigenschaftenseite [VC++-Projekteinstellungen](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) verschoben.
+
 Durch diese Option kann Visual Studio Projektdaten zwischenspeichern, damit es, wenn Sie die Projekte das nächste Mal öffnen, die zwischengespeicherten Daten abrufen kann, statt sie erneut aus den Projektdateien berechnen zu müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.
+
+::: moniker-end
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Zusätzliche Features im Visual Studio Marketplace
 
@@ -55,4 +66,5 @@ Weitere Text-Editor-Features finden Sie in [Visual Studio Marketplace](https://m
 ## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)
-- [Umgestaltung in C++ (VC-Blog)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Umgestaltung in C++ (VC-Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+)

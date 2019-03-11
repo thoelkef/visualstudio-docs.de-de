@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712527"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223623"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -114,5 +114,5 @@ Wir haben uns nur einige der Features von Visual Studio angesehen, um uns mit de
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht der Visual Studio-IDE](../get-started/visual-studio-ide.md)
-- [Weitere Features von Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Features von Visual Studio](../ide/advanced-feature-overview.md)
 - [Ändern von Design und Schriftfarben](../ide/quickstart-personalize-the-ide.md)
