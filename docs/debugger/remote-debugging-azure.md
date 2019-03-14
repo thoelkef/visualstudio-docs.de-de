@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710824"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526463"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf IIS in Azure in Visual Studio 2017
 
@@ -198,7 +198,7 @@ In diesem Tutorial verwenden wir Visual Studio 2017.
 2. Klicken Sie in Visual Studio auf **Debuggen > an den Prozess anhängen** (Strg + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017 können Sie erneut an den gleichen Prozess, die Sie zuvor mit angefügte Anfügen **Debuggen > an Prozess anfügen...** UMSCHALT+ALT+P
+    > In Visual Studio 2017 und höheren Versionen, können Sie erneut an den gleichen Prozess, die Sie zuvor mit angefügte Anfügen **Debuggen > an Prozess anfügen...** UMSCHALT+ALT+P
 
 3. Legen Sie das Feld „Qualifizierer“ auf **\<Name_des_Remotecomputers>:4022** fest.
 4. Klicken Sie auf **Aktualisieren**.

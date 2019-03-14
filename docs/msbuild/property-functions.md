@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623059"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737034"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
@@ -166,7 +166,7 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 |int BitwiseXor(int first, int second)|Führt einen bitweisen `XOR`-Vorgang für das erste und zweite Element aus (first ^ second).|
 |int BitwiseNot(int first)|Führt einen bitweisen `NOT`-Vorgang aus (~first).|
 |bool IsOsPlatform(string platformString)|Gibt an, ob die aktuelle Betriebssystemplattform `platformString` ist. `platformString` muss ein Mitglied von <xref:System.Runtime.InteropServices.OSPlatform> sein.|
-|bool IsOSUnixLike|„TRUE“, wenn das aktuelle Betriebssystem ein Unix-System ist.|
+|bool IsOSUnixLike()|„TRUE“, wenn das aktuelle Betriebssystem ein Unix-System ist.|
 |string NormalizePath(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Pfads ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem enthält.|
 |string NormalizeDirectory(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Verzeichnisses ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem und einen nachstehenden Schrägstrich enthält.|
 |string EnsureTrailingSlash(string path)|Wenn der angegebene Pfad keinen nachgestellten Schrägstrich besitzt, fügen Sie einen hinzu. Wenn der Pfad eine leere Zeichenfolge ist, ändern Sie diesen nicht.|

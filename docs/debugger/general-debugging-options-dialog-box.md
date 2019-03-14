@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689303"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526539"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen für das Debuggen
 
@@ -54,7 +54,7 @@ Unter Umständen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Code in 
 
 **Haltepunktfilter aktivieren**: können Sie Filter an Haltepunkten festlegen, sodass sie nur bestimmte Prozesse, Threads oder Computer gelten.
 
-**Verwenden Sie das neue Ausnahmehilfsprogramm**: ermöglicht der Ausnahmen-Hilfe (Visual Studio 2017), die den Ausnahmen-Assistenten ersetzt.
+**Verwenden Sie das neue Ausnahmehilfsprogramm**: ermöglicht der Ausnahmen-Hilfe, die den Ausnahmen-Assistenten ersetzt. (Ausnahmen-Hilfe ist ab Visual Studio 2017 unterstützt)
 
 > [!NOTE]
 > Für verwalteten Code, der diese Option wurde bereits aufgerufen **Ausnahmen-Assistenten aktivieren** .
@@ -158,7 +158,7 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 
 Wenn Sie eine ältere Version von Visual Studio verwenden, können einige zusätzlichen Optionen vorhanden sein.
 
-**Ausnahmen-Assistenten aktivieren**: für verwalteten Code ermöglicht es den Ausnahmen-Assistenten. In Visual Studio 2017 ersetzt der Ausnahmen-Hilfe des Ausnahmen-Assistenten.
+**Ausnahmen-Assistenten aktivieren**: für verwalteten Code ermöglicht es den Ausnahmen-Assistenten. Ab Visual Studio 2017, ersetzt der Ausnahmen-Hilfe des Ausnahmen-Assistenten.
 
 **Aufrufliste für Ausnahmefehler entladen**: bewirkt, dass die **Aufrufliste** Fenster aus, um ein Rollback die Aufrufliste zu dem Punkt, bevor der Ausnahmefehler aufgetreten ist.
 

@@ -2,7 +2,7 @@
 title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841174"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736917"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -34,8 +34,9 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 1. Öffnen Sie Visual Studio 2017.
 
 2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+   (Alternativ können Sie die Tastenkombination **STRG**+**UMSCHALT**+**N** verwenden.)
 
-3. Erweitern Sie im linken Dialogfeld **Neues Projekt** den Eintrag **C#**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *Calculator*.
+3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei ***Calculator***.
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
 ## <a name="create-the-app"></a>Erstellen der App
 
-Zunächst befassen Sie sich mit grundlegenden Berechnungen von Integern in C#. Daraufhin fügen Sie Code hinzu, um einen einfachen Rechner zu erstellen. Dann wird erläutert, wie der Code optimiert werden muss, um Funktionen hinzuzufügen. Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
+Zunächst befassen Sie sich mit grundlegenden Berechnungen von Integern in C#. Daraufhin fügen Sie Code hinzu, um einen einfachen Rechner zu erstellen. – Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
 
-Beginnen Sie mit der Berechnung von Integern in C#.
+### <a name="explore-integer-math"></a>Erkunden von arithmetischen Operationen mit ganzen Zahlen
+
+Beginnen Sie mit grundlegenden Berechnungen von Integern in C#.
 
 1. Löschen Sie im Code-Editor den „Hallo Welt“-Standardcode.
 
@@ -81,15 +84,23 @@ Beginnen Sie mit der Berechnung von Integern in C#.
             Console.ReadKey();
     ```
 
+    Beachten Sie dabei, dass Ihnen die IntelliSense-Funktion in Visual Studio die Möglichkeit bietet, den Eintrag automatisch zu vervollständigen.
+
+    ![Animation von Code zur Berechnung von Integern mit der IntelliSense-Funktion für die automatische Vervollständigung in der Visual Studio-IDE](./media/integer-math-intellisense.gif)
+
 1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
 
    ![Auswählen der Schaltfläche „Calculator“ zum Ausführen der App aus der Symbolleiste](./media/csharp-console-calculator-button.png)
 
-   Ein neues Konsolenfenster wird geöffnet, das die Summe von 42 + 119 zeigt.
+   Ein Konsolenfenster wird geöffnet, das die Summe von 42 und 119 und somit **161** anzeigt.
 
-1. Versuchen Sie jetzt, die Codezeile `int c = a + b;` zu ändern, indem Sie einen anderen Operator verwenden, z. B. `-` für die Subtraktion, `*` für die Multiplikation oder */* für die Division.
+    ![Konsolenfenster mit den Ergebnissen der Berechnung von Integern](./media/csharp-console-integer-math.png)
 
-    Beachten Sie, dass das Ergebnis sich ebenfalls ändert, wenn Sie den Operator ändern und das Programm ausführen.
+1. **(Optional)** Sie können den Operator ändern, um das Ergebnis zu ändern. Zum Beispiel können Sie den `+`-Operator in der Codezeile `int c = a + b;` in `-` für Subtraktion, in `*` für Multiplikation oder in `/` für Division ändern. Wenn Sie dann das Programm ausführen, ändert sich auch das Ergebnis.
+
+1. Schließen Sie das Konsolenfenster.
+
+### <a name="add-code-to-create-a-calculator"></a>Hinzufügen von Code zum Erstellen eines Rechners
 
 Als Nächstes fügen Sie Ihrem Projekt komplexeren Rechnercode hinzu.
 
@@ -165,6 +176,10 @@ Als Nächstes fügen Sie Ihrem Projekt komplexeren Rechnercode hinzu.
 
     ![Konsolenfenster mit der Rechner-App und Anweisungen zu den auszuführenden Aktionen](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Hinzufügen von Funktionen zum Rechner
+
+Optimieren Sie den Code, um weitere Funktionen hinzuzufügen.
+
 ### <a name="add-decimals"></a>Hinzufügen von Dezimalzahlen
 
 Die Rechner-App akzeptiert derzeit nur ganze Zahlen und gibt auch keine Dezimalzahlen zurück. Dies können Sie ändern, indem Sie Code hinzufügen, der die Angabe von Dezimalzahlen zulässt.
@@ -178,6 +193,8 @@ Gehen Sie daher wie folgt vor, um den Code für die Verarbeitung von Dezimalzahl
 1. Drücken Sie **STRG** + **F**, um das Steuerelement **Suchen und Ersetzen** zu öffnen.
 
 1. Ändern Sie sämtliche Instanzen der `int`-Variablen in `float`.
+
+   Stellen Sie sicher, dass Sie im Steuerelement **Suchen und Ersetzen** die Optionen **Groß-/Kleinschreibung beachten** (**ALT**+**C**) und **Nur ganzes Wort suchen** (**ALT**+**W**) ein- bzw. ausschalten.
 
     ![Animation des Steuerelements „Suchen und Ersetzen“, die zeigt, wie die Variable „int“ in „float“ geändert wird.](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wenn Sie weitere Informa
 
 ## <a name="see-also"></a>Siehe auch
 
+* [C#-IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Tutorial: Debuggen von C#-Code mit Visual Studio](tutorial-debugger.md)
