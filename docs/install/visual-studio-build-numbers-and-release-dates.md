@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/27/2019
+ms.date: 03/07/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954133"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567408"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -27,6 +27,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.8 | Freigabe | 5. März 2019 | 15.9.28307.481 |
 | 15.9.7 | Freigabe | 12. Februar 2019 | 15.9.28307.423 |
 | 15.0.21 | Freigabe | 12. Februar 2019 | 15.0.26228.73 |
 | 15.9.6 | Freigabe | 24. Januar 2019 | 15.9.28307.344 |
@@ -177,6 +178,10 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. März 2019 | 16.0.28705.295 |
+| 16.0.0 | Vorschauversion 4.1 Svc1 | 6. März 2019 | 16.0.28705.295 |
+| 16.0.0 | Release Candidate 1 (RC.1) | 5. März 2019 | 16.0.28701.123 |
+| 16.0.0 | Vorschauversion 4.1 | 5. März 2019 | 16.0.28701.123 |
 | 16.0.0 | Release Candidate (RC) | 27. Februar 2019 | 16.0.28625.133 |
 | 16.0.0 | Vorschauversion 4 | 27. Februar 2019 | 16.0.28625.133 |
 | 16.0.0 | Vorschauversion 3 | 13. Februar 2019 | 16.0.28608.199 |

@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943544"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525068"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Optionen, Text-Editor, XML, Formatierung
 
-Verwenden Sie die Eigenschaftenseite **Formatierung**, um anzugeben, wie Elemente und Attribute in Ihren XML-Dokumenten formatiert werden. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die Eigenschaftenseite **Formatierung** den Knoten **Text-Editor** > **XML** > **Formatierung**.
+Verwenden Sie die Optionsseite **Formatierung**, um anzugeben, wie Elemente und Attribute in Ihren XML-Dokumenten formatiert werden. Wählen Sie für den Zugriff auf XML-Formatierungsoptionen **Extras** > **Optionen** > **Text-Editor** > **XML** und dann **Formatierung** aus.
 
 ## <a name="attributes"></a>Attribute
 
@@ -30,7 +30,7 @@ Formatiert Attribute nicht neu. Dies ist die Standardeinstellung.
 
 **Attribute jeweils in einer eigenen Zeile ausrichten**
 
-Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden.
+Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Wenn ein Element eine Mischung aus Text und Markup enthält, wird der Inhalt als
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: How to: Create XML documentation (Visual Basic) (Vorgehensweise: Erstellen von XML-Dokumentation in Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Codegenerierung](../code-generation-in-visual-studio.md)
+- [XML-Optionen – Sonstiges](options-text-editor-xml-miscellaneous.md)
+- [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
