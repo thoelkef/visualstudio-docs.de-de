@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930284"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525081"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Optionen, Text-Editor, XML, Sonstiges
 
-Verwenden Sie die Eigenschaftenseite **Sonstiges**, um die Einstellungen für die automatische Vervollständigung und das Schema für den XML-Editor zu ändern. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die Eigenschaftenseite **Sonstiges** den Knoten **Text-Editor** > **XML** > **Sonstiges**.
+Verwenden Sie die Optionsseite **Sonstiges**, um die Einstellungen für die automatische Vervollständigung und das Schema für den XML-Editor zu ändern. Wählen Sie für den Zugriff auf sonstige XML-Optionen **Extras** > **Optionen** > **Text-Editor** > **XML** und dann **Sonstiges** aus.
 
 ## <a name="auto-insert"></a>Automatisch einfügen
 
@@ -47,15 +47,15 @@ Schemata und DTDs (Document Type Definitions) werden von HTTP-Speicherorten auto
 
 **Beim Öffnen von Dateien in Gliederungsmodus wechseln**
 
-Aktiviert beim Öffnen einer Datei die Gliederungsfunktion. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Aktiviert beim Öffnen einer Datei die Gliederungsansicht. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
 ## <a name="caching"></a>Zwischenspeicherung
 
 **Schemas**
 
-Gibt den Speicherort des Schemacaches an. Die Schaltfläche zum Durchsuchen (...) öffnet den aktuellen Speicherort des Schemacaches in einem neuen Fenster. Der Standardspeicherort ist *\<Management Studio-Installationsverzeichnis>* \Xml\Schemas.
+Gibt den Speicherort des Schemacaches an. Die Schaltfläche **Durchsuchen** öffnet den aktuellen Speicherort des Schemacaches in einem neuen Fenster. Der Standardspeicherort ist *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: How to: Create XML documentation (Visual Basic) (Vorgehensweise: Erstellen von XML-Dokumentation in Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Codegenerierung](../code-generation-in-visual-studio.md)
+- [XML-Optionen – Formatierung](options-text-editor-xml-formatting.md)
+- [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

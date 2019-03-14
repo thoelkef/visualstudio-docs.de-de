@@ -1,6 +1,6 @@
 ---
 title: 'Fehler: Debuggen kann nicht auf dem Webserver | Microsoft-Dokumentation'
-ms.date: 05/23/2017
+ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688211"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526294"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
