@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949160"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736991"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
 
@@ -36,9 +36,9 @@ Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestim
 |Kategorie|Verknüpfung|Verknüpfungsbeschreibung|
 |--------------|--------------| - |
 |Zuletzt verwendet|@mru<br /><br /> Beispiel: `@mru font`|Zeigt bis zu fünf Elemente der Liste **Zuletzt verwendet** an.|
-|Menüs|@menu<br /><br /> Beispiel: `@menu font`|Schränkt die Suche auf Menüelemente ein.|
+|Menüs|@menu<br /><br /> Beispiel: `@menu project`|Schränkt die Suche auf Menüelemente ein.|
 |Optionen|@opt<br /><br /> Beispiel: `@opt font`|Schränkt die Suche auf Einstellungen im Dialogfeld **Optionen** ein.|
-|Dokumente|@doc<br /><br /> Beispiel: `@doc font`|Schränkt die Suche auf Dateinamen und Pfade der geöffneten Dokumente ein, die den Suchkriterien entsprechen. Der Text in den Dateien selbst wird nicht durchsucht.|
+|Dokumente|@doc<br /><br /> Beispiel: `@doc program.cs`|Schränkt die Suche auf Dateinamen und Pfade der geöffneten Dokumente ein, die den Suchkriterien entsprechen. Der Text in den Dateien selbst wird nicht durchsucht.|
 
 > [!NOTE]
 > Die Tastenkombinationen können auf der Seite **Tastatur** im Dialogfeld **Optionen** unter **Allgemein** geändert werden.

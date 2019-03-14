@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317054"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526762"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace für Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -69,7 +69,7 @@ IntelliTrace hilft Ihnen außerdem beim Debuggen von Fehlern, die schwer reprodu
 
 IntelliTrace-Daten können aus den folgenden Quellen gespeichert werden:
 
-- Eine IntelliTrace-Sitzung in Visual Studio 2017 Enterprise, Visual Studio 2015 Enterprise oder früheren Versionen von Visual Studio Ultimate.
+- Eine IntelliTrace-Sitzung in Visual Studio 2015 Enterprise oder höher oder früheren Versionen von Visual Studio Ultimate.
 
 - Eine Testsitzung in Microsoft Test Manager
 
@@ -131,7 +131,7 @@ Standardmäßig erfasst IntelliTrace nur IntelliTrace-Ereignisse: Debuggerereign
 
 - **SharePoint 2010- und SharePoint 2013-Anwendungsereignisse**
 
-     Sie können Benutzerprofilereignisse und eine Teilmenge von einheitlichen Ereignissen des Protokollierungs-Systems (ULS) für SharePoint 2010- und 2013-Anwendungen erfassen, die außerhalb von Visual Studio ausgeführt werden. Sie können diese Ereignisse in einer ITRACE-Datei speichern. Erfordert Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, eine frühere Version von Visual Studio Ultimate oder [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) auf **Ablaufverfolgung** Modus.
+     Sie können Benutzerprofilereignisse und eine Teilmenge von einheitlichen Ereignissen des Protokollierungs-Systems (ULS) für SharePoint 2010- und 2013-Anwendungen erfassen, die außerhalb von Visual Studio ausgeführt werden. Sie können diese Ereignisse in einer ITRACE-Datei speichern. Erfordert Visual Studio Enterprise 2015 oder höher, eine frühere Version von Visual Studio Ultimate oder [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) auf **Ablaufverfolgung** Modus.
 
      Wenn Sie die ITRACE-Datei öffnen, geben Sie eine SharePoint-Korrelations-ID ein, um die entsprechenden Webanforderung zu suchen, die aufgezeichneten Ereignisse anzuzeigen und das Debuggen von einem bestimmten Ereignis aus zu starten. Wenn die Datei Ausnahmefehler enthält, können Sie eine Korrelations-ID auswählen, um das Debuggen einer Ausnahme zu starten.
 

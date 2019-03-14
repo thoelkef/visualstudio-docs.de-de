@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713151"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526580"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -78,7 +78,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 

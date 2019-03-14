@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763649"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567214"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise  
  Verweise zwischen Projekten sind Verweise auf Projekte mit Assemblys, die Sie im Dialogfeld **Projekt** erstellen. Visual Studio kann anhand eines Pfads zum Projekt nach einer Assembly suchen.  
   
- Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im BIN-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: [Fehler: Die Abhängigkeit „Datei“ in Projekt „Projekt“ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis „Datei“ überschreiben würde](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Weitere Informationen finden Sie unter [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) und [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im BIN-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: [Fehler: Die Abhängigkeit „Datei“ in Projekt „Projekt“ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis „Datei“ überschreiben würde](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Weitere Informationen finden Sie unter [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) und [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Anstelle eines Projekt-zu-Projekt-Verweises wird ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  

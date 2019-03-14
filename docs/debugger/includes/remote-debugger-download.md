@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56740781"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526872"
 ---
 Klicken Sie auf dem Remotegerät oder Server, die Sie debuggen möchten, anstatt Visual Studio-Computers, herunterladen Sie und installieren Sie die richtige Version der Remotetools, über die Links in der folgenden Tabelle.
 
 - Laden Sie die neuesten Remoteserver-Verwaltungstools für Ihre Version von Visual Studio herunter. Die neueste Version der Remotetools ist kompatibel mit früheren Versionen von Visual Studio, jedoch frühere Versionen der Remotetools nicht mit späteren Versionen von Visual Studio kompatibel sind.
 - Laden Sie die Remoteserver-Verwaltungstools mit derselben Architektur wie der Computer, der Sie sie auf installieren. Wenn Sie eine 32-Bit-app auf einem Remotecomputer unter einem 64-Bit-Betriebssystem debuggen möchten, installieren Sie z. B. die 64-Bit-Remoteserver-Verwaltungstools.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Bis eigenständige Remotetools für Visual Studio-2019 verfügbar sind, wenn Sie den Remotedebugger mit Visual Studio-2019, verwenden müssen [den Remotedebugger](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) in Ihrer eigenen Installation von Visual Studio-2019 und entweder kopieren, und führen Sie es auf Ihre Remote machine oder führen Sie sie aus einer Dateifreigabe.
+
+::: moniker-end
 
 |Version|Link|Hinweise|
 |-|-|-|
