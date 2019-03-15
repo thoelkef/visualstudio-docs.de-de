@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696713"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867281"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation-Element (Visual Studio-Vorlagen)
-Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird die **neues Projekt** Dialogfeld beim Erstellen eines Projekts. Wenn dieses Element auf `true` festgelegt wird, wird der Benutzer aufgefordert, einen Speicherort anzugeben. Wird `false` angegeben, wird er dazu nicht aufgefordert. (In diesem Fall wird ein temporäres Projekt erstellt.)
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird die **neues Projekt** Dialogfeld beim Erstellen eines Projekts. Wenn dieses Element, um festgelegt ist `true`, wird der Benutzer, für einen sicheren aufgefordert wird Speicherort. Wenn `false`, und klicken Sie dann sie nicht aufgefordert werden (d. h. ein temporäres Projekt erstellt wird).
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>Syntax
 
@@ -59,7 +65,7 @@ Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird d
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel wird der Wert von `PromptForSaveOnCreation` gleich `false` festgelegt. Dadurch wird angegeben, dass das Projekt als temporäres Projekt erstellt werden kann.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird d
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

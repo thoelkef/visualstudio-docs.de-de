@@ -1,6 +1,6 @@
 ---
 title: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919208"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872742"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919208"
 
 ## <a name="cause"></a>Ursache
 
-Eine öffentliche oder geschützte Eigenschaft in einem öffentlichen Typ zurückgegeben ein Array.
+Eine Eigenschaft gibt ein Array zurück.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Eigenschaften und Typen. Dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -52,6 +54,16 @@ Sie können eine Warnung, die für eine Eigenschaft eines Attributs ausgelöst w
 Sie können die Warnung unterdrücken, wenn die Eigenschaft Teil ist eine [Data Transfer Object (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) Klasse.
 
 Unterdrücken Sie andernfalls keine Warnung dieser Regel.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Leistung) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Beispiel für einen Verstoß
 

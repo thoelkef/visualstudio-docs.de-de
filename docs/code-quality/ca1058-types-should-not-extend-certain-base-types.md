@@ -1,6 +1,6 @@
 ---
 title: 'CA1058: Typen sollten bestimmte Basistypen nicht erweitern.'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5d88f08746035792913601b280a0794a9ff50bf2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915529"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871313"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern.
 
@@ -31,33 +31,31 @@ ms.locfileid: "55915529"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Diese Regel meldet derzeit Typen, die von der folgenden Typen abgeleitet werden:
+
+Ein Typ erweitert eine der folgenden Basistypen:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
-
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
-
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.DictionaryBase?displayProperty=fullName>
-
 - <xref:System.Collections.Queue?displayProperty=fullName>
-
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.SortedList?displayProperty=fullName>
-
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>Regelbeschreibung
- Für .NET Framework, Version 1, wurde empfohlen, leiten Sie die neue Ausnahmen von <xref:System.ApplicationException>. Die Empfehlung wurde geändert und neue Ausnahmen sollten abgeleitet <xref:System.Exception?displayProperty=fullName> oder eine ihrer Unterklassen in die <xref:System> Namespace.
+Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
 
- Erstellen Sie eine Unterklasse von nicht <xref:System.Xml.XmlDocument> sollten Sie eine XML-Ansicht der zugrunde liegenden Modell oder die Datenquelle zu erstellen.
+## <a name="rule-description"></a>Regelbeschreibung
+
+Für .NET Framework, Version 1, wurde empfohlen, leiten Sie die neue Ausnahmen von <xref:System.ApplicationException>. Die Empfehlung wurde geändert und neue Ausnahmen sollten abgeleitet <xref:System.Exception?displayProperty=fullName> oder eine ihrer Unterklassen in die <xref:System> Namespace.
+
+Erstellen Sie eine Unterklasse von nicht <xref:System.Xml.XmlDocument> sollten Sie eine XML-Ansicht der zugrunde liegenden Modell oder die Datenquelle zu erstellen.
 
 ### <a name="non-generic-collections"></a>Nicht generische Auflistungen
- Verwenden Sie und/oder Erweitern von generischen Auflistungen, wann immer möglich. Nicht generische Auflistungen in Ihrem Code können nicht erweitert werden, es sei denn, die Sie bereits geliefert haben.
 
- **Beispiele für die falsche Verwendung**
+Verwenden Sie und/oder Erweitern von generischen Auflistungen, wann immer möglich. Nicht generische Auflistungen in Ihrem Code können nicht erweitert werden, es sei denn, die Sie bereits geliefert haben.
+
+**Beispiele für die falsche Verwendung**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -69,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **Beispiele für die richtige Verwendung**
+**Beispiele für die richtige Verwendung**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -82,7 +80,19 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem unterschiedlichen Basistyp oder einer generischen Auflistung ein.
+
+Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem unterschiedlichen Basistyp oder einer generischen Auflistung ein.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel für Verstöße zu <xref:System.ApplicationException>. Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel Verstöße zu <xref:System.Xml.XmlDocument>. Es ist sicher, um eine Warnung über eine nicht generische Auflistung zu unterdrücken, wenn der Code zuvor veröffentlicht wurden.
+
+Unterdrücken Sie keine Warnung dieser Regel für Verstöße zu <xref:System.ApplicationException>. Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel Verstöße zu <xref:System.Xml.XmlDocument>. Es ist sicher, um eine Warnung über eine nicht generische Auflistung zu unterdrücken, wenn der Code zuvor veröffentlicht wurden.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1058.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).

@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 992937ea0c90e3734a38ba6f2e56b19918fd7375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709173"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867325"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML zur Startseite
 
@@ -85,7 +85,7 @@ Anwenden die benutzerdefinierten Startseite in **Tools** > **Optionen** > **Umge
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die Visual Studio-Startseite enthält jetzt eine Registerkarte, die eine Registerkarte des Webbrowsers und eine Registerkarte "MyButton" angezeigt. Sie können benutzerdefinierte Startseiten, mit denen andere Funktionen erstellen den *Code-Behind* Modell eine benutzerdefinierte DLL-Datei hinzufügen, siehe [Benutzersteuerelement hinzufügen, um die Startseite](../extensibility/adding-user-control-to-the-start-page.md). Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, veröffentlichen Sie die resultierende VSIX-Datei in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website oder eine andere Website oder Netzwerk. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
+Die Visual Studio-Startseite enthält jetzt eine Registerkarte, die eine Registerkarte des Webbrowsers und eine Registerkarte "MyButton" angezeigt. Sie können benutzerdefinierte Startseiten, mit denen andere Funktionen erstellen den *Code-Behind* Modell eine benutzerdefinierte DLL-Datei hinzufügen, siehe [Benutzersteuerelement hinzufügen, um die Startseite](../extensibility/adding-user-control-to-the-start-page.md). Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, veröffentlichen Sie die resultierende VSIX-Datei in die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website oder eine andere Website oder Netzwerk. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642832"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867563"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
   In der Regel wird eine SharePoint-Lösung auf einem SharePoint Server mithilfe einer Lösung-Paketdatei (.wsp) bereitgestellt. Sie können Visual Studio verwenden, um Ihre SharePoint-Projektelemente in Features zu organisieren und zum Erstellen eines Pakets zum Bereitstellen Ihrer SharePoint-Funktionen.
 
  Dieses Thema enthält folgende Informationen:
 
--   [Erstellen von Funktionen und Pakete](#Creating)
+-   [Erstellen von Funktionen und Pakete](#create-features-and-packages)
 
--   [Feature und Toolunterstützung Verpacken](#Tools)
+-   [Feature und toolunterstützung für die paketerstellung](#feature-and-packaging-tool-support)
 
--   [Bereitstellen von SharePoint-Lösungen](#Deploying)
+-   [Bereitstellen von SharePoint-Lösungen](#deploy-sharepoint-solutions)
 
--   [Bereitstellen von Dateien in SharePoint-Lösungen](#DeployingFiles)
+-   [Bereitstellen von Dateien in SharePoint-Lösungen](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Erstellen von Funktionen und Pakete
  Sie können Visual Studio verwenden, zum Gruppieren von verwandten SharePoint-Elemente in einem *Feature*. Eine Funktion für die Definition eines Contacts-Liste gehören z. B. die Listeninstanz und die Listendefinition. Sie können diese beiden Elemente in einer einzelnen Funktion für die Bereitstellung kombinieren. Weitere Informationen zu Funktionen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkID=169183).

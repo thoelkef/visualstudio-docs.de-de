@@ -1,6 +1,6 @@
 ---
 title: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955296"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868284"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.
 
@@ -36,7 +36,9 @@ ms.locfileid: "55955296"
 
 ## <a name="cause"></a>Ursache
 
-Eine Enumeration ohne eine angewendeten <xref:System.FlagsAttribute?displayProperty=fullName> definiert sich nicht auf einen Member mit dem Wert 0 (null); oder eine Enumeration, die eine angewendet wurde <xref:System.FlagsAttribute> definiert ein Element mit dem Wert 0 (null), aber der Name ist nicht 'None' oder die Enumeration definiert mehrere NULL-Werten Elemente.
+Eine Enumeration ohne eine angewendeten <xref:System.FlagsAttribute?displayProperty=fullName> definiert sich nicht auf ein Element, das den Wert 0 (null) aufweist. Oder eine Enumeration, die eine angewendet hat <xref:System.FlagsAttribute> definiert ein Element mit dem Wert 0 (null) der Name ist jedoch nicht "None". Oder die Enumeration definiert mehrere Elemente NULL-Werten.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Enumerationen, dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -51,6 +53,16 @@ Definieren Sie einen Member mit dem Wert 0 (null), um einen Verstoß gegen diese
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
 Unterdrücken Sie keine Warnung dieser Regel, mit Ausnahme von Enumerationen, die zuvor veröffentlicht haben.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 

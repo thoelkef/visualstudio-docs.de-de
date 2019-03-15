@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634824"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869317"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Aktivieren des Zugriffs auf VBA erstellen oder Öffnen ein Visual Studio-Tools für die Microsoft Office System-Projekt
 
@@ -40,8 +40,6 @@ Sie müssen Zugriff auf das Visual Basic für Applikationen (VBA)-Projektsystem 
  Sie sollten beachten, dass die Deaktivierung des Zugriffs auf das Visual Basic for Applications-Projektsystem Sie nicht allein vor Viren schützt. Dadurch wird lediglich die Verbreitung einiger Viren auf andere Dokumente verhindert, wenn Ihr Computer mit einem Makrovirus infiziert werden sollte. Diese Option ist standardmäßig als zusätzliche Schutzstufe für Ihren Computer deaktiviert; die Aktivierung macht Ihren Computer nicht anfälliger für Viren, wenn Sie die Best Practices hinsichtlich der Sicherheit befolgen.
 
  Der beste Schutz für Office-Makroviren besteht im Ausführen von Office mit der hohen oder sehr hohen Sicherheitsstufe, nur Makros von vertrauen, bekannte Quellen überprüft und mit Sicherheitspatches und Virenscannern auf dem Laufenden bleiben.
-
- Weitere Informationen zum Schutz Ihres PCs vor Viren und sonstigem bösartigen Code finden Sie unter [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Sie können aktivieren oder deaktivieren Sie die Option **Zugriff auf Visual Basic-Projekt vertrauen** manuell.
 

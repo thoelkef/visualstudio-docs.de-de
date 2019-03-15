@@ -19,27 +19,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d30567186cd1f96d0df9af9493c87cbea4edd0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607381"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870398"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.
 
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
-- [Erstellen benutzerdefinierte Websitespalten](#BKMK_CreatingCustSiteCols).
+- [Erstellen Sie benutzerdefinierte Websitespalten](#create-custom-site-columns).
 
-- [Erstellen einen benutzerdefinierten Inhaltstyp](#BKMK_CreateCustContType).
+- [Erstellen Sie einen benutzerdefinierten Inhaltstyp](#create-a-custom-content-type).
 
-- [Erstellen Sie eine Liste von](#BKMK_CreateList).
+- [Erstellen Sie eine Liste](#create-a-list).
 
-- [Erstellen Sie eine Liste von](#BKMK_CreateList).
-
-- [Testen der Anwendung](#BKMK_TestApp).
+- [Testen Sie die Anwendung](#test-the-application).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640232"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873109"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debuggen von SharePoint-Lösungen
   SharePoint-Lösungen können mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers gedebuggt werden. Beim Starten des Debuggens, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektdateien auf dem SharePoint-Server bereitgestellt, und klicken Sie dann eine Instanz der SharePoint-Website im Webbrowser geöffnet. In den folgenden Abschnitte wird erklärt, wie SharePoint-Anwendungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gedebuggt werden.
 
--   [Aktivieren des Debuggings](#EnableDebug)
+-   [Aktivieren Sie das Debuggen](#enable-debugging)
 
--   [F5-Debugging und Bereitstellung](#Deployment)
+-   [Prozess zum Debuggen und Bereitstellung von F5](#f5-debug-and-deployment-process)
 
--   [SharePoint-Projektfunktionen](#Features)
+-   [SharePoint-Projektfunktionen](#sharepoint-project-features)
 
--   [Debuggen von Workflows](#Workflow)
+-   [Debuggen von workflows](#debug-workflows)
 
--   [Debuggen von Funktionsereignisempfängern](#FeatureEvents)
+-   [Debuggen von Funktionsereignisempfängern](#debug-feature-event-receivers)
 
--   [Erweiterte Debuginformationen aktivieren](#EnhancedDebug)
+-   [Aktivieren Sie Ehanced Debuginformationen](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Debuggen aktivieren
  Wenn Sie eine SharePoint-Lösung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstmals debuggen, werden Sie in einem Dialogfeld darauf hingewiesen, dass die Datei web.config nicht zum Aktivieren des Debuggens konfiguriert ist. (Die Datei web.config wird erstellt, wenn Sie SharePoint-Server installieren. Weitere Informationen finden Sie unter [arbeiten mit "Web.config"-Dateien](http://go.microsoft.com/fwlink/?LinkID=149266).) Das Dialogfeld bietet die Optionen, das Projekt entweder ohne Debugging auszuführen oder die Datei web.config so zu ändern, dass das Debuggen aktiviert wird. Wenn Sie die erste Option auswählen, wird das Projekt normal ausgeführt. Bei Auswahl der zweiten Option wird die Datei "web.config" für Folgendes konfiguriert:
@@ -137,7 +137,7 @@ ms.locfileid: "56640232"
 
  Um die automatische Aktivierung des Features in SharePoint zu deaktivieren und ordnungsgemäße Debuggen von Funktionsereignisempfängern zu ermöglichen, legen Sie den Wert der des Projekts **aktive Bereitstellungskonfiguration** Eigenschaft **keine Aktivierung** vor dem Debuggen. Wenn Sie Ihre SharePoint-Anwendung dann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuggen, aktivieren Sie die Funktion manuell in SharePoint. Um das Feature zu aktivieren, öffnen Sie die **Websiteaktionen** Menü in SharePoint **Standorteinstellungen**, wählen Sie die **Websitefunktionen verwalten** verknüpfen, und wählen Sie dann die **Aktivieren** Schaltfläche neben der Funktion, um weiterhin wie gewohnt debuggen.
 
-## <a name="enable-enhanced-debug-information"></a>Aktivieren einer erweiterten Debuginformationen
+## <a name="enable-enhanced-debugging-information"></a>Erweiterte Debuginformationen aktivieren
  Aufgrund der manchmal komplexen Interaktionen zwischen den [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Prozess (devenv.exe), die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Hostprozess (*vssphost4.exe*), SharePoint, und der WCF-Ebene, und Diagnostizieren von Fehlern, die auftreten, während Erstellen, bereitstellen und So weiter können eine Herausforderung darstellen. Um Unterstützung beim Beheben solcher Fehler zu erhalten, können Sie erweiterte Debuginformationen aktivieren. Wechseln Sie hierzu in die Windows-Registrierung zum folgenden Registrierungsschlüssel:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

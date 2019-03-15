@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841728"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867705"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
-- [Hinzufügen einer Funktion und den Funktionsereignisempfänger](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg einer Funktion und eines Funktionsereignisempfängers](#add-a-feature-and-feature-event-receiver).
 
-- [Konfigurieren und Bereitstellen der SharePoint-Anwendung](#BKMK_ConfigSharePointApp).
+- [Konfigurieren und Bereitstellen die SharePoint-Anwendung](#configure-and-deploy-the-sharepoint-application).
 
-- [Ausführen der SharePoint-Anwendung](#BKMK_RunSPApp).
+- [Führen Sie die SharePoint-Anwendung](#run-the-sharepoint-application).
 
-- [Anzeigen und Interpretieren der Profilerstellungsergebnisse](#BKMK_ViewResults).
+- [Anzeigen und Interpretieren von den profilergebnissen](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

@@ -29,16 +29,24 @@ items:
   items:
   - name: Codeanalyse für verwalteten Code
     items:
-    - name: Häufig gestellte Fragen zu FxCop-Analysetools
-      href: fxcop-analyzers-faq.md
-    - name: Migrieren von FxCop
-      href: fxcop-analyzers.yml
+    - name: FxCop-Analysetools
       items:
-      - name: Installieren von FxCop-Analysetools
+      - name: FAQ
+        href: fxcop-analyzers-faq.md
+      - name: Installieren
         href: install-fxcop-analyzers.md
+      - name: Konfigurieren
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: Konfigurationsoptionen
+          href: fxcop-analyzer-options.md
+      - name: Migrieren aus statischer Codeanalyse
+        href: fxcop-analyzers.yml
+    - name: FAQ zu Analysetools
+      href: analyzers-faq.md
     - name: Installieren von Roslyn-Analysetools
       href: install-roslyn-analyzers.md
-    - name: Konfigurieren und Verwenden von Roslyn-Analysetools
+    - name: Verwenden und Konfigurieren von Roslyn-Analysetools
       href: use-roslyn-analyzers.md
     - name: Aktivieren der automatischen Codeanalyse
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -1470,9 +1478,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd-Fehler
       href: fxcopcmd-errors.md
-ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699667"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868119"

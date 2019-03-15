@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223194"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870359"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -102,14 +102,14 @@ Wenn Sie ein Abhängigkeitsdiagramm öffnen-, das mit Projektmappenelementen ver
     > [!NOTE]
     > In der Standardeinstellung die **Buildvorgang** auf die Ebenendiagrammdatei (.layerdiagram)-Abhängigkeitsdatei-Eigenschaftensatz auf **überprüfen** , damit das Diagramm in den Validierungsprozess eingeschlossen wird.
 
-     Die **Fehlerliste** Fenster zeigt alle auftretenden Fehler. Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
+     Die **Fehlerliste** Fenster zeigt alle auftretenden Fehler. Weitere Informationen zu Validierungsfehlern finden Sie unter [Ebenenvalidierungsprobleme](#troubleshoot-layer-validation-issues).
 
 2.  Um die Quelle der einzelnen Fehler anzuzeigen, doppelklicken Sie auf den Fehler in der **Fehlerliste** Fenster.
 
     > [!NOTE]
     > Visual Studio, möglicherweise anstelle der Quelle des Fehlers eine Code Map angezeigt. Dies tritt auf, wenn der Code weist eine Abhängigkeit einer Assembly, die im Diagramm für die Abhängigkeit nicht angegeben ist oder der Code fehlt eine Abhängigkeit, die durch das Abhängigkeitsdiagramm angegeben wird. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu codezuordnungen finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Verwalten von Fehlern finden Sie unter [Validierungsfehler verwalten](#ManageErrors).
+3.  Verwalten von Fehlern finden Sie unter [Lösen von Ebenenvalidierungsfehlern](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Überprüfen von Code an der Eingabeaufforderung
 
@@ -147,7 +147,7 @@ Wenn Sie ein Abhängigkeitsdiagramm öffnen-, das mit Projektmappenelementen ver
 
      Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu MSBuild finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
 
-   Weitere Informationen zu Validierungsfehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
+   Weitere Informationen zu Validierungsfehlern finden Sie unter [Ebenenvalidierungsprobleme](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Validierungsfehler verwalten
 
@@ -195,11 +195,11 @@ Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds du
 
     Dies schließt das Abhängigkeitsdiagramm in den Validierungsprozess.
 
-Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Validierungsfehler](#ManageErrors).
+Verwalten von Fehlern in das Fenster "Fehlerliste" finden Sie unter [Lösen von Ebenenvalidierungsfehlern](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Ebenenvalidierungsprobleme beheben
 
-In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Lösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
+In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Lösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [Ebenenvalidierungsprobleme](#troubleshoot-layer-validation-issues).
 
 |**Problem**|**Mögliche Ursache**|**Auflösung**|
 |-|-|-|

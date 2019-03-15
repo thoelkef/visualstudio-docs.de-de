@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924464"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873667"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analysieren und Modellieren der Architektur
 
@@ -109,5 +109,5 @@ Eine DSL ist eine Notation, die für einen bestimmten Zweck entworfen wird. In V
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuigkeiten](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Neuerungen bei der Modellierung in Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps und Anwendungslebenszyklus-Verwaltung](/azure/devops/user-guide/devops-alm-overview)

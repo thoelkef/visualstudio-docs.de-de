@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873209"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869017"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Erste Schritte (SharePoint-Entwicklung in Visual Studio)
   Dieser Abschnitt bietet Ihnen Unterstützung bei den ersten Schritten mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um SharePoint-Lösungen zu entwickeln, die die Vorteile von [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]nutzen.
 
- Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) und [Erstellen von SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) und [Erstellen von SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint bietet eine webbasierte Zusammenarbeitsplattform. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] stellt viele Projektvorlagen zum Erstellen von SharePoint-Websites und -Inhalten bereit, einschließlich Listendefinitionen, Workflows, Business Data Connectivity-Modelle und Websitedefinitionen. Außerdem können Sie Erweiterungen für die SharePoint-Projekte und -Tools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen.
 

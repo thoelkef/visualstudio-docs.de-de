@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614310"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868171"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Vorgehensweise: Erstellen von Office-Projekten in Visual Studio
   Sie können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Erstellen von VSTO-Add-in und Dokumentebene Anpassungen für Microsoft Office-Anwendungen. Weitere Informationen zu diesen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614310"
 
 7. Klicken Sie auf die Schaltfläche **OK** .
 
-    > [!NOTE]
-    >  Add-In-Projekte werden immer gespeichert, wenn sie erstellt werden. Sie können nicht als temporäre Projekte erstellt werden. Weitere Informationen zu temporären Projekten finden Sie unter [temporäre Projekte](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Add-In-Projekte werden immer gespeichert, wenn sie erstellt werden. Sie können nicht als temporäre Projekte erstellt werden. Weitere Informationen zu temporären Projekten finden Sie unter [temporäre Projekte](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>So erstellen Sie ein Projekt für Anpassungen auf Dokumentebene
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Wenn die IDE festgelegt ist, verwenden Sie Visual Basic-entwicklungseinstellungen auf der **Datei** im Menü wählen **neu** > **Projekt**.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
-
-   > [!NOTE]
-   >  Standardmäßig wird für Office-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt.  Weitere Informationen finden Sie unter [.NET Framework-Clientprofil](/dotnet/framework/deployment/client-profile).
 
 2. Erweitern Sie im Vorlagenbereich unter dem Knoten für die Sprache, die Sie verwenden möchten, **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614310"
 4. Wählen Sie in der Liste der Projektvorlagen eine Projektvorlage auf Dokumentebene aus. Eine Liste der verfügbaren Projektvorlagen auf Dokumentebene, finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Wenn Projektvorlagen nicht sichtbar sind bei der Auswahl der **Office-Add-ins** Knoten stellen Sie sicher, dass **.NET Framework 4** oder höher im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Office-Projektvorlagen sind für beide .NET Framework-Versionen sichtbar.
+   > Wenn Projektvorlagen nicht sichtbar sind bei der Auswahl der **Office-Add-ins** Knoten stellen Sie sicher, dass **.NET Framework 4** oder höher ausgewählt ist.
 
 5. In der **Namen** geben einen Namen für das Projekt. Dieser Name wird standardmäßig auch für das Dokument verwendet. Falls Sie für die IDE Visual C#-Entwicklungseinstellungen oder Allgemeine Entwicklungseinstellungen festgelegt haben, müssen Sie zusätzlich einen Speicherort und einen Projektmappennamen eingeben.
 
    > [!NOTE]
-   >  Der Pfad des Projektspeicherorts oder der Projektname dürfen keine Ersatzzeichen enthalten. Wenn Sie die Projektmappe für die Offlineverwendung bereitstellen möchten, müssen außerdem die Zeichen im Projektnamen den Spezifikationen des HTTP-Protokolls entsprechen.
+   > Der Pfad des Projektspeicherorts oder der Projektname dürfen keine Ersatzzeichen enthalten. Wenn Sie die Projektmappe für die Offlineverwendung bereitstellen möchten, müssen außerdem die Zeichen im Projektnamen den Spezifikationen des HTTP-Protokolls entsprechen.
 
 6. Klicken Sie auf die Schaltfläche **OK** .
 

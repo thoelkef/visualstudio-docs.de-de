@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie und konfigurieren Sie die Roslyn-Analysetools
+title: Regelschweregrad Analyzer und unterdrücken
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924603"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873501"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurieren und Verwenden von Roslyn-Analyzer-Regeln
+# <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
 .NET Compiler Platform ("Roslyn") Analyzer-Regeln, oder *Diagnose*, Ihren C#- oder Visual Basic-Code analysieren, während der Eingabe. Jeder Diagnose enthält einen Standardzustand Schweregrad und unterdrücken, der für Ihr Projekt überschrieben werden kann. Dieser Artikel behandelt die Einstellung Schweregrad für Regelsatz, verwenden von Regelsätzen und Unterdrücken von Verletzungen.
 
@@ -91,7 +91,7 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Festzulegende Regel Regelsatzdatei Schweregrad in der Regel
 
-1. Öffnen die Regel legen-Datei durch Doppelklick im **Projektmappen-Explorer**, wählen **öffnen aktiven Regelsatz** auf das Kontextmenü des der **Analysen** Knoten oder durch auswählen **Öffnen** auf die **Codeanalyse** Eigenschaftenseite für das Projekt.
+1. Öffnen der [Regelsatz](analyzer-rule-sets.md) Datei durch Doppelklick im **Projektmappen-Explorer**, wählen **öffnen aktiven Regelsatz** auf das Kontextmenü des der **Analysen** Knoten, oder indem **öffnen** auf die **Codeanalyse** Eigenschaftenseite für das Projekt.
 
 1. Navigieren Sie zu der Regel durch Erweitern der enthaltenden Assembly.
 
