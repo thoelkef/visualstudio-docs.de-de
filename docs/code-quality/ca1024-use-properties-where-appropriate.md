@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Nach Möglichkeit Eigenschaften verwenden.'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922302"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869256"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden.
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922302"
 
 ## <a name="cause"></a>Ursache
 
-Eine öffentliche oder geschützte Methode hat einen Namen, die mit beginnt `Get`nimmt keine Parameter und gibt einen Wert, der kein Array ist.
+Eine Methode hat einen Namen, die mit beginnt `Get`nimmt keine Parameter und gibt einen Wert, der kein Array ist.
+
+Diese Regel nur sucht standardmäßig an öffentliche und geschützte Methoden, dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -69,11 +71,21 @@ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode einer Ei
 
 Unterdrücken Sie eine Warnung dieser Regel, wenn die Methode, die mindestens eines der zuvor aufgeführten Kriterien erfüllt.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Steuern des Eigenschaft-Erweiterung im Debugger
+## <a name="configurability"></a>Konfigurierbarkeit
 
-Ein Grund, dass Programmierer vermeiden, verwenden eine Eigenschaft ist, da sie nicht, dass den Debugger automatisch erweitert möchten. Beispielsweise die Eigenschaft wird eventuell ein großes Objekt zuweisen oder P/Invoke aufrufen, aber es möglicherweise nicht tatsächlich keine Observable Nebeneffekte.
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-Sie können verhindern, dass den Debugger automatisch erweitert Eigenschaften durch Anwenden von <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Das folgende Beispiel zeigt dieses Attribut auf eine Instance-Eigenschaft angewendet wird.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Steuerelement-Eigenschaft-Erweiterung im debugger
+
+Ein Grund, die Programmierer verwenden Sie eine Eigenschaft ist, da sie nicht möchten, dass der Debugger automatisch, dass es. Beispielsweise die Eigenschaft wird eventuell ein großes Objekt zuweisen oder P/Invoke aufrufen, aber es möglicherweise nicht tatsächlich keine Observable Nebeneffekte.
+
+Sie können den Debugger von Autoexpanding Eigenschaften verhindern, durch Anwenden von <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Das folgende Beispiel zeigt dieses Attribut auf eine Instance-Eigenschaft angewendet wird.
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel enthält mehrere Methoden, Eigenschaften konvertiert werden sollen, und mehrere Funktionen, sollte nicht verwendet werden, weil sie nicht wie Felder Verhalten.
+Das folgende Beispiel enthält mehrere Methoden, Eigenschaften konvertiert werden sollen, und mehrere Funktionen, sollte nicht verwendet werden, da sie sich wie Felder Verhalten nicht.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

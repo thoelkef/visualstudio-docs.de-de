@@ -1,6 +1,6 @@
 ---
 title: 'CA1063: IDisposable korrekt implementieren.'
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945754"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868313"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 
@@ -52,7 +52,9 @@ Die <xref:System.IDisposable?displayProperty=nameWithType> Schnittstelle ist nic
 
 Verstoß gegen eine der folgenden Muster löst die Warnung CA1063.
 
-Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() muss Dipose(true) und den Finalizer sollten Dispose(false) aufzurufen. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
+Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene bereitstellen `protected virtual void Dispose(bool)` Methode. `Dispose()` sollten Aufrufen `Dipose(true)`, und den Aufruf des Finalizers sollten `Dispose(false)`. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, die Sie definieren müssen `Dispose(bool)` und nennen Sie sie. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -83,6 +85,16 @@ Alle <xref:System.IDisposable> sollten Typen implementieren die [Dispose-Muster]
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
 Unterdrücken Sie keine Warnung dieser Regel.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Pseudocodebeispiel
 

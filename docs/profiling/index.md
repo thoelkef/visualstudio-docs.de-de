@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Messen der Leistung einer App mithilfe der Profilerstellung | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.'
+description: 'Erfahren Sie, wie Sie Visual Studio für die Profilerstellung der Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

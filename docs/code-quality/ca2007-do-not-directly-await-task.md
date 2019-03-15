@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Muss eine Aufgabe nicht direkt abgewartet'
+title: 'CA2007: Eine Aufgabe nicht direkt abwarten'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699679"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869288"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Muss eine Aufgabe nicht direkt abgewartet
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Eine Aufgabe nicht direkt abwarten
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Sie können konfigurieren, ob Sie asynchrone Methoden ausschließen, die von dieser Regel keinen Wert zurückgeben möchten. Um diese Arten von Methoden auszuschließen, fügen Sie folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt hinzu:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Sie können auch konfigurieren, welche Ausgabe von Arten der Assembly, die diese Regel angewendet werden soll. Z. B. hinzufügen um diese Regel nur auf Code angewendet, die eine Konsolenanwendung oder eine dynamisch verknüpfte Bibliothek (d. h. keine UI-app), erzeugt die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Siehe auch
 

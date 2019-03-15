@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653969"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869346"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
   Um einen Entwicklungscomputer so zu konfigurieren, dass Sie die Microsoft Office Developer Tools in Visual Studio verwenden können, befolgen Sie die Anweisungen in diesem Thema. Sie müssen Administratorrechte auf dem Entwicklungscomputer besitzen, um diese Schritte auszuführen.
@@ -34,7 +34,7 @@ ms.locfileid: "56653969"
 3.  Wenn Sie eine englische Version von Visual Studio verfügen, aber nicht englische Einstellungen für Windows verwenden, können Sie installieren die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack, finden Sie unter [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Nachrichten in derselben Sprache wie Windows. Bei nicht englischen Versionen von Visual Studio wird automatisch das Sprachpaket installiert. Das Language Pack steht in der [Microsoft-Downloadcenter](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Siehe auch
-- [Neuerungen in Office-Entwicklung](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

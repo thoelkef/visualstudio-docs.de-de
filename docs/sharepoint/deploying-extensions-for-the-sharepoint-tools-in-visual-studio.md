@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876264"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868058"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio
 
 Zum Bereitstellen einer SharePoint-Tools-Erweiterungs erstellen Sie eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX)-Paket mit der Erweiterungsassembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Ein VSIX-Paket ist eine komprimierte Datei, die den Open Packaging Conventions (OPC) Standard folgt. VSIX-Paketen haben die *VSIX* Erweiterung.
 
-Nachdem Sie ein VSIX-Paket erstellt haben, können andere Benutzer die VSIX-Datei, um Ihre Erweiterung zu installieren ausführen. Wenn ein Benutzer die Erweiterung installiert wird, werden alle Dateien im Ordner %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions installiert. Um die Erweiterung bereitzustellen, können Sie das VSIX-Paket zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website, oder Sie können verteilen Sie das Paket für Ihre Kunden andere Weise, wie z. B. das Paket auf einer Netzwerkfreigabe oder irgendeiner andere Website hosten.
+Nachdem Sie ein VSIX-Paket erstellt haben, können andere Benutzer die VSIX-Datei, um Ihre Erweiterung zu installieren ausführen. Wenn ein Benutzer die Erweiterung installiert wird, werden alle Dateien im Ordner %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions installiert. Um die Erweiterung bereitzustellen, können Sie das VSIX-Paket zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website, oder Sie können verteilen Sie das Paket für Ihre Kunden andere Weise, wie z. B. das Paket auf einer Netzwerkfreigabe oder einige andere Web-hosting Website.
 
-Weitere Informationen zum Erstellen von VSIX-Pakete und sie zum Bereitstellen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847), finden Sie unter [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).
+Weitere Informationen zum Erstellen von VSIX-Pakete und sie zum Bereitstellen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/), finden Sie unter [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).
 
  Sie können ein VSIX-Paket erstellen, mit der **VSIX-Projekt** Vorlage in Visual Studio, oder Sie können manuell ein VSIX-Paket erstellen.
 
