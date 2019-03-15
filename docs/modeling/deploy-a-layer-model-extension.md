@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915620"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983103"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
 
@@ -37,9 +37,19 @@ Die Erweiterung wird zu einer VSIX-Datei kompiliert, die Sie auf anderen Compute
 
 ### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
+::: moniker range="vs-2017"
 
-2.  Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **Deinstallieren**.
+1. Wählen Sie in Visual Studio **Tools** > **Erweiterungen und Updates**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie in Visual Studio **Erweiterungen** > **Verwalten von Erweiterungen**.
+
+::: moniker-end
+
+2. Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **Deinstallieren**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Installieren Sie eine Erweiterung für Team Foundation Server
 

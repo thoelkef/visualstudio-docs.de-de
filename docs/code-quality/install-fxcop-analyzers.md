@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270575"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983454"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installieren von FxCop-Analysen in Visual Studio
 
@@ -54,12 +54,27 @@ Verwenden Sie die folgenden Richtlinien, um zu bestimmen, welche Version des Pak
 
 Sie können auf Visual Studio 2017 Version 15.5 und höher installieren die [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) -Erweiterung, die alle die FxCop-Analysetools für verwaltete Projekte enthält.
 
+::: moniker range="vs-2017"
+
 1. Wählen Sie in Visual Studio **Tools** > **Erweiterungen und Updates**.
 
    Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
    > [!NOTE]
    > Laden Sie alternativ die Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie in Visual Studio **Erweiterungen** > **Verwalten von Erweiterungen**.
+
+   Die **Verwalten von Erweiterungen** Dialogfeld wird geöffnet.
+
+   > [!NOTE]
+   > Laden Sie alternativ die Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ Sie können auf Visual Studio 2017 Version 15.5 und höher installieren die [Mic
 
 1. Öffnen Sie Visual Studio erneut.
 
+::: moniker range="vs-2017"
+
 Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Tools** > **Erweiterungen und Updates**. In der **Erweiterungen und Updates** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und klicken Sie dann für die Erweiterung anhand des Namens suchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Erweiterungen** > **Verwalten von Erweiterungen**. In der **Verwalten von Erweiterungen** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und suchen Sie nach dem Namen für die Erweiterung.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

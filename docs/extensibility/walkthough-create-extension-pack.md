@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718360"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983012"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Exemplarische Vorgehensweise: Erstellen eines Erweiterungspakets
 
@@ -85,7 +85,7 @@ Nun, dass die Erweiterung veröffentlicht wurde, installieren Sie es in Visual S
 
 So entfernen Sie die Erweiterung auf Ihrem Computer:
 
-1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates...** .
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
 
 2. Wählen Sie `Test Extension Pack` , und klicken Sie dann auf **Deinstallieren**. Die Erweiterung und die Liste der Erweiterungen in das Erweiterungspaket werden dann für die Deinstallation geplant.
 

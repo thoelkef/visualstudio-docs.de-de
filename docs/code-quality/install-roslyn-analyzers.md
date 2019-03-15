@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222934"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982934"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installieren von .NET Compiler Platform-Analysetools
 
@@ -37,12 +37,27 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform (*Roslyn*) Anal
 
 ## <a name="to-install-vsix-analyzers"></a>So installieren Sie die VSIX-Analysen
 
+::: moniker range="vs-2017"
+
 1. Wählen Sie in Visual Studio **Tools** > **Erweiterungen und Updates**.
 
    Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
    > [!NOTE]
    > Alternativ können Sie suchen und Laden Sie die Analyzer-Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie in Visual Studio **Erweiterungen** > **Verwalten von Erweiterungen**.
+
+   Die **Verwalten von Erweiterungen** Dialogfeld wird geöffnet.
+
+   > [!NOTE]
+   > Alternativ können Sie suchen und Laden Sie die Analyzer-Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform (*Roslyn*) Anal
 
 8. Öffnen Sie Visual Studio erneut.
 
+::: moniker range="vs-2017"
+
 Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Tools** > **Erweiterungen und Updates**. In der **Erweiterungen und Updates** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und klicken Sie dann für die Erweiterung anhand des Namens suchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Erweiterungen** > **Verwalten von Erweiterungen**. In der **Verwalten von Erweiterungen** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und suchen Sie nach dem Namen für die Erweiterung.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 
