@@ -2,7 +2,6 @@
 title: IDispError::GetHelpInfo | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087489"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160679"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  

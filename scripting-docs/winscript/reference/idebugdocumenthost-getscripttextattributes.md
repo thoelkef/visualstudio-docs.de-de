@@ -2,7 +2,6 @@
 title: Getscripttextattributes | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092715"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158996"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Gibt die Textattribute für einen Textblock Dokument zurück.  
@@ -57,7 +56,7 @@ HRESULT GetScriptTextAttributes(
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Gibt an, dass es sich bei Bezeichnern und Punktoperatoren mit den Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP bzw. identifiziert werden sollen.|  
 |GETATTRFLAG_THIS|0x0100|Gibt an, dass der Bezeichner für das aktuelle Objekt mit dem Flag SOURCETEXT_ATTR_THIS identifiziert werden sollen.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Gibt an, dass der Inhalt, und kommentieren Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Gibt an, dass der Inhalt, und kommentieren Zeichenfolgentext mit dem Flag SOURCETEXT_ATTR_HUMANTEXT identifiziert werden sollen.|  
   
  `pattr`  
  [in, out] Puffer, der die zurückgegebenen Attribute enthalten.  
