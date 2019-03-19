@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621005"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146343"
 ---
 # <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen Sie neue Projekttypen
 Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:
@@ -37,7 +37,7 @@ Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließ
 
     -   Verwaltung, einschließlich des Hinzufügens von das Projekt für die Elemente der **neues Projekt** Dialogfeld. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Die Dauerhaftigkeit des Projektzustands und einzelne Elemente. Weitere Informationen finden Sie unter [öffnen und speichern Sie Projektelemente](../../extensibility/internals/opening-and-saving-project-items.md). Persistenz der Informationen zur Lösung finden Sie unter [Lösungen](../../extensibility/internals/solutions.md).
+    -   Die Dauerhaftigkeit des Projektzustands und einzelne Elemente. Weitere Informationen finden Sie unter [öffnen und speichern Sie Projektelemente](../../extensibility/internals/opening-and-saving-project-items.md). Persistenz der Informationen zur Lösung finden Sie unter [Lösungen](../../extensibility/internals/solutions-overview.md).
 
     -   Konfigurationsunabhängigen Eigenschaften im Eigenschaftenfenster angezeigt. Weitere Informationen finden Sie unter [Eigenschaften erweitern](../../extensibility/internals/extending-properties.md).
 
