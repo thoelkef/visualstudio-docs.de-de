@@ -1,6 +1,6 @@
 ---
 title: Hello World-Erweiterung-Lernprogramm | Microsoft-Dokumentation
-ms.date: 07/10/2017
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688341"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160705"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Erstellen Sie Ihrer erste Erweiterung: Hello World
 
@@ -35,52 +35,74 @@ In diesem Beispiel verwenden Visual C#-Sie beim Hinzufügen eine benutzerdefinie
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie installiert die **Visual Studio-extensionentwicklung** Workload, die die VSIX-Vorlage enthält, Sie benötigen sowie Beispielcode.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie installiert die **Visual Studio-extensionentwicklung** arbeitsauslastung aus, die die VSIX-Vorlage enthält, Sie benötigen sowie Beispielcode.
 
 > [!NOTE]
 > Sie können eine beliebige Edition von Visual Studio (Community, Professional oder Enterprise) zum Erstellen eines Visual Studio-Erweiterbarkeit-Projekts verwenden.
 
 ## <a name="create-an-extensibility-project"></a>Erstellen Sie ein Erweiterungsprojekt
 
-Schritt 1. Von der **Datei** Menü klicken Sie auf **neues Projekt**. Geben Sie am unteren Rand des Bildschirms den Namen des Projekts ein.
+::: moniker range="vs-2017"
 
-Schritt 2 Von der **Vorlagen** Menü klicken Sie auf **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann auf **VSIX-Projekt**.
+Schritt 1. Von der **Datei** , wählen Sie im Menü **neues Projekt**.
+
+Schritt 2 Klicken Sie in das Suchfeld in der oberen rechten Ecke, geben Sie "Vsix", und wählen Sie die Visualisierung C# **VSIX-Projekt**. Geben Sie "HelloWorld" für die **Namen** am unteren Rand Dialogfeld, und klicken **OK**.
 
 ![Neues Projekt](media/hello-world-new-project.png)
 
 Die Seite Erste Schritte und einige Beispielressourcen sollte jetzt angezeigt werden.
 
-::: moniker range="vs-2017"
-
 Wenn Sie lassen dieses Tutorial, und warten müssen, finden Sie das neue HelloWorld-Projekt auf die **Startseite** in die **zuletzt** Abschnitt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Schritt 1. Von der **Datei** , wählen Sie im Menü **neues Projekt**. Suchen Sie nach "Vsix", und wählen Sie die Visualisierung C# **VSIX-Projekt** und dann **Weiter**.
+
+Schritt 2 Geben Sie "HelloWorld" für die **Projektname** , und wählen Sie **erstellen**.
+
+![Neues Projekt](media/hello-world-new-project-2019.png)
+
+Daraufhin sollte das HelloWorld-Projekt in **Projektmappen-Explorer**.
 
 ::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Fügen Sie einen benutzerdefinierten Befehl hinzu
 
-Schritt 1. Wenn Sie das Manifest auswählen, können Sie sehen, welche Optionen für die Instanz, die Metadaten, die Beschreibung und die Version geändert werden.
+Schritt 1. Bei Auswahl der *vsixmanifest* Manifestdatei, Sie können sehen, welche Optionen geändert werden, z. B. Beschreibung, Autor und Version sind.
 
-Schritt 2 Mit der rechten Maustaste in des Projekts (nicht auf die Projektmappe). Klicken Sie im Kontextmenü auf **hinzufügen**, und klicken Sie dann auf **neues Element**.
+Schritt 2 Mit der rechten Maustaste in des Projekts (nicht auf die Projektmappe). Wählen Sie im Kontextmenü des **hinzufügen**, und klicken Sie dann **neues Element**.
 
-Schritt 3 Wählen Sie die **Erweiterbarkeit** Abschnitt, und klicken Sie dann auf **benutzerdefinierten Befehls**.
+Schritt 3 Wählen Sie die **Erweiterbarkeit** aus, und wählen Sie dann **benutzerdefinierten Befehls**.
 
-Schritt 4. In der **Namen** Feld am unteren Rand, geben sie einen Namen, z. B. *Command.cs*.
+Schritt 4. In der **Namen** Feld am unteren Rand, geben Sie einen Dateinamen z. B. *Command.cs*.
 
 ![benutzerdefinierter Befehl](media/hello-world-custom-command.png)
 
-In der neue Befehl aufgeführt ist **Projektmappen-Explorer** unter der **Ressourcen** Branch. Dies ist auch hier finden Sie weitere Dateien, die im Zusammenhang mit der der Befehl, z. B. die PNG und ICO-Dateien, wenn Sie das Bild ändern möchten.
+Die neue Befehlsdatei werden in **Projektmappen-Explorer**. Unter den **Ressourcen** Knoten finden Sie weitere Dateien, die im Zusammenhang mit dem Befehl. Wenn Sie das Bild ändern möchten, ist beispielsweise die PNG-Datei hier.
 
 ## <a name="modify-the-source-code"></a>Der Quellcode geändert
 
-An diesem Punkt ist die Schaltfläche, die Sie hinzufügen, ziemlich Allgemein. Sie müssen die VSCT-Datei, und die CS-Datei ändern, wenn Sie Änderungen vornehmen möchten.
+An diesem Punkt, den Befehl und die Schaltfläche ist die Text automatisch generiert und nicht sehr interessant. Sie können die VSCT-Datei, und die CS-Datei ändern, wenn Sie Änderungen vornehmen möchten.
 
-* VSCT-Datei ist, in dem Sie können Ihre Befehle umbenennen sowie definieren, in dem sie das System der Visual Studio-Befehl wechseln Sie in. Wenn Sie die VSCT-Datei untersuchen, bemerken Sie viel kommentierten Code, die erklärt, die für jeden Abschnitt des Code-Steuerelemente.
+* VSCT-Datei ist, in dem Sie können Ihre Befehle umbenennen sowie definieren, in dem sie das System der Visual Studio-Befehl wechseln Sie in. Wenn Sie die VSCT-Datei untersuchen, bemerken Sie Kommentare, die erläutern, die für jeden Abschnitt der VSCT-Code-Steuerelemente.
 
 * Die CS-Datei ist, in denen Sie Aktionen wie das Click-Ereignishandler definieren können.
+
+::: moniker range="vs-2017"
 
 Schritt 1. In **Projektmappen-Explorer**, suchen Sie die VSCT-Datei für den neuen Befehl. In diesem Fall wird Sie aufgerufen *CommandPackage.vsct*.
 
 ![Befehl Paket vsct](media/hello-world-command-package-vsct.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Schritt 1. In **Projektmappen-Explorer**, VSCT-Datei für Ihre Visual Studio-Erweiterungspaket zu finden. In diesem Fall wird Sie aufgerufen *HelloWorldPackage.vsct*.
+
+::: moniker-end
 
 Schritt 2 Ändern der `ButtonText` Parameter `Say Hello World!`.
 
@@ -96,14 +118,15 @@ Schritt 2 Ändern der `ButtonText` Parameter `Say Hello World!`.
   ...
 ```
 
-Schritt 3 Wechseln Sie zurück zur **Projektmappen-Explorer** und suchen Sie die *Command.cs* Datei. Ändern Sie die Zeichenfolge `message` für den Befehl `string.Format(..)` zu `Hello World!`.
+Schritt 3 Wechseln Sie zurück zur **Projektmappen-Explorer** und suchen Sie die *Command.cs* Datei. In der `Execute` -Methode, ändern Sie die Zeichenfolge `message` aus `string.Format(..)` zu `Hello World!`.
 
 ```csharp
   ...
-  private void MenuItemCallback(object sender, EventArgs e)
+  private void Execute(object sender, EventArgs e)
   {
+    ThreadHelper.ThrowIfNotOnUIThread();
     string message = "Hello World!";
-    string title = "Command1";
+    string title = "Command";
 
     // Show a message box to prove we were here
     VsShellUtilities.ShowMessageBox(
@@ -123,11 +146,15 @@ Stellen Sie sicher, dass die Änderungen in jeder Datei zu speichern.
 
 Sie können nun den Quellcode in der experimentellen Visual Studio-Instanz ausführen.
 
-Schritt 1. Klicken Sie auf **starten** auf der Symbolleiste. Dies erstellt das Projekt und startet den Debugger, starten eine neue Instanz von Visual Studio wird aufgerufen, die **experimentelle Instanz**.
+Schritt 1. Drücken Sie **F5** zum Ausführen der **Debuggen starten** Befehl. Dieser Befehl erstellt das Projekt und startet den Debugger, starten eine neue Instanz von Visual Studio wird aufgerufen, die **experimentelle Instanz**.
+
+::: moniker range="vs-2017"
 
 Sehen Sie die Wörter **experimentelle Instanz** in der Titelleiste von Visual Studio.
 
 ![Titelleiste für die experimentelle Instanz](media/hello-world-exp-instance.png)
+
+::: moniker-end
 
 Schritt 2 Auf der **Tools** Menü mit den **experimentelle Instanz**, klicken Sie auf **Say Hello World!**.
 
@@ -141,4 +168,5 @@ Jetzt wissen Sie die Grundlagen der Arbeit mit Visual Studio-Erweiterbarkeit, hi
 
 * [Mit der Entwicklung von Visual Studio-Erweiterungen beginnen](starting-to-develop-visual-studio-extensions.md) -Beispielen, Lernprogrammen. und veröffentlichen Ihre Erweiterung
 * [Neues in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) -neuer Erweiterungs-Features in Visual Studio 2017
+* [Neues in Visual Studio SDK 2019](whats-new-visual-studio-2019-sdk.md) -neuer Erweiterungs-Features in Visual Studio-2019
 * [In Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -erfahren Sie, die Details der Visual Studio-Erweiterbarkeit

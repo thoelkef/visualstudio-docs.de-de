@@ -2,7 +2,6 @@
 title: IActiveScriptSiteWindow | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a160b17f4a46237ab78b378664a046fe8a0e7d4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345720"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149457"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Diese Schnittstelle wird implementiert von Hosts, die eine Benutzeroberfläche auf dasselbe Objekt wie unterstützen [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosts, die nicht über eine Benutzeroberfläche, z. B. Server, unterstützen würde nicht implementiert. die `IActiveScriptSiteWindow` Schnittstelle. Die Skript-Engine greift auf diese Schnittstelle durch den Aufruf `QueryInterface` aus `IActiveScriptSite`.  

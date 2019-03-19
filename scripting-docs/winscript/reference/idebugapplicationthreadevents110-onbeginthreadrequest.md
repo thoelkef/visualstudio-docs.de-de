@@ -2,7 +2,6 @@
 title: 'IDebugApplicationThreadEvents110:: OnBeginThreadRequest | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90a9550b43dafb6bd38a68e379d486888d7bbf8d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 47791151bcfe43966c166dfbd21e1135592d8249
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345174"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152654"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
 Ein Aufruf in dem Thread, der über das PDM Thread gewechselt wurde gestartet.  
