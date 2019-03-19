@@ -33,7 +33,7 @@
 ## [Block Selection (Blockauswahl)](block-selection.md)
 ## [Editor Themes (Editor-Designs)](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Common Keyboard Shortcuts (Allgemeine Tastenkombinationen)](keyboard-shortcuts.md)
+## [Standardtastenkombinationen](keyboard-shortcuts.md)
 
 # [Debuggen](debugging.md)
 ## [Data Visualizations (Datenvisualisierungen)](data-visualizations.md)
