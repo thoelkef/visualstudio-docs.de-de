@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f168a896c218f33735c4e67f43a9833a474191ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624190"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148203"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generieren neuer Projekte: In die Hintergründe Teil 2
+
 In [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) erläutert, wie die **neues Projekt** Dialogfeld Feld wird gefüllt. Angenommen, Sie haben ausgewählt eine **Visual C#-Windows-Anwendung**, ausgefülltes der **Namen** und **Speicherort** Textfelder, und klicken auf OK.
 
 ## <a name="generating-the-solution-files"></a>Zum Erstellen der Projektmappendateien
@@ -31,7 +32,7 @@ In [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility
 
  Betrachten Sie eine typische Projektelementvorlage aus. Extrahieren Sie und untersuchen Sie die Datei "Program.cs" im Ordner "Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,9 +46,9 @@ namespace $safeprojectname$
 }
 ```
 
- Wenn Sie ein neues Windows-Anwendungsprojekt mit dem Namen einfach erstellen, die Vorlage ersetzt die `$safeprojectname$` Parameter mit dem Namen des Projekts.
+Wenn Sie ein neues Windows-Anwendungsprojekt mit dem Namen einfach erstellen, die Vorlage ersetzt die `$safeprojectname$` Parameter mit dem Namen des Projekts.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -66,7 +67,7 @@ namespace Simple
 ## <a name="a-look-inside-a-vstemplate-file"></a>Ein Einblick in ein. VSTemplate-Datei
  Eine einfache VSTEMPLATE-Datei weist Folgendes Format auf
 
-```
+```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
@@ -79,7 +80,7 @@ namespace Simple
 
  Die Tags in der \<TemplateContent > im Abschnitt Steuerelement der Generierung von neuen Projekten und Projektelementen. Hier ist die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".
 
-```
+```xml
 <TemplateContent>
   <Project File="WindowsApplication.csproj" ReplaceParameters="true">
     <ProjectItem ReplaceParameters="true"
@@ -121,7 +122,7 @@ namespace Simple
 
  Die erste und einzige \<Projekt >-Tag in die Vorlage liest:
 
-```
+```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
@@ -132,7 +133,7 @@ namespace Simple
 
  Hier ist die \<ItemGroup > von Simple.csproj, die die Projektverweisen erstellt:
 
-```
+```xml
 <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,7 +146,7 @@ namespace Simple
 
  Sie können sehen, dass diese die sechs Projektverweise, die im Projektmappen-Explorer angezeigt werden. Hier ist ein Abschnitt von einem anderen \<ItemGroup >. Viele Codezeilen wurden aus Gründen der Übersichtlichkeit gelöscht. In diesem Abschnitt werden die Settings.Designer.cs Settings.settings abhängig:
 
-```
+```xml
 <ItemGroup>
     <Compile Include="Properties\Settings.Designer.cs">
         <DependentUpon>Settings.settings</DependentUpon>
@@ -154,5 +155,6 @@ namespace Simple
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Generieren neuer Projekte: In die Hintergründe Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

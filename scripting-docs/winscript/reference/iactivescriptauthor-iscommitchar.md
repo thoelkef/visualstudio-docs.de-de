@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::IsCommitChar | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3a0b630f872e49b7fbbabf4f354755f900fb4b5e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096173"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152128"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
 Gibt einen Wert, der angibt, ob ein angegebenes Zeichen einen Anweisung Abschluss Commit von der Anwendung auslösen sollen.  

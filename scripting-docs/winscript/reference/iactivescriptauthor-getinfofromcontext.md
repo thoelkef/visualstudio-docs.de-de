@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetInfoFromContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088867"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154412"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Gibt geben Informationen und Positionen der Anker für ein angegebenes Zeichen in einem Codeblock. Dies bietet Informationen für Mitglied, IntelliSense, globale Listen und parametertipps.  

@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601022"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146525"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten Projekte verwenden Projektelemente, die Dateien darstellen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt auch Projekte, deren Daten nicht dateibasierte sind. Alle Dateien im Besitz des Projekts und die Projektdatei müssen beibehalten werden. Die IDE weist das Projekt, um sich selbst oder ein Projektelement speichern.
 
- Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions.md).
+ Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).
 
  Projektelemente können es sich um einen dateibasierten oder nicht dateibasierte sein:
 
