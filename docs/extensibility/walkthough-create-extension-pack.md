@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983012"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193704"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Exemplarische Vorgehensweise: Erstellen eines Erweiterungspakets
 
@@ -23,7 +23,7 @@ Ein Erweiterungspaket ist ein Satz von Erweiterungen, die zusammen installiert w
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
-Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 ist Visual Studio SDK als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 Das Erweiterungspaket-Feature ist ab Visual Studio 15.8 Preview 2 verfügbar.
 
@@ -31,9 +31,9 @@ Das Erweiterungspaket-Feature ist ab Visual Studio 15.8 Preview 2 verfügbar.
 
 Die Elementvorlage-Erweiterungspaket erstellt ein Erweiterungspaket mit Satz von Erweiterungen, die zusammen installiert werden können.
 
-1. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** wählen Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `Test Extension Pack`ein. Klicken Sie auf **OK**.
+1. In der **neues Projekt** Dialogfeld, und suchen Sie "Vsix", und wählen **VSIX-Projekt**. Für **Projektname**, geben Sie "Test-Erweiterungspaket". Wählen Sie **Erstellen** aus.
 
-2. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Erweiterungspaket**. Lassen Sie den Standarddateinamen (ExtensionPack1.cs) aus.
+2. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Erweiterungspaket**. Lassen Sie den Standarddateinamen (ExtensionPack1.cs) aus.
 
 3. ExtensionPack1.vsext-Datei hinzugefügt wird, die den folgenden Code enthält
 
@@ -69,13 +69,23 @@ Die Elementvorlage-Erweiterungspaket erstellt ein Erweiterungspaket mit Satz von
 
 Nun, dass die Erweiterung veröffentlicht wurde, installieren Sie es in Visual Studio, und Testen sie dort.
 
-1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates...** .
+::: moniker range="vs-2017"
 
-2. Klicken Sie auf **Online** und suchen Sie nach `Test Extension Pack`.
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio auf die **Erweiterungen** Menü klicken Sie auf **Managed Extensions**.
+
+::: moniker-end
+
+2. Klicken Sie auf **Online** und suchen Sie nach "Test-Erweiterungspaket".
 
 3. Klicken Sie auf **Download**. Die Erweiterung und die Liste der Erweiterungen in das Erweiterungspaket werden dann für die Installation geplant werden.
 
-4. Im folgenden finden Sie eine Beispiel-Erweiterungspaket herunterladen Ansicht der **Erweiterungen und Updates** Dialogfeld. Wenn Sie nur einige der enthaltenen Erweiterungen in das Erweiterungspaket installieren möchten, können Sie ändern, dass die Liste der Erweiterungen in **installieren für geplante**.
+4. Im folgenden finden Sie eine Beispiel-Erweiterungspaket herunterladen Ansicht der **Verwalten von Erweiterungen** Dialogfeld. Wenn Sie nur einige der enthaltenen Erweiterungen in das Erweiterungspaket installieren möchten, können Sie ändern, dass die Liste der Erweiterungen in **installieren für geplante**.
 
     ![-Erweiterungspaket vom Marketplace herunterladen](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ Nun, dass die Erweiterung veröffentlicht wurde, installieren Sie es in Visual S
 
 So entfernen Sie die Erweiterung auf Ihrem Computer:
 
+::: moniker range="vs-2017"
+
 1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
 
-2. Wählen Sie `Test Extension Pack` , und klicken Sie dann auf **Deinstallieren**. Die Erweiterung und die Liste der Erweiterungen in das Erweiterungspaket werden dann für die Deinstallation geplant.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio auf die **Erweiterungen** Menü klicken Sie auf **Managed Extensions**.
+
+::: moniker-end
+
+2. Wählen Sie **Test-Erweiterungspaket** , und klicken Sie dann auf **Deinstallieren**. Die Erweiterung und die Liste der Erweiterungen in das Erweiterungspaket werden dann für die Deinstallation geplant.
 
 3. Schließen Sie alle Instanzen von Visual Studio, um die Deinstallation abzuschließen.

@@ -1,6 +1,6 @@
 ---
 title: 'Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723707"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194670"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 
@@ -33,12 +33,12 @@ Die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstellenmethoden 
 
 Sie beginnen, erstellen eine benutzerdefinierte Vorlage, mit der Projektvorlagenprojekt, das Teil von Visual Studio SDK ist. In diesem Verfahren verwenden wir eine C# project-Vorlagenprojekt, aber es gibt auch ein Vorlagenprojekt für Visual Basic-Projekt. Dann fügen Sie ein VSIX-Projekt der Projektmappe, die das Projektvorlagenprojekt enthält.
 
-1. Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei** > **neu** > **Projekt** > **Visual c#**   >  **Erweiterbarkeit** > **C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.
+1. Erstellen Sie eine C# Projektvorlagenprojekt (Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt** und suchen Sie nach "Projektvorlage" ). Nennen Sie sie **MyProjectTemplate**.
 
    > [!NOTE]
    > Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Fügen Sie ein neues VSIX-Projekt (**Datei** > **neu** > **Projekt** > **Visual C#**   >  **Erweiterbarkeit** > **VSIX-Projekt**) in der gleichen Projektmappe wie das Projektvorlagenprojekt (in **Projektmappen-Explorer**, Wählen Sie den Knoten "Projektmappe", mit der rechten Maustaste und wählen Sie **hinzufügen** > **neues Projekt**). Nennen Sie sie **MyProjectWizard.**
+2. Fügen Sie ein neues VSIX-Projekt in der gleichen Projektmappe wie das Projektvorlagenprojekt (in **Projektmappen-Explorer**, wählen Sie den Knoten "Projektmappe", mit der rechten Maustaste und wählen Sie **hinzufügen** > **neues Projekt**  und suchen Sie nach "Vsix"). Nennen Sie sie **MyProjectWizard.**
 
 3. Festlegen Sie das VSIX-Projekt als Startprojekt. In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.
 
@@ -50,7 +50,7 @@ Sie beginnen, erstellen eine benutzerdefinierte Vorlage, mit der Projektvorlagen
 
 7. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)
 
-8. In der zweiten Instanz von Visual Studio versucht, ein neues Projekt mit Ihrer neuen Vorlage zu erstellen (**Datei** > **neu** > **Projekt > Visual C#**   >  **"MeinProjekt" Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse namens **Class1**. Sie haben nun eine benutzerdefinierte Projektvorlage erstellt! Beenden Sie debugging jetzt.
+8. In der zweiten Instanz von Visual Studio versucht, ein neues Projekt mit Ihrer neuen Vorlage zu erstellen (**Datei** > **neu** > **Projekt**, suchen Sie nach " "meinProjekt""). Das neue Projekt sollte angezeigt werden, mit einer Klasse namens **Class1**. Sie haben nun eine benutzerdefinierte Projektvorlage erstellt! Beenden Sie debugging jetzt.
 
 ## <a name="create-a-custom-template-wizard"></a>Erstellen Sie einen benutzerdefinierten Vorlagen-Assistenten
 
@@ -60,11 +60,11 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
 2. In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten **Projektmappen-Explorer**, sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **Ansicht** > **Fenster "Eigenschaften"**, oder drücken Sie **F4**. In der **Eigenschaften** wählen Sie im Fenster die folgenden Felder `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Fügen Sie die Assembly zum VSIX-Projekt als Ressource hinzu. Öffnen der *"Source.Extension.vsixmanifest"* und wählen Sie die **Assets** Registerkarte. In der **neue Anlage hinzufügen** Fenster für **Typ** wählen **Microsoft.VisualStudio.Assembly**, für die **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**, und für **Projekt** wählen **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
    - Ein <xref:System.Object> Array, das einen Satz von Parametern enthält, die an den Assistenten von Visual Studio übergeben.
 
-     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt. Sie müssen dem Projekt die folgenden Assemblys hinzufügen: **System** und **"System.Drawing"**.
+     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt. Fügen Sie Ihrem Projekt die folgenden Assemblys hinzu: **System** und **"System.Drawing"**.
 
 7. Erstellen Sie jetzt die **UserInputForm**. In der *WizardImplementation.cs* Datei, fügen Sie den folgenden Code nach dem Ende der `WizardImplementation` Klasse.
 
@@ -228,7 +228,7 @@ In der Reihenfolge für Ihre benutzerdefinierte Projektvorlage des benutzerdefin
 
      *C:\Programme (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     Wenn Sie nicht, dass das Tool finden, führen Sie **, in dem/r.  Sn.exe** im Befehlsfenster angezeigt. Notieren Sie sich den Pfad an.
+     Wenn Sie nicht, dass das Tool finden, führen Sie **, in dem/r. sn.exe** im Befehlsfenster angezeigt. Notieren Sie sich den Pfad an.
 
 10. Extrahiert den öffentlichen Schlüssel aus der *"Key.snk"* Datei. Geben Sie im Befehlsfenster
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 Nun können Sie ein Projekt aus der Vorlage erstellen und den benutzerdefinierten Assistenten verwenden.
 
-1.  Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen. Eine zweite Instanz von Visual Studio sollte angezeigt werden.
+1. Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen. Eine zweite Instanz von Visual Studio sollte angezeigt werden.
 
-2.  Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei** > **neue** > **Projekt** > **Visual C#-**  >  **MyProjectTemplate**)
+2. Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei** > **neue** > **Projekt**).
 
-3.  In der **neues Projekt** Dialogfeld Suchen Ihrer Vorlage, geben Sie einen Namen, und klicken Sie auf **OK**.
+3. In der **neues Projekt** (Dialogfeld), suchen Sie nach "Myproject", um Ihre Vorlage zu suchen, geben Sie einen Namen ein, und auf **OK**.
 
      Das Benutzereingabeformular des Assistenten wird geöffnet.
 
-4.  Geben Sie einen Wert für den benutzerdefinierten Parameter ein, und klicken Sie auf die Schaltfläche.
+4. Geben Sie einen Wert für den benutzerdefinierten Parameter ein, und klicken Sie auf die Schaltfläche.
 
      Das Benutzereingabeformular des Assistenten wird geschlossen, und aus der Vorlage wird ein Projekt erstellt.
 
-5.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Quellcodedatei, und klicken Sie auf **Ansichtscode**.
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Quellcodedatei, und klicken Sie auf **Ansichtscode**.
 
      Beachten Sie, dass `$custommessage$` durch den im Benutzereingabeformular des Assistenten eingegebenen Text ersetzt wurde.
 

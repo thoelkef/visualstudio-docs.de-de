@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955374"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195085"
 ---
 # <a name="security-warnings"></a>Sicherheitswarnungen
 
@@ -77,5 +77,5 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA2153: Behandlung von Ausnahmen zu vermeiden](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|
 |[CA3075: Unsichere DTD-Verarbeitung](../code-quality/ca3075-insecure-dtd-processing.md)|Wenn Sie unsichere DTDProcessing-Instanzen verwenden oder auf externe Entitätsquellen verweisen, kann der Parser unter Umständen nicht vertrauenswürdige Eingaben akzeptieren und Angreifern vertrauliche Informationen offenlegen.|
 |[CA3076: Unsichere XSLT-Skriptausführung](../code-quality/ca3076-insecure-xslt-script-execution.md)|Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise nicht vertrauenswürdige URI-Verweise auflösen, wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann.|
-|[CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Beim Entwerfen einer von XMLDocument und XMLTextReader abgeleiteten API sollten Sie DtdProcessing berücksichtigen.  Das Verwenden unsicherer DTDProcessing-Instanzen beim Verweisen auf externe Entitätsquellen bzw. bei deren Auflösung oder das Festlegen unsicherer Werte in XML-Code kann zum Offenlegen von Informationen führen.|
+|[CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Beim Entwerfen einer von XMLDocument und XMLTextReader abgeleiteten API sollten Sie DtdProcessing berücksichtigen. Das Verwenden unsicherer DTDProcessing-Instanzen beim Verweisen auf externe Entitätsquellen bzw. bei deren Auflösung oder das Festlegen unsicherer Werte in XML-Code kann zum Offenlegen von Informationen führen.|
 |[CA3147: Verb-Handler mit ValidateAntiForgeryToken markieren](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Wenn Sie ASP.NET MVC-Controller zu entwerfen, achten Sie darauf, dass Sie von websiteübergreifenden anforderungsfälschungen. Ein websiteübergreifende anforderungsfälschung Angriff kann böswillige Anforderungen von einem authentifizierten Benutzer in den ASP.NET MVC-Controller senden.|
