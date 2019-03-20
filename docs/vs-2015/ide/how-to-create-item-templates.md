@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788247"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867922"
 ---
 # <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md#export_template) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.  
+Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.  
   
- Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](../ide/how-to-create-item-templates.md#modify_template) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
+ Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](#to-enable-the-item-template-to-be-used-in-a-store-project) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
  
- In einigen Fällen möchten oder müssen Sie eine Elementvorlage ggf. manuell von Grund auf neu erstellen. Im [dritten Verfahren](../ide/how-to-create-item-templates.md#create_template) wird dies erläutert.  
+ In einigen Fällen möchten oder müssen Sie eine Elementvorlage ggf. manuell von Grund auf neu erstellen. Im [dritten Verfahren](#to-enable-templates-for-specific-project-sub-types) wird dies erläutert.  
   
  Informationen zu Elementen, die in der VSTEMPLATE-Datei verwendet werden können, finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).  
   

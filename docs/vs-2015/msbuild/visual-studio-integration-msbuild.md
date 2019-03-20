@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763309"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194508"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio enthält [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)],
   
  In diesem Thema werden bestimmte Aspekte von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] erläutert, die beim Anpassen von Projekten und TARGETS-Dateien berücksichtigt werden sollten, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] laden und erstellen möchten. Dadurch können Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen wie IntelliSense sowie Debugging in Ihrem benutzerdefinierten Projekt einsetzen.  
   
- Weitere Informationen über C++-Projekte finden Sie unter [Project Files (Projektdateien)](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Weitere Informationen über C++-Projekte finden Sie unter [Project Files (Projektdateien)](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Projektdateierweiterungen  
  MSBuild.exe erkennt jede Projektdateierweiterung, die dem Muster .*proj entspricht. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erkennt jedoch nur eine Untergruppe dieser Projektdateierweiterungen, über die das zum Laden des Projekts verwendete sprachspezifische Projektsystem festgelegt wird. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verfügt nicht über ein sprachunabhängiges [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-basiertes Projektsystem.  

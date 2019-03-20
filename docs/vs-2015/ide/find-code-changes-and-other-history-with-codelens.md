@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195111"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
 ### <a name="find-changes-in-your-code"></a>Suchen nach Änderungen im Code  
  Finden Sie in den Codeindikatoren auf Elementebene heraus, wer welche Änderungen an Ihrem Code vorgenommen hat. Dies sehen Sie, wenn Sie die Team Foundation-Versionskontrolle (TFVC) in Team Foundation Server oder Visual Studio Team Services verwenden.  
   
- ![CodeLens Get-Änderungsverlaufs für Ihren Code in TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens: Abrufen des Änderungsverlaufs für ihren Code in TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
  Der Standardzeitraum umfasst die letzten 12 Monate. Wenn Ihr Code in Team Foundation Server gespeichert ist, können Sie diesen Wert ändern, indem Sie den [TFSConfig-Befehl](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) mit dem [CodeIndex-Befehl](../ide/codeindex-command.md) und dem **/indexHistoryPeriod** -Flag ausführen.  
   
@@ -95,42 +95,42 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
  Wenn sich Ihre Dateien in einem Git-Repository befinden und Sie den Änderungsindikator für die Code-Elementebene auswählen, wird dies angezeigt.  
   
- ![CodeLens Get-Änderungsverlaufs für Ihren Code in Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens: Abrufen des Änderungsverlaufs für ihren Code in Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  Suchen Sie in den Indikatoren auf Dateiebene am unteren Rand des Fensters nach Änderungen für eine gesamte Datei (mit Ausnahme von C#- und Visual Basic-Dateien).  
   
- ![CodeLens Codedateidetails abrufen](../ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+ ![CodeLens: Abrufen von Codedateidetails](../ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
  Um weitere Details zu einer Änderung zu erhalten, klicken Sie mit der rechten Maustaste auf dieses Element. Abhängig davon, ob Sie TFVC oder Git verwenden, stehen Ihnen zahlreiche Optionen zum Vergleichen der Dateiversionen, zum Anzeigen detaillierter Informationen und Nachverfolgen von Änderungen, zum Abrufen der ausgewählten Dateiversion und zum Senden einer E-Mail an den Autor zur Verfügung, um ihn über diese Änderung zu informieren. Ein Teil dieser detaillierten Informationen wird in Team Explorer angezeigt.  
   
  Sie können auch sehen, wer den Code in einem bestimmten Zeitraum geändert hat. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.  
   
- ![CodeLens Finden Sie unter Verlaufs von codeänderungen als Diagramm](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens: Anzeigen des Verlaufs von Codeänderungen als Diagramm](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Änderungen in der aktuellen Verzweigung finden  
  Angenommen, Ihr Team hat mehrere Verzweigungen – eine Hauptverzweigung und eine untergeordnete Entwicklung –, dann tun Sie Folgendes, um das Risiko von Schäden an stabilem Code zu senken:  
   
- ![CodeLens Ermitteln, wann Ihr Code gebrancht wurde](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
+ ![CodeLens: Sehen, wann Ihr Code gebrancht wurde](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
   
  So finden Sie heraus, wie viele Personen Ihren Code geändert haben und wie viele Änderungen in der Hauptverzweigung vorgenommen wurden (**ALT + 6**):  
   
- ![CodeLens Ermitteln Sie, wie viele Änderungen in Ihrem Branch](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
+ ![CodeLens: Ermitteln der Anzahl der Änderungen in Ihrem Branch](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
   
 #### <a name="find-when-your-code-was-branched"></a>Sehen, wann Ihr Code verzweigt wurde  
  Gehen Sie in die untergeordnete Verzweigung des Codes und dort zur Verzweigung Dev. Wählen Sie den Änderungsindikator aus (**Alt + 6**):  
   
- ![CodeLens Ermitteln, wann Ihr Code gebrancht wurde](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
+ ![CodeLens: Sehen, wann Ihr Code gebrancht wurde](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>Eingehende Änderungen aus anderen Verzweigungen sehen  
- ![CodeLens Suchen von codeänderungen in anderen Verzweigungen](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens: Ermitteln von Codeänderungen in anderen Branches](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  ... wie diese Fehlerbehebung hier in der Verzweigung Dev:  
   
- ![CodeLens Änderung aktiviertes in anderen Branches](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
+ ![CodeLens: Aktiviertes in anderen Branch ändern](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
  Sie können die Änderung überprüfen, ohne die aktuelle Verzweigung zu verlassen (Hauptverzweigung):  
   
- ![CodeLens Eingehende Änderung aus einem anderen Branch](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
+ ![CodeLens: Eingehende Änderung aus einem anderen Branch anzeigen](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
   
 #### <a name="find-when-changes-got-merged"></a>Herausfinden, wann Änderungen zusammengeführt wurden  
  So können Sie sehen, welche Änderungen in Ihrer Verzweigung enthalten sind:  
@@ -142,7 +142,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
  ![CodeLens: Gemergte Änderungen zwischen Branches](../ide/media/codelensbranchmergedscreenshot.png "CodeLensBranchMergedScreenshot")  
   
 #### <a name="compare-an-incoming-change-with-your-local-version-shift--f10"></a>Vergleichen einer eingehenden Änderung mit der lokalen Version (Umschalt + F10)  
- ![CodeLens Eingehende Änderung mit lokaler vergleichen](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")  
+ ![CodeLens: Vergleichen einer eingehenden Änderung mit der lokalen Version](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")  
   
  Sie können auch auf das Changeset doppelklicken.  
   
@@ -150,14 +150,14 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 |**Symbol**|**Woher stammt die Änderung?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens Ändern von Symbol für aktuellen Branch](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Die aktuelle Verzweigung|  
+|![CodeLens: Symbol für Änderung aus dem aktuellen Branch](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Die aktuelle Verzweigung|  
 |![CodeLens: Symbol für Änderung aus dem übergeordneten Branch](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Die übergeordnete Verzweigung|  
-|![CodeLens Ändern von Symbol für untergeordneten Branch](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Eine untergeordnete Verzweigung|  
+|![CodeLens: Symbol für Änderung aus einem untergeordneten Branch](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Eine untergeordnete Verzweigung|  
 |![CodeLens: Symbol für Änderung aus einem Peerbranch](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Eine Peerverzweigung|  
 |![CodeLens: Symbol für Änderung aus einem weiter entfernten Branch](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|  
-|![CodeLens Zusammenführen von übergeordnetem Symbol](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|  
-|![CodeLens Vom Symbol für untergeordneten Branch zusammenführen](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|  
-|![CodeLens Vom verzweigungsymbol zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|  
+|![CodeLens: Symbol für Merge aus dem übergeordneten Branch](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|  
+|![CodeLens: Symbol für Merge aus einem untergeordneten Branch](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|  
+|![CodeLens: Symbol für Merge aus einem nicht zugeordneten Branch](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|  
   
 ### <a name="find-linked-work-items"></a>Suchen von verknüpften Arbeitselementen  
  ![CodeLens: Ermitteln von Arbeitselementen für bestimmten Code](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -206,7 +206,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 ##  <a name="QA"></a> Fragen und Antworten  
   
-###  <a name="ChangeOrTurnOff"></a> Frage: Wie aktiviere ich CodeLens ein deaktivieren? Oder wie kann ich auswählen, welche Indikatoren angezeigt werden?  
+###  <a name="ChangeOrTurnOff"></a> F: Wie kann ich CodeLens aktivieren oder deaktivieren? Oder wie kann ich auswählen, welche Indikatoren angezeigt werden?  
  **A:**  Sie können die Indikatoren aktivieren und deaktivieren, mit Ausnahme des Verweisindikators. Gehen Sie zu **Tools**, **Optionen**, **Text-Editor**, **Alle Sprachen**, **CodeLens**.  
   
  Wenn die Indikatoren aktiviert wurden, können Sie die CodeLens-Optionen auch über die Indikatoren öffnen.  
@@ -224,7 +224,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 -   Wenn Ihr Code in TFS gespeichert ist, stellen Sie sicher, dass die Codeindizierung aktiviert ist. Verwenden Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   TFS-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und wenn Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. [Überprüfen Sie, ob Sie über Teammitgliedsberechtigungen verfügen.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   TFS-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und wenn Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. [Überprüfen Sie, ob Sie über Teammitgliedsberechtigungen verfügen.](/azure/devops/organizations/security/view-permissions)  
   
 -   Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe (**STRG+UMSCHALT+B**) zu erstellen.  
   
@@ -277,7 +277,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
      ![CodeLens: Aktualisieren von Indikatoren](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
   
--   **Test**: [Komponententests für Ihren Code suchen](#FindRunUnitTests) zum Aktualisieren dieses Indikators.  
+-   **Test**: [Komponententests für Ihren Code zu suchen](#FindRunUnitTests) zum Aktualisieren dieses Indikators.  
   
 ###  <a name="LocalVersion"></a> F: Was bedeutet „Lokale Version“?  
  **A:** Der Pfeil **Lokale Version** zeigt auf das neueste Changeset in der lokalen Version dieser Datei. Wenn der Server über neuere Changesets verfügt, werden sie je nach Reihenfolge, in der sie sortiert sind, über oder unter dem Pfeil **Lokale Version** angezeigt.  

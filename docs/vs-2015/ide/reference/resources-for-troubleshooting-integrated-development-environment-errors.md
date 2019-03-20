@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783260"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869864"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie da
 ## <a name="the-developer-community"></a>Die Entwicklercommunity  
  In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden.  
   
- Sie können auf der Website der [Technischen Microsoft-Communitys](http://go.microsoft.com/fwlink/?LinkID=144922) auf Foren, Blogs, Chats und andere Ressourcen zugreifen.  
+ Sie können auf der Website der [Technischen Microsoft-Communitys](https://techcommunity.microsoft.com/) auf Foren, Blogs, Chats und andere Ressourcen zugreifen.  
   
 ## <a name="product-support"></a>Produktsupport  
  Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie unter [Sprechen Sie mit uns](../../ide/talk-to-us.md).
