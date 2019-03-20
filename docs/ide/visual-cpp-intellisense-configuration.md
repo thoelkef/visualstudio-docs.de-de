@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222895"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194057"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
 
@@ -52,7 +52,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren von IntelliSe
 
 ### <a name="open-folder-projects"></a>Open Folder-Projekte
 
-Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/ide/non-msbuild-projects#cppproperties). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
+Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
 
 Wenn ein Syntaxfehler in der Datei „CppProperties.json“ vorliegt, ist IntelliSense in den betroffenen Dateien fehlerhaft. Visual Studio zeigt den Fehler im Ausgabefenster an.
 
@@ -72,7 +72,7 @@ Dieses Problem manifestiert sich in Visual Studio häufig auf zweierlei Weise:
 
    ![Tagparser bietet an, eine vorhandene Funktion zu definieren](media/vcpp-intellisense-tag-parser-function.png)
 
-Um diese Art von Problemen zu beheben, fügen Sie dem Stammverzeichnis Ihres Lösungsverzeichnisses eine Datei namens **cpp.hint** hinzu. Weitere Informationen finden Sie unter [Hinweisdateien](/cpp/ide/hint-files).
+Um diese Art von Problemen zu beheben, fügen Sie dem Stammverzeichnis Ihres Lösungsverzeichnisses eine Datei namens **cpp.hint** hinzu. Weitere Informationen finden Sie unter [Hinweisdateien](/cpp/build/reference/hint-files).
 
 Tagparserfehler werden im Fenster **Fehlerliste** angezeigt.
 

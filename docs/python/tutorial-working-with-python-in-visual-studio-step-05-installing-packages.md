@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934756"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194897"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -26,23 +26,23 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 1. Wählen Sie den Menübefehl **Ansicht** > **Weitere Fenster** > **Python-Umgebungen** aus. Das Fenster **Python-Umgebungen** wird als Peer für den **Projektmappen-Explorer** geöffnet und zeigt die verschiedenen Umgebungen an, die für Sie verfügbar sind. Die Liste enthält die Umgebungen, die Sie mithilfe des Visual Studio-Installers installiert haben und die, die Sie separat installiert haben. Die Umgebung in Fettdruck ist die Standardumgebung, die für neue Projekte verwendet wird.
 
-   ![Fenster „Python-Umgebungen“](media/environments-default-view-blue.png)
+   ![Fenster „Python-Umgebungen“](media/environments/environments-default-view-blue.png)
 
 2. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
 
 3. Klicken Sie auf die Registerkarte **Pakete**, und Ihnen wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
 
-   ![In einer Umgebung installierte Pakete](media/environments-installed-packages-blue.png)
+   ![In einer Umgebung installierte Pakete](media/environments/environments-installed-packages-blue.png)
 
 4. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann **pip-Installation** auswählen.
 
-   ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
+   ![Installieren von matplotlib in der Umgebung](media/environments/environments-add-matplotlib1.png)
 
 5. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
 
 6. Nachdem das Paket installiert ist, wird es im Fenster der **Python-Umgebung** angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
 
-   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
+   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments/environments-add-matplotlib2.png)
 
    Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
 
@@ -65,7 +65,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 8. Führen Sie das Programm mit (**F5**) oder ohne Debugger (**STRG**+**F5**) aus, um die Ausgabe anzuzeigen:
 
-   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
+   ![Ausgabe des matplotlib-Beispiels](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939579"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982973"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Gewusst wie: Definieren von Einstellungen in einer Antwortdatei
 
@@ -99,4 +99,4 @@ Bei folgenden Beispiel wird Visual Studio Enterprise mit sechs allgemeinen Workl
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+* [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

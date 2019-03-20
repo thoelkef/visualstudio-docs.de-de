@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983728"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069696"
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 
@@ -31,9 +31,7 @@ Vor der Erstellung einer Android Native Activity-App müssen Sie sicherstellen, 
 
 In diesem Tutorial erstellen Sie zunächst ein neues Android Native Activity-Projekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus.
 
-### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
-
-1. Öffnen Sie Visual Studio. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++** > **Plattformübergreifend** und dann die Vorlage **Native-Activity Application (Android)** aus.
 

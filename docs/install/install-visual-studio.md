@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607024"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983545"
 ---
-# <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
+# <a name="install-visual-studio"></a>Installieren von Visual Studio
 
 Willkommen bei einer neuen Möglichkeit zur Installation von Visual Studio. In dieser Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
 
@@ -130,9 +130,9 @@ Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade i
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
-* [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
-* [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
-* [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
+* [Ändern von Visual Studio](modify-visual-studio.md)
+* [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
+* [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Installieren von Visual Studio für Mac](/visualstudio/mac/installation)

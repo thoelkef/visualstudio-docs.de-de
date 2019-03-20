@@ -14,26 +14,26 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914083"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869275"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
-Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die Tests sind in Auslastungstests enthalten, um die Leistung der Webanwendung unter der Last mehrerer Benutzer zu messen. Ein Webleistungstest kann in ein codebasiertes Skript konvertiert werden, das Sie wie jeden anderen Quellcode bearbeiten und anpassen können. Beispielsweise können Sie Schleifen- und Verzweigungskonstrukte hinzufügen.
+Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die Tests sind in Auslastungstests enthalten, um die Leistung der Webanwendung unter der Last mehrerer Benutzer zu messen. Ein Webleistungstest kann in ein codebasiertes Skript konvertiert werden, das Sie wie jeden anderen Quellcode bearbeiten und anpassen können. Beispielsweise können Sie Schleifen- und Branchkonstrukte hinzufügen.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="generate-a-coded-web-performance-test"></a>Einen codierten Webleistungstest generieren
+## <a name="generate-a-coded-web-performance-test"></a>Generieren eines codierten Webleistungstests
 
-1.  Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Generieren Sie den codierten Test.
 
-     ![Einen codierten Webleistungstest generieren](../test/media/web_test_coded_generate.png)
+     ![Generieren eines codierten Webleistungstests](../test/media/web_test_coded_generate.png)
 
 3.  Geben Sie dem Test einen Namen.
 
