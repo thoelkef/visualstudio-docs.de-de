@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752881"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872828"
 ---
 # <a name="maintaining-security"></a>Gewährleisten der Sicherheit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ Es wird oft betont, dass der Preis für die Sicherheit die ständige Wachsamkeit
  [Sicherheit, Datenschutz und Konten](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Hier erhalten Sie hilfreiche Informationen zu Sicherheit, Datenschutz und Benutzerkonten sowie über Viren, Kennwörter, Jugendschutz, Firewalls und zur Laufwerkverschlüsselung.  
   
- [Suche in Microsoft-Sicherheitsbulletins](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Suche in Microsoft-Sicherheitsbulletins](/security-updates/)  
  Diese Seite vereinfacht die Suche nach bereits veröffentlichten Bulletins. Die für IT-Experten erstellten Sicherheitsbulletins enthalten detaillierte Informationen über Sicherheitsupdates.  
   
- [Sicherheitshandbuch zu Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Enthält Richtlinien für IT-Experten zum sicheren Betrieb einer Windows Server 2003-Umgebung, in der gleichzeitig ein ordnungsgemäßer Zugriff auf verschiedene Inhalte nur durch den jeweils autorisierten Benutzer gewährleistet ist.  
+ [Windows Server 2003-Sicherheitshandbuch] (/previous-versions/tn-archive/cc163140(v=technet.10) enthält Richtlinien für IT-Experten zum sicheren Betrieb eine Windows Server 2003-Umgebung, in der beim Zugriff auf verschiedene Inhalte nur durch die richtigen Personen sichergestellt.  
   
- [Bewährte Methoden für die Unternehmenssicherheit](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Bewährte Methoden für die Unternehmenssicherheit](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Eine Zusammenstellung von Whitepapers, in denen die unterschiedlichen Aspekte der Sicherheit von Netzwerken in Unternehmen behandelt wird.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Der Baseline Security Analyzer (MBSA) von Microsoft ist ein Tool sowohl für Heimanwender und Benutzer in Unternehmen als auch für Administratoren, mit dem ein oder mehrere Windows-basierte Computer nach Konfigurationsfehlern im Bereich der Sicherheitseinstellungen durchsucht werden können.

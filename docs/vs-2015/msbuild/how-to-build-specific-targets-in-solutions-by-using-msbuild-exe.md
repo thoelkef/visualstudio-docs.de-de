@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26e1670d5e67581ee61ec5517bedc4e8cfce1755
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 85c8f3dcb9364c2837cd4d10f163de3795821ce7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766247"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194229"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Gewusst wie: Erstellen von bestimmten Zielen in Projektmappen mit MSBuild.exe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clea
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [MSBuild](msbuild.md)  
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

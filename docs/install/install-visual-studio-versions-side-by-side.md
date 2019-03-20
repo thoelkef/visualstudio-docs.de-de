@@ -2,7 +2,7 @@
 title: Parallele Installation mehrerer Visual Studio-Versionen
 ms.date: 03/05/2019
 ms.prod: visual-studio-windows
-ms.technology: vs-isntallation
+ms.technology: vs-installation
 ms.topic: conceptual
 helpviewer_keywords:
 - side-by-side installations [Visual Studio]
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b7b1eb1808fadf3bc7639662419f7d176909412c
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683371"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160536"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -61,7 +61,7 @@ Sprachspezifische Informationen finden Sie im entsprechenden Thema in der folgen
 | Visual Basic | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Entwickeln mit Visual F# in Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
+|C++ | [Vorgehensweise: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

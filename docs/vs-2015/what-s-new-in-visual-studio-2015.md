@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844138"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195163"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
 
      [Debugging](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) und [Debug on Device](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) in den [Xamarin-Entwicklerhandbüchern](http://developer.xamarin.com/guides) beschreiben den Debugvorgang.
 
--   **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
+-   **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debuggen und Diagnose
- Informationen zu den Neuerungen beim Debugging finden Sie unter [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Weitere Informationen zu den neuerungen bei der Diagnose finden Sie unter [Neuigkeiten in Profilerstellungstools](./profiling/what-s-new-in-profiling-tools.md).
+Weitere Informationen zu den neuerungen bei der Diagnose finden Sie unter [Neuigkeiten in Profilerstellungstools](./profiling/what-s-new-in-profiling-tools.md).
 
- Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
+Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
  PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

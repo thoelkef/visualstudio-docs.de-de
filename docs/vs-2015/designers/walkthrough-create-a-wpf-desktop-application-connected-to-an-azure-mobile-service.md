@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803730"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195072"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden sind
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
@@ -484,7 +484,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     > [!NOTE]
     >  Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
   
-     Hiermit wird die URL für den Dienst *https://wpfquickstart01.azure-mobile.net/*.  
+     Hiermit wird die URL für den Dienst `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Eine kostenlose 20-MB-SQL-Datenbank erstellen** bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.  
   

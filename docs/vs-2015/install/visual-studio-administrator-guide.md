@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834876"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868881"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation für Visual Studio 2017 finden Sie unter den [Administratorhandbuch für Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer erfüllt die [minimalen Installationsanforderungen](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit der Option „/layout“ ausführen (wie auf der Seite [Erstellen einer Offlineinstallation von Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) beschrieben) und sie dann vom lokalen Computer auf die Netzwerkfreigabe kopieren. Wenn Sie ein ISO-Image verwenden, können Sie das ISO-Image bereitstellen und freigeben oder der ISO-Datei in eine Netzwerkfreigabe kopieren.  
+Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer erfüllt die [minimalen Installationsanforderungen](https://visualstudio.microsoft.com/vs/older-downloads/). Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit der Option „/layout“ ausführen (wie auf der Seite [Erstellen einer Offlineinstallation von Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) beschrieben) und sie dann vom lokalen Computer auf die Netzwerkfreigabe kopieren. Wenn Sie ein ISO-Image verwenden, können Sie das ISO-Image bereitstellen und freigeben oder der ISO-Datei in eine Netzwerkfreigabe kopieren.  
   
  Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort "merken". Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio 2015-Clients in Ihrer Organisation entspricht.  
   
@@ -35,7 +35,7 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
 ## <a name="avoiding-reboots"></a>Vermeiden von Neustarts  
  Sie können Neustarts reduzieren, indem Sie vor der Bereitstellung von Visual Studio sicherstellen, dass alle Voraussetzungen für Visual Studio erfüllt sind. Für die .NET Framework verwenden müssen Sie die Computer neu starten, die Windows 8 ausgeführt werden, wenn Sie Visual Studio 2015 darauf bereitstellen, ohne die erste Installation von .NET Framework 4.6.  
   
- Für eine Windows- und Android-Geräteemulation müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Hyper-V" noch nicht aktiviert ist. Bei der Webbereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Webserver" noch nicht aktiviert wurde. Bei der Office-Bereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Windows Identify Foundation" noch nicht aktiviert wurde. Starten Sie Computer neu, wenn die Windows-Funktion "Webserver" noch nicht aktiviert wurde. Bei der Office-Bereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Windows Identify Foundation" noch nicht aktiviert wurde. Weitere Informationen zum Automatisieren der Erkennung und Installation von Windows-Funktionen finden Sie unter [Installing a server role on a server running a Server Core installation of Windows Server 2008 R2](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx)(Installieren einer Serverrolle auf einem Server mit einer Server Core-Installation von Windows Server 2008 R2) (in englischer Sprache).  
+ Für eine Windows- und Android-Geräteemulation müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Hyper-V" noch nicht aktiviert ist. Bei der Webbereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Webserver" noch nicht aktiviert wurde. Bei der Office-Bereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Windows Identify Foundation" noch nicht aktiviert wurde. Starten Sie Computer neu, wenn die Windows-Funktion „Webserver“ noch nicht aktiviert wurde. Bei der Office-Bereitstellung müssen Sie möglicherweise Computer neu starten, wenn die Windows-Funktion "Windows Identify Foundation" noch nicht aktiviert wurde. Weitere Informationen zum Automatisieren der Erkennung und Installation von Windows-Funktionen finden Sie unter [Installing a server role on a server running a Server Core installation of Windows Server 2008 R2](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx)(Installieren einer Serverrolle auf einem Server mit einer Server Core-Installation von Windows Server 2008 R2) (in englischer Sprache).  
   
 ## <a name="error-return-codes"></a>Fehlerrückgabecodes  
  In der folgenden Tabelle sind wichtige Fehlercodes aufgeführt. Sie können mithilfe dieser Fehlercodes innerhalb Ihrer Automatisierung entscheiden, ob ein Neustart erforderlich ist und ob die Installation erfolgreich war. Wenn Sie einen Fehlercode erhalten, sollten Sie die Schritte zur Problembehandlung auf die [Installieren von Visual Studio](../install/install-visual-studio-2015.md) Seite.  
@@ -54,7 +54,7 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
 ## <a name="controlling-what-is-installed"></a>Steuern der installierten Elemente  
  Wenn Sie steuern möchten, welche Elemente Ihre Endbenutzer installieren können, haben Sie zwei Optionen: die Installation über die Administratordatei und die Befehlszeilenoptionen. Wählen Sie die Installation über die Administratordatei, wenn Sie beschränken möchten, welche Elemente Ihre Endbenutzer bei der Visual Studio-Installation auswählen können. Wählen Sie die Befehlszeilenparameter aus, wenn Sie eine anfängliche Konfiguration erstellen, aber Ihren Endbenutzern erlauben möchten, die Optionen für die Visual Studio-Installation selbst festzulegen.  
   
- Weitere Informationen zu der administratordatei finden finden Sie unter [Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
+ Weitere Informationen zur Funktion der Administratordatei finden Sie unter [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) und [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Weitere Informationen zu den Befehlszeilenoptionen finden Sie unter den [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) Seite.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen  
  Standardmäßig ermöglicht die Visual Studio-Installation Kundenfeedback. Sie können Visual Studio so konfigurieren, dass Kundenfeedback auf einzelnen Computern deaktiviert wird. Ändern Sie dazu den Wert des folgenden Registrierungsschlüssels in die Zeichenfolge „0“.  
@@ -68,8 +68,8 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Vorgehensweise: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie Sie bestimmte Konfigurationen für die aktuelle Version von installieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Vorgehensweise: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Beschreibt, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus.|  
+|[Gewusst wie: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie Sie bestimmte Konfigurationen für die aktuelle Version von installieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Beschreibt, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus.|  
 |[Gewusst wie: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Beschreibt, wie Produktschlüssel anwenden, wenn Sie auf mehreren Computern bereitstellen.|  
 |[Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)|Enthält Informationen dazu, wie Sie die lokale Hilfe Installationen netzwerkumgebungen zu verwalten, die oder haben keinen Zugriff auf das Internet.|  
 |[Installieren von Visual Studio](../install/install-visual-studio-2015.md)|Enthält Anweisungen und Links zu Themen, die beschreiben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

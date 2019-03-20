@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1b9ff98070d5cd3e8348fc938a4b39a83b61ce99
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 46ff8b55cf3236a3fbb16f1c4c086c3c2b09295f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325075"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58161199"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Visual Studio-Kern-Editor (in Visual Studio Professional 2019 enthalten)
 
@@ -870,5 +870,5 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | C++ MFC für v141-Buildtool
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC für v141-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | C++ MFC für v141-Buildtools mit Spectre-Entschärfungen (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017: C++-x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.WinXP | C++-Unterstützung für Windows XP für Tools in VS 2017 (v141) (veraltet) | 16.0.28625.61
+Microsoft.VisualStudio.Component.WinXP | C++-Windows XP-Unterstützung für Tools in VS 2017 (v141) [veraltet] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

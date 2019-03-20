@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921236"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868016"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Bearbeiten von R-Code in Visual Studio
 
@@ -97,7 +97,7 @@ Formatierungsoptionen (einschließlich der Deaktivierung der Formatierung) werde
 
 ## <a name="inserting-roxygen-comments"></a>Einfügen von Roxygen-Kommentaren
 
-RTVS bietet eine Verknüpfung zum Generieren von [Roxygen](http://roxygen.org/)-Kommentaren mit den Parameternamen einer Funktion. Geben Sie einfach `###` in einer leeren Zeile oberhalb der Funktionsdefinition ein:
+RTVS bietet eine Verknüpfung zum Generieren von [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html)-Kommentaren mit den Parameternamen einer Funktion. Geben Sie einfach `###` in einer leeren Zeile oberhalb der Funktionsdefinition ein:
 
 ![Animation des Einfügens eines Roxygen-Kommentars](media/editing-roxygen-comments.gif)
 

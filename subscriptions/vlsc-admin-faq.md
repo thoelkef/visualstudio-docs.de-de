@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Migration der Volume License Service Center-Verwaltung
 searchscope: VS Subscription
-ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953943"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145264"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -36,7 +36,7 @@ Dies ist ein gewaltiger Übergang, und er wird in Phasen durchgeführt, bis alle
 Ihre Organisation muss sich nicht für Azure AD registrieren, jedoch können Sie dies jederzeit tun. Wenn Sie Azure AD integrieren möchten, können Sie dazu den kostenlosen Free-Tarif für Azure AD nutzen. Mit Azure Active Directory schützen Sie Ihre Organisation mit erhöhter Sicherheit, Kontrolle und langfristiger Zuverlässigkeit. Wenn Sie jedoch noch nicht für Azure AD bereit sind, können Sie weiterhin so wie zurzeit Ihre Microsoft-Konten (MSAs) verwenden.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Wie erfahre ich, wann meine Organisation migriert wird?
-Primäre Kontakte/Ansprechpartner erhalten eine Woche vor der Migration Ihrer Organisation eine E-Mail von uns, mit der Sie zum Durchführen des Onboardingprozesses aufgefordert werden. Abonnement-Manager erhalten ebenfalls eine E-Mail mit der Mitteilung, dass wir die primären Kontakte/Ansprechpartner kontaktiert und Details zur Sicherstellung des erfolgreichen Onboardings bereitgestellt haben. Erfahren Sie, wie Sie [die primären Kontakte/Ansprechpartner Ihrer Organisation finden](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?).
+Primäre Kontakte/Ansprechpartner erhalten eine Woche vor der Migration Ihrer Organisation eine E-Mail von uns, mit der Sie zum Durchführen des Onboardingprozesses aufgefordert werden. Abonnement-Manager erhalten ebenfalls eine E-Mail mit der Mitteilung, dass wir die primären Kontakte/Ansprechpartner kontaktiert und Details zur Sicherstellung des erfolgreichen Onboardings bereitgestellt haben. Erfahren Sie, wie Sie [die primären Kontakte/Ansprechpartner Ihrer Organisation finden](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
 
 ### <a name="is-onboarding-different-from-migration"></a>Unterscheidet sich das Onboarding von der Migration?
 Ja.  In diesem Prozess gibt es zwei Phasen. Durch das Einrichten (oder Onboarding) Ihrer Organisation vor der Migration wird sichergestellt, dass Ihre Arbeit als Administrator nicht unterbrochen wird. Wenn wir die Informationen Ihrer Organisation migriert haben, können Sie Visual Studio-Abonnements im neuen Portal verwalten. Wenn die primären Kontakte/Ansprechpartner das Onboarding nicht vor der Migration durchführen, wird der Abonnement-Manager blockiert und kann Abonnements nicht verwalten, bis Sie den Onboardingprozess abgeschlossen haben.
