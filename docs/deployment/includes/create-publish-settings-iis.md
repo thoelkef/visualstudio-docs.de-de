@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57874489"
+---
 
 1. Schließen Sie die IIS-Verwaltungskonsole, und öffnen Sie sie anschließend erneut. Dann werden die aktualisierten Konfigurationsoptionen auf der Benutzeroberfläche angezeigt.
 
@@ -34,6 +42,6 @@
    * Wenn Sie über den Hostnamen (später beschrieben) keine Verbindung mit dem Remotehost in Visual Studio herstellen können, nehmen Sie stattdessen die IP-Adresse.
 
      > [!NOTE]
-     > Wenn Sie in IIS veröffentlichen, die auf einer Azure-VM ausgeführt werden, müssen Sie Web Deploy und die IIS-Ports in der Netzwerksicherheitsgruppe öffnen. Ausführlichere Informationen dazu finden Sie unter [Installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Wenn Sie in IIS veröffentlichen, die auf einer Azure-VM ausgeführt werden, müssen Sie Web Deploy und die IIS-Ports in der Netzwerksicherheitsgruppe öffnen. Ausführlichere Informationen dazu finden Sie unter [Installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Kopieren Sie diese Datei auf den Computer, auf dem Visual Studio ausgeführt wird.

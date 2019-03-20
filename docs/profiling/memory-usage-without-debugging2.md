@@ -1,6 +1,6 @@
 ---
 title: Analysieren der Speicherauslastung ohne Debuggen | Microsoft-Dokumentation
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615915"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873453"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
@@ -72,7 +72,7 @@ Wenn Sie die Datenerfassung beenden, hält das **Speicherauslastungstool** die A
 
 In den **Momentaufnahmenbereichen** finden Sie die Anzahl der Bytes und Objekte im Speicher zum Zeitpunkt der Momentaufnahme sowie Zahlen zum Vergleich zwischen der aktuellen und der vorherigen Momentaufnahme.
 
-Es handelt sich bei den Zahlen um Links, über die Sie ausführliche Berichtsansichten zur **Speicherauslastung** in weiteren Fenstern in Visual Studio öffnen können. In einem [Momentaufnahmendetailbericht](#snapshot-details-report) werden die Arten und Instanzen in einer Momentaufnahme aufgeführt. In einem [Momentaufnahmenvergleichsbericht](#snapshot-difference-diff-reports) werden die Typen und Instanzen zweier Momentaufnahmen miteinander verglichen.
+Es handelt sich bei den Zahlen um Links, über die Sie ausführliche Berichtsansichten zur **Speicherauslastung** in weiteren Fenstern in Visual Studio öffnen können. In einem [Momentaufnahmendetailbericht](#snapshot-details-reports) werden die Arten und Instanzen in einer Momentaufnahme aufgeführt. In einem [Momentaufnahmenvergleichsbericht](#snapshot-difference-diff-reports) werden die Typen und Instanzen zweier Momentaufnahmen miteinander verglichen.
 
   ![Links zu Ansichten in Momentaufnahmen](../profiling/media/memuse__snapshotview_numbered.png "Snapshot view links")
 

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316872"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154805"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:
@@ -230,7 +230,7 @@ Nicht-Objektblöcke umfassen Arrays und Strukturen, die mit `new`reserviert wurd
 Sie können in einem MFC-Programm verwenden [CMemoryState](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.
 
 > [!NOTE]
-> Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](#BKMK_Enabling_Memory_Diagnostics)aktiviert werden.
+> Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](#BKMK_Enabling_memory_diagnostics)aktiviert werden.
 
 > [!NOTE]
 > In MFC wird von allen Objekten, die Speicherverluste verursachen, beim Beenden des Programms automatisch ein Dump erstellt. Daher ist kein Code zum Erstellen von Objektdumps am Programmende erforderlich.

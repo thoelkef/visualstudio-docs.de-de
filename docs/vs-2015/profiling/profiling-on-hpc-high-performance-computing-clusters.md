@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802313"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867918"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) auf der Microsoft-Website.  
+Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Big Compute: HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:  
@@ -55,8 +55,8 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
 |||  
 |-|-|  
 |*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|  
-|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Der Pfad auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf dem [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedium ist: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilerstellung auf einem HPC-Berechnungsknoten  
  Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistenten, um die Informationen des HPC-Cluster und -Ziel anzugeben. Sie können zusätzliche Optionen in der Eigenschaftenseiten der Leistungssitzung festlegen. Die Profilerstellungstools stellen automatisch die erforderlichen Zielbinärdateien bereit und starten den Profiler und die HPC-Anwendung.  

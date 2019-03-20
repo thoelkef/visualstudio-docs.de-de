@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685494"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870414"
 ---
 # <a name="debugging-native-code"></a>Debuggen von systemeigenem Code
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von nativem Code, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.
 
 ## <a name="see-also"></a>Siehe auch
- [Debuggersicherheit](../debugger/debugger-security.md) [Debuggen in Visual Studio](../debugger/index.md)
+
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Debuggen in Visual Studio](../debugger/index.md)

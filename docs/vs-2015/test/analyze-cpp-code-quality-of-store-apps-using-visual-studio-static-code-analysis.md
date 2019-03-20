@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805565"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873242"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,6 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                       [C6516](../code-quality/c6516.md)                        |                                          Keine Eigenschaften für Attribut                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Zulässige Größe für nicht lesbaren Puffer                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Schreibbare Größe für Puffer, der nicht geschrieben werden kann                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Ungültige Anmerkung: Wert für die Eigenschaft "NeedsRelease" muss "Ja" oder "Nein" sein                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Ungültige Größenzeichenfolgendereferenzierung                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Ungültiger Größenzeichenfolgentyp                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
@@ -194,7 +193,6 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() wird in Anmerkungen nicht unterstützt.                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Ein Syntaxfehler in der Anmerkung wurde in der Funktion für Anmerkung gefunden                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Ein Syntaxfehler in einer bedingten Anmerkung wurde gefunden für systeminterne Anmerkung                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Ergebnislistenwerte müssen Konstanten sein.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.                     |
@@ -206,7 +204,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28286](../code-quality/c28286.md)                       |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
+|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
 |                      [C28290](../code-quality/c28290.md)                       |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |

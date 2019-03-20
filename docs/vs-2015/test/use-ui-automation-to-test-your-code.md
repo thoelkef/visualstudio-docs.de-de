@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767954"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873857"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 
  Das Erstellen eines Tests der programmierten UI ist einfach. Sie führen den Test einfach manuell aus, während der CUIT-Test-Generator im Hintergrund ausgeführt wird. Sie können außerdem angeben, welche Werte in bestimmten Feldern angezeigt werden sollen. Der CUIT-Test-Generator zeichnet die Aktionen auf und generiert entsprechenden Code. Nach dem Erstellen des Tests können Sie diesen in einem spezialisierten Editor bearbeiten und die Sequenz der Aktionen ändern.
 
- Alternativ können Sie aus einem Testfall, der in Microsoft Test Manager aufgezeichnet wurde, Code generieren. Weitere Informationen finden Sie unter [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665).
+ Alternativ können Sie aus einem Testfall, der in Microsoft Test Manager aufgezeichnet wurde, Code generieren. Weitere Informationen finden Sie unter [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](/azure/devops/test/mtm/record-play-back-manual-tests).
 
  Mit dem spezialisierten CUIT-Test-Generator und -Editor können Sie einfach Tests der programmierten UI erstellen und bearbeiten, selbst wenn Ihr Hauptaugenmerk anstelle der Codierung auf Tests liegt. Wenn Sie jedoch Entwickler sind und den Test auf anspruchsvollere Weise erweitern möchten, bietet die einfache Struktur des Codes Möglichkeiten zum Kopieren und Anpassen. Sie können beispielsweise einen Test zu einem Kauf über eine Website aufzeichnen und den generierten Code anschließend bearbeiten, um eine Schleife zum Kaufen vieler Elemente hinzufügen.
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **Code-Editor:**
 
-    -   Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#VerifyingCodeCUITActionsandProperties) in diesem Thema beschrieben.
+    -   Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#actions) in diesem Thema beschrieben.
 
     -   Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
 

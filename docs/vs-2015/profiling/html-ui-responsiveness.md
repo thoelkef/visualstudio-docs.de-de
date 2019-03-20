@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752965"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151179"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
     -   Verwenden Sie die [Anzeigen einer Zeitachse für die Diagnosesitzung](#Ruler) , um [Markieren von Code zur Analyse](#ProfileMark), App-Lebenszyklusereignisse und die zugeordnete Zeitachse für diese Ereignisse sowie die Zeitachse für Daten in den anderen Diagramme anzuzeigen.  
   
-    -   Mit dem [CPU utilization graph](#CPUutilization) können Sie allgemeine Informationen zu CPU-Aktivität und den Typ der Arbeit anzeigen, die in einem bestimmten Zeitraum behandelt wird. Zeiträume übermäßiger CPU-Aktivität führen viel wahrscheinlicher zu Reaktionsfähigkeitsproblemen und abfallende Frames.  
+    -   Mit dem [CPU utilization graph](#CPUUtilization) können Sie allgemeine Informationen zu CPU-Aktivität und den Typ der Arbeit anzeigen, die in einem bestimmten Zeitraum behandelt wird. Zeiträume übermäßiger CPU-Aktivität führen viel wahrscheinlicher zu Reaktionsfähigkeitsproblemen und abfallende Frames.  
   
     -   Wenn Sie ein Spiel oder eine Rich-Media-App entwickeln, verwenden Sie das [Anzeigen des visuellen Durchsatzes (FPS)](#VisualThroughput) , um Zeiträume zu identifizieren, in denen die Framerate abfiel.  
   

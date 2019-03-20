@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844086"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870304"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -32,7 +32,7 @@ Visual Studio unterstützt nun die Syntax für ECMAScript-Updates wie ECMAScript
 
 ### <a name="what-is-ecmascript-2015"></a>Was ist ECMAScript 2015?
 
-JavaScript wird als Programmiersprache ständig weiterentwickelt. Für Updates ist die Arbeitsgruppe [TC39](http://www.ecma-international.org/memento/TC39.htm) verantwortlich.
+JavaScript wird als Programmiersprache ständig weiterentwickelt. Für Updates ist die Arbeitsgruppe [TC39](https://www.ecma-international.org/memento/tc39-m.htm) verantwortlich.
 ECMAScript 2015 ist ein Update für JavaScript, das hilfreiche neue Syntaxelemente und Funktionen einführt. Ausführliche Informationen zu ES6-Funktionen finden Sie auf der entsprechenden [Referenzseite](http://es6-features.org).
 
 Visual Studio unterstützt neben ECMAScript 2015 auch ECMAScript 2016 und wird auch zukünftige ECMAScript-Versionen bei deren Release unterstützen. Die neuesten Änderungen der Arbeitsgruppe TC39 an ECMAScript können Sie mit [GitHub](https://github.com/tc39) im Blick behalten.

@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787880"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868709"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installieren von Frameworks für Komponententests von Drittanbietern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponentente
 ### <a name="installing-from-the-web"></a>Installation aus dem Web  
  Wenn Sie das Framework kennen, für das Sie sich interessieren:  
   
-1. Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
+1. Öffnen Sie [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 2. Geben Sie den Namen des Frameworks im Feld **Suchen** ein.  
   
@@ -50,7 +50,7 @@ Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponentente
   
    So durchsuchen Sie eine Liste der Frameworks und anderer Testtools:  
   
-4. Öffnen Sie die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=236267) auf der MSDN-Website.  
+4. Öffnen Sie [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 5. Wählen Sie **Durchsuchen** aus.  
   

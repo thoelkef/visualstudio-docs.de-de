@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628987"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870291"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -35,7 +35,7 @@ Apps können aus Visual Studio direkt auf die folgenden Ziele veröffentlicht we
 - [Azure App Service](#azure-app-service)
 - [Azure Virtual Machines](#azure-virtual-machines)
 - [Dateisystem](#file-system)
-- [Benutzerdefinierte Ziele (IIS, FTP usw.)](#custom-targets), darunter alle beliebigen Webserver.
+- [Benutzerdefinierte Ziele (IIS, FTP usw.)](#custom-targets-iis-ftp), darunter alle beliebigen Webserver.
 
 Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen. Einen Überblick über Veröffentlichungsoptionen in der IDE für unterschiedliche App-Typen finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
 

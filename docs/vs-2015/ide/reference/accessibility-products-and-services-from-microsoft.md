@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794353"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867941"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   
  Weitere Microsoft-Veröffentlichungen erhalten Sie bei Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D verteilt diese Dokumente an registrierte, berechtigte Mitglieder ihres Vertriebsdienstes. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:  
   
-|Recording for the Blind & Dyslexic, Inc.|  
+|Lernhilfe|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Telefonnummer, wenn Sie innerhalb der USA anrufen: (800) 221-4792<br /><br /> Telefonnummer, wenn Sie von außerhalb der USA und Kanada anrufen: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Recording for the Blind & Dyslexic-Website: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|  
   
  Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.  
   

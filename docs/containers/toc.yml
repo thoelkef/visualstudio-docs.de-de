@@ -12,16 +12,16 @@ items:
     href: tutorial-kubernetes-tools.md
   - name: Debuggen von Apps in einem lokalen Docker-Container
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Bereitstellen eines ASP.NET-Containers an eine Containerregistrierung mithilfe von Visual Studio
+  - name: Bereitstellung in einer Containerregistrierung
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Konfigurieren eines Docker-Hosts mit VirtualBox
-    href: vs-azure-tools-docker-setup.md
-  - name: Problembehandlung bei der Entwicklung von Visual Studio 2017 mit Docker
+  - name: Bereitstellen in Azure App Service
+    href: docker-deploy-app-service.md
+  - name: Problembehandlung bei der Entwicklung von Visual Studio mit Docker
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525906"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160026"

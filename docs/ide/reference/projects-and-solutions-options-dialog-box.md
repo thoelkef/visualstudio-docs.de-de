@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223441"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867812"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld „Optionen“
 
@@ -49,9 +49,13 @@ Wenn diese Option deaktiviert ist, werden die Befehle im Menü **Erstellen**, z.
 
 Bei Auswahl dieser Option werden die Projektmappe und alle Befehle, die für Projektmappen ausgeführt werden, immer in der IDE angezeigt. Wenn diese Option deaktiviert ist, werden alle Projekte als eigenständige Projekte erstellt, und Sie können die Projektmappe im Projektmappen-Explorer oder Befehle, die für Projektmappen ausgeführt werden, in der IDE nicht sehen, wenn die Projektmappe nur ein Projekt enthält.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Neue Projekte beim Erstellen speichern
 
 Bei Auswahl dieser Option können Sie einen Speicherort für das Projekt im Dialogfeld **Neues Projekt** festlegen. Wenn diese Option deaktiviert ist, werden alle neuen Projekte als temporäre Projekte erstellt. Bei der Arbeit mit temporären Projekten können Sie ein Projekt erstellen und damit experimentieren, ohne einen Speicherort angeben zu müssen.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Benutzer bei nicht vertrauenswürdigem Projektspeicherort warnen
 

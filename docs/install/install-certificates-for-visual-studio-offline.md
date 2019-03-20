@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737049"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982999"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -113,6 +113,7 @@ Wenn eine Signatur in einer Onlineumgebung überprüft wird, werden Windows-APIs
 ## <a name="checking-if-certificates-are-already-installed"></a>Prüfen, ob Zertifikate bereits installiert sind
 
 Eine Möglichkeit, das installierte System zu prüfen, sind die folgenden Schritte:
+
 1. Führen Sie **mmc.exe** aus.<br/>
   a. Klicken Sie auf „Datei“ und dann auf **Snap-In hinzufügen/entfernen**.<br/>
   b. Doppelklicken Sie auf **Zertifikate**, dann auf **Computerkonto** und anschließend auf **Weiter**.<br/>
