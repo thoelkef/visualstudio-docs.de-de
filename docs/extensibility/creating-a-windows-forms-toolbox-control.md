@@ -1,6 +1,6 @@
 ---
 title: Erstellen eine Windows Forms-Toolbox-Steuerelement | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873004"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194576"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
-Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird, die Toolbox-Steuerelement von Windows Forms-Elementvorlage, die in Visual Studio-Erweiterbarkeitstools (VS SDK) enthalten ist das **Toolbox** beim Installieren der Erweiterung. In diesem Thema wird gezeigt, wie die Vorlage zu verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie für andere Benutzer verteilen können.
+
+Die Toolbox-Steuerelement von Windows Forms-Elementvorlage, die in Visual Studio-Erweiterbarkeitstools (VS SDK), enthalten ist ermöglicht das Erstellen einer **Toolbox** -Steuerelement, das automatisch hinzugefügt wird, wenn die Erweiterung installiert ist. In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Vorlage zu verwenden, um einen einfachen Zähler-Steuerelement zu erstellen, die Sie für andere Benutzer verteilen können.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
+
 Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
+## <a name="create-the-toolbox-control"></a>Erstellen von Toolbox-Steuerelement
+
 Die Windows Forms-Toolbox-Steuerelement-Vorlage erstellt ein nicht definiertes Benutzersteuerelement und enthält alle Funktionen, die erforderlich ist, um das Steuerelement, das Hinzufügen der **Toolbox**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Erstellen Sie eine Erweiterung mit einer Windows Forms-Toolbox-Steuerelement
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyWinFormsControl`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyWinFormsControl`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
 
 2. Wenn das Projekt geöffnet wird, eine **Windows Forms-Toolbox-Steuerelement** Item-Vorlage, die mit dem Namen `Counter`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **Windows Forms-Toolbox-Steuerelement**
 
 3. Dadurch werden ein Benutzersteuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuerelements in der **Toolbox**, und ein **Microsoft.VisualStudio.ToolboxControl** Ressourceneintrag im VSIX-Manifest für die Bereitstellung.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Erstellen einer Benutzeroberfläche für das Steuerelement
+
 Die `Counter` Steuerelement erfordert zwei untergeordneten Steuerelementen: eine <xref:System.Windows.Forms.Label> zum Anzeigen der aktuellen Anzahl und eine <xref:System.Windows.Forms.Button> auf die Anzahl der auf 0 zurückgesetzt. Ohne weitere untergeordnete Steuerelemente sind erforderlich, da der Aufrufer den Zähler programmgesteuert erhöht werden.
 
 #### <a name="to-build-the-user-interface"></a>So erstellen Sie die Benutzeroberfläche
@@ -58,6 +62,7 @@ Die `Counter` Steuerelement erfordert zwei untergeordneten Steuerelementen: eine
     |`Button1`|**Text**|Zurücksetzen|
 
 ### <a name="code-the-user-control"></a>Code des Benutzersteuerelements
+
 Die `Counter` Steuerelement macht eine Methode zum Erhöhen des Zählerwerts, ein Ereignis ausgelöst werden, wenn der Zählerwert erhöht wird, eine **zurücksetzen** Schaltfläche sowie drei Eigenschaften zum Speichern der aktuellen Anzahl, den anzuzeigenden Text und angibt, ob angezeigt oder Ausblenden der **zurücksetzen** Schaltfläche. Das `ProvideToolboxControl` -Attribut bestimmt, an welcher Stelle in der **Toolbox** das `Counter` -Steuerelement angezeigt wird.
 
 #### <a name="to-code-the-user-control"></a>Codieren des Benutzersteuerelements
@@ -146,13 +151,14 @@ Die `Counter` Steuerelement macht eine Methode zum Erhöhen des Zählerwerts, ei
     ```
 
 ### <a name="test-the-control"></a>Testen Sie das Steuerelement
+
  So testen Sie eine **Toolbox** steuern, testen Sie es zunächst in der Entwicklungsumgebung aus, und klicken Sie dann zu einer kompilierten Anwendung testen.
 
 #### <a name="to-test-the-control"></a>So testen Sie das Steuerelement
 
-1. Drücken Sie **F5**.
+1. Drücken Sie **F5** zu **Debuggen**.
 
-    Dies erstellt das Projekt und öffnet eine zweite experimentelle Instanz von Visual Studio, die das Steuerelement installiert ist.
+    Dieser Befehl erstellt das Projekt und öffnet eine zweite experimentelle Instanz von Visual Studio, die das Steuerelement installiert ist.
 
 2. Erstellen Sie in der experimentellen Instanz von Visual Studio eine **Windows Forms-Anwendung** Projekt.
 
@@ -206,9 +212,11 @@ Die `Counter` Steuerelement macht eine Methode zum Erhöhen des Zählerwerts, ei
     Der Leistungsindikator wird zurückgesetzt, um **0**.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Beim Erstellen einer **Toolbox** -Steuerelement, das Visual Studio erstellt eine Datei namens *ProjectName.vsix* in der "\bin\debug\" des Projekts. Sie können das Steuerelement bereitstellen, durch das Hochladen der *VSIX* -Datei mit einem Netzwerk oder auf einer Website. Wenn ein Benutzer öffnet die *VSIX* Datei, die das Steuerelement installiert ist, und Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie hochladen, die *VSIX* Datei [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , damit Benutzer sie finden können der **Tools**  >   **Erweiterungen und Updates** Dialogfeld.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

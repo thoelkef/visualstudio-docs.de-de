@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerdefinierten Projekt- und Elementvorlagen | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 733ffa76fdc24639d0e379b7e00a4a8c72a5f40e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714321"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194469"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 
@@ -30,37 +30,37 @@ Für Szenarien für einfache Vorlage erstellen, sollten Sie verwenden die **Vorl
 
 ## <a name="create-a-project-template"></a>Erstellen einer Projektvorlage
 
-1.  Erstellen Sie ein Projekt für die Projektvorlage aus. Finden Sie die Projektvorlage in das **neues Projekt** Dialogfeld in Visual Basic oder Visual C#- *Erweiterbarkeit* Ordner.
+1. Erstellen Sie ein Projekt für die Projektvorlage aus. Finden Sie die Projektvorlage in das **neues Projekt** Dialogfenster, indem Sie für "Projektvorlage" Suchen und Auswählen von entweder die C# oder Visual Basic-Version.
 
      Die Vorlage generiert eine Klassendatei, ein Symbol, ein *VSTEMPLATE* -Datei, eine bearbeitbaren-Projektdatei namens *ProjectTemplate.vbproj* oder *ProjectTemplate.csproj*, und einige Dateien, die von anderen Projekttypen in der Regel generiert werden solche eine *"Resources.resx"* -Datei ein *"AssemblyInfo"* -Datei, und ein *Settings* Datei. Jede Codedatei enthält allgemeine Ersetzen von Parametern an, falls zutreffend.
 
-2.  Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich. Entfernen Sie die Projektdatei bearbeitet werden, nicht die *"AssemblyInfo"* -Datei oder das *VSTEMPLATE* Datei.
+2. Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich. Entfernen Sie die Projektdatei bearbeitet werden, nicht die *"AssemblyInfo"* -Datei oder das *VSTEMPLATE* Datei.
 
-3.  Update der *VSTEMPLATE* Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
+3. Update der *VSTEMPLATE* Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
 
-4.  Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
+4. Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
 
-5.  Ändern Sie den generierten Inhalt nach Bedarf.
+5. Ändern Sie den generierten Inhalt nach Bedarf.
 
-6.  Erstellen Sie das Projekt.
+6. Erstellen Sie das Projekt.
 
      Visual Studio erstellt eine *ZIP* -Datei, die Ihre Vorlage enthält. Es wird nicht bereitgestellt, und es ist nicht verfügbar, in der experimentellen Instanz.
 
 ## <a name="create-an-item-template"></a>Erstellen Sie eine Elementvorlage
 
-1.  Erstellen Sie eine Elementvorlage-Projekt.
+1. Erstellen Sie eine Elementvorlage-Projekt.
 
      Die Vorlage generiert eine Klassendatei, ein Symbol, ein *VSTEMPLATE* -Datei, und ein *"AssemblyInfo"* Datei. Die Klassendatei enthält einige allgemeine Ersetzen von Parametern.
 
-2.  Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich.
+2. Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich.
 
-3.  Update der *VSTEMPLATE* Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
+3. Update der *VSTEMPLATE* Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
 
-4.  Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
+4. Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
 
-5.  Generierten Inhalt nach Bedarf zu ändern.
+5. Generierten Inhalt nach Bedarf zu ändern.
 
-6.  Erstellen Sie das Projekt.
+6. Erstellen Sie das Projekt.
 
      Visual Studio erstellt eine komprimierte Datei, die Ihre Vorlage enthält. Es wird nicht bereitgestellt, und es ist nicht verfügbar, in der experimentellen Instanz.
 
@@ -68,19 +68,19 @@ Für Szenarien für einfache Vorlage erstellen, sollten Sie verwenden die **Vorl
 
 ### <a name="to-deploy-the-project-or-item-template"></a>Zum Bereitstellen der Vorlage für Projekt oder Element
 
-1.  Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
+1. Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
-2.  Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.
+2. Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.
 
-3.  Legen Sie das Projektvorlagenprojekt als Medienobjekt des VSIX-Projekts. Öffnen der *vsixmanifest* Datei. Wechseln Sie zu der **Assets** Registerkarte, und klicken Sie auf **neu**.
+3. Legen Sie das Projektvorlagenprojekt als Medienobjekt des VSIX-Projekts. Öffnen der *vsixmanifest* Datei. Wechseln Sie zu der **Assets** Registerkarte, und klicken Sie auf **neu**.
 
-    1.  Legen Sie die **Typ** Feld **Microsoft.VisualStudio.ProjectTemplate** oder **Microsoft.VisualStudio.ItemTemplate**.
+    1. Legen Sie die **Typ** Feld **Microsoft.VisualStudio.ProjectTemplate** oder **Microsoft.VisualStudio.ItemTemplate**.
 
-    2.  Wählen Sie für Quelle und das **ein Projekt in der aktuellen Projektmappe** aus, und wählen Sie dann auf das Projekt, das die Vorlage enthält.
+    2. Wählen Sie für Quelle und das **ein Projekt in der aktuellen Projektmappe** aus, und wählen Sie dann auf das Projekt, das die Vorlage enthält.
 
-4.  Die Projektmappe erstellen, und drücken Sie **F5**. Die experimentelle Instanz angezeigt wird.
+4. Die Projektmappe erstellen, und drücken Sie **F5**. Die experimentelle Instanz angezeigt wird.
 
-5.  Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
+5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
 
 ## <a name="see-also"></a>Siehe auch
 

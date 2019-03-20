@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160705"
+ms.locfileid: "58194735"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Erstellen Sie Ihrer erste Erweiterung: Hello World
 
@@ -44,7 +44,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie installiert die **Visual Studio
 
 ::: moniker range="vs-2017"
 
-Schritt 1. Von der **Datei** , wählen Sie im Menü **neues Projekt**.
+Schritt 1. Wählen Sie im Menü **Datei** den Befehl **Neu** > **Projekt** aus.
 
 Schritt 2 Klicken Sie in das Suchfeld in der oberen rechten Ecke, geben Sie "Vsix", und wählen Sie die Visualisierung C# **VSIX-Projekt**. Geben Sie "HelloWorld" für die **Namen** am unteren Rand Dialogfeld, und klicken **OK**.
 
@@ -58,7 +58,7 @@ Wenn Sie lassen dieses Tutorial, und warten müssen, finden Sie das neue HelloWo
 
 ::: moniker range=">=vs-2019"
 
-Schritt 1. Von der **Datei** , wählen Sie im Menü **neues Projekt**. Suchen Sie nach "Vsix", und wählen Sie die Visualisierung C# **VSIX-Projekt** und dann **Weiter**.
+Schritt 1. Wählen Sie im Menü **Datei** den Befehl **Neu** > **Projekt** aus. Suchen Sie nach "Vsix", und wählen Sie die Visualisierung C# **VSIX-Projekt** und dann **Weiter**.
 
 Schritt 2 Geben Sie "HelloWorld" für die **Projektname** , und wählen Sie **erstellen**.
 
@@ -84,7 +84,7 @@ Die neue Befehlsdatei werden in **Projektmappen-Explorer**. Unter den **Ressourc
 
 ## <a name="modify-the-source-code"></a>Der Quellcode geändert
 
-An diesem Punkt, den Befehl und die Schaltfläche ist die Text automatisch generiert und nicht sehr interessant. Sie können die VSCT-Datei, und die CS-Datei ändern, wenn Sie Änderungen vornehmen möchten.
+An diesem Punkt die Befehls- und der Text der Schaltfläche automatisch generiert werden und nicht sehr interessant. Sie können die VSCT-Datei, und die CS-Datei ändern, wenn Sie Änderungen vornehmen möchten.
 
 * VSCT-Datei ist, in dem Sie können Ihre Befehle umbenennen sowie definieren, in dem sie das System der Visual Studio-Befehl wechseln Sie in. Wenn Sie die VSCT-Datei untersuchen, bemerken Sie Kommentare, die erläutern, die für jeden Abschnitt der VSCT-Code-Steuerelemente.
 

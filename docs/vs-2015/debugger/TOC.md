@@ -1,5 +1,4 @@
 # [Debuggen in Visual Studio](debugging-in-visual-studio.md)
-# [Neues im Debugger in Visual Studio 2015](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [Debugger – Grundlagen](debugger-basics.md)
 ## [Erste Schritte mit dem Debugger](getting-started-with-the-debugger.md)
 ## [Navigieren im Code mit dem Debugger](navigating-through-code-with-the-debugger.md)
