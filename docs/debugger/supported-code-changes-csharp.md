@@ -58,7 +58,7 @@ Die folgende Tabelle zeigt die Änderungen werden möglicherweise C# und Visual 
 |Alle Codeelemente|Umbenennen|
 |Namespaces|Hinzufügen|
 |Namespaces, Typen, Member|Löschen|
-|Generika|Hinzufügen oder ändern|
+|Generics|Hinzufügen oder ändern|
 |Schnittstellen|Ändern|
 |Typen|Abstrakte oder virtuell Mitglied hinzufügen, überschreiben Sie (finden Sie unter [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Typen|Destruktor hinzufügen|

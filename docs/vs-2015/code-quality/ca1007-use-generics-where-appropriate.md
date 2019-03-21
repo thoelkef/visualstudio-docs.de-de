@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 31f15bfc62943bb71acfba24432560facce9d636
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49861721"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generika verwenden
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generics verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

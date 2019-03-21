@@ -26,7 +26,7 @@ Sie können Komponententests für generische Methoden genau wie für andere Meth
 Wenn Visual Studio einen Komponententest für eine generische Klasse generiert, z.B. `MyList<T>`, werden zwei Methoden generiert: eine generisches Hilfsprogramm und eine Testmethode. Wenn `MyList<T>` über eine oder mehrere Typeinschränkungen verfügt, muss das Typargument alle Typeinschränkungen erfüllen. Um sicherzustellen, dass der zu testende generische Code bei allen zulässigen Eingaben erwartungsgemäß funktioniert, ruft die Testmethode die generische Hilfsmethode mit allen zu testenden Einschränkungen auf.
 
 ## <a name="examples"></a>Beispiele
- In den folgenden Beispielen werden Komponententests für generische Methoden veranschaulicht:
+ In den folgenden Beispielen werden Komponententests für Generics veranschaulicht:
 
 -   [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode) Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
 

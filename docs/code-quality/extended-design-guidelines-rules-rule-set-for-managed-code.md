@@ -92,7 +92,7 @@ Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf
 |[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Generische Methoden müssen den Typparameter angeben.|
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Übermäßige Anzahl von Parametern in generischen Typen vermeiden.|
 |[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Generische Typen in Membersignaturen nicht schachteln.|
-|[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Nach Möglichkeit Generika verwenden.|
+|[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Nach Möglichkeit Generics verwenden.|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Enumerationen müssen einen Wert von 0 (null) aufweisen.|
 |[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|Sammlungen müssen eine generische Schnittstelle implementieren.|
 |[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|Basistypen als Parameter übergeben.|

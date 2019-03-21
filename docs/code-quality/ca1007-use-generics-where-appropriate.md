@@ -1,5 +1,5 @@
 ---
-title: 'CA1007: Nach Möglichkeit Generika verwenden.'
+title: 'CA1007: Nach Möglichkeit Generics verwenden.'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55922517"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generika verwenden.
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generics verwenden.
 
 |||
 |-|-|

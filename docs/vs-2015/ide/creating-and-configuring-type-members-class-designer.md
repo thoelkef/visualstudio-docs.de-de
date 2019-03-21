@@ -267,7 +267,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
 - Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.  
   
-- Alle Generika weisen im Klassendetailsfenster schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.  
+- Alle Generics weisen im Klassendetailsfenster schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.  
   
 - Der Name des für einen generischen Typ definierten Typparameters ist schreibgeschützt.  
   
