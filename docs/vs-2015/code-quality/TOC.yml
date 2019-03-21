@@ -63,7 +63,7 @@ items:
           href: ca1005-avoid-excessive-parameters-on-generic-types.md
         - name: 'CA1006: Generische Typen in Membersignaturen nicht schachteln.'
           href: ca1006-do-not-nest-generic-types-in-member-signatures.md
-        - name: 'CA1007: Nach Möglichkeit Generika verwenden.'
+        - name: 'CA1007: Nach Möglichkeit Generics verwenden.'
           href: ca1007-use-generics-where-appropriate.md
         - name: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
           href: ca1008-enums-should-have-zero-value.md
