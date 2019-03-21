@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Erweiterung mit einem Menübefehl | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
@@ -13,22 +13,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9617bd0384de8c7afde8ec9ba1f2c88faa927a43
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316261"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194521"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl
+
 Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiterung mit einem Menübefehl, der Editor wird gestartet.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
+
 Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-command"></a>Erstellen eines Menübefehls
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstMenuCommand**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** > **Erweiterbarkeit**.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstMenuCommand**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
 
 2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **FirstCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *FirstCommand.cs*.
 
@@ -36,11 +38,22 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
     Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen zur experimentellen Instanz finden Sie unter [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
 
+::: moniker range="vs-2017"
+
 4. Öffnen Sie in der experimentellen Instanz den **Tools** > **Erweiterungen und Updates** Fenster. Daraufhin sollte die **FirstMenuCommand** Erweiterung. (Wenn Sie öffnen **Erweiterungen und Updates** in Ihrer Arbeitsinstanz von Visual Studio, nicht angezeigt **FirstMenuCommand**).
 
-    Lesen Sie jetzt die **Tools** Menü in der experimentellen Instanz. Daraufhin sollte **aufrufen FirstCommand** Befehl. An diesem Punkt nur daraufhin wird ein Dialogfeld mit der Meldung **FirstCommandPackage in FirstMenuCommand.FirstCommand.MenuItemCallback()**. Gewusst wie: Starten des Editors wirklich von diesem Befehl wird im nächsten Abschnitt sehen.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Öffnen Sie in der experimentellen Instanz den **Erweiterungen** > **Verwalten von Erweiterungen** Fenster. Daraufhin sollte die **FirstMenuCommand** Erweiterung. (Wenn Sie öffnen **Verwalten von Erweiterungen** in Ihrer Arbeitsinstanz von Visual Studio, nicht angezeigt **FirstMenuCommand**).
+
+::: moniker-end
+
+Lesen Sie jetzt die **Tools** Menü in der experimentellen Instanz. Daraufhin sollte **aufrufen FirstCommand** Befehl. An diesem Punkt der Befehl öffnet ein Dialogfeld mit der Meldung **FirstCommandPackage in FirstMenuCommand.FirstCommand.MenuItemCallback()**. Gewusst wie: Starten des Editors wirklich von diesem Befehl wird im nächsten Abschnitt sehen.
 
 ## <a name="change-the-menu-command-handler"></a>Ändern Sie den Befehlshandler Menü
+
 Jetzt aktualisieren wir den Befehlshandler zum Starten des Editors.
 
 1. Debuggen beenden Sie, und wechseln Sie zurück zu Ihrer Arbeitsinstanz von Visual Studio. Öffnen der *FirstCommand.cs* Datei, und fügen Sie die folgenden using-Anweisung:
@@ -64,7 +77,7 @@ Jetzt aktualisieren wir den Befehlshandler zum Starten des Editors.
     }
     ```
 
-3. Entfernen Sie die `MenuItemCallback` Methode und Hinzufügen einer `StartNotepad` -Methode die nur der Editor gestartet wird:
+3. Entfernen Sie die `MenuItemCallback` Methode und Hinzufügen einer `StartNotepad` -Methode, die nur der Editor gestartet wird:
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
@@ -80,31 +93,34 @@ Jetzt aktualisieren wir den Befehlshandler zum Starten des Editors.
     Können Sie eine Instanz von der <xref:System.Diagnostics.Process> Klasse Ausführen von ausführbaren Dateien, nicht nur Editor. Testen Sie es mit `calc.exe`, z. B.
 
 ## <a name="clean-up-the-experimental-environment"></a>Bereinigen der experimentellen Umgebung
-Wenn Sie mehrere Erweiterungen entwickeln, oder untersuchen nur Ergebnisse mit verschiedenen Versionen Ihres Codes für die Erweiterung, Ihre experimentelle Umgebung möglicherweise nicht mehr die Möglichkeit, wie, die Sie sollte. In diesem Fall sollten Sie das zurücksetzungsskript ausführen. Es heißt **Zurücksetzen der experimentellen Instanz der Visual Studio 2015**, und es ist im Lieferumfang von Visual Studio SDK. Dieses Skript entfernt alle Verweise auf Ihre Erweiterungen aus der experimentellen Umgebung, sodass Sie von Grund auf neu beginnen können.
+
+Wenn Sie mehrere Erweiterungen entwickeln, oder untersuchen nur Ergebnisse mit verschiedenen Versionen Ihres Codes für die Erweiterung, Ihre experimentelle Umgebung möglicherweise nicht mehr die Möglichkeit, wie, die Sie sollte. In diesem Fall sollten Sie das zurücksetzungsskript ausführen. Es heißt **Zurücksetzen der experimentellen Visual Studio-Instanz**, und es ist im Lieferumfang von Visual Studio SDK. Dieses Skript entfernt alle Verweise auf Ihre Erweiterungen aus der experimentellen Umgebung, sodass Sie von Grund auf neu beginnen können.
 
 Sie können dieses Skript in eine von zwei Arten abrufen:
 
-1. Suchen Sie auf dem Desktop **Zurücksetzen der experimentellen Instanz der Visual Studio 2015**.
+1. Suchen Sie auf dem Desktop **Zurücksetzen der experimentellen Visual Studio-Instanz**.
 
 2. Führen Sie die folgenden Befehle über die Befehlszeile aus:
 
-    ```
-    <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE
+    ```xml
+    <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
 
 ## <a name="deploy-your-extension"></a>Bereitstellen Sie Ihrer Erweiterung
+
 Nun, Sie die Tools-Erweiterung, die die gewünschte Weise ausführen haben, ist es Zeit, überlegen Sie sich mit Ihren Freunden und Kollegen freigeben. Das ist einfach, solange sie Visual Studio 2015 installiert haben. Sie müssen lediglich senden ist die *VSIX* Datei, die Sie erstellt haben. (Achten Sie darauf erstellen im Releasemodus.)
 
 Finden Sie die *VSIX* -Datei für diese Erweiterung in die *FirstMenuCommand* Verzeichnis "bin". Insbesondere werden vorausgesetzt, dass Sie die Releasekonfiguration erstellt haben, es in:
 
 *\<Verzeichnis "Code" > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*
 
-Um die Erweiterung zu installieren, muss sich Ihr Freund, schließen Sie alle geöffneten Instanzen von Visual Studio, und doppelklicken Sie auf die *VSIX* -Datei, die wird die **VSIX-Installationsprogramm**. Die Dateien werden kopiert, um die *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* Verzeichnis.
+Um die Erweiterung zu installieren, muss sich Ihr Freund, schließen Sie alle geöffneten Instanzen von Visual Studio, und doppelklicken Sie auf die *VSIX* -Datei, die wird die **VSIX-Installationsprogramm**. Die Dateien werden kopiert, um die *%LocalAppData%\Microsoft\VisualStudio\<Version > \Extensions* Verzeichnis.
 
-Wenn Ihr Freund Visual Studio dann erneut öffnet, findet er die FirstMenuCommand-Erweiterung in **Tools** > **Erweiterungen und Updates**. Er kann wechseln Sie zu **Erweiterungen und Updates** deinstallieren oder deaktivieren die Erweiterung zu.
+Wenn Ihr Freund Visual Studio dann erneut öffnet, finden sie dort die FirstMenuCommand-Erweiterung in **Tools** > **Erweiterungen und Updates**. Sie gelangen zu **Erweiterungen und Updates** deinstallieren oder deaktivieren die Erweiterung zu.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 In dieser exemplarischen Vorgehensweise wurde gezeigt, nur einen kleinen Teil der Verwendungsmöglichkeiten mit Visual Studio-Erweiterung. Hier ist eine kurze Liste mit anderem (relativ einfach), die Sie mit Visual Studio-Erweiterungen ausführen können:
 
 1. Viele weitere Möglichkeiten mit einem einfachen Menübefehl möglich:
@@ -123,4 +139,4 @@ In dieser exemplarischen Vorgehensweise wurde gezeigt, nur einen kleinen Teil de
 
 5. Fügen Sie die Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung hinzu: [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md) und [Erweitern von benutzereinstellungen und Optionen](../extensibility/extending-user-settings-and-options.md)
 
-   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen benutzerdefinierter Editoren und Designer](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer die Erweiterung in einer isolierten Shell: [Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Projekte erweitern](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)), oder Implementieren Ihrer die Erweiterung in einer isolierten Shell: [Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
