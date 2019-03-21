@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868142"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195176"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -418,7 +418,7 @@ Die Visual C++-Projektsystem beruht auf der [Visual Studio-Projektsystem](https:
 
 Weitere Informationen zum allgemeinen Entwurf, finden Sie unter [Plattformerweiterbarkeit - Teil 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) und [plattformerweiterbarkeit - Teil 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-Im einfach ausgedrückt, die Eigenschaftenseiten finden Sie der **Projekteigenschaften** Dialogfeld für ein C++-Projekt definieren, indem *Regel* Dateien. Eine Regeldatei gibt es sich um einen Satz von Eigenschaften, die auf einer Eigenschaftenseite anzeigen und Datei, wie und wo sie in das Projekt gespeichert werden soll. Regeldateien sind XML-Dateien, die XAML-Format verwenden. Die Typen verwendet, um sie zu serialisieren, werden in beschrieben [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Weitere Informationen zur Verwendung der Regeldateien in Projekten, finden Sie unter [Eigenschaftenseite: XML-Regeldateien](/cpp/ide/property-page-xml-files).
+Im einfach ausgedrückt, die Eigenschaftenseiten finden Sie der **Projekteigenschaften** Dialogfeld für ein C++-Projekt definieren, indem *Regel* Dateien. Eine Regeldatei gibt es sich um einen Satz von Eigenschaften, die auf einer Eigenschaftenseite anzeigen und Datei, wie und wo sie in das Projekt gespeichert werden soll. Regeldateien sind XML-Dateien, die XAML-Format verwenden. Die Typen verwendet, um sie zu serialisieren, werden in beschrieben [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Weitere Informationen zur Verwendung der Regeldateien in Projekten, finden Sie unter [Eigenschaftenseite: XML-Regeldateien](/cpp/build/reference/property-page-xml-files).
 
 Die Regel muss hinzugefügt werden die `PropertyPageSchema` Elementgruppe:
 
@@ -636,8 +636,8 @@ Informationen zum Erstellen von VSIX-Dateien finden Sie unter [Auslieferung von 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Der Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) bietet die Build-Engine und erweiterbares XML-basierte Format für Projektdateien. Sie sollten vertraut sein mit Basic [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md) und mit dem [MSBuild für Visual C++](/cpp/build/msbuild-visual-cpp-overview) funktioniert zum Erweitern von Visual C++-Projektsystem.
+Der Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) bietet die Build-Engine und erweiterbares XML-basierte Format für Projektdateien. Sie sollten vertraut sein mit Basic [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md) und mit dem [MSBuild für Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funktioniert zum Erweitern von Visual C++-Projektsystem.
 
 Das Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) stellt die Erweiterung der APIs, die von der CPS- und Visual C++-Projektsystem verwendet werden. Einen Überblick darüber, wie MEF von CPS verwendet wird, finden Sie unter [CPS und MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) in die [VSProjectSystem Überblick über MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Sie können das vorhandene Buildsystem zum Hinzufügen von Buildschritten oder neuer Dateitypen anpassen. Weitere Informationen finden Sie unter [Übersicht über MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) und [arbeiten mit Projekteigenschaften](/cpp/ide/working-with-project-properties).
+Sie können das vorhandene Buildsystem zum Hinzufügen von Buildschritten oder neuer Dateitypen anpassen. Weitere Informationen finden Sie unter [Übersicht über MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) und [arbeiten mit Projekteigenschaften](/cpp/build/working-with-project-properties).
