@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875718"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324499"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio
   Sie können SharePoint-Tools-Erweiterungen in der experimentellen Instanz oder in der regulären Instanz von Visual Studio debuggen. Wenn Sie Fehler im Verhalten einer Erweiterung beheben müssen, können Sie auch Registrierungswerte ändern, um weitere Fehlerinformationen anzuzeigen und die Ausführung von SharePoint-Befehlen durch Visual Studio zu konfigurieren.
@@ -56,7 +56,7 @@ ms.locfileid: "54875718"
 
 #### <a name="to-debug-the-extension"></a>So debuggen Sie die Erweiterung
 
-1.  Starten Sie Visual Studio mit Administratorrechten, und öffnen Sie das Erweiterungsprojekt. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zuerst Instanz*.
+1.  Öffnen Sie Visual Studio mit Administratorrechten, und öffnen Sie das Erweiterungsprojekt. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zuerst Instanz*.
 
 2.  Starten Sie eine weitere Instanz von Visual Studio mit Administratorrechten. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zweite Instanz*.
 

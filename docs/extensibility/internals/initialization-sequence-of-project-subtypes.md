@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920188"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323706"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz von Projektuntertypen
 Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimplementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Die Erstellung von einem Projektuntertyp wird gestartet, wenn die Umgebung bestimmt, dass die Liste mit Projekten Typ GUID für ein Projekt die Dateierweiterung nicht leer ist. Die Dateinamenerweiterung für Projektdateien und die Projekt-GUID angeben, ob das Projekt ist eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp. Z. B. die Erweiterung .vbproj {F184B08F-C81C-45F6-A57F-5ABD9991F28F} zu identifizieren, und eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.
@@ -31,7 +31,7 @@ Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimpleme
 
     1.  Implementierung der Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> Methodenaufrufe der `HrCreateInnerProj` -Methode durch die folgende Funktionsdeklaration:
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          Wenn diese Funktion wird aufgerufen zum ersten Mal, d. h. für den äußeren Projektuntertyp, die Parameter `pOuter` und `pOwner` als übergeben `null` und die Funktion legt fest, den äußeren Projektuntertyp `IUnknown` zu `pOuter`.
 

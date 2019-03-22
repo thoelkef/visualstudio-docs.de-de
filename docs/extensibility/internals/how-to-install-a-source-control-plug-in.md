@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635188"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323385"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in
 Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
@@ -78,7 +78,7 @@ Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
 
 4. Erstellen Sie einen Unterschlüssel mit dem Namen **InstalledSCCProviders** unter der **SourceCodeControlProvider** Unterschlüssel, und legen Sie einen Eintrag unter diesem Unterschlüssel.
 
-    Der Name dieses Eintrags ist, den Benutzer lesbaren Namen des Anbieters (entspricht der Wert für den Eintrag SCCServerName angegeben), und der Wert ist, von denen wiederum den Unterschlüssel, die in Schritt 1 erstellt haben. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *SOFTWARE\\< Firmenname\> \\< Produktname\>*.
+    Der Name dieses Eintrags ist, den Benutzer lesbaren Namen des Anbieters (entspricht der Wert für den Eintrag SCCServerName angegeben), und der Wert ist, von denen wiederum den Unterschlüssel, die in Schritt 1 erstellt haben. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< Anzeigename\>** = *SOFTWARE\\< Unternehmen Namen\>\\< Produktname\>*.
 
     Zum Beispiel:
 
