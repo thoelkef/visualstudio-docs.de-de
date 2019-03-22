@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223350"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323698"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
+# <a name="use-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 
 Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und bewährten Methoden zum Schreiben von Code in C++, die von Experten für C++ und Designern erstellt. Visual Studio unterstützt eine Teilmenge dieser Regeln im Rahmen der Codeanalysetools derzeit für C++. Die Führungslinie kernrichtlinien werden standardmäßig in Visual Studio 2017 und Visual Studio-2019 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Die C++-Core-Richtlinien aus neue Regeln hinzugefügt werden, kann die Anzahl de
 Referenzthemen für die meisten Regeln unterliegen [Visual Studio C++ Core überprüfen Reference](code-analysis-for-cpp-corecheck.md).
 
 Ab Visual Studio 2017 Version 15.3 die sind die unterstützten Regelsätze aus:
-- **Regeln für besitzerzeiger** erzwingen [Resource-Manager überprüft, ob im Zusammenhang mit der Besitzer<T> aus den C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regeln für besitzerzeiger** erzwingen [Resource-Manager überprüft, ob im Zusammenhang mit der Besitzer\<T > aus den C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Const-Regeln** erzwingen [Const-bezogene Überprüfungen aus den C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Microsoft Visual C++-Compiler verfügt über eine eingeschränkte Unterstützung
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Unterdrücken der Analyse mithilfe von Befehlszeilenoptionen
+## <a name="suppress-analysis-by-using-command-line-options"></a>Unterdrücken Sie Analyse mithilfe von Befehlszeilenoptionen
 
 Anstelle von #pragmas können Befehlszeilenoptionen in der Datei-Eigenschaftenseite Sie so unterdrücken Sie Warnungen für ein Projekt oder eine einzelne Datei. Um beispielsweise die Warnung deaktivieren 26400 für eine Datei:
 
@@ -165,12 +165,12 @@ Anstelle von #pragmas können Befehlszeilenoptionen in der Datei-Eigenschaftense
 
 Sie können die Befehlszeilenoption vorübergehend deaktivieren, Codeanalyse für eine Datei durch Angabe `/analyze-`. Dadurch wird die Warnung *D9025 Überschreiben '/ analyze-mit "/ analyze-'*, die erinnert Sie daran, Codeanalyse später wieder aktivieren.
 
-## <a name="corecheck_per_file"></a> Aktivieren den C++ Core Richtlinien Checker auf bestimmten Projektdateien.
+## <a name="corecheck_per_file"></a> Aktivieren Sie den C++ Core Richtlinien Checker auf bestimmten Projektdateien.
 
 Manchmal kann es hilfreich, konzentriert sich Code analysieren und immer noch mit Visual Studio-IDE sein. Das folgende Beispielszenario kann zum Zeitpunkt der Erstellung zu speichern und zu vereinfachen, Filterergebnisse für große Projekte verwendet werden:
 
 1. Legen Sie in der Befehlsshell die `esp.extension` und `esp.annotationbuildlevel` Umgebungsvariablen.
-2. Um diese Variablen zu erben, starten Sie Visual Studio von der Befehlsshell aus.
+2. Um diese Variablen zu erben, öffnen Sie Visual Studio von der Befehlsshell aus.
 3. Laden Sie Ihr Projekt, und öffnen Sie deren Eigenschaften.
 4. Aktivieren Sie Codeanalyse, wählen Sie die entsprechenden Regelsätze, aber aktivieren Sie Code Analysis Extensions nicht.
 5. Wechseln Sie zu der Datei, die Sie verwenden möchten, Analysieren mit der C++-Core-Richtlinien aus, und öffnen Sie deren Eigenschaften.

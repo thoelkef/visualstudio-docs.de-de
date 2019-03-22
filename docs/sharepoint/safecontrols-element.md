@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 151d45159c6c5dda42e138899a027adcc60774c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce943416bba84c46ce7b709c3d2bdb6ddb3e4447
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619536"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322492"
 ---
 # <a name="safecontrols-element"></a>SafeControls-Element
   Eine Auflistung von ASPX-Steuerelementen und Webparts, die für alle Benutzer Zugriff auf jede ASPX-Seite auf die SharePoint-Website als sicher gekennzeichnet sind.
@@ -34,7 +34,7 @@ ms.locfileid: "56619536"
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -55,7 +55,7 @@ ms.locfileid: "56619536"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Name des Schemas**|SharePoint-Projektelementschema|
 |**Validierungsdatei**|ProjectItemModelSchema.xsd|
 |**Kann leer sein.**|Nein|

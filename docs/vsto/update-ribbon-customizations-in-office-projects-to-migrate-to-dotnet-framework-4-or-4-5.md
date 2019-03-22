@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634928"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324681"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Anpassungen von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn Ihr Projekt eine menübandanpassung, die erstellt wurde die **Menüband (visueller Designer)** Projektelement, müssen Sie die folgenden Änderungen an Ihrem Projektcode vornehmen, wenn das Zielframework geändert wird, um die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später noch mal.
@@ -103,9 +103,9 @@ ms.locfileid: "56634928"
 
      Angenommen, die Datei enthält die folgende Codezeile, die das <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>-Ereignis in einem Projekt behandelt, das auf .NET Framework 3.5 abzielt.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> in einem Projekt, das [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, Sie müssen stattdessen den folgenden Code.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> In einem Projekt, das [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, Sie müssen stattdessen den folgenden Code.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> eine vollständige Liste der Menübanddelegaten finden Sie unter [Behandeln von Menübandereignissen](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> eine vollständige Liste der Menübanddelegaten finden Sie unter [Behandeln von Menübandereignissen](#ribbonevents).
 
 5.  Suchen Sie in Visual Basic-Projekten die `ThisRibbonCollection`-Klasse am Ende der Datei. Ändern Sie die Deklaration dieser Klasse, sodass sie nicht mehr von `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` erbt.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634928"
 
   Im folgenden Codebeispiel wird dargestellt, wie ein <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> in einer Menübandklasse eines Projekts erstellt wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> die folgende Tabelle enthält die Steuerelemente, die Sie programmgesteuert erstellen können und die Methode zum Erstellen der Steuerelemente in Projekten, die auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> die folgende Tabelle enthält die Steuerelemente, die Sie programmgesteuert erstellen können und die Methode verwenden, um die Steuerelemente in Projekten zu erstellen, die die alsZiel[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
 
 |Steuerelement|RibbonFactory-Methode für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
 |-------------| - |

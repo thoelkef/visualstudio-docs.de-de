@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719482"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324343"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
@@ -43,7 +43,7 @@ Um eine Verzögerung der Benutzeroberfläche zu diagnostizieren, müssen Sie zun
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Starten Sie Visual Studio mit der Aktivität, die Protokollierung auf neu
 
-Visual Studio kann ein "Aktivitätsprotokoll" generieren, die hilfreiche Informationen bereitstellt, wenn ein Problem debuggen. Um die Aktivität, die Protokollierung in Visual Studio zu aktivieren, starten Sie Visual Studio mit der `/log` -Befehlszeilenoption. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
+Visual Studio kann ein "Aktivitätsprotokoll" generieren, die hilfreiche Informationen bereitstellt, wenn ein Problem debuggen. So schalten Sie die Aktivität, die Protokollierung in Visual Studio, öffnen Sie Visual Studio mit der `/log` -Befehlszeilenoption. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
