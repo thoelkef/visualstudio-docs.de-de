@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio bietet verschiedene Tools zum Bereitstellen Ihrer Anwendungen.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Lernen Sie die Bereitstellung mit Visual Studio in fünfminütigen Schnellstarts kennen</h2>
 
 <ul class="panelContent cardsFTitle">

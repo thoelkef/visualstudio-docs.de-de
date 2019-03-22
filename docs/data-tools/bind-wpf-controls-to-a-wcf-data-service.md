@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909686"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069774"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 
@@ -50,7 +50,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Datenmodelle in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 ## <a name="create-the-service-project"></a>Erstellen Sie das Dienstprojekt
 
-Zunächst, dass in dieser exemplarischen Vorgehensweise erstellen ein Projekt für einen WCF Data Service:
+1. In dieser exemplarischen Vorgehensweise erstellen Sie zunächst eine C# oder Visual Basic **ASP.NET-Webanwendung** Projekt. Nennen Sie das Projekt **AdventureWorksService**.
 
-1. Starten Sie Visual Studio.
-
-2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
-
-3. Erweitern Sie **Visual C#** oder**Visual Basic**, und wählen Sie dann **Web**.
-
-4. Wählen Sie die Projektvorlage **ASP.NET-Webanwendung** aus.
-
-5. Geben Sie im Feld **Name** den Namen **AdventureWorksService** ein, und klicken Sie auf **OK**.
-
-     Visual Studio erstellt das Projekt **AdventureWorksService**.
-
-6. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei wird für diese exemplarische Vorgehensweise benötigt.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei ist nicht erforderlich, für die exemplarische Vorgehensweise.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Erstellen eines Entity Data Model für den Dienst
 
@@ -92,7 +80,7 @@ Um Daten zu einer Anwendung, die mithilfe von WCF Data Services verfügbar mache
 
 5. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** eine der folgenden Optionen aus:
 
-    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus.
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.
 
     - Klicken Sie **Neue Verbindung**, und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
 

@@ -3,18 +3,12 @@ title: IntelliTest-Referenzleitfaden | Testtools für Microsoft-Entwickler
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948946"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest-Referenzhandbuch
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948946"
     * [Sprache](introduction.md#language)
     * [Symbolischer Ansatzpunkt](introduction.md#symbolic-reasoning)
     * [Falsche Stapelüberwachungen](introduction.md#incorrect-stack-traces)
-  - [Weiterführende Themen](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Weiterführende Themen](introduction.md#further-reading)
 
 * **[Erste Schritte mit IntelliTest](getting-started.md)**
   - [Wichtige Attribute](getting-started.md#important-attributes)
-  - [Wichtige statische Hilfsklassen](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Wichtige statische Hilfsklassen](getting-started.md#helper-classes)
 
 * **[Testerzeugung](test-generation.md)**
   - [Testgeneratoren](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948946"
   - [Nachbedingung](test-generation.md#postcondition)
   - [Fehlgeschlagenen Tests](test-generation.md#test-failures)
   - [Einrichtung und Löschung](test-generation.md#setup-teardown)
-  - [Weiterführende Themen](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Weiterführende Themen](test-generation.md#further-reading)
 
 * **[Eingabeerzeugung](input-generation.md)**
   - [Einschränkungs-Solver](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948946"
   - [Strukturen](input-generation.md#structs)
   - [Arrays und Zeichenfolgen](input-generation.md#arrays-and-strings)
   - [Abrufen von zusätzlichen Eingaben](input-generation.md#additional-inputs)
-  - [Weiterführende Themen](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Weiterführende Themen](input-generation.md#further-reading)
 
 * **[Explorationsgrenzen](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948946"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Attribute Glossary](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948946"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Einstellungswasserfall](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948946"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Warnungen und Fehler](warnings-and-errors.md)**
   - [MaxBranches überschritten](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948946"
   - [Probleme mit der Testfähigkeit](warnings-and-errors.md#testability-issue)
   - [Einschränkung](warnings-and-errors.md#limitation)
   - [Erkannter Aufrufkonflikt](warnings-and-errors.md#observed-call-mismatch)
-  - [Im Feld „static“ gespeicherten Wert](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Im Feld „static“ gespeicherten Wert](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Sie möchten Feedback geben?
 

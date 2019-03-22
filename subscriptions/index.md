@@ -19,6 +19,7 @@ Visual Studio-Abonnements sind eine umfassende Sammlung von Ressourcen zum Erste
 Als Administrator melden Sie sich bei [https://manage.visualstudio.com](https://manage.visualstudio.com) an, um Ihrem Team Abonnements zuzuweisen.<br>
 Als Abonnent melden Sie sich bei [https://my.visualstudio.com](https://my.visualstudio.com) an, um auf Ihre Abonnementvorteile zuzugreifen.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

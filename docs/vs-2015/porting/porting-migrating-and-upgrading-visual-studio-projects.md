@@ -19,14 +19,14 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805552"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194923"
 ---
-# <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten
+# <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portieren, Migrieren und Upgraden von Visual Studio-Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](https://docs.microsoft.com/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
@@ -61,7 +61,7 @@ Wenn Sie einen Wechsel zu einer neueren Version von Visual Studio in Betracht zi
 |Office 2007 VSTO|Wenn Sie das Projekt aktualisieren, um Office 2010 und .NET Framework 4 zu verwenden, können Sie dieses Projekt in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]oder Visual Studio 2010 SP1 öffnen.|
 |Office 2010 VSTO|Wenn das Projekt auf .NET Framework 4 abzielt, können Sie es in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen. Alle anderen Projekte erfordern ein unidirektionales Upgrade.|
 |Umfassende Internetanwendungen (Rich Internet Applications)|Wenn Sie das Projekt aktualisieren, können Sie es in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen.|
-|SharePoint 2007|Dieses Projekt kann nicht in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]geöffnet werden. Wenn Sie das Projekt jedoch manuell auf SharePoint 2010 aktualisieren, können Sie es in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen. Weitere Informationen zum Upgraden von SharePoint 2007 finden Sie unter [Migrating from SharePoint 2007 to SharePoint 2010 for the IT Pro (Migrieren von SharePoint 2007 nach SharePoint 2010 für IT Pro)](http://go.microsoft.com/fwlink/?LinkId=238224), [Migrating a 2007 Workflow to Visual Studio & SharePoint 2010 (Migrieren eines 2007-Workflows nach Visual Studio & SharePoint 2010)](http://go.microsoft.com/fwlink/?LinkId=238225) und [SharePoint Enterprise Search Migration Tool for SharePoint Server 2010 (SharePoint-Unternehmenssuche-Migrationstool für SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Dieses Projekt kann nicht in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]geöffnet werden. Wenn Sie das Projekt jedoch manuell auf SharePoint 2010 aktualisieren, können Sie es in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen. Weitere Informationen dazu, wie Sie SharePoint 2007 aktualisieren, finden Sie unter [Migrieren von SharePoint 2007 auf SharePoint 2010 für IT-Profis](http://go.microsoft.com/fwlink/?LinkId=238224) und [SharePoint Enterprise Search-Migrationstool für SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Sie können das Projekt in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen.|
 |SketchFlow|Wenn Sie zulassen, dass Visual Studio das Projekt auf WPF 4.5/Silverlight 5 aktualisiert, können Sie es in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] und [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]öffnen.|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]-Datenbank|Sie können das Projekt in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]und Visual Studio 2010 SP1 öffnen. Wenn Sie über eine Datenbankdatei (.mdf) verfügen, die in einer früheren Version von SQL Server erstellt wurde, müssen Sie sie auf [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] aktualisieren, bevor Sie sie mit SQL Server Express LocalDB verwenden können, die Datenbank ist jedoch nicht mehr mit früheren Versionen von SQL Server kompatibel. Wenn Sie keine Aktualisierung durchführen, können Sie die Arbeit mit der Datenbank in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] fortsetzen, indem Sie [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] auf demselben Computer installieren und verwenden. Weitere Informationen finden Sie unter [MDF-Dateien aktualisieren](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Wenn Sie einen Wechsel zu einer neueren Version von Visual Studio in Betracht zi
 
 - Wenn Sie versuchen, ein Projekt für eine Desktop-App in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]zu öffnen, tritt ein Fehler auf, und eine der folgenden Meldungen wird angezeigt: „Diese Version von Visual Studio unterstützt nur [!INCLUDE[win81](../includes/win81-md.md)] -Apps“ oder „Dieses Projekt ist mit der aktuellen Edition von Visual Studio nicht kompatibel“. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] ist auf die Entwicklung, das Testen und die Bereitstellung von Windows Store-Apps beschränkt, die für Windows 8.1 entwickelt wurden. Um ein Desktop-App-Projekt zu öffnen, müssen Sie eine Edition von Visual Studio verwenden, die diesen Projekttyp unterstützt.
 
-   Weitere Informationen zu den Visual Studio-Editionen finden Sie unter [Microsoft Visual Studio-Produkte](http://go.microsoft.com/fwlink/?LinkId=254332).
+   Weitere Informationen zu den Visual Studio-Editionen finden Sie unter [Microsoft Visual Studio-Produkte](https://visualstudio.microsoft.com/products/).
 
 - Wenn Sie versuchen, ein Windows Store-App-Projekt in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop zu öffnen, tritt ein Fehler auf. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop kann nicht zur Erstellung von Windows Store-Apps verwendet werden. Wenn Sie Windows Store-Apps erstellen möchten, können Sie auch [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]installieren. Sie können ebenfalls Visual Studio Professional 2013 verwenden, um Apps für alle Microsoft-Plattformen und das Web zu entwickeln.
 
