@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223623"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867825"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -21,9 +21,11 @@ In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsu
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Startseite
 
-Das erste, was Sie nach dem Start von Visual Studio sehen, ist wahrscheinlich die **Startseite**. Die **Startseite** ist als „Hub“ konzipiert, um Ihnen zu helfen, die benötigten Befehle und Projektdateien schneller zu finden. Der Abschnitt **Aktuell** zeigt Projekte und Ordner an, an denen Sie zuletzt gearbeitet haben. Unter **Neues Projekt** können Sie auf einen Link klicken, um das Dialogfeld **Neues Projekt** aufzurufen, oder Sie können unter **Öffnen** ein vorhandenes Codeprojekt oder einen Codeordner öffnen. Auf der rechten Seite befindet sich ein Feed mit den neuesten Entwicklernews.
+Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist wahrscheinlich die **Startseite**. Die **Startseite** ist als „Hub“ konzipiert, um Ihnen zu helfen, die benötigten Befehle und Projektdateien schneller zu finden. Der Abschnitt **Aktuell** zeigt Projekte und Ordner an, an denen Sie zuletzt gearbeitet haben. Unter **Neues Projekt** können Sie auf einen Link klicken, um das Dialogfeld **Neues Projekt** aufzurufen, oder Sie können unter **Öffnen** ein vorhandenes Codeprojekt oder einen Codeordner öffnen. Auf der rechten Seite befindet sich ein Feed mit den neuesten Entwicklernews.
 
 ![Startseite in Visual Studio](media/start-page.png)
 
@@ -31,9 +33,29 @@ Wenn Sie die **Startseite** schließen und dann erneut anzeigen möchten, könne
 
 ![Dateimenü in Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Startfenster
+
+Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so konzipiert, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Klonen oder Ausschecken von Code, zum Öffnen bereits vorhandener Projekte oder Projektmappe, zum Erstellen eines neuen Projekts oder einfach zum Öffnen eines Ordners mit Codedateien.
+
+[![](media/vs-2019/start-window-labeled.png "Das Startfenster in Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+
+Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
+
+Wenn Sie mit einer nicht auf MSBuild basierenden Codebasis arbeiten, verwenden Sie die Option **Lokalen Ordner öffnen**, um Ihren Code in Visual Studio zu öffnen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](develop-code-in-visual-studio-without-projects-or-solutions.md). Andernfalls können Sie ein neues Projekt erstellen oder ein Projekt von einem Quellenanbieter wie GitHub oder Azure DevOps klonen.
+
+Die Option **Ohne Code fortfahren** öffnet einfach nur die Entwicklungsumgebung von Visual Studio, ohne dass spezielle Projekte oder Code geladen würden. Sie können diese Option auch dazu verwenden, um einer [Live Share](/visualstudio/liveshare/)-Sitzung beizutreten, oder Anfügungen an einen Prozess zum Debuggen durchzuführen. Sie können auch **Esc** drücken, um das Startfenster zu schließen, und die IDE zu öffnen.
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
 Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenzulernen.
+
+::: moniker range="vs-2017"
 
 1. Geben Sie auf der **Startseite** im Suchfeld unter **Neues Projekt** **Konsole** ein, um die Liste der Projekttypen nach denen zu filtern, die „Konsole“ im Namen enthalten.
 
@@ -42,6 +64,24 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
    Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Framework)** aus. (Wenn Sie mit Visual Basic, C++, JavaScript oder einer anderen Sprache entwickeln, können Sie alternativ ein Projekt in einer dieser Sprachen erstellen. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
 1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   Das Fenster **Neues Projekt erstellen** wird geöffnet. Dieses Fenster wird auch als Dialogfeld **Neues Projekt** bezeichnet. Hier können Sie Projektvorlagen durchsuchen und eine Projektvorlage auswählen. Außerdem finden Sie hier eine Liste mit den zuletzt verwendeten Projektvorlagen.
+
+1. Geben Sie im Suchfeld am oberen Rand **Konsole** ein, um die Liste mit den Projekttypen nach Einträgen zu filtern, die das Wort „Konsole“ enthalten. Grenzen Sie die Suchergebnisse weiter ein, indem Sie unter **Sprache** die Option **C#** (oder eine andere Programmiersprache) auswählen.
+
+   ![Dialogfeld „Neues Projekt“ in Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+
+1. Wenn Sie C#, Visual Basic oder F# als Programmiersprache ausgewählt haben, wählen Sie die Vorlage **Konsolen-App (.NET Framework)** und anschließend **Weiter** aus. (Falls Sie eine andere Programmiersprache ausgewählt haben, wählen Sie einfach eine beliebige Vorlage aus. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+
+1. Übernehmen Sie auf der Seite **Neues Projekt konfigurieren** die Standardwerte für Projektname und Speicherort, und wählen Sie anschließend **Erstellen** aus.
+
+::: moniker-end
 
    Das Projekt wird erstellt, und eine Datei namens *Program.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
 
@@ -57,11 +97,21 @@ Im **Projektmappen-Explorer**, der sich in Visual Studio üblicherweise auf der 
 
 Die Menüleiste am oberen Rand der Visual Studio-Gruppen gruppiert Befehle in Kategorien. Beispielsweise enthält das Menü **Projekt** Befehle, die sich auf das Projekt beziehen, in dem Sie zurzeit arbeiten. Im Menü **Extras** können Sie das Verhalten von Visual Studio anpassen, indem Sie auf **Optionen** klicken, oder Features zu Ihrer Installation hinzufügen, indem Sie auf **Tools und Features abrufen** klicken.
 
-![Menüleiste in Visual Studio](media/quickstart-IDE-menu-bar.png)
+::: moniker range="vs-2017"
 
-Öffnen Sie das Fenster **Fehlerliste**, indem Sie erst auf das Menü **Ansicht** und dann auf **Fehlerliste** klicken.
+![Menüleiste in Visual Studio 2017](media/quickstart-IDE-menu-bar.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Menüleiste in Visual Studio 2019](media/vs-2019/menu-bar.png)
+
+::: moniker-end
 
 ## <a name="error-list"></a>Fehlerliste
+
+Öffnen Sie das Fenster **Fehlerliste**, indem Sie zuerst das Menü **Ansicht** und anschließend **Fehlerliste** auswählen.
 
 Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand Ihres Codes an. Wenn in Ihrer Datei oder Ihrem Projekt Fehler vorhanden sind (z.B. eine fehlende Klammer oder ein fehlendes Semikolon), werden diese hier aufgelistet.
 
@@ -77,19 +127,35 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 ## <a name="quick-launch"></a>Schnellstart
 
-Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
+Über das Suchfeld **Schnellstart** gelangen Sie schnell und einfach an nahezu jeden Ort in Visual Studio. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
 
-1. Das Feld **Schnellstart** finden Sie in der oberen rechten Ecke der IDE. (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
+::: moniker range="vs-2017"
 
-1. Geben Sie im Feld **Schnellstart** **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+1. Das Suchfeld **Schnellstart** finden Sie in der rechten oberen Ecke der IDE. (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
 
-   ![Feld „Schnellstart“ in Visual Studio](media/quickstart-IDE-quick-launch.png)
+2. Geben Sie im Suchfeld **Schnellstart** den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+
+   ![Suchfeld „Schnellstart“ in Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
    Das Dialogfeld **Optionen** wird mit der Seite **Erstellen und ausführen** geöffnet.
 
-1. Wählen Sie unter **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** aus, und klicken Sie dann auf die Schaltfläche **OK**.
+::: moniker-end
 
-1. Erstellen Sie das Projekt erneut, indem Sie mit der rechten Maustaste auf das Projekt **ConsoleApp1** im **Projektmappen-Explorer** klicken und **Neu erstellen** aus dem Kontextmenü auswählen.
+::: moniker range=">=vs-2019"
+
+1. Das Suchfeld **Schnellstart** befindet sich rechts oben in der IDE (rechts neben den Menüs). (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
+
+2. Geben Sie im Suchfeld **Schnellstart** den Suchbegriff **Ausführlichkeit** ein. Wählen Sie in den angezeigten Ergebnissen die Option **MSBuild-Ausführlichkeit ändern**.
+
+   ![Suchfeld „Schnellstart“ in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+
+   Das Dialogfeld **Optionen** wird mit der Seite **Erstellen und ausführen** geöffnet.
+
+::: moniker-end
+
+3. Wählen Sie unter **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** aus, und klicken Sie dann auf die Schaltfläche **OK**.
+
+4. Erstellen Sie das Projekt erneut, indem Sie mit der rechten Maustaste auf das Projekt **ConsoleApp1** im **Projektmappen-Explorer** klicken und **Neu erstellen** aus dem Kontextmenü auswählen.
 
    Nun zeigt das Fenster **Ausgabe** eine ausführlichere Protokollierung des Erstellungsprozesses an, z.B. auch, wohin welche Dateien kopiert wurden.
 
@@ -99,7 +165,17 @@ Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast a
 
 Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verbesserung des Produkts haben, können Sie das Menü **Feedback senden** im oberen Bereich des Visual Studio-Fensters neben dem Feld **Schnellstart** verwenden.
 
-![Menü „Feedback senden“ in Visual Studio](media/quickstart-IDE-send-feedback.png)
+::: moniker range="vs-2017"
+
+![Menü „Feedback senden“ in Visual Studio 2017](media/quickstart-IDE-send-feedback.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Menü „Feedback senden“ in Visual Studio 2019](media/vs-2019/send-feedback-menu.png)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 
