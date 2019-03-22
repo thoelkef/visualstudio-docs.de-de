@@ -12,6 +12,8 @@ manager: jillfra
 
 Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mithilfe des Debuggers können Sie die Ausführung des Programms unterbrechen, um den Code zu untersuchen, Variablen im Programm zu untersuchen und zu bearbeiten, Register anzuzeigen, die aus dem Quellcode erstellten Anweisungen zu lesen und den von der Anwendung belegten Speicherplatz anzuzeigen.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

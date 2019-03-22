@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763283"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194456"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
 -   Funktionen, die in allen Skriptblöcken im aktiven Dokument definiert werden. Inline-Skriptblöcke werden in Dateien mit folgenden Dateinamenerweiterungen unterstützt: .aspx., .ascx, .master, .html und .htm.
 
--   `script`-Elemente mit `src`-Attributen, die auf eine andere Skriptdatei zeigen. Die Zielskriptdatei muss über die Dateinamenerweiterung .js verfügen.
+-   `script`-Elemente mit `src`-Attributen, die auf eine andere Skriptdatei verweisen. Die Zielskriptdatei muss über die Dateierweiterung .js verfügen.
 
 -   JavaScript-Dateien, die über eine `reference`-Direktive auf andere JavaScript-Dateien verweisen.
 
@@ -122,7 +122,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
  JavaScript-IntelliSense umfasst Programmierreferenzen für Dynamic HTML (DHTML)-DOM-Elemente, z. B. `body`, `form` und `div`. Nur die Elemente, die im aktuellen Dokument enthalten sind, und die Masterseite werden von IntelliSense angezeigt. JavaScript-IntelliSense unterstützt außerdem das `window`-Objekt und das `document`-Objekt sowie zugehörige Member.
 
 ###  <a name="IntrinsicObjects"></a> Systeminterne Objekte
- JavaScript-IntelliSense umfasst Programmierreferenzen für systeminterne Objekte wie `Array`, `String`, `Math`, `Date` und `Number`. Weitere Informationen zu systeminternen Objekten finden Sie unter [Systeminterne Objekte](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ JavaScript-IntelliSense umfasst Programmierreferenzen für systeminterne Objekte wie `Array`, `String`, `Math`, `Date` und `Number`. Weitere Informationen zu systeminternen Objekten finden Sie unter [integrierte Standardobjekte](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a>Benutzerdefinierte Variablen, Funktionen und Objekte
  Wenn Sie eine JavaScript-Datei ändern, werden Dokumente, die geöffnet sind und auf die verwiesen wird, von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] überprüft, um alle verfügbaren Coderessourcen zu ermitteln. Dies schließt auch die von Ihnen erstellten Variablen, Funktionen und Objekte ein. Diese Ressourcen stehen dann für JavaScript-IntelliSense zur Verfügung.
@@ -160,11 +160,11 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
  IntelliSense bietet zusätzlich Unterstützung für Skriptdateien, die als Ressourcen in einer Assembly in ASP.NET-AJAX-Webanwendungen eingebettet sind. Weitere Informationen zu eingebetteten Skriptressourcen finden Sie unter [Exemplarische Vorgehensweise: Einbetten einer JavaScript-Datei als Ressource in einer Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 ####  <a name="ReferenceDirectives"></a> Reference-Direktiven
- Mithilfe einer `reference`-Anweisung kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen. Die `reference`-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen. Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.
+ Mithilfe einer `reference`-Direktive kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen. Die `reference`-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen. Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.
 
- Sie erstellen eine `reference`-Anweisung in Form eines XML-Kommentars. Die Direktive muss in der Datei vor allen möglichen Skripts deklariert werden. Eine `reference`-Direktive kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.
+ Sie erstellen eine `reference`-Anweisung in Form eines XML-Kommentars. Die Anweisung muss in der Datei vor allen möglichen Skripts deklariert werden. Eine `reference`-Anweisung kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.
 
- Im Folgenden wird anhand verschiedener Beispiele die Verwendung datenträgerbasierter Reference-Anweisungen veranschaulicht. Im ersten Beispiel sucht der Sprachdienst nach der Datei in dem Ordner, der die Projektdatei enthält (z. B. JSPROJ).
+ Im Folgenden wird anhand verschiedener Beispiele die Verwendung datenträgerbasierter Reference-Direktiven veranschaulicht. Im ersten Beispiel sucht der Sprachdienst nach der Datei in dem Ordner, der die Projektdatei enthält (z. B. JSPROJ).
 
  `/// <reference path="ScriptFile1.js" />`
 
@@ -207,17 +207,17 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
 -   Es muss XML-Kommentarsyntax mit drei Schrägstrichen verwendet werden. Verweise, die unter Verwendung der standardmäßigen Kommentarsyntax (zwei Schrägstriche) erstellt wurden, werden ignoriert.
 
--   Pro Anweisung kann nur eine Datei oder Ressource angegeben werden.
+-   Pro Direktive kann nur eine Datei oder Ressource angegeben werden.
 
 -   Mehrere Verweise auf seitenbasierte Skripts sind nicht zulässig.
 
--   Wenn ein Seitenverweis angegeben wird, ist kein anderer Reference-Direktiventyp zulässig.
+-   Wenn ein Seitenverweis angegeben wird, ist kein anderer Reference-Anweisungstyp zulässig.
 
 -   Dateinamen verwenden relative Pfade. Sie können den Tildeoperator (`~`) verwenden, um Pfade relativ zum Stammverzeichnis der Anwendung anzugeben.
 
 -   Absolute Pfade werden ignoriert.
 
--   Reference-Direktiven in Seiten, auf die verwiesen wird, werden nicht verarbeitet. Dies bedeutet, dass Reference-Direktiven für Seiten nicht rekursiv aufgelöst werden. Es wird nur Skriptcode berücksichtigt, auf den direkt von der Seite verwiesen wird.
+-   Reference-Anweisungen in Seiten, auf die verwiesen wird, werden nicht verarbeitet. Dies bedeutet, dass Reference-Anweisungen für Seiten nicht rekursiv aufgelöst werden. Es wird nur Skriptcode berücksichtigt, auf den direkt von der Seite verwiesen wird.
 
 ####  <a name="ReferenceGroups"></a> Verweisgruppen
  Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Die folgenden Verweisgruppentypen sind verfügbar:

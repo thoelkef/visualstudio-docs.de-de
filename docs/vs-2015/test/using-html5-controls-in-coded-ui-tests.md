@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805075"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867899"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +33,18 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 ## <a name="supported-html5-controls"></a>Unterstützte HTML5-Steuerelemente  
  Tests der programmierten UI umfassen die Unterstützung für die Aufzeichnung, Wiedergabe und Validierung der folgenden HTML5-Steuerelemente:  
   
--   [Audio-Steuerelement](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [Audio-Steuerelement](#audio-control)  
   
--   [Videosteuerelement](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [Videosteuerelement](#video-control)  
   
--   [Schieberegler](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [Schieberegler](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio-Steuerelement  
+### <a name="audio-control"></a>Audio-Steuerelement  
  **Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Audiosteuerelement](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5-Audiosteuerelement](../test/media/codedui-html5-audio.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Sucheigenschaften:** Die Sucheigenschaften für `HtmlAudio` sind `Id`, `Name` und `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Videosteuerelement  
+### <a name="video-control"></a>Videosteuerelement  
  **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Videosteuerelement](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5-Videosteuerelement](../test/media/codedui-html5-video.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Wenn Sie das Video mithilfe der Bezeichnung „-30s“ oder „+30s“ zurück- bzw. vorspulen, wird dies aggregiert, um nach der entsprechenden Zeit zu suchen.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Schieberegler  
+### <a name="slider"></a>Slider  
  **Schiebereglersteuerung:** Aktionen in der HTML5-Schiebereglersteuerung werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Schiebereglersteuerung](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5-Schiebereglersteuerung](../test/media/codedui-html5-slider.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **ProgreesBar-Steuerelement:** Bei der „ProgressBar“ handelt es sich um ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen.  
+### <a name="progressbar"></a>ProgressBar  
+ **ProgressBar-Steuerelement:** ProgressBar ist ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen.  
   
- ![HTML5-ProgressBar-Steuerelement](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar-Steuerelement](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Siehe auch  
- [HTML-Elemente](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
- [Erstellen von Tests der codierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anpassen des Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Siehe auch
+
+- [HTML-Elemente](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
+- [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Anpassen des Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

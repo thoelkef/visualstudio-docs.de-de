@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698988"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870519"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# in Visual Studio-Debugger
 Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch** mithilfe von Formatbezeichnern. Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, erscheint das Ergebnis einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) in der Anzeige des angegebenen Formats.
@@ -51,6 +51,14 @@ Wir verwenden den folgenden aus:
 Hinzufügen der `my_var1` Variable die **Überwachen** Fenster während des Debuggens **Debuggen** > **Windows** > **ansehen**  >  **Überwachen 1**. Als Nächstes mit der rechten Maustaste in der Variablenwerts, und wählen Sie **Hexadezimale Anzeige**. Jetzt die **Watch** Fenster zeigt den Wert 0 x 0065. Um diesen Wert als ganze Dezimalzahl und nicht in eine hexadezimale ganze Zahl anzuzeigen, fügen Sie dem Dezimalformatbezeichner **, d** in die **Namen** Spalte nach dem Variablennamen ein. Die **Wert** Spalte zeigt jetzt **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Sie können anzeigen, und wählen Sie aus einer Liste der verfügbaren Formatbezeichner durch ein Komma (,) anfügen, auf den Wert in der **Überwachen** Fenster. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Formatbezeichner
 Die folgende Tabelle beschreibt die C# Formatbezeichner für Visual Studio-Debugger.

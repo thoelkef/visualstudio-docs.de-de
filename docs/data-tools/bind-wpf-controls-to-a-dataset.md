@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939163"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069865"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -56,15 +56,29 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 Erstellen Sie ein neues WPF-Projekt zur Produktdatensätze.
 
-1. Starten Sie Visual Studio.
+::: moniker range="vs-2017"
 
-2. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Menü **Datei** die Option **Neu** > **Projekt** aus.
 
 3. Erweitern Sie **Visual Basic** oder **Visual C#**, und wählen Sie dann **Windows** aus.
 
-4. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
+4. Wählen Sie die **WPF-App** Projektvorlage.
 
 5. In der **Namen** geben **AdventureWorksProductsEditor** und wählen Sie dann **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie auf das Startfenster **Erstellen eines neuen Projekts**.
+
+3. Suchen Sie nach der C# **WPF-App** -Projektvorlage aus, und führen Sie die Schritte, um das Projekt, und benennen das Projekt erstellen **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio erstellt das Projekt „AdventureWorksProductsEditor“.
 
