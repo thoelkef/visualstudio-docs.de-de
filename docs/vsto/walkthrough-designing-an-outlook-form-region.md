@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633862"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355577"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633862"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] oder höher.
 
   ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine Videoversion dieses Themas finden Sie unter [Video Gewusst wie: Entwerfen ein Outlook-Formularbereichs](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -114,7 +114,7 @@ ms.locfileid: "56633862"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>So passen Sie das Verhalten des Formularbereichs an
 
-1. In **Projektmappen-Explorer**, klicken Sie mit der rechten Maustaste auf *"MapIt.cs"* oder *"MapIt.vb"*, und klicken Sie dann auf **Ansichtscode**.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste *"MapIt.cs"* oder *"MapIt.vb"*, und klicken Sie dann auf **Ansichtscode**.
 
     *"MapIt.cs"* oder *"MapIt.vb"* im Code-Editor geöffnet.
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633862"
 4.  Speichern und schließen Sie das Kontaktelement.
 
 5.  Öffnen Sie erneut die **Ann Beebe** Kontaktelement.
+
+    In Outlook können hierzu die **finden** Gruppe, indem Sie entweder das Adressbuch für Kontakte öffnen oder Eingabe Ann Beebe in **Suchen nach Personen**.
 
 6.  In der **anzeigen** Gruppe des Menübands für das Element, klicken Sie auf **Map It** um den Map It-Formularbereich zu öffnen.
 
