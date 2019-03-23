@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323423"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355788"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateien in Ihrem Visual Studio-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -32,7 +32,7 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
  Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Beim Definieren von Ressourcen in einem **resx** -Datei in Visual Studio-Projektmappe, ein Satz von Klassen und Methoden wird automatisch generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.
 
- Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, sowie Programmcode, der Variablenteile des Texts generiert. Der Programmcode ermöglicht die Wiederholung oder das bedingte Auslassen von Teilen des generierten Texts. Der generierte Text selbst kann Programmcode sein, der einen Teil der Anwendung bildet.
+ Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, sowie Programmcode, der Variablenteile des Texts generiert. Der Programmcode können Sie wiederholen oder das bedingte Auslassen von Teilen des generierten Texts. Der generierte Text selbst kann Programmcode sein, der einen Teil der Anwendung bildet.
 
 ## <a name="creating-a-design-time-t4-text-template"></a>Erstellen einer T4-Textvorlage für die Entwurfszeit
 
@@ -48,7 +48,7 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
     Beachten Sie, dass die **benutzerdefiniertes Tool** -Eigenschaft der Datei ist **TextTemplatingFileGenerator**.
 
-3. Öffnen Sie die Datei. Sie enthält bereits die folgenden Direktiven:
+3. Öffnen Sie die Datei. Sie enthält bereits die folgenden Anweisungen:
 
    ```
    <#@ template hostspecific="false" language="C#" #>
@@ -57,7 +57,7 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
     Wenn Sie die Vorlage einem [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekt hinzugefügt haben, ist das Sprachattribut auf `VB` festgelegt.
 
-4. Fügen Sie am Ende der Datei Text hinzu. Beispiel:
+4. Fügen Sie am Ende der Datei Text hinzu. Zum Beispiel:
 
    ```
    Hello, world!
@@ -120,12 +120,12 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` Der Standardwert ist.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
  So debuggen Sie eine Textvorlage
 
-- Fügen Sie `debug="true"` in die `template`-Direktive ein. Beispiel:
+- Fügen Sie `debug="true"` in die `template`-Anweisung ein. Zum Beispiel:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -138,10 +138,10 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 > [!TIP]
 >  Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
 >
->  Sie können jedoch die Klausel in der template-Direktive lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
+>  Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generieren von Code oder Ressourcen für die Projektmappe
- Abhängig vom Modell können verschiedene Programmdateien generiert werden. Ein Modell ist eine Eingabequelle wie eine Datenbank, eine Konfigurationsdatei, ein UML- oder DSL-Modell oder eine andere Quelle. Normalerweise generieren Sie mehrere Programmdateien aus dem gleichen Modell. Sie erstellen zu diesem Zweck eine Vorlagendatei für jede generierte Programmdatei und lassen das gleiche Modell von allen Vorlagen lesen.
+ Abhängig vom Modell können verschiedene Programmdateien generiert werden. Ein Modell ist eine Eingabequelle wie eine Datenbank, eine Konfigurationsdatei, ein UML- oder DSL-Modell oder eine andere Quelle. Sie werden in der Regel mehrere Programmdateien aus dem gleichen Modell generieren. Sie erstellen zu diesem Zweck eine Vorlagendatei für jede generierte Programmdatei und lassen das gleiche Modell von allen Vorlagen lesen.
 
 #### <a name="to-generate-program-code-or-resources"></a>So generieren Sie Programmcode oder Ressourcen
 
@@ -268,7 +268,7 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
  Der Typ von `this.Host` (in VB `Me.Host`) ist `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Abrufen von Daten aus Visual Studio
- Um Dienste, die in Visual Studio verwenden, legen die `hostSpecific` -Attribut, und laden die `EnvDTE` Assembly. Import `Microsoft.VisualStudio.TextTemplating`, enthält die `GetCOMService()` -Erweiterungsmethode.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Beispiel:
+ Um Dienste, die in Visual Studio verwenden, legen die `hostSpecific` -Attribut, und laden die `EnvDTE` Assembly. Import `Microsoft.VisualStudio.TextTemplating`, enthält die `GetCOMService()` -Erweiterungsmethode.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Zum Beispiel:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
