@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223246"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867886"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -113,11 +113,17 @@ Nachdem Sie eine leere Projektmappe erstellt haben, können Sie dieser neue oder
 
 Wie zuvor bereits erwähnt, können Sie Codedateien auch ohne Projekt oder Projektmappe öffnen. Weitere Informationen zu dieser Entwicklungsmethode finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Erstellen eines temporären Projekts (C# und Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Erstellen eines temporären Projekts
+
+(Nur C# und Visual Basic)
 
 Wenn Sie ein.NET-basiertes Projekt erstellen, ohne einen Speicherort auf einem Datenträger anzugeben, handelt es sich dabei automatisch um ein temporäres Projekt. Mithilfe von temporären Projekten können Sie mit .NET-Projekten experimentieren. Während Sie an dem temporären Projekt arbeiten, können Sie es jederzeit speichern oder verwerfen.
 
 Gehen Sie zunächst zu **Extras** > **Optionen** > **Projekte und Projektmappen** > **Allgemein**, und deaktivieren Sie das Feld **Neue Projekte beim Erstellen speichern**, um ein temporäres Projekt zu erstellen. Öffnen Sie wie gewohnt das Dialogfeld **Neues Projekt**.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Löschen einer Projektmappe, eines Projekts oder eines Elements
 

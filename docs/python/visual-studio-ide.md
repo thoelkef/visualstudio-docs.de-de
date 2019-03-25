@@ -1,7 +1,7 @@
 ---
 title: Überblick über Visual Studio für Python-Entwickler
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316612"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983506"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -28,6 +28,10 @@ Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und
 
 - Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](/visualstudio/get-started/tutorial-projects-solutions) gruppiert.
     - Neben dem **Projektmappen-Explorer** befindet sich die [**Python-Umgebung**](managing-python-environments-in-visual-studio.md), über die Sie verschiedene Python-Interpreter verwalten können, die auf Ihrem Computer installiert sind.
+
+    ::: moniker range=">=vs-2019"
+    - Sie können auch Python-Code in einem Ordner öffnen und ausführen, ohne Projekt- und Projektmappendateien für Visual Studio zu erstellen. Weitere Informationen finden Sie unter [Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
 
 - Im [Editorfenster](../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie den [Python-Code](editing-python-code-in-visual-studio.md) bearbeiten, innerhalb Ihrer Codestruktur navigieren und Breakpoints während Debugsitzungen festlegen. Mit Python können Sie ebenfalls einen bestimmten Codeabschnitt auswählen und STRG+EINGABETASTE drücken, um diesen Code in einem [interaktiven REPL-Fenster](python-interactive-repl-in-visual-studio.md) auszuführen.
 
@@ -83,6 +87,12 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
    ![Codenavigationsbefehle](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Leistungsstarke Features für Python
+
+::: moniker range=">=vs-2019"
+- [Ausführen von Code ohne Projekt](quickstart-05-python-visual-studio-open-folder.md)
+
+    Ab Visual Studio-2019 können Sie einen Ordner mit Python-Code öffnen, um Funktionen wie IntelliSense und Debuggen zu nutzen, ohne ein Visual Studio-Projekt für den Code zu erstellen.
+::: moniker-end
 
 - [Interaktive Python-REPL](python-interactive-repl-in-visual-studio.md)
 

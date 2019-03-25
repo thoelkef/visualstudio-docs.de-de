@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983051"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 
 Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
 
@@ -32,7 +32,7 @@ Gründe hierfür können eine unzuverlässige Internetverbindung oder eine Verbi
 
 ## <a name="use-the-download-all-then-install-feature"></a>Verwenden der Funktion „Download all, then install“ (Alles herunterladen, dann installieren)
 
-[**Neues in 15.8:**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install) Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
+[**Neuerungen in Version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
 
    ![Die Option „Download all, then install“ (Alles herunterladen, dann installieren)](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Netzwerkinstallation von Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Erstellen einer Netzwerkinstallation von Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate](../install/install-certificates-for-visual-studio-offline.md)
 - [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+- [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

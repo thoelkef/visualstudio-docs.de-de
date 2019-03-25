@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922289"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069657"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -35,28 +35,38 @@ Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [
 
 ## <a name="create-a-project-to-test"></a>Erstellen eines zu testenden Projekts
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio.
 
-2. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+2. Wählen Sie im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**.
+::: moniker-end
 
-4. Klicken Sie in der Liste der Anwendungstypen auf **Klassenbibliothek**.
+::: moniker range=">=vs-2019"
 
-5. Geben Sie **Bank** im Feld **Name** ein, und klicken Sie dann auf **OK**.
+1. Öffnen Sie Visual Studio.
 
-   Das neue Bank-Projekt wird erstellt und im **Projektmappen-Explorer** angezeigt, wobei der Code-Editor mit der Datei *Class1.cs* geöffnet wird.
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+::: moniker-end
+
+3. Wählen Sie die Projektvorlage für die C#-Klassenbibliothek aus.
+
+4. Nennen Sie das Projekt **Bank**, und klicken Sie auf **OK** oder **Erstellen**.
+
+   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Class1.cs* wird geöffnet.
 
    > [!NOTE]
    > Wenn die Datei *Class1.cs* nicht im Code-Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Class1.cs*, um diese zu öffnen.
 
-6. Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md), und ersetzen Sie den ursprünglichen Inhalt der Datei *Class1.cs* durch diesen kopierten Code.
+5. Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md), und ersetzen Sie den ursprünglichen Inhalt der Datei *Class1.cs* durch diesen kopierten Code.
 
-7. Speichern Sie die Datei als *BankAccount.cs*.
+6. Speichern Sie die Datei als *BankAccount.cs*.
 
-8. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+7. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 Sie haben nun ein Projekt mit dem Namen Bank erstellt. Dieses Projekt enthält zu testenden Quellcode und Tools, mit denen der Quellcode getestet werden kann. Der Namespace für Bank (BankAccountNS) enthält die öffentliche BankAccount-Klasse, deren Methoden Sie im Folgenden testen sollen.
 
@@ -346,7 +356,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Erneut testen, umschreiben und neu analysieren
 
-Angenommen, es besteht ein Fehler in der Methode, die getestet wird, und die `Debit`-Methode löst keine <xref:System.ArgumentOutOfRangeException> aus. Dann muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d.h. kleiner als das Guthaben, jedoch größer als null), wird keine Ausnahme erfasst, sodass die Assertion nie reagiert. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
+Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine <xref:System.ArgumentOutOfRangeException> auslöst, muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d.h. kleiner als das Guthaben, jedoch größer als null), wird keine Ausnahme erfasst, sodass die Assertion nie reagiert. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
 
 Dabei handelt es sich um einen Fehler der Testmethode. Um das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.
 

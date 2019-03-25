@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318432"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983030"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -51,11 +51,23 @@ Durch das Testen der Webanwendung in verschiedenen Webbrowsertypen können Sie d
 
 ### <a name="install-selenium-components"></a>Installieren von Selenium-Komponenten
 
-1.  Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
+::: moniker range="vs-2017"
 
-2.  Suchen Sie im Dialogfeld **Erweiterungen und Updates** nach `Selenium components for Cross Browser Testing`.
+1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
 
-3.  Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.
+2. Suchen Sie im Dialogfeld **Erweiterungen und Updates** nach `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie im Menü **Erweiterungen** die Option **Erweiterungen verwalten** aus.
+
+2. Suchen Sie im Dialogfeld **Erweiterungen verwalten** nach `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.
 
     > [!TIP]
     > Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting) herunterladen.
@@ -84,7 +96,7 @@ Im Folgenden finden Sie weitere wichtige Informationen:
 
 - Der Webbrowser Apple Safari wird nicht unterstützt.
 
-- Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.
+- Die Aktion zum Starten des Webbrowsers muss Teil des Coded UI-Tests sein.
 
    Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.
 

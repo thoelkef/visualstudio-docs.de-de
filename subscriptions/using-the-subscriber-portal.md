@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843800"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867589"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Verwenden des Abonnentenportals – „my.<span></span>visualstudio<span></span>.com“
 
@@ -31,7 +31,7 @@ In der Kategorie „Tools“ finden Sie die wesentlichen Entwicklungstools wie d
 ### <a name="professional-development"></a>Berufliche Entwicklung
 Diese Kategorie enthält Vorteile wie z.B. Onlinetraining von Microsoft und unseren Partnern sowie ein Abonnement des MSDN-Magazins, die Ihnen helfen, Ihre Fertigkeiten in der Entwicklung zu erweitern und auf dem Laufenden zu bleiben.
 
-### <a name="support"></a>Unterstützung
+### <a name="support"></a>Support
 Haben Sie Fragen zu Azure?  Hilfe aus der Azure-Community erhalten Sie über Foren, oder nutzen Sie den Azure Advisory Chat (Vorschau).  Der Concierge Chat-Dienst kann Ihnen helfen, technische Dokumentation und Produktinformationen zu finden und Sie bei Fragen unterstützen, die sich auf Abonnements beziehen.  Ausgewählte Abonnements umfassen auch technischen Support auf Incidentbasis, um Sie beim Lösen von Problemen mit einer Vielzahl von Microsoft-Produkten zu unterstützen, die in Entwicklungs- und Testumgebungen ausgeführt werden.
 
 ## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -45,10 +45,10 @@ Besuchen Sie die Seite „Product Keys“ zum Abrufen von Schlüsseln zum Instal
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Die Seite „Abonnements“ bietet Ihnen die Funktionen, die Ihnen anzeigen, welche Abonnements Sie besitzen, mit denen Sie zwischen den Abonnements wechseln, sie verlängern und neue Abonnements aktivieren können. Sie können auch Abonnements, auf die Sie mit Ihrem Microsoft-Konto zugreifen, einem alternativen Konto zuordnen, das bereits vorhandenen Visual Studio-IDE-, Azure DevOps- oder Azure-Ressourcen zugeordnet ist.
 
-## <a name="support"></a>Unterstützung
+## <a name="support"></a>Support
 
 Zusätzlich zu den einzelnen Vorteilen, die in der Kategorie „Support“ auf der Seite „Vorteile“ aufgeführt werden, bietet die Seite „Support“ Zugriff auf Ressourcen, die Sie dabei unterstützen, Ihr Visual Studio-Abonnement optimal zu nutzen. Greifen Sie auf [Supportressourcen](https://visualstudio.microsoft.com/subscriptions/support/) zu, um technische Probleme oder Fragen zu klären, die im Zusammenhang mit Abonnementverkäufen, Konten und Abrechnung stehen.
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps, Team Foundation Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.
+Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps, Azure DevOps Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.

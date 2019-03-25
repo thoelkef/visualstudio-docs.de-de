@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155135"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149626"
 ---
 # <a name="profile-python-code"></a>Profilerstellung für Python-Code
 
@@ -32,7 +32,7 @@ Wenn Sie die Option **OK** wählen, wird der Profiler ausgeführt und öffnet ei
 ![Leistungsbericht für Profilerstellung](media/profiling-results.png)
 
 > [!Note]
-> Gegenwärtig unterstützt Visual Studio nur diese Stufe der vollständigen Erstellung von Anwendungsprofilen, aber wir freuen uns auf jeden Fall über Ihr Feedback zu künftigen Funktionen. Verwenden Sie unten auf dieser Seite die Schaltfläche [**Produktfeedback**](#feedback).
+> Gegenwärtig unterstützt Visual Studio nur diese Stufe der vollständigen Erstellung von Anwendungsprofilen, aber wir freuen uns auf jeden Fall über Ihr Feedback zu künftigen Funktionen. Verwenden Sie unten auf dieser Seite die Schaltfläche **Produktfeedback**.
 
 ## <a name="profiling-for-ironpython"></a>Profilerstellung für IronPython
 

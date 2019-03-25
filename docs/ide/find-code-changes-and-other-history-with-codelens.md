@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941048"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867854"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
 Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitselemente, Code Reviews und Komponententests.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens steht nur in Visual Studio Enterprise- und Visual Studio Professional-Versionen zur Verfügung. Es ist nicht in Visual Studio Community verfügbar.
+
+::: moniker-end
 
 Sehen Sie, wo und wie die einzelnen Codeausschnitte in der Projektmappe verwendet werden:
 
@@ -54,7 +58,7 @@ Sie können Verweise in C#- oder Visual Basic-Code suchen.
 
 [Erstellen Sie eine Code Map](../modeling/map-dependencies-across-your-solutions.md), um die Beziehungen zwischen dem Code und seinen Verweisen anzuzeigen. Wählen Sie im Code Map-Kontextmenü **Alle Verweise anzeigen** aus.
 
-![CodeLens – Verweise in Code Map](../ide/media/codelensmappedreferences.png)
+![CodeLens – Verweise in Codezuordnung](../ide/media/codelensmappedreferences.png)
 
 ## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Suchen nach Änderungen im Code
 
@@ -62,7 +66,7 @@ Sie können Verweise in C#- oder Visual Basic-Code suchen.
 
 Sie benötigen Folgendes:
 
-- Visual Studio Professional und Visual Studio Enterprise
+- Visual Studio-2019 (oder Visual Studio 2017 Enterprise oder Professional Edition)
 
 - Team Foundation Server 2013 oder höher, Azure DevOps Services oder Git
 
@@ -121,7 +125,7 @@ Möglicherweise verfügt Ihr Team über mehrere Branches, z.B. einen Hauptbranch
 
 Sie können herausfinden, wie viele Personen Ihren Code geändert haben und wie viele Änderungen am Hauptbranch vorgenommen wurden, indem Sie **ALT**+**6** drücken:
 
-![CodeLens: Erfahren, wie viele Änderungen in Ihrer Verzweigung](../ide/media/codelens-branch-changes.png)
+![CodeLens: Erfahren, wie viele Änderungen in Ihrer Verzweigung vorhanden sind](../ide/media/codelens-branch-changes.png)
 
 ### <a name="find-when-your-code-was-branched"></a>Sehen, wann Ihr Code verzweigt wurde
 
@@ -135,27 +139,27 @@ Navigieren Sie im untergeordneten Branch zu Ihrem Code, um herauszufinden, wann 
 
 Sie können eingehende Änderungen anzeigen. Im folgenden Screenshot wurde ein Fehler im Branch „Dev“ behoben:
 
-![CodeLens: Aktiviertes in andere Verzweigung ändern](../ide/media/codelens-branch-changes-dev.png)
+![CodeLens: Aktiviertes in anderen Branch ändern](../ide/media/codelens-branch-changes-dev.png)
 
 Sie können die Änderung überprüfen, ohne den aktuelle Branch zu verlassen (Hauptbranch):
 
-![CodeLens: Eingehände Änderungen von anderer Verzweigung sehen](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: Eingehende Änderungen von anderem Branch sehen](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>Herausfinden, wann Änderungen zusammengeführt wurden
 
 Sie können sehen, wann die Änderungen zusammengeführt wurden, sodass Sie ermitteln können, welche Änderungen in Ihrem Branch enthalten sind:
 
-![CodeLens – Zusammengeführte Änderungen zwischen Verzweigungen](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens - Zusammengeführte Änderungen zwischen Verzweigungen](../ide/media/codelensbranchmergedconceptual.png)
 
 Zum Beispiel enthält der Code im Hauptbranch jetzt die Fehlerkorrektur des Branches „Dev“:
 
-![CodeLens – Zusammengeführte Änderungen zwischen Verzweigungen](../ide/media/codelens-branch-merged.png)
+![CodeLens - Zusammengeführte Änderungen zwischen Verzweigungen](../ide/media/codelens-branch-merged.png)
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Vergleichen einer eingehenden Änderung mit der lokalen Version
 
 Vergleichen Sie eine eingehende Änderung mit Ihrer lokalen Version, in dem Sie **UMSCHALT**+**F10** drücken oder einen Doppelklick auf das Changeset ausführen.
 
-![CodeLens: Eingehende Änderung mit lokal vergleichen](../ide/media/codelens-branch-incoming-change-menu.png)
+![CodeLens: Eingehende Änderung mit lokaler vergleichen](../ide/media/codelens-branch-incoming-change-menu.png)
 
 ### <a name="branch-icons"></a>Symbole für Branches
 
@@ -163,26 +167,26 @@ Das Symbol in der Spalte **Branch** gibt die Beziehung des Branches zu dem Branc
 
 |**Symbol**|**Ursprung der Änderung:**|
 |--------------| - |
-|![CodeLens: Änderung des Symbols für aktuelle Verzweigung](../ide/media/codelensbranchcurrenticon.png)|Die aktuelle Verzweigung|
+|![CodeLens: Änderung des Symbols für aktuellen Branch](../ide/media/codelensbranchcurrenticon.png)|Die aktuelle Verzweigung|
 |![CodeLens: Änderung des Symbols für übergeordneten Branch](../ide/media/codelensbranchparenticon.png)|Die übergeordnete Verzweigung|
 |![CodeLens: Änderung des Symbols für untergeordneten Branch](../ide/media/codelensbranchchildicon.png)|Eine untergeordnete Verzweigung|
 |![CodeLens: Änderung des Symbols für Peerbranch](../ide/media/codelensbranchpeericon.png)|Eine Peerverzweigung|
 |![CodeLens: Änderung des Symbols für weiter entfernten Branch](../ide/media/codelensbranchfurtherawayicon.png)|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|
-|![CodeLens: Zusammenführen von übergeordnetem Symbol](../ide/media/codelensbranchmergefromparenticon.png)|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|
-|![CodeLens: Von Symbol für untergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromchildicon.png)|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|
-|![CodeLens: Von nicht zugeordnetem Verzweigungsymbol zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png)|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|
+|![CodeLens: Von übergeordnetem Symbol zusammenführen](../ide/media/codelensbranchmergefromparenticon.png)|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|
+|![CodeLens: Vom Symbol für untergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromchildicon.png)|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|
+|![CodeLens: Vom Symbol für übergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png)|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|
 
 ## <a name="linked-work-items"></a>Verknüpfte Arbeitsaufgaben
 
 Suchen Sie verknüpfte Arbeitselemente, indem Sie auf den Indikator **Arbeitselemente** klicken oder **ALT**+**8** drücken.
 
-![CodeLens – Arbeitselemente für bestimmten Code suchen](../ide/media/codelens-work-items.png)
+![CodeLens – Arbeitsaufgaben für bestimmten Code suchen](../ide/media/codelens-work-items.png)
 
 ## <a name="linked-code-reviews"></a>Verknüpfte Code Reviews
 
 Suchen Sie verknüpfte Code Reviews, indem Sie auf den Indikator **Reviews** klicken. Halten Sie die **ALT**-Taste gedrückt, und drücken Sie dann die **NACH-LINKS-TASTE** oder die **NACH-RECHTS-TASTE**, um die Indikatoroptionen mit der Tastatur zu navigieren.
 
-![CodeLens – Codereviewanforderungen anzeigen](../ide/media/codelens-code-reviews.png)
+![CodeLens – Codeüberprüfungsanforderungen anzeigen](../ide/media/codelens-code-reviews.png)
 
 ## <a name="linked-bugs"></a>Verknüpfte Fehler
 
@@ -261,7 +265,7 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 - Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie wissen, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe zu erstellen (**STRG**+**UMSCHALT**+**B**).
 
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Frage: Warum sehe ich keine Arbeitsaufgabendetails für einen Commit?
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Frage: Warum sehe ich keine Arbeitselementdetails für einen Commit?
 
 **Antwort:** Dies kann passieren, wenn CodeLens die Arbeitselemente in Azure Boards oder TFS nicht finden kann. Stellen Sie sicher, dass Sie mit dem Projekt verbunden sind, das diese Arbeitselemente enthält, und dass Sie über die erforderlichen Berechtigungen verfügen, diese Arbeitselemente anzuzeigen. Arbeitselementdetails werden möglicherweise ebenfalls nicht angezeigt, wenn die Commitbeschreibung falsche Informationen zu den Arbeitselement-IDs in Azure Boards oder TFS enthält.
 
@@ -317,7 +321,7 @@ So verwenden Sie die Tastatur:
 
 - **Test**: [Suchen von Komponententests für Ihren Code](#associated-unit-tests) zum Aktualisieren des **Testindikators**.
 
-### <a name="q-whats-local-version"></a>Frage: Was bedeutet "Lokale Version"?
+### <a name="q-whats-local-version"></a>Frage: Was bedeutet „Lokale Version“?
 
 **Antwort:** Der Pfeil **Lokale Version** zeigt auf das neueste Changeset in der lokalen Version einer Datei. Wenn der Server über neuere Changesets verfügt, werden sie je nach Reihenfolge, in der sie sortiert sind, über oder unter dem Pfeil **Lokale Version** angezeigt.
 

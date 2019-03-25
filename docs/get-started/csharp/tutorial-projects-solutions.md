@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b23b67ea2fe48bb3ba1bcf174d28938379fc1ad9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323195"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070086"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Erfahren Sie mehr über Projekte und Projektmappen mit C\#
 
@@ -38,9 +38,11 @@ Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „L
 
 Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visual Studio vertraut sind, werden Sie wahrscheinlich eher selten leere Projektmappen erstellen. Wenn Sie in Visual Studio ein neues Projekt erstellen, wird automatisch auch eine Projektmappe für das Projekt erstellt, wenn noch keine geöffnet ist.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) die Option **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie auf der oberen Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -49,6 +51,22 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
    ![Vorlage „Leere Projektmappe“ in Visual Studio](../media/tutorial-projects-new-solution.png)
 
    Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
+
+4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
+
+   Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Hinzufügen eines Projekts
 

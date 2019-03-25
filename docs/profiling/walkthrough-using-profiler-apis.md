@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637788"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868208"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 
@@ -30,7 +30,12 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
 
  Mithilfe des Visual Studio-Profilers können Sie die Erfassung von Daten einschränken. In dieser exemplarischen Vorgehensweise wird in einem Beispiel dargestellt, wie Sie die Erfassung von Daten mithilfe von Profiler-APIs einschränken. Der Visual Studio-Profiler stellt eine API zum Überwachen der Datenerfassung innerhalb einer Anwendung bereit.
 
+ ::: moniker range=">=vs-2019"
+ Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*.
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
+ ::: moniker-end
 
  Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>.
 

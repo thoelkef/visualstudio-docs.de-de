@@ -1,7 +1,7 @@
 ---
 title: Auswählen und Installieren von Python-Interpretern
 description: Dieser Artikel enthält eine vollständige Liste der Python-Interpreter, die in Visual Studio unterstützt werden, sowie kurze Anweisungen dazu, wo die entsprechenden Installationsprogramme zu finden sind.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921002"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194177"
 ---
 # <a name="install-python-interpreters"></a>Installieren von Python-Interpretern
 
-Bei der Installation der Workload für die Python-Entwicklung in Visual Studio 2017 wird standardmäßig auch Python 3 (64-Bit) installiert. Optional können Sie auch die 32-Bit- und 64-Bit-Versionen von Python 2, Python 3, Anaconda 2 und Anaconda 3 installieren, wie unter [Installation](installing-python-support-in-visual-studio.md) beschrieben.
+Bei der Installation der Workload für die Python-Entwicklung in Visual Studio 2017 und höher wird standardmäßig auch Python 3 (64-Bit) installiert. Optional können Sie die 32-Bit- und 64-Bit-Versionen von Python 2 und Python 3 zusammen mit Miniconda (Visual Studio 2019) oder Anaconda 2/Anaconda 3 (Visual Studio 2017) wie unter [Installation](installing-python-support-in-visual-studio.md) beschrieben installieren.
+
+::: moniker range=">=vs-2019"
+Oder installieren Sie die Standardversion der Python-Interpreter über das Dialogfeld **Umgebung hinzufügen**. Wählen Sie im Fenster **Python-Umgebungen** oder auf der Python-Symbolleiste den Befehl **Umgebung hinzufügen** aus. Legen Sie auf der Registerkarte **Python-Installation** fest, welche Interpreter Sie installieren möchten, und wählen Sie **Installieren** aus.
+::: moniker-end
 
 Sie können die in der folgenden Tabelle aufgelisteten Interpreter auch manuell außerhalb des Visual Studio-Installationsprogramms installieren. Wenn Sie beispielsweise Anaconda 3 vor Visual Studio installiert haben, ist keine erneute Installation über das Visual Studio-Installationsprogramm erforderlich. Sie können einen Interpreter auch manuell installieren, wenn beispielsweise eine neuere Version verfügbar ist, die noch nicht im Visual Studio-Installer enthalten ist.
 

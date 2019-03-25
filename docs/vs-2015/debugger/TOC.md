@@ -112,7 +112,7 @@
 ### [Fehler: Sie haben keine Berechtigung, die Prozessidentität zu überprüfen](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Fehler: Websiteworkerprozess wurde von IIS beendet](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Fehler: Die Verbindung mit dem Computer <name> konnte nicht hergestellt werden. Der Computer kann nicht im Netzwerk gefunden werden.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Error: Unable to connect to the machine \<name> (Fehler: Die Verbindung mit dem Computer <Name> konnte nicht hergestellt werden). Der Computer kann nicht im Netzwerk gefunden werden.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Fehler: Debuggen im gemischten Modus wird nur bei Verwendung von Microsoft .NET Framework, Version 2.0 oder höher, unterstützt](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Fehler: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Fehler: Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155655"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151140"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -56,7 +56,7 @@ Schließlich können Sie Code in der Datei auswählen und den unten beschriebene
 
 ## <a name="interactive-window-options"></a>Optionen für das interaktive Fenster
 
-Sie können verschiedene Aspekte des **interaktiven** Fensters über **Extras** > **Optionen** > **Python-Tools** > **Interaktive Fenster** (siehe [Optionen](python-support-options-and-settings-in-visual-studio.md)) steuern:
+Sie können verschiedene Aspekte des **interaktiven** Fensters über **Extras** > **Optionen** > **Python** > **Interaktive Fenster** (siehe [Optionen](python-support-options-and-settings-in-visual-studio.md)) steuern:
 
 ![Optionen für interaktives Python-Fenster](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Visual Studio erkennt auch Codezellen, die mit Kommentaren wie `# In[1]:` beginn
 
 Das **interaktive** Fenster enthält IntelliSense auf der Basis von Liveobjekten, im Gegensatz zum Code-Editor, in dem IntelliSense nur auf der Quellcodeanalyse basiert. Diese Vorschläge im **interaktiven** Fenster sind korrekter, insbesondere bei dynamisch generiertem Code. Der Nachteil besteht darin, dass Funktionen mit Nebenwirkungen (z.B. Protokollierungsmeldungen) Ihre Entwicklungserfahrung beeinträchtigen können.
 
-Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Extras** > **Optionen** > **Python-Tools** > **Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**, wie unter [Options – Interactive Windows options](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options) (Optionen: Optionen zu interaktiven Fenstern) beschrieben.
+Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Extras** > **Optionen** > **Python** > **Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**. Informationen dazu finden Sie unter [Optionen – Optionen für interaktive Fenster](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

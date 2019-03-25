@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525400"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153014"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
@@ -25,17 +25,20 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus.
 
-1. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET Core-Webanwendung**.
+    ::: moniker range=">=vs-2019"
+    Das Dialogfeld **Neues Projekt erstellen** wird angezeigt. Geben Sie **asp.net** in das Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie **ASP.NET Core-Webanwendung** aus, und klicken Sie dann auf **Weiter**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und wählen Sie **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Das Dialogfeld **Neues Projekt** wird angezeigt. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET Core-Webanwendung**. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
-1. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
-
-1. Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
-
-     Wenn Ihnen die Projektvorlage **Webanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
+    Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
 
     ![Auswählen einer Webanwendung](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 

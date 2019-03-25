@@ -8,24 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89e741e4f854f0426a3b3908b896a8908325684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634811"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868949"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Angeben des Pfads zu Befehlszeilentools für Profilerstellungstools
+
 Der Pfad der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools wird der PATH-Umgebungsvariablen nicht hinzugefügt. Auf 32-Bit-Computern befinden sich die Tools in einem einzigen Verzeichnis. Es gibt 32-Bit und 64-Bit-Versionen der Profilerstellungstools auf 64-Bit-Computern.
 
 ## <a name="32-bit-computers"></a>32-Bit-Computer
+::: moniker range=">=vs-2019"
+ Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.
+::: moniker-end
+::: moniker range="vs-2017"
  Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
+::: moniker-end
 
  Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
 ## <a name="64-bit-computers"></a>64-Bit-Computer
- Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest.
 
+Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest.
+
+::: moniker range=">=vs-2019"
+-   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+
+     (nativ) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+
+-   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+
+     (nativ) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end
+
+::: moniker range="vs-2017"
 -   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
@@ -33,3 +51,4 @@ Der Pfad der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 -   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end

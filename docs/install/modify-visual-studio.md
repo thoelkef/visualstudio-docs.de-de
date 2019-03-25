@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984000"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
 Wir haben nicht nur das Personalisieren von Visual Studio erleichtert, um den Dienst entsprechend Ihren Aufgaben einzurichten, sondern auch die generelle Anpassung von Visual Studio. Hierzu starten Sie den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
 
@@ -69,6 +69,6 @@ Wenn Sie das praktische Arbeitsauslastungsfeature zum Anpassen Ihrer Visual Stud
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Installieren von Visual Studio 2017](install-visual-studio.md)
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
-* [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
+* [Installieren von Visual Studio](install-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
+* [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
