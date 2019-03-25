@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87b8c1d71b3ed1ee03433fd2720a86cf0ee3e6a2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908594"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872094"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Beispiele für die Befehlszeilenparameter für die Installation von Visual Studio 2017
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Beispiele für Befehlszeilenparameter für die Installation von Visual Studio
 
 Zur Veranschaulichung, wie [Befehlszeilenparameter zur Installation von Visual Studio](use-command-line-parameters-to-install-visual-studio.md) verwendet werden, sind hier einige Beispiele aufgeführt, die sie Ihren Bedürfnissen anpassen können.
 
@@ -60,9 +60,16 @@ Listen der Workloads und Komponenten, die Sie über die Befehlszeile installiere
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > Der `--wait`-Parameter ist für die Verwendung in einer Batchdatei bestimmt. In einer Batchdatei wird die Ausführung des nächsten Befehls nicht fortgesetzt, bis die Installation abgeschlossen ist. Die `%ERRORLEVEL%`-Umgebungsvariable enthält den Rückgabewert des Befehls, so wie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md) dokumentiert.
+## <a name="using---wait"></a>Verwenden von „--wait“
 
+* Verwenden Sie diesen Befehlszeilenparameter in Dateien oder Skripts, um den Anschluss des Visual Studio-Installers abzuwarten, bevor der nächste Befehl ausgeführt wird. Für Batchdateien enthält die `%ERRORLEVEL%`-Umgebungsvariable den Rückgabewert des Befehls, so wie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) dokumentiert. Bei einigen Befehlszeilen-Hilfsprogrammen sind zusätzliche Parameter erforderlich, damit der Abschluss abgewartet und der Rückgabewert des Installers abgerufen wird. Nachfolgend sehen Sie ein Beispiel der zusätzlichen Parameter, die mit dem PowerShell-Skriptbefehl „Start-Process“ verwendet werden:
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* Der erste Parameter „--wait“ wird vom Visual Studio-Installer und der zweite Parameter „-Wait“ von „Start-Process“ verwendet, um den Abschluss abzuwarten. Der Parameter „-PassThru“ wird von „Start-Process“ verwendet, um den Exitcode des Installers für seinen Rückgabewert zu verwenden.
+  
 ## <a name="using---layout"></a>Verwenden von „--layout“
 
 * Laden Sie den Visual Studio-Kern-Editor (die minimalste Visual Studio-Konfiguration) herunter. Schließen Sie nur das englische Sprachpaket ein:
@@ -171,5 +178,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

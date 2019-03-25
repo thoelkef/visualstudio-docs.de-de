@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Anwendungsprojekten
 description: Projekte in Visual Studio verwalten Abhängigkeiten zwischen Dateien sowie die Komplexität von Beziehungen in einer Anwendung.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155863"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194340"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -29,8 +29,13 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Sie können Python-Code auch ohne ein Projekt problemlos in Visual Studio verwenden. Sie können zum Beispiel eine eigenständige Python-Datei öffnen und die automatische Vervollständigung, IntelliSense und das Debuggen verwenden. Klicken Sie hierzu mit der rechten Maustaste in den Editor und dann auf **Mit Debugging starten** klicken. Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
+> Visual Studio 2019 unterstützt das Öffnen eines Ordners, der Python-Code enthält, und das Ausführen dieses Codes, ohne dass Projekt- und Projektmappendateien in Visual Studio erstellt werden müssen. Weitere Informationen finden Sie unter [Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner](quickstart-05-python-visual-studio-open-folder.md). Die Verwendung einer Projektdatei bietet jedoch gewisse Vorteile, wie in diesem Abschnitt erläutert.
+::: moniker-end
+
+> [!Tip]
+> Sie können Python-Code ohne ein Projekt problemlos in allen Visual Studio-Versionen verwenden. Sie können zum Beispiel eine eigenständige Python-Datei öffnen und die automatische Vervollständigung, IntelliSense und das Debuggen verwenden. Klicken Sie hierzu mit der rechten Maustaste in den Editor und dann auf **Mit Debugging starten** klicken. Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
 >
 > Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unter [Erstellen eines Projekts aus vorhandenen Dateien](#create-project-from-existing-files) beschrieben.
 
@@ -42,14 +47,23 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Fügen Sie solche Dateien hinzu, indem Sie mit der rechten Maustaste auf das Projekt klicken, und klicken Sie dann auf **Hinzufügen** > **Vorhandenes Element**, um nach der hinzuzufügenden Datei zu suchen, oder klicken Sie auf **Hinzufügen** > **Neues Element**, um ein Dialogfeld mit mehreren Elementvorlagen zu öffnen. Wie in der Referenz zu [Elementvorlagen](python-item-templates.md) beschrieben, enthalten Vorlagen leere Python-Dateien, eine Python-Klasse, einen Komponententest und verschiedene Dateien zu Webanwendungen. Sie können diese Optionen mit einem Testprojekt ausprobieren, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
 
-Jedem Python-Projekt ist eine im **Projektmappen-Explorer** fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (**F5** oder **Debuggen** > **Debuggen starten**) oder das Projekt im **interaktiven** Fenster ausführen (**UMSCHALTTASTE**+**ALT**+**F5** oder **Debuggen** > **Execute Project in Python Interactive** (Projekt in interaktivem Python ausführen)). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
+Jedem Python-Projekt ist eine im **Projektmappen-Explorer** fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (**F5** oder **Debuggen** > **Debuggen starten**) oder das Projekt im **interaktiven** Fenster ausführen (**UMSCHALTTASTE**+**ALT**+**F5** oder **Debuggen** > **Execute Project in Python Interactive** (Projekt in interaktivem Python ausführen)). Klicken Sie zum Ändern mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startelement festlegen** (bzw. in älteren Visual Studio-Versionen **Als Startdatei festlegen**) aus.
 
 > [!Tip]
 > Wenn Sie die ausgewählte Startdatei aus einem Projekt entfernen und keine neue auswählen, weiß Visual Studio nicht, mit welcher Python-Datei gestartet werden soll, wenn Sie versuchen, das Projekt auszuführen. In diesem Fall zeigt Visual Studio 2017 Version 15.6 und höher einen Fehler an; frühere Versionen öffnen entweder ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann beinahe sofort wieder geschlossen. Wenn eine dieser Verhaltensweisen auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben.
 >
 > Wenn Sie das Ausgabefenster aus beliebigem Grund geöffnet lassen möchten, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, und fügen Sie anschließend `-i` dem Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt. Das Fenster bleibt dabei geöffnet, bis Sie **STRG**+**Z** > **EINGABETASTE** zum Beenden drücken.
 
-Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen** im Projekt, klicken Sie auf **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie dann die gewünschten Umgebungen aus. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen** im Projekt, klicken Sie auf **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie dann die gewünschten Umgebungen aus.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen** im Projekt, und wählen Sie **Umgebungen hinzufügen...** und dann die gewünschten Umgebungen aus. Sie können auch das Dropdown-Steuerelement für Umgebungen auf der Symbolleiste verwenden, um eine Umgebung auszuwählen oder dem Projekt eine weitere Umgebung hinzuzufügen.
+
+![Befehl „Umgebung hinzufügen“ auf der Python-Symbolleiste](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Um die aktive Umgebung zu ändern, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren** aus, wie unten dargestellt. Weitere Informationen finden Sie unter [Zuweisen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 

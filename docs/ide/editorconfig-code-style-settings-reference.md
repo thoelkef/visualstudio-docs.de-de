@@ -16,16 +16,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911870"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868377"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
-In Visual Studio 2017 können Sie das Codeformat in Ihrer Codebasis mit einer [EditorConfig](../ide/create-portable-custom-editor-options.md)-Datei definieren und verwalten. „EditorConfig“ enthält mehrere wesentliche Formatierungseigenschaften, wie z.B. `indent_style` und `indent_size`. In Visual Studio können Einstellungen für die .NET-Codierungskonventionen auch mit einer „EditorConfig“-Datei konfiguriert werden. Mit „EditorConfig“-Dateien können Sie einzelne .NET-Codierungskonventionen aktivieren oder deaktivieren und konfigurieren, inwieweit die Konvention über einen Schweregrad erzwungen werden soll. Weitere Informationen zur Verwendung „EditorConfig“ zum Erzwingen der Konsistenz in Ihrer Codebasis finden Sie in unter [Optionen zum Erstellen eines portablen benutzerdefinierten Editors](../ide/create-portable-custom-editor-options.md).
+Sie können in Ihrer Codebasis das Codeformat mit einer [EditorConfig](../ide/create-portable-custom-editor-options.md)-Datei definieren und verwalten. „EditorConfig“ enthält mehrere wesentliche Formatierungseigenschaften, wie z.B. `indent_style` und `indent_size`. In Visual Studio können Einstellungen für die .NET-Codierungskonventionen auch mit einer EditorConfig-Datei konfiguriert werden. Sie können einzelne .NET-Codierungskonventionen aktivieren oder deaktivieren und konfigurieren, inwieweit die einzelnen Regeln über einen Schweregrad erzwungen werden sollen.
+
+> [!TIP]
+> - Wenn Sie Codierungskonventionen in einer EDITORCONFIG-Datei definieren, konfigurieren Sie damit, wie die in Visual Studio integrierten [Codestil-Analysetools](../code-quality/roslyn-analyzers-overview.md) Ihren Code analysieren sollen. Die EDITORCONFIG-Datei ist die Konfigurationsdatei für diese Analysetools.
+> - Codeformateinstellungen für Visual Studio können auch im Dialogfeld mit den [Text-Editor-Optionen](code-styles-and-quick-actions.md) festgelegt werden. Die Einstellungen in der EDITORCONFIG-Datei haben Vorrang, und unter **Optionen** festgelegte Einstellungen sind keinem bestimmten Projekt zugeordnet.
 
 Am Ende dieses Artikels finden Sie ein [Beispiel für eine EDITORCONFIG-Datei](#example-editorconfig-file).
 

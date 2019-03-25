@@ -2,7 +2,7 @@
 title: 'Tutorial: „Hallo Welt“-App mit Windows Presentation Foundation (WPF) in Visual Basic'
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in Visual Basic mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
-ms.date: 10/03/2017
+ms.date: 03/14/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,26 +13,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800557"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155536"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 
-Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
+Beim Durcharbeiten dieses Tutorial machen Sie sich mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
 
+::: moniker range="vs-2017"
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+::: moniker-end
 
 ## <a name="configure-the-ide"></a>Konfigurieren der IDE
 
-Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefordert. Dieser Schritt ist für die exemplarische Vorgehensweise nicht unbedingt notwendig. Als Nächstes wird Ihnen möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Ihre Entwicklungseinstellungen und Farbdesigns festzulegen. Behalten Sie die Standardeinstellungen bei, und klicken Sie auf **Visual Studio starten**.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefordert. Dieser Schritt ist für dieses Tutorial nicht unbedingt notwendig. Als Nächstes wird Ihnen möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Ihre Entwicklungseinstellungen und Farbdesigns festzulegen. Behalten Sie die Standardeinstellungen bei, und klicken Sie auf **Visual Studio starten**.
 
 ![Dialogfeld „Einstellungen auswählen“](../media/exploreide-settings.png)
-
-::: moniker range="vs-2017"
 
 Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
@@ -42,7 +47,7 @@ Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten u
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie Visual Studio starten, wird zunächst das Fenster **Start** geöffnet. Klicken Sie auf **Contine without code** (Ohne Code fortfahren), um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+Wenn Sie Visual Studio starten, wird zunächst das Fenster **Start** geöffnet. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
 ::: moniker-end
 
@@ -52,20 +57,37 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
 1. Erstellen Sie ein neues Projekt. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
+     ::: moniker range="vs-2017"
      ![Wählen Sie auf der Menüleiste "Datei", "Neu", "Projekt" aus.](../media/exploreide-filenewproject.png)
+     ::: moniker-end
+     ::: moniker range=">=vs-2019"
+     ![Wählen Sie auf der Menüleiste "Datei", "Neu", "Projekt" aus.](../media/vs-2019/exploreide-filenewproject-vs2019.png)
+     ::: moniker-end
 
-1. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual Basic** > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**.
+::: moniker range="vs-2017"
+2. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual Basic** > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
 
      ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/exploreide-newproject-vb.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+2. Suchen Sie auf dem Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie **WPF-App (.NET Framework)** und anschließend **Weiter** aus.
 
-1. Klicken Sie auf **OK**.
+   ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
-   Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
+3. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
+::: moniker-end
 
-   ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/exploreide-hellowpfappfiles.png)
+Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
 
-   > [!NOTE]
-   > Weitere Informationen zu XAML (eXtensible Application Markup Language) finden Sie auf der Seite [Übersicht über XAML für WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
+::: moniker range="vs-2017"
+![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/exploreide-hellowpfappfiles.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/vs-2019/exploreide-hellowpfappfiles.png)
+::: moniker-end
+
+> [!NOTE]
+> Weitere Informationen zu XAML (eXtensible Application Markup Language) finden Sie auf der Seite [Übersicht über XAML für WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern.
 
@@ -87,7 +109,7 @@ Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein <xref:Sys
 
 ### <a name="add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements
 
-1. Öffnen Sie den **Werkzeugkasten** durch Auswählen des Menüs **Ansicht** und der Option **Werkzeugkasten** .
+1.  Drücken Sie **STRG**+**Q**, um **Schnellstart** aufzurufen, und geben Sie **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
 
 2. Erweitern Sie in der **Toolbox** den Knoten **Häufig verwendete WPF-Steuerelemente**, damit das TextBlock-Steuerelement angezeigt wird.
 
@@ -113,7 +135,7 @@ Das XAML-Markup sollte in etwa dem folgenden Beispiel entsprechen:
    Text="Select a message option and then choose the Display button."
    ```
 
-2. Zentrieren Sie, wenn nötig, das TextBlock-Steuerelement erneut, und speichern Sie die Änderungen durch Drücken von **STRG**+**S** oder über das Menüelement **Datei**.
+2. Zentrieren Sie TextBlock ggf. erneut, und speichern Sie Ihre Änderungen mit STRG+S oder mit dem Menüelement **Datei**.
 
 Anschließend fügen Sie dem Formular zwei [RadioButton](/dotnet/framework/wpf/controls/radiobutton)-Steuerelemente hinzu.
 
@@ -127,7 +149,7 @@ Anschließend fügen Sie dem Formular zwei [RadioButton](/dotnet/framework/wpf/c
 
      Das Fenster sieht wie folgt aus:
 
-     ![Formular "Greetings" mit TextBlock und zwei RadioButtons](../media/exploreide-greetingswithradiobuttons.png)
+     ![Formular „Greetings“ mit TextBlock-Steuerelement und zwei Optionsfeldern](../media/exploreide-greetingswithradiobuttons.png)
 
 3. Ändern Sie im Fenster **Eigenschaften** für das linke RadioButton-Steuerelement die Eigenschaft **Name** (die Eigenschaft oben im Fenster **Eigenschaften** ) in `HelloButton`.
 
@@ -203,17 +225,15 @@ In diesem Schritt suchen Sie den Fehler, den Sie zuvor verursacht haben, indem S
 
 #### <a name="start-debugging-and-find-the-error"></a>Starten des Debuggings und Suchen des Fehlers
 
-1. Starten Sie den Debugger, indem Sie **Debuggen**, dann **Debugging starten**auswählen.
+1. Starten Sie den Debugger, indem Sie **F5** drücken oder **Debuggen** auswählen und anschließend **Debugging starten** auswählen.
 
-     ![Befehl "Debugging starten" im Menü "Debuggen"](../media/exploreide-startdebugging.png)
+   Ein **Haltemodus**-Fenster wird angezeigt, und das **Ausgabe**-Fenster gibt an, dass eine IOException-Klasse aufgetreten ist: Cannot locate resource 'mainwindow.xaml' (Die Ressource „mainwindow.xaml“ kann nicht gefunden werden).
 
-     Ein **Haltemodus**-Fenster wird angezeigt, und das **Ausgabe**-Fenster gibt an, dass eine IOException-Klasse aufgetreten ist: Cannot locate resource 'mainwindow.xaml' (Die Ressource „mainwindow.xaml“ kann nicht gefunden werden).
+   ![Screenshot der IOException-Meldung](../media/exploreide-ioexception.png)
 
 2. Beenden Sie den Debugger, indem Sie **Debuggen** > **Debuggen beenden** auswählen.
 
-     ![Befehl "Debugging beenden" im Menü "Debuggen"](../media/exploreide-stopdebugging.png)
-
-Zu Beginn dieser exemplarischen Vorgehensweise wurde *Mainwindow.xaml* in *Greetings.xaml* umbenannt. Da der Code jedoch weiterhin auf *Mainwindow.xaml* als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.
+Zu Beginn dieses Tutorials wurde *MainWindow.xaml* in *Greetings.xaml* umbenannt. Da der Code jedoch weiterhin auf *MainWindow.xaml* als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Angeben von „Greetings.xaml“ als Start-URI
 
@@ -231,11 +251,9 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
 
 1. Öffnen Sie *Greetings.xaml.vb*, und wählen Sie die folgende Zeile aus: `MessageBox.Show("Hello.")`
 
-2. Fügen Sie einen Haltepunkt hinzu, indem Sie im Menü **Debuggen**und dann **Haltepunkt umschalten**auswählen.
+2. Fügen Sie einen Haltepunkt hinzu, indem Sie **F9** drücken oder im Menü **Debuggen** und dann **Haltepunkt ein/aus** auswählen.
 
-     ![Befehl "Haltepunkt umschalten" im Menü "Debuggen"](../media/exploreide-togglebreakpoint.png)
-
-     Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.
+   Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.
 
 3. Wählen Sie folgende Zeile aus: `MessageBox.Show("Goodbye.")`.
 
@@ -243,7 +261,9 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
 
 5. Aktivieren Sie im Fenster **Greetings** das Optionsfeld **Hello** , und wählen Sie dann die Schaltfläche **Anzeigen** aus.
 
-     Die Zeile wird `MessageBox.Show("Hello.")` gelb hervorgehoben. Am unteren Rand der IDE werden die Fenster "Auto", "Lokal" und "Überwachen" auf der linken Seite zusammengedockt, und die Fenster "Aufrufliste", "Haltepunkte", "Befehl", "Direkt" und "Ausgabe" werden auf der rechten Seite zusammengedockt.
+   Die Zeile wird `MessageBox.Show("Hello.")` gelb hervorgehoben. Am unteren Rand der IDE werden die Fenster „Auto“, „Lokal“ und „Überwachen“ auf der linken Seite zusammen angedockt, und die Fenster „Aufrufliste“, „Haltepunkte", „Ausnahmeeinstellungen“, „Befehl“, „Direkt“ und „Ausgabe“ werden auf der rechten Seite zusammen angedockt.
+
+   ![Screenshot eines Haltepunkts im Debugger](media/exploreide-debugbreakpoint.png)
 
 6. Wählen Sie in der Menüleiste **Debuggen** > **Rücksprung** aus.
 
@@ -267,17 +287,11 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 1. Wählen Sie im Hauptmenü **Erstellen** > **Projektmappe bereinigen** aus, um Zwischendateien und Ausgabedateien zu löschen, die bei vorherigen Builds erstellt wurden. Dies ist nicht erforderlich, bereinigt jedoch die Ausgaben des Builddebugvorgangs.
 
-     ![Befehl "Projektmappe bereinigen" im Menü "Erstellen"](../media/exploreide-cleansolution.png)
-
 2. Ändern Sie die Build-Konfiguration für HelloWPFApp über das Dropdown-Steuerelement in der Symbolleiste (derzeit „Debug“) von **Debug** in **Release**.
-
-     ![Standardsymbolleiste mit ausgewählter Release](../media/exploreide-releaseversion.png)
 
 3. Erstellen Sie die Projektmappe, indem Sie auf **Erstellen** > **Projektmappe erstellen** klicken.
 
-     ![Befehl "Projektmappe erstellen" im Menü "Erstellen"](../media/exploreide-buildsolution.png)
-
-Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Siehe auch
 
