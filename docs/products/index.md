@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Visual Studio-Dokumentation | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.'
+title: Visual Studio-Produkte | Microsoft-Dokumentation
+description: Erkunden Sie die Visual Studio-Produktfamilie.
 ms.topic: landing-page
 searchScope: []
 ---

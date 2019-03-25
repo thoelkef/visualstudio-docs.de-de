@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323431"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983197"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
@@ -29,7 +29,7 @@ Dieses Refactoring gilt für:
 
 **Beschreibung:** Hiermit können Sie eine Schnittstelle mit vorhandenen Membern einer Klasse, Struktur oder Schnittstelle erstellen.
 
-**Hintergrund:** Sie haben Member in einer Klasse, Struktur oder Schnittstelle, die von anderen Klassen, Strukturen oder Schnittstellen geerbt werden können.
+**Hintergrund:** Eine Klasse, Struktur oder Schnittstelle enthält Member, die von anderen Klassen, Strukturen oder Schnittstellen geerbt werden können.
 
 **Vorteile**: Schnittstellen stellen hervorragende Konstrukte für objektorientierte Entwürfe dar. Stellen Sie sich vor, es gäbe Klassen für verschiedene Tiere (Hunde, Katzen, Vögel) mit häufig verwendeten Methoden wie Fressen, Trinken und Schlafen. Mit einer Schnittstelle wie IAnimal würden Hunden, Katzen und Vögeln eine gemeinsame „Signatur“ für diese Methoden zugewiesen werden.
 
@@ -72,11 +72,17 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-      ![Sich ergebende Klasse – C#](media/extractinterface-class-cs.png) ![Sich ergebende Schnittstelle – C#](media/extractinterface-interface-cs.png)
+      ![Resultierende Klasse: C#](media/extractinterface-class-cs.png)
+      
+      
+      ![Resultierende Schnittstelle: C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Sich ergebende Klasse – Visual Basic](media/extractinterface-class-vb.png) ![Sich ergebende Schnittstelle – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Resultierende Klasse: Visual Basic](media/extractinterface-class-vb.png)
+      
+      
+      ![Resultierende Schnittstelle: Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 

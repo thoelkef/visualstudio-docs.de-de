@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021870"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070307"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -36,15 +36,44 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > * Erstellen eines Linux App Service in Azure
 > * Bereitstellen in Linux
 
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben. 
+
+    ::: moniker range=">=vs-2019"
+    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+
+    ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
+
+* Die Node.js-Laufzeit muss installiert sein.
+
+    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Erstellen eines Node.js-Projekts zum Ausführen in Azure
 
-1. Erstellen Sie eine neue TypeScript Express-App mithilfe des Dialogfelds **Datei** > **Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie unter dem **TypeScript**-Knoten die Option **Basic Node.js Express 4 Application** aus.
+1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+
+1. Erstellen Sie eine neue TypeScript Express-App.
+
+    ::: moniker range=">=vs-2019"
+    Geben Sie im Dialogfeld **Neues Projekt erstellen** den Begriff **javascript** ins Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie anschließend **Azure Node.js Express 4-Basisanwendung** und dann **Weiter** aus. Wählen Sie anschließend **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Wählen Sie im mittleren Bereich die Option **Azure Node.js Express 4-Basisanwendung** und anschließend **OK** aus.
 
     ![Erstellen einer neuen TypeScript Express-App](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Wenn die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht angezeigt wird, müssen Sie die Workload **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
-1. Klicken Sie auf **OK**, um das Projekt in Visual Studio zu erstellen.
+    Visual Studio erstellt das Projekt und öffnet es im Projektmappen-Explorer (rechter Bereich).
 
 1. Drücken Sie die Taste **F5**, um die App zu kompilieren und auszuführen. Stellen Sie sicher, dass alles wie erwartet ausgeführt wird.
 
