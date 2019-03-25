@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223519"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984117"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -112,25 +112,39 @@ Sie können Komponententests in Visual Studio auch über Testframeworks von Drit
 
 Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu aktivieren:
 
-1. Klicken Sie auf der Menüleiste auf **Extras** > **Erweiterungen und Updates**.
+::: moniker range="vs-2017"
 
-1. Erweitern Sie im Dialogfeld **Erweiterungen und Updates** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
+1. Wählen Sie auf der Menüleiste **Extras** > **Erweiterungen und Updates** aus.
+
+2. Erweitern Sie im Dialogfeld **Erweiterungen und Updates** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Wählen Sie das Framework oder den Adapter aus, die Sie installieren möchten, und klicken Sie auf **Herunterladen**.
+::: moniker-end
 
-1. Erstellen Sie ein Klassenbibliotheksprojekt, und fügen Sie es Ihrer Projektmappe hinzu.
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie auf der Menüleiste **Erweiterungen** > **Erweiterungen verwalten** aus.
+
+2. Erweitern Sie im Dialogfeld **Erweiterungen verwalten** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Wählen Sie das Framework oder den Adapter aus, die Sie installieren möchten, und klicken Sie auf **Herunterladen**.
+
+4. Erstellen Sie ein Klassenbibliotheksprojekt, und fügen Sie es Ihrer Projektmappe hinzu.
 
    ![Benennen Sie das Klassenbibliotheksprojekt und fügen Sie es hinzu](media/create3rdpartyunittest3.png)
 
-1. Installieren Sie das Plug-In. Wählen Sie im **Projektmappen-Explorer** das Klassenbibliotheksprojekt aus, und wählen Sie anschließend im Kontextmenü die Option **NuGet-Pakete verwalten** aus.
+5. Installieren Sie das Plug-In. Wählen Sie im **Projektmappen-Explorer** das Klassenbibliotheksprojekt aus, und wählen Sie anschließend im Kontextmenü die Option **NuGet-Pakete verwalten** aus.
 
    ![Verwalten von NuGet-Paketen zum Installieren des Plug-Ins](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) ist eine Erweiterung von Visual Studio, mit der Sie Bibliotheken und Tools für Ihre Projekte hinzufügen und aktualisieren können.
 
-1. Suchen Sie im Fenster **NuGet-Paket-Manager** nach dem Plug-In, und wählen Sie es aus. Klicken Sie anschließend auf **Installieren**.
+6. Suchen Sie im Fenster **NuGet-Paket-Manager** nach dem Plug-In, und wählen Sie es aus. Klicken Sie anschließend auf **Installieren**.
 
    ![Installieren des Frameworks des Drittanbieters](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu 
 
    ![Der Verweis für das Unittestframework des Drittanbieters wird Ihrer Projektmappe hinzugefügt.](media/create3rdpartyunittest6.png)
 
-1. Wählen Sie im Knoten **Verweise** des Klassenbibliotheksprojekts den Eintrag **Verweis hinzufügen** aus.
+7. Wählen Sie im Knoten **Verweise** des Klassenbibliotheksprojekts den Eintrag **Verweis hinzufügen** aus.
 
    ![Fügen Sie einen Verweis auf das Projekt hinzu.](media/createunittest6.png)
 
-1. Wählen Sie im Dialogfeld **Verweis-Manager** das Projekt mit dem Code aus, den Sie testen möchten.
+8. Wählen Sie im Dialogfeld **Verweis-Manager** das Projekt mit dem Code aus, den Sie testen möchten.
 
    ![Wählen Sie das Codeprojekt aus, das Sie testen möchten.](media/createunittest7.png)
 
-1. Programmieren Sie den Unittest.
+9. Programmieren Sie den Unittest.
 
    ![Hinzufügen von Code zur Codedatei für Ihren Komponententest](media/create3rdpartyunittest7.png)
 

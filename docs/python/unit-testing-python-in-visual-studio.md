@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155980"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983805"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
@@ -86,7 +86,7 @@ Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Cod
 
 ![Debuggen eines Tests](media/unit-test-debugging.png)
 
-Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](overview-of-python-tools-for-visual-studio.md#features-matrix).)
+Sie können auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden.
 
 ### <a name="known-issues"></a>Bekannte Probleme
 

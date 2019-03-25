@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953381"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070112"
 ---
 # <a name="customize-startup"></a>Anpassen des Programmstarts
 
@@ -65,7 +65,7 @@ Sie können [eine eigene benutzerdefinierte Startseite](../extensibility/creatin
 1. Wählen Sie in der Liste **Startseite anpassen** die gewünschte Seite aus.
 
 > [!TIP]
-> Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Wenn ein Fehler in einer benutzerdefinierten Startseite einen Absturz von Visual Studio verursacht, können Sie Visual Studio im abgesicherten Modus öffnen und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Siehe auch
 

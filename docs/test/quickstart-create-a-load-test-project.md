@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948471"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069969"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
@@ -42,15 +42,33 @@ Wenn Sie noch keine Komponente für Tools für Webleistung und Auslastungstests 
 
 In diesem Abschnitt wird das Erstellen eines Auslastungstestprojekts in C# erläutert. Wenn Ihnen das lieber ist, können Sie Ihr Auslastungstestprojekt auch in Visual Basic erstellen.
 
-1. Öffnen Sie Visual Studio, und klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+::: moniker range="vs-2017"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie in der Menüleiste **Datei** >**Neu** > **Projekt**.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Installiert** und dann die Option **Visual C#**, wählen Sie dann die Kategorie **Test** aus. Wählen Sie die Vorlage **Testprojekt für Webleistung und Auslastung** aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Installiert** und dann die Option **Visual C#**, wählen Sie dann die Kategorie **Test** aus. Wählen Sie die Vorlage **Testprojekt für Webleistung und Auslastung** aus.
 
    ![Vorlage „Testprojekt für Webleistung und Auslastung“](media/web-perf-load-test-project-template.png)
 
-1. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und klicken Sie dann auf **OK**.
+4. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und klicken Sie dann auf **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen**.
+
+3. Geben Sie im Dialogfeld **Neues Projekts erstellen** in das Suchfeld **Webtest** ein, und wählen Sie dann die Vorlage **Testprojekt für Webleistung und Auslastung \[veraltet]** für C#. Wählen Sie **Weiter** aus.
+
+4. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und wählen Sie **OK**.
+
+::: moniker-end
 
    Visual Studio erstellt das Projekt und zeigt die Dateien im **Projektmappen-Explorer** an. Das Projekt enthält zu Beginn nur eine Webtestdatei namens *WebTest1.webtest*.
 

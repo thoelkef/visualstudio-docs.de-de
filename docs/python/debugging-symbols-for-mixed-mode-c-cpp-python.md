@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951341"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869362"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
 
@@ -54,7 +54,7 @@ Wenn Sie Symbole separat heruntergeladen haben, führen Sie folgende Schritte au
 
     ![Symboloptionen für den Debugger im gemischten Modus](media/mixed-mode-debugging-symbols.png)
 
-1. Während einer Debugsitzung werden Sie von Visual Studio möglicherweise auch aufgefordert, den Speicherort einer Quelldatei für den Python-Interpreter anzugeben. Wenn Sie Quelldateien heruntergeladen haben (z.B. von [python.org/downloads](https://www.python.org/downloads)), können Sie natürlich auch diese angeben.
+1. Während einer Debugsitzung werden Sie von Visual Studio möglicherweise auch aufgefordert, den Speicherort einer Quelldatei für den Python-Interpreter anzugeben. Wenn Sie Quelldateien heruntergeladen haben (z. B. von [python.org/downloads](https://www.python.org/downloads/)), können Sie natürlich auch diese angeben.
 
 > [!Note]
 > Die Funktionen zum Zwischenspeichern von Symbolen im Dialogfeld werden verwendet, um einen lokalen Cache für Symbole zu erstellen, die von einer Onlinequelle bezogen wurden. Diese Funktionen werden für die Symbole des Python-Interpreters nicht benötigt, da diese bereits lokal vorhanden sind. In jedem Fall finden Sie weitere Informationen unter [Angeben von Symbolen und Quelldateien im Visual Studio-Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

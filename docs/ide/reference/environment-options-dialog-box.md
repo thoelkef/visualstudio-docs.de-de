@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703252"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983714"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 
@@ -27,7 +27,7 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
 |Anpassen der Darstellung und des Verhaltens von Fenstern, Menüs und anderen IDE-Elementen|[Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)|
 |Ändern der Einstellungen für das automatische Speichern und Wiederherstellen von Dateien|[AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Festlegen der Anzeige von Dokumenten und Verwaltungseinstellungen, z. B. das Verhalten von Sonstige Dateien|[Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Legen Sie fest, wie Updates auftreten und Erweiterungen verwaltet werden.|[Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Legen Sie fest, wie Updates auftreten und Erweiterungen verwaltet werden.|[Erweiterungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Anpassen, wann Meldungsfelder angezeigt werden und wie sich das Fenster **Suchen und Ersetzen** bei Schnellsuchen und Schnellersetzungen verhält sowie Anpassen der automatischen Übernahme von Suchtext|[Suchen und Ersetzen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Festlegen von Schriftart und Farbe in bestimmten Editoren, Dialogfeldern, Toolfenstern und anderen Elementen der Benutzeroberfläche|[Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Legen Sie den Speicherort für die VSSETTINGS-Dateien fest, in denen Informationen zu den Benutzereinstellungen gespeichert werden.|[Einstellungen importieren und exportieren, Umgebung, Dialogfeld „Optionen“](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

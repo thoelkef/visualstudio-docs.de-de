@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von Python-Code
 description: In Visual Studio stehen für Python umfassende IntelliSense-Funktionen, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155395"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155523"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -109,10 +109,20 @@ Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehl
 
 ![Beispielergebnis für die Mypy-Überprüfung von Typhinweisen](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über *Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
 >
 > Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+>
+> Visual Studio enthält gebündelte Typeshed-Dateien für Python 2 und 3. So werden keine zusätzlichen Downloads benötigt. Wenn Sie andere Dateien verwenden möchten, können Sie den Pfad unter **Tools** > **Optionen** > **Python** > **Sprache** angeben. Siehe [Optionen – Sprachserver](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
+::: moniker-end
 
 ### <a name="signature-help"></a>Signaturhilfe
 

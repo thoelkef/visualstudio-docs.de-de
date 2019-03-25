@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007175"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983883"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Gefilterte Projektmappen in Visual Studio
 
@@ -37,7 +37,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie eine Projektmappe öffnen möch
 
 1. Wählen Sie auf der Menüleiste **Datei** > **Öffnen** > **Projekt/Projektmappe** aus.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** die Projektmappe und anschließend **Do not load projects** (Projekte nicht laden) aus.
+2. Wählen Sie im Dialogfeld **Projekt öffnen** die Projektmappe und anschließend **Do not load projects** (Projekte nicht laden) aus.
 
    ![Dialogfeld „Projekt öffnen“ in Visual Studio mit aktivierter Option „Do not load projects“ (Projekte nicht laden)](media/filtered-solutions/do-not-load-projects.png)
 

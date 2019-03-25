@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code
 description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954360"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151361"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Arti
 
 Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einzelschrittausführung des Codes, das Untersuchen von Code und das Behandeln von Ausnahmen, wie in den folgenden Abschnitten beschrieben.
 
-Eine Debugsitzung wird mit dem Befehl **Debuggen** > **Debuggen starten** der Schaltfläche **Start** auf der Symbolleiste oder der Taste **F5** gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im **Projektmappen-Explorer** fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den **Projekteigenschaften** festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)). **Visual Studio 2017 Version 15.6** und höher warnt Sie, wenn Sie keine Startdatei festgelegt haben; frühere Versionen öffnen möglicherweise ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Klicken Sie in jedem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen** aus.
+Eine Debugsitzung wird mit dem Befehl **Debuggen** > **Debuggen starten** der Schaltfläche **Start** auf der Symbolleiste oder der Taste **F5** gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im **Projektmappen-Explorer** fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den **Projekteigenschaften** festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)). Visual Studio 2017 Version 15.6 und höher warnt Sie, wenn Sie keine Startdatei festgelegt haben. Frühere Versionen öffnen möglicherweise ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Klicken Sie in jedem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen** aus.
 
 > [!Note]
 > Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Auswählen einer Python-Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
@@ -175,16 +175,12 @@ Das **Fenster zum interaktiven Debuggen** unterstützt zusätzlich zu den [REPL-
 | `$stepout`, `$return`, `$r` | Springt aus der aktuellen Funktion heraus. |
 | `$stepover`, `$until`, `$unt` | Springt über den nächsten Funktionsaufruf. |
 | `$thread` | | Zeigt die aktuelle Thread-ID an. |
-| `$thread` | thread id | Legt den aktuellen Thread auf die angegebene Thread-ID fest. |
+| `$thread` | Thread-ID | Legt den aktuellen Thread auf die angegebene Thread-ID fest. |
 | `$threads` | | Führt die aktuell im Debugmodus befindlichen Threads auf. |
 | `$up`, `$u` | | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach oben. |
 | `$where`, `$w`, `$bt` | Führt die Rahmen für den aktuellen Thread auf. |
 
 Beachten Sie, dass die standardmäßigen Debuggerfenster wie **Prozesse**, **Threads** und **Aufrufliste** nicht mit dem **Fenster zum interaktiven Debuggen** synchronisiert werden. Das Ändern des aktiven Prozesses, Threads oder Frames im **Fenster zum interaktiven Debuggen** wirkt sich nicht auf die anderen Debuggerfenster aus. Entsprechend gilt: Das Ändern des aktiven Prozesses, Threads oder Frames in anderen Debuggerfenster wirkt sich nicht auf das **Fenster zum interaktiven Debuggen** aus.
-
-Das **Fenster zum interaktiven Debuggen** verfügt über bestimmte Optionen, auf die Sie über **Extras** > **Optionen** > **Python-Tools** > **Fenster zum interaktiven Debuggen** zugreifen können. Im Gegensatz zum regulären **interaktiven Python-Fenster**, das über eine separate Instanz für jede Python-Umgebung verfügt, gibt es nur ein **Fenster zum interaktiven Debuggen**, und dieses verwendet immer den Python-Interpreter für den Prozess, für den das Debugging ausgeführt wird. Siehe [Options - Debugging options (Optionen: Debugoptionen)](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Optionen für das Fenster zum interaktiven Debuggen](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

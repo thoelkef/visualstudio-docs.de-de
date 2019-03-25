@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908191"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983273"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -54,7 +54,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - Feld
 - event
 - delegate
-- Parameter
+- -Parameter von
 - type_parameter
 - Lokal
 - local_function
@@ -73,18 +73,19 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - private
 - protected
 - „protected\_internal“ oder „protected_friend“
+- private\_protected
 - Lokal
 
 > [!NOTE]
 > Geben Sie eine Zugriffsebene nicht im Rahmen Ihrer Benennungskonvention an, wenn der Zugriff nicht auf die Art des gewünschten Symbols anwendbar ist. Beispielsweise sind bei Parametern keine Zugriffsebenen vorhanden. Wenn Sie eine Zugriffsebene für eine Benennungskonvention für Parameter angeben, funktioniert Ihre Benennungsregel nicht ordnungsgemäß.
 
-### <a name="symbol-modifiers"></a>Symbolmodifizierer
+### <a name="symbol-modifiers-optional"></a>Symbolmodifizierer (optional)
 
 Um die Modifizierer der Symbole zu beschreiben, für die die Namensregel gelten soll, geben Sie einen Eigenschaftsnamen im folgenden Format an:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen. Eine Namensregel stimmt nur mit den Signaturen überein, die alle Modifizierer besitzen, die in `required_modifiers` festgelegt sind. Wenn Sie diese Eigenschaft nicht bestimmen, wird der Standardwert einer leeren Liste verwendet, d. h. keine bestimmten Modifizierer werden für eine Übereinstimmung benötigt. Das bedeutet, dass die Modifizierer eines Symbols keine Auswirkungen darauf haben, ob die Regel angewendet wird oder nicht.
+In der folgenden Liste werden die zulässigen Werte aufgelistet (Trennen Sie mehrere Werte durch ein Komma):
 
 - `abstract` oder `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
    > [!NOTE]
    > Wenn Sie eine Benennungsregel für `static`- oder `shared`- Symbole haben, wird sie auch auf `const`-Symbole angewendet, da sie implizit statisch sind. Wenn Sie nicht möchten, dass die `static`-Benennungsregel auf `const`-Symbole angewendet wird, erstellen Sie eine separate Benennungsregel für `const`-Symbole.
 
-`required_modifiers` ist eine optionale Eigenschaft. Wenn Sie diese Eigenschaft nicht angeben, gilt die Benennungsregel für alle Modifizierer.
+Eine Namensregel stimmt mit den Signaturen überein, die *alle* Modifizierer besitzen, die in `required_modifiers` festgelegt sind. Wenn Sie diese Eigenschaft nicht bestimmen, wird der Standardwert einer leeren Liste verwendet, d. h. keine bestimmten Modifizierer werden für eine Übereinstimmung benötigt. Das bedeutet, dass die Modifizierer eines Symbols keine Auswirkungen darauf haben, ob die Regel angewendet wird oder nicht.
+
+> [!TIP]
+> Geben Sie nicht den Wert `*` für `required_modifiers` ein. Lassen Sie die Eigenschaft `required_modifiers` einfach weg. Ihre Benennungsregel gilt dann für alle Modifizierer.
 
 ## <a name="style"></a>Stil
 

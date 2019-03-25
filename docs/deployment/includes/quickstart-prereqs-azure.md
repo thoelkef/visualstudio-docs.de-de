@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58051759"
+---
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) mit den zu der von Ihnen bevorzugten Sprache passenden Workloads:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) mit den passenden Workloads für Ihre bevorzugte Sprache:
   * ASP.NET: **ASP.NET und Webentwicklung**
   * Node.js: **Node.js-Entwicklung**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) mit den zu der von Ihnen bevorzugten Sprache passenden Workloads:
+  * ASP.NET: **ASP.NET und Webentwicklung**
+  * Node.js: **Node.js-Entwicklung**
+::: moniker-end
 
 * Ein Azure-Abonnement. [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.
 

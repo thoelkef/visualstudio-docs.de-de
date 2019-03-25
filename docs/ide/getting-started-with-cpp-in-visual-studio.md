@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222518"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070281"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -52,7 +52,7 @@ Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile
 
 ::: moniker range=">=vs-2019"
 
-Nachdem Sie Visual Studio geöffnet haben, wird zuerst das **Startfenster** angezeigt. Klicken Sie auf **Contine without code** (Ohne Code fortfahren), um die Entwicklungsumgebung zu öffnen.
+Nachdem Sie Visual Studio geöffnet haben, wird zuerst das **Startfenster** angezeigt. Wählen Sie **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen.
 
 Ihnen werden drei grundlegende Teile der IDE angezeigt: Toolfenster, Menüs, Symbolleisten sowie der Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Feld **Schnellstart**, die Menüleiste und die Standardsymbolleiste finden Sie oben. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 

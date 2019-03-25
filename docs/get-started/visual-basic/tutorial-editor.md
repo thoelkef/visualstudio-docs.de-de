@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939475"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069631"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
@@ -35,9 +35,21 @@ In diesem Artikel wird davon ausgegangen, dass Sie bereits mit Visual Basic vert
 
 Beginnen Sie mit dem Erstellen einer neuen Datei, und fügen Sie dieser Code hinzu.
 
-1. Öffnen Sie Visual Studio, und klicken Sie im Menü **Datei** in der Menüleiste auf **Neu > Datei**.
+::: moniker range="vs-2017"
 
-1. Klicken Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** auf die Option **Visual Basic-Klasse**, und klicken Sie dann auf **Öffnen**.
+1. Öffnen Sie Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio. Drücken Sie **ESC**, oder klicken Sie im Startfenster auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen.
+
+::: moniker-end
+
+2. Wählen Sie im Menü **Datei** auf der Menüleiste **Neu > Datei** aus.
+
+3. Klicken Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** auf die Option **Visual Basic-Klasse**, und klicken Sie dann auf **Öffnen**.
 
    Im Editor öffnet sich eine neue Datei mit dem Gerüst einer Visual Basic-Klasse. (Sie werden feststellen, dass Sie kein vollständiges Visual Studio-Projekt erstellen müssen, um die Vorteile des Code-Editor zu nutzen (z. B. die Syntaxhervorhebung). Sie benötigen lediglich eine Codedatei.)
 

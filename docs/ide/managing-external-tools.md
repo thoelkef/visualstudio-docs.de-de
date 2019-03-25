@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907801"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983792"
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
 
@@ -24,13 +24,24 @@ Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufru
 
 ## <a name="tools-available-on-the-tools-menu"></a>Im Menü „Extras“ verfügbare Tools
 
-Das Menü **Extras** enthält mehrere integrierte Befehle, z.B.:
+Das Menü **Extras** enthält mehrere integrierte Befehle, z. B.:
+
+::: moniker range="vs-2017"
 
 * **Erweiterungen und Updates** für die [Verwaltung von Visual Studio-Erweiterungen](finding-and-using-visual-studio-extensions.md)
 * **Codeausschnitt-Manager** zum [Organisieren von Codeausschnitten](code-snippets.md)
-* **PreEmptive-Schutz: Dotfuscator** zum Starten von [Dotfuscator Community Edition (CE)](dotfuscator/index.md), sofern das Tool [installiert](dotfuscator/install.md) ist
 * **Anpassen** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Optionen** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Codeausschnitt-Manager** zum [Organisieren von Codeausschnitten](code-snippets.md)
+* **Anpassen** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Optionen** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Neue Tools zum Menü „Extras“ hinzufügen
 

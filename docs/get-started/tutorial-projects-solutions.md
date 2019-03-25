@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911896"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194644"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
@@ -35,9 +35,11 @@ Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „L
 
 Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visual Studio vertraut sind, werden Sie wahrscheinlich eher selten leere Projektmappen erstellen. Wenn Sie in Visual Studio ein neues Projekt erstellen, wird automatisch auch eine Projektmappe für das Projekt erstellt, wenn noch keine geöffnet ist.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) die Option **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -46,6 +48,22 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
    ![Vorlage „Leere Projektmappe“ in Visual Studio](media/tutorial-projects-new-solution.png)
 
    Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
+
+4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
+
+   Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Hinzufügen eines Projekts
 
@@ -146,7 +164,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
    End Class
    ```
 
-   Unter einigen Teilen des Codes werden rote Wellenlinien angezeigt. Sie können diesen Fehler beheben, indem Sie das Testprojekt als [Friend-Assembly](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) für das **QuickDate**-Projekt festlegen.
+   Unter einigen Teilen des Codes werden rote Wellenlinien angezeigt. Sie können diesen Fehler beheben, indem Sie das Testprojekt als [Friend-Assembly](/dotnet/standard/assembly/friend-assemblies) für das **QuickDate**-Projekt festlegen.
 
 1. Öffnen Sie im Projekt **QuickDate** die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist, und fügen Sie die folgende [using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das folgende Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> am Anfang der Datei hinzu, um den Fehler in dem Testprojekt zu beheben.
 

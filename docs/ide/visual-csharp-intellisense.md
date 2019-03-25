@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936862"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194602"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -60,7 +60,7 @@ Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollst�
 
 - **Schnittstellen und Basisklassen:** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
 
-- **Attribute:** Wenn Sie ein Attribut auf einen Typ anwenden, wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z. B. <xref:System.Attribute>.
+- **Attribute:** Wenn Sie ein Attribut auf einen Typ anwenden, wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z. B. <xref:System.Attribute>.
 
 - **Catch-Klauseln**
 
@@ -94,7 +94,7 @@ Sie können eine experimentelle [IntelliCode-Erweiterung](/visualstudio/intellic
 
 Der IntelliSense-Vorgang **Hinzufügen mit** fügt automatisch die erforderliche `using`-Anweisung zu Ihrer Codedatei hinzu. Durch diese Funktion können Sie den Schwerpunkt auf den zu schreibenden Code statt auf einen anderen Teil des Codes legen.
 
-Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und anschließend `XmlTextReader` zum Text der `Main`-Methode hinzufügen, wird eine rote Wellenlinie in dieser Codezeile angezeigt, da der Typverweis nicht aufgelöst werden kann. Sie können dann **Hinzufügen mit** über die **Schnellaktionen** aufrufen. Die Option **Schnellaktionen** ist nur sichtbar, wenn sich der Cursor auf dem ungebundenen Typ befindet.
+Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und anschließend `XmlReader` zum Text der `Main`-Methode hinzufügen, wird eine rote Wellenlinie in dieser Codezeile angezeigt, da der Typverweis nicht aufgelöst werden kann. Sie können dann **Hinzufügen mit** über die **Schnellaktionen** aufrufen. Die Option **Schnellaktionen** ist nur sichtbar, wenn sich der Cursor auf dem ungebundenen Typ befindet.
 
 ![Darstellung vom Hinzufügen der using-Anweisung über eine schnelle Aktion](../ide/media/addusing-quickaction.png)
 
