@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742455"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983857"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -107,9 +107,9 @@ Wenn Sie eine komplexere Installation einer Desktop-Anwendung benötigen als [Cl
 
 - Mithilfe der [WiX-Toolset-Erweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) kann ein MSI-basiertes Installer-Paket erstellt werden. Dabei handelt es sich um ein Befehlszeilentoolset.
 
-- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 nicht unterstützt wird; Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 und höheren Versionen nicht unterstützt wird. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
-- MSI- oder EXE-Installer-Pakete können mithilfe eines Setupprojekts (vdproj) erstellt werden. Installieren Sie zur Verwendung dieser Option die [Installer-Projekterweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- MSI- oder EXE-Installer-Pakete können mithilfe eines Setupprojekts (vdproj) erstellt werden. Installieren Sie die [Projekterweiterung für Visual Studio-Installer](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview), um diese Option zu verwenden.
 
 - Sie können die erforderlichen Komponenten für Desktopanwendungen auch installieren, indem Sie ein generisches Installationsprogramm konfigurieren, das als Bootstrapper bezeichnet wird. Weitere Informationen finden Sie unter [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche 
 | --- | --- | --- |
 | **Office-App** | Sie können ein Add-In für Office aus Visual Studio veröffentlichen. | [Bereitstellen und Veröffentlichen Ihres Office-Add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF oder OData-Dienst** | Für andere Anwendungen können WCF RIA-Dienste verwendet werden, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch wird in Visual Studio 2017 nicht mehr unterstützt, kann aber aus Visual Studio 2015 und niedrigeren Versionen immer noch bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch wird ab Visual Studio 2017 nicht mehr unterstützt, kann aber aus Visual Studio 2015 und niedrigeren Versionen immer noch bereitgestellt werden. | [Bereitstellen von LightSwitch-Anwendungen](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
