@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7f2a09d7f3eb0df05ae1ba3c05706746cb9d7eb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8929a0b3bec64bbf2fc12bd84f6938463393a32c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013638"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070268"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Erstellen einer OpenGL ES-Anwendung für Android und iOS
 
@@ -31,13 +31,11 @@ Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, müssen Sie sichers
 
 In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungsprojekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus. Als Nächstes erstellen Sie die App für iOS und führen sie im iOS-Simulator aus.
 
-### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
-1. Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++** > **Plattformübergreifend** und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
-
-3. Geben Sie der App einen Namen wie `MyOpenGLESApp`, und wählen Sie dann **OK**.
+3. Vergeben Sie an die App einen Namen wie etwa `MyOpenGLESApp`(ohne Leerzeichen), und wählen Sie dann **OK**.
 
     ![Neues OpenGLES-Anwendungsprojekt](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 

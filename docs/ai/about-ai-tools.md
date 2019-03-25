@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842834"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155588"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
@@ -30,7 +29,7 @@ Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen 
 ![Deep Learning-IDE](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Schneller Einstieg in den Azure Machine Learning-Beispielkatalog
-Visual Studio-Tools für KI ist in Azure Machine Learning enthalten, um das Durchsuchen eines Katalogs mit Beispielexperimenten mithilfe von CNTK, TensorFlow, MMLSpark usw. zu erleichtern.
+Visual Studio Tools for AI ist in Azure Machine Learning enthalten, um das Durchsuchen eines Katalogs mit Beispielexperimenten mithilfe von CNTK, TensorFlow, MMLSpark usw. zu erleichtern.
 
 ![Beispiele im Explorer](media/about/gallery.png)
 
@@ -46,5 +45,5 @@ Diese Erweiterung vereinfacht das Trainieren von Modellen auf Ihrem lokalen Comp
 ## <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 Derzeit unterstützt diese Erweiterung Windows 64-Bit-Betriebssysteme.
 
-## <a name="support"></a>Unterstützung
+## <a name="support"></a>Support
 Die Unterstützung für diese Erweiterung wird auf dem [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) bereitgestellt. Sie können einen Fehlerbericht oder einen Vorschlag für ein Feature übermitteln oder an Diskussionen teilnehmen.

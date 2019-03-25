@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700262"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070255"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
@@ -218,7 +218,7 @@ Elemente können die Vordergrundfarbe von anderen Anzeigeelementen wie z.B. **Nu
 
 **Default**
 
-Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal öffnen. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
 
 **Benutzerdefiniert**
 
@@ -237,7 +237,7 @@ Elemente können die Hintergrundfarbe von anderen Anzeigeelementen wie z.B. **Nu
 
 **Default**
 
-Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal öffnen. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
 
 **Benutzerdefiniert**
 

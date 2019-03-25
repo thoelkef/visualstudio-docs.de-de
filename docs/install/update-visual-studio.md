@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737015"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983974"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
 
@@ -82,7 +82,7 @@ Sie können nach einem Update suchen und das Update dann von der Menüleiste in 
 
 ### <a name="use-the-visual-studio-installer"></a>Verwenden des Visual Studio-Installers
 
-Wie in früheren Versionen von Visual Studio 2017 können Sie mit dem Visual Studio-Installer ein Update installieren.
+Wie in früheren Versionen von Visual Studio können Sie mit dem Visual Studio-Installer ein Update installieren.
 
 1. Speichern Sie Ihre Arbeit.
 
@@ -150,14 +150,14 @@ Wenn Sie eine Benachrichtigung ignorieren, wird diese von Visual Studio nicht me
 
    Klicken Sie auf die Schaltfläche **Aktualisieren**, um die Updates zu installieren.
 
-     ![Aktualisieren von Visual Studio 2017 mithilfe des Visual Studio-Installers](media/update-visual-studio.png "Aktualisieren von Visual Studio 2017 mithilfe des Installers für Visual Studio")
+     ![Aktualisieren von Visual Studio 2017 mithilfe des Visual Studio-Installers](media/update-visual-studio.png "Aktualisieren von Visual Studio mithilfe des Visual Studio-Installers")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
-* [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
+* [Ändern von Visual Studio](modify-visual-studio.md)
+* [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
 * [Aktualisieren von Visual Studio für Mac](/visualstudio/mac/update)
 
 ::: moniker-end

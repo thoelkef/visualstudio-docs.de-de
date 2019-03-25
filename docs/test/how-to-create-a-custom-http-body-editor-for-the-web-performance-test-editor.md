@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936199"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069891"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -31,9 +31,7 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 ## <a name="create-a-windows-control-library-project"></a>Erstellen eines Windows-Steuerelementbibliothek-Projekts
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Erstellen eines Benutzersteuerelements mithilfe eines Windows-Steuerelementbibliothek-Projekts
-
-1. Klicken Sie in Visual Studio im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Option **Neu** > **Projekt** aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer im Plug-In-Dialogfeld auf **OK** klickt, wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> aufgerufen, um den bearbeiteten Text als Zeichenfolge abzurufen und den **Zeichenfolgentext** in der Anforderung im Webleistungstest-Editor zu aktualisieren.
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>So erstellen Sie eine Klasse und implementieren Sie den IStringHttpBodyEditorPlugin-Schnittstellencode
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Erstellen Sie eine Klasse, und implementieren Sie die Schnittstelle IStringHttpBodyEditorPlugin.
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt der Windows Forms-Steuerelementbibliothek, und wählen Sie **Neues Element hinzufügen** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt der Windows Forms-Steuerelementbibliothek, und wählen Sie **Neues Element hinzufügen** aus.
 
-2.  Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
+   Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-3.  Wählen Sie **Klasse** aus.
+2. Wählen Sie **Klasse** aus.
 
-4.  Geben Sie im Textfeld **Name** einen aussagekräftigen Namen für die Klasse ein (z.B. `MessageEditorPlugins`).
+3. Geben Sie im Textfeld **Name** einen aussagekräftigen Namen für die Klasse ein (z.B. `MessageEditorPlugins`).
 
-5.  Wählen Sie **Hinzufügen** aus.
+4. Wählen Sie **Hinzufügen** aus.
 
-     "Class1" wird dem Projekt hinzugefügt und im Code-Editor präsentiert.
+   "Class1" wird dem Projekt hinzugefügt und im Code-Editor präsentiert.
 
-6.  Fügen Sie im Code-Editor folgende using-Anweisung hinzu:
+5. Fügen Sie im Code-Editor folgende `using`-Anweisung hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  Schreiben oder kopieren Sie den folgenden Code, um die XmlMessageEditor-Klasse von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle zu instanziieren und die erforderlichen Methoden zu implementieren:
+6. Fügen Sie folgenden Code ein, um die Schnittstelle zu implementieren:
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Erstellen und Bereitstellen der Plug-Ins
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>So erstellen Sie das IStringHttpBodyEditorPlugin und IBinaryHttpBodyEditorPlugin und stellen Sie die resultierende DLL bereit
+1. Klicken Sie im Menü **Erstellen** auf **\<Name des Projekts der Windows Forms-Steuerelementbibliothek>erstellen**.
 
-1.  Klicken Sie im Menü **Erstellen** auf **\<Name des Projekts der Windows Forms-Steuerelementbibliothek>erstellen**.
+2. Schließen Sie alle Instanzen von Visual Studio.
 
-2.  Schließen Sie alle Instanzen von Visual Studio.
+   > [!NOTE]
+   > Dadurch wird sichergestellt, dass die *DLL-Datei* nicht gesperrt ist, bevor Sie versuchen, diese zu kopieren.
 
-    > [!NOTE]
-    > Dadurch wird sichergestellt, dass die *DLL-Datei* nicht gesperrt ist, bevor Sie versuchen, diese zu kopieren.
+3. Kopieren Sie die resultierende *DLL-Datei* (z. B. *MessageEditors.dll*) aus dem Ordner *bin\debug* des Projekts in *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-3.  Kopieren Sie die resultierende *DLL-Datei* (z.B. *MessageEditors.dll*) aus dem Ordner *bin\debug* des Projekts in *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+4. Öffnen Sie Visual Studio.
 
-4.  Öffnen Sie Visual Studio.
-
-     Die *DLL-Datei* wird nun in Visual Studio registriert.
+   Die *DLL-Datei* wird nun in Visual Studio registriert.
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Überprüfen der Plug-Ins mithilfe eines Webleistungstests
 
-### <a name="to-test-your-plug-ins"></a>So testen Sie die Plug-Ins
+1. Erstellen Sie ein Testprojekt.
 
-1.  Erstellen Sie ein Testprojekt.
+2. Erstellen Sie einen Webleistungstest, und geben Sie im Browser eine URL zu einem Webdienst ein.
 
-2.  Erstellen Sie einen Webleistungstest, und geben Sie im Browser eine URL zu einem Webdienst ein.
+3. Wenn Sie die Aufzeichnung beenden, erweitern Sie im Webleistungstest-Editor die Anforderung für den Webdienst, und wählen Sie die Option **Zeichenfolgentext** oder **Binärer Text** aus.
 
-3.  Wenn Sie die Aufzeichnung beenden, erweitern Sie im Webleistungstest-Editor die Anforderung für den Webdienst, und wählen Sie die Option **Zeichenfolgentext** oder **Binärer Text** aus.
+4. Wählen Sie im Fenster **Eigenschaften** die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)**.
 
-4.  Wählen Sie im Fenster „Eigenschaften“ die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)**.
+   Das Dialogfeld **HTTP-Textdaten bearbeiten** wird angezeigt.
 
-     Das Dialogfeld **HTTP-Textdaten bearbeiten** wird angezeigt.
-
-5.  Sie können die Daten jetzt bearbeiten und auf **OK** klicken. Hierdurch wird die anwendbare GetNewValue-Methode aufgerufen, die den Inhalt im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aktualisiert.
+5. Sie können die Daten jetzt bearbeiten und auf **OK** klicken. Hierdurch wird die anwendbare GetNewValue-Methode aufgerufen, die den Inhalt im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aktualisiert.
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323117"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070021"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 
@@ -25,9 +25,7 @@ Das Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio (VSCE
 
 VSCEIP ist standardmäßig aktiviert. Sie können es deaktivieren oder erneut aktivieren, indem Sie folgende Anweisungen befolgen:
 
-1. Starten Sie Visual Studio.
-
-1. Zeigen Sie im **Hilfemenü** auf **Feedback senden**, und wählen Sie dann **Einstellungen** aus.
+1. Wählen Sie in Visual Studio **Hilfe** > **Feedback senden** und dann **Einstellungen** aus.
 
    Das Dialogfeld **Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio** wird geöffnet.
 

@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796841"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983074"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 
-Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
+Wenn Sie Visual Studio von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
 
 - Die Installation mit bestimmten vorab ausgewählten Optionen starten
 - Den Installationsprozess automatisieren
@@ -45,7 +45,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 (Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie installieren)
 
 >[!TIP]
-> Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio 2017 finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).
+> Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).
 
 | **Befehl** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `update` | Aktualisiert ein installiertes Produkt. |
 | `repair` | Repariert ein installiertes Produkt. |
 | `uninstall` | Deinstalliert ein installiertes Produkt. |
-| `export` | **Neues in 15.9:** Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei **Hinweis:** Kann nur mit der Datei „vs_installer.exe“ verwendet werden. |
+| `export` | **Neuerungen in Version 15.9**: Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei **Hinweis:** Kann nur mit der Datei „vs_installer.exe“ verwendet werden. |
 
 ## <a name="install-options"></a>Installationsoptionen
 
@@ -115,7 +115,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
 
-Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Studio-Produkt, finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
+Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Studio-Produkt, finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Liste der Gebietsschemas
 
@@ -155,7 +155,7 @@ Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die de
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
-- [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio](command-line-parameter-examples.md)
+- [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md)
-- [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+- [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

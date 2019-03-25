@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868229"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -25,7 +25,7 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 
 Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-Weitere Informationen finden Sie unter [Speicherlimits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Weitere Informationen finden Sie unter [Speicherlimits](/windows/desktop/Memory/memory-limits-for-windows-releases) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Deaktivieren der automatischen Dateiwiederherstellung
 
@@ -105,7 +105,17 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
     Erweiterungen sind zusätzliche, zu Visual Studio hinzugefügte Softwarekomponenten, die neue Funktionalität bereitstellen oder vorhandene Funktionalität erweitern. Erweiterungen können häufig eine Quelle von Problemen mit Arbeitsspeicherressourcen sein. Wenn bei Ihnen Arbeitsspeicherprobleme auftreten, deaktivieren Sie die Erweiterungen nacheinander, um die Auswirkungen auf das Szenario oder den Workflow zu beobachten.
 
-    Wenn Sie Erweiterungen deaktivieren möchten, navigieren Sie zu **Extras** > **Erweiterungen und Updates**, und deaktivieren Sie eine bestimmte Erweiterung.
+   ::: moniker range="vs-2017"
+
+    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Tools** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Erweiterungen** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+
+   ::: moniker-end
 
 - **Deaktivieren des XAML-Designers**
 

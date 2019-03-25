@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939436"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983202"
 ---
-# <a name="repair-visual-studio-2017"></a>Reparieren von Visual Studio 2017
+# <a name="repair-visual-studio"></a>Reparieren Sie Visual Studio.
 
 Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fehlerhaft ist. Dies kann durch eine Reparatur behoben werden.
 
@@ -39,7 +39,7 @@ Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fe
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Installieren von Visual Studio 2017](install-visual-studio.md)
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
-* [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
-* [Problembehandlung bei der Visual Studio 2017-Installation und bei Upgradefehlern](troubleshooting-installation-issues.md)
+* [Installieren von Visual Studio](install-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
+* [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
+* [Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern](troubleshooting-installation-issues.md)

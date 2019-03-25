@@ -58,11 +58,11 @@
 #### [O/R-Designer-Meldungen](o-r-designer-messages.md)
 ##### [Die ausgewählte Klasse kann nicht gelöscht werden, da sie als Rückgabetyp für mindestens eine DataContext-Methode verwendet wird](the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 ##### [Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und verwendet keine integrierte Sicherheit](the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md)
-##### [Die Eigenschaft <property name> kann nicht gelöscht werden, da sie Teil der Zuordnung <association name> ist](the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
-##### [Die Eigenschaft <property name> kann nicht gelöscht werden](the-property-property-name-cannot-be-deleted.md)
+##### [Die Eigenschaft <Eigenschaftenname\> kann nicht gelöscht werden, weil sie Teil der Zuordnung <Zuordnungsname\>](the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md) ist.
+##### [Die Eigenschaft <Eigenschaftenname\> kann nicht gelöscht werden](the-property-property-name-cannot-be-deleted.md).
 ##### [Die Verbindungseigenschaft in der Application Settings-Datei fehlt oder ist fehlerhaft](the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)
 ##### [Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt](you-have-selected-a-database-object-from-an-unsupported-database-provider.md)
-##### [Eine Zuordnung <association name> kann nicht erstellt werden – Eigenschaftstypen stimmen nicht überein](cannot-create-an-association-association-name-property-types-do-not-match.md)
+##### [Die Zuordnung <Zuordnungsname\> kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf](cannot-create-an-association-association-name-property-types-do-not-match.md).
 ##### [Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden](warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
 ##### [Diese verknüpfte Methode ist die dahinter liegende Methode für die folgenden standardmäßigen Insert-, Update- und Delete-Methoden](this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
 ##### [Mindestens eines der ausgewählten Elemente enthält einen Datentyp, der nicht vom Designer unterstützt wird](one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)
@@ -70,8 +70,8 @@
 ##### [Der Designer kann während des Debuggens nicht geändert werden](the-designer-cannot-be-modified-while-debugging.md)
 ##### [Die ausgewählte Verbindung nutzt einen nicht unterstützten Datenbankanbieter](the-selected-connection-uses-an-unsupported-database-provider.md)
 ##### [Die dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als die derzeit vom Designer verwendete](the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
-##### [Eine Zuordnung <association name> kann nicht erstellt werden - Eigenschaft wird doppelt aufgeführt](cannot-create-an-association-association-name-property-listed-twice.md)
-##### [Die Schemainformationen für das Datenbankobjekt konnten nicht abgerufen werden <object name>](could-not-retrieve-schema-information-for-database-object-object-name.md)
+##### [Die Zuordnung <Zuordnungsname\> kann nicht erstellt werden – die Eigenschaft ist zweimal aufgelistet](cannot-create-an-association-association-name-property-listed-twice.md).
+##### [Die Schemainformationen für das Datenbankobjekt <Objektname\>](could-not-retrieve-schema-information-for-database-object-object-name.md) konnten nicht abgerufen werden.
 ##### [Mindestens ein ausgewähltes Datenbankobjekt gibt ein Schema zurück, das nicht dem Schema der Zielklasse entspricht](one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 ### [Binden von Steuerelementen an Daten in Visual Studio](bind-controls-to-data-in-visual-studio.md)
 #### [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

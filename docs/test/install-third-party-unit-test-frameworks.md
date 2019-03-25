@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316144"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982921"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
@@ -26,9 +26,19 @@ Sie können Komponententest-Frameworks von Drittanbietern oder [Visual Studio Ma
 
 ### <a name="install-from-visual-studio"></a>Installieren aus Visual Studio
 
-1. Wählen Sie im Standardmenü **Tools** und dort **Erweiterungen und Updates** aus.
+::: moniker range="vs-2017"
 
-2. Erweitern Sie **Online** > **Visual Studio Marketplace** > **Extras**. Wählen Sie **Test** aus.
+1. Wählen Sie **Extras** > **Erweiterungen und Updates** aus.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie **Erweiterungen** > **Erweiterungen verwalten** aus.
+
+::: moniker-end
+
+2. Erweitern Sie **Online** > **Visual Studio Marketplace** > **Extras**, und wählen Sie dann **Testing** aus.
 
 3. Suchen Sie das Framework in der Liste.
 
