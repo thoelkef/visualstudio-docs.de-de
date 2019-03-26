@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953996"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415966"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Vorgehensweise: Erweitern des DSL-Designers
 
@@ -26,15 +26,13 @@ Richten Sie ein Projekt, das den Code Ihrer Erweiterung enthält, und ein VSIX-P
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Erstellen Sie eine DSL-Designer-Erweiterungsprojektmappe
 
-1.  Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.
+1.  Erstellen Sie ein neues Projekt mit der **Klassenbibliothek** Projektvorlage. Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
 
-     Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
-
-2.  Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.
+2.  Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
      Wählen Sie **zu Projektmappe hinzufügen**.
 
-     "Source.Extension.vsixmanifest", die im VSIX-manifest-Editor wird geöffnet.
+     *"Source.Extension.vsixmanifest"* im VSIX-manifest-Editor wird geöffnet.
 
 3.  Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.
 

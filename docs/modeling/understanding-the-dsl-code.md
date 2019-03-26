@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928282"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416018"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
+
 Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
 
 ## <a name="the-example-solution-component-diagrams"></a>In der beispiellösung: Komponentendiagramme
- Zum Erstellen der Projektmappe, die die Quelle für die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der **Komponentenmodelle** Projektmappe (Vorlage). Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
+
+Zum Erstellen der Projektmappe, die die Quelle für die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der **Komponentenmodelle** Projektmappe (Vorlage). Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
 
 > [!NOTE]
->  Die Komponente Diagramme DSL-Vorlage bezieht sich nicht auf den UML-Komponentendiagrammen, die Sie mit dem Menü "Architektur" in Visual Studio erstellen können. In der **neues Projekt** Dialogfeld erweitern Sie **andere projekttypen\erweiterungen** , und klicken Sie dann auf **domänenspezifischen Sprachdesigner**.
+> Die Komponente Diagramme DSL-Vorlage wird aufgerufen, **domänenspezifischen Sprachdesigner**.
 
- Drücken Sie F5, und experimentieren Sie, wenn Sie mit dieser Projektmappenvorlage nicht vertraut sind. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
+Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvorlage nicht auskennen. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
 
- ![Komponenten und verbundene Ports](../modeling/media/componentsample.png)
+![Komponenten und verbundene Ports](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktur der DSL-Projektmappe
  Die **Dsl** -Projekt definiert die API für Ihre DSL. Die **DslPackage** Projekt definiert, wie sie mit Visual Studio integriert. Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
