@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919871"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416205"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Sie können eine Store-Regel, um eine Änderung von einem Element zu einem anderen im Visualisierungs- und Modellierungs-SDK (VMSDK) weitergegeben werden erstellen. Wenn eine Änderung auf ein Element in der Store erfolgt, werden Regeln ausgeführt werden, in der Regel, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzugefügt oder gelöscht wird. Sie können Regeln auf bestimmte Typen von Elementen, Formen und Diagrammen anfügen. Viele integrierte Features durch Regeln definiert werden: z. B. Regeln stellen sicher, dass ein Diagramm aktualisiert wird, wenn das Modell geändert wird. Sie können Ihrer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.
@@ -212,4 +212,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Siehe auch
 
 - [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-- [BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)

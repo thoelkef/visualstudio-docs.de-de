@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949420"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415680"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
 Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Befehle zum Diagramm hinzufügen und indem eine Reaktion auf Gesten wie etwa bei Drag & Drop-, Klick- oder Doppelklickereignissen vorgesehen wird.
@@ -27,9 +27,7 @@ Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Bef
 
 -   [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -zulassen, dass Ihre Benutzer über ein Element in ein anderes Element klicken Sie auf, die darauf verweist.
 
--   [Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Anpassen von Elementtools](../modeling/customizing-element-tools.md)
+-   [Vorgehensweise: Zugreifen auf die aktuelle Auswahl und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Siehe auch
 

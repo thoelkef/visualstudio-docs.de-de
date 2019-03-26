@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927879"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416421"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
-Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Auswählen einer Vorlagenprojektmappe
- Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
+Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio-Erweiterung entwicklungsworkload (einschließlich Visual Studio SDK)
+- Modellierungs-SDK (Installieren Sie sie als einzelne Komponente in Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projektmappe mithilfe der Projektvorlage einer domänenspezifischen Sprache.
 
- Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projektmappe mithilfe der Projektvorlage einer domänenspezifischen Sprache.
+### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe
 
-#### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe
+1. Erstellen Sie ein neues **Domain-Specific Languge** Projekt.
 
-1. Erstellen Sie eine Projektmappe mit der **Domain-Specific Languge** Vorlage, die finden Sie unter **andere Projekttypen/Erweiterbarkeit** in die **neues Projekt** Dialogfeld.
+   ::: moniker range="vs-2017"
 
-    ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
+    ![Dialogfeld "DSL erstellen"](../modeling/media/create_dsldialog.png)
 
-    Beim Klicken auf **OK**, **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.
+   ::: moniker-end
+
+    Die **Domain-Specific Language Assistenten** wird geöffnet und zeigt eine Liste der Vorlagen-DSL-Projektmappen.
 
 2. Klicken Sie auf die einzelnen Vorlagen, um eine Beschreibung anzuzeigen. Wählen Sie die Projektmappe aus, die Ihren Vorstellungen am nächsten kommt.
 
@@ -606,7 +607,7 @@ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten di
  Weitere Information finden Sie unter [How to: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Problembehandlung bei
- In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Forum zur Erweiterbarkeit von Visualisierung Tools](http://go.microsoft.com/fwlink/?LinkId=186074).
+ In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Visualisierung Tools Extensibility Forum](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Problem | Vorschlag |

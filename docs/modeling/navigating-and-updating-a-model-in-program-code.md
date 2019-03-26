@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950148"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416235"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
@@ -27,7 +27,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
 
  Dieses Modell ist eine Instanz dieser DSL:
 
- ![Tudor-Stammstrukturmodell](../modeling/media/tudor_familytreemodel.png)
+ ![Tudor-Stammbaummodell](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Verweise und Namespaces
  Um den Code in diesem Thema auszuführen, sollten Sie Folgendes verweisen:
@@ -226,27 +226,28 @@ using (Transaction t =
   Wenn Sie ein Element auf diese Weise erstellen, ein Connector im Diagramm wird automatisch erstellt, aber es verfügt über eine Standardform, Farbe und andere Funktionen. Um zu steuern, wie die zugeordnete Connector erstellt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).
 
 ##  <a name="deleteelements"></a> Löschen von Elementen
- Löschen eines Elements durch den Aufruf `Delete()`:
 
- `henry.Delete();`
+Löschen eines Elements durch den Aufruf `Delete()`:
 
- Dieser Vorgang wird auch gelöscht werden:
+`henry.Delete();`
+
+Dieser Vorgang wird auch gelöscht werden:
 
 - Beziehungslinks in und aus dem Element. Z. B. `edward.Parents` wird nicht mehr enthalten `henry`.
 
 - Elemente an den Rollen für die die `PropagatesDelete` Flag "true" ist. Beispielsweise wird die Form, die das Element anzeigt, gelöscht werden.
 
-  Standardmäßig verfügt jede einbettenden Beziehung `PropagatesDelete` an die Zielrolle "true". Löschen von `henry` löscht keine der `familyTree`, aber `familyTree.Delete()` würde, löschen Sie alle der `Persons`. Weitere Informationen finden Sie unter [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md).
+Standardmäßig verfügt jede einbettenden Beziehung `PropagatesDelete` an die Zielrolle "true". Löschen von `henry` löscht keine der `familyTree`, aber `familyTree.Delete()` würde, löschen Sie alle der `Persons`.
 
-  In der Standardeinstellung `PropagatesDelete` gilt nicht für die Rollen der verweisbeziehungen.
+In der Standardeinstellung `PropagatesDelete` gilt nicht für die Rollen der verweisbeziehungen.
 
-  Sie können veranlassen, dass die Löschregeln, um bestimmte zur Weitergabe von Würmern zu unterdrücken, wenn Sie ein Objekt löschen. Dies ist hilfreich, wenn Sie ein Element für eine andere ersetzt werden. Geben Sie an die GUID des eine oder mehrere Rollen, die für die Löschung nicht weitergegeben werden soll. Die GUID kann von Relationship-Klasse abgerufen werden:
+Sie können veranlassen, dass die Löschregeln, um bestimmte zur Weitergabe von Würmern zu unterdrücken, wenn Sie ein Objekt löschen. Dies ist hilfreich, wenn Sie ein Element für eine andere ersetzt werden. Geben Sie an die GUID des eine oder mehrere Rollen, die für die Löschung nicht weitergegeben werden soll. Die GUID kann von Relationship-Klasse abgerufen werden:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Dieses spezielle Beispiel würde wirken sich nicht, da `PropagatesDelete` ist `false` für Rollen die `ParentsHaveChildren` Beziehung.)
+(Dieses spezielle Beispiel würde wirken sich nicht, da `PropagatesDelete` ist `false` für Rollen die `ParentsHaveChildren` Beziehung.)
 
-  In einigen Fällen wird ein Löschen verhindert, durch das Vorhandensein einer Sperre, die auf das Element oder auf ein Element, das von der Verteilung gelöscht werden würde. Sie können `element.CanDelete()` zu überprüfen, ob das Element gelöscht werden kann.
+In einigen Fällen wird ein Löschen verhindert, durch das Vorhandensein einer Sperre, die auf das Element oder auf ein Element, das von der Verteilung gelöscht werden würde. Sie können `element.CanDelete()` zu überprüfen, ob das Element gelöscht werden kann.
 
 ##  <a name="deletelinks"></a> Löschen von Beziehungslinks
  Sie können einen Beziehungslink löschen, durch das Entfernen eines Elements aus einer Rolleneigenschaft:

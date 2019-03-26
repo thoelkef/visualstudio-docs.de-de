@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936940"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416188"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mit speziellen Visual Studio-Projektmappe erstellt.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
- Bevor Sie dieses Verfahren starten können, müssen Sie zunächst diese Komponenten installieren:
 
+Bevor Sie dieses Verfahren starten können, werden installieren Sie diese Komponenten:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (als Teil der **Visual Studio-extensionentwicklung** arbeitsauslastung)
+- Modellierungs-SDK (als Visual Studio-Komponente installiert)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Lösung einer domänenspezifischen Sprache
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Zum Erstellen einer Lösung einer domänenspezifischen Sprache
+1. Die DSL-Assistenten starten, indem Sie beim Erstellen eines neuen **domänenspezifischen Sprachdesigner** Projekt.
 
-1. Starten Sie die DSL-Assistenten.
+   > [!NOTE]
+   > Idealerweise sollte der Name, den Sie für das Projekt auswählen ein gültiger Visual C# Bezeichner, weil sie zum Generieren von Code verwendet werden kann.
 
-   1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+   ::: moniker range="vs-2017"
 
-   2. Das Dialogfeld **Neues Projekt** wird angezeigt.
+   ![Dialogfeld "DSL erstellen"](../modeling/media/create_dsldialog.png)
 
-   3. Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.
-
-   4. Klicken Sie auf **domänenspezifischen Sprachdesigner**.
-
-   5. In der **Namen** geben einen Namen für die Lösung. Klicken Sie auf **OK**.
-
-       Die **Domain-Specific Language-Designer-Assistenten** angezeigt wird.
-
-      > [!NOTE]
-      >  Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.
-
-      ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Wählen Sie eine DSL-Vorlage.
 

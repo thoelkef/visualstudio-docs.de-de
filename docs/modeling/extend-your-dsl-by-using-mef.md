@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939618"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415576"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -117,15 +117,15 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
 
 Ihre DSL ist jetzt die MEF-aktiviert. Sie können Menübefehle, Gesten Handler und validierungseinschränkungen als MEF-Erweiterungen schreiben. Sie können diese Erweiterungen in der DSL-Projektmappe zusammen mit anderem benutzerdefinierten Code schreiben. Darüber hinaus können Sie oder andere Entwickler separate Visual Studio-Erweiterungen schreiben, die Ihre DSL zu erweitern.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Erstellen einer Erweiterung für eine DSL mit MEF-aktiviert
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Erstellen Sie eine Erweiterung für eine DSL mit MEF-aktiviert
 
 Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine andere Person erstellt haben, können Sie Erweiterungen dafür schreiben. Die Erweiterungen können verwendet werden, um Menübefehle, Gesten-Handler oder validierungseinschränkungen hinzuzufügen. Um diese Erweiterungen zu erstellen, verwenden Sie Visual Studio-Erweiterung (VSIX)-Projektmappe. Die Lösung besteht aus zwei Teilen: einem Klassenbibliotheksprojekt, das die Code-Assembly erstellt, und ein VSIX-Projekt, mit der die Assembly verpackt.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
+### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
 
-1. Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **Klassenbibliothek**.
+1. Erstellen Sie ein neues **Klassenbibliothek** Projekt.
 
-2. Fügen Sie einen Verweis auf die Assembly der DSL, in das neue Klassenbibliotheksprojekt.
+2. Fügen Sie in das neue Projekt einen Verweis auf die Assembly der DSL aus.
 
    - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
 
@@ -145,9 +145,9 @@ Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine ander
 
    -   System.Windows.Forms.dll
 
-4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.
+4. Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
-5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**.
 
 6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
 

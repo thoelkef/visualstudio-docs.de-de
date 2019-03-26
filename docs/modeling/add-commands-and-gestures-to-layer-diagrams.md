@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983844"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415472"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
@@ -30,25 +30,21 @@ Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Stu
 
 Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).
 
-## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Definieren eines Befehls oder einer Geste in einer neuen VSIX
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definieren eines Befehls oder einer Geste in einer neuen VSIX
 
 Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstellen. Dabei werden der Code und die VSIX im selben Projekt platziert.
 
-### <a name="to-define-an-extension-by-using-a-project-template"></a>So definieren Sie mithilfe einer Projektvorlage eine Erweiterung
+1. Erstellen Sie ein neues **Layer Designer Command Extension** oder **Layer Designer-Gestenerweiterung** Projekt.
 
-1. Erstellen Sie in einer neuen Projektmappe ein Projekt. Verwenden Sie dazu den Befehl **Neues Projekt** im Menü **Datei** .
+   Mit dieser Vorlage wird ein Projekt mit einem kleinen Arbeitsbeispiel erstellt.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Modellierungsprojekte**entweder **Layer Designer Command Extension** (Ebenen-Designer - Befehlserweiterung) oder **Layer Designer Command Extension**(Ebenen-Designer - Gestenerweiterung) aus.
-
-    Mit dieser Vorlage wird ein Projekt mit einem kleinen Arbeitsbeispiel erstellt.
-
-3. Um die Erweiterung zu testen, indem Sie **STRG**+**F5** oder **F5**.
+2. Um die Erweiterung zu testen, indem Sie **STRG**+**F5** oder **F5**.
 
     Eine experimentelle Instanz von Visual Studio wird gestartet. Erstellen Sie in diesem Fall ein Abhängigkeitsdiagramm. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.
 
-4. Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+3. Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode.
 
-5. Sie können dem gleichen Projekt mehrere Befehls- oder Gestenhandler hinzufügen. Weitere Informationen finden Sie in einem der folgenden Abschnitte:
+4. Sie können dem gleichen Projekt mehrere Befehls- oder Gestenhandler hinzufügen. Weitere Informationen finden Sie in einem der folgenden Abschnitte:
 
     [Definieren eines Menübefehls](#command)
 
@@ -56,46 +52,40 @@ Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstelle
 
 ::: moniker range="vs-2017"
 
-6. Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer installieren, suchen die *VSIX* Datei die *Bin* Verzeichnis. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Wählen Sie zum Deinstallieren der Datei **Erweiterungen und Updates** auf die **Tools** Menü.
+5. Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer installieren, suchen die *VSIX* Datei die *Bin* Verzeichnis. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Wählen Sie zum Deinstallieren der Datei **Erweiterungen und Updates** auf die **Tools** Menü.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer installieren, suchen die *VSIX* Datei die *Bin* Verzeichnis. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Wählen Sie zum Deinstallieren der Datei **Verwalten von Erweiterungen** auf die **Erweiterungen** Menü.
+5. Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer installieren, suchen die *VSIX* Datei die *Bin* Verzeichnis. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Wählen Sie zum Deinstallieren der Datei **Verwalten von Erweiterungen** auf die **Erweiterungen** Menü.
 
 ::: moniker-end
 
-## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Hinzufügen eines Befehls oder einer Geste zu einem separaten VSIX
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Hinzufügen eines Befehls oder einer Geste zu einer separaten VSIX
 
 Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelemente und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen.
 
-### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>So fügen Sie einer separaten VSIX Ebenenerweiterungen hinzu
+1. Erstellen Sie ein neues **Klassenbibliothek** Projekt. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.
 
-1.  Erstellen Sie in einer neuen oder vorhandenen Visual Studio-Projektmappe ein Klassenbibliotheksprojekt. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual C#** , und klicken Sie dann auf **Klassenbibliothek**. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.
+   > [!NOTE]
+   > Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.
 
-    > [!NOTE]
-    > Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.
+2. Hinzufügen oder ein VSIX-Projekt in der Projektmappe zu erstellen. Ein VSIX-Projekt enthält eine Datei mit dem Namen **"Source.Extension.vsixmanifest"**.
 
-2.  Identifizieren oder erstellen Sie ein VSIX-Projekt in der Projektmappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**. So fügen Sie ein VSIX-Projekt:
+3. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**.
 
-    1.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#**, und klicken Sie auf **Erweiterungen**und anschließend auf **VSIX Project**.
+4. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.
 
-    2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das VSIX-Projekt, und klicken Sie anschließend auf **Als Startprojekt festlegen**.
+    1. Wählen Sie auf der Registerkarte **Objekte**die Option **Neu**aus.
 
-    3.  Klicken Sie auf **Editionen auswählen** , und stellen Sie sicher, dass **Visual Studio** aktiviert ist.
+    2. Wählen Sie bei **Typ**die Option **Microsoft.VisualStudio.MefComponent**aus.
 
-3.  Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.
+    3. Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
 
-    1.  Wählen Sie auf der Registerkarte **Objekte**die Option **Neu**aus.
+    4. Speichern Sie die Datei.
 
-    2.  Wählen Sie bei **Typ**die Option **Microsoft.VisualStudio.MefComponent**aus.
-
-    3.  Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
-
-    4.  Speichern Sie die Datei.
-
-4.  Zum Befehls- oder Gestenhandlerprojekts Handlerprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:
+5. Zum Befehls- oder Gestenhandlerprojekts Handlerprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:
 
    |**Verweis**|**Optionen**|
    |-|-|
@@ -106,17 +96,17 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
    |Microsoft.VisualStudio.Modeling.Sdk.[Version]|Definieren von Modellierungserweiterungen|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]|Aktualisieren von Formen und Diagrammen|
 
-5.  Bearbeiten Sie die Klassendatei im C#-Klassenbibliotheksprojekt so, dass sie den Code für die Erweiterung enthält. Weitere Informationen finden Sie in einem der folgenden Abschnitte:
+6. Bearbeiten Sie die Klassendatei im C#-Klassenbibliotheksprojekt so, dass sie den Code für die Erweiterung enthält. Weitere Informationen finden Sie in einem der folgenden Abschnitte:
 
      [Definieren eines Menübefehls](#command)
 
      [Definieren eines Gestenhandlers](#gesture)
 
-     Siehe auch [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+7. Um das Feature zu testen, drücken Sie die **STRG**+**F5** oder **F5**.
 
-6.  Um das Feature zu testen, drücken Sie die **STRG**+**F5** oder **F5**. Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen Sie in diesem Fall oder öffnen Sie ein Abhängigkeitsdiagramm aus.
+   Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen Sie in diesem Fall oder öffnen Sie ein Abhängigkeitsdiagramm aus.
 
-7.  Um die VSIX-Datei in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei die **Bin** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
+8. Um die VSIX-Datei in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei die **Bin** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei im Datei-Explorer.
 
 ##  <a name="command"></a> Definieren eines Menübefehls
 
@@ -149,8 +139,6 @@ Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefeh
    `...`
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
-
-Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 Erstellen Sie zum Hinzufügen eines neuen Befehls eine neue Codedatei, die das folgende Beispiel enthält. Testen und bearbeiten Sie das Beispiel dann.
 
@@ -275,5 +263,4 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md)
 - [Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355788"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415695"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateien in Ihrem Visual Studio-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -34,13 +34,9 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
  Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, sowie Programmcode, der Variablenteile des Texts generiert. Der Programmcode können Sie wiederholen oder das bedingte Auslassen von Teilen des generierten Texts. Der generierte Text selbst kann Programmcode sein, der einen Teil der Anwendung bildet.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Erstellen einer T4-Textvorlage für die Entwurfszeit
+## <a name="create-a-design-time-t4-text-template"></a>Erstellen Sie eine Entwurfszeit-T4-Textvorlage
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>So erstellen Sie eine T4-Vorlage für die Entwurfszeit in Visual Studio
-
-1. Erstellen Sie ein Visual Studio-Projekt, oder öffnen Sie eine vorhandene Ressourcengruppe.
-
-    Z. B. auf die **Datei** Menü wählen **neu** > **Projekt**.
+1. Erstellen Sie ein neues Visual Studio-Projekt, oder öffnen Sie eine vorhandene Ressourcengruppe.
 
 2. Ihr Projekt eine Textvorlagendatei hinzu, und geben sie einen Namen mit der Erweiterung **TT**.
 
@@ -70,10 +66,11 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 6. In **Projektmappen-Explorer**, erweitern Sie den Vorlagendateiknoten und sehen Sie eine Datei mit der Erweiterung **.txt**. Die Datei enthält den Text, der von der Vorlage generiert wird.
 
    > [!NOTE]
-   >  Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.
+   > Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.
 
-### <a name="regenerating-the-code"></a>Erneutes Generieren des Codes
- In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete Datei generiert wird:
+### <a name="regenerate-the-code"></a>Erneutes Generieren des Codes
+
+In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete Datei generiert wird:
 
 - Bearbeiten Sie die Vorlage aus, und klicken Sie dann den Fokus auf ein anderes Visual Studio-Fenster.
 
@@ -83,12 +80,11 @@ Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateie
 
 - In **Projektmappen-Explorer**, im Kontextmenü der Datei, wählen Sie **benutzerdefiniertes Tool ausführen**. Verwenden Sie diese Methode, um eine ausgewählte Untergruppe von Vorlagen zu transformieren.
 
-  Sie können auch ein Visual Studio-Projekt festlegen, damit die Vorlagen ausgeführt werden, wenn sich die Datendateien, die sie lesen geändert haben. Weitere Informationen finden Sie unter [automatisches erneutes Generieren des Codes](#Regenerating).
+Sie können auch ein Visual Studio-Projekt festlegen, damit die Vorlagen ausgeführt werden, wenn sich die Datendateien, die sie lesen geändert haben. Weitere Informationen finden Sie unter [automatisches erneutes Generieren des Codes](#Regenerating).
 
-## <a name="generating-variable-text"></a>Generieren von Variablentext
- Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe von Programmcode zu verändern.
+## <a name="generate-variable-text"></a>Generieren von Variablentext
 
-#### <a name="to-generate-text-by-using-program-code"></a>So generieren Sie Text mithilfe von Programmcode
+Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe von Programmcode zu verändern.
 
 1. Ändern des Inhalts der `.tt`-Datei:
 

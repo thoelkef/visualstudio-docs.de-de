@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222882"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415810"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222882"
 
 ## <a name="define-an-activity-delegate"></a>Definieren eines Aktivitätsdelegaten
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
-
-2. In der **neues Projekt** wählen Sie im Dialogfeld die **Workflow** Kategorie auf der linken Seite, und wählen Sie dann die **Konsolenanwendung für Workflows** Projektvorlage. Nennen Sie das Projekt (falls gewünscht), und klicken Sie auf **Ok**.
+1. Erstellen Sie ein neues **Konsolenanwendung für Workflows** Projekt.
 
    > [!NOTE]
-   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Wenn Sie nicht sehen die **Workflow** -Projektvorlagen, installieren Sie zuerst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie die **Workflow** Kategorie, und wählen Sie dann die **Aktivität** Elementvorlage. Nennen Sie die neue Aktivität **MyForEach.xaml** und wählen Sie dann **OK**.
 

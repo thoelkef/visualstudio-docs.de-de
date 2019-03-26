@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525452"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415056"
 ---
 # <a name="how-to-edit-xml-files"></a>Vorgehensweise: Bearbeiten von XML-Dateien
 
@@ -22,49 +22,63 @@ Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenstä
 > [!NOTE]
 > XHTML-Dokumente werden vom HTML-Editor behandelt.
 
-## <a name="to-edit-an-xml-file"></a>So bearbeiten Sie eine XML-Datei
+Um eine XML-Datei zu bearbeiten, doppelklicken Sie auf die Datei, die Sie bearbeiten möchten.
 
-1.  Doppelklicken Sie auf die Datei, die Sie bearbeiten möchten.
+## <a name="add-a-new-xml-file-to-a-project"></a>Fügen Sie eine neue XML-Datei zu einem Projekt
 
-### <a name="to-add-a-new-xml-file-to-a-project"></a>So fügen Sie einem Projekt eine neue XML-Datei hinzu
+1. Von der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.
 
-1.  Von der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.
+2. Wählen Sie **XML-Datei** aus der **Vorlagen** Bereich.
 
-2.  Wählen Sie **XML-Datei** aus der **Vorlagen** Bereich.
+3. Geben Sie den Dateinamen in der **Namen** Feld, und drücken Sie **hinzufügen**.
 
-3.  Geben Sie den Dateinamen in der **Namen** Feld, und drücken Sie **hinzufügen**.
+   Die XML-Datei wird dem Projekt hinzugefügt und wird in der XML-Editor geöffnet. Die Datei enthält die XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8" ?>`.
 
-     Die XML-Datei wird dem Projekt hinzugefügt und im XML-Editor geöffnet. Die Datei enthält die XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8" ?>`.
+## <a name="add-an-existing-xml-file-to-a-project"></a>Hinzufügen einer vorhandenen XML-Datei zu einem Projekt
 
-## <a name="to-add-an-existing-xml-file-to-a-project"></a>So fügen Sie einem Projekt eine vorhandene XML-Datei hinzu
+1. Von der **Projekt** , wählen Sie im Menü **vorhandenes Element hinzufügen**.
 
-1.  Von der **Projekt** , wählen Sie im Menü **vorhandenes Element hinzufügen**.
+   Die **vorhandenes Element hinzufügen** Dialogfeld wird angezeigt.
 
-     Die **vorhandenes Element hinzufügen** Dialogfeld wird angezeigt.
+2. Wählen Sie eine XML-Datei, und drücken Sie **hinzufügen**.
 
-2.  Wählen Sie eine XML-Datei, und drücken Sie **hinzufügen**.
+## <a name="create-a-new-xml-or-xslt-file"></a>Erstellen Sie eine neue XML- oder XSLT-Datei
 
-## <a name="to-create-a-new-xml-or-xslt-file"></a>So erstellen Sie eine neue XML- oder XSLT-Datei
+1. Von der **Datei** , wählen Sie im Menü **neu**.
 
-1.  Von der **Datei** , wählen Sie im Menü **neu**.
+   Die **neue Datei** Dialogfeld wird angezeigt.
 
-     Die **neue Datei** Dialogfeld wird angezeigt.
+2. Wählen Sie **XML-Datei** , erstellen eine neue XML-Datei, oder wählen Sie **XSLT-Datei** um ein neues XSLT-Stylesheet zu erstellen.
 
-2.  Wählen Sie **XML-Datei** , erstellen eine neue XML-Datei, oder wählen Sie **XSLT-Datei** um ein neues XSLT-Stylesheet zu erstellen.
+3. Klicken Sie auf **Öffnen**.
 
-3.  Klicken Sie auf **Öffnen**.
+## <a name="create-an-empty-project-for-xml-files"></a>Erstellen Sie ein leeres Projekt für XML-Dateien
 
-## <a name="to-create-a-project-for-xml-files"></a>So erstellen Sie ein Projekt für XML-Dateien
+::: moniker range="vs-2017"
 
-1.  Von der **Datei** , wählen Sie im Menü **neu**, und wählen Sie dann **Projekt**.
+1. Von der **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+   Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-2.  Wählen Sie die Codesprache Ihrer Wahl wählen **leeres Projekt**, und klicken Sie auf **OK**.
+2. Wählen Sie die Codesprache Ihrer Wahl wählen **leeres Projekt**.
 
-3.  Fügen Sie dem Projekt XML-Dateien hinzu.
+3. Klicken Sie auf **OK**.
 
-     Der XML-Editor sucht die Schemas, die Sie diesem Projekt hinzu und verwendet sie für die Validierung und IntelliSense-Funktionen in jeder XML-, Schema oder XSLT-Dateien, die Sie bearbeiten, während das Projekt geöffnet ist.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Von der **Datei** , wählen Sie im Menü **neu** > **Projekt**.
+
+2. Geben Sie **leeres Projekt** wählen Sie in das Suchfeld Vorlage die **leeres Projekt ((.NET Framework)** Vorlage, und klicken Sie dann auf **Weiter**.
+
+3. Klicken Sie auf **Erstellen**.
+
+::: moniker-end
+
+4. Fügen Sie dem Projekt XML-Dateien hinzu.
+
+   Der XML-Editor sucht die Schemas, die Sie diesem Projekt hinzu und verwendet sie für die Validierung und IntelliSense-Funktionen in jeder XML-, Schema oder XSLT-Dateien, die Sie bearbeiten, während das Projekt geöffnet ist.
 
 ## <a name="see-also"></a>Siehe auch
 
