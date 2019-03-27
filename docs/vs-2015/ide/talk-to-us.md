@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02320e4e47f98212d49d81e302510bce4573e685
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785938"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354855"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [wenden Sie sich an uns](https://docs.microsoft.com/visualstudio/ide/talk-to-us) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [wenden Sie sich an uns](https://docs.microsoft.com/visualstudio/ide/talk-to-us) auf docs.microsoft.com.  
 
   
 

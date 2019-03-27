@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619814a77b0bfaddc1c8c68213d050646a07e7e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721988"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324415"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Vorgehensweise: kennzeichnen und Kennzeichnung von Threads (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ Gekennzeichnete Threads werden auch in eine besondere Behandlung der **Thread** 
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf
 
 - In der **Threads** oder **parallele Überwachung** Fenster Suchen Sie den Thread, der Sie interessiert sind, und klicken Sie auf das Flaggensymbol klicken, aktivieren oder deaktivieren das Flag.
-- In der **parallele Stapel** , mit der rechten Maustaste auf einen Thread oder eine Gruppe von Threads, und wählen Sie im Fenster **Flag / <thread>**  oder **Flag / <thread>** .
+- In der **parallele Stapel** , mit der rechten Maustaste auf einen Thread oder eine Gruppe von Threads, und wählen Sie im Fenster **Flag / \<Thread >** oder **Flag / \<Thread >**.
 
 ### <a name="to-unflag-all-threads"></a>So heben Sie die Kennzeichnung aller Threads auf
 

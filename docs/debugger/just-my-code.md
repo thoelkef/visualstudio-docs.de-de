@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526775"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325330"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur mein Code Debuggen
 
@@ -115,7 +115,7 @@ Wenn der Debugger eine Ausnahme trifft, wird es, ob es im Benutzer- oder nicht-b
 Bei C++-Projekten können Sie angeben, die Module, Quelldateien und Funktionen der **Aufrufliste** Fenster als Nichtbenutzercode behandelt, durch Angabe im  *\*natjmc* Dateien. Diese Anpassung gilt auch für Code in Einzelschritten, wenn Sie den aktuellen Compiler verwenden (siehe [C++ nur mein Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Fügen Sie dem Ordner *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* die *NATJMC*-Datei hinzu, um Nichtbenutzercode aller Benutzer des Visual Studio-Computers anzugeben.
-- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natjmc* -Datei in die *%USERPROFILE%\My Dokumente\\<Visual Studio version>\Visualizers* Ordner.
+- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natjmc* -Datei in die *%USERPROFILE%\My Dokumente\\< Visual Studio-Version\>\Visualizers* Ordner.
 
 Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
 
@@ -165,7 +165,7 @@ Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
 In C++-Projekten können Sie angeben, Funktionen überspringen sind, indem sie als Nichtbenutzercode in auflisten  *\*natstepfilter* Dateien. In der aufgeführten Funktionen  *\*natstepfilter* Dateien sind nicht nur mein Code Einstellungen abhängig.
 
 - Um Nichtbenutzercode für alle lokalen Visual Studio-Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
-- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%USERPROFILE%\My Dokumente\\<Visual Studio version>\Visualizers* Ordner.
+- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%USERPROFILE%\My Dokumente\\< Visual Studio-Version\>\Visualizers* Ordner.
 
 Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 

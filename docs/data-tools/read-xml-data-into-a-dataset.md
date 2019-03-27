@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934145"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268534"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 
@@ -33,17 +33,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-In diesem Schritt erstellen Sie ein Visual Basic- oder Visual C# Projekt.
-
-1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
-
-2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
-
-3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
-
-4. Nennen Sie das Projekt **ReadingXML**, und wählen Sie dann **OK**.
-
-   Die **ReadingXML** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.
+Erstellen Sie ein neues **Windows Forms-App** Projekt entweder C# oder Visual Basic. Nennen Sie das Projekt **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generieren der XML-Datei in das Dataset gelesen werden
 
@@ -123,15 +113,15 @@ Da in dieser exemplarischen Vorgehensweise konzentriert sich auf das Lesen von X
 
 Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
--   Ein <xref:System.Windows.Forms.DataGridView> Steuerelement, das den Inhalt der XML-Datei als Daten anzeigt.
+- Ein <xref:System.Windows.Forms.DataGridView> Steuerelement, das den Inhalt der XML-Datei als Daten anzeigt.
 
--   Ein <xref:System.Windows.Forms.TextBox> Steuerelement, das das XML-Schema für die XML-Datei anzeigt.
+- Ein <xref:System.Windows.Forms.TextBox> Steuerelement, das das XML-Schema für die XML-Datei anzeigt.
 
--   Zwei <xref:System.Windows.Forms.Button> Steuerelemente.
+- Zwei <xref:System.Windows.Forms.Button> Steuerelemente.
 
-    -   Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.
+    - Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.
 
-    -   Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.
+    - Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.
 
 ### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu
 
@@ -139,11 +129,11 @@ Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
 2.  Von der **Toolbox**, ziehen Sie die folgenden Steuerelemente im Formular:
 
-    -   Eine <xref:System.Windows.Forms.DataGridView> Steuerelement
+    - Eine <xref:System.Windows.Forms.DataGridView> Steuerelement
 
-    -   Eine <xref:System.Windows.Forms.TextBox> Steuerelement
+    - Eine <xref:System.Windows.Forms.TextBox> Steuerelement
 
-    -   Zwei <xref:System.Windows.Forms.Button> Steuerelemente
+    - Zwei <xref:System.Windows.Forms.Button> Steuerelemente
 
 3.  Legen Sie die folgenden Eigenschaften fest:
 
@@ -220,9 +210,9 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 In dieser exemplarischen Vorgehensweise erfahren Sie, die Grundlagen der Einlesen einer XML-Datei in ein Dataset sowie das Erstellen eines Schemas, die basierend auf dem Inhalt der XML-Datei. Hier sind einige Aufgaben, die Sie als Nächstes tun können:
 
--   Bearbeiten Sie die Daten in das Dataset und das zurückschreiben können als XML. Weitere Informationen finden Sie unter <xref:System.Data.DataSet.WriteXml%2A>.
+- Bearbeiten Sie die Daten in das Dataset und das zurückschreiben können als XML. Weitere Informationen finden Sie unter <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank.
+- Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank.
 
 ## <a name="see-also"></a>Siehe auch
 

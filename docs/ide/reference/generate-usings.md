@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160640"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355184"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generieren von Using-Anweisungen in Visual Studio
 
@@ -22,7 +22,7 @@ Diese Codegenerierung gilt für:
 
 - C#
 
-**Beschreibung:** **Beschreibung:** Ermöglicht Ihnen das sofortige Hinzufügen erforderlicher Import- oder [Using-Anweisungen](/dotnet/csharp/language-reference/keywords/using-statement) für kopierten und eingefügten Code.
+**Beschreibung:** Ermöglicht Ihnen das sofortige Hinzufügen erforderlicher Import- oder [Using-Anweisungen](/dotnet/csharp/language-reference/keywords/using-statement) für kopierten und eingefügten Code.
 
 **Hintergrund:** Es ist üblich, Code aus anderen Dateien in Ihrem Projekt oder anderen Codequellen zu kopieren und in den Code einzufügen. Diese Schnellaktion analysiert fehlende Import-Anweisungen für Code, der kopiert und eingefügt wurde, und fordert Sie dann dazu auf, sie hinzuzufügen.
 

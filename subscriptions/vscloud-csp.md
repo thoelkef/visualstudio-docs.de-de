@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
 searchscope: VS Subscription
-ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842636"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323580"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -32,11 +32,12 @@ Sie müssen Ihren Kundenmandanten zunächst im Partner Center einrichten und ein
 [Weitere Informationen](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Wer kann Visual Studio-Abonnements erwerben?
+
 Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) für das Azure-Abonnement kann Visual Studio-Abonnements erwerben.
 
 ## <a name="how-to-buy"></a>Informationen zum Kauf
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Melden Sie sich im [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
 0. Klicken Sie auf **Kunden**, und wählen Sie einen Kunden aus, für den Sie einen Kauf durchführen möchten.
@@ -57,7 +58,7 @@ Sobald Sie den Kauf bestätigt haben, können Sie auf **Verwalten** klicken, um 
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Verwalten von Visual Studio-Cloudabonnements für Ihren Kunden
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Melden Sie sich in [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
 0. Klicken Sie auf **Kunden** und dann auf den Namen des Kunden.

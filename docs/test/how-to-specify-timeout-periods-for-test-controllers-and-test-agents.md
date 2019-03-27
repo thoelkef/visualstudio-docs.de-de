@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929231"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416096"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents
 
@@ -32,17 +32,17 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Die Anzahl von Sekunden, während der auf eine Pinganforderung des Agents gewartet wird, bevor die Verbindung als unterbrochen gilt.|"n" Sekunden.|
     |AgentSyncTimeoutInSeconds|Beim Starten eines synchronisierenden Testlaufs die Anzahl von Sekunden, während der auf die Synchronisierung aller Agents gewartet wird, bevor der Testlauf abgebrochen wird.|"n" Sekunden.|
-    |AgentInitializeTimeout|Die Anzahl von Sekunden, während der am Anfang eines Testlaufs auf die Initialisierung aller Agents und der zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standardeinstellung: "120" (zwei Minuten)|
-    |AgentCleanupTimeout|Die Anzahl von Sekunden, während der vor dem Abschließen des Testlaufs auf die Bereinigung aller Agents und zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standardeinstellung: "120" (zwei Minuten)|
+    |AgentInitializeTimeout|Die Anzahl von Sekunden, während der am Anfang eines Testlaufs auf die Initialisierung aller Agents und der zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120" (zwei Minuten)|
+    |AgentCleanupTimeout|Die Anzahl von Sekunden, während der vor dem Abschließen des Testlaufs auf die Bereinigung aller Agents und zugehörigen Datensammler gewartet wird. Dieser Wert muss bei Verwendung von Datensammlern ausreichend groß sein.|"n" Sekunden. Standard: "120" (zwei Minuten)|
 
 -   Test-Agent: *QTAgentService.exe.config*
 
     |Schlüsselname|Beschreibung|Wert|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standardeinstellung: "30" (dreißig Sekunden)|
-    |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standardeinstellung: "600" (zehn Minuten)|
-    |StopTestRunCallTimeoutInSeconds|Die Anzahl von Sekunden, während der auf den Aufruf zum Beenden des Testlaufs gewartet wird.|"n" Sekunden. Standardeinstellung: "120" (zwei Minuten)|
-    |GetCollectorDataTimeout|Die Anzahl von Sekunden, während der auf den Datensammler gewartet wird.|"n" Sekunden. Standardeinstellung: "300" (fünf Minuten)|
+    |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standard: "30" (dreißig Sekunden)|
+    |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standard: "600" (zehn Minuten)|
+    |StopTestRunCallTimeoutInSeconds|Die Anzahl von Sekunden, während der auf den Aufruf zum Beenden des Testlaufs gewartet wird.|"n" Sekunden. Standard: "120" (zwei Minuten)|
+    |GetCollectorDataTimeout|Die Anzahl von Sekunden, während der auf den Datensammler gewartet wird.|"n" Sekunden. Standard: "300" (fünf Minuten)|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>So geben Sie Agent-Timeoutoptionen für einen Testcontroller an
 
@@ -117,5 +117,4 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

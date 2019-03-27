@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06e723fc30bfde69344218beaca4e1c0b3c5d742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 281bdbb3ba974b3aacb9c349575727675bb59305
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804162"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354744"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Speicherintensive CompareTo-Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0011: Speicherintensive CompareTo-Funktionen](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0011: speicherintensive CompareTo-Funktionen](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) auf docs.microsoft.com.  
   
 |||  
 |-|-|  
