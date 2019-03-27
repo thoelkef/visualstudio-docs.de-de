@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069670"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323343"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 

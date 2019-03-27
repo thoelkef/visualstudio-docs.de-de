@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069865"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325080"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -74,7 +74,7 @@ Erstellen Sie ein neues WPF-Projekt zur Produktdatensätze.
 
 1. Öffnen Sie Visual Studio.
 
-2. Wählen Sie auf das Startfenster **Erstellen eines neuen Projekts**.
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
 3. Suchen Sie nach der C# **WPF-App** -Projektvorlage aus, und führen Sie die Schritte, um das Projekt, und benennen das Projekt erstellen **AdventureWorksProductsEditor**.
 

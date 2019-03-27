@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 568742f1ef59eeb282cdf167096310c658c01c50
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069618"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323265"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Erfahren Sie mehr über Projekte und Projektmappen mithilfe von Visual Basic
 
@@ -42,7 +42,7 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -60,11 +60,11 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter**.
+3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
 
-4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen**.
+4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
 
-   Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+   Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
 
 ::: moniker-end
 

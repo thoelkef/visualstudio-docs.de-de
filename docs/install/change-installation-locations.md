@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983896"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324973"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Auswählen der Installationspfade in Visual Studio
 
+::: moniker range="vs-2017"
+
 **Neuerungen in Version 15.7**: Sie können den Installationsspeicherbedarf von Visual Studio auf Ihrem Systemlaufwerk reduzieren, indem Sie den Speicherort für einige Dateien ändern. Genauer gesagt können Sie verschiedene Speicherorte für den Downloadcache, für freigegebene Komponenten, SDKs und Tools verwenden.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Sie können den Installationsspeicherbedarf von Visual Studio auf Ihrem Systemlaufwerk reduzieren, indem Sie den Speicherort für einige Dateien ändern. Genauer gesagt können Sie verschiedene Speicherorte für den Downloadcache, für freigegebene Komponenten, SDKs und Tools verwenden.
+
+::: moniker-end
 
    > [!NOTE]
    > Es gibt einige Tools und SDKs, für die andere Regeln dafür gelten, an welchem Speicherort sie installiert werden können. Diese Tools und SDKs werden auch auf Ihrem Systemlaufwerk installiert, wenn Sie einen anderen Speicherort auswählen.

@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780274"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355369"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimieren der Startzeit von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Im Idealfall sollte Visual Studio immer so schnell wie möglich starten. Allerdi
 
 ## <a name="control-startup-behavior"></a>Steuern des Startverhaltens
 
-Um das Verlängern der Startzeit zu verhindern, vermeidet Visual Studio 2017 das Laden von Erweiterungen beim Start mithilfe von Ladevorgängen bei Bedarf. Das bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später asynchron auf Bedarfsbasis geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
+Startzeit zu vermeiden, Visual Studio 2017 und höher zu vermeiden, Laden von Erweiterungen beim Start mit einem auf-Demand-Load-Ansatz. Das bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später asynchron auf Bedarfsbasis geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
 
 Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezeigt, die Sie auf die Erweiterung oder das Toolfenster hinweist, die bzw. das für die Verzögerung verantwortlich ist. Die Meldung enthält darüber hinaus eine Verknüpfung zum Dialogfeld **Visual Studio-Leistung verwalten**, in dem die Erweiterungen und Toolfenster aufgelistet sind, die sich auf die Leistung beim Start auswirken. In diesem Dialogfeld können Sie die Einstellungen für Erweiterungen und Toolfenster ändern, um die Leistung beim Start zu verbessern.
 

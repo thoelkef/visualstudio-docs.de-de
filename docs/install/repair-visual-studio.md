@@ -5,17 +5,19 @@ description: Hier erfahren Sie, wie Sie eine Installation von Visual Studio 2017
 ms.date: 01/15/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: PoulChapman
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 6412ec7416fa9c8e304fd70fc0a2e65262e0ef83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983202"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322170"
 ---
 # <a name="repair-visual-studio"></a>Reparieren Sie Visual Studio.
 

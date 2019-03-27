@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526736"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355162"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Remotedebuggen einer C# oder Visual Basic-Projekt in Visual Studio
 Um eine Visual Studio-Anwendung zu debuggen, die auf einem anderen Computer bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, in dem Sie Ihre app bereitgestellt haben, konfigurieren Sie das Projekt in Visual Studio eine Verbindung mit dem Remotecomputer und führen Sie die app.
@@ -71,7 +71,15 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
 5. Stellen Sie sicher, dass das Textfeld **Arbeitsverzeichnis** leer ist.
 
-6. Wählen Sie **Remotecomputer**, und geben **MJO-DL:4022** in das Textfeld ein. (4022 ist die Portnummer im Remotedebugger-Fenster angezeigt. Die Nummer des Ports erhöht die 2 in jeder Version von Visual Studio).
+6. Wählen Sie **Remotecomputer**, und geben **Yourmachinename:port** in das Textfeld ein. (Im Remotedebugger-Fenster wird die Nummer des Ports angezeigt. Die Nummer des Ports erhöht die 2 in jeder Version von Visual Studio).
+
+    In diesem Beispiel verwenden:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** 2019 für Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** für Visual Studio 2017
+    ::: moniker-end
 
 7. Stellen Sie sicher, dass **Debuggen von nativem Code aktivieren** nicht aktiviert ist.
 

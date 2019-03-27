@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952358"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325278"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
   * [MaxStack](#maxstack): Die maximale Größe des Stapels während eines einzigen Ausführungspfads, gemessen als Anzahl der aktiven Aufrufframes
-  * [MaxConditions](#maxconditions): Die maximale Anzahl von Bedingungen zu den Eingaben, die während eines einzelnen Ausführungspfads überprüft werden können<p />
+  * [MaxConditions](#maxconditions): Die maximale Anzahl von Bedingungen zu den Eingaben, die während eines einzelnen Ausführungspfads überprüft werden können
 * **Durchsuchungsbegrenzungen**
   * [MaxRuns](#maxruns): Die maximale Anzahl von Ausführungen, die während einer Durchsuchung versucht werden
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests): Die maximale Anzahl aufeinanderfolgender Ausführungen, ohne dass ein neuer Test ausgegeben wird
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths): Die maximale Anzahl von Ausführungen mit einem eindeutigen Ausführungspfad, die während einer Durchsuchung versucht werden
-  * [MaxExceptions](#maxexceptions): Die maximale Anzahl von Ausnahmen, die für eine Kombination aus allen gefundenen Ausführungspfade gefunden werden dürfen<p />
+  * [MaxExceptions](#maxexceptions): Die maximale Anzahl von Ausnahmen, die für eine Kombination aus allen gefundenen Ausführungspfade gefunden werden dürfen
 * **Einstellungen für die Codegenerierung von Testsammlungen**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded): Wenn TRUE, werden Ausführungspfade, die die Grenzen des Pfads überschreiten ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)) ignoriert.
   * [TestEmissionFilter](#testemissionfilter): Gibt an, unter welchen Umständen IntelliTest Tests ausgeben soll.

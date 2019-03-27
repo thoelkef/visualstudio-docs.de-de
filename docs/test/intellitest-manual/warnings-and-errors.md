@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925406"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324733"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925406"
   * [MaxCalls überschritten](#maxcalls-exceeded)
   * [MaxStack überschritten](#maxstack-exceeded)
   * [MaxRuns überschritten](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests überschritten](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests überschritten](#maxrunswithoutnewtests-exceeded)
 
 * **Auflösen von Einschränkung**
-  * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)<p />
+  * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)
 
 * **Domänen**
   * [Benötigen Sie Hilfe bei der Objekterstellung?](#help-construct)
   * [Benötigen Sie Hilfe beim Suchen von Typen?](#help-types)
-  * [Verwendbaren Typ erraten](#usable-type-guessed)<p />
+  * [Verwendbaren Typ erraten](#usable-type-guessed)
 
 * **Ausführung**
   * [Unerwarteter Fehler während der Durchsuchung](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentierung**
   * [Nicht instrumentierte aufgerufene Methode](#uninstrumented-method-called)
   * [Externe aufgerufene Methode](#external-method-called)
   * [Nicht instrumentierbare aufgerufene Methode](#uninstrumentable-method-called)
   * [Probleme mit der Testfähigkeit](#testability-issue)
-  * [Einschränkung](#limitation)<p />
+  * [Einschränkung](#limitation)
 
 * **Interpreter**
   * [Erkannter Aufrufkonflikt](#observed-call-mismatch)

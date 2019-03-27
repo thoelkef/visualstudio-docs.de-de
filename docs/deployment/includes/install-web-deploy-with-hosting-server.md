@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342498"
+---
 Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures für die Erstellung der Datei mit Veröffentlichungseinstellungen über die Benutzeroberfläche.
 
 1. Wenn Sie Web Deploy 3.6 bereits in Windows Server installiert haben, führen Sie über **Einstellungen** > **Programme** > **Uninstall a Program** (Programm deinstallieren) eine Deinstallation durch.
@@ -18,4 +26,4 @@ Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures f�
 
 4. (Optional) Überprüfen Sie, ob Web Deploy korrekt ausgeführt wird, indem Sie **Einstellungen > System and Security (System und Sicherheit) > Verwaltung > Dienste** öffnen und sich vergewissern, dass der **Webbereitstellungs-Agent-Dienst**  ausgeführt wird (in älteren Versionen ist dieser Dienst anders benannt).
 
-    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie **Microsoft Web Deploy<version>**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.
+    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn es nicht vorhanden ist, fahren Sie mit **Systemsteuerung > Programme > Programm deinstallieren**, finden Sie **Microsoft Web Deploy \<Version >**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.
