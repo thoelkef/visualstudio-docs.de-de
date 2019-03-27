@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709407"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476058"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio (C#, Visual Basic, C++)
 
@@ -62,23 +62,39 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 
 #### <a name="to-create-the-sample-project"></a>So erstellen Sie das Beispielprojekt
 
-1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-2. Wählen Sie entweder **Visual C#** , **Visual Basic**, oder **Visual C++**. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] angezeigt wird.
+    ::: moniker range=">=vs-2019"
+    Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+    
+    - Für C# oder Visual Basic, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** entweder C# oder Visual Basic. Wählen Sie im angezeigten Dialogfeld **erstellen**.
+    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen** für C++. Wählen Sie im angezeigten Dialogfeld **erstellen**.
 
-3. Klicken Sie unter **Windows Desktop**, wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).
+    Anschließend geben Sie einen Namen oder den Standardnamen verwenden und auf **erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld Wählen Sie die folgenden:
 
-4. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.
+    - Für eine C# app unter **Visual C#** , wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
+    - Für eine Visual Basic-app unter **Visual Basic**, wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
+    - Für eine C++-app unter **Visual C++**, wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
 
-5. Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.
+    Anschließend geben Sie einen Namen oder den Standardnamen verwenden und auf **OK**.
+    ::: moniker-end
+
+    Wenn Sie nicht sehen die **Konsolen-App** Projektvorlage, wechseln Sie zu **Tools** > **Tools und Features abrufen...** , dadurch wird die Visual Studio-Installer geöffnet. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+
+1. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.
+
+1. Fügen Sie den folgenden Code für die ausgewählte Sprache in die leere Codedatei ein.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. Klicken Sie im Menü **Datei** auf **Alle speichern**.
+1. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-7. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.
+1. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.
 
     Beachten Sie, dass es vier Aufrufe zu `Debugger.Break` (`DebugBreak` im C++-Beispiel) gibt. Daher müssen keine Haltepunkte eingefügt werden; wenn nur die Anwendung ausgeführt wird, hat dies bis zu vier Unterbrechungen im Debugger zur Folge.
 
