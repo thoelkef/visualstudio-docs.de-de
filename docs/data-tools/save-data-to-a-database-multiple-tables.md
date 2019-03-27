@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936615"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268558"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
 
@@ -31,17 +31,15 @@ Sie können Daten in der Anwendung wieder in der Datenbank speichern, indem Sie 
 
 In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
 
--   Erstellen eines neuen Projekts vom Typ **Windows Forms-Anwendung**.
+-  Erstellen und Konfigurieren einer Datenquelle in Ihrer Anwendung mit der [Assistenten zur Datenquellenkonfiguration](../data-tools/media/data-source-configuration-wizard.png).
 
--   Erstellen und Konfigurieren einer Datenquelle in Ihrer Anwendung mit der [Assistenten zur Datenquellenkonfiguration](../data-tools/media/data-source-configuration-wizard.png).
+-  Festlegen der Steuerelemente für die Elemente in der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window). Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Festlegen der Steuerelemente für die Elemente in der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window). Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-  Erstellen datengebundener Steuerelemente durch Ziehen von Elementen aus dem Fenster **Datenquellen** auf das Formular.
 
--   Erstellen datengebundener Steuerelemente durch Ziehen von Elementen aus dem Fenster **Datenquellen** auf das Formular.
+-  Ändern einige Datensätze in jeder Tabelle im Dataset.
 
--   Ändern einige Datensätze in jeder Tabelle im Dataset.
-
--   Ändern von Code zum Zurücksenden der aktualisierten Daten des Datasets an die Datenbank.
+-  Ändern von Code zum Zurücksenden der aktualisierten Daten des Datasets an die Datenbank.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -63,17 +61,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ## <a name="create-the-windows-forms-application"></a>Erstellen Sie die Windows Forms-Anwendung
 
-Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**. Während dieses Schritts ist ein Name zugewiesen, auf das Projekt optional, aber wir geben einen Namen, da wir das Projekt später gespeichert werden.
-
-1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
-
-2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
-
-3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
-
-4. Nennen Sie das Projekt **UpdateMultipleTablesWalkthrough**, und wählen Sie dann **OK**.
-
-     Das Projekt **UpdateMultipleTablesWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
+Erstellen Sie ein neues **Windows Forms-App** Projekt entweder C# oder Visual Basic. Nennen Sie das Projekt **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
 
@@ -89,11 +77,11 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
 4. Auf der **wählen Sie Ihre Datenverbindung** Bildschirm, führen Sie eine der folgenden:
 
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         - oder - 
 
-    -   Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
+    - Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
 
 5. Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.
 

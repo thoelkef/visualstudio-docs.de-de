@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764847"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324772"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
 
  Verwenden Sie zunächst **Debug** und **x86** als Buildkonfiguration bzw. Plattform. Wenn Sie mit dem Programmieren und Debuggen fertig sind, ändern Sie die Konfiguration in **Release**, und geben Sie die gewünschte Zielplattform an. (In älteren Versionen von Visual Studio wurde die Standardplattform **AnyCPU** für .NET-Codeprojekte bereitgestellt.)
 
- Hinweis: Wenn Sie das Projekt erstellen, werden die Werte für Konfiguration und Plattform auch verwendet, um den Verzeichnispfad des Projekts zum Speichern der ausführbaren Datei zu bestimmen. Normalerweise ist dies **\<Pfad-zum-Projekt>\\<Projektname>\\<Konfiguration\>\\<Plattform\>**. Beispielsweise würde sich ein Projekt mit der Konfiguration `Debug` und der Plattform `x86` unter `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` befinden. Dies kann hilfreich sein, wenn Sie eigene Tools oder Skripts zum Verwalten dieser ausführbaren Builddateien verwenden.
+ Hinweis: Wenn Sie das Projekt erstellen, werden die Werte für Konfiguration und Plattform auch verwendet, um den Verzeichnispfad des Projekts zum Speichern der ausführbaren Datei zu bestimmen. Normalerweise ist dies **\<Pfad-zum-Projekt>\\<Projektname\>\\<Konfiguration\>\\<Plattform\>**. Beispielsweise würde sich ein Projekt mit der Konfiguration `Debug` und der Plattform `x86` unter `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` befinden. Dies kann hilfreich sein, wenn Sie eigene Tools oder Skripts zum Verwalten dieser ausführbaren Builddateien verwenden.
 
 ### <a name="building-your-code"></a>Erstellen von Code
  Mit Ihrem konfigurierten Build können Sie nun das Projekt erstellen. Die einfachste Möglichkeit besteht darin, F7 zu drücken. Sie können den Build aber auch starten, indem Sie im Hauptmenü **Erstellen > Projektmappe erstellen** auswählen.
@@ -105,7 +105,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
  ![Visual Studio, Draufzeigen auf Warnungen in der Codeanalyse](../ide/media/vs-ide-gs-debug-code-analysis-warning-hover.png "vs_ide_gs_debug_code_analysis_warning_hover")
 
 ### <a name="using-light-bulbs-to-fix-or-refactor-code"></a>Verwenden von Glühbirnen zum Beheben oder Umgestalten von Code
- Glühbirnen sind ein neues Feature von Visual Studio 2015, mit dem Sie Code inline umgestalten können. Damit können allgemeine Warnungen schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die Wellenlinie einer Warnung (oder drücken Sie „STRG+.“, während Sie auf die Wellenlinie zeigen), und wählen Sie dann **Schnelle Aktionen** aus.
+ Glühbirnen sind eine neue Funktion von Visual Studio 2015, mit dem Sie Code inline umgestalten können. Damit können allgemeine Warnungen schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die Wellenlinie einer Warnung (oder drücken Sie „STRG+.“, während Sie auf die Wellenlinie zeigen), und wählen Sie dann **Schnelle Aktionen** aus.
 
  ![Visual Studio 2015, Glühbirne mit schnelloptionen](../ide/media/vs-ide-gs-debug-light-bulb1.png "Vs_ide_gs_debug_light_bulb1")
 
@@ -184,7 +184,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
  ![Visual Studio 2015-Diagnosetools-Fenster](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Ausführen von Komponententests
- Komponententests sind Programme, die Codepfade in Ihrer App oder Ihrem Dienst ausführen. Visual Studio 2015 enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Verwenden Sie ein Unittest-Framework, um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. Wenn Sie Visual Studio 2015 Enterprise verwenden, können die Tests automatisch nach jedem Build ausgeführt werden.
+ Komponententests sind Programme, die Codepfade in Ihrer App oder Ihrem Dienst ausführen. Visual Studio 2015 enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch nativen Code. Verwenden Sie ein Unittest-Framework, um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. Wenn Sie Visual Studio 2015 Enterprise verwenden, können die Tests automatisch nach jedem Build ausgeführt werden.
 
  Weitere Informationen finden Sie unter [Generieren intelligenter Komponententests für Ihren Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
