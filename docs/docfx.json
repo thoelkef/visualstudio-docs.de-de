@@ -95,7 +95,14 @@
     },
     "fileMetadata": {
       "open_to_public_contributors": {
-        "vs-2015/**/**.md": false
+        "vs-2015/**/**.md": false,
+        "code-quality/**/**.md": false,
+        "extensibility/**/**.md": false,
+        "modeling/**/**.md": false,
+        "sharepoint/**/**.md": false,
+        "vsto/**/**.md": false,
+        "workflow-designer/**/**.md": false,
+        "xml-tools/**/**.md": false
       },
       "ms.prod": {
         "rtvs/**/**.md": "visual-studio-dev15",
