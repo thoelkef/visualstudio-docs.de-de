@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914473"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515232"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppe von Codeanalyseregeln
 
-Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz gilt für ein Projekt, und es ist eine Gruppierung von Code Analyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden, oder nur die empfohlene Mindestregeln für eigene. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.
+Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz ist eine Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz anwenden, der entwickelt wurde, um Code auf öffentlich verfügbare APIs überprüft. Sie können auch einen Regelsatz anwenden, der alle verfügbaren Regeln enthält.
 
-Sie können einen Regelsatz durch Hinzufügen oder Löschen von Regeln oder durch Ändern der Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
+Sie können einen Regelsatz durch Regeln hinzufügen oder löschen oder ändern die Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
 
 Regelsätze stehen für [statische Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md), [Analyse von C++-Code](using-rule-sets-to-specify-the-cpp-rules-to-run.md), und [Roslyn-Analysetools](analyzer-rule-sets.md).
 
