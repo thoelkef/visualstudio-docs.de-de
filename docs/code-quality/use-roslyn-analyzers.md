@@ -1,6 +1,6 @@
 ---
 title: Regelschweregrad Analyzer und unterdrücken
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873501"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515336"
 ---
 # <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
@@ -46,12 +46,17 @@ Die Symbole neben jeder Diagnose in **Projektmappen-Explorer** entsprechen den S
 
 ## <a name="rule-sets"></a>Regelsätze
 
-Ein [Regelsatz](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) ist eine XML-Datei, die den Schweregrad und Unterdrücken von Status für die einzelnen-Diagnose speichert. Regelsätze gelten, in ein einzelnes Projekt, und ein Projekt kann mehrere Regelsätze aufweisen. Um den aktiven Regelsatz, der im Editor anzuzeigen, mit der Maustaste auf die **Analysen** Knoten **Projektmappen-Explorer** , und wählen Sie **öffnen aktiven Regelsatz**. In diesem ersten Sie greifen auf die Regel festlegen, eine Datei namens  *\<Projektname > ruleSet* wird dem Projekt hinzugefügt und wird im **Projektmappen-Explorer**.
+Ein [Regelsatz](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) ist eine XML-Datei, die den Schweregrad und Unterdrücken von Status für die einzelnen-Diagnose speichert.
 
 > [!NOTE]
-> Regelsätze gehören sowohl die Analyse von statischem (binären) Code als auch die Roslyn-Analyzer-Regeln.
+> Regelsätze können Regeln von Roslyn-Analysetools und Analyse von statischem (binären) Code enthalten.
 
-Sie können ändern, den aktiven Regelsatz für ein Projekt auf die **Codeanalyse** auf der Registerkarte Eigenschaften des Projekts. Wählen Sie den Regelsatz in der **diesen Regelsatz ausführen** Dropdown-Liste. Sie können auch den Regelsatz aus öffnen die **Codeanalyse** Eigenschaftenseite dazu **öffnen**.
+Um den aktiven Regelsatz, der in dem Regelsatz-Editor zu bearbeiten, mit der Maustaste auf die **Verweise** > **Analysen** Knoten **Projektmappen-Explorer** , und wählen Sie **Öffnen aktiven Regelsatz**. Ist dies beim ersten bearbeiten Sie den Regelsatz, Visual Studio erstellt eine Kopie der Standardregel, die Datei festlegen, das den Namen  *\<Projektname > ruleSet*, und fügt sie dem Projekt hinzu. Diese benutzerdefinierte Regel, die auch festgelegt wird, den aktiven Regelsatz, der für Ihr Projekt.
+
+Navigieren Sie zu, um den aktiven Regelsatz für ein Projekt zu ändern, die **Codeanalyse** auf der Registerkarte Eigenschaften des Projekts. Wählen Sie den Regelsatz aus der Liste unter **diesen Regelsatz ausführen**. Wählen Sie zum Öffnen des Regelsatzes **öffnen**.
+
+> [!NOTE]
+> .NET Core und .NET Standard-Projekte unterstützen nicht die Befehle im Menü aus, für die Regelsätze im **Projektmappen-Explorer**, z. B. **öffnen aktiven Regelsatz**. An einen nicht standardmäßigen Regelsatz für ein .NET Core oder .NET Standard-Projekt manuell [Hinzufügen der **CodeAnalysisRuleSet** Eigenschaft, um die Projektdatei](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Sie können die Regeln in der Regel in der Visual Studio festgelegt, dass die Regelsatz-Editor-Benutzeroberfläche konfigurieren.
 
 ## <a name="rule-severity"></a>Regelschweregrad
 
@@ -63,7 +68,7 @@ Sie können den Schweregrad der Analyzer-Regeln konfigurieren oder *Diagnose*, w
 |Warnung|Verletzungen angezeigt werden, als *Warnungen* in die **Fehlerliste** und in der Befehlszeile Buildausgabe, verursachen jedoch keine Builds fehlschlagen.|Problematische Code ist mit einem grünen durch ein kleines grünes Feld auf der Schiebeleiste markiert und Wellenlinien unterstrichen.|
 |Info|Verletzungen angezeigt werden, als *Nachrichten* in die **Fehlerliste**, und nicht in Build per Befehlszeile Ausgabe.|Problematische Code ist mit einem grau markiert, indem eine kleine graue Feld in der Bildlaufleiste und Wellenlinien unterstrichen.|
 |Hidden|Nicht sichtbare für Benutzer.|Nicht sichtbare für Benutzer. Die Diagnose wird jedoch an die IDE-Diagnose-Engine gemeldet.|
-|Keine|Unterdrückt vollständig.|Unterdrückt vollständig.|
+|Keiner|Unterdrückt vollständig.|Unterdrückt vollständig.|
 
 Darüber hinaus, Sie können "Zurücksetzen" des Schweregrads einer Regel durch Festlegung auf **Standard**. Jede Diagnose weist einen standardschweregrad, die in angezeigt werden die **Eigenschaften** Fenster.
 
@@ -79,7 +84,7 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 ![Die Regelsatzdatei im Projektmappen-Explorer](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Projektmappen-Explorer Schweregrad für Regelsatz festlegen
+### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen Sie Schweregrad für Regelsatz, im Projektmappen-Explorer
 
 1. In **Projektmappen-Explorer**, erweitern Sie **Verweise** > **Analysen** (**Abhängigkeiten**  >  **Analysen** für .NET Core-Projekte).
 
@@ -89,7 +94,7 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
    Der Schweregrad für die Regel wird in der aktiven Regelsatzdatei gespeichert.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Festzulegende Regel Regelsatzdatei Schweregrad in der Regel
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Festlegen Sie Schweregrad für Regelsatz, in der Regelsatzdatei
 
 1. Öffnen der [Regelsatz](analyzer-rule-sets.md) Datei durch Doppelklick im **Projektmappen-Explorer**, wählen **öffnen aktiven Regelsatz** auf das Kontextmenü des der **Analysen** Knoten, oder indem **öffnen** auf die **Codeanalyse** Eigenschaftenseite für das Projekt.
 
