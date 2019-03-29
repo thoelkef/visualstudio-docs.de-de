@@ -864,7 +864,7 @@ Web-App mit ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Mobile Entwicklung mit JavaScript</h3>
-                                                    <p>Erstellen Sie plattformübergreifende Anwendungen für iOS, Android oder Windows mithilfe des Apache Cordova-Frameworks.</p>
+                                                    <p>(Nur Visual Studio 2017 und Visual Studio 2015) Erstellen Sie mithilfe des Apache Cordova-Frameworks plattformübergreifende Anwendungen für iOS, Android oder Windows.</p>
                                                 </div>
                                             </div>
                                         </div>
