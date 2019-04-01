@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867886"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268570"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -39,35 +38,9 @@ Visual Studio bietet eine Auswahl von Projektvorlagen, die Sie beim Starten unte
 
 An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht unbedingt zum Entwickeln von Apps in Visual Studio benötigt werden. Sie können auch einfach nur den Code öffnen, den Sie aus Git geklont oder an anderer Stelle heruntergeladen haben. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-> [!NOTE]
-> Die Beschreibungen in diesem Thema basieren auf der Visual Studio Community-Edition. Die Dialogfelder und Menübefehle können von den hier beschriebenen abweichen (je nach Ihren aktiven Einstellungen oder der Visual Studio-Edition). Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
+## <a name="create-a-project-from-a-project-template"></a>Erstellen eines Projekts aus einer Projektvorlage
 
-## <a name="to-create-a-project-from-a-project-template"></a>Erstellen eines neuen Projekts aus einer Projektvorlage
-
-1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der **Startseite** den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste auf **Datei** > **Neu** > **Projekt** oder in der Symbolleiste auf die Schaltfläche **Neues Projekt** klicken.
-
-   ![Startseite](./media/vside-newproject1.png)
-
-   Die verfügbaren Projektvorlagen werden im Dialogfeld **Neues Projekt** in einer Liste unter der Kategorie **Vorlagen** angezeigt. Vorlagen werden nach Programmiersprachen und Projekttypen sortiert, z.B. Visual C#, JavaScript und Azure Data Lake.
-
-   ![Dialogfeld "Neues Projekt"](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > Der Aufbau der Liste der verfügbaren Sprachen und Projektvorlagen hängt von der Visual Studio-Version, die Sie ausführen, und den installierten Workloads ab. Informationen zum Installieren von zusätzlichen Workloads finden Sie unter [Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten](../install/modify-visual-studio.md).
-
-2. Klicken Sie auf das Dreieck neben dem Namen der Sprache, und wählen Sie dann einen Projekttyp aus, damit die Liste mit den Vorlagen angezeigt wird.
-
-   Im folgenden Beispiel werden die für Visual C# .NET Core-Projekte verfügbaren Projektvorlagen angezeigt.
-
-   ![Projektvorlagen](./media/new-project-dialog-net-core.png)
-
-3. Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem System speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen.
-
-   Optional können Sie auch den Namen der Projektmappe ändern oder das neue Projekt einem Git-Repository hinzufügen, indem Sie auf **Zur Quellcodeverwaltung hinzufügen** klicken.
-
-4. Klicken Sie auf die Schaltfläche **OK**, um die Projektmappe und das Projekt zu erstellen.
-
-5. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**.
+Informationen zum Erstellen eines neuen Projekts aus einer Vorlage finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md).
 
 ## <a name="create-a-project-from-existing-code-files"></a>Erstellen eines Projekts aus vorhandenen Codedateien
 
@@ -88,12 +61,26 @@ Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder 
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Erstellen eines .NET-Projekts, das für eine bestimmte Version von .NET Framework vorgesehen ist
 
-Bei der Erstellung eines Projekts können Sie angeben, welche Version von .NET Framework Sie verwenden möchten. Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus, um eine .NET Framework-Version anzugeben.
+Bei der Erstellung eines Projekts können Sie angeben, welche Version von .NET Framework Sie verwenden möchten.
+
+::: moniker range="vs-2017"
+
+Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus, um eine .NET Framework-Version anzugeben.
 
 ![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Sie müssen auf dem System .NET Framework 3.5 installiert haben, um auf frühere Frameworkversionen als .NET Framework 4 zugreifen zu können.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wählen Sie das **Framework**-Dropdownmenü auf der Seite **Neues Projekt erstellen** aus, um eine .NET Framework-Version anzugeben.
+
+![Frameworkauswahl in „Neues Projekt konfigurieren“](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>Erstellen von leeren Projektmappen
 
@@ -101,13 +88,27 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Klicken Sie im Menü auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-1. Wählen Sie im linken Bereich (**Vorlagen**) in der erweiterten Liste **Andere Projekttypen** > **Visual Studio-Projektmappen** aus.
+::: moniker range="vs-2017"
 
-1. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus.
+2. Klicken Sie im linken Bereich in der erweiterten Liste (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen**.
 
-1. Geben Sie für die Projektmappe die Werte **Name** und **Speicherort** ein, und klicken Sie dann auf **OK**.
+3. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus.
+
+4. Geben Sie für die Projektmappe die Werte **Name** und **Speicherort** ein, und klicken Sie dann auf **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie auf der Seite **Neues Projekt erstellen** **Projektmappe** in das Suchfeld ein.
+
+3. Wählen Sie die Vorlage **Leere Projektmappe** aus, und klicken Sie dann auf **Weiter**.
+
+4. Geben Sie für die Projektmappe die Werte **Name** und **Speicherort** ein, und klicken Sie dann auf **Erstellen**.
+
+::: moniker-end
 
 Nachdem Sie eine leere Projektmappe erstellt haben, können Sie dieser neue oder vorhandene Projekte oder Elemente hinzufügen, indem Sie im Menü **Projekt** den Befehl **Neues Element hinzufügen** oder **Vorhandenes Element hinzufügen** auswählen.
 
@@ -132,7 +133,7 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 > [!NOTE]
 > Die *SUO-Datei* wird ausgeblendet und nicht in den Standardeinstellungen des Datei-Explorers angezeigt. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
 
-### <a name="to-permanently-delete-a-solution"></a>Dauerhaftes Löschen einer Projektmappe
+### <a name="permanently-delete-a-solution"></a>Endgültiges Löschen einer Projektmappe
 
 1. Wählen Sie im **Projektmappen-Explorer** im Kontextmenü die zu löschende Projektmappe aus, und wählen Sie dann **Ordner in Datei-Explorer öffnen**.
 

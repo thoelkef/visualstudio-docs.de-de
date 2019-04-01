@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428660"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325291"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
@@ -27,7 +27,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 Das erste, was Sie nach dem Start von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Schließen oder Überprüfen von Code, zum Öffnen von bestehenden Projekten oder Projektmappen, zum Erstellen eines neuen Projekts, oder einfach zum Öffnen eines Ordners, der Codedateien enthält.
 
-[![](media/vs-2019/start-window.png "Das Startfenster in Visual Studio 2019")](media/vs-2019/start-window.png)
+[![](media/vs-2019/start-window.png "Startfenster in Visual Studio 2019")](media/vs-2019/start-window.png)
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 
@@ -57,13 +57,13 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie im **Startfenster** die Option **Neues Projekt erstellen** aus, und geben Sie dann im Suchfeld **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
+1. Wählen Sie im Startfenster die Option **Neues Projekt erstellen** aus, und geben Sie dann im Suchfeld **javascript** ein, um die Liste der Projekttypen nach denen zu filtern, die „javascript“ im Namen oder Sprachtyp enthalten.
 
    Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. (Alternativ können Sie das Projekt auch in TypeScript erstellen, wenn Sie damit vertraut sind. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
    ![Suchen von Projektvorlagen im Visual Studio-Startfenster](media/vs-2019/create-new-project.png)
 
-1. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus, und klicken Sie dann auf **Weiter**. 
+1. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus, und klicken Sie dann auf **Weiter**.
 
 1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt konfigurieren** den Standardprojektnamen, und klicken Sie anschließend auf **Erstellen**.
 

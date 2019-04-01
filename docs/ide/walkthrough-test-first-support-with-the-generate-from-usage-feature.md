@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943037"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355629"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -34,15 +34,19 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Erstellen eines Projekts für eine Windows-Klassenbibliothek und eines Testprojekts
 
-1. Erstellen Sie in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
+1. Erstellen Sie in C# oder Visual Basic ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
 
-2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Klicken Sie dann zuerst auf **Hinzufügen** und anschließend auf **Neues Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf **Testen**.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
-3. Wählen Sie im mittleren Bereich **Komponententestprojekt** aus, und übernehmen Sie den Standardnamen `UnitTestProject1`. Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.
+3. Erstellen Sie ein neues Projekt **Komponententestprojekt (.NET Framework)**.
 
-    ![Dialogfeld "Neues Testprojekt"](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Klicken Sie auf **OK**, um das Dialogfeld **Neues Projekt** zu schließen.
+   Die folgende Abbildung zeigt das Dialogfeld **Neues Projekt** für C#-Vorlagen.
+
+   ![Vorlage für Komponententestprojekte](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Hinzufügen eines Verweises auf das Klassenbibliotheksprojekt
 

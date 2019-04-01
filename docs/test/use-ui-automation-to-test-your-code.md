@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145225"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416265"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -62,9 +62,13 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
 1. Erstellen Sie ein Testprojekt für codierte UI.
 
-   Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Wählen Sie **Datei** > **Neu** > **Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen. Erweitern Sie im Kategoriebereich auf der linken Seite **Installiert** > **Visual Basic** *oder* **Visual C#**  >  **Test**. Wählen Sie die Vorlage **Testprojekt für programmierte UI** aus, und klicken Sie dann auf **OK**.
+   Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Klicken Sie auf **Datei** > **Neu** > **Projekt**. Suchen Sie die Projektvorlage **Testprojekt der programmierten UI**, und wählen Sie sie aus.
+
+   ::: moniker range="vs-2017"
 
    ![Vorlage „Testprojekt für programmierte UI“ im Dialogfeld „Neues Projekt“](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.

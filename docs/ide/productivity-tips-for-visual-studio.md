@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223142"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355762"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -66,13 +66,23 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
 - **Zeigen Sie nur die Fehler an, die berücksichtigt werden sollen**. Wenn Sie die Schaltfläche **Filter** auf der Symbolleiste **Fehlerliste** auswählen, können Sie die Anzahl der Fehler reduzieren, die im Fenster **Fehlerliste** angezeigt werden. Sie können nur die Fehler in den Dateien anzeigen, die im Editor geöffnet sind, nur die Fehler in der aktuellen Datei oder nur die Fehler im aktuellen Projekt. Sie können im Fenster **Fehlerliste** auch nach bestimmten Fehlern suchen.
 
-- **Suchen von Dialogfeldern, Menübefehlen und Optionen**. Geben Sie im Suchfeld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie `new project` eingeben:
+- **Suchen von Dialogfeldern, Menübefehlen, Optionen und mehr**. Geben Sie im Suchfeld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie **Neues Projekt** eingeben:
 
-    ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Seite **Projekt- und Projektmappen** im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
+   ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity_quicklaunch.png)
 
-  Das Suchfeld **Schnellstart** wird in der oberen rechten Ecke der IDE angezeigt. (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
+   **Schnellstart** zeigt unter anderem Links zum Erstellen eines neuen Projekts, zum Hinzufügen eines neuen Elements zu einem Projekt und zum Wechseln zur Seite **Projekte und Projektmappen** im Dialogfeld **Optionen** an. Zu den Suchergebnissen können auch Projektdateien und Toolfenster zählen.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Schnellstart-Suchergebnisse für „Neues Projekt“](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld **Schnellstart** zu wechseln.
 
 ## <a name="debug-code"></a>Debuggen von Code
 

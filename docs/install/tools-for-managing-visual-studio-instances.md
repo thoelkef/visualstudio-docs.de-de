@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681750"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415213"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
 
@@ -37,25 +39,31 @@ Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudi
 
 ## <a name="using-vswhereexe"></a>Verwenden von „vswhere.exe“
 
-`vswhere.exe` ist in Visual Studio 2017-Version 15.2 oder höher im Lieferumfang enthalten. Alternativ dazu können Sie die Datei auch von der Seite mit den [Releases](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich älterer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
+`vswhere.exe` wird in Visual Studio (ab Visual Studio 2017, Version 15.2, und höheren Versionen) automatisch eingeschlossen, alternativ können Sie sie von der [VSWhere-Releaseseite](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich früherer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Weitere Informationen zur Installation von Visual Studio 2017 finden im [Archiv zum Setup von Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Weitere Informationen zur Installation von Visual Studio 2017 finden im [Archiv zum Setup von Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Bearbeiten der Registrierung einer Visual Studio-Instanz
 
-In Visual Studio 2017 werden Registrierungseinträge in einem privaten Speicherort gespeichert, was ermöglicht, dass sich mehrere Instanzen derselben Version von Visual Studio auf demselben Computer befinden.
+In Visual Studio werden Registrierungseinträge in einem privaten Speicherort gespeichert, was ermöglicht, dass sich mehrere Instanzen derselben Version von Visual Studio auf demselben Computer befinden.
 
 Da diese Einträge nicht in der globalen Registrierung gespeichert werden, gibt es spezielle Anweisungen zum Verwenden des Registrierungseditors, um Registrierungseinträge zu ändern:
 
-1. Wenn Sie eine Instanz Visual Studio-2017 geöffnet haben, schließen Sie sie.
-2. Starten Sie `regedit.exe`.
-3. Wählen Sie den Knoten `HKEY_LOCAL_MACHINE` aus.
-4. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei -> Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Beispiel:
+1. Wenn Sie eine Instanz von Visual Studio geöffnet haben, schließen Sie sie.
+
+1. Starten Sie `regedit.exe`.
+
+1. Wählen Sie den Knoten `HKEY_LOCAL_MACHINE` aus.
+
+1. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei** > **Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Beispiel:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ Da diese Einträge nicht in der globalen Registrierung gespeichert werden, gibt 
 Sie werden aufgefordert, einen Strukturnamen anzugeben, der zum Namen Ihrer isolierten Struktur wird. Anschließend sollten Sie in der Lage sein, die Registrierung unter der von Ihnen erstellten isolierten Struktur zu durchsuchen.
 
 > [!IMPORTANT]
-> Bevor Sie Visual Studio erneut starten, müssen Sie die isolierte Struktur entladen, die Sie erstellt haben. Zu diesem Zweck wählen Sie im Hauptmenü des Registrierungs-Editors „Datei -> Struktur entladen“ aus. (Wenn Sie dies nicht tun, bleibt die Datei gesperrt, und Visual Studio kann nicht gestartet werden.)
+> Bevor Sie Visual Studio erneut starten, müssen Sie die isolierte Struktur entladen, die Sie erstellt haben. Zu diesem Zweck wählen Sie im Hauptmenü des Registrierungs-Editors **Datei** > **Struktur entladen** aus. (Wenn Sie dies nicht tun, bleibt die Datei gesperrt, und Visual Studio kann nicht gestartet werden.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

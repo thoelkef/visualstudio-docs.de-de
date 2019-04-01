@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155523"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355551"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -31,9 +31,9 @@ Sie können darüber hinaus den Visual Studio-**Objektkatalog** (**Ansicht** > *
 
 IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Visual Studio 2017 Version 15.7 und höher unterstützt auch [Typhinweise](#type-hints).
 
-Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+Zur Verbesserung der Leistung nutzt IntelliSense in Visual Studio 2017 Version 15.5 und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 Version 15.6** und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
+Visual Studio 2017 Version 15.6 und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
 
 ### <a name="completions"></a>Vervollständigungen
 

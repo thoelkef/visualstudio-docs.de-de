@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925240"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415602"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 
 Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen Schritten der inkrementellen Entwicklung ordnungsgemäß funktioniert. Es gibt mehrere Frameworks, die Sie nutzen können, um Komponententests zu schreiben, darunter auch einige von Drittanbietern. Einige Testframeworks wurden speziell zum Testen in verschiedenen Sprachen oder Plattformen entwickelt. Der Test-Explorer stellt eine zentrale Oberfläche für Komponententests in einem dieser Frameworks bereit. Für die am häufigsten verwendeten Frameworks sind Adapter verfügbar. Sie können auch eigene Adapter für andere Frameworks schreiben.
 
- Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:
+Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:
 
--   Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.
+- Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.
 
--   Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.
+- Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.
 
--   Sie können alle benötigten Informationen in einem Fenster anzeigen.
+- Sie können alle benötigten Informationen in einem Fenster anzeigen.
 
 ## <a name="use-test-explorer"></a>Verwenden des Test-Explorers
- ![Komponententest-Explorer zeigt die Schaltfläche "Alles ausführen" an](../test/media/unittestexplorer-beta-.png)
+
+![Test-Explorer mit Schaltfläche „Alles ausführen“](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
 
-1. Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden.
+1. Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden. Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:
 
-    Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:
+   1. Erstellen Sie ein neues **Komponententestprojekt** für C#, Visual Basic oder C++.
 
-   1.  Erstellen Sie ein Testprojekt.
-
-        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** oder **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.
-
-        Wählen Sie **Komponententestprojekt**aus.
-
-   2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
+   2. Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
 
 2. Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
@@ -66,19 +61,17 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 > [!NOTE]
 > Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
- Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
+Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Erstellen des Tests und der Methode
 
-1. Erstellen Sie ein Visual C#-Klassenbibliotheksprojekt. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat sie den Namen `MyMath`.
+1. Erstellen Sie ein C#-**Klassenbibliotheksprojekt**. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat es den Namen `MyMath`.
 
-2. Erstellen Sie ein Testprojekt.
+2. Erstellen Sie ein neues Projekt **Komponententestprojekt**.
 
-   -   Klicken Sie im Dialogfeld **Neues Projekt** erst auf **Visual C#** > **Test** und anschließend auf **Komponententestprojekt**.
-
-        ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
+   ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
 
 3. Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
 

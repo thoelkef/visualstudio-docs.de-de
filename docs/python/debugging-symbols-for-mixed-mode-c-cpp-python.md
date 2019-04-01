@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869362"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355434"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
 
 Um ein vollständiges Debuggen zu ermöglichen, benötigt der [mixed-mode Python debugger (Python-Debugger für den gemischten Modus)](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) in Visual Studio die Debugsymbole für den Python-Interpreter, um zahlreiche interne Datenstrukturen zu analysieren. Für *python27.dll* ist die entsprechende Symboldatei zum Beispiel *python27.pdb*, und für *python36.dll* ist die Symboldatei *python36.pdb*. Jede Version des Interpreters bietet auch Symboldateien für eine Vielzahl von Modulen.
 
-Mit Visual Studio 2017 installieren die Interpreter Python 3 und Anaconda 3 automatisch ihre entsprechenden Symbole, und Visual Studio findet diese Symbole automatisch. Für Visual Studio 2015 und frühere Versionen oder bei Verwendung anderer Interpreter müssen Sie Symbole separat herunterladen und Visual Studio anschließend über das Dialogfeld **Extras** > **Optionen** auf der Registerkarte **Debuggen** > **Symbole** darauf aufmerksam machen. Diese Schritte werden in den folgenden Abschnitten ausführlich beschrieben.
+Mit Visual Studio 2017 und höher installieren die Interpreter Python 3 und Anaconda 3 automatisch ihre entsprechenden Symbole, und Visual Studio findet diese Symbole automatisch. Für Visual Studio 2015 und frühere Versionen oder bei Verwendung anderer Interpreter müssen Sie Symbole separat herunterladen und Visual Studio anschließend über das Dialogfeld **Extras** > **Optionen** auf der Registerkarte **Debuggen** > **Symbole** darauf aufmerksam machen. Diese Schritte werden in den folgenden Abschnitten ausführlich beschrieben.
 
 Visual Studio fordert Sie möglicherweise zur Eingabe auf, wenn diese Symbole benötigt werden. In der Regel ist dies beim Starten einer Debugsitzung im gemischten Modus der Fall. In diesem Fall wird ein Dialogfeld mit zwei Optionen angezeigt:
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928425"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268633"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
 
@@ -46,17 +46,13 @@ Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfigu
 
  Nachdem Sie die gewünschte Konfigurationen festgelegt haben, können Sie die für diese Konfigurationen geeigneten Projekteigenschaften festlegen.
 
-### <a name="to-set-properties-based-on-configurations"></a>So legen Sie auf Konfigurationen basierende Eigenschaften fest
+### <a name="set-properties-based-on-configurations"></a>Festlegen von Eigenschaften auf der Grundlage von Konfigurationen
 
--   Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für ein Projekt, und wählen Sie **Eigenschaften** aus.
+Um Eigenschaften auf der Grundlage von Konfigurationen festzulegen, öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für ein Projekt und wählen dann **Eigenschaften** aus. Sie können Eigenschaften für die Konfigurationen festlegen. Bei einer Releasekonfiguration können Sie beispielsweise angeben, dass Code bei Erstellung der Projektmappe optimiert wird, und bei einer Debugkonfiguration können Sie angeben, dass das Symbol `DEBUG` für die bedingte Kompilierung enthalten ist.
 
-     Das Fenster **Eigenschaftenseiten** wird geöffnet.
+Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden Sie unter [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md).
 
-     Sie können Eigenschaften für die Konfigurationen festlegen. Bei einer Releasekonfiguration können Sie beispielsweise angeben, dass Code bei Erstellung der Projektmappe optimiert wird, und bei einer Debugkonfiguration können Sie angeben, dass das Symbol `DEBUG` für die bedingte Kompilierung enthalten ist. Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden Sie unter [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Erstellen und Ändern von Projektkonfigurationen
-
-### <a name="to-create-a-project-configuration"></a>So erstellen Sie eine Projektkonfiguration
+## <a name="create-a-project-configuration"></a>Erstellen einer Projektkonfiguration
 
 1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
@@ -72,7 +68,7 @@ Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfigu
 
 6.  Um gleichzeitig eine Projektmappen-weite Konfiguration zu erstellen, aktivieren Sie das Kontrollkästchen **Create new solution configuration** (Neue Projektmappenkonfigurationen erstellen).
 
-### <a name="to-rename-a-project-configuration"></a>So benennen Sie eine Projektkonfiguration um
+## <a name="rename-a-project-configuration"></a>Umbenennen einer Projektkonfiguration
 
 1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 

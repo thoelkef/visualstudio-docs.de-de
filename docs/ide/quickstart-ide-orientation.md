@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867825"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354728"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -39,9 +39,9 @@ Wenn Sie die **Startseite** schließen und dann erneut anzeigen möchten, könne
 
 ## <a name="start-window"></a>Startfenster
 
-Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so konzipiert, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Klonen oder Ausschecken von Code, zum Öffnen bereits vorhandener Projekte oder Projektmappe, zum Erstellen eines neuen Projekts oder einfach zum Öffnen eines Ordners mit Codedateien.
+Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Klonen oder Ausschecken von Code, zum Öffnen bereits vorhandener Projekte oder Projektmappe, zum Erstellen eines neuen Projekts oder einfach zum Öffnen eines Ordners mit Codedateien.
 
-[![](media/vs-2019/start-window-labeled.png "Das Startfenster in Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "Startfenster in Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 
@@ -71,7 +71,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   Das Fenster **Neues Projekt erstellen** wird geöffnet. Dieses Fenster wird auch als Dialogfeld **Neues Projekt** bezeichnet. Hier können Sie Projektvorlagen durchsuchen und eine Projektvorlage auswählen. Außerdem finden Sie hier eine Liste mit den zuletzt verwendeten Projektvorlagen.
+   Ein Dialogfeld mit dem Titel **Neues Projekt erstellen** wird geöffnet. Hier können Sie nach Projektvorlagen suchen, sie filtern und sie auswählen. Außerdem wird hier eine Liste mit Ihren zuletzt verwendeten Projektvorlagen angezeigt.
 
 1. Geben Sie im Suchfeld am oberen Rand **Konsole** ein, um die Liste mit den Projekttypen nach Einträgen zu filtern, die das Wort „Konsole“ enthalten. Grenzen Sie die Suchergebnisse weiter ein, indem Sie unter **Sprache** die Option **C#** (oder eine andere Programmiersprache) auswählen.
 

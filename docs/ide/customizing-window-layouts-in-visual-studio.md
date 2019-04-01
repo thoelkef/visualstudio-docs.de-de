@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927541"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268626"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 
-In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpassen, um Fensterlayouts zu erstellen, die für unterschiedliche Entwicklungsworkflows am besten geeignet sind. Wenn Sie das Layout anpassen, wird dies in der IDE gespeichert. Wenn Sie z. B. die Andockposition des **Projektmappen-Explorers** ändern und Visual Studio dann schließen, ist der **Projektmappen-Explorer** nach dem nächsten Start an derselben Position angedockt, selbst wenn Sie an einem anderen Computer arbeiten. Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein anderes für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster** > **Fensterlayout anwenden** wechseln.
+In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpassen, um Fensterlayouts zu erstellen, die für unterschiedliche Entwicklungsworkflows am besten geeignet sind. Wenn Sie das Layout anpassen, wird dies in der IDE gespeichert. Wenn Sie z. B. die Andockposition des **Projektmappen-Explorers** ändern und Visual Studio dann schließen, ist der **Projektmappen-Explorer** nach dem nächsten Öffnen von Visual Studio an derselben Position angedockt, selbst wenn Sie an einem anderen Computer arbeiten.
+
+Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein Layout für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster** > **Fensterlayout anwenden** wechseln.
 
 ## <a name="kinds-of-windows"></a>Fensterarten
 
@@ -64,21 +66,21 @@ Dokumentfenster und Toolfenster können *angedockt* werden, sodass sie eine Posi
 
 Fenster können auf die folgenden Weisen angeordnet werden:
 
--   Heftet Dokumentfenster auf der linken Seite der Registerkartenreihe an.
+- Heftet Dokumentfenster auf der linken Seite der Registerkartenreihe an.
 
--   Andocken von Fenstern am Bearbeitungsrahmen
+- Andocken von Fenstern am Bearbeitungsrahmen
 
--   Andocken von Toolfenstern am Rand eines Frames in der IDE.
+- Andocken von Toolfenstern am Rand eines Frames in der IDE.
 
--   Verschieben von Dokument- oder Toolfenstern über die IDE bzw. außerhalb der IDE.
+- Verschieben von Dokument- oder Toolfenstern über die IDE bzw. außerhalb der IDE.
 
--   Verbergen von Toolfenstern am Rand der IDE.
+- Verbergen von Toolfenstern am Rand der IDE.
 
--   Anzeigen von Fenstern auf verschiedenen Bildschirmen.
+- Anzeigen von Fenstern auf verschiedenen Bildschirmen.
 
--   Zurücksetzen der Fensteranordnung auf das Standardlayout oder ein gespeichertes benutzerdefiniertes Layout.
+- Zurücksetzen der Fensteranordnung auf das Standardlayout oder ein gespeichertes benutzerdefiniertes Layout.
 
-Tool- und Dokumentfenster können durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters angeordnet werden.
+Ordnen Sie Tool- und Dokumentfenster durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters an.
 
 ### <a name="dock-windows"></a>Andocken von Fenstern
 
@@ -92,19 +94,17 @@ Die folgende Abbildung veranschaulicht das Diamant-Führungssymbol für Dokument
 
 ![Rastersymbol im Dokumentfenster](../ide/media/documentwindowguidediamonds.png)
 
-Toolfenster können an einer Seite eines Frames in der IDE oder innerhalb des Bearbeitungsrahmens angebunden werden. Ein Diamant-Führungssymbol wird angezeigt, wenn Sie ein Toolfenster an eine andere Position ziehen, damit Sie das Fenster problemlos neu andocken können.
-
-Diamant-Führungssymbol für Toolfenster
+Toolfenster können an einer Seite eines Frames in der IDE oder innerhalb des Bearbeitungsrahmens angebunden werden. Ein Rauten-Führungssymbol wird angezeigt, wenn Sie ein Toolfenster an eine andere Position ziehen, damit Sie das Fenster problemlos neu andocken können.
 
 ![Diamant-Führungssymbole im Toolfenster](../ide/media/vs10guidediamond.png)
 
-In der folgenden Abbildung ist der **Projektmappen-Explorer** an einer neuen Position angedockt, die durch den blau schattierten Bereich dargestellt wird:
+In der folgenden Abbildung ist der **Projektmappen-Explorer** an einer neuen Position angedockt, die durch den blau schattierten Bereich angegeben wird:
 
 ![Andocken des Projektmappen-Explorers an einer neuen Position](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Schließen und automatisches Ausblenden von Toolfenstern
 
-Sie können ein Toolfenster schließen, indem Sie auf das **X** in der Titelleiste oben rechts klicken. Verwenden Sie zum erneuten Öffnen des Fensters die entsprechende Tastenkombination oder den Menübefehl. Toolfenster unterstützen das Feature *Automatisch im Hintergrund*, mit der ein Fenster bei Verwendung eines anderen Fensters in den Hintergrund versetzt wird und ist somit nicht mehr sichtbar ist. Wenn ein Fenster automatisch in den Hintergrund versetzt wird, wird sein Name auf einer Registerkarte am Rand der IDE angezeigt. Um das Fenster wieder zu verwenden, zeigen Sie auf die Registerkarte, damit das Fenster wieder angezeigt wird.
+Sie können ein Toolfenster schließen, indem Sie auf das **X** oben rechts in der Titelleiste klicken. Um das Fenster wieder zu öffnen, verwenden Sie seine Tastenkombination oder seinen Menübefehl. Toolfenster unterstützen das Feature *Automatisch im Hintergrund*, mit der ein Fenster bei Verwendung eines anderen Fensters in den Hintergrund versetzt wird und ist somit nicht mehr sichtbar ist. Wenn ein Fenster automatisch ausgeblendet wird, wird sein Name auf einer Registerkarte am Rand der IDE angezeigt. Um das Fenster wieder zu verwenden, zeigen Sie auf die Registerkarte, damit das Fenster wieder angezeigt wird.
 
 ![Automatisch im Hintergrund](../ide/media/vs2015_auto_hide.png)
 
@@ -125,11 +125,11 @@ Wenn Sie einen zweiten Bildschirm besitzen und dieser vom Betriebssystem unterst
 
 Sie können die IDE mit dem Befehl **Fensterlayout zurücksetzen** auf das ursprüngliche Fensterlayout für Ihre Einstellungsauflistung zurücksetzen. Beim Ausführen dieses Befehls geschieht Folgendes:
 
--   Alle Fenster werden an ihre Standardpositionen verschoben.
+- Alle Fenster werden an ihre Standardpositionen verschoben.
 
--   Fenster, die im Standardfensterlayout geschlossen sind, werden geschlossen.
+- Fenster, die im Standardfensterlayout geschlossen sind, werden geschlossen.
 
--   Fenster, die im Standardfensterlayout geöffnet sind, werden geöffnet.
+- Fenster, die im Standardfensterlayout geöffnet sind, werden geöffnet.
 
 ### <a name="create-and-save-custom-layouts"></a>Erstellen und Speichern von benutzerdefinierten Layouts
 
@@ -139,25 +139,25 @@ Erstellen Sie zunächst eine Testprojektmappe mit zwei Projekten, die jeweils ü
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Erstellen eines Benutzeroberflächenprojekts und individuelles Anpassen des Layouts
 
-1.  Erstellen Sie im Dialogfeld **Neues Projekt** eine **C#-WPF-Desktopanwendung**, und geben Sie dieser einen beliebigen Namen. Nehmen wir an, dass Sie bei diesem Projekt an der Benutzeroberfläche arbeiten. Daher sollten Sie den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg schieben.
+1. Erstellen Sie ein neues C# **WPF-App** Projekt. Stellen Sie sich vor, dass Sie in diesem Projekt eine Benutzeroberfläche entwickeln werden. Sie möchten den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg räumen.
 
-2.  Wenn Sie über mehrere Monitore verfügen, ziehen Sie das **Projektmappen-Explorerfenster** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
+2. Wenn Sie über mehrere Monitore verfügen, ziehen Sie das **Projektmappen-Explorerfenster** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
 
-3.  Drücken Sie **Strg+Alt+X**, um die **Toolbox** anzuzeigen. Ist das Fenster angedockt, ziehen Sie es so, dass es sich auf dem gewünschten Monitor freischwebend dort befindet, wo Sie es platzieren möchten.
+3. Drücken Sie **STRG**+**ALT**+**X**, um das **Toolboxfenster** anzuzeigen. Ist das Fenster angedockt, ziehen Sie es so, dass es sich freischwebend dort befindet, wo Sie es platzieren möchten.
 
-4.  Drücken Sie **F5**, um Visual Studio in den Debugmodus zu versetzen. Passen Sie die Position der Debugfenster **Auto**, **Aufrufliste** und **Ausgabe** an Ihre Anforderungen an. Das Layout, das Sie erstellen, ist sowohl für den Bearbeitungsmodus als auch den Debugmous geeignet.
+4. Drücken Sie **F5**, um Visual Studio in den Debugmodus zu versetzen. Passen Sie die Position der Debugfenster **Auto**, **Aufrufliste** und **Ausgabe** an Ihre Anforderungen an. Das Layout, das Sie erstellen, ist sowohl für den Bearbeitungsmodus als auch den Debugmous geeignet.
 
-5.  Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Anforderungen angepasst haben, klicken Sie im Hauptmenü auf **Fenster** > **Fensterlayout speichern**. Nennen Sie dieses Layout „Designer“.
+5. Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Anforderungen angepasst haben, klicken Sie auf **Fenster** > **Fensterlayout speichern**. Nennen Sie dieses Layout „Designer“.
 
-     Beachten Sie, dass das neue Layout der nächsten Tastenkombination aus der reservierten Liste mit **STRG** + **ALT** + **1...0** zugewiesen wird.
+     Beachten Sie, dass das neue Layout der nächsten Tastenkombination aus der reservierten Liste mit **STRG**+**ALT**+**1...0** zugewiesen wird.
 
 #### <a name="create-a-database-project-and-layout"></a>Erstellen eines Datenbankprojekts und eines Layouts
 
-1.  Fügen Sie der Projektmappe ein neues **SQL Server-Datenbankprojekt** hinzu.
+1. Fügen Sie der Projektmappe ein neues **SQL Server-Datenbankprojekt** hinzu.
 
-2.  Rechtsklicken Sie im **Projektmappen-Explorer** auf das neue Projekt, und klicken Sie auf **In Objekt-Explorer anzeigen**. Dadurch wird das Fenster **SQL Server-Objekt-Explorer** angezeigt, mit dem Sie auf Tabellen, Ansichten und andere Objekte in der Datenbank zugreifen können. Dieses Fenster kann entweder schwebend sein oder angedockt bleiben. Passen Sie die anderen Toolfenster wie gewünscht an. Um das Beispiel realistischer zu gestalten, können Sie eine tatsächliche Datenbank hinzufügen. Für diese exemplarische Vorgehensweise ist das jedoch nicht notwendig.
+2. Rechtsklicken Sie im **Projektmappen-Explorer** auf das neue Projekt, und klicken Sie auf **In Objekt-Explorer anzeigen**. Dadurch wird das Fenster **SQL Server-Objekt-Explorer** angezeigt, mit dem Sie auf Tabellen, Ansichten und andere Objekte in der Datenbank zugreifen können. Dieses Fenster kann entweder schwebend sein oder angedockt bleiben. Passen Sie die anderen Toolfenster wie gewünscht an. Um das Beispiel realistischer zu gestalten, können Sie eine tatsächliche Datenbank hinzufügen. Für diese exemplarische Vorgehensweise ist das jedoch nicht notwendig.
 
-3.  Wenn das Layout Ihren Vorstellungen entspricht, klicken Sie im Hauptmenü auf **Fenster** > **Fensterlayout speichern**. Nennen Sie dieses Layout „DB Project“. (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)
+3. Wenn das Layout Ihren Vorstellungen entspricht, klicken Sie im Hauptmenü auf **Fenster** > **Fensterlayout speichern**. Nennen Sie dieses Layout „DB Project“. (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)
 
 #### <a name="switch-between-the-layouts"></a>Wechseln zwischen Layouts
 

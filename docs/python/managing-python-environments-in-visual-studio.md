@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195137"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355684"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -123,7 +123,7 @@ Visual Studio enthält auch einen Befehl, um eine *requirements.txt*-Datei aus e
 
 #### <a name="conda-environments"></a>Conda-Umgebungen
 
-Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017 ab Version 15.7 integrierten Conda-Verwaltung erstellte Umgebung. (Anaconda oder Miniconda erforderlich; Anaconda ist über das Visual Studio-Installationsprogramm verfügbar; siehe [Installieren von Python-Unterstützung für Visual Studio unter Windows](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
+Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017 ab Version 15.7 integrierten Conda-Verwaltung erstellte Umgebung. (Anaconda oder Miniconda erforderlich; die über den Visual Studio-Installer verfügbar sind; siehe [Installieren von Python-Unterstützung für Visual Studio unter Windows](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
 
 ::: moniker range="vs-2017"
 
@@ -155,7 +155,7 @@ Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017
     | Projekt | Das Projekt, in dem die Umgebung erstellt werden soll (falls eine Visual Studio-Projektmappe mehrere Projekte enthält) |
     | name | Der Name für die Conda-Umgebung |
     | Pakete hinzufügen von | Wählen Sie **Environment file** (Umgebungsdatei) aus, wenn Sie eine Datei vom Typ *environment.yml* besitzen, in der die Abhängigkeiten beschrieben sind. Wählen Sie alternativ **One or more Anaconda package names** (Mindestens ein Anaconda-Paketname) aus, und geben Sie mindestens ein Python-Paket bzw. eine Python-Version im Feld unten an. Die Paketliste weist Conda zum Erstellen einer Python-Umgebung an. Verwenden Sie zum Installieren der aktuellen Python-Version `python` und zum Installieren einer bestimmten Version `python=,major>.<minor>` wie in `python=3.7`. Sie können auch die Paketschaltfläche verwenden, um Python-Versionen und allgemeine Pakete aus verschiedenen Menüs auszuwählen. |
-    | Als aktuelle Umgebung festlegen | Aktiviert nach der Erstellung der Umgebung die neue Umgebung im ausgewählten Projekt. |
+    | Als aktuelle Umgebung festlegen | Aktiviert die neue Umgebung nach der Erstellung im ausgewählten Projekt. |
     | Als Standardumgebung für neue Projekte festlegen | Dient zum automatischen Festlegen und Aktivieren der Conda-Umgebung in allen neuen Projekten, die in Visual Studio erstellt werden. Diese Option entspricht der Verwendung von **Als Standardumgebung für neue Projekte festlegen** im Fenster **Python-Umgebungen**. |
     | In Fenster „Python-Umgebungen“ anzeigen | Gibt an, ob das Fenster **Python-Umgebungen** nach dem Erstellen der Umgebung angezeigt werden soll. |
 

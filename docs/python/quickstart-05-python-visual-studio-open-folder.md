@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987083"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354907"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner
 
 Nach der [Installation von Python-Unterstützung für Visual Studio 2019](installing-python-support-in-visual-studio.md) können Sie ganz einfach vorhandenen Python-Code in Visual Studio 2019 ausführen, ohne ein Visual Studio-Projekt zu erstellen.
 
 > [!Note]
-> Bei Visual Studio 2017 und früheren Versionen mussten Sie ein Visual Studio-Projekt für die Ausführung von Python-Code erstellen. Die Erstellung des Projekts ist mit einer integrierten Projektvorlage ganz einfach. Siehe [Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Bei Visual Studio 2017 und früheren Versionen mussten Sie ein Visual Studio-Projekt für die Ausführung von Python-Code erstellen. Die Erstellung des Projekts ist mit einer integrierten Projektvorlage ganz einfach. Ein Beispiel finden Sie unter [Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. In dieser exemplarischen Vorgehensweise können Sie einen beliebigen Ordner mit Python-Code verwenden. Wenn Sie dem hier gezeigten Beispiel folgen möchten, klonen Sie mit dem Befehl `git clone https://github.com/gregmalcolm/python_koans`das GitHub-Repository „gregmalcolm/python_koans“ in einem geeigneten Ordner auf Ihrem Computer.
 

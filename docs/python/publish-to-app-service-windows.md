@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 758f7549eeb1726b13da31a96b4c006194da6ee6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713541"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355314"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Veröffentlichen in Azure App Service unter Windows
 
@@ -25,10 +25,10 @@ ms.locfileid: "56713541"
 
 Visual Studio bietet Ihnen die Möglichkeit, Python-Web-Apps direkt in Azure App Service unter Windows zu veröffentlichen. Wenn Sie eine App in Azure App Service unter Windows veröffentlichen möchten, müssen Sie die benötigten Dateien auf den Server kopieren und eine Datei `web.config` einrichten, die Anweisungen für den Webserver zum Starten der App enthält.
 
-Es gibt Unterschiede bei der Veröffentlichung über Visual Studio 2017 und Visual Studio 2015. Insbesondere werden bei Visual Studio 2015 einige der notwendigen Schritte automatisiert, u.a. das Erstellen der `web.config`-Datei. Allerdings schränkt diese Automatisierung auf Dauer die Flexibilität und Kontrolle ein. Für Visual Studio 2017 sind hingegen zwar mehr manuelle Schritte erforderlich, jedoch können Sie dadurch die Python-Umgebung auch genauer kontrollieren. Beide Optionen werden in diesem Artikel beschrieben.
+Es gibt Unterschiede bei der Veröffentlichung über Visual Studio 2017 und höher und Visual Studio 2015. Insbesondere werden bei Visual Studio 2015 einige der notwendigen Schritte automatisiert, u.a. das Erstellen der `web.config`-Datei. Allerdings schränkt diese Automatisierung auf Dauer die Flexibilität und Kontrolle ein. Für Visual Studio 2017 und höher sind hingegen zwar mehr manuelle Schritte erforderlich, jedoch können Sie dadurch die Python-Umgebung auch genauer kontrollieren. Beide Optionen werden in diesem Artikel beschrieben.
 
 > [!Note]
-> Hintergrundinformationen zu den Unterschieden zwischen Visual Studio 2015 und Visual Studio 2017 finden Sie im Blogeintrag [Publish to Azure in Visual Studio 2017 (Veröffentlichen auf Azure in Visual Studio 2017)](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
+> Hintergrundinformationen zu den Unterschieden zwischen Visual Studio 2015 und Visual Studio 2017 und höher finden Sie im Blogeintrag [Publish to Azure in Visual Studio 2017 (Veröffentlichen auf Azure in Visual Studio 2017)](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -71,13 +71,13 @@ Führen Sie die folgenden Schritte aus, um einen temporären App Service zu erst
 
 ## <a name="configure-python-on-azure-app-service"></a>Konfigurieren von Python auf Azure App Service
 
-Sobald Sie App Service erstellt haben und eine leere Web-App ausgeführt wird (entweder in Ihrem Abonnement oder auf einer kostenlosen Website), installieren Sie eine ausgewählte Python-Version wie unter [Verwalten von Python auf Azure App Service](managing-python-on-azure-app-service.md) beschrieben. Zeichnen Sie, wie in diesem Artikel beschrieben, den genauen Pfad zum installierten Python-Interpreter mit der Websiteerweiterung auf, um eine App über Visual Studio 2017 zu veröffentlichen.
+Sobald Sie App Service erstellt haben und eine leere Web-App ausgeführt wird (entweder in Ihrem Abonnement oder auf einer kostenlosen Website), installieren Sie eine ausgewählte Python-Version wie unter [Verwalten von Python auf Azure App Service](managing-python-on-azure-app-service.md) beschrieben. Zeichnen Sie, wie in diesem Artikel beschrieben, den genauen Pfad zum installierten Python-Interpreter mit der Websiteerweiterung auf, um eine App über Visual Studio 2017 und höher zu veröffentlichen.
 
 Fall gewünscht, können Sie auch das `bottle`-Paket installieren, indem Sie die hier beschriebenen Anweisungen befolgen, da das Paket als Teil anderer Schritte in dieser exemplarischen Vorgehensweise installiert wird.
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>Veröffentlichen in App Service: Visual Studio 2017
+## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>Veröffentlichen in App Service: Visual Studio 2017 und höher
 
-Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen, werden nur die Dateien in Ihrem Projekt auf den Server kopiert. Aus diesem Grund ist es notwendig, die benötigten Dateien zu erstellen, um die Serverumgebung zu konfigurieren.
+Wenn Sie eine App in Azure App Service über Visual Studio 2017 und höher veröffentlichen, werden nur die Dateien in Ihrem Projekt auf den Server kopiert. Aus diesem Grund ist es notwendig, die benötigten Dateien zu erstellen, um die Serverumgebung zu konfigurieren.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt und auf **Hinzufügen > Neues Element…**. Klicken Sie in dem angezeigten Dialogfeld auf die Vorlage „Azure web.config (Fast CGI)“ und dann auf „OK“. Dadurch erstellen Sie eine `web.config`-Datei in Ihrem Projektstamm.
 
@@ -143,11 +143,11 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 veröffentlichen
 
     a. Ihr eigenes Azure-Abonnement: Klicken Sie auf **Microsoft Azure App Service** und dann auf **Vorhandenen auswählen** > **Veröffentlichen**. Ein Dialogfeld wird angezeigt, in dem Sie das passende Abonnement und den passenden App-Dienst auswählen. Wenn App Service nicht angezeigt wird, verwenden Sie, wie unten beschrieben, das heruntergeladene Veröffentlichungsprofil für einen temporären App-Dienst.
 
-    ![Veröffentlichen in Azure, Schritt 1, Visual Studio 2017: vorhandene Abonnements](media/tutorials-common-publish-1a-2017.png)
+    ![Veröffentlichen in Azure, Schritt 1, Visual Studio 2017 und höher: vorhandene Abonnements](media/tutorials-common-publish-1a-2017.png)
 
     b. Wenn Sie auf „try.azurewebsites.net“ ein temporäres App Service verwenden oder stattdessen ein anderes Veröffentlichungsprofil verwenden müssen, klicken Sie auf das Steuerelement **>**, um nach **Profil importieren** zu suchen. Wählen Sie diese Option aus, und klicken Sie dann auf **Veröffentlichen**. Dann wird die Eingabe des Speicherorts der zuvor heruntergeladenen `.publishsettings`-Datei verlangt.
 
-    ![Veröffentlichen in Azure, Schritt 1, Visual Studio 2017: temporärer App-Dienst](media/tutorials-common-publish-1b-2017.png)
+    ![Veröffentlichen in Azure, Schritt 1, Visual Studio 2017 und höher: vorübergehender App-Dienst](media/tutorials-common-publish-1b-2017.png)
 
 1. Visual Studio zeigt einen Veröffentlichungsstatus im Fenster „Webveröffentlichungsaktivität“ und das Veröffentlichungsfenster an. Sobald der Veröffentlichungsprozess abgeschlossen ist, wird die Website-URL im Standardbrowser geöffnet. Die URL wird außerdem auch im Veröffentlichungsfenster angezeigt.
 

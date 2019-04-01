@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069657"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415537"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -43,6 +43,15 @@ Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
+3. Wählen Sie die C#-Projektvorlage **Klassenbibliothek** aus.
+
+4. Benennen Sie das Projekt **Bank**, und klicken Sie auf **OK**.
+
+   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Class1.cs* wird geöffnet.
+
+   > [!NOTE]
+   > Wenn die Datei *Class1.cs* nicht im Code-Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Class1.cs*, um diese zu öffnen.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -51,16 +60,16 @@ Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-::: moniker-end
+3. Suchen Sie die C#-Projektvorlage **Klassenbibliothek**, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
 
-3. Wählen Sie die Projektvorlage für die C#-Klassenbibliothek aus.
-
-4. Nennen Sie das Projekt **Bank**, und klicken Sie auf **OK** oder **Erstellen**.
+4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
 
    Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Class1.cs* wird geöffnet.
 
    > [!NOTE]
    > Wenn die Datei *Class1.cs* nicht im Code-Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Class1.cs*, um diese zu öffnen.
+
+::: moniker-end
 
 5. Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md), und ersetzen Sie den ursprünglichen Inhalt der Datei *Class1.cs* durch diesen kopierten Code.
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. Klicken Sie im Menü **Datei** auf **Hinzufügen** > **Neues Projekt**.
 
    > [!TIP]
-   > Es gibt mehrere andere Möglichkeiten zum Hinzufügen eines zusätzlichen Projekts zu einer vorhandenen Projektmappe. Sie können im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe klicken und anschließend **Hinzufügen** > **Neues Projekt** auswählen. Alternativ können Sie auf **Datei** > **Neu** > **Projekt** klicken und dann die Option **Zur Projektmappe hinzufügen** im Dialogfeld **Neues Projekt** auswählen:
-   >
-   > ![Option „Zur Projektmappe hinzufügen“ im Dialogfeld „Neues Projekt“](media/add-to-solution.png)
+   > Alternativ können Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe klicken und anschließend **Hinzufügen** > **Neues Projekt** auswählen.
+
+::: moniker range="vs-2017"
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. Geben Sie im Feld **Name** `BankTests` ein, und klicken Sie dann auf die Schaltfläche **OK**.
 
    Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Suchen Sie die C#-Projektvorlage **Komponententestprojekt**, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
+
+3. Benennen Sie das Projekt mit `BankTests`.
+
+4. Klicken Sie auf **Erstellen**.
+
+   Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.
+
+::: moniker-end
 
 5. Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.
 

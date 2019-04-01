@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917765"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415992"
 ---
-# <a name="unit-testing-visual-c-code"></a>Komponententests in Visual C#-Code
+# <a name="unit-test-c-code"></a>Komponententest von C#-Code
 
-In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine Visual C#-Klasse in einer UWP-App beschrieben. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.
+In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine C#-Klasse in einer UWP-App beschrieben. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.
 
 In diesem Artikel wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.
 
@@ -26,13 +26,13 @@ In diesem Artikel werden auch eine einzelne Visual Studio-Projektmappe und separ
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C#**, und wählen Sie **Windows Universal** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.
+2. Suchen Sie die Projektvorlage **Leere App (universelles Windows)**, und wählen Sie sie aus.
 
-3. Nennen Sie das Projekt `Maths`, und stellen Sie sicher, dass **Projektmappenverzeichnis erstellen** ausgewählt ist.
+3. Benennen Sie das Projekt mit `Maths`.
 
 4. Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie anschließend aus dem Kontextmenü die Option **Hinzufügen** > **Neues Projekt** aus.
 
-5. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
+5. Suchen Sie die Projektvorlage **Komponententest-App (Universelles Windows)**, und wählen Sie sie aus.
 
 6. Öffnen Sie *UnitTest1.cs* im Visual Studio-Editor.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867812"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355473"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld „Optionen“
 
@@ -91,11 +91,11 @@ Legt den Standardspeicherort fest, an dem neue Projekte und Projektmappenordner 
 
 ### <a name="user-project-templates-location"></a>Speicherort von Benutzerprojektvorlagen
 
-Gibt den Standardspeicherort an, der vom Dialogfeld **Neues Projekt** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten Projektvorlagen verwendet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Speicherort von Benutzerelementvorlagen
 
-Legt den Standardspeicherort fest, der vom Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten Elementvorlagen verwendet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Siehe auch
 

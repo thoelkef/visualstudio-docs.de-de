@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e6488d21538d49a6bb33648725fb164cdd8acaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929946"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354923"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code
 
-Sobald Sie [Python-Unterstützung für Visual Studio 2017 installiert](installing-python-support-in-visual-studio.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren.
+Sobald Sie [Python-Unterstützung für Visual Studio installiert](installing-python-support-in-visual-studio.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren.
 
 > [!Important]
 > Der hier beschriebene Prozess verschiebt oder kopiert die ursprünglichen Quelldateien nicht. Wenn Sie mit einer Kopie arbeiten möchten, erstellen Sie zunächst eine Kopie des Ordners.

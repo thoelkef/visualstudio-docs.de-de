@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597530"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323723"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 
@@ -67,7 +67,7 @@ Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte
 
 ## <a name="collect-profiling-data-without-debugging"></a>Sammeln von Profilerstellungsdaten ohne das Debuggen
 
-Sie können zum Erfassen von Leistungsdaten ohne Debuggen **Leistungsprofilertools** ausführen. Für die Ausführung einiger Profilerstellungstools sind Administratorrechte erforderlich. Führen Sie daher entweder Visual Studio als Administrator aus, oder führen Sie die Tools als Administrator aus, wenn Sie die Diagnosesitzung starten.
+Sie können zum Erfassen von Leistungsdaten ohne Debuggen **Leistungsprofilertools** ausführen. Für die Ausführung einiger Profilerstellungstools sind Administratorrechte erforderlich. Öffnen Sie daher entweder Visual Studio als Administrator, oder führen Sie die Tools als Administrator aus, wenn Sie die Diagnosesitzung starten.
 
 1. Öffnen Sie ein Projekt in Visual Studio, und wählen Sie **Debuggen** > **Leistungsprofiler** aus, oder drücken Sie **Alt**+**F2**.
 

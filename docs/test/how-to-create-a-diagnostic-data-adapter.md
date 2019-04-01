@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914018"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416325"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines Adapters für diagnostische Daten
 
@@ -48,21 +48,9 @@ Führen Sie die folgenden Schritte aus, um einen Adapter für diagnostische Date
 
 Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>So erstellen und installieren Sie einen Adapter für diagnostische Daten
-
-1. Erstellen Sie eine neue Klassenbibliothek.
-
-   1.  Wählen Sie im Menü **Datei** die Option **Neu**, und zeigen Sie dann auf **Neues Projekt**.
-
-   2.  Wählen Sie unter **Projekttypen** die zu verwendende Sprache aus.
-
-   3.  Wählen Sie unter **Von Visual Studio installierte Vorlagen** die Option **Klassenbibliothek** aus.
-
-   4.  Geben Sie einen Namen für den Adapter für diagnostische Daten ein.
-
-   5.  Klicken Sie auf **OK**.
+1. Erstellen Sie ein neues **Klassenbibliotheksprojekt**.
 
 2. Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon** hinzu.
 

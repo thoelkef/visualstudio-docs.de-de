@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926254"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415900"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
@@ -35,34 +35,24 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 1.  Öffnen Sie eine Projektmappe, die das Webleistungs- und Auslastungstestprojekt mit dem Webleistungstest enthält, für den Sie ein Aufzeichnungs-Plug-In erstellen möchten.
 
-2.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
+2.  Fügen Sie der Projektmappe ein neues **Klassenbibliotheksprojekt** hinzu.
 
-     Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
-
-3.  Wählen Sie unter **Installierte Vorlagen** den Eintrag **Visual C#** aus.
-
-4.  Wählen Sie in der Liste der Vorlagen **Klassenbibliothek** aus.
-
-5.  Geben Sie im Textfeld **Name** einen Namen für das Aufzeichnungs-Plug-In ein.
-
-     Die Klassenbibliothek wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** geöffnet.
-
-6.  Klicken Sie im **Projektmappen-Explorer** im Ordner des neuen Klassenbibliotheksprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+3.  Klicken Sie im **Projektmappen-Explorer** im Ordner des neuen Klassenbibliotheksprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
     > [!TIP]
     > Ein Beispiel für den Ordner eines neuen Klassenbibliothekprojekts ist **RecorderPlugins**.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-7.  Wählen Sie die Registerkarte **.NET** aus.
+4.  Wählen Sie die Registerkarte **.NET** aus.
 
-8.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus und klicken dann auf **OK**.
+5.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus und klicken dann auf **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird im **Projektmappen-Explorer** zum Ordner **Verweise** hinzugefügt.
 
-9. Schreiben Sie den Code für das Aufzeichnungs-Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> abgeleitet wird.
+6. Schreiben Sie den Code für das Aufzeichnungs-Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> abgeleitet wird.
 
-10. Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> -Methode.
+7. Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> -Methode.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
     > [!NOTE]
     > Wenn Sie den Webleistungstest ändern, müssen Sie auch die <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*>-Eigenschaft auf „TRUE“ festlegen: `e.RecordedWebTestModified = true;`
 
-11. Fügen Sie entsprechend den Aktionen, die das Aufzeichnungs-Plug-In nach der Webaufzeichnung ausführen soll, weiteren Code hinzu. Sie können z. B. Code hinzufügen, um die benutzerdefinierte Korrelation wie im folgenden Beispiel dargestellt zu behandeln. Ein Aufzeichnungs-Plug-In kann auch für Aufgaben wie das Konvertieren von Kommentaren in Transaktionen oder Hinzufügen von Validierungsregeln zum Webleistungstest erstellt werden.
+8. Fügen Sie entsprechend den Aktionen, die das Aufzeichnungs-Plug-In nach der Webaufzeichnung ausführen soll, weiteren Code hinzu. Sie können z. B. Code hinzufügen, um die benutzerdefinierte Korrelation wie im folgenden Beispiel dargestellt zu behandeln. Ein Aufzeichnungs-Plug-In kann auch für Aufgaben wie das Konvertieren von Kommentaren in Transaktionen oder Hinzufügen von Validierungsregeln zum Webleistungstest erstellt werden.
 
-12. Klicken Sie im Menü **Erstellen** auf **\<Name des Klassenbibliotheksprojekts> erstellen**.
+9. Klicken Sie im Menü **Erstellen** auf **\<Name des Klassenbibliotheksprojekts> erstellen**.
 
-13. Als Nächstes müssen Sie das Aufzeichnungs-Plug-In bereitstellen, um es in Visual Studio zu registrieren.
+Stellen Sie als Nächstes das Aufzeichnungs-Plug-In bereit, um es in Visual Studio zu registrieren.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Bereitstellen des Aufzeichnungs-Plug-Ins
 
@@ -96,7 +86,7 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, speichern Sie die sich e
 > [!WARNING]
 > Nachdem Sie das Aufzeichnungs-Plug-In an einen dieser Speicherorte kopiert haben, müssen Sie Visual Studio neu starten, damit das Aufzeichnungs-Plug-In registriert wird.
 
-### <a name="to-execute-the-recorder-plug-in"></a>So führen Sie das Aufzeichnungs-Plug-In aus
+### <a name="execute-the-recorder-plug-in"></a>Ausführen des Aufzeichnungs-Plug-Ins
 
 1.  Erstellen Sie einen neuen Webleistungstest.
 
@@ -123,9 +113,7 @@ In diesem Beispiel wird veranschaulicht, wie ein benutzerdefiniertes Aufzeichnun
 > [!NOTE]
 > Eine vollständige Auflistung des Beispielcodes finden Sie am Ende dieses Themas.
 
-**Überprüfen des Beispielcodes**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Durchlaufen des Ergebnisses, um nach der ersten Seite mit "ReportSession" zu suchen
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Durchlaufen des Ergebnisses, um nach der ersten Seite mit "ReportSession" zu suchen
 
 In diesem Teil des Codebeispiels wird jedes aufgezeichnete Objekt durchlaufen und im Antworttext nach "ReportSession" gesucht.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Hinzufügen einer Extraktionsregel
+### <a name="add-an-extraction-rule"></a>Hinzufügen einer Extraktionsregel
 
 Nachdem eine Antwort gefunden wurde, müssen Sie eine Extraktionsregel hinzufügen. In diesem Teil des Codebeispiels wird die Extraktionsregel mithilfe der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>-Klasse erstellt, und anschließend wird im Webleistungstest nach der Anforderung gesucht, der die Extraktionsregel hinzugefügt werden soll. Jedem Ergebnisobjekt wird eine neue Eigenschaft mit dem Namen DeclarativeWebTestItemId hinzugefügt. Diese Eigenschaft wird im Code verwendet, um die richtige Anforderung aus dem Webleistungstest abzurufen.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Ersetzen von Abfragezeichenfolgen-Parametern
+### <a name="replace-query-string-parameters"></a>Ersetzen von Abfragezeichenfolgen-Parametern
 
 In diesem Teil des Codebeispiels wird nach allen Abfragezeichenfolgen-Parametern mit dem Namen "ReportSession" gesucht und der Wert in {{SessionId}} geändert:
 

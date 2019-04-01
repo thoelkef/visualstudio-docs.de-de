@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335271"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324746"
 ---
 # <a name="find-references-in-your-code"></a>Suchen von Verweisen im Code
 
 Mithilfe des Befehls **Alle Verweise suchen** können Sie in Ihrer gesamten Codebasis die Stellen finden, an denen auf bestimmte Codeelemente verwiesen wird. Den Befehl **Alle Verweise suchen** finden Sie im Kontextmenü (Rechtsklick) des Elements, für das Sie Verweise suchen möchten. Wenn Sie eine Tastatur verwenden, können Sie einfach **UMSCHALT+F12** drücken.
 
-Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **<element>-Verweise** angezeigt, wobei *element* dem Namen des gesuchten Elements entspricht. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:
+Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **\<Element>-Verweise** angezeigt, wobei *Element* der Name des gesuchten Elements ist. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:
 - Den Suchbereich über ein Dropdown-Listenfeld ändern. Sie können auswählen, nur in geänderten Dokumenten bis hin zur gesamten Projektmappe zu suchen.
 - Das ausgewählte Verweiselement durch Auswählen der Schaltfläche **Kopieren** kopieren.
 - Schaltflächen auswählen, um zum nächsten oder vorherigen Element in der Liste zu wechseln. Drücken Sie dazu alternativ die Tasten **F8** und **UMSCHALT+F8**.
