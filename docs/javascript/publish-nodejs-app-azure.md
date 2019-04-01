@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070307"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355749"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -59,15 +59,13 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
-
 1. Erstellen Sie eine neue TypeScript Express-App.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie im Dialogfeld **Neues Projekt erstellen** den Begriff **javascript** ins Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie anschließend **Azure Node.js Express 4-Basisanwendung** und dann **Weiter** aus. Wählen Sie anschließend **Erstellen** aus.
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Node.js** ein, und wählen Sie dann **Neue einfache Azure Node.js Express 4-Anwendung erstellen** (TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Wählen Sie im mittleren Bereich die Option **Azure Node.js Express 4-Basisanwendung** und anschließend **OK** aus.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich die Option **Azure Node.js Express 4-Basisanwendung** und anschließend **OK** aus.
 
     ![Erstellen einer neuen TypeScript Express-App](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

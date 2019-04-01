@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155536"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324252"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 
@@ -35,7 +35,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefordert. Dieser Schritt ist für dieses Tutorial nicht unbedingt notwendig. Als Nächstes wird Ihnen möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Ihre Entwicklungseinstellungen und Farbdesigns festzulegen. Behalten Sie die Standardeinstellungen bei, und klicken Sie auf **Visual Studio starten**.
+Wenn Sie Visual Studio zum ersten Mal öffnen, werden Sie zur Anmeldung aufgefordert. Dieser Schritt ist für dieses Tutorial nicht unbedingt notwendig. Als Nächstes wird Ihnen möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Ihre Entwicklungseinstellungen und Farbdesigns festzulegen. Behalten Sie die Standardeinstellungen bei, und klicken Sie auf **Visual Studio starten**.
 
 ![Dialogfeld „Einstellungen auswählen“](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten u
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie Visual Studio starten, wird zunächst das Fenster **Start** geöffnet. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+Wenn Sie Visual Studio starten, wird zunächst das Startfenster geöffnet. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
 ::: moniker-end
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983389"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268545"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 
@@ -141,7 +141,7 @@ Sie können diese Benachrichtigung ignorieren oder eine der folgenden Maßnahmen
 
 Bei Installation eines Onlinebeispiels wird die Projektmappe an zwei Orten gespeichert:
 
-- Eine Arbeitskopie wird an dem Speicherort gespeichert, den Sie im Dialogfeld **Neues Projekt** angegeben haben.
+- Eine Arbeitskopie wird an dem Speicherort gespeichert, den Sie beim Erstellen des Projekts angegeben haben.
 
 - Eine separate Masterkopie wird auf dem Computer gespeichert.
 
@@ -163,7 +163,7 @@ Im Fenster **Erweiterungen verwalten** können folgende beispielbezogene Aufgabe
 
 - Installieren von Beispielpacks, die Auflistungen von Beispielen zu einer Technologie oder Funktion sind
 
-- Installieren individueller Onlinebeispiele (Sie können dies im Dialogfeld **Neues Projekt** ausführen.)
+- Installieren individueller Onlinebeispiele
 
 - Anzeigen von Updatebenachrichtigungen, wenn für installierte Quellcodeänderungen Beispiele veröffentlicht werden
 

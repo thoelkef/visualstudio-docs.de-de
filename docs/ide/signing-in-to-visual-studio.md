@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840830"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325106"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -44,7 +44,7 @@ Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
 
-Wenn Sie Visual Studio erstmals starten, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Wenn Sie Visual Studio erstmals öffnen, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Wählen Sie anschließend die gewünschten Einstellungen für die Benutzeroberfläche und das Farbschema in Visual Studio aus. Visual Studio speichert diese Einstellungen und synchronisiert sie über alle Visual Studio-Umgebungen hinweg, an denen Sie sich angemeldet haben. Eine Liste der synchronisierten Einstellungen finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). Sie können die Einstellungen später im Visual Studio-Menü unter **Extras** > **Optionen** ändern.
 

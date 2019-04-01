@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920103"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355697"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
@@ -40,7 +40,7 @@ Im Zuge dieser Tutorialschritte erstellen Sie eine Visual Studio-Projektmappe, d
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio 2017 unter Windows mit den folgenden Optionen:
+- Visual Studio 2017 oder höher unter Windows mit den folgenden Optionen:
   - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git für Windows** und **GitHub-Erweiterung für Visual Studio** auf der Registerkarte **Einzelne Komponenten** unter **Codetools**.
 
@@ -60,7 +60,7 @@ Die Python-Entwicklung wird in Visual Studio für Mac derzeit nicht unterstützt
     - **Speicherort**: Geben Sie einen Speicherort an, an dem die Visual Studio-Projektmappe und das -Projekt erstellt werden sollen.
     - **Projektmappenname**: Legen Sie den Namen auf **LearningFlask** fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
     - **Projektmappenverzeichnis erstellen:** Übernehmen Sie die Einstellungen (den Standardwert).
-    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
+    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
 
 1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld **Dieses Projekt erfordert externe Pakete** angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine *requirements.txt*-Datei enthält, die auf das neueste Flask-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796828"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416369"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -38,7 +38,7 @@ Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingef�
 
 ## <a name="the-mybank-solution-example"></a>Beispiel „MyBank-Projektmappe“
 
-In diesem Thema dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Testmethoden werden in C# geschrieben und mithilfe des Microsoft Unit Testing Framework for Managed Code angezeigt. Die Konzepte lassen sich jedoch leicht auf andere Sprachen und Frameworks übertragen.
+In diesem Artikel dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Testmethoden werden in C# geschrieben und mithilfe des Microsoft Unit Testing Framework for Managed Code angezeigt. Die Konzepte lassen sich jedoch leicht auf andere Sprachen und Frameworks übertragen.
 
 ![Projektmappe MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Ein Komponententestprojekt entspricht in der Regel der Struktur eines einzelnen 
 
 **So fügen Sie einer Projektmappe ein Komponententestprojekt hinzu**
 
-1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt** (Tastatur: **STRG**+**UMSCHALTTASTE**+**N**).
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie dann **Hinzufügen** > **Neues** **Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen Sie die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie dann **Test** aus.
+::: moniker range="vs-2017"
+
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
 
 3. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts `Accounts` in diesem Beispiel `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Verwenden Sie das Projektvorlagen-Suchfeld, um eine Komponententest-Projektvorlage für das Testframework zu finden, das Sie verwenden möchten.
+
+3. Benennen Sie das Projekt auf der nächsten Seite. Beispielsweise können Sie das Projekt zum Testen des Projekts `Accounts` in unserem Beispiel `AccountsTests` nennen.
+
+::: moniker-end
 
 4. Fügen Sie im Komponententestprojekt unter "Test" einen Verweis auf das Codeprojekt hinzu, in unserem Beispiel auf das Projekt "Accounts".
 

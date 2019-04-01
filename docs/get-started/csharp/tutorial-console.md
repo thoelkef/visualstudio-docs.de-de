@@ -2,8 +2,9 @@
 title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736917"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416170"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
 In diesem Tutorial für C# verwenden Sie Visual Studio, um eine Konsolen-App zu erstellen und auszuführen sowie einige Funktionen der integrierten Visual Studio-Entwicklungsumgebung (IDE) zu untersuchen, während Sie diese Aufgaben ausführen.
 
+::: moniker range="vs-2017"
+
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
 Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projekttyp enthält, schon bevor Sie mit der Bearbeitung beginnen, alle Vorlagendateien, die Sie benötigen.
+
+::: moniker range="vs-2017"
 
 1. Öffnen Sie Visual Studio 2017.
 
@@ -56,13 +69,48 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Verwenden der Menüleiste „Extras“
 
-1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
+1. Schließen Sie das Dialogfeld **Neues Projekt**, und wählen Sie in der oberen Menüleiste **Tools** > **Tools und Features abrufen** aus.
 
 1. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus. 
+
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+
+   ![Auswählen der C#-Vorlage für die Konsolen-App (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   >
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
+   >
+   > ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
+
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *Calculator* ein. Wählen Sie anschließend **Erstellen** aus.
+
+   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „Calculator“](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio öffnet Ihr neues Projekt, das den Standardcode „Hallo Welt“ enthält.
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Erstellen der App
 
-Zunächst befassen Sie sich mit grundlegenden Berechnungen von Integern in C#. Daraufhin fügen Sie Code hinzu, um einen einfachen Rechner zu erstellen. – Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
+Zunächst befassen Sie sich mit grundlegenden Berechnungen von Integern in C#. Daraufhin fügen Sie Code hinzu, um einen einfachen Rechner zu erstellen. Anschließend erhalten Sie Informationen zum Debuggen Ihrer App, damit Sie Fehler finden und beheben können. Zuletzt erfahren Sie, wie Sie den Code effizienter machen können.
 
 ### <a name="explore-integer-math"></a>Erkunden von arithmetischen Operationen mit ganzen Zahlen
 
@@ -182,7 +230,7 @@ Optimieren Sie den Code, um weitere Funktionen hinzuzufügen.
 
 ### <a name="add-decimals"></a>Hinzufügen von Dezimalzahlen
 
-Die Rechner-App akzeptiert derzeit nur ganze Zahlen und gibt auch keine Dezimalzahlen zurück. Dies können Sie ändern, indem Sie Code hinzufügen, der die Angabe von Dezimalzahlen zulässt.
+Die Rechner-App akzeptiert derzeit nur ganze Zahlen und gibt auch keine Dezimalzahlen zurück. Die Genauigkeit lässt sich aber erhöhen, indem Sie Code hinzufügen, der die Angabe von Dezimalzahlen zulässt.
 
 Wie Sie auf dem folgenden Screenshot sehen, erhalten Sie die Zahl 0 (null) als Ergebnis, wenn Sie 42 durch 119 dividieren. Dieses Ergebnis ist allerdings zu ungenau.
 
@@ -404,7 +452,7 @@ Fangen wir also an.
 
 1. Wählen Sie **Calculator** aus, um das Programm auszuführen, oder drücken Sie **F5**.
 
-1. Befolgen Sie die Anweisungen, und dividieren Sie die Zahl **42** durch **119**. Ihre App sollte dann in etwa wie folgt aussehen:
+1. Befolgen Sie die Anweisungen, und dividieren Sie die Zahl **42** durch **119**. Die App sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen:
 
     ![Konsolenfenster mit der umgestalteten Rechner-App und Anweisungen zu den auszuführenden Aktionen und zur Fehlerbehandlung bei falschen Eingaben](./media/csharp-console-calculator-refactored.png)
 

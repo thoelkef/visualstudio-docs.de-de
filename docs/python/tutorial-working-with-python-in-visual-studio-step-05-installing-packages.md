@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194897"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354763"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -46,7 +46,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
    Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
 
-   Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
+   Beachten Sie, dass Visual Studio 2017 Version 15.6 und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
 
 7. Erstellen Sie ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 

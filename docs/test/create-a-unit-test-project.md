@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949433"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416135"
 ---
 # <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
@@ -23,11 +23,23 @@ Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen,
 
 ## <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt
 
-1. Wählen Sie im Menü **Datei** die Option **Neu** und anschließend **Projekt** aus. Drücken Sie alternativ auf **STRG**+**UMSCHALT**+**N**.
+1. Wählen Sie im Menü **Datei** die Befehlsfolge **Neu** > **Projekt...** aus, oder drücken Sie **STRG**+**UMSCHALT**+**N**.
+
+::: moniker range="vs-2017"
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
 
 3. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Geben Sie dem Projekt einen Namen, und klicken Sie dann auf **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie auf der Seite **Neues Projekt erstellen** **Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage **Komponententestprojekt (.NET Framework)** aus, und klicken Sie dann auf **Weiter**.
+
+3. Geben Sie auf der Seite **Neues Projekt konfigurieren** einen Namen für Ihr Projekt ein, und klicken Sie dann auf **Erstellen**.
+
+::: moniker-end
 
 4. Fügen Sie Ihrem Komponententestprojekt einen Verweis auf den zu testenden Code hinzu. So fügen Sie einen Verweis auf ein Codeprojekt in derselben Projektmappe ein:
 

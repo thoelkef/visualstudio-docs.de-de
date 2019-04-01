@@ -1,6 +1,6 @@
 ---
-title: 'Vorgehensweise: Verteilen von Codeausschnitten'
-ms.date: 11/04/2016
+title: Verteilen von Codeausschnitten als Extension
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323052"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355421"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Vorgehensweise: Verteilen von Codeausschnitten
 
-Sie können die Codeausschnitte Ihren Freunden senden, und diese können die Ausschnitte mithilfe des **Codeausschnitt-Managers** auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, fügen Sie die Ausschnittdatei in eine Visual Studio-Erweiterung ein. Visual Studio-Benutzer können die Erweiterung anschließend installieren.
+Sie können die Codeausschnitte Ihren Freunden senden, und diese können die Ausschnitte mithilfe des **Codeausschnitt-Managers** auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, können Sie die Ausschnittdatei in eine Visual Studio-Extension einschließen. Visual Studio-Benutzer können die Extension anschließend installieren, um an die Codeausschnitte zu gelangen.
 
-Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) finden Sie die Version des Visual Studio SDK, die zu Ihrer Installation von Visual Studio passt.
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+Installieren Sie die Workload **Visual Studio-Extensionsentwicklung**, um Zugriff auf die **VSIX-Projekt**-Projektvorlagen zu erhalten.
+
+![Visual Studio-Extensionentwicklung-Workload](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Einrichten der Erweiterung
 
-In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Wir stellen den *SNIPPET*-Text zur Verfügung, damit Sie ihn nicht selbst erstellen müssen.
+In diesem Verfahren verwenden Sie den „Hallo Welt“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Dieser Artikel enthält den XML-Code des Codeausschnitts, Sie brauchen also nicht zurückzugehen und einen Codeausschnitt zu erstellen.
 
-1. Erstellen Sie ein neues VSIX-Projekt namens **TestSnippet**. (**Datei** > **Neu** > **Projekt** > **Visual C# (oder Visual Basic)** > **Erweiterungen**)
+1. Erstellen Sie ein neues Projekt aus der Vorlage **Leeres VSIX-Projekt**, und nennen Sie das Projekt **TestSnippet**.
 
 2. Fügen Sie im Projekt **TestSnippet** eine neue XML-Datei hinzu, und nennen Sie sie *VBCodeSnippet.snippet*. Ersetzen Sie den Inhalt durch folgenden XML-Code:
 
@@ -111,7 +115,9 @@ In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemp
 
 4. Speichern Sie den Ausschnitt. Öffnen Sie in der experimentellen Instanz ein Visual Basic-Projekt, und öffnen Sie dann eine der Codedateien. Platzieren Sie den Cursor an einer beliebigen Stelle im Code, klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü den Befehl **Ausschnitt einfügen**.
 
-5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Daraufhin sollte das Popupelement **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:
+5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Daraufhin sollte das Popupelement **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**.
+
+   Die folgende Zeile wird an die Codedatei angefügt:
 
     ```vb
     Console.WriteLine("Hello, World!")

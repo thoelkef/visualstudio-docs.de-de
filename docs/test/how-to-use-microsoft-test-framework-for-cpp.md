@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955075"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324908"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -30,7 +30,7 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    1. Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf den Projektknoten für das Programm, das Sie testen, und klicken Sie dann auf **Eigenschaften** > **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
 
-   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **<Edit>** aus:
+   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus:
 
 
       | Verzeichnis | Eigenschaft |

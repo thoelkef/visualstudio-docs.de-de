@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983831"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475980"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -100,6 +102,9 @@ Die Datei „vs_enterprise.exe“ kann innerhalb von „layoutDir“ aufgerufen 
 > Einige wichtige Metadatendateien, die für die Option `--verify` erforderlich sind, müssen im Layoutofflinecache vorhanden sein. Wenn diese Metadatendateien fehlen, kann "--verify" nicht ausgeführt werden, und das Setup gibt einen Fehler aus. Wenn dieser Fehler bei Ihnen auftritt, erstellen Sie ein neues Offlinelayout in einem anderen Ordner (oder im selben Offlinecacheordner). Führen Sie dazu den gleichen Layoutbefehl aus, mit dem Sie das anfängliche Offlinelayout erstellt haben. Beispielsweise `Vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft liefert in regelmäßigen Abständen Updates für Visual Studio. Ihr neues Layout hat möglicherweise nicht die gleiche Version wie das anfängliche Layout.
+
+> [!NOTE]
+> Die Überprüfung funktioniert nur mit der neuesten Version einer bestimmten Nebenversion von Visual Studio. Sobald eine neue Version veröffentlicht wird, funktioniert die Überprüfung für frühere Patchlevel-Releases der gleichen Nebenversion nicht mehr.
 
 ## <a name="how-to-fix-a-layout"></a>Beheben von Problemen mit Layouts
 

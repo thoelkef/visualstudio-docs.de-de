@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955062"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416400"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI
 
@@ -22,41 +22,27 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
 
 ## <a name="create-a-wpf-app"></a>Erstellen einer WPF-App
 
-1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+1. Erstellen Sie ein neues **WPF-App (.NET Framework)**-Projekt, und benennen Sie es **EinfacheWPFApp**.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+     Der **WPF-Designer** wird geöffnet und zeigt das MainWindow-Element des Projekts an.
 
-2.  Erweitern Sie im Bereich **Installiert** den Eintrag **Visual C#**, und wählen Sie **Windows Desktop** aus.
+2. Öffnen Sie die Toolbox, sofern sie nicht geöffnet ist. Wählen Sie das Menü **Ansicht** und dann **Toolbox** aus.
 
-3.  Stellen Sie sicher, dass die Dropdownliste für das Zielframework über dem mittleren Bereich auf **.NET Framework 4.5** festgelegt ist.
+3. Ziehen Sie unter dem Abschnitt **Alle WPF-Steuerelemente** ein **Button**-, ein **CheckBox**- und ein **ProgressBar**-Steuerelement auf das MainWindow-Element in der Entwurfsoberfläche.
 
-4.  Wählen Sie im mittleren Bereich die Vorlage **WPF-Anwendung** aus.
+4. Wählen Sie das **Schaltflächen**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „button1“. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
 
-5.  Geben Sie im Textfeld **Name** den Namen **SimpleWPFApp** ein.
+5. Wählen Sie das **ProgressBar**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „progressBar1“. Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
 
-6.  Wählen Sie einen Ordner zum Speichern des Projekts aus. Geben Sie im Textfeld **Speicherort** den Namen des Ordners ein.
-
-7.  Klicken Sie auf **OK**.
-
-     Der **WPF-Designer für Visual Studio** wird geöffnet und zeigt das MainWindow-Element des Projekts an.
-
-8.  Öffnen Sie die Toolbox, sofern sie nicht geöffnet ist. Wählen Sie das Menü **Ansicht** und dann **Toolbox** aus.
-
-9. Ziehen Sie unter dem Abschnitt **Alle WPF-Steuerelemente** ein **Button**-, ein **CheckBox**- und ein **ProgressBar**-Steuerelement auf das MainWindow-Element in der Entwurfsoberfläche.
-
-10. Wählen Sie das **Schaltflächen**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „button1“. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
-
-11. Wählen Sie das **ProgressBar**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „progressBar1“. Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
-
-12. Wählen Sie das **CheckBox**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
+6. Wählen Sie das **CheckBox**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
 
      ![Einfache WPF-Anwendung](../test/media/codedui_wpfapp.png)
 
-13. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um einen Click-Ereignishandler hinzuzufügen.
+7. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um einen Click-Ereignishandler hinzuzufügen.
 
      Die Datei *MainWindow.xmal.cs* wird im Code-Editor angezeigt, und der Cursor ist in der neuen button1_Click-Methode positioniert.
 
-14. Fügen Sie am oberen Rand der MainWindow-Klasse einen Delegaten hinzu. Der Delegat wird für die Statusanzeige verwendet. Fügen Sie den Delegaten mit dem folgenden Code hinzu:
+8. Fügen Sie am oberen Rand der MainWindow-Klasse einen Delegaten hinzu. Der Delegat wird für die Statusanzeige verwendet. Fügen Sie den Delegaten mit dem folgenden Code hinzu:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
         }
     ```
 
-15. Fügen Sie folgenden Code in die button1_Click-Methode ein:
+9. Fügen Sie folgenden Code in die button1_Click-Methode ein:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
     }
     ```
 
-16. Speichern Sie die Datei.
+10. Speichern Sie die Datei.
 
 ### <a name="run-the-wpf-app"></a>Ausführen der WPF-App
 
@@ -120,22 +106,14 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Erstellen und Ausführen eines Tests der programmierten UI für „SimpleWPFApp“
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
-     Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
-
-1. Erweitern Sie im Bereich **Installiert** den Eintrag **Visual C#**, und wählen Sie **Test** aus.
-
-1. Wählen Sie im mittleren Bereich die Vorlage **Testprojekt der programmierten UI** aus.
+2. Suchen Sie die Projektvorlage **Coded UI-Testprojekt**, wählen Sie sie aus, und führen Sie dann die Schritte aus, bis das Projekt erstellt ist.
 
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
-1. Klicken Sie auf **OK**.
-
-     Das neue Testprojekt der programmierten UI namens **CodedUITestProject1** wird zur Projektmappe hinzugefügt.
-
-     Das Dialogfeld **Code für den Test der programmierten UI generieren** wird angezeigt.
+     Das neue Testprojekt der programmierten Benutzeroberfläche mit dem Namen **CodedUITestProject1** wird Ihrer Projektmappe hinzugefügt, und das Dialogfeld **Code für den Coded UI-Test generieren** wird angezeigt.
 
 1. Wählen Sie die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus, und klicken Sie auf **OK**.
 

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943466"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322323"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -46,9 +46,7 @@ Das Dialogfeld **Verweis-Manager** zeigt die verschiedenen Kategorien je nach Pr
 
 - **Durchsuchen** mit der Untergruppe **Aktuell**.
 
-## <a name="add-and-remove-a-reference"></a>Hinzufügen oder Entfernen eines Verweises
-
-### <a name="to-add-a-reference"></a>So fügen Sie einen Verweis hinzu
+## <a name="add-a-reference"></a>Hinzufügen eines Verweises
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verweise** oder den Knoten **Abhängigkeiten**, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Hinzufügen** > **Verweis**.
 
@@ -147,44 +145,27 @@ Falls ein Projekt auf .NET Framework 4 und ein anderes auf eine frühere Version
 
 Ein Projekt für [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] kann einem Projekt, das auf .NET Framework ausgerichtet ist, keinen Projektverweis hinzufügen und umgekehrt.
 
-## <a name="windows-tab"></a>Fensterregisterkarte
+## <a name="universal-windows-tab"></a>Registerkarte „Universelles Windows“
 
-Die Registerkarte **Windows** führt alle SDKs auf, die für Plattformen gelten, auf denen Windows-Betriebssysteme ausgeführt werden.
-
-Sie können eine WinMD-Datei in Visual Studio auf zwei Arten generieren:
-
-- **Verwaltete Windows 8.x Store-App-Projekte:** Windows 8.x Store-App-Projekte können WinMD-Binärdateien ausgeben, indem **Projekteigenschaften** > **Ausgabetyp = WinMD-Datei** festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus den Namespaces `A.B` und `A.B.C` besteht, sind die möglichen Namen für die ausgegebene WinMD-Datei *A.winmd* und *A.B.winmd*. Wenn ein Benutzer einen Wert **Projekteigenschaften** > **Assemblyname** oder einen Wert **Projekteigenschaften** > **Namespace** eingibt, der nicht mit den Namespaces im Projekt zusammenhängt, oder kein übergeordneter Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: "'A.winmd' isn't a valid .winmd file name for this assembly." ('A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly.). Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste gemeinsame Namespace `CSWSClassLibrary1`. Ein Visual Basic- oder C#-Desktopprojekt kann nur WinMDs nutzen, die mit Windows 8 SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.
-
-- **Native Windows 8.x Store-App-Projekte:** Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.
-
-Die Registerkarte **Windows** besteht aus zwei Untergruppen.
+Die Registerkarte **Universelles Windows** führt alle SDKs auf, die für Plattformen gelten, auf denen Windows-Betriebssysteme ausgeführt werden.
+Diese Registerkarte enthält zwei Untergruppen: **Core** und **Erweiterungen**.
 
 ### <a name="core-subgroup"></a>Untergruppe „Kernspeicher“
 
-Die Untergruppe **Core** listet alle WinMDs (für Windows Runtime-Elemente) im SDK für die jeweilige Windows-Zielversion auf.
-
-Windows 8.x Store-App-Projekte enthalten bei Projekterstellung standardmäßig Verweise auf alle WinMDs im Windows 8 SDK. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis für das gesamte Windows 8 SDK an. Entsprechend listet die Untergruppe **Core** im **Verweis-Manager** keine der Assemblys aus dem Windows 8 SDK auf, sondern zeigt stattdessen eine Meldung an: „The Windows SDK is already referenced. Please use the Object Browser to explore the references in the Windows SDK.“ („Windows SDK ist bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Windows SDK zu durchsuchen.“)
-
-In den Desktopprojekten wird die Untergruppe **Core** nicht automatisch angezeigt. Sie können die Windows-Runtime hinzufügen, indem Sie das Kontextmenü für den Projektknoten öffnen, **Projekt entladen** auswählen, den folgenden Codeabschnitt hinzufügen, und das Projekt erneut öffnen (indem Sie auf dem Projektknoten **Projekt erneut laden** wählen). Wenn Sie das Dialogfeld **Verweis-Manager** aufrufen, wird die Untergruppe **Core** angezeigt.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Vergessen Sie nicht, das Kontrollkästchen **Windows** in dieser Untergruppe zu aktivieren. Anschließend können Windows-Runtime-Elemente verwendet werden. Allerdings sollten Sie auch <xref:System.Runtime> hinzufügen. Hier definiert die Windows-Runtime einige Standardklassen und Schnittstellen (beispielsweise <xref:System.Collections.IEnumerable>), die in Windows Runtime-Bibliotheken verwendet werden. Informationen über das Hinzufügen von <xref:System.Runtime> finden Sie unter [Managed desktop apps and Windows Runtime (Verwaltete Desktop-Apps und Windows-Runtime)](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
+Universelle Windows-App-Projekte verweisen standardmäßig auf das Universelles Windows SDK. Entsprechend werden in der Untergruppe **Core** im **Verweis-Manager** keine der Assemblys aus dem Universelles Windows SDK aufgelistet.
 
 ### <a name="extensions-subgroup"></a>Untergruppe „Erweiterungen“
 
-**Erweiterungen** listen die Benutzer-SDKs auf, die die als Ziel verwendete Windows-Plattform erweitern. Diese Registerkarte wird nur für Windows 8.x Store-App-Projekte angezeigt. Desktopprojekte zeigen diese Registerkarte nicht an, da sie nur *WINMD*-Dateien von Erstanbietern nutzen können.
+**Erweiterungen** listen die Benutzer-SDKs auf, die die als Ziel verwendete Windows-Plattform erweitern.
 
-Ein SDK ist eine Auflistung von Dateien, die Visual Studio als einzelne Komponente behandelt. Auf der Registerkarte **Erweiterungen** werden SDKs, die sich auf das Projekt beziehen, über das das Dialogfeld **Verweis-Manager** aufgerufen wurde, als einzelne Einträge aufgeführt. Wenn er einem Projekt hinzugefügt wird, wird der gesamte SDK-Inhalt von Visual Studio so verwendet, dass der Benutzer keine weiteren Aktionen ausführen muss, um den SDK-Inhalt in IntelliSense, in der Toolbox, in Designern, im Objektkatalog, im Build, bei der Bereitstellung, beim Debuggen und beim Packen zu nutzen. Informationen über das Anzeigen Ihres SDKs auf der Registerkarte **Erweiterungen** finden Sie unter [Creating a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
+Ein SDK ist eine Auflistung von Dateien, die Visual Studio als einzelne Komponente behandelt. Auf der Registerkarte **Erweiterungen** werden SDKs, die sich auf das Projekt beziehen, über das das Dialogfeld **Verweis-Manager** aufgerufen wurde, als einzelne Einträge aufgeführt. Wenn er einem Projekt hinzugefügt wird, wird der gesamte SDK-Inhalt von Visual Studio so verwendet, dass der Benutzer keine weiteren Aktionen ausführen muss, um den SDK-Inhalt in IntelliSense, in der Toolbox, in Designern, im Objektkatalog, im Build, bei der Bereitstellung, beim Debuggen und beim Packen zu nutzen.
+
+Informationen über das Anzeigen Ihres SDKs auf der Registerkarte **Erweiterungen** finden Sie unter [Creating a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn der Benutzer einen Verweis auf das zweite SDK manuell hinzufügt. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, kann der Benutzer mithilfe des Dialogfelds **Verweis-Manager** SDK-Abhängigkeiten identifizieren, indem nicht nur der Name und die Version des SDKs, sondern auch der Name aller SDK-Abhängigkeiten im Detailbereich aufgelistet werden. Wenn ein Benutzer die Abhängigkeiten nicht identifiziert und nur dieses SDK hinzufügt, fordert MSBuild den Benutzer auf, die Abhängigkeiten hinzuzufügen.
+> Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn Sie manuell einen Verweis auf das zweite SDK hinzufügen. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, unterstützt Sie das Dialogfeld **Verweis-Manager** beim Erkennen von SDK-Abhängigkeiten, indem es alle Abhängigkeiten im Detailbereich auflistet.
 
-Wenn ein Projekttyp Erweiterungen nicht unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
+Wenn ein Projekttyp Erweiterungen nicht unterstützt, wird diese Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
 
 ## <a name="com-tab"></a>COM-Registerkarte
 
@@ -202,11 +183,11 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
 Sie können nicht zu einem SDK navigieren und es dem Projekt hinzufügen. Sie können nur zu einer Datei navigieren (beispielsweise zu einer Assembly oder einer *WINMD*-Datei) und sie dem Projekt hinzufügen.
 
-Beim Erstellen eines Dateiverweises auf eine WinMD-Datei wird als Layout erwartet, dass die Dateien mit den Erweiterungen *<FileName>.winmd*, *<FileName>.dll* und *<FileName>.pri* alle nebeneinander platziert werden. Wenn Sie in den folgenden Szenarien auf ein WinMD verweisen, wird ein unvollständiger Satz von Dateien in das Projektausgabeverzeichnis kopiert und es treten infolgedessen Build- und Laufzeitfehler auf.
+Beim Erstellen eines Dateiverweises auf ein WinMD wird als Layout erwartet, dass die *\<FileName>.winmd*-, *\<FileName>.dll*- und *\<FileName.pri*-Dateien alle nebeneinander platziert werden. Wenn Sie in den folgenden Szenarien auf ein WinMD verweisen, wird ein unvollständiger Satz von Dateien in das Projektausgabeverzeichnis kopiert und es treten infolgedessen Build- und Laufzeitfehler auf.
 
-- **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese native Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die Dateien mit den Erweiterungen *<FileName>.dll* und *<FileName>.winmd* mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Erstellen Sie ein Erweiterungs-SDK, um dieses Problem zu umgehen. Weitere Informationen finden Sie unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
+- **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese native Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die *\<FileName>.dll*- und *\<FileName>.winmd*-Dateien mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Erstellen Sie ein Erweiterungs-SDK, um dieses Problem zu umgehen. Weitere Informationen finden Sie unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
 
-- **Verarbeiten von Steuerelementen**: Ein XAML-Steuerelement besteht mindestens aus den folgenden Dateien: *<FileName>.winmd*, *<FileName>.dll*, *<FileName>.pri*, *<XamlName>.xaml* und *<ImageName>.jpg*. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien mit den Erweiterungen *<FileName>.winmd*, *<FileName>.dll* und *<FileName>.pri* kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *<XamlName>.xaml* und *<ImageName>.jpg* fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Erstellen Sie zur Umgehung des Problems entweder ein Erweiterungs-SDK, indem Sie die Schritte unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:
+- **Verarbeiten von Steuerelementen**: Ein XAML-Steuerelement besteht mindestens aus einer *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* und einer *\<ImageName>.jpg*. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien *\<FileName>.winmd*, *\<FileName>.dll* und *\<FileName>.pri* kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *\<XamlName>.xaml* und *\<ImageName>.jpg* fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Erstellen Sie zur Umgehung des Problems entweder ein Erweiterungs-SDK, indem Sie die Schritte unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:
 
     ```xml
     <PropertyGroup>

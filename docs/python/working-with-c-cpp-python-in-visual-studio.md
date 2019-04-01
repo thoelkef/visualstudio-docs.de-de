@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914278"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416044"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -38,7 +38,7 @@ Das abgeschlossene Beispiel aus dieser exemplarischen Vorgehensweise finden Sie 
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio 2017, wobei die Workloads **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen installiert werden müssen.
+- Visual Studio 2017 oder höher, wobei die Workloads **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen installiert werden müssen.
 - Aktivieren Sie in der Workload **Python-Entwicklung** ebenfalls das Kontrollkästchen **Native Python-Entwicklungstools** auf der rechten Seite. Durch diese Option wird der Großteil der Konfigurationen eingerichtet, die in diesem Artikel beschrieben werden. (Diese Option enthält automatisch auch die C++-Workload.)
 
     ![Auswählen der Option „Native Python-Entwicklungstools“](media/cpp-install-native.png)
@@ -107,7 +107,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
 1. Suchen Sie nach „C++“, wählen Sie **Leeres Projekt** aus, geben Sie den Namen „superfastcode“ (bzw. „superfastcode2“ für das zweite Projekt) ein, und klicken Sie dann auf **OK**.
 
     > [!Tip]
-    > Wenn **Native Python-Entwicklungstools** in Visual Studio 2017 installiert ist, können Sie stattdessen mit der Vorlage **Python-Erweiterungsmodul** beginnen, die bereits vieles von dem enthält, was im Folgenden beschrieben wird. In dieser Vorgehensweise zeigt jedoch der Start mit einem leeren Projekt ausführlich die Erstellung des Erweiterungsmoduls. Sobald Sie den Prozess verstanden haben, spart Ihnen die Vorlage Zeit beim Schreiben Ihrer eigenen Erweiterungen.
+    > Wenn **Native Python-Entwicklungstools** in Visual Studio installiert ist, können Sie stattdessen mit der Vorlage **Python-Erweiterungsmodul** beginnen, die bereits vieles von dem enthält, was im Folgenden beschrieben wird. In dieser Vorgehensweise zeigt jedoch der Start mit einem leeren Projekt ausführlich die Erstellung des Erweiterungsmoduls. Sobald Sie den Prozess verstanden haben, spart Ihnen die Vorlage Zeit beim Schreiben Ihrer eigenen Erweiterungen.
 
 1. Erstellen Sie eine C++-Datei im neuen Projekt, indem Sie mit der rechten Maustaste auf den Knoten **Quelldateien** klicken, **Hinzufügen** > **Neues Element** und dann **C++-Datei** auswählen, es `module.cpp` benennen und dann auf **OK** klicken.
 
@@ -284,7 +284,7 @@ Die erste Methode funktioniert, wenn das Python-Projekt und das C++-Projekt sich
 
 Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, wird das Modul in der globalen Python-Umgebung installiert. Dadurch wird es ebenfalls für andere Python-Projekte zur Verfügung gestellt. (In der Regel erfordert dies, dass Sie die IntelliSense-Vervollständigungsdatenbank für diese Umgebung in Visual Studio 2017 Version 15.5 und früher aktualisieren. Eine Aktualisierung ist ebenfalls erforderlich, wenn das Modul aus der Umgebung entfernt wird.)
 
-1. Wenn Sie Visual Studio 2017 verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** und anschließend **Einzelne Komponenten** > **Compiler, Buildtools und Runtimes** > **Visual C++ 2015.3 v140-Toolset** aus. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
+1. Wenn Sie Visual Studio 2017 oder höher verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** und anschließend **Einzelne Komponenten** > **Compiler, Buildtools und Runtimes** > **Visual C++ 2015.3 v140-Toolset** aus. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
 
 1. Erstellen Sie im C++-Projekt eine Datei mit dem Namen *setup.py*, indem Sie mit der rechten Maustaste auf Projekt klicken und anschließend auf **Hinzufügen** > **Neues Element**. Wählen Sie dann **C++-Datei (.cpp)** aus, benennen Sie die Datei `setup.py`, und wählen Sie anschließend auf **OK** aus (wenn Sie die Datei mit der *.py*-Erweiterung benennen, erkennt Visual Studio sie als Python an, obwohl die C++-Dateivorlage verwendet wird). Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden für die Erweiterungsmethode geeigneten Code ein:
 

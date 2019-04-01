@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222086"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416389"
 ---
 # <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 
 In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie im Artikel [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Hinzufügen einer Benutzerelementvorlage zum Dialogfeld „Neues Element hinzufügen“
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Hinzufügen einer Elementvorlage zum Dialogfeld „Neues Element hinzufügen“
 
 1. Erstellen oder Öffnen Sie ein Projekt in Visual Studio.
 
@@ -46,7 +46,7 @@ In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **As
 
    Die Elementvorlage wird im Dialogfeld **Neues Element hinzufügen** angezeigt. Wenn Sie dem **Assistenten zum Exportieren von Vorlagen** eine Beschreibung hinzugefügt haben, wird diese rechts neben dem Dialogfeld angezeigt.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Aktivieren der Elementvorlage, die in einem Universellen Windows-App-Projekt verwendet werden soll
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Aktivieren der Elementvorlage für die Verwendung in einem Universellen Windows-App-Projekt
 
 Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab. In vielen Fällen müssen Sie die *VSTEMPLATE*-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für ein Universelles Windows-App-Projekt angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen.
 
@@ -68,7 +68,7 @@ Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standard
 
 Sie können nun ein Element auf der Grundlage dieser Vorlage einem Universellen Windows-Projekt hinzufügen, indem Sie das Dialogfeld **Neues Element hinzufügen** verwenden.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Aktivieren der Vorlagen für bestimmte Projektuntertypen
+## <a name="enable-templates-for-specific-project-subtypes"></a>Aktivieren von Vorlagen für bestimmte Projektuntertypen
 
 Sie können angeben, dass die Vorlage nur für bestimmte Projektuntertypen wie Windows, Office, Datenbank oder Web angezeigt wird.
 
@@ -103,7 +103,7 @@ Im folgenden Beispiel wird eine Elementvorlage für **Office**-Projekte dargeste
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>So erstellen Sie eine Elementvorlage manuell ohne den Assistenten zum Exportieren von Vorlagen
+## <a name="manually-create-an-item-template"></a>Manuelles Erstellen einer Elementvorlage
 
 In einigen Fällen sollten Sie eine Elementvorlage manuell von Grund auf neu erstellen.
 

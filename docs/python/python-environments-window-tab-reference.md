@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195205"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355775"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -60,7 +60,7 @@ Beim Verwenden von interaktiven Fenstern in ihrem alltäglichen Workflow entwick
 
 Startskripts enthalten Code, der vom **interaktiven** Fenster automatisch geladen und ausgeführt wird, einschließlich Importe, Funktionsdefinitionen und vieles mehr. Auf derartige Skripts kann auf zwei Weisen verwiesen werden:
 
-1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio 2017\Python Scripts\\\<Umgebung>*, in dem &lt;Umgebung&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
+1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio <version>\Python Scripts\\\<Umgebung>*, wobei &lt;Version&gt; der Visual Studio-Version (wie etwa 2017 oder 2019) und &lt;Umgebung&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
 
 1. Das Steuerelement **Skripts** auf der Registerkarte **Extras** > **Optionen** > **Python** > **Interaktives Fenster** (siehe Optionen für das [interaktive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options) Fenster) gibt einen zusätzlichen Ordner für Startskripts an, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
 
@@ -156,8 +156,8 @@ Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
 
 ![Registerkarte „IntelliSense“ von Python-Umgebungen](media/environments/environments-intellisense-tab.png)
 
-- In **Visual Studio 2017 Version 15.5** und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen.
-- **Visual Studio 2017 Version 15.6** und höher verwendet eine schnellere Methode, um Vervollständigungen bereitzustellen, die nicht standardmäßig von der Datenbank abhängen. Deshalb trägt die Registerkarte die Bezeichnung **IntelliSense [Datenbank deaktiviert]**. Sie können die Datenbank durch Deaktivieren der Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use new style IntelliSense for environments (Neues IntelliSense für Umgebungen verwenden)** aktivieren.
+- In Visual Studio 2017 Version 15.5 und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen.
+- Visual Studio 2017 Version 15.6 und höher verwendet eine schnellere Methode, um Vervollständigungen bereitzustellen, die nicht standardmäßig von der Datenbank abhängen. Deshalb trägt die Registerkarte die Bezeichnung **IntelliSense [Datenbank deaktiviert]**. Sie können die Datenbank durch Deaktivieren der Option **Extras** > **Optionen** > **Python** > **Experimentell** > **Use new style IntelliSense for environments (Neues IntelliSense für Umgebungen verwenden)** aktivieren.
 
 Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
 

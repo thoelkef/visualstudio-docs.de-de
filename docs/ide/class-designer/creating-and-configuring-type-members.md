@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956856"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324239"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
@@ -47,7 +47,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 |Interface|Methode, Eigenschaft, Ereignis (bei C# und Visual Basic)|
 |Abstrakte Klasse|Methode, Eigenschaft (bei C# und Visual Basic), Feld, Ereignis (bei C# und Visual Basic), Konstruktor (Methode), Destruktor (Methode), Konstante|
 |Struktur (Struct in C#)|Methode, Eigenschaft (bei C# und Visual Basic), Feld, Ereignis (bei C# und Visual Basic), Konstruktor (Methode), Konstante|
-|delegate|Parameter|
+|delegate|-Parameter von|
 |Modul (nur VB)|Methode, Eigenschaft, Feld, Ereignis, Konstruktor, Konstante|
 
 > [!NOTE]
@@ -205,7 +205,7 @@ Parameterzeilen enthalten die folgenden Elemente:
 
 - **\<Parameter hinzufügen>**
 
-     Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>**. Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeigt wie im Fenster **Klassendetails**: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 

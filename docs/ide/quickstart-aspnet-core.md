@@ -1,8 +1,10 @@
 ---
 title: Erstellen einer ASP.NET Core-Web-App in C#
 description: Dieser Artikel enthält eine exemplarische Vorgehensweise zum Erstellen einer einfachen „Hallo Welt“-Web-App mit C# und ASP.NET Core.
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,22 +14,32 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957784"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475850"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
 In dieser 5-10-minütigen Einführung in die Bedienung von Visual Studio erstellen Sie eine einfache Hallo-Welt-Web-App unter Verwendung einer ASP.NET-Projektvorlage und der Programmiersprache C#.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitungen
 
 ### <a name="install-visual-studio"></a>Installieren von Visual Studio
 
+::: moniker range="vs-2017"
+
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>Auswählen eines Designs (optional)
 
@@ -37,9 +49,11 @@ Die Screenshots in diesem Schnellstarttutorial verwenden das dunkle Design. Wenn
 
 Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. Der Projekttyp enthält alle nötigen Vorlagendateien zum Erstellen einer Web-App, schon bevor Sie mit der Bearbeitung beginnen.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 1. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** auf, und wählen Sie **.NET Core** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Web-App**. <br/><br/>Benennen Sie Ihre Datei anschließend mit `HelloWorld` und wählen Sie **OK**.
 
@@ -61,9 +75,46 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
    ![Dialogfeld „Neue ASP.NET Core-Webanwendung“](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Wenn **ASP.NET Core 2.1** (oder höher) nicht angezeigt wird, stellen Sie sicher, dass Sie die aktuelle Version von Visual Studio ausführen. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio 2017 auf die aktuelle Version](../install/update-visual-studio.md).
+   > Wenn **ASP.NET Core 2.1** (oder höher) nicht angezeigt wird, stellen Sie sicher, dass Sie die aktuelle Version von Visual Studio ausführen. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio auf die aktuelle Version](../install/update-visual-studio.md).
 
 Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *ASP.NET* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus. 
+
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **ASP.NET Core-Webanwendung** und dann **Weiter** aus.
+
+   ![Wählen Sie die C#-Vorlage für die ASP.NET Core-Webanwendung aus](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Wenn Sie die Vorlage **ASP.NET Core-Webanwendung** nicht sehen, können Sie sie über das Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   >
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Wählen Sie anschließend im Visual Studio-Installer die Workload **ASP.NET- und Webentwicklung** aus.
+   >
+   > ![Workload „ASP.NET Core-Webanwendung“ im Visual Studio-Installer](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
+
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
+
+   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. Überprüfen Sie im Fenster **Neue ASP.NET Core-Webanwendung erstellen**, ob **ASP.NET Core 2.1** oder höher im oberen Dropdownmenü angezeigt wird. Wählen Sie dann **Webanwendung** aus; diese Option beinhaltet Razor Pages-Beispielseiten. Wählen Sie als Nächstes **Erstellen** aus.
+
+   ![Fenster „Neue ASP.NET Core-Webanwendung erstellen“](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio öffnet Ihr neues Projekt.
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>Erstellen und Ausführen der App
 

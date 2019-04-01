@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069592"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355259"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -56,15 +56,13 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
-
 1. Erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie im Dialogfeld **Neues Projekt erstellen** den Begriff **javascript** oder **typescript** ins Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie anschließend **Leere Node.js-Webanwendung** und dann **Weiter**. Wählen Sie anschließend **Erstellen**.
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Vue.js** ein, und wählen Sie dann **Einfache Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Wählen Sie im mittleren Bereich **Grundlegende Vue.js-Webanwendung** und anschließend **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript** oder **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich **Grundlegende Vue.js-Webanwendung** und anschließend **OK**.
     ::: moniker-end
     Wenn die Projektvorlage **Grundlegende Vue.js-Webanwendung** nicht angezeigt wird, müssen Sie die Workload für die **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 

@@ -7,24 +7,26 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926963"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323817"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Erstellen eines Azure-Clouddienstprojekts mit Visual Studio
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Erstellen eines Azure-Clouddienstprojekts mit Visual Studio
+
 Die Azure-Tools für Visual Studio umfassen eine Projektvorlage, mit der Sie einen [Azure-Clouddienst](/azure/cloud-services/cloud-services-choose-me) erstellen können – einen einfachen allgemeinen Azure-Dienst. Nach der Erstellung des Projekts können Sie den Clouddienst mit Visual Studio in Azure konfigurieren, debuggen und bereitstellen.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Schritte zum Erstellen eines Azure-Clouddienstprojekts in Visual Studio
 In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual Studio mit einem oder mehreren Webrollen erläutert.
 
-1. Starten Sie Visual Studio als Administrator.
+::: moniker range="vs-2017"
+1. Öffnen Sie Visual Studio als Administrator.
 
-1. Wählen Sie im Hauptmenü die Optionen **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie im Hauptmenü **Datei** > **Neu** > **Projekt** aus.
 
 1. Wählen Sie **Cloud** in den Projektvorlagenknoten „Visual C#“ oder „Visual Basic“ und dann **Azure-Clouddienst** in der Liste der Vorlagen aus.
 
@@ -35,6 +37,18 @@ In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual
 1. Geben Sie einen Namen und Speicherort für das Projekt und einen Namen für die Projektmappe ein.
 
 1. Klicken Sie auf **OK**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+1. Geben Sie im Suchfeld *Cloud* ein, und wählen Sie dann **Azure-Clouddienst** aus.
+
+   ![Neuer Azure-Clouddienst](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. Benennen Sie das Projekt, und klicken Sie auf **Erstellen**.
+
+   ![Benennen Sie das Projekt.](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. Wählen Sie im Dialogfeld **Neuer Clouddienst** die Rollen aus, die Sie hinzufügen möchten, und klicken Sie auf die Schaltfläche mit dem Pfeil nach rechts, um sie der Projektmappe hinzuzufügen.
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428777"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355590"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
@@ -37,32 +37,35 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ::: moniker range=">=vs-2019"
 
-* Sie müssen Visual Studio 2019 und die Workload für die **Desktopentwicklung mit C++** installiert haben.
+Sie müssen Visual Studio 2019 und die Workload für die **Desktopentwicklung mit C++** installiert haben.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* Sie müssen Visual Studio 2017 und die **Workload für die Desktopentwicklung mit C++** installiert haben.
+Sie müssen Visual Studio 2017 und die **Workload für die Desktopentwicklung mit C++** installiert haben.
 
 ::: moniker-end
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
-Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-2. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**.
+    ::: moniker range=">=vs-2019"
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **C++** ein, und wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, einen Namen wie **Erste-Schritte-Debuggen** ein, und wählen Sie dann **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
-
-3. Geben Sie einen Namen ein, z.B. **get-gestartet-debugging**, und klicken Sie auf **OK**.
+    Wenn die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. Ersetzen Sie in *get-started-debugging.cpp* folgenden Code
+1. Ersetzen Sie in *get-started-debugging.cpp* folgenden Code
 
     ```c++
     int main()

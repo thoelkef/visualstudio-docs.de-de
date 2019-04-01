@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970880"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416251"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
-Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn Sie ein Projekt über das Dialogfeld **Neues Projekt** erstellen, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.
+Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn Sie ein Projekt erstellen, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.
 
 Eine Vorlage mit mehreren Projekten verfügt über mindestens zwei Projektvorlagen und eine Stammvorlage des Typs **ProjectGroup**.
 
 Vorlagen mit mehreren Projekten verhalten sich anders als Vorlagen mit einem Projekt. Sie weisen folgende eindeutige Merkmale auf:
 
-- Einzelnen Projekten in einer Vorlage mit mehreren Projekten können im Dialogfeld **Neues Projekt** keine Namen zugewiesen werden. Verwenden Sie stattdessen das Attribut **ProjectName** des Elements **ProjectTemplateLink** in der *VSTEMPLATE*-Datei, um einen Namen für jedes Projekt anzugeben.
+- Einzelnen Projekten in einer Vorlage mit mehreren Projekten können keine Namen zugewiesen werden, wenn die Vorlage zum Erstellen eines neuen Projekts verwendet wird. Verwenden Sie stattdessen das Attribut **ProjectName** des Elements **ProjectTemplateLink** in der *VSTEMPLATE*-Datei, um einen Namen für jedes Projekt anzugeben.
 
 - Vorlagen mit mehreren Projekten können Projekte für unterschiedliche Sprachen enthalten. Die gesamte Vorlage kann jedoch nur einer einzigen Kategorie zugeordnet werden. Geben Sie die Kategorie der Vorlage im **ProjectType**-Element der *VSTEMPLATE*-Datei an.
 
 Eine Vorlage mit mehreren Projekten muss folgende in eine *ZIP*-Datei komprimierte Elemente enthalten:
 
-- Eine *VSTEMPLATE*-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese *VSTEMPLATE*-Stammdatei enthält Metadaten, die im Dialogfeld **Neues Projekt** angezeigt werden, und gibt an, wo sich die *VSTEMPLATE*-Dateien für die Projekte in der Vorlage befinden. Die Datei muss sich im Stamm der *ZIP*-Datei befinden.
+- Eine *VSTEMPLATE*-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese Datei *vstemplate* im Stammverzeichnis enthält Metadaten, die im Dialogfeld angezeigt werden, in dem Sie ein neues Projekt erstellen. Sie gibt außerdem an, wo sich die *vstemplate*-Dateien für die in der Vorlage enthaltenen Projekte befinden. Die Datei muss sich im Stamm der *ZIP*-Datei befinden.
 
 - Für eine vollständige Projektvorlage sind mindestens zwei Ordner erforderlich, die die Dateien enthalten. Diese Ordner enthalten alle Codedateien und eine *VSTEMPLATE*-Datei für das Projekt.
 
@@ -72,37 +72,37 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
 
 1. Erstellen Sie eine Projektmappe, und fügen Sie mindestens zwei Projekte hinzu.
 
-1. Passen Sie die Projekte an, bis diese in eine Vorlage exportiert werden können.
+2. Passen Sie die Projekte an, bis diese in eine Vorlage exportiert werden können.
 
    > [!TIP]
    > Wenn Sie [Vorlagenparameter](template-parameters.md) verwenden und auf die Variablen der übergeordneten Vorlage verweisen möchten, fügen Sie das Präfix `ext_` zum Namen des Parameters hinzu. Beispielsweise `$ext_safeprojectname$`.
 
-1. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**.
+3. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**.
 
    Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.
 
-1. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie eines der Projekte aus, die Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**. (Sie müssen diese Schritte für jedes Projekt in der Projektmappe wiederholen.)
+4. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie eines der Projekte aus, die Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**. (Sie müssen diese Schritte für jedes Projekt in der Projektmappe wiederholen.)
 
-1. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Klicken Sie auf **Fertig stellen**.
+5. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Klicken Sie auf **Fertig stellen**.
 
    Das Projekt wird als *ZIP*-Datei exportiert und am angegebenen Speicherort platziert.
 
    > [!NOTE]
    > Jedes Projekt muss separat als Vorlage exportiert werden. Wiederholen Sie die vorherigen Schritte also für jedes Projekt in der Projektmappe.
 
-1. Erstellen Sie ein Verzeichnis für Ihre Vorlage und ein Unterverzeichnis für jedes Projekt.
+6. Erstellen Sie ein Verzeichnis für Ihre Vorlage und ein Unterverzeichnis für jedes Projekt.
 
-1. Extrahieren Sie die Inhalte für die *ZIP*-Datei jedes Projekts in das entsprechende Unterverzeichnis, das Sie erstellt haben.
+7. Extrahieren Sie die Inhalte für die *ZIP*-Datei jedes Projekts in das entsprechende Unterverzeichnis, das Sie erstellt haben.
 
-1. Erstellen Sie im Basisverzeichnis eine XML-Datei mit der Erweiterung *VSTEMPLATE*. Diese Datei enthält die Metadaten für die Vorlage mit mehreren Projekten. Im Folgenden finden Sie ein Beispiel für die Struktur der Datei. Stellen Sie sicher, dass Sie den relativen Pfad zu der *VSTEMPLATE*-Datei eines jeden Projekts angeben.
+8. Erstellen Sie im Basisverzeichnis eine XML-Datei mit der Erweiterung *VSTEMPLATE*. Diese Datei enthält die Metadaten für die Vorlage mit mehreren Projekten. Im Folgenden finden Sie ein Beispiel für die Struktur der Datei. Stellen Sie sicher, dass Sie den relativen Pfad zu der *VSTEMPLATE*-Datei eines jeden Projekts angeben.
 
-1. Wählen Sie alle Dateien im Basisverzeichnis aus, rufen Sie das Kontextmenü aus, und wählen Sie **Senden an** > **ZIP-komprimierter Ordner** aus.
+9. Wählen Sie alle Dateien im Basisverzeichnis aus, rufen Sie das Kontextmenü aus, und wählen Sie **Senden an** > **ZIP-komprimierter Ordner** aus.
 
    Die Dateien und Ordner werden in eine *ZIP*-Datei komprimiert.
 
-1. Kopieren Sie die *ZIP*-Datei in das Verzeichnis für Benutzerprojektvorlagen. Standardmäßig ist das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*.
+10. Kopieren Sie die *ZIP*-Datei in das Verzeichnis für Benutzerprojektvorlagen. Standardmäßig ist das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*.
 
-1. Öffnen Sie in Visual Studio das Dialogfeld **Neues Projekt**, und stellen Sie sicher, dass Ihre Vorlage angezeigt wird.
+11. Wählen Sie in Visual Studio **Datei** > **Neu** > **Projekt** aus, und überprüfen Sie, ob Ihre Vorlage angezeigt wird.
 
 ## <a name="two-project-example"></a>Beispiel mit zwei Projekten
 

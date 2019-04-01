@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947061"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324921"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:
@@ -125,7 +125,7 @@ Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Einga
 
    (Windows 10) Geben Sie den Namen des Tools im Suchfeld auf der Taskleiste ein, z. B. `dev` oder `developer command prompt`. Dadurch wird eine Liste der installierten Apps angezeigt, die Ihrem Suchmuster entsprechen.
 
-   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<visualstudio installation folder>\<Version>\Common7\Tools*.
+   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<Visualstudio-Installationsordner\>\<Version>\Common7\Tools*.
 
 2. Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
 

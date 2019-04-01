@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526580"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476045"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -82,17 +82,16 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
-1. Öffnen Sie Visual Studio, und klicken Sie auf **Datei** > **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie eine Vorlage für Ihren Anwendungscode aus.
+    ::: moniker range=">=vs-2019"
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neue Konsolen-App (.NET Framework) erstellen** oder **Neue Konsolen-App (.NET Core) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie einen Namen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Konsolen-App** und dann im mittleren Bereich wahlweise **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Geben Sie einen Namen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **OK**.
+    ::: moniker-end
 
-    Klicken Sie für .NET Framework im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Framework)** aus.
-
-    Klicken Sie für .NET Core im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **.NET Core**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Core)** aus.
-
-    Wenn diese Vorlagen nicht angezeigt werden, müssen Sie die entsprechende Workload wie zuvor erläutert installieren.
-
-1. Geben Sie im Feld **Name** **ConsoleApp-FirstApp** ein, und klicken Sie auf **OK**.
+    Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen...**, wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
     Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
 

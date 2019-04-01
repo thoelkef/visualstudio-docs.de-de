@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070333"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342749"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -236,7 +236,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 1. Wählen Sie **Neues Projekt erstellen** aus.
 
-   ![„Neues Projekt erstellen“ im Startfenster von Visual Studio](../media/vs-2019/start-window-create-new-project.png)
+   ![„Neues Projekt erstellen“ im Startfenster von Visual Studio](../media/vs-2019/start-window-create-new-project.png)
 
    Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
 

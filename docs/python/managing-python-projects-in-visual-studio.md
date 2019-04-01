@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194340"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355525"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -75,7 +75,7 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 ![Dialogfeld „Neues Projekt“ mit Python-Vorlagen](media/projects-new-project-dialog.png)
 
-Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
+Die folgende Tabelle fasst die in Visual Studio 2017 und höher verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -88,7 +88,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | **IronPython-Silverlight-Webseite** | Ein IronPython-Projekt, das in einem Browser mit Silverlight ausgeführt wird. Der Python-Code für die Anwendung ist auf der Webseite als Skript enthalten. Ein Codebaustein-Skript-Tag übernimmt JavaScript-Code, der die Ausführung von IronPython in Silverlight initialisiert, von wo aus der Python-Code mit dem DOM kommunizieren kann. |
 | **IronPython-Windows Forms-Anwendung** | Eine Projektstruktur mit IronPython, bei der die Benutzeroberfläche mithilfe von Windows Forms-Code erstellt wird. Die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | **Hintergrundanwendung (IoT)** | Unterstützt die Bereitstellung von Python-Projekten zur Ausführung als Hintergrunddienste auf Geräten. Unter [Windows 10 IoT Core](https://dev.windows.com/en-us/iot) erhalten Sie weitere Informationen. |
-| **Python-Erweiterungsmodul** | Diese Vorlage wird unter Visual C++ angezeigt, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 installiert haben (weitere Informationen finden Sie unter [Installation](installing-python-support-in-visual-studio.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md) beschrieben wird. |
+| **Python-Erweiterungsmodul** | Diese Vorlage erscheint unter Visual C++, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 oder höher installiert haben (weitere Informationen finden Sie unter [Installation](installing-python-support-in-visual-studio.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md) beschrieben wird. |
 
 > [!Note]
 > Da Python eine interpretierte Programmiersprache ist, produzieren Python-Projekte in Visual Studio keine eigenständigen ausführbaren Dateien, wie andere Projekte in kompilierten Sprachen (z.B. C#). Weitere Informationen finden Sie unter [Questions and answers](overview-of-python-tools-for-visual-studio.md#questions-and-answers) (Fragen und Antworten).

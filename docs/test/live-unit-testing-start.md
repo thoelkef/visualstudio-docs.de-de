@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223769"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416298"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -40,15 +40,19 @@ Für dieses Tutorial ist die Installation der Visual Studio Enterprise-Edition m
 
 Erstellen Sie zunächst eine Visual Studio-Projektmappe mit dem Namen `UtilityLibraries`, die ein einfaches .NET-Standard-Klassenbibliotheksprojekt, `StringLibrary`, enthält. Sie können `StringLibrary` in C# oder Visual Basic schreiben.
 
-Die Projektmappe ist nur ein Container für mindestens ein Projekt. Öffnen Sie Visual Studio und führen Sie zum Erstellen der Projektmappe die folgenden Schritte aus:
+Die Projektmappe ist nur ein Container für mindestens ein Projekt. Zum Erstellen einer leeren Projektmappe öffnen Sie Visual Studio und führen die folgenden Schritte aus:
 
 1. Klicken Sie in der Menüleiste von Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Andere Projekttypen**, und wählen Sie **Visual Studio-Projektmappen** aus. Wählen Sie im rechten Bereich die Vorlage **Leere Projektmappe** aus, und geben Sie `UtilityLibraries` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
+1. Geben Sie **Projektmappe** in das Vorlagensuchfeld ein, und wählen Sie dann die Vorlage **Leere Projektmappe** aus.
+
+   ::: moniker range="vs-2017"
 
    ![Das Dialogfeld **Neues Projekt**](./media/lut-start/new-solution.png)
 
-1. Klicken Sie auf **OK**, um die Projektmappe zu erstellen.
+   ::: moniker-end
+
+1. Schließen Sie das Erstellen der Projektmappe ab.
 
 Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit dem Namen `StringLibrary`, die einige Erweiterungsmethoden für das Arbeiten mit Zeichenfolgen enthält.
 
@@ -56,18 +60,35 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
-1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Standard** aus.
+::: moniker range="vs-2017"
+
+2. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Standard** aus.
 
    > [!NOTE]
    > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
 
-1. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
+3. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
    ![Dialogfeld **Neues Projekt hinzufügen**](./media/lut-start/add-project-cs.png)
 
-1. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
 
-1. Ersetzen Sie sämtlichen vorhandenen Code im Codefenster durch den folgenden Code:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie **Klassenbibliothek** in das Vorlagensuchfeld ein, und wählen Sie die Vorlage **Klassenbibliothek (.NET Standard)** aus. Klicken Sie auf **Weiter**.
+
+   > [!NOTE]
+   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
+
+3. Benennen Sie das Projekt mit `StringLibrary`.
+
+4. Klicken Sie auf **Erstellen**, um das Projekt zu erstellen.
+
+::: moniker-end
+
+5. Ersetzen Sie sämtlichen vorhandenen Code im Codefenster durch den folgenden Code:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -79,24 +100,41 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
       - `HasEmbeddedSpaces` gibt `true` zurück, wenn eine Zeichenfolge mit einem Leerzeichen beginnt; andernfalls wird `false` zurückgegeben.
 
-1. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+6. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Standard** aus.
+::: moniker range="vs-2017"
+
+2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Standard** aus.
 
    > [!NOTE]
    > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
 
-1. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
+3. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
    ![Dialogfeld **Neues Projekt hinzufügen**](./media/lut-start/add-project-vb.png)
 
-1. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
 
-1. Ersetzen Sie sämtlichen vorhandenen Code im Codefenster durch den folgenden Code:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie **Klassenbibliothek** in das Vorlagensuchfeld ein, und wählen Sie die Vorlage **Klassenbibliothek (.NET Standard)** aus. Klicken Sie auf **Weiter**.
+
+   > [!NOTE]
+   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
+
+3. Benennen Sie das Projekt mit `StringLibrary`.
+
+4. Klicken Sie auf **Erstellen**, um das Projekt zu erstellen.
+
+::: moniker-end
+
+5. Ersetzen Sie sämtlichen vorhandenen Code im Codefenster durch den folgenden Code:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -108,11 +146,11 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 
       - `HasEmbeddedSpaces` gibt `true` zurück, wenn eine Zeichenfolge mit einem Leerzeichen beginnt; andernfalls wird `false` zurückgegeben.
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das StringLibrary-Projekt, und wählen Sie anschließend **Eigenschaften** aus. Löschen Sie auf der Registerkarte **Anwendung** den Text im Textfeld **Stammnamespace**. Sie hierzu die folgende Abbildung. Der Stammnamespace wird von der [Namespace-Anweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement) im Quellcode definiert.
+6. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das StringLibrary-Projekt, und wählen Sie anschließend **Eigenschaften** aus. Löschen Sie auf der Registerkarte **Anwendung** den Text im Textfeld **Stammnamespace**. Sie hierzu die folgende Abbildung. Der Stammnamespace wird von der [Namespace-Anweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement) im Quellcode definiert.
 
    ![Das Dialogfeld „Projekteigenschaften für ein Visual Basic-Projekt“](./media/lut-start/vb-properties.png)
 
-1. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
+7. Klicken Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe**. Visual Studio müsste Ihre Bibliothek erfolgreich erstellen.
 
 ---
 
@@ -124,77 +162,105 @@ Im nächsten Schritt wird das Komponententestprojekt zum Testen der `StringLibra
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
-1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Core** aus.
+::: moniker range="vs-2017"
+
+2. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Core** aus.
 
    > [!NOTE]
    > Sie müssen die Komponententests nicht in derselben Sprache wie die Klassenbibliothek schreiben.
 
-1. Wählen Sie im rechten Bereich die Vorlage **Komponententestprojekt (.NET Core)** aus, und geben Sie `StringLibraryTests` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
+3. Wählen Sie im rechten Bereich die Vorlage **Komponententestprojekt (.NET Core)** aus, und geben Sie `StringLibraryTests` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
    ![Das Dialogfeld **Neues Projekt hinzufügen** für das Komponententestprojekt](./media/lut-start/add-unit-test-cs.png)
 
-1. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie **Komponententest** in das Vorlagensuchfeld ein, und wählen Sie dann die Vorlage **Komponententestprojekt (.NET Core)** aus. Klicken Sie auf **Weiter**.
+
+3. Benennen Sie das Projekt mit `StringLibraryTests`.
+
+4. Klicken Sie auf **Erstellen**, um das Projekt zu erstellen.
+
+::: moniker-end
 
    > [!NOTE]
    > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
 
-1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
+5. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
 
    ![Das Dialogfeld **Verweis-Manager**](./media/lut-start/add-reference.png)
 
-1. Ersetzen Sie den in der Vorlage angegebenen Codebaustein für den Komponententest durch den folgenden Code:
+6. Ersetzen Sie den in der Vorlage angegebenen Codebaustein für den Komponententest durch den folgenden Code:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Speichern Sie Ihr Projekt, indem Sie auf das Symbol **Speichern** in der Symbolleiste klicken.
+7. Speichern Sie Ihr Projekt, indem Sie auf das Symbol **Speichern** in der Symbolleiste klicken.
 
-1. Da der Komponententestcode einige ASCII-fremde Zeichen enthält, zeigt Visual Studio das folgende Dialogfeld mit der Warnung an, dass einige Zeichen verloren gehen, wenn die Datei im ASCII-Standardformat gespeichert wird. Klicken Sie auf die Schaltfläche **Mit anderer Codierung speichern**.
+8. Da der Komponententestcode einige ASCII-fremde Zeichen enthält, zeigt Visual Studio das folgende Dialogfeld mit der Warnung an, dass einige Zeichen verloren gehen, wenn die Datei im ASCII-Standardformat gespeichert wird. Klicken Sie auf die Schaltfläche **Mit anderer Codierung speichern**.
 
    ![Wählen Sie eine Dateicodierung aus](media/lut-start/ascii-encoding.png)
 
-1. Wählen Sie in der Dropdownliste **Codierung** des Dialogfelds **Erweiterte Speicheroptionen** den Eintrag **Unicode (UTF-8 ohne Signatur) – Codepage 65001** aus, wie in der folgenden Abbildung dargestellt:
+9. Wählen Sie in der Dropdownliste **Codierung** des Dialogfelds **Erweiterte Speicheroptionen** den Eintrag **Unicode (UTF-8 ohne Signatur) – Codepage 65001** aus, wie in der folgenden Abbildung dargestellt:
 
    ![Auswählen der UTF-8-Codierung](media/lut-start/utf8-encoding.png)
 
-1. Kompilieren Sie das Komponententestprojekt, indem Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe neu erstellen** klicken.
+10. Kompilieren Sie das Komponententestprojekt, indem Sie im Hauptebenenmenü von Visual Studio auf **Erstellen** > **Projektmappe neu erstellen** klicken.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe `UtilityLibraries`, wählen Sie **Hinzufügen** > **Neues Projekt** aus.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Core** aus.
+::: moniker range="vs-2017"
+
+2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Core** aus.
 
    > [!NOTE]
    > Sie müssen die Komponententests nicht in derselben Sprache wie die Klassenbibliothek schreiben.
 
-1. Wählen Sie im rechten Bereich die Vorlage **Komponententestprojekt (.NET Core)** aus, und geben Sie `StringLibraryTests` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
+3. Wählen Sie im rechten Bereich die Vorlage **Komponententestprojekt (.NET Core)** aus, und geben Sie `StringLibraryTests` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
    ![Das Dialogfeld **Neues Projekt hinzufügen** für den Komponententest](./media/lut-start/add-unit-test-vb.png)
 
-1. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie **Komponententest** in das Vorlagensuchfeld ein, und wählen Sie dann die Vorlage **Komponententestprojekt (.NET Core)** aus. Klicken Sie auf **Weiter**.
+
+3. Benennen Sie das Projekt mit `StringLibraryTests`.
+
+4. Klicken Sie auf **Erstellen**, um das Projekt zu erstellen.
+
+::: moniker-end
 
    > [!NOTE]
    > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
 
-1. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
+5. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie das Projekt `StringLibrary` aus. Siehe hierzu die folgende Abbildung.
 
    ![Das Dialogfeld **Verweis-Manager**](./media/lut-start/add-reference.png)
 
-1. Ersetzen Sie den in der Vorlage angegebenen Codebaustein für den Komponententest durch den folgenden Code:
+6. Ersetzen Sie den in der Vorlage angegebenen Codebaustein für den Komponententest durch den folgenden Code:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Speichern Sie Ihr Projekt, indem Sie auf das Symbol **Speichern** in der Symbolleiste klicken.
+7. Speichern Sie Ihr Projekt, indem Sie auf das Symbol **Speichern** in der Symbolleiste klicken.
 
-1. Da der Komponententestcode einige ASCII-fremde Zeichen enthält, zeigt Visual Studio das folgende Dialogfeld mit der Warnung an, dass einige Zeichen verloren gehen, wenn die Datei im ASCII-Standardformat gespeichert wird. Klicken Sie auf die Schaltfläche **Mit anderer Codierung speichern**.
+8. Da der Komponententestcode einige ASCII-fremde Zeichen enthält, zeigt Visual Studio das folgende Dialogfeld mit der Warnung an, dass einige Zeichen verloren gehen, wenn die Datei im ASCII-Standardformat gespeichert wird. Klicken Sie auf die Schaltfläche **Mit anderer Codierung speichern**.
 
    ![Wählen Sie eine Dateicodierung aus](media/lut-start/ascii-encoding.png)
 
-1. Wählen Sie in der Dropdownliste **Codierung** des Dialogfelds **Erweiterte Speicheroptionen** den Eintrag **Unicode (UTF-8 ohne Signatur) – Codepage 65001** aus, wie in der folgenden Abbildung dargestellt:
+9. Wählen Sie in der Dropdownliste **Codierung** des Dialogfelds **Erweiterte Speicheroptionen** den Eintrag **Unicode (UTF-8 ohne Signatur) – Codepage 65001** aus, wie in der folgenden Abbildung dargestellt:
 
    ![Auswählen der UTF-8-Codierung](media/lut-start/utf8-encoding.png)
 
-1. Kompilieren Sie das Komponententestprojekt im Hauptebenenmenü von Visual Studio über **Erstellen** > **Projektmappe neu erstellen**.
+10. Kompilieren Sie das Komponententestprojekt im Hauptebenenmenü von Visual Studio über **Erstellen** > **Projektmappe neu erstellen**.
 
 ---
 

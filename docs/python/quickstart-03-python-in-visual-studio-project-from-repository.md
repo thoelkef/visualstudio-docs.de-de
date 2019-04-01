@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928451"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355285"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
-Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert](installing-python-support-in-visual-studio.md) haben, können Sie die GitHub-Erweiterung für Visual Studio hinzufügen. Mit der Erweiterung können Sie problemlos ein Repository von Python-Code klonen und daraus ein Projekt in der IDE erstellen. Sie können auch Repositorys in der Befehlszeile immer klonen und dann mit ihnen in Visual Studio arbeiten.
+Sobald Sie die [Python-Unterstützung in Visual Studio installiert](installing-python-support-in-visual-studio.md) haben, können Sie die GitHub-Erweiterung für Visual Studio hinzufügen. Mit der Erweiterung können Sie problemlos ein Repository von Python-Code klonen und daraus ein Projekt in der IDE erstellen. Sie können auch Repositorys in der Befehlszeile immer klonen und dann mit ihnen in Visual Studio arbeiten.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Installieren Sie die GitHub-Erweiterung für Visual Studio
 

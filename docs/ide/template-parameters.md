@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907684"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355671"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -54,11 +54,11 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
 |itemname|Der vom Benutzer im Dialogfeld **Neues Element hinzufügen** angegebene Name|
 |machinename|Der aktuelle Computername (z. B. Computer01).|
-|projectname|Der vom Benutzer im Dialogfeld **Neues Projekt** angegebene Name|
+|projectname|Der Name, der vom Benutzer bei der Erstellung des Projekts angegeben wurde.|
 |registeredorganization|Der Registrierungsschlüsselwert aus HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Der Stammnamespace des aktuellen Projekts. Dieser Parameter gilt nur für Elementvorlagen.|
 |safeitemname|Der vom Benutzer im Dialogfeld **Neues Element hinzufügen** angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden|
-|safeprojectname|Der vom Benutzer im Dialogfeld **Neues Projekt** angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden|
+|safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
 |Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
 |SpecificSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `SpecificSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `SpecificSolutionName` leer.|
 |userdomain|Die aktuelle Benutzerdomäne.|

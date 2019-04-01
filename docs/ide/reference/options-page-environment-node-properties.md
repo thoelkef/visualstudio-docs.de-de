@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708328"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355603"
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens „Umgebung“
 
@@ -120,7 +120,7 @@ In diesem Artikel werden die Seiten (oder Eigenschaftensammlungen) beschrieben, 
 |Eigenschaftenelementname|Wert|Beschreibung|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (Zeichenfolge)|Bestimmt, ob die IDE alles speichert, bevor ein erstelltes Projekt in der Vorschau angezeigt oder ausgeführt wird.|
-|ProjectsLocation|Get/Set (Zeichenfolge)|Bestimmt das Standardverzeichnis, in dem das Dialogfeld **Projekt hinzufügen** neue Projekte speichert.|
+|ProjectsLocation|Get/Set (Zeichenfolge)|Bestimmt das Standardverzeichnis, in dem neue Projekte gespeichert werden.|
 |ShowOutputWindowBeforeBuild|Get/Set (boolesch)|Bestimmt, ob beim Starten eines neuen Buildvorgangs das **Ausgabe**-Fenster angezeigt wird.|
 |ShowTaskListAfterBuild|Get/Set (boolesch)|Bestimmt, ob bei einem fehlgeschlagenen Buildvorgang nach dessen Beendigung die **Aufgabenliste** angezeigt wird.|
 |TrackFileSelectionInExplorer|Get/Set (boolesch)|Bestimmt, ob das aktuelle Element im **Projektmappen-Explorer** verfolgt wird.|
