@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151244"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475954"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C++ mithilfe des Visual Studio-Debuggers
 
@@ -25,13 +25,13 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
     ::: moniker range=">=vs-2019"
-    Das Dialogfeld **Neues Projekt erstellen** wird angezeigt. Geben Sie **asp.net** in das Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie **ASP.NET Core-Webanwendung** aus, und klicken Sie dann auf **Weiter**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und wählen Sie **Erstellen** aus.
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **C++** ein, und wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Das Dialogfeld **Neues Projekt** wird angezeigt. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
     Wenn die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.

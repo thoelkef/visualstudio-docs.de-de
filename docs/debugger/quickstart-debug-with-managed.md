@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152927"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475967"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 
@@ -25,13 +25,13 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Das Dialogfeld **Neues Projekt erstellen** wird angezeigt. Geben Sie **.net** in das Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie **Konsolen-App (.NET Core)** aus, und klicken Sie dann auf **Weiter**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und wählen Sie **Erstellen** aus.
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Core) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Das Dialogfeld **Neues Projekt** wird angezeigt. Wählen Sie unter **Visual C#** die Option **.NET Core** und dann im mittleren Bereich **Konsolen-App (.NET Core)**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **.NET Core** und dann im mittleren Bereich **Konsolen-App (.NET Core)** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
      Wenn die Vorlage **Konsolen-App (.NET Core)** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Wählen Sie die Workloads **.NET-Desktopentwicklung** und **.NET Core** aus, und klicken Sie anschließend auf **Ändern**.
