@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153014"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354842"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
@@ -25,13 +25,13 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus.
+1. Öffnen Sie Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Das Dialogfeld **Neues Projekt erstellen** wird angezeigt. Geben Sie **asp.net** in das Suchfeld ein, um die Ergebnisse zu filtern. Wählen Sie **ASP.NET Core-Webanwendung** aus, und klicken Sie dann auf **Weiter**. Geben Sie dann einen Namen wie **MyDbgApp** ein, und wählen Sie **Erstellen** aus.
+    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Das Dialogfeld **Neues Projekt** wird angezeigt. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET Core-Webanwendung**. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Web** aus, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung** aus. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
     Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
 
