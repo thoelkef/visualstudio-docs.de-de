@@ -42,10 +42,10 @@ items:
     href: application-timeline.md
   - name: Verwenden von PerfTips
     href: perftips.md
-  - name: Analysieren von JavaScript-Speicher
-    href: javascript-memory.md
   - name: Analysieren der Netzwerkverwendung
     href: network-usage.md
+  - name: Analysieren von JavaScript-Speicher
+    href: javascript-memory.md
   - name: Analysieren der HTML-UI-Reaktionsfähigkeit
     href: html-ui-responsiveness.md
   - name: Verwenden des Leistungs-Explorers
@@ -807,9 +807,9 @@ items:
   items:
   - name: Neuerungen bei den Profilerstellungstools
     href: what-s-new-in-profiling-tools.md
-ms.openlocfilehash: bb8084e155ff87a596fdb5374cb3e67f86243f3d
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 8369f284b302be0240f85c26aa7c89d13566af5f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007370"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790783"
