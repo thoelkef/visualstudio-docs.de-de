@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692826"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789529"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.
@@ -40,26 +40,27 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?
  Hier ist, wie Sie einer VSIX-Datei vornehmen, die einen Menübefehl hat:
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt
 
-1.  Erstellen eines VSIX-Projekts (**Datei** > **neu** > **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** > **Erweiterbarkeit** oder **Visual Basic**  >   **Erweiterbarkeit** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.
+1. Erstellen eines VSIX-Projekts (**Datei** > **neu** > **Projekt**, oder geben **Projekt** in das Suchfeld). In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#**   >  **Erweiterbarkeit** oder **Visual Basic**  >  **Erweiterbarkeit** , und wählen Sie **VSIX-Projekt**. Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.
 
-2.  Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. In der **neues Projekt** Dialogfeld für Visual c# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)
+2. Hinzufügen einer **benutzerdefinierten Befehls** Elementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** Dialogfeld für entweder Visual C# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)
 
-3.  Drücken Sie **F5** zum Erstellen und führen Sie das Projekt im Debugmodus befindet.
+3. Drücken Sie **F5** zum Erstellen und führen Sie das Projekt im Debugmodus befindet.
 
-     Eine zweite Instanz von Visual Studio wird geöffnet. Diese zweite Instanz wird experimentelle Instanz genannt und besitzt möglicherweise nicht die gleichen Einstellungen wie die Instanz von Visual Studio, die Sie zum Schreiben von Code verwenden. Wenn Sie die experimentelle Instanz zum ersten Mal ausführen, müssen Sie sich bei VS Online anmelden und Ihr Design und Profil festlegen.
+   Eine zweite Instanz von Visual Studio wird geöffnet. Diese zweite Instanz wird experimentelle Instanz genannt und besitzt möglicherweise nicht die gleichen Einstellungen wie die Instanz von Visual Studio, die Sie zum Schreiben von Code verwenden. Wenn Sie die experimentelle Instanz zum ersten Mal ausführen, müssen Sie sich bei VS Online anmelden und Ihr Design und Profil festlegen.
 
-     Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, sollte eine Meldung angezeigt werden: **In TestVSPackagePackage.MenuItemCallback()**.
+   Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, sollte eine Meldung angezeigt werden: **In TestVSPackagePackage.MenuItemCallback()**.
 
 ##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?
- Add-In-Code kann auf zwei Arten ausgeführt werden:
+
+Add-In-Code kann auf zwei Arten ausgeführt werden:
 
 - Ausgelöst durch einen Menübefehl (der Code befindet sich in der `IDTCommandTarget.Exec` Methode.)
 
 - Automatisch beim Start (Der Code befindet sich im `OnConnection`-Ereignishandler.)
 
-  Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rückrufmethode hinzu:
+Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rückrufmethode hinzu:
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementieren eines Menübefehls in ein VSPackage
 

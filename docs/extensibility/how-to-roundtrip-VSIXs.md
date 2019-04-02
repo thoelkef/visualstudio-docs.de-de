@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323814"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790419"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
@@ -95,7 +95,7 @@ Wir müssen, um Visual Studio mitzuteilen, welche Versionen als Ziel für das Er
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Hinzufügen von Voraussetzungen für die *"Extension.vsixmanifest"* Datei
 
-Voraussetzungen sind ein neues Feature in Visual Studio 2017. In diesem Fall müssen wir die Visual Studio-Kern-Editor als erforderliche Komponente. Da der Visual Studio 2015-VSIX-Designer nicht des neuen behandeln `Prerequisites` Abschnitt müssen Sie diese Komponente in der XML-Code manuell bearbeiten. Alternativ können Sie Visual Studio 2017 öffnen, und verwenden den aktualisierte Manifesten-Designer, um die erforderlichen Komponenten einzufügen.
+Wir müssen die Visual Studio-Kern-Editor als erforderliche Komponente. Öffnen Sie Visual Studio, und verwenden Sie den aktualisierte Manifesten-Designer, um die erforderlichen Komponenten einzufügen.
 
 Die CWL manuell erstellen:
 
@@ -112,7 +112,7 @@ Die CWL manuell erstellen:
 * Speichern und schließen Sie die Datei.
 
 > [!NOTE]
-> Wenn Sie auswählen, um dies mit dem VSIX-Designer in Visual Studio 2017 zu erreichen, müssen Sie manuell bearbeiten, um sicherzustellen, dass er kompatibel mit allen Versionen von Visual Studio 2017 ist die erforderliche Version. Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird. Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
+> Sie müssen möglicherweise manuell bearbeiten, um sicherzustellen, dass er kompatibel mit allen Versionen von Visual Studio 2017 ist die erforderliche Version. Dies ist, da der Designer die mindestens erforderliche Version als aktuelle Version von Visual Studio (z. B. 15.0.26208.0) eingefügt wird. Da andere Benutzer möglicherweise eine frühere Version hat, möchten Sie jedoch werden dies manuell bearbeiten, bis 15.0 angibt.
 
 An diesem Punkt sollte Ihre Manifestdatei etwa wie folgt aussehen:
 

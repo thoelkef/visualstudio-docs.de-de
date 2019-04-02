@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194417"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790159"
 ---
 # <a name="create-an-options-page"></a>Erstellen einer Optionsseite
 
@@ -101,7 +101,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
 
      Klicken Sie im linken Bereich sollte **My Category**. (Optionen Kategorien werden in alphabetischer Reihenfolge aufgeführt, sodass sie über während des laufenden Vorgangs in der Liste angezeigt werden soll.) Open **My Category** , und klicken Sie dann auf **Meine Rasterseite**. Das Raster wird im rechten Bereich angezeigt. Die Eigenschaftskategorie ist **Meine Optionen**, und der Eigenschaftenname ist **Meine ganze Zahl Option**. Die Beschreibung der Eigenschaft **Meine ganze Zahl Option**, wird am unteren Rand des Bereichs. Ändern Sie den Wert der ursprüngliche Wert von 256 auf etwas anderes. Klicken Sie auf **OK**, und klicken Sie dann erneut öffnen **Meine Rasterseite**. Sie können sehen, dass der neue Wert beibehalten.
 
-     Ihre Seite "Optionen" ist auch über Visual Studio-Schnellstarts verfügbar. Geben Sie in das Fenster "Schnellstart" in der oberen rechten Ecke der IDE, **My Category** und Sie sehen **My Category -> Meine Rasterseite** in der Dropdownliste aufgeführt.
+     Ihre Seite "Optionen" ist auch über das Suchfeld Visual Studio zur Verfügung. Geben Sie in das Suchfeld am oberen Rand der IDE **My Category** sehen Sie **My Category -> Meine Rasterseite** in den Ergebnissen aufgeführt.
 
 ## <a name="create-a-tools-options-custom-page"></a>Erstellen einer benutzerdefinierten Tools-Optionen-Seite
 
