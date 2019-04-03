@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699469"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790510"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Starten einer Debugsitzung für eine UWP-App
 
-Dieser Artikel beschreibt, wie Sie eine Visual Studio-Debugsitzung für eine universelle Windows-Plattform (UWP)-app zu starten. UWP-apps in XAML, C++ und XAML geschrieben werden können und C#Nachrichtentexts, oder HTML und JavaScript. Klicken Sie zum Starten des Debuggens einer UWP-Apps Konfigurieren der Debugsitzung, und wählen Sie die Möglichkeit, die app zu starten.
+Dieser Artikel beschreibt, wie Sie eine Visual Studio-Debugsitzung für eine universelle Windows-Plattform (UWP)-app zu starten. UWP-apps in XAML, C++ und XAML geschrieben werden können und C#Nachrichtentexts. Klicken Sie zum Starten des Debuggens einer UWP-Apps Konfigurieren der Debugsitzung, und wählen Sie die Möglichkeit, die app zu starten.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Ab Visual Studio-2019 wird werden für HTML und JavaScript-UWP-apps nicht mehr unterstützt.
+::: moniker-end
+::: moniker range="vs-2017"
+In Visual Studio 2017 gelten die meisten Befehle und Optionen, die in diesem Artikel gezeigten auch für UWP-apps für HTML und JavaScript. Bei Befehlen unterscheiden zwischen verwalteten und C++-apps mit JavaScript-apps in der Regel sind die Befehle für C++-UWP-apps identisch.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Starten des Debuggen von Visual Studio-Symbolleiste
 
@@ -90,7 +98,7 @@ Verwenden Sie zum Konfigurieren zusätzlicher Optionen für das Debuggen des Pro
 
      ![C#und Visual Basic-Projekt Debuggen-Eigenschaftenseite](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Wählen Sie für C++ und JavaScript-apps, **Konfigurationseigenschaften** > **Debuggen**.
+   - Wählen Sie für C++-apps **Konfigurationseigenschaften** > **Debuggen**.
 
      ![Eigenschaftenseite "debugging" C++-UWP-app](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Verwenden Sie zum Konfigurieren zusätzlicher Optionen für das Debuggen des Pro
 
 Für C# und Visual Basic-Anwendungen, Visual Studio debuggt verwaltetem Code in der Standardeinstellung. Sie können auch andere oder zusätzliche Codetypen debuggen. Sie können auch festlegen **Debuggertyp** Werte für alle Hintergrundaufgaben, die Teil des Projekts sind.
 
-In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. In JavaScript-apps debuggt Visual Studio Skript standardmäßig. Sie können auch bestimmte Codetypen anstelle von oder zusätzlich zu den systemeigenen Code Debuggen.
+In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. Sie können auch bestimmte Codetypen anstelle von oder zusätzlich zu den systemeigenen Code Debuggen.
 
 **So geben Sie Code, die zu debuggenden Codetypen an:**
 
 - Für C# , und wählen Sie einen der folgenden Debugger in Visual Basic-Anwendungen, die **Anwendungstyp** und **Hintergrund Prozesstyp** Dropdownmenüs unter **Debuggertyp** auf die **Debuggen** Eigenschaftenseite.
 
-- Für C++ / JavaScript-apps wählen Sie einen der folgenden Debugger in den **Debuggertyp** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+- Für C++-apps wählen Sie eine der folgenden Debugger in den **Debuggertyp** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. 
 
 -   Für C# und Visual Basic-Anwendungen, deaktivieren Sie die **lokales netzwerkloopback zulassen** Kontrollkästchen unter **Startoptionen** auf die **Debuggen** Eigenschaftenseite.
 
--   Wählen Sie für Visual C++ und JavaScript-apps, **keine** aus der **lokaler Netzwerkloopback zulassen** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+-   Wählen Sie für Visual C++-apps **keine** aus der **lokaler Netzwerkloopback zulassen** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Installieren Sie die Anwendung neu, wenn Sie das Debuggen starten (optional)
- Diagnostizieren Sie Probleme bei der Installation eine C# oder Visual Basic-app, und wählen **deinstallieren und installieren Sie Mein Paket erneut** auf die **Debuggen** Eigenschaftenseite. Diese Option wird die ursprüngliche Installation neu erstellt, beim Starten des Debuggens. Diese Option nicht für C++ und JavaScript-Projekte verfügbar ist.
+ Diagnostizieren Sie Probleme bei der Installation eine C# oder Visual Basic-app, und wählen **deinstallieren und installieren Sie Mein Paket erneut** auf die **Debuggen** Eigenschaftenseite. Diese Option wird die ursprüngliche Installation neu erstellt, beim Starten des Debuggens. Diese Option nicht für C++-Projekte verfügbar ist.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Festlegen von Authentifizierungsoptionen für das Remotedebuggen
 
@@ -139,7 +147,7 @@ Die **universell (unverschlüsseltes Protokoll)** Authentifizierungsmodus ist f�
 
 - Für C# und Visual Basic-apps, auf die **Debuggen** auf der Seite wählen **Remotecomputer** als die **Zielgerät**. Wählen Sie dann **keine** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungsmodus**.
 
-- Wählen Sie für C++ und JavaScript-apps, **Remotecomputer** unter **zu startender Debugger** auf die **Debuggen** Eigenschaftenseite. Wählen Sie dann **keine Authentifizierung** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungstyp**.
+- Wählen Sie für C++-apps **Remotecomputer** unter **zu startender Debugger** auf die **Debuggen** Eigenschaftenseite. Wählen Sie dann **keine Authentifizierung** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungstyp**.
 
 > [!CAUTION]
 > Es gibt keine Netzwerksicherheit, beim Ausführen des Remotedebuggers in **keine** oder **universell (unverschlüsseltes Protokoll)** Modi. Wählen Sie diesen Modus nur in vertrauenswürdigen Netzwerken, die Sie nicht sicher durch bösartigen Code oder feindlichen Datenverkehr gefährdet sind.
@@ -156,7 +164,7 @@ Standardmäßig startet der Visual Studio die app sofort beim Starten des Debugg
 
 - Für C# und Visual Basic-Anwendungen, die Option **nicht starten sondern Debuggen meinen Code** unter **Startoptionen** auf die **Debuggen** Eigenschaftenseite.
 
-- Wählen Sie für C++ und JavaScript-apps, **keine** aus der **Anwendung starten** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+- Wählen Sie für C++-apps **keine** aus der **Anwendung starten** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 Weitere Informationen zum Debuggen von Hintergrundaufgaben finden Sie unter [Trigger anhalten, fortsetzen und hintergrundereignissen für UWP-apps](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Um den Debugger an eine [!INCLUDE[win8_appname_long](../debugger/includes/win8_a
 
  Der Debugger wird in Visual Studio an den Prozess angefügt. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript-Apps werden in einer Instanz des Prozesses *wwahost.exe* ausgeführt. Wenn mehr als eine JavaScript-app ausgeführt wird, müssen Sie wissen, die numerische Prozess-Id (PID) Ihrer App *wwahost.exe* Prozess zum Anfügen.
 >
 > Die einfachste Möglichkeit zum Anfügen an Ihrer JavaScript-app werden alle anderen JavaScript-apps zu schließen. Oder Sie können die PIDs der Ausführung feststellen *wwahost.exe* Prozesse im Windows Task-Manager, bevor Sie Ihre app zu starten. Wenn Sie Ihre app zu starten, die *wwahost.exe* PID verkürzt werden kann, die sich von denen Sie zuvor notiert haben.
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
