@@ -29,7 +29,7 @@ In der Regel wird eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 Dieses Verfahren kann nur für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungen verwendet werden, die von einem Webserver auf dem Computer des Benutzers installiert werden. Es kann nicht für reine Onlineanwendungen verwendet werden, die nur über ihre URL gestartet werden können. Weitere Informationen zu den Unterschieden zwischen reinen Onlineanwendungen und installierten Anwendungen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
-Diese Prozedur verwendet das Windows Software Development Kit (SDK) Tool MageUI.exe. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Sie können auch dieses Verfahren mithilfe von Visual Studio ausführen.
+Diese Prozedur verwendet das Windows Software Development Kit (SDK) Tool MageUI.exe. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Sie können auch dieses Verfahren mithilfe von Visual Studio ausführen.
 
 ## <a name="procedure"></a>Prozedur
 
