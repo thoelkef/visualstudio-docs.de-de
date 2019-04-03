@@ -29,7 +29,7 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
  [Generieren und Ausführen der standardmäßigen Android Native Activity-App](#BuildHello)  
   
 ##  <a name="req"></a> Anforderungen  
- Vor der Erstellung einer Android Native Activity-App müssen Sie sicherstellen, dass Sie alle Systemvoraussetzungen erfüllen und die Option "Visual C++ Mobile-Entwicklung" in Visual Studio 2015 installiert haben. Weitere Informationen finden Sie unter [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Stellen Sie sicher, dass die erforderlichen Drittanbietertools und -SDKs in der Installation enthalten sind und dass der Microsoft Visual Studio-Emulator für Android installiert ist.  
+ Vor der Erstellung einer Android Native Activity-App müssen Sie sicherstellen, dass Sie alle Systemvoraussetzungen erfüllen und die Option "Visual C++ Mobile-Entwicklung" in Visual Studio 2015 installiert haben. Weitere Informationen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Stellen Sie sicher, dass die erforderlichen Drittanbietertools und -SDKs in der Installation enthalten sind und dass der Microsoft Visual Studio-Emulator für Android installiert ist.  
   
 ##  <a name="Create"></a> Erstellen eines neuen Native Activity-Projekts  
  In diesem Lernprogramm erstellen Sie zunächst ein neues Android Native Activity-Projekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus.  
