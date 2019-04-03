@@ -18,7 +18,7 @@ ms.locfileid: "56843350"
 
 Um das Einbinden Ihrer Organisation in das Verwaltungsportal für Abonnements abzuschließen, müssen Sie Ihre Hauptkontaktperson identifizieren.  In diesem Artikel wird erläutert, wo Sie diese Information finden.
 
-1. Um Ihre Hauptkontaktperson zu suchen, besuchen Sie das Volume Licensing Service Center unter „https://www.Microsoft.com/licensing/servicecenter“, und klicken Sie auf **Anmelden**.
+1. Um Ihre Hauptkontaktperson zu suchen, besuchen Sie das Volume Licensing Service Center unter https://www.Microsoft.com/licensing/servicecenter, und klicken Sie auf **Anmelden**.
 
 2. Wählen Sie auf der Registerkarte „Lizenzen“ in der Dropdownliste **Beziehungszusammenfassung** aus.
     > [!div class="mx-imgBorder"]

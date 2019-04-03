@@ -67,7 +67,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 
  Außerdem deaktiviert die IntelliSense-Funktion, wenn Sie Code schreiben, im Code-Editor alle Elemente, die nicht in den Sicherheitsberechtigungen enthalten sind, die Sie konfiguriert haben.
 
- Weitere Informationen finden Sie unter [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).
+ Weitere Informationen finden Sie unter [Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).
 
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Sicherheitsberechtigungen für im Browser gehostete Anwendungen
  Visual Studio bietet die folgenden Projekttypen für WPF-Anwendungen (Windows Presentation Foundation):

@@ -50,7 +50,7 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 
 2. Generieren von Satellitenassemblys für Ihre Anwendung mithilfe von [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-3. Generieren Sie ein Anwendungsmanifest, oder öffnen Sie das vorhandene Anwendungsmanifest, indem Sie *MageUI.exe* verwenden. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
+3. Generieren Sie ein Anwendungsmanifest, oder öffnen Sie das vorhandene Anwendungsmanifest, indem Sie *MageUI.exe* verwenden. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
 
 4. Klicken Sie auf die Registerkarte **Dateien** .
 
