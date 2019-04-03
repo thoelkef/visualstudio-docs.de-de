@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943115"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647244"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 
@@ -26,11 +26,11 @@ Sie können Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenban
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie die **Workloads** Registerkarte. Klicken Sie unter **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**. Wählen Sie die **ändern** , um die arbeitsauslastung in Visual Studio hinzuzufügen.
+Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie **weitere** > **ändern** neben der Version von Visual Studio, die Sie ändern möchten (Wenn Sie haben mehr als eine Version installiert). Auf der **Workloads** Registerkarte **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**, und klicken Sie dann auf **ändern** die Workload hinzufügen Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
 
-1. Erstellen Sie ein Windows Forms-Projekt mit dem Namen **SampleDatabaseWalkthrough**.
+1. Erstellen Sie ein neues **Windows Forms-App** Projekt, und nennen Sie sie **SampleDatabaseWalkthrough**.
 
 2. Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen**.
 
@@ -38,7 +38,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 
      ![Dialogfeld "Elementvorlagen"](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Nennen Sie die Datenbank **"SampleDatabase"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
+4. Nennen Sie die Datenbank **"SampleDatabase"**, und klicken Sie dann auf **hinzufügen**.
 
 ### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 
@@ -62,9 +62,9 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 
 Sehen Sie die Verbindungszeichenfolge für die *SampleDatabase.mdf* Datei durch Öffnen des Eigenschaftenfensters der Datenverbindung:
 
-- Wählen Sie in Visual Studio **Ansicht** > **Objekt-Explorer von SQL Server** , wenn diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
+- Wählen Sie **Ansicht** > **Objekt-Explorer von SQL Server** zum Öffnen der **Objekt-Explorer von SQL Server** Fenster. Erweitern Sie **(Localdb) \MSSQLLocalDB** > **Datenbanken**, und klicken Sie dann mit der rechten Maustaste auf *SampleDatabase.mdf* , und wählen Sie **Eigenschaften**.
 
-- Alternativ können Sie auswählen **Ansicht** > **Server-Explorer**, sofern diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten. Öffnen Sie das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
+- Alternativ können Sie auswählen **Ansicht** > **Server-Explorer**, sofern diese nicht bereits geöffnet ist. Öffnen Sie das Eigenschaftenfenster durch Erweitern der **Datenverbindungen** Knoten, öffnen das Kontextmenü für *SampleDatabase.mdf*, und wählen Sie dann **Eigenschaften**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Erstellen von Tabellen und Schlüsseln mit Tabellen-Designer
 
@@ -72,7 +72,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
 ### <a name="create-the-customers-table"></a>Erstellen der Customers-Tabelle
 
-1. In **Server-Explorer** oder **Objekt-Explorer von SQL Server**, erweitern Sie die **Datenverbindungen** Knoten, und erweitern Sie dann die **SampleDatabase.mdf**Knoten.
+1. In **Server-Explorer**, erweitern Sie die **Datenverbindungen** Knoten, und erweitern Sie dann die **SampleDatabase.mdf** Knoten.
 
 2. Öffnen Sie das Kontextmenü für **Tabellen**, und wählen Sie dann **neue Tabelle hinzufügen**.
 
@@ -101,9 +101,9 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
     ![Tabellen-Designer](../data-tools/media/raddata-table-designer.png)
 
-7. In der oberen linken Ecke des der **Tabellen-Designer**, wählen die **Update** Schaltfläche.
+7. In der oberen linken Ecke des **Tabellen-Designer**Option **Update**.
 
-8. In der **Vorschau der Datenbankupdates** wählen Sie im Dialogfeld die **Update Database** Schaltfläche.
+8. In der **Vorschau der Datenbankupdates** wählen Sie im Dialogfeld **Update Database**.
 
     Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 

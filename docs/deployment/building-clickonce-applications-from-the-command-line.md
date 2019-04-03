@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636956"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567840"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.
@@ -41,21 +41,21 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Erstellen und Veröffentlichen einer ClickOnce-Projekt
 
-1. Klicken Sie auf **neues Projekt** aus der **Datei** Menü. Das Dialogfeld **Neues Projekt** wird angezeigt.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-2. Wählen Sie **Windows-Anwendung** und nennen Sie sie `CmdLineDemo`.
+    Wählen Sie die **Windows-Desktopanwendung** -Projektvorlage aus, und nennen Sie das Projekt `CmdLineDemo`.
 
-3. Von der **erstellen** Menü klicken Sie auf die **veröffentlichen** Befehl.
+1. Von der **erstellen** Menü klicken Sie auf die **veröffentlichen** Befehl.
 
     Dadurch wird sichergestellt, dass das Projekt ordnungsgemäß konfiguriert ist, erzeugt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] anwendungsbereitstellung.
 
     Der Webpublishing-Assistent wird angezeigt.
 
-4. Klicken Sie im Assistenten für das Veröffentlichen auf **Fertig stellen**.
+1. Klicken Sie im Assistenten für das Veröffentlichen auf **Fertig stellen**.
 
     Visual Studio generiert und zeigt die Standardwebseite wird aufgerufen, *Publish.htm*.
 
-5. Speichern Sie das Projekt, und notieren Sie sich den Speicherort des Ordners, in dem es gespeichert ist.
+1. Speichern Sie das Projekt, und notieren Sie sich den Speicherort des Ordners, in dem es gespeichert ist.
 
    Erstellen Sie die oben genannten Schritte eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Projekt, das zum ersten Mal veröffentlicht wurde. Jetzt können Sie den Build außerhalb der IDE reproduzieren.
 

@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957839"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856631"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser kurzen Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in Code vereinfacht.
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 In diesem Artikel wird vorausgesetzt, dass Sie bereits mit der JavaScript-Entwicklung vertraut sind. Wenn dies nicht der Fall ist, sollten Sie sich zunächst ein Tutorial dazu ansehen, z. B.: [Erstellen einer Node.js- und Express-App in Visual Studio](../javascript/tutorial-nodejs.md).
 
@@ -121,6 +121,6 @@ Sie können sich die für Ihre Sprache verfügbaren Codeausschnitte anzeigen las
 - [Codeausschnitte](../ide/code-snippets.md)
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Gliedern](../ide/outlining.md)
-- [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)
-- [Refactoring](../ide/refactoring-in-visual-studio.md)
+- [„Gehe zu Definition“ und „Definition einsehen“](../ide/go-to-and-peek-definition.md)
+- [Umgestaltung](../ide/refactoring-in-visual-studio.md)
 - [Verwendung von IntelliSense](../ide/using-intellisense.md)

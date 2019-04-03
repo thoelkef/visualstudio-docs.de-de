@@ -1,7 +1,7 @@
 ---
 title: JavaScript-Konsolenbefehle | Microsoft-Dokumentation
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701952"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790770"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsole Befehle in Visual Studio
 
-Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für UWP-apps und apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Die Informationen in diesem Thema gelten für Node.js-apps mit Visual Studio mit erstellt die **Node.js-Entwicklung** arbeitsauslastung installiert.
+::: moniker-end
+::: moniker range="vs-2017"
+Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Die Informationen in diesem Thema gelten für Node.js-app, UWP-apps und erstellt mit Visual Studio-Tools für Apache Cordova-apps. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.
 
 > [!NOTE]
 > Wenn das Fenster während einer Debugsitzung nicht verfügbar ist, stellen Sie sicher, dass der Debuggertyp in den Debugeigenschaften für das Projekt auf **Script** festgelegt ist.
+
+Weitere Informationen zur Verwendung der Konsole in Microsoft Edge-Entwicklertools finden Sie unter [in diesem Thema](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Konsolenobjektbefehle
 Diese Tabelle zeigt die Syntax für `console` -Objektbefehle, die Sie im JavaScript-Konsolenfenster oder zum Senden von Meldungen aus dem Code an die Konsole verwenden können. Dieses Objekt stellt mehrere Formulare bereit, damit Sie nach Bedarf zwischen Informationsmeldungen und Fehlermeldungen unterscheiden können.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

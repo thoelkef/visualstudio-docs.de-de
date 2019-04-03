@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476058"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790705"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio (C#, Visual Basic, C++)
 
@@ -65,10 +65,10 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
-    
-    - Für C# oder Visual Basic, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** entweder C# oder Visual Basic. Wählen Sie im angezeigten Dialogfeld **erstellen**.
-    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen** für C++. Wählen Sie im angezeigten Dialogfeld **erstellen**.
+    Drücken Sie **Esc** um den Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+
+    - Für C# oder Visual Basic, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** entweder C# oder Visual Basic. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen** für C++. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Anschließend geben Sie einen Namen oder den Standardnamen verwenden und auf **erstellen**.
     ::: moniker-end
@@ -82,7 +82,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
     Anschließend geben Sie einen Namen oder den Standardnamen verwenden und auf **OK**.
     ::: moniker-end
 
-    Wenn Sie nicht sehen die **Konsolen-App** Projektvorlage, wechseln Sie zu **Tools** > **Tools und Features abrufen...** , dadurch wird die Visual Studio-Installer geöffnet. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
 1. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.
 

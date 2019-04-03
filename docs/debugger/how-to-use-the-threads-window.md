@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476032"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790796"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen eine Multithread-app mithilfe des Fensters Threads (C#, Visual Basic, C++)
 
@@ -37,10 +37,10 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
-    
-    - Für C#, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** für C#. Wählen Sie im angezeigten Dialogfeld **erstellen**.
-    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen**. Wählen Sie im angezeigten Dialogfeld **erstellen**.
+    Drücken Sie **Esc** um den Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+
+    - Für C#, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** für C#. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **erstellen**.
     ::: moniker-end
@@ -52,7 +52,7 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **OK**.
     ::: moniker-end
 
-    Wenn Sie nicht sehen die **Konsolen-App** Projektvorlage, wechseln Sie zu **Tools** > **Tools und Features abrufen...** , dadurch wird die Visual Studio-Installer geöffnet. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
     Das neue Projekt wird im **Projektmappen-Explorer**, und eine Quelldatei namens *"Program.cs"* oder *MyThreadWalkthroughApp.cpp* wird im Quellcodefenster geöffnet.
 
