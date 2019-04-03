@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873177"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790809"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -119,6 +119,7 @@ Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird ei
 
 Die Diagramme können auch bestimmen, ob es CPU-gebundene oder GPU-gebundene Leistungsengpässe gibt.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analysieren der Leistung (JavaScript UWP)
 
 Für UWP-Apps können Sie das JavaScript-Speichertool und das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.
@@ -130,6 +131,7 @@ Das JavaScript-Speichertool ähnelt dem für andere App-Typen verfügbaren Speic
 Verwenden Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche, um die UI-Reaktionsfähigkeit, die langsame Ladezeit und die langsamen visuellen Updates in UWP-Apps zu diagnostizieren. Der Verbrauch ähnelt dem Anwendungszeitachsen-Tool für andere App-Typen. Weitere Informationen finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).
 
 ![Profilerstellungstool „HTML-UI-Reaktionsfähigkeit“](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analysieren der Netzwerkverwendung (UWP)
 
