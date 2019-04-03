@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844073"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789886"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Verwenden des Visual Studio 2017-Vorteils
 
@@ -53,9 +53,12 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 
 13. Wählen Sie Ihr bevorzugtes Design aus, und klicken Sie auf **Visual Studio starten**.
 
-14. Die Startseite wird angezeigt.  Sie können nun mit der Verwendung von Visual Studio beginnen.
+14. Visual Studio wird geöffnet. Sie können nun mit der Verwendung von Visual Studio beginnen.
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![Einstieg in Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Berechtigung
 

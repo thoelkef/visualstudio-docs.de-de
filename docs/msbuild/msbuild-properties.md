@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355616"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515206"
 ---
 # <a name="msbuild-properties"></a>MSBuild-Eigenschaften
 Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet werden können. Sie sind hilfreich, um Werte an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen wird.
@@ -59,7 +59,7 @@ Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet w
  Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Registrierungseigenschaften
- Systemregistrierungswerte können mit der nachfolgend angegebenen Syntax gelesen werden. Dabei steht `Hive` für den Registrierungshive (z.B. **HKEY_LOCAL_MACHINE**), `Key` steht für den Schlüsselnamen, `SubKey` für den Unterschlüsselnamen, und `Value` ist der Wert des Unterschlüssels.
+ Systemregistrierungswerte können mit der nachfolgend angegebenen Syntax gelesen werden. Dabei steht `Hive` für den Registrierungshive (z.B. **HKEY_LOCAL_MACHINE**), `MyKey` steht für den Schlüsselnamen, `MySubKey` für den Unterschlüsselnamen, und `Value` ist der Wert des Unterschlüssels.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
