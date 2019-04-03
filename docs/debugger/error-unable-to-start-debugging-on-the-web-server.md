@@ -73,7 +73,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 
 - Setzen Sie IIS zurück, und wiederholen Sie die Debuggen. Mehrere Instanzen der Debugger können an den IIS-Prozess angefügt werden; Zurücksetzen ein beendet diese. Weitere Informationen finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon">Der Microsoft Visual Studio-Remotedebugmonitor (msvsmon.exe) wird auf dem Remotecomputer nicht ausgeführt</a>
+## <a name="msvsmon"></a> Der Microsoft Visual Studio-Remotedebugmonitor (msvsmon.exe) wird auf dem Remotecomputer nicht ausgeführt
 
 - Wenn Sie auf einem Remotecomputer debuggen, stellen Sie sicher, dass [installiert haben und Ausführen des Remotedebuggers](../debugger/remote-debugging.md). Wenn die Nachricht über eine Firewall erwähnt, stellen Sie sicher die [Ports in der Firewall beheben](../debugger/remote-debugger-port-assignments.md) geöffnet sind, insbesondere dann, wenn Sie eine Drittanbieter-Firewall verwenden.
 - Wenn Sie eine Datei "HOSTS" verwenden, stellen Sie sicher, dass er richtig konfiguriert ist. Angenommen, Debuggen mit **F5** (anstelle von **an den Prozess anhängen**), die HOSTS-Datei muss die gleiche URL wie in den Projekteigenschaften enthalten **Eigenschaften > Web > Server**  oder **Eigenschaften > Debuggen**, je nach Art Ihres Projekts.
