@@ -13,7 +13,7 @@ ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54778302"
@@ -35,7 +35,7 @@ Mithilfe von Visual C++ für plattformübergreifende Mobile-Entwicklung können 
 3.  **Einheitliche Funktionen für das Debuggen.** Verwenden Sie die erstklassigen Debugtools in Visual Studio, um den C++-Code auf allen Plattformen, einschließlich Android-Geräten und -Emulatoren, iOS-Simulatoren und -Geräten sowie Windows- oder Windows Phone-Geräten und -Emulatoren, zu überwachen und zu durchlaufen.  
   
 ## <a name="get-the-tools"></a>Beschaffung der Tools  
- Visual C++ für plattformübergreifende Mobile-Entwicklung ist eine optionale Komponente, die in Visual Studio 2015 enthalten ist. Erforderliche Komponenten und Installationsanweisungen finden Sie unter [Install Visual C++ for Cross-Platform Mobile Development (Installieren von Visual C++ für die plattformübergreifende Mobile-Entwicklung)](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Um Code für iOS zu erstellen, benötigen Sie auch einen Macintosh-Computer und ein Apple iOS-Entwicklerkonto. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Tools zu Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+ Visual C++ für plattformübergreifende Mobile-Entwicklung ist eine optionale Komponente, die in Visual Studio 2015 enthalten ist. Erforderliche Komponenten und Installationsanweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Um Code für iOS zu erstellen, benötigen Sie auch einen Macintosh-Computer und ein Apple iOS-Entwicklerkonto. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Tools zu Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Optimales Leistungsniveau  
  Für alle, die bislang in der Android- oder iOS- Entwicklung zu Hause waren, steht hilfreiches Material für die ersten Schritte zur Verfügung. Visual Studio ist eine ausdrucksvolle und leistungsfähige Entwicklungsumgebung. Informationen dazu, wie Sie das Programm nutzen können, finden Sie unter [Erste Schritte für Android-Entwickler](https://msdn.microsoft.com/library/windows/apps/dn275875.aspx) bzw. [Erste Schritte für iOS-Entwickler](https://msdn.microsoft.com/library/windows/apps/xaml/jj657966.aspx). Diese Themen machen Sie mit Visual Studio und den Konzepten vertraut, die Sie benötigen, um plattformübergreifende Apps für Windows und Windows Phone zu entwickeln. Informationen zu den ersten Schritten beim Schreiben Ihrer ersten plattformübergreifenden App für iOS und Android finden Sie unter [Erstellen einer OpenGL ES-Anwendung für Android und iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
