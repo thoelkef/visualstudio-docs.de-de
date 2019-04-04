@@ -1,11 +1,8 @@
 ---
 title: Verwenden von Code Maps zum Debuggen von Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -20,13 +17,13 @@ ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961955"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +48,7 @@ Code Maps helfen Ihnen, die Übersicht in umfangreichen Codebasen, nicht vertrau
  ![Code Map &#45; Suchen von Code](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")  
   
 ## <a name="start-mapping-the-code"></a>Die Codezuordnung starten  
- Nun beginnen Sie mit dem Mapping der `undo`-Methode und ihrer Beziehungen. Fügen Sie im Code-Editor die `undo`-Methode und die Felder, auf die sie verweist, zu einer neuen Codezuordnung hinzu. Wenn Sie eine neue Zuordnung erstellen, kann es einige Zeit dauern, den Code zu indizieren. Aufgrund der Indizierung können spätere Vorgänge schneller ausgeführt werden.  
+ Nun beginnen Sie mit dem Mapping der `undo`-Methode und ihrer Beziehungen. Fügen Sie im Code-Editor die `undo`-Methode und die Felder, auf die sie verweist, zu einer neuen Code Map hinzu. Wenn Sie eine neue Zuordnung erstellen, kann es einige Zeit dauern, den Code zu indizieren. Aufgrund der Indizierung können spätere Vorgänge schneller ausgeführt werden.  
   
  ![Code Map &#45; -Methode und verwandte Felder anzeigen](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
@@ -146,6 +143,3 @@ Code Maps helfen Ihnen, die Übersicht in umfangreichen Codebasen, nicht vertrau
 ## <a name="see-also"></a>Siehe auch  
  [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [Visualisieren von Code](../modeling/visualize-code.md)
-
-
-

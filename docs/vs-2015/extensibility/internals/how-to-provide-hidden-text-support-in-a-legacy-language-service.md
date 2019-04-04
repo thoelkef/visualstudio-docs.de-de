@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: unterstützen der ausgeblendeten Text in einem Legacysprachdienst | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Unterstützen der ausgeblendeten Text in einem Legacysprachdienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959012"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Vorgehensweise: unterstützen der ausgeblendeten Text in einem Legacysprachdienst
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Sie können Regionen ausgeblendetem Text, zusätzlich zur konturenbereiche erstellen. Ausgeblendeten Text Regionen können Client-gesteuert oder Editor-gesteuert werden und werden verwendet, um einen Bereich des Texts ganz ausblenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist, die nur Skript-Ansicht im HTML-Editor.  
@@ -54,4 +49,3 @@ Sie können Regionen ausgeblendetem Text, zusätzlich zur konturenbereiche erste
         >  Wenn verdeckten Regionen ausgeblendet sind, zeigt der Editor automatisch Zeilen in der ausgeblendeten Bereiche an, dass ihr Vorhandensein aus.  
   
     2.  Gibt an, ob der Bereich ist die Client-gesteuert oder Editor gesteuert werden, in der `dwBehavior` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die intelligente Gliederung Implementierung kann eine Mischung aus und Client-editorgesteuert Gliederung und ausgeblendeter Text Regionen enthalten.
-

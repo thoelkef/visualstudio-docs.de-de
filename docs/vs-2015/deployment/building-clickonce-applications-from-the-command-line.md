@@ -1,14 +1,9 @@
 ---
 title: Erstellen von ClickOnce-Anwendungen über die Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958580"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], Sie können
   
  Die `/target:publish` weist MSBuild an das Veröffentlichungsziel aufrufen. Das Veröffentlichungsziel hängt von der Build-Ziel. Dies bedeutet, dass der Veröffentlichungsvorgang eine Obermenge des Buildvorgangs. Z. B. Wenn Sie auf eine der quellcodeverwaltung für Ihre Visual Basic oder C#-Dateien eine Änderung vorgenommen haben, wird die entsprechende Assembly automatisch durch den Veröffentlichungsvorgang neu erstellt werden.  
   
- Weitere Informationen zum Generieren einer vollständiges [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung über das Befehlszeilentool "Mage.exe" zum Erstellen Ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest, finden Sie unter [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Weitere Informationen zum Generieren einer vollständiges [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung über das Befehlszeilentool "Mage.exe" zum Erstellen Ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest, finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>Erstellen und eine grundlegende ClickOnce-Anwendung, die mithilfe von MSBuild  
   
@@ -73,7 +68,7 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], Sie können
   
 2. Aus dem Windows **starten** im Menü klicken Sie auf **Programme**, klicken Sie dann **Microsoft Visual Studio**, klicken Sie dann **Visual Studio-Tools**, und klicken Sie dann **Visual Studio-Eingabeaufforderung**. Im Stammordner des aktuellen Benutzers sollte eine Eingabeaufforderung geöffnet werden.  
   
-3. In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie z. B. `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. In der **Visual Studio-Eingabeaufforderung**, wechseln Sie zum Speicherort des Projekts, das Sie soeben erstellt, weiter oben haben. Geben Sie beispielsweise Folgendes ein: `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
 4. So entfernen Sie die vorhandenen Dateien in der erstellten "zum Erstellen und Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Projekt" Typ `rmdir /s publish`.  
   
@@ -178,6 +173,3 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-

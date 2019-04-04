@@ -1,26 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Randglyphe | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 172ac543f8777219bb7c5adc94d19e1baeea24e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960945"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Exemplarische Vorgehensweise: Erstellen einer Randglyphe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,4 +141,3 @@ Sie können die Darstellung der Editor Ränder anpassen, mithilfe von benutzerde
 4.  Öffnen Sie eine Codedatei, die Kommentare. Fügen Sie das Wort "Todo", auf einen der Kommentarabschnitte.  
   
 5.  Ein heller blauer Kreis, die einen dunklen blauen über sollte im Indikatorrand auf der linken Seite des Codefensters angezeigt werden.
-

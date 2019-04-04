@@ -1,11 +1,8 @@
 ---
 title: Projektmappenübergreifendes Zuordnen von Abhängigkeiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960677"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 ##  <a name="GetStarted"></a> Erste Schritte mit Code Maps  
  **Zur Verwendung von Code Maps benötigen Sie abhängig von Ihrer Visual Studio-Version**:  
   
--   Visual Studio Enterprise: Erstellen Sie Code Maps im Code-Editor, im Projektmappen-Explorer, in der Klassenansicht oder im Objektbrowser.  
+-   Visual Studio Enterprise: Erstellen von codezuordnungen im Code-Editor, Projektmappen-Explorer, Klassenansicht oder dem Objektkatalog.  
   
--   Visual Studio Professional: Öffnen Sie Code Maps, nehmen Sie eingeschränkte Bearbeitungen vor, und navigieren Sie im Code.  
+-   Visual Studio Professional: Öffnen von codezuordnungen, eingeschränkten bearbeiten und Navigieren im Code.  
   
 > [!WARNING]
 >  Vergewissern Sie sich, dass alle Elemente in der Code Map (beispielsweise ausgeblendete Elemente, erweiterte Gruppen und gruppenübergreifende Links) sichtbar sind, bevor Sie in Visual Studio Enterprise erstellte Code Maps für Benutzer von Visual Studio Professional freigeben.  
@@ -72,7 +69,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 - Aus .NET-Modulen für Microsoft Dynamics AX erstellte X++-Projekte und X++-Assemblydateien  
   
-  **Hinweis:** Für andere als C#- oder Visual Basic .NET-Projekte sind weniger Optionen zum Starten einer Code Map oder zum Hinzufügen von Elementen zu einer vorhanden Code Map verfügbar. Beispielweise können Sie nicht mit der rechten Maustaste auf ein Objekt im Text-Editor eines C++-Projekts klicken, es einer Code Map hinzuzufügen. Sie können jedoch einzelne Codeelemente oder Dateien per Drag & Drop aus dem Projektmappen-Explorer, der Klassenansicht und dem Objektbrowser verschieben.  
+  **Hinweis**: Für Projekte außer C# oder Visual Basic .NET sind weniger Optionen zum Starten einer Code Map oder zum Hinzufügen von Elementen zu einer vorhanden Code Map. Beispielweise können Sie nicht mit der rechten Maustaste auf ein Objekt im Text-Editor eines C++-Projekts klicken, es einer Code Map hinzuzufügen. Sie können jedoch einzelne Codeelemente oder Dateien per Drag & Drop aus dem Projektmappen-Explorer, der Klassenansicht und dem Objektbrowser verschieben.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>So zeigen Sie die allgemeinen Abhängigkeiten in einer Projektmappe an  
   
@@ -289,7 +286,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 ##  <a name="SeeSourceHeader"></a> Anzeigen von Abhängigkeiten zwischen C- und C++-Quelldateien und Headerdateien  
  Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Siehe [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll. Wenn Sie diese Meldung ausblenden, können Sie diese auch wieder einblenden. Legen Sie den folgenden Registrierungsschlüssel auf `0` fest oder löschen Sie den Schlüssel:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Wenn Sie eine Projektmappe öffnen, die Visual C++-Projekte enthält, könnte die Aktualisierung der IntelliSense-Datenbank etwas Zeit beanspruchen. Während dieser Zeit können möglicherweise keine Code Maps für Headerdateien (.h oder `#include`) erstellt werden, bis die Aktualisierung der IntelliSense-Datenbank abgeschlossen ist. Sie können den Status der Aktualisierung in der Statusleiste von Visual Studio überwachen. Informationen zum Lösen von Problemen oder zu Meldungen, die angezeigt werden, weil bestimmte IntelliSense-Einstellungen deaktiviert sind, finden Sie unter [Problembehandlung bei Code Maps für C- und C++-Code](#Troubleshooting).  
   
@@ -313,13 +310,13 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 |**Problem**|**Mögliche Ursache**|**Auflösung**|  
 |---------------|------------------------|--------------------|  
 |Fehler beim Generieren der Code Map.|Kein Projekt in der Projektmappe wurde erfolgreich erstellt.|Korrigieren Sie die aufgetretenen Buildfehler, und generieren Sie dann die Code Map erneut.|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reagiert nicht mehr, wenn Sie versuchen, eine Code Map über das Menü **Architektur** zu generieren.|Die Programmdatenbankdatei (.pdb) ist möglicherweise beschädigt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Erstellen Sie die Projektmappe neu, und versuchen Sie es dann erneut.|  
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reagiert nicht mehr, wenn Sie versuchen, eine Code Map über das Menü **Architektur** zu generieren.|Die Programmdatenbankdatei (.pdb) ist möglicherweise beschädigt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Erstellen Sie die Projektmappe neu, und versuchen Sie es dann erneut.|  
 |Bestimmte Einstellungen für die IntelliSense-Suchdatenbank sind deaktiviert.|Bestimmte IntelliSense-Einstellungen sind im Dialogfeld [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**von** möglicherweise deaktiviert.|Aktivieren Sie die Einstellungen, um sie verfügbar zu machen.<br /><br /> Finden Sie unter [Optionen, Text-Editor, C/C++, erweitert](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |Die Meldung **Unbekannte Methode** wird in einem Methodenknoten angezeigt.<br /><br /> Dieses Problem tritt auf, da der Name der Methode nicht aufgelöst werden kann.|Die Binärdatei weist möglicherweise keine Basisverschiebungstabelle auf.|Aktivieren Sie die Option **/FIXED:NO** im Linker.<br /><br /> Siehe [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
 ||Die Programmdatenbankdatei (.pdb) wird möglicherweise nicht erstellt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Aktivieren Sie die Option **/DEBUG** im Linker.<br /><br /> Siehe [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Die PDB-Datei kann an den erwarteten Speicherorten nicht geöffnet oder gefunden werden.|Stellen Sie sicher, dass die PDB-Datei an den erwarteten Speicherorten vorhanden ist.|  
 ||Debuginformationen wurden aus der PDB-Datei entfernt.|Wenn die Option **/PDBSTRIPPED** im Linker verwendet wurde, schließen Sie stattdessen die vollständige PDB-Datei ein.<br /><br /> Siehe [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||Der Aufrufer ist keine Funktion und ist entweder ein Thunk in der Binärdatei oder ein Zeiger im Datenabschnitt.|Wenn der Aufrufer ein Thunk ist, versuchen Sie, den Thunk mithilfe von `_declspec(dllimport)` zu vermeiden.<br /><br /> Thema<br /><br /> -   [Allgemeine Regeln und Einschränkungen](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importieren von Funktionsaufrufen mithilfe von "__declspec(dllimport)" "](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [Dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Der Aufrufer ist keine Funktion und ist entweder ein Thunk in der Binärdatei oder ein Zeiger im Datenabschnitt.|Wenn der Aufrufer ein Thunk ist, versuchen Sie, den Thunk mithilfe von `_declspec(dllimport)` zu vermeiden.<br /><br /> Thema<br /><br /> -   [Allgemeine Regeln und Einschränkungen](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importieren von Funktionsaufrufen mithilfe von "__declspec(dllimport)" "](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Schnelleres Rendern von Code Maps  
  Wenn Sie eine Code Map zum ersten Mal generieren, werden von Visual Studio alle gefundenen Abhängigkeiten indiziert. Dieser Vorgang kann einige Zeit dauern, insbesondere bei großen Projektmappen, aber dies verbessert die Leistung zu einem späteren Zeitpunkt. Wenn Ihr Code geändert wird, wird von Visual Studio nur der aktualisierte Code neu indiziert. Um den Zeitaufwand für das Rendern der Code Map zu minimieren, beachten Sie Folgendes:  
@@ -389,6 +386,3 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 -   [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

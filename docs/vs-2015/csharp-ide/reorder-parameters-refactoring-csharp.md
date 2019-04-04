@@ -1,14 +1,9 @@
 ---
 title: Neuanordnen von Parametern (C#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.reorder
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 03316fba63267a4eb7fc3b59c8f6823d3678b438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959463"
 ---
-# <a name="reorder-parameters-refactoring-c"></a>Refactoring „Parameter neu anordnen“ (C#)
+# <a name="reorder-parameters-refactoring-c"></a>Umgestaltung "Parameter neu anordnen" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 `Reorder Parameters` ist ein Visual C#-Vorgang refactoring, die eine einfache Möglichkeit zum Ändern der Reihenfolge der Parameter für Methoden, Indexer und Delegaten bereitstellt. `Reorder Parameters` Ändert die Deklaration, und an allen Positionen, in dem das Element aufgerufen wird, werden die Parameter entsprechend die neue Reihenfolge neu angeordnet.  

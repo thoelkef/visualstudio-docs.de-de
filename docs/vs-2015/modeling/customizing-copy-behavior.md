@@ -1,23 +1,20 @@
 ---
 title: Anpassen des Kopierverhaltens | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959719"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -218,7 +215,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Kann der Benutzer Elemente ziehen und ablegen.**  
- Finden Sie unter [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Weitere Informationen finden Sie unter [How to: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ##  <a name="customizeLinks"></a> Anpassen des Kopierverhaltens Link  
  Wenn der Benutzer ein Element kopiert, ist das Standardverhalten, dass etwaige eingebettete Elemente ebenfalls kopiert werden. Sie können das standardmäßige Kopierverhalten ändern. Wählen Sie in der DSL-Definition eine Rolle auf einer Seite einer Beziehung und in den Eigenschaften im Fenster der **überträgt Kopie** Wert.  
@@ -290,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>Empfangen von Elementen, die aus anderen Modellen gezogen wurden  
- Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag & Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag & Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.  
+ Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag &amp; Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag &amp; Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.  
   
  Definieren Sie zwei Methoden in Ihrer ElementOperations-Klasse:  
   
@@ -570,7 +567,4 @@ namespace Company.MyDsl
  [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md)   
  [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md)   
- [VMSDK: SCHALTPLANBEISPIEL Circuit Diagrams sample](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [Beispiel: VMSDK Circuit Diagrams sample](http://go.microsoft.com/fwlink/?LinkId=213879)

@@ -1,12 +1,9 @@
 ---
 title: Aktualisieren von Daten mit einem TableAdapter | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,19 +20,19 @@ ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959657"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualisieren von Daten mit einem TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten senden, an einen Databaseby-Aufruf die `Update` -Methode der ein [TableAdapter](../data-tools/tableadapter-overview.md). Die `Update` Methode eine einzelnen Datentabelle aktualisiert und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn Sie ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates führen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den Fremdschlüssel-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der TableAdapterManager namens TableAdapterManager-Klasse. Weitere Informationen finden Sie unter [Übersicht über hierarchische Update](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
+Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten senden, an einen Databaseby-Aufruf die `Update` -Methode eines TableAdapter. Die `Update` Methode eine einzelnen Datentabelle aktualisiert und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn Sie ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates führen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den Fremdschlüssel-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der TableAdapterManager namens TableAdapterManager-Klasse. Weitere Informationen finden Sie unter [Übersicht über hierarchische Update](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
 >  Wenn Sie versuchen, eine Datenquelle mit dem Inhalt eines Datasets zu aktualisieren, können Sie Fehler abrufen. Um Fehler zu vermeiden, es wird empfohlen Thatyou platzieren Sie den Code, der Aufrufe des Adapters `Update` Methode innerhalb einer `try` / `catch` Block.  
@@ -44,7 +41,7 @@ Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die ak
   
 1.  Aufrufen des Adapters `Update` -Methode in einer `try` / `catch` Block.  
   
-2.  Lokalisieren der fehlerhaften Datenzeile, falls eine Ausnahme abgefangen wird. Weitere Informationen finden Sie unter [wie: Suchen von Zeilen, dass Fehler haben](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2.  Lokalisieren der fehlerhaften Datenzeile, falls eine Ausnahme abgefangen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen von Zeilen mit Fehlern](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
 3.  Beheben Sie das Problem in der Zeile (programmgesteuert oder durch die Bereitstellung der ungültigen Zeile dem Benutzer zur Änderung angezeigt wird), und wiederholen Sie dann das Update (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
@@ -60,4 +57,3 @@ Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die ak
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-

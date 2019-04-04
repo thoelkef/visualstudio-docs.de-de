@@ -1,14 +1,9 @@
 ---
 title: QuickInfo in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961264"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle,
  Die meisten Parser führen eine erste Analyse der gesamten Quelldatei und speichert die Ergebnisse in eine Analysestruktur. Die vollständige Analyse wird ausgeführt, wenn <xref:Microsoft.VisualStudio.Package.ParseReason> übergeben wird, um <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode. Andere Arten der Analyse können dann die Analysestruktur verwenden, um die gewünschten Informationen abzurufen.  
   
  Z. B. den ursachenwert Analyse der <xref:Microsoft.VisualStudio.Package.ParseReason> Suchen des Bezeichners am Quellspeicherort können, und suchen sie in der Struktur analysieren, um die Typinformationen zu erhalten. Diese Typinformationen übergeben, die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, und wird zurückgegeben, durch die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> Methode.
-

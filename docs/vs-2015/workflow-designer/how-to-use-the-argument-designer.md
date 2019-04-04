@@ -1,11 +1,8 @@
 ---
-title: 'Vorgehensweise: Verwenden des Argument-Designers | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Verwenden Sie den Argument-Designer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
@@ -14,13 +11,13 @@ ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9844745951be9c29bc9dd624db47991ab2437692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960401"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Vorgehensweise: Verwenden des Argument-Designers
 Verglichen mit früheren Versionen von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ist es mit dem Argument-Designer einfach, Daten in eine und aus einer Aktivität fließen zu lassen. Der Designer erfolgt durch Klicken auf die **Argumente** -Schaltfläche in der unteren linken Ecke des Zeichenbereichs. Der Designer enthält eine Liste von Argumenten, die in Tabellenform angezeigt und können nach jedem die Spaltenüberschriften sortiert werden, mit Ausnahme der **Standardwert** Spalte. Für jedes Argument werden der Name, die Richtung (ein/aus/ein/aus/Eigenschaft), der Typ und ein Standardausdruckswert (sofern vorhanden) angegeben. Der Name und der Standardausdruckswert sind bearbeitbare Textfelder, und der Typ und die Richtung sind Dropdownlisten. [!INCLUDE[crabout](../includes/crabout-md.md)] Argumente finden Sie unter [Variablen und Argumente](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  

@@ -1,8 +1,8 @@
 ---
-title: Optionen zum Debuggen von Azure-Clouddiensten | Microsoft-Dokumentation
-description: Debuggen von Azure Cloud services
+title: Optionen zum Debuggen von Azure-Clouddiensten | Microsoft Docs
+description: Debuggen von Azure-Clouddiensten
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,24 +10,24 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: bd2608371871b7adc925fc11927fe061b00a1ec6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958429"
 ---
-# <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Kennenlernen der verschiedenen Möglichkeiten zum Debuggen eines Azure-Clouddiensts
-Dieser Artikel enthält Links zu den verschiedenen Möglichkeiten zum Debuggen von Azure-Clouddienst. 
+# <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Lernen Sie die verschiedenen Möglichkeiten zum Debuggen eines Azure-Clouddiensts kennen.
+Dieser Artikel enthält Links zu verschiedenen Methoden zum Debuggen eines Azure-Clouddiensts. 
 
-## <a name="debugging-an-azure-cloud-service-in-visual-studio"></a>Debuggen eines Azure-Cloud-Diensts in Visual Studio
-Sie können Zeit sparen und Geld sparen, mit dem Azure compute-Emulator zum Debuggen des Clouddiensts auf einem lokalen Computer. Durch lokales Debuggen eines Diensts, bevor Sie sie bereitstellen, können Sie die Zuverlässigkeit und Leistung verbessern, ohne dass Kosten für Compute-Zeit. Allerdings können einige Fehler auftreten, nur, wenn Sie einen Cloud-Dienst in Azure ausführen. Fehler, die auftreten, nur, wenn Sie einen Cloud-Dienst in Azure ausführen können durch Aktivieren von Remotedebuggen beim Veröffentlichen des Diensts, und klicken Sie dann das Anfügen des Debuggers zu einer Rolleninstanz gedebuggt werden. Weitere Informationen finden Sie unter [Debuggen des Clouddiensts auf dem lokalen Computer](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
+## <a name="debugging-an-azure-cloud-service-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts in Visual Studio
+Sie können Zeit und Geld sparen, wenn Sie den Azure-Compute-Emulator zum Debuggen Ihres Clouddiensts auf einem lokalen Computer verwenden. Durch lokales Debuggen eines Diensts vor der Bereitstellung können Sie die Zuverlässigkeit und Leistung verbessern, ohne für die Computezeit bezahlen zu müssen. Allerdings können einige Fehler nur auftreten, wenn Sie einen Clouddienst in Azure ausführen. Fehler, die nur beim Ausführen eines Clouddiensts in Azure auftreten, lassen sich debuggen, indem das Remotedebuggen beim Veröffentlichen des Diensts aktiviert und der Debugger dann an eine Rolleninstanz angefügt wird. Weitere Informationen finden Sie unter [Debuggen des Clouddiensts auf dem lokalen Computer](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
 
 ## <a name="using-intellitrace"></a>Verwenden von IntelliTrace 
-Wenn Sie zum Schreiben, dass Rollen den .NET Framework 4.5 ausgerichtet sind. Visual Studio Enterprise verwenden, können Sie IntelliTrace zum Zeitpunkt aktivieren, dass Sie Azure-Clouddienst aus Visual Studio bereitstellen. IntelliTrace bietet ein Protokoll, das Sie mit Visual Studio verwenden können, um die Anwendung zu debuggen, als ob sie in Azure ausgeführt wurden. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=623016).
+Wenn Sie Visual Studio Enterprise zum Schreiben von Rollen verwenden, die auf .NET Framework 4.5 ausgerichtet sind, können Sie IntelliTrace aktivieren, sobald Sie einen Clouddienst über Visual Studio bereitstellen. IntelliTrace bietet ein Protokoll, das Sie mit Visual Studio verwenden können, um die Anwendung so zu debuggen, als ob sie in Azure ausgeführt wird. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace und Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=623016).
 
 ## <a name="remote-debugging"></a>Remotedebuggen 
-Sie können das Remotedebuggen auf Ihre Cloud-Dienste zum Zeitpunkt bei der Bereitstellung von Visual Studio Cloud-Dienst aktivieren. Wenn Sie das Remotedebuggen für eine Bereitstellung aktivieren möchten, werden remote Debuggen von Diensten auf den virtuellen Computern installiert, die jede Rolleninstanz ausgeführt. Diese Dienste, z. B. `msvsmon.exe` – nicht auf die Leistung auswirken oder zu zusätzlichen Kosten führen. Weitere Informationen finden Sie unter [Debuggen eines Clouddiensts in Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
+Sie können das Remotedebuggen für Ihre Clouddienste zu dem Zeitpunkt aktivieren, zu dem Sie den Clouddienst über Visual Studio bereitstellen. Wenn Sie das Remotedebuggen für eine Bereitstellung aktivieren möchten, werden Dienste zum Remotedebuggen auf den virtuellen Computern installiert, auf denen jede Rolleninstanz ausgeführt wird. Diese Dienste, z.B. `msvsmon.exe`, haben keine Auswirkungen auf die Leistung und führen nicht zu zusätzlichen Kosten. Weitere Informationen finden Sie unter [Debuggen eines Clouddiensts in Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Debuggen eines Azure-Clouddienst oder virtuellen Computer in Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md) – ausführliche Informationen zum Debuggen von Azure Cloud Services.
+- [Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio:](./vs-azure-tools-debug-cloud-services-virtual-machines.md) Erfahren Sie Näheres zum Debuggen von Azure-Clouddiensten.

@@ -1,14 +1,9 @@
 ---
 title: Debugger-Komponenten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -16,30 +11,30 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961469"
 ---
 # <a name="debugger-components"></a>Debuggerkomponenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger wird als ein VSPackage implementiert und verwaltet die gesamte Debugsitzung. Die Debugsitzung umfasst die folgenden Elemente:  
   
-- **Debugpaket:** der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Debugger bietet die gleiche Benutzeroberfläche unabhängig davon, was im Debugmodus befindet.  
+- **Debug-Paket:** Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Debugger bietet die gleiche Benutzeroberfläche unabhängig davon, was im Debugmodus befindet.  
   
-- **Sitzungsbasierter Debug-Manager (SDM):** bietet eine konsistente programmatische Benutzeroberfläche für die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger für die Verwaltung einer Vielzahl von Debug-Engines. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Sitzungsbasierter Debug-Manager (SDM):** Bietet eine konsistente programmatische Benutzeroberfläche für die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger für die Verwaltung einer Vielzahl von Debug-Engines. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **Prozessbasierter Debug-Manager (PDM):** verwaltet, die für alle ausgeführten Instanzen des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], eine Liste aller Programme, die möglich, oder werden gedebuggt wird. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Prozessbasierter Debug-Manager (PDM):** Verwaltet werden, für alle ausgeführten Instanzen des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], eine Liste aller Programme, die möglich, oder werden gedebuggt wird. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **Debug-Engine (DE):** ist verantwortlich für die Überwachung einer zu debuggende Programm wird, den Status des ausgeführten Programms, das SDM und das PDM Kommunikation und Interaktion mit der ausdrucksauswertung und die symbolanbieter, um Echtzeitanalyse bereitzustellen der Status der Arbeitsspeicher und in der Variablen eines Programms. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen zur Laufzeit unterstützen möchten.  
+- **Debug-Engine (DE):** Ist verantwortlich für die Überwachung einer zu debuggenden Programms kommuniziert den Status des ausgeführten Programms, das SDM und das PDM und interagieren mit der ausdrucksauswertung und symbolanbieter Echtzeitanalysen des Zustands eines Programms Speicher bereitzustellen und Variablen. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen zur Laufzeit unterstützen möchten.  
   
-- **Ausdrucksauswertung (EE):** bietet Unterstützung für dynamisch Auswerten von Variablen und Ausdrücke, die vom Benutzer bereitgestellt werden, wenn ein Programm zu einem bestimmten Zeitpunkt beendet wurde. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen Sprachen unterstützen möchten.  
+- **Ausdrucksauswertung (EE):** Bietet Unterstützung für dynamisch Auswerten von Variablen und Ausdrücke, die vom Benutzer bereitgestellt werden, wenn ein Programm zu einem bestimmten Zeitpunkt beendet wurde. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Sprachen unterstützt) und von Drittanbietern, die ihre eigenen Sprachen unterstützen möchten.  
   
-- **Symbol-Dienstanbieter (SP):** so genannte Handler für ein Symbol, ordnet die Debugsymbole eines Programms mit einer ausgeführten Instanz des Programms, damit sinnvolle Informationen (z. B. Source-Code-Level-Debugfunktionen und Auswertung) bereitgestellt werden kann. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Common Language Runtime [CLR] Symbole und die Programmdatenbank-[PDB-Datei] symbol-Dateiformat) und von Drittanbietern, die ihre eigenen proprietären Methode zum Speichern von Debuginformationen zu haben.  
+- **Symbol-Dienstanbieter (SP):** So genannte ordnet Handler für ein Symbol, die Debugsymbole eines Programms mit einer ausgeführten Instanz des Programms, damit sinnvolle Informationen (z. B. auf der Source-Code zu debuggen, und klicken Sie mit der Auswertung des Ausdrucks) bereitgestellt werden kann. Durch die Implementierung erfolgt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (für die Common Language Runtime [CLR] Symbole und die Programmdatenbank-[PDB-Datei] symbol-Dateiformat) und von Drittanbietern, die ihre eigenen proprietären Methode zum Speichern von Debuginformationen zu haben.  
   
   Das folgende Diagramm zeigt die Beziehung zwischen diesen Elementen der Visual Studio-Debugger.  
   
@@ -82,4 +77,3 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger wird als ein VSPack
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

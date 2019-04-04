@@ -1,29 +1,25 @@
 ---
-title: 'Fehler: Die Funktion auswerten &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Fehler: Auswerten der Funktion &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: abf50ba94992a599fbb2e64aa9b1e551dde3cbdf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960410"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Die Funktion auswerten &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen werden
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Auswerten der Funktion &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vollständiger Nachrichtentext: Timeout beim Auswerten der Funktion 'Funktion', und musste auf unsichere Weise abgebrochen werden. Dies kann den Zielprozess beschädigt. 
+Vollständige Nachrichtentext: Auswerten der Funktion 'Funktion' Timeout und musste auf unsichere Weise abgebrochen werden. Dies kann den Zielprozess beschädigt. 
 
 Zum Überprüfen des Status von Objekten für .NET zu vereinfachen, wird der Debugger automatisch den gedebuggten Prozess zum Ausführen von zusätzlichen Codes (in der Regel die Eigenschaft Getter-Methoden und Funktionen mit ToString) erzwungen. In den meisten Szenarien alle diese Funktionen schnell ausführen und Debuggen deutlich vereinfacht. Der Debugger nicht jedoch die Anwendung in einer Sandbox ausgeführt wird. Daher kann eine Abruf- oder die ToString-Methode, die eine native Funktion aufruft, das hängt zu lange Timeouts führen, die nicht wiederhergestellt werden kann. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.
  
@@ -33,7 +29,7 @@ Ein häufiger Grund für dieses Problem ist, dass wenn der Debugger eine Eigensc
  
 Es gibt drei mögliche Lösungen für dieses Problem.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung #1: Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1-Lösung: Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode
  
 Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Wenn Sie diese Funktion ändern können, können Sie verhindern, dass den Debugger die Getter für eine Eigenschaft oder die ToString-Methode aufrufen. Versuchen Sie Folgendes:
  
@@ -43,18 +39,10 @@ Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versuc
     - oder - 
 * (Für einen Eigenschaften-Getter) Platzieren der `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` Attribut für die Eigenschaft. Dies ist hilfreich, wenn Sie eine Methode verwenden, die eine Eigenschaft aus Gründen der Kompatibilität von API-bleiben muss, aber es sollte eigentlich eine Methode sein.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Lösung #2: Haben Sie den Zielcode, bitten Sie den Debugger an die Auswertung Abbrechen
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Lösung #2: Haben Sie den Code des ereignisdateiziels, bitten Sie den Debugger an die Auswertung Abbrechen
  
 Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Wenn der Eigenschaftengetter oder eine ToString-Methode in einigen Fällen nicht ordnungsgemäß ausgeführt werden, insbesondere in Situationen, in denen das Problem, das Code einem anderen Thread zum Ausführen von Code benötigt, und die implementierungsfunktion aufrufen kann `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` , bitten Sie den Debugger an die Funktion abgebrochen nützlich. Mit dieser Lösung ist es weiterhin möglich, diese Funktionen bewerten, aber das Standardverhalten ist, dass die Ausführung hält bei der NotifyOfCrossThreadDependency des Anrufs gewählt.
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>Lösung #3: Deaktivieren Sie alle implizite Auswertung
+### <a name="solution-3-disable-all-implicit-evaluation"></a>#3-Lösung: Deaktivieren Sie alle implizite Auswertung
  
 Wenn die vorherigen Lösungen das Problem nicht beheben, wechseln Sie zu *Tools* / *Optionen*, und deaktivieren Sie die Einstellung *Debuggen*  /   *Allgemeine* / *eigenschaftenauswertung und andere implizite Funktionsaufrufe*. Dadurch werden die meisten Evaluierungsversionen von impliziten Funktionen deaktiviert und sollte das Problem zu beheben.
-
-
-
-  
-
-
-
-

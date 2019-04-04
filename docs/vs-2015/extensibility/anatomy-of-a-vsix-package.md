@@ -1,14 +1,9 @@
 ---
 title: Anatomie eines VSIX-Pakets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958965"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Ein VSIX-Paket ist eine VSIX-Datei, die eine oder mehrere Visual Studio-Erweiter
 >  Die Namen der Dateien in VSIX-Pakete enthalten, darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Das VSIX-Manifest  
- Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie unter [Referenz zum VSIX-Erweiterungsschema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Eine Beispiel-VSIX-Manifests finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie unter [Referenz zum VSIX-Erweiterungsschema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Eine Beispiel-VSIX-Manifests finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  Das VSIX-Manifest muss den Namen `extension.vsixmanifest` Wenn sie in einer VSIX-Datei enthalten ist.  
   
@@ -50,7 +45,7 @@ Ein VSIX-Paket ist eine VSIX-Datei, die eine oder mehrere Visual Studio-Erweiter
   
  Wenn ein Benutzer versucht, eine Erweiterung zu installieren, die Abhängigkeiten enthält, überprüft das Installationsprogramm an, dass die erforderlichen Assemblys auf dem System des Benutzers installiert werden. Wenn die erforderlichen Assemblys nicht gefunden werden, **Erweiterungen und Updates** zeigt eine Liste der fehlenden Assemblys.  
   
- Wenn das Erweiterungsmanifest, eine oder mehrere enthält [Verweis](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) Elemente **Erweiterungen und Updates** vergleicht das Manifest der jeder Verweis auf die Erweiterungen, die auf dem System installiert sind, und installiert die Erweiterung verwiesen, wenn es nicht bereits installiert ist. Wenn eine frühere Version einer Erweiterung auf die verwiesen wird, installiert ist, wird Sie durch die neuere Version ersetzt.  
+ Wenn das Erweiterungsmanifest, eine oder mehrere enthält [Verweis](http://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) Elemente **Erweiterungen und Updates** vergleicht das Manifest der jeder Verweis auf die Erweiterungen, die auf dem System installiert sind, und installiert die Erweiterung verwiesen, wenn es nicht bereits installiert ist. Wenn eine frühere Version einer Erweiterung auf die verwiesen wird, installiert ist, wird Sie durch die neuere Version ersetzt.  
   
  Wenn ein Projekt in einer Projektmappe mit mehreren Projekten einen Verweis auf ein anderes Projekt in der gleichen Projektmappe enthält, enthält das VSIX-Paket der Abhängigkeiten von diesem Projekt an. Sie können dieses Verhalten überschreiben, indem Sie auf den Verweis für das interne-Projekt, und klicken Sie dann in der **Eigenschaften** Fenster Festlegen der **Ausgabe eingeschlossene Gruppen in VSIX-Datei** Eigenschaft `BuiltProjectOutputGroup`.  
   
@@ -59,10 +54,9 @@ Ein VSIX-Paket ist eine VSIX-Datei, die eine oder mehrere Visual Studio-Erweiter
 ## <a name="installation-location"></a>Installationsspeicherort  
  Während der Installation **Erweiterungen und Updates** für den Inhalt des VSIX-Paket in einem Ordner unter % LocalAppData%\Microsoft\VisualStudio\14.0\Extensions aussieht.  
   
- Standardmäßig wird die Installation nur für den aktuellen Benutzer angewendet, da % LocalAppData% ein benutzerspezifisches ist. Allerdings setzen Sie die [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) Element des Manifests, das `True`, unter die Erweiterung installiert werden... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions werden für alle Benutzer des Computers zur Verfügung stehen.  
+ Standardmäßig wird die Installation nur für den aktuellen Benutzer angewendet, da % LocalAppData% ein benutzerspezifisches ist. Allerdings setzen Sie die [AllUsers](http://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) Element des Manifests, das `True`, unter die Erweiterung installiert werden... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions werden für alle Benutzer des Computers zur Verfügung stehen.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Die [Content_Types] .xml-Datei identifiziert die Dateitypen in der erweiterten VSIX-Datei. Visual Studio verwendet diese Datei während der Installation des Pakets, aber die Datei selbst wird nicht installiert. Weitere Informationen zu dieser Datei finden Sie unter [Struktur der Content_types\]XML-Datei](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Eine [Content_Types] .xml-Datei ist durch den OPC Open Packaging Conventions () standard erforderlich. Weitere Informationen zu OPC finden Sie unter [OPC: A New Standard für die Paketerstellung Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) auf der MSDN-Website.
-
+ Eine [Content_Types] .xml-Datei ist durch den OPC Open Packaging Conventions () standard erforderlich. Weitere Informationen zu OPC finden Sie unter [OPC: Eine neue Standard für die Paketerstellung Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) auf der MSDN-Website.

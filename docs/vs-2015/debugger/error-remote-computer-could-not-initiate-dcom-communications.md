@@ -1,14 +1,9 @@
 ---
 title: 'Fehler: Remotecomputer konnte die DCOM-Kommunikation nicht initiieren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.unmarshal_callback_failed
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: bbba0766-2502-4ef1-a75d-bf1f0db39e37
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c86e5a193348a8f90e4888e0df3472d102beb08
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a1be63ddbb7b040e7efe5ce5ee6876c4bf77cb36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958497"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Fehler: Der Remotecomputer konnte die DCOM-Kommunikation nicht initiieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Bei einem Versuch des Remotecomputers, mit dem lokalen Computer zu kommunizieren
   
 ## <a name="see-also"></a>Siehe auch  
  [Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
-
-
-

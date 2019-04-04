@@ -1,12 +1,9 @@
 ---
-title: 'UML-Klassendiagramme: Referenz | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'UML-Klassendiagramme: Verweis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,13 +23,13 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961284"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML-Klassendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
 |    5 b     |     **Komposition**      |                                                                                                      Eine Zuordnung, die eine ganzteilige Besitzbeziehung darstellt. Die **Aggregation** der Rolle "Besitzer"-Eigenschaftensatz auf **zusammengesetzten**.                                                                                                      |
 |     6     |   **Zuordnungsname**   |                                                                                                                                         Der Name einer Zuordnung. Der Name kann leer gelassen werden.                                                                                                                                          |
 |     7     |      **Rollenname**       |                       Der Name einer Rolle, d. h. ein Ende einer Zuordnung. Kann verwendet werden, um auf das zugeordnete Objekt zu verweisen. In der vorherigen Abbildung steht `O` für jede `O.ChosenMenu`-Bestellung für die zugeordnete Speisekarte.<br /><br /> Jede Rolle verfügt über eigene Eigenschaften, die unter den Eigenschaften der Zuordnung aufgeführt sind.                       |
-|     8     |     **Multiplizität**     |                                         Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\\**\* bedeutet, dass es keine obere Grenze für die Anzahl der Links, die vorgenommen werden können.                                         |
+|     8     |     **Multiplicity**     |                                         Gibt an, wie viele der Objekte an diesem Ende mit jedem Objekt am anderen Ende verknüpft werden können. Im Beispiel muss jede Bestellung mit genau einer Speisekarte verknüpft sein.<br /><br /> **\\**\* bedeutet, dass es keine obere Grenze für die Anzahl der Links, die vorgenommen werden können.                                         |
 |     9     |    **Generalisierung**    |  Die *bestimmte* Klassifizierer erbt einen Teil seiner Definition von der *allgemeine* Klassifizierer. Der allgemeine Klassifizierer befindet sich am Pfeilende des Connectors. Attribute, Zuordnungen und Vorgänge werden vom spezifischen Klassifizierer geerbt.<br /><br /> Verwenden der **Vererbung** Tool, um eine Generalisierung zwischen zwei Klassifizierern zu erstellen.   |
   
  ![Paket mit der Schnittstelle und Enumeration](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
@@ -98,6 +95,3 @@ Ein UML-Klassendiagramm beschreibt das Objekt und die Informationsstrukturen, di
  [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Eigenschaften von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

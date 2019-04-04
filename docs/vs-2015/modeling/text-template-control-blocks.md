@@ -1,25 +1,22 @@
 ---
 title: Kontrollblöcke für Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959496"
 ---
 # <a name="text-template-control-blocks"></a>Kontrollblöcke für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,11 +150,11 @@ Some text.
   
  Sie sollten beim Verwenden von Kontrollblöcken Folgendes bedenken:  
   
--   **Die Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Anweisung angeben. (Weitere Informationen zu den `template` -Anweisung finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).)  
+-   **Die Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zu den `template` -Anweisung finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).)  
   
      Die in Kontrollblöcken verwendete Sprache hat nichts mit der Sprache oder dem Format des Texts zu tun, den Sie in einer Textvorlage generieren. Sie können C# mithilfe von Visual Basic-Code generieren oder umgekehrt.  
   
-     Sie können nur eine Sprache in einer Textvorlage verwenden, einschließlich aller Textvorlagen, die Sie in die `include`-Anweisung einschließen.  
+     Sie können nur eine Sprache in einer Textvorlage verwenden, einschließlich aller Textvorlagen, die Sie in die `include`-Direktive einschließen.  
   
 -   **Lokale Variablen.** Da der gesamte Code in den Standard- und-Ausdruckskontrollblöcken in einer Textvorlage als eine einzelne Methode generiert wird, sollten Sie sicherstellen, dass keine Konflikte mit den Namen der lokalen Variable bestehen. Wenn Sie andere Textvorlagen einschließen, müssen Sie sicherstellen, dass Variablennamen in allen eingeschlossenen Vorlagen eindeutig sind. Eine Möglichkeit, dies sicherzustellen, besteht darin, jedem lokalen Variablennamen eine Zeichenfolge hinzuzufügen, die die Textvorlage identifiziert, in der sie deklariert wurde.  
   
@@ -176,6 +173,3 @@ Some text.
     ```  
   
 -   **Refactoring.** Um die Textvorlagen kurz und leicht verständlich zu halten, wird dringend empfohlen, dass Sie sich wiederholenden Code vermeiden, entweder durch die Einteilung von wiederverwendbarem Code in Hilfsfunktionen in Klassenfunktionsblöcken oder durch Erstellen einer eigenen Textvorlagenklasse, die von der Microsoft.VisualStudio.TextTemplating.TextTransformation-Klasse erbt.
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Die Datei "DslDefinition.DSL" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961819"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +87,7 @@ Dieses Thema beschreibt die Struktur der Datei "DslDefinition.DSL" im Dsl-Projek
   
  Das Monikersystem verlangt unterschiedliche Namen für nebengeordnete Elemente in der XML-Struktur. Aus diesem Grund treten Validierungsfehler auf, wenn Sie versuchen, eine domänenspezifische Sprachdefinition zu speichern, die z. B. zwei Klassen mit demselben Namen enthält. Solche durch Doppelnamenfehler sollten Sie stets korrigieren, bevor Sie die Datei "DslDefinition.dsl" speichern, damit Sie sie später einwandfrei neu laden können.  
   
- Jeder Typ hat seinen eigenen Monikertyp: DomainClassMoniker, DomainRelationshipMoniker usw.  
+ Jeder Typ hat seinen eigenen Typ des Monikers an: DomainClassMoniker, DomainRelationshipMoniker und So weiter.  
   
 ## <a name="types"></a>Typen  
  Im Abschnitt "Typen" werden alle Typen, welche die Datei "DslDefinition.dsl" enthält, als Typen von Eigenschaften angegeben. Von diesen Typen gibt es zwei Arten: externe Typen wie System.String und aufgelistete Typen.  
@@ -157,13 +154,13 @@ Dieses Thema beschreibt die Struktur der Datei "DslDefinition.DSL" im Dsl-Projek
   
  Jede Domänenklasse (einschließlich Beziehungen, Formen, Konnektoren und Diagrammen) kann die folgenden Attribute und untergeordneten Knoten enthalten:  
   
--   **ID** Dieses Attribut ist eine GUID. Wenn Sie in der Datei keinen Wert angeben, erzeugt der domänenspezifische Sprachdesigner einen Wert. (In den Abbildungen in diesem Dokument wird dieses Attribut aus Platzgründen in der Regel weggelassen.)  
+-   **Id.** Dieses Attribut ist eine GUID. Wenn Sie in der Datei keinen Wert angeben, erzeugt der domänenspezifische Sprachdesigner einen Wert. (In den Abbildungen in diesem Dokument wird dieses Attribut aus Platzgründen in der Regel weggelassen.)  
   
 -   **Der Name und Namespace.** Diese Attribute geben den Namen und Namespace der Klasse im generierten Code an. Gemeinsam müssen sie innerhalb der domänenspezifischen Sprache eindeutig sein.  
   
 -   **InheritanceModifier.** Dieses Attribut ist "abstrakt", "versiegelt" oder keine.  
   
--   **"DisplayName".** Dieses Attribut ist der Name in der **Eigenschaften** Fenster. Das DisplayName-Attribut kann Leerzeichen und Interpunktionszeichen enthalten.  
+-   **DisplayName.** Dieses Attribut ist der Name in der **Eigenschaften** Fenster. Das DisplayName-Attribut kann Leerzeichen und Interpunktionszeichen enthalten.  
   
 -   **GeneratesDoubleDerived.** Wenn dieses Attribut festgelegt ist, auf "true" werden zwei Klassen generiert, und eine eine Unterklasse der anderen ist. Alle generierten Methoden sind in der Basisklassen enthalten, während die Konstruktoren in der Unterklasse enthalten sind. Durch Festlegen dieses Attributs können Sie jede generierte Methode im benutzerdefinierten Code außer Kraft setzen.  
   
@@ -198,7 +195,7 @@ Dieses Thema beschreibt die Struktur der Datei "DslDefinition.DSL" im Dsl-Projek
   
 -   **IsUIReadOnly**. Dieses Attribut ermittelt, ob der Benutzer die Eigenschaft in ändern, kann die **Eigenschaften** Fenster oder über ein Decorator-Element in der die Eigenschaft präsentiert wird.  
   
--   **Art**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.  
+-   **Kind**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.  
   
 -   **IsElementName**. Wird dieses Attribut auf "true" festgelegt, wird sein Wert automatisch auf einen eindeutigen Wert eingestellt, wenn eine Instanz der übergeordneten Klasse erstellt wird. Dieses Attribut kann nur für eine Eigenschaft in jeder Klasse, die vom Typ Zeichenfolge sein muss, auf "true" festgelegt werden. Im Komponentendiagramm-Beispiel ist `Name` der `NamedElement`-Eigenschaft in `IsElementName` auf "true" festgelegt. Wenn ein Benutzer ein `Component`-Element (das von `NamedElement` erbt) erstellt, wird der Name automatisch auf einen Wert wie "Component6" initialisiert.  
   
@@ -214,7 +211,7 @@ Dieses Thema beschreibt die Struktur der Datei "DslDefinition.DSL" im Dsl-Projek
 ### <a name="source-and-target-roles"></a>Quell- und Zielrollen  
  Jede Beziehung enthält Quell- und Zielrollen, die die folgenden Attribute haben:  
   
--   Das `RolePlayer`-Attribut verweist auf die Domänenklasse der verknüpften Instanzen: OutPort für die Quelle, InPort für das Ziel.  
+-   Die `RolePlayer` Attribut verweist auf die Domänenklasse der verknüpften Instanzen: OutPort für die Quelle, InPort für das Ziel.  
   
 -   Das `Multiplicity`-Attribut hat vier mögliche Werte (ZeroMany, ZeroOne, One und OneMany). Dieses Attribut verweist auf die Anzahl von Links dieser Beziehung, die mit einem Rolleninhaber verknüpft werden können.  
   
@@ -281,7 +278,7 @@ Dieses Thema beschreibt die Struktur der Datei "DslDefinition.DSL" im Dsl-Projek
  Wenn Sie C# -Code für dieses Modell schreiben, können Sie springen über einen Link in einem Schritt durch die Verwendung der Eigenschaft, die die Beziehung generiert für jede der Klassen, die sie verknüpft:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Beide Sprünge müssen in der Pfadsyntax jedoch explizit ausgeführt werden. Aufgrund dieser Anforderung können Sie bequemer auf den Zwischenlink zugreifen. Mit dem folgenden Code wird der Sprung vom Link zur Komponente vervollständigt:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Konnektorzuordnungen können auch Decorator-Zuordnungen enthalten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [DSL-Tools – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
  [Grundlagen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958731"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
 ### <a name="to-create-the-vspackage"></a>Um das VSPackage zu erstellen.  
   
--   Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und erstellen Sie eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage mit dem Namen `MyPackage`, wie unter [Exemplarische Vorgehensweise: Erstellen eines VSPackages Befehl im Menü](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und erstellen Sie eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage mit dem Namen `MyPackage`, wie unter [Exemplarische Vorgehensweise: Erstellen eines VSPackages Befehl im Menü](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Die Editor-Factory hinzufügen  
   
@@ -403,4 +398,3 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
 ## <a name="see-also"></a>Siehe auch  
  [In der Kern-Editor](../extensibility/inside-the-core-editor.md)   
  [Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

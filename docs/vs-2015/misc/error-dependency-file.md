@@ -1,27 +1,22 @@
 ---
 title: 'Fehler: die Abhängigkeit &#39;Datei&#39; im Projekt &#39;Projekt&#39; kann nicht in das Ausführungsverzeichnis kopiert werden, da sie mit Abhängigkeit in Konflikt stehen würde &#39;Datei&#39; | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.tasklisterror.copy_version_conflict
 ms.assetid: cd7de1eb-7d58-4e2c-9811-a7201f7817be
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4edf474cd67d21833743891eeeb75ce09decb87e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751948"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961330"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Fehler: die Abhängigkeit &#39;Datei&#39; im Projekt &#39;Projekt&#39; kann nicht in das Ausführungsverzeichnis kopiert werden, da sie mit Abhängigkeit in Konflikt stehen würde &#39;Datei&#39;
 Es liegt ein Konflikt zwischen Verweisen vor: Mehrere unterschiedliche Abhängigkeiten mit demselben Dateinamen wurden in das Verzeichnis „bin“ für die auszuführende Anwendung kopiert. Das Ausführungsverzeichnis kann den Konflikt nicht lösen, da es sich bei den Abhängigkeiten nicht um Primärverweise handelt.  
@@ -43,4 +38,4 @@ Es liegt ein Konflikt zwischen Verweisen vor: Mehrere unterschiedliche Abhängig
  [Globaler Assemblycache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
  [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Assemblyversionen](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
- [Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

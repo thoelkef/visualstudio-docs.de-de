@@ -1,11 +1,8 @@
 ---
 title: InvokeMethod-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
@@ -13,13 +10,13 @@ ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959292"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 **InvokeMethod** -Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.InvokeMethod> Aktivität.  
@@ -57,12 +54,12 @@ ms.locfileid: "49863684"
   
 3. Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.  
   
-   Die resultierende Ausnahme hat den Typ <xref:System.Activities.InvalidWorkflowException> mit der folgenden Meldung: 'InvokeMethod': Eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits mit dem Namen 'TargetObject' vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.  
+   Die resultierende Ausnahme ist vom Typ <xref:System.Activities.InvalidWorkflowException> mit folgender Meldung: 'InvokeMethod': Mit dem Namen 'TargetObject' ist eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.  
   
    Diese Einschränkung gilt nicht für <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> und <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>, da sie keine Workflowargumente sind und daher nicht in der <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>-Auflistung der <xref:System.Activities.Statements.InvokeMethod>-Aktivität in der <xref:System.Activities.Activity.CacheMetadata%2A>-Methode registriert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Primitive Typen](../workflow-designer/primitives-activity-designers.md)   
  [Weisen Sie](../workflow-designer/assign-activity-designer.md)   
- [Verzögerung](../workflow-designer/delay-activity-designer.md)   
+ [Delay](../workflow-designer/delay-activity-designer.md)   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)

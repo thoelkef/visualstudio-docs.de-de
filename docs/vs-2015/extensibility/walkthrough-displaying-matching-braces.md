@@ -1,26 +1,21 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden geschweiften Klammern | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Übereinstimmende Klammern anzeigen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961120"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden Klammern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,4 +126,3 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-

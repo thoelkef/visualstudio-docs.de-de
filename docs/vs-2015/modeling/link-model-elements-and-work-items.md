@@ -1,12 +1,9 @@
 ---
 title: Verknüpfen von Modellelementen und Arbeitsaufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.removeworkitemsdialog
 - vs.teamarch.common.linkworkitemsdialog
@@ -21,13 +18,13 @@ ms.assetid: e687a490-0f93-412c-a1ff-eea83cf7ba07
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 55dfd83f3c9324b08bbb88c8404350c2aebf129f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752066"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958511"
 ---
 # <a name="link-model-elements-and-work-items"></a>Verknüpfen von Modellelementen und Arbeitselementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,6 +176,3 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

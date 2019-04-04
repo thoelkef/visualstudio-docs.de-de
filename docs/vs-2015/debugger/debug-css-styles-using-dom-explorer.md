@@ -1,14 +1,9 @@
 ---
 title: Debuggen von CSS-Stilen mithilfe von DOM Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958888"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debuggen von CSS-Stilen mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 5.  Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
-     Wenn die Anwendung vollständig geladen ist, schauen Sie sich die Überschriften der Listenelemente wie z. B. **Gruppentitel: 1**an. Da die Farbe unverändert ist, wurde Orange folglich nicht auf die Titel angewendet. Die Ursache des Fehlers wird ermittelt und im DOM Explorer mithilfe der CSS-Registerkarten behoben.  
+     Wenn die Anwendung vollständig geladen ist, schauen Sie sich die Überschriften der Listenelemente wie z. B. **Gruppentitel: 1**. Da die Farbe unverändert ist, wurde Orange folglich nicht auf die Titel angewendet. Die Ursache des Fehlers wird ermittelt und im DOM Explorer mithilfe der CSS-Registerkarten behoben.  
   
     > [!TIP]
     >  Nachdem die App im Simulator angezeigt wird, positionieren Sie den Simulator rechts neben dem Visual Studio-Fenster, sodass Sie die Ergebnisse der Auswahl und Änderungen, die Sie an den CSS-Formatvorlagen vornehmen, sofort sehen können.  
@@ -110,7 +105,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     > [!TIP]
     >  Sie können HTML-Elemente auch direkt in DOM Explorer auswählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  Bewegen Sie im linken Bereich der Startseite den Mauszeiger im Simulator über den Titel des ersten Elements in der Liste **Gruppentitel: 1**. Der Titel wird wie hier gezeigt hervorgehoben:  
+7.  Im Simulator, zeigen Sie auf den Titel des ersten Elements in der Liste der **Gruppentitel: 1**, im linken Bereich der Homepage angezeigt. Der Titel wird wie hier gezeigt hervorgehoben:  
   
      ![Verwenden die Schaltfläche "Element auswählen"](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -166,6 +161,3 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)   
  [Produktsupport und Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

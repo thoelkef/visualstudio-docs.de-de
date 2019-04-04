@@ -1,28 +1,23 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von SmartTags | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959304"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von Smarttags
-Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von SmartTags
+Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Smarttags sind Tags für Text, die erweitert werden können, um eine Reihe von Aktionen anzuzeigen. Beispielsweise wird in einem Visual Basic- oder Visual C#-Projekt eine rote Linie unter einem Wort angezeigt, wenn Sie einen Bezeichner (z. B. Variablenname) umbenennen. Wenn Sie den Mauszeiger über die Unterstreichung bewegen, wird eine Schaltfläche in der Nähe des Zeigers angezeigt. Wenn Sie auf die Schaltfläche klicken, wird eine empfohlene Aktion angezeigt, z. B. **IsRead in IsReady umbenennen**. Wenn Sie auf die Aktion klicken, werden alle Verweise auf **IsRead** im Projekt in **IsReady**umbenannt.  
   
@@ -31,7 +26,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
 > [!NOTE]
 >  Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
   
- Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie ein Smarttag erstellen, das für das aktuelle Wort angezeigt wird und zwei empfohlene Aktionen beinhaltet: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**.  
+ Die folgende exemplarische Vorgehensweise zeigt, wie Sie ein Smarttag erstellen, die für das aktuelle Wort angezeigt wird, und verfügt über zwei empfohlene Aktionen: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -100,7 +95,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Deklarieren Sie das `SmartTagsChanged`-Ereignis.  
+10. Deklarieren Sie das `SmartTagsChanged` -Ereignis.  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -185,7 +180,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
   
      Neben dem Zeiger sollte eine Schaltfläche angezeigt werden.  
   
-5.  Wenn Sie auf die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt werden: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
+5.  Wenn Sie die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

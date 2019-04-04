@@ -1,23 +1,20 @@
 ---
 title: Ausführen von Komponententests auf UML-Erweiterungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817320"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960385"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ausführen von Komponententests auf UML-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +82,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
   
     -   *UML-Erweiterungsprojekt*  
   
-    -   **"EnvDTE.dll" angezeigt**  
+    -   **EnvDTE.dll**  
   
     -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
@@ -93,7 +90,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
   
     -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **"Microsoft.VisualStudio.UML.Interfaces.dll" ein**  
+    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
     -   **Microsoft.VSSDK.TestHostFramework.dll**  
   
@@ -290,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}  
 ```  
   
- Wenn Sie eine Methode testen möchten, die eine importierte Eigenschaft als Parameter übernimmt, können Sie die Eigenschaft in die Testklasse importieren und `SatisfyImportsOnce` auf die Testinstanz anwenden. Beispiel:  
+ Wenn Sie eine Methode testen möchten, die eine importierte Eigenschaft als Parameter übernimmt, können Sie die Eigenschaft in die Testklasse importieren und `SatisfyImportsOnce` auf die Testinstanz anwenden. Zum Beispiel:  
   
 ```  
   
@@ -343,7 +340,7 @@ using System.ComponentModel.Composition;
 ```  
   
  Definieren einer Testschnittstelle  
- Definieren Sie eine Schnittstelle, die sowohl öffentliche Member einer zu testenden Klasse als auch zusätzliche Eigenschaften und Methoden für private Member einbezieht, die von den Tests verwendet werden sollen. Fügen Sie diese Schnittstelle zum zu testenden Projekt hinzu. Beispiel:  
+ Definieren Sie eine Schnittstelle, die sowohl öffentliche Member einer zu testenden Klasse als auch zusätzliche Eigenschaften und Methoden für private Member einbezieht, die von den Tests verwendet werden sollen. Fügen Sie diese Schnittstelle zum zu testenden Projekt hinzu. Zum Beispiel:  
   
 ```csharp  
 internal interface MyClassTestInterface {  
@@ -354,7 +351,7 @@ internal interface MyClassTestInterface {
  }  
 ```  
   
- Fügen Sie Methoden zur zu testenden Klasse hinzu, um die Accessormethoden explizit zu implementieren. Trennen Sie die zusätzlichen Methoden von der Hauptklasse, indem Sie sie in einer partiellen Klassendefinition in einer separaten Datei erstellen. Beispiel:  
+ Fügen Sie Methoden zur zu testenden Klasse hinzu, um die Accessormethoden explizit zu implementieren. Trennen Sie die zusätzlichen Methoden von der Hauptklasse, indem Sie sie in einer partiellen Klassendefinition in einer separaten Datei erstellen. Zum Beispiel:  
   
 ```csharp  
 partial public class MyClass  
@@ -373,7 +370,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
 ```  
   
- Verwenden Sie die Testschnittstelle in den Komponententestmethoden. Beispiel:  
+ Verwenden Sie die Testschnittstelle in den Komponententestmethoden. Zum Beispiel:  
   
 ```csharp  
 MyClassTestInterface testInstance = new MyClass();  
@@ -385,9 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Diese Vorgehensweise wird am wenigsten empfohlen. Ältere Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben ein Hilfsprogramm bereitgestellt, das automatisch eine Accessormethode für die einzelnen privaten Methoden bereitgestellt hat. Obwohl diese Vorgehensweise praktisch ist, sagt uns unsere Erfahrung, dass dies eher zu Komponententests führt, die sehr stark an die interne Struktur der zu testenden Anwendung gebunden sind. Dies führt bei sich ändernden Anforderungen oder einer veränderten Architektur wiederum zu zusätzlichem Aufwand, da die Tests zusammen mit der Implementierung geändert werden müssen. Zudem werden sämtliche fehlerhaften Annahmen für den Implementierungsentwurf auch in die Tests übernommen, sodass in den Tests keine Fehler gefunden werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufbau eines Komponententests](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Aufbau eines Komponententests](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – schnelle Eingabe mithilfe von Text](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
-
-
-

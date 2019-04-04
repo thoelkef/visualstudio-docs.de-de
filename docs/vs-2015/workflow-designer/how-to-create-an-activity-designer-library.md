@@ -1,23 +1,20 @@
 ---
-title: 'Vorgehensweise: erstellen eine Aktivitätsdesignerbibliothek | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen eine Aktivitätsdesignerbibliothek | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961127"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek
 Mit benutzerdefinierten Aktivitätsdesignern können Sie für eine benutzerdefinierte Aktivität oder eine Standardaktivität eine Benutzeroberfläche erstellen. Sie steuern die Komplexität der Benutzeroberfläche und sind in der Lage, mehrere Aktivitätsdesigner für eine Aktivität zu erstellen. Dieses Szenario ermöglicht es Ihnen, Designer zu erstellen, die auf unterschiedliche Zielgruppen zugeschnitten sind.  
@@ -43,7 +40,7 @@ Mit benutzerdefinierten Aktivitätsdesignern können Sie für eine benutzerdefin
   
 8.  Die Projektvorlage erstellt eine Aktivitätsdesignerdefinition in XAML und die Code-Behind-Implementierungsdatei im Quellcode. Der [!INCLUDE[wfd1](../includes/wfd1-md.md)] wird geöffnet und zeigt den Canvas für den Aktivitätsdesigner an.  
   
-9. Ziehen Sie [!INCLUDE[avalon1](../includes/avalon1-md.md)] -Steuerelemente aus der **Toolbox** auf die Entwurfsoberfläche, um sie in Ihrer benutzerdefinierten Aktivitäts-Designer verwenden.  Ein Beispiel zum Implementieren eines benutzerdefinierten Aktivitätsdesigners finden Sie unter [Vorgehensweise: Erstellen eines benutzerdefinierten Aktivitätsdesigners](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Ziehen Sie [!INCLUDE[avalon1](../includes/avalon1-md.md)] -Steuerelemente aus der **Toolbox** auf die Entwurfsoberfläche, um sie in Ihrer benutzerdefinierten Aktivitäts-Designer verwenden.  Ein Beispiel zum Implementieren eines benutzerdefinierten Aktivitätsdesigners finden Sie unter [Vorgehensweise: Erstellen ein benutzerdefinierten Aktivitätsdesigners](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     >  Benutzerdefinierte Aktivitätsdesigner können verwendet werden, für benutzerdefinierte Aktivitäten sowie Standard- [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]Aktivitäten.  

@@ -1,14 +1,9 @@
 ---
 title: Visual Studio Isolated Shell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959516"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,12 +57,11 @@ Die Visual Studio isolierte Shell können Sie eigenständige Anwendungen zu erst
 |Funktionskategorie|Feature|  
 |----------------------|-------------|  
 |IDE-Features|Importieren und Exportieren von Einstellungen<br /><br /> Installer für Toolbox-Steuerelement<br /><br /> Aufgabenliste und Fehlerliste<br /><br /> Ausgabefenster<br /><br /> Startseite<br /><br /> Eigenschaftenfenster<br /><br /> Werkzeugkasten<br /><br /> Projektmappen-Explorer<br /><br /> Lesezeichenfenster<br /><br /> Klassenansicht<br /><br /> Objektkatalog<br /><br /> Befehlsfenster<br /><br /> Dokumentgliederung<br /><br /> Ressourcenansicht<br /><br /> Externes Tool<br /><br /> Windows Communication Foundation (WCF) Dienstverweis hinzufügen<br /><br /> Language Integrated Query (LINQ)-Unterstützung|  
-|Designer/Editor|Code-Tools (einheitliche Suche, Quelldefinition, Vererbung) durchsuchen<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Codeausschnitt-Manager<br /><br /> Codeausschnitte<br /><br /> Umgestaltung<br /><br /> Automatische Strukturierung<br /><br /> IntelliSense-Filter<br /><br /> Codedefinitionsfenster<br /><br /> Anwendungs-Designer<br /><br /> Windows Forms-Designer<br /><br /> Windows Presentation Foundation (WPF) Designer|  
-|Debuggen|C#-Ausdrucksauswertung<br /><br /> Lokales Debuggen<br /><br /> Verwaltetes Debuggen<br /><br /> Bearbeiten und Fortfahren<br /><br /> Debuggen von Threads<br /><br /> Visualisierungen<br /><br /> DataTips<br /><br /> Systemeigenes Debuggen<br /><br /> Debuggen von Skripts<br /><br /> Interop-Debuggen<br /><br /> Debuggen von Just-in-Time (JIT)<br /><br /> Debuggen mit mehreren Prozessen<br /><br /> XSLT-Debuggen<br /><br /> An den lokalen Prozess anhängen<br /><br /> Ablaufverfolgungspunkte<br /><br /> Haltepunkt-Einschränkungen|  
-|Daten|Server-Explorer (vereinfacht – nur Daten)<br /><br /> Datenbindung an lokalen Daten (. MDF-Datei oder. MDB)<br /><br /> Datenbindung an Objekt<br /><br /> Datenbindung an den Webdienst<br /><br /> Breites Spektrum an Datensteuerelemente<br /><br /> XML-editor<br /><br /> Datenbindung an den lokalen Datenbankserver<br /><br /> Datenquellenfenster|  
+|Designer/Editor|Code-Tools (einheitliche Suche, Quelldefinition, Vererbung) durchsuchen<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Codeausschnitt-Manager<br /><br /> Codeausschnitte<br /><br /> Umgestaltung<br /><br /> Automatische Strukturierung<br /><br /> IntelliSense-Filter<br /><br /> Codedefinitionsfenster<br /><br /> Anwendungs-Designer<br /><br /> Windows Forms-Designer<br /><br /> Windows Presentation Foundation (WPF) Designer|  
+|Debuggen|C#-Ausdrucksauswertung<br /><br /> Lokales Debuggen<br /><br /> Verwaltetes Debuggen<br /><br /> Bearbeiten und Fortfahren<br /><br /> Debuggen von Threads<br /><br /> Visualisierungen<br /><br /> DataTips<br /><br /> Systemeigenes Debuggen<br /><br /> Debuggen von Skripts<br /><br /> Interop-Debuggen<br /><br /> Debuggen von Just-in-Time (JIT)<br /><br /> Debuggen mit mehreren Prozessen<br /><br /> Debuggen von XSLT-Code<br /><br /> An den lokalen Prozess anhängen<br /><br /> Ablaufverfolgungspunkte<br /><br /> Haltepunkt-Einschränkungen|  
+|Daten|Server-Explorer (vereinfacht – nur Daten)<br /><br /> Datenbindung an lokalen Daten (. MDF-Datei oder. MDB)<br /><br /> Datenbindung an Objekt<br /><br /> Datenbindung an den Webdienst<br /><br /> Breites Spektrum an Datensteuerelemente<br /><br /> XML-Editor<br /><br /> Datenbindung an den lokalen Datenbankserver<br /><br /> Datenquellenfenster|  
 |Web|HTML-Editor<br /><br /> Webbrowser<br /><br /> Web Forms-Designer<br /><br /> Website-Projekt<br /><br /> Webanwendungsprojekt|  
 |Erweiterungen|VSPackages und MEF-Komponenten nutzt|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Shell (Isolated oder Integrated)](../extensibility/shell-isolated-or-integrated.md)
-

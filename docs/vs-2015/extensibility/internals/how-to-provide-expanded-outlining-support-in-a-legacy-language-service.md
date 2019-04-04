@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Geben Sie die Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 56d125cdfc3cbdbbc880e1e8a98136eb20e07df1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff387bb2cd029e80641e8c13b198b8f22ccabd1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960916"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ Es gibt zwei Optionen zum Erweitern der Gliederung Unterstützung für Ihre Spra
     >  Beim Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, Sie können einen ausgeblendeten textclient angeben (d. h. eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> Objekt). Dieser Client benachrichtigt, wenn eine ausgeblendeten Text oder Gliederungsbereich erweitert oder reduziert wird, durch den Benutzer.  
   
 4.  Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> Struktur) Parameter: Geben Sie den Wert <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> in die `iType` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur, um anzugeben, dass Sie einen Gliederungsbereich, anstatt einen ausgeblendeten Bereich erstellen. Gibt an, ob der Bereich ist die Client-gesteuert oder Editor gesteuert werden, in der `dwBehavior` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die intelligente Gliederung Implementierung kann eine Mischung aus und Client-editorgesteuert Gliederungsbereiche enthalten. Geben Sie den Bannertext, der angezeigt wird, wenn Ihre Gliederungsbereich, z. B. "...", in reduziert ist die `pszBanner` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die Anmerkung der Redaktion Banner Standardtext für einen ausgeblendeten Bereich ist "...".
-

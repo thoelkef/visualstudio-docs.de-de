@@ -1,14 +1,9 @@
 ---
 title: C / C++-Assertionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,18 +28,18 @@ ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dc4c2a6c4f5b9d4a0e4e1cf0fd0a4a6c9928de6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e130bac0a20d2f1e4421b6c8bd34ac2b211c55f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959054"
 ---
 # <a name="cc-assertions"></a>C/C++-Assertionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht wahr ist, schlägt die Assertion fehl, die programmausführung wird unterbrochen, und die [Dialogfeld Assertionsfehler](../debugger/assertion-failed-dialog-box.md) angezeigt wird.  
+Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht den Wert TRUE aufweist, kann die Assertion nicht durchgeführt werden, die Programmausführung wird unterbrochen, und das Dialogfeld [Assertionsfehler](../debugger/assertion-failed-dialog-box.md) wird geöffnet.  
 
  Visual C++ unterstützt Assertionsanweisungen, die auf folgenden Konstrukten basieren:  
 
@@ -54,14 +49,14 @@ Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stel
 
 - CRT-Assertionen für Programme, die die C-Laufzeitbibliothek verwenden.  
 
-- ANSI [assert-Funktion](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) für andere C/C++-Programme.  
+- Die ANSI-[assert-Funktion](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) für andere C/C++‑Programme.  
 
   Sie können Assertionen verwenden, um logische Fehler zu erfassen, Ergebnisse einer Operation zu überprüfen und Fehlerbedingungen zu testen, die bearbeitet werden müssten.  
 
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Funktionsweise von Assertionen](#BKMK_How_assertions_work)  
 
- [Assertionen in Debug- und Releasebuilds](#BKMK_Assertions_in_Debug_and_Release_builds)  
+ [Assertionen in Debug- und Versionsbuilds](#BKMK_Assertions_in_Debug_and_Release_builds)  
 
  [Nebeneffekte der Verwendung von Assertionen](#BKMK_Side_effects_of_using_assertions)  
 
@@ -69,9 +64,9 @@ Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stel
 
  [MFC-Assertionen](#BKMK_MFC_assertions)  
 
-- [MFC-ASSERT_VALID und CObject:: AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)  
+- [MFC ASSERT_VALID und CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)  
 
-- [Einschränkungen von "AssertValid"](#BKMK_Limitations_of_AssertValid)  
+- [Einschränkungen von AssertValid](#BKMK_Limitations_of_AssertValid)  
 
   [Verwenden von Assertionen](#BKMK_Using_assertions)  
 
@@ -82,14 +77,14 @@ Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stel
 - [Suchen von unbehandelten Fehlern](#BKMK_Testing_error_conditions_)  
 
 ##  <a name="BKMK_How_assertions_work"></a> Funktionsweise von Assertionen  
- Wenn der Debugger ein Programm aufgrund einer Assertion von MFC oder der C-Laufzeitbibliothek anhält, navigiert er zu der Stelle in der Quelldatei (sofern vorhanden), an der die Assertion aufgetreten ist. Die assertionsmeldung wird sowohl die [Fenster "Ausgabe"](../ide/reference/output-window.md) und **Assertionsfehler** Dialogfeld. Sie können die assertionsmeldung aus Kopieren der **Ausgabe** Fenster aus, um ein Textfenster angezeigt, wenn es für die zukünftige Verwendung gespeichert werden soll. Die **Ausgabe** kann auch andere Fehlermeldungen enthalten. Überprüfen Sie diese Meldungen sorgfältig; häufig enthalten sie Hinweise auf die Ursache des Assertionsfehlers.  
+ Wenn der Debugger ein Programm aufgrund einer Assertion von MFC oder der C-Laufzeitbibliothek anhält, navigiert er zu der Stelle in der Quelldatei (sofern vorhanden), an der die Assertion aufgetreten ist. Die Assertionsmeldung wird sowohl im [Ausgabefenster](../ide/reference/output-window.md) als auch im Dialogfeld **Assertionsfehler** angezeigt. Sie können die Assertionsmeldung aus dem **Ausgabefenster** in ein Textfenster kopieren, wenn Sie sie zu Referenzzwecken behalten möchten. Das **Ausgabefenster** enthält u.U. weitere Fehlermeldungen. Überprüfen Sie diese Meldungen sorgfältig; häufig enthalten sie Hinweise auf die Ursache des Assertionsfehlers.  
 
  Verwenden Sie Assertionen, um Fehler während der Entwicklung zu erkennen. Verwenden Sie im Allgemeinen eine Assertion für die jeweilige Annahme. Wenn Sie beispielsweise annehmen, dass ein Argument ungleich NULL ist, verwenden Sie eine Assertion, um diese Annahme zu testen.  
 
  [Inhalt](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Assertionen in Debug- und Releasebuilds  
- Assertionsanweisungen werden nur kompiliert, wenn `_DEBUG` definiert ist. Andernfalls behandelt der Compiler Assertionen als NULL-Anweisungen. Assertionsanweisungen verursachen daher keinen Mehraufwand und keine Leistungseinbußen in der endgültigen Programmversion, sodass Sie keine `#ifdef`-Anweisungen verwenden müssen.  
+##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Assertionen in Debug- und Versionsbuilds  
+ Assertionsanweisungen werden nur kompiliert, wenn `_DEBUG` definiert ist. Andernfalls behandelt der Compiler Assertionen als NULL-Anweisungen. Assertionsanweisungen verursachen daher keinen Mehraufwand und keine Leistungseinbußen in der endgültigen Programmversion, sodass Sie keine `#ifdef`-Direktiven verwenden müssen.  
 
 ##  <a name="BKMK_Side_effects_of_using_assertions"></a> Nebeneffekte der Verwendung von Assertionen  
  Wenn Sie Assertionen in den Code einfügen, sollten Sie sicherstellen, dass die Assertionen keine Nebeneffekte haben. Betrachten Sie beispielsweise die folgende Assertion, mit der der `nM`-Wert geändert wird:  
@@ -113,7 +108,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
  [Inhalt](#BKMK_In_this_topic)  
 
 ##  <a name="BKMK_CRT_assertions"></a> CRT-Assertionen  
- Die CRTDBG.H. H-Headerdatei definiert die [_ASSERT "und" _ASSERTE-Makros](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) zur Überprüfung von Assertionen.  
+ Die Headerdatei „CRTDBG.H“ enthält Definitionen der [Makros _ASSERT und _ASSERTE](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36), die zur Überprüfung von Assertionen verwendet werden.  
 
 
 |   Makro    |                                             Ergebnis                                              |
@@ -134,30 +129,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- Wenn der überwachte Ausdruck FALSE ergibt, wird [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) wird aufgerufen, um den Assertionsfehler (standardmäßig ein Meldungsdialogfeld mit) gemeldet. Auf Wunsch **wiederholen** in das Meldungsdialogfeld `_CrtDbgReport` gibt 1 zurück, und `_CrtDbgBreak` ruft der Debugger über `DebugBreak`.  
+ Wenn der Ausdruck bei der Assertionsauswertung FALSE ergibt, wird [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) aufgerufen und gibt den Assertionsfehler (standardmäßig in einem Meldungsdialogfeld) aus. Wenn Sie im Meldungsdialogfeld **Wiederholen** auswählen, gibt `_CrtDbgReport` den Wert 1 zurück, und `_CrtDbgBreak` ruft den Debugger über `DebugBreak` auf.  
 
 ### <a name="checking-for-heap-corruption"></a>Überprüfen des Heaps auf Beschädigungen  
- Im folgenden Beispiel wird [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) des Heaps auf Beschädigungen zu überprüfen:  
+ Im folgenden Beispiel wird [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) verwendet, um den Heap auf Beschädigungen zu überprüfen:  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>Überprüfen der Gültigkeit von Zeigern  
- Im folgenden Beispiel wird [_CrtIsValidPointer](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) um sicherzustellen, dass für ein bestimmten Speicherbereich für Lese- und Schreibvorgänge gültig ist.  
+ Im folgenden Beispiel wird anhand von [_CrtIsValidPointer](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) überprüft, ob in einen bestimmten Speicherbereich geschrieben bzw. daraus gelesen werden kann.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- Im folgenden Beispiel wird [_CrtIsValidHeapPointer](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) , ob ein Zeiger auf den Speicher im lokalen Heap zeigt (der Heap erstellt und verwaltet, die von dieser Instanz von der C-Laufzeitbibliothek – eine DLL-Datei haben eine eigene Instanz von der Bibliothek, und daher einen eigenen Heap außerhalb des anwendungsheaps). Diese Assertion erkennt nicht nur NULL-Adressen oder Adressen außerhalb des gültigen Bereichs, sondern auch Zeiger auf statische Variablen, Stapelvariablen und sonstigen nicht lokalen Speicher.  
+ Im folgenden Beispiel wird anhand von [_CrtIsValidHeapPointer](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) überprüft, ob ein Zeiger auf Speicher im lokalen Heap zeigt. (Es handelt sich um den Heap, der von dieser Instanz der C-Laufzeitbibliothek generiert und verwaltet wird. Eine DLL kann über eine eigene Bibliotheksinstanz und daher auch über einen eigenen Heap außerhalb des Anwendungsheaps verfügen.) Diese Assertion erkennt nicht nur NULL-Adressen oder Adressen außerhalb des gültigen Bereichs, sondern auch Zeiger auf statische Variablen, Stapelvariablen und sonstigen nicht lokalen Speicher.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>Überprüfen eines Speicherblocks  
- Im folgenden Beispiel wird [_CrtIsMemoryBlock](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) , stellen Sie sicher, dass ein Speicherblock im lokalen Heap befindet und einen gültigen Blocktyp.  
+ Im folgenden Beispiel wird anhand von [_CrtIsMemoryBlock](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) sichergestellt, dass ein Speicherblock sich im lokalen Heap befindet und über einen gültigen Blocktyp verfügt.  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -166,11 +161,11 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [Inhalt](#BKMK_In_this_topic)  
 
 ##  <a name="BKMK_MFC_assertions"></a> MFC-Assertionen  
- MFC definiert die [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) Makros zur Überprüfung von Assertionen. Sie definiert auch die `MFC ASSERT_VALID`- und `CObject::AssertValid`-Methoden zum Überprüfen des internen Zustands eines von `CObject` abgeleiteten Objekts.  
+ Das [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)-Makro für die Assertionsüberprüfung ist in MFC definiert. Sie definiert auch die `MFC ASSERT_VALID`- und `CObject::AssertValid`-Methoden zum Überprüfen des internen Zustands eines von `CObject` abgeleiteten Objekts.  
 
  Wenn das Argument des MFC-`ASSERT`-Makros mit "0 (null)" oder "false" ausgewertet wird, wird die Programmausführung durch das Makro angehalten und eine Warnung an den Benutzer ausgegeben. Andernfalls wird die Ausführung fortgesetzt.  
 
- Wenn eine Assertion fehlschlägt, werden der Name der Quelldatei sowie die Zeilennummer der Assertion in einem Meldungsdialogfeld angezeigt. Bei Auswahl von "Wiederholen" im Dialogfeld ""-Feld, einen Aufruf von [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) wird die Ausführung an den Debugger zu unterbrechen. An diesem Punkt können Sie die Aufrufliste und weitere Debuggerfunktionen überprüfen, um die Ursache für den Assertionsfehler zu ermitteln. Wenn Sie aktiviert haben [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md), und der Debugger nicht bereits ausgeführt wurde, wird das Dialogfeld kann der Debugger.  
+ Wenn eine Assertion fehlschlägt, werden der Name der Quelldatei sowie die Zeilennummer der Assertion in einem Meldungsdialogfeld angezeigt. Wenn Sie im Dialogfeld auf „Wiederholen“ klicken, wird [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) aufgerufen, die Ausführung unterbrochen und der Debugger aufgerufen. An diesem Punkt können Sie die Aufrufliste und weitere Debuggerfunktionen überprüfen, um die Ursache für den Assertionsfehler zu ermitteln. Bei Aktivierung von [Just-In-Time-Debugging](../debugger/just-in-time-debugging-in-visual-studio.md) kann der Debugger über das Dialogfeld aufgerufen werden, sofern er nicht bereits ausgeführt wurde.  
 
  Das folgende Beispiel veranschaulicht die Verwendung von `ASSERT`, um den Rückgabewert einer Funktion zu überprüfen:  
 
@@ -179,16 +174,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- Können Sie ASSERT mit der [IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) der Funktion für die typüberprüfung der Funktionsargumente:  
+ Um eine Typüberprüfung für die Funktionsargumente vorzunehmen, können Sie ASSERT mit der [IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6)-Funktion verwenden:  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- In der Releaseversion generiert das `ASSERT`-Makro keinen Code. Wenn Sie den Ausdruck in der Releaseversion auswerten müssen, verwenden Sie die [überprüfen](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) Makro anstelle ASSERT.  
+ In der Releaseversion generiert das `ASSERT`-Makro keinen Code. Wenn Sie den Ausdruck in der Releaseversion auswerten müssen, verwenden Sie anstelle von ASSERT das [VERIFY](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)-Makro.  
 
-###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC-ASSERT_VALID und CObject:: AssertValid  
- Die [CObject:: AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) Methode bietet den internen Zustand eines Objekts laufzeitüberprüfungen. Es ist zwar nicht erforderlich, `AssertValid`beim Ableiten der Klasse aus `CObject` zu überschreiben, Sie können so jedoch die Zuverlässigkeit der Klasse erhöhen. `AssertValid` sollte Assertionen für alle Membervariablen des Objekts ausführen und sicherstellen, dass diese gültige Werte enthalten. Beispielsweise sollte überprüft werden, ob alle Membervariablen in Form von Zeigern ungleich NULL sind.  
+###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID und CObject::AssertValid  
+ Die [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157)-Methode ermöglicht es, den internen Zustand eines Objekts zur Laufzeit zu überprüfen. Es ist zwar nicht erforderlich, `AssertValid`beim Ableiten der Klasse aus `CObject` zu überschreiben, Sie können so jedoch die Zuverlässigkeit der Klasse erhöhen. `AssertValid` sollte Assertionen für alle Membervariablen des Objekts ausführen und sicherstellen, dass diese gültige Werte enthalten. Beispielsweise sollte überprüft werden, ob alle Membervariablen in Form von Zeigern ungleich NULL sind.  
 
  Im folgenden Beispiel wird die Deklaration einer `AssertValid`-Funktion erläutert:  
 
@@ -229,7 +224,7 @@ void CPerson::AssertValid() const
 
  Wenn durch eine der Membervariablen Objekte gespeichert werden, können Sie deren interne Gültigkeit mit dem `ASSERT_VALID`-Makro testen (falls die betreffende Klasse `AssertValid` überschreibt).  
 
- Betrachten Sie beispielsweise eine Klasse `CMyData`, welche Geschäfte einer [CObList](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) in einem der zugehörigen Membervariablen. Die `CObList`-Variable `m_DataList` speichert eine Auflistung von `CPerson`-Objekten. Die Deklaration von `CMyData` lautet in den wesentlichen Teilen wie folgt:  
+ Durch die `CMyData`-Klasse wird beispielsweise [CObList](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) in einer ihrer Membervariablen gespeichert. Die `CObList`-Variable `m_DataList` speichert eine Auflistung von `CPerson`-Objekten. Die Deklaration von `CMyData` lautet in den wesentlichen Teilen wie folgt:  
 
 ```  
 class CMyData : public CObject  
@@ -264,7 +259,7 @@ void CMyData::AssertValid( ) const
 
 ```  
 
- `CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der in ihrem Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.  
+ `CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der im Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.  
 
  Die Gültigkeitsüberprüfung wird auf dieser Ebene nicht beendet, da die `CObList`-Klasse auch von `AssertValid` überschrieben wird. Diese Überschreibung bewirkt weitere Gültigkeitsüberprüfungen des internen Listenzustands. Auf diese Weise führt eine Gültigkeitsüberprüfung für ein `CMyData`-Objekt zu weiteren Gültigkeitsüberprüfungen, mit denen der interne Zustand des gespeicherten `CObList`-Listenobjekts getestet wird.  
 
@@ -272,7 +267,7 @@ void CMyData::AssertValid( ) const
 
  Dieses Verfahren ist beim Erstellen von Debugbuilds äußerst hilfreich. Beim späteren Erstellen eines Releasebuilds wird das Verfahren automatisch deaktiviert.  
 
-###  <a name="BKMK_Limitations_of_AssertValid"></a> Einschränkungen von "AssertValid"  
+###  <a name="BKMK_Limitations_of_AssertValid"></a> Einschränkungen von AssertValid  
  Eine ausgelöste Assertion weist darauf hin, dass das Objekt mit Sicherheit fehlerhaft ist, und die Ausführung wird angehalten. Wird keine Assertion ausgelöst, so bedeutet dies jedoch nur, dass kein Problem festgestellt wurde, die Fehlerfreiheit des Objekts kann aber trotzdem nicht garantiert werden.  
 
  [Inhalt](#BKMK_In_this_topic)  
@@ -337,7 +332,7 @@ _ASSERT(!myErr); -- CRT version
 
  Wenn der Fehlerbehandlungscode einwandfrei funktioniert, sollte der Fehler behandelt und `myErr` vor Erreichen der Assertion auf 0 (null) zurückgesetzt werden. Wenn `myErr` verfügt über einen anderen Wert, schlägt die Assertion fehl, das Programm wird angehalten, und die [Dialogfeld zur Assertion Fehler](../debugger/assertion-failed-dialog-box.md) angezeigt wird.  
 
- Assertionsanweisungen sind allerdings kein Ersatz für Fehlerbehandlungscode. So kann die Assertionsanweisung im folgenden Beispiel im Releaseversionscode u. U. Probleme bereiten:  
+ Assertionsanweisungen sind allerdings kein Ersatz für Fehlerbehandlungscode. So kann die Assertionsanweisung im folgenden Beispiel im Releasecode u. U. Probleme bereiten:  
 
 ```  
 myErr = myGraphRoutine(a, b);  
@@ -348,14 +343,11 @@ ASSERT(!myErr); // Don't do this!
 _ASSERT(!myErr); // Don't do this, either!  
 ```  
 
- Bei diesem Code wird davon ausgegangen, dass der Fehlerzustand durch die Assertionsanweisung behandelt wird. Dies würde im endgültigen Releasecode dazu führen, dass alle von `myGraphRoutine` zurückgegebenen Fehlercodes nicht behandelt würden.  
+ Bei diesem Code wird davon ausgegangen, dass der Fehlerzustand durch die Assertionsanweisung behandelt wird. Dies würde im Releaseversionscode dazu führen, dass alle von `myGraphRoutine` zurückgegebenen Fehlercodes nicht behandelt würden.  
 
  [Inhalt](#BKMK_In_this_topic)  
 
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
  [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md)
-
-
-

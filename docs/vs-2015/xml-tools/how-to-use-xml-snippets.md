@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Verwenden von XML-Ausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961549"
 ---
-# <a name="how-to-use-xml-snippets"></a>Gewusst wie: Verwenden von XML-Ausschnitten
+# <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -113,12 +108,9 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
   
  Durch Drücken der EINGABETASTE oder ESC wird die Feldbearbeitung beendet, und der Editor kehrt in den Normalzustand zurück.  
   
- Die Standardfarben für editierbare können geändert werden, indem die Codeausschnittfeld-Einstellung in der **Schriftarten und Farben** im Bereich der **Optionen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ Die Standardfarben für editierbare können geändert werden, indem die Codeausschnittfeld-Einstellung in der **Schriftarten und Farben** im Bereich der **Optionen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Ausschnitte](../xml-tools/xml-snippets.md)   
- [Vorgehensweise: generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Vorgehensweise: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md)
-
-
-
+ [Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
+ [Vorgehensweise: Erstellen von XML-Codeausschnitten](../xml-tools/how-to-create-xml-snippets.md)

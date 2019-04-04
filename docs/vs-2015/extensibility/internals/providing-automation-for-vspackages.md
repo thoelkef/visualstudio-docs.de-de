@@ -1,27 +1,22 @@
 ---
 title: Bereitstellen von Automatisierung für VSPackages | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958528"
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automatisierung für VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ Es gibt zwei Hauptmethoden zum Bereitstellen von Automatisierung für VSPackages
  Um die Automatisierung für Projekte zu erweitern, implementieren Sie auch Automation standard-Objekte (abgeleitet von `IDispatch`), die neben den anderen Projektobjekten erstellen und implementieren Sie standard-Methoden und Eigenschaften. Beispiele für standard-Objekte sind die Projektobjekte, die in der Projektmappenhierarchie, z. B. eingefügt werden `Projects`, `Project`, `ProjectItem`, und `ProjectItems`. Alle neuen Projekttyp sollten diese Objekte (und möglicherweise andere Lösungen je nach Semantik des Projekts) implementieren.  
   
  In gewisser Hinsicht stellen diese Objekte den entgegengesetzten Vorteil der VSPackage-spezifisches Projektobjekte. Die Automation standard-Objekte können Ihr Projekt in eine generalisierte Methode, wie jedes andere Projekt unterstützen die gleichen Objekte verwendet werden. Daher ein Add-in, die für allgemeine geschrieben werden `Project` und `ProjectItem` Objekte können für Projekte eines beliebigen Typs fungieren. Weitere Informationen finden Sie unter [Projekt Modellierung](../../extensibility/internals/project-modeling.md).
-
