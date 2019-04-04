@@ -1,12 +1,9 @@
 ---
 title: Bearbeiten von Daten in Datasets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960755"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +78,7 @@ ms.locfileid: "49949291"
   
 - Jede Datenzeile enthält Informationen zu dessen <xref:System.Data.DataRow.RowState%2A> (z. B. <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, oder <xref:System.Data.DataRowState>).  
   
-- Jede geänderte Datenzeile enthält mehrere Versionen der Zeile (<xref:System.Data.DataRowVersion>), die Originalversion (vor der Änderung), und die aktuelle Version (nach der Änderung). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen spezifischer Versionen einer DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Jede geänderte Datenzeile enthält mehrere Versionen der Zeile (<xref:System.Data.DataRowVersion>), die Originalversion (vor der Änderung), und die aktuelle Version (nach der Änderung). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist ebenfalls verfügbar.
   
   Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets den Wert `true` zurück. Nachdem festgestellt wurde, dass geänderte Zeilen vorhanden sind, können Sie die `GetChanges`-Methode eines <xref:System.Data.DataSet> oder einer <xref:System.Data.DataTable> aufrufen, um die Gruppe der geänderten Zeilen zurückzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von geänderten Zeilen](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
@@ -89,7 +86,7 @@ ms.locfileid: "49949291"
   
 -   Rufen Sie die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets auf, um geänderte Zeilen zu suchen.  
   
-     Das folgende Beispiel zeigt, wie Sie den Rückgabewert überprüfen die <xref:System.Data.DataSet.HasChanges%2A> -Methode feststellen, ob geänderten Zeilen vorhanden, in einem Dataset mit dem Namen sind `NorthwindDataset1`:  
+     Im folgenden Beispiel wird veranschaulicht, wie Sie anhand des Rückgabewerts der <xref:System.Data.DataSet.HasChanges%2A>-Methode feststellen, ob ein Dataset mit dem Namen `NorthwindDataset1` geänderte Zeilen enthält:  
   
      [!code-csharp[VbRaddataEditing#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#12)]
      [!code-vb[VbRaddataEditing#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#12)]  
@@ -115,4 +112,3 @@ ms.locfileid: "49949291"
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

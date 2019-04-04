@@ -1,12 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,13 +11,13 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959293"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -719,7 +716,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
   
 4.  Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] öffnen die **Projekt** und auf **CustomHost-Eigenschaften**. In der **Startobjekt** auf **CustomHost.Program**.  
   
-5.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+5.  Klicken Sie im Menü **Datei** auf **Alle speichern**.  
   
 6.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
@@ -820,10 +817,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
     ```  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Anweisungsprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts auf einen generierten Richtlinie Prozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Direktivenprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

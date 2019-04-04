@@ -1,11 +1,8 @@
 ---
 title: Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemapanalyzers
@@ -17,13 +14,13 @@ ms.assetid: 9dd799a7-f7eb-42ff-8612-b19dde7ff4eb
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6656ae4e5dc4acc0cb95b40fbb3eaa10b473d9e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db54fef40914dc234f507935a646292eb8d4914e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962084"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +39,9 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
   
    |**Analyse**|**Zur Identifizierung der Knoten, die...**|  
    |------------------|--------------------------------|  
-   |**Zirkelverweis-Analyzer**|...Ringabhängigkeiten untereinander aufweisen. **Hinweis:** ringabhängigkeiten, die in der **Generika** Gruppe werden nicht auf der Karte angezeigt, wenn Sie die Gruppe erweitern.|  
+   |**Zirkelverweis-Analyzer**|...Ringabhängigkeiten untereinander aufweisen. **Hinweis**:  Zirkuläre Abhängigkeiten, die in der **Generika** Gruppe werden nicht auf der Karte angezeigt, wenn Sie die Gruppe erweitern.|  
    |**Hubs Analyzer suchen**|...zu den obersten 25 % der Knoten mit den meisten Verbindungen gehören<br /><br /> **So blenden Sie alle anderen Knoten auf der Map aus**<br /><br /> – Öffnen Sie das Kontextmenü für die Karte, und wählen **erweitert**, **wählen**, **nicht markierte ausblenden**.<br />     Nicht markierte Knoten werden auf der Map ausgeblendet und neue Knoten werden vom Analyzer als Hubs identifiziert.|  
-   |**Analyzer für Knoten, auf die nicht verwiesen wird**|...keine Verweise aus anderen Knoten haben. **Vorsicht:** überprüfen Sie jeden dieser Fälle, bevor, vorausgesetzt, dass der Code nicht verwendet wird. Bestimmte Abhängigkeiten wie XAML- und Laufzeitabhängigkeiten können im Code nicht statisch gefunden werden.|  
+   |**Analyzer für Knoten, auf die nicht verwiesen wird**|...keine Verweise aus anderen Knoten haben. **Vorsicht**:  Überprüfen Sie jeden dieser Fälle, bevor Sie davon ausgehen, dass der Code nicht verwendet wird. Bestimmte Abhängigkeiten wie XAML- und Laufzeitabhängigkeiten können im Code nicht statisch gefunden werden.|  
   
    Code Map Analyzer werden weiterhin ausgeführt, nachdem Sie sie anwenden. Wenn Sie die Map ändern, verarbeiten alle angewendeten Analyzer automatisch die aktualisierte Map erneut. Wählen Sie zum Beenden eines Analyzers auf der Symbolleiste der Map **Layout**&gt; **Analyzer**aus. Deaktivieren Sie den ausgewählten Analyzer.  
   
@@ -55,6 +52,3 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
  [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)   
  [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
-
-
-

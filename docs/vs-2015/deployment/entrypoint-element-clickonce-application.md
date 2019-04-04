@@ -1,14 +1,9 @@
 ---
 title: '&lt;EntryPoint&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960530"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;EntryPoint&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
   
  Die `processorArchitecture` Attribut dieses Elements und dem `processorArchitecture` im definierten Attribut der `assemblyIdentity` an anderer Stelle in der Anwendung Manifest muss übereinstimmen.  
   
-## <a name="commandline"></a>Befehlszeile  
+## <a name="commandline"></a>commandLine  
  Erforderlich. Muss ein untergeordnetes Element des der `entryPoint` Element. Es hat keine untergeordneten Elemente und weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
@@ -96,7 +91,7 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- Eine Anwendung mit dem CustomUX Element muss einem individuelles Installationsprogramm erstellt, die verwendet bieten die <xref:System.Deployment.Application.InPlaceHostingManager> -Klasse, Vorgänge zu installieren. Eine Anwendung mit diesem Element kann nicht durch Doppelklicken auf die erforderliche Manifest oder eine setup.exe-Bootstrapper installiert werden. Das benutzerdefinierte Installationsprogramm kann Start Menüeinträge, Verknüpfungen und Software -Einträge erstellen. Wenn das benutzerdefinierte Installationsprogramm kein Eintrag in "Software" erstellt wird, müssen sie die Abonnement-ID, die von bereitgestellte speichern die <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> -Eigenschaft und der Benutzer später deinstallieren die Anwendung durch Aufrufen der <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> Methode. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen ein benutzerdefiniertes Installationsprogramm für eine ClickOnce-Anwendung](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Eine Anwendung mit dem CustomUX Element muss einem individuelles Installationsprogramm erstellt, die verwendet bieten die <xref:System.Deployment.Application.InPlaceHostingManager> -Klasse, Vorgänge zu installieren. Eine Anwendung mit diesem Element kann nicht durch Doppelklicken auf die erforderliche Manifest oder eine setup.exe-Bootstrapper installiert werden. Das benutzerdefinierte Installationsprogramm kann Start Menüeinträge, Verknüpfungen und Software -Einträge erstellen. Wenn das benutzerdefinierte Installationsprogramm kein Eintrag in "Software" erstellt wird, müssen sie die Abonnement-ID, die von bereitgestellte speichern die <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> -Eigenschaft und der Benutzer später deinstallieren die Anwendung durch Aufrufen der <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> Methode. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
   
 ## <a name="remarks"></a>Hinweise  
  Dieses Element identifiziert die Assembly und den Einstiegspunkt für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.  
@@ -121,6 +116,3 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

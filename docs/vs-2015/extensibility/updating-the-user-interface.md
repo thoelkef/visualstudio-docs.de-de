@@ -1,27 +1,22 @@
 ---
 title: Aktualisieren der Benutzeroberfläche | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4e6b282ac58e523e8a2047e7f882d90b9f202bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9285e08a9ace015937f8be594153fb3c1d037d6b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960604"
 ---
 # <a name="updating-the-user-interface"></a>Aktualisieren der Benutzeroberfläche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code zum Aktualisieren
 ## <a name="see-also"></a>Siehe auch  
  [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Implementation (Implementierung)](../extensibility/internals/command-implementation.md)
-

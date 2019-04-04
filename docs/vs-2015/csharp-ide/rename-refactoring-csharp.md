@@ -1,14 +1,9 @@
 ---
 title: Refactoring mit Umbenennen (c#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959261"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274962"
 |Klassenansicht|Wenn Sie einen Bezeichner in der Klassenansicht auswählen, refactoring mit Umbenennung ist im Kontextmenü verfügbar und **Umgestalten** Menü.|  
 |Objektkatalog|Bei Auswahl ein Bezeichners im Objektkatalog refactoring mit Umbenennung ist nur verfügbar in der **Umgestalten** Menü.|  
 |Das Eigenschaftenraster des Windows Forms-Designers|In der **Eigenschaftenraster** von der Windows Forms-Designer, ändern den Namen eines Steuerelements initiiert ein Umbenennungsvorgang für dieses Steuerelement. Die **umbenennen** wird das Dialogfeld nicht angezeigt.|  
-|Projektmappen-Explorer|In **Projektmappen-Explorer**, **umbenennen** Befehl im Kontextmenü verfügbar ist. Wenn die ausgewählte Quelldatei eine Klasse enthält, deren Klassenname den Dateinamen entspricht, können Sie mit diesem Befehl gleichzeitig die Quelldatei umbenannt und Umgestaltung mit Umbenennen.<br /><br /> Z. B. Wenn Sie eine standardmäßige Windows-basierte Anwendung erstellen und benennen Sie um TestForm.cs "Form1.cs", der Name der Quelldatei "Form1.cs" ändert sich TestForm.cs und die Klasse Form1 und alle Verweise auf, dass die Klasse in TestForm umbenannt wird. **Hinweis:** der **Rückgängig** Befehl (STRG + Z) nur rückgängig machen, refactoring mit Umbenennung im Code und wird nicht geändert, die der Dateinamen an den ursprünglichen Namen. <br /><br /> Wenn die ausgewählte Quelldatei eine Klasse keinen enthält, deren Name dem Dateinamen entspricht, der **umbenennen** Befehl **Projektmappen-Explorer** nur die Quelldatei umbenannt und Umbenennen wird nicht ausgeführt Refactoring.|  
+|Projektmappen-Explorer|In **Projektmappen-Explorer**, **umbenennen** Befehl im Kontextmenü verfügbar ist. Wenn die ausgewählte Quelldatei eine Klasse enthält, deren Klassenname den Dateinamen entspricht, können Sie mit diesem Befehl gleichzeitig die Quelldatei umbenannt und Umgestaltung mit Umbenennen.<br /><br /> Z. B. Wenn Sie eine standardmäßige Windows-basierte Anwendung erstellen und benennen Sie um TestForm.cs "Form1.cs", der Name der Quelldatei "Form1.cs" ändert sich TestForm.cs und die Klasse Form1 und alle Verweise auf, dass die Klasse in TestForm umbenannt wird. **Hinweis**:  Die **Rückgängig** Befehl (STRG + Z) nur rückgängig machen, refactoring mit Umbenennung im Code und wird nicht geändert, die der Dateinamen an den ursprünglichen Namen. <br /><br /> Wenn die ausgewählte Quelldatei eine Klasse keinen enthält, deren Name dem Dateinamen entspricht, der **umbenennen** Befehl **Projektmappen-Explorer** nur die Quelldatei umbenannt und Umbenennen wird nicht ausgeführt Refactoring.|  
   
 ## <a name="rename-operations"></a>Umbenennen von Vorgängen  
  Beim Ausführen **umbenennen**, die umgestaltungs-Engine führt eine spezifische Umbenennungsvorgänge für jedes Symbol Code aus, wie in der folgenden Tabelle beschrieben.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274962"
 |-----------------|----------------------|  
 |Feld|Ändert sich die Deklaration und Verwendungen des Felds in den neuen Namen ein.|  
 |lokale variable|Ändert sich die Deklaration und Verwendung von Variablen in den neuen Namen ein.|  
-|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis:** beim Umbenennen einer Erweiterungsmethode gibt der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Namespace|Ändert den Namen des Namespace in den neuen Namen in der Deklaration alle `using` Anweisungen und den vollqualifizierten Namen. **Hinweis:** beim Umbenennen eines Namespaces, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die **Standard-Namespace** Eigenschaft für die **Anwendung** auf der Seite die **Projekt-Designer**. Diese Eigenschaft kann nicht zurückgesetzt werden, dazu **rückgängig machen** aus der **bearbeiten** Menü. Zurücksetzen der **Default Namespace** Eigenschaftswert, müssen Sie die Eigenschaft im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Anwendungsseite](../ide/reference/application-page-project-designer-csharp.md).|  
+|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis**:  Wenn Sie eine Erweiterungsmethode umbenennen, wird der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Namespace|Ändert den Namen des Namespace in den neuen Namen in der Deklaration alle `using` Anweisungen und den vollqualifizierten Namen. **Hinweis**:  Beim Umbenennen eines Namespaces, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die **Default Namespace** Eigenschaft für die **Anwendung** auf der Seite die **Projekt-Designer**. Diese Eigenschaft kann nicht zurückgesetzt werden, dazu **rückgängig machen** aus der **bearbeiten** Menü. Zurücksetzen der **Default Namespace** Eigenschaftswert, müssen Sie die Eigenschaft im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Anwendungsseite](../ide/reference/application-page-project-designer-csharp.md).|  
 |Eigenschaft|Ändert sich die Deklaration und Verwendung der Eigenschaft in den neuen Namen ein.|  
 |Typ|Ändert sich alle Deklarationen und alle Verwendungen des Typs in den neuen Namen ein, z. B. Konstruktoren und Destruktoren. Für partielle Typen wird der Umbenennungsvorgang für alle Komponenten.|  
   

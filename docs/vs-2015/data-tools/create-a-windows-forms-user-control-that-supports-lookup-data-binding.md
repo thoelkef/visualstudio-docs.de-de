@@ -1,12 +1,9 @@
 ---
 title: Erstellen eines Windows Forms-Benutzersteuerelements, die Bindung an Nachschlagedaten unterstützt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,23 +17,23 @@ ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960711"
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Bindung an Nachschlagedaten unterstützt
+# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus der **Toolbox**, oder Sie können benutzerdefinierte Steuerelemente erstellen, wenn Ihre Anwendung die Funktionalität ist in den Standardsteuerelementen nicht verfügbar. erfordert. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementieren, können drei Eigenschaften enthalten, die an Daten gebunden werden können. Solche Steuerelemente ähneln einem <xref:System.Windows.Forms.ComboBox>-Steuerelement.  
+Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorhandenen Steuerelemente verwenden oder, falls die gewünschte Funktionalität in den Standardsteuerelementen nicht verfügbar ist, benutzerdefinierte Steuerelemente erstellen. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementieren, können drei Eigenschaften enthalten, die an Daten gebunden werden können. Solche Steuerelemente ähneln einem <xref:System.Windows.Forms.ComboBox>-Steuerelement.  
   
  Weitere Informationen über das Erstellen von Steuerelementen, finden Sie unter [Entwickeln von Windows Forms-Steuerelementen zur Entwurfszeit](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
- Beim Erstellen von Steuerelementen für die Verwendung in Szenarios mit Datenbindung müssen Sie eine der folgenden Datenbindungsattribute implementieren:  
+ Beim Erstellen von Steuerelementen, die in Datenbindungsszenarios verwendet werden sollen, müssen Sie eines der folgenden Datenbindungsattribute implementieren:  
   
 |Die Datenbindung Attributverwendung|  
 |-----------------------------------|  
@@ -50,7 +47,7 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
   
 -   Erstellen Sie ein neues **Windows-Anwendung**.  
   
--   Fügen Sie einen neuen **Benutzersteuerelement** zu Ihrem Projekt.  
+-   Ihrem Projekt ein neues **Benutzersteuerelement** hinzufügen.  
   
 -   Entwerfen des Benutzersteuerelements im visuellen Designer.  
   
@@ -58,7 +55,7 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
   
 -   Erstellen eines Datasets mit dem **Datenquellenkonfiguration** Assistenten.  
   
--   Festlegen der **"CustomerID"** Spalte auf der **Bestellungen** -Tabelle in der **Datenquellen** Fenster, um das neue Steuerelement verwendet.  
+-   Die Spalte **CustomerID** in der Tabelle **Orders** im **Datenquellenfenster** festlegen, um das neue Steuerelement zu verwenden.  
   
 -   Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.  
   
@@ -78,31 +75,31 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
   
 3.  Wählen Sie **Windows Forms-Anwendung**, und klicken Sie auf **OK**.  
   
-     Die **LookupControlWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
+     Das Projekt **LookupControlWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.  
   
-## <a name="add-a-user-control-to-the-project"></a>Fügen Sie dem Projekt ein Benutzersteuerelement  
- In dieser exemplarischen Vorgehensweise wird ein Nachschlagesteuerelement aus erstellt eine **Benutzersteuerelement**, fügen Sie also eine **Benutzersteuerelement** Element für die **LookupControlWalkthrough** Projekt.  
+## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt  
+ In dieser exemplarischen Vorgehensweise wird aus einem **Benutzersteuerelement** ein Nachschlagesteuerelement erstellt. Fügen Sie dem Projekt **LookupControlWalkthrough** zunächst also ein **Benutzersteuerelement** hinzu.  
   
 #### <a name="to-add-a-user-control-to-the-project"></a>So fügen Sie dem Projekt ein Benutzersteuerelement hinzu  
   
-1.  Von der **Projekt** , wählen Sie im Menü **Benutzersteuerelement hinzufügen**.  
+1.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.  
   
 2.  Typ `LookupBox` in die **Namen** Bereich, und klicken Sie dann auf **hinzufügen**.  
   
-     Die **LookupBox** -Steuerelement hinzugefügt **Projektmappen-Explorer**, und im Designer geöffnet.  
+     Das **LookupBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.  
   
 ## <a name="design-the-lookupbox-control"></a>Entwerfen des LookupBox-Steuerelements  
   
 #### <a name="to-design-the-lookupbox-control"></a>So entwerfen Sie das LookupBox-Steuerelement  
   
--   Ziehen Sie eine <xref:System.Windows.Forms.ComboBox> aus der **Toolbox** auf der Entwurfsoberfläche des Benutzersteuerelements.  
+-   Ziehen Sie ein <xref:System.Windows.Forms.ComboBox> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Fügen Sie das erforderliche Attribut für die Datenbindung hinzu  
  Implementieren Sie für Nachschlagesteuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
   
 #### <a name="to-implement-the-lookupbindingproperties-attribute"></a>So implementieren Sie das LookupBindingProperties-Attribut  
   
-1.  Wechseln der **LookupBox** -Steuerelement zur Codeansicht. (Auf der **Ansicht** Menü wählen **Code**.)  
+1.  Wechseln Sie für das **LookupBox**-Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)  
   
 2.  Ersetzen Sie den Code in `LookupBox` durch folgenden Code:  
   
@@ -112,55 +109,55 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
 3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Erstellen Sie eine Datenquelle aus der Datenbank  
- Dieser Schritt wird erstellt, mit einer Datenquelle mithilfe der **Datenquellenkonfiguration** Assistenten, auf der Grundlage der `Customers` und `Orders` Tabellen in der Beispieldatenbank Northwind. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
+ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle erstellt, die auf den Tabellen `Customers` und `Orders` der Beispieldatenbank Northwind basiert. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
 1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
   
-2.  In der **Datenquellen** wählen Sie im Fenster **neue Datenquelle hinzufügen** zum Starten der **Datenquellenkonfiguration** Assistenten.  
+2.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
   
 3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
   
-4.  Auf der **wählen Sie Ihre Datenverbindung** Seite führen Sie einen der folgenden:  
+4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
   
     -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
-    -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** Dialogfeld.  
+    -   Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+6.  Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.  
   
-7.  Auf der **Datenbankobjekte auswählen** Seite, erweitern Sie die **Tabellen** Knoten.  
+7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
   
-8.  Wählen Sie die `Customers` und `Orders` Tabellen, und klicken Sie dann auf **Fertig stellen**.  
+8.  Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig stellen**.  
   
-     Die **NorthwindDataSet** wird Ihrem Projekt hinzugefügt und die `Customers` und `Orders` Tabellen angezeigt werden, der **Datenquellen** Fenster.  
+     Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im **Datenquellenfenster** angezeigt.  
   
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Legen Sie die CustomerID-Spalte der Tabelle Orders, verwenden Sie das LookupBox-Steuerelement  
- In der **Datenquellen** Fenster können Sie das Steuerelement erstellt werden, vor dem Ziehen von Elementen auf das Formular festlegen.  
+ Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll.  
   
 #### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>So legen Sie die Bindung der Spalte "CustomerID" an das LookupBox-Steuerelement fest  
   
-1.  Open **Form1** im Designer.  
+1.  Öffnen Sie **Form1** im Designer.  
   
-2.  Erweitern Sie die **Kunden** Knoten in der **Datenquellen** Fenster.  
+2.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
   
-3.  Erweitern Sie die **Bestellungen** Knoten (in der **Kunden** Knoten unten die **Fax** Spalte).  
+3.  Erweitern Sie den Knoten **Orders** (denjenigen, der sich im Knoten **Customers** unterhalb der Spalte **Fax** befindet).  
   
-4.  Klicken Sie auf die Dropdown-Pfeil der **Bestellungen** Knoten, und wählen Sie **Details** aus der Steuerungsliste.  
+4.  Klicken Sie im Knoten **Orders** auf den Dropdownpfeil, und wählen Sie in der Steuerelementliste die Option **Details** aus.  
   
-5.  Klicken Sie auf die Dropdown-Pfeil der **"CustomerID"** Spalte (in der **Bestellungen** Knoten), und wählen Sie **anpassen**.  
+5.  Klicken Sie in der Spalte **CustomerID** (im Knoten **Orders**) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.  
   
-6.  Wählen Sie die **LookupBox** aus der Liste der **zugeordnete Steuerelemente** in die **Optionen für die Anpassung** Dialogfeld.  
+6.  Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **LookupBox** aus.  
   
 7.  Klicken Sie auf **OK**.  
   
-8.  Klicken Sie auf die Dropdown-Pfeil der **"CustomerID"** Spalte, und wählen Sie **LookupBox**.  
+8.  Klicken Sie in der Spalte **CustomerID** auf den Dropdownpfeil, und wählen Sie **LookupBox** aus.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols zum Formular  
- Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf **Form1**.  
+ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf **Form1** ziehen.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Windows Form  
   
@@ -172,7 +169,7 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
   
 -   Wählen Sie im **Kunden** Knoten in der **Datenquellen** angezeigt, und ziehen Sie es auf das Kombinationsfeld für den Sie im Dialogfeld die **CustomerIDLookupBox** auf **Form1** .  
   
-     Hiermit wird die Datenbindung zum Anzeigen der `CompanyName` aus der `Customers` Tabelle, und gleichzeitig die `CustomerID` Wert aus der `Orders` Tabelle.  
+     Damit wird die Datenbindung so eingerichtet, dass der Wert für `CompanyName` aus der Tabelle `Customers` angezeigt und gleichzeitig der Wert für `CustomerID` aus der Tabelle `Orders` beibehalten wird.  
   
 ## <a name="running-the-application"></a>Ausführen der Anwendung  
   
@@ -180,8 +177,7 @@ Anzeigen von Daten in Windows Forms können Sie vorhandenen Steuerelemente aus d
   
 -   Drücken Sie F5, um die Anwendung auszuführen.  
   
--   Navigieren Sie durch einige Datensätze aus, und überprüfen Sie, ob die `CompanyName` wird in der `LookupBox` Steuerelement.  
+-   Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`-Steuerelement der Wert von `CompanyName` angezeigt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

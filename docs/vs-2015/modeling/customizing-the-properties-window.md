@@ -1,25 +1,22 @@
 ---
 title: Anpassen des Eigenschaftenfensters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959137"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +43,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
  Formen können Sie verfügbar machen die **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** und **FillGradientMode** Eigenschaften. Sie können Connectors Bereitstellen der **Farbe**`,`**TextColor**, **DashStyle**, und **Stärke** Eigenschaften. In Diagrammen können Sie verfügbar machen die **FillColor** und **TextColor** Eigenschaften.  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Weiterleitung: Anzeigen von Eigenschaften verwandter Elemente  
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Weiterleiten von: Anzeigen von Eigenschaften verwandter Elemente  
  Wenn der Benutzer Ihrer DSL ein Element in einem Modell auswählt, werden Eigenschaften des Elements im Eigenschaftenfenster angezeigt. Allerdings können Sie auch die Eigenschaften des angegebenen verwandte Elemente anzeigen. Dies ist nützlich, wenn Sie eine Gruppe von Elementen definiert haben, die zusammen funktioniert. Sie können z. B. ein Hauptelement und ein optionales-Plug-in-Element definieren. Wenn das Hauptelement mit einer Form zugeordnet ist, und die andere nicht der Fall ist, ist es hilfreich, um alle Eigenschaften anzuzeigen, als wären sie auf ein Element.  
   
  Dieser Effekt heißt *Eigenschaft Weiterleitung*, und dies erfolgt automatisch im verschiedenen Fällen. In anderen Fällen können Sie die Eigenschaft, die Weiterleitung durch Definieren einer domänentypdeskriptor erreichen.  
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-
