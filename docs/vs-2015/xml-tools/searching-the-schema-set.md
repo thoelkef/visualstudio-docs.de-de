@@ -1,25 +1,20 @@
 ---
 title: Durchsuchen des Schemasets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6993ce3038b395179aa5c0a667078d0ee478997
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959514"
 ---
 # <a name="searching-the-schema-set"></a>Durchsuchen des Schemasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des S
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)
-
-
-

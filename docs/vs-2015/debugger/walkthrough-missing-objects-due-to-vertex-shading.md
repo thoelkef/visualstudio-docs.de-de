@@ -1,27 +1,22 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961095"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.  
@@ -85,13 +80,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 3. Bei der ersten Änderung von `output` werden Werte in den Member `worldPos` geschrieben.  
   
-    ![Der Wert von "output.worldPos" erscheint angemessen](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    ![Der Wert von „output.worldPos“ erscheint angemessen](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
     Da diese Werte sinnvoll aussehen, durchlaufen Sie den Code weiter bis zur nächsten Zeile, in der `output`geändert wird.  
   
 4. Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.  
   
-    ![Der Wert von "output.pos" wurde auf NULL wurde, gesetzt werden](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    ![Der Wert von „output.pos“ wurde gelöscht.](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
     Die Werte des `pos` -Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.  
   
@@ -114,7 +109,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
    > [!TIP]
    >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
   
-   Nachdem Sie den Speicherort finden, wo der Konstantenpuffer gefüllt wird ist, und feststellen, dass die Variable die Werte stammen `m_marbleConstantBufferData`, der nächste Schritt besteht darin herauszufinden, wo die `m_marbleConstantBufferData.projection` Members auf lauter Nullen festgelegt ist. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
+   Nachdem Sie die Position, an der der Konstantenpuffer gefüllt wird, gefunden und festgestellt haben, dass dessen Werte aus der Variablen `m_marbleConstantBufferData` stammen, müssen Sie im nächsten Schritt herausfinden, wo der `m_marbleConstantBufferData.projection`-Member mit den Nullen gefüllt wird. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>So ermitteln Sie, wo der Projektionsmember im Quellcode Ihrer App festgelegt wird  
   
@@ -133,6 +128,3 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
    Nachdem Sie den Code korrigiert haben, können Sie die App erneut erstellen und ausführen, um nun festzustellen, dass das Renderproblem behoben wurde:  
   
    ![Das Objekt wird jetzt angezeigt. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "Gfx_diag_demo_missing_object_shader_resolution")
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Spy++-Hilfe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 38afcac385a846e169f0fbf601fc759fbec62304
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f07ca424bdf3b9f34439058c9a06364516ca0c02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961913"
 ---
 # <a name="spy-help"></a>Spy++-Hilfe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Die Dokumentation für das Spy++-Hilfsprogramm umfasst zwei Gruppen von allgemei
  [Menübefehle](../debugger/menu-commands.md)  
  Beschreibt die verfügbaren Befehle für jedes Spy++-Menü.  
   
- [Schriftart (Dialogfeld)](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Dialogfeld „Schriftart“](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  So konfigurieren Sie die in einem Fenster Spy++-Ansichten verwendete Schriftart verwendet.  
   
  [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md)  
@@ -62,6 +57,3 @@ Die Dokumentation für das Spy++-Hilfsprogramm umfasst zwei Gruppen von allgemei
   
  [Weitere Dialogfelder](../debugger/other-dialog-boxes.md)  
  Zum Anzeigen von Informationen über die Spy++-Anwendung verwendet.
-
-
-

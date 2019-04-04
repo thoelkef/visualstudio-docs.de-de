@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,14 +12,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959605"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Können Sie das Arbeitselement, die nachverfolgung von Abfrageausführungsinformationen Log Arbeitselement aus [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Um dieses Feature verwenden zu können, muss Ihr Projekt Teil eines Teamprojekts in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -44,6 +39,3 @@ Können Sie das Arbeitselement, die nachverfolgung von Abfrageausführungsinform
 2.  Zeigen Sie auf **Arbeitsaufgabe erstellen** , und klicken Sie auf den Typ des zu erstellenden Arbeitselements.  
   
      Ein einzelnes Arbeitselement wird für die ausgewählten Warnungen für die Sie angeben, die Fehlerinformationen erstellt.
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Arbeiten mit dem DSL-Definitionsdiagramm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960663"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,17 +65,14 @@ Das Diagramm ein [!INCLUDE[dsl](../includes/dsl-md.md)] Definition ist ein wicht
 ### <a name="expandcollapse-inheritance-tree"></a>Vererbungsstruktur erweitern/reduzieren  
  Ist eine Domänenklasse der Basisklasse anderer Domänenklassen, können Sie die Vererbungsstruktur ausblenden, indem Sie einen Rechtsklick auf die domänenklassendefinition, und klicken Sie dann auf **Vererbungsstruktur reduzieren**. Um die Vererbungsstruktur wieder angezeigt, mit der rechten Maustaste in des Definitionselement, und klicken Sie dann auf **Vererbungsstruktur erweitern**.  
   
-### <a name="bring-tree-here"></a>Bring Tree Here  
+### <a name="bring-tree-here"></a>Struktur verschieben  
  Sie können mit der rechten Maustaste einer Platzhalter-Domänenklasse aus, und klicken Sie dann auf das Diagramm konsolidieren **Struktur hier**. Die Platzhalter-Domänenklasse wird zu einem Definitionselement und zeigt die Vererbungs- und Beziehungsstrukturen an. Das frühere Definitionselement wird zu einem Platzhalterelement, wenn es sich dabei um das Ziel einer Beziehung oder um das untergeordnete Element einer Vererbungsbeziehung handelt. Ansonsten wird es nicht länger angezeigt.  
   
-### <a name="split-tree"></a>Split Tree  
+### <a name="split-tree"></a>Struktur teilen  
  Sie können vererbungs- oder Strukturen auszubrechen, in der rechten Maustaste auf die domänenklassendefinition, die sie anzeigen, und klicken Sie dann auf **Baum teilen**. Das Definitionselement wird zu einem Platzhalterelement, und die Definitionsdomänenklasse wird nun zusammen mit den entsprechenden Vererbungs- und Beziehungsstrukturen unten in der Partition angezeigt.  
   
-### <a name="show-as-class"></a>Show As-Klasse  
+### <a name="show-as-class"></a>Als Klasse anzeigen  
  Wenn eine domänenbeziehung abgeleitete Beziehungen verfügt über, oder wenn dies bei anderen domänenbeziehungen Beziehungen einbetten oder verweisbeziehungen ist, Sie die Beziehung als Klasse anzeigen können, indem Sie mit der rechten Maustaste in der Beziehungs, und klicken Sie dann auf **als Klasse anzeigen** . Die Beziehung mit angezeigt wird eine **Domäneneigenschaften** Depot, und zeigt die Vererbung und Beziehungen-Strukturen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [DSL-Tools – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

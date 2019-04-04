@@ -1,14 +1,9 @@
 ---
 title: Sichern von ClickOnce-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: ae5bd70a675798d971cb184038a7e036d04fc95a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961916"
 ---
 # <a name="securing-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +41,14 @@ ms.locfileid: "49247220"
 |Installieren aus einer Dateifreigabe im Netzwerk|Zone "Lokales Intranet"|  
 |Installieren von CD-ROM|Voll vertrauenswürdig|  
   
- Die Standardberechtigungen basieren auf dem Speicherort, von dem aus die Originalversion der Anwendung bereitgestellt wurde. Updates der Anwendung erben diese Berechtigungen. Falls die Anwendung so konfiguriert ist, dass sie an einem Web- oder Netzwerkspeicherort nach Updates sucht und eine neuere Version zur Verfügung steht, kann die ursprüngliche Installation statt der Berechtigung Volle Vertrauenswürdigkeit u. U. Berechtigungen für die Internet- oder Intranetzone erhalten. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Für Computer, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Um die Bereitstellung vertrauenswürdiger Anwendungen zu konfigurieren, kann das Zertifikat auf Computer- oder Unternehmensebene installiert werden. Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Die Standardberechtigungen basieren auf dem Speicherort, von dem aus die Originalversion der Anwendung bereitgestellt wurde. Updates der Anwendung erben diese Berechtigungen. Falls die Anwendung so konfiguriert ist, dass sie an einem Web- oder Netzwerkspeicherort nach Updates sucht und eine neuere Version zur Verfügung steht, kann die ursprüngliche Installation statt der Berechtigung Volle Vertrauenswürdigkeit u. U. Berechtigungen für die Internet- oder Intranetzone erhalten. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Für Computer, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Um die Bereitstellung vertrauenswürdiger Anwendungen zu konfigurieren, kann das Zertifikat auf Computer- oder Unternehmensebene installiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Richtlinien der Codezugriffssicherheit  
- Berechtigungen für eine Anwendung hängen von den Einstellungen in der [ \<TrustInfo >-Element](../deployment/trustinfo-element-clickonce-application.md) Element des Anwendungsmanifests. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert diese Informationen automatisch basierend auf den Einstellungen auf der Eigenschaftenseite **Sicherheit** des Projekts. Einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung werden nur die speziellen Berechtigungen gewährt, die diese anfordert. Wenn für den Dateizugriff beispielsweise Berechtigungen für volle Vertrauenswürdigkeit erforderlich sind und die Anwendung eine Dateizugriffsberechtigung anfordert, wird ihr nur eine Berechtigung für den Dateizugriff und keine volle Vertrauenswürdigkeit gewährt. Beim Entwickeln der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung sollten Sie sicherstellen, dass Sie nur die spezifischen Berechtigungen anfordern, die für die Anwendung erforderlich sind. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" verwenden, um Ihre Anwendung auf teilweise Vertrauenswürdigkeit zu beschränken. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Wenn die Anwendung benutzerdefinierte Berechtigungen erfordert, können Sie eine benutzerdefinierte Zone erstellen. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Berechtigungen für eine Anwendung hängen von den Einstellungen in der [ \<TrustInfo >-Element](../deployment/trustinfo-element-clickonce-application.md) Element des Anwendungsmanifests. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert diese Informationen automatisch basierend auf den Einstellungen auf der Eigenschaftenseite **Sicherheit** des Projekts. Einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung werden nur die speziellen Berechtigungen gewährt, die diese anfordert. Wenn für den Dateizugriff beispielsweise Berechtigungen für volle Vertrauenswürdigkeit erforderlich sind und die Anwendung eine Dateizugriffsberechtigung anfordert, wird ihr nur eine Berechtigung für den Dateizugriff und keine volle Vertrauenswürdigkeit gewährt. Beim Entwickeln der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung sollten Sie sicherstellen, dass Sie nur die spezifischen Berechtigungen anfordern, die für die Anwendung erforderlich sind. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" verwenden, um Ihre Anwendung auf teilweise Vertrauenswürdigkeit zu beschränken. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Wenn die Anwendung benutzerdefinierte Berechtigungen erfordert, können Sie eine benutzerdefinierte Zone erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Das Einschließen einer Berechtigung, die nicht zum Standardberechtigungssatz der Zone gehört, aus der die Anwendung bereitgestellt wird, führt dazu, dass der Endbenutzer bei der Installation oder bei einem Update zum Gewähren der Berechtigung aufgefordert wird. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Auf Computern, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben.  
   
- Als Entwickler müssen Sie sicherstellen, dass Ihre Anwendung mit den geeigneten Berechtigungen ausgeführt wird. Wenn die Anwendung während der Laufzeit Berechtigungen außerhalb einer Zone anfordert, wird ggf. eine Sicherheitsausnahme angezeigt. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ermöglicht es Ihnen, Ihre Anwendung in der Zielsicherheitszone zu debuggen, und bietet Hilfe beim Entwickeln von sicheren Anwendungen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen eine ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Als Entwickler müssen Sie sicherstellen, dass Ihre Anwendung mit den geeigneten Berechtigungen ausgeführt wird. Wenn die Anwendung während der Laufzeit Berechtigungen außerhalb einer Zone anfordert, wird ggf. eine Sicherheitsausnahme angezeigt. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ermöglicht es Ihnen, Ihre Anwendung in der Zielsicherheitszone zu debuggen, und bietet Hilfe beim Entwickeln von sicheren Anwendungen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Weitere Informationen zur Codezugriffssicherheit und zu ClickOnce finden Sie unter [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -86,13 +81,10 @@ ms.locfileid: "49247220"
   
 1.  Verbergen Sie die Anwendung mit Dotfuscator.  
   
-2.  Verwenden Sie Mage.exe oder MageUI.exe, um die ClickOnce-Manifeste zu generieren und sie zu signieren. Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2.  Verwenden Sie Mage.exe oder MageUI.exe, um die ClickOnce-Manifeste zu generieren und sie zu signieren. Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 3.  Veröffentlichen (kopieren) Sie die Dateien manuell an den Quellspeicherort der Bereitstellung (Webserver, UNC-Freigabe oder CD-ROM).  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

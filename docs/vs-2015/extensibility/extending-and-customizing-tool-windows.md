@@ -1,27 +1,22 @@
 ---
 title: Erweitern und Anpassen von Tool Windows | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961429"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Erweitern und Anpassen von Toolfenstern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio bietet verschiedene Arten von Windows, z. B. Toolfenster Dokumentf
   
  Toolfensterbereiche können WPF-Benutzersteuerelemente hosten und Symbolleisten unterstützen. Sie können die <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>-Eigenschaft außer Kraft setzen, um das Handle des gehosteten Steuerelements zurückzugeben.  
   
- Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Sie können z. B. eine Symbolleiste hinzufügen: [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [Hinzufügen eines Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche, die Ihnen ermöglicht, Elemente in das Toolfenster zu suchen, hinzufügen: [Hinzufügen der Suche zu einem Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
+ Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Beispielsweise können Sie eine Symbolleiste hinzufügen: [Hinzufügen einer Symbolleiste zu einem Toolfenster](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [Hinzufügen eines Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche hinzufügen, die Sie Elemente in das Toolfenster suchen können: [Hinzufügen von Suchfunktionen zu einem Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
   
- Sie können Ereignisse abonnieren, Tool-Fenster: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
+ Sie können Tool Window-Ereignissen abonnieren: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Erweitern Sie vorhandene Tool Windows  
  Sie können Informationen über das Toolfenster hinzufügen, um ein neues **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite, das Schreiben auf die **Aufgabenliste** und **Ausgabe**  Windows. Weitere Informationen finden Sie unter [erweitern die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) und [erweitern die Eigenschaften, Aufgabenliste, Ausgabe und Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio bietet verschiedene Arten von Windows, z. B. Toolfenster Dokumentf
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
-

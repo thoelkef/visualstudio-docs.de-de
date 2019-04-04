@@ -1,27 +1,22 @@
 ---
 title: Spy++-Symbolleiste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ toolbar
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 05dc7dd74af20c76a3b673d5960cd88331ad7d51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a96a5765c98bf8e7d1c600fbd47478a88fa7175d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961557"
 ---
 # <a name="spy-toolbar"></a>Spy++-Symbolleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,6 +48,3 @@ Die Symbolleiste wird in der Menüleiste in Spy++ angezeigt. Zum Anzeigen oder A
  [Verwenden von Spy++](../debugger/using-spy-increment.md)   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)
-
-
-

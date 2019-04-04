@@ -1,14 +1,9 @@
 ---
-title: 'CA2225: Operatorüberladungen müssen benannte alternativen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2225: Operatorüberladungen müssen mit dem alternativen Namen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959865"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,7 +44,7 @@ ms.locfileid: "49860252"
 |---------|------------------|-----------|--------------------|
 |+ (binär)|+|+ (binär)|Hinzufügen|
 |+=|+=|+=|Hinzufügen|
-|&|And|&|BitwiseAnd|
+|&|und|&|BitwiseAnd|
 |&=|' Und ' =|&=|BitwiseAnd|
 |&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|"Oder" =|&#124;=|BitwiseOr|
@@ -63,20 +58,20 @@ ms.locfileid: "49860252"
 |>=|>=|>=|Vergleichen|
 |++|Nicht zutreffend|++|Inkrement|
 |<>|!=|gleich|
-|<<|<<|<<|Linke UMSCHALTTASTE|
-|<<=|<<=|<<=|Linke UMSCHALTTASTE|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
 |&&|Nicht zutreffend|&&|LogicalAnd|
-||||Nicht zutreffend||||LogicalOr|
+|&#124;&#124;|Nicht zutreffend|&#124;&#124;|LogicalOr|
 |!|Nicht zutreffend|!|LogicalNot|
 |%|Mod|%|MOD oder Rest|
 |%=|Nicht zutreffend|%=|Mod|
 |* (binär)|*|*|Multiplizieren|
 |*=|Nicht zutreffend|*=|Multiplizieren|
 |~|Not|~|OnesComplement|
-|>>|>>|>>|Rechte UMSCHALTTASTE|
-=|Nicht zutreffend|>>=|Rechte UMSCHALTTASTE|
+|>>|>>|>>|RightShift|
+=|Nicht zutreffend|>>=|RightShift|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
 |-=|Nicht zutreffend|-=|Subtrahieren|
 |true|IsTrue|Nicht zutreffend|"IsTrue" (Eigenschaft)|
@@ -104,13 +99,10 @@ ms.locfileid: "49860252"
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Außerkraftsetzung equals, Equals beim Überladen](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-
