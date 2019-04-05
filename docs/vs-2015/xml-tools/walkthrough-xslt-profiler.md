@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: XSLT-Profiler | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946969"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Exemplarische Vorgehensweise: XSLT-Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, M
   
 2.  Die **Aufrufer-/Aufgerufener** Sicht hat die folgenden drei Teilen:  
   
-    -   **Funktionen, die aufgerufen**: alle Funktionen, die eine bestimmte Funktion aufgerufen werden im oberen Teil der Ansicht aufgelistet.  
+    -   **Funktionen, die aufgerufen**: Alle Funktionen, die eine bestimmte Funktion aufgerufen werden im oberen Teil der Ansicht aufgeführt.  
   
-    -   **Aktuelle Funktion**: die bestimmte Funktion, die aufgerufen wurde, wird im mittleren Teil der Ansicht aufgeführt.  
+    -   **Aktuelle Funktion**: Die bestimmte Funktion, die aufgerufen wurde, wird im mittleren Teil der Ansicht aufgeführt.  
   
-    -   **Funktionen, die vom aufgerufenen** : alle Funktionen, die von der jeweiligen Funktion aufgerufen wurden werden im unteren Teil der Ansicht aufgelistet.  
+    -   **Funktionen, die vom aufgerufenen** : Alle Funktionen, die von der jeweiligen Funktion aufgerufen wurden werden im unteren Teil der Ansicht aufgelistet.  
   
 3.  Wenn eine Funktion mit dem Namen `SyncToNavigator` im mittleren Teil der Ansicht angezeigt wird, werden alle von der `SyncToNavigator`-Funktion aufgerufenen Funktionen im oberen Teil der Ansicht aufgelistet, und alle Funktionen, die von `SyncToNavigator` aufgerufen wurden, werden im unteren Teil der Ansicht aufgeführt.  
   
@@ -116,6 +111,3 @@ Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, M
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-

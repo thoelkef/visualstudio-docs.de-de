@@ -1,14 +1,9 @@
 ---
 title: 'CA1726: Bevorzugte Begriffe verwenden | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220518"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001844"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: Bevorzugte Begriffe verwenden
+# <a name="ca1726-use-preferred-terms"></a>CA1726: Bevorzugte Begriffe verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1726: Bevorzugte Begriffe verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: Bevorzugte Begriffe verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) auf docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -46,29 +41,29 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1726: Bevo
   
 |Veraltete Bezeichnung|Bevorzugter Begriff|  
 |-------------------|--------------------|  
-|werden nicht|Nicht|  
-|Abgebrochen|Canceled|  
+|werden nicht|AreNot|  
+|Cancelled|Canceled|  
 |Kann nicht|Nicht möglich|  
 |ComPlus|EnterpriseServices|  
 |Testfalldaten|CouldNot|  
 |Didnt|DidNot|  
-|Nicht|Nicht|  
-|Nicht erforderlich|Zu|  
+|Nicht|DoesNot|  
+|Dont|DoNot|  
 |Flag oder Flags|Es gibt keine ersetzungsbegriff. Nicht verwenden.|  
-|noch nicht|HadNot|  
+|Hadnt|HadNot|  
 |Noch nicht|HasNot|  
 |noch nicht|HaveNot|  
-|Indizes|Indexes|  
-|ist nicht|IsNot|  
-|Anmeldung|Anmeldung|  
-|Abmelden|Abmelden|  
+|Indizes|Indizes|  
+|Isnt|IsNot|  
+|LogIn|LogOn|  
+|LogOut|LogOff|  
 |Shouldnt|ShouldNot|  
-|Anmelden|Anmeldung|  
-|Durch die qualitätssicherung|Abmelden|  
+|SignOn|SignIn|  
+|SignOff|SignOut|  
 |Wasnt|WasNot|  
-|Waren nicht|Netzwerkparameter|  
+|Waren nicht|WereNot|  
 |Empfängerseitige|WillNot|  
-|Würde nicht|WouldNot|  
+|Wouldnt|WouldNot|  
 |Beschreibbare|Beschreibbare|  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
@@ -79,4 +74,3 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1726: Bevo
   
 ## <a name="related-rules"></a>Verwandte Regeln  
  [Benennungswarnungen](../code-quality/naming-warnings.md)
-

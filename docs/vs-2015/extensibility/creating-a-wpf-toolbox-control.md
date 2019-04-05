@@ -1,14 +1,9 @@
 ---
 title: Erstellen eines WPF-Toolbox-Steuerelements | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786027"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001491"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Erstellen eines WPF-Toolbox-Steuerelements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,5 +99,4 @@ Die Vorlage für Toolbox-Steuerelement für WPF (Windows Presentation Framework)
   
 3.  Laden Sie die VSIX-Datei in ein Netzwerk oder auf einer Website hoch.  
   
-     Wenn Sie die Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website, die andere Benutzer verwenden können **Extras / Erweiterungen und Updates** in Visual Studio für das Steuerelement online suchen und installieren Sie es.
-
+     Wenn Sie die Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website, die andere Benutzer verwenden können **Extras / Erweiterungen und Updates** in Visual Studio für das Steuerelement online suchen und installieren Sie es.

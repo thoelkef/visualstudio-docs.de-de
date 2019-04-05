@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Aktivieren Sie das Debuggen für ASP.NET-Anwendungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947011"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Gewusst wie: Debuggen für ASP.NET-Anwendungen aktivieren
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Vorgehensweise: Aktivieren Sie Debuggen für ASP.NET-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie das Debuggen aktivieren möchten, müssen Sie es auf der Seite **Projekteigenschaften** und in der Datei Web.config der Anwendung aktivieren.  
@@ -51,7 +46,7 @@ Wenn Sie das Debuggen aktivieren möchten, müssen Sie es auf der Seite **Projek
 1.  Öffnen Sie die Datei web.config mit einem beliebigen Text-Editor oder XML-Parser.  
   
     > [!NOTE]  
-    > Allerdings ist es nicht möglich, über einen Webbrowser remote auf die Datei zuzugreifen. Aus Sicherheitsgründen wird Microsoft IIS durch [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] so konfiguriert, dass ein direkter Browserzugriff auf die Web.config-Dateien nicht möglich ist. Wenn Sie versuchen, mit einem Browser auf eine Konfigurationsdatei zuzugreifen, wird der HTTP-Zugriffsfehler 403 (verweigert) ausgegeben.  
+    > Allerdings ist es nicht möglich, über einen Webbrowser remote auf die Datei zuzugreifen. Aus Sicherheitsgründen wird Microsoft IIS durch [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] so konfiguriert, dass ein direkter Browserzugriff auf die Web.config-Dateien nicht möglich ist. Wenn Sie versuchen, mit einem Browser auf eine Konfigurationsdatei zuzugreifen, wird der HTTP-Zugriffsfehler 403 (verweigert) ausgegeben.  
   
 2.  Web.config ist eine XML-Datei und enthält daher mit Tags markierte, geschachtelte Abschnitte. Suchen Sie das Element `configuration/system.web/compilation` . Wenn das compilation-Element nicht den vorhanden ist, erstellen Sie es.  
   
@@ -86,7 +81,7 @@ Die Datei "Web.config" sollte wie im folgenden Beispiel aussehen. Beachten Sie, 
 ## <a name="robust-programming"></a>Stabile Programmierung  
 An Web.config-Dateien vorgenommene Änderungen werden von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] automatisch erkannt und die neuen Konfigurationseinstellungen angewendet. Sie müssen den Computer oder den IIS-Server nicht neu starten, damit die Änderungen wirksam werden.  
   
-Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalten, in denen möglicherweise Web.config-Dateien vorhanden sind. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen erben Einstellungen von Web.config-Dateien auf höheren Ebenen im URL-Pfad. Mithilfe hierarchischer Konfigurationsdateien können Sie die Einstellungen für mehrere [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen gleichzeitig ändern, z. B. für alle Anwendungen, die sich in der Hierarchie unterhalb der jeweiligen Konfigurationsdatei befinden. Wenn jedoch in einer Datei auf einer niedrigeren Ebene der Hierarchie `debug` festgelegt ist, wird der aus höheren Ebenen geerbte Wert überschrieben.  
+Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalten, in denen möglicherweise Web.config-Dateien vorhanden sind. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen erben Einstellungen von Web.config-Dateien auf höheren Ebenen im URL-Pfad. Mithilfe hierarchischer Konfigurationsdateien können Sie die Einstellungen für mehrere [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendungen gleichzeitig ändern, z. B. für alle Anwendungen, die sich in der Hierarchie unterhalb der jeweiligen Konfigurationsdatei befinden. Wenn jedoch in einer Datei auf einer niedrigeren Ebene der Hierarchie `debug` festgelegt ist, wird der aus höheren Ebenen geerbte Wert überschrieben.  
   
 So können Sie z. B. in www.microsoft.com/aaa/Web.config `debug="true"` angeben, und alle Anwendungen im Ordner aaa und in jedem Unterordner von aaa erben diese Einstellung. Wenn sich die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung also unter www.microsoft.com/aaa/bbb befindet, erbt sie diese Einstellung ebenso wie alle [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen unter www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd usw. Die einzige Ausnahme stellen Anwendungen dar, die die Einstellungen mit einer eigenen Web.config-Datei auf einer niedrigeren Ebene überschreiben.  
   
@@ -94,8 +89,3 @@ Das Aktivieren des Debugmodus wirkt sich entscheidend auf die Leistung der [!INC
   
 ## <a name="see-also"></a>Siehe auch  
 [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

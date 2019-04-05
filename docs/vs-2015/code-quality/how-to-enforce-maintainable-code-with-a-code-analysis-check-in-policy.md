@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -16,14 +11,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946291"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von verwaltbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Entwickler können das Codemetrik-Tool verwenden, um die Komplexität und verwaltbarkeit ihres Codes messen, aber sie Codemetrik können nicht als Teil einer Eincheckrichtlinie aufgerufen werden. Allerdings kann ein Team Codeanalyseregeln aktivieren, überprüfen Sie die Kompatibilität ihres Codes mit Codemetrik Standards erzwingen die Regeln durch Check-in-Richtlinien. Weitere Informationen zu codemetriken finden Sie unter den [Codemetrikwerte](../code-quality/code-metrics-values.md).  
@@ -52,7 +47,7 @@ Entwickler können das Codemetrik-Tool verwenden, um die Komplexität und verwal
   
 2.  Wählen Sie die Kontrollkästchen für die folgenden Regeln:  
   
-    -   Vererbungstiefe: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei mehr als 5 Ebenen  
+    -   Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei mehr als 5 Ebenen  
   
     -   Komplexität: **CA1502 AvoidExcessiveComplexity** -Schwellenwert: Warnung bei mehr als 25  
   
@@ -67,6 +62,3 @@ Entwickler können das Codemetrik-Tool verwenden, um die Komplexität und verwal
 ## <a name="see-also"></a>Siehe auch  
  [Codemetrikwerte](../code-quality/code-metrics-values.md)   
  [Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-

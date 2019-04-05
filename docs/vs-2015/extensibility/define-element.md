@@ -1,27 +1,22 @@
 ---
 title: Definieren Sie Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df8f7dc76d01cd1a76537dad23b44e2e4b061682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946189"
 ---
 # <a name="define-element"></a>Define-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +36,8 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderlich. Der Name des Symbols:<br /><br /> Name = "Modus"|  
-|Wert|Erforderlich. Der Wert des Symbols:<br /><br /> Wert = "Standard"|  
+|Name|Erforderlich. Der Name des Symbols:<br /><br /> name="Mode"|  
+|Wert|Erforderlich. Der Wert des Symbols:<br /><br /> value="Standard"|  
 |Bedingung|Dies ist optional. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
@@ -63,4 +58,3 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
   
 ## <a name="see-also"></a>Siehe auch  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

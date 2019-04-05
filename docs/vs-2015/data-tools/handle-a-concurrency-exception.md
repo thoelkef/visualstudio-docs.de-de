@@ -1,12 +1,9 @@
 ---
 title: Behandeln einer Parallelitätsausnahme | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947065"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 4.  Füllen eines Datasets mit Daten aus der Tabelle `Customers` in der Datenbank Northwind.  
   
-5.  Verwenden der [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio den direkten Zugriff auf die `Customers` Datentabelle und einen Datensatz zu ändern.  
+5.  Verwenden der [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio den direkten Zugriff auf die `Customers` Datentabelle und einen Datensatz zu ändern.  
   
 6.  Ändern Sie den gleichen Datensatz auf einen anderen Wert, aktualisieren Sie das Dataset und versuchen Sie, die Änderungen in der Datenbank zu schreiben, was zu einem Parallelitätsfehler führt.  
   
@@ -56,10 +53,10 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
--   Zugriff auf die Beispieldatenbank Northwind mit der Berechtigung zum Durchführen von Aktualisierungen. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+-   Zugriff auf die Beispieldatenbank Northwind mit der Berechtigung zum Durchführen von Aktualisierungen.
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  Erstellen Sie in dieser exemplarischen Vorgehensweise zunächst eine neue Windows-Anwendung.  
@@ -83,7 +80,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 1.  Auf der **Daten** Menü wählen **neue Datenquelle hinzufügen**.  
   
-     Die [Assistenten zur Datenquellenkonfiguration](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) wird geöffnet.  
+     Der [Assistent zum Konfigurieren von Datenquellen](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) wird geöffnet.  
   
 2.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**.  
   
@@ -129,13 +126,13 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
  Die dem Benutzer drei Versionen des Datensatzes für die Applicationpresents:  
   
-- Der aktuelle Datensatz in der Datenbank  
+- Den aktuellen Datensatz in der Datenbank  
   
 - Der ursprüngliche Datensatz, der in das Dataset geladen wird  
   
-- Die vorgeschlagenen Änderungen im dataset  
+- Die vorgeschlagenen Änderungen im Dataset  
   
-  Der Benutzer kann dann die Datenbank mit der vorgeschlagenen Version überschreiben oder die Aktualisierung abzubrechen und das Dataset mit den neuen Werten aus der Datenbank aktualisieren.  
+  Der Benutzer kann dann die Datenbank mit der vorgeschlagenen Version überschreiben oder aber die Aktualisierung abbrechen und das Dataset mit den neuen Werten aus der Datenbank aktualisieren.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>So aktivieren Sie die Behandlung von Parallelitätsfehlern  
   
@@ -172,12 +169,12 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>So erstellen Sie die Meldung, die dem Benutzer angezeigt wird  
   
--   Erstellen der Nachricht durch den folgenden Code zum Hinzufügen der **Code-Editor**. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein.  
+-   Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein.  
   
      [!code-csharp[VbRaddataConcurrency#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#4)]
      [!code-vb[VbRaddataConcurrency#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#4)]  
   
-### <a name="process-the-users-response"></a>Verarbeitet die Antwort des Benutzers  
+### <a name="process-the-users-response"></a>Verarbeiten der Antwort des Benutzers  
  Außerdem benötigen Sie Code zum Verarbeiten der Antwort des Benutzers in der MessageBox. Die Optionen sind entweder auf den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung überschreiben oder die lokalen Änderungen verwerfen und aktualisieren Sie die Datentabelle mit dem Datensatz, der derzeit in der Datenbank vorhanden ist. Wenn der Benutzer "Ja", die <xref:System.Data.DataTable.Merge%2A> Methode wird aufgerufen, mit der *PreserveChanges* Argument festgelegt wird, um `true`. Dies bewirkt, dass den Updateversuch, die erfolgreich ist, muss, da die ursprüngliche Version des Datensatzes nun der Eintrag in der Datenbank übereinstimmt.  
   
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>So verarbeiten Sie die Benutzereingabe aus dem Meldungsfeld  
@@ -198,7 +195,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 3.  Auf der **Ansicht** Menü wählen **Server-Explorer**.  
   
-4.  In **Server-Explorer**, erweitern Sie die Verbindung Ihrer Anwendung verwenden, und erweitern Sie dann die **Tabellen** Knoten.  
+4.  Erweitern Sie im **Server-Explorer** die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten **Tabellen**.  
   
 5.  Mit der rechten Maustaste die **Kunden** Tabelle, und wählen Sie dann **Tabellendaten anzeigen**.  
   
@@ -211,7 +208,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 8.  Im ersten Datensatz auf dem Formular (`ALFKI`), ändern Sie`ContactName` zu `Maria Anders1`.  
   
-9. Wählen Sie die **speichern** Schaltfläche.  
+9. Klicken Sie auf die Schaltfläche **Speichern**.  
   
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.  
   
