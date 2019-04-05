@@ -1,26 +1,21 @@
 ---
 title: Anwendung von Einstellungen auf mehrere Projektverbindungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 16b7a139a3f1061516f779cb9b384bfb69eda7d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bca17fdc440fc373d0d4811ed57cd5d27a6c201a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58962241"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung von Einstellungen auf mehrere Projektverbindungen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ Ein Quellcodeverwaltungs-Plug-In können mithilfe des Datenquellen-Steuerelement
   
 ## <a name="see-also"></a>Siehe auch  
  [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

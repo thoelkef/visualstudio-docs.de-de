@@ -1,12 +1,9 @@
 ---
 title: Liest XML-Daten in ein Dataset | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946630"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
 5.  Hinzufügen von Code zum Anzeigen des XML-Schemas auf Grundlage der XML-Datei in eine <xref:System.Windows.Forms.TextBox> Steuerelement  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  In diesem Schritt erstellen Sie ein Visual Basic oder Visual C#-Projekt, das in dieser exemplarischen Vorgehensweise enthält.  
@@ -172,7 +169,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
     |Steuerelement|Eigenschaft|Einstellung|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
-    ||**Scrollleisten**|**Vertikal**|  
+    ||**ScrollBars**|**Vertikal**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Testen Sie das Formular  
- Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt.  
-  
-#### <a name="to-test-the-form"></a>So testen Sie das Formular  
+
+Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt.
   
 1.  Wählen Sie **F5** zum Ausführen der Anwendung.  
   
@@ -243,15 +239,15 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
      Das Textfeld zeigt die XML-Schema für die XML-Datei.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- In dieser exemplarischen Vorgehensweise erfahren Sie, die Grundlagen der Einlesen einer XML-Datei in ein Dataset sowie das Erstellen eines Schemas, die basierend auf dem Inhalt der XML-Datei. Hier sind einige Aufgaben, die Sie als Nächstes tun können:  
+
+In dieser exemplarischen Vorgehensweise erfahren Sie, die Grundlagen der Einlesen einer XML-Datei in ein Dataset sowie das Erstellen eines Schemas, die basierend auf dem Inhalt der XML-Datei. Hier sind einige Aufgaben, die Sie als Nächstes tun können:  
   
 -   Bearbeiten Sie die Daten in das Dataset und das zurückschreiben können als XML. Weitere Informationen finden Sie unter <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank. Weitere Informationen finden Sie unter [Speichern von Daten](../data-tools/saving-data.md).  
+-   Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank.
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweisen für Daten](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Exemplarische Vorgehensweisen zur Arbeit mit Daten](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung zum Empfangen von Daten](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Vorbereiten der Anwendung auf den Empfang von Daten](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

@@ -1,25 +1,20 @@
 ---
 title: MipMap-Generierungsvariante | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c063235d69a59caf2c41c0db0ddc566c97cc95be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962132"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
   Wenn Mipmaps für eine Textur automatisch erzeugt worden sind, werden Aufrufe von `ID3D11Device::CreateShaderResourceView` während der Wiedergabe modifiziert, um während des Textursamplings die Mip-Kette zu verwenden.  
   
 ## <a name="example"></a>Beispiel  
- Die **MipMap-Erzeugung** Variante reproduziert werden kann, mithilfe von Code wie folgt:  
+ Die Variante **Mipmap-Erzeugung** lässt sich durch Verwendung eines ähnlichen Codes wie dem folgenden reproduzieren:  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -79,6 +74,3 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
   
 ## <a name="see-also"></a>Siehe auch  
  [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-
