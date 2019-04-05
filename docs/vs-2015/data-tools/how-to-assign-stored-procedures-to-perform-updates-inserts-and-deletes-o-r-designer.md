@@ -1,25 +1,22 @@
 ---
-title: 'Gewusst wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O / R Designer) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O / R Designer) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232712"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959112"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Gewusst wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ Gespeicherte Prozeduren können dem O/R-Designer hinzugefügt und als typische <
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>So weisen Sie gespeicherte Prozeduren zu, um das Standardverhalten einer Entitätsklasse zu überschreiben  
   
-1.  Öffnen der **LINQ to SQL** Datei im Designer. (Doppelklicken Sie auf die DBML-Datei in **Projektmappen-Explorer**.)  
+1.  Öffnen Sie die **LINQ to SQL**-Datei im Designer. (Doppelklicken Sie auf die DBML-Datei in **Projektmappen-Explorer**.)  
   
 2.  In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie **gespeicherte Prozeduren** und suchen Sie die gespeicherten Prozeduren, die für die INSERT-, Update-, verwendet werden sollen. und/oder Löschbefehle der Entitätsklasse.  
   
@@ -48,23 +45,23 @@ Gespeicherte Prozeduren können dem O/R-Designer hinzugefügt und als typische <
   
 4.  Wählen Sie die Entitätsklasse aus, für die die gespeicherte Prozedur zur Durchführung von Updates verwendet werden soll.  
   
-5.  In der **Eigenschaften** Fenster, wählen Sie den Befehl zum Überschreiben (**einfügen**, **Update**, oder **löschen**).  
+5.  Wählen Sie im Fenster **Eigenschaften** den Befehl aus, der überschrieben werden soll (**Einfügen**, **Aktualisieren** oder **Löschen**).  
   
-6.  Klicken Sie auf die Auslassungspunkte (...) neben den Wörtern **Laufzeit** zum Öffnen der **Verhalten konfigurieren** Dialogfeld.  
+6.  Klicken Sie auf die Auslassungszeichen (...) neben den Wörtern **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.  
   
-7.  Wählen Sie **anpassen**.  
+7.  Wählen Sie **Anpassen** aus.  
   
-8.  Wählen Sie die gewünschte gespeicherte Prozedur in der **anpassen** Liste.  
+8.  Wählen Sie die gewünschte gespeicherte Prozedur in der Liste **Anpassen** aus.  
   
-9. Überprüfen Sie die Liste der **Methodenargumente** und **Klasseneigenschaften** zu überprüfen, ob die **Methodenargumente** Karte, um die entsprechende **Klasseneigenschaften**. Ordnen Sie die ursprünglichen Methodenargumente (Original_*ArgumentName*) den ursprünglichen Eigenschaften (*PropertyName* (Original)) für Update- und Delete-Befehle.  
+9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften**, um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente (Original_*ArgumentName*) den ursprünglichen Eigenschaften (*PropertyName* (Original)) für Update- und Delete-Befehle.  
   
     > [!NOTE]
     >  Standardmäßig werden Methodenargumente Klasseneigenschaften zugeordnet, wenn die Namen übereinstimmen. Wenn geänderte Eigenschaftennamen von Tabelle und Entitätsklasse nicht mehr übereinstimmen, kann es notwendig sein, die entsprechende Klasseneigenschaft für die Zuordnung auszuwählen, wenn der Designer die korrekte Zuordnung nicht ermitteln kann.  
   
-10. Klicken Sie auf **OK** oder **anwenden**.  
+10. Klicken Sie auf **OK** oder auf **Anwenden**.  
   
     > [!NOTE]
-    >  Sie können das Verhalten für jede Klasse/Verhalten-Kombination zu konfigurieren, solange Sie klicken Sie auf Weiter **übernehmen** nach jeder Änderung. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf **übernehmen**, ein Warnungsdialogfeld eine Möglichkeit zum Anwenden von Änderungen wird angezeigt.  
+    >  Sie können mit der Konfiguration des Verhaltens jeder Klasse/Verhalten-Kombination fortfahren, solange Sie nach jeder Änderung auf **Anwenden** klicken. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf **übernehmen**, ein Warnungsdialogfeld eine Möglichkeit zum Anwenden von Änderungen wird angezeigt.  
   
      Um zur Verwendung der standardlaufzeitlogik für Updates zurückzukehren, klicken Sie auf die Auslassungspunkte neben dem Einfüge-, Update- oder Delete-Befehl in der **Eigenschaften** Fenster und wählen Sie dann **-Laufzeitumgebung verwenden** in die  **Konfigurieren des Verhaltens** Dialogfeld.  
   
@@ -72,7 +69,5 @@ Gespeicherte Prozeduren können dem O/R-Designer hinzugefügt und als typische <
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Exemplarische Vorgehensweise: Erstellen von aktualisierten gespeicherten Prozeduren für die Northwind-Kundentabelle](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Insert-, Update- und Delete-Operationen](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

@@ -1,11 +1,8 @@
 ---
 title: Receive-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
@@ -13,13 +10,13 @@ ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 73d897b1e6835d56a3f590356a9588c6742e6add
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 16b0f414c87fd1d9dea7305e43e23a59b7dc53b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962180"
 ---
 # <a name="receive-activity-designer"></a>Receive-Aktivitätsdesigner
 Die **Receive** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Receive> Aktivität. Eine <xref:System.ServiceModel.Activities.Receive>-Aktivität ist eine Aktivität, die eine Nachricht empfängt, die entweder ein integrierter Datentyp, etwa ein <xref:System.ServiceModel.Channels.Message>-, <xref:System.IO.Stream>- oder ein <xref:System.Xml.Linq.XElement>-Typ sein kann oder ein anwendungsdefinierter Datenvertrag, ein Nachrichtenvertrag oder eine XML-Klasse, die serialisiert werden kann.  

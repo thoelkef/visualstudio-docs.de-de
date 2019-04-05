@@ -1,14 +1,9 @@
 ---
-title: 'CA1030 nach Möglichkeit: Ereignisse verwenden | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1030: Nach Möglichkeit Ereignisse verwenden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870132"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58959256"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49870132"
 ## <a name="cause"></a>Ursache
  Namen einer öffentlichen, geschützten oder privaten Methode beginnt mit einer der folgenden:
 
--   -Add-On
+-   AddOn
 
 -   RemoveOn
 
@@ -58,6 +53,3 @@ ms.locfileid: "49870132"
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Eine Warnung dieser Regel zu unterdrücken, wenn die Methode funktioniert nicht mit der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Ereignismodell.
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Prüfliste: Erstellen neuer Projekttypen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90b48f5969a422ab9d211bb56900cf1b3b41a78b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f3a6a091e5574721b93cbff23f873fe1a845ef6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737358"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001737"
 ---
 # <a name="checklist-creating-new-project-types"></a>Prüfliste: Erstellen neuer Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließ
   
     -   Projektfactory, um das Erstellen neuer Projekte, und Öffnen von vorhandenen Projekten zu verwalten. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Teamprojekthierarchie und Behandlung von Befehlen. Weitere Informationen finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md), [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md)und [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    -   Teamprojekthierarchie und Behandlung von Befehlen. Weitere Informationen finden Sie unter [nicht im Build: HierUtil7-Projektklassen zum Implementieren eines Projekttyps (C++) mit](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md), [Hauptkomponenten eines Projekt](../../extensibility/internals/project-model-core-components.md) und [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     -   Verwaltung, einschließlich des Hinzufügens von das Projekt für die Elemente der **neues Projekt** Dialogfeld. Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-    -   Die Dauerhaftigkeit des Projektzustands und einzelne Elemente. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md). Persistenz der Informationen zur Lösung finden Sie unter [Lösungen](../../extensibility/internals/solutions.md).  
+    -   Die Dauerhaftigkeit des Projektzustands und einzelne Elemente. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md). Persistenz der Informationen zur Lösung finden Sie unter [Lösungen](../../extensibility/internals/solutions-overview.md).  
   
     -   Unabhängige Eigenschaften im Eigenschaftenfenster angezeigt. Weitere Informationen finden Sie unter [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md).  
   
@@ -68,4 +63,3 @@ Sie müssen mehrere Aufgaben aus, um einen neuen Projekttyp erstellen abschließ
  [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Gründe für das Erstellen von Projekttypen](../../extensibility/internals/when-to-create-project-types.md)   
  [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Refactoring (c#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959696"
 ---
 # <a name="refactoring-c"></a>Refactoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
  Die **Ergebnisse der Überprüfung** Dialogfeld unterscheidet, den Unterschied zwischen zwei Arten von neubindung Probleme.  
   
 ### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>Verweise, dessen Definition nicht mehr das umbenannte Symbol ist.  
- Diese Art von das Problem tritt auf, wenn Sie ein Verweis auf ein Symbol umbenannt verweist nicht mehr. Beachten Sie z. B. folgenden Code:  
+ Diese Art von das Problem tritt auf, wenn Sie ein Verweis auf ein Symbol umbenannt verweist nicht mehr. Beachten Sie z. B. folgenden Code:  
   
 ```csharp  
 class Example  
@@ -113,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden die Visual Studio-Entwicklungsumgebung für c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Gewusst wie: Wiederherstellen von C#-Refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Vorgehensweise: Restore C# Refactoring Snippets (Vorgehensweise: Wiederherstellen von C#-Umgestaltungsausschnitten)](../ide/how-to-restore-csharp-refactoring-snippets.md)

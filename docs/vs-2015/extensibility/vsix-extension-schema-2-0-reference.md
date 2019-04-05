@@ -1,27 +1,22 @@
 ---
 title: Referenz zum VSIX-Erweiterung 2.0-Schema | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946370"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterungsschema 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,9 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
 -   `<Identity>` – Dies definiert die Identifikationsinformationen für dieses Paket und umfasst die folgenden Attribute:  
   
-    -   `Id` : Dieses Attribut muss eine eindeutige ID für das Paket von dessen Autor ausgewählt sein. Der Name sollte die gleiche Weise wie CLR-Typen Namespaces sind qualifiziert werden: Company.Product.Feature.Name. Die `Id` -Attribut ist auf maximal 100 Zeichen umfassen.  
+    -   `Id` : Dieses Attribut muss eine eindeutige ID für das Paket von dessen Autor ausgewählt sein. Der Name sollte die gleiche Weise qualifiziert werden, die CLR-Typen mit Namespace angegeben werden: Company.Product.Feature.Name. Die `Id` -Attribut ist auf maximal 100 Zeichen umfassen.  
   
-    -   `Version` – Dies definiert die Version der dieses Paket und dessen Inhalt. Dieses Attribut entspricht dem CLR-Assembly-versionsverwaltung-Format: Hauptversion.Nebenversion.Build.Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt, und kann über die vorhandene installierte Version installiert werden.  
+    -   `Version` – Dies definiert die Version der dieses Paket und dessen Inhalt. Dieses Attribut weist das folgende CLR-Assembly Versioning Format: Major.Minor.Build.Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer Aktualisierungen des Pakets gilt, und kann über die vorhandene installierte Version installiert werden.  
   
     -   `Language` : Dieses Attribut ist die Standardsprache für das Paket und die Textdaten in diesem Manifest entspricht. Dieses Attribut folgt der CLR Gebietsschema Code-Konvention für Ressourcenassemblys, zum Beispiel: En-us, En, fr-fr. Sie können angeben, `neutral` eine sprachneutrale-Erweiterung zu deklarieren, die auf eine beliebige Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`.  
   
@@ -105,7 +100,7 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
-        -   "Microsoft.VisualStudio.pro"  
+        -   Microsoft.VisualStudio.Pro  
   
         -   Microsoft.VisualStudio.Premium  
   
@@ -170,7 +165,7 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
   - `Type` – Dies ist der Typ der Erweiterung oder Inhalte, die durch dieses Element dargestellt wird. Jede `<Asset>` Element benötigen einen einzigen `Type`, aber mehrere `<Asset>` möglicherweise Elemente verfügen über denselben `Type`. Dieses Attribut muss als vollständig qualifizierter Name, nach Namespace Konventionen dargestellt werden. Die bekannten Typen sind:  
   
-    1. "Microsoft.VisualStudio.VSPackage"  
+    1. Microsoft.VisualStudio.VsPackage  
   
     2. Microsoft.VisualStudio.MefComponent  
   
@@ -222,4 +217,3 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
-

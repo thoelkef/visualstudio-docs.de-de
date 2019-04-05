@@ -1,29 +1,24 @@
 ---
 title: 'Vorgehensweise: Öffnen Sie die Standard-Editoren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f75a64929074be45645de529ccb05f52f9d04ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959104"
 ---
-# <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen Sie die Standard-Editoren
+# <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen von Standard-Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Editor für einen angegebenen Dateityp, anstatt einen projektspezifischen Editor für die Datei zu bestimmen.  
@@ -62,4 +57,3 @@ Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Edito
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)   
  [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Anzeigen von Dateien mit dem Befehl „Datei öffnen“](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-

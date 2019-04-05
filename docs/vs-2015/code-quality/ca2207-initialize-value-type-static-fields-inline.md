@@ -1,14 +1,9 @@
 ---
-title: 'CA2207: Statische Felder Inline Typs initialisieren | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2207: Statische Felder Werttyp Inline initialisieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
 - CA2207
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d2833e14c941ae4d2ac6c16f8f5abf625f430de9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959842"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Statische Felder für Werttyp inline initialisieren
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Statische Felder für Werttyp inline initialisieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,4 @@ ms.locfileid: "49890595"
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1810: Statische Felder von Verweistypen inline initialisieren](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
-
-
-
+ [CA1810: Statische Felder von Verweistypen Inline initialisieren](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

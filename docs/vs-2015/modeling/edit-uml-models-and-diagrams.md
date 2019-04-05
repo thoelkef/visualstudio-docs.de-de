@@ -1,12 +1,9 @@
 ---
 title: Bearbeiten von UML-Modellen und-Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958512"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Bearbeiten von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
  **Jedes Modellierungsprojekt verfügt über einen einzigen Stapel von Änderungen.** Alle Änderungen, die Sie am Modell und den Diagrammen vornehmen, werden in diesem Stapel gespeichert. Der Stapel enthält außerdem Änderungen am Fokus zwischen Diagrammen. Durch den Befehl „Rückgängig“ werden die Änderungen in diesem Stapel rückgängig gemacht.  
   
- Nehmen wir beispielsweise an, dass Sie diese Operationen ausführen: Ändern von Diagramm1; Ändern Sie den Fokus in Diagramm 2. Ändern Sie Diagram2. Wenn Sie Änderungen rückgängig machen, wird die letzte Änderung durch das erste Rückgängig machen rückgängig gemacht; duch das nächste Rückgängig machen wird der Fokus wieder auf Diagramm 1 gelegt; und durch das dritte Rückgängig machen wird die Änderung an Diagramm 1 rückgänig gemacht.  
+ Nehmen wir beispielsweise an, dass Sie diese Vorgänge ausführen: Nehmen Sie eine Änderung von Diagramm1; Ändert den Fokus in Diagramm 2; Ändern Sie Diagram2. Wenn Sie Änderungen rückgängig machen, wird die letzte Änderung durch das erste Rückgängig machen rückgängig gemacht; duch das nächste Rückgängig machen wird der Fokus wieder auf Diagramm 1 gelegt; und durch das dritte Rückgängig machen wird die Änderung an Diagramm 1 rückgänig gemacht.  
   
  **Schließen eines Diagramms wird der Änderungsstapel Änderungen.** Wenn Sie ein Diagramm schließen, können Sie die an dem Diagramm vorgenommene Änderungen nicht rückgängig machen, außerdem können Sie zuvor am Modell oder dazugehörigen Diagrammen vorgenommene Änderungen nicht rückgängig machen.  
   
@@ -219,7 +216,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
      Es wird eine Form angezeigt, die eine Ansicht des Modellelements bereitstellt, die zusätzlich zu Ansichten in anderen Diagrammen oder dem gleichen Diagramm angezeigt werden können.  
   
     > [!NOTE]
-    >  Der Effekt unterscheidet sich, wenn Sie eine Klasse oder eine Komponente in ein Sequenzdiagramm ziehen. In diesem Fall wird eine neue Lebenslinie erstellt, deren Typ diese Klasse oder eine Komponente ist. Weitere Informationen finden Sie unter [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  Der Effekt unterscheidet sich, wenn Sie eine Klasse oder eine Komponente in ein Sequenzdiagramm ziehen. In diesem Fall wird eine neue Lebenslinie erstellt, deren Typ diese Klasse oder eine Komponente ist. Weitere Informationen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>So fügen Sie eine neue Ansicht eines Modellelements mithilfe der Funktion „Verweis einfügen“  
   
@@ -274,7 +271,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
    Sie können ein Diagramm nicht durch Kopieren und Einfügen im Projektmappen-Explorer replizieren.  
   
 ##  <a name="Deleting"></a> Löschen eines Modellelements oder seiner Ansichten  
- Einige Elementarten, insbesondere Klassifizierer, können aus einem Diagramm gelöscht werden, ohne sie aus dem Modell zu löschen. Klassifizierer sind die Hauptelemente, die in Klassendiagrammen, Komponentendiagrammen und Anwendungsfalldiagrammen angezeigt werden. Sie können in mehr als einem Diagramm angezeigt werden. Für diese Typen von Elementen, es gibt zwei separate Befehlen: **aus Diagramm entfernen** und **aus Modell löschen**.  
+ Einige Elementarten, insbesondere Klassifizierer, können aus einem Diagramm gelöscht werden, ohne sie aus dem Modell zu löschen. Klassifizierer sind die Hauptelemente, die in Klassendiagrammen, Komponentendiagrammen und Anwendungsfalldiagrammen angezeigt werden. Sie können in mehr als einem Diagramm angezeigt werden. Für diese Typen von Elementen gibt es zwei separate Befehlen: **Aus Diagramm entfernen** und **aus Modell löschen**.  
   
  Im Gegensatz dazu wird beim Löschen einer Beziehung aus einem Diagramm die Beziehung immer auch aus dem Modell gelöscht.  
   
@@ -323,7 +320,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 -   Um Hinweise und Erläuterungen zu Modellelementen hinzuzufügen, können Sie Kommentare erstellen und diese dann mit den Elementen verknüpfen.  
   
--   Um eine Spalte oder Zeilenformen im Diagramm sauber auszurichten, können Sie den Befehl „Formen ausrichten“ installieren. Dies ist als UML-beispielerweiterung verfügbar: [UML: Befehl zum Ausrichten von Formen](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Um eine Spalte oder Zeilenformen im Diagramm sauber auszurichten, können Sie den Befehl „Formen ausrichten“ installieren. Dies ist als UML-beispielerweiterung verfügbar:  [UML: Befehl zum Ausrichten von Formen](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Exportieren eines Diagramms als Bild  
  Weitere Informationen finden Sie unter [Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
  [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)   
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines SDKS mit c# oder Visual Basic | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen einer SDK mit C# oder Visual Basic | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736757"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001767"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mit C# oder Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
   
 22. In **Projektmappen-Explorer**, wählen Sie **SimpleMath.winmd**.  
   
-23. Wählen Sie auf der Menüleiste **Ansicht**, **Eigenschaften** (Tastatur: Drücken Sie die F4-Taste).  
+23. Wählen Sie auf der Menüleiste **Ansicht**, **Eigenschaften** (Tastatur: Drücken Sie F4).  
   
 24. In der **Eigenschaften** Ändern der **Buildvorgang** Eigenschaft **Content**, und ändern Sie dann die **Include in VSIX-Datei** Eigenschaft  **"True"**.  
   
@@ -179,7 +174,6 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
     Sie haben erfolgreich erstellt und verwendet eine Erweiterungs-SDK.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erstellen eines SDKS mit C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Exemplarische Vorgehensweise: Erstellen eines SDKS mit JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Exemplarische Vorgehensweise: Erstellen eines SDK mit C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines SDK mit JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)
-

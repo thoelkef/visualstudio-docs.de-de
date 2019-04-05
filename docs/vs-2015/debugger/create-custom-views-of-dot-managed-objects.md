@@ -1,14 +1,9 @@
 ---
 title: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 607844200ad2ccc7f50cea834c24da3adea14413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957970"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Erstellen Sie benutzerdefinierter Ansichten von verwalteten Objekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +48,12 @@ Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervaria
  Für nativen Code können Sie der Datei autoexp.dat benutzerdefinierte Datentyperweiterungen hinzufügen. Diese Datei befindet sich im Verzeichnis Programme\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Anweisungen zum Schreiben von Regeln für die Datei `autoexp` befinden sich in der Datei selbst.  
   
 > [!CAUTION]
->  Die Struktur dieser Datei und die Syntax der autoexp-Regeln können in den verschiedenen Versionen von Visual Studio unterschiedlich sein.  
+>  Die Struktur dieser Datei und die Syntax der autoexp-Regeln können in den verschiedenen Releases von Visual Studio unterschiedlich sein.  
   
- Auch die Ansichten von systemeigenen Typen können angepasst werden, und zwar durch das Schreiben eines Expression Evaluator-Add-Ins. Weitere Informationen finden Sie unter [EEAddIn Sample: Debuggen von Expression Evaluator-Add-In](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Auch die Ansichten von systemeigenen Typen können angepasst werden, und zwar durch das Schreiben eines Expression Evaluator-Add-Ins. Weitere Informationen finden Sie unter [EEAddIn-Beispiel: Debuggen von Expression Evaluator-Add-In](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md)   
  [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Überwachen und Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Fenster „Überwachen“ und „Schnellüberwachung“](../debugger/watch-and-quickwatch-windows.md)   
  [Verbessern des Debuggens mit den Debuggeranzeigeattributen](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

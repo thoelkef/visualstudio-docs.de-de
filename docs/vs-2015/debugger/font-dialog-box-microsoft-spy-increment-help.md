@@ -1,27 +1,22 @@
 ---
 title: Dialogfeld "Schriftart" (Microsoft Spy++-Hilfe) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Font dialog box
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b7426d0bf266d8a225745e31dfd721e618d6071
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 41028caa5ef792941f82251cac1d6e5203464240
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958955"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Dialogfeld "Schriftart" (Hilfe zu Microsoft Spy++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ Mithilfe dieses Dialogfelds konfigurieren Sie die Schriftart verwendet eine [Spy
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
  Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: 'UML-Komponentendiagramme: Richtlinien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,13 +14,13 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959999"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-Komponentendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +46,13 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
 |Anderes Diagramm|Unterstützt Sie beim Diskutieren und Kommunizieren dieser Aspekte des Entwurfs.|  
 |-------------------|--------------------------------------------------------------------|  
-|UML-Sequenzdiagramm|-Interaktionen zwischen den Komponenten eines Systems<br />-Interaktionen zwischen den Teilen innerhalb einer Komponente.<br /><br /> Weitere Informationen finden Sie unter [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|UML-Klassendiagramm|– Die Schnittstellen einer Komponente. Mit dem Klassendiagramm können Sie die Methoden der Schnittstelle detailliert angeben.<br />-Die Daten, die in Parametern über die Schnittstellen der Komponenten gesendet wird.<br /><br /> Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).|  
+|UML-Sequenzdiagramm|-Interaktionen zwischen den Komponenten eines Systems<br />-Interaktionen zwischen den Teilen innerhalb einer Komponente.<br /><br /> Weitere Informationen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|UML-Klassendiagramm|– Die Schnittstellen einer Komponente. Mit dem Klassendiagramm können Sie die Methoden der Schnittstelle detailliert angeben.<br />-Die Daten, die in Parametern über die Schnittstellen der Komponenten gesendet wird.<br /><br /> Weitere Informationen finden Sie unter [UML Class Diagrams: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).|  
 |Aktivitätsdiagramme|-Die interne Verarbeitung, die von einer Komponente als Reaktion auf eingehende Nachrichten ausgeführt wird.<br /><br /> Weitere Informationen finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Ebenendiagramme|-Logische Architekturebenen für Ihre Komponenten.<br /><br /> Weitere Informationen finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).|  
+|Ebenendiagramme|-Logische Architekturebenen für Ihre Komponenten.<br /><br /> Weitere Informationen finden Sie unter [Ebenendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Grundlegende Schritte zum Zeichnen von Komponentendiagrammen  
- Referenzinformationen zu den Elementen in Komponentendiagrammen finden Sie unter [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md).  
+ Referenzinformationen zu den Elementen in Komponentendiagrammen finden Sie unter [UML-Komponentendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-component-diagrams-reference.md).  
   
  Weitere Informationen zur Verwendung von Komponentendiagrammen während des Entwurfsprozesses finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
   
@@ -279,7 +276,7 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
   
 1.  Erstellen Sie ein neues Sequenzdiagramm.  
   
-     Weitere Informationen finden Sie unter [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Weitere Informationen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Erstellen Sie eine Lebenslinie für eine externe Komponente, einen Benutzer, ein Gerät oder einen anderen Akteur (1), der Meldungen an diese Komponente sendet.  
   
@@ -343,6 +340,3 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
  [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)   
  [Video: Entwerfen der physischen Struktur mithilfe von Komponentendiagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

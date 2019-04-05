@@ -1,14 +1,9 @@
 ---
-title: 'CA1704: Bezeichner sollten korrekt geschrieben werden | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1704: Bezeichner sollten korrekt geschrieben werden kann | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1704
 - IdentifiersShouldBeSpelledCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958873"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,7 +51,7 @@ ms.locfileid: "49827544"
   Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Keine andere Sprachwörterbücher sind derzeit verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort, um ein benutzerdefiniertes Wörterbuch mit dem Namen CustomDictionary.xml. Legen Sie das Wörterbuch, in das Installationsverzeichnis des Tools zum Projektverzeichnis ein, oder in das Verzeichnis, das das Tool unter dem Profil des Benutzers zugeordnet ist (%USERPROFILE%\Application Daten\\...). Erfahren, wie ein Projekt in das benutzerdefinierte Wörterbuch hinzuzufügende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], finden Sie unter [wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort, um ein benutzerdefiniertes Wörterbuch mit dem Namen CustomDictionary.xml. Legen Sie das Wörterbuch, in das Installationsverzeichnis des Tools zum Projektverzeichnis ein, oder in das Verzeichnis, das das Tool unter dem Profil des Benutzers zugeordnet ist (%USERPROFILE%\Application Daten\\...). Erfahren, wie ein Projekt in das benutzerdefinierte Wörterbuch hinzuzufügende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - Hinzufügen von Wörtern, die nicht zu einer Verletzung unter dem Pfad Dictionary/Wörter/Recognized führt sollte.
 
@@ -99,16 +94,13 @@ ms.locfileid: "49827544"
 
  [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Gewusst wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
-
-
-
+ [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

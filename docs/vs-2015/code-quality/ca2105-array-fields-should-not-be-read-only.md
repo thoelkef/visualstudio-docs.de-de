@@ -1,14 +1,9 @@
 ---
-title: 'CA2105: Arrayfelder sollte nicht schreibgeschützt sein | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2105: Arrayfelder nicht nur lesen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959690"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Arrayfelder dürfen nicht schreibgeschützt sein
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Arrayfelder dürfen nicht schreibgeschützt sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -71,10 +66,7 @@ ms.locfileid: "49894975"
 
  Die Ausgabe dieses Beispielcodes ist:
 
- **Vor Manipulationen: Noten: 90, 90, 90 Private Grade: 90, 90, 90 sichere Grade, 90, 90, 90**
-**nach Manipulation: Noten: 90, 555, 90 Private Grade: 90, 555, 90 sichere Grade, 90, 90, 90**
+ **Vor Manipulationen: Klassen: 90, 90, 90 Private Grade: 90, 90, 90 sichere Grade, 90, 90, 90**
+**nach Manipulationen: Klassen: 90, 555, 90 Private Grade: 90, 555, 90 secure Grade, 90, 90, 90**
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

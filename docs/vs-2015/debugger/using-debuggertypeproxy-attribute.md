@@ -1,14 +1,9 @@
 ---
 title: Verwenden des DebuggerTypeProxy-Attributs | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14e42546245aad8e5e5071a843da87f23a038149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ca1b84990ed2747e530a1a83a17e17b99f36b116
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958634"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Verwenden des DebuggerTypeProxy-Attributs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & AutoUpgrade = True) gibt einen Proxy bzw. Vertreter für einen Typ an und ändert die Art der Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable, die über einen Proxy verfügt anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **anzeigen**. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.  
+DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & AutoUpgrade = True) gibt einen Proxy bzw. Vertreter für einen Typ an und ändert die Art der Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable mit einem Proxy anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **Anzeige** dargestellt. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.  
   
  Mögliche Zuweisungen dieses Attributs:  
   
@@ -71,6 +66,3 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)   
   [Verbessern des Debuggens mit den Debuggeranzeigeattributen](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

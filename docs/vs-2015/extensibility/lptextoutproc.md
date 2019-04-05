@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958748"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Mit der keine Zeichenfolge gesendet.|  
 |`SCC_MSG_STARTCANCEL`|Beginnt die Anzeige einer **Abbrechen** Schaltfläche.|  
 |`SCC_MSG_STOPCANCEL`|Beendet die Anzeige einer **Abbrechen** Schaltfläche.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|IDE gefragt werden, wenn der Vorgang im Hintergrund ist, abgebrochen werden soll: IDE gibt `SCC_MSG_RTN_CANCEL` Wenn der Vorgang abgebrochen wurde; andernfalls `SCC_MSG_RTN_OK`. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Fordert IDE, wenn der Vorgang im Hintergrund ist, abgebrochen werden soll: IDE gibt `SCC_MSG_RTN_CANCEL` Wenn der Vorgang abgebrochen wurde; andernfalls `SCC_MSG_RTN_OK`. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Teilt die IDE zu einer Datei an, bevor sie von der Versionskontrolle abgerufen werden. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Weist Sie die IDE zu einer Datei, nachdem sie aus der Versionskontrolle abgerufen wurde. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Teilt die IDE mit dem aktuellen Status eines Hintergrundvorgangs. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>Siehe auch  
  [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
-

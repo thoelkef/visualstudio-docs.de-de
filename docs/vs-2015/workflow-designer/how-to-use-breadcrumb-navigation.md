@@ -1,23 +1,20 @@
 ---
 title: 'Vorgehensweise: Verwenden der Brotkrümelnavigation | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 19f9add69f8746962e6ed0ef9e4beea0f7ba37ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8327565d9705c8522442acc77899fe171a5bf12d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960130"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
 Es gibt drei Hauptmethoden, den Satz von Aktivitäten zu ändern, der in [!INCLUDE[wfd1](../includes/wfd1-md.md)] angezeigt wird:  
@@ -45,7 +42,7 @@ Es gibt drei Hauptmethoden, den Satz von Aktivitäten zu ändern, der in [!INCLU
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Erweitern oder Reduzieren aller Aktivitäten  
   
-1.  Verwenden der **alle erweitern** und **alle reduzieren** Schaltflächen auf der Benutzeroberfläche zum Erweitern oder Reduzieren aller Aktivitäten unter der aktuellen Breadcrumb-Stamms. Beachten Sie, dass es sich bei „Alle erweitern“ und „Alle reduzieren“ um globale Zustände handelt. Dies bedeutet, dass beim Ändern der Stammaktivität mithilfe der Breadcrumb-Navigation, die alle erweitern oder reduzieren alle Zustände erhalten bleibt, bis Sie auf **wiederherstellen**.  
+1.  Verwenden der **alle erweitern** und **alle reduzieren** Schaltflächen auf der Benutzeroberfläche zum Erweitern oder Reduzieren aller Aktivitäten unter der aktuellen Breadcrumb-Stamms. Beachten Sie, dass es sich bei "Alle erweitern" und "Alle reduzieren" um globale Zustände handelt. Dies bedeutet, dass beim Ändern der Stammaktivität mithilfe der Breadcrumb-Navigation, die alle erweitern oder reduzieren alle Zustände erhalten bleibt, bis Sie auf **wiederherstellen**.  
   
 2.  Nachdem Sie alle eine erweitern angewendet haben oder reduzieren alle Zustände, können Sie klicken die **wiederherstellen** Schaltfläche, um zurück zu wechseln, um anhand des Status für jede Aktivität zuvor angewendeten angezeigt wird.  
   

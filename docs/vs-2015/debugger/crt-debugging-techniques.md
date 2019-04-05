@@ -1,14 +1,9 @@
 ---
 title: Debugtechniken CRT | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959661"
 ---
 # <a name="crt-debugging-techniques"></a>CRT-Debugverfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein
  Hier wird beschrieben, wie die C-Laufzeitbibliothek das Debuggen unterstützt, und Sie erhalten Hinweise für den Zugriff auf die betreffenden Tools.  
   
  [Makros für die Berichterstellung](../debugger/macros-for-reporting.md)  
- Enthält Informationen über die **_RPTn** und **_RPTFn** Makros (die in CRTDBG.H definiert werden. H), die die Verwendung von ersetzt `printf` Anweisungen für das Debuggen.  
+ Hier finden Sie Informationen zu den in CRTDBG.H definierten Makros **_RPTn** und **_RPTFn**, die anstelle von `printf`-Anweisungen zum Debuggen verwendet werden.  
   
  [Debugversionen von Heapreservierungsfunktionen](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Erörtert die speziellen Debugversionen von Heapreservierungsfunktionen. Zu den behandelten Themen gehören die Zuordnung von Aufrufen durch die CRT-Laufzeitbibliothek, Vorteile des expliziten Aufrufs, Vermeiden von Konvertierungen, Dokumentieren der einzelnen Reservierungstypen in Clientblocks und die Ergebnisse bei nicht definiertem _DEBUG.  
@@ -63,6 +58,3 @@ Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein
   
  [Debuggersicherheit](../debugger/debugger-security.md)  
  Enthält Empfehlungen für mehr Sicherheit beim Debuggen.
-
-
-

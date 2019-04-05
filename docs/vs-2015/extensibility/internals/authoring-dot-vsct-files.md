@@ -1,26 +1,21 @@
 ---
 title: Erstellen. VSCT-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772169"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001274"
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
  Für neue Projekte empfehlen wir, dass Sie die Visual Studio-Paket-Vorlage verwenden, da es sich um eine VSCT-Datei generiert, die abhängig von Ihrer Auswahl, bereits die erforderlichen Elemente für einen Menübefehl, ein Toolfenster oder einen benutzerdefinierten Editor enthält. Sie können diese VSCT-Datei, um die Anforderungen Ihres VSPackage ändern. Weitere Informationen dazu, wie Sie eine VSCT-Datei ändern, finden Sie unter den Beispielen in [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Erstellung der Datei  
- Erstellen eine VSCT-Datei in den folgenden Phasen: Erstellen Sie die Struktur für Dateien und Ressourcen, deklarieren Sie die Elemente der Benutzeroberfläche, fügen Sie die Elemente der Benutzeroberfläche in der IDE und speziellen Verhaltensweisen hinzuzufügen.  
+ Erstellen einer VSCT-Datei in den folgenden Phasen: Erstellen Sie die Struktur für Dateien und Ressourcen zu, deklarieren Sie die Elemente der Benutzeroberfläche, fügen Sie die Elemente der Benutzeroberfläche in der IDE und hinzuzufügen Sie speziellen Verhaltensweisen.  
   
 ### <a name="file-structure"></a>Dateistruktur  
  Die grundlegende Struktur einer VSCT-Datei ist eine [CommandTable](../../extensibility/commandtable-element.md) Stammelement, enthält eine [Befehle](../../extensibility/commands-element.md) Element und ein [Symbole](../../extensibility/symbols-element.md) Element.  
@@ -208,7 +203,7 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
    - CommandWellOnly  
   
-   - Filter-Schlüssel  
+   - FilterKeys  
   
    - NoAutoComplete  
   
@@ -244,4 +239,3 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
  [Erweitern von Menüs und Befehle](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
-

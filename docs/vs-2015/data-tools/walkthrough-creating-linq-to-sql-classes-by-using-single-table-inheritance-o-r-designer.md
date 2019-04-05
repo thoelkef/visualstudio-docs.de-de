@@ -1,25 +1,22 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O / R-Designer) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960062"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mit einer Vererbung für eine einzelne Tabelle (O/R-Designer)
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,13 +54,13 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Type**|**int**|**True**|  
-    |**Vorname**|**nvarchar(200)**|**False**|  
-    |**"LastName"**|**nvarchar(200)**|**False**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
 3.  Legen Sie die ID-Spalte als Primärschlüssel fest.  
   
-4.  Speichern Sie die Tabelle, und nennen Sie sie **Person**.  
+4.  Speichern Sie die Tabelle unter dem Namen **Person**.  
   
 ## <a name="add-data-to-the-table"></a>Hinzufügen von Daten zur Tabelle  
  Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist, muss die Tabelle Daten für jede Klasse in der Vererbung einer einzelnen Tabelle enthalten.  
@@ -76,7 +73,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Type**|**Vorname**|**"LastName"**|**Manager**|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -112,12 +109,12 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
   
 1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
   
-2.  Klicken Sie auf die **LINQ to SQL-Klassen** -Vorlage, und klicken Sie dann auf **hinzufügen**.  
+2.  Klicken Sie auf die Vorlage **LINQ to SQL-Klassen** und dann auf **Hinzufügen**.  
   
      Dem Projekt wird die DBML-Datei hinzugefügt, und der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird geöffnet.  
   
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>Erstellen der Vererbung mithilfe des O/R-Designers  
- Konfigurieren Sie die Vererbung durch Ziehen einer **Vererbung** -Objekt aus der **Toolbox** auf die Entwurfsoberfläche.  
+ Konfigurieren Sie die Vererbung, indem Sie aus der **Toolbox** ein Objekt aus dem Bereich **Vererbung** auf die Entwurfsoberfläche ziehen.  
   
 #### <a name="to-create-the-inheritance"></a>So erstellen Sie die Vererbung  
   
@@ -127,21 +124,21 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
   
 3.  Ziehen Sie eine zweite **Person** die Tabelle auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] und ändern Sie den Namen **Mitarbeiter**.  
   
-4.  Löschen der **Manager** Eigenschaft aus der **Person** Objekt.  
+4.  Löschen Sie die **Manager**-Eigenschaft aus dem Objekt **Person**.  
   
-5.  Löschen der **Typ**, **ID**, **FirstName**, und **"LastName"** Eigenschaften aus der **Mitarbeiter** Objekt. (Das heißt, löschen Sie alle Eigenschaften außer **Manager**.)  
+5.  Löschen Sie die Eigenschaften **Type**, **ID**, **FirstName** und **LastName** aus dem Objekt **Employee**. (Mit anderen Worten: Entfernen Sie alle Eigenschaften außer **Manager**.)  
   
-6.  Aus der **Object Relational Designer** auf der Registerkarte die **Toolbox**, erstellen Sie eine **Vererbung** zwischen der **Person** und  **Mitarbeiter** Objekte. Zu diesem Zweck klicken Sie auf die **Vererbung** Element in der **Toolbox** und die Maustaste los. Klicken Sie anschließend die **Mitarbeiter** Objekt und klicken Sie dann die **Person** -Objekt in der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Der Pfeil der Vererbungslinie zeigt auf die **Person** Objekt.  
+6.  Erstellen Sie von der Registerkarte **Objektrelationaler Designer** der **Toolbox** eine **Vererbung** zwischen dem **Person**-Objekt und dem **Employee**-Objekt. Klicken Sie dazu in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie anschließend die **Mitarbeiter** Objekt und klicken Sie dann die **Person** -Objekt in der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Der Pfeil der Vererbungslinie zeigt auf die **Person** Objekt.  
   
-7.  Klicken Sie auf die **Vererbung** Zeile auf der Entwurfsoberfläche angezeigt.  
+7.  Klicken Sie auf die Linie der **Vererbung** auf der Entwurfsoberfläche.  
   
-8.  Legen Sie die **Unterscheidungseigenschaft** Eigenschaft **Typ**.  
+8.  Legen Sie die Eigenschaft **Diskriminatoreigenschaft** auf **Type** fest.  
   
-9. Legen Sie die **abgeleiteter Klassendiskriminatorwert** Eigenschaft **2**.  
+9. Legen Sie die Eigenschaft **Diskrimatorwert der abgeleiteten Klasse** auf **2** fest.  
   
-10. Legen Sie die **Basisklassen-Diskriminatorwert** Eigenschaft **1**.  
+10. Legen Sie die Eigenschaft **Basisklassen-Diskrimatorwert** auf **1** fest.  
   
-11. Legen Sie die **Vererbungsstandard** Eigenschaft **Person**.  
+11. Legen Sie die **Vererbungsstandard**-Eigenschaft auf **Person** fest.  
   
 12. Erstellen Sie das Projekt.  
   
@@ -154,7 +151,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
   
 2.  Doppelklicken Sie auf das Formular, um einen `Form1_Load`-Ereignishandler zu erstellen.  
   
-3.  Fügen Sie dem `Form1_Load`-Ereignishandler folgenden Code hinzu:  
+3.  Fügen Sie dem `Form1_Load` -Ereignishandler folgenden Code hinzu:  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -184,17 +181,16 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  
   
-1.  Drücken Sie F5.  
+1.  Drücken Sie F5.  
   
 2.  Stellen Sie sicher, dass nur Datensätze angezeigt werden, die den Wert 2 in ihrer Type-Spalte haben.  
   
-3.  Schließen Sie das Formular. (Auf der **Debuggen** Menü klicken Sie auf **Debuggen beenden**.)  
+3.  Schließen Sie das Formular. (Klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.)  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Vorgehensweise: Hinzufügen von LINQ to SQL-Klassen zu einem Projekt (O / R-Designer)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
  [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Gewusst wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Gewusst wie: Generieren des Objektmodells in Visual Basic oder C#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
-
+ [Vorgehensweise: (Vorgehensweise: Generieren des Objektmodells in Visual Basic oder C#)](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

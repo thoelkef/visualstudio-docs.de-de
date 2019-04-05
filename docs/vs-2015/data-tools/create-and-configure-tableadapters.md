@@ -1,12 +1,9 @@
 ---
 title: Erstellen und Konfigurieren eines TableAdapters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946635"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
  Wenn Sie einen neuen TableAdapter aus der Toolbox ziehen bei der **Dataset-Designer** befindet sich im Fokus, die Anweisungen des Assistenten, Sie die Datenquelle an der TableAdapter um eine Verbindung herstellen soll, und welche Art von Befehle verwenden sollten, um die Kommunikation mit, dem Datenbank, SQL-Anweisungen oder gespeicherten Prozeduren. Dies wird nicht angezeigt, wenn Sie einen TableAdapter konfigurieren, die bereits mit einer Datenquelle zugeordnet ist.  
   
--   Mithilfe der **Methoden erstellen, um Updates direkt an die Datenbank senden** Option entspricht dem Festlegen der `GenerateDBDirectMethods` Eigenschaft auf "true". Die Option ist nicht verfügbar, wenn die ursprüngliche SQL-Anweisung nicht genügend Informationen bereitstellt oder die Abfrage keine aktualisierbare Abfrage ist. Diese Situation kann auftreten, z. B. **JOIN** Abfragen und Abfragen, die einen einzelnen (skalaren) Wert zurückgeben.  
+-   Mithilfe der **Methoden erstellen, um Updates direkt an die Datenbank senden** Option entspricht dem Festlegen der `GenerateDBDirectMethods` Eigenschaft auf "true". Die Option ist nicht verfügbar, wenn die ursprüngliche SQL-Anweisung nicht genügend Informationen bereitstellt oder die Abfrage keine aktualisierbare Abfrage darstellt. Diese Situation kann auftreten, z. B. **JOIN** Abfragen und Abfragen, die einen einzelnen (skalaren) Wert zurückgeben.  
   
 -   Sie haben die Möglichkeit, eine neue gespeicherte Prozedur in der zugrunde liegenden Datenbank zu erstellen, wenn Sie die richtigen Berechtigungen für die Datenbank verfügen. Wenn Sie diese Berechtigungen nicht haben, nicht dadurch eine Option.  
   
@@ -79,7 +76,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Starten Sie den Konfigurations-Assistenten für TableAdapter-Abfrage mit einer neuen Abfrage  
   
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**.  
+1.  Öffnen Sie das Dataset im **DataSet-Designer**.  
   
 2.  Wenn Sie eine neue Abfrage erstellen, ziehen Sie eine **Abfrage** -Objekt aus der **DataSet** auf der Registerkarte die **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie **AbfrageHinzufügen**im Kontextmenü des TableAdapter. Sie können auch ziehen eine **Abfrage** Objekt auf einen leeren Bereich, der die **Dataset-Designer**, erstellt einen TableAdapter ohne einen zugehörigen <xref:System.Data.DataTable>. Diese Abfragen können nur zur Update-, INSERT- oder einzelnen (skalaren) Wert zurück, die oder Befehle für die Datenbank zu löschen.  
   
@@ -116,4 +113,3 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
 ## <a name="see-also"></a>Siehe auch  
  [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959138"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
  Ein kombiniertes Fragment besteht aus einem oder mehreren *Interaktionsoperanden*, in die jeweils eine oder mehrere Meldungen, Interaktionsverwendungen oder kombinierte Fragmente eingeschlossen sind.  
   
 > [!NOTE]
->  In diesem Thema geht es um Fragmente in Sequenzdiagrammen. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen zum Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  In diesem Thema geht es um Fragmente in Sequenzdiagrammen. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen über das Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Kombinierte Fragment mit zwei Interaktionsoperanden](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,7 +109,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
   
 |Fragmenttyp|Beschreibung|  
 |-------------------|-----------------|  
-|**Abonnieren**|Dies ist optional. Schließt eine Sequenz ein, die auftreten oder nicht auftreten kann. Im Wächter können Sie die Bedingung angeben, unter der die Sequenz auftritt.|  
+|**Opt**|Dies ist optional. Schließt eine Sequenz ein, die auftreten oder nicht auftreten kann. Im Wächter können Sie die Bedingung angeben, unter der die Sequenz auftritt.|  
 |**ALT**|Enthält eine Liste von Fragmenten, die wiederum alternative Sequenzen von Meldungen enthalten. Es tritt nur jeweils eine Sequenz auf.<br /><br /> Sie können jedes Fragment mit einem Wächter versehen, um anzugeben, unter welcher Bedingung das Fragment ausgeführt werden kann. Der Wächter **else** gibt an, dass ein Fragment ausgeführt werden soll, wenn kein anderer Wächter den Wert „true“ hat. Wenn alle Wächter den Wert „false“ aufweisen und **else**nicht vorhanden ist, wird kein Fragment ausgeführt.|  
 |**Loop**|Das Fragment wird einige Male wiederholt. Im Wächter können Sie die Bedingung angeben, unter der es wiederholt werden soll.<br /><br /> Kombinierte Loop-Fragmente haben die Eigenschaften **Min** und **Max**, die für den Mindest- und Höchstwert der Wiederholung des Fragments stehen. In der Standardeinstellung gilt keine Einschränkung.|  
 |**Break**|Wenn dieses Fragment ausgeführt wird, wird der Rest der Sequenz verworfen. Im Wächter können Sie die Bedingung angeben, unter der die Unterbrechung eintritt.|  
@@ -137,6 +134,3 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
  [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)   
  [Bearbeiten von UML-Modellen und -Diagrammen](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

@@ -1,35 +1,32 @@
 ---
 title: Commit in Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 - C++
 - aspx
 helpviewer_keywords:
-- commiting edited records
+- committing edited records
 - data-bound controls, in-process edits
-- DataBinding class, commiting edited records
-- hierarchical update, commiting edited records
-- BindingSource class, commiting edited records
+- DataBinding class, committing edited records
+- hierarchical update, committing edited records
+- BindingSource class, committing edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958138"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Ausführen eines Commits für aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "49296028"
   
 Beim Bearbeiten der Werte in datengebundenen Steuerelementen müssen Benutzer navigieren, aus der aktuellen Datensatz aus, um den aktualisierten Wert an der zugrunde liegenden Datenquelle zu committen, das das Steuerelement gebunden ist. Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf ein Formular, das erste Element, das Sie löschen generiert den Code in die **speichern** click-Ereignis von der <xref:System.Windows.Forms.BindingNavigator>. Dieser Code Ruft die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode der <xref:System.Windows.Forms.BindingSource>. Aus diesem Grund wird der Aufruf von der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode wird nur für die erste generiert <xref:System.Windows.Forms.BindingSource> zum Formular hinzugefügt wird.  
   
- Die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Aufruf übernimmt alle Änderungen, die im Prozess, in dem alle datengebundenen Steuerelemente sind, das gerade bearbeitet werden. Aus diesem Grund verfügt ein vom datengebundenen Steuerelement immer noch den Fokus, und Sie klicken auf die **speichern** Schaltfläche, alle ausstehenden Änderungen im Steuerelement wird ein Commit ausgeführt, vor dem eigentlichen speichern (die `TableAdapterManager.UpdateAll` Methode).  
+ Der Aufruf <xref:System.Windows.Forms.BindingSource.EndEdit%2A> führt ein Commit aller Änderungen durch, die in irgendeinem datengebundenen Steuerelement ablaufen, das derzeit bearbeitet wird. Wenn also ein datengebundenes Steuerelement den Fokus noch besitzt und Sie auf **Speichern** klicken, werden alle ausstehenden Bearbeitungen in diesem Steuerelement committet, bevor der eigentliche Speichervorgang durchgeführt wird (die `TableAdapterManager.UpdateAll`-Methode).  
   
  Sie können Ihre Anwendung automatisch, Commits konfigurieren, selbst wenn ein Benutzer versucht, Daten zu speichern, ohne Commit für Änderungen, als Teil des Speichervorgangs Prozess.  
   
@@ -61,4 +58,3 @@ Beim Bearbeiten der Werte in datengebundenen Steuerelementen müssen Benutzer na
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
-
