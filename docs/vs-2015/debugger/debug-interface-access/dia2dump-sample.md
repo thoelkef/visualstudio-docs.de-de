@@ -1,14 +1,9 @@
 ---
 title: Dia2dump-Beispiel | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 727d7a4a97bc0aa55d370a45549941ab286930f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960565"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.
   
 2.  In den Eigenschaftenseiten des Projekts in der **C/C++-** &#124; **allgemeine** &#124; **Additional Include Directories** -Eigenschaft, geben Sie die `..\DIA SDK\include` Verzeichnis. Dadurch wird sichergestellt, dass der Compiler die Datei dia2.h finden kann.  
   
-3.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
+3.  Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.  
   
 4.  Schließen Sie Visual Studio.  
   
@@ -57,7 +52,4 @@ Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.
   
 ## <a name="see-also"></a>Siehe auch  
  [Quelldatei Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
-
-
-
+ [Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

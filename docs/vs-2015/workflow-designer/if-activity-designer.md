@@ -1,11 +1,8 @@
 ---
 title: Wenn Aktivitäts-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.If.UI
@@ -13,13 +10,13 @@ ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fee98f4b95d626e429662d20501541c3241a9b2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3ab8c9a7f49302b2308f97855c022d8e8d5126e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960621"
 ---
 # <a name="if-activity-designer"></a>If-Aktivitätsdesigner
 Die <xref:System.Activities.Statements.If>-Aktivität wertet eine Bedingung aus und führt eine Aktivität aus, die von den Ergebnissen dieser Auswertung abhängig ist. Bei Verwendung eines Programmierstils nach Art der Verfahrensmodellierung ist diese Aktivität höchst nützlich. Eine <xref:System.Activities.Statements.If>-Aktivität kann in eine <xref:System.Activities.Statements.Sequence>-Aktivität oder beispielsweise eine <xref:System.Activities.Statements.Parallel>-Aktivität geschachtelt werden. Wenn Sie eine <xref:System.Activities.Statements.Flowchart>-Aktivität verwenden, sollten Sie in Erwägung ziehen, stattdessen eine <xref:System.Activities.Statements.FlowDecision>-Aktivität zu verwenden.  
@@ -35,5 +32,5 @@ Die <xref:System.Activities.Statements.If>-Aktivität wertet eine Bedingung aus 
   
 ## <a name="see-also"></a>Siehe auch  
  [Sequenz](../workflow-designer/sequence-activity-designer.md)   
- [Parallele](../workflow-designer/parallel-activity-designer.md)   
+ [Parallel](../workflow-designer/parallel-activity-designer.md)   
  [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)

@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio-Dokumentation | Microsoft-Dokumentation
 titleSuffix: ''
-description: 'Erfahren Sie, wie Sie Visual Studio für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.'
+description: Erfahren Sie, wie Sie Visual Studio für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515323"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

@@ -1,14 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Analysieren von verwaltetem Code Codefehler | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960564"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code im Hinblick auf Codefehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt Codefehler, mit dem Code Analysetool.  
@@ -98,7 +93,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
 4.  Verwenden Sie Folgendes, um Warnungen zu beheben:  
   
-- [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" sollte mit CLSCompliantAttribute markiert werden, und der Wert sollte "true" sein.  
+- [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "Demo" markiert werden mit CLSCompliantAttribute, und der Wert sollte "true" sein.  
   
   -   Fügen Sie den Code `using``System;` in die Datei "AssemblyInfo.cs".  
   
@@ -140,11 +135,11 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
   -   Ändern Sie den Namen des abzurufenden Members `Item`.  
   
-- [CA1710: Bezeichner sollten richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rename 'Testcode.Demo dass lautet"in"Ausnahme"endet.  
+- [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Benennen Sie "Testcode.Demo dass lautet" Ende "Ausnahme".  
   
   -   Ändern Sie den Namen der Klasse und die zugehörigen Konstruktoren in `DemoException`.  
   
-- [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' mit einem Schlüssel mit starkem Namen signieren.  
+- [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Melden Sie 'ManagedDemo' mit einem Schlüssel mit starkem Namen an.  
   
   -   Auf der **Projekt** Menü klicken Sie auf **ManagedDemo Eigenschaften**.  
   
@@ -166,7 +161,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
        Erstellen Sie das Projekt neu.  
   
-- [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie ein [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.  
+- [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie einem [Serializable]-Attribut, um "demo" Geben Sie, wie dieser Typ ISerializable implementiert.  
   
   -   Hinzufügen der `[Serializable ()]` -Attribut der Klasse `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Wählen Sie **Aktionen**, wählen Sie dann **Meldung unterdrücken**, und wählen Sie dann **In Projektunterdrückungsdatei**.  
   
-      Weitere Informationen finden Sie unter [wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Erstellen Sie das Projekt neu.  
   
     Das Projekt erstellt, ohne alle Warnungen oder Fehler.
-
-
-

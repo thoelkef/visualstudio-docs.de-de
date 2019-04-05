@@ -1,11 +1,8 @@
 ---
 title: Legacyworkflowaktivitäten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961967"
 ---
 # <a name="legacy-workflow-activities"></a>Legacyworkflowaktivitäten
 [!INCLUDE[wf](../includes/wf-md.md)] enthält einen Standardsatz von Aktivitäten, die Funktionen für Ablaufsteuerung, Bedingungen, Ereignisbehandlung, Zustandsverwaltung und Kommunikation mit Anwendungen und Diensten bereitstellen. Beim Entwurf von Workflows können Sie die vom System bereitgestellten Aktivitäten verwenden, die von [!INCLUDE[wfd1](../includes/wfd1-md.md)] bereitgestellt werden, oder eigene benutzerdefinierte Aktivitäten erstellen.  
@@ -83,10 +80,10 @@ ms.locfileid: "49205400"
  [Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Zeigt die Schritte zum Erstellen eines PolicyActivity-Regelsatzes.  
   
- [Vorgehensweise: Implementieren eines WCF-Vertragsvorgangs (Vorgängerversion)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Vorgehensweise: Implement a WCF Contract Operation (Legacy) (Vorgehensweise: Implementieren eines WCF-Vertragsvorgangs (Vorgängerversion))](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Zeigt die Schritte zum Implementieren eines [!INCLUDE[indigo2](../includes/indigo2-md.md)]-Vertragsvorgang.  
   
- [Vorgehensweise: Aufrufen eines WCF-Vertragsvorgangs (Vorgängerversion](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md))  
+ [Vorgehensweise: Invoke a WCF Contract Operation (Legacy) (Vorgehensweise: Aufrufen eines WCF-Vertragsvorgangs (Vorgängerversion))](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Zeigt die Schritte zum Aufrufen eines [!INCLUDE[indigo2](../includes/indigo2-md.md)]-Vertragsvorgang.  
   
 ## <a name="see-also"></a>Siehe auch  

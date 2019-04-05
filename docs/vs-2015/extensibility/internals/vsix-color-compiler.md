@@ -1,21 +1,17 @@
 ---
 title: VSIX-Farbcompiler | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960933"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +53,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|name|[Erforderlich] Der Name des Designs|  
+|Name|[Erforderlich] Der Name des Designs|  
 |GUID|[Erforderlich] Das Design der GUID (Formatierung der GUID übereinstimmen muss)|  
   
  Wenn Sie benutzerdefinierte Farben für Visual Studio zu erstellen, müssen diese Farben für die folgenden Themen definiert werden. Wenn keine Farben für ein bestimmtes Design vorhanden ist, versucht Visual Studio, um die fehlenden Farben aus das Design "hell" zu laden.  
@@ -83,7 +79,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|name|[Erforderlich] Der Name der Kategorie|  
+|Name|[Erforderlich] Der Name der Kategorie|  
 |GUID|[Erforderlich] Die Kategorie-GUID (Formatierung der GUID übereinstimmen muss)|  
   
  **Farbe**  
@@ -100,7 +96,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|name|[Erforderlich] Der Name der Farbe|  
+|Name|[Erforderlich] Der Name der Farbe|  
   
  **Hintergrund und/oder Vordergrund**  
   
@@ -114,7 +110,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Typ|[Erforderlich] Der Typ der Farbe. Sie können eine der folgenden sein:<br /><br /> *CT_INVALID:* die Farbe ist ungültig oder wird nicht festgelegt.<br /><br /> *CT_RAW:* einen unformatierten über den ARGB-Wert.<br /><br /> *CT_COLORINDEX:* VERWENDEN SIE NICHT.<br /><br /> *CT_SYSCOLOR:* eine Windows-System-Farben aus SysColor.<br /><br /> *CT_VSCOLOR:* aus __VSSYSCOLOREX eine Visual Studio-Farbe.<br /><br /> *CT_AUTOMATIC:* der automatischen Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* VERWENDEN SIE NICHT.<br /><br /> *CT_TRACK_BACKGROUND:* VERWENDEN SIE NICHT.|  
+|Typ|[Erforderlich] Der Typ der Farbe. Sie können eine der folgenden sein:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatiertes über den ARGB-Wert.<br /><br /> *CT_COLORINDEX:* VERWENDEN SIE NICHT.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System-Farbe von SysColor.<br /><br /> *CT_VSCOLOR:* Eine aus __VSSYSCOLOREX Visual Studio-Farbe.<br /><br /> *CT_AUTOMATIC:* Die Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* VERWENDEN SIE NICHT.<br /><br /> *CT_TRACK_BACKGROUND:* VERWENDEN SIE NICHT.|  
 |Source|[Erforderlich] Der Wert der Farbe dargestellt wird in hexadezimal|  
   
  Alle Werte, die von der Enumeration __VSCOLORTYPE unterstützt werden, werden nach dem Schema in das Type-Attribut unterstützt. Allerdings empfiehlt es sich, dass Sie nur CT_RAW und CT_SYSCOLOR verwenden.  
@@ -146,7 +142,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
 |Unbenannte (XML-Datei)|Dies ist der erste unbenannte Parameter und den Pfad der XML-Datei konvertiert wird.|Erforderlich|  
-|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standardwert: \<XML-Dateiname > PKGDEF|Optional|  
+|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standard: \<XML Filename>.pkgdef|Optional|  
 |/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
 |/?|Ausgeben von Hilfeinformationen.|Optional|  
 |/help|Ausgeben von Hilfeinformationen.|Optional|  
@@ -155,7 +151,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
 -   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml/nologo  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Hinweise  
   
@@ -173,4 +169,3 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

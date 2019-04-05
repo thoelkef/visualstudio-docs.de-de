@@ -1,25 +1,22 @@
 ---
 title: Integrieren von UML-Modellen in andere Modelle und Tools | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961112"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrieren von UML-Modellen in andere Modelle und Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ UML-Modelle können in andere Modelle und domänenspezifische Sprachen integrier
   
    Weitere Informationen finden Sie unter [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Ein Beispielprojekt, in dem ein Profil mit Menübefehlen und gestenhandlern bereitgestellt wird, finden Sie unter [Sample: UML-Profile](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Ein Beispielprojekt, in dem ein Profil mit Menübefehlen und gestenhandlern bereitgestellt wird, finden Sie unter [Beispiel: UML-Profile](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Verweise.** An jedes UML-Element können Sie einen Satz von Zeichenfolgen anfügen. Sie können Code schreiben, in dem die Informationen gespeichert werden, z. B. ein Dateiname oder die GUID eines anderen Elements. Dazu müssen Sie keine weiteren Definitionen bereitstellen. Verweise sind für Benutzer nicht direkt sichtbar.  
   
@@ -68,7 +65,7 @@ UML-Modelle können in andere Modelle und domänenspezifische Sprachen integrier
   
 2. **VMSDK-Ereignisse** kann verwendet werden, Änderungen außerhalb des Modells – z. B. weitergegeben werden, so ändern Sie den Dateinamen eines verknüpften Dokuments oder ein Element in einem anderen Modell zu ändern.  
   
-   Weitere Informationen zu beiden Mechanismen finden Sie unter [wie: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Weitere Informationen zu beiden Mechanismen finden Sie unter [Vorgehensweise: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Modellübergreifendes Kopieren von Elementen durch Ziehen  
    Sie können es ermöglichen, dass Benutzer Elemente erstellen, indem sie Elemente in ein UML-Diagramm ziehen. Das erstellte Element muss keine Kopie des Originals sein. Sie können es den Benutzern beispielsweise ermöglichen, ein Aktivitätsdiagramm aus dem Projektmappen-Explorer in ein anderes Aktivitätsdiagramm zu ziehen, um eine neue Aktion zu erstellen.  
@@ -88,7 +85,7 @@ UML-Modelle können in andere Modelle und domänenspezifische Sprachen integrier
   
    Im Beispiel wird den UML-Formen ein Decorator-Bildelement hinzugefügt.  
   
-- [Gewusst wie: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Vorgehensweise: Reagieren Sie auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    Das Beispiel veranschaulicht das Definieren einer Regel, die auf neu in einem Diagramm angezeigte Formen reagiert.  
   
@@ -104,9 +101,6 @@ UML-Modelle können in andere Modelle und domänenspezifische Sprachen integrier
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definieren eines gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
  [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Vorgehensweise: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Vorgehensweise: Reagieren Sie auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
  [Beispiel: UML-Profile](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Verknüpfen von UML-Elementen mit Diagrammen oder anderen Dateien](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

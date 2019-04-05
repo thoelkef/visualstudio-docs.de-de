@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 73f4e16dc0d088ca617b49ee1250f51c4ae769e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961137"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen
+# <a name="how-to-enable-clickonce-security-settings"></a>Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die Anwendung zu veröffentlichen. Dies erfolgt automatisch bei der Veröffentlichung einer Anwendung mithilfe des Veröffentlichungs-Assistenten.  
@@ -68,6 +63,3 @@ Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die An
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
-
-
-

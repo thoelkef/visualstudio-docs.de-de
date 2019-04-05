@@ -1,25 +1,22 @@
 ---
 title: Modellieren Ihrer app&#39;Architektur s | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961815"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   Diese Punkte werden im Rest dieses Abschnitts ausführlicher erläutert.  
   
 ### <a name="components"></a>Komponenten  
- Die zentralen Ansichten eines Architekturmodells sind die Komponentendiagramme, die die Hauptbestandteile des Systems und ihre gegenseitigen Abhängigkeiten darstellen. Weitere Informationen über Komponentendiagramme finden Sie unter [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md).  
+ Die zentralen Ansichten eines Architekturmodells sind die Komponentendiagramme, die die Hauptbestandteile des Systems und ihre gegenseitigen Abhängigkeiten darstellen. Weitere Informationen über Komponentendiagramme finden Sie unter [UML-Komponentendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-component-diagrams-reference.md).  
   
  ![UML-Komponentendiagramm mit Teilen](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
   Sie können Abhängigkeiten direkt zwischen Komponenten darstellen oder Abhängigkeiten zwischen erforderlichen und bereitgestellten Schnittstellen darstellen, die an die Komponenten angefügt sind. Mithilfe von Schnittstellen können Sie definieren, welche Vorgänge in den einzelnen Abhängigkeiten verwendet werden. In der Regel werden Abhängigkeiten zwischen Komponenten beim ersten Zeichnen der Diagramme dargestellt und dann durch Abhängigkeiten zwischen Schnittstellen ersetzt, wenn weitere Informationen hinzugefügt werden. Beide Versionen sind ordnungsgemäße Beschreibungen der Software, jedoch stellt die Version mit Schnittstellen mehr Informationen als die frühere Version bereit.  
   
-  Das Verwalten von Abhängigkeiten ist für die Erstellung von verwaltbarer Software von größter Bedeutung. Die Komponentendiagramme sollten alle Abhängigkeiten im Code wiedergeben. Wenn der Code bereits vorhanden ist, stellen Sie sicher, dass in den Diagrammen alle Abhängigkeiten dargestellt werden. Wenn der Code entwickelt wird, stellen Sie sicher, dass er keine Abhängigkeiten enthält, die im Komponentendiagramm nicht vorgesehen sind. Sie können Ebenendiagramme generieren, um Abhängigkeiten im Code leichter zu erkennen. Sie können den Code anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass die geplanten Abhängigkeitseinschränkungen erfüllt werden. Weitere Informationen finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).  
+  Das Verwalten von Abhängigkeiten ist für die Erstellung von verwaltbarer Software von größter Bedeutung. Die Komponentendiagramme sollten alle Abhängigkeiten im Code wiedergeben. Wenn der Code bereits vorhanden ist, stellen Sie sicher, dass in den Diagrammen alle Abhängigkeiten dargestellt werden. Wenn der Code entwickelt wird, stellen Sie sicher, dass er keine Abhängigkeiten enthält, die im Komponentendiagramm nicht vorgesehen sind. Sie können Ebenendiagramme generieren, um Abhängigkeiten im Code leichter zu erkennen. Sie können den Code anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass die geplanten Abhängigkeitseinschränkungen erfüllt werden. Weitere Informationen finden Sie unter [Ebenendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Schnittstellen  
  Durch das Einfügen von Schnittstellen für die Komponenten können Sie die Hauptgruppen von Vorgängen trennen und benennen, die von jeder Komponente bereitgestellt werden. Beispielsweise können Komponenten in einem webbasierten Vertriebssystem eine Schnittstelle aufweisen, über die Kunden Waren kaufen können, eine Schnittstelle, über die Lieferanten ihre Kataloge aktualisieren, und eine dritte Schnittstelle, über die das System verwaltet wird.  
@@ -210,7 +207,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
  Ziehen Sie eine Lebenslinie für jede Komponenteninstanz, die an einer typischen Sequenz beteiligt ist. In einigen Fällen sind möglicherweise mehrere Instanzen von jedem Typ vorhanden. Wenn Sie das Gesamtsystem als einzelne Komponente beschrieben haben, sollte für jeden Teil im Gesamtsystem eine Lebenslinie vorhanden sein.  
   
- Weitere Informationen finden Sie unter [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Weitere Informationen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  In einigen Fällen sind auch Aktivitätsdiagramme hilfreich Wenn die Komponenten z. B. über einen fortlaufenden Datenfluss verfügen, können Sie ihn als Objektfluss beschreiben. Wenn die Komponente über einen komplexen Algorithmus verfügt, können Sie ihn als Kontrollfluss beschreiben. Machen Sie deutlich, z. B. mit Kommentaren, welche Komponente die einzelnen Aktionen ausführt. Weitere Informationen finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md).  
   
@@ -247,7 +244,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
   
 -   Ein Modell der Hauptbestandteile und ihrer Beziehungen. Dabei kann es sich um Klassen oder Komponenten und Schnittstellen handeln, mit Zuordnungen und Abhängigkeiten zwischen ihnen. Die Elemente gehören normalerweise zu einer von zwei Kategorien:  
   
-    -   Elemente, die der Entwickler in jedem Teil des Codes replizieren muss, in dem das Muster verwendet wird. Sie können diese mithilfe von Vorlagentypen beschreiben. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Elemente, die der Entwickler in jedem Teil des Codes replizieren muss, in dem das Muster verwendet wird. Sie können diese mithilfe von Vorlagentypen beschreiben. Weitere Informationen finden Sie unter [UML-Anwendungsfalldiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Elemente, die Framework-Klassen beschreiben, die der Entwickler verwenden sollte.  
   
@@ -265,6 +262,3 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
  [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
  [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
-
-
-

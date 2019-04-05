@@ -1,24 +1,19 @@
 ---
-title: 'Häufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961211"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
      Eine zweite Instanz von Visual Studio wird geöffnet. Diese zweite Instanz wird experimentelle Instanz genannt und besitzt möglicherweise nicht die gleichen Einstellungen wie die Instanz von Visual Studio, die Sie zum Schreiben von Code verwenden. Wenn Sie die experimentelle Instanz zum ersten Mal ausführen, müssen Sie sich bei VS Online anmelden und Ihr Design und Profil festlegen.  
   
-     Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, eine Meldung angezeigt: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, sollte eine Meldung angezeigt werden: **In TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?  
  Add-In-Code kann auf zwei Arten ausgeführt werden:  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

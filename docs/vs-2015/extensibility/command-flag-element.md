@@ -1,27 +1,22 @@
 ---
 title: Befehl Commandflag-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961233"
 ---
 # <a name="command-flag-element"></a>CommandFlag-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51809921"
 |DontCache|Die Entwicklungsumgebung ist keine Zwischenspeicherung der `QueryStatus` Methodenergebnisse für diesen Befehl.<br /><br /> Für ein Menü wird hier ein Menücontroller nicht auf den Text der Einträge im cache. Verwenden Sie dieses Flag an, wenn das Menü enthält dynamische Elemente oder Elemente, die dynamischen Text enthalten.<br /><br /> Gültig für: `Button`, `Menu`|  
 |DynamicItemStart|Gibt den Anfang einer dynamischen Liste. Dies ermöglicht die Umgebung, die eine Liste erstellen, indem Sie nacheinander Aufrufen der `QueryStatus` Methode für Listenelemente, bis das Flag OLECMDERR_E_UNSUPPORTED zurückgegeben wird. Dies funktioniert gut für Elemente, z. B. die meisten vor kurzem (MRU) und Fensterlisten verwendet.<br /><br /> Gültig für: `Button`|  
 |DynamicVisibility|Die Sichtbarkeit des Befehls kann geändert werden, über die `QueryStatus` Methode oder über eine Kontext-GUID, der Bestandteil der `VisibilityConstraints` Abschnitt.<br /><br /> Gilt für Befehle, die angezeigt werden, in Menüs und Symbolleisten des Toolfensters, jedoch nicht auf der obersten Ebene Symbolleisten, die auf das Hauptfenster angezeigt werden. Auf oberster Ebene Symbolleistenelemente können deaktiviert, jedoch nicht ausgeblendet werden, wenn das Flag OLECMDF_INVISIBLE zurückgegeben wird, aus der `QueryStatus` Methode. Symbolleistenbefehle, die Symbolleisten des Toolfensters angezeigt werden, können ausgeblendet werden.<br /><br /> In einem Menü gibt dieses Flag auch, dass es automatisch ausgeblendet werden soll, wenn alle seine Member ausgeblendet sind. Dieses Flag wird in der Regel Untermenüs zugewiesen, da dies bereits über Menüs der obersten Ebene verfügen.<br /><br /> Dieses Flag kombiniert werden soll, mit der `DefaultInvisible` Flag.<br /><br /> Gültig für: `Button`, `Combo`, `Menu`|  
-|Filter-Schlüssel|Finden Sie im Thema "Filtern von Schlüssel" unter [Combo-Element](../extensibility/combo-element.md).<br /><br /> Gültig für: `Combo`|  
+|FilterKeys|Finden Sie im Thema "Filtern von Schlüssel" unter [Combo-Element](../extensibility/combo-element.md).<br /><br /> Gültig für: `Combo`|  
 |FixMenuController|Wenn Sie diesen Befehl auf ein Menücontroller positioniert ist, ist der Befehl immer die Standardeinstellung; Dies bedeutet, ist der Befehl ausgewählt, wenn die Controller-Menüschaltfläche selbst ausgewählt ist. Wenn der Menücontroller verfügt die `TextIsAnchorCommand` flag so festgelegt, und klicken Sie dann die Menücontroller nimmt auch den Text des Befehls, die die `FixMenuController` Flag.<br /><br /> Nur ein Befehl für ein Menücontroller müssen die `FixMenuController` Flag. Wenn mehr als einen Befehl so gekennzeichnet ist, wird mit dem letzte Befehl im Menü der Standardbefehl.<br /><br /> Gültig für: `Button`|  
 |IconAndText|Zeigen Sie im Menü und Symbolleiste ein Symbol und Text.<br /><br /> Gültig für: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Automatische Vervollständigung ist deaktiviert.<br /><br /> Gültig für: `Combo`|  
@@ -84,4 +79,3 @@ ms.locfileid: "51809921"
   
 ## <a name="see-also"></a>Siehe auch  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-
