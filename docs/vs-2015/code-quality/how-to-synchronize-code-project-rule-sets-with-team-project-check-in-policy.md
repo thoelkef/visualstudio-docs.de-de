@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957598"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Eincheckrichtlinie für Teamprojekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckrichtlinie für das Teamprojekt durch Angabe eines Regelsatzes, das mindestens die Regeln enthält, die in der Regel legen Sie für den Check-in-Richtlinie angegeben werden. Der leitende Entwickler können Sie mit dem Namen und Speicherort der Regel legen Sie für den Check-in-Richtlinie informieren. Sie können eine der folgenden Optionen verwenden, um sicherzustellen, dass die Codeanalyse für das Projekt den richtigen Satz an Regeln verwendet:  
@@ -60,7 +55,7 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
   
 1.  Führen Sie eines der Verfahren in diesem Thema die Check-in-Richtlinie des Teamprojekts auf der Seite "Codeanalyse" im Dialogfeld Projekt Einstellungen auswählen.  
   
-2.  Klicken Sie auf **öffnen**.  
+2.  Klicken Sie auf **Öffnen**.  
   
 3.  Hinzufügen oder Entfernen von Regeln mit dem Regelsatz-Editor.  
   
@@ -73,6 +68,3 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
 6.  In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
   
 7.  In der **öffnen** Dialogfeld geben den Regelsatz-Datei.
-
-
-

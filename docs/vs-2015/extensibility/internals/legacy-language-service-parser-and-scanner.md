@@ -1,27 +1,22 @@
 ---
 title: Ältere Sprachdienstparser und Scanner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958346"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,12 +45,12 @@ namespace MyNamespace
 |----------------|----------------|  
 |Namespace "," öffentlich "void"-Klasse, Int|keyword|  
 |=|operator|  
-|{ } ( ) ;|Trennzeichen|  
+|{ } ( ) ;|Trennzeichen (delimiter)|  
 |MyNamespace "," MyClass "," MyFunction "," arg1 "," var1|identifier|  
 |MyNamespace|namespace|  
 |MyClass|Klasse|  
 |MyFunction|Methode|  
-|arg1|Parameter|  
+|arg1|-Parameter von|  
 |var1|lokale variable|  
   
  Die Rolle des Parsers werden die Token identifizieren. Token können mehr als einen Typ haben. Nachdem der Parser Token identifiziert wurde, können der Sprachdienst die Informationen zur Verfügung zu stellen hilfreiche Features, wie die syntaxhervorhebung, Klammer, und die IntelliSense-Vorgänge.  
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Fertig.  
   
 ### <a name="summary"></a>Zusammenfassung  
- Der übereinstimmenden geschweiften Klammern-Vorgang ist in der Regel auf einfache Paare von Sprachelementen beschränkt. Komplexere Elemente wie die übereinstimmende Tripel ("`if(…)`","`{`"und"`}`", oder "`else`","`{`"und"`}`"), kann als Teil eines Vorgangs wortvervollständigung hervorgehoben werden. Wenn z. B. das Wort "else" abgeschlossen ist, den entsprechenden "`if`"-Anweisung kann hervorgehoben werden. Gäbe es eine Reihe von `if` / `else if` Anweisungen, die alle von ihnen mithilfe des gleichen Mechanismus verwenden, als zueinander passende Klammern hervorgehoben werden können. Die <xref:Microsoft.VisualStudio.Package.Source> Basisklasse unterstützt bereits, wie folgt: die Überprüfung der token Triggerwert zurückgeben muss <xref:Microsoft.VisualStudio.Package.TokenTriggers> in Kombination mit den Triggerwert <xref:Microsoft.VisualStudio.Package.TokenTriggers> für das Token, das vor die Position liegt.  
+ Der übereinstimmenden geschweiften Klammern-Vorgang ist in der Regel auf einfache Paare von Sprachelementen beschränkt. Komplexere Elemente wie die übereinstimmende Tripel ("`if(…)`","`{`"und"`}`", oder "`else`","`{`"und"`}`"), kann als Teil eines Vorgangs wortvervollständigung hervorgehoben werden. Wenn z. B. das Wort "else" abgeschlossen ist, den entsprechenden "`if`"-Anweisung kann hervorgehoben werden. Gäbe es eine Reihe von `if` / `else if` Anweisungen, die alle von ihnen mithilfe des gleichen Mechanismus verwenden, als zueinander passende Klammern hervorgehoben werden können. Die <xref:Microsoft.VisualStudio.Package.Source> Basisklasse unterstützt bereits, wie folgt: Die Überprüfung der token Triggerwert zurückgeben muss <xref:Microsoft.VisualStudio.Package.TokenTriggers> in Kombination mit den Triggerwert <xref:Microsoft.VisualStudio.Package.TokenTriggers> für das Token, das vor die Position liegt.  
   
  Weitere Informationen finden Sie unter [Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Legacysprachdienste](../../extensibility/internals/legacy-language-service-overview.md)   
  [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Zugehörige Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

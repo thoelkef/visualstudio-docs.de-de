@@ -1,14 +1,9 @@
 ---
 title: Registrieren eines Projekttyps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958009"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    @="devenv.exe \"%1\""  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Geben Sie Dateien mit der Erweiterung .figp, Namen und eine Beschreibung des Projekts.|  
 |`Content Type`|REG_SZ|`Text/plain`|Der Inhaltstyp für die Projektdateien.|  
@@ -86,7 +81,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@` (Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisierbaren Namen dieser registriert VSPackage (Projekttyp).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Pfad der DLL-Projekttyp. Lädt diese DLL-Datei und leitet die VSPackage-CLSID, um die IDE `DllGetClassObject` abzurufenden <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> zum Erstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Objekt.|  
@@ -137,7 +132,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Der Standardname der Projekte dieses Typs.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Ressourcen-ID mit dem Namen aus der Satelliten-DLL abgerufen werden, die unter Pakete registriert werden.|  
@@ -177,7 +172,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Ressourcen-ID für die neuen Projektvorlagen.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardmäßige Pfad für den registrierten Projekttyp Projekte an.|  
@@ -198,9 +193,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "SortPriority"=dword:00000064  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|None|Der Standardwert, der angibt, dass die folgenden Einträge für die sonstigen Dateien Projekte Einträge sind.|  
+|`@`|REG_SZ|Keiner|Der Standardwert, der angibt, dass die folgenden Einträge für die sonstigen Dateien Projekte Einträge sind.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die neue Elemente hinzufügen-Vorlagendateien.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Standardpfad der Elemente, die in angezeigt werden, wird die **neues Element hinzufügen** Dialogfeld.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Erstellt die Sortierreihenfolge für die Anzeige in den Strukturknoten, der die **neues Element hinzufügen** Dialogfeld.|  
@@ -227,9 +222,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
   
   Das letzte Feld identifiziert die Versionsnummer für die CTMENU-Ressource. Sie können im Menü erneut zusammenführen, durch die Änderung der Versionsnummer.  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|CLSID_Package %|REG_SZ|`,1000,1`|Die Ressource, die Informationen zum Abrufen.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|Die Ressource, die Informationen zum Abrufen.|  
   
  Die folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -241,7 +236,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Abbildungen Projekt neue Projektvorlagen.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Der Standardpfad des Verzeichnisses neue Projekte. Elemente in diesem Verzeichnis erscheint in der **Assistenten für neue Projekte** Dialogfeld.|  
@@ -256,7 +251,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
    "UseInterface"=dword:00000001  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Klassen Sie-ID des registrierten VSPackage.|  
 |`UseInterface`|REG_DWORD|`1`|1 gibt an, dass die Benutzeroberfläche für die Interaktion mit diesem Projekt verwendet werden. 0 gibt an, dass keine Benutzeroberfläche vorhanden ist.|  
@@ -267,7 +262,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
   
  Die Projektvorlagen für Enterprise Frameworks wird z. B. die folgenden Registrierungseinträge hinzufügen:  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\ =  
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
   
  Bedeutet, dass Sie eine PROJECT_TYPE einschließen = EF-Eintrag in der VSZ-Datei, die Umgebung findet, die Ihre VSZ-in dem zuvor angegebenen \ProductDir-Verzeichnis Dateien.  
   
@@ -275,4 +270,3 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)   
  [Erstellen von Projektinstanzen mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

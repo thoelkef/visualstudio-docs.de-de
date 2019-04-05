@@ -1,26 +1,21 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft-Dokumentation
-ms.custom: ''
+title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4e183d9d55c8527cdead0d7108c12ac3fd527e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cfc64f8ae928b4bb0057a16b8a74c6ddbff588c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958410"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,15 +45,14 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>Hinweise  
  Es gibt drei Möglichkeiten, ein Debugger die Ausführung nach dem Beenden fortgesetzt werden kann:  
   
-- Ausführen: Ist, werden Abbrechen Sie alle vorherigen Schritt, und führen Sie bis zum nächsten Haltepunkt und so weiter.  
+- Führen Sie aus: Kündigen Sie alle vorherigen Schritt aus, und führen Sie bis zum nächsten Haltepunkt und so weiter.  
   
-- Schritt: Alle alten Schritt abbrechen und ausgeführt, bis der neue Schritt abgeschlossen ist.  
+- Schritt: Brechen Sie alle alten Schritt und ausgeführt, bis der neue Schritt abgeschlossen ist.  
   
-- Fahren Sie fort: Führen Sie erneut aus, und lassen Sie alle alten Schritt active.  
+- Fahren Sie fort: Führen Sie erneut aus, und lassen Sie alle alten Schritt aktiv.  
   
   Der Thread, die an `ExecuteOnThread` ist nützlich, bei der Entscheidung, wird der entsprechende Schritt abgebrochen. Bricht Sie alle Schritte ab, wenn Sie nicht wissen, dass den Thread ausgeführt wird ausgeführt. Mit Kenntnis des Threads müssen Sie nur den Schritt für den aktiven Thread abzubrechen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Führen Sie](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)
-

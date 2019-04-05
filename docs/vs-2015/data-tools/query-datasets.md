@@ -1,22 +1,20 @@
 ---
 title: Abfragedatasets | Microsoft-Dokumentation
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957535"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated Datensätze  
+## <a name="access-related-records"></a>Zugreifen auf Verwandte Einträge  
  Wenn Tabellen in einem Dataset verknüpft sind, eine <xref:System.Data.DataRelation> Objekt kann verfügbar machen, die verknüpften Datensätze in einer anderen Tabelle. Beispielsweise ein Dataset mit `Customers` und `Orders` Tabellen verfügbar gemacht werden.  
   
  Können Sie eine <xref:System.Data.DataRelation> verknüpfte Datensätze durch den Aufruf zu suchende Objekt die <xref:System.Data.DataRow.GetChildRows%2A> Methode eine <xref:System.Data.DataRow> in der übergeordneten Tabelle. Diese Methode gibt ein Array von zugehörigen, untergeordneten Datensätzen zurück. Oder Sie rufen die <xref:System.Data.DataRow.GetParentRow%2A> Methode eine <xref:System.Data.DataRow> in der untergeordneten Tabelle. Diese Methode gibt ein einzelnes <xref:System.Data.DataRow> aus der übergeordneten Tabelle.  
@@ -71,7 +69,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
  Diese Seite enthält Beispiele zur Verwendung von typisierten "Datasets". Informationen zum Navigieren in Beziehungen in nicht typisierten Datasets finden Sie unter [Navigieren in DataRelations](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Wenn Sie in einer Windows Forms-Anwendung arbeiten und mithilfe der Datenbindung-Funktionen zum Anzeigen von Daten, möglicherweise das Formular-Designer generierter genügend Funktionalität für Ihre Anwendung bereit. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Insbesondere[Vorgehensweise: Anzeigen von verknüpften Daten in einer Windows Forms-Anwendung](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) und [Exemplarische Vorgehensweise: Anzeigen von verknüpften Daten in einem Windows Form](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Wenn Sie in einer Windows Forms-Anwendung arbeiten und mithilfe der Datenbindung-Funktionen zum Anzeigen von Daten, möglicherweise das Formular-Designer generierter genügend Funktionalität für Ihre Anwendung bereit. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Die folgenden Codebeispiele veranschaulichen, hinzuzufügen und Beziehungen in typisierten Datasets zu navigieren. Die Beispiele für Code verwenden Sie den typisierten <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) und die generierten `FindBy` *PrimaryKey* (`FindByCustomerID`) Methoden zum Suchen einer gewünschten Zeile und die verknüpften Datensätze zurückzugeben. In den Beispielen fehlerfrei kompiliert und ausgeführt, wenn ist:  
   
@@ -81,7 +79,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
 - Eine Beziehung namens `FK_Orders_Customers`im Zusammenhang der beiden verfügbaren Tabellen für den Bereich des Codes  
   
-  Darüber hinaus müssen beide Tabellen mit Daten für alle Datensätze zurückgegeben werden gefüllt werden soll.  
+Darüber hinaus müssen beide Tabellen mit Daten für alle Datensätze zurückgegeben werden gefüllt werden soll.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Die untergeordneten Datensätze eines ausgewählten übergeordneten Datensatzes zurückgegeben.  
   
@@ -96,4 +94,3 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

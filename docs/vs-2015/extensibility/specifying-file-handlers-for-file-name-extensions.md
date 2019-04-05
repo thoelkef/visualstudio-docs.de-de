@@ -1,26 +1,21 @@
 ---
 title: Angeben von Dateihandlern für Dateierweiterungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958062"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ HKEY_CLASSES_ROOT\
   
  Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung Eigentümer der Erweiterung wird. Dies kann einer zukünftigen Version Ihrer Anwendung oder eine andere Anwendung sein.  
   
-## <a name="openwithprogids"></a>"OpenWithProgIds"  
+## <a name="openwithprogids"></a>OpenWithProgIDs  
  Den programmatischen Bezeichner (ProgIDs) gibt die Anzeigenamen Versionen ClassIDs, die eine Version einer Anwendung oder COM-Objekt zu identifizieren. Alle gemeinsam erstellbares Objekt muss es sich um eine eigene ProgID sein. VisualStudio.DTE.7.1 startet z. B. Visual Studio .NET 2003, während VisualStudio.DTE.10.0 startet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Als Besitzer eines Projekttyps oder Projektelementtyp müssen Sie eine bestimmte Version ProgID für die Dateierweiterung erstellen. Diese ProgIDs möglicherweise redundant sein, da mehr als eine ProgID die gleiche Anwendung starten kann. Weitere Informationen finden Sie unter [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).  
   
  Verwenden Sie die folgende Benennungskonvention für eine Datei mit versionsabhängige Programm-IDs, um bei der Registrierung von anderen Anbietern tragen:  
@@ -87,4 +82,3 @@ HKEY_CLASSES_ROOT\
 ## <a name="see-also"></a>Siehe auch  
  [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md)   
  [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)
-

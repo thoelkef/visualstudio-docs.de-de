@@ -1,14 +1,9 @@
 ---
 title: SDI-Serveranwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,27 +16,24 @@ ms.assetid: 09713718-1376-4753-b119-26f36639693e
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea0497c7d20c0102aff3bc77cdecf87d1525a82c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958565"
 ---
 # <a name="sdi-server-applications"></a>SDI-Serveranwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie eine SDI-Serveranwendung Debuggen, müssen Sie angeben `/Embedding` oder `/Automation` in die **Befehlszeilenargumente** -Eigenschaft in der *Projekt* Eigenschaftenseiten-Dialogfeld für C/C++, c# oder Visual Basic-Projekte.  
+Beim Debuggen einer SDI-Serveranwendung müssen Sie für Projekte in C/C++, C# oder Visual Basic im Dialogfeld mit den *Projekt*-Eigenschaftenseiten in der Eigenschaft **Befehlszeilenargumente** die Option `/Embedding` oder `/Automation` festlegen.  
   
  Mithilfe dieser Befehlszeilenargumente kann die Serveranwendung vom Debugger wie von einem Container aus gestartet werden. Das Starten des Containers im Programm-Manager oder Datei-Manager bewirkt dann, dass der Container die im Debugger gestartete Instanz des Servers verwendet.  
   
 ## <a name="finding-the-command-line-arguments-property"></a>Suchen der Eigenschaft Befehlszeilenargumente  
- Für den Zugriff auf die *Projekt* im Dialogfeld Eigenschaftenseiten, mit der rechten Maustaste in des Projekts im Projektmappen-Explorer, und wählen Sie dann Eigenschaften aus dem Kontextmenü. Die Eigenschaft Befehlszeilenargumente wird angezeigt, wenn Sie die Kategorie Konfigurationseigenschaften erweitern und dann auf die Seite Debuggen klicken.  
+ Zum Öffnen des Dialogfelds mit den *Projekt*-Eigenschaftenseiten klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt und klicken anschließend im Kontextmenü auf Eigenschaften. Die Eigenschaft Befehlszeilenargumente wird angezeigt, wenn Sie die Kategorie Konfigurationseigenschaften erweitern und dann auf die Seite Debuggen klicken.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)   
- [Gewusst wie: Debuggen von COM-Servern](../debugger/how-to-debug-com-servers.md)
-
-
-
+ [Vorgehensweise: Debuggen von COM-Servern](../debugger/how-to-debug-com-servers.md)

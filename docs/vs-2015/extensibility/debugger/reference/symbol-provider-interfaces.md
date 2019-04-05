@@ -1,14 +1,9 @@
 ---
 title: Symbol Anbieterschnittstellen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - interfaces, symbol handler
 - symbol handler, interfaces
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a37e27f6d7d1a9435f9519d3cecf359eb65fe204
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957600"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Im folgenden sind die Symbol Behandeln von Schnittstellen für die [!INCLUDE[vsi
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|Die Basisschnittstelle für alle Typen, die zur Laufzeit bestimmt werden kann.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Stellt ein dynamisches Feld für eine [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Objekt.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Stellt einen Enumerationstyp dar.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Erweitert die Typen der verfügbaren Felder zur Unterstützung von Generika mit verwaltetem Code.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Erweitert die Typen der verfügbaren Felder zur Unterstützung von Generika mit verwaltetem Code.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|Die Basisklasse für alle Felder; Stellt eine Beschreibung eines Symbols oder einen Typ dar.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Stellt die Definition eines Felds für einen generischen Typ von verwaltetem Code dar.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Stellt eine Instanz eines Felds für einen generischen Typ von verwaltetem Code.|  
@@ -67,4 +62,3 @@ Im folgenden sind die Symbol Behandeln von Schnittstellen für die [!INCLUDE[vsi
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

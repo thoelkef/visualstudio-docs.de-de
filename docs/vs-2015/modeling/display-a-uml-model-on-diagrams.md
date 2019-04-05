@@ -1,25 +1,22 @@
 ---
 title: Anzeigen ein UML-Modells in Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957379"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Anzeigen eines UML-Modells in Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +34,14 @@ Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie 
   
 -   [Öffnen und Erstellen von Diagrammen](#Opening)  
   
--   [Beispiel: Befehl zum Ausrichten von Formen](#AlignCommand)  
+-   [Anpassen von mit VSTU Befehl zum Ausrichten von Formen](#AlignCommand)  
   
 ##  <a name="Display"></a> Um ein Element in einem Diagramm angezeigt werden.  
  Wenn Sie ein Element erstellen, z. B. einen Anwendungsfall oder eine Aktion, können Benutzer das Element im UML-Modell-Explorer sehen, aber es wird nicht immer automatisch in einem Diagramm angezeigt. In einigen Fällen müssen Sie Code schreiben, um es anzuzeigen. In der folgenden Tabelle sind die Alternativen zusammengefasst.  
   
 |Elementtyp|Beispiel:|Code zum Anzeigen muss wie folgt lauten|  
 |---------------------|-----------------|-------------------------------------|  
-|Klassifizierer|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Erstellen Sie zugeordnete Formen in angegebenen Diagrammen. Sie können für jeden Klassifizierer eine beliebige Anzahl von Formen erstellen.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Legen Sie `parentShape` für eine Form auf der obersten Ebene des Diagramms auf `null` fest.<br /><br /> So zeigen Sie eine Form in einer anderen Form an:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Hinweis:** Wenn Anzeige innerhalb Ausführen einer **ILinkedUndo** Transaktion gibt die Methode manchmal keine `IShape`. Die Form wird jedoch ordnungsgemäß erstellt, und mit `IElement.Shapes().` kann darauf zugegriffen werden.|  
+|Klassifizierer|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Erstellen Sie zugeordnete Formen in angegebenen Diagrammen. Sie können für jeden Klassifizierer eine beliebige Anzahl von Formen erstellen.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Legen Sie `parentShape` für eine Form auf der obersten Ebene des Diagramms auf `null` fest.<br /><br /> So zeigen Sie eine Form in einer anderen Form an:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Hinweis:**  Wenn Sie die Anzeige innerhalb Ausführen einer **ILinkedUndo** Transaktion gibt die Methode manchmal keine `IShape`. Die Form wird jedoch ordnungsgemäß erstellt, und mit `IElement.Shapes().` kann darauf zugegriffen werden.|  
 |Untergeordnetes Element des Klassifizierers|Attribut, Vorgang,<br /><br /> Teil, Port|Automatisch – Kein Code erforderlich. <br /><br /> Wird als Teil des übergeordneten Elements angezeigt.|  
 |Verhalten|Interaktion (Sequenz),<br /><br /> Aktivität|Binden Sie das Verhalten an ein entsprechendes Diagramm.<br /><br /> Jedes Verhalten kann nur jeweils an ein Diagramm gebunden werden.<br /><br /> Zum Beispiel:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Untergeordnetes Element des Verhaltens|Lebenslinien, Meldungen, Aktionen, Objektknoten|Automatisch – Kein Code erforderlich. <br /><br /> Wird angezeigt, wenn das übergeordnete Element an ein Diagramm gebunden ist.|  
@@ -386,6 +383,3 @@ namespace AlignCommand
  [Navigieren Sie im UML-Modell](../modeling/navigate-the-uml-model.md)   
  [Beispiel: Ausrichten von Formen auf einem Diagrammmenübefehl](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Beispiel: Erstellen von Elementen, Formen und Stereotypen](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-

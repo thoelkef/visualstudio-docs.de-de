@@ -1,12 +1,9 @@
 ---
 title: Eigenschaften von Attributen in UML-Klassendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956152"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Eigenschaften von Attributen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +64,7 @@ In einem UML-Klassendiagramm können Sie Klassen und Schnittstellen *Attribute* 
 |    **Wird die Blattebene**    |    False     |                                                                                                                                                                    Bei „true“ ist das Zulassen einer Neudefinition dieses Attributs in abgeleiteten Typen nicht beabsichtigt.                                                                                                                                                                     |
 |  **Wird abgeleitet**   |    False     |                                                                                                              Bei „true“ wird dieses Attribut aus anderen Attributen berechnet. Diagonal wird z. B. aus Breite und Höhe berechnet. Die Details sollten in die **Beschreibung** oder einen angefügten Kommentar eingegeben werden.                                                                                                              |
 |  **Beschreibung**  |   (leer)    |                                                                                                                                                                        Für allgemeine Hinweise oder zum Definieren von Einschränkungen für die Werte im Attribut.                                                                                                                                                                        |
-| **Multiplizität**  |      1       | **1** – Dieses Attribut hat einen einzigen Wert des angegebenen Typs.<br /><br /> **0..1** – Dieses Attribut kann den Wert `null`haben.<br /><br /> **\\**\* -der Wert dieses Attributs ist eine Auflistung von Werten.<br /><br /> **1..\\**  \* -der Wert dieses Attributs ist eine Sammlung, die mindestens einen Wert enthält.<br /><br /> *n* **..** *m* – Der Wert dieses Attributs ist eine Auflistung, die zwischen *n* und *m* Werte enthält. |
+| **Multiplicity**  |      1       | **1** – Dieses Attribut hat einen einzigen Wert des angegebenen Typs.<br /><br /> **0..1** – Dieses Attribut kann den Wert `null`haben.<br /><br /> **\\**\* -der Wert dieses Attributs ist eine Auflistung von Werten.<br /><br /> **1..\\**  \* -der Wert dieses Attributs ist eine Sammlung, die mindestens einen Wert enthält.<br /><br /> *n* **..** *m* – Der Wert dieses Attributs ist eine Auflistung, die zwischen *n* und *m* Werte enthält. |
 |  **Sortiert**   |    False     |                                                                                                                                                                    Bei „true“ bildet die Auflistung eine sequenzielle Liste. Für **Multiplizität** größer als 1.                                                                                                                                                                     |
 |   **Ist eindeutig**   |    False     |                                                                                                                                                                Bei „true“ enthält die Auflistung keine doppelten Werte. Für **Multiplizität** größer als 1.                                                                                                                                                                |
 
@@ -77,6 +74,3 @@ In einem UML-Klassendiagramm können Sie Klassen und Schnittstellen *Attribute* 
  [Eigenschaften von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)   
  [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

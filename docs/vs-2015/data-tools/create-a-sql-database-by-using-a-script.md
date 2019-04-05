@@ -1,12 +1,9 @@
 ---
 title: Erstellen Sie eine SQL­Datenbank mithilfe eines Skripts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957962"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Skripts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,4 +273,3 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio eine kleine 
   
 ##  <a name="DeployDatabase"></a> Bereitstellen der Datenbank  
  Beim Drücken der **F5** Schlüssel, Sie zu einer LocalDB-Datenbank wird standardmäßig die Datenbank bereitstellen (oder veröffentlichen). Sie können die Datenbank an einen anderen Speicherort bereitstellen, durch Öffnen der Eigenschaftenseite für das Projekt auswählen der **Debuggen** Registerkarte, und klicken Sie dann die Verbindungszeichenfolge ändern.
-

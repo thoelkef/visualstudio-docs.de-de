@@ -1,25 +1,20 @@
 ---
 title: Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS 7.5 Computer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956754"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS-Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Nachdem sie installiert ist, stellen Sie sicher, dass der Remotedebugger auf dem
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    Auf Windows Server 2008 R2, installieren Sie ASP.NET 4 stattdessen mit dem folgenden Befehl: **C:\Windows\Microsoft.NET\Framework (64) \v4.0.30319\aspnet_regiis.exe - Ir**
+    Installieren Sie unter Windows Server 2008 R2 ASP.NET 4 stattdessen mit dem folgenden Befehl aus:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Kopieren Sie das ASP.NET-Projektverzeichnis vom Visual Studio-Computer in ein lokales Verzeichnis (das wir **C:\Publish**nennen) auf dem Windows Server-Computer. Sie können das Projekt manuell kopieren, verwenden von Xcopy, Web Deploy, Robocopy, Powershell oder andere Optionen.
 
     > [!CAUTION]
@@ -93,7 +88,7 @@ Nachdem sie installiert ist, stellen Sie sicher, dass der Remotedebugger auf dem
 1. Öffnen Sie auf dem Visual Studio-Computer die Projektmappe **MeinMVC** .
 1. Klicken Sie in Visual Studio auf **Debuggen / an den Prozess anhängen** (**Strg + Alt + P**).
 1. Legen Sie auf das Feld "Qualifizierer"  **\<Name des Remotecomputers >: 4020**.
-1. Klicken Sie auf **aktualisieren**.
+1. Klicken Sie auf **Aktualisieren**.
     Im Fenster sollten einige Prozesse **Verfügbare Prozesse** angezeigt werden.
 
     Wenn alle Prozesse, die nicht angezeigt wird, versuchen Sie den Namen des Remotecomputers (der Port ist erforderlich.) anstelle der IP-Adresse. Verwendung `ipconfig` in einer Befehlszeile, um die IPv4-Adresse zu erhalten.
@@ -107,12 +102,9 @@ Nachdem sie installiert ist, stellen Sie sicher, dass der Remotedebugger auf dem
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Öffnen Sie die Website des Remotecomputers. Wechseln Sie in einem Browser zu **http://\<Remotecomputernamen >**.
+1. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>**.
     
     Es sollte die ASP.NET-Webseite angezeigt werden.
 1. Klicken Sie auf der Webseite von ASP.NET auf den Link, um die **zu** Seite.
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
-
-
-

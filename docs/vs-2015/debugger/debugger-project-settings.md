@@ -1,14 +1,9 @@
 ---
 title: Debuggerprojekteinstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958376"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  In diesem Abschnitt wird beschrieben, welche Optionen verfügbar sind und wie sie festgelegt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)  
+ [Vorgehensweise: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md)  
  Beschreibt Debuggereinstellungen im Dialogfeld **Optionen** .  
   
- [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)  
  Beschreibt die Einstellungen **Debuggen** und **Release** und wie zwischen diesen umgeschaltet wird.  
   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -70,6 +65,3 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)
-
-
-

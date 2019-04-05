@@ -1,14 +1,9 @@
 ---
 title: Debugger, Einstellungen und Vorbereitung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956768"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +46,10 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
  [ASP.NET-Webanwendungen](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Enthält Anweisungen zur Konfiguration von ASP.NET-Webanwendungen.  
   
- [Gewusst wie: Debuggen einer ausführbaren Datei, die keiner Visual Studio-Projektmappe angehört](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Vorgehensweise: Debuggen einer ausführbaren Datei, die nicht Bestandteil einer Visual Studio-Lösung ist](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Erläutert das Debuggen einer ausführbaren Datei, die nicht als Bestandteil eines Visual Studio-Projekts erstellt wurde.  
   
- [Gewusst wie: Debuggen mit Code Center Premium-Quellcode](../debugger/how-to-debug-with-code-center-premium-source.md)  
+ [Vorgehensweise: Debuggen mit Code Center Premium-Quellcode](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Erläutert das Debuggen von Quellcode aus Microsoft Code Center Premium im Visual Studio-Projekt.  
   
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)  
@@ -63,12 +58,9 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
  [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md)  
  Beschreibt verschiedene Aspekte des Hostprozesses.  
   
- [Gewusst wie: Angeben einer .NET Framework-Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Vorgehensweise: Angeben einer .NET Framework-Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Beschreibt, wie ein Registrierungsschlüssel festgelegt wird, durch den der Debugger erkennt, welche Version verwendet werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

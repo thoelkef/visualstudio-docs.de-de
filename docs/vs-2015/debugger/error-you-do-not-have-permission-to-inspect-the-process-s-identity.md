@@ -1,14 +1,9 @@
 ---
 title: 'Fehler: Sie sind nicht berechtigt, den Prozess überprüfen&#39;s-Identität | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958297"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Fehler: Sie sind nicht berechtigt, den Prozess überprüfen&#39;s-Identität
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +30,19 @@ Sie haben keine Berechtigung, die Prozessidentität zu überprüfen. Dies liegt 
   
 ### <a name="to-enable-terminal-services"></a>So aktivieren Sie die Terminaldienste  
   
-1.  Klicken Sie auf **starten** und wählen Sie dann **Systemsteuerung**.  
+1.  Klicken Sie auf das Menü **Start**, und wählen Sie anschließend **Systemsteuerung** aus.  
   
-2.  Wählen Sie in der Systemsteuerung **zur klassischen Ansicht wechseln**, falls erforderlich, und doppelklicken Sie dann auf **Verwaltung**.  
+2.  Wählen Sie in der Systemsteuerung ggf. die Option **Zur klassischen Ansicht wechseln**, und doppelklicken Sie auf **Verwaltung**.  
   
-3.  In der **Verwaltung** Fenster, doppelklicken Sie auf **Computerverwaltung**.  
+3.  Doppelklicken Sie im Fenster **Verwaltung** auf **Computerverwaltung**.  
   
-4.  Erweitern Sie im Fenster Computerverwaltung den **Dienste und Anwendungen** Knoten.  
+4.  Erweitern Sie im Fenster „Computerverwaltung“ den Knoten **Dienste und Anwendungen**.  
   
-5.  Unter den **Dienste und Anwendungen**, klicken Sie auf **Services**.  
+5.  Klicken Sie unter **Dienste und Anwendungen** auf **Dienste**.  
   
      Eine Liste von Diensten wird im rechten Bereich angezeigt.  
   
-6.  In der **Services** auflisten, mit der rechten Maustaste **"Terminal Services"** und wählen Sie dann **Eigenschaften**.  
+6.  Klicken Sie in der Liste **Dienste** mit der rechten Maustaste auf **Terminaldienste**, und wählen Sie dann **Eigenschaften** aus.  
   
 7.  In der **Eigenschaften von Terminaldienste** Fenster, wechseln Sie zu der **allgemeine** Registerkarte, und legen Sie **Starttyp** zu **manuelle**.  
   
@@ -59,20 +54,17 @@ Sie haben keine Berechtigung, die Prozessidentität zu überprüfen. Dies liegt 
   
 ### <a name="to-enable-remote-desktop"></a>So aktivieren Sie Remotedesktop  
   
-1.  Klicken Sie auf **starten** , und klicken Sie dann mit der rechten Maustaste **Arbeitsplatz**.  
+1.  Klicken Sie auf **Start**, und klicken Sie dann mit der rechten Maustaste auf **Arbeitsplatz**.  
   
 2.  Klicken Sie auf **Eigenschaften**.  
   
-     Die **Systemeigenschaften** Fenster wird angezeigt.  
+     Das Fenster **Systemeigenschaften** wird angezeigt.  
   
 3.  Klicken Sie auf **Remote**.  
   
-4.  Klicken Sie unter **Remotedesktop**Option **können Benutzer eine Remoteverbindung mit diesem Computer herstellen**.  
+4.  Wählen Sie unter **Remotedesktop** die Option **Benutzer dürfen eine Remotedesktopverbindung herstellen** aus.  
   
 5.  Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

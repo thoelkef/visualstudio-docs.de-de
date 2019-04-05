@@ -1,26 +1,21 @@
 ---
 title: Implementieren eines Legacysprachdiensts 1 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5c2a258eb573f0f7d685cdb5a1159df29761944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28db87dafc5ce6f247e49c8a0b765a29faa938c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959149"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementieren eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ Sie können einen legacysprache-Dienst implementiert, der eine Vielzahl von Funk
   
  [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)  
  Enthält Links zu Themen mit Details, um alle Features von einem Sprachdienst zu implementieren, indem Sie mithilfe von MPF durchgeführt werden müssen.
-
