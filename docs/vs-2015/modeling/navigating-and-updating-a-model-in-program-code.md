@@ -1,25 +1,22 @@
 ---
 title: Navigieren in und Aktualisieren eines Modells im Programmcode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946875"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  [DocView- und docdata-Objekt](#docdata)  
   
- Formen, Konnektoren und Diagrammen und ihre Beziehungen zu Modellelementen werden in einem separaten Thema beschrieben. Weitere Informationen finden Sie unter [wie: Navigieren in und aktualisieren ein Diagramms](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Formen, Konnektoren und Diagrammen und ihre Beziehungen zu Modellelementen werden in einem separaten Thema beschrieben. Weitere Informationen finden Sie unter [Vorgehensweise: Navigieren in und aktualisieren ein Diagramms](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ##  <a name="example"></a> Eine Beispiel-DSL-Definition  
  Dies ist der Hauptteil der "DslDefinition.DSL" für die Beispiele in diesem Thema:  
@@ -528,6 +525,3 @@ partial class MyDiagram
  [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Integrieren von Modellen mit Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)
-
-
-

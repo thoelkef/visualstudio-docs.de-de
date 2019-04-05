@@ -1,51 +1,48 @@
 ---
 title: Bereitstellen eines benutzerdefinierten Anweisungsprozessors | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961108"
 ---
-# <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Anweisungsprozessors
+# <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden möchten, müssen Sie ihn anhand einer der in diesem Thema beschriebenen Methoden registrieren.  
   
  Folgende Methoden stehen zur Auswahl:  
   
-- [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Ermöglicht die Installation und Deinstallation des Anweisungsprozessors auf dem eigenen Computer und anderen Computern. Normalerweise können weitere Funktionen in der gleichen VSIX gebündelt werden.  
+- [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Ermöglicht die Installation und Deinstallation des Anweisungsprozessors auf dem eigenen Computer und anderen Computern. Normalerweise können weitere Funktionen in der gleichen VSIX gebündelt werden.  
   
-- [VSPackage](../extensibility/internals/vspackages.md). Wenn Sie ein VSPackage definieren, das neben dem Direktivenprozessor weitere Funktionen enthält, kann der Direktivenprozessor einfach registriert werden.  
+- [VSPackage](../extensibility/internals/vspackages.md). Wenn Sie ein VSPackage definieren, das neben dem Anweisungsprozessor weitere Funktionen enthält, kann der Anweisungsprozessor einfach registriert werden.  
   
-- Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Direktivenprozessor hinzu.  
+- Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Anweisungsprozessor hinzu.  
   
-  Sie müssen nur eine dieser Methoden verwenden, wenn Sie die Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
+  Sie müssen nur eine dieser Methoden verwenden, wenn Sie die Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Direktivenprozessoren für die einzelnen Direktiven zuständig.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Anweisungsprozessors in einer VSIX  
- Sie können einen benutzerdefinierten anweisungsprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Direktivenprozessors in einer VSIX  
+ Sie können einen benutzerdefinierten anweisungsprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Stellen Sie sicher, dass die VSIX-Datei die folgenden zwei Elemente enthält:  
   
-- Die Assembly (.dll), die die benutzerdefinierte Anweisungsprozessorklasse enthält.  
+- Die Assembly (.dll), die die benutzerdefinierte Direktivenprozessorklasse enthält.  
   
 - Eine PKGDEF-Datei, durch die der Anweisungsprozessor registriert wird. Der Stammname der Datei muss mit dem Namen der Assembly identisch sein. Die Dateinamen können z. B. "CDP.dll" und "CDP.pkgdef" lauten.  
   
-  Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateierweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
+  Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateinamenerweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
   
   Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgenden Verfahren wird eine Methode beschrieben.  
   
@@ -102,7 +99,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
     -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Fügen Sie dem Projekt die benutzerdefinierte Anweisungsprozessorklasse hinzu.  
+6.  Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.  
   
      Dies ist eine öffentliche Klasse, die <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementieren muss.  
   
@@ -114,7 +111,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
 3.  Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen wird angezeigt.  
   
-4.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Anweisung besitzt das folgende Format:  
+4.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Direktive besitzt das folgende Format:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
@@ -124,10 +121,10 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
 2.  Wählen Sie die VSIX-Datei, die dem anweisungsprozessor aus, und klicken Sie dann auf **Deinstallieren** oder **deaktivieren**.  
   
-### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Problembehandlung für einen Anweisungsprozessor in einer VSIX  
- Die folgenden Hinweise können bei Problemen mit dem Direktivenprozessor hilfreich sein:  
+### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Problembehandlung für einen Direktivenprozessor in einer VSIX  
+ Die folgenden Hinweise können bei Problemen mit dem Anweisungsprozessor hilfreich sein:  
   
--   Der in der benutzerdefinierten Direktive angegebene Prozessorname muss dem `CustomDirectiveProcessorName` entsprechen, den Sie in der PKGDEF-Datei angegeben haben.  
+-   Der in der benutzerdefinierten Anweisung angegebene Prozessorname muss dem `CustomDirectiveProcessorName` entsprechen, den Sie in der PKGDEF-Datei angegeben haben.  
   
 -   Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.  
   
@@ -142,7 +139,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
      `</Content>`  
   
 ## <a name="deploying-a-directive-processor-in-a-vspackage"></a>Bereitstellen eines Anweisungsprozessors in einem VSPackage  
- Wenn der Anweisungsprozessor Teil eines VSPackage ist, das im GAC installiert wird, können Sie die PKGDEF-Datei vom System generieren lassen.  
+ Wenn der Direktivenprozessor Teil eines VSPackage ist, das im GAC installiert wird, können Sie die PKGDEF-Datei vom System generieren lassen.  
   
  Fügen Sie das folgende Attribut in der Paketklasse ein:  
   
@@ -151,7 +148,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 ```  
   
 > [!NOTE]
->  Dieses Attribut wird in der Paketklasse eingefügt, nicht der Direktivenprozessorklasse.  
+>  Dieses Attribut wird in der Paketklasse eingefügt, nicht der Anweisungsprozessorklasse.  
   
  Die PKGDEF-Datei wird generiert, wenn Sie das Projekt erstellen. Beim Installieren des VSPackage wird der Direktivenprozessor von der PKGDEF-Datei registriert.  
   
@@ -160,7 +157,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
  Weitere Informationen finden Sie unter [VSPackages](../extensibility/internals/vspackages.md).  
   
 ## <a name="setting-a-registry-key"></a>Festlegen eines Registrierungsschlüssels  
- Diese Methode zum Installieren eines benutzerdefinierten Anweisungsprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Anweisungsprozessors komplizierter, und der Anweisungsprozessor kann nicht an andere Benutzer verteilt werden.  
+ Diese Methode zum Installieren eines benutzerdefinierten Anweisungsprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Direktivenprozessors komplizierter, und der Direktivenprozessor kann nicht an andere Benutzer verteilt werden.  
   
 > [!CAUTION]
 >  Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.  
@@ -173,7 +170,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-    Wenn Sie den Anweisungsprozessor in der Testversion von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installieren möchten, fügen Sie "Exp" nach "11.0" ein.  
+    Wenn Sie den Direktivenprozessor in der Testversion von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installieren möchten, fügen Sie "Exp" nach "11.0" ein.  
   
 3. Fügen Sie einen Registrierungsschlüssel mit dem Namen der Anweisungsprozessorklasse hinzu.  
   
@@ -189,7 +186,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
    Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:  
   
-|name|Typ|Daten|  
+|Name|Typ|Daten|  
 |----------|----------|----------|  
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
 |Klasse|REG_SZ|**\<Namespace-Name >. \<Klassenname >**|  
@@ -197,7 +194,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:  
   
-|name|Typ|Daten|  
+|Name|Typ|Daten|  
 |----------|----------|----------|  
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
 |Klasse|REG_SZ|\<**Ihren vollqualifizierten Klassennamen**>|  
@@ -205,6 +202,3 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-
