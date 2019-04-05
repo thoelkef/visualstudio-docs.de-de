@@ -1,27 +1,22 @@
 ---
 title: Erstellen eines Windows Installer-Pakets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742645"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001641"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Erstellen eines Windows Installer-Pakets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,8 +49,7 @@ Daten auf den Laufwerken des Windows Installer-Modells. Statt eines prozeduralen
   
    Das Toolset erstellt Windows Installer-Pakete aus XML-Quelldateien. Das Toolset ist eine Open-Source-Projekte von Microsoft. Sie können den Quellcode und die ausführbaren Dateien von [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Für kommerzielle Produkte, die Integration in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mithilfe der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], finden Sie unter [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Für kommerzielle Produkte, die Integration in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mithilfe der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], finden Sie unter [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

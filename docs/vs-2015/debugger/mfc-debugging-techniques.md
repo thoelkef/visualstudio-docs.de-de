@@ -1,14 +1,9 @@
 ---
 title: MFC Debugtechniken | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745120"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001743"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- Das TRACE-Makro entsprechend verarbeitet, Char * sowohl für "wchar_t"\* Parameter. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.  
+ Das TRACE-Makro behandelt char*- und wchar_t\*-Parameter ordnungsgemäß. In den folgenden Beispielen wird die Verwendung des TRACE-Makros mit unterschiedlichen Zeichenfolgenparametertypen veranschaulicht.  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen  
   
-1. Erstellen Sie ein [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) -Objekt, und rufen Sie die [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) -Memberfunktion auf. Dadurch wird die erste Speichermomentaufnahme erstellt.  
+1. Erstellen Sie ein [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) -Objekt, und rufen Sie die [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) -Memberfunktion auf. Dadurch wird die erste Speichermomentaufnahme erstellt.  
   
 2. Nachdem das Programm alle Speicherbelegungen und -freigaben vorgenommen hat, erstellen Sie ein weiteres `CMemoryState` -Objekt und rufen `Checkpoint` für dieses Objekt auf. Dadurch wird eine zweite Momentaufnahme erstellt, die Aufschluss über die Arbeitsspeichernutzung gibt.  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  Sie können in einem MFC-Programm verwenden [CMemoryState](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.  
   
 > [!NOTE]
->  Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)aktiviert werden.  
+>  Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)aktiviert werden.  
   
 > [!NOTE]
 >  In MFC wird von allen Objekten, die Speicherverluste verursachen, beim Beenden des Programms automatisch ein Dump erstellt. Daher ist kein Code zum Erstellen von Objektdumps am Programmende erforderlich.  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. Zunächst erstellen Sie eine neue Projektkonfiguration.  
   
-   1.  In der  **\<Projekt > Eigenschaftenseiten** Dialogfeld klicken Sie auf die **Configuration Manager** Schaltfläche.  
+   1.  Klicken Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.  
   
-   2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b). In der **Konfiguration** Spalte  **\<neu... >**.  
+   2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b). Wählen Sie in der Spalte **Konfiguration** die Option **\<Neu...>** aus.  
   
-   3.  Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
+   3.  Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
   
    4.  Wählen Sie in der Liste **Einstellungen kopieren von** die Option **Release**.  
   
@@ -483,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6.  Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.  
   
-   7.  Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie ändern die **vorkompilierten Header erstellen/verwenden** festlegen in der  **\<Projekt > Eigenschaften** Dialogfeld (**Konfigurationseigenschaften**  Ordner **C/C++-** Unterordner **vorkompilierte Header** Kategorie).  
+   7.  Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++**, Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.  
   
 7. Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Visual C++](../debugger/debugging-native-code.md)
-
-
-

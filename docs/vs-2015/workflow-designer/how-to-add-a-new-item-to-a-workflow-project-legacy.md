@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
@@ -16,13 +13,13 @@ ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 26be9519a4f9ee496ea36a61debffec7f96ffbe5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946200"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)
 Nachdem Sie ein Workflowprojekt mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] erstellt haben, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird, das auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt, können Sie dem Projekt [!INCLUDE[wf](../includes/wf-md.md)]-Elemente und andere vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Elemente hinzufügen.  

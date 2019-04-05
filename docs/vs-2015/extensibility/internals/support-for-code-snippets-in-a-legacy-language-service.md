@@ -1,14 +1,9 @@
 ---
 title: Unterstützung für Codeausschnitte in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947429"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ### <a name="installing-the-snippet-files"></a>Installieren die Codeausschnittsdateien  
  Alle Codeausschnitte für eine Sprache werden als Vorlagen im XML-Dateien, in der Regel eine Ausschnittvorlage pro Datei gespeichert. Ausführliche Informationen zu den XML-Schema für Codeausschnittvorlagen verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../../ide/code-snippets-schema-reference.md). Jede Vorlage Codeausschnitt wird mit einer Sprachen-ID identifiziert. Diese Sprache-ID in der Registrierung angegeben ist und in den versetzt wird die `Language` Attribut der \<Code > Tag in der Vorlage.  
   
- Es gibt in der Regel zwei Orte, die, in dem Codeausschnitt-Vorlagendateien gespeichert sind: 1), in denen Ihre Sprache installiert wurde, und (2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.  
+ Es gibt in der Regel zwei Orten, in dem Codeausschnitt-Vorlagendateien gespeichert sind: (1), wo Ihre Sprache installiert wurde, und klicken Sie mit der 2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.  
   
  Typische ordnerlayouts für die installierte Vorlage codeausschnittsdateien sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -93,10 +88,10 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |% LCID %|Gebietsschema-ID.|  
-|Installroot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
-|ProjDir %|Ordner mit dem aktuellen Projekt.|  
-|ProjItem %|Dieser Ordner enthält das aktuelle Projektelement.|  
-|TestDocs %|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
+|%InstallRoot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
+|%ProjDir%|Ordner mit dem aktuellen Projekt.|  
+|%ProjItem%|Dieser Ordner enthält das aktuelle Projektelement.|  
+|%TestDocs%|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihren Sprachdienst  
  Sie können Codeausschnitte für den Sprachdienst aktivieren, durch das Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> Attribut für das VSPackage (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten einschließen, die `SearchPaths` benannter Parameter, um zu den **Codeausschnitt-Manager** des Speicherorts für Ihre Ausschnitte.  
@@ -122,7 +117,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Einfügen eines Codeausschnitts mithilfe eines Menübefehls  
  Um einen Befehl verwenden, um die im Codeausschnitt-Browser angezeigt werden, Sie fügen Sie einen Menübefehl hinzu, und rufen dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Schnittstelle als Reaktion auf dieser Menübefehl.  
   
-1.  Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Exemplarische Vorgehensweise: Erstellen einer Menü-Befehl mit der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1.  Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.  
   
@@ -401,4 +396,3 @@ namespace TestLanguagePackage
  [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Codeausschnitte](../../ide/code-snippets.md)   
  [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-

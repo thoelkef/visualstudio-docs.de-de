@@ -1,27 +1,22 @@
 ---
 title: Problembehandlung bei VSPackages | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764009"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001496"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
   
 3.  Überprüfen Sie Ihre VSPackage-Registrierungseinträge.  
   
-     Weitere Informationen finden Sie unter [Registrieren von VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) und [Verwalten von VSPackages](../extensibility/managing-vspackages.md).  
+     Weitere Informationen finden Sie unter [Registrieren von VSPackages](internals/registering-vspackages.md) und [Verwalten von VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Öffnen der **Ausgabe** Fenster der Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tritt ein Fehler, die auf das VSPackage lädt. Informationen, warum das VSPackage nicht laden kann in diesem Fenster angezeigt werden.  
   
@@ -73,7 +68,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
   
     1.  Suchen Sie die CLSID des VSPackage, in der Pakete-Abschnitt der Registrierung:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<Version >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  Stellen Sie sicher, dass der richtige Pfad durch den Unterschlüssel SatelliteDll angegeben wurde.  
   
@@ -126,10 +121,9 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
   
 2. Suchen Sie für nicht verwalteten Code, die CLSID des VSPackage in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Knoten der CLSID-Registrierung:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<Version >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Stellen Sie sicher, dass der Eintrag InprocServer32 den richtigen Pfad für die VSPackage-Dll verfügt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)
-

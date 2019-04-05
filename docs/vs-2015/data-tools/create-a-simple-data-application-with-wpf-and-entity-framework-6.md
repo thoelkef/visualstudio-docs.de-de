@@ -1,25 +1,22 @@
 ---
 title: Erstellen eine einfachen datenanwendung mit WPF und Entity Framework 6 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922197"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001557"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms 
 ## <a name="install-and-connect-to-northwind"></a>Installieren und Verbinden mit Northwind  
  Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenbank Northwind. Es sollte auch für andere Produkte der SQL-Datenbank funktionieren, wenn Sie der ADO.NET-Datenanbieter für dieses Produkt Entity Framework unterstützt.  
   
-1.  Wenn Sie noch nicht geschehen, installieren Sie SQL Server 2014 LocalDB Express 32-bit-aus der [Downloadseite für SQL Server-Editionen](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Wenn Sie noch nicht geschehen, installieren Sie SQL Server 2014 LocalDB Express 32-bit-aus der [Downloadseite für SQL Server-Editionen](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Installieren die Beispieldatenbank Northwind mithilfe der Anweisungen hier: [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
+2.  Installieren Sie die Northwind-Beispieldatenbank, indem Sie die Anweisungen befolgen: [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Hinzufügen von neuen Verbindungen](../data-tools/add-new-connections.md) für Northwind.  
   
@@ -393,7 +390,7 @@ Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms 
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Hinzufügen von Schaltflächen zum Navigieren, hinzufügen, aktualisieren und löschen  
  In Windows Forms-Anwendungen erhalten Sie ein BindingNavigator-Objekt mit den Schaltflächen zur Navigation Zeilen in einer Datenbank und für grundlegende CRUD-Vorgänge ausführen. WPF bietet keine BindingNavigator, aber sie sind einfach genug. Machen wir, die mit den Schaltflächen in einem horizontalen StackPanel in der untersten Zeile des Rasters Seite, und ordnen wir die Schaltflächen mit Befehlen, die an Methoden in der CodeBehind-gebunden sind.  
   
- Stehen die Befehlslogik vieren Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.  
+ Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML  
   
@@ -709,4 +706,3 @@ Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms 
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework-Dokumentation](https://msdn.microsoft.com/data/ee712907.aspx)
-
